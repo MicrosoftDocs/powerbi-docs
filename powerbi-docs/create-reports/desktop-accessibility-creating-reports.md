@@ -11,7 +11,12 @@ ms.date: 03/26/2021
 LocalizationGroup: Create reports
 ---
 # Design Power BI reports for accessibility
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 You can design and create compelling reports while also designing for accessibility. Whenever building a report, no matter who your audience is, you should create your reports to be usable by as many people as possible, without the need to be adapted for a sort of special design.
+
+For Windows users, the high contrast mode can be found under **Ease of Access** in the **Settings** app. 
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05.png)
 
@@ -68,7 +73,7 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 ![Screenshot shows a report in high contrast windows settings.](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-right corner you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-left corner you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
 
 ![Screenshot shows how to select a theme of high contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 

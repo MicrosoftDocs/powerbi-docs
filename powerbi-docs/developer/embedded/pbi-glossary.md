@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 02/13/2022
+ms.date: 08/14/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -59,7 +59,7 @@ ArcGIS is a mapping and analytics platform created by the company ESRI. The name
 
 ### Artifacts
 
-A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+See [item](#item)
 
 ### Auto Insights
 
@@ -123,10 +123,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 
 The content index for an app.
 
-### Content pack
-
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
-
 ### Content view
 
 The view in Windows Explorer that displays the most relevant content for each item based on its file name extension or Kind association.
@@ -173,6 +169,10 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 ### Dataset
 
 A collection of data used to create visualizations and reports.
+
+### DAX expression
+
+**Data Analysis Expressions**. A Microsoft formula language used to [build formulas and expressions](/learn/modules/dax-power-bi-write-formulas/) in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.
 
 ### **Desktop** or **Power BI Desktop**
 
@@ -273,7 +273,7 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Inline frame, iFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other [artifacts](#artifacts) inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An iFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
@@ -286,6 +286,11 @@ A third-party software developer. An ISV can be an individual or an organization
 ### Insights
 
 See [**quick insights**](#quick-insights).
+
+### Item
+
+A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+Formerly known as artifacts.
 
 ## J
 
@@ -480,7 +485,7 @@ The ability to stream data and update dashboards in real time from sources such 
 
 ### Recent
 
-The container in the nav pane that holds all the individual [artifacts](#artifacts) that were accessed last.
+The container in the nav pane that holds all the individual [items](#item) (reports, dashboards, etc.) that were accessed last.
 
 ### Related content
 
@@ -543,12 +548,12 @@ The location for Power BI users to manage their own general settings, such as wh
 
 ### Share, sharing
 
-In Power BI, sharing typically means directly sharing an individual artifact (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
+In Power BI, sharing typically means directly sharing an individual item (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
 On mobile devices, share can refer to native OS share functionality, such as "annotate and share."  
 
 ### Shared with me
 
-The container in the nav pane that holds all the individual [artifacts](#artifacts) that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual [items](#item) that were directly shared by another Power BI user.
 
 ### Single sign-on, SSO
 
@@ -573,10 +578,6 @@ See *real-time streaming*.
 ### Subscriptions, Subscribe
 
 You can subscribe to report pages, apps, and dashboards and receive emails containing a snapshot. Requires a Power BI Pro license.
-
-### Subtenant
-
-Some Power BI tenants can have multiple Power BI applications. These applications can have multiple subtenants dedicated to particular customers or projects that require isolation.
 
 ### Summarization
 

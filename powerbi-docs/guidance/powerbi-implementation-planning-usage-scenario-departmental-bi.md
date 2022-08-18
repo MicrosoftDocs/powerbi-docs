@@ -27,7 +27,7 @@ When teams grow larger, it becomes impractical to use a workspace effectively fo
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support departmental BI. The primary focus is on using a Power BI app for content distribution to a large consumer audience.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-inline.png" alt-text="Image shows a diagram of departmental B I, which is about business unit content distribution. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-inline.png" alt-text="Image shows a diagram of departmental BI, which is about business unit content distribution. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -60,7 +60,7 @@ When the co-management of a BI solution involves multiple people with different 
 
 ### Workspaces
 
-A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md) serves as a logical container in the Power BI service for storing related artifacts, such as datasets and reports. Although this scenario depicts one workspace, multiple workspaces are commonly required to satisfy all workspace planning requirements.
+A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md) serves as a logical container in the Power BI service for storing related Power BI items, such as datasets and reports. Although this scenario depicts one workspace, multiple workspaces are commonly required to satisfy all workspace planning requirements.
 
 The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario describes the use of separate workspaces.
 
@@ -89,7 +89,7 @@ The reuse of existing datasets is important for team collaboration. It helps to 
 - Reduces the risk of inconsistent data and calculations.
 - Supports all slicing, dicing, and pivoting capabilities within the visuals while remaining connected to the dataset that's stored in the Power BI service.
 
-To access an existing dataset, the content creator must have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. It can be granted directly or indirectly when the user is assigned to a [workspace role](../collaborate-share/service-roles-new-workspaces.md) (contributor or higher) or granted when publishing a Power BI app or sharing an artifact. The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario explores the reuse of shared datasets further.
+To access an existing dataset, the content creator must have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. It can be granted directly or indirectly when the user is assigned to a [workspace role](../collaborate-share/service-roles-new-workspaces.md) (contributor or higher) or granted when publishing a Power BI app or sharing a Power BI item. The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario explores the reuse of shared datasets further.
 
 ### Gateway setup
 

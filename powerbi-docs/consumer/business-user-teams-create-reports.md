@@ -155,6 +155,6 @@ To get started with Power BI Desktop, follow these steps.
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
-- [Use Power BI goals to improve results in Microsoft Teams](business-user-teams-goals.md)
+- [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
 - [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
 - [Analyze your Teams collaboration data](business-user-teams-collaboration-data.md)

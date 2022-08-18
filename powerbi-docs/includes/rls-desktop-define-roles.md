@@ -18,7 +18,7 @@ To define security roles, follow these steps.
 4. Under **Roles**, provide a name for the role.
 
     >[!NOTE]
-    >You can't define a role with a comma, such as `London,ParisRole`.
+    >You can't define a role with a comma, for example `London,ParisRole`.
 
 5. Under **Tables**, select the table to which you want to apply a DAX rule.
 

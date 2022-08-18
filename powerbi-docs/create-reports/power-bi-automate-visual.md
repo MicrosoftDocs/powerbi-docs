@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/28/2021
+ms.date: 08/05/2022
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -109,8 +109,10 @@ Optionally, you can change the button text, font color, font size, or fill color
 :::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format-desktop.png" alt-text="Screenshot shows the Format pane for the flow."::: 
 
 # [Power BI service](#tab/powerbi-service)
-:::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format.png" alt-text="Format the flow."::: 
+:::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format.png" alt-text="Format the flow.":::
+
 ---
+
 ## Test the flow
 
 After you have applied a flow to the button, we recommend testing it before you share the flow with others. These Power BI flows can only run in the context of a Power BI report. You can't run these flows in a Power Automate web app or elsewhere.
@@ -158,6 +160,8 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 - The visual will only display flows within your default environment. We plan to add support for an environment selector by the general availability release.
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
 - The visual isn't supported in sovereign clouds.
+- The visual doesn't work in Publish to Web (public) scenarios, because unauthenticated scenarios aren't supported by Power Automate.
+- The visual isn't certified while in preview. We plan to have complete certification by the general availability release.
 
 ## Next steps
 

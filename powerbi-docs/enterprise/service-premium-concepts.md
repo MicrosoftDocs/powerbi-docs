@@ -7,13 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 08/01/2022
 LocalizationGroup: Premium
 ---
 # Premium Gen2 capacity load evaluation
 
 >[!TIP]
->This article explains how to evaluate your Gen2 capacity load. It covers concepts such as *overload* and *autoscale*. You can also watch the [Gen2 features breakdown](https://aka.ms/PBIGen2GAVideo) video, which illustrates some of the Gen2 features described in this article.
+>This article explains how to evaluate your Gen2 capacity load. It covers concepts such as *overload* and *autoscale*. You can also watch these videos which illustrate some of the Gen2 features described in this article.
+>* [Gen2 fundamentals and capacity analytics deep dive](https://go.microsoft.com/fwlink/?linkid=2202475)
+>* [Gen2 features breakdown](https://aka.ms/PBIGen2GAVideo)
 
 To enforce CPU throughput limitations, Power BI evaluates the throughput from your Premium Gen2 capacity on an ongoing basis.
 
@@ -23,7 +25,7 @@ The following image illustrates how Premium Gen2 evaluates and completes queries
 
 :::image type="content" source="media/service-premium-concepts/service-premium-concepts-01.png" alt-text="Diagram showing Premium generation two evaluates and processes queries. "lightbox="media/service-premium-concepts/service-premium-concepts-01.png":::
 
-Let's look at an example: a P1 with four backend v-cores can support 120 seconds (4 x 30 seconds = 120) of v-core execution time, also known as *CPU time*. 
+Let's look at an example: a P1 with four backend v-cores can support 120 seconds (4 x 30 seconds = 120) of v-core execution time, also known as *CPU time*.
 
 The aggregation is complex. It uses specialized algorithms for different workloads, and for different types of operations, as described in the following points:
 
@@ -33,13 +35,14 @@ The aggregation is complex. It uses specialized algorithms for different workloa
 
 ## Premium Gen2 background operation scheduling
 
-Refreshes are run on Premium Gen2 capacities at the time they are scheduled, or close to it, regardless of how many other background operations were scheduled for the same time. Datasets and dataflows being refreshed are placed on a physical processing node that has enough memory available to load them, and then begin the refresh process. 
+Refreshes are run on Premium Gen2 capacities at the time they are scheduled, or close to it, regardless of how many other background operations were scheduled for the same time. Datasets and dataflows being refreshed are placed on a physical processing node that has enough memory available to load them, and then begin the refresh process.
 
-While processing the refresh, datasets may consume more memory to complete the refresh process. The refresh engine makes sure no artifact can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
+While processing the refresh, datasets may consume more memory to complete the refresh process. The refresh engine makes sure no item can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
 
 ## How capacity size limits are enforced when viewing reports
 
 Premium Gen2 evaluates utilization by aggregating utilization records every 30 seconds. Each evaluation consists of 2 different aggregations:
+
 * Interactive utilization
 * Background utilization
 
@@ -47,7 +50,7 @@ Premium Gen2 evaluates utilization by aggregating utilization records every 30 s
 
 **Background utilization** is evaluated by considering all the background operations that completed during the past 24 hours. Each background operation contributes only 1/2880 of its total CPU cost (2880 is the number of evaluation cycles in a 24-hour period).
 
-Each capacity consists of an equal number of frontend and backend v-cores. The CPU time measured in utilization records reflect the backend v-cores' utilization, and that utilization drives the need to autoscale. Utilization of frontend v-cores is *not* tracked, and you cannot convert frontend v-cores to backend v-cores.
+Each capacity consists of an equal number of frontend and backend v-cores. The CPU time measured in utilization records reflects the backend v-cores' utilization, and that utilization drives the need to autoscale. Utilization of frontend v-cores is *not* tracked, and you cannot convert frontend v-cores to backend v-cores.
 
 If you have a P1 subscription with 4 backend v-cores, each evaluation cycle quota equates to 120 seconds (4 x 30 = 120 seconds) of CPU utilization. If the sum of both interactive and background utilizations *exceeds* the total backend v-core quote in your capacity, and you have *not* optionally enabled autoscale, the workload for your Gen2 capacity will exceed your available resources, also called your *capacity threshold*. The following image illustrates this condition, called *overload*, when autoscale is *not* enabled.
 
@@ -65,7 +68,7 @@ Autoscale always ensures that no single interactive operation can account for al
 
 ## Using Premium Gen2 without autoscale
 
-If a capacity's utilization exceeded 100% of its resources, and it cannot initiate autoscale due to autoscale being turned off, or already being at its maximum v-core value, the capacity enters a temporary *interactive request delay* mode. During the *interactive request delay* mode, each interactive request (such as a report load, visual interaction, and others) is delayed before it is sent to the engine for execution. 
+If a capacity's utilization exceeded 100% of its resources, and it cannot initiate autoscale due to autoscale being turned off, or already being at its maximum v-core value, the capacity enters a temporary *interactive request delay* mode. During the *interactive request delay* mode, each interactive request (such as a report load, visual interaction, and others) is delayed before it is sent to the engine for execution.
 
 The capacity stays in *interactive request delay* mode if the previous evaluation is evaluated at greater than 100% resource utilization.
 

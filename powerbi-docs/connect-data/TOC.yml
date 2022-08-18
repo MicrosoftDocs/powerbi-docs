@@ -9,8 +9,16 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
-    - name: "Datasets discovery in the Power BI service"
-      href: service-datasets-hub.md
+    - name: "Data hub"
+      href: service-data-hub.md
+    - name: "Data details pages: Index"
+      href: service-data-details-page.md
+    - name: "Dataset details page"
+      href: service-dataset-details-page.md
+    - name: "Datamart details page"
+      href: service-datamart-details-page.md
+    - name: "Power BI for Azure users"
+      href: powerbi-azure-landing.md
   - name: Quickstarts
     expanded: true
     items: 
@@ -215,7 +223,7 @@
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
         href: refresh-summaries.md
-      - name: "Asynchronous refresh with REST API"
+      - name: "Enhanced refresh with REST API"
         href: asynchronous-refresh.md     
       - name: Incremental refresh
         items:
@@ -251,8 +259,6 @@
         href: service-template-update-delete-extract.md
       - name: "Install, share, and update a template app"
         href: service-template-apps-install-distribute.md
-      - name: "Template apps samples"
-        href: service-template-apps-samples.md  
       - name: "Automated template app configuration"
         href: template-apps-auto-install.md              
     - name: Connect to services

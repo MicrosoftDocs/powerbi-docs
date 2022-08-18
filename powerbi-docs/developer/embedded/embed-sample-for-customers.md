@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/10/2022
+ms.date: 06/11/2022
 
 ---
 
@@ -66,56 +66,56 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * **Code dependencies**
 
-    # [.NET Core](#tab/net-core)
-    
-    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
-    
-    * An integrated development environment (IDE). We recommend using one of the following:
-    
-        * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-        * [Visual Studio Code](https://code.visualstudio.com/)
+### [.NET Core](#tab/net-core)
 
-    # [.NET Framework](#tab/net-framework)
-    
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
-    
-    * [Visual Studio](https://visualstudio.microsoft.com/)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
 
-    # [Java](#tab/java)
-    
-    * [JDK (or JRE)](https://www.oracle.com/java/technologies/)
-    
-    * [Eclipse IDE](https://www.eclipse.org/downloads/packages/) - Verify that you have the *Eclipse for Java EE Developers* (enterprise edition)
-    
-    * [Apache Tomcat Binary Distributions](https://tomcat.apache.org/)
-    
-    # [Node JS](#tab/node-js)
-    
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
-    
-    * An integrated development environment (IDE). We recommend using one of the following:
-    
-        * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-        * [Visual Studio Code](https://code.visualstudio.com/)
-    
-    # [Python](#tab/python)
-    
-    * [Python 3](https://www.python.org/downloads/) (or higher)
-    
-        >[!NOTE]
-        >
-        >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
-        >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
-    
-    * An integrated development environment (IDE). We recommend using one of the following:
-    
-        * [Visual Studio](https://visualstudio.microsoft.com/)
-    
-        * [Visual Studio Code](https://code.visualstudio.com/)
-    
-    ---
+* An integrated development environment (IDE). We recommend using one of the following:
+
+  * [Visual Studio](https://visualstudio.microsoft.com/)
+
+  * [Visual Studio Code](https://code.visualstudio.com/)
+
+### [.NET Framework](#tab/net-framework)
+
+* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+
+* [Visual Studio](https://visualstudio.microsoft.com/)
+
+### [Java](#tab/java)
+
+* [JDK (or JRE)](https://www.oracle.com/java/technologies/)
+
+* [Eclipse IDE](https://www.eclipse.org/downloads/packages/) - Verify that you have the *Eclipse for Java EE Developers* (enterprise edition)
+
+* [Apache Tomcat Binary Distributions](https://tomcat.apache.org/)
+
+### [Node JS](#tab/node-js)
+
+* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+
+* An integrated development environment (IDE). We recommend using one of the following:
+
+  * [Visual Studio](https://visualstudio.microsoft.com/)
+
+  * [Visual Studio Code](https://code.visualstudio.com/)
+
+### [Python](#tab/python)
+
+* [Python 3](https://www.python.org/downloads/) (or higher)
+
+    >[!NOTE]
+    >
+    >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
+    >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
+
+* An integrated development environment (IDE). We recommend using one of the following:
+
+  * [Visual Studio](https://visualstudio.microsoft.com/)
+
+  * [Visual Studio Code](https://code.visualstudio.com/)
+
+---
 
 ## Method
 
@@ -155,6 +155,7 @@ The table below describes a few key differences between the [service principal](
 
 Registering your application with Azure AD allows you to:
 > [!div class="checklist"]
+>
 >* Establish an identity for your app
 >* Let your app access the [Power BI REST APIs](/rest/api/power-bi/)
 >* If you're using a *master user* - Specify your app's [Power BI REST permissions](/azure/active-directory/develop/v2-permissions-and-consent)
@@ -250,21 +251,22 @@ Obtain the *username* and *password* of the Power BI user you're using as your *
 >This step is only relevant if you're using the *service principal* authentication method. If you're using a *master user*, skip this step and continue with [Step 7 - Enable workspace access](#step-7---enable-workspace-access).
 
 For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal. If you're not the admin of your tenant, get the tenant's admin to enable the *Tenant settings* for you.
-        
+
 1. In *Power BI service*, select **Settings** > **Settings** > **Admin portal**.
-        
+
     :::image type="content" source="media/embed-sample-for-customers/admin-settings.png" alt-text="A screenshot showing the admin settings menu option in the Power B I service settings menu.":::
-        
+
 2. Select **Tenant settings** and then scroll down to the **Developer settings** section.
-        
+
 3. Expand **Allow service principals to use Power BI APIs**, and enable this option.
-        
+
     :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service.":::
-        
+
 >[!NOTE]
 >When using a *service principal*, it's recommended to limit its access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
+>
 > * [Create an Azure AD security group](embed-service-principal.md#step-2---create-an-azure-ad-security-group)
->* [Enable the Power BI service admin settings](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
+> * [Enable the Power BI service admin settings](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
 
 ## Step 7 - Enable workspace access
 
@@ -304,7 +306,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 5. Open the **Embed for your customers** folder.
 
-# [.NET Core](#tab/net-core)
+### [.NET Core](#tab/net-core)
 
 6. Open the *embed for your customers sample app* using one of these methods:
 
@@ -333,7 +335,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     * If you're using **Visual Studio Code**, select **Run > Start Debugging**.
 
-# [.NET Framework](#tab/net-framework)
+### [.NET Framework](#tab/net-framework)
 
 6. Using [Visual Studio](https://visualstudio.microsoft.com/), open the **AppOwnsData.sln** file.
 
@@ -354,7 +356,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 9. Run the project by selecting **IIS Express** (play).
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 6. Open **Eclipse** and follow the instructions described below.
 
@@ -433,7 +435,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     d. Select **Finish**.
 
-# [Node JS](#tab/node-js)
+### [Node JS](#tab/node-js)
 
 6. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following:
 
@@ -464,7 +466,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     b. Open a new tab in your browser and navigate to `http://localhost:5300`.
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 6. Open **PowerShell** or **Command Prompt**.
 
@@ -506,6 +508,9 @@ Follow these steps to modify the *embed for your customers* sample application, 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
 [!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
+
+> [!IMPORTANT]
+> If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
 ## Next steps
 

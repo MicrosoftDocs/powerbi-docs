@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 03/31/2022
+ms.date: 06/23/2022
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -33,7 +33,7 @@ Sujata demonstrates how to share in the Power BI service.
 
 - You need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md), whether you share content inside or outside your organization. 
 - Your recipients also need Power BI Pro or Premium Per User (PPU) licenses, unless the content is in a [Premium capacity](../enterprise/service-premium-what-is.md). 
-- If you want to allow recipients to edit a shared report, you have to assign the user a workspace role that allows editing. To learn more about role-level permissions and how to assign roles, read [Roles in the new workspaces](service-roles-new-workspaces.md).
+- If you want to allow recipients to edit a shared report, you have to assign the user a workspace role that allows editing. To learn more about role-level permissions and how to assign roles, read [Roles in workspaces](service-roles-new-workspaces.md).
 
 ### Where you can share
 
@@ -215,12 +215,14 @@ At most, you can share with 100 users or groups in a single share action. Howeve
 
 
 ## Considerations and limitations
+
 Things to keep in mind about sharing reports and dashboards:
 * Both reports and dashboards can be shared to users through direct access; however, only reports can be shared via links that give access to the report and underlying data.
 * If you have reshare permissions to the underlying dataset, when you share a report or dashboard with colleagues you're also sharing the underlying dataset. Your colleagues get access to the entire dataset unless [row-level security (RLS)](../enterprise/service-admin-rls.md) limits their access. Report authors may customize user experiences when viewing or interacting with reports. For example, authors may hide columns or limit the actions on visuals. These customized user experiences don't restrict what data users can access in the dataset. Use [row-level security (RLS)](../enterprise/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.
 * Everyone you successfully share your dashboard with can see it and interact with the related reports in [Reading view](../consumer/end-user-reading-view.md#reading-view). In general, they can't create reports or save changes to existing reports. However, if you select **Allow recipients to build content with the data associated with this dashboard**, they can create their own reports in other workspaces based on the dataset for this dashboard.
 * Although no one can see or download the dataset, they can access the dataset directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group and for every workspace the group belongs to.
 * Everyone can manually [refresh the data](../connect-data/refresh-data.md).
+* You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with and republish the app.
 * If you use Microsoft Exchange Online for email, you can enter the email address of a distribution group to share with its members. 
 * You can’t use Microsoft 365 Unified groups for direct sharing. If you don’t want to specify individuals, you can use a security group to share with multiple users.
 * Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.

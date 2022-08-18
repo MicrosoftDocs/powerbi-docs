@@ -64,19 +64,19 @@ The sections of the tenant settings page are listed in the table below.
 * [Developer settings](service-admin-portal-developer.md)
 * [Discovery settings](service-admin-portal-discovery.md)
 * [Export and sharing settings](service-admin-portal-export-sharing.md)
-* [Goals settings (preview)](service-admin-portal-goals-settings.md)
+* [Metrics settings (preview)](service-admin-portal-goals-settings.md)
 * [Help and support settings](service-admin-portal-help-support.md)
-* [Information protection settings](service-admin-portal-information-protection.md)
-* [Workspace settings](service-admin-portal-workspace.md)
 * [Information protection settings](service-admin-portal-information-protection.md)
 * [Insights settings](service-admin-portal-insights.md)
 * [Integration settings](service-admin-portal-integration.md)
 * [Power BI visuals settings](service-admin-portal-power-bi-visuals.md)
 * [Q&A settings](service-admin-portal-qa.md)
+* [Quick measure suggestions settings](service-admin-portal-quick-measure-suggestions-settings.md)
 * [R and Python visuals settings](service-admin-portal-r-python-visuals.md)
 * [Share data with your Microsoft 365 services settings](service-admin-portal-share-data-microsoft-365-services.md)
 * [Template app settings](service-admin-portal-template-app.md)
 * [User experience experiments settings](service-admin-portal-user-experience-experiments.md)
+* [Workspace settings](service-admin-portal-workspace.md)
 
 ## Next steps
 

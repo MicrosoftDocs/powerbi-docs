@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 
 # Use a relative time slicer and filter in Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. Using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour. 
 
@@ -34,7 +34,13 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 2. Select the **Slicer** visualization type.
 
-    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer.":::
+   # [Power BI Desktop](#tab/powerbi-desktop)
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-desktop-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in Power B I Desktop.":::
+
+   # [Power BI service](#tab/powerbi-service)
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in the Power B I service.":::
+
+   ---
 
 ### Create a filter
  

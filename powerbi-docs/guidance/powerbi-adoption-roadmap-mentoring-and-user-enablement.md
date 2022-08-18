@@ -85,7 +85,7 @@ During a review, an expert from the COE evaluates self-service Power BI content 
 - The finance team would like to [assign a workspace to Premium capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
-A best practices review is most often focused on the dataset design, though the review can encompass all types of artifacts (dataflows, datasets, reports, or apps).
+A best practices review is most often focused on the dataset design, though the review can encompass all types of Power BI items (dataflows, datasets, reports, or apps).
 
 Before content is deployed to the Power BI service, a best practices review may verify that:
 
@@ -105,11 +105,11 @@ Before content is deployed to the Power BI service, a best practices review may 
 Once the content has been deployed to the Power BI service, the best practices review is not necessarily complete yet. Completing the remainder of the review may also include items such as:
 
 - The target [workspace](../collaborate-share/service-create-the-new-workspaces.md) is suitable for the content.
-- [Workspace security roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) are appropriate for the content.
+- [Workspace security roles](../collaborate-share/service-roles-new-workspaces.md) are appropriate for the content.
 - Other permissions ([app permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app), [build permission](../connect-data/service-datasets-build-permissions.md), use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
 - [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - [Sensitivity labels](../enterprise/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
-- Artifact [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
+- Power BI item [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
 - [Data refresh](../connect-data/refresh-data.md) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
 - All [best practices rules](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance-and-design-v1-1/) are followed and, preferably, are automated via a community tool called Best Practices Analyzer for maximum efficiency and productivity.
 
@@ -127,7 +127,7 @@ A single centralized portal, or hub, is where the user community can find:
 - Access to the community Q&A forum.
 - Announcements of interest to the community, such as new features and release plan updates.
 - Schedules and registration links for office hours, lunch and learns, training sessions, and user group meetings.
-- Announcements of key changes to data artifacts and change log (if appropriate).
+- Announcements of key changes to datasets and change log (if appropriate).
 - How to request help or support.
 - Training materials.
 - Documentation, onboarding materials, and frequently asked questions (FAQ).

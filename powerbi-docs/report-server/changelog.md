@@ -7,15 +7,39 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/04/2022
+ms.date: 06/08/2022
 ---
 
 # Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build. Always follow the guide on how to [upgrade Power BI Report Server](upgrade.md) when performing any upgrade.
 
-
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
+
+## May 2022
+- **Power BI Report Server**
+    - *Version: 1.14.8179.37378 (build 15.0.1108.297), Released: May 26, 2022*
+        - Features
+            - Custom Visual API shipped with release - version v4.5.0 
+        - Bug fixes
+            -  Fixed issue with RSPowerBI.exe process causing out of memory exceptions.
+            -  Fixed scheduled refresh in some cases leading to 'unable to combine data' error.
+            -  Fixed issue with zero white space in report.
+            -  Fixed issue where help button tooltip wasn't localized in some locales.
+            -  Fixed issue with SVG formatted image used as report background.
+            -  Fixed custom visual loading with EnableCDNVisual disabled.
+            -  Fixed issue with datetimeoffset field being incorrect after a schedule refresh.
+            -  Fixed issue with cropping of custom branding.
+            -  Fixed issue with subscriptions using Leave Blank option.
+            -  Fixed performance regression seen in some types of Power BI reports.
+            -  Fixed issue with url encoding.
+        
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.105.1143.0 (May 2022), Released: June 7, 2022*
+        - Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
+   - *Version: 2.105.961.0 (May 2022), Released: May 26, 2022*
+        - Support for May 2022 Power BI Report Server
+        - Bug fixes
 
 ## January 2022
 - **Power BI Report Server**
@@ -25,6 +49,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     	   - Several minor UI fixes in new portal experience.
     - *Version: 1.13.8054.40631 (Build 15.0.1108.153), Released: January 24, 2022*
         - Features
+            - Custom Visual API shipped with release - version v4.0.0
             - Original Portal experience for PBIRS has been removed. Previously UsePortalV2 = false in database would enable the original experience, but this has been removed.
             -  Added new theming variables to enable customizing newly added background colors (*IconColor). The full list can be found in the [colors.json example in the documentation](/sql/reporting-services/branding-the-web-portal#colorsjson-example). 
         - Bug fixes
@@ -40,6 +65,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Fixed issue in config tool connecting to SQL server to create ReportServer database
         
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.100.4082.0 (January 2022), Released: June 8, 2022*
+        - Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
    - *Version: 2.100.1381.0 (January 2022), Released: January 24, 2022*
         - Support for January 2022 Power BI Report Server   
        
@@ -58,6 +85,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed issue where old portal displayed "May 2021" instead of "September 2021".
     - *Version: 1.12.7936.39665 (Build 15.0.1107.146), Released: September 27, 2021*
         - Features
+            - Custom Visual API shipped with release - version v3.8.0 
             - Updated support for Power BI reports including those with small multiples.
             - Updated Power BI Report Server portal experience as default experience.
         - Bug fixes

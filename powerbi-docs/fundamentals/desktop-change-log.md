@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 3/28/2022
+ms.date: 7/21/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,52 @@ ms.date: 3/28/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## July 2022 QFE 1
+
+*Version: 2.107.841.0, Released: July 21, 2022*
+
+Bug fixes/improvements:
+- Fix for SAP BW: now customers will be able to retrieve a full dataset when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc) even if the data exceeds the page size.
+- Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
+
+
+## June 2022 QFE 1
+
+*Version: 2.106.883.0, Released: June 28, 2022*
+
+Bug fixes/improvements:
+- Fix for the start-up Sign-In ThreadStateException: now the logic for the sign-in process is split into two separate steps (users attempt to sign-in using cached credentials in the background as the first step, and then if needed they are returned back to the UI thread for the second step, that previously caused the ThreadStateException, and sign in with platform credentials).
+- Fix for the legend color: now it will be the same for PBI Desktop and PBI Service.
+- Fix for broken export 'data to file' content from custom visuals. 
+- Fix for custom visuals using API above 4.4: definition for 4.5 and 4.6 custom visual API versions was added, and these custom visuals now run as expected. 
+
+## May 2022 QFE 2
+
+*Version: 2.105.1143.0, Released: June 3, 2022*
+
+Bug fixes/improvements:
+- Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
+- Assert failure fix for column names longer than 30 characters: now users will be able to connect to tables with columns names longer than 30 characters and refresh them. 
+
+## May 2022 QFE 1
+
+*Version: 2.105.923.0, Released: May 23, 2022*
+
+Bug fixes/improvements:
+- Datamarts data sources fix: primary keys are now supported.
+- Axis scale setting persistence fix through version updates for category axis for scatter, line, stacked area, area and combo charts: now the setting for categorical axis with a log axis will persist. 
+
+## April 2022 QFE 1
+
+*Version: 2.104.941.0, Released: April 26, 2022*
+
+Bug fixes/improvements:
+- Fix for DAX expressions: the DAX parsing process in the formula bar now runs faster and the application does not hang.
+- Fix for DirectQuery connections in Shared: it's now possible to add a DirectQuery connection to an existing report. 
+- Fix for the format pane of bar charts: X-axis and Y-axis field well names are now mapped correctly and only their names are displayed. 
+- Fix for stacked column charts with logarithmic scale: users can now apply Y axis log scale even if the legend field is present.
+- Fix for the condition used to test disabled date bounds in calendar: users can now select last date in the calendar popup. 
 
 ## March 2022 QFE 1
 
@@ -24,7 +70,7 @@ Bug fixes/improvements:
 - Fix for the new format pane of matrix visuals: now the URL icon on rows/columns & horizontal scroll bar will work.
 - Date picker defaults fix: now for the existing reports the datepicker icon in date range slicers will not be available and as a result, users' reports will not be changed. 
 - Model refresh fix: now column descriptions for SimpleQueryMappingInput table inputs will not disappear after the model refresh.
-- AS engine fix: now the <language> in the AS config file will always be set to en-us regardless of the PBI Desktop UI language to prevent issues with the AS engine's start.
+- AS engine fix: now the `language` in the AS config file will always be set to en-us regardless of the Power BI Desktop UI language to prevent issues with the AS engine's start.
 - Keyboard Navigation fix for the selection pane: now it will be accessible by keyboard while navigation define under "Format" tab.
 
 ## February 2022 QFE 1
@@ -196,7 +242,7 @@ Bug fixes:
 - Fix for PBI.FormatAnnotationStats telemetry event.
 - Fix for customized fields display folders: now the folders won't disappear after data refresh or **Choose Columns** changes in Power Query.
 - ODBC drivers update to newer versions.
-- Fix for Microsoft Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
+- Fix for Microsoft Purview Information Protection timeout issues: now when a user opens a file or signs in and faces network issues, MIP exception won't pop up.
 
 ## February 2021 QFE 1
 

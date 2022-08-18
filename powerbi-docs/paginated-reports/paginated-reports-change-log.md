@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/13/2021
+ms.date: 07/18/2022
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,31 @@ ms.date: 12/13/2021
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## July 2022
+	
+Version 15.7.1798.91, released July 18, 2022
+	
+### Bug fixes 
+	
+- Fixed several localization issues with strings only displaying in English.
+- Fixed issue related to 407 proxy authentication.
+- Fixed issue related to parameter formulas when validating query.
+- Fixed issue where Report Builder would close saving a report.
+- Fixed issue where there is an extra border around Report Builder in some versions of Windows.
+
+## April 2022
+
+Version 15.7.1797.84, released April 13, 2022
+
+### Features
+
+- All supported languages are now included in the installer. Language is selected based on current Windows locale setting.
+ 
+### Bug fixes 
+
+- Accessibility fixes mostly focused on better Microsoft Narrator support.
+- Minor telemetry changes.
 
 ## December 2021 
 
@@ -59,7 +84,7 @@ Version 15.7.01678.0001, released August 6, 2021
 
 ### Features
 
-- Moved to 64 bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
+- Moved to 64-bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
 - Enhanced support for DAX DateTime parameters.
 
 ## June 2021 

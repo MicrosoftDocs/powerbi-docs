@@ -77,7 +77,7 @@ Some critical items to address early in a Power BI implementation include:
 - Working with [shared datasets](../connect-data/service-datasets-share.md) for reusability.
 - Applying [data certification](../collaborate-share/service-endorsement-overview.md) to promote the use of authoritative and trustworthy data.
 - Use of different [report types](../create-reports/index.yml), including Power BI reports, Excel reports, or paginated reports for different use cases or business units.
-- Change management approaches for managing centralized BI artifacts and business-managed BI artifacts.
+- Change management approaches for managing centralized BI items and business-managed BI items.
 - Training plans for consumers, data modelers, report authors, and administrators.
 - Support for content authors by using [Power BI Desktop templates](../create-reports/desktop-templates.md), [custom visuals](https://powerbi.microsoft.com/blog/how-to-govern-power-bi-visuals-inside-your-organization/), and documented report design standards.
 - Procedures and processes for managing user requirements, such as requesting new licenses, adding new gateway data sources, gaining permission to gateway data sources, requesting new workspaces, workspace permissions changes, and other common requirements that may be encountered on a regular basis.

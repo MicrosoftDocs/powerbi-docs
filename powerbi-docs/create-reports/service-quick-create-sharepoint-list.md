@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 07/18/2022
 LocalizationGroup: Reports
 ---
-# Create a report quickly from a SharePoint list or library in the Power BI service
+# Create a report quickly from a SharePoint list or library
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-There's a new way to create reports quickly in the Power BI service from data in SharePoint lists or libraries. Power BI automatically generates the visuals for you. Microsoft List and SharePoint list or library users can explore their data with just a few clicks.
+There's a new way to create reports quickly from data in SharePoint lists or libraries. Power BI automatically generates the visuals for you. Microsoft List and SharePoint list or library users can explore their data with just a few clicks.
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-report.png" alt-text="Screenshot of Create a quick report from a SharePoint list.":::
 
@@ -34,9 +34,9 @@ In this video, watch Amanda demo creating a report from a SharePoint list in the
 
     :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-visualize-list.png" alt-text="Screenshot of Select Power BI, Visualize in Power BI.":::
 
-    A new browser tab opens with an automatically generated report with two measures, shown as rows in the report, and three categories, shown as bar charts in the report. Currently you can add a maximum of three measures and four categories. 
+    A new browser tab opens with an automatically generated report showing interesting insights based on your data.
 
-2. Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and unselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations.  
+2. Changing the data you see in the report is easy. In the **Summarize** pane, add or remove fields from the report. Select and deselect fields to update what you want to measure and analyze. Power BI automatically adds or removes charts to show the new combinations. Currently you can add a maximum of three measures and four categories. 
 
     :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-add-charts.png" alt-text="Screenshot of Add more charts and make other changes.":::
 
@@ -68,23 +68,23 @@ If you make changes to the report, use **Publish to the list** or **publish to t
 
 ## Refresh visuals
 
-The data in the report will update regularly to stay in sync with the list or library. After a refresh, use the **Refresh visuals** button in the ribbon to update the visuals. 
+The data in the report will update regularly to stay in sync with the list or library. After a refresh, use the **Refresh visuals** button in the ribbon to update the visuals. Data refresh is limited to once every 3 hours. If the list or library has been updated with new data or metadata, such as an updated list or library name, after the most recent data refresh, these changes will not be reflected in the report until the next refresh.
 
 :::image type="content" source="media/service-quick-create-sharepoint-list/sharepoint-quick-refresh-visuals.png" alt-text="Screenshot of Refresh the visuals in the report.":::
 
 ## Licenses
 
-Anyone can use the **Visualize the list** or **visualize the library** feature to explore their list or library data, but to enter the full edit experience, publish reports, access reports that others have published, or delete reports, you need a Power BI Pro license. If you don’t currently have a Pro license, you can [buy a Power BI Pro license or start a free trial](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).  
+Anyone can use the **Visualize the list** or **visualize the library** feature to explore their list or library data. You need a Power BI Pro license to enter the full edit experience, publish reports, access reports that others have published, or delete reports. Your report readers also need a Power BI Pro license. If you don’t currently have a Pro license, you can [buy a Power BI Pro license or start a free trial](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).  
 
 ## Considerations and limitations
 
-- The first time you visualize a list or library, creating the dataset and report can take some time. We’re working to improve the end-to-end performance of this experience. 
 - Reports are published back to the list or library at the SharePoint data access level of the report creator. Row-level security (RLS) isn't supported for reports created using this method.
-- Currently, some complex column types in SharePoint will show up as [Record]s or [List]s within the report. We’re working on updating the experience so these column values match what you see in the list or library.  
-- Data refresh is limited to once every 3 hours. If the list or library has been updated with new data or metadata, such as an updated list or library name, after the most recent data refresh, these changes will not be reflected in the report until the next refresh.
+- Currency formatting is not currently supported. Currency fields will show up with the $ symbol. 
+- If your list or document library has folders, only data in the root folder will be visualized.
 - Very large lists may be slow or may time out altogether. 
 - This feature isn't supported for guest users in a tenant.
 - Within SharePoint libraries, this option will only show on the root of the document library.
+- The reports and datasets created through this SharePoint experience are stored in special, system-generated workspaces hosted in shared capacity. Users aren't meant to access these workspaces outside of the SharePoint experience.
 
 ## Troubleshooting
 

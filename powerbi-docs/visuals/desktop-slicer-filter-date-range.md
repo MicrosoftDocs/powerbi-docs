@@ -7,13 +7,14 @@ ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/12/2021
+ms.date: 06/15/2022
+ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Create reports
 ---
 
 # Creating a relative date slicer and filter in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 With the **relative date slicer** or **relative date filter**, you can apply time-based filters to any date column in your data model. For example, you can use the **relative date slicer** to show only sales data that's happened within the last 30 days (or month, calendar months, and so on). When you refresh the data, the relative time period automatically applies the appropriate relative date constraint.
 
@@ -23,7 +24,7 @@ To share your report with a Power BI colleague requires that you both have indiv
 
 ## Create the relative date range slicer
 
-You can use the relative date slicer just like any other slicer. Create a **Slicer** visual for your report and then select a date value for the **Field** value. In the following image, we selected the *Purchasing Date* field.
+You can use the relative date slicer just like any other slicer. Create a **Slicer** visual for your report and then select a date value for the **Field** value. In the following image, we selected the *Date* field.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png" alt-text="Screenshot of the Visualizations pane with the slicer visual icon and the Field well called out.":::
 

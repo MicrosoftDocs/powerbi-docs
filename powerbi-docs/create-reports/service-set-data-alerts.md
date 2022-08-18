@@ -8,11 +8,13 @@ ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/03/2021
+ms.date: 04/21/2022
 LocalizationGroup: Dashboards
 ---
 
 # Data alerts in the Power BI service
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Set alerts to notify you when data in your dashboards changes beyond limits you set.
 
@@ -122,6 +124,7 @@ There are many ways to manage your alerts:
 * Alerts aren't supported for card tiles with date/time measures.
 * Alerts only work with numeric data types.
 * Alerts only work on refreshed data. They don't work on static data.
+* Since alerts are only sent if your data changes, you won't receive duplicate alerts for an unchanged value.
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
 * You can create up to 250 alerts across all your models.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/03/2022
+ms.date: 04/02/2022
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -22,19 +22,19 @@ When you share a report with a broad audience, some of your users may want to se
 
 This feature is ideal for report creators: You can enable basic exploration scenarios for your report readers. Your report readers gain further insights through ad-hoc exploration of visuals on a Power BI report. Here are modifications that they can make:
 
-- Change the visualization type
-- Swap out a measure or dimension
-- Add or remove a legend
-- Compare two or more measures
+- Change the visualization type.
+- Swap out a measure or dimension.
+- Add or remove a legend.
+- Compare two or more measures.
 - Change aggregations, etc.
 
 Not only does this feature allow for new exploration capabilities. It also includes ways for users to capture and share their changes:
 
-- Capture their changes
-- Share their changes
+- Capture their changes.
+- Share their changes.
 - Reset all their changes for a report. Selecting **Reset to default** removes all personalizations.
-- Reset all their changes for a visual
-- Clear out their recent changes
+- Reset all their changes for a visual.
+- Clear out their recent changes.
 
 After report readers personalize a report, they can [create personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to save their personalizations. To learn how report readers can use this feature, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md). 
 

@@ -62,6 +62,7 @@
     },
     "template": [],
     "dest": "powerbi-docs",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
   }
 }

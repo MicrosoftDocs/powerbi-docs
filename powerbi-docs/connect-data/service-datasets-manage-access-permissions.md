@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/26/2022
+ms.date: 08/18/2022
 LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions (preview)
@@ -25,11 +25,11 @@ This document explains how to use the dataset manage permissions page.
 
 To open the dataset manage permissions page:
 
-* From the [datasets hub](service-datasets-hub.md#find-the-dataset-you-need): Select **Manage permissions** on the **More options (…)** menu.
+* From the [data hub](service-data-hub.md#find-the-data-you-need): Select **Manage permissions** on the **More options (…)** menu.
 
     ![Screenshot of dataset manage permissions page entry points on the datasets hub.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-datasets-hub-page.png)
 
-* From the [dataset info page](service-datasets-hub.md#view-dataset-details-and-explore-related-reports): Select the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
+* From the [dataset details page](service-dataset-details-page.md#supported-actions): Select the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
 
     ![Screenshot of dataset manage permissions page entry points on the dataset info page.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-dataset-info-page.png)
 
@@ -43,11 +43,13 @@ These actions will open the datasets manage permissions page. The manage permiss
 
 The direct access tab lists users who have been granted access. For each user, you can see their email address and the permissions they have.
 
-To modify a user’s permissions, select **More options (…)** and choose one of the available options.
+* To modify a user’s permissions, select **More options (…)** and choose one of the available options.
 
-To grant dataset access to another user, click **+ Add user**. The [Share dataset dialog](service-datasets-share.md) will open.
+    ![Screenshot of modifying permissions from the direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-modify.png)
 
-![Screenshot of direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab.png)
+* To grant dataset access to another user, click **+ Add user**. The [Share dataset dialog](service-datasets-share.md) will open.
+
+    ![Screenshot of granting access permissions from the direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-add-user.png)
 
 ### Managing permissions granted through an app
 
@@ -76,7 +78,8 @@ The shared report links tab lists [links that have been created to shared report
 
 ## Next steps
 
-* [Share access to a dataset](service-datasets-share.md)
-* [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Dataset permissions](./service-datasets-permissions.md)
+* [Share access to a dataset](./service-datasets-share.md)
+* [Use datasets across workspaces](./service-datasets-across-workspaces.md)
 * [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

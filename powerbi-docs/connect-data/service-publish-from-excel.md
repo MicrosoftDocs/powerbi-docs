@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/29/2021
+ms.date: 06/03/2022
 LocalizationGroup: Data from files
 ---
 # Publish to Power BI from Microsoft Excel
@@ -68,13 +68,11 @@ Choose the **Upload** option if you only have data in worksheets, or you have Pi
 Using Upload from Publish to Power BI in Excel is a similar experience to **Get Data > File > OneDrive for Business > Connect, Manage and View Excel in Power BI** from Power BI in your browser.
 
 #### Export workbook data to Power BI
-When you choose the **Export** option, any supported data in tables and/or a data model are exported into a new dataset in Power BI. Any Power View sheets in the workbook are re-created in Power BI as reports.
+When you choose the **Export** option, any supported data in tables and/or a data model are exported into a new dataset in Power BI. You can continue editing your workbook. When your changes are saved, they are synchronized with the dataset in Power BI, usually within about an hour. If you need more immediate updates, you can select **Publish** again from Excel, and your changes are exported immediately. Any visualizations in reports and dashboards are updated, too.
 
-You can continue editing your workbook. When your changes are saved, they are synchronized with the dataset in Power BI, usually within about an hour. If you need more immediate updates, you can select **Publish** again from Excel, and your changes are exported immediately. Any visualizations in reports and dashboards are updated, too.
+Choose the **Publish** option if you’ve used the Get & Transform data or Power Pivot features to load data into a data model.
 
-Choose the **Publish** option if you’ve used the Get & Transform data or Power Pivot features to load data into a data model, or if your workbook has Power View sheets with visualizations that you want to see in Power BI.
-
-Using **Export** is very similar to using **Get Data > File > OneDrive for Business > Export Excel data into Power BI** from Power BI in your browser.
+Using **Export** is similar to using **Get Data > File > OneDrive for Business > Export Excel data into Power BI** from Power BI in your browser.
 
 ## Publishing
 When you choose either option, Excel signs in to Power BI with your current account, then publishes your workbook to your Power BI workspace. You can monitor the status bar in Excel to see how the publish process is progressing.

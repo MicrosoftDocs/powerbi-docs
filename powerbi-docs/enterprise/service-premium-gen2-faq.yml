@@ -77,28 +77,6 @@ sections:
           2. The value form step 1 is multiplied by the count of interactive operations that were affected by throttling.
 
       - question: |
-          Which operations contribute to interactive utilization, and which to background utilization?
-        answer: |
-          The following events are interactive operations:
-          * Datasets workload - Report View, Query, XMLA read
-          * Dataflows workloads
-          * Paginated Report workload - paginated report render
-          
-          The following are background operations:
-          * Datasets workload - scheduled refresh, on-demand refresh, background query (after refresh)
-          * Dataflows workload - scheduled dataflow refresh
-          * Paginated reports workload - data driven subscriptions renders
-          * Export report to file API calls
-          * AI workloads
-
-      - question: |
-          What's the difference between interactive and background operations? 
-        answer: |
-          Shorter running operations such as dataset queries are classified as *Interactive* operations. They’re usually triggered by user interactions with the UI. For example, an interactive operation is triggered when a user opens a report or clicks on a slicer in a Power BI report. Interactive operations can also be triggered without interacting with the UI, for example when using SQL Server Management Studio (SSMS) or a custom application to run a DAX query.
-
-          Longer running operations such as dataset or dataflow refreshes are classified as *Background* operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes and XMLA-based refresh operations. Users are not expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
-
-      - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
           Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you are to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you will arrive at 100% utilization of your resources.

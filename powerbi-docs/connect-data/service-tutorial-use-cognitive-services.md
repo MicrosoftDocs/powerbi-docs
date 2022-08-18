@@ -166,6 +166,10 @@ Select **Done** and save the dataflow. Once you have refreshed the dataflow one,
 
 When no longer needed, delete the query by right-clicking the query name in the Power Query editor and selecting **Delete**.
 
+## Limitation
+
+There are some known issues with using Gateway with Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to apply these functions.
+
 ## Next steps
 
 In this tutorial, you applied sentiment scoring and image tagging functions on a Power BI dataflow. To learn more about Cognitive Services in Power BI, read the following articles.

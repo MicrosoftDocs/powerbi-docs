@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/03/2022
+ms.date: 06/02/2022
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) and Anna Khachatryan (v-annakh) are vendors who work with Chauncy Freels and help to maintain this list of webinars"
@@ -21,6 +21,29 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 ## Featured webinars
 
 Get started with these popular on-demand webinars:
+
+**Starter Guide for Power BI Consumers**  
+by Will Thompson  
+[Watch now](https://info.microsoft.com/ww-ondemand-Starter-Guide-for-Power-BI-Consumers.html)  
+
+**Drive Productivity and Effective Decision-Making with Excel and Power BI**  
+by Ikechukwu Edeagu  
+[Watch now](https://info.microsoft.com/ww-ondemand-Drive-Productivity-And-Effective-Decision-Making-With-Excel-And-Power-BI.html)  
+
+**Unleash Your Dynamics 365 Data with Azure Synapse Analytics and Power BI**  
+[Watch now](https://info.microsoft.com/ww-ondemand-unleash-your-data-with-azure-synapse-analytics-and-power-bi.html)  
+
+**Quickly transform your Organization with a Data-Driven culture through Power BI**  
+by Lukasz Pawlowski  
+[Watch now](https://info.microsoft.com/ww-ondemand-quickly-transform-your-organization-with-a-data-driven-culture-through-power-bi.html)  
+
+**Power BI: Security and Governance for Your Organization**  
+by Anton Fritz and Rick Xu  
+[Watch now](https://info.microsoft.com/ww-ondemand-security-and-governance-for-your-organization.html)  
+
+**Power BI Apps: Distribute Content to Your Organization**  
+by Anshul Rampal  
+[Watch now](https://info.microsoft.com/ww-landing-powerbidistributecontent.html)  
 
 **Power BI 101: Create Reports Quickly and Effectively**  
 by Amanda Rivera  
@@ -43,7 +66,11 @@ by Jeroen ter Heerdt and Marc Lelijveld
 **Webinar Series: Mastering Data Modeling with Power BI  
 Episode 3 - Data Modeling for Experts with Power BI**  
 by Jeroen ter Heerdt and Marc Lelijveld  
-[Watch now]( https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
+[Watch now](https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
+
+**Webinar Series: Data Modeling with Power BI**  
+**Episode 4 - Calculation Groups and Composite Models**  
+[Watch now](https://info.microsoft.com/ww-ondemand-calculation-groups-and-composite-models.html)
 
 **Behind the Scenes with the Power BI Team**  
 by Jeroen ter Heerdt and Miguel Martinez  
@@ -72,16 +99,6 @@ by Peter Myers and Chris Webb
 **Securing your data in motion and at rest with Power BI**  
 by Anton Fritz and Yitzhak Kesselman  
 [Watch now](https://info.microsoft.com/ww-Landing-SecuringyourdatainmotionandatrestwithPowerBI.html?LCID=EN-US)
-
-**Webinar Series: Mastering Data Modeling with Power BI  
-Episode 1 - Data Modeling 101: Increasing the Impact of Power BI**  
-by Jeroen ter Heerdt and Marc Lelijveld  
-[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
-
-**Webinar Series: Mastering Data Modeling with Power BI  
-Episode 2 - Learn Advanced Data Modeling with Power BI**  
-by Jeroen ter Heerdt and Marc Lelijveld  
-[Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
 
 **Quickstart Guide to Navigating Power BI**  
 by Miguel Martinez  

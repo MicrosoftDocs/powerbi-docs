@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 05/26/2022
 ---
 
 # Power BI usage scenarios
@@ -50,9 +50,10 @@ Four usage scenarios focus on supporting *self-service BI* activities, in which 
 
 The self-service BI scenarios presented here primarily emphasize the use of *managed self-service BI* in which data management is centralized. Reusability of this centralized data is one of the primary goals. Business users take responsibility for creation of reports and dashboards.
 
-- **[Managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md):** The goal is for many report creators to reuse shared datasets. This scenario describes decoupling the report creation process from the dataset creation process. To encourage report authors to find and reuse an existing shared dataset, it should be endorsed and made discoverable in the datasets hub in the Power BI service.
+- **[Managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md):** The goal is for many report creators to reuse shared datasets. This scenario describes decoupling the report creation process from the dataset creation process. To encourage report authors to find and reuse an existing shared dataset, it should be endorsed and made discoverable in the data hub in the Power BI service.
 - **[Customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md):** The focus is on the dataset creator customizing or extending an existing dataset to satisfy new requirements. This scenario describes publishing a customized data model where some tables are new while others are dependent on the existing shared dataset.
 - **[Self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md):** The focus is on centralizing data preparation activities to improve consistency and reduce effort. This scenario describes creating Power BI dataflows to avoid repeating data preparation Power Query logic in many different Power BI Desktop files. A dataflow can be consumed as a data source by numerous datasets.
+- **[Advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md):** The focus is on improving the reach and reusability of dataflows for multiple users, teams, and use cases. This scenario describes use of multiple workspaces based on purpose: staging, cleansed, and final.
 - **[Prototyping and sharing](powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md):** Prototyping techniques are very useful for validating requirements for visuals and calculations by subject matter experts. Prototyping solutions may be temporary, short-lived solutions, or they may ultimately evolve into a solution that's fully validated and released. This scenario describes using Power BI Desktop during an interactive prototyping session. It's followed by sharing in the Power BI service when additional feedback is needed from a subject matter expert.
 
     > [!NOTE]
@@ -63,7 +64,7 @@ The self-service BI scenarios presented here primarily emphasize the use of *man
 The following *content management and deployment* scenarios describe approaches for how content creators and owners use methodical and disciplined lifecycle management processes to reduce errors, minimize inconsistencies, and improve the user experience for consumers.
 
 - **[Self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md):** The focus is on ensuring that content is stable for consumers. This scenario describes using a Power BI deployment pipeline to publish content through development, test, and production workspaces. It also describes how (optionally) Premium per user license mode can be used for development and test workspaces, and Premium per capacity license mode for the production workspace.
-- **Advanced data model management (usage scenario article not currently available):** The focus is on using more sophisticated modeling techniques. This scenario describes managing a data model using Tabular Editor, which is an external tool. The data model is deployed to the Power BI service using the XMLA endpoint available with Power BI Premium.
+- **[Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md):** The focus is on empowering creators with advanced data modeling and publishing capabilities. This scenario describes managing a data model by using Tabular Editor, which is a third-party tool. Data modelers publish their models to the Power BI service by using the XMLA endpoint, which is available with Power BI Premium.
 - **Enterprise content publishing (usage scenario article not currently available):** The focus is on using more sophisticated and programmatic techniques to publish content through development, test, and production workspaces. In this scenario, Azure DevOps coordinates and executes Power BI REST API operations to deploy content.
 
 ## Real-time scenarios

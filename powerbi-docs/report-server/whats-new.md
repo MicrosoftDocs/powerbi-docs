@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 6/08/2022
 ms.custom: intro-whats-new
 ---
 
@@ -16,6 +16,25 @@ ms.custom: intro-whats-new
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## May 2022
+
+The May 2022 update of Power BI Report Server brings many new enhancements, including dynamic format strings support, bookmark navigators, and updated slicer defaults. Here’s a list of new and updated features with links to each. Or read the whole [Power BI Report Server blog post for May 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- [Dynamic format strings](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299296) now supported for all chart elements
+- [Bookmark navigator](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299298) now shows the last selected bookmark per group
+- [Data point rectangle select](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299300)
+- [Updated slicer defaults](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299302) for accessibility improvements
+
+#### Other
+
+- [Windows 11 support](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299304)
+- [Power BI Desktop infrastructure update (WebView2)](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299305)
+
 
 ## January 2022 
 

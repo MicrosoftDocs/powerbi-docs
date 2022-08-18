@@ -97,7 +97,7 @@ Large-storage format datasets should not be moved from the region where they wer
 - The detailed dataset metadata that is cached as part of [enhanced metadata scanning](../enterprise/service-admin-metadata-scanning.md) is always stored in the home region, even if the scanned dataset is located in a remote region.
 - The [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) feature is not supported on Multi-GEO at this time.
 - It is possible to create and maintain large-storage format datasets in remote regions to meet data residency requirements. However, note that you cannot move storage format datasets to another region. Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. If you must move such a model, you must deploy it as if it was a new model, and then delete the old model from the undesired region.
-- Multi-Geo doesn't support Goals.
+- Multi-Geo doesn't support Metrics.
 
 ## Next steps
 

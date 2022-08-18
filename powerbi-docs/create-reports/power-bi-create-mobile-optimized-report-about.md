@@ -25,6 +25,9 @@ In the Power BI mobile app, reports that have mobile-optimized pages are indicat
 
 ![Screenshot showing optimized report icon in the Power BI mobile apps.](media/power-bi-create-mobile-optimized-report-about/power-bi-mobile-optimized-report-optimized-icon.png)
 
+>[!NOTE]
+> Mobile-optimized report views display only when using the Power bi mobile apps for iOS and Android. When viewed through a web browser, reports always display in the standard, non-optimized view.  
+
 ## Mobile authoring features
 
 Power BI provides a number of features to help you create mobile-optimized versions of your reports:

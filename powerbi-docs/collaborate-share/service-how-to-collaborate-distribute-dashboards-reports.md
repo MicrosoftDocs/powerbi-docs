@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 04/15/2021
+ms.date: 07/29/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
 # Ways to collaborate and share in Power BI
 
-You've created reports or dashboards. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
+You've created reports, dashboards, scorecards, and datasets. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
@@ -27,9 +27,9 @@ You've created reports or dashboards. Maybe you want to collaborate on them with
 
 **Distribute or share dashboards and reports**
 
-- [*Share reports or dashboards*](#share-reports-or-dashboards) from your My Workspace or another workspace.
+- [*Share reports, dashboards, and scorecards*](#share-reports-or-dashboards) from your My Workspace or another workspace.
 - Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
-- Bundle reports and dashboards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
+- Bundle reports, dashboards, and scorecards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
 - [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
 - [Print reports](#print-or-save-as-pdf-or-other-static-file).
 - [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
@@ -45,7 +45,7 @@ No matter which option you choose, to share your content you need a [Power BI Pr
 
 When teams work together, they need access to the same documents so they can collaborate easily. In Power BI workspaces, teams share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, or they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
 
-Workspaces provide roles that determine what permissions your coworkers have. Use those roles to determine who can manage the workspace, edit or distribute content, or just view content. Read more about [roles in the new workspaces](service-roles-new-workspaces.md).
+Workspaces provide roles that determine what permissions your coworkers have. Use those roles to determine who can manage the workspace, edit or distribute content, or just view content. Read more about [roles in workspaces](service-roles-new-workspaces.md).
 
 ![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
 
@@ -58,7 +58,7 @@ Now, imagine you have a finished report you need to share with your colleagues. 
 - If colleagues just need to see that report and not all the content in the workspace, you can share the report via link or grant them direct access.
 - If the report is better consumed with related reports or dashboards that you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
 
-Read about how to [create the new workspaces](service-create-the-new-workspaces.md). 
+Read about how to [create workspaces](service-create-the-new-workspaces.md). 
 
 ## Collaborate in Microsoft Teams
 

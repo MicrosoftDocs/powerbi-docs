@@ -110,5 +110,4 @@ You might also be interested in the following articles:
 
 * [Add a hyperlink to a text box](service-add-hyperlink-to-text-box.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-* [Tips to improve analysis with shapes, images, and icons in Power BI reports](../guidance/report-tips-shapes-images-icons.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
