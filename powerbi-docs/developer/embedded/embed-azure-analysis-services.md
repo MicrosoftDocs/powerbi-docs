@@ -112,8 +112,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 {
     PowerBIClient pbiClient = this.GetPowerBIClient();
     // Create a request for getting an embed token for the rls identity defined above
-    // This method works only with new Power BI V2 workspace experience
-    var tokenRequest = new GenerateTokenRequestV2(
+       var tokenRequest = new GenerateTokenRequestV2(
         reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
         datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
         targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
@@ -162,7 +161,6 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
     PowerBIClient pbiClient = this.GetPowerBIClient();
     
     // Create a request for getting an embed token for the rls identity defined above
-    // This method works only with new Power BI V2 workspace experience
     var tokenRequest = new GenerateTokenRequestV2(
         reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
         datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
