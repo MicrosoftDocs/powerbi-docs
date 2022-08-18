@@ -23,13 +23,13 @@ With *buttons* in Power BI, you can create reports that behave similar to apps, 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-On the **Insert** ribbon, select **Buttons** and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
+In Power BI Desktop, on the **Insert** ribbon, select **Buttons** and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
 
 ![Screenshot showing Add a button control in Power BI Desktop.](media/desktop-buttons/power-bi-button-dropdown.png)
 
 # [Power BI service](#tab/powerbi-service)
 
-Open the report in Editing view. Select **Buttons** in the top menu bar and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image.
+In the Power BI service, open the report in Editing view. Select **Buttons** in the top menu bar and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image.
 
 ![Screenshot showing Add a button control in the Power BI service.](media/desktop-buttons/power-bi-button-service-dropdown.png)
 
@@ -90,7 +90,10 @@ You can try or test the buttons you create for your report by selecting *Ctrl* a
 
 ## Create page navigation
 
-With the **Action** type **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark. However, if you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead.
+With the **Action** type **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark. 
+
+> [!TIP]
+> If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead.
 
 To set up a single page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page.
 
