@@ -49,7 +49,7 @@ The direct access tab lists users who have been granted access. For each user, y
 
 * To grant dataset access to another user, click **+ Add user**. The [Share dataset dialog](service-datasets-share.md) will open.
 
-    ![Screenshot of direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab.png)
+    ![Screenshot of direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-add-user.png)
 
 ### Managing permissions granted through an app
 
