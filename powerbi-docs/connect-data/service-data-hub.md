@@ -38,7 +38,7 @@ This article explains what you see on the data hub and describes how to use it.
 
 ---
 
-For a data item to show up in the datasets hub, it must be located in a [new workspace experience](../collaborate-share/service-new-workspaces.md).
+For a data item to show up in the datasets hub, it must be located in a [workspace that you have access to](../collaborate-share/service-new-workspaces.md).
 
 If you're a free user, see [Users with free licenses](#users-with-free-licenses) for details about viewing data items and using the capabilities available on the data hub.
 

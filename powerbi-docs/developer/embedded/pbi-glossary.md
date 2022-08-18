@@ -123,10 +123,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 
 The content index for an app.
 
-### Content pack
-
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
-
 ### Content view
 
 The view in Windows Explorer that displays the most relevant content for each item based on its file name extension or Kind association.

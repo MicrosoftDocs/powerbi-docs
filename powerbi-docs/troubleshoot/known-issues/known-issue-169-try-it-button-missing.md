@@ -10,7 +10,7 @@ ms.date: 08/03/2022
 ms.custom: known-issue-169
 ---
 
-# Description of known issue #169
+# Known issue #169 - Try it button missing on REST API pages
 
 In the past, you were able to try Power BI REST APIs on each operation referenced in the [Power BI REST API reference](/rest/api/power-bi).   Under **Examples**, you would see **Sample Request** code sections with a "Try it" button on the header to test the API.
 
