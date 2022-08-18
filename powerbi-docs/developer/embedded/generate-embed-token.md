@@ -36,9 +36,9 @@ You can use APIs to generate a token for the following items:
 
 * [Tiles](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
-## Workspace versions
+## Workspaces
 
-Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. You can learn more about the differences between these workspaces in [new and classic workspace differences](../../collaborate-share/service-new-workspaces.md#new-and-classic-workspace-differences).
+Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. Learn more about [workspaces](../../collaborate-share/service-new-workspaces.md).
 
 When creating an embed token, different workspaces have different considerations and require different permissions.
 
