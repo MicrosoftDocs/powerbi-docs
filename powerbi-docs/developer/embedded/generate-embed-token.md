@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 08/11/2022
+ms.date: 08/18/2022
 ---
 
 # Generate an embed token
@@ -36,29 +36,13 @@ You can use APIs to generate a token for the following items:
 
 * [Tiles](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
-## Workspaces
-
-Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. Learn more about [workspaces](../../collaborate-share/service-new-workspaces.md).
-
-When creating an embed token, different workspaces have different considerations and require different permissions.
-
-|                  |*Classic* workspace |*New* workspace|
-|------------------|---------|--------|
-|**Considerations**|<li>The dataset and the item must be in the same workspace</li><li>Service principal can't be used</li>  |The dataset and the item can be in two different *new* workspaces |
-|**Workspace permissions**|The master user must be an admin of the workspace  |The service principal or master user must be at least a member of both workspaces |
-
->[!NOTE]
->
->* You can't create an embed token for [My workspace](../../consumer/end-user-workspaces.md#types-of-workspaces).
->* The word *item* refers to a Power BI item such as a dashboard, tile, Q&A or report.
-
 ## Securing your data
 
-If you're handling data from multiple customers, consider these two approaches for securing your data: [*Workspace-based isolation*](embed-multi-tenancy.md) and [*Row-level security-based isolation*](./embedded-row-level-security.md). You can find a detailed comparison between them in [service principal profiles and row level security](embed-multi-tenancy.md#row-level-security).
+If you're handling data from multiple customers, there are two main approaches to securing your data: [*Workspace-based isolation*](embed-multi-tenancy.md) and [*Row-level security-based isolation*](./embedded-row-level-security.md). You can find a detailed comparison between them in [service principal profiles and row level security](embed-multi-tenancy.md#row-level-security).
 
-We recommend using workspace-based isolation with profiles, but if you want to use the RLS approach, review the [RLS considerations and limitations](generate-embed-token.md#row-level-security) at the end of this article.
+We recommend using workspace-based isolation with profiles, but if you want to use the RLS approach, review the [RLS section](generate-embed-token.md#row-level-security) at the end of this article.
 
-## Token permissions
+## Token permissions and security
 
 In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
@@ -124,12 +108,14 @@ Tokens come with a time limit. This means that after embedding a Power BI item, 
 
 ## Considerations and limitations
 
-For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Azure AD token used to call the `GenerateToken` API. Therefore, if you use the same Azure AD token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
+* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Azure AD token used to call the `GenerateToken` API. Therefore, if you use the same Azure AD token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
+
+* You can't create an embed token for [My workspace](../../consumer/end-user-workspaces.md#types-of-workspaces).
+
+* If the dataset and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
 
 ## Next steps
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
-* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-* [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
 * [Embed Power BI content with service principal](embed-service-principal.md)
