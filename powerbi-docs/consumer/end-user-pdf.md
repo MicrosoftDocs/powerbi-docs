@@ -95,6 +95,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * Visuals in a drill down state are exported in their default state. 
 * The feature does *not* export any wallpaper you may have applied to the report. Since wallpaper is not exported to the PDF, you should pay special attention to reports that use dark wallpaper. If the text in your report is light or white, to have it stand out against your dark wallpaper, it will be difficult to read or unreadable in the export to PDF process since the wallpaper will not be exported with the rest of the report. 
+* All Power BI reports have a page margin when exported to PDF i.e. there will be a band of white space at the top and bottom of the exported file. 
 * Export to PDF is not currently supported for tenants in the China North region. 
 
 ## Next steps
