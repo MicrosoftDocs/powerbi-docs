@@ -35,7 +35,7 @@ After you've installed the app and connected to the data sources, you can custom
     ![Install the Power BI Premium Capacity Metrics app](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metric-select-install.png)
 
     > [!NOTE]
-    > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to a new workspace.
+    > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to another workspace.
 
     Once the app has installed, you see it on your Apps page.
 

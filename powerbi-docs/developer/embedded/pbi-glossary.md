@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 06/14/2022
+ms.date: 08/14/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -123,10 +123,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 
 The content index for an app.
 
-### Content pack
-
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
-
 ### Content view
 
 The view in Windows Explorer that displays the most relevant content for each item based on its file name extension or Kind association.
@@ -173,6 +169,10 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 ### Dataset
 
 A collection of data used to create visualizations and reports.
+
+### DAX expression
+
+**Data Analysis Expressions**. A Microsoft formula language used to [build formulas and expressions](/learn/modules/dax-power-bi-write-formulas/) in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.
 
 ### **Desktop** or **Power BI Desktop**
 

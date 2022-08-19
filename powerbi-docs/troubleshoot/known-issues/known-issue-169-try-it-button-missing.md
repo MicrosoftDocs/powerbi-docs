@@ -6,11 +6,15 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 04/26/2022
+ms.date: 08/03/2022
 ms.custom: known-issue-169
 ---
 
-# Known issue - Try it button missing on REST API pages
+# Known issue #169 - Try it button missing on REST API pages
+
+In the past, you were able to try Power BI REST APIs on each operation referenced in the [Power BI REST API reference](/rest/api/power-bi).   Under **Examples**, you would see **Sample Request** code sections with a "Try it" button on the header to test the API.
+
+The "Try it" button is currently missing on all REST API pages.
 
 **APPLIES TO:** ✔️ Power BI REST APIs
 
@@ -18,11 +22,7 @@ ms.custom: known-issue-169
 
 **Problem area:** Embedded, REST API or PowerShell
 
-## Description of problem
 
-In the past, you were able to try Power BI REST APIs on each operation referenced in the [Power BI REST API reference](/rest/api/power-bi).   Under **Examples**, you would see **Sample Request** code sections with a "Try it" button on the header to test the API.
-
-The "Try it" button is currently missing on all REST API pages.
 
 ## Symptoms
 

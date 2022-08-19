@@ -71,7 +71,7 @@ The dataset that gets saved through this flow is automatically configured as Dir
 
 If you already have credentials in Power BI configured for the specific Dataverse environment you’re connecting to, and it isn’t set to SSO, we don’t automatically override this. Instead, we ask you to decide how you want to handle your credentials. You can choose to either keep what’s already stored in Power BI or override it to use SSO. If you decide to keep what’s already in Power BI, your report may show different data when you view it in the Power BI service. If you decide to override, this also updates your existing datasets connected to the same source. 
 
-Once the report is in the Power BI service, that is where you’ll access it going forward. However, if you’d like to make it a standardized report included in your app, you can always choose to [embed it back into the app](/powerapps/maker/model-driven-apps/embedpowerbi-report-in-system-form).
+Once the report is in the Power BI service, that is where you’ll access it going forward. However, if you’d like to make it a standardized report included in your app, you can always choose to [embed it back into the app](/power-apps/maker/model-driven-apps/embed-powerbi-report-in-system-form).
 
 ## Enable this feature for your app
 
