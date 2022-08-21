@@ -7,18 +7,16 @@ ms.reviewer: sabre
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 08/21/2022
 ---
 
 # Embed a report with an Azure Analysis Services (AAS) database
 
-This article explains how to embed a Power BI report that uses data stored in [Azure Analysis Services (ASS)](/azure/analysis-services/analysis-services-overview), in an [embed for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) scenario. This article is aimed at independent software developers (ISVs), who want to embed a report with AAS data whether or not the report implements [row-level security (RLS)](embedded-row-level-security.md).
-
-This article describes how to embed a report with RLS and an AAS database. However, you can use the same instructions to embed any report with an AAS database.  
+This article explains how to embed a Power BI report that uses data stored in [Azure Analysis Services (ASS)](/azure/analysis-services/analysis-services-overview), in an [embed for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) scenario. This article is aimed at independent software developers (ISVs), who want to embed a report with AAS data whether or not the database implements [row-level security (RLS)](embedded-row-level-security.md).
 
 ## Prerequisites
 
-You'll need a report with a live connection to AAS, with or without RLS.
+You'll need a report with a live connection to AAS database, with or without RLS.
 
 ## Dynamic security - RLS
 
@@ -67,7 +65,7 @@ The information needed to generate an embed token depends on how you're connecte
 
 To generate the embed token, provide the following information:
 
-* **Username** (Optional if no RLS. Required for RLS) - A valid username recognized by the AAS that will be used as the effective identity. If the database doesn't use RLS, and no username is provided, the master user's credentials are used.
+* **Username** (Optional if no RLS. Required for RLS) - The username must be the same as API caller (in this case, the Master user's [UPN](./pbi-glossary.md#user-principal-name-upn)). If the database doesn't use RLS, and no username is provided, the master user's credentials are used.
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
 
 Example:  
@@ -76,13 +74,7 @@ Define the user identity and roles for one of the following three scenarios:
 
 * If RLS isn't implemented:
 
-  ```csharp
-      var rlsidentity = new EffectiveIdentity(  //If no RLS
-        username: "username@contoso.com", // Optional. If omitted, will use master user
-         roles: new List<string>{ "MyRole" },
-         datasets: new List<string>{ datasetId.ToString()}
-      )
-  ```
+There is no need to define any effective identity.
 
 * If using static RLS:
 
@@ -98,7 +90,7 @@ Define the user identity and roles for one of the following three scenarios:
 
   ```csharp
       var rlsidentity = new EffectiveIdentity(  // If dynamic RLS
-         username: "username@contoso.com", // can also be Domain\\Username
+         username: "username@contoso.com",
          roles: new List<string>{ "MyRoleWithCustomData" },
          customData: "SalesPersonA"
          datasets: new List<string>{ datasetId.ToString()}
@@ -128,7 +120,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 To generate the embed token, provide the following information:
 
-* **Username** (required) - A valid username recognized by the AAS that will be used as the effective identity.
+* **Username** (required) -The username must be same as API caller, in this case, the Service principal ObjectId or Service principal profile ObjectId which you can get using the API – [Get Profile](/rest/api/power-bi/profiles/get-profile) / [Get Profiles](/rest/api/power-bi/profiles/get-profiles).
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.  
 Example:  
 Define the user identity and roles for one of the following scenarios:
@@ -137,12 +129,12 @@ Define the user identity and roles for one of the following scenarios:
 
   ```csharp
       var rlsidentity = new EffectiveIdentity(   // If no RLS
-         username: "ServicePrincipalObjectId",
+         username: "ServicePrincipalObjectId",   // Or, "ServicePrincipalProfileObjectID"
          datasets: new List<string>{ datasetId.ToString()}
       );
   ```
 
-* If RLS is implemented:
+* If dynamic RLS is implemented:
 
   ```csharp
       var rlsidentity = new EffectiveIdentity(  // If dynamic RLS
@@ -165,7 +157,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
         reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
         datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
         targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
-        identities: new List<EffectiveIdentity> { rlsIdentity }  // Only in cases of RLS
+        identities: new List<EffectiveIdentity> { rlsIdentity }  // If using master user, only in cases of RLS. 
     );
     // Generate an embed token
     var embedToken = pbiClient.EmbedToken.GenerateToken(tokenRequest);
@@ -176,10 +168,6 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 ---
 
 Use the embed token to embed the report into your app or website. Your report will filter data according to the applied RLS in the report.
-
-## Considerations and limitations
-
-If you're using a service principal to embed the report, the service principal must be a [server admin or role member in the AAS](#service-principal)
 
 ## Next steps
 
