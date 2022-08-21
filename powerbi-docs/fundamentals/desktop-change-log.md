@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 6/28/2022
+ms.date: 8/18/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,27 @@ ms.date: 6/28/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## August 2022 QFE 1
+
+*Version: 2.108.825.0, Released: August 18, 2022*
+
+Bug fixes/improvements:
+- Fix for PBIX open file issue when connecting to Proxy models. 
+- Data view filtering regression fix: now when filtering wide tables by selecting one column and scrolling to select one more column, the filtering/scrolling will work, and user will be able to select a column at the end of a wide table. 
+- Data view regression fix: date and number filter options will be available in the right-click menu. 
+- Formula bar fixes for cases when “Shift+Enter” is used. 
+- “Apply/discard changes” regression fix.
+
+
+## July 2022 QFE 1
+
+*Version: 2.107.841.0, Released: July 21, 2022*
+
+Bug fixes/improvements:
+- Fix for SAP BW: now customers will be able to retrieve a full dataset when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc) even if the data exceeds the page size.
+- Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
+
 
 ## June 2022 QFE 1
 

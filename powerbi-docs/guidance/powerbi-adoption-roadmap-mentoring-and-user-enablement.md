@@ -105,7 +105,7 @@ Before content is deployed to the Power BI service, a best practices review may 
 Once the content has been deployed to the Power BI service, the best practices review is not necessarily complete yet. Completing the remainder of the review may also include items such as:
 
 - The target [workspace](../collaborate-share/service-create-the-new-workspaces.md) is suitable for the content.
-- [Workspace security roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) are appropriate for the content.
+- [Workspace security roles](../collaborate-share/service-roles-new-workspaces.md) are appropriate for the content.
 - Other permissions ([app permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app), [build permission](../connect-data/service-datasets-build-permissions.md), use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
 - [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - [Sensitivity labels](../enterprise/service-security-apply-data-sensitivity-labels.md) are correctly assigned.

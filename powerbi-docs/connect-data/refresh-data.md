@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/12/2022
+ms.date: 07/21/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -58,21 +58,20 @@ Because Power BI caches the data, Import mode dataset sizes can be substantial. 
 
 For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-what-is.md#large-datasets). On A6 or P3 capacities, datasets can be refreshed to up to 12 GB.
 
-#### Datasets in DirectQuery/LiveConnect mode
+#### Datasets in DirectQuery mode
 
-Power BI does not import data over connections that operate in DirectQuery/LiveConnect mode. Instead, the dataset returns results from the underlying data source whenever a report or dashboard queries the dataset. Power BI transforms and forwards the queries to the data source.
+Power BI does not import data over connections that operate in DirectQuery mode. Instead, the dataset returns results from the underlying data source whenever a report or dashboard queries the dataset. Power BI transforms and forwards the queries to the data source.
 
-Although DirectQuery mode and LiveConnect mode are similar in that Power BI forwards the queries to the source, it is important to note that Power BI does not have to transform queries in LiveConnect mode. The queries go directly to the Analysis Services instance hosting the database without consuming resources on shared capacity or a Premium capacity.
+> [!NOTE]
+>Live connection reports submit queries to the capacity or Analysis Services instance that hosts the dataset or the model. When using external analysis services such as SQL Server Analysis Services (SSAS) or Azure Analysis Services (AAS), resources are consumed outside of Power BI.
 
 Because Power BI does not import the data, you don't need to run a data refresh. However, Power BI still performs tile refreshes and possibly report refreshes, as the next section on refresh types explains. A tile is a report visual pinned to a dashboard, and dashboard tile refreshes happen about every hour so that the tiles show recent results. You can change the schedule in the dataset settings, as in the screenshot below, or force a dashboard update manually by using the **Refresh now** option.
 
 ![Refresh schedule](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> Datasets in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Datasets** tab. For composite datasets, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
-
-> [!NOTE]
-> Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
+> * Datasets in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh, because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Datasets that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Datasets** tab. For composite datasets, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
+> * Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
 
 
 #### Push datasets

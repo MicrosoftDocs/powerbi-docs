@@ -337,9 +337,11 @@ private async Task<ExportedFile> ExportPaginatedReport(
   * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
   * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
 
+* The service principal (not profile) can export a paginated report that has a Power BI dataset as its data source **only** where ALL downstream data sources are configured with SSO-disabled.
+
 * Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
 
-  * The caller is a service principal or service principal profile.
+  * The caller is a service principal profile.
   * The caller is a master user and an effective identity was provided.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
@@ -348,15 +350,12 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
 
+* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online. 
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
 
-> [!div class="nextstepaction"]
->[Export report to file](export-to.md)
-
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+* [Export report to file](export-to.md)
+* [Embed for your customers](embed-sample-for-customers.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)

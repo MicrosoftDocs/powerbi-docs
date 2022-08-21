@@ -141,7 +141,7 @@ sections:
         answer: |
           * Using the [Power BI Admin portal](../../admin/service-admin-portal-capacity-settings.md#power-bi-embedded).
           
-          * Downloading the [metric app](../../enterprise/service-admin-premium-monitor-capacity.md) in Power BI.
+          * Downloading the [metric app](../../enterprise/service-premium-install-gen2-app.md) in Power BI.
           
           * Using [Azure diagnostic logging](./monitor-power-bi-embedded.md).
           
@@ -237,11 +237,6 @@ sections:
           * Pause/resume service
           
           Use PowerBI.com to assign/un-assign workspaces to your Power BI Embedded capacity.
-          
-      - question: |
-          What content pack data types can you embed?
-        answer: |
-          You *can't* embed **Dashboards** and **tiles** built from content pack datasets. However, you *can* embed **reports** built from a content pack dataset.
 
       - question: |
           What is the difference between using row-level security (RLS) vs. JavaScript filters?

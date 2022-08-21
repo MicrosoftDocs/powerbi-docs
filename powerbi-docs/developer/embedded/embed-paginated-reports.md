@@ -64,7 +64,7 @@ To embed a paginated report using the sample app, follow these steps:
 
 ### [Embed for your customers](#tab/customers)
 
-As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [new workspace](../../collaborate-share/service-create-the-new-workspaces.md).
+As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [workspace](../../collaborate-share/service-create-the-new-workspaces.md).
 
 Your *service principal* must also be an admin or member of the Power BI workspaces.
 
@@ -125,7 +125,7 @@ Once you create a capacity, you can assign your app workspace to that capacity.
 To assign a capacity to a workspace using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
 >[!NOTE]
->You can also import paginated reports into a *new workspace* using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
+>You can also import paginated reports into a workspace using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
 
 ### [Embed for your organization](#tab/organization)
 

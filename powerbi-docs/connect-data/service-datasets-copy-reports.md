@@ -17,7 +17,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 ## Prerequisites
 
 - To copy a report, you need a Pro or Premium Per User (PPU) license, even if the original report is in a workspace in a Premium capacity.
-- To copy a report to another workspace, or to create a report in one workspace based on a dataset in another workspace, you need [Build permission for the dataset](service-datasets-build-permissions.md). For datasets in the original workspace, if you have at least the Contributor role you automatically have Build permission through your workspace role. You also need at least the Contributor role in the destination workspace. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details.
+- To copy a report to another workspace, or to create a report in one workspace based on a dataset in another workspace, you need [Build permission for the dataset](service-datasets-build-permissions.md). For datasets in the original workspace, if you have at least the Contributor role you automatically have Build permission through your workspace role. You also need at least the Contributor role in the destination workspace. See [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md) for details.
 
 ## Save a copy of a report in a workspace
 
@@ -29,13 +29,13 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Save a copy of a report](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    You only see the **Save a copy** option if the report is in a new experience workspace, and you have [Build permission](service-datasets-build-permissions.md). Even if you have access to the workspace, you have to have Build permission for the dataset.
+    You only see the **Save a copy** option if you have [Build permission](service-datasets-build-permissions.md). Even if you have access to the workspace, you have to have Build permission for the dataset.
 
 3. In **Save a copy of this report**, give the report a name and select the destination workspace.
 
     ![Save a copy dialog box](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    You can save the report to the current workspace or a different one in the Power BI service. You only see workspaces that are new experience workspaces, in which you're a member. 
+    You can save the report to the current workspace or a different one in the Power BI service. You only see workspaces in which you're a member.
   
 4. Select **Save**.
 
@@ -56,7 +56,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Save a copy of the report](media/service-datasets-copy-reports/power-bi-save-copy.png)
 
-    You only see the **Save a copy** option if the report is in a new experience workspace, and you have [Build permission](service-datasets-build-permissions.md).
+    You only see the **Save a copy** option if you have [Build permission](service-datasets-build-permissions.md).
 
 3. Give your report a name > **Save**.
 

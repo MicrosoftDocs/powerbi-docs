@@ -148,8 +148,6 @@ For datasets using the large dataset storage format, Power BI automatically sets
 
 Keep in mind the following restrictions when using large datasets:
 
-* **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
-
 * **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 
 * **Supported regions**: Large datasets are available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers). Review the table in [region availability](#region-availability) to see a list of all the supported regions.
