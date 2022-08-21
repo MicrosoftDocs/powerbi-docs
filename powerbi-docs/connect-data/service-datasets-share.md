@@ -14,6 +14,9 @@ LocalizationGroup: Share your work
 
 To make it possible for other users to take advantage of a dataset, you can *share* it with them. Sharing a dataset means granting access to it. This document shows you how to grant access to a dataset using the **Share dataset** dialog.
 
+>[!NOTE]
+>Datasets can only be shared if the Use datasets across workspaces tenant setting is enabled.
+
 ## Share a dataset
 
 To share a dataset
@@ -45,6 +48,10 @@ To share a dataset
 > When you press **Grant access**, access is granted automatically. No further approval is required. 
 
 To monitor, change, or remove user access to your dataset, see [Manage dataset access permissions](service-datasets-manage-access-permissions.md).
+
+## Considerations and limitations
+
+Datasets can only be shared if the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) tenant setting is enabled. If you encounter an error when trying to share access to a dataset, ask your Power BI administrator whether using datasets across workspaces is allowed in your organization.
 
 ## Next steps
 
