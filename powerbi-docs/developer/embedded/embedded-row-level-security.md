@@ -332,6 +332,7 @@ You can't set this permission using the admin portal. This permission is only se
 * While the Power BI service doesn't apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it applies to the data.
 * Analysis Services live connections are supported for on-premises servers.
 * Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done using CustomData.
+* Using RLS with datasets that include a DirectQuery connection to an Azure Analysis Services model isn't currently supported.
 * If the underlying dataset doesn't require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role, otherwise role assignment doesn't occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others items, the list contains a single identity.
