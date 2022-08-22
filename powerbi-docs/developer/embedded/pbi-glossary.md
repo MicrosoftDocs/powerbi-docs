@@ -360,7 +360,7 @@ The location in the service where messages are delivered to users, such as notic
 
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
 
-### On-premises
+### On-premises (on-prem)
 
 The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.
 
