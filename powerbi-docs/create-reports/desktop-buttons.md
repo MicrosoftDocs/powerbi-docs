@@ -93,7 +93,7 @@ You can try or test the buttons you create for your report by selecting *Ctrl* a
 With the **Action** type **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark. 
 
 > [!TIP]
-> If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead.
+> If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 To set up a single page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page.
 
@@ -101,7 +101,7 @@ To set up a single page navigation button, create a button with **Page navigatio
 
 Additionally, you can conditionally format the tooltip as you can do with other button types.
 
-Remember, if you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead.
+Remember, if you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 ## Set the navigation destination conditionally
 
