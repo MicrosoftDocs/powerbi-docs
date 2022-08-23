@@ -14,9 +14,6 @@ LocalizationGroup: Share your work
 
 To make it possible for other users to take advantage of a dataset, you can *share* it with them. Sharing a dataset means granting access to it. This document shows you how to grant access to a dataset using the **Share dataset** dialog.
 
->[!NOTE]
->Datasets can only be shared if the Use datasets across workspaces tenant setting is enabled.
-
 ## Share a dataset
 
 To share a dataset
