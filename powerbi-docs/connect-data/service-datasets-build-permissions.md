@@ -26,7 +26,7 @@ Users also need Build permissions to work with the data *outside* Power BI:
 
 You give Build permission for a dataset in a few different ways:
 
-- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
  
 - Dataset owners can assign Build permission to specific users or security groups on the Manage permissions page. See [Manage dataset access permissions](service-datasets-manage-access-permissions.md) for detail.
 
@@ -96,5 +96,5 @@ You can remove Build permission. If you do, the people whose permissions you hav
 
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Share a dataset](service-datasets-share.md)
-* [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md)
+* [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

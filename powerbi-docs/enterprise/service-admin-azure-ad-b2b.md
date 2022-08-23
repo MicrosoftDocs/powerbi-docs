@@ -110,7 +110,7 @@ The guest user may already have a Power BI Pro or Premium Per User (PPU) license
 
 ## Guest users who can edit and manage content
 
-When using the [allow external guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, the specified guest users get additional access to your organization's Power BI. Allowed guests can see any content that they have permissions for, access Home, browse workspaces, install apps, see where they are on the access list, and contribute content to workspaces. They can create, or be an Admin of, workspaces that use the new workspace experience. Some limitations apply. The Considerations and Limitations section lists those restrictions.
+When using the [allow external guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, the specified guest users get additional access to your organization's Power BI. Allowed guests can see any content that they have permissions for, access Home, browse workspaces, install apps, see where they are on the access list, and contribute content to workspaces. They can create or be an Admin of workspaces. Some limitations apply. The [Considerations and Limitations](#considerations-and-limitations) section lists those restrictions.
 
 To help allowed guests sign in to Power BI, provide them with the Tenant URL. To find the tenant URL, follow these steps.
 
@@ -149,14 +149,10 @@ There are some limitations to the B2B experience that you should be aware of:
 * Some experiences aren't available to [guest users who can edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files.  The following experiences aren't supported:
   * Direct publishing from Power BI desktop to the Power BI service
   * Guest users can't use Power BI desktop to connect to service datasets in the Power BI service
-  * Classic workspaces tied to Microsoft 365 Groups
-    * Guest users can't create or be Admins of these workspaces
-    * Guest users can be members
   * Sending ad hoc invites isn't supported for workspace access lists
   * Power BI Publisher for Excel isn't supported for guest users
   * Guest users can't install a Power BI Gateway and connect it to your organization
   * Guest users can't install apps publish to the entire organization
-  * Guest users can't use, create, update, or install organizational content packs
   * Guest users can't use Analyze in Excel
   * Guest users can't be @mentioned in commenting
   * Guest users can't create subscriptions

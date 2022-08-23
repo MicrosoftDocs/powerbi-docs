@@ -70,8 +70,6 @@ Connections between items are only established when you assign a workspace to a 
 
 ## Limitations
 
-* The workspace must be a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
-
 * You must be an admin of the workspace.
 
 * The workspace is not assigned to any other pipeline.

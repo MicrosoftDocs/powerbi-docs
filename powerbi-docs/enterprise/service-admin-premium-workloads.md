@@ -247,7 +247,7 @@ The Analysis Services XMLA-based server properties setting is enabled by default
 
 ## Dataflows
 
-The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior.
+The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium Gen1.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
