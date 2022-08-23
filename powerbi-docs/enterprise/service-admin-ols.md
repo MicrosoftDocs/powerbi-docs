@@ -18,42 +18,42 @@ Object-level security (OLS) enables model authors to secure specific tables or c
 
 Like RLS, OLS is also defined within model roles. Currently, you can't create OLS definitions natively in Power BI Desktop.
 
-* To create roles on **Power BI Desktop** datasets, use [external tools](../../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.github.io/).  
+* To create roles on **Power BI Desktop** datasets, use [external tools](../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.github.io/).  
 * To create roles in **Power BI Service**, set the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) using [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) or [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
 ### Configure object level security using tabular editor
 
-1. In Power BI Desktop, [create the model](../../enterprise/service-admin-rls.md#define-roles-and-rules-in-power-bi-desktop) that will define your OLS rules.
+1. In Power BI Desktop, [create the model](service-admin-rls.md#define-roles-and-rules-in-power-bi-desktop) that will define your OLS rules.
 
 2. On the **External Tools** ribbon, select **Tabular Editor**. If you don’t see the Tabular Editor button, install the [program](https://tabulareditor.github.io). When open, Tabular Editor will automatically connect to your model.
-  :::image type="content" source="./media/cloud-object-level-security/external-tools.png" alt-text="Screenshot of External tools Menu.":::
+  :::image type="content" source="./media/service-admin-ols/external-tools.png" alt-text="Screenshot of External tools Menu.":::
 
 3. In the **Model** view, select the drop-down menu under **Roles**. The roles created in the previous step will appear.
-  :::image type="content" source="./media/cloud-object-level-security/display-roles.png" alt-text="Screenshot of roles names being displayed under roles folder in model view.":::
+  :::image type="content" source="./media/service-admin-ols/display-roles.png" alt-text="Screenshot of roles names being displayed under roles folder in model view.":::
 
 4. Select the role you want to enable an OLS definition for, and expand the **Table Permissions**.
 
-   :::image type="content" source="./media/cloud-object-level-security/open-permissions.png" alt-text="Screenshot showing where to access the table permissions for OLS.":::
+   :::image type="content" source="./media/service-admin-ols/open-permissions.png" alt-text="Screenshot showing where to access the table permissions for OLS.":::
 
 5. Set the rule to *None* or *Read*.
 
-   :::image type="content" source="./media/cloud-object-level-security/define-rule.png" alt-text="Screenshot of setting OLD rule to ???.":::
+   :::image type="content" source="./media/service-admin-ols/define-rule.png" alt-text="Screenshot of setting OLD rule to ???.":::
 
     * **None** - OLS will be enforced and that column will be hidden from that role
     * **Read** - The column will be visible to that role
 
 6. After you define object-level security for the roles, save your changes.
-  :::image type="content" source="./media/cloud-object-level-security/save-roles.png" alt-text="Screenshot of saving role definitions.":::
+  :::image type="content" source="./media/service-admin-ols/save-roles.png" alt-text="Screenshot of saving role definitions.":::
 
 7. In Power BI Desktop, publish your dataset to the Power BI service. In the Power BI service, navigate to the **Security** page by selecting the **more options** menu on the dataset, and assign members or groups to their appropriate roles.
 
 The OLS rules are now defined. Users who don't have the required permission will receive a message that the field doesn't exist for all report visuals using the field.
 
-:::image type="content" source="./media/cloud-object-level-security/error-message.png" alt-text="Screenshot of error saying that column cannot be found or may not be used in this expression.":::
+:::image type="content" source="./media/service-admin-ols/error-message.png" alt-text="Screenshot of error saying that column cannot be found or may not be used in this expression.":::
 
 ## Considerations and limitations
 
-* OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the dataset and, therefore, OLS doesn’t apply to them. Read more about [roles in workspaces](../../collaborate-share/service-roles-new-workspaces.md).
+* OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the dataset and, therefore, OLS doesn’t apply to them. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
 * Datasets with OLS configured for one or more table or column objects aren't supported with these Power BI features:
 
