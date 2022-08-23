@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 08/22/2022
+ms.date: 08/23/2022
 LocalizationGroup: Share your work
 ---
 # Data discovery using the data hub
@@ -83,7 +83,7 @@ The list has three tabs to filter the list of data items.
 
 Use the search box and filters to narrow down the list of items. You can type into the **Filter by Keyword** box to search for a particular string, or you can use the filters to display only the selected data item types.
 
-The columns of the list are described below. Click on a column header to sort by that column. 
+The columns of the list are described below. 
 * **Name**: The data item name. Click the name to open the item's details page.
 * **Endorsement**: Endorsement status.
 * **Owner**: Data item owner (All and Trusted in your org tabs only).
