@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/17/2022
+ms.date: 08/23/2022
 ---
 
 # Object level security
@@ -16,7 +16,7 @@ Object-level security (OLS) enables model authors to secure specific tables or c
 
 ## Prerequisites
 
-This article assumes that you have a report that uses OLS that you want to embed into an app. To create a report that uses OLS, see [Object level security (OLS)](./cloud-object-level-security.md).
+This article assumes that you have a report that uses OLS that you want to embed into an app. To create a report that uses OLS, see [Object level security (OLS)](../../enterprise/service-admin-ols.md).
 
 ## Embed a report that use object level security
 
