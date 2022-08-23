@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/03/2022  
+ms.date: 08/23/2022
 ms.custom:  
 ---
 
@@ -27,7 +27,6 @@ Select the **Title** to view more information about that specific known issue.
 |  220      |  Gateway                           |  [Gateway data source owners cannot update data source credentials](known-issue-220-gateway-data-source-owners-cant-update-credentials.md)   |  August 3, 2022  |
 |  178      |  Consume and View                  |  [Multi-role row-level security for composite models may fail](known-issue-178-multi-role-rls-composite-model-fail.md)   |  Reactivated: July 25, 2022        |
 |  195      |  Share and Collaborate             |  [Using a link in a paginated report subscription doesn't apply the report parameters](known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md)   |  June 21, 2022        |  
-|  169      |  Embedded, REST API or PowerShell  |  [Try it button missing on REST API pages](known-issue-169-try-it-button-missing.md)   |  April 19, 2022        |  
 |  165      |  Refresh Data                      |  [Long running, failed or stuck dataflow in Premium Gen2](known-issue-dataflow-on-premium-gen2.md) | April 7, 2022 |
 |  151      |  Create and Author Data            |  [Unable to open protected Desktop file](known-issue-unable-open-protected-desktop-file.md)     |  March 13, 2022        |  
 
@@ -48,6 +47,7 @@ Select the **Title** to view more information about that specific known issue. F
 |  203      |  Consume and View                  |  [Decomposition tree shows the title of a collapsed level](known-issue-203-decomposition-tree-shows-title-collapsed-level.md)   |  June 21, 2022        |    Fixed: July 6, 2022 |
 |  193      |  Consume and View                  |  [Decomposition tree visual first level is incorrectly expanded](known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md)   |  June 21, 2022        |  Fixed: July 6, 2022 |
 |  185      |  Share and Collaborate             |  [Duplicate or erroneous email may be received during classic workspace upgrade](known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md)   |  May 23, 2022        |  Fixed: July 6, 2022 |
+|  169      |  Embedded, REST API or PowerShell  |  [Try it button missing on REST API pages](known-issue-169-try-it-button-missing.md)   |  April 19, 2022        |  Fixed: August 22, 2022 |
 
 ## Next steps
 

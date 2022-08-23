@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 07/04/2022
+ms.date: 08/23/2022
 ---
 
 # Export paginated report to file
@@ -333,11 +333,9 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
 
-  * The caller is a service principal or service principal profile.
+  * The caller is a service principal profile.
   * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
   * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
-
-* The service principal (not profile) can export a paginated report that has a Power BI dataset as its data source **only** where ALL downstream data sources are configured with SSO-disabled.
 
 * Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
 
@@ -350,7 +348,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
 
-* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online. 
+* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online.  
 
 ## Next steps
 
