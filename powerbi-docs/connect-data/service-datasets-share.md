@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 08/23/2022
 LocalizationGroup: Share your work
 ---
 # Share access to a dataset (preview)
