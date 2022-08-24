@@ -15,6 +15,9 @@ ms.date: 05/18/2021
 In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must include **rendering events**.
 These events let listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
 
+>[!IMPORTANT]
+>Any visual that exports data (for example, to a PowerPoint or *.pdf* file) must contain rendering events to ensure that the export doesn't begin before the visual finished rendering.
+
 The **rendering events API** consists of three methods that should be called during rendering:
 
 * `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started. **This method should always be the first line of the *update* method** since that is where the rendering process begins.
