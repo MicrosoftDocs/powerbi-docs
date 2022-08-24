@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 08/21/2022
+ms.date: 08/23/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -360,7 +360,7 @@ The location in the service where messages are delivered to users, such as notic
 
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
 
-### On-premises (on-prem)
+### On-premises
 
 The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.
 
@@ -424,7 +424,7 @@ A free, standalone Windows Desktop application used for authoring paginated repo
 
 ### Power BI Report Server
 
-An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). 
+An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments).
 
 ### Power BI service
 
