@@ -46,10 +46,6 @@ To share a dataset
 
 To monitor, change, or remove user access to your dataset, see [Manage dataset access permissions](service-datasets-manage-access-permissions.md).
 
-## Considerations and limitations
-
-Datasets can only be shared if the [Use datasets across workspaces](../admin/service-admin-portal-workspace.md#use-datasets-across-workspaces) tenant setting is enabled. If you encounter an error when trying to share access to a dataset, ask your Power BI administrator whether using datasets across workspaces is allowed in your organization.
-
 ## Next steps
 
 * [Dataset permissions](service-datasets-permissions.md)
