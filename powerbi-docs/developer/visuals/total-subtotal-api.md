@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/15/2021
+ms.date: 08/24/2022
 ---
 
 # Request aggregated subtotal data
@@ -26,11 +26,12 @@ Every time a visual refreshes its data, it issues a [data fetch request](fetch-m
 
 The API offers the following **boolean customization switches** for each data-view type (currently just the matrix):
 
-* *rowSubtotals*: Indicates if the subtotal data should be requested for all fields in the rows field well
-* *rowSubtotalsPerLevel*: Indicates if the subtotal data can be toggled for individual fields in the row's field well
-* *columnSubtotals*: Indicates if the subtotal data should be requested for all fields in the columns field well
-* *columnSubtotalsPerLevel*: Indicates if the subtotal data can be toggled for individual fields in the columns field well
+* *rowSubtotals*: Indicates if the *subtotal* data should be requested for all fields in the rows field well
+* *rowSubtotalsPerLevel*: Indicates if the *subtotal* data can be toggled for individual fields in the row's field well
+* *columnSubtotals*: Indicates if the *subtotal* data should be requested for all fields in the columns field well
+* *columnSubtotalsPerLevel*: Indicates if the *subtotal* data can be toggled for individual fields in the columns field well
 * *levelSubtotalEnabled*: Unlike all other properties, this property is applied to individual rows/columns. This property indicates if the subtotals are requested for the row/column
+* column - top bottom. Indicates if the row with the *total* data should be retrieved before or after the rest of the data. If *bottom* is selected, the total can only be displayed after all the data has been fetched.
 
 Each of the above switches is assigned a value based on the related properties in the property pane and the defaults.
 
@@ -111,5 +112,4 @@ To review the available customizations, expand the Subtotals drop-down menu in t
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Add interactivity to visual using Power BI visuals selections](selection-api.md)
+[Add interactivity to visual using Power BI visuals selections](selection-api.md)
