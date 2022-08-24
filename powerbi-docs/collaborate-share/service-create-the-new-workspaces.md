@@ -95,11 +95,11 @@ Power BI automatically detects the Workspace OneDrive, so it apears as **OneDriv
 
 1.Select **OneDrive - Sales and Marketing**.
 
-![image](https://user-images.githubusercontent.com/58403397/186304874-f668a638-bf4d-401a-a906-e596a18f7557.png)
+![Screenshot of Get Data from Workspace OneDrive](https://user-images.githubusercontent.com/58403397/186304874-f668a638-bf4d-401a-a906-e596a18f7557.png)
 
 1. Navigate to the folder containing your Power BI files, select the file and click **Connect**.
 
-![image](https://user-images.githubusercontent.com/58403397/186307602-21b26b4e-75be-412f-9fe1-6be7ac1e5b78.png)
+![Screenshot of Connecting to Power BI file stored in Workspace OneDrive](https://user-images.githubusercontent.com/58403397/186307602-21b26b4e-75be-412f-9fe1-6be7ac1e5b78.png)
 
 We can alternatively use **SharePoint - Team Sites** as follows:
 
