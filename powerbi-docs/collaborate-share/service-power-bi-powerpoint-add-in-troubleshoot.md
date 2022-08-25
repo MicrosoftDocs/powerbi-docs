@@ -7,9 +7,9 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: troubleshooting
+ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/13/2022
+ms.date: 08/25/2022
 ---
 
 # Troubleshoot the Power BI add-in for PowerPoint
@@ -21,6 +21,8 @@ This article describes what to do if you get the following error when trying to 
 ## Why am I getting this error?
 
 The most likely reason for getting this error is that WebView2 isn't installed on your device. The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. If WebView2 isn't installed, you need to install it before you'll be able to use the add-in.
+
+Another reason you might get this error is that Windows Information Protection is enabled on the PowerPoint presentation. WebView2 and the Power BI storytelling add-in are not supported in presentations that have Windows Information Protection enabled. For more information, see [What is Windows Information Protection?](#what-is-windows-information-protection). 
 
 ## What is WebView2?
 
@@ -84,10 +86,17 @@ The key's value should be set to:
 
 ```dword:00000001```
 
+## What is Windows Information Protection?
+
+[Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP), helps protect against potential data leakage. For PowerPoint presentation files on your computer, the [**File ownership** column in File Explorer](/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if WIP is enabled. For PowerPoint presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Edge](/deployedge/microsoft-edge-security-windows-information-protection). The briefcase icon in the address bar (shown below) will appear if WIP is enabled. 
+
+![Briefcase address bar indicator for sites marked as "work"](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-microsoft-edge-wip-notify.png)
+
+The Power BI storytelling add-in is not supported in presentations where WIP is enabled.
+
 ### More resources
 
 * [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
-
 
 ## Next Steps
 
