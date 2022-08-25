@@ -9,10 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/02/2022
+ms.date: 08/25/2022
 ---
 
-# About Power BI in PowerPoint
+# About Power BI in PowerPoint (preview)
 
 The Power BI add-in for PowerPoint enables you to add live, interactive data from Power BI to your PowerPoint presentations. This means not only that the data shown in your PowerPoint presentation will always be up to date, but also that while you're presenting, you'll be able to filter and drill down on data in response to questions and feedback from your audience without having to switch contexts.
 
@@ -35,6 +35,10 @@ Power BI data added to PowerPoint using the Power BI add-in remains in Power BI.
 ## Information for the Power BI administrator
 
 If you're a Power BI administrator, see [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md) for further details about the add-in.
+
+## Considerations and limitations
+
+Power BI add-in for PowerPoint does not support [business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios.
 
 ## Next Steps
 
