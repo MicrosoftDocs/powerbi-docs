@@ -15,7 +15,7 @@ ms.date: 08/24/2022
 The **Identity filter API** allows you to create a visual that can filter categorical data.  
 It filters the data by **data points** rather than mathematical expressions.
 
-The data points are saved in an array and referenced by their position in the array.
+The API keeps track of user selections and which data points to display. The data points are saved in an array and referenced by their position in the array.
 
 This API is useful in the following scenarios:
 
@@ -25,8 +25,6 @@ This API is useful in the following scenarios:
 
 > [!NOTE]
 > The **Identity filter API** is available from API version 5.1 To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
-
-The API keeps track of user selections and 
 
 The Identity filter model is based on the [IIdentityFilter](/javascript/api/powerbi/powerbi-models/iidentityfilter) interface.
 
