@@ -17,18 +17,6 @@ It filters the data by **data points** rather than mathematical expressions.
 
 The data points are saved in an array and referenced by their position in the array.
 
-The 
-
-For example, if you have a dataset of flags of all countries saved in an array, you can select only the flags of specific countries.
-
-The Identity filter API connects the numbers to the data in the array.
-
-For example:
-1 = USA
-2 = Canada
-3 = Spain
-etc.
-
 This API is useful in the following scenarios:
 
 * For custom visuals developed with group on keys
@@ -51,11 +39,21 @@ The Identity filter model is based on the [IIdentityFilter](/javascript/api/powe
     }
 ```
 
+For example, let's say you have the following array:
+
+:::image type="content" source="./media/identity-filter-api/target-array.png" alt-text="Screenshot of sample array.":::
+
+Note that the array is of type number[] and it contains the opaque-id (the identityIndex fields below) that the user selected.
+
+The identityIndex corresponds to the index of the value in the value array in the dataset (see below)
+
+:::image type="content" source="./media/identity-filter-api/array-values.png" alt-text="Screenshot showing array values of names.":::
+
 ## How to use the Identity filter API
 
 To use the Identity filter API, your powerbi-model version needs to be 1.9.1 or higher.
 
-1. add the following property as a member of the visual.ts class.
+* Add the following property as a member of the visual.ts class.
 
   ```typescript
       private filter: IIdentityFilter = {
@@ -66,10 +64,13 @@ To use the Identity filter API, your powerbi-model version needs to be 1.9.1 or 
       }
   ```
 
-2. Handle PowerBi Updates (read the target array from the “jsonFilters” in the “VisualUpdateOptions” and translate it to the corresponding values): target array of [0,10] will correspond to the value of “Aliyah” and “Abigail” in the example above.
+* To handle Power Bi updates, read the target array from the “jsonFilters” in the “VisualUpdateOptions” and translate it to the corresponding values. In the example above, a target array of [0,10] will correspond to the values of *Aliyah* and *Abigail*.
 
-3. Handle User Selection: clicking on the first “Abigail” should add the value 10 to the filter target array an send it using the following command:
+* To handle user selections, in the example above, clicking on the first *Abigail* should add the value 8 to the filter target array an send it using the following command:
+
+```typescript
 this.visualHost.applyJsonFilter(this.filter, "general", "filter", powerbi.FilterAction.merge);
+```
 
 ## Sample JSON filter
 
@@ -77,15 +78,4 @@ Some sample JSON filter code is shown in the following
 
 ## Example: Identity filter API
 
-The following example shows how the visual call a drilldown operation.
-
-```typescript
-public update(options: VisualUpdateOptions) {
-        if ((options.dataViews[0].metadata.dataRoles.drillableRoles['Columns']).indexOf(powerbi.DrillType.Down) >= 0) {
-            let args: powerbi.DrillDownArgs = {
-                roleName: "Columns",
-                drillType: powerbi.DrillType.Down
-            };
-            this.host.drill(args);
-        }
-```
+The following example shows how the visual calls a filter operation.
