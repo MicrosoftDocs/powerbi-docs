@@ -9,6 +9,7 @@ ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.date: 09/13/2019
 LocalizationGroup: Troubleshooting
+ROBOTS: NOINDEX
 ---
 
 # Forgot your password for Power BI?
