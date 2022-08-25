@@ -33,7 +33,7 @@ The `default` option is the simplest form. It allows sorting by one data field a
     }
 ```
 
-![Screenshot of table of US states with default sorting options the context menu.](media/sort-options/default-sorting.png)
+:::image type="content" source="media/sort-options/default-sorting.png" alt-text="Screenshot of table of US states with default sorting options the context menu.":::
 
 ## Implicit sorting
 
