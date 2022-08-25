@@ -27,13 +27,15 @@ The sorting capability requires one of the following parameters.
 
 The `default` option is the simplest form. It allows sorting by one data field at a time. The user can select the field and direction for sorting.
 
+:::image type="content" source="media/sort-options/default-sorting.png" alt-text="Screenshot of table of US states with default sorting options the context menu.":::
+
+To enable default sorting, add the following code to your capabilities.json file:
+
 ```json
     "sorting": {
         "default": {   }
     }
 ```
-
-:::image type="content" source="media/sort-options/default-sorting.png" alt-text="Screenshot of table of US states with default sorting options the context menu.":::
 
 ## Implicit sorting
 
