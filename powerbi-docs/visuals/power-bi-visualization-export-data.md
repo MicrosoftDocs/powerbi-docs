@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/03/2022
+ms.date: 08/26/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -214,7 +214,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
   - Matrices with only one row and/or values but no columns will be exported as table (no right border separator)
 
-  - If the **Show on rows** toggle is set to 'On' in Power BI Desktop for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
+  - If the **Switch Value to Rows** toggle is set to 'On' in Power BI for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
 
   - If the **Row subtotals** toggle is set to 'Off' in Power BI Desktop for a matrix visual, but the matrix visual has expanded and collapsed sections, exported data will contain subtotals for rows. To work around this issue, use the **Expand | All** command from the visual's context menu.
 
