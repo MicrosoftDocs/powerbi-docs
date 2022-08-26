@@ -249,7 +249,7 @@ Priority tiers define a sequence of rules that Power BI uses to resolve relation
 When a relationship is included in all available paths, it’s removed from consideration from all paths.
 
 #### Weight
-Each relationship in a path has a weight. By default, each relationship weight is equal unless the [USRELATIONSHIP](/dax/userelationship-function-dax) function is used. The *path weight* is the maximum of all relationship weights along the path. Power BI uses the path weights to resolve ambiguity between multiple paths in the same priority tier. It won't choose a path with a lower priority but it will choose the path with the higher weight. The number of relationships in the path doesn't affect the weight.
+Each relationship in a path has a weight. By default, each relationship weight is equal unless the [USERELATIONSHIP](/dax/userelationship-function-dax) function is used. The *path weight* is the maximum of all relationship weights along the path. Power BI uses the path weights to resolve ambiguity between multiple paths in the same priority tier. It won't choose a path with a lower priority but it will choose the path with the higher weight. The number of relationships in the path doesn't affect the weight.
 
 You can influence the weight of a relationship by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function. The weight is determined by the nesting level of the call to this function, where the innermost call receives the highest weight.
 
@@ -266,7 +266,7 @@ CALCULATE(
 ```
 
 > [!NOTE]
-> If Power BI detects multiple paths that have the same priority and the same weight, it will return an ambiguous path error. In this case, you must resolve the ambiguity by influencing the relationship weights using the [USERELATIONSHIP](/dax/userelationship-function-dax) function, or by removing or modifying model relationships.
+> If Power BI detects multiple paths that have the same priority and the same weight, it will return an ambiguous path error. In this case, you must resolve the ambiguity by influencing the relationship weights by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function, or by removing or modifying model relationships.
 
 ### Performance preference
 
