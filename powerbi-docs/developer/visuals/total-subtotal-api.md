@@ -19,7 +19,7 @@ The *Total and Subtotal API* allows custom visuals with a matrix data-view to re
 
 Every time a visual refreshes its data, it issues a [data fetch request](fetch-more-data.md) to the Power BI backend. These data requests are usually for values of the fields the user dragged into the field wells of the visual. Sometimes the visual needs other aggregations/subtotals (for example, sum, count) applied to these fields. The API customizes the outgoing data query to request the extra aggregation/subtotal data.
 
-The ??? property lets you decide if the aggregated data should be put at the beginning or end (top or bottom) of the returned data. The default is *bottom* which means that you can only see the aggregated data after all the data points have been fetched. If you define it as *top*, you can display the aggregated data even before you fetch all the data. This option is especially efficient and applicable to large datasets where you would otherwise have to fetch and scroll a lot before seeing any aggregated data.
+The `rowSubtotalsType` property lets you decide if the aggregated data should be put at the beginning or end (top or bottom) of the returned data. The default is *bottom*, which means that you can only see the aggregated data after all the data points have been fetched. If you define it as *top*, you can display the aggregated data even before you fetch all the data. This option is more efficient and especially applicable to large datasets where you would otherwise have to fetch and scroll through much data before seeing the aggregated data.
 
 :::image type="content" source="media/total-subtotal-api/subtotal-visual-results.png" alt-text="Screenshot of visual with subtotals row and columns highlighted.":::
 
