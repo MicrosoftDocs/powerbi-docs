@@ -64,7 +64,7 @@ If your system doesn't meet the above requirements, you need to upgrade your [Wi
 >[!Note]
 >For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below.
 
-The following sections show you how to check your device's Office build and Windows edition, and, if necessary, how to tell whether your presentation is protected by Windows Information Protection.
+The following sections show you how to check your device's Office build and Windows edition, and, if necessary, [how to tell whether your presentation is protected by Windows Information Protection](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection).
 
 ## Check your Office build and subscription type
 
