@@ -131,7 +131,6 @@ To review the available customizations, expand the Subtotals drop-down menu in t
 
 ![Subtotals drop-down menu](../../visuals/media/desktop-matrix-visual/power-bi-subtotal.png)
 
-
 ## Considerations and limitations
 
 The `rowSubtotalsType` property is only available for rows. You can't set column subtotals to the beginning of a column.
