@@ -48,9 +48,7 @@ If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is instal
 
 ## I installed WebView2, but the Power BI storytelling add-in still doesn't run
 
-If WebView2 is installed but you still can't use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection.
-
-The minimum system requirements are as follows:
+If WebView2 is installed but you still can't use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. The minimum system requirements are as follows:
 
 * **Office version**
     * If you have a Microsoft 365 Office subscription: Build number 16.0.13530.20424 or later.
@@ -63,6 +61,8 @@ If your system doesn't meet the above requirements, you need to upgrade your [Wi
 
 >[!Note]
 >For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below.
+
+If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection. The Power BI storytelling add-in is not supported for such presentations.
 
 The following sections show you how to check your device's Office build and Windows edition, and, if necessary, [how to tell whether your presentation is protected by Windows Information Protection](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection).
 
@@ -92,7 +92,7 @@ The key's value should be set to:
 
 The Power BI storytelling add-in is not supported for PowerPoint presentations that are protected by [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP).
 
-If you get the **Cannot run Power BI** error even though you know WebView2 is installed on your computer, use the following instructions to check whether WIP protection could be causing your problem.
+If you get the **Cannot run Power BI** error even though you are sure that WebView2 is installed on your computer and that your system meets the minimum requirements, use the following instructions to check whether WIP protection could be causing your problem.
 
 * For PowerPoint presentation files on your computer, the [**File ownership** column in File Explorer](/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if the file is protected by WIP.
 * For PowerPoint presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Edge](/deployedge/microsoft-edge-security-windows-information-protection). The briefcase icon in the address bar (shown below) will appear if WIP is protecting the files.
