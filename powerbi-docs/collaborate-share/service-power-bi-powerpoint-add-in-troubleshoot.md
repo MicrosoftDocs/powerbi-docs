@@ -22,7 +22,7 @@ This article describes what to do if you get the following error when trying to 
 
 The most likely reason for getting this error is that WebView2 isn't installed on your device. The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. If WebView2 isn't installed, you need to install it before you'll be able to use the add-in.
 
-Another reason you might get this error is that Windows Information Protection is enabled on the PowerPoint presentation. WebView2 and the Power BI storytelling add-in are not supported in presentations that have Windows Information Protection enabled. For more information, see [What is Windows Information Protection?](#what-is-windows-information-protection). 
+Another reason you might get this error is if your PowerPoint presentation is protected by Windows Information Protection. WebView2 and the Power BI storytelling add-in are not supported for such presentations. For more information, see [How do I know if my presentation is protected by Windows Information Protection?](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection). 
 
 ## What is WebView2?
 
@@ -86,13 +86,16 @@ The key's value should be set to:
 
 ```dword:00000001```
 
-## What is Windows Information Protection?
+## How do I know if my presentation is protected by Windows Information Protection?
 
-[Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP), helps protect against potential data leakage. For PowerPoint presentation files on your computer, the [**File ownership** column in File Explorer](/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if WIP is enabled. For PowerPoint presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Edge](/deployedge/microsoft-edge-security-windows-information-protection). The briefcase icon in the address bar (shown below) will appear if WIP is enabled. 
+The Power BI storytelling add-in is not supported for PowerPoint presentations that are protected by [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP).
+
+If you get the **Cannot run Power BI** error even though you know WebView2 is installed on your computer, use the following instructions to check whether WIP protection could be causing your problem.
+
+* For PowerPoint presentation files on your computer, the [**File ownership** column in File Explorer](/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if the file is protected by WIP.
+* For PowerPoint presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Edge](/deployedge/microsoft-edge-security-windows-information-protection). The briefcase icon in the address bar (shown below) will appear if WIP is protecting the files.
 
 ![Briefcase address bar indicator for sites marked as "work"](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-microsoft-edge-wip-notify.png)
-
-The Power BI storytelling add-in is not supported in presentations where WIP is enabled.
 
 ### More resources
 
