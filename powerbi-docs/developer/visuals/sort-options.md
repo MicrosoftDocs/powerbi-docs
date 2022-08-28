@@ -40,15 +40,8 @@ To enable default sorting, add the following code to your capabilities.json file
 
 Implicit sorting allows you to pre-define a sorting array using parameter `clauses`, that describes sorting for each data role. The user can't change the sorting order, so Power BI doesn't display sorting options in the visual's menu. However, Power BI does sort data according to specified settings.
 
-To enable implicit sorting, add the following code to your capabilities.json file:
-
-```json
-    "sorting": {
-        "implicit": {   }
-    }
-```
-
-`clauses` parameters can contain several objects with two parameters:
+To enable implicit sorting, add the implicit `clauses` to your *capabilities.json* file
+`clauses` parameters can contain several objects with two parameters each:
 
 * `role`: Determines `DataMapping` for sorting
 * `direction`: Determines sort direction (1 = Ascending, 2 = Descending)
