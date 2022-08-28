@@ -48,7 +48,9 @@ If the Security Info window says **Runtime: Microsoft Edge**, WebView2 is instal
 
 ## I installed WebView2, but the Power BI storytelling add-in still doesn't run
 
-If WebView2 is installed but you still can't use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. The minimum system requirements are as follows:
+If WebView2 is installed but you still can't use the add-in, it may be because the Office build and/or Windows edition on your device don't meet minimum requirements. If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection.
+
+The minimum system requirements are as follows:
 
 * **Office version**
     * If you have a Microsoft 365 Office subscription: Build number 16.0.13530.20424 or later.
@@ -60,9 +62,9 @@ If WebView2 is installed but you still can't use the add-in, it may be because t
 If your system doesn't meet the above requirements, you need to upgrade your [Windows](https://support.microsoft.com/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212#:~:text=To%20check%20for%20updates%2C%20select,can%20choose%20to%20install%20them.) and/or [Office](https://support.microsoft.com/office/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) versions before you will be able to run the Storytelling add-in.
 
 >[!Note]
->For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below. 
+>For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below.
 
-The following sections show you how to check your device's Office build and Windows edition.
+The following sections show you how to check your device's Office build and Windows edition, and, if necessary, how to tell whether your presentation is protected by Windows Information Protection.
 
 ## Check your Office build and subscription type
 
