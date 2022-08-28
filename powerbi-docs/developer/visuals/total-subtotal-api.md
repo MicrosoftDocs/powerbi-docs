@@ -34,6 +34,8 @@ The API offers the following **boolean customization switches** for each data-vi
 * *levelSubtotalEnabled*: Unlike all other properties, this property is applied to individual rows/columns. This property indicates if the subtotals are requested for the row/column
 * *rowSubtotalsType*: Indicates if the row with the *total* data should be retrieved before or after the rest of the data. If *bottom* is selected, the total can only be displayed after all the data has been fetched.
 
+     :::image type="content" source="./media/total-subtotal-api/top-bottom.png" alt-text="Screenshot of menu showing row subtotal type option.":::
+
 Each of the above switches is assigned a value based on the related properties in the property pane and the defaults.
 
 ## How to use the subtotal API
@@ -128,6 +130,11 @@ Check out this [sample report](https://github.com/Microsoft/Powerbi-Visuals-Samp
 To review the available customizations, expand the Subtotals drop-down menu in the Format property pane, modify the subtotals settings, and track the changes to the subtotals presentation (named *Totals*) by the visual.
 
 ![Subtotals drop-down menu](../../visuals/media/desktop-matrix-visual/power-bi-subtotal.png)
+
+
+## Considerations and limitations
+
+The `rowSubtotalsType` property is only available for rows. You can't set column subtotals to the beginning of a column.
 
 ## Next steps
 
