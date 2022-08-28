@@ -38,7 +38,8 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 
 ## Considerations and limitations
 
-The Power BI add-in for PowerPoint does not support [business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios.
+* The Power BI add-in for PowerPoint is not supported for presentations that are protected by Windows Information Protection. See [How do I know if my presentation is protected by Windows Information Protection?](./service-power-bi-powerpoint-add-in-troubleshoot.md#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection) for more information.
+* The Power BI add-in for PowerPoint does not support [business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios.
 
 ## Next Steps
 
