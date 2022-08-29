@@ -16,13 +16,13 @@ As a Power BI admin for your organization, you can control the type of Power BI 
 
 To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
-[!INCLUDE[admin portal settings](../includes/admin-portal-settings.md)]
+[!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
 ## Power BI visuals tenant settings
 
 To manage the tenant settings for Power BI visuals from the Admin Portal, go to **Tenant settings** and scroll down to **Power BI visuals**.
 
-:::image type="content" source="./media/organizational-visuals/powerbi-visuals-tenant-settings.png" alt-text="Screenshot of the Power B I visuals tenant settings location.":::
+:::image type="content" source="./media/organizational-visuals/powerbi-visuals-tenant-settings.png" alt-text="Screenshot of the Power BI visuals tenant settings location.":::
 
 The UI tenant settings only affect Power BI service. If you want these settings to take effect in Power BI Desktop, use group policies. A table at the end of each section provides details for enabling the setting in Power BI Desktop.
 
@@ -51,7 +51,7 @@ Follow the instructions below to enable users in your organization upload *.pbiv
 
 4. Select **Apply**.
 
-   ![A screenshot showing the tenant settings menu in the Power B I admin settings. In the Power B I visuals section, the allow visuals created using the Power B I S D K option is expanded, and the enabled button is turned on.](media/organizational-visuals/tenant-settings.png)
+   ![A screenshot showing the tenant settings menu in the Power BI admin settings. In the Power BI visuals section, the allow visuals created using the Power BI S D K option is expanded, and the enabled button is turned on.](media/organizational-visuals/tenant-settings.png)
 
 UI changes to tenant settings apply only to Power BI service. To enable users in your organization to upload *.pbiviz* files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
@@ -72,7 +72,7 @@ When this setting is enabled, only certified Power BI visuals will render in you
 
 3. Select **Apply**.
 
-   ![A screenshot showing the tenant settings menu in the Power B I admin settings. In the Power B I visuals section, the add and use certified visuals only (block uncertified) option is expanded, and the enabled button is turned on.](media/organizational-visuals/certified-visuals.png)
+   ![A screenshot showing the tenant settings menu in the Power BI admin settings. In the Power BI visuals section, the add and use certified visuals only (block uncertified) option is expanded, and the enabled button is turned on.](media/organizational-visuals/certified-visuals.png)
 
 UI changes to tenant settings apply only to Power BI service. To manage the certified visuals tenant setting in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
@@ -80,6 +80,12 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 |---------|---------|---------|
 |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
 |
+
+### Allow access to remote resources
+
+When this setting is enabled, all visuals created with an API earlier than v4.6.0 will be able to access remote resources. Visuals created with API v4.6.0 and above will be able to access remote resources only if the visual's privileges setting allows it. If the visual's privileges setting doesn't allow access to remote resources that visual won't be allowed access even if this admin setting is enabled.
+
+   :::image type="content" source="media/organizational-visuals/allow-access-to-remote-resources.png" alt-text="Screenshot of the Power BI setting that allows visuals to access remote resources.":::
 
 ### Export data to file
 
@@ -107,7 +113,7 @@ When this setting is enabled, users can download data from a custom visual into 
 
 4. Select **Apply**.
 
-   :::image type="content" source="media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power B I allow downloads from custom visuals settings.":::
+   :::image type="content" source="media/organizational-visuals/allow-downloads-from-custom-visuals.png" alt-text="Screenshot of the Power BI setting that allows downloads from custom visuals.":::
 
 UI changes to tenant settings apply only to Power BI service. To enable users in your organization to download data from custom visuals in Power BI Desktop, use [Azure AD Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
@@ -139,7 +145,7 @@ Use this method to add a new Power BI visual from a *.pbiviz* file.
 
 1. Select **Add visual** > **From a file**.
 
-    ![A screenshot showing the organizational visuals menu in the Power B I admin settings. The add visual option is expanded, and the from a file option is selected.](media/organizational-visuals/add-from-file.png)
+    ![A screenshot showing the organizational visuals menu in the Power BI admin settings. The add visual option is expanded, and the from a file option is selected.](media/organizational-visuals/add-from-file.png)
 
 2. Fill in the following fields:
 
@@ -169,7 +175,7 @@ AppSource Power BI visuals are automatically updated. Users in your organization
 
 1. Select **Add visual** > **From AppSource**.
 
-    ![A screenshot showing the organizational visuals menu in the Power B I admin settings. The add visual option is expanded, and the from app source option is selected.](media/organizational-visuals/add-visual-from-appsource.png)
+    ![A screenshot showing the organizational visuals menu in the Power BI admin settings. The add visual option is expanded, and the from app source option is selected.](media/organizational-visuals/add-visual-from-appsource.png)
 
 2. In the **Power BI visuals** window, find the AppSource visual you want to add, and select **Add**. Once uploaded, the visual will display in the organizational visuals list.
 
@@ -179,7 +185,7 @@ You can pick visuals from the organizational visuals page to automatically show 
 
 1. In the row of the visual you want to add, select **settings**.
 
-    ![A screenshot showing the organizational visuals menu in the Power B I admin settings. The add visual option is expanded. The from app source option is selected and a list of app source visuals is displayed. The screenshot also shows a cog settings menu button selected next to one of the visuals.](media/organizational-visuals/organizational-pane.png)
+    ![A screenshot showing the organizational visuals menu in the Power BI admin settings. The add visual option is expanded. The from app source option is selected and a list of app source visuals is displayed. The screenshot also shows a cog settings menu button selected next to one of the visuals.](media/organizational-visuals/organizational-pane.png)
 
 2. Enable the visualization pane setting and select **Update**.
 

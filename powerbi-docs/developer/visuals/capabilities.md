@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 05/12/2022
+ms.date: 07/12/2022
 ---
 
 # Capabilities and properties of Power BI visuals
@@ -40,7 +40,7 @@ When you create a new visual, the default *capabilities.json* file includes the 
 
 The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
 
-The following additional root objects can be added as needed:
+The following additional root objects are optional and can be added as needed:
 
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
@@ -54,6 +54,7 @@ The following additional root objects can be added as needed:
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * [subtotals](total-subtotal-api.md)
+* [keepAllMetadataColumns](dataview-mappings.md#keep-all-metadata-columns)
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
@@ -82,7 +83,7 @@ There are two types of privileges that must be defined:
 
 ### Allow web access
 
-To allow a visual accesses to an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+To allow a visual to access an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
 #### Example of privileges setting allowing access to external resources
 

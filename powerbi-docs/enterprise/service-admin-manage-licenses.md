@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/25/2021
+ms.date: 07/11/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -17,7 +17,7 @@ This article explains how admins can use the Microsoft 365 admin center or the A
 
 > [!NOTE]
 >
->It's possible for a user to have both a Power BI (free) and a Power BI Pro license assigned. This can happen when a user signs up for a free license and then is later assigned a Power BI Pro license. The highest licensing level takes effect in this case.
+>It's possible for a user to have both a Power BI (free) and another Power BI Pro license assigned. This can happen when a user signs up for a free license and then is later assigned a Pro or Premium license. The highest licensing level takes effect in this case.
 >
 
 ## View your subscriptions

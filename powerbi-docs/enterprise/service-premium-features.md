@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: overview
-ms.date: 04/07/2022
+ms.date: 06/21/2022
 LocalizationGroup: Premium 
 ---
 
@@ -40,7 +40,7 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[Multi-geo](../admin/service-admin-premium-multi-geo.md) |Deploy content to data centers in regions other than the home region of your tenant</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
 |On-demand loading capabilities for large models |Improve report load time by loading datasets to memory on demand |
 |[Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |Pixel-perfect reports |
-|[Power BI Report Server](../report-server/get-started.md) |On-premises report server</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium Per User (PPU)](service-premium-per-user-faq.yml) |
+|[Power BI Report Server](./../report-server/get-started.md) |On-premises report server</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
 |Refresh rate |The ability to [refresh more than eight times a day](../connect-data/refresh-data.md#data-refresh)|
 |[Query caching](../connect-data/power-bi-query-caching.md) |Speed up reports by using local caching |
 |[Storage](../admin/service-admin-manage-your-data-storage-in-power-bi.md) |Manage data storage |

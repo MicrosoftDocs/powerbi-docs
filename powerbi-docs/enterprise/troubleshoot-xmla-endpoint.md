@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 04/21/2022
+ms.date: 07/20/2022
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -130,6 +130,10 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
 
+## Email subscriptions
+
+Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](./../consumer/end-user-subscribe.md).
+
 ## Errors on Premium Gen 2 capacity
 
 ### Connect to Server error in SSMS
@@ -249,7 +253,7 @@ The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not suppo
 
 ## Resource governing command memory limit in Premium Gen 2
 
-Premium Gen2 capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per artifact of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+Premium Gen2 capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per item of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
 The effective memory limit for a command is based on the lesser of the capacity's memory limit (determined by SKU) or the value of the [DbpropMsmdRequestMemoryLimit](/analysis-services/xmla/xml-elements-properties/dbpropmsmdrequestmemorylimit-element-xmla?view=asallproducts-allversions&preserve-view=true) XMLA property.
 

@@ -5,8 +5,8 @@ author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.subservice: pbi-troubleshooting
+ms.topic: troubleshooting
 ms.date: 11/05/2021
 ---
 

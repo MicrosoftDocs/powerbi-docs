@@ -7,7 +7,7 @@ services: power-bi-embedded
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 04/13/2022
+ms.date: 08/18/2022
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 
@@ -22,13 +22,15 @@ This article explains how to embed Power BI content that uses RLS into a standar
 
 For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](/power-bi/enterprise/service-admin-rls).
 
-For best results, your tables should be modeled as a [star schema](../../guidance/star-schema.md) with a [snowflake dimensions](../../guidance/star-schema.md#snowflake-dimensions) design. This way, when a filter is applied to a table, all the related tables get filtered accordingly.
-
 When you [define your RLS roles](/power-bi/enterprise/service-admin-rls#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
 
-## Static and dynamic security
+## When to use static and dynamic security
 
-[Static security](#static-security) uses a fixed value in the DAX filter to define each role. [Dynamic security](#dynamic-security) uses a DAX function (`username()` or `userprincipalname()`) to define the roles. Dynamic security provides more flexibility and allows you to manage your data using fewer roles.
+[Static security](#static-security) uses a fixed value in the DAX filter to define each role. It's simple to implement but difficult to maintain when there are many users or organizations involved.
+
+Static security works best for an ISV that serves one or a few big customers where each department needs to access different data.
+
+[Dynamic security](#dynamic-security) uses a DAX function (`username()` or `userprincipalname()`) to define the roles. Dynamic security provides more flexibility and allows you to manage your data using fewer roles and less maintenance.
 
 ### Static security
 
@@ -42,7 +44,7 @@ For example, you can define the role of *Eastern US* as `[Region] = "East"`
 Let's say john@contoso.com is a user of your app. You want to give John access to data from the *Eastern US* role. To embed a report for john@contoso.com, generate an embed token using the *Eastern US* role. The resulting data will be filtered for `[Region] = "East"`.
 
 > [!NOTE]
-> When you generate the embed token, you need to supply a username, but the username can be any string. Static roles have a fixed value that isn't dependant on a username, so once the ISV determines the user's role and passes it to the embed token, the data is filtered according to that role regardless of what username was passed.
+> When you generate the embed token, you need to supply a username, but the username can be any string. Static roles have a fixed value that isn't dependent on a username, so once the ISV determines the user's role and passes it to the embed token, the data is filtered according to that role regardless of what username was passed.
 
 ### Dynamic security
 
@@ -74,12 +76,12 @@ When using dynamic security in this scenario, you only need one role for all reg
 
 ## Generate an embed token
 
-When you're ready to embed the report into your app, you need to generate an embed token.
+When you're ready to embed the report into your app, you need to [generate an embed token](generate-embed-token.md#row-level-security).
 To generate a token using the Embed Token API, pass the following information to the API.
 
 * **username** (mandatory) – If the roles are dynamic, the *username* string is used as the filter. For static roles, the *username* doesn't affect the RLS and can be any string at all. Only a single username can be listed.
 * **roles** (mandatory) – The role(s) used when applying Row Level Security rules. If passing more than one role, they should be passed as a string array.
-* **dataset** (mandatory) – The dataset that is applicable for the artifact you're embedding.
+* **dataset** (mandatory) – The dataset that is applicable for the item you're embedding.
 
 You can now embed your report into your app. The report will filter data according to the RLS applied.
 
@@ -96,7 +98,6 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
         );
        
         // Create a request for getting an embed token for the rls identity defined above
-        // This method works only with new Power BI V2 workspace experience
         var tokenRequest = new GenerateTokenRequestV2(
             reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
             datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),
@@ -113,12 +114,13 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 ## Considerations and limitations
 
-The user that generates the embed token has to be a member or admin in both workspaces (the dataset and the report).
+* The user that generates the embed token has to be a *member* or *admin* in both workspaces (the dataset workspace and the report workspace).
+* When [generating the embed token](generate-embed-token.md), you need to provide a username and a role. If you don't, one of the following will occur, depending on if the token is being generated by service principal or master user:
+  * For a **service principal**, token generation will fail.
+  * For a **master user**, token generation will succeed but the data will not be filtered (all the data is returned).
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [RLS guidance](../../guidance/rls-guidance.md)
-
-> [!div class="nextstepaction"]
-> [Generate an embed token](generate-embed-token.md#row-level-security)
+* [RLS guidance](../../guidance/rls-guidance.md)
+* [Generate an embed token](generate-embed-token.md)
+More Questions? Try the [Power BI Community](https://community.powerbi.com/)

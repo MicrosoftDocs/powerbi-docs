@@ -36,7 +36,7 @@ A key governance decision is who to assign as a Power BI administrator. It's a c
 The Power BI administrator role is considered a high privilege role because:
 
 - Settings that are managed by a Power BI administrator have a significant effect on user capabilities and user experience (described in the [Tenant settings](#tenant-settings) section below).
-- Power BI administrators can update access permissions for any workspace (excluding personal workspaces and [classic workspaces](https://powerbi.microsoft.com/blog/updated-timeline-for-upgrading-classic-workspaces/)). The result is that an administrator can allow permission to view or download data artifacts as they see fit (described in the [Tenant settings](#tenant-settings) section below).
+- Power BI administrators can update access permissions for any workspace (excluding My workspaces). The result is that an administrator can allow permission to view or download datasets as they see fit (described in the [Tenant settings](#tenant-settings) section below).
 - Power BI administrators can view all tenant metadata, including all user activities that occur in the Power BI service (described in the [auditing and monitoring](#auditing-and-monitoring) section below).
 
 > [!IMPORTANT]
@@ -371,7 +371,7 @@ Power BI supports capabilities for information protection and data loss preventi
 - [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to *know your data, protect your data, prevent data loss, and govern your data*.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) (Defender for Cloud Apps), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how Defender for Cloud Apps can be used for oversight of the Power BI service.
 
-Power BI's information protection capabilities are built upon [sensitivity labels](whitepaper-powerbi-security.md#data-loss-prevention-dlp). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
+Power BI's information protection capabilities are built upon [sensitivity labels](./whitepaper-powerbi-security.md#microsoft-purview-for-power-bi). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
 
 > [!IMPORTANT]
 > A sensitivity label offers powerful data protection capabilities. However, it's not a replacement for standard data security practices, such as workspace roles, app security, individual item sharing, or row-level security.

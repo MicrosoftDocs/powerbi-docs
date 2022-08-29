@@ -55,7 +55,7 @@ Embed stunning, interactive data visualizations in applications, websites, porta
 
 There's lots of information about Power BI APIs in the [Power BI Developer Portal](https://dev.powerbi.com).
 
-For more information, see [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md#power-bi-embedded).
+For more information, see [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md).
 
 ## Embed your Power BI data within your app
 

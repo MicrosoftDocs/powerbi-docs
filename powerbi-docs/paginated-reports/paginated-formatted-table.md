@@ -1,13 +1,13 @@
 ---
 title: "Create exportable formatted data tables in the Power BI service"
 description: In this article, you learn how to create a paginated report using the interactive formatted table editor in the Power BI service.
-author: ebendinsky
-ms.author: ebendinsky
-ms.reviewer:
+author: maggiesMSFT
+ms.author: maggies
+ms.reviewer: ebendinsky
 ms.service: powerbi
-ms.subservice: 
+ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 04/12/2022
+ms.date: 06/13/2022
 ---
 
 # Create exportable formatted data tables in the Power BI service
@@ -16,35 +16,49 @@ ms.date: 04/12/2022
 
 In this article, you learn how to export all the data from your Power BI dataset easily, while preserving data and style formats. The feature lets you quickly create a paginated report on the web, and apply styling. Then you can export it using the rich export functionality of paginated reports.
 
-You can use the formatted table feature to create paginated reports in any modern workspace, including workspaces that aren't in a Power BI Premium capacity.
+You can use the formatted table feature to create paginated reports in any workspace, including workspaces that aren't in a Power BI Premium capacity.
+
+## Prerequisites
+
+- You need a Pro license. Read about the different [Power BI licenses](../consumer/end-user-license.md).
+- You need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md).
 
 ## Get started
 
-1. Go to list view for any workspace, including My Workspace.
-1. There are three different ways you can create a formatted table from the Power BI service:
+To create a formatted table from the Power BI service, you can start in three different places.
 
-    **In list view** select **More options (...)** for a Power BI dataset, then select **Create formatted table**. 
+### In list view
+
+1. Go to list view for any workspace, including My Workspace.
+1. Select **More options (...)** for a Power BI dataset, then select **Create formatted table**. 
 
     :::image type="content" source="media/paginated-formatted-table/formatted-table-list-view.png" alt-text="Screenshot of Create a formatted table in the Power BI service.":::
 
-    **From the navigation pane** select **More options (...)** for a dataset, then select **As formatted table**.
+### In Dataset hub view
 
-    ::::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-datahub-create-report.png" alt-text="Screenshot of Create as formatted table.":::
+1. Go to Datasets hub view in the Power BI service.
 
-
-    **In Dataset hub view** select **More options (...)** next to a dataset > **Create formatted table**.
+1. Select **More options (...)** next to a dataset > **Create formatted table**.
 
     :::image type="content" source="media/paginated-formatted-table/formatted-table-data-hub.png" alt-text="Screenshot of Create formatted table in the Data hub.":::
 
-The new paginated report online editing experience opens. It's called formatted table.  There are a few panes here to take a look at.
+### On the Dataset details page
+
+1. Select a dataset in the Datasets hub view of the Power BI service.
+
+1. Under **Visualize this data**, select **Create a report** > **As formatted table**.
+
+    :::image type="content" source="media/paginated-formatted-table/formatted-table-dataset-details-create-report.png" alt-text="Screenshot of Create a report as formatted table on the Dataset details page.":::
+
+No matter where you start, the new paginated report online editing experience opens. It's called a *formatted table*.
 
 ## Create a table
 
-To create your first table, select fields names in the **Fields** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column or drag it into the pane labeled **Build**.
+To create your first table, select field names in the **Fields** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column or drag it to **Values** section of the **Build** pane.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-fields-list.png" alt-text="Screenshot of selecting fields.":::
 
-Give the editor a few moments to run a newly created query on the dataset. The formatted table shows up in the paginated report viewer to the left side of the page.
+Give the editor a few moments to run a new query on the dataset. The formatted table shows up in the paginated report viewer to the left side of the page.
 
 :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-table.png" alt-text="Screenshot of formatted table preview.":::
 
@@ -58,9 +72,14 @@ When you select a field, we use the default aggregate set on the field. You can 
 
 :::image type="content" source="media/paginated-formatted-table/formatted-table-aggregations.png" alt-text="Screenshot of possible aggregations.":::
 
-The **Build** pane has other customization options for you to create a better looking table.  To access these options, select the **Format** tab at the top of the **Build** pane.
+## Format the table
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
+Now that you have the columns that you want, you can format the table using the built-in format options. 
+
+1. In the **Build** pane, select the **Format** tab.
+1. Select the drop-down arrow in the **Style** box, and experiment with the available styles.
+
+    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
 
 
 ## Edit a formatted table
@@ -82,7 +101,7 @@ You can export the table before or after you save it. Paginated reports have ric
 
 ## Save your report
 
-You can save the report to any modern workspace, including workspaces that aren't in a Power BI Premium capacity.
+You can save the report to any workspace, including workspaces that aren't in a Power BI Premium capacity.
 
 1. On the **File** menu, save, download, or print your report.
 
@@ -104,6 +123,10 @@ After saving the report, you can preview it. Select **Reading Mode** on the top 
 > [!NOTE]
 > If you haven't saved the report yet, or have unsaved changes, you receive a prompt asking you to save or discard your changes before taking you to the reading view.
 
+## Considerations and limitations
+
+- You can create a formatted table in any workspace. It doesn't need to be in a Premium workspace.
+- You can't create a formatted table from Power BI datasets based on a live connection.
 
 ## Next steps
 

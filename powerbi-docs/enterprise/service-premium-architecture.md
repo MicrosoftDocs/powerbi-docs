@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/16/2021
+ms.date: 07/03/2022
 LocalizationGroup: Premium
 ---
 # Power BI Premium Gen2 architecture
@@ -21,6 +21,9 @@ The most significant update in the architecture of Premium Gen2 is the way capac
 In the original version of Power BI Premium, backend v-cores were reserved physical computing nodes in the cloud, with differences in the number of v-cores and the amount of onboard memory according to the customer's licensing SKU. Customer administrators were required to keep track of how busy these nodes were, using the *Premium metrics app*. They had to use the app and other tools to determine how much capacity their users required to meet their computing needs.
 
 In Premium Gen2, backend v-cores are implemented on regional clusters of physical nodes in the cloud, which are shared by all tenants using Premium capacities in that Power BI region. The regional cluster is further divided into specialized groups of nodes, where each group handles a different Power BI workload (datasets, dataflows, or paginated reports). These specialized groups of nodes help avoid resource contention between fundamentally different workloads running on the same node.
+
+>[!NOTE]
+>Power BI Gen2 provides logical segregation of data between different customers, and is compliant with ISO 27017. For more details see [ISO/IEC 27017:2015](/azure/compliance/offerings/offering-iso-27017).
 
 In both Premium Gen1 and Gen2 versions, administrators have the ability to [tweak and configure workload settings](service-admin-premium-workloads.md) for their capacity. This can be used to reduce resource contention between workloads (datasets, dataflows, paginated reports, and AI), and adjust other settings such as memory limits and timeouts based on the capacity usage patterns.
 

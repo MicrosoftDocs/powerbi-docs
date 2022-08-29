@@ -7,12 +7,13 @@ ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/03/2021
+ms.date: 06/29/2022
+ms.custom: sample-salesandmarketingsample
 LocalizationGroup: Visualizations
 ---
 # Copy and paste a report visualization
 
-[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 This article covers two different ways to copy and paste a visual.
 
@@ -94,11 +95,11 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 If you don't want users to be able to copy a specific visual, you can remove the copy icon from that visual in the Power BI service.
 
-1. Select the paint roller icon to open the Formatting pane.
+1. Select the paint brush icon to open the Formatting pane.
 1. Scroll down to **Visual header** and expand the card.
 1. Scroll down to the bottom of the card and toggle off **Copy icon**.
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-visual-header.png" alt-text="Paint roller selected and copy icon selected.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-visual-header.png" alt-text="Paint brush selected and copy icon selected.":::
 
 1. If you can't find the **Visual header** setting, turn on the modern visual header option under **Report settings**.
 

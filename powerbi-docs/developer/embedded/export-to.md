@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 05/08/2022
+ms.date: 08/18/2022
 ---
 
 # Export Power BI report to file
@@ -19,6 +19,9 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
   * When you export to a .png, a report with multiple pages is compressed into a .zip file
   * Each file in the .zip represents a report page
   * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
+
+>[!IMPORTANT]
+>The `exporttofile` API is only available in for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2)
 
 ## Usage examples
 
@@ -113,8 +116,7 @@ With [Row Level Security (RLS)](embedded-row-level-security.md), you can export 
 To export using RLS, you must have the following permissions:
 
 * Write and reshare permissions for the dataset the report is connected to
-* If the report resides on a v1 workspace, you need to be the workspace admin
-* If the report resides on a v2 workspace, you need to be a workspace member or admin
+* Workspace member or admin of the workspace where the report resides
 
 ### Data protection
 
@@ -127,8 +129,6 @@ A report with a sensitivity label can't be exported to a .pdf or a .pptx using a
 When using the `exportToFile` API, you can pass your desired local. The localization settings affect the way the report is displayed, for example by changing formatting according to the selected local.
 
 ## Concurrent requests
-
-# [Premium Gen2](#tab/gen2)
 
 `exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 55 pages in one export request on an A4 SKU, will be processed concurrently. This process will take roughly the same amount of time as sending 55 export requests with one page each.
 
@@ -152,81 +152,9 @@ Only five pages of a report are processed concurrently. For example, if you're e
 
 <sup>1</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
-# [Premium Gen1](#tab/gen1)
-
-`exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same mount of time as sending 20 export requests with one page each.
-
-A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
-
-Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A5 SKU with a limit of processing 12 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
-
->[!NOTE]
->Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
-
-|Azure SKU       | Office SKU      |Maximum concurrent report pages |
-|----------------|-----------------|--------------------------------|
-| A1             | EM1             |  1                             |
-| A2             | EM2             |  2                             |
-| A3             | EM3             |  3                             |
-| A4             | P1              |  6                             |
-| A5             | P2              | 12                             |
-| A6             | P3              | 24                             |
-| A7<sup>1</sup> | P4<sup>1</sup>  |                                |
-| A8<sup>1</sup> | P5<sup>1</sup>  |                                |
-
-<sup>1</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
-
----
-
-## Considerations and limitations
-
-# [Premium Gen2](#tab/gen2)
-
-* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
-* The report you're exporting must reside on a Premium or Embedded capacity.
-* The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* Exported reports can't exceed a file size of 250 MB.
-* When exporting to .png, sensitivity labels aren't supported.
-* The number of exports (single visuals or report pages) that can be included in an exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
-* Dynamic Dataset binding isn't supported.
-* Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
-* The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
-  * Uncertified Power BI custom visuals
-  * R visuals
-  * PowerApps
-  * Python visuals
-  * Power Automate
-  * Paginated report visual
-  * Visio
-
-# [Premium Gen1](#tab/gen1)
-
-* **As of the end of April 2022, the *export Power BI report to file API* will not be available with Power BI Premium or Embedded Gen1 capacities**. We suggest upgrading to a Power BI Premium or Embedded Gen2 capacity. Please refer to [Power BI embedded Gen2](power-bi-embedded-generation-2.md) for more information.
-* The report you're exporting must reside on a Premium or Embedded capacity.
-* The report you're exporting must reside on a Premium or Embedded capacity.
-* The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* The number of Power BI exports per hour is limited to 50 per capacity. An export refers to exporting a single visual or a report page with or without bookmarks, and doesn't include exporting paginated reports.
-* Exported reports can't exceed a file size of 250 MB.
-* When exporting to .png, sensitivity labels aren't supported.
-* The number of exports (single visuals or report pages) that can be included in an exported report is 50 (this doesn't include exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
-* Dynamic Dataset binding isn't supported.
-* Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
-* The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
-  * Uncertified Power BI custom visuals
-  * R visuals
-  * PowerApps
-  * Python visuals
-  * Power Automate
-  * Paginated report visual
-  * Visio
-
----
-
 ## Code examples
 
-When you create an export job, there are three steps to follow:
+When you create an export job, there are four steps to follow:
 
 1. [Sending an export request](#step-1---sending-an-export-request).
 2. [Polling](#step-2---polling).
@@ -434,6 +362,27 @@ private async Task<ExportedFile> ExportPowerBIReport(
     }
 }
 ```
+
+## Considerations and limitations
+
+* The `exporttofile` API is only available in for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2).
+* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
+* The report you're exporting must reside on a Premium or Embedded capacity.
+* The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
+* Exported reports can't exceed a file size of 250 MB.
+* When exporting to .png, sensitivity labels aren't supported.
+* The number of exports (single visuals or report pages) that can be included in an exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
+* Dynamic Dataset binding isn't supported.
+* Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
+* The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
+  * Uncertified Power BI custom visuals
+  * R visuals
+  * PowerApps
+  * Python visuals
+  * Power Automate
+  * Paginated report visual
+  * Visio
 
 ## Next steps
 

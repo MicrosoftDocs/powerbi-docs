@@ -35,7 +35,7 @@ URL requests to Power BI contain parameters that are processed by the service. T
 URL requests can contain multiple parameters, listed in any order. Parameters are separated by an ampersand (&). Name and value pairs are separated by an equal sign (=). For example:
 
 ```
-powerbiserviceurl?rp:parametervalueh&rdl:parameter=value  
+powerbiserviceurl?rp:parameter=value&rdl:parameter=value  
 ```
 
 ## Syntax description 

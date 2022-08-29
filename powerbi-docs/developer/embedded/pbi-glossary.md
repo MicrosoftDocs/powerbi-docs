@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 03/20/2022
+ms.date: 08/23/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -59,7 +59,7 @@ ArcGIS is a mapping and analytics platform created by the company ESRI. The name
 
 ### Artifacts
 
-A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+See [item](#item)
 
 ### Auto Insights
 
@@ -123,10 +123,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 
 The content index for an app.
 
-### Content pack
-
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
-
 ### Content view
 
 The view in Windows Explorer that displays the most relevant content for each item based on its file name extension or Kind association.
@@ -173,6 +169,10 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 ### Dataset
 
 A collection of data used to create visualizations and reports.
+
+### DAX expression
+
+**Data Analysis Expressions**. A Microsoft formula language used to [build formulas and expressions](/learn/modules/dax-power-bi-write-formulas/) in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.
 
 ### **Desktop** or **Power BI Desktop**
 
@@ -273,7 +273,7 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Inline frame, iFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other [artifacts](#artifacts) inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An iFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
@@ -286,6 +286,11 @@ A third-party software developer. An ISV can be an individual or an organization
 ### Insights
 
 See [**quick insights**](#quick-insights).
+
+### Item
+
+A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+Formerly known as artifacts.
 
 ## J
 
@@ -355,7 +360,7 @@ The location in the service where messages are delivered to users, such as notic
 
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
 
-### On-premises (on-prem)
+### On-premises
 
 The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.
 
@@ -419,7 +424,7 @@ A free, standalone Windows Desktop application used for authoring paginated repo
 
 ### Power BI Report Server
 
-An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). 
+An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments).
 
 ### Power BI service
 
@@ -480,7 +485,7 @@ The ability to stream data and update dashboards in real time from sources such 
 
 ### Recent
 
-The container in the nav pane that holds all the individual [artifacts](#artifacts) that were accessed last.
+The container in the nav pane that holds all the individual [items](#item) (reports, dashboards, etc.) that were accessed last.
 
 ### Related content
 
@@ -543,12 +548,12 @@ The location for Power BI users to manage their own general settings, such as wh
 
 ### Share, sharing
 
-In Power BI, sharing typically means directly sharing an individual artifact (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
+In Power BI, sharing typically means directly sharing an individual item (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
 On mobile devices, share can refer to native OS share functionality, such as "annotate and share."  
 
 ### Shared with me
 
-The container in the nav pane that holds all the individual [artifacts](#artifacts) that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual [items](#item) that were directly shared by another Power BI user.
 
 ### Single sign-on, SSO
 
@@ -593,6 +598,10 @@ A [tile](/power-bi/create-reports/service-dashboard-tiles) is a snapshot of your
 A time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.  
 
 ## U
+
+### User Principal Name (UPN)
+
+A format used to specify an internet-style name, such as User.Name@example.microsoft.com. The format consists of a login name and domain separated by the @ symbol.
 
 ## V
 

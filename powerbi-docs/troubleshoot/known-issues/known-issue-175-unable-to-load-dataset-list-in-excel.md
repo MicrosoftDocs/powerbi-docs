@@ -5,21 +5,20 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
-ms.date: 04/20/2022
+ms.subservice: pbi-troubleshooting
+ms.date: 08/03/2022
 ms.custom: known-issue-175
 ---
+# Known issue #175 - Unable to load Power BI dataset list in Excel
 
-# Known issue - Unable to load Power BI dataset list in Excel
+You can't retrieve the list of datasets in Excel when you try to get data from Power BI.  When you select **Data** > **Get Data** > **From Power BI** or **Insert** > **PivotTable** > **From Power BI**, the **Power BI Datasets** pane opens, but the datasets list doesn't load.
 
 **APPLIES TO:** ✔️ Excel integration with Power BI
 
-**Status:** Open
+**Status:** Fixed: May 19, 2022
 
 **Problem area:** Consume and View
 
-## Description of problem
-
-You can't retrieve the list of datasets in Excel when you try to get data from Power BI.  When you select **Data** > **Get Data** > **From Power BI** or **Insert** > **PivotTable** > **From Power BI**, the **Power BI Datasets** pane opens, but the datasets list doesn't load.
 
 ## Symptoms
 

@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/11/2022
+ms.date: 08/24/2022
 
 ---
 
@@ -92,7 +92,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 ### [Node JS](#tab/node-js)
 
-* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+* [Node.js](https://nodejs.org/en/download/)
 
 * An integrated development environment (IDE). We recommend using one of the following:
 
@@ -266,7 +266,7 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 >When using a *service principal*, it's recommended to limit its access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
 >
 > * [Create an Azure AD security group](embed-service-principal.md#step-2---create-an-azure-ad-security-group)
->* [Enable the Power BI service admin settings](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
+> * [Enable the Power BI service admin settings](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
 
 ## Step 7 - Enable workspace access
 
@@ -508,6 +508,9 @@ Follow these steps to modify the *embed for your customers* sample application, 
 After configuring and running the *embed for your customers* sample application, you can start developing your own application.
 
 [!INCLUDE[Move to production](../../includes/embed-tutorial-production.md)]
+
+> [!IMPORTANT]
+> If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
 ## Next steps
 

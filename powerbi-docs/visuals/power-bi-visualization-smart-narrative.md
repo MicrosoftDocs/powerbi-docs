@@ -7,8 +7,8 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/11/2021
-ms.custom: video-01UrT-z37sw
+ms.date: 06/29/2022
+ms.custom: video-01UrT-z37sw, sample-2020SU09-Blog-Demo
 LocalizationGroup: Visualizations
 ---
 # Create smart narrative summaries
@@ -22,27 +22,26 @@ The smart narrative visualization helps you quickly summarize visuals and report
 Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. In PowerPoint, instead of pasting a screenshot of your report's key takeaways, you can add narratives that are updated with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
 
 ## Get started 
-Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.  To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
+Watch Justyna show you how to use smart narratives, then try it out yourself using the tutorial, below the video.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/01UrT-z37sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-In the **Visualizations** pane, select the **Smart narrative** icon to automatically generate a summary.
+To follow along in Power BI Desktop, open the [sample online-sales scenario dataset](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix). If you'd like to use the Power BI service, you can follow along using a different dataset of your choosing.
 
-:::image type="content" source="media/power-bi-visualization-smart-narratives/3.png" alt-text="Screenshot showing the Visualizations pane. The Smart narrative icon is selected.":::
+Choose the **Products** tab, then select the **Smart narrative** icon in the **Visualizations** pane to automatically generate a summary.
 
+:::image type="content" source="media/power-bi-visualization-smart-narratives/3-narrative-icon.png" alt-text="Screenshot showing the Visualizations pane. The Smart narrative icon is selected.":::
 
-You see a narrative that's based on all of the visuals on the page. For example, in the sample file, smart narratives can automatically generate a summary of the report's visuals that address revenue, website visits, and sales. Power BI automatically analyzes trends to show that revenue and visits have both grown. It even calculates growth, which in this case is 72 percent.
- 
-:::image type="content" source="media/power-bi-visualization-smart-narratives/4.gif" alt-text="Screenshot showing how to create a smart narrative summary.":::
+You'll see a narrative that's based on all of the visuals on the page. For example, in the sample file, smart narratives can automatically generate a summary of the report's visuals that address revenue, website visits, and sales. Power BI automatically analyzes trends to show that revenue and visits have both grown. It even calculates growth, which in this case is 72 percent.
 
- 
+:::image type="content" source="media/power-bi-visualization-smart-narratives/4-select-icon.gif" alt-text="Animation showing how to create a smart narrative summary.":::
+
 To generate a smart narrative of a visualization, right-click it and then select **Summarize**. For example, in the sample file, try summarizing a scatter chart that shows various transactions. Power BI analyzes the data and shows which city or region has the highest revenue per transaction and the highest number of transactions. The smart narrative also shows the expected range of values for these metrics. You see that most cities produce less than $45 per transaction and have fewer than 10 transactions.
- 
-  
-:::image type="content" source="media/power-bi-visualization-smart-narratives/5.gif" alt-text="Screenshot showing a smart narrative that summarizes a scatter chart.":::
+
+:::image type="content" source="media/power-bi-visualization-smart-narratives/5.gif" alt-text="Animation showing a smart narrative that summarizes a scatter chart.":::
 
  
 ## Edit the summary
@@ -89,7 +88,7 @@ You can also do more advanced filtering. For example, in the sample file, look a
    
 :::image type="content" source="media/power-bi-visualization-smart-narratives/12.gif" alt-text="Screenshot showing how to select a trend line to filter the summary to show only that trend.":::
 
-There is a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates up to four summaries per visual and up to sixteen per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that are not present while summarizing the whole page.
+There's a limit to the number of summaries that can be generated so Smart Narratives picks the most interesting things to summarize about the visual. Smart Narratives generates up to four summaries per visual and up to 16 per page. The summaries that are generated for a page depend on the location and size of visuals and it avoids generating the same kind of summaries for different visuals. Therefore summarizing just the visual can generate more summaries that aren't present while summarizing the whole page.
    
 ## Considerations and limitations
 

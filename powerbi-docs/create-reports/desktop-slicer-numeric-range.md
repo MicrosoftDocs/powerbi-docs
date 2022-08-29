@@ -8,7 +8,7 @@ ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 05/13/2022
 LocalizationGroup: Create reports
 ---
 # Use the numeric range slicer in Power BI
@@ -46,6 +46,9 @@ You can use the numeric range slicer like you would use any other slicer. Just c
 Select the down-arrow in the upper-right corner of the numeric range slicer and a menu appears.
 
 ![Numeric range slicer menu](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
+
+> [!NOTE]  
+> If you don't see the down arrow, open the **Format** pane for the slicer and set the **Slicer header** to **On**.
 
 For the numeric range, you can select from the following three options:
 

@@ -7,7 +7,7 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/24/2022
+ms.date: 08/16/2022
 LocalizationGroup: Share your work
 ---
 # Dataset permissions
@@ -31,19 +31,19 @@ The table below describes the four levels of permission that control access to d
 
 A user's role in a workspace implicitly grants them permissions on the datasets in the workspace, as described in the following table.
 
-|                                   |Admin  |Member  |Contributor  |Viewer |
-|-----------------------------------|-------|--------|-------------|-------|
-|Read                               |✔️     |✔️     |✔️           |✔️    |
-|Build                              |✔️     |✔️     |✔️           |❌    |
-|Reshare                            |✔️     |✔️     |❌           |❌    |
-|Write                              |✔️     |✔️     |✔️           |❌    |
+|                                       |Admin  |Member  |Contributor  |Viewer |
+|---------------------------------------|-------|--------|-------------|-------|
+|**Read**                               |✔️     |✔️     |✔️           |✔️    |
+|**Build**                              |✔️     |✔️     |✔️           |❌    |
+|**Reshare**                            |✔️     |✔️     |❌           |❌    |
+|**Write**                              |✔️     |✔️     |✔️           |❌    |
 
 >[!NOTE]
 >Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicitly using the [manage permissions page](service-datasets-manage-access-permissions.md).
 
 ### Permissions granted explicitly via the manage dataset permissions page
 
-A user with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md). All permissions except **write** permission can be granted explicitly.
+A user with an Admin or Member role in the workspace can explicitly grant permissions to other users using the [manage permissions page](service-datasets-manage-access-permissions.md).
 
 ### Permissions acquired via a link
 
@@ -67,5 +67,6 @@ Row-level security may affect the ability of users with read or build permission
     * Users with write permission on the dataset will be able to read data from the dataset regardless of whether or not they belong to any of its RLS roles.
 
 ## Next steps
+* [Share access to a dataset](./service-datasets-share.md)
 * [Manage dataset permissions](service-datasets-manage-access-permissions.md)
 * [Dataset permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md)

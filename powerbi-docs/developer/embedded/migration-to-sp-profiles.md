@@ -1,24 +1,24 @@
 ---
-title: Migrate multi-tenancy applications to the service principal profiles model
+title: Migrate multi-customer apps to the service principal profiles model
 description: Get better scalability by migrating Power BI embedded analytics multi-tenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/13/2022
+ms.date: 08/17/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
 
-This article describes how to get better scalability by migrating your Power BI embedded analytics multi-customer applications to the service principal profiles model.
+This article describes how you can get better scalability by migrating your Power BI embedded analytics multi-customer apps to the service principal profiles model.
 
-[Service principal profiles](embed-multi-tenancy.md) can make it easier to manage organizational content in Power BI and use your capacities more efficiently.
+[Service principal profiles](embed-multi-tenancy.md) make it easier to manage organizational content in Power BI and use your capacities more efficiently.
 
 > [!NOTE]
 > This article is aimed at organizations that already have an app that supports multiple customers from a single Power BI tenant.
 >
-> Not all applications benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps don't need to migrate:
+> Not all apps benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps shouldn't migrate:
 >
 > * Small apps that maintain one service principal with a small number of objects.
 > * Apps that use one multiple service principal per customer
@@ -27,22 +27,22 @@ This article describes how to get better scalability by migrating your Power BI 
 
 It's important to read about [service principal profiles](embed-multi-tenancy.md) before you start the migration.
 
-You'll also need to do the following steps:
+You also need to do the following steps:
 
 * Set up the service principal by following **the first three steps** of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
 * From a Power BI tenant admin account, [enable creating profiles in the tenant](embed-multi-tenancy.md#prerequisites).
 
  :::image type="content" source="./media/migration-to-sp-profiles/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
-## Migration to service principal profiles
+## Migrate to service principal profiles
 
 Migrating to service principal profiles involves the following steps:
 
 1. [Create profiles](#create-profiles-required), one profile per customer.
 2. [Organize your workspaces](#organize-your-workspaces).
-3. [Change the application code to use the profiles](#change-the-application-codes-to-use-profiles).
+3. [Change the application code to use profiles](#change-the-application-codes-to-use-profiles).
 4. [Test your application with the profiles model](#validate).
-5. [Clean up the redundant permissions](#clean-up-after-migration).
+5. [Clean up redundant permissions](#clean-up-after-migration).
 
 ### Create Profiles (Required)
 
@@ -52,26 +52,26 @@ It's a good idea to save a mapping of each data customer ID with its correspondi
 
 ### Organize your workspaces
 
-Maintaining one workspace per customer is the easiest way to manage your data. If your app already uses this model, you don't need to create new workspaces. However, you still have to provide each profile with access to the corresponding workspace using the [Add Group User API](/rest/api/power-bi/groups/add-group-user).
+The easiest way to manage your data is by maintaining one workspace per customer. If your app already uses this model, you don't need to create new workspaces. However, you still have to provide each profile with *Admin* access to the corresponding workspace using the [Add Group User API](/rest/api/power-bi/groups/add-group-user).
 
 If you don't have one workspace per customer, use the corresponding profile to call [Create Group User API](/rest/api/power-bi/groups/create-group) to create a new workspace for each customer.
 
-### Organize artifacts in workspaces
+### Organize items in workspaces
 
-Now you have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import objects (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
+You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import items (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
 
 * If your app uses a separate dataset for each customer, the dataset design can work as it is.
 
-* If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by migrating it to [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
+* If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by creating [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
 * After overcoming scalability limitations by using profiles and separate data sources, you can get even more data separation by using [RLS](embedded-row-level-security.md) with profiles.
-  * If you rely on Dynamic RLS, the name of profile will be returned in the DAX function `UserName()`.
+  * If you rely on Dynamic RLS, the name of the profile will be returned in the DAX function `UserName()`.
   * If you use static RLS and override roles when generating the embed token, you can continue doing this.
 
-Once the objects are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
+Once the items are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
 
 ## Change the application codes to use profiles
 
-Once you have profiles with access to the relevant workspaces, and a database with mapping that shows you which profile represents which customer, you can make the necessary code changes. We recommend that you keep two code flows side by side and gradually expose the profiles code flow to your customers.
+Once you have profiles with *Admin* access to the relevant workspaces, and a database with mapping that shows you which profile represents which customer, you can make the necessary code changes. We recommend that you keep two code flows side by side and gradually expose the profiles code flow to your customers.
 
 Make the following code changes:
 
@@ -84,23 +84,21 @@ Make the following code changes:
 
   Some apps have management code that automates onboarding a new customer upon registration. Often, the management code uses Power BI REST APIs to create workspaces and import content. Most of this code should remain the same, but you may need to adapt the following details:
 
-  * The API caller should now be a profile. The app should use a specific profile to onboard a customer.
-  * If you decide to reorganize your Power BI content, the code should change to reflect the changes.
+  * Each time you create a new customer tenant, create a new service profile to be the creator and administrator of the workspace for that tenant.
+  * If you decide to reorganize your Power BI content, edit the code to reflect the changes.
 
 * **Embed token code change**
 
   Replace the API caller. Make sure a profile calls the [GenerateToken API](/rest/api/power-bi/embed-token/generate-token) because in the profiles model, only the specific profile has access to the customer's content.
 
-Again, if you change the way you organize your Power BI content, you need to modify the code to reflect the changes.
-
 ## Validate
 
 It's best practice to test your app thoroughly before moving it to the profiles model.
-Reports may load even if there are bugs in the SaaS application code because you didn't delete the older permissions on the workspaces. Make sure the code is using the correct profile with the correct content in the correct place.
+Reports may load even if there are bugs in the SaaS application code because you didn't delete the older permissions on the workspaces.
 
 ## Clean up after migration
 
-Now that you finished the migration and validated the results, you can remove the stuff you don't need anymore.
+Now that you finished the migration and validated the results, remove what you don't need anymore.
 
 * Clean up code: You might want to disable old code paths to ensure that you're only running new code that relies on profiles.
 * Clean up workspaces and permissions in Power BI: If you created new workspaces, you can delete the old workspaces that are no longer in use.

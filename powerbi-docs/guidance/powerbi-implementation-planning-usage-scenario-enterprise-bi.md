@@ -29,7 +29,7 @@ Large enterprise BI implementations often employ a centralized approach. Enterpr
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support enterprise BI. The primary focus is on organization-wide content distribution at scale including the use of Power BI Premium capacity. This scenario also depicts developing [Power BI paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-inline.png" alt-text="Image shows a diagram of enterprise B I, which is organization-wide content distribution at scale. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-inline.png" alt-text="Image shows a diagram of enterprise BI, which is organization-wide content distribution at scale. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-enterprise-bi/usage-scenario-enterprise-bi-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -42,7 +42,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 5.](media/common/icon-05-red-30x30.png) | Report creators develop paginated reports using Power BI Report Builder. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | Power BI Report Builder queries data from one or more data source types. A paginated report is produced to meet requirements for a highly formatted, print-ready report. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | When ready, report creators publish their Power BI Report Builder file (.rdl) to the Power BI service. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | Multiple artifact types can be published to a [Premium workspace](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). This workspace license mode supports paginated reports. |
+| ![Item 8.](media/common/icon-08-red-30x30.png) | Multiple Power BI item types can be published to a [Premium workspace](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). This workspace license mode supports paginated reports. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | In the enterprise BI scenario, use of [Premium capacity](../enterprise/service-premium-what-is.md) (rather than Premium Per User) is depicted. This choice is made to support content delivery to many content viewers who have a free Power BI license. |
 | ![Item 10](media/common/icon-10-red-30x30.png) | Some, or all, reports and dashboards are published as a [Power BI app](../consumer/end-user-apps.md). The purpose of the app is to provide a set of related content for consumers to view in a user-friendly way. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | Power BI app users are assigned read-only permissions. App permissions are managed separately from the workspace. In an enterprise BI scenario, users with any type of Power BI license (free, Power BI Pro, or PPU) can be assigned as a viewer of the app. This feature applies only when the workspace is assigned a license mode of **Premium per capacity** (free users cannot access workspace content when it's assigned a license mode of **Premium per user** or **Embedded**). |
@@ -72,7 +72,7 @@ When the co-management of a BI solution involves multiple people with different 
 
 ### Workspaces
 
-A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md) serves as a logical container in the Power BI service for storing related artifacts, such as datasets and reports. Although this scenario depicts one workspace, multiple workspaces are commonly required to satisfy all workspace planning requirements.
+A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md) serves as a logical container in the Power BI service for storing related Power BI items, such as datasets and reports. Although this scenario depicts one workspace, multiple workspaces are commonly required to satisfy all workspace planning requirements.
 
 The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario describes the use of separate workspaces.
 
@@ -110,7 +110,7 @@ The reuse of existing datasets is important for team collaboration. It helps to 
 - Reduces the risk of inconsistent data and calculations.
 - Supports all slicing, dicing, and pivoting capabilities within the visuals while remaining connected to the dataset that's stored in the Power BI service.
 
-To access an existing dataset, the content creator must have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. It can be granted directly or indirectly when the user is assigned to a [workspace role](../collaborate-share/service-roles-new-workspaces.md) (contributor or higher) or granted when publishing a Power BI app or sharing an artifact. The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario explores the reuse of shared datasets further.
+To access an existing dataset, the content creator must have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. It can be granted directly or indirectly when the user is assigned to a [workspace role](../collaborate-share/service-roles-new-workspaces.md) (contributor or higher) or granted when publishing a Power BI app or sharing a Power BI item. The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario explores the reuse of shared datasets further.
 
 ### Gateway setup
 

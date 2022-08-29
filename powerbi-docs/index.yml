@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/07/2022
+  ms.date: 08/11/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -31,9 +31,9 @@ highlightedContent:
       itemType: tutorial
       url: fundamentals/service-get-started.md
     # Card
-    - title: Embed a Power BI report in an application
-      itemType: tutorial
-      url: developer/embedded/embed-customer-app.md
+    - title: Datamarts (preview)
+      itemType: concept
+      url: transform-model/datamarts/datamarts-overview.md
     # Card
     - title: Export Power BI embedded analytics reports API
       itemType: concept
@@ -148,25 +148,25 @@ conceptualContent:
         - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: connect-data/service-datasets-hub.md
+        - url: connect-data/service-data-hub.md
           itemType: concept
-          text: Discover data on the datasets hub
+          text: Discover data on the data hub
       # footerLink (optional)
       footerLink:
         url: connect-data/index.yml
         text: See more
     # Card
-    - title: Transform and shape data
+    - title: Datamarts (preview)
       links:
-        - url: transform-model/desktop-query-overview.md
+        - url: transform-model/datamarts/datamarts-overview.md
           itemType: overview
-          text: Query Editor overview
-        - url: transform-model/desktop-common-query-tasks.md
+          text: Datamarts overview (preview)
+        - url: transform-model/datamarts/datamarts-understand.md
           itemType: concept
-          text: Common query tasks
-        - url: connect-data/desktop-shape-and-combine-data.md
+          text: Understand datamarts (preview)
+        - url: transform-model/datamarts/datamarts-get-started.md
           itemType: tutorial
-          text: Shape and combine data
+          text: Get started with datamarts (preview)
       # footerLink (optional)
       footerLink:
         url: transform-model/index.yml
@@ -211,7 +211,7 @@ conceptualContent:
           text: Share dashboards and reports
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
-          text: Create the new workspaces
+          text: Create workspaces
         - url: collaborate-share/service-microsoft-teams-app.md
           itemType: how-to-guide
           text: Add the Power BI app to Microsoft Teams
@@ -270,15 +270,15 @@ conceptualContent:
     # Card
     - title: Best practices guidance
       links:
-        - url: guidance/overview.md
-          itemType: overview
-          text: Guidance overview
-        - url: guidance/star-schema.md
+        - url: guidance/powerbi-adoption-roadmap-overview.md
           itemType: concept
-          text: Star schemas
-        - url: guidance/import-modeling-data-reduction.md
+          text: Power BI adoption roadmap
+        - url: guidance/powerbi-implementation-planning-introduction.md
           itemType: concept
-          text: Reduce data model size
+          text: Power BI implementation planning
+        - url: guidance/power-bi-optimization.md
+          itemType: concept
+          text: Optimization guide for Power BI
       # footerLink (optional)
       footerLink:
         url: guidance/index.yml
@@ -342,6 +342,9 @@ additionalContent:
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
           url: /power-automate/
+        - title: Power Pages
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
           url: /power-virtual-agents/

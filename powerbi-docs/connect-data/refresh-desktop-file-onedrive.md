@@ -17,6 +17,9 @@ Importing files from OneDrive or SharePoint Online into the Power BI service is 
 ## Advantages of storing a Power BI Desktop file on OneDrive or SharePoint Online
 When you store a Power BI Desktop file on OneDrive or SharePoint Online, any data you’ve loaded into your file’s model is imported into the dataset. Any reports you’ve created from the file are loaded into **Reports** in the Power BI service. Let's say you make changes to your file on OneDrive or SharePoint Online. These changes can include adding new measures, changing column names, or editing visualizations. Once you save the file, Power BI service syncs with those changes too, usually within about an hour.
 
+>[!NOTE]
+> Protected *.pbix* files stored on SharePoint Online or OneDrive for Business can't be uploaded to the service. See [When things go wrong](#when-things-go-wrong) for details.
+
 You can do a one-time, manual refresh right in Power BI Desktop by selecting **Refresh** on the **Home** ribbon. When you select **Refresh**, you refresh the file’s model with updated data from the original data source. This kind of refresh happens entirely from within the Power BI Desktop application itself. It's different from a manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
 ![Screenshot of the Home ribbon in Power B I Desktop, showing the Refresh selection.](media/refresh-desktop-file-onedrive/pbix-refresh.png)
@@ -42,8 +45,6 @@ Power BI supports **Refresh** and **Schedule refresh** for datasets created from
 
 > [!NOTE]
 > A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
-> 
-> 
 
 ## OneDrive or OneDrive for Business. What’s the difference?
 If you have both a personal OneDrive and OneDrive for Business, you should keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
@@ -65,6 +66,8 @@ For details on how to set up schedule refresh, see [Configure scheduled refresh]
 When things go wrong, it’s usually because Power BI can’t sign into data sources. Things may also go wrong if the dataset tries to connect to an on-premises data source but the gateway is offline. To avoid these issues, make sure Power BI can sign into data sources. Try signing into your data sources in **Data Source Credentials**. Sometimes the password you use to sign into a data source changes or Power BI gets signed out from a data source.
 
 When you save your changes to the Power BI Desktop file on OneDrive and you don't see those changes in Power BI within an hour or so, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select **Keep me signed in**. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you’ll need to import your file again.
+
+Another problem might occur with protected *.pbix* files (*.pbix* files that have sensitivity labels with encryption settings). Protected *.pbix* files stored on SharePoint Online or OneDrive for Business can't be uploaded to the service. Likewise, refresh or synchronization with such files will fail. To upload a protected PBIX file, you can either upload it from a local device, or first remove the file's sensitivity label in Power BI Desktop and then upload it from the online service.
 
 Be sure to leave the **Send refresh failure notification email to me** checked. You’ll want to know right away if a scheduled refresh fails.
 

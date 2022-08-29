@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.custom: contperf-fy22q3
 ms.topic: how-to
-ms.date: 05/06/2022
+ms.date: 06/14/2022
 LocalizationGroup: Gateways
 ---
 
@@ -52,17 +52,41 @@ The steps required for configuring gateway single sign-on are outlined below.
 
 The on-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
 
-### Step 2: Configure the Gateway service account
+### Step 2: Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
+
+To configure SPNs and Kerberos delegation settings, a domain administrator should avoid granting rights to someone that doesn't have domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
+
+### Step 3: Configure the Gateway service account
 
 Option A below is the recommended configuration unless you have Azure AD Connect configured and user accounts are synchronized. In that case option B is recommended.
 
-#### Option A: Run the gateway Windows service as a domain account
+#### Option A: Run the gateway Windows service as a domain account with SPN
 
 In a standard installation, the gateway runs as the machine-local service account, **NT Service\PBIEgwService**.
 
 ![Machine-local service account](media/service-gateway-sso-kerberos/service-account.png)
 
 To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (by using Azure AD DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
+
+##### Configure an SPN for the gateway service account
+
+First, determine whether an SPN was already created for the domain account used as the gateway service account:
+
+1. As a domain administrator, launch the **Active Directory Users and Computers** Microsoft Management Console (MMC) snap-in.
+
+2. In the left pane, right-click the domain name, select **Find**, and then enter the account name of the gateway service account.
+
+3. In the search result, right-click the gateway service account and select **Properties**.
+
+4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can skip to [Configure Kerberos constrained delegation](#step-4-configure-kerberos-constrained-delegation).
+
+5. If there isn't a **Delegation** tab on the **Properties** dialog box, you can manually create an SPN on the account to enable it. Use the [setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows (you need domain admin rights to create the SPN).
+
+   For example, suppose the gateway service account is **Contoso\GatewaySvc** and the gateway service is running on the machine named **MyGatewayMachine**. To set the SPN for the gateway service account, run the following command:
+
+   ```setspn -S gateway/MyGatewayMachine Contoso\GatewaySvc```
+
+   You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
 
 #### Option B: Configure computer for Azure AD Connect
 If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows: 
@@ -73,31 +97,7 @@ To create the SPN for this SID against the Power BI Gateway computer, you would 
 
 `SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
 
-### Step 3: Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
-
-To configure SPNs and Kerberos delegation settings, a domain administrator should avoid granting rights to someone that doesn't have domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
-
-### Step 4: Configure an SPN for the gateway service account
-
-First, determine whether an SPN was already created for the domain account used as the gateway service account:
-
-1. As a domain administrator, launch the **Active Directory Users and Computers** Microsoft Management Console (MMC) snap-in.
-
-2. In the left pane, right-click the domain name, select **Find**, and then enter the account name of the gateway service account.
-
-3. In the search result, right-click the gateway service account and select **Properties**.
-
-4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can skip to [Configure Kerberos constrained delegation](#step-5-configure-kerberos-constrained-delegation).
-
-5. If there isn't a **Delegation** tab on the **Properties** dialog box, you can manually create an SPN on the account to enable it. Use the [setspn tool](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)) that comes with Windows (you need domain admin rights to create the SPN).
-
-   For example, suppose the gateway service account is **Contoso\GatewaySvc** and the gateway service is running on the machine named **MyGatewayMachine**. To set the SPN for the gateway service account, run the following command:
-
-   ```setspn -S gateway/MyGatewayMachine Contoso\GatewaySvc```
-
-   You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
-
-### Step 5: Configure Kerberos constrained delegation
+### Step 4: Configure Kerberos constrained delegation
 
 You can configure delegation settings for either standard Kerberos constrained delegation or resource-based Kerberos constrained delegation. For more information on the differences between the two approaches to delegation, see [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 

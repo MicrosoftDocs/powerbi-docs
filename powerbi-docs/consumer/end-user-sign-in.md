@@ -60,7 +60,7 @@ On Home, you'll see all the content that you have permission to use. At first, t
 
 ![Home landing page](media/end-user-sign-in/power-bi-new-home.png)
 
-If you don't want Power BI to open to Home, you can [set a **Featured** dashboard or report](end-user-featured.md) to open instead. 
+If you don't want Power BI to open to Home, you can [set a **Featured** dashboard or report](/power-bi/consumer/end-user-dashboards) to open instead. 
 
 ## Safely interact with content
 As a ***business user***, others will share content with you and you'll interact with that content to explore the data and make business decisions.  As you filter, slice, subscribe, export, and resize, don't worry -- your work is not impacting the underlying dataset or the original shared content (dashboards and reports). Power BI is a safe space for you to explore and experiment. 

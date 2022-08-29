@@ -23,8 +23,8 @@ To receive notifications in Teams, you’ll need to install the [Power BI app fo
 - Someone shared a report to you and sends a message about it through Power BI
 - Someone requests access to a report you own or manage
 - Someone assigns you a goal
-- Someone @mentions you in a goal 
-- Status of a goal you own changes
+- Someone @mentions you in a metric 
+- Status of a metric you own changes
 
 ## Using Power BI notifications in the Teams activity feed
 
@@ -65,17 +65,17 @@ When you grant someone access to a report, they get a **report sharing** notific
 
 You can customize how to receive these notifications through the **Actions and updates** setting.
 
-### Goals notifications
+### Metrics notifications
 
-The following notifications are supported for Goals.
+The following notifications are supported for Metrics.
 
-#### Goals assignment 
+#### Metrics assignment 
 
 When a user assigns you as the owner of a goal, you'll get a notification in Teams from them.
 
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-assign.png" alt-text="Get Power BI Goals assignment notifications in Microsoft Teams activity feed":::
+:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-assign.png" alt-text="Get Power BI Metrics assignment notifications in Microsoft Teams activity feed":::
 
-When you select the notification, the scorecard opens within the activity feed experience and the Details pane for the goal is shown. 
+When you select the notification, the scorecard opens within the activity feed experience and the Details pane for the metric is shown. 
 
 You can customize how to receive these notifications through the Mentions setting.
 
@@ -83,19 +83,19 @@ You can customize how to receive these notifications through the Mentions settin
 
 When someone @mentions you in a note on a new or existing check-in, you'll get a notification in Teams from them.
 
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-mention.png" alt-text="Get Power BI Goals mention notifications in Microsoft Teams activity feed":::
+:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-mention.png" alt-text="Get Power BI Metrics mention notifications in Microsoft Teams activity feed":::
 
-When you click the notification, the scorecard opens within the activity feed experience and the Details pane for the goal is shown. 
+When you click the notification, the scorecard opens within the activity feed experience and the Details pane for the metric is shown. 
 
 You can customize how to receive these notifications through the Mentions setting.
 
-#### Goal status update 
+#### Metrics status update 
 
-When the status of the goal gets updated by an automated status rule, you'll get a notification in Teams if you're the owner of the goal. You will get a notification from the user who configured the data connection in the case of connected goals or the user who edited the value in the case of manual goals.
+When the status of the metric gets updated by an automated status rule, you'll get a notification in Teams if you're the owner of the metric. You will get a notification from the user who configured the data connection in the case of connected metrics or the user who edited the value in the case of manual metrics.
 
-:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-status-update.png" alt-text="Get Power BI Goals status update notifications in Microsoft Teams activity feed":::
+:::image type="content" source="media/service-teams-notifications/teams-notifications-goal-status-update.png" alt-text="Get Power BI Metrics status update notifications in Microsoft Teams activity feed":::
 
-When you click the notification, the scorecard opens within the activity feed experience and the Details pane for the goal is shown. 
+When you click the notification, the scorecard opens within the activity feed experience and the Details pane for the metric is shown. 
 
 You can customize how to receive these notifications through the Actions and updates setting.
 
@@ -120,7 +120,7 @@ To help users receive notifications in Teams, you can work with the your Teams a
 ## Known issues and limitations
 
 - See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
-- The recipient needs to have access to the scorecards to get the Goals notifications. 
+- The recipient needs to have access to the scorecards to get the Metrics notifications. 
 
 ## Next steps
 

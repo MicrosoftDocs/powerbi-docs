@@ -1,31 +1,46 @@
 ---
-title: Using DirectQuery for datasets and Azure Analysis Services (preview)
-description: Understand using DirectQuery with Power BI datasets and Azure Analysis Services
+title: Using DirectQuery for datasets and Analysis Services (preview)
+description: Understand using DirectQuery with Power BI datasets and Analysis Services
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 05/02/2022
+ms.date: 06/13/2022
 LocalizationGroup: Connect to data
 ---
-# Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)
+# Using DirectQuery for Power BI datasets and Analysis Services (preview)
 
-
-With **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**, you can use DirectQuery to connect to AAS or Power BI datasets and if you want, combine it with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, will find this feature especially useful.
+With DirectQuery for Power BI datasets and Analysis Services, you can use DirectQuery to connect to Power BI datasets, Azure Analysis Services (AAS), and SQL Server 2022 (CTP) Analysis Services - and you can even combine with other DirectQuery and imported data. Report authors who want to combine the data from their enterprise semantic model with other data they own, such as an Excel spreadsheet, or want to personalize or enrich the metadata from their enterprise semantic model, will find this feature especially useful.
 
 ## Enable the preview feature
 
 Since the functionality is currently in preview, you must first enable it. To do so, in Power BI Desktop go to **File > Options and settings > Options**, and in the **Preview features** section, select the **DirectQuery for Power BI datasets and Analysis Services** checkbox to enable this preview feature. You may need to restart Power BI Desktop for the change to take effect.
 
+## Managing this feature
+
+Tenant administrators can enable or disable DirectQuery connections to Power BI datasets in the admin portal. While this is enabled by default, disabling it will effectively stop users from publishing new composite models on Power BI datasets to the service.
+
+:::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-connections-datasets-admin-setting.png" alt-text="Admin setting to enable or disable DirectQuery connections to Power BI datasets.":::
+
+Existing reports that leverage a composite model on a Power BI dataset will continue to work and users can still create the composite model in using Desktop but will not be able to publish to the service. Instead, when you create a DirectQuery connection to the Power BI dataset by selecting **Make changes to this model** you will see the following warning message:
+
+![Warning message informing the user that publication of a composite model that uses a Power BI dataset is not allowed, because DirectQuery connections are not allowed by the admin. The user can still create the model using Desktop.](media/desktop-directquery-datasets-azure-analysis-services/directquery-connection-disabled-warning.png)
+
+This way you can still explore the dataset in your local Power BI Desktop environment and create the composite model. However, you will not be able to publish the report to the Service. When you publish the report and model you will see the following error message and publication will be blocked:
+
+![Error message that blocks publication of a composite model that uses a Power BI dataset because DirectQuery connections are not allowed by the admin.](media/desktop-directquery-datasets-azure-analysis-services/directquery-connection-disabled-publish-error.png)
+
+Note that live connections to Power BI datasets are not influenced by the switch, nor are live or DirectQuery connections to Analysis Services. These will continue to work regardless of if the switch has been turned off. Also, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the switch has been turned off after they were published.
+
 ## Using DirectQuery for live connections
 
-Using DirectQuery for Power BI datasets and Azure Analysis Services requires your report to have a local model. You can start from a live connection and add or upgrade to a local model, or start with a DirectQuery connection or imported data, which automatically creates a local model in your report.
+Using DirectQuery for Power BI datasets and Analysis Services requires your report to have a local model. You can start from a live connection and add or upgrade to a local model, or start with a DirectQuery connection or imported data, which automatically creates a local model in your report.
 
-To see which connections are being used in your model, check the status bar in the bottom right corner of Power BI Desktop. If you're only connected to an Azure Analysis Services source, you see a message like the following image:
+To see which connections are being used in your model, check the status bar in the bottom right corner of Power BI Desktop. If you're only connected to an Analysis Services source, you see a message like the following image:
 
-![Azure Analysis Services only connection](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-01.png)
+![Analysis Services only connection](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-01.png)
 
 If you're connected to a Power BI dataset, you see a message telling you which Power BI dataset you're connected to:
 
@@ -35,19 +50,19 @@ If you want to customize the metadata of fields in your live connected dataset, 
 
 ![Make changes to this model button](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-02.png)
 
-Selecting the button displays a dialog confirming addition of a local model. Select **Add a local model** to enable creating new columns or modifying the metadata, for fields from Power BI datasets or Azure Analysis Services. The following image shows the dialog that's displayed. 
+Selecting the button displays a dialog confirming addition of a local model. Select **Add a local model** to enable creating new columns or modifying the metadata, for fields from Power BI datasets or Analysis Services. The following image shows the dialog that's displayed. 
 
 ![Create local model dialog](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-03.png)
 
-When you're connected live to an Analysis Services source, there's no local model. To use DirectQuery for live connected sources, such as Power BI datasets and Azure Analysis Services, you must add a local model to your report. When you publish a report with a local model to the Power BI service, a dataset for that local model is published a well.
+When you're connected live to an Analysis Services source, there's no local model. To use DirectQuery for live connected sources, such as Power BI datasets and Analysis Services, you must add a local model to your report. When you publish a report with a local model to the Power BI service, a dataset for that local model is published a well.
 
 ## Chaining
 
 Datasets, and the datasets and models on which they're based, form a *chain*. This process, called **chaining**, lets you publish a report and dataset based on other Power BI datasets, a feature that previously wasn't possible.
 
-For example, imagine your colleague publishes a Power BI dataset called *Sales and Budget* that's based on an Azure Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
+For example, imagine your colleague publishes a Power BI dataset called *Sales and Budget* that's based on an Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
 
-When you publish a new report (and dataset) called *Sales and Budget Europe* that's based on the *Sales and Budget* Power BI dataset published by your colleague, making some further modifications or extensions as you do so, you're effectively adding a report and dataset to a chain of length three, which started with the *Sales* Azure Analysis Services model, and ends with your *Sales and Budget Europe* Power BI dataset. The following image visualizes this chaining process.
+When you publish a new report (and dataset) called *Sales and Budget Europe* that's based on the *Sales and Budget* Power BI dataset published by your colleague, making some further modifications or extensions as you do so, you're effectively adding a report and dataset to a chain of length three, which started with the *Sales* Analysis Services model, and ends with your *Sales and Budget Europe* Power BI dataset. The following image visualizes this chaining process.
 
 ![The process of chaining datasets](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-04.png)
 
@@ -55,7 +70,7 @@ The chain in the previous image is of length three, which is the maximum length 
 
 ## Security warning
 
-Using the **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)** feature will present you with a security warning dialog, shown in the following image.
+Using the **DirectQuery for Power BI datasets and Analysis Services** feature will present you with a security warning dialog, shown in the following image.
 
 ![Security warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-05.png)
 
@@ -63,7 +78,7 @@ Data may be pushed from one data source to another, which is the same security w
 
 ## Features and scenarios to try
 
-The following list provides suggestions on how you can explore **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)** for yourself:
+The following list provides suggestions on how you can explore **DirectQuery for Power BI datasets and Analysis Services** for yourself:
 
 - Connecting to data from various sources: Import (such as files), Power BI datasets, Azure Analysis Services
 - Creating relationships between different data sources
@@ -71,7 +86,7 @@ The following list provides suggestions on how you can explore **DirectQuery for
 - Creating new columns for tables from Power BI datasets of Azure Analysis Services
 - Creating visuals that use columns from different data sources
 
-Beginning with the April 2021 version of Power BI Desktop, you can also connect to a perspective when making a DirectQuery connection to an Azure Analysis Services model, if a perspective is available. 
+Beginning with the April 2021 version of Power BI Desktop, you can also connect to a perspective when making a DirectQuery connection to an Analysis Services model, if a perspective is available.
 
 Beginning with the October 2021 version of Power BI Desktop, you have more control over your connections:
 * You can remove a table from  your model using the field list, to keep models as concise and lean as possible (if you connect to a perspective, you can't remove tables from the model)
@@ -81,22 +96,26 @@ Beginning with the October 2021 version of Power BI Desktop, you have more contr
 
 ## Considerations and limitations
 
-There are a few **considerations** to keep in mind when using **DirectQuery for Power BI datasets and Azure Analysis Services (AAS)**:
+There are a few **considerations** to keep in mind when using **DirectQuery for Power BI datasets and Analysis Services**:
 
 - If you refresh your data sources, and there are errors with conflicting field or table names, Power BI resolves the errors for you.
 
-- To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Azure Analysis Services sources, the following error will appear, even though the credentials have been set:
+- You cannot edit, delete or create new relationships in the same Power BI dataset or Analysis Services source. If you have edit access to these sources, you can make the changes directly in the data source instead.
+
+- To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
-- As this is confusing and incorrect, this is something we'll take care of soon.
+    As this is confusing and incorrect, this is something we'll take care of soon.
+
+- Build permissions are required to view reports built using this feature when one or more datasets in the chain are in Pro workspaces. If the creator a report has left the company or their Build permissions has been revoked since they created the report, Build permissions will also be required on all datasets in the chain. 
 
 - To be able to make a DirectQuery connection to a Power BI dataset, your tenant needs to have ["Allow XMLA Endpoints and Analyze in Excel with on-premises datasets"](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) enabled.
+
+- Connections to a SQL Server 2022 and later Analysis Services server on-premises or IAAS require an [On-premises data gateway](/power-bi/connect-data/service-gateway-onprem) (Standard mode).
 
 - All connections to remote Power BI Datasets models are made using single sign-on. Authenticating with [a service principal](../developer/embedded/embed-service-principal.md) isn't currently supported.
 
 - For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
-
-- If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it isn't sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
 - RLS rules will be applied on the source on which they're defined, but won't be applied to any other datasets in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table from another source group nor can you define RLS on a local table that has a relationship to another source group.
 
@@ -108,7 +127,7 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
     For more information on using date columns versus date hierarchies, visit [this article](../transform-model/desktop-auto-date-time.md).
 
-- You may see unuseful error messages when using AI features with a model that has a DirectQuery connection to Azure Analysis Services. 
+- You may see unuseful error messages when using AI features with a model that has a DirectQuery connection to Analysis Services. 
 
 - Using ALLSELECTED with a DirectQuery source results in incomplete results.
 
@@ -139,12 +158,11 @@ There are also a few **limitations** you need to keep in mind:
   - [Sample Datasets](../create-reports/sample-datasets.md#eight-original-samples)
   - [Excel Online Refresh](refresh-excel-file-onedrive.md)
   - Import Excel / CSV files
-  - [Content Packs (deprecated)](../collaborate-share/service-upgrade-workspaces.md#content-packs-during-upgrade)
-  - [Usage Metrics (classic workspaces)](../collaborate-share/service-usage-metrics.md) 
+  - [Usage metrics (My workspace)](../collaborate-share/service-usage-metrics.md) 
 
 - Using DirectQuery on datasets from “My workspace” isn't currently supported. 
 
-- Using Power BI Embedded with datasets that include a DirectQuery connection to a Power BI datasets or Azure Analysis Services model isn't currently supported.
+- Using Power BI Embedded with datasets that include a DirectQuery connection to an Azure Analysis Services model isn't currently supported.
 
 - Publishing a report to web using the [publish to web feature](../collaborate-share/service-publish-to-web.md) isn't supported.
 
@@ -158,33 +176,33 @@ There are also a few **limitations** you need to keep in mind:
 
 - Take over of a dataset that is using the **DirectQuery to other datasets** feature isn't currently supported.
 
-- [As with any DirectQuery data source](desktop-directquery-about.md#reporting-limitations), hierarchies defined in an Azure Analysis Services model or Power BI dataset won't be shown when connecting to the model or dataset in DirectQuery mode using Excel. 
+- [As with any DirectQuery data source](desktop-directquery-about.md#reporting-limitations), hierarchies defined in an Analysis Services model or Power BI dataset won't be shown when connecting to the model or dataset in DirectQuery mode using Excel. 
 
 ### Tenant considerations
 
-Any model with a DirectQuery connection to a Power BI dataset or to Azure Analysis Services must be published in the same tenant, which is especially important when accessing a Power BI dataset or an Azure Analysis Services model using B2B guest identities, as depicted in the following diagram. See [Guest users who can edit and manage content](../enterprise/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content) to find the tenant URL for publishing.  
+Any model with a DirectQuery connection to a Power BI dataset or to Analysis Services must be published in the same tenant, which is especially important when accessing a Power BI dataset or an Analysis Services model using B2B guest identities, as depicted in the following diagram. See [Guest users who can edit and manage content](../enterprise/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content) to find the tenant URL for publishing.  
 
 Consider the following diagram. The numbered steps in the diagram are described in paragraphs that follow.
 
 :::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-08.png" alt-text="Diagram of not connecting between tenants":::
 
-In the diagram, Ash works with Contoso and is accessing data provided by Fabrikam. Using Power BI Desktop, Ash creates a DirectQuery connection to an Azure Analysis Services model that is hosted in Fabrikam’s tenant. 
+In the diagram, Ash works with Contoso and is accessing data provided by Fabrikam. Using Power BI Desktop, Ash creates a DirectQuery connection to an Analysis Services model that is hosted in Fabrikam’s tenant. 
 
 To authenticate, Ash uses a B2B Guest user identity (step 1 in the diagram). 
 
-If the report is published to Contoso’s Power BI service (step 2), the dataset published in the Contoso tenant *cannot* successfully authenticate against Fabrikam’s Azure Analysis Services model (step 3). As a result, the report won't work. 
+If the report is published to Contoso’s Power BI service (step 2), the dataset published in the Contoso tenant *cannot* successfully authenticate against Fabrikam’s Analysis Services model (step 3). As a result, the report won't work. 
 
-In this scenario, since the Azure Analysis Services model used is hosted in Fabrikam’s tenant, the report also must be published in Fabrikam's tenant. After successful publication in Fabrikam’s tenant (step 4) the dataset can successfully access the Azure Analysis Services model (step 5) and the report will work properly.
+In this scenario, since the Analysis Services model used is hosted in Fabrikam’s tenant, the report also must be published in Fabrikam's tenant. After successful publication in Fabrikam’s tenant (step 4) the dataset can successfully access the Analysis Services model (step 5) and the report will work properly.
 
 ### Composite models with DirectQuery connection to source models protected by object-level security
 
-When a composite model gets data from a Power BI dataset or Azure Analysis Services via DirectQuery, and that source model is secured by object-level security, consumers of the composite model may notice unexpected results. The following section explains how these results might come about.
+When a composite model gets data from a Power BI dataset or Analysis Services via DirectQuery, and that source model is secured by object-level security, consumers of the composite model may notice unexpected results. The following section explains how these results might come about.
 
 Object-level security (OLS) enables model authors to hide objects that make up the model schema (that is, tables, columns, metadata, etc.) from model consumers (for example, a report builder or a composite model author). In configuring OLS for an object, the model author creates a role, and then removes access to the object for users who are assigned to that role. From the standpoint of those users, the hidden object simply doesn't exist.
 
 OLS is defined for and applied on the source model. It cannot be defined for a composite model built on the source model.
 
-When a composite model is built on top of an OLS-protected Power BI dataset or Azure Analysis Services model via DirectQuery connection, the model schema from the source model is actually copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data itself isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
+When a composite model is built on top of an OLS-protected Power BI dataset or Analysis Services model via DirectQuery connection, the model schema from the source model is actually copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data itself isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
 
 Since the composite model isn't secured by OLS rules, the objects that consumers of the composite model see are those that the composite model author could see in the source model rather than what they themselves might have access to. This might result in the following situations
 
@@ -197,7 +215,7 @@ With this background in mind, consider the following scenario.
 
 ![Diagram showing what happens when a composite model connects to a source model protected by object-level security via Direct Query.](media/desktop-directquery-datasets-azure-analysis-services/directquery-ols-composite-model-interaction.png)
 
-1. Admin_user has published an enterprise semantic model using a Power BI dataset or an Azure Analysis Services model that has a Customer table and a Territory table. Admin_user publishes the dataset to the Power BI service and sets OLS rules that have the following effect:
+1. Admin_user has published an enterprise semantic model using a Power BI dataset or an Analysis Services model that has a Customer table and a Territory table. Admin_user publishes the dataset to the Power BI service and sets OLS rules that have the following effect:
     * Finance users can't see the Customer table
     * Marketing users can't see the Territory table
 
@@ -218,15 +236,14 @@ To sum up:
 * A consumer of a composite model will never see actual data they aren't supposed to see, because relevant OLS rules on the source model will block them when DirectQuery tries to retrieve the data using their credentials.
 * If the source model updates its OLS rules, those changes will only affect the composite model when it's refreshed.  
 
-### Loading a subset of tables from a Power BI dataset or Azure Analysis Services model
-When connecting to a Power BI dataset or Azure Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. When you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically.
+### Loading a subset of tables from a Power BI dataset or Analysis Services model
+When connecting to a Power BI dataset or Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the dataset or model after you make the connection to your model. When you connect to a perspective your model will contain all tables in the dataset or model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically.
 This dialog won't be shown for live connections.
 
 >[!NOTE]
->This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Azure Analysis Services model to an existing model. You can also open this dialog by changing the DirectQuery connection to the Power BI dataset or Azure Analysis Services model in the Data source settings after you created it.
+>This dialog will only show if you add a DirectQuery connection to a Power BI dataset or Analysis Services model to an existing model. You can also open this dialog by changing the DirectQuery connection to the Power BI dataset or Analysis Services model in the Data source settings after you created it.
 
-
-:::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png" alt-text="Dialog that allows specifying what tables to load from a Power BI dataset or Azure Analysis Services model.":::
+:::image type="content" source="media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-subset.png" alt-text="Dialog that allows specifying what tables to load from a Power BI dataset or Analysis Services model.":::
 
 ## Next steps
 

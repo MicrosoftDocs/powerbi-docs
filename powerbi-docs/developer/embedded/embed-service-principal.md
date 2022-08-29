@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 03/02/2022
+ms.date: 05/29/2022
 ---
 
 # Embed Power BI content with service principal and an application secret
@@ -156,21 +156,30 @@ Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
 
 ## Step 3 - Enable the Power BI service admin settings
 
-For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI [admin portal](../../admin/service-admin-portal.md).
+For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable the following setting:
 
-Go to **Tenant settings** in the **Admin portal**, and add the security group you created in Azure AD to the specific security group section in the **Developer settings**.
+* Embed content in apps
+* Allow service principals to use Power BI APIs.
 
->[!IMPORTANT]
->Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
->
->To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
+Go to **Tenant settings** in the [**Admin portal**](../../admin/service-admin-portal.md), and scroll down to **Developer settings**.
 
->[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-service-principal/admin-portal.png" alt-text="Screenshot showing the developer settings in the admin options in Power B I service.":::
+* Enable to the **Embed content in apps** switch either for the entire organization or for the specific security group you created in Azure AD.
+
+  :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot showing the developer settings in the admin options embedding content in apps.":::
+
+* Enable the **Allow service principals to use Power BI APIs** switch either for the entire organization or for the specific security group you created in Azure AD.
+
+  >[!div class="mx-imgBorder"]
+  >:::image type="content" source="media/embed-service-principal/admin-portal-allow-apis.png" alt-text="Screenshot showing the developer settings in the admin options in Power B I service.":::
+
+  >[!IMPORTANT]
+  >Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
+  >
+  >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
 ## Step 4 - Add the service principal to your workspace
 
-To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity, or the security group that includes your service principal, as a member or admin to your workspace.
+To enable your Azure AD app to access items such as reports, dashboards and datasets in the Power BI service, add the service principal entity, or the security group that includes your service principal, as a member or admin to your workspace.
 
 >[!NOTE]
 >This section provides UI instructions. You can also add a service principal or a security group to a workspace, using the [Groups - add group user API](/rest/api/power-bi/groups/addgroupuser).
@@ -231,7 +240,6 @@ Once your content is embedded, you're ready to [move to production](move-to-prod
 
 ## Considerations and limitations
 
-* Service principal only works with [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
 * A capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.

@@ -33,7 +33,7 @@ The output from Stage 1 includes detailed requirements that have been prioritize
 
 ## Compile requirements
 
-The inventory of existing BI artifacts, compiled in the [pre-migration steps](powerbi-migration-pre-migration-steps.md), become the input for the requirements of the new solution to be created in Power BI. Collecting requirements is about understanding the current state, as well as what items users would like changed or refactored when reports are redesigned in Power BI. Detailed requirements will useful for solution deployment planning in [Stage 2](powerbi-migration-planning.md), during creation of a proof of concept in [Stage 3](powerbi-migration-proof-of-concept.md), and when creating the production-ready solution in [Stage 4](powerbi-migration-create-validate-content.md).
+The inventory of existing BI items, compiled in the [pre-migration steps](powerbi-migration-pre-migration-steps.md), become the input for the requirements of the new solution to be created in Power BI. Collecting requirements is about understanding the current state, as well as what items users would like changed or refactored when reports are redesigned in Power BI. Detailed requirements will useful for solution deployment planning in [Stage 2](powerbi-migration-planning.md), during creation of a proof of concept in [Stage 3](powerbi-migration-proof-of-concept.md), and when creating the production-ready solution in [Stage 4](powerbi-migration-create-validate-content.md).
 
 ### Gather report requirements
 
@@ -86,7 +86,7 @@ In most situations, some modifications and improvements occur. It's rare that a 
 
 ## Prioritize and assess complexity
 
-At this point, the initial inventory is available and may include specific requirements. When prioritizing the initial set of BI artifacts ready for migration, reports and data should be considered collectively as well as independently of each other.
+At this point, the initial inventory is available and may include specific requirements. When prioritizing the initial set of BI items ready for migration, reports and data should be considered collectively as well as independently of each other.
 
 Identify high priority reports, which may include reports that:
 

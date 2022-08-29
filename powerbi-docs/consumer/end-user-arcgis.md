@@ -80,7 +80,7 @@ The map tools expand to show the available options. When selected, each tool ope
 
 ![Selection tool for reference layers.](media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png) Select by reference layer is visible only if there is a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information, see [reference layers](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
 
-![Selection tool for drive time selection.](media/end-user-arcgis/power-bi-arcgis-drive-time.png) Drive time select is visible only if there is a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [buffer or drive time areas](https://doc.arcgis.com/en/power-bi/design/find-nearby-locations.htm).
+![Selection tool for drive time selection.](media/end-user-arcgis/power-bi-arcgis-drive-time.png) Drive time select is visible only if there is a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [buffer or drive time areas](https://pro.arcgis.com/en/pro-app/latest/tool-reference/business-analyst/find-nearby-locations.htm).
 
 ![Selection tool for erasing a selection.](media/end-user-arcgis/power-bi-arcgis-clear-selection.png) The eraser tool clears all selections.  It is only active after selections have been made on the map. 
 

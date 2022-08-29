@@ -11,8 +11,6 @@
       href: service-admin-role.md      
     - name: Can't sign in?
       href: power-bi-cannot-sign-in.md
-    - name: Forgot your password for Power BI?
-      href: service-admin-forgot-your-password.md
     - name: How to use the same account login for Power BI and Azure
       href: service-admin-how-to-use-the-same-account-as-azure.md 
     - name: Frequently asked questions (FAQ)
@@ -41,7 +39,10 @@
     - name: Find users that have signed in
       href: service-admin-access-usage.md
     - name: Track user activities
-      href: service-admin-auditing.md  
+      href: service-admin-auditing.md
+    - name: Set up Data in space for the mobile apps (preview)
+      href: ../consumer/mobile/mobile-apps-data-in-space-set-up.md        
+
   - name: Monitor and manage Power BI
     expanded: false
     items:
@@ -98,7 +99,7 @@
       href: service-admin-portal-discovery.md
     - name: Export and sharing settings
       href: service-admin-portal-export-sharing.md
-    - name: Goals settings (preview)
+    - name: Metrics settings
       href: service-admin-portal-goals-settings.md
     - name: Help and support settings
       href: service-admin-portal-help-support.md

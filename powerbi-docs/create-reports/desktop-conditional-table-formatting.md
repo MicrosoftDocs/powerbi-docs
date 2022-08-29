@@ -1,23 +1,23 @@
 ---
-title: Conditional table formatting in Power BI Desktop
-description: Apply customized formatting to tables
+title: Apply conditional table formatting in Power BI
+description: Apply customized formatting to tables and matrixes in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/15/2021
-ms.custom: contperf-fy21q4
+ms.date: 06/13/2022
+ms.custom: contperf-fy21q4, sample-bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx
 LocalizationGroup: Create reports
 ---
-# Use conditional formatting in tables 
+# Apply conditional formatting in tables and matrixes
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any text or data field, as long as you base the formatting on a field that has numeric, color name or hex code, or web URL values. 
+With conditional formatting for tables and matrixes in Power BI, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any text or data field, as long as you base the formatting on a field that has numeric, color name or hex code, or web URL values. 
 
-To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop. In the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
+To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop or the Power BI service. In the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
 
 ![Conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 

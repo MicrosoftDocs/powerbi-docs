@@ -299,17 +299,17 @@ As you explore your goals and objectives and pursue more tactical data governanc
 
 The following list includes items that you may choose to prioritize when introducing governance for Power BI:
 
-- Recommendations and requirements for [content ownership and ownership](powerbi-adoption-roadmap-content-ownership-and-management.md).
+- Recommendations and requirements for [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - Recommendations and requirements for [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md).
 - Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../enterprise/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors.
 - Allowed activities with regulated data and highly sensitive data.
 - Allowed use of unverified data sources that are unknown to IT and/or recommendations for manually maintained data sources.
 - How to manage [workspaces](../collaborate-share/service-create-the-new-workspaces.md) effectively.
 - Who is allowed to be a [Power BI administrator](powerbi-adoption-roadmap-system-oversight.md).
-- [Security](../enterprise/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for data artifacts assigned to each [sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md).
+- [Security](../enterprise/service-admin-power-bi-security.md), privacy, and data protection requirements, and allowed actions for datasets assigned to each [sensitivity label](../enterprise/service-security-apply-data-sensitivity-labels.md).
 - Allowed or encouraged use of [personal gateways](../connect-data/service-gateway-personal-mode.md).
 - Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses.
-- Requirements for who may [certify](../collaborate-share/service-endorse-content.md) data artifacts, as well as requirements which must be met.
+- Requirements for who may [certify](../collaborate-share/service-endorse-content.md) datasets, as well as requirements which must be met.
 - Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](../create-reports/deployment-pipelines-overview.md).
 - Additional requirements applicable to critical content, such as data quality verifications and documentation.
 - Requirements to use standardized master data and common data to ensure consistency.
@@ -342,9 +342,9 @@ Here are three common data policy examples you may choose to prioritize:
 
 | **Policy** | **Description** |
 | --- | --- |
-| Data ownership policy | Specifies when an owner is required for a data artifact, and what the data owner's responsibilities include, such as: supporting colleagues who view the content, maintaining appropriate confidentiality and security, and ensuring compliance. |
-| Data certification (endorsement) policy | Specifies the process that is followed to certify a data artifact. Requirements may include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
-| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should align with data protection policies that are discussed in the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article. It should specify activities such as: allowed sharing with external users (with or without NDA), encryption requirements, and ability to download the data artifact. Sometimes, it is also called a *data handling policy* or a *data usage policy*. |
+| Data ownership policy | Specifies when an owner is required for a dataset, and what the data owner's responsibilities include, such as: supporting colleagues who view the content, maintaining appropriate confidentiality and security, and ensuring compliance. |
+| Data certification (endorsement) policy | Specifies the process that is followed to certify a dataset. Requirements may include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
+| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should align with data protection policies that are discussed in the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article. It should specify activities such as: allowed sharing with external users (with or without NDA), encryption requirements, and ability to download the dataset. Sometimes, it is also called a *data handling policy* or a *data usage policy*. |
 
 > [!CAUTION]
 > Having a lot of documentation can lead to a false sense that everything is under control, which can lead to complacency. The level of engagement that the [COE](powerbi-adoption-roadmap-center-of-excellence.md) has with the user community is one way to ensure that governance guidelines and policies are followed. Auditing and monitoring activities are also important. For information about these activities, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.

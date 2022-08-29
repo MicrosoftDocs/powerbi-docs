@@ -23,7 +23,7 @@ Currently supported data sources:
 To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
 ## Requirements
-* The data in the data source must be labeled with Microsoft Information Protection labels.
+* The data in the data source must be labeled with sensitivity labels from Microsoft Purview Information Protection.
 
     For Azure Synapse Analytics and Azure SQL Database, this is accomplished using a two-step Purview flow:
     1. [Automatically apply sensitivity labels to your data](/azure/purview/create-sensitivity-label).
@@ -45,7 +45,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 > No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not been published for the dataset owner.
 
 ## Considerations and limitations
-* Inheritance from data sources is not supported for datasets located in classic workspaces. My Workspace and V2 workspaces are supported.
+
 * Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
 * Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity is not supported.
 * Inheritance from data sources is not supported in connections via gateways or Azure Virtual Network (VNet). This means that inheritance from an Excel file located on a local machine won't work, because this requires a gateway. 

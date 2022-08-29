@@ -24,14 +24,14 @@ This article documents the information in the Power BI auditing schema that is s
 |Field|Type|Must appear in the schema|Description|
 |---------|---------|---------|---------|
 |SensitivityLabelId|Edm.Guid||The guid of the new label. This field is only present when the activity key is SensitivityLabelApplied or SensitivityLabelChanged.|
-|OldSensitivityLabelId|Edm.Guid||The guid of the label on the artifact before the action. This field is only present when the activity key is SensitivityLabelChanged or SensitivityLabelRemoved.|
+|OldSensitivityLabelId|Edm.Guid||The guid of the label on the item before the action. This field is only present when the activity key is SensitivityLabelChanged or SensitivityLabelRemoved.|
 |[ActionSource](#actionsource)|Edm.Enum|Yes|This field indicates whether the label change is the result of an automatic or manual process.|
 |[ActionSourceDetail](#actionsourcedetail)|Edm.Enum|Yes|This field gives more detail about what caused the action to take place.|	 
 |[LabelEventType](#labeleventtype)|Edm.Enum|Yes|This field indicates whether the action resulted in a more restrictive label, less restrictive label, or a label of the same degree of sensitivity.|
 
 ## ArtifactType
 
-This field indicates the type of artifact the label change took place on.
+This field indicates the type of item the label change took place on.
 
 |Value |Field  |
 |--|---------|
@@ -66,11 +66,12 @@ This field indicates whether the action resulted in a more restrictive label, le
 
 |Value |Meaning  |Description  |
 |--|---------|---------|
-|1|LabelUpgraded|A more restrictive label was applied to the artifact.| 
-|2|LabelDowngraded|A less restrictive label was applied to the artifact.|
-|3|LabelRemoved|The label was removed from the artifact.|
+|1|LabelUpgraded|A more restrictive label was applied to the item.|
+|2|LabelDowngraded|A less restrictive label was applied to the item.|
+|3|LabelRemoved|The label was removed from the item.|
 |4|LabelChangedSameOrder|The label was replaced by another label with the same level of sensitivity.|
 
 ## Next steps
+
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Track user activities in Power BI](../admin/service-admin-auditing.md)

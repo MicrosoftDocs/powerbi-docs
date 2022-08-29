@@ -3,7 +3,7 @@ title: Understand the permission tokens needed for embedding a Power BI applicat
 description: Learn which tokens your Power BI application needs to authenticate against Azure and Power BI service.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: amshuste
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual

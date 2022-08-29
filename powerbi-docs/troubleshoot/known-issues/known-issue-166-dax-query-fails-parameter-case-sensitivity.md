@@ -5,21 +5,20 @@ author: mihart
 ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
-ms.date: 04/06/2022
+ms.subservice: pbi-troubleshooting
+ms.date: 04/23/2022
 ms.custom: known-issue-166
 ---
+# Known issue #166 - DAX query fails due to parameter case sensitivity
 
-# Known issue - DAX query fails due to parameter case sensitivity
+Your Power BI Report Builder report's dataset may fail if it uses DAX to connect to Analysis Services and a query parameter does not use the same case sensitivity as the report parameter.
 
 **APPLIES TO:** ✔️ Power BI Report Builder
 
-**Status:** Open
+**Status:** Fixed: May 19, 2022
 
 **Problem area:** Create and Author Data
 
-## Description of problem
-
-Your Power BI Report Builder report's dataset may fail if it uses DAX to connect to Analysis Services and a query parameter does not use the same case sensitivity as the report parameter.
 
 ## Symptoms
 

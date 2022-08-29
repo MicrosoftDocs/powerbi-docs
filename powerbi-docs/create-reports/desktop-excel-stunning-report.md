@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/02/2021
+ms.date: 06/15/2022
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -155,7 +155,7 @@ Let’s build the final report, one visual at a time.
 ### Visual 1: Add a title 
 
 1. On the **Insert** ribbon, select **Text Box**. Type “Executive Summary – Finance Report”. 
-1. Select the text you typed. Set the font size to 20 and bold. 
+1. Select the text you typed. Set the **Font Size** to 20 and **Bold**. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Screenshot of formatting title.":::
 
@@ -244,7 +244,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer.":::
 
-    This is the slicer we'll use in the finished report.
+    We'll use this slicer in the finished report.
 
 Now if your manager asks to see just 2013 data, you can use either slicer to select years, or specific months of each year.
 
