@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/01/2021
+ms.date: 08/29/2022
 LocalizationGroup: Share your work
 ---
 # Copy reports from other workspaces
@@ -43,7 +43,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Dataset actions](media/service-datasets-copy-reports/power-bi-dataset-actions.png)
 
-    The icon for this dataset is different from the icon for datasets in the workspace. That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace.
+    The icon for this dataset is different from the icon for datasets in the workspace. This makes it easy to see which reports and dashboards use datasets that are outside the workspace.
 
     See [Your copy of the report](#your-copy-of-the-report) in this article for more about the report and related dataset.
 
@@ -54,13 +54,13 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Save a copy of the report](media/service-datasets-copy-reports/power-bi-save-copy.png)
 
-    You only see the **Save a copy** option if you have [Build permission](service-datasets-build-permissions.md).
+    You only see the **Save a copy** option [Build permission] if app permissions grant [Build permission](service-datasets-build-permissions.md) for the underlying dataset, and allows users to make copies of the report.
 
-3. Give your report a name > **Save**.
+3. Give your report a name, select a destination workspace, and then select **Save**.
 
     ![Name your copy of the report](media/service-datasets-copy-reports/power-bi-save-report-from-app.png)
 
-    Your copy is automatically saved to your My Workspace.
+    Your copy is automatically saved to the workspace you selected.
 
 4. Select **Go to report** to open your copy.
 
@@ -84,20 +84,14 @@ When you have a report in one workspace based on a dataset in another workspace,
  
     ![Related content dialog box](media/service-datasets-copy-reports/power-bi-dataset-related.png)
 
-## Delete a report and its shared dataset
+## Delete a report copy
 
-You may decide you no longer want the report and its associated shared dataset in workspace.
-
-1. Delete the report. In the list of reports in the workspace, in the **More options** menu, select **Delete**.
+If you want to delete the copy of the report, in the list of reports in the workspace, hover over the report you want to delete, select **More options**, and choose **Delete**.
 
     ![Delete report icon](media/service-datasets-copy-reports/power-bi-datasets-delete-report.png)
 
-2. The shared datasets don't have **Delete** options. Refresh the page, or go to a different page and return. The dataset will be gone. If not, the dataset may be related to another table in your workspace.
-
-    > [!NOTE]
-    > Deleting the shared dataset in this workspace doesn't delete the dataset. It just deletes the reference to it.
-
-
+> [!NOTE]
+> Deleting a report doesn't delete the dataset it is built on.
 ## Next steps
 
 - [Use datasets across workspaces](service-datasets-across-workspaces.md)
