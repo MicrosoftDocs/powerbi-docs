@@ -39,11 +39,11 @@ When you find a report you like in a workspace or an app, you can make a copy of
   
 4. Select **Save**.
 
-    Power BI automatically creates a copy of the report in the workspace you selected. If the workspace you selected isn't the workspace that the referenced dataset is in, you won't see the dataset.  To see the shared dataset, on the report select **More options** > **View lineage**. This item shows the lineage:
+    Power BI automatically creates a copy of the report in the workspace you selected. In the list view of that workspace, you won't see the referenced dataset if it is located in another workspace. To see the shared dataset, on the report copy in list view select **More options** > **View lineage**. 
 
     ![Dataset actions](media/service-datasets-copy-reports/power-bi-dataset-actions.png)
 
-    The icon for this dataset is different from the icon for datasets in the workspace. This makes it easy to see which reports and dashboards use datasets that are outside the workspace.
+   In lineage view, the icon for datasets that are located in other workspaces is different from the icon for datasets that are in the workspace as the associated report. This makes it easy to see which reports and dashboards use datasets that are outside the workspace.
 
     See [Your copy of the report](#your-copy-of-the-report) in this article for more about the report and related dataset.
 
@@ -54,7 +54,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Save a copy of the report](media/service-datasets-copy-reports/power-bi-save-copy.png)
 
-    You only see the **Save a copy** option [Build permission] if app permissions grant [Build permission](service-datasets-build-permissions.md) for the underlying dataset, and allows users to make copies of the report.
+    You only see the **Save a copy** option [Build permission] if app permissions grant [Build permission](service-datasets-build-permissions.md) for the underlying dataset, and allow users to make copies of the report.
 
 3. Give your report a name, select a destination workspace, and then select **Save**.
 
