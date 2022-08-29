@@ -12,16 +12,16 @@ ms.date: 08/24/2022
 
 # Identity filter API
 
-The **Identity filter API** allows you to create a visual that can filter categorical data.  
+The **Identity filter API** allows you to create a visual that can filter categorical data using a semantic query.  
 It filters the data by **data points** rather than mathematical expressions.
 
 The API keeps track of user selections and which data points to display. The data points are saved in an array and referenced by their position in the array.
 
 This API is useful in the following scenarios:
 
-* For custom visuals developed with group on keys
-* Migrating visuals that used an old API to a newer API
-* Allows selection to be done using opaque identities (numbers)
+* For custom visuals that use datasets that have group on keys
+* Migrating visuals that used an old API (earlier than 2.2) to a newer API
+* Allows selection to be done using identifying index arrays
 
 > [!NOTE]
 > The **Identity filter API** is available from API version 5.1 To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
@@ -37,7 +37,7 @@ The Identity filter model is based on the [IIdentityFilter](/javascript/api/powe
     }
 ```
 
-For example, let's say you have the following array:
+For example, if the visual received the following update:
 
 :::image type="content" source="./media/identity-filter-api/target-array.png" alt-text="Screenshot of sample array.":::
 
