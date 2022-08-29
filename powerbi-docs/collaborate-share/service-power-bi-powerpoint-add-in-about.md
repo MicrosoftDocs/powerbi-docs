@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 08/25/2022
+ms.date: 08/29/2022
 ---
 
 # About Power BI in PowerPoint (preview)
@@ -40,7 +40,6 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 
 * The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. WebView2 comes standard on recent Windows versions, but if you get an error when you try to use the add-in, you may need to install it manually. See [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md) for details.
 * The Power BI add-in for PowerPoint does not support [business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios.
-* The Power BI add-in for PowerPoint is not supported for presentations that are protected by Windows Information Protection. See [How do I know if my presentation is protected by Windows Information Protection?](./service-power-bi-powerpoint-add-in-troubleshoot.md#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection) for more information.
 
 ## Next Steps
 

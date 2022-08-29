@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 08/25/2022
+ms.date: 08/29/2022
 ---
 
 # Troubleshoot the Power BI add-in for PowerPoint
@@ -62,7 +62,7 @@ If your system doesn't meet the above requirements, you need to upgrade your [Wi
 >[!Note]
 >For Office builds 16.0.13530.20424 or later, but earlier than 16.0.14326.xxxxx, a system admin needs to update a registry key as described in [Adding a registry key](#adding-a-registry-key) below.
 
-If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection. The Power BI storytelling add-in is not supported for such presentations.
+If your device does meet the minimum system requirements, the problem may be because the presentation is protected by Windows Information Protection. The WebView2 is not supported for such presentations.
 
 The following sections show you how to check your device's Office build and Windows edition, and, if necessary, [how to tell whether your presentation is protected by Windows Information Protection](#how-do-i-know-if-my-presentation-is-protected-by-windows-information-protection).
 
@@ -90,7 +90,7 @@ The key's value should be set to:
 
 ## How do I know if my presentation is protected by Windows Information Protection?
 
-The Power BI storytelling add-in is not supported for PowerPoint presentations that are protected by [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP).
+The Power BI storytelling will not work in PowerPoint presentations that are protected by [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP), previously known as Enterprise Data Protection (EDP). This is because WebView2, which the Power BI add-in for PowerPoint requires, is not supported when Windows Information Protection is enabled.
 
 If you get the **Cannot run Power BI** error even though you are sure that WebView2 is installed on your computer and that your system meets the minimum requirements, use the following instructions to check whether WIP protection could be causing your problem.
 
