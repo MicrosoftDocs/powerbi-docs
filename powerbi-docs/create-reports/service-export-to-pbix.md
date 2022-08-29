@@ -83,6 +83,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before you can download them.
 * If you create a report in the Power BI service, you have to save it before you can download it.
 * You can't download reports based on datasets that are imported from OneDrive for Business.
+* You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-power-bi-files) from the Power BI samples article.
 * Usage metric reports can't be downloaded to a .pbix file.
