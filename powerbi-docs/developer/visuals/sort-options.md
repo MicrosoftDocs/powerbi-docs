@@ -81,12 +81,8 @@ To create a visual that allows custom sorting, add the following lines to your *
 ```typescript
     "sorting": {
         "custom": {} 
-    },
+    }
 ```
-
-The custom sorting API had the following commands:
-
-* getSortableRoles() - returns the list of sortable roles
 
 ### Example: Custom sort API
 
