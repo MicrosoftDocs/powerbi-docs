@@ -43,7 +43,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Dataset actions](media/service-datasets-copy-reports/power-bi-dataset-actions.png)
 
-   In lineage view, the icon for datasets that are located in other workspaces is different from the icon for datasets that are in the workspace as the associated report. This makes it easy to see which reports and dashboards use datasets that are outside the workspace.
+   In lineage view, the icon for datasets that are located in other workspaces is different from the icon for datasets that are in the same workspace as the associated report. This makes it easy to see which reports and dashboards use datasets that are outside the workspace.
 
     See [Your copy of the report](#your-copy-of-the-report) in this article for more about the report and related dataset.
 
