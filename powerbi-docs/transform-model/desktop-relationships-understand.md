@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/19/2022
+ms.date: 08/29/2022
 ---
 
 # Model relationships in Power BI Desktop
