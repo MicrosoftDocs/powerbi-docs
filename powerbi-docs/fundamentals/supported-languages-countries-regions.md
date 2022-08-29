@@ -166,7 +166,7 @@ Whether you download Power BI Desktop or install it from the Windows Store, you 
 2. Under **Current file**, select **Regional Settings**.
 3. In the **Locale for import** box, select a different locale. 
    
-   ![Screenshot of Power BI Desktop showing the Options dialog box.](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
+   ![Screenshot of Power B I Desktop showing the Options dialog box.](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Select **OK**.
 
 ### Choose the language for the model in Power BI Desktop
@@ -187,7 +187,7 @@ Here's how to set the model language.
 2. Under **Global**, select **Regional Settings**.
 3. In the **Model language** box, select a different language. 
 
-    ![Screenshot of Power BI Desktop showing how to set the model language.](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
+    ![Screenshot of Power B I Desktop showing how to set the model language.](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
 > [!NOTE]
 > Once created, the language of a Power BI model can't be changed.
@@ -204,7 +204,7 @@ Here's how to make Power BI Desktop use localized DAX separators:
 2. Under **Global**, select **Regional Settings**.
 3. Under **DAX separators** select **Use localized DAX separators**.
 
-    ![Screenshot of Power BI Desktop showing how to choose the DAX separators.](media/supported-languages-countries-regions/power-bi-dax-separators.png)
+    ![Screenshot of Power B I Desktop showing how to choose the DAX separators.](media/supported-languages-countries-regions/power-bi-dax-separators.png)
 
 > [!NOTE]
 > The **DAX separators** section will not be shown if your Windows locale settings are set to "English US".
