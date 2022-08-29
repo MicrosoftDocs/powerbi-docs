@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Copy reports from other workspaces
 
-When you find a report you like in a workspace or an app, you can make a copy of it and save it to a different workspace. Then you can modify your copy of the report, adding or deleting visuals and other elements. You don't have to worry about creating the data model. It's already created for you. And it's much easier to modify an existing report than it is to start from scratch. However, when you make an app from your workspace, sometimes you can't publish your copy of the report in the app. See [Considerations and limitations in the article "Use datasets across workspaces"](service-datasets-across-workspaces.md#considerations-and-limitations) for details.
+When you find a report you like in a workspace or an app, you can make a copy of it and save it to a different workspace. Then you can modify your copy of the report, adding or deleting visuals and other elements. You don't have to worry about creating the data model - the copy of report will still reference the same dataset as the original report. And it's much easier to modify an existing report than it is to start from scratch. However, when you make an app from your workspace, sometimes you can't publish your copy of the report in the app. See [Considerations and limitations in the article "Use datasets across workspaces"](service-datasets-across-workspaces.md#considerations-and-limitations) for details.
 
 ## Prerequisites
 
@@ -39,9 +39,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
   
 4. Select **Save**.
 
-    Power BI automatically creates a copy of the report, and an entry in the list of datasets if the report is based on a dataset outside of the workspace.
-
-    To see the shared dataset, select **More options** > **View lineage**. This item shows the lineage:
+    Power BI automatically creates a copy of the report in the workspace you selected. If the workspace you selected isn't the workspace that the referenced dataset is in, you won't see the dataset.  To see the shared dataset, on the report select **More options** > **View lineage**. This item shows the lineage:
 
     ![Dataset actions](media/service-datasets-copy-reports/power-bi-dataset-actions.png)
 
