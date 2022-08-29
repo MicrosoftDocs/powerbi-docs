@@ -88,7 +88,7 @@ When you have a report in one workspace based on a dataset in another workspace,
 
 If you want to delete the copy of the report, in the list of reports in the workspace, hover over the report you want to delete, select **More options**, and choose **Delete**.
 
-    ![Delete report icon](media/service-datasets-copy-reports/power-bi-datasets-delete-report.png)
+![Delete report icon](media/service-datasets-copy-reports/power-bi-datasets-delete-report.png)
 
 > [!NOTE]
 > Deleting a report doesn't delete the dataset it is built on.
