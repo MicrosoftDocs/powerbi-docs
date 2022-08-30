@@ -19,9 +19,9 @@ The API keeps track of user selections and which data points to display. The dat
 
 This API is useful in the following scenarios:
 
-* For custom visuals that use datasets that have group on keys
-* Migrating visuals that used an old API (earlier than 2.2) to a newer API
-* Allows selection to be done using identifying index arrays
+* For custom visuals that use datasets with group on keys
+* Migrating visuals that used an older API (earlier than 2.2) to a newer API
+* Allow selections using identifying index arrays
 
 > [!NOTE]
 > The **Identity filter API** is available from API version 5.1 To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
@@ -37,15 +37,21 @@ The Identity filter model is based on the [IIdentityFilter](/javascript/api/powe
     }
 ```
 
-For example, if the visual received the following update:
+For example, if the visual received the following data view update:
 
 :::image type="content" source="./media/identity-filter-api/target-array.png" alt-text="Screenshot of sample array.":::
 
-Note that the array is of type number[] and it contains the opaque-id (the identityIndex fields below) that the user selected.
+Note that the array is of type number[] and it contains the identity fields of the items that the user selected.
 
-The identityIndex corresponds to the index of the value in the value array in the dataset (see below)
+The identityIndex corresponds to the index of the value in the dataset's value array (see below).
 
 :::image type="content" source="./media/identity-filter-api/array-values.png" alt-text="Screenshot showing array values of names.":::
+
+In the above example:
+{identityIndex: 0} = "Aaliyah"
+{identityIndex: 1} = "Aaliyah"
+{identityIndex: 02 = "Aaliyah"
+etc.
 
 ## How to use the Identity filter API
 
@@ -62,7 +68,7 @@ To use the Identity filter API, your powerbi-model version needs to be 1.9.1 or 
       }
   ```
 
-* To handle Power Bi updates, read the target array from the “jsonFilters” in the “VisualUpdateOptions” and translate it to the corresponding values. In the example above, a target array of [0,10] will correspond to the values of *Aliyah* and *Abigail*.
+* To handle Power BI updates, read the *target* array from the “jsonFilters” in the “VisualUpdateOptions” and translate it to the corresponding values. These are the values that were selected. In the example above, a target array of [0,10] will correspond to the values of *Aliyah* and *Abigail*.
 
 * To handle user selections, in the example above, clicking on the first *Abigail* should add the value 8 to the filter target array an send it using the following command:
 
@@ -77,3 +83,14 @@ Some sample JSON filter code is shown in the following
 ## Example: Identity filter API
 
 The following example shows how the visual calls a filter operation.
+
+## Migrating visuals with old API
+
+To update a visual that was created using an API older than version 2.2, add the following lines to your *capabilities.json* file:
+
+This will convert the selections to identity filters.
+
+> [!NOTE]
+> This step is only necessary for existing visuals created with older APIs. Newer visuals don't need to add this.
+
+## Next steps
