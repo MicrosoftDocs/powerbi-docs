@@ -31,15 +31,18 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
   :::image type="content" source="./media/service-admin-ols/display-roles.png" alt-text="Screenshot of roles names being displayed under roles folder in model view.":::
 
 4. Select the role you want to enable an OLS definition for, and expand the **Table Permissions**.
-
    :::image type="content" source="./media/service-admin-ols/open-permissions.png" alt-text="Screenshot showing where to access the table permissions for OLS.":::
 
-5. Set the rule to *None* or *Read*.
+5. Set the rule for the table or column to *None* or *Read*.
 
-   :::image type="content" source="./media/service-admin-ols/define-rule-table.png" alt-text="Screenshot of setting OLS rule to none.":::
+   **None** - OLS will be enforced and that table or column will be hidden from that role  
+  **Read** - The column will be visible to that role
 
-    * **None** - OLS will be enforced and that table or column will be hidden from that role
-    * **Read** - The column will be visible to that role
+    * To secure the **whole table**, set categories under *Table permissions* to *None*.
+    :::image type="content" source="./media/service-admin-ols/define-rule-table.png" alt-text="Screenshot of setting OLS rule to none for the entire table.":::
+
+    * To secure a **specific column**, select the category and set the OLS to *None*.
+    :::image type="content" source="./media/service-admin-ols/define-rule-column.png" alt-text="Screenshot of setting OLS rule to none for the address column.":::
 
 6. After you define object-level security for the roles, save your changes.
   :::image type="content" source="./media/service-admin-ols/save-roles.png" alt-text="Screenshot of saving role definitions.":::
