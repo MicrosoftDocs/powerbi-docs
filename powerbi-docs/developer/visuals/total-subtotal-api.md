@@ -34,8 +34,6 @@ The API offers the following **boolean customization switches** for each data-vi
 * *levelSubtotalEnabled*: Unlike all other properties, this property is applied to individual rows/columns. This property indicates if the subtotals are requested for the row/column
 * *rowSubtotalsType*: Indicates if the row with the *total* data should be retrieved before or after the rest of the data. If *bottom* is selected, the total can only be displayed after all the data has been fetched.
 
-     :::image type="content" source="./media/total-subtotal-api/top-bottom.png" alt-text="Screenshot of menu showing row subtotal type option.":::
-
 Each of the above switches is assigned a value based on the related properties in the property pane and the defaults.
 
 ## How to use the subtotal API
@@ -115,14 +113,10 @@ Below is an example of the complete API configuration in the *capabilities.json*
 It’s important that the `enumerateProperities()` function of the visual is aligned with the defaults specified in the capabilities. The customization logic operates according to the defaults specified in the capabilities. If the two aren't aligned,  the actual subtotal customizations might differ that the user expects.
 
 ```typescript
-export class subtotals {
-  public rowSubtotals: boolean = true;
-  public perRowLevel: boolean = true;
-  public columnSubtotals: boolean = true;
-  public perColumnLevel: boolean = true;
-  public levelSubtotalEnabled: boolean = true;
-  public rowSubtotalsType: RowSubtotalType = RowSubtotalType.Bottom;
-}
+enum RowSubtotalType {
+        Top = "Top",
+        Bottom = "Bottom",
+   }
 ```
 
 Check out this [sample report](https://github.com/Microsoft/Powerbi-Visuals-SampleMatrix) in the DOC folder.
