@@ -1,6 +1,6 @@
 ---
-title: Embed reports that use object-level security
-description: How to embed a report that has object-level security (OLS).
+title: Object-level security (OLS) with Power BI
+description: How to configure object-level security for imported datasets, within the Power BI service.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
