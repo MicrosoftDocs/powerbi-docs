@@ -86,7 +86,15 @@ The following example shows how the visual calls a filter operation.
 
 ## Migrating visuals with old API
 
-To update a visual that was created using an API older than version 2.2, add the following lines to your *capabilities.json* file:
+Starting from API 5.1.0, to support the identity filter on visuals that were created using a version earlier than 2.2, add the following lines to your *capabilities.json* file:
+
+```json
+    "migration": {
+        "filter": {
+            "shouldUseIdentityFilter": true
+        }
+    }
+```
 
 This will convert the selections to identity filters.
 
