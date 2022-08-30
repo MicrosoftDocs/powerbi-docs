@@ -4660,6 +4660,11 @@
             "source_path": "powerbi-docs/enterprise/service-admin-governance.md",
             "redirect_url": "/power-bi/guidance/powerbi-adoption-roadmap-governance",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-forgot-your-password.md",
+            "redirect_url": "/power-bi/admin/power-bi-cannot-sign-in",
+            "redirect_document_id": false
         }
     ]           
 }
