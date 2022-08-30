@@ -51,7 +51,7 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 
 8. In the Power BI Service, navigate to the **Security** page by selecting the **more options** menu on the dataset, and assign members or groups to their appropriate roles.
 
-The OLS rules are now defined. Users who don't have the required permission will receive a message that the field doesn't exist for all report visuals using the field.
+The OLS rules are now defined. Users without the required permission will receive a message that the field can't be found for all report visuals using that field.
 
 :::image type="content" source="./media/service-admin-ols/error-message.png" alt-text="Screenshot of error message saying that column cannot be found or may not be used in this expression.":::
 
