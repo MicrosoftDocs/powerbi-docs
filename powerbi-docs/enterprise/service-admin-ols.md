@@ -47,7 +47,9 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 6. After you define object-level security for the roles, save your changes.
   :::image type="content" source="./media/service-admin-ols/save-roles.png" alt-text="Screenshot of saving role definitions.":::
 
-7. In Power BI Desktop, publish your dataset to the Power BI service. In the Power BI service, navigate to the **Security** page by selecting the **more options** menu on the dataset, and assign members or groups to their appropriate roles.
+7. In Power BI Desktop, publish your dataset to the Power BI Service.
+
+8. In the Power BI Service, navigate to the **Security** page by selecting the **more options** menu on the dataset, and assign members or groups to their appropriate roles.
 
 The OLS rules are now defined. Users who don't have the required permission will receive a message that the field doesn't exist for all report visuals using the field.
 
