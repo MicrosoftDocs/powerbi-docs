@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 08/14/2022
+ms.date: 08/23/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -122,10 +122,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 ### Content list
 
 The content index for an app.
-
-### Content pack
-
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Content view
 
@@ -364,7 +360,7 @@ The location in the service where messages are delivered to users, such as notic
 
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
 
-### On-premises (on-prem)
+### On-premises
 
 The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.
 
@@ -428,7 +424,7 @@ A free, standalone Windows Desktop application used for authoring paginated repo
 
 ### Power BI Report Server
 
-An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). 
+An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments).
 
 ### Power BI service
 
@@ -602,6 +598,10 @@ A [tile](/power-bi/create-reports/service-dashboard-tiles) is a snapshot of your
 A time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.  
 
 ## U
+
+### User Principal Name (UPN)
+
+A format used to specify an internet-style name, such as User.Name@example.microsoft.com. The format consists of a login name and domain separated by the @ symbol.
 
 ## V
 
