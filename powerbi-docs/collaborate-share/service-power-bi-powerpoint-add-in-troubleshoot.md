@@ -94,7 +94,7 @@ The Power BI storytelling will not work in PowerPoint presentations that are pro
 
 If you get the **Cannot run Power BI** error even though you are sure that WebView2 is installed on your computer and that your system meets the minimum requirements, use the following instructions to check whether WIP protection could be causing your problem.
 
-* For PowerPoint presentation files on your computer, the [**File ownership** column in File Explorer](/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if the file is protected by WIP.
+* For PowerPoint presentation files on your computer, the [**File ownership** column in File Explorer](https://support.microsoft.com/windows/manage-windows-information-protection-on-work-and-personal-files-0ba9ca73-3a8d-19cc-e9a1-bd2c95ca4c6c) will say **Work** if the file is protected by WIP.
 * For PowerPoint presentation files stored in SharePoint or OneDrive, open the SharePoint or OneDrive folder in [Edge](/deployedge/microsoft-edge-security-windows-information-protection). The briefcase icon in the address bar (shown below) will appear if WIP is protecting the files.
 
 ![Briefcase address bar indicator for sites marked as "work"](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-microsoft-edge-wip-notify.png)
