@@ -37,22 +37,32 @@ To create or update an app, you need a Power BI Pro or Premium Per User (PPU) li
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then publish them as an app. 
 
-1. In the workspace list view, decide which dashboards and reports you want to **Include in app**.
+1. In the workspace list view, select **Create app** to start the process of creating and publishing an app from the workspace.
+   
+    ![Screenshot of the Create app button.](media/service-create-distribute-apps/power-bi-apps-create-app.png)
 
-    ![Screenshot of Select the dashboard to publish.](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
+1. On the **Setup** tab, fill in the name and description to help people find the app. You can also set a theme color, add a link to a support site, and specify contact information. Select **Next: Add content**.
+   
+    ![Screenshot of Setup for your app.](media/service-create-distribute-apps/power-bi-apps-setup-add-content.png)
+
+1. On the **Content** tab, select **Add content**.
+
+    ![Screenshot of the Add content tab.](media/service-create-distribute-apps/power-bi-apps-add-content.png)
+
+1. In **Add content** > **Add from workspace**, select the workspace content to be in the app.
+
+    ![Screenshot of the Add content dialog box, where you select content.](media/service-create-distribute-apps/power-bi-apps-select-content.png)
 
     If you choose not to include a report that has a related dashboard, you see a warning next to the report. You can still publish the app, but the related dashboard won't have the tiles from that report.
 
-2. Select the **Create app** button in the upper right to start the process of creating and publishing an app from the workspace.
-   
-    ![Screenshot of the Create app button.](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+1. You can also add a link to external content. Select **Add a link** and fill in the link information.
 
-3. On **Setup**, fill in the name and description to help people find the app. You can also set a theme color, add a link to a support site, and specify contact information.
-   
-    ![Screenshot of Setup for your app.](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
+    ![Screenshot of the Add a link tab.](media/service-create-distribute-apps/power-bi-apps-add-link.png)
 
-4. On **Navigation**, you select the content to be visible in the app. Then you add app navigation, to organize the content in sections. See [Design the navigation experience for your app](#design-the-navigation-experience) in this article for details. Under **Advanced**, you can set the default width of the left navigation pane.
-   
+1. Select **Add**.
+
+1. Now on the **Content** tab, you can add sections or links, and move the content up or down, and preview the content.
+
     ![Screenshot of App navigation.](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. On **Permissions**, decide who has access to the app, and what they can do with it. 
