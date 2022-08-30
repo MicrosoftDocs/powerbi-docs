@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 05/18/2021
+ms.date: 08/30/2022
 ---
 
 # "Rendering" events in Power BI visuals
