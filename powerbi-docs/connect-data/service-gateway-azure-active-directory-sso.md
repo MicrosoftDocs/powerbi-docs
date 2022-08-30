@@ -20,6 +20,27 @@ While Azure Virtual Networks (VNets) offer network isolation and security for yo
 >[!NOTE]
 > VNet data gateways, which are available in public preview for Power BI Premium Datasets, eliminate the need to install an on-premises data gateway for connecting to your VNet data sources. To learn more about VNet gateways and their current limitations, see [What is a virtual network (VNet) data gateway (Preview)](/data-integration/vnet/overview).
 
+The following data sources are currently not supported with Azure AD SSO using an on-premises data gateway behind an Azure vnet:
+  * Analysis Services
+  * ADLS Gen1
+  * ADLS Gen2
+  * Azure Blobs
+  * CDPA
+  * Exchange
+  * OData
+  * SharePoint
+  * SQL Server
+  * Web
+  * AzureDevOpsServer
+  * CDSTOData
+  * Cognite
+  * CommonDataService
+  * Databricks
+  * EQuIS
+  * Kusto (when using the newer “DataExplorer” function)
+  * VSTS
+  * Workplace Analytics
+
 For more information on SSO and list of data sources supported for Azure AD SSO, see [Overview of single sign-on (SSO) for on-premises data gateways in Power BI](service-gateway-sso-overview.md). 
 
 ## Query steps when running Azure AD SSO
