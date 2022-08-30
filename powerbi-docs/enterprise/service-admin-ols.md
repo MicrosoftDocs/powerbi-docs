@@ -62,11 +62,7 @@ The OLS rules are now defined. Users who don't have the required permission will
   * Smart narrative visualizations
   * Excel Data Types gallery
 
-* Row-level security and object-level security can't be combined from different roles because it could introduce unintended access to secured data. An error is generated at query time for users who are members of such a combination of roles.
-
-* Dynamic calculations (measures, KPIs, DetailRows) are automatically restricted if they reference a secured table or column. While you can't explicitly secure a measure, you can implicitly secure a measure by updating the expression to refer to a secured table or column.
-
-* Relationships that reference a secured column work, as long as table the column's in isn't secured.
+* [See other OLS restrictions](/analysis-services/tabular-models/object-level-security#restrictions)
 
 ## Next steps
 
