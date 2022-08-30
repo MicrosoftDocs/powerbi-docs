@@ -65,8 +65,6 @@ To enable implicit sorting, add the implicit `clauses` to your *capabilities.jso
 
 ## Custom sorting
 
-Custom sorting means that the sorting is managed by the developer in the visual's code.
-
 Custom sorting gives the developer more control over the sorting options. The developer can:
 
 * Allow the user to sort by multiple fields at a time.
