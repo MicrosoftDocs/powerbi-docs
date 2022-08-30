@@ -16,7 +16,7 @@ This article describes the different options available for to specifying the the
 
 By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
 
-The sorting capability requires one of the following parameters.
+The *sorting* capability requires at least one of the following parameters.
 
 * [default](#default-sorting)
 * [implicit](#implicit-sorting)
@@ -68,13 +68,12 @@ To enable implicit sorting, add the implicit `clauses` to your *capabilities.jso
 Custom sorting gives the developer more control over the sorting options. The developer can:
 
 * Allow the user to sort by multiple fields at a time.
-* Limit the sorting options to only specific fields and/or directions
 * Set a default sorting order for the data
 * Allow custom sorting operations during runtime
 
 ### Enable custom sorting
 
-To create a visual that allows custom sorting, add the following lines to your *capabilities.json* file:
+To enable custom sorting, add the following code to your *capabilities.json* file:
 
 ```typescript
     "sorting": {
@@ -85,93 +84,6 @@ To create a visual that allows custom sorting, add the following lines to your *
 ### Example: Custom sort API
 
 After successfully executing applyCustomSort, the `OrderBy` parameter is added to the query:
-
-```typescript
-{
-    "Commands": [
-        {
-            "SemanticQueryDataShapeCommand": {
-                "Query": {
-                    "Version": 2,
-                    "From": [
-                        {
-                            "Name": "i",
-                            "Entity": "Item",
-                            "Type": 0
-                        },
-                        {
-                            "Name": "s",
-                            "Entity": "Sales",
-                            "Type": 0
-                        }
-                    ],
-                    "Select": [
-                        {
-                            "Column": {
-                                "Expression": {
-                                    "SourceRef": {
-                                        "Source": "i"
-                                    }
-                                },
-                                "Property": "Segment"
-                            },
-                            "Name": "Item.Segment"
-                        },
-                        {
-                            "Measure": {
-                                "Expression": {
-                                    "SourceRef": {
-                                        "Source": "s"
-                                    }
-                                },
-                                "Property": "Avg $/Unit TY"
-                            },
-                            "Name": "Sales.Avg $/Unit TY"
-                        }
-                    ],
-                    "OrderBy": [
-                        {
-                            "Direction": 2,
-                            "Expression": {
-                                "Column": {
-                                    "Expression": {
-                                        "SourceRef": {
-                                            "Source": "i"
-                                        }
-                                    },
-                                    "Property": "Segment"
-                                }
-                            }
-                        }
-                    ]
-                },
-                "Binding": {
-                    "Primary": {
-                        "Groupings": [
-                            {
-                                "Projections": [
-                                    0,
-                                    1
-                                ]
-                            }
-                        ]
-                    },
-                    "DataReduction": {
-                        "DataVolume": 3,
-                        "Primary": {
-                            "Window": {
-                                "Count": 50
-                            }
-                        }
-                    },
-                    "Version": 1
-                },
-                "ExecutionMetricsKind": 1
-            }
-        }
-    ]
-}
-```
 
 ## Next steps
 
