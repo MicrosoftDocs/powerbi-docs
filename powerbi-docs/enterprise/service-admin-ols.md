@@ -18,8 +18,7 @@ Object-level security (OLS) enables model authors to secure specific tables or c
 
 Like RLS, OLS is also defined within model roles. Currently, you can't create OLS definitions natively in Power BI Desktop.
 
-* To create roles on **Power BI Desktop** datasets, use [external tools](../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.github.io/).  
-* To create roles in **Power BI Service**, set the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) using [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) or [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
+To create roles on **Power BI Desktop** datasets, use [external tools](../transform-model/desktop-external-tools.md) such as [Tabular Editor](https://tabulareditor.github.io/).  
 
 ### Configure object level security using tabular editor
 
@@ -37,7 +36,7 @@ Like RLS, OLS is also defined within model roles. Currently, you can't create OL
 
 5. Set the rule to *None* or *Read*.
 
-   :::image type="content" source="./media/service-admin-ols/define-rule.png" alt-text="Screenshot of setting OLD rule to ???.":::
+   :::image type="content" source="./media/service-admin-ols/define-rule.png" alt-text="Screenshot of setting OLS rule to ???.":::
 
     * **None** - OLS will be enforced and that column will be hidden from that role
     * **Read** - The column will be visible to that role
