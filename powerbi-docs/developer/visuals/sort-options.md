@@ -24,7 +24,7 @@ The *sorting* capability requires at least one of the following parameters.
 
 ## Default sorting
 
-The `default` option is the simplest form. It allows the user to sort according to any one field and direction (ascending or descending).
+The `default` option is the simplest form. It allows the user to sort according to any one field and direction (ascending or descending). The user selects the direction and field from the **more options** menu.
 
 :::image type="content" source="media/sort-options/default-sorting.png" alt-text="Screenshot of table of US states with default sorting options the context menu.":::
 
