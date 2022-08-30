@@ -36,7 +36,7 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 5. Set the rule for the table or column to *None* or *Read*.
 
    **None** - OLS will be enforced and that table or column will be hidden from that role  
-  **Read** - The column will be visible to that role
+   **Read** - The table or column will be visible to that role
 
     * To secure the **whole table**, set categories under *Table permissions* to *None*.
     :::image type="content" source="./media/service-admin-ols/define-rule-table.png" alt-text="Screenshot of setting OLS rule to none for the entire table.":::
