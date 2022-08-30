@@ -36,9 +36,9 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 
 5. Set the rule to *None* or *Read*.
 
-   :::image type="content" source="./media/service-admin-ols/define-rule.png" alt-text="Screenshot of setting OLS rule to ???.":::
+   :::image type="content" source="./media/service-admin-ols/define-rule-table.png" alt-text="Screenshot of setting OLS rule to none.":::
 
-    * **None** - OLS will be enforced and that column will be hidden from that role
+    * **None** - OLS will be enforced and that table or column will be hidden from that role
     * **Read** - The column will be visible to that role
 
 6. After you define object-level security for the roles, save your changes.
@@ -48,11 +48,11 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 
 The OLS rules are now defined. Users who don't have the required permission will receive a message that the field doesn't exist for all report visuals using the field.
 
-:::image type="content" source="./media/service-admin-ols/error-message.png" alt-text="Screenshot of error saying that column cannot be found or may not be used in this expression.":::
+:::image type="content" source="./media/service-admin-ols/error-message.png" alt-text="Screenshot of error message saying that column cannot be found or may not be used in this expression.":::
 
 ## Considerations and limitations
 
-* OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the dataset and, therefore, OLS doesn’t apply to them. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+* OLS only applies to *Viewers* in a workspace. Workspace members assigned *Admin*, *Member*, or *Contributor* have edit permission for the dataset and, therefore, OLS doesn’t apply to them. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 
 * Datasets with OLS configured for one or more table or column objects aren't supported with these Power BI features:
 
