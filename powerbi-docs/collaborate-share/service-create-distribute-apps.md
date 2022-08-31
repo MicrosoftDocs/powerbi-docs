@@ -232,7 +232,7 @@ Any member of a workspace can unpublish the app.
 
 This action uninstalls the app for everyone you've published it to, and they no longer have access to it. It doesn't delete the workspace or its contents.
 
-## View your published app
+## When app consumers view your app
 
 When your app consumers open your app, they see the navigation you created, instead of the standard Power BI nav pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name. You can expand and collapse the left navigation by using the arrows in the menu bar.
 
