@@ -160,7 +160,7 @@ There are several DAX functions that are relevant to model relationships. Each f
 
 - [RELATED](/dax/related-function-dax): Retrieves the value from "one" side of a relationship. It's useful when involving calculations from different tables that are evaluated in [row context](/dax/dax-overview#row-context).
 - [RELATEDTABLE](/dax/relatedtable-function-dax): Retrieve a table of rows from "many" side of a relationship.
-- [USERELATIONSHIP](/dax/userelationship-function-dax): Allows a calcualtion to use an inactive relationship. (Technically, this function modifies the weight of a specific inactive model relationship helping to influence its use.) It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table. You can also use this function to [resolve ambiguity in filter paths](#resolve-relationship-path-ambiguity).
+- [USERELATIONSHIP](/dax/userelationship-function-dax): Allows a calculation to use an inactive relationship. (Technically, this function modifies the weight of a specific inactive model relationship helping to influence its use.) It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table. You can also use this function to [resolve ambiguity in filter paths](#resolve-relationship-path-ambiguity).
 - [CROSSFILTER](/dax/crossfilter-function): Modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It's useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
 - [COMBINEVALUES](/dax/combinevalues-function-dax): Joins two or more text strings into one text string. The purpose of this function is to support multi-column relationships in DirectQuery models when tables belong to the same source group.
 - [TREATAS](/dax/treatas-function): Applies the result of a table expression as filters to columns from an unrelated table. It's helpful in advanced scenarios when you want to create a virtual relationship during the evaluation of a specific calculation.
@@ -234,10 +234,10 @@ There are other restrictions related to limited relationships:
 
 ### Resolve relationship path ambiguity
 
-Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to the its [priority](#priority) and [weight](#weight).
+Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to its [priority](#priority) and [weight](#weight).
 
 #### Priority
-Priority tiers define a sequence of rules that Power BI uses to resolve relationship path ambiguity. The first rule match determines the path Power BI will follow. Each  rule below describes how filters flow from a source table to a target table.
+Priority tiers define a sequence of rules that Power BI uses to resolve relationship path ambiguity. The first rule match determines the path Power BI will follow. Each rule below describes how filters flow from a source table to a target table.
 
 1. A path consisting of one-to-many relationships.
 2. A path consisting of one-to-many or many-to-many relationships.
