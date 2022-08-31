@@ -7,7 +7,7 @@ ms.reviewer: 'jadelynray'
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/17/2022
+ms.date: 08/18/2022
 Customer intent: As a Power BI admin, I need to know what information is passed from Power BI and Microsoft Graph to Microsoft 365.
 LocalizationGroup: Admin
 ---
@@ -16,9 +16,15 @@ LocalizationGroup: Admin
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-The Microsoft Graph in Power BI experience can be turned on or off by the xxx administrator. Before turning on the experience, learn what data will be shared with Microsoft 365.
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of data in Microsoft 365, Windows, and Enterprise Mobility + Security (EMS). Use the wealth of data in Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
 
-## Data that is shared with Microsoft 365
+Together, the Microsoft Graph API, connectors, and Data Connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent applications.
+
+For more information, visit [Microsoft Graph documentation](/graph/overview.md)
+
+When Microsoft Graph is integrated with Power BI, details about the Power BI content and activity will be accessible from the Office.com Home page. This feature is currently available in private preview. To participate in the private preview, a Power BI administrator will need to enable the **Share data with your Microsoft 365 services** tenant setting. Before turning on the experience, learn what data will be shared with Microsoft 365.
+
+## Data that will be shared with Microsoft 365
 
 |Property  |Source  |What is shared  |Example  | Data classification  |  Storage location  |
 |---------|---------|---------|---------|---------|---------|
@@ -46,3 +52,4 @@ The Microsoft Graph in Power BI experience can be turned on or off by the xxx ad
 ## Next steps
 
 Got feedback? We'd love to hear it at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
+
