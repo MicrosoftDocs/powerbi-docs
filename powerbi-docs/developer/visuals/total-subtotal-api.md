@@ -129,7 +129,7 @@ To review the available customizations, expand the Subtotals drop-down menu in t
 
 * The `rowSubtotalsType` property is only available for rows. You can't set column subtotals to the beginning of a column.
 
-* When using expand/collapse, the totals are retrieved even if the visual didn’t request them.
+* The [expand/collapse](./dataview-mappings.md#expanding-and-collapsing-row-headers) feature overrides `rowSubtotals`. This means that subtotals are displayed when the rows are expanded, even if `rowSubtotals` is set to *false*.
 
 ## Next steps
 
