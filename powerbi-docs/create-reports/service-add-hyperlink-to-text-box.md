@@ -13,6 +13,10 @@ ms.custom: video-_3q6VEBhGew
 LocalizationGroup: Visualizations
 ---
 # Add a hyperlink to a text box in a report
+
+	
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 You can add a text box to a report in Power BI Desktop or the Power BI service. You can pin a text box from a report to a dashboard, or add one directly to a dashboard. Wherever the text box is, you can always add a hyperlink to it. This article shows how to add a hyperlink to a text box in a report. 
 
 

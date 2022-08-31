@@ -25,11 +25,11 @@ Here are the requirements for building a template app:
 - A [Power BI pro license](../fundamentals/service-self-service-signup-for-power-bi.md)
 - An [installation of Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) (optional)
 - Familiarity with the [basic concepts of Power BI](../fundamentals/service-basic-concepts.md)
-- Permissions to share a template app publicly (for more information, see Power BI [admin portal, Template app settings](../admin/service-admin-portal.md#template-apps-settings)
+- Permissions to share a template app publicly (for more information, see Power BI [admin portal, Template app settings](../admin/service-admin-portal-template-app.md)
 
 ## Create the template workspace
 
-To create a template app you can distribute to other Power BI tenants, you need to create it in one of the new workspaces.
+To create a template app you can distribute to other Power BI tenants, you need to create it in a workspace.
 
 1. In the Power BI service, select **Workspaces** > **Create a workspace**.
 
@@ -37,7 +37,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 2. In **Create a workspace**, enter a name, description (optional), and logo image (optional) for your workspace.
 
-    ![Try new workspaces](media/service-template-apps-create/power-bi-upgrade-new.png)
+    ![Screenshot showing the Create a workspace dialog box.](media/service-template-apps-create/power-bi-upgrade-new.png)
 
 4. Expand the **Advanced** section and select **Develop a template app**.
 
@@ -193,7 +193,7 @@ Let's go through the stages:
     >[!NOTE]
     > When the app is promoted it becomes publicly available outside your organization.
 
-    If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](../admin/service-admin-portal.md#template-apps-settings) in the admin portal.
+    If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](../admin/service-admin-portal-template-app.md) in the admin portal.
 11. Select **Promote** to confirm your choice.
 12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Partner center offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Submit only pre-production links to the Partner center. Only after the app is approved and you get notification that it is published in AppSource, can you promote this package to production in Power BI.
 13. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.

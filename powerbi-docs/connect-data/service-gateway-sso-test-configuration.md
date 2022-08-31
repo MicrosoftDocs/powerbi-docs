@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 05/17/2022
 LocalizationGroup: Gateways
 ---
 
@@ -28,13 +28,17 @@ The **test single sign-on** feature works for both Kerberos and SAML based singl
 
 ## How to test SSO for the gateway
 
-1. In the **Manage Gateways** page in Power BI, when editing the data source for SSO, you can test the configuration from the **Advanced Settings** area.
+1. In the **Manage Gateways** page in Power BI, when editing the data source for SSO, you can test the configuration from the **Settings** area.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-01.png" alt-text="Screenshot of how to test S S O configuration.":::
+    :::image type="content" source="media/service-gateway-sso-test-configuration/test-single-sign-on.png" alt-text="Screenshot of how to test SSO configuration from advanced settings.":::
+    
+2. Click on **Test single sign-on**.
 
-2. Provide a User Principal Name to test. If the gateway cluster is able to impersonate the user and successfully connect to the data source, the test succeeds, as shown in the following image.
+    :::image type="content" source="media/service-gateway-sso-test-configuration/user-principal-name.png" alt-text="Screenshot of providing user principal namen for testing SSO.":::
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-02.png" alt-text="Screenshot of successful test for S S O.":::
+3. Provide a User Principal Name to test. If the gateway cluster is able to impersonate the user and successfully connect to the data source, the test succeeds, as shown in the following image.
+
+    :::image type="content" source="media/service-gateway-sso-test-configuration/user-principal-name.png" alt-text="Screenshot of successful test for SSO test connection.":::
 
 ## Troubleshooting
 
@@ -44,23 +48,23 @@ This section describes frequent errors you may see, when testing single sign-on,
 
     If the gateway cluster cannot impersonate the user and connect to the data source, the test fails with the corresponding error message.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-03.png" alt-text="Screenshot of error dialog when testing fails to impersonate the user.":::
+    :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed.png" alt-text="Screenshot of error dialog when testing fails to impersonate the user.":::
 
     | Possible cause | Action |
     | --- | --- |
-    | User does not exist in AAD | Check if the user is present in AAD |
-    | User is not mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
-    | Gateway does not have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
+    | User doesn't exist in AAD | Check if the user is present in AAD |
+    | User isn't mapped correctly to a local AD account | Check configurations and follow steps outlined in the documentation: [Overview of SSO](service-gateway-sso-overview.md) |
+    | Gateway doesn't have impersonation rights. | Grant the gateway service account local policy rights on the gateway machine: [Grant local policy rights](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine)  |
 
 * **Error: Invalid connection credentials.**
-The gateway cannot connect to the data source, because the provided User Principal Name does not have access to the data source.
+The gateway can't connect to the data source, because the provided User Principal Name does not have access to the data source.
 
-    :::image type="content" source="media/service-gateway-sso-test-configuration/gateway-sso-test-configuration-04.png" alt-text="Screenshot of error dialog when testing fails because User Principal Name does not have access to data source.":::
+    :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed-credentials.png" alt-text="Screenshot of error dialog when testing fails because User Principal Name does not have access to data source.":::
 
 
     | Possible cause | Action |
     | --- | --- |
-    | User does not have credentials to the data source | Check if the user has access to the data source and add the user to the data source: [Add or remove a gateway data source](service-gateway-data-sources.md#manage-users)  |
+    | User doesn't have credentials to the data source | Check if the user has access to the data source and add the user to the data source: [Add or remove a gateway data source](service-gateway-data-sources.md#manage-users)  |
     
 ## Next steps
 

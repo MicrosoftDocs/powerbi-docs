@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/28/2020
+ms.date: 06/23/2022
 ---
 
 # Create parameters for paginated reports in the Power BI service
@@ -32,7 +32,8 @@ The following illustration shows Design view in Power BI Report Builder for a re
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- To publish a Power BI paginated report to the Power BI service, you need at least a Contributor role in a workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- You also need either a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, or you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license and the workspace needs to be in a Power BI Premium capacity.
   
 ## Create or edit a report parameter  
   

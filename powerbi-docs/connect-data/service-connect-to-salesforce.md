@@ -166,7 +166,7 @@ At same time, we can use the Month Wise Performance visual to measure the month-
 
 ### "Unable to connect to the remote server" message
 
-If you get an "Unable to connect to the remote server" message when trying to connect to your Salesforce account, see this solution on the following forum: [Salesforce Connector sign in Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+If you get an "Unable to connect to the remote server" message when trying to connect to your Salesforce account, see this solution on the following forum: [Salesforce Connector sign in Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/discussion/17674/salesforce-connector-log-in-error-message-unable-to-connect-to-the-remote-ser/)
 
 ## Next steps
  

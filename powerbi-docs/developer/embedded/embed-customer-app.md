@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 08/12/2021
+ms.date: 02/07/2022
 ---
 
 # Tutorial: Embed a Power BI report in an application for your customers
@@ -16,6 +16,7 @@ In this tutorial, you'll learn how to embed a Power BI report in a .NET 5.0 appl
 In this tutorial, you'll learn how to embed:
 
 >[!div class="checklist"]
+>
 >* A Power BI report
 >* In an *embed for your customers* app
 >* Using a *service principal*
@@ -27,7 +28,7 @@ In this tutorial, you'll learn how to embed:
 
 ## Prerequisites
 
-* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
+* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license.
 
 * A Power BI workspace with a report.
 
@@ -41,9 +42,9 @@ In this tutorial, you'll learn how to embed:
 
 * An integrated development environment (IDE). We recommend using one of the following:
 
-    * [Visual Studio](https://visualstudio.microsoft.com/).
+  * [Visual Studio](https://visualstudio.microsoft.com/).
 
-    * [Visual Studio Code](https://code.visualstudio.com/) (with the [C# extension](https://code.visualstudio.com/docs/languages/csharp)).
+  * [Visual Studio Code](https://code.visualstudio.com/) (with the [C# extension](https://code.visualstudio.com/docs/languages/csharp)).
 
 ## Resources
 
@@ -125,7 +126,7 @@ Add the NuGet packages listed below to your app:
 
 * In **VS Code**, open a terminal and type in the code below.
 
-* In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Consol* and type in the code below.
+* In **Visual studio**, navigate to *Tools* > *NuGet Package Manager* > *Package Manager Console* and type in the code below.
 
 ```powershell
 dotnet add package Microsoft.Identity.Web
@@ -152,6 +153,7 @@ Add the code snippet below to your app's **Startup.cs** file.
 
 >[!NOTE]
 >The code in `ConfigureServices` accomplishes several important things:
+>
 >1. The call to `AddMicrosoftWebAppCallsWebApi` configures the Microsoft authentication library to acquire access tokens (Azure AD tokens).
 >2. The call to `AddInMemoryTokenCaches` configures a token cache that the Microsoft authentication library will use to cache access tokens and refresh tokens behind the scenes
 >3. The call to `services.AddScoped(typeof(PowerBiServiceApi))` configures the `PowerBiServiceApi` class as a service class that can be added to other classes using dependency injection.
@@ -529,6 +531,9 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
 ## Step 6 - Run your application
 
 After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded. You can use the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) to enhance your app using client side APIs.
+
+> [!IMPORTANT]
+> If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
 When your app is ready, you can [move your embedded app to production](move-to-production.md).
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 02/16/2022
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -86,10 +86,11 @@ The **Database** category provides the following data connections:
 * Essbase
 * Actian (Beta)
 * Amazon Athena
-* AtScale cubes
 * BI Connector
 * Data Virtuality LDW
 * Denodo
+* Dremio Software
+* Dremio Cloud (Beta)
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
@@ -99,9 +100,7 @@ The **Database** category provides the following data connections:
 * MariaDB
 * MarkLogic
 * TIBCO(R) Data Virtualization
-* Dremio Software
-* Dremio Cloud (Beta)
-
+* AtScale cubes
 
 
 > [!NOTE]
@@ -131,7 +130,7 @@ The following image shows the **Get Data** window for **Power Platform**.
 The **Azure** category provides the following data connections:
 
 * Azure SQL Database
-* Azure Synapse Analytics (SQL DW)
+* Azure Synapse Analytics SQL
 * Azure Analysis Services database
 * Azure Database for PostgreSQL
 * Azure Blob Storage
@@ -143,10 +142,11 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
+* Azure Synapse Analytics workspace (Beta)
+* Azure Time Series Insights (Beta)
 * Azure Cost Management
 * Azure Databricks
-* Azure Time Series Insights (Beta)
-* Azure Synapse Analytics workspace (Beta)
+
 
 
 The following image shows the **Get Data** window for **Azure**.
@@ -160,6 +160,7 @@ The **Online Services** category provides the following data connections:
 * SharePoint Online List
 * Microsoft Exchange Online
 * Dynamics 365 (online)
+* Dynamics 365 (Dataverse)
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (on-premises)
@@ -206,7 +207,7 @@ The **Online Services** category provides the following data connections:
 * Witivio (Beta)
 * Workplace Analytics (Beta)
 * Zoho Creator (Beta)
-
+* Digital Construction Works Insights (Beta)
 
 
 
@@ -234,11 +235,13 @@ The **Other** category provides the following data connections:
 * Acterys : Model Automation & Planning (Beta)
 * Anaplan Connector v1.0 (Beta)
 * Solver
-* BQE Core (Beta)
 * Bloomberg Data and Analytics
 * Cherwell (Beta)
+* Cognite Data Fusion
+* Delta Sharing
 * EQuIS (Beta)
 * FHIR
+* Google Sheets (Beta)
 * Information Grid (Beta)
 * Jamf Pro (Beta)
 * Kognitwin
@@ -246,9 +249,9 @@ The **Other** category provides the following data connections:
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
+* SIS-CC SDMX (Beta)
 * Shortcuts Business Insights (Beta)
 * Siteimprove
-* Starburst Enterprise
 * SumTotal
 * SurveyMonkey (Beta)
 * Microsoft Teams Personal Analytics (Beta)
@@ -257,9 +260,11 @@ The **Other** category provides the following data connections:
 * Vena
 * Vessel Insight
 * Zucchetti HR Infinity (Beta)
-* Cognite Data Fusion
-* Delta Sharing
-* Google Sheets (Beta)
+* BQE Core
+* MicroStrategy for Power BI
+* Starburst Enterprise
+* Amazon OpenSearch Service (Beta)
+* OpenSearch Project (Beta)
 * Blank Query
 
 

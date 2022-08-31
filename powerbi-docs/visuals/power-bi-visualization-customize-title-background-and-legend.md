@@ -5,17 +5,17 @@ author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 featuredvideoid: removed
-ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started
+ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 06/29/2022
 LocalizationGroup: Visualizations
 ---
 
 # Customize visualization titles, backgrounds, labels, and legends
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations, that the best way to learn about them is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, layer, and add a theme.
 
@@ -32,7 +32,7 @@ You can't customize all visualizations. See the [complete list](#visualization-t
 
 ## Customize visualization titles in reports
 
-To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample](../create-reports/sample-datasets.md) report.
+To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample](../create-reports/sample-datasets.md) report. To follow along in the Power BI service, open the report and select **Edit**.
 
 > [!NOTE]
 > When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resizing](../create-reports/service-dashboard-edit-tile.md).
@@ -41,17 +41,17 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 
 1. Select the **Open Store Count by Open Month and Chain** clustered column chart.
 
-1. In the **Visualizations** pane, select the paint roller icon to reveal the format options.
+1. In the **Visualizations** pane, select the paint brush icon, then **General** to reveal the format options.
 
 1. Select **Title** to expand that section.
 
-   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png" alt-text="Screenshot of the Format pane with the paint roller icon and the Title drop-down called out.":::
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png" alt-text="Screenshot of the Format pane with the paint brush icon and the Title drop-down called out.":::
 
-1. To change the title, enter *Store count by month opened* in the **Title text** field.
+1. To change the title, enter *Store count by month opened* in the **Text** field.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png" alt-text="Screenshot of the Format pane with the Title text entered.":::
 
-1. Change **Font color** to white and **Background color** to blue.
+1. Change **Text color** to white and **Background color** to blue.
 
     a. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **More colors**.
 
@@ -71,13 +71,13 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 
 Save the changes you've made and move to the next section.
 
-If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Title** customization pane.
+If you ever need to revert all of the changes, select **Reset to default**, at the bottom of the **Title** customization pane.
 
-:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-revert.png" alt-text="Screenshot of the Revert to default option.":::
+:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-revert.png" alt-text="Screenshot of the Reset to default option.":::
 
 ## Customize visualization backgrounds
 
-With the same clustered column chart selected, expand the **Background** options.
+With the same clustered column chart selected, expand the **Effects** > **Background** options.
 
 1. Move the **Background** slider to **On**.
 
@@ -91,27 +91,27 @@ At this point in the tutorial, your clustered column chart background will look 
 
 Save the changes you've made and move to the next section.
 
-If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Background** customization pane.
+If you ever need to revert all of the changes, select **Reset to default**, at the bottom of the **Background** customization pane.
 
 ## Customize visualization legends
 
 1. Open the **Overview** report page and select the **Total Sales Variance by FiscalMonth and District Manager** chart.
 
-1. In the **Visualization** tab, select the paint roller icon to open the Format pane.
+1. In the **Visualization** tab, select the paint brush icon to open the Format pane.
 
 1. Expand the **Legend** options. The toggles for **Legend** and **Title** are both **On** by default.
 
-   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png" alt-text="Screenshot of the Legend card.":::
-
 1. Use the **Position** field to move the legend to the left side of the visualization.
 
-1. Enter *Manager* in the **Legend Name** field.
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png" alt-text="Screenshot of the Legend card.":::
+
+1. Enter *Manager* in the **Title text** field.
 
 1. Change **Color** to black.
 
 Save the changes you've made and move to the next section.
 
-If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Legend** customization pane.
+If you ever need to revert all of the changes, select **Reset to default**, at the bottom of the **Legend** customization pane.
 
 ## Customize total labels for stacked visuals
 
@@ -120,6 +120,9 @@ Stacked visuals can display data labels and total labels. On a stacked column ch
 Depending on the visual and its size, data labels may not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode. 
 
 In the following video, watch Rien add total labels to a stacked chart, and then follow the steps below to try it out yourself.
+
+> [!NOTE]
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HrRQ]
 
@@ -149,6 +152,9 @@ Layering controls are available in the Power BI service, Power BI Desktop, mobil
 
 In this video, watch Rien change layer order behavior, and then follow the steps below to try it out yourself.
 
+> [!NOTE]
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
 
 1. Add a new report page by selecting the yellow plus sign.
@@ -168,21 +174,21 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 
     You can change this default behavior.
 
-1. Select the pie chart and open the Formatting pane. Expand the **General** options and switch **On** the **Maintain layer order** toggle.
+1. Select the pie chart and open the Formatting pane. Select **General**, then **Properties** > **Advanced options** and switch **On** the **Maintain layer order** toggle.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page showing the Maintain layer order toggle.":::
 
-1. Open the **View** menu and toggle **Selection pane** to **On**. The **Layer order** tab in the Selection pane will let you view and set the layer order.
+1. Open the **View** menu and **Selection**. The **Layer order** tab in the Selection pane will let you view and set the layer order.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-view-menu.png" alt-text="Screenshot showing the View menu with the Selection Pane option toggled to On.":::
 
-1. Select the pie chart, hold down the CTRL key, and select the rectangle. Then, right-click in the rectangle to display the context menu. Select **Group** > **Group**. This groups both items together.
+1. Select the pie chart, hold down the CTRL key, and select the rectangle. Then, select **Format** >  **Group** > **Group**. This groups both items together.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-group-layer.png" alt-text="Screenshot showing the visual and shape with the context menu open and the Group option selected.":::
 
 1. Expand the **Selection** pane. The **Layer order** should look like this:
 
-   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer-order.png" alt-text="Screenshot showing the Layer order tab in the Selection pane..":::
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer-order.png" alt-text="Screenshot showing the Layer order tab in the Selection pane.":::
 
 1. Save the report changes and switch to **Reading view**.
 

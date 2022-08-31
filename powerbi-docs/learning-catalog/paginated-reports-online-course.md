@@ -8,7 +8,7 @@ ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: tutorial
-ms.date: 10/15/2021
+ms.date: 02/04/2022
 ---
 
 # Power BI Paginated Reports in a Day course
@@ -41,7 +41,7 @@ Watch the welcome and introduction video to start the course.
 
 ## Course outline
 
-The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 25.
+The [course of 26 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 26.
 
 - **Introduction**
   - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -78,6 +78,7 @@ The [course of 25 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 - **Updates**
   - Video 25: [December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Video 26: [December 2021 Update](https://www.youtube.com/watch?v=tPasEyezQnc&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
 ## Attendee kit
 
@@ -103,7 +104,7 @@ You can download and set up an attendee kit, which consists of the presentation 
 > [!IMPORTANT]
 > You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md). A newly signed up account can benefit from a 60-day trial license.
 >
-> To complete the labs, you must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You will need a Power BI Pro license or [Power BI Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) license to use a dataset as a report data source.
+> To complete the labs, you must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You will need a Power BI Pro license or [Power BI Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) license to use a dataset as a report data source.
 >
 > Some lab tasks involve publishing paginated reports to a Power BI service workspace. You can only open a paginated report in the Power BI service when it's saved to a workspace that has its [license mode](../consumer/end-user-workspaces.md#licensing-workspaces-and-capacity) set to **Premium per user** or **Premium capacity**.
 

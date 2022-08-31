@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Use visual elements to enhance Power BI reports
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 With **Power BI Desktop** you can use visual elements, such as wallpaper and improved visual headers for visualizations, to enhance the appearance of your reports.
 
 ![Add wallpaper and small visual headers to enhance reports](media/desktop-visual-elements-for-reports/visual-elements-for-reports_01.png)
@@ -73,9 +75,9 @@ If your visual is positioned all the way to the top of your report, the visual h
 
 ![Visual headers snap to the bottom when bordering the top of the report](media/desktop-visual-elements-for-reports/visual-elements-for-reports_08.png)
 
-Each visual also has a card in the **Formatting** section of the **Visualizations** pane called **Visual header**. In that card you can adjust all sorts of characteristics of the visual header
+Each visual also has a card in the **Formatting** section of the **Visualizations** pane called **Visual header**. You can adjust all sorts of characteristics of the visual header
 
-![Each visual has a Visual header card in the Formatting pane](media/desktop-visual-elements-for-reports/visual-elements-for-reports_09.png)
+![Screenshot shows formatting options for the Visual header.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_09.png)
 
 > [!NOTE]
 > The visibility of toggles do not affect your report when you are authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are important during editing, especially warning icons that alert you to issues while editing.

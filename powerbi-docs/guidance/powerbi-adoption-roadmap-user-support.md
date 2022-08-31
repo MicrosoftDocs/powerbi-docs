@@ -2,8 +2,8 @@
 title: "Power BI adoption roadmap: User support"
 description: Support users to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -24,7 +24,7 @@ For a description of related topics, including skills mentoring, training, docum
 
 If a user has an issue, do they know what their options are to resolve it? The following diagram shows some common types of user support that organizations employ successfully:
 
-:::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power B I user support, and the two types of external support, which are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power BI user support, and the two types of external support, which are described in the table below." border="false":::
 
 The six types of user support shown in the above diagram include:
 
@@ -43,7 +43,7 @@ Each of the four types of internal user support introduced above are described i
 
 ## Intra-team support
 
-_Intra-team support_ refers to when team members learn from and help each other during their daily work. People who emerge as your [Power BI champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help. Although it's an informal support mode, it should not be undervalued. Some estimates indicate that a large percentage of learning at work is peer learning, which is particularly helpful for analysts who are creating domain-specific Power BI solutions.
+*Intra-team support* refers to when team members learn from and help each other during their daily work. People who emerge as your [Power BI champions](powerbi-adoption-roadmap-community-of-practice.md#champions-network) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help. Although it's an informal support mode, it should not be undervalued. Some estimates indicate that a large percentage of learning at work is peer learning, which is particularly helpful for analysts who are creating domain-specific Power BI solutions.
 
 > [!NOTE]
 > Intra-team support does not work well for individuals who are the only data analyst within a department. It's also not effective for those who don't have very many connections yet in their organization. When there aren't any close colleagues to depend on, other types of support, as described in this article, become more important.
@@ -83,7 +83,7 @@ The help desk is usually operated as a shared service, operated by the IT depart
 
 There are also certain technical issues which cannot be fully resolved without IT involvement, like software installation and upgrade requests when machines are IT-managed.
 
-Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase, like software installation prerequisites. Some organizations task the help desk to handle only very simple break-fix issues, whereas other organizations have the help desk get involved with anything that is repeatable, like new [workspace](../collaborate-share/service-create-the-new-workspaces.md) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting new [Premium capacities](../admin/service-premium-what-is.md).
+Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase, like software installation prerequisites. Some organizations task the help desk to handle only very simple break-fix issues, whereas other organizations have the help desk get involved with anything that is repeatable, like new [workspace](../collaborate-share/service-create-the-new-workspaces.md) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting new [Premium capacities](../enterprise/service-premium-what-is.md).
 
 > [!IMPORTANT]
 > Your Power BI governance decisions will directly impact the volume of help desk requests. For example, if you choose to limit [workspace creation permissions in the tenant settings](admin-tenant-settings.md#create-workspaces), it will result in users submitting help desk tickets. While it's a legitimate decision to make, you must be prepared to satisfy the request very quickly, usually within 1-4 hours if possible. Consider that automation with Power Apps and Power Automate can help make the process efficient. If you delay too long, users will use what they already have, and that may not be the ideal scenario. Promptness is critical for certain help desk requests.

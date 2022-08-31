@@ -4,9 +4,9 @@ description: If the default region for your organization's Power BI data isn't o
 author: kfollis
 ms.author: kfollis
 ms.service: powerbi
-ms.subservice: powerbi-admin
-ms.topic: how-to 
-ms.date: 09/28/2021
+ms.subservice: pbi-troubleshooting
+ms.topic: troubleshooting 
+ms.date: 02/10/2022
 ms.custom: template-how-to; subject-moving-resources
 ---
 
@@ -34,7 +34,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
   :::image type="content" source="media\service-admin-region-move\user-error-message.png" alt-text="Screen capture showing example error message shown to users during migration.":::
 
 - Capacities and Premium workspaces can't be migrated.
-- Power BI Premium Per User (PPU) capacity will be deleted before migration starts. After the migration, PPU capacity will be recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
+- Power BI Premium Per User (PPU) capacity will be deleted before migration starts. After the migration, PPU capacity will be recreated at first PPU user sign-in. For more information about PPU licenses, see [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml).
 - After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
 - Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets.
 - You have to reconfigure data gateways after migration. To learn more about this step, read [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
@@ -42,7 +42,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
 - Some usage data collected before migration is unavailable after migration. Usage data in the sources listed below will be lost:
   - [Power BI Activity Log](service-admin-auditing.md)
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
-  - [Data protection metrics report](service-security-data-protection-metrics-report.md)
+  - [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
   - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
 
 ### Preparation steps
@@ -100,7 +100,7 @@ When migration is complete, you'll be able to access Power BI in about 20-30 min
 
 Do the following steps to recreate the configuration of the original region:
 
-1. Recreate capacities and move workspaces back to Premium. Read more about this step in [Configure and manage capacities in Power BI Premium](./service-admin-premium-manage.md).
+1. Recreate capacities and move workspaces back to Premium. Read more about this step in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md).
 1. If push datasets were deleted, recreate them. Refer to [https://docs.microsoft.com/en-us/power-bi/connect-data/service-real-time-streaming](../connect-data/service-real-time-streaming.md) to learn how to push data into a dataset.
 1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
 1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
@@ -157,3 +157,7 @@ Refresh in the old region should stop after migration.
 ### My allowlist contains Power BI IP ranges that are used to access some data sources. Do I need to update the IP ranges to match the new location?
  
 Yes. As it’s a new location, the IP ranges are also changing and need to be updated.  [Download the Azure IP Ranges JSON file](https://www.microsoft.com/download/details.aspx?id=56519) to identify the needed IP ranges.
+
+### Is there a cost to have my tenant moved to a different region?
+
+No, there's no cost charged for region migration. Customers that have any paid licenses can migrate. The operation must be requested by a global administrator.

@@ -3,7 +3,7 @@ title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
 author: peter-myers
 ms.author: v-petermyers
-ms.reviewer: asaxton
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -36,7 +36,7 @@ A key governance decision is who to assign as a Power BI administrator. It's a c
 The Power BI administrator role is considered a high privilege role because:
 
 - Settings that are managed by a Power BI administrator have a significant effect on user capabilities and user experience (described in the [Tenant settings](#tenant-settings) section below).
-- Power BI administrators can update access permissions for any workspace (excluding personal workspaces and [classic workspaces](https://powerbi.microsoft.com/blog/updated-timeline-for-upgrading-classic-workspaces/)). The result is that an administrator can allow permission to view or download data artifacts as they see fit (described in the [Tenant settings](#tenant-settings) section below).
+- Power BI administrators can update access permissions for any workspace (excluding My workspaces). The result is that an administrator can allow permission to view or download datasets as they see fit (described in the [Tenant settings](#tenant-settings) section below).
 - Power BI administrators can view all tenant metadata, including all user activities that occur in the Power BI service (described in the [auditing and monitoring](#auditing-and-monitoring) section below).
 
 > [!IMPORTANT]
@@ -81,7 +81,7 @@ Overseeing the Power BI service is a crucial aspect to ensure that all users hav
 
 ### Tenant settings
 
-Proper management of [tenant settings](../admin/service-admin-portal.md#tenant-settings) in the Power BI service is critical. Tenant settings are the main way to control which Power BI capabilities are enabled and to which groups of users in your organization.
+Proper management of [tenant settings](../admin/service-admin-portal-about-tenant-settings.md) in the Power BI service is critical. Tenant settings are the main way to control which Power BI capabilities are enabled and to which groups of users in your organization.
 
 It's essential that tenant settings align with governance guidelines and policies, and also with how the COE makes decisions. If a Power BI administrator independently decides which settings to enable or disable, that's a clear indicator of an opportunity to improve governance processes.
 
@@ -117,13 +117,13 @@ As discussed in the Power BI adoption [maturity levels](powerbi-adoption-roadmap
 
 Additional responsibilities for managing the Power BI service include:
 
-- [Workspace management and access](../admin/service-admin-portal.md#workspaces).
-- [Premium capacity and Premium Per User settings](../admin/service-admin-portal.md#capacity-settings).
-- [Embed codes](../admin/service-admin-portal.md#embed-codes).
-- [Organizational visuals](../admin/service-admin-portal.md#organizational-visuals).
-- [Azure connections](../admin/service-admin-portal.md#azure-connections).
-- [Custom branding](../admin/service-admin-portal.md#custom-branding).
-- [Featured content](../admin/service-admin-portal.md#manage-featured-content).
+- [Workspace management and access](../admin/service-admin-portal-workspaces.md).
+- [Premium capacity and Premium Per User settings](../admin/service-admin-portal-capacity-settings.md).
+- [Embed codes](../admin/service-admin-portal-embed-codes.md).
+- [Organizational visuals](../admin/service-admin-portal-organizational-visuals.md).
+- [Azure connections](../admin/service-admin-portal-azure-connections.md).
+- [Custom branding](../admin/service-admin-portal-custom-branding.md).
+- [Featured content](../admin/service-admin-portal-featured-content.md).
 
 In addition to these documentation links, see the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP), which describes additional considerations for Power BI administration.
 
@@ -196,15 +196,15 @@ When becoming acquainted with Power BI, many system administrators assume it's a
 
 Power BI Premium can play a significant role in your BI strategy. Some top reasons to invest in Premium include:
 
-- [Unlimited content distribution](../admin/service-premium-what-is.md#unlimited-content-sharing) to large numbers of read-only (content consumption with a free Power BI license is available in Premium capacity only, not PPU).
+- [Unlimited content distribution](../enterprise/service-premium-what-is.md#unlimited-content-sharing) to large numbers of read-only (content consumption with a free Power BI license is available in Premium capacity only, not PPU).
 - [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) to manage the publication of content to development, test, and production workspaces. They are highly recommended for critical content to improve release stability.
 - [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) to deliver highly-formatted, pixel-perfect reports. This report type allows content creators to meet additional types of information delivery requirements.
-- [XMLA endpoint](../admin/service-premium-connect-tools.md), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
-- Increased model size limits, including [large dataset](../admin/service-premium-large-models.md) support.
+- [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
+- Increased model size limits, including [large dataset](../enterprise/service-premium-large-models.md) support.
 - More frequent [data refreshes](../connect-data/refresh-data.md#power-bi-refresh-types).
 - Storage of data in a specific geographic area ([multi-geo](../admin/service-admin-premium-multi-geo.md) is available by capacity only).
 
-This list is not all-inclusive. For a complete list of Premium features, see [Power BI Premium FAQ](../admin/service-premium-faq.yml).
+This list is not all-inclusive. For a complete list of Premium features, see [Power BI Premium FAQ](../enterprise/service-premium-faq.yml).
 
 #### Managing Premium capacity
 
@@ -216,32 +216,32 @@ Overseeing the health of Power BI Premium capacity is an essential ongoing activ
 Suggestions for managing Premium capacity:
 
 - Create a specific set of criteria for content that will be published to Premium capacity. It's particularly relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity is not well-managed. For a list of items that may be included in the best practices review (such as reasonable dataset size and efficient calculations), see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) article.
-- Regularly use the [Premium monitoring app](../admin/service-premium-gen2-metrics-app.md) to understand resource utilization and patterns for the Premium capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
+- Regularly use the [Premium monitoring app](../enterprise/service-premium-gen2-metrics-app.md) to understand resource utilization and patterns for the Premium capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
 - Configure the [tenant setting](../admin/service-interruption-notifications.md#enable-notifications) so Power BI notifies you if the [Premium capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or an outage or incident occurs.
 
 #### Autoscale
 
-[Autoscale](../admin/service-premium-auto-scale.md) is a capability of [Power BI Premium Gen 2](../admin/service-premium-concepts.md) that's intended to handle occasional or unexpected bursts in Premium usage levels. It can respond to these bursts by automatically increasing CPU resources to support the increased workload. Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity is not well-managed, autoscale may trigger more often than expected. In this case, the [Premium monitoring app](../admin/service-premium-gen2-metrics-app.md) can help you to determine underlying issues.
+[Autoscale](../enterprise/service-premium-auto-scale.md) is a capability of [Power BI Premium Gen 2](../enterprise/service-premium-concepts.md) that's intended to handle occasional or unexpected bursts in Premium usage levels. It can respond to these bursts by automatically increasing CPU resources to support the increased workload. Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity is not well-managed, autoscale may trigger more often than expected. In this case, the [Premium monitoring app](../enterprise/service-premium-gen2-metrics-app.md) can help you to determine underlying issues.
 
 #### Decentralized Premium capacity management
 
-Capacity administrators are responsible for [assigning workspaces](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) to a specific capacity. Note that workspace administrators can also assign a workspace to PPU if the workspace administrator possesses a PPU license. However, it would require that all other workspace users must also have a PPU license.
+Capacity administrators are responsible for [assigning workspaces](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) to a specific capacity. Note that workspace administrators can also assign a workspace to PPU if the workspace administrator possesses a PPU license. However, it would require that all other workspace users must also have a PPU license.
 
 It's possible to set up multiple capacities to facilitate decentralized management by different business units. Decentralizing management of certain aspects of Power BI is a great way to balance agility and control. Here's an example to describe how it could be managed for Premium capacity:
 
-- [Purchase](../admin/service-admin-premium-purchase.md) a P3 capacity node in Microsoft 365, which includes 32 virtual cores.
+- [Purchase](../enterprise/service-admin-premium-purchase.md) a P3 capacity node in Microsoft 365, which includes 32 virtual cores.
 - Use 16 cores to create the first capacity—it will be used by the Sales team.
 - Use 8 cores to create the second capacity—it will be used by the Operations team.
 - Use the remaining 8 cores to create the third capacity—it will support general use.
 
 This example has several advantages:
 
-- Separate [capacity administrators](../admin/service-admin-premium-manage.md#manage-user-permissions) may be configured for each capacity, and so it facilitates decentralized management situations.
+- Separate [capacity administrators](../enterprise/service-admin-premium-manage.md#manage-user-permissions) may be configured for each capacity, and so it facilitates decentralized management situations.
 - If a capacity is not well-managed, the effect is confined to that capacity only. The other capacities are not impacted.
 
 However, the example has disadvantages, too:
 
-- The [limits per capacity](../admin/service-premium-what-is.md#capacity-nodes) are lower. The maximum memory size allowed for datasets isn't the entire P3 capacity node size; rather, it's the assigned capacity size where the dataset is hosted.
+- The [limits per capacity](../enterprise/service-premium-what-is.md#capacity-nodes) are lower. The maximum memory size allowed for datasets isn't the entire P3 capacity node size; rather, it's the assigned capacity size where the dataset is hosted.
 
 ### Gateway architecture and management
 
@@ -337,9 +337,9 @@ Generally, disabling trials is not recommended. It can encourage users to apply 
 Managing and optimizing the cost of cloud services, like Power BI, is an important activity. Here are several activities you may want to consider:
 
 - Analyze who is using—and, more to the point, not using—their allocated Power BI licenses and make necessary adjustments. Power BI usage is analyzed using the [activity log](../admin/service-admin-auditing.md).
-- Analyze the cost effectiveness of [Premium capacity](../admin/service-premium-what-is.md) or [Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-). In addition to the [additional features](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers (unlimited content distribution is only available with Premium capacity, not PPU licensing).
-- Carefully [monitor and manage Premium capacity](../admin/service-premium-gen2-metrics-app.md). Understanding usage patterns over time will allow you to predict when to purchase [additional capacity](../admin/service-premium-what-is.md#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
-- If there are occasional spikes in the level of usage, use of [autoscale](../admin/service-premium-auto-scale.md) with [Power BI Premium Gen 2](../admin/service-premium-concepts.md) is recommended. It will scale up capacity resources for 24 hours, then scale them back down to normal levels (provided that sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
+- Analyze the cost effectiveness of [Premium capacity](../enterprise/service-premium-what-is.md) or [Premium Per User](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-). In addition to the [additional features](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers (unlimited content distribution is only available with Premium capacity, not PPU licensing).
+- Carefully [monitor and manage Premium capacity](../enterprise/service-premium-gen2-metrics-app.md). Understanding usage patterns over time will allow you to predict when to purchase [additional capacity](../enterprise/service-premium-what-is.md#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
+- If there are occasional spikes in the level of usage, use of [autoscale](../enterprise/service-premium-auto-scale.md) with [Power BI Premium Gen 2](../enterprise/service-premium-concepts.md) is recommended. It will scale up capacity resources for 24 hours, then scale them back down to normal levels (provided that sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Power BI tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/), which are minimal, but at scale can be considerable.
 
 ## Security and data protection
@@ -356,13 +356,13 @@ Some organizations ask Power BI users to accept a self-service user acknowledgme
 
 In a [cloud shared responsibility model](/azure/security/fundamentals/shared-responsibility), securing the data itself is always the responsibility of the customer. With a self-service BI platform, self-service content creators have responsibility for properly securing the content that's shared with colleagues. The COE should provide [documentation and training](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
-Administrators can be help by following best practices themselves, and by raising concerns when they see issues that could be discovered when [managing workspaces](../admin/service-admin-portal.md#workspaces), [auditing user activities](../admin/service-admin-auditing.md), or managing [gateway credentials and users](../connect-data/service-gateway-data-sources.md#add-a-data-source). There are also a several [tenant settings](../admin/service-admin-portal.md#tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](../admin/service-admin-portal.md#publish-to-web) or the ability to [publish apps to the entire organization](../admin/service-admin-portal.md#publish-content-packs-and-apps-to-the-entire-organization)).
+Administrators can be help by following best practices themselves, and by raising concerns when they see issues that could be discovered when [managing workspaces](../admin/service-admin-portal-workspaces.md), [auditing user activities](../admin/service-admin-auditing.md), or managing [gateway credentials and users](../connect-data/service-gateway-data-sources.md#add-a-data-source). There are also a several [tenant settings](../admin/service-admin-portal-about-tenant-settings.md) that are usually restricted except for a few users (for instance, the ability to [publish to web](../admin/service-admin-portal-export-sharing.md#publish-to-web) or the ability to [publish apps to the entire organization](../admin/service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization)).
 
 ### External guest users
 
 External users—such as partners, customers, vendors, and consultants—are a very common occurrence for some organizations, and very rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](../admin/service-admin-portal.md#export-and-sharing-settings) in the Power BI service as well as certain Azure Active Directory settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](../admin/service-admin-portal-export-sharing.md) in the Power BI service as well as certain Azure Active Directory settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
 
 ### Information protection
 
@@ -371,18 +371,18 @@ Power BI supports capabilities for information protection and data loss preventi
 - [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to *know your data, protect your data, prevent data loss, and govern your data*.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) (Defender for Cloud Apps), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how Defender for Cloud Apps can be used for oversight of the Power BI service.
 
-Power BI's information protection capabilities are built upon [sensitivity labels](whitepaper-powerbi-security.md#data-loss-prevention-dlp). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
+Power BI's information protection capabilities are built upon [sensitivity labels](./whitepaper-powerbi-security.md#microsoft-purview-for-power-bi). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
 
 > [!IMPORTANT]
 > A sensitivity label offers powerful data protection capabilities. However, it's not a replacement for standard data security practices, such as workspace roles, app security, individual item sharing, or row-level security.
 
 The power of sensitivity labels is:
 
-- Automated data loss prevention within the Power BI service, for instance, when [Defender for Cloud Apps](../admin/service-security-using-defender-for-cloud-apps-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
-- Automated data loss prevention across system boundaries, such as when the [label follows the content](../admin/service-security-sensitivity-label-overview.md#introduction) from when it's exported from the Power BI service to Excel or PowerPoint.
+- Automated data loss prevention within the Power BI service, for instance, when [Defender for Cloud Apps](../enterprise/service-security-using-defender-for-cloud-apps-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
+- Automated data loss prevention across system boundaries, such as when the [label follows the content](../enterprise/service-security-sensitivity-label-overview.md#introduction) from when it's exported from the Power BI service to Excel or PowerPoint.
 - User education, so users know what they can and cannot do with the data. It's not automated. Rather, it should be handled with a data governance policy and user education.
 
-There are several [tenant settings](../admin/service-admin-portal.md#information-protection) which relate to information protection. For more information, see the [Auditing and monitoring](#auditing-and-monitoring) section in this article.
+There are several [tenant settings](../admin/service-admin-portal-information-protection.md) which relate to information protection. For more information, see the [Auditing and monitoring](#auditing-and-monitoring) section in this article.
 
 ### Data residency
 
@@ -390,9 +390,9 @@ For organizations with requirements to store data within a geographic region, Pr
 
 ### Encryption keys
 
-Microsoft handles encryption of *data at rest* in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../admin/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as *bring-your-own-key* or *BYOK*—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
+Microsoft handles encryption of *data at rest* in Microsoft data centers with transparent server-side encryption and auto-rotation of certificates. For customers with regulatory requirements to [manage the Premium encryption key themselves](../enterprise/service-encryption-byok.md), Premium capacity can be configured to use [Azure Key Vault](/azure/key-vault/general/basic-concepts). Using customer-managed keys—also known as *bring-your-own-key* or *BYOK*—is a precaution to ensure that, in the event of a human error by a service operator, customer data cannot be exposed.
 
-Note that [Premium Per User](../admin/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Power BI tenant.
+Note that [Premium Per User](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) only supports BYOK when it's enabled for the entire Power BI tenant.
 
 ## Auditing and monitoring
 
@@ -400,7 +400,7 @@ A wealth of metadata is available for understanding what's happening within your
 
 There are also a variety of [REST APIs](/rest/api/power-bi/) that provide additional information about workspaces, apps, datasets, and more. Of particular interest to administrators are the [admin APIs](/rest/api/power-bi/admin). These APIs provide a means to extract metadata for the entire tenant. The [Power BI Management Module](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true) is a set of PowerShell commands which make it easier to obtain metadata rather than dealing directly with the APIs. However, substantially more information is available directly from the APIs.
 
-Long-term [usage and performance insights](https://powerbi.microsoft.com/blog/announcing-long-term-usage-and-performance-insights-public-preview/) are also available for workspaces backed by [Premium capacity](../admin/service-premium-what-is.md). Administrators can analyze dataset activity, performance, and behavior. This capability is integrated with [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+Long-term [usage and performance insights](https://powerbi.microsoft.com/blog/announcing-long-term-usage-and-performance-insights-public-preview/) are also available for workspaces backed by [Premium capacity](../enterprise/service-premium-what-is.md). Administrators can analyze dataset activity, performance, and behavior. This capability is integrated with [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ### Auditing
 
@@ -469,7 +469,7 @@ Considerations and key actions you can take to improve management of the Power B
 
 - Conduct a review of all tenant settings to ensure they are aligned with [data culture](powerbi-adoption-roadmap-data-culture.md) objectives and [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
 - Document the tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature.
-- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](../admin/service-admin-portal.md#help-and-support-settings) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
+- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](../admin/service-admin-portal-help-support.md) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
 
 Considerations and key actions you can take to improve management of user machines and devices:
 

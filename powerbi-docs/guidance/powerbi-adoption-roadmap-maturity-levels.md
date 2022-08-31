@@ -2,8 +2,8 @@
 title: Power BI adoption roadmap maturity levels
 description: A description of the maturity levels used in the Power BI adoption roadmap series of articles.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -16,7 +16,7 @@ ms.date: 06/30/2021
 
 There are three inter-related perspectives to consider when adopting a technology like Power BI.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-maturity-levels/powerbi-adoption-roadmap-adoption-types.png" alt-text="Image shows the three inter-related types of Power B I adoption, which are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-adoption-roadmap-maturity-levels/powerbi-adoption-roadmap-adoption-types.png" alt-text="Image shows the three inter-related types of Power BI adoption, which are described in the table below." border="false":::
 
 The three types of adoption shown in the above diagram include:
 
@@ -24,7 +24,7 @@ The three types of adoption shown in the above diagram include:
 | --- | --- |
 | ![Type 1.](media/common/icon-01-red-30x30.png) | **Organizational adoption:** Organizational adoption refers to the effectiveness of Power BI governance. It also refers to data management practices that support and enable business intelligence efforts. |
 | ![Type 2.](media/common/icon-02-red-30x30.png) | **User adoption:** User adoption is the extent to which consumers and creators continually increase their knowledge. It is concerned with whether they are actively using Power BI, and whether they are using it in the most effective way. |
-| ![Type 3.](media/common/icon-03-red-30x30.png) | **Solution adoption:** Solution adoption refers to the impact and business value achieved for individual requirements and artifacts. |
+| ![Type 3.](media/common/icon-03-red-30x30.png) | **Solution adoption:** Solution adoption refers to the impact and business value achieved for individual requirements and Power BI items. |
 
 As the four arrows in the previous diagram indicate, the three types of adoption are all strongly inter-related:
 
@@ -52,7 +52,7 @@ Every organization has limited time, funding, and people. So, it requires them t
 
 ### Maturity level 100 – Initial
 
-Level 100 is referred to as _initial_ or _performed_. It is the starting point for new data-related investments that are new, undocumented, and without any process discipline.
+Level 100 is referred to as *initial* or *performed*. It is the starting point for new data-related investments that are new, undocumented, and without any process discipline.
 
 Common characteristics of maturity level 100 include:
 
@@ -66,7 +66,7 @@ Common characteristics of maturity level 100 include:
 
 ### Maturity level 200 – Repeatable
 
-Level 200 is referred to as _repeatable_ or _managed_. At this point on the maturity curve, data management is planned and executed. Data management is based on defined processes, though these processes may not apply uniformly throughout the organization.
+Level 200 is referred to as *repeatable* or *managed*. At this point on the maturity curve, data management is planned and executed. Data management is based on defined processes, though these processes may not apply uniformly throughout the organization.
 
 Common characteristics of maturity level 200 include:
 
@@ -80,7 +80,7 @@ Common characteristics of maturity level 200 include:
 
 ### Maturity level 300 – Defined
 
-Level 300 is referred to as _defined_. At this point on the maturity curve, a set of standardized data management processes are established and consistently applied across organizational boundaries.
+Level 300 is referred to as *defined*. At this point on the maturity curve, a set of standardized data management processes are established and consistently applied across organizational boundaries.
 
 Common characteristics of maturity level 300 include:
 
@@ -96,7 +96,7 @@ Common characteristics of maturity level 300 include:
 
 ### Maturity level 400 – Capable
 
-Level 400 is known as _capable_ or _measured_. At this point on the maturity curve, data is well-managed across its entire lifecycle.
+Level 400 is known as *capable* or *measured*. At this point on the maturity curve, data is well-managed across its entire lifecycle.
 
 Common characteristics of maturity level 400 include:
 
@@ -110,7 +110,7 @@ Common characteristics of maturity level 400 include:
 
 ### Maturity level 500 – Efficient
 
-Level 500 is known as _efficient_ or _optimizing_ because at this point on the maturity curve, the emphasis is now on automation and continuous improvement.
+Level 500 is known as *efficient* or *optimizing* because at this point on the maturity curve, the emphasis is now on automation and continuous improvement.
 
 Common characteristics of maturity level 500 include:
 

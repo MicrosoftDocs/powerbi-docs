@@ -14,7 +14,7 @@ ms.date: 01/05/2022
 
 This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application.
 
-> [!Note]
+> [!NOTE]
 > Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and measures. For more information, see the [Power BI optimization guide](../../guidance/power-bi-optimization.md).
 
 ## Update tools and SDK packages
@@ -60,7 +60,7 @@ When embedding multiple visuals into a single iFrame, consider the following:
 
 * If you have visuals from different reports or different datasets, consider joining the datasets and creating a new report so that you can include all the visuals in the same iFrame.
 
-* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to create a [dashboard](/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
+* Another alternative, if you have non-contiguous regions, or data from multiple datasets, is to create a [dashboard](/power-bi/create-reports/service-dashboard-tiles) and pin the visuals to it. This allows you to:
 
   * Embed the individual [tiles](/javascript/api/overview/powerbi/embed-dashboard-tile) into non-contiguous iFrames. Dashboard tiles are lighter than reports and load faster.
   * Embed the entire dashboard into one iFrame. This allows you to have visuals from different reports or datasets in one iFrame without creating a new report.
@@ -75,9 +75,9 @@ Organizations with Power BI Premium capacity or Power BI Embedded capacity can t
 
 ## Preload
 
-Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads JavaScript, css files, and other artifacts, which are used later to embed a report.
+Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads JavaScript, css files, and other [items](./pbi-glossary.md#item), which are used later to embed a report.
 
-Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the embedded Power BI content doesn't appear in the home page, use `powerbi.preload()` to download and cache the artifacts that are used for embedding the content.
+Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the embedded Power BI content doesn't appear in the home page, use `powerbi.preload()` to download and cache the items that are used for embedding the content.
 
 ## Bootstrapping the iFrame
 

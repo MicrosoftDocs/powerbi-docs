@@ -44,7 +44,7 @@ The following articles provide more information about dataflows and Power BI:
 * [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)
-
+* [Power BI usage scenarios: Self-service data preparation](../../guidance/powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md)
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview](/powerapps/common-data-model/overview)

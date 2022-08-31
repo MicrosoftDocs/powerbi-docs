@@ -14,11 +14,11 @@ ms.date: 09/16/2021
 
 # Chat in Microsoft Teams directly from the Power BI service
 
-You can open a Teams chat about Power BI dashboards, reports, visuals, and datasets directly from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [datasets](../connect-data/service-datasets-hub.md#view-dataset-details-and-explore-related-reports) in the Power BI service.
+You can open a Teams chat about Power BI dashboards, reports, visuals, and datasets directly from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [datasets](../connect-data/service-dataset-details-page.md#supported-actions) in the Power BI service.
 
 ## Requirements
 
-To use the **Chat in Teams** functionality in Power BI, make sure your Power BI administrator hasn't disabled the **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Chat in Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#microsoft-teams-integration-in-the-power-bi-service) article for details.
+To use the **Chat in Teams** functionality in Power BI, make sure your Power BI administrator hasn't disabled the **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Chat in Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal-export-sharing.md#microsoft-teams-integration-in-the-power-bi-service) article for details.
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 

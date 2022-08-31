@@ -1,28 +1,28 @@
 ---
-title: Import Power BI visuals from AppSource 
-description: Learn how you can download a visual from the AppSource, Partner Center, or elsewhere. 
+title: Import Power BI visuals from AppSource or from a file
+description: Learn how you can download a custom visual from AppSource, Partner Center, or elsewhere. 
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/17/2022
+ms.date: 05/08/2022
 ---
 
-# Import a Power BI visual
+# Import a Power BI visual from Appsource into your workspace
 
 Power BI comes with many out-of-the-box visuals that are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com).
 
-Many more Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) or through Power BI. These visuals are created by Microsoft and Microsoft partners, and are validated by the AppSource validation team.
+Many more certified Power BI visuals are available from the Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). These visuals are created by Microsoft and Microsoft partners, and are validated by the AppSource validation team. You can [download these visuals](#import-a-power-bi-visual-directly-from-appsource) directly to your visualization pane.
 
-You can also develop your own Power BI visual, or get one from a trusted friend or coworker.
+You can also [develop your own Power BI visual](develop-power-bi-visuals.md), or get one from a trusted friend or coworker.
 
-If you download or receive a Power BI visual, it has to be imported to the visualization pane before it can be used for creating and editing Power BI content.
+If you download or receive a Power BI visual file, you have to [upload](#import-a-visual-file-from-your-local-computer-into-power-bi) it to the visualization pane before you can use it to create Power BI content.
 
 ## Import a Power BI visual directly from AppSource
 
-To import a Power BI visual directly from AppSource, follow these steps:
+To import a Power BI visual directly from AppSource:
 
 1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com).
 2. Select the ellipsis from the visualizations pane.
@@ -33,7 +33,7 @@ To import a Power BI visual directly from AppSource, follow these steps:
 
    :::image type="content" source="media/import-visual/get-visuals.png" alt-text="Screenshot of get more visuals.":::
 
-4. Select *AppSource visuals* and click on the visual you want to import.
+4. Select *AppSource visuals* and select on the visual you want to import.
 
    :::image type="content" source="media/import-visual/select-visual.png" alt-text="Screenshot showing visuals available for import.":::
 
@@ -56,7 +56,9 @@ To import a Power BI visual directly from AppSource, follow these steps:
   
 ## Import a visual file from your local computer into Power BI
 
-To import a Power BI visual (*.pbiviz file) that has been downloaded to your local computer, follow these steps:
+Power BI visuals are packaged as *.pbiviz* files that can be stored on your computer. These files can be shared with other Power BI users. Visual files can be downloaded from Appsource onto your computer, but you can also get custom visuals from a trusted friend or colleague. Custom visuals that come from sources other than official Microsoft sources should be imported only if you trust the source.
+
+ To import a Power BI visual (`.pbiviz` file) that has been downloaded to your local computer:
 
 1. Open your report in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or [Power BI service](https://app.powerbi.com).
 2. Select the ellipsis from the visualizations pane.
@@ -80,7 +82,7 @@ To import a Power BI visual (*.pbiviz file) that has been downloaded to your loc
 
    :::image type="content" source="media/import-visual/new-visualization.png" alt-text="Screenshot of new imported visualization pane.":::
 
-8. If you want the visual to remain on the visualization pane for all reports right-click on it and select **Pin to visualization pane**.
+8. If you want the visual to remain on the visualization pane so you can use it in future reports, right-click on it and select **Pin to visualization pane**.
 
 ## Next steps
 
@@ -89,8 +91,5 @@ To import a Power BI visual (*.pbiviz file) that has been downloaded to your loc
 
 >[!div class="nextstepaction"]
 >[Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)
-
->[!div class="nextstepaction"]
->[Where to find Power BI visuals](power-bi-custom-visuals.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

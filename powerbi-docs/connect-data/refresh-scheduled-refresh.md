@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/07/2021
+ms.date: 03/18/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -82,6 +82,10 @@ Set the **Keep your data up to date** slider to **On** to configure the settings
 
 > [!NOTE]
 > Scheduled refresh will also get disabled automatically after four consecutive errors.
+
+> [!TIP]
+> Power BI does not have a monthly refresh interval option. However, you can use Power Automate to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/). 
+
 
 Certain datasets are supported against different gateways for scheduled refresh. Here is a reference to understand what is available.
 

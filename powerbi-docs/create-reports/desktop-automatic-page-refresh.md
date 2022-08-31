@@ -50,7 +50,7 @@ The **Page refresh** card will only be available if you are connected to a [Dire
 
 When selecting **Auto page refresh** as the refresh type, you need to provide the desired refresh interval. The default value is 30 minutes. (The minimum refresh interval is one second.) Your report will begin refreshing at the interval you set.
 
-If you are the administrator and need to make changes to the refresh interval, visit [Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md).
+If you are the administrator and need to make changes to the refresh interval, visit [Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md).
 
 When clicking on show details Power BI will provide further information on:
 
@@ -163,7 +163,7 @@ In the Power BI service, restrictions on automatic page refresh apply based on t
 
 To clarify how these restrictions work, let's start with some background on capacities and workspaces.
 
-*Capacities* are an important Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or reserved. A *shared capacity* is shared with other Microsoft customers. A *reserved capacity* is reserved for a single customer. For an introduction to reserved capacities, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md).
+*Capacities* are an important Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or reserved. A *shared capacity* is shared with other Microsoft customers. A *reserved capacity* is reserved for a single customer. For an introduction to reserved capacities, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
 
 In shared capacity, workloads run on computational resources shared with other customers. Because the capacity needs to share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -229,7 +229,7 @@ There are two areas where you could still encounter performance bottlenecks:
 1. **The capacity**. The query first hits the Premium capacity, which will fold and evaluate the DAX query generated from the report visualizations into the source queries.
 2. **The DirectQuery data source**. The translated queries in the previous step are then run against the source. The source would be your SQL Server instances, SAP Hana sources, and so on.
 
-By using the [Premium Capacity Metrics app](../admin/service-admin-premium-monitor-capacity.md) that's available to admins, you can visualize how much of the capacity is being used by low-priority queries.
+By using the [Premium Capacity Metrics app](../enterprise/service-admin-premium-monitor-capacity.md) that's available to admins, you can visualize how much of the capacity is being used by low-priority queries.
 
 Low-priority queries consist of automatic page refresh queries and model refresh queries. There's currently no way to distinguish between the load from automatic page refresh and model refresh queries.
 
@@ -255,7 +255,7 @@ If you notice that your capacity is overloaded with low-priority queries, there 
 * It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
 * In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
 * Both refresh types are managed separately so make sure that the type of refresh you are enabling is turned on.
-* For more information on enabling and configuring workloads in a Premium capacity, visit [Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md).
+* For more information on enabling and configuring workloads in a Premium capacity, visit [Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md).
 
 **My report is operating in mixed mode. (Mixed mode means the report has a DirectQuery connection and an Import data source.) Some visuals aren't refreshing.**
 

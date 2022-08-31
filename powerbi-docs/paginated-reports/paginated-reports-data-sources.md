@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/17/2022
+ms.date: 01/27/2022
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -18,7 +18,7 @@ This article spells out supported data sources for paginated reports in the Powe
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
 
 ## Natively supported data sources
 
@@ -26,10 +26,10 @@ Paginated reports natively support the following list of data sources:
 
 | Data Source | Authentication | Notes |
 | --- | --- | --- |
-| Azure SQL Database <br>Azure Synapse Analytics | Basic, single sign-on (SSO), OAuth2 | You may use an Enterprise Gateway with Azure SQL Database. However, you may not use SSO to authenticate in those scenarios.   |
+| Azure SQL Database <br>Azure Synapse Analytics | Basic, single sign-on (SSO), OAuth2 | You may use an Enterprise Gateway with Azure SQL Database.   |
 | Azure SQL Managed Instance | Basic | via Public or Private Endpoint (Private Endpoint needs to be routed through Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | The AAS firewall must be disabled or configured to allow all IP ranges in the BlackForest region. This applies only in the BlackForest region.  SSO from external tenant is not supported. |
-| Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission. Only Import mode and DirectQuery Power BI datasets are supported. Report queries using a DirectQuery Power BI dataset as a data source have a fixed 10 minute time-out. For report queries taking longer than 10 minutes, use the Power BI dataset's [XMLA Read/Write endpoint](../admin/service-premium-connect-tools.md) as the report data source. |
+| Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission. Only Import mode and DirectQuery Power BI datasets are supported. Report queries using a DirectQuery Power BI dataset as a data source have a fixed 10 minute time-out. For report queries taking longer than 10 minutes, use the Power BI dataset's [XMLA Read/Write endpoint](../enterprise/service-premium-connect-tools.md) as the report data source. |
 | Premium Power BI dataset (XMLA) | SSO | To ensure proper connectivity in Power BI Report Builder, ensure that the **Do not use credentials** option is selected when setting your data source.<br />Access through the XMLA honors security group membership set at the workspace or app level.<br />Users with at least a [Contributor role in a workspace](../collaborate-share/service-roles-new-workspaces.md) can render paginated reports with Premium Power BI datasets. Other users need [Build permission on the underlying datasets](../connect-data/service-datasets-build-permissions.md).    |
 | Dataverse | SSO, OAuth2 | Can't use a gateway as multifactor authentication (MFA)  isn't supported.
 | Enter Data | N/A | Data is embedded in the report. |
@@ -79,7 +79,7 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
   
 ## Considerations and limitations
 
-- When using a Power BI dataset as a data source, you may see an error message **"Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint."** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../admin/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the Analyze in Excel endpoint [(which has a 2 GB data limit)](../collaborate-share/service-analyze-power-bi-datasets-excel.md#considerations-and-limitations) to support Power BI datasets in Premium and non-Premium workspaces.
+- When using a Power BI dataset as a data source, you may see an error message **"Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint."** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the Analyze in Excel endpoint [(which has a 2 GB data limit)](../collaborate-share/service-analyze-power-bi-datasets-excel.md#considerations-and-limitations) to support Power BI datasets in Premium and non-Premium workspaces.
 
 ## Next steps
 

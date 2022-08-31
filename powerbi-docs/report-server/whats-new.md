@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/07/2021
+ms.date: 6/08/2022
 ms.custom: intro-whats-new
 ---
 
@@ -16,6 +16,47 @@ ms.custom: intro-whats-new
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## May 2022
+
+The May 2022 update of Power BI Report Server brings many new enhancements, including dynamic format strings support, bookmark navigators, and updated slicer defaults. Here’s a list of new and updated features with links to each. Or read the whole [Power BI Report Server blog post for May 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- [Dynamic format strings](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299296) now supported for all chart elements
+- [Bookmark navigator](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299298) now shows the last selected bookmark per group
+- [Data point rectangle select](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299300)
+- [Updated slicer defaults](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299302) for accessibility improvements
+
+#### Other
+
+- [Windows 11 support](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299304)
+- [Power BI Desktop infrastructure update (WebView2)](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299305)
+
+
+## January 2022 
+
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for January 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2022-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- Page and bookmark Navigators
+- Sort legend
+- New formatting options for text
+- Pie and donut chart rotation
+
+#### Modeling
+
+- SWITCH performance optimization
+- Bitwise functions in DAX
+
+### Other
+
+- WebView2
 
 ## September 2021 
 
@@ -63,7 +104,7 @@ Here’s a list of new and updated features. For details, see the [Power BI Repo
 
 Here are highlights of the the new features in Power BI Desktop for Power BI Report Server.
 
-- [Smart guides for aligning objects](../create-reports/desktop-create-phone-report.md) are now available in the mobile layout view.
+- [Smart guides for aligning objects](../create-reports/power-bi-create-mobile-optimized-report-about.md) are now available in the mobile layout view.
 - [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
 - [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
 - Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.

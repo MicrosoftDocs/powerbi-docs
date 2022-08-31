@@ -32,7 +32,7 @@ See [Understanding report data in Power BI Report Builder](report-builder-data.m
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../admin/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
 
 ## Create an embedded data source
   
@@ -66,27 +66,17 @@ See [Understanding report data in Power BI Report Builder](report-builder-data.m
 
 ## Considerations and limitations
 
-Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure row-level security (RLS) is enabled and enforced for your viewers, make sure you follow these rules:
+Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports that use Power BI datasets, and to ensure row-level security (RLS) is enabled and enforced for your viewers, follow these rules:
 
-### Classic apps and workspaces
 
-- .rdl in same workspace as dataset (same owner): Supported
-- .rdl in different workspace as dataset (same owner): Supported
-- Shared .rdl: You need Read permission assigned for each user viewing the report at the dataset level
-- Shared app: You need Read permission assigned for each user viewing the report at the dataset level
-- .rdl in same workspace as dataset (different user): Supported
-- .rdl in different workspace as dataset (different user):You need Read permission assigned for each user viewing the report at the dataset level
-- Role-level security: You need Read permission assigned for each user viewing the report at the dataset level to have it enforced.
-
-### New experience apps and workspaces
-
-- .rdl in same workspace as dataset: Supported
-- .rdl in different workspace as dataset (same owner): Supported
-- Shared .rdl: You need Read permission assigned for each user viewing the report at the dataset level
-- Shared app: You need Read permission assigned for each user viewing the report at the dataset level
-- .rdl in same workspace as dataset (different user) - Supported
-- .rdl in different workspace as dataset (different user): You need Read permission assigned for each user viewing the report at the dataset level
-- Role-level security: You need Read permission assigned for each user viewing the report at the dataset level to have it enforced
+|Scenario  |Rule  |
+|---------|---------|
+|.rdl in same workspace as dataset   | Supported |
+|Shared .rdl | You need Read permission assigned for each user viewing the report at the dataset level.  |
+|Shared app  |  You need Read permission assigned for each user viewing the report at the dataset level.  |
+|.rdl in same workspace as dataset (different user)   | Supported  |
+|.rdl in different workspace as dataset (different user)   |  You need Read permission assigned for each user viewing the report at the dataset level.     |
+|Row-level security | You need Read permission assigned for each user viewing the report at the dataset level to have it enforced   |
 
 ## Next steps
 

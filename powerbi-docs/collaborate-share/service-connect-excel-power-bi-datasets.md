@@ -7,12 +7,12 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/07/2022
+ms.date: 05/11/2022
 LocalizationGroup: Share your work
 ---
 # Start in Excel to connect to Power BI datasets
 
-From a new Excel workbook, you can connect to Power BI datasets that have been shared with you, in either Excel for the web or the Excel desktop app. Need some background before you get started? See [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md).
+From a new Excel workbook, you can connect to Power BI datasets that have been shared with you, in either Excel for the web or the Excel desktop app. See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) before you get started.
 
 ## Enable connected experiences 
 
@@ -52,7 +52,7 @@ To see the **From Power BI** option under **Get Data** in the Excel **Data** rib
 
 In general, you can connect to Power BI datasets from Excel if you meet the following conditions:
 
-- **Power BI license**: If the dataset is in a Premium workspace or in My workspace, you only need a free Power BI license. However, if the dataset is in any other workspace, then you need a Power BI Pro or Premium Per User (PPU) license. Learn more about [Power BI license types and capabilities](../admin/service-admin-licensing-organization.md#license-types-and-capabilities).
+- **Power BI license**: If the dataset is in a Premium workspace or in My workspace, you only need a free Power BI license. However, if the dataset is in any other workspace, then you need a Power BI Pro or Premium Per User (PPU) license. Learn more about [Power BI license types and capabilities](../enterprise/service-admin-licensing-organization.md#license-types-and-capabilities).
 
 - **Build permissions**: To build reports on Power BI datasets from Excel, you need build permissions to the dataset. Read about [Build permission for shared datasets](../connect-data/service-datasets-build-permissions.md).
  
@@ -65,8 +65,10 @@ In general, you can connect to Power BI datasets from Excel if you meet the foll
     - [Semi-Annual Enterprise Channel](/officeupdates/semi-annual-enterprise-channel)
 
     **Excel for the web**: You can connect to datasets in [Excel for the web](/office365/servicedescriptions/office-online-service-description/excel-online) depending on your organization's [Office for the web plan](/office365/servicedescriptions/office-online-service-description/office-online-service-description#feature-availability-across-office-for-the-web-plans).
+    
+     **Analysis Services**: If a Power BI dataset has a live connection to Azure Analysis Services or SQL Server Analysis Services, you can't connect to that dataset or refresh an existing Excel workbook with that connection in Excel for the web.
 
-For general [considerations and limitations](service-connect-power-bi-datasets-excel.md#considerations-and-limitations) about connecting to Power BI data in Excel, see the article "Connect Excel to Power BI datasets."
+See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements when connecting to Power BI data in Excel.
 
 ## Next steps
 

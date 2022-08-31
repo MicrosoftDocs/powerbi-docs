@@ -8,12 +8,15 @@ ms.reviewer: 'tapan maniar'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/26/2021
+ms.date: 06/29/2022
+ms.custom: sample-opportunityanalysissample
 LocalizationGroup: Visualizations
 ---
 
 
 # Tutorial: Embed a Power Apps visual in a Power BI report
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In this tutorial, you use the Power Apps visual to create a new app that is embedded in a sample Power BI report. This app interacts with other visuals in that report.
 

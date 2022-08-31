@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 03/25/2022
 LocalizationGroup: Connect to data
 ---
 # Connect to an Impala database in Power BI Desktop
@@ -42,6 +42,7 @@ To connect to an **Impala** database, take the following steps:
 There are a few considerations and limitations to keep in mind with the **Impala** connector:
 
 * The Impala connector is supported on the on-premises data gateway, using any of the three supported authentication mechanisms.
+* The Impala connector uses the Impala driver, which limits the size of string types to 32K by default.
 
 ## Next steps
 There are many different data sources that you can connect to by using Power BI Desktop. For more information about data sources, check out the following resources:

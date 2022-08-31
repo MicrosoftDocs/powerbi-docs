@@ -21,7 +21,7 @@ Power BI datasets represent a source of data ready for reporting and visualizati
 - Connecting to an existing data model that isn't hosted in a Power BI capacity
 - Uploading a Power BI Desktop file that contains a model
 - Uploading an Excel workbook (containing one or more Excel tables and/or a workbook data model), or uploading a  CSV (comma-separated values) file
-- Using the Power BI service to create a [push dataset](../developer/automation/walkthrough-push-data.md)
+- Using the Power BI service to create a [push dataset](/rest/api/power-bi/)
 - Using the Power BI service to create a [streaming or hybrid streaming dataset](service-real-time-streaming.md)
 
 Except for streaming datasets, the dataset represents a data model, which leverages the mature modeling technologies of [Analysis Services](/analysis-services/analysis-services-overview).
@@ -43,7 +43,7 @@ Connecting to Analysis Services often makes sense when there are existing model 
 
 Power BI Desktop - a client application intended for Power BI development - can be used to develop a model. The model is effectively an Analysis Services tabular model. Models can be developed by importing data from dataflows, which can then be integrated with external data sources. While the specifics on how modeling can be achieved is outside the scope of this article, it's important to understand that there are three different types, or _modes_, of models that can be developed by using Power BI Desktop. These modes determine whether data is imported into the model, or whether it remains in the data source. The three modes are: Import, DirectQuery, and Composite. For more information about each mode, see the [Dataset modes in the Power BI service](service-dataset-modes-understand.md) article.
 
-External-hosted models and Power BI desktop models can enforce row-Level security (RLS) to limit the data that is retrieved for a certain user. For example, users assigned to the **Salespeople** security group can only view report data for the sales region(s) to which they're assigned. RLS roles are _dynamic_ or _static_. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../admin/service-admin-rls.md).
+External-hosted models and Power BI desktop models can enforce row-Level security (RLS) to limit the data that is retrieved for a certain user. For example, users assigned to the **Salespeople** security group can only view report data for the sales region(s) to which they're assigned. RLS roles are _dynamic_ or _static_. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md).
 
 ### Excel workbook models
 
@@ -71,9 +71,10 @@ To successfully deploy and manage Power BI, it's important to understand where m
 
 It's also important to understand that Power BI-hosted Import models can refresh according to a schedule, or be triggered on-demand by a user in the Power BI service.
 
-In scenarios where the dataset owner might have left the organization and one needs to take over the ownership, use the ["Datasets - Take Over In Group"](https://docs.microsoft.com/rest/api/power-bi/datasets/take-over-in-group) API.
+In scenarios where the dataset owner might have left the organization and one needs to take over the ownership, use the ["Datasets - Take Over In Group"](/rest/api/power-bi/datasets/take-over-in-group) API.
 
 ## Next steps
 
 - [Dataset modes in the Power BI service](service-dataset-modes-understand.md)
-- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

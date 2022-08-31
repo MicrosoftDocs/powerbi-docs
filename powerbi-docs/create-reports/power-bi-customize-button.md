@@ -12,6 +12,8 @@ LocalizationGroup: Create reports
 ---
 # Customize buttons in Power BI reports
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Whether you create a button in Power BI Desktop or the Power BI service, you can customize it in many different ways to suit your requirements. For example, you can turn **Button Text** on or off, and change the button shape, icon, fill, title, or the action that's taken when users select the button in a report, among other properties.
 
 :::image type="content" source="media/power-bi-customize-button/power-bi-customize-shape-parallelogram.png" alt-text="Customize the shape of the button.":::
@@ -54,8 +56,25 @@ Here’s an example of a button with a custom image:
   
 Here's how.
 
-1. Select the button, and navigate to the **Icon** tab of the **Format** button pane.
-1. Select the **Custom** option for **Icon**, then select **Add image**.
+# [Power BI Desktop](#tab/powerbi-desktop)
+1. Select the button, and navigate to the **Style** >  **Icon** tab of the **Format button** pane.
+1. Select the **Custom** option for **Icon**, then select **Browse**.
+ 
+    :::image type="content" source="media/power-bi-customize-button/power-bi-add-custom-icon-desktop.png" alt-text="Screenshot shows the Browse option to add an image to add a custom image.":::
+
+1. After you add your image, you can customize the **Image fit** and **Icon placement**. With icon placement, you can place the image either **Left of text**, **Right of text**, **Below text**, or **Above text**.
+ 
+    :::image type="content" source="media/power-bi-customize-button/power-bi-icon-placement-illustration.png" alt-text="Illustration of image placement options.":::
+ 
+    Or choose the **Custom** option to control the icon’s **Vertical alignment** and **Horizontal alignment**:
+
+    :::image type="content" source="media/power-bi-customize-button/power-bi-icon-placement-custom-desktop.png" alt-text="Screenshot shows the image's Vertical and Horizontal alignment.":::
+
+1. You can also customize the **Icon size**. By default, icon size is set to **Auto**, meaning that as you resize the button, the icon size automatically changes size. You can set a fixed **Icon size** (in pixels) by typing a number in the **Icon size** box.
+
+# [Power BI service](#tab/powerbi-service)
+1. Select the button, and navigate to the **Icon** tab of the **Format button** pane.
+1. Select the **Custom** option for **Icon**, then select **Browse**.
  
     :::image type="content" source="media/power-bi-customize-button/power-bi-add-custom-icon.png" alt-text="Select Add image to add a custom image.":::
 
@@ -63,11 +82,12 @@ Here's how.
  
     :::image type="content" source="media/power-bi-customize-button/power-bi-icon-placement-illustration.png" alt-text="Illustration of image placement options.":::
  
-    Or choose the **Custom** option to control the icon’s **Vertical** and **Horizontal alignment**:
+    Or choose the **Custom** option to control the icon’s **Vertical alignment** and **Horizontal alignment**:
 
     :::image type="content" source="media/power-bi-customize-button/power-bi-icon-placement-custom.png" alt-text="Choose the image's Vertical and Horizontal alignment.":::
 
 1. You can also customize the **Icon size**. By default, icon size is set to **Auto**, meaning that as you resize the button, the icon size automatically changes size. You can set a fixed **Icon size** (in pixels) by typing a number in the **Icon size** box.
+---
 
 ## Add effects
 

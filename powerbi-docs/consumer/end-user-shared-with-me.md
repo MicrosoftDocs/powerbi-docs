@@ -20,7 +20,7 @@ When a colleague shares a dashboard or a report with you, it appears in your **S
 
 ![Share icon](./media/end-user-shared-with-me/power-bi-shared-with-me.png)
 
-Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro or Premium Per User (PPU) license. Read [What is Power BI Premium?](../admin/service-premium-what-is.md) for details.
+Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro or Premium Per User (PPU) license. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
     
 
 > [!NOTE]  

@@ -12,6 +12,9 @@ ms.date: 09/13/2021
 LocalizationGroup: Dashboards
 ---
 # Generate data insights on your dataset automatically with Power BI
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Do you have a new dataset and aren't sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?
 
 Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire dataset (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
@@ -35,7 +38,7 @@ Watch Amanda run quick insights on a dataset and open an insight in Focus mode. 
 
 Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. From the **Datasets + dataflows** tab, select **More options** (...) next to the dataset, and then choose **Get quick insights**.
+1. Choose the workspace where the dataset is located. From the **Datasets + dataflows** tab, select **More options** (...) next to the dataset, and then choose **Get quick insights**.
    
     ![Screenshot that shows selecting Get quick insights from the More options menu.](media/service-insights/power-bi-tab.png)
 2. Power BI uses [various algorithms](../consumer/end-user-insight-types.md) to search for trends in your dataset.

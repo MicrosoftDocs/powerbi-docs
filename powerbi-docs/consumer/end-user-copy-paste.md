@@ -7,14 +7,16 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/24/2021
+ms.date: 01/31/2022
 LocalizationGroup: Visualizations
 ---
-# Copy a visual as an image to your clipboard
+# Copy a visual and then paste it into another application
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
 
-Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual and paste it into any other application that supports pasting. 
+Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual and paste it into any other application that supports pasting. Copy an important visual and paste it into an email message, Word, PowerPoint, another Power BI report, and many more applications.
+
+:::image type="content" source="media/end-user-copy-paste/power-bi-copy-paste.png" alt-text="Copy a visual to your clipboard.":::
 
 When you copy a static image of a visual, you get a copy of the visual along with the metadata. This includes:
 * link back to the Power BI report or dashboard
@@ -80,16 +82,16 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
 
+Q: Why is my visual not pasting correctly?  
+A: There are limitations for custom visuals and animated visuals.
 
-Q: Why is my visual not pasting correctly?    
-A: There are limitations for custom visuals and animated visuals. 
-
-
+Q: Can I to copy a visual from my embedded Power BI report?  
+A: *Copy visual* is supported only in the **embed for your organization** scenario. It isn't available in the **embed for your customers** scenario.
 
 ## Next steps
+
 More about [Visualizations in Power BI reports](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 If you have edit permissions to a report, you can [copy and paste visuals within the same report](../visuals/power-bi-visualization-copy-paste.md). 
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

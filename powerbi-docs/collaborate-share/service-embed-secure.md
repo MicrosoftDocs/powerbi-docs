@@ -7,13 +7,13 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/30/2021
+ms.date: 05/02/2022
 LocalizationGroup: Share your work
 ---
 
 # Embed a report in a secure portal or website
 
-With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../admin/service-admin-rls.md). They provide no-code embedding into any portal that accepts a URL or iFrame. 
+With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iFrame. 
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals using a low-code approach requiring only basic HTML and JavaScript knowledge.
 
@@ -33,7 +33,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
     ![Sign in to view this report](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users who have view permission can see the report in Power BI. All [row-level security (RLS)](../admin/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed – either they need a Power BI Pro or Premium Per User (PPU) license, or the report must be in a workspace that is in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, once signed in, other reports load automatically.
+4. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users who have view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed – either they need a Power BI Pro or Premium Per User (PPU) license, or the report must be in a workspace that is in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, once signed in, other reports load automatically.
 
     ![Embed report](media/service-embed-secure/secure-embed-report.png)
 
@@ -45,11 +45,11 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 The **Embed** option doesn't automatically permit users to view the report. View permissions are set in the Power BI service.
 
-In the Power BI service, you can share embedded reports with users requiring access. If you're using a Microsoft 365 Group, you can list the user as a workspace member. For more information, see how to [manage your workspace in Power BI and Microsoft 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+In the Power BI service, you can share embedded reports with users requiring access. If you're using a Microsoft 365 Group, you can list the user as a workspace member.
 
 ## Licensing
 
-To view the embedded report, users need either a Power BI Pro or Premium Per User (PPU) license or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../admin/service-admin-premium-purchase.md).
+To view the embedded report, users need either a Power BI Pro or Premium Per User (PPU) license or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-admin-premium-purchase.md).
 
 ## Customize your embed experience using URL settings
 

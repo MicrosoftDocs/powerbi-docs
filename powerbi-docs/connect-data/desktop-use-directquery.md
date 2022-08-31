@@ -54,6 +54,25 @@ There are currently a few limitations to using DirectQuery:
 
 - There's a 125 column limit in a table or matrix for results that have more than 500 rows for DirectQuery sources. When displaying a result that contains more than 500 rows in a table or matrix, you will see a scrollbar that enables you to fetch more data. In that situation, the maximum number of columns in the table or matrix is 125. If you must include more than 125 columns in a single table or matrix, consider creating measures using MIN, MAX, FIRST or LAST as they do not count against this maximum.
 
+- You can't change from import to DirectQuery mode. While it's possible to switch a model from DirectQuery mode to use import mode, all the necessary data must be imported. It's also not possible to switch back, primarily because of the set of features not supported in DirectQuery mode. DirectQuery models over multidimensional sources, like SAP BW, also can't be switched from DirectQuery to import, because of the different treatment of external measures.
+
+- A known issue exists in DirectQuery when filtering a date column that contains December 31, 9999, which is often used as a special date placeholder when the actual date information was not captured. While it's common to filter the December 31, 9999 date from your analysis, using an *is* or *is not* filter does not correctly filter out that special date. To avoid incorrect filtering when that date is present, use *is on or after* or *is on or before* to filter for that special date. The following example provides more information to understand potential filtering issues and the best way to avoid them. 
+
+    In this example we use a simple dataset that contains just two rows of data with two dates. The dates are formatted in formats common in the United States: the month followed by the day followed by the year. The first row contains a date of March 5th, 2022 and the second row contains December 31st, 9999:
+    
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-example-data.png" alt-text="Example data to explain filter issue with special date of December 31st, 9999. The data contains two rows: first row contains March 5th, 2022 and the second row contains December 31st, 9999":::
+
+    If you want to isolate or remove the rows that contain December 31st, 9999 you likely create a filter on the column that contains the dates and set it to show items when the value is or is not equal to December 31st, 9999, as shown in the following image. Notice, however, that the results returned are not what is expected, as the visual returns no data, rather than returning one row, as is expected:
+
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-is-filter-incorrect-result.png" alt-text="Setting a filter to show items when the value is or is not equal to December 31st, 9999 will filter all data and thus return incorrect results.":::
+    
+    However, setting the filter to show items when the value *is on or before* or *is on or after* December 31st, 9999 returns the expected results:
+
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-is-on-or-before.png" alt-text="Setting a filter to is on or before December 31st, 9999 returns the correct results: the rows that contain December 31st, 9999 are removed.":::
+
+    :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-is-on-or-after.png" alt-text="Setting a filter to is on or after December 31st, 9999 returns the correct results: only the rows that contain December 31st, 9999 are returned.":::
+
+
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:
 
@@ -71,7 +90,7 @@ The following three points should be taken into consideration when using DirectQ
 
 - **Security**: By default, all users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This process is the same for data that's imported: all users see the same data, regardless of any security rules defined in the backend source.
 
-    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](../admin/service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
+    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](../enterprise/service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
 
 - **Supported features**: Some features in Power BI Desktop are unsupported in DirectQuery mode, or they have limitations. Also, some capabilities in the Power BI service (such as *Quick Insights*) aren't available for datasets using DirectQuery. When determining whether to use DirectQuery, you should consider these feature limitations.
 

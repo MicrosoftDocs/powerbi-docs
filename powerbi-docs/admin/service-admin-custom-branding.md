@@ -6,14 +6,13 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to 
-ms.date: 05/19/2021
+ms.date: 03/29/2022
 ms.custom: template-how-to
 ---
 
 # Add custom branding to the Power BI service
 
 As a Power BI admin, you can change the look and feel of the Power BI service to match your organization's own branding. Custom branding lets you change the theme color that appears in the top navigation bar, add your company logo, and bring your default landing page to life by adding a cover image.
-
 Custom branding will change the look of Power BI for your whole organization. Users can't override your custom branding with their own theme. Custom branding also appears to any external users who have access to your reports in B2B scenarios, helping to easily distinguish your organization.
 
 ## Before you begin
@@ -26,30 +25,26 @@ Custom branding will change the look of Power BI for your whole organization. Us
 
 The image below indicates where each of these elements appears in the Power BI service.
 
-:::image type="content" source="media/service-admin-custom-branding/custom-brand-elements.png" alt-text="Screen capture labeling where custom  brand appears." lightbox="media/service-admin-custom-branding/custom-brand-elements.png":::
-
 1. Logo
 1. Cover image
 1. Theme color
+
+:::image type="content" source="media/service-admin-custom-branding/custom-brand-elements.png" alt-text="Screen capture labeling where custom  brand appears." lightbox="media/service-admin-custom-branding/custom-brand-elements.png":::
 
 ## Add custom branding
 
 Follow these steps to customize the look of Power BI for your whole organization.
 
-1.  Sign in to the [Power BI service](https://app.powerbi.com) as a Power BI admin.
-1. From the navigation bar, select **Settings** > **Admin portal** > **Custom branding**.
-
+1. Sign in to the [Power BI service](https://app.powerbi.com) as a Power BI admin.
+2. From the navigation bar, select **Settings** > **Admin portal** > **Custom branding**.
     :::image type="content" source="media/service-admin-custom-branding/custom-brand-navigate.png" alt-text="Screen capture showing how to get to custom branding settings." border="false" lightbox="media/service-admin-custom-branding/custom-brand-navigate.png":::
-
-1. Upload a logo file.
-1. Upload a cover image file, then crop as needed to adjust how the image appears on the page.
-1. Select your theme color by using the color picker or by typing the hex or decimal code.
-
+3. Upload a logo file.
+4. Upload a cover image file, then crop as needed to adjust how the image appears on the page.
+5. Select your theme color by using the color picker or by typing the hex or decimal code.
     :::image type="content" source="media/service-admin-custom-branding/custom-brand-color-picker.png" alt-text="Screen capture showing theme color picker.":::
-   
-1. Select  **Preview** to see how your custom branding looks before you publish.
-1. When you're happy with your settings, select **Publish** to make the custom branding the default appearance for all users in your organization. The custom branding will appear when you refresh your browser window.
 
+6. Select  **Preview** to see how your custom branding looks before you publish.
+7. When you're happy with your settings, select **Publish** to make the custom branding the default appearance for all users in your organization. The custom branding will appear when you refresh your browser window.
     :::image type="content" source="media/service-admin-custom-branding/custom-brand-publish.png" alt-text="Screen capture showing all custom brand elements ready to publish.":::
 
 ## Remove custom branding
@@ -57,13 +52,18 @@ Follow these steps to customize the look of Power BI for your whole organization
 Follow these steps to return the look of Power BI to the default settings.
 
 1. Sign in to the Power BI service as a Power BI admin.
-1. From the navigation bar, select **Settings** > **Admin portal** > **Custom branding**.
-1. Select **Remove custom branding**, then select **Publish** to go back to the Power BI default look.
+2. From the navigation bar, select **Settings** > **Admin portal** > **Custom branding**.
+3. Select **Remove custom branding**, then select **Publish** to go back to the Power BI default look.
 
 ## Next steps
 
 Give your users a consistent online experience by applying custom branding to other services. Custom branding settings aren't shared between Microsoft 365 and Power BI, but your users will see branding that you apply to your organization's Azure Active Directory sign-in page.
 
-- [Add branding to your organization's Azure Active Directory sign-in page](/azure/active-directory/fundamentals/customize-branding)
-- [Customize the Microsoft 365 theme for your organization](/microsoft-365/admin/setup/customize-your-organization-theme)
-- [Add featured content to Power BI Home](../collaborate-share/service-featured-content.md)
+>[!div class="nextstepaction"]
+>[Add branding to your organization's Azure Active Directory sign-in page](/azure/active-directory/fundamentals/customize-branding)
+
+>[!div class="nextstepaction"]
+>[Customize the Microsoft 365 theme for your organization](/microsoft-365/admin/setup/customize-your-organization-theme)
+
+>[!div class="nextstepaction"]
+>[Add featured content to Power BI Home](../collaborate-share/service-featured-content.md)

@@ -47,7 +47,11 @@
       - name: "Composite model guidance"
         href: composite-model-guidance.md   
       - name: "Row-level security (RLS) guidance"
-        href: rls-guidance.md 
+        href: rls-guidance.md
+      - name: "Migrate AAS models to Power BI Premium"
+        href: migrate-azure-analysis-services-to-powerbi-premium.md
+      - name: "Migrate AAS models to Power BI Premium scenarios"
+        href: migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md
     - name: DAX
       items:
       - name: "Appropriate use of error functions"
@@ -75,21 +79,7 @@
       - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
-        href: report-drillthrough.md  
-      - name: "Tips to manage axes"
-        href: report-design-tips-axes.md  
-      - name: "Tips to control chart gridlines"
-        href: report-tips-chart-gridlines.md  
-      - name: "Tips to optimize the use of labels"
-        href: report-tips-labels.md
-      - name: "Tips to format and implement legends"
-        href: report-tips-legends.md
-      - name: "Tips to optimize visual colors"
-        href: report-tips-visual-colors.md
-      - name: "Tips to sort and distribute data plots"
-        href: report-tips-sort-distribute-data-plots.md
-      - name: "Tips to work with shapes, images, and icons"
-        href: report-tips-shapes-images-icons.md
+        href: report-drillthrough.md
     - name: Power BI paginated reports
       items:
       - name: "When to use paginated reports"
@@ -120,17 +110,17 @@
         href: admin-activity-log.md
   - name: Migrate to Power BI
     items: 
-      - name: "Migration overview"
+      - name: "Migration overview"
         href: powerbi-migration-overview.md
       - name: "Prepare to migrate"
         href: powerbi-migration-pre-migration-steps.md
       - name: "Gather requirements"
         href: powerbi-migration-requirements.md
-      - name: "Plan deployment"
+      - name: "Plan deployment"
         href: powerbi-migration-planning.md
-      - name: "Conduct proof of concept"
+      - name: "Conduct proof of concept"
         href: powerbi-migration-proof-of-concept.md
-      - name: "Create content"
+      - name: "Create content"
         href: powerbi-migration-create-validate-content.md
       - name: "Deploy to Power BI"
         href: powerbi-migration-deploy-support-monitor.md
@@ -164,11 +154,53 @@
         href: powerbi-adoption-roadmap-system-oversight.md
       - name: "Conclusion"
         href: powerbi-adoption-roadmap-conclusion.md
-  - name: Center of Excellence (COE)
+  - name: Implementation planning
+    items: 
+      - name: "Introduction"
+        href: powerbi-implementation-planning-introduction.md
+      - name: Usage scenarios
+        items:
+        - name: "Usage scenarios overview"
+          href: powerbi-implementation-planning-usage-scenario-overview.md
+        - name: "Personal BI"
+          href: powerbi-implementation-planning-usage-scenario-personal-bi.md
+        - name: "Team BI"
+          href: powerbi-implementation-planning-usage-scenario-team-bi.md
+        - name: "Departmental BI"
+          href: powerbi-implementation-planning-usage-scenario-departmental-bi.md
+        - name: "Enterprise BI"
+          href: powerbi-implementation-planning-usage-scenario-enterprise-bi.md
+        - name: "Managed self-service BI"
+          href: powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md
+        - name: "Customizable managed self-service BI"
+          href: powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md
+        - name: "Self-service data preparation"
+          href: powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md
+        - name: "Advanced data preparation"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md
+        - name: "Prototyping and sharing"
+          href: powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md
+        - name: "Self-service content publishing"
+          href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
+        - name: "Advanced data model management"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
+        - name: "On-premises reporting"
+          href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+      - name: "Tenant setup"
+        href: powerbi-implementation-planning-tenant-setup.md
+      - name: Workspaces
+        items:
+        - name: "Workspaces overview"
+          href: powerbi-implementation-planning-workspaces-overview.md
+        - name: "Tenant-level planning"
+          href: powerbi-implementation-planning-workspaces-tenant-level-planning.md
+        - name: "Workspace-level planning"
+          href: powerbi-implementation-planning-workspaces-workspace-level-planning.md
+  - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
         href: center-of-excellence-microsoft-business-intelligence-transformation.md
-      - name: "Establish a COE"
+      - name: "How Microsoft established a COE"
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
         href: center-of-excellence-business-intelligence-solution-architecture.md

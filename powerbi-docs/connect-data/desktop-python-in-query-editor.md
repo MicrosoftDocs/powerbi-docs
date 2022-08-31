@@ -54,7 +54,7 @@ To show how to use **Python** in **Power Query Editor**, take this example from 
 7. After selecting **OK**, **Power Query Editor** displays a warning about data privacy.
    
    ![Screenshot of the Power Query Editor pane, showing the warning about data privacy.](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
-8. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](../admin/desktop-privacy-levels.md).
+8. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](../enterprise/desktop-privacy-levels.md).
    
    ![Screenshot of the Privacy levels dialog, showing that Public is set.](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    

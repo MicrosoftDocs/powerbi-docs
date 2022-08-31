@@ -9,8 +9,16 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
-    - name: "Datasets discovery in the Power BI service"
-      href: service-datasets-hub.md
+    - name: "Data hub"
+      href: service-data-hub.md
+    - name: "Data details pages: Index"
+      href: service-data-details-page.md
+    - name: "Dataset details page"
+      href: service-dataset-details-page.md
+    - name: "Datamart details page"
+      href: service-datamart-details-page.md
+    - name: "Power BI for Azure users"
+      href: powerbi-azure-landing.md
   - name: Quickstarts
     expanded: true
     items: 
@@ -183,6 +191,8 @@
         href: service-dataset-description.md
       - name: "Share dataset access (preview)"
         href: service-datasets-share.md
+      - name: "Dataset permissions"
+        href: service-datasets-permissions.md
       - name: "Manage dataset access (preview)"
         href: service-datasets-manage-access-permissions.md
       - name: "Build permission for shared datasets"
@@ -213,7 +223,7 @@
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
         href: refresh-summaries.md
-      - name: "Asynchronous refresh with REST API"
+      - name: "Enhanced refresh with REST API"
         href: asynchronous-refresh.md     
       - name: Incremental refresh
         items:
@@ -249,8 +259,6 @@
         href: service-template-update-delete-extract.md
       - name: "Install, share, and update a template app"
         href: service-template-apps-install-distribute.md
-      - name: "Template apps samples"
-        href: service-template-apps-samples.md  
       - name: "Automated template app configuration"
         href: template-apps-auto-install.md              
     - name: Connect to services
@@ -269,6 +277,8 @@
         href: service-connect-to-health-emergency-response.md
       - name: "Emissions Impact Dashboard"
         href: service-connect-to-emissions-impact-dashboard.md
+      - name: "Emissions Impact Dashboard for Microsoft 365"
+        href: service-connect-emissions-impact-dashboard-microsoft-365.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
       - name: "Power BI Premium Capacity Metrics"
@@ -281,8 +291,6 @@
         href: service-connect-to-salesforce.md
       - name: "Smartsheet"
         href: service-connect-to-smartsheet.md
-      - name: "Xero"
-        href: service-connect-to-xero.md
       - name: "Zendesk"
         href: service-connect-to-zendesk.md
     - name: Gateways

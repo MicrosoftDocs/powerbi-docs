@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 08/25/2021
 ms.custom: video-0fOxaHJPvdM
 LocalizationGroup: Administration
@@ -23,7 +23,7 @@ The region where your data is stored is important because it can affect the inte
 
 The first user in your organization to sign up for Power BI or Microsoft 365 chooses the country or region for the business identity. Azure Active Directory (AAD), the shared identity and access management service for the cloud, creates a tenant in the data center region closest to the selected country or region. AAD is a multi-tenant service, and each organization is represented as an individual tenant in the data center.
 
-The region you select during sign-up determines where data is stored. This region will be the same location for all users in your organization, no matter where they are. Ideally, the selected region will be in the same geographical area as most of your users. For more information about signing up for Power BI and choosing the data region, see [Get a Power BI service subscription for your organization](service-admin-org-subscription.md).
+The region you select during sign-up determines where data is stored. This region will be the same location for all users in your organization, no matter where they are. Ideally, the selected region will be in the same geographical area as most of your users. For more information about signing up for Power BI and choosing the data region, see [Get a Power BI service subscription for your organization](../enterprise/service-admin-org-subscription.md).
 
 > [!IMPORTANT]
 > After sign-up you can't change the default data region yourself. For information about how to request a support-driven data region migration, see [Move between regions](service-admin-region-move.md).
@@ -47,7 +47,7 @@ To find the default data region for your organization, follow these steps:
 ## Learn more
 
 - [International availability of Microsoft Power Platform](/power-platform/availability)
-- [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)
+- [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md)
 - [Move Power BI between regions](service-admin-region-move.md)
 - [Administrators learning catalog](../learning-catalog/learning-catalog-administrator.md)
 

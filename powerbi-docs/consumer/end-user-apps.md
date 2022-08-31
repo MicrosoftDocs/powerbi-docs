@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 
 
 ## What is a Power BI app?
-Power BI *designers* can create official packaged content, then distribute it to a broad audience as an *app*. Apps are created in workspaces, where members can collaborate on Power BI content with their colleagues before publishing the finished app to individuals, large groups of people in an organization, or an entire organization. By using an app, it's easier for designers to manager permissions on these collections since the app can have permissions that are different than those set on the workspace.
+Power BI *designers* can create official packaged content, then distribute it to a broad audience as an *app*. Apps are created in workspaces, where members can collaborate on Power BI content with their colleagues before publishing the finished app to individuals, large groups of people in an organization, or an entire organization. By using an app, it's easier for designers to manage permissions on these collections since the app can have permissions that are different than those set on the workspace.
 
 An *app* combines related content -- dashboards, spreadsheets, datasets, and reports -- all in one place. An app can have one or more of each content type, all bundled together. There are many different ways a *designer* can share an app. To learn more, see the **Get a new app** section, below. 
 

@@ -40,7 +40,7 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
 :::row-end:::
 
  > [!NOTE] 
- > Marketplace apps aren't available for US government cloud instances. See [Power BI for US government customers](../admin/service-govus-overview.md) for more detail.
+ > Marketplace apps aren't available for US government cloud instances. See [Power BI for US government customers](../enterprise/service-govus-overview.md) for more detail.
 
 
 ## Process
@@ -85,7 +85,7 @@ Here are the high-level steps.
 
 ## Requirements
 
-To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](../admin/service-admin-portal.md#template-apps-settings) for details.
+To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](../admin/service-admin-portal-template-app.md) for details.
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
  > [!NOTE] 

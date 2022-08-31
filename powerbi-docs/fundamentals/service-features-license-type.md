@@ -18,7 +18,7 @@ There are three kinds of Power BI per-user licenses: Free, Pro, and Premium Per 
 
 ## Licenses and license types
 
-One type of license, [Power BI Premium](../admin/service-admin-premium-purchase.md) capacity-based license, allows users with a free license to act on content in workspaces that are assigned to Premium capacity. Outside of Premium capacity, a user with a free license can only use the Power BI service to connect to data and create reports and dashboards in **My Workspace**. They can't share content with others or publish content to other workspaces. To learn more about workspace types, see [Types of workspaces](../consumer/end-user-workspaces.md#types-of-workspaces). To discover more about Power BI Premium, see [What is Power BI Premium?](../admin/service-premium-what-is.md)
+One type of license, [Power BI Premium](../enterprise/service-admin-premium-purchase.md) capacity-based license, allows users with a free license to act on content in workspaces that are assigned to Premium capacity. Outside of Premium capacity, a user with a free license can only use the Power BI service to connect to data and create reports and dashboards in **My Workspace**. They can't share content with others or publish content to other workspaces. To learn more about workspace types, see [Types of workspaces](../consumer/end-user-workspaces.md#types-of-workspaces). To discover more about Power BI Premium, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 
 A Power BI license with free and Pro per-user license only uses a shared and limited capacity to process content. If content is stored in that shared capacity, users who are assigned a Power BI Pro license can collaborate only with other Power BI Pro users. They can consume content shared by other users, publish content to app workspaces, share dashboards, and subscribe to dashboards and reports.  When workspaces are in Premium capacity, Pro users may distribute content to users who don't have a Power BI Pro license.
 
@@ -35,13 +35,13 @@ For a comparison of Power BI Pro and Power BI Premium, see the _Power BI feature
 >[!NOTE]
 >Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
 >* Performance
->* Per-user licensing. See [Power BI Premium Per User](../admin/service-premium-per-user-faq.yml) for more information.
+>* Per-user licensing. See [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml) for more information.
 >* Greater scale
 >* Improved metrics
 >* Autoscaling
 >* Reduced management overhead
 >
->For more information about Power BI Premium Gen2, see [What is Power BI Premium Gen2?](../admin/service-premium-gen2-what-is.md).
+>For more information about Power BI Premium Gen2, see [What is Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md).
 >
 
 To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](../consumer/end-user-license.md).

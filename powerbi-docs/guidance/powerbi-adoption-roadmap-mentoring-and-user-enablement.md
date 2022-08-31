@@ -2,8 +2,8 @@
 title: "Power BI adoption roadmap: Mentoring and user enablement"
 description: Mentor users to drive strong and successful adoption of Power BI.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -27,9 +27,9 @@ Mentoring and helping users in the Power BI community become more effective can 
 
 ### Office hours
 
-_Office hours_ are a form of ongoing community engagements managed by the COE. As the name implies, office hours are times of regularly scheduled availability where members of the community can engage with experts from the COE to receive assistance with minimal process overhead. Since office hours are group-based, Power BI champions and other members of the community can also pitch in to help solve an issue if a topic is in their area of expertise.
+*Office hours* are a form of ongoing community engagements managed by the COE. As the name implies, office hours are times of regularly scheduled availability where members of the community can engage with experts from the COE to receive assistance with minimal process overhead. Since office hours are group-based, Power BI champions and other members of the community can also pitch in to help solve an issue if a topic is in their area of expertise.
 
-Office hours are a very popular and productive activity in many organizations. Some organizations call them _drop-in hours_ or even a fun name such as Power Hour. The primary goal is usually to get questions answered and remove blockers. Office hours can also be used as a platform for the user community to share ideas, suggestions, and even complaints.
+Office hours are a very popular and productive activity in many organizations. Some organizations call them *drop-in hours* or even a fun name such as Power Hour. The primary goal is usually to get questions answered and remove blockers. Office hours can also be used as a platform for the user community to share ideas, suggestions, and even complaints.
 
 The COE publishes the times for regular office hours when one or more COE members are available. Ideally, office hours are held on a regular and frequent basis. For instance, it could be every Tuesday and Thursday. Consider offering different time slots or rotating times if you have a global workforce.
 
@@ -53,7 +53,7 @@ Office hours benefit the COE as well because:
 
 ### Co-development projects
 
-One way the COE can provide mentoring services is during a _co-development project_. A co-development project is a form of assistance offered by the COE where a user or business unit takes advantage of the technical expertise of the COE to solve business problems with data. Co-development involves stakeholders from the business unit and the COE working in partnership to build a high-quality self-service BI solution that the business stakeholders could not deliver independently.
+One way the COE can provide mentoring services is during a *co-development project*. A co-development project is a form of assistance offered by the COE where a user or business unit takes advantage of the technical expertise of the COE to solve business problems with data. Co-development involves stakeholders from the business unit and the COE working in partnership to build a high-quality self-service BI solution that the business stakeholders could not deliver independently.
 
 The goal of co-development is to help the business unit develop expertise over time while also delivering value. For example, the sales team has a pressing need to develop a new set of commission reports, but the sales team doesn't yet have the knowledge to complete it on their own.
 
@@ -77,15 +77,15 @@ Co-development projects can deliver significant short- and long-term benefits. I
 
 ### Best practices reviews
 
-The COE may also offer _best practices reviews_. A best practices review can be extremely helpful for content creators who would like to validate their work. They might also be known as _advisory services_, _internal consulting time_, or _technical reviews_.
+The COE may also offer *best practices reviews*. A best practices review can be extremely helpful for content creators who would like to validate their work. They might also be known as *advisory services*, *internal consulting time*, or *technical reviews*.
 
 During a review, an expert from the COE evaluates self-service Power BI content developed by a member of the community and identifies areas of risk or opportunities for improvement. The following bullet list presents some examples of when a best practices review could be beneficial:
 
 - The sales team has an [app](../consumer/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
-- The finance team would like to [assign a workspace to Premium capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
+- The finance team would like to [assign a workspace to Premium capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
-A best practices review is most often focused on the dataset design, though the review can encompass all types of artifacts (dataflows, datasets, reports, or apps).
+A best practices review is most often focused on the dataset design, though the review can encompass all types of Power BI items (dataflows, datasets, reports, or apps).
 
 Before content is deployed to the Power BI service, a best practices review may verify that:
 
@@ -105,11 +105,11 @@ Before content is deployed to the Power BI service, a best practices review may 
 Once the content has been deployed to the Power BI service, the best practices review is not necessarily complete yet. Completing the remainder of the review may also include items such as:
 
 - The target [workspace](../collaborate-share/service-create-the-new-workspaces.md) is suitable for the content.
-- [Workspace security roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) are appropriate for the content.
+- [Workspace security roles](../collaborate-share/service-roles-new-workspaces.md) are appropriate for the content.
 - Other permissions ([app permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app), [build permission](../connect-data/service-datasets-build-permissions.md), use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
 - [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
-- [Sensitivity labels](../admin/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
-- Artifact [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
+- [Sensitivity labels](../enterprise/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
+- Power BI item [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
 - [Data refresh](../connect-data/refresh-data.md) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
 - All [best practices rules](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance-and-design-v1-1/) are followed and, preferably, are automated via a community tool called Best Practices Analyzer for maximum efficiency and productivity.
 
@@ -127,7 +127,7 @@ A single centralized portal, or hub, is where the user community can find:
 - Access to the community Q&A forum.
 - Announcements of interest to the community, such as new features and release plan updates.
 - Schedules and registration links for office hours, lunch and learns, training sessions, and user group meetings.
-- Announcements of key changes to data artifacts and change log (if appropriate).
+- Announcements of key changes to datasets and change log (if appropriate).
 - How to request help or support.
 - Training materials.
 - Documentation, onboarding materials, and frequently asked questions (FAQ).
@@ -154,7 +154,7 @@ A key factor for successfully enabling users in a Power BI community is training
 
 Making sure your community users have access to the training resources they need to be successful doesn't mean that you need to develop your own training content. Developing training content is often counterproductive due to the rapidly evolving nature of the product. Fortunately, an abundance of training resources are available in the worldwide community. A curated set of links goes a long way to help users organize and focus their training efforts, especially for tool training, which focuses on the technology. All external links should be validated by the COE for accuracy and credibility. It's a key opportunity for the COE to add value because COE stakeholders are in an ideal position to understand the learning needs of the community, and to identify and locate trusted sources of quality learning materials.
 
-You'll find the greatest return on investment with creating custom training materials for _organizational-specific_ processes, while relying on content produced by others for everything else. It's also useful to have a short training class that focuses primarily on topics like how to find documentation, getting help, and interacting with the community.
+You'll find the greatest return on investment with creating custom training materials for *organizational-specific* processes, while relying on content produced by others for everything else. It's also useful to have a short training class that focuses primarily on topics like how to find documentation, getting help, and interacting with the community.
 
 > [!TIP]
 > One of the goals of training is to help people learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm people by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to report from an existing dataset. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one dataset for every report (and encourage the good habit of reusing existing datasets across reports).
@@ -175,7 +175,7 @@ There are many training approaches because people learn in different ways. If yo
 The advantages of encouraging knowledge sharing among colleagues is described in the [Community of practice](powerbi-adoption-roadmap-community-of-practice.md) article.
 
 > [!TIP]
-> Whenever practical, learning should be correlated with building something meaningful and realistic. However, simple demo data does have value during a training course. It allows a learner to focus on how to use the technology rather than the data itself. After completion of introductory session(s), consider offering a _bring your own data_ type of session. These types of sessions encourage the learner to apply their new technical skills to an actual business problem. Try to include multiple facilitators from the COE during this type of follow-up session so questions can be answered quickly.
+> Whenever practical, learning should be correlated with building something meaningful and realistic. However, simple demo data does have value during a training course. It allows a learner to focus on how to use the technology rather than the data itself. After completion of introductory session(s), consider offering a *bring your own data* type of session. These types of sessions encourage the learner to apply their new technical skills to an actual business problem. Try to include multiple facilitators from the COE during this type of follow-up session so questions can be answered quickly.
 
 The types of users you may target for training include:
 
@@ -189,9 +189,9 @@ The types of users you may target for training include:
 > [!IMPORTANT]
 > Each type of user represents a different audience that has different training needs. The COE will need to identify how best to meet the needs of each audience. For instance, one audience might find a standard introductory Power BI Desktop class overwhelming, whereas another will want more challenging information with depth and detail. If you have a diverse population of Power BI content creators, consider creating personas and tailoring the experience to an extent that's practical.
 
-The completion of training can be a leading indicator for success with [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Some organizations grant badges, like _blue belt_ or _black belt_, as people progress through the training programs.
+The completion of training can be a leading indicator for success with [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Some organizations grant badges, like *blue belt* or *black belt*, as people progress through the training programs.
 
-Give some consideration to how you want to handle users at various stages of [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Training to onboard new users (sometimes referred to as _training day zero_) and for less experienced users is very different to training for more experienced users.
+Give some consideration to how you want to handle users at various stages of [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages). Training to onboard new users (sometimes referred to as *training day zero*) and for less experienced users is very different to training for more experienced users.
 
 How the COE invests its time in creating and curating training materials will change over time as adoption and maturity grows. You may also find over time that some community champions want to run their own tailored set of training classes within their functional business unit.
 
@@ -260,7 +260,7 @@ When you see questions repeatedly arise in the Q&A forum (as described in the [U
 
 ## Templates
 
-A [Power BI template](../create-reports/desktop-templates.md) is a _.pbit_ file. It can be provided as a starting point for content creators. It's the same as a _.pbix_ file, which can contain queries, a data model, and a report, but with one exception: the template file doesn't contain any data. Therefore, it's a smaller file that can be shared with the community, and it doesn't present a risk of inappropriately sharing data.
+A [Power BI template](../create-reports/desktop-templates.md) is a *.pbit* file. It can be provided as a starting point for content creators. It's the same as a *.pbix* file, which can contain queries, a data model, and a report, but with one exception: the template file doesn't contain any data. Therefore, it's a smaller file that can be shared with the community, and it doesn't present a risk of inappropriately sharing data.
 
 Providing Power BI template files for your community is a great way to:
 

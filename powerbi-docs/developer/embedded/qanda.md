@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/20/2017 
+ms.date: 02/17/2022 
 ---
 
 # Q&A in Power BI embedded analytics
 
-Power BI embedded analytics offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language and receive immediate answers in the form of visuals like charts or graphs.
+Power BI embedded analytics offers you a way to incorporate [Q&A](pbi-glossary.md#qa) into an application. Your users can ask questions using natural language, and receive immediate answers in the form of visuals like charts or graphs.
 
 ![Q&A Interactive question in an embedded frame](media/qanda/embedded-qanda.gif)
 
 There are two modes for embedding Q&A within your application: **interactive** and **result only**. **Interactive** mode allows you to type in questions and have them displayed within the visual. If you have a saved question, or a set question you want to display, you can use the **result only** mode by populating the question in your embed config.
 
-Here is a look at what the JavaScript code will look like.
+Here's what the JavaScript code will look like.
 
 ```javascript
 // Embed configuration used to describe the what and how to embed.
@@ -43,7 +43,7 @@ var qna = powerbi.embed(qnaContainer, config);
 
 ## Set question
 
-If you used **result mode** with a set question, you can inject additional questions into the frame and have them immediately answered replacing the previous result. A new visual is rendered matching the new question.
+If you use **result mode** with a set question, you can inject more questions into the frame. The answer to the new question will immediately replace the previous result. A new visual is rendered matching the new question.
 
 One example of this usage would be a frequently asked question list. The user could go through the questions and have them answered within the same embedded part.
 
@@ -69,7 +69,7 @@ qna.setQuestion("This year sales")
 
 For **interactive** mode, the application can be notified with a data changed event each time the rendered visual changes to target the updated input query as it is being typed.
 
-Listening to the *visualRendered* event allows you to save questions for use later. 
+Listening to the *visualRendered* event allows you to save questions for use later.
 
 **Code snippet for JS SDK usage:**  
 
@@ -95,6 +95,7 @@ Create an embed token off of a dataset to start a Q&A part. For more information
 
 ## Next steps
 
-To give Q&A embedding a try, check out the [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/).
+>[!div class="nextstepaction"]
+>[Try out Q&A embedding with the JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

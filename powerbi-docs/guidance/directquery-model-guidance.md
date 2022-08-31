@@ -49,9 +49,9 @@ A DirectQuery model can be optimized in many ways, as described in the following
 
 - **Avoid complex Power Query queries:** An efficient model design can be achieved by removing the need for the Power Query queries to apply any transformations. It means that each query maps to a single relational database source table or view. You can preview a representation of the actual SQL query statement for a Power Query applied step, by selecting the **View Native Query** option.
 
-    ![Screenshot of Power B I Desktop showing the "View Native Query" option under Applied Steps.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
+    ![Screenshot of Power BI Desktop showing the "View Native Query" option under Applied Steps.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
     
-    ![Screenshot of Power B I Desktop showing the Native Query window. A query statement joins two source tables.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
+    ![Screenshot of Power BI Desktop showing the Native Query window. A query statement joins two source tables.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
 
 - **Examine the use of calculated columns and data type changes:** DirectQuery models support adding calculations and Power Query steps to convert data types. However, better performance is often achieved by materializing transformation results in the relational database source, when possible.
 - **Do not use Power Query relative date filtering:** It's possible to define relative date filtering in a Power Query query. For example, to retrieve to the sales orders that were created in the last year (relative to today's date). This type of filter translates to an inefficient native query, as follows:
@@ -76,7 +76,7 @@ A DirectQuery model can be optimized in many ways, as described in the following
 - **Avoid use of bi-directional relationship filtering:** Use of bi-directional relationship filtering can lead to query statements that don't perform well. Only use this relationship feature when necessary, and it's usually the case when implementing a many-to-many relationship across a bridging table. For more information, see [Relationships with a many-many cardinality in Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 - **Limit parallel queries:** You can set the maximum number of connections DirectQuery opens for each underlying data source. It controls the number of queries concurrently sent to the data source.
 
-    ![Screenshot of Power B I Desktop showing the Direct Query Options window.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
+    ![Screenshot of Power BI Desktop showing the Direct Query Options window.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
     
     The setting is only enabled when there's at least one DirectQuery source in the model. The value applies to all DirectQuery sources, and to any new DirectQuery sources added to the model.
 
@@ -90,7 +90,7 @@ Reports based on a DirectQuery dataset can be optimized in many ways, as describ
 
 - **Enable query reduction techniques:** Power BI Desktop _Options and Settings_ includes a Query Reduction page. This page has three helpful options. It's possible to disable cross-highlighting and cross-filtering by default, though it can be overridden by editing interactions. It is also possible to show an Apply button on slicers and filters. The slicer or filter options will not be applied until the report user clicks the button. If you enable these options, we recommend that you do so when first creating the report.
 
-    ![Screenshot of Power B I Desktop showing the Query Reduction filter in the Options window.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
+    ![Screenshot of Power BI Desktop showing the Query Reduction filter in the Options window.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
     
 - **Apply filters first:** When first designing reports, we recommend that you apply any applicable filters—at report, page, or visual level—before mapping fields to the visual fields. For example, rather than dragging in the **Country** and **Sales** measures, and then filtering by a particular year, apply the filter on the **Year** field first. It's because each step of building a visual will send a query, and whilst it's possible to then make another change before the first query has completed, it still places unnecessary load on the underlying data source. By applying filters early, it generally makes those intermediate queries less costly and faster. Also, failing to apply filters early can result in exceeding the 1 million-row limit, as described in [About DirectQuery](../connect-data/desktop-directquery-about.md#other-implications).
 - **Limit the number of visuals on a page:** When a report page is opened (and when page filters are applied) all of the visuals on a page are refreshed. However, there is a limit on the number of queries that can be sent in parallel, imposed by the Power BI environment and the **Maximum Connections per Data Source** model setting, as described above. So, as the number of page visuals increases, there is higher chance that they will be refreshed in a serial manner. It increases the time taken to refresh the entire page, and it also increases the chance that visuals may display inconsistent results (for volatile data sources). For these reasons, it's recommended to limit the number of visuals on any page, and instead have more simpler pages. Replacing multiple card visuals with a single multi-row card visual can achieve a similar page layout.
@@ -100,7 +100,7 @@ In addition to the above list of optimization techniques, each of the following 
 
 - **Measure filters:** Visuals containing measures (or aggregates of columns) can have filters applied to those measures. For example, the visual below shows **Sales** by **Category**, but only for categories with more than $15 million of sales.
 
-    ![Screenshot of Power B I Desktop showing tabular data with applied filters.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
+    ![Screenshot of Power BI Desktop showing tabular data with applied filters.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
     
     
     It may result in two queries being sent to the underlying source:
@@ -118,7 +118,7 @@ In addition to the above list of optimization techniques, each of the following 
 
 The benefits of Import and DirectQuery models can be combined into a single model by configuring the storage mode of the model tables. The table storage mode can be Import or DirectQuery, or both, known as Dual. When a model contains tables with different storage modes, it is known as a Composite model. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
-There are many functional and performance enhancements that can be achieved by converting a DirectQuery model to a Composite model. A Composite model can integrate more than one DirectQuery source, and it can also include aggregations. Aggregation tables can be added to DirectQuery tables to import a summarized representation of the table. They can achieve dramatic performance enhancements when visuals query higher-level aggregates. For more information, see [Aggregations in Power BI Desktop](../admin/aggregations-auto.md).
+There are many functional and performance enhancements that can be achieved by converting a DirectQuery model to a Composite model. A Composite model can integrate more than one DirectQuery source, and it can also include aggregations. Aggregation tables can be added to DirectQuery tables to import a summarized representation of the table. They can achieve dramatic performance enhancements when visuals query higher-level aggregates. For more information, see [Aggregations in Power BI Desktop](../enterprise/aggregations-auto.md).
 
 ## Educate users
 

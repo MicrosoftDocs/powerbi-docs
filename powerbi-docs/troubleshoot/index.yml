@@ -1,0 +1,58 @@
+### YamlMime:Landing
+
+title: Power BI known issues and troubleshooting
+summary: Self-service guidance to identify feature issues that are already known by Microsoft, to troubleshoot problems you are experiencing, and to learn how to contact Support.
+
+metadata:
+  title: Power BI known issues and troubleshooting
+  description: Self-service guidance to identify feature issues that are already known by Microsoft, to troubleshoot problems you are experiencing, and to learn how to contact Support.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: pbi-fundamentals
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: mihart
+  ms.author: mihart
+  ms.date: 04/05/2022
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card (optional)
+  - title: Known issues
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: What are the current known issues for Power BI
+            url: known-issues/power-bi-known-issues.md
+          - text: Are there any service-wide outages
+            url: https://support.powerbi.com
+
+  # Card (optional)
+  - title: Troubleshooting
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot refresh scenarios
+            url: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
+          - text: Troubleshoot subscribing to reports and dashboards
+            url: ../consumer/service-troubleshoot-subscribe.yml
+          - text: Troubleshoot gateways
+            url: ../connect-data/service-gateway-onprem-tshoot.md
+          - text: Troubleshoot tile errors
+            url: ../connect-data/refresh-troubleshooting-tile-errors.md 
+
+              # Card (optional)
+  - title: Contacting support
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Power BI support options for paid customers
+            url: ../admin/service-support-options.md
+          - text: Options for contacting support for sign-in issues
+            url: ../admin/power-bi-cannot-sign-in.md  
+          
+            

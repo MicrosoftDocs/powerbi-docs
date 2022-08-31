@@ -1,6 +1,6 @@
 ---
 title: Table visualizations in Power BI reports and dashboards
-description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
+description: Learn how to work with table visualizations in Power BI reports and dashboards, including how to resize column widths.
 author: mihart
 ms.author: mihart
 ms.reviewer: 'willt'
@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/24/2021
+ms.date: 07/13/2022
+ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
 
@@ -18,7 +19,7 @@ LocalizationGroup: Visualizations
 
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. For example, this table displays five different measures for **Category**.
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-grid3.png" alt-text="Screenshot of a table that displays five different measures for Category.":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-gridlines.png" alt-text="Screenshot of a table that displays five different measures for Category.":::
 
 Create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells and cross-highlight. You can also copy and paste individual cells and multiple cell selections into other applications.
 
@@ -32,114 +33,127 @@ Tables are a great choice:
 
 * To display numerical data by categories.
 
-## Prerequisite
+## Prerequisites
 
-This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-1. From the upper left section of the menubar, select **File** > **Open report**
-   
-1. Find your copy of the **Retail Analysis sample PBIX file**
+This tutorial uses the Retail Analysis Sample.
 
-1. Open the **Retail Analysis sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
+1. Download the [sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 
-1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+2. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
+
+3. Browse to the **Retail Analysis Sample PBIX.pbix** file, then select **Open**.
+
+4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
+
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+
+This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
+
+1. Open the Power BI service, then select **Get data** in the bottom left corner.
+
+2. On the Get Data page that appears, select **Samples**.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
+
+3. Select the **Retail Analysis Sample**, and choose **Connect**.
+
+4. Select **Edit** on the menu bar to display the **Visualizations** pane.
+
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## Create a table
 
-You'll create the table pictured at the beginning of the article to display sales values by item category.
-
+You can create the table pictured at the beginning of the article to display sales values by item category.
 
 1. From the **Fields** pane, select **Item** > **Category**.
 
     Power BI automatically creates a table that lists all the categories.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table1.png" alt-text="Result of adding Category.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-1.png" alt-text="Screenshot of Fields pane with Category selected.":::
 
-1. Select **Sales > Average Unit Price** and **Sales > Last Year Sales**
+1. Select **Sales > Average Unit Price** and **Sales > Last Year Sales**. Then select **Sales > This Year Sales** and select all three options: **Value**, **Goal**, and **Status**.
 
-1. Then select **Sales > This Year Sales** and select all three options: **Value**, **Goal**, and **Status**.
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-2.png" alt-text="Screenshot of Fields pane with other fields selected.":::
 
-1. In the **Visualizations** pane, locate the **Values** well and select the values until the order of your chart columns matches the first image on this page. Drag the values in the well if needed. Your **Values** well will look like this:
+1. In the **Visualizations** pane, locate the **Columns** well and rearrange the fields until the order of your chart columns matches the first image on this page.
 
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-table2.png" alt-text="Values well.":::
+   :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-3.png" alt-text="Screenshot of fields in the Columns well.":::
 
 ## Format the table
 
-There are many ways to format a table. Only a few are covered here. A great way to learn about the other formatting options is to open the **Format** pane (paint roller icon :::image type="icon" source="media/power-bi-visualization-tables/power-bi-format.png":::) and explore.
+There are many ways to format a table. Only a few are covered here. A great way to learn about the other formatting options is to select the paint brush icon to open the **Format** pane.
 
-* Try formatting the table grid. Here you'll add a blue vertical grid, add space to the rows, and increase the outline and text size.
+* Try formatting the table grid. Here you'll add blue grid lines.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-gridnew.png" alt-text="Grid card.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-gridlines.png" alt-text="Screenshot of Format pane with gridline options.":::
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-grid3.png" alt-text="Table showing results":::
+* For the column headers, change the background color, increase the font size, change the alignment, and turn on text wrap.
 
-* For the column headers, change the background color, add an outline, increase the font size, change the alignment, and turn word wrap on.
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-column-headers.png" alt-text="Screenshot of Format pane with Column headers card.":::
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-column-headers.png" alt-text="Column headers card.":::
+* You can even apply formatting to individual columns and column headers. Start by expanding **Specific column** and selecting the column to format from the drop-down. Depending on the column values, **Specific column** lets you set things like: display units, font color, number of decimal places, background, alignment, and more. Once you've adjusted the settings, decide whether to apply those settings to the header and totals row as well.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-column2.png" alt-text="Headers formatting in table.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-column-formatting.png" alt-text="Screenshot of Format pane with Column formatting for This year sales.":::
 
-* You can even apply formatting to individual columns and column headers. Start by expanding **Field formatting** and selecting the column to format from the drop-down. Depending on the column values, **Field formatting** lets you set things like: display units, font color, number of decimal places, background, alignment, and more. Once you've adjusted the settings, decide whether to apply those settings to the header and totals row as well.
+* After some more formatting, here is our final table.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-field-formatting.png" alt-text="Field formatting for This year sales.":::
-
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-field-formatting-1.png" alt-text="Field formatting for This year sales in the table.":::
-
-* After some additional formatting, here is our final table.
-
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Table with all formatting so far.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of table with formatting options so far.":::
 
 ### Conditional formatting
 
-*Conditional formatting* is one type of formatting. Power BI can apply conditional formatting to any of the fields that you added to the **Values** well of the **Visualizations** pane.
+Power BI can apply conditional formatting to any of the fields that you added to the **Columns** well of the **Visualizations** pane.
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-values.png" alt-text="Visualization pane.":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-values.png" alt-text="Screenshot of the Columns well in the Visualization pane.":::
 
 With conditional formatting for tables, you can specify icons, URLs, cell background colors, and font colors based on cell values, including using gradient colors.
 
-1. In the **Format** pane, open the **Conditional formatting** card.
+1. Select the dropdown next to a field under **Columns**. Then open the **Conditional formatting** card and choose **Background color**.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional.png" alt-text="Conditional formatting card.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional.png" alt-text="Screenshot of the Conditional formatting card.":::
 
-1. Select a field to format, and turn the slider for **Background color** to On. Power BI applies a gradient based on the values in the column. To change the default colors, select **Advanced controls**.
+    If you select the **Add a middle color** option, you can configure an optional **Center** value as well.
 
-    If you select the **Diverging** option, you can configure an optional **Center** value as well.
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png" alt-text="Screenshot of Background color scales screen.":::
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png" alt-text="Background color scales screen.":::
+    Let's apply some custom formatting to our Average Unit Price values. Select **Add a middle color**, add some colors, and select **OK**.
 
-    Let's apply some custom formatting to our Average Unit Price values. Select **Diverging**, add some colors, and select **OK**.
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting-data-background.png" alt-text="Screenshot of the dialog box with background color options.":::
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting-data-background.png" alt-text="Table showing diverging colors.":::
+1. Add a new field to the table that has both positive and negative values. Select **Sales > Total Sales Variance** and drag it to the **Columns** well.
 
-1. Add a new field to the table that has both positive and negative values. Select **Sales > Total Sales Variance**.
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting-2.png" alt-text="Screenshot of a new field added to the Columns well.":::
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting2.png" alt-text="Shows a new field far right.":::
+1. Select **Data bars** under **Conditional formatting**.  
 
-1. Add data bar conditional formatting by turning the **Data bars** slider to On.  
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-data-bar-matrix.png" alt-text="Screenshot of the Conditional formatting card with data bars selected.":::
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-data-bar-matrix.png" alt-text="Conditional formatting card with data bars set to On.":::
+1. In the dialog that appears, set colors for **Positive bar** and **Negative bar**, select the **Show bar only** option, and make any other changes you'd like.
 
-1. To customize the data bars, select **Advanced controls**. In the dialog that appears, set colors for **Positive bar** and **Negative bar**, select the **Show bar only** option, and make any other changes you'd like.
-
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-data-bar.png" alt-text="Checkmark for Show bar only.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-data-bar.png" alt-text="Screenshot of Data bars options with checkmark for Show bar only.":::
 
 1. Select **OK**.
 
     Data bars replace the numerical values in the table, making it easier to scan.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png" alt-text="Same table but with bars in last column.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png" alt-text="Screenshot of table data bars displayed in column.":::
 
-1. Add visual cues to your table with *conditional icons*.  In the **Conditional formatting** card, select **This year sales** from the dropdown. Turn the **Icons** slider to **On**.  To customize the icons, select **Advanced controls**.
+1. Add visual cues to your table with conditional icons. Open the **Conditional formatting** card next to **This year sales**, then select **Icons**.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icons.png" alt-text="Table with Icons added.":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icons.png" alt-text="Screenshot of table with icons added to column.":::
 
 
 ## Copy values from Power BI tables for use in other applications
 
-Your table or matrix may have content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. In Power BI, when you right-click inside a cell, you can copy the data in a single cell or a selection of cells onto your clipboard, and paste it into the other applications.
+Your table or matrix may include content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. In Power BI, when you right-click inside a cell, you can copy the data in a single cell or a selection of cells onto your clipboard, and paste it into the other applications.
 
 To copy the value of a single cell:
 
@@ -147,11 +161,9 @@ To copy the value of a single cell:
 
 1. Right-click inside the cell.
 
-1. Select **Copy** > **Copy value**.
+1. Select **Copy** > **Copy value** to copy the _unformatted_ cell value to your clipboard.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-value.png" alt-text="Screenshot shows Copy selected with the Copy value option selected.":::
-
-    With the unformatted cell value on your clipboard, you can paste it into another application.
 
 To copy more than a single cell:
 
@@ -159,7 +171,7 @@ To copy more than a single cell:
 
 1. Right-click inside one of the cells you selected.
 
-1. Select **Copy** > **Copy selection**.
+1. Select **Copy** > **Copy selection** to copy the _formatted_ cell values to your clipboard.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-selection.png" alt-text="Screenshot shows Copy selected with the Copy selection option selected.":::
 
@@ -167,7 +179,7 @@ To copy more than a single cell:
 
 Sometimes Power BI will truncate a column heading in a report and on a dashboard. To show the entire column name, hover over the space to the right of the heading to reveal the double arrows, select, and drag.
 
-![video closeup of resizing column](media/power-bi-visualization-tables/resizetable.gif)
+![video closeup of resizing column](media/power-bi-visualization-tables/resize-table.gif)
 
 
 ## Considerations and troubleshooting
@@ -176,7 +188,7 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 
 * If the text data in your table's cells or headers contain new line characters, those characters will be ignored unless you toggle on the 'Word Wrap' option in the element's associated formatting pane card. 
 
-* Power BI calculates maximum cell size based on the first twenty columns and the first fifty rows. Cells beyond those points may not be appropriately sized.
+* Power BI calculates maximum cell size based on the first 20 columns and the first 50 rows. Cells beyond those points may not be appropriately sized.
 
 
 ## Next steps

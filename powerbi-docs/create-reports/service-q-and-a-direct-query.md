@@ -12,6 +12,8 @@ LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 You can import datasets into Power BI, or you can create a *live connection* to them. Live connection datasets are often on premises. If so, you manage live connections by using a [gateway](../connect-data/service-gateway-onprem.md). Data and inquiries are sent back and forth using live queries.
 
 > [!NOTE]
@@ -36,13 +38,13 @@ Once you have the data gateway set up, connect to your data from Power BI.  Eith
 
 1. In the upper-right corner of Power BI, select the cog icon ![gear icon](media/service-q-and-a-direct-query/power-bi-cog.png) and choose **Settings**.
    
-   ![Settings menu](media/service-q-and-a-direct-query/powerbi-settings.png)
+   ![Screenshot of Settings menu.](media/service-q-and-a-direct-query/powerbi-settings.png)
 2. Select **datasets** and choose the dataset to enable for Q&A.
    
-   ![Datasets screen of Settings menu](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
+   ![Screenshot of Datasets in Settings menu.](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 3. Expand **Q&A**, select the checkbox for **Turn on Q&A to ask natural language questions about your data**, and choose **Apply**.
    
-    ![Q&A area expanded](media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query.png)
+    ![Screenshot of Q&A area expanded.](media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query.png)
 
 ## What data is cached and how is privacy protected?
 When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This caching ensures that Q&A works with a reasonable performance. Power BI excludes values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A for this dataset**, or when you delete your dataset.

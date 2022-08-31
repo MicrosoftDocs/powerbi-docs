@@ -18,14 +18,12 @@ Business intelligence is a collaborative activity. It's important to establish s
 
 In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Admins have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
-## Dataset sharing and the new workspace experience
+## Dataset sharing and workspaces
 
-Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md):
+Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [workspace](../collaborate-share/service-create-the-new-workspaces.md):
 
-- In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in other new workspace experience workspaces. 
-- When you open the dataset catalog from a classic workspace, you only see the datasets in that workspace, not the ones in other workspaces.
-- In Power BI Desktop, you can publish Live Connect reports to different workspaces, as long as their datasets are in new experience workspaces.
-- When copying reports across workspaces, the target workspace needs to be a new experience workspace.
+- In the service, when you open the dataset catalog from a workspace, the dataset catalog shows datasets that are in your My Workspace and in other workspaces. 
+- In Power BI Desktop, you can publish Live Connect reports to different workspaces.
 
 ## Discover datasets
 
@@ -56,8 +54,6 @@ The specific features and experiences built on shared dataset capabilities are l
 ## Considerations and limitations
 
 - As an app publisher you have to make sure that your audience has access to datasets outside of the workspace. Otherwise, users will encounter issues when interacting with your app: reports won’t open without dataset access, and dashboard tiles will show as locked. Also, users won’t be able to open the app if the first item in its navigation is a report without access to the dataset.
-- Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: The report needs to be in a new workspace experience and the dataset needs to be in a new workspace experience. You can only copy reports in a new workspace experience to another new workspace experience, and not to classic workspaces or to My Workspace. 
-- In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
 - By design, “Publish to web” doesn’t work for a report based on a shared dataset.
 - If two people are members of a workspace that is accessing a shared dataset, it's possible that only one of them can see the related dataset in the workspace. Only people with at least Read access to the dataset can see the shared dataset. 
 

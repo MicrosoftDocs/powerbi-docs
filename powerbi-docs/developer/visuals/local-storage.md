@@ -3,7 +3,7 @@ title: Local Storage API in Power BI Visuals
 description: The article describes how to use Power BI Visuals API to get access to browser local storage.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
@@ -59,7 +59,8 @@ export class Visual implements IVisual {
 * The local storage limit is 1mb per GUID.
 * Data can be shared between visuals with the same GUID only.
 * Data can't be shared with another instance of Power BI Desktop.
-* The local storage API isn't activated by default. To activate it for your Power BI visual, send a request to Power BI visuals support, `pbicvsupport@microsoft.com`.  
+* The local storage API isn't activated by default. To activate it for your Power BI visual, send a request to Power BI visuals support, `pbicvsupport@microsoft.com`.
+* The local storage API doesn't support `await` constructions. Only `than` and `catch` methods are allowed.
 **Your visual should be available in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) and be [certified](power-bi-custom-visuals-certified.md).**
 
 ## Next steps

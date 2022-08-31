@@ -131,7 +131,7 @@ Report authors can [define drillthrough](../../create-reports/desktop-drillthrou
 
 
 ## Next steps
-* [Create reports optimized for the Power BI mobile apps](../../create-reports/desktop-create-phone-report.md)
+* [Create reports optimized for the Power BI mobile apps](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
 * [Create a phone view of a dashboard in Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Create responsive visuals optimized for any size](../../visuals/power-bi-report-visualizations.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

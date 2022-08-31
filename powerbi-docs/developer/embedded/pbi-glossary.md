@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/12/2022
+ms.date: 08/23/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -17,7 +17,7 @@ ms.custom: contperf-fy21q1
 
 Power BI may introduce terminology that is unfamiliar or confusing. This glossary is a great place to look up terminology, you might even want to keep it bookmarked. Other great resources for learning about the building blocks that make up Power BI are [Power BI service basic Concepts](../../consumer/end-user-basic-concepts.md) and [Basic concepts for designers](../../fundamentals/service-basic-concepts.md). These articles give a high-level overview of the Power BI *pieces* and how they're connected.
 
-This glossary is a community effort.  Don't see a word here? Please ask us to add it (you can use the documentation feedback button at the bottom of this article).
+This glossary is a community effort.  Don't see a word here? Ask us to add it (you can use the documentation feedback button at the bottom of this article).
 
 ## A
 
@@ -59,11 +59,19 @@ ArcGIS is a mapping and analytics platform created by the company ESRI. The name
 
 ### Artifacts
 
-A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+See [item](#item)
 
 ### Auto Insights
 
-Are now called *Quick Insights*.
+Auto insights are now called [Quick Insights](#quick-insights).
+
+### Azure AD, Azure Active Directory
+
+The identity service in Microsoft Azure that provides identity management and access control capabilities through a REST-based API.
+
+### Azure Key Vault
+
+The pay-as-you-go security solution that uses a single location (the vault) in Azure to store, secure and manage cryptographic keys and secrets that can then be invoked by URI and used by applications for small, high-value security data, such as authentication keys, storage account keys, data encryption keys, .pfx files, and passwords.
 
 ## B
 
@@ -78,10 +86,6 @@ A view of data captured in the Bookmarks pane of a report in Power BI Desktop or
 The navigation at the top left to quickly navigate between reports and dashboards.
 
 ## C
-
-### Calculation
-
-A mathematical determination of the size or number of something.
 
 ### Capacity
 
@@ -98,10 +102,6 @@ Power BI Home displays rectangular and square pictures that represent dashboards
 ### Certified custom visual
 
 A Power BI custom visual that has met requirements and passed strict security testing.
-
-### Classification
-
-Also called data classification. This option can be turned on by Power BI admins to raise awareness of the level of security required for a dashboard. The classification types can be customized by an organization.
 
 ### Connect live
 
@@ -123,21 +123,17 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 
 The content index for an app.
 
-### Content pack
-
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
-
 ### Content view
 
 The view in Windows Explorer that displays the most relevant content for each item based on its file name extension or Kind association.
 
 ### Continuous variable
 
-A continuous variable can be any value between its minimum and maximum limits, otherwise it is a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.
+A continuous variable can be any value between its minimum and maximum limits, otherwise it's a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.
 
 ### Correlation
 
-A correlation tells us how the behaviors of things are related.  If their patterns of increase and decrease are similar, then they are positively correlated. And if their patterns are opposite, then they are negatively correlated. For example, if sales of our red skateboard increase each time we run a tv marketing campaign, then sales of the red skateboard and the tv campaign are positively correlated.
+A correlation tells us how the behaviors of things are related.  If their patterns of increase and decrease are similar, then they're positively correlated. And if their patterns are opposite, then they're negatively correlated. For example, if sales of our red skateboard increase each time we run a tv marketing campaign, then sales of the red skateboard and the tv campaign are positively correlated.
 
 ### Cross-filter
 
@@ -146,7 +142,7 @@ Cross-filtering removes data that doesn't apply. For example, selecting **Modera
 
 ### Cross-highlight
 
-Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that does not apply to your selection. For example, selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that does not apply to the Moderation segment and highlights all the data that does apply to the Moderation segment.
+Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
 
 ### Custom visual
 
@@ -156,11 +152,7 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 
 ### Dashboard
 
-In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](../../consumer/end-user-basic-concepts.md#dashboards).
-
-### Data classification
-
-See classification
+In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](../../consumer/end-user-basic-concepts.md#dashboards).
 
 ### Data connector
 
@@ -177,6 +169,10 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 ### Dataset
 
 A collection of data used to create visualizations and reports.
+
+### DAX expression
+
+**Data Analysis Expressions**. A Microsoft formula language used to [build formulas and expressions](/learn/modules/dax-power-bi-write-formulas/) in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.
 
 ### **Desktop** or **Power BI Desktop**
 
@@ -202,6 +198,10 @@ Drill to details commonly means to show the underlying records.
 
 The mode in which report *designers* can explore, design, build, and share a report.
 
+### Effective identity
+
+The identity used by the generate token API to generate a token for an individual user, depending on that user's credentials in the app. It could be a master user or service principal.
+
 ### Ellipsis
 
 Three dots - ...
@@ -213,7 +213,7 @@ A common standard across the internet. In Power BI, the customer can generate an
 
 ### Embed token
 
-A string of encrypted characters that is used for authentication which specifies the content the web app user can access and the user’s access level.
+A string of encrypted characters that is used for authentication, which specifies the content the web app user can access and the user’s access level.
 
 ### Embedded
 
@@ -225,11 +225,11 @@ In the Power BI developer offering, the process of integrating analytics into ap
 
 ### Environment
 
-[Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
+[Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment ([tenant](#tenant)) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
 
 ### Explicit measures
 
-Power BI uses explicit measures and implicit measures (see definition below). Explicit measures are created by report designers and saved with the dataset. They are displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts. Colleagues who use that dataset, and who have edit access to the report, can select that field and use it to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI does not apply an aggregation.  Creating explicit measures requires edit access to the dataset.
+Power BI uses explicit measures and implicit measures (see definition below). Explicit measures are created by report designers and saved with the dataset. They're displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts. Colleagues who use that dataset and who have edit access to the report, can select and use that field to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI doesn't apply an aggregation.  Creating explicit measures requires edit access to the dataset.
 
 ## F
 
@@ -239,7 +239,7 @@ Verb meaning to add to the Favorites list for quick access to frequently visited
 
 ### **Filter** versus **highlight**
 
-A filter removes data that does not apply. A highlight grays out the data that does not apply.
+A filter *removes* data that doesn't apply. A highlight *grays out* the data that doesn't apply.
 
 ### Focus mode
 
@@ -251,13 +251,13 @@ See *account*
 
 ### Full screen, full-screen mode
 
-Use full screen mode to view Power BI content without the distraction of menus and navigation panes. This is sometimes referred to as TV mode.
+Use full screen mode to view Power BI content without the distraction of menus and navigation panes. Full screen mode is sometimes referred to as TV mode.
 
 ## G
 
 ### **Gateways** or **on-premises data gateways**
 
-A bridge to underlying data sources. It provides quick and secure data transfer between the Power BI service and on-premises data sources that support refresh. Usually managed by IT.
+A bridge to underlying data sources. It provides quick and secure data transfer between the Power BI service and on-premises data sources that support refresh. Managed by IT.
 
 ## H
 
@@ -273,7 +273,7 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ### Inline frame, iFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other artifacts inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An iFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
@@ -281,11 +281,16 @@ Power BI uses implicit measures and explicit measures (see definition above). Im
 
 ### Independent Software Vendor, ISV
 
-A third-party software developer which may include an individual or an organization that independently creates computer software.
+A third-party software developer. An ISV can be an individual or an organization that independently creates computer software.
 
 ### Insights
 
 See [**quick insights**](#quick-insights).
+
+### Item
+
+A component type of the Power BI workspace that includes dashboards, reports, datasets, and data flows.
+Formerly known as artifacts.
 
 ## J
 
@@ -303,11 +308,11 @@ The controls along the left edge of Power BI service.
 
 ### License
 
-Your level of access is determined by the Power BI license associated with your account and the capacity type where content is stored. For example, in shared capacity a user with a Power BI Pro license can collaborate only with users who are also assigned a Pro license. In shared capacity, a free license enables access to only the user’s personal workspace. However, when content is in Premium capacity, users with a Pro license can share that content with users who are assigned a free license.
+Your level of access is determined by the Power BI license associated with your account and the capacity type where content is stored. For example, in shared capacity, a user with a Power BI Pro license can collaborate only with users who are also assigned a Pro license. In shared capacity, a free license enables access to only the user’s personal workspace. However, when content is in Premium capacity, users with a Pro license can share that content with users who are assigned a free license.
 
 A license is assigned to a user and can be a free or Pro license. Depending on how the license was acquired, it may be paid or unpaid. The accounts are either: per-user or organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service stand-alone or is using Power BI service within an organization that has a Premium organizational subscription. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users.
 
-The organizational *Premium* (also known as *Premium capacity*) subscription adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* subscription, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that's hosted on Power BI Premium capacity. 
+The organizational *Premium* (also known as *Premium capacity*) subscription adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* subscription, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that's hosted on Power BI Premium capacity.
 
 ### **List page** or **content list**
 
@@ -325,11 +330,11 @@ Apps that allow you to run Power BI on iOS, Android, and Windows devices.
 
 ### Modeling
 
-[Power BI Desktop] Getting the data you've connected to ready for use in Power BI. This includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
+[Power BI Desktop] Getting the data you've connected to ready for use in Power BI. Modeling includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
 
 ### My workspace
 
-The workspace for each Power BI customer to use to create content. If they want to bundle anything created here into an app, and they have *designer* permissions, they upload it to the appropriate workspace or create a new one.
+The workspace for each Power BI customer to use to create content. If a customer wants to bundle anything created here into an app, and they have *designer* permissions, they upload it to the appropriate workspace or create a new one.
 
 ## N
 
@@ -355,7 +360,7 @@ The location in the service where messages are delivered to users, such as notic
 
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
 
-### On-premises (on-prem)
+### On-premises
 
 The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.
 
@@ -419,11 +424,15 @@ A free, standalone Windows Desktop application used for authoring paginated repo
 
 ### Power BI Report Server
 
-An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). 
+An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments).
 
 ### Power BI service
 
 An online SaaS (Software as a service) service. For more information, see [What is Power BI](../../fundamentals/power-bi-overview.md).
+
+### Power BI tenant
+
+A Power BI account for an organization which has its data stored separately from other organizations but which is accessed through a shared service.
 
 ### Premium workspace
 
@@ -476,7 +485,7 @@ The ability to stream data and update dashboards in real time from sources such 
 
 ### Recent
 
-The container in the nav pane that holds all the individual artifacts that were accessed last.
+The container in the nav pane that holds all the individual [items](#item) (reports, dashboards, etc.) that were accessed last.
 
 ### Related content
 
@@ -529,7 +538,9 @@ A standalone resource available to customers by subscription or license. A servi
 
 ### Service principal
 
-The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Can sometimes replace the *master user* to authenticate with Power BI.
+An identity created for use with applications, hosted services, and automated tools to access Azure resources. The service principal tokens can be used to authenticate and grant access to specific Azure resources from a user-app, service or automation tool, when an organization is using Azure Active Directory.
+
+It can sometimes replace the *master user* to authenticate with Power BI.
 
 ### Settings
 
@@ -537,12 +548,16 @@ The location for Power BI users to manage their own general settings, such as wh
 
 ### Share, sharing
 
-In Power BI, sharing typically means directly sharing an individual artifact (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
+In Power BI, sharing typically means directly sharing an individual item (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
 On mobile devices, share can refer to native OS share functionality, such as "annotate and share."  
 
 ### Shared with me
 
-The container in the nav pane that holds all the individual artifacts that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual [items](#item) that were directly shared by another Power BI user.
+
+### Single sign-on, SSO
+
+An authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
 
 ### Snapshot
 
@@ -572,17 +587,21 @@ You can subscribe to report pages, apps, and dashboards and receive emails conta
 
 ### Tenant
 
-A client organization that is served from a web service (SaaS) which serves other client organizations, where each organization’s data is stored in a separate database from the others.
+A client organization that is served from a web service (SaaS) which also serves other client organizations, and each organization’s data is stored in a separate database.
 
 ### Tiles
 
-A [tile](/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
+A [tile](/power-bi/create-reports/service-dashboard-tiles) is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more.
 
 ### Time series
 
 A time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.  
 
 ## U
+
+### User Principal Name (UPN)
+
+A format used to specify an internet-style name, such as User.Name@example.microsoft.com. The format consists of a login name and domain separated by the @ symbol.
 
 ## V
 

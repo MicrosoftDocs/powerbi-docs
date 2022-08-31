@@ -2,12 +2,12 @@
 title: Power BI adoption roadmap conclusion
 description: A conclusion and extra resources of the Power BI adoption roadmap series of articles.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 06/13/2022
 ---
 
 # Power BI adoption roadmap conclusion
@@ -31,23 +31,33 @@ This series covered the following aspects of adoption:
 - [User support](powerbi-adoption-roadmap-user-support.md)
 - [System oversight](powerbi-adoption-roadmap-system-oversight.md)
 
-The rest of this article includes extra adoption-related resources that you might find valuable.
+The rest of this article includes additional adoption-related resources that you might find valuable.
+
+## Power BI implementation planning
+
+Successfully implementing Power BI throughout the organization requires deliberate thought and planning. The [Power BI implementation planning](powerbi-implementation-planning-introduction.md) series of articles, which is a work in progress, is intended to complement the Power BI adoption roadmap. It will include key considerations, actions, decision-making criteria, recommendations, and it will describe implementation patterns for important common usage scenarios.
 
 ## Power BI adoption framework
 
-The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of _how_ to adopt Power BI in more detail. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
+The [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) describes additional aspects of *how* to adopt Power BI in more detail. The original intent of the framework was to support Microsoft partners with a lightweight set of resources for use when helping their customers deploy and adopt Power BI.
 
-The framework can augment this Power BI adoption roadmap series. The roadmap series focuses on the _why_ and _what_ of adopting Power BI, more so than the _how_.
+The framework can augment this Power BI adoption roadmap series. The roadmap series focuses on the *why* and *what* of adopting Power BI, more so than the *how*.
+
+> [!NOTE]
+> When completed, the Power BI implementation planning series (described in the previous section) will replace the Power BI adoption framework.
 
 ## Enterprise deployment whitepaper
 
-The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper provides a comprehensive overview for Power BI implementers. Its primary goal is awareness of options, key considerations, decisions, and best practices. Because of the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service authors. The whitepaper is updated every 12-24 months.
+The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper provides a comprehensive overview for Power BI implementers. Its primary goal is awareness of options, key considerations, decisions, and best practices. Because of the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service authors.
 
-The whitepaper goes deeper into the _what_ and _how_ of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with extra information to help put your plans into action.
+The whitepaper goes deeper into the *what* and *how* of adopting Power BI, with a strong focus on technology. When you've finished reading the series of Power BI adoption articles, the whitepaper will fill you in with extra information to help put your plans into action.
+
+> [!NOTE]
+> The Enterprise deployment whitepaper won't be updated again. When completed, the Power BI implementation planning series (described in the previous section) will replace the Enterprise deployment whitepaper.
 
 ## Microsoft's BI transformation
 
-Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.
+Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: *discipline at the core* and *flexibility at the edge*. It also shares Microsoft's views and experience about the importance of establishing a COE.
 
 ## Power Platform adoption
 
@@ -77,11 +87,10 @@ A wide variety of other adoption guides for individual technologies can be found
 
 ## Industry guidance
 
-The [Data Management Maturity (DMM) model](https://cmmiinstitute.com/data-management-maturity) is a paid resource from ISACA. It's a comprehensive framework of data management practices in six key categories. It's designed to helps organizations benchmark their capabilities, identify strengths and gaps, and leverage their data assets to improve business performance.
-
 The [Data Management Book of Knowledge](https://www.dama.org/cpages/body-of-knowledge) (DMBOK2) is a book available for purchase from DAMA International. It contains a wealth of information about maturing your data management practices.
 
-These resources aren't required to take advantage of the guidance provided in this Power BI adoption series. They're reputable resources should you wish to continue your journey.
+> [!NOTE]
+> The additional resources provided in this article aren't required to take advantage of the guidance provided in this Power BI adoption series. They're reputable resources should you wish to continue your journey.
 
 ## Partner community
 

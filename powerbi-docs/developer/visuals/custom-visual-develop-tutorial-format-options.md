@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 6/07/2021
+ms.date: 08/07/2022
 ---
 
 # Tutorial: Adding formatting options to the Circle Card visual
@@ -283,8 +283,8 @@ The package contains everything required to import the custom visual into either
 
 ## Importing the custom visual
 
-Now you are ready to import the Circle Card custom visual so you can use it in your reports.
-Follow the directions in [import a visual file from your local computer into Power-BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) to import the `circleCard.pbiviz` file from the **dist** folder into your **Power BI** report.
+Now you are ready to import your Circle Card visual so you can use it in your Power BI reports.
+Follow the directions in [import a visual file from your local computer into Power-BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) to import the `circleCard.pbiviz` file from the **dist** folder into your **Power BI** visualization pane.
 
 ## Debugging
 

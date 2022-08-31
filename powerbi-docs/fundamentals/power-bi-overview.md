@@ -53,7 +53,7 @@ Explore documents that pertain to your role:
 - Power BI for *developers*
     * [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
     * [Create your own visuals in Power BI](../developer/visuals/develop-power-bi-visuals.md)
-    * [What can developers do with the Power BI API?](../developer/automation/overview-of-power-bi-rest-api.md)
+    * [What can developers do with the Power BI API?](/rest/api/power-bi/)
 
 ## The flow of work in Power BI
 

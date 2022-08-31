@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 06/03/2022
 LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
@@ -51,7 +51,7 @@ Alternatively, you can download the Customer Profitability sample as a [.pbix fi
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
 ## What is our dashboard telling us?
 
@@ -158,7 +158,7 @@ This report page provides a different slice of the data. It looks at gross margi
 
 1. How does profitability vary by industry? How do the products and customers break down by industry? To answer these questions, select one or more industries from the top left (start with the CPG industry). To clear the filter, select the eraser icon.
 
-2. On the **Revenue Var % to Budget, GM%, and RevenueTY by Industry** bubble chart, the CFO looks for the largest bubbles, because they have the biggest impact on revenue. To easily see each manager's impact by industry segment, filter the page by select each manager's name in turn in the area chart.
+2. On the **Revenue Var % to Budget, GM%, and RevenueTY by Industry** bubble chart, the CFO looks for the largest bubbles, because they have the biggest impact on revenue. To easily see each manager's impact by industry segment, filter the page by selecting each manager's name in turn in the area chart.
 
 3. As you select each manager in the chart, note the following details:
    * Andrew's area of influence spans many different industry segments with widely varying GM% (most on the positive side) and Var%.

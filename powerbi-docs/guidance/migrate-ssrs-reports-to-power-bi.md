@@ -33,7 +33,7 @@ Before you start the migration, you should verify that your environment meets ce
 
 ### Preparing for migration
 
-As you prepare to migrate your reports to Power BI, first verify that your organization has a [Power BI Premium](../admin/service-premium-what-is.md) subscription. This subscription is required to host and run your Power BI paginated reports.
+As you prepare to migrate your reports to Power BI, first verify that your organization has a [Power BI Premium](../enterprise/service-premium-what-is.md) subscription. This subscription is required to host and run your Power BI paginated reports.
 
 ### Supported versions
 
@@ -108,9 +108,9 @@ Generally, Power BI paginated reports are optimized for **printing**, or **PDF g
 
 The goal of the _Prepare_ phase involves getting everything ready. It covers setting up the Power BI environment, planning how you'll secure and publish your reports, and ideas for redeveloping SSRS items that won't migrate.
 
-1. Ensure the [Paginated Reports workload](../admin/service-admin-premium-workloads.md#paginated-reports) is enabled for your Power BI Premium capacity, and that it has sufficient memory.
+1. Ensure the [Paginated Reports workload](../enterprise/service-admin-premium-workloads.md#paginated-reports) is enabled for your Power BI Premium capacity, and that it has sufficient memory.
 1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI Gateway](../connect-data/service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
-1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI new workspaces](../collaborate-share/service-new-workspaces.md).
+1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces](../collaborate-share/service-new-workspaces.md).
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
 1. Consider using [shared Power BI datasets](../connect-data/service-datasets-build-permissions.md) in place of your SSRS shared data sources.
 1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your SSRS mobile reports and KPIs.
@@ -169,8 +169,8 @@ We highly recommended you complete the following actions to ensure the best poss
 
 1. Test the reports in each [browser supported by Power BI](../fundamentals/power-bi-browsers.md) to confirm the report renders correctly.
 1. Run tests to compare report rending times in SSRS and Power BI. Check that Power BI reports render in an acceptable time.
-1. If Power BI reports fail to render because of insufficient memory, allocate [additional resources to the Power BI Premium capacity](../admin/service-admin-premium-workloads.md#paginated-reports).
-1. For long-rendering reports, consider having Power BI deliver them to your report users as [email subscriptions with report attachments](../consumer/paginated-reports-subscriptions.md).
+1. If Power BI reports fail to render because of insufficient memory, allocate [additional resources to the Power BI Premium capacity](../enterprise/service-admin-premium-workloads.md#paginated-reports).
+1. For long-rendering reports, consider having Power BI deliver them to your report users as [email subscriptions with report attachments](../visuals/power-bi-visualization-export-data.md).
 1. For Power BI reports based on Power BI datasets, review model designs to ensure they're fully optimized.
 
 ### Reconcile issues
@@ -179,8 +179,8 @@ The Post-migration phase is crucial for reconciling any issues, and that you add
 
 For more information about these issues, including specific steps to understand and mitigate them, see the following articles:
 
-- [Optimizing Premium capacities](../admin/service-premium-capacity-optimize.md)
-- [Monitor Premium capacities within the app](../admin/service-admin-premium-monitor-capacity.md)
+- [Optimizing Premium capacities](../enterprise/service-premium-capacity-optimize.md)
+- [Monitor Premium capacities within the app](../enterprise/service-admin-premium-monitor-capacity.md)
 
 ## Next steps
 
@@ -191,7 +191,7 @@ For more information about this article, check out the following resources:
 - [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
 - [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.yml)
 - [Online course: Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
-- [Power BI Premium FAQ](../admin/service-premium-faq.yml)
+- [Power BI Premium FAQ](../enterprise/service-premium-faq.yml)
 - [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
