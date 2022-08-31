@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 08/31/2021
+ms.date: 08/31/2022
 LocalizationGroup: Gateways 
 ---
 
@@ -111,7 +111,7 @@ Ensure that you've added one or more data sources to the gateway, as described i
 
 ### Error: Your data source can't be refreshed because the credentials are invalid. Please update your credentials and try again.
 
-You were able to connect and refresh the dataset, with no runtime errors for the connection, yet in the Power BI service this error bar appears. When the user attempts to update the credentials with known-good credentials, an error appears stating that the credentials supplied wer invalid. 
+You were able to connect and refresh the dataset, with no runtime errors for the connection, yet in the Power BI service this error bar appears. When the user attempts to update the credentials with known-good credentials, an error appears stating that the credentials supplied were invalid. 
 
 This error can occur when the gateway attempts a test connection, even if the credentials supplied are acceptable and the refresh operation is successful. This occurs because when the gateway performs a connection test, it does not include any optional parameters during the connection attempt, and some data connectors (such as Snowflake, for example) require optional connection parameters in order to connect.
 
