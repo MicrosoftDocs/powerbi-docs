@@ -17,22 +17,20 @@ The *Total and Subtotal API* allows custom visuals with a matrix data-view to re
 >[!NOTE]
 >Requesting subtotal data is supported from API version 2.6.0. The `rowSubtotalType` property is available from version 5.1.0 To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
-Every time a visual refreshes its data, it issues a [data fetch request](fetch-more-data.md) to the Power BI backend. These data requests are usually for values of the fields the user dragged into the field wells of the visual. Sometimes the visual needs other aggregations/subtotals (for example, sum, count) applied to these fields. The API customizes the outgoing data query to request the extra aggregation/subtotal data.
-
-The `rowSubtotalsType` property lets you decide if the aggregated data should be put at the beginning or end (top or bottom) of the returned data. The default is *bottom*, which means that you can only see the aggregated data after all the data points have been fetched. If you define it as *top*, you can display the aggregated data even before you fetch all the data. This option is more efficient and especially applicable to large datasets where you would otherwise have to fetch and scroll through much data before seeing the aggregated data.
+Every time a visual refreshes its data, it issues a [data fetch request](fetch-more-data.md) to the Power BI backend. These data requests are usually for values of the fields the user dragged into the field wells of the visual. Sometimes the visual needs other aggregations/subtotals (for example, sum, count) applied to these fields. This API lets you customize the outgoing data query to request more aggregation/subtotal data.
 
 :::image type="content" source="media/total-subtotal-api/subtotal-visual-results.png" alt-text="Screenshot of visual with subtotals row and columns highlighted.":::
 
 ## The subtotals API
 
-The API offers the following **customization switches** for each data-view type (currently just the matrix):
+The API offers the following customization for each data-view type (currently, just the matrix):
 
-* *rowSubtotals*: (boolean) Indicates if the *subtotal* data should be requested for all fields in the rows field well
-* *rowSubtotalsPerLevel*: (boolean) Indicates if the *subtotal* data can be toggled for individual fields in the row's field well
-* *columnSubtotals*: (boolean) Indicates if the *subtotal* data should be requested for all fields in the columns field well
-* *columnSubtotalsPerLevel*: (boolean) Indicates if the *subtotal* data can be toggled for individual fields in the columns field well
-* *levelSubtotalEnabled*: (boolean) Unlike all other properties, this property is applied to individual rows/columns. This property indicates if the subtotals are requested for the row/column
-* *rowSubtotalsType*: Indicates if the row with the *total* data should be retrieved before or after the rest of the data. If *bottom* is selected, the total can only be displayed after all the data has been fetched.
+* *rowSubtotals*: (boolean) Indicates if the *subtotal* data should be requested for all fields in the rows field well.
+* *rowSubtotalsPerLevel*: (boolean) Indicates if the *subtotal* data can be toggled for individual fields in the row's field well.
+* *columnSubtotals*: (boolean) Indicates if the *subtotal* data should be requested for all fields in the columns field well.
+* *columnSubtotalsPerLevel*: (boolean) Indicates if the *subtotal* data can be toggled for individual fields in the columns field well.
+* *levelSubtotalEnabled*: (boolean) Unlike all the other properties, this property is applied to individual rows or columns. This property indicates if the subtotals are requested for the row/column.
+* *rowSubtotalsType*: ("Top" or "Bottom") Indicates if the row with the *total* data should be retrieved before (*top*) or after (*bottom*) the rest of the data. If this property is set to *bottom*, the total can only be displayed after all the data has been fetched. The default is *bottom*.
 
 Each of the above switches is assigned a value based on the related properties in the property pane and the defaults.
 
