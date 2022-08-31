@@ -127,15 +127,16 @@ If you need to authorize external users to edit and manage content, we recommend
 
 ### Developer settings
 
-There are three tenant settings related to [embedding Power BI content](../developer/embedded/embedded-analytics-power-bi.md). They are:
+There are four tenant settings related to [embedding Power BI content](../developer/embedded/embedded-analytics-power-bi.md). They are:
 
 - Embed content in apps (enabled by default)
-- Allow service principals to user Power BI APIs (disabled by default)
+- Allow service principals to use Power BI APIs (disabled by default)
+- Allow service principals to create and use profiles (disabled by default)
 - Block ResourceKey Authentication (disabled by default)*
 
 If you don't intend to use the developer APIs to embed content, we recommend you disable them. Or, at least configure specific security groups that would be doing this work.
 
-**This setting applies to streaming and PUSH datasets. If disabled, users will not be allowed send data to streaming and PUSH datasets using the API with a resource key.**
+**The _Block ResourceKey Authentication_ setting applies to streaming and PUSH datasets. If disabled, users will not be allowed send data to streaming and PUSH datasets using the API with a resource key.**
 
 ![Screenshot of Power BI admin portal showing the developer settings.](media/admin-tenant-settings/developer-settings.png)
 
