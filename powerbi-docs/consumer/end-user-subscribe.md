@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/09/2022
+ms.date: 08/31/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -175,7 +175,7 @@ Users who have been assigned the [Admin role](../collaborate-share/service-roles
 
 To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
 
-:::image type="content" source="media/end-user-subscribe/power-bi-admin-view.png" alt-text="Screenshot showing all subscriptions for a workspace.":::
+:::image type="content" source="media/end-user-subscribe/power-bi-view-admin.png" alt-text="Screenshot showing all subscriptions for a workspace.":::
 
 Users with the Admin role can also make edits or take over ownership of subscriptions that are not their own.  
 
