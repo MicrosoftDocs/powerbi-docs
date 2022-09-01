@@ -64,14 +64,12 @@ When things go wrong, it’s usually because Power BI can’t sign into data sou
 
 When you save your changes to the Power BI Desktop file on OneDrive and you don't see those changes in Power BI within an hour or so, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select **Keep me signed in**. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you’ll need to import your file again.
 
-On-demand and automatic refresh: On demand and automatic dataset refresh from *.pbix* files stored on OneDrive or SharePoint Online is supported, with the exception of the following scenarios:
+Import of *.pbix* files stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, with the exception of the following scenarios:
 
-   * Protected live-connected *.pbix* files.
-   * Protected Azure Analysis Services *.pbix* files.
-   * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to.
-   * If the dataset owner's access token for OneDrive/SharePoint has expired.
-    
-   In these cases, refresh will fail.
+* Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files. Refresh will fail. Neither report content nor label will be updated.
+* Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label will not be updated.
+* When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
+* If the dataset owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
 Be sure to leave the **Send refresh failure notification email to me** checked. You’ll want to know right away if a scheduled refresh fails.
 
