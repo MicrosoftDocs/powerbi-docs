@@ -15,7 +15,7 @@ ms.date: 08/15/2021
 The *Total and Subtotal API* allows custom visuals with a matrix data-view to request aggregated subtotal data from the Power BI host. The subtotals can be calculated for the entire matrix dataset or specified for individual levels of the matrix data hierarchy (see this [sample report](https://github.com/microsoft/Powerbi-Visuals-SampleMatrix/tree/master/doc)).
 
 >[!NOTE]
->Requesting subtotal data is supported from API version 2.6.0. To find out which version you’re using, Run the `pbiviz -V` command.
+>Requesting subtotal data is supported from API version 2.6.0. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 Every time a visual refreshes its data, it issues a [data fetch request](fetch-more-data.md) to the Power BI backend. These data requests are usually for values of the fields the user dragged into the field wells of the visual. Sometimes the visual needs other aggregations/subtotals (for example, sum, count) applied to these fields. The API customizes the outgoing data query to request the extra aggregation/subtotal data. Since these calculations are performed by the Power BI backend, they are highly efficient and applicable to large datasets.
 

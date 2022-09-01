@@ -30,7 +30,7 @@ You can also connect metrics to an existing report visual in Power BI. See [Crea
 
 You need a Power BI Pro license to author and share metrics in standard workspaces. You also need:
 
-- Admin, Member, or Contributor role in a workspace. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- Admin, Member, or Contributor role in a workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
 
 ## Step 1: Create a scorecard 
@@ -43,7 +43,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 1. In the Metrics hub, select **New scorecard**. The scorecard creation pane opens. 
 1. Name your scorecard, provide a description, and select the Power BI workspace where you want to store the scorecard. 
 
-    If you don’t have a workspace, you can create one using this article, [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
+    If you don’t have a workspace, you can create one using this article, [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-create-scorecard.png" alt-text="Screenshot of Complete the Create Scorecard pane.":::
 

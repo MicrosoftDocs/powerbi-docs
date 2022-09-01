@@ -7,13 +7,13 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/24/2022
+ms.date: 07/11/2022
 ms.custom: intro-migration
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios
 
-This article compares five hypothetical scenarios when migrating from Azure Analysis Services (AAS) to Power BI Premium. These scenarios can help you to determine the right type and number of licenses for your business requirements and circumstances.
+This article compares six hypothetical scenarios when migrating from Azure Analysis Services (AAS) to Power BI Premium. These scenarios can help you to determine the right type and number of licenses for your business requirements and circumstances.
 
 > [!NOTE]
 > An attempt has been made to ensure these scenarios are representative of real customer migrations, however individual customer scenarios will of course differ. Also, this article doesn't include pricing details. You can find current pricing here:
@@ -204,6 +204,44 @@ Here are the proposed Power BI licenses:
 |:-|:-|-:|:-:|
 | Production | Premium P5 | 12,000 | 220 GB |
 | Production/test/development | PPU | 25 | 5 GB |
+
+## Migration scenario 6
+
+In this migration scenario, an ISV company has 400 customers. Each customer has its own SQL Server Analysis Services (SSAS) multidimensional model (also known as a *cube*). The analysis below compares Azure Analysis Services with the Power BI Embedded alternative.
+
+- The 400 tenants are mainly accessed by 50 analysts from the ISV company as well as two users (on average) from each customer.
+- The total size of the models is about 100 GB.
+
+Here are their estimated AAS licenses:
+
+| **Environment** | **Largest model** | **AAS SKU** |
+|:-|:-:|:-:|
+| Production | 8 GB | S4 |
+| Test | 8 GB | B1 |
+| Development | 1 GB | D1 |
+
+Here are their current Power BI licenses:
+
+| **Users** | **Power BI license** | **Users** |
+|:-|:-:|:-:|
+| Customers | Pro | 800 |
+| Analysts | Pro | 50 |
+| Developers | Pro | 20 |
+
+Once migrated to Power BI Premium:
+
+- The A1/P4 SKU was chosen to allow for future model size growth (EM3/A3 SKU can work also).
+- The 50 analysts will need PPU licenses to access test models above 1 GB in size.
+- The total size of the 400 models isn't relevant for pricing; only the largest model size is important.
+
+Here are their proposed Power BI licenses:
+
+| **Environment** | **Power BI license** | **Users** | **Largest model** |
+|:-|:-|-:|:-:|
+| Production | Premium P1 / Power BI Embedded A4 | Not applicable | 25 GB |
+| Test/development | Premium EM3 / Power BI Embedded A3 | Not applicable | 10 GB |
+| Developers | Pro | 20 | Not applicable |
+| Production/test/development | PPU | 50 | Not applicable |
 
 ## Premium migration benefits
 

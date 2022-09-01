@@ -12,20 +12,20 @@ ms.date: 06/29/2022
 
 # Capacity and SKUs in Power BI embedded analytics
 
-When moving to production, Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
+Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) in order to publish embedded Power BI content.
 
 [!INCLUDE [what is capacity](../../includes/what-is-capacity.md)]
 
 >[!NOTE]
->For publishing, you'll need one Power BI Pro or Premium Per User (PPU) account.
+>You'll need a Power BI Pro or Premium Per User (PPU) account to publish content.
 
 ## What is embedded analytics?
 
-Power BI embedded analytics includes two solutions:
+Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
 
-* *Power BI Embedded*  - Azure offering
+* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications.
 
-* Embedding Power BI as part of *Power BI Premium*  - Microsoft Office offering
+* Embedding Power BI is part of Microsoft Office's [*Power BI Premium*](#power-bi-premium). It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 ### Power BI Embedded
 
@@ -98,7 +98,7 @@ The table below lists payment and usage considerations per capacity.
 | **SKU**               | A                     | EM                   | P                    |
 | **Billing**           | Hourly                | Monthly              | Monthly              |
 | **Commitment**        | None                  | Yearly               | Monthly or yearly    |
-| **Usage**             | Azure resources can be: <li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a>  | Embed in apps, and in Microsoft applications    | Embed in apps, and in Power BI service |
+| **Usage**             | Azure resources can be: <li>[Scaled up or down](azure-pbie-scale-capacity.md)</li><li>[Paused and resumed](azure-pbie-pause-start.md)  | Embed in apps, and in Microsoft applications    | Embed in apps, and in Power BI service |
 
 ### SKU memory and computing power
 

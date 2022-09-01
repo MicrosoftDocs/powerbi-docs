@@ -57,8 +57,8 @@ When the dashboards and reports in your workspace are ready, you choose which da
 
 5. On **Permissions**, decide who has access to the app, and what they can do with it. 
 
-    - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, Azure AD security groups and distribution lists, and Microsoft 365 Groups. All workspace users are automatically given access to the app for the workspace.
-    - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (Azure AD) security groups.
+    - All [workspace](service-create-the-new-workspaces.md) users are automatically given access to the app for the workspace.
+    - You can also give access to specific people, Azure AD security groups and distribution lists, and Microsoft 365 Groups.
     - You can allow app users to connect to the app's underlying datasets by giving them Build permission. They'll see these datasets when they're searching for shared datasets. Read more about [allowing users to connect to the app's datasets](#allow-users-to-connect-to-datasets), in this article.
     - Users with Build permission can also have permission to copy reports from this app to another workspace. Read more about [allowing users to copy reports in the app](#allow-users-to-copy-reports), in this article.
     
@@ -81,7 +81,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
 You can send that direct link to the people you've shared it with, or they can find your app on the Apps tab by going to **Download and explore more apps from AppSource**. Read more about the [app experience for business users](../consumer/end-user-apps.md).
 
 ## Change your published app
-After you publish your app, you may want to change or update it. It's easy to update it if you're an admin or member in the new workspace. 
+After you publish your app, you may want to change or update it. It's easy to update it if you're an admin or member in the workspace. 
 
 1. Open the workspace that corresponds to the app. If you're a workspace Admin or Member, you can open the workspace right from the app, by selecting the **Edit app** pencil.
    
@@ -230,12 +230,13 @@ Things to keep in mind about publishing apps:
 
 * The permissions page doesn't change permission on datasets in other workspaces. You do see a warning reminding you to grant access to those datasets independently. A best practice is to contact the dataset owner before starting to build your app to ensure it is OK to give all your app users access those datasets. 
 * You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
-* For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
+* If the user you added to the app access list already has access to the app through the workspace, they're not shown in the access list for the app.  
 * The support site URL is shown in the item information card.
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps
-* [Create a workspace](service-create-workspaces.md)
+
+* [Create apps in *workspaces*](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 * [Power BI Admin Portal](../admin/service-admin-portal.md)

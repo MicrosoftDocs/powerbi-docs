@@ -21,7 +21,7 @@ sections:
       - question: |
           What is Power BI Embedded?
         answer: |
-          [Microsoft Power BI Embedded (PBIE)](embedded-analytics-power-bi.md#power-bi-embedded) allows application developers to embed stunning, fully interactive reports into their applications without having to build their own data visualizations and controls from scratch.
+          [Microsoft Power BI Embedded (PBIE)](embedded-analytics-power-bi.md) allows application developers to embed stunning, fully interactive reports into their applications without having to build their own data visualizations and controls from scratch.
           
       - question: |
           Who is the target audience for Power BI Embedded?
@@ -33,7 +33,7 @@ sections:
         answer: |
           Power BI is a software-as-a-service analytics solution that gives organizations a single view of their most critical business data.
           
-          Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics' solution themselves. [Embedded analytics](embedded-analytics-power-bi.md#power-bi-embedded) enables business users to access business data and execute queries against it to generate insights within the application.
+          Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics' solution themselves. [Embedded analytics](embedded-analytics-power-bi.md) enables business users to access business data and execute queries against it to generate insights within the application.
           
       - question: |
           What is the difference between Power BI Premium and Power BI Embedded?
@@ -141,7 +141,7 @@ sections:
         answer: |
           * Using the [Power BI Admin portal](../../admin/service-admin-portal-capacity-settings.md#power-bi-embedded).
           
-          * Downloading the [metric app](../../enterprise/service-admin-premium-monitor-capacity.md) in Power BI.
+          * Downloading the [metric app](../../enterprise/service-premium-install-gen2-app.md) in Power BI.
           
           * Using [Azure diagnostic logging](./monitor-power-bi-embedded.md).
           
@@ -237,11 +237,6 @@ sections:
           * Pause/resume service
           
           Use PowerBI.com to assign/un-assign workspaces to your Power BI Embedded capacity.
-          
-      - question: |
-          What content pack data types can you embed?
-        answer: |
-          You *can't* embed **Dashboards** and **tiles** built from content pack datasets. However, you *can* embed **reports** built from a content pack dataset.
 
       - question: |
           What is the difference between using row-level security (RLS) vs. JavaScript filters?

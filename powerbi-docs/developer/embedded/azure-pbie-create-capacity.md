@@ -9,27 +9,27 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 07/10/2022
+ms.date: 07/13/2022
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
 
-This article walks you through how to create a [Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
+This article walks you through how to create a [Power BI Embedded](embedded-analytics-power-bi.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
  >[!Important]
  >Within the next few months, all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../enterprise/service-premium-gen2-what-is.md) capacities will available. We recommend that you [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
 
-## Before you begin
+## Prerequisites
 
-To complete this quickstart, you need:
+Before you can create a capacity, you need the following:
 
-* **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
+1. An **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
-* **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
+2. A **Power BI tenant:** At least one account in your Azure AD tenant must be signed up for Power BI. Sign into Power BI from that account.
 
-* **Power BI tenant:** At least one account in your Azure AD tenant must be signed up for Power BI.
+3. **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account, if you don't already have one.
 
-* **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
+4. **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
 
@@ -324,6 +324,10 @@ PATCH https://management.azure.com/subscriptions/613192d7-503f-477a-9cfe-4efc3ee
 ```
 
 ---
+
+## Considerations and limitations
+
+Your subscription must be associated with an Azure Active Directory (Azure AD) organizational account. Microsoft personal accounts aren't supported
 
 ## Next steps
 

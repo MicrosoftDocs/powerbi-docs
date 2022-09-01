@@ -1,6 +1,6 @@
 ---
 title: Get samples for Power BI
-description: Built-in samples, apps, .pbix files, and Excel datasets for Power BI
+description: Built-in samples and apps in the Power BI service, .pbix files, Excel datasets, and SQL databases, all to help you explore Power BI functionality.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 
@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/27/2022
+ms.date: 07/14/2022
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
@@ -17,14 +17,15 @@ LocalizationGroup: Samples
 
 Are you new to Power BI and you want to try it out, but you don't have any data? Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
 
-Power BI offers different kinds of samples, for different purposes: 
+Power BI offers different kinds of samples for different purposes, including built-in samples and apps in the Power BI service, .pbix files, Excel datasets, and SQL databases. Here's a collection of different samples: 
 - The **[Sales & Returns sample](#sales--returns-sample-pbix-file)** Power BI report (.pbix file). You can view it in the Data Stories Gallery, open and explore it in Power BI Desktop, or upload it to the Power BI service.
 - The **[Artificial Intelligence sample](sample-artificial-intelligence.md)** Power BI report. In the report, you explore the Power BI artificial intelligence features such as key influencers, root-cause analysis in a decomposition tree, and anomaly detection. Download a copy from the **Learn** page in the Power BI service navigation pane.
 - A **[sample template app](sample-sales-marketing-template-app.md)**. You download it from AppSource, also right in the Power BI service. Template apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
 - **[Eight original built-in samples](#eight-original-samples)** in the Power BI service, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
 - **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model. You can explore the data model in the Power Pivot add-in for Excel or use the Excel workbook as a data source for a Power BI report.
 - A **[Financial data sample workbook](sample-financial-download.md)**, a simple flat table in an Excel file available for download. It contains anonymized data with fictitious products, with sales divided by segments and countries/regions. It makes a useful basic data source for a Power BI report.
-- An Excel workbook version of the **[AdventureWorks dimensional model](desktop-dimensional-model-report.md)**, in a tutorial to walk you through creating a Power BI report with the data. 
+- An Excel workbook version of the **[AdventureWorks dimensional model](desktop-dimensional-model-report.md)**, in a tutorial to walk you through creating a Power BI report with the data.
+- If you'd rather work with data in SQL databases, the **[SQL samples](/sql/samples/sql-samples-where-are)** article features links to downloadable AdventureWorks and WorldWideImporters SQL databases in a GitHub repository. The article also has links to other Azure samples.
 
 Our online documentation uses these same samples in tutorials and examples, so you can follow along.
 

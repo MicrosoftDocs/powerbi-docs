@@ -240,7 +240,7 @@ To display the selection tools, follow these steps:
     | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png"::: | **Single select** —This is a single-selection tool that can be used to click individual locations; it is the default selection tool. Press Ctrl and click to select multiple locations. Clicking data locations on the map selects them and triggers interactions with other visualizations. Clicking a pin or a location on a reference layer displays its tooltip. |
     | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png"::: | **Box select** —Drag a rectangle selector to select multiple locations or select individual locations by clicking them. As with the Select tool, clicking a pin or a location on a reference layer displays its tooltip. When the Box select tool is active, you cannot pan the map. |
     | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png"::: | **Reference layer select** —If you added a [reference layer](https://doc.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm) to the map, use this tool to select locations by clicking areas on the reference layer. Locations that are within a delimited area on a reference are highlighted; locations in other areas of the map are unavailable. This tool appears only if the map contains one or more reference layers and a reference layer is currently active. |
-    | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png"::: | **Drive-time select** —If you added a [drive-time area](https://doc.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm) to your map, use the drive-time area selection tool to select data locations within the defined area. |
+    | :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png"::: | **Drive-time select** —If you added a [drive-time area](https://pro.arcgis.com/en/pro-app/latest/tool-reference/business-analyst/find-nearby-locations.htm) to your map, use the drive-time area selection tool to select data locations within the defined area. |
     
 2. Select one or more locations on the map. You can select a maximum of 250 data points at a time.
 
@@ -343,7 +343,7 @@ To find locations within a specific driving distance from the point of origin, f
 
     Locations that fall within the search area are selected; unselected locations on the map appear smaller or become more transparent. Other visualizations are updated to reflect the selected locations.
 
-For more information, see [Find nearby locations](https://doc.arcgis.com/en/power-bi/design/find-nearby-locations.htm) in the ArcGIS for Power BI online help.
+For more information, see [Find nearby locations](https://pro.arcgis.com/en/pro-app/latest/tool-reference/business-analyst/find-nearby-locations.htm) in the ArcGIS for Power BI online help.
 
 #### Add infographics cards
 

@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/03/2022
+ms.date: 08/07/2022
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -73,7 +73,7 @@ The process for exporting a report from Power BI Desktop to PDF is similar to th
 ## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PDF** feature.
 
-* R and Python visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
+* R, Python, and Power Apps visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
 * Power BI visuals that have been certified are supported. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. In the PDF, they display with an error message.
 * The ESRI visual is not supported.
 * Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
@@ -95,6 +95,8 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * Visuals in a drill down state are exported in their default state. 
 * The feature does *not* export any wallpaper you may have applied to the report. Since wallpaper is not exported to the PDF, you should pay special attention to reports that use dark wallpaper. If the text in your report is light or white, to have it stand out against your dark wallpaper, it will be difficult to read or unreadable in the export to PDF process since the wallpaper will not be exported with the rest of the report. 
+* All Power BI reports have a page margin when exported to PDF i.e. there will be a band of white space at the top and bottom of the exported file. 
+* Export to PDF is not currently supported for tenants in the China North region. 
 
 ## Next steps
 

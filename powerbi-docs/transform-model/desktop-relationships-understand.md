@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 04/19/2022
+ms.date: 08/29/2022
 ---
 
 # Model relationships in Power BI Desktop
@@ -114,7 +114,7 @@ When the cross filter direction is set to **Both**, another property becomes ava
 
 You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function) DAX function.
 
-Bear in mind that bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Precedence rules that affect ambiguity detection and path resolution are described in the [Precedence rules](#precedence-rules) topic later in this article.
+Bear in mind that bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Resolving relationship path ambiguity is described [later in this article](#resolve-relationship-path-ambiguity).
 
 We recommend using bi-directional filtering only as needed. For more information, see [Bi-directional relationship guidance](../guidance/relationships-bidirectional-filtering.md).
 
@@ -160,7 +160,7 @@ There are several DAX functions that are relevant to model relationships. Each f
 
 - [RELATED](/dax/related-function-dax): Retrieves the value from "one" side of a relationship. It's useful when involving calculations from different tables that are evaluated in [row context](/dax/dax-overview#row-context).
 - [RELATEDTABLE](/dax/relatedtable-function-dax): Retrieve a table of rows from "many" side of a relationship.
-- [USERELATIONSHIP](/dax/userelationship-function-dax): Forces the use of a specific inactive model relationship. It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table.
+- [USERELATIONSHIP](/dax/userelationship-function-dax): Allows a calculation to use an inactive relationship. (Technically, this function modifies the weight of a specific inactive model relationship helping to influence its use.) It's useful when your model includes a role-playing dimension table, and you choose to create inactive relationships from this table. You can also use this function to [resolve ambiguity in filter paths](#resolve-relationship-path-ambiguity).
 - [CROSSFILTER](/dax/crossfilter-function): Modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It's useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
 - [COMBINEVALUES](/dax/combinevalues-function-dax): Joins two or more text strings into one text string. The purpose of this function is to support multi-column relationships in DirectQuery models when tables belong to the same source group.
 - [TREATAS](/dax/treatas-function): Applies the result of a table expression as filters to columns from an unrelated table. It's helpful in advanced scenarios when you want to create a virtual relationship during the evaluation of a specific calculation.
@@ -232,13 +232,41 @@ There are other restrictions related to limited relationships:
 > [!NOTE]
 > In Power BI Desktop model view, it's not always possible to determine whether a model relationship is regular or limited. A many-to-many relationship will always be limited, as will be a one-to-many relationship when it's a cross source group relationship. To determine whether it's a cross source group relationship, you'll need to inspect the table storage modes and data sources to arrive at the correct determination.
 
-### Precedence rules
+### Resolve relationship path ambiguity
 
-Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. The following list presents precedence rules that Power BI uses for ambiguity detection and path resolution:
+Bi-directional relationships can introduce multiple, and therefore ambiguous, filter propagation paths between model tables. When evaluating ambiguity, Power BI chooses the filter propagation path according to its [priority](#priority) and [weight](#weight).
 
-1. Many-to-one and one-to-one relationships, including limited relationships
-2. Many-to-many relationships
-3. Bi-directional relationships, in the reverse direction (that is, from the "many" side)
+#### Priority
+Priority tiers define a sequence of rules that Power BI uses to resolve relationship path ambiguity. The first rule match determines the path Power BI will follow. Each rule below describes how filters flow from a source table to a target table.
+
+1. A path consisting of one-to-many relationships.
+2. A path consisting of one-to-many or many-to-many relationships.
+3. A path consisting of many-to-one relationships.
+4. A path consisting of one-to-many relationships from the source table to an intermediate table followed by many-to-one relationships from the intermediate table to the target table.
+5. A path consisting of one-to-many or many-to-many relationships from the source table to an intermediate table followed by many-to-one or many-to-many relationships from the intermediate table to the target table.
+6. Any other path.
+
+When a relationship is included in all available paths, it’s removed from consideration from all paths.
+
+#### Weight
+Each relationship in a path has a weight. By default, each relationship weight is equal unless the [USERELATIONSHIP](/dax/userelationship-function-dax) function is used. The *path weight* is the maximum of all relationship weights along the path. Power BI uses the path weights to resolve ambiguity between multiple paths in the same priority tier. It won't choose a path with a lower priority but it will choose the path with the higher weight. The number of relationships in the path doesn't affect the weight.
+
+You can influence the weight of a relationship by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function. The weight is determined by the nesting level of the call to this function, where the innermost call receives the highest weight.
+
+Consider the following example. The **Product Sales** measure assigns a higher weight to the relationship between **Sales[ProductID]** and **Product[ProductID]**, followed by the relationship between **Inventory[ProductID]** and **Product[ProductID]**.
+```dax
+Product Sales = 
+CALCULATE(
+    CALCULATE(
+        SUM(Sales[SalesAmount]), 
+        USERELATIONSHIP(Sales[ProductID], Product[ProductID])
+    ),
+    USERELATIONSHIP(Inventory[ProductID], Product[ProductID])
+)
+```
+
+> [!NOTE]
+> If Power BI detects multiple paths that have the same priority and the same weight, it will return an ambiguous path error. In this case, you must resolve the ambiguity by influencing the relationship weights by using the [USERELATIONSHIP](/dax/userelationship-function-dax) function, or by removing or modifying model relationships.
 
 ### Performance preference
 

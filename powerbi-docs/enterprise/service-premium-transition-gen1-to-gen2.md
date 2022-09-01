@@ -7,7 +7,7 @@ ms.reviewer: david.magar
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 08/01/2022
 LocalizationGroup: Premium
 ---
 
@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 This article provides information about key dates for migrating Power BI Premium capacity to the latest platform.
 
-Over the last several months, we've been working to make many improvements to Power BI Premium. Changes include updates to licensing, performance, scaling, management overhead, and improved insight to utilization metrics. This next generation of Power BI Premium, referred to as Power BI Premium Gen2, has officially moved from preview to general availability as of October 4, 2021. You can read the announcement about this release in the [Power BI blog](https://powerbi.microsoft.com/blog/).
+Over the last several months, we've been working to make many improvements to Power BI Premium. Changes include updates to licensing, performance, scaling, management overhead, and improved insight to utilization metrics. This next generation of Power BI Premium, referred to as Power BI Premium Gen2, has officially moved from preview to general availability as of October 4, 2021. You can learn more about the Premium Gen2 enhancements in the [Gen2 fundamentals and capacity analytics deep dive](https://go.microsoft.com/fwlink/?linkid=2202475) webinar.
 
 If your organization is using the [original version](service-premium-what-is.md) of Power BI Premium, you're required to migrate to the modern Gen2 platform. Microsoft began migrating all Premium capacities to Gen2. If you have a Premium capacity that requires migrating, **you’ll receive an email notification 60 days before the migration is scheduled to start**.
 
@@ -45,7 +45,7 @@ You also need to use the following [client libraries](service-premium-connect-to
 
 ## Self-migration to Premium Generation 2
 
-If you want to perform your own migration to the latest platform, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service and doesn't involve any additional costs. The change typically completes within a minute and won't take more than 10 minutes.
+If you want to perform your own migration to the latest platform, it's easy to transition. You simply need to enable Premium Gen2 in the Power BI admin portal. Migrating doesn't interrupt your Power BI service and doesn't involve any additional costs. The change typically completes within a minute.
 
 Ready for the next generation? Follow these steps:
 
@@ -86,8 +86,45 @@ The following table describes Gen2 national cloud supportability. If a certain c
 |U.S. Government Community Cloud (GCC)            |✔️ |Autoscale |
 |U.S. Government Community Cloud High (GCC High) |✔️ |          |
 
+## Frequently asked questions
+
+This section answers frequently asked questions related to the migration.
+
+* **Can I go back to Gen1?**
+
+    No.
+
+* **Will I notice downtime during the migration?**
+
+    No downtime is expected. During a short interval that could last up to a minute, queries may take longer to run. If you're running refresh operations during the migration, they will stop and run again after the migration.
+
+* **Do I need to prepare anything or make any changes before the migration?**
+
+    No. You don't need to move workspaces before the migration, or reassign workspaces after the migration.
+
+* **Why do I need to change to Gen 2?**
+
+    Power BI is migrating everyone to Gen2.
+
+* **What differences in Power BI can I expect after the migration?**
+
+    To see a full list of Gen2 benefits, see [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md) and [Power BI Premium Gen2 architecture](service-premium-architecture.md).
+
+* **Does Gen2 have limitations?**
+
+    For a full list of considerations and limitations, see [Limitations in Premium Gen2](service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+
+* **Do I need to update the capacity metrics app for Gen2?**
+
+    Yes, the Premium Gen2 platform requires that you download and use the [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md).
+
 ## Next steps
 
-* [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
-* [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
-* [Install the Gen2 metrics app](service-premium-install-gen2-app.md)
+>[!div class="nextstepaction"]
+>[What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
+
+>[!div class="nextstepaction"]
+>[Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
+
+>[!div class="nextstepaction"]
+>[Install the Gen2 metrics app](service-premium-install-gen2-app.md)

@@ -296,8 +296,8 @@ The following operations are available in both the audit and activity logs.
 | Added data source to Power BI gateway   | AddDatasourceToGateway |     |
 | Added external resource | AddExternalResource | |
 | Added link to external resource | AddExternalResourceLink | |
-| Added Power BI folder access  | AddFolderAccess     | Not currently used      |
-| Added Power BI group members       | AddGroupMembers     |    |
+| Added Power BI folder access | AddFolderAccess     | Not currently used      |
+| Added Power BI group members | AddGroupMembers     |    |
 | Added user to Power BI gateway cluster | AddUsersToGatewayCluster | |
 | Added user to Power BI gateway cluster datasource | AddUsersToGatewayClusterDatasource | |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used     |
@@ -360,7 +360,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI folder access     | DeleteFolderAccess     | Not currently used        |
 | Deleted Power BI gateway      | DeleteGateway                  |        |
 | Deleted Power BI gateway cluster | | |
-| Deleted Power BI gateway cluster datasource | | |
+| Deleted Power BI gateway cluster datasource | DeleteGatewayClusterDatasource | |
 | Deleted Power BI metric | DeleteGoal | |
 | Deleted Power BI group      | DeleteGroup          |            |
 | Deleted Power BI note | DeleteNote | |
@@ -433,9 +433,9 @@ The following operations are available in both the audit and activity logs.
 | Requested Power BI dataset refresh from external app | RefreshDatasetFromExternalApplication | |
 | Requested SAS token for Power BI storage | AcquireStorageSASFromExternalApplication | |
 | Restored Power BI workspace | RestoreWorkspace | |
-| Retrieved all Power BI gateway cluster datasources | | |
+| Retrieved all Power BI gateway cluster datasources | GetAllGatewayClusterDatasources | |
 | Retrieved all supported datasources for Power BI gateway cluster | | |
-| Retrieved allowed Power BI gateway regions | | |
+| Retrieved allowed Power BI gateway regions | GetGatewayRegions | |
 | Retrieved authentication details for Power BI gateway cluster datasource | | |
 | Retrieved data sources from Power BI dataset | GetDatasetDatasourcesAsAdmin | |
 | Retrieved data sources from Power BI dataflow | GetDataflowDatasourcesAsAdmin | |
@@ -444,7 +444,7 @@ The following operations are available in both the audit and activity logs.
 | Retrieved list of datasource users for Power BI gateway cluster | | |
 | Retrieved list of modified workspaces in Power BI tenant | GetModifiedWorkspacesAPI | |
 | Retrieved list of Power BI gateway installer principals | | |
-| Retrieved member status of Power BI gateway cluster | | |
+| Retrieved member status of Power BI gateway cluster | GetGatewayClusterMemberStatus | |
 | Retrieved multiple Power BI gateway clusters | | |
 | Retrieved multiple Power BI metric values | GetGoalValues | |
 | Retrieved multiple Power BI scorecards | GetScorecards | |
@@ -486,7 +486,7 @@ The following operations are available in both the audit and activity logs.
 | Retrieved Power BI workspaces | GetWorkspaces | |
 | Retrieved scan result in Power BI tenant | GetWorkspacesInfoResult | |
 | Retrieved snapshots for user in Power BI tenant | GetSnapshots | Generated when user retrieves snapshots that describe a dataset such as when a user visits the data hub |
-| Retrieved status of Power BI gateway cluster | | |
+| Retrieved status of Power BI gateway cluster | GetGatewayClusterStatus | |
 | Retrieved status of Power BI gateway cluster datasource | | |
 | Retrieved upstream dataflows from Power BI dataflow | GetDataflowUpstreamDataflowsAsAdmin | |
 | Rotated Power BI gateway tenant key | | |
