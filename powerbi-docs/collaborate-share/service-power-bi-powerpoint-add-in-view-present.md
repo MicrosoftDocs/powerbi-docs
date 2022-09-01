@@ -9,10 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/02/2022
+ms.date: 08/25/2022
 ---
 
-# View and present live Power BI report pages in PowerPoint
+# View and present live Power BI report pages in PowerPoint (preview)
 
 As soon as you add a live Power BI report page to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used.
 

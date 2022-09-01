@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/03/2022
+ms.date: 08/23/2022
 ms.custom: known-issue-169
 ---
 
@@ -18,11 +18,9 @@ The "Try it" button is currently missing on all REST API pages.
 
 **APPLIES TO:** ✔️ Power BI REST APIs
 
-**Status:** Open
+**Status:** Fixed: August 22, 2022
 
 **Problem area:** Embedded, REST API or PowerShell
-
-
 
 ## Symptoms
 
