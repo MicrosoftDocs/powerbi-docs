@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 08/30/2022
+ms.date: 09/01/2022
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -20,7 +20,7 @@ There are three kinds of Power BI *per-user* licenses: Free, Pro, and Premium Pe
 > A Premium Per User (PPU) workspace is not the same as a Premium capacity workspace.  
 
 ## Power BI service licenses 
-The important distinction to understand about licenses is that there are licenses that apply to an individual (per-user) and a license (often also referred to as a *subscription*) that applies to the type of storage capacity that an organization purchases. Each of the three per-user licenses is unique, and each grants access to certain Power BI service features and capabilities. When you combine the features and capabilities of each type of per-user license with the use of a Premium capacity, that is where Pro, PPU, and free license holders gain access to additional features and capabilities -- such as sharing, collaboration, and more.  
+The important distinction to understand about licenses is that there are licenses that apply to an individual (per-user) and a license (often also referred to as a *subscription*) that applies to the type of storage capacity that an organization purchases. Each of the three per-user licenses is unique, and each grants access to certain Power BI service features and capabilities. When you combine the features and capabilities of each type of per-user license with the use of a Premium capacity, that is where Pro, PPU, and free license holders gain access to additional features and capabilities - such as sharing, collaboration, and more.  
 
 
 ### Free per-user license
@@ -29,7 +29,7 @@ Users with free licenses can use the Power BI service to connect to data and cre
 
 ### Pro license 
 
-Power BI Pro is an individual per-user license that lets users create content and also read, and interact with content that others have published to the Power BI service. Users with this license type can share content and collaborate with other Power BI Pro users. Only Power BI Pro users can publish or share content with other users or consume content that's created by others, unless a Power BI Premium capacity hosts that content. If a Power BI Premium capacity hosts the content, then Pro users can share content and collaborate with free and PPU users too. 
+Power BI Pro is an individual per-user license that lets users create content and also read, and interact with content that others have published to the Power BI service. Users with this license type can share content and collaborate with other Power BI Pro users. Only Power BI Pro users can publish or share content with other Pro users or consume content that's created by other Pro users, unless a Power BI Premium capacity hosts that content. If a Power BI Premium capacity hosts the content, then Pro users can share content and collaborate with free and PPU users too. 
 
 ### Premium per user (PPU) license
 
@@ -46,9 +46,9 @@ To discover more about Power BI Premium, see [What is Power BI Premium?](../ente
 
 | License type | Capabilities when workspace is in shared capacity | Additional  capabilities when workspace is in Premium capacity |
 | --------- | ----------- | ----------- |
-| Power BI (free) | Access to content in My Workspace | Consume content shared with them by Pro users |
-| Power BI Pro | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with users who have a Pro license | Distribute content to users who have free licenses |
-| Power BI Premium Per User (PPU) | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with users who have a PPU license | Distribute content to users who have free and Pro licenses |
+| Power BI (free) | Access to content they create for themselves. | Consume content shared with them by Pro or PPU users |
+| Power BI Pro | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with users who have a Pro license | Distribute content to users who have free or PPU licenses |
+| Power BI Premium Per User (PPU) | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with *users who have a PPU license* | Distribute content to users who have free and Pro licenses |
 
 For a comparison of Power BI Pro and Power BI Premium, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
