@@ -20,7 +20,7 @@ There are three kinds of Power BI *per-user* licenses: Free, Pro, and Premium Pe
 > A Premium Per User (PPU) workspace is not the same as a Premium capacity workspace.  
 
 ## Power BI service licenses 
-The important distinction to understand about licenses is that there are licenses that apply to an individual (per-user) and a license (often also referred to as a *subscription*) that applies to the type of storage capacity that an organization purchases. Each of the three per-user licenses is unique, and each grants access to certain Power BI service features and capabilities. When you combine the features and capabilities of each type of per-user license with the use of a Premium capacity, that is whe Pro, PPU, and free license holders gain access to additional features and capabilities -- such as sharing, collaboration, and more.  
+The important distinction to understand about licenses is that there are licenses that apply to an individual (per-user) and a license (often also referred to as a *subscription*) that applies to the type of storage capacity that an organization purchases. Each of the three per-user licenses is unique, and each grants access to certain Power BI service features and capabilities. When you combine the features and capabilities of each type of per-user license with the use of a Premium capacity, that is where Pro, PPU, and free license holders gain access to additional features and capabilities -- such as sharing, collaboration, and more.  
 
 
 ### Free per-user license
