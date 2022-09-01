@@ -259,12 +259,10 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Import of *.pbix* files stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, with the exception of the following scenarios:
 
-    * Protected live-connected *.pbix* files.
-    * Protected Azure Analysis Services *.pbix* files.
-    * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to.
-    * If the dataset owner's access token for OneDrive/SharePoint has expired.
-
-    In these cases, refresh will fail.
+    * Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files. Refresh will fail. Neither report content nor label will be updated.
+    * Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label will not be updated.
+    * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
+    * If the dataset owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
 * Power BI supports publishing or importing a .pbix file that has an **unprotected** sensitivity label to the service via APIs running under a service principal. Publishing or importing a .pbix file that has a **protected** sensitivity label to the service via APIs running under a service principal **is not** supported and will fail. To mitigate, users can remove the label and then publish using service principals.
 
