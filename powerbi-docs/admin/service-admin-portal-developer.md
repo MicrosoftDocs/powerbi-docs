@@ -34,15 +34,11 @@ To manage Power BI developer settings, you must be a Global Admin in Office 365,
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](../developer/embedded/embedded-analytics-power-bi.md).
 
-   ![A screenshot showing the embed content in apps menu expanded.](media/service-admin-portal-developer/embed-content-expanded.png)
-
 ## Allow service principals to use Power BI APIs
 
 Web apps registered in Azure Active Directory (Azure AD) will use an assigned [service principal](../developer/embedded/pbi-glossary.md#service-principal) to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group.
 
 You can control who can access service principals by creating dedicated security groups and using these groups in any Power BI tenant level-settings. [Learn more](../developer/embedded/embed-service-principal.md).
-
-   ![A screenshot showing the Allow service principals to use Power BI APIs menu expanded.](media/service-admin-portal-developer/allow-service-principals-expanded.png)
 
 ## Allow service principals to create and use profiles
 
@@ -50,10 +46,10 @@ An app owner with many customers can use service principal profiles as part of a
 
 ## Block ResourceKey Authentication
 
-For extra security, you can block the use of resource key based authentication. The Block ResourceKey Authentication setting applies to streaming and PUSH datasets. If disabled, users will not be allowed send data to streaming and PUSH datasets using the API with a resource key. This setting applies to the entire organization. You can't apply it only to a select security group.
+For extra security, you can block the use of resource key based authentication. The Block ResourceKey Authentication setting applies to streaming and PUSH datasets. If disabled, users will not be allowed send data to streaming and PUSH datasets using the API with a resource key.  
 
-   ![A screenshot showing the Block ResourceKey Authentication menu expanded.](media/service-admin-portal-developer/block-resource-key-expanded.png)
+This setting applies to the entire organization. You can't apply it only to a select security group.
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-about-tenant-settings.md)
+[About tenant settings](service-admin-portal-about-tenant-settings.md)
