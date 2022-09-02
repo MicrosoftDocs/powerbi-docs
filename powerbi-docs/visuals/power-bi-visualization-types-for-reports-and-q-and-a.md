@@ -278,7 +278,7 @@ A slicer is a standalone chart that can be used to filter the other visuals on t
 
 Slicers are a great choice to:
 
-- Display commonly-used or important filters on the report canvas for easier access.
+- Display commonly used or important filters on the report canvas for easier access.
 - Make it easier to see the current filtered state without having to open a drop-down list.
 - Filter by columns that are unneeded and hidden in the data tables.
 - Create more focused reports by putting slicers next to important visuals.
