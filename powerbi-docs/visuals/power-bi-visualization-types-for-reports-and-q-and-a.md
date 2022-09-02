@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 06/09/2022
+ms.date: 09/01/2022
 ms.custom: retail-analysis-sample-PBIX
 LocalizationGroup: Visualizations
 ---
@@ -101,9 +101,9 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/gauge-m.png" alt-text="Screenshot of a Radial gauge chart.":::
 
-A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal/KPI. The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
-In the example above, we are a car retailer, tracking our Sales team's average sales per month. Our goal is 140 and represented by the black needle. The minimum possible average sales is 0 and we've set the maximum as 200. The blue shading shows that we're currently averaging approximately 120 sales this month. Luckily, we still have another week to reach our goal.
+In the example above, we are a car retailer, tracking our Sales team's average sales per month. Our goal is $200,000 and represented by the location of the needle. The minimum possible average sales is $100,000 and we've set the maximum as $250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
 
 Radial gauges are a great choice to:
 
@@ -278,7 +278,7 @@ A slicer is a standalone chart that can be used to filter the other visuals on t
 
 Slicers are a great choice to:
 
-- Display commonly-used or important filters on the report canvas for easier access.
+- Display commonly used or important filters on the report canvas for easier access.
 - Make it easier to see the current filtered state without having to open a drop-down list.
 - Filter by columns that are unneeded and hidden in the data tables.
 - Create more focused reports by putting slicers next to important visuals.
