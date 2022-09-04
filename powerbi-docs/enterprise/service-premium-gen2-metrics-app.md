@@ -139,7 +139,7 @@ Displays the memory footprint recorded for Power BI items over time. If no item 
 
 #### Performance profile
 
-Displays the aggregate of report performance across three operation categories:
+Displays an aggregate of report performance across three operation categories:
 
 [!INCLUDE [gen2-app-fast-moderate-slow-operations](../includes/gen2-app-fast-moderate-slow-operations.md)]
 
