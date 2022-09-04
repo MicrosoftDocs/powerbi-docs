@@ -59,7 +59,7 @@ This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven'
 
 ## Autoscaling
 
-Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, you can increase or decrease the size of your gen2 capacity using one of these options:
+Embedded Gen2 doesn't provide an out-of-the-box vertical autoscale feature. Instead, you can increase or decrease the size of your gen2 capacity using one of these options:
 
 * [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
 
