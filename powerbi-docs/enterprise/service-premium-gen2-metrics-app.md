@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 09/04/2022
 LocalizationGroup: Premium 
 ---
 
@@ -139,7 +139,11 @@ Displays the memory footprint recorded for Power BI items over time. If no item 
 
 #### Performance profile
 
-Displays the percentage of fast, moderate, and slow operations from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
+Displays the aggregate of report performance across three operation categories:
+
+[!INCLUDE [gen2-app-fast-moderate-slow-operations](../includes/gen2-app-fast-moderate-slow-operations.md)]
+
+The aggregate is taken from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
 
 ### Weekly trendlines
 
@@ -394,11 +398,7 @@ Displays the percentage of fast, moderate, and slow operations from the total nu
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Gen2 metrics app.":::
 
-* **Fast** - The moving average of fast operations as a percentage of all the operations over time. A fast operation takes less than 100 milliseconds.
-
-* **Moderate** - The moving average of moderate operations as a percentage of all the operations over time. A moderate operation takes between 100 milliseconds to two seconds.
-
-* **Slow** - The moving average of slow operations as a percentage of all the operations over time. A slow operation takes over two seconds.
+[!INCLUDE [gen2-app-fast-moderate-slow-operations](../includes/gen2-app-fast-moderate-slow-operations.md)]
 
 ### Artifact size
 
