@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 09/02/2022
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
@@ -86,6 +86,9 @@ Here are the options for button actions:
 
 Certain buttons have a default action selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action.
 
+> [!NOTE]
+> An action can't have a numeric measure as the value of any of its fields.
+
 You can try or test the buttons you create for your report by selecting *Ctrl* and selecting the button.
 
 ## Create page navigation
@@ -93,7 +96,7 @@ You can try or test the buttons you create for your report by selecting *Ctrl* a
 With the **Action** type **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark. 
 
 > [!TIP]
-> If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead.
+> If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 To set up a single page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page.
 
@@ -101,7 +104,7 @@ To set up a single page navigation button, create a button with **Page navigatio
 
 Additionally, you can conditionally format the tooltip as you can do with other button types.
 
-Remember, if you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead.
+Remember, if you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 ## Set the navigation destination conditionally
 
