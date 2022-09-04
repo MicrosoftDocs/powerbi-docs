@@ -107,8 +107,6 @@
       href: embed-azure-analysis-services.md
     - name: "Embed a report with cloud-based OLS"
       href: embed-object-level-security.md
-    - name: "Object level security (OLS)"
-      href: embed-object-level-security.md
     - name: "Embed a report with Azure Analysis Services (AAS)"
       href: embed-azure-analysis-services.md
   - name: Support
