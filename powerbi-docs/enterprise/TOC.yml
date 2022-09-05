@@ -177,7 +177,9 @@
       expanded: false
       items:
       - name: Row-level security
-        href: service-admin-rls.md      
+        href: service-admin-rls.md 
+    - name: Object-level security
+      href: service-admin-ols.md     
     - name: Privacy levels
       href: desktop-privacy-levels.md
     - name: Using service tags with Power BI
