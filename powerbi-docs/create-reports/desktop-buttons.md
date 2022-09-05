@@ -64,7 +64,7 @@ To select how a button should appear for each state:
 
 1. In the **Format** pane, select the **Button** tab, and then expand the **Shape** or **Style** card.
 
-1, Select **State** under **Apply settings to** at the top of the card, and then select the settings you want to use for that state.
+1. Select **State** under **Apply settings to** at the top of the card, and then select the settings you want to use for that state.
 
    In the following image, you see the **Style** card and **Icon** expanded. The **State** is **On hover**, and the **Icon type** is **Right arrow**.
 
@@ -72,24 +72,26 @@ To select how a button should appear for each state:
 
 ## Select the action for a button
 
-You can select which action is taken when a user selects a button in Power BI:
+You can select which action is taken when a user selects a button in Power BI.
+
+Here are the options for button actions:
+
+- **Back** returns the user to the previous page of the report. This action is useful for drillthrough pages.
+- **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
+- **Drillthrough** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
+- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](#create-page-navigation) for details.
+- **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
+- **Web URL** opens a web page in a browser.
+
+Certain buttons have a default action that's selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action.
+
+To select a button action:
 
 1. On the **Button** tab of the **Format** pane, turn the **Action** to **On**, and then expand the card.
 
 1. Expand **Action**, and then select the **Type** of button action.
 
    ![Screenshot showing Action selections for a button in Power BI.](media/desktop-buttons/power-bi-button-action.png)
-
-   Here are the options for button actions:
-
-   - **Back** returns the user to the previous page of the report. This action is useful for drillthrough pages.
-   - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
-   - **Drillthrough** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drill-through-buttons.md).
-   - **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](#create-page-navigation) for details.
-   - **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
-   - **Web URL** opens a web page in a browser.
-
-   Certain buttons have a default action selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action.
 
 1. Test the buttons you create for your report by selecting <kbd>Ctrl</kbd> and the button.
 
@@ -100,11 +102,13 @@ With the **Type** of an **Action** set to **Page navigation**, you can create a 
 > [!TIP]
 > If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead.
 
-1. To set up a single page navigation button, create a button with **Page navigation** as the **Type** of its **Action**, and then select a page for the **Destination**.
+To set up a single-page navigation button:
+
+1. Create a button with **Page navigation** as the **Type** of its **Action**, and then select a page for the **Destination**.
 
    ![Screenshot showing Page navigation action.](media/desktop-buttons/power-bi-page-navigation.png)
 
-1. Additionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
+1. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
 
 1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead.
 
@@ -118,19 +122,25 @@ To create this example, start by creating a single-column table with the names o
 
 ### [Power BI Desktop](#tab/powerbi-desktop)
 
-On the **Home** tab, select **Enter data**. The **Create Table** dialog box opens.
+In Power BI Desktop, on the **Home** tab, select **Enter data**.
+
+The **Create Table** dialog box opens.
 
 ### [Power BI service](#tab/powerbi-service)
 
-In the Power BI service, open the report in Editing view. Select **Create** from the left menu, and then select **Paste or manually enter data** from the main screen. The **Create Table** dialog box opens.
+In the Power BI service, open the report in Editing view. Select **Create** from the left menu, and then select **Paste or manually enter data** from the main screen.
+
+The **Create Table** dialog box opens.
 
 ---
 
-In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
+To create a table to use for page navigation:
+
+1. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
 
    :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Screenshot showing Create a table.":::
 
-After you've created the table, add it to the page as a single-select slicer:
+1. After you've created the table, add it to the page as a single-select slicer:
 
    :::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Screenshot showing Navigate slicer.":::
 
@@ -148,7 +158,7 @@ Create a page navigation button and select the conditional formatting option for
 
    :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
-Page navigation action is also supported for shapes and images, not just buttons.
+In addition to buttons, page navigation actions also support shapes and images.
 
 ## Buttons support fill images
 
