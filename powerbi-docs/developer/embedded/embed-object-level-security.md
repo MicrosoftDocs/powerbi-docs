@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/23/2022
+ms.date: 09/06/2022
 ---
 
 # Object level security
@@ -26,7 +26,7 @@ If the report you want to embed is using one of the following scenarios, you mig
 
 * [Paginated reports](embed-paginated-reports.md)
 * [SQL Server Analysis Services (SSAS)](sql-server-analysis-services-embed.md)
-* Azure AD
+* [Azure AD](./embed-azure-analysis-services.md)
 * Single sign-on
 
 ## Considerations and limitations
