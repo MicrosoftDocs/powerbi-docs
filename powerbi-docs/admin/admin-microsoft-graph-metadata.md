@@ -22,15 +22,15 @@ Together, the Microsoft Graph API, connectors, and Data Connect power the Micros
 
 For more information, visit [Microsoft Graph documentation](/graph/overview.md)
 
-When Microsoft Graph is integrated with Power BI, details about the Power BI content and activity will be accessible from the Office.com Home page. This feature is currently available in **private preview**. To participate in the **private preview**, a Power BI administrator will need to enable the **Share data with your Microsoft 365 services** tenant setting. Before turning on the experience, learn what data will be shared with Microsoft 365.
+When Microsoft Graph is integrated with Power BI, details about the Power BI content and activity will be accessible from the Office.com Home page. This feature is currently available in private preview. To participate in the private preview, a Power BI administrator will need to enable the **Share data with your Microsoft 365 services** tenant setting. Before turning on the experience, learn what data will be shared with Microsoft 365.
 
 ## Data that will be shared with Microsoft 365
 
 |Property  |Source  |What is shared  |Example  | Data classification  |  Storage location  |
 |---------|---------|---------|---------|---------|---------|
-|TenantID     | PBI Store        |  Azure Active Directory Tenant Identifier       |  762049eb-7a69-4c39-bf19-75a5b7fcce1d       |OII  | SCD  |
+|TenantID     | PBI Store        |  Azure AD Tenant Identifier       |  762049eb-7a69-4c39-bf19-75a5b7fcce1d       |OII  | SCD  |
 |ArtifactID     |    PBI Store     |  Identifier for the Content Item (report, app, dashboard, scorecard etc.)       |   762049eb-7a69-4c39-bf19-75a5b7fcce1d      | OII  |  CD  |
-|ACL          |  PBI Store       |   Access Control List with permissions and Azure Active Directory User, Security Group and Distribution List Identifiers      |{"accessType": "grant", "id" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee", "type" : "read" }   |OII  | CD  |
+|ACL          |  PBI Store       |   Access Control List with permissions and Azure AD User, Security Group and Distribution List Identifiers      |{"accessType": "grant", "id" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee", "type" : "read" }   |OII  | CD  |
 |DisplayName     |   PBI Store      |  Display name for the report, dashboard, etc.       |  Retail Analysis Sample       | Customer content  |  CD  |
 |Location     |  PBI Store       |  Workspace name as per [Create a workspace](../collaborate-share/service-create-the-new-workspaces.md)       |  Retail workspace       | Customer content  |  CD  |
 |ContainerURL     |  PBI Store       |  Workspace URL       |    `https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17`     |
@@ -39,14 +39,14 @@ When Microsoft Graph is integrated with Power BI, details about the Power BI con
 |SharingLinksURL     |  PBI Store       |  Sharing Link as per [Share a report using a link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)      |   OII      |CD|
 |IconURL     |   Config      |    ?     |   `cdn.com/report.png`      | System metadata  |  CD  |
 |Description     |  PBI Store       |  Content description as per [Report settings](../create-reports/power-bi-report-settings.md)      |   Sample containing retail sales data      | Customer content  |  CD  |
-|CreatedUser     |  PBI Store       |  Azure Active Directory User Principal Name of the User that Created the Content as per [AAD user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname/)       |    `user1@griffin1.org`     | EUII  |  CD  |
+|CreatedUser     |  PBI Store       |  Azure AD User Principal Name of the User that Created the Content as per [AAD user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname/)       |    `user1@griffin1.org`     | EUII  |  CD  |
 |CreatedDate     | PBI Store        |  Date the content was created       |   2011-06-30T23:32:46Z      | System metadata  |  CD  |
 |LastModifiedDate     |   PBI Store      |  Last modified date for the content       |    2011-06-30T23:32:46Z     | System metadata  |  CD  |
-|LastModifiedUser     |  PBI Store       |   Azure Active Directory User Principal Name for the last person who modified the content      |   `user1@griffin1.org`      |EUII  |  CD  |
+|LastModifiedUser     |  PBI Store       |   Azure AD User Principal Name for the last person who modified the content      |   `user1@griffin1.org`      |EUII  |  CD  |
 |LastRefreshDate     |  PBI Store   | Last refresh date for the content    |  2011-06-30T23:32:46Z   | System metadata |  SIGS  |
-|UserID     |   Audit Events  | Azure Active Directory User Principal Name for the user who acted on the content    | `user1@griffin1.org`    | EUII  | SIGS  |
+|UserID     |   Audit Events  | Azure AD User Principal Name for the user who acted on the content    | `user1@griffin1.org`    | EUII  | SIGS  |
 |Signal Type      |  Audit Events   |  The type of action the user took on the content (Viewed, Modified)   |  Viewed   |System metadata |  SIGS  |
-|ActorID     |  Audit Events   |  Users Azure Active Directory (AAD) ID   |  aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee   |EUII  | SIGS  |
+|ActorID     |  Audit Events   |  Users Azure AD ID   |  aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee   |EUII  | SIGS  |
 |StartTimeEndTime     |  Audit Events   | Date/Time the user performed the action on the content    |  2011-06-30T23:32:46Z   |System metadata |  SIGS  |
 
 ## Next steps
