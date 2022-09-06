@@ -40,12 +40,12 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
 
 ### [To secure the **whole table**](#tab/table)
 
- Set categories under *Table permissions* to *None*.
+    Set categories under *Table permissions* to *None*.
     :::image type="content" source="./media/service-admin-ols/define-rule-table.png" alt-text="Screenshot of setting OLS rule to none for the entire table.":::
 
 ### [To secure a **specific column**](#tab/column)
 
-Select the category and set the *Object Level Security* to *None*.
+   Select the category and set the *Object Level Security* to *None*.
     :::image type="content" source="./media/service-admin-ols/define-rule-column.png" alt-text="Screenshot of setting OLS rule to none for the address column.":::
 
 ---
