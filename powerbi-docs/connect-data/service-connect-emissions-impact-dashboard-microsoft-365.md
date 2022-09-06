@@ -75,7 +75,7 @@ Periodically you may receive update notifications from Appsource/Power BI about 
 
 :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-update.png" alt-text="Screenshot of Update app dialog.":::
 
-Choose **Update the workspace and the app**, then click **Install**. This will install the update, overwriting the existing/installed workspace and app. After installation is complete, repeat steps 5-8 in the instructions above to re-establish the connection for the new app version.
+Choose **Update the workspace and the app**, then click **Install**. This will install the update, overwriting the existing/installed workspace and app. After installation is complete, repeat steps 5-8 in the [Install the app](#install-the-app) section above to re-establish the connection for the new app version.
 
 ### Issues 
 
