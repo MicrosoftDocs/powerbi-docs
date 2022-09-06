@@ -24,25 +24,12 @@ The process of [generating embed tokens](generate-embed-token.md#row-level-secur
 
 If the report you want to embed is using one of the following scenarios, you might need to take some extra steps:
 
-* [Paginated reports](embed-paginated-reports.md)
 * [SQL Server Analysis Services (SSAS)](sql-server-analysis-services-embed.md)
 * [Azure AD](./embed-azure-analysis-services.md)
-* Single sign-on
 
 ## Considerations and limitations
 
-* Datasets with OLS configured for one or more table or column objects aren't supported with these Power BI features:
-
-  * Q&A visualizations
-  * Quick insights visualizations
-  * Smart narrative visualizations
-  * Excel Data Types gallery
-
-* Row-level security and object-level security can't be combined from different roles. An error is generated at query time for users who are members of such a combination of roles.
-
-* Dynamic calculations (measures, KPIs, DetailRows) are automatically restricted if they reference a secured table or column. While you can't explicitly secure a measure, you can implicitly secure a measure by updating the expression to refer to a secured table or column.
-
-* Relationships that reference a secured column work, as long as the table the column isn't secured.
+[See restrictions for OLS models](/analysis-services/tabular-models/object-level-security#restrictions)
 
 ## Next steps
 
