@@ -39,7 +39,7 @@ When Microsoft Graph is integrated with Power BI, details about the Power BI con
 |SharingLinksURL     |  PBI Store       |  Sharing Link as per [Share a report using a link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)      |   OII      |CD|
 |IconURL     |   Config      |    ?     |   `cdn.com/report.png`      | System metadata  |  CD  |
 |Description     |  PBI Store       |  Content description as per [Report settings](../create-reports/power-bi-report-settings.md)      |   Sample containing retail sales data      | Customer content  |  CD  |
-|CreatedUser     |  PBI Store       |  Azure AD User Principal Name of the User that Created the Content as per [AAD user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname/)       |    `user1@griffin1.org`     | EUII  |  CD  |
+|CreatedUser     |  PBI Store       |  Azure AD User Principal Name of the User that Created the Content as per [Azure AD user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname/)       |    `user1@griffin1.org`     | EUII  |  CD  |
 |CreatedDate     | PBI Store        |  Date the content was created       |   2011-06-30T23:32:46Z      | System metadata  |  CD  |
 |LastModifiedDate     |   PBI Store      |  Last modified date for the content       |    2011-06-30T23:32:46Z     | System metadata  |  CD  |
 |LastModifiedUser     |  PBI Store       |   Azure AD User Principal Name for the last person who modified the content      |   `user1@griffin1.org`      |EUII  |  CD  |
