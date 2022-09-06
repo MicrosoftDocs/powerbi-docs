@@ -17,7 +17,7 @@ In Power BI, you can create official packaged content, then distribute it to a b
 
 ![Screenshot of Power BI apps.](media/service-create-distribute-apps/power-bi-new-apps.png)
 
-Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these collections as apps to your whole organization or to specific people or groups. You can create up to ten different apps from the content in one workspace. For you as a report creator or admin, apps make it easier to manage permissions on these collections.
+Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these collections as apps to your whole organization or to specific people or groups. You can create one App from the content in one workspace.For you as a report creator or admin, apps make it easier to manage permissions on these collections.You can further create up to 10 audience groups within an App
 
 Business users get your apps in a few different ways:
 
