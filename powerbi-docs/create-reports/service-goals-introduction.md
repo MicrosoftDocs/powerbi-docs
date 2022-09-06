@@ -113,7 +113,7 @@ Changing the tracking cycle only changes the trend that you see below your value
 
 **Why don’t I see the Power BI workspace I’m looking for when I create a scorecard?**
 
-In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md). 
+In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
 Scorecards do have metric-level permissions roles. While workspace permissions give view or build access to the workspace, metric-level permissions restrict access so that certain people can only see certain metrics and perform check-ins within a scorecard. Read more about [metric-level permissions in scorecards](service-goals-set-permissions.md).
 

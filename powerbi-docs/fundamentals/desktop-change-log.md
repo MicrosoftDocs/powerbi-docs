@@ -1,13 +1,13 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: willthom
+author: oksanakyrychenko
 ms.author: v-okkyry
 ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 7/21/2022
+ms.date: 8/25/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,33 @@ ms.date: 7/21/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## August 2022 QFE 2
+
+*Version: 2.108.997.0, Released: August 25, 2022*
+
+Bug fixes/improvements:
+- Fix for OAuth token refresh for certain data sources like Synapse.
+- Fix for live connections to AS models that have columns or measures included in more than one nested display folder.
+- Data view regression fix: now list of filters in context menu will be displayed even when menu icons are not in focus. 
+- EvaluateAndLog  DAX function fix: now the function will work as expected and won't return an error. 
+- SAP HANA regression fixes: now power query won't show "the index is outside the bounds of the records" error message and there won't be missing values for columns when using Cube.AttributeMemberID on the query.  
+- Rollback change for cashing: cashing will be done the same way as in previous releases
+- Formula bar fixes for cases when “Shift+Enter” is used. 
+- “Apply/discard changes” regression fix.
+
+
+## August 2022 QFE 1
+
+*Version: 2.108.825.0, Released: August 18, 2022*
+
+Bug fixes/improvements:
+- Fix for PBIX open file issue when connecting to Proxy models. 
+- Data view filtering regression fix: now when filtering wide tables by selecting one column and scrolling to select one more column, the filtering/scrolling will work, and user will be able to select a column at the end of a wide table. 
+- Data view regression fix: date and number filter options will be available in the right-click menu. 
+- Formula bar fixes for cases when “Shift+Enter” is used. 
+- “Apply/discard changes” regression fix.
+
 
 ## July 2022 QFE 1
 

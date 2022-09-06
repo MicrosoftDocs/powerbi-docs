@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 06/29/2022
+ms.date: 08/18/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -139,6 +139,8 @@ The following known limitations currently apply to Premium Gen2:
 * There's a 225 second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and will not display.
 
 * Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently.
+
+* Dataflows that use Power BI Premium capacities to refresh data are limited to the maximum number of parallel tasks performed at a given time. The maximum number of parallel tasks [depends on the type of Premium capacity](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#limitations-per-premium-capacity) you're using.
 
 * Memory restrictions are different in Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md). In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all items simultaneously running. In Gen2, there is no memory Limit for the capacity as a whole. Instead, individual items (such as datasets, dataflows, paginated reports) are subject to the following RAM limitations:
 

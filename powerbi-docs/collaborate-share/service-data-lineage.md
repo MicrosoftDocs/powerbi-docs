@@ -18,7 +18,7 @@ In modern business intelligence (BI) projects, understanding the flow of data fr
  
 Power BI has several artifact types, such as dashboards, reports, datasets, and dataflows. Many datasets and dataflows connect to external data sources such as SQL Server, and to external datasets in other workspaces. When a dataset is external to a workspace you own, it may be in a workspace owned by someone in IT or another analyst. External data sources and datasets make it harder to know where the data is coming from, ultimately. For complex projects and for simpler ones, we introduce lineage view.
 
-In lineage view, you see the lineage relationships between all the artifacts in a workspace, and all its external dependencies. It shows connections between all workspace artifacts, including connections to dataflows, both upstream and downstream.    
+In lineage view, you see the lineage relationships between all the artifacts in a workspace, and all its external dependencies. It shows connections between all workspace artifacts, including connections to dataflows, both upstream and downstream.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
@@ -27,7 +27,7 @@ In lineage view, you see the lineage relationships between all the artifacts in 
 
 ## Explore lineage view
 
-Every workspace, whether new or classic, automatically has a lineage view. You need at least a Contributor role in the workspace to view it. See [Permissions](#permissions) in this article for details.
+Every workspace automatically has a lineage view. You need at least a Contributor role in the workspace to view it. See [Permissions](#permissions) in this article for details.
 
 * To access lineage view, go to the workspace list view. Tap the arrow next to **List view** and select **Lineage view**.
 

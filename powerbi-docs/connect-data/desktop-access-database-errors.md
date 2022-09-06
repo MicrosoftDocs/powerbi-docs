@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 04/19/2021
 LocalizationGroup: Troubleshooting
 ---

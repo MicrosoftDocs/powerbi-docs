@@ -40,6 +40,7 @@ To create a query, drag and drop tables from the Object explorer on the left on 
 
 Once you drag one or more tables onto the canvas, you can use the visual experience to design your queries. The datamart editor uses the similar Power Query diagram view experience to enable you to easily query and analyze your data. Learn more about [Power Query diagram view](/power-query/diagram-view).
 
+As you work on your Visual query, the queries are automatically saved every few seconds. A “saving indicator” that shows up in your query tab at the bottom indicates that your query is being saved.
 
 The following image shows a sample query created using the no-code Visual Query editor to retrieve the *Top customers by Orders*.
 
@@ -48,7 +49,7 @@ The following image shows a sample query created using the no-code Visual Query 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
 * Only a subset of Power Query operations that support [Query folding](/power-query/power-query-folding) are currently supported
-* You can't currently save a query or open the visual query in Excel
+* You can't currently open the visual query in Excel
 
 
 ### SQL Query Editor
@@ -59,13 +60,14 @@ The **SQL Query Editor** provides a text editor to write queries using T-SQL. To
 
 You can write your SQL query in the query editor window, which includes intellisense support. Once complete, select the **Run** button to execute the query. Query results appear in the results section. You can open the results in Excel for further analysis by selecting the **Open in Excel** button.
 
+As you work on your SQL query, the queries are automatically saved every few seconds. A “saving indicator” that shows up in your query tab at the bottom indicates that your query is being saved.
+
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-06.png" alt-text="Screenshot of the S Q L query editor query results.":::
 
 The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. The **Results** preview is displayed in the **Results** section. The **Open in Excel** button opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel.
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
-* Saving queries isn't currently supported
 
 
 ## Analyze outside the editor

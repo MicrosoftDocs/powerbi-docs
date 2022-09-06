@@ -18,9 +18,13 @@ You can use the deployment history log, to check the health of your pipeline, an
 
 When you perform a deployment, you can use the built in option to [leave notes](deployment-pipelines-get-started.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
 
-<---Screenshot--->
+:::image type="content" source="media/deployment-pipelies-history/deployment-history.png" alt-text="A screenshot of the deployment pipelines history pane.":::
 
 ## Deployment information
+
+To view the pipeline's deployment history, select **Deployment history**.
+
+:::image type="content" source="media/deployment-pipelies-history/deployment-history-button.png" alt-text="A screenshot of the deployment pipelines history button.":::
 
 The deployment history log is formatted as a table. Each row represents a single deployment, and the columns list the following information per deployment:
 
@@ -53,9 +57,9 @@ The deployment history log is formatted as a table. Each row represents a single
 
 The following section lists the deployment history limitations.
 
-* Partial information is displayed from April 2022 to <---date--->
+* Limited information is displayed from April 2022 to June 2022
 
-* Notes are only displayed from <---date--->
+* Notes are only displayed from June 2022
 
 * Renamed/removed items <---Chen to provide info--->
 

@@ -6,11 +6,12 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 07/06/2022
+ms.date: 08/16/2022
 ms.custom: known-issue-203
 ---
+# Known issue #203 - Decomposition tree shows the title of a collapsed level
 
-# Known issue - Decomposition tree shows the title of a collapsed level
+You can create a report with a decomposition tree visual that allows the report reader to expand or collapse each level. In some cases, you may see the title of a level that is collapsed as though it were expanded.
 
 **APPLIES TO:** ✔️ Power BI Service
 
@@ -18,9 +19,7 @@ ms.custom: known-issue-203
 
 **Problem area:** Consume and View
 
-## Description of problem
 
-You can create a report with a decomposition tree visual that allows the report reader to expand or collapse each level. In some cases, you may see the title of a level that is collapsed as though it were expanded.
 
 ## Symptoms
 

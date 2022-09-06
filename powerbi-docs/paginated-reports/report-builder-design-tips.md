@@ -70,7 +70,7 @@ Use the following tips to help design your paginated reports in Power BI Report 
   
 -   Use the **Zoom** control to adjust your view of the design surface. You can work with the whole page or smaller sections of the page.  
   
--   To drag fields from the Report Data pane to the Grouping pane, avoid dragging the field across other report items on the design surface because this selects the other items and unselects the tablix data region. Drag the field down the Report Data pane and then across to the Grouping pane.  
+-   To drag fields from the Report Data pane to the Grouping pane, avoid dragging the field across other report items on the design surface because this selects the other items and deselects the tablix data region. Drag the field down the Report Data pane and then across to the Grouping pane.  
   
 ###  <a name="Selecting"></a> Selecting items  
  To help select the object that you want on the report design surface, use the ESC key, the right-click context menu, the Properties pane, and the Grouping pane.  
