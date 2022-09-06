@@ -22,7 +22,7 @@ Together, the Microsoft Graph API, connectors, and Data Connect power the Micros
 
 For more information, visit [Microsoft Graph documentation](/graph/overview.md)
 
-When Microsoft Graph is integrated with Power BI, details about the Power BI content and activity will be accessible from the Office.com Home page. This feature is currently available in private preview. To participate in the private preview, a Power BI administrator will need to enable the **Share data with your Microsoft 365 services** tenant setting. Before turning on the experience, learn what data will be shared with Microsoft 365.
+When Microsoft Graph is integrated with Power BI, details about the Power BI content and activity will be accessible from the Office.com Home page. This feature is currently available in **private preview**. To participate in the **private preview**, a Power BI administrator will need to enable the **Share data with your Microsoft 365 services** tenant setting. Before turning on the experience, learn what data will be shared with Microsoft 365.
 
 ## Data that will be shared with Microsoft 365
 
@@ -46,7 +46,7 @@ When Microsoft Graph is integrated with Power BI, details about the Power BI con
 |LastRefreshDate     |  PBI Store   | Last refresh date for the content    |  2011-06-30T23:32:46Z   | System metadata |  SIGS  |
 |UserID     |   Audit Events  | Azure Active Directory User Principal Name for the user who acted on the content    | `user1@griffin1.org`    | EUII  | SIGS  |
 |Signal Type      |  Audit Events   |  The type of action the user took on the content (Viewed, Modified)   |  Viewed   |System metadata |  SIGS  |
-|ActorID     |  Audit Events   |  Users Azure Active Delivery(AAD) ID   |  aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee   |EUII  | SIGS  |
+|ActorID     |  Audit Events   |  Users Azure Active Directory (AAD) ID   |  aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee   |EUII  | SIGS  |
 |StartTimeEndTime     |  Audit Events   | Date/Time the user performed the action on the content    |  2011-06-30T23:32:46Z   |System metadata |  SIGS  |
 
 ## Next steps
