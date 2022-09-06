@@ -104,15 +104,12 @@
     - name: "Embed a report on an on-premises SQL Server Analysis Services (SSAS)"
       href: sql-server-analysis-services-embed.md
     - name: "Embed a report with Azure Analysis Services (AAS)"
-<<<<<<< HEAD
       href: embed-azure-analysis-services.md  
     - name: "Object level security (OLS)"
       href: embed-object-level-security.md
-=======
       href: embed-azure-analysis-services.md
     - name: "Embed a report with Azure Analysis Services (AAS)"
       href: embed-azure-analysis-services.md
->>>>>>> 87b55120e46cfd72fcb257613fcbe8091b2e89f7
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"
