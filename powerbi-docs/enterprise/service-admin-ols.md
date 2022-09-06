@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/23/2022
+ms.date: 09/06/2022
 ---
 
 # Object level security (OLS)
@@ -38,11 +38,17 @@ To create roles on **Power BI Desktop** datasets, use [external tools](../transf
    **None**: OLS is enforced and the table or column will be hidden from that role  
    **Read**: The table or column will be visible to that role
 
-    * To secure the **whole table**, set categories under *Table permissions* to *None*.
+### [To secure the **whole table**](#tab/table)
+
+ Set categories under *Table permissions* to *None*.
     :::image type="content" source="./media/service-admin-ols/define-rule-table.png" alt-text="Screenshot of setting OLS rule to none for the entire table.":::
 
-    * To secure a **specific column**, select the category and set the *Object Level Security* to *None*.
+### [To secure a **specific column**](#tab/column)
+
+Select the category and set the *Object Level Security* to *None*.
     :::image type="content" source="./media/service-admin-ols/define-rule-column.png" alt-text="Screenshot of setting OLS rule to none for the address column.":::
+
+---
 
 6. After you define object-level security for the roles, save your changes.
   :::image type="content" source="./media/service-admin-ols/save-roles.png" alt-text="Screenshot of saving role definitions.":::
