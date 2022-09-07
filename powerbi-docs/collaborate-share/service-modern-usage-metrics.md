@@ -386,7 +386,7 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 
     ![Screenshot of the Usage metrics dataset URL.](media/service-modern-usage-metrics/power-bi-usage-metrics-url.png)
 
-1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button. 
+1. In your browser, go to [Datasets - Delete Dataset In Group](/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
     
     ![Screenshot showing Delete dataset Try it.](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
 
