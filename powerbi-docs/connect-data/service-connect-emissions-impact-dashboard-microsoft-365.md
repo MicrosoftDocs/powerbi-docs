@@ -33,6 +33,18 @@ To install the Emissions Impact Dashboard for Microsoft 365 in Power BI and conn
 >[!NOTE]
 > The Emissions Impact Dashboard for Microsoft 365 is currently not supported for national cloud deployments including but not limited to Microsoft's US Government clouds and Office 365 operated by 21Vianet.
 
+## Included Microsoft 365 applications
+
+The Emissions Impact Dashboard for Microsoft 365 reports datacenter emissions and active usage associated with the following applications:
+
+* Exchange Online
+* SharePoint
+* OneDrive
+* Microsoft Teams
+* Word
+* Excel
+* PowerPoint
+
 ## Install the app
 
 1. Click the following link to get to the app: [Emissions Impact Dashboard for Microsoft 365](https://appsource.microsoft.com/product/power-bi/coi-sustainability.emissions_impact_dashboard_microsoft_365).
