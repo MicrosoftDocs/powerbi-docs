@@ -79,7 +79,6 @@ This section lists the limitations of downloading a .pbix file. This section is 
 
 * You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace that the report is in. If the report is based on a dataset in another workspace, you need to be at least a Contributor to that workspace as well.
 * If you create a [report using the **Create** button](service-quick-create-report.md) in the Power BI service, and it's based on a dataset in another workspace, you can't download it.
-* If you create a [report using the **Create** button](service-quick-create-report.md) in one workspace in the Power BI service and then save it to a different workspace, you can't download it.
 * Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before you can download them.
 * If you create a report in the Power BI service, you have to save it before you can download it.
 * You can't download reports based on datasets that are imported from OneDrive for Business.
