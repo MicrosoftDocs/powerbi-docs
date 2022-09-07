@@ -3,7 +3,7 @@ title: Object-level security (OLS) with Power BI
 description: How to configure object-level security for imported datasets, within the Power BI service.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: ''
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
