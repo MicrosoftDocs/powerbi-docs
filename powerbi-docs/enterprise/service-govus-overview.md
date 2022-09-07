@@ -153,7 +153,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
 
-For more information about support for Power BI components in Power Apps, reference [Power Apps US Government feature limitations](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
+For more information about support for Power BI components in Power Apps, see [Power Apps US Government feature limitations](/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
 
 ## Next steps
 
