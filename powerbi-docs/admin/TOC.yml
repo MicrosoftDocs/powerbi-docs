@@ -127,3 +127,5 @@
       href: service-admin-portal-template-app.md
     - name: User experience experiments settings
       href: service-admin-portal-user-experience-experiments.md
+    - name: Power BI and Microsoft Graph data sharing
+      href: admin-microsoft-graph-metadata.md
