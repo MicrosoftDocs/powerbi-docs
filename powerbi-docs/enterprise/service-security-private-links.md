@@ -36,7 +36,7 @@ The Power BI service implements Private Endpoints, and not Service Endpoints.
 
 Using private endpoints with Power BI provide the following benefits:
 
-1. Private endpoints ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources. 
+1. Private endpoints ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
 
 2. Network traffic isolation from non-Azure based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.  
 
@@ -305,11 +305,12 @@ There are a few considerations to keep in mind while working with private endpoi
 
 * Any uses of external images or themes aren't available when using a private link environment.
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
+* Each private endpoint can only be set up for one tenant.  
 * If your organization is using **Azure Private Link** in Power BI, modern usage metrics reports will contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents Power BI from capturing Report Page Views and performance data over Private Links. If your organization is using **Azure Private Link** and **Block Public Internet Access** in Power BI, the refresh for the dataset will fail and the usage metrics report will not show any data.
 * The Power BI Premium Capacity Metrics app doesn’t work when private links are enabled.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
 * Exporting a report as PDF or PowerPoint is not supported when you enable **Azure Private Link** in Power BI.
-* Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI. 
+* Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI.  
 * [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
    To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using Service Tags in a Private Links isolated network.
