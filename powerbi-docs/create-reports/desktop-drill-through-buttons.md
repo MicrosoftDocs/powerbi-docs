@@ -104,7 +104,7 @@ String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0, "See product d
 
 Once you've created this measure, you select the **Conditional formatting** option for the button text:
 
-:::image type="content" source="media/desktop-drill-through-buttons/power-bi-button-conditional-tooltip.png" alt-text="Screenshot showing the Conditional formatting button highlighted.":::
+:::image type="content" source="media/desktop-drill-through-buttons/power-bi-button-conditional-tooltip.png" alt-text="Screenshot showing the Conditional formatting button for the button text highlighted.":::
 
 Then, you select the measure you created for the button text:
 
@@ -200,7 +200,7 @@ Alternatively, change the list slicer from vertical to horizontal orientation:
 
 For the destination input for the drillthrough action, select the conditional formatting (fx) button next to **Destination** for the button:
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-formula.png" alt-text="Screenshot showing the Conditional formatting button highlighted.":::
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-formula.png" alt-text="Screenshot showing the Conditional formatting button for the drillthrough destination highlighted.":::
 
 Select the name of the column you created, in this case, **Select a destination**:
 
