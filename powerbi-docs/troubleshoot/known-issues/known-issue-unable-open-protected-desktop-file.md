@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 05/16/2022
+ms.date: 09/02/2022
 ms.custom: known-issue-151
 ---
 # Known issue #151 - Unable to open protected Power BI Desktop file
@@ -15,11 +15,9 @@ You won't be able to open a [protected](/power-bi/enterprise/service-security-da
 
 **APPLIES TO:** ✔️ Power BI Desktop
 
-**Status:** Open
+**Status:** Fixed: September 2, 2022
 
 **Problem area:** Publish Content
-
-
 
 ## Symptoms
 
