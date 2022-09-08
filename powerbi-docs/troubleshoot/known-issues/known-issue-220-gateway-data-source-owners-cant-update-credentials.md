@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/16/2022
+ms.date: 09/02/2022
 ms.custom: known-issue-220
 ---
 
@@ -16,7 +16,7 @@ If you have owner permission but no gateway level permission on a data source, y
 
 **APPLIES TO:** ✔️ Power BI Gateway
 
-**Status:** Open
+**Status:** Fixed: September 2, 2022
 
 **Problem area:** Gateway
 
