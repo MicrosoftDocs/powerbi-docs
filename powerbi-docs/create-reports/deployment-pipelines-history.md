@@ -32,15 +32,16 @@ The deployment history log is formatted as a table. Each row represents a single
 
 * **Date and time** - The date and time of the end of the deployment.
 
-* **Deployed by** - The person who performed the deployment.
+* **Deployed by** - The person (or service principal) who performed the deployment.
 
 * **Items** - After you deploy your content, the *items* column indicates the differences between the Power BI items in the source and target stage. The labels refer to the items in the target stage. Each label shows the number of items from that category that were deployed. You can click on the label to view a list of all the items in that category. If a label isn't showing, no deployed items fit that category.
 
-    | Label   | Name          | Description |
-    |---------|---------------|-------------|
-    |         | New           | A new item that was deployed |
-    |         | Different     | A deployed item that's different in the source and target stages |
-    |         | Missing from  | A deployment item that's missing from the target stage |
+    | Label | Name            | Description |
+    |-------|-----------------|-------------|
+    | :::image type="content" source="media/deployment-pipelies-history/new-item.png" alt-text="A screenshot of the deployment pipelines history new item icon.":::    | New items       | A new item that was deployed |
+    | :::image type="content" source="media/deployment-pipelies-history/different-item.png" alt-text="A screenshot of the deployment pipelines history different item icon.":::      | Different items | A deployed item that's different in the source and target stages |
+    | :::image type="content" source="media/deployment-pipelies-history/unchanged-item.png" alt-text="A screenshot of the deployment pipelines history unchanged item icon.":::      | Unchanged items | A deployment item that's identical to the one in the target stage |
+    | :::image type="content" source="media/deployment-pipelies-history/failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon."::: | Items failed to deploy            | Indicates a failed deployment |
 
 * **Note** - A note, if exists. Click the note's icon to display its content.
 
@@ -48,20 +49,18 @@ The deployment history log is formatted as a table. Each row represents a single
 
 * **Status** - The status of the deployment.
 
-    |Icon     | Deployment status |
-    |---------|-------------------|
-    |         | Successful        |
-    |         | Unsuccessful      |
+    | Icon     | Deployment status |
+    |----------|-------------------|
+    | :::image type="content" source="media/deployment-pipelies-history/successful-deployment.png" alt-text="A screenshot of the deployment pipelines history successful deployment status icon.":::         | Successful        |
+    | :::image type="content" source="media/deployment-pipelies-history/unsuccessful-deployment.png" alt-text="A screenshot of the deployment pipelines history unsuccessful deployment status icon.":::         | Unsuccessful      |
 
 ## Considerations and limitations
 
 The following section lists the deployment history limitations.
 
-* Limited information is displayed from April 2022 to June 2022
+* Detailed information is displayed from June 2022. Prior to this date, summarized information is displayed.
 
-* Notes are only displayed from June 2022
-
-* Renamed/removed items <---Chen to provide info--->
+* Deployment history displays the name of the item during deployment. When you change an item's name, deployment history treats it as a new item. In such cases, the item with the changed name will appear in the log for the first time, after it's deployed.
 
 ## Next steps
 
