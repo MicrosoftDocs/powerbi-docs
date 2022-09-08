@@ -91,6 +91,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can't download reports created in the Power BI service that are based on a single dataset that is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 * If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download the report if the dataset is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](deployment-pipelines-process.md#considerations-and-limitations).
+* Downloading a .pbix file that is larger than 1 GB isn't supported.
 
 ### Limitations when downloading a dataset .pbix file
 
