@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 09/08/2022
 LocalizationGroup: Administration
 ---
 
@@ -42,6 +42,7 @@ Guest users only require invitations the first time you invite them to your orga
 To use ad hoc invites, use the following capabilities:
 
 * Report and Dashboard sharing
+* Report and Dashboard subscriptions
 * App access list
 
 Ad hoc invites aren't supported in the workspace access list. Use the [planned invites approach](#planned-invites) to add these users to your organization. After the external user becomes a guest in your organization, add them to the workspace access list.
@@ -155,7 +156,6 @@ There are some limitations to the B2B experience that you should be aware of:
   * Guest users can't install apps publish to the entire organization
   * Guest users can't use Analyze in Excel
   * Guest users can't be @mentioned in commenting
-  * Guest users can't create subscriptions
   * Guest users who use this capability should have a work or school account
 
 * Guest users using social identities will experience more limitations because of sign-in restrictions.
