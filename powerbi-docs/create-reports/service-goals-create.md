@@ -50,9 +50,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-create-scorecard.png" alt-text="Screenshot of Complete the Create Scorecard pane.":::
 
-    Power BI automatically saves scorecards to **My Workspace**, but you can move it to another workspace.
-
-1. Select **File** > **Move Scorecard**.
+1. Power BI automatically saves the scorecard to **My Workspace**, but you can move it to another workspace. Select **File** > **Move Scorecard**.
 
     :::image type="content" source="media/service-goals-create/metrics-move-scorecard.png" alt-text="Screenshot of menu to move a scorecard.":::
 
@@ -64,7 +62,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and dataset that Power BI created.":::
 
-## Step 2: Create a manual metric 
+## Step 2: Create a manual metric
 
 1. In the scorecard, select **New Metric**. 
 2. Decide on a **Metric name** and an **Owner**. 
