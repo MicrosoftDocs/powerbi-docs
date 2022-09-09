@@ -1,32 +1,32 @@
 ---
 title: Publish an app in Power BI
-description: Learn how to publish apps, which are collections of dashboards and reports with built-in navigation.
+description: Learn how to publish the new apps, which are collections of dashboards and reports with built-in navigation.
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 08/30/2022
+ms.date: 02/26/2022
 
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI
 
-In Power BI, you can create official packaged content, then distribute it to a broad audience in an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The article [Install and use apps with dashboards and reports](../consumer/end-user-app-view.md) outlines the app user experience.
+In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [App consumer view](#app-consumer-view) section of this article outlines the app user experience.
 
 ![Screenshot of Power BI apps.](media/service-create-distribute-apps/power-bi-new-apps.png)
 
-Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these collections as apps to your whole organization or to specific people or groups. You can create up to ten different apps from the content in one workspace. For you as a report creator or admin, apps make it easier to manage permissions on these collections.
+Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these collections as apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on these collections.
 
 Business users get your apps in a few different ways:
 
-- They can find and install your app from Microsoft AppSource.
+- They can find and install apps from Apps marketplace or AppSource.
 - You can send them a direct link.
 - You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission.
 - Power BI does not send any email to internal users when you distribute or update an app. If you distribute it to external users, those users receive an email with a direct link. 
 
-You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can't modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permission to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](../connect-data/service-datasets-build-permissions.md).
+Your users (App consumers) can't modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data. You can also give them permission to share datasets and create their own content in the app. Read the [Manage audience access] (#manage-audience-access) section for more details.
 
 ## Licenses for apps
 To create or update an app, you need a Power BI Pro or Premium Per User (PPU) license. For app *consumers*, there are two options.
@@ -35,70 +35,79 @@ To create or update an app, you need a Power BI Pro or Premium Per User (PPU) li
 * **Option 2** The workspace for this app *is* in a Power BI Premium capacity: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
 
 ## Publish your app
-When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then publish them as an app. 
+Once the dashboards and reports in your workspace are ready, you can choose which dashboards and reports you want to publish as App and which audience groups to add in the App. 
 
-1. In the workspace list view, select **Create app** to start the process of creating and publishing an app from the workspace.
+1. In the workspace list view, decide which dashboards and reports you want to include in app by clicking **New**.
+
+    ![Screenshot of New to add content in the Workspace.](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
+
+
+2. Select the **Create app** button in the upper right to start the process of creating and publishing an app from the workspace.
    
-    ![Screenshot of the Create app button.](media/service-create-distribute-apps/power-bi-apps-create-app.png)
+    ![Screenshot of the Create app button.](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-1. On the **Setup** tab, fill in the name and description to help people find the app. You can also set a theme color, add a link to a support site, and specify contact information. Select **Next: Add content**.
+3. On **Setup**, fill in the name and description to help people find the app. You can also set a theme color, add a link to a support site, and specify contact information.
    
-    ![Screenshot of Setup for your app.](media/service-create-distribute-apps/power-bi-apps-setup-add-content.png)
+    ![Screenshot of Setup for your app.](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
-1. On the **Content** tab, select **Add content**.
+4. On **Content**, add the content to the app from the workplace. You can also add links to other websites. See [Adding content in the App] (#adding-content-in-the-app) section of this document for more details. Once the content is added, you can change the order of the content by
 
-    ![Screenshot of the Add content tab.](media/service-create-distribute-apps/power-bi-apps-add-content.png)
+    a)	Dragging and dropping the content
+   
+    ![Screenshot of App navigation showing drag and drop.](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+    
+    b)	Using move up or move down options next to each content.
+    
+    ![Screenshot of App navigation. showing move up or move down options](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
-1. In **Add content** > **Add from workspace**, select the workspace content to be in the app.
+5. On **Audience**, you can create and manage audience groups within the App. Furthermore, by using the Manage Audience Access, you can specify which groups or users should be added to the current audience group. See Manage Audience Access  section for more details. 
 
-    ![Screenshot of the Add content dialog box, where you select content.](media/service-create-distribute-apps/power-bi-apps-select-content.png)
+You can also change the name of the audience by double clicking on the default audience label. You can create up to 10 audience groups within an App. By clicking the hide/unhide icon next to each content, you can control the access to each content within an App.
 
-    If you choose not to include a report that has a related dashboard, you see a warning next to the report. You can still publish the app, but the related dashboard won't have the tiles from that report.
 
-1. You can also add a link to external content. Select **Add a link** and fill in the link information.
-
-    ![Screenshot of the Add a link tab.](media/service-create-distribute-apps/power-bi-apps-add-link.png)
-
-1. Select **Add**.
-
-1. Now on the **Content** tab, you can add sections or links, and move the content up or down, and preview the content.
-
-    ![Screenshot of App navigation.](media/service-create-distribute-apps/power-bi-apps-navigation.png)
-
-1. Select **Next: Add audience**.
-
-1. On the **Audience** tab, create audience groups. Decide who's in each group, what content they can see, and what they can do with the content. You can create up to ten different audience groups.
-
-    ![Screenshot of Manage audience access.](media/service-create-distribute-apps/power-bi-apps-manage-audience-access.png)
-
-    - For each audience, you can give access to specific people, Azure AD security groups and distribution lists, and Microsoft 365 Groups.
-    - Select the eye icon to make each item visible or invisible for that audience.
-    - You can **allow people to share the datasets in the app**. 
-    - You can **allow people to build content with the datasets in the app** by giving them Build permission. They'll see these datasets when they're searching for shared datasets. Read more about [allowing users to connect to the app's datasets](#allow-users-to-connect-to-datasets), later in this article.
-
+    ![Screenshot of Audience tab.](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+    
     >[!IMPORTANT]
-    >If your app relies on datasets from other workspaces, you need to ensure all app users have access to the underlying datasets.
+    >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
     >If the app or report is in the same workspace as the dataset, make sure you add the report associated with the  dataset to the app as well.
-    >All [workspace](service-create-the-new-workspaces.md) users automatically have access to all the apps for the workspace.
 
-1. When you select **Publish app**, you see a message that it might take a while to process. Select **Publish**.
+    > [!NOTE]
+    > If you are removing permissions from an app that has already been published, see the note in the [App permissions](#app-permissions) section below.
 
-1. In the **Successfully published** dialog box, you can copy the URL that's a direct link to this app.
+6. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
+
+7. Select **Publish app** to publish the App. 
+    ![Screenshot of publish app.](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+    
+8. Once, the app is successfully published, you will see a Successfully published message that includes shareable app link which you can copy and share with your app consumers. 
    
-    ![Screenshot of Successfully published.](media/service-create-distribute-apps/power-bi-apps-success.png)
+    ![Screenshot of App finish.](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-    You can send that direct link to the people you've shared it with, or they can find your app on the Apps tab by going to **Download and explore more apps from AppSource**. Read more about the [app experience for business users](../consumer/end-user-apps.md).
+Alternatively, you can share the published app by clicking the **Copy link** button at the bottom of the Setup page. This generates a shareable app link that you can share with your app consumers.
 
-1. Select **Go to app** to see how your app looks.
+    ![Screenshot of Copy App link.](media/service-create-distribute-apps/power-bi-apps-success.png)
+    
+Your app consumers can also request access to your app by searching for the app from Apps marketplace or AppSource. Read App consumer view(#app-consumer-view) to know more about the App experience for the consumers.
 
-## View your published app
 
-Your view of your app is different from the view of the people you distribute it to. You can see all the content in the workspace. In the upper-left corner, you see all the different audiences you created, so you can see how your app looks for each of them. You also see an Edit pencil, so you can easily edit the app.
+## Manage app access request
+Once app is installed, you can visit the app permission management page by clicking on **Manage permissions** in your Apps Tab.
+ 
+    ![Screenshot of manage permissions option.](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-![Screenshot of your published app.](media/service-create-distribute-apps/power-bi-apps-all-apps-view.png)
+You will also see a notification banner on Workspace if there are any pending access requests. You can click on **view** to directly access the app permission management page. 
+ 
+    ![Screenshot of access pending notification banner.](media/service-create-distribute-apps/power-bi-apps-success.png)
+
+The Permission management page contains following tabs – 
+•	**Direct access** – this includes all the users that already have access to the app
+•	**Pending access** – this includes all the pending requests
+
+    ![Screenshot of manage permision page.](media/service-create-distribute-apps/power-bi-apps-success.png)
+ 
 
 ## Change your published app
-After you publish your app, you may want to change or update it. It's easy to update it if you're at least a member in the workspace.
+After you publish your app, you may want to change or update it. 
 
 1. Open the workspace that corresponds to the app. If you're a workspace Admin or Member, you can open the workspace right from the app, by selecting the **Edit app** pencil.
    
@@ -111,77 +120,57 @@ After you publish your app, you may want to change or update it. It's easy to up
     > [!IMPORTANT]
     > If you remove a report and update the app, even if you add the report back to the app, your app consumers lose all customizations such as bookmarks, comments, etc.  
  
-3. Go back to the workspace list of contents and select **Update app** in the upper-right corner.
+3. Select **Update app** in the upper-right corner of the Workspace content view.
 
-    :::image type="content" source="media/service-create-distribute-apps/power-bi-select-update-app.png" alt-text="Screenshot of select Update app.":::
-
-1. Update **Setup**, **Navigation**, and **Permissions**, if you need to, then select **Update app**.
+    ![Screenshot of update app from the associated Workspace.](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+    
+4. Update **Setup**, **Content**, and **Audience**, if you need to, then select **Update app**.
 
     The people you've published the app to automatically see the updated version of the app.
 
-    > [!NOTE]
-    > If you removed app permissions as part of the update, new app installers won't get those permissions. **However, the update won't remove the permissions from users who already have them**. To remove such existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail.
+    
+## Add content in the App
+You can easily add content such as reports, dashboards etc. and even links to other websites. By clicking on **Add content** button in the **Content** tab, you can select contents that you want to add from the current workspace. See below.
+ 
+     ![Screenshot of add content button.](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+     
+     ![Screenshot of pop-up window showing a list of content.](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+ 
+You can also preview the added content and can add links to websites by clicking the **Add a link** from the drop-down menu next to **Add content**.
 
-## Design the navigation experience
-The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
-
-When the option is off, you can select the **App landing page** to be either **Specific content**, for example a dashboard or report, or select **None** to show a basic list of content to the user.
-
-When you turn on **New navigation builder**, you can design a custom navigation. By default all the reports, dashboards, and Excel workbooks you included in your app are listed as a flat list. 
-
-![Screenshot of App navigation.](media/service-create-distribute-apps/power-bi-apps-navigation.png)
-
-You can further customize the app navigation by:
-
-* Reordering the items using the up / down arrows. 
-* Renaming items in the **Report details**, **Dashboard details**, and **Workbook details**.
-* Hiding certain items from the navigation.
-* Using the **New** option to add **sections** to group related content.
-* Using the **New** option to add a **link** to an external resource to the nav pane. 
-
-When you add a **link**, in **Link details** you can choose where the link opens. By default links open in the **Current tab**, but you can select **New tab**, or **Content area**. 
-
-### Considerations for using the new navigation builder option
-Here are general things to keep in mind when using the new navigation builder:
-
-* Report pages are shown in the app navigation area as an expandable section. When a report has one visible page, only the report name is shown. Clicking the report name in the navigation opens the first page of the report. 
+     ![Screenshot of Add link button.](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
     > [!NOTE]
-    > Your report might have only one visible page because you've set up navigation to the rest of the pages with buttons or drill-through actions.
+    > When you publish an App, all App content will be included by default for each Audience group. However, when you update an App, newly added content will not be included by default.
 
-* If you turn off the new navigation builder and then publish or update your app, you lose the customizations you've made. For example, sections, ordering, links, and custom names for navigation items are all lost.
-* The option to not use the app builder is available.
 
-When adding links to your app navigation and selecting the Content area option:
-* Ensure the link can be embedded. Some services block the embedding of their content in third-party sites like Power BI.
-* Embedding Power BI service content like reports or dashboards in other workspaces isn't supported. 
-* Embed Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](../report-server/quickstart-embed.md#create-the-power-bi-report-url) to get the URL. Be aware that regular authentication rules apply, so viewing the content requires a VPN connection to the on-premises server. 
-* A security warning is shown at the top of the embedded content to indicate the content isn't in Power BI.
+## Manage Audience Access
+When creating or updating an app, you can control who gets the access to the app contents by using **Manage Audience Access** pane under the Audience tab.  
+ 
+     ![Screenshot of manage audience access pane in audience tab.](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+     
+For each audience group, you can grant access to either all people in your organization or specific users/groups. You can also configure the following advanced settings per audience group – 
 
-## App permissions
 
-This section describes the kinds of permissions you can grant to the specified users ([Step 5 in Publish your app](#publish-your-app), above).
+* **Allow users to share the datasets in this app** 
 
-* **Allow all users to connect to the app's underlying datasets using the Build permission**
+    When you check the option to **Allow users to share the datasets in this app**, you're giving app consumers permission to share the app and underlying datasets of the app audience.
+    
+* **Allow users to build content with the datasets in this app**
 
-    This option grants build permission on the app's underlying datasets.
+    When you check the option to **Allow users to build contents with the datasets in this app**, your app consumers can create their own reports and dashboards based on the App audience datasets.
+    
+     ![Screenshot of advanced settings in manage audience access pane.](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
-* **Allow users to make a copy of the reports in this app**
-
-    This option grants the ability to create copies of the reports in the app. It can only be selected if the first option granting build permission is selected.
-
-* **Allow users to share the app and the app's underlying datasets using the share permission**
-
-    This option grants users reshare permission on the app's underlying datasets.
-
+    
 > [!NOTE]
-> Removing app permissions via the app's **Permissions** tab prevents new app installers from getting the permissions. **However, users who already have these permissions on the underlying datasets will retain their permissions**. To remove this existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. See [Manage direct access](../connect-data/service-datasets-manage-access-permissions.md#manage-direct-access) for detail. 
+> The advanced settings above are applicable to the audience except your workspace users.
 
 ## Automatically install apps for end users
-If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal-content-pack-app.md#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permission, you can install apps automatically, pushing them to end users (app consumers). This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal-content-pack-app.md#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
-Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
+Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all audience groups defined in the **Audience** tab of the app.
 
 ![Screenshot shows Power B I Publish app option with Install app automatically selected.](media/service-create-distribute-apps/power-bi-apps-access.png)
 
@@ -205,49 +194,38 @@ Here are things to keep in mind when pushing apps to end users:
 
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
-## Allow users to connect to datasets
-
-When you check the option to **Allow users to connect to the app's underlying datasets**, you're giving app users *Build permission* on those datasets. With this permission, they can do several key actions:
-
-- [Use the app datasets](../connect-data/service-datasets-across-workspaces.md) as the basis for their reports.
-- Search for these datasets in Power BI Desktop and in the get-data experience in the Power BI service.
-- Create reports and dashboards based on these datasets.
-
-When you clear this option, new users you add to the app don't get Build permission. However, for existing app users, permissions on the underlying datasets don't change. You can remove Build permission manually from app users who should no longer have it. Read more about the [Build permission](../connect-data/service-datasets-build-permissions.md).
-
-## Allow users to copy reports
-
-When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro or Premium Per User (PPU) license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. You have to select the **Allow all users to connect to the app's underlying datasets using Build permission** option first. By selecting these options, you're enabling the new [copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md) capability.
 
 ## Unpublish an app
 Any member of a workspace can unpublish the app.
-
->[!IMPORTANT]
->When you unpublish an app, app users lose their customizations. They lose any personal bookmarks, comments, or subscriptions associated with content in the app. Only unpublish an app if you need to remove it.
-> 
 
 * In a workspace, select  **More options (...)** > **Unpublish app**.
   
     ![Screenshot of Select the Unpublish app button.](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
-This action uninstalls the app for everyone you've published it to, and they no longer have access to it. It doesn't delete the workspace or its contents.
+This action uninstalls the app for everyone you've published it to, and they no longer have access to it. Please note that this action doesn't delete the workspace or its contents.
 
-## When app consumers view your app
+>[!IMPORTANT]
+>When you unpublish an app, app users (consumers) lose their customizations. They lose any personal bookmarks, comments, etc associated with content in the app. Only unpublish an app if you need to remove it.
+> 
 
-When your app consumers open your app, they see the navigation you created, instead of the standard Power BI nav pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name. You can expand and collapse the left navigation by using the arrows in the menu bar.
+## App consumer view
+The App consumers can only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups will see group tabs on the top bar to switch between different audience views easily (as shown below). By default, the consumers are displayed the All tab view, which is a consolidated view showing all content that they have access to.  The App consumer can browse different audience groups tab to see what content is added for that group. 
 
-![Screenshot of App with navigation.](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
-In full-screen mode, you can show or hide the navigation by selecting the option in the corner.
+![Screenshot showing "all' view for App consumer.](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
-![Screenshot of Full-screen navigation.](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
+![Screenshot showing audience group1 view.](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
+
+![Screenshot showing audience group2 view.](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
 
 ## Considerations and Limitations
 Things to keep in mind about publishing apps:
 
-* The permissions page doesn't change permission on datasets in other workspaces. You do see a warning reminding you to grant access to those datasets independently. A best practice is to contact the dataset owner before starting to build your app to ensure it is OK to give all your app users access those datasets. 
-* You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
+* AppSource is an external service that only has public facing service apps. For organizational apps, user can just go to Apps marketplace to find them. Template apps are also available from Apps marketplace
+* You can create 10 audience groups per app.
+* You can have at most 1000 users or groups in the access list for the app. However, you can give more than 1000 users access to the app. To do so, use one or more user groups that contain all the desired users.
 * If the user you added to the app access list already has access to the app through the workspace, they're not shown in the access list for the app.  
+* Once you click a tile in a dashboard within a published app, you would be directed to the underlying report within the app. If you choose not to include a report that has a related dashboard in the app, you will not be directed to the underlying report on clicking the related tile.
 * The support site URL is shown in the item information card.
 * Apps can have a maximum of 200 dashboards. 
 
