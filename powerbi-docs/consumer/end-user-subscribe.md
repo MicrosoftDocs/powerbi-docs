@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/01/2022
+ms.date: 09/08/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -109,7 +109,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - *Sharing* content with a colleague outside of your domain does not require a Premium capacity. For example, if you are aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- External users can't subscribe themselves to reports or dashboards, even if they have been added as guest users.
+- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. To learn more about guest users see [Distribute content to external guest users with Azure AD B2B](..enterprise/service-admin-azure-ad-b2b.md).
 
 ## Subscribe to paginated reports 
 
