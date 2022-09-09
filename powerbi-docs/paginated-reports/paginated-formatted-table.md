@@ -7,7 +7,7 @@ ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/13/2022
+ms.date: 09/08/2022
 ---
 
 # Create exportable formatted data tables in the Power BI service
