@@ -85,6 +85,9 @@ Here are the options for button actions:
 
 Certain buttons have a default action that's selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action.
 
+> [!NOTE]
+> An action can't have a numeric measure as the value of any of its fields.
+
 To select a button action:
 
 1. On the **Button** tab of the **Format** pane, turn the **Action** to **On**, and then expand the card.
@@ -100,7 +103,7 @@ To select a button action:
 With the **Type** of an **Action** set to **Page navigation**, you can create a button that links to another page in your report, without creating a bookmark.
 
 > [!TIP]
-> If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead.
+> If you want to build an entire navigation experience for the report, without having to save or manage any bookmarks, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 To set up a single-page navigation button:
 
@@ -110,47 +113,45 @@ To set up a single-page navigation button:
 
 1. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
 
-1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead.
+1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 ## Set the page navigation destination conditionally
 
-You can use conditional formatting to set the navigation destination, based on the output of a measure. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection. For example:
+You can use conditional formatting to set the navigation destination, based on the output of a measure. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection:
 
 :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
-To create this example, start by creating a single-column table with the names of the navigation destinations.
+To create this example, start by creating a single-column table with the names of the navigation destinations:
 
 ### [Power BI Desktop](#tab/powerbi-desktop)
 
-In Power BI Desktop, on the **Home** tab, select **Enter data**.
+1. In Power BI Desktop, on the **Home** tab, select **Enter data**.
 
-The **Create Table** dialog box opens.
+   The **Create Table** dialog box opens.
 
 ### [Power BI service](#tab/powerbi-service)
 
-In the Power BI service, open the report in Editing view. Select **Create** from the left menu, and then select **Paste or manually enter data** from the main screen.
+1. In the Power BI service, open the report in Editing view. Select **Create** from the left menu, and then select **Paste or manually enter data** from the main screen.
 
-The **Create Table** dialog box opens.
+   The **Create Table** dialog box opens.
 
 ---
 
-To create a table to use for page navigation:
-
-1. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
+2. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
 
    :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Screenshot showing Create a table.":::
 
-1. After you've created the table, add it to the page as a single-select slicer:
+3. After you've created the table, add it to the page as a single-select slicer:
 
    :::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Screenshot showing Navigate slicer.":::
 
 Create a page navigation button and select the conditional formatting option for the destination:
 
-1. Under **Action**, select **Page navigation** for **Type**, and then select the **Conditional formatting** icon next to the **Destination**.
+1. Under **Style**, set **Action** to **On**, and then expand **Action**. Select **Page navigation** for **Type**, and then select the **Conditional formatting** (**fx**) icon next to the **Destination**.
 
    :::image type="content" source="media/desktop-buttons/button-set-page-nav-destination.png" alt-text="Screenshot showing Page navigation button.":::
 
-1. On  the **Destination** page, select the name of the column you created, in this case, **Select a page**.
+1. On the **Destination - Action** page, select the name of the column you created. In this case, it's **Select a destination**.
 
    :::image type="content" source="media/desktop-buttons/button-select-destination.png" alt-text="Screenshot showing Select a destination.":::
 
@@ -158,7 +159,11 @@ Create a page navigation button and select the conditional formatting option for
 
    :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
-In addition to buttons, page navigation actions also support shapes and images.
+### Shapes and images for navigation
+
+Page navigation action is also supported for shapes and images, not just buttons. Here’s an example using one of the built-in shapes:
+
+:::image type="content" source="media/desktop-buttons/button-navigation-arrow.png" alt-text="Screenshot showing Use an arrow for navigation.":::
 
 ## Buttons support fill images
 

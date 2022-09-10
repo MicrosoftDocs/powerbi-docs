@@ -76,7 +76,7 @@ You can customize the formatting options for the disabled state of drillthrough 
 
 These formatting options include:
 
-- **Button text controls**: text, font, size, color, alignment, and padding
+- **Button text controls**: text, font family, font size, font color, alignment, and padding
 
     :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-text.png" alt-text="Screenshot showing a formatted disabled button text.":::
 
@@ -102,25 +102,27 @@ Here's an example measure that outputs "See product details" if a single Product
 String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0, "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
 ```
 
-Once you've created this measure, you select the **Conditional formatting** option for the button text:
+After you've created this measure, follow these steps:
 
-:::image type="content" source="media/desktop-drill-through-buttons/power-bi-button-conditional-tooltip.png" alt-text="Screenshot showing the Conditional formatting button for the button text highlighted.":::
+1. Select the **Conditional formatting** (**fx**) option for the button text.
 
-Then, you select the measure you created for the button text:
+   :::image type="content" source="media/desktop-drill-through-buttons/power-bi-button-conditional-tooltip.png" alt-text="Screenshot showing the Conditional formatting button for the button text highlighted.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/power-bi-conditional-measure.png" alt-text="Screenshot showing the selected field for the button text.":::
+1. Select the measure you created for the button text:
 
-When a single product is selected, the button text reads:
+   :::image type="content" source="media/desktop-drill-through-buttons/power-bi-conditional-measure.png" alt-text="Screenshot showing the selected field for the button text.":::
 
-"See details for Word"
+1. When a single product is selected, the button text reads:
 
-![Screenshot showing a single value selected.](media/desktop-drill-through-buttons/power-bi-conditional-button-text.png)
+   "See details for Word"
 
-When either no products are selected, or more than one product is selected, the button is disabled. The button text reads:
+   ![Screenshot showing a single value selected.](media/desktop-drill-through-buttons/power-bi-conditional-button-text.png)
 
-"See product details"
+1. When either no products are selected, or more than one product is selected, the button is disabled. The button text reads:
 
-![Screenshot showing multiple values selected.](media/desktop-drill-through-buttons/power-bi-button-conditional-text-2.png)
+   "See product details"
+
+   ![Screenshot showing multiple values selected.](media/desktop-drill-through-buttons/power-bi-button-conditional-text-2.png)
 
 ## Set formatting for tooltips conditionally
 
@@ -166,49 +168,53 @@ Here’s an example DAX measure that requires a Store to be selected before the 
 Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, “Store details”)
 ```
 
-When you've created the measure, you select the Conditional formatting (fx) button next to **Destination** for the button:
+After you've created the measure, follow these steps:
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-formula.png" alt-text="Screenshot showing the conditional formatting button highlighted.":::
+1. Select  **Conditional formatting** (**fx**) next to the **Destination** for the button action.
 
-For the last step, you select the DAX measure you created as the field value for the destination:
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-formula.png" alt-text="Screenshot showing the Conditional formatting button highlighted.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-based-formula.png" alt-text="Screenshot showing the Destination with a field selected.":::
+1. For the last step, you select the DAX measure you created as the field value for the destination.
 
-Now you see the button is disabled even when a single product is selected, because the measure also requires you to select a single store:
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-based-formula.png" alt-text="Screenshot showing the Destination with a field selected.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-button-disabled.png" alt-text="Screenshot showing the drillthrough button disabled.":::
+   Now you see the button is disabled even when a single product is selected, because the measure also requires you to select a single store.
+
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-button-disabled.png" alt-text="Screenshot showing the drillthrough button disabled.":::
 
 ### Support multiple destinations
 
-For the other common case where you want to support multiple destinations, you start by creating a single-column table with the names of the drillthrough destinations:
+For the other common case where you want to support multiple destinations, follow these steps:
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-create-table.png" alt-text="Screenshot showing the Create a table window.":::
+1. Create a single-column table with the names of the drillthrough destinations.
 
-Power BI uses exact string match to set the drillthrough destination, so double-check that the entered values exactly align with your drillthrough page names.
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-create-table.png" alt-text="Screenshot showing the Create a table window.":::
 
-After you've created the table, add it to the page as a single-select slicer:
+1. Because Power BI uses exact string match to set the drillthrough destination, double-check that the entered values exactly align with your drillthrough page names.
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-slicer.png" alt-text="Screenshot showing a drillthrough slicer.":::
+1. After you've created the table, add it to the page as a single-select slicer.
 
-If you need more vertical space, convert the slicer to a dropdown. Remove the slicer header and add a text box with the title next to it:
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-slicer.png" alt-text="Screenshot showing a drillthrough slicer.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-drop-down-slicer.png" alt-text="Screenshot showing a drillthrough slicer with no header.":::
+1. If you need more vertical space, convert the slicer to a dropdown. Remove the slicer header and add a text box with the title next to it.
 
-Alternatively, change the list slicer from vertical to horizontal orientation:
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-drop-down-slicer.png" alt-text="Screenshot showing a drillthrough slicer with no header.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-horizontal-slicer.png" alt-text="Screenshot showing a horizontal slicer.":::
+1. Alternatively, change the list slicer from vertical to horizontal orientation.
 
-For the destination input for the drillthrough action, select the conditional formatting (fx) button next to **Destination** for the button:
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-horizontal-slicer.png" alt-text="Screenshot showing a horizontal slicer.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-formula.png" alt-text="Screenshot showing the Conditional formatting button for the drillthrough destination highlighted.":::
+1. For the destination input for the drillthrough action, select the **Conditional formatting** (**fx**) button next to the **Destination** for the button action.
 
-Select the name of the column you created, in this case, **Select a destination**:
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-formula.png" alt-text="Screenshot showing the Conditional formatting button for the drillthrough destination highlighted.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-destination.png" alt-text="Screenshot showing the Select a destination field selected.":::
+1. On the **Destination - Action** page, select the name of the column you created. In this case, it's **Select a destination**.
 
-Now you see that the drillthrough button is only enabled when you've selected a product *and* a destination:
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-destination.png" alt-text="Screenshot showing the Select a destination field selected.":::
 
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-destination.png" alt-text="Screenshot showing the product and destination selected.":::
+   Now you see that the drillthrough button is only enabled when you've selected a product *and* a destination:
+
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-destination.png" alt-text="Screenshot showing the product and destination selected.":::
 
 ### Hybrid of the two scenarios
 
