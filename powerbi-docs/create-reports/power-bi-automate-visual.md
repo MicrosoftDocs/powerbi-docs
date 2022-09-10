@@ -50,21 +50,17 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 ## Edit the flow
 
-# [Power BI Desktop](#tab/powerbi-desktop)
-
 1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
 
     :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual-desktop.png" alt-text="Screenshot shows control to add any fields you want as dynamic inputs.":::
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 2. Select **More options (...)** > **Edit** to configure the button:
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual.png" alt-text="Select Edit to edit the flow.":::
 
 # [Power BI service](#tab/powerbi-service)
-
-1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
-
-    :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual.png" alt-text="Add any fields you want as dynamic inputs.":::
 
 2. Select **More options (...)** > **Edit** to configure the button:
 
