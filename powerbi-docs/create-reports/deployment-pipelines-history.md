@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 07/27/2022
+ms.date: 09/11/2022
 ---
 
 # Deployment history
@@ -44,6 +44,8 @@ The deployment history log is formatted as a table. Each row represents a single
     | :::image type="content" source="media/deployment-pipelies-history/failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon."::: | Items failed to deploy            | Indicates a failed deployment | :::image type="content" source="media/deployment-pipelies-history/expanded-failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon selected."::: |
 
 * **Note** - A note, if exists. Click the note's icon to display its content.
+
+    :::image type="content" source="media/deployment-pipelies-history/expanded-note.png" alt-text="A screenshot of the deployment pipelines history note icon selecte, with the expanded note displayed.":::
 
 * **ID** - The deployment ID. Use as a reference when troubleshooting a deployment.
 
