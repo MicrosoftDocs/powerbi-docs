@@ -36,12 +36,12 @@ The deployment history log is formatted as a table. Each row represents a single
 
 * **Items** - After you deploy your content, the *items* column indicates the differences between the Power BI items in the source and target stage. The labels refer to the items in the target stage. Each label shows the number of items from that category that were deployed. You can click on the label to view a list of all the items in that category. If a label isn't showing, no deployed items fit that category.
 
-    | Label | Name            | Description |
-    |-------|-----------------|-------------|
-    | :::image type="content" source="media/deployment-pipelies-history/new-item.png" alt-text="A screenshot of the deployment pipelines history new item icon.":::    | New items       | A new item that was deployed |
-    | :::image type="content" source="media/deployment-pipelies-history/different-item.png" alt-text="A screenshot of the deployment pipelines history different item icon.":::      | Different items | A deployed item that's different in the source and target stages |
-    | :::image type="content" source="media/deployment-pipelies-history/unchanged-item.png" alt-text="A screenshot of the deployment pipelines history unchanged item icon.":::      | Unchanged items | A deployment item that's identical to the one in the target stage |
-    | :::image type="content" source="media/deployment-pipelies-history/failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon."::: | Items failed to deploy            | Indicates a failed deployment |
+    | Label | Name            | Description | Expanded view |
+    |-------|-----------------|-------------|---------------|
+    | :::image type="content" source="media/deployment-pipelies-history/new-item.png" alt-text="A screenshot of the deployment pipelines history new item icon.":::    | New items       | A new item that was deployed | :::image type="content" source="media/deployment-pipelies-history/expanded-new-itemS.png" alt-text="A screenshot of the deployment pipelines history new item icon selected, with the list of new items for this deployment expanded."::: |
+    | :::image type="content" source="media/deployment-pipelies-history/different-item.png" alt-text="A screenshot of the deployment pipelines history different item icon.":::      | Different items | A deployed item that's different in the source and target stages | :::image type="content" source="media/deployment-pipelies-history/expanded-different-items.png" alt-text="A screenshot of the deployment pipelines history different item icon selected, with the list of different items for this deployment expanded."::: |
+    | :::image type="content" source="media/deployment-pipelies-history/unchanged-item.png" alt-text="A screenshot of the deployment pipelines history unchanged item icon.":::      | Unchanged items | A deployment item that's identical to the one in the target stage | :::image type="content" source="media/deployment-pipelies-history/expanded-unchanged-items.png" alt-text="A screenshot of the deployment pipelines history unchanged item icon selected, with the list of unchanged items for this deployment expanded."::: |
+    | :::image type="content" source="media/deployment-pipelies-history/failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon."::: | Items failed to deploy            | Indicates a failed deployment | :::image type="content" source="media/deployment-pipelies-history/expanded-failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon selected."::: |
 
 * **Note** - A note, if exists. Click the note's icon to display its content.
 
