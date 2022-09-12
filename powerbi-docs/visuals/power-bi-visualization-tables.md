@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/13/2022
+ms.date: 09/08/2022
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -107,6 +107,8 @@ There are many ways to format a table. Only a few are covered here. A great way 
 * After some more formatting, here is our final table.
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of table with formatting options so far.":::
+
+There are other ways to format tables too. You can apply conditional formatting for subtotals and totals, by selecting the conditional formatting you want then using the **Apply to** drop-down menu in the conditional formatting advanced controls dialog. You'll have to manually set the thresholds or ranges for your conditional formatting rules, and for matrices the **Values** still refer to the lowest visible level of the matrix hierarchy.
 
 ### Conditional formatting
 
