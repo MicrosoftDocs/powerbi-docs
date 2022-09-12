@@ -1,21 +1,21 @@
 ---
-title: Use service principal profiles to manage customer data in multi-tenant apps
-description: Create, import, update, and assign multi-tenant workspaces in embedded analytics using service principal profiles.
+title: Use service principal profiles to manage customer data in multitenant apps
+description: Create, import, update, and assign multitenant workspaces in embedded analytics using service principal profiles.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/17/2022
+ms.date: 09/12/2022
 ---
 
-# Service principal profiles for multi-tenancy apps in Power BI Embedded
+# Service principal profiles for multitenancy apps in Power BI Embedded
 
 This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or any other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
 > [!NOTE]
-> The word *tenant* in Power BI can sometimes refer to an Azure AD tenant. In this article, however, we use the term *multi-tenancy* to describe a solution where a single instance of a software application serves multiple customers or organizations (tenants) requiring physical and logical separation of data. . For example, the Power BI app builder can allocate a separate workspace for each if its customers (or tenants) as we show below. These customers are not necessarily Azure AD tenants, so don’t confuse the term *multi-tenant application* that we use here, with the [Azure AD multi-tenant application](/azure/active-directory/develop/single-and-multi-tenant-apps).
+> The word *tenant* in Power BI can sometimes refer to an Azure AD tenant. In this article, however, we use the term *multitenancy* to describe a solution where a single instance of a software application serves multiple customers or organizations (tenants) requiring physical and logical separation of data. . For example, the Power BI app builder can allocate a separate workspace for each if its customers (or tenants) as we show below. These customers are not necessarily Azure AD tenants, so don’t confuse the term *multitenant application* that we use here, with the [Azure AD multitenant application](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
 A *service principal profile* is a profile created by a service principal. The ISV app calls the Power BI APIs using a service principal profile, as explained in this article.
 
@@ -23,11 +23,11 @@ The ISV application [service principal](pbi-glossary.md#service-principal) creat
 
 Using service principal profiles enables the ISV app to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
 
- :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multi-tenancy.":::
+ :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multitenancy.":::
 
 >[!NOTE]
->This article is aimed at organizations that want to set up a multi-tenant app using service principal profiles.
->If your organization already has an app that supports multi-tenancy, and you want to migrate to the service principal profile model, see [Migrate to the service principal profiles model](migration-to-sp-profiles.md).
+>This article is aimed at organizations that want to set up a multitenant app using service principal profiles.
+>If your organization already has an app that supports multitenancy, and you want to migrate to the service principal profile model, see [Migrate to the service principal profiles model](migration-to-sp-profiles.md).
 
 Setting up your Power BI content involves the following steps:
 
@@ -147,7 +147,7 @@ Then, use the *Update parameters* API to define which customers' data the datase
 ISVs usually store their customers' data in one of two ways:
 
 * [A separate database for each customer](#a-separate-database-for-each-customer)
-* [A single multi-tenant database](#a-single-multi-tenant-database)
+* [A single multitenant database](#a-single-multitenant-database)
 
 In either case, you should end up with single-tenant datasets (one dataset per customer) in Power BI.  
 
@@ -159,7 +159,7 @@ If the ISV application has a separate database for each customer, create single-
 
 * **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/update-datasources-in-group).
 
-### A single multi-tenant database
+### A single multitenant database
 
 If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
 
@@ -195,7 +195,7 @@ X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
 
 ## Design aspects
 
-Before setting up a profile-based multi-tenant solution, you should be aware of the following issues:
+Before setting up a profile-based multitenant solution, you should be aware of the following issues:
 
 * [Scalability](#scalability)
 * [Automation & operational complexity](#automation-and-operational-complexity)
@@ -313,4 +313,4 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 
 * [Learn more about service principals](embed-service-principal.md)
 * [Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
-* [Migrate multi-tenancy apps to the service principal profiles model](migration-to-sp-profiles.md)
+* [Migrate multitenancy apps to the service principal profiles model](migration-to-sp-profiles.md)
