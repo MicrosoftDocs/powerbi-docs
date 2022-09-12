@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 09/08/2022
+ms.date: 09/12/2022
 ---
 
 # Object level security
@@ -30,7 +30,7 @@ The report can built using any of the following models:
 
 ## Embed a report that use object level security
 
-The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for static RLS. with a role and user name
+The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for static RLS. You need the role and user name.
 
 If the report you want to embed is using one of the following scenarios, you might need to take some extra steps:
 
@@ -48,7 +48,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
        // Defines the user identity and roles.
         var olsIdentity = new EffectiveIdentity(
             username: "All",
-            roles: new List<string>{ "SensitiveTableOLS" },
+            roles: new List<string>{ "SensitiveTableOLS" }, // Role created to hide a table that has sensitive information
             datasets: new List<string>{ datasetId.ToString()}
         );
        
