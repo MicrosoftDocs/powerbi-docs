@@ -32,11 +32,11 @@ To set a different column to sort by in Power BI Desktop, both columns need to b
 
 1. Select the column that you want to sort, in our case, **Month**. Note that the months in the visual are sorted alphabetically. In the **Fields** pane, the **Column tools** tab becomes active.
 
-   :::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort.png" alt-text="Screenshot of a Power B I Desktop chart with months sorted alphabetically. The Column tools tab is active, and the Sort by Column button is called out.":::
+   :::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort.png" alt-text="Screenshot of a Power B I Desktop chart with months sorted alphabetically. The Column tools tab is active, and the Sort by Column button is highlighted.":::
 
 1. Select **Sort by Column**, then select the field you want to sort the other field by, in this case, **Month Number**.
 
-   :::image type="content" source="media/desktop-sort-by-column/power-bi-new-sort.png" alt-text="Screenshot of a chart with the months sorted alphabetically. The Sort by Column button is called out. In a menu below it, Month Number is called out.":::
+   :::image type="content" source="media/desktop-sort-by-column/power-bi-new-sort.png" alt-text="Screenshot of a chart with the months sorted alphabetically. The Sort by Column button is called out. In a menu below it, Month Number is highlighted.":::
 
 1. The visual automatically sorts in the order we want: chronologically by the order of months in a year.
 
@@ -48,19 +48,19 @@ To set a different column to sort by in the Power BI service, both columns need 
 
 1. On the canvas, select the visual. Then locate the **Month Number** field in the **Fields** pane.
 
-   :::image type="content" source="media/desktop-sort-by-column/service-month-number-field.png" alt-text="Screenshot of the Visualizations and Fields panes in the Power B I service. In the Fields pane, the Month Number field is called out.":::
+   :::image type="content" source="media/desktop-sort-by-column/service-month-number-field.png" alt-text="Screenshot of the Visualizations and Fields panes in the Power B I service. In the Fields pane, the Month Number field is highlighted.":::
 
 1. In the **Visualizations** pane, in the **Fields** section, locate the **Tooltip** fields bucket.
 
-   :::image type="content" source="media/desktop-sort-by-column/service-tooltips-fields-bucket.png" alt-text="Screenshot of the Power B I service Visualizations and Fields panes. In the Visualizations pane Fields section, the Tooltips fields bucket is called out.":::
+   :::image type="content" source="media/desktop-sort-by-column/service-tooltips-fields-bucket.png" alt-text="Screenshot of the Power B I service Visualizations and Fields panes. In the Visualizations pane Fields section, the Tooltips fields bucket is highlighted.":::
 
 1. Drag the **Month Number** field from the **Fields** pane to the **Tooltip** fields buck in the **Visualization** pane.
 
-   :::image type="content" source="media/desktop-sort-by-column/service-drag-month-number.png" alt-text="Screenshot of the Power B I service. In the Visualizations pane, the Tooltips fields bucket contains the Month Number field and is called out.":::
+   :::image type="content" source="media/desktop-sort-by-column/service-drag-month-number.png" alt-text="Screenshot of the Power B I service. In the Visualizations pane, the Tooltips fields bucket contains the Month Number field and is highlighted.":::
 
 1. In the upper-right corner of the visual, select **More options**. Select **Sort axis**, and then select **Month Number**.
 
-   :::image type="content" source="media/desktop-sort-by-column/service-sort-month-number-ascending.png" alt-text="Screenshot of the Power B I service. The More options menu is visible, with Sort axis and Month Number called out.":::
+   :::image type="content" source="media/desktop-sort-by-column/service-sort-month-number-ascending.png" alt-text="Screenshot of the Power B I service. The More options menu is visible, with the Sort axis and Month Number highlighted.":::
 
    Power BI sorts the visual chronologically by the order of months in a year.
 
