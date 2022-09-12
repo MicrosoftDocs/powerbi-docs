@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 09/08/2022
+ms.date: 09/12/2022
 LocalizationGroup: Data from files
 ---
 # Understand datamarts
@@ -58,7 +58,7 @@ Incremental refresh and real-time data for datamarts offers the following advant
 
 ## Understand proactive caching
 
-Proactive caching enables automatic import of an auto-generated dataset so you don't need to manage or orchestrate the storage mode. Import mode for the auto-generated dataset provides performance acceleration for the datamart's dataset by using the fast Vertipaq engine. By using proactive caching, Power BI changes the storage mode of your model to import, which uses the in-memory engine in Power BI and Analysis Services.
+Proactive caching enables automatic import of the underlying data for the auto-generated dataset so you don't need to manage or orchestrate the storage mode. Import mode for the auto-generated dataset provides performance acceleration for the datamart's dataset by using the fast Vertipaq engine. By using proactive caching, Power BI changes the storage mode of your model to import, which uses the in-memory engine in Power BI and Analysis Services.
 
 Proactive caching works in the following way: after each refresh, the storage mode for the auto-generated dataset is changed to DirectQuery. Proactive caching builds a side-by-side import model asynchronously and is managed by the datamart, and does not impact availability or performance of the datamart. Queries coming in after the auto-generated dataset is complete will use the import model.
 
@@ -80,7 +80,7 @@ Use *Deployment Pipelines* for changes to ensure the best performance, and to en
 
 ### Considerations and limitations for proactive caching
 
-* Large datamarts will time out of the caching operation. Power BI currently caps the duration of caching operations to ten minutes.
+* Power BI currently caps the duration of caching operations to ten minutes.
 * Constraints of uniqueness/non-null for particular columns will be enforced in the Import model and will fail the cache building if the data does not conform.
 
 
