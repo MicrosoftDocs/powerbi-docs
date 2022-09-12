@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/01/2022
+ms.date: 09/12/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -109,7 +109,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - *Sharing* content with a colleague outside of your domain does not require a Premium capacity. For example, if you are aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- External users can't subscribe themselves to reports or dashboards, even if they have been added as guest users.
+- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. To learn more about guest users see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Subscribe to paginated reports 
 
@@ -234,7 +234,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Apps** 
 
 - For [Power BI apps](end-user-apps.md) you have installed, you can only create subscriptions for others if you are the owner of the app. 
-- Workspace admins cannot manage subscriptions created by another user in an app (as opposed to a workspace). 
+- Workspace admins cannot manage subscriptions created by another user in an app (as opposed to a workspace). Subscriptions created within apps are saved to a user's **My workspace** and admins do not have access to users' **My workspaces**. 
 
 **Unsupported features**    
 Email subscriptions do not support:
