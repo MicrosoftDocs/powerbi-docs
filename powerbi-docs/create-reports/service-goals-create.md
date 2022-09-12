@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/08/2022
+ms.date: 09/12/2022
 ms.custom: sample-sales&returnssamplev201912
 ---
 # Create scorecards and manual metrics in Power BI
@@ -47,8 +47,6 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 1. Select the edit pencil next to **Untitled Scorecard** and give your new scorecard a name. 
 
     :::image type="content" source="media/service-goals-create/metrics-edit-scorecard-name.png" alt-text="Screenshot of the edit icon that shows on hover and enables scorecard renaming.":::
-
-    :::image type="content" source="media/service-goals-create/power-bi-goals-create-scorecard.png" alt-text="Screenshot of Complete the Create Scorecard pane.":::
 
 1. Power BI automatically saves the scorecard to **My Workspace**, but you can move it to another workspace. Select **File** > **Move Scorecard**.
 
