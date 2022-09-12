@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 ## September 2022 Update (2.109.642.0)
 
-September's updates are crisp and clean, like an autumn walk down an a colorful treed pathway where new discoveries are just around each corner. We're all ready to meet friendly new features, joining Power BI classmates for an exciting next round of learning.
+September's updates are crisp and clean, like an autumn walk down a colorful treed pathway where new discoveries are just around each corner. We're all ready to meet friendly new features, joining Power BI classmates for an exciting next round of learning.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
