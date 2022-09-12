@@ -1,6 +1,6 @@
 ---
 title: Migrate multi-customer apps to the service principal profiles model
-description: Get better scalability by migrating Power BI embedded analytics multi-tenancy applications to the service principal profiles model
+description: Get better scalability by migrating Power BI embedded analytics multitenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
@@ -18,7 +18,7 @@ This article describes how you can get better scalability by migrating your Powe
 > [!NOTE]
 > This article is aimed at organizations that already have an app that supports multiple customers from a single Power BI tenant.
 >
-> Not all apps benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps shouldn't migrate:
+> Not all apps benefit from the service principal model. For example, the following apps shouldn't migrate:
 >
 > * Small apps that maintain one service principal with a small number of objects.
 > * Apps that use one multiple service principal per customer
