@@ -48,7 +48,7 @@ The Power BI Dev Camp samples provide additional resources for developers who ar
 
 * [App owns data and RLS](https://github.com/PowerBiDevCamp/AppOwnsDataWithRLS) - A sample web application built using .NET 5 and Power BI *app owns data* embedding. Created to demonstrate how to design a security authorization model, which leverages `EffectiveIdentity` and Row-level Security (RLS).
 
-* [App owns data multi-tenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) - A developer sample project demonstrating how to use service principal profiles to manage a multi-tenant environment with Power BI and App-Owns-Data embedding.
+* [App owns data multitenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) - A developer sample project demonstrating how to use service principal profiles to manage a multitenant environment with Power BI and App-Owns-Data embedding.
 
 * [Tenant management application for Power BI](https://github.com/PowerBiDevCamp/TenantManagement) - A .NET 5 sample application that demonstrates how to manage service principals within a large-scale Power BI embedding environment with thousands of customer tenants.
 
