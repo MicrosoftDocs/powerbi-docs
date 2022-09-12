@@ -55,7 +55,7 @@ You can [migrate from AAS to Power BI Premium](../../guidance/migrate-azure-anal
 >[!NOTE]
 > If the service principal is not an admin, and you don't want to make it an admin of the workspace when you migrate, migrate that model into a separate workspace where you can give it admin permissions.
 
-## Generate the embed token
+## Generate an embed token
 
 Use the [Generate Token](/rest/api/power-bi/embed-token/generate-token) API to generate an embed token that overrides the [effective identity](/rest/api/power-bi/embed-token/tiles-generate-token-in-group#effectiveidentity).
 
@@ -63,7 +63,7 @@ The information needed to generate an embed token depends on how you're connecte
 
 ## [Master user embed token](#tab/master-user-token)
 
-To generate the embed token, provide the following information:
+To generate an embed token, provide the following information:
 
 * **Username** (Optional if no RLS. Required for RLS) - The username must be the same as API caller (in this case, the Master user's [UPN](./pbi-glossary.md#user-principal-name-upn)). If the database doesn't use RLS, and no username is provided, the master user's credentials are used.
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.
@@ -118,7 +118,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 ## [Service principal or service principal profile embed token](#tab/service-principal-token)
 
-To generate the embed token, provide the following information:
+To generate an embed token, provide the following information:
 
 * **Username** (required) -The username must be same as API caller, in this case, the Service principal ObjectId or Service principal profile ObjectId which you can get using the API – [Get Profile](/rest/api/power-bi/profiles/get-profile) / [Get Profiles](/rest/api/power-bi/profiles/get-profiles).
 * **Role** (required for RLS) - The report will only display data if the effective identity is a member of the role.  
