@@ -20,6 +20,10 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## September 2022
+
+Mobile formatting options are now generally available! Mobile formatting options allow you to style and format visuals in mobile-optimized layout without affecting their formatting in web layout. You now have the flexibility you need to create beautiful reports truly optimized for phone viewing. [Learn about optimizing your reports for mobile viewing](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
+
 ## August 2022
 
 ### Follow metrics from your mobile app (iOS and Android) (preview)
