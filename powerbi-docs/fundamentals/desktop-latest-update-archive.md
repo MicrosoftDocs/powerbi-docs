@@ -648,12 +648,6 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
-Select the following links to download this earlier version: 
-
-* [February 2022 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-02.exe)
-* [February 2022 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-02_x64.exe)
-
-
 ## December 2021 Update (2.100.261.0)
 
 This month's features were like a sleigh ride through your favorite snowy location, lighting up the season with all sorts of new things we had been wanting and asking for throughout the year.
