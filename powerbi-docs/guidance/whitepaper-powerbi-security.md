@@ -65,13 +65,11 @@ The Power BI service is built on Azure, Microsoft's [cloud computing platform](h
 
 ### Web front-end cluster (WFE)
 
-The WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process for Power BI, using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power BI back-end service.
+The WFE cluster provides the user's browser with the initial HTML page contents on site load, as well as pointers to CDN content used to render the site in the browser.
 
 ![The WEF Cluster](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
 A WFE cluster consists of an ASP.NET website running in the [Azure App Service Environment](/azure/app-service/environment/intro). When users attempt to connect to the Power BI service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with a Power BI deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
-
-The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power BI Global Service. The WFE specifies to the browser which back-end cluster houses the organization's tenant. Once a user is authenticated, subsequent client interactions for customer data occur with the back-end or Premium cluster directly, without the WFE being an intermediator for those requests.
 
 Static resources such as **.js*, **.css*, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser. Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
 
@@ -163,19 +161,25 @@ User authentication to the Power BI service consists of a series of requests, re
 
 The user authentication sequence for the Power BI service occurs as described in the following steps, which are illustrated in the image that follows them.
 
-1. A user initiates a connection to the Power BI service from a browser, either by typing in the Power BI address in the address bar or by selecting *Sign in* from the Power BI landing page (https://powerbi.microsoft.com). The connection is established using TLS 1.2 and HTTPS, and all subsequent communication between the browser and the Power BI service uses HTTPS.
+1. A user initiates a connection to the Power BI service from a browser, either by typing in the Power BI address in the address bar or by selecting Sign in from the Power BI marketing page (https://powerbi.microsoft.com). The connection is established using TLS and HTTPS, and all subsequent communication between the browser and the Power BI service uses HTTPS.
 
 1. The Azure Traffic Manager checks the user's DNS record to determine the most appropriate (usually nearest) datacenter where Power BI is deployed, and responds to the DNS with the IP address of the WFE cluster to which the user should be sent.
 
-1. WFE then redirects the user to the Microsoft Online Services login page.
+1. WFE then returns a HTML page to the browser client, which contains a MSAL.js library reference necessary to initiate the sign-in flow.
 
-1. After the user has been authenticated, the login page redirects the user to the previously determined nearest Power BI service WFE cluster with an auth code.
+1. The browser client loads the HTML page received from the WFE, and redirects the user to the Microsoft Online Services login page.
 
-1. The WFE cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the WFE cluster consults the Power BI Global Service, which maintains a list of tenants and their Power BI back-end cluster locations and determines which Power BI back-end service cluster contains the user's tenant. The WFE cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
+1. After the user has been authenticated, the login page redirects the user back to the Power BI WFE page with an auth code.
 
-1. Now, when the client's browser requires customer data, it will send requests to the back-end cluster address with the Azure AD access token in the Authorization header. The Power BI back-end cluster reads the Azure AD access token and validates the signature to ensure that the identity for the request is valid. The [Azure AD access token has a default lifetime of 1 hour](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties-after-the-retirement), and to maintain the current session the user's browser will make periodic requests to renew the access token before it expires.
+1. The browser client loads the HTML page, and uses the auth code to request tokens (access, id, refresh) from the Azure AD service.
 
-![Authentication sequence](media/whitepaper-powerbi-security/powerbi-security-whitepaper_08.png)
+1. The user’s tenant Id is used by the browser client to query the Power BI Global Service, which maintains a list of tenants and their Power BI back-end cluster locations. The Power BI Global Service determines which Power BI back-end service cluster contains the user's tenant, and returns the Power BI back-end cluster URL back down to the client.
+
+1. The client is now able to communicate with the Power BI back-end cluster URL API, using the access token in the Authorization header for the HTTP requests. The Azure AD access token will [have an expiry date set according to AAD policies](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-configurable-token-lifetimes#token-lifetime-policies-for-access-saml-and-id-tokens), and to maintain the current session the Power BI Client in the user’s browser will make periodic requests to renew the access token before it expires.
+
+![Client Authentication sequence](media/whitepaper-powerbi-security/powerbi-security-whitepaper_09.png)
+
+In very rare cases where   client-side authentication fails due to an unexpected error, the code will attempt to fall back to using server-side authentication in the WFE. Refer to the questions and answers section at the end of this document for details about the server-side authentication flow.
 
 ## Data residency
 
@@ -516,6 +520,23 @@ The following questions are common security questions and answers for Power BI. 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
 * The connections established for customers with Power BI Premium subscriptions implement an [Azure Business-to-Business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) authorization process, using Azure AD to enable access control and authorization. Power BI handles connections from Power BI Premium subscribers to Power BI Premium resources just as it would any other Azure AD user.
+
+**How does server-side authentication work in the WFE?**
+
+* The user authentication sequence service-side authentication occurs as described in the following steps, which are illustrated in the image that follows them.  
+1.	A user initiates a connection to the Power BI service from a browser, either by typing in the Power BI address in the address bar or by selecting Sign in from the Power BI marketing page (https://powerbi.microsoft.com). The connection is established using TLS 1.2 and HTTPS, and all subsequent communication between the browser and the Power BI service uses HTTPS.
+
+1.	The Azure Traffic Manager checks the user's DNS record to determine the most appropriate (usually nearest) datacenter where Power BI is deployed, and responds to the DNS with the IP address of the WFE cluster to which the user should be sent.
+
+1.	WFE then redirects the user to the Microsoft Online Services login page.
+
+1.	After the user has been authenticated, the login page redirects the user to the previously determined nearest Power BI service WFE cluster with an auth code.
+
+1.	The WFE cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the WFE cluster consults the Power BI Global Service, which maintains a list of tenants and their Power BI back-end cluster locations and determines which Power BI back-end service cluster contains the user's tenant. The WFE cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
+
+1.	Now, when the client's browser requires customer data, it will send requests to the back-end cluster address with the Azure AD access token in the Authorization header. The Power BI back-end cluster reads the Azure AD access token and validates the signature to ensure that the identity for the request is valid. The Azure AD access token will [have an expiry date set according to AAD policies](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-configurable-token-lifetimes#token-lifetime-policies-for-access-saml-and-id-tokens), and to maintain the current session the Power BI Client in the user’s browser will make periodic requests to renew the access token before it expires.
+
+![WFE Authentication sequence](media/whitepaper-powerbi-security/powerbi-security-whitepaper_08.png)
 
 ## Additional resources
 
