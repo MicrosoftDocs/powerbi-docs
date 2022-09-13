@@ -218,6 +218,7 @@ There are some considerations and limitations to consider when using dynamic M q
 * [Aggregations](../enterprise/aggregations-auto.md) are not supported with the feature
 * Row-level security (RLS) is not supported with the feature
 * Parameter names cannot be reserved words in DAX nor contain spaces. Appending "Parameter" to the end of the parameter name can help avoid this limitation.
+* Table names cannot contain spaces or special characters.
 * If your parameter is of Date/Time data type, you will need to cast it within the M query as `DateTime.Date(<YourDateParameter>)`
 * If using SQL sources, you may notice a confirmation dialog every time the parameter value changes. This is due to a security setting: Require user approval for new native database queries. You can find and turn off this setting within the Security tab of the Options Dialog in Power BI Desktop. 
 * Unsupported out-of-box parameter types are the following:
