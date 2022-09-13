@@ -137,5 +137,15 @@
       href: service-automate-paginated-local-file.md
     - name: "Power Automate button visual"
       href: ../create-reports/power-bi-automate-visual.md
+  - name: Power BI in Power Apps solutions
+    items: 
+    - name: About the Power BI/PowerApps solutions integration
+      href: power-bi-power-apps-integration-overview.md
+    - name: Enable the Power BI/PowerApps solutions integration
+      href: enable-power-bi-power-apps-integration.md
+    - name: Using Power BI in PowerApps solutions
+      href: using-power-bi-power-apps-solutions.md
+    - name: Considerations working with the Power Apps/Power BI integration
+      href: power-apps-power-bi-integration-considerations.md
   - name: "Use third-party apps"
     href: service-power-bi-get-started-third-party-apps.md
