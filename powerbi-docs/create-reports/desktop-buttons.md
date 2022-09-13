@@ -47,10 +47,10 @@ For more information, see [Customize buttons in Power BI reports](power-bi-custo
 
 Buttons in Power BI have four possible states:
 
-- **Default**: How they appear when not hovered over or selected.
-- **On hover**: How they appear when hovered over.
-- **On press**: How they appear when selected.
-- **Disabled**: How they appear when they can't be selected.
+- **Default**: How buttons appear when not hovered over or selected.
+- **On hover**: How buttons appear when hovered over.
+- **On press**: How buttons appear when selected.
+- **Disabled**: How buttons appear when they can't be selected.
 
 You can modify many of the cards in the **Format** pane individually, based on these four states, which provides plenty of flexibility for customizing your buttons.
 
