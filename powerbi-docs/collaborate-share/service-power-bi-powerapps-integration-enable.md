@@ -1,5 +1,5 @@
 ---
-title: Power BI in Power Apps Solutions
+title: About Power BI in Power Apps Solutions
 description: Learn about the Power BI integration with Power Apps solutions.
 author: paulinbar
 ms.author: painbar
@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ms.date: 09/14/2022
 ---
 
-# Power BI in Power Apps Solutions (preview)
+# About Power BI in Power Apps Solutions (preview)
 
 When Power BI components are created in a Power Apps solution environment, a special Power BI workspace dedicated to that environment is created in Power BI. The report and dataset used to create the components are copied to that special workspace, and subsequent updates to the report or dataset are done using the items in the dedicated workspace. 
 ## Enable the Power BI/Power Apps solutions integration
