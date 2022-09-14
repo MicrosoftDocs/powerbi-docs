@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/10/2022
+ms.date: 09/14/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -19,6 +19,14 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## September 2022
+
+### Mobile formatting options are now generally available!
+
+Mobile formatting options allow you to style and format visuals in mobile-optimized layout without affecting their formatting in web layout. You now have the flexibility you need to create beautiful reports truly optimized for phone viewing. [Learn about optimizing your reports for mobile viewing](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
+
+![Screenshot of the visualizations pane in Power B I mobile layout view G A.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-visualizations-pane.png)
 
 ## August 2022
 
@@ -35,6 +43,16 @@ Power BI in Microsoft Teams has come to Teams mobile! Now you can discover Power
 ### Mobile formatting now supports text box visuals
 
 [Mobile formatting in Power BI Desktop](../../create-reports/power-bi-create-mobile-optimized-report-about.md) now supports text box visuals. Now, when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
+
+### Power BI fonts are now available on your mobile devices (iOS and Android)
+
+The Power BI mobile apps for iOS and Android now support the full range of fonts available in Power BI Desktop. This means that in the mobile app, your reports will look exactly as you designed them, with the same fonts that you chose while creating the reports in Desktop!
+
+### Upgraded browsing experience with WebView2 (Windows)
+
+ The Power BI app for Windows is now aligned with the overall Power BI migration to Microsoft Edge WebView2, delivering faster performance and a better browsing experience all around.
+
+To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this does not apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
 
 ## July 2022
 

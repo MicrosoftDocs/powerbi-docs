@@ -1,6 +1,6 @@
 ---
-title: Use row-level security with embedded content in Power BI embedded analytics
-description: Learn how to embed Power BI RLS content within your application securely.
+title: Security in Power BI embedded analytics
+description: Learn what steps to take to embed Power BI content securely within your application using RLS, OLS or other security measures.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
@@ -10,39 +10,32 @@ ms.topic: conceptual
 ms.date: 09/14/2022
 ---
 
-# Row-level security with Power BI Embedded
+# Security features in Power BI Embedded
+
+You can filter and restrict data for specific users 
 
 **Row-Level Security (RLS)** enables you to control access to rows in a database table through group memberships. When you embed items, you can use RLS to restrict user access to data. With RLS, different users can work with the same items but see different data.
 
-## Who should use RLS
+**Object level security (OLS)**
 
-RLS can be used as a security tool in many situations. Some common cases where RLS can be applied include:
+Object-level security (OLS) enables you to hide specific tables or columns from report viewers. You can also secure sensitive object names to prevent them from being discovered. From a viewer standpoint, it's as if the table or column simply doesn't exist. Like RLS, OLS is defined within model roles. The process of generating embed tokens for items that use OLS is the [same as for RLS](./generate-embed-token.md).
+To learn more about OLS, see [Object-level security](/analysis-services/tabular-models/object-level-security).
+
+## Who should use security features
+
+Depends on situation. Some common cases where RLS can be applied include:
 
 * Small to medium sized [ISVs](pbi-glossary.md#independent-software-vendor-isv) who serve multiple customers and want each customer to see their own data only. If the customer base isn't too large, the ISV can use a single dataset and report for all their customers, and use [dynamic RLS](cloud-rls.md#dynamic-security) to filter the data for each customer.
 
-* ISVs who serve one or more large customers or organizations with multiple departments. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md) to separate their customers and a combination of [static and dynamic RLS](./embed-multi-tenancy.md#row-level-security) to further filter data within each workspace.
+* ISVs who serve one or more large customers or organizations with multiple departments. The ISV can  separate their customers with a combination of [static and dynamic RLS](./embed-multi-tenancy.md#row-level-security). *Maybe also OLS??*
 
-* Large scale ISVs with thousands of customers where each customer needs to see only their own data. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md). Each customer can get their own report and dataset.
+* Large scale ISVs with thousands of customers where each customer needs to see only their own data. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md). Each customer can get their own report and dataset. In this case each customer only has access to their *own workspace without any further filtering needed.*
 
-## Prerequisites
+## How to embed a report that uses 
 
-This article assumes that you already have a data model set up that supports RLS, and now you want to embed a report. For information on setting up a data model that supports RLS see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md). For more information, see [RLS guidance in Power BI Desktop](/guidance/rls-guidance).
+If you're embedding for non-Power BI users (***app owns data***)Since your customers aren't Power BI users and don't have permission to access the data, you need to generate an [embed token](./generate-embed-token.md) with an effective identity that can be used to access data. Depending how your data is set up, you might need to take some other steps as well.
 
-## How to embed a report that uses RLS
-
-If you're embedding a report for other Power BI users (***user owns data***), within your organization (for example, to restrict access to data based on an employee's department or role in the company), RLS works the same as it does within the Power BI service directly. There's nothing more you need to do in your app.
-
-If you're embedding for non-Power BI users (***app owns data***), which is typically an ISV scenario, then this article is for you. Since your customers aren't Power BI users and don't have permission to access the data, you need to generate an [embed token](./generate-embed-token.md) with an effective identity that can be used to access data. Depending how your data is set up, you might need to take some other steps as well.
-
-To embed a report that uses RLS, you need to [configure the embed token](generate-embed-token.md) to account for the user and role.
-
-To generate the embed token, you need to provide the following information:
-
-* effective identity object.
-* username
-* role
-
-Depending on your setup, you may also need to take some other steps before you can generate your token.
+Depending on your setup,  steps before you can generate your token.
 
 For information on how to embed reports or other items that use RLS, go to the link that best describes your specific scenario:
 
@@ -51,17 +44,10 @@ For information on how to embed reports or other items that use RLS, go to the l
 * [SQL Server Analysis Services](sql-server-analysis-services-embed.md)
 * Single sign-on
 
-## Object level security
-
-Object-level security (OLS) enables you to hide specific tables or columns from report viewers. You can also secure sensitive object names to prevent them from being discovered. From a viewer standpoint, it's as if the table or column simply doesn't exist. Like RLS, OLS is defined within model roles. The process of generating embed tokens for items that use OLS is the [same as for RLS](./generate-embed-token.md).
-To learn more about OLS, see [Object-level security](/analysis-services/tabular-models/object-level-security).
-
 ## Considerations and limitations
 
-* Assignment of users to roles within the Power BI service doesn't affect RLS when using an embed token.
-* Although RLS setting don't apply to admins or members with edit permissions, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
-* Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done only using CustomData.
-* A list of identities enables multiple identity tokens for dashboard embedding. For all others items, the list contains a single identity.
+* Assigning users to roles within the Power BI service doesn't affect RLS or OLS when using an embed token (App owns data scenario only).
+* Although RLS setting don't apply to admins, members, or contributors, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
 
 ## Next steps
 

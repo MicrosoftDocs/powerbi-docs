@@ -11,8 +11,6 @@
       href: service-admin-role.md      
     - name: Can't sign in?
       href: power-bi-cannot-sign-in.md
-    - name: Forgot your password for Power BI?
-      href: service-admin-forgot-your-password.md
     - name: How to use the same account login for Power BI and Azure
       href: service-admin-how-to-use-the-same-account-as-azure.md 
     - name: Frequently asked questions (FAQ)
@@ -129,3 +127,5 @@
       href: service-admin-portal-template-app.md
     - name: User experience experiments settings
       href: service-admin-portal-user-experience-experiments.md
+    - name: Power BI and Microsoft Graph data sharing
+      href: admin-microsoft-graph-metadata.md

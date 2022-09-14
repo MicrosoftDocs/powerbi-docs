@@ -331,7 +331,7 @@ It is important to recognize that the Azure AD account will be used or created i
 Contoso can choose one of three approaches to license guest users from its suppliers and partner organizations to have access to Power BI content.
 
 > [!NOTE]
-> _The Azure AD B2B's free tier is enough to use Power BI with Azure AD B2B. Some advanced Azure AD B2B features like dynamic groups require additional licensing. Please refer to the Azure AD B2B documentation for additional information:_ [_https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](/azure/active-directory/b2b/licensing-guidance)
+> The Azure AD B2B's free tier is enough to use Power BI with Azure AD B2B. Some advanced Azure AD B2B features like dynamic groups require additional licensing. For more information, see the [Azure AD B2B documentation](/azure/active-directory/b2b/licensing-guidance).
 
 ### Approach 1: Contoso uses Power BI Premium
 
@@ -490,7 +490,7 @@ To help these users to log in to Power BI, provide them with the Tenant URL. To 
 
     ![Tenant URL](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
 
-When using the Allow external guest users to edit and manage content in the organization, the specified guest users get access to your organization's Power BI and see any content to which they have permission. They can access Home, browse and contribute content to workspaces, install apps where they are on the access list, and have a My workspace. They can create or be an Admin of workspaces that use the new workspace experience.
+When using the Allow external guest users to edit and manage content in the organization, the specified guest users get access to your organization's Power BI and see any content to which they have permission. They can access Home, browse and contribute content to workspaces, install apps where they are on the access list, and have a My workspace. They can create or be an Admin of workspaces.
 
 > [!NOTE]
 > When using this option make sure to review the governance section of this document since default Azure AD settings prevent Guest users to use certain features like people pickers which can lead to a reduced experience.**
@@ -499,7 +499,6 @@ For guest users enabled through the Allow external guest users to edit and manag
 
 - Direct publishing from Power BI desktop to the Power BI service
 - Guest users cannot use Power BI desktop to connect to service datasets in the Power BI service
-- Classic workspaces tied to Microsoft 365 Groups: Guest user cannot create or be Admins of these workspaces. They can be members.
 - Sending ad-hoc invites is not supported for workspace access lists
 - Power BI Publisher for Excel is not supported for guest users
 - Guest users cannot install a Power BI Gateway and connect it to your organization
@@ -518,9 +517,7 @@ For guest users enabled through the Allow external guest users to edit and manag
 
 When using Azure AD B2B sharing, the Azure Active Directory administrator controls aspects of the external user's experience. These are controlled on the External collaboration settings page within the Azure Active Directory settings for your Tenant.
 
-Details on the settings are available here:
-
-[https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations](/azure/active-directory/b2b/delegate-invitations)
+For more information, see [Configure external collaboration settings](/azure/active-directory/b2b/delegate-invitations).
 
 > [!NOTE]
 > By default, the Guest users permissions are limited option is set to Yes, so Guest users within Power BI have limited experiences especially surround sharing where people picker UIs do not work for those users. It is important to work with your Azure AD administrator to set it to No, as shown below to ensure a good experience.**

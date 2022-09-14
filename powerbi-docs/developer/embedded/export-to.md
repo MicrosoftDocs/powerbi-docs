@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 05/08/2022
+ms.date: 08/24/2022
 ---
 
 # Export Power BI report to file
@@ -33,10 +33,18 @@ You can use the export feature in several ways. Here are a couple of examples:
 
 ## Using the API
 
+### Admin settings
+
 Before using the API, verify that the following [admin tenant settings](../../admin/service-admin-portal-about-tenant-settings.md) are enabled:
 
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
 * **Export reports as image files** - Required only for *.png* and disabled by default.
+
+### "Rendering" events
+
+To make sure the export doesn't begin before the visual finishes rendering use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
+
+### Polling
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
@@ -116,8 +124,7 @@ With [Row Level Security (RLS)](embedded-row-level-security.md), you can export 
 To export using RLS, you must have the following permissions:
 
 * Write and reshare permissions for the dataset the report is connected to
-* If the report resides on a v1 workspace, you need to be the workspace admin
-* If the report resides on a v2 workspace, you need to be a workspace member or admin
+* Workspace member or admin of the workspace where the report resides
 
 ### Data protection
 
@@ -127,7 +134,7 @@ A report with a sensitivity label can't be exported to a .pdf or a .pptx using a
 
 ### Localization
 
-When using the `exportToFile` API, you can pass your desired local. The localization settings affect the way the report is displayed, for example by changing formatting according to the selected local.
+When using the `exportToFile` API, you can pass your desired locale. The localization settings affect the way the report is displayed, for example by changing formatting according to the selected local.
 
 ## Concurrent requests
 

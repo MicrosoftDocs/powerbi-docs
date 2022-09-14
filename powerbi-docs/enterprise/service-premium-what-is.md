@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 06/29/2022
+ms.date: 09/07/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -60,6 +60,7 @@ For more information about Premium per user, including a feature comparison and 
 With Power BI Premium, you get *reserved capacities*. In contrast to a shared capacity where workloads' analytics processing run on computational resources shared with other customers, a reserved capacity is for exclusive use by an organization. It's isolated with reserved computational resources, which provide dependable and consistent performance for hosted content. Note that the processing of the following types of Power BI content is stored in shared capacity rather than your reserved capacity:
 
 * Excel workbooks (unless data is first imported into Power BI Desktop)
+* Analyze in Excel
 * [Push datasets](/rest/api/power-bi/pushdatasets)
 * [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 * [Q&A](../create-reports/power-bi-tutorial-q-and-a.md)

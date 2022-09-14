@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/21/2022
+ms.date: 08/29/2022
 LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
@@ -193,6 +193,21 @@ Here's how to set the model language.
 > Once created, the language of a Power BI model can't be changed.
 > 
 >
+
+### Choose the DAX separators in Power BI Desktop
+
+By default, DAX uses commas (,) to separate items in a list and periods (.) to indicate the decimal place in a number. While we do recommend using the defaults, you can use the DAX separators based on the your Windows locale settings. 
+
+Here's how to make Power BI Desktop use localized DAX separators:
+
+1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
+2. Under **Global**, select **Regional Settings**.
+3. Under **DAX separators** select **Use localized DAX separators**.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-dax-separators.png" alt-text="Screenshot of Power B I Desktop showing how to choose the DAX separators." :::
+
+> [!NOTE]
+> The **DAX separators** section won't be shown if your Windows locale settings are set to "English US".
 
 ## Languages for the help documentation
 Help is localized in these 10 languages: 
