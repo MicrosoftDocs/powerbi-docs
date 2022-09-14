@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 09/14/2022
 LocalizationGroup: Administration
 ---
 
@@ -149,11 +149,19 @@ Users in the organization can use the export report to file API to export report
 
 Allow users in this org to certify datasets, dataflows, reports, and apps. See [Enable content certification](service-admin-setup-certification.md) for details.
 
-## Email Subscriptions
+## Create email subscriptions
 
-Users in the organization can create email subscriptions. Learn more about [subscriptions](../consumer/end-user-subscribe.md).
+Users can create email subscriptions to reports and dashboards. Learn more about [subscriptions](../consumer/end-user-subscribe.md).
 
-![Enable email subscriptions](media/service-admin-portal-export-sharing/power-bi-manage-email-subscriptions.png)
+![Screenshot of Enable email subscriptions tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-email-subscriptions.png)
+
+## Allow email subscriptions to be sent to external users 
+
+The **Allow email subscriptions to be sent to external users** setting helps organizations choose whether external users can be included as recipients of email subscriptions.
+
+External users are users outside of the organization that have not been added as Azure Active Directory business-to-business (B2B) guest users. If this setting is turned off, an external user who isn't already a guest user in the organization can't be included as a recipient of an email subscription.
+
+![Screenshot of Enable email subscriptions tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-external-user-email-subscriptions.png)
 
 ## Featured content
 
