@@ -12,14 +12,13 @@ ms.date: 09/14/2022
 
 # Security features in Power BI Embedded
 
-You can filter and restrict data for specific users 
+Power BI Embedded has several ways to filter data and restrict data access to specific users. Among
 
-**Row-Level Security (RLS)** enables you to control access to rows in a database table through group memberships. When you embed items, you can use RLS to restrict user access to data. With RLS, different users can work with the same items but see different data.
+* **Row-Level Security (RLS)**
+  RLS enables you to control access to rows in a database table through group memberships. When you embed items, you can use RLS to restrict user access to data. With RLS, different users can work with the same items but see different data. To learn more about RLS, see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md).
 
-**Object level security (OLS)**
-
-Object-level security (OLS) enables you to hide specific tables or columns from report viewers. You can also secure sensitive object names to prevent them from being discovered. From a viewer standpoint, it's as if the table or column simply doesn't exist. Like RLS, OLS is defined within model roles. The process of generating embed tokens for items that use OLS is the [same as for RLS](./generate-embed-token.md).
-To learn more about OLS, see [Object-level security](/analysis-services/tabular-models/object-level-security).
+* **Object level security (OLS)**
+  OLS enables you to hide specific tables or columns from report viewers. You can also secure sensitive object names and metadata to prevent them from being discovered. To learn more about OLS, see [Object-level security](/analysis-services/tabular-models/object-level-security).
 
 ## Who should use security features
 
@@ -51,7 +50,7 @@ For information on how to embed reports or other items that use RLS, go to the l
 
 ## Next steps
 
-* [RLS guidance in Power BI Desktop](/guidance/rls-guidance)
+* [Generate an embed token](./generate-embed-token.md)
 * [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
