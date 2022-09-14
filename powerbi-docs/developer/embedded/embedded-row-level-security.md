@@ -12,7 +12,7 @@ ms.date: 09/14/2022
 
 # Security features in Power BI Embedded
 
-Power BI Embedded has several ways to filter data and restrict data access to specific users. Among
+Power BI Embedded has several ways to filter data and restrict data access to specific users. Some of these security methods are:
 
 * **Row-Level Security (RLS)**
   RLS enables you to control access to rows in a database table through group memberships. When you embed items, you can use RLS to restrict user access to data. With RLS, different users can work with the same items but see different data. To learn more about RLS, see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md).
@@ -20,23 +20,22 @@ Power BI Embedded has several ways to filter data and restrict data access to sp
 * **Object level security (OLS)**
   OLS enables you to hide specific tables or columns from report viewers. You can also secure sensitive object names and metadata to prevent them from being discovered. To learn more about OLS, see [Object-level security](/analysis-services/tabular-models/object-level-security).
 
-## Who should use security features
+* [Workspace based isolation](./embed-multi-tenancy.md) and multitenancy. In this scenario, each customer has their own separate dataset. Since each customer only has access to their own workspace, no further filtering needed, though this method can be combined with RLS to further filter data within each organization.
 
-Depends on situation. Some common cases where RLS can be applied include:
+## Security measures for different situations
+
+Depending on the situation, some common cases where security measures can be applied include:
 
 * Small to medium sized [ISVs](pbi-glossary.md#independent-software-vendor-isv) who serve multiple customers and want each customer to see their own data only. If the customer base isn't too large, the ISV can use a single dataset and report for all their customers, and use [dynamic RLS](cloud-rls.md#dynamic-security) to filter the data for each customer.
 
-* ISVs who serve one or more large customers or organizations with multiple departments. The ISV can  separate their customers with a combination of [static and dynamic RLS](./embed-multi-tenancy.md#row-level-security). *Maybe also OLS??*
+* ISVs who serve one or more large customers or organizations with multiple departments. The ISV can  separate their customers with a combination of [static and dynamic RLS](./embed-multi-tenancy.md#row-level-security), and possibly OLS.
 
-* Large scale ISVs with thousands of customers where each customer needs to see only their own data. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md). Each customer can get their own report and dataset. In this case each customer only has access to their *own workspace without any further filtering needed.*
+* Large scale ISVs with thousands of customers where each customer needs to see only their own data. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md). Each customer can get their own report and dataset and the ISV can further [filter within each organization using RLS](./embed-multi-tenancy.md#row-level-security).
 
-## How to embed a report that uses 
+## Embed a report that uses security features
 
-If you're embedding for non-Power BI users (***app owns data***)Since your customers aren't Power BI users and don't have permission to access the data, you need to generate an [embed token](./generate-embed-token.md) with an effective identity that can be used to access data. Depending how your data is set up, you might need to take some other steps as well.
-
-Depending on your setup,  steps before you can generate your token.
-
-For information on how to embed reports or other items that use RLS, go to the link that best describes your specific scenario:
+Depending on your setup, you may have to take several steps before you can generate an embed token.
+For instructions on how to embed reports or other items, go to the link that best describes your specific scenario:
 
 * [Cloud based RLS](cloud-rls.md)
 * [Embedding paginated reports](paginated-reports-row-level-security.md)
