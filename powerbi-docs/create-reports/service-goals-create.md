@@ -3,12 +3,12 @@ title: Create scorecards and manual metrics
 description: Create scorecards and manual metrics in Power BI.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: 'cnews'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 09/12/2022
 ms.custom: sample-sales&returnssamplev201912
 ---
 # Create scorecards and manual metrics in Power BI
@@ -40,20 +40,27 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-left-nav.png" alt-text="Screenshot of Select Metrics in the left nav.":::
 
-1. In the Metrics hub, select **New scorecard**. The scorecard creation pane opens. 
-1. Name your scorecard, provide a description, and select the Power BI workspace where you want to store the scorecard. 
+1. In the Metrics hub, select **New scorecard**.
 
-    If you don’t have a workspace, you can create one using this article, [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md). 
+    A new scorecard opens, which you can start populating with metrics.
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-create-scorecard.png" alt-text="Screenshot of Complete the Create Scorecard pane.":::
+1. Select the edit pencil next to **Untitled Scorecard** and give your new scorecard a name. 
 
-1. Select **Create**. Power BI creates the scorecard and opens it. 
+    :::image type="content" source="media/service-goals-create/metrics-edit-scorecard-name.png" alt-text="Screenshot of the edit icon that shows on hover and enables scorecard renaming.":::
 
-    Power BI creates these items in the workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the metrics data. 
+1. Power BI automatically saves the scorecard to **My Workspace**, but you can move it to another workspace. Select **File** > **Move Scorecard**.
+
+    :::image type="content" source="media/service-goals-create/metrics-move-scorecard.png" alt-text="Screenshot of menu to move a scorecard.":::
+
+1. In the **Move scorecard** dialog, select any available workspace.  If you don’t have another workspace, you need to create one first. See [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md) for details.
+
+    :::image type="content" source="media/service-goals-create/metrics-move-scorecard-confirm.png" alt-text="Screenshot of confirmation to move a scorecard to another workspace, and a dropdown to select the correct workspace.":::
+
+    Power BI saves these items in the workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the metrics data. 
 
     :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and dataset that Power BI created.":::
 
-## Step 2: Create a manual metric 
+## Step 2: Create a manual metric
 
 1. In the scorecard, select **New Metric**. 
 2. Decide on a **Metric name** and an **Owner**. 
