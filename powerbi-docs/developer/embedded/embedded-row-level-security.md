@@ -26,13 +26,13 @@ RLS can be used as a security tool in many situations. Some common cases where R
 
 ## Prerequisites
 
-This article assumes that you already have a data model set up that supports RLS, and now you want to embed a report. For information on setting up a data model that supports RLS see [RLS guidance in Power BI Desktop](/guidance/rls-guidance). For more information, see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md).
+This article assumes that you already have a data model set up that supports RLS, and now you want to embed a report. For information on setting up a data model that supports RLS see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md). For more information, see [RLS guidance in Power BI Desktop](/guidance/rls-guidance).
+
+## How to embed a report that uses RLS
 
 If you're embedding a report for other Power BI users (***user owns data***), within your organization (for example, to restrict access to data based on an employee's department or role in the company), RLS works the same as it does within the Power BI service directly. There's nothing more you need to do in your app.
 
 If you're embedding for non-Power BI users (***app owns data***), which is typically an ISV scenario, then this article is for you. Since your customers aren't Power BI users and don't have permission to access the data, you need to generate an [embed token](./generate-embed-token.md) with an effective identity that can be used to access data. Depending how your data is set up, you might need to take some other steps as well.
-
-## How to embed a report that uses RLS
 
 To embed a report that uses RLS, you need to [configure the embed token](generate-embed-token.md) to account for the user and role.
 
