@@ -161,7 +161,7 @@ The **Allow email subscriptions to be sent to external users** setting helps org
 
 External users are users outside of the organization that have not been added as Azure Active Directory business-to-business (B2B) guest users. If this setting is turned off, an external user who isn't already a guest user in the organization can't be included as a recipient of an email subscription.
 
-![Screenshot of Enable email subscriptions tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-external-user-email-subscriptions.png)
+![Screenshot of Allow email subscriptions to be sent to external users tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-external-user-email-subscriptions.png)
 
 ## Featured content
 
