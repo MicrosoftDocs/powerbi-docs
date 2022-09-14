@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/17/2022
+ms.date: 09/14/2022
 ---
 
 # Row-level security with Power BI Embedded
@@ -49,7 +49,6 @@ For information on how to embed reports or other items that use RLS, go to the l
 * [Cloud based RLS](cloud-rls.md)
 * [Embedding paginated reports](paginated-reports-row-level-security.md)
 * [SQL Server Analysis Services](sql-server-analysis-services-embed.md)
-* Azure Active directory
 * Single sign-on
 
 ## Object level security
