@@ -8,7 +8,7 @@ ms.custom: video-3q6VEBhGew, video-RWDX9z
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/08/2022
+ms.date: 09/14/2022
 LocalizationGroup: Visualizations
 ---
 # Add text boxes, shapes, and smart narrative visuals to Power BI reports
@@ -53,11 +53,11 @@ This procedure uses the Retail Analysis sample available in the Power BI service
 
    ![Screenshot of Text box formatting.](media/power-bi-reports-add-text-and-shapes/power-bi-formatting.png)
 
-5. To close the text box, select any blank space on the report canvas.
+5. When you've finished editing the text box, select any blank space on the report canvas.
 
-6. You can also pin a text box to a dashboard. Select the pin icon, then select the dashboard where you want to pin it.
+6. In the Power BI service, you can also pin a text box to a dashboard. Select the pin icon, then select the dashboard where you want to pin it.
 
-     ![Screenshot of Pin the text box to a dashboard.](media/power-bi-reports-add-text-and-shapes/power-bi-pin-text-box.png)
+     ![Screenshot of Pin the text box to a dashboard in the Power B I service.](media/power-bi-reports-add-text-and-shapes/power-bi-pin-text-box.png)
 
 ## Add a shape to a report
 
