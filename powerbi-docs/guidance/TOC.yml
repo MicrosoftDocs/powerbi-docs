@@ -196,6 +196,20 @@
           href: powerbi-implementation-planning-workspaces-tenant-level-planning.md
         - name: "Workspace-level planning"
           href: powerbi-implementation-planning-workspaces-workspace-level-planning.md
+      - name: "Information protection and data loss prevention"
+        items:
+        - name: "Information protection and data loss prevention overview"
+          href: powerbi-implementation-planning-information-protection-and-data-loss-prevention-overview.md
+        - name: "Organization-level information protection planning"
+          href: powerbi-implementation-planning-organization-level-information-protection-planning.md
+        - name: "Information protection for Power BI planning"
+          href: powerbi-implementation-planning-information-protection-for-power-bi-planning.md
+        - name: "Data loss prevention for Power BI planning"
+          href: powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning.md
+        - name: "Defender for Cloud Apps for Power BI planning"
+          href: powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi-planning.md
+        - name: "Auditing of information protection and data loss prevention"
+          href: powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention.md
   - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"

@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/29/2021
+ms.date: 09/15/2022
 ---
 
 # Power BI adoption roadmap: System oversight
@@ -342,9 +342,9 @@ Managing and optimizing the cost of cloud services, like Power BI, is an importa
 - If there are occasional spikes in the level of usage, use of [autoscale](../enterprise/service-premium-auto-scale.md) with [Power BI Premium Gen 2](../enterprise/service-premium-concepts.md) is recommended. It will scale up capacity resources for 24 hours, then scale them back down to normal levels (provided that sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Power BI tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/), which are minimal, but at scale can be considerable.
 
-## Security and data protection
+## Security, information protection, and data loss protection
 
-Security and data protection are joint responsibilities among all content creators, consumers, as well as administrators. That's no small task because there's sensitive information everywhere: personal data, customer data, or customer-authored data, protected health information, intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations may have a big impact on the [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
+Security, information protection, and data loss protection (DLP) are joint responsibilities among all content creators, consumers, as well as administrators. That's no small task because there's sensitive information everywhere: personal data, customer data, or customer-authored data, protected health information, intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations may have a big impact on the [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
 
 The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. This section will introduce several topics that customers are responsible for managing.
 
@@ -364,25 +364,13 @@ External users—such as partners, customers, vendors, and consultants—are a v
 
 External user access is controlled by [tenant settings](../admin/service-admin-portal-export-sharing.md) in the Power BI service as well as certain Azure Active Directory settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
 
-### Information protection
+### Information protection and data loss prevention
 
-Power BI supports capabilities for information protection and data loss prevention through its integration with:
+Power BI supports capabilities for information protection and data loss prevention (DLP) in the following ways.
 
-- [Microsoft Integration Protection](/microsoft-365/compliance/information-protection) (MIP), which is a collection of features and capabilities with an objective to discover, classify, and protect sensitive information. Its philosophy is to *know your data, protect your data, prevent data loss, and govern your data*.
-- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) (Defender for Cloud Apps), which is a cloud access security broker (CASB). It can audit, monitor, and raise alerts based on certain activities. See the [monitoring](#monitoring) section later in this article for examples of how Defender for Cloud Apps can be used for oversight of the Power BI service.
-
-Power BI's information protection capabilities are built upon [sensitivity labels](./whitepaper-powerbi-security.md#microsoft-purview-for-power-bi). Sensitivity labels are an important building block for data protection, data retention, data loss prevention, compliance, and insider risk management for Microsoft 365 services (including Power BI, as well as other Microsoft services).
-
-> [!IMPORTANT]
-> A sensitivity label offers powerful data protection capabilities. However, it's not a replacement for standard data security practices, such as workspace roles, app security, individual item sharing, or row-level security.
-
-The power of sensitivity labels is:
-
-- Automated data loss prevention within the Power BI service, for instance, when [Defender for Cloud Apps](../enterprise/service-security-using-defender-for-cloud-apps-controls.md) can invoke a policy to prohibit a file download based on a sensitivity label.
-- Automated data loss prevention across system boundaries, such as when the [label follows the content](../enterprise/service-security-sensitivity-label-overview.md#introduction) from when it's exported from the Power BI service to Excel or PowerPoint.
-- User education, so users know what they can and cannot do with the data. It's not automated. Rather, it should be handled with a data governance policy and user education.
-
-There are several [tenant settings](../admin/service-admin-portal-information-protection.md) which relate to information protection. For more information, see the [Auditing and monitoring](#auditing-and-monitoring) section in this article.
+- **Information protection:** [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) (formerly known as Microsoft Information Protection) includes capabilities for discovering, classifying, and protecting data. A key principle is that data can be better protected once it's been classified. The key building block for classifying data is [sensitivity labels](/power-bi/enterprise/service-security-sensitivity-label-overview). For more information, see [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md).
+- **Data loss prevention for Power BI:** Microsoft Purview Data Loss Prevention (formerly known as Office 365 Data Loss Prevention) supports [DLP policies for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi). By using sensitivity labels or sensitive information types, DLP policies for Power BI help an organization locate sensitive datasets. For more information, see [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning.md).
+- **Microsoft Defender for Cloud Apps:** [Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) (formerly known as Microsoft Cloud App Security) supports policies that help protect data, including real-time controls when users interact with the Power BI service. For more information, see [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi-planning.md).
 
 ### Data residency
 
