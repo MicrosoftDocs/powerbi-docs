@@ -74,7 +74,7 @@ Slide **Personalize visual** >  **On** or **Off**.
 
 ### Personalize visual per visual
 
-Select the visual. Then select **Format** > **General** > **Icons**.
+Select the visual. Then select **Format** > **General** > **Header icons** > **Icons**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize-desktop.png" alt-text="Screenshot shows the Icons menu, where you can select personalization.":::
 
