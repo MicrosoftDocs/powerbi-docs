@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/05/2022
+ms.date: 09/12/2022
 LocalizationGroup: Create reports
 ---
 
@@ -101,13 +101,7 @@ To customize the styling further in Power BI Desktop, you can update the **Toolt
 
 Additionally, you can format tooltips per visual by customizing the settings in the **Format** pane:
 
-# [Power BI Desktop](#tab/powerbi-desktop)
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-visual-tooltip-format.png" alt-text="Customize the tooltip in the Format pane in Power B I Desktop.":::
-
-# [Power BI service](#tab/powerbi-service)
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-format-pane.png" alt-text="Customize the tooltip in the Format pane in the Power B I service.":::
-
----
 
 ## Considerations and limitations
 
