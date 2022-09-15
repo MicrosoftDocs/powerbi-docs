@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 09/07/2022
+ms.date: 09/14/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -183,7 +183,7 @@ The Power BI REST APIs include a collection of [Capacities APIs](/rest/api/power
 
 ## Large datasets
 
-Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbix) model files up to a maximum of **10 GB** in size. When loaded, the model can then be published to a workspace assigned to a Premium capacity. The dataset can then be refreshed to up to **12 GB** in size.
+Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbix) model files up to a maximum of **10 GB** in size. When loaded, the model can then be published to a workspace assigned to a Premium capacity.
 
 ### Size considerations
 
