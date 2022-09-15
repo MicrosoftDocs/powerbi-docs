@@ -3,7 +3,7 @@ title: Power BI visual system integration
 description: This article describes the interaction between the Power BI user, visual, and host.
 author: mberdugo
 ms.author: monaberdugo
-manager: rkarlin
+manager:
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -33,7 +33,7 @@ The user can interact with Power BI to update a visual in the following ways:
 
 * A user opens the visual's properties panel.
 
-    When a user opens the visual's properties panel, Power BI fetches supported objects and properties from the visual's *capabilities.json* file. To receive actual values of properties, Power BI calls the `enumerateObjectInstances` method of the visual. The visual returns actual values of properties.
+    When a user opens the visual's properties panel, Power BI fetches supported objects and properties from the visual's *capabilities.json* file. To receive actual values of properties, Power BI calls the `getFormattingModel` method of the visual (APIs earlier than version 5.1 call `enumerateObjectInstances` instead). The visual returns actual values of properties.
 
     For more information, see [Capabilities and properties of Power BI visuals](capabilities.md).
 
