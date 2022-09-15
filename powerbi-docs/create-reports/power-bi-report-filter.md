@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/30/2021
+ms.date: 09/15/2022
 LocalizationGroup: Reports
 ---
 # Format filters in Power BI reports
@@ -259,7 +259,7 @@ In Power BI Desktop, you can add a single **Apply** button to the filter pane, a
 
 ### Turn on the Apply button
 
-You can set this feature at the report level. However, the feature is off by default.
+You can set this feature at the report level, only in Power BI Desktop. However, the feature is off by default.
 
 1. Go to **File** > **Options and settings** > **Options** > **Query reduction**.
 
