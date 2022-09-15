@@ -19,7 +19,7 @@ Before you start development, you'll need to install **node.js** and the **pbivi
 In this article, you'll learn how to:
 > [!div class="checklist"]
 >
-> * [Install *nodes.js*](#install-nodejs).
+> * [Install *node.js*](#install-nodejs).
 > * [Install *pbiviz*](#install-pbiviz).
 > * [Create and install a certificate](#create-and-install-a-certificate).
 > * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
