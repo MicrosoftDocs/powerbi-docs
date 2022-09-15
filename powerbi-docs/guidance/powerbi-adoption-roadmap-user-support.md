@@ -109,7 +109,7 @@ Check the [Power BI support site](https://powerbi.microsoft.com/support/) high-p
 
 Monitor the [Microsoft 365 Twitter account](https://twitter.com/MSFT365Status). Microsoft posts timely information and updates about outages for all Microsoft 365 services.
 
-Refer to the comprehensive [Power BI documentation](../index.yml). It's an authoritative resource that can aid troubleshooting and search for information. You can prioritize results from the Power BI documentation site. For example, enter a site-targeted search request into your web search engine, like "power bi dataset site:docs.microsoft.com".
+Refer to the comprehensive [Power BI documentation](../index.yml). It's an authoritative resource that can aid troubleshooting and search for information. You can prioritize results from the Power BI documentation site. For example, enter a site-targeted search request into your web search engine, like `power bi dataset site:docs.microsoft.com`.
 
 ### Power BI Pro and Premium Per User end-user support
 

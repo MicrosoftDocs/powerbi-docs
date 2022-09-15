@@ -21,32 +21,18 @@
       href: known-issues/known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md
     - name: Datamart editor doesn't allow saving row-level security (RLS) rules that contain double quotes in the string filter
       href: known-issues/known-issue-208-datamart-editor-doesnt-allow-row-level-security-rules-with-double-quotes.md
-    - name: A scorecard in an app won't load until the user visits workspace first
-      href: known-issues/known-issue-207-scorecard-in-app-wont-load-until-user-visits-workspace-first.md
     - name: Dremio connector is missing
       href: known-issues/known-issue-204-dremio-connector-missing.md
-    - name: Decomposition tree shows the title of a collapsed level
-      href: known-issues/known-issue-203-decomposition-tree-shows-title-collapsed-level.md
     - name: Using a link in a paginated report subscription doesn't apply the report parameters
       href: known-issues/known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md
-    - name: Decomposition tree visual first level is incorrectly expanded
-      href: known-issues/known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md
     - name: Applying Show bar only for data bars doesn't work in Power BI Service or Power BI Desktop
       href: known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md
-    - name: Duplicate or erroneous email may be received during classic workspace upgrade
-      href: known-issues/known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md
     - name: Multi-role row-level security for composite models may fail
       href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
-    - name: Unable to load Power BI dataset list in Excel
-      href: known-issues/known-issue-175-unable-to-load-dataset-list-in-excel.md    
     - name: Try it button missing on REST API pages
       href: known-issues/known-issue-169-try-it-button-missing.md            
-    - name: DAX query fails due to parameter case sensitivity 
-      href: known-issues/known-issue-166-dax-query-fails-parameter-case-sensitivity.md   
     - name: Long running, failed or stuck dataflow in Premium Gen2 
       href: known-issues/known-issue-dataflow-on-premium-gen2.md   
-    - name: Filter not correct after applying bookmark
-      href: known-issues/known-issue-164-filter-not-correct-after-applying-bookmark.md    
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
