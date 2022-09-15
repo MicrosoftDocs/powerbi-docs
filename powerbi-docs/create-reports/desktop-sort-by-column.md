@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: contperf-fy21q4
-ms.date: 04/20/2022
+ms.date: 09/15/2022
 LocalizationGroup: Create reports
 ---
 # Sort one column by another column in Power BI
