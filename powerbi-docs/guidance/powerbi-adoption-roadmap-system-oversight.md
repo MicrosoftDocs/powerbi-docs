@@ -526,8 +526,8 @@ The following maturity levels will help you assess the current state of your Pow
 
 For more information about system oversight and Power BI administration, see the following resources:
 
-- [Microsoft Learn – Administer Power BI – Part 1](/learn/paths/administer-power-bi-part-1/)
-- [Microsoft Learn – Administer Power BI – Part 2](/learn/paths/administer-power-bi-part-2/)
+- [Administer Power BI - Part 1](/training/paths/administer-power-bi-part-1/)
+- [Administer Power BI - Part 2](/training/paths/administer-power-bi-part-2/)
 - [Administrator in a Day Training – Day 1](https://aka.ms/AdmPBI1)
 - [Administrator in a Day Training – Day 2](https://aka.ms/AdmPBI2)
 - [Power BI security whitepaper](whitepaper-powerbi-security.md)

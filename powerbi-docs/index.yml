@@ -45,15 +45,15 @@ highlightedContent:
     # Card
     - title: Get your data on the go with Power BI mobile apps
       itemType: learn
-      url: /learn/modules/explore-power-bi-mobile-apps
+      url: /training/modules/explore-power-bi-mobile-apps
     # Card
     - title: Create sparklines in a table or matrix
       itemType: how-to-guide
       url: create-reports/power-bi-sparklines-tables.md
     # Card
-    - title: Study Power BI start to finish on Microsoft Learn 
+    - title: Study Power BI start to finish on Microsoft training 
       itemType: learn
-      url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+      url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -260,7 +260,7 @@ conceptualContent:
         - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
           itemType: quickstart
           text: Explore dashboards and reports
-        - url: /learn/modules/explore-power-bi-mobile-apps
+        - url: /training/modules/explore-power-bi-mobile-apps
           itemType: learn
           text: Get data on the go with the mobile apps
       # footerLink (optional)
@@ -289,7 +289,7 @@ conceptualContent:
         - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
           text: Business decision makers
-        - url: /learn/paths/dax-power-bi/
+        - url: /training/paths/dax-power-bi/
           itemType: learn
           text: Get started with DAX
         - url: learning-catalog/learning-catalog-solution-architect.md
