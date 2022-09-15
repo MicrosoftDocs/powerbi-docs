@@ -121,21 +121,11 @@ You can use conditional formatting to set the navigation destination, based on t
 
 :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
-To create this example, start by creating a single-column table with the names of the navigation destinations:
+To create this example, start by creating a single-column table in Power BI Desktop with the names of the navigation destinations:
 
-### [Power BI Desktop](#tab/powerbi-desktop)
-
-1. In Power BI Desktop, on the **Home** tab, select **Enter data**.
+1. On the **Home** tab, select **Enter data**.
 
    The **Create Table** dialog box opens.
-
-### [Power BI service](#tab/powerbi-service)
-
-1. In the Power BI service, open the report in Editing view. Select **Create** from the left menu, and then select **Paste or manually enter data** from the main screen.
-
-   The **Create Table** dialog box opens.
-
----
 
 2. In the **Create Table** dialog box, enter the names of your pages in the column. Power BI uses an exact string match to set the drillthrough destination, so ensure that the values you entered exactly match your drillthrough page names.
 

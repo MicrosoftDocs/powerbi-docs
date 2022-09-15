@@ -94,7 +94,7 @@ These formatting options include:
 
 ## Set formatting for button text conditionally
 
-You can use conditional formatting to change the button text based on the selected value of a field. To do so, create a measure in Power BI Desktop that outputs the desired string based on the DAX function SELECTEDVALUE.
+In Power BI Desktop, you can use conditional formatting to change the button text based on the selected value of a field. To do so, create a measure that outputs the desired string based on the DAX function SELECTEDVALUE.
 
 Here's an example measure that outputs "See product details" if a single Product value is NOT selected; otherwise, it outputs "See details for [the selected Product]":
 
@@ -102,7 +102,7 @@ Here's an example measure that outputs "See product details" if a single Product
 String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0, "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
 ```
 
-After you've created this measure, follow these steps:
+After you've created this measure, follow these steps in Power BI Desktop:
 
 1. Select the **Conditional formatting** (**fx**) option for the button text.
 
@@ -160,7 +160,7 @@ Here are some scenarios where you might want the button drillthrough destination
 
 ### Disable the button until multiple conditions are met
 
-Let's look at the first case, where you want to keep the button disabled until additional conditions are met. You need to create a basic DAX measure in Power BI Desktop that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drillthrough destination page.
+Let's look at the first case, where you want to keep the button disabled until additional conditions are met. In Power BI Desktop, you need to create a basic DAX measure that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drillthrough destination page.
 
 Here’s an example DAX measure that requires a Store to be selected before the user can drill through on a Product to Store details page:
 
@@ -168,7 +168,7 @@ Here’s an example DAX measure that requires a Store to be selected before the 
 Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, “Store details”)
 ```
 
-After you've created the measure, follow these steps:
+After you've created the measure, follow these steps in Power BI Desktop:
 
 1. Select  **Conditional formatting** (**fx**) next to the **Destination** for the button action.
 
@@ -226,7 +226,7 @@ Here’s an example DAX measure that requires the user to select a Store before 
 Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, SELECTEDVALUE(‘Table'[Select a destination]))
 ```
 
-Then you select the DAX measure you created as the field value for the destination.
+In Power BI Desktop, you select the DAX measure you created as the field value for the destination.
 In this example, the user would need to select a Product, a Store, *and* a destination page before the drillthrough button is enabled:
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-product-store-destination.png" alt-text="Screenshot showing the product, store, and destination selected.":::
