@@ -1,6 +1,6 @@
 ---
-title: "Power BI implementation planning: Organization-level information protection planning"
-description: "Learn about getting started with information protection with organization-level planning activities."
+title: "Power BI implementation planning: Organization-level information protection"
+description: "Learn about getting started with information protection with organization-level planning activities for Power BI."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 09/15/2022
 ---
 
-# Power BI implementation planning: Organization-level information protection planning
+# Power BI implementation planning: Organization-level information protection
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
@@ -20,7 +20,7 @@ This article describes the initial assessment and preparatory activities for inf
 - **Center of Excellence, IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrator, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
-> Information protection and data loss protection (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
+> Information protection and data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
 
 ## Current state assessment
 
@@ -46,7 +46,7 @@ The above diagram depicts the following items:
 
 In the diagram, notice that items in the Power BI service, and Power BI Desktop files, are just some of many resources that allow assigning sensitivity labels. Sensitivity labels are defined centrally in Microsoft Purview Information Protection. Once defined, the same labels are used by all supported applications throughout the organization. It's not possible to define labels for use in only one application, such as Power BI. Therefore, your planning process needs to consider a broader set of usage scenarios to define labels that can be used in multiple contexts. Because information protection is intended to be used consistently across applications and services, it's critical to begin with assessing what sensitivity labels are currently in place.
 
-The activities for implementing sensitivity labels are described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md) article.
+The activities for implementing sensitivity labels are described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
 
 > [!TIP]
 > Sensitivity labels are the first building block towards implementing information protection. DLP occurs after information protection is set up.
@@ -140,4 +140,4 @@ Be aware that an initiative to introduce information protection is complementary
 
 ## Next steps
 
-In the [next article in this series](powerbi-implementation-planning-information-protection-for-power-bi-planning.md), learn about labeling and classification of data assets.
+In the [next article in this series](powerbi-implementation-planning-information-protection-for-power-bi.md), learn about labeling and classification of data assets for use with Power BI.

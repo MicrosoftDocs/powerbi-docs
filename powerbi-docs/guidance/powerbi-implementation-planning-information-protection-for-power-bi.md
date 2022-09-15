@@ -1,6 +1,6 @@
 ---
-title: "Power BI implementation planning: Information protection for Power BI planning"
-description: "Learn about labeling and classification of data assets."
+title: "Power BI implementation planning: Information protection for Power BI"
+description: "Learn about labeling and classification of data assets for use with Power BI."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 09/15/2022
 ---
 
-# Power BI implementation planning: Information protection for Power BI planning
+# Power BI implementation planning: Information protection for Power BI
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
@@ -20,7 +20,7 @@ This article describes the planning activities related to implementing informati
 - **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
-> Information protection and data loss protection (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
+> Information protection and data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
 
 Labeling and classification activities extend beyond Power BI and even data assets. The decisions discussed in this article apply to assets for the entire organization, including files and emails, and not just to Power BI. This article introduces topics that apply to labeling and classification in general, because making the right organizational decisions is critical for the success of data loss prevention in Power BI.
 
@@ -53,10 +53,10 @@ A label has the following purposes:
 
 ## Prerequisites for Power BI information protection
 
-By now, you should have completed the organization-level planning steps that are described in the [Organization-level information protection planning](powerbi-implementation-planning-organization-level-information-protection-planning.md) article. Before proceeding, you should have clarity on:
+By now, you should have completed the organization-level planning steps that are described in the [Organization-level information protection planning](powerbi-implementation-planning-organization-level-information-protection.md) article. Before proceeding, you should have clarity on:
 
-- **Current state:** The [current state](powerbi-implementation-planning-organization-level-information-protection-planning.md#current-state-assessment) of information protection in your organization. You should have an understanding whether sensitivity labels are already in use for Microsoft Office files. In this case, the scope of work to add Power BI is much smaller than if you're bringing information protection to the organization for the first time.
-- **Goals and requirements** : The [strategic goals](powerbi-implementation-planning-organization-level-information-protection-planning.md#goals-and-requirements) for implementing information protection in your organization. Understanding the goals and requirements will serve as a guide for your implementation efforts.
+- **Current state:** The [current state](powerbi-implementation-planning-organization-level-information-protection.md#current-state-assessment) of information protection in your organization. You should have an understanding whether sensitivity labels are already in use for Microsoft Office files. In this case, the scope of work to add Power BI is much smaller than if you're bringing information protection to the organization for the first time.
+- **Goals and requirements** : The [strategic goals](powerbi-implementation-planning-organization-level-information-protection.md#goals-and-requirements) for implementing information protection in your organization. Understanding the goals and requirements will serve as a guide for your implementation efforts.
 
 If information protection isn't in use by your organization, the remainder of this section provides information to help you collaborate with others to introduce information protection to your organization.
 
@@ -66,7 +66,7 @@ If information protection is actively in use within your organization, we recomm
 
 We recommend that you plan to enact a gradual rollout plan for implementing and testing information protection. The objective for the gradual rollout plan is to set yourself up to learn, adjust, and iterate as you go. The advantage is that fewer users are impacted during the early stages (when changes are more likely), until information protection is eventually rolled out to all users in the organization.
 
-Introducing information protection is a significant undertaking. As described in the [Organization-level information protection planning](powerbi-implementation-planning-organization-level-information-protection-planning.md#current-state-assessment) article, if your organization has already implemented information protection for Microsoft Office documents, many of these tasks will already be complete.
+Introducing information protection is a significant undertaking. As described in the [Organization-level information protection planning](powerbi-implementation-planning-organization-level-information-protection.md#current-state-assessment) article, if your organization has already implemented information protection for Microsoft Office documents, many of these tasks will already be complete.
 
 This section provides an overview of the phases that we recommend you include in your gradual rollout plan. It should give you a sense for what to expect. The remainder of this article describes other decision-making criteria for the key aspects that affect Power BI most directly.
 
@@ -143,11 +143,11 @@ Throughout this process, be sure to prioritize providing guidance, communication
 
 There are other steps after the initial rollout. You should have a primary team to monitor information protection activities and tune them over time. As labels are applied, you'll be able to assess their usefulness and identify areas for adjustments.
 
-There are many aspects to auditing information protection. For more information, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention.md) article.
+There are many aspects to auditing information protection. For more information, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md) article.
 
-The investments you make in setting up information protection can be used in DLP policies for Power BI, which are set up in the Microsoft Purview compliance portal. For more information, including a description of DLP capabilities, see the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning.md) article.
+The investments you make in setting up information protection can be used in DLP policies for Power BI, which are set up in the Microsoft Purview compliance portal. For more information, including a description of DLP capabilities, see the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
 
-Information protection can also be used to create policies in Microsoft Defender for Cloud Apps. For more information, including a description of capabilities that you may find helpful, see the [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi-planning.md) article.
+Information protection can also be used to create policies in Microsoft Defender for Cloud Apps. For more information, including a description of capabilities that you may find helpful, see the [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -179,10 +179,6 @@ A label structure includes:
 
 - **Labels:** The labels form a hierarchy. Each label indicates the level of sensitivity for the item, file, or data asset. We recommend that you've between three and seven labels. The labels should rarely change.
 - **Sub-labels:** The sub-labels indicate the variations in protection or scope within a specific label. By including them in different label policies, you can scope sub-labels to a certain set of users or to users involved with a specific project.
-
-The following screenshot shows four sensitivity labels and three sub-labels.
-
-:::image type="content" source="media/powerbi-implementation-planning-information-protection-for-power-bi-planning/information-protection-labels.png" alt-text="Screenshot shows four sensitivity labels and three sub-labels." border="false":::
 
 > [!TIP]
 > While sub-labels offer flexibility, they should be used in moderation only to satisfy critical requirements. Too many sub-labels are more difficult to manage. They can overwhelm users with too many options.
@@ -239,12 +235,12 @@ Here are some best practices for defining a label structure.
 
 A sensitivity label scope limits the use of a label. While you can't specify Power BI specifically, you can apply labels to various scopes. Possible scopes include:
 
-- Files and emails
+- Items
 - Groups and sites (such as a Teams channel or a SharePoint site)
 - Schematized data assets (supported sources that are registered in the [Purview data map](/azure/purview/concept-elastic-data-map))
 
 > [!IMPORTANT]
-> It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. Sensitivity labels are handled differently from DLP policies, which are described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning.md) article, in that some types of DLP policies can be defined specifically for Power BI. If you intend to use sensitivity label inheritance from data sources in Power BI, there are specific [requirements](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#requirements) for what the label scope needs to be.
+> It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. The files and emails scope is used for the Power BI service. Sensitivity labels are handled differently from DLP policies, which are described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article, in that some types of DLP policies can be defined specifically for Power BI. If you intend to use sensitivity label inheritance from data sources in Power BI, there are specific [requirements](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#requirements) for what the label scope needs to be.
 
 Events related to sensitivity labels are recorded in the [activity explorer](/microsoft-365/compliance/data-classification-activity-explorer-available-events). The events will be significantly richer when the scope is broader. You'll also be better prepared to protect data across a broader spectrum of applications and services.
 
@@ -672,4 +668,4 @@ The Power BI administrators and the security and compliance administrators will 
 
 ## Next steps
 
-In the [next article in this series](powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning.md), learn about planning for data loss prevention for Power BI.
+In the [next article in this series](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md), learn about data loss prevention for Power BI.

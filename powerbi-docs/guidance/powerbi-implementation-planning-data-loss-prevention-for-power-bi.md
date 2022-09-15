@@ -1,6 +1,6 @@
 ---
-title: "Power BI implementation planning: Data loss prevention for Power BI planning"
-description: "Learn about planning for data loss prevention for Power BI."
+title: "Power BI implementation planning: Data loss prevention for Power BI"
+description: "Learn about data loss prevention for Power BI."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 09/15/2022
 ---
 
-# Power BI implementation planning: Data loss prevention for Power BI planning
+# Power BI implementation planning: Data loss prevention for Power BI
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
@@ -22,7 +22,7 @@ This article describes the planning activities related to implementing data loss
 > [!IMPORTANT]
 > Data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
 
-We recommend that you follow a gradual, phased approach to rolling out DLP for Power BI. For a description of the types of rollout phases you should consider, see the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md) article.
+We recommend that you follow a gradual, phased approach to rolling out DLP for Power BI. For a description of the types of rollout phases you should consider, see the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
 
 ## Purpose of DLP
 
@@ -36,7 +36,7 @@ DLP allows you to:
   - Provide auditing information to security administrators.
 - Provide users with contextual notifications. This capability allows you to:
   - Help users make the right decisions during their normal workflow.
-  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi-planning.md#data-classification-and-protection-policy) without negatively impacting their productivity.
+  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi.md#data-classification-and-protection-policy) without negatively impacting their productivity.
 
 ## DLP services
 
@@ -57,29 +57,25 @@ DLP for Power BI is the focus of this article.
 
 [Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) is a tool with many capabilities. Some policies that can be set up in Microsoft Defender for Cloud Apps (with integration with Azure Active Directory) include DLP. These policies can block, log, or alert when certain user activities happen. For example, when a user attempts to download a report from the Power BI service that's been assigned a _Highly Restricted_ sensitivity label, the download action can be immediately blocked.
 
-The [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi-planning.md) article covers using Defender for Cloud Apps for monitoring the Power BI service. The remainder of this article focuses on DLP for Power BI.
+The [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article covers using Defender for Cloud Apps for monitoring the Power BI service. The remainder of this article focuses on DLP for Power BI.
 
 > [!IMPORTANT]
 > A DLP policy for Power BI that's configured in the Microsoft Purview compliance portal may be applied only for content that's stored in a Power BI Premium Gen2 workspace. However, policies that are set up in Defender for Cloud Apps don't have a similar Power BI Premium prerequisite. Be aware that the functionality, purpose, and available actions differ for the two toolsets. We recommend that you consider using them both for maximum effect.
 
 ## Prerequisites for DLP for Power BI
 
-By now, you should have completed the organization-level planning steps that are described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md) article. Before proceeding, you should have clarity on:
+By now, you should have completed the organization-level planning steps that are described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article. Before proceeding, you should have clarity on:
 
-- **Current state:** The [current state](powerbi-implementation-planning-organization-level-information-protection-planning.md#current-state-assessment) of DLP in your organization. You should have an understanding to what extent DLP is already in use, and who's responsible for managing it.
-- **Goals and requirements:** The [strategic goals](powerbi-implementation-planning-organization-level-information-protection-planning.md#goals-and-requirements) for implementing DLP in your organization. Understanding the goals and requirements will serve as a guide for your implementation efforts.
+- **Current state:** The [current state](powerbi-implementation-planning-organization-level-information-protection.md#current-state-assessment) of DLP in your organization. You should have an understanding to what extent DLP is already in use, and who's responsible for managing it.
+- **Goals and requirements:** The [strategic goals](powerbi-implementation-planning-organization-level-information-protection.md#goals-and-requirements) for implementing DLP in your organization. Understanding the goals and requirements will serve as a guide for your implementation efforts.
 
-Usually, you implement information protection (described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md) article) before you implement DLP. However, that isn't a prerequisite for using DLP for Power BI. If sensitivity labels are published, they can be used with DLP for Power BI. You can also use sensitive information types with DLP for Power BI. Both types are described in this article.
+Usually, you implement information protection (described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article) before you implement DLP. However, that isn't a prerequisite for using DLP for Power BI. If sensitivity labels are published, they can be used with DLP for Power BI. You can also use sensitive information types with DLP for Power BI. Both types are described in this article.
 
 ## Key decisions and actions
 
-The intention of a DLP policy is to set up an automated action, based on rules and conditions, on the content you intend to protect. You'll need to make some decisions about the rules and conditions that will support the [goals and requirements](powerbi-implementation-planning-organization-level-information-protection-planning.md#goals-and-requirements) you've identified.
+The intention of a DLP policy is to set up an automated action, based on rules and conditions, on the content you intend to protect. You'll need to make some decisions about the rules and conditions that will support the [goals and requirements](powerbi-implementation-planning-organization-level-information-protection.md#goals-and-requirements) you've identified.
 
-The following screenshot is from the Microsoft Purview compliance portal. It shows one of the configuration pages for a DLP policy. It's an example of one DLP policy that contains a rule for financial data, and another rule for credit card data. Both rules are based on [sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about).
-
-:::image type="content" source="media/powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning/data-loss-protection-advanced-rules.png" alt-text="Screenshot shows two DLP rules." border="false":::
-
-The advantage of defining separate rules within a single DLP policy (as shown above) is that you can enable customized alerts or user notifications.
+The advantage of defining separate rules within a single DLP policy is that you can enable customized alerts or user notifications.
 
 There's a hierarchical precedence to the list of DLP policies, as well as to DLP policy rules, to consider. The precedence will impact which policy gets invoked because it's encountered first.
 
@@ -97,7 +93,7 @@ A DLP policy for Power BI that's configured in the Microsoft Purview compliance 
 
 You can use sensitivity labels to classify content, ranging from less sensitive to more sensitive.
 
-When a DLP policy for Power BI is invoked, a _sensitivity label rule_ checks datasets (that are published to the Power BI service) for the presence of a certain sensitivity label. As described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md) article, a label can be assigned either by a user, or by an automated process (for example, an inherited label or a default label).
+When a DLP policy for Power BI is invoked, a _sensitivity label rule_ checks datasets (that are published to the Power BI service) for the presence of a certain sensitivity label. As described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article, a label can be assigned either by a user, or by an automated process (for example, an inherited label or a default label).
 
 Here are some examples of when you might create a DLP rule based on a sensitivity label.
 
@@ -118,7 +114,7 @@ Other considerations about user notifications and alerts will be described in th
 > [!NOTE]
 > DLP policies are typically automated. However, responsible user actions play a crucial role in protecting data.
 
-For more information, see the [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi-planning.md#data-classification-and-protection-policy)  article. It describes an internal governance policy that provides guidance about what users can and can't do with content that's been assigned to a certain sensitivity label.
+For more information, see the [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi.md#data-classification-and-protection-policy)  article. It describes an internal governance policy that provides guidance about what users can and can't do with content that's been assigned to a certain sensitivity label.
 
 #### Sensitive information types
 
@@ -171,7 +167,7 @@ When you've identified use cases for DLP with sensitivity labels and SITs, you s
 
 For DLP in Power BI, user notifications appear in the dataset settings. They also appear across the top of the dataset details page in the data hub, as shown in the following screenshot. The notification reads: _This data contains credit cards. That type of data is not permitted in Power BI per the Data Classification, Protection, and Usage policy._
 
-:::image type="content" source="media/powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning/data-loss-protection-user-notification.png" alt-text="Screenshot shows a DLP user notification across the top of the data hub page." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning/data-loss-prevention-user-notification.png" alt-text="Screenshot shows a DLP user notification across the top of the data hub page." border="false":::
 
 You can define one or more rules for each DLP policy. Each rule can optionally have a different policy tip that will be displayed to users.
 
@@ -218,7 +214,7 @@ Here are two examples of how alerts could be used.
 - **Rule 1:** The first rule detects credit card numbers. Alerting is enabled with a high severity. An email is generated too.
 - **Rule 2:** The second rule detects financial accounts. Alerting is enabled with a high severity.
 
-**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a dataset in the Power BI service. It doesn't generate a user notification. In this situation, you may not want to generate an alert because they only want to log the occurrence. If needed, they can obtain more information from the [activity explorer](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention.md#microsoft-purview-activity-explorer).
+**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a dataset in the Power BI service. It doesn't generate a user notification. In this situation, you may not want to generate an alert because they only want to log the occurrence. If needed, they can obtain more information from the [activity explorer](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md#microsoft-purview-activity-explorer).
 
 When an email alert is required, we recommend that you use a mail-enabled security group. For example, you might use a group named _Security and Privacy Admin Alerting_.
 
@@ -286,7 +282,7 @@ Include information about who to contact when users have questions or technical 
 FAQs and examples are especially helpful for user documentation.
 
 > [!TIP]
-> For more information, see the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md) article. It includes suggestions for creating a data classification and protection policy so that users understand what they can and can't do with sensitivity labels.
+> For more information, see the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article. It includes suggestions for creating a data classification and protection policy so that users understand what they can and can't do with sensitivity labels.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -319,7 +315,7 @@ After the decisions have been made and prerequisites have been completed, it's t
 DLP policies for Power BI are set up in the Microsoft Purview compliance portal (formerly called the Microsoft 365 compliance center) in the Microsoft 365 admin center.
 
 > [!TIP]
-> The process to set up DLP for Power BI in the Microsoft Purview compliance portal involves just one step, instead of two, to configure the policy. This process is different from when you set up information protection in the Microsoft Purview compliance portal (described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi-planning.md) article). In that case, there were two separate steps to configure the label and publish a label policy. In this case, there's just one step in the implementation process.
+> The process to set up DLP for Power BI in the Microsoft Purview compliance portal involves just one step, instead of two, to configure the policy. This process is different from when you set up information protection in the Microsoft Purview compliance portal (described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article). In that case, there were two separate steps to configure the label and publish a label policy. In this case, there's just one step in the implementation process.
 
 The following checklist includes a summarized list of the end-to-end implementation steps. Many of the steps have other details that were covered in previous sections of this article.
 
@@ -341,7 +337,7 @@ The following checklist includes a summarized list of the end-to-end implementat
 > [!TIP]
 > The checklist items above are summarized for planning purposes. For more details about these checklist items, see the previous sections of this article.
 
-For other steps to take beyond the initial rollout, see the [Defender for Cloud Apps with Power BI](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi-planning.md) article.
+For other steps to take beyond the initial rollout, see the [Defender for Cloud Apps with Power BI](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article.
 
 ## Ongoing monitoring
 
@@ -353,7 +349,7 @@ The Power BI administrators and the security and compliance administrators will 
 - **Security and compliance administrator:** The organization's security and compliance administrators will typically use Microsoft Purview reports, alerts, and audit logs.
 
 > [!WARNING]
-> Monitoring for DLP for Power BI policies doesn't occur in real time because it takes some time for DLP logs and alerts to be generated. If your goal is real-time enforcement, see the [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi-planning.md) article, which describes real-time controls with Defender for Cloud Apps.
+> Monitoring for DLP for Power BI policies doesn't occur in real time because it takes some time for DLP logs and alerts to be generated. If your goal is real-time enforcement, see the [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article, which describes real-time controls with Defender for Cloud Apps.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -365,8 +361,8 @@ The Power BI administrators and the security and compliance administrators will 
 > - **Create or validate your process for resolving alerts:** Ensure that your security and compliance administrators have a process in place to investigate and resolve DLP alerts when a policy match occurs.
 
 > [!TIP]
-> For more information about auditing, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention.md) article.
+> For more information about auditing, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md) article.
 
 ## Next steps
 
-In the [next article in this series](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi-planning.md), learn about using Defender for Cloud Apps with Power BI.
+In the [next article in this series](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md), learn about using Defender for Cloud Apps with Power BI.
