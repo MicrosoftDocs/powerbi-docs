@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/21/2022
+ms.date: 09/15/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -46,17 +46,13 @@ The following diagram illustrates the different data flows, based on storage mod
 
 Power BI imports the data from the original data sources into the dataset. Power BI report and dashboard queries submitted to the dataset return results from the imported tables and columns. You might consider such a dataset a point-in-time copy. Because Power BI copies the data, you must refresh the dataset to fetch changes from the underlying data sources.
 
-Because Power BI caches the data, Import mode dataset sizes can be substantial. Refer to the following table for maximum dataset sizes per capacity. Stay well below the maximum dataset sizes to avoid refresh issues that might occur if your datasets require more than the maximum available resources during a refresh operation.
+When a dataset is refreshed, it's either fully refreshed or partially refreshed. Partial refresh will take place in datasets that have tables with an [incremental refresh](incremental-refresh-overview.md) policy. In these datasets, only a subset of the table partitions are refreshed. In addition, advanced users can use the [XMLA endpoint](./../enterprise/service-premium-connect-tools.md) to refresh specific partitions in any dataset.
 
-| Capacity type | Maximum dataset size |
-| --- | --- |
-| Shared, A1, A2, or A3 | 1 GB |
-| A4 or P1 | 3 GB |
-| A5 or P2 | 6 GB |
-| A6 or P3 | 10 GB |
-| | |
+The amount of memory required to refresh a dataset depends on whether you're performing a full or partial refresh. During the refresh, a copy of the dataset is kept to handle queries to the dataset. This means that if you're performing a full refresh, you'll need twice the amount of memory the dataset requires.
 
-For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-what-is.md#large-datasets). On A6 or P3 capacities, datasets can be refreshed to up to 12 GB.
+We recommend that you plan your capacity usage to ensure that the extra memory needed for dataset refresh, is accounted for. Having enough memory prevents refresh issues that can occur if your datasets require more memory than available, during refresh operations. To find out how much memory is available for each dataset on a Premium capacity, refer to the [Limitations in Premium Gen2](./../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2) table.
+
+For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-what-is.md#large-datasets).
 
 #### Datasets in DirectQuery mode
 
