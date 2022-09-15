@@ -13,7 +13,7 @@ ms.date: 09/13/2022
 
 # DataViewUtils
 
-The `DataViewUtils` is a set of functions and classes hat simplify parsing the DataView object for Power BI visuals.
+The `DataViewUtils` is a set of functions and classes that simplify parsing the DataView object for Power BI visuals.
 
 ## Installation
 
