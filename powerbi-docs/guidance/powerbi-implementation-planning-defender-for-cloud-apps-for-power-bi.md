@@ -386,4 +386,4 @@ It's possible to provide your Power BI administrators with a [limited view](/pow
 
 ## Next steps
 
-In the [next article in this series](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md), learn about auditing for information protection and data loss prevention for Power BI.
+In the [next article in this series](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md), learn about auditing for information protection and data loss prevention for Power BI.

@@ -211,7 +211,7 @@
         - name: "Defender for Cloud Apps for Power BI"
           href: powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md
         - name: "Auditing of info protection and DLP"
-          href: powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention.md
+          href: powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi
   - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"

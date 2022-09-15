@@ -214,7 +214,7 @@ Here are two examples of how alerts could be used.
 - **Rule 1:** The first rule detects credit card numbers. Alerting is enabled with a high severity. An email is generated too.
 - **Rule 2:** The second rule detects financial accounts. Alerting is enabled with a high severity.
 
-**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a dataset in the Power BI service. It doesn't generate a user notification. In this situation, you may not want to generate an alert because they only want to log the occurrence. If needed, they can obtain more information from the [activity explorer](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md#microsoft-purview-activity-explorer).
+**Example 2:** You've defined a DLP policy that's invoked when the _Highly Restricted\Executive Committee and Board Members_ sensitivity label is assigned to a dataset in the Power BI service. It doesn't generate a user notification. In this situation, you may not want to generate an alert because they only want to log the occurrence. If needed, they can obtain more information from the [activity explorer](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md#microsoft-purview-activity-explorer).
 
 When an email alert is required, we recommend that you use a mail-enabled security group. For example, you might use a group named _Security and Privacy Admin Alerting_.
 
@@ -361,7 +361,7 @@ The Power BI administrators and the security and compliance administrators will 
 > - **Create or validate your process for resolving alerts:** Ensure that your security and compliance administrators have a process in place to investigate and resolve DLP alerts when a policy match occurs.
 
 > [!TIP]
-> For more information about auditing, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md) article.
+> For more information about auditing, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md) article.
 
 ## Next steps
 

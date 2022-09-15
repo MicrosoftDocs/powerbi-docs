@@ -143,7 +143,7 @@ Throughout this process, be sure to prioritize providing guidance, communication
 
 There are other steps after the initial rollout. You should have a primary team to monitor information protection activities and tune them over time. As labels are applied, you'll be able to assess their usefulness and identify areas for adjustments.
 
-There are many aspects to auditing information protection. For more information, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md) article.
+There are many aspects to auditing information protection. For more information, see the [Information protection and data loss prevention for Power BI auditing](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md) article.
 
 The investments you make in setting up information protection can be used in DLP policies for Power BI, which are set up in the Microsoft Purview compliance portal. For more information, including a description of DLP capabilities, see the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
 

@@ -101,7 +101,7 @@ When a dataset has been published to the Power BI service, if it's in a Premium 
 This type of DLP policy for Power BI allows security administrators to monitor and detect when unauthorized sensitive data is uploaded to the Power BI service. They can depend on alerts to act quickly. Policy tips are also used to guide content creators and owners on how to properly handle sensitive data. For more information about DLP for Power BI, see the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
 
 > [!TIP]
-> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) and the [Power BI activity log](/power-bi/admin/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see the [Auditing of information protection and data loss prevention](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md) article.
+> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) and the [Power BI activity log](/power-bi/admin/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see the [Auditing of information protection and data loss prevention](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md) article.
 
 ### Use data encryption
 
@@ -142,7 +142,7 @@ The remainder of the information protection and DLP content is organized into th
 - [Information protection for Power BI](powerbi-implementation-planning-information-protection-for-power-bi.md)
 - [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md)
 - [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md)
-- [Auditing of information protection and data loss prevention for Power BI](powerbi-implementationpowerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md-planning-defender-for-cloud-apps-for-power-bi.md)
+- [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md)
 
 ## Next steps
 
