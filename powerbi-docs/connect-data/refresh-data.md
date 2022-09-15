@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/14/2022
+ms.date: 09/15/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -50,7 +50,7 @@ When a dataset is refreshed, it's either fully refreshed or partially refreshed.
 
 The amount of memory required to refresh a dataset depends on whether you're performing a full or partial refresh. During the refresh, a copy of the dataset is kept to handle queries to the dataset. This means that if you're performing a full refresh, you'll need twice the amount of memory the dataset requires.
 
-Stay well below the maximum dataset required memory size. Having enough memory prevents refresh issues that can occur if your datasets require more memory than available, during refresh operations. To find out how much memory is available for each dataset on a Premium capacity, refer to the [Limitations in Premium Gen2](./../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2) table.
+We recommend that you plan your capacity usage to ensure that the extra memory needed for dataset refresh, is accounted for. Having enough memory prevents refresh issues that can occur if your datasets require more memory than available, during refresh operations. To find out how much memory is available for each dataset on a Premium capacity, refer to the [Limitations in Premium Gen2](./../enterprise/service-premium-gen2-what-is.md#limitations-in-premium-gen2) table.
 
 For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-what-is.md#large-datasets).
 
