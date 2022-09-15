@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/02/2022
+ms.date: 09/15/2022
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
@@ -117,7 +117,7 @@ To set up a single-page navigation button:
 
 ## Set the page navigation destination conditionally
 
-You can use conditional formatting to set the navigation destination, based on the output of a measure. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection:
+You can use conditional formatting to set the navigation destination, based on the output of a measure you create in Power BI Desktop. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection:
 
 :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
