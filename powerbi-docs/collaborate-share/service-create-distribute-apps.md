@@ -96,7 +96,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     **Allow users to build content with the datasets in this app**: This option lets your app consumers create their own reports and dashboards based on the app audience datasets.
     
-    Screenshot of Advanced settings in Manage audience access pane.
+    :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
     > The advanced settings apply to all the audiences, but not to members of the workspace. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
@@ -210,10 +210,13 @@ Things to keep in mind about publishing apps:
 
 * AppSource is an external service that only has public-facing service apps. For organizational apps, users can just go to Apps marketplace to find them. Template apps are also available from Apps marketplace.
 * You can create up to ten audience groups per app.
-* You can have at most 1000 users or groups in the access list for the app. However, you can give more than 1000 users access to the app. To do so, use one or more user groups that contain all the desired users.
+* We have temporarily relaxed the access list limit from 100 to 1000 users or groups per audience group for the app. However, please note that this is temporary, and we might change the limit in the near future. We still recommend you use one or more user groups that contain all the desired users.
 * If the user you added to the app access list already has access to the app through the workspace, they're not shown in the access list for the app.  
 * When you select a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
 * The support site URL is shown in the item information card.
+* By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
+* As of now we have disabled “Save a copy” feature. We are working on providing a better offering. 
+* Currently, Workspace Contributors can add/delete a content in the app, but they cannot change the visibility of the content. As a Workaround, Workspace Admins/members can update the visibility of the content added. This is a temporary limitation, and we will soon allow contributors to change the visibility of the content in the Audience tab. 
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps
