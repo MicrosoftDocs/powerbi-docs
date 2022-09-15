@@ -69,7 +69,6 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 > * Datasets in import mode and composite datasets that combine import mode and DirectQuery mode don't require a separate tile refresh, because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh. Datasets that are updated based on the XMLA endpoint will only clear the cached tile data (invalidate cache). The tile caches aren't refreshed until each user accesses the dashboard. For import models, you can find the refresh schedule in the "Scheduled refresh" section of the **Datasets** tab. For composite datasets, the  "Scheduled refresh" section is located in the **Optimize Performance** section. 
 > * Power BI does not support cross-border live connections to Azure Analysis Services (AAS) in a sovereign cloud.
 
-
 #### Push datasets
 
 Push datasets don't contain a formal definition of a data source, so they don't require you to perform a data refresh in Power BI. You refresh them by pushing your data into the dataset through an external service or process, such as Azure Stream Analytics. This is a common approach for real-time analytics with Power BI. Power BI still performs cache refreshes for any tiles used on top of a push dataset. For a detailed walkthrough, see [Tutorial: Stream Analytics and Power BI: A real-time analytics dashboard for streaming data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
@@ -84,7 +83,6 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 | DirectQuery | Not applicable | Yes, for connected datasets | If enabled on Premium capacity | Automatically and on-demand | No |
 | LiveConnect | Not applicable | Yes, for connected datasets | If enabled on Premium capacity | Automatically and on-demand | Yes |
 | Push | Not applicable | Not applicable | Not practical | Automatically and on-demand | No |
-| | | | | | |
 
 Another way to consider the different refresh types is what they impact and where you can apply them. Changes in data source table structure, or schema, such as a new, renamed, or removed column can only be applied in Power BI Desktop, and in the Power BI service they can cause the refresh to fail. For a quick reference on what they impact, refer to the following table.
 
@@ -99,7 +97,7 @@ Another way to consider the different refresh types is what they impact and wher
 
  These refresh types can not always be applied independently, and where you can apply them is different in Power BI Desktop and the Power BI service. For a quick reference, refer to the following table.
  
-|  | Refresh of report visuals | Data refresh | Schema refresh
+|<br>  | Refresh of report visuals | Data refresh | Schema refresh
 |---------|----------|---------|--------- 
  | In **Power BI Desktop**| <ul> <li>**View** ribbon > **Performance Analyzer** button > **Refresh visuals** <li> Creating and changing visuals causing a DAX query to run <li>When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) <li> Opening the PBIX file </ul> | Not available independently from other refresh types | Not available independently from other refresh types
  | In the **Power BI service** | <ul><li>When the browser loads or reloads the report	<li> Clicking the **Refresh Visuals** top right menu bar button <li> Clicking the **Refresh** button in edit mode <li> When [Page Refresh](../create-reports/desktop-automatic-page-refresh.md) is turned on (DirectQuery only) | <ul> <li> Scheduled refresh <li>	Refresh now <li> Refresh a Power BI dataset from Power Automate <li> Processing the table from SQL Server Management Studio (Premium) </ul> | Not available
