@@ -127,7 +127,7 @@ The goal for the next phase is to obtain feedback from a small group of key user
 To this end, you should publish (or republish) the label policy to a small subset of users who are willing to provide feedback.
 
 > [!TIP]
-> Be sure to factor sufficient time into your project plan. For labels and label policy settings, the product documentation recommends [allowing 24 hours](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide#when-to-expect-new-labels-and-changes-to-take-effect) for the changes to take effect. This time is required to ensure all changes propagate through to the related services.
+> Be sure to factor sufficient time into your project plan. For labels and label policy settings, the product documentation recommends [allowing 24 hours](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide&preserve-view=true#when-to-expect-new-labels-and-changes-to-take-effect) for the changes to take effect. This time is required to ensure all changes propagate through to the related services.
 
 ### Phase 8: Release iteratively
 
@@ -135,7 +135,7 @@ The implementation phase is usually an iterative process.
 
 Often, the initial objective is to get to a state where all Power BI content has a sensitivity label assigned. To achieve this objective, you might introduce a mandatory label policy or a default label policy. You might also use the [information protection admin APIs](/power-bi/enterprise/service-security-sensitivity-label-inheritance-set-remove-api) to programmatically set or remove sensitivity labels.
 
-You might also gradually include more groups of users until the entire organization is included. This process involves republishing each [label policy](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide#publish-sensitivity-labels-by-creating-a-label-policy) to increasingly larger groups of users.
+You might also gradually include more groups of users until the entire organization is included. This process involves republishing each [label policy](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide&preserve-view=true#publish-sensitivity-labels-by-creating-a-label-policy) to increasingly larger groups of users.
 
 Throughout this process, be sure to prioritize providing guidance, communications, and training to your users so they'll understand the process and what's expected of them.
 
@@ -213,7 +213,7 @@ The above screenshot also includes three sub-labels beneath the _Highly Restrict
 > [!IMPORTANT]
 > Assigning a label or a sub-label doesn't directly affect access to Power BI content in the Power BI service. Instead, the label provides a useful category that provides information to guide user behavior. Data loss prevention policies can also be based on the assigned label. However, nothing changes for how access to Power BI content is managed, except when a file is encrypted. For more information, see [Use of encryption protection](#use-of-encryption-protection).
 
-Be deliberate with the labels you create because it's challenging to [remove or delete a label](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide#removing-and-deleting-labels) once you've progressed beyond the initial testing phase. Because sub-labels can (optionally) be used for a particular set of users, they can change more often than labels.
+Be deliberate with the labels you create because it's challenging to [remove or delete a label](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide&preserve-view=true#removing-and-deleting-labels) once you've progressed beyond the initial testing phase. Because sub-labels can (optionally) be used for a particular set of users, they can change more often than labels.
 
 Here are some best practices for defining a label structure.
 
@@ -276,7 +276,7 @@ Encryption is a way to cryptographically encode information. Encryption has seve
 - Encryption remains with a protected file, even when the file is sent outside the organization or is renamed.
 - The encryption setting is obtained from the original labeled content. Consider a report in the Power BI service has a sensitivity label of _Highly Restricted_. If it's exported to a [supported export path](/power-bi/enterprise/service-security-sensitivity-label-overview#supported-export-paths), the label remains intact, and encryption is applied on the exported file.
 
-The Azure Rights Management Service (Azure RMS) is used for file protection with encryption. There are some important [prerequisites](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#important-prerequisites) that need to be met in order to use Azure RMS encryption.
+The Azure Rights Management Service (Azure RMS) is used for file protection with encryption. There are some important [prerequisites](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true#important-prerequisites) that need to be met in order to use Azure RMS encryption.
 
 > [!IMPORTANT]
 > There's a limitation to consider: An offline user (without an internet connection) can't open an encrypted Power BI Desktop file (or other type of Azure RMS-protected file). Azure RMS synchronously verifies that a user is authorized to open, decrypt, and view the file contents.
@@ -293,7 +293,7 @@ Encrypted labels are handled differently depending on where the user is working.
 To open a protected Power BI Desktop file, or an exported file, a user must meet the following criteria:
 
 - **Internet connectivity:** The user must be connected to the internet. An active internet connection is required to communicate with Azure RMS.
-- **RMS permissions:** The user must have [RMS permissions](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#assign-permissions-to-specific-users-or-groups), which are defined within the label (rather than within the label policy). RMS permissions allow authorized users to decrypt, open, and view supported file formats.
+- **RMS permissions:** The user must have [RMS permissions](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true#assign-permissions-to-specific-users-or-groups), which are defined within the label (rather than within the label policy). RMS permissions allow authorized users to decrypt, open, and view supported file formats.
 - **Allowed user:** Users or groups must be specified in the [label policy](/microsoft-365/compliance/create-sensitivity-labels). Typically, assigning authorized users is only required for content creators and owners so they can apply labels. However, when using encryption protection there's [another requirement](/power-bi/enterprise/service-security-sensitivity-label-overview#power-bi-desktop). Each user that needs to open a protected file needs to be specified in the label policy. This requirement means that [information protection licensing](#licensing-requirements) may be required for more users.
 
 > [!TIP]
@@ -368,7 +368,7 @@ We recommend that you keep the authorized users and groups as simple as possible
 We recommend that you assign groups instead of individuals whenever possible. The use of groups simplifies management of the policy and reduces how often it needs to be republished,
 
 > [!WARNING]
-> The authorized users and groups for a label are different from the users assigned to Azure RMS for a protected (encrypted) label. If a user is having issues opening an encrypted file, investigate the encryption [permissions for specific users and groups](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#assign-permissions-to-specific-users-or-groups) (which are set up within the label configuration, rather than within the label policy). In most situations, we recommend that you keep the same users for both. This consistency will avoid confusion and reduce support tickets.
+> The authorized users and groups for a label are different from the users assigned to Azure RMS for a protected (encrypted) label. If a user is having issues opening an encrypted file, investigate the encryption [permissions for specific users and groups](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide&preserve-view=true#assign-permissions-to-specific-users-or-groups) (which are set up within the label configuration, rather than within the label policy). In most situations, we recommend that you keep the same users for both. This consistency will avoid confusion and reduce support tickets.
 
 The authorized users and groups are set in the Microsoft Purview compliance portal when the label policy is published.
 

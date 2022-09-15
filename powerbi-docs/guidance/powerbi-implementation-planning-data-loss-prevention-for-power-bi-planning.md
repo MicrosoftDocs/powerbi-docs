@@ -36,7 +36,7 @@ DLP allows you to:
   - Provide auditing information to security administrators.
 - Provide users with contextual notifications. This capability allows you to:
   - Help users make the right decisions during their normal workflow.
-  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi-planning.mddata-classification-and-protection-policy) without negatively impacting their productivity.
+  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi-planning.md#data-classification-and-protection-policy) without negatively impacting their productivity.
 
 ## DLP services
 

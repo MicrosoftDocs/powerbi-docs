@@ -87,7 +87,7 @@ Access policies and session policies allow you to:
   - Enable analytical use cases that involve sensitive data, in a way that can be audited.
 - **Provide users with contextual notifications:** This capability allows you to:
   - Help users make the right decisions during their normal workflow.
-  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi-planning.mddata-classification-and-protection-policy) without impacting their productivity.
+  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi-planning.md#data-classification-and-protection-policy) without impacting their productivity.
 
 To provide real-time controls, access policies and session policies work with Azure AD, relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
 
