@@ -40,6 +40,9 @@ Usage metrics for content creators will expose display names and email addresses
 
 Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you do not wish to gather this information for all users, you can disable the feature for specified security groups or for an entire organization. Account information for the excluded users will then show in the report as *Unnamed*.
 
+## Azure Log Analytics connections for workspace administrators
+Power BI integration with [Azure Log Analytics](powerbi-docs/transform-model/log-analytics/desktop-log-analytics-overview.md) enables [Power BI administrators](https://docs.microsoft.com/en-us/training/modules/power-bi-admin-intro/4-administrator) and Premium Workspace owners to connect their Premium Workspaces to Azure Log Analytics to monitor the connected workspaces. The Power BI administrators can enable this feature from the **Admin Portal > Tenant settings > [Audit and usage settings](powerbi-docs/admin/service-admin-portal-audit-usage.md)**. When enabled, the administrators and Premium Workspace owners can [configure **Azure Log Analytics for Power BI**](powerbi-docs/transform-model/log-analytics/desktop-log-analytics-configure.md).
+
 ## Next steps
 
 * [About tenant settings](service-admin-portal-about-tenant-settings.md)
