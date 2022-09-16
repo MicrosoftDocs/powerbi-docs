@@ -38,7 +38,7 @@ To download a report as a .pbix file, follow these steps:
 
 3. A dialog will be shown that allows you to choose what type of download you prefer. You can choose between downloading the report including the data or the report with a live connection to the data. See [Modes](#download-modes) for more information. This distinction is important as not all modes are available in all scenarios. If a mode is not available it will be shown as disabled and a tooltip is provided to explain why the mode is not available. Please pick the mode you prefer and select **Download** to start the download process.
 
-:::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-download-options.png" alt-text="A screenshot of the dialog that provides the choice to download the report including the data or the report with a live connection to the data.":::
+:::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-download-options.png" alt-text="A screenshot of the dialog that provides the choice to download the report including the data or the report with a live connection to the data.":::
 
 4. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
 
@@ -52,7 +52,7 @@ For downloading a report .pbix file, two **modes** are available:
 
 Note that not all modes are available in all scenarios. If a mode is not available to you, a tooltip is provided that explains why. For example, here's the dialog that will be shown if you download a report that is based on a dataset that is configured for incremental refresh:
 
-:::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-download-options-first-disabled.png" alt-text="A screenshot of the dialog for reports that are based on a dataset that is configured for incremental refresh. The first option is disabled and a tooltip is shown explaining that option is not available because the dataset is configured for incremental refresh.":::
+:::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-download-options-first-disabled.png" alt-text="A screenshot of the dialog for reports that are based on a dataset that is configured for incremental refresh. The first option is disabled and a tooltip is shown explaining that option is not available because the dataset is configured for incremental refresh.":::
 
 Please see the [Limitations](#limitations) section for more details on what mode is available in what scenario.
 
@@ -66,11 +66,11 @@ To download a dataset as a .pbix file, follow these steps:
 
 1. Find the dataset you want to export and select the **More options** button:
 
-    :::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-dataset-more-options.png" alt-text="A screenshot of the Power BI workspace content view with 'More options' button highlighted on a dataset.":::
+    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options.png" alt-text="A screenshot of the Power BI workspace content view with 'More options' button highlighted on a dataset.":::
 
 1. In the menu, select **Download this file**, if it's available:
 
-    :::image type="content" source="media/service-export-to-pbix/--export-to-pbix-dataset-more-options-download-pbix.png" alt-text="A screenshot of the Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
+    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options-download-pbix.png" alt-text="A screenshot of the Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
 
     If this option isn't shown, you are likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
