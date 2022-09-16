@@ -36,7 +36,7 @@ To download a report as a .pbix file, follow these steps:
 
     If this option isn't shown or is disabled, you're likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
-3. A dialog will be shown that allows you to choose what type of download you prefer. You can choose between downloading the report including the data or the report with a live connection to the data. See [Modes](#download-modes) for more information. This distinction is important as not all modes are available in all scenarios. If a mode is not available it will be shown as disabled and a tooltip is provided to explain why the mode is not available. Please pick the mode you prefer and select **Download** to start the download process.
+3. A dialog will be shown that allows you to choose what type of download you prefer. You can choose between downloading the report including the data or the report with a live connection to the data. See [Modes](#download-modes) for more information. Please pick the mode you prefer and select **Download** to start the download process.
 
 :::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-download-options.png" alt-text="A screenshot of the dialog that provides the choice to download the report including the data or the report with a live connection to the data.":::
 
