@@ -66,11 +66,11 @@ To download a dataset as a .pbix file, follow these steps:
 
 1. Find the dataset you want to export and select the **More options** button:
 
-    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options.png" alt-text="A screenshot of the Power BI workspace content view with 'More options' button highlighted on a dataset.":::
+    :::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-dataset-more-options.png" alt-text="A screenshot of the Power BI workspace content view with 'More options' button highlighted on a dataset.":::
 
 1. In the menu, select **Download this file**, if it's available:
 
-    :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options-download-pbix.png" alt-text="A screenshot of the Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
+    :::image type="content" source="media/service-export-to-pbix/--export-to-pbix-dataset-more-options-download-pbix.png" alt-text="A screenshot of the Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
 
     If this option isn't shown, you are likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
