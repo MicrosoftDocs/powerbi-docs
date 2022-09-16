@@ -235,12 +235,12 @@ Here are some best practices for defining a label structure.
 
 A sensitivity label scope limits the use of a label. While you can't specify Power BI specifically, you can apply labels to various scopes. Possible scopes include:
 
-- Items
+- Items (such as items published to the Power BI service, and files and emails)
 - Groups and sites (such as a Teams channel or a SharePoint site)
 - Schematized data assets (supported sources that are registered in the [Purview data map](/azure/purview/concept-elastic-data-map))
 
 > [!IMPORTANT]
-> It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. The files and emails scope is used for the Power BI service. Sensitivity labels are handled differently from DLP policies, which are described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article, in that some types of DLP policies can be defined specifically for Power BI. If you intend to use sensitivity label inheritance from data sources in Power BI, there are specific [requirements](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#requirements) for what the label scope needs to be.
+> It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. The _items_ scope is used for the Power BI service. Sensitivity labels are handled differently from DLP policies, which are described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article, in that some types of DLP policies can be defined specifically for Power BI. If you intend to use sensitivity label inheritance from data sources in Power BI, there are specific [requirements](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#requirements) for what the label scope needs to be.
 
 Events related to sensitivity labels are recorded in the [activity explorer](/microsoft-365/compliance/data-classification-activity-explorer-available-events). The events will be significantly richer when the scope is broader. You'll also be better prepared to protect data across a broader spectrum of applications and services.
 
@@ -382,7 +382,7 @@ The authorized users and groups are set in the Microsoft Purview compliance port
 
 When creating a label policy, you can choose a default label. For example, the _General Internal Use_ label could be set as the default label. This setting will affect new Power BI items created in either Power BI Desktop or the Power BI service.
 
-You can set up the default label in the label policy specifically for Power BI content, which is separate from other files and email. Most information protection decisions and settings apply more broadly. However, the default label setting (and the mandatory label setting that's described next) applies only to Power BI.
+You can set up the default label in the label policy specifically for Power BI content, which is separate from other items. Most information protection decisions and settings apply more broadly. However, the default label setting (and the mandatory label setting that's described next) applies only to Power BI.
 
 > [!TIP]
 > While you can set different default labels (for Power BI and non-Power BI content), consider whether that's the best option for users.
