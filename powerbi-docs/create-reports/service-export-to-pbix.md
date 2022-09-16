@@ -36,9 +36,25 @@ To download a report as a .pbix file, follow these steps:
 
     If this option isn't shown or is disabled, you're likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
-3. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
+3. A dialog will be shown that allows you to choose what type of download you prefer. You can choose between downloading the report including the data or the report with a live connection to the data. See [Modes](#download-modes) for more information. This distinction is important as not all modes are available in all scenarios. If a mode is not available it will be shown as disabled and a tooltip is provided to explain why the mode is not available. Please pick the mode you prefer and select **Download** to start the download process.
 
-4. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
+:::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-download-options.png" alt-text="A screenshot of the dialog that provides the choice to download the report including the data or the report with a live connection to the data.":::
+
+4. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
+
+5. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
+
+### Download modes
+For downloading a report .pbix file, two **modes** are available:
+
+- **report and data**. This mode is shown in the dialog as: *a copy of the report and data*. Choosing this mode will result in a .pbix being downloaded that includes both the report you are downloading as well as the data on which the report is based.
+- **live connected report**. This option is shown in the dialog as: *a copy of the report with a live connection to the data online*. Choosing this mode will result in a .pbix being download that contains the report you are downloading, but no data. Instead, the .pbix will have a live connection to the dataset in the Power BI service. This is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a dataset that is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
+
+Note that not all modes are available in all scenarios. If a mode is not available to you, a tooltip is provided that explains why. For example, here's the dialog that will be shown if you download a report that is based on a dataset that is configured for incremental refresh:
+
+:::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-download-options-first-disabled.png" alt-text="A screenshot of the dialog for reports that are based on a dataset that is configured for incremental refresh. The first option is disabled and a tooltip is shown explaining that option is not available because the dataset is configured for incremental refresh.":::
+
+Please see the [Limitations](#limitations) section for more details on what mode is available in what scenario.
 
 ## Download a .pbix file from a dataset
 
@@ -85,13 +101,14 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-power-bi-files) from the Power BI samples article.
-* Usage metric reports can't be downloaded to a .pbix file.
+* Usage metric reports can only be downloadeded in [live connected report mode](#download-modes).
 * You can only download the original report. You can't download a copy of a report.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.
-* You can't download reports created in the Power BI service that are based on a single dataset that is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
-* If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download the report if the dataset is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
+* Reports created in the Power BI service that are based on a single dataset that is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can only be downloaded in [live connected report mode](#download-modes).
+* If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can download the report in [live connected report mode](#download-modes) only, if the dataset is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](deployment-pipelines-process.md#considerations-and-limitations).
-* Downloading a .pbix file that is larger than 1 GB isn't supported.
+* .pbix file that are larger than 1 GB can only be downloaded in [live connected report mode](#download-modes).
+* Reports created in the Power BI service that are based on a dataset in **My Workspace** cannot be downloaded in [live connected report mode](#download-modes).
 
 ### Limitations when downloading a dataset .pbix file
 
