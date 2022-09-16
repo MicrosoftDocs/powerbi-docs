@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.custom: contperf-fy21q3
 ms.date: 09/14/2022
 
+
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/30/2022
+ms.date: 09/12/2022
 ms.custom: ''
 LocalizationGroup: Administration
 ---
@@ -83,7 +83,9 @@ You can validate that the role you defined is working correctly in the Power BI 
 
 ![Test as role](media/service-admin-rls/rls-test-role.png)
 
-You'll see reports that are available for this role. Dashboards aren't shown in this view. In the page header, the role being applied is shown.
+You'll be redirected to the report that was published from Power BI Desktop with this dataset, if it exists. Dashboards are not available for testing using the  **Test as role** option.
+
+In the page header, the role being applied is shown.
 
 ![Screenshot of Now viewing as Eastern US.](media/service-admin-rls/rls-test-role2.png)
 
