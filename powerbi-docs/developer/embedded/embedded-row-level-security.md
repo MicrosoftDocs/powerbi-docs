@@ -240,7 +240,7 @@ When deciding on filtering your data in a report, you can use **row-level securi
 * Configuring roles at the data source level (Analysis Services live connection only).
 * Programmatically with an [Embed Token](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
-[JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
+[JavaScript filters](/power-apps/developer/model-driven-apps/clientapi/reference/controls/addcustomfilter) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
 ## Token-based Identity with Azure SQL Database
 
@@ -250,7 +250,7 @@ Customers that hold their data in **Azure SQL Database** can now enjoy a new cap
 
 When you're generating the embed token, you can specify the effective identity of a user in Azure SQL. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
 
-It can be used to manage each user's view in Azure SQL or to sign in to Azure SQL as a specific customer in a multi-tenant DB. It can also apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
+It can be used to manage each user's view in Azure SQL or to sign in to Azure SQL as a specific customer in a multitenant DB. It can also apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
 
 Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
 
@@ -332,6 +332,7 @@ You can't set this permission using the admin portal. This permission is only se
 * While the Power BI service doesn't apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it applies to the data.
 * Analysis Services live connections are supported for on-premises servers.
 * Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done using CustomData.
+* Using RLS with datasets that include a DirectQuery connection to an Azure Analysis Services model isn't currently supported.
 * If the underlying dataset doesn't require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role, otherwise role assignment doesn't occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others items, the list contains a single identity.

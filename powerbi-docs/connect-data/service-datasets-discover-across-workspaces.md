@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Create reports based on datasets from different workspaces
 
-Learn how you can create reports in your own workspaces based on datasets in other workspaces. To build a report on top of an existing dataset, you can start from Power BI Desktop or from the Power BI service, in your My Workspace or in a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+Learn how you can create reports in your own workspaces based on datasets in other workspaces. To build a report on top of an existing dataset, you can start from Power BI Desktop or from the Power BI service, in your My Workspace or in [another workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 - In the Power BI service: **Create** > **Pick a published dataset**.
 - In Power BI Desktop: from the **Home** ribbon, select **Get data** > **Power BI datasets**.
@@ -27,8 +27,8 @@ You notice the first one is labeled **Promoted**. We'll get to that in [Find an 
 
 The datasets you see in this list meet at least one of the following conditions:
 
-- The dataset is in one of the new workspace experience workspaces, and you're a member of that workspace. See [Considerations and limitations](service-datasets-across-workspaces.md#considerations-and-limitations).
-- You have Build permission for the dataset, which is in a new workspace experience workspace.
+- The dataset is in a workspaces that you're a member of. See [Considerations and limitations](service-datasets-across-workspaces.md#considerations-and-limitations).
+- You have Build permission for the dataset.
 - The dataset is in your My Workspace.
 
 > [!NOTE]

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/18/2022
+ms.date: 08/18/2022
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,20 @@ ms.date: 07/18/2022
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## August 2022
+	
+Version 15.7.1799.16, released August 18, 2022
+
+### Features
+
+- Added new telemetry endpoints.
+- Updated versions of some utilized open-source software projects.
+
+### Bug fixes 
+	
+- Fixed several accessibility issues across the application.
+- Fixed issue where parameters could get duplicated.
 
 ## July 2022
 	

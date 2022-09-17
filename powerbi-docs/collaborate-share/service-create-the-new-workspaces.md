@@ -1,25 +1,23 @@
 ---
-title: Create the new workspaces - Power BI
-description: "Learn how to create the new workspaces: collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization."
+title: Create a workspace - Power BI
+description: "Learn how to create a workspace: a collection of dashboards, reports, and paginated reports built to deliver key metrics for your organization."
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/01/2021
+ms.date: 08/10/2022
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
-# Create the new workspaces in Power BI
+# Create a workspace in Power BI
 
-This article explains how to create one of the *new workspaces* instead of a *classic* workspace. Both kinds of workspaces are places to collaborate with colleagues. In them, you create collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. For more background, see the [new workspaces](service-new-workspaces.md) article.
+This article explains how to create *workspaces*, spaces to collaborate with colleagues. In them, you create collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
 
-:::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspaces.png" alt-text="Screenshot of one of the new workspaces in Power B I.":::
+:::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspaces.png" alt-text="Screenshot of a workspace in Power B I.":::
 
-Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
-
-## Create one of the new workspaces
+## Create a workspace
 
 1. Select **Workspaces** > **Create workspace**.
    
@@ -93,11 +91,19 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-1. Select **SharePoint - Team Sites**.
+    Power BI should automatically detect the workspace OneDrive, so it apears as **OneDrive - WORKSPACE_NAME". It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
+
+1. Select the workspace OneDrive, for example, **OneDrive - Sales and Marketing**.
+
+
+
+1. Navigate to the folder containing your Power BI files. Select the file, then select **Connect**.
+
+1. If Power BI doesn't automatically detect the workspace OneDrive, on the **Get data** page, select **SharePoint - Team Sites**.
 
     ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/workspace-get-data-sharepoint-team-sites.png)
 
-1. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
+2. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
 
     :::image type="content" source="media/service-create-the-new-workspaces/workspace-sharepoint-site-url.png" alt-text="Screenshot of Type the URL of the shared library you created earlier, or select Connect.":::
 
@@ -107,9 +113,9 @@ After you've configured the OneDrive location, you get to it in the same way you
 
 ### Allow contributors to update the app
 
-You can create and publish *apps* from the new workspace experiences. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from the new workspaces](service-create-distribute-apps.md).
+You can create and publish *apps* from a workspace. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from workspaces](service-create-distribute-apps.md).
 
-By default, only workspace Admins and Members can publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in the new workspaces](service-roles-new-workspaces.md).
+By default, only workspace Admins and Members can publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in workspaces](service-roles-new-workspaces.md).
 
 1. Access the **Allow contributors to update the app** setting in one of two ways:
 
@@ -147,11 +153,10 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
 Now that you've created the workspace, you'll want to add other users to *roles* in the workspace, so you can collaborate with them. See these articles for more information:
 
-- [Give users access to the new workspaces](service-give-access-new-workspaces.md)
-- [Roles in the new workspaces in Power BI](service-roles-new-workspaces.md)
+- [Give users access to a workspace](service-give-access-new-workspaces.md)
+- [Roles in workspaces in Power BI](service-roles-new-workspaces.md)
 
 ## Next steps
-* Read about [the new workspace experience in Power BI](service-new-workspaces.md)
-* [Create classic workspaces](service-create-workspaces.md)
-* [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md)
+* Read about [workspaces in Power BI](service-new-workspaces.md)
+* [Publish an app from a workspace in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

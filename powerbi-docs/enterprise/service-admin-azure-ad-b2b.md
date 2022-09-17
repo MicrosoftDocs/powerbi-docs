@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/29/2022
+ms.date: 09/08/2022
 LocalizationGroup: Administration
 ---
 
@@ -27,7 +27,7 @@ Make sure you enable the [Invite external users to your organization](../admin/s
 The option to [allow external guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) lets you give guest users the ability to see and create content in workspaces, including browsing your organization's Power BI. The guest user can only be subscribed to content in workspaces that are backed by a Premium capacity. 
 
 > [!NOTE]
-> The [Share content with external users](../admin/service-admin-portal-export-sharing.md) setting controls whether Power BI allows inviting external users to your organization. After an external user accepts the invite, they become an Azure AD B2B guest user in your organization. They appear in people pickers throughout the Power BI experience. If the setting is disabled, existing guest users in your organization continue to have access to any items they already had access to and continue to be listed in people picker experiences. Additionally, if guests are added through the [planned invite](#planned-invites) approach they will also appear in people pickers. To prevent guest users from accessing Power BI, use an Azure AD conditional access policy.
+> The [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md) setting controls whether Power BI allows inviting external users to your organization. After an external user accepts the invite, they become an Azure AD B2B guest user in your organization. They appear in people pickers throughout the Power BI experience. If the setting is disabled, existing guest users in your organization continue to have access to any items they already had access to and continue to be listed in people picker experiences. Additionally, if guests are added through the [planned invite](#planned-invites) approach they will also appear in people pickers. To prevent guest users from accessing Power BI, use an Azure AD conditional access policy.
 
 ## Who can you invite?
 
@@ -42,6 +42,7 @@ Guest users only require invitations the first time you invite them to your orga
 To use ad hoc invites, use the following capabilities:
 
 * Report and Dashboard sharing
+* Report and Dashboard subscriptions
 * App access list
 
 Ad hoc invites aren't supported in the workspace access list. Use the [planned invites approach](#planned-invites) to add these users to your organization. After the external user becomes a guest in your organization, add them to the workspace access list.
@@ -110,7 +111,7 @@ The guest user may already have a Power BI Pro or Premium Per User (PPU) license
 
 ## Guest users who can edit and manage content
 
-When using the [allow external guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, the specified guest users get additional access to your organization's Power BI. Allowed guests can see any content that they have permissions for, access Home, browse workspaces, install apps, see where they are on the access list, and contribute content to workspaces. They can create, or be an Admin of, workspaces that use the new workspace experience. Some limitations apply. The Considerations and Limitations section lists those restrictions.
+When using the [allow external guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, the specified guest users get additional access to your organization's Power BI. Allowed guests can see any content that they have permissions for, access Home, browse workspaces, install apps, see where they are on the access list, and contribute content to workspaces. They can create or be an Admin of workspaces. Some limitations apply. The [Considerations and Limitations](#considerations-and-limitations) section lists those restrictions.
 
 To help allowed guests sign in to Power BI, provide them with the Tenant URL. To find the tenant URL, follow these steps.
 
@@ -149,17 +150,12 @@ There are some limitations to the B2B experience that you should be aware of:
 * Some experiences aren't available to [guest users who can edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files.  The following experiences aren't supported:
   * Direct publishing from Power BI desktop to the Power BI service
   * Guest users can't use Power BI desktop to connect to service datasets in the Power BI service
-  * Classic workspaces tied to Microsoft 365 Groups
-    * Guest users can't create or be Admins of these workspaces
-    * Guest users can be members
   * Sending ad hoc invites isn't supported for workspace access lists
   * Power BI Publisher for Excel isn't supported for guest users
   * Guest users can't install a Power BI Gateway and connect it to your organization
   * Guest users can't install apps publish to the entire organization
-  * Guest users can't use, create, update, or install organizational content packs
   * Guest users can't use Analyze in Excel
   * Guest users can't be @mentioned in commenting
-  * Guest users can't create subscriptions
   * Guest users who use this capability should have a work or school account
 
 * Guest users using social identities will experience more limitations because of sign-in restrictions.

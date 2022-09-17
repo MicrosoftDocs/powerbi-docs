@@ -14,7 +14,6 @@ summary: |
   * If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
   * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
   
-
 sections:
   - name: General
     questions:
@@ -237,11 +236,6 @@ sections:
           * Pause/resume service
           
           Use PowerBI.com to assign/un-assign workspaces to your Power BI Embedded capacity.
-          
-      - question: |
-          What content pack data types can you embed?
-        answer: |
-          You *can't* embed **Dashboards** and **tiles** built from content pack datasets. However, you *can* embed **reports** built from a content pack dataset.
 
       - question: |
           What is the difference between using row-level security (RLS) vs. JavaScript filters?
