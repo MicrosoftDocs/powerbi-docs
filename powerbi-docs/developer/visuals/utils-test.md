@@ -1,5 +1,5 @@
 ---
-title:  Introduction to usage of test utils in Power BI visual
+title:  Introduction to using test utils in Power BI visual
 description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
@@ -12,7 +12,7 @@ ms.date: 02/14/2020
 
 # Power BI visuals test utils
 
-This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for elements such as data views, selections and color schemas.
+This article describes how to install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for elements such as data views, selections and color schemas.
 
 ## Requirements
 
