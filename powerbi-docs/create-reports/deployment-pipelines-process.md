@@ -329,7 +329,7 @@ This section describes the deployment pipeline permissions. The lowest permissio
 
 |User                          |Permissions |Comments |
 |------------------------------|------------|---------|
-|**User with pipeline access** |<ul><li>View the pipeline​</li><li>Share the pipeline with others</li><li>Edit and delete the pipeline</li></ul> |Pipeline access doesn't grant permissions to view or take actions on the workspace content. |
+|**Pipeline access** |<ul><li>View the pipeline​</li><li>Share the pipeline with others</li><li>Edit and delete the pipeline</li></ul> |Pipeline access doesn't grant permissions to view or take actions on the workspace content. |
 |**Workspace viewer**          |Consume content |Workspace members assigned the Viewer role without *build* permissions, cannot access the dataset or edit workspace content. |
 |**Workspace contributor**     |<ul><li>Consume content​</li><li>Compare stages</li><li>View datasets</li></ul> |   |
 |**Workspace member**          |<ul><li>View workspace content​</li><li>Compare stages</li><li>Deploy reports, dashboards and paginated reports</li><li>Remove workspaces</li><li>Update datasets</li></ul> |If the *block republish and disable package refresh* setting located in the tenant *dataset security* section is enabled, only dataset owners will be able to update datasets. |
