@@ -44,17 +44,17 @@ In short, protecting data is about:
 Protecting data is a complex subject. At a high level, topics relevant to Power BI include:
 
 - **Responsible actions taken by users:** Users who have received guidance and training, and clearly understand what's expected of them, can act ethically. They can enact a culture that values security, privacy, and compliance during the normal course of their work.
-- **Right-sized user security permissions:** In Power BI, securing data and reports is separate and distinct from the information protection and DLP activities described in these articles. [Security](whitepaper-powerbi-security.md) methods in Power BI include techniques such as workspace roles, sharing, app permissions, and row-level security.
+- **Right-sized user security permissions:** In Power BI, securing data and reports is separate and distinct from the information protection and DLP activities described in these articles. [Security](whitepaper-powerbi-security.md) methods in Power BI include techniques such as workspace roles, sharing, app permissions, and row-level security (RLS).
 - **Data lifecycle management:** Processes such as backups and version control are important for protecting data. The setup of [encryption keys](/power-bi/enterprise/service-encryption-byok) and geographic locations for [data storage](powerbi-implementation-planning-tenant-setup.md#location-for-data-storage) also are considerations.
-- **Information protection:** Labeling and classifying content by using sensitivity labels is the first step towards being able to protect it. Information protection is covered in this set of articles.
-- **Data loss prevention policies:** DLP refers to controls and policies that reduce the risk of data leakage. Data loss prevention is covered in this set of articles.
+- **Information protection:** Labeling and classifying content by using sensitivity labels is the first step towards being able to protect it. Information protection is covered in this series of articles.
+- **Data loss prevention policies:** DLP refers to controls and policies that reduce the risk of data leakage. Data loss prevention is covered in this series of articles.
 
-The information protection and DLP set of articles focus on the final two bullet points: information protection and DLP, and specifically how they relate to Power BI.
+The information protection and DLP series of articles focus on the final two bullet points: information protection and DLP, and specifically how they relate to Power BI.
 
 We recommend that you also become familiar with the full [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) framework: know your data, protect your data, prevent data loss, and govern your data.
 
 > [!TIP]
-> Your organization's IT department will have existing processes in place that are considered information protection, but they're out of scope for this set of articles. Processes could include high availability and disaster recovery efforts related to source database systems. They could also include protecting mobile devices. Be sure to identify and involve relevant technology and governance teams in all your planning efforts.
+> Your organization's IT department will have existing processes in place that are considered information protection, but they're out of scope for this series of articles. Processes could include high availability and disaster recovery efforts related to source database systems. They could also include protecting mobile devices. Be sure to identify and involve relevant technology and governance teams in all your planning efforts.
 
 ## Common use cases
 
@@ -71,70 +71,70 @@ Organizations commonly have external or internal requirements for classifying an
 
 Once you assign a sensitivity label to content in Power BI, you're able to gain knowledge and insight about:
 
-- Whether sensitive data is contained in a Power BI workspace
-- Whether a particular Power BI item, like a dataset, is considered confidential
-- Who can access Power BI items that are considered sensitive
-- Who has accessed sensitive data in the Power BI service
+- Whether sensitive data is contained in a Power BI workspace.
+- Whether a particular Power BI item, like a dataset, is considered confidential.
+- Who can access Power BI items that are considered sensitive.
+- Who has accessed sensitive data in the Power BI service.
 
 With end-to-end protection, sensitivity labels can (optionally) be automatically inherited from data sources. Label inheritance reduces the risk of users accessing and sharing sensitive data with unauthorized users because it wasn't labeled.
 
 When exported from the Power BI service, sensitivity labels are retained when content is exported to supported file types. The retention of the label when content is exported is another key factor in reducing data leakage.
 
-For more information about labeling and classifying Power BI content, see the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
+For more information about labeling and classifying Power BI content, see [Information protection for Power BI](powerbi-implementation-planning-information-protection-for-power-bi.md).
 
 ### Educate users
 
 As stated previously, one aspect of protecting data involves responsible actions taken by users.
 
-Because sensitivity labels are clearly displayed in plain text, they serve as helpful reminders to users. During the normal course of their work, the labels raise awareness about how users should interact with data according to organizational guidelines and policies.
+Because sensitivity labels are clearly displayed in plain text, they serve as helpful reminders to users. During the normal course of their work, labels raise awareness about how users should interact with data according to organizational guidelines and policies.
 
-For example, when a user sees a _Highly confidential_ sensitivity label, it should prompt them to take extra care with their decisions about downloading, saving, or sharing the content with others. In this way, sensitivity labels help users responsibly handle sensitive data and reduce risk that it's shared by mistake with unauthorized users.
+For example, when a user sees a _Highly Confidential_ sensitivity label, it should prompt them to take extra care with their decisions about downloading, saving, or sharing the content with others. In this way, sensitivity labels help users responsibly handle sensitive data and reduce risk that it's shared by mistake with unauthorized users.
 
-For more information, see the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
+For more information, see [Information protection for Power BI](powerbi-implementation-planning-information-protection-for-power-bi.md).
 
 ### Detect sensitive data
 
 The ability to detect where sensitive data is stored is another important aspect of data leakage.
 
-When a dataset has been published to the Power BI service, if it's in a Premium workspace, you can use DLP for Power BI to detect the existence of certain sensitive information types within it. This capability is helpful to find sensitive data (such as financial data or personal data) that are stored in Power BI datasets.
+When a dataset has been published to the Power BI service and it's in a Premium workspace, you can use DLP for Power BI to detect the existence of certain sensitive information types within it. This capability is helpful to find sensitive data (such as financial data or personal data) that are stored in Power BI datasets.
 
-This type of DLP policy for Power BI allows security administrators to monitor and detect when unauthorized sensitive data is uploaded to the Power BI service. They can depend on alerts to act quickly. Policy tips are also used to guide content creators and owners on how to properly handle sensitive data. For more information about DLP for Power BI, see the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
+This type of DLP policy for Power BI allows security administrators to monitor and detect when unauthorized sensitive data is uploaded to the Power BI service. They can depend on alerts to act quickly. Policy tips are also used to guide content creators and owners on how to properly handle sensitive data. For more information about DLP for Power BI, see [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md).
 
 > [!TIP]
-> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) and the [Power BI activity log](/power-bi/admin/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see the [Auditing of information protection and data loss prevention](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md) article.
+> Having properly classified data allows you to correlate, analyze, and report on it. In most cases, you'll need to correlate data from multiple sources to form a complete understanding. You can capture data by using tools like the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) and the [Power BI activity log](/power-bi/admin/service-admin-auditing). For more information about these topics, as well as audit logs in the Microsoft Purview compliance portal, see [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md).
 
 ### Use data encryption
 
 Files that are classified with a sensitivity label can (optionally) include protection. When a file is protected with encryption, it reduces the risk of data leakage and oversharing. The encryption setting follows the file, regardless of device or user. Unauthorized users (internal and external to the organization) are unable to open, decrypt, or view the file contents.
 
 > [!IMPORTANT]
-> There are trade-offs you should understand when implementing encryption. For more information, including encryption considerations, see the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
+> There are trade-offs you should understand when implementing encryption. For more information, including encryption considerations, see [Information protection for Power BI](powerbi-implementation-planning-information-protection-for-power-bi.md).
 
-For more information about the types of controls you can implement to reduce data leakage, see the [Defender for Cloud Apps planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article.
+For more information about the types of controls you can implement to reduce data leakage, see [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md).
 
 ### Control activity in real time
 
-To augment existing [security](whitepaper-powerbi-security.md) settings in Power BI, you can implement real-time controls to reduce the risk of data leakage.
+To augment existing [security settings in Power BI](whitepaper-powerbi-security.md), you can implement real-time controls to reduce the risk of data leakage.
 
 For example, you can restrict users from downloading highly sensitive data and reports from the Power BI service. This type of real-time control is helpful when someone is allowed to view content themselves, but they should be prevented from downloading and distributing it to others.
 
-For more information about the types of controls you can implement, see the [Defender for Cloud Apps planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article.
+For more information about the types of controls you can implement, see [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md).
 
 ## Information protection and DLP services
 
 Many features and services related to information protection and DLP have been rebranded and now form part of Microsoft Purview. The Microsoft 365 security and compliance functionality has also become part of Microsoft Purview.
 
-The features and services that are most pertinent for this set of articles include:
+The features and services that are most pertinent for this series of articles include:
 
-- **Microsoft Purview Information Protection** (formerly known as Microsoft Information Protection): [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) includes capabilities for discovering, classifying, and protecting data. A key principle is that data can be better protected once it's been classified. The key building blocks for classifying data are sensitivity labels, which are described in the [Information protection for Power BI planning](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
-- **Microsoft Purview compliance portal** (formerly known as the Microsoft 365 compliance center): The [portal](/microsoft-365/compliance/microsoft-365-compliance-center?) is where you set up sensitivity labels. It's also where you set up Power BI for DLP, which is described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
-- **Microsoft Purview Data Loss Prevention** (formerly known as Office 365 Data Loss Prevention): DLP activities focus primarily on reducing data leakage. By using sensitivity labels or sensitive information types, Microsoft Purview Data Loss Prevention policies help an organization locate sensitive data and protect it. Capabilities relevant to Power BI are described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
-- **Microsoft Defender for Cloud Apps** (formerly known as Microsoft Cloud App Security): Policies in Microsoft Defender for Cloud Apps (which are defined in a separate application) also help protect data, including real-time controls. Capabilities relevant to Power BI are described in the [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article.
+- **Microsoft Purview Information Protection** (formerly known as Microsoft Information Protection): [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) includes capabilities for discovering, classifying, and protecting data. A key principle is that data can be better protected once it's classified. The key building blocks for classifying data are sensitivity labels, which are described in the [Information protection for Power BI](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
+- **Microsoft Purview compliance portal** (formerly known as the Microsoft 365 compliance center): The [portal](/microsoft-365/compliance/microsoft-365-compliance-center?) is where you set up sensitivity labels. It's also where you set up Power BI for DLP, which is described in the [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
+- **Microsoft Purview Data Loss Prevention** (formerly known as Office 365 Data Loss Prevention): DLP activities focus primarily on reducing data leakage. By using sensitivity labels or sensitive information types, Microsoft Purview Data Loss Prevention policies help an organization locate sensitive data and protect it. Capabilities relevant to Power BI are described in the [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article.
+- **Microsoft Defender for Cloud Apps** (formerly known as Microsoft Cloud App Security): Policies in Microsoft Defender for Cloud Apps (which are defined in a separate application) also help protect data, including real-time controls. Capabilities relevant to Power BI are described in the [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps-for-power-bi.md) article.
 
-The above list isn't an exhaustive list. Microsoft Purview includes a broad set of capabilities that far exceeds the scope of this set of articles. For example, the Microsoft Purview data cataloging and governance features are important; however, they're not directly in scope for this set of articles.
+The above list isn't exhaustive. Microsoft Purview includes a broad set of capabilities that far exceeds the scope of this series of articles. For example, the Microsoft Purview data cataloging and governance features are important; however, they're not directly in scope for this series of articles.
 
 > [!TIP]
-> Contact your Microsoft account team if you have questions about services, features, and licensing. They're in the best position to clarify what's available for your organization.
+> If you have questions about services, features, or licensing, contact your Microsoft account team. They're in the best position to clarify what's available for your organization.
 
 The remainder of the information protection and DLP content is organized into the following articles:
 
