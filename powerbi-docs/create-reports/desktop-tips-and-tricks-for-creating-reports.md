@@ -218,7 +218,7 @@ A few of our favorite books include:
 * *Advanced Presentations Design* by Andrew Abela   
 
 ## Next steps
-* [Design effective reports in Power BI](/learn/paths/power-bi-effective/)
+* [Design effective reports in Power BI](/training/paths/power-bi-effective/)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 * [Reports in Power BI](../consumer/end-user-reports.md)
 
