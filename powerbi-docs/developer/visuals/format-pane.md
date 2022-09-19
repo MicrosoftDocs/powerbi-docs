@@ -95,13 +95,13 @@ TextArea
 
 Capabilities Formatting Objects
 
-|                     |                   |                 |
-|---------------------|-------------------|-----------------|
-| Font size           | FontSize          | NumUpDown       |
-| Font family         | FontFamily        | FontPicker      |
-| Line Alignment      | Alignment         | AlignmentGroup  |
-| Label Display Units | LabelDisplayUnits | AutoDropDown    |
-| Format String       | FormatString      | Todo            |
+| Type                | Capabilities Value Type | Formatting Property |
+|---------------------|-------------------------|---------------------|
+| Font size           | FontSize                | NumUpDown           |
+| Font family         | FontFamily              | FontPicker          |
+| Line Alignment      | Alignment               | AlignmentGroup      |
+| Label Display Units | LabelDisplayUnits       | AutoDropDown        |
+| Format String       | FormatString            | Todo                |
 
 ## Composite slice properties
 
