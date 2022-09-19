@@ -28,7 +28,7 @@ When enabled, users in the organization can use the ArcGIS Maps for Power BI vis
 
 :::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for power b i admin setting.":::
 
-## Use global search for Power BI (Preview)
+## Use global search for Power BI
 
 When enabled, users in the organization can use external search features that rely on Azure Search. See [Navigation for Power BI business users: global search](../consumer/end-user-search-sort.md) for more information.
 
