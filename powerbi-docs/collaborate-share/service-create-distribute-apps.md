@@ -51,10 +51,12 @@ When the content in your workspace is ready, you can start the publishing proces
 
 On the **Content** tab, you add the content from the workspace to the app. 
 
-1. Select **Add content** on the **Content** tab, and select the contents that you want to add from the current workspace.
+1. Select **Add content** on the **Content** tab.
  
     :::image type="content" source="media/service-create-distribute-apps/content-tab.png" alt-text="Screenshot of add content button.":::
-     
+
+1. Select the contents that you want to add from the current workspace.
+
     :::image type="content" source="media/service-create-distribute-apps/pop-up-add-content.png" alt-text="Screenshot of pop-up window showing a list of content.":::
 
     > [!NOTE]
@@ -119,7 +121,9 @@ Now that you've decided on the audiences and the content for each audience, it's
     :::image type="content" source="media/service-create-distribute-apps/app-successfully-published.png" alt-text="Screenshot of successfully published app.":::
 
     You can also share the published app by selecting the **Copy link** button at the bottom of the **Setup** page. That creates a shareable app link to share with your app consumers.
-    
+
+    :::image type="content" source="media/service-create-distribute-apps/app-link.png" alt-text="Screenshot showing Copy link option.":::
+
 Your app consumers can also request access to your app by searching for the app from Apps marketplace or AppSource. See the [app consumer view](#app-consumer-view) section of this article for more about the app experience for consumers.
 
 ## Manage app access requests
@@ -193,12 +197,14 @@ Keep these things in mind when pushing apps to end users:
 ## App consumer view
 App consumers can only see the content based on the access permissions for their respective audience groups. Consumers who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they will see three view tabs, as shown in the following image. By default, consumers see the All tab view, which is a consolidated view showing all content that they have access to. App consumers can browse different audience group tabs to see the content for each group. 
 
+**The consolidated *All* view**
 :::image type="content" source="media/service-create-distribute-apps/audience-all-view.png" alt-text="Screenshot showing All view for app consumers.":::
 
+**Audience group one, *Product Team***
 :::image type="content" source="media/service-create-distribute-apps/audience-product-team-view.png" alt-text="Screenshot showing Product team view for app consumers.":::
 
+**Audience group two, *Sales Team***
 :::image type="content" source="media/service-create-distribute-apps/audience-sales-team-view.png" alt-text="Screenshot showing Sales team view for app consumers.":::
-
 
 Read more about how [app consumers experience apps](../consumer/end-user-app-view.md).
 
