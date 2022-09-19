@@ -55,6 +55,6 @@ This section lists the [admin](#admin-considerations) and [user](#user-considera
 
 * Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
 * [Publish Power BI visuals to Partner Center](office-store.md)
-* [Frequently asked questions about Power BI visuals](/powerbi-docs/developer/visuals/power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
+* [Frequently asked questions about Power BI visuals](./power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)  
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
