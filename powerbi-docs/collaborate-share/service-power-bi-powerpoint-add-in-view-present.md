@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 08/25/2022
+ms.date: 09/19/2022
 ---
 
 # View and present live Power BI report pages in PowerPoint (preview)
@@ -119,7 +119,7 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 
 ## Next steps
 
-* [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
+* [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)
