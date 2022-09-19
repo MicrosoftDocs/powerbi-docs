@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 09/19/2022
 LocalizationGroup: Administration
 ---
 
@@ -73,6 +73,12 @@ An important security-related consideration is that gateway owners have full con
 Because of this possible threat, the Azure AD Single Sign-On feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the **Azure AD Single Sign-On (SSO) for Gateway** tenant setting (shown below) in the Power BI admin portal before data sources can be enabled for Azure AD SSO on an on-premises data gateway. Before enabling the feature, make sure to restrict the ability to deploy on-premises data gateways in your organization to appropriate administrators.  
 
 ![Screenshot of Azure AD Single Sign-On (SSO) for Gateway tenant switch.](media/service-admin-portal-integration/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png)
+
+## Power Platform Solutions Integration (Preview)
+
+This settings enables the Power BI/Power Platform Solutions integration from the Power BI side (admin settings also have to be turned on in Power Platform). When the integration is enabled, when Power BI components are created in a Power Apps solution, a special Power BI workspace dedicated to the Power Apps environment will be created in Power BI to store copies of the Power BI report and dataset that were used to create the component. For more detail, see [Power BI content management in Power Apps solutions](/power-apps/maker/model-driven-apps/power-bi-content-management-power-apps-solutions)
+
+This setting is on by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration > Power Platform Solutions Integration (Preview)**, and set the toggle as desired.
 
 ## Next steps
 
