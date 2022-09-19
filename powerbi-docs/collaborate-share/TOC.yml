@@ -139,11 +139,13 @@
       href: ../create-reports/power-bi-automate-visual.md
   - name: Share Power BI datasets with external users
     items: 
-    - name: About BDB data sharing
-      href: service-admin-b2b-data-share.md
-    - name: 
-      href: 
+    - name: About in-place dataset sharing
+      href: service-dataset-external-org-share-about.md
+    - name: Share datasets with in-place dataset sharing
+      href: service-dataset-external-org-share-provider.md
+    - name: Access datasets shared externally in your own tenant
+      href: service-dataset-external-org-share-consumer.md
     - name: Information for Power BI admin
-      href: 
+      href: service-dataset-external-org-share-admin.md
   - name: "Use third-party apps"
     href: service-power-bi-get-started-third-party-apps.md
