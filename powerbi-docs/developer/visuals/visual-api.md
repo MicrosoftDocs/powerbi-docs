@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/19/2022
+ms.date: 09/19/2022
 ---
 
 # Visual API
@@ -21,7 +21,7 @@ The visual class should implement the following methods as shown in the sample b
 
 * [`constructor`](#constructor), a standard constructor that initializes the visual's state
 * [`update`](#update), updates the visual's data
-* [`enumerateObjectInstances`](#enumerateobjectinstances-optional), returns objects that populate the property pane (formatting options) where you can modify them as needed
+* [`getFormattingModel`](#getFormattingModel-optional), returns objects that populate the property pane (formatting options) where you can modify them as needed
 * [`destroy`](#destroy-optional), a standard destructor for cleanup
 
 ```typescript
@@ -119,15 +119,17 @@ public update(options: VisualUpdateOptions): void
 * `jsonFilters?: IFilter[]`, collection of applied json filters
 * `isInFocus?: boolean`, flag to indicate if the visual is in focus mode or not
 
-## enumerateObjectInstances *(optional)*
+## getFormattingModel *(optional)*
 
-This method is called for every `object` listed in the [`capabilities.json`](capabilities.md) file. For each `object` (currently just the name), you return a `VisualObjectInstanceEnumeration` with information about how to display this property.
+This method is called for every `object` listed in the [`capabilities.json`](capabilities.md) file. For each `object` (currently just the name), you return a `FormattingModel` with information about how to display this property.
 
 ```typescript
-enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualObjectInstanceEnumeration
+getFormattingModel(options:FormattingModel):getFormattingModel
 ```
 
-### EnumerateVisualObjectInstancesOptions
+### FormattingModel
+
+The Formatting model 
 
 * `objectName: string`, name of the object
 
@@ -139,13 +141,10 @@ The destroy function is called when your visual is unloaded and can be used for 
 public destroy(): void
 ```
 
-> [!Note]
+> [!TIP]
 > Power BI generally doesn't call `destroy` since it's faster to remove the entire IFrame that contains the visual.
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Visual project structure](visual-project-structure.md)
-
->[!div class="nextstepaction"]
->[Local storage API](local-storage.md)
+* [Visual project structure](visual-project-structure.md)
+* [Local storage API](local-storage.md)
