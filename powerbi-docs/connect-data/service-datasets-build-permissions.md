@@ -75,7 +75,7 @@ The first option (here shown unchecked) is the default option described at the b
 
 The second option allows you to provide instructions about how to get Build permission, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users try to perform an action that they need Build permission for, if they don’t have that permission, they will see a message containing the instructions you provide.
 
-In the image of the the Request access setting shown above, the Instructions text area contains sample instructions. The instructions must be written in plain text only. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format. The image below shows the instructions as users see them when they try to perform an action that they need Build permission for.
+In the image of the Request access setting shown above, the Instructions text area contains sample instructions. The instructions must be written in plain text only. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format. The image below shows the instructions as users see them when they try to perform an action that they need Build permission for.
 
 ![Screenshot of specific instructions for requesting Build permission.](media/service-datasets-build-permissions/build-permission-specific-instructions-example.png)
 
