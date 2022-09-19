@@ -22,7 +22,7 @@ This article describes the planning activities related to implementing Defender 
 > [!IMPORTANT]
 > Monitoring and data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. These types of initiative require funding, prioritization, and planning. Expect to involve several cross-functional teams in planning, usage, and oversight efforts.
 
-We recommend that you follow a gradual, phased approach to rolling out Defender for Cloud Apps for monitoring Power BI. For a description of the types of rollout phases that you should consider, see [Information protection for Power BI (Rollout phases)](powerbi-implementation-planning-information-protection-for-power-bi.md#rollout-phases).
+We recommend that you follow a gradual, phased approach to rolling out Defender for Cloud Apps for monitoring Power BI. For a description of the types of rollout phases that you should consider, see [Information protection for Power BI (Rollout phases)](powerbi-implementation-planning-info-protection.md#rollout-phases).
 
 ## Purpose of monitoring
 
@@ -46,27 +46,27 @@ Here are some examples of other capabilities that aren't real time.
 
 Power BI is one of many applications and services that can be integrated with Defender for Cloud Apps. If you're already using Defender for Cloud Apps for other purposes, it can be used to monitor Power BI too.
 
-Policies created in Defender for Cloud Apps are a form of DLP. The [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article covers DLP policies for Power BI that are set up in the Microsoft Purview compliance portal. We recommend that you use DLP policies for Power BI with the capabilities described in this article. Although there's some overlap conceptually, the capabilities are different.
+Policies created in Defender for Cloud Apps are a form of DLP. The [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md) article covers DLP policies for Power BI that are set up in the Microsoft Purview compliance portal. We recommend that you use DLP policies for Power BI with the capabilities described in this article. Although there's some overlap conceptually, the capabilities are different.
 
 > [!CAUTION]
 > This article focuses on capabilities in [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) that can be used to monitor and protect Power BI content. There are many other capabilities in Defender for Cloud Apps that aren't covered in this article. Be sure to work with other stakeholders and system administrators to make decisions that work well for all applications and use cases.
 
 ## Prerequisites for Defender for Cloud Apps for Power BI
 
-By now, you should have completed the organization-level planning steps that were described in the [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article. Before proceeding, you should have clarity on:
+By now, you should have completed the organization-level planning steps that were described in the [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md) article. Before proceeding, you should have clarity on:
 
-- **Current state:** The [current state](powerbi-implementation-planning-organization-level-information-protection.md#current-state-assessment) of DLP in your organization. You should have an understanding to what extent DLP is already in use, and who's responsible for managing it.
-- **Goals and requirements:** The [strategic goals](powerbi-implementation-planning-organization-level-information-protection.md#goals-and-requirements) for implementing DLP in your organization. Understanding the goals and requirements will serve as a guide for your implementation efforts.
+- **Current state:** The [current state](powerbi-implementation-planning-organization-level-info-protection.md#current-state-assessment) of DLP in your organization. You should have an understanding to what extent DLP is already in use, and who's responsible for managing it.
+- **Goals and requirements:** The [strategic goals](powerbi-implementation-planning-organization-level-info-protection.md#goals-and-requirements) for implementing DLP in your organization. Understanding the goals and requirements will serve as a guide for your implementation efforts.
 
-Usually, information protection is already implemented before DLP is implemented. If sensitivity labels are published (described in the [Information protection for Power BI](powerbi-implementation-planning-information-protection-for-power-bi.md) article), they can be used in certain policies within Defender for Cloud Apps.
+Usually, information protection is already implemented before DLP is implemented. If sensitivity labels are published (described in the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md) article), they can be used in certain policies within Defender for Cloud Apps.
 
-You might have already implemented DLP for Power BI (described in the [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md) article). Those DLP capabilities are different to the capabilities that are managed in the Microsoft Purview compliance portal. All DLP capabilities described in this article are managed in the Defender for Cloud Apps portal.
+You might have already implemented DLP for Power BI (described in the [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md) article). Those DLP capabilities are different to the capabilities that are managed in the Microsoft Purview compliance portal. All DLP capabilities described in this article are managed in the Defender for Cloud Apps portal.
 
 ## Key decisions and actions
 
 You'll need to make some key decisions before you're ready to set up policies in Defender for Cloud Apps.
 
-The decisions related to Defender for Cloud Apps policies should directly support the [goals and requirements](powerbi-implementation-planning-organization-level-information-protection.md#goals-and-requirements) for protecting the data that you've previously identified.
+The decisions related to Defender for Cloud Apps policies should directly support the [goals and requirements](powerbi-implementation-planning-organization-level-info-protection.md#goals-and-requirements) for protecting the data that you've previously identified.
 
 ### Policy type and activities
 
@@ -87,7 +87,7 @@ Access policies and session policies allow you to:
   - Enable analytical use cases that involve sensitive data in a way that can be audited.
 - **Provide users with contextual notifications:** This capability allows you to:
   - Help users make the right decisions during their normal workflow.
-  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-information-protection-for-power-bi.md#data-classification-and-protection-policy) without affecting their productivity.
+  - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) without affecting their productivity.
 
 To provide real-time controls, access policies and session policies work with Azure Active Directory (Azure AD), relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
 
@@ -386,4 +386,4 @@ It's possible to provide your Power BI administrators with a [limited view](/pow
 
 ## Next steps
 
-In the [next article in this series](powerbi-implementation-planning-auditing-of-information-protection-and-data-loss-prevention-for-power-bi.md), learn about auditing for information protection and data loss prevention for Power BI.
+In the [next article in this series](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md), learn about auditing for information protection and data loss prevention for Power BI.

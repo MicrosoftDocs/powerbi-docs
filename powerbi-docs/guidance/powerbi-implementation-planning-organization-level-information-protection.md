@@ -46,7 +46,7 @@ The above diagram depicts the following items:
 
 In the diagram, notice that items in the Power BI service, and Power BI Desktop files, are just some of many resources that allow assigning sensitivity labels. Sensitivity labels are defined centrally in Microsoft Purview Information Protection. Once defined, the same labels are used by all supported applications throughout the organization. It's not possible to define labels for use in only one application, such as Power BI. Therefore, your planning process needs to consider a broader set of usage scenarios to define labels that can be used in multiple contexts. Because information protection is intended to be used consistently across applications and services, it's critical to begin with assessing what sensitivity labels are currently in place.
 
-The activities for implementing sensitivity labels are described in the [Information protection for Power BI](powerbi-implementation-planning-information-protection-for-power-bi.md) article.
+The activities for implementing sensitivity labels are described in the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md) article.
 
 > [!NOTE]
 > Sensitivity labels are the first building block towards implementing information protection. DLP occurs after information protection is set up.
@@ -140,4 +140,4 @@ Be aware that an initiative to introduce information protection is complementary
 
 ## Next steps
 
-In the [next article in this series](powerbi-implementation-planning-information-protection-for-power-bi.md), learn about labeling and classification of data assets for use with Power BI.
+In the [next article in this series](powerbi-implementation-planning-info-protection.md), learn about labeling and classification of data assets for use with Power BI.

@@ -19,7 +19,7 @@ This article describes the type of auditing you can do after implementing inform
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security and other relevant teams.
 - **Center of Excellence, IT, and BI teams:** Others who are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 
-It's important to understand how [information protection and data loss prevention](powerbi-implementation-planning-information-protection-and-data-loss-prevention-overview.md) is used in your organization. You can achieve that by performing auditing, which can:
+It's important to understand how [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) is used in your organization. You can achieve that by performing auditing, which can:
 
 - Track usage patterns, activities, and adoption
 - Support governance and security requirements
@@ -40,9 +40,9 @@ The remainder of this article describes useful auditing processes and suggestion
 
 ## Power BI activity log
 
-To help with [information protection](powerbi-implementation-planning-information-protection-for-power-bi.md), you can use the Power BI activity log to track [activities related to sensitivity labels](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
+To help with [information protection](powerbi-implementation-planning-info-protection.md), you can use the Power BI activity log to track [activities related to sensitivity labels](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
 
-When you've implemented [DLP for Power BI](powerbi-implementation-planning-data-loss-prevention-for-power-bi.md), the activity log tracks when there's a DLP rule match.
+When you've implemented [DLP for Power BI](powerbi-implementation-planning-data-loss-prevention.md), the activity log tracks when there's a DLP rule match.
 
 - **What to look for:** You can determine when specific activities occur, such as:
   - Sensitivity labels were applied, changed, deleted, and by which users
