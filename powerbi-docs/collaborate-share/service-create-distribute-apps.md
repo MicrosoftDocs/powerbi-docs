@@ -69,7 +69,7 @@ On the **Content** tab, you add the content from the workspace to the app.
     After you've added the content, you can change the order of the content:
 
     - Drag the content up or down in the list.
-    - 
+    
     :::image type="content" source="media/service-create-distribute-apps/drag-drop-content.png" alt-text="Screenshot of Drag & Drop content.":::
     
     - Select the **Move up** or **Move down** options next to each item.
