@@ -346,15 +346,15 @@ The table below lists required permissions for popular deployment pipeline actio
 |Create a pipeline     |A user with one of the following licenses:<ul><li>Pro</li><li>PPU</li><li>Premium</li></ul>         |
 |Delete a pipeline     |The owner of the pipeline         |
 |Add or remove a pipeline user     |Pipeline admin         |
-|Assign a workspace to a user     |<ul><li>Pipeline admin</li><li>Workspace member</li></ul>         |
+|Assign a workspace to a user     |<ul><li>Pipeline admin</li><li>Workspace member or admin</li></ul>         |
 |Unassign a workspace to a user     |Pipeline admin         |
-|Deploy to an empty stage     |<ul><li>Pipeline admin</li><li>Workspace member</li></ul>         |
-|Deploy to a stage with items    |<ul><li>Pipeline admin</li><li>Workspace member of both the source and target stages</li><li>Owner of the items in the target workspace</li></ul>         |
-|View or set a rule     |<ul><li>Pipeline admin</li><li>Workspace contributor</li><li>Owner of the item you're setting a rule for</li></ul>         |
+|Deploy to an empty stage     |<ul><li>Pipeline admin</li><li>Workspace member or admin</li></ul>         |
+|Deploy to a stage with items    |<ul><li>Pipeline admin</li><li>Workspace member or admin of both the source and target stages</li><li>Owner of the items in the target workspace</li></ul>         |
+|View or set a rule     |<ul><li>Pipeline admin</li><li>Workspace contributor, member or admin</li><li>Owner of the item you're setting a rule for</li></ul>         |
 |Manage pipeline settings     |Pipeline admin         |
-|View a pipeline stage     |<ul><li>Pipeline admin</li><li>Workspace viewer</li></ul>         |
+|View a pipeline stage     |<ul><li>Pipeline admin</li><li>Workspace reader, contributor, member or admin</li></ul>         |
 |View the list of items in a stage     |Pipeline admin         |
-|Compare to stages     |<ul><li>Pipeline admin</li><li>Workspace contributor for both stages</li></ul>         |
+|Compare to stages     |<ul><li>Pipeline admin</li><li>Workspace contributor, member or admin for both stages</li></ul>         |
 |View deployment history     |Pipeline admin         |
 
 ## Considerations and limitations
