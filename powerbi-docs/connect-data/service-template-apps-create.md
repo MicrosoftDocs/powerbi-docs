@@ -83,7 +83,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Navigation**
 
-    Activate the **New navigation builder**, where you can define the nav pane of the app (See [Design the navigation experience](../collaborate-share/service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
+    In the navigation builder, you define the nav pane of the app (See [Add content to the app](../collaborate-share/service-create-distribute-apps.md#add-content-to-the-app)).
 
    ![Set app landing page](media/service-template-apps-create/power-bi-install-app-content.png)
     
