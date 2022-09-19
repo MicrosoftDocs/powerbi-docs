@@ -76,9 +76,9 @@ Because of this possible threat, the Azure AD single sign-on feature is disabled
 
 ## Power Platform Solutions Integration (Preview)
 
-This setting enables the Power BI/Power Platform Solutions integration from the Power BI side (admin settings also have to be turned on in Power Platform). When the integration is enabled, when Power BI components are created in a Power Apps solution, a special Power BI workspace dedicated to the Power Apps environment is created in Power BI to store copies of the Power BI report and dataset that are being to create the component. For more detail, see [Power BI content management in Power Apps solutions](/power-apps/maker/model-driven-apps/power-bi-content-management-power-apps-solutions)
+This setting enables the Power BI/Power Platform Solutions integration from the Power BI side (admin settings also have to be turned on in Power Platform). When the integration is enabled, when Power BI components are created in a Power Apps solution, a special Power BI workspace dedicated to the Power Apps environment is created in Power BI to store copies of the Power BI report and dataset that are being to create the component. For more detail, see [Power BI content management in Power Apps solutions](/power-apps/maker/model-driven-apps/power-bi-content-management-power-apps-solutions) and [About Power BI in Power Apps Solutions](../collaborate-share/service-power-bi-powerapps-integration-about.md).
 
-This setting is on by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration > Power Platform Solutions Integration (Preview)**, and set the toggle as desired.
+This setting is on by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Power Platform Solutions Integration (Preview)**, and set the toggle as desired.
 
 ## Next steps
 
