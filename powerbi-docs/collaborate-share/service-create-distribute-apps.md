@@ -74,7 +74,7 @@ On the **Content** tab, you add the content from the workspace to the app.
     
     - Select the **Move up** or **Move down** options next to each item.
     
-    :::image type="content" source="media/service-create-distribute-apps/moveup-move-down-content.png" alt-text="Screenshot of Moveup or Move down content.":::
+    :::image type="content" source="media/service-create-distribute-apps/moveup-move-down-content.png" alt-text="Screenshot of Move up or Move down content.":::
 
 1. Select **Next: Add audience**.
 
@@ -172,7 +172,7 @@ After you publish your app, you may want to change or update it.
 If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal-content-pack-app.md#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
-Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all audience groups defined in the **Audience** tab of the app.
+Once the admin has assigned permissions to you, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all audience groups defined in the **Audience** tab of the app.
 
 :::image type="content" source="media/service-create-distribute-apps/install-app-automatically.png" alt-text="Screenshot shows Power B I Publish app option with Install app automatically selected.":::
 
