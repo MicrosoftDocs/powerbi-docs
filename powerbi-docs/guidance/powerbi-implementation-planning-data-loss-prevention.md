@@ -168,7 +168,7 @@ When you've identified use cases for DLP with sensitivity labels and SITs, you s
 
 For DLP in Power BI, user notifications appear in the dataset settings. They also appear across the top of the dataset details page in the data hub, as shown in the following screenshot. In this instance, the notification reads: _This data contains credit cards. That type of data is not permitted in Power BI per the Data Classification, Protection, and Usage policy._
 
-:::image type="content" source="media/powerbi-implementation-planning-data-loss-prevention-for-power-bi-planning/data-loss-prevention-user-notification.png" alt-text="Screenshot shows a DLP user notification across the top of the data hub page." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-data-loss-prevention/data-loss-prevention-user-notification.png" alt-text="Screenshot shows a DLP user notification across the top of the data hub page." border="false":::
 
 You can define one or more rules for each DLP policy. Each rule can optionally have a different policy tip that will be displayed to users.
 

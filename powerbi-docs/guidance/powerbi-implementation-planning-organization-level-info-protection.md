@@ -33,7 +33,7 @@ Generally, there are two cases of sensitivity label use.
 
 The following diagram shows how sensitivity labels are used broadly across the organization.
 
-:::image type="content" source="media/powerbi-implementation-planning-organization-level-information-protection-planning/sensitivity-label-usage-across-the-organization.png" alt-text="Diagram shows how sensitivity labels are used. Items in the diagram are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-organization-level-info-protection/sensitivity-label-usage-across-the-organization.png" alt-text="Diagram shows how sensitivity labels are used. Items in the diagram are described in the table below." border="false":::
 
 The above diagram depicts the following items:
 
