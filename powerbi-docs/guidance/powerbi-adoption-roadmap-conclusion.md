@@ -76,7 +76,7 @@ The [Power Platform adoption framework](https://github.com/PowerPlatformAF/Power
 You may also find useful adoption-related guidance published by other Microsoft technology teams.
 
 - The [Maturity Model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro) provides information and resources to use capabilities more fully and efficiently.
-- Microsoft Learn has a series of training modules to [use the Microsoft service adoption framework to drive adoption in your enterprise](/training/paths/m365-service-adoption/).
+- Microsoft Learn has a learning path for [using the Microsoft service adoption framework to drive adoption in your enterprise](/training/paths/m365-service-adoption/).
 - The [Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/) is a collection of documentation, implementation guidance, best practices, and tools to accelerate your cloud adoption journey.
 
 A wide variety of other adoption guides for individual technologies can be found online. A few examples include:
