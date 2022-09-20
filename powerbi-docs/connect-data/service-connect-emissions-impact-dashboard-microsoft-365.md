@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 09/08/2022
+ms.date: 09/20/2022
 LocalizationGroup: Connect to services
 ---
 
@@ -158,6 +158,10 @@ This likely indicates that your tenant's emissions volumes are very small. The c
 **Why can't I see emissions data for the previous month?**
 
 Emissions data for a given month will be available by the 14th day after the end of that month (including non-business days). Ensure that your dataset is scheduled to refresh automatically on a daily or weekly basis so that you always have access to the latest information.
+
+**Why can't I see usage information prior to June 2022 in the Carbon Intensity tab?**
+
+Currently, information on Microsoft 365 usage is only available in the report from June 2022 onwards. For more usage history, see the [Usage report](/microsoft-365/admin/activity-reports/activity-reports#how-to-get-to-the-reports-dashboard) in the Microsoft 365 Admin Center.
 
 **Why do I see emissions from regions outside of my Microsoft 365 data location?**
 
