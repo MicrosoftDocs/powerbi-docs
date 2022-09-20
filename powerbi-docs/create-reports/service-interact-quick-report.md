@@ -30,13 +30,21 @@ Just like in normal Power BI reports, you can cross-highlight visuals and use th
 
 :::image type="content" source="media/service-interact-quick-report/report-with-cross-highlighting.png" alt-text="report showing cross-highlighting.":::
  
-Select **Show data table** to see the entire table you’re visualizing.
+## Show data table
 
-:::image type="content" source="media/service-interact-quick-report/show-data-table-button.png" alt-text="Show data table button.":::
+You can see the whole data table that the report is based on.
 
-If the report that you’re visualizing is based on a single table, select the **Show data table** button to reload the report with the entire table shown at the bottom of the report. The button updates to **Hide data table** option. Selecting it reloads the report with the table hidden again.
+- Select **Show data table** to see the entire table you’re visualizing.
+
+    :::image type="content" source="media/service-interact-quick-report/show-data-table-button.png" alt-text="Show data table button.":::
+
+### Report with a single table
+
+If the report that you’re visualizing is based on a single table, select the **Show data table** button to reload the report with the entire table shown at the bottom of the report. The button updates to **Hide data table**. Selecting it reloads the report with the table hidden again.
 
 :::image type="content" source="media/service-interact-quick-report/show-data-table-open.png" alt-text="report with data table showing.":::
+
+### Report with multiple tables
  
 If the report that you’re visualizing is based on a dataset with multiple tables, the **Show data table** button becomes a dropdown menu where you pick the table you want to view. Measures aren't currently included in the data table.
 
