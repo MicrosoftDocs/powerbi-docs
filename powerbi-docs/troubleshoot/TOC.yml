@@ -102,7 +102,7 @@
       - name: Troubleshoot sign-in for Power BI Desktop
         href: ../connect-data/desktop-troubleshooting-sign-in.md
       - name: Forgot your password for Power BI?
-        href: ../admin/service-admin-forgot-your-password.md  
+        href: https://learn.microsoft.com/power-bi/admin/power-bi-cannot-sign-in
       - name: Troubleshoot sign in with OData  
         href: ../connect-data/desktop-troubleshoot-odata.md
       - name: Troubleshoot opening Power BI Desktop
@@ -140,4 +140,4 @@
     - name: Request a region move via a support request
       href: ../admin/service-admin-region-move.md
     - name: 10 tips for getting help with Power BI
-      href: ../fundamentals/service-tips-for-finding-help.md 
+      href: ../fundamentals/service-tips-for-finding-help.md

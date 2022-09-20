@@ -184,6 +184,8 @@
           href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
         - name: "Advanced data model management"
           href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
+        - name: "Self-service real-time analytics"
+          href: powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
       - name: "Tenant setup"

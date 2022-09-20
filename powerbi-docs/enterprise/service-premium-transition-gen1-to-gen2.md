@@ -112,7 +112,7 @@ This section answers frequently asked questions related to the migration.
 
 * **Does Gen2 have limitations?**
 
-    For a full list of considerations and limitations, see [Limitations in Premium Gen2](service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+    For a full list of considerations and limitations, see [Considerations and limitations](service-premium-gen2-what-is.md#considerations-and-limitations).
 
 * **Do I need to update the capacity metrics app for Gen2?**
 

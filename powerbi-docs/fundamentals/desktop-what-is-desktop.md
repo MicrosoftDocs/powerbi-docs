@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview
-ms.date: 03/10/2021
+ms.date: 09/13/2021
 LocalizationGroup: Get started
 #Customer intent: As a data analyst or report creator, I want to know what Power BI Desktop is, so that I can decide whether it has the features and services I need to create reports.
 ms.custom: intro-overview
@@ -127,7 +127,7 @@ To publish a Power BI Desktop report:
 
 ## Next steps
 
-To get started with Power BI Desktop, the first thing you need is to download and install the application. There are two ways to get Power BI Desktop:
+To get started with Power BI Desktop, the first thing you need is to download and install the application. There are a few ways to get Power BI Desktop:
 
 * [Get Power BI Desktop from the Windows Store](https://aka.ms/pbidesktopstore)
 * [Get Power BI Desktop](desktop-get-the-desktop.md)
