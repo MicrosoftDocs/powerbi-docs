@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 1009/20/2022
+ms.date: 09/20/2022
 ---
 
 # View Power BI content shared with you from an external organization
