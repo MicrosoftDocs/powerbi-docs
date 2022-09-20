@@ -14,13 +14,14 @@ ms.date: 09/14/2022
 
 Power BI Embedded has several ways to filter data and restrict data access to specific users. Some of these security methods are:
 
-* **Row-Level Security (RLS)**
-  RLS enables you to control access to rows in a database table through group memberships. When you embed items, you can use RLS to restrict user access to data. With RLS, different users can work with the same items but see different data. To learn more about RLS, see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md).
+* **Row-Level Security (RLS)**  
+  RLS enables you to control access to rows in a database table through group memberships. When you embed items, you can use RLS to restrict user access to specific rows of data. With RLS, different users can work with the same items but see different data. To learn more about RLS, see [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md).
 
-* **Object level security (OLS)**
+* **Object level security (OLS)**  
   OLS enables you to hide specific tables or columns from report viewers. You can also secure sensitive object names and metadata to prevent them from being discovered. To learn more about OLS, see [Object-level security](/analysis-services/tabular-models/object-level-security).
 
-* [Workspace based isolation](./embed-multi-tenancy.md) and multitenancy. In this scenario, each customer has their own separate dataset. Since each customer only has access to their own workspace, no further filtering needed, though this method can be combined with RLS to further filter data within each organization.
+* [**Workspace based isolation**](./embed-multi-tenancy.md) and multitenancy  
+ In this scenario, each customer has their own separate dataset. Since each customer only has access to their own workspace, no further filtering needed, though this method can be combined with RLS to further filter data within each organization.
 
 ## Security measures for different situations
 
@@ -40,11 +41,11 @@ For instructions on how to embed reports or other items, go to the link that bes
 * [Cloud based RLS](cloud-rls.md)
 * [Embedding paginated reports](paginated-reports-row-level-security.md)
 * [SQL Server Analysis Services](sql-server-analysis-services-embed.md)
-* Single sign-on
+* Single sign-on 
 
 ## Considerations and limitations
 
-* Assigning users to roles within the Power BI service doesn't affect RLS or OLS when using an embed token (App owns data scenario only).
+* Assigning users to roles within the Power BI service doesn't affect RLS or OLS when using an embed token (*App owns data* scenario only).
 * Although RLS setting don't apply to admins, members, or contributors, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
 
 ## Next steps
