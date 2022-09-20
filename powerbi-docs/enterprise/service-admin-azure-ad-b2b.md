@@ -4,7 +4,7 @@ description: Power BI enables sharing content with external guest users through 
 author: ajburnle
 ms.author: ajburnle
 manager: kfollis
-ms.reviewer: paulinbar
+ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
