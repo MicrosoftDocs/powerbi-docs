@@ -22,6 +22,8 @@ Anyone can complete the checkout path in [AppSource](https://appsource.microsoft
 
 If you're a billing or global admin of the tenant, you also have the option of paying through Invoicing.
 
+:::image type="content" source="./media/licensing-faq/payment.png" alt-text="Screenshot of billing profile with Invoice selected.":::
+
 ### What happens if the subscription owner leaves the company?
 
 Even if the owner of the subscription leaves the company, tenant admin purchases (typically known as Org purchases) will continue to work as-is. Any license admin (Global Admin, License Admin, User Admin) can manage the licenses. The subscriptions can be managed by any Billing Admin or Global Admin with access to the billing account used for purchase.
