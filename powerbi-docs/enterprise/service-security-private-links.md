@@ -306,7 +306,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * Any uses of external images or themes aren't available when using a private link environment.
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
 * Each private endpoint can be connected to one tenant only. 
-* Datamarts currently don't support Private link using SSMS. Even if you have configured private link, connections to Datamarts using SSMS is through public internet access.
+* Datamarts don't support private links using SSMS. Even with a configured private link, connections to datamarts using SSMS are only supported through public Internet access.
 * If your organization is using **Azure Private Link** in Power BI, modern usage metrics reports will contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents Power BI from capturing Report Page Views and performance data over Private Links. If your organization is using **Azure Private Link** and **Block Public Internet Access** in Power BI, the refresh for the dataset will fail and the usage metrics report will not show any data.
 * The Power BI Premium Capacity Metrics app doesn’t work when private links are enabled.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
