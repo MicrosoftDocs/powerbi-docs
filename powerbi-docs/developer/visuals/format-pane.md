@@ -24,9 +24,9 @@ The Formatting Model supports all the old format pane capabilities, as well as t
 
 To upgrade to API version 5.1.0+, set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
 
-## Update IVisual class to support the new format pane
+## Create a visual that supports the new format pane
 
-To customize settings for the new format pane:
+To create a custom visual that uses the new format pane:
 
 * Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file.
   The following properties are required for each object:
@@ -42,35 +42,12 @@ To customize settings for the new format pane:
 
 * Implement the `getFormattingModel` API to custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions)
 
-## Formatting model
-
-### Define model properties - migrating form older APIs
-
-If you have a custom visual created with an older API and you want to migrate to the new format pane:
-
-Each formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
-
-Capabilities objects properties are persistent to the same schema (the schema wasn't changed) and capabilities `objects` don't requires to be migrated.
-
-For migrating and mapping capabilities object to formatting properties purpose - formatting properties should include descriptor parameter (formatting model object - see images below) with same object name and property name that exist in capabilities
-
-For example:
-
-Capabilities objects:
-
-Formatting Property of type ColorPicker
-
-You will see errors if:
-
-1. Object name or property name doesn’t match the name in capabilities and formatting model
-2. Property type in capabilities file doesn’t match the type in formatting model
-
 ## Formatting model components
 
-The formatting model has five basic components:
+In the new formatting model, properties are grouped together in logical categories and and components to make it easier to scan. There are five basic components:
 
 * Formatting model  
-  The formatting pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
+  The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
 
 * Formatting card  
   The top level properties grouping container for formatting properties. Each card consists of a list of formatting groups.
@@ -166,3 +143,23 @@ For now we have two composite slice types:
   | Top         | Numeric                   | NumUpDown        |
   | Bottom      | Numeric                   | NumUpDown        |
   
+## Migrate from older APIs
+
+If you have a custom visual created with an older API and you want to migrate to the new format pane:
+
+Each formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
+
+Capabilities objects properties are persistent to the same schema (the schema wasn't changed) and capabilities `objects` don't requires to be migrated.
+
+For migrating and mapping capabilities object to formatting properties purpose - formatting properties should include descriptor parameter (formatting model object - see images below) with same object name and property name that exist in capabilities
+
+For example:
+
+Capabilities objects:
+
+Formatting Property of type ColorPicker
+
+You will see errors if:
+
+1. Object name or property name doesn’t match the name in capabilities and formatting model
+2. Property type in capabilities file doesn’t match the type in formatting model
