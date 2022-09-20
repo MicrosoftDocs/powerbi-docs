@@ -39,7 +39,7 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 ## Considerations and limitations
 
 * The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. WebView2 comes standard on recent Windows versions, but if you get an error when you try to use the add-in, you may need to install it manually. See [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md) for details.
-* The add-in currently supports Power BI report pages only. Dashboards and paginated reports are not supported.
+* The add-in currently supports Power BI report pages only. Other types of items such as dashboards and paginated reports are not supported.
 * [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios are not supported.
 * The add-in is not supported in national clouds.
 
