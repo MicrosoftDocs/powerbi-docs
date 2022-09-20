@@ -93,7 +93,7 @@ You need the same license to create a quick report as you do to create any other
 
 - If you use the **Paste or manually enter data** option, there’s currently no way to update the data later. If you want to add, modify, or delete data later, you need to go through the **Create** workflow again and get a new report.  
 - If you have a CSV or Excel file, you need to use the paste option to add your data. A file upload option is coming later. 
-- When copying data into the **Enter data** window, the size of data you paste in can't exceed 512 KB. 
+- When copying data into the **Enter data** window, the size of data you paste can't exceed 512 KB. 
 - The table name can’t be longer than 80 characters, and column names can’t be longer than 512 characters.  
 - Table and column names can’t contain double quotes ("), periods (.), or leading or trailing white spaces.  
 
