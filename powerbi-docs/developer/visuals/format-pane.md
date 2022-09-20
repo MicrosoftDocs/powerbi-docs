@@ -12,15 +12,15 @@ ms.date: 09/19/2022
 
 # The Format pane in Power BI visuals
 
-Starting from API version 5.1, developers can customize visuals using the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their subcategories for any custom property in their custom visual, making it easier for report creators to use custom visuals.
+Starting from API version 5.1, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their subcategories for any custom property in their custom visual, making it easier for report creators to use these visuals.
 
-The new API uses the **Formatting model** to customize parts of the format and analytics pane.
+The new API uses the **FormattingModel** method to customize parts of the format and analytics pane.
 
-In the new API, you call the `getFormattingModel` model instead of the `enumerateObjectInstances` model used in previous versions.
+You call the `getFormattingModel` model instead of the `enumerateObjectInstances` model used in previous versions.
 
-In the `getFormattingModel`, you create a `FormattingModel` which defines the custom formatting of the new visual's formatting and analytics pane.
+The `getFormattingModel` returns a `FormattingModel`, that defines the how the visual's formatting and analytics pane look.
 
-The Formatting Model supports all the old format pane capabilities as well as the new format pane capabilities, new properties and new hierarchies.
+The Formatting Model supports all the old format pane capabilities, as well as the new format pane capabilities, new properties and new hierarchies.
 
 To upgrade to API version 5.1.0+, set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
 
@@ -29,7 +29,7 @@ To upgrade to API version 5.1.0+, set the `apiVersion` in your *pbiviz.json* fil
 To customize settings for the new format pane:
 
 * Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file.
-  The following object properties are required:
+  The following properties are required for each object:
 
   * object name
   * property name
@@ -37,7 +37,7 @@ To customize settings for the new format pane:
   
   All other properties, including DisplayName and description, are now optional.
 
-* Build the custom visual [**formatting model**](#formatting-model).
+* Build the custom visual [**FormattingModel**](#formatting-model).
   Define the design of your custom visual formatting model and build it using code (not JSON).
 
 * Implement the `getFormattingModel` API to custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions)
@@ -45,6 +45,8 @@ To customize settings for the new format pane:
 ## Formatting model
 
 ### Define model properties - migrating form older APIs
+
+If you have a custom visual created with an older API and you want to migrate to the new format pane:
 
 Each formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
 
@@ -62,6 +64,25 @@ You will see errors if:
 
 1. Object name or property name doesn’t match the name in capabilities and formatting model
 2. Property type in capabilities file doesn’t match the type in formatting model
+
+## Formatting model components
+
+The formatting model has five basic components:
+
+* Formatting model  
+  The formatting pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
+
+* Formatting card  
+  The top level properties grouping container for formatting properties. Each card consists of a list of formatting groups.
+
+* Formatting group
+  The secondary-level properties grouping container. The formatting group is displayed as a grouping container for formatting slices.
+
+* Formatting slice
+  Property container. There are two types of slices:
+  
+  * Simple slice: Individual property container
+  * Composite slice: Multiple related property containers grouped into one formatting slice
 
 ## Visualization pane properties
 
