@@ -61,6 +61,8 @@ In the new formatting model, properties are grouped together in logical categori
   * Simple slice: Individual property container
   * Composite slice: Multiple related property containers grouped into one formatting slice
 
+:::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined.":::
+
 ## Visualization pane properties
 
 To build formatting model we need to:
