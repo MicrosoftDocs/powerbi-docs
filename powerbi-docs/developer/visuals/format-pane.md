@@ -37,10 +37,10 @@ To create a custom visual that uses the new format pane:
   
   All other properties, including DisplayName and description, are now optional.
 
-* Build the custom visual [**FormattingModel**](#formatting-model).
+* Build the custom visual [**FormattingModel**](#formatting-model-components).
   Define the design of your custom visual formatting model and build it using code (not JSON).
 
-* Implement the `getFormattingModel` API to custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions)
+* Implement the `getFormattingModel` API to the custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions).
 
 ## Formatting model components
 
@@ -59,51 +59,46 @@ In the new formatting model, properties are grouped together in logical categori
   Property container. There are two types of slices:
   
   * Simple slice: Individual property container
-  * Composite slice: Multiple related property containers grouped into one formatting slice
+  * [Composite slice](#composite-slice-properties): Multiple related property containers grouped into one formatting slice
 
 :::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined.":::
 
-## Visualization pane properties
+### Visualization pane properties
 
 To build formatting model we need to:
-1.	Define objects in capabilities and define their types
-2.	Build formatting model including formatting properties with matching object type.
+
+1. Define each `object` and type in the *capabilities.json*
+2. Build a formatting model that includes all the formatting properties with their matching object type from the *capabilities.json* file.
 
 The following table shows the formatting property types in capabilities and their match type class in modern formatting model properties:
 
 | Type             | Capabilities Value Type | Formatting Property  |
 |------------------|-------------------------|----------------------|
 | Boolean          | Bool                    | ToggleSwitch         |
-| Number           |  numeric integer        | NumUpDown Slider     |
-| Enumeration list | enumeration:[]          | ItemDropdown, ItemFlagsSelection        |
+| Number           | numeric integer         | NumUpDown Slider     |
+| Enumeration list | enumeration:[]          | See note below        |
 | Color            | Fill                    | ColorPicker          |
-| Gradient         | FillRule                | GradientBar          |
+| Gradient         | FillRule                | GradientBar: property value should be string consisting of: “minValue[,midValue],maxValue”          |
 | Date / Time      |                         | DatePicker           |
 | Text             | Text                    | TextInput, TextArea  |
-
-
-* ItemDropdown and ItemFlagsSelection enumeration items should be added in formatting model in custom visual class
-
-*AutoDropdown and AutoFlagSelection enumeration items should be added in capabilities in enumeration array as it used to be till today
-Color	Fill 	ColorPicker
-Gradient 	FillRule	GradientBar
-* property value should be string consist of:
-“minValue[,midValue],maxValue”
-Date / Time	TODO	DatePicker
-Text	Text	TextInput
-TextArea
-
-Capabilities Formatting Objects
-
-| Type                | Capabilities Value Type | Formatting Property |
-|---------------------|-------------------------|---------------------|
+|                  |Capabilities Formatting Objects|                  |
 | Font size           | FontSize                | NumUpDown           |
 | Font family         | FontFamily              | FontPicker          |
 | Line Alignment      | Alignment               | AlignmentGroup      |
 | Label Display Units | LabelDisplayUnits       | AutoDropDown        |
-| Format String       | FormatString            | Todo                |
+| Format String       | FormatString            |                     |
 
-## Composite slice properties
+Note: Enumeration list formatting property is different in the formatting model and in the capabilities file.
+
+* In the formatting model use one of the following:
+  * ItemDropdown
+  * ItemFlagsSelection  
+
+* In the capabilities file, use one of the following (same as in the previous API versions)
+  * AutoDropdown
+  * AutoFlagSelection  
+
+### Composite slice properties
 
 A formatting composite slice is a formatting slice that contains multiple related properties all together.
 
@@ -129,7 +124,7 @@ For now we have two composite slice types:
   | Underline   | Bool                      | ToggleSwitch     |
 
 * MarginPadding
-  Margin padding consists of the following properties:
+  Margin padding determines the alignment of the text in the visual. It consists of the following properties:
   
   * Left
   * Right
