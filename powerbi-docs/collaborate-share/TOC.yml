@@ -145,10 +145,9 @@
     - name: Share datasets with in-place dataset sharing
       href: service-dataset-external-org-share-provider.md
     - name: Access datasets shared externally in your own tenant
-      href: service-dataset-external-org-share-consumer.md
+      href: service-dataset-external-org-share-view.md
     - name: Information for Power BI admin
       href: service-dataset-external-org-share-admin.md
-=======
   - name: Power BI in Power Apps solutions
     items: 
     - name: About the Power BI/PowerApps solutions integration
@@ -159,6 +158,5 @@
       href: service-power-bi-powerapps-integration-using.md
     - name: Considerations working with the Power Apps/Power BI integration
       href: service-power-bi-powerapps-integration-considerations.md
->>>>>>> daa8195a07902f131730be75fb3d0e86f0a5e4e6
   - name: "Use third-party apps"
     href: service-power-bi-get-started-third-party-apps.md
