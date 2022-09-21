@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 You can use the Azure Private Link feature to provide secure access for data traffic in Power BI. Azure networking provides the Azure Private Link feature. In this configuration, Azure Private Link and Azure Networking private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure. The data travels the Microsoft private network backbone instead of going across the Internet.
 
-Private endpoints make sure that Power BI users go through the Microsoft private network backbone when they access resources in the Power BI service.
+When private link connections are used, those connections go through the Microsoft private network backbone when Power BI users access resources in the Power BI service.
 
 See [What is Azure Private Link](/azure/private-link/private-link-overview) to learn more about Azure Private Link.
 
