@@ -122,6 +122,8 @@
       href: custom-visual-licenses.md
     - name: "License enforcement API"
       href: licensing-api.md
+    - name: Transactability and licensing FAQ
+      href: licensing-faq.md
   - name: Reference
     items: 
     - name: "Changelog"
