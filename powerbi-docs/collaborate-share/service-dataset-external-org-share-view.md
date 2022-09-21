@@ -26,7 +26,7 @@ Once enabled on provider side, consumers will be able to see the datasets in the
  
 1. Select **External data** to see a list of external datasets that have been shared with you.
 
-1. Select the dataset you wish to access or build a report with. Once you select the dataset it becomes a [*composite model*](../transform-model/desktop-composite-models). 
+1. Select the dataset you wish to access or build a report with. Once you select the dataset it becomes a [*composite model*](../transform-model/desktop-composite-models.md). 
 
 1. Once you've accessed the dataset, you can perform one of the following actions: 
 

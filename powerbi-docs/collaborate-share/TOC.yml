@@ -137,7 +137,6 @@
       href: service-automate-paginated-local-file.md
     - name: "Power Automate button visual"
       href: ../create-reports/power-bi-automate-visual.md
-<<<<<<< HEAD
   - name: Share Power BI datasets with external users
     items: 
     - name: About in-place dataset sharing
