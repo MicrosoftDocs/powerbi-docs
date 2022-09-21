@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 07/31/2022
+ms.date: 09/21/2022
 ---
 
 # Get started with deployment pipelines
@@ -258,6 +258,14 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
     >[!NOTE]
     >Deployment will not impact *missing from* items.
+
+The comparison is designed to help you understand the difference between the stages. In the comparison display, items are arranged according to the logic listed below.
+
+1. The source workspace is ordered by type in alphabetical order.
+
+2. The target workspace is ordered according to the source workspace. Each item resides in the same row as its equivalent item in the source stage.
+
+3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of the list according to their type in alphabetical order
 
 :::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
 
