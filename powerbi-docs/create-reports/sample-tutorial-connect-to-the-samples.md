@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 08/04/2021
+ms.date: 09/20/2022
 LocalizationGroup: Samples
 ---
 # Tutorial: Explore a Power BI sample
@@ -107,7 +107,9 @@ The Q&A feature in Power BI lets you explore your data in your own words, asking
 1. In the upper-right corner, select **Pin visual**. 
 1. Pin your new visual to your existing dashboard, **Retail Analysis Sample**.
 
-1. Select **Exit Q&A**. Power BI added your new tile at the end of the dashboard. You can resize it and drag it anywhere you want on the dashboard. You see how the other tiles move to make way for it.
+1. Select **Exit Q&A**.
+
+   Power BI added your new tile at the end of the dashboard. You can resize it and drag it anywhere you want on the dashboard. You see how the other tiles move to make way for it.
 
     :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-dashboard-this-years-sales-store.png" alt-text="Rearrange the tiles on the dashboard.":::
 
@@ -160,7 +162,7 @@ Unlike editing a report in the Power BI service, in Power BI Desktop you can als
 
     ![Screenshot showing the Retail Analysis sample in Power BI report view.](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
-1. The file opens in Report view. Notice the four tabs at the bottom of the report editor; these tabs represent the four pages in this report. For this example, the **New Stores** page is currently selected.
+    The file opens in Report view. Notice the four tabs at the bottom of the report editor; these tabs represent the four pages in this report. For this example, the **New Stores** page is currently selected.
 
     ![New Stores tab highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png)
 
