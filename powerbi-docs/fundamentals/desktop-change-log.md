@@ -16,6 +16,14 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## September 2022 QFE 1
+
+*Version: 2.109.782.0, Released: September 20, 2022*
+
+Bug fixes/improvements:
+* Fix for Card visual: users can now set and modify the conditional formatting options to callout value color.
+* Fix for charts with multiple series: conditional formatting will now correctly apply multiple colors to data labels.
+
 ## August 2022 QFE 2
 
 *Version: 2.108.997.0, Released: August 25, 2022*
