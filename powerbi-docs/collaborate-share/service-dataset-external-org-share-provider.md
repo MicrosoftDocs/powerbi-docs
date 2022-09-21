@@ -40,15 +40,15 @@ Data providers can use in-place dataset sharing (preview) to share datasets with
 
 1. Open the dataset that you want to share with external users 
 
-1. Share the dataset with an external user. For more information on “sharing with external users” click here. 
+1. Share the dataset with an external user. 
 
-> [!NOTE] 
-> Only registered guest users in your Azure AD tenant can access the shared dataset. Registered guest users will be tagged as **EXT** in their domain name to show they're an external guest.
+    > [!NOTE] 
+    > Only registered guest users in your Azure AD tenant can access the shared dataset. Registered guest users will be tagged as **EXT** in their domain name to show they're an external guest.
 
 1. External users need to have at least “Build” access to the dataset to access datasets in their own tenant. So, select the **Allow recipients to build content with the data associated with this dataset** checkbox. 
 
-> [!NOTE] 
-> The **Allow recipients to modify this dataset** option is not supported for B2B external sharing. So, guests won't be able to modify the source dataset. This means that even if this option is checked, external guests can't change the dataset. 
+    > [!NOTE] 
+    > The **Allow recipients to modify this dataset** option is not supported for B2B external sharing. So, guests won't be able to modify the source dataset. This means that even if this option is checked, external guests can't change the dataset. 
 
 1. Click **Grant access**. 
 

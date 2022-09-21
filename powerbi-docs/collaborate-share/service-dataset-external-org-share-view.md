@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Access shared datasets in Power BI as a guest user from an external organization (preview) - consumer
 
-External data consumers can view and access datasets in their own tenants that have been shared with them by a data provider via in-place dataset sharing (preview). A data consumer is the a user who doesn't own the dataset, but needs to access it. This article provides guidance on how to access and build reports in your own tenant based on external datasets in other tenants that have been shared with you.
+External data consumers can view and access datasets in their own tenants that have been shared with them by a data provider via in-place dataset sharing (preview). A data consumer is a user who doesn't own the dataset, but needs to access it. This article provides guidance on how to access and build reports in your own tenant based on external datasets in other tenants that have been shared with you.
 
 ## Access shared datasets
 Once enabled on provider side, consumers will be able to see the datasets in the data hub in Power BI Desktop, on a tab called *External data*. Use the following instructions to access and build reports with a dataset that a data provider shared to your tenant:
@@ -30,25 +30,24 @@ Once enabled on provider side, consumers will be able to see the datasets in the
 
 1. Once you've accessed the dataset, you can perform one of the following actions: 
 
-    1. Save the dataset as a *.pbix* file. 
+    - Save the dataset as a *.pbix* file. 
 
-    1. Publish it to the Power BI service.
+    - Publish it to the Power BI service.
 
-    1. Combine its data with other available datasets. 
+    - Combine its data with other available datasets. 
 
-    1. Build a report based on this model.
+    - Build a report based on this model.
 
 ## Publish reports made from shared datasets
 
 1. After publishing a *.pbix* file with external data reference, consumers can do the following: 
 
-    1. Build further reports on top of the existing report
+    - Build further reports on top of the existing report
 
-    1. Share any content built on top with others in their organization
+    - Share any content built on top with others in their organization
 
 > [!Note]
 > For others to have access to a composite model or content built on top of an external dataset, they must also have access to the underlying external data..
 
 ## Next steps
 - [Use composite models](../transform-model/desktop-composite-models.md#use-composite-models)
-- 
