@@ -32,7 +32,7 @@ Just like in normal Power BI reports, you can cross-highlight visuals and use th
  
 ## Show data table
 
-You can see the whole data table that the report is based on.
+You can see the whole data table that the report is based on. Measures aren't currently included in the data table.
 
 - Select **Show data table** to see the entire table you’re visualizing.
 
@@ -46,7 +46,7 @@ If the report that you’re visualizing is based on a single table, select the *
 
 ### Report with multiple tables
  
-If the report that you’re visualizing is based on a dataset with multiple tables, the **Show data table** button becomes a dropdown menu where you pick the table you want to view. Measures aren't currently included in the data table.
+If the report that you’re visualizing is based on a dataset with multiple tables, the **Show data table** button becomes a dropdown menu where you pick the table you want to view.
 
 :::image type="content" source="media/service-interact-quick-report/show-data-table-dropdown.png" alt-text="Show data table dropdown menu.":::
 
