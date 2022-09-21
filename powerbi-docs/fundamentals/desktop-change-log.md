@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 8/25/2022
+ms.date: 09/21/2022
 ---
 
 # Change log for Power BI Desktop
