@@ -90,7 +90,7 @@ For information about editing artifacts in the workspace, see
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
+Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#create-and-publish-your-app) to learn how to do this.
 
 ## Update a template app
 

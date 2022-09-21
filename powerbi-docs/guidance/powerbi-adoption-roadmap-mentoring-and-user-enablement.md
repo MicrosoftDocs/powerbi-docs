@@ -106,7 +106,7 @@ Once the content has been deployed to the Power BI service, the best practices r
 
 - The target [workspace](../collaborate-share/service-create-the-new-workspaces.md) is suitable for the content.
 - [Workspace security roles](../collaborate-share/service-roles-new-workspaces.md) are appropriate for the content.
-- Other permissions ([app permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app), [build permission](../connect-data/service-datasets-build-permissions.md), use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
+- Other permissions ([app audience permissions](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences), [build permission](../connect-data/service-datasets-build-permissions.md), use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
 - [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
 - [Sensitivity labels](../enterprise/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
 - Power BI item [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
@@ -199,12 +199,12 @@ How the COE invests its time in creating and curating training materials will ch
 
 A curated set of online resources is valuable to help community members focus and direct their efforts on what's important. Some publicly available training resources you might find helpful include:
 
-- [Microsoft Learn](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+- [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
 - [Power BI courses and "in a day" training materials](https://aka.ms/pbitraining).
 - [LinkedIn Learning](https://www.linkedin.com/learning/topics/power-bi).
 - [Virtual workshops and training](https://www.microsoft.com/store/workshops-training-and-events/#keyword=Power%20BI).
 
-Consider using [Microsoft Viva Learning](https://resources.techcommunity.microsoft.com/viva-learning/), which is integrated into Microsoft Teams. It includes content from sources such as [Microsoft Learn](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) and [LinkedIn Learning](https://www.linkedin.com/learning/topics/power-bi). Custom content produced by your organization can be included as well.
+Consider using [Microsoft Viva Learning](https://resources.techcommunity.microsoft.com/viva-learning/), which is integrated into Microsoft Teams. It includes content from sources such as [Microsoft Learn](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) and [LinkedIn Learning](https://www.linkedin.com/learning/topics/power-bi). Custom content produced by your organization can be included as well.
 
 In addition to Microsoft content and custom content produced by your organization, you may choose to provide your user community with a curated set of recommended links to trusted online sources. There is a wide array of videos, blogs, and articles produced by the worldwide community. The community comprises Power BI experts, [Microsoft Most Valued Professions (MVPs)](https://mvp.microsoft.com/), and enthusiasts. Providing a curated learning path that contains specific, reputable, current, and high quality resources will provide the most value to your user community.
 

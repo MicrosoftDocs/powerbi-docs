@@ -16,7 +16,7 @@ ms.date: 07/31/2022
 
 This article walks you through the basic settings required for using deployment pipelines in Power BI service. It's recommended to read the [deployment pipelines introduction](deployment-pipelines-overview.md), before you proceed.
 
-You can also complete the [Create and manage a Power BI deployment pipeline](/learn/modules/power-bi-deployment-pipelines) Learn module, which shows how to create a deployment pipeline.
+You can also complete the [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines) Learn module, which shows how to create a deployment pipeline.
 
 >[!NOTE]
 >In a deployment pipeline, one workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
