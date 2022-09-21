@@ -14,6 +14,49 @@ ms.date: 09/19/2022
 
 This article answers some of the questions users often have about how to set up, pay for, and manage licenses for custom Power BI visuals that they purchase from [AppSource](https://appsource.microsoft.com/).
 
+## Purchasing
+
+### Who can purchase a visual license?
+
+*Anyone* can purchase a license, and assign the license to themselves or others.
+
+### Do we need to have Power BI Premium to purchase Licenses?
+
+No. any user can purchase visual licenses in AppSource.
+
+### We have a Power BI Enterprise agreement with Microsoft. Is this included under that agreement?  
+
+Not yet.  
+
+### How do we negotiate site licensing or private custom offers?
+
+Private offers and site licensing aren't supported yet. You can, however create Private Plans. [Learn more about private plans](/azure/marketplace/private-plans).
+
+### Can we buy in local currency?
+
+Yes.
+
+### Can we do multi-year license purchase instead of one year at a time?
+
+Not yet.  
+
+### How do I know if someone in my company has already purchased this same visual?
+
+If you're a company administrator, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) to see all subscriptions and to whom they're assigned.  
+If you aren't an administrator, speak to the administrator in your company.
+
+### Can we use a visual without having to upload it to organization visual?
+
+Yes. You can download a visual directly to your reports.  
+
+### How do we get upgrades of the visuals?  
+
+The AppSource visuals are updated automatically when a new version is available.
+
+### What is the refund policy?
+
+You're eligible for a full refund if you cancel your subscription within seven days of purchase. Refunds aren’t available for subscriptions canceled after that time period.
+
 ## License assignment
 
 ### How can I pay for the visuals?
@@ -61,41 +104,8 @@ You can assign licenses to users in the same tenant that you purchased subscript
 
 As a billing or global admin, you can see all subscriptions in the Microsoft 365 admin center, and you can cancel them.
 
-## Purchasing
+## Next steps
 
-### Do we need to have Power BI Premium to purchase Licenses?   
+[Licensing models](custom-visual-licenses.md)
 
-No. any user can purchase visual licenses in AppSource.
-
-### We have a Power BI Enterprise agreement with Microsoft. Is this included under that agreement?  
-
-Not yet.  
-
-### How do we negotiate site licensing or private custom offers?
- 
-Private offers and site licensing aren't supported yet. You can, however create Private Plans. [Learn more about private plans](/azure/marketplace/private-plans).
-
-### Can we buy in local currency?
-
-Yes.
-
-### Can we do multi-year license purchase instead of one year at a time?
-
-Not yet.  
-
-### How do I know if someone in my company has already purchased this same visual?
-
-If you're a company administrator, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) to see all subscriptions and to whom they're assigned.  
-If you aren't an administrator, speak to the administrator in your company.
-
-### Can we use a visual without having to upload it to organization visual?
-
-Yes. You can download a visual directly to your reports.  
-
-### How do we get upgrades of the visuals?  
-
-The AppSource visuals are updated automatically when a new version is available.
-
-### What is the refund policy?
-
-You're eligible for a full refund if you cancel your subscription within seven days of purchase. Refunds aren’t available for subscriptions canceled after that time period.
+More questions? [Ask the Power BI Community](https://community.powerbi.com)
