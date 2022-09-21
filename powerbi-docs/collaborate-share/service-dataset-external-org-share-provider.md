@@ -8,16 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/19/2022
+ms.date: 09/21/2022
 LocalizationGroup: Administration
 ---
 
 # Use Power BI in-place dataset sharing (preview) to share datasets with external users - data provider
 
-Data providers can use in-place dataset sharing (preview) to share datasets with external users that they can access in their organization's tenant. A data provider is the source data owner who intends to share a dataset externally with a data consumer (external user). This article provides guidance on how to enable external sharing and share data sets.
+Data providers can use in-place dataset sharing (preview) to share datasets with external users that they can access in their organization's tenant. A data provider is the source data owner who intends to share a dataset externally with a data consumer (external user). This article provides guidance on how to enable external sharing and share datasets.
 
 > [!NOTE]
-> Before a data provider can share, there are two new tenant settings that must be enabled for the specified data provider by their tenant admins. For more information about these settings, see [Information for Power BI administrators](./service-dataset-external-org-share-admin.md).
+> Before a data provider can share, there are two new tenant settings that must be enabled for the specified data provider by their Power BI admins. For more information about these settings, see [Information for Power BI administrators](./service-dataset-external-org-share-admin.md).
 
 ## Enable external sharing 
 
@@ -29,10 +29,12 @@ Data providers can use in-place dataset sharing (preview) to share datasets with
 
 1. Scroll to the bottom of the page and click on the dropdown for **External sharing**. 
 
-1. Turn on the external sharing switch and click **Apply**. This will allow external users (who have at least “build” access to this dataset) to discover, connect to, and work with this dataset within their own Power BI tenant”. 
+1. Turn on the external sharing switch and click **Apply**. This will allow external users (who have at least “build” access to this dataset) to discover, connect to, and work with this dataset within their own Power BI tenant”.
+
+     ![Screenshot of the dataset settings with the external sharing settings set to apply.](media/service-dataset-external-org-share-provider/external-sharing-dataset.png)
 
 > [!NOTE] 
-> If **Allow specific users to turn on external data sharing** is disabled by the tenant admin for the specific user/user groups, they won't be able to turn on this dataset property.  
+> If **Allow specific users to turn on external data sharing** is disabled by the Power BI admin for the specific user/user groups, they won't be able to turn on this dataset property.  
 
 ## Share the Dataset 
 
@@ -48,6 +50,9 @@ Data providers can use in-place dataset sharing (preview) to share datasets with
 > [!NOTE] 
 > The **Allow recipients to modify this dataset** option is not supported for B2B external sharing. So, guests won't be able to modify the source dataset. This means that even if this option is checked, external guests can't change the dataset. 
 
-1. Click **Grant access**.  
+1. Click **Grant access**. 
+
+    ![Screenshot of the dataset how to grant access to a dataset.](media/service-dataset-external-org-share-provider/share-dataset.png)
 
 ## Next steps
+- [Access shared datasets in Power BI as a guest user from an external organization (preview)](service-dataset-external-org-share-view.md)
