@@ -1,5 +1,5 @@
 ---
-title: Share B2B datasets with external guest users (preview)
+title: Power BI in-place dataset sharing with guest users in external organizations(preview)
 description: Learn about Power BI in-place dataset sharing which allows you to share datasets with external guest users in their own tenants.
 author: ajburnle
 ms.author: ajburnle
@@ -12,7 +12,7 @@ ms.date: 09/21/2022
 LocalizationGroup: Administration
 ---
 
-# About Power BI in-place dataset sharing with guest users in external organizations
+# About Power BI in-place dataset (preview) sharing with guest users in external organizations
 
 The B2B dataset sharing capability (preview) allows customers to share datasets with external users that external users can access in their organization's tenant. **In-place dataset sharing** means that data providers can allow authorized guest users to work with shared datasets in their own Power BI tenants.
 
