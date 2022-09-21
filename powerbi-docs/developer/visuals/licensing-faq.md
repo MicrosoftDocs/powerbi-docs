@@ -103,3 +103,9 @@ You can assign licenses to users in the same tenant that you purchased subscript
 ### As an admin, can I cancel offer purchase from AppSource?
 
 As a billing or global admin, you can see all subscriptions in the Microsoft 365 admin center, and you can cancel them.
+
+## Next steps
+
+[Licensing models](custom-visual-licenses.md)
+
+More questions? [Ask the Power BI Community](https://community.powerbi.com)
