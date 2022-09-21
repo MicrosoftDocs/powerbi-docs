@@ -63,7 +63,7 @@ In the new formatting model, properties are grouped together in logical categori
 
 :::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined.":::
 
-### Visualization pane properties
+### Visualization pane formatting properties
 
 To build formatting model we need to:
 
@@ -76,17 +76,17 @@ The following table shows the formatting property types in capabilities and thei
 |------------------|-------------------------|----------------------|
 | Boolean          | Bool                    | ToggleSwitch         |
 | Number           | numeric integer         | NumUpDown Slider     |
-| Enumeration list | enumeration:[]          | See note below        |
+| Enumeration list | enumeration:[]          | See note below       |
 | Color            | Fill                    | ColorPicker          |
 | Gradient         | FillRule                | GradientBar: property value should be string consisting of: “minValue[,midValue],maxValue”          |
 | Date / Time      |                         | DatePicker           |
 | Text             | Text                    | TextInput, TextArea  |
-|                  |Capabilities Formatting Objects|                  |
-| Font size           | FontSize                | NumUpDown           |
-| Font family         | FontFamily              | FontPicker          |
-| Line Alignment      | Alignment               | AlignmentGroup      |
-| Label Display Units | LabelDisplayUnits       | AutoDropDown        |
-| Format String       | FormatString            |                     |
+|                  |Capabilities Formatting Objects|                |
+| Font size           | FontSize             | NumUpDown            |
+| Font family         | FontFamily           | FontPicker           |
+| Line Alignment      | Alignment            | AlignmentGroup       |
+| Label Display Units | LabelDisplayUnits    | AutoDropDown         |
+| Format String       | FormatString         |                      |
 
 Note: Enumeration list formatting property is different in the formatting model and in the capabilities file.
 
@@ -144,19 +144,57 @@ For now we have two composite slice types:
 
 If you have a custom visual created with an older API and you want to migrate to the new format pane:
 
-Each formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
+1. Set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
+
+2. For each object name and property name in *capabilities.json*, 
+1. 
+1. Each formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
 
 Capabilities objects properties are persistent to the same schema (the schema wasn't changed) and capabilities `objects` don't requires to be migrated.
 
 For migrating and mapping capabilities object to formatting properties purpose - formatting properties should include descriptor parameter (formatting model object - see images below) with same object name and property name that exist in capabilities
 
-For example:
+For example, if your capabilities objects looks like this:
 
-Capabilities objects:
+```json
+"objects": {
+    "circle": {
+        "displayName": "Circle",
+        "properties": {
+            "circleColor": {
+                "displayName": "Color",
+                "description": "The fill color of the circle.",
+                "type": {
+                    "fill": {
+                        "solid": {
+                            "color": true
+                        }
+                    }
+                  }
+          },
+        }
+      }
+    }
+```
 
-Formatting Property of type ColorPicker
+The formatting Property in your model should be of type `ColorPicker` and look like this:
 
-You will see errors if:
+```javascript
+control: {
+    type: "ColorPicker",
+    properties: {
+        descriptor: {
+            objectName: "circle",
+            propertyName: "circleColor"
+        },
+        value: {
+            value: this.visualSettings.circle.circleColor
+        }
+    }
+}
+```
 
-1. Object name or property name doesn’t match the name in capabilities and formatting model
-2. Property type in capabilities file doesn’t match the type in formatting model
+You'll get an error if one of the following conditions is true:
+
+* The object or property name in the capabilities file doesn’t match the one in the formatting model
+* The property type in the capabilities file doesn’t match the type in formatting model
