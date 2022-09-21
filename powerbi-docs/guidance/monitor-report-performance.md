@@ -54,7 +54,7 @@ Use SQL Server Profiler when your data source is either:
 - Azure Analysis Services
 
 > [!CAUTION]
-> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is supported [only for specific operations](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-external-tools#supported-write-operations). Other changes to the data model with operations that are not supported may lead to corruption and data loss.
+> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is supported [only for specific operations](/power-bi/transform-model/desktop-external-tools#supported-write-operations). Other changes to the data model with operations that aren't supported may lead to corruption and data loss.
 
 To create a SQL Server Profiler trace, follow these instructions:
 
