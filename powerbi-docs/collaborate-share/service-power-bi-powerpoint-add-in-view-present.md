@@ -108,6 +108,9 @@ Expands or collapses the toolbar across the bottom of the report. This feature i
 
 * **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
 
+> [!NOTE]
+> The add-in side pane is available only in the PowerPoint desktop application. It isn't support in PowerPoint for the web.
+
 ## Keyboard Shortcuts
 
 To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
