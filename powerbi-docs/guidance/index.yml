@@ -5,14 +5,15 @@ summary: "Power BI guidance documentation provides best practice information fro
 metadata:
   title: Power BI guidance documentation
   description: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."  
+  author: peter-myers
+  ms.author: v-petermyers
+  ms.reviewer: maroche
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-resource
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 01/14/2020
+  ms.date: 09/22/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
