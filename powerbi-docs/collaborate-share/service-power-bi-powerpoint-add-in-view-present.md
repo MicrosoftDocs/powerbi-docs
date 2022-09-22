@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/19/2022
+ms.date: 09/22/2022
 ---
 
 # View and present live Power BI report pages in PowerPoint (preview)
@@ -24,7 +24,7 @@ In the add-in, you see:
 
 * The report page. The report page is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-the-current-view). The left-hand page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
 * A toolbar across the bottom of the report page. The toolbar contains report info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
-* A Show/Hide arrow at the upper right side that opens the add-in side pane. The add-in side pane contains additional controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
+* A Show/Hide arrow at the upper right side that opens the add-in side pane (desktop application only). The add-in side pane contains additional controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
 
 To get a cleaner view and more space for the report page, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
 
@@ -51,6 +51,9 @@ Every time you open your presentation, the report page reloads into the add-in, 
 ![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
 
 To restore the interactive view, select the Show as Saved Image option again. The live report page will reload in the state it was last in, but with the latest data from Power BI.
+
+> [!NOTE]
+> **Show as Saved Image** is available only in the PowerPoint desktop application. PowerPoint for the web doesn't support the add-in side menu.
 
 ## Share your presentation
 
