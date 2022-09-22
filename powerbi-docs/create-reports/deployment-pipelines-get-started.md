@@ -261,11 +261,11 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
 The comparison is designed to help you understand the difference between the stages. In the comparison display, items are arranged according to the logic listed below.
 
-1. The source workspace is ordered by type in alphabetical order.
+1. The source workspace items are grouped according to their type, and ordered alphabetically. The group types are arranged according to the flow of data, for example datasets, reports and dashboards.
 
 2. The target workspace is ordered according to the source workspace. Each item resides in the same row as its equivalent item in the source stage.
 
-3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of the list according to their type in alphabetical order
+3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
 
 :::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
 
