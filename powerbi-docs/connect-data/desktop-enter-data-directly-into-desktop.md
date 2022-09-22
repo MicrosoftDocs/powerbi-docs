@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/14/2020
+ms.date: 09/22/2022
 LocalizationGroup: Connect to data
 ---
 # Enter data directly into Power BI Desktop
