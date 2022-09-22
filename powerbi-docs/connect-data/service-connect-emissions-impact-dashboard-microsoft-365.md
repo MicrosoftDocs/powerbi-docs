@@ -47,6 +47,7 @@ The Emissions Impact Dashboard for Microsoft 365 reports datacenter emissions an
 * Word
 * Excel
 * PowerPoint
+* Outlook
 
 ## Install the app
 
