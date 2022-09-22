@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/02/2021
+ms.date: 09/12/2022
 LocalizationGroup: Create reports
 ---
 # Create a responsive slicer you can resize in Power BI
@@ -20,37 +20,20 @@ Responsive slicers resize to fit any space on your report. With responsive slice
 
 ## Create a slicer
 
-# [Power BI Desktop](#tab/powerbi-desktop)
-The first step to creating a dynamic slicer is to create a basic slicer. 
+The first step to creating a dynamic slicer is to create a basic slicer.
 
 1. Select the **Slicer** icon ![Slicer icon](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) in the **Visualizations** pane.
 2. Drag the field you want to filter on to **Field**.
 
     ![Screenshot shows adding a field to the slicer in Power B I Desktop.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)
 
-# [Power BI service](#tab/powerbi-service)
-1. Select the **Slicer** icon ![Slicer icon](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) in the **Visualizations** pane.
-2. Drag the field you want to filter on to **Field**.
-
-    ![Screenshot shows adding a field to the slicer in Power B I service.](media/power-bi-slicer-filter-responsive/power-bi-service-slicer-filter-responsive-create.png)
-
----
-
 ## Convert to a horizontal slicer
 
-# [Power BI Desktop](#tab/powerbi-desktop)
 1. With the slicer selected, in the **Visualizations** pane, select the **Format** tab.
+
 2. Expand the **Slicer settings** section, then for **Orientation**, select **Horizontal**.
 
     ![Screenshot shows setting the slicer to horizontal in Power B I Desktop.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-2-horizontal.png)
-
-# [Power BI service](#tab/powerbi-service)
-1. With the slicer selected, in the **Visualizations** pane, select the **Format** tab.
-2. Expand the **General** section, then for **Orientation**, select **Horizontal**.
-
-    ![Screenshot shows setting the slicer to horizontal in Power B I service.](media/power-bi-slicer-filter-responsive/power-bi-service-slicer-filter-responsive-horizontal.png) 
-
----
 
 You'll probably want to make it wider, to show more values.
 
@@ -58,9 +41,8 @@ You'll probably want to make it wider, to show more values.
 
 ## Make it responsive and experiment with it
 
-This step is easy. 
+This step is easy.
 
-# [Power BI Desktop](#tab/powerbi-desktop)
 1. With the slicer selected, in the **Visualizations** pane, select the **Format** tab.
 
 1. Under **Properties**, expand **Advanced options**, and then slide **Responsive** to **On**.  
@@ -70,17 +52,6 @@ This step is easy.
 1. Now you can play with it. Drag the corners to make it short, tall, wide, and narrow. If you make it small enough, it becomes just a filter icon.
 
     ![Responsive slicer so small it's a filter icon.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-5-mini-icon.png)
-
-# [Power BI service](#tab/powerbi-service)
-1. Right under **Orientation** in the **General** section of the **Format** tab, slide **Responsive** to **On**.  
-
-    ![Screenshot shows that the slicer is now responsive in Power B I service.](media/power-bi-slicer-filter-responsive/power-bi-service-slicer-filter-responsive-responsive.png)
-
-1. Now you can play with it. Drag the corners to make it short, tall, wide, and narrow. If you make it small enough, it becomes just a filter icon.
-
-    ![Responsive slicer so small it's a filter icon.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-5-mini-icon.png)
-
----
 
 ## Add it to a phone report layout
 

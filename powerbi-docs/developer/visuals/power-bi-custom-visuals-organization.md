@@ -53,11 +53,8 @@ This section lists the [admin](#admin-considerations) and [user](#user-considera
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Publish Power BI visuals to Partner Center](office-store.md)
+* [Frequently asked questions about Power BI visuals](./power-bi-custom-visuals-faq.yml)
 
->[!div class="nextstepaction"]
->[Publish Power BI visuals to Partner Center](office-store.md)
-
->[!div class="nextstepaction"]
->[Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

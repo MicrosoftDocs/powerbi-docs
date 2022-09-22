@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 01/12/2022
+ms.date: 09/14/2022
 ms.custom: video-RE4HmJG
 LocalizationGroup: 
 ---
@@ -90,7 +90,6 @@ Lineage view is an interactive canvas. You can use the mouse and touchpad to nav
 ## Considerations and limitations
 
 * Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md) for details.
-* Lineage supports only the **Dataflows** connector for showing dataset-dataflow lineage. The **Power BI dataflows (Beta)** connector is not supported.
 * Correct display of dataset-dataflow lineage is guaranteed only if the **Get Data** UI is used to set up the connection to the dataflow, and the **Dataflows** connector is used. Correct display of dataset-dataflow lineage is not guaranteed if a manually created Mashup query is used to connect to the dataflow.
 
 ## Next steps

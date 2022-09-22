@@ -20,7 +20,7 @@ The deployment pipelines tool enables BI creators to manage the lifecycle of org
 
 You can learn how to use the deployment pipelines tool by following these links.
 
- * [Create and manage a Power BI deployment pipeline](/learn/modules/power-bi-deployment-pipelines) - A Power BI Learn module that walks you through creating a deployment pipeline.
+ * [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines) - A Power BI Learn module that walks you through creating a deployment pipeline.
 
 * [Get started with deployment pipelines](deployment-pipelines-get-started.md) - A Power BI article that explains how to create a pipeline, as well as key functions such as backward deployment and deployment rules.
 
