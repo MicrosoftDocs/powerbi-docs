@@ -12,11 +12,12 @@ ms.date: 09/19/2022
 
 # Customize the format pane in Power BI custom visuals
 
-Starting from API version 5.1, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their subcategories for any custom property in their custom visual, making it easier for report creators to use these visuals.
+Starting from API version 5.1, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their categories for any property in their custom visual, making it easier for report creators to use these visuals.
 
-The new API uses the **FormattingModel** method to customize parts of the format and analytics pane.
+The new API uses the **FormattingModel** method to customize parts of the format and analytics panes.
 
-You call the `getFormattingModel` model instead of the `enumerateObjectInstances` model used in previous versions.
+> [!NOTE]
+> The `getFormattingModel` method replaced the `enumerateObjectInstances` method used in previous API versions.
 
 The `getFormattingModel` returns a `FormattingModel`, that defines the how the visual's formatting and analytics pane look.
 
