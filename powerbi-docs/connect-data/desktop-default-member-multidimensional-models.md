@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 09/23/2022
 LocalizationGroup: Data from files
 ---
 # Work with multidimensional models in Power BI
