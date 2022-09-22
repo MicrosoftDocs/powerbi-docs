@@ -43,30 +43,34 @@ In this example, the title of the slicer lists the three fields in the hierarchy
 
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-desktop-slicer-title.png" alt-text="Screenshot of hierarchy slicer with Category, Commodity, and Item fields in Power B I Desktop.":::
 
-To change the name, select the slicer, then select the **Format** pane. Under **Slicer header**, you see the current name of the slicer in the **Title text** box.
+To change the slicer title:
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-desktop-slicer-edit-title.png" alt-text="Screenshot of the Format pane with the current title in Power B I Desktop.":::
+1. Select the slicer, the **Format** pane, and then the **Visual** tab.
 
-Select the text and add a new name.
+1. Expand **Slicer header** to see the current name of the slicer in the **Title text** box.
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-desktop-slicer-new-title.png" alt-text="Screenshot of new title for hierarchy slicer in Power B I Desktop.":::
+   :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-desktop-slicer-edit-title.png" alt-text="Screenshot of the Format pane with the current title in Power B I Desktop.":::
+
+1. Select the **Title text** box and enter a new name.
+
+   :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-desktop-slicer-new-title.png" alt-text="Screenshot of new title for hierarchy slicer in Power B I Desktop.":::
 
 ### Change the expand/collapse icon
 
-Hierarchy slicers have some other formatting options. You can change the expand/collapse icon from the default arrow to plus and minus signs, or a caret.
+Hierarchy slicers have some other formatting options. You can change the expand/collapse icon from the default arrow to plus and minus signs, or a caret:
 
-1. Select the slicer, then select **Format**.
-1. Expand **Hierarchy**, then **Expand/collapse**.
+1. Select the hierarchy slicer, then select **Format**.
+1. From the **Visual** tab, expand **Hierarchy**, and then expand **Expand/collapse**.
 1. For **Expand/collapse icon**, select **Chevron**, **Plus/minus**, or **Caret**.
 
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-desktop-slicer-hierarchy-caret.png" alt-text="Screenshot of Select an expand/collapse icon for your hierarchy slicer in Power B I Desktop.":::
 
 ### Change the indentation
 
-If space is tight on your report, you may want to reduce the amount you indent the child items. By default, the indentation is 15 pixels, which you can increase or lower.
+If space is tight on your report, you may want to reduce the amount you indent the child items. By default, the indentation is 15 pixels. To change the indentation:
 
 1. Select the slicer, then select **Format**.
-1. Expand **Hierarchy**, then **Levels**. Drag **Stepped layout indentation** smaller or larger. You can also just type a number in the box.
+1. From the **Visual** tab, expand **Hierarchy**, and then expand **Levels**. Drag **Stepped layout indentation** smaller or larger. You can also enter a number in the box.
 
     :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-desktop-slicer-indentation.png" alt-text="Screenshot of Set the hierarchy slicer indentation in Power B I Desktop.":::
 
