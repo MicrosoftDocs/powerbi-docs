@@ -38,12 +38,16 @@ To create a custom visual that uses the new format pane:
   
    All other properties, including `DisplayName` and `description`, are now optional.
 
-2. Build the custom visual [**FormattingModel**](#formatting-model-components).
+2. Build the custom visual [**FormattingModel**](#formatting-model).
   Define the properties of your custom visual formatting model and build it using code (not JSON).
 
 3. Implement the `getFormattingModel` API in the custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions).
 
-## Formatting model components
+## Formatting model
+
+The formatting model is where you describe and customize all the properties of your format pane.
+
+### Formatting model components
 
 In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. These are the five basic components, from largest to smallest:
 
@@ -66,30 +70,31 @@ In the new formatting model, property components are grouped together in logical
 
 ### Visualization pane formatting properties
 
-To build formatting model, follow these steps:
+Every property in the formatting model should match and object type in the *capabilities.json* file.
 
-1. Define each `object` and type in the *capabilities.json*
-2. Build a formatting model that includes all the formatting properties with their matching object type from the *capabilities.json* file.
-
-The following table shows the formatting property types in capabilities and their match type class in modern formatting model properties:
+The following table shows the formatting property types in *capabilities.json* file and their matching type class in modern formatting model properties:
 
 | Type             | Capabilities Value Type | Formatting Property  |
 |------------------|-------------------------|----------------------|
 | Boolean          | Bool                    | ToggleSwitch         |
-| Number           | numeric integer         | NumUpDown Slider     |
-| Enumeration list | enumeration:[]          | See note below       |
+| Number           | numeric integer         | <li> NumUpDown </li> <li>Slider</li>     |
+| Enumeration list | enumeration:[]          | <li> ItemDropdown</li> <li> ItemFlagsSelection</li><li> AutoDropdown</li><li> AutoFlagsSelection</li> <sup>*</sup> See note below       |
 | Color            | Fill                    | ColorPicker          |
-| Gradient         | FillRule                | GradientBar: property value should be string consisting of: “minValue[,midValue],maxValue”          |
+| Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
 | Date / Time      |                         | DatePicker           |
-| Text             | Text                    | TextInput, TextArea  |
-|                  |Capabilities Formatting Objects|                |
+| Text             | Text                    | <li>TextInput</li> <li>TextArea</li>  |
+
+Capabilities Formatting Objects
+
+| Type             | Capabilities Value Type | Formatting Property  |
+|------------------|-------------------------|----------------------|
 | Font size           | FontSize             | NumUpDown            |
 | Font family         | FontFamily           | FontPicker           |
 | Line Alignment      | Alignment            | AlignmentGroup       |
 | Label Display Units | LabelDisplayUnits    | AutoDropDown         |
 | Format String       | FormatString         |                      |
 
-Note: Enumeration list formatting property is different in the formatting model and in the capabilities file.
+<sup>*</sup> The enumeration list formatting property is different in the formatting model and in the capabilities file.
 
 * In the formatting model use one of the following properties:
   * ItemDropdown
@@ -132,7 +137,7 @@ For now we have two composite slice types:
   * Top
   * Bottom
 
- Each of these properties should have a corresponding object in capabilities file:
+  Each of these properties should have a corresponding object in capabilities file:
 
   | Property    | Capabilities Type         | Formatting Type  |
   |-------------|---------------------------|------------------|
@@ -150,6 +155,8 @@ If you have a custom visual created with an older API and you want to migrate to
 2. For each object name and property name in *capabilities.json*, create a matching formatting property. The formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
 
 The `objects` properties in the capabilities file still have the same format and don't need to be changed.
+
+## Example of capabilities and formatting properties
 
 For example, if the `circle` object in your *capabilities.json* file is defined like this:
 
@@ -195,3 +202,217 @@ You'll get an error if one of the following conditions is true:
 
 * The object or property name in the capabilities file doesn’t match the one in the formatting model
 * The property type in the capabilities file doesn’t match the type in formatting model
+
+## Example: Formatting a data card
+
+In this example, we show how to build a custom visual formatting model with one card.  
+The card has two groups:
+
+* **Font control group** with one composite property
+  * Font control
+* **Data design group** with two simple properties
+  * Font color
+  * Line alignment
+
+First, add objects to capabilities file:
+
+```json
+"objects": {
+        "dataCard": {
+            "properties": {
+                "displayUnitsProperty": {
+                    "type":
+                    {
+                        "formatting": {
+                            "labelDisplayUnits": true
+                        }
+                    }
+                },
+                "fontSize": { 
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "fontBold": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontUnderline": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontItalic": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "lineAlignment": {
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+```
+
+Then, create the `getFormattingModel`
+
+```typescript
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        // Building data card, We are going to add two formatting groups "Font Control Group" and "Data Design Group"
+        let dataCard: powerbi.visuals.FormattingCard = {
+            description: "Data Card Description",
+            displayName: "Data Card",
+            uid: "dataCard_uid",
+            groups: []
+        }
+
+        // Building formatting group "Font Control Group"
+        // Notice that "descriptor" objectName and propertyName should match capabilities object and property names
+        let group1_dataFont: powerbi.visuals.FormattingGroup = {
+            displayName: "Font Control Group",
+            uid: "dataCard_fontControl_group_uid",
+            slices: [
+                {
+                    uid: "abc",
+                    displayName:"display units",
+                    control: {
+                        type: powerbi.visuals.FormattingComponent.Dropdown,
+                        properties: {
+                            descriptor: {
+                                objectName: "dataCard",
+                                propertyName:"displayUnitsProperty"
+                            },
+                            value: 0
+                        }
+                    }
+                },
+                // FontControl slice is composite slice, It means it contain multiple properties inside it
+                {
+                    uid: "data_font_control_slice_uid",
+                    displayName: "Font",
+                    control: {
+                        type: powerbi.visuals.FormattingComponent.FontControl,
+                        properties: {
+                            fontFamily: {
+                                descriptor: {
+                                    objectName: "dataCard",
+                                    propertyName: "fontFamily"
+                                },
+                                value: "wf_standard-font, helvetica, arial, sans-serif"
+                            },
+                            fontSize: {
+                                descriptor: {
+                                    objectName: "dataCard",
+                                    propertyName: "fontSize"
+                                },
+                                value: 16
+                            },
+                            bold: {
+                                descriptor: {
+                                    objectName: "dataCard",
+                                    propertyName: "fontBold"
+                                },
+                                value: false
+                            },
+                            italic: {
+                                descriptor: {
+                                    objectName: "dataCard",
+                                    propertyName: "fontItalic"
+                                },
+                                value: false
+                            },
+                            underline: {
+                                descriptor: {
+                                    objectName: "dataCard",
+                                    propertyName: "fontUnderline"
+                                },
+                                value: false
+                            }
+                        }
+                    }
+                }
+            ],
+        };
+        // Building formatting group "Font Control Group"
+        // Notice that "descriptor" objectName and propertyName should match capabilities object and property names
+        let group2_dataDesign: powerbi.visuals.FormattingGroup = {
+            displayName: "Data Design Group",
+            uid: "dataCard_dataDesign_group_uid",
+            slices: [
+                // Adding ColorPicker simple slice for font color
+                {
+                    displayName: "Font Color",
+                    uid: "dataCard_dataDesign_fontColor_slice",
+                    control: {
+                        type: powerbi.visuals.FormattingComponent.ColorPicker,
+                        properties: {
+                            descriptor:
+                            {
+                                objectName: "dataCard",
+                                propertyName: "fontColor"
+                            },
+                            value: { value: "#01B8AA" }
+                        }
+                    }
+                },
+                // Adding AlignmentGroup simple slice for line alignment
+                {
+                    displayName: "Line Alignment",
+                    uid: "dataCard_dataDesign_lineAlignment_slice",
+                    control: {
+                        type: powerbi.visuals.FormattingComponent.AlignmentGroup,
+                        properties: {
+                            descriptor:
+                            {
+                                objectName: "dataCard",
+                                propertyName: "fontColor"
+                            },
+                            mode: powerbi.visuals.AlignmentGroupMode.Horizonal,
+                            value: "right"
+                        }
+                    }
+                },
+            ]
+        };
+
+        // Add formatting groups to data card
+        dataCard.groups.push(group1_dataFont);
+        dataCard.groups.push(group2_dataDesign);
+
+        // Build and return formatting model with data card
+        const formattingModel: powerbi.visuals.FormattingModel = { cards: [dataCard] };
+        return formattingModel;
+    }
+```
+
+Here's the resulting pane:
+
+:::image type="content" source="./media/format-pane/format-pane-demo-result.png" alt-text="Screenshot of format pane that results from the data card example.":::
+
+## Next steps
+
+More questions? [Ask the Power BI Community](https://community.powerbi.com)
