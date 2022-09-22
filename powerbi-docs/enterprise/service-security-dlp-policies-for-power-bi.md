@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 
 # Data loss prevention policies for Power BI (preview)
 
-To help organizations detect and protect their sensitive data, Power BI supports [Microsoft Purview data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered in the data loss prevention **Alerts** tab in the Microsoft Purview compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
+To help organizations detect and protect their sensitive data, Power BI supports [Microsoft Purview Data Loss Prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered in the data loss prevention **Alerts** tab in the Microsoft Purview compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 
 ## Considerations and limitations
 
@@ -52,7 +52,7 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 You define a DLP policy in the data loss prevention section of the compliance portal. In the policy, you specify the sensitivity labels and/or sensitive info types you want to detect. You also specify the actions that will happen when the policy detects a dataset that contains sensitive data of the kind you specified. DLP policies for Power BI support two actions:
 
 * User notification via policy tips.
-* Alerts. Alerts can be sent by email to administrators and users. Additionally, administrators can monitor and manage alerts on the **Alerts** tab in the compliance center. 
+* Alerts. Alerts can be sent by email to administrators and users. Additionally, administrators can monitor and manage alerts on the **Alerts** tab in the compliance portal. 
 
 When a dataset is evaluated by DLP policies, if it matches the conditions specified in a DLP policy, the actions specified in the policy occur. A dataset is evaluated against DLP policies whenever one of the following events occurs:
 
@@ -80,9 +80,9 @@ When a DLP policy detects an issue with a dataset:
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
 
-* If alerts are enabled in the policy, an alert will be recorded on the data loss prevention **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance center.
+* If alerts are enabled in the policy, an alert will be recorded on the data loss prevention **Alerts** tab in the compliance portal, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance portal.
 
-    ![Screenshot of Alerts tab in the compliance center.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
+    ![Screenshot of Alerts tab in the compliance portal.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
 ## Configure a DLP policy for Power BI
 
