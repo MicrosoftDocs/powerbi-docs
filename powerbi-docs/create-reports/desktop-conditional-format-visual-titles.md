@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/07/2021
+ms.date: 09/21/2022
 LocalizationGroup: Connect to data
 ---
 # Expression-based titles in Power BI Desktop
@@ -16,9 +16,9 @@ LocalizationGroup: Connect to data
 
 You can create dynamic, customized titles for your Power BI visuals. By creating Data Analysis Expressions (DAX) based on fields, variables, or other programmatic elements, your visuals' titles can automatically adjust as needed. These changes are based on filters, selections, or other user interactions and configurations.
 
-![Screenshot of Power BI Desktop conditional formatting option](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
+:::image type="content" source="media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png" alt-text="Screenshot of Power BI Desktop conditional formatting option.":::
 
-Creating dynamic titles, sometimes called *expression-based titles*, is straightforward. 
+Creating dynamic titles, sometimes called *expression-based titles*, is straightforward.
 
 ## Create a field for your title
 
@@ -28,22 +28,23 @@ There are all sorts of creative ways to have your visual title reflect what you 
 
 You can create an expression that changes based on the filter context that the visual receives for the product's brand name. The following image shows the DAX formula for such a field.
 
-![Screenshot of DAX formula](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
+![Screenshot of DAX formula.](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
 This is just one example you can use to create dynamic, expression-based titles for your visuals in Power BI Desktop. What you can do with your titles are limited only by your imagination, and your model.
 
-
 ## Select your field for your title
 
-After you've created the DAX expression for the field you create in your model, you need to apply it to your visual's title.
+After you've created the DAX expression for the field you create in your model, you need to apply it to your visual's title:
 
-To select the field and apply it, go to the **Visualizations** pane. In the **Format** area, select **Title** to show the title options for the visual. 
+1. To select the field and apply it, go to the **Visualizations** pane. In the **Format** area, select the **General** tab, and then set **Title** to **On** to show the title options for the visual.
 
-When you right-click **Title text**, a context menu appears that allows you to select **<em>fx</em>Conditional formatting**. When you select that menu item, a **Title text** dialog box appears. 
+1. Next to the **Title** text, select **Conditional formatting** (**fx**).
 
-![Screenshot of Title text dialog box](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
+   The **Title text - Title** dialog box appears.
 
-From that window, you can select the field that you created to use for your title.
+   :::image type="content" source="media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png" alt-text="[Screenshot of Title text - Title dialog box.":::
+
+1. From the dialog box, select the field that you created to use for your title.
 
 ## Considerations and limitations
 
