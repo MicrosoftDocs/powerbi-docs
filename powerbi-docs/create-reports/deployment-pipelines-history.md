@@ -16,7 +16,7 @@ Deployment history is a deployment pipelines feature that enables reviewing the 
 
 You can use the deployment history log, to check the health of your pipeline, and to troubleshoot problems that occurred during previous deployments.
 
-When you perform a deployment, you can use the built in option to [leave notes](deployment-pipelines-get-started.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
+When you perform a deployment, you can use the built-in option to [leave notes](deployment-pipelines-get-started.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
 
 :::image type="content" source="media/deployment-pipelies-history/deployment-history.png" alt-text="A screenshot of the deployment pipelines history pane.":::
 
@@ -43,9 +43,9 @@ The deployment history log is formatted as a table. Each row represents a single
     | :::image type="content" source="media/deployment-pipelies-history/unchanged-item.png" alt-text="A screenshot of the deployment pipelines history unchanged item icon.":::      | Unchanged items | A deployment item that's identical to the one in the target stage | :::image type="content" source="media/deployment-pipelies-history/expanded-unchanged-items.png" alt-text="A screenshot of the deployment pipelines history unchanged item icon selected, with the list of unchanged items for this deployment expanded."::: |
     | :::image type="content" source="media/deployment-pipelies-history/failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon."::: | Items failed to deploy            | Indicates a failed deployment | :::image type="content" source="media/deployment-pipelies-history/expanded-failed-deployment.png" alt-text="A screenshot of the deployment pipelines history failed deployment icon selected."::: |
 
-* **Note** - A note, if exists. Click the note's icon to display its content.
+* **Note** - A note, if exists. Select the note's icon to display its content.
 
-    :::image type="content" source="media/deployment-pipelies-history/expanded-note.png" alt-text="A screenshot of the deployment pipelines history note icon selecte, with the expanded note displayed.":::
+    :::image type="content" source="media/deployment-pipelies-history/expanded-note.png" alt-text="A screenshot of the deployment pipelines history note icon selected, with the expanded note displayed.":::
 
 * **ID** - The deployment ID. Use as a reference when troubleshooting a deployment.
 
