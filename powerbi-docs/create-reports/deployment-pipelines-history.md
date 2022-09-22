@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 09/11/2022
+ms.date: 09/22/2022
 ---
 
 # Deployment history
@@ -34,7 +34,7 @@ The deployment history log is formatted as a table. Each row represents a single
 
 * **Deployed by** - The person (or service principal) who performed the deployment.
 
-* **Items** - After you deploy your content, the *items* column indicates the differences between the Power BI items in the source and target stage. The labels refer to the items in the target stage. Each label shows the number of items from that category that were deployed. You can click on the label to view a list of all the items in that category. If a label isn't showing, no deployed items fit that category.
+* **Items** - The *items* column indicates the differences between the Power BI items in the source and target stage. All labels except *failed deployment*, refer to the items in the target stage before the deployment takes place. These labels show the number of items from that category that were deployed. You can select the label to view a list of all the items in that category. If a label isn't showing, no deployed items fit that category.
 
     | Label | Name            | Description | Expanded view |
     |-------|-----------------|-------------|---------------|
