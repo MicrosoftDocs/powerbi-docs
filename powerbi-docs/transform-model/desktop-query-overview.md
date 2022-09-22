@@ -17,7 +17,7 @@ Power BI Desktop has three views:
 
 * **Report** view – where you use queries you create to build compelling visualizations, arranged as you want them to appear, and with multiple pages, that you can share with others
 * **Data** view – see the data in your report in data model format, where you can add measures, create new columns, and manage relationships
-* **Relationships** view – get a graphical representation of the relationships that have been established in your data model, and manage or modify them as needed.
+* **Model** view – get a graphical representation of the relationships that have been established in your data model, and manage or modify them as needed.
 
 Access these views by selecting one of the three icons along the left side of Power BI Desktop. In the following image, **Report** view is selected, indicated by the yellow band beside the icon.  
 

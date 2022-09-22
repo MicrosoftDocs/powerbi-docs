@@ -229,6 +229,11 @@ There are other restrictions related to limited relationships:
 - The `RELATED` DAX function can't be used to retrieve the "one" side column values.
 - Enforcing RLS has topology restrictions.
 
+> [!TIP]
+> In Power BI Desktop model view, you can interpret a relationship as being limited. A limited relationship is represented with parenthesis () after the cardinality indicator.
+>
+> :::image type="content" source="media/desktop-relationships-understand/limited-relationship.png" alt-text="Example of two tables in the model diagram and two relationships; one solid line for active and one dashed line for inactive":::
+
 > [!NOTE]
 > In Power BI Desktop model view, it's not always possible to determine whether a model relationship is regular or limited. A many-to-many relationship will always be limited, as will be a one-to-many relationship when it's a cross source group relationship. To determine whether it's a cross source group relationship, you'll need to inspect the table storage modes and data sources to arrive at the correct determination.
 
