@@ -17,11 +17,11 @@ Starting from API version 5.1, developers can create visuals that use the [new P
 The new API uses the **FormattingModel** method to customize parts of the format and analytics panes.
 
 > [!NOTE]
-> The `getFormattingModel` method replaced the `enumerateObjectInstances` method used in previous API versions.
+> The `getFormattingModel` method replaces the `enumerateObjectInstances` method used in earlier API versions.
 
-The `getFormattingModel` returns a `FormattingModel`, that defines the how the visual's formatting and analytics pane look.
+The `getFormattingModel` returns a `FormattingModel` that defines how the visual's formatting and analytics pane look.
 
-The Formatting Model supports all the old format pane capabilities, as well as the new format pane capabilities, new properties and new hierarchies.
+In addition to all the old formatting pane capabilities, the new formatting model supports  new format pane capabilities, new properties and new hierarchies.
 
 To upgrade to API version 5.1.0+, set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
 
@@ -29,23 +29,23 @@ To upgrade to API version 5.1.0+, set the `apiVersion` in your *pbiviz.json* fil
 
 To create a custom visual that uses the new format pane:
 
-* Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file.
-  The following properties are required for each object:
+1. Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file.  
+   The following properties are required for each object:
 
-  * object name
-  * property name
-  * property type
+   * object name
+   * property name
+   * property type
   
-  All other properties, including DisplayName and description, are now optional.
+   All other properties, including `DisplayName` and `description`, are now optional.
 
-* Build the custom visual [**FormattingModel**](#formatting-model-components).
-  Define the design of your custom visual formatting model and build it using code (not JSON).
+2. Build the custom visual [**FormattingModel**](#formatting-model-components).
+  Define the properties of your custom visual formatting model and build it using code (not JSON).
 
-* Implement the `getFormattingModel` API to the custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions).
+3. Implement the `getFormattingModel` API in the custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions).
 
 ## Formatting model components
 
-In the new formatting model, properties are grouped together in logical categories and and components to make it easier to scan. There are five basic components:
+In the new formatting model, properties are grouped together in logical categories and components to make it easier to scan. There are five basic components:
 
 * Formatting model  
   The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
@@ -66,7 +66,7 @@ In the new formatting model, properties are grouped together in logical categori
 
 ### Visualization pane formatting properties
 
-To build formatting model we need to:
+To build formatting model, follow these steps:
 
 1. Define each `object` and type in the *capabilities.json*
 2. Build a formatting model that includes all the formatting properties with their matching object type from the *capabilities.json* file.
@@ -91,11 +91,11 @@ The following table shows the formatting property types in capabilities and thei
 
 Note: Enumeration list formatting property is different in the formatting model and in the capabilities file.
 
-* In the formatting model use one of the following:
+* In the formatting model use one of the following properties:
   * ItemDropdown
   * ItemFlagsSelection  
 
-* In the capabilities file, use one of the following (same as in the previous API versions)
+* In the capabilities file, use one of the following types (these types are the same as in the previous API versions):
   * AutoDropdown
   * AutoFlagSelection  
 
@@ -151,7 +151,7 @@ If you have a custom visual created with an older API and you want to migrate to
 
 The `objects` properties in the capabilities file still have the same format and don't need to be changed.
 
-For example, if your capabilities objects looks like this:
+For example, if the `circle` object in your *capabilities.json* file is defined like this:
 
 ```json
 "objects": {
