@@ -1,6 +1,6 @@
 ---
-title: The Format pane in Power BI visuals
-description: This article describes how to customize the new Format pane in Power BI visuals.
+title: Customize the format pane in Power BI custom visuals
+description: This article describes how to customize the new Format pane in Power BI custom visuals using the new formatting model
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 09/19/2022
 ---
 
-# The Format pane in Power BI visuals
+# Customize the format pane in Power BI custom visuals
 
 Starting from API version 5.1, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their subcategories for any custom property in their custom visual, making it easier for report creators to use these visuals.
 
@@ -61,7 +61,7 @@ In the new formatting model, properties are grouped together in logical categori
   * Simple slice: Individual property container
   * [Composite slice](#composite-slice-properties): Multiple related property containers grouped into one formatting slice
 
-:::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined.":::
+:::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined." lightbox="media/format-pane/format-pane-components.png":::
 
 ### Visualization pane formatting properties
 
