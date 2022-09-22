@@ -16,7 +16,7 @@ Starting from API version 5.1, developers can create visuals that use the [new P
 
 The new API uses the **FormattingModel** method to customize parts of the format and analytics panes.
 
-> [!NOTE]
+> [!TIP]
 > The `getFormattingModel` method replaces the `enumerateObjectInstances` method used in earlier API versions.
 
 The `getFormattingModel` returns a `FormattingModel` that defines how the visual's formatting and analytics pane look.
@@ -45,18 +45,18 @@ To create a custom visual that uses the new format pane:
 
 ## Formatting model components
 
-In the new formatting model, properties are grouped together in logical categories and components to make it easier to scan. There are five basic components:
+In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. These are the five basic components, from largest to smallest:
 
-* Formatting model  
+* **Formatting model**  
   The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
 
-* Formatting card  
+* **Formatting card**  
   The top level properties grouping container for formatting properties. Each card consists of a list of formatting groups.
 
-* Formatting group
+* **Formatting group**  
   The secondary-level properties grouping container. The formatting group is displayed as a grouping container for formatting slices.
 
-* Formatting slice
+* **Formatting slice**  
   Property container. There are two types of slices:
   
   * Simple slice: Individual property container
