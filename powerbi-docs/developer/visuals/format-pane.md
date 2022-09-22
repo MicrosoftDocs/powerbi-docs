@@ -413,6 +413,14 @@ Here's the resulting pane:
 
 :::image type="content" source="./media/format-pane/format-pane-demo-result.png" alt-text="Screenshot of format pane that results from the data card example.":::
 
+## GitHub Resources
+
+* All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
+
+* We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: powerbi visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
+
+* You can find an example of a custom visual *SampleBarChart* that uses API version 5.0.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
+
 ## Next steps
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com)
