@@ -115,9 +115,9 @@ When a DLP policy detects an issue with a dataset:
     >[!NOTE]
     > DLP actions are supported only for workspaces hosted in Premium Gen2 capacities.
 
-    If you select **Choose workspaces** or **Exclude workspaces**, a dialog will allow you to create a list of included (or excluded) workspaces.
+    If you select **Choose workspaces** or **Exclude workspaces**, a dialog will allow you to select workspaces to be included (or excluded).
 
-    You can search for workspaces by workspace name or by user email address. When you search by a user's email address, you will be able to choose from a list of all the workspaces the user has access to.
+    You can search for workspaces by workspace name or by user email address. When you search by a user's email address, that user's My Workspace will be listed as *personalWorkspace - \<email address\>*.
 
     ![Screenshot of D L P choose workspaces dialog.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-choose-workspaces.png)
  
