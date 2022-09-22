@@ -146,13 +146,9 @@ If you have a custom visual created with an older API and you want to migrate to
 
 1. Set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
 
-2. For each object name and property name in *capabilities.json*, 
-1. 
-1. Each formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
+2. For each object name and property name in *capabilities.json*, create a matching formatting property. The formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
 
-Capabilities objects properties are persistent to the same schema (the schema wasn't changed) and capabilities `objects` don't requires to be migrated.
-
-For migrating and mapping capabilities object to formatting properties purpose - formatting properties should include descriptor parameter (formatting model object - see images below) with same object name and property name that exist in capabilities
+The `objects` properties in the capabilities file still have the same format and don't need to be changed.
 
 For example, if your capabilities objects looks like this:
 
