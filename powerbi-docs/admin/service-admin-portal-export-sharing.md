@@ -253,7 +253,7 @@ Disabling this switch effectively stops users from publishing new composite mode
 
 When this setting is turned on, Azure AD B2B guest users of datasets shared with them by users in your organization will be able to access and build on those datasets in their own tenant. See [Use in-place dataset sharing to enable external users to view and share datasets in their own tenants (preview) - Admin info](../collaborate-share/service-dataset-external-org-share-admin.md) for detailed information.
 
-## Allow guest users to work with shared datasets in their own tenants
+## Allow specific users to turn on external data sharing
 
 As a Power BI admin, you can specify which users or user groups in your organization can share datasets externally with guests from a different tenant through the in-place mechanism. Disabling this setting prevents any user from sharing datasets externally by blocking the ability of users to turn on external sharing for datasets they own or manage.  See [Use in-place dataset sharing to enable external users to view and share datasets in their own tenants (preview) - Admin info](../collaborate-share/service-dataset-external-org-share-admin.md) for detailed information.
 
