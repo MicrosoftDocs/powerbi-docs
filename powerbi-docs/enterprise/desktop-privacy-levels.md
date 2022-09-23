@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 09/23/2022
 LocalizationGroup: Connect to data
 ---
 # Power BI Desktop privacy levels

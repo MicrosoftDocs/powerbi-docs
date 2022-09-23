@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/23/2022
 LocalizationGroup: Learn more
 ---
 # Power BI Desktop Send a Smile Privacy Statement
