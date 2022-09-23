@@ -39,12 +39,12 @@ In this featured video, we show how to create quick reports in the Power BI serv
 
 Learn about new data protection enhancements:
 
-> [!VIDEO http://www.youtube.com/watch?v=RxsT9TtOYok]
+> [!VIDEO https://www.youtube.com/watch?v=RxsT9TtOYok]
 >
 
 Learn about new enhancements in Power BI app for Teams:
 
-> [!VIDEO http://www.youtube.com/watch?v=abTASA8iOjQ]
+> [!VIDEO https://www.youtube.com/watch?v=abTASA8iOjQ]
 >
 
 ## Featured playlists

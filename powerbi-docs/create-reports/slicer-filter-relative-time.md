@@ -38,33 +38,33 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 ### Create a filter
 
-- Drag a date or time field to the Filters pane, for **this visual**, **this page**, or **all pages**.
+- Drag a date or time field to the **Filters** pane, in the **Filters on this visual**, **Filters on this page**, or **Filters on all pages** section.
 
 ### Set relative time
 
-Next, you change the filter type to **Relative Time**.
+1. Change the filter type to **Relative Time**.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Screenshot showing a filter type with Relative Time selected.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Screenshot showing a filter type with Relative Time selected.":::
 
-Here’s how it looks in a slicer:
+   Here’s how it looks in a slicer:
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Screenshot showing relative time applied to a slicer.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Screenshot showing relative time applied to a slicer.":::
 
-Here’s how it looks in a filter card:
+   Here’s how it looks in a filter card:
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Screenshot showing a filter card with Relative time selected as the Filter type.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Screenshot showing a filter card with Relative time selected as the Filter type.":::
 
-With this new filter type, you can filter based on a time period of **Last**, **Next**, or **This**:
+1. With this new filter type, you can filter based on a time period of **Last**, **Next**, or **This**:
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot showing how to select a time period in a filter.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot showing how to select a time period in a filter.":::
 
-You specify the time window using a whole number and a unit of time: **Minutes** or **Hours**.
+1. You specify the time window using a whole number and a unit of time: **Minutes** or **Hours**.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Screenshot showing how to select a time unit in a filter.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Screenshot showing how to select a time unit in a filter.":::
 
-If you need to save space on the canvas, you can also create the relative time filter as a filter card in the Filters pane.
+1. If you need to save space on the canvas, you can also create the relative time filter as a filter card in the **Filters** pane.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Screenshot showing a filter card with a Filter type of Relative time selected.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Screenshot showing a filter card with a Filter type of Relative time selected.":::
 
 ## Understanding anchor time
 
