@@ -7,24 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/28/2021
+ms.date: 09/28/2022
 ms.custom: video-9rh_qSK-UKQ, video-RxsT9TtOYok, video-abTASA8iOjQ
 ---
 # Power BI videos
 
 You'll find Power BI videos embedded in our documentation, organized into channels and playlists on YouTube, and in the Community video gallery. Our videos come in many different flavors:
+
 - How-to videos that teach you how to *do something* in Power BI
 - Conceptual videos that explain things like: terminology, the logic behind how something works, and foundational information
 - Video *series* that are combined into a course or certification
 - Community webinars that we've hosted in the past
 - Customer success stories
-- Videos from conferences (Ignite, Data Insights, and more) that we've hosted 
+- Videos from conferences (Ignite, Data Insights, and more) that we've hosted
 - Monthly product update videos that describe and show new features
 
-
-
 > [!NOTE]  
-  > Videos might use earlier versions of Power BI Desktop or the Power BI service.
+> Videos might use earlier versions of Power BI Desktop or the Power BI service.
 
 ## Subscribe to the Power BI video channel
 
@@ -38,11 +37,15 @@ In this featured video, we show how to create quick reports in the Power BI serv
 
 [![Image of YouTube video about new quick report creation](media/videos/video-quick-report-creation.png)](https://www.youtube.com/watch?v=9rh_qSK-UKQ)
 
-Catch up on these recent videos you may have missed:
+Learn about new data protection enhancements:
 
-| [Learn about new data protection enhancements](http://www.youtube.com/watch?v=RxsT9TtOYok)  | [New enhancements in Power BI app for Teams](http://www.youtube.com/watch?v=abTASA8iOjQ) | 
-| ------| ------ | 
-| [![Image of YouTube video about new data protection enhancements in Power B I](media/videos/video-data-protection.png)](http://www.youtube.com/watch?v=RxsT9TtOYok) | [![Image of YouTube video about new enhancements in the Power B I app for Teams](media/videos/video-teams-app.png)](http://www.youtube.com/watch?v=abTASA8iOjQ) |
+> [!VIDEO http://www.youtube.com/watch?v=RxsT9TtOYok]
+>
+
+Learn about new enhancements in Power BI app for Teams:
+
+> [!VIDEO http://www.youtube.com/watch?v=abTASA8iOjQ]
+>
 
 ## Featured playlists
 
