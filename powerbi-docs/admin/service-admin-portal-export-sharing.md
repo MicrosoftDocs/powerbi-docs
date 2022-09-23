@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 09/14/2022
+ms.date: 09/23/2022
 LocalizationGroup: Administration
 ---
 
@@ -249,11 +249,13 @@ Disabling this switch effectively stops users from publishing new composite mode
 >[!NOTE]
 > Live connections to Power BI datasets are not affected by this switch, nor are live or DirectQuery connections to Azure Analysis Services. These will continue to work regardless of whether the setting is enabled or disabled. In addition, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the setting has been disabled after they were published.
 
-## External sharing
+## Allow guest users to work with shared datasets in their own tenants
 
-This setting is no longer operative. It has no effect, either enabled or disabled, and can be disregarded completely.
+When this setting is turned on, Azure AD B2B guest users of datasets shared with them by users in your organization will be able to access and build on those datasets in their own tenant. See [Use in-place dataset sharing to enable external users to view and share datasets in their own tenants (preview) - Admin info](../collaborate-share/service-dataset-external-org-share-admin.md) for detailed information.
 
-![Screenshot of the no-longer-functional external sharing tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-external-sharing.png)
+## Allow specific users to turn on external data sharing
+
+As a Power BI admin, you can specify which users or user groups in your organization can share datasets externally with guests from a different tenant through the in-place mechanism. Disabling this setting prevents any user from sharing datasets externally by blocking the ability of users to turn on external sharing for datasets they own or manage.  See [Use in-place dataset sharing to enable external users to view and share datasets in their own tenants (preview) - Admin info](../collaborate-share/service-dataset-external-org-share-admin.md) for detailed information.
 
 ## Next steps
 
