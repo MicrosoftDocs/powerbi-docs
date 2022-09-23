@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 01/11/2022
+ms.date: 09/22/2022
 LocalizationGroup: Get started
 ---
 # Export Power BI paginated reports with Power Automate
@@ -43,7 +43,7 @@ Select a template from the list to get started with a step-by-step walkthrough.
 
 ## Considerations and limitations
 
-When using Power Automate to export a paginated report that's larger than 20 MB, it's likely that the export will fail.
+When using Power Automate to export a paginated report that takes more than two minutes to download, the export will fail due to Power Automate’s [outbound synchronous request](/power-automate/limits-and-config#timeout) limitation.
 
 ## Next steps
 

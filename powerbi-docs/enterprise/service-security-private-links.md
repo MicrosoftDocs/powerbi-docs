@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 03/17/2022
+ms.date: 09/22/2022
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -318,6 +318,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. A potential workaround is to turn off Private Links, config the gateway, and then reenable the Private Links. 
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) will fail to register.
 * Private Links resource REST APIs don't support tags.
+* You can't set up a private link to be used by more than one tenant. 
 
 ## Next steps
 
