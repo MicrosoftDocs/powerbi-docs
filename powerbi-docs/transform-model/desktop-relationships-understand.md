@@ -18,7 +18,7 @@ For a deeper discussion on optimal model design, including table roles and relat
 
 ## Relationship purpose
 
-A model relationship propagates filters applied on the column of one model tables to a different model table. Filters will propagate so long as there's a relationship path to follow, which can involve propagation to multiple tables.
+A model relationship propagates filters applied on the column of one model table to a different model table. Filters will propagate so long as there's a relationship path to follow, which can involve propagation to multiple tables.
 
 Relationship paths are deterministic, meaning that filters are always propagated in the same way and without random variation. Relationships can, however, be disabled, or have filter context modified by model calculations that use particular DAX functions. For more information, see the [Relevant DAX functions](#relevant-dax-functions) topic later in this article.
 
@@ -230,7 +230,7 @@ There are other restrictions related to limited relationships:
 - Enforcing RLS has topology restrictions.
 
 > [!TIP]
-> In Power BI Desktop model view, you can interpret a relationship as being limited. A limited relationship is represented with parenthesis () after the cardinality indicator.
+> In Power BI Desktop model view, you can interpret a relationship as being limited. A limited relationship is represented with parentheses ( ) after the cardinality indicator.
 >
 > :::image type="content" source="media/desktop-relationships-understand/limited-relationship.png" alt-text="Example of limited relationship.":::
 
