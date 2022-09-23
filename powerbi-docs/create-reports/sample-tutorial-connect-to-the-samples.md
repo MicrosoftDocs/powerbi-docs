@@ -15,11 +15,11 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Power BI has several samples that you can either download in the Power BI service or open in Power BI Desktop. In a *built-in sample*, the report is bundled with a dashboard and dataset, and built into the Power BI service. The *.pbix file* that you can view in Power BI Desktop contains a report and dataset. 
+Power BI has several samples that you can either download in the Power BI service or open in Power BI Desktop. In a *built-in sample*, the report is bundled with a dashboard and dataset, and built into the Power BI service. The *.pbix file* that you can view in Power BI Desktop contains a report and dataset.
 
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png" alt-text="Retail Analysis Sample, Overview page.":::
+:::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png" alt-text="Screenshot showing the Overview page of the Retail Analysis Sample.":::
 
-This tutorial shows you how to: 
+This tutorial shows you how to:
 
 > [!div class="checklist"]
 
@@ -41,31 +41,31 @@ If you want to familiarize yourself with the built-in sample in this tutorial an
 
 ## Import the sample in the Power BI service
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
 
     If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
 1. Select **Get data** at the bottom of the nav pane. 
 
-   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Screenshot showing the Get data button.":::
 
    If you don't see **Get Data**, expand the nav pane by selecting the following icon at the top of the pane.
 
-    ![Expand the nav pane icon.](media/sample-tutorial-connect-to-the-samples/expand-nav.png)
+    ![Screenshot showing the nav pane expansion icon.](media/sample-tutorial-connect-to-the-samples/expand-nav.png)
 
 1. On the **Get Data** page that appears, select **Samples**.
 
 1. Select **Retail Analysis Sample** > **Connect**.
 
-   ![Connect button](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+   ![Screenshot showing the Connect button for the Retail Analysis Sample.](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
 
 ## What was imported?
 
 With the built-in samples, when you select **Connect**, Power BI gets a copy of that built-in sample and stores it for you in the cloud.
 
-1. Power BI creates the new dashboard, report, and dataset in your workspace. 
+1. Power BI creates the new dashboard, report, and dataset in your workspace.
 
-   ![Retail Analysis Sample entry](media/sample-tutorial-connect-to-the-samples/retail-entry.png)
+   ![Screenshot showing the Retail Analysis Sample entry in your workspace.](media/sample-tutorial-connect-to-the-samples/retail-entry.png)
 2. On the **Content** tab, you see the dashboard and the report, both named *Retail Analysis Sample*.
 
    ![Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries.](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
@@ -98,11 +98,11 @@ The Q&A feature in Power BI lets you explore your data in your own words, asking
 
     This tile was created with Power BI Q&A, so when you select the tile, Q&A opens again.
 
-     :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales.png" alt-text="The tile opens in Q&A with this year's sales.":::
+     :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales.png" alt-text="Screenshot showing the tile opened in Q&A with this year's sales.":::
 
 1. In the top bar, next to **this year's sales**, start typing "by store". Q&A creates a bar chart of values for each store.
 
-    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales-store.png" alt-text="Type by store in the Q&A bar.":::
+    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-q-n-a-this-years-sales-store.png" alt-text="Screenshot showing adding by store to this year's sales text in the Q&A bar.":::
 
 1. In the upper-right corner, select **Pin visual**. 
 1. Pin your new visual to your existing dashboard, **Retail Analysis Sample**.
@@ -111,17 +111,17 @@ The Q&A feature in Power BI lets you explore your data in your own words, asking
 
    Power BI added your new tile at the end of the dashboard. You can resize it and drag it anywhere you want on the dashboard. You see how the other tiles move to make way for it.
 
-    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-dashboard-this-years-sales-store.png" alt-text="Rearrange the tiles on the dashboard.":::
+    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-dashboard-this-years-sales-store.png" alt-text="Screenshot showing tiles rearranged on the dashboard.":::
 
 ### Explore the report
 
 1. Select one of the other tiles in the dashboard to open the underlying report. In this example, we'll select the area chart, **This Year's Sales, Last Year's Sales by Fiscal Month**.  
 
-   ![Retail Analysis Sample dashboard with visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
+   ![Screenshot showing Retail Analysis Sample dashboard with This Years's Sales chart highlighted.](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
 
    The report opens to the page that contains the area chart you selected; in this case, the **District Monthly Sales** page of the report.
 
-   ![District Monthly Sales report page](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+   ![Screenshot showing the District Monthly Sales report page.](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
 
 1. Check out [Dive deeper into the data](sample-retail-analysis.md#dive-deeper-into-the-data) in the article "Retail Analysis sample for Power BI: Take a tour" for suggestions on exploring the report.
 
@@ -132,7 +132,7 @@ One easy way of exploring a *dataset* is to run [quick insights](../consumer/end
 1. On the **Datasets + dataflows** tab, select **More options (...)** next to the **Retail Analysis Sample** dataset, then choose **Get quick insights**.
 1. When the insights are ready, select **View insights**.
 
-    ![Insights report](media/sample-tutorial-connect-to-the-samples/retail-quick-insights.png)
+    ![Screenshot showing the insights report for the Retail Analysis Sample.](media/sample-tutorial-connect-to-the-samples/retail-quick-insights.png)
 
 1. If an insight is interesting, pin it to the dashboard.
 
@@ -140,7 +140,9 @@ One easy way of exploring a *dataset* is to run [quick insights](../consumer/end
 
 On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. One way to explore the dataset is to create your own visualizations and reports from scratch.
 
-![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+![Screenshot showing the Retail Analysis Sample dataset entry in your workspace.](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+
+To create a report:
 
 1. Select **More options** (**...**) next to the **Retail Analysis Sample** dataset, then choose **Create report**.
 
@@ -158,13 +160,15 @@ When you first open the sample .pbix file in Power BI Desktop, it displays in Re
 
 Unlike editing a report in the Power BI service, in Power BI Desktop you can also work with your queries and model your data to ensure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's to your local drive or to the Power BI service.
 
+To download the sample:
+
 1. Download the [Retail Analysis sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) and open it in Power BI Desktop.
 
     ![Screenshot showing the Retail Analysis sample in Power BI report view.](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
     The file opens in Report view. Notice the four tabs at the bottom of the report editor; these tabs represent the four pages in this report. For this example, the **New Stores** page is currently selected.
 
-    ![New Stores tab highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png)
+    ![Screenshot showing the New Stores tab highlighted.](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png)
 
 1. For a deep dive into the report editor, see [Take a tour of the report editor](service-the-report-editor-take-a-tour.md).
 
@@ -172,17 +176,19 @@ Unlike editing a report in the Power BI service, in Power BI Desktop you can als
 
 When you download a sample .pbix file, you've downloaded not just a report but also the *underlying dataset*. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
 
-1. Switch to [Data view](../connect-data/desktop-data-view.md) by selecting the data icon ![data icon](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
+To view the underlying data and model:
 
-    ![Desktop data view](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
+1. Switch to [Data view](../connect-data/desktop-data-view.md) by selecting the Data view icon ![Screenshot showing the Data view icon.](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
+
+    ![Screenshot showing Data view in Power BI Desktop.](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
     In Data view, you can inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in the Query Editor. The data in Data view is already loaded into the model.
 
     When you're modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This is especially true when you're creating measures and calculated columns, or you need to identify a data type or data category.
 
-1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the following icon: ![Model view icon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
+1. Switch to [Model view](../transform-model/desktop-relationship-view.md) by selecting the following icon: ![Screenshot showing the Model view icon.](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
 
-    ![Model view in Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
+    ![Screenshot showing Model view in Power BI Desktop.](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
     Model view shows all of the tables and columns in your model, and the relationships between them. From here you can view, change, and create relationships.
 
