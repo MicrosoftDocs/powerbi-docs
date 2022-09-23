@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 6/08/2022
+ms.date: 09/22/2022
 ms.custom: intro-whats-new
 ---
 
@@ -16,6 +16,47 @@ ms.custom: intro-whats-new
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## September 2022
+
+This release introduces Power BI Report Server for SQL Server 2022. We continue to innovate, create, and design to give everyone the ability to achieve more. Designing for inclusion reflects how people adapt to the world around them. In this new release of Power BI Report Server, we've done a lot of accessibility work to make sure we're empowering everyone. The release includes:
+
+- Enhanced Windows Narrator support for the new Windows Operating Systems (OS) and Windows Server
+- Security enhancements
+- Browser performance improvements with Angular
+- Accessibility bug fixes
+- Support for SQL Server 2022 (16.x) preview instances report server catalog and feature updates. 
+  
+### Refreshed portal
+
+We've improved the Power BI Report Server portal to provide a more inclusive modern graphical interface, making it easier to deliver meaningful reporting on your data from a web-based experience. In the portal, you can view Power BI reports, paginated reports, Excel files, and KPIs, and navigate through the elements in your report server instance. You can also use the web portal to administer a single report server instance.
+  
+### Migration tool
+
+In this latest release of Power BI Report Server, we're introducing the new paginated report migration tool, which connects to the web from the Power BI Report Server web portal. It's intuitive and easy to use, making it simple for you to move your paginated reports from on premises to the Power BI cloud service. 
+
+### Feature add-on
+
+Report Server 2022 DB dbo.ConfigurationInfo table feature add on:  
+
+- Allow RDL report migrations to Power BI using the publish feature in the  web portal:
+
+  - **EnablePowerBIReportMigrate**: default false *value* - turns the migration on / off completely 
+  - **PowerBIMigrateUrl**: default "https://app.powerbi.com/"  *value* defines the Cloud endpoint to use 
+
+- Branding option to add a custom hyperlink:
+
+  - **CustomUrlLabel**: default Empty *value* - defines what string will be shown as URL label in the top left of subnavbar 
+  - **CustomUrlValue**: default Empty *value* - defines the URL 
+
+- Exclude/included Client IP Address when INFO Logging in Enabled:
+
+  - **LogClientIPAddress**: default False *value* - defines if client IP will be logged 
+
+- List view by default option in catalog:
+
+  - **TileViewByDefault**: default True *value* - defines if Tiles or List view is selected for all users by default 
+
 
 ## May 2022
 
@@ -250,16 +291,16 @@ This new feature of the Excel connector automatically identifies sections of eac
 
 **Modeling: Enhanced Dataset Metadata**
 
-In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off the data model when you open that PBIX file.
+In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off the data model when you open that .pbix file.
 
 This backend update has unlocked future feature improvements and will continue to do so. 
 
 For example:
 
 - With the addition of external tools in Power BI Desktop (currently in preview), tables you add through these external tools now appear as queries when you reopen your report.
-- If you've tried to export a PBIT file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
+- If you've tried to export a .pbit file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
 
-If you have an older PBIX that can't automatically update, for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any other modeling changes. 
+If you have an older .pbix that can't automatically update, for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any other modeling changes. 
 
 **Support for Windows 7 ends**
 
