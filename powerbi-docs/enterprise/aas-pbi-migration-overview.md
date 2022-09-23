@@ -63,12 +63,12 @@ Migration includes:
 - Dataset Build permissions are set for members of Read model roles.
 - Dataset Write permissions are set for members of Server administrator roles.
 
-Migration does not include:
+Migration doesn't include:
 
-- Service principals configured for the Azure Analysis Services model database are not included in the restored dataset.
-- B2B guest accounts configured for the Azure Analysis Services model database are not included in the restored dataset.
+- Service principals configured for the Azure Analysis Services model database aren't included in the restored dataset.
+- B2B guest accounts configured for the Azure Analysis Services model database aren't included in the restored dataset.
 
-Server redirection enabling client applications, tools, and automation processes to be automatically redirected to the newly migrated dataset in Power BI are not included in the migration step.
+Server redirection enabling client applications, tools, and automation processes to be automatically redirected to the newly migrated dataset in Power BI aren't included in the migration step.
 
 ### Redirection
 
@@ -82,16 +82,16 @@ Client applications and tools must use the following minimum or higher [client l
 |AMO      |   xx.xx.x.x      |
 |ADOMD     |   xx.x.x.x      |
 
-When enabling server redirection for a migration, the Azure Analysis Services server must exist and cannot be paused. The current user must be both server administrator and workspace administrator.
+When enabling server redirection for a migration, the Azure Analysis Services server must exist and can't be paused. The current user must be both server administrator and workspace administrator.
 
-After enabling server redirection, you can then pause your  server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You are not billed while your server is paused. Deleting servers with server redirect is currently not supported.
+After enabling server redirection, you can then pause your  server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You aren't billed while your server is paused. Deleting servers with server redirect is currently not supported.
 
 > [!CAUTION]
 > **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
 
 ### Report rebind
 
-**During preview**, Live connect reports in the Power BI service  connected to an Azure Analysis Services model database being migrated with the feature are not automatically re-bound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a new binding to the new dataset.
+**During preview**, Live connect reports in the Power BI service  connected to an Azure Analysis Services model database being migrated with the feature aren't automatically rebound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a new binding to the new dataset.
 
 ## To migrate from Azure Analysis Services to Power BI
 
@@ -108,7 +108,7 @@ After enabling server redirection, you can then pause your  server in the Azure 
 
 1. In the **Workspace** listbox, select an existing workspace to migrate to, or to create a new workspace, click **Create a new Premium workspace**, and then enter a workspace name, description, and select a license mode.
 
-    For example, if creating a new migration connection with a new PPU workspace, the Create AAS migration flyout should look similar to this:
+    For example, if creating a new migration connection with a new PPU workspace, the Create AAS migration flyout should look similar to the following:
 
     :::image type="content" source="media/aas-pbi-migration-overview/create-migration-flyout.png" alt-text="Create migration flyout":::
 
@@ -126,7 +126,7 @@ After enabling server redirection, you can then pause your  server in the Azure 
 
 1. Click **Migrate**. If prerequisites are met, migration will begin. The migration process can take some time while the source model database is saved to backup storage, copied to ADLS Gen 2 storage, and restored to the workspace.
 
-    Server redirection is not enabled during migration. Clients will continue to connect to the model database in Azure Analysis Services until server redirection is enabled. Before enabling server redirection, it's recommended you thoroughly test connecting to the migrated dataset in Power BI.
+    Server redirection isn't enabled during migration. Clients will continue to connect to the model database in Azure Analysis Services until server redirection is enabled. Before enabling server redirection, it's recommended you thoroughly test connecting to the migrated dataset in Power BI.
 
 #### Enable redirection
 
@@ -138,7 +138,7 @@ Redirection can take some time. To check the status of server redirection, click
 
 #### Report rebind
 
-**During preview**, Live connect reports in the Power BI service  connected to an Azure Analysis Services model database being migrated are not automatically re-bound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a binding to the new dataset.
+**During preview**, Live connect reports in the Power BI service  connected to an Azure Analysis Services model database being migrated aren't automatically rebound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a binding to the new dataset.
 
 #### Pause server
 
