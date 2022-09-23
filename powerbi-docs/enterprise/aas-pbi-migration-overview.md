@@ -27,7 +27,7 @@ Ensure each environment meets the following prerequisites:
 
 **In Azure Analysis Services**
 
-- You must have [**Server administrator**](/azure/analysis-services/analysis-services-server-admins) permissions.
+- You must have [**Server administrator**](/azure/analysis-services/analysis-services-server-admins) permission.
 
 - Azure Analysis Services must have an Azure Storage account with a container configured and [**Backup must be enabled**](/azure/analysis-services/analysis-services-backup) for the server.
 
@@ -37,7 +37,7 @@ Ensure each environment meets the following prerequisites:
 
 - In order to migrate to Power BI, you must have a **Power BI Premium per Capacity**, **Power BI Premium per User**, or **Power BI Embedded** license.
 
-- You must have **Workspace administrator** permissions. Tenant admins can view migrations for their tenant, however, they may not be able to perform migrations unless they also have Workspace administrator permissions.
+- You must have **Workspace administrator** permission. Tenant admins can view migrations for their tenant, however, they may not be able to perform migrations unless they also have Workspace administrator permission.
 
 - You must have an [**Azure Data Lake Storage Gen 2 (ADLS Gen 2)**](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md) storage account enabled in the same tenant.
 
@@ -108,7 +108,7 @@ After enabling server redirection, you can then pause your  server in the Azure 
 
 1. In the **Workspace** listbox, select an existing workspace to migrate to, or to create a new workspace, click **Create a new Premium workspace**, and then enter a workspace name, description, and select a license mode.
 
-    For example, if creating a new migration connection with a new PPU workspace, the Create AAS migration flyout should look similar to the following:
+    For example, if creating a new migration connection with a new PPU workspace, the Create AAS migration flyout should look like the following:
 
     :::image type="content" source="media/aas-pbi-migration-overview/create-migration-flyout.png" alt-text="Create migration flyout":::
 
