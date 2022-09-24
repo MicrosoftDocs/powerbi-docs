@@ -13,13 +13,15 @@ ms.custom:
 
 # Migration tool for migrating from Power BI Report Server
 
-This article targets Power BI Report Server paginated report authors and Power BI administrators. It provides you with guidance to help you migrate your Report Definition Language (.rdl) paginated reports to Power BI.
+This article targets Power BI Report Server paginated report authors and Power BI administrators who want to migrate your Report Definition Language (.rdl) paginated reports to Power BI.
 
-You can achieve migration without downtime to your Power BI Report Server servers, or disruption to your report users. It's important to understand that no data or reports need to be removed. So, it means you can keep your current environment in place until you're ready for it to be retired.  
+:::image type="content" source="media/whats-new/report-server-publish-migrate.png" alt-text="Screenshot showing Power BI Report Server Migration option.":::
+
+You can achieve migration without downtime to your Power BI Report Server servers, or disruption to your report users. It's important to understand that you don't need to removed any data or reports. You can keep your current environment in place until you're ready for it to be retired.  
 
 ## Supported versions 
 
-You can migrate Power BI Report Server instances running on-premises, or on virtual machines hosted by cloud providers like Azure.
+You can migrate Power BI Report Server instances running on-premises or on virtual machines hosted by cloud providers like Azure.
 
 The following list describes the SQL Server versions supported for migration to Power BI:
 
@@ -29,12 +31,11 @@ The following list describes the SQL Server versions supported for migration to 
 
 This tool is designed to help customers migrate Power BI Report Server paginated reports (.rdl files) from their local servers to a Power BI workspace in their tenant. As part of the migration process, the tool also: 
 
-- Converts any shared data sources and/or shared datasets in these report files to be embedded in the report and save the files locally to disk only if they are supported data sources. 
 - Checks for unsupported data sources or report components when uploading to Power BI 
 - Saves the converted files that pass these checks to a specified Power BI Workspace. 
 - Provides a summary of the successful and unsuccessful assets migrated 
 
-Only .rdl reports can be migrated from your Power BI Report Server servers to Power BI. Each migrated .rdl report will become a Power BI paginated report.
+Only .rdl reports can be migrated from your Power BI Report Server servers to Power BI. Each migrated .rdl report becomes a Power BI paginated report.
 
 You can publish folder content or individual reports. To learn how to publish to Power BI  
 
