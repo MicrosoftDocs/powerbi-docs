@@ -27,7 +27,7 @@ Relationship paths are deterministic, meaning that filters are always propagated
 
 Here's how relationships propagate filters with an animated example.
 
-:::image type="content" source="media/desktop-relationships-understand/animation-filter-propagation.gif" alt-text="Animated example of relationship filter propagation.":::
+:::image type="content" source="media/desktop-relationships-understand/animation-filter-propagation.gif" alt-text="Animated diagram of relationship filter propagation.":::
 
 In this example, the model consists of four tables: **Category**, **Product**, **Year**, and **Sales**. The **Category** table relates to the **Product** table, and the **Product** table relates to the **Sales** table. The **Year** table also relates to the **Sales** table. All relationships are one-to-many (the details of which are described later in this article).
 
@@ -39,7 +39,7 @@ We recommend you apply [star schema](../guidance/star-schema.md) design principa
 
 The following image is the model diagram of the Adventure Works sales analysis data model. It shows a star schema design comprising a single fact table named **Sales**. The other four tables are dimension tables that support the analysis of sales measures by date, state, region, and product. Notice the model relationships connecting all tables. These relationships propagate filters (directly or indirectly) to the **Sales** table.
 
-:::image type="content" source="media/desktop-relationships-understand/model-diagram-star-schema.png" alt-text="Example of a Power B I Desktop model diagram comprising the tables and relationships as described in the previous paragraph.":::
+:::image type="content" source="media/desktop-relationships-understand/model-diagram-star-schema.png" alt-text="Screenshot of a Power BI Desktop model diagram comprising the tables and relationships as described in the previous paragraph.":::
 
 ### Disconnected tables
 
@@ -94,7 +94,7 @@ For guidance on using this cardinality type, see [Many-to-many relationship guid
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cardinality type by looking at the indicators (1 or \*) on either side of the relationship line. To determine which columns are related, you'll need to select, or hover the cursor over, the relationship line to highlight the columns.
 >
-> :::image type="content" source="media/desktop-relationships-understand/model-diagram-cardinality.png" alt-text="Example of two tables in the model diagram with the cardinality indicators highlighted.":::
+> :::image type="content" source="media/desktop-relationships-understand/model-diagram-cardinality.png" alt-text="Screenshot of two tables in the model diagram with the cardinality indicators highlighted.":::
 
 ### Cross filter direction
 
@@ -121,7 +121,7 @@ We recommend using bi-directional filtering only as needed. For more information
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cross filter direction by noticing the arrowhead(s) along the relationship line. A single arrowhead represents a single-direction filter in the direction of the arrowhead; a double arrowhead represents a bi-directional relationship.
 >
-> :::image type="content" source="media/desktop-relationships-understand/model-diagram-cross-filter-direction.png" alt-text="Example of two tables in the model diagram with the cross filter arrowhead highlighted.":::
+> :::image type="content" source="media/desktop-relationships-understand/model-diagram-cross-filter-direction.png" alt-text="Screenshot of two tables in the model diagram with the cross filter arrowhead highlighted.":::
 
 ### Make this relationship active
 
@@ -139,7 +139,7 @@ For more information, see [Active vs inactive relationship guidance](../guidance
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's active vs inactive status. An active relationship is represented by a solid line; an inactive relationship is represented as a dashed line.
 >
-> :::image type="content" source="media/desktop-relationships-understand/model-diagram-active-vs-inactive-relationship.png" alt-text="Example of two tables in the model diagram and two relationships; one solid line for active and one dashed line for inactive":::
+> :::image type="content" source="media/desktop-relationships-understand/model-diagram-active-vs-inactive-relationship.png" alt-text="Screenshot of two tables in the model diagram and two relationships; one solid line for active and one dashed line for inactive":::
 
 ### Assume referential integrity
 
@@ -178,7 +178,7 @@ A composite model, however, can comprise tables using different storage modes (i
 
 Here's an example of a composite model.
 
-:::image type="content" source="media/desktop-relationships-understand/source-group-example.png" alt-text="Example of a composite model consisting of two source groups.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example.png" alt-text="Diagram of a composite model consisting of two source groups.":::
 
 In this example, the composite model consists of two source groups: a Vertipaq source group and a DirectQuery source group. The Vertipaq source group contains three tables, and the DirectQuery source group contains two tables. One cross source group relationship exists to relate a table in the Vertipaq source group to a table in the DirectQuery source group.
 
@@ -188,7 +188,7 @@ A model relationship is *regular* when the query engine can determine the "one" 
 
 In the following example, there are two regular relationships, both marked as **R**. Relationships include the one-to-many relationship contained within the Vertipaq source group, and the one-to-many relationship contained within the DirectQuery source.
 
-:::image type="content" source="media/desktop-relationships-understand/source-group-example-regular.png" alt-text="Example of a composite model consisting of two source groups with the regular relationships marked.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-regular.png" alt-text="Diagram of a composite model consisting of two source groups with the regular relationships marked.":::
 
 For import models, where all data is stored in the Vertipaq cache, Power BI creates a data structure for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
 
@@ -205,7 +205,7 @@ Blank virtual rows are effectively *unknown members*. Unknown members represent 
 
 Here's how table expansion works with an animated example.
 
-:::image type="content" source="media/desktop-relationships-understand/animation-expanded-table.gif" alt-text="Animated example of table expansion.":::
+:::image type="content" source="media/desktop-relationships-understand/animation-expanded-table.gif" alt-text="Animated diagram of table expansion.":::
 
 In this example, the model consists of three tables: **Category**, **Product**, and **Sales**. The **Category** table relates to the **Product** table with a One-to-many relationship, and the **Product** table relates to the **Sales** table with a One-to-many relationship. The **Category** table contains two rows, the **Product** table contains three rows, and the **Sales** tables contains five rows. There are matching values on both sides of all relationships meaning that there are no referential integrity violations. A query-time expanded table is revealed. The table consists of the columns from all three tables. It's effectively a denormalized perspective of the data contained in the three tables. A new row is added to the **Sales** table, and it has a production identifier value (9) that has no matching value in the **Product** table. It's a referential integrity violation. In the expanded table, the new row has (Blank) values for the **Category** and **Product** table columns.
 
@@ -218,7 +218,7 @@ A model relationship is *limited* when there's no guaranteed "one" side. A limit
 
 In the following example, there are two limited relationships, both marked as **L**. The two relationships include the many-to-many relationship contained within the Vertipaq source group, and the one-to-many cross source group relationship.
 
-:::image type="content" source="media/desktop-relationships-understand/source-group-example-limited.png" alt-text="Example of a composite model consisting of two source groups with the limited relationships marked.":::
+:::image type="content" source="media/desktop-relationships-understand/source-group-example-limited.png" alt-text="Diagram of a composite model consisting of two tables with the limited relationships marked.":::
 
 For import models, data structures are never created for limited relationships. In that case, Power BI resolves table joins at query time.
 
@@ -232,7 +232,7 @@ There are other restrictions related to limited relationships:
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship as being limited. A limited relationship is represented with parenthesis-like marks ( ) after the cardinality indicators.
 >
-> :::image type="content" source="media/desktop-relationships-understand/model-diagram-limited-relationship.png" alt-text="Example of a limited relationship.":::
+> :::image type="content" source="media/desktop-relationships-understand/model-diagram-limited-relationship.png" alt-text="Screenshot of two tables in the model diagram with the limited relationship highlighted.":::
 
 ### Resolve relationship path ambiguity
 
