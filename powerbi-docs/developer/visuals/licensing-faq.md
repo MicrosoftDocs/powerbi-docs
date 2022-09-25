@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: faq
-ms.date: 09/19/2022
+ms.date: 09/25/2022
 ---
 
 # Transactability and License management FAQ
@@ -19,6 +19,14 @@ This article answers some of the questions users often have about how to set up,
 ### Who can purchase a visual license?
 
 *Anyone* can purchase a license, and assign the license to themselves or others.
+
+### How can I pay for the visuals?
+
+Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
+
+If you're a billing or global admin of the tenant, you also have the option of paying through Invoicing.
+
+:::image type="content" source="./media/licensing-faq/payment.png" alt-text="Screenshot of billing profile with Invoice selected.":::
 
 ### Do we need to have Power BI Premium to purchase Licenses?
 
@@ -58,14 +66,6 @@ The AppSource visuals are updated automatically when a new version is available.
 You're eligible for a full refund if you cancel your subscription within seven days of purchase. Refunds aren’t available for subscriptions canceled after that time period.
 
 ## License assignment
-
-### How can I pay for the visuals?
-
-Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
-
-If you're a billing or global admin of the tenant, you also have the option of paying through Invoicing.
-
-:::image type="content" source="./media/licensing-faq/payment.png" alt-text="Screenshot of billing profile with Invoice selected.":::
 
 ### What happens if the subscription owner leaves the company?
 
