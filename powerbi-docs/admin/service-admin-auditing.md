@@ -549,6 +549,8 @@ The following operations are available in both the audit and activity logs.
 
 <sup>3</sup> UpdateFeaturedTables refers to [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
+<sup>4</sup> Publishing from Power BI Report Builder to the service do not record event.
+
 ## Next steps
 
 - [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)
