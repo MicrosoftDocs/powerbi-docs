@@ -48,7 +48,7 @@ Report Server 2022 has a number of new options for setting system properties on 
   - [**EnablePowerBIReportMigrate**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#enablepowerbireportmigrate): default false *value* - turns the migration on / off completely. 
   - [**PowerBIMigrateUrl**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#powerbimigrateurl): default "https://app.powerbi.com/"  *value* defines the Cloud endpoint to use. 
 
-- Branding options to add a custom hyperlink, [CustomUrlLabel and CustomUrlValue](sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customurllabel-and-customurlvalue):
+- Branding options to add a custom hyperlink, [CustomUrlLabel and CustomUrlValue](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customurllabel-and-customurlvalue):
 
   - **CustomUrlLabel**: default Empty *value* - defines what string will be shown as URL label in the top left of subnavbar. 
   - **CustomUrlValue**: default Empty *value* - defines the URL. 
