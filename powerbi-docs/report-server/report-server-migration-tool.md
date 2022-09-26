@@ -37,19 +37,25 @@ This tool is designed to help customers migrate Power BI Report Server paginated
 
 Only .rdl reports can be migrated from your Power BI Report Server servers to Power BI. Each migrated .rdl report becomes a Power BI paginated report.
 
-You can publish folder content or individual reports. To learn how to publish to Power BI  
+You can publish folder content or individual reports. Read on to learn how to publish .rdl reports to Power BI. 
 
-## Publish .rdl Reports to Power BI  
+## Publish .rdl reports to Power BI  
 
-You can publish .rdl reports from Power BI Report Server web portal to Power BI.  
+You can publish .rdl reports from Power BI Report Server web portal to the Power BI service.  
 
-### Step 1 Site settings  
+### Step 1: Site settings  
 
-Graphical user interface, application
+The first step to publishing .rdl files is to set system properties on the report server:
+
+- [EnablePowerBIReportMigrate](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#enablepowerbireportmigrate) and 
+- [PowerBIMigrateUrl](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#powerbimigrateurl)
+
+:::image type="content" source="media/report-server-migration-tool/power-bi-report-server-set-server-properties.png" alt-text="Screenshot of setting report server properties.
+":::
 
 Description automatically generated 
 
-### Step 2 Browse Reports 
+### Step 2: Browse Reports 
 
 Graphical user interface, application
 
@@ -57,13 +63,13 @@ Description automatically generated
 
  
 
-### Step 3 Select reports 
+### Step 3: Select reports 
 
 Graphical user interface, application, Teams
 
 Description automatically generated 
 
-### Step 4 Sign in/Sign up 
+### Step 4: Sign in/Sign up 
 
  
 
@@ -71,13 +77,13 @@ Graphical user interface, application, Teams
 
 Description automatically generated 
 
-### Step 5 choose a workspace  
+### Step 5: choose a workspace  
 
 Graphical user interface, application
 
 Description automatically generated 
 
-### Step 6 View reports  
+### Step 6: View reports  
 
 A picture containing graphical user interface
 

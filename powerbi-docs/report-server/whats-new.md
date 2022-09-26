@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/23/2022
+ms.date: 09/26/2022
 ms.custom: intro-whats-new
 ---
 
@@ -41,26 +41,25 @@ In this latest release of Power BI Report Server, we're introducing the new pagi
 
 ### Feature add-on
 
-Report Server 2022 DB dbo.ConfigurationInfo table feature add on:  
+Report Server 2022 has a number of new options for setting system properties on the report server. The article [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services) explains how to set them in SQL Server Management Studio. Each of the links in this section takes you to that option in the article.
 
 - Allow RDL report migrations to Power BI using the publish feature in the  web portal:
 
-  - **EnablePowerBIReportMigrate**: default false *value* - turns the migration on / off completely 
-  - **PowerBIMigrateUrl**: default "https://app.powerbi.com/"  *value* defines the Cloud endpoint to use 
+  - [**EnablePowerBIReportMigrate**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#enablepowerbireportmigrate): default false *value* - turns the migration on / off completely. 
+  - [**PowerBIMigrateUrl**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#powerbimigrateurl): default "https://app.powerbi.com/"  *value* defines the Cloud endpoint to use. 
 
-- Branding option to add a custom hyperlink:
+- Branding options to add a custom hyperlink, [CustomUrlLabel and CustomUrlValue](sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customurllabel-and-customurlvalue):
 
-  - **CustomUrlLabel**: default Empty *value* - defines what string will be shown as URL label in the top left of subnavbar 
-  - **CustomUrlValue**: default Empty *value* - defines the URL 
+  - **CustomUrlLabel**: default Empty *value* - defines what string will be shown as URL label in the top left of subnavbar. 
+  - **CustomUrlValue**: default Empty *value* - defines the URL. 
 
 - Exclude/included Client IP Address when INFO Logging in Enabled:
 
-  - **LogClientIPAddress**: default False *value* - defines if client IP will be logged 
+  - [**LogClientIPAddress**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#logclientipaddress): default False *value* - defines if client IP will be logged. 
 
 - List view by default option in catalog:
 
-  - **TileViewByDefault**: default True *value* - defines if Tiles or List view is selected for all users by default 
-
+  - [**TileViewByDefault**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#tileviewbydefault): default True *value* - defines if Tiles or List view is selected for all users by default. 
 
 ## May 2022
 
