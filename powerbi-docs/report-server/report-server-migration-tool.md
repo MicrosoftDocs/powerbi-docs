@@ -83,7 +83,7 @@ Items that you can migrate now:
 
 - The .rdl files
 - Linked reports (.rdl files)
-- Folders (all .rdl reports from the folder are migrated
+- Folders (all .rdl reports from the folder are migrated)
 
 
 ## Step 3: Sign in/Sign up 
@@ -96,7 +96,7 @@ After you've selected the reports you want to publish, it's time to **Sign in** 
 
 Now that you're signed in, select the dropdown arrow to find and **Select a workspace**.
 
-:::image type="content" source="media/report-server-migration-tool/power-bi-report-server-select-workspace.png" alt-text="Screenshot showig selecting a workspace in the Power B I service.":::
+:::image type="content" source="media/report-server-migration-tool/power-bi-report-server-select-workspace.png" alt-text="Screenshot showing selecting a workspace in the Power B I service.":::
 
 ## Step 5: View reports  
 
