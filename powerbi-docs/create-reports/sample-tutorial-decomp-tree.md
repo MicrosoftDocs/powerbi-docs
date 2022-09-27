@@ -55,7 +55,7 @@ If you want to familiarize yourself with the built-in sample in this tutorial an
 
 ### Create a report from the dataset
 
-On the **Datasets + dataflows** tab, you have several options for exploring your dataset. In this tutorial, you're going to explore the dataset is by creating your own report from scratch.
+On the **Datasets + dataflows** tab, you have several options for exploring your dataset. In this tutorial, you're going to explore the dataset by creating your own report from scratch.
 
 ![Screenshot showing the Retail Analysis Sample dataset entry.](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
