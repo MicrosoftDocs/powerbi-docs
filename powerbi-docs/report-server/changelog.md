@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 09/26/2022
 ---
 
 # Change log for Power BI Report Server
@@ -16,6 +16,26 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## September 2022
+- **Power BI Report Server**
+    - *Version: 1.15.8300.38452 (build 15.0.1110.120), Released: September 26, 2022*
+        - Features
+            - Custom Visual API shipped with release - version v4.7.0 
+            - Option to add a custom hyperlink to a Report Server Portal 
+            - Option to include Client IP address in some log messages
+            - Accessibility links are added for French and Italian localizations 
+        - Bug fixes
+            -  Fixed issue with grouped visuals with swapped Y-Axis displaying.
+            -  Fixed font and background color reflection in total of row/column.
+            -  Fixed issue with loading PBIX report in iFrame with a specific filter.
+            -  Fixed issue with a date picker pop-up and dropdown list for parameters were disappearing.
+            -  Fixed decoding of + sign to a space in RDL URL parameters.
+            -  Fixed multiple issues with multi-value and multiselect parameters in RDL Parameters tab.
+        - Deprecated features
+            -  Mobile Reports functionality deprecated
+            -  Pin2PowerBI functionality deprecated
+            -  Report Parts support deprecated
+            
 ## May 2022
 - **Power BI Report Server**
     - *Version: 1.14.8179.37378 (build 15.0.1108.297), Released: May 26, 2022*
