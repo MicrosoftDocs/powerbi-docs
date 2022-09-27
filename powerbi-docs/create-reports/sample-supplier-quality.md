@@ -83,7 +83,7 @@ Let's analyze the downtime caused by defective materials and see which vendors a
 1. On the **Downtime Analysis** page of the report, select **Edit** in the top menu.  
 2. Select the **Downtime (min) by Vendor** area chart, and in the **Visualizations** pane, select the **Treemap** icon.  
 
-   :::image type="content" source="media/sample-supplier-quality/supplier4.png" alt-text="Screenshot showing the Treemap icon selected.":::
+   :::image type="content" source="media/sample-supplier-quality/supplier-4.png" alt-text="Screenshot showing the Treemap icon selected.":::
 
     The treemap automatically sets the **Vendor** field as the **Group**.  
 
