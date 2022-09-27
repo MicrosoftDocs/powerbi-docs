@@ -1,5 +1,5 @@
 ---
-title: Publish reports from Power BI Report Server the the Power BI service
+title: Publish reports from Power BI Report Server to the Power BI service
 description: This article targets Power BI Report Server report authors and Power BI administrators. It provides you with guidance to help you migrate your Report Definition Language (.rdl) reports to Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,17 +7,27 @@ ms.reviewer: 'cookiemccray'
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/22/2022
+ms.date: 09/26/2022
 ms.custom: 
 ---
 
-# Publish reports from Power BI Report Server the the Power BI service
+# Publish reports from Power BI Report Server to the Power BI service
 
-Do you have Report Definition Language (.rdl) paginated reports in Power BI Report Server, and you want to migrate them to the Power BI service? The process is simple. This article walks you through it.
+Do you have Report Definition Language (.rdl) paginated reports in Power BI Report Server, and you want to publish them to the Power BI service? The migration process is simple. This article walks you through it.
 
 :::image type="content" source="media/whats-new/report-server-publish-migrate.png" alt-text="Screenshot showing Power BI Report Server Migration option.":::
 
-You can migrate without downtime to your Power BI Report Server servers, or disruption to your report users. It's important to understand that you don't need to remove any data or reports. You can keep your current environment in place until you're ready for it to be retired.  
+You can migrate without downtime to your Power BI Report Server servers or disruption to your report users. It's important to understand that you don't need to remove any data or reports. You can keep your current environment in place until you're ready for it to be retired.  
+
+## Prerequisites
+
+You can publish and share paginated reports in your My Workspace or in other workspaces, as long as these prerequisites are met:
+
+- You have a Power BI Pro or Premium Per User license.
+- The workspace is in a Power BI Premium capacity.
+- You have write access to the workspace.
+
+See [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
 
 ## Supported versions 
 
@@ -39,7 +49,7 @@ Only .rdl reports can be migrated from your Power BI Report Server servers to Po
 
 You can publish folder content or individual .rdl reports from the Power BI Report Server web portal to the Power BI service. Read on to learn how to publish .rdl reports to Power BI.
 
-## Step 1: Site settings  
+## Step 1: Set site properties  
 
 The first step to publishing .rdl files to the Power BI service is to set system properties on the report server. Read more about them in the SQL Server Reporting Services article, [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services).
 
@@ -48,7 +58,7 @@ The first step to publishing .rdl files to the Power BI service is to set system
 
 :::image type="content" source="media/report-server-migration-tool/power-bi-report-server-set-server-properties.png" alt-text="Screenshot of setting report server properties.":::
 
-## Step 2: Browse reports 
+## Step 2: Browse to reports 
 
 Select **Publish** to find the .rdl files you want to publish from Power BI Report Server to the Power BI service.
 
