@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2022
+ms.date: 09/27/2022
 ---
 
 # Change log for Power BI Report Server
@@ -32,9 +32,9 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Fixed decoding of + sign to a space in RDL URL parameters.
             -  Fixed multiple issues with multi-value and multiselect parameters in RDL Parameters tab.
         - Deprecated features
-            -  Mobile Reports functionality deprecated
-            -  Pin2PowerBI functionality deprecated
-            -  Report Parts support deprecated
+            -  Mobile Reports functionality discontinued
+            -  Pin2PowerBI functionality discontinued
+            -  Report Parts support discontinued
             
 ## May 2022
 - **Power BI Report Server**
