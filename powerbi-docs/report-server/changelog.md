@@ -63,7 +63,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## January 2022
 - **Power BI Report Server**
-    - *Version: 1.13.8086.22725 (build 15.0.1108.159), Released: Feburary 23, 2022*
+    - *Version: 1.13.8086.22725 (build 15.0.1108.159), Released: February 23, 2022*
     	- Bug fixes
     	   - Fixed issue with V3 reports with SAP HANA datasource and Kerberos single sign-on.
     	   - Several minor UI fixes in new portal experience.
@@ -288,7 +288,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Bug fixes
             - Fix for .net framework 4.7 not installed.
 	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
-	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is https://+80/reportserver.
+	        - Fix for URLRoot value not working if there are multiple web service URL bindings and one of them is https://+80/reportserver.
 		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
 		  
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9, 2019*
@@ -305,7 +305,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
              - Fix for accessibility issues encountered while using Internet Explorer and Microsoft Edge.
              - Fix for SAP HANA issues while testing connection.
              - Fix for issues found while providing list of email addresses.
-             - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
+             - Fix for Power BI reports that use a DirectQuery data source and integrated authentication.
              - Fix for Paginated reports to render with filter parameters when snapshot is enabled.
              - Fix for double execution of stored procedures during report execution.
              - Fix for default service account being granted SQL Server login permissions, when custom service account is configured to run the Power BI Report Server.
@@ -323,7 +323,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - *Version: 2.73.5586.1241 (September 2019), Released: October 9, 2019*
         - Bug fixes
             - Fix for Text Filter custom visual.
-	        - Fix for the performance of drop down slicers.
+	        - Fix for the performance of drop-down slicers.
 	        - Fix for Strip PII from telemetry.
             
     - *Version: 2.73.5586.821 (September 2019), Released: September 26, 2019* (new build and new version)
