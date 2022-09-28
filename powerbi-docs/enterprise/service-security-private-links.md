@@ -314,7 +314,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
    To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using Service Tags in a Private Links isolated network.
-* Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. A potential workaround is to turn off Private Links, config the gateway, and then reenable the Private Links. 
+* Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. For some scenarios, a potential workaround is to turn off Private Links, config the gateway in a 'remote' region (a region other than the Recommended region), and then reenable the Private Links. After the Private Link is re-enabled, the Gateway in the remote region will not be using Private Link.
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) will fail to register.
 * Private Links resource REST APIs don't support tags.
 
