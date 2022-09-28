@@ -50,9 +50,9 @@ Following are the steps to browse and select visuals from the online **AppSource
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Once the visual is downloaded (which is like downloading any file from your browser), go to **Power BI Desktop**, select **More options** (...) in the **Visualizations** pane, and select **Import a visual from a file**.
+4. Once the visual is downloaded (which is like downloading any file from your browser), go to Power BI, select **More options** (...) in the **Visualizations** pane, and select **Import a visual from a file**.
 
-   ![Screenshot showing More options in the Power B I Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visuals.png)
+   ![Screenshot showing More options in the Power B I Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visuals.png)
 
 5. You're warned about importing a custom visual, as shown in the following image:
 
@@ -60,7 +60,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 6. Navigate to where the visual file was saved, then select the file. **Power BI Desktop** custom visualizations have the .pbiviz extension.
 
    ![Screenshot showing selection of a Power B I custom visualization file for import.](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_6.png)
-7. When you return to Power BI Desktop, you can see the new visual type in the **Visualizations** pane.
+7. When you return to Power BI, you can see the new visual type in the **Visualizations** pane.
 
    ![Screenshot showing the new imported custom visualization in the Power B I Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visual-forecasting.png)
 
@@ -80,7 +80,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 
 1. You can also get Power BI visuals from within Power BI Desktop or the Power BI service. Select the ellipsis (the ...) in the **Visualizations** pane, and select **Get more visuals**.
 
-   ![Screenshot showing Get more visuals in More options in the Power B I Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-get-more-visuals.png)
+   ![Screenshot showing Get more visuals in More options in the Power B I Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-get-more-visuals.png)
 
 2. When you do so, the **Power BI visuals** dialog box appears, where you can scroll through the available Power BI visuals and select what you would like. You can search by name, select a category, or just scroll through the available visuals. When you're ready, just select **Add** to add the custom visual to Power BI.
 

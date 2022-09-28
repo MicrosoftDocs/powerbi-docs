@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 00/27/2022
+ms.date: 09/27/2022
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -75,7 +75,7 @@ How would we go about creating this line chart using Q&A?
 
 ---
 
-4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells.
+4. Select the area chart and review the settings in the **Fields** pane.  The report creator built this chart by selecting these three values (**Last Year Sales** and **This Year Sales > Value** from the **Sales** table, and **FiscalMonth** from the **Time** table) and organizing them in the **Axis** and **Values** wells of the **Visualizations** pane.
 
     ![Screenshot showing the Visualization pane.](media/power-bi-visualization-introduction-to-q-and-a/power-bi-desktop-visualizations.png)
 
