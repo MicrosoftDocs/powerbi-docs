@@ -35,17 +35,17 @@ We’re continually adding to our collection, so [subscribe to the Power BI vide
 
 In this featured video, we show how to create quick reports in the Power BI service. This new way to create reports lets you paste data directly into the Power BI service, instead of downloading Power BI Desktop.
 
-> [!VIDEO https://www.youtube.com/watch?v=9rh_qSK-UKQ]
+> [!VIDEO https://www.youtube.com/embed/9rh_qSK-UKQ]
 
 ## Additional videos
 
 Learn about new data protection enhancements:
 
-> [!VIDEO https://www.youtube.com/watch?v=RxsT9TtOYok]
+> [!VIDEO https://www.youtube.com/embed/RxsT9TtOYok]
 
 Learn about new enhancements in Power BI app for Teams:
 
-> [!VIDEO https://www.youtube.com/watch?v=abTASA8iOjQ]
+> [!VIDEO https://www.youtube.com/embed/abTASA8iOjQ]
 
 ## Featured playlists
 
