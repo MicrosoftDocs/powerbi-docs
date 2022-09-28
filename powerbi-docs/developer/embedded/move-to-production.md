@@ -46,7 +46,7 @@ The table below describes the resources and limits of each SKU. To determine whi
 | P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
 | P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
 
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
 <sup>2</sup> These limits only apply to the datasets workload per capacity.
 
