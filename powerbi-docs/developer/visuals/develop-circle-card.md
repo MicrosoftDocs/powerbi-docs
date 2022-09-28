@@ -12,8 +12,6 @@ ms.date: 08/07/2022
 
 # Tutorial: Develop a Power BI circle card visual
 
-[!INCLUDE[Power BI visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
-
 In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
 In this tutorial, you learn how to:
