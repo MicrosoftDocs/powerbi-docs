@@ -1,16 +1,16 @@
 ---
-title: Adding formatting options to a Power BI custom visual
-description: A tutorial on how to develop Power BI custom visual format options.
+title: Add formatting options to a Power BI custom visual
+description: A tutorial on how to add different formatting options to the Power BI custom circle card visual developed in the previous tutorial.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 08/07/2022
+ms.date: 09/28/2022
 ---
 
-# Tutorial: Adding formatting options to the Circle Card visual
+# Tutorial: Add formatting options to the Circle Card visual
 
 When you create a visual, you can add options for customizing its properties. Some of the items that can be to customized  formatted include:
 

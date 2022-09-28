@@ -12,7 +12,7 @@ ms.date: 08/07/2022
 
 # Tutorial: Develop a Power BI circle card visual
 
-[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
+[!INCLUDE[Power BI visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
 In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
+[!INCLUDE[Power BI tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 ## Create a development project
 
@@ -92,13 +92,13 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
         import { VisualSettings } from "./settings";
         ```
 
-    * The four class-level private variable declarations.
+    * The five class-level private variable declarations.
 
     * All the lines of code inside the *constructor*.
 
     * All the lines of code inside the *update* method.
 
-    * All the remaining code lines below the *update* method, including the *parseSettings* and *enumerateObjectInstances* methods.
+    * All the remaining code below the *update* method.
 
 4. Add the following lines of code at the end of the import section:
 
@@ -236,72 +236,56 @@ Verify that the code in the *visuals.ts* file looks like this:
 */
 "use strict";
 
-import "core-js/stable";
 import "./../style/visual.less";
 import powerbi from "powerbi-visuals-api";
+import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
 import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
 import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
-import IVisual = powerbi.extensibility.visual.IVisual;
-import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
-import VisualObjectInstance = powerbi.VisualObjectInstance;
+import IVisual = powerbi.extensibility.IVisual;
 import DataView = powerbi.DataView;
-import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
-import IVisualHost = powerbi.extensibility.IVisualHost;
-import * as d3 from "d3";
-type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
 
+import { VisualSettings } from "./settings";
 export class Visual implements IVisual {
-    private host: IVisualHost;
-    private svg: Selection<SVGElement>;
-    private container: Selection<SVGElement>;
-    private circle: Selection<SVGElement>;
-    private textValue: Selection<SVGElement>;
-    private textLabel: Selection<SVGElement>;
+    private target: HTMLElement;
+    private updateCount: number;
+    private textNode: Text;
+
+    private settings: VisualSettings;
+    private formattingSettingsService: FormattingSettingsService;
 
     constructor(options: VisualConstructorOptions) {
-        this.svg = d3.select(options.element)
-            .append('svg')
-            .classed('circleCard', true);
-        this.container = this.svg.append("g")
-            .classed('container', true);
-        this.circle = this.container.append("circle")
-            .classed('circle', true);
-        this.textValue = this.container.append("text")
-            .classed("textValue", true);
-        this.textLabel = this.container.append("text")
-            .classed("textLabel", true);
+        this.settings = new VisualSettings()
+        this.formattingSettingsService = new FormattingSettingsService();
+
+        console.log('Visual constructor', options);
+        this.target = options.element;
+        this.updateCount = 0;
+        if (document) {
+            const new_p: HTMLElement = document.createElement("p");
+            new_p.appendChild(document.createTextNode("Update count:"));
+            const new_em: HTMLElement = document.createElement("em");
+            this.textNode = document.createTextNode(this.updateCount.toString());
+            new_em.appendChild(this.textNode);
+            new_p.appendChild(new_em);
+            this.target.appendChild(new_p);
+        }
     }
 
     public update(options: VisualUpdateOptions) {
-        let width: number = options.viewport.width;
-        let height: number = options.viewport.height;
-        this.svg.attr("width", width);
-        this.svg.attr("height", height);
-        let radius: number = Math.min(width, height) / 2.2;
-        this.circle
-            .style("fill", "white")
-            .style("fill-opacity", 0.5)
-            .style("stroke", "black")
-            .style("stroke-width", 2)
-            .attr("r", radius)
-            .attr("cx", width / 2)
-            .attr("cy", height / 2);
-        let fontSizeValue: number = Math.min(width, height) / 5;
-        this.textValue
-            .text("Value")
-            .attr("x", "50%")
-            .attr("y", "50%")
-            .attr("dy", "0.35em")
-            .attr("text-anchor", "middle")
-            .style("font-size", fontSizeValue + "px");
-        let fontSizeLabel: number = fontSizeValue / 4;
-        this.textLabel
-            .text("Label")
-            .attr("x", "50%")
-            .attr("y", height / 2)
-            .attr("dy", fontSizeValue / 1.2)
-            .attr("text-anchor", "middle")
-            .style("font-size", fontSizeLabel + "px");
+        this.settings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
+        console.log('Visual update', options);
+        if (this.textNode) {
+            this.textNode.textContent = (this.updateCount++).toString();
+        }
+    }
+
+    /**
+     * This function gets called on every formatting pane render. It allows you to select which of the
+     * objects and properties you want to expose to the users in the property pane.
+     *
+     */
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.settings);
     }
 }
 ```
@@ -370,17 +354,17 @@ In this section, you'll define data roles and data view mappings. You'll also mo
 
 ### Configure the capabilities file
 
-Modify the **capabilities.json** file to define the data role and data view mappings.
+Modify the **capabilities.json** file to define the data role, objects, and data view mappings.
 
-* **Defining the data role**
+* **Define the data role**
 
     Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a field that's summed up.
 
     1. Open the **capabilities.json** file in VS Code.
 
-    2. Remove all the content inside the **dataRoles** array (lines 3-12).
+    2. Remove all the content inside the *dataRoles* array (lines 3-12).
 
-    3. Insert the following code to the **dataRoles** array.
+    3. Insert the following code to the *dataRoles* array.
 
         ```json
         {
@@ -392,15 +376,77 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     4. Save the **capabilities.json** file.
 
-* **Defining the data view mapping**
+* **Define the objects**
+
+    Define the *objects* array with information about colors, fonts, and more.
+
+    1. Open the **capabilities.json** file in VS Code.
+
+    2. Remove all the content inside the *objects* array (lines 3-12).
+
+    3. Insert the following code to the *objects* array.
+
+        ```json
+        "objects": {
+            "dataPoint": {
+                "displayName": "Data colors",
+                "properties": {
+                    "defaultColor": {
+                        "displayName": "Default color",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "showAllDataPoints": {
+                        "displayName": "Show all",
+                        "type": {
+                            "bool": true
+                        }
+                    },
+                    "fill": {
+                        "displayName": "Fill",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "fillRule": {
+                        "displayName": "Color saturation",
+                        "type": {
+                            "fill": {}
+                        }
+                    },
+                     "fontSize": {
+                        "displayName": "Text Size",
+                        "type": {
+                            "formatting": {
+                                "fontSize": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        ```
+
+    4. Save the **capabilities.json** file.
+
+* **Define the data view mapping**
 
     Define a field called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
 
     1. Open the **capabilities.json** file in VS Code.
 
-    2. Remove all the content inside the **dataViewMappings** array (lines 10-30).
+    2. Remove all the content inside the *dataViewMappings* array (lines 10-30).
 
-    3. Insert the following code to the **dataViewMappings** array.
+    3. Insert the following code to the *dataViewMappings* array.
 
         ```json
         {
