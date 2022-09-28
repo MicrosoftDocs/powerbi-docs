@@ -171,35 +171,11 @@ Set the width and height of the visual, and initialize the attributes and styles
 2. Add the following code to the *update* method.
 
     ```typescript
-    let width: number = options.viewport.width;
-    let height: number = options.viewport.height;
-    this.svg.attr("width", width);
-    this.svg.attr("height", height);
-    let radius: number = Math.min(width, height) / 2.2;
-    this.circle
-        .style("fill", "white")
-        .style("fill-opacity", 0.5)
-        .style("stroke", "black")
-        .style("stroke-width", 2)
-        .attr("r", radius)
-        .attr("cx", width / 2)
-        .attr("cy", height / 2);
-    let fontSizeValue: number = Math.min(width, height) / 5;
-    this.textValue
-        .text("Value")
-        .attr("x", "50%")
-        .attr("y", "50%")
-        .attr("dy", "0.35em")
-        .attr("text-anchor", "middle")
-        .style("font-size", fontSizeValue + "px");
-    let fontSizeLabel: number = fontSizeValue / 4;
-    this.textLabel
-        .text("Label")
-        .attr("x", "50%")
-        .attr("y", height / 2)
-        .attr("dy", fontSizeValue / 1.2)
-        .attr("text-anchor", "middle")
-        .style("font-size", fontSizeLabel + "px");
+            this.settings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
+        console.log('Visual update', options);
+        if (this.textNode) {
+            this.textNode.textContent = (this.updateCount++).toString();
+        }
     ```
 
 3. Save the **visual.ts** file.
@@ -463,7 +439,7 @@ Modify the **capabilities.json** file to define the data role, objects, and data
 
 ### (Optional) Review the capabilities file code changes
 
-Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option. 
+Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option.
 
 1. In Power BI service, open the *Power BI US Sales Analysis* report. If you're using a different report to develop the circle card visual, navigate to that report.
 
@@ -538,10 +514,7 @@ You have now created a working Power BI visual. You can [add formatting options]
 > [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 
 > [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
+> [Power BI visuals project structure](visual-project-structure.md)
 
 > [!div class="nextstepaction"]
 > [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
-
-> [!div class="nextstepaction"]
-> [Power BI visuals project structure](visual-project-structure.md)
