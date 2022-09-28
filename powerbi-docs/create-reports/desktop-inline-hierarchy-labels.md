@@ -49,11 +49,11 @@ Now let's look at a different chart - using data that has informal hierarchies. 
 
 :::image type="content" source="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot showing a chart with informal hierarchy in Power B I." lightbox="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand-expanded.png":::
 
-Selecting **Expand to next level** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value – in this case, **Quantity**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too, by selecting the ellipsis in the upper right corner (the **...**), then selecting **Sort by ProductName ShipCountry** as shown in the following image.
+Selecting **Expand to next level** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value – in this case, **Quantity**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too, by selecting **More options** in the upper right corner (the **...**), then selecting **Sort by ProductName ShipCountry** as shown in the following image.
 
 ![Screenshot showing a chart expanded to the next level with the data sorted by informal hierarchy.](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 
-Once **ShipCountry** is selected, the data is sorted based on the informal hierarchy selection, as shown in the following image.
+After you select **ShipCountry**, the data is sorted based on the informal hierarchy selection, as shown in the following image.
 
 ![Screenshot showing a chart with the data sorted by informal hierarchy with ShipCountry selected.](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sorted.png)
 
