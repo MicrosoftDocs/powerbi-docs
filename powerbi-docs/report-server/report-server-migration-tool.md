@@ -7,7 +7,7 @@ ms.reviewer: 'cookiemccray'
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2022
+ms.date: 09/28/2022
 ms.custom: 
 ---
 
@@ -103,6 +103,33 @@ Now that you're signed in, select the dropdown arrow to find and **Select a work
 In the Power BI service, navigate to the workspace where you saved the reports.
 
 :::image type="content" source="media/report-server-migration-tool/paginated-reports-power-bi-service.png" alt-text="Screenshot showing paginated reports in Power B I service.":::
+
+## Limitations and considerations
+
+### Supported and unsupported item types
+
+You can only migrate .rdl reports from your Power BI Report Server servers to the Power BI service. Each migrated .rdl report becomes a Power BI paginated report.
+
+You can't migrate the following item types to the Power BI service:
+
+- Shared data sources
+- Shared datasets
+- Resources such as image files
+- KPIs
+- Mobile reports (discontinued)
+- Report models (discontinued)
+- Report parts (discontinued)
+
+### Unsupported report features
+
+Some paginated report features in Power BI Report Server aren't yet supported in the Power BI service. Paginated reports don't support the following items:
+
+- Shared data sources
+- Shared datasets
+- Drillthrough and click-through to other reports
+- Custom fonts
+
+You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle and sort.
 
 ## Next steps
 
