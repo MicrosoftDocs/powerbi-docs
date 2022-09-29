@@ -176,7 +176,7 @@ Here’s a list of new and updated features. For details, see the [Power BI Repo
 
 **Highlighted new features**
 
-Here are highlights of the the new features in Power BI Desktop for Power BI Report Server.
+Here are highlights of the new features in Power BI Desktop for Power BI Report Server.
 
 - [Smart guides for aligning objects](../create-reports/power-bi-create-mobile-optimized-report-about.md) are now available in the mobile layout view.
 - [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
@@ -385,7 +385,7 @@ Here’s a complete list of the updates in the October edition of Power BI Deskt
 **Other**  
 
 - Export data source to PBIDS in Power BI Desktop
-- Desktop splash screen dismiss 
+- Desktop splash screen dismiss
 
 ### Power BI Report Server
 
