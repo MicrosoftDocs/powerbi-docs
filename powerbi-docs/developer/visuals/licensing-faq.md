@@ -96,8 +96,8 @@ Select the Visual you want to assign licenses for. In the next page, select the 
 
 After you are assigned a licenses in the Microsoft 365 Admin Center:
 
-* If you are using the licensed visual in the Power BI Service, refresh the report by hitting F5.
-* If you are using the licensed visual in Power BI Desktop, close and reopen.
+* If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
+* If you're using the licensed visual in the Power BI Desktop, close and reopen it.
 
 The license will be available within one hour, maximum, from the time you refresh the report.
 
