@@ -12,17 +12,68 @@ Customer intent: As a Power BI admin, I need to know what information is passed 
 LocalizationGroup: Admin
 ---
 
-# Power BI and Microsoft Graph
+# Share data with your Microsoft 365 services
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of data in Microsoft 365, Windows, and Enterprise Mobility + Security (EMS). Use the wealth of data in Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
+Metadata from Power BI can be shared with Microsoft 365 services (typically via Microsoft Graph) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users.
 
-Together, the Microsoft Graph API, connectors, and Data Connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent applications.
+When shared with Microsoft 365 services, Power BI content will be listed in the Most Recently Viewed list on the Office.com home page. The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
 
-For more information, visit [Microsoft Graph documentation](/graph/overview.md)
+* The display name of the content.
+* When the content was last accessed.
+* The type of content that was accessed (report, dashboard etc.).
 
-When Microsoft Graph is integrated with Power BI, details about the Power BI content and activity will be accessible from the Office.com Home page. This feature is currently available in private preview. To participate in the private preview, a Power BI administrator will need to enable the **Share data with your Microsoft 365 services** tenant setting. Before turning on the experience, learn what data will be shared with Microsoft 365.
+For the complete list of Power BI metadata that is shared with Microsoft 365 services, see [Data that will be shared with Microsoft 365](#data-that-will-be-shared-with-microsoft-365).
+
+## Data residency
+
+If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it is stored in. By enabling this setting, the Power BI administrator is explicitly opting in to this feature, and acknowledging that to enable these cross-service capabilities, Power BI metadata may flow outside the geographic region it is located in.
+
+## How to turn on sharing with Microsoft 365 services
+
+To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **Share data with your Microsoft 365 services** tenant setting. See XXX for detail. Before turning on the experience, the administrator should review the list of data that will be shared with Microsoft 365.
+
+To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**. Because of data residency considerations (see XXX) for details), it is disabled by default.
+
+:::image type="content" source="media/service-admin-portal-share-data-microsoft-365-services/allow-m365-process-store-data-remotely-admin-portal-switch-new.png" alt-text="Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.":::
+
+## Data that will be shared with Microsoft 365
+
+
+References:
+* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
+* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)# Share data with your Microsoft 365 services
+
+Metadata from Power BI can be shared with Microsoft 365 services (typically via Microsoft Graph) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users.
+
+When shared with Microsoft 365 services, Power BI content will be listed in the Most Recently Viewed list on the Office.com home page. The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
+
+* The display name of the content.
+* When the content was last accessed.
+* The type of content that was accessed (report, dashboard etc.).
+
+For the complete list of Power BI metadata that is shared with Microsoft 365 services, see [Data that will be shared with Microsoft 365](#data-that-will-be-shared-with-microsoft-365).
+
+## Data residency
+
+If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it is stored in. By enabling this setting, the Power BI administrator is explicitly opting in to this feature, and acknowledging that to enable these cross-service capabilities, Power BI metadata may flow outside the geographic region it is located in.
+
+## How to turn on sharing with Microsoft 365 services
+
+To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **Share data with your Microsoft 365 services** tenant setting. See XXX for detail. Before turning on the experience, the administrator should review the list of data that will be shared with Microsoft 365.
+
+To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**. Because of data residency considerations (see XXX) for details), it is disabled by default.
+
+:::image type="content" source="media/service-admin-portal-share-data-microsoft-365-services/allow-m365-process-store-data-remotely-admin-portal-switch-new.png" alt-text="Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.":::
+
+## Data that will be shared with Microsoft 365
+
+
+References:
+* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
+* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
+
 
 ## Data that will be shared with Microsoft 365
 
