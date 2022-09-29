@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/27/2022
+ms.date: 09/28/2022
 ---
 
 # Change log for Power BI Report Server
@@ -36,6 +36,11 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Pin2PowerBI functionality discontinued
             -  Report Parts support discontinued
             
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.109.801.0 (September 2022), Released: September 26, 2022*
+        - Support for September 2022 Power BI Report Server
+        - Bug fixes
+           
 ## May 2022
 - **Power BI Report Server**
     - *Version: 1.14.8179.37378 (build 15.0.1108.297), Released: May 26, 2022*
