@@ -29,8 +29,8 @@ You've created reports, dashboards, scorecards, and datasets. Maybe you want to 
 
 - [*Share reports, dashboards, and scorecards*](#share-reports-or-dashboards) from your My Workspace or another workspace.
 - Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
-- Use presentation mode to display reports and dashboards in full-screen on Windows devices and Surface Hub.
-- Present live Power BI report pages in PowerPoint.
+- Use [presentation mode to display reports and dashboards](#display-reports-and-dashboards-full-screen-on-windows-devices) in full-screen on Windows devices and Surface Hub.
+- Present live [Power BI report pages in PowerPoint](#present-live-report-pages-in-powerpoint).
 - [Print reports](#print-or-save-as-pdf-or-other-static-file).
 - [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
 - Bundle reports, dashboards, and scorecards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
@@ -145,7 +145,7 @@ With the **Embed in SharePoint Online** and the **Embed** option in the Power BI
 
 You can use *presentation mode* to display reports and dashboards full-screen on Windows devices and Surface Hub. Presentation mode is useful for sharing on display monitors in hallways, at meetings or conferences, on a dedicated projector at the office, and so on.
 
-![Screenshot of a report in presentation mode.](..consumer/mobile/media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
+![Screenshot of a report in presentation mode.](../consumer/mobile/media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
 Read more about [presentation mode](../consumer/mobile/mobile-windows-10-app-presentation-mode.md).
 
