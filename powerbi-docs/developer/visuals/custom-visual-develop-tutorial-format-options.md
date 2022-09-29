@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 09/28/2022
+ms.date: 09/29/2022
 ---
 
 # Tutorial: Add formatting options to the Circle Card visual
@@ -130,7 +130,7 @@ Now let's add new group called *color* for configuring the color and width of th
 
     ![Module classes](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
-    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the `capabilities.json` file (**circleColor** and **circleThickness**) and also sets default values. The **VisualSettings** class inherits the **DataViewObjectParser** class and adds a property named **circle**, which matches the object defined in the `capabilities.json` file, and returns an instance of **CircleSettings**.
+    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the `capabilities.json` file (**circleColor** and **circleThickness**) and also sets default values.
 
 6. Save the `settings.ts` file.
 
