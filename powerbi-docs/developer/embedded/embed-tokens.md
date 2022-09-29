@@ -45,7 +45,7 @@ This section describes the different authentication flows for the *embed for you
 
 ### [Embed for your customers](#tab/embed-for-customers)
 
-The *Embed for your customers* solution uses a non-interactive authentication flow. Users don't have to sign in to Azure AD, to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The reserved identity can be one of the following:
+The *embed for your customers* solution uses a non-interactive authentication flow. Users don't sign in to Azure AD to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD, and generate the *embed token*. The reserved identity can be either a *service principal* or a *master user*:
 
 * **[Service principal](embed-service-principal.md)**
 
@@ -58,6 +58,8 @@ The *Embed for your customers* solution uses a non-interactive authentication fl
 
     When using a *master user* you need to define your app's [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* is has to grant consent for using these permissions using the Power BI REST APIs.
 
+After successful authentication against Azure AD, your web app will generate an [embed token](/rest/api/power-bi/embedtoken) to allow its users to access specific Power BI content.
+
 >[!NOTE]
 >
 >* To embed using the *embed for your customers* solution, you need a capacity with an A, EM, or P SKU.
@@ -65,8 +67,7 @@ The *Embed for your customers* solution uses a non-interactive authentication fl
 
 The following diagram shows the authentication flow for the *embed for your customers* solution.
 
->[!div class="mx-imgBorder"]
->:::image type="content" source="media\embed-tokens\paas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your customers Power B I embedded analytics solution.":::
+:::image type="content" source="media\embed-tokens\paas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your customers Power BI embedded analytics solution.":::
 
 1. Web app user authenticates against your web app (with your authentication method).
 
@@ -86,8 +87,7 @@ The following diagram shows the authentication flow for the *embed for your cust
 
 The *Embed for your organization* solution uses an interactive authentication flow. The web app users authenticate against Azure AD using their own Power BI credentials. They need to consent to the API permissions that were set when the app was registered with Azure AD. A Microsoft *Permissions requested* dialog window will pop up asking them to accept these permissions. After consent is granted, Power BI content that the user has access to, can be embedded.
 
->[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
+:::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot showing the Microsoft permissions requested pop-up window which asks customers to grant permissions for accessing Power B I.":::
 
 >[!NOTE]
 >
@@ -100,8 +100,7 @@ The *Embed for your organization* solution uses an interactive authentication fl
 
 This diagram shows an example of the authentication flow for the *embed for your organization* solution.
 
->[!div class="mx-imgBorder"]
->:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your organization Power B I embedded analytics solution.":::
+:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="A diagram of the authentication flow in an embed for your organization Power B I embedded analytics solution.":::
 
 1. Web app user accesses the web app.
 
