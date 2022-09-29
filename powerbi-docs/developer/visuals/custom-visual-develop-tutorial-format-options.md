@@ -43,7 +43,7 @@ This tutorial explains how to add common formatting properties to a visual. We'l
 
     You should see a message that reads - *Formatting options are unavailable for this visual.*
 
-    ![Formatting paintbrush](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/format-paintbrush.png" alt-text="Screenshot of formatting paintbrush icon on the visualizations pane.":::
 
     If you see formatting options here but can't change them skip to [Adding custom formatting options](#adding-custom-formatting-options) to customize them.
 
@@ -55,22 +55,22 @@ This tutorial explains how to add common formatting properties to a visual. We'l
     "objects": {},
     ```
 
-    ![Add objects](media/custom-visual-develop-tutorial-format-options/add-objects.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/add-objects.png" alt-text="Screenshot of capabilities file with empty objects array.":::
 
 5. Save the `capabilities.json` file.
 
 6. In **Power BI**, review the formatting options again.
 
     > [!Note]
-    > If you do not see the formatting options change then select **Reload Custom Visual**.
+    > If you don't see the formatting options change, select **Reload Custom Visual**.
 
-    ![View formatting options](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/view-formatting-options.png" alt-text="Screenshot of formatting options on the visualizations pane":::
 
 7. Set the **Title** option to *Off*. Notice that the visual no longer displays the measure name at the top-left corner.
 
-    ![Tile option is off](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
+      :::image type="content" source="media/custom-visual-develop-tutorial-format-options/tile-option-off.png" alt-text="Screenshot of visualizations pane with the Title switch turned off. ":::
 
-    ![No name tile](media/custom-visual-develop-tutorial-format-options/no-name-tile.png)
+      :::image type="content" source="media/custom-visual-develop-tutorial-format-options/no-name-tile.png" alt-text="Screenshot of circle card visual without the title row.":::
 
 ### Adding custom formatting options
 
@@ -83,7 +83,7 @@ Now let's add new group called *color* for configuring the color and width of th
     ```json
         {
             "circle": {
-                "displayName": "Circle",
+                "displayName": "Circle", // displayName is optional
                 "properties": {
                     "circleColor": {
                         "displayName": "Color",
@@ -110,7 +110,7 @@ Now let's add new group called *color* for configuring the color and width of th
 
     The JSON fragment describes a group called *circle*, which consists of two variables -  *circleColor* and *circleThickness*.
 
-   ![Circle thickness code](media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png)
+   :::image type="content" source="media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png" alt-text="Screenshot of capabilities file with circle object defined with color and thickness properties.":::
 
 3. Save the `capabilities.json` file.
 
@@ -119,16 +119,37 @@ Now let's add new group called *color* for configuring the color and width of th
 5. In the `settings.ts` file, replace the two classes with the following code.
 
     ```typescript
-    export class CircleSettings {
-        public circleColor: string = "white";
-        public circleThickness: number = 2;
+    import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
+
+    import FormattingSettingsCard = formattingSettings.Card;
+    import FormattingSettingsSlice = formattingSettings.Slice;
+    import FormattingSettingsModel = formattingSettings.Model;
+
+    export class CircleSettings extends FormattingSettingsCard{
+        public circleColor = new formattingSettings.ColorPicker({
+            name: "circleColor",
+            displayName: "Color",
+        value: { value: "#ffffff" }
+        });
+
+        public circleThickness = new formattingSettings.NumUpDown({
+            name: "circleThickness",
+            displayName: "Thickness",
+            value: 2
+        });
+
+        public name: string = "circle";
+        public displayName: string = "Circle";
+        public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness]
     }
-    export class VisualSettings extends DataViewObjectsParser {
+
+    export class VisualSettingsModel extends FormattingSettingsModel {
         public circle: CircleSettings = new CircleSettings();
+        public cards: FormattingSettingsCard[] = [this.circle];
     }
     ```
 
-    ![Module classes](media/custom-visual-develop-tutorial-format-options/module-classes.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/module-classes.png" alt-text="Screenshot of module classes, CircleSetting and VisualSettings.":::
 
     This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the `capabilities.json` file (**circleColor** and **circleThickness**) and also sets default values.
 
@@ -136,61 +157,61 @@ Now let's add new group called *color* for configuring the color and width of th
 
 7. Open the `visual.ts` file.
 
-8. In the `visual.ts` file, import *VisualSettings*, *VisualObjectInstanceEnumeration* and *EnumerateVisualObjectInstancesOptions*:
+8. In the `visual.ts` file, import *VisualSettings* and *FormattingSettingsService*:
 
     ```typescript
     import { VisualSettings } from "./settings";
-    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
-    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
     ```
 
-    and in the **Visual** class add the following property:
+    and in the **Visual** class add the following properties:
 
     ```typescript
     private visualSettings: VisualSettings;
+    private formattingSettingsService: FormattingSettingsService;
+
     ```
 
     This property stores a reference to the **VisualSettings** object, describing the visual settings.
 
-    ![Add visual class](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png" alt-text="Screenshot of visual class with added VisualSettingsModel and FormattingSettingsService properties.":::
 
-9. In the **Visual** class, add the following method before the **update** method. This method is used to populate the formatting options.
+9. In the **Visual** class, add the following method after the **update** method.
 
     ```typescript
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
-        const settings: VisualSettings = this.visualSettings || <VisualSettings>VisualSettings.getDefault();
-        return VisualSettings.enumerateObjectInstances(settings, options);
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.visualSettings);
     }
     ```
 
-    This method is used to populate the formatting options.
+     This function gets called on every formatting pane render. It allows you to select which of the
+     objects and properties you want to expose to the users in the property pane.
 
-    ![Visual settings object](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
+      :::image type="content" source="media/custom-visual-develop-tutorial-format-options/get-formatting-model.png" alt-text="Screenshot of the get formatting model function.":::
 
 10. In the **update** method, after the declaration of the **radius** variable, add the following code.
 
     ```typescript
-    this.visualSettings = VisualSettings.parse<VisualSettings>(dataView);
-
-    this.visualSettings.circle.circleThickness = Math.max(0, this.visualSettings.circle.circleThickness);
-    this.visualSettings.circle.circleThickness = Math.min(10, this.visualSettings.circle.circleThickness);
+    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettingsModel, options.dataViews);
+    this.visualSettings.circle.circleThickness.value = Math.max(0, this.visualSettings.circle.circleThickness.value);
+    this.visualSettings.circle.circleThickness.value = Math.min(10, this.visualSettings.circle.circleThickness.value);
     ```
 
-    This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, converting it to 0 if negative, or 10 if it's a value greater than 10.
+    This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, and converts it to a number between 0 and 10.
 
-    ![Radius variable](media/custom-visual-develop-tutorial-format-options/radius.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/radius.png" alt-text="Screenshot of setting circle thickness to between zero and ten.":::
 
 11. In the **circle element**, modify the values passed to the **fill style** and **stroke-width style** as follows:
 
     ```typescript
-    this.visualSettings.circle.circleColor
+    .style("fill", this.visualSettings.circle.circleColor.value.value)
     ```
 
     ```typescript
-    this.visualSettings.circle.circleThickness
+    .style("stroke-width", this.visualSettings.circle.circleThickness.value)
     ```
 
-    ![Fills the circle element](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/circle-element-fill.png" alt-text="Screenshot of circle elements.":::
 
 12. Save the `visual.ts` file.
 
@@ -292,14 +313,6 @@ For tips about debugging your custom visual, see the [debugging guide](visuals-h
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Publish Power BI visuals to AppSource](office-store.md)
-
-> [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
-
-> [!div class="nextstepaction"]
-> [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
-
-> [!div class="nextstepaction"]
-> [Power BI visuals project structure](visual-project-structure.md)
+* [Create a Power BI bar chart visual](create-bar-chart.md)
+* [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
+* [Power BI visuals project structure](visual-project-structure.md)
