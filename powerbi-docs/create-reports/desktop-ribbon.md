@@ -42,7 +42,7 @@ These benefits can be grouped into the following categories:
 
 * **A single-line ribbon, when collapsed, saves you space** - another benefit of the updated ribbon is the ability to collapse the ribbon itself into a single line, dynamically displaying ribbon items based on your context.
 
-    ![Screenshot showing the new single-line ribbon.](media/desktop-ribbon/desktop-ribbon-06.png)
+    :::image type="content" source="media/desktop-ribbon/desktop-ribbon-06.png" alt-text="Screenshot showing the new single-line ribbon.":::
 
 * **Keytips to navigate and select buttons** - to help navigate the ribbon, you can press **Alt + Windows Key** to activate keytips. Once activated, you can press the shown keys on your keyboard to navigate.
 
