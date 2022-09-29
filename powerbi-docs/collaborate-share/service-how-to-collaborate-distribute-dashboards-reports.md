@@ -143,7 +143,7 @@ With the **Embed in SharePoint Online** and the **Embed** option in the Power BI
 
 ## Display reports and dashboards full-screen on Windows devices
 
-You can use *presentation mode* to display reports and dashboards full-screen on Windows devices and Surface Hub. Presentation mode is useful for sharing on display monitors in hallways, at meetings or conferences, on a dedicated projector at the office, and so on.
+You can use *presentation mode* to display reports and dashboards full-screen on Windows devices and Surface Hub. Presentation mode is a feature of the [Power BI app for Windows](https://go.microsoft.com/fwlink/?LinkID=526478). It's useful for sharing on display monitors in hallways, at meetings or conferences, on a dedicated projector at the office, and so on.
 
 ![Screenshot of a report in presentation mode.](../consumer/mobile/media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
