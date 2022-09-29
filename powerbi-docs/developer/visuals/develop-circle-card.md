@@ -96,7 +96,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
 
     * All the lines of code inside the *update* method.
 
-    * All the remaining code below the *update* method.
+    * All the remaining code below the *update* method, including the *getFormattingModel*.
 
 4. Add the following lines of code at the end of the import section:
 
@@ -169,11 +169,35 @@ Set the width and height of the visual, and initialize the attributes and styles
 2. Add the following code to the *update* method.
 
     ```typescript
-            this.settings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
-        console.log('Visual update', options);
-        if (this.textNode) {
-            this.textNode.textContent = (this.updateCount++).toString();
-        }
+    let width: number = options.viewport.width;
+    let height: number = options.viewport.height;
+    this.svg.attr("width", width);
+    this.svg.attr("height", height);
+    let radius: number = Math.min(width, height) / 2.2;
+    this.circle
+        .style("fill", "white")
+        .style("fill-opacity", 0.5)
+        .style("stroke", "black")
+        .style("stroke-width", 2)
+        .attr("r", radius)
+        .attr("cx", width / 2)
+        .attr("cy", height / 2);
+    let fontSizeValue: number = Math.min(width, height) / 5;
+    this.textValue
+        .text("Value")
+        .attr("x", "50%")
+        .attr("y", "50%")
+        .attr("dy", "0.35em")
+        .attr("text-anchor", "middle")
+        .style("font-size", fontSizeValue + "px");
+    let fontSizeLabel: number = fontSizeValue / 4;
+    this.textLabel
+        .text("Label")
+        .attr("x", "50%")
+        .attr("y", height / 2)
+        .attr("dy", fontSizeValue / 1.2)
+        .attr("text-anchor", "middle")
+        .style("font-size", fontSizeLabel + "px");
     ```
 
 3. Save the **visual.ts** file.
@@ -222,7 +246,35 @@ import { VisualSettings } from "./settings";
 export class Visual implements IVisual {
     private target: HTMLElement;
     private updateCount: number;
-    private textNode: Text;
+    priv        let width: number = options.viewport.width;
+        let height: number = options.viewport.height;
+        this.svg.attr("width", width);
+        this.svg.attr("height", height);
+        let radius: number = Math.min(width, height) / 2.2;
+        this.circle
+            .style("fill", "white")
+            .style("fill-opacity", 0.5)
+            .style("stroke", "black")
+            .style("stroke-width", 2)
+            .attr("r", radius)
+            .attr("cx", width / 2)
+            .attr("cy", height / 2);
+        let fontSizeValue: number = Math.min(width, height) / 5;
+        this.textValue
+            .text("Value")
+            .attr("x", "50%")
+            .attr("y", "50%")
+            .attr("dy", "0.35em")
+            .attr("text-anchor", "middle")
+            .style("font-size", fontSizeValue + "px");
+        let fontSizeLabel: number = fontSizeValue / 4;
+        this.textLabel
+            .text("Label")
+            .attr("x", "50%")
+            .attr("y", height / 2)
+            .attr("dy", fontSizeValue / 1.2)
+            .attr("text-anchor", "middle")
+            .style("font-size", fontSizeLabel + "px");ate textNode: Text;
 
     private settings: VisualSettings;
     private formattingSettingsService: FormattingSettingsService;
@@ -246,6 +298,7 @@ export class Visual implements IVisual {
     }
 
     public update(options: VisualUpdateOptions) {
+        
         this.settings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
         console.log('Visual update', options);
         if (this.textNode) {
@@ -346,68 +399,6 @@ Modify the **capabilities.json** file to define the data role, objects, and data
             "name": "measure",
             "kind": "Measure"
         }
-        ```
-
-    4. Save the **capabilities.json** file.
-
-* **Define the objects**
-
-    Define the *objects* array with information about colors, fonts, and more.
-
-    1. Open the **capabilities.json** file in VS Code.
-
-    2. Remove all the content inside the *objects* array (lines 3-12).
-
-    3. Insert the following code to the *objects* array.
-
-        ```json
-        "objects": {
-            "dataPoint": {
-                "displayName": "Data colors",
-                "properties": {
-                    "defaultColor": {
-                        "displayName": "Default color",
-                        "type": {
-                            "fill": {
-                                "solid": {
-                                    "color": true
-                                }
-                            }
-                        }
-                    },
-                    "showAllDataPoints": {
-                        "displayName": "Show all",
-                        "type": {
-                            "bool": true
-                        }
-                    },
-                    "fill": {
-                        "displayName": "Fill",
-                        "type": {
-                            "fill": {
-                                "solid": {
-                                    "color": true
-                                }
-                            }
-                        }
-                    },
-                    "fillRule": {
-                        "displayName": "Color saturation",
-                        "type": {
-                            "fill": {}
-                        }
-                    },
-                     "fontSize": {
-                        "displayName": "Text Size",
-                        "type": {
-                            "formatting": {
-                                "fontSize": true
-                            }
-                        }
-                    }
-                }
-            }
-        },
         ```
 
     4. Save the **capabilities.json** file.
