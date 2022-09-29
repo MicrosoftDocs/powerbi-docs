@@ -48,7 +48,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
 
    * [Manage alerts set on a dashboard tile](end-user-alerts.md)  ![alert icon](./media/end-user-tiles/power-bi-alert-icon.png)
 
-   * [Open the data in Excel](end-user-export.md)  ![export icon](./media/end-user-tiles/power-bi-export-icon.png)
+   * [Open the data in Excel](/power-bi/visuals/power-bi-visualization-export-data)  ![export icon](./media/end-user-tiles/power-bi-export-icon.png)
 
 
 3. To close the action menu, select a blank area in the canvas.
@@ -74,5 +74,3 @@ When you select a tile, what happens next depends on how the tile was created an
 [Data refresh](../connect-data/refresh-data.md)
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
-
-

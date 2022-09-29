@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: sample
-ms.date: 07/15/2021
+ms.date: 05/26/2022
 LocalizationGroup: Samples
 ---
 # Download the Financial Sample Excel workbook for Power BI
@@ -24,7 +24,7 @@ You can also download it from Power BI Desktop. Select **Try a sample dataset** 
 
 :::image type="content" source="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample dataset on the canvas."::: 
 
-If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
+If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load sample data**.
 
 ## Next steps
 

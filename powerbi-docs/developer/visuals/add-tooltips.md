@@ -1,16 +1,16 @@
 ---
-title: Tooltips in Power BI visuals
-description: This article discusses how you can display tooltips in Power BI visuals.
+title: Add tooltips to Power BI custom visuals
+description: This article discusses how you can display tooltips in Power BI custom visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 09/02/2021
+ms.date: 02/02/2022
 ---
 
-# Tooltips in Power BI visuals
+# Add tooltips to your Power BI visuals
 
 [Tooltips](../../create-reports/desktop-tooltips.md) are an elegant way of providing more contextual information and detail to data points on a visual. The Power BI tooltips API can handle the following interactions:
 
@@ -20,7 +20,7 @@ ms.date: 09/02/2021
 
 Tooltips can display a textual element with a title, a value in a given color, and opacity at a specified set of coordinates. This data is provided to the API, and the Power BI host renders it the same way it renders tooltips for native visuals.
 
-You can update the style of your tooltips or add drilling actions by enabling the [modern tooltips](#add-modern-tooltips-support-to-the-report-page) feature.
+You can change the style of your tooltips or add drilling actions by enabling the [modern tooltips](#add-modern-tooltips-support-to-the-report-page) feature.
 
 The following image shows a tooltip in a sample bar chart:
 
@@ -44,7 +44,7 @@ You can manage the tooltips in your visual through the `ITooltipService` interfa
 Your visual should listen for mouse events within your visual and call the `show()`, `move()`, and `hide()` delegates, as needed, with the appropriate content populated in the Tooltip `options` objects.
 `TooltipShowOptions` and `TooltipHideOptions` would in turn define what to display and how to behave in these events.
 
-Because calling these methods involves user events such as mouse moves and touch events, it's a good idea to create listeners for these events, which would in turn invoke the `TooltipService` members.
+Calling these methods involves user events such as mouse moves and touch events, so it's a good idea to create listeners for these events, which would in turn invoke the `TooltipService` members.
 The following example aggregates in a class called `TooltipServiceWrapper`.
 
 ### The TooltipServiceWrapper class
@@ -228,7 +228,7 @@ An example of sending the selectionId to tooltip display calls is shown in the f
 
 ## Add modern tooltips support to the report page
 
-From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the styling to match your report theme.
+From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme.
 
 ![modern tooltip](media/add-tooltips/modern-tooltip.png)
 

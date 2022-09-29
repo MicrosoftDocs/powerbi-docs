@@ -34,8 +34,6 @@
         href: end-user-dashboards.md
       - name: "View a dashboard"
         href: end-user-dashboard-open.md
-      - name: "Featured dashboards"
-        href: end-user-featured.md
       - name: "Dashboard tiles"
         href: end-user-tiles.md
       - name: "Add a comment or start a conversation"
@@ -62,8 +60,6 @@
         href: end-user-slicer.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
-      - name: "Export a report to PowerPoint"
-        href: end-user-powerpoint.md
       - name: "How to identify and use buttons"
         href: end-user-buttons.md     
       - name: "Add a bookmark to a report"
@@ -82,8 +78,6 @@
           href: paginated-reports-view-power-bi-service.md
         - name: "Interact with parameters"
           href: paginated-reports-view-parameters.md
-        - name: "Subscribe yourself or others"
-          href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
       - name: "Types of visualizations"
@@ -100,7 +94,7 @@
       items: 
       - name: "Use data for productive meetings"
         href: business-user-teams-meetings.md
-      - name: "Use goals to drive results"
+      - name: "Use metrics to drive results"
         href: business-user-teams-goals.md
       - name: "Lead data-driven discussions"
         href: business-user-teams-share-data.md
@@ -110,8 +104,6 @@
         href: business-user-teams-collaboration-data.md
     - name: Common tasks
       items: 
-      - name: "Export data to Excel"
-        href: end-user-export.md
       - name: "Look up the content owner and last refreshed date"
         href: end-user-fresh.md
       - name: "Different ways to zoom into content using Focus and Full screen modes"
@@ -129,7 +121,7 @@
       - name: "Subscribe to a report or dashboard"
         href: end-user-subscribe.md
       - name: "Troubleshoot Power BI subscriptions"
-        href: service-troubleshoot-subscribe.md  
+        href: service-troubleshoot-subscribe.yml  
       - name: "Search and sort content in Power BI"
         href: end-user-search-sort.md
       - name: "Turn on preview features"
@@ -142,8 +134,8 @@
         href: end-user-apps.md
       - name: "Install and use apps"
         href: end-user-app-view.md
-      - name: "Datasets hub"
-        href: end-user-datasets-hub.md
+      - name: "Data hub"
+        href: end-user-data-hub.md
       - name: "Connect to services"
         href: ../connect-data/service-connect-to-services.md
       - name: "Get a sample app from the app marketplace"

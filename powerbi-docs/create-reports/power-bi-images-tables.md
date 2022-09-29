@@ -13,6 +13,8 @@ LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 A good way to enhance your reports is to add images to them. Static images on the page are good for some purposes. But sometimes you want images that relate to the data in your report. This topic teaches you how to display images in a table, matrix, slicer, or multi-row card. 
 
 ![URL images in a table](media/power-bi-images-tables/power-bi-url-images-table.png)
@@ -50,6 +52,7 @@ Your organization may not allow displaying images stored on OneDrive for Busines
 1. In OneDrive for Business, open an image and select **View original**.
 1. Copy the URL that generates.
 1. Select **Anyone with the link** to generate a sharing link that anyone can view, so that it has anonymous access set.
+
     :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-business-anyone.png" alt-text="Select Anyone with the link to generate a sharing link that anyone can view.":::
 
 ## Considerations
@@ -60,7 +63,7 @@ Your organization may not allow displaying images stored on OneDrive for Busines
 
 ## Next steps
 
-[Page layout and formatting](/learn/modules/visuals-in-power-bi/12-formatting)
+[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
 
 [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 

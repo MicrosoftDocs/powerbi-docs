@@ -1,30 +1,29 @@
 ---
-title: Getting Power BI visuals certified
+title: Get your Power BI visuals certified
 description: Requirements and process to submit a custom visual for certification.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/05/2021
+ms.date: 05/08/2022
 ---
 
-# Get a Power BI visual certified
+# Get your Power BI visual certified
 
 Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). These visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
 
-Certified Power BI visuals offer more features than non-certified visuals. For example, you can [export to PowerPoint](../../consumer/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](../../consumer/end-user-subscribe.md).
+Certified Power BI visuals offer more features than non-certified visuals. For example, you can [export them to PowerPoint](../../collaborate-share/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](../../consumer/end-user-subscribe.md).
 
-The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries can't be certified.
+The certification process is optional. Power BI visuals that aren't certified, aren't necessarily unsafe. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries can't be certified.
 
 > [!NOTE]
 > Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, contact the author of the visual directly.
 
 ## Certification requirements
 
-To get your Power BI visual [certified](#get-a-power-bi-visual-certified), it must meet the requirements listed in this section.
+To get your Power BI visual [certified](#get-your-power-bi-visual-certified), it must meet the requirements listed in this section.
 
 ### General requirements
 
@@ -45,7 +44,7 @@ The repository must contain:
 * Code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
 * A branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
 
-If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
+If your Power BI visual uses private npm packages, or git submodules, you must also provide access to the repositories containing this code.
 
 To understand how a Power BI visual repository looks, review the GitHub repository for the [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
@@ -55,8 +54,8 @@ Use the latest version of the API to write the Power BI visual.
 
 The repository must include the following files:
 
-* **.gitignore** - Add `node_modules`, `.tmp` and,  `dist` to this file. The code cannot include the *node_modules*, *.tmp*, or *dist* folders.
-* **capabilities.json** - If you are submitting a newer version of an existing Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
+* **.gitignore** - Add `node_modules`, `.tmp` and,  `dist` to this file. The code can't include the *node_modules*, *.tmp*, or *dist* folders.
+* **capabilities.json** - If you're submitting a newer version of an existing Power BI visual with changes to the properties in this file, verify that they don't break reports for existing users.
 * **pbiviz.json**
 * **package.json**. The visual must have the following package installed:
   * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
@@ -104,7 +103,7 @@ Follow the code requirements listed below to make sure that your code is in line
 
 ## Submit a Power BI visual for certification
 
-Now you're ready to submit a request to have your Power BI visual certified by the Power BI team..
+Now you're ready to submit a request to have your Power BI visual certified by the Power BI team.
 
 >[!TIP]
 >The Power BI certification process might take time. If you're creating a new Power BI visual, we recommend that you publish your Power BI visual via the Partner Center before you request Power BI certification. This ensures that the publishing of your visual is not delayed.
@@ -123,9 +122,9 @@ If you're using a private repository such as GitHub to submit your Power BI visu
 1. Create a new account for the validation team.
 2. Configure [two-factor authentication](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) for your account.
 3. [Generate a new set of recovery codes](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
-4. When submitting your Power BI visual, make sure you provide the following:
+4. When submitting your Power BI visual, make sure you provide the following details:
     * A link to the repository
-    * Login credentials (including a password)
+    * Sign in credentials (including a password)
     * Recovery codes
     * Read-only permissions to our account ([pbicvsupport](https://github.com/pbicvsupport))
 
@@ -135,17 +134,17 @@ Once a Power BI visual is certified, it gets a designated badge indicating that 
 
 ### Certified Power BI visuals in AppSource
 
-* When searching online for [Power BI visuals in AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), a small yellow badge on the visual's card indicates that it's a certified Power BI visual.
+* When someone searches online for [Power BI visuals in AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), a small yellow badge on the visual's card indicates that it's a certified Power BI visual.
 
     ![AppSource certified Power BI visual](media/power-bi-custom-visuals-certified/certified-visual-yellow-small.png)
 
-* After clicking the Power BI visual card in AppSource, a yellow badge titled *PBI Certified* indicates that this Power BI visual is certified.
+* When the Power BI visual card is clicked in AppSource, a yellow badge titled *PBI Certified* indicates that this Power BI visual is certified.
 
     ![App page certified Power BI visual](media/power-bi-custom-visuals-certified/certified-visual-yellow-big.png)
 
 ### Certified Power BI visuals in the Power BI interface
 
-* When importing a Power BI visual from within Power BI (Desktop or service), a blue badge indicates that the Power BI visual is certified.
+* When a Power BI visual is imported from within Power BI (Desktop or service), a blue badge indicates that the Power BI visual is certified.
 
     ![Power BI interface certified Power BI visual](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
@@ -166,17 +165,10 @@ The process of deploying to AppSource may take some time. Your Power BI visual w
 
 ### When will my Power BI visual display a certification badge?
 
-* If you submitted a new Power BI visual, the certification badge will appear within a day of receiving the approval email from AppSource.
-
-* If you're requesting certification for an existing Power BI visual, the certification badge will be visible within two weeks of your submission.
+The certification badge should be visible within three weeks of your submission.
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
-
->[!div class="nextstepaction"]
->[Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
-
->[!div class="nextstepaction"]
->[Try the Power BI Community](https://community.powerbi.com/)
+* [Frequently asked questions about certified visuals](/powerbi-docs/developer/visuals/power-bi-custom-visuals-faq#certified-power-bi-visuals).
+* [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
+* [Try the Power BI Community](https://community.powerbi.com/)

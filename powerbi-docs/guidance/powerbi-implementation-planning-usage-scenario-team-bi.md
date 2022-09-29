@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 02/27/2022
 ---
 
 # Power BI usage scenarios: Team BI
@@ -22,12 +22,14 @@ Sometimes when working with close colleagues, collaboration for small teams can 
 
 > [!NOTE]
 > There are four *content collaboration and delivery* usage scenarios that build upon each other. The team BI scenario is the second of the four scenarios. A list of all scenarios can be found in the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
+>
+> The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario introduces an important concept about decoupling dataset and report development. For simplicity, this concept isn't explicitly discussed in this article. You're encouraged to apply the concepts discussed in the managed self-service BI scenario whenever possible.
 
 ## Scenario diagram
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support team BI. The primary focus is small team collaboration.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-inline.png" alt-text="Image shows a diagram of team B I, which is about small team collaboration. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-inline.png" alt-text="Image shows a diagram of team BI, which is about small team collaboration. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -59,14 +61,14 @@ When the co-management of a BI solution involves multiple people with different 
 
 ### Workspaces
 
-A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md) serves as a logical container in the Power BI service for storing related artifacts, such as datasets and reports. In a team BI scenario, it's practical and simple to use the workspace for collaboration as well as for the viewing of reports by a small number of users. The distribution of content as a Power BI app is described in the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenario.
+A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md) serves as a logical container in the Power BI service for storing related Power BI items, such as datasets and reports. In a team BI scenario, it's practical and simple to use the workspace for collaboration as well as for the viewing of reports by a small number of users. The distribution of content as a Power BI app is described in the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenario.
 
 ### Workspace access and sharing
 
-In addition to organizing content, a workspace forms a security boundary. Assign users to workspace roles when a team member needs to edit or view all artifacts published to a workspace. The four [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (administrator, member, contributor, and viewer) support productivity for self-service content creators and consumers, without over-provisioning permissions.
+In addition to organizing content, a workspace forms a security boundary. Assign users to workspace roles when a team member needs to edit or view all items published to a workspace. The four [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (administrator, member, contributor, and viewer) support productivity for self-service content creators and consumers, without over-provisioning permissions.
 
 > [!NOTE]
-> Alternatively, workspace users can [share individual reports](../collaborate-share/service-share-dashboards.md) and dashboards (not depicted in the scenario diagram). Sharing can grant read-only access to someone who isn't assigned to a workspace role. However, try to limit sharing because it can be tedious to setup for many artifacts or many users.
+> Alternatively, workspace users can [share individual reports](../collaborate-share/service-share-dashboards.md) and dashboards (not depicted in the scenario diagram). Sharing can grant read-only access to someone who isn't assigned to a workspace role. However, try to limit sharing because it can be tedious to setup for many items or many users.
 
 ### Power BI user licenses
 
@@ -83,7 +85,7 @@ The reuse of existing datasets is important for team collaboration. It helps to 
 - Reduces the risk of inconsistent data and calculations.
 - Supports all slicing, dicing, and pivoting capabilities within the visuals while remaining connected to the dataset that's stored in the Power BI service.
 
-To access an existing dataset, the content creator must have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. It can be granted directly or indirectly when the user is assigned to a [workspace role](../collaborate-share/service-roles-new-workspaces.md) (contributor or higher) or granted when publishing a Power BI app or sharing an artifact. The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario explores the reuse of shared datasets further.
+To access an existing dataset, the content creator must have [Build permission](../connect-data/service-datasets-build-permissions.md) for the dataset. It can be granted directly or indirectly when the user is assigned to a [workspace role](../collaborate-share/service-roles-new-workspaces.md) (contributor or higher) or granted when publishing a Power BI app or sharing a Power BI item. The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario explores the reuse of shared datasets further.
 
 ### Power BI integration with Microsoft Teams
 

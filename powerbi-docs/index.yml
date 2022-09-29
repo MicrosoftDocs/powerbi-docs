@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/07/2022
+  ms.date: 08/11/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -27,13 +27,13 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
     # Card
-    - title: Create automated partitions with incremental dataset refresh
-      itemType: concept
-      url: connect-data/incremental-refresh-overview.md
-    # Card
-    - title: Embed a Power BI report in an application
+    - title: Get started creating in the Power BI service
       itemType: tutorial
-      url: developer/embedded/embed-customer-app.md
+      url: fundamentals/service-get-started.md
+    # Card
+    - title: Datamarts (preview)
+      itemType: concept
+      url: transform-model/datamarts/datamarts-overview.md
     # Card
     - title: Export Power BI embedded analytics reports API
       itemType: concept
@@ -41,19 +41,19 @@ highlightedContent:
     # Card
     - title: Protect sensitive data with data loss prevention policies
       itemType: concept
-      url: admin/service-security-dlp-policies-for-power-bi.md
+      url: enterprise/service-security-dlp-policies-for-power-bi.md
     # Card
     - title: Get your data on the go with Power BI mobile apps
       itemType: learn
-      url: /learn/modules/explore-power-bi-mobile-apps
+      url: /training/modules/explore-power-bi-mobile-apps
     # Card
     - title: Create sparklines in a table or matrix
       itemType: how-to-guide
       url: create-reports/power-bi-sparklines-tables.md
     # Card
-    - title: Study Power BI start to finish on Microsoft Learn 
+    - title: Study Power BI start to finish on Microsoft training 
       itemType: learn
-      url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+      url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -92,17 +92,33 @@ conceptualContent:
         url: consumer/index.yml
         text: See more
     # Card
+    - title: Enterprise
+      links:
+        - url: enterprise/service-premium-gen2-what-is.md
+          itemType: overview
+          text: What is Power BI Premium Gen2?
+        - url: enterprise/service-admin-power-bi-security.md
+          itemType: concept
+          text: Security
+        - url: enterprise/service-security-data-protection-overview.md
+          itemType: concept
+          text: Data protection
+      # footerLink (optional)
+      footerLink:
+        url: enterprise/index.yml
+        text: See more        
+    # Card
     - title: Administer Power BI
       links:
         - url: admin/service-admin-administering-power-bi-in-your-organization.md
           itemType: overview
           text: What is Power BI administration?
-        - url: admin/service-admin-licensing-organization.md
-          itemType: concept
-          text: Licensing in your organization
-        - url: admin/service-premium-what-is.md
-          itemType: concept
-          text: What is Power BI Premium?
+        - url: admin/service-admin-portal.md
+          itemType: how-to-guide
+          text: Admin portal settings
+        - url: /power-bi/admin/service-admin-how-to-use-the-same-account-as-azure
+          itemType: how-to-guide
+          text: Use the same account for Power BI and Azure
       # footerLink (optional)
       footerLink:
         url: admin/index.yml
@@ -132,25 +148,25 @@ conceptualContent:
         - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: connect-data/service-datasets-hub.md
+        - url: connect-data/service-data-hub.md
           itemType: concept
-          text: Discover data on the datasets hub
+          text: Discover data on the data hub
       # footerLink (optional)
       footerLink:
         url: connect-data/index.yml
         text: See more
     # Card
-    - title: Transform and shape data
+    - title: Datamarts (preview)
       links:
-        - url: transform-model/desktop-query-overview.md
+        - url: transform-model/datamarts/datamarts-overview.md
           itemType: overview
-          text: Query Editor overview
-        - url: transform-model/desktop-common-query-tasks.md
+          text: Datamarts overview (preview)
+        - url: transform-model/datamarts/datamarts-understand.md
           itemType: concept
-          text: Common query tasks
-        - url: connect-data/desktop-shape-and-combine-data.md
+          text: Understand datamarts (preview)
+        - url: transform-model/datamarts/datamarts-get-started.md
           itemType: tutorial
-          text: Shape and combine data
+          text: Get started with datamarts (preview)
       # footerLink (optional)
       footerLink:
         url: transform-model/index.yml
@@ -195,7 +211,7 @@ conceptualContent:
           text: Share dashboards and reports
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
-          text: Create the new workspaces
+          text: Create workspaces
         - url: collaborate-share/service-microsoft-teams-app.md
           itemType: how-to-guide
           text: Add the Power BI app to Microsoft Teams
@@ -220,36 +236,20 @@ conceptualContent:
         url: collaborate-share/index.yml
         text: See more
     # Card
-    - title: Enterprise
-      links:
-        - url: admin/service-premium-gen2-what-is.md
-          itemType: overview
-          text: What is Power BI Premium Gen2?
-        - url: admin/service-admin-power-bi-security.md
-          itemType: concept
-          text: Security
-        - url: admin/service-security-data-protection-overview.md
-          itemType: concept
-          text: Data protection
-      # footerLink (optional)
-      footerLink:
-        url: admin/index.yml
-        text: See more
-    # Card
     - title: Power BI Premium Gen2
       links:
-        - url: admin/service-premium-gen2-what-is.md
+        - url: enterprise/service-premium-gen2-what-is.md
           itemType: overview
           text: What is Power BI Premium Gen2?
-        - url: admin/service-premium-concepts.md
+        - url: enterprise/service-premium-concepts.md
           itemType: concept
           text: Understanding Power BI Premium Gen2
-        - url: admin/service-premium-gen2-metrics-app.md
+        - url: enterprise/service-premium-gen2-metrics-app.md
           itemType: concept
           text: Use the Gen2 metrics app
       # footerLink (optional)
       footerLink:
-        url: admin/index.yml
+        url: enterprise/index.yml
         text: See more
     # Card
     - title: Power BI in the mobile apps
@@ -260,7 +260,7 @@ conceptualContent:
         - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
           itemType: quickstart
           text: Explore dashboards and reports
-        - url: /learn/modules/explore-power-bi-mobile-apps
+        - url: /training/modules/explore-power-bi-mobile-apps
           itemType: learn
           text: Get data on the go with the mobile apps
       # footerLink (optional)
@@ -270,15 +270,15 @@ conceptualContent:
     # Card
     - title: Best practices guidance
       links:
-        - url: guidance/overview.md
-          itemType: overview
-          text: Guidance overview
-        - url: guidance/star-schema.md
+        - url: guidance/powerbi-adoption-roadmap-overview.md
           itemType: concept
-          text: Star schemas
-        - url: guidance/import-modeling-data-reduction.md
+          text: Power BI adoption roadmap
+        - url: guidance/powerbi-implementation-planning-introduction.md
           itemType: concept
-          text: Reduce data model size
+          text: Power BI implementation planning
+        - url: guidance/power-bi-optimization.md
+          itemType: concept
+          text: Optimization guide for Power BI
       # footerLink (optional)
       footerLink:
         url: guidance/index.yml
@@ -289,7 +289,7 @@ conceptualContent:
         - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
           text: Business decision makers
-        - url: /learn/paths/dax-power-bi/
+        - url: /training/paths/dax-power-bi/
           itemType: learn
           text: Get started with DAX
         - url: learning-catalog/learning-catalog-solution-architect.md
@@ -299,6 +299,22 @@ conceptualContent:
       footerLink:
         url: learning-catalog/index.yml
         text: See more
+    # Card
+    - title: Troubleshooting
+      links:
+        - url: troubleshoot/known-issues/power-bi-known-issues.md
+          itemType: overview
+          text: Known issues for Power BI features
+        - url: admin/service-interruption-notifications.md
+          itemType: concept
+          text: Service interruption notifications
+        - url: admin/service-support-options.md
+          itemType: how-to-guide
+          text:  Power BI Pro and Power BI Premium support options
+      # footerLink (optional)
+      footerLink:
+        url: troubleshoot/index.yml
+        text: See more        
 
 # additionalContent section (optional)
 # Card with summary style
@@ -326,6 +342,9 @@ additionalContent:
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, and more.
           url: /power-automate/
+        - title: Power Pages
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface with no need for data scientists or developers.
           url: /power-virtual-agents/

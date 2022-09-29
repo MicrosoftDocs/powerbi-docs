@@ -1,36 +1,36 @@
 ---
 title: Many-to-many relationships in Power BI Desktop
-description: Use relationships with a many-many cardinality in Power BI Desktop
+description: Use relationships with a many-to-many cardinality in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 03/16/2022
 LocalizationGroup: Transform and shape data
 ---
-# Apply many-many relationships in Power BI Desktop
+# Apply many-to-many relationships in Power BI Desktop
 
-With *relationships with a many-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop.
+With *relationships with a many-to-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-to-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop.
 
 ![A many-to-many relationship in the "Edit relationship" pane, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-A *relationship with a many-many cardinality* in Power BI Desktop is composed of one of three related features:
+A *relationship with a many-to-many cardinality* in Power BI Desktop is composed of one of three related features:
 
 * **Composite models**: A *composite model* allows a report to have two or more data connections, including DirectQuery connections or Import, in any combo. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
 
-* **Relationships with a many-many cardinality**: With composite models, you can establish *relationships with a many-many cardinality* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. The feature is described further in this article.
+* **Relationships with a many-to-many cardinality**: With composite models, you can establish *relationships with a many-to-many cardinality* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. The feature is described further in this article.
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, began queries that were sent to back-end sources. For more information, see [Storage mode in Power BI Desktop](desktop-storage-mode.md).
 
-## What a relationship with a many-many cardinality solves
+## What a relationship with a many-to-many cardinality solves
 
-Before *relationships with a many-many cardinality* became available, the relationship between two tables was defined in Power BI. At least one of the table columns involved in the relationship had to contain unique values. Often, though, no columns contained unique values.
+Before *relationships with a many-to-many cardinality* became available, the relationship between two tables was defined in Power BI. At least one of the table columns involved in the relationship had to contain unique values. Often, though, no columns contained unique values.
 
-For example, two tables might have had a column labeled Country. The values of Country weren't unique in either table, though. To join such tables, you had to create a workaround. One workaround might be to introduce extra tables with the needed unique values. With *relationships with a many-many cardinality*, you can join such tables directly, if you use a relationship with a cardinality of *many-to-many*.
+For example, two tables might have had a column labeled Country. The values of Country weren't unique in either table, though. To join such tables, you had to create a workaround. One workaround might be to introduce extra tables with the needed unique values. With *relationships with a many-to-many cardinality*, you can join such tables directly, if you use a relationship with a cardinality of *many-to-many*.
 
-## Use relationships with a many-many cardinality
+## Use relationships with a many-to-many cardinality
 
 When you define a relationship between two tables in Power BI, you must define the cardinality of the relationship. For example, the relationship between ProductSales and Product&mdash;using columns ProductSales[ProductCode] and Product[ProductCode]&mdash;would be defined as *Many-1*. We define the relationship in this way, because each product has many sales, and the column in the Product table (ProductCode) is unique. When you define a relationship cardinality as *Many-1*, *1-Many*, or *1-1*, Power BI validates it, so the cardinality that you select matches the actual data.
 
@@ -100,9 +100,11 @@ Let's say you define the new Sales table as the combination of all States here, 
 
 ![State, population, and sales visual, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-As you can see, TX&mdash;with **Sales** data but unknown *Population* data&mdash;and New York&mdash;with known **Population** data but no **Sales** data&mdash;would be included. This workaround isn't optimal, and it has many issues. For relationships with a many-many cardinality, the resulting issues are addressed, as described in the next section.
+As you can see, TX&mdash;with **Sales** data but unknown *Population* data&mdash;and New York&mdash;with known **Population** data but no **Sales** data&mdash;would be included. This workaround isn't optimal, and it has many issues. For relationships with a many-to-many cardinality, the resulting issues are addressed, as described in the next section.
 
-## Use a relationship with a many-many cardinality instead of the workaround
+For more information about implementing this workaround, see [many-to-many relationship guidance](../guidance/relationships-many-to-many.md).
+
+## Use a relationship with a many-to-many cardinality instead of the workaround
 
 You can directly relate tables, such as the ones we described earlier, without having to resort to similar workarounds. It's now possible to set the relationship cardinality to *many-to-many*. This setting indicates that neither table contains unique values. For such relationships, you may still control which table filters the other table. Or you can apply bidirectional filtering, where each table filters the other.
 
@@ -116,7 +118,7 @@ The resulting **Relationship** view would then display the direct, many-to-many 
 
 ![State, Population, and Sales tables, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
-The major differences between *relationships with a many-many cardinality* and the more typical *Many-1* relationships are as follows:
+The major differences between *relationships with a many-to-many cardinality* and the more typical *Many-1* relationships are as follows:
 
 * The values shown don't include a blank row that accounts for mismatched rows in the other table. Also, the values don't account for rows where the column used in the relationship in the other table is null.
 * You can't use the `RELATED()` function, because more than one row could be related.
@@ -132,7 +134,7 @@ With the preceding differences in mind, make sure the calculations that use `ALL
 
 ## Considerations and limitations
 
-There are a few limitations for this release of *relationships with a many-many cardinality* and composite models.
+There are a few limitations for this release of *relationships with a many-to-many cardinality* and composite models.
 
 The following Live Connect (multidimensional) sources can't be used with composite models:
 
@@ -144,7 +146,7 @@ The following Live Connect (multidimensional) sources can't be used with composi
 
 When you connect to these multidimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with imported data.
 
-The existing limitations of using DirectQuery still apply when you use *relationships with a many-many cardinality*. Many limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the whole model if any tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are unavailable on a model if any table within it has a storage mode of DirectQuery.
+The existing limitations of using DirectQuery still apply when you use *relationships with a many-to-many cardinality*. Many limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the whole model if any tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are unavailable on a model if any table within it has a storage mode of DirectQuery.
 
 ## Next steps
 

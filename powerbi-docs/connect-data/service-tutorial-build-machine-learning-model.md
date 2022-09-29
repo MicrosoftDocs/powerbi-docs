@@ -183,6 +183,10 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 
 To use the scored output from your machine learning model you can connect to your dataflow from the Power BI desktop, using the Dataflows connector. The **Online Visitors enriched Purchase Intent Prediction** entity can now be used to incorporate the predictions from your model in Power BI reports.
 
+## Limitations
+
+There are some known issues with using Gateway with AutoML. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to create or apply these models.
+
 ## Next steps
 
 In this tutorial, you created and applied a binary prediction model in Power BI using these steps:

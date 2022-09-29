@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/16/2022
+ms.date: 09/14/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -19,6 +19,91 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## September 2022
+
+### Mobile formatting options are now generally available!
+
+Mobile formatting options allow you to style and format visuals in mobile-optimized layout without affecting their formatting in web layout. You now have the flexibility you need to create beautiful reports truly optimized for phone viewing. [Learn about optimizing your reports for mobile viewing](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
+
+![Screenshot of the visualizations pane in Power B I mobile layout view G A.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-visualizations-pane.png)
+
+## August 2022
+
+### Follow metrics from your mobile app (iOS and Android) (preview)
+
+Now you can follow any metric with just a tap. And you can see all the metrics you're following from the Metrics tab on your home screen. [Learn more!](./mobile-apps-metrics.md#follow-metrics-preview)
+
+![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
+
+### Find Power BI content in your Teams mobile app! (iOS and Android)
+
+Power BI in Microsoft Teams has come to Teams mobile! Now you can discover Power BI content right there in the Teams mobile app. When you tap the content you want to see, you'll be automatically redirected to the Power BI mobile app for the best viewing experience. [Learn more](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-is-available-in-microsoft-teams-mobile/) 
+
+### Mobile formatting now supports text box visuals
+
+[Mobile formatting in Power BI Desktop](../../create-reports/power-bi-create-mobile-optimized-report-about.md) now supports text box visuals. Now, when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
+
+### Power BI fonts are now available on your mobile devices (iOS and Android)
+
+The Power BI mobile apps for iOS and Android now support the full range of fonts available in Power BI Desktop. This means that in the mobile app, your reports will look exactly as you designed them, with the same fonts that you chose while creating the reports in Desktop!
+
+### Upgraded browsing experience with WebView2 (Windows)
+
+ The Power BI app for Windows is now aligned with the overall Power BI migration to Microsoft Edge WebView2, delivering faster performance and a better browsing experience all around.
+
+To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this does not apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
+
+## July 2022
+
+### Data in space - your data, everywhere (iOS)
+
+Now you can connect your digital business data to real-world places in augmented reality, putting real-time data at the fingertips of employees where they need it, enabling them to make better, faster, more informed data-driven decisions. [Learn more!](./mobile-apps-data-in-space-overview.md)
+
+![Screenshot of showing Power BI reports pinned to real-world locations in augmented reality using the data in space feature.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-data-in-space-final-result.png)
+
+### Find content that's relevant to you (Windows)
+
+Enhance your Power BI experience and productivity with content that has been picked especially for you. It's there for you on the home page in the new **Recommended** strip.
+
+![Screenshot of Windows app home screen showing recommended content.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-windows-app-home-screen-recommended.png)
+
+## June 2022
+
+### Manage metrics with multiple milestones and targets (Android and iOS)
+Now you can track and update metrics that feature multiple targets. Open a metric's details pane to see the milestones, as well as the final target, visualized alongside your current progress. It’s now easier than ever to get a snapshot of how you’re performing against your metrics!
+
+![Screenshot of a metric's details pane in the mobile app showing multiple milestones.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-metric-details-pane.png)
+
+## May 2022
+
+### Goals has become Metrics
+Goals has a new name: Metrics. Use metrics to track and achieve your key business targets.
+
+### \@mention someone in metric notes (Android and iOS)
+Want to get someone's attention regarding a metric's data? **\@mention** them in the note you add to the check-in! As you type, the app will suggest names of people in your org to save you work!
+
+![Screenshot of at-mention in a metric note.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-atmentions.png)
+
+## April 2022
+
+### Check your activity feed for goal updates (Android and iOS)
+Changes and updates to goals related to you now show up in your activity feed, allowing you to quickly see what changes have been made and who made them. And with the **Quick check-in** button, you can update your goals directly from the activity feed itself!
+
+![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
+
+### Minimum OS requirement for the Windows app
+The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
+
+### Goals now supports push notifications (Android and iOS)
+Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](/power-bi/consumer/mobile/mobile-apps-metrics#notifications)
+
+![Screenshot of goals notification in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-notification.png)
+
+## March 2022
+
+### Custom goal statuses in scorecards (Android and iOS)
+The Mobile apps now support goal statuses customized by scorecard owners to align with org terminology. Custom statuses will show up in the Goals hub and inside scorecards. [Learn more about custom statuses](../../create-reports/service-goals-custom-status.md).
 
 ## February 2022
 
@@ -96,7 +181,7 @@ We've improved the load time of "Shared with me" content, making it faster for y
 
 ## August 2021
 ### Power BI Goals (preview) now available in the mobile apps (Android and iOS) 
-Now you can monitor your goals and scorecards, and even check in progress on the go, directly from the mobile app! You’ll find them right there on the home page in the new Goals Hub. [Learn more](mobile-apps-goals.md)
+Now you can monitor your goals and scorecards, and even check in progress on the go, directly from the mobile app! You’ll find them right there on the home page in the new Goals Hub. [Learn more](/power-bi/consumer/mobile/mobile-apps-metrics)
 
 ![Screenshot of Power BI mobile app Goals Hub.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-goals-hub.png)
 
@@ -119,7 +204,7 @@ We've introduced a new design and home page to simplify the way you find and ope
 
 ### Paginated Report visuals (preview) now supported (iOS, Android, Windows)
 Paginated Report visuals (preview) enable you to render any paginated report uploaded to the service inside a Power BI report.
-Just like any other Power BI visual, Paginated Report visuals are fully-interactive, and are also supported in the Power BI Mobile apps.
+Just like any other Power BI visual, Paginated Report visuals are fully interactive, and are also supported in the Power BI Mobile apps.
 
 ### Support for passing URL parameters to paginated reports (Android)
 Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
@@ -187,12 +272,12 @@ We've added support for notch displays on iPhone and iPads, giving you more scre
 ### September 2020
 #### Power BI app (preview) for HoloLens 2 is out in the stores!
 
-The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the tool belt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the toolbelt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
 
 
 ### August 2020
 #### We've improved how you navigate to your content (iOS and Android)
-Now you can get around your content quickly and easily with a **new navigation tree**, available from the header drop down in reports, dashboards, and apps. You see the location hierarchy of your content at a glance, and you can easily navigate up the content hierarchy, go to sibling content, or even get quickly back to your home page. If the item you’re viewing is part of an app, the tree displays the entire contents of the app--sections, links, and all reports and dashboards. If the item you’re viewing is a report, you’ll also find a list of all visible report pages. It's never been so easy to get from one page to another! Check it out! 
+Now you can get around your content quickly and easily with a **new navigation tree**, available from the header drop-down in reports, dashboards, and apps. You see the location hierarchy of your content at a glance, and you can easily navigate up the content hierarchy, go to sibling content, or even get quickly back to your home page. If the item you’re viewing is part of an app, the tree displays the entire contents of the app--sections, links, and all reports and dashboards. If the item you’re viewing is a report, you’ll also find a list of all visible report pages. It's never been so easy to get from one page to another! Check it out! 
 
 ![Screenshot of Power B I mobile app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree1.png)
 
@@ -330,7 +415,7 @@ This month we've added support for cross-report drillthrough. You can now tap on
 
 #### Data sensitivity labels
 
-You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../admin/service-security-data-protection-overview.md).
+You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../enterprise/service-security-data-protection-overview.md).
 
 #### Support for custom app navigation (Windows)
 
@@ -520,9 +605,9 @@ Currently available for iOS and Android devices. Windows support coming soon.
 
 Read the Power BI [blog post about dashboard comments](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
 
-#### Single Sign-On (Windows)
+#### Single sign-on (Windows)
 
-Single Sign-On (SSO) is one of the most requested capabilities for Power BI mobile for Windows. 
+Single sign-on (SSO) is one of the most requested capabilities for Power BI mobile for Windows. 
 Now you can use your primary organizational account not only to sign in to your domain-joined Windows mobile devices, but also to sign in seamlessly to the Power BI service. Read more about [SSO and the Windows mobile apps](mobile-windows-10-app-single-sign-on-sso.md).
 
 ### July 2018
@@ -688,7 +773,7 @@ You can already make a dashboard a favorite. Recently, [Power BI added apps](../
 Go to Shared with me in the mobile app menu to see all the content that's been shared with you.
 
 **New menu: Apps**
-An app is a collection of dashboards and reports built by your organization to deliver key metrics for faster and easier data-driven decisions.
+An app is a collection of dashboards and reports built by your organization to deliver key goals for faster and easier data-driven decisions.
 
 Read more about [how your Power BI content is organized](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -889,7 +974,7 @@ Manually refresh your tiles by opening the dashboard in the Power BI mobile app 
 **Support for Intune MAM**
 Added support for Microsoft Intune mobile application management (MAM) capabilities.
 
-Read more about [Microsoft Intune on Power BI mobile apps](../../admin/service-admin-mobile-intune.md).
+Read more about [Microsoft Intune on Power BI mobile apps](../../enterprise/service-admin-mobile-intune.md).
 
 #### Windows 10 devices
 **Full-screen and presentation modes**
@@ -1011,7 +1096,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
-**More live tiles on your Start screen** [Pin KPIs and row cards to your Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) as live tiles, so you can see all of your critical metrics at a glance.
+**More live tiles on your Start screen** [Pin KPIs and row cards to your Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) as live tiles, so you can see all of your critical goals at a glance.
 
 **Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
 
@@ -1075,7 +1160,7 @@ Read the [November 2015 Power BI mobile blog post](https://powerbi.microsoft.com
 * Improved chart data capacity.
 
 #### iOS and Android mobile apps
-* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../admin/service-admin-mobile-intune.md) to manage devices and applications.
+* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md) to manage devices and applications.
 
 #### iPhone mobile app
 * [Add a picture tile to a dashboard](mobile-iphone-app-get-started.md) directly from your iPhone.
@@ -1113,7 +1198,7 @@ Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and 
 #### iOS (iPhone and iPad)
 * New & improved navigation: New drawer navigation maximizes screen real estate and improves navigation throughout the app. 
 * Group workspaces: Collaborate with colleagues in group workspaces. 
-* Authentication process upgrade Quality, performance, and functionality improvements enhance the app authentication process, including support for SSO (Single Sign-On). 
+* Authentication process upgrade Quality, performance, and functionality improvements enhance the app authentication process, including support for SSO (single sign-on). 
 * Improved data representation of line chart tiles to better compress the x-axis.
 * Improved user experience when using with role-based security.
 * Touch-optimized improvements for matrix chart tiles: Now you can easily scroll through your matrix data and view all its data easily and intuitively.

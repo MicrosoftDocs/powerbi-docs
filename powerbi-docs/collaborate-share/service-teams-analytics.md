@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/15/2021
+ms.date: 03/16/2022
 ---
 
 # Analyze your Teams usage in the Power BI app for Teams
@@ -25,6 +25,7 @@ Only you can see this report about your Teams activity, unless you choose to sha
 To view your Teams activity analytics in Microsoft Teams, ensure these elements:
 
 - Sign in to the Power BI service to activate your Power BI license.
+- Your users with a Power BI (Free) license can use the Teams activity analytics report.
 - [Install the Power BI app for Teams](service-microsoft-teams-app.md).
 
 ## Create the Teams analytics report
@@ -38,7 +39,7 @@ Power BI automatically creates your report, displays it in your Power BI Teams a
 
 ## Pages in the Teams activity report
 
-The Teams activity analytics report comprises three pages showing different aspects of your activity in Teams.
+The Teams activity analytics report has three pages showing different aspects of your activity in Teams.
 
 ### My activity page
 
@@ -54,7 +55,7 @@ The **Team activity** page lists all the Teams teams you're a member of, and lis
 
 ### Team activity details page
 
-On the **Team activity details** page, you choose one of the Teams teams you're a member of, and drill in to view its the activities in the past 90 days. The page features a [smart narrative visual](../visuals/power-bi-visualization-smart-narrative.md). It automatically generates the **Activity summary**, a text description that calls attention to notable activity.
+On the **Team activity details** page, you choose one of the Teams teams you're a member of, and drill in to view its activities in the past 90 days. The page features a [smart narrative visual](../visuals/power-bi-visualization-smart-narrative.md). It automatically generates the **Activity summary**, a text description that calls attention to notable activity.
 
 :::image type="content" source="media/service-teams-analytics/teams-analytics-team-activity-detail.png" alt-text="Screenshot of Teams activity details page.":::
 

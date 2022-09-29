@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 03/29/2022
 LocalizationGroup: Gateways
 ---
 
@@ -17,6 +17,9 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
 > [!NOTE]
 > Before you attempt to refresh a SAP BW-based report that uses Kerberos SSO, complete both the steps in this article and the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md). Using CommonCryptoLib as your SNC library enables SSO connections to both SAP BW Application Servers and SAP BW Message Servers.
+
+> [!NOTE]
+> Configuring both libraries(sapcrypto and gx64krb5) on the same gateway server is an unsupported scenario. It's not recommended to configure both libraries on the same gateway server as it'll lead to a mix of libraries. If you want to use both libraries, please fully separate the gateway server. For example, configure gx64krb5 for server A then sapcrypto for server B. Please remember that any failure on server A which uses gx64krb5 is not supported, as gx64krb5 is no longer supported by SAP and Microsoft.
 
 ## Configure SAP BW to enable SSO using CommonCryptoLib
 
@@ -80,7 +83,7 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
     ![Restart gateway service](media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/restart-gateway-service.png)
 
-1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report)
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration)
 
 ## Troubleshooting
 
@@ -234,7 +237,7 @@ The error becomes clearer in the sectraces from the Gateway machine *sec-Microso
 [2020.10.15 20:31:38.396000][2][Microsoft.Mashup.Con][Kerberos ][ 3616] Error for requested algorithm 3: 0/C000018B The security database on the server does not have a computer account for this workstation trust relationship.
 ```
 
-When looking at WireShark traces, the issue can also be seen.
+You can also see the issue if you look at WireShark traces.
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-02.png" alt-text="Screenshot of tracing program showing an error":::
 
@@ -248,7 +251,7 @@ You may run into a similar, but not identical error that manifests in WireShark 
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-bw-commoncryptolib/sso-kerberos-sap-bw-troubleshooting-03.png" alt-text="Screenshot of WireShark program showing a different error":::
 
-This error indicates the **spn SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
+This error indicates the **SPN SAP/BW5** could be found, but it's not in the *Services to which this account can present delegated credentials* at the Delegation tab from the Gateway service account. To fix this issue, follow the steps to [configure the gateway service account for standard kerberos constrained delegation](./service-gateway-sso-kerberos.md). 
 
 **Validation**: Proper configuration will prevent generic or unexpected errors to be presented by the gateway. If you still see errors, check the configuration of the gateway itself, or the configuration of the BW server.
 

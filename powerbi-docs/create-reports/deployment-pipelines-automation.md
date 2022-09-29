@@ -142,10 +142,10 @@ To run a PowerShell script that performs a deployment, you'll need the component
         )
 
         options = @{
-            # Allows creating new artifact if needed on the Test stage workspace
+            # Allows creating new item if needed on the Test stage workspace
             allowCreateArtifact = $TRUE
 
-            # Allows overwriting existing artifact if needed on the Test stage workspace
+            # Allows overwriting existing item if needed on the Test stage workspace
             allowOverwriteArtifact = $TRUE
         }
     } | ConvertTo-Json

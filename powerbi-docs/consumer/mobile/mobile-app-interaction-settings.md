@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/08/2020
+ms.date: 04/13/2022
 ---
 # Configure report interaction settings
 
@@ -42,7 +42,7 @@ The multi-select option makes it possible to select multiple data points on a re
 To unselect a data point, tap it again.
 
 >[!NOTE]
->Multi-select is not supported in Power BI visuals.
+>Multi-select is not supported for Power BI custom visuals.
 >
 >Multi-select mode will be supported on Power BI Report Server in the next Report Server release.
 

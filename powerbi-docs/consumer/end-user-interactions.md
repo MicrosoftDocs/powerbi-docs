@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 LocalizationGroup: Reports
 ---
 
@@ -45,10 +45,11 @@ Let's define these terms as we look at the report pages below. The "Total catego
 
 - If your report has a visual that supports [drilling](end-user-drill.md), by default, drilling one visual has no impact on the other visuals on the report page. However, the report *designer* can change this behavior, so check your drillable visuals to see if **drilling filters other visuals** has been enabled by the report *designer*.
 
-- Visual-level filters are retained when cross-filtering and cross-highlighting other visuals on the report page. So, If VisualA has visual-level filters applied by the report designer or by you, and you use visualA to interact with visualB, visual-level filters from visualA will be applied to visualB.
+- Visual-level filters are retained when cross-filtering and cross-highlighting other visuals on the report page. So, if VisualA has visual-level filters applied by the report designer or by you, and you use visualA to interact with visualB, visual-level filters from visualA will be applied to visualB.
 
     ![Report page showing filters already set](media/end-user-interactions/power-bi-visual-filters.png)
 
+- In case of the tables with no hierarchical relationships, slicing up the measures (often referred as complex slicers) may result in an error. If you have access to the logs, you'll see the message "Measures are not allowed with complex slicers unless they have a filter context change". To avoid this situation, don't use complex slicers or re-model the relationships to get the desired output.
 
 ## Next steps
 

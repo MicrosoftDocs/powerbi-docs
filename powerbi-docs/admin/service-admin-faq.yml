@@ -63,7 +63,7 @@ sections:
         answer: |
           As a Microsoft 365 admin, you can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Microsoft 365 admin center. When a Microsoft 365 admin signs up for Power BI, they can assign user licenses to users who should have access.
           
-          Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, the service automatically assigns a Power BI license to the user. For more info, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](service-admin-licensing-organization.md).
+          Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, the service automatically assigns a Power BI license to the user. For more info, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](../enterprise/service-admin-licensing-organization.md).
           
       - question: |
           How do individual users in my organization sign up?
@@ -137,7 +137,7 @@ sections:
                connect-msolservice -credential $msolcred
               ```
           
-             ![Screenshot of the Azure Active Directory sign in through PowerShell.](media/service-admin-licensing-organization/azure-ad-sign-in.png)
+             ![Screenshot of the Azure Active Directory sign in through PowerShell.](../enterprise/media/service-admin-licensing-organization/azure-ad-sign-in.png)
           
           1. Once you sign in, run the following command to see how your tenant is currently set up.
           
@@ -256,7 +256,7 @@ sections:
       - question: |
           How does Power BI handle high availability and failover?
         answer: |
-          For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.yml).
+          For info about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](../enterprise/service-admin-failover.yml).
           
   - name: Security in Power BI
     questions:
@@ -268,19 +268,19 @@ sections:
       - question: |
           How does security work in Power BI?
         answer: |
-          Microsoft built Power BI on the foundation of Microsoft 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](service-admin-power-bi-security.md).
+          Microsoft built Power BI on the foundation of Microsoft 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](../enterprise/service-admin-power-bi-security.md).
           
 additionalContent: |
   ## Next steps
   - [Power BI admin portal](service-admin-portal.md)  
   - [Understanding the Power BI admin role](service-admin-role.md)  
   - [Self-service sign up for Power BI](../fundamentals/service-self-service-signup-for-power-bi.md)  
-  - [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
-  - [What is Power BI Premium?](service-premium-what-is.md)  
-  - [How to buy Power BI Premium](service-admin-premium-purchase.md)  
+  - [Purchasing Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md)  
+  - [What is Power BI Premium?](../enterprise/service-premium-what-is.md)  
+  - [How to buy Power BI Premium](../enterprise/service-admin-premium-purchase.md)  
   - [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-  - [Manage your group in Power BI and Microsoft 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
   - [Work or school account management](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
   - [Microsoft 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
           
   More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+ 

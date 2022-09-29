@@ -12,6 +12,8 @@ LocalizationGroup: Ask questions of your data
 ---
 # Use Power BI Q&A to explore your data and create visuals
 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words.  The first part of this article shows how you use Q&A in dashboards in the Power BI service. The second part shows what you can do with Q&A when creating reports in either the Power BI service or Power BI Desktop. For more background, see the [Q&A for consumers](../consumer/end-user-q-and-a.md) article. 
 
 [Q&A in the Power BI mobile apps](../consumer/mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](../developer/embedded/qanda.md) are covered in separate articles. 
@@ -71,13 +73,18 @@ Use Q&A to explore your dataset and to add visualizations to the report and to d
 
 To use Q&A in reports, you must have edit permissions for the report and underlying dataset. In the [Q&A for consumers](../consumer/end-user-q-and-a.md) article, we refer to this as a *creator* scenario. If instead you're *consuming* a report that has been shared with you, Q&A isn't available.
 
-1. In Power BI service, open a report in Editing view and select **Ask a question** from the menu bar. In Power BI Desktop Report view, select **Q&A** from the **Insert** tab.
-
-    **Service**    
-    ![Select Ask a question in the Power BI service](media/power-bi-tutorial-q-and-a/power-bi-service.png)
+# [Power BI Desktop](#tab/powerbi-desktop)
+1. In Power BI Desktop Report view, select **Q&A** from the **Insert** tab.
 
     **Power BI Desktop**    
-    ![Select Ask A Question in Power BI Desktop](media/power-bi-tutorial-q-and-a/power-bi-desktop-question.png)
+    ![Select Ask A Question in Power BI Desktop.](media/power-bi-tutorial-q-and-a/power-bi-desktop-question.png)
+# [Power BI service](#tab/powerbi-service)
+1. In Power BI service, open a report in Editing view and select **Ask a question** from the menu bar.
+
+    **Service**    
+    ![Select Ask a question in the Power BI service.](media/power-bi-tutorial-q-and-a/power-bi-service.png)
+
+---
 
 2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
 

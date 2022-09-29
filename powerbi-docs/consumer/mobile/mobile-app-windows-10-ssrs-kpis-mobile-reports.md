@@ -1,6 +1,6 @@
 ---
 title: View on-premises reports and KPIs in the Power BI Windows app
-description: The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information.
+description: The Power BI mobile app for Windows offers live, touch-enabled mobile access to your important on-premises business information.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -13,17 +13,17 @@ ms.date: 06/02/2021
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
-The Power BI app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services.
+The Power BI app for Windows offers live, touch-enabled mobile access to your important on-premises business information in SQL Server 2016 Reporting Services.
 
 ![Reporting Services mobile reports](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## First things first
 [Create Reporting Services mobile reports](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) with SQL Server 2016 Enterprise Edition Mobile Report Publisher and publish them to the [Reporting Services web portal](/sql/reporting-services/web-portal-ssrs-native-mode). Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
-Then in the Power BI app for Windows 10, view the KPS, mobile reports, and Power BI reports, organized in folders or collected as favorites. 
+Then in the Power BI app for Windows, view the KPS, mobile reports, and Power BI reports, organized in folders or collected as favorites. 
 
 > [!NOTE]
-> Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
+> Your device needs to be running Windows 10 or higher. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
 
 ## Explore samples without a SQL Server 2016 Reporting Services server
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports.
@@ -87,7 +87,7 @@ Reporting Services KPIs, mobile reports, and Power BI reports (preview) are disp
     ![Reporting Services mobile report](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## View your favorite KPIs and reports
-You can mark KPIs, mobile reports, and Power BI reports as favorites on your Reporting Services web portal, and then view them on your Windows 10 device. Just click the Favorites icon in the nav pane to display the Favorites page, and then tap the tab that has your report server name.
+You can mark KPIs, mobile reports, and Power BI reports as favorites on your Reporting Services web portal, and then view them on your Windows device. Just click the Favorites icon in the nav pane to display the Favorites page, and then tap the tab that has your report server name.
 
 ![Favorites icon](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-favorite-menu.png)
 
@@ -109,6 +109,6 @@ You don't create Reporting Services KPIs and mobile reports in the Power BI mobi
 * Create [KPIs on a Reporting Services web portal](/sql/reporting-services/working-with-kpis-in-reporting-services)
 
 ## Next steps
-* [Get started with the Power BI mobile app for Windows 10](mobile-windows-10-phone-app-get-started.md)  
+* [Get started with the Power BI mobile app for Windows](mobile-windows-10-phone-app-get-started.md)  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

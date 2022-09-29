@@ -9,7 +9,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/28/2021
+ms.date: 06/03/2022
 LocalizationGroup: Get started
 ---
 # Basic concepts for designers in the Power BI service
@@ -45,7 +45,7 @@ We'll dig into these features later, but first let's review some Power BI concep
 The five major building blocks of Power BI are: *dashboards*, *reports*, *workbooks*, *datasets*, and *dataflows*. They're all organized into *workspaces*, and they're created on *capacities*.  It's important to understand capacities and workspaces before we dig into the five building blocks, so let's start there.
 
 ## Capacities
-Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _reserved_. A shared capacity is shared with other Microsoft customers, while a reserved capacity is reserved for a single customer. Reserved capacities require a [subscription](../admin/service-premium-what-is.md), and are fully described in the [Managing Premium capacities](../admin/service-premium-capacity-manage.md) article.
+Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _reserved_. A shared capacity is shared with other Microsoft customers, while a reserved capacity is reserved for a single customer. Reserved capacities require a [subscription](../enterprise/service-premium-what-is.md), and are fully described in the [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md) article.
 
 By default, workspaces are created on a shared capacity. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -56,7 +56,7 @@ There are two types of workspaces: *My workspace* and *workspaces*.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in a workspace.
 
--  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, each workspace member needs a Power BI Pro or Premium Per User (PPU) license. Read more about the [new workspaces](../collaborate-share/service-create-the-new-workspaces.md). 
+-  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, each workspace member needs a Power BI Pro or Premium Per User (PPU) license. Read more about [workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
     Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that will make up a Power BI app. So what is an *app*? It's a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro or Premium Per User (PPU) licenses.  
 
@@ -99,12 +99,12 @@ Now, let's move on to the next topic—reports.
 ### Dig deeper
 * [Datasets in the Power BI service](../connect-data/service-datasets-understand.md)
 * [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md)
-* [What is Power BI Premium?](../admin/service-premium-what-is.md)
+* [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 * [Get data for Power BI](../connect-data/service-get-data.md)
 * [Sample datasets for Power BI](../create-reports/sample-datasets.md)
 
 ## Reports
-A Power BI report is one or more pages of visualizations such as line charts, maps, and treemaps. Visualizations are also called **_visuals_**. All of the visualizations in a report come from a single dataset. You can create reports from scratch within Power BI, import them with dashboards that colleagues share with you, or Power BI can create them when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications.  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
+A Power BI report is one or more pages of visualizations such as line charts, maps, and treemaps. Visualizations are also called **_visuals_**. All of the visualizations in a report come from a single dataset. You can create reports from scratch within Power BI, import them with dashboards that colleagues share with you, or Power BI can create them when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications.  For example, when you connect to an SaaS application, Power BI imports a pre-built report.
 
 There are two modes to view and interact with reports: *Reading view* and *Editing view*. When you open a report, it opens in Reading view. If you have edit permissions, then you see **Edit report** in the upper-left corner, and you can view the report in Editing view.  If a report is in a workspace, everyone with an *admin*, *member*, or *contributor* role can edit it. They  have access to all the exploring, designing, building, and sharing capabilities of Editing view for that report. The people they share the report with can explore and interact with the report in Reading view.
 

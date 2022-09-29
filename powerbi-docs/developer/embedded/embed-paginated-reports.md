@@ -3,12 +3,12 @@ title: Embed paginated reports in your Power BI embedded analytics application
 description: Learn how to integrate or embed a Power BI paginated report into an embedded analytics application.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
+ms.reviewer: 
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 02/06/2022
+ms.date: 05/19/2022
 
 ---
 
@@ -28,13 +28,13 @@ To get started, you're required to have:
 
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 
-* A [capacity](#step-2---create-a-capacity), with [paginated reports workload](../../admin/service-admin-premium-workloads.md#paginated-reports) enabled
+* A [capacity](#step-2---create-a-capacity), with [paginated reports workload](../../enterprise/service-admin-premium-workloads.md#paginated-reports) enabled
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## [Embed for your organization](#tab/organization)
 
-* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.
+* A [Power BI Pro license](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.
 
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
@@ -64,7 +64,7 @@ To embed a paginated report using the sample app, follow these steps:
 
 ### [Embed for your customers](#tab/customers)
 
-As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [new workspace](../../collaborate-share/service-create-the-new-workspaces.md).
+As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [workspace](../../collaborate-share/service-create-the-new-workspaces.md).
 
 Your *service principal* must also be an admin or member of the Power BI workspaces.
 
@@ -80,11 +80,11 @@ In Power BI service, create a workspace for your paginated report.
 
 Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to a capacity. There are two types of capacity you can choose from:
 
-* **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. For more information about this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+* **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. For more information about this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
     >[!NOTE]
-    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports and Premium Gen2](../../admin/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2).
+    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports](../../enterprise/service-premium-gen2-what-is.md#paginated-reports).
 
 The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
@@ -99,15 +99,15 @@ The following table describes the resources and limits of each SKU. To determine
 
 ### [Embed for your organization](#tab/organization)
 
-By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
+By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity by using [Power BI Premium](../../enterprise/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs that can be used to create a capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs that can be used to create a capacity for paginated reports in [Microsoft Office 365](../../enterprise/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- | --- | --- |
-| EM1 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
-| EM2 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
-| EM3 with [Premium Gen2](../../admin/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
+| EM1 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
+| EM2 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
+| EM3 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
 | P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
 | P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
 | P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
@@ -125,7 +125,7 @@ Once you create a capacity, you can assign your app workspace to that capacity.
 To assign a capacity to a workspace using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
 >[!NOTE]
->You can also import paginated reports into a *new workspace* using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
+>You can also import paginated reports into a workspace using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
 
 ### [Embed for your organization](#tab/organization)
 
@@ -177,12 +177,16 @@ You can create your paginated report using [Power BI Report Builder](../../pagin
 
 ### [Embed for your customers](#tab/customers)
 
-Follow the instructions in the [embed content for your customers](embed-sample-for-customers.md) tutorial.
+Follow the instructions in the [embed content for your customers](embed-sample-for-customers.md) tutorial. Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
 
-Skip [Step 4 - Create and publish a Power BI report](embed-sample-for-customers.md#step-4---create-and-publish-a-power-bi-report) and use the paginated report you uploaded, instead of the sample report suggested in the tutorial.
+* To use a **Power BI dataset** as a data source:
 
-> [!NOTE]
-> To embed a paginated report with a Power BI dataset as a data source, generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
+  * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/power-bi/enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
+  * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
+
+* To use a **Single Sign-on (SSO)** enabled data source:
+
+  SSO-enabled data sources are supported if they're either directly connected to the paginated report, or connected to a Power BI dataset which is the data source of the paginated report. When embedding a paginated report with SSO-enabled data sources, the identity blob for the data source must be provided in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) when you generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token).
 
 ### [Embed for your organization](#tab/organization)
 
@@ -197,15 +201,15 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 ### [Embed for your customers limitations](#tab/customers)
 
 * You must use a **service principal**. Master user isn't supported.
-* [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) isn't supported.
-* **Support for Single Sign-on (SSO)** - Power BI datasets are supported as a report data source, but only if the Power BI dataset does not contain any SSO-enabled data sources. All other report data sources using SSO are not yet supported.
+* [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) isn't supported.
 * When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces), and the user generating the embed token should have *Write* permissions in the workspaces of the report and the dataset.
+* Embedding a paginated report connected to Azure Analysis Services with Single Sign-on (SSO) enabled is not supported
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
 
 ### [Embed for your organization limitations](#tab/organization)
 
-[Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
+[Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
 
 ---
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 07/22/2022
 ms.custom: references_regions
 LocalizationGroup: Data from files
 ---
@@ -25,9 +25,9 @@ The first requirement for using dataflows in your Power BI premium subscription 
 
 After enabling the dataflows workload, it is configured with default settings. You might want to tweak these settings as you see fit. Next, we'll describe where these settings live, describe each, and help you understand when you might want to change the values to optimize your dataflow performance.
 
-## Refining dataflow settings
+## Refining dataflow settings in Premium Gen1
 
-Once dataflows are enabled, you can use the **Admin portal** to change, or refine, how dataflows are created and how they use resources in your Power BI Premium subscription. The following steps show how to adjust your dataflow settings.
+Once dataflows are enabled, you can use the **Admin portal** to change, or refine, how dataflows are created and how they use resources in your Power BI Premium Gen1 subscription. Premium Gen2 doesn't require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system. The following steps show how to adjust your dataflow settings.
 
 1. In the **Admin portal**, select **Tenant settings** to list all capacities that have been created. Select a capacity to manage its settings.
 
@@ -53,8 +53,8 @@ The following table provides a basic description of the dataflows settings.
 |---------|---------|---------|
 | **Capacity Size** | **Change Size** | The current selected capacity is listed, with options to change the capacity. Changing this setting allows for scale up or scale down of the capacity. |
 | **Workload** | **Max Memory (%)** | The maximum percentage of available memory that dataflows can use in a capacity. |
-| **Workload** | **Enhanced Dataflows Compute Engine** | Enable this option for up to 20x faster calculation of computed entities when working with large-scale data volumes.  **You must restart the capacity to activate the new engine.**  For more information, see [Enhanced dataflows compute engine](../../admin/service-admin-premium-workloads.md#enhanced-dataflows-compute-engine). |
-| **Workload** | **Container Size** | The maximum size of the container that dataflows use for each table in the dataflow. The default value is 700 MB. For more information, see [Container size](../../admin/service-admin-premium-workloads.md#container-size). |
+| **Workload** | **Enhanced Dataflows Compute Engine** | Enable this option for up to 20x faster calculation of computed entities when working with large-scale data volumes.  **You must restart the capacity to activate the new engine.**  For more information, see [Enhanced dataflows compute engine](../../enterprise/service-admin-premium-workloads.md#enhanced-dataflows-compute-engine). |
+| **Workload** | **Container Size** | The maximum size of the container that dataflows use for each table in the dataflow. The default value is 700 MB. For more information, see [Container size](../../enterprise/service-admin-premium-workloads.md#container-size). |
 | **Workload** | **Compute engine memory (%)** | The maximum percentage of memory allocated to the compute engine. The default value is 30%. |
 
 In the following sections, we go into detail about each of the settings and how they affect your dataflow workload.
@@ -67,7 +67,7 @@ We'll use this restaurant analogy as we explain and provide guidance on each of 
 
 #### Premium capacity SKUs - scale up the hardware
 
-Power BI Premium workloads use a combination of front-end and backend cores to serve fast queries across the various workload types. The [capacity nodes](../../admin/service-premium-what-is.md#capacity-nodes) article includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there – [Capacity nodes](../../admin/service-premium-what-is.md#capacity-nodes). 
+Power BI Premium workloads use a combination of front-end and backend cores to serve fast queries across the various workload types. The [capacity nodes](../../enterprise/service-premium-what-is.md#capacity-nodes) article includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there – [Capacity nodes](../../enterprise/service-premium-what-is.md#capacity-nodes). 
 
 In our restaurant analogy, choosing a capacity is like choosing a higher-quality restaurant. Though a higher cost, you can expect a higher level of performance due to the increase in front-end cores, backend cores, and more memory. When you go to a bigger restaurant, you get a bigger kitchen, and better chefs, which are akin to upgrading to a higher SKU in Power BI Premium, giving you the benefit of increasing CPU speed, increasing memory per operation, and adding more parallelism.
 
@@ -81,7 +81,7 @@ Next let's discuss the **Container Size (Mb)** setting. Internally, dataflows us
 
 Going back to our analogy, having fewer but more focused cooks in the kitchen enables you to cook a meal much faster, depending on the types of orders that are placed and the complexity of the meal. The tradeoff here is having fewer chefs, but more focused time for preparation. Similarly, increasing the container size measure to 1200-1500 MB can mean that a smaller number of more complex ETL jobs – activities such as aggregations, joins, pivots, row or column manipulations - can see a performance increase as we provide more memory for each container, but in doing so, reduce the number of containers. Just as the analogy implies, too many orders can actually slow down the kitchen output, which is how you can think about container size – use this when you need complex table operations to complete, and you're willing to trade parallelism for performance, since increasing this resource divides the memory allocated to fewer containers.
 
-To summarize, you want to optimize your container size based on the queries being used. For example, simply loading data from a source into an table does not need to pull in data and perform any operations and just loads the data to storage. You want as much parallelism as possible for this situation, as you want to increase the speed of the load and refresh operations. Conversely, when you add more transformation operations – complex filters, joins, aggregations, the memory may be much higher as we may need to process some of these transformation operations in memory. Be aware that if you have other dataflow operations running on the capacity, it can slow those operations and force them to queue up to have an execution slot. To this end, monitoring and management of dataflows, refresh performance, and the entire capacity is aided by the **Power BI Premium Capacity Metrics** app. You can use the [Power BI Premium Capacity Metrics](../../admin/service-premium-capacity-optimize.md#what-content-is-using-up-my-capacity) app to filter by capacity, and review performance metrics for workspace content. It's possible to review the performance metrics and resource usage by hour, for the past seven days, for all content stored within a Premium capacity – so for investigating dataflow performance, it's recommended to start with the app.
+To summarize, you want to optimize your container size based on the queries being used. For example, simply loading data from a source into an table does not need to pull in data and perform any operations and just loads the data to storage. You want as much parallelism as possible for this situation, as you want to increase the speed of the load and refresh operations. Conversely, when you add more transformation operations – complex filters, joins, aggregations, the memory may be much higher as we may need to process some of these transformation operations in memory. Be aware that if you have other dataflow operations running on the capacity, it can slow those operations and force them to queue up to have an execution slot. To this end, monitoring and management of dataflows, refresh performance, and the entire capacity is aided by the **Power BI Premium Capacity Metrics** app. You can use the [Power BI Premium Capacity Metrics](../../enterprise/service-premium-capacity-optimize.md#what-content-is-using-up-my-capacity) app to filter by capacity, and review performance metrics for workspace content. It's possible to review the performance metrics and resource usage by hour, for the past seven days, for all content stored within a Premium capacity – so for investigating dataflow performance, it's recommended to start with the app.
 
 #### Enhanced compute engine - an opportunity to improve performance
 

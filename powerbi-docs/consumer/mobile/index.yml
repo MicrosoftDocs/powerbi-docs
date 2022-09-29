@@ -41,7 +41,7 @@ landingContent:
             url: mobile-android-app-get-started.md
           - text: iOS get started
             url: mobile-iphone-app-get-started.md
-          - text: Windows 10 get started
+          - text: Windows get started
             url: mobile-windows-10-phone-app-get-started.md
       - linkListType: quickstart
         links:

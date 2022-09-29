@@ -7,7 +7,8 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 06/30/2022
+ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
 # Create ribbon charts in Power BI
@@ -23,15 +24,32 @@ You can create ribbon charts to visualize data, and quickly discover which data 
 
 ## Prerequisites
 
+# [Power BI Desktop](#tab/powerbi-desktop)
+
 This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. From the upper left section of the menubar, select **File** > **Open report**
+1. From the upper left section of the menubar, select **File** > **Open report**.
 
-1. Find your copy of the **Retail Analysis Sample PBIX file**
+1. Find your copy of the **Retail Analysis Sample PBIX file**.
 
 1. Open the **Retail Analysis Sample PBIX file** in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+This tutorial uses the Retail Analysis Sample in the Power BI service.
+
+1. Sign in to the Power BI service.
+
+1. From the lower left corner, select **Get data**.
+
+1. Select **Samples**, then **Retail Analysis Sample**. Select **Connect**.
+
+1. In your workspace, select the Retail Analysis Sample report to open it.
+
+1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 ## Create a ribbon chart
 
@@ -41,11 +59,11 @@ This tutorial uses the [Retail Analysis Sample PBIX file](https://download.micro
 
     Ribbon charts connect a category of data over the visualized time continuum using ribbons, enabling you to see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 
-1. Select fields for **Axis**, **Legend**, and **Value**.  In this example, we've selected: **Store** > **OpenDate**, **Item** > **Category**, and **Sales** > **This Year Sales** > **Value**.  
+1. Select fields for **X-axis**, **Legend**, and **Y-axis**.  In this example, we've selected: **Store** > **OpenDate**, **Item** > **Category**, and **Sales** > **This Year Sales** > **Value**.  
 
     :::image type="content" source="media/desktop-ribbon-charts/power-bi-ribbon-values.png" alt-text="Screenshot showing the selected fields.":::
 
-    Since the dataset contains data for only one year, we removed the **Year** and **Quarter** field from the **Axis** well.
+    Since the dataset contains data for only one year, we removed the **Year** and **Quarter** field from the **X-axis** well.
 
 1. The ribbon chart shows rank for every month. Notice how rank changes across time. For example, the Home category moves from second to fifth from February to March.
 

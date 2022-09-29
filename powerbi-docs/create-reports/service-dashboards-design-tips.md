@@ -11,6 +11,9 @@ ms.date: 09/12/2021
 LocalizationGroup: Dashboards
 ---
 # Tips for designing a great Power BI dashboard
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Now that you've created a dashboard and added some tiles, think about how to make your dashboard not just pretty, but also functional. In general, it means making the most important information stand out and making it clean and uncluttered.
 
 ![Marketing and sales sample dashboard](media/service-dashboards-design-tips/power-bi-marketing-sample-dashboard.png)

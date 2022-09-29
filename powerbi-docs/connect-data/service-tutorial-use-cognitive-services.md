@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 02/20/2020
+ms.date: 09/22/2022
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
 LocalizationGroup: Connect to services
 ---
@@ -165,6 +165,10 @@ Select **Done** and save the dataflow. Once you have refreshed the dataflow one,
 ## Clean up resources
 
 When no longer needed, delete the query by right-clicking the query name in the Power Query editor and selecting **Delete**.
+
+## Limitation
+
+There are some known issues with using Gateway with Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to apply these functions.
 
 ## Next steps
 

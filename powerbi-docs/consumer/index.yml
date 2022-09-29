@@ -56,7 +56,7 @@ landingContent:
           - text: Show the data used to create a visual
             url: end-user-show-data.md
           - text: Export data to Excel
-            url: end-user-export.md
+            url: /power-bi/visuals/power-bi-visualization-export-data
 
   # Card
   - title: Interact and analyze
@@ -81,8 +81,6 @@ landingContent:
         links:
           - text: Shared with me
             url: end-user-shared-with-me.md
-          - text: Publish a report to PowerPoint
-            url: end-user-powerpoint.md
           - text: Export a report to PDF
             url: end-user-pdf.md
           - text: Subscribe to content

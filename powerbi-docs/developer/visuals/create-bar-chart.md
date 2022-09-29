@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 07/20/2021
+ms.date: 05/05/2022
 ---
 
 # Tutorial: Build a bar chart
@@ -410,9 +410,9 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 >[!NOTE]
 >The next few functions in the *barChart.ts* file deal with color and creating the X axis. Those are optional and are discussed further down in this tutorial. This tutorial will continue from the `IVisual` function.
 
-## Rendering the visual
+## Render the visual
 
-Once the data is defined, we render the visual with the `IVisual` function. The `IVisual` function is described on the [Visual API](visual-api.md) page. It contains a `constructor` class that creates the visual and an `update` class that is called each time the visual reloads.
+Once the data is defined, we render the visual using the BarChart class that implements the`IVisual` interface. The `IVisual` interface is described on the [Visual API](visual-api.md) page. It contains a `constructor` method that creates the visual and an `update` method that is called each time the visual reloads.
 Before rendering the visual, we have to declare the members of the class:
 
 ```typescript
@@ -644,7 +644,7 @@ To add a color picker for each category on the **Property** pane, add an additio
     }
 ```
 
-## (Optional) Rendering the X axis (static objects)
+## (Optional) Render the X axis (static objects)
 
 You can add objects to the **Property** pane to further customize the visual. These customizations can be user interface changes, or changes related to the data that was queried.
 

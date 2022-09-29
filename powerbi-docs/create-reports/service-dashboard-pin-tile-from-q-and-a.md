@@ -12,6 +12,8 @@ LocalizationGroup: Dashboards
 ---
 # Pin a tile to a dashboard from Q&A
 
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 Q&A is a Power BI tool for exploring your data using natural language. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
 In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md) in the Power BI service (app.powerbi.com), ask a question using natural language to create a visualization, and pin that visualization to the dashboard. Dashboards aren't available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../consumer/end-user-q-and-a.md). 

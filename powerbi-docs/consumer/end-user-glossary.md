@@ -92,9 +92,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 **content list**    
 The content index for an app.
 
-**content pack**    
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. These are replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
-
 **content view**
 
 **Continuous variable**     
@@ -380,7 +377,7 @@ Read-only view for reports (as opposed to Editing View).
 The ability to stream data and update dashboards in real time from sources such as sensors, social media, usage metrics, and anything else from which time-sensitive data can be collected or transmitted.  
 
 **Recent**    
-The container in the nav pane that holds all the individual artifacts that were accessed last.
+The container in the nav pane that holds all the individual items that were accessed last.
 
 **related content**    
 Shows the individual pieces of content that contribute to the current content. For example, for a dashboard, you can see the reports and datasets providing the data and visualizations on the dashboard.   
@@ -421,11 +418,11 @@ A standalone resource available to customers by subscription or license. A servi
 The location for Power BI users to manage their own general settings, such as whether to preview new features, set the default language, close their account, etc. Also, users manage individual settings for content assets, alerts, and subscriptions. Represented by a cog icon.
 
 **share, sharing**    
-In Power BI, sharing typically means directly sharing an individual artifact (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
+In Power BI, sharing typically means directly sharing an individual item (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
 On mobile devices, share can refer to native OS share functionality, such as "annotate and share."  
 
 **Shared with me**     
-The container in the nav pane that holds all the individual artifacts that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual items that were directly shared by another Power BI user.
 
 **snapshot**    
 In Power BI, a snapshot is a static image vs. a live image of a tile, dashboard, or report.

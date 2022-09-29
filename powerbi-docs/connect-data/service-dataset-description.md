@@ -20,5 +20,5 @@ To provide a description for a dataset, go to dataset's settings page, find the 
 :::image type="content" source="media/service-dataset-description/dataset-description-section-in-dataset-settings.png" alt-text="Screenshot of dataset description text box on the dataset settings page.":::
 
 ## Next steps
-* [Datasets hub](service-datasets-hub.md)
+* [Data hub](service-data-hub.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/16/2021
+ms.date: 02/23/2022
 LocalizationGroup: 
 ---
 
@@ -92,7 +92,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 ## Save and publish to the service
 
-When your RangeStart and RangeEnd parameters, filtering, and refresh policy settings are complete, be sure to save your model, and then publish to the service. If your dataset will become large, be sure to enable [Large dataset storage format](../admin/service-premium-large-models.md) *prior* to invoking the first refresh in the service.
+When your RangeStart and RangeEnd parameters, filtering, and refresh policy settings are complete, be sure to save your model, and then publish to the service. If your dataset will become large, be sure to enable [Large dataset storage format](../enterprise/service-premium-large-models.md) *prior* to invoking the first refresh in the service.
 
 ## Refresh dataset
 

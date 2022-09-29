@@ -41,6 +41,8 @@ landingContent:
         links:
           - text: What's new in Power BI?
             url: desktop-latest-update.md
+          - text: The new experience in the Power BI service
+            url: service-experience-changes.md
           - text: The new Format pane in Power BI Desktop
             url: desktop-format-pane.md
 
@@ -50,9 +52,9 @@ landingContent:
       - linkListType: learn
         links:
           - text: Create and use analytics reports
-            url: /learn/paths/create-use-analytics-reports-power-bi/
+            url: /training/paths/create-use-analytics-reports-power-bi/
           - text: Get data with Power BI Desktop
-            url: /learn/modules/get-data-power-bi/?tutorial-step=1
+            url: /training/modules/get-data-power-bi/?tutorial-step=1
   # Card (optional)
   - title: Licensing
     linkLists:

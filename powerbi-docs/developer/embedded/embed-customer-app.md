@@ -28,7 +28,7 @@ In this tutorial, you'll learn how to embed:
 
 ## Prerequisites
 
-* A [Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml) license.
+* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license.
 
 * A Power BI workspace with a report.
 
@@ -531,6 +531,9 @@ The `powerbi.embed` function uses the `models` configuration object to embed you
 ## Step 6 - Run your application
 
 After you've made all the adjustments listed in this tutorial, you're ready to run your application. Execute your application and experiment with the way your Power BI report is embedded. You can use the [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/) to enhance your app using client side APIs.
+
+> [!IMPORTANT]
+> If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
 When your app is ready, you can [move your embedded app to production](move-to-production.md).
 

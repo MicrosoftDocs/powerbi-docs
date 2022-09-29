@@ -25,7 +25,7 @@ The Power BI service requires only TCP Port 443 to be opened for the listed endp
 Wildcards (*) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination(s)** column lists domain names and links to external sites, which contain further endpoint information.
 
 >[!Important]
->The information in the tables below doesn't apply to Power BI China operated by 21Vianet or Power BI for US government. Read [Connect government and global Azure cloud services](service-govus-overview.md#connect-government-and-global-azure-cloud-services) to learn more about communicating between cloud services.
+>The information in the tables below doesn't apply to Power BI China operated by 21Vianet or Power BI for US government. Read [Connect government and global Azure cloud services](../enterprise/service-govus-overview.md#connect-government-and-global-azure-cloud-services) to learn more about communicating between cloud services.
 
 ## Authentication
 
@@ -89,7 +89,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Required:** Import a custom visual from the Marketplace interface or from a file | *.azureedge.net <br> *.blob.core.windows.net <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
-| 2 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
+| 2 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> r.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Optional:** PowerApps | See the [Required services section](/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
 | 4 | **Optional:** Visio | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for Business](/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
@@ -101,7 +101,7 @@ Power BI links to other related sites. These sites host documentation, support, 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Optional:** Community site | community.powerbi.com <br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Optional:** Documentation site | docs.microsoft.com <br> img-prod-cms-rt-microsoft-com.akamaized.net <br> statics-uhf-eas.akamaized.net <br> cdnssl.clicktale.net <br> ing-district.clicktale.net | TCP 443 |
+| 2 | **Optional:** Documentation site | learn.microsoft.com <br> img-prod-cms-rt-microsoft-com.akamaized.net <br> statics-uhf-eas.akamaized.net <br> cdnssl.clicktale.net <br> ing-district.clicktale.net | TCP 443 |
 | 3 | **Optional:** Download site (for Power BI Desktop, etc.) | download.microsoft.com | TCP 443 |
 | 4 | **Optional:** External redirects | aka.ms <br> go.microsoft.com | TCP 443 |
 | 5 | **Optional:** Ideas feedback site| ideas.powerbi.com <br> powerbi.uservoice.com | TCP 443 |

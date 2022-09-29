@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Change settings for Power BI reports
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 With the report settings in Power BI Desktop and the Power BI service, you can control how report readers interact with your report. For example, you can allow them to save filters for the report, personalize the visuals in the report, or display the report pages as tabs across the bottom of the report instead of along the side.
 
@@ -29,25 +29,29 @@ It might be helpful to read these articles first:
 
 - For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md).
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- You need to have edit permission for the report in the Power BI service. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details on permission.
-- If you don't already have a report in the Power BI service, you can [install a sample content pack](sample-datasets.md#install-built-in-samples) containing a dashboard, report, and dataset.
+- You need to have edit permission for the report in the Power BI service. See [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md) for details on permission.
+- If you don't already have a report in the Power BI service, you can [install a sample](sample-datasets.md#install-built-in-samples) containing a dashboard, report, and dataset.
 
-## Open the Settings pane in Power BI Desktop
+## Open the Settings pane
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 1. Select **File** > **Options and settings** > **Options**.
 1. Under **Current file**, select **Report settings**.
 
     :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Screenshot of report Settings pane in Power BI Desktop":::
 
-    The rest of this article calls out some of the specific report settings.
-
-## Open the Settings pane in the Power BI service
+# [Power BI service](#tab/powerbi-service)
 
 1. In report Reading view, select **File** > **Settings**.
 
     :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="Screenshot of File menu to Settings.":::
 
-1. In the **Settings** pane, you see a number of toggles you can set, just for this report. The rest of this article calls out some of them.
+1. In the **Settings** pane, you see a number of toggles you can set, just for this report.
+
+---
+
+The rest of this article calls out some of the specific report settings.
 
 ## Set featured content
 
@@ -72,7 +76,7 @@ The report **Settings** pane has three settings for controlling reader interacti
 
 ## Export data
 
-By default, [report readers can export summarized or underlying data](../consumer/end-user-export.md) from visuals in your report. With **Export data**, you can allow them to export only summarized data, or to export no data at all from your report.
+By default, [report readers can export summarized or underlying data](/power-bi/visuals/power-bi-visualization-export-data) from visuals in your report. With **Export data**, you can allow them to export only summarized data, or to export no data at all from your report.
 
 ## Personalize visuals
 

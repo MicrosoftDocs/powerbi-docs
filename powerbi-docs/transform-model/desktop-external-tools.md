@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 Power BI has a vibrant community of BI professionals and developers. A vital part of that community are contributors that create free tools that use Power BI and Analysis Services APIs to extend and integrate with Power BI Desktop's data modeling and reporting features. 
 
-The **External Tools** ribbon provides easy access to external tools that have been installed locally and *registered* with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance to the tool, and the current model name. The tool then automatically connects, providing a seamless connection experience.  
+The **External Tools** ribbon provides easy access to external tools that have been installed locally and *registered* with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance and the current model name to the tool. The tool then automatically connects, providing a seamless connection experience.  
 
 :::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" border="false" alt-text="The external tools ribbon in Power BI Desktop":::
 

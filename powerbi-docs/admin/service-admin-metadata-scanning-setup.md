@@ -22,7 +22,7 @@ Before metadata scanning can be run over an organization's Power BI workspaces, 
 
 Service principal is an authentication method that can be used to let an Azure AD application access Power BI APIs. With this authentication method, you don’t have to maintain a service account with an admin role. Rather, to allow your app to use the Admin APIs, you just have to give your approval once as part of the tenant settings configuration.
 
-To see how to enable service principal access to read-only Admin APIs, see [Enable service principal authentication for read-only admin APIs](read-only-apis-service-principal-authentication.md).
+To see how to enable service principal access to read-only Admin APIs, see [Enable service principal authentication for read-only admin APIs](../enterprise/read-only-apis-service-principal-authentication.md).
 
 If you don't want to enable service principal authentication, metadata scanning can be performed with standard delegated admin access token authentication.
 
@@ -35,7 +35,7 @@ Two tenant settings control metadata scanning:
 
 To enable these settings, go to **Admin portal > Tenant settings > Admin API settings**.
 
-![Screen shot of tenant settings for enhanced metadata scanning.](media/service-admin-metadata-scanning-setup/enhanced-metadata-scanning-enable.png)
+![Screen shot of tenant settings for enhanced metadata scanning.](../enterprise/media/service-admin-metadata-scanning-setup/enhanced-metadata-scanning-enable.png)
  
 ### Model caching
 
@@ -50,7 +50,7 @@ If the detailed low-level metadata requested is not in the cache, it is simply n
 
 ## Next steps
 
-* [Enable service principal authentication for read-only admin APIs](read-only-apis-service-principal-authentication.md)
-* [Metadata scanning](service-admin-metadata-scanning.md)
+* [Enable service principal authentication for read-only admin APIs](../enterprise/read-only-apis-service-principal-authentication.md)
+* [Metadata scanning](../enterprise/service-admin-metadata-scanning.md)
 * [Power BI REST Admin APIs](/rest/api/power-bi/admin)
 * More questions? Try asking the [Power BI Community](https://community.powerbi.com)

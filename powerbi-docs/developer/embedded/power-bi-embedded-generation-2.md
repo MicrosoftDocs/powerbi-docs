@@ -48,7 +48,7 @@ Create an Embedded Gen2 capacity resource to take advantage of its updates. To c
 
 ## Understanding Embedded Gen2
 
-Embedded Gen 2 has the same [architecture improvements](../../admin/service-premium-architecture.md), [capacity load evaluation](../../admin/service-premium-concepts.md) and [background operation scheduling](../../admin/service-premium-concepts.md#premium-gen2-background-operation-scheduling) as Premium Gen2.
+Embedded Gen 2 has the same [architecture improvements](../../enterprise/service-premium-architecture.md), [capacity load evaluation](../../enterprise/service-premium-concepts.md) and [background operation scheduling](../../enterprise/service-premium-concepts.md#premium-gen2-background-operation-scheduling) as Premium Gen2.
 
 ## Autoscaling in Embedded Gen2
 
@@ -66,9 +66,9 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
 
-* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. Estimated release dates for dependent tools to support this requirement are listed in [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+* Analysis services features in Embedded Gen2 are only supported on the latest client libraries. For more information see [Considerations and limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
-* For a list of Embedded Gen2 memory restrictions, see [limitations in Premium Gen2](../../admin/service-premium-gen2-what-is.md#limitations-in-premium-gen2).
+* For a list of Embedded Gen2 memory restrictions, see [Memory allocation](../../enterprise/service-premium-gen2-what-is.md#memory-allocation).
 
 ## Next steps
 
@@ -79,7 +79,7 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 > [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](../../admin/service-premium-what-is.md)
+> [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 
 > [!div class="nextstepaction"]
 >[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)

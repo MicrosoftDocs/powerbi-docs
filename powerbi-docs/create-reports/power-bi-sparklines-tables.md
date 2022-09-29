@@ -8,10 +8,12 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/21/2022
+ms.date: 07/14/2022
 LocalizationGroup: Visualizations
 ---
 # Create sparklines in a table or matrix in a Power BI report (preview)
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 A good way to add meaning to a table or matrix is to add *sparklines*. Sparklines are tiny charts shown within cells of a table or matrix that make it easy to see and compare trends quickly. Sparklines are currently in preview. You may want to use them to show trends in a series of values, such as seasonal increases or decreases, economic cycles, or to highlight max and min values.
 
@@ -21,7 +23,7 @@ A good way to add meaning to a table or matrix is to add *sparklines*. Sparkline
 
 Sparklines should be on by default. If you don't see the option to add them, here's how to turn on the feature.
 
-- Go to **File** > **Options and settings** > **Options** > **Preview features**, and select **Sparklines**.
+- In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Preview features**, and select **Sparklines**.
 
 ## Video
 
@@ -41,9 +43,11 @@ After you enable the preview feature, you can add sparklines to both your table 
 
     :::image type="content" source="media/power-bi-sparklines-tables/sparklines-2-add-sparkline.png" alt-text="Screenshot of Add a sparkline.":::
 
-1. In the dialog box, you configure the details of your sparkline. The numeric field you started with is prepopulated for the **Y-axis**. You can change both the field and **Summarization** type, if needed. You also need to select a field, such as a date field, to use as the **X-axis** of the sparkline.
+1. In the dialog box, you configure the details of your sparkline. The numeric field you started with is prepopulated for the **Y-axis**. You can change both the field and **Summarization** type, if needed. You also need to select a field, typically a date field, to use as the **X-axis** of the sparkline. 
 
     :::image type="content" source="media/power-bi-sparklines-tables/sparklines-3-add-sparkline-dialog.png" alt-text="Screenshot of Complete the Sparkline dialog box.":::
+
+    Read more about [working with auto date/time fields](../transform-model/desktop-auto-date-time.md#work-with-auto-datetime) in Power BI Desktop.
 
 1. Select **Create**. The sparkline is automatically added to your table or matrix as a new column.
 
@@ -74,7 +78,7 @@ Now you can edit the sparkline’s properties.
 
 ## Next steps
 
-[Page layout and formatting](/learn/modules/visuals-in-power-bi/12-formatting)
+[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
 
 [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 

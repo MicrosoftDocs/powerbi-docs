@@ -266,7 +266,7 @@ Your completed report combines data from the *Products.xlsx* Excel file and the 
 
 ## Next steps
 
-* [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+* [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Watch Power BI videos](../fundamentals/videos.md)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

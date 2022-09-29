@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/10/2021
+ms.date: 03/01/2022
 ---
 
 # Fetch more data from Power BI
@@ -17,7 +17,7 @@ The **fetchMoreData API** supports loading data chunks as a way of enabling Powe
 This approach allows more flexibility in the way additional data chunks are loaded to the visual. To improve performance, you can configure the chunk size to accommodate your use case.
 
 >[!NOTE]
->The `fetchMoreData` API is available from version 3.4. To find out which version you’re using, run the `pbiviz -V` command.
+>The `fetchMoreData` API is available from version 3.4. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Enable a segmented fetch of large datasets
 
@@ -181,7 +181,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 > For table and categorical data mapping, it is expected the the first N dataview rows will contain data copied from the previous dataview.
 > N can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
-## Known limitations of fetchMoreData
+## Considerations and limitations
 
 * Window size is limited to a range of 2-30,000.
 * Dataview total row count is limited to 1,048,576 rows.

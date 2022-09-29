@@ -6,13 +6,13 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 02/16/2022
+ms.date: 07/14/2022
 ms.custom: intro-overview
 ---
 
 # What is Power BI embedded analytics?
 
-Power BI embedded analytics allows you to embed your Power BI content such as reports, dashboards and tiles, in a web application or in a website.
+Power BI embedded analytics allows you to embed your Power BI items such as reports, dashboards and tiles, in a web application or in a website.
 
 Using Power BI embedded analytics you can:
 
@@ -49,46 +49,30 @@ The following table provides a comparison between the two Power BI embedded anal
 |To authenticate app users, use your own authentication method        |App users authenticate against Azure AD         |
 |App users don't need a license         |Each app user needs a Power BI license         |
 |Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate         |
-|   |   |
 
 > [!TIP]
 > Get started with the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup).
 
 ## What are Power BI capacities?
 
-Capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
+A capacity is a set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.  
+For development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must use a capacity.
 
-There are two types of Power BI embedded analytics offerings, each requiring a different [capacity](./embedded-capacity.md):
+> [!IMPORTANT]
+> Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
-* [Power BI Embedded](#power-bi-embedded)
+There are two types of Power BI embedded analytics offerings. Each offer includes a different type of SKU that you use to buy a Power BI [capacity](./embedded-capacity.md):
 
-* [Embedding with Power BI](#embedding-with-power-bi)
+* [*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that includes A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
 
-### Power BI Embedded
+* [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) is a Microsoft Office offer that includes P or EM SKUs.
 
-[*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that requires A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
-
-### Embedding with Power BI
-
-*Embedding with Power BI* is a [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) offer that requires P or EM SKUs.
-
-## Considerations and limitations
-
-The ESRI ArcGIS visual isn't supported yet in the embed for your customers (app owns data) solution.
+For more information about the differences between the Embedded and Premium SKUs, see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md)
-
->[!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
-
-> [!div class="nextstepaction"]
-> [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
-> [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)
-
-> [!div class="nextstepaction"]
-> [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup)
+* [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md)
+* [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+* [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
+* [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)
+* [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup)

@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/03/2021
+ms.date: 08/23/2022
 ---
 
 # Export paginated report to file
@@ -20,9 +20,14 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 * **.csv**
 * **.xml**
 * **.mhtml**
-* **Image**
-  * When exporting to an image, set the image format via the `OutputFormat` format setting
-  * The supported OutputFormat values are: .bmp, .emf, .gif, .jpeg, .png, or .tiff (default)
+* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are:
+
+  * *.tiff* (default)
+  * *.bmp*
+  * *.emf*
+  * *.gif*
+  * *.jpeg*
+  * *.png*
 
 ## Usage examples
 
@@ -33,6 +38,12 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 * **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
 ## Using the API
+
+### Rendering events
+
+To make sure the export doesn't begin before the visual finishes rendering use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
+
+### Polling
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
@@ -106,7 +117,7 @@ When using a Power BI dataset that has Row Level Security (RLS) defined as a dat
 
 To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
 
-Here'ss an example for supplying an effective user name for RLS.
+Here's an example of supplying an effective user name for RLS.
 
 ```json
 {
@@ -130,7 +141,7 @@ Getting the correct access token for the resource that you want to access can so
 
 Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
 
-Here's an example for supplying an effective user name with an access token.
+Here's an example for supplying an effective identity (user name) with an access token.
 
 ```json
 {
@@ -156,7 +167,7 @@ Here's an example for supplying an effective user name with an access token.
 
 ## PPU concurrent requests
 
-The `exportToFile` API allows one request in a five-minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five-minute window will result in a *Too Many Requests* (429) error.
+The `exportToFile` API allows one request in a five-minute window when using [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five-minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -326,25 +337,29 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
-* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported for service principals.
+* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
+
+  * The caller is a service principal profile.
+  * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
+  * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
+
+* Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
+
+  * The caller is a service principal profile.
+  * The caller is a master user and an effective identity was provided.
 
 * When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
-
-* The number of paginated report exports is limited to 50 reports per minute per capacity.
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token.
 
 * If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider minimizing the data using appropriate filters.
 
+* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online.  
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
 
-> [!div class="nextstepaction"]
->[Export report to file](export-to.md)
-
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+* [Export report to file](export-to.md)
+* [Embed for your customers](embed-sample-for-customers.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)

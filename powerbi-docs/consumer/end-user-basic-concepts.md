@@ -8,7 +8,7 @@ ms.custom: video-B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 02/08/2022
+ms.date: 07/08/2022
 LocalizationGroup: Get started
 ---
 
@@ -32,7 +32,7 @@ To follow along, open app.powerbi.com in your browser.
 
 There are many objects and concepts that make up the Power BI service, too many to cover in a single article. So we'll introduce you to the most common:  **_visualizations_**, **_dashboards_**, **_reports_**, **_apps_**, and **_datasets_**. These are sometimes referred to as *Power BI* **_content_**. *Content* exists in **_workspaces_**. 
 
-A typical Power BI workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI Desktop for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to *dashboards*, and shares the reports, and dashboards with business users like you (black in diagram below).  THere are many different ways that a designer can share content with you: as individual pieces of content, content bundled together in an *app*, or by giving you permissions to a workspace where the content is stored. (Don't worry, we'll talk about the different ways that content is shared later in this article.)
+A typical Power BI workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI Desktop for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to *dashboards*, and shares the reports, and dashboards with business users like you (black in diagram below).  There are many different ways that a designer can share content with you: as individual pieces of content, content bundled together in an *app*, or by giving you permissions to a workspace where the content is stored. (Don't worry, we'll talk about the different ways that content is shared later in this article.)
 
 ![A basic Power BI workflow chart.](media/end-user-basic-concepts/power-bi-workflows.png)
 
@@ -106,7 +106,7 @@ A Power BI report is one or more pages of visualizations, graphics, and text. Al
 
 One report...
 
-- Can be created using data from only one dataset.  
+- Can be created using data from only one dataset. Power BI Desktop can combine more than one data source into a single dataset in a report, and that report can be imported into Power BI. 
 
 - Can be associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards).
 
@@ -200,13 +200,13 @@ Once you've installed the app, just select it from your Apps list and select whi
 
 ![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-apps-card.png)
 
-I hope this article gave you an understanding of the building blocks that make up the Power BI service for business users.
+Now that you've been introduced to the building blocks that make up the Power BI service for business users, continue learning using the links below. Or, [start using the Power BI service](end-user-experience.md) with some sample data. 
 
 ## Next steps
 
 - Review and bookmark the [Glossary](end-user-glossary.md)
 
-- Take a [tour of the Power BI service](end-user-experience.md)
+- Take a [tour of the Power BI service](end-user-reading-view.md))
 
 - Read the [overview of Power BI written especially for business users](end-user-consumer.md)
 

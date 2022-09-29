@@ -2,12 +2,12 @@
 title: Power BI adoption roadmap
 description: An overview of the Power BI adoption roadmap series of articles.
 author: peter-myers
-ms.author: maroche
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 04/20/2022
 ---
 
 # Power BI adoption roadmap
@@ -16,9 +16,12 @@ The goal of this series of articles is to provide a roadmap. The roadmap present
 
 Advancing adoption and cultivating a data culture is about more than implementing technology features. Technology can assist an organization in making the greatest impact, but a healthy data culture involves a lot of considerations across the spectrum of people, processes, and technology.
 
+> [!NOTE]
+> While reading this series of articles, it's recommended you also take into consideration [Power BI implementation planning](powerbi-implementation-planning-introduction.md) guidance. After you're familiar with the concepts in the Power BI adoption roadmap, consider reviewing the [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md). Understanding the diverse ways how Power BI is used can influence your implementation strategies and decisions.
+
 This series of articles correlates with the following Power BI adoption roadmap diagram:
 
-:::image type="content" source="media/powerbi-adoption-roadmap-overview/powerbi-adoption-roadmap-overview-roadmap.png" alt-text="Image shows a diagram depicting the 10 high-level areas of Power B I adoption, which are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-adoption-roadmap-overview/powerbi-adoption-roadmap-overview-roadmap.png" alt-text="Image shows a diagram depicting the 10 high-level areas of Power BI adoption, which are described in the table below." border="false":::
 
 The areas in the above diagram include:
 
@@ -50,9 +53,9 @@ Each individual article in this series discusses key topics associated with the 
 Successful Power BI adoption involves making effective processes, support, tools, and data available and integrated into regular ongoing patterns of usage for content creators, consumers, and stakeholders in the organization.
 
 > [!IMPORTANT]
-> This series of adoption articles is focused on _organizational_ adoption. See the [Power BI adoption maturity levels article](powerbi-adoption-roadmap-maturity-levels.md) for an introduction to the three types of adoption: organizational, user, and solution.
+> This series of adoption articles is focused on *organizational* adoption. See the [Power BI adoption maturity levels article](powerbi-adoption-roadmap-maturity-levels.md) for an introduction to the three types of adoption: organizational, user, and solution.
 
-A common misconception is that adoption relates primarily to usage or the number of users. There's no question that usage statistics are an important factor. However, usage is not the only factor. Adoption is not just about _using_ the technology on a regular basis; it's about using it _effectively_. Effectiveness is much harder to define and measure.
+A common misconception is that adoption relates primarily to usage or the number of users. There's no question that usage statistics are an important factor. However, usage is not the only factor. Adoption is not just about *using* the technology on a regular basis; it's about using it *effectively*. Effectiveness is much harder to define and measure.
 
 Whenever possible, adoption efforts should be aligned across analytics platforms, BI services, and other Power Platform products. These products include Power Apps and Power Automate.
 
@@ -115,6 +118,7 @@ In the [next article in this series](powerbi-adoption-roadmap-maturity-levels.md
 
 Other helpful resources include:
 
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

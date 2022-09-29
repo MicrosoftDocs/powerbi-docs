@@ -1,21 +1,23 @@
 ---
-title: Conditional table formatting in Power BI Desktop
-description: Apply customized formatting to tables
+title: Apply conditional table formatting in Power BI
+description: Apply customized formatting to tables and matrixes in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/15/2021
-ms.custom: contperf-fy21q4
+ms.date: 06/13/2022
+ms.custom: contperf-fy21q4, sample-bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx
 LocalizationGroup: Create reports
 ---
-# Use conditional formatting in tables 
+# Apply conditional formatting in tables and matrixes
 
-With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any text or data field, as long as you base the formatting on a field that has numeric, color name or hex code, or web URL values. 
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop. In the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
+With conditional formatting for tables and matrixes in Power BI, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any text or data field, as long as you base the formatting on a field that has numeric, color name or hex code, or web URL values. 
+
+To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop or the Power BI service. In the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
 
 ![Conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
@@ -42,11 +44,11 @@ The **Background color** and **Font color** options are the same, but affect the
 
 ## Color by color scale
 
-To format cell background or font color by color scale, in the **Format by** field of the **Background color** or **Font color** dialog box, select **Color scale**. Under **Based on field**, select the field to base the formatting on. You can base the formatting on the current field, or on any field in your model that has numerical or color data. 
+To format cell background or font color by color scale, in the **Format style** field of the **Background color** or **Font color** dialog box, select **Gradient**. Under **What field should we based this on?**, select the field to base the formatting on. You can base the formatting on the current field, or on any field in your model that has numerical or color data. 
 
 Under **Summarization**, specify the aggregation type you want to use for the selected field. Under **Default formatting**, select a formatting to apply to blank values. 
 
-Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest field values, or on custom values you enter. Drop down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Diverging** check box to also specify a **Center** value and color. 
+Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest field values, or on custom values you enter. Drop down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Add a middle color** check box to also specify a **Center** value and color. 
 
 ![Set cell background with color scale](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
 
@@ -60,7 +62,7 @@ The example table with color scale font formatting on the **Affordability** colu
 
 ## Color by rules
 
-To format cell background or font color by rules, in the **Format by** field of the **Background color** or **Font color** dialog box, select **Rules**. Again, **Based on field** shows the field to base the formatting on, and **Summarization** shows the aggregation type for the field. 
+To format cell background or font color by rules, in the **Format style** field of the **Background color** or **Font color** dialog box, select **Rules**. Again, **What field should we base this on?** shows the field to base the formatting on, and **Summarization** shows the aggregation type for the field. 
 
 Under **Rules**, enter one or more value ranges, and set a color for each one. Each value range has an *If value* condition, an *and* value condition, and a color. Cell backgrounds or fonts in each value range are colored with the given color. The following example has three rules:
 
@@ -101,7 +103,7 @@ The following table has a color name associated with each state:
 
 To format the **Color** column based on its field values, select **Conditional formatting** for the **Color** field, and then select **Background color** or **Font color**. 
 
-In the **Background color** or **Font color** dialog box, select **Field value** from the **Format by** drop-down field.
+In the **Background color** or **Font color** dialog box, select **Field value** from the **Format style** drop-down field.
 
 ![Format by Field value](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
 
@@ -149,11 +151,11 @@ With data bars applied to the **Affordability** column, the example table looks 
 
 To show icons based on cell values, select **Conditional formatting** for the field, and then select **Icons** from the drop-down menu. 
 
-In the **Icons** dialog, under **Format by**, select either **Rules** or **Field value**. 
+In the **Icons** dialog, under **Format style**, select either **Rules** or **Field value**. 
 
-To format by rules, select a **Based on field**, **Summarization** method, **Icon layout**, **Icon alignment**, icon **Style**, and one or more **Rules**. Under **Rules**, enter one or more rules with an *If value* condition and an *and* value condition, and select an icon to apply to each rule. 
+To format by rules, select a **What field should we base this on?**, **Summarization** method, **Icon layout**, **Icon alignment**, icon **Style**, and one or more **Rules**. Under **Rules**, enter one or more rules with an *If value* condition and an *and* value condition, and select an icon to apply to each rule. 
 
-To format by field values, select a **Based on field**, **Summarization** method, **Icon layout**, and **Icon alignment**.
+To format by field values, select a **What field should we base this on?**, **Summarization** method, **Icon layout**, and **Icon alignment**.
 
 The following example adds icons based on three rules:
 
@@ -169,7 +171,7 @@ If you have a column or measure that contains website URLs, you can use conditio
 
 ![Table with web URL column](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
 
-To display each state name as a live link to its website, select **Conditional formatting** for the **State** field, and then select **Web URL**. In the **Web URL** dialog box, under **Based on field**, select **Website**, and then select **OK**. 
+To display each state name as a live link to its website, select **Conditional formatting** for the **State** field, and then select **Web URL**. In the **Web URL** dialog box, under **What field should we based this on?**, select **Website**, and then select **OK**. 
 
 With **Web URL** formatting applied to the **State** field, each state name is an active link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** applied to the **Overall rank** column. 
 

@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 02/27/2022
 ---
 
 # Power BI usage scenarios: Prototyping and sharing
@@ -23,7 +23,7 @@ Prototyping often occurs naturally during self-service BI development efforts. O
 > [!NOTE]
 > The prototyping and sharing scenario is one of the self-service BI scenarios. For a complete list of the self-service scenarios, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
 >
-> For brevity, some aspects described in the [content collaboration and delivery scenarios](powerbi-implementation-planning-usage-scenario-overview.md#content-management-and-deployment-scenarios) topic aren't covered in this article. For complete coverage, read those articles first.
+> For brevity, some aspects described in the [content collaboration and delivery scenarios](powerbi-implementation-planning-usage-scenario-overview.md#content-collaboration-and-delivery-scenarios) topic aren't covered in this article. For complete coverage, read those articles first.
 
 ## Scenario diagram
 
@@ -66,10 +66,10 @@ A development [workspace](../collaborate-share/service-new-workspaces.md) is app
 
 ### Sharing reports and dashboards
 
-The scenario diagram depicts [sharing](../collaborate-share/service-share-dashboards.md) directly to a recipient (rather than [workspace roles](../collaborate-share/service-roles-new-workspaces.md) or using a [Power BI app](../collaborate-share/service-create-distribute-apps.md#publish-your-app)). Using the sharing feature is appropriate for collaboration scenarios when colleagues work closely together in an informal way. Sharing is useful in this situation because it's limited to a small number of colleagues who need to review and provide feedback on the prototyped solution.
+The scenario diagram depicts [sharing](../collaborate-share/service-share-dashboards.md) directly to a recipient (rather than [workspace roles](../collaborate-share/service-roles-new-workspaces.md) or using a [Power BI app](../collaborate-share/service-create-distribute-apps.md)). Using the sharing feature is appropriate for collaboration scenarios when colleagues work closely together in an informal way. Sharing is useful in this situation because it's limited to a small number of colleagues who need to review and provide feedback on the prototyped solution.
 
 > [!TIP]
-> Individual item sharing should be done infrequently. Since sharing is configured per individual artifact in a workspace, it's more tedious to maintain and increases the risk of error. A valid alternative to sharing (not depicted in the scenario diagram) is to use [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). Workspace roles work best when colleagues need access to *all artifacts* in a workspace.
+> Individual item sharing should be done infrequently. Since sharing is configured per individual items in a workspace, it's more tedious to maintain and increases the risk of error. A valid alternative to sharing (not depicted in the scenario diagram) is to use [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). Workspace roles work best when colleagues need access to *all items* in a workspace.
 
 ### Gateway setup
 

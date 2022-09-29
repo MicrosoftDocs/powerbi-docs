@@ -3,15 +3,17 @@ title: Create modern visual tooltips (preview)
 description: Modern visual tooltips in Power BI Desktop let you create rich hover-based tooltips for visuals in your reports.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
+ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 09/12/2022
 LocalizationGroup: Create reports
 ---
 
 # Create modern visual tooltips (preview)
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 The public preview of modern visual tooltips includes data point drill actions and updated styling to match your report theme.
 
@@ -93,13 +95,13 @@ Here’s an example with the **Frontier** theme:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-frontier.png" alt-text="Example of a modern visual tooltip with the Frontier theme.":::
 
-To customize the styling further, you can update the **Tooltip** theme in the **Customize theme** dialog:
+To customize the styling further in Power BI Desktop, you can update the **Tooltip** theme in the **Customize theme** dialog:
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-customize-theme.png" alt-text="Customize the tooltip theme in the Customize theme dialog.":::
 
 Additionally, you can format tooltips per visual by customizing the settings in the **Format** pane:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-format-pane.png" alt-text="Customize the tooltip in the Format pane.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-visual-tooltip-format.png" alt-text="Customize the tooltip in the Format pane in Power B I Desktop.":::
 
 ## Considerations and limitations
 
@@ -107,10 +109,6 @@ Currently, drill actions aren't available in the tooltip for the following scena
 
 - Report page tooltips
 - AppSource visuals (custom visuals)
-- Matrix visuals
-- Line charts
-- Area charts
-- Stacked area charts
 - Decomposition trees
 
 We currently don't have visual-level control to turn on or off the drill actions for the tooltips. You can enable or disable this capability for a whole report.

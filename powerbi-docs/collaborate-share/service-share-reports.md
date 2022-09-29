@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/02/2021
+ms.date: 06/23/2022
 LocalizationGroup: Share your work
 ---
 # Share a filtered Power BI report
@@ -27,7 +27,7 @@ In both cases, the report is filtered when recipients first open it. They can cl
 
 Another way to share a filtered report is to [add query parameters to the report URL](service-url-filters.md). Again, the report is filtered when recipients first open it. They can clear the filter selections in the report.
 
-Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). 
+Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). 
 
 
 ## Share via link
@@ -97,8 +97,9 @@ When you share this link, recipients with access to the report will see your fil
 ## Considerations and limitations
 Things to keep in mind about sharing reports:
 
-* When you share a dataset by managing permissions, by sharing reports or dashboards, or by publishing an app, you're granting access to the entire dataset unless [row-level security (RLS)](../admin/service-admin-rls.md) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences don't restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.
+* When you share a dataset by managing permissions, by sharing reports or dashboards, or by publishing an app, you're granting access to the entire dataset unless [row-level security (RLS)](../enterprise/service-admin-rls.md) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences don't restrict what data users can access in the dataset. Use [row-level security (RLS)](../enterprise/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.
 * The shared report view will automatically expire after 180 days.
+* You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app. 
 
 ## Next steps
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)

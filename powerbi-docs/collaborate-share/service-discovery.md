@@ -17,7 +17,7 @@ Discoverability is a feature that makes it possible for users to find endorsed d
 
 Endorsement is a way of telling users that a dataset is a trusted, quality source of data that they can safely use. However, in Power BI, endorsed datasets, like all other datasets, are only visible to those who have access to them. This makes it difficult for people without access to find these trusted sources of data. Not only do they not have access to an endorsed dataset, they don't know it exists, so they can't even request access.
 
-To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where a endorsed dataset resides can mark that dataset as discoverable. After the dataset has been marked as discoverable, it will be listed in the [datasets hub](../connect-data/service-datasets-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the dataset by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) has been provided.
+To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed dataset resides can mark that dataset as discoverable. After the dataset has been marked as discoverable, it will be listed in the [data hub](../connect-data/service-data-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the dataset by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) has been provided.
 
 To be operable in an organization, dataset discovery must be set up by a Power BI administrator. See [How to set up dataset discoverability in an organization](#how-to-set-up-dataset-discovery-in-an-organization), below.
 
@@ -27,7 +27,7 @@ If you have an [Admin or Member role](service-roles-new-workspaces.md) in the wo
 
 1. Go to dataset settings and open the **Endorsement and discovery** section.
 
-1. In the dialog, select the **Make discoverable** checkbox. The checkbox will be only be active if the dataset is promoted or certified. Make sure that the dataset has a useful description. This description is what users see in the datasets hub when they click the dataset's info icon, even if they don't yet have access to the dataset itself.   
+1. In the dialog, select the **Make discoverable** checkbox. The checkbox will only be active if the dataset is promoted or certified. Make sure that the dataset has a useful description. This description is what users see in the datasets hub when they click the dataset's info icon, even if they don't yet have access to the dataset itself.   
 
 ![Screenshot of the Make discoverable checkbox in the dataset endorsement and discovery settings.](media/service-discovery/dataset-make-discoverable-checkbox.png)
 
@@ -46,7 +46,7 @@ Go to  **Admin portal > Tenant settings > Discovery settings** and configure the
 * **Discover content**: When you enable this setting, users you specify will be able to find endorsed content that has been marked as discoverable, even if they don't yet have access to it. You can also specify users and/or groups to exclude from the permitted, specified groups.
 
 ## Next steps
-* [Datasets hub](../connect-data/service-datasets-hub.md)
+* [Data hub](../connect-data/service-data-hub.md)
 * [Endorsement](service-endorsement-overview.md)
 * [Build permission for shared datasets](../connect-data/service-datasets-build-permissions.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

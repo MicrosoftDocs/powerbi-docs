@@ -51,7 +51,7 @@ To install, customize, and distribute a template app, you need:
     > [!NOTE]
     > If you use an installation link for an app that isn't listed on AppSource, a validation dialog box will ask you to confirm your choice.
     >
-    >To be able to install a template app that is not listed on AppSource, you need to request the relevant permissions from your admin. See the [Template app settings](../admin/service-admin-portal.md#template-apps-settings) in Power BI admin portal for details.
+    >To be able to install a template app that is not listed on AppSource, you need to request the relevant permissions from your admin. See the [Template app settings](../admin/service-admin-portal-template-app.md) in Power BI admin portal for details.
 
     When the installation finishes successfully, a notification tells you that your new app is ready.
 
@@ -90,7 +90,7 @@ For information about editing artifacts in the workspace, see
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
+Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#create-and-publish-your-app) to learn how to do this.
 
 ## Update a template app
 

@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/17/2022
+ms.date: 09/13/2022
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## February 2022 Update (2.102.683.0)
+## September 2022 Update (2.109.642.0)
 
-We're in love with the features we're releasing this month. Some are flowery, some are chocolately, others are downright sweet in their own unique way.
+September's updates are crisp and clean, like an autumn walk down a colorful treed pathway where new discoveries are just around each corner. We're all ready to meet friendly new features, joining Power BI classmates for an exciting next round of learning.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -37,86 +37,65 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 > You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
 
 > [!IMPORTANT]
-> Power BI Desktop is no longer be supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
 The following updates are new to Power BI Desktop this month:
 
 
-
 ### Reporting
-* New mobile formatting options (preview)  [[video]](https://youtu.be/vNK4xygN8Xw?t=19)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95418996)
-* Sensitivity labels downstream inheritance (generally available) [[video]](https://youtu.be/vNK4xygN8Xw?t=357)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95418997)  [[article]](/power-bi/admin/service-security-sensitivity-label-downstream-inheritance)
-* Default label policies in Power BI (generally available)  [[video]](https://youtu.be/vNK4xygN8Xw?t=386)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95418998)  [[article]](/power-bi/admin/service-security-sensitivity-label-default-label-policy)
-*Mandatory label policy (generally available)  [[video]](https://youtu.be/vNK4xygN8Xw?t=423)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95418999)   [[article]](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
-* New Format Pane (preview) - on by default  [[video]](https://youtu.be/vNK4xygN8Xw?t=464)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419000)   [[article]](/power-bi/fundamentals/desktop-format-pane) 
-* Multi-row card selection  [[video]](https://youtu.be/vNK4xygN8Xw?t=508)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419001)
+* Hierarchical axis by default  [[video]](https://youtu.be/jlpqmNvas20?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543480) 
+* Improved display name for summarized fields  [[video]](https://youtu.be/jlpqmNvas20?t=541)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543481)  
+* Conditional formatting for data labels [[video]](https://youtu.be/jlpqmNvas20?t=595)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543482)   
+* Translations support for composite models on Power BI datasets and Analysis Services (preview) [[video]](https://youtu.be/jlpqmNvas20?t=610)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543483)   [[article]](../visuals/power-bi-visualization-scorecard-visual.md)  
+* Mobile formatting options (general availability) [[video]](https://youtu.be/jlpqmNvas20?t=680)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543485)  [[article]](../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md)  
+* Information protection update [[video]](https://youtu.be/jlpqmNvas20?t=1065)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543485)  [[article]](../enterprise/service-security-sensitivity-label-overview.md)  
 
-### Data preparation
-* Dynamic M Query Parameters now supports SQL Server and more data sources (preview) [[video]](https://youtu.be/vNK4xygN8Xw?t=533)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419003)   [[article]](/power-bi/connect-data/desktop-dynamic-m-query-parameters)
 
 ### Data connectivity
-* Amazon OpenSearch Server (new connector) [[video]](https://youtu.be/vNK4xygN8Xw?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419005)
-* OpenSearch Project (new connector) [[video]](https://youtu.be/vNK4xygN8Xw?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419006)
-* Digital Construction Works Insights (new connector) [[video]](https://youtu.be/vNK4xygN8Xw?t=869)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419007)
-* Azure Databricks (update) [[video]](https://youtu.be/vNK4xygN8Xw?t=899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419008)
-* BQE Core (update) [[video]](https://youtu.be/vNK4xygN8Xw?t=899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419009)
-* Microstrategy (update) [[video]](https://youtu.be/vNK4xygN8Xw?t=899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419010)
-* Starburst Enterprise (update) [[video]](https://youtu.be/vNK4xygN8Xw?t=899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419011)
-
-
-
-### Visuals
-* New visuals in AppSource [[video]](https://youtu.be/vNK4xygN8Xw?t=1423)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419033)
-* Many new visuals and updates [[video]](https://youtu.be/vNK4xygN8Xw?t=1464)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419032)
-
-
-### Other
-* WebView2 now required  [[video]](https://youtu.be/vNK4xygN8Xw?t=1540)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419045)  
-* Power BI Release Plan app   [[video]](https://youtu.be/vNK4xygN8Xw?t=1556)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419046)  
-
+* Dremio (connector update) [[video]](https://youtu.be/jlpqmNvas20?t=1083)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543487)
+* Profisee (new connector) [[video]](https://youtu.be/jlpqmNvas20?t=1083)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543488)
+* Starburst Enterprise (connector update) [[video]](https://youtu.be/jlpqmNvas20?t=1083)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543489)  
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
+
+### Visuals
+* New visuals in AppSource [[video]](https://youtu.be/jlpqmNvas20?t=1839)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543502)
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* Power BI Goals enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=924)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419013)   [[article]](/power-bi/create-reports/service-goals-introduction)
-* Deployment pipelines enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=947)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419017)  [[article]](/power-bi/create-reports/deployment-pipelines-overview)
-* Download .pbix improvements   [[video]](https://youtu.be/vNK4xygN8Xw?t=975)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419018)  
-
+* Cross-tenant dataset sharing  [[video]](https://youtu.be/jlpqmNvas20?t=1120)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543491)
+* Auto-generate reports on existing datasets  [[video]](https://youtu.be/jlpqmNvas20?t=1381)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543492)
+* Discoverability feature for B2B content  [[video]](https://youtu.be/jlpqmNvas20?t=1494)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543493)
 
 ---
 
 
-### Developers
-* New Power BI visuals category in AppSource [[video]](https://youtu.be/vNK4xygN8Xw?t=1344)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419029)
-* Expand entire level in Matrix [[video]](https://youtu.be/vNK4xygN8Xw?t=1381)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419030)
-* Dynamic format string support [[video]](https://youtu.be/vNK4xygN8Xw?t=1402)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419031)
+### Others
+* Paginated reports data preview [[video]](https://youtu.be/jlpqmNvas20?t=1870)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/#post-20773-_Toc113543507)  [[article]](../paginated-reports/paginated-reports-report-builder-power-bi.md)  
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/).
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-september-2022-feature-summary/).
 
 
 ### Power BI monthly update video
-The following video describes each of these updates. You can also watch this video from the blog post:
+The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+> [!VIDEO https://www.youtube.com/embed/jlpqmNvas20]
 
-
-> [!VIDEO https://www.youtube.com/embed/vNK4xygN8Xw]
-
+> [!NOTE]
+> The video might use earlier versions of Power BI Desktop or the Power BI service.
 
 ## More videos
 
 Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content:
 
--   [Power BI channel](https://www.youtube.com/user/mspowerbi): a collection of Power BI videos on YouTube.
--   [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link): a sequential learning tour of Power BI, in bite-size pieces.
+- [Power BI channel](https://www.youtube.com/user/mspowerbi): a collection of Power BI videos on YouTube.
+- [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link): a sequential learning tour of Power BI, in bite-size pieces.
 
 ## Updates for previous months
 

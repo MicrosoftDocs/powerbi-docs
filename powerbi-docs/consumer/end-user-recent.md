@@ -57,11 +57,10 @@ Watch Amanda demonstrate some feature of navigating around your content the Powe
 The actions available to you will depend on the settings assigned by the content *designer*. Some of your options may include:
 * Select the star icon to [favorite a dashboard, report, or app](end-user-favorite.md) ![star icon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Some dashboards and reports can be re-shared  ![share icon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Open the report in Excel](end-user-export.md) ![export to Excel icon](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Open the report in Excel](/power-bi/visuals/power-bi-visualization-export-data) ![export to Excel icon](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png). -->
 
 ## Next steps
 [Power BI service apps](end-user-apps.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/16/2022
+ms.date: 09/13/2022
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -86,6 +86,7 @@ The **Database** category provides the following data connections:
 * Essbase
 * Actian (Beta)
 * Amazon Athena
+* AtScale cubes
 * BI Connector
 * Data Virtuality LDW
 * Denodo
@@ -100,7 +101,6 @@ The **Database** category provides the following data connections:
 * MariaDB
 * MarkLogic
 * TIBCO(R) Data Virtualization
-* AtScale cubes
 
 
 > [!NOTE]
@@ -115,7 +115,8 @@ The following image shows the **Get Data** window for **Database**.
 The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
-* Power BI dataflows
+* Datamarts (preview)
+* Power BI dataflows (Legacy)
 * Common Data Service (Legacy)
 * Dataverse
 * Dataflows
@@ -142,11 +143,10 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Synapse Analytics workspace (Beta)
-* Azure Time Series Insights (Beta)
 * Azure Cost Management
 * Azure Databricks
-
+* Azure Synapse Analytics workspace (Beta)
+* Azure Time Series Insights (Beta)
 
 
 The following image shows the **Get Data** window for **Azure**.
@@ -159,7 +159,7 @@ The **Online Services** category provides the following data connections:
 
 * SharePoint Online List
 * Microsoft Exchange Online
-* Dynamics 365 (online)
+* Dynamics 365 Online (legacy)
 * Dynamics 365 (Dataverse)
 * Dynamics NAV
 * Dynamics 365 Business Central
@@ -182,7 +182,6 @@ The **Online Services** category provides the following data connections:
 * SparkPost (Beta)
 * SweetIQ (Beta)
 * Planview Enterprise One - CTM (Beta)
-* Twilio (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
 * Assemble Views
@@ -194,21 +193,21 @@ The **Online Services** category provides the following data connections:
 * eWay-CRM
 * FactSet Analytics
 * Palantir Foundry
+* Funnel
 * Hexagon PPM Smart API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Projectplace for Power BI
-* Product Insights (beta)
+* Product Insights (Beta)
+* Profisee (Beta)
 * Quick Base
-* SoftOne BI (beta)
+* SoftOne BI (Beta)
 * Spigit (Beta)
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
-* Workplace Analytics (Beta)
+* Viva Insights
 * Zoho Creator (Beta)
-* Digital Construction Works Insights (Beta)
-
 
 
 
@@ -233,25 +232,35 @@ The **Other** category provides the following data connections:
 * ODBC
 * OLE DB
 * Acterys : Model Automation & Planning (Beta)
-* Anaplan Connector v1.0 (Beta)
+* Amazon OpenSearch Service (Beta)
+* Anaplan Connector
+Autodesk Construction Cloud (Beta)
 * Solver
+* BitSight Security Ratings
+* BQE Core
 * Bloomberg Data and Analytics
 * Cherwell (Beta)
 * Cognite Data Fusion
 * Delta Sharing
+* Eduframe (Beta)
 * EQuIS (Beta)
+* FactSet RMS (Beta)
 * FHIR
 * Google Sheets (Beta)
 * Information Grid (Beta)
 * Jamf Pro (Beta)
 * Kognitwin
 * MicroStrategy for Power BI
+* OpenSearch Project (Beta)
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
 * SIS-CC SDMX (Beta)
 * Shortcuts Business Insights (Beta)
+* SingleStore Direct Query Connector 1.0 (Beta)
 * Siteimprove
+* Socialbakers Metrics 1.1.0 (Beta)
+* Starburst Enterprise
 * SumTotal
 * SurveyMonkey (Beta)
 * Microsoft Teams Personal Analytics (Beta)
@@ -260,11 +269,6 @@ The **Other** category provides the following data connections:
 * Vena
 * Vessel Insight
 * Zucchetti HR Infinity (Beta)
-* BQE Core
-* MicroStrategy for Power BI
-* Starburst Enterprise
-* Amazon OpenSearch Service (Beta)
-* OpenSearch Project (Beta)
 * Blank Query
 
 

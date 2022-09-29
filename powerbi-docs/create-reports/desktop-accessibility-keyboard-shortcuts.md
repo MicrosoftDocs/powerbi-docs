@@ -67,6 +67,8 @@ In our continued effort to improve accessibility, the previous list of experienc
 | :------------------- | :------------------- |
 | Move focus up / down one cell (across all cells in all areas)  | **Up arrow key** / **Down arrow key** |
 | Move focus left / right one cell (across all cells in all areas)  | **Left arrow key** / **Right arrow key** |
+| Expand matrix | **Shift + Left arrow key** |
+| Collapse matrix | **Shift + Right arrow key** |
 
 ## Pane navigation
 | To do this action           | Press                |
@@ -78,10 +80,21 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Expand all tables | **Alt + Shift + 9** |
 | Open a context menu | <ul><li>Windows keyboard: **Windows context key + F10**.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 
+## Canvas zoom
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Zoom in | **Ctrl + Plus** or **Ctrl + (mouse scroll wheel forward)** |
+| Zoom out | **Ctrl + Minus** or **Ctrl + (mouse scroll wheel backward)** |
+
 ## Slicer
 | To do this action         | Press                |
 | :------------------- | :------------------- |
-| Interact with a slicer | **Ctrl + Right arrow key** |
+| Interact with a slicer | **Enter** |
+| Move focus between menu items | **Up arrow key / Down arrow key** |
+| Move focus to first menu item	| **Home** |
+| Move focus to last menu item | **End** |
+| Select multiple contiguous items | **Shift + Up arrow key / Down arrow key** |
+| Open context menu | **Shift + F10** |
 
 ## Selection pane
 | To do this action           | Press                |
@@ -106,7 +119,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Jump to the end of a line of code | **Ctrl + End** |
 | Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
 | Insert cursor | **Alt + Click** |
-| Select current line | **Ctrl + I** |
+| Select current line | **Ctrl + L** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
 | Select all occurrences of current word | **Ctrl + F2** |
 | Select next occurrences of current selection | **Ctrl + D** |
