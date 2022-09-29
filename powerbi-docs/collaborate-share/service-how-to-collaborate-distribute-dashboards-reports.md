@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 07/29/2022
+ms.date: 09/29/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -27,12 +27,14 @@ You've created reports, dashboards, scorecards, and datasets. Maybe you want to 
 
 **Distribute or share dashboards and reports**
 
-- [*Share reports, dashboards, and scorecards*](#share-reports-or-dashboards) from your My Workspace or another workspace.
+- [Share reports, dashboards, and scorecards](#share-reports-or-dashboards) from your My Workspace or another workspace.
 - Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
-- Bundle reports, dashboards, and scorecards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
-- [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
+- Use [presentation mode to display reports and dashboards](#display-reports-and-dashboards-full-screen-on-windows-devices) in full-screen on Windows devices and Surface Hub.
+- Present live [Power BI report pages in PowerPoint](#present-live-report-pages-in-powerpoint).
 - [Print reports](#print-or-save-as-pdf-or-other-static-file).
 - [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
+- Bundle reports, dashboards, and scorecards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
+- [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
  
 **Share data**
 
@@ -138,6 +140,22 @@ With the **Embed in SharePoint Online** and the **Embed** option in the Power BI
 
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
+
+## Display reports and dashboards full-screen on Windows devices
+
+You can use *presentation mode* to display reports and dashboards full-screen on Windows devices and Surface Hub. Presentation mode is a feature of the [Power BI app for Windows](https://go.microsoft.com/fwlink/?LinkID=526478). It's useful for sharing on display monitors in hallways, at meetings or conferences, on a dedicated projector at the office, and so on.
+
+![Screenshot of a report in presentation mode.](../consumer/mobile/media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
+
+Read more about [presentation mode](../consumer/mobile/mobile-windows-10-app-presentation-mode.md).
+
+## Present live report pages in PowerPoint
+
+You can enhance your data storytelling with live, interactive Power BI data by adding Power BI report pages to PowerPoint. You can interact with them just as you would in Power BI. The live report page is interactive in both PowerPoint edit and slide-show modes. You can apply filters and slicers, select data points, and drill down on data.
+
+![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif)
+
+Read more about [storytelling with Power BI in PowerPoint](service-power-bi-powerpoint-add-in-about.md).
 
 ## Print or save as PDF or other static file
 

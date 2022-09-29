@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: faq
-ms.date: 09/25/2022
+ms.date: 09/29/2022
 ---
 
 # Transactability and License management FAQ
@@ -91,6 +91,15 @@ Go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **Licen
 :::image type="content" source="./media/licensing-faq/assign-licenses.png" alt-text="Screenshot of Admin homepage with billing licenses selected.":::
 
 Select the Visual you want to assign licenses for. In the next page, select the user(s) you want to assign the licenses to.
+
+### Once I assign a license, how long does it take until I can use it?
+
+After you are assigned a licenses in the Microsoft 365 Admin Center:
+
+* If you are using the licensed visual in the Power BI Service, refresh the report by hitting F5.
+* If you are using the licensed visual in Power BI Desktop, close and reopen.
+
+The license will be available within one hour, maximum, from the time you refresh the report.
 
 ### As an admin can I see the subscriptions that were purchased in my organization?
 
