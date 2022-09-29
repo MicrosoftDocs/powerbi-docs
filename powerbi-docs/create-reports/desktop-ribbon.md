@@ -38,7 +38,7 @@ These benefits can be grouped into the following categories:
 
     :::image type="content" source="media/desktop-ribbon/desktop-ribbon-05.png" alt-text="Screenshot showing the new themes gallery.":::
 
-* **Dynamic ribbon content based on your view** - in the existing ribbon for Power BI Desktop, icons or commands that weren't available were simply grayed out, creating a less-than-optimal experience. With the updated ribbon, icons are dynamically displayed and arranged, so that you always know which options are available to you, in context.
+* **Dynamic ribbon content based on your view** - in the old ribbon for Power BI Desktop, icons or commands that weren't available were simply grayed out, creating a less-than-optimal experience. With the updated ribbon, icons are dynamically displayed and arranged, so that you always know which options are available to you, in context.
 
 * **A single-line ribbon, when collapsed, saves you space** - another benefit of the updated ribbon is the ability to collapse the ribbon itself into a single line, dynamically displaying ribbon items based on your context.
 
