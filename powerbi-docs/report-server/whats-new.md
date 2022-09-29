@@ -67,7 +67,7 @@ Report Server 2022 has a number of new options for setting system properties on 
 
 #### Reporting
 
-See the [Reporting section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187759) of the Power BI Report Server September 2022 blog for details about all of these features.
+See the [Reporting section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187759) of the Power BI Report Server September 2022 blog for details about these features.
 
 - [New Format pane](../fundamentals/desktop-format-pane.md)
 - Table navigation improvements
@@ -85,7 +85,7 @@ See the [Modeling section](https://powerbi.microsoft.com/blog/whats-new-in-the-s
 
 #### Other
 
-See the [Other section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187769) of the Power BI Report Server September 2022 blog for details about this new DAX function.
+See the [Other section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187769) of the Power BI Report Server September 2022 blog for details about these features.
 
 - Data hub improvements – data preview and export
 - Power BI Desktop infrastructure update (WebView2)
