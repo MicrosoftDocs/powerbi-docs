@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2022
+ms.date: 09/28/2022
 ms.custom: intro-whats-new
 ---
 
@@ -27,19 +27,21 @@ This release introduces Power BI Report Server for SQL Server 2022. We continue 
 - Accessibility bug fixes
 - Support for SQL Server 2022 (16.x) preview instances report server catalog and feature updates. 
   
-### Refreshed portal
+### Report Server
+
+#### Refreshed portal
 
 We've improved the Power BI Report Server portal to provide a more inclusive modern graphical interface, making it easier to deliver meaningful reporting on your data from a web-based experience. In the portal, you can view Power BI reports, paginated reports, Excel files, and KPIs, and navigate through the elements in your report server instance. You can also use the web portal to administer a single report server instance.
 
 :::image type="content" source="media/whats-new/power-bi-report-server-web-portal.png" alt-text="Screenshot showing refreshed Power BI Report Server web portal.":::
   
-### Migration tool
+#### Migration tool
 
-In this latest release of Power BI Report Server, we're introducing the new paginated report migration tool, which connects to the web from the Power BI Report Server web portal. It's intuitive and easy to use, making it simple for you to move your paginated reports from on premises to the Power BI cloud service. Learn more about the [Power BI Report Server migration tool](report-server-migration-tool.md).
+In this latest release of Power BI Report Server, we're introducing the new paginated report migration tool, which connects to the web from the Power BI Report Server web portal. It's intuitive and easy to use, making it simple for you to publish your paginated reports from on premises to the Power BI cloud service. Learn more about the [Power BI Report Server migration tool](report-server-migration-tool.md).
 
 :::image type="content" source="media/whats-new/report-server-publish-migrate.png" alt-text="Screenshot showing Power BI Report Server Migration option.":::
 
-### New report server properties
+#### New report server properties
 
 Report Server 2022 has a number of new options for setting system properties on the report server. The article [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services) explains how to set them in SQL Server Management Studio. Each of the links in this section takes you to that option in the article.
 
@@ -60,6 +62,34 @@ Report Server 2022 has a number of new options for setting system properties on 
 - List view by default option in catalog:
 
   - [**TileViewByDefault**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#tileviewbydefault): default True *value* - defines if Tiles or List view is selected for all users by default. 
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the [Reporting section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187759) of the Power BI Report Server September 2022 blog for details about all of these features.
+
+- [New Format pane](../fundamentals/desktop-format-pane.md)
+- Table navigation improvements
+- Error bars
+- Bold/Italics/Underline for text inside the header tooltip
+- Conditional formatting for data labels
+- Hierarchical axis by default
+- Improved display name for summarized fields
+
+#### Modeling
+
+See the [Modeling section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187767) of the Power BI Report Server September 2022 blog for details about this new DAX function.
+
+- New DAX function: NETWORKDAYS
+
+#### Other
+
+See the [Other section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187769) of the Power BI Report Server September 2022 blog for details about this new DAX function.
+
+- Data hub improvements – data preview and export
+- Power BI Desktop infrastructure update (WebView2)
+- Licensing API
 
 ## May 2022
 
