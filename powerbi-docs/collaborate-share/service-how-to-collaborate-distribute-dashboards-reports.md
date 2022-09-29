@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/28/2022
+ms.date: 09/29/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -151,11 +151,11 @@ Read more about [presentation mode](../consumer/mobile/mobile-windows-10-app-pre
 
 ## Present live report pages in PowerPoint
 
-You can add Power BI report pages to PowerPoint, and interact with them live, just as you would in Power BI. The live report page is interactive in both edit and slide-show modes. You can apply filters and slicers, select data points, and drill down on data.
+You can enhance your data storytelling with live, interactive Power BI data by adding Power BI report pages to PowerPoint. You can interact with them just as you would in Power BI. The live report page is interactive in both PowerPoint edit and slide-show modes. You can apply filters and slicers, select data points, and drill down on data.
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif)
 
-Read more about [presenting live Power BI report pages in PowerPoint](service-power-bi-powerpoint-add-in-view-present.md).
+Read more about [storytelling with Power BI in PowerPoint](service-power-bi-powerpoint-add-in-about.md).
 
 ## Print or save as PDF or other static file
 
