@@ -56,7 +56,7 @@ The *embed for your customers* solution uses a non-interactive authentication fl
 * **Master user**
     Your web app uses a user account to authenticate against Azure AD and get the *Azure AD token*. The *master user* needs to have a [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or a [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license.
 
-    When using a *master user* you need to define your app's [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* is has to grant consent for using these permissions using the Power BI REST APIs.
+    When using a *master user*, you need to define your app's [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). The *master user* or *tenant admin* has to give consent to use these permissions when using the Power BI REST APIs.
 
 After successful authentication against Azure AD, your web app will generate an [embed token](/rest/api/power-bi/embedtoken) to allow its users to access specific Power BI content.
 
