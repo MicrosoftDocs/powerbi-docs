@@ -7,7 +7,7 @@ ms.reviewer: 'cookiemccray'
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/28/2022
+ms.date: 09/29/2022
 ms.custom: 
 ---
 
@@ -129,7 +129,7 @@ Some paginated report features in Power BI Report Server aren't yet supported in
 - Drillthrough and click-through to other reports
 - Custom fonts
 
-You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle and sort.
+You get an error message if you try to upload a file that has an unsupported feature in the Power BI service.
 
 ## Next steps
 
