@@ -99,7 +99,7 @@ After you are assigned a licenses in the Microsoft 365 Admin Center:
 * If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
 * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
 
-The license will be available within one hour, maximum, from the time you refresh the report.
+The license will be available within one hour, maximum, from the time you assign it. After the license is available, you need to refresh the report (by hitting F5 or reopening it) before you can use it.
 
 ### As an admin can I see the subscriptions that were purchased in my organization?
 
