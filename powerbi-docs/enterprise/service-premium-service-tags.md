@@ -92,7 +92,6 @@ Login-AzAccount
 #get your subscription ID
 Get-AzSubscription
 
-
 ####
 #Script to create Network Security Group Rule
 ###
