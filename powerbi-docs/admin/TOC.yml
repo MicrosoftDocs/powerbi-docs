@@ -31,7 +31,9 @@
     - name: Power BI support options
       href: service-support-options.md
     - name: Find where data is stored
-      href: service-admin-where-is-my-tenant-located.md 
+      href: service-admin-where-is-my-tenant-located.md
+    - name: Data storage for cross-service capabilities
+      href: service-admin-m365-data-access-storage.md      
     - name: Move between regions
       href: service-admin-region-move.md           
     - name: Track service health
