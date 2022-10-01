@@ -1,5 +1,5 @@
 ---
-title:  Where data is located when Power BI data is shared data with your Microsoft 365 services
+title:  Where data is located when Power BI data is shared with your Microsoft 365 services
 description: Find the data region for Power BI content shared with Microsoft 365 and learn how that location is selected.
 author: ajburnle
 ms.author: ajburnle
@@ -10,7 +10,7 @@ ms.topic: troubleshooting
 ms.date: 10/10/2022
 ---
 
-# Where data is located when Power BI data is shared data with your Microsoft 365 services
+# Where data is located when Power BI data is shared with your Microsoft 365 services
 
 The Power BI adminstrator can use the **Allow your Microsoft 365 services to process or store Power BI data which may be outside of your Power BI tenant's geographic area** switch to share Power BI content on the Office.com home page. Power BI and Microsoft 365 are two separate services, so this switch is a cross-service capability. Use of this cross-service capability may cause Power BI data may flow outside of the geographic region the tenant is located in. This is because your Power BI service and Microsoft 365 service may have different data requirements and locations. So data shared with Microsoft 365 may be processed or stored in a different region if your Power BI tenant is located in a different region from your Microsoft 365 service. It is important to know where the data is stored because it 
 
