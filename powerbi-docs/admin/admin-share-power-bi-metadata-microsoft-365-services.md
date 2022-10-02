@@ -18,13 +18,13 @@ LocalizationGroup: Admin
 
 This article is aimed at Power BI administrators and decision makers who need to know how and where Power BI metadata is being used.
 
-Power BI metatdata sharing with Microsoft 365 services is a feature that allows metadata from Power BI to be shared with Microsoft 365 services (typically via [Microsoft Graph](/graph/overview) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users. The feature is disabled by default.
+Power BI metadata sharing with Microsoft 365 services is a feature that allows metadata from Power BI to be shared with Microsoft 365 services (typically via [Microsoft Graph](/graph/overview) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users. The feature is disabled by default.
 
 When shared with Microsoft 365 services, Power BI content will be listed in the Most Recently Viewed list on the Office.com home page. The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
 
-* The display name of the content.
-* When the content was last accessed.
-* The type of content that was accessed (report, dashboard etc.).
+* The display name of the content
+* When the content was last accessed
+* The type of content that was accessed (report, dashboard etc.)
 
 See [the complete list of Power BI metadata that is shared with Microsoft 365 services](#data-that-will-be-shared-with-microsoft-365).
 
@@ -34,7 +34,7 @@ To enable sharing Power BI metadata with Microsoft 365 services, a Power BI admi
 
 ## Data residency
 
-If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it is stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it is stored in.
+If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in.
 
 References:
 * [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
