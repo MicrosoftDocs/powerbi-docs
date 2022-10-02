@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 08/23/2022
+ms.date: 09/28/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -89,7 +89,7 @@ The navigation at the top left to quickly navigate between reports and dashboard
 
 ### Capacity
 
-[Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
+A capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content.
 
 ### Card (visual type)
 

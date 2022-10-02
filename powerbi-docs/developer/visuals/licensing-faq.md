@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: faq
-ms.date: 09/19/2022
+ms.date: 09/29/2022
 ---
 
 # Transactability and License management FAQ
@@ -19,6 +19,14 @@ This article answers some of the questions users often have about how to set up,
 ### Who can purchase a visual license?
 
 *Anyone* can purchase a license, and assign the license to themselves or others.
+
+### How can I pay for the visuals?
+
+Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
+
+If you're a billing or global admin of the tenant, you also have the option of paying through Invoicing.
+
+:::image type="content" source="./media/licensing-faq/payment.png" alt-text="Screenshot of billing profile with Invoice selected.":::
 
 ### Do we need to have Power BI Premium to purchase Licenses?
 
@@ -59,14 +67,6 @@ You're eligible for a full refund if you cancel your subscription within seven d
 
 ## License assignment
 
-### How can I pay for the visuals?
-
-Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
-
-If you're a billing or global admin of the tenant, you also have the option of paying through Invoicing.
-
-:::image type="content" source="./media/licensing-faq/payment.png" alt-text="Screenshot of billing profile with Invoice selected.":::
-
 ### What happens if the subscription owner leaves the company?
 
 Even if the owner of the subscription leaves the company, tenant admin purchases (typically known as Org purchases) will continue to work as-is. Any license admin (Global Admin, License Admin, User Admin) can manage the licenses. The subscriptions can be managed by any Billing Admin or Global Admin with access to the billing account used for purchase.
@@ -91,6 +91,15 @@ Go to [admin.microsoft.com](https://admin.microsoft.com/) and select the **Licen
 :::image type="content" source="./media/licensing-faq/assign-licenses.png" alt-text="Screenshot of Admin homepage with billing licenses selected.":::
 
 Select the Visual you want to assign licenses for. In the next page, select the user(s) you want to assign the licenses to.
+
+### Once I assign a license, how long does it take until I can use it?
+
+After you are assigned a licenses in the Microsoft 365 Admin Center:
+
+* If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
+* If you're using the licensed visual in the Power BI Desktop, close and reopen it.
+
+The license will be available within one hour, maximum, from the time you assign it. After the license is available, you need to refresh the report (by hitting F5 or reopening it) before you can use it.
 
 ### As an admin can I see the subscriptions that were purchased in my organization?
 

@@ -12,7 +12,7 @@ ms.date: 08/21/2022
 
 # Embed a report with an Azure Analysis Services (AAS) database
 
-This article explains how to embed a Power BI report that uses data stored in [Azure Analysis Services (ASS)](/azure/analysis-services/analysis-services-overview), in an [embed for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) scenario. This article is aimed at independent software developers (ISVs), who want to embed a report with AAS data whether or not the database implements [row-level security (RLS)](embedded-row-level-security.md).
+This article explains how to embed a Power BI report that uses data stored in [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview), in an [embed for your customers](embedded-analytics-power-bi.md#embed-for-your-customers) scenario. This article is aimed at independent software developers (ISVs), who want to embed a report with AAS data whether or not the database implements [row-level security (RLS)](embedded-row-level-security.md).
 
 ## Prerequisites
 
