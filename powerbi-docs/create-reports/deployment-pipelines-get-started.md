@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 07/27/2022
+ms.date: 10/02/2022
 ---
 
 # Get started with deployment pipelines
@@ -100,7 +100,7 @@ Deployment pipelines offers three options when it comes to deploying your Power 
 
 * [Backwards deployment](#backwards-deployment) - Deploy your content to a previous stage in the pipeline.
 
-After you choose how deploy your Power BI content, you can [Review your deployment and leave a note](#review-your-deployment-and-leave-a-note).
+After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](#review-your-deployment-and-leave-a-note).
 
 #### Deploying all content
 
