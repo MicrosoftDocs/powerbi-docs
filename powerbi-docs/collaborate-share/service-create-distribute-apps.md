@@ -235,7 +235,8 @@ Things to keep in mind about publishing apps:
 * The support site URL is shown in the item information card.
 * By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
 * As of now we have disabled “Save a copy” feature for the preview of the multiple audience feature. We are working on providing a better offering. 
-* Currently, Workspace Contributors can add/delete a content in the app, but they cannot change the visibility of the content. As a Workaround, Workspace Admins/members can update the visibility of the content added. This is a temporary limitation, and we will soon allow contributors to change the visibility of the content in the Audience tab. 
+* Currently, Workspace Contributors can add/delete a content in the app, and can change the visibility of the content in the default audience. But they cannot yet switch between different audience groups in the Audience tab. As a Workaround, Workspace Admins/members can update the visibility of the content added in other audience groups. This is a temporary limitation, and we will soon allow contributors to switch between differnt audience groups in the Audience tab.
+* Currently, multiple audiences is not supported in Power BI Mobile UX and deployment pipelines. We are working on supporting these.
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps
