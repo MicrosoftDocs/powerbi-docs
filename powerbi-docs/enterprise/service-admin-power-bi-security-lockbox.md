@@ -11,25 +11,19 @@ ms.date: 09/29/2022
 LocalizationGroup: Administration
 ---
 
-# Power BI Lockbox
+# Lockbox with Power BI
 
-Lockbox is a service that provides customers with the capability to control how Microsoft engineers access their data. Operations such as support and troubleshooting, performed by Microsoft personnel, do not require access to customer data. However, in rare circumstances where such access is required, Customer Lockbox for Power BI provides an interface for customers to review and approve or reject customer data access requests. Use lockbox when you need a Microsoft engineer to access customer data, whether in response to a customer initiated support ticket or a problem identified by Microsoft.
+Use [Customer Lockbox for Microsoft Azure](/azure/security/fundamentals/customer-lockbox-overview) to control how Microsoft engineers access your data. In this article you'll learn how to enable lockbox, and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
-This article covers how to enable Customer Lockbox and how Lockbox requests are initiated, tracked, and stored for later reviews and audits.
+* Lockbox for Power BI is available for all Power BI tenants with no additional cost. Support is included for Power BI Premium and Pro customers.
 
-Important 
+* To progress a support case, a Microsoft engineer may initiate a lockbox request.
+  
+## Enable lockbox
 
-Customer Lockbox for Power BI is available for all Power BI tenants with no additional cost. support is included for power BI pro customers. 
+To enable lockbox you need to be a Power BI tenant admin. 
 
-Customer Lockbox requests are initiated by a Microsoft engineer if this action is needed to progress a support case. 
-
-Customer Lockbox for Power BI is in General Available today.  
-
- 
-
-Enable Customer Lockbox 
-
-Power BI tenant admin can login to Azure portal using Azure AD account and enable Customer Lockbox from the Administration module in the Customer Lockbox blade. 
+ can login to Azure portal using Azure AD account and enable Customer Lockbox from the Administration module in the Customer Lockbox blade. 
 
 Please note no Azure subscription is required here. If customers do have Azure subscription, the Customer Lockbox configuration will apply to both Power BI and Azure resources supported by Customer Lockbox.  
 
