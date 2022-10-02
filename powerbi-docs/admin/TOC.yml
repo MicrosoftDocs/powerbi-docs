@@ -31,7 +31,7 @@
     - name: Power BI support options
       href: service-support-options.md
     - name: Share metadata with Microsoft 365 services
-      href: share-power-bi-metadata-microsoft-365-services.md 
+      href: admin-share-power-bi-metadata-microsoft-365-services.md 
     - name: Move between regions
       href: service-admin-region-move.md           
     - name: Find where data is stored
