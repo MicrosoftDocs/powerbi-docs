@@ -30,6 +30,10 @@
       href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
     - name: Power BI support options
       href: service-support-options.md
+    - name: Share metadata with Microsoft 365 services
+      href: share-power-bi-metadata-microsoft-365-services.md 
+    - name: Move between regions
+      href: service-admin-region-move.md           
     - name: Find where data is stored
       href: service-admin-where-is-my-tenant-located.md 
     - name: Move between regions
@@ -127,5 +131,3 @@
       href: service-admin-portal-template-app.md
     - name: User experience experiments settings
       href: service-admin-portal-user-experience-experiments.md
-    - name: Power BI and Microsoft Graph data sharing
-      href: admin-microsoft-graph-metadata.md
