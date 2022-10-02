@@ -30,7 +30,7 @@ See [the complete list of Power BI metadata that is shared with Microsoft 365 se
 
 ## How to turn on sharing with Microsoft 365 services
 
-To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** tenant setting. Before turning on the experience, the administrator should review the list of [data that will be shared with Microsoft 365]().
+To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** tenant setting. Before turning on the experience, the administrator should review the list of [data that will be shared with Microsoft 365](#).
 
 To turn on the feature, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**. Because of data residency considerations (see XXX) for details), it is disabled by default.
 
