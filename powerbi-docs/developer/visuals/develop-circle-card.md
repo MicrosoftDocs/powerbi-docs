@@ -234,19 +234,41 @@ Verify that the code in the *visuals.ts* file looks like this:
 */
 "use strict";
 
+import "core-js/stable";
 import "./../style/visual.less";
 import powerbi from "powerbi-visuals-api";
-import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
 import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
 import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
-import IVisual = powerbi.extensibility.IVisual;
+import IVisual = powerbi.extensibility.visual.IVisual;
 import DataView = powerbi.DataView;
+import IVisualHost = powerbi.extensibility.IVisualHost;
+import * as d3 from "d3";
+type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
 
-import { VisualSettings } from "./settings";
 export class Visual implements IVisual {
-    private target: HTMLElement;
-    private updateCount: number;
-    priv        let width: number = options.viewport.width;
+    private host: IVisualHost;
+    private svg: Selection<SVGElement>;
+    private container: Selection<SVGElement>;
+    private circle: Selection<SVGElement>;
+    private textValue: Selection<SVGElement>;
+    private textLabel: Selection<SVGElement>;
+    
+    constructor(options: VisualConstructorOptions) {
+        this.svg = d3.select(options.element)
+            .append('svg')
+            .classed('circleCard', true);
+        this.container = this.svg.append("g")
+            .classed('container', true);
+        this.circle = this.container.append("circle")
+            .classed('circle', true);
+        this.textValue = this.container.append("text")
+            .classed("textValue", true);
+        this.textLabel = this.container.append("text")
+            .classed("textLabel", true);
+    }
+    
+    public update(options: VisualUpdateOptions) {
+        let width: number = options.viewport.width;
         let height: number = options.viewport.height;
         this.svg.attr("width", width);
         this.svg.attr("height", height);
@@ -274,45 +296,7 @@ export class Visual implements IVisual {
             .attr("y", height / 2)
             .attr("dy", fontSizeValue / 1.2)
             .attr("text-anchor", "middle")
-            .style("font-size", fontSizeLabel + "px");ate textNode: Text;
-
-    private settings: VisualSettings;
-    private formattingSettingsService: FormattingSettingsService;
-
-    constructor(options: VisualConstructorOptions) {
-        this.settings = new VisualSettings()
-        this.formattingSettingsService = new FormattingSettingsService();
-
-        console.log('Visual constructor', options);
-        this.target = options.element;
-        this.updateCount = 0;
-        if (document) {
-            const new_p: HTMLElement = document.createElement("p");
-            new_p.appendChild(document.createTextNode("Update count:"));
-            const new_em: HTMLElement = document.createElement("em");
-            this.textNode = document.createTextNode(this.updateCount.toString());
-            new_em.appendChild(this.textNode);
-            new_p.appendChild(new_em);
-            this.target.appendChild(new_p);
-        }
-    }
-
-    public update(options: VisualUpdateOptions) {
-        
-        this.settings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
-        console.log('Visual update', options);
-        if (this.textNode) {
-            this.textNode.textContent = (this.updateCount++).toString();
-        }
-    }
-
-    /**
-     * This function gets called on every formatting pane render. It allows you to select which of the
-     * objects and properties you want to expose to the users in the property pane.
-     *
-     */
-    public getFormattingModel(): powerbi.visuals.FormattingModel {
-        return this.formattingSettingsService.buildFormattingModel(this.settings);
+            .style("font-size", fontSizeLabel + "px");
     }
 }
 ```
