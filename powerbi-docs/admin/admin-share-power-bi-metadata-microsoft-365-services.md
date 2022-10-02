@@ -1,13 +1,13 @@
 ---
 title: "Metadata passed From Microsoft Power BI to Microsoft Graph"
 description: When the Microsoft Graph experience for Power BI is turned on, what data is shared with Microsoft 365?
-author: mihart
-ms.author: mihart
+author: paulinbar
+ms.author: painbar
 ms.reviewer: 'jadelynray'
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/18/2022
+ms.date: 10/02/2022
 Customer intent: As a Power BI admin, I need to know what information is passed from Power BI and Microsoft Graph to Microsoft 365.
 LocalizationGroup: Admin
 ---
@@ -16,7 +16,9 @@ LocalizationGroup: Admin
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metadata from Power BI can be shared with Microsoft 365 services (typically via Microsoft Graph) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users.
+This article is aimed at Power BI administrators and decision makers who need to know how and where Power BI metadata is being used.
+
+Power BI metatdata sharing with Microsoft 365 services is a feature that allows metadata from Power BI to be shared with Microsoft 365 services (typically via [Microsoft Graph](/graph/overview) and combined with data from across Microsoft 365, Windows, and Enterprise Mobility + Security (EMS) to build apps for organizations and consumers that interact with millions of users. The feature is disabled by default.
 
 When shared with Microsoft 365 services, Power BI content will be listed in the Most Recently Viewed list on the Office.com home page. The Power BI content affected includes reports, dashboards, apps, workbooks, paginated reports, and workspaces. The information required by the Most Recently Viewed functionality includes:
 
@@ -28,9 +30,9 @@ See [the complete list of Power BI metadata that is shared with Microsoft 365 se
 
 ## How to turn on sharing with Microsoft 365 services
 
-To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **Share data with your Microsoft 365 services** tenant setting. See XXX for detail. Before turning on the experience, the administrator should review the list of data that will be shared with Microsoft 365.
+To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** tenant setting. Before turning on the experience, the administrator should review the list of [data that will be shared with Microsoft 365]().
 
-To enable the switch, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**. Because of data residency considerations (see XXX) for details), it is disabled by default.
+To turn on the feature, go to **Admin portal > Tenant settings > Share data with your Microsoft 365 services.** Expand the switch and set the toggle switch to **Enabled**. Because of data residency considerations (see XXX) for details), it is disabled by default.
 
 :::image type="content" source="media/service-admin-portal-share-data-microsoft-365-services/allow-m365-process-store-data-remotely-admin-portal-switch-new.png" alt-text="Screenshot of admin switch allowing Microsoft 365 services to process and store Power BI content remotely.":::
 
