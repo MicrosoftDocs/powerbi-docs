@@ -47,7 +47,7 @@ The deployment history log is formatted as a table. Each row represents a single
 
     :::image type="content" source="media/deployment-pipelies-history/expanded-note.png" alt-text="A screenshot of the deployment pipelines history note icon selected, with the expanded note displayed.":::
 
-* **ID** - The deployment ID. Use as a reference when troubleshooting a deployment.
+* **ID** - The deployment ID. Use as a reference when troubleshooting your latest deployment if it fails.
 
 * **Status** - The status of the deployment.
 
