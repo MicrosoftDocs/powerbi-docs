@@ -12,9 +12,7 @@ ms.date: 05/05/2022
 
 # Tutorial: Build a bar chart
 
-[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
-
-This tutorial shows you how to develop a Power BI visual that displays data in the form of a simple bar chart. This visual supports a minimum amount of customization. Adding a [context menu](context-menu.md), [tool-tips](add-tooltips.md), and other customizations are explained on other pages of this documentation.
+This tutorial shows you how to develop a Power BI visual that displays data in the form of a simple bar chart. This visual supports a minimal amount of customization. Other pages of this documentation explain how add further customization like [context menus](context-menu.md), [tool-tips](add-tooltips.md), and more.
 
 In this tutorial, you learn how to:
 
@@ -72,7 +70,7 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
 4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *project.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
 
-## [Clone source code](#tab/CloneSourcecode) 
+## [Clone source code](#tab/CloneSourcecode)
 
 ```typescript
 git clone
@@ -82,9 +80,9 @@ git clone
 
 You should now have a new folder for your visual with the following files and folders:
 
-![Structure of visuals.](./media/create-bar-chart/visual-structure.png)
+:::image type="content" source="./media/create-bar-chart/visual-structure.png" alt-text="Screenshot showing the structure of visuals.":::
 
-For a detailed explanation of the function of each of these files see [Power BI visual project structure](visual-project-structure.md).
+For a detailed explanation of the function of each of these files, see [Power BI visual project structure](visual-project-structure.md).
 
 The two files we'll focus on in this tutorial are the *capabilities.json* file, which describes the visual to the host, and the *src/barchart.ts* file, which contains the visual's API.
 
@@ -92,11 +90,11 @@ The two files we'll focus on in this tutorial are the *capabilities.json* file, 
 
 The [*capabilities.json*](capabilities.md) file is where we bind data to the host. We describe the kind of data fields it accepts and what features the visual should have.
 
-![Data binding in a Field bucket.](./media/create-bar-chart/data-binding.png)
+:::image type="content" source="./media/create-bar-chart/data-binding.png" alt-text="Screenshot showing how to bind data in the field bucket":::
 
 ### Define data roles
 
-Variables are defined and bound in the [`dataRoles`](capabilities.md) section of the capabilities file. We want our bar chart to accept two types of variables:
+Variables are defined and bound in the [`dataRoles`](./capabilities.md#dataroles-define-the-data-fields-that-your-visual-expects) section of the capabilities file. We want our bar chart to accept two types of variables:
 
 * **Categorical** data that will be represented by the different bars on the chart
 * **Numerical**, or measured data, which is represented by the height of each bar
@@ -122,7 +120,7 @@ In **Visual Studio Code**, in the *capabilities.json* file, confirm that the fol
 
  Next, add [data mapping](dataview-mappings.md) to tell the host what to do with these variables:
 
-Replace the content of the "dataViewMappings" object with the following:
+Replace the content of the "dataViewMappings" object with the following code:
 
 ```json
 "dataViewMappings": [
@@ -157,10 +155,9 @@ Replace the content of the "dataViewMappings" object with the following:
     ],
 ```
 
-The above code creates "conditions" that each data-role object can hold only one field at a time. Notice that we use the data-role's internal `name` to refer to each field.
+The above code creates the "conditions" that each data-role object can hold only one field at a time. Notice that we use the data-role's internal `name` to refer to each field.
 
-It also sets the [categorical data mapping](dataview-mappings.md#categorical-data-mapping)
-so that each field is mapped to the correct variable.
+It also sets the [categorical data mapping](dataview-mappings.md#categorical-data-mapping) so that each field is mapped to the correct variable.
 
 ### Define objects for the properties pane
 
@@ -170,7 +167,7 @@ For more information on objects and how they work, see [Objects](objects-propert
 
 The following objects are optional. Add them if you want to go through the optional sections of this tutorial to add colors and render the X-axis.
 
-Replace the content of the "objects" section with the following:
+Replace the content of the "objects" section with the following code:
 
 ```json
      "objects": {
@@ -471,11 +468,11 @@ To calculate the scale, we use the `scaleLinear` and `scaleBand` methods that we
 
 The `viewModel.datamax` value holds the largest value of all current data points. This value is used to determine the height of the y axis. The scaling for the width of the x axis is determined by the number of categories bound to the visual in the `barchartdatapoint` interface.
 
-For cases where the X axis is rendered, this visual also handles word breaks in case there is not enough room to write out the entire name on the X axis.
+For cases where the X axis is rendered, this visual also handles word breaks in case there isn't enough room to write out the entire name on the X axis.
 
 #### Other update features
 
-In addition to scaling, this update method also handles selections and colors. These features are optional and will be discussed later:
+In addition to scaling, the update method also handles selections and colors. These features are optional and will be discussed later:
 
 ```typescript
    /**
@@ -573,10 +570,10 @@ In addition to scaling, this update method also handles selections and colors. T
 
 ### Populate the properties pane
 
-The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getFormattingModel-optional). This method builds and return modern format pane formatting model object that contain all format pane components and properties, Then places it inside the [**Format** pane](format-pane.md).
-In our case there will be format cards for `enableAxis` and `colorSelector` including formatting properties for `show` and `fill` according to *"objects"* in the *capabilities.json* file.
+The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and returns a modern *format pane formatting model* object containing all the format pane components and properties. It then places the object inside the [**Format** pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals).
+In our case, there will be format cards for `enableAxis` and `colorSelector` including formatting properties for `show` and `fill` according to *"objects"* in the *capabilities.json* file.
 
-To build formatting model developer should know all of its components, Check format pane components in [Format Pane](format-pane.md).
+To build formatting model developer should know all of its components, Check format pane components in [Format Pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals).
 
 To add a color picker for each category on the **Property** pane, add a for loop on `barDataPoints` and for each one add a new color picker format property to the formatting model.
 
@@ -683,7 +680,7 @@ You can add objects to the **Property** pane to further customize the visual. Th
 
 You can toggle these objects on or off in the **Property** pane.
 
-![Objects in the Property pane.](./media/create-bar-chart/property-pane.png)
+:::image type="content" source="./media/create-bar-chart/property-pane.png" alt-text="Screenshot of objects in the Property pane.":::
 
 This example renders an X-axis on the bar chart as a static object.
 
@@ -717,11 +714,11 @@ function getAxisTextFillColor(
 
 Data-bound objects are similar to static objects, but typically deal with data selection. For example, you can use data-bound objects to interactively select the color associated with each data point.
 
-![Screenshot of color selection on properties.](./media/create-bar-chart/object-databound-property.png)
+:::image type="content" source="./media/create-bar-chart/object-databound-property.png" alt-text="Screenshot of color selection on properties.":::
 
 We already defined the `colorSelector` object in the *capabilities* file.
 
-Each data point is represented by a different color. We include color in the [BarChartDataPoint interface](#interfaces), and assign a default color to each data point when it is defined in [`IVisualHost`](#visual-transform).
+Each data point is represented by a different color. We include color in the [BarChartDataPoint interface](#interfaces), and assign a default color to each data point when it's defined in [`IVisualHost`](#visual-transform).
 
 ```typescript
 function getColumnColorByIndex(
@@ -787,7 +784,7 @@ export function getValue<T>(objects: DataViewObjects, objectName: string, proper
     if(objects) {
         let object = objects[objectName];
         if(object) {
-            let property: T = object[propertyName];
+            let property: <T>T = object[propertyName];
             if(property !== undefined) {
                 return property;
             }
@@ -845,16 +842,16 @@ Run the visual in the **Power BI** server to see how it looks:
     >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C*, and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
 2. [View the visual in Power BI service](develop-circle-card.md#view-the-visual-in-power-bi-service) by selecting the **Developer visual** from the **Visualization pane**.
 
-   ![Screenshot of developer visual.](./media/create-bar-chart/developer-visual.png)
+   :::image type="content" source="./media/create-bar-chart/developer-visual.png" alt-text="Screenshot of developer visual.":::
 
 3. Add data to the visual
 
-   ![Screenshot of data bound to field bucket.](./media/create-bar-chart/adding-data.png)
+   :::image type="content" source="./media/create-bar-chart/adding-data.png" alt-text="Screenshot of data bound to field bucket.":::
 
 4. Drag the edges of the visual to change the size and notice how the scale adjusts.
 5. Toggle the X-axis on and off.
 
-   ![Screenshot of X-Axis on property pane.](./media/create-bar-chart/object-show-property.png)
+   :::image type="content" source="./media/create-bar-chart/object-show-property.png" alt-text="Screenshot of X-Axis on property pane.":::
 
 6. Change the colors of the different categories.
 
@@ -880,14 +877,6 @@ Follow the instructions in [Package a Power BI visual](package-visual.md) to pre
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Add a context menu to a visual](context-menu.md)
-
-> [!div class="nextstepaction"]
-> [Add a landing page to a visual](landing-page.md)
-
-> [!div class="nextstepaction"]
-> [Launch URL](launch-url.md)
-
-> [!div class="nextstepaction"]
-> [Locale support](localization.md)
+* [Add a context menu to a visual](context-menu.md)
+* [Add a landing page to a visual](landing-page.md)
+* [Locale support](localization.md)
