@@ -94,7 +94,7 @@ The [*capabilities.json*](capabilities.md) file is where we bind data to the hos
 
 ### Define data roles
 
-Variables are defined and bound in the [`dataRoles`](./capabilities.md#dataroles-define-the-data-fields-that-your-visual-expects) section of the capabilities file. We want our bar chart to accept two types of variables:
+Variables are defined and bound in the [`dataRoles`](capabilities.md#dataroles-define-the-data-fields-that-your-visual-expects) section of the capabilities file. We want our bar chart to accept two types of variables:
 
 * **Categorical** data that will be represented by the different bars on the chart
 * **Numerical**, or measured data, which is represented by the height of each bar
@@ -573,7 +573,7 @@ In addition to scaling, the update method also handles selections and colors. Th
 The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and returns a modern *format pane formatting model* object containing all the format pane components and properties. It then places the object inside the [**Format** pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals).
 In our case, there will be format cards for `enableAxis` and `colorSelector` including formatting properties for `show` and `fill` according to *"objects"* in the *capabilities.json* file.
 
-To build formatting model developer should know all of its components, Check format pane components in [Format Pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals).
+To build a formatting model, the developer should be familiar with all its components, Check out the components of the format pane in [Format Pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals).
 
 To add a color picker for each category on the **Property** pane, add a for loop on `barDataPoints` and for each one add a new color picker format property to the formatting model.
 
@@ -671,6 +671,127 @@ To add a color picker for each category on the **Property** pane, add a for loop
             ]
         }
         return { cards: [enableAxisCard, colorSelectorCard] };
+    }
+```
+
+## (Optional) Populate the properties pane using the formatting model Utils
+
+Populate the properties pane using the `getFormattingModel` API in the [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
+
+For the full code of a sample bar chart with formatting model utils see [the bar chart repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial-FormattingModelUtils).
+
+Declare formatting properties and their values in a formatting settings class:
+
+```typescript
+import powerbi from "powerbi-visuals-api";
+import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
+import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
+import { BarChartDataPoint } from "./barChart";
+import FormattingSettingsCard = formattingSettings.Card;
+import FormattingSettingsSlice = formattingSettings.Slice;
+import FormattingSettingsModel = formattingSettings.Model;
+/**
+ * Enable Axis Formatting Card
+ */
+class EnableAxisCardSettings extends FormattingSettingsCard {
+    // Formatting property `show` toggle switch (formatting simple slice)
+    show = new formattingSettings.ToggleSwitch({
+        name: "show",
+        displayName: undefined,
+        value: false,
+        topLevelToggle: true
+    });
+    // Formatting property `fill` color picker (formatting simple slice)
+    fill = new formattingSettings.ColorPicker({
+        name: "fill",
+        displayName: "Color",
+        value: { value: "#000000" }
+    });
+    name: string = "enableAxis";
+    displayName: string = "Enable Axis";
+    slices: Array<FormattingSettingsSlice> = [this.show, this.fill];
+}
+/**
+ * Color Selector Formatting Card
+ */
+class ColorSelectorCardSettings extends FormattingSettingsCard {
+    name: string = "colorSelector";
+    displayName: string = "Data Colors";
+    // slices will be populated in barChart settings model `populateColorSelector` method
+    slices: Array<FormattingSettingsSlice> = [];
+}
+/**
+* BarChart settings model class
+*
+*/
+export class BarChartSettingsModel extends FormattingSettingsModel {
+    // Create formatting settings model formatting cards
+    enableAxis = new EnableAxisCardSettings();
+    colorSelector = new ColorSelectorCardSettings();
+    cards = [this.enableAxis, this.colorSelector];
+    /**
+     * populate colorSelector object categories formatting properties
+     * @param dataPoints 
+     */
+    populateColorSelector(dataPoints: BarChartDataPoint[]) {
+        let slices = this.colorSelector.slices;
+        if (dataPoints) {
+            dataPoints.forEach(dataPoint => {
+                slices.push(new formattingSettings.ColorPicker({
+                    name: "fill",
+                    displayName: dataPoint.category,
+                    value: { value: dataPoint.color },
+                    selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
+                    altConstantSelector: dataPoint.selectionId.getSelector(),
+                    instanceKind: powerbi.VisualEnumerationInstanceKinds.ConstantOrRule
+                }));
+            });
+        }
+    }
+}
+```
+
+Build and create the *formatting settings service* model in the visual's *constructor* method. The *formatting settings service* receives the barChart format settings  and converts them into a FormattingModel object that's returned in the `getFormattingModel` API.
+
+To use the localization feature, add the localization manager to the formatting settings service.
+
+```typescript
+    import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+    
+    // ...
+    // declare utils formatting settings service
+    private formattingSettingsService: FormattingSettingsService;
+    //...
+    constructor(options: VisualConstructorOptions) {
+        this.host = options.host;
+        const localizationManager = this.host.createLocalizationManager();
+        this.formattingSettingsService = new FormattingSettingsService(localizationManager);
+        
+        // Add here rest of your custom visual constructor code
+    }
+```
+
+Update the formatting settings model using the *update* API. The *update* API is called each time a formatting property in the properties pane is changed.
+Create bar chart selectors data points and populate them in the formatting settings model.
+
+```typescript
+    
+    // declare formatting settings model for bar chart 
+    private formattingSettings: BarChartSettingsModel;
+    // ...
+    public update(options: VisualUpdateOptions) {
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(BarChartSettingsModel, options.dataViews);
+        this.barDataPoints = createSelectorDataPoints(options, this.host);
+        this.formattingSettings.populateColorSelector(this.barDataPoints);
+        // Add here rest of your custom visual update API code
+    }
+```
+
+Finally, the new API `getFormattingModel` is a simple line of code using the formatting settings service and current formatting settings model that was created in the *update* API above.
+
+```typescript
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
 ```
 
