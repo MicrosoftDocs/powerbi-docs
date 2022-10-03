@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 8/25/2022
+ms.date: 09/29/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,21 @@ ms.date: 8/25/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## September 2022 QFE 2
+
+*Version: 2.109.844.0, Released: September 28, 2022*
+
+Bug fixes/improvements:
+* Horizontal Fusion improvement: now covers more query patterns, including patterns that rely on "TreatAs" to filter results.
+
+## September 2022 QFE 1
+
+*Version: 2.109.782.0, Released: September 20, 2022*
+
+Bug fixes/improvements:
+* Fix for Card visual: users can now set and modify the conditional formatting options to callout value color.
+* Fix for charts with multiple series: conditional formatting will now correctly apply multiple colors to data labels.
 
 ## August 2022 QFE 2
 
