@@ -83,8 +83,6 @@ To enable custom sorting, add the following code to your *capabilities.json* fil
 
 ### Example: Custom sort API
 
-After successfully executing applyCustomSort, the `OrderBy` parameter is added to the query:
-
 ```typescript
 let queryName1 = this.dataView.matrix.columns.levels[0].sources[0].queryName;
 let queryName2 = this.dataView.matrix.columns.levels[1].sources[0].queryName;
