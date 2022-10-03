@@ -193,6 +193,9 @@ To run a PowerShell script that performs a deployment, you'll need the component
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
 
 >[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
+
+>[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)
 
 >[!div class="nextstepaction"]

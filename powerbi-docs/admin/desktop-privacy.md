@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 09/23/2022
 LocalizationGroup: Learn more
 ---
 # Power BI Desktop Privacy
