@@ -80,7 +80,7 @@
     items:
     - name: About tenant settings
       href: service-admin-portal-about-tenant-settings.md
-    - name: List of tenant settings
+    - name: Tenant settings list
       expanded: false
       items:
       - name: Help and support settings
