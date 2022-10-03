@@ -166,6 +166,8 @@ An example of the data role that triggers the fill rule (`the last item`) is sho
 
 ## Formatting pane
 
+To customize the properties in the formatting pane, use one of the following methods, depending on what API version you're using.
+
 ### [getFormattingModel API method](#tab/getFormattingModel)
 
 > [!NOTE]
