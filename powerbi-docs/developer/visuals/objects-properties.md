@@ -164,7 +164,9 @@ An example of the data role that triggers the fill rule (`the last item`) is sho
 }
 ```
 
-## [getFormattingModel API method](#tab/getFormattingModel)
+## Formatting pane
+
+### [getFormattingModel API method](#tab/getFormattingModel)
 
 > [!NOTE]
 > The `getFormattingModel` API method is supported from API versions 5.0+
@@ -236,7 +238,7 @@ The optional selector in formatting properties descriptor determines where each 
 The above `myCustomCard` example shows what formatting property in formatting model would look like for an object with one property `myCustomProperty`. This property object bound *statically* to `dataViews[index].metadata.objects`.
 Selector in descriptor can be changed accordingly to [selector type](#objects-selectors-types) you choose.
 
-## [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
+### [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
 
 > [!NOTE]
 > The enumerateObjectInstances method has been deprecated from API version 5.0. It was replaced by the `getFormattingModel` in the new API.
