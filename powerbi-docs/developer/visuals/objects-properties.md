@@ -27,6 +27,9 @@ Objects describe customizable properties that are associated with a visual. An o
 
 ## Display name
 
+> [!NOTE]
+> Display name is deprecated from API version 5.0+. The display name and description are now added in the formatting model instead of the *capabilities.json* file.
+
 `displayName` is the name that will be shown in the property pane.
 
 ## Properties
