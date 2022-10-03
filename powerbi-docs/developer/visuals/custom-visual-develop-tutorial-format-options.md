@@ -83,11 +83,8 @@ Now let's add new group called *color* for configuring the color and width of th
     ```json
         {
             "circle": {
-                "displayName": "Circle", // displayName is optional
                 "properties": {
                     "circleColor": {
-                        "displayName": "Color",
-                        "description": "The fill color of the circle.",
                         "type": {
                             "fill": {
                                 "solid": {
@@ -97,8 +94,6 @@ Now let's add new group called *color* for configuring the color and width of th
                         }
                     },
                     "circleThickness": {
-                        "displayName": "Thickness",
-                        "description": "The circle thickness.",
                         "type": {
                             "numeric": true
                         }
@@ -109,8 +104,6 @@ Now let's add new group called *color* for configuring the color and width of th
     ```
 
     The JSON fragment describes a group called *circle*, which consists of two variables -  *circleColor* and *circleThickness*.
-
-   :::image type="content" source="media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png" alt-text="Screenshot of capabilities file with circle object defined with color and thickness properties.":::
 
 3. Save the `capabilities.json` file.
 
@@ -129,7 +122,7 @@ Now let's add new group called *color* for configuring the color and width of th
         public circleColor = new formattingSettings.ColorPicker({
             name: "circleColor",
             displayName: "Color",
-        value: { value: "#ffffff" }
+            value: { value: "#ffffff" }
         });
 
         public circleThickness = new formattingSettings.NumUpDown({
@@ -148,9 +141,6 @@ Now let's add new group called *color* for configuring the color and width of th
         public cards: FormattingSettingsCard[] = [this.circle];
     }
     ```
-
-    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/module-classes.png" alt-text="Screenshot of module classes, CircleSetting and VisualSettings.":::
-
     This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the `capabilities.json` file (**circleColor** and **circleThickness**) and also sets default values.
 
 6. Save the `settings.ts` file.
@@ -174,8 +164,6 @@ Now let's add new group called *color* for configuring the color and width of th
 
     This property stores a reference to the **VisualSettings** object, describing the visual settings.
 
-    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png" alt-text="Screenshot of visual class with added VisualSettingsModel and FormattingSettingsService properties.":::
-
 9. In the **Visual** class, add the following method after the **update** method.
 
     ```typescript
@@ -186,8 +174,6 @@ Now let's add new group called *color* for configuring the color and width of th
 
      This function gets called on every formatting pane render. It allows you to select which of the
      objects and properties you want to expose to the users in the property pane.
-
-      :::image type="content" source="media/custom-visual-develop-tutorial-format-options/get-formatting-model.png" alt-text="Screenshot of the get formatting model function.":::
 
 10. In the **update** method, after the declaration of the **radius** variable, add the following code.
 
