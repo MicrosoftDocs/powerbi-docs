@@ -140,8 +140,5 @@ public destroy(): void
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Visual project structure](visual-project-structure.md)
-
->[!div class="nextstepaction"]
->[Local storage API](local-storage.md)
+* [Visual project structure](visual-project-structure.md)
+* [Local storage API](local-storage.md)
