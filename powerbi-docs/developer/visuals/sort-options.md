@@ -85,6 +85,24 @@ To enable custom sorting, add the following code to your *capabilities.json* fil
 
 After successfully executing applyCustomSort, the `OrderBy` parameter is added to the query:
 
+```typescript
+let queryName1 = this.dataView.matrix.columns.levels[0].sources[0].queryName;
+let queryName2 = this.dataView.matrix.columns.levels[1].sources[0].queryName;
+let args: CustomVisualApplyCustomSortArgs = {
+    sortDescriptors: [
+        {
+            queryName: queryName1,
+            sortDirection: powerbi.SortDirection.Ascending
+        },
+        {
+            queryName: queryName2,
+            sortDirection: powerbi.SortDirection.Descending
+        },
+    ]
+};
+this.host.applyCustomSort(args);
+```
+
 ## Next steps
 
 * [Understand data view mapping in Power BI visuals](dataview-mappings.md)
