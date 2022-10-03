@@ -101,7 +101,7 @@ The formatting model is where you describe and customize all the properties of y
 
 ### Formatting model components
 
-In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. These are the five basic components, from largest to smallest:
+In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. There are the five basic components, from largest to smallest:
 
 * **Formatting model**  
   The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
@@ -146,11 +146,13 @@ Capabilities Formatting Objects
 
 <sup>*</sup> The enumeration list formatting property is different in the formatting model and in the capabilities file.
 
-* Declare the following in the formatting settings class, including the list of enumeration items:
+* Declare the following properties in the formatting settings class, including the list of enumeration items:
+
   * ItemDropdown
   * ItemFlagsSelection  
 
-* Declare the following in the formatting settings class, without the list of enumeration items. Declate their enumeration items list in *capabilities.json* under the appropriate object. (These types are the same as in the previous API versions):
+* Declare the following properties in the formatting settings class, without the list of enumeration items. Declare their enumeration items list in *capabilities.json* under the appropriate object. (These types are the same as in the previous API versions):
+
   * AutoDropdown
   * AutoFlagSelection  
 
