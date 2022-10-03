@@ -3,21 +3,21 @@ title: Introduction to use Data view utils in Power BI visual
 description: This article describes how to use SVG utils  simplify parsing of the DataView object for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-manager:
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 09/13/2022
+ms.date: 06/18/2019
 ---
 
 # DataViewUtils
 
-The `DataViewUtils` is a set of functions and classes that simplify parsing the DataView object for Power BI visuals.
+The `DataViewUtils` is a set of functions and classes to simplify parsing of the DataView object for Power BI visuals
 
 ## Installation
 
-To install the package, run the following command in the same directory as your current custom visual:
+To install the package, you should run the following command in the directory with your current custom visual:
 
 `npm install powerbi-visuals-utils-dataviewutils --save`
 
@@ -27,11 +27,7 @@ This command installs the package and adds a package as a dependency to your `pa
 
 `DataViewWildcard` provides the `createDataViewWildcardSelector` function to support a property's [conditional formatting](conditional-format.md#define-how-conditional-formatting-behaves).
 
-`createDataViewWildcardSelector` returns a selector required for defining how the conditional formatting entry in the format pane will be applied. The formatting is applied based on the `dataviewWildcardMatchingOption`, which can be set to:
-
-* InstancesAndTotals (default)
-* InstancesOnly
-* TotalsOnly
+`createDataViewWildcardSelector` returns a selector required for defining how the conditional formatting entry in the format pane will be applied, based on `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
 
 Example:
 
@@ -40,11 +36,14 @@ import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 
 let selector = dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals);
 // returns {data: [{dataViewWildcard:{matchingOption: 0}}]};
+
 ```
 
 ## DataRoleHelper
 
-The `DataRoleHelper` module provides the following functions to check the roles of the dataView object:
+The `DataRoleHelper` provides functions to check roles of the dataView object.
+
+The module provides the following functions:
 
 ### getMeasureIndexOfRole
 
@@ -235,7 +234,9 @@ dataRoleHelper.hasRoleInValueColumn(valueColumn, "company");
 
 ## DataViewObjects
 
-The `DataViewObjects` module provides the following functions to extract values of the objects:
+The `DataViewObjects` provides functions to extract values of the objects.
+
+The module provides the following functions:
 
 ### getValue
 
@@ -608,7 +609,9 @@ converterHelper.hasImageUrlColumn(dataView);
 
 ## DataViewObjectsParser
 
-The `DataViewObjectsParser` class provides the simplest way to parse properties of the formatting panel using the following methods:
+The `DataViewObjectsParser` provides the simplest way to parse properties of the formatting panel.
+
+The class provides the following methods:
 
 ### getDefault
 
