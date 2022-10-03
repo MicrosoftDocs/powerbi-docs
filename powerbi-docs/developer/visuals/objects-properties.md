@@ -164,12 +164,79 @@ An example of the data role that triggers the fill rule (`the last item`) is sho
 }
 ```
 
-## getFormattingModel API method
+## [getFormattingModel API method](#tab/getFormattingModel)
 
-To use objects effectively in API version 5.0+, you need to implement the `getFormattingModel` method.
+> [!NOTE]
+> The `getFormattingModel` API method is supported from API versions 5.0+
+
+To use objects effectively in API version 5.0+, you need to implement the `getFormattingModel` method.  
 This method builds and returns a formatting model that includes full [properties pane](./format-pane.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
 
-## enumerateObjectInstances API method - deprecated
+### Capabilities objects reflected in formatting model
+
+Each formatting property in the formatting model needs a corresponding object in the *capabilities.json* file. The formatting property should contain a descriptor with an object name and property name that exactly match the corresponding capabilities object (the object and property names are case sensitive).  
+For example:
+
+For the following formatting property in the formatting model (See the descriptor object content):
+
+```typescript
+ const myCustomCard: powerbi.visuals.FormattingCard = {
+            displayName: "My Custom Object Card",
+            uid: "myCustomObjectCard_uid",
+            groups: [{
+                displayName: undefined,
+                uid: "myCustomObjectGroup_uid",
+                slices: [
+                    {
+                        uid: "myCustomProperty_uid",
+                        displayName: "My Custom Property",
+                        control: {
+                            type: powerbi.visuals.FormattingComponent.ColorPicker,
+                            properties: {
+                                descriptor: {
+                                    objectName: "myCustomObject",
+                                    propertyName: "myCustomProperty",
+                                    selector: null // selector is optional
+                                },
+                                value: { value: "#000000" }
+                            }
+                        }
+                    }
+                ],
+            }],
+        };
+```
+
+The corresponding object from the capabilities `objects` section should be:
+
+```json
+    "objects": {
+        "myCustomObject": {
+            "properties": {
+                "myCustomProperty": {
+                    "type": {
+                         "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }           
+```
+
+### Formatting property selector
+
+The optional selector in formatting properties descriptor determines where each property is bound in the dataView. There are [four distinct options](#objects-selectors-types).
+
+#### Example
+
+The above `myCustomCard` example shows what formatting property in formatting model would look like for an object with one property `myCustomProperty`. This property object bound *statically* to `dataViews[index].metadata.objects`.
+Selector in descriptor can be changed accordingly to [selector type](#objects-selectors-types) you choose.
+
+## [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
 
 > [!NOTE]
 > The enumerateObjectInstances method has been deprecated from API version 5.0. It was replaced by the `getFormattingModel` in the new API.
@@ -200,6 +267,27 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 ### enumerateObjectInstances properties
 
 The properties in `enumerateObjectInstances` reflect the properties that you defined in your capabilities. For an example, go to the end of this article.
+
+### enumerateObjectInstances Example
+
+The following example shows what one objectEnumeration would look like for a customColor object with one property, *fill*. We want this object bound statically to `dataViews[index].metadata.objects`, as shown:
+
+```typescript
+objectEnumeration.push({
+    objectName: "customColor",
+    displayName: "Custom Color",
+    properties: {
+        fill: {
+            solid: {
+                color: dataPoint.color
+            }
+        }
+    },
+    selector: null
+});
+```
+
+---
 
 ### Objects selectors types
 
@@ -247,25 +335,6 @@ This object is bound to particular values at the intersection of groups. For exa
 selector: {
     data: <DataViewScopeIdentity[]>identities
 }
-```
-
-### enumerateObjectInstances Example
-
-The following example shows what one objectEnumeration would look like for a customColor object with one property, *fill*. We want this object bound statically to `dataViews[index].metadata.objects`, as shown:
-
-```typescript
-objectEnumeration.push({
-    objectName: "customColor",
-    displayName: "Custom Color",
-    properties: {
-        fill: {
-            solid: {
-                color: dataPoint.color
-            }
-        }
-    },
-    selector: null
-});
 ```
 
 ## Next steps
