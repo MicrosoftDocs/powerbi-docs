@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/10/2022
+ms.date: 09/04/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -193,6 +193,8 @@ The following list provides regions where large datasets in Power BI are availab
 | Korea South         | koreasouth                |
 | North Central US    | northcentralus            |
 | North Europe        | northeurope               |
+| South Africa North  | southafricanorth          |
+| South Africa West   | southafricawest           |
 | South Central US    | southcentralus            |
 | Southeast Asia      | southeastasia             |
 | Switzerland North   | switzerlandnorth          |

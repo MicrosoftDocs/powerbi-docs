@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/03/2022
+ms.date: 09/13/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -121,7 +121,7 @@ In this example, our Excel export shows one total for each city. Since we filter
 
 Select this option if you want to see the data in the visual ***and*** additional data from the dataset (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single **City** row in our dataset and the discount percent for that single entry. Power BI flattens the data, it doesn't aggregate it.
 
-For some data, **underlying** will be disabled. Additional permissions may be required to see more data than is currently displayed in the visual (underlying data). These permissions protect the data from being inappropriately viewed, re-used, or shared with anyone other than the intended audience.
+For some data, **underlying** will be disabled. Build permissions may be required to see more data than is currently displayed in the visual (underlying data). These permissions protect the data from being inappropriately viewed, re-used, or shared with anyone other than the intended audience.
 
 When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.  If you're using the Power BI app in Microsoft Teams, you may not receive the same prompts. Your exported file is saved in your local Downloads folder or in a folder that you specify.
 
@@ -214,7 +214,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
   - Matrices with only one row and/or values but no columns will be exported as table (no right border separator)
 
-  - If the **Show on rows** toggle is set to 'On' in Power BI Desktop for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
+  - If the **Switch values to rows** formatting option is set to 'On' in Power BI for a table or matrix visual, the visual format would not be preserved when data is exported to Excel
 
   - If the **Row subtotals** toggle is set to 'Off' in Power BI Desktop for a matrix visual, but the matrix visual has expanded and collapsed sections, exported data will contain subtotals for rows. To work around this issue, use the **Expand | All** command from the visual's context menu.
 

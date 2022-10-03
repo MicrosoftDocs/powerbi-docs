@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/29/2021
+ms.date: 09/01/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
 # Licensing the Power BI service for users in your organization
 
-What a user can do in the Power BI service depends on the type of per-user license that they have. The level of access provided by their license depends on whether the workspace being accessed is in a Premium workspace or not. All users of the Power BI service must have a license.
+What a user can do in the Power BI service depends on the type of *per-user license* that they have (free, Pro, Premium Per User). The level of access provided by their license depends on whether the workspace being accessed is in a *Premium* workspace or not. All users of the Power BI service must have a license.
 
-There are two ways for users to get a license. Using self-service sign-up capabilities and their work or school account, users can get their own free, Pro, or Premium Per User license. Or, admins can get a Power BI license subscription and assign licenses to users.
+There are two ways for users to get a license. Using self-service sign-up capabilities and their work or school account, users can get their own free, Pro, or Premium Per User (PPU) license. Or, admins can get a Power BI license subscription and assign licenses to users.
 
 This article focuses on purchasing services and per-user licensing from an administrator perspective. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 
@@ -40,11 +40,13 @@ A global administrator or a billing administrator can sign up for the Power BI s
 
 ## About self-service sign-up
 
-Individual users can get their own Power BI license by signing up with their work or school account. With a free license, users can explore Power BI for personal data analysis and visualization using My Workspace, but they can't share with other users. A Power BI Pro or Power BI Premium Per User license is required to share content. A Power BI Premium subscription unlocks access to a variety of features, capabilities, and types of content that are only available through Premium. A Premium Per User license limits access to these features to other users who also have a Premium Per User license. A capacity-based Premium subscription allows users with free licenses to access any content, but only users with a Pro or Premium Per User license can create content. Users may upgrade their license type to Pro, or sign up for Pro directly, if the organization is using the commercial cloud. Direct purchase of or upgrade to Pro isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
+Individual users can get their own Power BI license by signing up with their work or school account. With a free license, users can explore Power BI for personal data analysis and visualization using My Workspace, but they can't share with other users. A Power BI Pro or Power BI Premium Per User license is required to share content. For descriptions of the license types, see [license types for the Power BI service](../fundamentals/service-features-license-type.md). 
+
+Users may upgrade their license type, or sign up for a different license directly, if the organization is using the commercial cloud. Direct purchase of or upgrade to Pro isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
 
 If you don't want users in your organization to use self-service sign-up, see [Enable or disable self-service sign-up](service-admin-disable-self-service.md) to learn how to turn it off.
 
-Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Power BI (free) licenses for your organization and assign them to all users. Follow these steps to assign a Power BI (free) license to all existing users:
+Turning off self-service sign-up keeps users from exploring Power BI. If you block individual sign-up, you may want to get Power BI (free) licenses for your organization and assign them to all users. Follow these steps to assign a Power BI (free) license to all existing users:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com), using global admin or billing admin credentials.
 1. From the left sidebar menu, select **Billing** > **Purchase services**.
@@ -63,17 +65,14 @@ If you want to see which users in your organization might already have a license
 
 There are three kinds of Power BI per-user licenses: Free, Pro, and Premium Per User. Which type of license a user needs is determined by where content is stored, how they'll interact with that content, and if that content uses Premium features. Where content can be stored is determined by your organization's [subscription license type](#subscription-license-types).
 
-One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Using Premium allows users with a free license to act on content in workspaces that are assigned to Premium capacity. Outside of Premium capacity, a user with a free license can only use the Power BI service to connect to data and create reports and dashboards in **My Workspace**. They can't share content with others or publish content to other workspaces. To learn more about workspace types, see [Types of workspaces](../consumer/end-user-workspaces.md#types-of-workspaces).
+One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Using Premium capacity allows Pro and PPU users to share content and collaborate with free users and PPU users. 
+
+For detailed information about licensing, see [Licenses for the Power BI](../fundamentals/service-features-license-type.md).
 
 A Power BI organization with only free and Pro per-user licenses uses a shared and limited capacity to process content. If content is stored in that shared capacity, users who are assigned a Power BI Pro license can collaborate only with other Power BI Pro users. They can consume content shared by other users, publish content to app workspaces, share dashboards, and subscribe to dashboards and reports.  When workspaces are in Premium capacity, Pro users may distribute content to users who don't have a Power BI Pro license.
 
-Content created by a user who is assigned a Premium Per User license can only be shared with other users that have a Premium Per User license, unless that content is specifically put on a workspace hosted on a Premium capacity. The table below summarizes the basic capabilities of each license type. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
+Content created by a user who is assigned a PPU license can only be shared with other users that have a PPU license, unless that content is specifically put on a workspace hosted on a Premium capacity. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
 
-| License type | Capabilities when workspace is in shared capacity | Additional  capabilities when workspace is in Premium capacity |
-| --------- | ----------- | ----------- |
-| Power BI (free) | Access to content in My Workspace | Consume content shared with them |
-| Power BI Pro | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with users who have a Pro license | Distribute content to users who have free licenses |
-| Power BI Premium Per User | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with users who have a Premium Per User license | Distribute content to users who have free and Pro licenses |
 
 ## Subscription license types
 

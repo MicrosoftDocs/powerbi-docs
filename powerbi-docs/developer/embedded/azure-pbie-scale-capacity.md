@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/27/2022
+ms.date: 09/04/2022
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal
@@ -19,9 +19,7 @@ This article walks through how to scale a Power BI Embedded capacity in Microsof
 This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven't, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md) to get started.
 
 > [!NOTE]
->
-> * With Gen1 capacities, a scaling operation can take about a minute. During this time, the capacity won't be available and embedded content may fail to load. With [Embedded Gen2](power-bi-embedded-generation-2.md) capacities, you can scale your Power BI Embedded resource without experiencing any downtime.
-> * To autoscale a gen2 capacity see [Autoscaling](#autoscaling).
+> This article describes the process for vertically scaling A SKUs. It doesn't talk about horizontal scaling or P SKUs.
 
 ## Scale a capacity
 
@@ -61,13 +59,17 @@ This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven'
 
 ## Autoscaling
 
-Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, you can increase or decrease the size of your gen2 capacity using one of these options:
+Embedded Gen2 doesn't provide an out-of-the-box vertical autoscale feature. Instead, you can increase or decrease the size of your gen2 capacity using one of these options:
 
 * [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
 
 * Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU*, *CPU Per Workload*, and *Overload*.
 
 * [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+
+## Considerations and limitations
+
+Scaling gen1 capacities can take about a minute. During this time, the capacity won't be available and embedded content may fail to load. With [Embedded Gen2](power-bi-embedded-generation-2.md) capacities, you can scale your Power BI Embedded resource without experiencing any downtime.
 
 ## Next steps
 

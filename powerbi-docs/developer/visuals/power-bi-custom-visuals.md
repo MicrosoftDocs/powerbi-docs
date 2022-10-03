@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 07/17/2022
+ms.date: 09/19/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
@@ -62,6 +62,8 @@ After you *purchase* the licenses for the visual in AppSource with a credit card
 For more information on how to assign licenses see [Licensing and transactability enforcement](licensing-api.md).
 
 To see how licenses are enforced, see [custom visual licenses](./custom-visual-licenses.md)
+
+[More questions about assigning and managing licenses?](./licensing-faq.md)
 
 ### Certified Power BI visuals
 

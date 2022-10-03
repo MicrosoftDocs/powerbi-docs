@@ -83,26 +83,30 @@
       href: azure-pbie-scale-capacity.md
     - name: Pause and start a capacity in Azure
       href: azure-pbie-pause-start.md
-  - name: Workspace separation and multi-tenancy
+  - name: Workspace separation and multitenancy
     items:
-    - name: "Service principal profiles for multi-tenancy apps"
+    - name: "Service principal profiles for multitenancy apps"
       href: embed-multi-tenancy.md      
     - name: "Power BI SDK and service principal profiles"
       href: service-principal-profile-sdk.md
     - name: "Migrate to the service principal profiles model"
       href: migration-to-sp-profiles.md
-  - name: RLS
+  - name: Security
     items:
-    - name: "Row-level security"
-      href: embedded-row-level-security.md
-    - name: "Embed a report with cloud-based RLS"
-      href: cloud-rls.md
-    - name: "RLS in embedded paginated reports"
-      href: paginated-reports-row-level-security.md
+    - name: RLS
+      items:
+      - name: "Row-level security"
+        href: embedded-row-level-security.md
+      - name: "Embed a report with cloud-based RLS"
+        href: cloud-rls.md
+      - name: "RLS in embedded paginated reports"
+        href: paginated-reports-row-level-security.md
     - name: "Embed a report on an on-premises SQL Server Analysis Services (SSAS)"
       href: sql-server-analysis-services-embed.md
     - name: "Embed a report with Azure Analysis Services (AAS)"
-      href: embed-azure-analysis-services.md  
+      href: embed-azure-analysis-services.md
+    - name: "Embed a report with object-level security (OLS)"
+      href: embed-object-level-security.md
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"

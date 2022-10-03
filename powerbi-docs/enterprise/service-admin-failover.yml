@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-admin
   ms.topic: faq
-  ms.date: 06/18/2020
+  ms.date: 09/14/2022
   LocalizationGroup: Administration
 title: Power BI high availability, failover, and disaster recovery FAQ
 summary: This article explains how the Power BI service delivers high availability and provides business continuity and disaster recovery to its users. After reading this article, you should have a better understanding of how high availability is achieved, under what circumstances Power BI performs a failover, and what to expect from the service when it fails over.
@@ -68,7 +68,7 @@ sections:
       - question: |
           What happens to workspaces and reports if my Premium capacity becomes unavailable? 
         answer: |
-          If a Premium capacity becomes unavailable, workspaces and reports remain accessible and visible to all Power BI Pro licensed users who previously had access to them.
+          If a Premium capacity becomes unavailable, workspaces and reports remain accessible and visible to all.
 
       - question: |
           When does my Power BI instance return to the original region?

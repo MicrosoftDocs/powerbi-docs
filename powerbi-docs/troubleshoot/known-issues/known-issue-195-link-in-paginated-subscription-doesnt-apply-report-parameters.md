@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/03/2022
+ms.date: 09/02/2022
 ms.custom: known-issue-195
 ---
 # Known issue #195 - Using a link in a paginated report subscription doesn't apply the report parameters
@@ -15,10 +15,9 @@ When you create a paginated report subscription to be delivered through email, y
 
 **APPLIES TO:** ✔️ Power BI Paginated Reports
 
-**Status:** Open
+**Status:** Fixed: September 2, 2022
 
 **Problem area:** Share and Collaborate
-
 
 ## Symptoms
 
