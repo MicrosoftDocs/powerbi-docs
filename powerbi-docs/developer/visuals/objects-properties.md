@@ -14,7 +14,7 @@ ms.date: 06/14/2022
 
 Objects describe customizable properties that are associated with a visual. An object can have multiple properties, and each property has an associated type that describes what the property will be. This article provides information about objects and property types.
 
-`myCustomObject` is the internal name that's used to reference the object within `dataView` and `enumerateObjectInstances`.
+`myCustomObject` is the internal name that's used to reference the object within `dataView`.
 
 ```json
 "objects": {
@@ -164,7 +164,15 @@ An example of the data role that triggers the fill rule (`the last item`) is sho
 }
 ```
 
-## The enumerateObjectInstances method
+## getFormattingModel API method
+
+To use objects effectively in API version 5.0+, you need to implement the `getFormattingModel` method.
+This method builds and returns a formatting model that includes full [properties pane](./format-pane.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
+
+## enumerateObjectInstances API method - deprecated
+
+> [!NOTE]
+> The enumerateObjectInstances method has been deprecated from API version 5.0. It was replaced by the `getFormattingModel` in the new API.
 
 To use objects effectively, you need a function in your custom visual called `enumerateObjectInstances`. This function populates the property pane with objects and also determines where your objects should be bound within the dataView.  
 
@@ -189,13 +197,18 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 }
 ```
 
-### Properties
+### enumerateObjectInstances properties
 
 The properties in `enumerateObjectInstances` reflect the properties that you defined in your capabilities. For an example, go to the end of this article.
 
-### Objects selector
+### Objects selectors types
 
-The selector in `enumerateObjectInstances` determines where each object is bound in the dataView. There are four distinct options.
+The selector in `enumerateObjectInstances` determines where each object is bound in the dataView. There are four distinct options:
+
+* [static](#static)
+* [columns](#columns)
+* [selector](#selector)
+* [scope identity](#scope-identity)
 
 #### static
 
@@ -217,7 +230,7 @@ selector: {
 
 #### selector
 
-This object is bound to the element that you created a `selectionID` for. In this example, let's assume that we've created `selectionID`s for some data points, and that we're looping through them.
+This object is bound to the element that you created a `selectionID` for. In this example, let's assume that we created `selectionID`s for some data points, and we're looping through them.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -236,7 +249,7 @@ selector: {
 }
 ```
 
-##### Example
+### enumerateObjectInstances Example
 
 The following example shows what one objectEnumeration would look like for a customColor object with one property, *fill*. We want this object bound statically to `dataViews[index].metadata.objects`, as shown:
 
@@ -254,3 +267,7 @@ objectEnumeration.push({
     selector: null
 });
 ```
+
+## Next steps
+
+[Performance tips](performance-tips.md)
