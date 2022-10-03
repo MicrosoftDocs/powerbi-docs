@@ -135,7 +135,7 @@ The destroy function is called when your visual is unloaded and can be used for 
 public destroy(): void
 ```
 
-> [!Note]
+> [!TIP]
 > Power BI generally doesn't call `destroy` since it's faster to remove the entire IFrame that contains the visual.
 
 ## Next steps
