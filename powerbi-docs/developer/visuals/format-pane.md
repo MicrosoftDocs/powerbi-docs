@@ -12,7 +12,7 @@ ms.date: 09/19/2022
 
 # Customize the format pane in Power BI custom visuals
 
-Starting from API version 5.1, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their categories for any property in their custom visual, making it easier for report creators to use these visuals.
+Starting from API version 5.0, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their categories for any property in their custom visual, making it easier for report creators to use these visuals.
 
 The new API uses the **FormattingModel** method to customize parts of the format and analytics panes.
 
@@ -23,7 +23,7 @@ The `getFormattingModel` returns a `FormattingModel` that defines how the visual
 
 In addition to all the old formatting pane capabilities, the new formatting model supports  new format pane capabilities, new properties and new hierarchies.
 
-To upgrade to API version 5.1.0+, set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
+To upgrade to API version 5.0+, set the `apiVersion` in your *pbiviz.json* file to `5.0` or later.
 
 ## Create a visual that supports the new format pane
 
@@ -43,131 +43,23 @@ To create a custom visual that uses the new format pane:
 
 3. Implement the `getFormattingModel` API in the custom visual class that returns custom visual formatting model. (This API replaces the `enumerateObjectInstances` that was used in previous versions).
 
-## Formatting model
+## Map formatting properties
 
-The formatting model is where you describe and customize all the properties of your format pane.
+If you have a custom visual created with an older API and you want to migrate to the new format pane, or if you're creating a new custom visual:
 
-### Formatting model components
-
-In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. These are the five basic components, from largest to smallest:
-
-* **Formatting model**  
-  The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
-
-* **Formatting card**  
-  The top level properties grouping container for formatting properties. Each card consists of a list of formatting groups.
-
-* **Formatting group**  
-  The secondary-level properties grouping container. The formatting group is displayed as a grouping container for formatting slices.
-
-* **Formatting slice**  
-  Property container. There are two types of slices:
-  
-  * Simple slice: Individual property container
-  * [Composite slice](#composite-slice-properties): Multiple related property containers grouped into one formatting slice
-
-:::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined." lightbox="media/format-pane/format-pane-components.png":::
-
-### Visualization pane formatting properties
-
-Every property in the formatting model should match and object type in the *capabilities.json* file.
-
-The following table shows the formatting property types in *capabilities.json* file and their matching type class in modern formatting model properties:
-
-| Type             | Capabilities Value Type | Formatting Property  |
-|------------------|-------------------------|----------------------|
-| Boolean          | Bool                    | ToggleSwitch         |
-| Number           | numeric integer         | <li> NumUpDown </li> <li>Slider</li>     |
-| Enumeration list | enumeration:[]          | <li> ItemDropdown</li> <li> ItemFlagsSelection</li><li> AutoDropdown</li><li> AutoFlagsSelection</li> <sup>*</sup> See note below       |
-| Color            | Fill                    | ColorPicker          |
-| Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
-| Date / Time      |                         | DatePicker           |
-| Text             | Text                    | <li>TextInput</li> <li>TextArea</li>  |
-
-Capabilities Formatting Objects
-
-| Type             | Capabilities Value Type | Formatting Property  |
-|------------------|-------------------------|----------------------|
-| Font size           | FontSize             | NumUpDown            |
-| Font family         | FontFamily           | FontPicker           |
-| Line Alignment      | Alignment            | AlignmentGroup       |
-| Label Display Units | LabelDisplayUnits    | AutoDropDown         |
-| Format String       | FormatString         |                      |
-
-<sup>*</sup> The enumeration list formatting property is different in the formatting model and in the capabilities file.
-
-* In the formatting model use one of the following properties:
-  * ItemDropdown
-  * ItemFlagsSelection  
-
-* In the capabilities file, use one of the following types (these types are the same as in the previous API versions):
-  * AutoDropdown
-  * AutoFlagSelection  
-
-### Composite slice properties
-
-A formatting composite slice is a formatting slice that contains multiple related properties all together.
-
-For now we have two composite slice types:
-
-* FontControl
-  Font keeps all font related properties together. It consists of the following properties:
-  
-  * Font Family
-  * Font Size
-  * Bold [optional]
-  * Italic [optional]
-  * Underline [optional]
-
-  Each of these properties should have a corresponding object in capabilities file:
-
-  | Property    | Capabilities Type         | Formatting Type  |
-  |-------------|---------------------------|------------------|
-  | Font Family | Formatting: { fontFamily} | FontPicker       |
-  | Font Size   | Formatting: {fontSize}    | NumUpDown        |
-  | Bold        | Bool                      | ToggleSwitch     |
-  | Italic      | Bool                      | ToggleSwitch     |
-  | Underline   | Bool                      | ToggleSwitch     |
-
-* MarginPadding
-  Margin padding determines the alignment of the text in the visual. It consists of the following properties:
-  
-  * Left
-  * Right
-  * Top
-  * Bottom
-
-  Each of these properties should have a corresponding object in capabilities file:
-
-  | Property    | Capabilities Type         | Formatting Type  |
-  |-------------|---------------------------|------------------|
-  | Left        | Numeric                   | NumUpDown        |
-  | Right       | Numeric                   | NumUpDown        |
-  | Top         | Numeric                   | NumUpDown        |
-  | Bottom      | Numeric                   | NumUpDown        |
-  
-## Migrate from older APIs
-
-If you have a custom visual created with an older API and you want to migrate to the new format pane:
-
-1. Set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
+1. Set the `apiVersion` in your *pbiviz.json* file to `5.0` or later.
 
 2. For each object name and property name in *capabilities.json*, create a matching formatting property. The formatting property should have a descriptor that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
 
 The `objects` properties in the capabilities file still have the same format and don't need to be changed.
-
-## Example of capabilities and formatting properties
 
 For example, if the `circle` object in your *capabilities.json* file is defined like this:
 
 ```json
 "objects": {
     "circle": {
-        "displayName": "Circle",
         "properties": {
             "circleColor": {
-                "displayName": "Color",
-                "description": "The fill color of the circle.",
                 "type": {
                     "fill": {
                         "solid": {
@@ -203,6 +95,107 @@ You'll get an error if one of the following conditions is true:
 * The object or property name in the capabilities file doesn’t match the one in the formatting model
 * The property type in the capabilities file doesn’t match the type in formatting model
 
+## Formatting model
+
+The formatting model is where you describe and customize all the properties of your format pane.
+
+### Formatting model components
+
+In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. These are the five basic components, from largest to smallest:
+
+* **Formatting model**  
+  The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
+
+* **Formatting card**  
+  The top level properties grouping container for formatting properties. Each card consists of a list of formatting groups.
+
+* **Formatting group**  
+  The secondary-level properties grouping container. The formatting group is displayed as a grouping container for formatting slices.
+
+* **Formatting slice**  
+  Property container. There are two types of slices:
+  
+  * Simple slice: Individual property container
+  * [Composite slice](#composite-slice-properties): Multiple related property containers grouped into one formatting slice
+
+:::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined." lightbox="media/format-pane/format-pane-components.png":::
+
+### Visualization pane formatting properties
+
+Every property in the formatting model should match and object type in the *capabilities.json* file.
+
+The following table shows the formatting property types in *capabilities.json* file and their matching type class in modern formatting model properties:
+
+| Type             | Capabilities Value Type | Formatting Property  |
+|------------------|-------------------------|----------------------|
+| Boolean          | Bool                    | ToggleSwitch         |
+| Number           | <li>numeric</li> <li> integer </li>       | <li> NumUpDown </li> <li>Slider</li>     |
+| Enumeration list | enumeration:[]          | <li> ItemDropdown</li> <li> ItemFlagsSelection</li><li> AutoDropdown</li><li> AutoFlagsSelection</li> <sup>*</sup> See note below       |
+| Color            | Fill                    | ColorPicker          |
+| Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
+| Text             | Text                    | <li>TextInput</li> <li>TextArea</li>  |
+
+Capabilities Formatting Objects
+
+| Type             | Capabilities Value Type | Formatting Property  |
+|------------------|-------------------------|----------------------|
+| Font size           | FontSize             | NumUpDown            |
+| Font family         | FontFamily           | FontPicker           |
+| Line Alignment      | Alignment            | AlignmentGroup       |
+| Label Display Units | LabelDisplayUnits    | AutoDropDown         |
+
+<sup>*</sup> The enumeration list formatting property is different in the formatting model and in the capabilities file.
+
+* Declare the following in the formatting settings class, including the list of enumeration items:
+  * ItemDropdown
+  * ItemFlagsSelection  
+
+* Declare the following in the formatting settings class, without the list of enumeration items. Declate their enumeration items list in *capabilities.json* under the appropriate object. (These types are the same as in the previous API versions):
+  * AutoDropdown
+  * AutoFlagSelection  
+
+### Composite slice properties
+
+A formatting composite slice is a formatting slice that contains multiple related properties all together.
+
+For now we have two composite slice types:
+
+* FontControl  
+  This keeps all font related properties together. It consists of the following properties:
+  
+  * Font Family
+  * Font Size
+  * Bold [optional]
+  * Italic [optional]
+  * Underline [optional]
+
+  Each of these properties should have a corresponding object in capabilities file:
+
+  | Property    | Capabilities Type         | Formatting Type  |
+  |-------------|---------------------------|------------------|
+  | Font Family | Formatting: { fontFamily} | FontPicker       |
+  | Font Size   | Formatting: {fontSize}    | NumUpDown        |
+  | Bold        | Bool                      | ToggleSwitch     |
+  | Italic      | Bool                      | ToggleSwitch     |
+  | Underline   | Bool                      | ToggleSwitch     |
+
+* MarginPadding
+  Margin padding determines the alignment of the text in the visual. It consists of the following properties:
+  
+  * Left
+  * Right
+  * Top
+  * Bottom
+
+  Each of these properties should have a corresponding object in capabilities file:
+
+  | Property    | Capabilities Type         | Formatting Type  |
+  |-------------|---------------------------|------------------|
+  | Left        | Numeric                   | NumUpDown        |
+  | Right       | Numeric                   | NumUpDown        |
+  | Top         | Numeric                   | NumUpDown        |
+  | Bottom      | Numeric                   | NumUpDown        |
+  
 ## Example: Formatting a data card
 
 In this example, we show how to build a custom visual formatting model with one card.  
@@ -297,7 +290,7 @@ Then, create the `getFormattingModel`
             uid: "dataCard_fontControl_group_uid",
             slices: [
                 {
-                    uid: "abc",
+                    uid: "dataCard_fontControl_displayUnits_uid",
                     displayName:"display units",
                     control: {
                         type: powerbi.visuals.FormattingComponent.Dropdown,
