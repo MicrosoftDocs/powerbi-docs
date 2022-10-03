@@ -11,106 +11,85 @@ ms.date: 09/29/2022
 LocalizationGroup: Administration
 ---
 
-# Lockbox with Power BI
+# Customer Lockbox for Power BI
 
-Use [Customer Lockbox for Microsoft Azure](/azure/security/fundamentals/customer-lockbox-overview) to control how Microsoft engineers access your data. In this article you'll learn how to enable lockbox, and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-* Lockbox for Power BI is available for all Power BI tenants with no additional cost. Support is included for Power BI Premium and Pro customers.
+Use [Customer Lockbox for Microsoft Azure](/azure/security/fundamentals/customer-lockbox-overview) to control how Microsoft engineers access your data. In this article you'll learn how to enable Customer Lockbox, and how Customer Lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
-* To progress a support case, a Microsoft engineer may initiate a lockbox request.
-  
-## Enable lockbox
+Typically, Customer Lockbox is used when you open a support request for Power BI service. Customer Lockbox can also be used when Microsoft identifies a problem, and a Microsoft-initiated event is opened to investigate the issue.
 
-To enable lockbox you need to be a Power BI tenant admin. 
+## Requirements
 
- can login to Azure portal using Azure AD account and enable Customer Lockbox from the Administration module in the Customer Lockbox blade. 
+To enable Customer Lockbox, you need to be a Power BI tenant admin. An Azure subscription isn't needed.
 
-Please note no Azure subscription is required here. If customers do have Azure subscription, the Customer Lockbox configuration will apply to both Power BI and Azure resources supported by Customer Lockbox.  
+* Customer Lockbox for Power BI is available for all Power BI tenants free of charge.
 
-Workflow 
+* Support is included for Power BI Premium and Pro customers.
 
-The following steps outline a typical workflow for a Customer Lockbox request. 
+* To progress a support case, Microsoft engineers may initiate a Customer Lockbox request.
 
-Your organization has an issue with Microsoft Power BI service and opens a support request with Microsoft Support. Alternatively, Microsoft proactively identifies a problem (for example, a proactive notification is triggered), and a Microsoft-initiated event is opened to investigate and mitigate or fix the root cause. 
+## Microsoft access request
 
-A Microsoft Engineer reviews the service request and determines the next steps to resolve the issue. 
+In cases where the Microsoft engineer can't troubleshoot your issue by using standard tools, elevated permissions are requested using the [Just-In-Time (JIT)](/azure/azure-resource-manager/managed-applications/request-just-in-time-access) access service. The request can be from the original support engineer or from a different engineer as the problem may be escalated internally.
 
-If the Microsoft engineer can't troubleshoot the issue by using standard tools and service generated data, the next step is to request elevated permissions by using a Just-In-Time (JIT) access service. This request can be from the original support engineer or from a different engineer because the problem is escalated internally. 
+After the access request is submitted, the JIT service evaluates the request, considering factors such as:
 
-After the access request is submitted by the Microsoft Engineer, Just-In-Time service evaluates the request considering factors such as: 
+* The scope of the resource
 
-The scope of the resource 
+* Whether the requester is an isolated identity or using multi-factor authentication
 
-Whether the requester is an isolated identity or using multi-factor authentication 
+* Permissions levels
 
-Permissions levels 
+Based on the JIT rule, the request may also include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps Manager. When the request requires direct access to customer data, a Customer Lockbox request is initiated. For example, in cases where remote desktop access to a customer's virtual machine is needed. Once the request is made, it awaits customer's approval before access is granted.
 
-Based on the JIT rule, this request may also include an approval from Internal Microsoft Approvers. For example, the approver might be the Customer support lead or the DevOps Manager. 
+These steps describe a Microsoft initiated Customer Lockbox for Power BI request.
 
-When the request requires direct access to customer data, a Customer Lockbox request is initiated. For example, remote desktop access to a customer's virtual machine. 
+1. The Power BI tenant admin receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
 
-The request is now in a Customer Notified state, waiting for the customer's approval before granting access. 
+    <--- Screenshot of email --->
 
-At the customer organization, Power BI tenant admin receives an email from Microsoft, to notify them about the pending access request. For Customer Lockbox requests, this person is the designated approver. 
+2. The email provides a link to Customer Lockbox in the Administration module. Using the link, the designated approver signs in to the Azure portal to view any pending Customer Lockbox requests. The request remains in the customer queue for four days. After that, the access request automatically expires and no access is granted to Microsoft engineers.
 
-Example email: 
+3. To get the details of the pending request, the designated approver can select the Customer Lockbox request from the **Pending Requests** menu option.
 
-ShapeTable
+    <--- Screenshot of pending requests menu option --->
 
-Description automatically generated 
+4. After reviewing the request, the designated approver enters a justification and selects one of the options below. For auditing purposes, the actions are logged in the Customer Lockbox [auditing logs](#auditing-logs).
 
-The email notification provides a link to the Customer Lockbox blade in the Administration module. Using this link, the designated approver signs in to the Azure portal to view any pending requests that their organization has for Customer Lockbox. 
+    * **Approve** - Access is granted to the Microsoft engineer for a default period of eight hours.
 
-The request remains in the customer queue for four days. After this time, the access request automatically expires and no access is granted to Microsoft engineers. 
+    * **Deny** - The access request by the Microsoft engineer is rejected and no further action is taken.
 
-ShapeTo get the details of the pending request, the designated approver can select the lockbox request from Pending Requests: 
+    <--- Screenshot of approve/deny --->
 
-Graphical user interface, text, application, email
+## Auditing logs
 
-Description automatically generated 
+Customer Lockbox logs are stored in the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell). In the Azure portal, select **Activity Logs** to view auditing information related to Customer Lockbox requests. You can filter the results for specific actions.
 
-After reviewing the request, the designated approver enters the justification and selects Approve or Deny: 
+<--- Screenshot of activity logs --->
 
-Graphical user interface, application
+## Customer Lockbox integration with Azure Security Benchmark
 
-Description automatically generated 
+In [Azure Security Benchmark](/security/benchmark/azure/overview), we've introduced [baseline control 3.13](/security/benchmark/azure/security-control-identity-access-control#313-provide-microsoft-with-access-to-relevant-customer-data-during-support-scenarios) that covers Customer Lockbox applicability. Customers can use the benchmark to review Customer Lockbox applicability for their service.
 
-As a result of the selection: 
+## Exclusions
 
-Approve: Access is granted to the Microsoft engineer. The access is granted for a default period of eight hours. 
+Customer Lockbox requests aren't triggered in the following engineering support scenarios:
 
-Deny: The elevated access request by the Microsoft engineer is rejected and no further action is taken. 
+* Emergency scenarios that fall outside of standard operating procedures. For example, a major service outage requires immediate attention to recover or restore services in an unexpected scenario. These events are rare and usually don't require access to customer data.
 
-For auditing purposes, the actions taken in this workflow are logged in Customer Lockbox request logs. 
+* A Microsoft engineer accesses the Azure platform as part of troubleshooting, and is accidentally exposed to customer data. For example, during troubleshooting the Azure Network Team captures a packet on a network device. Such scenarios don't usually result in access to meaningful customer data. Customers can further protect their data using in transit and at rest encryption.
 
-Auditing logs 
+* External legal demands for data. For details, see [government requests for data](https://www.microsoft.com/trust-center/?rtc=1) on the Microsoft Trust Center.
 
-Customer Lockbox logs are stored in activity logs. In the Azure portal, select Activity Logs to view auditing information related to Customer Lockbox requests. You can filter for specific actions, such as: 
+## Next steps
 
-Deny Lockbox Request 
+>[!div class="nextstepaction"]
+>[Microsoft Purview Customer Lockbox](/compliance/customer-lockbox-requests?view=o365-worldwide)
 
-Create Lockbox Request 
+>[!div class="nextstepaction"]
+>[Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-customer-lockbox)
 
-Approve Lockbox Request 
-
-Lockbox Request Expiry 
-
-As an example: 
-
-Azure Customer Lockbox - activity logs 
-
-Customer Lockbox integration with Azure Security Benchmark 
-
-We've introduced a new baseline control (3.13) in Azure Security Benchmark that covers Customer Lockbox applicability. Customers can now leverage the benchmark to review Customer Lockbox applicability for a service. 
-
-Exclusions 
-
-Customer Lockbox requests are not triggered in the following engineering support scenarios: 
-
-Emergency scenarios that fall outside of standard operating procedures. For example, a major service outage requires immediate attention to recover or restore services in an unexpected or unpredictable scenario. These “break glass” events are rare and, in most instances, do not require any access to customer data to resolve. 
-
-A Microsoft engineer accesses the Azure platform as part of troubleshooting and is inadvertently exposed to customer data. For example, the Azure Network Team performs troubleshooting that results in a packet capture on a network device. It is rare that such scenarios would result in access to meaningful quantities of customer data. Customers can further protect their data through use of in transit and at rest encryption. 
-
-Customer Lockbox requests are also not triggered by external legal demands for data. For details, see the discussion of government requests for data on the Microsoft Trust Center. 
-
- ## Next steps
+>[!div class="nextstepaction"]
+>[Power BI Security](service-admin-power-bi-security.md)
