@@ -65,7 +65,7 @@ To enable implicit sorting, add the implicit `clauses` to your *capabilities.jso
 
 ## Custom sorting
 
-Custom sorting gives the developer more control over the sorting options. The developer can:
+Custom sorting gives the developer more flexibility when sorting. The developer can:
 
 * Allow the user to sort by multiple fields at a time.
 * Set a default sorting order for the data
