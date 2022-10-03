@@ -33,7 +33,7 @@ The user can interact with Power BI to update a visual in the following ways:
 
 * A user opens the visual's properties panel.
 
-    When a user opens the visual's properties panel, Power BI fetches supported objects and properties from the visual's *capabilities.json* file. To receive actual values of properties, Power BI calls the `getFormattingModel` method of the visual (APIs earlier than version 5.1 call `enumerateObjectInstances` instead). The visual returns actual values of properties.
+    When a user opens the visual's properties panel, Power BI fetches supported objects and properties from the visual's *capabilities.json* file. To receive actual values of properties, Power BI calls the `getFormattingModel` method of the visual (APIs earlier than version 5.0 call `enumerateObjectInstances` instead). The API returns modern format pane model components, properties, and their actual values.
 
     For more information, see [Capabilities and properties of Power BI visuals](capabilities.md).
 
