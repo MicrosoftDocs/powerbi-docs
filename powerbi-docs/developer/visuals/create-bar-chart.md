@@ -586,7 +586,7 @@ In addition to scaling, this update method also handles selections and colors. T
 
 ### Populate the properties pane
 
-The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method goes through all the *"objects"* in the *capabilities.json* file (in our case, `enableAxis` and `colorSelector`) and places them inside the [**Format** pane](conditional-format.md). The object's name is available from `EnumerateVisualObjectInstancesOptions`.
+The final method in the `IVisual` function is [`enumerateObjectInstances`](visual-api.md#enumerateobjectinstances-optional). This method goes through all the *"objects"* in the *capabilities.json* file (in our case, `enableAxis` and `colorSelector`) and places them inside the [**Format** pane](conditional-format.md). The object's name is available from `EnumerateVisualObjectInstancesOptions`.
 
 To add a color picker for each category on the **Property** pane, add an additional case to the `switch` statement for `colorSelector`, and iterate through each data point with the associated color.
 
