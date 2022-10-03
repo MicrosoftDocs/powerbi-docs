@@ -3,11 +3,12 @@ title: Conditional formatting of Power BI custom visuals
 description: Learn how to apply conditional formatting to your Power BI custom visual.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: ''
+ms.reviewer: ""
+featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 09/13/2022
+ms.date: 07/03/2022
 ---
 
 # Add conditional formatting
@@ -23,13 +24,9 @@ Conditional formatting can only be applied to the following property types:
 * Icon
 * Web URL
 
-[New format pane](/fundamentals/desktop-format-pane)
-
 ## Add conditional formatting to your project
 
 This section shows how to add conditional formatting to an existing Power BI visual. The example code in this article is based on the [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) visual. You can examine the source code in [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
-
-----New barChart git: https://github.com/microsoft/PowerBI-visuals-sampleBarChart
 
 ### Add a conditional color formatting entry in the format pane
 
@@ -87,11 +84,11 @@ In this section you'll learn how to add a conditional color formatting entry, to
 
 Define how formatting will be applied to your data points.
 
-Using `createDataViewWildcardSelector` declared under `powerbi-visuals-utils-dataviewutils`, specify whether conditional formatting will be applied to instances, totals, or both. For more information, see [DataViewWildcard](./utils-dataview.md#dataviewwildcard).
+Using `createDataViewWildcardSelector` declared under `powerbi-visuals-utils-dataviewutils`, specify whether conditional formatting will be applied to instances, totals, or both. For more information, see [DataViewWildcard](utils-dataview.md#).
 
 In `enumerateObjectInstances`, make the following changes to the objects you want to apply conditional formatting to:
 
-* Replace the `selector` value with the `dataViewWildcard.createDataViewWildcardSelector(dataViewWildcardMatchingOption)` call. `DataViewWildcardMatchingOption` defines whether conditional formatting is applied to instances, totals, or both.
+ * Replace the `selector` value with the `dataViewWildcard.createDataViewWildcardSelector(dataViewWildcardMatchingOption)` call. `DataViewWildcardMatchingOption` defines whether conditional formatting is applied to instances, totals, or both.
 
 * Add the `altConstantValueSelector` property with the value previously defined for the `selector` property.
 
@@ -120,6 +117,7 @@ case 'colorSelector':
                 }
             });
         }
+
 ```
 
 ## Considerations and limitations
@@ -127,10 +125,12 @@ case 'colorSelector':
 Conditional formatting isn't supported for the following visuals:
 
 * Table based visuals
+
 * Matrix based visuals
 
-We recommend that you don’t use conditional formatting with series. Instead, allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series, share this approach.
+We recommend that you don’t use conditional formatting with series. Instead, you should allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series, share this approach.
 
 ## Next steps
 
-[DataViewUtils](utils-dataview.md)
+>[!div class="nextstepaction"]
+>[DataViewUtils](utils-dataview.md)
