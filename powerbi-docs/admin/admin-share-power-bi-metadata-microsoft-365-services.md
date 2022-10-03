@@ -34,11 +34,11 @@ To enable sharing Power BI metadata with Microsoft 365 services, a Power BI admi
 
 ## Data residency
 
-If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in.
+If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in. For more information, see [Link to Ajane's article]
 
 References:
 * [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
-* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)# Share data with your Microsoft 365 services
+* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ## Data that will be shared with Microsoft 365
 
