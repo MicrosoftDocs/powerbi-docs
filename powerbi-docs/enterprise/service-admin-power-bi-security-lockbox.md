@@ -29,7 +29,7 @@ To enable Customer Lockbox, you need to be a Power BI tenant admin. An Azure sub
 
 ## Microsoft access request
 
-In cases where the Microsoft engineer can't troubleshoot your issue by using standard tools, elevated permissions are requested using the [Just-In-Time (JIT)](/azure/azure-resource-manager/managed-applications/request-just-in-time-access) access service. The request can come from the original support engineer, or from a different engineer.
+In cases where the Microsoft engineer can't troubleshoot your issue by using standard tools, elevated permissions are requested using the [Just-In-Time](/azure/azure-resource-manager/managed-applications/request-just-in-time-access) (JIT) access service. The request can come from the original support engineer, or from a different engineer.
 
 After the access request is submitted, the JIT service evaluates the request, considering factors such as:
 
@@ -39,11 +39,11 @@ After the access request is submitted, the JIT service evaluates the request, co
 
 * Permissions levels
 
-Based on the JIT rule, the request may also include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps Manager.
+Based on the JIT role, the request may also include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps Manager.
 
 When the request requires direct access to customer data, a Customer Lockbox request is initiated. For example, in cases where remote desktop access to a customer's virtual machine is needed. Once the Customer Lockbox request is made, it awaits customer's approval before access is granted.
 
-These steps describe a Microsoft initiated Customer Lockbox for Power BI request.
+These steps describe a Microsoft initiated Customer Lockbox request, for Power BI service.
 
 1. The Power BI tenant admin receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
 
@@ -65,7 +65,7 @@ These steps describe a Microsoft initiated Customer Lockbox for Power BI request
 
 ## Auditing logs
 
-Customer Lockbox logs are stored in the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell). In the Azure portal, select **Activity Logs** to view auditing information related to Customer Lockbox requests. You can filter the results for specific actions.
+Customer Lockbox logs are stored in the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell). In the Azure portal, select **Activity Log** to view auditing information related to Customer Lockbox requests. You can filter the results for specific actions.
 
 <--- Screenshot of activity logs --->
 
