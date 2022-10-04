@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 In Power BI Desktop, you can publish a report from your local computer to the Power BI service. Power BI reports can go the other direction as well. This article explains how to download a report or a dataset from the Power BI service to Power BI Desktop. The extension for a Power BI file, in either case, is *.pbix*.
 
-:::image type="content" source="media/service-export-to-pbix/power-bi-file-export.png" alt-text="A screenshot of the file menu in the Power B I service, with the 'Download a P B I X file' option highlighted.":::
+:::image type="content" source="media/service-export-to-pbix/power-bi-file-export.png" alt-text="A screenshot of the file menu in the Power BI service, with the 'Download a PBIX file' option highlighted.":::
 
 There are two ways to download a .pbix file, each with different results and considerations:
 - Download a [report as a .pbix file](#download-a-report-as-a-pbix-file). Depending on the configuration, this file might include a dataset.
@@ -54,7 +54,7 @@ Both modes aren't available in all scenarios. If a mode isn't available, a toolt
 
 "This option isn't available because the data model has incremental refresh enabled."
 
-:::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-download-options-first-disabled.png" alt-text="A screenshot of the dialog for reports that are based on a dataset that is configured for incremental refresh. The first option is disabled and a tooltip explains that option isn't available because the dataset is configured for incremental refresh.":::
+:::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-download-options-first-disabled.png" alt-text="A screenshot of the dialog for reports that are based on a dataset that is configured for incremental refresh.":::
 
 See the [Limitations](#limitations) section in this article for more details on which mode is available in what scenario.
 
@@ -84,7 +84,7 @@ To download a dataset as a .pbix file, follow these steps:
 
 When you open a .pbix file in Power BI Desktop, you may see a warning message that some features available in the Power BI service aren't available in Power BI Desktop. 
 
-![A screenshot of a Power B I Desktop warning dialog box titled: Report layout differences might exist.](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
+![A screenshot of a Power BI Desktop warning dialog box titled: Report layout differences might exist.](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
 
 If you need to see the latest version of the report that you worked on in the Power BI service (app.powerbi.com), you need to view the report there.
 
