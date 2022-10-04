@@ -47,8 +47,8 @@ To download a report as a .pbix file, follow these steps:
 ### Download modes
 For downloading a report .pbix file, two **modes** are available:
 
-- **A copy of the report and data**. Choosing this mode results in downloading a .pbix file that includes both the report you are downloading and the data on which the report is based.
-- **A copy of the report with a live connection to the data online**. Choosing this mode results in downloading a .pbix file that contains the report you are downloading, but no data. Instead, the .pbix has a live connection to the dataset in the Power BI service. This mode is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a dataset that is configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or it has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
+- **A copy of the report and data**. Choosing this mode results in downloading a .pbix file that includes both the report you're downloading and the data on which the report is based.
+- **A copy of the report with a live connection to the data online**. Choosing this mode results in downloading a .pbix file that contains the report you're downloading, but no data. Instead, the .pbix has a live connection to the dataset in the Power BI service. This mode is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a dataset that is configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or reports that have been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 
 Both modes aren't available in all scenarios. If a mode isn't available, a tooltip explains why. For example, here's the message that you see if you download a report that's based on a dataset that's configured for incremental refresh:
 
@@ -74,7 +74,7 @@ To download a dataset as a .pbix file, follow these steps:
 
     :::image type="content" source="media/service-export-to-pbix/powerbi-export-to-pbix-dataset-more-options-download-pbix.png" alt-text="A screenshot of the Power BI workspace 'More options' menu on a dataset with 'Download the .pbix' option highlighted.":::
 
-    If this option isn't shown, you are likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
+    If this option isn't shown, you're likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
 1. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
 
@@ -114,7 +114,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 ### Limitations when downloading a report .pbix file
 
 * You can download a file while in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace that the report is in. If the report is based on a dataset in another workspace, you need to be at least a Contributor to that workspace as well.
-* If you create a [report using the **Create** button](service-quick-create-report.md) in the Power BI service, and it's based on a dataset in another workspace, you can't download it.
+* If you create a [report by using the **Create** button](service-quick-create-report.md) in the Power BI service, and it's based on a dataset in another workspace, you can't download it.
 * Reports created in Power BI Desktop must be *published* or *uploaded* to the Power BI service before you can download them.
 * If you create a report in the Power BI service, you have to save it before you can download it.
 * You can't download reports based on datasets that are imported from OneDrive for Business.
