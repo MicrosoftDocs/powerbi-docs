@@ -88,9 +88,19 @@ Items that you can migrate now:
 
 ## Step 3: Sign in/Sign up 
 
-After you've selected the reports you want to publish, it's time to **Sign in** to the Power BI service.
+### Sign in
+
+If you already have a Power BI license, after you've selected the reports you want to publish, it's time to **Sign in** to the Power BI service.
 
 :::image type="content" source="media/report-server-migration-tool/power-bi-report-server-sign-in.png" alt-text="Screenshot showing signing in to the Power B I service."::: 
+
+### Sign up
+
+If you don't have a Power BI license yet, you can still publish reports to the Power BI service. The [Auto-License Assignment Service](https://powerbi.visualstudio.com/PowerBIClients/_git/PowerBIClients?path=/src/Modern/Shared/Licensing/services/auto-license-assignment.service.ts&_a=contents&version=GBmaster) in Visual Studio can assign you a free license for personal use.
+
+If we're successful at assigning the license, we show a success message. If we can't assign a license because you don't have  an associated tenant, or license assignment fails, we show a message that you don't have a Power BI license. Then you can go to the [Power BI service sign-up page](https://app.powerbi.com/singleSignOn) to create an account.
+
+The current sign-in flow doesn't allow non-Azure Active Directory (AAD) users to sign up, so if you've never used the Power BI service and never signed in to AAD, you should sign up for Power BI in the [Power BI service](https://app.powerbi.com) first before starting the migration tool.   
 
 ## Step 4: Choose a workspace  
 
