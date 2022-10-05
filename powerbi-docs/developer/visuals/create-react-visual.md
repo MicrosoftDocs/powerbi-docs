@@ -580,11 +580,8 @@ Add the color and border thickness to the `object` property in *capabilities.jso
 
     ```json
     "circle": {
-        "displayName": "Circle",
         "properties": {
-           "circleColor": {
-                "displayName": "Color",
-                "description": "The fill color of the circle.",
+            "circleColor": {
                 "type": {
                     "fill": {
                         "solid": {
@@ -594,8 +591,6 @@ Add the color and border thickness to the `object` property in *capabilities.jso
                 }
             },
             "circleThickness": {
-                "displayName": "Thickness",
-                "description": "The circle thickness.",
                 "type": {
                     "numeric": true
                 }
@@ -606,27 +601,55 @@ Add the color and border thickness to the `object` property in *capabilities.jso
 
 3. Save **capabilities.json**.
 
-### Add a circle settings class to the settings file
+### Add a circle formatting settings class to the settings file
 
-Add the `CircleSettings` class to *settings.ts*.
+Add the `Circle` formatting settings to *settings.ts*. For more info how to build formatting model settings see [here](TODO - add formattingmodel utils docs)
 
 1. In VS Code, from the **src** folder, open **settings.ts**.
 
 2. Replace the code in **settings.ts** with the following code:
 
     ```typescript
-    "use strict";
+   "use strict";
 
-    import { dataViewObjectsParser } from "powerbi-visuals-utils-dataviewutils";
-    import DataViewObjectsParser = dataViewObjectsParser.DataViewObjectsParser;
+    import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    export class CircleSettings {
-        public circleColor: string = "white";
-        public circleThickness: number = 2;
+    import FormattingSettingsCard = formattingSettings.Card;
+    import FormattingSettingsSlice = formattingSettings.Slice;
+    import FormattingSettingsModel = formattingSettings.Model;
+
+    /**
+    * Circle Formatting Card
+    */
+    class CircleCardSettings extends FormattingSettingsCard {
+        circleColor = new formattingSettings.ColorPicker({
+            name: "circleColor", // circle color name should match circle color property name in capabilities.json
+            displayName: "Color",
+            description: "The fill color of the circle.",
+            value: { value: "white" }
+        });
+
+        circleThickness = new formattingSettings.NumUpDown({
+            name: "circleThickness", // circle thickness name should match circle color property name in capabilities.json
+            displayName: "Thickness",
+            description: "The circle thickness.",
+            value: 2
+        });
+
+        name: string = "circle"; // circle card name should match circle object name in capabilities.json
+        displayName: string = "Circle";
+        slices: Array<FormattingSettingsSlice> = [this.circleColor, this.circleThickness];
     }
 
-    export class VisualSettings extends DataViewObjectsParser {
-        public circle: CircleSettings = new CircleSettings();
+    /**
+    * visual settings model class
+    *
+    */
+    export class VisualFormattingSettingsModel extends FormattingSettingsModel {
+        // Create formatting settings model circle formatting card
+        circleCard = new CircleCardSettings();
+
+        cards = [this.circleCard];
     }
     ```
 
@@ -634,54 +657,57 @@ Add the `CircleSettings` class to *settings.ts*.
 
 ### Add a method to apply visual settings
 
-Add the `enumerateObjectInstances` method used to apply visual settings, and required imports to the *visuals.ts* file.
+Add `getFormattingModel` method used to apply visual settings, and required imports and declarations to the *visuals.ts* file.
+* The following 1-5 steps 
 
 1. In VS Code, from the **src** folder, open **visuals.ts**.
 
 2. Add these `import` statements at the top of **visual.ts**.
 
     ```typescript
-    import VisualObjectInstance = powerbi.VisualObjectInstance;
-    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
-    import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
-    import { VisualSettings } from "./settings";
+    import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+    import { VisualFormattingSettingsModel } from "./settings";
     ```
 
 3. Add the following declaration to **Visual**.
 
     ```typescript
-    private settings: VisualSettings;
+    private formattingSettings: VisualFormattingSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
     ```
 
-4. Add the `enumerateObjectInstances` method to **Visual**.
+4. Add the `getFormattingModel` method to **Visual**.
 
     ```typescript
-    public enumerateObjectInstances(
-        options: EnumerateVisualObjectInstancesOptions
-    ): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
-
-        return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
     ```
 
-5. In the `Visual` class, add the following code to `update` so that the `dataView` object will be able to receive `settings`.
+5. In the `Visual` class, add the following code line to `constructor` to initialize `formattingSettingsService`
+
+    ```typescript
+        this.formattingSettingsService = new FormattingSettingsService();
+    ```
+
+6. In the `Visual` class, add the following code to `update` so that the visual formatting settings to be updated to latest formatting properties values
 
     1. Add this code to the *if* statement after `const size = Math.min(width, height);`.
 
         ```typescript
-        this.settings = VisualSettings.parse(dataView) as VisualSettings;
-        const object = this.settings.circle;
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
+        const circleSettings = this.formattingSettings.circleCard;
         ```
 
     2. Add this code to `ReactCircleCard.update` after `size`.
 
         ```typescript
-        borderWidth: object && object.circleThickness ? object.circleThickness : undefined,
-        background: object && object.circleColor ? object.circleColor : undefined,
+        borderWidth: circleSettings.circleThickness.value,
+        background: circleSettings.circleColor.value.value,
         }
         ```
 
-6. Save **visual.ts**.
+7. Save **visual.ts**.
 
 ### Edit the component file
 
