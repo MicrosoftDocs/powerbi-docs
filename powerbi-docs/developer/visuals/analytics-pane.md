@@ -26,6 +26,74 @@ Managing properties in the [**Analytics** pane](../../transform-model/desktop-an
 
 For the **Analytics** pane, the object is defined as follows:
 
+### [API 5.0+](#tab/API-5.0+)
+* Under the object's definition, add only the object name, property name and type as explained [here](./format-pane.md).
+Example: 
+
+```json
+{
+  "objects": {
+    "YourAnalyticsPropertiesCard": {
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "displayName": {
+          "type": {
+            "text": true
+          }
+        },
+      ... //any other properties for your Analytics card
+      }
+    }
+  ...
+  }
+}
+```
+
+* In formatting settings card specify that this card belongs to analytics pane by set card `analyticsPane` parameter to true, By default card `analyticsPane` parameter is false and the card will be added to formatting pane, See the implementations below:
+
+#### [Using FormattingModel Utils](#tab/API-5.0+/Impl-FormattingModel-Utils)
+```typescript
+class YourAnalyticsCardSettings extends FormattingSettingsCard {
+    show = new formattingSettings.ToggleSwitch({
+        name: "show",
+        displayName: undefined,
+        value: false,
+        topLevelToggle: true
+    });
+
+    displayNameProperty = new formattingSettings.TextInput({
+        displayName: "displayName",
+        name: "displayName",
+        placeholder: "",
+        value: "Analytics Instance",
+    });
+
+    name: string = "YourAnalyticsPropertiesCard";
+    displayName: string = "Your analytics properties card's name";
+    analyticsPane: boolean = true; // <===  Add and set analyticsPane variable to true 
+    slices = [this.show, this.displayNameProperty];
+}
+```
+
+#### [Without FormattingModel Utils](#tab/API-5.0+/Without-FormattingModel-Utils)
+```typescript
+ const averageLineCard: powerbi.visuals.FormattingCard = {
+    displayName: "Your analytics properties card's name",
+    uid: "yourAnalyticsCard_uid",
+    analyticsPane: true, // <===  Add and set analyticsPane variable to true 
+    groups: [{
+        displayName: undefined,
+        uid: "yourAnalyticsCard_group_uid",
+        slices: [this.show, this.displayNameProperty],
+    }]
+};
+```
+
+### [Old API's](#tab/Old-API)
 * Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
 
     >[!NOTE]
