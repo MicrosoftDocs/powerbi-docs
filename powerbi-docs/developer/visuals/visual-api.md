@@ -21,7 +21,7 @@ The visual class should implement the following methods as shown in the sample b
 
 * [`constructor`](#constructor), a standard constructor that initializes the visual's state
 * [`update`](#update), updates the visual's data
-* [`getFormattingModel`](#getFormattingModel-optional), returns formatting model that populate the property pane (formatting options) where you can modify them as needed
+* [`getFormattingModel`](#getformattingmodel-optional), returns formatting model that populate the property pane (formatting options) where you can modify them as needed
 * [`destroy`](#destroy-optional), a standard destructor for cleanup
 
 ```typescript
@@ -121,7 +121,7 @@ public update(options: VisualUpdateOptions): void
 
 ## getFormattingModel *(optional)*
 
-This method is called once every time we open properties pane or when the user edit any format property in this pane. It returns [`FormattingModel`](./format-pane.md) with all information on the properties pane design, hierarchy, properties and latest formatting values.
+This method is called once every time we open properties pane or when the user edit any format property in this pane. It returns `FormattingModel` with all information on the properties pane design, hierarchy, properties and latest formatting values.
 
 ```typescript
 getFormattingModel(): visuals.FormattingModel;
