@@ -83,41 +83,37 @@ The default visual source code after removing unnecessary code will look like th
 
 // ... default imports list
 
+import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+
 import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewCategoryColumn = powerbi.DataViewCategoryColumn;
 import PrimitiveValue = powerbi.PrimitiveValue;
 import DataViewValueColumn = powerbi.DataViewValueColumn;
 
-import { VisualSettings } from "./settings";
+import { VisualFormattingSettingsModel } from "./settings";
 
 export class Visual implements IVisual {
     private target: HTMLElement;
-    private settings: VisualSettings;
+    private formattingSettings: VisualFormattingSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
 
     constructor(options: VisualConstructorOptions) {
         console.log('Visual constructor', options);
+        this.formattingSettingsService = new FormattingSettingsService();
         this.target = options.element;
         this.host = options.host;
-
     }
 
     public update(options: VisualUpdateOptions) {
-        this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
         console.log('Visual update', options);
 
     }
 
-    private static parseSettings(dataView: DataView): VisualSettings {
-        return <VisualSettings>VisualSettings.parse(dataView);
-    }
-
-    /**
-     * This function gets called for each of the objects defined in the capabilities files and allows you to select which of the
-     * objects and properties you want to expose to the users in the property pane.
-     *
-     */
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
-        return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
+    // Returns properties pane formatting model content hierarchies, properties and latest formatting values, Then populate properties pane. 
+    // This method is called once every time we open properties pane or when the user edit any format property. 
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
 }
 ```
@@ -136,12 +132,14 @@ Create root `div` element for category values:
 ```typescript
 export class Visual implements IVisual {
     private target: HTMLElement;
-    private settings: VisualSettings;
+    private formattingSettings: VisualFormattingSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
 
     private div: HTMLDivElement; // new property
 
     constructor(options: VisualConstructorOptions) {
         console.log('Visual constructor', options);
+        this.formattingSettingsService = new FormattingSettingsService();
         this.target = options.element;
         this.host = options.host;
 
@@ -160,7 +158,7 @@ Clear content of div elements before rendering new data:
 ```typescript
 // ...
 public update(options: VisualUpdateOptions) {
-    this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+    this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
     console.log('Visual update', options);
 
     while (this.div.firstChild) {
@@ -174,7 +172,7 @@ Get categories and measure values from `dataView` object:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
-    this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+    this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
     console.log('Visual update', options);
 
     while (this.div.firstChild) {
@@ -197,7 +195,7 @@ Where `categoryValues` is an array of category values, `measureValues` is an arr
 
 > [!NOTE]
 > Values of `measureHighlights` property can be less that values of `categoryValues` property.
-> In means that value was higlighted partially.
+> In means that value was highlighted partially.
 
 Enumerate `categoryValues` array and get corresponding values and highlights:
 
@@ -354,43 +352,40 @@ The sample data to create hierarchy for matrix data view mapping:
 
 Create the default visual project and apply sample of `capabilities.json`.
 
-Default visual source code after removing unessesray code will look:
+Default visual source code after removing unnecessary code will look:
 
 ```typescript
 "use strict";
 
 // ... default imports
 
-import { VisualSettings } from "./settings";
+import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+import { VisualFormattingSettingsModel } from "./settings";
 
 export class Visual implements IVisual {
     private target: HTMLElement;
-    private settings: VisualSettings;
-
+    private formattingSettings: VisualFormattingSettingsModel;
+    private formattingSettingsService: FormattingSettingsService;
 
     constructor(options: VisualConstructorOptions) {
         console.log('Visual constructor', options);
+        this.formattingSettingsService = new FormattingSettingsService();
         this.target = options.element;
         this.host = options.host;
     }
 
     public update(options: VisualUpdateOptions) {
-        this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
         console.log('Visual update', options);
 
     }
 
-    private static parseSettings(dataView: DataView): VisualSettings {
-        return <VisualSettings>VisualSettings.parse(dataView);
-    }
-
-    /**
-     * This function gets called for each of the objects defined in the capabilities files and allows you to select which of the
-     * objects and properties you want to expose to the users in the property pane.
-     *
+   /**
+     * Returns properties pane formatting model content hierarchies, properties and latest formatting values, Then populate properties pane.
+     * This method is called once every time we open properties pane or when the user edit any format property. 
      */
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
-        return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
 }
 ```
@@ -421,7 +416,7 @@ Check the data in `update` method, to ensure that visual gets data:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
-    this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+    this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
     console.log('Visual update', options);
 
     const dataView: DataView = options.dataViews[0];
