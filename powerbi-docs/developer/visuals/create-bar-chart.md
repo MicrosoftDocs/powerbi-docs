@@ -573,10 +573,10 @@ In addition to scaling, this update method also handles selections and colors. T
 
 ### Populate the properties pane
 
-The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getFormattingModel-optional). This method builds and return modern format pane formatting model object that contain all format pane components and properties, Then places it inside the [**Format** pane](format-pane.md).
+The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and return modern format pane formatting model object that contain all format pane components and properties, Then places it inside the **Format** pane.
 In our case there will be format cards for `enableAxis` and `colorSelector` including formatting properties for `show` and `fill` according to *"objects"* in the *capabilities.json* file.
 
-To build formatting model developer should know all of its components, Check format pane components in [Format Pane](format-pane.md).
+To build formatting model developer should know all of its components, Check format pane components in Format Pane.
 
 To add a color picker for each category on the **Property** pane, add a for loop on `barDataPoints` and for each one add a new color picker format property to the formatting model.
 

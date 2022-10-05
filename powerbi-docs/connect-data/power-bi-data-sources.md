@@ -119,7 +119,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | Yes |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
-| Microsoft Exchange | Yes | Yes | No | Yes | No | No |
+| Microsoft Exchange | Yes | Yes | No | No | No | No |
 | Microsoft Exchange Online individual accounts  <sup>8</sup> | Yes | Yes | No | No | No | Yes |
 | Microsoft Graph Security | Yes | Yes | No | Yes | No | Yes |
 | Mixpanel | Yes | Yes | No | No | No | No |
