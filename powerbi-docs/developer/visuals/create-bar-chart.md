@@ -570,15 +570,15 @@ In addition to scaling, the update method also handles selections and colors. Th
 
 ### Populate the properties pane
 
-The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and returns a modern *format pane formatting model* object containing all the format pane components and properties. It then places the object inside the [**Format** pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals).
-In our case, there will be format cards for `enableAxis` and `colorSelector` including formatting properties for `show` and `fill` according to *"objects"* in the *capabilities.json* file.
+The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and returns a modern *format pane formatting model* object containing all the format pane components and properties. It then places the object inside the [**Format** pane](format-pane.md).
+In our case, we'll create format cards for `enableAxis` and `colorSelector`, including formatting properties for `show` and `fill`, according to the *"objects"* in the *capabilities.json* file.
 
-To build a formatting model, the developer should be familiar with all its components, Check out the components of the format pane in [Format Pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals).
+To build a formatting model, the developer should be familiar with all its components, Check out the components of the format pane in [Format Pane](format-pane.md).
 
 To add a color picker for each category on the **Property** pane, add a for loop on `barDataPoints` and for each one add a new color picker format property to the formatting model.
 
 ```typescript
-    /** Gets the settings to display in the formatting pane */
+   /** Gets the settings to display in the formatting pane */
     public getFormattingModel(): powerbi.visuals.FormattingModel {
         const enableAxisCard: powerbi.visuals.FormattingCard = {
             displayName: "Enable Axis",
@@ -671,7 +671,7 @@ To add a color picker for each category on the **Property** pane, add a for loop
             ]
         }
         return { cards: [enableAxisCard, colorSelectorCard] };
-    }
+    } 
 ```
 
 ## (Optional) Populate the properties pane using the formatting model Utils
