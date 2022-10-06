@@ -93,7 +93,11 @@ You can create automatic aggregations of submetrics up to a parent metric by cre
 First, make sure you're in edit mode.  Select the **pencil icon** to enter inline editing of a metric.  Next to the value and target, you'll see an indication of what type of metric it is: **manual, connected, or a roll up of the submetrics**.
 
    :::image type="content" source="media/service-goals-check-in/roll-up-edit-metric.png" alt-text="Screenshot showing a scorecard in edit mode.":::
+   
    :::image type="content" source="media/service-goals-check-in/roll-up-open-options.png" alt-text="Screenshot showing the types of metrics.":::
+   
+   :::image type="content" source="media/service-goals-check-in/roll-up-open-options-two.png" alt-text="Screenshot showing the types of roll up aggregations.":::
+
     
 With roll ups, you have the ability to choose between a few aggregation types.
 1. **SUM**: a sum of the submetric values
