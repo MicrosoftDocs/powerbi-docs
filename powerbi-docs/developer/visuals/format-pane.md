@@ -433,20 +433,6 @@ Adding `revertToDefaultDescriptors` to formatting cards will also make it possib
 
 The optional selector in formatting properties descriptor determines where each property is bound in the dataView. There are [four distinct options](./objects-properties.md#objects-selectors-types).
 
-You can add selector to formatting property in its descriptor object.
-Example taken from [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) for color custom visual data points using property selectors :
-```typescript
-new formattingSettings.ColorPicker({
-    name: "fill",
-    displayName: dataPoint.category,
-    value: { value: dataPoint.color },
-    selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
-    altConstantSelector: dataPoint.selectionId.getSelector(),
-    instanceKind: powerbi.VisualEnumerationInstanceKinds.ConstantOrRule
-}
-```
-
-
 ## Localization 
 
 For more about localization feature and to setup localization environment see [here]((localization.md)
