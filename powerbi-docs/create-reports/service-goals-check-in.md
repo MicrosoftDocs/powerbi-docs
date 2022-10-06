@@ -84,7 +84,7 @@ The scorecard filtered to _Premium_.
 
 1. Select **Save**. 
 
-## Create value and target roll ups
+## Create automatic submetric roll ups
 
 You can create automatic aggregations of submetrics up to a parent metric by creating a roll up.  These aggregations will re-calculate any time the submetric values change, and the history will be captured.  Roll ups are a great way to keep a parent metric up to date without having it backed by a report connection.  Roll ups work when submetrics are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
 
@@ -95,9 +95,6 @@ First, make sure you're in edit mode.  Select the **pencil icon** to enter inlin
    :::image type="content" source="media/service-goals-check-in/roll-up-edit-metric.png" alt-text="Screenshot showing a scorecard in edit mode.":::
    
    :::image type="content" source="media/service-goals-check-in/roll-up-open-options.png" alt-text="Screenshot showing the types of metrics.":::
-   
-   :::image type="content" source="media/service-goals-check-in/roll-up-open-options-two.png" alt-text="Screenshot showing the types of roll up aggregations.":::
-
     
 With roll ups, you have the ability to choose between a few aggregation types.
 1. **SUM**: a sum of the submetric values
@@ -105,17 +102,22 @@ With roll ups, you have the ability to choose between a few aggregation types.
 1. **MIN**: reflects the lowest submetric value
 1. **MAX**: reflects the largest submetric value
 
-   :::image type="content" source="media/service-goals-check-in/roll-up-edit-metric.png" alt-text="Screenshot showing dropdown options for roll up aggreation types.":::
+   :::image type="content" source="media/service-goals-check-in/roll-up-open-options-two.png" alt-text="Screenshot showing the types of roll up aggregations.":::
 
 The option you choose will automatically calculate the appropriate value and show it in either the current value or target value area. You can set up different roll up aggregation types on the current and target value, allowing for maximum flexibility.
 
    :::image type="content" source="media/service-goals-check-in/roll-up-sum-saved.png" alt-text="Screenshot showing a metric calculating the sum of its submetrics.":::
    
 ### More aspects of roll ups 
-1. Roll ups take place from the day it's set up moving forward - it will not recalculate or override historical data with rectroactive roll up values.
-1. If a user changes a metric from a roll up to a connected metric and they bring in the history via report connection, the report history will override historical roll up values.
-1. New roll up types will calculate with the new aggregation moving forward, but not replace the history.
-1. Roll ups will always show the same aggregation value of all submetrics, regardless of metric level permissions.  This means if person A only has view access to 3 out of 5 submetrics, they will still see the same parent metric value as someone who has access to all submetrics.  
+- To preserve historical values in the case of switching metric type from connected to roll up, ensure the toggle labeled **Clear metric values when connecting to a new report** in the metric connection settings is toggled off - in the left position, shown below.
+
+    :::image type="content" source="media/service-goals-check-in/roll-up-settings.png" alt-text="Scorecard data connection settings toggle.":::
+
+- Roll ups take place from the day it's set up moving forward - it will not remove, recalculate or override historical data with rectroactive roll up values in almost all scenarios.
+- One scenario where connected historical data will be deleted is if the person creating the roll up is NOT the metric connection owner. To preserve the history, ensure the metric connection owner is the same person as the roll up creator.
+- If a user changes a metric from a roll up to a connected metric and they bring in the history via report connection, the report history will override historical roll up values.
+- New roll up types will calculate with the new aggregation moving forward, but not replace the history.
+- Roll ups will always show the same aggregation value of all submetrics, regardless of metric level permissions.  This means if person A only has view access to 3 out of 5 submetrics, they will still see the same parent metric value as someone who has access to all submetrics.  
 
 
 ## Create automated status rules 
