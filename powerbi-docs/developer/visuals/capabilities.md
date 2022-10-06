@@ -254,7 +254,6 @@ Objects describe customizable properties that are associated with the visual. Th
 ```json
 "objects": {
     "myCustomObject": {
-        "displayName": "My Object Name",
         "properties": { ... }
     }
 }
