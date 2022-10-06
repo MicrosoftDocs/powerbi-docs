@@ -27,10 +27,10 @@ Objects describe customizable properties that are associated with a visual. An o
 
 ## Display name
 
-`displayName` is the name that will be shown in the property pane.
-
 > [!NOTE]
-> Deprecated/Unused since API 5.0+, Display name and description required to be added in formatting model objects (formatting cards, groups, slices).
+> Display name is deprecated from API version 5.0+. The display name and description are now added in the formatting model instead of the *capabilities.json* file.
+
+`displayName` is the name that will be shown in the property pane.
 
 ## Properties
 
@@ -167,22 +167,25 @@ An example of the data role that triggers the fill rule (`the last item`) is sho
 }
 ```
 
+## Formatting pane
 
-## getFormattingModel API method
+To customize the properties in the formatting pane, use one of the following methods, depending on what API version you're using.
 
-To use objects effectively in API version 5.0+, you need to implement `getFormattingModel` new API.
-It builds and return formatting model which includes full [properties pane](./format-pane.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
+### [getFormattingModel API method](#tab/getFormattingModel)
 
+> [!NOTE]
+> The `getFormattingModel` API method is supported from API versions 5.0+
+
+To use objects effectively in API version 5.0+, you need to implement the `getFormattingModel` method.  
+This method builds and returns a formatting model that includes full [properties pane](./format-pane.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
 
 ### Capabilities objects reflected in formatting model
 
-> [!NOTE]
-> Supported in API versions 5.0+
-
-Each formatting property we add to formatting model should have a corresponding object in capabilities. Formatting property required to contain descriptor  composed of object name and property name that match exactly (case sensitive) the corresponding object from capabilities.
+Each formatting property in the formatting model needs a corresponding object in the *capabilities.json* file. The formatting property should contain a descriptor with an object name and property name that exactly match the corresponding capabilities object (the object and property names are case sensitive).  
 For example:
 
-Formatting property in formatting model, See descriptor object content:
+For the following formatting property in the formatting model (See the descriptor object content):
+
 ```typescript
  const myCustomCard: powerbi.visuals.FormattingCard = {
             displayName: "My Custom Object Card",
@@ -211,7 +214,7 @@ Formatting property in formatting model, See descriptor object content:
         };
 ```
 
-The corresponding object from capabilities under `objects` section:
+The corresponding object from the capabilities `objects` section should be:
 
 ```json
     "objects": {
@@ -232,18 +235,18 @@ The corresponding object from capabilities under `objects` section:
 ```
 
 ### Formatting property selector
+
 The optional selector in formatting properties descriptor determines where each property is bound in the dataView. There are [four distinct options](#objects-selectors-types).
 
-##### Example
+#### Example
 
 The above `myCustomCard` example shows what formatting property in formatting model would look like for an object with one property `myCustomProperty`. This property object bound *statically* to `dataViews[index].metadata.objects`.
 Selector in descriptor can be changed accordingly to [selector type](#objects-selectors-types) you choose.
 
-
-## enumerateObjectInstances API method
+### [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
 
 > [!NOTE]
-> Deprecated since API version 5.0+, It was replaced by getFormattingModel new API
+> The enumerateObjectInstances method has been deprecated from API version 5.0. It was replaced by the `getFormattingModel` in the new API.
 
 To use objects effectively, you need a function in your custom visual called `enumerateObjectInstances`. This function populates the property pane with objects and also determines where your objects should be bound within the dataView.  
 
@@ -268,15 +271,11 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 }
 ```
 
-### Properties
+### enumerateObjectInstances properties
 
 The properties in `enumerateObjectInstances` reflect the properties that you defined in your capabilities. For an example, go to the end of this article.
 
-### Objects selector
-
-The selector in `enumerateObjectInstances` determines where each object is bound in the dataView. There are [four distinct options](#objects-selectors-types).
-
-##### Example
+### enumerateObjectInstances Example
 
 The following example shows what one objectEnumeration would look like for a customColor object with one property, *fill*. We want this object bound statically to `dataViews[index].metadata.objects`, as shown:
 
@@ -295,7 +294,16 @@ objectEnumeration.push({
 });
 ```
 
-## Objects selectors types
+---
+
+### Objects selectors types
+
+The selector in `enumerateObjectInstances` determines where each object is bound in the dataView. There are four distinct options:
+
+* [static](#static)
+* [columns](#columns)
+* [selector](#selector)
+* [scope identity](#scope-identity)
 
 #### static
 
@@ -317,7 +325,7 @@ selector: {
 
 #### selector
 
-This object is bound to the element that you created a `selectionID` for. In this example, let's assume that we've created `selectionID`s for some data points, and that we're looping through them.
+This object is bound to the element that you created a `selectionID` for. In this example, let's assume that we created `selectionID`s for some data points, and we're looping through them.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -336,3 +344,6 @@ selector: {
 }
 ```
 
+## Next steps
+
+[Performance tips](performance-tips.md)
