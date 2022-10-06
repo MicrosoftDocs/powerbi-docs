@@ -181,6 +181,17 @@ For example, the following code returns *Legend* for **en-US**, and *Обозн�
 let legend: string = this.localization.getDisplayName("Role_Legend");
 ```
 
+## Formatting and analytics pane localization
+> [!NOTE]
+> Relevant to API version 5.0+
+To support format pane and analytics pane localization on formatting components you'd like to localize, You will need to set localized string as the following:```typescript
+displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
+description: this.localization.getDisplayName("Font_Color_DescriptionKey");
+```
+ 
+For localize formatting model see [here](format-pane.md#localization).
+For localize formatting model utils [here](utils-formattingmodel.md#localization)
+
 ## Supported languages
 
 The table below contains a list of all the languages supported in Power BI, and the string that the `locale` variable returns for each one.

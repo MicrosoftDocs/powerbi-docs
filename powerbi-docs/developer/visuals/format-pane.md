@@ -424,7 +424,7 @@ The optional selector in formatting properties descriptor determines where each 
 ## Localization 
 
 For more about localization feature and to setup localization environment see [here]((localization.md)
-Use localization manager in formatting model when string localization is required:
+Use localization manager for formatting components that you'd like to localize their strings:
 
 ```typescript
 displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
