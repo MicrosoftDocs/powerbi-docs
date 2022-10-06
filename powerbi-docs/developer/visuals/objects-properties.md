@@ -19,18 +19,18 @@ Objects describe customizable properties that are associated with a visual. An o
 ```json
 "objects": {
     "myCustomObject": {
-        "displayName": "My Object Name",
         "properties": { ... }
     }
 }
 ```
 
-## Display name
+## Display name and description
 
 > [!NOTE]
-> Display name is deprecated from API version 5.0+. The display name and description are now added in the formatting model instead of the *capabilities.json* file.
+> Display name is deprecated from API version 5.0+. Capabilities display name and description are now added in the formatting model instead of the *capabilities.json* file.
 
 `displayName` is the name that will be shown in the property pane.
+`description` is description of formatting property will be shown to the user as a tooltip
 
 ## Properties
 
@@ -39,7 +39,6 @@ Objects describe customizable properties that are associated with a visual. An o
 ```json
 "properties": {
     "myFirstProperty": {
-        "displayName": "firstPropertyName",
         "type": ValueTypeDescriptor | StructuralTypeDescriptor
     }
 }
@@ -53,7 +52,6 @@ Example:
 ```json
 "properties": {
     "show": {
-        "displayName": "My Property Switch",
         "type": {"bool": true}
     }
 }
@@ -98,15 +96,11 @@ An example is shown in the following code:
 ```json
 "properties": {
     "showAllDataPoints": {
-        "displayName": "Show all",
-        "displayNameKey": "Visual_DataPoint_Show_All",
         "type": {
             "bool": true
         }
     },
     "fill": {
-        "displayName": "Fill",
-        "displayNameKey": "Visual_Fill",
         "type": {
             "fill": {
                 "solid": {
@@ -116,8 +110,6 @@ An example is shown in the following code:
         }
     },
     "fillRule": {
-        "displayName": "Color saturation",
-        "displayNameKey": "Visual_ColorSaturation",
         "type": {
             "fillRule": {}
         },
@@ -203,7 +195,7 @@ For the following formatting property in the formatting model (See the descripto
                                 descriptor: {
                                     objectName: "myCustomObject",
                                     propertyName: "myCustomProperty",
-                                    selector: null // selector is optional
+                                    selector: null
                                 },
                                 value: { value: "#000000" }
                             }

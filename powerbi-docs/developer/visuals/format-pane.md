@@ -1,9 +1,9 @@
 
 # Customize the format pane in Power BI custom visuals
 
-Starting from API version 5.0, developers can create visuals that use the [new Power format pane](../../fundamentals/desktop-format-pane.md). Developers can define the cards and their categories for any property in their custom visual, making it easier for report creators to use these visuals.
+Starting from API version 5.0, developers can create visuals that use the [new PowerBI format pane](../../fundamentals/desktop-format-pane.md). Developers can define formatting pane cards, card sub-categories and new formatting properties in their custom visual, making it easier for report creators to use these visuals.
 
-The new API uses the **FormattingModel** method to customize parts of the format and analytics panes.
+The new API uses the **getFormattingModel** method to customize format and analytics panes.
 
 > [!TIP]
 > The `getFormattingModel` method replaces the `enumerateObjectInstances` method used in earlier API versions.
@@ -12,20 +12,13 @@ The `getFormattingModel` returns a `FormattingModel` that defines how the visual
 
 In addition to all the old formatting pane capabilities, the new formatting model supports  new format pane capabilities, new properties and new hierarchies.
 
-To upgrade to API version 5.0+, set the `apiVersion` in your *pbiviz.json* file to `5.0` or later.
+To upgrade to API version 5.0+, set the `apiVersion` in your *pbiviz.json* file to `5.0.0` or later.
 
 ## Create a visual that supports the new format pane
 
 To create a custom visual that uses the new format pane:
 
-1. Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file.  
-   The following properties are required for each object:
-
-   * object name
-   * property name
-   * property type
-  
-   All other properties, including `DisplayName` and `description`, are now optional.
+1. Define all the customizable [`objects`](./objects-properties.md) in your *capabilities.json* file.
 
 2. Build the custom visual [**FormattingModel**](#formatting-model).
   Define the properties of your custom visual formatting model and build it using code (not JSON).
@@ -36,11 +29,11 @@ To create a custom visual that uses the new format pane:
 
 If you have a custom visual created with an older API and you want to migrate to the new format pane, or if you're creating a new custom visual:
 
-1. Set the `apiVersion` in your *pbiviz.json* file to `5.0` or later.
+1. Set the `apiVersion` in your *pbiviz.json* file to `5.0.0` or later.
 
 2. For each object name and property name in *capabilities.json*, create a matching formatting property. The formatting property should have a `descriptor` that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
 
-The `objects` properties in the capabilities file still have the same format and don't need to be changed.
+The `objects` properties in the capabilities file still have the same schema and don't need to be changed.
 
 For example, if the `circle` object in your *capabilities.json* file is defined like this:
 
@@ -55,11 +48,11 @@ For example, if the `circle` object in your *capabilities.json* file is defined 
                             "color": true
                         }
                     }
-                  }
-          },
+                }
+            },
         }
-      }
     }
+}
 ```
 
 The formatting Property in your model should be of type `ColorPicker` and look like this:
@@ -123,11 +116,6 @@ The following table shows the formatting property types in *capabilities.json* f
 | Color            | Fill                    | ColorPicker          |
 | Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
 | Text             | Text                    | <li>TextInput</li> <li>TextArea</li>  |
-
-Capabilities Formatting Objects
-
-| Type             | Capabilities Value Type | Formatting Property  |
-|------------------|-------------------------|----------------------|
 | Font size           | FontSize             | NumUpDown            |
 | Font family         | FontFamily           | FontPicker           |
 | Line Alignment      | Alignment            | AlignmentGroup       |
