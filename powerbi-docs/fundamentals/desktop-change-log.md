@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 10/04/2022
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,13 @@ ms.date: 09/29/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+## September 2022 QFE 3
+
+Version: 2.109.1021.0, Released: October 4, 2022
+
+Bug fixes/improvements:
+* Performance regression fix: customers will now see faster performance when they open and save .pbix files that have a large number of queries.
 
 ## September 2022 QFE 2
 
