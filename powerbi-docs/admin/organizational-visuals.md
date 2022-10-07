@@ -89,7 +89,7 @@ When this setting is enabled, all visuals created with an API earlier than v4.6.
 
 ### Export data to file
 
-When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization’s [**Export and sharing**](../guidance/admin-tenant-settings.md#export-data) settings.
+When this setting is enabled, users can download data from a custom visual into a file on their storage device. This setting is separate from and not affected by download restrictions applied in your organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
 
 >[!NOTE]
 >When this setting is enabled, a custom visual can export to files of the following types:
