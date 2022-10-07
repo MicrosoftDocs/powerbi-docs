@@ -78,7 +78,7 @@ Power BI admins work mostly in the Power BI admin portal. You should, however, b
 Now that you know the basics of what’s involved with Power BI administration, consult these articles to learn more:
 
 - [Use the Power BI admin portal](service-admin-portal.md)
-- [Tenant settings guidance](../guidance/admin-tenant-settings.md)
+- [About tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings)
 - [Use PowerShell cmdlets](/powershell/power-bi/overview)
 - [Power BI administration FAQ](service-admin-faq.yml)
 - [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)

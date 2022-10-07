@@ -4700,6 +4700,11 @@
             "source_path": "powerbi-docs/admin/service-admin-forgot-your-password.md",
             "redirect_url": "/power-bi/admin/power-bi-cannot-sign-in",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/admin-tenant-settings.md",
+            "redirect_url": "/power-bi/admin/service-admin-portal-about-tenant-settings",
+            "redirect_document_id": false
         }
     ]           
 }
