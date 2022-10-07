@@ -1,7 +1,7 @@
 ---
 title: Quick measure suggestions (experimental preview)
 description: Quick measure suggestions assist creation of DAX measures using natural language
-author: Sujata Narayana
+author: Sujata994
 ms.author: sunaraya
 ms.reviewer: ''
 ms.custom: ''
