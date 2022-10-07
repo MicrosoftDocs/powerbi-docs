@@ -414,6 +414,10 @@
       href: service-goals-create.md
     - name: "Create connected metrics"
       href: service-goals-create-connected.md
+    - name: "Create submetrics"
+      href: service-metrics-submetrics.md
+    - name: "Create automated status rules"
+      href: service-metrics-status-rules.md
     - name: "Stay on top of your metrics"
       href: service-goals-check-in.md        
     - name: "Set metric-level permissions"

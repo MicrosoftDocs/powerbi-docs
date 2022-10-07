@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/12/2022
+ms.date: 10/07/2022
 ms.custom: sample-sales&returnssamplev201912
 ---
 # Create scorecards and manual metrics in Power BI
@@ -80,23 +80,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
 ## Step 3 (Optional): Create submetrics 
 
-You can also define one or more submetrics for your metric. There are two entry points to create a submetric. 
-
-1. Open a scorecard and select **Edit**.
-
-   :::image type="content" source="media/service-goals-create/power-bi-goals-edit-scorecard.png" alt-text="Screenshot of Select the Edit pencil to edit the scorecard.":::
-
-1. Select the metric you want to create a submetric for, and select **Add submetric** on top of the scorecard.
-
-    :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-button.png" alt-text="Screenshot of Select the Add Submetric button.":::
-
-    Or Hover over the metric you want to create a submetric for, select **More options (...)** > **New submetric**.  
-
-    :::image type="content" source="media/service-goals-create/power-bi-goals-add-subgoal-more-options.png" alt-text="Screenshot of Select more options, then add submetric.":::
-
-1. Repeat the first step as needed to create more submetrics.
-
-    Make sure you have the metric selected so you can create submetrics.
+You can also define one or more submetrics for your metric. Like their parent metrics, submetrics can be either connected or set manually. See [Create submetrics](service-metrics-submetrics.md) for details.
 
 ## Step 4 (Optional): Update the metric tracking cycle 
 
