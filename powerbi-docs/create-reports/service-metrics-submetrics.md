@@ -44,7 +44,7 @@ You can define one or more submetrics for a metric. Like their parent metrics, s
 
 ## Create submetrics that roll up to the metric
 
-You can create also *rollup* submetrics, whose values automatically aggregate up to a parent metric. These aggregations recalculate any time the submetric values change, and capture the history. Rollups are a great way to keep a parent metric up to date without having it backed by a report connection. Rollups work when submetrics are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
+You can create also *rollup* submetrics, whose values automatically aggregate up to a parent metric. These aggregations recalculate anytime the submetric values change, and capture the history. Rollups are a great way to keep a parent metric up to date without having it backed by a report connection. Rollups work when submetrics are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
 
 ### Get started creating rollups
 
@@ -52,7 +52,7 @@ First, make sure you're in edit mode.
 
 1. Select the **pencil icon** to enter inline editing of a metric.  
 
-    :::image type="content" source="media/service-goals-check-in/roll-up-edit-metric.png" alt-text="Screenshot showing a scorecard in edit mode.":::
+    :::image type="content" source="media/service-metrics-submetrics/roll-up-edit-metric.png" alt-text="Screenshot showing a scorecard in edit mode.":::
 
 1. Next to the value and target, you see an indication of what type of metric it is:
 
@@ -60,7 +60,7 @@ First, make sure you're in edit mode.
     **Use submetrics**
     **Connected to data**
 
-    :::image type="content" source="media/service-goals-check-in/roll-up-open-options.png" alt-text="Screenshot showing the types of metrics.":::
+    :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="Screenshot showing the types of metrics.":::
 
 1. When you choose rollup submetrics, you can choose the aggregation type:
 
@@ -69,15 +69,15 @@ First, make sure you're in edit mode.
     **MIN**: reflects the lowest submetric value
     **MAX**: reflects the largest submetric value
 
-    :::image type="content" source="media/service-goals-check-in/roll-up-open-options-two.png" alt-text="Screenshot showing the types of rollup aggregations.":::
+    :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options-two.png" alt-text="Screenshot showing the types of rollup aggregations.":::
 
     The option you choose automatically calculates the appropriate value and shows it in either the **Current value** or **Target value** area. You can set up different rollup aggregation types on the current and target value, allowing for maximum flexibility.
 
-    :::image type="content" source="media/service-goals-check-in/roll-up-sum-saved.png" alt-text="Screenshot showing a metric calculating the sum of its submetrics.":::
+    :::image type="content" source="media/service-metrics-submetrics/roll-up-sum-saved.png" alt-text="Screenshot showing a metric calculating the sum of its submetrics.":::
 
 ### Preserve historical values
 
-You may want to preserve historical values in the case of switching metric type from connected to rollup.
+You may want to preserve historical values in the case of switching metric type from connected to rollup type.
 
 1. In **Edit** mode for the scorecard, select **More options (...)** > **See details** next to the metric.
 
@@ -85,9 +85,9 @@ You may want to preserve historical values in the case of switching metric type 
 
 2. One the **Connections** tab, ensure you turn off the toggle labeled **Clear metric values when connecting to a new report**.
 
-    :::image type="content" source="media/service-goals-check-in/roll-up-settings.png" alt-text="Screenshot showing scorecard data connection settings toggle.":::
+    :::image type="content" source="media/service-metrics-submetrics/roll-up-settings.png" alt-text="Screenshot showing scorecard data connection settings toggle.":::
 
-### Considerations and limitatons
+### Considerations and limitations
 
 - Rollups take place from the day they're set up moving forward. They don't remove, recalculate, or override historical data with retroactive rollup values, in almost all scenarios.
 - One scenario where connected historical data is deleted is if the person creating the rollup is *not* the metric connection owner. To preserve the history, ensure the metric connection owner is the same person as the rollup creator.
