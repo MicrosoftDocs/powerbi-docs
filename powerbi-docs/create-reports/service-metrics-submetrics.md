@@ -15,7 +15,7 @@ ms.date: 10/07/2022
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. *Submetrics* make scorecards more readable by collecting related metrics together under a single parent metric. You can expand and collapse the parent metric. Submetrics can either be standalone values, unrelated to the parent value, or they can roll up to the parent value. Read about *rollups* later in this article.
+Metrics in Power BI let customers curate their metrics and track them against key business objectives, in a single pane. *Submetrics* make scorecards more readable by collecting related metrics together under a single parent metric. You can expand and collapse the parent metric. Submetrics can either be standalone values, unrelated to the parent value, or they can roll up to the parent value. Read about [*rollups*](#get-started-creating-rollups) later in this article.
 
 ## Create a submetric 
 
@@ -35,12 +35,12 @@ You can define one or more submetrics for a metric. Like their parent metrics, s
 
 1. Repeat the first step as needed to create more submetrics.
 
-    Make sure you have the metric selected so you can create submetrics.
+    Make sure you've selected the metric so you can create submetrics.
 
 1. See these articles for details on creating manual or connected metrics:
 
-    [Create a manual metric](service-goals-create.md#step-2-create-a-manual-metric) 
-    [Create connected metrics](service-goals-create-connected.md)
+    - [Create a manual metric](service-goals-create.md#step-2-create-a-manual-metric) 
+    - [Create connected metrics](service-goals-create-connected.md)
 
 ## Create submetrics that roll up to the metric
 
@@ -56,18 +56,18 @@ First, make sure you're in edit mode.
 
 1. Next to the value and target, you see an indication of what type of metric it is:
 
-    **Manual metric**
-    **Use submetrics**
-    **Connected to data**
+    - **Manual metric**
+    - **Use submetrics**
+    - **Connected to data**
 
     :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="Screenshot showing the types of metrics.":::
 
 1. When you choose rollup submetrics, you can choose the aggregation type:
 
-    **SUM**: a sum of the submetric values
-    **AVERAGE**: an average of the submetric values
-    **MIN**: reflects the lowest submetric value
-    **MAX**: reflects the largest submetric value
+    - **SUM**: a sum of the submetric values
+    - **AVERAGE**: an average of the submetric values
+    - **MIN**: reflects the lowest submetric value
+    - **MAX**: reflects the largest submetric value
 
     :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options-two.png" alt-text="Screenshot showing the types of rollup aggregations.":::
 
@@ -77,23 +77,23 @@ First, make sure you're in edit mode.
 
 ### Preserve historical values
 
-You may want to preserve historical values in the case of switching metric type from connected to rollup type.
+You may want to preserve historical values if you're switching metric type from connected to rollup type.
 
 1. In **Edit** mode for the scorecard, select **More options (...)** > **See details** next to the metric.
 
     :::image type="content" source="media/service-metrics-submetrics/metrics-more-options-see-details.png" alt-text="Screenshot showing selecting More options, then See details.":::
 
-2. One the **Connections** tab, ensure you turn off the toggle labeled **Clear metric values when connecting to a new report**.
+2. On the **Connections** tab, ensure that you turn off the toggle labeled **Clear metric values when connecting to a new report**.
 
     :::image type="content" source="media/service-metrics-submetrics/roll-up-settings.png" alt-text="Screenshot showing scorecard data connection settings toggle.":::
 
-### Considerations and limitations
+### Rollups considerations
 
 - Rollups take place from the day they're set up moving forward. They don't remove, recalculate, or override historical data with retroactive rollup values, in almost all scenarios.
 - One scenario where connected historical data is deleted is if the person creating the rollup is *not* the metric connection owner. To preserve the history, ensure the metric connection owner is the same person as the rollup creator.
-- If a user changes a metric from a rollup to a connected metric and they bring in the history via report connection, the report history overrides historical rollup values.
+- If a scorecard author changes a metric from a rollup to a connected metric and they bring in the history via report connection, the report history overrides historical rollup values.
 - New rollup types calculate with the new aggregation moving forward, but don't replace the history.
-- Rollups will always show the same aggregation value of all submetrics, regardless of metric level permissions.  This means if person A only has view access to 3 out of 5 submetrics, they will still see the same parent metric value as someone who has access to all submetrics.  
+- Rollups always show the same aggregation value of all submetrics, regardless of metric level permissions.  This means if person A only has view access to 3 out of 5 submetrics, they still see the same parent metric value as someone who has access to all submetrics.  
 
 ## Next steps
 

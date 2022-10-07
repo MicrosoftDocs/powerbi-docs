@@ -416,6 +416,8 @@
       href: service-goals-create-connected.md
     - name: "Create submetrics"
       href: service-metrics-submetrics.md
+    - name: "Create custom statuses"
+      href: service-goals-custom-status.md
     - name: "Create automated status rules"
       href: service-metrics-status-rules.md
     - name: "Stay on top of your metrics"
@@ -424,8 +426,6 @@
       href: service-goals-set-permissions.md
     - name: "Arrange metrics and columns in scorecards"
       href: service-goals-move.md
-    - name: "Create custom statuses"
-      href: service-goals-custom-status.md
     - name: "Metrics and Power Automate"
       href: service-goals-power-automate.md
     - name: "Create and add Scorecards in reports"

@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 10/07/2022
 ---
 
-# Create automated status rules for metrics  in the Power BI service
+# Create automated status rules for metrics in the Power BI service
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -37,10 +37,14 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
     :::image type="content" source="media/service-goals-check-in/select-qualifier-second-dropdown.png" alt-text="Screenshot of Second dropdown showing qualifiers such as greater than or equal to.":::
 
-1. The last setting(s) is based on your first dropdown.  If you chose **Value**, you can either set the value or the percent or target met.  If you selected **Date** in the first dropdown, you can select the date you want to base your rule on.
+1. The last setting is based on your first dropdown, either **Value** or **Date**.  
+
+    If you chose **Value**, you can either set the value or the percent or target met.
 
     :::image type="content" source="media/service-goals-check-in/setting-value.png" alt-text="Screenshot of Setting the value for the rule.":::
-    
+
+    If you selected **Date** in the first dropdown, you can select the date you want to base your rule on.
+
     :::image type="content" source="media/service-goals-check-in/date-picker.png" alt-text="Screenshot Showing date picker for date driven rule.":::
 
 1. Now set the status that should be shown when the rules are met, and also the **Otherwise** status. 
