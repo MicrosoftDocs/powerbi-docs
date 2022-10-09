@@ -52,10 +52,10 @@ References:
 |6|Workspace URL|Workspace URL|https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17|
 |7|Workspace ID|Workspace identifier|8b5ac04e-89c1-4fc6-a364-e8411dfd8d17|
 |8|URL|Content Item URL for report, app, dashboard, scorecard etc.|https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17/reports/762049eb-7a69-4c39-bf19-75a5b7fcce1d/ReportSection2|
-|9|SharingLinksURL|Sharing Link as per Share a report using a link|["https://app.powerbi.com/links/xyz123"]|
+|9|SharingLinksURL|Sharing Link as per [Share a report using a link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)|["https://app.powerbi.com/links/xyz123"]|
 |10|IconURL||cdn.com/report.png|
-|11|Description|Content description as per Report settings|Sample containing retail sales data|
-|12|Owner/Creator|Azure AD User Principal Name of the User that Created the Content as per Azure AD user principal name|user1@griffin1.org|
+|11|Description|Content description as per [Report settings](../create-reports/power-bi-report-settings.md)|Sample containing retail sales data|
+|12|Owner/Creator|Azure AD User Principal Name of the User that Created the Content as per [Azure AD user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname/)|user1@griffin1.org|
 |13|CreatedDate|Date the content was created|2011-06-30T23:32:46Z|
 |14|LastModifiedDate|Last modified date for the content|2011-06-30T23:32:46Z|
 |15|LastModifiedUser|Azure AD User Principal Name for the last person who modified the content|user1@griffin1.org|
