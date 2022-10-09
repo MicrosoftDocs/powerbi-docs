@@ -44,6 +44,7 @@ References:
 
 |#|Property|What is Shared|Example|
 |---------|---------|---------|---------|
+|Lines 1 - 16 are artifact metadata which is mainly utilized when using the "Search" mechanism to search for Power BI content within your Microsoft 365 services |
 |1|TenantID|Azure AD Tenant Identifier|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
 |2|Artifact ID|Identifier for the Content Item (report, app, dashboard, scorecard etc.)|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
 |3|ACL|Access Control List with permissions and Azure AD User, Security Group and Distribution List Identifiers|{"accessType": "grant", "id" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee", "type" : "read" }|
@@ -60,6 +61,7 @@ References:
 |14|LastModifiedDate|Last modified date for the content|2011-06-30T23:32:46Z|
 |15|LastModifiedUser|Azure AD User Principal Name for the last person who modified the content|user1@griffin1.org|
 |16|LastRefreshDate|Last refresh date for the content|2011-06-30T23:32:46Z|
+|Lines 17 - 20 is user activity that is utilized for showing Power BI content within your "Recents" and "Recommended" within Office.com |
 |17|UserID|Azure AD User Principal Name for the user who acted on the content|user1@griffin1.org|
 |18|Signal Type|The type of action the user took on the content (Viewed, Modified)|Viewed|
 |19|ActorID|Users Azure AD ID for the user who acted on the content|aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee|
