@@ -4706,6 +4706,7 @@
             "redirect_url": "/power-bi/admin/service-admin-portal-about-tenant-settings",
             "redirect_document_id": false
         }
+        ,
         {
             "source_path": "powerbi-docs/admin/admin-microsoft-graph-metadata.md",
             "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
