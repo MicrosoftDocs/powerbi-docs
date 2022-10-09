@@ -42,6 +42,29 @@ References:
 
 ## Data that will be shared with Microsoft 365
 
+|#|Property|What is Shared|Example|
+|---------|---------|---------|---------|
+|1|TenantID|Azure AD Tenant Identifier|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
+|2|Artifact ID|Identifier for the Content Item (report, app, dashboard, scorecard etc.)|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
+|3|ACL|Access Control List with permissions and Azure AD User, Security Group and Distribution List Identifiers|{"accessType": "grant", "id" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee", "type" : "read" }|
+|4|DisplayName[VA1][JR2][VA3]|Display name for the report, dashboard, etc.|Retail Analysis Sample|
+|5|Workspace name|Workspace name as per Create a workspace|Retail workspace|
+|6|Workspace URL[VA4]|Workspace URL|https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17|
+|7|Workspace ID|Workspace identifier|8b5ac04e-89c1-4fc6-a364-e8411dfd8d17|
+|8|URL|Content Item URL for report, app, dashboard, scorecard etc.|https://powerbi-df.analysis-df.windows.net/groups/8b5ac04e-89c1-4fc6-a364-e8411dfd8d17/reports/762049eb-7a69-4c39-bf19-75a5b7fcce1d/ReportSection2|
+|9|SharingLinksURL|Sharing Link as per Share a report using a link|["https://app.powerbi.com/links/xyz123"]|
+|10|IconURL||cdn.com/report.png|
+|11|Description|Content description as per Report settings|Sample containing retail sales data|
+|12|Owner/Creator|Azure AD User Principal Name of the User that Created the Content as per Azure AD user principal name|user1@griffin1.org|
+|13|CreatedDate|Date the content was created|2011-06-30T23:32:46Z|
+|14|LastModifiedDate|Last modified date for the content|2011-06-30T23:32:46Z|
+|15|LastModifiedUser|Azure AD User Principal Name for the last person who modified the content|user1@griffin1.org|
+|16|LastRefreshDate|Last refresh date for the content|2011-06-30T23:32:46Z|
+|17|UserID|Azure AD User Principal Name for the user who acted on the content|user1@griffin1.org|
+|18|Signal Type|The type of action the user took on the content (Viewed, Modified)|Viewed|
+|19|ActorID|Users Azure AD ID for the user who acted on the content|aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee|
+|20|StartTime/EndTime|Date/Time the user performed the action on the content|2011-06-30T23:32:46Z[VA5]|
+
 |Property  |Source  |What is shared  |Example  | Data classification  |  Storage location  |
 |---------|---------|---------|---------|---------|---------|
 |TenantID     | PBI Store        |  Azure AD Tenant Identifier       |  762049eb-7a69-4c39-bf19-75a5b7fcce1d       |OII  | SCD  |
