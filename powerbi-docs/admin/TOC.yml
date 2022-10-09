@@ -13,8 +13,6 @@
       href: power-bi-cannot-sign-in.md
     - name: How to use the same account login for Power BI and Azure
       href: service-admin-how-to-use-the-same-account-as-azure.md 
-    - name: Power BI and Microsoft Graph data sharing
-      href: admin-microsoft-graph-metadata.md      
     - name: Frequently asked questions (FAQ)
       href: service-admin-faq.yml                       
   - name: System administration
