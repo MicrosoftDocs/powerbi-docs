@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/07/2022
+ms.date: 10/10/2022
 ---
 
 # Create submetrics in the Power BI service
@@ -44,7 +44,7 @@ You can define one or more submetrics for a metric. Like their parent metrics, s
 
 ## Create submetrics that roll up to the metric
 
-You can create also *rollup* submetrics, whose values automatically aggregate up to a parent metric. These aggregations recalculate anytime the submetric values change, and capture the history. Rollups are a great way to keep a parent metric up to date without having it backed by a report connection. Rollups work when submetrics are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
+You can also create *rollup* submetrics, whose values automatically aggregate up to a parent metric. These aggregations recalculate anytime the submetric values change, and capture the history. Rollups are a great way to keep a parent metric up to date without having it backed by a report connection. Rollups work when submetrics are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
 
 ### Get started creating rollups
 
