@@ -162,7 +162,7 @@ There are some limitations to the B2B experience that you should be aware of:
   * Sending ad hoc invites isn't supported for workspace access lists
   * Power BI Publisher for Excel isn't supported for guest users
   * Guest users can't install a Power BI Gateway and connect it to your organization
-  * Guest users can't install apps publish to the entire organization
+  * Guest users can't install apps published to the entire organization
   * Guest users can't use Analyze in Excel
   * Guest users can't be @mentioned in commenting
   * Guest users who use this capability should have a work or school account
