@@ -76,7 +76,7 @@ We recommend that an aggregation follows a basic rule: Its row count should be a
 
 ## Connecting to tabular models
 
-You can create a composite model that connects to a Power BI dataset or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions). In either case, you're connecting to a data source that's another tabular model. You might create this type of composite model to:
+You can create a composite model that connects to a Power BI dataset or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true). In either case, you're connecting to a data source that's another tabular model. You might create this type of composite model to:
 
 - Extend a source model with additional data.
 - Combine multiple models.
@@ -124,7 +124,7 @@ The difference in the result in subtle. When Power BI evaluates the **RegionalSa
 
 Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns, and these tables reside in different source groups. Further, it's a high-cardinality relationship: The earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100, so there's a total of 73,415 rows in the table (one row for each date in the 1900-2100 time span).
 
-:::image type="content" source="media/composite-model-guidance/example-cross-source-group-relationship.png" alt-text="Diagram shows the model design as described in the previous paragraph.":::
+:::image type="content" source="media/composite-model-guidance/example-cross-source-group-relationship.png" alt-text="Diagram shows the example model design as described in the previous paragraph.":::
 
 There are two concerns.
 
