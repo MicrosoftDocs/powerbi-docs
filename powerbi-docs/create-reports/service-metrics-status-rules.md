@@ -19,7 +19,7 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
 :::image type="content" source="media/service-goals-check-in/rule-types.png" alt-text="Screenshot Showing the different types of status rules including value based, % of target based, and date based.":::
 
-### Get started creating automated rules
+## Get started creating automated rules
 
 1. In **Edit** mode for the scorecard, select **More options (...)** > **See details** next to the metric.
 
