@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/07/2022
+ms.date: 10/15/2022
 ---
 
 # Power BI modeling guidance for Power Platform
@@ -30,8 +30,13 @@ Because of its ease of setup, rapid deployment, and widespread adoption, Dataver
 Connecting Power BI to Dataverse involves creating a Power BI data model. You can choose from three methods to create a Power BI model:
 
 - **Import Dataverse data:** This method caches (stores) Dataverse data in the Power BI model. It delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, allowing them to integrate data from other sources. Because of these strengths, it's the default mode when creating a model in Power BI Desktop.
-- **Create a DirectQuery connection:** This method is an alternative to importing data. A Power BI DirectQuery model consists only of metadata defining the model structure. When reports query the model, native queries are sent to Dataverse to retrieve data. Consider creating a DirectQuery model when data volumes are too large to cache (or refresh durations take too long), when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
 - **Import Dataverse data by using Azure Synapse Link:** This method is a variation on the import method, because it also caches data in the Power BI model, but does so by connecting to [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is). By using [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake), Dataverse tables are continuously replicated to Azure Synapse or Azure Data Lake Storage (ADLS) Gen2.
+- **Create a DirectQuery connection:** This method is an alternative to importing data. A Power BI DirectQuery model consists only of metadata defining the model structure. When reports query the model, Power BI sends native queries to Dataverse to retrieve data. Consider creating a DirectQuery model when data volumes are too large to cache (or refresh durations take too long), when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
+
+> [!IMPORTANT]
+> While a DirectQuery model can be a good alternative when you have large data volumes or when you need near real-time reporting, it might not perform well when your data source is Dataverse. That's because queries sent to Dataverse involve translation in order to enforce role permissions, which can result in slow performance.
+>
+> We recommend that you only create a DirectQuery connection to Dataverse when you have less than 20,000 rows of data or when Dataverse must enforce permissions for Power BI users. In many cases, the effort to replicate role permissions in a Power BI import model is justified to achieve a responsive model. As described in this article, you can create a DirectQuery model to support specific requirements, and create an import model for general access to all data. As always, it's important that you test for performance before publishing your model.
 
 To determine the right method for your Power BI model, you should consider:
 
@@ -59,10 +64,10 @@ When developing an import model, you should strive to minimize the data that's t
 
 DirectQuery models work well with large data volumes because Power BI doesn't store the data. However, there might be a need to optimize the data source to ensure queries perform well. You should also ensure that the data source has sufficient resources for the DirectQuery workload.
 
-DirectQuery is also a good choice when the report's result set isn't large (meaning that there are fewer than 100,000 rows in the report's source tables, or the result returned to the report after filters are applied is less than 100,000 rows). In this case, you can [create a Power BI report by using the Dataverse connector](/powerapps/maker/data-platform/data-platform-powerbi-connector).
+A DirectQuery connections to Dataverse is only a good choice when the report's result set isn't large (meaning that there are fewer than 20,000 rows in the report's source tables, or the result returned to the report after filters are applied is less than 20,000 rows). In this case, you can [create a Power BI report by using the Dataverse connector](/powerapps/maker/data-platform/data-platform-powerbi-connector).
 
 > [!NOTE]
-> The 100,000 row size isn't a hard limit. However, each data source query must return a result that's less than 80 MB and within two minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design strategies.
+> The 20,000 row size isn't a hard limit. However, each data source query must return a result that's less than 80 MB and within two minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design strategies.
 
 When the query result size is in the range of a few hundred thousand rows, you can consider using [Premium features of dataflows](/power-bi/transform-model/dataflows/dataflows-premium-features?tabs=gen2) or [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) datasets.
 
@@ -251,10 +256,13 @@ Generally, you should import data to Power BI wherever possible. However, there 
 - The source data is fast-changing and report users need to see up-to-date data.
 - You need Dataverse to enforce user-specific permissions.
 
-Bear in mind that there are many limitations related to DirectQuery storage mode:
+> [!IMPORTANT]
+> While a DirectQuery model can be a good alternative when you have large data volumes or when you need near real-time reporting, it might not perform well when your data source is Dataverse. That's because queries sent to Dataverse involve translation in order to enforce role permissions, which can result in slow performance.
+
+Bear in mind that there are many limitations related to DirectQuery storage mode.
 
 - Power Query (M) queries can't be overly complex because these queries must translate to native queries that are supported by Dataverse. So, for example, it's not possible to use pivot or unpivot transformations.
-- Analytic query performance can be slow, especially if Dataverse isn't optimized (with indexes or materialized views), or there aren't sufficient resources for the analytic workload.
+- Analytic query performance can be slow, especially when Dataverse enforce role-based security, or it isn't optimized (with indexes or materialized views), or there aren't sufficient resources for the analytic workload.
 - Analytic queries can impact on the performance of Dataverse. It could result in a slower experience for other workloads, including write operations.
 
 For more information about determining when to develop a DirectQuery model, see [Choose a Power BI model framework](/learn/modules/choose-power-bi-model-framework/).
@@ -290,7 +298,7 @@ For more information, see [Single sign-on (SSO) for DirectQuery sources](/power-
 
 ### Replicate "My" filters in Power Query
 
-When using [Microsoft Dynamics 365 Customer Engagement (CE)](/dynamics365/customerengagement/on-premises/basics/basics-guide?view=op-9-1) and model-driven Power Apps built on Dataverse, you can create views that show only records where a username field, like **Owner**, equals the current user. For example, you might create views named "My open opportunities", "My active cases", and others.
+When using [Microsoft Dynamics 365 Customer Engagement (CE)](/dynamics365/customerengagement/on-premises/basics/basics-guide?view=op-9-1&preserve-view=true) and model-driven Power Apps built on Dataverse, you can create views that show only records where a username field, like **Owner**, equals the current user. For example, you might create views named "My open opportunities", "My active cases", and others.
 
 Consider an example of how the Dynamics 365 *My Active Accounts* view includes a filter where *Owner equals current user*.
 
@@ -315,6 +323,12 @@ in
 ```
 
 This query will retrieve data by filtering the **ownerid** column by the current user. When you publish the model to the Power BI service, you must enable single sign-on (SSO) so Power BI will send the report user's authenticated Azure AD credentials to Dataverse.
+
+### Create a general all-purpose model
+
+You can create a DirectQuery model that delivers all data and enforces Dataverse permissions _knowing_ that performance will be slow. This model could serve reports that must all attributes and explore historical depth. You can then supplement this model with special import models that target specific subjects or audiences.
+
+For example, a special import model could provide access to all Dataverse data but not enforce any permissions. This model would be suited to administrators or senior employees. As another example, when Dataverse enforces role-based permissions by sales region, you could create an import model that loads data for each sales region. YOu can then grant read permission to the dataset to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
 
 ## Enterprise scale with Azure Synapse Link
 

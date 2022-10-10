@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/07/2021
+ms.date: 10/15/2021
 ---
 
 # DirectQuery model guidance in Power BI Desktop
@@ -16,9 +16,12 @@ This article targets data modelers developing Power BI DirectQuery models, devel
 
 This article is not intended to provide a complete discussion on DirectQuery model design. For an introduction, refer to the [DirectQuery models in Power BI Desktop](../connect-data/desktop-directquery-about.md) article. For a deeper discussion, refer directly to the [DirectQuery in SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf) whitepaper. Bear in mind that the whitepaper describes using DirectQuery in SQL Server Analysis Services. Much of the content, however, is still applicable to Power BI DirectQuery models.
 
-This article does not directly cover Composite models. A Composite model will consist of at least one DirectQuery source, and possibly more. The guidance described in this article is still relevant—at least in part—to Composite model design. However, the implications of combining Import tables with DirectQuery tables are not in scope for this article. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
+This article does not directly cover composite models. A Composite model will consist of at least one DirectQuery source, and possibly more. The guidance described in this article is still relevant—at least in part—to Composite model design. However, the implications of combining Import tables with DirectQuery tables are not in scope for this article. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
 It is important to understand that DirectQuery models impose a different workload on the Power BI environment (Power BI service or Power BI Report Server) and also on the underlying data sources. If you determine that DirectQuery is the appropriate design approach, we recommend that you engage the right people on the project. We often see that a successful DirectQuery model deployment is the result of a team of IT professionals working closely together. The team usually consists of model developers and the source database administrators. It can also involve data architects, and data warehouse and ETL developers. Often, optimizations need to be applied directly to the data source to achieve good performance results.
+
+> [!NOTE]
+> While a DirectQuery model can be a good alternative when you have large data volumes or when you need near real-time reporting, it might not perform well when your data source is Dataverse. That's because queries sent to Dataverse involve translation in order to enforce role permissions, which can result in slow performance. For more information, see [Power BI modeling guidance for Power Platform](powerbi-modeling-guidance-for-power-platform.md).
 
 ## Design in Power BI Desktop
 
