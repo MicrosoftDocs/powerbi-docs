@@ -345,7 +345,7 @@ Power BI produces a categorical data view with the following set of categories.
 }
 ```
 
-Each `category` maps to a set of `values` as well. Each of these `values` are grouped by `series`, which is expressed as years.
+Each `category` maps to a set of `values` as well. Each of these `values` is grouped by `series`, which is expressed as years.
 
 For example, each `values` array represents one year.
 Also, each `values` array has four values: Canada, USA, UK, and Mexico:
