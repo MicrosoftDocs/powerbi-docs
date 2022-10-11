@@ -16,7 +16,7 @@ Microsoft Excel is the most common data analysis tool for information workers an
 
 In many organizations, data sits in multiple silos, including in Excel workbooks, across the enterprise. These silos make it hard for users to find the data they need, resulting in potential business losses.
 
-You can discover and connect to centralized, secure data in Power BI from wherever you work, including in Microsoft Excel and Microsoft Teams. By ccombining the versatility of Excel with the governance and security standards of Power BI, workers can be confident they are using the right data in a secure way while making better decisions to achieve business goals and foster an enhanced data culture.
+You can discover and connect to centralized, secure data in Power BI from wherever you work, including in Microsoft Excel and Microsoft Teams. By combining the versatility of Excel with the governance and security standards of Power BI, you can be confident that you're using the right data in a secure way. This security means that you can make better decisions to achieve business goals and foster an enhanced data culture.
 
 :::image type="content" source="media/service-connect-power-bi-datasets-excel/power-bi-dataset-excel-pivottable.png" alt-text="Screenshot of PivotTable and Power BI datasets in Excel.":::
 
