@@ -40,6 +40,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
    - *Version: 2.109.801.0 (September 2022), Released: September 26, 2022*
         - Support for September 2022 Power BI Report Server
         - Bug fixes
+   - *Version: 2.109.1021.0 (September 2022), Released: October 4, 2022*
+        - Performance fix for open and save of PBIX files with large number of queries.
            
 ## May 2022
 - **Power BI Report Server**

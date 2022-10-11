@@ -110,7 +110,7 @@ This `ExportContent` setting enables the visual to export data to files in the f
 * .pdf
 * .xlsx
 
-This setting is separate from and not affected by download restrictions applied in the organization’s [Export and sharing](/power-bi/guidance/admin-tenant-settings#export-data) settings.
+This setting is separate from and not affected by download restrictions applied in the organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
 
 #### Example of privileges setting allowing downloading to a file
 
