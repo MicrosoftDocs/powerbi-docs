@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 10/11/2022
 LocalizationGroup: Administration
 ---
 
@@ -19,13 +19,7 @@ Use [Customer Lockbox for Microsoft Azure](/azure/security/fundamentals/customer
 
 Typically, Customer Lockbox is used to help Microsoft engineers troubleshoot a Power BI service support request. Customer Lockbox can also be used when Microsoft identifies a problem, and a Microsoft-initiated event is opened to investigate the issue.
 
-## Requirements
-
-To enable Customer Lockbox, you need to be a Power BI tenant admin. An Azure subscription isn't needed.
-
-* Customer Lockbox for Power BI is available for all Power BI tenants, free of charge.
-
-* Support is included for Power BI Premium and Pro customers.
+To enable Customer Lockbox, you need to be a Power BI tenant admin. An Azure subscription isn't needed. Customer Lockbox for Power BI is available for all Power BI tenants, free of charge.
 
 ## Microsoft access request
 
@@ -69,17 +63,13 @@ Customer Lockbox logs are stored in the [Azure Monitor activity log](/azure/azur
 
 <--- Screenshot of activity logs --->
 
-## Customer Lockbox integration with Azure Security Benchmark
-
-In [Azure Security Benchmark](/security/benchmark/azure/overview), we've introduced [baseline control 3.13](/security/benchmark/azure/security-control-identity-access-control#313-provide-microsoft-with-access-to-relevant-customer-data-during-support-scenarios) which covers Customer Lockbox applicability. Customers can use the benchmark to review Customer Lockbox applicability for their service.
-
 ## Exclusions
 
 Customer Lockbox requests aren't triggered in the following engineering support scenarios:
 
 * Emergency scenarios that fall outside of standard operating procedures. For example, a major service outage requires immediate attention to recover or restore services in an unexpected scenario. These events are rare and usually don't require access to customer data.
 
-* A Microsoft engineer accesses the Azure platform as part of troubleshooting, and is accidentally exposed to customer data. For example, during troubleshooting the Azure Network Team captures a packet on a network device. Such scenarios don't usually result in access to meaningful customer data. Customers can further protect their data using in transit and at rest encryption.
+* A Microsoft engineer accesses the Azure platform as part of troubleshooting, and is accidentally exposed to customer data. For example, during troubleshooting the Azure Network Team captures a packet on a network device. Such scenarios don't usually result in access to meaningful customer data.
 
 * External legal demands for data. For details, see [government requests for data](https://www.microsoft.com/trust-center/?rtc=1) on the Microsoft Trust Center.
 
