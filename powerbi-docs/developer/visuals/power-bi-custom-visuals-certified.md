@@ -169,7 +169,7 @@ The certification badge should be visible within three weeks of your submission.
 
 ## Next steps
 
-* [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml#certified-power-bi-visuals).
+* [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml).
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
