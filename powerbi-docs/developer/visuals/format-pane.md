@@ -111,12 +111,12 @@ In the new formatting model, property components are grouped together in logical
 * **Formatting card**  
   The top level properties grouping container for formatting properties. Each card consists of one or more formatting groups, as shown here.
 
-  :::image type="content" source="./media/format-pane/formatting-cards.ong" alt-text="Screenshot of formatting model with individual formatting cards.":::
+  :::image type="content" source="./media/format-pane/formatting-cards.png" alt-text="Screenshot of formatting model with individual formatting cards.":::
 
 * **Formatting group**  
   The secondary-level properties grouping container. The formatting group is displayed as a grouping container for formatting slices.
 
-  :::image type="content" source="./media/format-pane/formatting-groups.ong" alt-text="Screenshot of formatting cards divided into formatting groups.":::
+  :::image type="content" source="./media/format-pane/formatting-groups.png" alt-text="Screenshot of formatting cards divided into formatting groups.":::
 
 * **Formatting slice**  
   Property container. There are two types of slices:
