@@ -36,11 +36,7 @@ Connecting Power BI to Dataverse involves creating a Power BI data model. You ca
 > [!IMPORTANT]
 > While a DirectQuery model can be a good alternative when you need near real-time reporting, it might not perform well when connecting to Dataverse. That's because queries sent to Dataverse involve translation to enforce user permissions, which can result in slow performance.
 >
-> We recommend that you only create a DirectQuery connection to Dataverse when you must enforce permissions for the Power BI users and the retrieved query results aren't large—generally, less than 20,000 rows. When the query results are large, creating an import model and securing that model with RLS can achieve organizational goals and responsive reports.
->
-> As described in this article, you can create a DirectQuery model that enforces Dataverse permissions _knowing_ that performance will be slow. You can then supplement this model with import models that target specific subjects or audiences that could enforce RLS permissions.
->
-> As always, it's important that you test for performance before publishing your model.
+> You can learn about [considerations for DirectQuery models](#considerations-for-directquery-models) later in this article.
 
 To determine the right method for your Power BI model, you should consider:
 
