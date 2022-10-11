@@ -27,7 +27,7 @@ Objects describe customizable properties that are associated with a visual. An o
 ## Display name and description
 
 > [!NOTE]
-> Display name is deprecated from API version 5.0+. Capabilities display name and description are now added in the formatting model instead of the *capabilities.json* file.
+> Display name is deprecated from API version 5.1+. Capabilities display name and description are now added in the formatting model instead of the *capabilities.json* file.
 
 `displayName` is the name that will be shown in the property pane.
 `description` is description of formatting property will be shown to the user as a tooltip
@@ -166,9 +166,9 @@ To customize the properties in the formatting pane, use one of the following met
 ### [getFormattingModel API method](#tab/getFormattingModel)
 
 > [!NOTE]
-> The `getFormattingModel` API method is supported from API versions 5.0+
+> The `getFormattingModel` API method is supported from API versions 5.1+
 
-To use objects effectively in API version 5.0+, you need to implement the `getFormattingModel` method.  
+To use objects effectively in API version 5.1+, you need to implement the `getFormattingModel` method.  
 This method builds and returns a formatting model that includes full [properties pane](./format-pane.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
 
 ### Capabilities objects reflected in formatting model
@@ -238,7 +238,7 @@ Selector in descriptor can be changed accordingly to [selector type](#objects-se
 ### [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
 
 > [!NOTE]
-> The enumerateObjectInstances method has been deprecated from API version 5.0. It was replaced by the `getFormattingModel` in the new API.
+> The enumerateObjectInstances method has been deprecated from API version 5.1. It was replaced by the `getFormattingModel` in the new API.
 
 To use objects effectively, you need a function in your custom visual called `enumerateObjectInstances`. This function populates the property pane with objects and also determines where your objects should be bound within the dataView.  
 

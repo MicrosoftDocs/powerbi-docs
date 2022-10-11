@@ -681,7 +681,7 @@ export class YourVisual extends IVisual {
 ## enumerateObjectInstances
 
 > [!NOTE]
-> `enumerateObjectInstances` deprecated since API version 5.0. It was replaced by [`getFormattingModel`](format-pane.md).
+> `enumerateObjectInstances` deprecated since API version 5.1. It was replaced by [`getFormattingModel`](format-pane.md).
 > For `FormattingModel` utils see [here](./utils-formattingmodel.md)
 
 This static method enumerates properties and returns an instance of `VisualObjectInstanceEnumeration`.

@@ -1,7 +1,7 @@
 
 # Customize the format pane in Power BI custom visuals
 
-Starting from API version 5.0, developers can create visuals that use the [new PowerBI format pane](../../fundamentals/desktop-format-pane.md). Developers can define formatting pane cards, card sub-categories and new formatting properties in their custom visual, making it easier for report creators to use these visuals.
+Starting from API version 5.1, developers can create visuals that use the [new PowerBI format pane](../../fundamentals/desktop-format-pane.md). Developers can define formatting pane cards, card sub-categories and new formatting properties in their custom visual, making it easier for report creators to use these visuals.
 
 The new API uses the **getFormattingModel** method to customize format and analytics panes.
 
@@ -12,7 +12,7 @@ The `getFormattingModel` returns a `FormattingModel` that defines how the visual
 
 In addition to all the old formatting pane capabilities, the new formatting model supports  new format pane capabilities, new properties and new hierarchies.
 
-To upgrade to API version 5.0+, set the `apiVersion` in your *pbiviz.json* file to `5.0.0` or later.
+To upgrade to API version 5.1+, set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
 
 ## Create a visual that supports the new format pane
 
@@ -29,7 +29,7 @@ To create a custom visual that uses the new format pane:
 
 If you have a custom visual created with an older API and you want to migrate to the new format pane, or if you're creating a new custom visual:
 
-1. Set the `apiVersion` in your *pbiviz.json* file to `5.0.0` or later.
+1. Set the `apiVersion` in your *pbiviz.json* file to `5.1.0` or later.
 
 2. For each object name and property name in *capabilities.json*, create a matching formatting property. The formatting property should have a `descriptor` that contains an `objectName` and `propertyName` that matches the object name and property name in *capabilities.json*.
 
@@ -437,7 +437,7 @@ description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 
 * We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: powerbi visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
 
-* You can find an example of a custom visual *SampleBarChart* that uses API version 5.0.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
+* You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
 ## Next steps
 

@@ -26,7 +26,7 @@ Managing properties in the [**Analytics** pane](../../transform-model/desktop-an
 
 For the **Analytics** pane, the object is defined as follows:
 
-### [API 5.0+](#tab/API-5.0+)
+### [API 5.1+](#tab/API-5.1+)
 * Under the object's definition, add only the object name, property name and type as explained [here](./format-pane.md).
 Example: 
 
@@ -55,7 +55,7 @@ Example:
 
 * In formatting settings card specify that this card belongs to analytics pane by set card `analyticsPane` parameter to true, By default card `analyticsPane` parameter is false and the card will be added to formatting pane, See the implementations below:
 
-#### [Using FormattingModel Utils](#tab/API-5.0+/Impl-FormattingModel-Utils)
+#### [Using FormattingModel Utils](#tab/API-5.1+/Impl-FormattingModel-Utils)
 ```typescript
 class YourAnalyticsCardSettings extends FormattingSettingsCard {
     show = new formattingSettings.ToggleSwitch({
@@ -79,7 +79,7 @@ class YourAnalyticsCardSettings extends FormattingSettingsCard {
 }
 ```
 
-#### [Without FormattingModel Utils](#tab/API-5.0+/Without-FormattingModel-Utils)
+#### [Without FormattingModel Utils](#tab/API-5.1+/Without-FormattingModel-Utils)
 ```typescript
  const averageLineCard: powerbi.visuals.FormattingCard = {
     displayName: "Your analytics properties card's name",

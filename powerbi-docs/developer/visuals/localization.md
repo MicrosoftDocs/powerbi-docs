@@ -183,8 +183,9 @@ let legend: string = this.localization.getDisplayName("Role_Legend");
 
 ## Formatting and analytics pane localization
 > [!NOTE]
-> Relevant to API version 5.0+
-To support format pane and analytics pane localization on formatting components you'd like to localize, You will need to set localized string as the following:```typescript
+> Relevant to API version 5.1+
+To support format pane and analytics pane localization on formatting components you'd like to localize, You will need to set localized string as the following:
+```typescript
 displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
 description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
