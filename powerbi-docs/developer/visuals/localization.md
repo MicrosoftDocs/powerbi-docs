@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 10/10/2022
 ---
 
 # Add the locale Power BI language to your Power BI visual
@@ -192,9 +192,6 @@ To support localization on format pane and analytics pane components, set locali
 displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
 description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
-
-To localize formatting model see [here](format-pane.md#localization).
-To localize formatting model utils [here](utils-formattingmodel.md#localization).
 
 ## Supported languages
 

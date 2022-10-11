@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/19/2022
+ms.date: 10/11/2022
 ---
 
 # Visual API
