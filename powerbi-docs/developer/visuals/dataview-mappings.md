@@ -410,7 +410,7 @@ import DataView = powerbi.DataView;
 import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
 import PrimitiveValue = powerbi.PrimitiveValue;
-// standart imports
+// standard imports
 // ...
 
 export class Visual implements IVisual {
@@ -588,7 +588,7 @@ import DataViewMetadataColumn = powerbi.DataViewMetadataColumn;
 import DataViewTable = powerbi.DataViewTable;
 import DataViewTableRow = powerbi.DataViewTableRow;
 import PrimitiveValue = powerbi.PrimitiveValue;
-// other imports
+// standard imports
 // ...
 
 export class Visual implements IVisual {
