@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/08/2019
+ms.date: 09/29/2022
 LocalizationGroup: Conceptual
 ---
 
@@ -91,7 +91,7 @@ Apps also have a unique feature that allows app authors to install the applicati
 
 As Contoso continues to work with its subcontractors or suppliers, the external Engineers need to work closely with Contoso's analysts. Power BI provides several collaboration features that help users communicate about content they can consume. Dashboard commenting (and soon Report commenting) allows users to discuss data points they see and communicate with report authors to ask questions.
 
-Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users cannot be @mentioned and do not receive notifications that they've received a comment. Guest users cannot use the subscriptions feature within Power BI at the time of writing. In an upcoming release, those restrictions will be lifted and the Guest user will receive an email when a comment @mentions them, or when a subscription is delivered to their email that contains a link to the content in Power BI.
+Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users cannot be @mentioned and do not receive notifications that they've received a comment. In an upcoming release, those restrictions will be lifted and the Guest user will receive an email when a comment @mentions them. Guest users can use the subscriptions feature within Power BI to subscribe themselves to a report or dashboard. Learn more in Email subscriptions for reports and dashboards in the Power BI service.  
 
 ### Access content in the Power BI mobile apps
 
@@ -331,7 +331,7 @@ It is important to recognize that the Azure AD account will be used or created i
 Contoso can choose one of three approaches to license guest users from its suppliers and partner organizations to have access to Power BI content.
 
 > [!NOTE]
-> _The Azure AD B2B's free tier is enough to use Power BI with Azure AD B2B. Some advanced Azure AD B2B features like dynamic groups require additional licensing. Please refer to the Azure AD B2B documentation for additional information:_ [_https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](/azure/active-directory/b2b/licensing-guidance)
+> The Azure AD B2B's free tier is enough to use Power BI with Azure AD B2B. Some advanced Azure AD B2B features like dynamic groups require additional licensing. For more information, see the [Azure AD B2B documentation](/azure/active-directory/b2b/licensing-guidance).
 
 ### Approach 1: Contoso uses Power BI Premium
 
@@ -506,7 +506,6 @@ For guest users enabled through the Allow external guest users to edit and manag
 - Guest users cannot use, create, update, or install template apps
 - Guest users cannot use Analyze in Excel
 - Guest users cannot be @mentioned in commenting ( this functionality will be added in an upcoming release )
-- Guest users cannot use subscriptions ( this functionality will be added in an upcoming release )
 - Guest users who use this capability should have a work or school account. Guest users using Personal accounts experience more limitations due to sign-in restrictions.
 
 
@@ -517,9 +516,7 @@ For guest users enabled through the Allow external guest users to edit and manag
 
 When using Azure AD B2B sharing, the Azure Active Directory administrator controls aspects of the external user's experience. These are controlled on the External collaboration settings page within the Azure Active Directory settings for your Tenant.
 
-Details on the settings are available here:
-
-[https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations](/azure/active-directory/b2b/delegate-invitations)
+For more information, see [Configure external collaboration settings](/azure/active-directory/b2b/delegate-invitations).
 
 > [!NOTE]
 > By default, the Guest users permissions are limited option is set to Yes, so Guest users within Power BI have limited experiences especially surround sharing where people picker UIs do not work for those users. It is important to work with your Azure AD administrator to set it to No, as shown below to ensure a good experience.**

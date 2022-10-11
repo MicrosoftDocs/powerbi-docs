@@ -55,6 +55,7 @@ The following additional root objects are optional and can be added as needed:
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * [subtotals](total-subtotal-api.md)
 * [keepAllMetadataColumns](dataview-mappings.md#keep-all-metadata-columns)
+* [migration](identity-filter-api.md)
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
@@ -111,7 +112,7 @@ This `ExportContent` setting enables the visual to export data to files in the f
 * .pdf
 * .xlsx
 
-This setting is separate from and not affected by download restrictions applied in the organization’s [Export and sharing](/power-bi/guidance/admin-tenant-settings#export-data) settings.
+This setting is separate from and not affected by download restrictions applied in the organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
 
 #### Example of privileges setting allowing downloading to a file
 

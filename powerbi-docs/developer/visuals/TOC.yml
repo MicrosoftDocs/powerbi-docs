@@ -41,7 +41,7 @@
       href: capabilities.md
     - name: "Data view mappings"
       href: dataview-mappings.md
-    - name: "Sorting options"
+    - name: "Sort data"
       href: sort-options.md
     - name: "Objects and properties"
       href: objects-properties.md
@@ -64,12 +64,16 @@
       href: visuals-interactions.md
     - name: "Add selections"
       href: selection-api.md
-    - name: "Add visuals tooltips"
+    - name: "Visuals tooltips"
       href: add-tooltips.md
-    - name: "Add analytics pane" 
+    - name: "Analytics pane" 
       href: analytics-pane.md
+    - name: "Add format pane"
+      href: format-pane.md
     - name: "Filter visuals" 
       href: filter-api.md
+    - name: "Identity filter" 
+      href: identity-filter-api.md
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
@@ -122,6 +126,8 @@
       href: custom-visual-licenses.md
     - name: "License enforcement API"
       href: licensing-api.md
+    - name: Transactability and licensing FAQ
+      href: licensing-faq.md
   - name: Reference
     items: 
     - name: "Changelog"

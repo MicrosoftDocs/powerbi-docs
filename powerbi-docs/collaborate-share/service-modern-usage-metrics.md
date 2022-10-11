@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 08/29/2022
 LocalizationGroup: Dashboards
 ---
 
@@ -386,8 +386,24 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 
     ![Screenshot of the Usage metrics dataset URL.](media/service-modern-usage-metrics/power-bi-usage-metrics-url.png)
 
-1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](/rest/api/power-bi/datasets/deletedatasetingroup). You can use this API to delete the dataset. You can use Postman or other API tools to make an API call on this endpoint to delete the dataset. 
+1. In your browser, go to [Datasets - Delete Dataset In Group](/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
+    
+    ![Screenshot showing Delete dataset Try it.](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
 
+    > [!NOTE]
+    > This **Try it** button does not apply to GCC customers since their API endpoint is different.
+
+    You can use this API to delete the dataset. You can use Postman or other API tools to make an API call on this endpoint to delete the dataset. 
+
+1. If you don't see a **Try it** button, use the trigger **Scheduled cloud flow**. Select a starting time and run it every hour. Then refresh the dataset. Let the flow run once, then switch off the flow. Read more about [cloud flows in Power Automate](/power-automate/run-scheduled-tasks).
+    
+1. Sign in to Power BI, paste the Workspace ID in the **groupId** text box and the dataset ID into the **datasetId** text box, and then select **Run**.
+
+    ![Screenshot showing Try the REST API.](media/service-modern-usage-metrics/power-bi-rest-api-try-it.png)
+
+1. Under the **Run** button, verify that the service returns a Response Code of **200**. That code indicates that you have successfully deleted the dataset and its associated usage metrics reports.
+
+    ![Screenshot showing Response code 200.](media/service-modern-usage-metrics/power-bi-response-code-200.png)
 
 ### Create a fresh usage metrics report
 

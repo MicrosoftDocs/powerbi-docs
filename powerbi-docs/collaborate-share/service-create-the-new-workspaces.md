@@ -91,11 +91,19 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-1. Select **SharePoint - Team Sites**.
+    Power BI should automatically detect the workspace OneDrive, so it apears as **OneDrive - WORKSPACE_NAME". It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
+
+1. Select the workspace OneDrive, for example, **OneDrive - Sales and Marketing**.
+
+
+
+1. Navigate to the folder containing your Power BI files. Select the file, then select **Connect**.
+
+1. If Power BI doesn't automatically detect the workspace OneDrive, on the **Get data** page, select **SharePoint - Team Sites**.
 
     ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/workspace-get-data-sharepoint-team-sites.png)
 
-1. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
+2. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
 
     :::image type="content" source="media/service-create-the-new-workspaces/workspace-sharepoint-site-url.png" alt-text="Screenshot of Type the URL of the shared library you created earlier, or select Connect.":::
 

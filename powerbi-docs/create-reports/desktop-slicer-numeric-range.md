@@ -8,7 +8,7 @@ ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/13/2022
+ms.date: 09/12/2022
 LocalizationGroup: Create reports
 ---
 # Use the numeric range slicer in Power BI
@@ -26,22 +26,13 @@ In this video, Will walks through creating a numeric range slicer.
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
 ## Add a numeric range slicer
 
 You can use the numeric range slicer like you would use any other slicer. Just create a **Slicer** visual for your report, and then select a numeric value for the **Field** value. In the following image, we selected the **LineTotal** field.
 
-# [Power BI Desktop](#tab/powerbi-desktop)
-
 ![Screenshot shows how to create a numeric range slicer in Power B I Desktop.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-create.png)
-
-# [Power BI service](#tab/powerbi-service)
-
-![Screenshot shows how to create a numeric range slicer in the Power B I service.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
-
----
 
 Select the down-arrow in the upper-right corner of the numeric range slicer and a menu appears.
 
