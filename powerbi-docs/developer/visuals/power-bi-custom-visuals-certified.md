@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/08/2022
+ms.date: 10/11/2022
 ---
 
 # Get your Power BI visual certified
@@ -171,4 +171,5 @@ The certification badge should be visible within three weeks of your submission.
 
 * [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
-* [Try the Power BI Community](https://community.powerbi.com/)
+
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
