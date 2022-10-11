@@ -68,6 +68,8 @@
       href: add-tooltips.md
     - name: "Add analytics pane" 
       href: analytics-pane.md
+    - name: "Add format pane"
+      href: format-pane.md
     - name: "Filter visuals" 
       href: filter-api.md
     - name: "Fetch more data" 
