@@ -237,6 +237,7 @@ Things to keep in mind about publishing apps:
 * As of now we have disabled “Save a copy” feature for the preview of the multiple audience feature. We are working on providing a better offering. 
 * Currently, workspace Contributors can add or delete content in the app, and can change the visibility of the content for the default audience. They can't yet switch between different audience groups in the Audience tab. As a workaround, workspace Admins and Members can update the visibility of the content added in other audience groups. This is a temporary limitation.
 * Currently, having multiple audiences isn't supported in Power BI Mobile apps and deployment pipelines. This is a temporary limitation.
+* You can not open an added link or see its content if you chose to open the link in content area.
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps
