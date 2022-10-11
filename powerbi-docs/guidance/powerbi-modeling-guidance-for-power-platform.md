@@ -31,12 +31,16 @@ Connecting Power BI to Dataverse involves creating a Power BI data model. You ca
 
 - **Import Dataverse data:** This method caches (stores) Dataverse data in the Power BI model. It delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, allowing them to integrate data from other sources. Because of these strengths, it's the default mode when creating a model in Power BI Desktop.
 - **Import Dataverse data by using Azure Synapse Link:** This method is a variation on the import method, because it also caches data in the Power BI model, but does so by connecting to [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is). By using [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake), Dataverse tables are continuously replicated to Azure Synapse or Azure Data Lake Storage (ADLS) Gen2.
-- **Create a DirectQuery connection:** This method is an alternative to importing data. A Power BI DirectQuery model consists only of metadata defining the model structure. When reports query the model, Power BI sends native queries to Dataverse to retrieve data. Consider creating a DirectQuery model when data volumes are too large to cache (or refresh durations take too long), when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
+- **Create a DirectQuery connection:** This method is an alternative to importing data. A Power BI DirectQuery model consists only of metadata defining the model structure. When a user opens a report, Power BI sends native queries to Dataverse to retrieve data that the current user has permission to see. Consider creating a DirectQuery model when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
 
 > [!IMPORTANT]
-> While a DirectQuery model can be a good alternative when you have large data volumes or when you need near real-time reporting, it might not perform well when your data source is Dataverse. That's because queries sent to Dataverse involve translation in order to enforce role permissions, which can result in slow performance.
+> While a DirectQuery model can be a good alternative when you need near real-time reporting, it might not perform well when connecting to Dataverse. That's because queries sent to Dataverse involve translation to enforce user permissions, which can result in slow performance.
 >
-> We recommend that you only create a DirectQuery connection to Dataverse when you have less than 20,000 rows of data or when Dataverse must enforce permissions for Power BI users. In many cases, the effort to replicate role permissions in a Power BI import model is justified to achieve a responsive model. As described in this article, you can create a DirectQuery model to support specific requirements, and create an import model for general access to all data. As always, it's important that you test for performance before publishing your model.
+> We recommend that you only create a DirectQuery connection to Dataverse when you must enforce permissions for the Power BI users and the retrieved result sets aren't large—generally, less than 20,000 rows. When the result sets are large, creating an import model and securing that model with RLS can achieve organizational goals and responsive reports.
+>
+> As described in this article, you can create a DirectQuery model that enforces Dataverse permissions _knowing_ that performance will be slow. You can then supplement this model with import models that target specific subjects or audiences that could enforce RLS permissions.
+>
+> As always, it's important that you test for performance before publishing your model.
 
 To determine the right method for your Power BI model, you should consider:
 
@@ -53,25 +57,25 @@ To determine the right method for your Power BI model, you should consider:
 
 Queries sent to import models are faster than native queries sent to DirectQuery data sources. That's because imported data is cached in memory and it's optimized for analytic queries (filter, group, and summarize operations).
 
-Conversely, DirectQuery models must query their underlying data source(s) and that impacts on query performance - especially when the data source(s) store large volumes of data or the data isn't optimized (indexed) for analytic queries. Also, the Power BI DirectQuery workload might compete for data source resources with other workloads, like operational read and write operations.
+Conversely, DirectQuery models only retrieve data from the source after the user opens a report, resulting in seconds of delay as the report renders. Additionally, every user interaction on the report requires Power BI to requery the source, further reducing responsiveness.
 
 ### Data volume
 
 When developing an import model, you should strive to minimize the data that's to be loaded into the model. It's especially true for large models, or models that you anticipate will grow to become large over time. For more information, see [Data reduction techniques for import modeling](import-modeling-data-reduction.md).
 
-> [!IMPORTANT]
+> [!NOTE]
 > Larger model sizes may not be supported by your capacity. A shared capacity can host models up to 1 GB in size, while [Power BI Premium](/power-bi/enterprise/service-premium-what-is) capacities can host much larger models.
 
 DirectQuery models work well with large data volumes because Power BI doesn't store the data. However, there might be a need to optimize the data source to ensure queries perform well. You should also ensure that the data source has sufficient resources for the DirectQuery workload.
 
-A DirectQuery connections to Dataverse is only a good choice when the report's result set isn't large (meaning that there are fewer than 20,000 rows in the report's source tables, or the result returned to the report after filters are applied is less than 20,000 rows). In this case, you can [create a Power BI report by using the Dataverse connector](/powerapps/maker/data-platform/data-platform-powerbi-connector).
+A DirectQuery connections to Dataverse is a good choice when the report's result set isn't large (meaning that there are fewer than 20,000 rows in the report's source tables, or the result returned to the report after filters are applied is less than 20,000 rows). In this case, you can [create a Power BI report by using the Dataverse connector](/powerapps/maker/data-platform/data-platform-powerbi-connector).
 
 > [!NOTE]
 > The 20,000 row size isn't a hard limit. However, each data source query must return a result that's less than 80 MB and within two minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design strategies.
 
-When the query result size is in the range of a few hundred thousand rows, you can consider using [Premium features of dataflows](/power-bi/transform-model/dataflows/dataflows-premium-features?tabs=gen2) or [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) datasets.
+Generally, when the query result size is than 200,000 rows, you can consider using [Premium features of dataflows](/power-bi/transform-model/dataflows/dataflows-premium-features?tabs=gen2) or [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) datasets.
 
-Larger datasets with millions of rows can benefit from the enterprise-scale supported by Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. The data can then be ingested from the data lake via Azure Synapse and loaded into Power BI import model.
+Larger datasets with several hundred thousand or even millions of rows can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
 
 ### Data latency
 
@@ -90,15 +94,20 @@ When there's a need to enforce role-based security, it can directly influence th
 
 Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson is permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
 
-When you create an import model that connects to Dataverse, its security model no longer applies (it refreshes data by using the security context of the Power BI dataset credentials). In this case, you must reproduce data permissions by adding [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) to the Power BI model. That requirement could be challenging - or impossible - to do when complex permissions must be enforced. Further, this approach might require ongoing management to ensure that changes in Dynamics are in sync with the Power BI RLS rules.
+A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. This approach can simplify the report design providing performance is acceptable.
 
-A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. In this case, there's no need to set up Power BI RLS.
+For improved performance, you can create an import model that connects to Dataverse instead. In this case, you can add [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) to the model, if required.
+
+> [!NOTE]
+> It might be challenging to replicate some Dataverse role-based security as Power BI RLS, especially when Dataverse enforces complex permissions. Further, it might require ongoing management to keep permissions in syc.
+
+For more information, see [Row-level security (RLS) guidance in Power BI Desktop](rls-guidance.md).
 
 ### Setup complexity
 
-Connections to Dataverse, whether for import or DirectQuery models, are straightforward and don't require any special software or elevated Dataverse permissions. That's an advantage for organizations or departments that are getting started. It's also an advantage for organizations that don't need the enterprise features available in an Azure Synapse solution.
+Using the Dataverse connector in Power BI—whether for import or DirectQuery models—is straightforward and doesn't require special software or elevated Dataverse permissions. That's an advantage for organizations or departments that are getting started.
 
-The Azure Synapse option requires system administrator access to Dataverse and an Azure subscription. The set up isn't complex, but experience working with Azure Storage and writing SQL queries will be beneficial. Without system administrator access, you won't be able to take advantage of enterprise features.
+The Azure Synapse Link option requires system administrator access to Dataverse and certain Azure permissions. These Azure permissions are required to set up the storage account and a Synapse workspace. While the setup isn't complex, having experience writing SQL queries will be beneficial.
 
 ## Best practices
 
@@ -324,11 +333,13 @@ in
 
 This query will retrieve data by filtering the **ownerid** column by the current user. When you publish the model to the Power BI service, you must enable single sign-on (SSO) so Power BI will send the report user's authenticated Azure AD credentials to Dataverse.
 
-### Create a general all-purpose model
+### Create supplementary import models
 
-You can create a DirectQuery model that delivers all data and enforces Dataverse permissions _knowing_ that performance will be slow. This model could serve reports that must all attributes and explore historical depth. You can then supplement this model with special import models that target specific subjects or audiences.
+You can create a DirectQuery model that enforces Dataverse permissions _knowing_ that performance will be slow. You can then supplement this model with import models that target specific subjects or audiences that could enforce RLS permissions.
 
-For example, a special import model could provide access to all Dataverse data but not enforce any permissions. This model would be suited to administrators or senior employees. As another example, when Dataverse enforces role-based permissions by sales region, you could create an import model that loads data for each sales region. YOu can then grant read permission to the dataset to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
+For example, an import model could provide access to all Dataverse data but not enforce any permissions. This model would be suited to executive who already have access to all of the Dataverse data.
+
+As another example, when Dataverse enforces role-based permissions by sales region, you could create one import model and replicate those permissions using RLS. Alternatively, you could create model for each sales region. You could then grant read permission to those models (datasets) to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
 
 ## Enterprise scale with Azure Synapse Link
 
