@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/14/2022
+ms.date: 10/11/2022
 ---
 
 # Objects and properties of Power BI visuals
@@ -19,18 +19,18 @@ Objects describe customizable properties that are associated with a visual. An o
 ```json
 "objects": {
     "myCustomObject": {
-        "displayName": "My Object Name",
         "properties": { ... }
     }
 }
 ```
 
-## Display name
+## Display name and description
 
 > [!NOTE]
-> Display name is deprecated from API version 5.0+. The display name and description are now added in the formatting model instead of the *capabilities.json* file.
+> Display name and description are deprecated from API version 5.1+. The display name and description are now added in the formatting model instead of the *capabilities.json* file.
 
 `displayName` is the name that will be shown in the property pane.
+`description` is a description of the formatting property that will be shown to the user as a tooltip.
 
 ## Properties
 
@@ -39,7 +39,6 @@ Objects describe customizable properties that are associated with a visual. An o
 ```json
 "properties": {
     "myFirstProperty": {
-        "displayName": "firstPropertyName",
         "type": ValueTypeDescriptor | StructuralTypeDescriptor
     }
 }
@@ -53,7 +52,6 @@ Example:
 ```json
 "properties": {
     "show": {
-        "displayName": "My Property Switch",
         "type": {"bool": true}
     }
 }
@@ -98,15 +96,11 @@ An example is shown in the following code:
 ```json
 "properties": {
     "showAllDataPoints": {
-        "displayName": "Show all",
-        "displayNameKey": "Visual_DataPoint_Show_All",
         "type": {
             "bool": true
         }
     },
     "fill": {
-        "displayName": "Fill",
-        "displayNameKey": "Visual_Fill",
         "type": {
             "fill": {
                 "solid": {
@@ -116,8 +110,6 @@ An example is shown in the following code:
         }
     },
     "fillRule": {
-        "displayName": "Color saturation",
-        "displayNameKey": "Visual_ColorSaturation",
         "type": {
             "fillRule": {}
         },
@@ -174,9 +166,9 @@ To customize the properties in the formatting pane, use one of the following met
 ### [getFormattingModel API method](#tab/getFormattingModel)
 
 > [!NOTE]
-> The `getFormattingModel` API method is supported from API versions 5.0+
+> The `getFormattingModel` API method is supported from API versions 5.1+
 
-To use objects effectively in API version 5.0+, you need to implement the `getFormattingModel` method.  
+To use objects effectively in API version 5.1+, you need to implement the `getFormattingModel` method.  
 This method builds and returns a formatting model that includes full properties pane hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
 
 ### Capabilities objects reflected in formatting model
@@ -246,7 +238,7 @@ Selector in descriptor can be changed accordingly to [selector type](#objects-se
 ### [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
 
 > [!NOTE]
-> The enumerateObjectInstances method has been deprecated from API version 5.0. It was replaced by the `getFormattingModel` in the new API.
+> The enumerateObjectInstances method has been deprecated from API version 5.1. It was replaced by the `getFormattingModel` in the new API.
 
 To use objects effectively, you need a function in your custom visual called `enumerateObjectInstances`. This function populates the property pane with objects and also determines where your objects should be bound within the dataView.  
 

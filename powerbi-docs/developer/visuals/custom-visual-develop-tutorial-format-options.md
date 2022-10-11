@@ -64,7 +64,7 @@ This tutorial explains how to add common formatting properties to a visual. We'l
     > [!Note]
     > If you don't see the formatting options change, select **Reload Custom Visual**.
 
-    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/view-formatting-options.png" alt-text="Screenshot of formatting options on the visualizations pane":::
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/view-formatting-options.png" alt-text="Screenshot of formatting options on the visualizations pane.":::
 
 7. Set the **Title** option to *Off*. Notice that the visual no longer displays the measure name at the top-left corner.
 

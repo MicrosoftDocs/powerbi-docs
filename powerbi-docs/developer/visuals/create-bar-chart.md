@@ -12,7 +12,7 @@ ms.date: 05/05/2022
 
 # Tutorial: Build a bar chart
 
-This tutorial shows you how to develop a Power BI visual that displays data in the form of a simple bar chart. This visual supports a minimal amount of customization. Other pages of this documentation explain how add further customization like [context menus](context-menu.md), [tool-tips](add-tooltips.md), and more.
+This tutorial shows you how to develop a Power BI visual that displays data in the form of a simple bar chart. This visual supports a minimal amount of customization. Other pages of this documentation explain how to add further customization like [context menus](context-menu.md), [tool-tips](add-tooltips.md), and more.
 
 In this tutorial, you learn how to:
 
@@ -90,7 +90,7 @@ The two files we'll focus on in this tutorial are the *capabilities.json* file, 
 
 The [*capabilities.json*](capabilities.md) file is where we bind data to the host. We describe the kind of data fields it accepts and what features the visual should have.
 
-:::image type="content" source="./media/create-bar-chart/data-binding.png" alt-text="Screenshot showing how to bind data in the field bucket":::
+:::image type="content" source="./media/create-bar-chart/data-binding.png" alt-text="Screenshot showing how to bind data in the field bucket.":::
 
 ### Define data roles
 

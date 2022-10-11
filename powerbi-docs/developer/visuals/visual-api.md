@@ -21,7 +21,7 @@ The visual class should implement the following methods as shown in the sample b
 
 * [`constructor`](#constructor), a standard constructor that initializes the visual's state
 * [`update`](#update), updates the visual's data
-* [`getFormattingModel`](#getformattingmodel-optional), returns formatting model that populate the property pane (formatting options) where you can modify them as needed
+* [`getFormattingModel`](#getformattingmodel-optional), returns a formatting model that populates the property pane (formatting options) where you can modify properties as needed
 * [`destroy`](#destroy-optional), a standard destructor for cleanup
 
 ```typescript
