@@ -64,12 +64,14 @@
       href: visuals-interactions.md
     - name: "Add selections"
       href: selection-api.md
-    - name: "Add visuals tooltips"
+    - name: "Visuals tooltips"
       href: add-tooltips.md
-    - name: "Add analytics pane" 
+    - name: "Analytics pane" 
       href: analytics-pane.md
     - name: "Filter visuals" 
       href: filter-api.md
+    - name: "Identity filter" 
+      href: identity-filter-api.md
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
