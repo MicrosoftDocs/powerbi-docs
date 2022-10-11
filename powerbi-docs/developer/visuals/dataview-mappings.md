@@ -925,6 +925,21 @@ To enable the expand collapse feature to a visual using the matrix data view:
 * When using expand/collapse, totals are added on even if the visual didn’t request them.
 * Currently, expanding and collapsing columns is not supported.
 
+## Keep all metadata columns
+
+Starting from **API 5.1.0**, keeping all metadata columns will be supported. This feature allows the visual to receive the metadata for all columns no matter what their active projections are.
+
+Add the following lines to your *capabilities.json* file:
+
+```json
+"keepAllMetadataColumns": {
+    "type": "boolean",
+    "description": "Indicates that visual is going to receive all metadata columns, no matter what the active projections are"
+}
+```
+
+Setting this property to `true` will result in receiving all the metadata, including from collapsed columns. Setting it to `false` or leaving it undefined will result in receiving metadata only on columns with active projections (expanded, for example).
+
 ## Data reduction algorithm
 
 The data reduction algorithm controls which data and how much data is received in the data view.
