@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/24/2022
+ms.date: 010/11/2022
 ---
 
 # Identity filter API
@@ -102,3 +102,7 @@ This will convert the selections to identity filters.
 > This step is only necessary for existing visuals created with older APIs. Newer visuals don't need to add this.
 
 ## Next steps
+
+[Use Power BI visuals selections to add interactivity to a visual](selection-api.md)
+
+More questions? Try the [Power BI Community](https://community.powerbi.com/)
