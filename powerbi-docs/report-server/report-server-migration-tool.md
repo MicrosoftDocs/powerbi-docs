@@ -29,6 +29,9 @@ You can publish and share paginated reports in your My Workspace or in other wor
 
 See [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
 
+>[!NOTE]
+>The current sign-in flow in this article doesn't allow non-Azure Active Directory (AAD) users to sign up. So if you've never used the Power BI service and never signed in to AAD, sign up for Power BI in the [Power BI service](https://app.powerbi.com) first, before starting the migration tool.   
+
 ## Supported versions 
 
 You can migrate reports from Power BI Report Server instances running on-premises or on virtual machines hosted by cloud providers like Azure.
@@ -86,11 +89,23 @@ Items that you can migrate now:
 - Folders (all .rdl reports from the folder are migrated)
 
 
-## Step 3: Sign in/Sign up 
+## Step 3: Sign in or sign up 
 
-After you've selected the reports you want to publish, it's time to **Sign in** to the Power BI service.
+### Sign in
+
+If you already have a Power BI license, after you've selected the reports you want to publish, it's time to **Sign in** to the Power BI service.
 
 :::image type="content" source="media/report-server-migration-tool/power-bi-report-server-sign-in.png" alt-text="Screenshot showing signing in to the Power B I service."::: 
+
+### Sign up
+
+If you don't have a Power BI license yet, you can still publish reports to the Power BI service. The [Auto-License Assignment Service](https://powerbi.visualstudio.com/PowerBIClients/_git/PowerBIClients?path=/src/Modern/Shared/Licensing/services/auto-license-assignment.service.ts&_a=contents&version=GBmaster) in Visual Studio can assign you a free license for personal use.
+
+If we're successful at assigning the license, you see a success message. 
+
+If we can't assign a license because you don't have  an associated tenant, or license assignment fails, you see a message that you don't have a Power BI license. Then you can go to the [Power BI service sign-up page](https://app.powerbi.com/singleSignOn) to create an account.
+
+The current sign-in flow doesn't allow non-Azure Active Directory (AAD) users to sign up. So if you've never used the Power BI service and never signed in to AAD, sign up for Power BI in the [Power BI service](https://app.powerbi.com) first, before starting the migration tool.   
 
 ## Step 4: Choose a workspace  
 

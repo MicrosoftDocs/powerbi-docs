@@ -376,7 +376,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 * The `exporttofile` API is only available in for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2).
 * An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
 * The report you're exporting must reside on a Premium or Embedded capacity.
-* The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
+* All related datasets in the report you're exporting must reside on a Premium or Embedded capacity, including datasets with a Direct Query connection.
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in an exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
@@ -396,14 +396,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 
 Review how to embed content for your customers and your organization:
 
-> [!div class="nextstepaction"]
->[Export paginated report to file](export-paginated-report.md)
+* [Export paginated report to file](export-paginated-report.md)
+* [Embed for your customers](embed-sample-for-customers.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)
+* [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
 
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
-
-> [!div class="nextstepaction"]
->[Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
+More Questions? Try the [Power BI Community](https://community.powerbi.com/)
