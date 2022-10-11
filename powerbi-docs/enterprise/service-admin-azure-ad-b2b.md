@@ -97,25 +97,25 @@ The discoverability for B2B content feature in Power BI makes accessing shared B
 ## Licensing
 
 The guest user must have the proper licensing in place to view the content that you shared. There are a few ways to make sure the user has a proper license: 
-1. Use Power BI Premium capacity
-1. Assign a Power BI Pro or a Premium Per User (PPU) license
-1. Use a guest's Power BI Pro or PPU license.
+* Use Power BI Premium capacity
+* Assign a Power BI Pro or a Premium Per User (PPU) license
+* Use a guest's Power BI Pro or PPU license.
 
 [Guest users who can edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) need a Power BI Pro or Premium Per User (PPU) license to contribute content to workspaces or share content with others.
 
-### 1. Use Power BI Premium capacity
+### Use Power BI Premium capacity
 
 Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates and large model sizes.
 
 ![Diagram of the guest user experience with Power B I Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
-### 2. Assign a Power BI Pro or Premium Per User (PPU) license to guest user
+### Assign a Power BI Pro or Premium Per User (PPU) license to guest user
 
 Assigning a Power BI Pro or PPU license from your organization to a guest user lets that guest user view content shared with them. For more information about assigning licenses, see [Assign licenses to users on the Licenses page](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro or PPU licenses to guest users, consult the [Product Terms site](https://www.microsoft.com/licensing/terms) to ensure you're in compliance with the terms of your licensing agreement with Microsoft.
 
 ![Diagram of the guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
-### 3. Guest user brings their own Power BI Pro or Premium Per User (PPU) license
+### Guest user brings their own Power BI Pro or Premium Per User (PPU) license
 
 The guest user may already have a Power BI Pro or PPU license that was assigned to them through their own organization.
 
