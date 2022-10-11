@@ -21,7 +21,9 @@ The new API uses the **FormattingModel** method to customize parts of the format
 
 The `getFormattingModel` returns a `FormattingModel` that defines how the visual's formatting and analytics pane look.
 
-In addition to all the old formatting pane capabilities, the new formatting model supports  new format pane capabilities, new properties and new hierarchies.
+In addition to all the old formatting pane capabilities, the [new formatting model](#formatting-model) supports new format pane capabilities, new properties and new hierarchies.
+
+:::image type="content" source="media/format-pane/formatting-model.png" alt-text="Screenshot of the new formatting pane.":::
 
 To upgrade to API version 5.0+, set the `apiVersion` in your *pbiviz.json* file to `5.0` or later.
 
@@ -107,10 +109,14 @@ In the new formatting model, property components are grouped together in logical
   The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
 
 * **Formatting card**  
-  The top level properties grouping container for formatting properties. Each card consists of a list of formatting groups.
+  The top level properties grouping container for formatting properties. Each card consists of one or more formatting groups, as shown here.
+
+  :::image type="content" source="./media/format-pane/formatting-cards.ong" alt-text="Screenshot of formatting model with individual formatting cards.":::
 
 * **Formatting group**  
   The secondary-level properties grouping container. The formatting group is displayed as a grouping container for formatting slices.
+
+  :::image type="content" source="./media/format-pane/formatting-groups.ong" alt-text="Screenshot of formatting cards divided into formatting groups.":::
 
 * **Formatting slice**  
   Property container. There are two types of slices:
@@ -118,7 +124,9 @@ In the new formatting model, property components are grouped together in logical
   * Simple slice: Individual property container
   * [Composite slice](#composite-slice-properties): Multiple related property containers grouped into one formatting slice
 
-:::image type="content" source="./media/format-pane/format-pane-components.png" alt-text="Screenshot of two format panes with the different components outlined." lightbox="media/format-pane/format-pane-components.png":::
+  The following image shows the different types of slices. "Font" is a composite slice consisting of font name, size, and bold, italics and underline switches. "Color", "display units" and the other slices are simple slices with one component each.
+
+  :::image type="content" source="./media/format-pane/format-pane-slices.png" alt-text="Screenshot of format pane composite and simple slices.":::
 
 ### Visualization pane formatting properties
 
