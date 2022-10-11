@@ -134,7 +134,9 @@ class YourAnalyticsCardSettings extends FormattingSettingsCard {
 }
 ```
 
-You can define other properties in the same way that you do for **Format** objects. And you can enumerate objects just as you do in the **Format** pane.
+---
+
+Define other properties the same way that you do for **Format** objects, and enumerate objects just as you do in the **Format** pane.
 
 > [!NOTE]
 >
