@@ -12,7 +12,7 @@ ms.date: 05/10/2022
 
 # Sorting options for Power BI visuals
 
-This article describes the different options available for to specifying the the way a visual sorts items in Power BI.
+This article describes the different options available for to specifying the way a visual sorts items in Power BI.
 
 By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
 
