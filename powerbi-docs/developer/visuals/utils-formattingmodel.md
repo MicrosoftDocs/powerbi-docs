@@ -63,6 +63,7 @@ export class VisualSettingsModel extends FormattingSettingsModel {
 
     // Add formatting settings card to cards list in model
     cards = [this.myVisualCard];
+}
 ```
 
 ## Formatting settings card
@@ -133,21 +134,67 @@ myNumericSlice = new formattingSettings.NumUpDown({
 
 1. Open your `settings.ts` file. 
 2. Build your own formatting settings model with all of its components (cards, slices, properties ...), Name it `VisualFormattingSettings`.
-2. Goto your visual class, Import the following:
+Replace your settings code by this:
+
+```typescript
+import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
+
+import FormattingSettingsCard = formattingSettings.Card;
+import FormattingSettingsSlice = formattingSettings.Slice;
+import FormattingSettingsModel = formattingSettings.Model;
+
+export class VisualSettingsModel extends FormattingSettingsModel {
+    // Building my visual formatting settings card
+    myVisualCard: FormattingSettingsCard = new myVisualCardSettings();
+
+    // Add formatting settings card to cards list in model
+    cards: Array<FormattingSettingsCard> = [this.myVisualCard];
+}
+
+class myVisualCardSettings extends FormattingSettingsCard {
+    myNumericSlice = new formattingSettings.NumUpDown({
+        name: "myNumericSlice",
+        displayName: "My Formatting Numeric Slice",
+        value: 100,
+    });
+
+    name: string = "myVisualCard";
+    displayName: string = "My Formatting Card";
+    analyticsPane: boolean = false;
+    slices: Array<FormattingSettingsSlice> = [this.myNumericSlice];
+}
+```
+
+3. Goto your capabilities, Add your formatting objects and properties
+```json
+"objects": {
+    "myVisualCard": {
+        "properties": {
+            "myNumericSlice": {
+                "type": {
+                    "numeric": true 
+                }
+            }
+        }
+    }
+}
+```
+
+4. Goto your visual class, Import the following:
 
 ```typescript
 import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
 import { VisualFormattingSettingsModel } from "./settings";
 ```
 
-4. Declare formatting settings and formatting settings service
+5. Declare formatting settings and formatting settings service
 
 ```typescript
 private formattingSettings: VisualFormattingSettingsModel;
 private formattingSettingsService: FormattingSettingsService;
 ```
 
-5. Init formatting settings service in constructor
+6. Init formatting settings service in constructor
 
 ```typescript
 constructor(options: VisualConstructorOptions) {
@@ -157,7 +204,7 @@ constructor(options: VisualConstructorOptions) {
 }
 ```
 
-6. Build formatting settings in update API using formatting settings service `populateFormattingSettingsModel`
+7. Build formatting settings in update API using formatting settings service `populateFormattingSettingsModel`
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -166,7 +213,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-7. Build formatting model and return it in `getFormattingModel` API
+8. Build formatting model and return it in `getFormattingModel` API
 
 ```typescript
 public getFormattingModel(): powerbi.visuals.FormattingModel {
@@ -206,6 +253,7 @@ This will enable resetting formatting settings from:
 ## Localization
 
 For more about localization feature and to setup localization environment see [here]((localization.md)
+
 Init formatting settings service with localization manager in case localization is required in your custom visual:
 
 ```typescript
@@ -219,7 +267,7 @@ constructor(options: VisualConstructorOptions) {
 ```
 
 Add `displayNameKey` or `descriptionKey`  instead of `displayName` and `description` in the appropriate formatting component whenever you want a string to be localized.
-Example for building a formatting card and slice with localized display name and description
+Example for building a formatting slice with localized display name and description
 ```typescript 
  myFormattingSlice = new formattingSettings.NumUpDown({
         name: "myFormattingSlice",
@@ -228,4 +276,4 @@ Example for building a formatting card and slice with localized display name and
         value: 100
     });
 ```
-* `displayNameKey` and `descriptionKey` should be added also to `resources.json` files accordingly.
+* `displayNameKey` and `descriptionKey` values should be added also to `resources.json` files accordingly.
