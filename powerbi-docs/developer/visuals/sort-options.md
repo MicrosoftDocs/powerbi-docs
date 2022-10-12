@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/10/2022
+ms.date: 10/12/2022
 ---
 
 # Sorting options for Power BI visuals
