@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/31/2022
+ms.date: 10/12/2022
 ---
 
 # Request aggregated subtotal data
