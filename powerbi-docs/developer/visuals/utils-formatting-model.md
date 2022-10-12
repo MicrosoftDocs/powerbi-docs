@@ -267,11 +267,11 @@ You can enable resetting formatting settings from:
 
 * The formatting card *reset to default* button
 
-  :::image type="content" source="./media/format-pane/formatCard-reset-to-default.png" alt-text="Screenshot of format card reset to default button.":::
+  :::image type="content" source="./media/utils-formatting-model/formatCard-reset-to-default.png" alt-text="Screenshot of format card reset to default button.":::
 
 * The formatting pane top bar *reset all settings to default* button
 
-  :::image type="content" source="./media/format-pane/format-pane-reset-all-settings-to-default.png" alt-text="Screenshot of format pane reset all settings to default button.":::
+  :::image type="content" source="./media/utils-formatting-model/format-pane-reset-all-settings-to-default.png" alt-text="Screenshot of format pane reset all settings to default button.":::
 
 ## Localization
 
