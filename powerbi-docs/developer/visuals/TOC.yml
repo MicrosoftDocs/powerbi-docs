@@ -156,6 +156,8 @@
         href: utils-interactivity-selections.md
       - name: "Formatting utils"
         href: utils-formatting.md
+      - name: "Formatting model utils"
+        href: utils-formatting-model.md
       - name: "Data view utils"
         href: utils-dataview.md
       - name: "Chart utils"

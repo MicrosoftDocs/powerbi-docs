@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 09/19/2022
+ms.date: 10/12/2022
 ---
 
 # Customize the format pane in Power BI custom visuals
@@ -75,7 +75,7 @@ For example, if the `circle` object in your *capabilities.json* file is defined 
     }
 ```
 
-The formatting Property in your model should be of type `ColorPicker` and look like this:
+The formatting property in your model should be of type `ColorPicker` and look like this:
 
 ```javascript
 control: {
@@ -124,7 +124,7 @@ In the new formatting model, property components are grouped together in logical
   * Simple slice: Individual property container
   * [Composite slice](#composite-slice-properties): Multiple related property containers grouped into one formatting slice
 
-  The following image shows the different types of slices. "Font" is a composite slice consisting of font name, size, and bold, italics and underline switches. "Color", "display units" and the other slices are simple slices with one component each.
+  The following image shows the different types of slices. "Font" is a composite slice consisting of font family, size, and bold, italics and underline switches. "Color", "display units" and the other slices are simple slices with one component each.
 
   :::image type="content" source="./media/format-pane/format-pane-slices.png" alt-text="Screenshot of format pane composite and simple slices.":::
 
@@ -178,6 +178,8 @@ For now we have two composite slice types:
   * Bold [optional]
   * Italic [optional]
   * Underline [optional]
+
+  :::image type="content" source="media/format-pane/font-slices.png" alt-text="Screenshot of font composite slice with font family, font size, bold, italic, and underline options.":::
 
   Each of these properties should have a corresponding object in capabilities file:
 
@@ -416,11 +418,57 @@ Here's the resulting pane:
 
 :::image type="content" source="./media/format-pane/format-pane-demo-result.png" alt-text="Screenshot of format pane that results from the data card example.":::
 
+## Reset settings to default
+
+The new format pane has the option to reset all formatting card properties values to default by clicking on the *Reset to default* button that appears in the open card.
+
+:::image type="content" source="./media/format-pane/format-card-reset-to-default.png" alt-text="Screenshot of format card reset to default button.":::
+
+To enable this feature, add a list of formatting card properties descriptors to formatting card `revertToDefaultDescriptors`.
+The following the example shows how to add the *reset to default* button:
+
+```typescript
+let dataCard: powerbi.visuals.FormattingCard = {
+    displayName: "Data Card",
+    // ... card parameters and groups list
+
+    revertToDefaultDescriptors: [
+        {
+            objectName: "dataCard",
+            propertyName:"displayUnitsProperty"
+        },
+        {
+            objectName: "dataCard",
+            propertyName: "fontFamily"
+        },
+
+        // ... the rest of properties descriptors 
+    ]
+};
+```
+
+Adding `revertToDefaultDescriptors` to formatting cards also makes it possible to reset all formatting cards properties at once by clicking on the *reset all settings to default* button in the top bar of the format pane:
+
+:::image type="content" source="./media/format-pane/format-pane-reset-all-settings-to-default.png" alt-text="Screenshot of format pane reset all settings to default button.":::
+
+## Formatting property selector
+
+The optional selector in formatting properties descriptor determines where each property is bound in the dataView. There are four distinct options. Read about them in [objects selectors types](./objects-properties.md#objects-selectors-types).
+
+## Localization
+
+For more about the localization feature and to set up a localization environment see [Add the local language to your Power BI visual](localization.md) Use the localization manager to format components that you want to localize:
+
+```typescript
+displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
+description: this.localization.getDisplayName("Font_Color_DescriptionKey");
+```
+
 ## GitHub Resources
 
 * All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
 
-* We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: powerbi visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
+* We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: Power BI visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
 
 * You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 

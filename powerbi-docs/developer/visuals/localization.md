@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 10/10/2022
 ---
 
-# Add the locale Power BI language to your Power BI visual
+# Add the local language to your Power BI visual
 
 Power BI [supports a range of local languages](./../../fundamentals/supported-languages-countries-regions.md). You can retrieve the Power BI locale language, and use it to display content in your visual.
 
@@ -192,6 +192,9 @@ To support localization on format pane and analytics pane components, set locali
 displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
 description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
+
+For **localize formatting model** see [format pane localization](format-pane.md#localization).  
+For **localize formatting model utils** see [formatting model utils - localization](utils-formatting-model.md#localization).
 
 ## Supported languages
 

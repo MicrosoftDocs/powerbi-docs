@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/12/2022
+ms.date: 10/12/2022
 ---
 
 # Capabilities and properties of Power BI visuals
@@ -256,7 +256,6 @@ Objects describe customizable properties that are associated with the visual. Th
 ```json
 "objects": {
     "myCustomObject": {
-        "displayName": "My Object Name",
         "properties": { ... }
     }
 }
@@ -266,14 +265,6 @@ For more information, see [Objects and properties of Power BI visuals](objects-p
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Understand data view mapping in Power BI visuals](dataview-mappings.md)
-
-> [!div class="nextstepaction"]
-> [Objects and properties of Power BI visuals](objects-properties.md)
-
-> [!div class="nextstepaction"]
-> [Advanced edit mode in Power BI visuals](advanced-edit-mode.md)
-
-> [!div class="nextstepaction"]
-> [Sorting options for Power BI visuals](sort-options.md)
+* [Understand data view mapping in Power BI visuals](dataview-mappings.md)
+* [Objects and properties of Power BI visuals](objects-properties.md)
+*[Sorting options for Power BI visuals](sort-options.md)

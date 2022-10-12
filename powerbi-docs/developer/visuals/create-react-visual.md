@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 01/02/2021
+ms.date: 10/12/2022
 ---
 
 # Tutorial: Create a Power BI visual using React
@@ -601,16 +601,16 @@ Add the color and border thickness to the `object` property in *capabilities.jso
 
 3. Save **capabilities.json**.
 
-### Add a circle settings class to the settings file
+### Add a circle formatting settings class to the settings file
 
-Add the `CircleSettings` class to *settings.ts*.
+Add the `Circle` formatting settings to *settings.ts*. For more information how to build formatting model settings see [formatting utils](utils-formatting.md).
 
 1. In VS Code, from the **src** folder, open **settings.ts**.
 
 2. Replace the code in **settings.ts** with the following code:
 
     ```typescript
-    "use strict";
+   "use strict";
 
     import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
@@ -618,35 +618,38 @@ Add the `CircleSettings` class to *settings.ts*.
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
-    export class CircleSettings extends FormattingSettingsCard{
-        public circleColor = new formattingSettings.ColorPicker({
-            name: "circleColor",
+    /**
+    * Circle Formatting Card
+    */
+    class CircleCardSettings extends FormattingSettingsCard {
+        circleColor = new formattingSettings.ColorPicker({
+            name: "circleColor", // circle color name should match circle color property name in capabilities.json
             displayName: "Color",
-            value: {value: "white"}
+            description: "The fill color of the circle.",
+            value: { value: "white" }
         });
-        public circleThickness = new formattingSettings.NumUpDown({
-            name: "circleThickness",
+
+        circleThickness = new formattingSettings.NumUpDown({
+            name: "circleThickness", // circle thickness name should match circle color property name in capabilities.json
             displayName: "Thickness",
-            value: 2, 
-            options: {
-                minValue: {
-                    type: powerbi.visuals.ValidatorType.Min,
-                    value: 0,
-                },
-                maxValue: {
-                    type: powerbi.visuals.ValidatorType.Max,
-                    value: 10,
-                }
-            }
-	    });
-        name: string = "circle";
+            description: "The circle thickness.",
+            value: 2
+        });
+
+        name: string = "circle"; // circle card name should match circle object name in capabilities.json
         displayName: string = "Circle";
         slices: Array<FormattingSettingsSlice> = [this.circleColor, this.circleThickness];
     }
 
-    export class VisualSettings extends FormattingSettingsModel {
-        public circle: CircleSettings = new CircleSettings();
-        public cards: FormattingSettingsCard[] = [this.circle]
+    /**
+    * visual settings model class
+    *
+    */
+    export class VisualFormattingSettingsModel extends FormattingSettingsModel {
+        // Create formatting settings model circle formatting card
+        circleCard = new CircleCardSettings();
+
+        cards = [this.circleCard];
     }
     ```
 
@@ -654,21 +657,21 @@ Add the `CircleSettings` class to *settings.ts*.
 
 ### Add a method to apply visual settings
 
-Add the `enumerateObjectInstances` method used to apply visual settings, and required imports to the *visuals.ts* file.
+Add the `getFormattingModel` method used to apply visual settings, and required imports to the *visuals.ts* file.
 
 1. In VS Code, from the **src** folder, open **visuals.ts**.
 
 2. Add these `import` statements at the top of **visual.ts**.
 
     ```typescript
-    import { VisualSettings } from "./settings";
     import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+    import { VisualFormattingSettingsModel } from "./settings";
     ```
 
 3. Add the following declaration to **Visual**.
 
     ```typescript
-    private settings: VisualSettings;
+    private formattingSettings: VisualFormattingSettingsModel;
     private formattingSettingsService: FormattingSettingsService;
     ```
 
@@ -676,27 +679,32 @@ Add the `enumerateObjectInstances` method used to apply visual settings, and req
 
     ```typescript
     public getFormattingModel(): powerbi.visuals.FormattingModel {
-        return this.formattingSettingsService.buildFormattingModel(this.settings);
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
     ```
 
-5. In the `Visual` class, add the following code to `update` so that the `dataView` object will be able to receive `settings`.
+5. In the `Visual` class, add the following code line to `constructor` to initialize `formattingSettingsService`
+
+    ```typescript
+        this.formattingSettingsService = new FormattingSettingsService();
+
+6. In the `Visual` class, add the following code to `update` to update the visual formatting settings to the latest formatting properties values.
 
     1. Add this code to the *if* statement after `const size = Math.min(width, height);`.
 
         ```typescript
-        this.settings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews)
-        const object = this.settings.circle;
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
+        const circleSettings = this.formattingSettings.circleCard;
         ```
 
     2. Add this code to call of `ReactCircleCard.update` after `size`:
         ```typescript
-            borderWidth: object.circleThickness.value,
-            background: object.circleColor.value.value,
-        });
+        borderWidth: circleSettings.circleThickness.value,
+        background: circleSettings.circleColor.value.value,
+        }
         ```
 
-6. Save **visual.ts**.
+7. Save **visual.ts**.
 
 ### Edit the component file
 
@@ -742,17 +750,7 @@ Experiment with the visual's color and border thickness, which you can now contr
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
+* [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
+* [Create a Power BI bar chart visual](create-bar-chart.md)
+* [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
 
-> [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
-
-> [!div class="nextstepaction"]
-> [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
-
-> [!div class="nextstepaction"]
-> [Power BI visuals project structure](visual-project-structure.md)
-
-> [!div class="nextstepaction"]
-> [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
