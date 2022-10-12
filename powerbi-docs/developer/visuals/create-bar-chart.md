@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 05/05/2022
+ms.date: 10/12/2022
 ---
 
 # Tutorial: Build a bar chart
@@ -578,7 +578,7 @@ To build a formatting model, the developer should be familiar with all its compo
 To add a color picker for each category on the **Property** pane, add a for loop on `barDataPoints` and for each one add a new color picker format property to the formatting model.
 
 ```typescript
-   /** Gets the settings to display in the formatting pane */
+    /** Gets the settings to display in the formatting pane */
     public getFormattingModel(): powerbi.visuals.FormattingModel {
         const enableAxisCard: powerbi.visuals.FormattingCard = {
             displayName: "Enable Axis",
@@ -687,9 +687,11 @@ import powerbi from "powerbi-visuals-api";
 import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 import { BarChartDataPoint } from "./barChart";
+
 import FormattingSettingsCard = formattingSettings.Card;
 import FormattingSettingsSlice = formattingSettings.Slice;
 import FormattingSettingsModel = formattingSettings.Model;
+
 /**
  * Enable Axis Formatting Card
  */
@@ -701,34 +703,42 @@ class EnableAxisCardSettings extends FormattingSettingsCard {
         value: false,
         topLevelToggle: true
     });
+
     // Formatting property `fill` color picker (formatting simple slice)
     fill = new formattingSettings.ColorPicker({
         name: "fill",
         displayName: "Color",
         value: { value: "#000000" }
     });
+
     name: string = "enableAxis";
     displayName: string = "Enable Axis";
     slices: Array<FormattingSettingsSlice> = [this.show, this.fill];
 }
+
 /**
  * Color Selector Formatting Card
  */
+
 class ColorSelectorCardSettings extends FormattingSettingsCard {
     name: string = "colorSelector";
     displayName: string = "Data Colors";
+
     // slices will be populated in barChart settings model `populateColorSelector` method
     slices: Array<FormattingSettingsSlice> = [];
 }
+
 /**
 * BarChart settings model class
 *
 */
 export class BarChartSettingsModel extends FormattingSettingsModel {
+
     // Create formatting settings model formatting cards
     enableAxis = new EnableAxisCardSettings();
     colorSelector = new ColorSelectorCardSettings();
     cards = [this.enableAxis, this.colorSelector];
+
     /**
      * populate colorSelector object categories formatting properties
      * @param dataPoints 
@@ -762,6 +772,7 @@ To use the localization feature, add the localization manager to the formatting 
     // declare utils formatting settings service
     private formattingSettingsService: FormattingSettingsService;
     //...
+
     constructor(options: VisualConstructorOptions) {
         this.host = options.host;
         const localizationManager = this.host.createLocalizationManager();
@@ -769,21 +780,26 @@ To use the localization feature, add the localization manager to the formatting 
         
         // Add here rest of your custom visual constructor code
     }
+
 ```
 
-Update the formatting settings model using the *update* API. The *update* API is called each time a formatting property in the properties pane is changed.
-Create bar chart selectors data points and populate them in the formatting settings model.
+Update the formatting settings model using update API. Call the *Update* API each time a formatting property in the properties pane is changed.
+Create bar chart selectors data points and populate them in formatting settings model:
 
 ```typescript
-    
+
     // declare formatting settings model for bar chart 
     private formattingSettings: BarChartSettingsModel;
+
     // ...
+
     public update(options: VisualUpdateOptions) {
         this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(BarChartSettingsModel, options.dataViews);
         this.barDataPoints = createSelectorDataPoints(options, this.host);
         this.formattingSettings.populateColorSelector(this.barDataPoints);
-        // Add here rest of your custom visual update API code
+
+        // Add the rest of your custom visual update API code here
+
     }
 ```
 
