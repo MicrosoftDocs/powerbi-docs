@@ -105,7 +105,7 @@ Using the Dataverse connector in Power BI—whether for import or DirectQuery mo
 
 The Azure Synapse Link option requires system administrator access to Dataverse and certain Azure permissions. These Azure permissions are required to set up the storage account and a Synapse workspace. While the setup isn't complex, having experience writing SQL queries will be beneficial.
 
-## Best practices
+## Recommended practices
 
 This section describes design patterns (and anti-patterns) you should consider when creating a Power BI model that connects to Dataverse. Only a few of these patterns are unique to Dataverse, but they tend to be common challenges for Dataverse makers when they go about building Power BI reports.
 
@@ -113,13 +113,13 @@ This section describes design patterns (and anti-patterns) you should consider w
 
 Rather than trying to solve *everything*, focus on the specific use case.
 
-This best practice is probably the most common and easily the most challenging anti-pattern to avoid. The attempt to build a single model that enables all self-service reporting needs is challenging. The reality is that successful models are built to answer questions around a central set of facts over a single core topic. While that might initially seem to limit the model, it's actually empowering because you can tune and optimize the model for answering questions within that topic.
+This recommendation is probably the most common and easily the most challenging anti-pattern to avoid. The attempt to build a single model that enables all self-service reporting needs is challenging. The reality is that successful models are built to answer questions around a central set of facts over a single core topic. While that might initially seem to limit the model, it's actually empowering because you can tune and optimize the model for answering questions within that topic.
 
-To help ensure that you have a clear understanding of the model's purpose, ask yourself the following questions:
+To help ensure that you have a clear understanding of the model's purpose, ask yourself the following questions.
 
 - What topic area will this model support?
 - Who is the audience of the reports?
-- What question is the report trying to answer?
+- What questions are the reports trying to answer?
 - What is the minimum viable dataset?
 
 Resist combining multiple topic areas into a single model just because the report user has questions across multiple topic areas that they want addressed by a single report. By breaking that report out into multiple reports, each with a focus on a different topic (or [fact table](star-schema.md)), you can produce much more efficient, scalable, and manageable models.
@@ -136,20 +136,20 @@ For more information, see [Understand star schema and the importance for Power B
 
 ### Optimize Power Query queries
 
-A Power Query query is a set of steps that extracts, transforms, and loads source data into a model table. Each step builds on the result of the previous step. As a result, the types of transformations—and even the sequence of steps—can affect query performance.
+The Power Query mashup engine strives to achieve _query folding_ whenever possible for reasons of efficiency. A query that achieves folding delegates query processing to the source system.
 
-The Power Query mashup engine, which evaluates and runs queries, strives to achieve *query folding* whenever possible for reasons of efficiency. Query folding is the ability for a Power Query query to generate a single query statement to retrieve and transform source data.
+The source system, in this case Dataverse, then only needs to deliver filtered or summarized results to Power BI. A folded query is often significantly faster and more efficient than a query that doesn't fold.
 
-A query that achieves folding delegates query processing to the source system. But not all queries fold by default. For more information about, see [Power Query query folding](/power-query/power-query-folding).
+For more information on how you can achieve query folding, see [Power Query query folding](/power-query/power-query-folding).
 
 > [!NOTE]
-> Optimizing Power Query is a broad topic. To achieve a better understanding of what Power Query is doing at authoring and at refresh time in Power BI Desktop, see [Query diagnostics](/power-query/querydiagnostics).
+> Optimizing Power Query is a broad topic. To achieve a better understanding of what Power Query is doing at authoring and at model refresh time in Power BI Desktop, see [Query diagnostics](/power-query/querydiagnostics).
 
 ### Minimize the number of query columns
 
 By default, when you use Power Query to load a Dataverse table, it retrieves all rows and all columns. When you query a system user table, it could contain more than 1,000 columns. The columns in the metadata include relationships to other entities and lookups to option labels, so the total number of columns grows with the complexity of the Dataverse table.
 
-Attempting to retrieve data from all columns is an anti-pattern. It often results in performance bottlenecks during data refresh, and it can cause the Dataverse connector to fail when the data volume exceeds 80 MB.
+Attempting to retrieve data from all columns is an anti-pattern. It often results in extended data refresh operations, and it will cause the query to fail when the data volume exceeds 80 MB.
 
 We recommend that you only retrieve columns that are required by reports. It's often a good idea to reevaluate and refactor queries when report development is complete, allowing you to identify and remove unused columns. For more information, see [Data reduction techniques for import modeling (Remove unnecessary columns)](import-modeling-data-reduction.md#remove-unnecessary-columns).
 
@@ -161,7 +161,7 @@ Consider the following query that retrieves data from just two columns of the **
 
 ```powerquery-m
 let
-    Source = CommonDataService.Database("demo.crm.dynamics.com"),
+    Source = CommonDataService.Database("demo.crm.dynamics.com", [CreateNavigationProperties=false]),
     dbo_account = Source{[Schema="dbo", Item="account"]}[Data],
     #"Removed Other Columns" = Table.SelectColumns(dbo_account, {"accountid", "name"})
 in
@@ -243,42 +243,124 @@ You're likely to experience significant performance improvement when a Dataverse
 > [!NOTE]
 > This option can improve the performance of data refresh of import tables or [dual storage mode tables](#use-dual-storage-mode-dimension-tables), including the process of applying Power Query Editor window changes. It doesn't improve the performance of interactive cross-filtering of DirectQuery storage mode tables.
 
-### Helpful hint: When Dataverse choice labels are blank
+### Resolve blank Dataverse choice labels
 
-If you discover that Dataverse [choice labels](/power-apps/developer/data-platform/multi-select-picklist?tabs=webapi) are blank in Power BI, you may need to apply a fix.
+If you discover that Dataverse [choice labels](/power-apps/developer/data-platform/multi-select-picklist?tabs=webapi) are blank in Power BI, it could be because the labels haven't been published to the Tabular Data Stream (TDS) endpoint.
 
 In this case, open the Dataverse Maker Portal, navigate to the **Solutions** area, and then select **Publish all customizations**. The publication process will update the TDS endpoint with the latest metadata, making those option labels available to Power BI.
 
-For more information about Dataverse choice labels, see [Access Dataverse choices with Power BI](/power-apps/maker/data-platform/azure-synapse-link-choices-powerbi).
+## Enterprise scale with Azure Synapse Link
+
+Dataverse includes the ability to synchronize tables to Azure Data Lake Storage (ADLS) and then connect to that data through an Azure Synapse workspace. With minimal effort, you can set up [Azure Synapse Link](/power-apps/maker/data-platform/export-to-data-lake) to populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
+
+Azure Synapse Link enables a continuous replication of the data and metadata from Dataverse into the data lake, and it provides a built-in serverless SQL pool as a convenient data source for Power BI queries.
+
+The strengths of this approach are significant. Customers gain the ability to run analytics, business intelligence, and machine learning workloads across Dataverse data by using various advanced services, such as Apache Spark, Power BI, Azure Data Factory, Azure Databricks, and Azure Machine Learning.
+
+### Create an Azure Synapse Link for Dataverse
+
+To create an Azure Synapse Link for Dataverse, you'll need the following prerequisites in place.
+
+- System administrator access to the Dataverse environment.
+- Azure Data Lake Storage:
+  - You must have a storage account to use with ADLS Gen2.
+  - You must be assigned **Storage Blob Data Owner** and **Storage Blob Data Contributor** access to storage account. For more information, see [Role-based access control (Azure RBAC)](/azure/storage/blobs/data-lake-storage-access-control-model).
+  - The storage account must enable [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace).
+  - It's recommended that the storage account use [read-access geo-redundant storage (RA-GRS)](/azure/storage/common/storage-redundancy#redundancy-in-a-secondary-region).
+- Synapse workspace:
+  - You must have access to a Synapse workspace and be assigned **Synapse Administrator** access. For more information, see [Built-in Synapse RBAC roles and scopes](/azure/synapse-analytics/security/synapse-workspace-synapse-rbac-roles#built-in-synapse-rbac-roles-and-scopes).
+  - The workspace must be in the same region as the ADLS Gen2 storage account.
+
+The setup involves signing in to Power Apps and connecting Dataverse to the Azure Synapse workspace. A wizard-like experience allows you to create a new link by selecting the storage account and the tables to export. Azure Synapse Link copies data to the ADLS Gen2 storage and automatically creates views in the built-in Azure Synapse serverless SQL pool. You can then [connect to those views](#connect-to-synapse-analytics) to create a Power BI model.
+
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics." border="false":::
+
+> [!TIP]
+> For complete documentation on creating, managing, and monitoring Azure Synapse Link see [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/powerapps/maker/data-platform/azure-synapse-link-synapse).
+
+### Create a second serverless SQL pool
+
+You can create a second serverless SQL pool and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
+
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse-serverless.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics. It includes custom report views." border="false":::
+
+This approach delivers data to Power BI that's focused, enriched, and filtered.
+
+You can create a serverless SQL pool in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL pool type and enter a database name. Power Query can connect to this pool by connecting to the workspace SQL endpoint.
+
+### Create custom views
+
+Consider creating custom views that wrap serverless SQL pool queries. These views will serve as straightforward, clean sources of data that Power BI connects to. The views should:
+
+- Include the labels associated with choice fields.
+- Reduce complexity by including only the columns required for data modeling.
+- Filter out unnecessary rows, such as inactive records.
+
+Consider the following view that retrieves campaign data.
+
+```sql
+CREATE VIEW [VW_Campaign]
+AS
+    SELECT
+        [base].[campaignid] AS [CampaignID]
+        [base].[name] AS [Campaign],
+        [campaign_status].[LocalizedLabel] AS [Status],
+        [campaign_typecode].[LocalizedLabel] AS [Type Code]
+    FROM
+        [dbo].[campaign] AS [base]
+        LEFT OUTER JOIN [dbo].[OptionsetMetadata] AS [campaign_typecode]
+            ON [base].[typecode] = [campaign_typecode].[option]
+               AND [campaign_typecode].[LocalizedLabelLanguageCode] = 1033
+               AND [campaign_typecode].[EntityName] = 'campaign'
+               AND [campaign_typecode].[OptionSetName] = 'typecode'
+        LEFT OUTER JOIN [dbo].[StatusMetadata] AS [campaign_status]
+            ON [base].[statuscode] = [campaign_Status].[status]
+               AND [campaign_status].[LocalizedLabelLanguageCode] = 1033
+               AND [campaign_status].[EntityName] = 'campaign'
+    WHERE
+        [base].[statecode] = 0;
+```
+
+Notice that the view includes only four columns, each aliased with a friendly name. There's also a `WHERE` clause to return only necessary rows, in this case active campaigns. Also, the view queries the campaign table that's joined to the **OptionsetMetadata** and **StatusMetadata** tables in order to retrieve choice labels.
+
+> [!TIP]
+> For more information on how to retrieve metadata, see [Access choice labels directly from Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-choice-labels).
+
+### Query appropriate tables
+
+Azure Synapse Link for Dataverse ensures that data is continually synchronized with the data in the data lake. For high-usage activity, simultaneous writes and reads can create locks that cause queries to fail. To ensure reliability when retrieving data, two versions of the table data are synchronized in Azure Synapse.
+
+- **Near real-time data:** Provides a copy of data synchronized from Dataverse via Azure Synapse Link in an efficient manner by detecting what data has changed since it was initially extracted or last synchronized.
+- **Snapshot data:** Provides a read-only copy of near real-time data that's updated at regular intervals (in this case every hour). Snapshot data table names have *_partitioned* appended to their name.
+
+If you anticipate that a high volume of read and write operations will be executed simultaneously, retrieve data from the snapshot tables to avoid query failures.
+
+For more information, see [Access near real-time data and read-only snapshot data](/power-apps/maker/data-platform/azure-synapse-link-synapse#access-near-real-time-data-and-read-only-snapshot-data-preview).
+
+### Connect to Synapse Analytics
+
+To query a serverless SQL pool, you'll need its workspace SQL endpoint. You can retrieve the endpoint from Synapse Studio by opening the serverless SQL pool properties.
+
+In Power BI Desktop, you can connect to Azure Synapse by using the [Azure Synapse Analytics SQL connector](/power-query/connectors/azuresqldatawarehouse). When prompted for the server, enter the workspace SQL endpoint.
+
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/connect-to-synapse-analytics.png" alt-text="Screenshot of the SQL Server Database window used to set the server value." border="false":::
 
 ## Considerations for DirectQuery models
 
-When model tables have their storage mode set to DirectQuery, queries made to that table are passed through to the data source. Only certain data sources, including Dataverse, support this storage mode.
-
-Generally, you should import data to Power BI wherever possible. However, there are several benefits to using DirectQuery storage mode. Consider using this storage mode when:
-
-- You need to model large volumes of data, and importing large data volumes could be impractical, or data refreshes could take a long time to complete.
-- The source data is fast-changing and report users need to see up-to-date data.
-- You need Dataverse to enforce user-specific permissions.
+There are many use cases when DirectQuery models can solve your requirements. However, using DirectQuery can negatively affect performance. A Power BI report that uses a DirectQuery model will never be as fast as a report that uses an import model. Generally, you should import data to Power BI wherever possible.
 
 > [!IMPORTANT]
-> While a DirectQuery model can be a good alternative when you have large data volumes or when you need near real-time reporting, it might not perform well when your data source is Dataverse. That's because queries sent to Dataverse involve translation in order to enforce role permissions, which can result in slow performance.
+> While a DirectQuery model can be a good alternative when you have large data volumes or when you need near real-time reporting, it might not perform well when your data source is Dataverse. That's because queries sent to Dataverse involve translation in order to enforce role-based permissions, which can result in slow performance.
 
-Bear in mind that there are many limitations related to DirectQuery storage mode.
-
-- Power Query (M) queries can't be overly complex because these queries must translate to native queries that are supported by Dataverse. So, for example, it's not possible to use pivot or unpivot transformations.
-- Analytic query performance can be slow, especially when Dataverse enforce role-based security, or it isn't optimized (with indexes or materialized views), or there aren't sufficient resources for the analytic workload.
-- Analytic queries can affect the performance of Dataverse. It could result in a slower experience for other workloads, including write operations.
+You should consider the topics in this section when working with DirectQuery storage mode.
 
 For more information about determining when to develop a DirectQuery model, see [Choose a Power BI model framework](/learn/modules/choose-power-bi-model-framework/).
-
-The topics in this section provide you with other considerations when working with DirectQuery storage mode.
 
 ### Use dual storage mode dimension tables
 
 A dual storage mode table is set to use both import and DirectQuery storage modes. At query time, Power BI determines the most efficient mode to use. Whenever possible, Power BI attempts to satisfy queries by using imported data because it's faster.
 
-You should consider setting dimension tables to dual storage mode. That way, slicer visuals and filter card lists, which are often based on dimension table columns, will render more quickly because they'll be queried from imported data.
+You should consider setting dimension tables to dual storage mode, when appropriate. That way, slicer visuals and filter card lists, which are often based on dimension table columns, will render more quickly because they'll be queried from imported data.
 
 > [!IMPORTANT]
 > When a dimension table needs to inherit the Dataverse security model, it isn't appropriate to use dual storage mode.
@@ -337,111 +419,9 @@ For example, an import model could provide access to all Dataverse data but not 
 
 As another example, when Dataverse enforces role-based permissions by sales region, you could create one import model and replicate those permissions using RLS. Alternatively, you could create model for each sales region. You could then grant read permission to those models (datasets) to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
 
-## Enterprise scale with Azure Synapse Link
-
-Dataverse includes the ability to synchronize tables to Azure Data Lake Storage (ADLS) and then connect to that data through an Azure Synapse workspace. With minimal effort, you can set up [Azure Synapse Link](/power-apps/maker/data-platform/export-to-data-lake) to populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
-
-Azure Synapse Link enables a continuous replication of the data and metadata from Dataverse into the data lake, and it provides a built-in serverless SQL pool as a convenient data source for Power BI queries.
-
-The strengths of this approach are significant. Customers gain the ability to run analytics, business intelligence, and machine learning workloads across Dataverse data by using various advanced services, such as Apache Spark, Power BI, Azure Data Factory, Azure Databricks, and Azure Machine Learning.
-
-### Create an Azure Synapse Link for Dataverse
-
-To create an Azure Synapse Link for Dataverse, you'll need the following prerequisites in place.
-
-- System administrator access to the Dataverse environment.
-- Azure Data Lake Storage:
-  - You must have a storage account to use with ADLS Gen2.
-  - You must be assigned **Storage Blob Data Owner** and **Storage Blob Data Contributor** access to storage account. For more information, see [Role-based access control (Azure RBAC)](/azure/storage/blobs/data-lake-storage-access-control-model).
-  - The storage account must enable [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace).
-  - It's recommended that the storage account use [read-access geo-redundant storage (RA-GRS)](/azure/storage/common/storage-redundancy#redundancy-in-a-secondary-region).
-- Synapse workspace:
-  - You must have access to a Synapse workspace and be assigned **Synapse Administrator** access. For more information, see [Built-in Synapse RBAC roles and scopes](/azure/synapse-analytics/security/synapse-workspace-synapse-rbac-roles#built-in-synapse-rbac-roles-and-scopes).
-  - The workspace must be in the same region as the ADLS Gen2 storage account.
-
-The setup involves signing in to Power Apps and connecting Dataverse to the Azure Synapse workspace. A wizard-like experience allows you to create a new link by selecting the storage account and the tables to export. Azure Synapse Link copies data to the ADLS Gen2 storage and automatically creates views in the built-in Azure Synapse serverless SQL pool. You can then [connect to those views](#connect-to-synapse-analytics) to create a Power BI model.
-
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics." border="false":::
-
-> [!TIP]
-> For complete documentation on creating, managing, and monitoring Azure Synapse Link see [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/powerapps/maker/data-platform/azure-synapse-link-synapse).
-
-### Create a second serverless SQL pool
-
-You can create a second serverless SQL pool and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
-
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse-serverless.png" alt-text="Diagram showing Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics. It includes custom report views." border="false":::
-
-This approach delivers data to Power BI that's focused, enriched, and filtered.
-
-You can create a serverless SQL pool in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL pool type and enter a database name. Power Query can connect to this pool by connecting to the workspace SQL endpoint.
-
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/create-serverless-sql-pool.png" alt-text="Screenshot of the Create SQL database process in Synapse Studio.":::
-
-### Create custom views
-
-Consider creating custom views that wrap serverless SQL pool queries. These views will serve as straightforward, clean sources of data that Power BI connects to. The views should:
-
-- Include the labels associated with choice fields.
-- Reduce complexity by including only the columns required for data modeling.
-- Filter out unnecessary rows, such as inactive records.
-
-Consider the following view that retrieves campaign data.
-
-```sql
-CREATE VIEW [VW_Campaign]
-AS
-    SELECT
-        [base].[campaignid] AS [CampaignID]
-        [base].[name] AS [Campaign],
-        [campaign_status].[LocalizedLabel] AS [Status],
-        [campaign_typecode].[LocalizedLabel] AS [Type Code]
-    FROM
-        [dataverse_adl].[dbo].[campaign] AS [base]
-        LEFT OUTER JOIN [dataverse_adl].[dbo].[OptionsetMetadata] AS [campaign_typecode]
-            ON [base].[typecode] = [campaign_typecode].[option]
-               AND [campaign_typecode].[LocalizedLabelLanguageCode] = 1033
-               AND [campaign_typecode].[EntityName] = 'campaign'
-               AND [campaign_typecode].[OptionSetName] = 'typecode'
-        LEFT OUTER JOIN [dataverse_adl].[dbo].[StatusMetadata] AS [campaign_status]
-            ON [base].[statuscode] = [campaign_Status].[status]
-               AND [campaign_status].[LocalizedLabelLanguageCode] = 1033
-               AND [campaign_status].[EntityName] = 'campaign'
-    WHERE
-        [base].[statecode] = 0;
-```
-
-Notice that the view includes only four columns, each aliased with a friendly name. There's also a `WHERE` clause to return only necessary rows, in this case active campaigns. Also, the view queries the campaign table that's joined to the **OptionsetMetadata** and **StatusMetadata** tables in order to retrieve choice labels.
-
-> [!TIP]
-> For more information on how to retrieve metadata, see [Access choice labels directly from Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-choice-labels).
-
-### Query appropriate tables
-
-Azure Synapse Link for Dataverse ensures that data is continually synchronized with the data in the data lake. For high-usage activity, simultaneous writes and reads can create locks that cause queries to fail. To ensure reliability when retrieving data, two versions of the table data is synchronized in Azure Synapse:
-
-- **Near real-time data:** Provides a copy of data synchronized from Dataverse via Azure Synapse Link in an efficient manner by detecting what data has changed since it was initially extracted or last synchronized.
-- **Snapshot data:** Provides a read-only copy of near real-time data that's updated at regular intervals (in this case every hour). Snapshot data table names have *_partitioned* appended to their name.
-
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/near-realtime-snapshot-data.png" alt-text="Screenshot of tables showing an account table and an account_partitioned table." border="false":::
-
-If you anticipate that a high volume of read and write operations will be executed simultaneously, retrieve data from the snapshot tables to avoid query failures.
-
-For more information, see [Access near real-time data and read-only snapshot data](/power-apps/maker/data-platform/azure-synapse-link-synapse#access-near-real-time-data-and-read-only-snapshot-data-preview).
-
-### Connect to Synapse Analytics
-
-To query a serverless SQL pool, you'll need its workspace SQL endpoint. You can retrieve the endpoint from Synapse Studio by opening the serverless SQL pool properties.
-
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/retrieve-workspace-sql-endpoint.png" alt-text="Screenshot of the Synapse Studio SQL pool properties. The workspace SQL endpoint is highlighted." border="false":::
-
-In Power BI Desktop, you can connect to Azure Synapse by using the [Azure Synapse Analytics SQL connector](/power-query/connectors/azuresqldatawarehouse). When prompted for the server, enter the workspace SQL endpoint.
-
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/connect-to-synapse-analytics.png" alt-text="Screenshot of the SQL Server Database window used to set the server value." border="false":::
-
 ## Next steps
 
-For more information related to this article, check out the following resources:
+For more information related to this article, check out the following resources.
 
 - [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake)
 - [Understand star schema and the importance for Power BI](star-schema.md)
