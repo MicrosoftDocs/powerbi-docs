@@ -193,6 +193,9 @@ displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
 description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
 
+For **localize formatting model** see [format pane localization](format-pane.md#localization).  
+For **localize formatting model utils** see [formatting model utils - localization](utils-formatting-model.md#localization).
+
 ## Supported languages
 
 The table below contains a list of all the languages supported in Power BI, and the string that the `locale` variable returns for each one.
