@@ -7,12 +7,16 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 07/14/2022
+ms.date: 10/12/2022
 ---
 
 # Power BI visuals API changelog
 
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
+
+## API v5.1
+
+## API v5.0
 
 ## API v4.7.0
 
