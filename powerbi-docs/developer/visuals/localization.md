@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 10/10/2022
 ---
 
 # Add the locale Power BI language to your Power BI visual
@@ -179,6 +179,18 @@ For example, the following code returns *Legend* for **en-US**, and *Обозн�
 
 ```typescript
 let legend: string = this.localization.getDisplayName("Role_Legend");
+```
+
+## Format pane and analytics pane localization
+
+> [!NOTE]
+> Relevant to API version 5.1+
+
+To support localization on format pane and analytics pane components, set localized string as the following:
+
+```typescript
+displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
+description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
 
 ## Supported languages
