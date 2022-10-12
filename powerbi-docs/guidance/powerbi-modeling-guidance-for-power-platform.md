@@ -130,7 +130,7 @@ Dataverse developers and administrators who are comfortable with the Dataverse s
 
 Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model that's optimized for [analytical reports](/learn/modules/power-bi-effective-structure/1-introduction). The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
 
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/star-schema.png" alt-text="Diagram of a star schema comprising a single fact table and five dimension tables." border="false":::
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/star-schema-opportunity.png" alt-text="Diagram shows a star schema comprising a single opportunity fact table and four dimension tables." border="false":::
 
 For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
 
