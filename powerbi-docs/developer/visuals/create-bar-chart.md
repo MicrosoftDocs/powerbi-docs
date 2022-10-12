@@ -671,16 +671,16 @@ To add a color picker for each category on the **Property** pane, add a for loop
             ]
         }
         return { cards: [enableAxisCard, colorSelectorCard] };
-    }
+    } 
 ```
 
-## (Optional) Populate properties pane `getFormattingModel` using Formatting Model Utils
+## (Optional) Populate the properties pane using the formatting model Utils
 
-Populating properties pane using the new API "getFormattingModel" could be done using [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
+Populate the properties pane using the `getFormattingModel` API in the [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
 
-For sample bar chart full code with formatting model utils see [repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial-FormattingModelUtils).
+For the full code of a sample bar chart with formatting model utils see [the bar chart repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial-FormattingModelUtils).
 
-Formatting properties and their values need to be declared in a formatting settings class:
+Declare formatting properties and their values in a formatting settings class:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -728,7 +728,6 @@ class ColorSelectorCardSettings extends FormattingSettingsCard {
     slices: Array<FormattingSettingsSlice> = [];
 }
 
-
 /**
 * BarChart settings model class
 *
@@ -762,19 +761,16 @@ export class BarChartSettingsModel extends FormattingSettingsModel {
 }
 ```
 
-Build and create add the formatting settings model service in visual constructor method, Formatting settings model service will receive the barChart formatting settings model then convert and build it into FormattingModel object that is ready to returned from custom visual `getFormattingModel` API.
+Build and create the *formatting settings service* model in the visual's *constructor* method. The *formatting settings service* receives the barChart format settings  and converts them into a FormattingModel object that's returned in the `getFormattingModel` API.
 
-Add your localization manager to formatting settings service if you plan to use the strings localization feature.
+To use the localization feature, add the localization manager to the formatting settings service.
 
 ```typescript
-
     import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
     
     // ...
-
     // declare utils formatting settings service
     private formattingSettingsService: FormattingSettingsService;
-
     //...
 
     constructor(options: VisualConstructorOptions) {
@@ -787,7 +783,7 @@ Add your localization manager to formatting settings service if you plan to use 
 
 ```
 
-Update the formatting settings model using update API. Call Update API each time a formatting property in the properties pane is changed.
+Update the formatting settings model using update API. Call the *Update* API each time a formatting property in the properties pane is changed.
 Create bar chart selectors data points and populate them in formatting settings model:
 
 ```typescript
@@ -802,12 +798,12 @@ Create bar chart selectors data points and populate them in formatting settings 
         this.barDataPoints = createSelectorDataPoints(options, this.host);
         this.formattingSettings.populateColorSelector(this.barDataPoints);
 
-        // Add here rest of your custom visual update API code
+        // Add the rest of your custom visual update API code here
 
     }
 ```
 
-Finally, The new API `getFormattingModel` is a simple line of code using the formatting settings service and current formatting settings model that was created in the *update* API above.
+Finally, the new API `getFormattingModel` is a simple line of code using the formatting settings service and current formatting settings model that was created in the *update* API above.
 
 ```typescript
     public getFormattingModel(): powerbi.visuals.FormattingModel {

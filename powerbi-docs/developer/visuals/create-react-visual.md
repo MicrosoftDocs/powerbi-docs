@@ -417,7 +417,7 @@ The code below selects `textLabel` and `textValue` from `DataView`, and if the d
 
         ReactCircleCard.update({
             textLabel: dataView.metadata.columns[0].displayName,
-                textValue: dataView.single.value.toString()
+            textValue: dataView.single.value.toString()
         });
     } else {
         this.clear();
@@ -697,8 +697,7 @@ Add the `getFormattingModel` method used to apply visual settings, and required 
         const circleSettings = this.formattingSettings.circleCard;
         ```
 
-    2. Add this code to `ReactCircleCard.update` after `size`.
-
+    2. Add this code to call of `ReactCircleCard.update` after `size`:
         ```typescript
         borderWidth: circleSettings.circleThickness.value,
         background: circleSettings.circleColor.value.value,
@@ -754,3 +753,4 @@ Experiment with the visual's color and border thickness, which you can now contr
 * [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 * [Create a Power BI bar chart visual](create-bar-chart.md)
 * [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
+
