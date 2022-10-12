@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 09/19/2022
+ms.date: 10/12/2022
 ---
 
 # Customize the format pane in Power BI custom visuals
@@ -422,7 +422,7 @@ Here's the resulting pane:
 
 The new format pane has the option to reset all formatting card properties values to default by clicking on the *Reset to default* button that appears in the open card.
 
-:::image type="content" source="./media/format-pane/formatCard-reset-to-default.png" alt-text="Screenshot of format card reset to default button.":::
+:::image type="content" source="./media/format-pane/format-card-reset-to-default.png" alt-text="Screenshot of format card reset to default button.":::
 
 To enable this feature, add a list of formatting card properties descriptors to formatting card `revertToDefaultDescriptors`.
 The following the example shows how to add the *reset to default* button:
@@ -457,7 +457,7 @@ The optional selector in formatting properties descriptor determines where each 
 
 ## Localization
 
-For more about the localization feature and to setup a localization environment see [Add the local language to your Power BI visual](localization.md) Use the localization manager to format components that you want to localize:
+For more about the localization feature and to set up a localization environment see [Add the local language to your Power BI visual](localization.md) Use the localization manager to format components that you want to localize:
 
 ```typescript
 displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
@@ -468,7 +468,7 @@ description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 
 * All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
 
-* We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: powerbi visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
+* We recommend using the new formatting model utils at [GitHub - microsoft/powerbi-visuals-utils-formattingmodel: Power BI visuals formatting model helper utils](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
 
 * You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
