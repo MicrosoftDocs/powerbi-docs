@@ -275,7 +275,7 @@ You can enable resetting formatting settings from:
 
 ## Localization
 
-For more about localization feature and to setup localization environment, see [here]((localization.md)
+For more about localization feature and to set up localization environment, see [here](localization.md)
 
 Init formatting settings service with localization manager in case localization is required in your custom visual:
 
