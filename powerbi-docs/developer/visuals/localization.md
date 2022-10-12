@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 10/10/2022
 ---
 
-# Add the locale Power BI language to your Power BI visual
+# Add the local language to your Power BI visual
 
 Power BI [supports a range of local languages](./../../fundamentals/supported-languages-countries-regions.md). You can retrieve the Power BI locale language, and use it to display content in your visual.
 
