@@ -1,5 +1,5 @@
 ---
-title: Email subscriptions for Power BI reports and dashboards
+title: Email subscriptions for reports and dashboards in the Power BI service
 description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
@@ -8,11 +8,11 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/22/2022
+ms.date: 09/12/2022
 LocalizationGroup: Common tasks
 ---
 
-# Email subscriptions for Power BI reports and dashboards
+# Email subscriptions for reports and dashboards in the Power BI service
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -31,7 +31,7 @@ To create a subscription for yourself, you'll need either:
 - A Power BI Pro or [Premium Per User (PPU) license](end-user-license.md) or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
 
-Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#email-subscriptions).
+Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#create-email-subscriptions).
 
 
 ## Subscribe to a report or dashboard
@@ -39,7 +39,7 @@ Whether you're subscribing to a dashboard or to a report page, the process is si
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscriber.png" alt-text="select the Subscribe icon":::
 
-Subscribing to a paginated report is slightly different, as outlined below [Subscribe to paginated reports](#subscribe-to-paginated-reports).
+Subscribing to a paginated report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports) in this article.
 
 1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
@@ -52,7 +52,7 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
 
 1. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
-1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. 
+1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 7 below.) 
 
 1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
@@ -69,7 +69,7 @@ Subscribing to a paginated report is slightly different, as outlined below [Subs
     - **Access to this report/dashboard**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com).
     - **Link to report/dashboard in Power BI**: Include a “Go to report” button in the body of the email that links to the report or dashboard in the Power BI service.
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
-    - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. 
+    - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium **Gen2** capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. For more information about Premium Gen2, see [What is Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md).
 
 1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It does not trigger a data refresh of the underlying dataset. 
 
@@ -109,7 +109,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - *Sharing* content with a colleague outside of your domain does not require a Premium capacity. For example, if you are aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- External users can't subscribe themselves to reports or dashboards, even if they have been added as guest users.
+- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. To learn more about guest users see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Subscribe to paginated reports 
 
@@ -126,21 +126,16 @@ Paginated reports allow you to specify the view of the report people will receiv
 ### Considerations unique to paginated report subscriptions
 
 -  You can subscribe other users in your organization to paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions.
-
-
 - You can set up an unlimited number of subscriptions per paginated report. 
-
 - The maximum attachment size is 25 MB.
-
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
-
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
-
-- There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source. 
+- There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
+- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services.
 
 
 ## Manage subscriptions
-Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the workspace administrator. Power BI administrators can view logs and turn certain subscription features on and off.
+Subscriptions are managed on a workspace level. Subscriptions can be viewed and managed by their creator and by the users assigned the *Admin* role. The Power BI workspace admin can view subscriptions, view logs, turn certain subscription features on and off, and edit and take over subscriptions.
 
 # [Creator](#tab/creator)
 
@@ -173,14 +168,14 @@ Alternately, another way to see all of your subscriptions across all workspaces 
 # [Administrator](#tab/admin)
 
 ## Workspace administrators
-Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. 
+Users who have been assigned the [Admin role](../collaborate-share/service-roles-new-workspaces.md) in a workspace can view all subscriptions that have been created for Power BI reports, dashboards or paginated reports in that workspace, regardless of owner. Information on the subscription name, owner, report or dashboard name, and content type is provided. Workspace admins can also edit and take over subscriptions owned by others.
 
 > [!NOTE]
 > Subscriptions created for reports and dashboards in an app or those hosted in your **My workspace** can only be managed by the user who created the subscriptions. 
 
 To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. 
 
-:::image type="content" source="media/end-user-subscribe/power-bi-admin-view.png" alt-text="Screenshot showing all subscriptions for a workspace.":::
+:::image type="content" source="media/end-user-subscribe/power-bi-view-admin.png" alt-text="Screenshot showing all subscriptions for a workspace.":::
 
 Users with the Admin role can also make edits or take over ownership of subscriptions that are not their own.  
 
@@ -239,15 +234,15 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Apps** 
 
 - For [Power BI apps](end-user-apps.md) you have installed, you can only create subscriptions for others if you are the owner of the app. 
-- Workspace admins cannot manage subscriptions created by another user in an app (as opposed to a workspace). 
+- Workspace admins cannot manage subscriptions created by another user in an app (as opposed to a workspace). Subscriptions created within apps are saved to a user's **My workspace** and admins do not have access to users' **My workspaces**. 
 
 **Unsupported features**    
 Email subscriptions do not support:
  
 * R-powered Power BI visuals  
 * bookmarks
-* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md). 
-
+* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+* Dataset refresh operations using an XMLA endpoint.
 
 
 ## Next steps

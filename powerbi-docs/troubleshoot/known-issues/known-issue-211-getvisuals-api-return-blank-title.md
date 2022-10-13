@@ -6,21 +6,20 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 06/21/2022
-ms.custom: known-issue211
+ms.date: 08/03/2022
+ms.custom: known-issue-211
 ---
+# Known issue #211 - GetVisuals() API for custom visuals may return a blank title
 
-# Known issue - GetVisuals() API for custom visuals may return a blank title
+The GetVisuals() client side API doesn't return the visual title correctly when called before the report renders.
+
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: July 25, 2022
 
 **Problem area:** Embedded, REST API or PowerShell
 
-## Description of problem
-
-The GetVisuals() client side API doesn't return the visual title correctly when called before the report renders.
 
 ## Symptoms
 

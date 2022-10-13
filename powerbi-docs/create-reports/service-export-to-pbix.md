@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/01/2022
+ms.date: 09/08/2022
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -71,16 +71,18 @@ To download a dataset as a .pbix file, follow these steps:
 ## Limitations
 
 This section lists the limitations of downloading a .pbix file. This section is split into two parts:
-- Limitations when [downloading a report .pbix file](#limitations-when-downloading-a-report-pbix-file).
-- Limitations when [downloading a dataset .pbix file](#limitations-when-downloading-a-dataset-pbix-file).
+- Limitations when [downloading a .pbix file from a report](#limitations-when-downloading-a-report-pbix-file).
+- Limitations when [downloading a .pbix file from a dataset](#limitations-when-downloading-a-dataset-pbix-file).
+
 
 ### Limitations when downloading a report .pbix file
 
 * You can download a file in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace that the report is in. If the report is based on a dataset in another workspace, you need to be at least a Contributor to that workspace as well.
-* You can't download [reports created using the **Create** button in the Power BI service](service-quick-create-report.md) that are based on a dataset in another workspace.
+* If you create a [report using the **Create** button](service-quick-create-report.md) in the Power BI service, and it's based on a dataset in another workspace, you can't download it.
 * Reports created in Power BI Desktop must have been *published* or *uploaded* to the Power BI service before you can download them.
 * If you create a report in the Power BI service, you have to save it before you can download it.
 * You can't download reports based on datasets that are imported from OneDrive for Business.
+* You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-power-bi-files) from the Power BI samples article.
 * Usage metric reports can't be downloaded to a .pbix file.
@@ -89,6 +91,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * You can't download reports created in the Power BI service that are based on a single dataset that is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 * If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can't download the report if the dataset is configured for [large models](../enterprise/service-premium-large-models.md), [incremental refresh](../connect-data/incremental-refresh-configure.md), or has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](deployment-pipelines-process.md#considerations-and-limitations).
+* Downloading a .pbix file that is larger than 1 GB isn't supported.
 
 ### Limitations when downloading a dataset .pbix file
 

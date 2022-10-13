@@ -7,12 +7,12 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/06/2021
+ms.date: 07/31/2022
 ---
 
-# Troubleshoot your Power BI environment setup
+# Troubleshoot your Power BI developer environment setup
 
-This article explains how to diagnose and fix the following common problems that can occur when setting up your developer environment.
+This article explains how to diagnose and fix the following common problems that can occur when setting up your developer environment for creating custom Power BI visuals.
 
 * [Can't start up pbiviz](#cant-start-up-pbiviz)
 * [Can't connect to the Power BI service](#cant-connect-to-the-power-bi-service)
@@ -24,7 +24,7 @@ This article explains how to diagnose and fix the following common problems that
 When your environment isn't set up correctly, you might receive an error such as: *pbiviz command not found*
 
 When you run `pbiviz` in your terminal's command line, you should see the help screen. If you don't, make sure you have [NodeJS](environment-setup.md#install-nodejs) version 4.0 or higher installed.
-For help installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJS](environment-setup.md#install-nodejs) see [Set up your environment for developing a Power BI visual](environment-setup.md).
+For help with installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJS](environment-setup.md#install-nodejs) see [Set up your environment for developing a Power BI visual](environment-setup.md).
 
 ## Can't connect to the Power BI service
 
@@ -51,8 +51,7 @@ Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Setting up your Power BI environment](environment-setup.md)
+* [Setting up your Power BI environment](environment-setup.md)
+* [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml)
 
->[!div class="nextstepaction"]
->[Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)  

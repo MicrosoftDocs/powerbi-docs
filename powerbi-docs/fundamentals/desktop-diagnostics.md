@@ -45,6 +45,7 @@ The diagnostics ZIP file may contain the following files and directories, based 
 - **CSDL.xml** - describes the [structure of the data model](#structure-of-your-data-model).
 - **DataModelSchema.json** - describes the [structure of the data model](#structure-of-your-data-model).
 - **Traces/ folder and files** - contains additional [session and device information](#session-and-device-information).
+- **QuerySchemas/ folder and files** - contains query information and data model structure for remote models.
 
 :::image type="content" source="media/desktop-diagnostics/desktop-diagnostics-03.png" alt-text="Screenshot of example zip file contents created by diagnostics":::
 
@@ -130,6 +131,7 @@ The information collected is a text description of everything you can see in the
 - Calculated columns definitions
 - Measure definitions
 - Role definitions
+- Remote source structure and query
 
 Data model structure information is especially relevant if you are experiencing:
 

@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 12/12/2021
+ms.date: 10/12/2022
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -410,7 +410,7 @@ import DataView = powerbi.DataView;
 import DataViewCategorical = powerbi.DataViewCategorical;
 import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
 import PrimitiveValue = powerbi.PrimitiveValue;
-// standart imports
+// standard imports
 // ...
 
 export class Visual implements IVisual {
@@ -588,7 +588,7 @@ import DataViewMetadataColumn = powerbi.DataViewMetadataColumn;
 import DataViewTable = powerbi.DataViewTable;
 import DataViewTableRow = powerbi.DataViewTableRow;
 import PrimitiveValue = powerbi.PrimitiveValue;
-// other imports
+// standard imports
 // ...
 
 export class Visual implements IVisual {
@@ -924,6 +924,21 @@ To enable the expand collapse feature to a visual using the matrix data view:
 * After expanding a node, new data limits will be applied to the DataView. This means that the new DataView might not include some of the nodes presented in the previous DataView.
 * When using expand/collapse, totals are added on even if the visual didn’t request them.
 * Currently, expanding and collapsing columns is not supported.
+
+## Keep all metadata columns
+
+Starting from **API 5.1.0**, keeping all metadata columns will be supported. This feature allows the visual to receive the metadata for all columns no matter what their active projections are.
+
+Add the following lines to your *capabilities.json* file:
+
+```json
+"keepAllMetadataColumns": {
+    "type": "boolean",
+    "description": "Indicates that visual is going to receive all metadata columns, no matter what the active projections are"
+}
+```
+
+Setting this property to `true` will result in receiving all the metadata, including from collapsed columns. Setting it to `false` or leaving it undefined will result in receiving metadata only on columns with active projections (expanded, for example).
 
 ## Data reduction algorithm
 

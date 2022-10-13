@@ -4,8 +4,8 @@ description: If the default region for your organization's Power BI data isn't o
 author: kfollis
 ms.author: kfollis
 ms.service: powerbi
-ms.subservice: powerbi-admin
-ms.topic: how-to 
+ms.subservice: pbi-troubleshooting
+ms.topic: troubleshooting 
 ms.date: 02/10/2022
 ms.custom: template-how-to; subject-moving-resources
 ---
@@ -101,7 +101,7 @@ When migration is complete, you'll be able to access Power BI in about 20-30 min
 Do the following steps to recreate the configuration of the original region:
 
 1. Recreate capacities and move workspaces back to Premium. Read more about this step in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md).
-1. If push datasets were deleted, recreate them. Refer to [https://docs.microsoft.com/en-us/power-bi/connect-data/service-real-time-streaming](../connect-data/service-real-time-streaming.md) to learn how to push data into a dataset.
+1. If push datasets were deleted, recreate them. For more information, see [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) to learn how to push data into a dataset.
 1. Reconfigure your data gateways. Follow the steps in [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
 1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
 1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. To fix this issue, follow the procedure in [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md).

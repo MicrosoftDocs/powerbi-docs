@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/28/2021
+ms.date: 09/08/2022
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI (preview)
@@ -21,6 +21,7 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 ## Add the Power Automate visual
 
 # [Power BI Desktop](#tab/powerbi-desktop)
+
 1. Select the Power Automate icon from the **Visualizations** pane.
 
     ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
@@ -32,6 +33,7 @@ When you create a Power Automate visual in a Power BI report, your end-users can
     Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
 # [Power BI service](#tab/powerbi-service)
+
 1. Select the Power Automate icon from the **Visualizations** pane.
 
     ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
@@ -48,23 +50,22 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 ## Edit the flow
 
-# [Power BI Desktop](#tab/powerbi-desktop)
 1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
 
     :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual-desktop.png" alt-text="Screenshot shows control to add any fields you want as dynamic inputs.":::
+
+# [Power BI Desktop](#tab/powerbi-desktop)
 
 2. Select **More options (...)** > **Edit** to configure the button:
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual.png" alt-text="Select Edit to edit the flow.":::
 
 # [Power BI service](#tab/powerbi-service)
-1. With the flow selected, add any data fields to the **Power Automate Data** region, to be used as dynamic inputs to the flow.
-
-    :::image type="content" source="media/power-bi-automate-visual/add-data-field-visual.png" alt-text="Add any fields you want as dynamic inputs.":::
 
 2. Select **More options (...)** > **Edit** to configure the button:
 
     :::image type="content" source="media/power-bi-automate-visual/automate-edit-visual-service.png" alt-text="Screenshot shows Edit selected in the Power Automate visual.":::
+
 ---
 
 3. In the edit mode of the visual, you either select an existing flow to apply to the button, or create a new flow to be applied to the button.
@@ -103,23 +104,17 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 ### Format the flow
 
-Optionally, you can change the button text, font color, font size, or fill color of the button. These options along with other settings are available in the **Format** pane: 
+Optionally, you can change the button text, font color, font size, or fill color of the button. These options along with other settings are available in the **Format** pane:
 
-# [Power BI Desktop](#tab/powerbi-desktop)
-:::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format-desktop.png" alt-text="Screenshot shows the Format pane for the flow."::: 
-
-# [Power BI service](#tab/powerbi-service)
 :::image type="content" source="media/power-bi-automate-visual/power-bi-flow-format.png" alt-text="Format the flow.":::
-
----
 
 ## Test the flow
 
-After you have applied a flow to the button, we recommend testing it before you share the flow with others. These Power BI flows can only run in the context of a Power BI report. You can't run these flows in a Power Automate web app or elsewhere.
+After you've applied a flow to the button, we recommend testing it before you share the flow with others. These Power BI flows can only run in the context of a Power BI report. You can't run these flows in a Power Automate web app or elsewhere.
 
 If your flow is data contextual, you'll want to test how the filter selections in the report impact the flow outcome.
 
-1. To test the flow in edit mode of the report, select **Back to report**, then press Ctrl while you select the button to run the flow. 
+1. To test the flow in edit mode of the report, select **Back to report**, then press Ctrl while you select the button to run the flow.
 
     :::image type="content" source="media/power-bi-automate-visual/run-flow-button.png" alt-text="Select the Run flow button.":::
 
@@ -135,15 +130,15 @@ If your flow is data contextual, you'll want to test how the filter selections i
 
 ## Share the flow
 
-When the flow is running successfully, you can share it with your report readers. 
+When the flow is running successfully, you can share it with your report readers.
 
 1. Select **Edit** in the **Run only users** section:
 
     :::image type="content" source="media/power-bi-automate-visual/share-run-access-other-users.png" alt-text="Run only users.":::
- 
-1. Specify which users or groups you want to give run access to: 
 
-    :::image type="content" source="media/power-bi-automate-visual/manage-run-only-flow-permissions.png" alt-text="Manage run-only permissions."::: 
+1. Specify which users or groups you want to give run access to:
+
+    :::image type="content" source="media/power-bi-automate-visual/manage-run-only-flow-permissions.png" alt-text="Manage run-only permissions.":::
 
 ### Give users edit access
 
@@ -160,7 +155,8 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 - The visual will only display flows within your default environment. We plan to add support for an environment selector by the general availability release.
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
 - The visual isn't supported in sovereign clouds.
-- The visual is not certified while in preview. We plan to have complete certification by the general availability release.
+- The visual doesn't work in Publish to Web (public) scenarios, because unauthenticated scenarios aren't supported by Power Automate.
+- The visual isn't certified while in preview. We plan to have complete certification by the general availability release.
 
 ## Next steps
 

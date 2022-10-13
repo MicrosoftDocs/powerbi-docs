@@ -25,7 +25,7 @@ In personal BI scenarios, the content creator has a lot of freedom and flexibili
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support personal BI. The focus is on private analytics for an individual.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-inline.png" alt-text="Image shows a diagram of personal B I, which is about private analytics for an individual. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-inline.png" alt-text="Image shows a diagram of personal BI, which is about private analytics for an individual. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-personal-bi/usage-scenario-personal-bi-expanded.png" border="false":::
 
 The scenario diagram depicts the following user actions, tools, and features:
 
@@ -73,7 +73,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### Information protection
 
-[Information protection](powerbi-adoption-roadmap-system-oversight.md#information-protection) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
+[Information protection](powerbi-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
 
 ### System oversight
 
