@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 08/04/2022
+  ms.date: 10/13/2022
   
 title: Deployment pipelines troubleshooting
 summary: |
@@ -451,6 +451,30 @@ sections:
           * Your dataset contains a function connected to a data source. In such cases, data source rules aren't supported.
           
           * Your data source is using parameters. You can't create a data source rule for a dataset that uses parameters. Create a parameter rule instead.                                                                             
+
+  - name: Deployment history
+    questions:
+
+      - question: |
+          How do I remove the deployment history of a pipeline?
+        answer: |
+          To remove a pipeline's deployment history you have to delete the pipeline.
+
+      - question: |
+          Why is the *deployed by* user listed as *unknown*?
+        answer: |
+          Deleted users which previously made deployments, appear as unknown users.
+
+      - question: |
+          Why is there no deployment history for one of the stages?
+        answer: |
+          Deployment history displays information for items that were deployed from a target stage. If there were no deployments from a specific stage, deployment history will display nothing when you select that stage tab.                             
+
+
+      - question: |
+          Why is only summarized deployment information displayed?
+        answer: |
+          Deployments that took place before June 2022 display summarized information with a *No tracking information available* note.
 
 additionalContent: |
 
