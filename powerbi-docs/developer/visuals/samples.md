@@ -80,4 +80,4 @@ These examples demonstrate how to harness the analytic and visual power of R vis
 
 ## Next steps
 
-[Develop a Power BI circle card visual](./import-visual.md)
+[Import a Power BI visual](./import-visual.md)
