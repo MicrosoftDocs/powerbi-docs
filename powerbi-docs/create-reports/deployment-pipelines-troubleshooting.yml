@@ -461,7 +461,7 @@ sections:
           To remove a pipeline's deployment history you have to delete the pipeline.
 
       - question: |
-          Why is the *deployed by* user listed as *unknown*?
+          Why is the **deployed by** user listed as **unknown**?
         answer: |
           Deleted users which previously made deployments, appear as unknown users.
 
