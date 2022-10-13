@@ -41,7 +41,7 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
 1. The Power BI tenant admin receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
 
-    <--- Screenshot of email --->
+:::image type="content" source="media/service-admin-power-bi-security-lockbox/email-example.png" alt-text="Screenshot of pending access request notification email from Microsoft.":::
 
 2. The email provides a link to Customer Lockbox in the Azure Administration module. Using the link, the designated approver signs in to the Azure portal to view any pending Customer Lockbox requests. The request remains in the customer queue for four days. After that, the access request automatically expires and no access is granted to Microsoft engineers.
 
