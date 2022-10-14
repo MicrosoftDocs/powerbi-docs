@@ -314,3 +314,4 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 * [Learn more about service principals](embed-service-principal.md)
 * [Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
 * [Migrate multitenancy apps to the service principal profiles model](migration-to-sp-profiles.md)
+* [Develop scalable multitenancy applications with Power BI embedding](/power-bi/guidance/develop-scalable-multitenancy-apps-with-powerbi-embedding)
