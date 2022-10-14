@@ -88,7 +88,7 @@ The body may resemble the following:
 
 ```
 
-Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh operation and another is submitted, a 409 Conflict HTTP status code is returned.
+Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh operation and another is submitted, a 400 Conflict HTTP status code is returned.
 
 ### Parameters
 

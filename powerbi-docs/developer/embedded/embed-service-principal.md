@@ -240,7 +240,6 @@ Once your content is embedded, you're ready to [move to production](move-to-prod
 
 ## Considerations and limitations
 
-* Service principal only works with [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
 * A capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.

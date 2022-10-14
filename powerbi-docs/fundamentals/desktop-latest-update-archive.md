@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/14/2022
+ms.date: 09/13/2022
 LocalizationGroup: Get started
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
@@ -26,6 +26,316 @@ The links beside each update mean the following:
 You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
+
+
+## August 2022 Update (2.108.564.0)
+
+August's updates were like a summertime trip, full of interesting sights and new things to discover that brought a sense of adventure and imaginings of exciting things to come.
+
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+The links beside each feature in the list are follows:
+
+* \[blog\]: Most features are explained in a section in the monthly update blog post.
+* \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* \[article\]: Some features have an article that provides more detail.
+* The remaining features are self-explanatory and don't need an article or video.
+
+You can also watch the entire [Power BI monthly update video](#power-bi-monthly-update-video).
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
+
+> [!IMPORTANT]
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+
+The following updates are new to Power BI Desktop this month:
+
+
+### Reporting
+* Conditional formatting for data labels  [[video]](https://youtu.be/Wiznd0dn29k?t=63)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518263) 
+* New *Select sensitivity label* dialog  [[video]](https://youtu.be/Wiznd0dn29k?t=449)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518264)  [[article]](../enterprise/service-security-apply-data-sensitivity-labels.md) 
+* Data loss prevention policy update [[video]](https://youtu.be/Wiznd0dn29k?t=475)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518265)   [[article]](../enterprise/service-security-dlp-policies-for-power-bi.md)  
+* Metric visual (preview) [[video]](https://youtu.be/Wiznd0dn29k?t=557)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518266)   [[article]](../visuals/power-bi-visualization-scorecard-visual.md)  
+* Mobile formatting now supports text box visuals [[video]](https://youtu.be/Wiznd0dn29k?t=768)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518267)  [[article]](../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md)  
+
+
+### Modeling
+* DAX Editor improvements [[video]](https://youtu.be/Wiznd0dn29k?t=784)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518269)
+
+
+
+### Data connectivity
+* MariaDB (connector update) [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518271)
+* Google Sheets (connector update) [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518271)
+* Certified connectors availability in Power BI dataflows and datamarts [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518273)   [[article]](/power-query/connectors/)  
+
+
+> [!NOTE]
+> See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
+
+### Visuals
+* New visuals in AppSource [[video]](https://youtu.be/Wiznd0dn29k?t=918)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518279)
+
+
+# [Power BI service](#tab/powerbi-service)
+
+The following updates are new to the Power BI service this month:
+
+* No Power BI service updates this month, stay tuned for next months' updates!
+---
+
+
+### Others
+* Visualizing views in Dynamics 365 with Power BI (general availability) [[video]](https://youtu.be/Wiznd0dn29k?t=982)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518284)
+* More ways to optimize Power BI performance [[video]](https://youtu.be/Wiznd0dn29k?t=1220)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518285)   [[article]](../create-reports/desktop-evaluation-configuration.md)  
+* Release notes and ideas update  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518286)
+
+
+
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/).
+
+
+### Power BI monthly update video
+The following video describes each of these updates. You can also watch this video from the blog post.
+
+> [!VIDEO https://www.youtube.com/embed/Wiznd0dn29k]
+
+> [!NOTE]  
+> The video might use earlier versions of Power BI Desktop or the Power BI service.
+
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [August 2022 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-08.exe)
+* [August 2022 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-08_x64.exe)
+
+
+
+
+
+
+
+## July 2022 Update (2.107.683.0)
+
+July's updates were a sunny collection of bright spots for Power BI, warming ourselves with all the good things they brought.
+
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+The links beside each feature in the list are follows:
+
+* \[blog\]: Most features are explained in a section in the monthly update blog post.
+* \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* \[article\]: Some features have an article that provides more detail.
+* The remaining features are self-explanatory and don't need an article or video.
+
+You can also watch the entire [Power BI monthly update video](#power-bi-monthly-update-video).
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
+
+> [!IMPORTANT]
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+
+The following updates are new to Power BI Desktop this month:
+
+
+### Reporting
+* Error bars (generally available)  [[video]](https://youtu.be/iVbxzo-L7TM?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099832) 
+* Filled Map for Azure Maps visual  [[video]](https://youtu.be/iVbxzo-L7TM?t=439)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099833)  
+* Composite models on Power BI datasets and Analysis Services (preview) [[video]](https://youtu.be/iVbxzo-L7TM?t=686)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099834)  
+* Bold, italics and underline for text in the header tooltip [[video]](https://youtu.be/iVbxzo-L7TM?t=711)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099835)  [[article]](../create-reports/desktop-visual-tooltips.md) 
+* Metric visuals updates [[video]](https://youtu.be/iVbxzo-L7TM?t=733)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099836)   
+
+
+
+
+### Modeling
+* New DAX function: NETWORKDAYS [[video]](https://youtu.be/iVbxzo-L7TM?t=850)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099838)
+* Support for multi-role RLS in composite model [[video]](https://youtu.be/iVbxzo-L7TM?t=892)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099839)
+* Query performance improvement [[video]](https://youtu.be/iVbxzo-L7TM?t=914)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099840)
+
+
+### Data connectivity
+* Connect to datamarts (preview) [[video]](https://youtu.be/iVbxzo-L7TM?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099842)
+* Display name support in the Dataverse connector [[video]](https://youtu.be/iVbxzo-L7TM?t=1127)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099843)
+* Many connector updates (update) [[video]](https://youtu.be/iVbxzo-L7TM?t=1233)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099844)
+
+
+> [!NOTE]
+> See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
+
+### Visuals
+* New Power BI visuals' category list in AppSource [[video]](https://youtu.be/iVbxzo-L7TM?t=1746)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099860)
+* New visuals in AppSource [[video]](https://youtu.be/iVbxzo-L7TM?t=1772)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099861)
+* New visuals available [[video]](https://youtu.be/iVbxzo-L7TM?t=1772)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099862)
+
+
+# [Power BI service](#tab/powerbi-service)
+
+The following updates are new to the Power BI service this month:
+
+* Data hub improvements - data preview and export   [[video]](https://youtu.be/iVbxzo-L7TM?t=1264)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099849)    [[article]](../connect-data/service-dataset-details-page.md#data-preview) 
+
+
+---
+
+
+### Others
+* Release notes and ideas update [[video]](https://youtu.be/iVbxzo-L7TM?t=1790)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099865)
+
+
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/).
+
+
+### Power BI monthly update video
+The following video describes each of these updates. You can also watch this video from the blog post.
+
+> [!VIDEO https://www.youtube.com/embed/iVbxzo-L7TM]
+
+> [!NOTE]  
+> The video might use earlier versions of Power BI Desktop or the Power BI service.
+
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [July 2022 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-07.exe)
+* [July 2022 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-07_x64.exe)
+
+
+
+
+## June 2022 Update (2.106.582.0)
+
+This month's updates were raining down features, sprinkling us with all sorts of capabilities and functionality that were sure to bring sunny reports sometime soon.
+
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+The links beside each feature in the list are follows:
+
+* \[blog\]: Most features are explained in a section in the monthly update blog post.
+* \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* \[article\]: Some features have an article that provides more detail.
+* The remaining features are self-explanatory and don't need an article or video.
+
+You can also watch the entire [Power BI monthly update video](#power-bi-monthly-update-video).
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
+
+> [!IMPORTANT]
+> Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+
+The following updates are new to Power BI Desktop this month:
+
+
+### Reporting
+* New format pane (generally available)  [[video]](https://youtu.be/gu_5Q3z-qpc?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516657)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
+* Updates to error bars  [[video]](https://youtu.be/gu_5Q3z-qpc?t=93)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516658)  
+* Information protection updates  [[video]](https://youtu.be/gu_5Q3z-qpc?t=123)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516659)  
+* Table navigation improvements [[video]](https://youtu.be/gu_5Q3z-qpc?t=156)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516660)  
+* Canvas Zoom in Teams and quick create [[video]](https://youtu.be/gu_5Q3z-qpc?t=200)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516661)   
+
+
+### Modeling
+* Composite models on SQL Server Analysis Services [[video]](https://youtu.be/gu_5Q3z-qpc?t=241)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516663)
+
+
+### Data connectivity
+* Connect to datamarts (preview) [[video]](https://youtu.be/gu_5Q3z-qpc?t=288)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516665)
+* Many new data connectors [[video]](https://youtu.be/gu_5Q3z-qpc?t=555)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516668)
+* Many connector updates (update) [[video]](https://youtu.be/gu_5Q3z-qpc?t=497)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516666)
+
+
+> [!NOTE]
+> See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
+
+### Visuals
+* New visuals in AppSource [[video]](https://youtu.be/gu_5Q3z-qpc?t=1342)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516690)
+* Many new visuals and updates [[video]](https://youtu.be/gu_5Q3z-qpc?t=1359)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516691)
+
+
+
+# [Power BI service](#tab/powerbi-service)
+
+The following updates are new to the Power BI service this month:
+
+* Power BI data storytelling   [[video]](https://youtu.be/gu_5Q3z-qpc?t=587)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516677)  
+* Announcing the Data hub   [[video]](https://youtu.be/gu_5Q3z-qpc?t=907)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516678)  [
+* Power BI metrics updates   [[video]](https://youtu.be/gu_5Q3z-qpc?t=1018)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516679)  
+
+
+---
+
+
+### Others
+* Power BI Desktop infrastructure update (WebView2) [[video]](https://youtu.be/gu_5Q3z-qpc?t=1463)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516696)
+* Improved support for single sign-on (SSO) for all users [[video]](https://youtu.be/gu_5Q3z-qpc?t=1470)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516697)
+
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/).
+
+
+### Power BI monthly update video
+The following video describes each of these updates. You can also watch this video from the blog post.
+
+> [!VIDEO https://www.youtube.com/embed/gu_5Q3z-qpc]
+
+> [!NOTE]  
+> The video might use earlier versions of Power BI Desktop or the Power BI service.
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [June 2022 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-06.exe)
+* [June 2022 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-06_x64.exe)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -438,12 +748,6 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
-Select the following links to download this earlier version: 
-
-* [February 2022 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-02.exe)
-* [February 2022 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2022-02_x64.exe)
-
-
 ## December 2021 Update (2.100.261.0)
 
 This month's features were like a sleigh ride through your favorite snowy location, lighting up the season with all sorts of new things we had been wanting and asking for throughout the year.
@@ -523,20 +827,6 @@ The following video describes each of these updates. You can also watch this vid
 
 
 > [!VIDEO https://www.youtube.com/embed/iyAmYqTRCLY]
-
-
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [December 2021 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-12.exe)
-* [December 2021 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2021-12_x64.exe)
-
 
 
 

@@ -24,7 +24,7 @@ For a description of related topics, including skills mentoring, training, docum
 
 If a user has an issue, do they know what their options are to resolve it? The following diagram shows some common types of user support that organizations employ successfully:
 
-:::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power B I user support, and the two types of external support, which are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-adoption-roadmap-user-support/powerbi-adoption-roadmap-user-support.png" alt-text="Image shows the four types of internal Power BI user support, and the two types of external support, which are described in the table below." border="false":::
 
 The six types of user support shown in the above diagram include:
 
@@ -86,7 +86,7 @@ There are also certain technical issues which cannot be fully resolved without I
 Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase, like software installation prerequisites. Some organizations task the help desk to handle only very simple break-fix issues, whereas other organizations have the help desk get involved with anything that is repeatable, like new [workspace](../collaborate-share/service-create-the-new-workspaces.md) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting new [Premium capacities](../enterprise/service-premium-what-is.md).
 
 > [!IMPORTANT]
-> Your Power BI governance decisions will directly impact the volume of help desk requests. For example, if you choose to limit [workspace creation permissions in the tenant settings](admin-tenant-settings.md#create-workspaces), it will result in users submitting help desk tickets. While it's a legitimate decision to make, you must be prepared to satisfy the request very quickly, usually within 1-4 hours if possible. Consider that automation with Power Apps and Power Automate can help make the process efficient. If you delay too long, users will use what they already have, and that may not be the ideal scenario. Promptness is critical for certain help desk requests.
+> Your Power BI governance decisions will directly impact the volume of help desk requests. For example, if you choose to limit [workspace creation permissions in the tenant settings](/power-bi/admin/service-admin-portal-workspace), it will result in users submitting help desk tickets. While it's a legitimate decision to make, you must be prepared to satisfy the request very quickly, usually within 1-4 hours if possible. Consider that automation with Power Apps and Power Automate can help make the process efficient. If you delay too long, users will use what they already have, and that may not be the ideal scenario. Promptness is critical for certain help desk requests.
 
 Over time, troubleshooting and problem resolution skills become more effective as help desk personnel expand their knowledgebase and experience with Power BI. The best help desk personnel are those who have a good grasp of what users need to accomplish with Power BI.
 
@@ -109,7 +109,7 @@ Check the [Power BI support site](https://powerbi.microsoft.com/support/) high-p
 
 Monitor the [Microsoft 365 Twitter account](https://twitter.com/MSFT365Status). Microsoft posts timely information and updates about outages for all Microsoft 365 services.
 
-Refer to the comprehensive [Power BI documentation](../index.yml). It's an authoritative resource that can aid troubleshooting and search for information. You can prioritize results from the Power BI documentation site. For example, enter a site-targeted search request into your web search engine, like "power bi dataset site:docs.microsoft.com".
+Refer to the comprehensive [Power BI documentation](../index.yml). It's an authoritative resource that can aid troubleshooting and search for information. You can prioritize results from the Power BI documentation site. For example, enter a site-targeted search request into your web search engine, like `power bi dataset site:learn.microsoft.com`.
 
 ### Power BI Pro and Premium Per User end-user support
 
@@ -156,7 +156,7 @@ Considerations and key actions you can take to improve your internal community s
 
 - Encourage people to ask questions in the designated community discussion channel. As the habit builds over time, it will become normalized to use that as the first option. Over time, it will evolve to become more self-supporting.
 - Ensure that the appropriate COE members actively monitor this discussion channel. They can step in if a question remains unanswered, improve upon answers, or make corrections when appropriate. They can also post links to additional information to raise awareness of existing resources. Although the goal of the community is to become self-supporting, it still requires dedicated resources to monitor and nurture it.
-- Make sure your user population knows the internal community support area exists. It could include the prominent display of links, or including a link in regular communications. You can also [customize the help menu links](admin-tenant-settings.md#publish-get-help-information) in the Power BI service to direct users to your internal resources.
+- Make sure your user population knows the internal community support area exists. It could include the prominent display of links, or including a link in regular communications. You can also [customize the help menu links](/power-bi/admin/service-admin-portal-help-support#publish-get-help-information) in the Power BI service to direct users to your internal resources.
 - Set up automation to ensure that all your Free, Power BI Pro, and Premium Per User licensed users automatically have access to the community discussion channel. It's possible to automate license setup using [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
 Considerations and key actions you can take to improve your internal help desk support:

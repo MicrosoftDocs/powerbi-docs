@@ -9,10 +9,10 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/02/2022
+ms.date: 09/22/2022
 ---
 
-# View and present live Power BI report pages in PowerPoint
+# View and present live Power BI report pages in PowerPoint (preview)
 
 As soon as you add a live Power BI report page to PowerPoint, you can start interacting with your data just as you would in Power BI. The initial view is determined by the [URL](./service-power-bi-powerpoint-add-in-install.md#get-the-report-page-url) you used.
 
@@ -24,7 +24,7 @@ In the add-in, you see:
 
 * The report page. The report page is fully interactive, in both edit and slideshow modes, unless it has been [frozen as a static image](#freeze-the-current-view). The left-hand page navigation pane that you see in the Power BI service isn't included. If there are page navigation visuals in the report itself, you can use them to navigate to other pages in the report.
 * A toolbar across the bottom of the report page. The toolbar contains report info and menus with controls that help you work with the data and set up your presentations. See the [Controls](#controls) section for more detail.
-* A Show/Hide arrow at the upper right side that opens the add-in side pane. The add-in side pane contains additional controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
+* A Show/Hide arrow at the upper right side that opens the add-in side pane (desktop application only). The add-in side pane contains additional controls for working with the add-in, such as freezing the page as a static image. See [Add-in side pane](#add-in-side-pane) for more detail.
 
 To get a cleaner view and more space for the report page, you can collapse the bottom toolbar by toggling the **Expand/Collapse the toolbar** in the bottom right corner of the add-in.
 
@@ -51,6 +51,9 @@ Every time you open your presentation, the report page reloads into the add-in, 
 ![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
 
 To restore the interactive view, select the Show as Saved Image option again. The live report page will reload in the state it was last in, but with the latest data from Power BI.
+
+> [!NOTE]
+> **Show as Saved Image** is available only in the PowerPoint desktop application. PowerPoint for the web doesn't support the add-in side menu.
 
 ## Share your presentation
 
@@ -105,6 +108,9 @@ Expands or collapses the toolbar across the bottom of the report. This feature i
 
 * **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
 
+> [!NOTE]
+> The add-in side pane is available only in the PowerPoint desktop application. It isn't supported in PowerPoint for the web.
+
 ## Keyboard Shortcuts
 
 To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
@@ -119,7 +125,7 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 
 ## Next steps
 
-* [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
+* [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)

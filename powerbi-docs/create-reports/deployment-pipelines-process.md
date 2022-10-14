@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 05/19/2022
+ms.date: 10/02/2022
 ---
 
 # Understand the deployment process
@@ -279,17 +279,7 @@ Using [composite models](../transform-model/desktop-composite-models.md) you can
 
 You can use the composite models functionality to connect a Power BI dataset to an external dataset such as Azure Analysis Services. For more information, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md).
 
-In a deployment pipeline, you can use composite models to connect a dataset to another Power BI dataset external to the pipeline.  
-
-#### Considerations and limitations
-
-The following composite models connections aren't supported:
-
-* Connecting datasets that reside in the same workspace.
-
-* Connecting datasets that reside in distinct pipelines.
-
-* Connecting datasets that reside in the same pipeline.
+In a deployment pipeline, you can use composite models to connect a dataset to another Power BI dataset external to the pipeline.
 
 ### Automatic aggregations
 
@@ -454,6 +444,9 @@ This section lists most of the limitations in deployment pipelines.
 
 >[!div class="nextstepaction"]
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)

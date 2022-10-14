@@ -5,8 +5,8 @@ author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.subservice: pbi-troubleshooting
+ms.topic: troubleshooting
 ms.date: 11/05/2021
 ---
 
@@ -90,4 +90,4 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 ## Next steps
 
 * [Customize help and support settings](service-admin-portal-help-support.md)
-* [Find the right Power BI training for you](/learn/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
+* [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)

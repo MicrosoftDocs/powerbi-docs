@@ -4,7 +4,7 @@ description: Get an overview of Power BI Report Server to understand how it fits
 author: maggiesMSFT
 ms.author: maggies
 keywords: 
-ms.date: 05/28/2020
+ms.date: 09/15/2022
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -40,7 +40,7 @@ More about the [Power BI Report Server web portal](/sql/reporting-services/web-p
 ## Power BI reports
 You create Power BI reports (.pbix) with the version of Power BI Desktop optimized for the report server. Then you publish them and view them in the web portal in your own environment.
 
-![Power BI reports in Power BI Report Server](media/get-started/powerbi-reports.png)
+![Power BI reports in Power BI Report Server](media/get-started/report-server-power-bi-reports.png)
 
 A Power BI report is a multi-perspective view into a data model, with visualizations that represent different findings and insights from that data model.  A report can have a single visualization or pages full of visualizations. Depending on your role, you may read and explore reports, or you may create them for others.
 
@@ -51,12 +51,14 @@ Paginated reports (.rdl) are document-style reports with visualizations, in whic
 
 ![Paginated reports in Power BI Report Server](media/get-started/paginated-reports.png)
 
-You can create paginated reports using [Report Builder](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+You can create paginated reports using [Microsoft Report Builder](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
-## Reporting Services mobile reports
+## Reporting Services mobile reports (deprecated)
+
+> [!NOTE]
+> SQL Server mobile reports are deprecated starting in 2019.
+
 Mobile reports connect to on-premises data and have a responsive layout that adapts to different devices and the different ways you hold them. You create them with SQL Server Mobile Report Publisher.
-
-More about [Reporting Services mobile reports](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
 
 ## Report Server programming features
 Take advantage of Power BI Report Server programming features to extend and customize your reports, with APIs to integrate or extend data and report processing in custom applications.
@@ -65,6 +67,6 @@ More [Report Server developer documentation](/sql/reporting-services/reporting-s
 
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+[Download Microsoft Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -100,6 +100,8 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - If you refresh your data sources, and there are errors with conflicting field or table names, Power BI resolves the errors for you.
 
+- You cannot edit, delete or create new relationships in the same Power BI dataset or Analysis Services source. If you have edit access to these sources, you can make the changes directly in the data source instead.
+
 - To build reports in the Power BI service on a composite model that's based on another dataset, all credentials must be set. On the refresh credential settings page, for Analysis Services sources, the following error will appear, even though the credentials have been set:
     
     ![Credentials false warning](media/desktop-directquery-datasets-azure-analysis-services/directquery-datasets-06.png)
@@ -114,8 +116,6 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 - All connections to remote Power BI Datasets models are made using single sign-on. Authenticating with [a service principal](../developer/embedded/embed-service-principal.md) isn't currently supported.
 
 - For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
-
-- If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it isn't sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
 
 - RLS rules will be applied on the source on which they're defined, but won't be applied to any other datasets in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table from another source group nor can you define RLS on a local table that has a relationship to another source group.
 
@@ -158,8 +158,7 @@ There are also a few **limitations** you need to keep in mind:
   - [Sample Datasets](../create-reports/sample-datasets.md#eight-original-samples)
   - [Excel Online Refresh](refresh-excel-file-onedrive.md)
   - Import Excel / CSV files
-  - [Content Packs (deprecated)](../collaborate-share/service-upgrade-workspaces.md#content-packs-during-upgrade)
-  - [Usage Metrics (classic workspaces)](../collaborate-share/service-usage-metrics.md) 
+  - [Usage metrics (My workspace)](../collaborate-share/service-usage-metrics.md) 
 
 - Using DirectQuery on datasets from “My workspace” isn't currently supported. 
 

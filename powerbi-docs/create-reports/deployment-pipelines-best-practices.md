@@ -99,7 +99,7 @@ Consider Power BI Desktop as your local development environment. Power BI Deskto
 
 ### Version control for PBIX files
 
-If you want to manage the version history of your reports and datasets, use [Power BI's autosync with OneDrive](../collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business.md). This will keep your files updated with the latest version. It will also enable you to retrieve older versions if needed.
+If you want to manage the version history of your reports and datasets, use Power BI's [auto-sync with OneDrive](../connect-data/refresh-desktop-file-onedrive.md). This will keep your files updated with the latest version. It will also enable you to retrieve older versions if needed.
 
 >[!NOTE]
 >Use auto-sync with OneDrive (or any other repository) only with the PBIX files in the deployment pipeline's development stage. Do not sync PBIX files into the deployment pipeline's test and production stages. This will cause problems with deploying content across the pipeline.
@@ -203,6 +203,9 @@ In case there are bugs in production that require a quick fix, don't be tempted 
 
 >[!div class="nextstepaction"]
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

@@ -6,7 +6,7 @@ ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 12/13/2021
 LocalizationGroup: 
 ---
