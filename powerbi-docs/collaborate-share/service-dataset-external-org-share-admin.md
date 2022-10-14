@@ -18,7 +18,7 @@ Power BI in-place dataset sharing allows data providers to share datasets with e
 
 ## Requirements
 
-To use Power BI in-place dataset sharing, you'll need to [enable access for external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md). For a full list of requirements necessary to use in-place datset sharing, see the requirements section of [About Power BI in-place dataset sharing with guest users in external organizations](./service-dataset-external-org-share-about.md#requirements).
+To use Power BI in-place dataset sharing, you'll need to [enable access for external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md). You'll also need to enable the **Use datasets accross workspaces** workspace setting should also be enabled. If this setting is disabled, the external user won't be able to see the dataset in their desktop. For a full list of requirements necessary to use in-place datset sharing, see the requirements section of [About Power BI in-place dataset sharing with guest users in external organizations](./service-dataset-external-org-share-about.md#requirements).
 
 ## Licensing
 
@@ -37,17 +37,20 @@ Azure AD B2B guest users can access datasets shared with them in their own tenan
     ![Screenshot of the Power BI Admin portal with the Allow guest users to work with shared datasets setting shown.](media/service-dataset-external-org-share-admin/guest-user-shared-tenant-setting.png)
 
 > [!NOTE]
-> If this setting is disabled, a guest user will still be able to access the dataset in the provider tenant but not in their own tenant.
+> This setting is off by default for customers. If this setting is disabled, a guest user will still be able to access the dataset in the provider tenant but not in their own tenant.
 
 ## Allow specific users to turn on external data sharing 
 
 As a Power BI admin, you can specify which users or user groups can share datasets externally with guests from a different tenant through the in-place mechanism. Disabling this setting prevents any user from sharing datasets externally by restricting the ability of users to turn on external sharing for datasets they own or manage.  
 
+> [!NOTE]
+> The **Allow guest users to work with shared datasets in their own tenants** setting is on by default for customers. External users won't be able access any datasets shared in-place if the setting is off.  
+
 1. In the admin portal, go to **Tenant settings**.
 
 1. Click on **Allow specific users to turn on external data sharing**.
 
-1. Set the toggle to **Enable**.
+1. Make sure the toggle is set to **Enable**.
 
 1. Specify if you want this setting to apply to **The entire organization**, **Specific security groups**, or to exclude specific security groups. Click the checkbox next to **Except specific security groups** to add any groups you want to exclude.
  
