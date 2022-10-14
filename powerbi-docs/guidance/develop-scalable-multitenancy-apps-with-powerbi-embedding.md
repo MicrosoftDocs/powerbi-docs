@@ -1,18 +1,18 @@
 ---
-title: "Develop scalable multi-customer applications with Power BI embedding"
-description: "Learn how to embed Power BI content for multi-customer applications and achieve the highest levels of scalability, performance, and security."
+title: "Develop scalable multitenancy applications with Power BI embedding"
+description: "Learn how to embed Power BI content for multitenancy applications and achieve the highest levels of scalability, performance, and security."
 author: peter-myers
 ms.author: v-petermyers
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/16/2022
+ms.date: 10/15/2022
 ---
 
-# Develop scalable multi-customer applications with Power BI embedding
+# Develop scalable multitenancy applications with Power BI embedding
 
-This article describes how to develop a multi-customer application that embeds Power BI content while achieving the highest levels of scalability, performance, and security. By designing and implementing an application with *service principal profiles*, you can create and manage a multi-customer solution comprising tens of thousands of customer tenants that can deliver reports to audiences of over 100,000 users.
+This article describes how to develop a multitenancy application that embeds Power BI content while achieving the highest levels of scalability, performance, and security. By designing and implementing an application with *service principal profiles*, you can create and manage a multitenancy solution comprising tens of thousands of customer tenants that can deliver reports to audiences of over 100,000 users.
 
 *Service principal profiles* is a feature that makes it easier for you to manage organizational content in Power BI and use your capacities more efficiently. However, using service principal profiles can add complexity to your application design. Therefore, you should only use them when there's a need to achieve significant scale. We recommend using service principal profiles when you have many workspaces and more than 1,000 application users.
 
@@ -28,13 +28,13 @@ The **For your customer** scenario applies when the application audience compris
 > [!NOTE]
 > It's important to understand that the service principal profiles feature was designed for use in *For your customer* scenario embedding. That's because this scenario offers ISVs and enterprise organizations the ability to embed with greater scale to a large number of users and to a large number of customer tenants.
 
-## Multi-customer application development
+## Multitenancy application development
 
-If you're familiar with Azure AD, the word *tenant* might lead you think of an Azure AD tenant. However, the concept of a tenant is different in the context of building a multi-customer solution that embeds Power BI content. In this context, a *customer tenant* is created on behalf of each customer for which the application embeds Power BI content by using the *For your customer* scenario. You typically provision each customer tenant by creating a single Power BI workspace.
+If you're familiar with Azure AD, the word *tenant* might lead you think of an Azure AD tenant. However, the concept of a tenant is different in the context of building a multitenancy solution that embeds Power BI content. In this context, a *customer tenant* is created on behalf of each customer for which the application embeds Power BI content by using the *For your customer* scenario. You typically provision each customer tenant by creating a single Power BI workspace.
 
-To create a scalable multi-customer solution, you must be able to automate the creation of new customer tenants. Provisioning a new customer tenant typically involves writing code that uses the Power BI REST API to create a new Power BI workspace, create datasets by importing Power BI Desktop (.pbix) files, update data source parameters, set data source credentials, and set up scheduled dataset refresh. The following diagram shows how you can add Power BI items, such as reports and datasets, to workspaces to set up customer tenants.
+To create a scalable multitenancy solution, you must be able to automate the creation of new customer tenants. Provisioning a new customer tenant typically involves writing code that uses the Power BI REST API to create a new Power BI workspace, create datasets by importing Power BI Desktop (.pbix) files, update data source parameters, set data source credentials, and set up scheduled dataset refresh. The following diagram shows how you can add Power BI items, such as reports and datasets, to workspaces to set up customer tenants.
 
-:::image type="content" source="media/develop-scalable-multi-customer-apps-with-powerbi-embedding/set-up-powerbi-multi-customer-environment.png" alt-text="Image shows a setup for three tenants. Each tenant has its own data source and workspace." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment.png" alt-text="Image shows a setup for three tenants. Each tenant has its own data source and workspace." border="false":::
 
 When you develop an application that uses *For your customer* scenario embedding, it's possible to make [Power BI REST API](/rest/api/power-bi/) calls by using an embedding identity that's either a master user account or a service principal. We recommend using a service principal for production applications. It provides the highest security and for this reason it's the approach recommended by Azure AD. Also, it supports better automation and scale and there's less management overhead. However, it requires Power BI admin rights to [set up and manage](/power-bi/enterprise/read-only-apis-service-principal-authentication).
 
@@ -42,7 +42,7 @@ By using a service principal, you can avoid common problems associated with mast
 
 ### 1,000-workspace limitation
 
-When you design a multi-customer environment that implements *For your customer* embedding, be sure to consider that the embedding identity can't be granted access to more than 1,000 workspaces. The Power BI service imposes this limitation to ensure good performance when making REST API calls. The reason for this limitation is related to how Power BI maintains security-related metadata for each identity.
+When you design a multitenancy environment that implements *For your customer* embedding, be sure to consider that the embedding identity can't be granted access to more than 1,000 workspaces. The Power BI service imposes this limitation to ensure good performance when making REST API calls. The reason for this limitation is related to how Power BI maintains security-related metadata for each identity.
 
 Power BI uses metadata to track the workspaces and workspace items an identity can access. In effect, Power BI must maintain a separate access control list (ACL) for each identity in its authorization subsystem. When an identity makes a REST API call to access a workspace, Power BI must do a security check against the identity's ACL to ensure it's authorized. The time it takes to determine whether the target workspace is inside the ACL increases exponentially as the number of workspaces increases.
 
@@ -60,7 +60,7 @@ Here's the key observation: The number of workspaces created by a service princi
 
 ### Manage isolation for datasets and data source credentials
 
-Another important aspect when designing a multi-customer application is to isolate customer tenants. It's critical that users from one customer tenant don't see data that belongs to another customer tenant. Therefore, you must understand how to manage dataset ownership and data source credentials.
+Another important aspect when designing a multitenancy application is to isolate customer tenants. It's critical that users from one customer tenant don't see data that belongs to another customer tenant. Therefore, you must understand how to manage dataset ownership and data source credentials.
 
 #### Dataset ownership
 
@@ -89,13 +89,13 @@ On completion of these REST API calls, the service principal will be an admin of
 
 It's possible for a service principal to create data source credentials that are shared by datasets in different workspaces across customer tenants, as shown in the following diagram.
 
-:::image type="content" source="media/develop-scalable-multi-customer-apps-with-powerbi-embedding/set-up-powerbi-multi-customer-environment-resuse-data-source-credentials.png" alt-text="Image shows a setup for two tenants. Each tenant share the same data source credentials." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment-resuse-data-source-credentials.png" alt-text="Image shows a setup for two tenants. Each tenant share the same data source credentials." border="false":::
 
 When data source credentials are shared by datasets that belong to different customer tenants, the customer tenants aren't fully isolated.
 
 ### Design strategies prior to service principal profiles
 
-Understanding design strategies before the service principal profile feature became available can help you to appreciate the need for the feature. Before that time, developers built multi-customer applications by using one of the following three design strategies:
+Understanding design strategies before the service principal profile feature became available can help you to appreciate the need for the feature. Before that time, developers built multitenancy applications by using one of the following three design strategies:
 
 - Single service principal
 - Service principal pooling
@@ -103,7 +103,7 @@ Understanding design strategies before the service principal profile feature bec
 
 There are strengths and weakness associated with each of these design strategies.
 
-The **single service principal** design strategy requires a once-off creation of an [Azure AD app registration](/azure/active-directory/develop/howto-create-service-principal-portal#app-registration-app-objects-and-service-principals). Therefore, it involves less administrative overhead than the other two design strategies because there's no requirement to create more Azure AD app registrations. This strategy is also the most straightforward to set up because it doesn't require writing extra code that switches the calling context between service principals when making REST API calls. However, a problem with this design strategy is that it doesn't scale. It only supports a multi-customer environment that can grow up to 1,000 workspaces. Also, performance is sure to degrade as the service principal is granted access to a larger number of workspaces. There's also a problem with customer tenant isolation because the single service principal becomes the owner of every dataset and all data credentials across all customer tenants.
+The **single service principal** design strategy requires a once-off creation of an [Azure AD app registration](/azure/active-directory/develop/howto-create-service-principal-portal#app-registration-app-objects-and-service-principals). Therefore, it involves less administrative overhead than the other two design strategies because there's no requirement to create more Azure AD app registrations. This strategy is also the most straightforward to set up because it doesn't require writing extra code that switches the calling context between service principals when making REST API calls. However, a problem with this design strategy is that it doesn't scale. It only supports a multitenancy environment that can grow up to 1,000 workspaces. Also, performance is sure to degrade as the service principal is granted access to a larger number of workspaces. There's also a problem with customer tenant isolation because the single service principal becomes the owner of every dataset and all data credentials across all customer tenants.
 
 The **service principal pooling** design strategy is commonly used to avoid the 1,000-workspace limitation. It allows the application to scale to any number of workspaces by adding the correct number of service principals to the pool. For example, a pool of five service principals makes it possible to scale up to 5,000 workspaces; a pool of 80 service principals makes it possible to scale up to 80,000 workspaces, and so on. However, while this strategy can scale to a large number of workspaces, it has several disadvantages. First, it requires writing extra code and storing metadata to allow context switching between service principals when making REST API calls. Second, it involves more administrative effort because you must create Azure AD app registrations whenever you need to increase the number of the service principals in the pool.
 
@@ -121,11 +121,11 @@ The service principal profiles feature was designed to make it easier for you to
 - Optimizing performance of REST API calls.
 - Isolating datasets and data source credentials at the customer tenant level.
 
-When you design a multi-customer application by using service principal profiles, you can benefit from the strengths of the three design strategies (described in the previous section) while avoiding their associated weaknesses.
+When you design a multitenancy application by using service principal profiles, you can benefit from the strengths of the three design strategies (described in the previous section) while avoiding their associated weaknesses.
 
 Service principal profiles are local accounts that are created within the context of Power BI. A service principal can use the [`Profiles`](/rest/api/power-bi/profiles) REST API operation to create new service principal profiles. A service principal can create and manage its own set of service principal profiles for a custom application, as shown in the following diagram.
 
-:::image type="content" source="media/develop-scalable-multi-customer-apps-with-powerbi-embedding/service-principal-creates-service-principal-profiles.png" alt-text="Image shows a service principal creating three service principal profiles in Power BI." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/service-principal-creates-service-principal-profiles.png" alt-text="Image shows a service principal creating three service principal profiles in Power BI." border="false":::
 
 There's always a parent-child relationship between a service principal and the service principal profiles it creates. You can't create a service principal profile as a stand-alone entity. Instead, you create a service principal profile by using a specific service principal, and that service principal serves as the profile's parent. Furthermore, a service principal profile is never visible to user accounts or other service principals. A service principal profile can only be seen and used by the service principal that created it.
 
@@ -141,10 +141,10 @@ However, there are also disadvantages. Because service principal profiles aren't
 
 While service principal profiles aren't known to Azure AD, Power BI recognizes them as first-class security principals. Just like a user account or a service principal, you can add service principal profiles to a workspace role (as an Admin or Member). You can also make it a dataset owner and the owner of data source credentials. For these reasons, creating a new service principal profile for each new customer tenant is a best practice.
 
-:::image type="content" source="media/develop-scalable-multi-customer-apps-with-powerbi-embedding/create-service-principal-profiles-for-each-customer-tenant.png" alt-text="Image shows multiple customer tenants, each with their own service principal profiles." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/create-service-principal-profiles-for-each-customer-tenant.png" alt-text="Image shows multiple customer tenants, each with their own service principal profiles." border="false":::
 
 > [!TIP]
-> When you develop a *For your customer* scenario application by using service principal profiles, you only need to create a single Azure AD app registration to provide your application with a single service principal. This approach significantly lowers administrative overhead compared to other multi-customer design strategies, where it's necessary to create additional Azure AD app registrations on an ongoing basis after the application is deployed to production.
+> When you develop a *For your customer* scenario application by using service principal profiles, you only need to create a single Azure AD app registration to provide your application with a single service principal. This approach significantly lowers administrative overhead compared to other multitenancy design strategies, where it's necessary to create additional Azure AD app registrations on an ongoing basis after the application is deployed to production.
 
 ### Execute REST API calls as a service principal profile
 
@@ -217,7 +217,7 @@ pbiClient.Groups.AddGroupUser(workspaceId, groupUser);
 
 In the Power BI service, in the workspace **Access** pane, you can determine which identities, including security principals, have access.
 
-:::image type="content" source="media/develop-scalable-multi-customer-apps-with-powerbi-embedding/workspace-access-with-service-principal-profile.png" alt-text="Image shows a screenshot of the workspace Access pane. It shows a service principal profile with a display name of Contoso that has admin permission." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/workspace-access-with-service-principal-profile.png" alt-text="Image shows a screenshot of the workspace Access pane. It shows a service principal profile with a display name of Contoso that has admin permission." border="false":::
 
 #### Delete a service principal profile
 
@@ -267,7 +267,7 @@ var uriPowerBiServiceApiRoot = new Uri(uriPowerBiServiceApiRoot);
 var pbiClient = new PowerBiClient(uriPowerBiServiceApiRoot, tokenCredentials, profileId);
 ```
 
-As you program a multi-customer application, it's likely that you'll need to switch between executing calls as the parent service principal and executing calls as a service principal profile. A useful approach to manage context switching is to declare a class-level variable that stores the `PowerBIClient` object. You can then create a helper method that sets the variable with the correct object.
+As you program a multitenancy application, it's likely that you'll need to switch between executing calls as the parent service principal and executing calls as a service principal profile. A useful approach to manage context switching is to declare a class-level variable that stores the `PowerBIClient` object. You can then create a helper method that sets the variable with the correct object.
 
 ```csharp
 // Class-level variable that stores the PowerBIClient object
@@ -316,15 +316,15 @@ After you've used a specific service principal profile to create and configure a
 
 We encourage you to download a sample application named [**AppOwnsDataMultiTenant**](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant).
 
-This sample application was developed by using .NET 6 and ASP.NET, and it demonstrates how to apply the guidance and recommendations described in this article. You can review the code to learn how to develop a multi-customer application that implements *For your customer* scenario embedding by using service principal profiles.
+This sample application was developed by using .NET 6 and ASP.NET, and it demonstrates how to apply the guidance and recommendations described in this article. You can review the code to learn how to develop a multitenancy application that implements *For your customer* scenario embedding by using service principal profiles.
 
 ## Next steps
 
 For more information about this article, check out the following resources:
 
-- [Service principal profiles for multi-customer apps in Power BI Embedded](/power-bi/developer/embedded/embed-multi-tenancy)
+- [Service principal profiles for multitenancy apps in Power BI Embedded](/power-bi/developer/embedded/embed-multi-tenancy)
 - [Migrate multi-customer applications to the service principal profiles model](/power-bi/developer/embedded/migration-to-sp-profiles)
 - [Profiles Power BI REST API operation group](/rest/api/power-bi/profiles)
-- [AppOwnsDataMultiTenant sample application](https://github.com/PowerBiDevCamp/AppOwnsDatamulti-customer)
+- [AppOwnsDataMultiTenant sample application](https://github.com/PowerBiDevCamp/AppOwnsDatamultitenancy)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
