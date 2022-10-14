@@ -34,11 +34,11 @@ If you're familiar with Azure AD, the word *tenant* might lead you think of an A
 
 To create a scalable multitenancy solution, you must be able to automate the creation of new customer tenants. Provisioning a new customer tenant typically involves writing code that uses the Power BI REST API to create a new Power BI workspace, create datasets by importing Power BI Desktop (.pbix) files, update data source parameters, set data source credentials, and set up scheduled dataset refresh. The following diagram shows how you can add Power BI items, such as reports and datasets, to workspaces to set up customer tenants.
 
-:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment.png" alt-text="Image shows a setup for three tenants. Each tenant has its own data source and workspace." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment.png" alt-text="Diagram that shows a setup for three tenants. Each tenant has its own data source and workspace." border="false":::
 
 When you develop an application that uses *For your customer* scenario embedding, it's possible to make [Power BI REST API](/rest/api/power-bi/) calls by using an embedding identity that's either a master user account or a service principal. We recommend using a service principal for production applications. It provides the highest security and for this reason it's the approach recommended by Azure AD. Also, it supports better automation and scale and there's less management overhead. However, it requires Power BI admin rights to [set up and manage](/power-bi/enterprise/read-only-apis-service-principal-authentication).
 
-By using a service principal, you can avoid common problems associated with master user accounts, such as authentication errors in environments where users are required to sign in by using multi-factor authentication (MFA). Using a service principal is also consistent with the idea that *For your customer* scenario is based on embedding Power BI content by using a PaaS mindset as opposed to a SaaS mindset.
+By using a service principal, you can avoid common problems associated with master user accounts, such as authentication errors in environments where users are required to sign in by using multifactor authentication (MFA). Using a service principal is also consistent with the idea that *For your customer* scenario is based on embedding Power BI content by using a PaaS mindset as opposed to a SaaS mindset.
 
 ### 1,000-workspace limitation
 
@@ -89,7 +89,7 @@ On completion of these REST API calls, the service principal will be an admin of
 
 It's possible for a service principal to create data source credentials that are shared by datasets in different workspaces across customer tenants, as shown in the following diagram.
 
-:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment-resuse-data-source-credentials.png" alt-text="Image shows a setup for two tenants. Each tenant share the same data source credentials." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment-resuse-data-source-credentials.png" alt-text="Diagram that shows a setup for two tenants. Each tenant share the same data source credentials." border="false":::
 
 When data source credentials are shared by datasets that belong to different customer tenants, the customer tenants aren't fully isolated.
 
@@ -125,7 +125,7 @@ When you design a multitenancy application by using service principal profiles, 
 
 Service principal profiles are local accounts that are created within the context of Power BI. A service principal can use the [`Profiles`](/rest/api/power-bi/profiles) REST API operation to create new service principal profiles. A service principal can create and manage its own set of service principal profiles for a custom application, as shown in the following diagram.
 
-:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/service-principal-creates-service-principal-profiles.png" alt-text="Image shows a service principal creating three service principal profiles in Power BI." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/service-principal-creates-service-principal-profiles.png" alt-text="Diagram that shows a service principal creating three service principal profiles in Power BI." border="false":::
 
 There's always a parent-child relationship between a service principal and the service principal profiles it creates. You can't create a service principal profile as a stand-alone entity. Instead, you create a service principal profile by using a specific service principal, and that service principal serves as the profile's parent. Furthermore, a service principal profile is never visible to user accounts or other service principals. A service principal profile can only be seen and used by the service principal that created it.
 
@@ -141,7 +141,7 @@ However, there are also disadvantages. Because service principal profiles aren't
 
 While service principal profiles aren't known to Azure AD, Power BI recognizes them as first-class security principals. Just like a user account or a service principal, you can add service principal profiles to a workspace role (as an Admin or Member). You can also make it a dataset owner and the owner of data source credentials. For these reasons, creating a new service principal profile for each new customer tenant is a best practice.
 
-:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/create-service-principal-profiles-for-each-customer-tenant.png" alt-text="Image shows multiple customer tenants, each with their own service principal profiles." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/create-service-principal-profiles-for-each-customer-tenant.png" alt-text="Diagram that shows multiple customer tenants, each with their own service principal profiles." border="false":::
 
 > [!TIP]
 > When you develop a *For your customer* scenario application by using service principal profiles, you only need to create a single Azure AD app registration to provide your application with a single service principal. This approach significantly lowers administrative overhead compared to other multitenancy design strategies, where it's necessary to create additional Azure AD app registrations on an ongoing basis after the application is deployed to production.
@@ -217,7 +217,7 @@ pbiClient.Groups.AddGroupUser(workspaceId, groupUser);
 
 In the Power BI service, in the workspace **Access** pane, you can determine which identities, including security principals, have access.
 
-:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/workspace-access-with-service-principal-profile.png" alt-text="Image shows a screenshot of the workspace Access pane. It shows a service principal profile with a display name of Contoso that has admin permission." border="false":::
+:::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/workspace-access-with-service-principal-profile.png" alt-text="Screenshot that shows a screenshot of the workspace Access pane. It shows a service principal profile with a display name of Contoso that has admin permission." border="false":::
 
 #### Delete a service principal profile
 
@@ -235,8 +235,8 @@ If you're programming with the Power BI .NET SDK, you can use the **Profiles.Get
 
 There are two requirements for making REST API calls by using a service principal profile:
 
-1. You must pass the access token for the parent service principal in the **Authorization** header.
-1. You must include a header named **X-PowerBI-profile-id** with the value of the service principal profile's ID.
+- You must pass the access token for the parent service principal in the **Authorization** header.
+- You must include a header named **X-PowerBI-profile-id** with the value of the service principal profile's ID.
 
 If you're using the Power BI .NET SDK, you can set the **X-PowerBI-profile-id** header value explicitly by passing in the service principal profile's ID.
 
