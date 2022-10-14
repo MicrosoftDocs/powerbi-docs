@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 # Quick measure suggestions (experimental preview)
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch.
 
-:::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion":::
+:::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
 
 This feature can be used to jump-start creation of common DAX measures scenarios such as:
 - Aggregated columns (Optional filters)
@@ -34,15 +34,15 @@ This feature can be used to jump-start creation of common DAX measures scenarios
 ## Enable measure suggestions
 To enable the feature, you will need to first navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
 
-:::image type="content" source="media/quick-measure-suggestions/enable-preview.png" alt-text="Screenshot of how to enable preview from the options menu of Power BI Desktop":::
+:::image type="content" source="media/quick-measure-suggestions/enable-preview.png" alt-text="Screenshot of how to enable preview from the options menu of Power BI Desktop.":::
 
 After you have enabled the feature, you can access the Quick measure suggestions, by launching Quick measure from the Home or Modeling tab of the ribbon and selecting **Suggestions**:
 
-:::image type="content" source="media/quick-measure-suggestions/suggestions-tab.png" alt-text="Screenshot of how to access the feature from the suggestions tab of the Quick measure pane":::
+:::image type="content" source="media/quick-measure-suggestions/suggestions-tab.png" alt-text="Screenshot of how to access the feature from the suggestions tab of the Quick measure pane.":::
 
 Here you can describe the measure you want to create and hit **Generate** (or enter key) to get DAX measure suggestions:
 
-:::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion":::
+:::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
 
 You should always validate the DAX suggestions to make sure they meet your needs. If you’re satisfied with a suggested measure, you can click the **Add** button to automatically add the measure to your model.  
 
@@ -211,4 +211,4 @@ Examples:
 -	This feature is in experimental preview for users to test and give feedback. Note that the design and functionality may go through significant changes.
 -	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature will be disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
  
-:::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions":::
+:::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions.":::
