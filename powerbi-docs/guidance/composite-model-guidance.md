@@ -104,9 +104,9 @@ When defining cross source group relationships, consider the following recommend
 
 #### Cross source group relationship example 1
 
-Consider an example of a complex relationship and how it could produce different, yet valid results.
+Consider an example of a complex relationship and how it could produce different—yet valid—results.
 
-In this example, the **Region** table in source group **A** has a relationship to the **Calendar** table and **Sales** table in source group **B**. The relationship between the **Region** table and the **Calendar** table is active, and the relationship between the **Region** table and the **Sales** table is inactive. Also, there's an active relationship between the **Region** table and the **Sales** table, both of which are in source group **B**. The **Sales** table includes a measure named **TotalSales**, and the **Region** table includes two measures named **RegionalSales** and **RegionalSalesDirect**.
+In this example, the **Region** table in source group **A** has a relationship to the **Calendar** table and **Sales** table in source group **B**. The relationship between the **Region** table and the **Calendar** table is active, while the relationship between the **Region** table and the **Sales** table is inactive. Also, there's an active relationship between the **Region** table and the **Sales** table, both of which are in source group **B**. The **Sales** table includes a measure named **TotalSales**, and the **Region** table includes two measures named **RegionalSales** and **RegionalSalesDirect**.
 
 :::image type="content" source="media/composite-model-guidance/example-multi-path-filter-propagation.png" alt-text="Diagram shows the model design as described in the previous paragraph.":::
 
@@ -120,17 +120,17 @@ RegionalSalesDirect = CALCULATE(SUM(Sales[Sales]), USERELATIONSHIP(Region[Region
 
 Notice how the **RegionalSales** measure refers to the **TotalSales** measure, while the **RegionalSalesDirect** measure does not. Instead, the **RegionalSalesDirect** measure uses the expression `SUM(Sales[Sales])`, which is the expression of the **TotalSales** measure.
 
-The difference in the result in subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Calendar** table. Therefore, the filter also propagates from the **Calendar** table to the **Sales** table. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions are semantically the same.
+The difference in the result in subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Calendar** table. Therefore, the filter also propagates from the **Calendar** table to the **Sales** table. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions are semantically equivalent.
 
 #### Cross source group relationship example 2
 
-Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers with the _yyyymmdd_ format. These two tables reside in different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
+Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. These two tables reside in different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
 
 :::image type="content" source="media/composite-model-guidance/example-cross-source-group-relationship.png" alt-text="Diagram shows the example model design as described in the previous paragraph.":::
 
 There are two cases for concern.
 
-First, when you use the **Date** table columns as filters, filter propagation will filter the **DateKey** column of the **Sales** table when the measures are evaluated. When filtering by a single year, like 2020, the DAX query will include a filter expressions like `Sales[DateKey] IN { 20000101, 20000102, …20001231 }`. The text size of the query can grow to become extremely large when the number of values in the filter expression is large, or when the filter values are big strings.
+First, when you use the **Date** table columns as filters, filter propagation will filter the **DateKey** column of the **Sales** table to evaluate measures. When filtering by a single year, like 2020, the DAX query will include a filter expression like `Sales[DateKey] IN { 20220101, 20220102, …20221231 }`. The text size of the query can grow to become extremely large when the number of values in the filter expression is large, or when the filter values are big strings.
 
 Second, when you use **Date** table columns—like **Year**, **Quarter**, or **Month**—as grouping columns, it results in filters that include all unique combinations of year, quarter, or month, _and_ the **DateKey** column values. The text size of the query, which contains filters on the grouping columns and the relationship column, can become extremely large. That's especially true when the number of grouping columns and/or the cardinality of the join column (the **DateKey** column) is large.
 
