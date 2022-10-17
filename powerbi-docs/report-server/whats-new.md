@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/28/2022
+ms.date: 10/17/2022
 ms.custom: intro-whats-new
 ---
 
@@ -38,11 +38,6 @@ We've improved the Power BI Report Server portal to provide a more inclusive mod
 #### New report server properties
 
 Report Server 2022 has a number of new options for setting system properties on the report server. The article [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services) explains how to set them in SQL Server Management Studio. Each of the links in this section takes you to that option in the article.
-
-- Allow RDL report migrations to Power BI using the publish feature in the  web portal:
-
-  - [**EnablePowerBIReportMigrate**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#enablepowerbireportmigrate): default false *value* - turns the migration on / off completely. 
-  - [**PowerBIMigrateUrl**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#powerbimigrateurl): default "https://app.powerbi.com/"  *value* defines the Cloud endpoint to use. 
 
 - Branding options to add a custom hyperlink, [CustomUrlLabel and CustomUrlValue](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customurllabel-and-customurlvalue):
 
