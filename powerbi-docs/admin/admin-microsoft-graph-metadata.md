@@ -20,7 +20,7 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 
 Together, the Microsoft Graph API, connectors, and Data Connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent applications.
 
-For more information, visit [Microsoft Graph documentation](/graph/overview.md)
+For more information, visit [Microsoft Graph documentation](/graph/overview)
 
 When Microsoft Graph is integrated with Power BI, details about the Power BI content and activity will be accessible from the Office.com Home page. This feature is currently available in private preview. To participate in the private preview, a Power BI administrator will need to enable the **Share data with your Microsoft 365 services** tenant setting. Before turning on the experience, learn what data will be shared with Microsoft 365.
 
