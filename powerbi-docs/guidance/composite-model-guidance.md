@@ -32,7 +32,7 @@ Further, you can consider developing a composite model in the following situatio
 - You want to combine two or more DirectQuery data sources into a single model.
 
 > [!NOTE]
-> Composite models cannot combine connections to external analytic databases. These include live connections to [external-hosted models](/power-bi/connect-data/service-datasets-understand#external-hosted-models), SAP Business Warehouse, and SAP HANA when [treating SAP HANA as a multidimensional source](/power-bi/connect-data/desktop-directquery-sap-hana).
+> Composite models cannot combine connections to external analytic databases. These include live connections to SAP Business Warehouse, and SAP HANA when [treating SAP HANA as a multidimensional source](/power-bi/connect-data/desktop-directquery-sap-hana).
 
 ## Optimize model design
 
@@ -74,7 +74,7 @@ You can add aggregations to DirectQuery tables in your composite model. When agg
 
 We recommend that an aggregation follows a basic rule: Its row count should be at least a factor of 10 smaller than the underlying table. For example, if the underlying table stores 1 billion rows, then the aggregation table shouldn't exceed 100 million rows. This rule ensures that there's an adequate performance gain relative to the cost of creating and maintaining the aggregation.
 
-## Connecting to tabular models
+## Connect to tabular models
 
 You can create a composite model that connects to a Power BI dataset or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true). In either case, you're connecting to a data source that's another tabular model. You might create this type of composite model to:
 
@@ -84,27 +84,29 @@ You can create a composite model that connects to a Power BI dataset or an [Anal
 > [!NOTE]
 > When a model connects to a tabular model but doesn't combine it with additional data, it's not a composite model. In this case, it's a DirectQuery model that connects to a remote model that comprises just one source group. You might create this type of model to modify source model object properties, like a table name, column sort order, or format.
 
-Connecting to tabular models is especially relevant when extending an _enterprise semantic model_ (when it's a Power BI dataset or Analysis Services model). An enterprise semantic model is fundamental to the development and operation of a data warehouse. It provides an abstraction layer over the data in the data warehouse to present business definitions and terminology. It's commonly used as a link between physical data models and reporting tools, like Power BI. In most organizations, it's managed by a central team, and that's why it's described as ' _enterprise_. For more information, see the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) usage scenario.
+Connecting to tabular models is especially relevant when extending an _enterprise semantic model_ (when it's a Power BI dataset or Analysis Services model). An enterprise semantic model is fundamental to the development and operation of a data warehouse. It provides an abstraction layer over the data in the data warehouse to present business definitions and terminology. It's commonly used as a link between physical data models and reporting tools, like Power BI. In most organizations, it's managed by a central team, and that's why it's described as _enterprise_. For more information, see the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) usage scenario.
 
-When you create a composite model that connects to another tabular model, we recommend that you optimize your model for performance and the user experience. You should consider cross source group relationships and the specific modeling techniques that are described in this section.
+When you create a composite model that connects to another tabular model, we recommend that you optimize your model for performance and the user experience. Specifically, you should consider cross source group relationships and the specific modeling techniques that are described in this section.
 
 ### Cross source group relationships
 
 When a relationship spans source groups, it's known as a _cross source group relationship_. For more information, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand#relationship-evaluation).
 
-When defining cross source group relationships, consider the following points.
+When defining cross source group relationships, consider the following recommendations.
 
-- **Avoid combining multiple enterprise semantic models:** While it's possible to combine multiple enterprise semantic models, we don't recommend that you do because it could negatively impact on performance. Instead, extend the enterprise semantic model itself, whenever possible.
+- **Avoid combining multiple enterprise semantic models:** While it's possible to combine multiple enterprise semantic models, we don't recommend that you do because it could negatively affect performance. Instead, extend the enterprise semantic model itself, whenever possible.
 - **Use low-cardinality relationship columns:** For best performance, we recommend that the relationship columns be low cardinality, meaning they should store less than 50,000 unique values. This recommendation is especially true for non-text columns.
 - **Avoid using large text relationship columns:** If you must use text columns in a relationship, calculate the expected text length for the filter by multiplying the cardinality by the average length of the text column. The possible text length should not exceed 250,000 characters.
 - **Strive to achieve a simple relationship design:** Only create a cross source group relationship when it's needed, and try to limit the number of tables in the relationship path. This design approach will help to improve performance and avoid [ambiguous relationship paths](/power-bi/transform-model/desktop-relationships-understand#resolve-relationship-path-ambiguity).
 
 > [!WARNING]
-> Because Power BI Desktop doesn't validate cross group relationships, it's possible to create overly complex or ambiguous relationships.
+> Because Power BI Desktop doesn't thoroughly validate cross group relationships, so it's possible to create ambiguous relationships.
 
 #### Cross source group relationship example 1
 
-Consider an example of a complex relationship and how it could produce different, yet valid results. In this example, the **Region** table in source group **A** has a relationship to the **Calendar** table and **Sales** table in source group **B**. The relationship between the **Region** table and the **Calendar** table is active, and the relationship between the **Region** table and the **Sales** table is inactive. Also, there's an active relationship between the **Region** table and the **Sales** table, both of which are in source group **B**. The **Sales** table includes a measure named **TotalSales**, and the **Region** table includes two measures, named **RegionalSales** and **RegionalSalesDirect**.
+Consider an example of a complex relationship and how it could produce different, yet valid results.
+
+In this example, the **Region** table in source group **A** has a relationship to the **Calendar** table and **Sales** table in source group **B**. The relationship between the **Region** table and the **Calendar** table is active, and the relationship between the **Region** table and the **Sales** table is inactive. Also, there's an active relationship between the **Region** table and the **Sales** table, both of which are in source group **B**. The **Sales** table includes a measure named **TotalSales**, and the **Region** table includes two measures named **RegionalSales** and **RegionalSalesDirect**.
 
 :::image type="content" source="media/composite-model-guidance/example-multi-path-filter-propagation.png" alt-text="Diagram shows the model design as described in the previous paragraph.":::
 
@@ -116,20 +118,21 @@ RegionalSales = CALCULATE([TotalSales], USERELATIONSHIP(Region[RegionID], Sales[
 RegionalSalesDirect = CALCULATE(SUM(Sales[Sales]), USERELATIONSHIP(Region[RegionID], Sales[RegionID]))
 ```
 
-Notice how the **RegionalSales** measure refers to the **TotalSales** measure, while the **RegionalSalesDirect** measure does not. Instead, the **RegionalSalesDirect** measure uses the expression `SUM(Sales[Sales])`, which is equivalent to the expression in the **TotalSales** measure.
+Notice how the **RegionalSales** measure refers to the **TotalSales** measure, while the **RegionalSalesDirect** measure does not. Instead, the **RegionalSalesDirect** measure uses the expression `SUM(Sales[Sales])`, which is the expression of the **TotalSales** measure.
 
-The difference in the result in subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Calendar** table. Therefore, the filter propagates from the **Calendar** table to the **Sales** table too. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions appear the same.
+The difference in the result in subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Calendar** table. Therefore, the filter also propagates from the **Calendar** table to the **Sales** table. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions are semantically the same.
 
 #### Cross source group relationship example 2
 
-Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns, and these tables reside in different source groups. Further, it's a high-cardinality relationship: The earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100, so there's a total of 73,415 rows in the table (one row for each date in the 1900-2100 time span).
+Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers with the _yyyymmdd_ format. These two tables reside in different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
 
 :::image type="content" source="media/composite-model-guidance/example-cross-source-group-relationship.png" alt-text="Diagram shows the example model design as described in the previous paragraph.":::
 
-There are two concerns.
+There are two cases for concern.
 
-- If columns from Date are used as pure filters, the filters from Date will be translated to a filter on Sales[DateKey] when the measures are evaluated. Assuming Sales[DateKey] is an integer and follows the typical yyyymmdd format, the DAX query to Sales will contain a filter that’s equivalent to Sales[DateKey] IN { 19000101, 20000102, …, 21001231 }. The text representation of the filter will be a part of every DAX query to Sales. The size of the query can be huge if the number of distinct values in the filter is large or when the filter values are big strings. In this example, the number of distinct values is 7671 and as a result the filter will list all values resulting in a very big query string.
-- If columns [Year], [Quarter], …, [Month] from Date are used as grouping columns, the query to Sales will include all unique combinations of [Year], [Quarter], …, [Month], and [DateKey] where the values of [Year] through [Month] are always integers but the values of [DateKey] will be actual values in the column. The text representation of the combinations can be huge if the number of grouping columns and/or the cardinality of the join column [DateKey] is big.
+First, when you use the **Date** table columns as filters, filter propagation will filter the **DateKey** column of the **Sales** table when the measures are evaluated. When filtering by a single year, like 2020, the DAX query will include a filter expressions like `Sales[DateKey] IN { 20000101, 20000102, …20001231 }`. The text size of the query can grow to become extremely large when the number of values in the filter expression is large, or when the filter values are big strings.
+
+Second, when you use **Date** table columns—like **Year**, **Quarter**, or **Month**—as grouping columns, it results in filters that include all unique combinations of year, quarter, or month, _and_ the **DateKey** column values. The text size of the query, which contains filters on the grouping columns and the relationship column, can become extremely large. That's especially true when the number of grouping columns and/or the cardinality of the join column (the **DateKey** column) is large.
 
 These two cases highlight that cross source group relationships can lead to issues, including—but not limited to—performance issues.
 
