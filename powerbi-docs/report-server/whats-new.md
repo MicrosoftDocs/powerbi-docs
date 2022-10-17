@@ -34,12 +34,6 @@ This release introduces Power BI Report Server for SQL Server 2022. We continue 
 We've improved the Power BI Report Server portal to provide a more inclusive modern graphical interface, making it easier to deliver meaningful reporting on your data from a web-based experience. In the portal, you can view Power BI reports, paginated reports, Excel files, and KPIs, and navigate through the elements in your report server instance. You can also use the web portal to administer a single report server instance.
 
 :::image type="content" source="media/whats-new/power-bi-report-server-web-portal.png" alt-text="Screenshot showing refreshed Power BI Report Server web portal.":::
-  
-#### Migration tool
-
-In this latest release of Power BI Report Server, we're introducing the new paginated report migration tool, which connects to the web from the Power BI Report Server web portal. It's intuitive and easy to use, making it simple for you to publish your paginated reports from on premises to the Power BI cloud service. Learn more about the [Power BI Report Server migration tool](report-server-migration-tool.md).
-
-:::image type="content" source="media/whats-new/report-server-publish-migrate.png" alt-text="Screenshot showing Power BI Report Server Migration option.":::
 
 #### New report server properties
 
