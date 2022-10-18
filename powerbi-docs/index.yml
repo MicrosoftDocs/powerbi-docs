@@ -39,13 +39,13 @@ highlightedContent:
       itemType: concept
       url: developer/embedded/export-to.md
     # Card
-    - title: Protect sensitive data with data loss prevention policies
+    - title: "Power BI Premium features: Original, Gen2, and Per User"
       itemType: concept
-      url: enterprise/service-security-dlp-policies-for-power-bi.md
+      url: enterprise/service-premium-features.md
     # Card
-    - title: Get your data on the go with Power BI mobile apps
-      itemType: learn
-      url: /training/modules/explore-power-bi-mobile-apps
+    - title: Create submetrics that roll up to metrics
+      itemType: how-to-guide
+      url: create-reports/service-metrics-submetrics.md
     # Card
     - title: Create sparklines in a table or matrix
       itemType: how-to-guide
