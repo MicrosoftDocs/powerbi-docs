@@ -3,12 +3,12 @@ title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
 author: mihart
 ms.author: mihart
-manager: kvivek
+manager: kfollis
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/13/2022
+ms.date: 10/18/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -229,6 +229,8 @@ If you find that you can't use this feature, reach out to the report owner and y
 - If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
 - The granularity of data exported to Excel using the **Data with current layout** and **Summarized data** options are identical and the only difference between the options is the shape of the data in Excel. For example, in a matrix visual, the **Data with current layout** preserves the shape of the visual as shown in Power BI when data is exported to Excel while the **Summarized data** option exports the same data but as a flat table of rows and columns.
+
+- When you export datetime data from Power BI, the format of the datetime will change to match the datetime format of your local machine. For example, let's say that the report designer formatted the datetime as DDMMYYYY, which is the default regional format for their locale. When you open that report on your machine and export the data to Excel, the datetime shows as MMDDYY, which is your default regional datetime format. 
 
 - Power BI custom visuals and R visuals aren't currently supported.
 
