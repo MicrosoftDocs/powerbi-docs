@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/11/2022
+ms.date: 10/18/2022
 LocalizationGroup: Administration
 ---
 
@@ -19,7 +19,7 @@ Use [Customer Lockbox for Microsoft Azure](/azure/security/fundamentals/customer
 
 Typically, Customer Lockbox is used to help Microsoft engineers troubleshoot a Power BI service support request. Customer Lockbox can also be used when Microsoft identifies a problem, and a Microsoft-initiated event is opened to investigate the issue.
 
-To enable Customer Lockbox, you need to be a Power BI tenant admin. An Azure subscription isn't needed. Customer Lockbox for Power BI is available for all Power BI tenants, free of charge.
+To enable Customer Lockbox, you need to be a Power BI admin. An Azure subscription isn't needed. Customer Lockbox for Power BI is available for all Power BI tenants, free of charge.
 
 ## Microsoft access request
 
@@ -39,15 +39,15 @@ When the request requires direct access to customer data, a Customer Lockbox req
 
 These steps describe a Microsoft initiated Customer Lockbox request, for Power BI service.
 
-1. The Power BI tenant admin receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
+1. The Power BI admin receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
 
-:::image type="content" source="media/service-admin-power-bi-security-lockbox/email-example.png" alt-text="Screenshot of pending access request notification email from Microsoft.":::
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/email-example.png" alt-text="Screenshot of pending access request notification email from Microsoft.":::
 
 2. The email provides a link to Customer Lockbox in the Azure Administration module. Using the link, the designated approver signs in to the Azure portal to view any pending Customer Lockbox requests. The request remains in the customer queue for four days. After that, the access request automatically expires and no access is granted to Microsoft engineers.
 
 3. To get the details of the pending request, the designated approver can select the Customer Lockbox request from the **Pending Requests** menu option.
 
-    <--- Screenshot of pending requests menu option --->
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-pending-requests.png" alt-text="Screenshot of the pending requests in Customer Lockbox for Microsoft Azure.":::
 
 4. After reviewing the request, the designated approver enters a justification and selects one of the options below. For auditing purposes, the actions are logged in the Customer Lockbox [auditing logs](#auditing-logs).
 
@@ -55,13 +55,19 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
     * **Deny** - The access request by the Microsoft engineer is rejected and no further action is taken.
 
-    <--- Screenshot of approve/deny --->
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-approval.png" alt-text="Screenshot of the approve and deny buttons of a pending Customer Lockbox for Microsoft Azure request.":::
 
 ## Auditing logs
 
 Customer Lockbox logs are stored in the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell). In the Azure portal, select **Activity Log** to view auditing information related to Customer Lockbox requests. You can filter the results for specific actions.
 
-<--- Screenshot of activity logs --->
+:::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activitylogs.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure.":::
+
+Customer Lockbox for Power BI also has four [Power BI activity logs](./../admin/service-admin-auditing.md):
+* GetRefreshHistoryViaLockbox
+* DeleteAdminUsageDashboardsViaLockbox
+* DeleteUsageMetricsv2PackageViaLockbox
+* DeleteAdminMonitoringFolderViaLockbox
 
 ## Exclusions
 
