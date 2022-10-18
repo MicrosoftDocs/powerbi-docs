@@ -152,94 +152,94 @@ myNumericSlice = new formattingSettings.NumUpDown({
 ## Build formatting pane model using FormattingModel Utils
 
 1. Open your `settings.ts` file.
-2. Build your own formatting settings model with all of its components (cards, slices, properties ...), Name it `VisualFormattingSettings`.
-Replace your settings code with the following:
+2. Build your own formatting settings model with all its components (cards, slices, properties ...), and name it `VisualFormattingSettings`.
+  Replace your settings code with the following:
 
-```typescript
-import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
+ ```typescript
+ import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-import FormattingSettingsCard = formattingSettings.Card;
-import FormattingSettingsSlice = formattingSettings.Slice;
-import FormattingSettingsModel = formattingSettings.Model;
+ import FormattingSettingsCard = formattingSettings.Card;
+ import FormattingSettingsSlice = formattingSettings.Slice;
+ import FormattingSettingsModel = formattingSettings.Model;
 
-export class VisualSettingsModel extends FormattingSettingsModel {
-    // Building my visual formatting settings card
-    myVisualCard: FormattingSettingsCard = new myVisualCardSettings();
+ export class VisualSettingsModel extends FormattingSettingsModel {
+     // Building my visual formatting settings card
+     myVisualCard: FormattingSettingsCard = new myVisualCardSettings();
 
-    // Add formatting settings card to cards list in model
-    cards: Array<FormattingSettingsCard> = [this.myVisualCard];
-}
+     // Add formatting settings card to cards list in model
+     cards: Array<FormattingSettingsCard> = [this.myVisualCard];
+ }
 
-class myVisualCardSettings extends FormattingSettingsCard {
-    myNumericSlice = new formattingSettings.NumUpDown({
-        name: "myNumericSlice",
-        displayName: "My Formatting Numeric Slice",
-        value: 100,
-    });
+ class myVisualCardSettings extends FormattingSettingsCard {
+     myNumericSlice = new formattingSettings.NumUpDown({
+         name: "myNumericSlice",
+         displayName: "My Formatting Numeric Slice",
+         value: 100,
+     });
 
-    name: string = "myVisualCard";
-    displayName: string = "My Formatting Card";
-    analyticsPane: boolean = false;
-    slices: Array<FormattingSettingsSlice> = [this.myNumericSlice];
-}
-```
+     name: string = "myVisualCard";
+     displayName: string = "My Formatting Card";
+     analyticsPane: boolean = false;
+     slices: Array<FormattingSettingsSlice> = [this.myNumericSlice];
+ }
+ ```
 
 3. In your capabilities file, add your formatting objects and properties
 
-```json
-"objects": {
-    "myVisualCard": {
-        "properties": {
-            "myNumericSlice": {
-                "type": {
-                    "numeric": true 
-                }
-            }
-        }
-    }
-}
-```
+ ```json
+ "objects": {
+     "myVisualCard": {
+         "properties": {
+             "myNumericSlice": {
+                 "type": {
+                     "numeric": true 
+                 }
+             }
+         }
+     }
+ }
+ ```
 
 4. In your visual class, import the following:
 
-```typescript
-import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
-import { VisualFormattingSettingsModel } from "./settings";
-```
+ ```typescript
+ import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+ import { VisualFormattingSettingsModel } from "./settings";
+ ```
 
 5. Declare formatting settings and formatting settings service
 
-```typescript
-private formattingSettings: VisualFormattingSettingsModel;
-private formattingSettingsService: FormattingSettingsService;
-```
+ ```typescript
+ private formattingSettings: VisualFormattingSettingsModel;
+ private formattingSettingsService: FormattingSettingsService;
+ ```
 
 6. Initialize the formatting settings service in constructor
 
-```typescript
-constructor(options: VisualConstructorOptions) {
-    this.formattingSettingsService = new FormattingSettingsService();
+ ```typescript
+ constructor(options: VisualConstructorOptions) {
+     this.formattingSettingsService = new FormattingSettingsService();
 
-    // ...
-}
-```
+     // ...
+ }
+ ```
 
 7. Build formatting settings in update API using formatting settings service `populateFormattingSettingsModel`
 
-```typescript
-public update(options: VisualUpdateOptions) {
-    this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
-    // ...
-}
-```
+ ```typescript
+ public update(options: VisualUpdateOptions) {
+     this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel (VisualFormattingSettingsModel, options.dataViews);
+     // ...
+ }
+ ```
 
 8. Build formatting model and return it in `getFormattingModel` API
 
-```typescript
-public getFormattingModel(): powerbi.visuals.FormattingModel {
-    return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
-}
-```
+ ```typescript
+ public getFormattingModel(): powerbi.visuals.FormattingModel {
+     return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
+ }
+ ```
 
 ## Formatting property selector
 
@@ -261,7 +261,7 @@ new formattingSettings.ColorPicker({
 
 ## Reset settings to default
 
-Formatting model utils will enable you to reset features to the default settings by automatically adding all the formatting properties descriptors to the formatting card list of features to revet to default descriptors `revertToDefaultDescriptors`.
+Formatting model utils will enable you to [reset settings to default](./format-pane.md#reset-settings-to-default) by automatically adding all the formatting properties descriptors to the formatting card list of features to revet to default descriptors `revertToDefaultDescriptors`.
 
 You can enable resetting formatting settings from:
 

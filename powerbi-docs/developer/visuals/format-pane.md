@@ -464,6 +464,8 @@ displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
 description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
 
+To localize formatting model utils [formatting utils localization](utils-formatting.md#localization).
+
 ## GitHub Resources
 
 * All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
