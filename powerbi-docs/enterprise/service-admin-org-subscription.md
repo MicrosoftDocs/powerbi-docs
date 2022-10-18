@@ -14,9 +14,9 @@ LocalizationGroup: Administration
 
 # Get a Power BI service subscription for your organization
 
-Administrators can sign up for the Power BI service on the **Purchase services** page of the Microsoft 365 admin center. After you sign up for Power BI, administrators can assign licenses to users who have access.
+Administrators can sign up for the Power BI service on the **Purchase services** page of the Microsoft 365 admin center. After signing up for Power BI, administrators can assign licenses to users who have access.
 
-Users in your organization can sign up for Power BI on the Power BI web site. When a user in your organization signs up for Power BI, they're assigned a Power BI license automatically. To turn off self-service capabilities, follow the steps to [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+Users in your organization can sign up for Power BI on the Power BI website. When a user in your organization signs up for Power BI, they're assigned a Power BI license automatically. To turn off these self-service capabilities, follow the steps to [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
 
 ## Sign up through Microsoft 365
 
@@ -32,25 +32,21 @@ To purchase Power BI Pro licenses on the Microsoft 365 admin center:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
-2. On the navigation menu, select **Billing** > **Purchase services**.
+1. On the navigation menu, select **Billing** > **Purchase services**.
   
-   :::image type="content" source="media/service-admin-org-subscription/m365-purchase-services-2021.png" alt-text="Screenshot that shows the Microsoft 365 billing menu with Purchase services selected.":::
+   :::image type="content" source="media/service-admin-org-subscription/m365-purchase-services-2021.png" alt-text="Screenshot showing the Microsoft 365 billing menu with Purchase services selected.":::
 
-3. Search for **Power BI** or select **Power BI** from the **View by category** section near the top of the page.
+1. Search for **Power BI** or select **Power BI** from the **View by category** section.
 
-4. Select an offer, like Power BI Pro.
+1. Select **Details** to purchase an offer or select offers to compare.
 
-5. On the **Purchase services** page, select **Buy**. If you haven't previously used it, you can start a Power BI Pro free trial subscription. It includes 25 licenses and expires in one month.
+1. Under **Select license quantity**, enter the number of licenses you want to buy, and then select a billing frequency. Select **Buy**.  If you haven't previously used it, you can start a Power BI Pro free trial subscription. It includes 25 licenses and expires in one month.
 
-   :::image type="content" source="media/service-admin-org-subscription/power-bi-pro-purchase.png" alt-text="Screenshot that shows the purchase options for Power B I Pro.":::
+   :::image type="content" source="media/service-admin-org-subscription/power-bi-pro-purchase.png" alt-text="Screenshot showing example purchase options for Power B I Pro.":::
 
-6. You can pay monthly or yearly.
+1. Complete the information on the checkout page, and then select **Place order**.
 
-7. Under **Select license quantity**, enter the number of licenses to buy, and then select **Buy**.
-
-8. Complete the information on the checkout page, and then select **Place order**.
-
-9. To verify your purchase, go to **Billing** > **Your products** and look for  **Power BI Pro**.
+1. To verify your purchase, go to **Billing** > **Your products** and look for  **Power BI Pro**.
 
 To read more about how your organization can control and acquire the Power BI service, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
@@ -62,7 +58,7 @@ You'll need a work or school account to sign up for a Power BI subscription. We 
 
 Sign up for Power BI Pro:
 
-1. Go to [Power BI Pro signup](https://signup.microsoft.com/create-account/signup?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&ali=1&products=d59682f3-3e3b-4686-9c00-7c7c1c736085).
+1. Go to [Power BI Pro signup](https://signup.microsoft.com/create-account/signup?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&ali=1&products=d59682f3-3e3b-4686-9c00-7c7c1c736085) and enter an email address. Select **Next**.
 
 1. Enter your work or school email address, then select **Next**. It's okay to enter an email address that isn't a work or school email address. We'll get a new account set up for you when you create your business identity.
 
