@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: how-to-guides
+ms.topic: how-to
 ms.date: 10/18/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Get a Power BI service subscription for your organization
 
-Administrators can sign up for the Power BI service on the **Purchase services** page of the Microsoft 365 admin center. After signing up for Power BI, administrators can assign licenses to users who have access.
+Administrators can sign up for the Power BI service on the **Purchase services** page of the Microsoft 365 admin center. After you sign up for Power BI, administrators can assign licenses to users who have access.
 
 Users in your organization can sign up for Power BI on the Power BI web site. When a user in your organization signs up for Power BI, they're assigned a Power BI license automatically. To turn off self-service capabilities, follow the steps to [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
 
@@ -68,12 +68,12 @@ Sign up for Power BI Pro:
 
    ![Power BI Pro signup](media/service-admin-org-subscription/power-bi-pro-admins.png)
 
-1. We run a quick check to see if you need to create a new account. Select **Set up account** to continue with the sign up process.
+1. We run a quick check to see if you need to create a new account. Select **Set up account** to continue.
 
    > [!NOTE]
    >If your email address is already in use with another Microsoft service, you can **Sign in** or **Create a new account instead**. If you choose to create a new account, continue to the next step.
 
-1. Complete the **Tell us about yourself** section of the form. Select the correct country or region, your selection determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for the majority of your users.
+1. Complete the **Tell us about yourself** section of the form. Select the correct country or region, your selection determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for most of your users.
 
    ![Tell us about yourself](media/service-admin-org-subscription/tell-about-yourself.png)
 
@@ -83,7 +83,7 @@ Sign up for Power BI Pro:
 
    ![Create your business identity](media/service-admin-org-subscription/business-identity.png)
 
-    Enter a short name for your business, and we'll check to make sure it's available. We use this short name to create your organization name in the datacenter as a subdomain of onmicrosoft.com. You can add your own business domain later. If the short name you want is taken, someone with a similar business name chose the same short name, but you can try a different variation. Select **Next**.
+    Enter a short name for your business, and we'll check to make sure it's available. We use this short name to create your organization name in the datacenter as a subdomain of `onmicrosoft.com`. You can add your own business domain later. If the short name you want is taken, someone with a similar business name chose the same short name, but you can try a different variation. Select **Next**.
 
 1. Create your user ID and password to sign in to your account. Select **Sign up**, and you're all set.
 
