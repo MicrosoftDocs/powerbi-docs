@@ -12,7 +12,7 @@ ms.date: 08/31/2022
 LocalizationGroup: Administration
 ---
 
-# Developer admin settings
+# Developer tenant settings
 
 These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
