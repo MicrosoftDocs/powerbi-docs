@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/14/2022
+ms.date: 10/18/2022
 ---
 
 # Security features in Power BI Embedded
@@ -23,7 +23,7 @@ Power BI Embedded has several ways to filter data and restrict data access to sp
 * [**Workspace based isolation**](./embed-multi-tenancy.md) and multitenancy  
  In this scenario, each customer has their own separate dataset. Since each customer only has access to their own workspace, no further filtering needed, though this method can be combined with RLS to further filter data within each organization.
 
-## Security measures for different situations
+## Security solutions for different ISV scenarios
 
 Depending on the situation, some common cases where security measures can be applied include:
 
@@ -41,7 +41,9 @@ For instructions on how to embed reports or other items, go to the link that bes
 * [Cloud based RLS](cloud-rls.md)
 * [Embedding paginated reports](paginated-reports-row-level-security.md)
 * [SQL Server Analysis Services](sql-server-analysis-services-embed.md)
+* [Azure Analysis Services](./embed-azure-analysis-services.md)
 * Single sign-on 
+* [Object level security](./embed-object-level-security.md)
 
 ## Considerations and limitations
 
