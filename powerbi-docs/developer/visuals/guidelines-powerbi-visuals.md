@@ -149,7 +149,7 @@ When publishing a Power BI visual, consider the following recommendations to giv
 
 ## FAQ
 
-For more information about Power BI visuals, see  [Frequently asked questions about Power BI visuals with extra purchases](./power-bi-custom-visuals-faq.yml#visuals-with-additional-purchases).
+For more information about Power BI visuals, see [Frequently asked questions about Power BI visuals with extra purchases](/power-bi/developer/visuals/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## Next steps
 

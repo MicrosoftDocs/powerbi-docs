@@ -94,10 +94,12 @@
         href: report-paginated-blank-page.md
       - name: "Migrate SSRS reports to Power BI"
         href: migrate-ssrs-reports-to-power-bi.md
+    - name: Development
+      items:
+      - name: "Develop scalable multitenancy applications"
+        href: develop-scalable-multitenancy-apps-with-powerbi-embedding.md 
     - name: Admin and deployment
       items:
-      - name: "Tenant settings"
-        href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
       - name: "Monitor report performance"
@@ -184,6 +186,8 @@
           href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
         - name: "Advanced data model management"
           href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
+        - name: "Self-service real-time analytics"
+          href: powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
       - name: "Tenant setup"
@@ -196,6 +200,20 @@
           href: powerbi-implementation-planning-workspaces-tenant-level-planning.md
         - name: "Workspace-level planning"
           href: powerbi-implementation-planning-workspaces-workspace-level-planning.md
+      - name: "Information protection and data loss prevention"
+        items:
+        - name: "Info protection and DLP overview"
+          href: powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md
+        - name: "Org-level info protection"
+          href: powerbi-implementation-planning-organization-level-info-protection.md
+        - name: "Info protection for Power BI"
+          href: powerbi-implementation-planning-info-protection.md
+        - name: "DLP for Power BI"
+          href: powerbi-implementation-planning-data-loss-prevention.md
+        - name: "Defender for Cloud Apps for Power BI"
+          href: powerbi-implementation-planning-defender-for-cloud-apps.md
+        - name: "Auditing of info protection and DLP for Power BI"
+          href: powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md
   - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
