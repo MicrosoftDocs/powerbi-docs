@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/12/2022
+ms.date: 10/18/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -31,7 +31,7 @@ To create a subscription for yourself, you'll need either:
 - A Power BI Pro or [Premium Per User (PPU) license](end-user-license.md) or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
 
-Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#create-email-subscriptions).
+Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#create-email-subscriptions). To export or subscribe to paginated reports, [several tenant switches must be enabled](#subscribe-to-paginated-reports).
 
 
 ## Subscribe to a report or dashboard
@@ -113,6 +113,18 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 ## Subscribe to paginated reports 
 
+### Subscribe yourself or others to paginated reports
+Your Power BI admin must [enable subscriptions in your tenant](../admin/service-admin-portal-export-sharing.md). In addition, the relevant tenant switches have to be enabled:
+- Export to Excel
+- Export to .csv
+- Export reports as PowerPoint presentations or PDF documents
+- Export reports as MHTML documents
+- Export reports as Word documents
+- Export reports as XML documents
+- Create email subscriptions (**Tenant settings** > **Export and sharing settings** > **Create email subscriptions**)
+:::image type="content" source="./media/end-user-subscribe/power-bi-paginated.png" alt-text="Screenshot of tenant settings with relevant export settings outlined.":::
+
+
 In general, the process for subscribing to paginated reports is the same as [subscribing to reports and dashboards](#subscribe-to-a-report-or-dashboard), but there are a few differences worth noting. This section spells out these differences and other considerations to keep in mind when subscribing to paginated reports.  
 
 ### Paginated reports parameters 
@@ -131,7 +143,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
 - There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
-- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services.
+- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. However, you can't create data-driven subscriptions for paginated reports in the Power BI service.
 
 
 ## Manage subscriptions
