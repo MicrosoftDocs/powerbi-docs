@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/12/2022
+ms.date: 10/18/2022
 ---
 
 # Service principal profiles for multitenancy apps in Power BI Embedded
@@ -17,7 +17,7 @@ This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-i
 > [!NOTE]
 > The word *tenant* in Power BI can sometimes refer to an Azure AD tenant. In this article, however, we use the term *multitenancy* to describe a solution where a single instance of a software application serves multiple customers or organizations (tenants) requiring physical and logical separation of data. . For example, the Power BI app builder can allocate a separate workspace for each if its customers (or tenants) as we show below. These customers are not necessarily Azure AD tenants, so don’t confuse the term *multitenant application* that we use here, with the [Azure AD multitenant application](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-A *service principal profile* is a profile created by a service principal. The ISV app calls the Power BI APIs using a service principal profile, as explained in this article.
+A *service principal profile* is a profile created by a [service principal](./embed-service-principal.md). The ISV app calls the Power BI APIs using a service principal profile, as explained in this article.
 
 The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer, or [tenant](./pbi-glossary.md#tenant). When a customer visits the ISV app, the app uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
 
@@ -309,9 +309,12 @@ Be careful when using a system-managed identity because:
 
 Due to the above considerations, we recommend that you use a user-assigned managed identity.
 
+## Example
+
+For an example of how to use service principal profiles to manage a multitenant environment with Power BI and App-Owns-Data embedding, download the [App owns data multitenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) repository from [Power BI Dev Camp](https://www.powerbidevcamp.net/) (third party site).
+
 ## Next steps
 
-* [Learn more about service principals](embed-service-principal.md)
 * [Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
 * [Migrate multitenancy apps to the service principal profiles model](migration-to-sp-profiles.md)
 * [Develop scalable multitenancy applications with Power BI embedding](/power-bi/guidance/develop-scalable-multitenancy-apps-with-powerbi-embedding)
