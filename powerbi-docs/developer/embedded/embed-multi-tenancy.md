@@ -284,7 +284,7 @@ When data is separated by service principal profiles, a simple mapping between a
 
 To add extra separation, assign a separate service principal to each tenant, instead of having a single service principal access multiple workspaces using different profiles. Assigning separate service principals has several advantages, including:
 
-* Human error or a credential leaks won't cause multiple tenants' data to be exposed.
+* Human error or a credential leak won't cause multiple tenants' data to be exposed.
 * Certificate rotation can be done separately for each tenant.
 
 However, using multiple service principals comes with a high management cost. Select this path only if you need the extra separation. Keep in mind that the configuration of which data to show an end user is defined when you [generate the embed token](/rest/api/power-bi/embedtoken), a backend-only process that end users can't see or change. Requesting an embed token using a tenant-specific profile will generate an embed token for that specific profile, which will give you customer separation in consumption.
