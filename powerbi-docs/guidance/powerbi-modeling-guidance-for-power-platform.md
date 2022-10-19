@@ -29,14 +29,14 @@ Because of its ease of setup, rapid deployment, and widespread adoption, Dataver
 
 Connecting Power BI to Dataverse involves creating a Power BI data model. You can choose from three methods to create a Power BI model.
 
-- **Import Dataverse data by using the [Dataverse connector](/power-query/connectors/dataverse):** This method caches (stores) Dataverse data in a Power BI model. It delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, allowing them to integrate data from other sources. Because of these strengths, importing data is the default mode when creating a model in [Power BI Desktop](/power-bi/fundamentals/desktop-what-is-desktop).
+- **Import Dataverse data by using the Dataverse connector:** This method caches (stores) Dataverse data in a Power BI model. It delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, allowing them to integrate data from other sources. Because of these strengths, importing data is the default mode when creating a model in [Power BI Desktop](/power-bi/fundamentals/desktop-what-is-desktop).
 - **Import Dataverse data by using Azure Synapse Link:** This method is a variation on the import method, because it also caches data in the Power BI model, but does so by connecting to [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is). By using [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake), Dataverse tables are continuously replicated to Azure Synapse or Azure Data Lake Storage (ADLS) Gen2. This approach is used to report on hundreds of thousands or even millions of records in Dataverse environments.
 - **Create a DirectQuery connection by using the Dataverse connector:** This method is an alternative to importing data. A DirectQuery model consists only of metadata defining the model structure. When a user opens a report, Power BI sends native queries to Dataverse to retrieve data. Consider creating a DirectQuery model when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
 
 > [!IMPORTANT]
 > While a DirectQuery model can be a good alternative when you need near real-time reporting or enforcement of Dataverse security reports, it can result in slow performance.
 >
-> You can learn about [recommendations for DirectQuery](#recommendations-for-directquery) later in this article.
+> You can learn about [considerations for DirectQuery](#considerations-for-directquery) later in this article.
 
 To determine the right method for your Power BI model, you should consider:
 
@@ -340,7 +340,7 @@ In Power BI Desktop, you can connect to Azure Synapse by using the [Azure Synaps
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/connect-to-synapse-analytics.png" alt-text="Screenshot shows the SQL Server Database window used to set the server value." border="false":::
 
-## Recommendations for DirectQuery
+## Considerations for DirectQuery
 
 There are many use cases when using DirectQuery storage mode can solve your requirements. However, using DirectQuery can negatively affect Power BI report performance. A report that uses a DirectQuery connection to Dataverse won't be as fast as a report that uses an import model. Generally, you should import data to Power BI whenever possible.
 
