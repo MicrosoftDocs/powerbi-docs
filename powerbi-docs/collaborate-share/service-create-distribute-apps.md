@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 10/03/2022
+ms.date: 10/19/2022
 
 LocalizationGroup: Share your work
 ---
