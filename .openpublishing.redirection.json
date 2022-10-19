@@ -321,6 +321,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/report-server/report-server-migration-tool.md",
+            "redirect_url": "/power-bi/report-server/whats-new",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/report-server/user-handbook-overview.md",
             "redirect_url": "/power-bi/report-server/get-started",
             "redirect_document_id": true

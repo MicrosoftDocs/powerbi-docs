@@ -17,8 +17,6 @@ This article targets SQL Server Reporting Services (SSRS) report authors and Pow
 
 > [!NOTE]
 > You can only migrate .rdl reports. In Power BI, .rdl reports are called _paginated reports_.
->
-> Are you migrating .rdl reports from Power BI Report Server to the Power BI service? See [Publish reports from Power BI Report Server to the Power BI service](../report-server/report-server-migration-tool.md).
 
 Guidance is divided into four stages. We recommend that you first read the entire article prior to migrating your reports.
 
