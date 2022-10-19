@@ -97,8 +97,6 @@
         href: ../support/power-bi-cannot-sign-in.md   
       - name: Troubleshoot sign-in for Power BI Desktop
         href: ../connect-data/desktop-troubleshooting-sign-in.md
-      - name: Forgot your password for Power BI?
-        href: https://learn.microsoft.com/power-bi/admin/power-bi-cannot-sign-in
       - name: Troubleshoot sign in with OData  
         href: ../connect-data/desktop-troubleshoot-odata.md
       - name: Troubleshoot opening Power BI Desktop

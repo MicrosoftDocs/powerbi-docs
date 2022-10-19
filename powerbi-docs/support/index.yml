@@ -42,9 +42,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-            - text: Are there any service-wide outages
+          - text: Are there any service-wide outages
             url: https://support.powerbi.com
-            - text: Capture diagnostic information for support
+          - text: Capture diagnostic information for support
             url: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
           - text: Is this a known issue?
             url: ../troubleshoot/known-issues/power-bi-known-issues.md
