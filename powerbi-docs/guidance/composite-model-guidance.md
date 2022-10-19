@@ -130,7 +130,7 @@ Consider an example where the dimension-type **Date** table is related to the fa
 
 There are two cases for concern.
 
-First, when you use the **Date** table columns as filters, filter propagation will filter the **DateKey** column of the **Sales** table to evaluate measures. When filtering by a single year, like 2020, the DAX query will include a filter expression like `Sales[DateKey] IN { 20220101, 20220102, …20221231 }`. The text size of the query can grow to become extremely large when the number of values in the filter expression is large, or when the filter values are big strings.
+First, when you use the **Date** table columns as filters, filter propagation will filter the **DateKey** column of the **Sales** table to evaluate measures. When filtering by a single year, like 2022, the DAX query will include a filter expression like `Sales[DateKey] IN { 20220101, 20220102, …20221231 }`. The text size of the query can grow to become extremely large when the number of values in the filter expression is large, or when the filter values are big strings.
 
 Second, when you use **Date** table columns—like **Year**, **Quarter**, or **Month**—as grouping columns, it results in filters that include all unique combinations of year, quarter, or month, _and_ the **DateKey** column values. The text size of the query, which contains filters on the grouping columns and the relationship column, can become extremely large. That's especially true when the number of grouping columns and/or the cardinality of the join column (the **DateKey** column) is large.
 
