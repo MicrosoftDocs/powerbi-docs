@@ -113,7 +113,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
 You can allow your app users, who have build permissions, to save copies of reports to their workspace. Once saved, the app users can customize the reports copies to meet their needs. 
 To enable save a copy feature for your app users, you first need to click the **Allow users to make a copy of the reports in the app** checkbox under **Setup** tab.
 
-    :::image type="content" source="media/service-create-distribute-apps/save-copy.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
+:::image type="content" source="media/service-create-distribute-apps/save-copy.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
     
 Once clicked, app users who have build permissions will be able to save a copy of a report from the app consumer view. You can also grant build permissions to your app users through app using **Advanced** option under **Manager audience access** pane.  
 
