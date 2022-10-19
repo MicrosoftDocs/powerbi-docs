@@ -42,9 +42,9 @@ References:
 
 ## Data that will be shared with Microsoft 365
 
-The table below lists the data that is shared with Microsoft 365 services.
+The tables below list the data that is shared with Microsoft 365 services.
 
-**Lines 1-15:  Artifact metadata that is mainly used when using the "search" mechanism to look for Power BI content within your Microsoft 365 services**
+**Artifact metadata that is mainly used when using the "search" mechanism to look for Power BI content within your Microsoft 365 services**
 
 ||Property|What is Shared|Example|
 |---------|---------|---------|---------|
@@ -64,7 +64,7 @@ The table below lists the data that is shared with Microsoft 365 services.
 |14|LastModifiedDate|Last modified date for the content|2011-06-30T23:32:46Z|
 |15|LastModifiedUser|Azure AD User Principal Name for the last person who modified the content|user1@griffin1.org|
 
-**Lines 16-20: User activity that is leveraged for showing Power BI content within your "Recents" and "Recommended" sections at Office.com**
+**User activity that is leveraged for showing Power BI content within your "Recents" and "Recommended" sections at Office.com**
 
 ||Property|What is Shared|Example|
 |---------|---------|---------|---------|
