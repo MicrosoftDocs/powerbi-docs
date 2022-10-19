@@ -38,7 +38,7 @@ To purchase Power BI Pro licenses on the Microsoft 365 admin center:
 
 1. Search for **Power BI** or select **Power BI** from the **View by category** section.
 
-1. Select multiple offers to compare or, select **Details** to purchase an offer.
+1. Select multiple offers to compare or select **Details** to purchase an offer.
 
 1. Under **Select license quantity**, select the number of licenses you want to buy, and then select a billing frequency. Select **Buy**.  If you haven't previously used it, you can start a **Power BI (free)** trial subscription. The free trial subscription includes 25 user licenses and expires after one month. You can only get one free trial.
 
@@ -62,7 +62,7 @@ To sign up for Power BI Pro:
 
      :::image type="content" source="../media/getstarted-powerbi-email-2022-10-19.png" alt-text="Screenshot showing the get started window.":::
 
-1. The email address entered is evaluated, select **Set up account** or **Change my email** to enter a different address.
+1. The email address you entered is evaluated. Select **Set up account** or **Change my email** to enter a different address.
 
    > [!NOTE]
    >If your email address is already in use with another Microsoft service, you can **Sign in** or **Create a new account instead**. If you choose to create a new account, continue to the next step.
@@ -75,7 +75,7 @@ To sign up for Power BI Pro:
 
 1. Enter the verification code, and then select **Verify**.
 
-1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the user name and domain. The name entered is verified to make sure it's available. The domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
+1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the pre-filled username and domain. Domain name is validated to ensure that it isn't a duplicate . Once validated, the domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
 
    :::image type="content" source="../media/business-identity-2022-10-19.png" alt-text="Screenshot showing the window for creating the onmicrosoft.com subdomain.":::
 
