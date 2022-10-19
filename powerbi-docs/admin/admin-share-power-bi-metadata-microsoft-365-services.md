@@ -7,7 +7,7 @@ ms.reviewer: 'jadelynray'
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/02/2022
+ms.date: 10/19/2022
 Customer intent: As a Power BI admin, I need to know what information is passed from Power BI and Microsoft Graph to Microsoft 365.
 LocalizationGroup: Admin
 ---
@@ -34,7 +34,7 @@ To enable sharing Power BI metadata with Microsoft 365 services, a Power BI admi
 
 ## Data residency
 
-If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in. For more information, see [Link to Ajane's article]
+If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in. For more information, see Where data is located when Power BI data is shared with your Microsoft 365 services.
 
 References:
 * [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
@@ -42,9 +42,11 @@ References:
 
 ## Data that will be shared with Microsoft 365
 
-|#|Property|What is Shared|Example|
+The table below lists the data that is shared with Microsoft 365 services.
+
+**Lines 1-15:  Artifact metadata that is mainly used when using the "search" mechanism to look for Power BI content within your Microsoft 365 services**
+||Property|What is Shared|Example|
 |---------|---------|---------|---------|
-|Lines 1 - 16 are artifact metadata which is mainly utilized when using the "Search" mechanism to search for Power BI content within your Microsoft 365 services |
 |1|TenantID|Azure AD Tenant Identifier|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
 |2|Artifact ID|Identifier for the Content Item (report, app, dashboard, scorecard etc.)|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
 |3|ACL|Access Control List with permissions and Azure AD User, Security Group and Distribution List Identifiers|{"accessType": "grant", "id" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee", "type" : "read" }|
@@ -60,8 +62,12 @@ References:
 |13|CreatedDate|Date the content was created|2011-06-30T23:32:46Z|
 |14|LastModifiedDate|Last modified date for the content|2011-06-30T23:32:46Z|
 |15|LastModifiedUser|Azure AD User Principal Name for the last person who modified the content|user1@griffin1.org|
+
+**Lines 16-20: User activity that is leveraged for showing Power BI content within your "Recents" and "Recommended" sections at Office.com**
+
+||Property|What is Shared|Example|
+|---------|---------|---------|---------|
 |16|LastRefreshDate|Last refresh date for the content|2011-06-30T23:32:46Z|
-|Lines 17 - 20 is user activity that is utilized for showing Power BI content within your "Recents" and "Recommended" within Office.com |
 |17|UserID|Azure AD User Principal Name for the user who acted on the content|user1@griffin1.org|
 |18|Signal Type|The type of action the user took on the content (Viewed, Modified)|Viewed|
 |19|ActorID|Users Azure AD ID for the user who acted on the content|aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee|
@@ -69,5 +75,7 @@ References:
 
 ## Next steps
 
-Got feedback? We'd love to hear it at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
+* [Share data with your Microsoft 365 services tenant settings](service-admin-portal-share-data-microsoft-365-services.md)
+* Where data is located when Power BI data is shared with your Microsoft 365 services
 
+Got feedback? We'd love to hear it at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
