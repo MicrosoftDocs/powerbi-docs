@@ -188,7 +188,7 @@ Example of the visual display containing the "feature blocked" banner notificati
 >[!div class="mx-imgBorder"]
 >![visual display containing the "feature blocked" banner notification.](media/licensing-api/feature-banner-upgrade.png)
 
-## Test the licensed visual
+## Test a licensed visual
 
 To test the licensed visual end to end before making it publicly available:
 
