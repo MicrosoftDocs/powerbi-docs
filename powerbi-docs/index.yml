@@ -308,7 +308,7 @@ conceptualContent:
         - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
           itemType: how-to-guide
           text: Troubleshoot refresh scenarios
-        - url: consumer/service-troubleshoot-subscribe.md
+        - url: consumer/service-troubleshoot-subscribe.yml
           itemType: how-to-guide
           text: Troubleshoot subscribing to reports and dashboards
       # footerLink (optional)
