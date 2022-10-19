@@ -38,7 +38,7 @@ The *embed for your customers* solution allows you to build an app that uses non
 
 The *embed for your organization* solution allows you to build an app that requires signing in using Power BI credentials. Once signed in users can only consume embedded content, they have access to on Power BI service. This solution is aimed at large organizations that are building an app for internal users. For a tutorial, see [Embed Power BI content into an application for your organization](./embed-sample-for-your-organization.md).
 
-## Comparing the solutions
+## Comparison of the *embed for your customers* vs *embed for your organization* solutions
 
 The following table provides a comparison between the two Power BI embedded analytics solutions.
 
@@ -63,7 +63,7 @@ For development testing, you can use free embed trial tokens with a Pro license.
 
 There are two types of Power BI embedded analytics offerings. Each offer includes a different type of SKU that you use to buy a Power BI [capacity](./embedded-capacity.md):
 
-* [*Power BI Embedded*](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that includes A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
+* [Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/#overview) is an Azure offer that includes A SKUs. *Power BI Embedded* is associated with the [*embed for your customers*](#embed-for-your-customers) solution.
 
 * [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/) is a Microsoft Office offer that includes P or EM SKUs.
 
