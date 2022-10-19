@@ -17,13 +17,13 @@ With **Analyze in Excel**, you can bring Power BI datasets into Excel, view, and
 
 ## Connect to Power BI data with Analyze in Excel
 
-In the Power BI service, go to the workspace that contains the dataset or report you want to analyze in Excel and use any of these options:
+In the Power BI service, go to the workspace that contains the dataset or report you want to analyze in Excel and use any of the following options:
 
 - Select **More options (...)** next to the dataset or report name and select **Analyze in Excel**.
 
     ![Select More options next to the dataset or report name.](media/service-analyze-in-excel/start-powerbi-analyze-in-excel-more-options.png)
     
-- Open the report and select **Export** > **Analyze in Excel**.
+- Open the report and select **Export** > **Analyze in Excel** from the top ribbon.
 
     :::image type="content" source="media/service-analyze-in-excel/start-powerbi-export-analyze-excel.png" alt-text="Start from a report, select Export, then Analyze in Excel.":::
 
@@ -83,8 +83,8 @@ Refresh for external connections isn't supported in Excel Online. Since users ne
 - Some organizations may have Group Policy rules that prevent installing the required updates to Excel. If you can't install the updates, check with your administrator.
 - Row-level security (RLS) is supported for Analyze in Excel. RLS is enforced at the data-model level, and is always applied to all users accessing data in the report. Read more about [row-level security](../enterprise/service-admin-rls.md).
 - There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. See [Troubleshoot Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md) for solutions to common issues.
-- Only Power BI datasets that use Import mode will preserve hierarchies in Analyze in Excel workbooks. Power BI datasets built on DirectQuery or composite models will not have their hierarchies retained when using Analyze in Excel.
-- Analyze in Excel doesn't support specifying a locale by modifying the connection string _after_ a workbook has been generated.
+- Only Power BI datasets that use Import mode will preserve hierarchies in Analyze in Excel workbooks. Power BI datasets built on DirectQuery or composite models will not retain their hierarchies when using Analyze in Excel.
+- Analyze in Excel doesn't support specifying a locale by modifying the connection string after workbook has been generated.
 - You may see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. For more information, see [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 - Guest users can't analyze Power BI data in Excel for datasets sent from a tenant different from the one hosting the datasets. 
 - Analyzing Power BI data in Excel is a Power BI service feature. You can't analyze Power BI data in Excel from Power BI Report Server or Power BI Embedded.
