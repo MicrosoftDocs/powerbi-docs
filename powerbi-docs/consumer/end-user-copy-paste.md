@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual and paste it into any other application that supports pasting. Copy an important visual and paste it into an email message, Word, PowerPoint, another Power BI report, and many more applications. 
 
-:::image type="content" source="media/end-user-copy-paste/power-bi-paste-copy.png" alt-text="Copy a visual to your clipboard.":::
+:::image type="content" source="media/end-user-copy-paste/power-bi-paste-copy.png" alt-text="Screenshot that shows how to copy a visual to your clipboard.":::
 
 When you copy a static image of a visual, you get a copy of the visual along with the metadata. This includes:
 * link back to the Power BI report or dashboard
@@ -37,29 +37,29 @@ The process is almost identical for copying a visual from a dashboard or from a 
 
     - On a report page, from the upper right corner of the visual, select the icon for **Copy as image with caption**. 
 
-        :::image type="content" source="media/end-user-copy-paste/power-bi-copy-icon.png" alt-text="Copy visual as image icon displayed":::
+        :::image type="content" source="media/end-user-copy-paste/power-bi-copy-icon.png" alt-text="Screenshot that shows the copy visual as image icon displayed.":::
     
 3. If there is a data sensitivity label applied to the report that contains the visual, you'll receive a warning. For more information, see [Data that has been labeled as confidential or sensitive](#data-that-has-been-labeled-as-confidential-or-sensitive), below. 
 
-    :::image type="content" source="media/end-user-copy-paste/power-bi-sensitive-dashboard.png" alt-text="A warning message about sensitive data.":::
+    :::image type="content" source="media/end-user-copy-paste/power-bi-sensitive-dashboard.png" alt-text="Screenshot that shows a warning message about sensitive data.":::
 
 4. When the **Image with caption copied** dialog appears, select **Copy**. 
 
-    :::image type="content" source="media/end-user-copy-paste/power-bi-image-copied.png" alt-text="Image of the Image with caption copied dialog.":::
+    :::image type="content" source="media/end-user-copy-paste/power-bi-image-copied.png" alt-text="Screenshot that shows the image with caption copied dialog.":::
 
 5. After your visual is copied, paste it into another application using **Ctrl + V** or **right-click** > **Paste**. In the screenshot below, we've pasted the visual into Microsoft Word. 
 
-    :::image type="content" source="media/end-user-copy-paste/power-bi-paste-into-word.png" alt-text="visual pasted into Microsoft Word"::: 
+    :::image type="content" source="media/end-user-copy-paste/power-bi-paste-into-word.png" alt-text="Screenshot that shows the visual pasted into Microsoft Word."::: 
 
 ## Data that has been labeled as confidential or sensitive
 
 If there is a data sensitivity label applied to the report containing the visual, you'll receive a warning when you select the copy icon.  
 
-![sensitive data warning](media//end-user-copy-paste/power-bi-sensitive.png)
+![Screenshot that shows the sensitive data warning.](media//end-user-copy-paste/power-bi-sensitive.png)
 
 And, a sensitivity label will be added to the metadata below the pasted visual. 
 
-![visual with confidential info label](media//end-user-copy-paste/power-bi-confidential.png)
+![Screenshot that shows the visual with confidential info label.](media//end-user-copy-paste/power-bi-confidential.png)
 
 
 
