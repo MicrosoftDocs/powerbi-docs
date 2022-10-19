@@ -39,7 +39,7 @@ Do videos fit your learning style better? Power BI has two sets you'll be intere
 The training options available to you are nearly endless, from in-person lab training to short videos.
 
 - [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-- [Free Power BI webinars](webinars.md), live and on-demand, on the Power BI site.
+- [Free Power BI webinars](../fundamentals/webinars.md), live and on-demand, on the Power BI site.
 
 You can find additional options online, such as:
 
@@ -62,4 +62,4 @@ If all else fails, the final tip is to observe the system. Often, people ask wha
 Try opening the Power BI service and navigating to **Home**. Scroll down for links to Getting Started resources.
 
 ## Next steps
-* [What is Power BI?](power-bi-overview.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
