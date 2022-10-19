@@ -73,9 +73,11 @@ To sign up for Power BI Pro:
 
 1. Select whether you want to receive a verification code by text or call. Enter a phone number where the verification code will be sent. Select **Send verification code**.
 
-1. Enter the verification code, select **Verify**.
+1. Enter the verification code, and then select **Verify**.
 
 1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the user name and domain. The name entered is verified to make sure it's available. The domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
+
+   :::image type="content" source="../media/business-identity-2022-10-19.png" alt-text="Screenshot showing the how you'll sign in window.":::
 
 Review the confirmation details. The account you created is now the global admin of a new Power BI Pro trial tenant. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) to add more users, set up a custom domain, purchase more services, and manage your Power BI subscription.
 
