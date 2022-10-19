@@ -108,6 +108,15 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > [!NOTE]
     > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
 
+### Save a copy of a report
+
+You can allow your app users, who have build permissions, to save copies of reports to their workspace. Once saved, the app users can customize the reports copies to meet their needs. 
+To enable save a copy feature for your app users, you first need to click the **Allow users to make a copy of the reports in the app** checkbox under **Setup** tab.
+
+    :::image type="content" source="media/service-create-distribute-apps/save-copy.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
+    
+Once clicked, app users who have build permissions will be able to save a copy of a report from the app consumer view. You can also grant build permissions to your app users through app using **Advanced** option under **Manager audience access** pane.  
+
 ### Publish the app
 
 Now that you've decided on the audiences and the content for each audience, it's time to publish your app. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
@@ -234,8 +243,6 @@ Things to keep in mind about publishing apps:
 * When you select a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
 * The support site URL is shown in the item information card.
 * By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
-* As of now we have disabled “Save a copy” feature for the preview of the multiple audience feature. We are working on providing a better offering. 
-* Currently, workspace Contributors can add or delete content in the app, and can change the visibility of the content for the default audience. They can't yet switch between different audience groups in the Audience tab. As a workaround, workspace Admins and Members can update the visibility of the content added in other audience groups. This is a temporary limitation.
 * Currently, having multiple audiences isn't supported in Power BI Mobile apps and deployment pipelines. This is a temporary limitation.
 * Apps can have a maximum of 200 dashboards. 
 
