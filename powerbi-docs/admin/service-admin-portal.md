@@ -6,7 +6,7 @@ ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.custom: admin-portal,contperf-fy22q3s
+ms.custom: admin-portal,contperf-fy22q3
 ms.topic: how-to
 ms.date: 10/19/2022
 LocalizationGroup: Administration
@@ -41,7 +41,7 @@ The many controls in the admin portal are listed in the table below with links t
 
 ## How to get to the admin portal
 
-You have to be a global admin or Power BI service admin to access the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, follow these steps:
+You must be a global admin or Power BI service admin to access the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, follow these steps:
 
 1. Sign in to [Power BI](https://app.powerbi.com) using your admin account credentials.
 
