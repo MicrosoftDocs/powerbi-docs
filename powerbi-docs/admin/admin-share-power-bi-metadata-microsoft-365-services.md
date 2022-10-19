@@ -45,6 +45,7 @@ References:
 The table below lists the data that is shared with Microsoft 365 services.
 
 **Lines 1-15:  Artifact metadata that is mainly used when using the "search" mechanism to look for Power BI content within your Microsoft 365 services**
+
 ||Property|What is Shared|Example|
 |---------|---------|---------|---------|
 |1|TenantID|Azure AD Tenant Identifier|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
