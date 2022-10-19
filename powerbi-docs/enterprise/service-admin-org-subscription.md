@@ -20,7 +20,7 @@ Users in your organization can sign up for Power BI on the Power BI website. Whe
 
 ## Sign up through Microsoft 365
 
-Global and billing administrators can get a Power BI subscription for for their organization. For more information, see [Who can purchase and assign licenses?](service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses)
+Global and billing administrators can get a Power BI subscription for their organization. For more information, see [Who can purchase and assign licenses?](service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses)
 
 > [!NOTE]
 >
@@ -54,7 +54,7 @@ For more information about how your organization can get and use the Power BI se
 
 If you're not a Microsoft 365 subscriber, you can [Sign up for a new Microsoft 365 trial](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md), and then add Power BI.
 
-To sign up for a Power BI subscription, you need a work or school email address. Email addresses provided by consumer email services or telecommunications providers are not supported. If you don't have a work or school email address, you can create one during sign up.
+To sign up for a Power BI subscription, you need a work or school email address. Email addresses provided by consumer email services or telecommunications providers aren't supported. If you don't have a work or school email address, you can create one during sign-up.
 
 To sign up for Power BI Pro:
 
@@ -69,7 +69,7 @@ To sign up for Power BI Pro:
 
 1. Complete the **Tell us about yourself** form and select **Next**. The country or region selected determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for most of your users.
 
-   :::image type="content" source="../media/tellus-powerbi-0222-10-19.png" alt-text="Screenshot showing the tell us about yourself window.":::
+   :::image type="content" source="../media/tellus-powerbi-2022-10-19.png" alt-text="Screenshot showing the tell us about yourself window.":::
 
 1. Select whether you want to receive a verification code by text or call. Enter a phone number where the verification code will be sent. Select **Send verification code**.
 
