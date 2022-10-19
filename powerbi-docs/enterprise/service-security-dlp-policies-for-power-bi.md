@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 09/22/2022
+ms.date: 10/19/2022
 LocalizationGroup: Data from files
 ---
 
@@ -20,7 +20,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 
 * DLP policies for Power BI are defined in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
 * DLP policies apply to workspaces. Only workspaces hosted in [Premium Gen2 capacities](./service-premium-gen2-what-is.md) are supported.
-* DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not yet supported.
+* DLP dataset evaluation workloads impact capacity. See [CPU metering for DLP policy evaluation](https://powerbi.microsoft.com/blog/updates-to-microsoft-purview-data-loss-prevention-policies-in-power-bi/) for more information.
 * Workspaces are supported, provided that they're hosted in Premium Gen2 capacities.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.

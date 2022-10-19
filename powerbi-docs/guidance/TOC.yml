@@ -48,6 +48,8 @@
         href: composite-model-guidance.md   
       - name: "Row-level security (RLS) guidance"
         href: rls-guidance.md
+      - name: "Power Platform modeling guidance"
+        href: powerbi-modeling-guidance-for-power-platform.md
       - name: "Migrate AAS models to Power BI Premium"
         href: migrate-azure-analysis-services-to-powerbi-premium.md
       - name: "Migrate AAS models to Power BI Premium scenarios"
