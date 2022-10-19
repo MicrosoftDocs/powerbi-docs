@@ -75,7 +75,7 @@ To sign up for Power BI Pro:
 
 1. Enter the verification code, and then select **Verify**.
 
-1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the pre-filled username and domain. Domain name is validated to ensure that it isn't a duplicate . Once validated, the domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
+1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the pre-filled username and domain. Domain name is validated to ensure that it isn't a duplicate. Once validated, the domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
 
    :::image type="content" source="../media/business-identity-2022-10-19.png" alt-text="Screenshot showing the window for creating the onmicrosoft.com subdomain.":::
 
