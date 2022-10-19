@@ -305,15 +305,29 @@ conceptualContent:
         - url: troubleshoot/known-issues/power-bi-known-issues.md
           itemType: overview
           text: Known issues for Power BI features
-        - url: admin/service-interruption-notifications.md
-          itemType: concept
-          text: Service interruption notifications
-        - url: admin/service-support-options.md
-          itemType: how-to-guide
-          text:  Power BI Pro and Power BI Premium support options
+        - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
+          text: Troubleshoot refresh scenarios
+        - url: consumer/service-troubleshoot-subscribe.md
+          text: Troubleshoot subscribing to reports and dashboards
       # footerLink (optional)
       footerLink:
         url: troubleshoot/index.yml
+        text: See more        
+    # Card
+    - title: Support
+      links:
+        - url: support/service-support-options.md
+          itemType: how-to-guide
+          text: Power BI Pro and Power BI Premium support options
+        - url: support/service-admin-health.md
+          itemType: how-to-guide
+          text: Track Power BI service health in Microsoft 365
+        - url: support/service-admin-region-move.md
+          itemType: how-to-guide
+          text:  Move Power BI to another region
+      # footerLink (optional)
+      footerLink:
+        url: support/index.yml
         text: See more        
 
 # additionalContent section (optional)

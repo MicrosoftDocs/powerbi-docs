@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 10/28/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -35,17 +35,17 @@ Your Power BI admin also needs to enable subscriptions in your tenant. If you’
 
 
 ## Subscribe to a report or dashboard
-Whether you're subscribing to a dashboard or to a report page, the process is similar. The same button allows you to subscribe to the Power BI service dashboards and reports.
+Whether you're subscribing to a dashboard or to a report page, the process is similar. The same button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few additional field options, so we'll use a report for our example. 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscriber.png" alt-text="select the Subscribe icon":::
 
-Subscribing to a paginated report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports) in this article.
+Subscribing to a *paginated* report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports) in this article.
 
 1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
-1. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard.
+1. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
-   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-reports.png" alt-text="Subscribe window.":::
+   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-state.png" alt-text="Subscribe window.":::
     
 
 1.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
@@ -53,6 +53,25 @@ Subscribing to a paginated report is slightly different, as outlined in [Subscri
 1. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
 1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 7 below.) 
+
+    > [!TIP]
+    > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
+
+1. Select a **Report state**. **Default** ignores all changes you may have made to the report, and subscribes you to the report as published by the author. **Current state** subscribes you to the report including all changes you've made to the report.  This includes:
+
+    - filters (filter pane or URL filters)
+    - slicers
+    - personalized visuals
+    - cross-filtering or cross-highlighting
+    - drill down or drill up
+    - bookmarks
+    - spotlights
+    - focus mode
+
+    If you are the author of the report, **Current state** is a great way to create individualized subscriptions for recipients. First, customize your report based on conditions such as country/region, team/department, and category. Then, subscribe colleagues to the customized report views.
+
+    > [!NOTE]
+    > The **Report state** field is not available for dashboards or paginated reports. 
 
 1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
@@ -103,7 +122,7 @@ When creating a subscription, you can add other email addresses in the same doma
 
 You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity.  
 
-- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
+- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select  **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
 - Premium Per User workspaces do not qualify as Premium capacity workspaces. 
 
@@ -235,7 +254,11 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
   
 - If you aren't able to use the subscription feature, contact your system administrator or IT help desk. Your organization may have disabled this feature or a maximum subscriber limit may have been reached.
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited. 
-- For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), you can create subscriptions for yourself and others. Those subscriptions will run using your security context.
+
+**Row-level security (RLS)**
+- For Power BI reports, dashboards, or paginated reports that use a dataset with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI will warn you that the data contains RLS, but customers often scroll past the warning message. 
+
+  The static image sent in the subscription email will display data ***based on your permissions***. For this reason, when creating subscriptions, be very careful to ensure that confidential information is not included in the static image. Other than that static image, the report or dashboard itself will open (or not) and display data based on the user's permissions.  
 
 **Power BI reports**  
 

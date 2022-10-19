@@ -26,18 +26,8 @@
       href: organizational-visuals.md           
     - name: Service URL reference
       href: power-bi-allow-list-urls.md     
-    - name: Service interruption notifications
-      href: service-interruption-notifications.md    
-    - name: Capture diagnostic information from the Power BI service
-      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
-    - name: Power BI support options
-      href: service-support-options.md
     - name: Find where data is stored
       href: service-admin-where-is-my-tenant-located.md 
-    - name: Move between regions
-      href: service-admin-region-move.md           
-    - name: Track service health
-      href: service-admin-health.md
     - name: Find users that have signed in
       href: service-admin-access-usage.md
     - name: Track user activities
