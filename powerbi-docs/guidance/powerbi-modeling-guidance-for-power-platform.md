@@ -34,7 +34,7 @@ Connecting Power BI to Dataverse involves creating a Power BI data model. You ca
 - **Create a DirectQuery connection by using the Dataverse connector:** This method is an alternative to importing data. A DirectQuery model consists only of metadata defining the model structure. When a user opens a report, Power BI sends native queries to Dataverse to retrieve data. Consider creating a DirectQuery model when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
 
 > [!IMPORTANT]
-> While a DirectQuery model can be a good alternative when you need near real-time reporting or enforcement of Dataverse security reports, it can result in slow performance.
+> While a DirectQuery model can be a good alternative when you need near real-time reporting or enforcement of Dataverse security in a report, it can result in slow performance for that report.
 >
 > You can learn about [considerations for DirectQuery](#considerations-for-directquery) later in this article.
 
