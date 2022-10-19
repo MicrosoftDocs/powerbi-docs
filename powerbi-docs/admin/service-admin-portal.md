@@ -1,26 +1,26 @@
 ---
-title: About the Admin portal
-description: Learn how toconfigure org-wide settings for Power BI.
+title: About the admin portal
+description: Learn how to configure org-wide settings for Power BI.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.custom: admin-portal,contperf-fy22q3
+ms.custom: admin-portal,contperf-fy22q3s
 ms.topic: how-to
-ms.date: 05/09/2022
+ms.date: 10/19/2022
 LocalizationGroup: Administration
 ---
 
-# About the Admin portal
+# About the admin portal
 
-The admin portal includes settings that govern Power BI for all users in your organization. For example, in the admin portal you can view usage metrics, access  the Microsoft 365 admin center, and control how users interact with Power BI.
+The admin portal includes settings that govern Power BI for all users in your organization. For example, you can view usage metrics, access the Microsoft 365 admin center, and control how users interact with Power BI.
 
-The full admin portal can be accessed by global admins and users who have the Power BI Administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
+The full admin portal can be accessed by global admins and users who have the Power BI administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## What can I do in the admin portal
 
-There are a number of controls in the Admin portal. They are listed in the table below, which provides links relevant documentation for each one.
+The many controls in the admin portal are listed in the table below with links to relevant documentation for each one.
 
 | Feature | Description  |
 | :---    | :---         |
