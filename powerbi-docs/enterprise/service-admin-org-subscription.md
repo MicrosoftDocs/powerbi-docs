@@ -14,13 +14,13 @@ LocalizationGroup: Administration
 
 # Get a Power BI service subscription for your organization
 
-Administrators can sign up for the Power BI service on the **Purchase services** page of the Microsoft 365 admin center. After signing up for Power BI, administrators can assign licenses to users who have access.
+Administrators can sign up for the Power BI service from the **Purchase services** page of the Microsoft 365 admin center. As an administrator, after signing up for Power BI you can assign licenses to users in your organization.
 
-Users in your organization can sign up for Power BI on the Power BI website. When a user in your organization signs up for Power BI, they're assigned a Power BI license automatically. To turn off these self-service capabilities, follow the steps to [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+Users in your organization can sign up for Power BI on the Power BI website. When a user signs up for Power BI, they automatically receive a Power BI license. Administrators can turn off these self-service capabilities by following [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
 
 ## Sign up through Microsoft 365
 
-If you're a global admin or billing admin, you can get a Power BI subscription for your organization. For more information, see [Who can purchase and assign licenses?](service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses).
+Global and billing administrators can get a Power BI subscription for for their organization. For more information, see [Who can purchase and assign licenses?](service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses)
 
 > [!NOTE]
 >
@@ -30,7 +30,7 @@ If you're a global admin or billing admin, you can get a Power BI subscription f
 
 To purchase Power BI Pro licenses on the Microsoft 365 admin center:
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
+1. From your administrator account, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 1. On the navigation menu, select **Billing** > **Purchase services**.
   
@@ -38,52 +38,46 @@ To purchase Power BI Pro licenses on the Microsoft 365 admin center:
 
 1. Search for **Power BI** or select **Power BI** from the **View by category** section.
 
-1. Select **Details** to purchase an offer or select offers to compare.
+1. Select multiple offers to compare or, select **Details** to purchase an offer.
 
-1. Under **Select license quantity**, enter the number of licenses you want to buy, and then select a billing frequency. Select **Buy**.  If you haven't previously used it, you can start a Power BI Pro free trial subscription. It includes 25 licenses and expires in one month.
+1. Under **Select license quantity**, select the number of licenses you want to buy, and then select a billing frequency. Select **Buy**.  If you haven't previously used it, you can start a **Power BI (free)** trial subscription. The free trial subscription includes 25 user licenses and expires after one month. You can only get one free trial.
 
    :::image type="content" source="media/service-admin-org-subscription/power-bi-pro-purchase.png" alt-text="Screenshot showing example purchase options for Power B I Pro.":::
 
 1. Complete the information on the checkout page, and then select **Place order**.
 
-1. To verify your purchase, go to **Billing** > **Your products** and look for  **Power BI Pro**.
+1. To verify your purchase, go to **Billing** > **Your products** and scroll to  **Power BI Pro**.
 
-To read more about how your organization can control and acquire the Power BI service, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
+For more information about how your organization can get and use the Power BI service, see [Power BI in your organization](/microsoft-365/admin/misc/power-bi-in-your-organization).
 
 ## More ways to get Power BI for your organization
 
-If you're not a Microsoft 365 subscriber, get a Power BI Pro trial for your organization. You can [Sign up for a new Microsoft 365 trial](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md), and then add Power BI.
+If you're not a Microsoft 365 subscriber, you can [Sign up for a new Microsoft 365 trial](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md), and then add Power BI.
 
-You'll need a work or school account to sign up for a Power BI subscription. We don't support email addresses provided by consumer email services or telecommunications providers. If you don't have a work or school account, you can create one when you sign up.
+To sign up for a Power BI subscription, you need a work or school email address. Email addresses provided by consumer email services or telecommunications providers are not supported. If you don't have a work or school email address, you can create one during sign up.
 
-Sign up for Power BI Pro:
+To sign up for Power BI Pro:
 
 1. Go to [Power BI Pro signup](https://signup.microsoft.com/create-account/signup?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&ali=1&products=d59682f3-3e3b-4686-9c00-7c7c1c736085) and enter an email address. Select **Next**.
 
-1. Enter your work or school email address, then select **Next**. It's okay to enter an email address that isn't a work or school email address. We'll get a new account set up for you when you create your business identity.
+     :::image type="content" source="../media/getstarted-powerbi-email-2022-10-19.png" alt-text="Screenshot showing the get started window.":::
 
-   ![Power BI Pro signup](media/service-admin-org-subscription/power-bi-pro-admins.png)
-
-1. We run a quick check to see if you need to create a new account. Select **Set up account** to continue.
+1. The email address entered is evaluated, select **Set up account** or **Change my email** to enter a different address.
 
    > [!NOTE]
    >If your email address is already in use with another Microsoft service, you can **Sign in** or **Create a new account instead**. If you choose to create a new account, continue to the next step.
 
-1. Complete the **Tell us about yourself** section of the form. Select the correct country or region, your selection determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for most of your users.
+1. Complete the **Tell us about yourself** form and select **Next**. The country or region selected determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for most of your users.
 
-   ![Tell us about yourself](media/service-admin-org-subscription/tell-about-yourself.png)
+   :::image type="content" source="../media/tellus-powerbi-0222-10-19.png" alt-text="Screenshot showing the tell us about yourself window.":::
 
-1. Select **Next**. We need to send a verification code to confirm your identity. Provide a phone number where we can send a text or call you. Then, select **Send Verification Code**.
+1. Select whether you want to receive a verification code by text or call. Enter a phone number where the verification code will be sent. Select **Send verification code**.
 
-1. Enter the verification code, continue to **Create your business identity**.
+1. Enter the verification code, select **Verify**.
 
-   ![Create your business identity](media/service-admin-org-subscription/business-identity.png)
+1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the user name and domain. The name entered is verified to make sure it's available. The domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
 
-    Enter a short name for your business, and we'll check to make sure it's available. We use this short name to create your organization name in the datacenter as a subdomain of `onmicrosoft.com`. You can add your own business domain later. If the short name you want is taken, someone with a similar business name chose the same short name, but you can try a different variation. Select **Next**.
-
-1. Create your user ID and password to sign in to your account. Select **Sign up**, and you're all set.
-
-The account you created is now the global admin of a new Power BI Pro trial tenant. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) to add more users, set up a custom domain, purchase more services, and manage your Power BI subscription.
+Review the confirmation details. The account you created is now the global admin of a new Power BI Pro trial tenant. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) to add more users, set up a custom domain, purchase more services, and manage your Power BI subscription.
 
 ## Next steps
 
