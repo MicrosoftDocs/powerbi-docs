@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/15/2022
+ms.date: 10/20/2022
 ---
 
 # Power BI modeling guidance for Power Platform
