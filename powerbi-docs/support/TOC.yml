@@ -21,4 +21,6 @@
       href: service-admin-health.md 
     - name: Learn about how to receive email notifications when there is a Power BI service disruption or outage
       href: service-interruption-notifications.md
+    - name: Help and support settings
+      href: service-admin-portal-help-support.md
  

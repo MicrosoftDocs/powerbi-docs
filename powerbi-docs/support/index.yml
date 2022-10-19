@@ -22,9 +22,9 @@ landingContent:
 # Start card title with a verb
 
   # Card (optional)
-  - title: Contact Support (for customers with paid support plans)
-    linkLists:how-to-guide
-      - linkListType: 
+  - title: Contact Support
+    linkLists: 
+      - linkListType: how-to-guide
         links:
           - text: Contacting Support for customers with paid support plans
             url: service-support-options.md
@@ -34,6 +34,8 @@ landingContent:
             url: service-admin-region-move.md
           - text: Sign up for service interruption notifications
             url: service-interruption-notifications.md
+          - text: Help and support settings
+            url: service-admin-portal-help-support.md
 
   # Card (optional)
   - title: Prepare to contact Support
@@ -50,3 +52,4 @@ landingContent:
             url: https://community.powerbi.com
           - text: View current and historical service health in the Microsoft 365 admin center
             url:  service-admin-health.md 
+            

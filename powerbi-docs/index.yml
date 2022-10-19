@@ -305,9 +305,9 @@ conceptualContent:
         - url: troubleshoot/known-issues/power-bi-known-issues.md
           itemType: overview
           text: Known issues for Power BI features
-        - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
+        - url: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
           text: Troubleshoot refresh scenarios
-        - url: consumer/service-troubleshoot-subscribe.md
+        - url: ../consumer/service-troubleshoot-subscribe.md
           text: Troubleshoot subscribing to reports and dashboards
       # footerLink (optional)
       footerLink:
