@@ -190,7 +190,7 @@ Example of the visual display containing the "feature blocked" banner notificati
 
 ## Test a licensed visual
 
-To test the licensed visual end to end before making it publicly available:
+To test a licensed visual end to end before making it publicly available:
 
 * If you're creating a brand new offer, add the visual as a private plan for a test customer account. The offer will only be visible to the this test account for purchasing.
 Use this account to validate the offer before making it public.
