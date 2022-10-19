@@ -26,7 +26,7 @@ Using Power BI embedded analytics you can:
 
 [Secure embed](../../collaborate-share/service-embed-secure.md) is the simplest no-code way to embed a report into any portal that accepts a URL or iFrame. The viewer of the report must be properly licensed and can't interact with the report. Secure embed is available in the Power BI service.
 
-For more advanced solutions that allow you to build an interactive app for your users, use one of the Power BI embedded analytics solutions described in this article.
+For more advanced solutions that allow you to build an interactive app for your users, use one of the [Power BI embedded analytics solutions](#what-are-the-power-bi-embedded-analytics-solutions) described in this article.
 
 ## What are the Power BI embedded analytics solutions?
 
