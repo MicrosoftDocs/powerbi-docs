@@ -115,7 +115,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
 You can create and publish *apps* from a workspace. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from workspaces](service-create-distribute-apps.md).
 
-By default, only workspace Admins and Members can publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in workspaces](service-roles-new-workspaces.md).
+By default, only workspace Admins and Members can create, publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in workspaces](service-roles-new-workspaces.md).
 
 1. Access the **Allow contributors to update the app** setting in one of two ways:
 
@@ -129,11 +129,13 @@ By default, only workspace Admins and Members can publish and update the app for
 When enabled, contributors can:
 * Update app metadata like name, icon, description, support site, and color.
 * Add or remove items included in the app, like adding reports or datasets.
-* Change the app navigation or default item the app opens on.
+* Changing the visibility of the items for all the audience groups in the audience tab.
 
 However, contributors can't:
-* Publish the app for the first time
-* Change who has permission to the app
+* Create the app or Publish the app for the first time.
+* Add users to the app or change who has permission to the app.
+* Enable or disable automatic installation of app for app users.
+* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups. 
 
 ## Premium capacity settings
 
