@@ -15,11 +15,11 @@ ms.custom: template-how-to; subject-moving-resources
 Your default data region is determined by the location selected during sign-up. However, this region may not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact support to manage the migration for you.
 
 > [!IMPORTANT]
->  This article describes how to request a move between regions and keep Power BI data. Be sure you're aware of what can’t be moved and steps you have to do before and after the region move. Moving between regions is considered a tenant migration. You can request a different process to move your tenant to another region if data loss and reconfiguration is acceptable. To determine your current data region, follow the steps in [Find where data is stored](service-admin-where-is-my-tenant-located.md).
+>  This article describes how to request a move between regions and keep Power BI data. Be sure you're aware of what can’t be moved and steps you have to do before and after the region move. Moving between regions is considered a tenant migration. You can request a different process to move your tenant to another region if data loss and reconfiguration is acceptable. To determine your current data region, follow the steps in [Find where data is stored](../admin/service-admin-where-is-my-tenant-located.md).
 
 ## Prerequisites
 
-- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administrator roles](service-admin-role.md). We can't help identify your global admin for you. Look for global administrator role holders in Microsoft 365 or Azure Active Directory or ask your help desk.
+- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administrator roles](../admin/service-admin-role.md). We can't help identify your global admin for you. Look for global administrator role holders in Microsoft 365 or Azure Active Directory or ask your help desk.
 - We must receive written approval confirming your awareness and agreement of the effect of the tenant migration on your organization.
 - Provide a point of contact for after business hours during the migration.
 
@@ -38,9 +38,9 @@ The migration process moves all tenant data to the new region. The GUID assigned
 - After migration Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
 - Push datasets might not be migrated. If they can't be migrated, you'll need to delete the datasets.
 - You have to reconfigure data gateways after migration. To learn more about this step, read [Migrate, restore, or take over an on-premises data gateway](/data-integration/gateway/service-gateway-migrate).
-- Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration. For more information, read [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) and [Manage data storage in Power BI workspaces](./service-admin-manage-your-data-storage-in-power-bi.md).
+- Dataset and workspace storage modes shouldn't be changed one day before the migration. Changing the storage mode before the migration can leave the datasets unusable after the migration. For more information, read [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) and [Manage data storage in Power BI workspaces](../admin/service-admin-manage-your-data-storage-in-power-bi.md).
 - Some usage data collected before migration is unavailable after migration. Usage data in the sources listed below will be lost:
-  - [Power BI Activity Log](service-admin-auditing.md)
+  - [Power BI Activity Log](../admin/service-admin-auditing.md)
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
   - [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
   - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
@@ -53,7 +53,7 @@ Our support team will work with you to verify that the following steps are done 
 
 - Gateways should be deleted in the target region to avoid conflicts during migration.
 
-- To keep user activity logs, follow the steps in [Track user activities in Power BI](service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
+- To keep user activity logs, follow the steps in [Track user activities in Power BI](../admin/service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 
 ## Request a region move
 
@@ -75,7 +75,7 @@ To find out the best way to contact support, read [Power BI support options](ser
    |Information needed | How to find the information |
    |---|---|
    |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)|
-   |Current region | [Find where data is stored](service-admin-where-is-my-tenant-located.md)|
+   |Current region | [Find where data is stored](../admin/service-admin-where-is-my-tenant-located.md)|
    |Proposed region | [International availability of Microsoft Power Platform](/power-platform/availability)|
    |Proposed date and time for migration |Give us three options in UTC time. The proposed dates should be at least two weeks later than when you submit the request.|
    |Contact available after during off-business hours|Name, phone number, and email address|
@@ -106,7 +106,7 @@ Do the following steps to recreate the configuration of the original region:
 1. Excel workbooks that use the Analyze in Excel feature may fail to refresh. You may need to update the connection string or redownload the ODC connection for that dataset. Follow the steps in [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) if necessary.
 1. Links to Power BI that are embedded in content might fail to connect when migration is complete. For example, an embedded link in SharePoint may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. To fix this issue, follow the procedure in [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md).
 
-To verify that the default region for data storage has been moved, follow the steps in [Find where data is stored](service-admin-where-is-my-tenant-located.md).
+To verify that the default region for data storage has been moved, follow the steps in [Find where data is stored](../admin/service-admin-where-is-my-tenant-located.md).
 
 ## Frequently asked questions
 
@@ -144,7 +144,7 @@ Yes, you can request migration during weekdays or public holidays.
 
 ### How do I verify my data is now stored in the requested region? 
 
-Follow the steps in [Find where data is stored](service-admin-where-is-my-tenant-located.md). You should see the new region next to **Your data is stored in**.
+Follow the steps in [Find where data is stored](../admin/service-admin-where-is-my-tenant-located.md). You should see the new region next to **Your data is stored in**.
 
 ### Can I migrate or merge my Power BI tenant into a different tenant (for example, because of a company merger)?
 

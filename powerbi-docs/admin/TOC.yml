@@ -9,8 +9,6 @@
       href: service-admin-administering-power-bi-in-your-organization.md
     - name: Administration role in Microsoft 365
       href: service-admin-role.md      
-    - name: Can't sign in?
-      href: power-bi-cannot-sign-in.md
     - name: How to use the same account login for Power BI and Azure
       href: service-admin-how-to-use-the-same-account-as-azure.md 
     - name: Frequently asked questions (FAQ)
@@ -24,22 +22,10 @@
       href: organizational-visuals.md           
     - name: Service URL reference
       href: power-bi-allow-list-urls.md     
-    - name: Service interruption notifications
-      href: service-interruption-notifications.md    
-    - name: Capture diagnostic information from the Power BI service
-      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
-    - name: Power BI support options
-      href: service-support-options.md
     - name: Share metadata with Microsoft 365 services
-      href: admin-share-power-bi-metadata-microsoft-365-services.md 
-    - name: Move between regions
-      href: service-admin-region-move.md           
+      href: admin-share-power-bi-metadata-microsoft-365-services.md
     - name: Find where data is stored
       href: service-admin-where-is-my-tenant-located.md 
-    - name: Move between regions
-      href: service-admin-region-move.md           
-    - name: Track service health
-      href: service-admin-health.md
     - name: Find users that have signed in
       href: service-admin-access-usage.md
     - name: Track user activities
@@ -85,8 +71,6 @@
     - name: Tenant settings list
       expanded: false
       items:
-      - name: Help and support settings
-        href: service-admin-portal-help-support.md
       - name: Workspace settings
         href: service-admin-portal-workspace.md       
       - name: Information protection
