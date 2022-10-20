@@ -43,6 +43,8 @@ For more information, see this [blog post](/archive/blogs/cansql/relationships-i
 
 Alternatively, in the **Model view** diagram layouts, you can drag and drop a column from one table to a column in another table to create a relationship.
 
+## Edit a relationship
+
 There are two ways to edit a relationship in Power BI.
 
 The first method to edit a relationship is using the **Editing relationships in the properties** pane in **Model view**, where you can click any line between two tables to see the relationship options in the **Properties** pane. Be sure to expand the **Properties** pane to see the relationship options.
