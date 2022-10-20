@@ -132,7 +132,7 @@ When enabled, contributors can:
 * Changing the visibility of the items for all the audience groups in the audience tab.
 
 However, contributors can't:
-* Create the app or Publish the app for the first time.
+* Create or publish the app for the first time.
 * Add users to the app or change who has permission to the app.
 * Enable or disable automatic installation of app for app users.
 * Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups. 
