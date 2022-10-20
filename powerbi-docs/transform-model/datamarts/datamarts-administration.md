@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 09/28/2022
+ms.date: 10/20/2022
 LocalizationGroup: Data from files
 ---
 
@@ -16,9 +16,9 @@ You can administer the use and settings for datamarts just like you can administ
 
 
 ## Enabling datamarts in the admin portal
-Power BI administrators can enable or disable datamart creation, using the setting found in the Power BI **admin portal**, as shown in the following image.
+Power BI administrators can enable or disable datamart creation for the entire organization or for specific security groups, using the setting found in the Power BI **admin portal**, as shown in the following image.
 
-:::image type="content" source="media/datamarts-administration/datamarts-administration-01.png" alt-text="Screenshot of the admin portal to enable or disable datamarts.":::
+:::image type="content" source="media/datamarts-administration/datamarts-administration-06.png" alt-text="Screenshot of the admin portal to enable or disable datamarts.":::
 
 ### Keeping track of datamarts
 

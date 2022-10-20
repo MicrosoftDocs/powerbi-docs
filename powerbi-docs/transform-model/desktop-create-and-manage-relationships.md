@@ -47,9 +47,11 @@ Alternatively, in the **Model view** diagram layouts, you can drag and drop a co
 
 There are two ways to edit a relationship in Power BI.
 
-The first method to edit a relationship is using the **Editing relationships in the properties** pane in **Model view**, where you can click any line between two tables to see the relationship options in the **Properties** pane. Be sure to expand the **Properties** pane to see the relationship options.
+The first method to edit a relationship is using the **Editing relationships in the Properties** pane in **Model view**, where you can click any line between two tables to see the relationship options in the **Properties** pane. Be sure to expand the **Properties** pane to see the relationship options.
 
 :::image type="content" source="media/desktop-create-and-manage-relationships/relationships-options-03.png" alt-text="Screen shot of adjusting relationships.":::
+
+You can also see a [video demonstration](https://youtu.be/Vlo7dJgr4WM?t=710) of editing relationships in the **Properties** pane. 
 
 The other method of editing a relationship is using the **Relationship editor dialog**, which you can open many ways from within Power BI Desktop. The following list shows different ways you can open the **Relationship editor dialog**:
 
@@ -61,9 +63,9 @@ From the **Data** view select the **Table tools** ribbon > **Manage relationship
 
 From the **Model** view do any of the following:
 * Select the **Home** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
-•	Double-click any line between two tables.
-•	Right-click any line between two tables and then choose **Properties**.
-•	Select any line between two tables, then select **Open relationship editor** in the **Properties** pane.
+* Double-click any line between two tables.
+* Right-click any line between two tables and then choose **Properties**.
+* Select any line between two tables, then select **Open relationship editor** in the **Properties** pane.
 
 Finally, you can also edit a relationship from any view, right-click or select the ellipsis to get to the context menu of any table, then select **Manage relationships**, select the relationship and then select **Edit**
 
