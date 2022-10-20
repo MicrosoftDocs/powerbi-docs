@@ -129,7 +129,7 @@ By default, only workspace Admins and Members can create, publish and update the
 When enabled, contributors can:
 * Update app metadata like name, icon, description, support site, and color.
 * Add or remove items included in the app, like adding reports or datasets.
-* Changing the visibility of the items for all the audience groups in the audience tab.
+* Change the visibility of the items for all the audience groups in the audience tab.
 
 However, contributors can't:
 * Create or publish the app for the first time.
