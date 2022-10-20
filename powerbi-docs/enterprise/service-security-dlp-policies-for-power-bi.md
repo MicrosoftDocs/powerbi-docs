@@ -47,6 +47,14 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 * Security administrator
 * Compliance data administrator
 
+## CPU metering for DLP policy evaluation
+
+DLP policy evaluation utilizes CPU from the premium capacity associated with the workspace where the dataset being evaluated is located. The CPU consumption of the evaluation will be equal to 30% of the CPU consumed by the action that triggered the evaluation. For example, if a refresh action costs 30 milliseconds of CPU, the DLP scan will cost an additional 9 milliseconds. The fixed 30% additional CPU consumption for DLP evaluation helps you predict the impact of DLP policies on your overall Capacity CPU utilization, and perform capacity planning when rolling out DLP policies in your organization.
+
+*To clarify, there is no additional CPU metering due to DLP evaluation for Premium Per User workspaces, as they are not associated to Premium capacities.
+
+Use the Power BI Premium Capacity Metrics App to monitor the CPU usage of your DLP policies. For more information, see [Use the Gen2 metrics app](./service-premium-gen2-metrics-app.md).
+
 ## How do DLP policies for Power BI work
 
 You define a DLP policy in the data loss prevention section of the compliance portal. In the policy, you specify the sensitivity labels and/or sensitive info types you want to detect. You also specify the actions that will happen when the policy detects a dataset that contains sensitive data of the kind you specified. DLP policies for Power BI support two actions:
