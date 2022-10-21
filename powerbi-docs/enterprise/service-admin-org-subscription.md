@@ -60,7 +60,7 @@ To sign up for Power BI Pro:
 
 1. Go to [Power BI Pro signup](https://signup.microsoft.com/create-account/signup?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&ali=1&products=d59682f3-3e3b-4686-9c00-7c7c1c736085) and enter an email address. Select **Next**.
 
-     :::image type="content" source="../media/getstarted-powerbi-email-2022-10-19.png" alt-text="Screenshot showing the get started window.":::
+     :::image type="content" source="../media/getstarted-powerbi-email-dialog.png" alt-text="Screenshot showing the get started window.":::
 
 1. The email address you entered is evaluated. Select **Set up account** or **Change my email** to enter a different address.
 
@@ -69,7 +69,7 @@ To sign up for Power BI Pro:
 
 1. Complete the **Tell us about yourself** form and select **Next**. The country or region selected determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for most of your users.
 
-   :::image type="content" source="../media/tellus-powerbi-2022-10-19.png" alt-text="Screenshot showing the tell us about yourself window.":::
+   :::image type="content" source="../media/tellus-powerbi-dialog.png" alt-text="Screenshot showing the tell us about yourself window.":::
 
 1. Select whether you want to receive a verification code by text or call. Enter a phone number where the verification code will be sent. Select **Send verification code**.
 
@@ -77,7 +77,7 @@ To sign up for Power BI Pro:
 
 1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the pre-filled username and domain. Domain name is validated to ensure that it isn't a duplicate. Once validated, the domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
 
-   :::image type="content" source="../media/business-identity-2022-10-19.png" alt-text="Screenshot showing the window for creating the onmicrosoft.com subdomain.":::
+   :::image type="content" source="../media/business-identity-dialog.png" alt-text="Screenshot showing the window for creating the onmicrosoft.com subdomain.":::
 
 Review the confirmation details. The account you created is now the global admin of a new Power BI Pro trial tenant. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) to add more users, set up a custom domain, purchase more services, and manage your Power BI subscription.
 
