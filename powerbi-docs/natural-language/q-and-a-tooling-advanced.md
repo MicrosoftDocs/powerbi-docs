@@ -220,7 +220,7 @@ Binding: {Table: Products}
 
  
 ### Noun phrasings
-Noun phrasings define new nouns that describe subsets of things in your model. They often include some type of model-specific measurement or condition. For example, for our Olympics model we might want to add phrasings that distinguish champions from medalists, ball sports from water sports, teams versus individuals, age categories of athletes (teens, adults, seniors), etc. For our movie database, we might want to add noun phrasings for “flops are movies where net profit < 0” so that we can ask questions like “count the flops by year”. There are two forms of noun phrasings, for use in different situations.
+Noun phrasings define new nouns that describe subsets of things in your model. They often include some type of model-specific measurement or condition. For example, for our Olympics model we might want to add phrasings that distinguish champions from medalists, land sports from water sports, teams versus individuals, age categories of athletes (teens, adults, seniors), etc. For our movie database, we might want to add noun phrasings for “flops are movies where net profit < 0” so that we can ask questions like “count the flops by year”. There are two forms of noun phrasings, for use in different situations.
 
 *Simple noun phrasings* define a new noun based on a condition, such as “contractors are employees where full time = false” and "champion is athlete where count of medals >5". Simple noun phrasings are used in these kinds of questions:
 
