@@ -16,7 +16,7 @@ The Power BI administrator can use the **Allow your Microsoft 365 services to pr
 
 ## What data is shared
 
-To learn more about the data shared when you use this feature, see [Data that will be shared with Microsoft 365](admin-share-power-bi-metadata-microsoft-365-services.md#data-that-will-be-shared-with-microsoft-365).
+To learn more about the data shared when you use this feature, see [Data that will be shared with Microsoft 365](admin-microsoft-graph-metadata.md#data-that-will-be-shared-with-microsoft-365).
 
 ## Where Power BI data is stored
 
