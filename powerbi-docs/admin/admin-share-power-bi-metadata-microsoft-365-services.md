@@ -1,5 +1,5 @@
 ---
-title: "Metadata passed From Microsoft Power BI to Microsoft Graph"
+title: "Metadata passed from Microsoft Power BI to Microsoft Graph"
 description: When the Microsoft Graph experience for Power BI is turned on, what data is shared with Microsoft 365?
 author: paulinbar
 ms.author: painbar
