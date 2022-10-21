@@ -43,16 +43,16 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
-1. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
+2. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
    :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-state-rollback.png" alt-text="Subscribe window.":::
     
 
-1.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
+3.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-1. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
+4. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
-1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 7 below.) 
+5. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 7 below.) 
 
     > [!TIP]
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
@@ -73,7 +73,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > [!NOTE]
     > The **Report state** field is not available for dashboards or paginated reports. -->
 
-1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
+6. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
     > [!TIP]
     > To receive a subscription email only on certain days, select Weekly and then select the checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
