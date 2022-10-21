@@ -7,7 +7,7 @@ ms.reviewer: 'jadelynray'
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/19/2022
+ms.date: 10/21/2022
 Customer intent: As a Power BI admin, I need to know what information is passed from Power BI and Microsoft Graph to Microsoft 365.
 LocalizationGroup: Admin
 ---
@@ -30,15 +30,16 @@ See [the complete list of Power BI metadata that is shared with Microsoft 365 se
 
 ## How to turn on sharing with Microsoft 365 services
 
-To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** tenant setting. Before turning on the experience, the administrator should review the list of [data that will be shared with Microsoft 365](#)
+To enable sharing Power BI metadata with Microsoft 365 services, a Power BI administrator must turn on the **[Share data with your Microsoft 365 services](./service-admin-portal-share-data-microsoft-365-services.md)** tenant setting. Before turning on the experience, the administrator should review the list of [data that will be shared with Microsoft 365](#data-that-will-be-shared-with-microsoft-365).
 
 ## Data residency
 
-If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in. For more information, see Where data is located when Power BI data is shared with your Microsoft 365 services.
+If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in. For more information, see [Where data is located when Power BI data is shared with your Microsoft 365 services](./service-admin-m365-data-access-storage.md).
 
 References:
 * [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
 * [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
+* [Where data is located when Power BI data is shared with your Microsoft 365 services](./service-admin-m365-data-access-storage.md)
 
 ## Data that will be shared with Microsoft 365
 
@@ -77,6 +78,6 @@ The tables below list the data that is shared with Microsoft 365 services.
 ## Next steps
 
 * [Share data with your Microsoft 365 services tenant settings](service-admin-portal-share-data-microsoft-365-services.md)
-* Where data is located when Power BI data is shared with your Microsoft 365 services
+* [Where data is located when Power BI data is shared with your Microsoft 365 services](./service-admin-m365-data-access-storage.md)
 
 Got feedback? We'd love to hear it at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
