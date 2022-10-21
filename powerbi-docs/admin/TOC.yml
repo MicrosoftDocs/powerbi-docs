@@ -25,7 +25,6 @@
     - name: Service URL reference
       href: power-bi-allow-list-urls.md     
     - name: Find where data is stored
-<<<<<<< HEAD
       href: service-admin-where-is-my-tenant-located.md
     - name: Data storage for cross-service capabilities
       href: service-admin-m365-data-access-storage.md      
@@ -33,9 +32,6 @@
       href: service-admin-region-move.md           
     - name: Track service health
       href: service-admin-health.md
-=======
-      href: service-admin-where-is-my-tenant-located.md 
->>>>>>> 54b46a800d4e0de18e4c031de57fbf880f0584da
     - name: Find users that have signed in
       href: service-admin-access-usage.md
     - name: Track user activities
