@@ -35,7 +35,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed–either they need a Power BI Pro or Premium Per User (PPU) license, or the report must be in a workspace that's in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
-![Embed report](../media/service-embed-secure/secure-embed-report.png) alt-text="Screenshot of Sign in to view this report page"
+![Embed report](power-bi/collaborate-share/media/service-embed-secure/vanarsdale%20market%20share1.png?branch=pr-en-us-8646) alt-text="Screenshot of Sign in to view this report page"
 
 6. When you use an iFrame, you might need to edit the **height** and **width** values to have it fit in your portal's web page.
 
