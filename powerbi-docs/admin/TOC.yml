@@ -25,7 +25,13 @@
     - name: Share metadata with Microsoft 365 services
       href: admin-share-power-bi-metadata-microsoft-365-services.md
     - name: Find where data is stored
-      href: service-admin-where-is-my-tenant-located.md 
+      href: service-admin-where-is-my-tenant-located.md
+    - name: Data storage for cross-service capabilities
+      href: service-admin-m365-data-access-storage.md      
+    - name: Move between regions
+      href: service-admin-region-move.md           
+    - name: Track service health
+      href: service-admin-health.md
     - name: Find users that have signed in
       href: service-admin-access-usage.md
     - name: Track user activities

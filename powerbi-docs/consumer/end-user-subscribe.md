@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 10/21/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -43,21 +43,21 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Open the dashboard or report, and from the top menu bar, select **Subscribe** ![Select the Subscribe icon.](./media/end-user-subscribe/power-bi-icon-envelope.png).  
 
-1. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
+2. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
-   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-state.png" alt-text="Subscribe window.":::
+   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-state-rollback.png" alt-text="Subscribe window.":::
     
 
-1.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
+3.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-1. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
+4. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
-1. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 7 below.) 
+5. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 8 below.) 
 
     > [!TIP]
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
-
-1. Select a **Report state**. **Default** ignores all changes you may have made to the report, and subscribes you to the report as published by the author. **Current state** subscribes you to the report including all changes you've made to the report.  This includes:
+<!--
+Select a **Report state**. **Default** ignores all changes you may have made to the report, and subscribes you to the report as published by the author. **Current state** subscribes you to the report including all changes you've made to the report.  This includes:
 
     - filters (filter pane or URL filters)
     - slicers
@@ -71,9 +71,9 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     If you are the author of the report, **Current state** is a great way to create individualized subscriptions for recipients. First, customize your report based on conditions such as country/region, team/department, and category. Then, subscribe colleagues to the customized report views.
 
     > [!NOTE]
-    > The **Report state** field is not available for dashboards or paginated reports. 
+    > The **Report state** field is not available for dashboards or paginated reports. -->
 
-1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
+6. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
     > [!TIP]
     > To receive a subscription email only on certain days, select Weekly and then select the checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
@@ -81,18 +81,18 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     - If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). 
     - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after the Scheduled Time.  
 
-1. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.
+7. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.
  
 
-1. Include additional information in the email. Select one or more of these checkboxes.
+8. Include additional information in the email. Select one or more of these checkboxes.
     - **Access to this report/dashboard**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com).
     - **Link to report/dashboard in Power BI**: Include a “Go to report” button in the body of the email that links to the report or dashboard in the Power BI service.
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
     - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium **Gen2** capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. For more information about Premium Gen2, see [What is Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md).
 
-1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It does not trigger a data refresh of the underlying dataset. 
+9. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It does not trigger a data refresh of the underlying dataset. 
 
-1. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
+10. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
 
     
     > [!NOTE]
