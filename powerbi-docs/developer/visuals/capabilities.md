@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/12/2022
+ms.date: 10/12/2022
 ---
 
 # Capabilities and properties of Power BI visuals
@@ -40,7 +40,7 @@ When you create a new visual, the default *capabilities.json* file includes the 
 
 The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
 
-The following additional root objects can be added as needed:
+The following additional root objects are optional and can be added as needed:
 
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
@@ -54,12 +54,14 @@ The following additional root objects can be added as needed:
 * [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * [subtotals](total-subtotal-api.md)
+* [keepAllMetadataColumns](dataview-mappings.md#keep-all-metadata-columns)
+* [migration](identity-filter-api.md)
 
 You can find all these objects and their parameters in the [*capabilities.json* schema](https://github.com/microsoft/powerbi-visuals-api/blob/master/schema.capabilities.json#L4-L65)
 
 ## privileges: define the special permissions that your visual requires
 
-Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `Privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
+Privileges are special operations your visual requires access to in order to operate. Privileges take an array of `privilege` objects, which defines all privilege properties. The following sections describe the privileges that are available in Power BI.
 
 > [!NOTE]
 > From API v4.6.0, privileges **must** be specified in the *capabilities.json* file.  In earlier versions, remote access is automatically granted and downloading to files isn't possible. To find out which version you’re using, run the `pbiviz -V` command.
@@ -110,7 +112,7 @@ This `ExportContent` setting enables the visual to export data to files in the f
 * .pdf
 * .xlsx
 
-This setting is separate from and not affected by download restrictions applied in the organization’s [Export and sharing](/power-bi/guidance/admin-tenant-settings#export-data) settings.
+This setting is separate from and not affected by download restrictions applied in the organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
 
 #### Example of privileges setting allowing downloading to a file
 
@@ -254,7 +256,6 @@ Objects describe customizable properties that are associated with the visual. Th
 ```json
 "objects": {
     "myCustomObject": {
-        "displayName": "My Object Name",
         "properties": { ... }
     }
 }
@@ -264,14 +265,6 @@ For more information, see [Objects and properties of Power BI visuals](objects-p
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Understand data view mapping in Power BI visuals](dataview-mappings.md)
-
-> [!div class="nextstepaction"]
-> [Objects and properties of Power BI visuals](objects-properties.md)
-
-> [!div class="nextstepaction"]
-> [Advanced edit mode in Power BI visuals](advanced-edit-mode.md)
-
-> [!div class="nextstepaction"]
-> [Sorting options for Power BI visuals](sort-options.md)
+* [Understand data view mapping in Power BI visuals](dataview-mappings.md)
+* [Objects and properties of Power BI visuals](objects-properties.md)
+*[Sorting options for Power BI visuals](sort-options.md)

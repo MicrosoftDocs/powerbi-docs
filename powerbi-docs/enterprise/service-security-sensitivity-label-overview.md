@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 09/01/2022
+ms.date: 10/19/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -249,7 +249,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Power BI Desktop for Power BI Report Server doesn’t support information protection. If you try to open a protected .pbix file, the file won’t open and you’ll receive an error message. Sensitivity-labeled .pbix files that aren’t encrypted can be opened as normal.
 
-* To open a protected .pbix file, a user must have [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner). In addition, the label must be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If it isn't, the open action will fail.
+* To open a protected .pbix file, a user must have [**Full control** and/or **Export** usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. [See more detail](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
     The user who sets the label gets Full control and can never be locked out unless connectivity fails and authentication can't take place.
 
