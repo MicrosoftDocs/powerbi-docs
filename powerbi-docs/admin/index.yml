@@ -43,7 +43,9 @@ landingContent:
           - text: Add custom branding
             url: service-admin-custom-branding.md
           - text: Find where data is stored
-            url: service-admin-where-is-my-tenant-located.md   
+            url: service-admin-where-is-my-tenant-located.md
+          - text: Data storage for cross-service capabilities
+            url: service-admin-m365-data-access-storage.md      
           - text: Find your org's default region
             url: service-admin-where-is-my-tenant-located.md
 
