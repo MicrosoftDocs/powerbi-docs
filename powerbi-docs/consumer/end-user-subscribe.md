@@ -57,7 +57,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > [!TIP]
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
 <!--
-1. Select a **Report state**. **Default** ignores all changes you may have made to the report, and subscribes you to the report as published by the author. **Current state** subscribes you to the report including all changes you've made to the report.  This includes:
+Select a **Report state**. **Default** ignores all changes you may have made to the report, and subscribes you to the report as published by the author. **Current state** subscribes you to the report including all changes you've made to the report.  This includes:
 
     - filters (filter pane or URL filters)
     - slicers
