@@ -27,7 +27,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 3. In the **Secure embed code** dialog, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iFrame in a blog or website, select the value under **HTML you can paste into a website**.
 
-    :::image type="content" source="media/service-embed-secure/secure-embed-code-dialog.png" alt-text="Screenshot of Embed option dialogue box":::
+    :::image type="content" source="../media/Securely embed this report in awebsite or portal.png" alt-text="Screenshot of Embed option dialogue box":::
 
 4. Whether a user opens a report URL directly, or one that's embedded in a web portal, report access requires authentication. The following screen appears if a user has'nt signed in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab should open. Have them check for pop-up blockers if they don't get prompted to sign in.
 
@@ -35,7 +35,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed–either they need a Power BI Pro or Premium Per User (PPU) license, or the report must be in a workspace that's in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
-![Embed report](power-bi/collaborate-share/media/service-embed-secure/vanarsdale%20market%20share1.png?branch=pr-en-us-8646) alt-text="Screenshot of Sign in to view this report page"
+:::image type="content" source="./media/service-embed-secure/VanArsdale Market Share1.png" alt-text="Screenshot of Sign in to view this report page"::::
 
 6. When you use an iFrame, you might need to edit the **height** and **width** values to have it fit in your portal's web page.
 
