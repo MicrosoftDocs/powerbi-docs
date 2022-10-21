@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 10/21/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -45,7 +45,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Select **Add new subscription** and give your subscription a name.  By default, your subscription will be given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
-   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-state.png" alt-text="Subscribe window.":::
+   :::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-state-rollback.png" alt-text="Subscribe window.":::
     
 
 1.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
@@ -56,7 +56,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
     > [!TIP]
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
-
+<!--
 1. Select a **Report state**. **Default** ignores all changes you may have made to the report, and subscribes you to the report as published by the author. **Current state** subscribes you to the report including all changes you've made to the report.  This includes:
 
     - filters (filter pane or URL filters)
@@ -71,7 +71,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     If you are the author of the report, **Current state** is a great way to create individualized subscriptions for recipients. First, customize your report based on conditions such as country/region, team/department, and category. Then, subscribe colleagues to the customized report views.
 
     > [!NOTE]
-    > The **Report state** field is not available for dashboards or paginated reports. 
+    > The **Report state** field is not available for dashboards or paginated reports. -->
 
 1. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
