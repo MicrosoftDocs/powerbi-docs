@@ -81,18 +81,18 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     - If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). 
     - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after the Scheduled Time.  
 
-1. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.
+7. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.
  
 
-1. Include additional information in the email. Select one or more of these checkboxes.
+8. Include additional information in the email. Select one or more of these checkboxes.
     - **Access to this report/dashboard**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com).
     - **Link to report/dashboard in Power BI**: Include a “Go to report” button in the body of the email that links to the report or dashboard in the Power BI service.
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
     - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium **Gen2** capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. For more information about Premium Gen2, see [What is Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md).
 
-1. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It does not trigger a data refresh of the underlying dataset. 
+9. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It does not trigger a data refresh of the underlying dataset. 
 
-1. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
+10. You will now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
 
     
     > [!NOTE]
