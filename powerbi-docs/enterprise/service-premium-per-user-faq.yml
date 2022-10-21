@@ -26,7 +26,7 @@ sections:
   - name: Ignore
     questions:
       - question: |
-          Using Premium Per User
+          Using Premium Per User (PPU)
         answer: |
           Premium Per User (PPU) gives organizations a way to license premium features on a per-user basis. PPU includes all Power BI Pro license capabilities, including features like paginated reports, AI, and other capabilities that were only available with a Premium capacity. With a PPU license, you don't need a separate Power BI Pro license because all Pro license capabilities are included. 
 
@@ -58,7 +58,7 @@ sections:
           Some organizations choose to supplement their Premium capacity with Premium Per User (PPU) licenses. However, PPU isn't required to publish content to existing Premium capacities.
 
       - question: |
-          Administration of Premium Per User
+          Administration of Premium Per User (PPU)
         answer: |
           Administrators manage PPU licenses, users, and settings in the **Power BI Admin portal**. Admins can determine which per-user settings are exposed, which users can create PPU workspaces, which workspaces are Premium or Premium Per User, and other settings. 
 
