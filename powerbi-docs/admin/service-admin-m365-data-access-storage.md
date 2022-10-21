@@ -23,7 +23,7 @@ To learn more about the data shared when you use this feature, see [Data that wi
 For more information about data storage locations, see [Find the default region for your organization](./service-admin-where-is-my-tenant-located.md) and [Product Availability by Geography](https://powerplatform.microsoft.com/availability-reports/)
 
 ## Where Microsoft 365 data is stored
-For more information about data storage for Microsoft 365, see [Where your Microsoft 365 customer data is stored](https://learn.microsoft.com/microsoft-365/enterprise/o365-data-locations) and [Multi-Geo Capabilities in Microsoft 365](https://www.microsoft.com/microsoft-365/business/multi-geo-capabilities).
+For more information about data storage for Microsoft 365, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations) and [Multi-Geo Capabilities in Microsoft 365](https://www.microsoft.com/microsoft-365/business/multi-geo-capabilities).
 
 ## Learn more
 - [Share data with your Microsoft 365 services admin settings](./admin-share-power-bi-metadata-microsoft-365-services.md)
