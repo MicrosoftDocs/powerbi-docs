@@ -101,7 +101,7 @@ Consider an example of a complex relationship and how it could produce different
 
 In this example, the **Region** table in source group **A** has a relationship to the **Calendar** table and **Sales** table in source group **B**. The relationship between the **Region** table and the **Calendar** table is active, while the relationship between the **Region** table and the **Sales** table is inactive. Also, there's an active relationship between the **Region** table and the **Sales** table, both of which are in source group **B**. The **Sales** table includes a measure named **TotalSales**, and the **Region** table includes two measures named **RegionalSales** and **RegionalSalesDirect**.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-1.png" alt-text="Diagram shows the model design as described in the previous paragraph.":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-1.png" alt-text="Diagram shows the model design as described in the previous paragraph." border="false":::
 
 Here are the measure definitions.
 
@@ -119,7 +119,7 @@ The difference in the result in subtle. When Power BI evaluates the **RegionalSa
 
 Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. These two tables reside in different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-2.png" alt-text="Diagram shows the example model design as described in the previous paragraph.":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-2.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
 
 There are two cases for concern.
 
