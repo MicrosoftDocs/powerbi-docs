@@ -15,20 +15,16 @@ ms.date: 10/31/2022
 This article targets data modelers developing Power BI composite models. It describes composite model use cases, and provides you with design guidance. Specifically, the guidance can help you determine whether a composite model is appropriate for your solution. If it is, then this article will also help you design an optimal model.
 
 > [!NOTE]
-> An introduction to composite models is not covered in this article. If you're not completely familiar with composite models, we recommend that you first read the [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md) article.
+> An introduction to composite models isn't covered in this article. If you're not completely familiar with composite models, we recommend that you first read the [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md) article.
 >
 > Because composite models consist of at least one DirectQuery source, it's also important that you have a thorough understanding of [model relationships](/power-bi/transform-model/desktop-relationships-understand), [DirectQuery models](/power-bi/connect-data/desktop-directquery-about), and [DirectQuery model design guidance](directquery-model-guidance.md).
 
 ## Composite model use cases
 
-Whenever possible, it's best to develop a model in import mode. This mode provides the greatest design flexibility, and best performance.
-
-However, challenges related to large data volumes, or reporting on near real-time data, can't always be solved by import models. In either of these cases, you can consider a DirectQuery model, providing your data is stored in a single data source that's [supported by DirectQuery mode](/power-bi/connect-data/power-bi-data-sources).
-
-A composite model allows you to combine multiple _source groups_. A source group could represent imported data or a connection to a DirectQuery source. A DirectQuery source could be a relational database or another tabular model that's either a Power BI dataset or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true).
+By definition, a composite model combines multiple _source groups_. A source group can represent imported data or a connection to a DirectQuery source. A DirectQuery source can be either a relational database or another tabular model, which can be a Power BI dataset or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true). When a tabular model connects to another tabular model, it's known as _chaining_. For more information, see [Using DirectQuery for Power BI datasets and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services).
 
 > [!NOTE]
-> When a model connects to a tabular model but doesn't combine it with additional data, it's not a composite model. In this case, it's a DirectQuery model that connects to a remote model—so it comprises just the one source group. You might create this type of model to modify source model object properties, like a table name, column sort order, or format.
+> When a model connects to a tabular model but doesn't extend it with additional data, it's not a composite model. In this case, it's a DirectQuery model that connects to a remote model—so it comprises just the one source group. You might create this type of model to modify source model object properties, like a table name, column sort order, or format string.
 
 Connecting to tabular models is especially relevant when extending an _enterprise semantic model_ (when it's a Power BI dataset or Analysis Services model). An enterprise semantic model is fundamental to the development and operation of a data warehouse. It provides an abstraction layer over the data in the data warehouse to present business definitions and terminology. It's commonly used as a link between physical data models and reporting tools, like Power BI. In most organizations, it's managed by a central team, and that's why it's described as _enterprise_. For more information, see the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) usage scenario.
 
@@ -39,15 +35,21 @@ You can consider developing a composite model in the following situations.
 - You want to combine two or more DirectQuery data sources into a single model. These sources could be relational databases or other tabular models.
 
 > [!NOTE]
-> Composite models can't combine connections to certain external analytic databases. These include live connections to SAP Business Warehouse, and SAP HANA when [treating SAP HANA as a multidimensional source](/power-bi/connect-data/desktop-directquery-sap-hana).
+> Composite models can't include connections to certain external analytic databases. These databases include SAP Business Warehouse, and SAP HANA when [treating SAP HANA as a multidimensional source](/power-bi/connect-data/desktop-directquery-sap-hana).
 
-## Optimize model design
+## Avoid composite modeling
 
-You can optimize a composite model by setting table [storage modes](/power-bi/transform-model/desktop-storage-mode), and by adding [aggregations](/power-bi/enterprise/aggregations-auto).
+While the technology that supports Power BI composite models can solve design challenges, it can deliver slow performance. Also, in some situations, unexpected calculation results can occur (described later in this article). For these reasons, avoid creating a composite model when you have other options.
 
-### Table storage mode
+Whenever possible, it's best to develop a model in import mode. This mode provides the greatest design flexibility, and best performance.
 
-In a composite model, you can set the storage mode for each table (except calculated tables).
+However, challenges related to large data volumes, or reporting on near real-time data, can't always be solved by import models. In either of these cases, you can consider a DirectQuery model, providing your data is stored in a single data source that's [supported by DirectQuery mode](/power-bi/connect-data/power-bi-data-sources). For more information, see [DirectQuery models in Power BI Desktop](/power-bi/connect-data/desktop-directquery-about).
+
+If you're objective is to extend an existing tabular model with more data, whenever possible, add that data to the existing data source.
+
+## Table storage mode
+
+In a composite model, you can set the [storage mode](/power-bi/transform-model/desktop-storage-mode) for each table (except calculated tables).
 
 - **DirectQuery:** We recommend that you set this mode for tables that represent large data volumes, or which need to deliver near real-time results. Data will never be imported into these tables. Usually, these tables will be [fact-type tables](/power-bi/guidance/star-schema#star-schema-overview)—tables used for summarization.
 - **Import:** We recommend that you set this mode for tables that aren't used for filtering and grouping of fact tables in DirectQuery or Hybrid mode. It's also the only option for tables based on sources not supported by DirectQuery mode. Calculated tables are always import tables.
@@ -65,37 +67,39 @@ In summary, we recommend that you:
 
 - Consider carefully that a composite model is the right solution—while it allows model-level integration of different data sources, it also introduces design complexities with possible consequences.
 - Set the storage mode to **DirectQuery** when a table is a fact-type table storing large data volumes, or when it needs to deliver near real-time results.
-- Consider using hybrid mode by defining an incremental refresh policy and real-time data, or by partitioning the fact table by using [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions), [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=asallproducts-allversions), or a third-party tool. For more information, see [Incremental refresh and real-time data for datasets](../connect-data/incremental-refresh-overview.md) and the [Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
+- Consider using hybrid mode by defining an incremental refresh policy and real-time data, or by partitioning the fact table by using [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions&preserve-view=true), [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=asallproducts-allversions&preserve-view=true), or a third-party tool. For more information, see [Incremental refresh and real-time data for datasets](../connect-data/incremental-refresh-overview.md) and the [Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
 - Set the storage mode to **Dual** when a table is a dimension-type table, and it will be queried together with DirectQuery or hybrid fact-type tables that are in the same source group.
 - Set appropriate refresh frequencies to keep the model cache for dual and hybrid tables (and any dependent calculated tables) in sync with the source database(s).
 - Strive to ensure data integrity across data sources (including the model cache)—limited relationships will eliminate rows in query results when related column values don't match.
 - Optimize DirectQuery data sources with appropriate indexes for efficient joins, filtering, and grouping.
 - Don't load sensitive data into import, dual, or hybrid tables if there's risk of a native query being intercepted—for more information, see [Use composite models in Power BI Desktop (Security implications)](/power-bi/transform-model/desktop-composite-models#security-implications).
 
-### Aggregations
+## User-defined aggregations
 
-You can add aggregations to DirectQuery tables in your composite model. When aggregations are cached in the model they behave as import tables (although they can't be used like a model table). Their purpose is to improve performance for _higher grain_ queries. For more information, see [Aggregations in Power BI Desktop](/power-bi/enterprise/aggregations-auto).
+You can add [user-defined aggregations](/power-bi/transform-model/aggregations-advanced) to DirectQuery tables. Their purpose is to improve performance for _higher grain_ queries.
+
+When aggregations are cached in the model they behave as import tables (although they can't be used like a model table) and the model becomes a composite model.
 
 > [!NOTE]
 > Hybrid tables don't support aggregations because some of the partitions operate in import mode. It's not possible to add aggregations at the level of an individual DirectQuery partition.
 
 We recommend that an aggregation follows a basic rule: Its row count should be at least a factor of 10 smaller than the underlying table. For example, if the underlying table stores 1 billion rows, then the aggregation table shouldn't exceed 100 million rows. This rule ensures that there's an adequate performance gain relative to the cost of creating and maintaining the aggregation.
 
-### Cross source group relationships
+## Cross source group relationships
 
-When a relationship spans source groups, it's known as a _cross source group relationship_. For more information, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand#relationship-evaluation).
+When a model relationship spans source groups, it's known as a _cross source group relationship_. Cross source group relationships are known as _limited_ relationships because there's no guaranteed "one" side. For more information, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand#relationship-evaluation).
 
 When defining cross source group relationships, consider the following recommendations.
 
-- **Avoid combining multiple source groups:** Combining multiple source groups can negatively affect performance. It could also result in eliminated rows in query results when related column values don't match. Whenever possible, extend the source database or model with additional data.
 - **Use low-cardinality relationship columns:** For best performance, we recommend that the relationship columns be low cardinality, meaning they should store less than 50,000 unique values. This recommendation is especially true when combining multiple tabular models, and for non-text columns.
 - **Avoid using large text relationship columns:** If you must use text columns in a relationship, calculate the expected text length for the filter by multiplying the cardinality by the average length of the text column. The possible text length should not exceed 250,000 characters.
+- **Raise the relationship granularity:** If possible, create relationships at a higher level of granularity. For example, instead of relating a date table on its date key, use its month key instead. This design requires that the related table includes a month key column, and reports won't be able to show daily facts.
 - **Strive to achieve a simple relationship design:** Only create a cross source group relationship when it's needed, and try to limit the number of tables in the relationship path. This design approach will help to improve performance and avoid [ambiguous relationship paths](/power-bi/transform-model/desktop-relationships-understand#resolve-relationship-path-ambiguity).
 
 > [!WARNING]
 > Because Power BI Desktop doesn't thoroughly validate cross group relationships, so it's possible to create ambiguous relationships.
 
-#### Cross source group relationship example 1
+### Cross source group relationship example 1
 
 Consider an example of a complex relationship and how it could produce different—yet valid—results.
 
@@ -115,7 +119,7 @@ Notice how the **RegionalSales** measure refers to the **TotalSales** measure, w
 
 The difference in the result in subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Date** table. Therefore, the filter also propagates from the **Date** table to the **Sales** table. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions are semantically equivalent.
 
-#### Cross source group relationship example 2
+### Cross source group relationship example 2
 
 Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. These two tables reside in different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
 
@@ -127,11 +131,17 @@ First, when you use the **Date** table columns as filters, filter propagation wi
 
 Second, when you use **Date** table columns—like **Year**, **Quarter**, or **Month**—as grouping columns, it results in filters that include all unique combinations of year, quarter, or month, _and_ the **DateKey** column values. The text size of the query, which contains filters on the grouping columns and the relationship column, can become extremely large. That's especially true when the number of grouping columns and/or the cardinality of the join column (the **DateKey** column) is large.
 
-#### Cross source group relationship example 3
+### Cross source group relationship example 3
 
-Consider an example where TODO
+Consider an example where there aren't matching values in a cross source group relationship. In this example, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table using the **Year** columns. The **TotalSales** measures sums the sales values, while the **TotalTarget** sums the target values.
 
-### Other modeling considerations
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
+
+The **Date** table stores the years 2021 and 2022. The **Sales** table stores sales values for years 2021 and 2022, while the **Target** table stores target values for 2021, 2022, *and 2023*—a future year.
+
+When a Power BI visual queries the composite model by grouping on the **Year** column from the **Date** table, and it includes the **TotalSales** and **TotalTarget** measures, it won't show the target for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics that eliminate rows where there's no matching value on both sides. If the relationship between the **Date** table and the **Target** table were an intra source group relationship, the visual would a include _blank_ year to show the 2023 target value.
+
+## Other modeling considerations
 
 Here are some modeling considerations you may want to keep in mind as you use this composite models on Power BI datasets or Analysis Services models:
 
@@ -190,9 +200,8 @@ For more information related to this article, check out the following resources.
 - [Model relationships in Power BI Desktop](/power-bi/transform-model/desktop-relationships-understand)
 - [DirectQuery models in Power BI Desktop](/power-bi/connect-data/desktop-directquery-about)
 - [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery)
-- [DirectQuery model troubleshooting in Power BI Desktop](/power-bi/connect-data/desktop-directquery-troubleshoot)
-- [Power BI data sources](/power-bi/connect-data/power-bi-data-sources)
+- [Using DirectQuery for Power BI datasets and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services)
 - [Storage mode in Power BI Desktop](/power-bi/transform-model/desktop-storage-mode)
-- [Aggregations in Power BI Desktop](/power-bi/enterprise/aggregations-auto)
+- [User-defined aggregations](/power-bi/enterprise/aggregations-advanced)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
