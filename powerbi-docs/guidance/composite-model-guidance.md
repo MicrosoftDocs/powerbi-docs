@@ -133,14 +133,23 @@ Second, when you use **Date** table columns—like **Year**, **Quarter**, or **M
 
 ### Cross source group relationship example 3
 
-Consider an example where there aren't matching values in a cross source group relationship. In this example, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table using the **Year** columns. The **TotalSales** measures sums the sales values, while the **TotalTarget** sums the target values.
+Consider an example where there aren't matching values in a cross source group relationship.
+
+In this example, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table relating the **Year** columns. The **Sales** table includes a **SalesAmount** column that stores sales values, while the **Target** table includes a **TargetAmount** column that stores target values.
 
 :::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
 
-The **Date** table stores the years 2021 and 2022. The **Sales** table stores sales values for years 2021 and 2022, while the **Target** table stores target values for 2021, 2022, *and 2023*—a future year.
+The **Date** table stores the years 2021 and 2022. The **Sales** table stores sales amounts for years 2021 and 2022, while the **Target** table stores target amounts for 2021, 2022, *and 2023*—a future year.
 
-When a Power BI visual queries the composite model by grouping on the **Year** column from the **Date** table, and it includes the **TotalSales** and **TotalTarget** measures, it won't show the target for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics that eliminate rows where there's no matching value on both sides. If the relationship between the **Date** table and the **Target** table were an intra source group relationship, the visual would a include _blank_ year to show the 2023 target value.
+When a Power BI visual queries the composite model by grouping on the **Year** column from the **Date** table, and it sums the **SalesAmount** and **TargetAmount** columns, it won't show a target amount for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics that eliminate rows where there's no matching value on both sides. If the relationship between the **Date** table and the **Target** table were an intra source group relationship, the visual would a include _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
 
+#### Calculated columns
+
+Calculated columns added to a DirectQuery table that sources its data from a relational databases, like Microsoft SQL Server, are limited to expressions that operate on a single row at a time. These expressions cannot use DAX iterator functions, such as `SUMX`.
+
+A calculated column expression on a remote DirectQuery table is confined to intra-row evaluation only. However, you can author such an expression, only to get an error when using the calculated column in a visual. For example, adding a calculated column on the remote DirectQuery table DimProduct with the expression `[Product Sales] / SUM (DimProduct[ProductSales])` will work fine, but will result in an error when used in a visual because of it violating the intra-row evaluation restriction.
+
+In contrast, calculated columns defined over a DirectQuery table to tabular databases, such as a Power BI dataset or Azure Analysis Services can be much more flexible. In this scenario, all DAX functions are allowed if the expression can be evaluated within the target tabular model. Many expressions require the calculated column to be materialized first before it can be used as in a group-by, a filter, or an aggregation. When a calculated column is materialized over a large table, it can be very costly in both CPU and memory, depending on the cardinality of the columns that the calculated column depends on. We recommend users move those expensive calculated columns into the source model.
 ## Other modeling considerations
 
 Here are some modeling considerations you may want to keep in mind as you use this composite models on Power BI datasets or Analysis Services models:
@@ -160,13 +169,6 @@ Keep in mind that using this technique increases the complexity of your model co
 
 [Please read the documentation to learn how to sync slicers](/power-bi/visuals/power-bi-visualization-slicers#sync-separate-slicers).
 
-#### Keep calculated columns over large tables simple
-
-Calculated columns defined over a DirectQuery table to relational databases, such as SQL Server, are limited to expressions that operate on a single row at a time. These expressions cannot use iterator functions, such as `SUMX`.
-
-A calculated column expression on remote DirectQuery table is confined to intra-row evaluation only. However, you can author such an expression, only to get an error when using the calculated column in a visual. For example, adding a calculated column on the remote DirectQuery table DimProduct with the expression `[Product Sales] / SUM (DimProduct[ProductSales])` will work fine, but will result in an error when used in a visual because of it violating the intra-row evaluation restriction.
-
-In contrast, calculated columns defined over a DirectQuery table to tabular databases, such as a Power BI dataset or Azure Analysis Services can be much more flexible. In this scenario, all DAX functions are allowed if the expression can be evaluated within the target tabular model. Many expressions require the calculated column to be materialized first before it can be used as in a group-by, a filter, or an aggregation. When a calculated column is materialized over a large table, it can be very costly in both CPU and memory, depending on the cardinality of the columns that the calculated column depends on. We recommend users move those expensive calculated columns into the source model.
 
 #### Create visuals to limit fields from a single remote model
 
