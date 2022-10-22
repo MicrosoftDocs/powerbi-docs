@@ -89,6 +89,9 @@ We recommend that an aggregation follows a basic rule: Its row count should be a
 
 When a model relationship spans source groups, it's known as a _cross source group relationship_. Cross source group relationships are known as _limited_ relationships because there's no guaranteed "one" side. For more information, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand#relationship-evaluation).
 
+> [!NOTE]
+> In some instances, you can avoid creating a cross source group relationship. See the [Use Sync slicers](#use-sync-slicers) topic later in this article.
+
 When defining cross source group relationships, consider the following recommendations.
 
 - **Use low-cardinality relationship columns:** For best performance, we recommend that the relationship columns be low cardinality, meaning they should store less than 50,000 unique values. This recommendation is especially true when combining multiple tabular models, and for non-text columns.
@@ -121,7 +124,9 @@ The difference in the result in subtle. When Power BI evaluates the **RegionalSa
 
 ### Cross source group relationship example 2
 
-Consider an example where the dimension-type **Date** table is related to the fact-type **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. These two tables reside in different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
+Consider an example when a cross source group relationship has high-cardinality relationship columns.
+
+In this example, the **Date** table is related to the **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. These two tables reside in different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
 
 :::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-2.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
 
@@ -131,79 +136,98 @@ First, when you use the **Date** table columns as filters, filter propagation wi
 
 Second, when you use **Date** table columns—like **Year**, **Quarter**, or **Month**—as grouping columns, it results in filters that include all unique combinations of year, quarter, or month, _and_ the **DateKey** column values. The text size of the query, which contains filters on the grouping columns and the relationship column, can become extremely large. That's especially true when the number of grouping columns and/or the cardinality of the join column (the **DateKey** column) is large.
 
+To address any performance issues, you could:
+
+- Add the **Date** table to the data source, resulting in a single source group model (meaning, it's no longer a composite model).
+- Raise the granularity of the relationship. For instance, you could add a **MonthKey** column to both tables and create the relationship on those columns. However, by raising the granularity of the relationship, you lose the ability to report on daily sales activity (unless you use the **DateKey** column from the **Sales** table).
+
 ### Cross source group relationship example 3
 
-Consider an example where there aren't matching values in a cross source group relationship.
+Consider an example when there aren't matching values between tables in a cross source group relationship.
 
 In this example, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table relating the **Year** columns. The **Sales** table includes a **SalesAmount** column that stores sales amounts, while the **Target** table includes a **TargetAmount** column that stores target amounts.
 
 :::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-model.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
 
-The **Date** table stores the years 2021 and 2022. The **Sales** table stores sales amounts for years 2021 and 2022, while the **Target** table stores target amounts for 2021, 2022, *and 2023*—a future year.
+The **Date** table stores the years 2021 and 2022. The **Sales** table stores sales amounts for years 2021 (100) and 2022 (200), while the **Target** table stores target amounts for 2021 (100), 2022 (200), *and 2023 (300)*—a future year.
 
 :::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-data.png" alt-text="Diagram shows the table data as described in the previous paragraph." border="false":::
 
-When a Power BI visual queries the composite model by grouping on the **Year** column from the **Date** table and summing the **SalesAmount** and **TargetAmount** columns, it won't show a target amount for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics, which eliminate rows where there's no matching value on both sides.
+When a Power BI table visual queries the composite model by grouping on the **Year** column from the **Date** table and summing the **SalesAmount** and **TargetAmount** columns, it won't show a target amount for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics, which eliminate rows where there's no matching value on both sides. It will, however, produce a correct target amount total, because a **Date** table filter doesn't apply to the evaluation of that value.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-visual.png" alt-text="Diagram shows a table visual that doesn't show the 2023 target amount as described in the previous paragraph." border="false":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-visual.png" alt-text="Diagram shows a table visual that doesn't show the 2023 target amount. Also, the target amount total of 600 doesn't equal the two shown values for 2021 and 2022 (100 and 200)." border="false":::
 
-If the relationship between the **Date** table and the **Target** table were an intra source group relationship, the visual would a include _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
+If the relationship between the **Date** table and the **Target** table were an intra source group relationship, the visual would a include a _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
 
 > [!IMPORTANT]
-> To avoid misreporting, you must ensure that there's referential integrity between dimension and fact tables that reside in different source groups.
+> To avoid misreporting, ensure that there are matching values in the relationship columns when dimension and fact tables reside in different source groups.
 
 For more information about limited relationships, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand#relationship-evaluation).
 
-#### Calculated columns
+## Calculations
 
-Calculated columns added to a DirectQuery table that sources its data from a relational databases, like Microsoft SQL Server, are limited to expressions that operate on a single row at a time. These expressions cannot use DAX iterator functions, such as `SUMX`.
+You should consider specific limitations when adding calculated columns and calculation groups to a composite model.
 
-A calculated column expression on a remote DirectQuery table is confined to intra-row evaluation only. However, you can author such an expression, only to get an error when using the calculated column in a visual. For example, adding a calculated column on the remote DirectQuery table DimProduct with the expression `[Product Sales] / SUM (DimProduct[ProductSales])` will work fine, but will result in an error when used in a visual because of it violating the intra-row evaluation restriction.
+### Calculated columns
 
-In contrast, calculated columns defined over a DirectQuery table to tabular databases, such as a Power BI dataset or Azure Analysis Services can be much more flexible. In this scenario, all DAX functions are allowed if the expression can be evaluated within the target tabular model. Many expressions require the calculated column to be materialized first before it can be used as in a group-by, a filter, or an aggregation. When a calculated column is materialized over a large table, it can be very costly in both CPU and memory, depending on the cardinality of the columns that the calculated column depends on. We recommend users move those expensive calculated columns into the source model.
-## Other modeling considerations
+Calculated columns added to a DirectQuery table that sources its data from a relational databases, like Microsoft SQL Server, are limited to expressions that operate on a single row at a time. These expressions cannot use DAX iterator functions, like `SUMX`.
 
-Here are some modeling considerations you may want to keep in mind as you use this composite models on Power BI datasets or Analysis Services models:
+A calculated column expression on a remote DirectQuery table is limited to intra-row evaluation only. However, you can use such an expression, but you will get an error when it's used in a visual. For example, when you add a calculated column to a remote DirectQuery table named **DimProduct** by using the expression `[Product Sales] / SUM (DimProduct[ProductSales])`, it will work fine. However, it will result in an error when it's used in a visual because it violates the intra-row evaluation restriction.
 
-- Keep dimension tables separate from fact tables to ensure data is being interpreted correctly instead of joining them together. This is true not just for composite models.
-- Keep dimension tables and fact tables in the same source group as much as possible. Avoid having dimension tables in one source group that relate to a fact table in another. It’s better to have relationships across source group between dimension tables than between a dimension table and its related fact table, because of the potential for high-cardinality key columns in cross source group relationships. Note that the same applies to high-cardinality key columns between dimensions.
-- If you use calculation groups with a composite model on Power BI dataset or an Analysis Services model, the results returned might be unexpected. Please see the documentation about calculation groups in composite models.
-- You can also try using sync slicers to avoid creating a DAX relationship. Using sync slicers limits the blending of multiple data sources in a safe fashion. Consider the example data model below.
+In contrast, calculated columns added to a remote DirectQuery table that's a tabular model, which is either a Power BI dataset or Analysis Services model, are more flexible. In this case, all DAX functions are allowed when the expression can be evaluated within the source tabular model.
+
+Many expressions require that the calculated column be materialized first before it can be used as in a group, a filter, or an aggregation. When a calculated column is materialized over a large table, it can be very costly in terms of CPU and memory, depending on the cardinality of the columns that the calculated column depends on. In this case, we recommend that you add those calculated columns to the source model.
+
+> [!NOTE]
+> When you add calculated columns to a composite model, be sure to test all model calculations. Upstream calculations may not work correctly because they're not aware of your new columns.
+
+### Calculation groups
+
+If you add calculation groups to a composite model that connect to a Power BI dataset or an Analysis Services model, Power BI could return unexpected results. For more information, see [TODO](\todo).
+
+## Model design
+
+You should optimize a Power BI model by adopting a star schema design. For more information, see [Understand star schema and the importance for Power BI](/power-bi/guidance/star-schema).
+
+Be sure to create dimension tables that are separate from fact tables so that Power BI can interpret joins correctly and produce efficient query plans. While this guidance is true for any Power BI model, it's especially true for models that you recognize will become a source group of a composite model. It will allow for simpler and more efficient integration of other tables in downstream models.
+
+When possible, avoid having dimension tables in one source group that relate to a fact table in different source group. That's because it's better to have *intra* source group relationships than *cross* source group relationships, especially for high-cardinality relationship columns. As [described earlier](#cross-source-group-relationship-example-3), cross source group relationships rely on having matching values in the relationship columns, otherwise unexpected results may be shown in report visuals.
+
+## Report design
+
+In some situations you can improve the performance of a composite model by designing an optimized report layout.
+
+### Single source group visuals
+
+Whenever possible, create visuals that use fields from a single source group. That's because queries generated by visuals will perform better when the result is retrieved from a single source group. Consider creating two visuals, positioned side by side, that retrieve data from two different source groups.
+
+### Use sync slicers
+
+In some situations, you [sync slicers](/power-bi/visuals/power-bi-visualization-slicers?tabs=powerbi-desktop#sync-and-use-slicers-on-other-pages) to avoid creating a cross source group relationship. It can allow you to combine multiple source groups in an efficient way.
+
+Consider an example when your model has two source groups. Each source group has a product dimension table used to filter sales.
+
+In this example, source group **A** contains the **Product** table that's related to the **ResellerSales** table. Source group **B** contains the **Product2** table that's related to the **InternetSales** table. There aren't any cross source group relationships.
 
 :::image type="content" source="media/composite-model-guidance/sync-slicers-example.png" alt-text="Diagram including two source groups; Source group A contains the Product and ResellerSales tables and source group B contains the Product2 and InternetSales tables.":::
 
-In this example, the Product dimension table is equivalent but added twice. A slicer is added to the report that slices Product\[Color\], which will filter ResellerSales, but not InternetSales. You can add a hidden slider on Product2\[Color\] and keep both slicers in sync using the advanced settings in the Sync slicers pane. When this is set up any filter a user makes using the slicer on Product\[Color\] will automatically set the Product2\[Color\] slicer to the same value and as a result any measures defined on either ResellerSales or InternetSales will be filtered by the corresponding slicers respectively.
-  
-Note that this is an alternative to creating a many-to-many relationship as it impacts only the visuals affected by the slicers, whereas adding a many-to-many relationship would impact all visuals going forward and filters on any column in one Product table will be propagated to the other Product table.
-  
-Keep in mind that using this technique increases the complexity of your model considerably, making it harder to use to get meaningful results. You should make sure to properly educate others on how your model works if planning to use this technique. Also, make sure to hide dimension tables you don’t want others to use to avoid confusion.
+In the report, you add a slicer that filters the page by using the **Color** column of the **Product** table. By default, the slicer filters the **ResellerSales** table, but not the **InternetSales** table. You then add a hidden slicer by using the **Color** column of the **Product2** table. By setting an identical group name (found in the sync slicers **Advanced options**), filters applied to the visible slicer automatically propagate to the hidden slicer.
 
-[Please read the documentation to learn how to sync slicers](/power-bi/visuals/power-bi-visualization-slicers#sync-separate-slicers).
+> ![!NOTE]
+> While this example report design approach avoids the need to create a cross source group relationship, it increases the complexity of the model design. Be sure to educate other users on why you designed the model with duplicate dimension tables. Avoid confusion by hiding dimension tables that you don't want other users to use. You can also add description text to hidden tables to document their purpose.
 
+For more information, see [Sync separate slicers](/power-bi/visuals/power-bi-visualization-slicers?tabs=powerbi-desktop#sync-separate-slicers).
 
-#### Create visuals to limit fields from a single remote model
+## Additional guidance
 
-Queries generated for visuals benefit from the best performance due to an optimized query plan when the result can be retrieved from a single remote model. If it’s acceptable to create two visuals to retrieve data from two models instead of a single visual combining data from the two models, choose the two-visual design.
+Here is some additional guidance to help you design and maintain composite models.
 
-### Performance and scale
-
-If you previously were live connected to a Power BI dataset or Azure Analysis Services, you could share visual caches in the Power BI service. Once you change that connection to DirectQuery, you can no longer see those caches. This may cause latency or failures in refreshes. Overall, this may add more load on the Service, which may require you to upgrade your capacity or optimize to reduce the load. [Learn more about data refresh and caching in Power BI](/power-bi/connect-data/refresh-data).
-
-### Security
-
-If your model includes aggregation tables, calculated columns on import tables, or calculated tables, be sure to check that row level security is set properly to ensure that the intended security is being used.
-
-### Schema Updates
-
-If you want to get schema updates from remote models, you should occasionally refresh your model in Power BI Desktop and re-publish it to the service.
-
-### Governance
-
-It is not recommended to make a dataset that leverages this feature the "single source of data truth" in your organization, as it leaves reports built off this dataset more susceptible to being broken by other report authors. Rather, it is recommended to mark an enterprise semantic model as the source of data truth and leverage this feature to enable users to make customizations on top of that source of data truth. [Learn more about chaining and its limitations](https://go.microsoft.com/fwlink/?linkid=2153208).
-
-It is also not recommended to rename workspaces and dataset names. Keep in mind that datasets are linked together by their names. Renaming a workspace or dataset name could cause reports dependent on these artifacts to break.
-
-You can leverage the [Data Lineage](/power-bi/collaborate-share/service-data-lineage) and [Dataset Impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) features in the Service to understand which and how your datasets relate. Note that only the immediate related items are shown in the impact analysis – i.e., if you have a chain of datasets only the first dependent items are shown.
+- **Performance and scale:** If your reports were previously live connected to a Power BI dataset or Azure Analysis Services model, the Power BI service could reuse visual caches across reports. After you convert the live connection to create a local DirectQuery model, reports will no longer benefit from those caches. As a result, you might experience slower performance or even refresh failures. Also, the workload for the Power BI service will increase, which might require you to scale up your capacity or distribute the workload across other capacities. For more information about data refresh and caching, see[Data refresh in Power BI](/power-bi/connect-data/refresh-data).
+- **Security:** If your model includes user-defined aggregations, calculated columns on import tables, or calculated tables, ensure that any row-level security (RLS) is set up correctly and tested.
+- **Schema updates:** You should refresh your composite model in Power BI Desktop when schema changes are made to upstream data sources. You will then need to re-publish the model to the Power BI service and test calculations and related reports.
+- **Renaming:** We don't recommended that your rename workspaces or datasets. That's because composite models connect to other tabular models by using the workspace and dataset names (and not their unique identifiers). Renaming a workspace or dataset could break the connections used by your composite model.
+- **Governance:** We don't recommended that your _single version of the truth_ model be a composite model. That's because it would be dependent on other data sources or models, which if updated could result in breaking the composite model. Instead, we recommended that you publish an enterprise semantic model as the single version of truth. Consider this model to be a reliable foundation. Other data modelers can then create composite models that extend this foundation model to create specialized models.
+- **Data lineage:** Use the [data lineage](/power-bi/collaborate-share/service-data-lineage) and [dataset impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) features when publishing composite model changes. These features are available in the Power BI service, and they can help you to understand how datasets are related and used. It's important to understand that you can't perform impact analysis on external datasets that are displayed in lineage view but are in fact located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
 
 ## Next steps
 
