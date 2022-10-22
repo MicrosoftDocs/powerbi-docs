@@ -135,13 +135,24 @@ Second, when you use **Date** table columns—like **Year**, **Quarter**, or **M
 
 Consider an example where there aren't matching values in a cross source group relationship.
 
-In this example, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table relating the **Year** columns. The **Sales** table includes a **SalesAmount** column that stores sales values, while the **Target** table includes a **TargetAmount** column that stores target values.
+In this example, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table relating the **Year** columns. The **Sales** table includes a **SalesAmount** column that stores sales amounts, while the **Target** table includes a **TargetAmount** column that stores target amounts.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-model.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
 
 The **Date** table stores the years 2021 and 2022. The **Sales** table stores sales amounts for years 2021 and 2022, while the **Target** table stores target amounts for 2021, 2022, *and 2023*—a future year.
 
-When a Power BI visual queries the composite model by grouping on the **Year** column from the **Date** table, and it sums the **SalesAmount** and **TargetAmount** columns, it won't show a target amount for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics that eliminate rows where there's no matching value on both sides. If the relationship between the **Date** table and the **Target** table were an intra source group relationship, the visual would a include _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-data.png" alt-text="Diagram shows the table data as described in the previous paragraph." border="false":::
+
+When a Power BI visual queries the composite model by grouping on the **Year** column from the **Date** table and summing the **SalesAmount** and **TargetAmount** columns, it won't show a target amount for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics, which eliminate rows where there's no matching value on both sides.
+
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-visual.png" alt-text="Diagram shows a table visual that doesn't show the 2023 target amount as described in the previous paragraph." border="false":::
+
+If the relationship between the **Date** table and the **Target** table were an intra source group relationship, the visual would a include _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
+
+> [!IMPORTANT]
+> To avoid misreporting, you must ensure that there's referential integrity between dimension and fact tables that reside in different source groups.
+
+For more information about limited relationships, see [Relationship evaluation](/power-bi/transform-model/desktop-relationships-understand#relationship-evaluation).
 
 #### Calculated columns
 
