@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 5/6/2022
+ms.date: 10/22/2022
 ms.custom: ''
 LocalizationGroup: Gateways
 ---
@@ -108,7 +108,7 @@ If you're listed in the **Users** tab of the data source configured in the gatew
 
 ## Manage users
 
-After you add a data source to a gateway, you give users and email-enabled security groups access to the specific data source (not the entire gateway). The access list for the data source controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards and apps, and then share those items with other users.
+After you add a data source to a gateway, you give users and security groups access to the specific data source (not the entire gateway). The access list for the data source controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards and apps, and then share those items with other users.
 
 You can also give users and security groups administrative access to the gateway.
 
@@ -120,7 +120,7 @@ You can also give users and security groups administrative access to the gateway
 1.	From the page header in the Power BI service, select **Settings > Manage gateways.**
 2.	Select the data source where you want to add users.
 3.	Select **Manage Users** from the top ribbon
-4.	Enter the users and mail-enabled security groups from your organization who will access the selected data source and assign the user role. Select **Share**, and the added member's name is added to the list of people who can publish reports that use this data source.
+4.	Enter the users and/or security groups from your organization who will access the selected data source and assign the user role. Select **Share**, and the added member's name is added to the list of people who can publish reports that use this data source.
 
 
     :::image type="content" source="media/service-gateway-data-sources/manage-users.png" alt-text="Screenshot of Add user.":::
