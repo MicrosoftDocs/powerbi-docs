@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/07/2021
+ms.date: 10/20/2022
 LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
@@ -124,7 +124,7 @@ The following table identifies characters you can use to create **user-defined d
 | nn | Display the minute as a number with a leading zero (00–59). |
 | s | Display the second as a number without a leading zero (0–59). |
 | ss | Display the second as a number with a leading zero (00–59). |
-| AM/PM | Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M. |
+| tt | Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M. |
 
 The following table identifies characters you can use to create **user-defined number formats**.
 

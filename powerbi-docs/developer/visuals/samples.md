@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
+ms.topic: reference
 ms.date: 10/13/2022
 ---
 
@@ -80,4 +80,5 @@ These examples demonstrate how to harness the analytic and visual power of R vis
 
 ## Next steps
 
-[Import a Power BI visual](./import-visual.md)
+* [Import a Power BI visual](./import-visual.md)
+* [Develop your own Power BI custom visual](./develop-circle-card.md)

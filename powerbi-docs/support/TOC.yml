@@ -1,0 +1,26 @@
+- name: Power BI support
+  href: index.yml
+  expanded: true
+  items:
+  - name: Microsoft Support
+    expanded: true
+    items:
+    - name: Power BI support options for paid customers
+      href: service-support-options.md
+    - name: Options for contacting support for sign-in issues
+      href: power-bi-cannot-sign-in.md
+    - name: About planned maintenance for the Power BI service
+      href: service-planned-maintenance.md     
+    - name: Capture diagnostic information before contacting support
+      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
+    - name: Request a region move via a support request
+      href: service-admin-region-move.md
+    - name: 10 tips for getting help with Power BI
+      href: service-tips-for-finding-help.md
+    - name: View current and historical service health in the Microsoft 365 admin center
+      href: service-admin-health.md 
+    - name: Learn about how to receive email notifications when there is a Power BI service disruption or outage
+      href: service-interruption-notifications.md
+    - name: Help and support settings
+      href: service-admin-portal-help-support.md
+ 

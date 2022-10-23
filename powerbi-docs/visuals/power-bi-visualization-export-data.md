@@ -3,12 +3,12 @@ title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
 author: mihart
 ms.author: mihart
-manager: kvivek
+manager: kfollis
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/13/2022
+ms.date: 10/18/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -26,9 +26,9 @@ To see the data that's used to create a visual, [you can display that data in Po
 
 ## Who can export data
 
-If you do have permissions to the data, you can see and export the data that Power BI uses to create a visualization.
+If you do have permissions to the data, you can see, and export the data that Power BI uses to create a visualization.
 
-If you don't have permissions to the data, you won't be able to export or open in Excel. Often, data is confidential or limited to specific users. For details, see the [Considerations and limitations](#considerations-and-limitations) section at the end of this document. If you're working in the Power BI service, you can contact your Power BI administrator or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title.
+If you don't have permissions to the data, you won't be able to export or open in Excel. Often, data is confidential or limited to specific users. For details, see the [Considerations and limitations](#considerations-and-limitations) section at the end of this document. If you're working in the Power BI service, you can contact your Power BI administrator, or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title.
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-contact.png" alt-text="Dashboard displaying contact information.":::
 
@@ -97,7 +97,7 @@ Power BI gives you the option to export the summarized data or underlying data. 
 
 ### Export ***summarized*** data
 
-Select the option for **Summarized data** if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that is being used to create the visual.  Since this visual has a hierarchy, you'll export aggregated data for the full hierarchy. This means that even though your current view of the chart shows two columns (two Country/Regions), your summarized data will display four rows -- one for each **City** in the hierarchy.
+Select the option for **Summarized data** if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that is being used to create the visual.  Since this visual has a hierarchy, you'll export aggregated data for the full hierarchy. So, even though your current view of the chart shows two columns (two Country/Regions), your summarized data will display four rows -- one for each **City** in the hierarchy.
 
 If the visual has filters applied, then the data you export will also be filtered. If your visual has aggregates (sum, average, and so on), the export will also be aggregated.
 
@@ -229,6 +229,8 @@ If you find that you can't use this feature, reach out to the report owner and y
 - If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
 - The granularity of data exported to Excel using the **Data with current layout** and **Summarized data** options are identical and the only difference between the options is the shape of the data in Excel. For example, in a matrix visual, the **Data with current layout** preserves the shape of the visual as shown in Power BI when data is exported to Excel while the **Summarized data** option exports the same data but as a flat table of rows and columns.
+
+- When you export datetime data from Power BI, the format of the datetime will change to match the datetime format of your local machine. For example, let's say that the report designer formatted the datetime as DDMMYYYY, which is the default regional format for their locale. When you open that report on your machine and export the data to Excel, the datetime shows as MMDDYY, which is your default regional datetime format. 
 
 - Power BI custom visuals and R visuals aren't currently supported.
 
