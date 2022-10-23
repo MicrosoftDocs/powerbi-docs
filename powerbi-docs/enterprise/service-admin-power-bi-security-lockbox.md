@@ -69,11 +69,27 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
     :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-approval.png" alt-text="Screenshot of the approve and deny buttons of a pending Customer Lockbox for Microsoft Azure request.":::
 
-## Auditing logs
+## Logs
 
-Customer Lockbox logs are stored in the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell). In the Azure portal, select **Activity Log** to view auditing information related to Customer Lockbox requests. You can filter the results for specific actions.
+Customer Lockbox has two type of logs:
+
+* **Activity log** - Available from the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell).
+
+* **Audit logs** - Available from the Office 365 Security & Compliance center. You can see the audit logs in Power BI in the [admin portal](../admin/service-admin-portal-audit-logs.md).
+
+### Activity logs
+
+The following activity logs are available for Customer Lockbox:
+* Deny Lockbox Request
+* Create Lockbox Request
+* Approve Lockbox Request
+* Lockbox Request Expiry
+
+To access the activity logs, in the Azure portal, select **Activity Log** to view auditing information related to Customer Lockbox requests. You can filter the results for specific actions.
 
 :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activitylogs.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure.":::
+
+### Audit logs
 
 Customer Lockbox for Power BI also has four [Power BI activity logs](./../admin/service-admin-auditing.md):
 * GetRefreshHistoryViaLockbox
