@@ -21,6 +21,18 @@ Typically, Customer Lockbox is used to help Microsoft engineers troubleshoot a P
 
 To enable Customer Lockbox, you need to be a Power BI admin. An Azure subscription isn't needed. Customer Lockbox for Power BI is available for all Power BI tenants, free of charge.
 
+## Enable Customer Lockbox for Power BI
+
+To enable Customer Lockbox for Power BI, you must be an Azure AD Global Administrator. To assign roles in Azure AD, see [Assign Azure AD roles to users](/azure/active-directory/roles/manage-roles-portal).
+
+1. Open the Azure portal.
+
+2. Go to **Customer Lockbox for Microsoft Azure**.
+
+3. In the **Administration** tab, select **Enabled**.
+
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/enable-lockbox.png" alt-text="Screenshot of enabling Customer Lockbox for Microsoft Azure in the Customer Lockbox for Microsoft Azure administration tab.":::
+
 ## Microsoft access request
 
 In cases where the Microsoft engineer can't troubleshoot your issue by using standard tools, elevated permissions are requested using the [Just-In-Time](/azure/azure-resource-manager/managed-applications/request-just-in-time-access) (JIT) access service. The request can come from the original support engineer, or from a different engineer.
