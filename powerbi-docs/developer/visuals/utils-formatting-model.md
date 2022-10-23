@@ -8,16 +8,16 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 10/12/2022
+ms.date: 10/23/2022
 ---
 
 # FormattingModel utils
 
-Formatting model utils contains the classes, interfaces, and methods to build formatting settings model to help populate properties panes (format and analytics panes) of your custom Power BI visual.
+*Formatting model utils* contains the classes, interfaces, and methods needed to build a formatting settings model to populate the property panes (format and analytics panes) of your Power BI custom visual.
 
 ## Formatting settings service
 
-The *formatting settings service* receives a formatting settings model, and turns it into a formatting model that can populate the formatting pane. Formatting model service also supports string localizations.
+The *formatting settings service* receives a formatting settings model, and turns it into a formatting model that populates the formatting pane. The formatting model service also supports string localizations.
 
 Initializing formatting settings service:
 
@@ -83,14 +83,14 @@ export class VisualSettingsModel extends FormattingSettingsModel {
 
 ## Formatting settings card
 
-Specify a formatting card in the formatting or analytics pane. A formatting settings card can contain multiple formatting slices, containers, and properties.
-Adding slices to a formatting settings card will put all of these slices into one formatting group.
-Populate card into formatting pane or analytics pane by set `analyticsPane` parameter to false or true accordingly.
+A *formatting settings card* specifies a formatting card in the formatting or analytics pane. A formatting settings card can contain multiple formatting slices, containers, and properties.
+Adding slices to a formatting settings card puts all of these slices into one formatting group.
+The card can populate either the formatting pane or analytics pane by setting the `analyticsPane` parameter to *true* or *false*.
 
-Example declaring formatting settings card including one formatting settings slice:
+Example declaring formatting settings card, including one formatting settings slice:
 
-* Card name should match object name from capabilities.json
-* Slice name should match property name from capabilities.json
+* Card name should match the object name in *capabilities.json*
+* Slice name should match the property name in *capabilities.json*
 
 ```typescript
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
@@ -131,13 +131,13 @@ The *capabilities.json* property declaration should be:
 
 ## Formatting settings slice
 
-Formatting settings slice type consist of two types of slices - [Simple and composite slice](./format-pane.md#formatting-model-components)
+The formatting settings slice type consists of two types of slices - [simple and composite](./format-pane.md#formatting-model-components).
 
 Each slice contains formatting properties. There's a long list of available [formatting properties types](./format-pane.md#visualization-pane-formatting-properties).
 
-Example declaring formatting settings slice of type NumUpDown:
+Example declaring formatting settings slice of type `NumUpDown`:
 
-The slice name should match property name from capabilities.json
+The slice name should match property name from *capabilities.json*.
 
 ```typescript
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
@@ -152,8 +152,9 @@ myNumericSlice = new formattingSettings.NumUpDown({
 ## Build formatting pane model using FormattingModel Utils
 
 1. Open your `settings.ts` file.
-2. Build your own formatting settings model with all of its components (cards, slices, properties ...), Name it `VisualFormattingSettings`.
-Replace your settings code with the following:
+2. Build your own formatting settings model with all its components (cards, slices, properties ...), and name it `VisualFormattingSettings`.
+
+Replace your settings code with the following code:
 
 ```typescript
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
@@ -243,10 +244,10 @@ public getFormattingModel(): powerbi.visuals.FormattingModel {
 
 ## Formatting property selector
 
-The optional selector in formatting properties descriptor determines where each property is bound in the dataView. There are [four distinct options](./objects-properties.md#objects-selectors-types).
+The optional selector in the formatting properties descriptor determines where each property is bound in the dataView. There are [four distinct options](./objects-properties.md#objects-selectors-types).
 
 You can add selector to formatting property in its descriptor object.
-Example taken from [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) for color custom visual data points using property selectors:
+This example is taken from the [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) for color custom visual data points using property selectors:
 
 ```typescript
 new formattingSettings.ColorPicker({
@@ -275,7 +276,7 @@ You can enable resetting formatting settings from:
 
 ## Localization
 
-For more about localization feature and to set up localization environment, see [here](localization.md)
+For more about the localization feature and to set up localization environment, see [Add the local language to your Power BI visual](localization.md).
 
 Init formatting settings service with localization manager in case localization is required in your custom visual:
 
@@ -292,7 +293,7 @@ constructor(options: VisualConstructorOptions) {
 Add `displayNameKey` or `descriptionKey`  instead of `displayName` and `description` in the appropriate formatting component whenever you want a string to be localized.
 Example for building a formatting slice with localized display name and description
 
-```typescript 
+```typescript
  myFormattingSlice = new formattingSettings.NumUpDown({
         name: "myFormattingSlice",
         displayNameKey: "myFormattingSlice_Key",
