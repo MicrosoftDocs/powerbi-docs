@@ -12,7 +12,7 @@ ms.date: 10/31/2022
 
 # Composite model guidance in Power BI Desktop
 
-This article targets data modelers developing Power BI composite models. It describes composite model use cases, and provides you with design guidance. Specifically, the guidance can help you determine whether a composite model is appropriate for your solution. If it is, then this article will also help you design optimal models and reports.
+This article targets data modelers developing Power BI composite models. It describes composite model use cases, and provides you with design guidance. Specifically, the guidance can help you determine whether a composite model is appropriate for your solution. If it is, then this article will also help you design optimal composite models and reports.
 
 > [!NOTE]
 > An introduction to composite models isn't covered in this article. If you're not completely familiar with composite models, we recommend that you first read the [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md) article.
@@ -199,7 +199,7 @@ When possible, avoid having dimension tables in one source group that relate to 
 
 ## Report design
 
-In some situations you can improve the performance of a composite model by designing an optimized report layout.
+In some situations, you can improve the performance of a composite model by designing an optimized report layout.
 
 ### Single source group visuals
 
