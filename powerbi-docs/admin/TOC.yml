@@ -77,7 +77,7 @@
     - name: Tenant settings list
       expanded: false
       items:
-      - name: Help and support tenant settings
+      - name: Help and support settings
         href: service-admin-portal-help-support.md        
       - name: Workspace settings
         href: service-admin-portal-workspace.md       
