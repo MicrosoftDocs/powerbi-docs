@@ -12,11 +12,13 @@ ms.date: 04/16/2019
 
 # Auto-install Power BI apps when embedding for your organization
 
-To embed content from an app, the user that is embedding must have [access to the app](../../collaborate-share/service-create-distribute-apps.md). If the app is installed for the user, then embedding works smoothly. For more information, see [Embed reports or dashboards from app](./index.yml). It's possible to define in PowerBI.com that all apps can be [installed automatically](https://powerbi.microsoft.com/blog/automatically-install-apps/). However, this action is done at the tenant level and applies to all apps.
+❌&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+
+To embed content from an app, the user that is embedding must have [access to the app](../../collaborate-share/service-create-distribute-apps.md). If the app is installed for the user, then embedding works smoothly. If the app isn't installed, the embedding will fail. You can define set all apps to be [installed automatically](https://powerbi.microsoft.com/blog/automatically-install-apps/) from powerbi.com. However, this action is done at the tenant level and applies to all apps.
 
 ## Auto-install app on embedding
 
-If a user has access to an app, but the app isn't installed, then embedding fails. So you can avoid these failures when embedding from an app, you can allow auto installation of the app upon embedding. This action means if the app the user tries to embed isn't installed, it's automatically installed for you. So the content you want gets embedded immediately, resulting in a smooth experience for the user.
+If a user has access to an app, but the app isn't installed, then embedding fails. To avoid these failures when embedding from an app, you can allow auto installation of the app upon embedding. If auto-installation is allowed and the app the user tries to embed isn't installed, it will be automatically installed. With this setting, the content gets embedded immediately, resulting in a smoother experience for the user.
 
 ## Embed for Power BI users (User owns data)
 

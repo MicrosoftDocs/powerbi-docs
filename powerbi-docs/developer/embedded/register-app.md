@@ -12,6 +12,8 @@ ms.date: 12/05/2021
 
 # Register an Azure AD application to use with Power BI
 
+✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+
 To use Power BI embedded analytics, you need to register an Azure Active Directory (Azure AD) application in Azure. The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
 
 ## Determine your embedding solution
