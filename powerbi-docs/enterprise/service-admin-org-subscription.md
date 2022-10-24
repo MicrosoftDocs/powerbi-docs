@@ -60,7 +60,7 @@ To sign up for Power BI Pro:
 
 1. Go to [Power BI Pro signup](https://signup.microsoft.com/create-account/signup?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&ali=1&products=d59682f3-3e3b-4686-9c00-7c7c1c736085) and enter an email address. Select **Next**.
 
-     :::image type="content" source="../media/getstarted-powerbi-email-dialog.png" alt-text="Screenshot showing the get started window.":::
+     :::image type="content" source="../media/service-admin-get-started-email.png" alt-text="Screenshot showing the get started window.":::
 
 1. The email address you entered is evaluated. Select **Set up account** or **Change my email** to enter a different address.
 
@@ -69,7 +69,7 @@ To sign up for Power BI Pro:
 
 1. Complete the **Tell us about yourself** form and select **Next**. The country or region selected determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for most of your users.
 
-   :::image type="content" source="../media/tellus-powerbi-dialog.png" alt-text="Screenshot showing the tell us about yourself window.":::
+   :::image type="content" source="../media/service-admin-tell-us-dialog.png" alt-text="Screenshot showing the tell us about yourself window.":::
 
 1. Select whether you want to receive a verification code by text or call. Enter a phone number where the verification code will be sent. Select **Send verification code**.
 
