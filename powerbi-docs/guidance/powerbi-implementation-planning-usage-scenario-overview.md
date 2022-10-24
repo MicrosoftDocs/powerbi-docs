@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/26/2022
+ms.date: 09/15/2022
 ---
 
 # Power BI usage scenarios
@@ -69,9 +69,10 @@ The following *content management and deployment* scenarios describe approaches 
 
 ## Real-time scenarios
 
-*The articles for this scenario aren't currently available.*
-
 *Real-time* scenarios describe different techniques to allow presenting data updates in near real-time. Monitoring data in real-time allows the organization to react faster when time-sensitive decisions must be made.
+
+- **[Self-service real-time analytics](powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md):** The focus is on how a business analyst can produce real-time Power BI reports.
+- **Programmatic real-time analytics (usage scenario article not currently available):** The focus is on how a developer can produce real-time Power BI reports.
 
 ## Embedding and hybrid scenarios
 

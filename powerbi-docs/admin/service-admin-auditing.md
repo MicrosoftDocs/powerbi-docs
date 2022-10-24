@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 09/29/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -535,6 +535,7 @@ The following operations are available in both the audit and activity logs.
 | Updated the Power BI datasource | | |
 | Updated settings for Power BI template app | UpdateTemplateAppSettings | |
 | Updated testing permissions for Power BI template app | UpdateTemplateAppTestPackagePermissions | |
+| Updated workspace Analysis Services settings | SetASSeverPropertyOnWorkspaceFromExternalApplicationDetailedInfo | |
 | Viewed Power BI dashboard    | ViewDashboard     |Some fields such as *CapacityID* and *CapacityName*, will return null if the report or dashboard is viewed from a Power BI app, rather than a Power BI workspace      |
 | Viewed Power BI dataflow     | ViewDataflow       |     |
 | Viewed Power BI metadata | ViewMetadata | |
@@ -548,6 +549,8 @@ The following operations are available in both the audit and activity logs.
 <sup>2</sup> PublishToWebReport refers to the [Publish to web](../collaborate-share/service-publish-to-web.md) feature.
 
 <sup>3</sup> UpdateFeaturedTables refers to [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
+
+<sup>4</sup> Publishing from Power BI Report Builder to the service doesn't record an event.
 
 ## Next steps
 

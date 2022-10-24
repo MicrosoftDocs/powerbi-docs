@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 02/14/2022
+ms.date: 10/02/2022
 ---
 
 # Assign a workspace to a deployment pipeline
@@ -60,7 +60,7 @@ To unassign a workspace from a pipeline stage, follow these steps:
 
 4. In the *Unassign workspace* dialogue box, select **Unassign**.
 
-    :::image type="content" source="media/deployment-pipelines-assign/unassign-note.png" alt-text="A screenshot showing the unassign workspace pop up window in deployment pipelines, with the unassign button highlighted.":::
+    :::image type="content" source="media/deployment-pipelines-assign/unassign-note.png" alt-text="A screenshot showing the unassign workspace pop-up window in deployment pipelines, with the unassign button highlighted.":::
 
 ## Item connections
 
@@ -69,8 +69,6 @@ After assigning a workspace to a deployment pipeline stage, if there are any adj
 Connections between items are only established when you assign a workspace to a pipeline stage. Adding a new item to a workspace that's part of a pipeline, doesn't trigger the creation of connections between that item and identical items in adjacent stages. To trigger forming a connection between a newly added item in a workspace stage and its equivalent item in an adjacent stage, unassign and reassign the workspace that contains the newly added item.
 
 ## Limitations
-
-* The workspace must be a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
 * You must be an admin of the workspace.
 
@@ -91,6 +89,9 @@ Connections between items are only established when you assign a workspace to a 
 
 >[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
+
+>[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

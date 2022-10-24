@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 08/01/2022
+ms.date: 08/07/2022
 LocalizationGroup: Premium
 ---
 
@@ -99,7 +99,7 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 ---
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [capacity and reliability notifications](../admin/service-interruption-notifications.md#capacity-and-reliability-notifications).
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## AI (Preview)
 
@@ -116,11 +116,18 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 
 ## Datasets
 
+This section describes the following datasets workload settings:
+
+* [Power BI settings](#power-bi-settings)
+
+* [Analysis Services server properties](#analysis-services-server-properties)
+
+### Power BI settings
+
 Use the settings in the table below to control workload behavior. Settings with a link have additional information that you can review in designated sections below the table.
 
 >[!NOTE]
->* Power BI Premium Gen2 supports additional Azure Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
->* In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
+>In Premium Gen1, the datasets workload is enabled by default and cannot be disabled.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
@@ -138,7 +145,7 @@ Use the settings in the table below to control workload behavior. Settings with 
 
 <sup>1</sup> *Premium Gen2* doesn't require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system.
 
-### Max Intermediate Row Set Count
+#### Max Intermediate Row Set Count
 
 Use this setting to control the impact of resource-intensive or poorly designed reports. When a query to a DirectQuery dataset results in a very large result from the source database, it can cause a spike in memory usage and processing overhead. This situation can lead to other users and reports running low on resources. This setting allows the capacity administrator to adjust how many rows an individual query can fetch from the data source.
 
@@ -146,7 +153,7 @@ Alternatively, if the capacity can support more than the one million row default
 
 This setting affects only DirectQuery queries, whereas [Max Result Row Set Count](#max-result-row-set-count) affects DAX queries.
 
-### Max Offline Dataset Size
+#### Max Offline Dataset Size
 
 Use this setting to prevent report creators from publishing a large dataset that could negatively impact the capacity. Power BI can't determine actual in-memory size until the dataset is loaded into memory. It's possible that a dataset with a smaller offline size can have a larger memory footprint than a dataset with a larger offline size.
 
@@ -160,7 +167,7 @@ To safeguard the performance of the system, an additional SKU-specific hard ceil
 |-----------------------------------------------|----------|----------|----------|---------|--------|---------|--------|-------|
 | **Hard ceiling for Max Offline Dataset Size** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB  | 10 GB   | 10 GB  | 10 GB |
 
-### Max Result Row Set Count
+#### Max Result Row Set Count
 
 Use this setting to control the impact of resource-intensive or poorly designed reports. If this limit is reached in a DAX query, a report user sees the following error. They should copy the error details and contact an administrator.
 
@@ -168,7 +175,7 @@ Use this setting to control the impact of resource-intensive or poorly designed 
 
 This setting affects only DAX queries, whereas [Max Intermediate Row Set Count](#max-intermediate-row-set-count) affects DirectQuery queries.
 
-### Query Memory Limit
+#### Query Memory Limit
 
 Use this setting to control the impact of resource-intensive or poorly designed reports. Some queries and calculations can result in intermediate results that use a lot of memory on the capacity. This situation can cause other queries to execute very slowly, cause eviction of other datasets from the capacity, and lead to out of memory errors for other users of the capacity.
 
@@ -184,7 +191,7 @@ The default setting is 0, which results in the following SKU-specific automatic 
 
 To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling doesn't apply to queries issued by tools that use the Analysis Services protocol (also known as XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
 
-### Query Timeout
+#### Query Timeout
 
 Use this setting to maintain better control of long-running queries, which can cause reports to load slowly for users.
 
@@ -201,7 +208,7 @@ The combined time for all queries is 75 minutes, but the setting limit isn't rea
 
 Note that Power BI reports override this default with a much smaller timeout for each query to the capacity. The timeout for each query is typically about three minutes.
 
-### Automatic page refresh
+#### Automatic page refresh
 
 When enabled, automatic page refresh allows users in your Premium capacity to refresh pages in their report at a defined interval, for DirectQuery sources. As a capacity admin, you can do the following:
 
@@ -220,9 +227,27 @@ To find the automatic page refresh setting:
 
 Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization.
 
+### Analysis Services server properties
+
+Power BI Premium Gen2 supports additional Analysis Services server properties. To review these properties, refer to [Server properties in Analysis Services](/analysis-services/server-properties/server-properties-in-analysis-services).
+
+#### Admin portal switch
+
+The Analysis Services XMLA-based server properties setting is enabled by default. When enabled, workspace admins can modify behaviors for an individual workspace. Modified properties apply only to that workspace. To toggle the Analysis Services server properties setting, follow the steps below.
+
+1. Go to your [capacity settings](./../admin/service-admin-portal-capacity-settings.md).
+
+2. Select the capacity you want to disable the *Analysis Services server properties* in.
+
+3. Expand **Workloads**.
+
+4. Under *datasets*, select the setting you want for the **Observe XMLA-based workspace settings (which may override capacity settings)** switch.
+
+    :::image type="content" source="media/service-admin-premium-workloads/disable-xmla.png" alt-text="Screenshot that shows the admin setting for disabling the analysis services server properties.":::
+
 ## Dataflows
 
-The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior.
+The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior in Premium Gen1.
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|

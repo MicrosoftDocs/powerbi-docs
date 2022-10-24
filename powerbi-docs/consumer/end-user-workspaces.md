@@ -33,7 +33,7 @@ The **Customer Profitability** workspace below contains a dashboard, a report, a
 
 ## Permissions in the workspaces
 
-Access permissions determine what you can do in a workspace, so teams can collaborate.  When granting access to a new workspace, *designers* add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
+Access permissions determine what you can do in a workspace, so teams can collaborate.  When granting access to a workspace, *designers* add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
 
 
 As a Power BI *business user*, you'll typically interact in workspaces using the **Viewer** role. But a *designer* could also assign you to the **Member** or **Contributor** role. The Viewer role lets you view and interact with content (dashboards, reports, apps) created by others and shared with you. And because the Viewer role can't access the underlying dataset, it's a safe way to interact with content and not have to worry that you'll "hurt" the underlying data.

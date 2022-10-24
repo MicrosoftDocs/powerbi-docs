@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 08/30/2022
 ---
 
 # Sample Power BI paginated reports
@@ -63,6 +63,22 @@ Data source: Included in the .rdl file
 :::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of sample Power BI paginated report labels.":::
 
 This is a self-contained paginated report sample. It's a multi-column report perfectly sized to fit the print layout of the mailing label template. 
+
+### View the report
+
+When you run this report in Report Builder, it appears to have only one column. 
+
+- Select **Print Layout** to see what it will look like when you print it. 
+
+    :::image type="content" source="media/paginated-reports-samples/report-builder-print-layout.png" alt-text="Screenshot of Print Layout option in Report Builder.":::
+
+Likewise, when you upload this report to the Power BI service and open it there, it opens with only one column. 
+
+- Select **View** > **Print Layout** to see the multicolumn view.
+
+    :::image type="content" source="media/paginated-reports-samples/paginated-view-print-layout.png" alt-text="Screenshot of View menu, Print Layout option.":::
+
+### Report characteristics
 
 Label reports are simple, but have a few unique characteristics to create a paginated label:
 

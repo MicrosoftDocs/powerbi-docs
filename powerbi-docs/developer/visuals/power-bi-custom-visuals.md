@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 07/17/2022
+ms.date: 09/19/2022
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
 ---
@@ -63,6 +63,8 @@ For more information on how to assign licenses see [Licensing and transactabilit
 
 To see how licenses are enforced, see [custom visual licenses](./custom-visual-licenses.md)
 
+[More questions about assigning and managing licenses?](./licensing-faq.md)
+
 ### Certified Power BI visuals
 
 Certified Power BI visuals are visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet certain specified code requirements that the Microsoft Power BI team has tested and approved. The tests are designed to check that the visual doesn't access external services or resources.
@@ -114,5 +116,6 @@ Licensed visuals aren't supported in the following environments. Therefore, if l
 * [Develop a Power BI circle card visual](develop-circle-card.md)
 * [Power BI visuals project structure](visual-project-structure.md)
 * [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
-* [Frequently asked questions](power-bi-custom-visuals-faq.yml)
-* [Power BI Community](https://community.powerbi.com/)
+* [Examples of Power BI visuals](./samples.md)
+
+More questions? try the [Power BI Community](https://community.powerbi.com/)

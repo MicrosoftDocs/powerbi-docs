@@ -88,7 +88,7 @@ The body may resemble the following:
 
 ```
 
-Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh operation and another is submitted, a 409 Conflict HTTP status code is returned.
+Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh operation and another is submitted, a 400 Conflict HTTP status code is returned.
 
 ### Parameters
 
@@ -211,7 +211,7 @@ To cancel an in-progress refresh operation, use the DELETE verb on the refresh o
 For example,
 
 ```http
-DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes /1344a272-7893-4afa-a4b3-3fb87222fdac
+DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes/1344a272-7893-4afa-a4b3-3fb87222fdac
 ``````
 
 ## Limitations
