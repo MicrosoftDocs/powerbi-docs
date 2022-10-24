@@ -12,24 +12,24 @@ LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
 
-With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports to a variety of formats and scenarios. In this article, you create your own flow from scratch. You use the Export to File for Power BI Reports action to automatically distribute a Power BI report via email. 
+With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports in different formats and scenarios. In this article, you create your own flow from scratch. You use the **Export to File for Power BI Reports** action to automatically distribute a Power BI report via email. 
 
 :::image type="content" source="media/service-automate-power-bi-report-export/automate-power-bi-report-overview.png" alt-text="Power Automate steps to export and email a report.":::
 
-Power Automate is a no-code way to interact with the Export To File API in the user interface. See the [connector reference article for the Power BI REST API](/connectors/powerbi/#export-to-file-for-power-bi-reports) to start interacting with the API directly.
+Power Automate is a no-code way to interact with the Export To File API in the user interface. See the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports) to start interacting with the API directly.
 
 ## Prerequisites  
 
-To follow along, make sure you have:
+To follow along, make sure you have the following prerequisites:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A1/EM1 - A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../enterprise/service-premium-what-is.md).
-- Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
+- At least one workspace in your Power BI tenant that's backed by a reserved capacity. This capacity can be any of the A1/EM1 - A6/P3 SKUs. For details, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md).
+- Access to the standard connectors in Power Automate which come with any Office 365 subscription.
 
 ## Create a flow from scratch 
 
-In this task, you create a simple flow from scratch. The flow exports a Power BI report as a PDF, and attaches it to an email to be sent on a weekly basis.  
+In this task, you create a simple flow from scratch. The flow exports a Power BI report as a PDF, and attaches it to an email that is sent on a weekly basis.  
 
-1. Sign in to Power Automate (flow.microsoft.com).
+1. Sign in to Power Automate (https://powerautomate.microsoft.com/).
 2. Select **Create** > **Scheduled cloud flow**. 
 
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-scheduled-flow-2.png" alt-text="Create a scheduled flow in Power Automate.":::
@@ -54,11 +54,11 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Select export format in Power Automate.":::
 
-11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. Note, the page name parameter is different from the display page name. You can find the page name by navigating to the page in the Power BI service, and copying the last portion of the URL, as shown in the example below. 
+11. Optionally, you can indicate specific pages to export in the **Pages pageName -1** field. Note that the page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL, as it's shown in the following example. 
  
     Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
 
-12. Optionally, indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as shown in the example below. Note, only *report* bookmarks are supported, not *personal* bookmarks. You can specify additional parameters for the Power BI report. Find detailed descriptions of these parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-power-bi-reports).
+12. Optionally, you can indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as it's shown in the following example. Note that only *report* bookmarks are supported, not *personal* bookmarks. You can specify additional parameters for the Power BI report. Find detailed descriptions of these parameters in the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports).
 
     Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/ReportSection?bookmarkGuid=xxxxxxxxxx`
 
