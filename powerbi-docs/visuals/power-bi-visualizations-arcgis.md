@@ -151,7 +151,7 @@ For more information about working with layers, visit the [ArcGIS for Power BI o
 
 ### Specify the location type
 
-ArcGIS for Power BI uses geoenabling technology to accurately position location data on the map and automatically render items as points or boundaries by default, based on the type of data they represent. For example, a latitude, longitude coordinate is rendered as a point on the map, whereas a city is rendered as a boundary (polygon).
+ArcGIS for Power BI uses geo enabling technology to accurately position location data on the map and automatically render items as points or boundaries by default, based on the type of data they represent. For example, a latitude, longitude coordinate is rendered as a point on the map, whereas a city is rendered as a boundary (polygon).
 
 You can improve how accurately different locations are rendered on the map by establishing their location type.
 
@@ -256,7 +256,7 @@ To display the selection tools, follow these steps:
 
    | **Tool** | **Description** |
    | --- | --- |
-   | **Single select** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png" "::: | <ul><li>This tool is the default selection tool.</li><li>With this tool active, click a feature to select it.</li><li>Press **Ctrl** and click to add or remove multiple features one at a time.</li><li>When this tool is active, you can select data features on the map to select them and trigger interactions with other visualizations.</li><li>When this tool is active, you can select a pin or a feature on a reference layer to display its tooltip.</li></ul> |
+   | **Single select** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png"::: | <ul><li>This tool is the default selection tool.</li><li>With this tool active, click a feature to select it.</li><li>Press **Ctrl** and click to add or remove multiple features one at a time.</li><li>When this tool is active, you can select data features on the map to select them and trigger interactions with other visualizations.</li><li>When this tool is active, you can select a pin or a feature on a reference layer to display its tooltip.</li></ul> |
    | **Select by rectangle** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png"::: | <ul><li>With this tool active, place the cursor on the map and drag a rectangle to include multiple features within the drawn rectangle.</li><li>Press **Ctrl** and drag to add or remove multiple features from the current selection.</li><li>When this tool is active, you can't pan the map.</li><li>Press **Esc** to cancel drawing and pan the map.</li><li>To resume selecting, click a selection tool.</li></ul> |
    | **Select by circle** :::image type="icon" source="media/power-bi-visualizations-arcgis/circle-select.png"::: | <ul><li>With this tool active, place the cursor on the map to set the focus (center) point from which the circle starts and include multiple features within the circle.</li><li>Press **Ctrl** and drag to add or remove multiple features from the current selection.</li><li>When this tool is active, you can't pan the map.</li><li>Press **Esc** to cancel drawing and pan the map.</li><li>To resume selecting, click a selection tool.</li></ul> |
    | **Select by polygon** :::image type="icon" source="media/power-bi-visualizations-arcgis/polygon-select.png"::: | <ul><li>With this tool active, begin drawing the points of a polygon on the map.</li><li>Double-click to stop drawing and complete the polygon. All features within the boundaries of the polygon are selected.</li><li>Optionally, press **Ctrl** while drawing to enable snapping.</li><li>Press **Esc** to cancel drawing.</li><li>To resume selecting, click a selection tool.</li></ul>**Note** A minimum of three vertices are required to draw a polygon. |
@@ -316,7 +316,7 @@ To add a demographic layer, follow these steps:
 
 1. Scroll through the gallery and select **Add** :::image type="icon" source="media/power-bi-visualizations-arcgis/add-button.png"::: on the layer you want to add to your map.
 
-   For this tutorial, find the **2020 USA Average Holusehold Income** layer and select **Add** :::image type="icon" source="media/power-bi-visualizations-arcgis/add-button.png":::.
+   For this tutorial, find the **2020 USA Average Household Income** layer and select **Add** :::image type="icon" source="media/power-bi-visualizations-arcgis/add-button.png":::.
 
    The map updates to include the reference layer.
 
@@ -357,7 +357,7 @@ In this tutorial, you'll use the **Pittsburgh International Airport** you pinned
 
 To find locations within a specific distance, or *ring buffer*, of the point of origin, follow these steps:
 
-1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Analysis tools** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png" to expand the toolset.
+1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Analysis tools** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-12.png"::: to expand the toolset.
 
 1. Select **Drive-time** :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-14.png":::.
 
@@ -455,7 +455,7 @@ Power BI allows [designers](#designer-options), [tenant administrators](#tenant-
 
 In Power BI Desktop, designers can disable ArcGIS for Power BI on the security tab. Select  **File**  >  **Options and settings**  and then select  **Options**  >  **Security**. When disabled, ArcGIS won't load by default.
 
-:::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-17a.png.png" alt-text="Screenshot shows designer options.":::
+:::image type="content" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-17a.png" alt-text="Screenshot shows designer options.":::
 
 #### Tenant administrator options
 
@@ -509,7 +509,7 @@ The following table compares the standard features available to all Power BI use
 
 ## Next steps
 
-* [Interact with an ArcGIS map that has been shared with you](https://docs.microsoft.com/power-bi/consumer/end-user-arcgis)
+* [Interact with an ArcGIS map that has been shared with you](../consumer/end-user-arcgis)
 * [ArcGIS for Power BI blog posts announcing ArcGIS for Power BI updates](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)  
 * More questions? Try asking the [Esri ArcGIS for Power BI Community](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947)
 * [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/arcgis/products/arcgis-for-power-bi/)
