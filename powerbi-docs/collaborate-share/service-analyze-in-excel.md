@@ -1,6 +1,6 @@
 ---
 title: Start in Power BI with Analyze in Excel
-description: Learn how to bring Power Bi datasets into Excel, view, and interact with them using Analyze in Excel.
+description: Learn how to bring Power BI datasets into Excel, view, and interact with them using Analyze in Excel.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ikedeagu
@@ -91,7 +91,7 @@ Refreshing for external connections isn't supported in Excel Online. Because use
 - Analyze in Excel might not work as expected if field parameters are used in the underlying Power BI dataset.
 
 
-When you connect to Power BI data in Excel, see the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements .
+When you connect to Power BI data in Excel, see the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) for other requirements.
 
 ## Next steps
 
