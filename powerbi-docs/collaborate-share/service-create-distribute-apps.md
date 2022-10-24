@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 10/19/2022
+ms.date: 10/24/2022
 
 LocalizationGroup: Share your work
 ---
@@ -110,12 +110,13 @@ On the **Audience** tab, you create and manage audience groups within the app.
 
 ### Save a copy of a report
 
-You can allow your app users, who have build permissions, to save copies of reports to their workspace. Once saved, the app users can customize the reports copies to meet their needs. 
-To enable save a copy feature for your app users, you first need to click the **Allow users to make a copy of the reports in the app** checkbox under **Setup** tab.
+You can allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
+
+To enable save a copy feature for your app users, select the **Allow users to make a copy of the reports in the app** checkbox on the **Setup** tab.
 
 :::image type="content" source="media/service-create-distribute-apps/save-copy.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
     
-Once clicked, app users who have build permissions will be able to save a copy of a report from the app consumer view. You can also grant build permissions to your app users through app using **Advanced** option under **Manager audience access** pane.  
+When you select that, your app users who have build permissions can save a copy of a report from the app consumer view. You can also grant build permissions to your app users through the app using **Advanced** option under **Manager audience access** pane.  
 
 ### Publish the app
 
