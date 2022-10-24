@@ -31,11 +31,11 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 4. Whether a user opens a report URL directly, or one that's embedded in a web portal, report access requires authentication. The following screen appears if a user has'nt signed in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab should open. Have them check for pop-up blockers if they don't get prompted to sign in.
 
-    :::image type="content" source="./media/service-embed-secure/sign in to Power BI to view this report.png" alt-text="Screenshot of Sign in to view this report page":::
+    :::image type="content" source="./media/service-embed-secure/sign in to Power BI to view this report.png" alt-text="Screenshot of Power BI Sign in page displaying the Please sign in to view this report dialogue.":::
 
 5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed–either they need a Power BI Pro or Premium Per User (PPU) license, or the report must be in a workspace that's in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
-:::image type="content" source="./media/service-embed-secure/VanArsdale Market Share1.png" alt-text="Screenshot of Sign in to view this report page"::::
+:::image type="content" source="./media/service-embed-secure/VanArsdale Market Share1.png" alt-text="Screenshot of Sales and Marketing sample report."::::
 
 6. When you use an iFrame, you might need to edit the **height** and **width** values to have it fit in your portal's web page.
 
