@@ -39,6 +39,10 @@ highlightedContent:
       itemType: concept
       url: developer/embedded/export-to.md
     # Card
+    - title: Edit relationships in the Properties pane
+      itemType: how-to-guide
+      url: desktop-create-and-manage-relationships.md#edit-a-relationship
+    # Card
     - title: "Power BI Premium features: Original, Gen2, and Per User"
       itemType: concept
       url: enterprise/service-premium-features.md
@@ -46,10 +50,6 @@ highlightedContent:
     - title: Create submetrics that roll up to metrics
       itemType: how-to-guide
       url: create-reports/service-metrics-submetrics.md
-    # Card
-    - title: Create sparklines in a table or matrix
-      itemType: how-to-guide
-      url: create-reports/power-bi-sparklines-tables.md
     # Card
     - title: Study Power BI start to finish on Microsoft training 
       itemType: learn
