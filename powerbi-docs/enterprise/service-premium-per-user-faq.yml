@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 05/16/2022
+  ms.date: 10/24/2022
   LocalizationGroup: Premium
 title: Power BI Premium Per User
 summary: |
@@ -32,7 +32,7 @@ sections:
 
           You can use a Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) to try PPU as long as your organization hasn't disabled individual trials with the [Allow users to try Power BI paid features tenant setting](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
 
-          The following table compares the Premium Per User (PPU) features with a Premium capacity:
+          The following table compares the features of Premium Per User (PPU) with Premium capacity:
 
 
           |Feature description  |Per User  |Per Capacity  |
@@ -78,7 +78,7 @@ sections:
 
            ![Screenshot showing a Premium workspace. An arrow points to the diamond icon.](media/service-premium-per-user-faq/premium-per-user-faq-03.png)    
 
-           A Premium Per User (PPU) license is required to access content in a Premium Per User (PPU) workspace or app. This requirement includes scenarios where users are accessing the content through the XMLA endpoint, Analyze in Excel, Composite Models, and so on. You can give access to a workspace to users who don't have a PPU license, and they'll then be prompted to get trial license, if they're eligible. If they aren’t eligible, an admin must assign a license.
+           A Premium Per User (PPU) license is required to access content in a Premium Per User (PPU) workspace or app. This requirement includes scenarios where users are accessing the content through the XMLA endpoint, Analyze in Excel, Composite Models, and so on. You can give access to a workspace to users who don't have a PPU license. If they're eligible, they'll get a prompt for a trial license. If they aren’t eligible, an admin must assign a license.
 
            The following table describes who can access content with PPU.
 
@@ -93,7 +93,7 @@ sections:
           
           Adding subscription capabilities that allow different data views for different recipients, a PPU license (or Premium capacity) is required. A PPU license doesn't allow sending e-mail subscriptions to external users. The content must be hosted in a Premium capacity to offer subscriptions to external users.  
           
-          Unlicensed users can't view datasets or reports crested using datasets in a Premium Per User (PPU) workspace. For example, you can't allow unlicensed users to access a report created from a Power BI dataset in a PPU workspace, and published in a non-PPU workspace. Similarly, content in a PPU workspace shared using **Publish to Web** isn't accessible to unlicensed users.
+          Unlicensed users can't view datasets or reports created using datasets in a Premium Per User (PPU) workspace. For example, you can't allow unlicensed users to access a report created from a Power BI dataset in a PPU workspace, and published in a non-PPU workspace. Similarly, content in a PPU workspace shared using **Publish to Web** isn't accessible to unlicensed users.
           
           Power BI mobile works with any content published to a Premium Per User (PPU) app or workspace.
 
@@ -112,7 +112,7 @@ sections:
 
           * PPU model refresh parallelism limits depend on the number of licenses your organization owns. The lowest PPU model refresh parallelism limit is 40, and the highest is 160.
           
-          * If your PPU trial expires, you and your users can still access the workspace, but content that requires the license is unavailable. You must then either move the workspace to a Premium capacity, or turn the requirement offering.
+          * If your PPU trial expires, you and your users can still access the workspace, but content that requires the license is unavailable. You must then either move the workspace to a Premium capacity, or turn off the requirement.
 
           * The export API for PPU is available for paginated reports, with a limit of one call every 5 minutes, per user. Power BI reports aren't supported.
 
