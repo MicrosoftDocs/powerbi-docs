@@ -16,6 +16,17 @@ LocalizationGroup: Administration
 
 External data consumers can view and access datasets in their own tenants that have been shared with them by a data provider via in-place dataset sharing (preview). A data consumer is a user who doesn't own the dataset, but needs to access it. This article provides guidance on how to access and build reports in your own tenant based on external datasets in other tenants that have been shared with you.
 
+## Enable the shared datasets preview feature
+Before you can access the datasets shared in-place, you'll need to enable the feature in the *Preview features* option of your Power BI desktop:  
+
+1. In your tenant, go to **Options & settings**.
+
+1. Select **Options** and then **Preview features**. 
+
+1. Select the checkbox next to the **DirectQuery for PBI datasets and AS** option 
+
+1. Select the checkbox next to the **Connect to external datasets shared with me** option. 
+
 ## Access shared datasets
 Once enabled on provider side, consumers will be able to see the datasets in the data hub in Power BI Desktop, on a tab called *External data*. Use the following instructions to access and build reports with a dataset that a data provider shared to your tenant:
 

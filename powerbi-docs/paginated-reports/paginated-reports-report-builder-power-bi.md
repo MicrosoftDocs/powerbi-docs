@@ -8,7 +8,7 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 07/21/2022
+ms.date: 10/18/2022
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -118,6 +118,7 @@ Here are some other features that aren't supported:
 - Document maps. They don't render in the Power BI service, but they do when you export a report.
 - Drillthrough reports.  Consider using URL parameters with paginated reports for drillthrough scenarios.
 - Shared data sources and shared datasets.
+- Data-driven subscriptions for paginated reports in the Power BI service.
 
  
 ## Next steps

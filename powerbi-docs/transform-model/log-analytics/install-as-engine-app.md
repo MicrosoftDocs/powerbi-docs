@@ -2,7 +2,7 @@
 title: Installing the Log Analytics for Power BI Datasets Template App (preview)
 description: Installation guide for the Template App that visualizes Dataset activity from Analysis Services
 author: bstar92
-ms.author: v-bblaga
+ms.author: kesharab
 ms.reviewer: bstar92
 ms.service: powerbi
 ms.subservice: pbi-transform-model
