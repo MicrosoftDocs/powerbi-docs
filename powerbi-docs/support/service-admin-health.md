@@ -19,7 +19,7 @@ The Microsoft 365 admin center provides important tools for Power BI admins. The
 
 * Global Administrator
 
-For more info about roles, see [Administrator roles related to Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+For more info about roles, see [Administrator roles related to Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Sign in to the [Microsoft 365 admin center](https://portal.office.com/adminportal).
 

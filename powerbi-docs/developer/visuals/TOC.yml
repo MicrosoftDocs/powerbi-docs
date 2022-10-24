@@ -176,7 +176,7 @@
     items:
     - name: "Dev Center"
       href: https://powerbi.microsoft.com/developers/
-    - name: "Samples of Power BI visuals"
+    - name: "Examples of Power BI visuals"
       href: samples.md
     - name: "Custom Visuals Git Repo"
       href: https://github.com/PowerBi-Projects/PowerBI-visuals/

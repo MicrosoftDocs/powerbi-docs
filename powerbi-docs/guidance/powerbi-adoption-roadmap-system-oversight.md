@@ -217,7 +217,7 @@ Suggestions for managing Premium capacity:
 
 - Create a specific set of criteria for content that will be published to Premium capacity. It's especially relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity isn't well-managed. For a list of items that may be included in the best practices review (such as reasonable dataset size and efficient calculations), see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) article.
 - Regularly use the [Premium monitoring app](../enterprise/service-premium-gen2-metrics-app.md) to understand resource utilization and patterns for the Premium capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
-- Configure the [tenant setting](../admin/service-interruption-notifications.md#enable-notifications) so Power BI notifies you if the [Premium capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or an outage or incident occurs.
+- Configure the [tenant setting](../support/service-interruption-notifications.md#enable-notifications) so Power BI notifies you if the [Premium capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or an outage or incident occurs.
 
 #### Autoscale
 
@@ -457,7 +457,7 @@ Considerations and key actions you can take to improve management of the Power B
 
 - Conduct a review of all tenant settings to ensure they're aligned with [data culture](powerbi-adoption-roadmap-data-culture.md) objectives and [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
 - Document the tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature.
-- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](../admin/service-admin-portal-help-support.md) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
+- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](/power-bi/support/service-admin-portal-help-support) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
 
 Considerations and key actions you can take to improve management of user machines and devices:
 

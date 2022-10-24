@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Help and support tenant settings
 
-These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
+These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](../admin/service-admin-portal-about-tenant-settings.md).
 
 ## Publish "Get Help" information
 
@@ -78,4 +78,4 @@ As with other tenant settings, you can choose who the **Custom message** applies
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-about-tenant-settings.md)
+* [About tenant settings](../admin/service-admin-portal-about-tenant-settings.md)

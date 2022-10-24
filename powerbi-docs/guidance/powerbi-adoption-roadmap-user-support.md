@@ -101,7 +101,7 @@ Managing requests as purely an escalation path from the help desk gets difficult
 
 ## Microsoft support
 
-In addition to the internal user support approaches discussed in this article, there are valuable [external support options](../admin/service-support-options.md) directly available to Power BI users and administrators that shouldn't be overlooked.
+In addition to the internal user support approaches discussed in this article, there are valuable [external support options](../support/service-support-options.md) directly available to Power BI users and administrators that shouldn't be overlooked.
 
 ### Microsoft documentation
 
@@ -120,7 +120,7 @@ Users with a Power BI Pro or Premium Per User license are eligible to [log a sup
 
 ### Administrator support
 
-There are several support options available for [global and Power BI administrators](../admin/service-support-options.md#get-started-with-support-for-admins).
+There are several support options available for [global and Power BI administrators](../support/service-support-options.md#get-started-with-support-for-admins).
 
 For customers who have a [Microsoft Unified Support](https://www.microsoft.com/en-us/msservices/unified-support-solutions) contract, consider granting help desk and COE members access to the [Microsoft Services Hub](https://serviceshub.microsoft.com/home). One advantage of the Microsoft Services Hub is that your help desk and COE members can be setup to [submit and view support requests](/services-hub/getting-started/roles-permissions#support-contact-permissions).
 
