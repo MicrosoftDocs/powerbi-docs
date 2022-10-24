@@ -83,7 +83,7 @@ By default, [Azure AD B2B Guest users](../enterprise/service-admin-azure-ad-b2b.
 
 A limitation to be aware of:
 
-A person with a Power BI Pro license can be a member of a maximum of 1,000 workspaces.
+- A person with a Power BI Pro license can be a member of a maximum of 1,000 workspaces.
 
 ## Next steps
 
