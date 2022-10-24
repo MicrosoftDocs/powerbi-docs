@@ -21,7 +21,7 @@ In the Power BI service, go to the workspace that contains the dataset or report
 
 - Select **More options (...)** next to the dataset or report name and select **Analyze in Excel**.
 
-    :::image type="content" source="media/service-analyze-in-excel/start-powerbi-analyze-in-excel-more-options.png" alt-text="Screenshot of My workspace showing Analyze in Excel option from more options dot dot dot selected.":::  
+    :::image type="content" source="media/service-analyze-in-excel/start-powerbi-analyze-in-excel-more-options.png" alt-text="Screenshot of My workspace showing Analyze in Excel action from more options dropdown menu selected.":::  
     
 - Open the report and select **Export** > **Analyze in Excel** from the top ribbon.
 
