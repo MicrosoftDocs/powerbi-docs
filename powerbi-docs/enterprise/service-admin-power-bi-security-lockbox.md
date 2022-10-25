@@ -1,6 +1,6 @@
 ---
 title: Lockbox for Power BI
-description: Power BI lockbox is a service that allows customers to control how Microsoft engineers access their data.
+description: Customer Lockbox for Power BI is a service that allows customers to control how Microsoft engineers access their data.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
