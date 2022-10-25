@@ -83,7 +83,7 @@ Customer Lockbox has two type of logs:
 
 * **Audit logs** - Available from the Office 365 Security & Compliance center. You can see the audit logs in Power BI in the [admin portal](../admin/service-admin-portal-audit-logs.md).
 
-    Customer Lockbox for Power BI also has four [Power BI activity logs](./../admin/service-admin-auditing.md):
+    Customer Lockbox for Power BI has four [Power BI activity logs](./../admin/service-admin-auditing.md):
 
     |Audit log                             |Friendly name                               |
     |--------------------------------------|--------------------------------------------|
