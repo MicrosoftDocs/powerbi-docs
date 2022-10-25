@@ -20,15 +20,58 @@ Some of the things to consider when planning your capacity are:
 * The number and complexity of required queries
 * The hourly distribution of your application usage
 * Data refresh rates
-* More usage patterns that are hard to predict
+* Other usage patterns that are hard to predict
 
-This article explains how to simplify capacity planning for Power BI embedded analytics by using the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), created for automating load testing for Power BI embedded analytics capacities (*A*, *EM* or *P* SKUs).
+This article explains how to plan what capacity you need and do a load testing assessment for Power BI embedded analytics. This article applies to all Power BI embedded analytics gen2 capacities (*A*, *EM* or *P* SKUs).
 
-## Planning tool
+For information about gen2 capacities and how they differ from gen1 capacities see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
- The [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) can help you understand how much user load your capacity can handle. It uses PowerShell to create automated load tests against your capacities, and lets you choose which reports to test, and how many concurrent users to simulate.
+When planning your capacity, take the following steps:
 
-The tool generates load on a capacity by continuously rendering each report with new filter values (to prevent unrealistically good performance due to report caching), until the token required for authenticating the tool against the service, expires.
+1. [Optimize your performance and resource consumption](#optimize-your-performance-and-resource-consumption)
+1. [Determine your minimum SKU](#determine-your-minimum-sku)
+1. [Assess your capacity load](#assess-your-capacity-load)
+1. [Set up your capacity auto-scale](#set-up-auto-scale)
+
+## Optimize your performance and resource consumption
+
+Before you start any capacity planning or load testing assessment you should optimize the performance and resource consumption (especially memory footprint) of your reports and datasets​.
+
+To optimize your performance, follow the guidelines in the following resources:
+
+* [Optimization guide for Power BI](../../guidance/power-bi-optimization.md)
+* [Best practices for faster performance in Power BI embedded analytics](embedded-performance-best-practices.md)
+
+For a more detailed tutorial on optimizing performance, see our [learn module](/learn/modules/optimize-model-power-bi/).
+
+## Determine your minimum SKU
+
+The following table summarizes all the limitations that are dependent on the capacity size.​
+
+To determine the minimum SKU for your capacity, check the **Max memory per dataset (GB)** column in the table below. See also Limitations in Premium Gen2.
+
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+| ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
+| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
+| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
+| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  |
+| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
+| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
+| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
+| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
+| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
+
+<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
+
+<sup>2</sup> These limits only apply to the datasets workload per capacity.
+
+<sup>3</sup> The *Max memory per dataset (GB)* column (also called the *model size limit*) represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+
+<sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+
+## Assess your capacity load
+
+## Set up auto-scale
 
 ### Using the planning tool
 
@@ -50,12 +93,6 @@ To see the effects of the load test in the metrics app after the test runs, foll
 2. Initiate an on-demand refresh by clicking **refresh now**.
 
     ![Power BI premium capacity metrics.](media/embedded-capacity-planning/embedded-capacity-planning.png)
-
-## Power BI capacity tools GitHub repository
-
-The [Power BI capacity tools GitHub repository](https://github.com/microsoft/PowerBI-Tools-For-Capacities) was created to host the capacity planning tool and other future tools and utilities.
-
-The repository is open source and users are encouraged to contribute, add more tools related to Power BI Premium and Embedded capacities, and improve the existing ones.
 
 ## Next steps
 

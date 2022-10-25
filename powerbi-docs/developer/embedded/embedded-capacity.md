@@ -19,13 +19,13 @@ Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) in order
 >[!NOTE]
 >You'll need a Power BI Pro or Premium Per User (PPU) account to publish content.
 
-## What is embedded analytics?
+## What are the different capacities?
 
 Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
 
-* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications.
+* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications. Power BI Embedded uses *A* SKUs.
 
-* Embedding Power BI is part of Microsoft Office's [*Power BI Premium*](#power-bi-premium). It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+* [*Power BI Premium*](#power-bi-premium) is a Microsoft Office offer that includes Embedding Power BI. It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium uses *EM* or *P* SKUs.
 
 ### Power BI Embedded
 
