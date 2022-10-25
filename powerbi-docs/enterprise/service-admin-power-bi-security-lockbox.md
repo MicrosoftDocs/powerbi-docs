@@ -81,16 +81,16 @@ Customer Lockbox has two type of logs:
 
     :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activitylogs.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure.":::
 
-* **Audit logs** - Available from the Office 365 Security & Compliance center. You can see the audit logs in Power BI in the [admin portal](../admin/service-admin-portal-audit-logs.md).
+* **Audit logs** - Available from the Office 365 Security & Compliance center. You can see the audit logs in the Power BI [admin portal](../admin/service-admin-portal-audit-logs.md).
 
-    Customer Lockbox for Power BI has four [Power BI activity logs](./../admin/service-admin-auditing.md):
+    Customer Lockbox for Power BI has four [Power BI audit logs](./../admin/service-admin-auditing.md):
 
     |Audit log                             |Friendly name                               |
     |--------------------------------------|--------------------------------------------|
-    |GetRefreshHistoryViaLockbox           |Get Refresh History Via Lockbox             |
-    |DeleteAdminUsageDashboardsViaLockbox  |Delete Admin Usage Dashboards Via Lockbox   |
-    |DeleteUsageMetricsv2PackageViaLockbox |Delete Usage Metrics v2 Package Via Lockbox |
-    |DeleteAdminMonitoringFolderViaLockbox |Delete Admin Monitoring Folder Via Lockbox  |
+    |GetRefreshHistoryViaLockbox           |Get refresh history via lockbox             |
+    |DeleteAdminUsageDashboardsViaLockbox  |Delete admin usage dashboards via lockbox   |
+    |DeleteUsageMetricsv2PackageViaLockbox |Delete usage metrics v2 package via lockbox |
+    |DeleteAdminMonitoringFolderViaLockbox |Delete admin monitoring folder via lockbox  |
 
 ## Exclusions
 

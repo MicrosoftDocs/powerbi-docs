@@ -343,6 +343,9 @@ The following operations are available in both the audit and activity logs.
 | Dataflow permissions added   | DataflowPermissionsAdded       | Not currently used     |
 | Dataflow permissions removed      | DataflowPermissionsRemoved                  | Not currently used       |
 | Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem               |        |
+| Delete admin monitoring folder via lockbox     | DeleteAdminMonitoringFolderViaLockbox               |        |
+| Delete admin usage dashboards via lockbox     | DeleteAdminUsageDashboardsViaLockbox               |        |
+| Delete usage metrics v2 package via lockbox     | DeleteUsageMetricsv2PackageViaLockbox               |        |
 | Deleted deployment pipeline      | DeleteAlmPipeline     |   |
 | Deleted current value connection of Power BI metric | | |
 | Deleted link to external resource | DeleteExternalResourceLink | |
@@ -395,6 +398,7 @@ The following operations are available in both the audit and activity logs.
 | Generated Power BI Embed Token     | GenerateEmbedToken  |        |
 | Generate screenshot     | GenerateScreenshot |   |
 | Get Power BI group users | GetGroupUsers | |
+| Get refresh history via lockbox | GetRefreshHistoryViaLockbox | |
 | Imported file to Power BI   | Import   |           |
 | Initiated Power BI gateway cluster authentication process | | |
 | Inserted or updated current value connection of Power BI metric | UpsertGoalCurrentValueConnection | |
