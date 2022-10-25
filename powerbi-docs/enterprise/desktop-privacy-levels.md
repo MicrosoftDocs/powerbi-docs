@@ -24,7 +24,7 @@ To configure data source settings:
 1. Under **Privacy Levels**, select a privacy level.
 1. Select **OK**, and then select **Close**.
 
-![Screenshot of data source settings showing the edit permissions dialog highlighted.](media/desktop-privacy-levels/desktop_privacylevels2.png)
+![Screenshot of data source settings showing the edit permissions dialog highlighted.](media/desktop-privacy-levels/desktop_privacy-levels2.png)
 
 The following table describes data source privacy levels:
 
@@ -46,7 +46,7 @@ To configure privacy options for a file:
 1. Under **Privacy Levels**, select a privacy level.
 1. Select **OK**.
 
-![Screenshot of the options dialog showing privacy level settings. Current file and privacy are highlighted.](media/desktop-privacy-levels/desktop_privacylevels1.png)
+![Screenshot of the options dialog showing privacy level settings. Current file and privacy are highlighted.](media/desktop-privacy-levels/desktop_privacy-levels1.png)
 
 The following table describes privacy level settings:
 
