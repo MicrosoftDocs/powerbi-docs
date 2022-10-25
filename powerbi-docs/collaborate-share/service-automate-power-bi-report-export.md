@@ -1,6 +1,6 @@
 ---
 title: Export and email a report with Power Automate
-description: In this article, you use Power Automate to automate the export and distribution of Power BI reports in a variety of supported formats and scenarios.  
+description: In this article, you use Power Automate to automate the export and distribution of Power BI reports in various supported formats and scenarios.  
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -35,7 +35,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-scheduled-flow-2.png" alt-text="Create a scheduled flow in Power Automate.":::
 
 3. In **Build a scheduled flow**, give your flow a name. 
-4. In **Run this flow**, select the starting date and time for your flow, as well as the repetition frequency.
+4. In **Run this flow**, select the starting date and time for your and the repetition frequency.
 5. In **On these days**, select which days you want your flow to run, and select **Create**.
 
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-build-flow-5.png" alt-text="Power Automate, schedule the flow.":::
