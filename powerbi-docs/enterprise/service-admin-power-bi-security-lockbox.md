@@ -57,7 +57,7 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
 3. To get the details of the pending request, the designated approver can select the Customer Lockbox request from the **Pending Requests** menu option.
 
-4. After reviewing the request, the designated approver enters a justification and selects one of the options below. For auditing purposes, the actions are logged in the Customer Lockbox [auditing logs](#auditing-logs).
+4. After reviewing the request, the designated approver enters a justification and selects one of the options below. For auditing purposes, the actions are logged in the Customer Lockbox [logs](#logs).
 
     * **Approve** - Access is granted to the Microsoft engineer for a default period of eight hours.
 
