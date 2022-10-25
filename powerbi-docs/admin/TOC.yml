@@ -29,9 +29,9 @@
     - name: Data storage for cross-service capabilities
       href: service-admin-m365-data-access-storage.md      
     - name: Move between regions
-      href: service-admin-region-move.md           
+      href: /power-bi/support/service-admin-region-move
     - name: Track service health
-      href: service-admin-health.md
+      href: /power-bi/support/service-admin-health
     - name: Find users that have signed in
       href: service-admin-access-usage.md
     - name: Track user activities
@@ -77,6 +77,8 @@
     - name: Tenant settings list
       expanded: false
       items:
+      - name: Help and support settings
+        href: service-admin-portal-help-support.md        
       - name: Workspace settings
         href: service-admin-portal-workspace.md       
       - name: Information protection
