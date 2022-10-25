@@ -457,7 +457,7 @@ Considerations and key actions you can take to improve management of the Power B
 
 - Conduct a review of all tenant settings to ensure they're aligned with [data culture](powerbi-adoption-roadmap-data-culture.md) objectives and [governance](powerbi-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
 - Document the tenant settings for the internal Power BI community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature.
-- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](../admin/service-admin-portal-help-support.md) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
+- When user resources are established, as described in the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](/power-bi/support/service-admin-portal-help-support) to customize the links under the **Get Help** menu option. It will direct users to your documentation, community, and help.
 
 Considerations and key actions you can take to improve management of user machines and devices:
 
