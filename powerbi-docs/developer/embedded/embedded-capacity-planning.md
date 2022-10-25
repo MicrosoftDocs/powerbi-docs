@@ -70,6 +70,25 @@ To determine the minimum SKU for your capacity, check the **Max memory per datas
 
 ## Assess your capacity load
 
+To test or assess your capacity load:
+
+1. Create a [**Gen2 Embedded capacity** in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Azure AD tenant as your Power BI tenant and a user account that's signed in to that same tenant.​
+
+2. **Assign the workspace** (or workspaces) you’ll use to test to the Gen2 capacity you created. You can do this one of the following ways:
+
+   * *Programmatically* with the [Groups AssignToCapacity API](/rest/api/power-bi/capacities/groups-assign-to-capacity). Check the assignment status with the [Groups CapacityAssignmentStatus API](/rest/api/power-bi/capacities/groups-capacity-assignment-status) or via a *PowerShell* script (see `AssignWorkspacesToCapacity` in [this sample](https://github.com/Azure-Samples/powerbi-powershell/blob/master/Zero-Downtime-Capacity-Scale.ps1)).
+   * [*Manually*](../../enterprise/service-premium-capacity-manage-gen2.md#assigning-workspaces-to-capacities) as a workspace admin or via the Admin portal as a capacity admin (see also [Assign a workspace to a capacity using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-using-a-master-user))​.
+
+3. As the capacity admin, install the Gen2 capacity metrics app and refresh its data after providing the capacity ID and the time in days to monitor (see relevant blog post and follow instruction in here) ​
+
+4. Use the Power BI Capacity Load Assessment Tool on GitHub repository which also has a link to a video walk through here. Use carefully: test with up to a few dozens of concurrent simulated users and extrapolate for higher concurrent loads (100s, 1,000s)​
+(Notice that the Power BI embedded analytics capacity planning doc page refers to the same tool but still refers to the old Gen1 premium capacity monitoring app that should be ignored). ​
+Alternatively load test with other tools but treat the iFrame as a blackbox and simulate user activity via JS code. ​
+
+5. Use the Premium Gen 2 Capacity metrics app (installed in step 3) to monitor your capacity utilization incurred via the load testing tool (step 4). Alternatively you can also monitor the capacity the Gen2 metrics  in Azure Alerts​
+
+6. Consider using a larger SKU for your capacity if the actual CPU incurred on your capacity by the load testing (as reported in the capacity utilization metrics power BI app) is reaching or approaching the capacity limit.
+
 ## Set up auto-scale
 
 ### Using the planning tool
@@ -92,6 +111,12 @@ To see the effects of the load test in the metrics app after the test runs, foll
 2. Initiate an on-demand refresh by clicking **refresh now**.
 
     ![Power BI premium capacity metrics.](media/embedded-capacity-planning/embedded-capacity-planning.png)
+
+## Power BI capacity tools GitHub repository
+
+The [Power BI capacity tools GitHub repository](https://github.com/microsoft/PowerBI-Tools-For-Capacities) was created to host the capacity planning tool and other future tools and utilities.
+
+The repository is open source and users are encouraged to contribute, add more tools related to Power BI Premium and Embedded capacities, and improve the existing ones.
 
 ## Next steps
 
