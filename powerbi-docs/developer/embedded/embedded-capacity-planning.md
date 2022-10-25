@@ -47,8 +47,7 @@ For a more detailed tutorial on optimizing performance, see our [learn module](/
 ## Determine your minimum SKU
 
 The following table summarizes all the limitations that are dependent on the capacity size.​
-
-To determine the minimum SKU for your capacity, check the **Max memory per dataset (GB)** column in the table below. See also Limitations in Premium Gen2.
+To determine the minimum SKU for your capacity, check the **Max memory per dataset (GB)** column. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
 | Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
