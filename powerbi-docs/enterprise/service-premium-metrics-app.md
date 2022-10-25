@@ -23,7 +23,7 @@ You can use the **Power BI Premium Metrics app** to manage the health and capaci
 The following sections describe the landing page, and the three metrics report pages, in detail. 
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../admin/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. In particular, it greatly reduces the metrics administrators must monitor (CPU only) to ensure performance and users’ experience. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).

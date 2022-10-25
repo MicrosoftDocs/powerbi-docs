@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/21/2022
+ms.date: 10/20/2022
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -209,7 +209,7 @@ If the data in the column you specify as an argument is incompatible with the da
 * You can type a date as a string, and DAX will parse the string and attempt to cast it as one of the Windows date and time formats.
 * You can add TRUE + 1 and get the result 2, because TRUE is implicitly converted to the number 1 and the operation 1+1 is performed.
 * If you add values in two columns, and one value happens to be represented as text ("12") and the other as a number (12), DAX implicitly converts the string to a number and then does the addition for a numeric result. The following expression returns 44: = "22" + 22.
-* If you attempt to concatenate two numbers, Excel will present them as strings and then concatenate. The following expression returns "1234": = 12 & 34.
+* If you attempt to concatenate two numbers, DAX will present them as strings and then concatenate. The following expression returns "1234": = 12 & 34.
 
 ### Table of implicit data conversions
 The type of conversion that is performed is determined by the operator, which casts the values it requires before performing the requested operation. These tables list the operators, and indicate the conversion that is performed on each data type in the column when it is paired with the data type in the intersecting row.

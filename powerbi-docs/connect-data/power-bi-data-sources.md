@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 08/03/2022
+ms.date: 10/21/2022
 ---
 
 # Power BI data sources
@@ -139,7 +139,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No | No |
 | Planview Projectplace | Yes | Yes | No | No | No | Yes |
 | PostgreSQL | Yes | Yes | Yes | Yes | No | Yes |
-| Power BI dataflows | Yes | Yes | No | No | No | Yes |
+| Power BI dataflows | Yes | Yes | Yes | No | No | Yes |
 | Power BI datasets | Yes | Yes | Yes | No | No | No |
 | Power platform dataflows | Yes | Yes | No | No | No | Yes |
 | Python script | Yes | Yes <sup>4</sup> | No | Yes <sup>4</sup> | Yes | No |

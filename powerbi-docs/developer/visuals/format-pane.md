@@ -394,7 +394,7 @@ Then, create the `getFormattingModel`
                             descriptor:
                             {
                                 objectName: "dataCard",
-                                propertyName: "fontColor"
+                                propertyName: "lineAlignment"
                             },
                             mode: powerbi.visuals.AlignmentGroupMode.Horizonal,
                             value: "right"

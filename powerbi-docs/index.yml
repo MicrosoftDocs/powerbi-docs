@@ -39,17 +39,17 @@ highlightedContent:
       itemType: concept
       url: developer/embedded/export-to.md
     # Card
-    - title: Protect sensitive data with data loss prevention policies
-      itemType: concept
-      url: enterprise/service-security-dlp-policies-for-power-bi.md
-    # Card
-    - title: Get your data on the go with Power BI mobile apps
-      itemType: learn
-      url: /training/modules/explore-power-bi-mobile-apps
-    # Card
-    - title: Create sparklines in a table or matrix
+    - title: Edit relationships in the Properties pane
       itemType: how-to-guide
-      url: create-reports/power-bi-sparklines-tables.md
+      url: desktop-create-and-manage-relationships.md#edit-a-relationship
+    # Card
+    - title: "Power BI Premium features: Original, Gen2, and Per User"
+      itemType: concept
+      url: enterprise/service-premium-features.md
+    # Card
+    - title: Create submetrics that roll up to metrics
+      itemType: how-to-guide
+      url: create-reports/service-metrics-submetrics.md
     # Card
     - title: Study Power BI start to finish on Microsoft training 
       itemType: learn
@@ -305,15 +305,31 @@ conceptualContent:
         - url: troubleshoot/known-issues/power-bi-known-issues.md
           itemType: overview
           text: Known issues for Power BI features
-        - url: admin/service-interruption-notifications.md
-          itemType: concept
-          text: Service interruption notifications
-        - url: admin/service-support-options.md
+        - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
           itemType: how-to-guide
-          text:  Power BI Pro and Power BI Premium support options
+          text: Troubleshoot refresh scenarios
+        - url: consumer/service-troubleshoot-subscribe.yml
+          itemType: how-to-guide
+          text: Troubleshoot subscribing to reports and dashboards
       # footerLink (optional)
       footerLink:
         url: troubleshoot/index.yml
+        text: See more        
+    # Card
+    - title: Support
+      links:
+        - url: support/service-support-options.md
+          itemType: how-to-guide
+          text: Power BI Pro and Power BI Premium support options
+        - url: support/service-admin-health.md
+          itemType: how-to-guide
+          text: Track Power BI service health in Microsoft 365
+        - url: support/service-admin-region-move.md
+          itemType: how-to-guide
+          text:  Move Power BI to another region
+      # footerLink (optional)
+      footerLink:
+        url: support/index.yml
         text: See more        
 
 # additionalContent section (optional)

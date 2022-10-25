@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/19/2022
+ms.date: 10/18/2022
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -117,19 +117,21 @@ This process describes running a PowerShell command that launches the **Certific
 
 ### [OSX](#tab/sdk2osx)
 
-1. If the lock in the upper left is locked, select it to unlock it. Search for *localhost* and double-click the certificate.
+1. Open *Keychain Access*.
+
+2. If the lock in the upper left is locked, select it to unlock it. Search for *localhost* and double-click the certificate.
 
     ![Install SSL cert 1 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
 
-2. Select **Always Trust** and close the window.
+3. Select **Always Trust** and close the window.
 
     ![Install SSL cert 2 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
 
-3. Enter your username and password, and select **Update Settings**.
+4. Enter your username and password, and select **Update Settings**.
 
     ![Install SSL cert 3 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx3.png)
 
-4. Close any browsers that you have open.
+5. Close any browsers that you have open.
 
 > [!NOTE]
 > If the certificate is not recognized, restart your computer.
