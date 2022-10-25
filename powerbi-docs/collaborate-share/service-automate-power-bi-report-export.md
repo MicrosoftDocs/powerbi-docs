@@ -35,7 +35,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
     :::image type="content" source="./media/service-automate-power-bi-report-export/schedule-a-cloud- flow.png" alt-text="Create a scheduled flow in Power Automate.":::
 
 3. In **Build a scheduled flow**, give your flow a name. 
-4. In **Run this flow**, select the starting date and time for your and the repetition frequency.
+4. In **Run this flow**, select the starting date and time for your flow and the repetition frequency.
 5. In **On these days**, select which days you want your flow to run, and select **Create**.
 
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-build-flow-5.png" alt-text="Power Automate, schedule the flow.":::
@@ -54,11 +54,11 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Select export format in Power Automate.":::
 
-11. Optionally, you can indicate specific pages to export in the **Pages pageName -1** field. Note that the page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL, as it's shown in the following example. 
+11. Optionally, you can indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL, as it's shown in the following example. 
  
     Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
 
-12. Optionally, you can indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as it's shown in the following example. Note that only *report* bookmarks are supported, not *personal* bookmarks. You can specify additional parameters for the Power BI report. Find detailed descriptions of these parameters in the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports).
+12. Optionally, you can indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as it's shown in the following example. Note only *report* bookmarks are supported, not *personal* bookmarks. You can specify another parameters for the Power BI report. Find detailed descriptions of these parameters in the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports).
 
     Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/ReportSection?bookmarkGuid=xxxxxxxxxx`
 
