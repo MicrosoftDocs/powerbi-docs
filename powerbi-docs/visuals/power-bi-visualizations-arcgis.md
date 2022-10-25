@@ -94,7 +94,7 @@ ArcGIS map formatting options include:
 * **Layers:** Change the Title of the **Layers** list, specify if the **Layers** list (**Show layers**) button :::image type="icon" source="media/power-bi-visualizations-arcgis/layers.png"::: is visible in the expanded Map tools, define the position of the **Layers** list, and anchor the list over the map. The **Layers** list is visible by default.
 * **Map tools:** Specify if the **Zoom** tools (navigation buttons) are visible on the map, specify if the [Basemaps](#change-the-basemap) button :::image type="icon" source="media/power-bi-visualizations-arcgis/basemap.png"::: is visible in the expanded Map tools, lock the map extent in its current position, and define the position of the infographics cards on the map. **Zoom** tools and the **Basemaps** button aren't visible by default.
 * **Location type:** Specify the country in which your data is located to improve the accuracy of locations on your map. If your data is in a single country, choose that country from the drop-down list. If your data is global, choose **World**.
-* **Search:** Specify if the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png"::: is visible in the expanded Map tools. **Search** is visible by default.
+* **Search:** Specify if the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/search.png"::: is visible in the expanded Map tools. **Search** is visible by default.
 
 > [!NOTE]
 > **Reset to default** returns all formatting options to their original configuration.
