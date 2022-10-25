@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/18/2022
+ms.date: 10/25/2022
 LocalizationGroup: Administration
 ---
 
@@ -18,8 +18,6 @@ LocalizationGroup: Administration
 Use [Customer Lockbox for Microsoft Azure](/azure/security/fundamentals/customer-lockbox-overview) to control how Microsoft engineers access your data. In this article you'll learn how Customer Lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
 Typically, Customer Lockbox is used to help Microsoft engineers troubleshoot a Power BI service support request. Customer Lockbox can also be used when Microsoft identifies a problem, and a Microsoft-initiated event is opened to investigate the issue.
-
-To enable Customer Lockbox, you need to be a Power BI admin. An Azure subscription isn't needed. Customer Lockbox for Power BI is available for all Power BI tenants, free of charge.
 
 ## Enable Customer Lockbox for Power BI
 
@@ -59,8 +57,6 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
 3. To get the details of the pending request, the designated approver can select the Customer Lockbox request from the **Pending Requests** menu option.
 
-    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-pending-requests.png" alt-text="Screenshot of the pending requests in Customer Lockbox for Microsoft Azure.":::
-
 4. After reviewing the request, the designated approver enters a justification and selects one of the options below. For auditing purposes, the actions are logged in the Customer Lockbox [auditing logs](#auditing-logs).
 
     * **Approve** - Access is granted to the Microsoft engineer for a default period of eight hours.
@@ -73,29 +69,28 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
 Customer Lockbox has two type of logs:
 
-* **Activity log** - Available from the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell).
+* **Activity logs** - Available from the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log?tabs=powershell).
+
+    The following activity logs are available for Customer Lockbox:
+    * Deny Lockbox Request
+    * Create Lockbox Request
+    * Approve Lockbox Request
+    * Lockbox Request Expiry
+
+    To access the activity logs, in the Azure portal, select *Activity Log*. You can filter the results for specific actions.
+
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activitylogs.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure.":::
 
 * **Audit logs** - Available from the Office 365 Security & Compliance center. You can see the audit logs in Power BI in the [admin portal](../admin/service-admin-portal-audit-logs.md).
 
-### Activity logs
+    Customer Lockbox for Power BI also has four [Power BI activity logs](./../admin/service-admin-auditing.md):
 
-The following activity logs are available for Customer Lockbox:
-* Deny Lockbox Request
-* Create Lockbox Request
-* Approve Lockbox Request
-* Lockbox Request Expiry
-
-To access the activity logs, in the Azure portal, select **Activity Log** to view auditing information related to Customer Lockbox requests. You can filter the results for specific actions.
-
-:::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activitylogs.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure.":::
-
-### Audit logs
-
-Customer Lockbox for Power BI also has four [Power BI activity logs](./../admin/service-admin-auditing.md):
-* GetRefreshHistoryViaLockbox
-* DeleteAdminUsageDashboardsViaLockbox
-* DeleteUsageMetricsv2PackageViaLockbox
-* DeleteAdminMonitoringFolderViaLockbox
+    |Audit log                             |Friendly name                               |
+    |--------------------------------------|--------------------------------------------|
+    |GetRefreshHistoryViaLockbox           |Get Refresh History Via Lockbox             |
+    |DeleteAdminUsageDashboardsViaLockbox  |Delete Admin Usage Dashboards Via Lockbox   |
+    |DeleteUsageMetricsv2PackageViaLockbox |Delete Usage Metrics v2 Package Via Lockbox |
+    |DeleteAdminMonitoringFolderViaLockbox |Delete Admin Monitoring Folder Via Lockbox  |
 
 ## Exclusions
 
