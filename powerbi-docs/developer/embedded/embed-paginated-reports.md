@@ -213,6 +213,8 @@ For a full list of supported datasets and their authentication methods, see [Sup
 
 ---
 
+* Paginated reports don't support client side events (like `loaded` or `rendered`)
+
 ## Next steps
 
 > [!div class="nextstepaction"]
