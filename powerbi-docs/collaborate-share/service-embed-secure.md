@@ -31,7 +31,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 4. Whether a user opens a report URL directly, or one that's embedded in a web portal, report access requires authentication. The following screen appears if a user hasn't signed in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab should open. Have them check for pop-up blockers if they don't get prompted to sign in.
 
-    :::image type="content" source="./media/service-embed-secure/sign-in-power-bi-report.png" alt-text="Screenshot of Power BI Sign-in page displaying sign in to view this report dialogue.":::
+    :::image type="content" source="./media/service-embed-secure/sign-in-power-bi-report.png" alt-text="Screenshot of Power BI Sign-in page displaying sign-in to view this report dialogue.":::
 
 5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license. Also, the report must be in a workspace that's in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
@@ -49,7 +49,7 @@ In the Power BI service, you can share embedded reports with users who require a
 
 ## Licensing
 
-To view the embedded report, users need either a Power BI Pro or Premium Per User (PPU) license, or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-admin-premium-purchase.md).
+To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-admin-premium-purchase.md).
 
 ## Customize your embed experience by using URL settings
 
@@ -132,7 +132,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The automatic authentication capability that's provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The authentication token lifetime is controlled based on your AAD settings. When the authentication token expires, the user needs to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
+* The authentication token lifetime is controlled based on your Azure AD settings. When the authentication token expires, the user needs to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
 
 ## Next steps
 
