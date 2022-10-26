@@ -3,7 +3,7 @@ title: Composite model guidance in Power BI Desktop
 description: Guidance for developing Power BI composite models.
 author: peter-myers
 ms.author: v-petermyers
-ms.reviewer: asaxton
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -198,7 +198,7 @@ You should always optimize a Power BI model by adopting a star schema design.
 
 Be sure to create dimension tables that are separate from fact tables so that Power BI can interpret joins correctly and produce efficient query plans. While this guidance is true for any Power BI model, it's especially true for models that you recognize will become a source group of a composite model. It will allow for simpler and more efficient integration of other tables in downstream models.
 
-When possible, avoid having dimension tables in one source group that relate to a fact table in a different source group. That's because it's better to have *intra* source group relationships than *cross* source group relationships, especially for high-cardinality relationship columns. As [described earlier](#cross-source-group-relationship-scenario-3), cross source group relationships rely on having matching values in the relationship columns, otherwise unexpected results may be shown in report visuals.
+Whenever possible, avoid having dimension tables in one source group that relate to a fact table in a different source group. That's because it's better to have *intra* source group relationships than *cross* source group relationships, especially for high-cardinality relationship columns. As [described earlier](#cross-source-group-relationship-scenario-3), cross source group relationships rely on having matching values in the relationship columns, otherwise unexpected results may be shown in report visuals.
 
 ## Report design
 
@@ -231,10 +231,10 @@ Here's some other guidance to help you design and maintain composite models.
 
 - **Performance and scale:** If your reports were previously live connected to a Power BI dataset or Analysis Services model, the Power BI service could reuse visual caches across reports. After you convert the live connection to create a local DirectQuery model, reports will no longer benefit from those caches. As a result, you might experience slower performance or even refresh failures. Also, the workload for the Power BI service will increase, which might require you to scale up your capacity or distribute the workload across other capacities. For more information about data refresh and caching, see [Data refresh in Power BI](/power-bi/connect-data/refresh-data).
 - **Security:** If your model includes user-defined aggregations, calculated columns on import tables, or calculated tables, ensure that any row-level security (RLS) is set up correctly and tested.
-- **Renaming:** We don't recommend that you rename datasets used by composite models, or rename their workspaces. That's because composite models connect to Power BI datasets by using the workspace and dataset names (and not their internal unique identifiers). Renaming a workspace or dataset could break the connections used by your composite model.
-- **Governance:** We don't recommend that your _single version of the truth_ model be a composite model. That's because it would be dependent on other data sources or models, which if updated, could result in breaking the composite model. Instead, we recommended that you publish an enterprise semantic model as the single version of truth. Consider this model to be a reliable foundation. Other data modelers can then create composite models that extend this foundation model to create specialized models.
+- **Renaming:** We don't recommend that you rename datasets used by composite models, or rename their workspaces. That's because composite models connect to Power BI datasets by using the workspace and dataset names (and not their internal unique identifiers). Renaming a dataset or workspace could break the connections used by your composite model.
+- **Governance:** We don't recommend that your _single version of the truth_ model be a composite model. That's because it would be dependent on other data sources or models, which if updated, could result in breaking the composite model. Instead, we recommended that you publish an enterprise semantic model as the single version of truth. Consider this model to be a reliable foundation. Other data modelers can then create composite models that extend the foundation model to create specialized models.
 - **Data lineage:** Use the [data lineage](/power-bi/collaborate-share/service-data-lineage) and [dataset impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) features before publishing composite model changes. These features are available in the Power BI service, and they can help you to understand how datasets are related and used. It's important to understand that you can't perform impact analysis on external datasets that are displayed in lineage view but are in fact located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
-- **Schema updates:** You should refresh your composite model in Power BI Desktop when schema changes are made to upstream data sources. You'll then need to republish the model to the Power BI service. Be sure to thoroughly test calculations and related reports.
+- **Schema updates:** You should refresh your composite model in Power BI Desktop when schema changes are made to upstream data sources. You'll then need to republish the model to the Power BI service. Be sure to thoroughly test calculations and dependent reports.
 
 ## Next steps
 
