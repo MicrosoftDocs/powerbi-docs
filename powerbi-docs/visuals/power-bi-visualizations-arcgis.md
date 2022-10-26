@@ -17,10 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-> [!NOTE]
-> ArcGIS map visualizations can be created and viewed in the [Power BI service or Power BI Desktop](#considerations-and-limitations). This tutorial uses Power BI Desktop.
-
-ArcGIS for Power BI is a mapping visualization that helps you to enrich your data, reports, and dashboards. It offers mapping capabilities, demographic data, location analytics, and spatial analysis tools that you can use to demonstrate patterns in and add insight to your data.
+ArcGIS for Power BI is a mapping visualization that helps you to enrich your data, reports, and dashboards. It offers mapping capabilities, demographic data, location analytics, and spatial analysis tools that you can use to demonstrate patterns in and add insight to your data. You can create and view ArcGIS map visualizations in the Power BI service or Power BI Desktop. See the [Considerations and limitations](#considerations-and-limitations) section in this article for details. This tutorial uses Power BI Desktop.
 
 With ArcGIS for Power BI's robust mapping capabilities, you can use smart-map themes to predict the best way to illustrate your data, highlight areas in your report and use local demographics to add relevant regional context, and refine the symbology you use to improve your report's overall clarity.
 
@@ -31,9 +28,12 @@ Combining authoritative data layers on a map with spatial analysis helps you exp
 This demographic data layer provides insight, for example, into how household income and store locations might affect current sales and influence future purchasing, advertising, or store site selection decisions.
 
 > [!TIP]
-> To learn more about ArcGIS for Power BI, explore [Interacting with ArcGIS maps](power-bi-visualizations-arcgis.md) and [ArcGIS for Power BI maps](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm).
+> To learn about how your report consumers experience ArcGIS for Power BI, see [Interact with ArcGIS maps that has been shared with you](../consumer/end-user-arcgis.md).
 >
-> For examples and testimonials, visit [Esri's ArcGIS for Power BI](https://www.esri.com/powerbi). For training and documenation, see [Esri's ArcGIS for Power BI online help](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+> You can also visit the ArcGIS site, [Esri's ArcGIS for Power BI](https://www.esri.com/powerbi): 
+>
+>- Maps: [ArcGIS for Power BI maps](https://doc.arcgis.com/en/maps-for-powerbi/use/explore-maps.htm)
+>- Training and documentation: [Esri's ArcGIS for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm)  online help.
 
 > [!NOTE]
 > As a *report designer*, you can share an ArcGIS for Power BI map with a colleague who can view and interact with the map. Your colleague cannot save changes to your map. Further, you currently cannot create an ArcGIS for Power BI map on a mobile device, but you can view and interact with it.
