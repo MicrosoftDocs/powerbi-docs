@@ -196,7 +196,7 @@ In this example, the attacker can get access to information on games that have n
 
 **How to mitigate the risk**
 
-To mitigate the security risk, it's best to avoid string concatenation of M parameter values within the query.  Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query. Alternatively, if available, make use of a parameter passing mechanism built-in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
+To mitigate the security risk, it's best to avoid string concatenation of M parameter values within the query.  Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query. If a data source supports importing stored procedures, consider storing your query logic there and invoking it in M. Alternatively, if available, make use of a parameter passing mechanism built-in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
 
 Here are some examples:
 
@@ -208,6 +208,12 @@ Here are some examples:
 * Example declaring the parameter in the source query (or passing the parameter value as an input to a source query function):
     ```
     declare query\_parameters (Name of Parameter : Type of Parameter);
+    ```
+    
+* Example of directly calling a stored procedure:
+    ```
+    let CustomerByProductFn = AzureDataExplorer.Contents("Help", "ContosoSales"){[Name="CustomerByProduct"]}[Data] in
+    CustomerByProductFn({1, 3, 5})
     ```
 
 ## Considerations and limitations
