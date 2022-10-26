@@ -37,9 +37,9 @@ You can consider developing a composite model in the following situations.
 > [!NOTE]
 > Composite models can't include connections to certain external analytic databases. These databases include SAP Business Warehouse, and SAP HANA when [treating SAP HANA as a multidimensional source](/power-bi/connect-data/desktop-directquery-sap-hana).
 
-## Avoid composite modeling
+## Evaluate other model design options
 
-While Power BI composite models can solve particular design challenges, they can contribute to slow performance. Also, in some situations, unexpected calculation results can occur (described later in this article). For these reasons, avoid creating a composite model when you have other options.
+While Power BI composite models can solve particular design challenges, they can contribute to slow performance. Also, in some situations, unexpected calculation results can occur (described later in this article). For these reasons, evaluate other model design options when they exist.
 
 Whenever possible, it's best to develop a model in import mode. This mode provides the greatest design flexibility, and best performance.
 
@@ -97,19 +97,19 @@ When defining cross source group relationships, consider the following recommend
 
 - **Use low-cardinality relationship columns:** For best performance, we recommend that the relationship columns be low cardinality, meaning they should store less than 50,000 unique values. This recommendation is especially true when combining tabular models, and for non-text columns.
 - **Avoid using large text relationship columns:** If you must use text columns in a relationship, calculate the expected text length for the filter by multiplying the cardinality by the average length of the text column. The possible text length shouldn't exceed 250,000 characters.
-- **Raise the relationship granularity:** If possible, create relationships at a higher level of granularity. For example, instead of relating a date table on its date key, use its month key instead. This design requires that the related table includes a month key column, and reports won't be able to show daily facts.
+- **Raise the relationship granularity:** If possible, create relationships at a higher level of granularity. For example, instead of relating a date table on its date key, use its month key instead. This design approach requires that the related table includes a month key column, and reports won't be able to show daily facts.
 - **Strive to achieve a simple relationship design:** Only create a cross source group relationship when it's needed, and try to limit the number of tables in the relationship path. This design approach will help to improve performance and avoid [ambiguous relationship paths](/power-bi/transform-model/desktop-relationships-understand#resolve-relationship-path-ambiguity).
 
 > [!WARNING]
 > Because Power BI Desktop doesn't thoroughly validate cross group relationships, it's possible to create ambiguous relationships.
 
-### Cross source group relationship example 1
+### Cross source group relationship scenario 1
 
-Consider an example of a complex relationship design and how it could produce different—yet valid—results.
+Consider a scenario of a complex relationship design and how it could produce different—yet valid—results.
 
-In this example, the **Region** table in source group **A** has a relationship to the **Date** table and **Sales** table in source group **B**. The relationship between the **Region** table and the **Date** table is active, while the relationship between the **Region** table and the **Sales** table is inactive. Also, there's an active relationship between the **Region** table and the **Sales** table, both of which are in source group **B**. The **Sales** table includes a measure named **TotalSales**, and the **Region** table includes two measures named **RegionalSales** and **RegionalSalesDirect**.
+In this scenario, the **Region** table in source group **A** has a relationship to the **Date** table and **Sales** table in source group **B**. The relationship between the **Region** table and the **Date** table is active, while the relationship between the **Region** table and the **Sales** table is inactive. Also, there's an active relationship between the **Region** table and the **Sales** table, both of which are in source group **B**. The **Sales** table includes a measure named **TotalSales**, and the **Region** table includes two measures named **RegionalSales** and **RegionalSalesDirect**.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-1.png" alt-text="Diagram shows the model design as described in the previous paragraph." border="false":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-1.png" alt-text="Diagram shows the scenario 1 model design as described in the previous paragraph." border="false":::
 
 Here are the measure definitions.
 
@@ -123,13 +123,16 @@ Notice how the **RegionalSales** measure refers to the **TotalSales** measure, w
 
 The difference in the result in subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Date** table. Therefore, the filter also propagates from the **Date** table to the **Sales** table. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions are semantically equivalent.
 
-### Cross source group relationship example 2
+> [!IMPORTANT]
+> Whenever you use the `CALCULATE` function with an expression that's a measure in a remote source group, test the calculation results thoroughly.
 
-Consider an example when a cross source group relationship has high-cardinality relationship columns.
+### Cross source group relationship scenario 2
 
-In this example, the **Date** table is related to the **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. The tables belong to different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
+Consider a scenario when a cross source group relationship has high-cardinality relationship columns.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-2.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
+In this scenario, the **Date** table is related to the **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. The tables belong to different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
+
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-2.png" alt-text="Diagram shows the scenario 2 model design as described in the previous paragraph." border="false":::
 
 There are two cases for concern.
 
@@ -137,26 +140,26 @@ First, when you use the **Date** table columns as filters, filter propagation wi
 
 Second, when you use **Date** table columns—like **Year**, **Quarter**, or **Month**—as grouping columns, it results in filters that include all unique combinations of year, quarter, or month, _and_ the **DateKey** column values. The string size of the query, which contains filters on the grouping columns and the relationship column, can become extremely large. That's especially true when the number of grouping columns and/or the cardinality of the join column (the **DateKey** column) is large.
 
-To address any performance issues, you could:
+To address any performance issues, you can:
 
 - Add the **Date** table to the data source, resulting in a single source group model (meaning, it's no longer a composite model).
 - Raise the granularity of the relationship. For instance, you could add a **MonthKey** column to both tables and create the relationship on those columns. However, by raising the granularity of the relationship, you lose the ability to report on daily sales activity (unless you use the **DateKey** column from the **Sales** table).
 
-### Cross source group relationship example 3
+### Cross source group relationship scenario 3
 
-Consider an example when there aren't matching values between tables in a cross source group relationship.
+Consider a scenario when there aren't matching values between tables in a cross source group relationship.
 
-In this example, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table relating the **Year** columns. The **Sales** table includes a **SalesAmount** column that stores sales amounts, while the **Target** table includes a **TargetAmount** column that stores target amounts.
+In this scenario, the **Date** table in source group **B** has a relationship to the **Sales** table in that source group, and also to the **Target** table in source group **A**. All relationships are one-to-many from the **Date** table relating the **Year** columns. The **Sales** table includes a **SalesAmount** column that stores sales amounts, while the **Target** table includes a **TargetAmount** column that stores target amounts.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-model.png" alt-text="Diagram shows the example model design as described in the previous paragraph." border="false":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-3-model.png" alt-text="Diagram shows the scenario 3 model design as described in the previous paragraph." border="false":::
 
 The **Date** table stores the years 2021 and 2022. The **Sales** table stores sales amounts for years 2021 (100) and 2022 (200), while the **Target** table stores target amounts for 2021 (100), 2022 (200), *and 2023 (300)*—a future year.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-data.png" alt-text="Diagram shows the table data as described in the previous paragraph." border="false":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-3-data.png" alt-text="Diagram shows the scenario 3 table data as described in the previous paragraph." border="false":::
 
 When a Power BI table visual queries the composite model by grouping on the **Year** column from the **Date** table and summing the **SalesAmount** and **TargetAmount** columns, it won't show a target amount for 2023. That's because the cross source group relationship is a limited relationship, and so it uses `INNER JOIN` semantics, which eliminate rows where there's no matching value on both sides. It will, however, produce a correct target amount total (600), because a **Date** table filter doesn't apply to its evaluation.
 
-:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-example-3-visual.png" alt-text="Diagram shows a table visual that doesn't show the 2023 target amount. Also, the target amount total of 600 doesn't equal the two shown values for 2021 and 2022 (100 and 200)." border="false":::
+:::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-3-visual.png" alt-text="Diagram shows a table visual that doesn't show the 2023 target amount. Also, the target amount total of 600 doesn't equal the two shown values for 2021 and 2022 (100 and 200)." border="false":::
 
 If the relationship between the **Date** table and the **Target** table were an intra source group relationship (assuming the **Target** table belonged to source group **B**), the visual would include a _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
 
@@ -184,7 +187,7 @@ Many expressions require Power BI to materialize the calculated column before us
 
 ### Calculation groups
 
-If you add calculation groups to a composite model that connect to a Power BI dataset or an Analysis Services model, Power BI could return unexpected results. For more information, see [TODO](\todo).
+If calculation groups exist in a source group that connects to a Power BI dataset or an Analysis Services model, Power BI could return unexpected results. For more information, see [Calculation groups, query and measure evaluation](/power-bi/transform-model/desktop-composite-models#calculation-groups-query-and-measure-evaluation).
 
 ## Model design
 
@@ -195,7 +198,7 @@ You should always optimize a Power BI model by adopting a star schema design.
 
 Be sure to create dimension tables that are separate from fact tables so that Power BI can interpret joins correctly and produce efficient query plans. While this guidance is true for any Power BI model, it's especially true for models that you recognize will become a source group of a composite model. It will allow for simpler and more efficient integration of other tables in downstream models.
 
-When possible, avoid having dimension tables in one source group that relate to a fact table in a different source group. That's because it's better to have *intra* source group relationships than *cross* source group relationships, especially for high-cardinality relationship columns. As [described earlier](#cross-source-group-relationship-example-3), cross source group relationships rely on having matching values in the relationship columns, otherwise unexpected results may be shown in report visuals.
+When possible, avoid having dimension tables in one source group that relate to a fact table in a different source group. That's because it's better to have *intra* source group relationships than *cross* source group relationships, especially for high-cardinality relationship columns. As [described earlier](#cross-source-group-relationship-scenario-3), cross source group relationships rely on having matching values in the relationship columns, otherwise unexpected results may be shown in report visuals.
 
 ## Report design
 
@@ -209,11 +212,11 @@ Whenever possible, create visuals that use fields from a single source group. Th
 
 In some situations, you can set up [sync slicers](/power-bi/visuals/power-bi-visualization-slicers?tabs=powerbi-desktop#sync-and-use-slicers-on-other-pages) to avoid creating a cross source group relationship in your model. It can allow you to combine source groups *visually* that can perform better.
 
-Consider an example when your model has two source groups. Each source group has a product dimension table used to filter reseller and internet sales.
+Consider a scenario when your model has two source groups. Each source group has a product dimension table used to filter reseller and internet sales.
 
-In this example, source group **A** contains the **Product** table that's related to the **ResellerSales** table. Source group **B** contains the **Product2** table that's related to the **InternetSales** table. There aren't any cross source group relationships.
+In this scenario, source group **A** contains the **Product** table that's related to the **ResellerSales** table. Source group **B** contains the **Product2** table that's related to the **InternetSales** table. There aren't any cross source group relationships.
 
-:::image type="content" source="media/composite-model-guidance/sync-slicers-example.png" alt-text="Diagram shows the model design as described in the previous paragraph.":::
+:::image type="content" source="media/composite-model-guidance/sync-slicers-scenario.png" alt-text="Diagram shows the model design as described in the previous paragraph.":::
 
 In the report, you add a slicer that filters the page by using the **Color** column of the **Product** table. By default, the slicer filters the **ResellerSales** table, but not the **InternetSales** table. You then add a hidden slicer by using the **Color** column of the **Product2** table. By setting an identical group name (found in the sync slicers **Advanced options**), filters applied to the visible slicer automatically propagate to the hidden slicer.
 
