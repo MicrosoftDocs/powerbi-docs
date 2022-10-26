@@ -52,15 +52,15 @@ To access the Power BI activity log, you must meet these requirements:
 
 ### ActivityEvents REST API
 
-You can use an administrative application based on the Power BI REST APIs to export activity events into a blob store or SQL database. You can then build a custom usage report on top of the exported data. In the **ActivityEvents** REST API call, you must specify a start date and end date and optionally a filter to select activities by activity type or user ID. Because the activity log could contain a large amount of data, the **ActivityEvents** API currently only supports downloading up to one day of data per request. In other words, the start date and end date must specify the same day, as in the following example. Make sure you specify the DateTime values in UTC format.
+You can use an administrative application based on the Power BI REST APIs to export activity events into a blob store or SQL database. You can then build a custom usage report on top of the exported data. In the **ActivityEvents** REST API call, you must specify a start date and end date and optionally a filter to select activities by activity type or user ID. Because the activity log could contain a large amount of data, the **ActivityEvents** API currently only supports downloading up to one day of data per request. In other words, the start date and end date must specify the same day, as in the following example. Make sure you specify the `DateTime` values in Coordinated Universal Time (UTC) format.
 
-```
+```http
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
 If the number of entries is large, the **ActivityEvents** API returns only around 5,000 to 10,000 entries and a continuation token. Call the **ActivityEvents** API again with the continuation token to get the next batch of entries, and so forth, until you've gotten all entries and no longer receive a continuation token. The following example shows how to use the continuation token:
 
-```
+```http
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
 ```
 
@@ -81,11 +81,11 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > [!NOTE]
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
 
-If the time span between startDateTime and endDateTime exceeds 1 hour, it takes multiple requests to download the data through continuationUri in response.
+If the time span between `startDateTime` and `endDateTime` exceeds 1 hour, it takes multiple requests to download the data through `continuationUri` in response.
 
 The following example shows how to download data for 1 hour and 5 minutes:
 
-```
+```http
 GET https://wabi-staging-us-east-redirect.analysis.windows.net/v1.0/myorg/admin/activityevents?startDateTime='2020-08-13T07:55:00Z'&endDateTime='2020-08-13T09:00:00Z'
 {
   "activityEventEntities": […],
@@ -107,7 +107,7 @@ To learn more about using the Power BI REST API, including examples of how to ge
 
 ### Get-PowerBIActivityEvent cmdlet
 
-Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
+Download activity events by using the Power BI Management cmdlets for PowerShell. The [Get-PowerBIActivityEvent](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiactivityevent) cmdlet automatically handles the continuation token for you. The `Get-PowerBIActivityEvent` cmdlet takes a *StartDateTime* and an *EndDateTime* parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
 
 The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties. These examples show the smallest and largest timestamps possible for a day to ensure no events are missed:
 
@@ -142,7 +142,7 @@ $activities[0]
 
 If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in Microsoft Purview or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
 
-You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a csv (comma-separated value) file to analyze offline.
+You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a comma-separated value (csv) file to analyze offline.
 
 ### Audit log requirements
 
@@ -178,7 +178,7 @@ Search for Power BI activities by following these steps. For a list of activitie
 
 1. On the **Audit** page, under **Search**, select the drop-down for **Activities**.
 
-2. Enter **Power BI** to go to the list of Power BI activities.
+2. Enter *Power BI* to go to the list of Power BI activities.
 
    [![Screenshot of the Audit log search with Power B I activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png#lightbox)
 
@@ -188,9 +188,9 @@ Your search will only return the selected Power BI activities.
 
 ### Search the audit logs by date
 
-You can search the logs by date range using the **Start date** and **End date** fields. The default selection is the past seven days. The display presents the date and time in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days.
+You can search the logs by date range using the **Start date** and **End date** fields. The default selection is the past seven days. The display presents the date and time in UTC format. The maximum date range that you can specify is 90 days.
 
-You'll receive an error if the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
+You receive an error if the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
 
   :::image type="content" source="media/service-admin-auditing/search-audit-log-by-date.png" alt-text="Screenshot of the Audit log search with Start Date and End Date options called out." :::
 
@@ -204,7 +204,7 @@ You can search for audit log entries for activities done by specific users. Ente
 
 You can use the **File, folder, or site** field to determine who accessed a file, folder, or site, on the **Audit** page. Records can be searched by file name, folder name, or URL. Don't use any spaces or special characters. For example, you can enter all or part of the name of a dataset to find who has interacted with it recently.
 
-In the example shown below, the search term "sales" was entered in the **File, folder, or site** field.
+In the example shown below, the search term *sales* was entered in the **File, folder, or site** field.
 
 [![Screenshot of the Audit log search with file, folder, or site field called out.](media/service-admin-auditing/search-audit-log-by-file.png)](media/service-admin-auditing/search-audit-log-by-file.png#lightbox)
 
@@ -224,7 +224,7 @@ The following information is shown for each event returned by the search. Select
 
 | **Column** | **Definition** |
 | --- | --- |
-| Date |The date and time (in UTC format) when the event occurred. |
+| Date |The UTC formatted date and time when the event occurred. |
 | IP address |The IP address of the device used for the logged activity. The app displays the IP address in either an IPv4 or IPv6 address format. |
 | User |The user (or service account) who did the activity. |
 | Activity |The activity done by the user. This value corresponds to the activities that you selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet. |
@@ -235,13 +235,13 @@ The following information is shown for each event returned by the search. Select
 
 To view more details about an event, select the event record in the list of search results. A **Detail** page appears that has the detailed properties from the event record. The **Detail** page displays properties depending on the Microsoft 365 service in which the event occurs.
 
-All Power BI entries have a value of 20 for the RecordType property. For information about other properties, see [Detailed properties in the audit log](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log/).
+All Power BI entries have a value of 20 for the **RecordType** property. For information about other properties, see [Detailed properties in the audit log](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log/).
 
    ![Screenshot of the audit detail dialog.](media/service-admin-auditing/audit-details.png)
 
 ### Export search results
 
-To export the Power BI audit log search results to a CSV file, follow these steps.
+To export the Power BI audit log search results to a csv file, follow these steps.
 
 1. Do an audit search by following the steps in this article.
 
@@ -253,19 +253,22 @@ To export the Power BI audit log search results to a CSV file, follow these step
 
 You can also use PowerShell to access the audit logs. The following example shows how to connect to Exchange Online PowerShell V2 (EXO V2) and then use the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps&preserve-view=true/) command to pull Power BI audit log entries. To run the script, an admin must assign you the appropriate permissions, as described in the [Audit log requirements](#audit-log-requirements) section. Read [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) and [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to learn more about how this PowerShell module works.
 
-You can download the EXO V2 module from the PowerShell gallery at https://www.powershellgallery.com/packages/ExchangeOnlineManagement/.
+You can download the EXO V2 module from the [PowerShell gallery](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/).
 
 ```powershell
-#The first command sets the execution policy for Windows computers and allows scripts to run.
+# The first command sets the execution policy for Windows computers and 
+# allows scripts to run.
 Set-ExecutionPolicy RemoteSigned
 
-#The following command loads the Exchange Online management module.
+# The following command loads the Exchange Online management module.
 Import-Module ExchangeOnlineManagement
 
-#Next, you connect using your user principal name. A dialog will prompt you for your password and any multi-factor authentication requirements.
+# Next, you connect using your user principal name. A dialog will prompt 
+# you for your password and any multi-factor authentication requirements.
 Connect-ExchangeOnline -UserPrincipalName <user@contoso.com>
 
-#Now you can query for Power BI activity. In this example, the results are limited to 1,000, shown as a table, and the "more" command causes output to display one screen at a time. 
+# Now you can query for Power BI activity. In this example, the results 
+# are limited to 1,000, shown as a table, and the "more" command causes output to display one screen at a time. 
 Search-UnifiedAuditLog -StartDate 09/16/2021 -EndDate 9/23/2021 -RecordType PowerBIAudit -ResultSize 1000 | Format-Table | More
 ```
 
