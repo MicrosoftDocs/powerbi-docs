@@ -79,7 +79,7 @@ To add a map to a report, follow these steps:
 
    The map now shows **Last Year Sales for U.S. Cities** using **Counts and Amounts (size)** symbols, as shown in the image below. You can zoom in to view this data visualization and pan around the map.
 
-   :::image type="content" source="media/power-bi-visualizations-arcgis/last-year-sales.png" alt-text="ArcGIS size field.":::
+   :::image type="content" source="media/power-bi-visualizations-arcgis/last-year-sales.png" alt-text="Screenshot shows a map with sales information displayed as size.":::
 
 You've just created your first ArcGIS for Power BI visualization. Next, you'll learn how to refine and format the visualization using basemaps, location types, themes, and more.
 
@@ -124,7 +124,7 @@ To change the basemap, follow these steps:
 1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and then select **Basemap** :::image type="icon" source="media/power-bi-visualizations-arcgis/basemap.png"::: to display the gallery of available basemaps.
 
    > [!NOTE]
-   > You must have **Basemaps** set to **On** in the [Visualizations pane on the Format tab](#format-an-arcgis-for-power-bi-visualization) :::image type="icon" source="media/power-bi-visualizations-arcgis/format_icon.png":::.
+   > You must have **Basemaps** set to **On** in the [Visualizations pane on the Format tab](#format-an-arcgis-for-power-bi-visualization) :::image type="icon" source="media/power-bi-visualizations-arcgis/format-icon.png":::.
 
 1. Select the **Dark Gray Canvas** basemap.
 
@@ -344,7 +344,7 @@ To add an ArcGIS reference layer, follow these steps:
 
    The map updates to include this ArcGIS public reference layer.
 
-   :::image type="content" source="media/power-bi-visualizations-arcgis/reference-layer-arcgis.png" alt-text="Reference layer.":::
+   :::image type="content" source="media/power-bi-visualizations-arcgis/reference-layer-arcgis.png" alt-text="Screenshot shows the map with the ArcGIS public reference layer.":::
 
 ArcGIS reference layers are interactive. Select an area to view a [tooltip](https://doc.arcgis.com/en/power-bi/design/view-tooltips.htm) containing more information. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
 
