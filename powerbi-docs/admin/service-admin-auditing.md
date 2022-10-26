@@ -140,7 +140,7 @@ $activities[0]
 
 ## Use the audit log
 
-If your task is to track user activities across Power BI and Microsoft 365, you can use the audit log in Microsoft Purview or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
+If your task is to track user activities across Power BI and Microsoft 365, you can use the audit log within Microsoft Purview or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
 
 You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a csv (comma-separated value) file to analyze offline.
 
