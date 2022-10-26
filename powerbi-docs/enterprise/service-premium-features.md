@@ -23,15 +23,13 @@ This article lists the main Power BI Premium features. Most of the features appl
 |Feature |Description |
 |--------|------------|
 |[Advanced AI](../transform-model/dataflows/dataflows-machine-learning-integration.md) |Use artificial intelligence (AI) with dataflows |
-|[Asynchronous refresh](../connect-data/asynchronous-refresh.md) (preview) |Perform asynchronous data-refresh operations |
-|[Automatic aggregations](aggregations-auto.md) (preview) |Optimize DirectQuery datasets |
+|[Asynchronous refresh](../connect-data/asynchronous-refresh.md) |Perform asynchronous data-refresh operations |
+|[Automatic aggregations](aggregations-auto.md) |Optimize DirectQuery datasets |
 |[Autoscale](service-premium-auto-scale.md) |Automatically add compute capability when your capacity is overloaded</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) only |
 |[Backup and restore](service-premium-backup-restore-dataset.md) |Backup and restore data using XMLA endpoints |
 |[Bring your own key (BYOK)](service-encryption-byok.md) |Use your own keys to encrypt data</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
-|[Dataflows computed entities](../transform-model/dataflows/dataflows-premium-features.md#computed-entities) |Perform in-storage computations |
-|[Dataflows enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) |Optimize the use of dataflows |
-|[Dataflows incremental refresh](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh) |Use incremental refresh with dataflows |
-|[Dataflows linked entities](../transform-model/dataflows/dataflows-premium-features.md#linked-entities) |Reference other dataflows |
+|[Dataflows](../transform-model/dataflows/dataflows-premium-features.md) |<ul><li>[Perform in-storage computations](../transform-model/dataflows/dataflows-premium-features.md#computed-entities)</li><li>[Optimize the use of dataflows](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine)</li><li>[Use incremental refresh with dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)</li><li>[Reference other dataflows](../transform-model/dataflows/dataflows-premium-features.md#linked-entities)</li></ul> |
+|[Datamarts](../transform-model/datamarts/datamarts-overview) |Self-service solution enabling users to store and explore data that's loaded in a fully managed database|
 |[Deployment pipelines](../create-reports/deployment-pipelines-overview.md) |Manage the lifecycle of your Power BI content |
 |[DirectQuery with dataflows](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi) |Connect directly to your dataflow without having to import its data |
 |Hybrid tables (preview) |Incremental refresh augmented with real-time data |
