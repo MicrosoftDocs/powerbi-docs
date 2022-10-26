@@ -12,25 +12,15 @@ ms.date: 04/24/2022
 
 # Assess your capacity load
 
-Calculating the type of capacity you need for a Power BI embedded analytics deployment, can be complicated. The capacity you need depends on several parameters, some of them hard to predict.
-
-Some of the things to consider when planning your capacity are:
-
-* The data models you're using
-* The number and complexity of required queries
-* The hourly distribution of your application usage
-* Data refresh rates
-* More usage patterns that are hard to predict
-
 This article explains how to simplify capacity planning for Power BI embedded analytics by using the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), created for automating load testing for Power BI embedded analytics capacities (*A*, *EM* or *P* SKUs).
 
-## Planning tool
+## Load assessment tool
 
  The [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) can help you understand how much user load your capacity can handle. It uses PowerShell to create automated load tests against your capacities, and lets you choose which reports to test, and how many concurrent users to simulate.
 
 The tool generates load on a capacity by continuously rendering each report with new filter values (to prevent unrealistically good performance due to report caching), until the token required for authenticating the tool against the service, expires.
 
-### Run the planning tool
+### Run the tool
 
 When running the tool, keep in mind the existing load on your capacities and make sure not to run load tests during top usage times.
 
