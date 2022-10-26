@@ -32,7 +32,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 1. Sign in to Power Automate (https://powerautomate.microsoft.com/).
 2. Select **Create** > **Scheduled cloud flow**. 
 
-    :::image type="content" source="./media/service-automate-power-bi-report-export/schedule-a-cloud- flow.png" alt-text="Create a scheduled flow in Power Automate.":::
+    :::image type="content" source="./media/service-automate-power-bi-report-export/schedule-a-cloud-flow.png" alt-text="Create a scheduled flow in Power Automate.":::
 
 3. In **Build a scheduled flow**, give your flow a name. 
 4. In **Run this flow**, select the starting date and time for your flow and the repetition frequency.
@@ -64,7 +64,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 
 13. Select **New Step**.
 14. In **Choose an operation**, search for **Outlook** and select **Send an email (V2)**. 
-:::image type="content" source="./media/service-automate-power-bi-report-export/outlook-send-an-email-via-v2.png" alt-text="Office 365 outlook is selected and send email via v2 highlighted.":::
+:::image type="content" source="./media/service-automate-power-bi-report-export/choose-an-operation.png" alt-text="Office 365 outlook is selected and send email via v2 highlighted.":::
 15. In **Send an email (V2)**, complete the **To**, **Subject**, and **Body** fields for your email.
 16. Select **Show advanced options**. In **Attachments Name – 1**, enter a name for your attachment. Add a file extension to the file name (for example, .PDF) that matches your desired **Export Format**.
 17. In **Attachment Content**, select **File Content** to attach your exported Power BI report.  
