@@ -29,7 +29,7 @@ To enable Customer Lockbox for Power BI, you must be an Azure AD Global Administ
 
 3. In the **Administration** tab, select **Enabled**.
 
-    :::image type="content" source="media/service-admin-power-bi-security-lockbox/enable-lockbox.png" alt-text="Screenshot of enabling Customer Lockbox for Microsoft Azure in the Customer Lockbox for Microsoft Azure administration tab.":::
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/enable-lockbox.png" alt-text="Screenshot of enabling Customer Lockbox for Microsoft Azure in the Customer Lockbox for Microsoft Azure administration tab." lightbox="media/service-admin-power-bi-security-lockbox/enable-lockbox.png":::
 
 ## Microsoft access request
 
@@ -51,7 +51,7 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
 1. The Power BI admin receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
 
-    :::image type="content" source="media/service-admin-power-bi-security-lockbox/email-example.png" alt-text="Screenshot of pending access request notification email from Microsoft.":::
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/email-example.png" alt-text="Screenshot of pending access request notification email from Microsoft." lightbox="media/service-admin-power-bi-security-lockbox/email-example.png":::
 
 2. The email provides a link to Customer Lockbox in the Azure Administration module. Using the link, the designated approver signs in to the Azure portal to view any pending Customer Lockbox requests. The request remains in the customer queue for four days. After that, the access request automatically expires and no access is granted to Microsoft engineers.
 
@@ -63,7 +63,7 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
     * **Deny** - The access request by the Microsoft engineer is rejected and no further action is taken.
 
-    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-approval.png" alt-text="Screenshot of the approve and deny buttons of a pending Customer Lockbox for Microsoft Azure request.":::
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-approve-deny.png" alt-text="Screenshot of the approve and deny buttons of a pending Customer Lockbox for Microsoft Azure request." lightbox="media/service-admin-power-bi-security-lockbox/customer-lockbox-approval.png":::
 
 ## Logs
 
@@ -79,7 +79,7 @@ Customer Lockbox has two type of logs:
 
     To access the activity logs, in the Azure portal, select *Activity Log*. You can filter the results for specific actions.
 
-    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activitylogs.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure.":::
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activity-logs-thumbnail.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure." lightbox="media/service-admin-power-bi-security-lockbox/customer-lockbox-activity-logs.png":::
 
 * **Audit logs** - Available from the Office 365 Security & Compliance center. You can see the audit logs in the Power BI [admin portal](../admin/service-admin-portal-audit-logs.md).
 
