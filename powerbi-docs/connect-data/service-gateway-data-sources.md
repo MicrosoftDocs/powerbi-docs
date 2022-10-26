@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/22/2022
+ms.date: 10/26/2022
 ms.custom: ''
 LocalizationGroup: Gateways
 ---
@@ -41,12 +41,12 @@ If you don't have a gateway installed yet, see [Install an on-premises data gate
 
    :::image type="content" source="media/service-gateway-data-sources/authentification.png" alt-text="Screenshot of how to fill out authentication settings.":::
 
-    > [!NOTE]
-    > If the selected authentication method is OAuth:
-    > - Any query that runs longer than the OAuth token expiration policy may fail.
-    > - Cross-tenant AAD accounts are not supported 
-    > If the selected authentication method is Windows:
-    > - Make sure that account has access on the machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
+    If the selected authentication method is OAuth:
+    * Any query that runs longer than the OAuth token expiration policy may fail.
+    * Cross-tenant AAD accounts are not supported
+    
+    If the selected authentication method is Windows:
+    * Make sure that account has access on the machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
 
 6. Under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
 
