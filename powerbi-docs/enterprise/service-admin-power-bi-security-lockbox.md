@@ -63,7 +63,7 @@ These steps describe a Microsoft initiated Customer Lockbox request, for Power B
 
     * **Deny** - The access request by the Microsoft engineer is rejected and no further action is taken.
 
-    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-approve-deny.png" alt-text="Screenshot of the approve and deny buttons of a pending Customer Lockbox for Microsoft Azure request." lightbox="media/service-admin-power-bi-security-lockbox/customer-lockbox-approval.png":::
+    :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-approve.png" alt-text="Screenshot of the approve and deny buttons of a pending Customer Lockbox for Microsoft Azure request." lightbox="media/service-admin-power-bi-security-lockbox/customer-lockbox-approval.png":::
 
 ## Logs
 
