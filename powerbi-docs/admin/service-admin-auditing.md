@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/29/2022
+ms.date: 10/26/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -256,19 +256,18 @@ You can also use PowerShell to access the audit logs. The following example show
 You can download the EXO V2 module from the [PowerShell gallery](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/).
 
 ```powershell
-# The first command sets the execution policy for Windows computers and 
-# allows scripts to run.
+# The first command sets the execution policy for Windows computers and allows scripts to run.
 Set-ExecutionPolicy RemoteSigned
 
 # The following command loads the Exchange Online management module.
 Import-Module ExchangeOnlineManagement
 
-# Next, you connect using your user principal name. A dialog will prompt 
-# you for your password and any multi-factor authentication requirements.
+# Next, you connect using your user principal name. A dialog will prompt you for your 
+# password and any multi-factor authentication requirements.
 Connect-ExchangeOnline -UserPrincipalName <user@contoso.com>
 
-# Now you can query for Power BI activity. In this example, the results 
-# are limited to 1,000, shown as a table, and the "more" command causes output to display one screen at a time. 
+# Now you can query for Power BI activity. In this example, the results are limited to 
+# 1,000, shown as a table, and the "more" command causes output to display one screen at a time. 
 Search-UnifiedAuditLog -StartDate 09/16/2021 -EndDate 9/23/2021 -RecordType PowerBIAudit -ResultSize 1000 | Format-Table | More
 ```
 
