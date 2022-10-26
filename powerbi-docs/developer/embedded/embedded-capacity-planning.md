@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/24/2022
+ms.date: 10/24/2022
 ---
 
 # Capacity planning in Power BI embedded analytics
@@ -79,44 +79,35 @@ To test or assess your capacity load:
    * *Programmatically* with the [Groups AssignToCapacity API](/rest/api/power-bi/capacities/groups-assign-to-capacity). Check the assignment status with the [Groups CapacityAssignmentStatus API](/rest/api/power-bi/capacities/groups-capacity-assignment-status) or via a *PowerShell* script (see `AssignWorkspacesToCapacity` in [this sample](https://github.com/Azure-Samples/powerbi-powershell/blob/master/Zero-Downtime-Capacity-Scale.ps1)).
    * [*Manually*](../../enterprise/service-premium-capacity-manage-gen2.md#assigning-workspaces-to-capacities) as a workspace admin or via the Admin portal as a capacity admin (see also [Assign a workspace to a capacity using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-using-a-master-user))​.
 
-3. As the capacity admin, install the Gen2 capacity metrics app and refresh its data after providing the capacity ID and the time in days to monitor (see relevant blog post and follow instruction in here) ​
+3. As the capacity admin, [install the Gen2 capacity metrics app](../../enterprise/service-premium-install-gen2-app.md). Provide the capacity ID and time (in days) to monitor, and then refresh the data. For more information, see [Use the Gen2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md).​
 
-4. Use the Power BI Capacity Load Assessment Tool on GitHub repository which also has a link to a video walk through here. Use carefully: test with up to a few dozens of concurrent simulated users and extrapolate for higher concurrent loads (100s, 1,000s)​
-(Notice that the Power BI embedded analytics capacity planning doc page refers to the same tool but still refers to the old Gen1 premium capacity monitoring app that should be ignored). ​
-Alternatively load test with other tools but treat the iFrame as a blackbox and simulate user activity via JS code. ​
+4. Use the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) on GitHub repository which includes a [video walk through](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/#video-walk-through). Use this tool carefully: test with up to a few dozen concurrent simulated users and extrapolate for higher concurrent loads (100s, 1,000s)​
+For more information, see [Assess your capacity load](./load-assessment-planning-tool.md).   ​
+Alternatively, use other load testing tools, but treat the iFrame as a black box and simulate user activity via JS code. ​
 
-5. Use the Premium Gen 2 Capacity metrics app (installed in step 3) to monitor your capacity utilization incurred via the load testing tool (step 4). Alternatively you can also monitor the capacity the Gen2 metrics  in Azure Alerts​
+5. Use the [Premium Gen 2 Capacity metrics app](../../enterprise/service-premium-gen2-metrics-app.md)(that you​ installed in step 3) to monitor the capacity utilization incurred via the load testing tool. Alternatively, you can monitor the capacity by checking the [Gen2 metrics](./monitor-power-bi-embedded-reference.md) in [Azure Alerts]​(/azure/azure-monitor/alerts/alerts-overview).
 
-6. Consider using a larger SKU for your capacity if the actual CPU incurred on your capacity by the load testing (as reported in the capacity utilization metrics power BI app) is reaching or approaching the capacity limit.
+Consider using a larger SKU for your capacity if the actual CPU incurred on your capacity by the load testing is approaching the capacity limit.
 
 ## Set up auto-scale
 
-### Using the planning tool
+The autoscaling technique described here lets you can elastically re-size your A-SKU capacity to address its current memory and CPU needs. ​
 
-When running the tool, keep in mind the existing load on your capacities and make sure not to run load tests during top usage times.
+* Use the [Update Capacity API](/rest/api/power-bi-embedded/capacities/update) to up-scale or down-scale the capacity SKU. ​
+See this [runbook PowerShell script capacity scale-up sample](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) on how to use the API call to create your own up-scale and down-scale scripts.​
 
-Here are some examples of how you can use the planning tool.
+* Use [Azure Monitor alerts](/azure/azure-monitor/alerts/alerts-overview) to track the Power BI Embedded Gen2 capacity metrics:​
 
-* Capacity administrators can get a better understanding of how many users their capacity can handle in a given time frame.
-* Report authors can understand the user load effect, as measured with Power BI desktop's [Performance Analyzer](../../create-reports/desktop-performance-analyzer.md).
-* You can see renders happening in real time on your browser.
-* Using SQL Server Profiler, you can [connect to the XMLA endpoints](../../enterprise/service-premium-connect-tools.md) of the capacities being measured, to see the queries being executed.
-* The load test effects are visible in the premium capacity metrics app's Datasets page. Capacity admins can use this tool to generate load, and see how that load shows up.
+  * Overload (*1* if capacity’s CPU has surpassed 100% and is in overloaded state, otherwise *0*) ​
+  * CPU (percentage og CPU utilization) ​
+  * CPU Per Workload if specific workloads (e.g., Paginated reports) are used. ​
 
-### Reviewing the test results
+When these metrics hit the values specified in the Azure Monitor Alert rules, the rules will trigger the execution of an up-scale or down-scale runbook script. ​
+​
+For example, you can create a rule that invokes the upscale capacity runbook to update the capacity to a higher SKU if Overload = 1 or if CPU = 95%. ​
+You can also create a rule that invokes a downscale capacity runbook script to update the capacity to a lower SKU if the CPU drops below 50% (say 45%).​
 
-To see the effects of the load test in the metrics app after the test runs, follow the instructions below. Expect up to a 15-minute lag from the time the test starts generating load, until the load is visible in the metrics.
-
-1. Expand the **Datasets** tab of your [metrics app](../../enterprise/service-admin-premium-monitor-capacity.md) landing page.
-2. Initiate an on-demand refresh by clicking **refresh now**.
-
-    ![Power BI premium capacity metrics.](media/embedded-capacity-planning/embedded-capacity-planning.png)
-
-## Power BI capacity tools GitHub repository
-
-The [Power BI capacity tools GitHub repository](https://github.com/microsoft/PowerBI-Tools-For-Capacities) was created to host the capacity planning tool and other future tools and utilities.
-
-The repository is open source and users are encouraged to contribute, add more tools related to Power BI Premium and Embedded capacities, and improve the existing ones.
+You could also invoke upscale and downscale runbooks programmatically on demand before and after a dataset refresh is executed. This could ensure your capacity has enough RAM (GB) for large datasets using that capacity.
 
 ## Next steps
 
