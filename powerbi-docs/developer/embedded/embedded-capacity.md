@@ -33,9 +33,6 @@ Power BI Embedded is for ISVs and developers who want to embed visuals into thei
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
 
->[!NOTE]
->Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
-
 ### Power BI Premium
 
 [Power BI Premium](../../enterprise/service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
@@ -104,9 +101,7 @@ The table below lists payment and usage considerations per capacity.
 
 The table below describes the resources and limits of each SKU.
 
-#### [Premium Gen2](#tab/gen2)
-
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
+| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | RAM per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
 | ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
@@ -121,40 +116,14 @@ The table below describes the resources and limits of each SKU.
 
 <sup>2</sup> These limits only apply to the datasets workload per capacity.
 
-<sup>3</sup> The *Max memory per dataset (GB)* column (also called the *model size limit*) represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+<sup>3</sup> The *RAM per dataset (GB)* column (also called the *model size limit*) represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
 <sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
-#### [Premium Gen1](#tab/gen1)
-
-| Capacity SKUs | Total v-cores | Backend v-cores | Frontend v-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
-| ------ | --- | ---- | ---- | --- | ------ | --- | --- |
-| EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
-| EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
-| EM3/A3 |   4 |  2   |  2   |  10 |  15    |  2  |  3  |
-| P1/A4  |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
-| P2/A5  |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
-| P3/A6  |  32 | 16   | 16   | 100 | 120    | 10  | 24  |
-| P4/A7<sup>2</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
-| P5/A8<sup>2</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
-
-<sup>1</sup> The model refresh parallelism limits only apply to dataset workloads per capacity.
-
-<sup>2</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
-
----
-
-#### Embedded Gen 2 memory enhancements
-
-The amount of memory available on each node size is described in the *RAM (GB)* column in the [SKU memory and computing power](#sku-memory-and-computing-power) table. With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also known as Embedded Gen 2), it's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, a single dataset size is limited to 25 GB, compared to the original Power BI Embedded capacity, where the total memory footprint of *all* datasets handled at the same time was limited to 25 GB.
+Note the amount of memory available on each node size described in the *RAM (GB)* column of the table. It's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded A4 capacity, a *single dataset* size is limited to 25 GB, and not the total memory footprint of *all* datasets handled at the same time.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
-
-> [!div class="nextstepaction"]
-> [Embed from apps](./index.yml)
+* [Embed for your customers](embed-sample-for-customers.md)
+* Embed for your organization](embed-sample-for-your-organization.md)
+* [Embed from apps](./index.yml)

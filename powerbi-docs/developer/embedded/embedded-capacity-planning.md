@@ -12,7 +12,7 @@ ms.date: 10/24/2022
 
 # Capacity planning in Power BI embedded analytics
 
-Calculating the type of capacity you need for a Power BI embedded analytics deployment, can be complicated. The capacity you need depends on several parameters, some of them hard to predict.
+Calculating the type of capacity you need for a Power BI embedded analytics deployment can be complicated. The capacity you need depends on several parameters, some of which are hard to predict.
 
 Some of the things to consider when planning your capacity are:
 
@@ -22,9 +22,8 @@ Some of the things to consider when planning your capacity are:
 * Data refresh rates
 * Other usage patterns that are hard to predict
 
-This article explains how to plan what capacity you need and do a load testing assessment for Power BI embedded analytics. This article applies to all Power BI embedded analytics gen2 capacities (*A*, *EM* or *P* SKUs).
-
-For information about gen2 capacities and how they differ from gen1 capacities see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+>[!NOTE]
+>This article explains how to plan what capacity you need and how to do a load testing assessment for Power BI embedded analytics A-SKUs. To plan your capacity size for *EM* or *P* SKUs see [Planning your capacity size in advance](../../enterprise/service-premium-capacity-manage-gen2.md#planning-your-capacity-size-in-advance).
 
 When planning your capacity, take the following steps:
 
@@ -35,7 +34,7 @@ When planning your capacity, take the following steps:
 
 ## Optimize your performance and resource consumption
 
-Before you start any capacity planning or load testing assessment you should optimize the performance and resource consumption (especially memory footprint) of your reports and datasets​.
+Before you start any capacity planning or load testing assessment, optimize the performance and resource consumption (especially memory footprint) of your reports and datasets​.
 
 To optimize your performance, follow the guidelines in the following resources:
 
@@ -81,7 +80,7 @@ To test or assess your capacity load:
 
 3. As the capacity admin, [install the Gen2 capacity metrics app](../../enterprise/service-premium-install-gen2-app.md). Provide the capacity ID and time (in days) to monitor, and then refresh the data. For more information, see [Use the Gen2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md).​
 
-4. Use the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) on GitHub repository which includes a [video walk through](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/#video-walk-through). Use this tool carefully: test with up to a few dozen concurrent simulated users and extrapolate for higher concurrent loads (100s, 1,000s)​
+4. Use the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) to assess your capacity needs. This GitHub repository also includes a [video walk through](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/#video-walk-through). Use this tool carefully: test with up to a few dozen concurrent simulated users and extrapolate for higher concurrent loads (hundreds or thousands, depending on your needs.)​
 For more information, see [Assess your capacity load](./load-assessment-planning-tool.md).   ​
 Alternatively, use other load testing tools, but treat the iFrame as a black box and simulate user activity via JS code. ​
 
@@ -91,16 +90,16 @@ Consider using a larger SKU for your capacity if the actual CPU incurred on your
 
 ## Set up auto-scale
 
-The autoscaling technique described here lets you can elastically re-size your A-SKU capacity to address its current memory and CPU needs. ​
+The autoscaling technique described here lets you can elastically resize your A-SKU capacity to address its current memory and CPU needs. ​
 
 * Use the [Update Capacity API](/rest/api/power-bi-embedded/capacities/update) to up-scale or down-scale the capacity SKU. ​
 See this [runbook PowerShell script capacity scale-up sample](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) on how to use the API call to create your own up-scale and down-scale scripts.​
 
-* Use [Azure Monitor alerts](/azure/azure-monitor/alerts/alerts-overview) to track the Power BI Embedded Gen2 capacity metrics:​
+* Use [Azure Monitor alerts](/azure/azure-monitor/alerts/alerts-overview) to track the Power BI Embedded capacity metrics:​
 
   * Overload (*1* if capacity’s CPU has surpassed 100% and is in overloaded state, otherwise *0*) ​
-  * CPU (percentage og CPU utilization) ​
-  * CPU Per Workload if specific workloads (e.g., Paginated reports) are used. ​
+  * CPU (percentage of CPU utilization) ​
+  * CPU Per Workload if specific workloads (like Paginated reports) are used. ​
 
 When these metrics hit the values specified in the Azure Monitor Alert rules, the rules will trigger the execution of an up-scale or down-scale runbook script. ​
 ​
