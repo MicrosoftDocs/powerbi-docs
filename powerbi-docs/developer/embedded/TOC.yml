@@ -80,7 +80,7 @@
     - name: Create a capacity using Multi-Geo in Azure
       href: embedded-multi-geo.md
     - name: Assess capacity load
-      href: load-assessment.md
+      href: load-assessment-planning-tool.md
     - name: Scale a capacity in Azure
       href: azure-pbie-scale-capacity.md
     - name: Pause and start a capacity in Azure
