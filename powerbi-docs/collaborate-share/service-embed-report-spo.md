@@ -38,7 +38,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
 2. On the **File** menu, select **Embed report** > **SharePoint Online**.
 
-    ![More options menu, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
+    ![More options menu, SharePoint Online](./media/service-embed-report-spo/powerbi-sharepoint-new-page-1.png)
 
 3. Copy the report URL from the dialog box.
 
@@ -48,27 +48,27 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
 1. Open the target page in SharePoint Online and select **Edit**.
 
-    ![SP edits page](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
+    ![SP edits page](./media/service-embed-report-spo/sharepoint-online-select-edit.png)
 
     Or, in SharePoint Online, select **Pages** > **+ New** > **Site Page** to create a new modern site page.
 
-    ![SP new page](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
+    ![SP new page](./media/service-embed-report-spo/sharepoint-online-select-site-pages.png)
 
 2. Select the **+** in New dropdown menu and then select the **Power BI** web part.
 
-    ![SP new web part](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
+    ![SP new web part](./media/service-embed-report-spo/select-powerbI-webpart-in-sharepoint-page.png)
 
 3. Select **Add report**.
 
-    ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
+    ![SP new report](./media/service-embed-report-spo/add-powerbi-report.png)  
 
 4. Paste the previously copied report URL into the **Power BI report link** field. The report loads automatically.
 
-    ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
+    ![SP new web part properties](./media/service-embed-report-spo/paste-powerbi-report-link.png)
 
 5. Select **Publish** to make the change visible to your SharePoint Online users.
 
-    ![SP report loaded](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
+    ![SP report loaded](./media/service-embed-report-spo/select-publish-your-report.png)
 
 ## Grant access to reports
 
@@ -121,7 +121,7 @@ If your Power BI environment requires you to sign in by using multi-factor authe
 
 The following table lists the settings you can adjust for the Power BI web part for SharePoint Online:  
 
-![SP web part properties](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
+![SP web part properties](./media/service-embed-report-spo/paste-powerbi-report-link.png)
 
 | Property | Description |
 | --- | --- |
@@ -175,6 +175,6 @@ Users who view a report in SharePoint need either a **Power BI Pro or Premium Pe
 * [Publish an app in Power BI](service-create-distribute-apps.md)  
 * [Share Power BI reports and dashboards with coworkers and others](service-share-dashboards.md)  
 * [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
-* [Embed report in a secure portal or website](service-embed-secure.md)
+* [Embed a report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
