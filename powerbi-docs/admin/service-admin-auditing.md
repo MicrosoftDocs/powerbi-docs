@@ -140,7 +140,7 @@ $activities[0]
 
 ## Use the audit log
 
-If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in Microsoft 365 compliance or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
+If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in Microsoft Purview or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
 
 You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a csv (comma-separated value) file to analyze offline.
 
@@ -154,13 +154,13 @@ Meet these requirements to access audit logs:
 
     If you can't access the Exchange admin center from the Microsoft 365 admin center, go to https://outlook.office365.com/ecp and sign in using your credentials.
 
-- If you have access to the audit log but aren't a global admin or Power BI Administrator, you can't get to the Power BI Admin portal. In this case, use a direct link to  [Microsoft 365 compliance](https://compliance.microsoft.com/auditlogsearch).
+- If you have access to the audit log but aren't a global admin or Power BI Administrator, you can't get to the Power BI Admin portal. In this case, use a direct link to  [Microsoft Purview](https://compliance.microsoft.com/auditlogsearch).
 
 ### Access your audit logs
 
 To access logs, first enable logging in Power BI. For more information, see [Audit and usage settings](service-admin-portal-audit-usage.md#create-audit-logs-for-internal-activity-auditing-and-compliance) in the admin portal documentation. There may be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. You might experience a similar delay between getting permission to view audit logs and being able to access the logs.
 
-The Power BI audit logs are available directly through [Microsoft 365 compliance](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
+The Power BI audit logs are available directly through [Microsoft Purview](https://compliance.microsoft.com/auditlogsearch). There's also a link from the Power BI admin portal:
 
 1. In Power BI, select **Settings** > **Admin portal**.
 
@@ -289,7 +289,7 @@ For more information on connecting to Exchange Online, see [Connect to Exchange 
 The following operations are available in both the audit and activity logs.
 
 > [!NOTE]
-> We recently added many Power BI activities to the audit and activity logs. Friendly names can be found in Microsoft 365 Compliance, and we'll continue to update this list to identify the operation names used in REST API and PowerShell queries.
+> We recently added many Power BI activities to the audit and activity logs. Friendly names can be found in Microsoft Purview, and we'll continue to update this list to identify the operation names used in REST API and PowerShell queries.
 
 | Friendly name         | Operation name           | Notes                                  |
 |-----------------------|--------------------------|----------------------------------------|

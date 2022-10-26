@@ -81,7 +81,7 @@ Customer Lockbox has two type of logs:
 
     :::image type="content" source="media/service-admin-power-bi-security-lockbox/customer-lockbox-activity-logs-thumbnail.png" alt-text="Screenshot of the activity logs in Customer Lockbox for Microsoft Azure." lightbox="media/service-admin-power-bi-security-lockbox/customer-lockbox-activity-logs.png":::
 
-* **Audit logs** - Available from the Office 365 Security & Compliance center. You can see the audit logs in the Power BI [admin portal](../admin/service-admin-portal-audit-logs.md).
+* **Audit logs** - Available from the Microsoft Purview compliance portal. You can see the audit logs in the Power BI [admin portal](../admin/service-admin-portal-audit-logs.md).
 
     Customer Lockbox for Power BI has four [Power BI audit logs](./../admin/service-admin-auditing.md):
 
