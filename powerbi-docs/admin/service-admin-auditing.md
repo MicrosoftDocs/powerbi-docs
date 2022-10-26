@@ -140,7 +140,7 @@ $activities[0]
 
 ## Use the audit log
 
-If your task is to track user activities across Power BI and Microsoft 365, you can use the audit log within Microsoft Purview or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
+If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in Microsoft Purview or use PowerShell. Auditing relies on functionality in Exchange Online, which automatically supports Power BI.
 
 You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a csv (comma-separated value) file to analyze offline.
 
@@ -289,7 +289,7 @@ For more information on connecting to Exchange Online, see [Connect to Exchange 
 The following operations are available in both the audit and activity logs.
 
 > [!NOTE]
-> We recently added many Power BI activities to the audit and activity logs. Friendly names can be found in Microsoft 365 Compliance, and we'll continue to update this list to identify the operation names used in REST API and PowerShell queries.
+> We recently added many Power BI activities to the audit and activity logs. Friendly names can be found in Microsoft Purview, and we'll continue to update this list to identify the operation names used in REST API and PowerShell queries.
 
 | Friendly name         | Operation name           | Notes                                  |
 |-----------------------|--------------------------|----------------------------------------|
@@ -343,6 +343,9 @@ The following operations are available in both the audit and activity logs.
 | Dataflow permissions added   | DataflowPermissionsAdded       | Not currently used     |
 | Dataflow permissions removed      | DataflowPermissionsRemoved                  | Not currently used       |
 | Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem               |        |
+| Delete admin monitoring folder via lockbox     | DeleteAdminMonitoringFolderViaLockbox               |        |
+| Delete admin usage dashboards via lockbox     | DeleteAdminUsageDashboardsViaLockbox               |        |
+| Delete usage metrics v2 package via lockbox     | DeleteUsageMetricsv2PackageViaLockbox               |        |
 | Deleted deployment pipeline      | DeleteAlmPipeline     |   |
 | Deleted current value connection of Power BI metric | | |
 | Deleted link to external resource | DeleteExternalResourceLink | |
@@ -395,6 +398,7 @@ The following operations are available in both the audit and activity logs.
 | Generated Power BI Embed Token     | GenerateEmbedToken  |        |
 | Generate screenshot     | GenerateScreenshot |   |
 | Get Power BI group users | GetGroupUsers | |
+| Get refresh history via lockbox | GetRefreshHistoryViaLockbox | |
 | Imported file to Power BI   | Import   |           |
 | Initiated Power BI gateway cluster authentication process | | |
 | Inserted or updated current value connection of Power BI metric | UpsertGoalCurrentValueConnection | |

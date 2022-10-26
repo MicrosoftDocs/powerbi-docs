@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 10/19/2022
+ms.date: 10/23/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -245,6 +245,13 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels aren’t currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, PDF, and PBIX files.
 
+* Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, with the exception of the following scenarios:
+
+    * Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files. Refresh will fail. Neither report content nor label will be updated.
+    * Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label will not be updated.
+    * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
+    * If the dataset owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
+
 ### Power BI Desktop
 
 * Power BI Desktop for Power BI Report Server doesn’t support information protection. If you try to open a protected .pbix file, the file won’t open and you’ll receive an error message. Sensitivity-labeled .pbix files that aren’t encrypted can be opened as normal.
@@ -258,13 +265,6 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 * "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's [label policy](/microsoft-365/compliance/create-sensitivity-labels). If the label isn't in the user's label policy, the Publish or Get data action will fail.
 
 * If the label applied to a .pbix file hasn't been published to the user in the Purview compliance portal, the user won’t be able to save the file in Desktop.
-
-* Import of *.pbix* files stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, with the exception of the following scenarios:
-
-    * Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files. Refresh will fail. Neither report content nor label will be updated.
-    * Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label will not be updated.
-    * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
-    * If the dataset owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
 * Power BI supports publishing or importing a .pbix file that has an **unprotected** sensitivity label to the service via APIs running under a service principal. Publishing or importing a .pbix file that has a **protected** sensitivity label to the service via APIs running under a service principal **is not** supported and will fail. To mitigate, users can remove the label and then publish using service principals.
 
