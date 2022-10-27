@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports in different formats and scenarios. In this article, you create your own flow from scratch. You use the **Export to File for Power BI Reports** action to automatically distribute a Power BI report via email. 
 
-:::image type="content" source="media/service-automate-power-bi-report-export/automate-power-bi-report-overview.png" alt-text="Power Automate steps to export and email a report.":::
+:::image type="content" source="media/service-automate-power-bi-report-export/automate-power-bi-report-overview.png" alt-text="Screenshot of the Power BI Automate window showing create options.":::
 
 Power Automate is a no-code way to interact with the Export To File API in the user interface. See [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports) to start interacting with the API directly.
 
@@ -32,27 +32,27 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
 2. Select **Create** > **Scheduled cloud flow**. 
 
-    :::image type="content" source="media/service-automate-power-bi-report-export/schedule-a-cloud-flow.png" alt-text="Create a scheduled flow in Power Automate.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/schedule-a-cloud-flow.png" alt-text="Screenshot showing the Power Bi create window and scheduled cloud flow is highlighted.":::
 
 3. In **Build a scheduled flow**, give your flow a name. 
 4. In **Run this flow**, select the starting date and time for your flow and the repetition frequency.
 5. In **On these days**, select which days you want your flow to run, and select **Create**.
 
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-build-flow-5.png" alt-text="Power Automate, schedule the flow.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-build-flow-5.png" alt-text="Screenshot showing the build a scheduled cloud flow dialog.":::
 
-6. In **Recurrence**, select **Edit** > **Show advanced options** and enter a value in **At these hours** and **At these minutes** to set a specific time for your flow to run.
+6. In **Recurrence**, select **Edit** > **Show advanced options**. Enter a value in **At these hours** and **At these minutes** to set a specific time for your flow to run.
  
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-recurrence-6.png" alt-text="Set recurrence in Power Automate.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-recurrence-6.png" alt-text="Screenshot showing the recurrence dialog.":::
 
 7. Select **New Step**.
 8. In **Choose an operation**, search for **Power BI** and select **Export To File for Power BI Reports**.
  
-    :::image type="content" source="../media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Choose an operation in Power Automate.":::
+    :::image type="content" source="../media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Screenshot showing the choose an operation dialog. Export to file for Power Bi reports is highlighted.":::
 
 9. In **Export to File for Power BI Reports**, select a **Workspace** and **Report** from the dropdowns.
 10. Select the desired **Export Format** for your Power BI report.
  
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Select export format in Power Automate.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Screenshot of the export to file for for Power Bi reports.":::
 
 11. Optionally, you can indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL, as it's shown in the following example. 
  
@@ -68,7 +68,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 16. Select **Show advanced options**. In **Attachments Name – 1**, enter a name for your attachment. Add a file extension to the file name (for example, .PDF) that matches your desired **Export Format**.
 17. In **Attachment Content**, select **File Content** to attach your exported Power BI report.  
  
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-send-email-17.png" alt-text="Select your exported report to email.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-send-email-17.png" alt-text="Screenshot showing the send an email dialog.":::
 
 18. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors.
 1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow.
@@ -84,7 +84,7 @@ Optionally, if you want to send the report based on row-level security (RLS), yo
 
     `https://app.powerbi.com/groups/me/settings/datasets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 
-    :::image type="content" source="media/service-automate-power-bi-report-export/export-power-automate-rls-dataset-id.png" alt-text="Screenshot of example dataset ID.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/export-power-automate-rls-dataset-id.png" alt-text="Screenshot of an example dataset ID.":::
 
 - **Identities Roles Item - 1** = RLS name defined in the report
 
