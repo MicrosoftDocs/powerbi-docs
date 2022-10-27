@@ -32,7 +32,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
 2. Select **Create** > **Scheduled cloud flow**. 
 
-    :::image type="content" source="media/service-automate-power-bi-report-export/schedule-a-cloud-flow.png" alt-text="Screenshot showing the Power Bi create window and scheduled cloud flow is highlighted.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/schedule-a-cloud-flow.png" alt-text="Screenshot showing the Power BI create window and scheduled cloud flow is highlighted.":::
 
 3. In **Build a scheduled flow**, give your flow a name. 
 4. In **Run this flow**, select the starting date and time for your flow and the repetition frequency.
@@ -47,12 +47,12 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 7. Select **New Step**.
 8. In **Choose an operation**, search for **Power BI** and select **Export To File for Power BI Reports**.
  
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Screenshot showing the choose an operation dialog. Export to file for Power Bi reports is highlighted.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Screenshot showing the Power Automate dialog for choosing an operation. Export to file for Power BI reports is highlighted.":::
 
 9. In **Export to File for Power BI Reports**, select a **Workspace** and **Report** from the dropdowns.
 10. Select the desired **Export Format** for your Power BI report.
  
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Screenshot of the export to file for for Power BI reports.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Screenshot of the export to file for Power BI reports.":::
 
 11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL as shown in the example. 
  
