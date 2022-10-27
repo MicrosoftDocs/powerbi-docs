@@ -47,7 +47,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 7. Select **New Step**.
 8. In **Choose an operation**, search for **Power BI** and select **Export To File for Power BI Reports**.
  
-    :::image type="content" source="../media/service-automate-power-bi-report-export/export-to-file-for-powerbi-reports.png" alt-text="Choose an operation in Power Automate.":::
+    :::image type="content" source="../media/service-automate-power-bi-report-export/automate-report-choose-action-8" alt-text="Choose an operation in Power Automate.":::
 
 9. In **Export to File for Power BI Reports**, select a **Workspace** and **Report** from the dropdowns.
 10. Select the desired **Export Format** for your Power BI report.
