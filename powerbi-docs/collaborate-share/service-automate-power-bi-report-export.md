@@ -56,15 +56,14 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 
 11. Optionally, you can indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL, as it's shown in the following example. 
  
-    Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
+    `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
 
 12. Optionally, you can indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as it's shown in the following example. Note only *report* bookmarks are supported, not *personal* bookmarks. You can specify other parameters for the Power BI report. Find detailed descriptions of these parameters in the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports).
 
-    Example: `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/ReportSection?bookmarkGuid=xxxxxxxxxx`
+    `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/ReportSection?bookmarkGuid=xxxxxxxxxx`
 
 13. Select **New Step**.
 14. In **Choose an operation**, search for **Outlook** and select **Send an email (V2)**. 
-:::image type="content" source="/media/service-automate-power-bi-report-export/choose-an-operation.png" alt-text="Office 365 outlook is selected and send email via v2 highlighted.":::
 15. In **Send an email (V2)**, complete the **To**, **Subject**, and **Body** fields for your email.
 16. Select **Show advanced options**. In **Attachments Name – 1**, enter a name for your attachment. Add a file extension to the file name (for example, .PDF) that matches your desired **Export Format**.
 17. In **Attachment Content**, select **File Content** to attach your exported Power BI report.  
@@ -83,7 +82,7 @@ Optionally, if you want to send the report based on row-level security (RLS), yo
 - **Identities Username - 1** = The effective username reflected by a token for applying RLS rules. For an on-premises model, username can be composed of alpha-numerical characters, or any of the following characters: `'.', '-', '_', '!', '#', '^', '~', '\', and '@'`. For cloud models, username can be composed of all ASCII characters. Also, username can be up to 256 characters, and can't contain spaces.
 - **Identities Dataset - 1** = You can get this value by going to the settings of the dataset, and then copying the dataset ID from the address bar, as shown in this example and in the following image:
 
-    Example: `https://app.powerbi.com/groups/me/settings/datasets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+    `https://app.powerbi.com/groups/me/settings/datasets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 
     :::image type="content" source="media/service-automate-power-bi-report-export/export-power-automate-rls-dataset-id.png" alt-text="Screenshot of example dataset ID.":::
 
