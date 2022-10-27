@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 05/05/2022
+ms.date: 10/26/2022
 ---
 
 # Embed a report web part in SharePoint Online
@@ -24,7 +24,8 @@ For **Embed in SharePoint Online** reports to work, the following is required:
 
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
-* Users need a Power BI Pro or Premium Per User (PPU) license, unless the report is hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md). In that case, users only need a free Power BI license to view reports embedded in Sharepoint Online. 
+* Users need a Power BI Pro or Premium Per User (PPU) license to embed a web part in SharePoint Online.
+* If the report is hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md), users with only a free Power BI license can *view* reports that are already embedded in Sharepoint Online. Users with only a free Power BI license can't *embed* reports in SharePoint Online.
 
     > [!Note]
     > For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro or Premium Per User (PPU) license.
