@@ -12,7 +12,7 @@ LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
 
-With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports in different formats and scenarios. In this article, you create your own flow from scratch. You use the **Export to File for Power BI Reports** action to automatically distribute a Power BI report via email. 
+With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI reports in different formats and scenarios. In this article, you create your own flow from scratch. Use the **Export to File for Power BI Reports** action to automatically distribute a Power BI report via email. 
 
 :::image type="content" source="media/service-automate-power-bi-report-export/automate-power-bi-report-overview.png" alt-text="Screenshot of the Power BI Automate window showing create options.":::
 
@@ -47,18 +47,18 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 7. Select **New Step**.
 8. In **Choose an operation**, search for **Power BI** and select **Export To File for Power BI Reports**.
  
-    :::image type="content" source="../media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Screenshot showing the choose an operation dialog. Export to file for Power Bi reports is highlighted.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-choose-action-8.png" alt-text="Screenshot showing the choose an operation dialog. Export to file for Power Bi reports is highlighted.":::
 
 9. In **Export to File for Power BI Reports**, select a **Workspace** and **Report** from the dropdowns.
 10. Select the desired **Export Format** for your Power BI report.
  
-    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Screenshot of the export to file for for Power Bi reports.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Screenshot of the export to file for for Power BI reports.":::
 
-11. Optionally, you can indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL, as it's shown in the following example. 
+11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL as shown in the example. 
  
     `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
 
-12. Optionally, you can indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as it's shown in the following example. Note only *report* bookmarks are supported, not *personal* bookmarks. You can specify other parameters for the Power BI report. Find detailed descriptions of these parameters in the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports).
+12. Optionally, indicate a specific bookmark to display in the **Bookmark Name** field. You can find the bookmark name in the report URL after bookmarkGuid=, as shown in the example. Only *report* bookmarks are supported, not *personal* bookmarks. You can specify other parameters for the Power BI report. Find detailed descriptions of these parameters in the [Export to File for Power BI Reports](/connectors/powerbi/#export-to-file-for-power-bi-reports).
 
     `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/ReportSection?bookmarkGuid=xxxxxxxxxx`
 
