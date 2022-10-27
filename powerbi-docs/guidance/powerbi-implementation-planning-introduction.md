@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 07/25/2022
+ms.date: 09/15/2022
 ---
 
 # Power BI implementation planning
@@ -35,7 +35,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - Content distribution and sharing
 - Change management and deployment
 - Security
-- Data protection
+- [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
 - Power BI Premium
 - Gateways
 - Integration with other services

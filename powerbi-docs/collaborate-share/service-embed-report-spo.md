@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 05/05/2022
+ms.date: 10/26/2022
 ---
 
 # Embed a report web part in SharePoint Online
@@ -24,7 +24,8 @@ For **Embed in SharePoint Online** reports to work, the following is required:
 
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
-* Users need a Power BI Pro or Premium Per User (PPU) license, unless the report is hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md). In that case, users only need a free Power BI license to view reports embedded in Sharepoint Online. 
+* Users need a Power BI Pro or Premium Per User (PPU) license to embed a web part in SharePoint Online.
+* If the report is hosted in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md), users with only a free Power BI license can *view* reports that are already embedded in Sharepoint Online. Users with only a free Power BI license can't *embed* reports in SharePoint Online.
 
     > [!Note]
     > For organizations in Power BI National clouds, there's no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro or Premium Per User (PPU) license.
@@ -62,7 +63,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
     ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Paste the previously-copied report URL into the **Power BI report link** field. The report loads automatically.
+4. Paste the previously copied report URL into the **Power BI report link** field. The report loads automatically.
 
     ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -77,7 +78,13 @@ Embedding a report in SharePoint Online doesn't automatically give users permiss
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide report access in Power BI. The first way, if you're using a Microsoft 365 Group to build your SharePoint Online team site, is to list the user as a member of the **workspace within the Power BI service** and the **SharePoint page**. For more information, see how to [manage a workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
+There are two ways to provide report access in Power BI. 
+
+### In a Microsoft 365 Group
+
+The first way, if you're using a Microsoft 365 Group to build your SharePoint Online team site, is to list the user as a member of the **workspace within the Power BI service** and the **SharePoint page**. 
+
+### Share directly with users
 
 The second way is to embed a report within an app and share it directly with users:  
 
@@ -95,7 +102,7 @@ The second way is to embed a report within an app and share it directly with use
 
 6. Create a new team site in SharePoint Online.
 
-7. Add the previously-copied report URL to the Power BI web part.
+7. Add the previously copied report URL to the Power BI web part.
 
 8. Add all end users and/or groups who are going to consume the data on the SharePoint Online page and in the Power BI app you created.
 

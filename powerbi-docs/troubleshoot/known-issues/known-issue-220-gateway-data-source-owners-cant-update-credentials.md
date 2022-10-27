@@ -6,17 +6,17 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/03/2022
+ms.date: 09/02/2022
 ms.custom: known-issue-220
 ---
 
-# Description of known issue #220
+# Known issue #220 - Gateway data source owners can't update data source credentials
 
 If you have owner permission but no gateway level permission on a data source, you may not be able to update the credentials for that data source.  The page will just show as loading and the credentials won't update.
 
 **APPLIES TO:** ✔️ Power BI Gateway
 
-**Status:** Open
+**Status:** Fixed: September 2, 2022
 
 **Problem area:** Gateway
 

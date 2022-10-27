@@ -64,7 +64,7 @@ To embed a paginated report using the sample app, follow these steps:
 
 ### [Embed for your customers](#tab/customers)
 
-As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [new workspace](../../collaborate-share/service-create-the-new-workspaces.md).
+As you're using a [service principal](embed-service-principal.md) to sign into your application, you'll need to create a [workspace](../../collaborate-share/service-create-the-new-workspaces.md).
 
 Your *service principal* must also be an admin or member of the Power BI workspaces.
 
@@ -84,7 +84,7 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
     >[!NOTE]
-    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports and Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#paginated-reports-and-premium-gen2).
+    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports](../../enterprise/service-premium-gen2-what-is.md#paginated-reports).
 
 The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
@@ -125,7 +125,7 @@ Once you create a capacity, you can assign your app workspace to that capacity.
 To assign a capacity to a workspace using a [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you're using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
 >[!NOTE]
->You can also import paginated reports into a *new workspace* using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
+>You can also import paginated reports into a workspace using the [Power BI REST APIs](/rest/api/power-bi/imports/postimportingroup).
 
 ### [Embed for your organization](#tab/organization)
 
@@ -202,7 +202,8 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 * You must use a **service principal**. Master user isn't supported.
 * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) isn't supported.
-* When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces), and the user generating the embed token should have *Write* permissions in the workspaces of the report and the dataset.
+* When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces). The user generating the embed token should have *Write* permissions in the workspaces of both the report and the dataset.
+* Embedding a paginated report connected to Azure Analysis Services with Single Sign-on (SSO) enabled is not supported
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
 
@@ -211,6 +212,8 @@ For a full list of supported datasets and their authentication methods, see [Sup
 [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
 
 ---
+
+* Paginated reports don't support client side events (like `loaded` or `rendered`)
 
 ## Next steps
 

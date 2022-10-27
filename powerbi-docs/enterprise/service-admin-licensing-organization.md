@@ -48,6 +48,7 @@ Individual users can get their own Power BI license by signing up with their wor
 
 Users can upgrade their license type, or sign up for a different license directly, if the organization is using the commercial cloud. Direct purchase of or upgrade to Pro isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
 
+
 If you don't want users in your organization to use self-service sign-up, see [Enable or disable self-service sign-up](service-admin-disable-self-service.md).
 
 Turning off self-service sign-up keeps users from exploring Power BI. If you block individual sign-up, you can get Power BI (free) licenses for your organization and assign them to all users. 
@@ -73,9 +74,12 @@ There are three kinds of Power BI per-user licenses: Free, Pro, and Premium Per 
 
 The [Power BI Premium](service-admin-premium-purchase.md) organizational subscription is a capacity-based license. Using Premium capacity Pro and PPU users can share content and collaborate with free and other PPU users.
 
+One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Using Premium capacity allows Pro and PPU users to share content and collaborate with free users and PPU users. 
+
 For detailed information about licensing, see [Licenses for the Power BI](../fundamentals/service-features-license-type.md).
 
 An organization using Power BI with free and Pro per-user licenses has a shared and limited capacity to process content. If content is stored in that shared capacity, users who are assigned a Power BI Pro license can collaborate only with other Power BI Pro users. They can use content shared by other users, publish content to app workspaces, share dashboards, and subscribe to dashboards and reports.  When workspaces are in Premium capacity, Pro users can distribute content to users who don't have a Power BI Pro license.
+
 
 Content created by a user with a PPU license can only share with other users with a PPU license, unless that content is put into a workspace hosted on a Premium capacity. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
 

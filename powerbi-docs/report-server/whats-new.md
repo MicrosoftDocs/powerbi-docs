@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 6/08/2022
+ms.date: 10/17/2022
 ms.custom: intro-whats-new
 ---
 
@@ -16,6 +16,69 @@ ms.custom: intro-whats-new
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## September 2022
+
+This release introduces Power BI Report Server for SQL Server 2022. We continue to innovate, create, and design to give everyone the ability to achieve more. Designing for inclusion reflects how people adapt to the world around them. In this new release of Power BI Report Server, we've done a lot of accessibility work to make sure we're empowering everyone. The release includes:
+
+- Enhanced Windows Narrator support for the new Windows Operating Systems (OS) and Windows Server
+- Security enhancements
+- Browser performance improvements with Angular
+- Accessibility bug fixes
+- Support for SQL Server 2022 (16.x) preview instances report server catalog and feature updates. 
+  
+### Report Server
+
+#### Refreshed portal
+
+We've improved the Power BI Report Server portal to provide a more inclusive modern graphical interface, making it easier to deliver meaningful reporting on your data from a web-based experience. In the portal, you can view Power BI reports, paginated reports, Excel files, and KPIs, and navigate through the elements in your report server instance. You can also use the web portal to administer a single report server instance.
+
+:::image type="content" source="media/whats-new/power-bi-report-server-web-portal.png" alt-text="Screenshot showing refreshed Power BI Report Server web portal.":::
+
+#### New report server properties
+
+Report Server 2022 has a number of new options for setting system properties on the report server. The article [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services) explains how to set them in SQL Server Management Studio. Each of the links in this section takes you to that option in the article.
+
+- Branding options to add a custom hyperlink, [CustomUrlLabel and CustomUrlValue](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customurllabel-and-customurlvalue):
+
+  - **CustomUrlLabel**: default Empty *value* - defines what string will be shown as URL label in the top left of subnavbar. 
+  - **CustomUrlValue**: default Empty *value* - defines the URL. 
+
+- Exclude/included Client IP Address when INFO Logging in Enabled:
+
+  - [**LogClientIPAddress**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#logclientipaddress): default False *value* - defines if client IP will be logged. 
+
+- List view by default option in catalog:
+
+  - [**TileViewByDefault**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#tileviewbydefault): default True *value* - defines if Tiles or List view is selected for all users by default. 
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the [Reporting section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187759) of the Power BI Report Server September 2022 blog for details about these features.
+
+- [New Format pane](../fundamentals/desktop-format-pane.md)
+- Table navigation improvements
+- Error bars
+- Bold/Italics/Underline for text inside the header tooltip
+- Conditional formatting for data labels
+- Hierarchical axis by default
+- Improved display name for summarized fields
+
+#### Modeling
+
+See the [Modeling section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187767) of the Power BI Report Server September 2022 blog for details about this new DAX function.
+
+- New DAX function: NETWORKDAYS
+
+#### Other
+
+See the [Other section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187769) of the Power BI Report Server September 2022 blog for details about these features.
+
+- Data hub improvements – data preview and export
+- Power BI Desktop infrastructure update (WebView2)
+- Licensing API
 
 ## May 2022
 
@@ -102,7 +165,7 @@ Here’s a list of new and updated features. For details, see the [Power BI Repo
 
 **Highlighted new features**
 
-Here are highlights of the the new features in Power BI Desktop for Power BI Report Server.
+Here are highlights of the new features in Power BI Desktop for Power BI Report Server.
 
 - [Smart guides for aligning objects](../create-reports/power-bi-create-mobile-optimized-report-about.md) are now available in the mobile layout view.
 - [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
@@ -250,16 +313,16 @@ This new feature of the Excel connector automatically identifies sections of eac
 
 **Modeling: Enhanced Dataset Metadata**
 
-In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off the data model when you open that PBIX file.
+In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off the data model when you open that .pbix file.
 
 This backend update has unlocked future feature improvements and will continue to do so. 
 
 For example:
 
 - With the addition of external tools in Power BI Desktop (currently in preview), tables you add through these external tools now appear as queries when you reopen your report.
-- If you've tried to export a PBIT file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
+- If you've tried to export a .pbit file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
 
-If you have an older PBIX that can't automatically update, for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any other modeling changes. 
+If you have an older .pbix that can't automatically update, for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any other modeling changes. 
 
 **Support for Windows 7 ends**
 
@@ -311,7 +374,7 @@ Here’s a complete list of the updates in the October edition of Power BI Deskt
 **Other**  
 
 - Export data source to PBIDS in Power BI Desktop
-- Desktop splash screen dismiss 
+- Desktop splash screen dismiss
 
 ### Power BI Report Server
 
