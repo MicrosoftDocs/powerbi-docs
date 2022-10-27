@@ -42,7 +42,7 @@ Ensure each environment meets the following prerequisites:
 
 - You must have **Workspace administrator** permission. Power BI admins can view migrations for their tenant, however, they can't perform migrations unless they also have Workspace administrator permission.
 
-- You must have an [**Azure Data Lake Storage Gen 2 (ADLS Gen 2)**](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md) storage account enabled in the same tenant.
+- You must have an [**Azure Data Lake Storage Gen 2 (ADLS Gen 2)**](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md) storage account enabled in the same tenant and the workspace you're migrating to must be [connected](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) to that storage account.
 
 - [**Large dataset storage format**](service-premium-large-models.md) must be enabled for the workspace.
 
