@@ -116,5 +116,6 @@ Licensed visuals aren't supported in the following environments. Therefore, if l
 * [Develop a Power BI circle card visual](develop-circle-card.md)
 * [Power BI visuals project structure](visual-project-structure.md)
 * [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
-* [Frequently asked questions](power-bi-custom-visuals-faq.yml)
-* [Power BI Community](https://community.powerbi.com/)
+* [Examples of Power BI visuals](./samples.md)
+
+More questions? try the [Power BI Community](https://community.powerbi.com/)

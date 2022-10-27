@@ -47,7 +47,12 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-planned-maintenance.md",
-            "redirect_url": "power-bi/troubleshoot/service-planned-maintenance",
+            "redirect_url": "/power-bi/support/service-planned-maintenance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/service-planned-maintenance.md",
+            "redirect_url": "/power-bi/support/service-planned-maintenance",
             "redirect_document_id": false
         },
         {
@@ -1831,6 +1836,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/power-bi-cannot-sign-in.md",
+            "redirect_url": "/power-bi/support/power-bi-cannot-sign-in",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-whitelist-urls.md",
             "redirect_url": "/power-bi/admin/power-bi-whitelist-urls",
             "redirect_document_id": true
@@ -1866,6 +1876,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md",
+            "redirect_url": "/power-bi/support/service-admin-capturing-additional-diagnostic-information-for-power-bi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-closing-your-account.md",
             "redirect_url": "/power-bi/enterprise/service-admin-closing-your-account",
             "redirect_document_id": true
@@ -1891,8 +1906,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-admin-health.md",
-            "redirect_url": "/power-bi/admin/service-admin-health",
+            "source_path": "powerbi-docs/admin/service-admin-health.md",
+            "redirect_url": "/power-bi/support/service-admin-health",
             "redirect_document_id": true
         },
         {
@@ -2091,6 +2106,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-interruption-notifications.md",
+            "redirect_url": "/power-bi/support/service-interruption-notifications",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-manage-app-workspace-in-power-bi-and-office-365.md",
             "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
             "redirect_document_id": false
@@ -2244,6 +2264,11 @@
             "source_path": "powerbi-docs/service-support-options.md",
             "redirect_url": "/power-bi/admin/service-support-options",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-support-options.md",
+            "redirect_url": "/power-bi/support/service-support-options",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-tutorial-analyze-in-excel.md",
@@ -3881,8 +3906,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-admin-portal-help-support.md",
+            "redirect_url": "/power-bi/support/service-admin-portal-help-support",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-tips-for-finding-help.md",
             "redirect_url": "/power-bi/fundamentals/service-tips-for-finding-help",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/service-tips-for-finding-help.md",
+            "redirect_url": "/power-bi/support/service-tips-for-finding-help",
             "redirect_document_id": true
         },
         {
@@ -3893,6 +3928,11 @@
         {
             "source_path": "powerbi-docs/supported-languages-countries-regions.md",
             "redirect_url": "/power-bi/fundamentals/supported-languages-countries-regions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-region-move.md",
+            "redirect_url": "/power-bi/support/service-admin-region-move",
             "redirect_document_id": true
         },
         {
@@ -4709,6 +4749,12 @@
         {
             "source_path": "powerbi-docs/guidance/admin-tenant-settings.md",
             "redirect_url": "/power-bi/admin/service-admin-portal-about-tenant-settings",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "powerbi-docs/admin/admin-microsoft-graph-metadata.md",
+            "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
             "redirect_document_id": false
         }
     ]           

@@ -189,7 +189,9 @@
     - name: Use private links for Power BI
       href: service-security-private-links.md
     - name: Configure mobile apps with Intune
-      href: service-admin-mobile-intune.md           
+      href: service-admin-mobile-intune.md
+    - name: Customer Lockbox for Power BI
+      href: service-admin-power-bi-security-lockbox.md                 
   - name: Automation tools
     expanded: false
     items:

@@ -112,7 +112,7 @@ Power BI admins and global administrators can change Power BI Premium capacity. 
 
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](../admin/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 
 ### Manage user permissions
