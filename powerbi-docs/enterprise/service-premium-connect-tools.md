@@ -180,9 +180,9 @@ Access through the XMLA endpoint will honor security group membership set at the
 
 Workspace contributors and above have write access to the dataset and are therefore equivalent to Analysis Services database admins. They can deploy new datasets from Visual Studio and execute TMSL scripts in SSMS.
 
-Operations that require Analysis Services server admin permissions (rather than database admin) such as server-level traces and user impersonation using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property are not supported in Premium workspaces at this time.
+Operations that require Analysis Services server admin permissions (rather than database admin) such as server-level traces and user impersonation using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property are supported in Premium workspaces. The account specified in EffectiveUserName must exist in the tenant's Azure Active Directory and must have both **Read** and **Build** permissions for the dataset being connected to. If the account does not have both Read and Build permissions, Power BI can't impersonate the user account and the connection will fail and an error is returned. To learn more about specifying dataset permissions, see [Dataset permissions](../connect-data/service-datasets-permissions.md).
 
-Other users who have [Build permission](../connect-data/service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
+Other users who have Build permissions for a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
 
 ### Model roles
 
