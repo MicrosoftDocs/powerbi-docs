@@ -48,6 +48,6 @@ Consider the following suggestions to deliver professional report layouts, ease 
 
 For more information related to this article, check out the following resources:
 
-- [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
