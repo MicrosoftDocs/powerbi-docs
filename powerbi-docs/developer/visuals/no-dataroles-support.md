@@ -21,9 +21,9 @@ By default, if no values are defined, the format settings are disabled and the v
 
 The `dataRoles` capabilities model allows you to receive updates from Power BI without binding data.
 
-This means that you can render a visual and use the *update* method to change the format settings even if the data-buckets are empty, or if your visual doesn't use any data roles at all.
+Using the `dataRoles` capabilities model, you can render a visual and use the *update* method to change the format settings even if the data-buckets are empty, or if your visual doesn't use any data roles.
 
-The following tabs show two examples of a Power BI visual. One visual requires binding data, and the other uses the *no data roles* feature and doesn't require binding data.
+The following tabs show two examples of a Power BI visual. The first visual requires binding data. The second visual uses the *no data roles* feature and doesn't require binding data.
 
 ### [Binding data required](#tab/NoDataroles)
 
@@ -44,9 +44,9 @@ The following tabs show two examples of a Power BI visual. One visual requires b
 
 To enable the no data-binding feature, set the following two parameters in the `capabilities.json` file to *true*.
 
-* [Landing page](landing-page.md) allows you to display information on the Power BI card before it's loaded with data
+* A [landing page](landing-page.md) allows you to display information on the Power BI card before it's loaded with data.
 
-* Empty data view allows Power BI updates when the values field is empty.
+* The empty data view allows Power BI updates when the values field is empty.
 
 ```json
     {
