@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 10/25/2022
+ms.date: 10/26/2022
 ---
 
 # Embed a report web part in SharePoint Online
