@@ -16,13 +16,13 @@ LocalizationGroup: Administration
 
 Everyone who uses the Power BI service must have a license. What a user can do depends on the type of **per-user license** that they have. Licenses are free, Pro, or Premium Per User (PPU). The level of access provided by their license depends on whether the workspace is a **Premium** workspace or not.
 
-There are two ways for users to get a license, from an administrator or self-service. Using the self-service sign-up capabilities and their work or school account, users can get their own free, Pro, or Premium Per User license. Administrators can get a Power BI license subscription and then assign licenses to users.
+There are two ways for users to get a license, from an administrator or self-service. Self-service sign up capabilities and a work or school email account are needed for users to get their own free, Pro, or Premium Per User license. Administrators can get a Power BI license subscription and then assign licenses to users.
 
 This article is for administrators who can purchase services and per-user licensing. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## Who can purchase and assign licenses
 
-You must belong to an admin role to purchase or assign licenses for your organization. Admin roles are assigned using the Azure Active Directory admin center or the Microsoft 365 admin center. For more information about admin roles in Azure Active Directory, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+You must belong to an admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Azure Active Directory admin center or the Microsoft 365 admin center. For more information about admin roles in Azure Active Directory, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 The following roles are required to manage licensing for an organization.
 
@@ -69,12 +69,11 @@ To see which users in your organization already have a license, see [View and ma
 
 There are three kinds of Power BI per-user licenses: free, Pro, and Premium Per User. The type of license a user needs is determined by where content is stored, how they'll interact with that content, and if that content uses Premium features. Where an organization stores content is determined by [subscription license type](#subscription-license-types).
 
-One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Using Premium capacity allows users with Pro and Premium Per User licenses to share content and collaborate with others who have free and Premium Per User licenses.
+One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Premium capacity allows users with Pro and Premium Per User licenses to share content and collaborate with others who have free and Premium Per User licenses.
 
 For detailed information about licensing, see [Licenses for the Power BI](../fundamentals/service-features-license-type.md).
 
-Content created by a user who is assigned a Premium Per User license can only be shared with other users who have a Premium Per User license, unless the content is specifically saved in a workspace hosted with Premium capacity. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
-
+Content created by a user who is assigned a Premium Per User license can only be shared with other users who have a Premium Per User license. Content that is saved in a workspace hosted with Premium capacity can be shared with users who don't have a Premium Per User license. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
 
 ## Subscription license types
 
