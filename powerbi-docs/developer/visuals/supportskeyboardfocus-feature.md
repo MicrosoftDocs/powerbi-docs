@@ -12,7 +12,7 @@ ms.date: 10/27/2022
 
 # Enable keyboard navigation of a visual
 
-This article describes how to enable the user to navigate through a Power BI visual using the keyboard. This feature makes Power BI more accessible to people with disabilities and allows everyone more choice when interacting with reports.
+This article describes how to enable the user to navigate through a Power BI visual using the keyboard. Using the keyboard makes Power BI more accessible to people with disabilities and allows everyone more choice when interacting with reports.
 
 The `supportsKeyboardFocus` feature makes it possible to navigate the data points of the visual using only the keyboard.
 
@@ -20,7 +20,7 @@ The `supportsKeyboardFocus` feature makes it possible to navigate the data point
 
 For a brief illustration of how keyboard navigation works:
 
-1. Open any visual that has the `supportsKeyboardFocus` feature enabled. (Try a visual from the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md#get-the-sample), for example.)
+1. Open any visual that has the `supportsKeyboardFocus` feature enabled. Try a visual from the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md#get-the-sample), for example.
 2. Select any data point within the visual and select the **Tab** key.
     The focus moves to the next data point each time you select **Tab**.
 3. Press **Enter** to select the highlighted data point.
