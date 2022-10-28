@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/02/2021
+ms.date: 10/28/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
