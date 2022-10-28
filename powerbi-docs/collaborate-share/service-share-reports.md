@@ -47,6 +47,20 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 1. For the **Chat in Teams** dialog, you need provide the name of the Team or Channel that you wish to share to, then click **Share**:
 
     ![Chat in teams](media/service-share-reports/power-bi-share-teams-dialog.png)
+    
+## Share a visual 
+
+1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+2. You can access **Share > Link to selection** from the visual right-click menu:
+3. For the **Copy link** dialog you need to select copy:
+
+    ![Share visual copy link dialog](media/service-share-reports/power-bi-share-teams-dialog.png)
+
+5. For the **Link copied** dialog you'll copy the provided link:
+
+    ![Share visual link copied dialog](media/service-share-reports/power-bi-share-teams-dialog.png)
+
+
 
 ## Share directly
 
@@ -98,8 +112,9 @@ When you share this link, recipients with access to the report will see your fil
 Things to keep in mind about sharing reports:
 
 * When you share a dataset by managing permissions, by sharing reports or dashboards, or by publishing an app, you're granting access to the entire dataset unless [row-level security (RLS)](../enterprise/service-admin-rls.md) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences don't restrict what data users can access in the dataset. Use [row-level security (RLS)](../enterprise/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.
-* The shared report view will automatically expire after 180 days.
+* The shared report view will automatically expire after 180 days. Each time the link shared report view is accessed the expiration is reset to 180 days.
 * You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app. 
+* Share link to selection for visuals is reports creates a shared view with the visual in spotlight mode. It is not available in organiational apps.
 
 ## Next steps
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
