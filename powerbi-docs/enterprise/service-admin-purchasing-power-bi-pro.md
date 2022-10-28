@@ -23,18 +23,18 @@ Power BI Pro is an individual user license that lets users read and interact wit
 
 This article explains how to purchase Power BI Pro user licenses in the Microsoft 365 admin center. After purchasing, you can assign licenses to users from either the Microsoft 365 admin center or the Azure portal.
 
-Self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers. For more information, see [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq). To enable or disable self-service purchasing capabilities, see [Enable or disable self-service sign-up and purchasing](./service-admin-disable-self-service.md).
+Self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers. For more information, see the[Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq). See [Enable or disable self-service sign-up and purchasing](./service-admin-disable-self-service.md).
 
 ### Prerequisites
 
-To purchase and assign licenses in the Microsoft 365 admin center, you must be a member of the [global administrator or Billing administrator](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) role in Microsoft 365.
+To purchase and assign licenses in the Microsoft 365 admin center, you must be a member of the [Global or Billing admin role in Microsoft 365](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 To assign licenses in the Azure portal, you must be an owner of the Azure subscription that Power BI uses for Azure Active Directory lookups.
 
 ### Purchase licenses in Microsoft 365
 
 > [!NOTE]
-> To receive an invoice instead of purchasing with a credit card or bank account, work with your Microsoft Reseller or go through the Volume Licensing Service Center to add or remove licenses. For more information, see [Manage subscription licenses](/microsoft-365/commerce/licenses/buy-licenses).
+> To receive an invoice instead of using a credit card or bank account, work with your Microsoft Reseller or go through the Volume Licensing Service Center to add or remove licenses. For more information, see [Manage subscription licenses](/microsoft-365/commerce/licenses/buy-licenses).
 
 Purchase Power BI Pro licenses in the Microsoft 365 admin center:
 
@@ -57,7 +57,7 @@ Purchase Power BI Pro licenses in the Microsoft 365 admin center:
 
 For information about assigning licenses from the Microsoft 365 admin center, see [Assign Microsoft 365 licenses to users](/office365/admin/manage/assign-licenses-to-users).
 
-For guest users, see [Use the licenses page to assign licenses to users](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro licenses to guest users, contact your Microsoft account representative to make sure you're in compliance with the terms of your agreement with Microsoft.
+For guest users, see [Use the licenses page to assign licenses to users](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro licenses to guest users, contact your Microsoft account representative to make sure you're in compliance with the terms of your agreement.
 
 ## Assign licenses in the Azure portal
 
@@ -75,8 +75,8 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
 - [Power BI licensing in your organization](service-admin-licensing-organization.md)
 
- - [Find Power BI users who have signed in](../admin/service-admin-access-usage.md)
+- [Find Power BI users who have signed in](../admin/service-admin-access-usage.md)
 
- - [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md)
+- [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
