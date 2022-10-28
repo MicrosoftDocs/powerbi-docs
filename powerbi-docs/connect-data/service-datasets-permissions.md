@@ -16,15 +16,15 @@ This article describes dataset permissions in the Power BI service and how these
 
 ## What are the dataset permissions?
 
-The table below describes the four levels of permission that control access to datasets in the Power BI service.
+The table below describes the four levels of permission that control access to datasets in the Power BI service. It also describes the permissions that the dataset owner has on the dataset, and other actions that only the dataset owner can perform.
 
 |Permission  |Description  |
 |------------|-------------|
-|Read        |Allows user to access reports and other solutions, such as composite models on Premium/PPU workspaces, that read data from the dataset.<br>Analyze in Excel.<br>View dataset settings.|
-|Build       |Allows user to build new content from the dataset, as well as find content that uses the dataset.<br>Allows user to access reports that access composite models on Power BI Pro workspaces<br>Allows user to build composite models.<br>Allows querying using external APIs like XMLA. |
+|Read        |Allows user to access reports and other solutions, such as composite models on Premium/PPU workspaces, that read data from the dataset.<br>Allows user to pull the data into Analyze in Excel.<br>Allows user to view dataset settings.|
+|Build       |Allows user to build new content from the dataset, as well as find content that uses the dataset.<br>Allows user to access reports that access composite models on Power BI Pro workspaces.<br>Allows user to build composite models.<br>Allows querying using external APIs such as XMLA. |
 |Reshare     |Allows user to grant dataset access. |
 |Write       |Allows user to republish the dataset.<br>Allows user to [backup and restore the dataset](../enterprise/service-premium-backup-restore-dataset.md).<br>Allows user to make changes to the dataset via XMLA.<br>Allows user to edit dataset settings, except data refresh, credentials, and automatic aggregations.|
-|Owner       |The dataset owner can do all of the above, as well as configure refresh, credentials, and automatic aggregations.<br>The dataset owner is not a permission per se, but rather a conceptual role that has all the permissions on a dataset. The first dataset owner is the person who created the dataset, and afterwards the last person to configure the dataset after taking it over in the dataset settings.|
+|Owner       |The dataset owner is not a permission per se, but rather a conceptual role that has all the permissions on a dataset. The first dataset owner is the person who created the dataset, and afterwards the last person to configure the dataset after taking it over in the dataset settings.<br><br>The dataset owner can do all of the above, as well as configure dataset refresh, credentials, and automatic aggregations.|
 
 ## How are the dataset permissions acquired?
 
