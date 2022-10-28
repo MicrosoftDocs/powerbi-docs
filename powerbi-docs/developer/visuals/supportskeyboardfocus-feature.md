@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/27/2021
+ms.date: 10/27/2022
 ---
 
 # Enable keyboard navigation of a visual
@@ -32,8 +32,7 @@ To learn more about keyboard navigation for visuals, see [Keyboard Navigation](.
 
 ## Enable the support keyboard navigation feature
 
-To enable the `supportsKeyboardFocus` feature, add the following code to the *capabilities.json* file of your visual.
-This capability allows the visual to receive focus through keyboard navigation.
+ The `supportsKeyboardFocus` feature allows a visual to receive focus through keyboard navigation. To enable, add the following code to the *capabilities.json* file of your visual:
 
 ```json
     {   
