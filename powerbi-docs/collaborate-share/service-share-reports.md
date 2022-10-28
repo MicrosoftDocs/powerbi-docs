@@ -51,14 +51,17 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 ## Share a visual 
 
 1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
-2. You can access **Share > Link to selection** from the visual right-click menu:
-3. For the **Copy link** dialog you need to select copy:
+1. You can access **Share > Link to selection** from the visual right-click menu:
 
-    ![Share visual copy link dialog](media/service-share-reports/power-bi-share-teams-dialog.png)
+    ![Visual right-click menu with Share submenu expanded](media/service-share-reports/power-bi-share-visual-menu-link-to-selection.png)
+ 
+1. For the **Copy link** dialog you need to select copy:
 
-5. For the **Link copied** dialog you'll copy the provided link:
+    ![Share visual copy link dialog](media/service-share-reports/power-bi-share-visual-dialog-copy-link.png)
 
-    ![Share visual link copied dialog](media/service-share-reports/power-bi-share-teams-dialog.png)
+1. For the **Link copied** dialog you'll copy the provided link:
+
+    ![Share visual link copied dialog](media/service-share-reports/power-bi-share-visual-dialog-link-copied.png)
 
 
 
