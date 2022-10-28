@@ -59,7 +59,7 @@ To embed your report into SharePoint Online, you'll need to get the report URL a
 
 3. Select **Add report**.
 
-    ![Screenshot of S P new report dialog asking to include a report on your page with add report button displayed.](../media/service-embed-report-spo/add-powerbi-report.png)  
+    ![Screenshot of S P new report dialog asking to include a report on your page with add report button displayed.](media/service-embed-report-spo/add-powerbi-report.png)  
 
 4. Paste the previously copied report URL into the **Power BI report link** field. The report loads automatically.
 
