@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 07/15/2019
+ms.date: 10/28/2022
 ms.custom: intro-overview
 ---
 
