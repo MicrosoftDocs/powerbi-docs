@@ -23,20 +23,18 @@ This article lists the main Power BI Premium features. Most of the features appl
 |Feature |Description |
 |--------|------------|
 |[Advanced AI](../transform-model/dataflows/dataflows-machine-learning-integration.md) |Use artificial intelligence (AI) with dataflows |
-|[Asynchronous refresh](../connect-data/asynchronous-refresh.md) (preview) |Perform asynchronous data-refresh operations |
-|[Automatic aggregations](aggregations-auto.md) (preview) |Optimize DirectQuery datasets |
+|[Asynchronous refresh](../connect-data/asynchronous-refresh.md) |Perform asynchronous data-refresh operations |
+|[Automatic aggregations](aggregations-auto.md) |Optimize DirectQuery datasets |
 |[Autoscale](service-premium-auto-scale.md) |Automatically add compute capability when your capacity is overloaded</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) only |
 |[Backup and restore](service-premium-backup-restore-dataset.md) |Backup and restore data using XMLA endpoints |
 |[Bring your own key (BYOK)](service-encryption-byok.md) |Use your own keys to encrypt data</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
-|[Dataflows computed entities](../transform-model/dataflows/dataflows-premium-features.md#computed-entities) |Perform in-storage computations |
-|[Dataflows enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) |Optimize the use of dataflows |
-|[Dataflows incremental refresh](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh) |Use incremental refresh with dataflows |
-|[Dataflows linked entities](../transform-model/dataflows/dataflows-premium-features.md#linked-entities) |Reference other dataflows |
+|[Dataflows](../transform-model/dataflows/dataflows-premium-features.md) |<ul><li>[Perform in-storage computations](../transform-model/dataflows/dataflows-premium-features.md#computed-entities)</li><li>[Optimize the use of dataflows](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine)</li><li>[Use incremental refresh with dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)</li><li>[Reference other dataflows](../transform-model/dataflows/dataflows-premium-features.md#linked-entities)</li></ul> |
+|[Datamarts](../transform-model/datamarts/datamarts-overview.md) |Self-service solution enabling users to store and explore data that's loaded in a fully managed database|
 |[Deployment pipelines](../create-reports/deployment-pipelines-overview.md) |Manage the lifecycle of your Power BI content |
 |[DirectQuery with dataflows](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi) |Connect directly to your dataflow without having to import its data |
 |Hybrid tables (preview) |Incremental refresh augmented with real-time data |
 |[Insights](../create-reports/insights.md) (preview) |Explore and find insights such as anomalies and trends in your reports |
-|[Model size limit](service-premium-gen2-what-is.md#capacity-nodes-for-premium-gen2) |Available memory is set to:</br></br>*Premium Gen2* - The limit of memory footprint of a single Power BI item; see the column *RAM* in the table at the bottom of [Limitations in Premium Gen2](service-premium-gen2-what-is.md#limitations-in-premium-gen2)</br></br>*Premium (original version)* - The cumulative consumption of memory of the capacity; see the column *RAM* in the table at the bottom of [Capacity nodes](service-premium-what-is.md#capacity-nodes)</br></br>*Premium Per User (PPU)* - See [Considerations and limitations](service-premium-per-user-faq.yml#considerations-and-limitations) |
+|[Model size limit](service-premium-gen2-what-is.md#memory-allocation) |Available memory is set to:</br></br>*Premium Gen2* - The limit of memory footprint of a single Power BI item; see the column *Max memory per dataset* in the [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus) table</br></br>*Premium (original version)* - The cumulative consumption of memory of the capacity; see the column *RAM* in the table at the bottom of [Capacity nodes](service-premium-what-is.md#capacity-nodes)</br></br>*Premium Per User (PPU)* - See [Considerations and limitations](service-premium-per-user-faq.yml#considerations-and-limitations) |
 |[Multi-geo](../admin/service-admin-premium-multi-geo.md) |Deploy content to data centers in regions other than the home region of your tenant</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
 |On-demand loading capabilities for large models |Improve report load time by loading datasets to memory on demand |
 |[Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |Pixel-perfect reports |

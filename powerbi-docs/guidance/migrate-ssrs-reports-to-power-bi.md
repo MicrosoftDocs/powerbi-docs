@@ -7,16 +7,16 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 09/27/2022
 ms.custom: intro-migration
 ---
 
 # Migrate SQL Server Reporting Services reports to Power BI
 
-This article targets SQL Server Reporting Services (SSRS) report authors and Power BI administrators. It provides you with guidance to help you migrate your [Report Definition Language (RDL)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
+This article targets SQL Server Reporting Services (SSRS) report authors and Power BI administrators. It provides you with guidance to help you migrate your [Report Definition Language (.rdl)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
 
 > [!NOTE]
-> It's only possible to migrate RDL reports. In Power BI, RDL reports are called _paginated reports_.
+> You can only migrate .rdl reports. In Power BI, .rdl reports are called _paginated reports_.
 
 Guidance is divided into four stages. We recommend that you first read the entire article prior to migrating your reports.
 
@@ -52,7 +52,7 @@ Migration from Power BI Report Server is possible, too.
 
 ### Migration tool
 
-We recommend you use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) to help prepare, and migrate your reports. This tool was developed by Microsoft to help customers migrate RDL reports from their SSRS servers to Power BI. It's available on GitHub, and it documents an end-to-end walkthrough of the migration scenario.
+We recommend that you use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) to help prepare, and migrate your reports. This tool was developed by Microsoft to help customers migrate .rdl reports from their SSRS servers to Power BI. It's available on GitHub, and it documents an end-to-end walkthrough of the migration scenario.
 
 The tool automates the following tasks:
 
@@ -84,7 +84,7 @@ You can use the [Microsoft Assessment and Planning Toolkit](https://www.microsof
 
 Having discovered your SSRS instances, the goal of the _Assess_ phase is to understand any SSRS reports—or server items—that can't be migrated.
 
-Only RDL reports can be migrated from your SSRS servers to Power BI. Each migrated RDL report will become a Power BI paginated report.
+Only .rdl reports can be migrated from your SSRS servers to Power BI. Each migrated .rdl report will become a Power BI paginated report.
 
 The following SSRS item types, however, can't be migrated to Power BI:
 
@@ -98,9 +98,9 @@ The following SSRS item types, however, can't be migrated to Power BI:
 
 <sup>1</sup> The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets—providing they're using supported data sources.
 
-If your RDL reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md). Even if your RDL reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
+If your .rdl reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md). Even if your .rdl reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
 
-If your RDL reports need to retrieve data from _on-premises data sources_, they cannot use single sign-on (SSO). Currently, all data retrieval from these sources will be done by using the security context of the _gateway data source user account_. It's not possible for SQL Server Analysis Services (SSAS) to enforce row-level security (RLS) on a per-user basis.
+If your .rdl reports need to retrieve data from _on-premises data sources_, they cannot use single sign-on (SSO). Currently, all data retrieval from these sources will be done by using the security context of the _gateway data source user account_. It's not possible for SQL Server Analysis Services (SSAS) to enforce row-level security (RLS) on a per-user basis.
 
 Generally, Power BI paginated reports are optimized for **printing**, or **PDF generation**. Power BI reports are optimized for **exploration and interactivity**. For more information, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
@@ -110,7 +110,7 @@ The goal of the _Prepare_ phase involves getting everything ready. It covers set
 
 1. Ensure the [Paginated Reports workload](../enterprise/service-admin-premium-workloads.md#paginated-reports) is enabled for your Power BI Premium capacity, and that it has sufficient memory.
 1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI Gateway](../connect-data/service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
-1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI new workspaces](../collaborate-share/service-new-workspaces.md).
+1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces](../collaborate-share/service-new-workspaces.md).
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
 1. Consider using [shared Power BI datasets](../connect-data/service-datasets-build-permissions.md) in place of your SSRS shared data sources.
 1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your SSRS mobile reports and KPIs.

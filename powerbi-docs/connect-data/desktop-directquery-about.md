@@ -163,7 +163,9 @@ Almost all reporting capabilities are supported for DirectQuery models. As such,
 
 ### Security
 
-As discussed earlier in this article, a report in DirectQuery always uses the same fixed credentials to connect to the underlying data source, after it's published to the Power BI service. This behavior applies to DirectQuery, not to live connections to SQL Server Analysis Services, which is different in this respect. Immediately after publish of a DirectQuery report, it's necessary to configure the credentials of the user that will be used. Until you configure the credentials, opening the report on the Power BI service would result in an error.
+As discussed earlier in this article, unless you're using single sign-on for the data source, a report in DirectQuery always uses the same fixed credentials to connect to the underlying data source, after it's published to the Power BI service. Immediately after publish of a DirectQuery report, it's necessary to configure the credentials of the user that will be used. Until you configure the credentials, opening the report on the Power BI service would result in an error.
+
+When connecting to Power BI Datasets and Analysis Services in DirectQuery mode single sign-on is always used, so the security is similar to live connections to Analysis Services.
 
 Once the user credentials are provided, then those credentials will be used *whichever user who opens the report*. In this way, it's exactly like imported data. Every user sees the same data, unless row-level security has been defined as part of the report. The same attention must be paid to sharing the report, if there are any security rules defined in the underlying source.
 

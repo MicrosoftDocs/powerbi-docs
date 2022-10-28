@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 03/17/2022
+ms.date: 09/28/2022
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 You can use the Azure Private Link feature to provide secure access for data traffic in Power BI. Azure networking provides the Azure Private Link feature. In this configuration, Azure Private Link and Azure Networking private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure. The data travels the Microsoft private network backbone instead of going across the Internet.
 
-Private endpoints make sure that Power BI users go through the Microsoft private network backbone when they access resources in the Power BI service.
+When private link connections are used, those connections go through the Microsoft private network backbone when Power BI users access resources in the Power BI service.
 
 See [What is Azure Private Link](/azure/private-link/private-link-overview) to learn more about Azure Private Link.
 
@@ -36,7 +36,7 @@ The Power BI service implements Private Endpoints, and not Service Endpoints.
 
 Using private endpoints with Power BI provide the following benefits:
 
-1. Private endpoints ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources. 
+1. Private endpoints ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
 
 2. Network traffic isolation from non-Azure based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.  
 
@@ -305,17 +305,20 @@ There are a few considerations to keep in mind while working with private endpoi
 
 * Any uses of external images or themes aren't available when using a private link environment.
 * If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail.
+* Each private endpoint can be connected to one tenant only. 
+* Datamarts don't support private links using SSMS. Even with a configured private link, connections to datamarts using SSMS are only supported through public Internet access.
 * If your organization is using **Azure Private Link** in Power BI, modern usage metrics reports will contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents Power BI from capturing Report Page Views and performance data over Private Links. If your organization is using **Azure Private Link** and **Block Public Internet Access** in Power BI, the refresh for the dataset will fail and the usage metrics report will not show any data.
 * The Power BI Premium Capacity Metrics app doesn’t work when private links are enabled.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
 * Exporting a report as PDF or PowerPoint is not supported when you enable **Azure Private Link** in Power BI.
-* Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI. 
+* Email subscriptions are not supported when you enable **Block Public Internet Access** in Power BI.  
 * [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) doesn't currently support Private Links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the Sensitivity button will be grayed out, label information will not appear, and decryption of *.pbix* files will fail.
 
    To enable these capabilities in Power BI Desktop, admins can configure [Service Tags](/azure/virtual-network/service-tags-overview) for the underlying services that support MIP, [EOP](/azure/virtual-network/service-tags-overview#eopexternalpublishedips), and AIP. Make sure you understand the implications of using Service Tags in a Private Links isolated network.
-* Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. A potential workaround is to turn off Private Links, config the gateway, and then reenable the Private Links. 
+* Gateways enabled for Power BI private endpoints will not work properly with non-Power BI scenarios. For some scenarios, a potential workaround is to turn off Private Links, configure the gateway in a 'remote' region (a region other than the Recommended region), and then reenable the Private Links. After the Private Link is re-enabled, the Gateway in the remote region won't be using Private Link.
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) will fail to register.
 * Private Links resource REST APIs don't support tags.
+* You can't set up a private link to be used by more than one tenant. 
 
 ## Next steps
 
