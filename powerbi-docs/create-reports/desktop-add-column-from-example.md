@@ -14,13 +14,13 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-With *add column from examples* in Power Query Editor, you can add new columns to your data model by providing one or more example values for the new columns. You can create the new column examples from a selection or provide input based on all existing columns in the table.
+With *Add Column From Examples* in Power Query Editor, you can add new columns to your data model by providing one or more example values for the new columns. You can create the new column examples from a selection or provide input based on all existing columns in the table.
 
-![Screenshot of Power Query Editor, showing how to add a column from examples in Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)
+[![Screenshot of Power Query Editor, showing how to add a column from examples in Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
-Use *add column from example* to create new columns quickly and easily in the following situations:
+Use Add Column From Examples to create new columns quickly and easily in the following situations:
 
-- You know the data you want in your new column, but you're not sure which transformation, or collection of transformations, will get you there.
+- You know the data you want in your new column, but you're not sure which transformation, or collection of transformations, you need.
 - You already know which transformations you need, but you're not sure what to select in the UI to make them happen.
 - You know the transformations you need using a *Custom Column* expression in *M* language, but one or more of those expressions aren't available in the UI.
 
@@ -32,32 +32,32 @@ To get sample data from Wikipedia, select **Get Data** > **Web** from the **Home
 
 ![Screenshot of Power BI Desktop, highlighting the Web selection under the Get Data dropdown menu.](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-Paste the following URL into the dialog that appears and select **OK**:
+1. Paste the following URL into the dialog that appears and select **OK**:
 
 *https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*
 
-In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
+2. In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
 
-To open already-loaded data from Power BI Desktop, select **Transform data** from the **Home** tab of the ribbon. The data opens in Power Query Editor.
+3. Select **Transform data** from the **Home** tab of the ribbon. The data opens in Power Query Editor.
 
 ![Screenshot of Power BI Desktop, highlighting the Transform data selection.](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-Once the sample data opens in Power Query Editor, select the **Add Column** tab on the ribbon, and then select **Column from Examples**. Select the **Column From Examples** icon to create the column from all existing columns, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this walkthrough, use **From All Columns**.
+4. Once the sample data opens in Power Query Editor, select the **Add Column** tab on the ribbon, and then select **Column from Examples**. Select the **Column From Examples** icon to create the column from all existing columns, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this walkthrough, use **From All Columns**.
 
 ![Screenshot of Power Query Editor, highlighting Add Column, Column From Examples, and From All Columns.](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
 ## Add Column From Examples pane
-When you select **Add Column** > **From Examples**, the **Add Column From Examples** pane opens at the top of the table. The new **Column 1** appears to the right of the existing columns (you may need to scroll to see them all). When you enter your example values in the blank cells of **Column 1**, Power BI creates rules and transformations to match your examples and uses them to fill the rest of the column.
+When you select **Add Column** > **From Examples**, the **Add Column From Examples** pane opens at the top of the table. The new **Column 1** appears to the right of the existing columns. You may need to scroll to see all of the columns. When you enter your example values in the blank cells of **Column 1**, Power BI creates rules and transformations to match your examples and uses them to fill the rest of the column.
 
 Notice that **Column From Examples** also appears as an **Applied Step** in the **Query Settings** pane. As always, Power Query Editor records your transformation steps and applies them to the query in order.
 
-![Screenshot of Add Column From Examples window, highlighting a new, empty column.](media/desktop-add-column-from-example/add-column-from-example_04.png)
+[![Screenshot of Add Column From Examples window, highlighting a new, empty column.](media/desktop-add-column-from-example/add-column-from-example_04.png)](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
-As you type your example in the new column, Power BI shows a preview of how the rest of the column will look, based on the transformations it creates. For example, if you type *Alabama* in the first row, it corresponds to the **Alabama** value in the first column of the table. When you press enter, Power BI fills in the rest of the new column based on the first column value, and names the column **Name & postal abbreviation[12] - Copy**.
+As you type your example in the new column, Power BI shows a preview of the rest of the column, based on the transformations it creates. For example, if you type *Alabama* in the first row, it corresponds to the **Alabama** value in the first column of the table. When you press **Enter**, Power BI fills in the rest of the new column based on the first column value, and names the column **Name & postal abbreviation[12] - Copy**.
 
 Now go to the **Massachusetts[E]** row of the new column and delete the **[E]** portion of the string. Power BI detects the change and uses the example to create a transformation. Power BI describes the transformations in the **Add Column From Examples** pane, and renames the column to **Text Before Delimiter.**
 
-![Screenshot of Add Column From Examples window, highlighting Massachusetts in the Text Before Delimiter column.](media/desktop-add-column-from-example/add-column-from-example_06.png)
+[![Screenshot of Add Column From Examples window, highlighting Massachusetts in the Text Before Delimiter column.](media/desktop-add-column-from-example/add-column-from-example_06.png)](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
 As you continue to provide examples, Power Query Editor adds to the transformations. When you're satisfied, select **OK** to commit your changes.
 

@@ -55,11 +55,11 @@ The **Custom Column** window has the following features:
 
 2. As you enter the formula and build your column, note the indicator in the bottom of the **Custom Column** window.
 
-   If there are no errors, you'll see a green check mark and the message *No syntax errors have been detected*.
+   If there are no errors, there are a green check mark and the message *No syntax errors have been detected*.
 
    ![Screenshot of the Custom Column dialog box, highlighting no syntax errors have been detected and a checkmark.](media/desktop-add-custom-column/add-custom-column_04.png)
 
-   If there's a syntax error, you'll see a yellow warning icon, along with a link to where the error occurred in your formula.
+   If there's a syntax error, there is a yellow warning icon, along with a link to where the error occurred in your formula.
 
    ![Screenshot of the Custom Column dialog box, highlighting the warning icon and error message.](media/desktop-add-custom-column/add-custom-column_05.png)
 
@@ -82,7 +82,7 @@ After you've created your query, you can also use the **Advanced Editor** to mod
    The **Advanced Editor** window appears, which gives you full control over your query.
 
    ![Screenshot of the Advanced Editor window.](media/desktop-add-custom-column/add-custom-column_07.png)
-
+2. Make any changes and then select **Done**.
 
 ## Next steps
 
