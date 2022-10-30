@@ -20,7 +20,7 @@ Currently supported data sources:
 * Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Azure SQL Database
 
-*Inheritance from from an Excel file located on a local machine isn't supported, because this requires a gateway. See the [considerations and limitations](#considerations-and-limitations) for more detail.
+*Inheritance from Excel files located on local machines isn't supported, because this requires a gateway. See the [considerations and limitations](#considerations-and-limitations) for more detail.
 
 To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
@@ -41,7 +41,7 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 * Labels from data sources never overwrite manually applied labels.
 * Less restrictive labels from the data source never overwrite more restrictive labels on the dataset.
 * In Desktop, if the incoming label is more restrictive than the label that is currently applied in Desktop, a banner will appear recommending to the user to apply the more restrictive label.
-* Dataset refresh will succeed even if for some reason the label from the data source is not applied. 
+* Dataset refresh will succeed even if for some reason the label from the data source isn't applied. 
 
 >[!NOTE]
 > No inheritance takes place if the dataset owner is not authorized to apply sensitivity labels in Power BI, or if the specific label in question has not been published for the dataset owner.
@@ -49,8 +49,8 @@ To be operative, [sensitivity label inheritance from data sources must be enable
 ## Considerations and limitations
 
 * Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
-* Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity is not supported.
-* Inheritance from data sources is not supported in connections via gateways or Azure Virtual Network (VNet). This means that inheritance from an Excel file located on a local machine won't work, because this requires a gateway. 
+* Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity isn't supported.
+* Inheritance from data sources isn't supported in connections via gateways or Azure Virtual Network (VNet). This means that inheritance from an Excel file located on a local machine won't work, because this requires a gateway. 
 
 ## Next steps
 * [Enable sensitivity label inheritance from data sources](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)
