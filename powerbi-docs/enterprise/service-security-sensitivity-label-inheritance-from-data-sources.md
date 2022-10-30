@@ -20,7 +20,7 @@ Currently supported data sources:
 * Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Azure SQL Database
 
-*Inheritance from Excel files located on local machines isn't supported, because this requires a gateway. See the [considerations and limitations](#considerations-and-limitations) for more detail.
+*Inheritance from Excel files located on local machines isn't supported because they are behind a gateway. See the [considerations and limitations](#considerations-and-limitations) for more detail.
 
 To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
