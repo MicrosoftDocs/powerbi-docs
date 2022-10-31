@@ -310,13 +310,13 @@ In the production stage, the main action button on the bottom-right corner opens
 
 ## Permissions
 
-Permissions are required for both the pipeline and on its assigned workspaces. Pipeline permissions and workspace permissions are granted and managed separately.
+Permissions are required for the pipeline, and for the workspaces that are assigned to it. Pipeline permissions and workspace permissions are granted and managed separately.
 
 * Pipelines only have one permission, *Admin*, which is required for sharing, editing and deleting a pipeline.
 
-* Workspaces have different permissions, also called [roles](../collaborate-share/service-roles-new-workspaces.md). Workspace permissions determine the level of access to a workspace in a pipeline.
+* Workspaces have different permissions, also called [roles](../collaborate-share/service-roles-new-workspaces.md). Workspace roles determine the level of access to a workspace in a pipeline.
 
-To deploy from one stage to another in the pipeline, you must be a pipeline admin, and either a member or an admin of the workspaces assigned to the stages involved. For example, a pipeline admin that doesn't have workspace permissions, will be able to view the pipeline and share it with others. However, this user won't be able to view the content of the workspace in the pipeline, or in the workspace page, and won't be able to perform deployments.
+To deploy from one stage to another in the pipeline, you must be a pipeline admin, and either a member or an admin of the workspaces assigned to the stages involved. For example, a pipeline admin that isn't assigned a workspace role, will be able to view the pipeline and share it with others. However, this user won't be able to view the content of the workspace in the pipeline, or in Power BI service, and won't be able to perform deployments.
 
 ### Granted permissions
 
@@ -332,16 +332,16 @@ When deploying Power BI items, the ownership of the deployed item may change. Re
 
 This section describes the deployment pipeline permissions. The permissions listed in this section may have different applications in other Power BI features.
 
-The lowest deployment pipeline permission is *pipeline access*, and it's required for all deployment pipeline operations.
+The lowest deployment pipeline permission is *pipeline admin*, and it's required for all deployment pipeline operations.
 
 |User                          |Pipeline permissions |Comments |
 |------------------------------|------------|---------|
 |**Pipeline admin** |<ul><li>View the pipeline​</li><li>Share the pipeline with others</li><li>Edit and delete the pipeline</li><li>Can see workspaces that are tagged as assigned to the pipeline in Power BI service</li></ul> |Pipeline access doesn't grant permissions to view or take actions on the workspace content. |
-|**Workspace viewer** (and pipeline admin) |Consume content |Workspace members assigned the Viewer role without *build* permissions, cannot access the dataset or edit workspace content. |
-|**Workspace contributor** (and pipeline admin) |<ul><li>Consume content​</li><li>Compare stages</li><li>View datasets</li></ul> |   |
-|**Workspace member** (and pipeline admin) |<ul><li>View workspace content​</li><li>Compare stages</li><li>Deploy items (must be a member or admin of both source and target workspaces)</li><li><li>Assign as workspace to a stage</li>Unassign workspaces from a stage</li><li>Update datasets</li></ul> |If the *block republish and disable package refresh* setting located in the tenant *dataset security* section is enabled, only dataset owners will be able to update datasets. |
-|**Workspace admin** (and pipeline admin) |<ul><li>View workspace content​</li><li>Compare stages</li><li>Deploy reports, dashboards and paginated reports</li><li>Remove workspaces</li><li>Update datasets</li><li>Assign workspaces to a stage</li><li>Remove workspaces</li></ul> |   |
-|**Dataset owner** (and pipeline admin) |Configure rules |To configure rules, dataset owners need to be either *workspace members* or *admins*. |
+|**Workspace viewer**<br>(and pipeline admin) |Consume content |Workspace members assigned the Viewer role without *build* permissions, cannot access the dataset or edit workspace content. |
+|**Workspace contributor**<br>(and pipeline admin) |<ul><li>Consume content​</li><li>Compare stages</li><li>View datasets</li></ul> |   |
+|**Workspace member**<br>(and pipeline admin) |<ul><li>View workspace content​</li><li>Compare stages</li><li>Deploy items (must be a member or admin of both source and target workspaces)</li><li>Assign as workspace to a stage</li>Unassign workspaces from a stage</li><li>Update datasets</li></ul> |If the *block republish and disable package refresh* setting located in the tenant *dataset security* section is enabled, only dataset owners will be able to update datasets. |
+|**Workspace admin**<br>(and pipeline admin) |<ul><li>View workspace content​</li><li>Compare stages</li><li>Deploy reports, dashboards and paginated reports</li><li>Remove workspaces</li><li>Update datasets</li><li>Assign workspaces to a stage</li><li>Remove workspaces</li></ul> |   |
+|**Dataset owner**<br>(and pipeline admin) |Configure rules |To configure rules, dataset owners need to be either *workspace members* or *admins*. |
 
 ### Required permissions for popular actions
 
