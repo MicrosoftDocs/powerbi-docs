@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 10/24/2022
+ms.date: 10/31/2022
 
 LocalizationGroup: Share your work
 ---
@@ -118,7 +118,7 @@ However, this option is disabled in three scenarios:
 
 - You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
 - You're a guest user who has been assigned a workspace role. 
-- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the tenant admin settings portal. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](../admin/service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
 
 ### Save a copy of a report
 
