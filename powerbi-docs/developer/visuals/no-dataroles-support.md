@@ -44,9 +44,9 @@ The following tabs show two examples of a Power BI visual. The first visual requ
 
 To enable the no data-binding feature, set the following two parameters in the `capabilities.json` file to *true*.
 
-* A [landing page](landing-page.md) allows you to display information on the Power BI card before it's loaded with data.
+* [`supportsLandingPage`](landing-page.md) allows you to display information on the Power BI card before it's loaded with data.
 
-* The empty data view allows Power BI updates when the values field is empty.
+* `supportsEmptyDataView` allows Power BI updates when the values field is empty.
 
 ```json
     {
