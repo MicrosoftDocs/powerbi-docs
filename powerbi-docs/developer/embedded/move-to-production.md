@@ -56,7 +56,7 @@ The table below describes the resources and limits of each SKU. To determine whi
 
 ## Development testing
 
-For development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, use a capacity.
+For development testing, you can use free embed trial tokens with a Pro license or Premium Per User (PPU) license. To embed in a production environment, use a capacity.
 
 > [!IMPORTANT]
 > Free trial tokens are limited to development testing only. Once going to production, a capacity must be purchased. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.

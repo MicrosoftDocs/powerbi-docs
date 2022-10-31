@@ -12,7 +12,7 @@ ms.date: 03/17/2022
 LocalizationGroup: Administration
 ---
 
-# Quick measure suggestions admin settings 
+# Quick measure suggestions tenant settings 
 
 These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
