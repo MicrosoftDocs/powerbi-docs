@@ -20,6 +20,22 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## October 2022
+
+## New and improved metrics details pane
+
+The newly designed metrics details pane is now easier to understand and use, and gives you even more data at a glance. [Check out our documentation](./mobile-apps-metrics.md#metric-detail-pane)!
+
+![Screenshot of the new and improved metrics details pane in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-metrics-details-pane.png)
+
+### Request access to apps (iOS and Android)
+
+Have a link to an app you don't have access to? Now you can request access directly from your Power BI mobile app.
+
+### Portrait view now fully supported in Report Server
+
+Now your non-mobile-optimized report pages hosted on Report Server will open no matter which way you're holding your phone - you no longer have to tip your phone on it's side to view such reports. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small landscape view of report. To get a larger view, either tilt your phone to the side, or just use pinch and zoom to zoom in on the area of the report you're interested in.
+
 ## September 2022
 
 ### Mobile formatting options are now generally available!
