@@ -108,6 +108,18 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > [!NOTE]
     > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
 
+### Publish the app to your entire organization
+
+You can add your entire organization to any of the app audience groups when you publish your app.
+
+- In **Manage audience access**, select **Entire organization**.
+
+However, this option is disabled in three scenarios:
+
+- You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
+- You're a guest user who has been assigned a workspace role. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the tenant admin settings portal. 
+
 ### Save a copy of a report
 
 You can allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
@@ -154,7 +166,7 @@ The Permission management page contains these tabs:
 - **Pending access**: Lists all pending requests.
 
   :::image type="content" source="media/service-create-distribute-apps/access-permission-page.png" alt-text="Screenshot of manage permission page.":::
- 
+
 ## Change your published app
 
 After you publish your app, you may want to change or update it. 
