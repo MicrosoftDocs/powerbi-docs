@@ -3,12 +3,12 @@ title: Sensitivity label inheritance from data sources in Power BI
 description: Learn how Power BI datasets can inherit sensitivity labels from data sources
 author: paulinbar
 ms.author: painbar
-manager: rkarlin
+manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 10/30/2021
+ms.date: 10/31/2021
 LocalizationGroup: Data from files
 ---
 # Sensitivity label inheritance from data sources (preview)
@@ -20,7 +20,7 @@ Currently supported data sources:
 * Azure Synapse Analytics (formerly SQL Data Warehouse)
 * Azure SQL Database
 
-*Inheritance from Excel files located on local machines isn't supported because they are behind a gateway. See the [considerations and limitations](#considerations-and-limitations) for more detail.
+*Inheritance from Excel files stored behind a gateway is not supported. See the [considerations and limitations](#considerations-and-limitations) for more detail.
 
 To be operative, [sensitivity label inheritance from data sources must be enabled on the tenant](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview).
 
