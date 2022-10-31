@@ -42,7 +42,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 You can create a pipeline from the deployment pipelines tab, or from a workspace.
 
-After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given [access to the pipeline](deployment-pipelines-process.md#deployment-pipeline-permissions). Pipeline access enables users to view, share, edit, and delete the pipeline.
+After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given access to the pipeline and will become [pipeline admins](deployment-pipelines-process.md#permissions). Pipeline access enables users to view, share, edit, and delete the pipeline.
 
 ### Create a pipeline from the deployment pipelines tab
 

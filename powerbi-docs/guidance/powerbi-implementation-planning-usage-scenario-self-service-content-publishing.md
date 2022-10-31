@@ -95,7 +95,7 @@ Pipeline user permissions (for who can deploy content with a deployment pipeline
 
 When possible, it's recommended that the existing content creator or owner conduct the deployments. In some situations, permissions are more restricted for the production workspace. In that case, it may be appropriate to coordinate the production deployment with someone else who has permission to deploy to production.
 
-[Pipeline users](../create-reports/deployment-pipelines-process.md#deployment-pipeline-permissions) who are assigned to the workspace member (or admin) role are allowed to compare stages and deploy content. Assigning pipeline users to this role minimizes permissions issues and allows for a smoother deployment process.
+[Pipeline users](../create-reports/deployment-pipelines-process.md#permissions) who are assigned to the workspace member (or admin) role are allowed to compare stages and deploy content. Assigning pipeline users to this role minimizes permissions issues and allows for a smoother deployment process.
 
 > [!TIP]
 > Keep in mind that workspace roles are set separately for development, test, and production. However, pipeline access is set once for the entire pipeline.

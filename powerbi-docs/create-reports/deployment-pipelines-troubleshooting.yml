@@ -60,7 +60,7 @@ sections:
       - question: |
           Why can't I see the pipeline stage tag in my workspace?
         answer: |
-          Deployment pipelines displays a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have * pipeline access* or if you're a *workspace admin*. For more information see [Deployment pipeline permissions](deployment-pipelines-process.md#deployment-pipeline-permissions).
+          Deployment pipelines displays a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have *pipeline access* or if you're a *workspace admin*. For more information see [Deployment pipeline permissions](deployment-pipelines-process.md#permissions).
           
           > [!div class="mx-imgBorder"]
           > ![A screenshot of the production tag in a production pipeline workspace.](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -397,7 +397,7 @@ sections:
       - question: |
           Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?
         answer: |
-          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#deployment-pipeline-permissions) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages are required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
+          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#permissions-table) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages are required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
 
           
           :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline.":::
