@@ -8,32 +8,32 @@ manager: mgolan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 10/31/2022
 ---
 
 # Visuals that don't require data binding
 
 When you create a visual in a report, the values are defined interactively by adding data fields to the **Values** well on the visualization pane.
 
-:::image type="content" source="media/no-dataroles-support/binding-data.png" alt-text="Adding values to visual.":::
+:::image type="content" source="media/no-dataroles-support/binding-data.png" alt-text="Screenshot of a Power BI visual that shows the Values well in the visualization pane.":::
 
 By default, if no values are defined, the format settings are disabled and the visual isn't updated.
 
 The `dataRoles` capabilities model allows you to receive updates from Power BI without binding data.
 
-Using the `dataRoles` capabilities model, you can render a visual and use the *update* method to change the format settings even if the data-buckets are empty, or if your visual doesn't use any data roles.
+Using the `dataRoles` capabilities model, you can render a visual and use the *update* method to change the format settings. You can change settings even if the data-buckets are empty, or if your visual doesn't use any data roles.
 
 The following tabs show two examples of a Power BI visual. The first visual requires binding data. The second visual uses the *no data roles* feature and doesn't require binding data.
 
 ### [Binding data required](#tab/NoDataroles)
 
 >[!div class="mx-imgBorder"]
->![Screenshot of the no-dataroles-support before API-2.6.0](media/no-dataroles-support/no-dataroles-1.png)
+>![Screenshot of a Power BI visual that shows empty data and inactive visual settings in the visualization pane.](media/no-dataroles-support/no-dataroles-1.png)
 
 ### [Binding data not required](#tab/NoDatarolesSupport)
 
 >[!div class="mx-imgBorder"]
->![Screenshot of the no-dataroles-support after API-2.6.0](media/no-dataroles-support/no-dataroles-2.png)
+>![Screenshot of a Power BI visual that shows empty data and active format settings in the visualization pane.](media/no-dataroles-support/no-dataroles-2.png)
 
 ---
 
