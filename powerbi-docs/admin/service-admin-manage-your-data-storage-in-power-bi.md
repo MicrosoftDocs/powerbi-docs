@@ -41,7 +41,7 @@ Read about other features of the [Power BI pricing model](https://powerbi.micros
 
 ## What's included in storage
 
-Included in your data storage are your own datasets, your Excel reports, and those items that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to. These data sources include Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity:
+Included in your data storage are your own datasets, Excel reports, and those items that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to. These data sources include Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity:
 
 - Excel ranges pinned to a dashboard.
 - Reporting Services on-premises visualizations pinned to a Power BI dashboard.
@@ -57,7 +57,7 @@ See how much data storage you’re using in your Power BI account, and manage yo
 
     ![Screenshot of the navigation pane with My Workspace called out.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-myworkspace.png)
 
-2. Select the settings icon ![Settings icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_settingsicon.png) in the upper-right corner **Settings** > **Manage personal storage**.
+2. Select the settings icon ![Settings icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_settingsicon.png) in the upper-right corner. Then select **Settings** > **Manage personal storage**.
 
     The top bar shows how much of your storage limit you’ve used.
 
@@ -74,11 +74,11 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 
 ## Manage your workspace
 
-1. Select the arrow next to **Workspaces** select the name of the workspace.
+1. Select the arrow next to **Workspaces** and select the name of the workspace.
 
     ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-group-workspaces.png)
 
-2. Select the settings icon ![Settings icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_settingsicon.png) in the upper-right corner **Settings** > **Manage group storage**.
+2. Select the settings icon ![Settings icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_settingsicon.png) in the upper-right corner. Then select **Settings** > **Manage group storage**.
 
     The top bar shows how much of the group’s storage limit is used.
 
@@ -109,7 +109,7 @@ This limit is indicated within **Manage personal storage**.
 
  ![Screenshot of the personal storage capacity, showing Jane's limit has been reached.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage your items](#manage-your-items) to reduce your storage amount and get past the limit.
+When you try to perform an action that will reach one of the limits, you will see a message that you are over the limit. You can [manage your items](#manage-your-items) to reduce your storage amount and get past the limit.
 
  ![Screenshot of the Over your storage limit dialog, showing limits have been reached.](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
