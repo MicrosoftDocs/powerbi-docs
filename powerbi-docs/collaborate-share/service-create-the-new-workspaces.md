@@ -135,7 +135,8 @@ However, contributors can't:
 * Create or publish the app for the first time.
 * Add users to the app or change who has permission to the app.
 * Enable or disable automatic installation of app for app users.
-* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups. 
+* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups.
+* Allow or disallow app consumers to make/save a copy of reports included in the app.  
 
 ## Premium capacity settings
 
