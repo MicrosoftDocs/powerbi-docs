@@ -27,7 +27,7 @@ This article provides a basic introduction to Azure AD B2B in Power BI. For more
 
 The following table lists the licensing requirements for B2B access to Power BI. To invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed: 
 
-|Providers|Free Use|Pro Use|PPU User|
+|Providers|Free User|Pro User|PPU User|
 |---|----|----|----|
 |Free|Not Supported|Not Supported|Not Supported 
 |Pro Trial|Not Supported|Not Supported|Not Supported|  
