@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 10/28/2022
+ms.date: 11/01/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Data refresh
 This article describes different scenarios you may encounter when refreshing data within the Power BI service.
 
 > [!NOTE]
-> If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter a scenario that is not listed below, and if it's causing issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 
 You should always ensure that basic requirements for refresh are met and verified. These basic requirements include:
 
@@ -64,9 +64,9 @@ Data sources that use Azure AD OAuth include **Microsoft Dynamics CRM Online**, 
 
 Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance is so large that it runs over the two-hour data-load threshold, the Power BI service may report a data load timeout. This data load timeout also applies to other Azure AD OAuth data sources.
 
-Also note that, for refresh to work properly, when connecting to a **SharePoint Online** data source using Azure AD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
+For refresh to work properly when connecting to a **SharePoint Online** data source using Azure AD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
 
-In addition, if you want to connect to a data source from Power BI service using OAuth2, the data source must be in the same tenant as Power BI service. Currently, multi-tenant connection scenarios aren’t supported with OAuth2.
+If you want to connect to a data source from Power BI service using OAuth2, the data source must be in the same tenant as Power BI service. Currently, multi-tenant connection scenarios aren’t supported with OAuth2.
 
 ## Uncompressed data limits for refresh
 
@@ -82,11 +82,11 @@ If a scheduled refresh fails four times in a row, Power BI disables the refresh.
 
 ## Access to the resource is forbidden  
 
-This error can occur because of expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true` to force an update of your credentials.
+This error can occur because of expired cached credentials. Clear your internet browser cache, then sign into Power BI and go to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true` to force an update of your credentials.
 
 ## Data refresh failure because of password change or expired credentials
 
-Data refresh can also fail due to expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`, which forces an update of your credentials.
+Data refresh can also fail due to expired cached credentials. Clear your internet browser cache, then sign into Power BI and go to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`, which forces an update of your credentials.
 
 ## Refresh a column of the ANY type containing TRUE/FALSE results in unexpected values
 
@@ -104,9 +104,9 @@ A Premium capacity may throttle data refresh operations when too many datasets a
 
 *The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
  
-If the error occurs frequently, use the [schedule view](../connect-data/refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the [Capacities and SKUs](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table.
+If the error occurs frequently, use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the [Capacities and SKUs](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table.
 
-To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed. You can also increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity. You can retry the operation if you're using custom XMLA operations.
+To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed. You can also increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity. You can retry the operation if you're using custom [XMLA operations](/analysis-services/xmla/xml-for-analysis-xmla-reference).
 
 ## Next steps
 
