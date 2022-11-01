@@ -186,7 +186,7 @@ Operations that require Analysis Services server admin permissions (rather than 
 
 User impersonation by using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property is supported when connecting to Premium workspaces. The account specified in EffectiveUserName must exist in the tenant's Azure Active Directory and must have both **Read** and **Build** permissions for the dataset being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail and an error is returned.
 
-When specifying EffectiveUserName you can also specify one or more workspace roles in the Roles connection string property. If the impersonated username is a workspace admin, that username doesn't need to be a member of the specified roles. If the impersonated username is not a workspace admin, the username must belong to one or more specified roles, otherwise an error is returned.
+You can also perform impersonation by specifying one or more workspace roles in the Roles connection string property. If the user performing impersonation is a workspace admin, that user doesn't need to be a member of the specified roles. If the user performing impersonation is not a workspace admin, that user must belong to one or more specified roles, otherwise an error is returned.
 
 ### Model roles
 
