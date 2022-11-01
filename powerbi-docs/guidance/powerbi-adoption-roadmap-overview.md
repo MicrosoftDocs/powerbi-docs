@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap
@@ -110,7 +110,7 @@ Secondarily, this series of articles will be helpful for:
 
 The primary focus of this series of articles is on the Power BI technology platform, with an emphasis on the Power BI service.
 
-To fully benefit from the information provided in these articles, it is an advantage to have at least an understanding of [Power BI fundamental concepts](../fundamentals/power-bi-overview.md).
+To fully benefit from the information provided in these articles, it is an advantage to have at least an understanding of [Power BI fundamental concepts](/power-bi/fundamentals/power-bi-overview).
 
 ## Next steps
 

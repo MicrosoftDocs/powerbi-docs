@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap: Mentoring and user enablement
@@ -29,7 +29,7 @@ Mentoring and helping users in the Power BI community become more effective can 
 
 *Office hours* are a form of ongoing community engagements managed by the COE. As the name implies, office hours are times of regularly scheduled availability where members of the community can engage with experts from the COE to receive assistance with minimal process overhead. Since office hours are group-based, Power BI champions and other members of the community can also pitch in to help solve an issue if a topic is in their area of expertise.
 
-Office hours are a very popular and productive activity in many organizations. Some organizations call them *drop-in hours* or even a fun name such as Power Hour. The primary goal is usually to get questions answered and remove blockers. Office hours can also be used as a platform for the user community to share ideas, suggestions, and even complaints.
+Office hours are a very popular and productive activity in many organizations. Some organizations call them *drop-in hours* or even a fun name such as Power Hour. The primary goal is usually to get questions answered, solve problems, and remove blockers. Office hours can also be used as a platform for the user community to share ideas, suggestions, and even complaints.
 
 The COE publishes the times for regular office hours when one or more COE members are available. Ideally, office hours are held on a regular and frequent basis. For instance, it could be every Tuesday and Thursday. Consider offering different time slots or rotating times if you have a global workforce.
 
@@ -81,36 +81,36 @@ The COE may also offer *best practices reviews*. A best practices review can be 
 
 During a review, an expert from the COE evaluates self-service Power BI content developed by a member of the community and identifies areas of risk or opportunities for improvement. The following bullet list presents some examples of when a best practices review could be beneficial:
 
-- The sales team has an [app](../consumer/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
-- The finance team would like to [assign a workspace to Premium capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
+- The sales team has an [app](/power-bi/consumer/end-user-apps) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](/power-bi/collaborate-share/service-endorsement-overview). The standard process to certify content includes a best practices review.
+- The finance team would like to [assign a workspace to Premium capacity](/power-bi/enterprise/service-admin-premium-manage#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices were followed. This type of review is common when the capacity is shared among multiple business units. (A review may not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
 A best practices review is most often focused on the dataset design, though the review can encompass all types of Power BI items (dataflows, datasets, reports, or apps).
 
 Before content is deployed to the Power BI service, a best practices review may verify that:
 
-- [Data sources](../connect-data/desktop-data-sources.md) used are appropriate and [query folding](power-query-folding.md) is invoked whenever possible.
-- [Connectivity mode](../connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, import, live connection, DirectQuery composite model frameworks) are appropriate.
+- [Data sources](/power-bi/connect-data/desktop-data-sources) used are appropriate and [query folding](power-query-folding.md) is invoked whenever possible.
+- [Connectivity mode](/power-bi/connect-data/service-dataset-modes-understand) and [storage mode](/power-bi/transform-model/desktop-storage-mode) choices (for example, import, live connection, DirectQuery composite model frameworks) are appropriate.
 - Location for data sources, like flat files, and original Power BI Desktop files are suitable (preferably stored in a backed-up location with versioning and appropriate security, such as [Teams files or a SharePoint shared library](/microsoft-365/community/should-i-store-my-files-in-teams-or-sharepoint-an-understanding-of-behind-the-scenes)).
-- [Data preparation](../transform-model/desktop-query-overview.md) steps are clean, orderly, and [efficient](power-query-folding.md).
-- [Datasets](../connect-data/desktop-data-view.md) are well-designed, clean, and understandable (a [star schema](star-schema.md) design is highly recommended).
-- [Relationships](../transform-model/desktop-relationships-understand.md) are configured correctly.
-- [DAX calculations](../transform-model/desktop-quickstart-learn-dax-basics.md) use efficient coding practices (particularly if the data model is large).
+- [Data preparation](/power-bi/transform-model/desktop-query-overview) steps are clean, orderly, and [efficient](power-query-folding.md).
+- [Datasets](/power-bi/connect-data/desktop-data-view) are well-designed, clean, and understandable (a [star schema](star-schema.md) design is highly recommended).
+- [Relationships](/power-bi/transform-model/desktop-relationships-understand) are configured correctly.
+- [DAX calculations](/power-bi/transform-model/desktop-quickstart-learn-dax-basics) use efficient coding practices (particularly if the data model is large).
 - The dataset size is within a reasonable limit and [data reduction techniques](import-modeling-data-reduction.md) are applied.
 - [Row-level security (RLS)](rls-guidance.md) appropriately enforces data permissions.
 - Data is accurate and has been validated against the authoritative source(s).
 - Approved common definitions and terminology are used.
-- Good [data visualization](https://powerbi.microsoft.com/data-visualization/) practices are followed, including [designing for accessibility](../create-reports/desktop-accessibility-creating-reports.md).
+- Good [data visualization](https://powerbi.microsoft.com/data-visualization/) practices are followed, including [designing for accessibility](/power-bi/create-reports/desktop-accessibility-creating-reports).
 
 Once the content has been deployed to the Power BI service, the best practices review is not necessarily complete yet. Completing the remainder of the review may also include items such as:
 
-- The target [workspace](../collaborate-share/service-create-the-new-workspaces.md) is suitable for the content.
-- [Workspace security roles](../collaborate-share/service-roles-new-workspaces.md) are appropriate for the content.
-- Other permissions ([app audience permissions](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences), [build permission](../connect-data/service-datasets-build-permissions.md), use of the [individual item sharing feature](../collaborate-share/service-share-dashboards.md)) are correctly and appropriately configured.
-- [Contacts](../create-reports/service-item-contact.md) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
-- [Sensitivity labels](../enterprise/service-security-apply-data-sensitivity-labels.md) are correctly assigned.
-- Power BI item [endorsement](../collaborate-share/service-endorse-content.md) (certified or promoted) is appropriate.
-- [Data refresh](../connect-data/refresh-data.md) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
+- The target [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces) is suitable for the content.
+- [Workspace security roles](/power-bi/collaborate-share/service-roles-new-workspaces) are appropriate for the content.
+- Other permissions ([app audience permissions](/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-audiences), [Build permission](/power-bi/connect-data/service-datasets-build-permissions), use of the [individual item sharing feature](/power-bi/collaborate-share/service-share-dashboards)) are correctly and appropriately configured.
+- [Contacts](/power-bi/create-reports/service-item-contact) are identified, and correctly correlate to the [owners of the content](powerbi-adoption-roadmap-content-ownership-and-management.md).
+- [Sensitivity labels](/power-bi/enterprise/service-security-apply-data-sensitivity-labels) are correctly assigned.
+- Power BI item [endorsement](/power-bi/collaborate-share/service-endorse-content) (certified or promoted) is appropriate.
+- [Data refresh](/power-bi/connect-data/refresh-data) is configured correctly, failure notifications include the proper users, and uses the appropriate [data gateway](/data-integration/gateway/service-gateway-onprem) in standard mode (if applicable).
 - All [best practices rules](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance-and-design-v1-1/) are followed and, preferably, are automated via a community tool called Best Practices Analyzer for maximum efficiency and productivity.
 
 ### Extended support
@@ -157,7 +157,7 @@ Making sure your community users have access to the training resources they need
 You'll find the greatest return on investment with creating custom training materials for *organizational-specific* processes, while relying on content produced by others for everything else. It's also useful to have a short training class that focuses primarily on topics like how to find documentation, getting help, and interacting with the community.
 
 > [!TIP]
-> One of the goals of training is to help people learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm people by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to report from an existing dataset. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one dataset for every report (and encourage the good habit of reusing existing datasets across reports).
+> One of the goals of training is to help people learn new skills while helping them avoid bad habits. It can be a balancing act. For instance, you don't want to overwhelm people by adding in a lot of complexity and friction to a beginner-level class for report creators. However, it's a great investment to make newer content creators aware of things that could otherwise take them a while to figure out. An ideal example is teaching the ability to use a [live connection](/power-bi/connect-data/desktop-report-lifecycle-datasets) to report from an existing dataset. By teaching this concept at the earliest logical time, you can save a less experienced creator thinking they always need one dataset for every report (and encourage the good habit of reusing existing datasets across reports).
 
 Some larger organizations experience continual employee transfers and turnover. Such frequent change results in an increased need for a repeatable set of training resources.
 
@@ -260,7 +260,7 @@ When you see questions repeatedly arise in the Q&A forum (as described in the [U
 
 ## Templates
 
-A [Power BI template](../create-reports/desktop-templates.md) is a *.pbit* file. It can be provided as a starting point for content creators. It's the same as a *.pbix* file, which can contain queries, a data model, and a report, but with one exception: the template file doesn't contain any data. Therefore, it's a smaller file that can be shared with the community, and it doesn't present a risk of inappropriately sharing data.
+A [Power BI template](/power-bi/create-reports/desktop-templates) is a *.pbit* file. It can be provided as a starting point for content creators. It's the same as a *.pbix* file, which can contain queries, a data model, and a report, but with one exception: the template file doesn't contain any data. Therefore, it's a smaller file that can be shared with the community, and it doesn't present a risk of inappropriately sharing data.
 
 Providing Power BI template files for your community is a great way to:
 
@@ -283,28 +283,35 @@ Power BI template files can improve efficiency and help people learn during the 
 
 ## Considerations and key actions
 
-Considerations and key actions you can take to establish, or improve, mentoring and user enablement:
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
-- Establish regular office hours, ideally at least once per week (depending on demand from users as well as staffing and scheduling constraints).
-- Decide how you will communicate and advertise office hours to the user community.
-- Decide what the expectations will be for office hours, including allowed topics or types of issues users can bring, how the queue of requests will work, if any information should be submitted ahead of time, and whether any follow up afterwards can be expected.
-- Beyond office hours, consider what other types of mentoring services the COE could offer, such as co-development projects or best practices reviews.
-- Create a centralized portal to serve as the hub for Power BI training, documentation, and resources. The centralized portal should also provide links to other community resources such as the Q&A forum and how to find help.
-- Compile a curated list of reputable training resources that target the training needs and interests of your user community. Post the list in the centralized portal and create a schedule to review and validate the list.
-- Consider what custom in-house training resources will be useful and worth the time investment.
-- Create and promote a top 3-5 list of documentation and resources that will be most useful to the user community.
+**Checklist** - Considerations and key actions you can take to establish, or improve, mentoring and user enablement.
+
+> [!div class="checklist"]
+> - **Consider what mentoring services the COE can support:** Decide what types of mentoring services the COE is capable of offering. Types may include office hours, co-development projects, and best practices reviews.
+> - **Communicate about mentoring services regularly:** Decide how you will communicate and advertise mentoring services, such as office hours, to the user community.
+> - **Establish a regular schedule for office hours:** Ideally, hold office hours at least once per week (depending on demand from users as well as staffing and scheduling constraints).
+> - **Decide what the expectations will be for office hours:** Determine what the scope of allowed topics or types of issues users can bring to office hours. Also, determine how the queue of office hours requests will work, whether any information should be submitted ahead of time, and whether any follow up afterwards can be expected.
+> - **Create a centralized portal:** Ensure that you have a well supported centralized hub where users can easily find Power BI training, documentation, and resources. The centralized portal should also provide links to other community resources such as the Q&A forum and how to find help.
+> - **Create documentation and resources:** In the centralized portal, being creating and compiling useful documentation. Identify and promote the top 3-5 resources that will be most useful to the user community.
+> - **Update documentation and resources regularly:** Ensure that content is reviewed and updated on a regular basis. The objective is to ensure that the information available in the portal is current and reliable.
+> - **Compile a curated list of reputable training resources:** Identify training resources that target the training needs and interests of your user community. Post the list in the centralized portal and create a schedule to review and validate the list.
+> - **Consider whether custom in-house training will be useful:** Identify whether custom training courses, developed in-house, will be useful and worth the time investment. Invest in creating content that's specific to the organization.
+> - **Create goals and metrics:** Determine how you'll measure effectiveness of the mentoring program. Create KPIs (key performance indicators) or OKRs (objectives and key results) to validate that the COE's mentoring efforts strengthen the community and its ability to provide self-service BI.
 
 ## Maturity levels
 
-The following maturity levels will help you assess the current state of your mentoring and user enablement:
+:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+
+The following maturity levels will help you assess the current state of your mentoring and user enablement.
 
 | **Level** | **State of Power BI mentoring and user enablement** |
 | --- | --- |
-| 100: Initial | Some documentation and resources exist, though they are siloed and inconsistent.</br></br>Few users are aware of, or take advantage of, available resources. |
-| 200: Repeatable | A centralized portal exists with a library of training, documentation, and resources.</br></br>Office hours are held on a regular basis. |
-| 300: Defined | The centralized portal is the primary hub for community members to locate information.</br></br>The COE's skills mentoring program is in place to assist users in the community in various ways. |
-| 400: Capable | Resources in the centralized portal are commonly referenced by champions and community members when supporting and learning from each other.</br></br>Business units regularly engage with the COE and take advantage of its skills mentoring program. Tangible business value is gained from the program. |
-| 500: Efficient | Documentation and resources are continually updated and improved by the COE, based on lessons learned. |
+| 100: Initial | Some documentation and resources exist. However, they are siloed and inconsistent. </br></br>Few users are aware of, or take advantage of, available resources. |
+| 200: Repeatable | A centralized portal exists with a library of helpful documentation, and resources. </br></br>A curated list of training links and resources are available in the centralized portal. </br></br>Office hours are available so the user community can get assistance from the COE. |
+| 300: Defined | The centralized portal is the primary hub for community members to locate training, documentation, and resources. The resources are commonly referenced by champions and community members when supporting and learning from each other. </br></br>The COE's skills mentoring program is in place to assist users in the community in various ways. |
+| 400: Capable | Office hours have regular and active participation from all business units in the organization. </br></br>Best practices reviews from the COE are regularly requested by business units. </br></br>Co-development projects are repeatedly executed with success by the COE and members of business units. |
+| 500: Efficient | Training, documentation, and resources are continually updated and improved by the COE to ensure the community has current and reliable information. </br></br>Measurable and tangible business value is gained from the mentoring program by using KPIs or OKRs. |
 
 ## Next steps
 

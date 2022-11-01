@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap maturity levels
@@ -43,7 +43,7 @@ Organizational adoption measures the state of Power BI governance and data manag
 - Enable and empower users.
 - Oversee information delivery via enterprise BI and self-service BI with continuous improvement cycles.
 
-It is helpful to think about organizational adoption from the perspective of a maturity model. For consistency with the [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) and the [maturity model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro), this Power BI adoption roadmap aligns with the five levels from the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model), which were later enhanced by the [Data Management Maturity (DMM) model from ISACA](https://cmmiinstitute.com/data-management-maturity) (note the DMM is a paid resource).
+It is helpful to think about organizational adoption from the perspective of a maturity model. For consistency with the [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) and the [maturity model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro), this Power BI adoption roadmap aligns with the five levels from the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model), which were later enhanced by the [Data Management Maturity (DMM) model from ISACA](https://cmmiinstitute.com/data-management-maturity) (note the DMM was a paid resource that has been retired).
 
 Every organization has limited time, funding, and people. So, it requires them to be selective about where they prioritize their efforts. To get the most from your investment in Power BI, seek to attain at least maturity level 300 or 400, as discussed below. It's common that different business units in the organization evolve and mature at different rates, so be cognizant of the organizational state as well as progress for key business units.
 
@@ -73,7 +73,7 @@ Common characteristics of maturity level 200 include:
 - Certain Power BI content is now critical in importance and/or it is broadly used by the organization.
 - There are attempts to document and define repeatable practices, however efforts are siloed, reactive, and deliver varying levels of success.
 - There is an over-reliance on individuals having good judgment and adopting healthy habits that they learned on their own.
-- Power BI adoptions continues to grow organically and produces value, however it takes place in an uncontrolled way.
+- Power BI adoptions continues to grow organically and produces value. However, it takes place in an uncontrolled way.
 - Resources for an internal community are established, such as a Teams channel or Yammer group.
 - Initial planning for a consistent Power BI governance strategy is underway.
 - There is recognition that a Power BI Center of Excellence (COE) can deliver value.
@@ -199,16 +199,16 @@ Common characteristics of phase 2 solution adoption include:
 - The solution is functional and meets the basic set of user requirements. There are likely plans to iterate on improvements and enhancements.
 - The solution is deployed to the Power BI service.
 - All necessary supporting components are in place, such as gateways to support scheduled refresh.
-- Users are aware of the solution and show interest in using it. Potentially, it may be a limited preview release, and may not yet be ready to promote to a production [workspace](../collaborate-share/service-create-the-new-workspaces.md).
+- Users are aware of the solution and show interest in using it. Potentially, it may be a limited preview release, and may not yet be ready to promote to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces).
 
 ### Solution phase 3 – Valuable
 
 Common characteristics of phase 3 solution adoption include:
 
 - Target users find the solution is valuable and experience tangible benefits.
-- The solution is promoted to a production [workspace](../collaborate-share/service-create-the-new-workspaces.md).
+- The solution is promoted to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces).
 - Validations and testing occur to ensure data quality, accurate presentation, accessibility, and acceptable performance.
-- Content is [endorsed](../collaborate-share/service-endorse-content.md), when appropriate.
+- Content is [endorsed](/power-bi/collaborate-share/service-endorse-content), when appropriate.
 - Usage metrics for the solution are actively monitored.
 - User feedback loops are in place to facilitate suggestions and improvements that can contribute to future releases.
 - Solution documentation is generated to support the needs of information consumers (such as data sources used or how metrics are calculated), and help future creators (such as documenting any future maintenance or planned enhancements).
@@ -220,12 +220,12 @@ Common characteristics of phase 3 solution adoption include:
 Common characteristics of phase 4 solution adoption include:
 
 - Target users actively and routinely use the solution, and it's considered essential for decision-making purposes.
-- The solution resides in a [production workspace](../create-reports/deployment-pipelines-overview.md) well-separated from development and test content. Change management and release management is carefully controlled due to the impact of changes.
+- The solution resides in a [production workspace](/power-bi/create-reports/deployment-pipelines-overview) well-separated from development and test content. Change management and release management is carefully controlled due to the impact of changes.
 - A subset of users regularly provide feedback to ensure the solution continues to meet requirements.
 - Expectations for the success of the solution are clear and are measured.
 - Expectations for support of the solution are clear, especially if there are service level agreements.
 - The solution aligns with organizational governance guidelines and practices.
-- Most content is [certified](../collaborate-share/service-endorse-content.md) since it's critical in nature.
+- Most content is [certified](/power-bi/collaborate-share/service-endorse-content) since it's critical in nature.
 - Formal user acceptance testing for new changes may occur, particularly for IT-managed content.
 
 ## Next steps
