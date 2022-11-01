@@ -25,7 +25,7 @@ Although some successes can be achieved by a few determined individual contribut
 - Removing barriers to enable action.
 - Communicating announcements that are of critical importance, to help them gain traction.
 - Decision-making, particularly for strategic-level governance decisions.
-- Dispute resolution (for escalated issues that cannot be resolved by operational or tactical personnel).
+- Dispute resolution (for escalated issues that can't be resolved by operational or tactical personnel).
 - Supporting organizational change initiatives (for example, creating or expanding the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)).
 
 > [!IMPORTANT]
@@ -58,7 +58,7 @@ With a bottom-up approach, the sponsor may be able to make some progress, but th
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
-**Checklist** - Here is a list of considerations and key actions you can take to establish or strengthen executive support for Power BI.
+**Checklist** - Here's a list of considerations and key actions you can take to establish or strengthen executive support for Power BI.
 
 > [!div class="checklist"]
 > - **Identify an executive sponsor with broad authority:** Find someone in a sufficient position of influence and authority (across organizational boundaries) who understands the value and impact of business intelligence. It is important that the individual has a vested interest in the success of analytics in the organization.
@@ -79,7 +79,7 @@ The following maturity levels will help you assess your current state of executi
 | 200: Repeatable | Informal executive support exists for Power BI through informal channels and relationships. |
 | 300: Defined | An executive sponsor is identified. Expectations are clear for the role. |
 | 400: Capable | An executive sponsor is well established with someone with sufficient authority across organizational boundaries. </br></br>A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
-| 500: Efficient | THe executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. </br></br>The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
+| 500: Efficient | The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. </br></br>The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of BI efforts. |
 
 ## Next steps
 

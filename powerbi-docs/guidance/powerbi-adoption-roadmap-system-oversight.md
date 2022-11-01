@@ -49,7 +49,7 @@ The types of activities that an administrator will do on a day-to-day basis will
 > [!TIP]
 > The best type of person to assign as a Power BI administrator is one who has enough knowledge about Power BI to understand what self-service users need to accomplish. With this understanding, the administrator can balance user empowerment and governance.
 
-There are several [types of Power BI administrators](/power-bi/admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi). The following table describes the roles that are used most often on a regular basis:
+There are several [types of Power BI administrators](/power-bi/admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi). The following table describes the roles that are used most often on a regular basis.
 
 | **Role** | **Scope** | **Description** |
 | --- | --- | --- |
@@ -153,10 +153,10 @@ Because new capabilities are continually released, software updates should be re
 
 Other common items that may need to be installed on user machines include:
 
-- Drivers to support data connectivity, for example, Oracle, HANA, or the Microsoft Access Database Engine.
-- The [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) provider.
+- Drivers to support data connectivity, for example, Oracle, HANA, or the Microsoft Access Database Engine
+- The [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) provider
 - [External tools](/power-bi/transform-model/desktop-external-tools). For example, Tabular Editor, DAX Studio, or ALM Toolkit.
-- [Custom data source connectors](/power-bi/connect-data/desktop-connector-extensibility).
+- [Custom data source connectors](/power-bi/connect-data/desktop-connector-extensibility)
 
 In addition to software installations, user machines may be managed for:
 
@@ -237,19 +237,19 @@ Be aware that workspace administrators can also assign a workspace to PPU if the
 
 It's possible to set up multiple capacities to facilitate decentralized management by different business units. Decentralizing management of certain aspects of Power BI is a great way to balance agility and control.
 
-Here's an example that describes one way you could manage Premium capacity:
+Here's an example that describes one way you could manage Premium capacity.
 
 - [Purchase](/power-bi/enterprise/service-admin-premium-purchase) a P3 capacity node in Microsoft 365. It includes 32 virtual cores.
 - Use 16 cores to create the first capacity. It will be used by the Sales team.
 - Use 8 cores to create the second capacity. It will be used by the Operations team.
 - Use the remaining 8 cores to create the third capacity. It will support general use.
 
-The previous example has several advantages:
+The previous example has several advantages.
 
 - Separate [capacity administrators](/power-bi/enterprise/service-admin-premium-manage#manage-user-permissions) may be configured for each capacity. Therefore, it facilitates decentralized management situations.
 - If a capacity isn't well-managed, the effect is confined to that capacity only. The other capacities aren't impacted.
 
-However, the previous example has disadvantages, too:
+However, the previous example has disadvantages, too.
 
 - The [limits per capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes) are lower. The maximum memory size allowed for datasets isn't the entire P3 capacity node size. Rather, it's the assigned capacity size where the dataset is hosted.
 - It's more likely one of the smaller capacities will need to be scaled up at some point in time.
@@ -264,7 +264,7 @@ A [data gateway](/power-bi/connect-data/service-gateway-onprem) facilitates the 
 - Within a virtual network.
 - Within a virtual machine.
 
-There are three types of gateways:
+There are three types of gateways.
 
 - **On-premises data gateway (standard mode)** is a gateway service that supports connections to registered data sources for many users to use. The gateway software installations and updates are installed on a machine that's managed by the customer.
 - **On-premises data gateway (personal mode)** is a gateway service that supports data refresh only. This gateway mode is typically installed on the PC of a content creator. It supports use by one user only. It doesn't support live connection or DirectQuery connections.
@@ -312,7 +312,7 @@ Every user of the Power BI service needs a commercial license, which is integrat
 
 A user license is obtained via a subscription, which authorizes a certain number of licenses with a start and end date.
 
-There are two approaches to procuring subscriptions:
+There are two approaches to procuring subscriptions.
 
 - **Centralized:** Microsoft 365 billing administrator purchases a subscription for [Power BI Pro or Premium Per User](https://powerbi.microsoft.com/pricing/). It's the most common way to manage subscriptions and assign licenses.
 - **Decentralized:** Individual departments purchase a subscription via [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true).
@@ -352,10 +352,10 @@ Consider disabling trials only when:
 
 ## Cost management
 
-Managing and optimizing the cost of cloud services, like Power BI, is an important activity. Here are several activities you may want to consider:
+Managing and optimizing the cost of cloud services, like Power BI, is an important activity. Here are several activities you may want to consider.
 
 - Analyze who is using—and, more to the point, not using—their allocated Power BI licenses and make necessary adjustments. Power BI usage is analyzed using the [activity log](/power-bi/admin/service-admin-auditing).
-- Analyze the cost effectiveness of [Premium capacity](/power-bi/enterprise/service-premium-what-is) or [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-). In addition to the [additional features](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers. Note that unlimited content distribution is only available with Premium capacity, not PPU licensing.
+- Analyze the cost effectiveness of [Premium capacity](/power-bi/enterprise/service-premium-what-is) or [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-). In addition to the [additional features](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers. Unlimited content distribution is only available with Premium capacity, not PPU licensing.
 - Carefully [monitor and manage Premium capacity](/power-bi/enterprise/service-premium-gen2-metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
 - If there are occasional spikes in the level of usage, use of [autoscale](/power-bi/enterprise/service-premium-auto-scale) with [Power BI Premium Gen 2](/power-bi/enterprise/service-premium-concepts) is recommended to ensure the user experience isn't interrupted. Autoscale will scale up capacity resources for 24 hours, then scale them back down to normal levels (if sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Power BI tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/). Data egress charges are minimal, but at scale can add up to be considerable unplanned costs.
@@ -420,10 +420,10 @@ The following table presents are a few ideas of what you can do with the informa
 
 | **Category of auditing data** | **Type of questions** |
 | --- | --- |
-| Usage patterns and adoption | What is the most often-used content, and by whom?</br></br>How many users are active?</br></br>Are report views trending up or down?</br></br>Is there underutilized or abandoned content?</br></br>Are viewers using browser or mobile apps more often?</br></br>When is content published or updated, and by whom? |
-| Governance, security, and compliance | When are workspace roles updated, and by whom?</br></br>How many external users are accessing content?</br></br>Who added or updated a sensitivity label?</br></br>When does a tenant setting change, and by whom?</br></br>What percentage of report views are based on certified datasets?</br></br>What percentage of datasets support more than one report?</br></br>How frequently is content downloaded, and by whom?</br></br>Who generated an embed code for publish to web? |
-| Architecture reporting and analysis | How many workspaces exist by type?</br></br>How many reports exist by type?</br></br>When is a gateway or data source created or updated? |
-| User education and training opportunities | Who started a Power BI trial?</br></br>Who is doing too much sharing from their personal workspace?</br></br>Who is publishing many new datasets?</br></br>Who is doing a lot of exporting? |
+| Usage patterns and adoption | What is the most often-used content, and by whom? </br></br>How many users are active? </br></br>Are report views trending up or down? </br></br>Is there underutilized or abandoned content? </br></br>Are viewers using browser or mobile apps more often? </br></br>When is content published or updated, and by whom? |
+| Governance, security, and compliance | When are workspace roles updated, and by whom? </br></br>How many external users are accessing content? </br></br>Who added or updated a sensitivity label? </br></br>When does a tenant setting change, and by whom? </br></br>What percentage of report views are based on certified datasets? </br></br>What percentage of datasets support more than one report? </br></br>How frequently is content downloaded, and by whom? </br></br>Who generated an embed code for publish to web? |
+| Architecture reporting and analysis | How many workspaces exist by type? </br></br>How many reports exist by type? </br></br>When is a gateway or data source created or updated? |
+| User education and training opportunities | Who started a Power BI trial? </br></br>Who is doing too much sharing from their personal workspace? </br></br>Who is publishing many new datasets? </br></br>Who is doing a lot of exporting? |
 
 When considering needs for creating auditing reports, consider the following:
 
@@ -497,9 +497,10 @@ The [Power BI release plan](https://powerbi.microsoft.com/roadmap/) is where cus
 
 > [!div class="checklist"]
 > - **Assess what your end-to-end data architecture looks like:** Make sure you're clear on:
-    > - How Power BI is currently used by the different business units in your organization versus how you want Power BI to be used. Determine if there's a gap.> > - If there are any risks that should be addressed.
-    > - If there are any high-maintenance situations to be addressed.
-    > - What data sources are important for Power BI users, and how they're documented and discovered.
+>     - How Power BI is currently used by the different business units in your organization versus how you want Power BI to be used. Determine if there's a gap.
+>     - If there are any risks that should be addressed.
+>     - If there are any high-maintenance situations to be addressed.
+>     - What data sources are important for Power BI users, and how they're documented and discovered.
 > - **Review existing data gateways:** Find out what gateways are being used throughout your organization. Verify that gateway administrators and users are set correctly. Verify who is supporting each gateway, and that there's a reliable process in place to keep the gateway servers up to date.
 > - **Verify use of personal gateways:** Check the number of personal gateways that are in use, and by whom. If there's significant usage, take steps to move towards use of the standard mode gateway.
 
@@ -539,13 +540,13 @@ The following maturity levels will help you assess the current state of your Pow
 | --- | --- |
 | 100: Initial | Tenant settings are configured independently by one or more administrators based on their best judgment. </br></br>Architecture needs, such as gateways and capacities, are satisfied on an as-needed basis. However, there isn't a strategic plan. </br></br>Power BI activity logs are unused, or selectively used for tactical purposes. |
 | 200: Repeatable | The tenant settings purposefully align with established governance guidelines and policies. All tenant settings are reviewed regularly. </br></br>A small number of specific administrators are selected. All administrators have a good understanding of what users are trying to accomplish in Power BI, so they're in a good position to support users. </br></br>A well defined process exists for users to request licenses and software. Request forms are easy for users to find. Self-service purchasing settings are specified. </br></br>Sensitivity labels are configured in Microsoft 365. However, use of labels remains inconsistent. The advantages of data protection aren't well understood by users. |
-| 300: Defined | The tenant settings are fully documented in the centralized portal for users to reference, including how to request access to the correct groups. </br></br>Cross-training and documentation exists for administrators to ensure continuity, stability, and consistency. </br></br>Sensitivity labels are assigned to content consistently. The advantages of using sensitivity labels for data protection are understood by users. </br></br>An automated process is in place to export Power BI activity log and API data to a secure location for reporting and auditing. |
+| 300: Defined | The tenant settings are fully documented in the centralized portal for users to reference, including how to request access to the correct groups. </br></br>Cross-training and documentation exist for administrators to ensure continuity, stability, and consistency. </br></br>Sensitivity labels are assigned to content consistently. The advantages of using sensitivity labels for data protection are understood by users. </br></br>An automated process is in place to export Power BI activity log and API data to a secure location for reporting and auditing. |
 | 400: Capable | Administrators work closely with the COE and governance teams to provide oversight of Power BI. A balance of user empowerment and governance is successfully achieved. </br></br>Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control. </br></br>Automated policies are set up and actively monitored in Microsoft Defender for Cloud Apps for data loss prevention. </br></br>Power BI activity log and API data is actively analyzed to monitor and audit Power BI activities. Proactive action is taken based on the data. |
 | 500: Efficient | The Power BI administrators work closely with the COE actively stay current. Blog posts and release plans from the Power BI product team are reviewed frequently to plan for upcoming changes. </br></br>Regular cost management analysis is done to ensure user needs are met in a cost-effective way. </br></br>Power BI activity log and API data is actively used to inform and improve adoption and governance efforts. |
 
 ## Next steps
 
-For more information about system oversight and Power BI administration, see the following resources:
+For more information about system oversight and Power BI administration, see the following resources.
 
 - [Administer Power BI - Part 1](/training/paths/administer-power-bi-part-1/)
 - [Administer Power BI - Part 2](/training/paths/administer-power-bi-part-2/)

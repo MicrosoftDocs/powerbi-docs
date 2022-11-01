@@ -51,7 +51,7 @@ The concept of data culture can be difficult to define and measure. Even though 
 - Directly influence your adoption strategy.
 - Serve as the high-level guiding principles for enacting governance policies and guidelines.
 
-Data culture outcomes are not specifically mandated. Rather, the state of the data culture is the result of following the governance rules as they're enforced (or the lack of governance rules). Leaders at all levels need to actively demonstrate what's important through their actions, including how they praise, recognize, and reward staff members who take initiative. 
+Data culture outcomes aren't specifically mandated. Rather, the state of the data culture is the result of following the governance rules as they're enforced (or the lack of governance rules). Leaders at all levels need to actively demonstrate what's important through their actions, including how they praise, recognize, and reward staff members who take initiative. 
 
 > [!TIP]
 > If you can take for granted that your efforts to develop a data solution (such as a dataset or a report) will be valued and appreciated, that's an excellent indicator of a healthy data culture. Sometimes, however, it depends on what your immediate manager values most.
@@ -62,7 +62,7 @@ The initial motivation for establishing a data culture often comes from a specif
 - A proactive change, such as starting a new line of business or expanding into new markets to seize a "green field" opportunity. Being data driven from the beginning can be relatively easy when there are fewer constraints and complications, compared with an established organization.
 - Driven by external changes, such as pressure to eliminate inefficiencies and redundancies during an economic downturn.
 
-In any of these situations, there is often a specific area where the data culture takes root. The specific area could be a scope of effort that's smaller than the entire organization, even if it's still significant. After necessary changes are made at this smaller scope, they can be incrementally replicated and adapted for the rest of the organization.
+In any of these situations, there's often a specific area where the data culture takes root. The specific area could be a scope of effort that's smaller than the entire organization, even if it's still significant. After necessary changes are made at this smaller scope, they can be incrementally replicated and adapted for the rest of the organization.
 
 Although technology can help advance the goals of a data culture, implementing specific tools or features isn't the objective. This series of articles covers a lot of topics that contribute to adoption of a healthy data culture. The remainder of this article addresses three essential aspects of data culture: [data discovery](#data-discovery), [data democratization](#data-democratization), and [data literacy](#data-literacy).
 
@@ -152,7 +152,7 @@ The following maturity levels will help you assess the current state of your dat
 
 | **Level** | **State of data culture** |
 | --- | --- |
-| 100: Initial | The enterprise BI team can't keep up with the needs of the business. A significant backlog of requests exists for the enterprise BI team. </br></br>Self-service BI initiatives are taking place—with some successes—in various areas of the organization. These activities are occurring in a somewhat chaotic manner, with few formal processes and no strategic plan. </br></br>There's a lack of oversight and visibility into self-service BI activities. The successes or failures of BI solutions are not well understood. |
+| 100: Initial | The enterprise BI team can't keep up with the needs of the business. A significant backlog of requests exists for the enterprise BI team. </br></br>Self-service BI initiatives are taking place—with some successes—in various areas of the organization. These activities are occurring in a somewhat chaotic manner, with few formal processes and no strategic plan. </br></br>There's a lack of oversight and visibility into self-service BI activities. The successes or failures of BI solutions aren't well understood. |
 | 200: Repeatable | Multiple teams have had measurable successes with self-service BI solutions. People in the organization are starting to pay attention. </br></br>Investments are being made to identify the ideal balance of enterprise BI and self-service BI. |
 | 300: Defined | Specific goals are established for advancing the data culture. These goals are implemented incrementally. </br></br>Learnings from what works in individual business units is shared. </br></br>Effective self-service BI practices are incrementally—and purposely—replicated throughout more areas of the organization. |
 | 400: Capable | The data culture goals to employ informed decision-making are aligned with organizational objectives. They're actively supported by the executive sponsor, the COE, and they have a direct impact on adoption strategies. </br></br>A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared goals. </br></br>Individuals who take initiative in building valuable BI solutions are recognized and rewarded. |

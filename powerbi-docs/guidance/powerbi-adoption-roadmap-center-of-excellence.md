@@ -99,7 +99,7 @@ The selected COE structure can vary among organizations. It's also possible for 
 
 ### Centralized COE
 
-A centralized COE is comprised of a single shared services team.
+A centralized COE comprises a single shared services team.
 
 **Pros:**
 

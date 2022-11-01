@@ -50,7 +50,7 @@ Governance decisions are implemented with documented guidance, policies, and pro
 
 ## Governance success factors
 
-Governance is not well-received when it's enacted with top-down mandates that are focused more on control than empowerment. Governing Power BI is most successful when:
+Governance isn't well-received when it's enacted with top-down mandates that are focused more on control than empowerment. Governing Power BI is most successful when:
 
 - The most lightweight governance model that accomplishes required objectives is used.
 - Governance is approached on an iterative basis and doesn't significantly impede productivity.
@@ -58,10 +58,10 @@ Governance is not well-received when it's enacted with top-down mandates that ar
 - Governance decisions are co-defined with input from different business units before they're enacted. Although there are times when a specific directive is necessary (particularly in heavily regulated industries), mandates should be the exception rather than the rule.
 - Governance needs are balanced with flexibility and the ability to be productive.
 - Governance requirements can be satisfied as part of users' regular workflow, making it easier for users to do the right thing in the right way with little friction.
-- The answer to new requests for data is not "no" by default, but rather "yes and" with clear, simple, transparent rules for what governance requirements are for data access, usage, and sharing.
+- The answer to new requests for data isn't "no" by default, but rather "yes and" with clear, simple, transparent rules for what governance requirements are for data access, usage, and sharing.
 - Users that need access to data have incentive to do so through normal channels, complying with governance requirements, rather than circumventing them.
 - Governance decisions, policies, and requirements for users to follow are in alignment with organizational data culture goals as well as other existing data governance initiatives.
-- Decisions that affect what users can—and cannot—do are not made solely by a system administrator.
+- Decisions that affect what users can—and can't—do aren't made solely by a system administrator.
 
 ## Introducing governance to your organization
 
@@ -77,7 +77,7 @@ The methods in the above diagram include:
 | ![Method 2.](media/common/icon-02-red-30x30.png) | **Full governance planning first, then roll out Power BI:** Extensive governance planning occurs prior to permitting users to begin using Power BI. This method prioritizes control and stability. |
 | ![Method 3.](media/common/icon-03-red-30x30.png) | **Iterative governance planning with rollouts of Power BI in stages:** Just enough governance planning occurs initially. Then Power BI is iteratively rolled out in stages to individual teams while iterative governance enhancements occur. This method equally prioritizes agility and governance. |
 
-Choose method 1 when Power BI is already used for self-service scenarios, and you are ready to start working in a more efficient manner.
+Choose method 1 when Power BI is already used for self-service scenarios, and you're ready to start working in a more efficient manner.
 
 Choose method 2 when your organization already has a well-established approach to governance that can be readily expanded to include Power BI.
 
@@ -89,32 +89,32 @@ Method 1 prioritizes agility and speed. It allows users to quickly get started c
 
 **Pros:**
 
-- Fastest to get started.
-- Highly capable users can get things done quickly.
-- Quick wins are achieved.
+- Fastest to get started
+- Highly capable users can get things done quickly
+- Quick wins are achieved
 
 **Cons:**
 
-- Higher effort to establish governance once Power BI is used prevalently throughout the organization.
-- Resistance from self-service users who are asked to change what they've been doing.
-- Self-service users need to figure out things on their own and use their best judgement.
+- Higher effort to establish governance once Power BI is used prevalently throughout the organization
+- Resistance from self-service users who are asked to change what they've been doing
+- Self-service users need to figure out things on their own and use their best judgment
 
 See other possible cons in the [Governance challenges](#governance-challenges) section below.
 
 ### Method 2: In-depth governance planning first
 
-Method 2 prioritizes control and stability. It lies at the opposite end of the spectrum from method 1. Method 2 involves doing extensive governance planning before rolling out Power BI. This situation is most likely to occur when the implementation of Power BI is led by IT. It is also likely to occur when the organization operates in a highly-regulated industry, or when an existing data governance board imposes significant prerequisites and up-front requirements.
+Method 2 prioritizes control and stability. It lies at the opposite end of the spectrum from method 1. Method 2 involves doing extensive governance planning before rolling out Power BI. This situation is most likely to occur when the implementation of Power BI is led by IT. It's also likely to occur when the organization operates in a highly regulated industry, or when an existing data governance board imposes significant prerequisites and up-front requirements.
 
 **Pros:**
 
-- More fully prepared to meet regulatory requirements.
-- More fully prepared to support the user community.
+- More fully prepared to meet regulatory requirements
+- More fully prepared to support the user community
 
 **Cons:**
 
-- Favors enterprise BI more than self-service BI.
-- Slower to allow the user population to begin to get value and improve decision-making.
-- Encourages poor habits and workarounds when there's a significant delay in allowing the use of data for decision-making.
+- Favors enterprise BI more than self-service BI
+- Slower to allow the user population to begin to get value and improve decision-making
+- Encourages poor habits and workarounds when there's a significant delay in allowing the use of data for decision-making
 
 ### Method 3: Iterative governance with rollouts
 
@@ -122,15 +122,15 @@ Method 3 seeks a balance between agility and governance. It's an ideal scenario 
 
 **Pros:**
 
-- Puts equal priority on governance and user productivity.
-- Emphasizes a *learning as you go* mentality.
-- Encourages iterative releases to groups of users in stages.
+- Puts equal priority on governance and user productivity
+- Emphasizes a *learning as you go* mentality
+- Encourages iterative releases to groups of users in stages
 
 **Cons:**
 
-- Requires a high level of communication to be successful with agile governance practices.
-- Requires additional discipline to keep documentation and training current.
-- Introducing new governance guidelines and policies too often causes a certain level of user disruption.
+- Requires a high level of communication to be successful with agile governance practices
+- Requires additional discipline to keep documentation and training current
+- Introducing new governance guidelines and policies too often causes a certain level of user disruption
 
 For more information about up-front planning, see the [Preparing to migrate to Power BI](powerbi-migration-pre-migration-steps.md) article.
 
@@ -140,46 +140,46 @@ If your organization has implemented Power BI without a governance approach or s
 
 ### Strategy challenges
 
-- Lack of a cohesive data governance strategy that aligns with the business strategy.
-- Lack of executive support for governing data as a strategic asset.
-- Insufficient adoption planning for advancing adoption and the maturity level of BI and analytics.
+- Lack of a cohesive data governance strategy that aligns with the business strategy
+- Lack of executive support for governing data as a strategic asset
+- Insufficient adoption planning for advancing adoption and the maturity level of BI and analytics
 
 ### People challenges
 
-- Lack of aligned priorities between centralized teams and business units.
-- Lack of identified champions with sufficient expertise and enthusiasm throughout the business units to advance organizational adoption objectives.
-- Lack of awareness of self-service best practices.
-- Resistance to following newly introduced governance guidelines and policies.
-- Duplicate effort spent across business units.
-- Lack of clear accountability, roles, and responsibilities.
+- Lack of aligned priorities between centralized teams and business units
+- Lack of identified champions with sufficient expertise and enthusiasm throughout the business units to advance organizational adoption objectives
+- Lack of awareness of self-service best practices
+- Resistance to following newly introduced governance guidelines and policies
+- Duplicate effort spent across business units
+- Lack of clear accountability, roles, and responsibilities
 
 ### Process challenges
 
-- Lack of clearly defined processes resulting in chaos and inconsistencies.
-- Lack of standardization or repeatability.
-- Insufficient ability to communicate and share lessons learned.
-- Lack of documentation and over-reliance on tribal knowledge.
-- Inability to comply with security and privacy requirements.
+- Lack of clearly defined processes resulting in chaos and inconsistencies
+- Lack of standardization or repeatability
+- Insufficient ability to communicate and share lessons learned
+- Lack of documentation and over-reliance on tribal knowledge
+- Inability to comply with security and privacy requirements
 
 ### Data quality and data management challenges
 
-- Sprawl of data and reports.
-- Inaccurate, incomplete, or outdated data.
-- Lack of trust in the data, especially for self-service content.
-- Inconsistent reports produced without data validation.
-- Valuable data not used or difficult to access.
-- Fragmented, siloed, and duplicated datasets.
-- Lack of data catalog, inventory, glossary, or lineage.
-- Unclear data ownership and stewardship.
+- Sprawl of data and reports
+- Inaccurate, incomplete, or outdated data
+- Lack of trust in the data, especially for self-service content
+- Inconsistent reports produced without data validation
+- Valuable data not used or difficult to access
+- Fragmented, siloed, and duplicated datasets
+- Lack of data catalog, inventory, glossary, or lineage
+- Unclear data ownership and stewardship
 
 ### Skills and data literacy challenges
 
-- Varying levels of ability to interpret, create, and communicate with data effectively.
-- Varying levels of technical skillsets and skill gaps.
-- Lack of ability to confidently manage data diversity and volume.
-- Underestimating the level of complexity for BI solution development and management throughout its entire lifecycle.
-- Short tenure with continual staff transfers and turnover.
-- Coping with the speed of change for cloud services.
+- Varying levels of ability to interpret, create, and communicate with data effectively
+- Varying levels of technical skillsets and skill gaps
+- Lack of ability to confidently manage data diversity and volume
+- Underestimating the level of complexity for BI solution development and management throughout its entire lifecycle
+- Short tenure with continual staff transfers and turnover
+- Coping with the speed of change for cloud services
 
 >[!TIP]
 > Identifying your current challenges—as well as your strengths—is essential to do proper governance planning. There's no single straightforward solution to the challenges listed above. Each organization needs to find the right balance and approach that solves the challenges that are most important to them. The challenges presented above will help you identify how they may affect your organization, so you can start thinking about what the right solution is for your circumstances.
@@ -188,7 +188,7 @@ If your organization has implemented Power BI without a governance approach or s
 
 Some organizations have implemented Power BI without a governance approach or clear strategic direction (as described above by method 1). In this case, the effort to begin governance planning can be daunting.
 
-If a formal governance body doesn't currently exist in your organization, then the focus of your governance planning and implementation efforts will be broader. If, however, there is an existing data governance board in the organization, then your focus is primarily to integrate with existing practices and customize them to accommodate the objectives for self-service BI and enterprise BI.
+If a formal governance body doesn't currently exist in your organization, then the focus of your governance planning and implementation efforts will be broader. If, however, there's an existing data governance board in the organization, then your focus is primarily to integrate with existing practices and customize them to accommodate the objectives for self-service BI and enterprise BI.
 
 > [!IMPORTANT]
 > Governance is a big undertaking, and it's never completely *done*. Relentlessly prioritizing and iterating on improvements will make the scope more manageable. If you track your progress and accomplishments each week and each month, you'll be amazed at the impact over time. The [maturity levels](#maturity-levels) at the end of each article in this series can help you to assess where you are currently.
@@ -199,62 +199,62 @@ Some potential governance planning activities and outputs that you may find valu
 
 **Key activities:**
 
-- Assess current state of data culture, adoption, and BI practices.
+- Assess current state of data culture, adoption, and BI practices
 - Conduct a series of information gathering sessions to define the desired future state, strategic vision, priorities, and objectives for data culture, adoption, and BI practices. Be sure to include adoption goals for Power BI as suggested in the [Power BI adoption framework series](https://www.youtube.com/playlist?list=PL1N57mwBHtN0UZbEgLHtA1yxqPlae3B90). They're a useful approach if you don't already have a structured method for information gathering.
-- Validate the focus and scope of the governance program.
-- Identify existing bottom-up initiatives in progress.
-- Identify immediate pain points, issues, and risks.
-- Educate senior leadership about governance, and ensure executive support is sufficient to sustain and grow the program.
-- Clarify where Power BI fits in to the overall data and analytics strategy for the organization.
-- Assess internal factors such as organizational readiness, maturity levels, and key challenges.
-- Assess external factors such as risk, exposure, regulatory, and legal requirements—including regional differences.
+- Validate the focus and scope of the governance program
+- Identify existing bottom-up initiatives in progress
+- Identify immediate pain points, issues, and risks
+- Educate senior leadership about governance, and ensure executive support is sufficient to sustain and grow the program
+- Clarify where Power BI fits in to the overall data and analytics strategy for the organization
+- Assess internal factors such as organizational readiness, maturity levels, and key challenges
+- Assess external factors such as risk, exposure, regulatory, and legal requirements—including regional differences
 
 **Key output:**
 
-- Business case with cost/benefit analysis.
-- Approved governance objectives, focus, and priorities that are in alignment with high-level business objectives.
-- Plan for short-term goals and priorities. These are quick wins.
-- Plan for long-term and deferred goals and priorities.
-- Success criteria and measurable key performance indicators (KPIs).
-- Known risks documented with a mitigation plan.
-- Plan for meeting industry, governmental, contractual, and regulatory requirements that impact BI and analytics in the organization.
-- Funding plan.
+- Business case with cost/benefit analysis
+- Approved governance objectives, focus, and priorities that are in alignment with high-level business objectives
+- Plan for short-term goals and priorities. These are quick wins
+- Plan for long-term and deferred goals and priorities
+- Success criteria and measurable key performance indicators (KPIs)
+- Known risks documented with a mitigation plan
+- Plan for meeting industry, governmental, contractual, and regulatory requirements that impact BI and analytics in the organization
+- Funding plan
 
 ### People
 
 **Key activities:**
 
-- Establish a governance board and identify key stakeholders.
-- Determine focus, scope, and a set of responsibilities for the governance board.
-- Establish a COE.
-- Determine focus, scope, and a set of responsibilities for COE.
-- Define roles and responsibilities.
-- Confirm who has decision-making, approval, and veto authority.
+- Establish a governance board and identify key stakeholders
+- Determine focus, scope, and a set of responsibilities for the governance board
+- Establish a COE
+- Determine focus, scope, and a set of responsibilities for COE
+- Define roles and responsibilities
+- Confirm who has decision-making, approval, and veto authority
 
 **Key output:**
 
-- Charter for the governance board.
-- Charter for the COE.
-- Staffing plan.
-- Roles and responsibilities.
-- Accountability and decision-making matrix.
-- Communication plan.
-- Issue management plan.
+- Charter for the governance board
+- Charter for the COE
+- Staffing plan
+- Roles and responsibilities
+- Accountability and decision-making matrix
+- Communication plan
+- Issue management plan
 
 ### Policies and processes
 
 **Key activities:**
 
-- Analyze immediate pain points, issues, risks, and areas to improve the user experience.
-- Prioritize data policies to be addressed by order of importance.
-- Identify existing processes in place that work well and can be formalized.
-- Determine how new data policies will be socialized.
-- Decide to what extent data policies may differ or be customized for different groups.
+- Analyze immediate pain points, issues, risks, and areas to improve the user experience
+- Prioritize data policies to be addressed by order of importance
+- Identify existing processes in place that work well and can be formalized
+- Determine how new data policies will be socialized
+- Decide to what extent data policies may differ or be customized for different groups
 
 **Key output:**
 
-- Process for how data policies and documentation will be defined, approved, communicated, and maintained.
-- Plan for requesting valid exceptions and departures from documented policies.
+- Process for how data policies and documentation will be defined, approved, communicated, and maintained
+- Plan for requesting valid exceptions and departures from documented policies
 
 ### Project management
 
@@ -262,17 +262,17 @@ The implementation of the governance program should be planned and managed as a 
 
 **Key activities:**
 
-- Establish a timeline with priorities and milestones.
-- Identify related initiatives and dependencies.
-- Identify and coordinate with existing bottom-up initiatives.
-- Create an iterative project plan that's aligned with high-level prioritization.
-- Obtain budget approval and funding.
-- Establish a tangible way to track progress.
+- Establish a timeline with priorities and milestones
+- Identify related initiatives and dependencies
+- Identify and coordinate with existing bottom-up initiatives
+- Create an iterative project plan that's aligned with high-level prioritization
+- Obtain budget approval and funding
+- Establish a tangible way to track progress
 
 **Key output:**
 
-- Project plan with iterations, dependencies, and sequencing.
-- Cadence for retrospectives with a focus on continual improvements.
+- Project plan with iterations, dependencies, and sequencing
+- Cadence for retrospectives with a focus on continual improvements
 
 > [!IMPORTANT]
 > The scope of activities listed above that will be useful to take on will vary considerably between organizations. If your organization doesn't have existing processes and workflows for creating these types of outputs, refer to the guidance found in the [Roadmap conclusion article](powerbi-adoption-roadmap-conclusion.md#industry-guidance) for some helpful resources.
@@ -297,24 +297,24 @@ How we go about making governance decisions depends on:
 
 As you explore your goals and objectives and pursue more tactical data governance decisions as described above, it will be important to determine what the highest priorities are. Deciding where to focus your efforts can be challenging.
 
-The following list includes items that you may choose to prioritize when introducing governance for Power BI:
+The following list includes items that you may choose to prioritize when introducing governance for Power BI.
 
-- Recommendations and requirements for [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md).
-- Recommendations and requirements for [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md).
-- Recommendations and requirements for content [distribution and sharing](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) with colleagues, as well as for [external users](/power-bi/enterprise/service-admin-azure-ad-b2b), such as customers, partners, or vendors.
-- How users are permitted to work with regulated data and highly sensitive data.
-- Allowed use of unverified data sources that are unknown to IT.
-- When manually maintained data sources, such as Excel or flat files, are permitted.
-- How to manage [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces) effectively.
-- Who is allowed to be a [Power BI administrator](powerbi-adoption-roadmap-system-oversight.md).
-- [Security](/power-bi/enterprise/service-admin-power-bi-security), privacy, and data protection requirements, and allowed actions for content assigned to each [sensitivity label](/power-bi/enterprise/service-security-apply-data-sensitivity-labels).
-- Allowed or encouraged use of [personal gateways](/power-bi/connect-data/service-gateway-personal-mode).
-- Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses.
-- Requirements for who may [certify](/power-bi/collaborate-share/service-endorse-content) datasets, as well as requirements which must be met.
-- Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](/power-bi/create-reports/deployment-pipelines-overview).
-- Additional requirements applicable to critical content, such as data quality verifications and documentation.
-- Requirements to use standardized master data and common data definitions to improve consistency across datasets and reports.
-- Recommendations and requirements for use of [external tools](/power-bi/transform-model/desktop-external-tools) by advanced content creators.
+- Recommendations and requirements for [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md)
+- Recommendations and requirements for [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md)
+- Recommendations and requirements for content [distribution and sharing](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) with colleagues, as well as for [external users](/power-bi/enterprise/service-admin-azure-ad-b2b), such as customers, partners, or vendors
+- How users are permitted to work with regulated data and highly sensitive data
+- Allowed use of unverified data sources that are unknown to IT
+- When manually maintained data sources, such as Excel or flat files, are permitted
+- How to manage [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces) effectively
+- Who is allowed to be a [Power BI administrator](powerbi-adoption-roadmap-system-oversight.md)
+- [Security](/power-bi/enterprise/service-admin-power-bi-security), privacy, and data protection requirements, and allowed actions for content assigned to each [sensitivity label](/power-bi/enterprise/service-security-apply-data-sensitivity-labels)
+- Allowed or encouraged use of [personal gateways](/power-bi/connect-data/service-gateway-personal-mode)
+- Allowed or encouraged use of [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true) of user licenses
+- Requirements for who may [certify](/power-bi/collaborate-share/service-endorse-content) datasets, as well as requirements that must be met
+- Application lifecycle management for managing content through its entire lifecycle, including [development, test, and production stages](/power-bi/create-reports/deployment-pipelines-overview)
+- Additional requirements applicable to critical content, such as data quality verifications and documentation
+- Requirements to use standardized master data and common data definitions to improve consistency across datasets and reports
+- Recommendations and requirements for use of [external tools](/power-bi/transform-model/desktop-external-tools) by advanced content creators
 
 If you don't make governance decisions and communicate them well, users will use their own judgment for how things should work—and that often results in inconsistent approaches to common tasks.
 
@@ -322,23 +322,23 @@ Although not every governance decision needs to be made upfront, it's important 
 
 ### Data policies
 
-A data policy is a document that defines what users can and cannot do. You may call it something different, but the goal remains the same: when decisions—such as those discussed in the previous section—are made, they are documented for use and reference by the community of users.
+A data policy is a document that defines what users can and can't do. You may call it something different, but the goal remains the same: when decisions—such as those discussed in the previous section—are made, they're documented for use and reference by the community of users.
 
 A data policy should be as short as possible. That way, it's easy for people to understand what is being asked of them.
 
 A data policy should include:
 
-- Policy name, purpose, description, and details.
-- Specific responsibilities.
-- Scope of the policy (organization-wide versus departmental-specific).
-- Audience for the policy.
-- Policy owner, approver, and contact.
-- How to request an exception.
-- How the policy will be audited and enforced.
-- Regulatory or legal requirements met by the policy.
-- Reference to terminology definitions.
-- Reference to any related guidelines or policies.
-- Effective date, last revision date, and change log.
+- Policy name, purpose, description, and details
+- Specific responsibilities
+- Scope of the policy (organization-wide versus departmental-specific)
+- Audience for the policy
+- Policy owner, approver, and contact
+- How to request an exception
+- How the policy will be audited and enforced
+- Regulatory or legal requirements met by the policy
+- Reference to terminology definitions
+- Reference to any related guidelines or policies
+- Effective date, last revision date, and change log
 
 > [!NOTE]
 > Locate, or link to, data policies from your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal).
@@ -349,38 +349,38 @@ Here are three common data policy examples you may choose to prioritize:
 | --- | --- |
 | Data ownership policy | Specifies when an owner is required for a dataset, and what the data owner's responsibilities include, such as: supporting colleagues who view the content, maintaining appropriate confidentiality and security, and ensuring compliance. |
 | Data certification (endorsement) policy | Specifies the process that is followed to certify a dataset. Requirements may include activities such as: data accuracy validation, data source and lineage review, technical review of the data model, security review, and documentation review. |
-| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should specify activities such as: allowed sharing with external users (with or without NDA), encryption requirements, and ability to download the dataset. Sometimes, it is also called a *data handling policy* or a *data usage policy*. For more information, see the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) article. |
+| Data classification and protection policy | Specifies activities that are allowed and not allowed per classification (sensitivity level). It should specify activities such as: allowed sharing with external users (with or without NDA), encryption requirements, and ability to download the dataset. Sometimes, it's also called a *data handling policy* or a *data usage policy*. For more information, see the [Information protection for Power BI](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) article. |
 
 > [!CAUTION]
 > Having a lot of documentation can lead to a false sense that everything is under control, which can lead to complacency. The level of engagement that the [COE](powerbi-adoption-roadmap-center-of-excellence.md) has with the user community is one way to improve the chances that governance guidelines and policies are consistently followed. Auditing and monitoring activities are also important.
 
 ### Scope of policies
 
-Governance decisions will rarely be one-size-fits-all across the entire organization. When practical, it's wise to start with standardized policies and then implement exceptions as needed. Having a clearly defined strategy for how policies will be handled for centralized and decentralized teams will make it much easier to determine how to handle exceptions.
+Governance decisions will rarely be one-size-fits-all across the entire organization. When practical, it's wise to start with standardized policies, and then implement exceptions as needed. Having a clearly defined strategy for how policies will be handled for centralized and decentralized teams will make it much easier to determine how to handle exceptions.
 
 **Pros of organization-wide policies:**
 
-- Much easier to manage and maintain.
-- Greater consistency.
-- Encompasses more use cases.
-- Fewer policies overall.
+- Much easier to manage and maintain
+- Greater consistency
+- Encompasses more use cases
+- Fewer policies overall
 
 **Cons of organization-wide policies:**
 
-- Inflexible.
-- Less autonomy and empowerment.
+- Inflexible
+- Less autonomy and empowerment
 
 **Pros of departmental-scope policies:**
 
-- Expectations are clearer when tailored to a specific group.
-- Customizable and flexible.
+- Expectations are clearer when tailored to a specific group
+- Customizable and flexible
 
 **Cons of departmental-scope policies:**
 
-- More work to manage.
-- More policies which are siloed.
-- Potential for conflicting information.
-- Difficult to scale more broadly throughout the organization.
+- More work to manage
+- More policies that are siloed
+- Potential for conflicting information
+- Difficult to scale more broadly throughout the organization
 
 > [!TIP]
 > Finding the right balance of standardization and customization for supporting self-service BI across the organization can be challenging. However, by starting with organizational policies and mindfully watching for exceptions, you can make meaningful progress quickly.
@@ -396,13 +396,13 @@ The organizational structure for data governance varies substantially between or
 
 Governance accountability is about checks and balances.
 
-:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-accountability.png" alt-text="Image shows the four types of operational, tactical, and strategic involvement, which are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-adoption-roadmap-governance/powerbi-adoption-roadmap-governance-accountability.png" alt-text="Image shows the four types of operational, tactical, and strategic involvement that are described in the table below." border="false":::
 
 Starting at the bottom, the levels in the above diagram include:
 
 | **Level** | **Description** |
 | --- | --- |
-| ![Level 1.](media/common/icon-01-red-30x30.png) | **Operational - Business units:** Level 1 is the foundation of a well-governed system, which includes users within the business units performing their work. Self-service BI creators have a lot of responsibility related to authoring, publishing, sharing, security, and data quality. Self-service BI consumers also have responsibilities for the proper use of data. |
+| ![Level 1.](media/common/icon-01-red-30x30.png) | **Operational - Business units:** Level 1 is the foundation of a well-governed system, which includes users within the business units performing their work. Self-service BI creators have a lot of responsibilities related to authoring, publishing, sharing, security, and data quality. Self-service BI consumers also have responsibilities for the proper use of data. |
 | ![Level 2.](media/common/icon-02-red-30x30.png) | **Tactical - Supporting teams:** Level 2 includes several groups that support the efforts of the users in the business units. Supporting teams include the COE, enterprise BI, the data governance office, as well as other ancillary teams. Ancillary teams can include IT, security, HR, and legal. A change control board is included here as well. |
 | ![Level 3.](media/common/icon-03-red-30x30.png) | **Tactical - Audit and compliance:** Level 3 includes internal audit, risk management, and compliance teams. These teams provide guidance to levels 1 and 2. They also provide enforcement when necessary. |
 | ![Level 4.](media/common/icon-04-red-30x30.png) | **Strategic - Executive sponsor and steering committee:** The top level includes the executive-level oversight of strategy and priorities. This level handles any escalated issues that couldn't be solved at lower levels. Therefore, it's important to have people with sufficient authority to be able to make decisions when necessary. |
@@ -426,7 +426,7 @@ Governance team structure, roles (including terminology), and responsibilities v
 | Project management office | Manages individual governance projects and the ongoing data governance program. |
 | Power BI executive sponsor | Promotes adoption and the successful use of Power BI. Actively ensures that Power BI decisions are consistently aligned with business objectives, guiding principles, and policies across organizational boundaries. For more information, see the [Executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) article. |
 | Center of Excellence | Mentors the community of creators and consumers to promote the effective use of Power BI for decision-making. Provides cross-departmental coordination of Power BI activities to improve practices, increase consistency, and reduce inefficiencies. For more information, see the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) article. |
-| Power BI champions | A subset of content creators found within the business units who help advance the adoption of Power BI. They contribute to data culture growth by advocating the use of best practices and actively assisting colleagues. For more information see the [Community of practice](powerbi-adoption-roadmap-community-of-practice.md) article. |
+| Power BI champions | A subset of content creators found within the business units who help advance the adoption of Power BI. They contribute to data culture growth by advocating the use of best practices and actively assisting colleagues. For more information, see the [Community of practice](powerbi-adoption-roadmap-community-of-practice.md) article. |
 | Power BI administrators | Day-to-day-system oversight responsibilities to support the internal processes, tools, and people. Handles monitoring, auditing, and management. For more information, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article. |
 | Information technology | Provides occasional assistance to Power BI administrators for services related to Power BI, such as Azure Active Directory, Microsoft 365, Teams, SharePoint, or OneDrive. |
 | Risk management | Reviews and assesses data sharing and security risks. Defines ethical data policies and standards. Communicates regulatory and legal requirements. |
@@ -452,10 +452,10 @@ Governance team structure, roles (including terminology), and responsibilities v
 > - **Understand existing data assets:** Confirm that you understand what critical data assets exist. Create an inventory of ownership and lineage, if necessary. Keep in mind that you can't govern what you don't know about.
 > - **Verify executive sponsorship:** Confirm that you have support and sufficient attention from your [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md), as well as from business unit leaders.
 > - **Prepare an action plan:** Include the following key items:
-    > - **Initial priorities:** Select one data domain or business unit at a time.
-    > - **Timeline:** Work in iterations long enough to accomplish meaningful progress, yet short enough to periodically adjust.
-    > - **Quick wins:** Focus on tangible, tactical, and incremental progress.
-    > - **Success metrics:** Create measurable metrics to evaluate progress.
+>     - **Initial priorities:** Select one data domain or business unit at a time.
+>     - **Timeline:** Work in iterations long enough to accomplish meaningful progress, yet short enough to periodically adjust.
+>     - **Quick wins:** Focus on tangible, tactical, and incremental progress.
+>     - **Success metrics:** Create measurable metrics to evaluate progress.
 
 ## Maturity levels
 
