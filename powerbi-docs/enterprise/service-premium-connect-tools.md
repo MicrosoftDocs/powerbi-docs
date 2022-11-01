@@ -188,9 +188,9 @@ User impersonation by using the [EffectiveUserName](/analysis-services/instances
 
 When specifying EffectiveUserName you can also specify one or more workspace roles in the Roles connection string property. If the impersonated username is a workspace admin, that username doesn't need to be a member of the specified roles. If the impersonated username is not a workspace admin, the username must belong to one or more specified roles, otherwise an error is returned.
 
-### Dataset roles
+### Model roles
 
-For Premium datasets, dataset roles, role membership, and row-level security (RLS) filters can be defined through the XMLA endpoint. Role members must be in the tenant's Azure Active Directory (Azure AD). Dataset roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
+With the XMLA endpoint, roles can be defined for a dataset, role membership can be defined for Azure Active Directory (Azure AD) users, and row-level security (RLS) filters can be defined. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
 
 For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined by using SSMS to create role objects and define role properties. In most cases, however, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
