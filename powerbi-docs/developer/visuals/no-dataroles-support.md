@@ -1,6 +1,6 @@
 ---
-title: Render visual without the need to bind any data
-description: Learn how to render visual without the need to bind any data.
+title: Create custom Power BI visuals without data binding
+description: Learn how to create custom visuals for Power BI without data roles by using the No data binding feature.
 author: Demonkratiy
 ms.author: v-asemenov
 ms.reviewer: monaberdugo
@@ -11,40 +11,36 @@ ms.topic: how-to
 ms.date: 10/31/2022
 ---
 
-# Visuals that don't require data binding
+# Create custom Power BI visuals without data binding
 
-When you create a visual in a report, the values are defined interactively by adding data fields to the **Values** well on the visualization pane.
+This article explains how to use the *No data binding feature* to create Power BI custom visuals without data roles. Ordinarily, when you create a visual in a Power BI report, the values are defined interactively by adding data fields to the **Values** well on the **Visualizations** pane.
 
-:::image type="content" source="media/no-dataroles-support/binding-data.png" alt-text="Screenshot of a Power BI visual that shows the Values well in the visualization pane.":::
+:::image type="content" source="media/no-dataroles-support/binding-data.png" alt-text="Screenshot of a Power BI visual that shows the Values well in the Visualizations pane.":::
 
-By default, if no values are defined, the format settings are disabled and the visual isn't updated.
+By default, if no values are defined, the format settings are disabled, and you can't update the visual's formatting.
 
-The `dataRoles` capabilities model allows you to receive updates from Power BI without binding data.
+The `dataRoles` property of the [capabilities model](capabilities.md) allows you to format graphics in Power BI without binding data.
 
-Using the `dataRoles` capabilities model, you can render a visual and use the *update* method to change the format settings. You can change settings even if the data-buckets are empty, or if your visual doesn't use any data roles.
+Using the `dataRoles` capabilities property, you can render a visual and use the `update` method to change the format settings. You can change settings even if the data buckets are empty, or if your visual doesn't use any data roles.
 
-The following tabs show two examples of a Power BI visual. The first visual requires binding data. The second visual uses the *no data roles* feature and doesn't require binding data.
+The following illustrations show two examples of a Power BI visual. The first graphic requires binding data. There are no data roles, or the data wells are empty, so the formatting settings are disabled.
 
-### [Binding data required](#tab/NoDataroles)
+:::image type="content" source="media/no-dataroles-support/no-dataroles-1.png" alt-text="Screenshot of a Power BI visual that shows empty data and inactive visual settings in the Visualizations pane.":::
 
->[!div class="mx-imgBorder"]
->![Screenshot of a Power BI visual that shows empty data and inactive visual settings in the visualization pane.](media/no-dataroles-support/no-dataroles-1.png)
+The second graphic uses the No data binding feature. There are no data roles, or the data wells are empty, but the formatting settings are enabled.
 
-### [Binding data not required](#tab/NoDatarolesSupport)
-
->[!div class="mx-imgBorder"]
->![Screenshot of a Power BI visual that shows empty data and active format settings in the visualization pane.](media/no-dataroles-support/no-dataroles-2.png)
+:::image type="content" source="media/no-dataroles-support/no-dataroles-2.png" alt-text="Screenshot of a Power BI visual that shows empty data and active format settings in the Visualizations pane.":::
 
 ---
 
 ## How to create a visual that doesn't require data binding
 
 > [!NOTE]
-> This feature is available from version 3.6.0 of `powerbi-visuals-api`.
+> This feature is available from version 3.6.0 of the [powerbi-visuals-api](changelog.md#api-v360) and above.
 
-To enable the no data-binding feature, set the following two parameters in the `capabilities.json` file to *true*.
+To enable the No data binding feature, set the following two parameters in the *capabilities.json* file to `true`.
 
-* [`supportsLandingPage`](landing-page.md) allows you to display information on the Power BI card before it's loaded with data.
+* `supportsLandingPage` allows you to display information on the Power BI card before it's loaded with data.
 
 * `supportsEmptyDataView` allows Power BI updates when the values field is empty.
 
