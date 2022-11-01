@@ -145,16 +145,16 @@ Resources for the internal community, such as documentation, templates, and trai
 > [!div class="checklist"]
 > - **Clarify goals:** Clarify what your specific goals are for cultivating a champions network. Make sure these goals align with your overall Power BI strategy, and that your executive sponsor is on board.
 > - **Create a plan for the champions network:** Although some aspects of a champions network will always be informally led, determine to what extent the COE will purposefully cultivate and support champion efforts throughout individual business units. Consider how many champions is ideal for each functional business area. Usually, 1-2 champions per area works well, but it can vary based on the size of the team, the needs of the self-service community, and how the COE is structured.
-> - **Decide on commitment level for champsion:** Decide what level of commitment and expected time investment will be required of Power BI champions. Consider whether the time investment will vary wildly from person to person, and team to team due to different responsibilties. Plan to clearly communicate expectations to people who are interested to get involved. Obtain manager approval when appropriate.
+> - **Decide on commitment level for champions:** Decide what level of commitment and expected time investment will be required of Power BI champions. Consider whether the time investment will vary wildly from person to person, and team to team due to different responsibilities. Plan to clearly communicate expectations to people who are interested to get involved. Obtain manager approval when appropriate.
 > - **Decide how to identify champions:** Determine how you will respond to requests to become a champion, and how the COE will seek out champions. Decide if you will openly encourage interested employees to self-identify as a champion and ask to learn more (less common). Or, whether the COE will observe efforts and extend a private invitation (more common).
 > - **Determine how members of the champions network will be managed:** Once excellent option for managing who the champions are is with a security group. Consider:
-    > - How you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
-    > - How the champions network will communicate and collaborate with each other directly (across organizational boundaries).
-    > - Whether a private and exclusive discussion forum for champions and COE members is appropriate
-> - **Plan resources for champsions:** Ensure members of the champions network have the resources they need, including:
-    > - Direct access to COE members.
-    > - Influence on data policies being implemented (for example, requirements for a dataset certification policy).
-    > - Influence on the creation of best practices and guidance (for example, recommendations for accessing a specific source system).
+>     - How you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
+>     - How the champions network will communicate and collaborate with each other directly (across organizational boundaries).
+>     - Whether a private and exclusive discussion forum for champions and COE members is appropriate
+> - **Plan resources for champions:** Ensure members of the champions network have the resources they need, including:
+>     - Direct access to COE members.
+>     - Influence on data policies being implemented (for example, requirements for a dataset certification policy).
+>     - Influence on the creation of best practices and guidance (for example, recommendations for accessing a specific source system).
 > - **Involve champions:** Actively involve certain champions as satellite members of the COE. For more information about federating the COE, see the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md#structuring-a-coe) article.
 > - **Create a feedback loop for champions:** Ensure that members of the champions network can easily provide information or submit suggestions to the COE.
 > - **Routinely provide recognition and incentives for champions:** Not only is praise an effective motivator, but the act of sharing examples of successful efforts can motivate and inspire others.
