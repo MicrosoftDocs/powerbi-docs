@@ -126,6 +126,6 @@ To publish a Power BI Desktop report:
 
 To get started with Power BI Desktop, the first thing you need is to download and install the application. There are a few ways to get Power BI Desktop:
 
-- [Get Power BI Desktop from the Windows Store](https://aka.ms/pbidesktopstore)
+- [Get Power BI Desktop from the Microsoft Store](https://aka.ms/pbidesktopstore)
 - [Get Power BI Desktop](desktop-get-the-desktop.md)
 - [Download Power BI Desktop from the web](https://www.microsoft.com/download/details.aspx?id=58494)
