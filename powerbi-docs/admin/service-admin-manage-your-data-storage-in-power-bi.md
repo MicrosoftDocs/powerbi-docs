@@ -79,7 +79,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 
     ![Screenshot of the Workspace selection, showing the Sales Group workspace.](media/service-admin-manage-your-data-storage-in-power-bi/power-bi-group-workspaces.png)
 
-1. Select the settings icon ![Settings icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_settingsicon.png) in the upper-right corner. Then select **Settings** > **Manage group storage**.
+1. Select the settings icon ![Settings icon](media/service-admin-manage-your-data-storage-in-power-bi/settings-icon.png) in the upper-right corner. Then select **Settings** > **Manage group storage**.
 
     The top bar shows how much of the group’s storage limit is used.
 
