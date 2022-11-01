@@ -35,14 +35,27 @@ The following table shows which packages **are supported** in the Power BI servi
 
 |        Package        |   Version   |                                   Link                                   |
 |-----------------------|-------------|--------------------------------------------------------------------------|
-|matplotlib|3.2.1|https://pypi.org/project/matplotlib|
-|numpy|1.18.4|https://pypi.org/project/numpy|
-|pandas|1.0.1|https://pypi.org/project/pandas|
-|scikit-learn|0.23.0|https://pypi.org/project/scikit-learn|
-|scipy|1.4.1|https://pypi.org/project/scipy|
-|seaborn|0.10.1|https://pypi.org/project/seaborn|
-|statsmodels|0.11.1|https://pypi.org/project/statsmodels|
-|xgboost|1.1.0|https://pypi.org/project/xgboost|
+|cycler|0.11.0|https://pypi.org/project/cycler|
+|joblib|1.1.0|https://pypi.org/project/joblib|
+|kiwisolver|1.4.4|https://pypi.org/project/kiwisolver|
+|matplotlib|3.2.2|https://pypi.org/project/matplotlib|
+|numpy|1.21.6|https://pypi.org/project/numpy|
+|packaging|21.3|https://pypi.org/project/packaging|
+|pandas|1.3.5|https://pypi.org/project/pandas|
+|patsy|0.5.2|https://pypi.org/project/patsy|
+|pip|22.1.2|https://pypi.org/project/pip|
+|pyparsing|3.0.9|https://pypi.org/project/pyparsing|
+|python-dateutil|2.8.2|https://pypi.org/project/python-dateutil|
+|pytz|2022.1|https://pypi.org/project/pytz|
+|scikit-learn|1.0.2|https://pypi.org/project/scikit-learn|
+|scipy|1.7.3|https://pypi.org/project/scipy|
+|seaborn|0.11.2|https://pypi.org/project/seaborn|
+|setuptools|63.2.0|https://pypi.org/project/setuptools|
+|six|1.16.0|https://pypi.org/project/six|
+|statsmodels|0.13.2|https://pypi.org/project/statsmodels|
+|threadpoolctl|3.1.0|https://pypi.org/project/threadpoolctl|
+|typing-extensions|4.3.0|https://pypi.org/project/typing-extensions|
+|xgboost|1.6.1|https://pypi.org/project/xgboost|
 
 ## Next steps
 For more information about Python in Power BI, take a look at the following articles:
