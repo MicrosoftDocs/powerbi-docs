@@ -24,7 +24,7 @@ In the Power BI service, you can highlight important information in a visual by 
 
 In a Power BI report, you can sort most visuals by one, and sometimes two fields, but some visuals can't be sorted, like treemaps, filled maps, scatter charts, gauge charts, waterfall charts, cards, and visuals on a dashboard.
 
-This video demonstrates original sorting features, like how to change the sort order, and also new features that are now available in the Power BI service.
+This video demonstrates sorting features, like how to change the sort order, and also introduces new features that are now available in the Power BI service.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRpNT]
 
