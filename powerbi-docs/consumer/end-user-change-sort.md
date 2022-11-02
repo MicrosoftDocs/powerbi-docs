@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.custom: video-RWRpNT
-ms.date: 11/01/2022
+ms.date: 11/02/2022
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -30,7 +30,7 @@ This video demonstrates original sorting features, like how to change the sort o
 
 ## Get started
 
-To get started, open any report that you have created or that has been shared with you. Select a visual that can be sorted and choose **More actions** (...). The three options for sorting are **Sort descending**, **Sort ascending**, and **Sort by**.
+To choose a sorting option, open any report that you have created or that has been shared with you, select a visual that can be sorted, and choose **More actions** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by**, and **Sort axis**.
 
 ![Screenshot showing the visual's drop down menu. The sorting options are outlined.](media/end-user-change-sort/power-bi-actions.png)
 
@@ -38,15 +38,15 @@ To get started, open any report that you have created or that has been shared wi
 
 Visuals can be sorted alphabetically by the names of the categories in the visual or by the numeric values of each category. For example, this chart's X-axis, the store **Name**, is sorted alphabetically.
 
-![Screenshot showing bar chart with the X axis sorted alphabetically.](media/end-user-change-sort/powerbi-sort-category.png)
+![Screenshot showing a bar chart with the X axis sorted alphabetically.](media/end-user-change-sort/powerbi-sort-category.png)
 
 To change the sort from a category (store name) to a value (sales per square feet), select **More actions** (...), choose **Sort by** and select a numeric value used in the visual. The following example shows the visual sorted by **Sales Per Sq Ft**.
 
 ![Screenshot showing the sales per square feet option selected from the drop down menu.](media/end-user-change-sort/power-bi-sort-value.png)
 
-You can also sort in ascending or descending order. Select **More actions** (...) and choose **Sort descending** or **Sort ascending**. Your selections are indicated with a checkmark.
+You can also sort in ascending or descending order. Select **More actions** (...) and choose **Sort descending** or **Sort ascending**. The field that is being sorted is in bold and has a yellow bar.
 
-   ![video showing selecting sort by and then ascending, descending](media/end-user-change-sort/sort.gif)
+   ![Video showing selecting by using sort by and the ascending and descending options.](media/end-user-change-sort/sort.gif)
 
 ## Sort by multiple columns
 
@@ -74,13 +74,13 @@ For more information, see [Personalize visuals in a report](end-user-personalize
 
 ## Sort by other criteria
 
-Sometimes you want to sort your data using a field that isn't included in the visual. For example, you might want to sort by month in sequential order (and not in alphabetical order) or you might want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
+Sometimes you want to sort your data by using a field that isn't included in the visual. For example, you might want to sort by month in sequential order (and not in alphabetical order) or you might want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
 
 - To learn how to sort by a different field in the dataset, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md). To use this feature, you must have edit permissions for the report.
 
 - If you are the report designer, you can create new columns in the dataset to address sorting issues with values, such as dates and numbers. The designer's contact information is listed in the report title's drop down menu.
 
-![Dropdown showing contact information](media/end-user-change-sort/power-bi-heading.png)
+![Dropdown from the title showing contact information.](media/end-user-change-sort/power-bi-heading.png)
 
 ## Next steps
 
