@@ -325,7 +325,7 @@ This section describes the deployment pipeline permissions. The permissions list
 The lowest deployment pipeline permission is *pipeline admin*, and it's required for all deployment pipeline operations.
 
 |User                          |Pipeline permissions |Comments |
-|------------------------------|------------|---------|
+|------------------------------|---------------------|---------|
 |**Pipeline admin** |<ul><li>View the pipeline​</li><li>Share the pipeline with others</li><li>Edit and delete the pipeline</li><li>Unassign a workspace from a stage</li><li>Can see workspaces that are tagged as assigned to the pipeline in Power BI service</li></ul> |Pipeline access doesn't grant permissions to view or take actions on the workspace content. |
 |**Workspace viewer**<br>(and pipeline admin) |<ul><li>Consume content</li><li>Unassign a workspace from a stage</li></ul> |Workspace members assigned the Viewer role without *build* permissions, cannot access the dataset or edit workspace content. |
 |**Workspace contributor**<br>(and pipeline admin) |<ul><li>Consume content​</li><li>Compare stages</li><li>View datasets</li><li>Unassign a workspace from a stage</li></ul> |   |
