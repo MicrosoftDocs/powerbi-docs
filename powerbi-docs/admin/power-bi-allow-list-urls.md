@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/01/2021
+ms.date: 11/02/2021
 ms.custom: ''
 ---
 
@@ -29,7 +29,7 @@ Wildcards (*) represent all levels under the root domain, and we use N/A when in
 
 ## Authentication
 
-Power BI depends on the required endpoints in the Microsoft 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the linked site below.
+Power BI depends on the required endpoints in the Microsoft 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the following linked site.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ Power BI depends on the required endpoints in the Microsoft 365 authentication a
 
 ## General site usage
 
-For the general use of Power BI, you must be able to connect to the endpoints in the table and linked sites below.
+For the general use of Power BI, you must be able to connect to the endpoints and linked sites in the following table.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -54,7 +54,7 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 
 ## Administration
 
-To perform administrative functions in Power BI, you must be able to connect to the endpoints in the linked sites below.
+To perform administrative functions in Power BI, you must be able to connect to the endpoints in the following linked sites.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -63,7 +63,7 @@ To perform administrative functions in Power BI, you must be able to connect to 
 
 ## Getting data
 
-To get data from specific data sources, such as OneDrive, you must be able to connect to the endpoints in the table below. Access to additional internet domains and URLs may be required for specific data sources used in your organization.
+To get data from specific data sources, such as OneDrive, you must be able to connect to the endpoints in the following table. Access to additional internet domains and URLs may be required for specific data sources used in your organization.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ To get data from specific data sources, such as OneDrive, you must be able to co
 
 ## Dashboard and report integration
 
-Power BI depends on certain endpoints to support your dashboards and reports. You must be able to connect to the endpoints in the table and linked sites below.
+Power BI depends on certain endpoints to support your dashboards and reports. You must be able to connect to the endpoints and linked sites in the following table.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -84,7 +84,7 @@ Power BI depends on certain endpoints to support your dashboards and reports. Yo
 
 ## Power BI visuals
 
-Power BI depends on certain endpoints to view and access Power BI visuals. You must be able to connect to the endpoints in the table and linked sites below.
+Power BI depends on certain endpoints to view and access Power BI visuals. You must be able to connect to the endpoints and linked sites in the following table.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
