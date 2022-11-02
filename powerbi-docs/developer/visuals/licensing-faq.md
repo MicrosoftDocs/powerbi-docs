@@ -104,7 +104,7 @@ Select the Visual you want to assign licenses for. In the next page, select the 
 
 ### Once I assign a license, how long does it take until I can use it?
 
-After you are assigned a licenses in the Microsoft 365 Admin Center, it should be available within an hour.
+After you are assigned a license in the Microsoft 365 Admin Center, it should be available within an hour.
 
 * If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
 * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
