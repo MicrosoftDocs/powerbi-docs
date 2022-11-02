@@ -89,11 +89,11 @@ Tap an action button to update the metric or to start/stop following it. You wil
 * **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 * **Follow/Unfollow**: Allows you to start/stop following the metric in order to keep up to date with activity on the metric.
 
-Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that has been configured by the scorecard creator.
+Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that the scorecard creator has configured.
 
 ![Screenshot of a metric detail pane that showing the activity/details toggle.](media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane-toggle.png)
 
-Tap on a the name of a connected report to open it. If you don't see the name of the report, but only the word "Report", it means you don't have access to the report. Tap on Report to request access.
+Tap on a connected report to open it. If you don't see the name of the report, but only the word "Report", it means you don't have access to the report. Tap on the report to request access.
 
 ### Add a note to an existing check-in
 
