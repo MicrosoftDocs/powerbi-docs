@@ -84,12 +84,12 @@ A metric’s detail pane has a chart of the metric’s progress and lists all th
 
 ![Screenshot of a metric detail pane that shows a chart of the metric’s progress and lists all the activity on the metric.](media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane.png)
  
-Tap an action button to update the metric or to start/stop following it. You will have several options:
+**Action buttons**: Tap an action button to update the metric or to start/stop following it. You will have several options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in is not available for metrics with connected reports.
 * **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 * **Follow/Unfollow**: Allows you to start/stop following the metric in order to keep up to date with activity on the metric.
 
-Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that the scorecard creator has configured.
+**Activity/Details toggle**: Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that the scorecard creator has configured.
 
 ![Screenshot of a metric detail pane that showing the activity/details toggle.](media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane-toggle.png)
 
