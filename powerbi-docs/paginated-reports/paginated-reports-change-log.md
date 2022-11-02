@@ -18,6 +18,15 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
+## November 2022
+	
+Version 15.7.1800.11, released November 2, 2022
+
+### Bug fixes
+
+- Fixed issue where Report Builder becomes unresponsive if left open for longer periods of time.
+- Fixed accessibility issues.
+
 ## August 2022
 	
 Version 15.7.1799.16, released August 18, 2022
