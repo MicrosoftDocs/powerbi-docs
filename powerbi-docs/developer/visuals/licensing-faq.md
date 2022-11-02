@@ -53,6 +53,16 @@ Not yet. 
 If you're a company administrator, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) to see all subscriptions and to whom they're assigned.  
 If you aren't an administrator, speak to the administrator in your company.
 
+### How can I add a purchase order number to the transaction?
+
+You can add a purchase number to the billing profile of your order. At the final stage of your checkout, select **Add new** under the billing profile.
+
+:::image type="content" source="./media/licensing-faq/billing-profile.png" alt-text="Screenshot of the final stage of checkout with the Add new link highlighted.":::
+
+Add the purchase order number in the appropriate space.
+
+:::image type="content" source="./media/licensing-faq/add-purchase-order-number.png" alt-text="Screenshot of billing profile with box for adding purchase order number.":::
+
 ### Can we use a visual without having to upload it to organization visual?
 
 Yes. You can download a visual directly to your reports.  
