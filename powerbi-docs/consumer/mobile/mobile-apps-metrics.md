@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 10/31/2022
+ms.date: 11/02/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to get monitor and update metrics in the Power BI mobile app.
 ---
@@ -89,9 +89,11 @@ Tap an action button to update the metric or to start/stop following it. You wil
 * **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 * **Follow/Unfollow**: Allows you to start/stop following the metric in order to keep up to date with activity on the metric.
 
-Set the toggle to **Activity** to see metric check-ins.
+Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that has been configured by the scorecard creator.
 
-Set the toggle to **Details** to view connected reports, if any. From the details you can open the connected reports. The Details toggle option is only available if the metric is connected to a report.
+![Screenshot of a metric detail pane that showing the activity/details toggle.](media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane-toggle.png)
+
+Tap on a the name of a connected report to open it. If you don't see the name of the report, but only the word "Report", it means you don't have access to the report. Tap on Report to request access.
 
 ### Add a note to an existing check-in
 
