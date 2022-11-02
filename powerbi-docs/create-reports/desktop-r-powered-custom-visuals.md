@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/10/2021
+ms.date: 09/27/2022
 LocalizationGroup: Create reports
 ---
 # Use R-powered Power BI visuals in Power BI
@@ -45,20 +45,14 @@ Following are the steps to browse and select visuals from the online **AppSource
 
    ![Screenshot showing the Time Series Forecasting Chart Power B I visual in App Source.](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   You do not need to install R to use R-powered Power BI visuals in the **Power BI service**, however, if you want to use R-powered Power BI visuals in **Power BI Desktop** you *must* install R on the local machine. You can download R from the following locations:
+   You don't need to install R to use R-powered Power BI visuals in the **Power BI service**, however, if you want to use R-powered Power BI visuals in **Power BI Desktop** you *must* install R on the local machine. You can download R from the following locations:
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Once the visual is downloaded (which is like downloading any file from your browser), go to **Power BI Desktop**, select **More options** (...) in the **Visualizations** pane, and select **Import a visual from a file**.
+4. Once the visual is downloaded (which is like downloading any file from your browser), go to Power BI, select **More options** (...) in the **Visualizations** pane, and select **Import a visual from a file**.
 
-   # [Power BI Desktop](#tab/powerbi-desktop)
-   ![Screenshot showing More options in the Power B I Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visuals.png)
-
-   # [Power BI service](#tab/powerbi-service)
-   ![Screenshot showing More options in the Power B I service Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-service-r-powered-custom-visuals.png)
-
-   ---
+   ![Screenshot showing More options in the Power B I Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visuals.png)
 
 5. You're warned about importing a custom visual, as shown in the following image:
 
@@ -66,15 +60,9 @@ Following are the steps to browse and select visuals from the online **AppSource
 6. Navigate to where the visual file was saved, then select the file. **Power BI Desktop** custom visualizations have the .pbiviz extension.
 
    ![Screenshot showing selection of a Power B I custom visualization file for import.](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_6.png)
-7. When you return to Power BI Desktop, you can see the new visual type in the **Visualizations** pane.
+7. When you return to Power BI, you can see the new visual type in the **Visualizations** pane.
 
-   # [Power BI Desktop](#tab/powerbi-desktop)
    ![Screenshot showing the new imported custom visualization in the Power B I Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-r-powered-custom-visual-forecasting.png)
-
-   # [Power BI service](#tab/powerbi-service)
-   ![Screenshot showing the new imported custom visualization in the Power B I service Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-service-r-powered-custom-visual-forecasting.png)
-
-   ---
 
 8. When you import the new visual (or open a report that contains an R-powered custom visual), **Power BI Desktop** installs the required R packages.
 
@@ -92,13 +80,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 
 1. You can also get Power BI visuals from within Power BI Desktop or the Power BI service. Select the ellipsis (the ...) in the **Visualizations** pane, and select **Get more visuals**.
 
-   # [Power BI Desktop](#tab/powerbi-desktop)
-   ![Screenshot showing Get more visuals in More options in the Power B I Desktop Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-get-more-visuals.png)
-
-   # [Power BI service](#tab/powerbi-service)
-   ![Screenshot showing Get more visuals in More options in the Power B I service Visualizations pane.](media/desktop-r-powered-custom-visuals/get-more-visuals.png)
-
-   ---
+   ![Screenshot showing Get more visuals in More options in the Power B I Visualizations pane.](media/desktop-r-powered-custom-visuals/power-bi-desktop-get-more-visuals.png)
 
 2. When you do so, the **Power BI visuals** dialog box appears, where you can scroll through the available Power BI visuals and select what you would like. You can search by name, select a category, or just scroll through the available visuals. When you're ready, just select **Add** to add the custom visual to Power BI.
 
@@ -131,7 +113,7 @@ When attempting to install an R-powered custom visual, you can run into errors w
 The Power BI team is actively working on mitigating these issues before they reach you and the next Power BI Desktop will incorporate updates to address these problems. Until then, you can take one or more of the following steps to mitigate the issues:
 
 1. Remove the custom visual, then install it again. This initiates a reinstallation of the R packages.
-2. If your installation of R is not current, upgrade your R installation, then remove and reinstall the custom visual as described in the previous step.
+2. If your installation of R isn't current, upgrade your R installation, then remove and reinstall the custom visual as described in the previous step.
 
    Supported R versions are listed in the description of each R-powered custom visual, as shown in the following image.
 

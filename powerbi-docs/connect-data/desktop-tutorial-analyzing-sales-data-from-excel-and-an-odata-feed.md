@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 01/28/2022
+ms.date: 10/20/2022
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze sales data from Excel and an OData feed
@@ -73,7 +73,7 @@ Next, import the order data from the sample Northwind sales system OData feed.
 
    ![OData feed dialog box](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
 
-1. In **Navigator**, select the **Orders** table, and then select **OK** to load the data into Power Query Editor.
+1. In **Navigator**, select the **Orders** table, and then select **Transform** to load the data into Power Query Editor.
 
    ![Navigator for OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_odatafeed.png)
 

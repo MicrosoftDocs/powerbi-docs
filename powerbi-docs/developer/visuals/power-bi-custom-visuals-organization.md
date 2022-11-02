@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 02/12/2022
+ms.date: 10/18/2022
 LocalizationGroup: Visualizations
 ---
 
@@ -53,8 +53,8 @@ This section lists the [admin](#admin-considerations) and [user](#user-considera
 
 ## Next steps
 
-* Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
 * [Publish Power BI visuals to Partner Center](office-store.md)
-* [Frequently asked questions about Power BI visuals](/powerbi-docs/developer/visuals/power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
+* [Frequently asked questions about Power BI visuals](./power-bi-custom-visuals-faq.yml)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)  
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

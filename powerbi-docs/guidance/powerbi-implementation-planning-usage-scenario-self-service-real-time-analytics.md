@@ -26,7 +26,7 @@ To develop self-service real-time analytics, the business analyst will first nee
 > [!TIP]
 > You can also achieve real-time analytics in Power BI by using push datasets. However, this topic is out of scope for this self-service real-time usage scenario because it targets developers. Push datasets usually involve developing a programmatic solution.
 
-For a complete understanding of Power BI real-time analytics, work through the [Monitor data in real-time with Power BI](/learn/modules/monitor-data-real-time-power-bi/) learning path.
+For a complete understanding of Power BI real-time analytics, work through the [Monitor data in real-time with Power BI](/training/modules/monitor-data-real-time-power-bi/) learning path.
 
 ## Scenario diagram
 

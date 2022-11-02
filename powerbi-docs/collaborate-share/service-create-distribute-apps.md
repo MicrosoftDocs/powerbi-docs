@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 09/14/2022
+ms.date: 10/31/2022
 
 LocalizationGroup: Share your work
 ---
@@ -106,7 +106,17 @@ On the **Audience** tab, you create and manage audience groups within the app.
     :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
-    > The advanced settings apply to all the audiences, but not to members of the workspace. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least the Contributor role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+
+### Save a copy of a report
+
+You can allow app users who have build permissions to save copies of reports to their workspace. Once they save the reports, the app users can customize the reports copies to meet their needs. 
+
+To enable your app users to save a copy, select the **Allow users to make a copy of the reports in the app** checkbox on the **Setup** tab.
+
+:::image type="content" source="media/service-create-distribute-apps/save-copy.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
+    
+When you select that, your app users who have build permissions can save a copy of a report from the app consumer view. You can also grant build permissions to your app users through the app using **Advanced** option under **Manager audience access** pane. 
 
 ### Publish the app
 
@@ -126,6 +136,18 @@ Now that you've decided on the audiences and the content for each audience, it's
 
 Your app consumers can also request access to your app by searching for the app from Apps marketplace or AppSource. See the [app consumer view](#app-consumer-view) section of this article for more about the app experience for consumers.
 
+#### Publish the app to your entire organization
+
+You can add your entire organization to any of the app audience groups when you publish your app.
+
+- In **Manage audience access**, select **Entire organization**.
+
+However, this option is disabled in these three scenarios:
+
+- You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
+- You're a guest user who has been assigned a workspace role. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](../admin/service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+
 ## Manage app access requests
 
 After you publish an app, you can manage app permission.
@@ -144,7 +166,7 @@ The Permission management page contains these tabs:
 - **Pending access**: Lists all pending requests.
 
   :::image type="content" source="media/service-create-distribute-apps/access-permission-page.png" alt-text="Screenshot of manage permission page.":::
- 
+
 ## Change your published app
 
 After you publish your app, you may want to change or update it. 
@@ -167,6 +189,9 @@ After you publish your app, you may want to change or update it.
 4. Update **Setup**, **Content**, and **Audience**, if you need to, then select **Update app**.
 
     The people you've published the app to automatically see the updated version of the app.
+    
+    > [!Note]
+    > If you removed app permissions as part of the update, new app installers won't get those permissions. However, **the update won't remove the permissions from users who already have them.** To remove such existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. 
 
 ## Automatically install apps for end users
 If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal-content-pack-app.md#push-apps-to-end-users) in the Power BI admin portal article.
@@ -231,9 +256,7 @@ Things to keep in mind about publishing apps:
 * When you select a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
 * The support site URL is shown in the item information card.
 * By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
-* As of now we have disabled “Save a copy” feature. We are working on providing a better offering. 
-* Currently, Workspace Contributors can add/delete a content in the app, but they cannot change the visibility of the content. As a Workaround, Workspace Admins/members can update the visibility of the content added. This is a temporary limitation, and we will soon allow contributors to change the visibility of the content in the Audience tab. 
-* Currently, the "Save a copy" feature is disabled for the preview.
+* Currently, having multiple audiences isn't supported in Power BI Mobile apps and deployment pipelines. This is a temporary limitation.
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps

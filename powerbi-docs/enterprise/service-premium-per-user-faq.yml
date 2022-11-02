@@ -30,7 +30,7 @@ sections:
         answer: |
           Premium Per User (PPU) is a new way to license premium features on a per-user basis, and includes all Power BI Pro license capabilities, along with features like paginated reports, AI, and other capabilities that previously were only available with a Premium capacity. With a PPU license, you do not need a separate Power BI Pro license, as all Pro license capabilities are included in PPU. 
 
-          A Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) can be used to try Premium Per User (PPU) as long as your organization has not disabled individual trials with the [Allow users to try Power BI paid features tenant setting](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
+          A Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) can be used to try Premium Per User (PPU) as long as your organization has not disabled individual trials with the [Allow users to try Power BI paid features tenant setting](https://learn.microsoft.com/power-bi/support/service-admin-portal-help-support#allow-users-to-try-power-bi-paid-features).
 
           The following table describes the Premium Per User (PPU) features against a Premium capacity:
 
