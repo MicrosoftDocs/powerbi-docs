@@ -9,7 +9,7 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: overview
 ms.date: 11/2/2022
 LocalizationGroup: Visualizations
-ms.custom: intro-overview
+ms.custom: intro-overview, engagement-fy23
 ---
 
 # What are custom visuals in Power BI and where can I get them?
