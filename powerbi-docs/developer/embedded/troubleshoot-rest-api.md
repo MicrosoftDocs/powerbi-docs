@@ -54,8 +54,6 @@ The [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-p
 
 `HTTP/1.1 500 Internal Server Error`
 
-In JSON it looks like this:
-
 ```json
 An error has occurred
 ```
