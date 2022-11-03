@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 08/18/2022
+ms.date: 11/02/2022
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,15 @@ ms.date: 08/18/2022
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## November 2022
+	
+Version 15.7.1800.11, released November 2, 2022
+
+### Bug fixes
+
+- Fixed issue where Report Builder becomes unresponsive if left open for longer periods of time.
+- Fixed accessibility issues.
 
 ## August 2022
 	
