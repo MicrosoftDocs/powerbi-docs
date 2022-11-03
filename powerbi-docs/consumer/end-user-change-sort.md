@@ -24,7 +24,7 @@ In the Power BI service, you can highlight important information in a visual by 
 
 In a Power BI report, you can sort most visuals by one, and sometimes two fields, but some visuals can't be sorted, like treemaps, filled maps, scatter charts, gauge charts, waterfall charts, cards, and visuals on a dashboard.
 
-This video demonstrates sorting features, like how to change the sort order, and also introduces new features that are now available in the Power BI service.
+This video demonstrates sorting features, like how to change the sort order, and introduces other features that are available in the Power BI service.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRpNT]
 
@@ -36,7 +36,7 @@ To choose a sorting option, open any report that you have created or that has be
 
 ## Sort alphabetically or numerically
 
-Visuals can be sorted alphabetically by the names of the categories in the visual or by the numeric values of each category. For example, this chart's X-axis, the store **Name**, is sorted alphabetically.
+Visuals can be sorted alphabetically by the names of the categories in the visual or by the numeric values of each category. For example, in this chart's X-axis, the store **Name** is sorted alphabetically.
 
 ![Screenshot showing a bar chart with the X axis sorted alphabetically.](media/end-user-change-sort/powerbi-sort-category.png)
 
@@ -66,7 +66,7 @@ Power BI reports retain the filters, slicers, sorting, and other data view chang
 
 ![Screenshot showing the reset to default button.](media/end-user-change-sort/power-bi-reset.png)
 
-The report designer can prevent changes from being saved. When applied, the **Reset to default** button is greyed out.
+The report designer can prevent changes from being saved. If they do, the **Reset to default** button is greyed out.
 
 You can also save your changes with [bookmarks](end-user-bookmarks.md). If the report designer enables the **Personalize visual** feature for the report, you can change the sort order of a visual and save it as a bookmark. If you see the personalize visual icon ![Screenshot of the personalize visual icon.](media/end-user-change-sort/power-bi-personalize-visual-icon.png) in the visual's header, this feature is enabled. You don't need edit permissions to use this feature.
 
