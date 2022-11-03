@@ -114,7 +114,7 @@ The table below shows an event example.
 | Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
 | Error | 0 | Error number of a given event. |
 | ConnectionID | 3 | Unique connection ID. |
-| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id of the dataset in which the statement of the user is running. |
+| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the dataset in which the statement of the user is running. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
 | SPID | 180 | Server process ID. This uniquely identifies a user session. This directly corresponds to the session GUID used by XML/A. |
 | ClientProcessID | null | The process ID of the client application. |
@@ -135,7 +135,7 @@ Power BI Embedded uses the **Power BI Dedicated** schema.
 
 To scale a capacity resource, you can use the [ScaleUp-Automation-RunBook.ps1](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) PowerShell runbook script.
 
-The script uses Power BI and ARM REST APIs, and can be called in Azure automation, and triggered by Azure alert.
+The script uses Power BI and ARM REST APIs, and can be called in Azure Automation, and triggered by Azure alert.
 
 You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 
