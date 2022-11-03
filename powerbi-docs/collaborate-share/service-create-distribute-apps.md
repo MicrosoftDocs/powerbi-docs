@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 10/24/2022
+ms.date: 10/31/2022
 
 LocalizationGroup: Share your work
 ---
@@ -136,6 +136,18 @@ Now that you've decided on the audiences and the content for each audience, it's
 
 Your app consumers can also request access to your app by searching for the app from Apps marketplace or AppSource. See the [app consumer view](#app-consumer-view) section of this article for more about the app experience for consumers.
 
+#### Publish the app to your entire organization
+
+You can add your entire organization to any of the app audience groups when you publish your app.
+
+- In **Manage audience access**, select **Entire organization**.
+
+However, this option is disabled in these three scenarios:
+
+- You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
+- You're a guest user who has been assigned a workspace role. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](../admin/service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+
 ## Manage app access requests
 
 After you publish an app, you can manage app permission.
@@ -154,7 +166,7 @@ The Permission management page contains these tabs:
 - **Pending access**: Lists all pending requests.
 
   :::image type="content" source="media/service-create-distribute-apps/access-permission-page.png" alt-text="Screenshot of manage permission page.":::
- 
+
 ## Change your published app
 
 After you publish your app, you may want to change or update it. 

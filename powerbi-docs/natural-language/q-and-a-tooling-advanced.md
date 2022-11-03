@@ -36,7 +36,7 @@ Linguistic schemas are saved in a .yaml format. This format is related to the po
 We recommend using Visual Studio Code to edit linguistic schema .yaml files. Visual Studio Code includes out-of-the-box support for .yaml files and can be extended to specifically validate the Power BI linguistic schema format.
 1. Install [Visual Studio Code](https://code.visualstudio.com/).    
 
-2. Select the sample linguistic schema that you saved earlier: [.yaml file](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
+2. Select the .yaml file in the sample linguistic schema that you saved earlier: [QnALinguisticSchema.zip](https://go.microsoft.com/fwlink/?linkid=871858).    
 4. Select **Visual Studio Code** and **Always use this app to open .yaml files**.
 
     ![How do you want to open this file](media/q-and-a-tooling-advanced/power-bi-visual-code.png)
@@ -220,7 +220,7 @@ Binding: {Table: Products}
 
  
 ### Noun phrasings
-Noun phrasings define new nouns that describe subsets of things in your model. They often include some type of model-specific measurement or condition. For example, for our Olympics model we might want to add phrasings that distinguish champions from medalists, land sports from water sports, teams versus individuals, age categories of athletes (teens, adults, seniors), etc. For our movie database, we might want to add noun phrasings for “flops are movies where net profit < 0” so that we can ask questions like “count the flops by year”. There are two forms of noun phrasings, for use in different situations.
+Noun phrasings define new nouns that describe subsets of things in your model. They often include some type of model-specific measurement or condition. For example, for our model we might want to add phrasings that distinguish champions from medalists, land sports from water sports, teams versus individuals, age categories of athletes (teens, adults, seniors), etc. For our movie database, we might want to add noun phrasings for “flops are movies where net profit < 0” so that we can ask questions like “count the flops by year”. There are two forms of noun phrasings, for use in different situations.
 
 *Simple noun phrasings* define a new noun based on a condition, such as “contractors are employees where full time = false” and "champion is athlete where count of medals >5". Simple noun phrasings are used in these kinds of questions:
 
