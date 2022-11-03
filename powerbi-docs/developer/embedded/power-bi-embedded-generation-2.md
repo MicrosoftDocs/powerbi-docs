@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 01/02/2022
-ms.custom: intro-overview
+ms.date: 11/02/2022
+ms.custom: intro-overview, engagement-fy23
 ---
 
 # Power BI Embedded Generation 2
@@ -62,7 +62,7 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 
 ## Considerations and limitations
 
-* Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](embedded-capacity.md#embedded-gen-2-memory-enhancements)
+* Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](./embedded-capacity.md#embedded-gen-2-memory-enhancements)
 
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
 

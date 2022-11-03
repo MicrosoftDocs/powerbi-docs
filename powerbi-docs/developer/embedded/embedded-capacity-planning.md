@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/24/2022
+ms.date: 11/3/2022
+ms.custom: engagement-fy23
 ---
 
 # Capacity planning in Power BI embedded analytics

@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.custom: subject-monitoring
-ms.date: 08/02/2021
+ms.custom: subject-monitoring, engagement-fy23
+ms.date: 11/02/2022
 ---
 
 # Monitoring Power BI Embedded data reference
@@ -146,11 +146,6 @@ You can either copy the script, or download it as part of the [PowerBI-Developer
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md)
-
->[!div class="nextstepaction"]
->[Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
-
->[!div class="nextstepaction"]
->[Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
+* [Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md)
+* [Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
+* [Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
