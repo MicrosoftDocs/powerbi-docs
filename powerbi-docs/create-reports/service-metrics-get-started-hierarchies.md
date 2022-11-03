@@ -1,6 +1,6 @@
 ---
-title: Get started with hierarchies in Power BI Metrics
-description: Get started with an introduction to metrics in Power BI
+title: Get started with hierarchies in Power BI metrics
+description: You can set up a hierarchy for a scorecard and map the Power BI datasets referenced by your metrics to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 11/03/2022
 ms.custom: intro-get-started
 ---
 # Get started with cascading scorecards in Power BI
@@ -18,22 +18,31 @@ ms.custom: intro-get-started
 Metrics supports cascading scorecards that roll up along hierarchies you set up in your scorecard. You can set up a hierarchy for a scorecard and map the Power BI datasets referenced by your metrics to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data. That’s potentially thousands of automated scorecard views with just a few clicks.
 Power BI will cascade connected metric values to each level of the hierarchy. Users can easily drill into the hierarchy to see progress, statuses and do check-ins at different levels. In the images below, you can see the different levels of a project hierarchy in the slicer, and as you navigate to each level or sublevel of the hierarchy, your metric values, statuses, owners, and progress will change along with it.
 
+This scorecard is set up with a hierarchy, and the the filter is open exposing the hierarchy slicer.
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scorecard-overview.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scorecard-overview.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer." lightbox="media/get-started-hierarchies/hierarchies-scorecard-overview.png":::
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scorecard-overview2.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer and filters applied on the scorecard.":::
+In this image, the scorecard has a hierarchy set up, and the filter is open exposing the hierarchy slicer and filters applied on the scorecard.
+
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scorecard-overview2.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer and filters applied on the scorecard." lightbox="media/get-started-hierarchies/hierarchies-scorecard-overview2.png":::
+
+## Requirements for creating hierarchies
+
+Here are the requirements for setting up a hierarchical scorecard:
+
+- Hierarchies require a Premium or Premium Per User workspace.
+- You need Edit permission to the scorecard.
+- Your scorecard needs at least one connected metric.
+- You need Build access to the datasets connected in your scorecard.
 
 ## Set up your hierarchy
 
-To set up a hierarchical scorecard, there are a few requirements:
-1.	Hierarchies require a premium or premium per user workspace
-1.	Edit permission to the scorecard
-1.	At least one connected metric on your scorecard.
-1.	Build access to the datasets connected in your scorecard
-
-In edit mode, select manage hierarchies from the “all” slicer, or select ‘set up a hierarchy’ from the <b>+ New menu.</b>
+In scorecard edit mode, select **Manage hierarchies** from the **All** slicer
 
 :::image type="content" source="media/get-started-hierarchies/hierarchies-entry-point1.png" alt-text="First entry point in hierarchy slicer.":::
+
+You can also select **Set up a hierarchy** from the **New** menu.
+
 :::image type="content" source="media/get-started-hierarchies/hierarchies-entry-point2.png" alt-text="Other entry point in +New menu.":::
 
 ## Map hierarchy levels to data
@@ -74,10 +83,13 @@ Metric data that can be edited on child scorecards:
 -	Check-in data (notes, statuses when applicable and values when applicable)
 
 ## Considerations for hierarchy setup
+
 -	There are data limits on hierarchies:
-o	Up to 10000 items per hierarchy (across all datasets)
-o	Up to 5 hierarchies
-o	Up to 5 levels per hierarchy
+
+    - Up to 10,000 items per hierarchy (across all datasets)
+    - Up to five hierarchies
+    - Up to five levels per hierarchy
+    
 -	Dynamic and static RLS is supported but it is routed through the hierarchy creator.  All scorecard viewers will impersonate the hierarchy creator’s access 
 -	Other users with edit access to the scorecard can edit the hierarchy, but will take over the hierarchy connections upon save, and all data connections will be routed through their UserID, which may result in different data values or broken metrics
 -	Reusing Power BI hierarchies is not yet supported – hierarchies must be created in the scorecard
@@ -87,11 +99,9 @@ o	Up to 5 levels per hierarchy
 -	Owners are applied per hierarchy level, not per metric
 -	Roll ups are not yet supported on child scorecards
 
+## View your hierarchy
 
-
-## Viewing your heirarchy
-
-## Scorecard list view
+### Scorecard list view
 To view your hierarchical scorecard, you can use the slicer to navigate to whichever level of your hierarchy you want to view.  From here you can do things like open the details pane, go to a report, and perform check-ins, just like any other scorecard view. 
 
 :::image type="content" source="media/get-started-hierarchies/hierarchies-cross-section.png" alt-text="Screenshot of a scorecard showing a hierarchy that's been set up.":::
@@ -105,7 +115,7 @@ You can view intersections of multiple hierarchies.  For example, you can look a
 :::image type="content" source="media/get-started-hierarchies/hierarchies-two-slicers.png" alt-text="A hierarchy slicer that shows two hierarchies set up.":::
 :::image type="content" source="media/get-started-hierarchies/hierarchies-cross-section-slicer.png" alt-text="A header within a scorecard that restates the two levels of the hierarchy a user chose, Germany and Laptops.":::
 
-## Heatmap view
+### Heatmap view
 
 By selecting ‘heatmap’ from the view options, you can start to build a custom heatmap view that allows for side by side comparison of different hierarchy levels.  This experience is exposed in read mode, so consumers can also do their own exploration using the pane, showing and comparing different segments, though saving and sharing views are not yet supported.
 
@@ -116,23 +126,25 @@ You can also customize what information to show in each metric box by selecting 
 :::image type="content" source="media/get-started-hierarchies/hierarchies-heatmap-display-settings-entry-point.png" alt-text="A screenshot of a heatmap view display settings entry point.":::
 :::image type="content" source="media/get-started-hierarchies/hierarchies-heatmap-display-settings.png" alt-text="A screenshot of a heatmap view display settings.":::
 
-## Additional considerations for viewing a heirarchy
--	Premium or PPU workspace required
+### Additional considerations for viewing a hierarchy
+
+-	Premium or PPU workspace is required.
 -	There are data limits on hierarchies:
-o	Up to 10000 items per hierarchy (across all datasets)
-o	Up to 5 hierarchies
-o	Up to 5 levels per hierarchy
--	Permissions cannot be set at a hierarchy level – metric level permissions are set at the scorecard and applied to all hierarchy views
+
+    - Up to 10000 items per hierarchy (across all datasets)
+    - Up to five hierarchies
+    - Up to five levels per hierarchy
+
+-	Permissions can't be set at a hierarchy level – metric level permissions are set at the scorecard and applied to all hierarchy views
 -	Data connections will be evaluated by impersonating the hierarchy owner/creator where RLS may apply.  This does not change metric level permissions. 
 -	Dynamic and static RLS is supported but it is routed through the hierarchy creator.  All scorecard viewers will impersonate the hierarchy creator’s access
--	Hierarchy permissions cannot be set at a specific hierarchy level, metric level permissions (which are inherited from the original scorecard and are applied at all levels) and RLS via the hierarchy creator dictate permissions
+-	Hierarchy permissions can't be set at a specific hierarchy level, metric level permissions (which are inherited from the original scorecard and are applied at all levels) and RLS via the hierarchy creator dictate permissions
 -	Non-admin users may experience refresh issues when setting up hierarchies on top of a dataset with dynamic RLS
 -	Manual metrics will be indicated by an information icon showing which values are manual for that metric
 -	Notifications regarding status changes on child scorecard levels will not be triggered 
 -	There is a limit of one selection per hierarchy for viewing a hierarchical scorecard
 -	History for hierarchical metrics is not supported because data is always queried live from the dataset, instead of cached when the dataset refreshes 
 -	Saving / sharing heatmap views is not yet supported
-
 
 ## Scenarios: when to use hierarchies
 
