@@ -28,7 +28,7 @@ Follow the steps in this article to configure credentials programmatically for P
     var datasource = datasources.First();
     ```
 
-2. Build the credentials string according to the [Update Datasource Examples](/rest/api/power-bi/gateways/updatedatasource#examples). The type of build depends on the type of credentials.
+2. Build the credentials string according to the [Update Datasource Examples](/rest/api/power-bi/gateways/updatedatasource#examples). The contents of the credentials string depends on the type of credentials.
 
     # [.NET SDK v3](#tab/sdk3)
 
@@ -116,7 +116,7 @@ Follow the steps in this article to configure credentials programmatically for P
     var gateway = gateways.First();
     ```
 
-3. Build credential details in the method that is described in the [update credentials flow for data sources](#update-the-credentials-flow-for-data-sources) section by using the gateway public key that you retrieved in **step 2**.
+3. Build credential details by following the procedure that is described in the [update credentials flow for data sources](#update-the-credentials-flow-for-data-sources) section by using the gateway public key that you retrieved in **step 2**.
 
 4. Build the request body.
 
@@ -136,7 +136,7 @@ Follow the steps in this article to configure credentials programmatically for P
 
 ## Credential types
 
-When you call [Create Datasource](/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](/rest/api/power-bi/gateways/updatedatasource) from the Power BI REST API on an enterprise on-premises gateway, encrypt credentials by using the public key on the gateway.
+When you call [Create Datasource](/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](/rest/api/power-bi/gateways/updatedatasource) from the Power BI REST API on an enterprise on-premises gateway, encrypt the credentials value by using the gateway public key.
 
 >[!NOTE]
 >.NET SDK v3 can also run the following .NET SDK v2 examples.
