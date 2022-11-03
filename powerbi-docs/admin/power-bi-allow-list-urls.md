@@ -18,7 +18,7 @@ The Power BI service requires connectivity to the internet. The endpoints listed
 
 To use the Power BI service, you must be able to connect to the endpoints marked **required** in the tables in this article, and to any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
-You can also add endpoints that are marked **optional** to allowlists to allowlists for specific functionality to work.
+You can also add endpoints that are marked **optional** to allowlists for specific functionality to work.
 
 The Power BI service requires only TCP Port 443 to be opened for the listed endpoints.
 
