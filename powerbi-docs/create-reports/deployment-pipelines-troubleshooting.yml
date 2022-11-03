@@ -280,8 +280,11 @@ sections:
       - question: |
           Why can't I see a paginated report?
         answer: |
-          To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
-          
+          To view a paginated report in the pipeline you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
+
+          >[!NOTE]
+          >You only need to enable this workload with Power BI Premium Gen1 capacities.
+
       - question: |
           Why can't I deploy a paginated report?
         answer: |

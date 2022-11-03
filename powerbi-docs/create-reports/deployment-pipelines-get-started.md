@@ -83,9 +83,6 @@ You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelin
 
 If you already have a workspace that you'd like to use with a specific stage, instead of deploying you can [assign](deployment-pipelines-assign.md) that workspace to the appropriate stage.
 
->[!NOTE]
->To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-).
-
 When deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
 
 Once the deployment is complete, refresh the dataset. For more information, see [deploying content to an empty stage](deployment-pipelines-process.md#deploying-content-to-an-empty-stage).
