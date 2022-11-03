@@ -18,7 +18,7 @@ This article describes how you can install, pin, and interact with Power BI dire
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-teams.png" alt-text="Screenshot of the Power BI app home page in Microsoft Teams showing the In Teams tab selected.":::
 
-With Power BI app in Microsoft Teams you can [collaborate with Power BI in Teams](service-collaborate-microsoft-teams.md). The app is your personal experience of Power BI. It's as if the Power BI service lives inside Microsoft Teams.  After you install it, you can enjoy almost all features that's offered by the Power BI service in Microsoft Teams.
+With Power BI app in Microsoft Teams, you can [collaborate with Power BI in Teams](service-collaborate-microsoft-teams.md). The app is your personal experience of Power BI. It's as if the Power BI service lives inside Microsoft Teams.  After you install it, you can enjoy almost all features that's offered by the Power BI service in Microsoft Teams.
 
 - Create, view, and edit dashboards, reports, and apps.
 - Create and participate in workspaces.
@@ -71,7 +71,7 @@ You can even share a report with your coworkers from the Power BI app in Microso
 
 The Power BI app in Microsoft Teams also features a hub for training. Select **Learn** to view the **Learning Center**.
 
-:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of the Learning center in Power BI app in Microsoft Teams showing the Learn tab is selected in both navigation pane and .":::
+:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of the Learning center in Power BI app in Microsoft Teams. Learn tab is selected in both Teams and Power BI navigation panes.":::
 
 ### Differences in interactions
 
@@ -83,7 +83,7 @@ A few interactions are different in the Teams app than they are in the browser
 
 - To open the report in the Power BI service instead of viewing it in Microsoft Teams, select **Open this on the web** icon next to the Close button.
 
-    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Screenshot of the Open this on the web button in Power BI app in Microsoft Teams.":::
+    :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-open-web.png" alt-text="Screenshot of the web button in Power BI app in Microsoft Teams.":::
 
 ## Search for Power BI content in Teams
 
@@ -131,7 +131,7 @@ Power BI end users might see a notification in the Power BI service notification
     - Availability of Settings such as managing personal storage and accessing the admin portal.
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within a report.
 - The Power BI app for Microsoft Teams is available for Commercial Cloud and US Government Community Cloud (GCC) customers.
-- Search experience is not available in US Government Community Cloud (GCC).
+- Search experience isn't available in US Government Community Cloud (GCC).
 
 ## Next steps
 
