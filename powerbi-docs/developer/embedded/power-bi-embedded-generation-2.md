@@ -62,8 +62,6 @@ Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Ins
 
 ## Considerations and limitations
 
-* Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](./embedded-capacity.md#embedded-gen-2-memory-enhancements)
-
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
 
 * Analysis services features in Embedded Gen2 are only supported on the latest client libraries. For more information see [Considerations and limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
