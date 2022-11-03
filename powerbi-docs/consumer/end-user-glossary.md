@@ -8,7 +8,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 09/09/2021
+ms.date: 11/03/2022
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -134,7 +134,7 @@ Free Power BI tool used primarily be report designers, admins, and developers.
 Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
 
 **Dimension**    
-Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.   
+Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.   
 
 **drill up, drill down, drillthrough**    
 In Power BI, "drill down" and "drill up" refer to the ability to explore the next level of detail in a report or visual. 
