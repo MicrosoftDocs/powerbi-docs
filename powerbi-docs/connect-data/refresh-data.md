@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/15/2022
+ms.date: 11/03/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -354,6 +354,12 @@ The warning icon helps to indicate current dataset issues, but it's also a good 
 Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedded-capacity.md).
 
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
+
+## Refresh cancellation
+
+Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or if you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to be a [Power BI admin](./../admin/service-admin-administering-power-bi-in-your-organization#administrator-roles-related-to-power-bi) on the capacity that runs the refresh.
+
+<UI instructions + screenshot>
 
 ## Best practices
 
