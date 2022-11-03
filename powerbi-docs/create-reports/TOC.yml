@@ -430,8 +430,8 @@
       href: service-goals-move.md
     - name: "Metrics and Power Automate"
       href: service-goals-power-automate.md
-    - name: "Create and add scorecards in reports"
-      href: power-bi-visualization-scorecard-visual.md 
+    - name: "Create and add scorecards to reports"
+      href: ../visuals/power-bi-visualization-scorecard-visual.md 
     - name: Hierarchies
       items: 
       - name: "Get started with hierarchies"
