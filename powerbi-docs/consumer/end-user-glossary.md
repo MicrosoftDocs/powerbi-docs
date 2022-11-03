@@ -301,7 +301,7 @@ Paginated reports are designed to be printed or shared. They're called *paginate
 The file extension for a Power BI custom visual.
 
 **pbix**    
-The file extension for a Power BI Desktop file.
+The file extension for a Power BI Desktop file (letters pronounced individually as /ˈpiː//ˈbiː//ˈaɪ//ˈɛks/).
 
 **permissions**    
 What a user can and can't do in Power BI is based on permissions. As a *consumer* you won't have the same permissions as a *designer*, administrator, or developer.
