@@ -20,7 +20,7 @@ ms.custom: references_regions
 
 If you require support for Gen2 or for any of the features listed in this article, use one of the other China regions, *China East*, *China East 2* or *China North 2*.
 
-To learn how to migrate your tenant to another region, see [Move between regions](../admin/service-admin-region-move.md).
+To learn how to migrate your tenant to another region, see [Move between regions](../support/service-admin-region-move.md).
 
 ## Unsupported features
 

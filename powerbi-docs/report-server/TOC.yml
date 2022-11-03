@@ -54,8 +54,6 @@
       href: install-powerbi-desktop.md
     - name: Install Report Builder
       href: install-report-builder.md
-    - name: Publish reports to the Power BI service
-      href: report-server-migration-tool.md
     - name: Report server basics
       items: 
       - name: "Create a Power BI report for a report server"

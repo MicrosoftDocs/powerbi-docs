@@ -181,7 +181,7 @@ Your map visualization now looks like this:
 
 ### Change the visualization type
 
-You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union and Czechoslovakia, because those countries no longer exist on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values.
+You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union, because that country no longer exists on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values.
 
 To change the map to a pie chart, select the map and then select the **Pie chart** icon in the **Visualizations** pane.
 

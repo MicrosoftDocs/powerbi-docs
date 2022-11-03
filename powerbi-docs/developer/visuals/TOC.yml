@@ -29,6 +29,8 @@
       href: import-visual.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.yml
+    - name: "Examples of Power BI visuals"
+      href: samples.md
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"
@@ -64,12 +66,16 @@
       href: visuals-interactions.md
     - name: "Add selections"
       href: selection-api.md
-    - name: "Add visuals tooltips"
+    - name: "Visuals tooltips"
       href: add-tooltips.md
-    - name: "Add analytics pane" 
+    - name: "Analytics pane" 
       href: analytics-pane.md
+    - name: "Add format pane"
+      href: format-pane.md
     - name: "Filter visuals" 
       href: filter-api.md
+    - name: "Identity filter" 
+      href: identity-filter-api.md
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
@@ -152,6 +158,8 @@
         href: utils-interactivity-selections.md
       - name: "Formatting utils"
         href: utils-formatting.md
+      - name: "Formatting model utils"
+        href: utils-formatting-model.md
       - name: "Data view utils"
         href: utils-dataview.md
       - name: "Chart utils"
@@ -170,8 +178,6 @@
     items:
     - name: "Dev Center"
       href: https://powerbi.microsoft.com/developers/
-    - name: "Samples of Power BI visuals"
-      href: samples.md
     - name: "Custom Visuals Git Repo"
       href: https://github.com/PowerBi-Projects/PowerBI-visuals/
     - name: "Creating SSL certificate"

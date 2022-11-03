@@ -48,6 +48,8 @@
         href: composite-model-guidance.md   
       - name: "Row-level security (RLS) guidance"
         href: rls-guidance.md
+      - name: "Power Platform modeling guidance"
+        href: powerbi-modeling-guidance-for-power-platform.md
       - name: "Migrate AAS models to Power BI Premium"
         href: migrate-azure-analysis-services-to-powerbi-premium.md
       - name: "Migrate AAS models to Power BI Premium scenarios"
@@ -94,6 +96,10 @@
         href: report-paginated-blank-page.md
       - name: "Migrate SSRS reports to Power BI"
         href: migrate-ssrs-reports-to-power-bi.md
+    - name: Development
+      items:
+      - name: "Develop scalable multitenancy applications"
+        href: develop-scalable-multitenancy-apps-with-powerbi-embedding.md 
     - name: Admin and deployment
       items:
       - name: "On-premises data gateway sizing"

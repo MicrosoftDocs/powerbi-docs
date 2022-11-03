@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/13/2021
+ms.date: 10/20/2022
 LocalizationGroup: Transform and shape data
 ---
 # Perform common query tasks in Power BI Desktop
@@ -79,7 +79,7 @@ In Power Query Editor, you can group the values from many rows into a single val
 
 In this example, you group rows in an education enrollment dataset. The data is from the Excel workbook. It's been shaped in Power Query Editor to get just the columns you need, rename the table, and make a few other transforms.
 
-Let’s find out how many Agencies each state has. (Agencies can include school districts, other education agencies such as regional service districts, and more.) Select the **Agency ID - NCES Assigned \[District\] Latest available year** column, then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon. (**Group By** is available in both tabs.)
+Let’s find out how many Agencies each state has. (Agencies can include school districts, other education agencies such as regional service districts, and more.) Select the **State Abbr** column, then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon. (**Group By** is available in both tabs.)
 
 ![Screenshot shows how to group rows in a table.](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 

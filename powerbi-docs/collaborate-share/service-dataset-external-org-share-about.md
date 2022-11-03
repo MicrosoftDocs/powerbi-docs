@@ -46,13 +46,18 @@ This article provides a basic introduction to in-place dataset sharing in Power 
 
 - All DirectQuery limitations apply. For more information, see [Use DirectQuery in Power BI Desktop](../connect-data/desktop-use-directquery.md#considerations-and-limitations).
 
+- In-place dataset sharing is not supported for cross-sovereign cloud scenarios. This means that users in a government cloud cannot share or receive shared datasets from a commercial cloud tenants. Read more on cross-cloud B2B limitations in [Cross-cloud B2B](../enterprise/service-admin-azure-ad-b2b.md#cross-cloud-b2b).
+
 ## Requirements
 
 - You'll need to enable access for external guest users with Azure AD B2B. For more information, see the enable access section of [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md#enable-access).
 
-- The following tenant setting requirements for existing B2B capabilities need to be enabled: 
-    - Allow Azure Active Directory guest users to access Power BI 
-    - Allow XMLA endpoints and analyze in Excel with on-premises datasets 
+- If the provider tenant is MFA enabled, the consumer tenant needs to also be MFA enabled to access the **External Data** tab in their Power BI desktop. Additionally, the provider tenant needs to turn on the **Trust multi-factor authentication from Azure AD tenants** option. Read [To change inbound trust settings for MFA and device claims](https://learn.microsoft.com/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration#to-change-inbound-trust-settings-for-mfa-and-device-claims) for more information.
+
+- The following tenant settings across workspaces and existing B2B capabilities need to be enabled: 
+    - [Control the use of datasets across workspaces](../connect-data/service-datasets-admin-across-workspaces.md)
+    - [Allow Azure Active Directory guest users to access Power BI](../guidance/whitepaper-azure-b2b-power-bi.md) 
+    - [Allow XMLA endpoints and analyze in Excel with on-premises datasets](../enterprise/service-premium-connect-tools.md) 
 
 - For using in-place dataset sharing, Power BI admins will need to turn on the following settings in the admin portal: 
     - **Allow guest users to work with shared datasets in their own tenants**

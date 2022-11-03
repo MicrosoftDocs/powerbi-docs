@@ -1,13 +1,13 @@
 ---
-title: Power BI visuals samples
+title: Examples of Power BI visuals
 description: This article presents examples of Power BI visuals that can be found in GitHub, including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
-ms.date: 08/07/2022
+ms.topic: conceptual
+ms.date: 10/13/2022
 ---
 
 # Examples of Power BI visuals
@@ -80,5 +80,5 @@ These examples demonstrate how to harness the analytic and visual power of R vis
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Develop a Power BI circle card visual](develop-circle-card.md)
+* [Import a Power BI visual](./import-visual.md)
+* [Develop your own Power BI custom visual](./develop-circle-card.md)

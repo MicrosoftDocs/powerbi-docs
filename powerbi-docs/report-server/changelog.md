@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/28/2022
+ms.date: 11/2/2022
 ---
 
 # Change log for Power BI Report Server
@@ -31,17 +31,19 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             -  Fixed issue with a date picker pop-up and dropdown list for parameters were disappearing.
             -  Fixed decoding of + sign to a space in RDL URL parameters.
             -  Fixed multiple issues with multi-value and multiselect parameters in RDL Parameters tab.
-        - Deprecated features
+        - [Deprecated features](/sql/reporting-services/deprecated-features-in-sql-server-reporting-services-ssrs)
+            -  Report Parts support deprecated
+        - [Discontinued features](/sql/reporting-services/discontinued-functionality-to-sql-server-reporting-services-in-sql-server)
             -  Mobile Reports functionality discontinued
-            -  Pin2PowerBI functionality discontinued
-            -  Report Parts support discontinued
+            -  Pin to PowerBI functionality discontinued
             
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.109.1021.0 (September 2022), Released: October 4, 2022*
+        - Performance fix for open and save of PBIX files with large number of queries.
    - *Version: 2.109.801.0 (September 2022), Released: September 26, 2022*
         - Support for September 2022 Power BI Report Server
         - Bug fixes
-   - *Version: 2.109.1021.0 (September 2022), Released: October 4, 2022*
-        - Performance fix for open and save of PBIX files with large number of queries.
+
            
 ## May 2022
 - **Power BI Report Server**
