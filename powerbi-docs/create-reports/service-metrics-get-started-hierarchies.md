@@ -21,9 +21,9 @@ Power BI will cascade connected metric values to each level of the hierarchy. Us
 
 :::image type="content" source="media/get-started-hierarchies/hierarchies-scorecard-overview.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer.":::
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scorecard-overview2.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scorecard-overview2.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer and filters applied on the scorecard.":::
 
-# Set up your hierarchy
+## Set up your hierarchy
 
 To set up a hierarchical scorecard, there are a few requirements:
 1.	Hierarchies require a premium or premium per user workspace
@@ -33,8 +33,8 @@ To set up a hierarchical scorecard, there are a few requirements:
 
 In edit mode, select manage hierarchies from the “all” slicer, or select ‘set up a hierarchy’ from the <b>+ New menu.</b>
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-entry-point-1.png" alt-text="First entry point in hierarchy slicer.":::
-:::image type="content" source="media/get-started-hierarchies/hierarchies-entry-point-2.png" alt-text="Other entry point in +New menu.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-entry-point1.png" alt-text="First entry point in hierarchy slicer.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-entry-point2.png" alt-text="Other entry point in +New menu.":::
 
 ## Map hierarchy levels to data
 
@@ -89,7 +89,7 @@ o	Up to 5 levels per hierarchy
 
 
 
-# Viewing your heirarchy
+## Viewing your heirarchy
 
 ## Scorecard list view
 To view your hierarchical scorecard, you can use the slicer to navigate to whichever level of your hierarchy you want to view.  From here you can do things like open the details pane, go to a report, and perform check-ins, just like any other scorecard view. 
@@ -109,7 +109,7 @@ You can view intersections of multiple hierarchies.  For example, you can look a
 
 By selecting ‘heatmap’ from the view options, you can start to build a custom heatmap view that allows for side by side comparison of different hierarchy levels.  This experience is exposed in read mode, so consumers can also do their own exploration using the pane, showing and comparing different segments, though saving and sharing views are not yet supported.
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-heatmap-view.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-heatmap-view.png" alt-text="A screenshot of a heatmap view of a hierarchical scorecard.":::
 
 You can also customize what information to show in each metric box by selecting the slicer dropdown and then selecting open display settings. Here you can see your display options to curate your view.  This is a great view to use in business reviews.
 
@@ -134,7 +134,7 @@ o	Up to 5 levels per hierarchy
 -	Saving / sharing heatmap views is not yet supported
 
 
-# Scenarios: when to use hierarchies
+## Scenarios: when to use hierarchies
 
 This is a big feature, and you may be wondering where to get started or how you can use this in your organization.  To help you along, we’ve compiled a few useful scenarios where cascading scorecards provide an elegant, large-scale, and most importantly efficient solution.  They may help inspire you.
 
@@ -142,19 +142,19 @@ This is a big feature, and you may be wondering where to get started or how you 
 Cascading scorecards are great tools for standardized metrics across many different segments in an organization.  In this scenario, it’s made it easy to track the health of an organization by measuring employee engagement, satisfaction, and hiring goals – metrics that are often mapped across an entire company. This scorecard below allows senior leadership to see how each division within the organization is measuring against standard metrics like attrition rates, compliance trainings, employee satisfaction, and diverse and inclusive hiring goals.
 This scorecard becomes not only an artifact for metric tracking, but an integral tool for decision making at high level of an organization to improve company culture and overall organizational health.
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 1 above.":::
 
 ## Scenario 2: Retail metrics across locations and product areas
 For retail scenarios, it’s often useful to create two hierarchies and use the slicer to view cross sections between them.  Here, a retail organization has set up a scorecard that has a geography and a product hierarchy, so they can look at their standard metrics by product, location, or a combination of both.  Here they are looking at laptop metrics in Germany.  They could even dive deeper and look at specific laptop models in Berlin.
 This view is helpful because the owners can be mapped as part of the hierarchy as well, ensuring that each retail locations’ metrics are being owned and managed by the appropriate branch manager.
 Check-ins can be performed at any intersection of the hierarchies, ensuring that all integral areas of the business are tracked and updated accordingly.  In this case, the same scorecard can be used at every branch location to increase metric performance, driving a data culture at all levels of the company.
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-2-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard.":::
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-2-2.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-2-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 2 above.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-2-2.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 2 above, showing both hierarchies selected.":::
 
 ## Scenario 3: Organizational hierarchies
 We often see senior leadership use scorecards driven by organizational hierarchies. There are a set of metrics that the company tracks along an organizational hierarchy – in many cases, compliance metrics.  Each person’s team is required to meet these standards, and leadership needs a fast and easy way to see the overall numbers and break them down according to the org hierarchy to see whose team is performing well, and who is behind.
 This scorecard uses the organizational hierarchy as the scorecard hierarchy, so that all metrics can be broken down by the accountable person.  The heatmap view is also very useful in this scenario as it allows you to get a deeper, side by side glance of whose team is red and whose is green, and identify specific teams that need to increase compliance performance.  The heatmap view of organizational scorecards drives alignment and clarity at every level of the business.
 
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-3-1.png" alt-text="A screenshot of a heatmap view of a heatmap view of a scorecard.":::
-:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-3-2.png" alt-text="A screenshot of a heatmap view of a heatmap view of a scorecard.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-3-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 3 above.":::
+:::image type="content" source="media/get-started-hierarchies/hierarchies-scenario-3-2.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 3 above, showing the heatmap customization.":::
