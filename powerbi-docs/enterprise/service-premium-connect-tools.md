@@ -184,22 +184,27 @@ Users with Build dataset permissions are equivalent to Analysis Services databas
 
 Operations that require Analysis Services server admin permissions (rather than database admin) in general are not supported.
 
-User impersonation by using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property is supported when connecting to Premium workspaces. The account specified in EffectiveUserName must exist in the tenant's Azure Active Directory and must have both **Read** and **Build** permissions for the dataset being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail and an error is returned.
+### Impersonation
 
-You can also perform impersonation by specifying one or more workspace roles in the Roles connection string property. If the user performing impersonation is a workspace admin, that user doesn't need to be a member of the specified roles. If the user performing impersonation is not a workspace admin, that user must belong to one or more specified roles, otherwise an error is returned.
+User impersonation by using the [EffectiveUserName connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth)  is supported when connecting to Premium workspace datasets. The account specified in EffectiveUserName must exist in the tenant's Azure Active Directory and must have both **Read** and **Build** permissions for the dataset being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail and an error is returned.
+
+You can also perform impersonation by specifying one or more workspace roles in the [Roles connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#roles). With the Roles property, you can test downgrading role members with Write permissions to Read permissions. The following Role permissions apply depending on the account of the user signed in:
+
+- If the user performing impersonation *is* a workspace admin, which is effectively the same as a server admin in Analysis Services, they do not need to be a member of any of the specified roles.
+
+- If the user performing impersonation  *is not* a workspace admin, they must belong to one or more of the specified roles, otherwise a user not found or no permissions type error is returned.
 
 ### Model roles
 
-With the XMLA endpoint, roles can be defined for a dataset, role membership can be defined for Azure Active Directory (Azure AD) users, and row-level security (RLS) filters can be defined. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
+With the XMLA endpoint, roles, role membership, row-level security (RLS), and object-level security (OLS) can be defined for users in the tenant's Azure Active Directory (AAD). Model roles in Power BI are used only for RLS and OLS. Use the Power BI security model to control permissions beyond RLS and OLS.
 
-For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined by using SSMS to create role objects and define role properties. In most cases, however, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
+For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined in Power BI Desktop prior to publishing to the service. Role membership is specified in the Power BI service. SSMS can also be used to create and manage roles. In most cases, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
 The following limitations apply when working with dataset roles through the XMLA endpoint:
 
-- The only permission for a *role* that can be set for datasets is Read permission. Other permissions are granted using the Power BI security model.
+- The only permission for a role that can be set for datasets is Read permission. Other permissions are granted using the Power BI security model.
 - Service Principals, which require workspace Member or Admin permissions cannot be added to roles.
 - Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles.
-- The "Roles=" connection string property can be used to test downgrading role members with Write permissions to Read permissions. The member account must still be a member of the relevant RLS role. This is different than using Impersonation with SQL Server Analysis Services or Azure Analysis Services where if the account is a server admin, the RLS role membership is assumed. For Premium workspaces, since there is no server admin, the account must belong to a role in order for RLS to be applied.
 
 ### Setting data source credentials
 
