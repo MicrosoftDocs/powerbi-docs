@@ -29,13 +29,13 @@ For **Embed report in SharePoint Online** reports to work:
     > There's no free license for organizations in Power BI National clouds. In this environment, a Power BI Pro or Premium Per User (PPU) license is required to access to the embedded report in SharePoint.
 
 ## Embed your report
-To embed your report into SharePoint Online, you'll need to get the report URL and use it with SharePoint Online's Power BI web part.
+To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
 
 ### Get a report URL
 
 1. Open a report in the Power BI service.
 
-2. On the **File** menu, select **Embed report**, and then select **SharePoint Online**.
+2. On the **File** menu, select **Embed report** > **SharePoint Online**.
 
     ![Screenshot showing More options menu with SharePoint Online highlighted.](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 
@@ -74,7 +74,7 @@ To embed your report into SharePoint Online, you'll need to get the report URL a
 Embedding a report in SharePoint Online doesn't automatically give users permission to view the report - you need to set view permissions in Power BI.
 
 > [!IMPORTANT]
-> Make sure to review who can see the report within the Power BI service, and grant access to those that are not listed.
+> Make sure to review who can see the report within the Power BI service, and grant access to those that aren't listed.
 
 There are two ways to provide report access in Power BI. 
 
@@ -111,14 +111,14 @@ Now the end user can go to the team site in SharePoint Online and view the repor
 
 ## Multi-factor authentication
 
-If your Power BI environment requires you to sign in using multi-factor authentication, you might be asked to sign in with a security device to verify your identity. This can occurs if you didn't sign in to SharePoint Online using multi-factor authentication. Your Power BI environment requires a security device to validate an account.
+If your Power BI environment requires you to sign in using multi-factor authentication, you might be asked to sign in with a security device to verify your identity. This can occur if you didn't sign in to SharePoint Online using multi-factor authentication. Your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Power BI doesn't support multi-factor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they will be able to view the report.
+> Power BI doesn't support multi-factor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Web part settings
 
-The settings you can adjust for the Power BI web part for SharePoint Online:  
+Here are the settings you can adjust for the Power BI web part for SharePoint Online:  
 
 ![Screenshot of the SharePoint new web part properties dialog with the Power BI report link highlighted.](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
 
@@ -150,7 +150,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
 
 * Error: "An error occurred, try logging out and back in and then revisiting this page. Correlation ID: undefined, http response status: 400, server error code 10001, message: Missing refresh token"
   
-  If you receive this error, try one of the following to troubleshoot:
+  If you receive this error, try one of the following steps to troubleshoot:
   
   1. Sign out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
