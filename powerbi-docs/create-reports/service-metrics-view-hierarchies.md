@@ -40,7 +40,7 @@ Here the header within a scorecard restates the two levels of the hierarchy that
 
 ## Heatmap view
 
-By selecting ‘heatmap’ from the view options, you can start to build a custom heatmap view that allows for side by side comparison of different hierarchy levels.  This experience is exposed in read mode, so consumers can also do their own exploration using the pane, showing and comparing different segments, though saving and sharing views are not yet supported.
+By selecting **Heatmap** from the view options, you can start to build a custom heatmap view that allows side by side comparison of different hierarchy levels.  This experience is exposed in read mode, so consumers can also do their own exploration using the pane, showing and comparing different segments, though saving and sharing views aren't yet supported.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-view.png" alt-text="A screenshot of a heatmap view of a hierarchical scorecard." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-view.png":::
 
@@ -62,15 +62,15 @@ Customize the heatmap view in the **Display settings** dialog box.
   - Up to five levels per hierarchy
 
 - Permissions can't be set at a hierarchy level – metric level permissions are set at the scorecard and applied to all hierarchy views.
-- Data connections will be evaluated by impersonating the hierarchy owner/creator where RLS may apply.  This does not change metric level permissions.
-- Dynamic and static RLS is supported but it is routed through the hierarchy creator.  All scorecard viewers will impersonate the hierarchy creator’s access.
-- Hierarchy permissions can't be set at a specific hierarchy level, metric level permissions (which are inherited from the original scorecard and are applied at all levels) and RLS via the hierarchy creator dictate permissions.
-- Non-admin users may experience refresh issues when setting up hierarchies on top of a dataset with dynamic RLS.
-- Manual metrics will be indicated by an information icon showing which values are manual for that metric.
-- Notifications regarding status changes on child scorecard levels will not be triggered. 
+- Data connections are evaluated by impersonating the hierarchy owner/creator where row-level security (RLS) may apply.  This does not change metric level permissions.
+- Dynamic and static RLS is supported but it is routed through the hierarchy creator.  All scorecard viewers impersonate the hierarchy creator’s access.
+- Hierarchy permissions can't be set at a specific hierarchy level. Metric level permissions are inherited from the original scorecard and are applied at all levels, and RLS via the hierarchy creator dictate permissions.
+- Non-admin users may experience refresh issues when setting up hierarchies on a dataset with dynamic RLS.
+- Manual metrics are indicated by an information icon showing which values are manual for that metric.
+- Notifications regarding status changes on child scorecard levels aren't triggered. 
 - There is a limit of one selection per hierarchy for viewing a hierarchical scorecard.
-- History for hierarchical metrics is not supported because data is always queried live from the dataset, instead of cached when the dataset refreshes.
-- Saving / sharing heatmap views is not yet supported.
+- History for hierarchical metrics isn't supported because data is always queried live from the dataset, instead of cached when the dataset refreshes.
+- Saving and sharing heatmap views isn't yet supported.
 
 ## Next steps
 

@@ -23,8 +23,9 @@ Metrics support cascading scorecards that roll up along hierarchies you set up i
 
 ## Scenario 1: Measuring organizational health across teams
 
-Cascading scorecards are great tools for standardized metrics across many different segments in an organization.  In this scenario, it’s made it easy to track the health of an organization by measuring employee engagement, satisfaction, and hiring goals – metrics that are often mapped across an entire company. This scorecard below allows senior leadership to see how each division within the organization is measuring against standard metrics like attrition rates, compliance trainings, employee satisfaction, and diverse and inclusive hiring goals.
-This scorecard becomes not only an artifact for metric tracking, but an integral tool for decision making at high level of an organization to improve company culture and overall organizational health.
+Cascading scorecards are great tools for standardized metrics across many different segments in an organization.  In this scenario, it’s easy to track the health of an organization by measuring employee engagement, satisfaction, and hiring goals – metrics that are often mapped across an entire company. This scorecard below allows senior leadership to see how each division within the organization is measuring against standard metrics like attrition rates, compliance trainings, employee satisfaction, and diverse and inclusive hiring goals.
+
+This scorecard becomes not only an artifact for metric tracking, but an integral tool for decision making at a high level of an organization to improve company culture and overall organizational health.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-1-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 1 above." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-1-1.png":::
 
@@ -36,16 +37,17 @@ This view is helpful because the owners can be mapped as part of the hierarchy a
 
 Check-ins can be performed at any intersection of the hierarchies, ensuring that all integral areas of the business are tracked and updated accordingly.  In this case, every branch location can use the same scorecard to increase metric performance, driving a data culture at all levels of the company.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 2 above." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-1.png":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-1.png" alt-text="A screenshot of a view of a hierarchy scorecard applying to the described scenario 2 above." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-1.png":::
 
-This heatmap view shows both hierarchies selected.
+This view shows both hierarchies selected.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-2.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 2 above, showing both hierarchies selected." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-2.png":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-2.png" alt-text="A screenshot of a view of a hierarchy scorecard applying to the described scenario 2 above, showing both hierarchies selected." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-2-2.png":::
 
 ## Scenario 3: Organizational hierarchies
 
 We often see senior leadership use scorecards driven by organizational hierarchies. There is a set of metrics that the company tracks along an organizational hierarchy – in many cases, compliance metrics.  Each person’s team is required to meet these standards, and leadership needs a fast and easy way to see the overall numbers and break them down according to the org hierarchy to see whose team is performing well, and who is behind.
-This scorecard uses the organizational hierarchy as the scorecard hierarchy, so that all metrics can be broken down by the accountable person.  The heatmap view is also very useful in this scenario as it allows you to get a deeper, side by side glance of whose team is red and whose is green, and identify specific teams that need to increase compliance performance.  The heatmap view of organizational scorecards drives alignment and clarity at every level of the business.
+
+This scorecard uses the organizational hierarchy as the scorecard hierarchy, so that all metrics can be broken down by the accountable person.  The heatmap view is also useful in this scenario. It allows you to get a deeper, side by side glance of whose team is red and whose is green, and identify specific teams that need to increase compliance performance.  The heatmap view of organizational scorecards drives alignment and clarity at every level of the business.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-3-1.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 3 above." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-3-1.png":::
 
