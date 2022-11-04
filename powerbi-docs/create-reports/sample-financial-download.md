@@ -19,7 +19,8 @@ You can directly download the [Financial Sample Excel workbook](https://go.micro
 
 ## Get the sample in Power BI Desktop
 
-- You can also download sample data from Power BI Desktop. Select **Try a sample dataset** from the **Add data to your report** screen.
+You can also download sample data from Power BI Desktop. 
+- Select **Try a sample dataset** from the **Add data to your report** screen.
 
 :::image type="content" source="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Power BI Desktop, highlighting Try a sample dataset.":::
 
