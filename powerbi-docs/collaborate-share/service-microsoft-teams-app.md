@@ -24,7 +24,7 @@ With the Power BI app in Microsoft Teams, you can [collaborate with Power BI in 
 - Create and participate in workspaces.
 - Share content, either through email or through Microsoft Teams.
 
-Also, there's a feature in the Power BI app in Teams that you don't see when you view the Power BI service (https://powerbi.microsoft.com) in a web browser. On the Power BI home page in Teams, you can [see all the Power BI tabs you've viewed](service-teams-pivot.md) in Teams.
+Also, there's a feature in the Power BI app in Teams that you don't see when you view the Power BI service (app.powerbi.com) in a web browser. On the Power BI home page in Teams, you can [see all the Power BI tabs you've viewed](service-teams-pivot.md) in Teams.
 
 There are a few features that you can access only in the Power BI service in a browser. For details, see the [Known issues and limitations](#known-issues-and-limitations) section of this article.
 
@@ -45,7 +45,7 @@ Ensure the following elements are in place to install the Power BI app in Micros
 
 ## Install the Power BI app
 
-Select the **More added apps (...)** in the left navigation bar, and then search for and select **Power BI**.
+Select **More added apps (...)** in the left navigation bar, and then search for and select **Power BI**.
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-app.png" alt-text="Screenshot of the Teams page with More added apps menu selected. Power BI is entered in the search bar and selected from the apps list.":::
 
@@ -73,7 +73,7 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 
 ### Differences in interactions
 
-A few interactions are different in the Teams app than they are in the browse.
+A few interactions are different in the Teams app than they are in the browser.
 
 - When you look at a dashboard or report, you don't see the Power BI navigation pane. To access the navigation pane, select **Close** to go back to Home or the workspace.
 
