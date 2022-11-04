@@ -55,7 +55,7 @@ That's it! The Power BI app is installed in Microsoft Teams.
 
 To keep the app available in Teams, pin it to the Teams navigation pane. Right-click the Power BI icon in the Teams navigation pane, and select **Pin**.
 
-    :::image type="content" source="media/service-microsoft-teams-app/service-teams-pin-app.png" alt-text="Screenshot of the Teams navigation pane. The Power BI icon is right-clicked and the pin option is selected.":::
+:::image type="content" source="media/service-microsoft-teams-app/service-teams-pin-app.png" alt-text="Screenshot of the Teams navigation pane. The Power BI icon is right-clicked and the pin option is selected.":::
 
 That's it. Now you can view your Power BI content in Teams whenever you want.
 
