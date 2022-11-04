@@ -11,7 +11,7 @@ ms.date: 11/04/2022
 LocalizationGroup: Samples
 ---
 # Download the Financial Sample Excel workbook for Power BI
-Need data to use to practice with the Power BI service? We have a simple Excel workbook with sample financial data. This workbook has a sample table of sales and profit data sorted by market segment and country.
+Do you need data to try with the Power BI service? You can use the following simple Excel workbook with sample financial data. This workbook has a sample table of sales and profit data sorted by market segment and country.
 
 ## Download it directly
 
@@ -21,7 +21,7 @@ You can directly download the [Financial Sample Excel workbook](https://go.micro
 
 You can also download sample data from Power BI Desktop. Select **Try a sample dataset** from the yellow welcome screen or from the blank canvas.
 
-:::image type="content" source="media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample dataset on the canvas.":::
+[![Screenshot of Power BI Desktop, highlighting Try a sample dataset.](media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png)](media/sample-financial-download/power-bi-desktop-canvas-sample-dataset.png#lightbox)
 
 If you've landed on this tutorial from the sample dataset dialog box, choose **Load sample data**.
 
