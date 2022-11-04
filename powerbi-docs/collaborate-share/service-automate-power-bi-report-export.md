@@ -32,7 +32,7 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
 2. Select **Create** > **Scheduled cloud flow**. 
 
-    :::image type="content" source="media/service-automate-power-bi-report-export/schedule-a-cloud-flow.png" alt-text="Screenshot showing the Power BI create window and scheduled cloud flow is highlighted." lightbox="media/service-automate-power-bi-report-export/schedule-a-cloud-flow.png":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/schedule-a-cloud-flow-1.png" alt-text="Screenshot showing the Power BI create window and scheduled cloud flow is highlighted." lightbox="media/service-automate-power-bi-report-export/schedule-a-cloud-flow-1.png":::
 
 3. In **Build a scheduled flow**, give your flow a name. 
 4. In **Run this flow**, select the starting date and time for your flow and the repetition frequency.
