@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 With *Add Column From Examples* in Power Query Editor, you can add new columns to your data model by providing one or more example values for the new columns. You can create the new column examples from a selection or provide input based on all existing columns in the table.
 
-[![Screenshot of Power Query Editor, showing how to add a column from examples in Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)](media/desktop-add-column-from-example/add-column-from-example_01.png)
+[![Screenshot of Power Query Editor, showing how to add a column from examples in Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)](media/desktop-add-column-from-example/add-column-from-example_01.png#lightbox)
 
 Use Add Column From Examples to create new columns quickly and easily in the following situations:
 
@@ -47,17 +47,17 @@ To get sample data from Wikipedia, select **Get Data** > **Web** from the **Home
 ![Screenshot of Power Query Editor, highlighting Add Column, Column From Examples, and From All Columns.](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
 ## Add Column From Examples pane
-When you select **Add Column** > **From Examples**, the **Add Column From Examples** pane opens at the top of the table. The new **Column 1** appears to the right of the existing columns. You may need to scroll to see all of the columns. When you enter your example values in the blank cells of **Column 1**, Power BI creates rules and transformations to match your examples and uses them to fill the rest of the column.
+When you select **Add Column** > **From Examples**, the **Add Column From Examples** pane opens at the top of the table. The new **Column 1** appears to the right of the existing columns. You might need to scroll to see all of the columns. When you enter your example values in the blank cells of **Column 1**, Power BI creates rules and transformations to match your examples and uses them to fill the rest of the column.
 
 Notice that **Column From Examples** also appears as an **Applied Step** in the **Query Settings** pane. As always, Power Query Editor records your transformation steps and applies them to the query in order.
 
-[![Screenshot of Add Column From Examples window, highlighting a new, empty column.](media/desktop-add-column-from-example/add-column-from-example_04.png)](media/desktop-add-column-from-example/add-column-from-example_04.png)
+[![Screenshot of Add Column From Examples window, highlighting a new, empty column.](media/desktop-add-column-from-example/add-column-from-example_04.png)](media/desktop-add-column-from-example/add-column-from-example_04.png#lightbox)
 
 As you type your example in the new column, Power BI shows a preview of the rest of the column, based on the transformations it creates. For example, if you type *Alabama* in the first row, it corresponds to the **Alabama** value in the first column of the table. When you press **Enter**, Power BI fills in the rest of the new column based on the first column value, and names the column **Name & postal abbreviation[12] - Copy**.
 
 Now go to the **Massachusetts[E]** row of the new column and delete the **[E]** portion of the string. Power BI detects the change and uses the example to create a transformation. Power BI describes the transformations in the **Add Column From Examples** pane, and renames the column to **Text Before Delimiter.**
 
-[![Screenshot of Add Column From Examples window, highlighting Massachusetts in the Text Before Delimiter column.](media/desktop-add-column-from-example/add-column-from-example_06.png)](media/desktop-add-column-from-example/add-column-from-example_06.png)
+[![Screenshot of Add Column From Examples window, highlighting Massachusetts in the Text Before Delimiter column.](media/desktop-add-column-from-example/add-column-from-example_06.png)](media/desktop-add-column-from-example/add-column-from-example_06.png#lightbox)
 
 As you continue to provide examples, Power Query Editor adds to the transformations. When you're satisfied, select **OK** to commit your changes.
 
