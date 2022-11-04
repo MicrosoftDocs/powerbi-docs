@@ -15,10 +15,10 @@ ms.custom: intro-get-started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics supports cascading scorecards that roll up along hierarchies you set up in your scorecard. You can set up a hierarchy for a scorecard and map the Power BI datasets referenced by your metrics to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data. That’s potentially thousands of automated scorecard views with just a few clicks.
+Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. You can set up a hierarchy for a scorecard and map the Power BI datasets referenced by your metrics to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data. That’s potentially thousands of automated scorecard views with just a few clicks.
 Power BI will cascade connected metric values to each level of the hierarchy. Users can easily drill into the hierarchy to see progress, statuses and do check-ins at different levels. In the images below, you can see the different levels of a project hierarchy in the slicer, and as you navigate to each level or sublevel of the hierarchy, your metric values, statuses, owners, and progress will change along with it.
 
-This scorecard is set up with a hierarchy, and the the filter is open exposing the hierarchy slicer.
+This scorecard is set up with a hierarchy, and the filter is open exposing the hierarchy slicer.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview.png":::
 
@@ -55,7 +55,7 @@ In the setup experience you will see all the datasets that are connected to metr
 
 Map the data in your underlying datasets to your hierarchy levels.  If there are fields you don’t want to bring into the mapping, you can deselect them using the checkboxes in the fields list.  
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-map-datasets2.png" alt-text="Screenshot of UI showing how users can map hierarchy levels ti connected datasets.":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-map-datasets2.png" alt-text="Screenshot of UI showing how users can map hierarchy levels to connected datasets.":::
 
 As you map your datasets to the corresponding data in each hierarchy level, you’ll see a preview on the right-hand pane to double check you’re on the right track.
 
@@ -69,7 +69,7 @@ There is also an option in the upper right to view related metrics, showing an o
 
 You can map owners in the ‘assign owners’ section so the owner column dynamically changes with each slice of the data.  Owners are mapped per hierarchy, so for an owner mapping to work correctly, there needs to be a relationship between the owner field and the hierarchy data in the underlying datasets. Owner mappings will apply per hierarchy level, not per metric.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-map-owner.png" alt-text="Screenshot of the UI showing how you can assign owners from data..":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-map-owner.png" alt-text="Screenshot of the UI showing how you can assign owners from data.":::
 
 Save your hierarchy and watch as all the connected values and owners dynamically change.  Hierarchies support manual metrics (metrics not connected to data) as well – manual metrics will show up on child scorecards but will show manual values as blank.  These can be checked-in and updated on the child scorecard views.
 

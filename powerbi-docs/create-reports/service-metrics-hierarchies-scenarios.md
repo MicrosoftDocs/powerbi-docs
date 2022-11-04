@@ -15,11 +15,11 @@ ms.custom: intro-get-started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics supports cascading scorecards that roll up along hierarchies you set up in your scorecard. Hierarchies are a big feature, and you may be wondering where to get started or how to use it in your organization.  To help you, we’ve compiled a few useful scenarios where cascading scorecards provide an elegant, large-scale, and most importantly efficient solution.  They may help inspire you. Here are the three scenarios:
+Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. Hierarchies are a big feature, and you may be wondering where to get started or how to use it in your organization.  To help you, we’ve compiled a few useful scenarios where cascading scorecards provide an elegant, large-scale, and most importantly efficient solution.  They may help inspire you. Here are the three scenarios:
 
-Scenario 1: Measuring organizational health across teams
-Scenario 2: Retail metrics across locations and product areas
-Scenario 3: Organizational hierarchies
+- Scenario 1: [Measuring organizational health across teams](#scenario-1-measuring-organizational-health-across-teams)
+- Scenario 2: [Retail metrics across locations and product areas](#scenario-2-retail-metrics-across-locations-and-product-areas)
+- Scenario 3: [Organizational hierarchies](#scenario-3-organizational-hierarchies)
 
 ## Scenario 1: Measuring organizational health across teams
 
@@ -32,7 +32,7 @@ This scorecard becomes not only an artifact for metric tracking, but an integral
 
 For retail scenarios, it’s often useful to create two hierarchies and use the slicer to view cross sections between them.  Here, a retail organization has set up a scorecard that has a geography and a product hierarchy, so they can look at their standard metrics by product, location, or a combination of both.  Here they are looking at laptop metrics in Germany.  They could even dive deeper and look at specific laptop models in Berlin.
 
-This view is helpful because the owners can be mapped as part of the hierarchy as well, ensuring that the appropriate branch manager owns and managers each retail locations’ metrics.
+This view is helpful because the owners can be mapped as part of the hierarchy as well, ensuring that the appropriate branch manager owns and manages metrics for each retail location.
 
 Check-ins can be performed at any intersection of the hierarchies, ensuring that all integral areas of the business are tracked and updated accordingly.  In this case, every branch location can use the same scorecard to increase metric performance, driving a data culture at all levels of the company.
 

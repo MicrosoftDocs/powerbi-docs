@@ -15,10 +15,10 @@ ms.custom: intro-get-started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics supports cascading scorecards that roll up along hierarchies you set up in your scorecard. You can view and interact with hierarchies in scorecards two different ways.
+Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. You can view and interact with hierarchies in scorecards two different ways.
 
-- Scorecard list view
-- Heatmap view
+- [Scorecard list view](#scorecard-list-view)
+- [Heatmap view](#heatmap-view)
 
 ## Scorecard list view
 
@@ -44,10 +44,13 @@ By selecting ‘heatmap’ from the view options, you can start to build a custo
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-view.png" alt-text="A screenshot of a heatmap view of a hierarchical scorecard." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-view.png":::
 
-You can also customize what information to show in each metric box by selecting the slicer dropdown and then selecting open display settings. Here you can see your display options to curate your view.  This is a great view to use in business reviews.
+You can also customize what information to show in each metric box by selecting the slicer dropdown, then selecting **Open display settings**.  This is a great view to use in business reviews.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-display-settings-entry-point.png" alt-text="A screenshot of a heatmap view display settings entry point.":::
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-display-settings.png" alt-text="A screenshot of a heatmap view display settings.":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-display-settings-entry-point.png" alt-text="A screenshot of heatmap view display settings entry point.":::
+
+Customize the heatmap view in the **Display settings** dialog box. 
+
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-heatmap-display-settings.png" alt-text="A screenshot of heatmap view display settings.":::
 
 ## Additional considerations for viewing a hierarchy
 
