@@ -16,9 +16,18 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## October 2022 QFE 1
+
+*Version: 2.110.1085.0, Released: November 3, 2022*
+
+Bug fixes/improvements:
+* Fix for Formula bar in model view: customers won't get an error message when deleting a table with selected DAX expression in Formula bar.
+* Fix for Formula bar in model view: customers can now edit DAX expression that contain special Japanese symbols.
+* Fix for Proxy models regression: customers can now rename fields after converting Live connect model to a local model.
+
 ## September 2022 QFE 3
 
-Version: 2.109.1021.0, Released: October 4, 2022
+*Version: 2.109.1021.0, Released: October 4, 2022*
 
 Bug fixes/improvements:
 * Performance regression fix: customers will now see faster performance when they open and save .pbix files that have a large number of queries.
