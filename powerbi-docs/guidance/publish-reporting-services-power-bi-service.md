@@ -116,10 +116,12 @@ You can only migrate .rdl reports from your SSRS servers to the Power BI service
 
 Some paginated report features in SSRS aren't yet supported in the Power BI service. Paginated reports don't support the following items: 
 
-- Shared data sources 
-- Shared datasets 
+- Shared data sources<sup>1</sup>
+- Shared datasets<sup>1</sup>
 - Drill through and click-through to other reports 
 - Custom fonts 
+
+<sup>1</sup> The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) does automatically convert shared datasets and data sources, provided they're using supported datasets and data sources.
 
 You get an error message if you try to upload a file with features that are unsupported in the Power BI service.  
 
