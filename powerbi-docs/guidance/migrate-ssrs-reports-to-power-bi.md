@@ -151,12 +151,11 @@ Anyone with permission to access to the SSRS instance and the Power BI workspace
 
 ### Automated migration
 
-There are two options for automated migration. You can use:
+There are three options for automated migration. You can use:
 
-- The RDL Migration Tool
+- For SQL Server 2022, see [Publish .rdl files to Power BI from Reporting Services](publish-reporting-services-power-bi-service.md).
+- For previous versions, use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) in GitHub.
 - The publicly available APIs for SSRS and Power BI
-
-The [RDL Migration Tool](#migration-tool) has already been described in this article.
 
 You can also use the publicly available SSRS and Power BI APIs to automate the migration of your content. While the RDL Migration Tool already uses these APIs, you can develop a custom tool suited to your exact requirements.
 

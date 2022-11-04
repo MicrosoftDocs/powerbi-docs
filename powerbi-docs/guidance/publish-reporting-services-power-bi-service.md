@@ -12,13 +12,14 @@ ms.custom:
 
 # Publish .rdl files to Power BI from Reporting Services
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] ✔️&nbsp;SQL Server 2022 Reporting Services
-
-This article provides step-by-step instructions for migrating .rdl files, or *paginated reports*, from SQL Server 2022 Reporting Services to the Power BI service. If you are using a previous version of Reporting Services, continue to use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) for now.
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] ✔️&nbsp;SQLServer&nbsp;2022&nbsp;Reporting&nbsp;Services
  
-Do you have Report Definition Language (.rdl) paginated reports in SQL Server Reporting Services (SSRS), and you want to migrate them to the Power BI service? This article shows you how to use the simple migration tool. 
+Do you have Report Definition Language (.rdl) paginated reports in SQL Server 2022 Reporting Services (SSRS), and you want to migrate them to the Power BI service? This article provides step-by-step instructions for migrating .rdl files, or *paginated reports*, from SQL Server 2022 Reporting Services to the Power BI service. 
 
-You can migrate reports without downtime to your SQL Server Reporting Services servers or disruption to your report users. It's important to understand that you don't need to remove any data or reports. You can keep your current environment in place until you're ready for it to be retired. 
+> [!NOTE]
+> If you're using a previous version of Reporting Services, continue to use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) for now.
+
+You can migrate reports without downtime to your SQL Server Reporting Services servers or disruption to your report users. It's important to understand that you don't need to remove any data or reports. You can keep your current environment in place until you're ready for it to be retired.
 
 ## Prerequisites 
 
@@ -43,10 +44,10 @@ You can publish individual .rdl reports or the contents of entire folders from t
 
 ## Step 1: Set site properties 
 
-The first step to publishing .rdl files to the Power BI service is to set system properties on the report server. Read more about them in the SQL Server Reporting Services article, [Server Properties Advanced Page - Power BI Report Server & Reporting Services](../tools/server-properties-advanced-page-reporting-services.md).
+The first step to publishing .rdl files to the Power BI service is to set system properties on the report server. Read more about them in the SQL Server Reporting Services article, [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services).
 
-- [EnablePowerBIReportMigrate](../tools/server-properties-advanced-page-reporting-services.md#enablepowerbireportmigrate) and 
-- [PowerBIMigrateUrl](../tools/server-properties-advanced-page-reporting-services.md#powerbimigrateurl) 
+- EnablePowerBIReportMigrate and 
+- PowerBIMigrateUrl
 
 :::image type="content" source="media/publish-reporting-services-power-bi-service/ssrs-system-settings.png" alt-text="Screenshot showing site properties.":::
 
@@ -85,7 +86,7 @@ After you've selected the reports you want to publish, it's time to **Sign in*
  
 ## Step 4: Choose a workspace 
 
-Now that you're signed in, select the dropdown arrow to find and **Select a workspace**. 
+Next select the dropdown arrow to find and **Select a workspace**. 
 
 :::image type="content" source="media/publish-reporting-services-power-bi-service/rdl-select-workspace.png" alt-text="Screenshot showing selecting a workspace.":::
 
@@ -95,7 +96,9 @@ In the Power BI service, navigate to the workspace where you saved the reports.
 
 :::image type="content" source="media/publish-reporting-services-power-bi-service/paginated-reports-power-bi.png" alt-text="Screenshot showing paginated reports in a workspace.":::
 
-## Limitations and considerations 
+Select a report to view it in the Power BI service.
+
+## Limitations and considerations
 
 ### Unsupported item types
 
