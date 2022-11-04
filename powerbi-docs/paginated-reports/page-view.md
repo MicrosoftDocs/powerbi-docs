@@ -25,7 +25,7 @@ When you render a paginated report in the Power BI service, the default view is 
 
 ### Default interactive view
 
-![Screenshot showing Screenshot showing Default View.](media/page-view/power-bi-paginated-default-view.png)
+![Screenshot showing Default View.](media/page-view/power-bi-paginated-default-view.png)
 
 ### Page View
 

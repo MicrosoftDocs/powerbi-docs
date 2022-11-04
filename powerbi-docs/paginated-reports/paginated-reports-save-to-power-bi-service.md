@@ -14,7 +14,7 @@ ms.date: 10/27/2022
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer. You can upload paginated reports to your My Workspace or any other workspace, as long as you have write access.
+In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer.
 
 ## Requirements
 
