@@ -24,7 +24,7 @@ Metrics supports cascading scorecards that roll up along hierarchies you set up 
 
 To view your hierarchical scorecard, you can use the slicer to navigate to whichever level of your hierarchy you want to view.  From here you can do things like open the details pane, go to a report, and perform check-ins, just like any other scorecard view.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-cross-section.png" alt-text="Screenshot of a scorecard showing a hierarchy that's been set up." lightbox=:::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-cross-section.png" alt-text="Screenshot of a scorecard showing a hierarchy that's been set up." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-cross-section.png":::
 
 All connected values, mapped owners, and statuses dictated by rules will reflect the appropriate data at each hierarchy level, so long as the relationships exist.  There needs to be a relationship between the hierarchy level fields in the underlying datasets to correctly filter the values.  Manual metrics will be indicated by an information icon showing which values are manual for that metric.
 

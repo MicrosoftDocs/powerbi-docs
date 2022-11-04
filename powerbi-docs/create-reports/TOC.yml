@@ -435,7 +435,7 @@
     - name: Hierarchies in scorecards
       items: 
       - name: "Get started with hierarchies"
-        href: get-started-hierarchies.md 
+        href: service-metrics-get-started-hierarchies.md 
       - name: "Scenarios for using hierarchies"
         href: service-metrics-hierarchies-scenarios.md 
       - name: "View hierarchies in scorecards"
