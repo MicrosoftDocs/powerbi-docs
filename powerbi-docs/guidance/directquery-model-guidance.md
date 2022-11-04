@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/20/2022
+ms.date: 10/31/2022
 ---
 
 # DirectQuery model guidance in Power BI Desktop
@@ -22,14 +22,6 @@ This article is not intended to provide a complete discussion on DirectQuery mod
 This article does not directly cover composite models. A Composite model will consist of at least one DirectQuery source, and possibly more. The guidance described in this article is still relevant—at least in part—to Composite model design. However, the implications of combining Import tables with DirectQuery tables are not in scope for this article. For more information, see [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models.md).
 
 It is important to understand that DirectQuery models impose a different workload on the Power BI environment (Power BI service or Power BI Report Server) and also on the underlying data sources. If you determine that DirectQuery is the appropriate design approach, we recommend that you engage the right people on the project. We often see that a successful DirectQuery model deployment is the result of a team of IT professionals working closely together. The team usually consists of model developers and the source database administrators. It can also involve data architects, and data warehouse and ETL developers. Often, optimizations need to be applied directly to the data source to achieve good performance results.
-
-## Design in Power BI Desktop
-
-Both Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure HDInsight Spark data sources can be connected to directly, without the need to use Power BI Desktop. It is achieved in the Power BI service by "Getting Data" and choosing the Databases tile. For more information, see [Azure Synapse Analytics (formerly SQL Data Warehouse) with DirectQuery](/power-bi/connect-data/service-azure-sql-data-warehouse-with-direct-connect).
-
-While direct connect is convenient, we don't recommend that you use this approach. The main reason is that it is not possible to refresh the model structure should the underlying data source schema change.
-
-We recommend that you use Power BI Desktop to create and manage all of your DirectQuery models. This approach provides you with complete control to define the model that you need, including the use of supported features like hierarchies, calculated columns, measures, and more. It will also allow you to revise the model design should the underlying data source schema change.
 
 ## Optimize data source performance
 
