@@ -1,6 +1,6 @@
 ---
 title: View a report
-description: This topic shows Power BI business users and end users had to open and view a Power BI report.
+description: This topic shows Power BI business users and end users how to open and view a Power BI report.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -14,13 +14,16 @@ ms.date: 11/03/2022
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-A Power BI report is a single page or multiple pages of organized visuals. Power BI designers create reports and [share them directly](end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). To open a report that isn't a Microsoft sample, you need a Power BI Pro license or the report you want to open must be stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). For more information, see [Licenses and subscriptions for business users](end-user-license.md). You can follow along in this tutorial with a free license.
+A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro license to open a report unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI account can have access to reports stored in Premium capacity.  
+For more information, see [Licenses and subscriptions for business users](end-user-license.md).  
 
-Explore the following guidance to learn how to open a report from the Browse page or from dashboard.
+You can follow along in this tutorial with Microsoft sample content by using a free license.
+
+Explore the following guidance to learn how to open a report from the Browse page and from a dashboard.
 
 ## Open a report that's been shared with you
 
-Power BI designers can share a report with you by sending an email link or by adding the report to your Power BI content. These reports are located on the **Browse** page under **Shared with me**.
+Power BI designers can share a report with you by sending an email link or by adding the report to your Power BI content. These reports are located under **Shared with me** in the **Browse** tab.
 
 1. Open the Power BI service (app.powerbi.com), and sign in if you're prompted.
 
@@ -30,7 +33,7 @@ Power BI designers can share a report with you by sending an email link or by ad
 
     :::image type="content" source="./media/end-user-report-open/power-bi-share.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
 
-3. The report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png) is displayed next to the report name. Open the **Sales and Market Sample** report.
+3. The report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png) is displayed next to the report name. Open the **Sales and Marketing Sample** report.
 
      :::image type="content" source="./media/end-user-report-open/power-bi-report-sample.png" alt-text="Screenshot showing the Sales and Marketing Sample report from the Shared with me list.":::
 
@@ -58,9 +61,9 @@ There are many ways for you to interact with a report to discover insights and m
 
 The apps you receive from colleagues are located on the **Home** page and in the **Apps** container on your navigation pane. An [app](end-user-apps.md) is a collection of dashboards and reports that a Power BI designer compiles for you.
 
-To open an app that isn't a Microsoft sample, you need a Power BI Pro license, or the app workspace must be stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity).
+You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI account can have access to reports stored in Premium capacity.  
 
-You can follow along in this tutorial with a free license.
+You can follow along in this tutorial with Microsoft sample content by using a free license.
 
 1. In your browser, go to appsource.microsoft.com.
 2. Search for "Sales & Marketing" and select **Microsoft sample - Sales & Marketing**.
@@ -76,7 +79,7 @@ You can follow along in this tutorial with a free license.
 
 ## Open a report from a dashboard
 
-Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a tile opens the report that was used to create the tile.
+Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a tile opens the report that was used to create the tile.
 
 1. From the **Sales and Marketing** dashboard, select the *Total Units YTD Var %* column chart tile.
 
@@ -93,9 +96,8 @@ Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md
 
 ## More ways to open a report
 
-As you get more comfortable navigating the Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
+As you get more comfortable navigating the Power BI service, you'll figure out workflows that are best for you. A few other ways to access reports:
 
-- From the **Browse** tab in the navigation pane
 - Using [the related content pane](end-user-related.md)
 - In an email, when someone [shares with you](../collaborate-share/service-share-reports.md) or you [set an alert](end-user-alerts.md)
 - From your Notification center
