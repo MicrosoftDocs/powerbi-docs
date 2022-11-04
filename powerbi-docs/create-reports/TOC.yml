@@ -432,10 +432,14 @@
       href: service-goals-power-automate.md
     - name: "Create and add scorecards to reports"
       href: ../visuals/power-bi-visualization-scorecard-visual.md 
-    - name: Hierarchies
+    - name: Hierarchies in scorecards
       items: 
       - name: "Get started with hierarchies"
         href: get-started-hierarchies.md 
+      - name: "Scenarios for using hierarchies"
+        href: service-metrics-hierarchies-scenarios.md 
+      - name: "View hierarchies in scorecards"
+        href: service-metrics-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: "Intro to dashboards"
