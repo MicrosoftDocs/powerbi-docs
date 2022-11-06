@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 05/27/2022
+ms.date: 11/06/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -25,7 +25,8 @@ The Power BI Refresh Dataset REST API enables dataset-refresh operations to be c
 - Cancel refresh operations
 
 > [!NOTE]
-> During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
+> * During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
+> * Refresh operations performed by the enhanced refresh Power BI REST API, do not automatically refresh tile caches. Tile caches are only refreshed when a user accesses the report.
 
 ## Base URL
 
