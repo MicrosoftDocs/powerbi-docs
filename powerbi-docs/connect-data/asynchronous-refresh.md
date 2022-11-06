@@ -10,6 +10,7 @@ ms.date: 11/06/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
+
 # Enhanced refresh with Power BI REST API
 
 By using any programming language that supports REST calls, you can perform dataset refresh operations by using the Power BI REST API.
