@@ -103,8 +103,7 @@ To register your application, fill in the following fields:
 
 Select **Register**.
 
-    Your Azure AD app **Application ID** and **Application secret** values are displayed in the *Summary* box. Copy these values for later use.
-
+Your Azure AD app **Application ID** and **Application secret** values are displayed in the *Summary* box. Copy these values for later use.
 
 ### [Manual registration](#tab/manual)
 
@@ -135,12 +134,6 @@ For more information about how to register applications in Azure Active Director
 7. Select **Register**. After your app is registered you're directed to your app's overview page, where you can obtain the *Application ID*.
 
 ---
-
-
-1. Fill in the application name and which APIs it should have access to.
-1. Select **Register**.
-
-:::image type="content" source="./media/embedded-get-started/step-two-register-app.png" alt-text="Screenshot of the Set up your Power BI embedding environment page step two registering your app.":::
 
 ## Step 3 - Create a workspace (optional)
 
