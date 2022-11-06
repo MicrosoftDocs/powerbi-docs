@@ -354,6 +354,9 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 
 Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or if you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to be a [Power BI admin](./../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) on the Premium capacity that runs the refresh. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
 
+>[!NOTE]
+>Datasets created as part of datamarts arn't supported.
+
 <UI instructions + screenshot>
 
 ## Best practices
