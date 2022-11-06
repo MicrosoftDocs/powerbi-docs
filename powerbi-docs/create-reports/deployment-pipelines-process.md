@@ -353,7 +353,7 @@ The table below lists required permissions for popular deployment pipeline actio
 |Create a pipeline     |A user with one of the following licenses:<ul><li>Pro</li><li>PPU</li><li>Premium</li></ul>         |
 |Delete a pipeline     |Pipeline admin         |
 |Add or remove a pipeline user     |Pipeline admin         |
-|Assign a workspace to a stage     |Pipeline admin and workspace admin (of the workspace to be assigned)         |
+|Assign a workspace to a stage     |A user that's both a pipeline admin and a workspace admin (of the workspace to be assigned)         |
 |Unassign a workspace to a stage     |One of the following:<ul><li>Pipeline admin</li><li>Workspace admin (using the [Pipelines - Unassign Workspace](/rest/api/power-bi/pipelines/unassign-workspace) API)</li></ul>         |
 |Deploy to an empty stage     |<ul><li>Pipeline admin</li><li>Source workspace member or admin</li></ul>         |
 |Deploy items to the next stage    |<ul><li>Pipeline admin</li><li>Workspace member or admin of both the source and target stages</li><li>To deploy datamarts or dataflows, you must be the owner of the deployed item</li><li>If the dataset tenant admin switch is turned on and you're deploying a dataset, you'll need to be the dataset owner</li></ul>         |
