@@ -58,7 +58,7 @@ The [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-p
 An error has occurred
 ```
 
-The error indicates that you're updating a large dataset that isn't using the [large dataset](../../enterprise/service-premium-large-models.md) format. Use the large dataset format to avoid the error and get your dataset updated using the API call.
+The error might indicate that you're updating a large dataset that isn't using the [large dataset](../../enterprise/service-premium-large-models.md) format. Use the large dataset format to avoid the error and get your dataset updated using the API call.
 
 ## Next steps
 
