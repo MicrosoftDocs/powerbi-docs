@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4, intro-overview
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
-ms.date: 09/25/2020
+ms.date: 11/06/2022
 LocalizationGroup: Administration
 #Customer intent: As an administrator of the Power BI service, I want to understand the tools, tasks, and roles that I can use to configure, manage, and secure the service.
 ---
@@ -43,11 +43,9 @@ There are several roles that work together to administer Power BI for your organ
 | Power BI Premium Capacity admin | A single Premium capacity | Assign workspaces to the capacity|
 | | | Manage user permission to the capacity |
 | | | Manage workloads to configure memory usage |
-| | | Restart the capacity |
 | Power BI Embedded Capacity admin | A single Embedded capacity | Assign workspaces to the capacity|
 | | | Manage user permission to the capacity |
 | | | Manage workloads to configure memory usage |
-| | | Restart the capacity |
 
 ## Administrative tasks and tools
 
