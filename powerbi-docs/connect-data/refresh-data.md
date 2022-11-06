@@ -19,7 +19,6 @@ This article describes the data refresh features of Power BI and their dependenc
 
 ## Understanding data refresh
 
-
 [Embed Power BI content with service principal and an application secret](../developer/embedded/embed-service-principal.md)
 
 Whenever you refresh data, Power BI must query the underlying data sources, possibly load the source data into a dataset, and then update any visualizations in your reports or dashboards that rely on the updated dataset. The entire process consists of multiple phases, depending on the storage modes of your datasets, as explained in the following sections.
@@ -105,13 +104,11 @@ Another way to consider the different refresh types is what they impact and wher
 
 #### Data refresh
 
-For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily dataset refreshes. The eight time values are stored in the backend database and are based on the *local time* zone that was selected on the Dataset Settings page. The scheduler checks which model should be refreshed and at what time(s).  The quota of eight refreshes resets daily at 12:01 a.m. local time. 
+For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily dataset refreshes. The eight time values are stored in the backend database and are based on the *local time* zone that was selected on the Dataset Settings page. The scheduler checks which model should be refreshed and at what time(s).  The quota of eight refreshes resets daily at 12:01 a.m. local time.
 
 ![Data refresh schedule in Database settings.](media/refresh-data/power-bi-refresh-data.png)
 
 If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Datasets on a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
-
-
 
 It's also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh now** in the dataset menu, as the following screenshot depicts. On-demand refreshes aren't included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you're interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
@@ -210,7 +207,6 @@ If you have no access to an enterprise data gateway and you're the only person w
 Unlike for an enterprise data gateway, you don't need to add data source definitions to a personal gateway. Instead, you manage the data source configuration by using the **Data source credentials** section in the dataset settings, as the following screenshot illustrates.
 
 ![Configure data source credentials for gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
-
 
 ### Accessing cloud data sources
 
@@ -315,7 +311,6 @@ Having configured a refresh schedule, the dataset settings page informs you abou
 > [!TIP]
 > Power BI does not have a monthly refresh interval option. However, you can use Power Automate to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/). 
 
-
 Note also that the configured refresh time might not be the exact time when Power BI starts the next scheduled process. Power BI starts scheduled refreshes on a best effort basis. The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
 > [!NOTE]
@@ -357,7 +352,7 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 
 ## Refresh cancellation
 
-Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or if you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to be a [Power BI admin](./../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) on the capacity that runs the refresh.
+Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or if you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to be a [Power BI admin](./../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) on the Premium capacity that runs the refresh. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
 
 <UI instructions + screenshot>
 
