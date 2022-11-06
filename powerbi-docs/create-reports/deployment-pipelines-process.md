@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 11/02/2022
+ms.date: 11/06/2022
 ---
 
 # Understand the deployment process
@@ -353,8 +353,8 @@ The table below lists required permissions for popular deployment pipeline actio
 |Create a pipeline     |A user with one of the following licenses:<ul><li>Pro</li><li>PPU</li><li>Premium</li></ul>         |
 |Delete a pipeline     |Pipeline admin         |
 |Add or remove a pipeline user     |Pipeline admin         |
-|Assign a workspace to a stage     |<ul><li>Pipeline admin</li><li>Workspace member or admin of the workspace to be assigned</li></ul>         |
-|Unassign a workspace to a stage     |Pipeline admin         |
+|Assign a workspace to a stage     |Pipeline admin and workspace admin (of the workspace to be assigned)         |
+|Unassign a workspace to a stage     |One of the following:<ul><li>Pipeline admin</li><li>Workspace admin (using the [Pipelines - Unassign Workspace](/rest/api/power-bi/pipelines/unassign-workspace) API)</li></ul>         |
 |Deploy to an empty stage     |<ul><li>Pipeline admin</li><li>Source workspace member or admin</li></ul>         |
 |Deploy items to the next stage    |<ul><li>Pipeline admin</li><li>Workspace member or admin of both the source and target stages</li><li>To deploy datamarts or dataflows, you must be the owner of the deployed item</li><li>If the dataset tenant admin switch is turned on and you're deploying a dataset, you'll need to be the dataset owner</li></ul>         |
 |View or set a rule     |<ul><li>Pipeline admin</li><li>Target workspace contributor, member or admin</li><li>Owner of the item you're setting a rule for</li></ul>         |
