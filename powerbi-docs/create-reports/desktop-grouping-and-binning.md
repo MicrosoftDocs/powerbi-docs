@@ -26,7 +26,7 @@ To use grouping, select two or more elements on a visual by using Ctrl+click to 
 
 Once it's created, the group is added to the **Legend** bucket for the visual. The group also appears in the **Fields** list.
 
-![Screenshot of Legend bucket and Fields lists, highlighting Category groups.](media/desktop-grouping-and-binning/grouping-binning-2.png)
+![Screenshot of the Legend bucket and Fields lists, highlighting Category groups.](media/desktop-grouping-and-binning/grouping-binning-2.png)
 
 Once you have a group, you can edit the members of that group. Right-click the field from the **Legend** bucket or from the **Fields** list, and then choose **Edit groups**.
 
@@ -34,7 +34,7 @@ Once you have a group, you can edit the members of that group. Right-click the f
 
 In the **Groups** dialog box, you can create new groups or modify existing groups. You can also *rename* any group. Just double-click the group title in the **Groups and members** box, and then enter a new name.
 
-With Groups, you can add items from the **Ungrouped values** list into a new group or into one of the existing groups. To create a new group, select two or more items (using Ctrl+click) from the **Ungrouped values** box, and then select the **Group** button below that box.
+With Groups, you can add items from the **Ungrouped values** list into a new group or into one of the existing groups. To create a new group, select two or more items (by using Ctrl+click) from the **Ungrouped values** box, and then select the **Group** button below that box.
 
 You can add an ungrouped value into an existing group. Select one of the **Ungrouped values**, then select the existing group to add the value to, and select the **Group** button. To remove an item from a group, select it from the **Groups and members** box, and then select **Ungroup**. You can also move ungrouped categories into the **Other** group or leave them ungrouped.
 
