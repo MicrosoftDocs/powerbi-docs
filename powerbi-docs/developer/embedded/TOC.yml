@@ -13,10 +13,12 @@
     items: 
     - name: "Create an Azure Active Directory tenant"
       href: create-an-azure-active-directory-tenant.md
-    - name: "Register an application"
+    - name: "Set up Power BI Embedded"
       href: register-app.md
     - name: "Configure credentials"
       href: configure-credentials.md    
+    - name: "Change your app permissions"
+      href: change-permissions.md
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
     - name: "Performance best practices"
