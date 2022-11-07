@@ -57,7 +57,7 @@ Once you understand the difference between these two options and decide which on
 
 1. Select **Next** to go to the next step.
 
-  :::image type="content" source="./media/register-app/step-one-signed-in.png" alt-text="Screenshot of the Setup your Power BI embedding environment page after Power BI sign-in.  The next button in highlighted.":::
+   :::image type="content" source="./media/register-app/step-one-signed-in.png" alt-text="Screenshot of the Setup your Power BI embedding environment page after Power BI sign-in.  The next button in highlighted.":::
 
 ## Step 2 - Register your application
 
