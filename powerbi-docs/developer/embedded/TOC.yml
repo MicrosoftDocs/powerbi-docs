@@ -9,11 +9,11 @@
       href: embedded-analytics-power-bi.md
     - name: "What is the Power BI Embedded analytics playground?"
       href: "power-bi-playground.md"    
-  - name: Getting started
+  - name: Power BI Embedded setup
     items: 
     - name: "Create an Azure Active Directory tenant"
       href: create-an-azure-active-directory-tenant.md
-    - name: "Set up Power BI Embedded"
+    - name: "Power BI app registration tool"
       href: register-app.md
     - name: "Configure credentials"
       href: configure-credentials.md    
