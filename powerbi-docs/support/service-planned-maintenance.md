@@ -39,5 +39,5 @@ If your organization is affected, we'll provide you with advance notice. Microso
 
 ## Next steps
 
-* [Enable service interruption notifications](../admin/service-interruption-notifications.md)
+* [Enable service interruption notifications](/power-bi/support/service-interruption-notifications)
 * [Track upcoming change in Message center](/microsoft-365/admin/manage/message-center)

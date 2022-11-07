@@ -37,7 +37,7 @@ sections:
 
           |Feature description  |Per User  |Per Capacity  |
           |---------|---------|---------|
-          |Model size limit     | 100 GB        | Up to 400 GB        |
+          |Model size limit     | 100 GB        | 25-400 GB<sup>1</sup>        |
           |Refresh rate     | 48/day        | 48/day        |
           |Paginated reports     | ✔        | ✔        |
           |AI capabilities (AutoML, Impact Analysis, Cognitive Services)     | ✔        | ✔        |
@@ -51,6 +51,8 @@ sections:
           |Unlimited distribution     | X        | ✔        |
           |Power BI reports on-premises     | X        | ✔        |           
           |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
+
+          <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus).
 
           > [!NOTE]
           > Premium Per User (PPU) only supports BYOK when it's enabled across the entire tenant.
@@ -66,9 +68,9 @@ sections:
 
           Unlike Premium capacity settings, PPU licenses don't require memory management or CPU management, similar to how Pro licenses don't require such management. Tenant administrators can select feature settings for PPU licenses, but can't disable specific workloads. 
 
-          You can move workspaces between Premium Per User (PPU) and Premium capacities as needed. Any such move requires a full refresh of datasets or data flows in the workspace after you move it back to a Premium capacity. A limited set of APIs enable movement of workspaces, but they don't include actions such as turning off a workload.
+          You can move workspaces between Premium Per User (PPU) and Premium capacities as needed. Any such move requires a full refresh of datasets or dataflows in the workspace after you move it back to a Premium capacity. A limited set of APIs enable movement of workspaces, but they don't include actions such as turning off a workload.
 
-          Datasets in the *Large Dataset format* in Premium Per User (PPU) intentionally won't appear in the user interface. 
+          Datasets in the *Large Dataset format* in Premium Per User (PPU) won't appear in the user interface. 
 
 
       - question: |
@@ -84,16 +86,16 @@ sections:
 
            ![Screenshot of a chart showing accessibility to content by license type.](media/service-premium-per-user-faq/premium-per-user-faq-04.png)   
 
-           Premium Per User (PPU) works with Power BI embedded, similar to a Power BI Pro license. Embedding content requires each user to have a PPU license to view.
+           Premium Per User (PPU) works with Power BI embedded, in the same way as a Power BI Pro license. You can embed the content, and each user will need a PPU license to view it.
 
       - question: |
           Email subscriptions and Premium Per User
         answer: |
           Anyone with either a Premium Per User (PPU) license or a Pro license can receive the subscription and any attachment it includes, if the attachment is the same for all users. Pro users can't view the content in the product portal. 
           
-          Adding subscription capabilities that allow different data views for different recipients, a PPU license (or Premium capacity) is required. A PPU license doesn't allow sending e-mail subscriptions to external users. The content must be hosted in a Premium capacity to offer subscriptions to external users.  
+          To add subscription capabilities that allow different data views for different recipients, a PPU license (or Premium capacity) is required. A PPU license doesn't allow sending e-mail subscriptions to external users. The content must be hosted in a Premium capacity to offer subscriptions to external users.  
           
-          Unlicensed users can't view datasets or reports created using datasets in a Premium Per User (PPU) workspace. For example, you can't allow unlicensed users to access a report created from a Power BI dataset in a PPU workspace, and published in a non-PPU workspace. Similarly, content in a PPU workspace shared using **Publish to Web** isn't accessible to unlicensed users.
+          Users without a license can't view datasets, and reports that are built on these datasets, that were created in a PPU workspace. For example, users without a license can't access a report created from a Power BI dataset in a PPU workspace, and published in a non-PPU workspace. Similarly, content in a PPU workspace shared using **Publish to Web** isn't accessible to unlicensed users.
           
           Power BI mobile works with any content published to a Premium Per User (PPU) app or workspace.
 
@@ -106,7 +108,7 @@ sections:
           Considerations and limitations
         answer: |
           Considerations when working with Premium Per User licenses.
-          * Premium Per User is the lowest entry-point for Power BI Premium features. It's built upon the Premium platform with built-in mechanisms ensuring that PPU users can use the platform’s ability to scale. PPU is designed to support enterprise workloads including Power BI items with size limits equivalent to that of a P3. For datasets, the 100-Gb limit is documented in the [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus) table.
+          * Premium Per User is the lowest entry-point for Power BI Premium features. It's built upon the Premium platform with built-in mechanisms ensuring that PPU users can use the platform’s ability to scale. PPU is designed to support enterprise workloads including Power BI items with size limits equivalent to that of a P3. For datasets, the 100-GB limit is documented in the [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus) table.
 
           * Your entire PPU tenant has the same 100-TB storage limit that is applied to a Premium capacity.
 

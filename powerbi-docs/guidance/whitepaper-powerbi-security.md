@@ -278,13 +278,7 @@ Paginated report definitions (.rdl) are stored in Power BI, and to publish and/o
 
 The Azure AD token obtained during the authentication is used to communicate directly from the browser to the Power BI Premium cluster.
 
-For Premium Gen1, a single sandbox exists per each one of the capacities of the tenant, and is shared by the workspaces assigned to the capacity.
-
-![Paginated reports Gen 1](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen1.png)
-
-For Premium Gen2, an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation between users.
-
-![Paginated reports Gen 2](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen2.png)
+In Premium Gen2, the Power BI service runtime provides an appropriately isolated execution environment for each report render. Unlike in Gen1, this includes cases where the reports being rendered belong to workspaces assigned to the same capacity.
 
 A paginated report can access a wide set of data sources as part of the rendering of the report. The sandbox doesn't communicate directly with any of the data sources but instead communicates with the trusted process to request data, and then the trusted process appends the required credentials to the connection. In this way the sandbox never has access to any credential or secret.
 
