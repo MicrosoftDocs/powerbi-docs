@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/21/2022
+ms.date: 11/03/2022
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -261,6 +261,9 @@ The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capab
 Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
 Date, time, and status for dataset refresh operations that include a write transaction through the XMLA endpoint are recorded and shown in dataset Refresh history.
+
+>[!NOTE]
+>Refresh operations performed by the XMLA endpoint, don't automatically refresh tile caches. Tile caches are only refreshed when a user accesses the report.
 
 :::image type="content" source="media/service-premium-connect-tools/refresh-history-via-xmla.png" alt-text="Refresh history  via XMLA endpoint":::
 

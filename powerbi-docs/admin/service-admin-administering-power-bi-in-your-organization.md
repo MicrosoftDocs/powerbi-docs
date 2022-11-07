@@ -47,7 +47,6 @@ There are several roles that work together to administer Power BI for your organ
 | Power BI Embedded Capacity Administrator | A single Embedded capacity | Assign workspaces to the capacity|
 | | | Manage user permission to the capacity |
 | | | Manage workloads to configure memory usage |
-| | | Restart the capacity |
 
 ## Administrative tasks and tools
 
@@ -84,3 +83,4 @@ Now that you know the basics of what’s involved with Power BI administration, 
 - [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+ 
