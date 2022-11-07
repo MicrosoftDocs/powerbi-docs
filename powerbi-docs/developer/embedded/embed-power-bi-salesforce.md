@@ -1,6 +1,6 @@
 ---
 title: Embed Power BI content in Salesforce
-description: Learn how to embed Power BI content in Salesforce by using embedded analytics developer samples that demonstrate .
+description: Learn how to embed Power BI content in Salesforce by using embedded analytics developer samples that use different solutions.
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
