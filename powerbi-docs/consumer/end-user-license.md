@@ -17,7 +17,7 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a [business user](end-user-consumer.md), you use the Power BI service to explore reports and dashboards so you can make data-backed business decisions. If you've been using Power BI for a while, or have been chatting with your designer colleagues, you've probably discovered that there are some features that only work if you have a certain type of license, subscription, or permissions.
+As a [business user](end-user-consumer.md), you use the Power BI service to explore reports and dashboards so you can make data-backed business decisions. If you've been using Power BI for a while, you've probably discovered that there are some features that only work if you have a certain type of license, subscription, or permissions.
 
 What you can do in the Power BI service depends on three things:
 
@@ -106,7 +106,7 @@ There are many different ways organizations set up their Power BI subscriptions 
 
 In the following diagram, the left side represents Pro users who create and share content in app workspaces.
 
-- **Workspace A** was not created in a Premium capacity.
+- **Workspace A** wasn't created in a Premium capacity.
 
 - **Workspace B** was created and saved in a Premium capacity. This workspace has a diamond icon.  
 
