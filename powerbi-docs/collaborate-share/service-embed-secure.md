@@ -132,7 +132,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The automatic authentication capability that's provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The authentication token lifetime is controlled based on your Azure AD settings. When the authentication token expires, the user needs to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
+* The authentication token lifetime is controlled based on your Azure AD settings. When the authentication token expires, the user will need to sign in again to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
 
 ## Next steps
 
