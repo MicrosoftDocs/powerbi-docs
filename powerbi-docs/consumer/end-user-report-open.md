@@ -49,9 +49,11 @@ Power BI designers can share a report with you by sending an email link or by ad
 
    ![Screenshot showing filters for the selected visual.](./media/end-user-report-open/power-bi-visual-filters.png)
 
-7. To change the display (zoom) of the page, select the **View** dropdown from the upper right corner and select **Actual size** and then switch to **Fit to width**.
+7. You can also change the display (zoom) of the report page. On the action bar, select the **View** icon, and then select **Actual size**. Notice the difference that view option makes in how Power BI displays your report.
 
    ![Screenshot showing the Actual size view.](./media/end-user-report-open/power-bi-view-actual.png)
+
+8. On the action bar, select the **View** icon, and then select **Fit to width**. Notice the difference that view option makes in how Power BI displays your report.
 
    ![Screenshot showing the Fit to width view.](./media/end-user-report-open/power-bi-width.png)
 
