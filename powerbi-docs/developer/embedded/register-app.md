@@ -42,6 +42,8 @@ The *embed for your organization* solution is usually used by enterprises and la
 
 For more on the two solutions, see [What are the Power BI embedded analytics solutions?](embedded-analytics-power-bi.md)
 
+### Select embedded solution
+
 Once you understand the difference between these two options and decide which one you want, go to the [Power BI Embedded analytics setup tool](https://app.powerbi.com/embedsetup) and select it. Then continue to [step 1](#step-1---sign-in-to-power-bi).
 
 :::image type="content" source="./media/register-app/choose-embedding-solution.png" alt-text="Screenshot of the first page of Setup your Power BI embedding environment. The options to embed for your customers or embed for your organization are shown.":::
