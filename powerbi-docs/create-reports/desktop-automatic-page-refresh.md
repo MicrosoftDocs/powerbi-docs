@@ -101,7 +101,7 @@ This image shows the results of a DirectQuery source in Performance Analyzer:
 
 ![Performance Analyzer results](media/desktop-automatic-page-refresh/automatic-page-refresh-06.png)
 
-Let's consider other characteristics of this data source:
+Other characteristics of this data source:
 
 - The data arrives at a rate of 2 seconds.
 - The Performance Analyzer shows a maximum query + display time of approximately 4.9 seconds (4,688 milliseconds).
@@ -130,7 +130,7 @@ For the same scenario we discussed before:
 
 To summarize, when using change detection, only one query is sent to the data source until a change is detected. When that happens, the same logic used for a fixed interval refresh type applies for updating all visuals for all users generating the same number of queries. This approach should be more efficient in the long run.
 
- You can check the [Frequently asked questions](#frequently-asked-questions) section, later in this article, for more questions and answers about performance and troubleshooting.
+You can check the [Frequently asked questions](#frequently-asked-questions) section, later in this article, for more questions and answers about performance and troubleshooting.
 
 ## Automatic page refresh in the Power BI service
 
@@ -151,9 +151,9 @@ When configuring automatic page refresh for reports in the Power BI service, the
 
 The page refresh types and intervals allowed in the Power BI service are affected by the report's workspace type. This applies to these scenarios:
 
-* Publishing a report into a workspace that has automatic page refresh enabled.
-* Editing a page refresh interval that's already in a workspace.
-* Creating a report directly in the service.
+- Publishing a report into a workspace that has automatic page refresh enabled.
+- Editing a page refresh interval that's already in a workspace.
+- Creating a report directly in the service.
 
 Power BI Desktop has no restrictions for refresh intervals and can be as frequent as every second. However, when reports are published to the Power BI service, certain restrictions apply which are described in the following sections.
 
