@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 10/19/2022
+ms.custom: engagement-fy23
 ---
 
 # Sync slicers across pages in Power BI reports
