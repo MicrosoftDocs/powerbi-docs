@@ -42,7 +42,7 @@ Ensure each environment meets the following prerequisites:
 
 - You must have **Workspace administrator** permission. Power BI admins can view migrations for their tenant, however, they can't perform migrations unless they also have Workspace administrator permission.
 
-- You must have an [**Azure Data Lake Storage Gen 2 (ADLS Gen 2)**](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md) storage account enabled in the same tenant and the workspace you're migrating to must be [connected](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) to that storage account.
+- You must have an [**Azure Data Lake Storage Gen 2 (ADLS Gen 2)**](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md) storage account enabled in the same tenant and the workspace you're migrating to must be [connected](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) to that storage account. For the best performance, your ADLS Gen 2 storage should be located in the same region as your capacity.
 
 - [**Large dataset storage format**](service-premium-large-models.md) must be enabled for the workspace.
 
@@ -141,7 +141,7 @@ After enabling server redirection, you can then pause your server in the Azure p
 
 1. For each model database you want to migrate, under **Include in Migration**, toggle the slider button to **Yes**.
 
-    To protect your target capacity, the maximum number of model databases that can be concurrently migrated is 5.
+    To protect your target capacity, the maximum number of model databases that can be concurrently migrated is five.
 
 1. Select **Migrate**. If prerequisites are met, migration will begin. The migration process can take some time while the source model database is saved to backup storage, copied to ADLS Gen 2 storage, and restored to the workspace. You can leave this page and continue to use Power BI while migration is in process.
 
@@ -156,13 +156,15 @@ On the **All migrations** page, for the migration pair you want to redirect, in 
 Redirection can take some time. You can leave the **All migrations** page and continue to use Power BI while redirection is in process.
 To check the status of server redirection, select **More options**, and then select **Redirection status**.
 
-#### Report rebind
+#### Rebind
 
 **During preview**, Live connect reports in the Power BI service connected to an Azure Analysis Services model database being migrated aren't automatically rebound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a binding to the new dataset.
 
 #### Pause server
 
-After you've verified a successful migration, you can **pause** your Azure Analysis Services server either in the Azure portal or by using the REST API. **During preview**, don't delete your server because it could break server redirection.
+After you've verified a successful migration, you can **pause** your Azure Analysis Services server either in the Azure portal or by using the Azure Analysis Services REST API. **During preview**, don't delete your server because it could break server redirection.
+
+If your server remains started after you’ve enabled server redirection, existing Azure Analysis Services models can still be queried by setting the AsAzureRedirection connection string property to **Disabled**.
 
 ## See also
 
