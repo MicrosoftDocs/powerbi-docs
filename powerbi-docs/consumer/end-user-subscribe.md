@@ -52,7 +52,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 4. Edit or add recipients by email address, ensuring that you have at least one. Optionally, add a subject and email message details. 
 
-5. When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is selected, Power BI subscribes you to the report including all changes you've made to the report.  This includes:
+5. When creating a subscription for a report, you'll have the option to **Include my changes**. (This option is not available for dashboards.) When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is selected, Power BI subscribes you to the report including all changes you've made to the report.  This includes:
 
     - filters (filter pane or URL filters)
     - slicers
