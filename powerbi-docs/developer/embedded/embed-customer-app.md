@@ -11,7 +11,7 @@ ms.date: 02/07/2022
 
 # Tutorial: Embed a Power BI report in an application for your customers
 
-In this tutorial, you'll learn how to embed a Power BI report in a .NET 5.0 application, as part of the *embed for your customers* (also known as an *app owns data*) solution. In an *embed for your customers* solution, your app users will not need to sign in to Power BI or have a Power BI license.
+In this tutorial, you'll learn how to embed a Power BI report in a .NET 5.0 application, as part of the *embed for your customers* (also known as an *app owns data*) solution. In an *embed for your customers* solution, your app users won't need to sign in to Power BI or have a Power BI license.
 
 In this tutorial, you'll learn how to embed:
 
@@ -74,7 +74,7 @@ To embed Power BI content in an *embed for your customers* solution, follow thes
 
 ## Step 1 - Configure your Azure AD app and service principal
 
-In this tutorial you'll use a *service principal* to authenticate you're web app against Azure AD. You'll also need an Azure AD app which will enable you to generate an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs and embed Power BI items such as reports, dashboards or tiles.
+In this tutorial, you'll use a *service principal* to authenticate your web app against Azure AD. You'll also need an Azure AD app which will enable you to generate an [Azure AD token](embed-tokens.md#azure-ad-token). The *Azure AD token* enables your web app to call Power BI REST APIs and embed Power BI items such as reports, dashboards or tiles.
 
 Follow the [service principal instructions](embed-service-principal.md) to create an Azure AD app and enable the apps service principal to work with your Power BI content.
 

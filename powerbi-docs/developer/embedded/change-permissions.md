@@ -1,5 +1,5 @@
 ---
-title: Change your Azure AD app's permissions
+title: Change your Azure Active Directory app's permissions
 description: Learn how to change the API permissions on your Azure AD application.
 author: mberdugo
 ms.author: monaberdugo
@@ -11,9 +11,9 @@ ms.subservice: powerbi-developer
 ms.custom: 
 ---
 
-# Change your Azure AD app's permissions
+# Azure Active Directory permissions
 
-When you register your Azure AD app, you grant it permission to access various APIs. As your needs change, you might want to adjust these permissions. Permission changes can be made programmatically, or in the Azure portal.
+When you [register your Azure AD app](./register-app.md), you grant it permission to access various APIs. As your needs change, you might want to adjust these permissions. This article shows you how.
 
 >[!NOTE]
 >Azure AD app permissions are only applicable for these scenarios:
@@ -21,7 +21,11 @@ When you register your Azure AD app, you grant it permission to access various A
 >* *Embed for your organization*
 >* *Embed for your customers* with the *master user* authentication method
 
-## [Azure](#tab/Azure)
+## Change permissions on you Azure Active Directory app
+
+Permission changes can be made programmatically, or in the Azure portal.
+
+### [Azure portal](#tab/Azure)
 
 In the Azure portal, you can view your app and make changes to its permissions.
 
@@ -58,13 +62,13 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
     3. In the *Remove permission* pop-up window, select **Yes, remove**.
 
-## [HTTP](#tab/HTTP)
+### [HTTP](#tab/HTTP)
 
 To change your Azure AD app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
 
 1. To get all the service principals within your tenant, call the `Get servicePrincipal` API without `{ID}`.
 
-2. Check for a service principal with your app's *application ID* as the `appId` property.
+2. Check for a service principal with your app's *application ID* as the `appId` property. (`displayName` is optional.)
 
     ```json
     Post https://graph.microsoft.com/v1.0/servicePrincipals HTTP/1.1
@@ -76,9 +80,6 @@ To change your Azure AD app permissions programmatically, you'll need to get the
     "displayName" : "{App_DisplayName}"
     }
     ```
-
-    >[!NOTE]
-    >`displayName` is optional.
 
 3. Grant Power BI permissions to your app, by assigning one of these values to `consentType`:
 
@@ -121,9 +122,9 @@ To change your Azure AD app permissions programmatically, you'll need to get the
     }
     ```
 
-## [C#](#tab/CSharp)
+### [C#](#tab/CSharp)
 
-You can also change your Azure AD app permissions using C#. For more information see the [oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get) API. This method can be useful if you're considering to automate some of your processes.
+You can also change your Azure AD app permissions using C#. For more information see the [oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get) API. This method can be useful if you're considering automating some of your processes.
 
 ```csharp
 var graphClient = GetGraphClient();

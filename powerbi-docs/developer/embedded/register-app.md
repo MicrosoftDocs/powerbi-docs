@@ -74,12 +74,12 @@ To register your application for your customers, fill in the following fields:
 
 * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can select *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
-    ![Screenshot showing how to register you application.](media/register-app/register-app.png)
+    :::image type="content" source="media/register-app/register-app.png" alt-text="Screenshot showing how to register you application.":::
 
 Select **Register**.
 Your Azure AD app **Application ID** is displayed in the *Summary* box. Copy this value for later use.
 
-:::image type="content" source="./media/register-app/application-id.png" alt-text="Screenshot showing application id.":::
+:::image type="content" source="./media/register-app/application-id.png" alt-text="Screenshot showing application ID.":::
 
 ### [Embed for your organization](#tab/organization)
 
@@ -95,7 +95,7 @@ To register your application for your organization, fill in the following fields
 
   * **Use a custom URL** - Select this option if you already have an embedded analytics application, and know what you want to use as a redirect URL.
 
-* **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
+* **API access** - Select the Power BI APIs (also known as scopes) that your application needs. Check *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
 Select **Register**.
 
@@ -148,13 +148,13 @@ Select one of following options:
 
 * If you have your own Power BI app, you can select **Skip**.
 
-* If you want to create a sample Power BI app using a sample report, select **Sample Power BI report** and then select **Import**.
+* If you want to create a sample Power BI app using a sample report, select **Sample Power BI report**, and then select **Import**.
 
 * If you want to create a sample Power BI app using your own report, select **Upload a *.pbix* file**, browse for your file and then select **Import**.
 
 ## Step 5 - Grant permissions (*Embed for your customers* only)
 
-Select **Grant permissions** and in the pop-up window select **accept**. This allows your Azure AD app to access the APIs you selected (also known as scopes) with you are signed in user. This user is also known as the **master user**.
+Select **Grant permissions** and in the pop-up window select **accept**. This step allows your Azure AD app to access the APIs you selected (also known as scopes) with your signed in user. This user is also known as the **master user**.
 
 ## Download sample app (Optional)
 
