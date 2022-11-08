@@ -1,6 +1,6 @@
 ---
-title: Drill down and drill up in a visual
-description: This article shows how to drill down in a visual in the Microsoft Power BI service.
+title: Drill mode in the Power BI service
+description: This article shows how to drill down, drill up, and expand by using the drill feature in a visual in the Microsoft Power BI service.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.date: 11/08/2022
 LocalizationGroup: Visualizations
 ---
-# Drill mode in a visual in Power BI
+# Drill mode in the Power BI service
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-This article shows how to use the *drill mode* in the Microsoft Power BI service. You can explore in-depth details about your data by using drill down, drill up, and expand on your data points.
+This article shows how to use the *drill mode* in the Microsoft Power BI service. You can explore in-depth details about your data by using drill down, drill up, and expand on your visual's data points.
 
-## Requirement
+## Drill mode requirements
 
-To use the drill mode, the Power BI visual must have a hierarchy. For example, you might have a visual that looks at the Olympic medal count with a hierarchy of sport, discipline, and event. By default, the visual shows medal count by sport (gymnastics, skiing, aquatics, etc.). But, because it has a hierarchy, you can select one of the visual elements, like a bar, line, or bubble, to display an increasingly detailed picture. Selecting the aquatics element shows you data for swimming, diving, and water polo. Selecting the diving element shows you details for springboard, platform, and synchronized diving events.
+To use the drill mode, the Power BI visual must have a hierarchy. For example, you might have a visual that looks at the Olympic medal count with a hierarchy of sport, specific types of the sport, and event. By default, the visual shows medal count by sport (gymnastics, skiing, aquatics, etc.). Then, you can select one of the visual elements, like a bar, line, or bubble, to display the individual sports. For example, selecting the aquatics element shows you data for swimming, diving, and water polo. Then, selecting the diving element takes you to the next level in the hierarchy and shows you details for springboard, platform, and synchronized diving events.
 
 Dates are a unique type of hierarchy. Report designers often add date hierarchies to visuals. A common date hierarchy is one that contains fields for the year, quarter, month, and day.
 
@@ -26,9 +26,9 @@ You can tell if a visual has a hierarchy by hovering over it. If the drill contr
 
 ![Screenshot of the drill icons.](./media/end-user-drill/power-bi-drill-icons.png)
 
-## How to drill down and up
+## Get started
 
-In this example, we're using a treemap that has a hierarchy made up of territory, city, postal code, and store name. The default chart looks at total units sold this year by territory. Territory is the top level of the hierarchy.
+In this example, we're using a treemap that has a hierarchy made up of territory, city, postal code, and store name. The default chart looks at total units sold this year by territory. Territory is the top level of the hierarchy. Find this information in the **Filters** menu on the action bar.
 
 ![Screenshot of the treemap. The filters and drill features are outlined.](./media/end-user-drill/power-bi-treemap.png)  
 
@@ -107,37 +107,39 @@ To get more detailed data on this chart, you can expand down one level in the hi
 
     ![Screenshot of the treemap showing all data for Tennessee.](media/end-user-drill/power-bi-expand-second.png)
 
-4. Confirm that the drill down option ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) is still turned on and select the expand down icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png). Your treemap now shows the same number of leaves, but each leaf has more detail. It now shows city, state, and postal code.
+4. Confirm that the drill down option ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) is still turned on and select the expand down icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png). The treemap shows the same number of leaves, but each leaf has more detail. It now shows city, state, and postal code.
 
     ![Screenshot of the visual showing city, state, and postal code.](./media/end-user-drill/power-bi-expand-third.png)
 
-5. Select the *expand down* icon one more time to display all four hierarchy levels of detail for Tennessee on your treemap. Hover over a leaf to see even more detail.
+5. Select the expand down icon one more time to display all four hierarchy levels of detail for Tennessee. Hover over a leaf to see even more detail.
 
-    ![Screenshot of the treemap showing a tooltip with leaf-specific data.](./media/end-user-drill/power-bi-expand-final.png)
+    ![Screenshot of the treemap showing a tooltip with leaf specific data.](./media/end-user-drill/power-bi-expand-final.png)
 
 ## Show the data as you drill
 
-Use **Show as a table** to get a look behind the scenes. Each time you drill or expand, **Show as a table** displays the data being used to build the visual. This may help you understand how hierarchies, drill, and expand work together to build visuals.
+Use *Show as a table* to get a look behind the scenes. Each time you drill or expand, *Show as a table* displays the data that's used to build the visual. This feature makes it easier to see how hierarchies, drill, and expand work together to build visuals.
 
-In the upper-right corner, select **More actions** (...), and then select **Show as a table**.
+1. In the upper right corner, select **More actions** (...), and then select **Show as a table**.
 
-![Screenshot of the ellipses menu.](./media/end-user-drill/power-bi-more-actions.png)
+    ![Screenshot of the dropdown on the action bar. Show as a table is outlined.](./media/end-user-drill/power-bi-more-actions.png)
 
-Power BI opens the treemap so that it fills the canvas. The data that makes up the treemap displays below the visual.
+    The treemap opens so that it fills the canvas. The data that makes up the treemap displays below the visual.
 
-![Screenshot of treemap with data table displayed below.](./media/end-user-drill/power-bi-show-table.png)
+    ![Screenshot of treemap with data table displayed below.](./media/end-user-drill/power-bi-show-table.png)
 
-With the visual alone in the canvas, continue drilling. Watch the data in the table change to reflect the data being used to create the treemap. The following table shows the results of drilling down all fields at once from territory to store name. The first table represents the top level of the hierarchy, the treemap showing two leaves, one for **KY** and one for **TN**. The next three tables represent the treemap's data as you drill down all levels at once--from territory to city to postal code to store name.
+2. With the visual alone in the canvas, continue drilling. Watch the data in the table change to reflect the data that's being used to create the treemap. The following table shows the results of drilling down all fields at once from the territory level to the store name level.  
 
-![Screenshot of showing data for all four levels of drill down.](./media/end-user-drill/power-bi-show-data.png)
+    The first table represents the top level of the hierarchy. It shows the territories **KY** and **TN**. The next three tables represent the treemap's data as you drill down all levels at once, from territory to city to postal code to store name.
 
-Notice that the totals are the same for **City**, **PostalCode**, and **Name**. Matching totals won't always be the case.  But for this data, there's only one store in each postal code and in each city.  
+    ![Screenshot of showing data for all four levels of drill down.](./media/end-user-drill/power-bi-show-data.png)
+
+    Notice that the totals are the same for City, PostalCode, and Name. Totals don't always match, but for this data, there's only one store in each postal code and in each city.  
 
 ## Considerations and limitations
 
-- By default, drilling won't filter other visuals in a report. However, the report designer can change this default behavior. As you drill, look to see if the other visuals on the page are cross-filtering or cross-highlighting.
+- By default, drilling doesn't filter other visuals in a report. However, the report designer can change this default behavior. As you drill, look to see if the other visuals on the page are cross-filtering or cross-highlighting.
 
-- Viewing a report that has been shared with you requires a Power BI Pro or Premium license or for the report to be stored in Power BI Premium capacity. [Which license do I have?](end-user-license.md)
+- Viewing a report that has been shared with you requires a Power BI Pro or Premium license, or the report must be stored in Power BI Premium capacity. For more information, see [Find out which licenses you have](end-user-license.md#find-out-which-licenses-you-have).
 
 ## Next steps
 
@@ -147,4 +149,4 @@ Notice that the totals are the same for **City**, **PostalCode**, and **Name**. 
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Visit the Power BI Community](https://community.powerbi.com/)
