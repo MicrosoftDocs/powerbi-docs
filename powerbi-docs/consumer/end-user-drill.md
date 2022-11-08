@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-This article shows how to use the *drill mode* in the Microsoft Power BI service. You can explore in-depth details about your data by using drill down, drill up, and expand on your visual's data points.
+This article shows how to use the *drill mode* in the Microsoft Power BI service. You can explore in-depth details about your data by using the drill-down, drill-up, and expand features on your visual's data points.
 
 ## Drill mode requirements
 
@@ -24,35 +24,35 @@ Dates are a unique type of hierarchy. Report designers often add date hierarchie
 
 You can tell if a visual has a hierarchy by hovering over it. If the drill control options appear in the action bar, your visual has a hierarchy.
 
-![Screenshot of the drill icons.](./media/end-user-drill/power-bi-drill-icons.png)
+![Screenshot of the drill control icons on the action bar.](./media/end-user-drill/power-bi-drill-icons.png)
 
 ## Get started
 
-In this example, we're using a treemap that has a hierarchy made up of territory, city, postal code, and store name. The default chart looks at total units sold this year by territory. Territory is the top level of the hierarchy. Find this information in the **Filters** menu on the action bar.
+This example is a treemap that has a hierarchy made up of territory, city, postal code, and store name. The default chart looks at total units sold this year by territory. Territory is the top level of the hierarchy. Find this information in the **Filters** menu on the action bar.
 
 ![Screenshot of the treemap. The filters and drill features are outlined.](./media/end-user-drill/power-bi-treemap.png)  
 
 ## Ways to access the drill features
 
-You have two ways to access the drill down, drill up, and expand features for visuals that have hierarchies.
+You have two ways to access the drill-down, drill-up, and expand features for visuals that have hierarchies.
 
-- Hover over a visual to see and use the icons. First, turn on the drill down option by selecting the single downward arrow. The grey background indicates that the drill down option is enabled. Now you can select the drill up or expand options, or select a data point on the visual to drill down.
+- Hover over a visual to see and use the icons. First, turn on the drill-down option by selecting the single downward arrow. The grey background indicates that the drill-down option is enabled. Now you can select the drill-up or expand option, or select a data point on the visual to drill down.
 
     ![Screenshot of the drill options in the action bar.](./media/end-user-drill/power-bi-drill-hover.png)
 
-- Or, you can right-click a data point on the visual and select drill down, drill up, or expand.
+- Or, you can right-click a data point on the visual and select drill-down, drill-up, or expand.
 
-    ![Screenshot of the right-click dropdown from a data point.](./media/end-user-drill/power-bi-drill-action-menu.png)
+    ![Screenshot of the right-click menu from a data point.](./media/end-user-drill/power-bi-drill-action-menu.png)
 
 ## Drill down all fields at once
 
 ![The drill-down icon](./media/end-user-drill/power-bi-drill-icon3.png)
 
-You have several ways to drill into your visual. Select the double arrow drill down icon ![icon for drill all levels at once](./media/end-user-drill/power-bi-drill-icon3.png) to go to the next level in the hierarchy. For example, if you're at the territory level for Kentucky and Tennessee, you can drill down to the city level, then the postal code level, and, finally, the store name level for both states. Each step in the path shows you new information.
+You have several ways to drill into your visual. Select the double arrow drill-down icon ![icon for drill all levels at once](./media/end-user-drill/power-bi-drill-icon3.png) to go to the next level in the hierarchy. For example, if you're at the territory level for Kentucky and Tennessee, you can drill down to the city level, then the postal code level, and, finally, the store name level for both states. Each step in the path shows you new information.
 
 :::image type="content" source="./media/end-user-drill/power-bi-drill-path.png" alt-text="Diagram showing the steps of the drill pathway." lightbox="./media/end-user-drill/power-bi-drill-path.png#lightbox":::
 
-To get back to the territory level, select the drill up icon ![Drill-up icon](./media/end-user-drill/power-bi-drill-icon5.png) three times.
+To get back to the territory level, select the drill-up icon ![Drill-up icon](./media/end-user-drill/power-bi-drill-icon5.png) three times.
 
 ## Expand all fields at once
 
@@ -64,13 +64,13 @@ To get back to the territory level, select the drill up icon ![Drill-up icon](./
 
 ## Drill down one field at a time
 
-1. Select the drill down icon ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) to turn it on.
+1. Select the drill-down icon ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) to turn it on.
 
     Now you have the option of drilling down **one field at a time** by selecting a visual element, like a bar, bubble, or leaf.
 
-    ![Screenshot of visual with the drill down on/off icon turned on.](media/end-user-drill/power-bi-select-drill-icon.png)
+    ![Screenshot of visual with the drill-down on/off icon turned on.](media/end-user-drill/power-bi-select-drill-icon.png)
 
-    If you don't turn on the drill down option and you select a visual element, it cross-filters the other charts on the report page rather than drilling down.
+    If you don't turn on the drill-down option and you select a visual element, it cross-filters the other charts on the report page rather than drilling down.
 
 2. Select the leaf for Tennessee. The treemap now shows all the cities and territories in Tennessee that have a store.
 
@@ -90,7 +90,7 @@ To get back to the territory level, select the drill up icon ![Drill-up icon](./
 
     Notice that the title changes as you drill down and back up again.
 
-    Drill down to the store name by selecting the postal code **37919** leaf.
+4. Drill down to the store name by selecting the postal code **37919** leaf.
 
     ![Screenshot of the treemap showing Knoxville Lindseys.](media/end-user-drill/power-bi-drill-last.png)
 
@@ -98,20 +98,20 @@ To get back to the territory level, select the drill up icon ![Drill-up icon](./
 
 To get more detailed data on this chart, you can expand down one level in the hierarchy.  
 
-1. Drill back up to the postal code level.
+1. Select drill-up once to go back to the postal code level.
 2. Select the expand down icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png). The treemap now shows two levels of the hierarchy, postal code and store name.
 
     ![Screenshot of the treemap showing postal code and store name.](./media/end-user-drill/power-bi-expand.png)
 
-3. To see all four hierarchy levels of data for Tennessee, select the drill up arrow until you reach the second level, **Total Units This Year by Territory and City**.
+3. To see all four hierarchy levels of data for Tennessee, select the drill-up arrow until you reach the second level, **Total Units This Year by Territory and City**.
 
     ![Screenshot of the treemap showing all data for Tennessee.](media/end-user-drill/power-bi-expand-second.png)
 
-4. Confirm that the drill down option ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) is still turned on and select the expand down icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png). The treemap shows the same number of leaves, but each leaf has more detail. It now shows city, state, and postal code.
+4. Confirm that the drill-down option ![Screenshot of drill-down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png) is still turned on and select the expand down icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png). The treemap shows the same number of leaves, but each leaf has more detail. It now shows city, state, and postal code.
 
     ![Screenshot of the visual showing city, state, and postal code.](./media/end-user-drill/power-bi-expand-third.png)
 
-5. Select the expand down icon one more time to display all four hierarchy levels of detail for Tennessee. Hover over a leaf to see even more detail.
+5. Select the expand down icon ![Screenshot of the expand-down icon.](./media/end-user-drill/power-bi-drill-icon6.png) one more time to display all four hierarchy levels of detail for Tennessee. Hover over a leaf to see more detail.
 
     ![Screenshot of the treemap showing a tooltip with leaf specific data.](./media/end-user-drill/power-bi-expand-final.png)
 
@@ -121,7 +121,7 @@ Use *Show as a table* to get a look behind the scenes. Each time you drill or ex
 
 1. In the upper right corner, select **More actions** (...), and then select **Show as a table**.
 
-    ![Screenshot of the dropdown on the action bar. Show as a table is outlined.](./media/end-user-drill/power-bi-more-actions.png)
+    ![Screenshot of the menu on the action bar. Show as a table is outlined.](./media/end-user-drill/power-bi-more-actions.png)
 
     The treemap opens so that it fills the canvas. The data that makes up the treemap displays below the visual.
 
@@ -131,7 +131,7 @@ Use *Show as a table* to get a look behind the scenes. Each time you drill or ex
 
     The first table represents the top level of the hierarchy. It shows the territories **KY** and **TN**. The next three tables represent the treemap's data as you drill down all levels at once, from territory to city to postal code to store name.
 
-    ![Screenshot of showing data for all four levels of drill down.](./media/end-user-drill/power-bi-show-data.png)
+    ![Screenshot of showing data for all four levels of drilling down.](./media/end-user-drill/power-bi-show-data.png)
 
     Notice that the totals are the same for City, PostalCode, and Name. Totals don't always match, but for this data, there's only one store in each postal code and in each city.  
 
