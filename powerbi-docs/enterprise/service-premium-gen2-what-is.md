@@ -37,7 +37,7 @@ The following table lists some of the Premium Gen2 enhancements.
 
 The table below describes the resources and limits of each SKU.
 
-| Power BI          |     |      | Dataset |     |        |     |       | Dataflow |
+| Power BI          |     |      |         | Dataset |        |     |       | Dataflow |
 | ----------------- | --- | ---- | ------- | --- | ------ | --- | ----- | -------- |
 | **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks** |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |  4 |
