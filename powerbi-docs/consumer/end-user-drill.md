@@ -119,7 +119,7 @@ To get more detailed data on this chart, you can expand down one level in the hi
 
 ## Show the data as you drill
 
-Use *Show as a table* to get a look behind the scenes. Each time you drill or expand, *Show as a table* displays the data that's used to build the visual. This feature makes it easier to see how hierarchies, drill, and expand work together to build visuals.
+Use **Show as a table** to get a look behind the scenes. Each time you drill or expand, *Show as a table* displays the data that's used to build the visual. This feature makes it easier to see how hierarchies, drill, and expand work together to build visuals.
 
 1. In the upper right corner, select **More actions** (...), and then select **Show as a table**.
 
