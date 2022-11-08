@@ -81,7 +81,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near real-time results over large tables | No | Yes <sup>1</sup> |
 | [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
-| [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | No <sup>2</sup> |
+| [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | Yes |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](/power-bi/enterprise/service-encryption-byok), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
 | [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes <sup>1</sup> |
