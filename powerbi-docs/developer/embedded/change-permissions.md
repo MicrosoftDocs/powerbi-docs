@@ -21,7 +21,7 @@ When you [register your Azure AD app](./register-app.md), you grant it permissio
 >* *Embed for your organization*
 >* *Embed for your customers* with the *master user* authentication method
 
-## Change permissions on you Azure Active Directory app
+## Change permissions on your Azure Active Directory app
 
 Permission changes can be made programmatically, or in the Azure portal.
 

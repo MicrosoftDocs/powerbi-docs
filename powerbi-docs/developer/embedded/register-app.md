@@ -74,7 +74,7 @@ To register your application for your customers, fill in the following fields:
 
 * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can select *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
-    :::image type="content" source="media/register-app/register-app.png" alt-text="Screenshot showing how to register you application.":::
+    :::image type="content" source="media/register-app/register-app.png" alt-text="Screenshot showing how to register your application.":::
 
 Select **Register**.
 Your Azure AD app **Application ID** is displayed in the *Summary* box. Copy this value for later use.
