@@ -48,9 +48,9 @@ When you send a [Power BI REST API](/rest/api/power-bi/) request, it might arriv
 
 To fix the timeout exception, resend the request with the `preferClientRouting` parameter set to `true`. If your request arrives at the wrong cluster, the Power BI service returns a *307 Temporary Redirect* HTTP response. In such cases, you need to redirect your request to the new address specified in the response *HTTPS Location header*.
 
-## Update parameters API fails after a few minutes
+## The update parameters or update data sources API fails after a few minutes
 
-The [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-parameters-in-group) API may return the following error in the response header:
+The following generic error is sometimes returned in the response header:
 
 `HTTP/1.1 500 Internal Server Error`
 
@@ -58,7 +58,7 @@ The [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-p
 An error has occurred
 ```
 
-The error might indicate that you're updating a large dataset that isn't using the [large dataset](../../enterprise/service-premium-large-models.md) format. Use the large dataset format to avoid the error and get your dataset updated using the API call.
+When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-parameters-in-group) or the [Datasets - Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group) APIs, this error might indicate that you're updating a large dataset that isn't using the [large dataset](../../enterprise/service-premium-large-models.md) format. Use the large dataset format to avoid the error.
 
 ## Next steps
 
