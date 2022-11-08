@@ -46,7 +46,7 @@ All the above steps can be fully automated using [Power BI REST APIs](/rest/api/
 Before you can create service principal profiles, you need to:
 
 * Set up the service principal by following the *first three steps* of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
-* From a Power BI tenant admin account, enable creating profiles in the tenant.
+* From a Power BI tenant admin account, enable creating profiles in the tenant *using the same security group you used when you created the service principal*.
 
  :::image type="content" source="./media/embed-multi-tenancy/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
