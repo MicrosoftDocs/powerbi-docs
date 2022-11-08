@@ -18,9 +18,11 @@ This article shows how to use the *drill mode* in the Microsoft Power BI service
 
 ## Drill mode requirements
 
-To use the drill mode, the Power BI visual must have a hierarchy. For example, you might have a visual that looks at the Olympic medal count with a hierarchy of sport, specific types of the sport, and event. By default, the visual shows medal count by sport (gymnastics, skiing, aquatics, etc.). Then, you can select one of the visual elements, like a bar, line, or bubble, to display the individual sports. For example, selecting the aquatics element shows you data for swimming, diving, and water polo. Then, selecting the diving element takes you to the next level in the hierarchy and shows you details for springboard, platform, and synchronized diving events.
+To use the drill mode, the Power BI visual must have a hierarchy. For example, you might have a visual that looks at a sports competition medal count with a hierarchy of sport, specific types of the sport, and event. By default, the visual shows medal count by sport, like gymnastics, skiing, aquatics, etc. Then, you can select one of the visual elements, like a bar, line, or bubble, to display the individual sports. For example, selecting the aquatics element shows you data for swimming, diving, and water polo. Then, selecting the diving element takes you to the next level in the hierarchy and shows you details for springboard, platform, and synchronized diving events.
+
 
 Dates are a unique type of hierarchy. Report designers often add date hierarchies to visuals. A common date hierarchy is one that contains fields for the year, quarter, month, and day.
+
 
 You can tell if a visual has a hierarchy by hovering over it. If the drill control options appear in the action bar, your visual has a hierarchy.
 

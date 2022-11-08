@@ -452,6 +452,13 @@ sections:
           
           * Your data source is using parameters. You can't create a data source rule for a dataset that uses parameters. Create a parameter rule instead.                                                                             
 
+      - question: |
+          Why can't I connect to a dataset when creating a new dataset rule? 
+        answer: |
+          When constructing a dataset using Power BI Desktop, the connection string can be configured. Later, the dataset can be published and used by deployment pipelines in Power BI service. When creating the connection in Power BI Desktop, you can specify additional parameters. When specifying the parameters, the dataset source must be the first parameter listed. If you list any other parameters before the dataset source, you'll run into errors in Power BI service. In such cases, when configuring a new dataset rule, if you point to a dataset that was not configured properly in Power BI Desktop, deployment pipelines will not be able to create the rule.
+
+          To resolve this error, format the dataset connection in Power BI Desktop so that the dataset source appears in the first row. Then, republish the dataset.         
+
   - name: Deployment history
     questions:
 

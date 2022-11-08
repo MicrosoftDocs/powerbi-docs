@@ -105,12 +105,12 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 | Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- | --- | --- |
-| EM1 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
-| EM2 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
-| EM3 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
-| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
-| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
-| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
+| EM1/A1 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
+| EM2/A2 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
+| EM3/A3 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
+| P1/A4 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
+| P2/A5 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
+| P3/A6 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
 | P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 |
 | P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 |
 
