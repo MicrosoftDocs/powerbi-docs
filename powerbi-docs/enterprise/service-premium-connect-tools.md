@@ -200,10 +200,10 @@ With the XMLA endpoint, roles, role membership, row-level security (RLS), and ob
 
 For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined in Power BI Desktop prior to publishing to the service. Role membership is specified in the Power BI service. SSMS can also be used to create and manage roles. In most cases, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
-The following limitations apply when working with dataset roles through the XMLA endpoint:
+The following limitations apply when working with roles through the XMLA endpoint:
 
 - The only permission for a role that can be set for datasets is Read permission. Other permissions are granted using the Power BI security model.
-- Service Principals, which require workspace Member or Admin permissions cannot be added to roles.
+- Service Principals do not work with RLS and OLS, and cannot be added as model role members.
 - Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles.
 
 ### Setting data source credentials
