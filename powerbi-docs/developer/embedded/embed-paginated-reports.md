@@ -105,12 +105,12 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 | Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- | --- | --- |
-| EM1 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
-| EM2 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
-| EM3 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
-| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
-| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
-| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
+| EM1/A1 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
+| EM2/A2 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
+| EM3/A3 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
+| P1/A4 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
+| P2/A5 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
+| P3/A6 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
 | P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 |
 | P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 |
 
@@ -202,7 +202,7 @@ Skip [Step 3 - Create and publish a Power BI report](embed-sample-for-your-organ
 
 * You must use a **service principal**. Master user isn't supported.
 * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) isn't supported.
-* When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces), and the user generating the embed token should have *Write* permissions in the workspaces of the report and the dataset.
+* When embedding a paginated report with a Power BI dataset, both the paginated report and the Power BI dataset must reside in a Premium per capacity or Embedded workspace (they can reside in two different workspaces). The user generating the embed token should have *Write* permissions in the workspaces of both the report and the dataset.
 * Embedding a paginated report connected to Azure Analysis Services with Single Sign-on (SSO) enabled is not supported
 
 For a full list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md#natively-supported-data-sources).
@@ -212,6 +212,8 @@ For a full list of supported datasets and their authentication methods, see [Sup
 [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) is supported. However, if you're using PPU, only PPU users in your organization will be able to access your solution.
 
 ---
+
+* Paginated reports don't support client side events (like `loaded` or `rendered`)
 
 ## Next steps
 

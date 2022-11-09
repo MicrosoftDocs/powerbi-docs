@@ -81,8 +81,8 @@ Depending on the type of export, you need to pass different attributes to the [E
 |Attribute   |Page     |Single visual  |Comments|
 |------------|---------|---------|---|
 |`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a page in a specific state|
-|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the `getPages` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).   |
-|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the `getVisuals` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
+|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the [`getPages` client API](/javascript/api/overview/powerbi/get-visuals).   |
+|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the [`getVisuals` client API](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
 
 ### Bookmarks
 
@@ -138,14 +138,16 @@ When using the `exportToFile` API, you can pass your desired locale. The localiz
 
 ## Concurrent requests
 
-`exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 55 pages in one export request on an A4 SKU, will be processed concurrently. This process will take roughly the same amount of time as sending 55 export requests with one page each.
+The `exportToFile` API supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 55 pages in one export request on an A4 SKU, will be processed concurrently. This process will take roughly the same amount of time as sending 55 export requests with one page each.
 
 A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export 30 pages in an A2 SKU, the first 25 jobs will run, and the remaining five will wait for the next execution cycle.
 
 Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel. For example, if you have an A1 SKU with a limit of processing 20 max concurrent pages per export, you can process four 50 page reports at the same time. Only five pages from each job are being processed at a given time. As a result, the overall time to complete the four jobs will be shorter than exporting the entire report in one job.
 
 >[!NOTE]
->Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+>
+> * Exporting a Power BI report to file using the `exportToFile` API, is not supported for [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+> * The maximum limit for concurrent paginated reports is different and discussed in [Export paginated report to file](export-paginated-report.md).
 
 | Azure SKU      | Office SKU      | Maximum concurrent report pages |
 |----------------|-----------------|---------------------------------|
@@ -373,13 +375,13 @@ private async Task<ExportedFile> ExportPowerBIReport(
 
 ## Considerations and limitations
 
-* The `exporttofile` API is only available in for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2).
+* The `exporttofile` API is only available for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2).
 * An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * All related datasets in the report you're exporting must reside on a Premium or Embedded capacity, including datasets with a Direct Query connection.
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
-* The number of exports (single visuals or report pages) that can be included in an exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
+* The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
 * Dynamic Dataset binding isn't supported.
 * Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
