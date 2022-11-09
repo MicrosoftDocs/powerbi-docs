@@ -293,7 +293,7 @@ To identify the user, Power BI utilizes a unique name claim in Azure AD while AA
 
 ### Scale-out
 
-Power BI Premium supports [Power BI Query Scale Out](./../enterprise/service-premium-scale-out.md) which you can use if you're migrating from an AAS environment that's using [Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out). Unlike Azure, which charges you per scale-out instance, in Power BI scale-out is enabled by default as part of your Premium capacity and you don't get charged for it.
+Power BI Premium supports [Power BI query scale-out](../enterprise/service-premium-scale-out.md), which you can use if you migrate from an AAS environment that's using [Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out). Unlike Azure Analysis Services, which charges you per scale-out instance, Power BI scale-out is enabled by default for Premium capacities, and you don't get charged for it.
 
 ## Next steps
 
