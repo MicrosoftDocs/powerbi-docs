@@ -24,7 +24,7 @@ This article answers some of the questions users often have about how to set up,
 
 Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
 
-Billing and Global admins can also pay using [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is setup for your company.
+Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is setup for your company.
 
 Read more about [setting payment methods](/microsoft-365/commerce/billing-and-payments/manage-payment-methods#change-a-payment-method-for-a-single-subscription).
 Follow [these steps](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles#view-my-billing-profiles) to see your billing profile.
