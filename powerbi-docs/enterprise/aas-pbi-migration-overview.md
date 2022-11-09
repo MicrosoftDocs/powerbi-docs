@@ -192,6 +192,14 @@ After you've verified a successful migration, you can **pause** your Azure Analy
 
 If your server remains started after you’ve enabled server redirection, existing Azure Analysis Services models can still be queried by setting the **AsAzureRedirection** connection string property to **Disabled**.
 
+## Community
+
+Power BI has a vibrant community where MVPs, BI pros, and peers share expertise in discussion groups, videos, blogs and more. When learning about migration, be sure to check out these additional resources:
+
+- [Power BI Community](https://community.powerbi.com/)  
+- [Search "Migrate Azure Analysis Services to Power BI" on Bing](https://www.bing.com/search?q=migrate+azure+analysis+services+to+power+bi)
+
+
 ## See also
 
 [Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup)  
