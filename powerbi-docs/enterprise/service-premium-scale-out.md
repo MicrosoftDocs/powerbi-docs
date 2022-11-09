@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Power BI Query Scale Out
 
-Power BI Query Scale Out helps Power BI deliver fast performances while your reports and dashboards are consumed by a large audience. Scale Out uses your Premium capacity to host dataset copies. The copies make query response times shorter, and boost the performance of your reports and dashboards.
+Power BI Query Scale Out helps Power BI deliver fast performances while your reports and dashboards are consumed by a large audience. Scale Out uses your Premium capacity to host dataset copies. The copies boost the performance of your reports and dashboards, by increasing throughput when multiple users submit queries at the same time.
 
 When Power BI creates the dataset copies, it separates *read* only datasets from *read/write* datasets. The *read* datasets serve the Power BI report and dashboard consumption, and the *read/write* dataset is used when write operations and refreshes are required. During write operations and refreshes, the *read* datasets continue to serve your reports and dashboards without being disturbed. When needed, the *read* and *read/write* datasets are synced so that the *read* datasets are kept up-to-date. Using this method, Power BI Query Scale Out reduces the impact of write operations and dataset refreshes on your capacity.
 
@@ -41,9 +41,9 @@ Power BI Query Scale Out is enabled by default and can be disabled by A Power BI
 
 ## Connecting to a specific dataset type
 
-Power BI Desktop and Power BI service use a different default connection when they connect to a dataset. When you're connecting to a dataset with Power BI Desktop, you'll be connected to the *read* dataset. However, if you're viewing a dataset in Power BI Premium, you'll see the *read/write* dataset. The table below lists the default dataset types used by Power BI Desktop and Power BI service.
+Power BI Desktop and Power BI service use a different default connection when they connect to a dataset. When you're using a [live connection](./../connect-data/desktop-report-lifecycle-datasets.md) to connect to a dataset with Power BI Desktop, you'll be connected to the *read* dataset. However, if you're viewing a dataset in Power BI Premium, you'll see the *read/write* dataset. The table below lists the default dataset types used by Power BI Desktop and Power BI service.
 
-|Dataset type  |Power BI Desktop                                |Power BI service                                |
+|Dataset type  |Power BI Desktop live connection                |Power BI service                                |
 |--------------|------------------------------------------------|------------------------------------------------|
 |**Read**      |![Applies to.](../includes/media/yes.png)       |![Does not apply to.](../includes/media/no.png) |
 |**Red/write** |![Does not apply to.](../includes/media/no.png) |![Applies to.](../includes/media/yes.png)       |
@@ -73,7 +73,7 @@ Use `maxReadOnlyReplicas` to define the maximum number of read only replicas for
 * When deleting a Power BI Query Scale Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
 
 * The following operations are not supported on Power BI Query Scale Out datasets:
-    * Deleting data sources for direct query or Dual models 
+    * Deleting data sources for direct query or Dual models
     * Adding, deleting and updating roles
     * Changes that affect the dynamic security of the model. For example, adding or removing dynamic expressions, and changes to Object Level Security (OLS)
 
