@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/20/2022
+ms.date: 11/2/2022
 LocalizationGroup: Administration
 ---
 
@@ -22,6 +22,22 @@ Another way to share content with external guest users is in-place dataset shari
 
 
 This article provides a basic introduction to Azure AD B2B in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
+
+## Licensing Requirements 
+
+The following table lists the licensing requirements for B2B access to Power BI. To invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed: 
+
+|Providers|Free User|Pro User|PPU User|
+|---|----|----|----|
+|Free|Not Supported|Not Supported|Not Supported 
+|Pro Trial|Not Supported|Not Supported|Not Supported|  
+|Pro Workspace|Not Supported|Supported|Supported|  
+|PPU Workspace|Not Supported|Not Supported|Supported|  
+|PPC Workspace (Free User)|Not Supported|Not Supported|Not Supported|  
+|PPC Workspace (Pro/PPU)|Supported|Supported|Supported| 
+
+> [!NOTE] 
+> Pro Trial users can't invite guest users in Power BI. 
 
 ## Enable access
 
@@ -148,11 +164,27 @@ There are some limitations to the B2B experience that you should be aware of:
 
 * On the Home page, the “From external orgs” tab won't list content shared from other clouds.
 
+## Admin Info for B2B Collaboration 
+
+The following tenant level settings in Power BI provide controls to admins. See [Export and sharing admin settings]() for documentation on these settings: 
+  * [Allow Azure Active Directory guest users to access Power BI](../admin/service-admin-portal-export-sharing.md#allow-azure-active-directory-guest-users-to-access-power-bi)
+  * [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md#invite-external-users-to-your-organization)
+  * [Allow external guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization)
+  * [Show Azure Active Directory guests in lists of suggested people](../admin/service-admin-portal-export-sharing.md#show-azure-active-directory-guests-in-lists-of-suggested-people) 
+
+There are also Azure Active Directory settings that can limit what external guest users can do within your organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings: 
+  * [Manage External Collaboration Settings](https://learn.microsoft.com/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
+  * [Allow or block invitations to B2B users from specific organizations](https://learn.microsoft.com/azure/active-directory/external-identities/allow-deny-list)
+  * [Use Conditional Access to allow or block access](https://learn.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) 
+
+
+Additionally, to use in-place dataset sharing, tenant admins need to enable the following settings: 
+* [Allow guest users to work with shared datasets in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#allow-guest-users-to-work-with-shared-datasets-in-their-own-tenants)
+* [Allow specific users to turn on external data sharing](../collaborate-share/service-dataset-external-org-share-admin.md#allow-specific-users-to-turn-on-external-data-sharing) 
+
 ## Considerations and Limitations
 
 * External Azure AD B2B guests can view apps, dashboards, reports, and export data. They can't access workspaces or publish their own content. To remove these restrictions, you can use the [Allow external guest users to edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature.
-
-* To invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed. Pro Trial users can't invite guest users in Power BI.
 
 * Information protection in Power BI doesn't support B2B and multi-tenant scenarios. This means that although external users may be able to see sensitivity labels in Power BI:
     * They can't set labels
@@ -177,11 +209,6 @@ There are some limitations to the B2B experience that you should be aware of:
 
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
-* There are Azure Active Directory settings that can limit what external guest users can do within your overall organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings:
-  * [Manage External Collaboration Settings](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
-  * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list)
-  * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
-
 * If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.  
 
 ## Next steps
@@ -189,3 +216,5 @@ There are some limitations to the B2B experience that you should be aware of:
 For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 
 For information about Azure AD B2B, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).
+
+For information about in-place dataset sharing, see [Power BI in-place dataset sharing with guest users in external organizations(preview)](../collaborate-share/service-dataset-external-org-share-about.md). 
