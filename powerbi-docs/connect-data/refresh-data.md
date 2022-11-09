@@ -352,7 +352,7 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 
 ## Refresh cancellation
 
-Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or if you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to have dataset write permissions. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
+Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or when you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to have dataset write permissions. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
 
 >[!NOTE]
 >Datasets created as part of datamarts aren't supported.
