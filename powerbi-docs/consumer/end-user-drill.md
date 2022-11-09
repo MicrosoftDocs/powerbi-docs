@@ -91,7 +91,7 @@ The double arrow drill-down icon drills down all fields on the canvas at once. T
 
 ![The expand icon](./media/end-user-drill/power-bi-drill-icon6.png)
 
-The **Expand** option adds another hierarchy level to the current view. If you're at the territory level, showing Kentucky and Tennesse, you can expand all current leaves (boxes) at the same time. The first time you expand, city data is added for both Kentucky and Tennessee. Expand again and, in addition to the city data, postal code data is added for both Kentucky and Tennessee. Each step in the path shows the previous information and adds on one level of new information.
+The **Expand** option adds another hierarchy level to the current view. If you're at the territory level, showing Kentucky and Tennessee, you can expand all current leaves (boxes) at the same time. The first time you expand, city data is added for both Kentucky and Tennessee. Expand again and, in addition to the city data, postal code data is added for both Kentucky and Tennessee. Each step in the path shows the previous information and adds on one level of new information.
 
 :::image type="content" source="./media/end-user-drill/power-bi-expand-path.png" alt-text="Diagram showing the steps of the expand pathway." lightbox="./media/end-user-drill/power-bi-expand-path.png#lightbox":::
 
