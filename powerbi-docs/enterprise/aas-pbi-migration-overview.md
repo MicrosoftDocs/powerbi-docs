@@ -30,25 +30,25 @@ Ensure each environment meets the following prerequisites:
 
 - The Azure Analysis Services server that you're migrating from and the Power BI workspace that you're migrating to must be in the same tenant.
 
-- You must have [**Server administrator**](/azure/analysis-services/analysis-services-server-admins) permissions and belong to the Owner and/or Contributor roles for the subscription.
+- You must have [Server administrator](/azure/analysis-services/analysis-services-server-admins) permissions and belong to the Owner and/or Contributor roles for the subscription.
 
 - Azure Analysis Services must have an [Azure Storage account](/azure/storage/common/storage-account-create) with a container configured and backup enabled for the server as described in [Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup).
 
-- If Firewall is enabled for your server, ensure [**Allow access from the Power BI Service**](/azure/analysis-services/analysis-services-qs-firewall#configure-a-firewall) is set to **On**, or disable Firewall during migration.
+- If Firewall is enabled for your server, ensure [Allow access from the Power BI Service](/azure/analysis-services/analysis-services-qs-firewall#configure-a-firewall) is set to On, or disable Firewall during migration.
 
-- Your server must be started during migration. You can pause your server after migration is complete. 
+- Your server must be started during migration. You can pause your server after migration is complete.
 
 **In Power BI**
 
-- To migrate to Power BI, you must have a **Power BI Premium per Capacity**, **Power BI Premium per User**, or **Power BI Embedded** license.
+- To migrate to Power BI, you must have a [Power BI Premium per Capacity](service-premium-features.md), [Power BI Premium per User](service-premium-per-user-faq.yml), or [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) license.
 
-- You must have **Workspace administrator** permission. Power BI admins can view migrations for their tenant, however, they can't perform migrations unless they also have Workspace administrator permission.
+- You must have [Workspace administrator](../collaborate-share/service-roles-new-workspaces.md) permission. Power BI admins can view migrations for their tenant, however, they can't perform migrations unless they also have Workspace administrator permission.
 
-- You must have an [**Azure Data Lake Storage Gen 2 (ADLS Gen 2)**](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md) storage account in the same tenant and the workspace you're migrating to must be [connected](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) to that storage account. For the best performance, your ADLS Gen 2 storage should be located in the same region as the Azure storage account used for backing up your server.
+- You must have an [Azure Data Lake Storage Gen 2 (ADLS Gen 2)](/azure/storage/blobs/data-lake-storage-introduction) storage account in the same tenant and the [workspace you're migrating to must be connected](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) to that storage account. For the best performance, your ADLS Gen 2 storage should be located in the same region as the workspace capacity.
 
-- [**Large dataset storage format**](service-premium-large-models.md) must be enabled for the workspace.
+- [Large dataset storage format](service-premium-large-models.md) must be enabled for the workspace.
 
-- The XMLA endpoint must be [**Enabled for read-write**](service-premium-connect-tools.md#enable-xmla-read-write) for the capacity.
+- The XMLA endpoint must be [Enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write) for the capacity.
 
 - If a Microsoft on-premises data gateway is configured for the Azure Analysis Services server to connect to on-premises data sources, you must also [install and configure a gateway in Power BI](/power-bi/connect-data/service-gateway-onprem).
 
@@ -58,7 +58,7 @@ When using the Azure Analysis Services to Power BI Premium migration feature in 
 
 ### Migration
 
-Provided [prerequisites](#prerequisites) are met, when migrating a backup of the model database is created in the Azure storage account specified in the Azure Analysis Services server backup settings. The backup is then copied to the ADLS Gen 2 storage account connected to the workspace. The backup is then restored to the workspace.
+When migrating, a backup of the model database is created in the Azure storage account specified in the Azure Analysis Services server backup settings. The backup is then copied to the ADLS Gen 2 storage account connected to the workspace. The backup is then restored to the workspace. Build and Write permissions for the dataset are then configured.
 
 Migration includes:
 
@@ -96,7 +96,7 @@ The following applications connecting to a migrated dataset through redirection 
 | Visual Studio with Analysis Services projects (SSDT) | 3.0.6 |
 
 > [!NOTE]
->  PowerShell cmdlets, SQL Server Management Studio, and Server Profiler (installed with SSMS) versions that support server redirect are currently pending release.
+> PowerShell cmdlets, SQL Server Management Studio, and Server Profiler (installed with SSMS) versions that support server redirect are currently pending release.
 
 When you enable server redirection for a migration, the Azure Analysis Services server must exist, and can't be paused. The current user must be both server administrator and workspace administrator.
 
@@ -199,9 +199,7 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Power BI Community](https://community.powerbi.com/)  
 - [Search "Migrate Azure Analysis Services to Power BI" on Bing](https://www.bing.com/search?q=migrate+azure+analysis+services+to+power+bi)
 
-
 ## See also
 
 [Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup)  
-[Azure Data Lake Storage Gen 2 (ADLS Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)  
-
+[Azure Data Lake Storage Gen 2 (ADLS Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
