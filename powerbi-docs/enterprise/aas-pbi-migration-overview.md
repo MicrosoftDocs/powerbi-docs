@@ -24,17 +24,19 @@ Before beginning a migration, be sure to review [Migrate from Azure Analysis Ser
 
 ### Prerequisites
 
-The Azure Analysis Services server that you're migrating from and the Power BI workspace that you're migrating to must be in the same tenant.
-
 Ensure each environment meets the following prerequisites:
 
 **In Azure Analysis Services**
 
+- The Azure Analysis Services server that you're migrating from and the Power BI workspace that you're migrating to must be in the same tenant.
+
 - You must have [**Server administrator**](/azure/analysis-services/analysis-services-server-admins) permissions and belong to the Owner and/or Contributor roles for the subscription.
 
-- Azure Analysis Services must have an [Azure Storage account](/azure/storage/common/storage-account-create) with a container configured and backup enabled for the server, as described in [Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup).
+- Azure Analysis Services must have an [Azure Storage account](/azure/storage/common/storage-account-create) with a container configured and backup enabled for the server as described in [Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup).
 
 - If Firewall is enabled for your server, ensure [**Allow access from the Power BI Service**](/azure/analysis-services/analysis-services-qs-firewall#configure-a-firewall) is set to **On**, or disable Firewall during migration.
+
+- Your server must be started during migration. You can pause your server after migration is complete. 
 
 **In Power BI**
 
@@ -52,11 +54,11 @@ Ensure each environment meets the following prerequisites:
 
 ### Pairing
 
-When using the Azure Analysis Services to Power BI Premium migration feature in Power BI, you begin a migration by first creating a *connection* between an Azure Analysis Services server and a workspace. The connection is a unique pairing between a  server resource in Azure Analysis Services and a workspace in Power BI. Only one pairing can exist between a particular server and workspace. When a migration pair is created, you can then migrate one or more model databases from the server to the workspace as a dataset.
+When using the Azure Analysis Services to Power BI Premium migration feature in Power BI, after ensuring all prerequisites are met, you begin a migration by first creating a *connection* between an Azure Analysis Services server and a workspace. The connection is a unique pairing between a server resource in Azure Analysis Services and a workspace in Power BI. Only one pairing connection can exist between a particular server and workspace. When a migration pair is created, you can then migrate one or more model databases from the server to the workspace as a dataset.
 
 ### Migration
 
-Provided [prerequisites](#prerequisites) are met, when migrating, a backup of the model database is created in the Azure storage account specified in the Azure Analysis Services server backup settings. The backup is then copied to an ADLS Gen 2 storage account connected to the workspace. The backup is then restored to the workspace.
+Provided [prerequisites](#prerequisites) are met, when migrating a backup of the model database is created in the Azure storage account specified in the Azure Analysis Services server backup settings. The backup is then copied to the ADLS Gen 2 storage account connected to the workspace. The backup is then restored to the workspace.
 
 Migration includes:
 
@@ -68,14 +70,14 @@ Migration includes:
 
 Migration doesn't include:
 
-- Service principals configured for the Azure Analysis Services server and model database aren't included in the restored dataset.
-- Server redirection enabling client applications, tools, and automation processes to be automatically redirected to the newly migrated dataset in Power BI aren't included in the migration step.
+- Service principals configured for the Azure Analysis Services server and model database aren't included in the restored dataset in Power BI.
+- Server redirection enabling client applications, tools, and automation processes to be automatically redirected to the newly migrated dataset in Power BI are not included in the migration step. Redirection is enabled separately, after migration is completed.
 
 ### Redirection
 
-Server *redirection* enables [XMLA endpoint-based client tools](service-premium-connect-tools.md#client-applications-and-tools) and automation processes to continue to work without having to change the server name reference in the connection string. Client applications, tools, and automation processes are automatically redirected to the migrated dataset in Power BI. If a server alias is configured for the Azure Analysis Services server, it too will redirect to the dataset in Power BI.
+Server *redirection* enables [XMLA endpoint-based client tools](service-premium-connect-tools.md#client-applications-and-tools) and automation processes to continue to work without having to change the server name reference in the connection string. Client applications, tools, and automation processes are automatically redirected to the migrated dataset in Power BI. If a server alias is configured for the Azure Analysis Services server, it too will redirect to the migrated dataset in Power BI.
 
-Client applications and tools connecting to a migrated dataset must use the following minimum or higher [client library](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) versions:
+Client applications and tools connecting to a migrated dataset must use the following minimum or higher Analysis Services [client library](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) versions:
 
 |Client library  |File version  |Product version |
 |---------|---------|-------|
@@ -87,10 +89,10 @@ The following applications connecting to a migrated dataset through redirection 
 
 | Application | Minimum version |
 |-----|-----|
-|Microsoft Excel | 16.0.14203.10000 |
-|PowerShell cmdlets | TBD |
-|Server Profiler | 19 Preview 4 (to be released) |
-|SQL Server Management Studio (SSMS) | 19 Preview 4 (to be released) |
+|Microsoft Excel | 16.0.15826.10000 |
+|PowerShell cmdlets | To be determined |
+|Server Profiler | 19 Preview 4 (Not yet released) |
+|SQL Server Management Studio (SSMS) | 19 Preview 4 (Not yet released) |
 | Visual Studio with Analysis Services projects (SSDT) | 3.0.6 |
 
 > [!NOTE]
@@ -101,7 +103,7 @@ When you enable server redirection for a migration, the Azure Analysis Services 
 After enabling server redirection, you can then pause your server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You aren't billed while your server is paused. Deleting servers with server redirect is currently not supported.
 
 > [!CAUTION]
-> **During preview**, don't delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
+> **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
 
 ### Report rebind
 
@@ -109,15 +111,17 @@ After enabling server redirection, you can then pause your server in the Azure p
 
 ## To migrate from Azure Analysis Services to Power BI
 
+Before beginning a migration, first ensure [prerequisites](#prerequisites) are met. Open pages for both your Azure Analysis Services server and Power BI in your browser.
+
 ### Create a migration pairing
 
-1. In Power BI, select **Settings** > **Manage Azure AS migrations**.
+1. In Power BI, select **Settings** > **Azure Analysis Services migrations**.
 
     :::image type="content" source="media/aas-pbi-migration-overview/settings-manage-azure-as-migrations.png" alt-text="Screenshot shown Manage Azure AS migrations in settings menu.":::
 
-1. Select **+ New Migration**.
+1. On the **Azure Analysis Services to Power BI Premium** page, select **+ New Migration**.
 
-1. On the **Create AAS Migration** flyout, select **Connect to Azure**.
+1. On the **Create Azure Analysis Services migration** flyout, select **Connect to Azure**.
 
 1. Select the Azure **Subscription**, **Resource group**, and **Server name** with one or more model databases you want to migrate.
 
@@ -127,13 +131,13 @@ After enabling server redirection, you can then pause your server in the Azure p
 
     :::image type="content" source="media/aas-pbi-migration-overview/create-migration-flyout.png" alt-text="Screenshot of Create migration flyout.":::
 
-1. Verify your settings, and then select **Create**. After you've created a migration connection, it will appear on the **All migrations** page.
+1. Verify your settings, and then select **Create**.
 
 #### Migrate
 
-1. Select **All migrations** to show migration pairs created for your tenant.
+1. On the **Azure Analysis Services to Power BI Premium** page, select **All migrations** to refresh and show migration connection pairs created for your tenant.
 
-1. Under **Azure Analysis Services Server**, select on the server containing one or more model databases you want to migrate to the paired Power BI workspace.
+1. Under **Azure Analysis Services Server**, select the server containing one or more model databases you want to migrate to the paired Power BI workspace.
 
 1. In **Migration Details**, verify your Azure Analysis Services server and Power BI Premium workspace settings. Any prerequisites not met are shown. Model databases on the server that can be migrated are shown in **Datasets**.
 
@@ -141,20 +145,39 @@ After enabling server redirection, you can then pause your server in the Azure p
 
 1. For each model database you want to migrate, under **Include in Migration**, toggle the slider button to **Yes**.
 
-    To protect your target capacity, the maximum number of model databases that can be concurrently migrated is five.
+    Model databases are migrated in parallel, to reduce impact on your target capacity the maximum number of model databases that can be migrated concurrently is five.
 
 1. Select **Migrate**. If prerequisites are met, migration will begin. The migration process can take some time while the source model database is saved to backup storage, copied to ADLS Gen 2 storage, and restored to the workspace. You can leave this page and continue to use Power BI while migration is in process.
 
     Server redirection isn't enabled during migration. Clients will continue to connect to the model database in Azure Analysis Services until server redirection is enabled. Before enabling server redirection, it's recommended you thoroughly test connecting to the migrated dataset in Power BI.
 
+#### Monitor migration
+
+On the **Migration Details** page, in **Datasets**, select the model database you are migrating to show the **Dataset Migration Details** flyout. The flyout shows important details about your migration including status and migration progress. Remember, migration can take some time depending on the size and complexity of the model database being migrated.
+
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-details-progress.png" alt-text="Dataset migration details showing progress.":::
+
+When the migration process is completed, any issues are shown.
+
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-details-complete.png" alt-text="Dataset migration details showing completion.":::
+
 #### Enable redirection
 
 After a migration has successfully completed, you can then enable server redirection. When server redirection is complete, client applications and tools that meet the minimum version requirements along with automation processes are automatically redirected to the dataset in Power BI.
 
-On the **All migrations** page, for the migration pair you want to redirect, in the **Server redirection enabled** column, set the slider to **Enable**.
+To enable redirection, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations**, for the migration pair you want to redirect, in the **Server redirection enabled** column, set the slider to **Enable**.
 
-Redirection can take some time. You can leave the **All migrations** page and continue to use Power BI while redirection is in process.
-To check the status of server redirection, select **More options**, and then select **Redirection status**.
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-enable-redirection.png" alt-text="Enable redirection.":::
+
+Redirection can take some time. You can leave the page and continue to use Power BI while redirection is in process. To check the status of server redirection, select **More options**, and then select **Redirection status**.
+
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-redirection-status.png" alt-text="Check redirection status from More options menu.":::
+
+The **Server Redirection** flyout shows the status of redirection.
+
+:::image type="content" source="media/aas-pbi-migration-overview/dataset-migration-redirection-status-flyout.png" alt-text="Redirection status flyout.":::
+
+To disable server redirection, on the **Azure Analysis Services to Power BI Premium** page, under **All migrations**, simply move the **Server Redirection Enabled** slider to Off.
 
 #### Rebind
 
@@ -162,10 +185,15 @@ To check the status of server redirection, select **More options**, and then sel
 
 #### Pause server
 
-After you've verified a successful migration, you can **pause** your Azure Analysis Services server either in the Azure portal or by using the Azure Analysis Services REST API. **During preview**, don't delete your server because it could break server redirection.
+After you've verified a successful migration, you can **pause** your Azure Analysis Services server either in the Azure portal or by using the Azure Analysis Services REST API. 
 
-If your server remains started after you’ve enabled server redirection, existing Azure Analysis Services models can still be queried by setting the AsAzureRedirection connection string property to **Disabled**.
+> [!CAUTION]
+> **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
+
+If your server remains started after you’ve enabled server redirection, existing Azure Analysis Services models can still be queried by setting the **AsAzureRedirection** connection string property to **Disabled**.
 
 ## See also
 
-[Azure Analysis Services documentation](/azure/analysis-services/)  
+[Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup)  
+[Azure Data Lake Storage Gen 2 (ADLS Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)  
+
