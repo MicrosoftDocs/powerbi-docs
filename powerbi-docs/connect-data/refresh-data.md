@@ -352,12 +352,24 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 
 ## Refresh cancellation
 
-Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or if you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to be a [Power BI admin](./../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi) on the Premium capacity that runs the refresh. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
+Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or if you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to have dataset write permissions. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
 
 >[!NOTE]
->Datasets created as part of datamarts arn't supported.
+>Datasets created as part of datamarts aren't supported.
 
-<UI instructions + screenshot>
+To start a refresh go to the dataset you want to refresh, and select **Refresh now**.
+
+:::image type="content" source="media/refresh-data/start-dataset-refresh.png" alt-text="A screenshot of the refreshing a dataset.":::
+
+To stop a refresh follow these steps:
+
+1. Go to the dataset that's refreshing and select **Cancel refresh**.
+
+    :::image type="content" source="media/refresh-data/stop-dataset-refresh.png" alt-text="A screenshot of stopping a dataset refresh.":::
+
+2. In the *Cancel refresh* pop-up window, select **Yes**.
+
+    :::image type="content" source="media/refresh-data/cancel-refresh-window.png" alt-text="A screenshot of the cancel refresh pop-up window with the yes button highlighted.":::
 
 ## Best practices
 
