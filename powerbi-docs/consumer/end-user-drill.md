@@ -19,7 +19,7 @@ This article shows how to drill down in a visual in the Microsoft Power BI servi
 
 ## Drill requires a hierarchy
 
-When a visual has a hierarchy, you can drill down to reveal additional details. For example, you might have a visual that looks at Olympic medal count by a hierarchy made up of sport, discipline, and event. By default, the visual would show medal count by sport: gymnastics, skiing, aquatics, and so on. But, because it has a hierarchy, selecting one of the visual elements (like a bar, line, or bubble), would display an increasingly more-detailed picture. Selecting the **aquatics** element would show you data for swimming, diving, and water polo.  Selecting the **diving** element would show you details for springboard, platform, and synchronized diving events.
+When a visual has a hierarchy, you can drill down to reveal additional details. For example, you might have a visual that looks at sports competition medal count by a hierarchy made up of sport, discipline, and event. By default, the visual would show medal count by sport: gymnastics, skiing, aquatics, and so on. But, because it has a hierarchy, selecting one of the visual elements (like a bar, line, or bubble), would display an increasingly more-detailed picture. Selecting the **aquatics** element would show you data for swimming, diving, and water polo.  Selecting the **diving** element would show you details for springboard, platform, and synchronized diving events.
 
 Dates are a unique type of hierarchy.  Report *designers* often add date hierarchies to visuals. A common date hierarchy is one that contains year, quarter, month, and day. 
 

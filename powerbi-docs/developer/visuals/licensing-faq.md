@@ -24,7 +24,10 @@ This article answers some of the questions users often have about how to set up,
 
 Anyone can complete the checkout path in [AppSource](https://appsource.microsoft.com/), and pay for the licenses with a credit card.  
 
-If you're a billing or global admin of the tenant, you also have the option of paying through Invoicing.
+Billing and Global admins can also pay by [invoice](/microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile#paying-by-invoice) if such a payment method is setup for your company.
+
+Read more about [setting payment methods](/microsoft-365/commerce/billing-and-payments/manage-payment-methods#change-a-payment-method-for-a-single-subscription).
+Follow [these steps](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles#view-my-billing-profiles) to see your billing profile.
 
 :::image type="content" source="./media/licensing-faq/payment.png" alt-text="Screenshot of billing profile with Invoice selected.":::
 
@@ -52,6 +55,16 @@ Not yet. 
 
 If you're a company administrator, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) to see all subscriptions and to whom they're assigned.  
 If you aren't an administrator, speak to the administrator in your company.
+
+### How can I add a purchase order number to the transaction?
+
+You can add a purchase number to the billing profile of your order. At the final stage of your checkout, select **Add new** under the billing profile.
+
+:::image type="content" source="./media/licensing-faq/billing-profile.png" alt-text="Screenshot of the final stage of checkout with the Add new link highlighted.":::
+
+Add the purchase order number in the appropriate space.
+
+:::image type="content" source="./media/licensing-faq/add-purchase-order-number.png" alt-text="Screenshot of billing profile with box for adding purchase order number.":::
 
 ### Can we use a visual without having to upload it to organization visual?
 
@@ -94,12 +107,12 @@ Select the Visual you want to assign licenses for. In the next page, select the 
 
 ### Once I assign a license, how long does it take until I can use it?
 
-After you are assigned a licenses in the Microsoft 365 Admin Center:
+After you are assigned a license in the Microsoft 365 Admin Center, it should be available within an hour.
 
 * If you're using the licensed visual in the Power BI Service, refresh the report by hitting F5.
 * If you're using the licensed visual in the Power BI Desktop, close and reopen it.
 
-The license will be available within one hour, maximum, from the time you assign it. After the license is available, you need to refresh the report (by hitting F5 or reopening it) before you can use it.
+If, after you refresh, the license is still not available, wait a while and try again. It could take up to an hour.
 
 ### As an admin can I see the subscriptions that were purchased in my organization?
 

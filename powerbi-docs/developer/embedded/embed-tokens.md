@@ -12,7 +12,13 @@ ms.date: 04/14/2022
 
 # Embedded analytics application tokens
 
+<<<<<<< HEAD
 Consuming Power BI content (such as reports, dashboards, and tiles) requires an access token. Depending on the solution that you use, the access token can be either an [Azure AD token](#azure-ad-token), an [embed token](#embed-token), or both.
+=======
+✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+
+Consuming Power BI content (such as reports, dashboards and tiles) requires an access token. Depending on your solution, this token can be either an [Azure AD token](#azure-ad-token), an [embed token](#embed-token), or both.
+>>>>>>> 4efa835d5571671570ff9d0fd9a3cc00c423cd87
 
 In the *embed for your customers* solution, the application generates an embed token that grants Power BI content access to your web app users.
 
