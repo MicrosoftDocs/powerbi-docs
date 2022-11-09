@@ -28,7 +28,7 @@ You can tell if a visual has a hierarchy by hovering over it. If the drill contr
 
 ## Get started
 
-The following example is a treemap that has a hierarchy made up of territory, city, postal code, and store name. The treemap shows the total amount of units sold this year by territory. Territory is the top level of the hierarchy. The chart is filtered by the territories of Kentucky and Tennessee.
+The following example is a treemap that has a hierarchy made up of territory, city, postal code, and store name. The treemap shows the total number of units sold this year by territory. Territory is the top level of the hierarchy. The chart is filtered by the territories of Kentucky and Tennessee.
 
 ![Screenshot of the treemap. The filters and drill features are outlined.](./media/end-user-drill/power-bi-treemap.png)  
 
