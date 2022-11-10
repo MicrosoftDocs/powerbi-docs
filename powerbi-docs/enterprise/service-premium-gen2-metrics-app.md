@@ -34,6 +34,8 @@ The Gen2 metrics app has six pages:
 
 * [Artifact Detail](#artifact-detail)
 
+* [Help](#help)
+
 ## Overview
 
 This page provides an overview of the capacity performance. It's divided into the three sections listed below.
@@ -45,6 +47,9 @@ At the top of each page, the **CapacityID** field allows you to select the capac
 ### Artifacts
 
 The artifacts section is made up of two visuals, one on top of the other, in the left side of the page. The top visual is a stacked column table, and below it is a matrix table.
+
+>[!NOTE]
+>In all visuals, only Artifacts related to the most recent capacity will be visible.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Gen2 metrics app.":::
 
@@ -417,6 +422,15 @@ Use these visuals to review CPU consumption, operation duration and number of us
 * **Duration** - Each column displays the number of seconds used to complete each operation per hour.
 
 * **Users** - Each column displays the number of active users per hour.
+
+## Help
+The General tab in help page provides links to public documents for all the pages in Gen2 metrics app.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/help.png" alt-text="Screenshot of help page":::
+
+The help page also contains a section for release notes where Version no.and Change log  is mentioned.
+
+:::image type="content" source="media/service-premium-gen2-metrics-app/help-releasenote.png" alt-text="Screenshot of release note of help page":::
 
 ## Considerations and limitations
 
