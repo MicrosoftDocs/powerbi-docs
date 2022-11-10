@@ -111,7 +111,7 @@ To customize a theme directly in Power BI Desktop, you can select a theme that's
 
 You can find customizable theme settings in the following categories, reflected in the **Customize theme** window:
 
-- **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stick-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#set-structural-colors).
+- **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stick-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#setting-structural-colors).
 - **Text**: Text settings include font family, size, and color, which sets [the primary text class defaults](#set-formatted-text-defaults) for labels, titles, cards and KPIs, and tab headers.
 - **Visuals**: Visual settings include background, border, header, and tooltips.
 - **Page**: Page element settings include wallpaper and background.
@@ -313,7 +313,7 @@ A basic theme that defines these colors might appear as follows:
 }
 ```
 
-### Set structural colors
+### Setting structural colors
 
 Next, you can add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
 
@@ -385,7 +385,7 @@ You can use the `bold` Boolean setting to adjust the format. To make the text bo
 - `titleBold`: true
 
 > [!TIP]
-> The *light* variations of text classes take their light color from the [structural colors](#set-structural-colors) defined earlier.  If you are authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
+> The *light* variations of text classes take their light color from the [structural colors](#setting-structural-colors) defined earlier.  If you are authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
 
 See the following example theme that sets only the primary text classes:
 
