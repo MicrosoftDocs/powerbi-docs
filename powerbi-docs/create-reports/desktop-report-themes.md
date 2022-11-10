@@ -112,7 +112,7 @@ To customize a theme directly in Power BI Desktop, you can select a theme that's
 You can find customizable theme settings in the following categories, reflected in the **Customize theme** window:
 
 - **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stick-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#setting-structural-colors).
-- **Text**: Text settings include font family, size, and color, which sets [the primary text class defaults](#setting-formatted-text-defaults) for labels, titles, cards and KPIs, and tab headers.
+- **Text**: Text settings include font family, size, and color, which sets [the primary text class defaults](#set-formatted-text-defaults) for labels, titles, cards and KPIs, and tab headers.
 - **Visuals**: Visual settings include background, border, header, and tooltips.
 - **Page**: Page element settings include wallpaper and background.
 - **Filter pane**: Filter pane settings include background color, transparency, font and icon color, size, and filter cards.
@@ -313,7 +313,7 @@ A basic theme that defines these colors might appear as follows:
 }
 ```
 
-### Setting structural colors
+### Set structural colors
 
 Next, you can add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
 
@@ -322,7 +322,7 @@ The following table shows the six color classes you can format.  The **Color cla
 | Color class preferred name | Also called  | What it formats |
 |---|---|---|
 | **firstLevelElements** | **foreground** | Label background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors <br> Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color <br> Modern visual tooltips text and icon color (Preview)|
-| **secondLevelElements** |**foregroundNeutralSecondary**| Light [secondary text classes](#setting-formatted-text-defaults) <br> Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
+| **secondLevelElements** |**foregroundNeutralSecondary**| Light [secondary text classes](#set-formatted-text-defaults) <br> Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
 | **thirdLevelElements** |**backgroundLight** | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> Disabled button fill color (when the background is `FFFFFF`)  <br> Disabled button outline color (when the background is `FFFFFF`) <br> |
 | **fourthLevelElements** | **foregroundNeutralTertiary** | Legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color <br> Disabled button text font color <br> Disabled button icon line color <br> |
 | **background** | | Label background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color <br> Modern visual tooltips background color (Preview)|
@@ -345,7 +345,7 @@ Here's a sample theme that sets the color classes:
 ```
 
 > [!TIP]
-> If you use a dark theme or other colorful theme that diverges from the typical black `firstLevelElements` on white `background` style, set the values for other structural colors and the [primary text class colors](#setting-formatted-text-defaults). This ensures that data labels on charts with a label background match the anticipated style, are readable, and have visible axis gridlines.
+> If you use a dark theme or other colorful theme that diverges from the typical black `firstLevelElements` on white `background` style, set the values for other structural colors and the [primary text class colors](#set-formatted-text-defaults). This ensures that data labels on charts with a label background match the anticipated style, are readable, and have visible axis gridlines.
 
 ### Set formatted text defaults
 
@@ -385,7 +385,7 @@ You can use the `bold` Boolean setting to adjust the format. To make the text bo
 - `titleBold`: true
 
 > [!TIP]
-> The *light* variations of text classes take their light color from the [structural colors](#setting-structural-colors) defined earlier.  If you are authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
+> The *light* variations of text classes take their light color from the [structural colors](#set-structural-colors) defined earlier.  If you are authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
 
 See the following example theme that sets only the primary text classes:
 
