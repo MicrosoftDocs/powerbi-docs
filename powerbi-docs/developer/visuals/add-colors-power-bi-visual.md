@@ -86,7 +86,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 Then, apply the data from `dataPoints` to the [d3](https://d3js.org/)-selection `barSelection` inside the `update` method:
 
 ```typescript
-// This code is actual for d3 v5
+// This code is actually for d3 v5
 // in d3 v5 for this case we should use merge() after enter() and apply changes on barSelectionMerged
 this.barSelection = this.barContainer
     .selectAll('.bar')
