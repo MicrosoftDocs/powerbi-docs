@@ -355,7 +355,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### UK: Countries
+### UK: Countries/Regions
 
 | ID | ISO | Name |
 | --- | --- | --- |

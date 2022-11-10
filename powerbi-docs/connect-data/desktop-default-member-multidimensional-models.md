@@ -56,7 +56,7 @@ Now let's examine what happens when each of the columns is used in Power BI. Whe
     > [!NOTE]
     > *Population* is not in the ARP path of *City*, it is solely related to *State* and thus Power BI doesn't clear it.
 * **State** - Power BI displays all the *States* by clearing all **default members** for *City*, *State*, *Country* and *Population*.
-* **Country** - Power BI displays all the countries by clearing all **default members** for *City*, *State* and *Country*, but preserves the **default member** for *Population*.
+* **Country** - Power BI displays all the countries/regions by clearing all **default members** for *City*, *State* and *Country*, but preserves the **default member** for *Population*.
 * **City and State** - Power BI clears all **default members** for all columns.
 
 Groups displayed in the visual have their entire ARP path cleared. 

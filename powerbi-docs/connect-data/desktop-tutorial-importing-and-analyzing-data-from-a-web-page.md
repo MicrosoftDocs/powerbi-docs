@@ -56,7 +56,7 @@ To import the data:
 
 ## Shape data in Power Query Editor
 
-You want to make the data easier to scan by displaying only the years and the countries that won. You can use the Power Query Editor to perform these data shaping and cleansing steps.
+You want to make the data easier to scan by displaying only the years and the countries/regions that won. You can use the Power Query Editor to perform these data shaping and cleansing steps.
 
 First, remove all the columns except for two from the table. Rename these columns as *Year* and *Country* later in the process.
 
@@ -141,15 +141,15 @@ The query loads into the Power BI Desktop *Report* view, where you can see it in
 
 To create a visualization based on your data:
 
-1. Select the **Country** field in the **Fields** pane, or drag it to the report canvas. Power BI Desktop recognizes the data as country names, and automatically creates a **Map** visualization.
+1. Select the **Country** field in the **Fields** pane, or drag it to the report canvas. Power BI Desktop recognizes the data as country/region names, and automatically creates a **Map** visualization.
 
    ![Map visualization](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png)
 
-1. Enlarge the map by dragging the handles in the corners so all the winning country names are visible.  
+1. Enlarge the map by dragging the handles in the corners so all the winning country/region names are visible.  
 
    ![Enlarge map](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
 
-1. The map shows identical data points for every country that won a Euro Cup tournament. To make the size of each data point reflect how often the country has won, drag the **Year** field to **Drag data fields here** under **Size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries that have won more tournaments.
+1. The map shows identical data points for every country/region that won a Euro Cup tournament. To make the size of each data point reflect how often the country/region has won, drag the **Year** field to **Drag data fields here** under **Size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries/regions that have won more tournaments.
 
    ![Drag Count of Year into Size](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
 
@@ -181,7 +181,7 @@ Your map visualization now looks like this:
 
 ### Change the visualization type
 
-You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union, because that country no longer exists on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values.
+You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union, because that country/region no longer exists on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values.
 
 To change the map to a pie chart, select the map and then select the **Pie chart** icon in the **Visualizations** pane.
 
@@ -189,7 +189,7 @@ To change the map to a pie chart, select the map and then select the **Pie chart
 
 >[!TIP]
 >- You can use the **Data colors** formatting options to make "Germany" and "West Germany" the same color. 
->- To group the countries with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort by Count of Year**.
+>- To group the countries/regions with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort by Count of Year**.
 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
