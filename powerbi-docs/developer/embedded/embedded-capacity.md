@@ -103,7 +103,7 @@ The table below describes the resources and limits of each SKU.
 
 | Capacity          |     |      |         | Dataset |        |     |       | Dataflow |
 | ----------------- | --- | ---- | ------- | --- | ------ | --- | ----- | -------- |
-| **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks** |
+| **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |  4 |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |  8 |
 | EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  | 16 |
@@ -120,6 +120,8 @@ The table below describes the resources and limits of each SKU.
 <sup>3</sup> The *RAM per dataset (GB)* column (also called the *model size limit*) represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
 <sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+
+<sup>5</sup> Learn more about [parallel tasks in dataflows](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium).
 
 Note the amount of memory available on each node size described in the *RAM (GB)* column of the table. It's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded A4 capacity, a *single dataset* size is limited to 25 GB, and not the total memory footprint of *all* datasets handled at the same time.
 
