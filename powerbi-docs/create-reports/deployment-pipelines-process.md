@@ -348,7 +348,7 @@ When deploying Power BI items, the ownership of the deployed item may change. Re
 The table below lists required permissions for popular deployment pipeline actions. Unless specified otherwise, for each action you'll need all the listed permissions.
 
 |Action  |Required permissions  |
-|---------|---------|
+|--------|----------------------|
 |View the list of pipelines in your organization |No license required  (free user)         |
 |Create a pipeline     |A user with one of the following licenses:<ul><li>Pro</li><li>PPU</li><li>Premium</li></ul>         |
 |Delete a pipeline     |Pipeline admin         |
