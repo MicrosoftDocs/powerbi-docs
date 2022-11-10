@@ -16,7 +16,7 @@ ms.date: 04/14/2022
 
 Consuming Power BI content (such as reports, dashboards and tiles) requires an access token. Depending on your solution, this token can be either an [Azure AD token](#azure-ad-token), an [embed token](#embed-token), or both.
 
-In the *embed for your customers* solution, the application generates an embed token that grants Power BI content access to your web app users.
+In the *embed for your customers* solution, the application generates an embed token that grants your web users access to Power BI content.
 
 >[!NOTE]
 >When you use the embed for your customers solution, you can use any authentication method to allow access to your web app.
@@ -33,7 +33,7 @@ For both embed for your customers and embed for your organization solutions, you
 
 ## Embed token
 
-When you use the embed for your customers solution, your web app needs to know which Power BI content that a user can access. Use the [embed token](/rest/api/power-bi/embedtoken) REST APIs to generate an embed token, which specifies the following information:
+When you use the embed for your customers solution, your web app needs to know which Power BI content a user can access. Use the [embed token](/rest/api/power-bi/embedtoken) REST APIs to generate an embed token, which specifies the following information:
 
 * The content your web app user can access
 
@@ -47,10 +47,9 @@ This section describes the different authentication flows for the embed for your
 
 ### [Embed for your customers](#tab/embed-for-customers)
 
-The embed for your customers solution uses a non-interactive authentication flow. In an embed for your customer solution, users don't sign in to Azure AD to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD and generates the embed token. The reserved identity can be either a *service principal* or a *master user*:
+The embed for your customers solution uses a non-interactive authentication flow. In an embed for your customer solution, users don't sign in to Azure AD to access Power BI. Instead, your web app uses a reserved Azure AD identity to authenticate against Azure AD and generate the embed token. The reserved identity can be either a *service principal* or a *master user*:
 
 * **[Service principal](embed-service-principal.md)**
-
     Your web app uses the Azure AD [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) to authenticate against Azure AD and get an *app-only Azure AD token*. This *app-only* authentication method is recommended by Azure AD.
 
     When using a service principal, you need to [enable Power BI APIs access](embed-sample-for-customers.md#step-6---service-principal-api-access) in the Power BI service *admin* settings. Enabling access allows your web app to access the Power BI REST APIs. To use API operations on a workspace, the service principal needs to be a *member* or an admin of the workspace.
@@ -87,7 +86,7 @@ The following diagram shows the authentication flow for the embed for your custo
 
 ### [Embed for your organization](#tab/embed-for-your-organization)
 
-The embed for your organization solution uses an interactive authentication flow. The web app users authenticate against Azure AD by using their own Power BI credentials. They need to consent to the API permissions that were set when the app was registered with Azure AD. A Microsoft *Permissions requested* dialog window asks users to grant these permissions. After consent is granted, the user can embed the Power BI content that the user has access to.
+The embed for your organization solution uses an interactive authentication flow. The web app users authenticate against Azure AD by using their own Power BI credentials. They need to consent to the API permissions that were set when the app was registered with Azure AD. A Microsoft **Permissions requested** dialog window asks users to grant these permissions. After consent is granted, the user can embed the Power BI content that the user has access to.
 
 :::image type="content" source="media/embed-tokens/requested-premissions.png" alt-text="Screenshot of the Microsoft permissions requested pop-up window, which asks customers to grant permissions for accessing Power BI.":::
 
