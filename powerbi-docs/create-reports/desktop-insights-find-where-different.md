@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 Often in visuals, you see a data point, and wonder about whether distribution would be the same for different categories. With **insights** in **Power BI** you can find out with just a few clicks.
 
-Consider the following visual, which shows *Total Sales* by *Country*. As the chart shows, most sales come from the United States, accounting for 57% of all sales with lessor contributions coming from the other countries/regions. It's often interesting in such cases to explore whether that same distribution would be seen for different sub-populations. For example, is this the same for all years, all sales channels, and all categories of products?  While you could apply different filters and compare the results visually, doing so can be time consuming and error prone. 
+Consider the following visual, which shows *TotalSales* by *CountryName*. As the chart shows, most sales come from the United States, accounting for 57% of all sales with lessor contributions coming from the other countries/regions. It's often interesting in such cases to explore whether that same distribution would be seen for different sub-populations. For example, is this the same for all years, all sales channels, and all categories of products?  While you could apply different filters and compare the results visually, doing so can be time consuming and error prone. 
 
 ![Chart with big distribution](media/desktop-insights-find-where-different/find-where-different_01.png)
 
@@ -55,14 +55,14 @@ You can think of the algorithm as taking all the other columns in the model, and
 
 You likely wonder what *different* means. For example, say that the overall split of sales between the USA and Canada was the following:
 
-|Country  |Sales ($M)|
+|Country/Region  |Sales ($M)|
 |---------|----------|
 |USA      |15        |
 |Canada   |5         |
 
 Then for a particular category of product *“Road Bike*) the split of sales might be:
 
-|Country  |Sales ($M)|
+|Country/Region  |Sales ($M)|
 |---------|----------|
 |USA      |3        |
 |Canada   |1         |
@@ -71,14 +71,14 @@ While the numbers are different in each of those tables, the relative values bet
 
 By contrast consider a measure like margin, that is calculated as Profit/Cost, and say that the overall margins for the USA and Canada were the following
 
-|Country  |Margin (%)|
+|Country/Region  |Margin (%)|
 |---------|----------|
 |USA      |15        |
 |Canada   |5         |
 
 Then for a particular category of product *“Road Bike*) the split of sales might be:
 
-|Country  |Margin (%)|
+|Country/Region  |Margin (%)|
 |---------|----------|
 |USA      |3        |
 |Canada   |1         |

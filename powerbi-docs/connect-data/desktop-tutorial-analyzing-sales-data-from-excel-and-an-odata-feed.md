@@ -241,7 +241,7 @@ Finally, create a map visualization showing order amounts from each country or r
 
 1. With nothing selected on the canvas, select **ShipCountry** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. Power BI Desktop detects that the data is country or region names. It then automatically creates a map visualization, with a data point for each country or region with orders.
 
-1. To make the data point sizes reflect each country's order amounts, drag the **LineTotal** field onto the map. You can also drag it to **Add data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country or region.
+1. To make the data point sizes reflect each country's/region's order amounts, drag the **LineTotal** field onto the map. You can also drag it to **Add data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country or region.
 
    ![LineTotals by ShipCountry map visualization](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/linetotals-by-shipcountry-map-visualization.png)
 
