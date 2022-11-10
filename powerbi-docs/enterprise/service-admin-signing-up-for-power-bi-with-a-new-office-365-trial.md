@@ -43,9 +43,11 @@ Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.mi
 1. After the code is validated, the dialog shows your new user name and domain, for example, *you@yourcompany.onmicrosoft.com*. Create a password, and then select **Next**.
    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-setup-password.png" alt-text="Screenshot showing the newly created user name and domain name with input boxes for entering and confirming a password. Next is highlighted.":::
 
-1. Select the number of licenses and verify the subtotal. This amount is automatically charged after the end of the trial period. Select **Add payment method**.
-   :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-e5-payment.png" alt-text="Screenshot of the quantity and payment page, you can select the number of licenses needed. A subtotal shows the monthly subscription rate.":::
+1. Select the number of licenses you want and select **Update** to calculate your subtotal. Select **Add payment method**.
+   :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-e5-payment.png" alt-text="Screenshot of the quantity and payment page, you can select the number of licenses needed. Update is highlighted.":::
+
 1. Enter your payment information, and then select **Save**.
+   :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-add-payment.png" alt-text="Screenshot of the credit card payment information page. Save is highlighted.":::
 
 You now have an email address that you can use to sign up for Power BI. To sign up, go to [Sign up for the Power BI service as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 
