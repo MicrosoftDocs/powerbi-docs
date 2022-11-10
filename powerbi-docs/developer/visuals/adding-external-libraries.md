@@ -22,13 +22,13 @@ This article describes how to use external libraries in Power BI visuals. This a
 >[!NOTE]
 > To add typings to your JavaScript library, and get [Intellisense](https://code.visualstudio.com/docs/editor/intellisense) and compile-time safety, make sure that you install the appropriate package.
 
-### Installing the d3 library
+### Installing the D3 library
 
-This section provides an example of installing the [d3 library](https://www.npmjs.com/package/d3) and the [@types/d3](https://www.npmjs.com/package/@types/d3) package using [npm](https://www.npmjs.com/) in the code of a Power BI visual.
+This section provides an example of installing the [D3 library](https://www.npmjs.com/package/d3) and the [@types/d3](https://www.npmjs.com/package/@types/d3) package using [npm](https://www.npmjs.com/) in the code of a Power BI visual.
 
 For a full example, see the [Power BI visualizations](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L29) code.
 
-1. Install the *d3* package and the *d3 types* package.
+1. Install the *d3* package and the *@types/d3* package.
 
     ```powershell
     npm install d3@5 --save
