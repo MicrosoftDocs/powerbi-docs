@@ -50,7 +50,7 @@ There are many ways to drill into your visual. Selecting the double arrow drill-
 
 :::image type="content" source="./media/end-user-drill/power-bi-drill-path.png" alt-text="Diagram showing the steps of the drill pathway." lightbox="./media/end-user-drill/power-bi-drill-path.png#lightbox":::
 
-To go up a level in the hierarchy, select the drill-up icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon5.png"::: .
+To go up a level in the hierarchy, select the drill-up icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon5.png":::.
 
 ## Drill down one field at a time
 
@@ -103,7 +103,7 @@ The following example shows how to use this feature to expand all fields at one 
 
     ![Screenshot of the treemap showing all data for Tennessee.](media/end-user-drill/power-bi-expand-second.png)
 
-2. Confirm that the drill-down option :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon2.png"::: is still turned on and select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png"::: . The treemap shows the same number of leaves, but each leaf has more detail. It now shows city, state, and postal code.
+2. Confirm that the drill-down option :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon2.png"::: is still turned on and select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png":::. The treemap shows the same number of leaves, but each leaf has more detail. It now shows city, state, and postal code.
 
     ![Screenshot of the visual showing city, state, and postal code.](./media/end-user-drill/power-bi-expand-third.png)
 
@@ -116,7 +116,7 @@ The following example shows how to use this feature to expand all fields at one 
 To get detailed data for one field, you can expand down one level in the hierarchy.
 
 1. From the previous step, select the drill-up icon until you reach the postal code level.
-2. Select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png"::: . The treemap now shows two levels of the hierarchy, postal code and store name.
+2. Select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png":::. The treemap now shows two levels of the hierarchy, postal code and store name.
 
     ![Screenshot of the treemap showing postal code and store name.](./media/end-user-drill/power-bi-expand.png)
 
