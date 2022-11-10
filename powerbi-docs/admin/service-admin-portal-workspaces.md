@@ -1,6 +1,6 @@
 ---
 title: View workspaces
-description: Learn how to view info and about Power BI workspaces as well as manage workspaces as an administrator.
+description: Learn how to view and understand info about Power BI workspaces and manage workspaces as an administrator.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
