@@ -12,9 +12,14 @@ ms.custom: intro-overview
 ---
 # Set up Power BI Embedded
 
-Once you decided that you want to start using Power BI Embedded to share your reports with others, you need to  use the [Power BI Embedded analytics setup tool](https://app.powerbi.com/embedsetup) to get started. This article shows you how.
+✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+
+Once you decide that you want to start using Power BI Embedded to share your reports with others, you need to use the [Power BI Embedded analytics setup tool](https://app.powerbi.com/embedsetup) to get started. This article shows you how.
+
+To use Power BI embedded analytics, you need to register an Azure Active Directory (Azure AD) application in Azure. The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
 
 ## Prerequisite
+
 
 To set up a Power BI Embedded analytics environment, you need one of the following:
 
