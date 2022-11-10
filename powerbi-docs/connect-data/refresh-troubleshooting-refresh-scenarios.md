@@ -29,7 +29,7 @@ After you've confirmed these requirements are met, take a look through the follo
 
 If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate datasets in Power BI. An admin uses the following area in the Power BI admin portal.
 
-![Screenshot of admin area for changing Power B I email refresh notifications.](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
+![Screenshot of admin area for changing Power BI email refresh notifications.](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
 
 ## Refresh using Web connector doesn't work properly
 
@@ -58,7 +58,7 @@ For a list of errors you might encounter with dashboard tiles, and explanations,
 
 ## Refresh fails when updating data from sources that use Azure AD OAuth
 
-The Azure Active Directory (**Azure AD**) OAuth token, used by many different data sources, expires in approximately one hour. Sometimes loading data takes longer than the token expiration (more than one hour), since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
+The Azure Active Directory (**Azure AD**) OAuth token, used by many different data sources, expires in approximately one hour. Sometimes that token expires before the data has finished loading, since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
 
 Data sources that use Azure AD OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, OAuth might be the reason.
 
@@ -72,9 +72,9 @@ If you want to connect to a data source from Power BI service by using OAuth2, t
 
 The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that's processed during refresh. This limit accounts for the compression, and therefore is much higher than the 1-GB maximum dataset size. Datasets in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
 
-## Scheduled refresh timeout
+## Scheduled refresh time-out
 
-Scheduled refresh for imported datasets time out after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
+Scheduled refresh for imported datasets time out after two hours. This time-out is increased to five hours for datasets in **Premium** workspaces. If you encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
 
 ## Scheduled refresh failures
 
