@@ -1,0 +1,15 @@
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Power Platform
+    tocHref: /power-platform/
+    topicHref: /power-platform/index
+    items:
+    - name: Power BI
+      tocHref: /power-bi/
+      topicHref: /power-bi/index
+      items:
+      - name: Administration
+        tocHref: /power-bi/admin/
+        topicHref: /power-bi/admin/index
