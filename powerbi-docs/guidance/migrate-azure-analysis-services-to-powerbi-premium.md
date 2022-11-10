@@ -81,7 +81,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Hybrid tables](../connect-data/service-dataset-modes-understand.md#hybrid-tables), which comprise in-memory and DirectQuery partitions that can help deliver near real-time results over large tables | No | Yes <sup>1</sup> |
 | [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
-| [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | Yes |
+| [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | No |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](/power-bi/enterprise/service-encryption-byok), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
 | [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes <sup>1</sup> |
@@ -293,7 +293,7 @@ To identify the user, Power BI utilizes a unique name claim in Azure AD while AA
 
 ### Scale-out
 
-Power BI Premium supports [Power BI query scale-out](../enterprise/service-premium-scale-out.md), which you can use if you migrate from an AAS environment that's using [Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out). Unlike Azure Analysis Services, which charges you per scale-out instance, Power BI scale-out is enabled by default for Premium capacities, and you don't get charged for it.
+[Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out) isn't supported by Power BI Premium.
 
 ## Next steps
 

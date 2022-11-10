@@ -27,7 +27,7 @@ When Power BI creates the dataset copies, it separates *read* only datasets from
 
 ## Disable Power BI Query Scale Out
 
-Power BI Query Scale Out is enabled by default and can be disabled by A Power BI admin. To disable this feature, follow the instructions below.
+Power BI Query Scale Out is enabled by default and can be disabled by a Power BI admin. To disable this feature, follow the instructions below.
 
 1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
 
@@ -41,32 +41,24 @@ Power BI Query Scale Out is enabled by default and can be disabled by A Power BI
 
 ## Connecting to a specific dataset type
 
-Power BI Desktop and Power BI service use a different default connection when they connect to a dataset. When you're using a [live connection](./../connect-data/desktop-report-lifecycle-datasets.md) to connect to a dataset with Power BI Desktop, you'll be connected to the *read* dataset. However, if you're viewing a dataset in Power BI Premium, you'll see the *read/write* dataset. The table below lists the default dataset types used by Power BI Desktop and Power BI service.
+Power BI Desktop and Power BI service use a different default connection when they connect to a dataset. The connection also depends on the type of operation you're performing. For example, if your're using a [live connection](./../connect-data/desktop-report-lifecycle-datasets.md) to connect to a dataset with Power BI Desktop to view a report, you'll be connected to the *read* dataset. However, if you're viewing a report in Power BI Premium, you'll be connected to the *read/write* dataset. The table below lists the default dataset types used by Power BI Desktop and Power BI service per operation.
 
-|Dataset type  |Power BI Desktop live connection                |Power BI service                                |
-|--------------|------------------------------------------------|------------------------------------------------|
-|**Read**      |![Applies to.](../includes/media/yes.png)       |![Does not apply to.](../includes/media/no.png) |
-|**Red/write** |![Does not apply to.](../includes/media/no.png) |![Applies to.](../includes/media/yes.png)       |
+|Operation                  |Power BI Desktop live connection |Power BI service |
+|---------------------------|---------------------------------|-----------------|
+|**Connecting to a report** |Read                             |Read/write       |
+|**Refreshes**              |Read/write                       |Read/write       |
+|**Write operations**       |Read/write                       |Read/write       |
 
 To connect to a different type of dataset, you can append one of the following strings to the dataset's URL.
 
 * **Read** - `?readonly`
 * **Read/write** - `?readwrite`
 
-## REST APIs
-
-You can use the [Update Dataset](/rest/api/power-bi/datasets/update-dataset) and [Update Dataset In Group](/rest/api/power-bi/datasets/update-dataset-in-group) RET APIs to to update dataset properties. When using the APIs, `targetStorageMode` must be set to *PremiumFiles*.
-
-Use `maxReadOnlyReplicas` to define the maximum number of read only replicas for a Power BI Query Scale Out dataset. If this setting isn't specified it's ignored.  
-* **-1** - Use the system default
-* **0** -  Disable Power BI Query Scale Out for this dataset  
-* **>0** (values larger than zero) - Specify the number of read only Power BI Query Scale Out dataset copies.
-
 ## Considerations and limitations
 
 * Client applications can connect to the *read* dataset copy through the XMLA endpoint, provided they support the mode specified on the connection string. Client applications can also connect to the *read/write* instance using XMLA endpoint.
 
-* REST API refreshes must be synced with the *read* dataset copies using the manual sync REST API.
+* Manual and scheduled refreshes are automatically synchronized with the latest version of the *read* dataset copies. REST API refreshes must be synced with the *read* dataset copies using the manual sync REST API.
 
 * XMLA updates and refreshes must be synced with the *read* dataset copies using the manual Sync REST API.
 
