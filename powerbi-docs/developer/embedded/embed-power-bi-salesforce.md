@@ -31,7 +31,7 @@ Here are some advantages of the `PowerBiEmbedManager` Apex class:
 
 * The `PowerBiEmbedManager` Apex class is programmed to interact with both Azure AD and the [Power BI REST APIs](/rest/api/power-bi/).
 
-* The `PowerBiEmbedManager` Apex class implements [Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) when it interacts with Azure AD to acquire an app-only access token. App-only access tokens are important because they can call the Power BI REST APIs under the identity of a service principal, instead of calling under the identity of a user.
+* The `PowerBiEmbedManager` Apex class implements [Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) when it interacts with Azure AD to acquire an app-only access token. App-only access tokens are important because they allow you to call the Power BI REST APIs under the identity of a service principal, instead of calling under the identity of a user.
 
 ### Lightning Aura
 
@@ -43,7 +43,7 @@ To embed Power BI content by using the embed for your customers Salesforce solut
 
 ## Embed for your organization solution
 
-In the embed for your organization solution, you create an embedded application that requires your customers to sign in with their own Power BI credentials. The embed for your organization solution is also known as a user owns data solution. Signed in customers can view and interact with the embedded content according to their Power BI permissions.
+In the embed for your organization solution, you create an embedded application that requires your customers to sign in with their own Power BI credentials. The embed for your organization solution is also known as a *user owns data* solution. Signed in customers can view and interact with the embedded content according to their Power BI permissions.
 
 ### Single page application
 
