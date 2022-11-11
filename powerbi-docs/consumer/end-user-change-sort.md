@@ -30,23 +30,19 @@ This video demonstrates sorting features, like how to change the sort order, and
 
 ## Get started
 
-To choose a sorting option, open any report that you have created or that has been shared with you, select a visual that can be sorted, and choose **More actions** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by**, and **Sort axis**.
+To choose a sorting option, open any report that you have created or that has been shared with you, select a visual that can be sorted, and choose **More options** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by** and **Sort axis**.
 
-![Screenshot showing the visual's drop down menu. The sorting options are outlined.](media/end-user-change-sort/power-bi-actions.png)
+:::image type="content" source="media/end-user-change-sort/power-bi-actions.png" alt-text="Screenshot showing the visual's More options menu. The sorting options are outlined.":::
 
 ## Sort alphabetically or numerically
 
-Visuals can be sorted alphabetically by the names of the categories in the visual or by the numeric values of each category. For example, in this chart's X-axis, the store **Name** is sorted alphabetically.
+Visuals can be sorted alphabetically by the names of the categories in the visual or by the numeric values of each category. For example, in this chart's Y-axis, the **Sales Stage** is sorted alphabetically.
 
-![Screenshot showing a bar chart with the X axis sorted alphabetically.](media/end-user-change-sort/powerbi-sort-category.png)
+:::image type="content" source="media/end-user-change-sort/power-bi-sort-category.png" alt-text="Screenshot showing a bar chart with the X axis sorted alphabetically.":::
 
-To change the sort from a category (store name) to a value (sales per square feet), select **More actions** (...), choose **Sort by** and select a numeric value used in the visual. The following example shows the visual sorted by **Sales Per Sq Ft**.
+To change the sort from a category (Sales Stage) to a value (Opportunity Count), select **More actions** (...), **Sort axis**, and then select **Sort ascending** or **Sort descending**. The following example shows the visual sorted by **Opportunity Count** in ascending order. The field and order that are sorted are indicated with a checkmark.
 
-![Screenshot showing the sales per square feet option selected from the drop down menu.](media/end-user-change-sort/power-bi-sort-value.png)
-
-You can also sort in ascending or descending order. Select **More actions** (...) and choose **Sort descending** or **Sort ascending**. The field that is being sorted is in bold and has a yellow bar.
-
-   ![Video showing selecting by using sort by and the ascending and descending options.](media/end-user-change-sort/sort.gif)
+:::image type="content" source="media/end-user-change-sort/power-bi-sort-value.png" alt-text="Screenshot showing the sales per square feet option selected from the drop down menu.":::
 
 ## Sort by multiple columns
 
@@ -68,7 +64,7 @@ Power BI reports retain the filters, slicers, sorting, and other data view chang
 
 The report designer can prevent changes from being saved. If they do, the **Reset to default** button is greyed out.
 
-You can also save your changes with [bookmarks](end-user-bookmarks.md). If the report designer enables the **Personalize visual** feature for the report, you can change the sort order of a visual and save it as a bookmark. If you see the personalize visual icon ![Screenshot of the personalize visual icon.](media/end-user-change-sort/power-bi-personalize-visual-icon.png) in the visual's header, this feature is enabled. You don't need edit permissions to use this feature.
+You can also save your changes with [bookmarks](end-user-bookmarks.md). If the report designer enables the **Personalize visual** feature for the report, you can change the sort order of a visual and save it as a bookmark. If you see the personalize visual icon :::image type="icon" source="media/end-user-change-sort/power-bi-personalize-visual-icon.png"::: in the visual's header, this feature is enabled. You don't need edit permissions to use this feature.
 
 For more information, see [Personalize visuals in a report](end-user-personalize-visuals.md).
 
@@ -78,12 +74,12 @@ Sometimes you want to sort your data by using a field that isn't included in the
 
 - To learn how to sort by a different field in the dataset, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md). To use this feature, you must have edit permissions for the report.
 
-- If you are the report designer, you can create new columns in the dataset to address sorting issues with values, such as dates and numbers. The designer's contact information is listed in the report title's drop down menu.
+- If you're the report designer, you can create new columns in the dataset to address sorting issues with values, such as dates and numbers. The designer's contact information is listed in the report title's menu.
 
-![Dropdown from the title showing contact information.](media/end-user-change-sort/power-bi-heading.png)
+![Menu from the title showing contact information.](media/end-user-change-sort/power-bi-heading.png)
 
 ## Next steps
 
 More about [Interactions with visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
-[Basic concepts for the Power BI service business user](end-user-basic-concepts.md)
+[Basic concepts for the Power BI service business user](end-user-basic-concepts.md).
