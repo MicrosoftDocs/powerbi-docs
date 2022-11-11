@@ -1,6 +1,6 @@
 ---
 title: About mobile-optimized Power BI reports
-description: Learn how mobile optimized views of Power BI report pages display when the mobile device is held in portrait orientation.
+description: Learn how mobile-optimized views of Power BI report pages display when the mobile device is held in portrait orientation.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 Mobile users can view any Power BI report page in the Power BI mobile apps. However, reports designed for use on a computer can be difficult to read and interact with on phones.
 
-In Power BI, after you create a report, you can create additional mobile-optimized views of the report's pages. When a mobile-optimized view exists for a page, it automatically displays when the mobile device is held in portrait orientation. If the user wants to see the regular non-optimized view of the page as they would see it on their computer, they can tip the phone onto its side, as shown in the following image.
+In Power BI, after you create a report, you can create additional mobile-optimized views of the report's pages. When a mobile-optimized view exists for a page, it automatically displays when the mobile device is held in portrait orientation. If the user wants to see the regular non-optimized view of the page as they would see it on their computer, they can tip the phone onto its side, as shown in the following image:
 
 ![Screenshot showing how mobile-optimized report pages display on a phone in portrait and landscape orientation.](media/power-bi-create-mobile-optimized-report-about/power-bi-mobile-optimized-report-portrait-landscape.png)
 
