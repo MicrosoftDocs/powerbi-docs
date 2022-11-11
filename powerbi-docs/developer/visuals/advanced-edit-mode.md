@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/14/2021
+ms.date: 11/10/2022
 ---
 
 # Advanced edit mode in Power BI visuals
