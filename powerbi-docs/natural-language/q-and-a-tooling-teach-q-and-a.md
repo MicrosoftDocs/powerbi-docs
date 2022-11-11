@@ -73,8 +73,8 @@ You fill in the box with the condition.
 
 Some example conditions that you can define are:
 
-- Country which is USA
-- Country which is not USA
+- Country or region which is USA
+- Country or region which is not USA
 - Products > 100
 - Products greater than 100
 - Products = 100

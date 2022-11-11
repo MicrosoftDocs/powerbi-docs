@@ -20,7 +20,7 @@ But, there are some cases that are a bit more challenging, like geography. Consi
 
 ![Screenshot of Excel showing tabular data to be imported into Power B I Desktop.](media/desktop-data-categorization/datacategorizationtable.png)
 
-Should Power BI Desktop treat the codes in the **GeoCode** column as an abbreviation for a Country or Region or a US State?  That's not clear because a code like this can mean either one. For instance, AL can mean Alabama or Albania, AR can mean Arkansas or Argentina, or CA can mean California or Canada. It makes a difference when we go to chart our GeoCode field on a map. 
+Should Power BI Desktop treat the codes in the **GeoCode** column as an abbreviation for a Country/Region or a US State?  That's not clear because a code like this can mean either one. For instance, AL can mean Alabama or Albania, AR can mean Arkansas or Argentina, or CA can mean California or Canada. It makes a difference when we go to chart our GeoCode field on a map. 
 
 Should Power BI Desktop show a picture of the world with countries/regions highlighted? Or should it show a picture of the United States with states highlighted?  You can specify a data category for data just like this. Data categorization further refines the information Power BI Desktop can use to provide the best visualizations.  
 

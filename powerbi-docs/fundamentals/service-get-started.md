@@ -162,17 +162,17 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     :::image type="content" source="media/service-get-started/power-bi-qna-pin-tile.png" alt-text="Screenshot of pinning the visual.":::
 
-6. Go back to Q&A and type *total profit by country*. 
+6. Go back to Q&A and type *total profit by countryregion*. 
 
-    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country.png" alt-text="Screenshot of total profit by country.":::
+    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country-region.png" alt-text="Screenshot of total profit by countryregion.":::
 
 8. Pin the map to the Financial Sample dashboard, too.
 
 9. On the dashboard, select the map you just pinned. See how it opens Q&A again?
 
-10. Place the cursor after *by country* in the Q&A box and type *as bar*. Power BI creates a bar chart with the results.
+10. Place the cursor after *by countryregion* in the Q&A box and type *as bar*. Power BI creates a bar chart with the results.
 
-    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-bar.png" alt-text="Screenshot of bar chart visualization.":::
+    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-region-bar.png" alt-text="Screenshot of bar chart visualization.":::
 
 11. Pin the bar chart to your Financial Sample dashboard, too.
 

@@ -26,7 +26,7 @@ To take advantage of RLS, it's important you understand three main concepts; Use
 
 **Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](../../create-reports/desktop-rls.md).
 
-**Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. The rules could be as simple as "Country = USA" or something much more dynamic.
+**Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. The rules could be as simple as "CountryRegion = USA" or something much more dynamic.
 For the rest of this article, there's an example of authoring RLS, and then consuming that within an embedded application. Our example uses the [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkID=780547) PBIX file.
 
 ![Report example](media/embedded-row-level-security/powerbi-embedded-report-example.png)
