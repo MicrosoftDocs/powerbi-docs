@@ -30,7 +30,7 @@ This video demonstrates sorting features, like how to change the sort order, and
 
 ## Get started
 
-To choose a sorting option, open any report that you have created or that has been shared with you, select a visual that can be sorted, and choose **More options** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by** and **Sort axis**.
+To choose a sorting option, open any report that you've created or that has been shared with you, select a visual that can be sorted, and choose **More options** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by** and **Sort axis**.
 
 :::image type="content" source="media/end-user-change-sort/power-bi-actions.png" alt-text="Screenshot showing the visual's More options menu. The sorting options are outlined.":::
 
@@ -42,7 +42,7 @@ Visuals can be sorted alphabetically by the names of the categories in the visua
 
 To change the sort from a category (Sales Stage) to a value (Opportunity Count), select **More actions** (...), **Sort axis**, and then select **Sort ascending** or **Sort descending**. The following example shows the visual sorted by **Opportunity Count** in ascending order. The field and order that are sorted are indicated with a checkmark.
 
-:::image type="content" source="media/end-user-change-sort/power-bi-sort-value.png" alt-text="Screenshot showing the sales per square feet option selected from the drop down menu.":::
+:::image type="content" source="media/end-user-change-sort/power-bi-sort-value.png" alt-text="Screenshot showing the sales per square feet option selected from the menu.":::
 
 ## Sort by multiple columns
 
@@ -54,7 +54,7 @@ You can sort multiple columns to create a sorting sequence. To add more columns 
 
 ![Screenshot showing a table sorted by two columns. Red outlines show changes.](media/end-user-change-sort/power-bi-sort-second.png)
 
-If you select Shift and then select the same column a second time, the sort direction (ascending or descending) is changed. If you select Shift and select a column you have previously added to the sort order, that column moves to the back of the sort order.
+If you select Shift and then select the same column a second time, the sort direction (ascending or descending) is changed. If you select Shift and select a column you've previously added to the sort order, that column moves to the back of the sort order.
 
 ## Save your sort order changes
 
