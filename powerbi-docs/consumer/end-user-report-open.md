@@ -14,10 +14,10 @@ ms.date: 11/03/2022
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro license to open a report unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI account can have access to reports stored in Premium capacity.  
-For more information, see [Licenses and subscriptions for business users](end-user-license.md).  
+A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro license to open a report unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity) and shared with you. A user with any Power BI account can have access to reports stored in Premium capacity.  
+For more information, see [Licenses and subscriptions for business users](end-user-license.md).
 
-You can follow along in this tutorial with Microsoft sample content by using a free license.
+You can follow along in this tutorial with [Microsoft sample content](https://app.powerbi.com/groups/me/getdata/samples) by using a free license.
 
 Explore the following guidance to learn how to open a report from the Browse page and from a dashboard.
 
@@ -33,7 +33,7 @@ Power BI designers can share a report with you by sending an email link or by ad
 
     :::image type="content" source="./media/end-user-report-open/power-bi-share.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
 
-3. The report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png) is displayed next to the report name. Open the **Sales and Marketing Sample** report.
+3. The report icon :::image type="icon" source="./media/end-user-report-open/power-bi-report-icon.png"::: is displayed next to the report name. Open the **Sales and Marketing Sample** report.
 
      :::image type="content" source="./media/end-user-report-open/power-bi-report-sample.png" alt-text="Screenshot showing the Sales and Marketing Sample report from the Shared with me list.":::
 
