@@ -22,7 +22,7 @@ For example, you might want to place three categories of products in one larger 
 In Power BI Desktop, you can group data points to help you more clearly view, analyze, and explore data and trends in your visuals. You can also define the *bin size* to put values into equally sized groups that better enable you to visualize data in meaningful ways. This action is called *binning*.
 
 ## Using grouping
-To use grouping, select two or more elements on a visual by using Ctrl+Select. Then right-click one of the selected elements and choose **Group data** from the context menu.
+To use grouping, select two or more elements on a visual by using Ctrl+Select. Then right-click one of the selected elements, scroll to **Group**, and choose **Group** from the context menu.
 
 ![Screenshot of a sample bar graph, highlighting the Group data selection in the dropdown menu.](media/desktop-grouping-and-binning/grouping-binning_1.png)
 
