@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 11/11/2022
 LocalizationGroup: Premium
 ---
 # Backup and restore datasets with Power BI Premium
@@ -22,7 +22,7 @@ The ability to backup and restore Power BI datasets provides a migration path fr
 
 ## Using dataset backup and restore
 
-The **Backup and Restore** feature uses existing connections between Power BI and Azure, such as the ability to register an Azure Data Lake Gen2 (ADLS Gen2) storage account at the tenant- or workspace-level to facilitate dataflow storage and operations. Since Backup and Restore uses the same connection, no other storage account is required.
+The **Backup and Restore** feature uses existing connections between Power BI and Azure, such as the ability to register an Azure Data Lake Gen2 (ADLS Gen2) storage account at the tenant or workspace level to facilitate dataflow storage and operations. Since Backup and Restore uses the same connection, no other storage account is required.
 
 You can perform offline backups, downloading the files from your ADLS Gen2 storage account. To download, use the file system, Azure Storage Explorer, .NET tools, and PowerShell cmdlets, such as the *Get-AzDataLakeGen2ItemContent* cmdlet. The following image shows a workspace with three datasets and their corresponding backup files in Azure Storage Explorer.
 
@@ -36,13 +36,13 @@ Backup and Restore relies on the Azure connections infrastructure in Power BI to
 
 ### Who can perform backup and restore
 
-With an ADLS Gen2 storage account associated with a workspace, workspace admins who have write or admin permissions can conduct *backups*. Users with these permissions might be an admin, a member, or a contributor, or might not be part of the workspace level roles, but has direct write permission to the dataset.  
+With an ADLS Gen2 storage account associated with a workspace, workspace admins who have write or admin permissions can conduct *backups*. Users with these permissions might be an admin, a member, or a contributor, or might not be part of the workspace level roles, but have direct write permission to the dataset.  
 
 To *restore* an existing dataset, users who have write or admin permission to the dataset can conduct a *restore* operation. To *restore* a new dataset, the user must be an admin, member, or contributor of the workspace.
 
 To *browse the backup/restore filesystem* using Azure Storage Explorer (the *Browse...* button in SSMS), a user must be an admin, or a member or contributor of the workspace.
 
-Power BI associates workspaces with their backup directories based on the workspace name. With owner permissions at the storage account level, you can download backup files or copy them from their original location to the backup directory of a different workspace, and restore them there if you're a workspace admin in the target workspaces as well.
+Power BI associates workspaces with their backup directories based on the workspace name. With owner permissions at the storage account level, you can download backup files or copy them from their original location to the backup directory of a different workspace, and restore them there if you're a workspace admin in the target workspace as well.
 
 Storage account owners have unrestricted access to the backup files, so ensure storage account permissions are set and maintained carefully.
 
@@ -66,11 +66,11 @@ If you rename a workspace, the backup folder in the *power-bi-backup* container 
 When using the **Backup and Restore** feature with Power BI, keep the following considerations in mind.
 
 * Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 can't be located in a VNET.
-* If your ADLS Gen2 is already working with **Backup and Restore**, if you disconnect and later reconfigure it to work with **Backup and Restore** again, you must first rename or move the previous backup folder, or the attempt will result in errors and failure.
+* If your ADLS Gen2 is already working with **Backup and Restore**, and you disconnect and later reconfigure it to work with **Backup and Restore** again. You must first rename or move the previous backup folder, or the attempt will result in errors and failure.
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
 * Only **enhanced format model (V3 model)** is allowed to be restored.
 * **Password** encryption in the backup command isn't supported
-* There's a new property, IgnoreIncompatibilities, for restore command. The new property is to address RLS incompatibilities between Azure AS and Power BI Premium. Power BI Premium only supports the read permission for roles but AAS does support all permissions. If you try to restore a backup file, which some roles aren't read permission, you have to specify IgnoreIncompatibilities in your restore command, otherwise, restore will fail. Once IgnoreIncompatibilities is specified, the role which permission isn't read will be dropped. So far, there's no UX support to IgnoreIncompatibilities in SSMS, so you need to specify it in a restore command manually.
+* There's a new property, `IgnoreIncompatibilities`, for the `restore` command. The new property addresses RLS incompatibilities between Azure AS and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file, for which some roles don't have read permission, you have to specify `IgnoreIncompatibilities` in your `restore` command, otherwise, restore will fail. Once `IgnoreIncompatibilities` is specified, the role without the read permission will be dropped. So far, there's no UX support to `IgnoreIncompatibilities` in SSMS, so you need to specify it in a `restore` command manually.
 For example:
 
 ```
