@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4, intro-overview
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
-ms.date: 09/25/2020
+ms.date: 11/06/2022
 LocalizationGroup: Administration
 #Customer intent: As an administrator of the Power BI service, I want to understand the tools, tasks, and roles that I can use to configure, manage, and secure the service.
 ---
@@ -43,11 +43,9 @@ There are several roles that work together to administer Power BI for your organ
 | Power BI Premium Capacity admin | A single Premium capacity | Assign workspaces to the capacity|
 | | | Manage user permission to the capacity |
 | | | Manage workloads to configure memory usage |
-| | | Restart the capacity |
 | Power BI Embedded Capacity admin | A single Embedded capacity | Assign workspaces to the capacity|
 | | | Manage user permission to the capacity |
 | | | Manage workloads to configure memory usage |
-| | | Restart the capacity |
 
 ## Administrative tasks and tools
 
@@ -78,9 +76,10 @@ Power BI admins work mostly in the Power BI admin portal. You should, however, b
 Now that you know the basics of what’s involved with Power BI administration, consult these articles to learn more:
 
 - [Use the Power BI admin portal](service-admin-portal.md)
-- [Tenant settings guidance](../guidance/admin-tenant-settings.md)
+- [About tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings)
 - [Use PowerShell cmdlets](/powershell/power-bi/overview)
 - [Power BI administration FAQ](service-admin-faq.yml)
 - [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+ 

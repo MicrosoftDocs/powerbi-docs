@@ -1,5 +1,5 @@
 ---
-title: Power BI add-in for PowerPoint - Admin info
+title: Power BI add-in for PowerPoint - Admin info (preview)
 description: See information about the Power BI add-in for PowerPoint that Power BI administrators need to be aware of.
 author: paulinbar
 ms.author: painbar
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/02/2022
+ms.date: 09/19/2022
 ---
 
 # Power BI add-in for PowerPoint - Admin info
@@ -50,7 +50,7 @@ The button is a shortcut to the add-in offering in the Office add-in store. The 
 
 ## Next Steps
 
-* [About Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
+* [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI report pages to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
 * [View and present live Power BI report pages in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)
 * [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md)

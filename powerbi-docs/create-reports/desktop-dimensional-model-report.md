@@ -473,6 +473,6 @@ To share your report with your manager and colleagues, publish it to the Power B
 ## Next steps 
 
 - Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
-- Learn more about [DAX and data modeling in Power BI Desktop](/learn/modules/dax-power-bi-models/)
+- Learn more about [DAX and data modeling in Power BI Desktop](/training/modules/dax-power-bi-models/)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -6,20 +6,18 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 05/10/2022
+ms.date: 09/02/2022
 ms.custom: known-issue-151
 ---
-# Description of known issue #151
+# Known issue #151 - Unable to open protected Power BI Desktop file
 
 You won't be able to open a [protected](/power-bi/enterprise/service-security-data-protection-overview) Power BI Desktop (.pbix) file and will receive an "Unable to open document" error message.  The impacted file has a label that hasn't been published to you, even though you have full control for the relevant label.
 
 **APPLIES TO:** ✔️ Power BI Desktop
 
-**Status:** Open
+**Status:** Fixed: September 2, 2022
 
 **Problem area:** Publish Content
-
-
 
 ## Symptoms
 
