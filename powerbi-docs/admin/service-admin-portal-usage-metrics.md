@@ -1,6 +1,6 @@
 ---
 title: View usage metrics
-description: Learn how to view Power BI usage metrics.
+description: Learn how to view and understand Power BI usage metrics using dashboards in the admin settings page.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
