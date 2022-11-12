@@ -34,7 +34,7 @@ In the *capabilities.json* file, set `"supportsSynchronizingFilterState": true`,
 
 After you've updated the *capabilities.json* file, you can view the **Sync slicers** pane when you select your custom slicer visual.
 
-![Screenshot of Power BI Desktop, which shows the View Sync slicers pane.](media/enable-sync-slicers/sync-slicers-panel.png)
+:::image type="content" source="media/enable-sync-slicers/sync-slicers-panel.png" alt-text="Screenshot of Power BI Desktop, which shows the View Sync slicers pane.":::
 
 From the **Sync slicers** pane, you can select which report pages the slicer visibility and filtration should apply to.
 
