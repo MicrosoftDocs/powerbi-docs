@@ -54,7 +54,7 @@ To set a different column to sort by in the Power BI service, both columns need 
 
    :::image type="content" source="media/desktop-sort-by-column/service-tooltips-fields-bucket.png" alt-text="Screenshot of the Power BI service Visualizations and Fields panes. In the Visualizations pane Fields section, the Tooltips fields bucket is highlighted.":::
 
-3. Drag the **Month Number** field from the **Fields** pane to the **Tooltip** fields buck in the **Visualization** pane.
+3. Drag the **Month Number** field from the **Fields** pane to the **Tooltip** fields bucket in the **Visualization** pane.
 
    :::image type="content" source="media/desktop-sort-by-column/service-drag-month-number.png" alt-text="Screenshot of the Power BI service. In the Visualizations pane, the Tooltips fields bucket contains the Month Number field and is highlighted.":::
 
