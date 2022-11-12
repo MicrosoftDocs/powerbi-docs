@@ -13,14 +13,13 @@ ms.date: 08/18/2022
 
 # Generate an embed token
 
+✔️&nbsp;App&nbsp;owns&nbsp;data ❌&nbsp;User&nbsp;owns&nbsp;data
+
 [Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authorize your request against the Power BI service.
 
 The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials in the app (effective identity).
 
 After successful authentication, access to the relevant data is granted.
-
->[!NOTE]
->Generate token is only applicable when you're [*embedding for your customers*](embed-sample-for-customers.md) (also known as the *app owns data* scenario).
 
 You can use APIs to generate a token for the following items:
 

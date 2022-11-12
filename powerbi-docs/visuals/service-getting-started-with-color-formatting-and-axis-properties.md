@@ -94,7 +94,7 @@ Here are a few useful tips for working with colors. The numbers in the following
 
    :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png" alt-text="Data color section with color palette open.":::
 
-Not crazy about the change you just made? Use **CTRL+Z** to undo, just like you’re used to doing.
+Don't like the change you just made? Use **CTRL+Z** to undo, just like you’re used to doing.
 
 ## Applying a style to a table
 

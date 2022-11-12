@@ -7,7 +7,7 @@ ms. reviewer: jeluitwi
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/16/2022
+ms.date: 11/03/2022
 ms.custom: known-issue-165
 ---
 
@@ -17,7 +17,7 @@ You will encounter either a long running dataflow refresh or a dataflow refresh 
 
 **APPLIES TO:** ✔️ Power BI Premium Gen2 Service ✔️ Power BI Dataflow
 
-**Status:** Open
+**Status:** Fixed: November 1, 2022
 
 **Problem area:** Refresh Data
 
