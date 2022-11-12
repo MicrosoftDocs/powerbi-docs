@@ -1,6 +1,6 @@
 ---
 title: About mobile-optimized Power BI reports
-description: Learn how mobile-optimized views of Power BI report pages display when the mobile device is held in portrait orientation.
+description: Learn how to create, format, and show Power BI report views that are optimized for mobile device users.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -26,13 +26,13 @@ In the Power BI mobile app, reports that have mobile-optimized pages are indicat
 ![Screenshot showing optimized report icon in the Power BI mobile apps.](media/power-bi-create-mobile-optimized-report-about/power-bi-mobile-optimized-report-optimized-icon.png)
 
 >[!NOTE]
-> Mobile-optimized report views display only with the Power BI mobile apps for iOS and Android. When viewed through a web browser, reports always display in the standard, non-optimized view.  
+> Mobile-optimized report views display only when you use the Power BI mobile apps for iOS and Android. When viewed through a web browser, reports always display in the standard, non-optimized view.  
 
 ## Mobile authoring features
 
-Power BI provides features to help you create mobile-optimized versions of your reports:
+Power BI provides several features to help you create mobile-optimized versions of your reports:
 - A **mobile layout view** where you create mobile-optimized reports by dragging and dropping visuals onto a phone emulator canvas.
-- A **formatting pane** (preview) that enables you to change a report visual's format settings.
+- A **formatting pane** (preview) that enables you to format and change your report’s visual settings.
 - **Visuals and slicers** that can be optimized for use on small, mobile screens.
 
 With these mobile authoring capabilities, you can select, rearrange, and reformat just those visuals that make sense for mobile users, enabling you to create report page views that are attractive, focused, and easy to read and use on mobile devices.
