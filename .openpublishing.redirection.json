@@ -2776,11 +2776,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/connect-data/service-template-apps-samples.md",
-            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/service-connect-to-zendesk.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-zendesk",
             "redirect_document_id": true
