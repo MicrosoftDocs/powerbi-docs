@@ -286,7 +286,7 @@ On the right side of the refresh page, there are two visuals designed to help yo
 All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
 >[!NOTE]
->Start and end times may occur before or after the displayed time period, due to [interactive and background](service-premium-interactive-background-operations.md) [smoothing](service-premium-smoothing.md) operations.  
+>Start and end times may occur before or after the displayed time period, due to [background](service-premium-interactive-background-operations.md#background-operations) [smoothing](service-premium-smoothing.md) operations.  
 
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
