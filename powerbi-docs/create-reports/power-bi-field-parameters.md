@@ -16,7 +16,7 @@ Field parameters allow users to dynamically change the measures or dimensions be
 
 ## Video
 
-In the following video, Sujata demonstrates how you create field parameters and your report users interact with them.
+In the following video, Sujata demonstrates how you create field parameters and how your report users interact with them.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y8Jv]
 
