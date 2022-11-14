@@ -105,17 +105,17 @@ You see the Sigma symbols in the Fields list? Power BI has detected that those f
 
 ### Create a map
 
-Your manager wants to know which countries/regions are the most profitable. Impress your manager with a map visualization.
+Your manager wants to know which countries are the most profitable. Impress your manager with a map visualization.
 
 1. Select a blank area on your report canvas.
 
-2. From the **Fields** pane, drag the **CountryRegion** field to your report canvas, then drag the **Profit** field to the map.
+2. From the **Fields** pane, drag the **Country** field to your report canvas, then drag the **Profit** field to the map.
 
    Power BI creates a map visual with bubbles representing the relative profit of each location.
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of map visual in report editor.":::
 
-    Looks like the European countries/regions are outperforming the North American countries/regions.
+    Looks like the European countries are outperforming the North American countries.
 
 ### Create a visual showing sales
 
@@ -143,7 +143,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 1. Select the **Sales by Product and Segment** stacked column chart. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
 
-1. Select the **Profit by CountryRegion** map. In the **Map styles** section, change **Theme** to **Grayscale**. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
+1. Select the **Profit by Country** map. In the **Map styles** section, change **Theme** to **Grayscale**. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
 
 
 ## Pin to a dashboard
