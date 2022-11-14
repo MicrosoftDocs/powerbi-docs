@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/10/2022
+ms.date: 11/13/2022
 LocalizationGroup: Premium 
 ---
 
@@ -290,6 +290,9 @@ On the right side of the refresh page, there are two visuals designed to help yo
 
 All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
+>[!NOTE]
+>Start and end times may occur before or after the displayed time period, due to [background](service-premium-interactive-background-operations.md#background-operations) [smoothing](service-premium-smoothing.md) operations.  
+
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
 >
@@ -367,7 +370,7 @@ A table showing every [interactive operation](service-premium-interactive-backgr
 
 ### Background Operations
 
-A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload.
+A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload. For more information see [performance smoothing](service-premium-smoothing.md).
 
 All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations table doesn't have a *users* column.
 
