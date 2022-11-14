@@ -8,10 +8,10 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-admin
   ms.topic: faq
-  ms.date: 06/18/2020
+  ms.date: 11/11/2022
   LocalizationGroup: Administration
 title: Power BI high availability, failover, and disaster recovery FAQ
-summary: This article answers commonly asked questions about how the Power BI service delivers high availability and provides business continuity and disaster recovery to its users. You'll understand high availability, the circumstances under which Power BI performs a failover, and what to expect from the service when it fails over.
+summary: This article explains how the Power BI service delivers high availability and provides business continuity and disaster recovery to its users. After reading this article, you should have a better understanding of how high availability is achieved, under what circumstances Power BI performs a failover, and what to expect from the service when it fails over.
 
 
 sections:
@@ -20,11 +20,11 @@ sections:
       - question: |
           What does "high availability" mean for Power BI?
         answer: |
-          Power BI is a fully managed software as a service (SaaS).  Power BI is resilient to infrastructure failures so that users can always access their reports.  The service is supported by a [99.9% SLA](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+          Power BI is fully managed software as a service (SaaS).  Power BI is resilient to infrastructure failures so that users can always access their reports.  For information about SLA, see [Licensing Resources and Documents](https://www.microsoft.com/licensing/docs).
           
-          Power BI uses **Azure Availability Zones** to protect Power BI reports, applications and data from datacenter failures, and is automatically applied and used for Power BI. Availability Zones are fault-isolated locations within an Azure region, providing three or more distinct and unique locations within an Azure region that have redundant power, cooling, and networking. Availability Zones allow Power BI customers to run mission-critical applications with higher availability and fault tolerance to datacenter failures. Availability Zones provide customers with the ability to withstand datacenter failures through redundancy and logical isolation of services. 
+          Power BI uses **Azure availability zones** to protect Power BI reports, applications, and data from datacenter failures, and automatically applied and used for Power BI. Availability zones are fault-isolated locations within an Azure region that provide three or more distinct and unique locations within an Azure region that have redundant power, cooling, and networking. Availability zones allow Power BI customers to run critical applications with higher availability and fault tolerance to datacenter failures. Availability zones provide customers with the ability to withstand datacenter failures through redundancy and logical isolation of services. 
           
-          For more information, see [What are Azure regions and availability zones](/azure/reliability/availability-zones-overview).
+          For more information, see [What are Azure regions and availability zones](/azure/reliability/availability-zones-overview)?
           
       - question: |
           What is a Power BI failover?
@@ -36,12 +36,12 @@ sections:
       - question: |
           How are backup instances kept in sync with my data?
         answer: |
-          All Power BI service components regularly sync their backup instances. We target a 15-minute point-in-time sync for any content uploaded or changed in Power BI. If there's a failover, Power BI uses [Azure storage geo-redundant replication](/azure/storage/common/storage-redundancy-grs) and [Azure SQL geo redundant replication](/azure/sql-database/sql-database-active-geo-replication) to guarantee backup instances exist in other regions and available if a failover.
+          All Power BI service components regularly sync their backup instances. There's a 15-minute targeted point-in-time sync for any content uploaded or changed in Power BI. If there's a failover, Power BI uses [Azure storage geo-redundant replication](/azure/storage/common/storage-redundancy-grs) and [Azure SQL geo redundant replication](/azure/sql-database/sql-database-active-geo-replication) to guarantee backup instances exist in other regions, and can be used.
           
       - question: |
           Where are the failover clusters located?
         answer: |
-          Backup instances reside within the same geographic location (geo) that you selected when your organization signed up for Power BI, except where noted in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview). A geo can contain several regions, and Microsoft might replicate data to any of the regions within a specific geo for data resiliency. Microsoft won't replicate or move customer data outside the geo. For a mapping of the geos offered by Power BI and the regions within them, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
+          Backup instances reside within the same geographic location (geo) that you select when your organization signs up for Power BI, except where noted in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview). A geo can contain several regions, and Microsoft might replicate data to any of the regions within a specific geo for data resiliency. Microsoft doesn't replicate or move customer data outside the geo. For a mapping of the geos offered by Power BI and the regions within them, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
           
       - question: |
           How does Microsoft decide to fail over?
@@ -51,7 +51,7 @@ sections:
           - External and internal monitoring probes indicate a lack of availability or inability to operate properly. Indications might be based on outages detected in Power BI components or one or more of the services that Power BI depends on in a region.
           - The Microsoft Azure central operations team reports on critical outages in a region.
           
-          In both cases, Power BI executive team members decide to fail over, the decision isn't automated. Once decided, failover is automatic.
+          In both cases, Power BI executive team members decide to fail over. The decision isn't automated. After the decision is made, failover is automatic.
           
       - question: |
           How do I know Power BI is in failover mode?
@@ -61,7 +61,7 @@ sections:
       - question: |
           How long does it take Power BI to fail over?
         answer: |
-          Power BI takes approximately 15 minutes to become operational again after a failover. The time to identify that a failover is required varies, based on the issue that caused the failover. 
+          Power BI takes approximately 15 minutes to become operational again after the decision is made that a failover is required. The time to identify that a failover is required varies, based on the scenario that caused the failover. 
           
           Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, Power BI can't guarantee a timeframe. For more information, see [Azure storage redundancy](/azure/storage/common/storage-redundancy).
           
@@ -80,14 +80,14 @@ sections:
         answer: |
           If the Power BI solution used in your organization involves one of the following elements, you must take measures to guarantee that the solution remains highly available:
           
-          - If your organization uses Power BI Premium, ensure that the Premium capacity is sized to meet the load demands of your deployment.  The [Power BI Premium Planning and Deployment technical paper](https://aka.ms/Premium-Capacity-Planning-Deployment), and the  [Monitor Premium capacities with the app](service-admin-premium-monitor-capacity.md) can help you to plan and meet this requirement. New features are regularly added to the metrics app and the admin portal to help.
-          - If your organization accesses on-premises data sources using the on-premises data gateway, set up the gateway according to [Manage on-premises data gateway high availability clusters, and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters) to support high availability. Use this guidance whether you're refreshing reports in import mode, or accessing data or data models by using DirectQuery or Live Connect.
+          - If your organization uses Power BI Premium, ensure that the Premium capacity is sized to meet the load demands of your deployment.  For help you plan and meet this requirement, see the [Power BI Premium Planning and Deployment white paper](https://aka.ms/Premium-Capacity-Planning-Deployment), and the  [Monitor Premium capacities with the app](service-admin-premium-monitor-capacity.md). New features are regularly added to the metrics app and the admin portal in Power BI to help.
+          - If your organization accesses on-premises data sources by using the on-premises data gateway, you must set up the gateway to support high availability, see [Manage on-premises data gateway high availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters). Use this guidance whether you're refreshing reports in import mode, or accessing data or data models by using DirectQuery or Live Connect.
           
       - question: |
-          Will gateways function in failover mode?
+          Do gateways function in failover mode?
         answer: |
-          No. Data required from on-premises data sources (any reports and dashboards based on Direct Query and Live Connect) won't work during a failover. The gateway configuration doesn't change though. When the Power BI instance returns to its original state, the gateways return to normal functions.
+          No. Data required from on-premises data sources (any reports and dashboards based on Direct Query and Live Connect) doesn't work during a failover. The gateway configuration doesn't change though. When the Power BI instance returns to its original state, the gateways return to normal functions.
           
-          If there's an extreme disaster in a primary region that prevents you from restoring a gateway. The failed-over primary region allows read and write operations, so you can redeploy and configure a gateway against the new region.
+          If there's an extreme disaster in a primary region that prevents you from restoring a gateway for a considerable duration, the failed-over primary region allows read and write operations, so you can redeploy and configure a gateway against the new region.
           
-          You can choose to install a new gateway on a different machine or take over an existing gateway. Taking over the existing gateway should be simpler, since all the data sources associated with the old gateway will be carried over to the new one.
+          You can choose to install a new gateway on a different machine or take over an existing gateway. Taking over the existing gateway should be simpler, because all the data sources associated with the old gateway are carried over to the new one.
