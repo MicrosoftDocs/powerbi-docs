@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Power BI Premium features
 
-This article lists the main Power BI Premium features. Most of the features apply to all the Power BI Premium licenses, [Premium Gen2](service-premium-gen2-what-is.md), [Premium (original version)](service-premium-what-is.md) and [Premium Per User (PPU)](service-premium-per-user-faq.yml). When a feature only works with a specific license, the required license is indicated in the *description* field. If no license is listed, the feature works with any license.
+This article lists the main Power BI Premium features. Most of the features apply to all the Power BI Premium licenses, [Premium Gen2](service-premium-gen2-what-is.md), [Premium (original version)](service-premium-what-is.md) and [Premium Per User (PPU)](service-premium-per-user-faq.yml) as well as [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md). When a feature only works with a specific license, the required license is indicated in the *description* field. If no license is listed, the feature works with any license.
 
 >[!IMPORTANT]
 >If your organization is using the [original version](service-premium-what-is.md) of Power BI Premium, you're required to migrate to the modern [Premium Gen2](service-premium-gen2-what-is.md) platform. Microsoft began migrating all Premium capacities to Gen2. If you have a Premium capacity that requires migrating, **you’ll receive an email notification 60 days before the migration is scheduled to start**. For more information see [Plan your transition to Power BI Premium Gen2](service-premium-transition-gen1-to-gen2.md).
