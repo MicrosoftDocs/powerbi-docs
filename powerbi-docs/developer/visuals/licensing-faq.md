@@ -118,9 +118,9 @@ If, after you refresh, the license is still not available, wait a while and try 
 
 A tenant admin can see all subscriptions purchased under the tenant account, including the subscriptions purchased by non-admins.
 
-### We're a global team. Can we assign licenses to someone working in another country?
+### We're a global team. Can we assign licenses to someone working in another country or region?
 
-You can assign licenses to users in the same tenant that you purchased subscription under regardless of the country.
+You can assign licenses to users in the same tenant that you purchased subscription under regardless of the country or region.
 
 ### As an admin, can I cancel offer purchase from AppSource?
 

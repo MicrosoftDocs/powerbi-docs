@@ -47,9 +47,9 @@ To change the chart aggregation, follow these steps:
 
 Depending on the result you want, you can change the type of aggregation. However, not all types of aggregation apply to every numeric datatype. For example, for the **SalesAmount** field, Sum and Average are useful, and Minimum and Maximum have their place as well. However, Count doesn't make sense for the **SalesAmount** field, because while its values are numeric, they’re really currency.
 
-Values calculated from measures change in response to your interactions with your report. For example, if you drag the **RegionCountryName** field from the **Geography** table onto your existing **SalesAmount** chart, it changes to show the average sales amounts for each country.
+Values calculated from measures change in response to your interactions with your report. For example, if you drag the **RegionCountryName** field from the **Geography** table onto your existing **SalesAmount** chart, it changes to show the average sales amounts for each country or region.
 
-![SaleAmount by Country](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
+![SaleAmount by Country or Region](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
 
 When the result of a measure changes because of an interaction with your report, you've affected your measure’s *context*. Every time you interact with your report visualizations, you're changing the context in which a measure calculates and displays its results.
 
@@ -149,17 +149,17 @@ To create a measure, follow these steps:
 ### Use your measure in the report
 Add your new **Net Sales** measure to the report canvas, and calculate net sales for whatever other fields you add to the report. 
 
-To look at net sales by country:
+To look at net sales by country or region:
 
 1. Select the **Net Sales** measure from the **Sales** table, or drag it onto the report canvas.
     
 1. Select the **RegionCountryName** field from the **Geography** table, or drag it onto the **Net Sales** chart.
     
-    ![Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
+    ![Net Sales by Country or Region](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
     
 1. To see the difference between net sales and total sales by country, select the **SalesAmount** field or drag it onto the chart. 
 
-    ![Sales Amount and Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
+    ![Sales Amount and Net Sales by Country or Region](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
     The chart now uses two measures: **SalesAmount**, which Power BI summed automatically, and the **Net Sales** measure, which you manually created. Each measure was calculated in the context of another field, **RegionCountryName**.
     
