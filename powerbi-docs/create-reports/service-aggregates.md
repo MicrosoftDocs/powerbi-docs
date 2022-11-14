@@ -32,7 +32,7 @@ In the example below:
 
 - **Units Sold** and **Manufacturing Price** are columns that contain numeric data.
 
-- **Segment**, **Country**, **Product**, **Month**, and **Month Name** contain categorical data.
+- **Segment**, **CountryRegion**, **Product**, **Month**, and **Month Name** contain categorical data.
 
    ![Screenshot of a sample dataset.](media/service-aggregates/power-bi-aggregate-chart.png)
 
@@ -84,7 +84,7 @@ Some of the options that may be available for aggregating a field:
 
 For example, this data:
 
-| Country | Amount |
+| CountryRegion | Amount |
 |:--- |:--- |
 | USA |100 |
 | UK |150 |
