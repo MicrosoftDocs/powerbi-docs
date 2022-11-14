@@ -20,9 +20,9 @@ sections:
       - question: |
           What does "high availability" mean for Power BI?
         answer: |
-          Power BI is fully managed software as a service (SaaS).  Power BI is resilient to infrastructure failures so that users can always access their reports.  For information about SLA, see [Licensing Resources and Documents](https://www.microsoft.com/licensing/docs).
+          Power BI is fully managed software as a service (SaaS).  Power BI is resilient to infrastructure failures so that users can always access their reports.  For information about SLAs, see [Licensing Resources and Documents](https://www.microsoft.com/licensing/docs).
           
-          Power BI uses **Azure availability zones** to protect Power BI reports, applications, and data from datacenter failures, and automatically applied and used for Power BI. Availability zones are fault-isolated locations within an Azure region that provide three or more distinct and unique locations within an Azure region that have redundant power, cooling, and networking. Availability zones allow Power BI customers to run critical applications with higher availability and fault tolerance to datacenter failures. Availability zones provide customers with the ability to withstand datacenter failures through redundancy and logical isolation of services. 
+          Power BI uses **Azure availability zones** to protect Power BI reports, applications, and data from datacenter failures. Availability zones are automatically applied and used for Power BI. Availability zones are fault-isolated locations within an Azure region that provide three or more distinct and unique locations within an Azure region that have redundant power, cooling, and networking. Availability zones allow Power BI customers to run critical applications with higher availability and fault tolerance to datacenter failures. Availability zones provide customers with the ability to withstand datacenter failures through redundancy and logical isolation of services. 
           
           For more information, see [What are Azure regions and availability zones](/azure/reliability/availability-zones-overview)?
           
@@ -80,7 +80,7 @@ sections:
         answer: |
           If the Power BI solution used in your organization involves one of the following elements, you must take measures to guarantee that the solution remains highly available:
           
-          - If your organization uses Power BI Premium, ensure that the Premium capacity is sized to meet the load demands of your deployment.  For help you plan and meet this requirement, see the [Power BI Premium Planning and Deployment white paper](https://aka.ms/Premium-Capacity-Planning-Deployment), and the  [Monitor Premium capacities with the app](service-admin-premium-monitor-capacity.md). New features are regularly added to the metrics app and the admin portal in Power BI to help.
+          - If your organization uses Power BI Premium, ensure that the Premium capacity is sized to meet the load demands of your deployment.  To help you plan for and meet this requirement, see the [Power BI Premium Planning and Deployment white paper](https://aka.ms/Premium-Capacity-Planning-Deployment). To help with monitoring, new features are regularly added to the admin portal in Power BI and the Power BI Premium Capacity Metrics app, see [Monitor Premium capacities with the app](service-admin-premium-monitor-capacity.md).
           - If your organization accesses on-premises data sources by using the on-premises data gateway, you must set up the gateway to support high availability, see [Manage on-premises data gateway high availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters). Use this guidance whether you're refreshing reports in import mode, or accessing data or data models by using DirectQuery or Live Connect.
           
       - question: |
