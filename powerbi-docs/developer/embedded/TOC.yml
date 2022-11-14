@@ -7,6 +7,8 @@
     items:
     - name: "What is Power BI embedded analytics?"
       href: embedded-analytics-power-bi.md
+    - name: Power BI Embedded features
+      href: ../../enterprise/service-premium-features.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
     - name: "What is the Power BI Embedded analytics playground?"
       href: "power-bi-playground.md"    
   - name: Power BI Embedded setup
