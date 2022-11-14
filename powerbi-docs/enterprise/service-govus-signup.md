@@ -39,7 +39,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 >
 >* [Microsoft 365 Department of Defense (DoD)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod)
 >
->To purchase the Power BI service for these US government clouds, see [How do I buy Microsoft 365 Government?](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government), and work with your reseller to ensure new services are properly associated with your tenant.
+>To purchase the Power BI service for these US government clouds, see [How do I buy Microsoft 365 Government?](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government) and work with your reseller to ensure new services are properly associated with your tenant.
 
 After you sign up for the Power BI service for the US government, work with your account team to start the [allowlist process](#more-sign-up-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
 
