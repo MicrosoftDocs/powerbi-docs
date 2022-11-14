@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/12/2022
+ms.date: 11/14/2022
 LocalizationGroup: Reports
 ---
 # Change how visuals interact in a Power BI report
@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 If you have edit permissions for a report, you can use **Visual interactions** to change how visualizations on a report page impact each other.
 
 ## Introduction to visual interactions
-By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page.
+By default, visualizations on a report page cross-filter and cross-highlight the other visualizations on the page.
 For example, selecting a state on a map visualization highlights the column chart and filters the line chart to display only data that applies to that one state.
 See [About filtering and highlighting](power-bi-reports-filters-and-highlighting.md). If you have a visualization that supports [drilling](../consumer/end-user-drill.md), by default, drilling one visualization has no impact on the other visualizations on the report page. Both of these default behaviors can be overridden, and interactions can be set, on a per-visualization basis.
 
@@ -49,13 +49,11 @@ If you have edit permissions to a report, you can turn on the visual interaction
 
    ![Screenshot of Power BI service, highlighting the Visual interactions dropdown.](media/service-reports-visual-interactions/power-bi-service.png)
 
-   ---
-
 3. Power BI adds filter and highlight icons to all of the other visualizations on the report page.
 
    ![Screenshot of the report page with Visual interactions turned on.](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
-   The tree map is cross-filtering the line chart and the map, and it's cross-highlighting the column chart. You can now change how the selected visualization interacts with the other visualizations on the report page.
+   The tree map is cross-filtering the line chart and the map. The tree map is also cross-highlighting the column chart. You can now change how the selected visualization interacts with the other visualizations on the report page.
 
 ## Change the interaction behavior
 Get familiar with how your visualizations interact by selecting each visualization on your report page, one at a time. Select a data point or a bar or a shape and watch the impact on the other visualizations. If the behavior you see isn't what you'd prefer, you can change the interactions. These changes are saved with the report, so you and your report consumers will have the same visual interaction experience.
@@ -64,9 +62,9 @@ Start by selecting a visualization to make it active.  Notice that all the other
 
 Options for selected visualizations:
    
-   * If you want the selected visualization to cross-filter one of the other visualizations on the page, select the **filter** icon in the upper right corner of that visualization ![filter icon](media/service-reports-visual-interactions/power-bi-filter-icon.png). You can only cross-filter line charts, scatter charts, and maps. You can't cross-highlight them.
-   * If you want the selected visualization to cross-highlight one of the other visualizations on the page, select the **highlight** icon ![highlight icon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
-   * If you want the selected visualization to have no impact on one of the other visualizations on the page, select the **no impact** icon ![no impact icon](media/service-reports-visual-interactions/power-bi-no-impact.png).
+   * If you want the selected visualization to cross-filter one of the other visualizations on the page, select the **filter** icon in the upper right corner of that visualization :::image type="icon" source="media/service-reports-visual-interactions/power-bi-filter-icon.png":::. You can only cross-filter line charts, scatter charts, and maps. You can't cross-highlight them.
+   * If you want the selected visualization to cross-highlight one of the other visualizations on the page, select the **highlight** icon :::image type="icon" source="media/service-reports-visual-interactions/power-bi-highlight-icon.png":::.
+   * If you want the selected visualization to have no impact on one of the other visualizations on the page, select the **no impact** icon :::image type="icon" source="media/service-reports-visual-interactions/power-bi-no-impact.png":::.
 
 ## Change the interactions of drillable visualizations
 [Certain Power BI visualizations can be drilled](../consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. However, that behavior can be changed.
