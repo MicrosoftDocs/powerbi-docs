@@ -25,6 +25,21 @@ When Power BI creates the dataset copies, it separates *read* only datasets from
 
 * [Large datasets](service-premium-large-models.md)
 
+## Connecting to a specific dataset type
+
+When scale out is enabled, the following connections are maintained.
+
+* [Live connection](./../connect-data/desktop-report-lifecycle-datasets) reports, are connected to the *read* dataset copy.
+
+* XMLA clients are connected to the *read/write* dataset copy by default.
+
+* Refreshes in Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md), are connected to the *read/write* dataset copy.
+
+You can connect to specific type of dataset copy by appending one of the following strings to the dataset's URL.
+
+* **Read** - `?readonly`
+* **Read/write** - `?readwrite`
+
 ## Disable Power BI Query Scale Out
 
 Power BI Query Scale Out is enabled by default and can be disabled by a Power BI admin. To disable this feature, follow the instructions below.
@@ -39,28 +54,13 @@ Power BI Query Scale Out is enabled by default and can be disabled by a Power BI
 
     :::image type="content" source="media/service-premium-scale-out/disable-scale-out.png" alt-text="A screenshot showing how to disable the scale out tenant settings in the Power BI admin portal.":::
 
-## Connecting to a specific dataset type
-
-Power BI Desktop and Power BI service use a different default connection when they connect to a dataset. The connection also depends on the type of operation you're performing. For example, if your're using a [live connection](./../connect-data/desktop-report-lifecycle-datasets.md) to connect to a dataset with Power BI Desktop to view a report, you'll be connected to the *read* dataset. However, if you're viewing a report in Power BI Premium, you'll be connected to the *read/write* dataset. The table below lists the default dataset types used by Power BI Desktop and Power BI service per operation.
-
-|Operation                  |Power BI Desktop live connection |Power BI service |
-|---------------------------|---------------------------------|-----------------|
-|**Connecting to a report** |Read                             |Read/write       |
-|**Refreshes**              |Read/write                       |Read/write       |
-|**Write operations**       |Read/write                       |Read/write       |
-
-To connect to a different type of dataset, you can append one of the following strings to the dataset's URL.
-
-* **Read** - `?readonly`
-* **Read/write** - `?readwrite`
-
 ## Considerations and limitations
 
 * Client applications can connect to the *read* dataset copy through the XMLA endpoint, provided they support the mode specified on the connection string. Client applications can also connect to the *read/write* instance using XMLA endpoint.
 
 * Manual and scheduled refreshes are automatically synchronized with the latest version of the *read* dataset copies. REST API refreshes must be synced with the *read* dataset copies using the manual sync REST API.
 
-* XMLA updates and refreshes must be synced with the *read* dataset copies using the manual Sync REST API.
+* XMLA updates and refreshes must be synced with the *read* dataset copies using the Sync REST API.
 
 * When deleting a Power BI Query Scale Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
 
