@@ -18,7 +18,7 @@ For example, when a column has numeric values, you'll probably want to aggregate
 
 But, there are some cases that are a bit more challenging, like geography. Consider the following table from an Excel worksheet:
 
-![Screenshot of Excel showing tabular data to be imported into Power B I Desktop.](media/desktop-data-categorization/datacategorizationtable.png)
+![Screenshot of Excel showing tabular data to be imported into Power BI Desktop.](media/desktop-data-categorization/datacategorizationtable.png)
 
 Should Power BI Desktop treat the codes in the **GeoCode** column as an abbreviation for a Country/Region or a US State?  That's not clear because a code like this can mean either one. For instance, AL can mean Alabama or Albania, AR can mean Arkansas or Argentina, or CA can mean California or Canada. It makes a difference when we go to chart our GeoCode field on a map. 
 
