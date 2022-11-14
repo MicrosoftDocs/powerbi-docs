@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 11/02/2022
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -65,7 +65,7 @@ You can specify which users receive notification about issues occurring in the w
 ### Set a workspace OneDrive
 
 The Workspace OneDrive feature allows you to configure a Microsoft 365 Group whose SharePoint document library is available to workspace users. You create the Group *outside* of Power BI first, with one available method being from OneDrive. Read about creating a [OneDrive shared library](https://support.microsoft.com/office/create-a-new-shared-library-from-onedrive-for-work-or-school-345c8599-05d8-4bf8-9355-2b5cfabe04d0).
-NOTE: It is important to note that the creation of Microsoft 365 Groups may be restricted in your environment, and/or the ability to create them from your OneDrive site may be disabled. If this is the case, speak with your IT department.
+NOTE: It's important to note that the creation of Microsoft 365 Groups may be restricted in your environment, and/or the ability to create them from your OneDrive site may be disabled. If this is the case, speak with your IT department.
 
 Power BI doesn't synchronize permissions between users or groups with workspace access, and users or groups with Microsoft 365 Group membership. A best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 Group whose file storage you configured. Then manage workspace access by managing membership of the Microsoft 365 Group.
 
@@ -91,7 +91,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-    Power BI should automatically detect the workspace OneDrive, so it apears as **OneDrive - WORKSPACE_NAME". It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
+    Power BI should automatically detect the workspace OneDrive, so it appears as **OneDrive - WORKSPACE_NAME". It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
 
 1. Select the workspace OneDrive, for example, **OneDrive - Sales and Marketing**.
 
@@ -115,7 +115,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
 You can create and publish *apps* from a workspace. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from workspaces](service-create-distribute-apps.md).
 
-By default, only workspace Admins and Members can publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in workspaces](service-roles-new-workspaces.md).
+By default, only workspace Admins and Members can create, publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in workspaces](service-roles-new-workspaces.md).
 
 1. Access the **Allow contributors to update the app** setting in one of two ways:
 
@@ -129,11 +129,14 @@ By default, only workspace Admins and Members can publish and update the app for
 When enabled, contributors can:
 * Update app metadata like name, icon, description, support site, and color.
 * Add or remove items included in the app, like adding reports or datasets.
-* Change the app navigation or default item the app opens on.
+* Change the visibility of the items for all the audience groups in the audience tab.
 
 However, contributors can't:
-* Publish the app for the first time
-* Change who has permission to the app
+* Create or publish the app for the first time.
+* Add users to the app or change who has permission to the app.
+* Enable or disable automatic installation of app for app users.
+* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups.
+* Allow or prevent app consumers saving a copy of reports included in the app.  
 
 ## Premium capacity settings
 

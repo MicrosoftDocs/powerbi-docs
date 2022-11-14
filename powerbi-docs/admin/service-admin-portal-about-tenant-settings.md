@@ -54,7 +54,7 @@ Many of the settings can have one of three states:
 
 The sections of the tenant settings page are listed in the table below.
 
-* [Help and support settings](service-admin-portal-help-support.md)
+* [Help and support settings](/power-bi/support/service-admin-portal-help-support)
 * [Workspace settings](service-admin-portal-workspace.md)
 * [Information protection](service-admin-portal-information-protection.md)
 * [Export and sharing settings](service-admin-portal-export-sharing.md)
