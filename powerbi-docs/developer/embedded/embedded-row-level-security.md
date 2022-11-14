@@ -42,7 +42,6 @@ For instructions on how to embed reports or other items, go to the link that bes
 * [Embedding paginated reports](paginated-reports-row-level-security.md)
 * [SQL Server Analysis Services](sql-server-analysis-services-embed.md)
 * [Azure Analysis Services](./embed-azure-analysis-services.md)
-* Single sign-on 
 * [Object level security](./embed-object-level-security.md)
 
 ## Considerations and limitations
