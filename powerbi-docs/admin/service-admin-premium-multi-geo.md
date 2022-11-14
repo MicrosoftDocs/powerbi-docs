@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/02/2021
+ms.date: 11/06/2022
 LocalizationGroup: Premium 
 ---
 
@@ -42,8 +42,6 @@ After you've created capacity, it remains in that region, and any workspaces cre
 You see this message to confirm the change.
 
 ![Change assigned workspace confirmation](media/service-admin-premium-multi-geo/power-bi-multi-geo-change-assigned-workspace-capacity.png)
-
-You don't need to reset the gateway credentials during a migration at this time.  After they're stored in the Premium capacity region, you will need to reset them upon migration.
 
 During migration, certain operations may fail, such as publishing new datasets or scheduled data refresh.  
 

@@ -1,16 +1,16 @@
 - name: Explore Power BI (../consumer)
-  href: /learn/modules/explore-power-bi-service
+  href: /training/modules/explore-power-bi-service
 - name: Analyze data in Power BI (../consumer)
-  href: /learn/modules/analyze-data-power-bi
+  href: /training/modules/analyze-data-power-bi
 - name: Get started building with Power BI
-  href: /learn/modules/get-started-with-power-bi
+  href: /training/modules/get-started-with-power-bi
 - name: Get data
-  href: /learn/modules/get-data-power-bi
+  href: /training/modules/get-data-power-bi
 - name: Model data
-  href: /learn/modules/model-data-power-bi
+  href: /training/modules/model-data-power-bi
 - name: Use visuals
-  href: /learn/modules/visuals-in-power-bi
+  href: /training/modules/visuals-in-power-bi
 - name: Explore data
-  href: /learn/modules/explore-data-power-bi
+  href: /training/modules/explore-data-power-bi
 - name: Publish and share
-  href: https://docs.microsoft.com/learn/modules/publish-share-power-bi
+  href: /training/modules/publish-share-power-bi

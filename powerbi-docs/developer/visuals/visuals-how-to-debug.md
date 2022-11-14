@@ -91,8 +91,7 @@ You can also set the browser to break on caught exceptions. Breaking stops code 
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md)
+* [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md)
+* [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml)
 
-> [!div class="nextstepaction"]
-> [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)  

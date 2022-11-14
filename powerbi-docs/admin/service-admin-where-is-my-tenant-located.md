@@ -26,7 +26,7 @@ The first user in your organization to sign up for Power BI or Microsoft 365 cho
 The region you select during sign-up determines where data is stored. This region will be the same location for all users in your organization, no matter where they are. Ideally, the selected region will be in the same geographical area as most of your users. For more information about signing up for Power BI and choosing the data region, see [Get a Power BI service subscription for your organization](../enterprise/service-admin-org-subscription.md).
 
 > [!IMPORTANT]
-> After sign-up you can't change the default data region yourself. For information about how to request a support-driven data region migration, see [Move between regions](service-admin-region-move.md).
+> After sign-up you can't change the default data region yourself. For information about how to request a support-driven data region migration, see [Move between regions](/power-bi/support/service-admin-region-move).
 
 > [!NOTE]
 > Customers that have purchased Power BI Premium capacity can specify a data region for each capacity. The region for the capacity can be different than the default region. Learn more about how to configure this scenario in [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
@@ -48,7 +48,7 @@ To find the default data region for your organization, follow these steps:
 
 - [International availability of Microsoft Power Platform](/power-platform/availability)
 - [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md)
-- [Move Power BI between regions](service-admin-region-move.md)
+- [Move Power BI between regions](/power-bi/support/service-admin-region-move)
 - [Administrators learning catalog](../learning-catalog/learning-catalog-administrator.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

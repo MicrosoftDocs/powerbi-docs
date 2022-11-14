@@ -265,8 +265,6 @@
       items: 
       - name: "Connect to services with apps"
         href: service-connect-to-services.md
-      - name: "Analyze Popular Stocks with Power BI"
-        href: service-connect-to-analyze-stocks.md
       - name: "COVID-19 US Tracking Report"
         href: service-connect-to-covid-19-tracking.md
       - name: "Crisis Communication Presence Report"

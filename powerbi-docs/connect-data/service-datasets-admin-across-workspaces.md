@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 08/22/2022
 LocalizationGroup: Share your work
 ---
 
@@ -17,13 +17,14 @@ Using datasets across workspaces is a powerful way to drive data culture and dat
 
 ![Power BI admin workspace settings](media/service-datasets-admin-across-workspaces/power-bi-admin-workspace-settings.png)
 
-If you turn off this setting, here are the effects on report creators:
+Some of the effects of turning off this setting are listed below:
 
-- The button to copy reports across workspaces isn't available. 
-- In a report based on a shared dataset, the **Edit report** button isn't available.
-- In the Power BI service, the discovery experience only shows datasets in the current workspace.
-- In Power BI Desktop, the discovery experience only shows datasets from workspaces where you're a member.
-- In Power BI Desktop, if users open a .pbix file with a live connection to a dataset outside any workspaces they are a member of, they see an error message asking them to connect to a different dataset.
+* The button to copy reports across workspaces isn't available. 
+* In a report based on a shared dataset, the **Edit report** button isn't available.
+* In the Power BI service, the discovery experience only shows datasets in the current workspace.
+* In Power BI Desktop, the discovery experience only shows datasets from workspaces where you're a member.
+* In the Data hub, users see datasets that were shared with them outside of the workspace, but they can't interact with them.
+* In Power BI Desktop, if users open a *.pbix* file with a live connection to a dataset outside any workspaces they are a member of, they see an error message asking them to connect to a different dataset.
 
 ## Provide a link for the certification process
 

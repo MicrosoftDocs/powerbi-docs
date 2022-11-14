@@ -68,7 +68,7 @@ sections:
       - question: |
           What happens to workspaces and reports if my Premium capacity becomes unavailable? 
         answer: |
-          If a Premium capacity becomes unavailable, workspaces and reports remain accessible and visible to all Power BI Pro licensed users who previously had access to them.
+          If a Premium capacity becomes unavailable, workspaces and reports remain accessible and visible to all.
 
       - question: |
           When does my Power BI instance return to the original region?
