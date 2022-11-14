@@ -13,26 +13,24 @@ LocalizationGroup: Get started
 ---
 # Enroll your US government organization in the Power BI service
 
-This article describes the US government enrollment process for the Power BI service. The process outlined is intended for administrators who have authority to sign up their US government organization for Power BI. If you're not an admin, contact your administrator about getting a subscription to Power BI for US government.
+This article describes the US government enrollment process for the Power BI service. The process outlined is intended for administrators who have authority to sign up their US government organization for Power BI. If you're not an admin, contact your administrator about getting a subscription to Power BI for US government organizations.
 
 The Power BI service has a special US government version, which is part of the [Microsoft 365 Government plans](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). The enrollment process outlined in this article is different from the commercial version of the Power BI service.
 
-For more information, see [Power BI for United States government customers - Overview](service-govus-overview.md).
+For more information, see [Power BI for United States government customers](service-govus-overview.md).
 
 >[!IMPORTANT]
->Power BI enhanced the way that customers connect to these US government clouds:
+>US government customers must complete an explicit request for onboarding these US government clouds to maintain continuity of data access.
 >
 >* Microsoft 365 Government Community Cloud (GCC)
 >
 >* Microsoft 365 Government Community Cloud High (GCC High)
 >
 >* Microsoft 365 Department of Defense (DoD)
->
->US government customers must complete an explicit request for onboarding these US government clouds to maintain continuity of data access.
 
 ## Select the right sign-up process for your US government organization
 
-Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. The  [Microsoft 365 Government Community Cloud (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government. If your organization is in GCC, you can use the steps in this article to sign up and purchase services.
+Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. The  [Microsoft 365 Government Community Cloud (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government. If your organization is in GCC, use the steps in this article to sign up and purchase services.
 
 >[!IMPORTANT]
 >Don't follow these instructions if you belong to one the following:
@@ -43,7 +41,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 >
 >To purchase the Power BI service for these US government clouds, see [How do I buy Microsoft 365 Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government), and work with your reseller to ensure new services are properly associated with your tenant.
 
-After you sign up for the Power BI service for the US government, work with your account team to start the [allowlist process](#more-signup-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
+After you sign up for the Power BI service for the US government, work with your account team to start the [allowlist process](#more-sign-up-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
 
 ## Sign up for a new Microsoft 365 Government plan
 
