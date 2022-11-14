@@ -24,6 +24,8 @@ Using Power BI embedded analytics you can:
 
 * Reduce developer resources by automating the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
 
+Power BI Embedded has basically the [same features as Power BI Premium](../../enterprise/service-premium-features.md).
+
 ## Secure embed
 
 [Secure embed](../../collaborate-share/service-embed-secure.md) is the simplest no-code way to embed a report into any portal that accepts a URL or iFrame. The viewer of the report must be properly licensed and can't interact with the report. Secure embed is available in the Power BI service.

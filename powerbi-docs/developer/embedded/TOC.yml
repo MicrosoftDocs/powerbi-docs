@@ -7,6 +7,8 @@
     items:
     - name: "What is Power BI embedded analytics?"
       href: embedded-analytics-power-bi.md
+    - name: Power BI Embedded features
+      href: ../../enterprise/service-premium-features.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
     - name: "What is the Power BI Embedded analytics playground?"
       href: "power-bi-playground.md"    
   - name: Power BI Embedded setup
@@ -97,15 +99,13 @@
       href: migration-to-sp-profiles.md
   - name: Security
     items:
-    - name: RLS
-      items:
-      - name: "Row-level security"
-        href: embedded-row-level-security.md
-      - name: "Embed a report with cloud-based RLS"
-        href: cloud-rls.md
-      - name: "RLS in embedded paginated reports"
-        href: paginated-reports-row-level-security.md
-    - name: "Embed a report on an on-premises SQL Server Analysis Services (SSAS)"
+    - name: "Embed a report with row-level security"
+      href: embedded-row-level-security.md
+    - name: "Embed a report with cloud-based RLS"
+      href: cloud-rls.md
+    - name: "RLS in embedded paginated reports"
+      href: paginated-reports-row-level-security.md
+    - name: "On-premises SQL Server Analysis Services (SSAS)"
       href: sql-server-analysis-services-embed.md
     - name: "Embed a report with Azure Analysis Services (AAS)"
       href: embed-azure-analysis-services.md

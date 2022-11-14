@@ -222,7 +222,7 @@ Like for AAS, you can use a service principal as an automation account for Power
 
 ### Custom security
 
-Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embedded-row-level-security.md#using-the-customdata-feature) feature.
+Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embed-azure-analysis-services.md#dynamic-security---rls) feature.
 
 However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
 

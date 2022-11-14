@@ -72,7 +72,7 @@ A matrix table that displays metrics for each Power BI item on the capacity.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Gen2 metrics app.":::
 
-To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below.
+To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below. The colors in the table represent your *performance delta*.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by artifact and operation visual parameter headers.":::
 
@@ -89,6 +89,11 @@ To gain a better understanding of your capacity's performance, you can sort this
 * **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were affected the most due to overload penalty.
 
 * **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
+
+    The colors in the matrix represent your *performance delta*:
+    * *No color* - A value higher than -10
+    * *Orange* - A value between -10 and -25
+    * *Red* - A value lower than -25
 
     To create the *performance delta* Power BI calculates an hourly average for all the fast operations that take under 200 milliseconds to complete. The hourly value is used as a slow moving average over the last seven days (168 hours). The slow moving average is then compared to the average between the most recent data point, and a data point from seven days ago. The *performance delta* indicates the difference between these two averages.
 
