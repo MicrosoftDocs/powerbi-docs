@@ -35,7 +35,7 @@ Before you start the migration, you should verify that your environment meets ce
 
 ### Preparing for migration
 
-As you prepare to migrate your reports to Power BI, first verify that your organization has a [Power BI Premium](../enterprise/service-premium-what-is.md) subscription. This subscription is required to host and run your Power BI paginated reports.
+As you prepare to migrate your reports to Power BI, first verify that you have a Power BI Pro or Premium Per User license to upload content to any location other than your personal My Workspace.
 
 ### Supported versions
 
