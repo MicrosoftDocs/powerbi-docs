@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 10/17/2022
+ms.date: 11/15/2022
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -23,6 +23,10 @@ After you sign in to the Power BI service, select **Home** from the navigation p
 
 
 Power BI displays your Home canvas. The layout and content on Home is different for every user. New users will have less content, but that will change as they use Power BI more often. Only content that you can access will display on your Home. For example, if you don't have permissions to a report, then that report will not appear on Home. 
+
+> [!NOTE]
+> The **Getting started** section on Home is being deprecated in mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Knowledge center**. 
+:::image type="content" source="media/end-user-home/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
 
 ## Simplified layout and Expanded layout
 Your Home view will also depend on the layout you've selected. By default, you'll see the **Simplified** view. This view includes **Recommended** content at the top with tabs for **Recent**, **Favorites**, and **My apps** below. **Recommended** content may include content that:

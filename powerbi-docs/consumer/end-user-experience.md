@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: tutorial
-ms.date: 01/19/2022
+ms.date: 11/15/2022
 ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
 #Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
@@ -113,6 +113,10 @@ Let's start by opening a dashboard.
 The nav pane will become more useful as colleagues share content with you. In this section of the tutorial, we'll look at a dashboard and report that belong to a Power BI *business user* who has a lot of shared content.
 
 1. **Home** is the default landing page when you log in to the Power BI service. Home is a great jumping off point and alternate way to navigate your content. Content on Home is organized several different ways: by recommended, favorites, recent, and apps. For new users, the **Getting started** section is especially helpful, with tabs containing samples, documentation, and training content. Just select an item to open it.
+
+    > [!NOTE]
+    > The **Getting started** section on Home is being deprecated in mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Knowledge center**. 
+    :::image type="content" source="media/end-user-experience/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
 
     Home brings together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open your dashboards, reports, and apps. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues. Your Home canvas also updates with recommended content and learning resources.
 
