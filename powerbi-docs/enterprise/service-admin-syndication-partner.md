@@ -1,6 +1,6 @@
 ---
 title: Purchase Power BI through your Microsoft 365 partner
-description: Learn how to add Power BI to a Microsoft 365 subscription purchased through a partner. The syndicated model is a purchasing model used by Microsoft 365.
+description: Learn how to add Power BI to a Microsoft 365 subscription that was purchased through a partner. The syndicated model is a purchasing model used by Microsoft 365.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
