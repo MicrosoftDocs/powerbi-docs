@@ -80,7 +80,7 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](./../enterprise/service-premium-smoothing.md#how-to-detect-overload).
 
-$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time}} $
+$\text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time}}$
 
 ### Calculate the max number of users
 
