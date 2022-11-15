@@ -189,7 +189,7 @@ Asaf Mozes
 
 ## Customized data reduction
 
-Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
+Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
 To allow the report author to set the count, define a [property pane object](./capabilities.md#objects-define-property-pane-options) called `dataReductionCustomization` in your *capabilities.json* file:
 
@@ -241,6 +241,10 @@ Then, after the `dataViewMappings`, define the default values for `dataReduction
         }
     }
 ```
+
+The data reduction information will appear under *visual* in the format pane.
+
+:::image type="content" source="./media/fetch-more-data/customize-data-reduction.png" alt-text="Screenshot of the format pan with option to set data reduction count.":::
 
 ## Considerations and limitations
 
