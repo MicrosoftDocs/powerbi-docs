@@ -25,7 +25,7 @@ After you complete this article, you'll understand:
 - How to pin tiles.
 - How to navigate between a dashboard and a report.
  
-[![Screenshot shows a Power BI dashboard with several visualizations.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)](media/service-dashboard-create/power-bi-completed-dashboard-small.png#lightbox)
+![Screenshot shows a Power BI dashboard with several visualizations.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)](media/service-dashboard-create/power-bi-completed-dashboard-small.png#lightbox)
 
 > [!NOTE]
 > Dashboards are a feature of the Power BI service, not Power BI Desktop. You can't create dashboards in the Power BI mobile apps, but you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) them there.
@@ -50,7 +50,7 @@ In this step-by-step, you import one of the Power BI sample datasets and use it 
     ![Screenshot of the nav pane, highlighting Get data.](media/service-dashboard-create/power-bi-get-data-new-look.png)
 4. Under **Files**, select **Get**.
 
-   ![Screenshot of Files dialog with Get button.](media/service-dashboard-create/power-bi-select-files.png)
+   ![Screenshot of Files dialog and Get button.](media/service-dashboard-create/power-bi-select-files.png)
 5. Navigate to the location where you saved the Procurement Analysis sample Excel file. Select it and choose **Connect**.
 
    ![Screenshot of OneDrive for Business sample folder.](media/service-dashboard-create/power-bi-connectnew.png)
