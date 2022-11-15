@@ -36,7 +36,7 @@ Depending on the relationship with your partner, you might be able to purchase P
 
    ![Screenshot showing the billing menu in Microsoft 365 admin center. Your products is highlighted.](media/service-admin-syndication-partner/365-my-products.png)
 
-1. Look for **Subscriptions** in the menu. If you see **Subscriptions**, you can acquire the service from Microsoft directly or you can contact another partner that offers Power BI.
+1. Look for **Subscriptions** in the menu. If you see **Subscriptions**, you can acquire the service from Microsoft directly, or you can contact another partner that offers Power BI.
 
    ![Screenshot showing the your products menu. The subscriptions menu option is highlighted.](media\service-admin-syndication-partner\365-subscriptions.png)
 
