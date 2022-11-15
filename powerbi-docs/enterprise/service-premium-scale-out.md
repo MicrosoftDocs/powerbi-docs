@@ -17,6 +17,32 @@ Power BI Query Scale Out helps Power BI deliver fast performances while your rep
 
 When Power BI creates the dataset copies, it separates *read* only datasets from *read/write* datasets. The *read* datasets serve the Power BI report and dashboard consumption, and the *read/write* dataset is used when write operations and refreshes are required. During write operations and refreshes, the *read* datasets continue to serve your reports and dashboards without being disturbed. When needed, the *read* and *read/write* datasets are synced so that the *read* datasets are kept up-to-date. Using this method, Power BI Query Scale Out reduces the impact of write operations and dataset refreshes on your capacity.
 
+1 - 
+*Refresh isolation* - one read replica - one dataset replica deals with queries; read/write and read replica
+
+2 - End of feb
+Automatic scale out of replicas to support multi user concurrency - coming in the 2nd public preview step
+
+3 - March (?)
+GA - On by default
+
+
+Refreshes - happen at the original dataset. It needs to be syncned manaully via an API call.
+
+Changes to the model (metadata) - happen at the original dataset. It needs to be sycned manaully via an API call.
+
+
+Only XMLA - connects to read/write; everything else connects to read.
+
+
+Refresh method	        AutoSync = Off
+OnDemand UI	            Ignored, Always syncs
+Scheduled Refresh	    Ignored, Always syncs
+Basic REST API	        Ignored, Always syncs
+Advanced REST API	    Honored, manual sync required
+XMLA	                Honored, manual sync required
+
+
 ## Prerequisites
 
 * One of the following Power BI Premium [capacities](service-premium-gen2-what-is.md#capacities-and-skus):
