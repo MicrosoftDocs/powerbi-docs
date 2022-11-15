@@ -16,7 +16,7 @@ ms.date: 10/19/2021
 
 Sometimes you might want to use a slicer on only one specific page of the report. Other times, you might want to apply the slicer to several pages. By using the *sync slicers* feature, a slicer selection on any page will affect visualizations on all selected pages.
 
-## How to enable the sync slicer feature
+## How to enable the sync slicers feature
 
 In the *capabilities.json* file, set `"supportsSynchronizingFilterState": true`, as shown in the following example:
 
@@ -41,7 +41,7 @@ From the **Sync slicers** pane, you can select which report pages the slicer vis
 For more information on how to sync slicers, see [Sync and use slicers on other pages](../../visuals/power-bi-visualization-slicers.md#sync-and-use-slicers-on-other-pages).
 
 >[!NOTE]
->A report using the sync slicer feature must use API version 1.13.0 or later.
+>A report using the sync slicers feature must use API version 1.13.0 or later.
 
 ## Considerations and limitations
 
