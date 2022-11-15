@@ -50,13 +50,13 @@ To get started, you first need to enable the **Field parameters** preview featur
 ## Use a field parameter to control visual properties
 Once you’ve created a field parameter, you can use the parameter to control the measures or dimensions used in a visual.
 
-:::image type="content" source="media/power-bi-field-parameters/using-a-parameter-in-a-visual.png" alt-text="Screenshot of sample visual, showing the parameter options.":::
+:::image type="content" source="media/power-bi-field-parameters/using-a-parameter-in-a-visual.png" alt-text="Screenshot of the sample visual, showing the parameter options.":::
 
 You can use the parameter in the field drop zones for a visual. Note that certain visual properties have restrictions on the number and type of fields that you can use.
 
 From the context menu, you can also choose whether the field parameter shows the values or the display names of the selected field(s) for all non-slicer visuals. In the **Values** box, select the down arrow next to the parameter name and select **Show selected field**.
 
-    :::image type="content" source="media/power-bi-field-parameters/show-selected-field-setting.png" alt-text="Screenshot for non-slicer visuals, customize if the visual displays the values or the display names of the selected fields."lightbox="media/power-bi-field-parameters/show-selected-field-setting.png":::
+:::image type="content" source="media/power-bi-field-parameters/show-selected-field-setting.png" alt-text="Screenshot of the Values box, highlighting Show selected field."lightbox="media/power-bi-field-parameters/show-selected-field-setting.png":::
 
 ## Edit a field parameter
 
@@ -73,7 +73,7 @@ Parameter = {
 }
 ```
 
-:::image type="content" source="media/power-bi-field-parameters/editing-field-parameter-in-dax.png" alt-text="Screenshot of Example of editing a field parameter in DAX.":::
+:::image type="content" source="media/power-bi-field-parameters/editing-field-parameter-in-dax.png" alt-text="Screenshot of example DAX parameters entered on Power BI.":::
 
 ## Limitations
 
