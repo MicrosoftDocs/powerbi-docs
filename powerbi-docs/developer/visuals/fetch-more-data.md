@@ -12,18 +12,20 @@ ms.date: 03/01/2022
 
 # Fetch more data from Power BI
 
-The **fetchMoreData API** supports loading data chunks as a way of enabling Power BI visuals to bypass the hard limit of a 30K row data view. In addition to the original approach of aggregating all the chunks requested, the API now also supports loading only the incremental data chunks.
+The **fetchMoreData API** lets you load data chunks of different sizes as a way of enabling Power BI visuals to bypass the hard limit of a 30K row data view. In addition to the original approach of aggregating all the chunks requested, the API now also supports loading data chunks incrementally.
 
-This approach allows more flexibility in the way additional data chunks are loaded to the visual. To improve performance, you can configure the chunk size to accommodate your use case.
+You can configure the number of rows to fetch at a time in advance, or you can use [`dataReductionCustomization`](#customized-data-reduction) to allow the report author to decide the chunk size to accommodate their needs.
 
 >[!NOTE]
->The `fetchMoreData` API is available from version 3.4. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
+> The `fetchMoreData` API is available from version 3.4.
+> Dynamic fetch data is available from version 5.2
+> To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Enable a segmented fetch of large datasets
 
-For the `dataview` segment mode, define a window size for `dataReductionAlgorithm` in the visual's *capabilities.json* file for the required `dataViewMapping`. The `count` determines the window size, which limits the number of new data rows that can be appended to the `dataview` in each update.
+Define a window size for `dataReductionAlgorithm` in the visual's *capabilities.json* file for the required `dataViewMapping`. The `count` determines the window size, which limits the number of new data rows that can be appended to the `dataview` in each update.
 
-Add the following code in the *capabilities.json* file:
+For example, add the following code in the *capabilities.json* file to append 100 rows of data at a time:
 
 ```typescript
 "dataViewMappings": [
@@ -177,14 +179,75 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
+Asaf Mozes
+Profile picture of Asaf Mozes.
+Asaf Mozes
+
 > Although the data in the different updates of the dataviews are mostly exclusive, there will be some overlap between consecutive dataviews.
 > For table and categorical data mapping, it is expected the the first N dataview rows will contain data copied from the previous dataview.
 > N can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
+## Customized data reduction
+
+Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
+
+To allow the report author to set the count, define a [property pane object](./capabilities.md#objects-define-property-pane-options) called `dataReductionCustomization` in your *capabilities.json* file:
+
+```json
+    "objects": {
+        "dataReductionCustomization": {
+            "displayName": "Data Reduction",
+            "properties": {
+                "rowCount": {
+                    "type": {
+                        "numeric": true
+                    },
+                    "displayName": "Row Reduction",
+                    "description": "Show Reduction for all row groups",
+                    "suppressFormatPainterCopy": true
+                },
+                "columnCount": {
+                    "type": {
+                        "numeric": true
+                    },
+                    "displayName": "Column Reduction",
+                    "description": "Show Reduction for all column groups",
+                    "suppressFormatPainterCopy": true
+                }
+            }
+        }
+    },
+```
+
+Then, after the `dataViewMappings`, define the default values for `dataReductionCustomization`.
+
+```json
+   "dataReductionCustomization": {
+        "matrix": {
+            "rowCount": {
+                "propertyIdentifier": {
+                    "objectName": "dataReductionCustomization",
+                    "propertyName": "rowCount"
+                },
+                "defaultValue": "100"
+            },
+            "columnCount": {
+                "propertyIdentifier": {
+                    "objectName": "dataReductionCustomization",
+                    "propertyName": "columnCount"
+                },
+                "defaultValue": "10"
+            }
+        }
+    }
+```
+
 ## Considerations and limitations
 
 * Window size is limited to a range of 2-30,000.
+
 * Dataview total row count is limited to 1,048,576 rows.
+
 * In segments aggregation mode, dataview memory size is limited to 100 MB.
 
 ## Next steps
