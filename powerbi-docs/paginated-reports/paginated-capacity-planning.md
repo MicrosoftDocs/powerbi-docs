@@ -22,11 +22,11 @@ Learn how to plan your [Premium capacity](./../enterprise/service-premium-gen2-w
 
 Calculating the type of capacity you need depends on several parameters such as the number of visuals in your reports, the complexity of queries against the report and the quality of your data source or data model. You should also consider the current use of your capacity during peak times, before you add paginated reports to it.
 
-Before you start planning which capacity you need, review the [Capacities and SKUs](./../power-bi/enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table, to see which resources are offered by each capacity.
+Before you start planning which capacity you need, review the [Capacities and SKUs](./../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table, to see which resources are offered by each capacity.
 
 When you plan your capacity, consider the following:
 
-* The complexity of the report design. Nested [tablix](tablix-data-region-report-builder-and-ssrs.md),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources.
+* The complexity of the report design. Nested [tablix](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
@@ -84,7 +84,7 @@ $$ \text {max concurrent report renders} = {\text {number of capacity SKU cores}
 
 ### Calculate the max number of users
 
-Using the estimated [five percent concurrency](#paginated-report-test) for the correlation between the number of total users, and the maximum concurrent renders, you can get the number of total users a SKU can handle.
+Using the estimated [five percent concurrency](#how-many-users-can-a-sku-handle) for the correlation between the number of total users, and the maximum concurrent renders, you can get the number of total users a SKU can handle.
 
 $$ \text {max SKU users} = {\text {max concurrent reports renders} \over 0.05} $$
 
