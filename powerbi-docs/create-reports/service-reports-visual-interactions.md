@@ -19,7 +19,7 @@ If you have edit permissions for a report, you can use **Visual interactions** t
 ## Introduction to visual interactions
 By default, visualizations on a report page cross-filter and cross-highlight the other visualizations on the page.
 For example, selecting a state on a map visualization highlights the column chart and filters the line chart to display only data that applies to that one state.
-See [About filtering and highlighting](power-bi-reports-filters-and-highlighting.md). If you have a visualization that supports [drilling](../consumer/end-user-drill.md), by default, drilling one visualization has no impact on the other visualizations on the report page. Both of these default behaviors can be overridden, and interactions can be set, on a per-visualization basis.
+See [Filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md). If you have a visualization that supports [drilling](../consumer/end-user-drill.md), by default, drilling one visualization has no impact on the other visualizations on the report page. Both of these default behaviors can be overridden, and interactions can be set, on a per-visualization basis.
 
 This article shows how to use **visual interactions** in Power BI Desktop. The process is the same in the Power BI service [Editing view](service-interact-with-a-report-in-editing-view.md). If you only have Reading view access, or the report has been shared with you, you can't change the visual interactions settings.
 
