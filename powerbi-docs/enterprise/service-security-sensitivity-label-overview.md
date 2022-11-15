@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 11/13/2022
+ms.date: 11/15/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -227,13 +227,13 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 ### General
 
-* Don't use parent labels. A parent label is a label that has sublabels. You cannot apply parent labels, but a label that is already applied may become a parent label if it acquires sublabels. If you come across an item that has a parent label, remove the parent label and apply the appropriate sublabel. To remove a parent label, you must have [sufficient usage rights on the label](./service-security-sensitivity-label-change-enforcement.md).
+* Don't use parent labels. A parent label is a label that has sublabels. You cannot apply parent labels, but a label that is already applied may become a parent label if it acquires sublabels. If you come across an item that has a parent label, apply the appropriate sublabel. To change a parent label, you must have [sufficient usage rights on the label](./service-security-sensitivity-label-change-enforcement.md).
 
     If an item has a parent label, note the following behavior:
     * Parent labels will not be inherited.
-    * Parent labels can interfere with mandatory label policies. Mandatory label policies will not be applied to items that a parent label. This means users won't have to apply a meaningful label in order to save the item, and the item will escape mandatory label policies designed to promote total coverage.
+    * Mandatory label policies will not be applied to items that have a parent label. This means users won't be required to apply a meaningful label in order to save the item, and the item will escape mandatory label policies designed to promote total coverage.
     * If you try to export data from an item that has a parent label, export will fail.
-    * It is possible to publish a *.pbix* file that has a parent label, but if the parent label is protected, publish will fail. The solution is to remove the parent label from the *.pbix* file (requires [sufficient usage rights](./service-security-sensitivity-label-change-enforcement.md)) and to apply a suitable sublabel.
+    * It is possible to publish a *.pbix* file that has a parent label, but if the parent label is protected, publish will fail. The solution is to apply a suitable sublabel.
 
 * Data sensitivity labels aren’t supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
 
