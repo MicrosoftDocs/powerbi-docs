@@ -1,5 +1,5 @@
 ---
-title: Known issue - Working in a dataflow show irrelevant upgrade workspace message
+title: Known issue - Working in a dataflow shows irrelevant upgrade workspace message
 description: A known issue is posted where an upgrade workspace message appears when you're already in a Premium workspace
 author: mihart
 ms.author: mihart
@@ -10,7 +10,7 @@ ms.date: 11/14/2022
 ms.custom: known-issue-290
 ---
 
-# Known issue - Working in a dataflow show irrelevant upgrade workspace message
+# Known issue - Working in a dataflow shows irrelevant upgrade workspace message
 
 You may see a warning message telling you to upgrade to a Premium workspace even though you already have a Premium workspace. You can ignore the message when editing, saving, or refreshing a dataflow.
 

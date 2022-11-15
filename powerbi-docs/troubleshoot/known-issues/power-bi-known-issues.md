@@ -22,7 +22,7 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title  |  Issue publish date |  
 |-----------|------------------------------------|---------|---------------------|
-|  290      |  Create and Author Data            |  [Working in a dataflow show irrelevant upgrade workspace message](known-issue-290-dataflow-show-upgrade-workspace-message.md)  | November 14, 2022  |
+|  290      |  Create and Author Data            |  [Working in a dataflow shows irrelevant upgrade workspace message](known-issue-290-dataflow-show-upgrade-workspace-message.md)  | November 14, 2022  |
 |  284      |  Share and Collaborate             |  [Accessing Power BI app report is denied due to no dataset access](known-issue-284-accessing-app-report-denied-due-to-no-dataset-access.md)  |  November 14, 2022  |
 |  274      |  Consume and View                  |  [Excel add-in can't find Power BI datasets](known-issue-274-excel-add-in-cant-find-datasets.md)    |  November 14, 2022  |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
