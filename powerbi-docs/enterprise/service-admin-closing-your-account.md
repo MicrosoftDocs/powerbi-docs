@@ -1,6 +1,6 @@
 ---
 title: Close your Power BI account
-description: If you signed up for an individual Power BI account, you can close your account from the Power BI app.
+description: Learn how to close your individual Power BI account by using settings in the Power BI app.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
@@ -19,7 +19,7 @@ If you don't want to use Power BI any longer, you can close your Power BI accoun
 
 If you signed up for Power BI as an individual, you can close your account from the **Settings** screen.
 
-1. In Power BI, select the gear in the upper right, then select **Settings**.
+1. In Power BI, select the gear icon in the upper right, then select **Settings**.
 
     ![Screenshot showing the Power BI ribbon. The gear icon and the settings menu option are highlighted.](media/service-admin-closing-your-account/close-account-settings.png)
 
