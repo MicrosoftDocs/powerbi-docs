@@ -278,13 +278,7 @@ Paginated report definitions (.rdl) are stored in Power BI, and to publish and/o
 
 The Azure AD token obtained during the authentication is used to communicate directly from the browser to the Power BI Premium cluster.
 
-For Premium Gen1, a single sandbox exists per each one of the capacities of the tenant, and is shared by the workspaces assigned to the capacity.
-
-![Paginated reports Gen 1](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen1.png)
-
-For Premium Gen2, an individual and exclusive ephemeral sandbox is created for each one of the renders of a report, providing a higher level of isolation between users.
-
-![Paginated reports Gen 2](media/whitepaper-powerbi-security/powerbi-security-whitepaper-paginated-reports-gen2.png)
+In Premium Gen2, the Power BI service runtime provides an appropriately isolated execution environment for each report render. Unlike in Gen1, this includes cases where the reports being rendered belong to workspaces assigned to the same capacity.
 
 A paginated report can access a wide set of data sources as part of the rendering of the report. The sandbox doesn't communicate directly with any of the data sources but instead communicates with the trusted process to request data, and then the trusted process appends the required credentials to the connection. In this way the sandbox never has access to any credential or secret.
 
@@ -407,7 +401,7 @@ Microsoft Defender for Cloud Apps is one of the world's leading cloud access sec
 
 With Defender for Cloud Apps, organizations can gain the following DLP capabilities:
 
-* Set real-time controls to enforce risky user sessions in Power BI. For example, if a user connects to Power BI from outside of their country, the session can be monitored by the Defender for Cloud Apps real-time controls, and risky actions, such as downloading data tagged with a "Highly Confidential" sensitivity label, can be blocked immediately.
+* Set real-time controls to enforce risky user sessions in Power BI. For example, if a user connects to Power BI from outside of their country or region, the session can be monitored by the Defender for Cloud Apps real-time controls, and risky actions, such as downloading data tagged with a "Highly Confidential" sensitivity label, can be blocked immediately.
 * Investigate Power BI user activity with the Defender for Cloud Apps activity log. The Defender for Cloud Apps activity log includes Power BI activity as captured in the Office 365 audit log, which contains information about all user and admin activities, as well as sensitivity label information for relevant activities such as apply, change, and remove label. Admins can leverage the Defender for Cloud Apps advanced filters and quick actions for effective issue investigation.
 * Create custom policies to alert on suspicious user activity in Power BI. The Defender for Cloud Apps activity policy feature can be leveraged to define your own custom rules, to help you detect user behavior that deviates from the norm, and even possibly act upon it automatically, if it seems too dangerous.
 * Work with the Defender for Cloud Apps built-in anomaly detection. The Defender for Cloud Apps anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you are ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert.
@@ -511,7 +505,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the template app on tenant. The publisher is responsible for informing the customer about the app's behavior and capabilities.
 
-**What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
+**What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country or region borders?**
 
 * Some customers in certain geographies have an option to create a tenant in a national cloud, where data storage and processing is kept separate from all other datacenters. National clouds have a slightly different type of security, since a separate data trustee operates the national cloud Power BI service on behalf of Microsoft.
 

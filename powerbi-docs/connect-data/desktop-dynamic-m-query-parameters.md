@@ -101,7 +101,7 @@ If the mapped column is set to **No** for Multi-select, you must use either a si
 ## Enable Select all
 
 There are additional steps if you want end-users to be able to use the **Select all** option in the slicer or filter card. 
-Let’s use the following scenario as an example. Within the **Model** tab of Power BI Desktop, you can see we have a field called **Country** (list of countries) that is bound to an M parameter called **countryNameMParameter**:
+Let’s use the following scenario as an example. Within the **Model** tab of Power BI Desktop, you can see we have a field called **Country** (list of countries/regions) that is bound to an M parameter called **countryNameMParameter**:
 
 ![Example of multi-select M Parameter](media/desktop-dynamic-m-query-parameters/example-multi-select-m-parameter.png)
 
@@ -196,7 +196,7 @@ In this example, the attacker can get access to information on games that have n
 
 **How to mitigate the risk**
 
-To mitigate the security risk, it's best to avoid string concatenation of M parameter values within the query.  Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query. Alternatively, if available, make use of a parameter passing mechanism built-in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
+To mitigate the security risk, it's best to avoid string concatenation of M parameter values within the query.  Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query. If a data source supports importing stored procedures, consider storing your query logic there and invoking it in M. Alternatively, if available, make use of a parameter passing mechanism built-in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
 
 Here are some examples:
 
@@ -208,6 +208,12 @@ Here are some examples:
 * Example declaring the parameter in the source query (or passing the parameter value as an input to a source query function):
     ```
     declare query\_parameters (Name of Parameter : Type of Parameter);
+    ```
+    
+* Example of directly calling a stored procedure:
+    ```
+    let CustomerByProductFn = AzureDataExplorer.Contents("Help", "ContosoSales"){[Name="CustomerByProduct"]}[Data] in
+    CustomerByProductFn({1, 3, 5})
     ```
 
 ## Considerations and limitations
