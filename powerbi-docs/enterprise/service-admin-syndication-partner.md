@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 Microsoft 365 enables companies to resell Microsoft 365 bundled and integrated with their own solutions, providing customers with a single point of contact for purchasing, billing, and support.
 
-If you're interested in adding Power BI to your Microsoft 365 subscription, we recommend you contact your partner to do so. If your partner doesn't currently offer Power BI, you can pursue the options described below.
+If you're interested in adding Power BI to your Microsoft 365 subscription, we recommend you contact your partner to do so. If your partner doesn't currently offer Power BI, you can pursue the options described in this article.
 
 ## Work with your partner to purchase Power BI
 
@@ -36,9 +36,9 @@ Depending on the relationship with your partner, you might be able to purchase P
 
    ![Screenshot showing the billing menu in Microsoft 365 admin center. Your products is highlighted.](media/service-admin-syndication-partner/365-my-products.png)
 
-1. Look **Subscriptions** in the menu. If you see **Subscriptions**, you can acquire the service from Microsoft directly, or you can contact another partner that offers Power BI.
+1. Look for **Subscriptions** in the menu. If you see **Subscriptions**, you can acquire the service from Microsoft directly or you can contact another partner that offers Power BI.
 
-   ![Screenshot showing the your products menu, the subscriptions menu option is highlighted.](media\service-admin-syndication-partner\365-subscriptions.png)
+   ![Screenshot showing the your products menu. The subscriptions menu option is highlighted.](media\service-admin-syndication-partner\365-subscriptions.png)
 
    If you don't see **Subscriptions**, you can't buy from Microsoft directly or from another partner.
 
@@ -54,7 +54,7 @@ By default, individual sign-ups (also known as ad-hoc subscriptions) are disable
 
 ![Screenshot showing the Power BI sorry image and message.](media/service-admin-syndication-partner/sorry.png)
 
-To enable ad-hoc subscriptions, you can contact your partner and request that they turn it on. If you're an administrator of your tenant, and know how to use Azure Active Directory PowerShell commands, you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
+To enable ad-hoc subscriptions, you can contact your partner and request that they turn them on. If you're an administrator of your tenant, and know how to use Azure Active Directory (Azure AD) PowerShell commands, you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
 
 ## Next steps
 
