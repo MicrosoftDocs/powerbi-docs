@@ -99,7 +99,7 @@
       href: migration-to-sp-profiles.md
   - name: Security
     items:
-    - name: "Embed a report with row-level security"
+    - name: "Embedding security features"
       href: embedded-row-level-security.md
     - name: "Embed a report with cloud-based RLS"
       href: cloud-rls.md
