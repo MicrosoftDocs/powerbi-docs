@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/07/2022
+ms.date: 11/11/2022
 LocalizationGroup: Common tasks
 ---
 
@@ -54,7 +54,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 5. When creating a subscription for a report, you'll have the option to **Include my changes**. (This option is not available for dashboards.) When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is selected, Power BI subscribes you to the report including all changes you've made to the report.  This includes:
 
-    - filters (filter pane or URL filters)
+    - filters (filter pane)
     - slicers
     - personalized visuals
     - cross-filtering or cross-highlighting
@@ -262,8 +262,6 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Power BI reports**  
 
 - Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription.    
-
-- Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make before or after subscribing will not show up in the email. However, when you select the link to open the report, you will see changes that you've made and saved.
 
 **Apps** 
 
