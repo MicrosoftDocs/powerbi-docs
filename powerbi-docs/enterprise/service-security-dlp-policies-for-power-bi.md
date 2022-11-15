@@ -19,9 +19,8 @@ To help organizations detect and protect their sensitive data, Power BI supports
 ## Considerations and limitations
 
 * DLP policies for Power BI are defined in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
-* DLP policies apply to workspaces. Only workspaces hosted in [Premium Gen2 capacities](./service-premium-gen2-what-is.md) and Premium Per User workspaces are supported.
+* DLP policies apply to workspaces. Only workspaces hosted in [Premium Gen2 capacities](./service-premium-gen2-what-is.md) and [Premium Per User](./service-premium-per-user-faq.yml) workspaces are supported.
 * DLP dataset evaluation workloads impact capacity. See [CPU metering for DLP policy evaluation](https://powerbi.microsoft.com/blog/updates-to-microsoft-purview-data-loss-prevention-policies-in-power-bi/) for more information.
-* Workspaces are supported, provided that they're hosted in Premium Gen2 capacities.
 * DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
 * DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
@@ -49,11 +48,14 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 
 ## CPU metering for DLP policy evaluation
 
-DLP policy evaluation utilizes CPU from the premium capacity associated with the workspace where the dataset being evaluated is located. The CPU consumption of the evaluation will be equal to 30% of the CPU consumed by the action that triggered the evaluation. For example, if a refresh action costs 30 milliseconds of CPU, the DLP scan will cost an additional 9 milliseconds. The fixed 30% additional CPU consumption for DLP evaluation helps you predict the impact of DLP policies on your overall Capacity CPU utilization, and perform capacity planning when rolling out DLP policies in your organization.
+This section is relevant only for workspaces hosted on Premium Gen2 capacities. It does not apply to Premium Per User workspaces.
 
-*To clarify, there is no additional CPU metering due to DLP evaluation for Premium Per User workspaces, as they are not associated to Premium capacities.
+DLP policy evaluation uses CPU from the premium capacity associated with the workspace where the dataset being evaluated is located. CPU consumption of the evaluation is calculated as 30% of the CPU consumed by the action that triggered the evaluation. For example, if a refresh action costs 30 milliseconds of CPU, the DLP scan will cost an additional 9 milliseconds. This fixed 30% additional CPU consumption for DLP evaluation helps you predict the impact of DLP policies on your overall Capacity CPU utilization, and perform capacity planning when rolling out DLP policies in your organization.
 
 Use the Power BI Premium Capacity Metrics App to monitor the CPU usage of your DLP policies. For more information, see [Use the Gen2 metrics app](./service-premium-gen2-metrics-app.md).
+
+>[!NOTE]
+>As mentioned, metering of DLP evaluation to calculate CPU consumption applies only to workspaces hosted on Premium Gen2 capacities. DLP evaluation in Premium Per User workspaces is included in the PPU license.
 
 ## How do DLP policies for Power BI work
 
