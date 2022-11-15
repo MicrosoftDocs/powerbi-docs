@@ -14,7 +14,7 @@ ms.date: 03/01/2022
 
 The **fetchMoreData API** lets you load data chunks of different sizes as a way of enabling Power BI visuals to bypass the hard limit of a 30K row data view. In addition to the original approach of aggregating all the chunks requested, the API now also supports loading data chunks incrementally.
 
-You can configure the number of rows to fetch at a time in advance, or you can use [`dataReductionCustomization`](#customized-data-reduction) to allow the report author to decide the chunk size to accommodate their needs.
+You can configure the number of rows to fetch at a time in advance, or you can use [`dataReductionCustomization`](#customized-data-reduction) to allow the report author set the chunk size dynamically.
 
 >[!NOTE]
 > The `fetchMoreData` API is available from version 3.4.
@@ -191,7 +191,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
-To allow the report author to set the count, define a [property pane object](./capabilities.md#objects-define-property-pane-options) called `dataReductionCustomization` in your *capabilities.json* file:
+To allow the report author to set the count, first define a [property pane object](./capabilities.md#objects-define-property-pane-options) called `dataReductionCustomization` in your *capabilities.json* file:
 
 ```json
     "objects": {
