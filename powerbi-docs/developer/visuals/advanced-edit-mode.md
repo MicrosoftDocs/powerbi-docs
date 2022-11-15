@@ -12,9 +12,9 @@ ms.date: 11/10/2022
 
 # Advanced edit mode in Power BI visuals
 
-In *Advanced Edit* mode, you can use advanced UI controls in your Power BI visual. From the *Report Editing mode*, select the **Edit** button on a visual and set the edit mode to **Advanced**. The visual uses the `EditMode` flag to determine if the visual displays the **Edit** UI control.
+In *Advanced Edit* mode, you can use advanced UI controls in your Power BI visual. From the *Report Editing* mode, select the **Edit** button on a visual and set the edit mode to **Advanced**. The visual uses the `EditMode` flag to determine if the visual displays the **Edit** UI control.
 
-![Screenshot of a Power BI visual, which shows the Edit button in the visual menu.](media/advanced-edit-mode/edit-mode.png)
+:::image type="content" source="media/advanced-edit-mode/edit-mode.png" alt-text="Screenshot of a Power BI visual, which shows the Edit button in the visual menu.":::
 
 By default, the visual doesn't support Advanced Edit mode (`"advancedEditModeSupport: 0"`). To enable Advanced Edit mode, add a line to the visual's *capabilities.json* file that sets the `advancedEditModeSupport` property.
 
@@ -34,9 +34,9 @@ An **Edit** button appears if:
 
 * The visual is viewed in report editing mode.
 
-If `advancedEditModeSupport` property is missing from the *capabilities.json* file or set to `NotSupported`, the **Edit** button does not appear.
+If the `advancedEditModeSupport` property is missing from the *capabilities.json* file or set to `NotSupported`, the **Edit** button does not appear.
 
-When you select **Edit**, the visual gets an `update()` call with EditMode set to `Advanced`. Depending on the value that's set in the *capabilities.json* file, the following actions occur:
+When you select **Edit**, the visual gets an `update()` call with `EditMode` set to `Advanced`. Depending on the value that's set in the *capabilities.json* file, the following actions occur:
 
 * `SupportedNoAction`: The host doesn't require further action.
 * `SupportedInFocus`: The host pops out the visual into Focus mode.
