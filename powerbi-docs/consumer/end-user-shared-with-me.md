@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 
-Your colleagues hae created  reports, dashboards, scorecards, and datasets. When it comes time to share them with you or to ask for your collaboration, there are several ways to collaborate and share. In this article, we compare the options. 
+Your colleagues has created  reports, dashboards, scorecards, and datasets. When it comes time to share them with you or to ask for your collaboration, there are several ways to collaborate and share. In this article, we compare the options. 
 
 No matter which option is used, to view content created by others requires a Power BI Pro license, or the content needs to be in a Premium capacity. 
 
