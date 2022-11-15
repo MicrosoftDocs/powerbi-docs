@@ -130,7 +130,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration by using the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The automatic authentication capability that's provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
+* The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They are blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
 
 * The authentication token lifetime is controlled based on your Azure AD settings. When the authentication token expires, the user needs to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
 

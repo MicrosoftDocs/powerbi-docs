@@ -124,7 +124,7 @@ The relocation of a Power BI tenant to another region isn't a fully automated pr
 
 ### Other specific data regions
 
-Some organizations have *data residency* requirements. Data residency requirements typically include regulatory or industry requirements for storing data in a specific geographic region. *Data sovereignty* requirements are similar, but more stringent because the data is subject to the laws of the country in which the data is stored. Some organizations also have *data localization* requirements, which dictate that data created within certain borders needs to remain within those borders.
+Some organizations have *data residency* requirements. Data residency requirements typically include regulatory or industry requirements for storing data in a specific geographic region. *Data sovereignty* requirements are similar, but more stringent because the data is subject to the laws of the country or region in which the data is stored. Some organizations also have *data localization* requirements, which dictate that data created within certain borders needs to remain within those borders.
 
 Regulatory, industry, or legal requirements can require you to store certain data in Power BI elsewhere from the default data region (described earlier). In these situations, you can benefit from the [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo) feature by creating a capacity in a specific region. In this case, you must assign workspaces to the correct capacity to ensure that the workspace data is stored in the desired geographic location.
 
