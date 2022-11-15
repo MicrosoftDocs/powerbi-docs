@@ -80,11 +80,15 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](./../enterprise/service-premium-smoothing.md#how-to-detect-overload).
 
-$\text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time}}$
+`max concurrent report renders = number of capacity SKU cores * 30 / your report's CPU processing time`
+
+$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time}} $
 
 ### Calculate the max number of users
 
 Using the estimated [five percent concurrency](#how-many-users-can-a-sku-handle) for the correlation between the number of total users, and the maximum concurrent renders, you can get the number of total users a SKU can handle.
+
+`max SKU users = max concurrent reports renders / 0.05`
 
 $ \text {max SKU users} = {\text {max concurrent reports renders} \over 0.05} $
 
@@ -93,6 +97,8 @@ $ \text {max SKU users} = {\text {max concurrent reports renders} \over 0.05} $
 You can use an extended formula to estimate the capacity needed for different report usages.
 
 Upload several paginated reports with different usages, and use the metric app to get the average CPU processing time for each one. When you have all the information, use this formula.
+
+`max concurrent report renders = number of capacity SKU cores * 30 / (report A CPU usage * report A CPU processing time) + (report B CPU usage * report B CPU processing time) + ... + (report N CPU usage * report N CPU processing time)`
 
 $ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {report A CPU usage} \times \text {report A CPU processing time}} + \text {report B CPU usage} \times \text {report B CPU processing time} + \text {...report N CPU usage} \times \text{...report N CPU processing time}}$
 
@@ -104,9 +110,13 @@ This section includes two examples, one for the [regular calculation](#regular-c
 
 Let’s assume that you're running a paginated report on a *P1 SKU* that has four cores. The total CPU usage for 20 runs is 10 seconds, so the average CPU time per reports is two seconds.
 
+`60 = 4 * 30 / 2`
+
 $ 60 = {4 \times {30} \over 2} $
 
 When using the second formula, you get a maximum of 1,200 users.
+
+`1,200 = 60 / 0.05`
 
 $ 1,200 = {60 \over 0.05} $
 
@@ -126,8 +136,8 @@ The formulas for a *P1 SKU* will be:
 
 | Value | Formula |
 |-------|---------|
-|Max concurrent report renders | $ ~32.4 = {4 \times {30} \over 0.6 \times{2} + 0.3 \times{5} + 0.1 \times{10}} $ |
-|Total SKU users | $ ~650 = {32.4 \over 0.05} $ |
+|Max concurrent report renders | `~32.4 = 4 * 30 / (0.6 * 2) + (0.3 * 5) + (0.1 * 10)`<br>$ ~32.4 = {4 \times {30} \over 0.6 \times{2} + 0.3 \times{5} + 0.1 \times{10}} $ |
+|Total SKU users | `~650 = 32.4 / 0.05`<br>$ ~650 = {32.4 \over 0.05} $ |
 
 ## Next steps
 
