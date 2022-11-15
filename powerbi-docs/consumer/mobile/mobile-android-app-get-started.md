@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 11/10/2022
+ms.date: 11/15/2022
 ms.custom: intro-get-started
 ---
 # Get started with the Power BI mobile app on Android devices
