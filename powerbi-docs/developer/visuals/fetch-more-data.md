@@ -18,7 +18,9 @@ You can configure the number of rows to fetch at a time in advance, or you can u
 
 >[!NOTE]
 > The `fetchMoreData` API is available from version 3.4.
-> Dynamic fetch data is available from version 5.2
+>
+> The dynamic `dataReductionCustomization` API is available from version 5.2
+>
 > To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Enable a segmented fetch of large datasets
@@ -179,12 +181,10 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-Asaf Mozes
-Profile picture of Asaf Mozes.
-Asaf Mozes
-
 > Although the data in the different updates of the dataviews are mostly exclusive, there will be some overlap between consecutive dataviews.
-> For table and categorical data mapping, it is expected the the first N dataview rows will contain data copied from the previous dataview.
+>
+> For table and categorical data mapping, the the first N dataview rows can be expected to contain data copied from the previous dataview.
+>
 > N can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
 ## Customized data reduction
