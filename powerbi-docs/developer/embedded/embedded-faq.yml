@@ -65,7 +65,7 @@ sections:
       - question: |
           How can I autoscale Embedded Gen2?
         answer: |
-          Embedded Gen 2 does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2) 
+          Embedded Gen 2 does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](./azure-pbie-scale-capacity.md#autoscale-your-capacity). 
 
       - question: |
           How is Embedded Gen2 resource utilization evaluated?
