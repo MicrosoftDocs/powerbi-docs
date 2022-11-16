@@ -117,7 +117,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 ### Incremental updates mode
 
-With this mode, the dataview provided to the visual contains just incremental data. Therefore, dataview size would not pass the defined window size. For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a dataview size of 10,000 and one update with a dataview of size 1,000.
+With this mode, the dataview provided to the visual only contains just data. This way, the dataview size doesn't pass the defined window size. For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a dataview size of 10,000 and one update with a dataview of size 1,000.
 
 This mode is selected by calling `fetchMoreData` with `aggregateSegments = false`.
 
