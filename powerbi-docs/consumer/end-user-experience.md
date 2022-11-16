@@ -116,6 +116,7 @@ The nav pane will become more useful as colleagues share content with you. In th
 
     > [!NOTE]
     > The **Getting started** section on Home is being deprecated in mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Knowledge center**. 
+    
     :::image type="content" source="media/end-user-experience/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
 
     Home brings together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open your dashboards, reports, and apps. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues. Your Home canvas also updates with recommended content and learning resources.
@@ -161,7 +162,7 @@ Or, look for the Search **Filters** near the upper right corner of your content 
 To learn more, see [Power BI navigation: search and sort](end-user-search-sort.md)
 
 ## Find the owner
-And we'll end this tutrial with a helpful tip. If you have questions about a dashboard, report, or app -- you can look up the owner. With the content open, select the title dropdown to display the owner. The owner may be a person or a group.
+And we'll end this tutorial with a helpful tip. If you have questions about a dashboard, report, or app -- you can look up the owner. With the content open, select the title dropdown to display the owner. The owner may be a person or a group.
 
 ![Home canvas](./media/end-user-experience/power-bi-owner.png)
 
