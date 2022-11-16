@@ -26,7 +26,7 @@ Power BI report templates contain the following:
 - The **data model definition**, including the schema, relationships, measures, and other model definition items.
 - All **query definitions**, such as queries, query Parameters, and other query elements.
 
-The report's data is *not* included in templates.
+The report's data is *not* included in a template.
 
 While Power BI Desktop reports use the .PBIX extension, report templates use the file extension .PBIT.
 
