@@ -82,7 +82,7 @@ Use this formula to calculate the maximum concurrent report renders that a capac
 
 `max concurrent report renders = number of capacity SKU cores * 30 / your report's CPU processing time`
 
-$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time}} $
+$$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time}} $$
 
 ### Calculate the max number of users
 
