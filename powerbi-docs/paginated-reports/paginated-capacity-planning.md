@@ -94,7 +94,7 @@ You can use an extended formula to estimate the capacity needed for different re
 
 Upload several paginated reports with different usages, and use the metric app to get the average CPU processing time for each one. When you have all the information, use this formula.
 
-$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {report A CPU usage} \times \text {report A CPU processing time}} + \text {report B CPU usage} \times \text {report B CPU processing time} + \text {...report N CPU usage} \times \text{...report N CPU processing time}}$
+$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {A usage} \times \text {A processing time}} + \text {B usage} \times \text {B processing time} + \text {... N usage} \times \text{N processing time}}$
 
 ## Examples
 
