@@ -12,6 +12,8 @@ ms.custom: intro-overview
 
 # What is Power BI embedded analytics?
 
+**APPLIES TO:** ✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+
 Power BI embedded analytics allows you to embed your Power BI items such as reports, dashboards and tiles, in a web application or in a website.
 
 Using Power BI embedded analytics you can:
@@ -21,6 +23,8 @@ Using Power BI embedded analytics you can:
 * Quickly and easily provide exceptional customer-facing reports, dashboards, and analytics in your own apps by using and branding Power BI as your own.
 
 * Reduce developer resources by automating the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
+
+Power BI Embedded has basically the [same features as Power BI Premium](../../enterprise/service-premium-features.md).
 
 ## Secure embed
 

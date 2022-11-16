@@ -184,7 +184,7 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 
 ### Dimension
 
-Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.
+Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
 ### Drill up, drill down, drill through
 

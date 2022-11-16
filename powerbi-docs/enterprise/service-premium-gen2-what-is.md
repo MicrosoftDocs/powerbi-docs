@@ -37,16 +37,17 @@ The following table lists some of the Premium Gen2 enhancements.
 
 The table below describes the resources and limits of each SKU.
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
-| ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
-| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
-| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
-| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  |
-| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
-| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
-| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
-| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
-| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
+| Capacity          |     |      |         | Dataset |        |     |       | Dataflow |
+| ----------------- | --- | ---- | ------- | --- | ------ | --- | ----- | -------- |
+| **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  |
+| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |  4 |
+| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |  8 |
+| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  | 16 |
+| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  | 32 |
+| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  | 64 |
+| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  | 64|
+| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  | 64 |
+| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  | 64 |
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
@@ -55,6 +56,8 @@ The table below describes the resources and limits of each SKU.
 <sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
 <sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+
+<sup>5</sup> Learn more about [parallel tasks in dataflows](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium).
 
 ## Subscriptions and licensing
 

@@ -140,7 +140,9 @@ sections:
       - question: |
           How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
         answer: |
-          A project on GitHub now supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the tool here: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
+          If you're using SQL Server 2022 Reporting Services, this article, [Publish .rdl files to Power BI from Reporting Services](../guidance/publish-reporting-services-power-bi-service.md), explains how to migrate.
+          
+          If you're using previous versions of SQL Server Reporting Services, a project on GitHub supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the: [RDL Migration Tool](https://github.com/microsoft/RdlMigration).
           
       - question: |
           Can I open reports and publish directly to the service?

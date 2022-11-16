@@ -42,7 +42,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 You can create a pipeline from the deployment pipelines tab, or from a workspace.
 
-After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access). Pipeline access enables users to view, share, edit, and delete the pipeline.
+After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given access to the pipeline and will become [pipeline admins](deployment-pipelines-process.md#permissions). Pipeline access enables users to view, share, edit, and delete the pipeline.
 
 ### Create a pipeline from the deployment pipelines tab
 
@@ -275,6 +275,14 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
     >[!NOTE]
     >Deployment will not impact *missing from* items.
+
+The comparison is designed to help you understand the difference between the stages. In the comparison display, items are arranged according to the logic listed below.
+
+1. The source workspace items are ordered alphabetically withing groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports and lastly dashboards.
+
+2. The target workspace is ordered according to the source workspace. Each item resides in the same row as its equivalent item in the source stage.
+
+3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
 
 :::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
 
