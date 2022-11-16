@@ -68,7 +68,7 @@ In order for your service principal to have the necessary permissions to perform
 
 ## Connection strings for the XMLA endpoint
 
-After creating a service principal, enabled service principals for your tenant, and added the service principal to Workspace access, you can use it as a user identity in connection strings with the XMLA endpoint. The difference is, instead of the User ID and Password parameters you specify the application ID, tenant ID, and application secret.
+After you create a service principal, enable service principals for your tenant, and add the service principal to Workspace access, use it as a user identity in connection strings with the XMLA endpoint. The difference is, instead of the User ID and Password parameters you specify the application ID, tenant ID, and application secret.
 
 `Data Source=powerbi://api.powerbi.com/v1.0/myorg/<workspace name>; Initial Catalog=<dataset name>;User ID=app:<appId>@<tenantId>;Password=<app_secret>;`
 
@@ -93,7 +93,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### AMO and ADOMD
 
-When connecting with client applications and web apps, [AMO and ADOMD client libraries](/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (June 2020) and higher installable packages from NuGet support service principals in connection strings using the following syntax: `app:AppID` and password or `cert:thumbprint`.
+When connecting with client applications and web apps, you can use [AMO and ADOMD client libraries](/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (June 2020) and higher installable packages from NuGet to support service principals in connection strings by using the following syntax: `app:AppID` and password or `cert:thumbprint`.
 
 In the following example, `appID` and a `password` are used to perform a model database refresh operation:
 
