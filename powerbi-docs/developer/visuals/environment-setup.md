@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 11/16/2022
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -45,10 +45,10 @@ The *pbiviz* tool, which is written using JavaScript, compiles the visual source
 
 The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets.
 
-To install *pbiviz*, open Windows PowerShell and enter the following command.
+To install the latest version of *pbiviz*, open Windows PowerShell and enter the following command.
 
 ```powershell
-npm i -g powerbi-visuals-tools
+npm i -g powerbi-visuals-tools@latest
 ```
 
 >[!NOTE]
@@ -71,12 +71,7 @@ This process describes running a PowerShell command that launches the **Certific
     pbiviz --install-cert
     ```
 
-    This command does two things:
-    * It returns a *passphrase*. In this case, the *passphrase* is 9765328806094.
-    * It also starts the Certificate Import Wizard.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/environment-setup/powershell-pbiviz.png)
+    This command starts the Certificate Import Wizard.
 
     >[!NOTE]
     >
@@ -90,27 +85,22 @@ This process describes running a PowerShell command that launches the **Certific
 
 3. In the **File to Import** window, select **Next**.
 
-4. In the **Private Key Protection** window, in the *Password* text box, paste the passphrase you received when executing the PowerShell command (step 1) and select **Next**. In this example, the passphrase is 9765328806094.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's private key protection window, with the password box highlighted.](media/environment-setup/certificate-wizard-password.png)
-
-5. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and select **Browse**.
+4. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and select **Browse**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's certificate store window, with the place all certificates in the following store selected.](media/environment-setup/certificate-wizard-certificate-store.png)
 
-6. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select **OK**.
+5. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select **OK**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the select certificate store window, with the Trusted Root Certification Authorities folder selected.](media/environment-setup/trusted-root.png)
 
-7. Select *Next* in the **Certificate Store** window.
+6. Select *Next* in the **Certificate Store** window.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's certificate store window, with the Trusted Root Certification Authorities folder selected, and the next button highlighted.](media/environment-setup/certificate-wizard-store-next.png)
 
-8. In the **Completing the Certificate Import Wizard** window, verify your settings and select **Finish**.
+7. In the **Completing the Certificate Import Wizard** window, verify your settings and select **Finish**.
 
     >[!NOTE]
     >If you receive a security warning, select **Yes**.

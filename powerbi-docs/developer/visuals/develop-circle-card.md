@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 08/07/2022
+ms.date: 11/07/2022
 ---
 
 # Tutorial: Develop a Power BI circle card visual
@@ -312,7 +312,7 @@ Delete unneeded lines of code from the capabilities file.
     >[!div class="mx-imgBorder"]
     >![Screenshot of accessing the capabilities.json file in V S code.](media/develop-circle-card/capabilities-file.png)
 
-3. Remove all the objects elements (lines 14-60).
+3. Remove all the objects elements (lines 14-54).
 
 4. Save the **capabilities.json** file.
 
