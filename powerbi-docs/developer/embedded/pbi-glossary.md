@@ -271,9 +271,9 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ## I
 
-### Inline frame, iFrame
+### Inline frame, IFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An IFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
