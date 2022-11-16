@@ -244,7 +244,7 @@ Then, after the `dataViewMappings`, define the default values for `dataReduction
 
 The data reduction information will appear under *visual* in the format pane.
 
-:::image type="content" source="./media/fetch-more-data/customize-data-reduction.png" alt-text="Screenshot of the format pan with option to set data reduction count.":::
+:::image type="content" source="./media/fetch-more-data/custom-data-reduction.png" alt-text="Screenshot of the format pan with option to set data reduction count.":::
 
 ## Considerations and limitations
 
