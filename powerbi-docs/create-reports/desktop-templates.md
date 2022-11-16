@@ -52,7 +52,7 @@ To use a Power BI report template, open it in Power BI Desktop and begin. You ca
 
 ![Screenshot of Power BI Desktop, showing Import options.](media/desktop-templates/desktop-templates-04.png)
 
-When you open a report template, a dialog may appear. The dialog asks for values for any parameters that are defined in the report the template is based on. For example, if a report analyzes customers based on country or region and has a *Country* parameter to specify the customer base, select a *Country* value from that list. Each list of values is specified when defining the parameter.
+When you open a report template, a dialog might appear. The dialog asks for values for any parameters that are defined in the report the template is based on. For example, if a report analyzes customers based on country or region and has a *CountryRegion* parameter to specify the customer base, select a *CountryRegion* value from that list.  Each list of values are specified when defining the parameter.
 
 ![Screenshot of the Enter Parameters dialog.](media/desktop-templates/desktop-templates-05a.png)
 
