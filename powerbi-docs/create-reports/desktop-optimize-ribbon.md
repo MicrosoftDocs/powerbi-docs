@@ -20,11 +20,11 @@ The following sections describe the tools that the **Optimize** ribbon provides.
 
 In Power BI, you can choose from authoring reports based on small improvised data models, to big data models backed with billions and billions of rows of data, allowing you choose from different [table data storage modes](../transform-model/desktop-storage-mode.md). These options vary widely in how data is accessed and used, such as: 
 
-* Downloading the data locally for tables in [import mode](../connect-data/desktop-directquery-about.md#import-connections.md)
-* Only querying data when in visuals with tables in [DirectQuery mode](../connect-data/desktop-directquery-about.md#import-connections.md)
+* Downloading the data locally for tables in [import mode](../connect-data/desktop-directquery-about.md#import-connections)
+* Only querying data when in visuals with tables in [DirectQuery mode](../connect-data/desktop-directquery-about.md#import-connections)
 * Options between the two previous bullets, such as with [hybrid tables](https://powerbi.microsoft.com/blog/announcing-public-preview-of-hybrid-tables-in-power-bi-premium/) or datasets with some tables in import and others in DirectQuery
 
-Additionally, you can create a report from an already published dataset or model from Power BI, Azure Analysis Services, or SQL Server Analysis Services using [Live Connection](../connect-data/desktop-directquery-about#import-connections.md) or [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), where you may not know what storage mode the underlying tables are using.
+Additionally, you can create a report from an already published dataset or model from Power BI, Azure Analysis Services, or SQL Server Analysis Services using [Live Connection](../connect-data/desktop-directquery-about.md#import-connections) or [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), where you may not know what storage mode the underlying tables are using.
 
 When selecting from among such options, the table storage modes dictate whether you're in an import or DirectQuery reporting scenario, which can impact your report authoring experience. **DirectQuery report scenarios** are defined as those with any visual sending queries to the data source directly, which can be identified in the Performance analyzer as visuals with a **Direct query** line, as shown in the following image.
 
@@ -42,7 +42,7 @@ In a **visual pending state,** the visual:
 * Shows a banner with a **Refresh** button, allowing you to that visual only; the rest of the report remains paused.
 * Shows the visual's earlier state, if available, or remains empty.
 * Can [have columns or measures added, moved, or removed from the visual](../transform-model/desktop-field-list.md), allowing you to make bulk changes to the visual without having to wait for the visual to refresh, or run queries, with each change.
-* Blocks [formatting actions](service-the-report-editor-take-a-tour#format-your-visuals), as the formatting options are based on the data in the visual. Before the visual enters a pending state you can perform any formatting option and many such options will still show immediately; but if a formatting action such as conditional formatting requires the visual to run a query, the visual enters the pending state.
+* Blocks [formatting actions](service-the-report-editor-take-a-tour.md#format-your-visuals), as the formatting options are based on the data in the visual. Before the visual enters a pending state you can perform any formatting option and many such options will still show immediately; but if a formatting action such as conditional formatting requires the visual to run a query, the visual enters the pending state.
 
 When you're done making changes, you can do the following:
 
@@ -66,7 +66,7 @@ There are a few things to consider when working with visuals in the pending stat
 
 ## Refresh visuals
 
-You can also trigger a **Visuals refresh** to manually refresh all visuals on the page, which is the same behavior as [the refresh visuals on the Performance analyzer pane](../create-reports/desktop-performance-analyzer#refreshing-visuals.md). You can learn more about [Power BI refresh types](../connect-data/refresh-data#power-bi-refresh-types.md).
+You can also trigger a **Visuals refresh** to manually refresh all visuals on the page, which is the same behavior as [the refresh visuals on the Performance analyzer pane](../create-reports/desktop-performance-analyzer.md#refreshing-visuals). You can learn more about [Power BI refresh types](../connect-data/refresh-data.md#power-bi-refresh-types).
 
 ## Optimization presets
 
