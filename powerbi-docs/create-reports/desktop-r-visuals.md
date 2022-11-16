@@ -1,6 +1,6 @@
 ---
 title: Create Power BI visuals using R
-description: Learn how, with Power BI Desktop, you can use the R engine to visualize your data.
+description: Learn how you can download, enable, and use the R engine to visualize your data on Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -50,7 +50,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
    
    - The **R script editor** appears along the bottom of the center pane.
    
-   ![Screenshot of the R script editor in Power BI.](media/desktop-r-visuals/r-visuals-4.png)
+   ![Screenshot of the Power BI R script editor.](media/desktop-r-visuals/r-visuals-4.png)
 
 3. In the **Values** section of the **Visualization** pane, drag fields from the **Fields** pane that you want to consume in your R script, just as you would with any other Power BI Desktop visual. Alternatively, you can also select the fields directly in the **Fields** pane.
     
@@ -72,7 +72,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
    * The default aggregation is *do not summarize*.
    * Similar to table visuals, fields are grouped and duplicate rows appear only once.
    
-   ![Screenshot of the R script editor, highlighting the code.](media/desktop-r-visuals/r-visuals-5.png)
+   ![Screenshot of the R script editor, highlighting the script code.](media/desktop-r-visuals/r-visuals-5.png)
    
    > [!TIP]
    > In certain cases, you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case, add an index field to your dataset, which causes all rows to be considered unique and prevents grouping.
