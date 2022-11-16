@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/03/2022
+ms.date: 08/03/2022
 ms.custom: intro-migration
 ---
 
@@ -106,7 +106,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Enhanced refresh](/power-bi/connect-data/asynchronous-refresh), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](/power-bi/enterprise/service-admin-premium-workloads#datasets), which control Premium capacity workloads | No | Yes |
-| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
+| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | Yes <sup>1</sup> |
 | [Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps | Yes | Yes |
 | **Connectivity** |||
@@ -222,7 +222,7 @@ Like for AAS, you can use a service principal as an automation account for Power
 
 ### Custom security
 
-Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embedded-row-level-security.md#using-the-customdata-feature) feature.
+Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embed-azure-analysis-services.md#dynamic-security---rls) feature.
 
 However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
 

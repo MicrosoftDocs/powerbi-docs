@@ -22,7 +22,7 @@ In report Editing view, you have flexibility in both exploring and designing a r
 
 ## Prerequisites
 
-Assign workspace roles to users so that they can edit reports. Editing view is only available to the person who created the report or to people who are assigned the member, admin, or contributor role in the workspace where the report is stored. If you share a report, the user's access will be limited to their assigned workspace role. Users who have only the viewer role will can't edit reports in the workspace. See [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md) for details on permissions.
+Assign workspace roles to users so that they can edit reports. Editing view is only available to the person who created the report or to people who are assigned the member, admin, or contributor role in the workspace where the report is stored. If you share a report, the user's access will be limited to their assigned workspace role. Users who have only the viewer role will can't edit reports in the workspace. See [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md) for details on permissions.
 
 ## Functionality only available in Editing view
 Take a look at the list of articles under the **Power BI reports** header in the Table of Contents. It's a long list and many of the articles cover functionality *only available if you have editing permissions for a report*.  To help you navigate the Table of Contents, Editing view is required for the following actions:

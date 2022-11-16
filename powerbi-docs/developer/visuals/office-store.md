@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/17/2022
+ms.date: 10/18/2022
 ---
 
 # Publish Power BI visuals to the Microsoft commercial marketplace
@@ -44,7 +44,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 | End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. You can use the [standard contract](https://go.microsoft.com/fwlink/?linkid=2041178), [Power BI visuals contract](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf), or your own EULA. |
 | Video link |No |To increase the interest of users for your custom visual, provide a link to a video about your visual. The URL should start with https://. |
 
-## Submit your custom visual to AppSource
+## Submit or update your custom visual to AppSource
 
 To submit a Power BI visual to AppSource, upload a **.pbiviz** package and **.pbix** file to Partner Center.
 

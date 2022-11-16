@@ -9,7 +9,7 @@ ms.subservice: pbi-explore
 ms.topic: overview
 ms.date: 11/03/2021
 LocalizationGroup: Get started
-# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with the Power BI service.
+# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer or business user so I know if I am a consumer/business user (versus designer, admin, creator, or dev) and, as such, what I can accomplish with the Power BI service.
 ms.custom: intro-overview
 ---
 
@@ -66,5 +66,5 @@ That doesn't mean you can't save your changes - you can. But those changes only 
 ## Next steps
 
 [Take a tour of the Power BI service for business users](end-user-reading-view.md)    
-[Power BI service training for business users](/learn/paths/consume-data-with-power-bi/)    
+[Power BI service training for business users](/training/paths/consume-data-with-power-bi/)    
 [Terminology and concepts for Power BI *business users*](end-user-basic-concepts.md)

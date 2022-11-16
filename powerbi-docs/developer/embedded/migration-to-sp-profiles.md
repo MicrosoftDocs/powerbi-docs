@@ -1,12 +1,12 @@
 ---
 title: Migrate multi-customer apps to the service principal profiles model
-description: Get better scalability by migrating Power BI embedded analytics multi-tenancy applications to the service principal profiles model
+description: Get better scalability by migrating Power BI embedded analytics multitenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 06/20/2022
+ms.date: 08/17/2022
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -18,7 +18,7 @@ This article describes how you can get better scalability by migrating your Powe
 > [!NOTE]
 > This article is aimed at organizations that already have an app that supports multiple customers from a single Power BI tenant.
 >
-> Not all apps benefit from the [service principal model](embed-multi-tenancy.md). For example, the following apps shouldn't migrate:
+> Not all apps benefit from the service principal model. For example, the following apps shouldn't migrate:
 >
 > * Small apps that maintain one service principal with a small number of objects.
 > * Apps that use one multiple service principal per customer
@@ -52,7 +52,7 @@ It's a good idea to save a mapping of each data customer ID with its correspondi
 
 ### Organize your workspaces
 
-The easiest way to manage your data is by maintaining one workspace per customer. If your app already uses this model, you don't need to create new workspaces. However, you still have to provide each profile with access to the corresponding workspace using the [Add Group User API](/rest/api/power-bi/groups/add-group-user).
+The easiest way to manage your data is by maintaining one workspace per customer. If your app already uses this model, you don't need to create new workspaces. However, you still have to provide each profile with *Admin* access to the corresponding workspace using the [Add Group User API](/rest/api/power-bi/groups/add-group-user).
 
 If you don't have one workspace per customer, use the corresponding profile to call [Create Group User API](/rest/api/power-bi/groups/create-group) to create a new workspace for each customer.
 
@@ -71,7 +71,7 @@ Once the items are ready, import them into the relevant workspaces. To automate 
 
 ## Change the application codes to use profiles
 
-Once you have profiles with access to the relevant workspaces, and a database with mapping that shows you which profile represents which customer, you can make the necessary code changes. We recommend that you keep two code flows side by side and gradually expose the profiles code flow to your customers.
+Once you have profiles with *Admin* access to the relevant workspaces, and a database with mapping that shows you which profile represents which customer, you can make the necessary code changes. We recommend that you keep two code flows side by side and gradually expose the profiles code flow to your customers.
 
 Make the following code changes:
 

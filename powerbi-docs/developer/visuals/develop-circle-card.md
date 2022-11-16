@@ -7,12 +7,10 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 06/03/2021
+ms.date: 08/07/2022
 ---
 
 # Tutorial: Develop a Power BI circle card visual
-
-[!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
 In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
@@ -30,7 +28,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-[!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
+[!INCLUDE[Power BI tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 ## Create a development project
 
@@ -61,7 +59,7 @@ In this section you'll create a project for the circle card visual.
 
 ## View the visual in Power BI service
 
-[!INCLUDE[View the Power B I visual in Power B I service](../../includes/visual-tutorial-view.md)]
+[!INCLUDE[View the Power BI visual in Power BI service](../../includes/visual-tutorial-view.md)]
 
 ## Add visual elements and text
 
@@ -92,13 +90,13 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
         import { VisualSettings } from "./settings";
         ```
 
-    * The four class-level private variable declarations.
+    * The five class-level private variable declarations.
 
     * All the lines of code inside the *constructor*.
 
     * All the lines of code inside the *update* method.
 
-    * All the remaining code lines below the *update* method, including the *parseSettings* and *enumerateObjectInstances* methods.
+    * All the remaining code below the *update* method, including the *getFormattingModel*.
 
 4. Add the following lines of code at the end of the import section:
 
@@ -242,10 +240,7 @@ import powerbi from "powerbi-visuals-api";
 import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
 import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
 import IVisual = powerbi.extensibility.visual.IVisual;
-import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
-import VisualObjectInstance = powerbi.VisualObjectInstance;
 import DataView = powerbi.DataView;
-import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
 import IVisualHost = powerbi.extensibility.IVisualHost;
 import * as d3 from "d3";
 type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
@@ -257,7 +252,7 @@ export class Visual implements IVisual {
     private circle: Selection<SVGElement>;
     private textValue: Selection<SVGElement>;
     private textLabel: Selection<SVGElement>;
-
+    
     constructor(options: VisualConstructorOptions) {
         this.svg = d3.select(options.element)
             .append('svg')
@@ -271,7 +266,7 @@ export class Visual implements IVisual {
         this.textLabel = this.container.append("text")
             .classed("textLabel", true);
     }
-
+    
     public update(options: VisualUpdateOptions) {
         let width: number = options.viewport.width;
         let height: number = options.viewport.height;
@@ -370,17 +365,17 @@ In this section, you'll define data roles and data view mappings. You'll also mo
 
 ### Configure the capabilities file
 
-Modify the **capabilities.json** file to define the data role and data view mappings.
+Modify the **capabilities.json** file to define the data role, objects, and data view mappings.
 
-* **Defining the data role**
+* **Define the data role**
 
     Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a field that's summed up.
 
     1. Open the **capabilities.json** file in VS Code.
 
-    2. Remove all the content inside the **dataRoles** array (lines 3-12).
+    2. Remove all the content inside the *dataRoles* array (lines 3-12).
 
-    3. Insert the following code to the **dataRoles** array.
+    3. Insert the following code to the *dataRoles* array.
 
         ```json
         {
@@ -392,15 +387,15 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     4. Save the **capabilities.json** file.
 
-* **Defining the data view mapping**
+* **Define the data view mapping**
 
     Define a field called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
 
     1. Open the **capabilities.json** file in VS Code.
 
-    2. Remove all the content inside the **dataViewMappings** array (lines 10-30).
+    2. Remove all the content inside the *dataViewMappings* array (lines 10-30).
 
-    3. Insert the following code to the **dataViewMappings** array.
+    3. Insert the following code to the *dataViewMappings* array.
 
         ```json
         {
@@ -417,7 +412,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 ### (Optional) Review the capabilities file code changes
 
-Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option. 
+Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option.
 
 1. In Power BI service, open the *Power BI US Sales Analysis* report. If you're using a different report to develop the circle card visual, navigate to that report.
 
@@ -492,10 +487,7 @@ You have now created a working Power BI visual. You can [add formatting options]
 > [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 
 > [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
+> [Power BI visuals project structure](visual-project-structure.md)
 
 > [!div class="nextstepaction"]
 > [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
-
-> [!div class="nextstepaction"]
-> [Power BI visuals project structure](visual-project-structure.md)

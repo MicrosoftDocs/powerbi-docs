@@ -39,7 +39,7 @@ If, however, the sales table stores product details beyond the key, it's conside
 
 :::image type="content" source="media/star-schema/denormalized-data-example.png" alt-text="Image shows a table of data that includes a Product Key and other product-related columns, including Category, Color, and Size." border="false":::
 
-When you source data from an export file or data extract, it's likely that it represents a denormalized set of data. In this case, use [Power Query](/learn/modules/clean-data-power-bi/) to transform and shape the source data into multiple normalized tables.
+When you source data from an export file or data extract, it's likely that it represents a denormalized set of data. In this case, use [Power Query](/training/modules/clean-data-power-bi/) to transform and shape the source data into multiple normalized tables.
 
 As described in this article, you should strive to develop optimized Power BI data models with tables that represent normalized fact and dimension data. However, there's one exception where a [snowflake dimension](#snowflake-dimensions) should be denormalized to produce a single model table.
 
