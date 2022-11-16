@@ -35,11 +35,6 @@ To enable service principal authentication for Power BI read-only APIs, follow t
     1. Navigate to **Azure portal > Azure Active Directory > Groups**, and choose the security group you created in Step 2.
     1. Select **Add Members**.
 
-       * Sign into the **Azure portal** as a Global Administrator, an Application Administrator, or a Cloud Application Administrator. 
-        * Select **Azure Active Directory**, then **Enterprise applications**. 
-        * Select the application you want to grant access to Power BI.
-        * Select **Permissions**. There must be no admin-consent required permissions of type Application registered for the app.
-
     > [!IMPORTANT]
     > Make sure the app you use doesn't have any admin-consent required permissions for Power BI set on it in the Azure portal. To check the assigned permissions:
     >    * Sign into the **Azure portal** as a Global Administrator, an Application Administrator, or a Cloud Application Administrator. 
