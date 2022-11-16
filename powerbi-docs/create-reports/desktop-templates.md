@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/28/2021
+ms.date: 11/16/2022
 LocalizationGroup: Connect to data
 ---
 # Create and use report templates in Power BI Desktop
