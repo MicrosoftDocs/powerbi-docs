@@ -67,7 +67,7 @@ To sign up for Power BI Pro:
    > [!NOTE]
    >If your email address is already in use with another Microsoft service, you can **Sign in** or **Create a new account instead**. If you choose to create a new account, continue to the next step.
 
-1. Complete the **Tell us about yourself** form and select **Next**. The country or region selected determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country or region doesn't have to match your physical location, but should match the location for most of your users.
+1. Complete the **Tell us about yourself** form and select **Next**. The country/region selected determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country/region doesn't have to match your physical location, but should match the location for most of your users.
 
    :::image type="content" source="../media/service-admin-tell-us-dialog.png" alt-text="Screenshot showing the tell us about yourself window.":::
 
