@@ -51,7 +51,7 @@
     - name: Enroll a US Government organization
       href: service-govus-signup.md
     - name: Power BI in China
-      href: regions-powerbi-china-cloud.md
+      href: regions-power-bi-china-cloud.md
     - name: Move between regions
       href: ../admin/service-admin-region-move.md
   - name: Premium
