@@ -47,4 +47,4 @@ To learn more about Power BI operated by 21Vianet in China, see the following re
 
 - [Azure China 21Vianet](/azure/china/china-welcome)
 - [Support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- 
+- [Power BI for US government customers](service-govus-overview.md)
