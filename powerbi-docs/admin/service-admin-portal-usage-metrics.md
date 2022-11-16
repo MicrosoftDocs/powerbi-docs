@@ -1,6 +1,6 @@
 ---
 title: View usage metrics
-description: Learn how to view and understand Power BI usage metricsby using dashboards in the admin settings page.
+description: Learn how to view and understand Power BI usage metrics by using dashboards in the admin settings page.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -32,7 +32,7 @@ This tile is in the first section of the report. It shows a distinct count of al
 
 ### Consumed dashboards
 
-This tile shows a list of the most consumed dashboards. The tile in the first section refers to the number of users who consumed the dashboards. In the report's second section is a similar tile that refers to the number of groups. For example, if you have a dashboard that you shared with three users and you also added it to an app that two different users connected to, the dashboard's count would be six: you, three shared users, and two app users.
+This tile shows a list of the most consumed dashboards. The tile in the first section refers to the number of users who consumed the dashboards. The report's second section has a similar tile that refers to the number of groups. For example, if you have a dashboard that you shared with three users and you also added it to an app that two different users connected to, the dashboard's count would be six: you, three shared users, and two app users.
   
 ![Screenshot of a Power BI tile showing most consumed dashboards by user in the form of a horizontal bar chart.](media/service-admin-portal-usage-metrics/powerbi-admin-usage-metrics-top-dashboards.png)
 
