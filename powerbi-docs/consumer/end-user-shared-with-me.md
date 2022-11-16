@@ -32,7 +32,7 @@ Watch Amanda explain the **Shared with me** content list and demonstrate how to 
 
 ## Interact with shared content
 
-You'll have options for interacting with the shared dashboards and reports, depending on the permissions the *designer* gives you. These include being able to make copies of the dashboard, subscribe, open the report [in Reading view](end-user-reading-view.md), and re-share with other colleagues. Select a dashboard or report to open it.
+You'll have options for interacting with the shared dashboards and reports, depending on the permissions the *designer* gives you. These include being able to make copies of the dashboard, subscribe, open the report [in Reading view](end-user-reading-view.md), and reshare with other colleagues. Select a dashboard or report to open it.
 
 
 ## Search and sort shared dashboards and reports

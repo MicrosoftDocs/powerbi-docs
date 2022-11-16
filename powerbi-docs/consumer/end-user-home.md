@@ -22,7 +22,7 @@ After you sign in to the Power BI service, select **Home** from the navigation p
 ![A screenshot of the nav pane for the Power BI service and Home selected.](media/end-user-home/power-bi-open-home.png)
 
 
-Power BI displays your Home canvas. The layout and content on Home is different for every user. New users will have less content, but that will change as they use Power BI more often. Only content that you can access will display on your Home. For example, if you don't have permissions to a report, then that report will not appear on Home. 
+Power BI displays your Home canvas. The layout and content on Home is different for every user. New users will have less content, but that will change as they use Power BI more often. Only content that you can access will display on your Home. For example, if you don't have permissions to a report, then that report won't appear on Home. 
 
 > [!NOTE]
 > The **Getting started** section on Home is being deprecated in mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Knowledge center**. 
@@ -81,7 +81,7 @@ This section contains links to the content that you visit most often or that you
 
 
 ### Featured
-The **Featured** section contains content that your administrator or colleagues have *promoted* to your Home. Typically, this is content that is important or helpful for you to do your job. In this example, the featured content includes metrics to track success.  Unless it has been disabled by your administrator, any user with Admin, Member, or Contributor permissions to a workspace can feature content on Home. For more information about featuring content on Home, see [Feature content on colleagues' Power BI Home](../collaborate-share/service-featured-content.md)
+The **Featured** section contains content that your administrator or colleagues have *promoted* to your Home. Typically, this content is important or helpful for you to do your job. In this example, the featured content includes metrics to track success.  Unless it has been disabled by your administrator, any user with Admin, Member, or Contributor permissions to a workspace can feature content on Home. For more information about featuring content on Home, see [Feature content on colleagues' Power BI Home](../collaborate-share/service-featured-content.md)
 
 
 ![Screenshot of featured content, promoted by admin.](./media/end-user-home/power-bi-home-featured.png)
@@ -122,7 +122,7 @@ The nav pane organizes your content into containers that are similar to what you
 To summarize, the nav pane is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. 
 
 ### Workspaces
-Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace**.
+Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you'll only have one workspace, **My workspace**.
 
 ![Screenshot of only one workspace, My workspace.](./media/end-user-home/power-bi-one-workspace.png)
 
@@ -134,20 +134,20 @@ If someone in your organization adds you to a workspace, you'll see it in your l
 
 ![Screenshot of Workspaces in navigation pane.](./media/end-user-home/power-bi-workspace-list.png)
 
-The workspace opens on your canvas and the name of the workspace will be listed on your nav pane. When you open a workspace, you'll see the content it contains. This includes content such as: dashboards, reports, worksheets, dataflows, and more.  In this example, we've opened the **Supplier Quality Analysis** workspace and see that it contains one report, one dashboard, and one dataset.
+The workspace opens on your canvas and the name of the workspace will be listed on your nav pane. When you open a workspace, you'll see the content it contains. This content includes: dashboards, reports, worksheets, dataflows, and more.  In this example, we've opened the **Supplier Quality Analysis** workspace and see that it contains one report, one dashboard, and one dataset.
 
 ![Screenshot of Supplier Quality workspace selected.](./media/end-user-home/power-bi-search-workspace.png)
 
 ## Search all of your content
-Sometimes, the fastest way to find your content is to search for it. For example, perhaps you've discovered that a dashboard you haven't used in a while isn't showing up on your Home canvas. Or, perhaps you remember that your colleague, Aaron, shared something with you, but you don't remember what he called it or what type of content he shared, whether it was a dashboard or a report. Or you may have so much content that it's easier to search than it is to scroll or sort. 
+Sometimes, the fastest way to find your content is to search for it. For example, perhaps you've discovered that a dashboard you haven't used in a while isn't showing up on your Home canvas. Or, you remember that your colleague shared something with you, but you don't remember what he called it or what type of content he shared, whether it was a dashboard or a report. Or you may have so much content that it's easier to search than it is to scroll or sort. 
  
-The search field is located in the upper right section of the Home menu bar. You can enter the full or partial name of that dashboard and search for it. Additionally, you can enter your colleague's name and search for content that they have shared with you. The search is scoped to look for matches in all the content that you own or have access to.
+The search field is located in the upper right section of the Home menu bar. You can enter the full or partial name of that dashboard and search for it. Additionally, you can enter your colleague's name and search for content that they've shared with you. The search is scoped to look for matches in all the content that you own or have access to.
 
 ![A screenshot of using the search field for Recent.](media/end-user-home/power-bi-search-field.png)
 
 ## Considerations and limitations
 
-We've deprecated the ability to hide items on Power BI Home.  However, if you previously hid items, they will remain hidden.  To manage your hidden items, select **Settings** > **Settings** > **General** > **Hidden items**.
+We've deprecated the ability to hide items on Power BI Home.  However, if you previously hid items, they'll remain hidden.  To manage your hidden items, select **Settings** > **Settings** > **General** > **Hidden items**.
 
 :::image type="content" source="media/end-user-home/power-bi-hidden.png" alt-text="Screenshot of the General tab showing Hidden items option selected":::
 
