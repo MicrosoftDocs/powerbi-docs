@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/20/2022
+ms.date: 11/16/2022
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
-## October 2022 Update (2.110.341.0)
+## November 2022 Update (2.111.265.0)
 
-October's updates are scary fun, full of screaming great new features and monsterous improvements.
+November's updates feel like a family reunion, and we're thankful and grateful for the heaping-tall servings of updates, features, and new capabilities. Please pass the data to this end of the table. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -43,54 +43,53 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Reverse stack order for stacked column charts  [[video]](https://youtu.be/Vlo7dJgr4WM?t=8)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053176) 
-* Query performance improvements  [[video]](https://youtu.be/Vlo7dJgr4WM?t=55)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053177)  
-* Power BI Metrics [[video]](https://youtu.be/Vlo7dJgr4WM?t=123)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053180)   
+* Unshared and unsynchronized axes for small multiples charts  [[video]](https://youtu.be/q-ZUfL2sEek?t=39)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515800) 
+* Controlling and customizing labels on Azure Maps  [[video]](https://youtu.be/q-ZUfL2sEek?t=259)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-azure-maps-labels)  
+* Create dynamic slicers using field parameters (Preview) [[video]](https://youtu.be/q-ZUfL2sEek?t=300)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515801)   
+* Composite models over Power BI datasets and Analysis Services (Preview) [[video]](https://youtu.be/q-ZUfL2sEek?t=521)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-composite-models)   
 
-### Analytics
-* Quick measure suggestions - experimental feature (Preview)  [[video]](https://youtu.be/Vlo7dJgr4WM?t=218)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053184)  [[article]](../transform-model/desktop-quick-measures.md)
 
 ### Modeling
-* Relationship editing in the properties pane (Preview)  [[video]](https://youtu.be/Vlo7dJgr4WM?t=686)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053186) [[article]](../transform-model/desktop-create-and-manage-relationships.md#create-a-relationship-manually)
-* DAX formula bar support for Power BI Desktop model view  [[video]](https://youtu.be/Vlo7dJgr4WM?t=817)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053187) 
-
+* Streamline your report authoring experience with Optimize ribbon (Preview)  [[video]](https://youtu.be/q-ZUfL2sEek?t=551)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515804) [[article]](../create-reports/desktop-optimize-ribbon.md)
+* New DAX function: EVALUTATEANDLOG  [[video]](https://youtu.be/q-ZUfL2sEek?t=668)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805)  [[article]](/dax/evaluateandlog-function-dax)
+* New DAX functions: TOCSV and TOJSON  [[video]](https://youtu.be/q-ZUfL2sEek?t=824)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805) [[article 1]](/dax/tocsv-function-dax) [[article 2]](/dax/tojson-function-dax)
 
 
 ### Data connectivity
-* Introducing tenant setting for Power BI datamarts (preview) [[video]](https://youtu.be/Vlo7dJgr4WM?t=877)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053189)  [[article]](../transform-model/datamarts/datamarts-overview.md)
+* Many updated data connectors [[video]](https://youtu.be/q-ZUfL2sEek?t=847)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515806)  
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* New visuals in AppSource [[video]](https://youtu.be/Vlo7dJgr4WM?t=1262)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053204)
+* New visuals in AppSource [[video]](https://youtu.be/q-ZUfL2sEek?t=1468)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515822)
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* Guest users can now create their own email subscriptions  [[video]](https://youtu.be/Vlo7dJgr4WM?t=961)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053193) [[article]](../enterprise/service-admin-azure-ad-b2b.md)
-* Downloading a PBIX now available for more scenarios  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1028)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053194)  [[article]](../create-reports/service-export-to-pbix.md)
-* Administration and governance  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1068)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053195)
-* Deployment pipelines updates  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1100)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053197) [[article]](../create-reports/deployment-pipelines-history.md)
+* New way to upload Power BI and Excel files  [[video]](https://youtu.be/q-ZUfL2sEek?t=870)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515813) [[article]](../connect-data/service-excel-workbook-files.md#streamlined-upload-to-power-bi)
+* Subscribe to a report with filters applied  [[video]](https://youtu.be/q-ZUfL2sEek?t=972)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515814) 
+* Linked metrics  [[video]](https://youtu.be/q-ZUfL2sEek?t=1125)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515815)
+* Information protection update  [[video]](https://youtu.be/q-ZUfL2sEek?t=1350)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515816)
 
 ---
 
 
 ### Others
-* Power BI Ideas website enhancements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053210)
-* Update to release notes   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc_release_notes)  
+* Power BI Desktop infrastructure update (WebView2)    [[video]](https://youtu.be/q-ZUfL2sEek?t=1513)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515829)
+* New Power BI color accent    [[video]](https://youtu.be/q-ZUfL2sEek?t=12)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515798)  
 
 
-For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/).
+For detailed information about each of new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/Vlo7dJgr4WM]
+> [!VIDEO https://www.youtube.com/embed/q-ZUfL2sEek]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
