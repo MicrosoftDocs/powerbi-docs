@@ -32,7 +32,7 @@ The following sections describe previous months' updates to **Power BI Desktop**
 
 ## October 2022 Update (2.110.341.0)
 
-October's updates were scary fun, full of screaming great new features and monsterous improvements.
+October's updates were scary fun, full of screaming great new features and monstrous improvements.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -3661,7 +3661,7 @@ The following updates are new to **Power BI Desktop** in November:
 ### Analytics
 
 * Color saturation on visuals upgraded to use conditional formatting [[video]](https://youtu.be/1xsXXoyTxfk?t=1224)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23conditionalFormatting) 
-* Follow-up questions in the Q&A explorer [[video]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
+* Follow up questions in the Q&A explorer [[video]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
 
 
 ### Modeling
@@ -5370,7 +5370,7 @@ December is a month for giving, and the Power BI team is following suit with mor
     - Format data labels per category services
     - Change the number of decimal places shown in visuals
     - Change text size in visuals
-    - Ability to layout visuals accurately: alignment, distribute, size, position
+    - Ability to lay out visuals accurately: alignment, distribute, size, position
     - Set styles across multiple visuals through **Format Painter**
     - Optimized **Home** ribbon layout
 

@@ -51,8 +51,8 @@ The following updates are new to Power BI Desktop this month:
 
 ### Modeling
 * Streamline your report authoring experience with Optimize ribbon (Preview)  [[video]](https://youtu.be/q-ZUfL2sEek?t=551)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515804) [[article]](../create-reports/desktop-optimize-ribbon.md)
-* New DAX function: EVALUTATEANDLOG  [[video]](https://youtu.be/q-ZUfL2sEek?t=668)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805) 
-* New DAX functions: TOCSV and TOJSON  [[video]](https://youtu.be/q-ZUfL2sEek?t=824)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805) 
+* New DAX function: EVALUTATEANDLOG  [[video]](https://youtu.be/q-ZUfL2sEek?t=668)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805)  [[article]](/dax/evaluateandlog-function-dax)
+* New DAX functions: TOCSV and TOJSON  [[video]](https://youtu.be/q-ZUfL2sEek?t=824)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2022-feature-summary/#post-21321-_Toc117515805) [[article 1]](/dax/tocsv-function-dax) [[article 2]](/dax/tojson-function-dax)
 
 
 ### Data connectivity
