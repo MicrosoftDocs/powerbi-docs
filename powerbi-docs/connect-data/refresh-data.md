@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/13/2022
+ms.date: 11/16/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -352,7 +352,9 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 
 ## Refresh cancellation
 
-Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or when you want to stop a refresh of a large dataset during peak time. To cancel a dataset refresh, you need to be a contributor, member or an admin of the dataset's workspace. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
+Stopping a dataset refresh is useful in cases where the dataset refresh is stuck, or when you want to stop a refresh of a large dataset during peak time. Use the refresh cancellation feature to stop refreshing datasets that reside on [Premium](./../enterprise/service-premium-gen2-what-is.md), [Premium Per User (PPU)](./../enterprise/service-premium-per-user-faq.yml) or [Power BI Embedded](./../developer/embedded/embedded-analytics-power-bi.md) capacities.
+
+To cancel a dataset refresh, you need to be a contributor, member or an admin of the dataset's workspace. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
 
 >[!NOTE]
 >Datasets created as part of datamarts aren't supported.
