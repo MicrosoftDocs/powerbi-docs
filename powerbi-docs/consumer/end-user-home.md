@@ -26,6 +26,7 @@ Power BI displays your Home canvas. The layout and content on Home is different 
 
 > [!NOTE]
 > The **Getting started** section on Home is being deprecated in mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Knowledge center**. 
+
 :::image type="content" source="media/end-user-home/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
 
 ## Simplified layout and Expanded layout
