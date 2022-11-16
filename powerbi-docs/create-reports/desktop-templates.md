@@ -1,6 +1,6 @@
 ---
 title: Create and use report templates in Power BI Desktop
-description: Learn how to use Power BI Desktop templates to streamline work by creating a report template for new reports' layout, data model, and queries.
+description: Learn how to use Power BI Desktop templates to streamline work by creating a report template for a new report's layout, data model, and queries.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
