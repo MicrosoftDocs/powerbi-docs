@@ -50,15 +50,15 @@ To set a different column to sort by in the Power BI service, both columns need 
 
    :::image type="content" source="media/desktop-sort-by-column/service-month-number-field.png" alt-text="Screenshot of the Visualizations and Fields panes in the Power BI service. In the Fields pane, the Month Number field is highlighted.":::
 
-2. In the **Visualizations** pane, in the **Fields** section, locate the **Tooltip** fields bucket.
+1. In the **Visualizations** pane, in the **Fields** section, locate the **Tooltip** fields bucket.
 
    :::image type="content" source="media/desktop-sort-by-column/service-tooltips-fields-bucket.png" alt-text="Screenshot of the Power BI service Visualizations and Fields panes. In the Visualizations pane Fields section, the Tooltips fields bucket is highlighted.":::
 
-3. Drag the **Month Number** field from the **Fields** pane to the **Tooltip** fields bucket in the **Visualization** pane.
+1. Drag the **Month Number** field from the **Fields** pane to the **Tooltip** fields bucket in the **Visualization** pane.
 
    :::image type="content" source="media/desktop-sort-by-column/service-drag-month-number.png" alt-text="Screenshot of the Power BI service. In the Visualizations pane, the Tooltips fields bucket contains the Month Number field and is highlighted.":::
 
-4. In the upper-right corner of the visual, select **More options**. Select **Sort axis**, and then select **Month Number**.
+1. In the upper-right corner of the visual, select **More options**. Select **Sort axis**, and then select **Month Number**.
 
    :::image type="content" source="media/desktop-sort-by-column/service-sort-month-number-ascending.png" alt-text="Screenshot of the Power BI service. The More options menu is visible, with the Sort axis and Month Number highlighted.":::
 
