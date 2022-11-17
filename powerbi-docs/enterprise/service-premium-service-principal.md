@@ -56,7 +56,7 @@ Before you can start using service principals in Power BI, an admin must enable 
 
 ## Workspace access
 
-In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, add the service principal as a workspace Member or Admin. Using workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](/rest/api/power-bi/groups/addgroupuser).
+In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, you must add the service principal as a workspace Member or Admin. Using workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](/rest/api/power-bi/groups/addgroupuser).
 
 1. In the Power BI service for a workspace, select **More** > **Workspace access**.
 
