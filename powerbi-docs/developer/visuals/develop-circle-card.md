@@ -119,7 +119,7 @@ Set up the **visual.ts** file.
     }
     ```
 
-   For information about what goes into the visual class see [Visual API](./visual-api.md)
+   For information about what goes into the visual class see [Visual API](./visual-api.md). In the next three steps we'll define this class. 
 
 5. Add class-level *private* methods at the beginning of the *visual* class:
 
@@ -134,7 +134,7 @@ Set up the **visual.ts** file.
 
    Notice that some of these private methods use the Selection type.
 
-6. Define the circle and text elements to the *constructor* method. This method is called when the visual is instantiated. The D3 Scalable Vector Graphics (SVG) enable creating three shapes: a circle, and two text elements.:
+6. Define the circle and text elements in the *constructor* method. This method is called when the visual is instantiated. The D3 Scalable Vector Graphics (SVG) enable creating three shapes: a circle, and two text elements:
 
     ```typescript
     constructor(options: VisualConstructorOptions) {
@@ -290,7 +290,7 @@ export class Visual implements IVisual {
 
 ### Modify the capabilities file
 
-Delete unneeded lines of code from the capabilities file.
+The circle card visual is a very simple visual that doesn't create any objects in the Format pane. Therefore, you can safely remove this section for easier readability.
 
 1. Open your project in VS Code (**File** > **Open Folder**).
 
@@ -299,7 +299,8 @@ Delete unneeded lines of code from the capabilities file.
     >[!div class="mx-imgBorder"]
     >![Screenshot of accessing the capabilities.json file in V S code.](media/develop-circle-card/capabilities-file.png)
 
-3. Remove all the objects elements (lines 14-54).
+3. Remove the entire *objects* array.  
+   Don't leave any blank lines between the dataRoles array and the dataViewMappings array.
 
 4. Save the **capabilities.json** file.
 
@@ -395,17 +396,6 @@ Modify the **capabilities.json** file to define the data role, objects, and data
         ```
 
     4. Save the **capabilities.json** file.
-
-* **(Optional) Remove the *objects* array**
-
-    The circle card visual is a very simple visual that doesn't create any objects in the Format pane. Therefore, you can safely remove this section for easier readability.
-
-    1. Open the **capabilities.json** file in VS Code.
-
-    2. Remove the entire *objects* array.  
-       Don't leave any blank lines between the dataRoles array and the dataViewMappings array.
-
-    3. Save the **capabilities.json** file.
 
 Confirm that your *capabilities.json* file looks like this:
 
