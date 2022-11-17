@@ -1,6 +1,6 @@
 ---
 title: Set data alerts in the Power BI service
-description: Learn how to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
+description: Learn how to set alerts to notify you when data in your dashboards changes beyond the limits you set in Microsoft Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -22,7 +22,7 @@ You can set alerts on tiles in your My Workspace. You can also set alerts if som
 
 Only you can see the alerts you set, even if you share your dashboard. However, the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms; you can set and view data alerts [in the Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can automate and integrate alerts with Power Automate. If you want to try it yourself, see [Power Automate and Power BI](../collaborate-share/service-flow-integration.md).
 
-![tiles](media/service-set-data-alerts/powerbi-alert-types-new.png)
+![Screenshot of sample Toll Amount and Current Speed tiles.](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
 > Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device is lost or stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
@@ -74,7 +74,7 @@ Next, Power BI sends an alert to your **Notification center** and, optionally, a
 
 * Your **Notification center** displays the alert details.
 
-    ![Screenshot of All Notifications, highlighting the alert.](media/service-set-data-alerts/powerbi-alert-notification.png)
+   ![Screenshot of All Notifications, highlighting the alert.](media/service-set-data-alerts/powerbi-alert-notification.png)
 
    > [!NOTE]
    > Alerts only work on refreshed data. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, Power BI triggers an alert.
