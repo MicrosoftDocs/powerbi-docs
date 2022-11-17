@@ -25,14 +25,14 @@ The two types of report themes:
 
 - **Built-in** report themes provide different kinds of predefined color schemes. You select built-in report themes directly from the Power BI Desktop menu.
 
-- **Custom** report themes provide granular control over many aspects of a report theme, as described later in this article. You can create custom report themes by adjusting a current theme then saving it as a custom theme or by creating your own custom theme by using a JSON file.
+- **Custom** report themes provide granular control over many aspects of a report theme, as described in [Customize report themes](#customize-report-themes) later in this article. You can create custom report themes by adjusting a current theme then saving it as a custom theme or by creating your own custom theme by using a JSON file.
 
 ## How report themes work
 
 To apply a report theme to a Power BI Desktop report, you can select from the following options:
 
 * Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop.
-* Customize a theme by using the **Customize theme** dialog.
+* [Customize a theme](#create-and-customize-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
 * [Import a custom theme JSON file](#import-custom-report-theme-files).
 
 > [!NOTE]
@@ -525,6 +525,7 @@ The tables in this section define visual names (`visualName`), card names (`card
 | waterfallChart |
 
 The following table defines `cardName` values. 
+
 | JSON file term | Name in the user interface |
 | --- | --- |
 | axis | Gauge axis |
