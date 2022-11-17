@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 Power BI lets you visualize data from various sources. When creating a visual, Power BI only shows relevant data to properly manage how data is presented and displayed. Power BI determines which data is relevant based on the configuration of the visual and the underlying data model. This article describes how Power BI behaves when determining relevant data and includes examples that show how determinations are made.
 
-![Screenshot of Visualizations menu, highlighting the Show items with no data within the X-axis dropdown menu.](media/desktop-show-items-no-data/show-items-no-data_02.png)
+![Screenshot of the Visualizations menu, highlighting the Show items with no data within the X-axis dropdown menu.](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
 ## Determining relevant data
 
@@ -54,20 +54,20 @@ Now look at a different case:
 |Gloss     |Red         |
 |Matte     |Blue         |
 
-Because there's no explicit measure, and the two tables are directly related, Power BI attempts to inject a measure to constrain the possible resulting combinations. In this case, Power BI injects a `CALCULATE(COUNTROWS('Product'))` measure, which shouldn't be blank, since **Product** is the commonality to both tables.
+Because there's no explicit measure, and the two tables are directly related, Power BI attempts to inject a measure to constrain the resulting combinations. In this case, Power BI injects a `CALCULATE(COUNTROWS('Product'))` measure, which shouldn't be blank, since **Product** is the commonality to both tables.
 
 In this case, Power BI displays the combinations that have entries in the Product table, which excludes the combinations of *("None" + "Blue")* and *("Matte" + "Red")*.
 
 **4. Groups from different and unrelated tables**
 
-The sample model doesn't include this combination, but if there were groups from different and unrelated tables, Power BI couldn't relate two columns. The result would be a cross join of all the values of each column. In that situation, Power BI issues an error of type *unconstrained join* because such cross joins are expensive to compute in the database, and they don't provide much information to a user.
+The sample model doesn't include this combination, but if there were groups from different and unrelated tables, Power BI couldn't relate two columns. The result would be a cross join of all the values of each column. In that situation, Power BI issues an error of the type *unconstrained join* because such cross joins are expensive to compute in the database, and they don't provide much information to a user.
 
-![Screenshot of a Can't determine relationships between the fields error.](media/desktop-show-items-no-data/show-items-no-data_01.png)
+![Screenshot of an error dialog, stating Can't determine relationships between the fields.](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
 
 ## Showing items with no data
 
-The previous section described how Power BI determines which data is relevant to display, but there may be times when you *want* to show items with no data.
+The previous section describes how Power BI determines which data is relevant to display, but there may be times when you *want* to show items with no data.
 
 The **Show items with no data** feature lets you include data rows and columns that don't contain measure data (blank measure values).
 
@@ -112,7 +112,7 @@ How it appears with **Show items with no data** feature on:
 |Blue     |Small         |10         |
 |Red     |Large         |         |
 
-Notice how two new combinations showed up with the feature turned on: *Blue - Large* and *Red - Large*. Both of those entries have no corresponding **Quantity** in the **Sales** table. However, they show up in the **Product** table.
+Notice how two new combinations show up with the feature turned on: *Blue - Large* and *Red - Large*. Both of those entries have no corresponding **Quantity** in the **Sales** table. However, they show up in the **Product** table.
 
 **2. Grouping columns from related tables:** *ProductStyle[Finish] - Product[Color] - Sum(Sales[Quantity])*
 
@@ -133,17 +133,17 @@ How it appears with **Show items with no data** feature on:
 |None     |         |         |
 
 Notice how *(Gloss-Red)* and *(None, blank)* appear as combinations. Here's why:
-* Power BI first considered *ProductStyle[Finish]* and selected all the values to display, which resulted in **Gloss**, **Matte**, **None**.
-* Using each of these values, Power BI selected all the corresponding *Product[Color]* entries.
+* Power BI first considers *ProductStyle[Finish]* and selects all the values to display, which results in **Gloss**, **Matte**, **None**.
+* Using each of these values, Power BI selects all the corresponding *Product[Color]* entries.
 * **None** doesn't correspond to any *Product[Color]*, so a blank appears for that value.
 
 It's important to note that the mechanism of selecting values for the columns is order-dependent, and can be thought of as a **Left outer join** operation between tables. If the order of the columns is changed, the results will change as well.
 
-Let's look at an example of changing the order, and how it impacts results. This example is the same as item **2** in this section, with the ordering changed.
+Now look at an example of changing the order, and how it impacts results. This example is the same as item **2** in this section, with the ordering changed.
 
 **Product[Color] - ProductStyle[Finish] - Sum(Sales[Quantity])**
 
-How it appears with **Show items with no data** feature on:
+This is how it appears with **Show items with no data** feature on:
 
 |*Product[Color]* |*ProductStyle[Finish]*  |*[SumQuantity]*  |
 |---------|---------|---------|
@@ -151,7 +151,7 @@ How it appears with **Show items with no data** feature on:
 |Blue     |Matte         |15         |
 |Red     |Gloss         |         |
 
-Notice how *ProductStyle[Finish]=None* doesn't appear in the table. In this case, Power BI first selected all the **Color** values in the **Product** table. Then, for each color, Power BI selected the corresponding **Finish** values that contained data. Since **None** doesn't show up in any combination of **Color**, it's not selected.
+Notice how *ProductStyle[Finish]=None* doesn't appear in the table. In this case, Power BI first selects all the **Color** values in the **Product** table. Then, for each color, Power BI selects the corresponding **Finish** values that contain data. Since **None** doesn't show up in any combination of **Color**, it's not selected.
 
 ## Power BI visual behavior
 
@@ -169,7 +169,7 @@ This visual behavior is often seen if a visual is converted to a different type,
 
 ### Exporting data
 
-When using the **Export summarized data** feature, the behavior of the **Show items with no data** feature is the same as if the export were converted to a Table visual. As such, when exporting a visual such as a Chart Matrix visual, the exported data may appear differently than the visual displayed. This behavior occurs because the conversion to a table visual, as part of the export process, would enable **Show items with no data** for all fields being exported.
+When using the **Export summarized data** feature, the behavior of the **Show items with no data** feature is the same as if the export were converted to a Table visual. As such, when exporting a visual such as a Chart Matrix visual, the exported data may appear differently than the visual displayed. This behavior results because the conversion to a table visual, as part of the export process, would enable **Show items with no data** for all fields being exported.
 
 ## Example data model
 
