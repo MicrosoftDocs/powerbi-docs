@@ -12,9 +12,9 @@ ms.date: 06/17/2021
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service
-You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. Many R packages are supported in the Power BI service (and more are being supported all the time), and some packages are not.
+You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. Many R packages are supported in the Power BI service (and more are being supported all the time), and some packages aren't.
 
-The following sections provide an alphabetical table of which R packages are supported in Power BI, and which are not. For more information about R in Power BI, see the [R visuals](../visuals/service-r-visuals.md) article.
+The following sections provide an alphabetical table of which R packages are supported in Power BI, and which aren't. For more information about R in Power BI, see the [R visuals](../visuals/service-r-visuals.md) article.
 
 ## Request support for a new R package
 Supported R packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an R package not found in that list, please submit your request to [Power BI Ideas](https://ideas.powerbi.com).
@@ -24,12 +24,12 @@ There are a handful of requirements and limitations for R packages:
 
 * Current R runtime: Microsoft R 3.4.4
 * The Power BI service, for the most part, supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
-* The Power BI service supports packages published in CRAN. The service does not support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
+* The Power BI service supports packages published in CRAN. The service doesn't support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
 * The **Power BI Desktop** has two variations for R packages:
 
   * For R visuals, you can install any package, including custom R packages
   * For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
-* For security and privacy reasons, R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service, are not supported. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
+* For security and privacy reasons, R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service, aren't supported. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
 * The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
 
 ## R packages that are supported in Power BI
@@ -160,7 +160,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |Ckmeans.1d.dp|4.2.1|https://cran.r-project.org/web/packages/Ckmeans.1d.dp/index.html|
 |class|7.3-14|https://cran.r-project.org/web/packages/class/index.html|
 |classInt|0.3-3|https://cran.r-project.org/web/packages/classInt/index.html|
-|cli|1.0.0|https://cran.r-project.org/web/packages/cli/index.html|
+|CLI|1.0.0|https://cran.r-project.org/web/packages/cli/index.html|
 |ClickClust|1.1.5|https://cran.r-project.org/web/packages/ClickClust/index.html|
 |clickstream|1.3.0|https://cran.r-project.org/web/packages/clickstream/index.html|
 |clue|0.3-54|https://cran.r-project.org/web/packages/clue/index.html|
@@ -1021,7 +1021,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |zoo|1.8-1|https://cran.r-project.org/web/packages/zoo/index.html|
 
 
-## R scripts that are not supported in Power BI
+## R scripts that aren't supported in Power BI
 The following table shows which packages are **not supported** in the Power BI service.
 
 | Package | Request Date | Reason |
