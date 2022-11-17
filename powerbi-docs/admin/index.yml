@@ -36,7 +36,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Administrators: Manage the Power BI Desktop sign-in form
+          - text: Manage the Power BI Desktop sign-in form
             url: desktop-admin-sign-in-form.md
           - text: Add Power BI URLs to your allowlist
             url: power-bi-allow-list-urls.md
