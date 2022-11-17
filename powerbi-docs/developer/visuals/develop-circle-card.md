@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/07/2022
+ms.custom: engagement-fy23
 ---
 
 # Tutorial: Develop a Power BI circle card visual
