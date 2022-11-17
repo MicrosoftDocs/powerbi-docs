@@ -144,5 +144,5 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Use cascading parameters in paginated reports](../guidance/paginated-report-cascading-parameter.md)

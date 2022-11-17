@@ -280,6 +280,10 @@ The paginated reports workload lets you run paginated reports, based on the stan
 
 Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.
 
+>[!NOTE]
+>You need to enable this workload with Power BI Premium Gen1 capacities.
+
+
 ### Outbound connectivity
 
 Outbound connectivity is turned on by default. It allows paginated reports to make requests for fetching external resources such as images, and call external APIs and Azure functions defined using custom code in paginated reports. A global admin or a Power BI service admin can disable this setting in the Power BI admin portal.
@@ -332,7 +336,7 @@ A Power BI administer can enable or disable the paginated reports workload. When
 >[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
 
 >[!div class="nextstepaction"]
->[What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+>[What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
 >[!div class="nextstepaction"]
 >[Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)
