@@ -14,9 +14,11 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-You've learned about [Power BI reports](end-user-reports.md), and those are the types of report you're most likely to encounter. Power BI reports are optimized for exploration and interactivity. A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
+There are two types of reports available on Power BI, [Power BI reports](end-user-reports.md) and *Paginated Reports*. 
 
-However, there is another type of report called a *paginated report*. Receiving and viewing paginated reports requires a Power BI Pro license for the report to be saved in Premium capacity.  [Learn about licenses](end-user-license.md).  
+Power BI reports are optimized for exploration and interactivity. A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
+
+*Paginated reports* are well suited for viewing reports as pages, printing as PDF, exporting to Excel or generating documents. A sales detail report where you want to see row level detail data for specific region/industry/customer and perhaps export it to Excel or print as accessible PDF would be best served by a Paginated report.
 
 ## Identify a paginated report
 
@@ -96,7 +98,7 @@ When you subscribe to a paginated report, Power BI sends you an email with the r
 
 - A paginated report can appear blank until you select parameters and choose **View report**.
 
-- If you don't have any paginated reports, it could be because nobody has shared this type of report with you. It could also mean that your system administrator hasn't enabled paginated reports for you. 
+- If you don't have any paginated reports, check out [sample reports](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-samples) that you can import to your workspace.
 
  
 
