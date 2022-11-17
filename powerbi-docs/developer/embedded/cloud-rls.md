@@ -13,10 +13,9 @@ ms.date: 08/18/2022
 
 # Embed a report with cloud-based RLS
 
-This article explains how to embed Power BI content that uses RLS into a standard Power BI app owns data application.
+**APPLIES TO:** ✔️&nbsp;App&nbsp;owns&nbsp;data ❌&nbsp;User&nbsp;owns&nbsp;data
 
-> [!NOTE]
-> This article is only relevant for app owns data customers.
+This article explains how to embed Power BI content that uses RLS into a standard Power BI app owns data application.
 
 ## Prerequisites
 

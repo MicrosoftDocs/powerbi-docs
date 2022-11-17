@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/25/2022
+ms.date: 11/02/2022
 LocalizationGroup: Administration
 ---
 
@@ -49,7 +49,7 @@ When the request requires direct access to customer data, a Customer Lockbox req
 
 These steps describe a Microsoft initiated Customer Lockbox request, for Power BI service.
 
-1. The Power BI admin receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
+1. The Azure AD Global Administrator receives a pending access request notification email from Microsoft. The admin who received the email, becomes the designated approver.
 
     :::image type="content" source="media/service-admin-power-bi-security-lockbox/email-example.png" alt-text="Screenshot of pending access request notification email from Microsoft." lightbox="media/service-admin-power-bi-security-lockbox/email-example.png":::
 

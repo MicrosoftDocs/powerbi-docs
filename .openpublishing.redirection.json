@@ -2766,7 +2766,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/connect-data/service-connect-to-xero.md",
+            "source_path": "powerbi-docs/connect-data/service-connect-to-analyze-stocks.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
@@ -4497,7 +4497,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.mdservice-premium-capacity-manage-gen2.md",
+            "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.md",
             "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage-gen2",
             "redirect_document_id": false
         }, 

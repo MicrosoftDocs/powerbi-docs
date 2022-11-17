@@ -57,9 +57,9 @@ Looking for a list of available data sources? See [Supported data sources for Po
   
 - Understand the software data layer architecture for your organization and the potential issues arising from data types. Understand how data extensions and data processing extensions can affect query results. Data types differ among the source of data, data providers, and the data types stored in the report definition (.rdl) file.  
   
-- Data sources and datasets are authored in a report and published to the Power BI service. After they are published, you can configure credentials directly in the Power BI service or in your Enterprise Gateway. 
+- Data sources and datasets are authored in a report and published to the Power BI service. After they are published, you can configure credentials directly in the Power BI service or in your Enterprise Gateway.
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Data retrieval guidance for paginated reports](../guidance/report-paginated-data-retrieval.md)
