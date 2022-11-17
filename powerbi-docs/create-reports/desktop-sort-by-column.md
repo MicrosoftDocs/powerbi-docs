@@ -28,7 +28,7 @@ Here's a common example. You have a Month Name column, and when you add it to a 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To set a different column to sort by in Power BI Desktop, both columns need to be at the same level of granularity. For example, to sort a column of month names, you need a column that contains a number for each month. The sort order will apply to any visual in the report that contains the sorted column. In the following example, the months are sorted alphabetically, but they should be sorted chronologically.
+To set a different column to sort by in Power BI Desktop, both columns need to be at the same level of granularity. For example, to sort a column of month names correctly, you need a column that contains a number for each month. The sort order will apply to any visual in the report that contains the sorted column. In the following example, the months are sorted alphabetically, but they should be sorted chronologically.
 
 1. Select the column that you want to sort, in this case, **Month**. Note that the months in the visual are sorted alphabetically. In the **Fields** pane, the **Column tools** tab becomes active.
 
