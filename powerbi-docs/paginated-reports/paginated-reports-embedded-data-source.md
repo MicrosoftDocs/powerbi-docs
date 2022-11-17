@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 10/27/2022
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service
@@ -32,7 +32,8 @@ See [Understanding report data in Power BI Report Builder](report-builder-data.m
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+- You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
 
 ## Create an embedded data source
   
@@ -81,4 +82,4 @@ Paginated reports connecting to Power BI datasets follow the rules for shared da
 ## Next steps
 
 - [Create an embedded dataset for a paginated report in the Power BI service](paginated-reports-create-embedded-dataset.md)
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
