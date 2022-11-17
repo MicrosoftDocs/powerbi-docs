@@ -300,7 +300,7 @@ The circle card visual is a very simple visual that doesn't create any objects i
     >![Screenshot of accessing the capabilities.json file in V S code.](media/develop-circle-card/capabilities-file.png)
 
 3. Remove the entire *objects* array.  
-   Don't leave any blank lines between the dataRoles array and the dataViewMappings array.
+   Don't leave any blank lines between *dataRoles* and *dataViewMappings*.
 
 4. Save the **capabilities.json** file.
 
