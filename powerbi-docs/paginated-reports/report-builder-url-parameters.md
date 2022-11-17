@@ -70,7 +70,7 @@ You can pass report parameters to a report by including them in a paginated repo
 For examples of passing report parameters on the URL, see [Pass a report parameter in a URL](report-builder-url-pass-parameters.md).
 
 > [!NOTE]
-> Report parameters require the parameter prefix **:rp** and are case-sensitive. 
+> Report parameters require the parameter prefix **rp:** and are case-sensitive. 
 
 ## URL access parameter reference
 
