@@ -27,7 +27,7 @@ In content lists and on your Home landing page, paginated reports can be identif
 
 ## What is a paginated report?
 
-These reports are called *paginated* because they're formatted to fit well on a printed page. One advantage is that they display all the data in a table, even if the table spans multiple pages. Paginated reports are sometimes called "pixel perfect" because report *designers* control the report page layout exactly.
+These reports are called *paginated* because they're formatted to fit well on a printed page. One advantage is that they display all the data in a table, even if the table spans multiple pages. Report *designers* can control the report page layout exactly.
 
 Paginated reports are best for scenarios that require a highly formatted, pixel-perfect output optimized for printing or PDF generation. A profit and loss statement is a good example of the type of report you would probably want to see as a paginated report.
 
@@ -81,7 +81,7 @@ Some paginated reports have many pages.  Use the page controls to navigate throu
 ![page controls](./media/end-user-paginated-report/power-bi-page-control.png)
 
 ### Export the paginated report
-You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep the "pixel perfect" formatting. 
+You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep their formatting. 
 
 ![Screenshot showing the formats for exporting a paginated report.](./media/end-user-paginated-report/power-bi-export-menu.png)
 

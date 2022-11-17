@@ -208,7 +208,6 @@ When using a Power BI Pro license, dataflows refreshes are limited to 8 refreshe
 
 * [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)
 * [Incremental refresh for datasets](../../connect-data/incremental-refresh-overview.md)
-* [Troubleshooting refresh scenarios](../..//connect-data/refresh-troubleshooting-refresh-scenarios.md)
 * [Dataflows best practices](dataflows-best-practices.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [Dataflows Limitations, restrictions and supported connectors and features](dataflows-features-limitations.md)
