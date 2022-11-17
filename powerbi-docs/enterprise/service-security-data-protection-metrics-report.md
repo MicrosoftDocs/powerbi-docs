@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Data protection metrics report
 
-## What is the data protection metrics report?
+## What is the data protection metrics report
 
 The data protection metrics report is a dedicated report that [Power BI administrators](../admin/service-admin-role.md) can use to monitor and track sensitivity label usage and adoption in their tenant.
 
@@ -26,21 +26,21 @@ The report features:
 
 The report refreshes every 24 hours.
 
-## Viewing the data protection metrics report
+## View the data protection metrics report
 
 You must have a [Power BI administrator role](../admin/service-admin-role.md) to open and view the report.
-To view the report, go to **Settings > Admin portal**, and select **Protection metrics**.
+To view the report, go to **Settings > Admin portal**, and then select **Protection metrics**.
 
 ![Screenshot showing the Power BI Admin portal. Admin portal and Protection metrics are highlighted.](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
 
-The first time you open the data protection metrics report, it can take a few seconds to load. A report and a dataset entitled **Data protection metrics (automatically generated)** will be created in your private environment under "My workspace". We don't recommend viewing it here because it isn't the full-featured report. Instead, view the report in the Admin portal as described above.
+The first time you open the data protection metrics report, it can take a few seconds to load. A report and a dataset entitled **Data protection metrics (automatically generated)** will be created in your private environment under **My workspace**. We don't recommend viewing it here because it isn't the full-featured report. Instead, view the report in the Admin portal as described above.
 
 > [!CAUTION]
 > Do not change the report or dataset in any way, since new versions of the report are rolled out from time to time and any changes you've made to the original report will be overwritten if you update to the new version.
 
 ## Report updates
 
-Improved versions of the data protection metrics report are released periodically. When you open the report, if a new version is available you can select to open the new version. If you accept the new version, the report loads and then overwrites the old version. Any changes you might have made to the old report or dataset will be lost. If you don't accept the new version, you won't benefit from the new version's improvements.
+Improved versions of the data protection metrics report are released periodically. When you open the report, if a new version is available you can open the new version. If you accept the new version, the report loads and then overwrites the old version. Any changes you might have made to the old report or dataset are lost. If you don't accept the new version, you won't benefit from the new version's improvements.
 
 ## Notes and considerations
 
