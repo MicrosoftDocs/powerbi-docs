@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.reviewer: "cfinlan"
+ms.reviewer: "nisrinivasan"
 ms.custom: ""
 ms.date: 12/15/2020
 ---
@@ -178,4 +178,4 @@ You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report t
 ## Next steps
 
 - [Pass a report parameter in a URL for a paginated report in Power BI](report-builder-url-pass-parameters.md)
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
