@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 11/10/2022
+ms.date: 11/16/2022
 ---
 
 # Understand the deployment process
@@ -114,7 +114,10 @@ There are three methods you can use to avoid using auto-binding:
 
 #### Auto-binding and parameters
 
-Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment won't take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).”
+Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment won't take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).
+
+>[!NOTE]
+>If you're using parameter rules to rebind items, the parameters must be of type `Text`.  
 
 ### Refreshing data
 
