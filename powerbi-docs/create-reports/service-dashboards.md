@@ -59,7 +59,7 @@ The ability to create a dashboard is considered a *creator* feature and requires
 
 
 ## Next steps
-* Get comfortable with dashboards by taking a tour of one of [sample dashboards](sample-tutorial-connect-to-the-samples.md).
+* Get comfortable with dashboards by taking a tour of one of the [sample dashboards](sample-tutorial-connect-to-the-samples.md).
 * Learn about [dashboard tiles](service-dashboard-tiles.md).
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create an alert on a tile](service-set-data-alerts.md).
 * Learn how to use [Power BI Q&A](power-bi-tutorial-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
