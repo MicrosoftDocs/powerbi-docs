@@ -13,7 +13,7 @@ ms.custom: intro-migration
 
 # Migrate SQL Server Reporting Services reports to Power BI
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](/power-bi/includes/applies-yes-paginated-yes-service-no-desktop)] ✔️&nbsp;SQL Server Reporting Services
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] ✔️&nbsp;SQL Server Reporting Services
 
 This article targets SQL Server Reporting Services (SSRS) report authors and Power BI administrators. It provides you with guidance to help you migrate your [Report Definition Language (.rdl)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
 
