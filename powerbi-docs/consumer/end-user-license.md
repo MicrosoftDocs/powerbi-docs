@@ -89,7 +89,7 @@ We can determine whether Zalan's organization has Premium capacity by looking up
 
 There are a couple of ways to identify content that's stored in Premium capacity. One way is to look for apps and app workspaces with a diamond icon. The diamond indicates that the content is stored in Premium capacity.
 
-In the following image, three of the apps are stored in Premium capacity.
+In the following image, two of the apps are stored in Premium capacity.
 
 ![Screenshot showing the diamond icon that represents content stored in Premium capacity.](media/end-user-license/power-bi-premium.png)
 
