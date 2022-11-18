@@ -31,7 +31,7 @@ A Microsoft 365 administrator can enable a default label policy for Power BI by 
 
 :::image type="content" source="media/service-security-sensitivity-label-default-label-policy/default-labels-config-in-compliance-center.png" alt-text="Screenshot of security and label policy page. Create policy, Power BI, and apply a default label to Power BI content are highlighted.":::
 
-For existing policies, you can enable default Power BI label policies by using the [Security & Compliance PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy). In the following code, `default label policy name` is the name of the policy whose associated sensitivity label you want to be applied by default to unlabeled content in Power BI.
+For existing policies, you can enable default Power BI label policies by using the [Security & Compliance PowerShell setLabelPolicy API](/powershell/module/exchange/set-labelpolicy). In the following code, `<default label policy name>` is the name of the policy whose associated sensitivity label you want to be applied by default to unlabeled content in Power BI.
 
 ```powershell
 Set-LabelPolicy -Identity "<default label policy name>" -AdvancedSettings @{powerbidefaultlabelid="<LabelId>"}
