@@ -55,13 +55,13 @@ The designer sets up the refresh schedule for content. Some content gets updates
 
 In a report, there's an arrow on the title bar. Select the arrow to see contact information and a timestamp. Dashboards, worksheets, and scorecards show the owner but not a timestamp. Select the **Owner** or **Contact** link if you have questions or suggestions for the owner of the report.
 
-:::image type="content" source="media/end-user-fresh/power-bi-owners.png" alt-text="Screenshot showing the title menu on a report.":::
+:::image type="content" source="media/end-user-fresh/power-bi-report-owner.png" alt-text="Screenshot showing the title menu on a report.":::
 
 ## View dashboards
 
 The dashboard title menu shows a contact, but not a timestamp. However, you can view the last refresh date for individual dashboard tiles and for the underlying dataset.
 
-:::image type="content" source="media/end-user-fresh/power-bi-dashboard-menu.png" alt-text="Screenshot showing the Marketing and sales dashboard title menu.":::
+:::image type="content" source="media/end-user-fresh/power-bi-dashboard-owner.png" alt-text="Screenshot showing the Marketing and sales dashboard title menu.":::
 
 1. View a tile in Focus mode to see the Last refresh timestamp. On a dashboard tile, select **More options** (...) and choose **Open in focus mode**.
 
