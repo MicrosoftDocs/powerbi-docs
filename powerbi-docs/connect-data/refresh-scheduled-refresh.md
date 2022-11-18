@@ -24,7 +24,7 @@ To get to the **Schedule refresh** screen:
 
 1. Select **Refresh** > **Schedule refresh**.
 
-    ![Schedule Refresh](media/refresh-scheduled-refresh/dataset-schedule-refresh.png)
+    :::image type="content" source="media/refresh-scheduled-refresh/dataset-schedule-refresh.png" alt-text="Schedule Refresh":::
 
 ## Gateway connection
 
@@ -34,7 +34,7 @@ If no gateway is available, you'll see **Gateway connection** disabled. You also
 
 If you have a personal gateway configured and it's online, it's available to select. It shows offline if it's not available.
 
-![Gateway connection](media/refresh-scheduled-refresh/gateway-connection.png)
+:::image type="content" source="media/refresh-scheduled-refresh/gateway-connection.png" alt-text="Gateway connection":::
 
 You can also select the enterprise gateway if one is available for you. You only see an enterprise gateway available if your account is listed in the **Users** tab of the data source configured for a given gateway.
 
@@ -44,7 +44,7 @@ You can also select the enterprise gateway if one is available for you. You only
 
 If you're using the personal gateway to refresh data, you must supply the credentials to connect to the back-end data source. If you connected to an app from an online service, the credentials you entered to connect are carried over for scheduled refresh.
 
-![Data source credentials](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
+:::image type="content" source="media/refresh-scheduled-refresh/data-source-credentials-pgw.png" alt-text="Data source credentials":::
 
 You're only required to sign in to a data source the first time you use refresh on that dataset. Once entered, those credentials are retained with the dataset.
 
@@ -57,7 +57,7 @@ If there's a problem, typically it's either the gateway is offline because it co
 
 If you're using the On-premises data gateway to refresh data, you don't need to supply credentials, as they're defined for the data source by the gateway administrator.
 
-![Schedule Refresh command](media/refresh-scheduled-refresh/data-source-credentials-egw.png)
+:::image type="content" source="media/refresh-scheduled-refresh/data-source-credentials-egw.png" alt-text="Schedule Refresh command":::
 
 > [!NOTE]
 > When connecting to on-premises SharePoint for data refresh, Power BI supports only *Anonymous*, *Basic*, and *Windows (NTLM/Kerberos)* authentication mechanisms. Power BI does not support *ADFS* or any *Forms-Based Authentication* mechanisms for data refresh of on-premises SharePoint data sources.
@@ -73,7 +73,7 @@ Set the **Keep your data up to date** slider to **On** to configure the settings
 > [!NOTE]
 > The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner. Refresh can begin as early as five minutes before the scheduled refresh time. 
 
-![Scheduled refresh dialog box](media/refresh-scheduled-refresh/scheduled-refresh.png)
+:::image type="content" source="media/refresh-scheduled-refresh/scheduled-refresh.png" alt-text="Scheduled refresh dialog":::
 
 > [!NOTE]
 > After two months of inactivity, scheduled refresh on your dataset is paused. A dataset is considered inactive when no user has visited any dashboard or report built on the dataset. When scheduled refresh is paused, the dataset owner is sent an email. The refresh schedule for the dataset is then displayed as **disabled**. To resume scheduled refresh, revisit any dashboard or report built on the dataset.
