@@ -1,6 +1,6 @@
 ---
 title: Sensitivity label audit schema
-description: Find 
+description: Learn how changes to sensitivity labels are recorded and logged so that you can track them in the unified audit log or Power BI activity log. 
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Audit schema for sensitivity labels in Power BI
 
-Whenever a sensitivity label on a dataset, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. See [Track user activities in Power BI](../admin/service-admin-auditing.md) for detail.
+Whenever a sensitivity label on a dataset, report, dashboard, or dataflow is applied, changed, or removed, that activity is recorded in the audit log for Power BI. You can track these activities in the unified audit log or in the Power BI activity log. For more information, see [Track user activities in Power BI](../admin/service-admin-auditing.md).
 
 This article documents the information in the Power BI auditing schema that is specific to sensitivity labels. It covers the following activity keys:
 
@@ -55,7 +55,7 @@ This field gives more detail about what caused the action to take place.
 
 |Value |Meaning  |Description  |
 |--|---------|---------|
-|0|None|There are no additional details.|
+|0|None|There are no other details.|
 |3|AutoByInheritance|The label change took place as a result of an automatically triggered inheritance process.|
 |4|AutoByDeploymentPipeline|The label change took place automatically as a result of the deployment pipeline process.|
 |5|PublicAPI|The label change action was performed by one of the following Power BI public admin REST APIs: [setLabels](/rest/api/power-bi/admin/information-protection-set-labels-as-admin), [removeLabels](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin).|
