@@ -12,11 +12,11 @@ LocalizationGroup: Connect to data
 ---
 # DirectQuery in Power BI
 
-In Power BI Desktop or the Power BI service, you can connect to many different data sources in different ways. You can *import* data to Power BI, which is the most common way to get data, or connect directly to data in its original source repository, which is called *DirectQuery*. This article primarily discusses DirectQuery capabilities.
+In Power BI Desktop or the Power BI service, you can connect to many different data sources in different ways. You can *import* data to Power BI, which is the most common way to get data. You can also connect directly to some data in its original source repository, which is called *DirectQuery*. This article primarily discusses DirectQuery capabilities.
 
 This article describes:
 
-- Different Power BI data connectivity options.
+- The different Power BI data connectivity options.
 - Guidance about when to use DirectQuery rather than import.
 - Limitations and implications of using DirectQuery.
 - Recommendations for successfully using DirectQuery.
@@ -25,7 +25,9 @@ This article describes:
 The article focuses on the DirectQuery workflow when you create a report in Power BI Desktop, but also covers connecting through DirectQuery in the Power BI service.
 
 > [!NOTE]
-> DirectQuery is also a feature of SQL Server Analysis Services. That feature shares many details with Direct Query in Power BI, but there are also important differences. This article primarily covers DirectQuery with Power BI, not SQL Server Analysis Services. For more information about using DirectQuery with SQL Server Analysis Services, download the PDF [DirectQuery in SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).
+> DirectQuery is also a feature of SQL Server Analysis Services. That feature shares many details with Direct Query in Power BI, but there are also important differences. This article primarily covers DirectQuery with Power BI, not SQL Server Analysis Services.
+> 
+> For more information about using DirectQuery with SQL Server Analysis Services, see [Use DirectQuery for Power BI datasets and Analysis Services (preview)](desktop-directquery-datasets-azure-analysis-services.md). You can also download the PDF [DirectQuery in SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).
 
 ## Power BI data connectivity modes
 
@@ -40,7 +42,7 @@ You can import data from these sources into Power BI. For some sources, you can 
 
 You should import data into Power BI wherever possible. Importing takes advantage of the high-performance query engine of Power BI, and provides a highly interactive, fully featured experience.
 
-If you can't meet your goals by importing data, for example if the data changes frequently and reports must reflect the latest data, consider using DirectQuery. Using DirectQuery is feasible only when the underlying data source can provide interactive queries of less than five seconds for a typical aggregate query, and can handle the generated query load. Carefully consider the limitations and implications of using DirectQuery.
+If you can't meet your goals by importing data, for example if the data changes frequently and reports must reflect the latest data, consider using DirectQuery. DirectQuery is feasible only when the underlying data source can provide interactive query results in less than five seconds for a typical aggregate query, and can handle the generated query load. Carefully consider the limitations and implications of using DirectQuery.
 
 Power BI import and DirectQuery capabilities evolve over time. Changes that provide more flexibility when using imported data let you import more often, and eliminate some of the drawbacks of using DirectQuery. Regardless of improvements, the performance of the underlying data source is a major consideration when using DirectQuery. If an underlying data source is slow, using DirectQuery for that source remains unfeasible.
 
@@ -54,11 +56,11 @@ When you connect to a data source like SQL Server and import data in Power BI De
 
 - Upon load, all the data defined by the queries imports into the Power BI cache.
 
-- Building a visual within Power BI Desktop queries the imported data. The Power BI store ensures the query is fast, and that all changes to the visual reflect immediately.
+- Building a visual within Power BI Desktop queries the cached data. The Power BI store ensures the query is fast, and that all changes to the visual reflect immediately.
 
 - Visuals don't reflect changes to the underlying data in the data store. You need to refresh and reimport data.
 
-- Publishing the report to the Power BI service as a *.pbix* file creates and uploads a dataset that includes the imported data. You can then schedule refresh of that data, for example, to reimport the data every day. Depending on the location of the original data source, it might be necessary to configure an on-premises data gateway.
+- Publishing the report to the Power BI service as a *.pbix* file creates and uploads a dataset that includes the imported data. You can then schedule data refresh, for example reimport the data every day. Depending on the location of the original data source, it might be necessary to configure an on-premises data gateway for the refresh.
 
 - Opening an existing report or authoring a new report in the Power BI service queries the imported data again, ensuring interactivity.
 
@@ -68,7 +70,7 @@ When you connect to a data source like SQL Server and import data in Power BI De
 
 When you use DirectQuery to connect to a data source in Power BI Desktop, the following results occur:
 
-- You use **Get Data** to select the source. For relational sources, you still select a set of tables that define a query that logically returns a set of data. For multidimensional sources like SAP Business Warehouse (SAP BW), you select only the source.
+- You use **Get Data** to select the source. For relational sources, you can still select a set of tables that define a query that logically returns a set of data. For multidimensional sources like SAP Business Warehouse (SAP BW), you select only the source.
 
 - Upon load, no data is imported into the Power BI store. Instead, when you build a visual, Power BI Desktop sends queries to the underlying data source to retrieve the necessary data. The time it takes to refresh the visual depends on the performance of the underlying data source.
 
@@ -76,19 +78,19 @@ When you use DirectQuery to connect to a data source in Power BI Desktop, the fo
 
 - Publishing the report to the Power BI service creates and uploads a dataset, the same as for import. However, that dataset includes no data.
 
-- Opening an existing report or authoring a new report in the Power BI service still queries the underlying data source to retrieve the necessary data. Depending upon the location of the original data source, it might be necessary to configure an on-premises data gateway, the same as for import.
+- Opening an existing report or authoring a new report in the Power BI service queries the underlying data source to retrieve the necessary data. Depending upon the location of the original data source, it might be necessary to configure an on-premises data gateway to get the data.
 
-- You can pin visuals or entire report pages as dashboard tiles. To ensure that opening a dashboard is fast, the tiles automatically refresh on a schedule, for example every hour. You can control refresh frequency to reflect how frequently the data changes and the importance of seeing the latest data.
+- You can pin visuals or entire report pages as dashboard tiles. To ensure that opening a dashboard is fast, the tiles automatically refresh on a schedule, for example every hour. You can control refresh frequency depending on how frequently the data changes and the importance of seeing the latest data.
 
 - When you open a dashboard, the tiles reflect the data at the time of the last refresh, not necessarily the latest changes made to the underlying source. You can refresh an open dashboard to ensure that it's current.
 
 ### Live connections
 
-When you connect to SQL Server Analysis Services, you can choose to import the data or use a *live connection* to the selected data model. Using a live connection is similar to DirectQuery. No data is imported, and the underlying data source is queried to refresh visuals. A live connection also differs from DirectQuery in several ways.
+When you connect to SQL Server Analysis Services, you can choose to import the data or use a *live connection* to the selected data model. Using a live connection is similar to DirectQuery. No data is imported, and the underlying data source is queried to refresh visuals. 
 
 For example, when you use import to connect to SQL Server Analysis Services, you define a query against the external SQL Server Analysis Services source, and import the data. If you connect live, you don't define a query, and the entire external model shows in the field list.
 
-This situation also applies when you connect to the following sources, except that there's no option to import the data:
+This situation also applies when you connect to the following sources, except there's no option to import the data:
 
 - Power BI datasets, for example connecting to a Power BI dataset that's already published to the service, to author a new report over it.
 
@@ -100,20 +102,20 @@ When you publish SQL Server Analysis Services reports that use live connections,
 
 - Dashboard tiles automatically refresh on a schedule, such as every hour.
 
-There are also important differences from DirectQuery. For example, live connections always pass the identity of the user opening the report to the underlying SQL Server Analysis Services source.
+A live connection also differs from DirectQuery in several ways. For example, live connections always pass the identity of the user opening the report to the underlying SQL Server Analysis Services source.
 
 ## DirectQuery use cases
 
-The following sections describe scenarios where connecting with DirectQuery can be useful. For several of these cases, leaving the data in the original source location is beneficial or necessary.
+In the following scenarios, connecting with DirectQuery can be useful. In several of these cases, leaving the data in its original source location is necessary or beneficial.
 
 DirectQuery in Power BI offers the greatest benefits in the following scenarios:
 
-- Data is changing frequently, and you need near real-time reporting.
-- You need to handle very large data, without having to pre-aggregate.
+- The data changes frequently, and you need near real-time reporting.
+- You need to handle large data without having to pre-aggregate.
 - Data sovereignty restrictions apply.
 - The source is a multidimensional source containing measures, such as SAP BW.
 
-### Data is changing frequently, and you need near real-time reporting
+### Data changes frequently, and you need near real-time reporting
 
 You can refresh models with imported data at most once per hour, more frequently with Power BI Pro or Power BI Premium subscriptions. If the data is continually changing, and it's necessary for reports to show the latest data, using import with scheduled refresh might not meet your needs. You can stream data directly into Power BI, although there are limits on the data volumes supported for this case.
 
@@ -127,7 +129,7 @@ You don't always have to import full detailed data. The Power Query Editor makes
 
 These details relate to using Power BI alone. For more information about using large models in Power BI, see [large datasets in Power BI Premium](../enterprise/service-premium-large-models.md). There's no restriction on how frequently the data can be refreshed.
 
-### Security rules are defined in the underlying source
+### The underlying source defines security rules
 
 When you import data, Power BI connects to the data source by using the current user's Power BI Desktop credentials, or the credentials configured for scheduled refresh from the Power BI service. In publishing and sharing reports that have imported data, you must be careful to share only with users allowed to see the data, or you must define row-level security as part of the dataset.
 
@@ -147,9 +149,43 @@ Easily getting the correct aggregate data needed for a visual directly from the 
 
 Currently DirectQuery over SAP HANA treats data the same as a relational source, and produces behavior similar to import. For more information, see [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md).
 
+<a name="implications-of-using-directquery"></a>
 ## DirectQuery limitations
 
 Using DirectQuery has some potentially negative implications. Some of these limitations differ slightly depending on the exact source you use.
+
+The following sections list general implications of using DirectQuery, and limitations related to performance, security, transformations, modeling, and reporting.
+
+### General limitations
+
+Some general implications of using DirectQuery follow:
+
+- **If data changes, you must refresh to show the latest data:** Given the use of caches, there's no guarantee that visuals always show the latest data. For example, a visual might show transactions in the past day. A slicer change might refresh the visual to show transactions for the past two days, including recent, newly arrived transactions. But returning the slicer to its original value results in it again showing the cached previous value.
+
+  Select **Refresh** to clear any caches and refresh all the visuals on the page to show the latest data.
+
+- **If data changes, there's no guarantee of consistency between visuals:** Different visuals, whether on the same page or on different pages, might be refreshed at different times. If the data in the underlying source is changing, there's no guarantee that each visual shows the data at the same point in time.
+
+  Given that more than one query might be required for a single visual, for example, to obtain the details and the totals, even consistency within a single visual isn't guaranteed. To guarantee this consistency would require the overhead of refreshing all visuals whenever any visual refreshed, along with using costly features like snapshot isolation in the underlying data source.
+
+  You can mitigate this issue to a large extent by selecting **Refresh** to refresh all of the visuals on the page. Even for import mode, there's a similar problem of maintaining consistency when you import data from more than one table.
+
+- **You must refresh in Power BI Desktop to reflect schema changes:** After a report is published, **Refresh** in the Power BI service refreshes the visuals in the report. If the schema of the underlying source has changed, those changes aren't automatically applied to the available fields in the field list. If tables or columns were removed from the underlying source, it might result in query failure upon refresh.
+
+  To update the fields in the model to reflect the changes, you must open the report in Power BI Desktop and choose **Refresh**.
+
+- **A limit of 1 million rows can return on any query:** There's a fixed limit of 1 million rows that can return in any single query to the underlying source. This limit generally has no practical implications, and visuals won't display that many points. However, the limit can occur in cases where Power BI isn't fully optimizing the queries sent, and requests some intermediate result that exceeds the limit.
+
+  The limit can also occur while building a visual, on the path to a more reasonable final state. For example, including **Customer** and **TotalSalesQuantity** could hit this limit if there were more than 1 million customers, until you applied some filter.
+
+  The error that returns is: **The resultset of a query to external data source has exceeded the maximum allowed size of '1000000' rows.**
+
+  > [!NOTE]
+  > Premium capacities let you exceed the 1 million row limit. For more information, see [max intermediate row set count](../enterprise/service-admin-premium-workloads.md#max-intermediate-row-set-count).
+
+- **You can't change a model from import to DirectQuery mode:** You can switch a model from DirectQuery mode to import mode if you import all the necessary data. It's not possible to switch back to DirectQuery mode, primarily because of the feature set that DirectQuery mode doesn't support.
+
+  DirectQuery models over multidimensional sources like SAP BW can't be switched from DirectQuery to import mode, because of the different treatment of external measures.
 
 ### Performance and load on the underlying source
 
@@ -167,21 +203,21 @@ Connecting to Power BI datasets and Analysis Services in DirectQuery mode always
 
 Alternate credentials aren't supported when making DirectQuery connections to SQL Server from Power BI Desktop. You can use your current Windows credentials or database credentials.
 
-Just as with imported data, you can use multiple data sources in a DirectQuery model by using [composite models](../transform-model/desktop-composite-models.md). When you use multiple data sources, it's important to understand the [security implications](../transform-model/desktop-composite-models.md#security-implications) of how data moves back and forth between the underlying data sources.
+As with imported data, you can use multiple data sources in a DirectQuery model by using [composite models](../transform-model/desktop-composite-models.md). When you use multiple data sources, it's important to understand the [security implications](../transform-model/desktop-composite-models.md#security-implications) of how data moves back and forth between the underlying data sources.
 
-### Limited data transformations
+### Data transformation limitations
 
-There are limitations in the data transformations you can apply within Power Query Editor. With imported data, you can easily apply a sophisticated set of transformations to clean and reshape the data before using it to create visuals. For example, you can parse JSON documents, or pivot data from a column to a row form. These transformations are more limited in DirectQuery.
+DirectQuery has limitations in the data transformations you can apply within Power Query Editor. With imported data, you can easily apply a sophisticated set of transformations to clean and reshape the data before using it to create visuals. For example, you can parse JSON documents, or pivot data from a column to a row form. These transformations are more limited in DirectQuery.
 
 When you connect to an OLAP source like SAP BW, you can't define any transformations, and the entire external model is taken from the source. For relational sources like SQL Server, you can still define a set of transformations per query, but those transformations are limited for performance reasons.
 
-Any transformations must be applied on every query to the underlying source, rather than once on data refresh. Transformations are limited to those that can reasonably translate into a single native query. If you use a transformation that's too complex, you get an error that either it must be deleted or the model switched to import.
+Any transformations must be applied on every query to the underlying source, rather than once on data refresh. Transformations must be able to reasonably translate into a single native query. If you use a transformation that's too complex, you get an error that either it must be deleted or the connection model switched to import.
 
-Also, the query that results from the **Get Data** dialog or Power Query Editor is used in a subselect within the queries that are generated and sent to retrieve necessary data for a visual. The query defined in Power Query Editor must be valid within this context. In particular, it's not possible to use a query using common table expressions, nor one that invokes stored procedures.
+Also, the **Get Data** dialog or Power Query Editor use subselects within the queries they generate and send to retrieve data for a visual. Queries defined in Power Query Editor must be valid within this context. In particular, it's not possible to use a query with common table expressions, nor one that invokes stored procedures.
 
 ### Modeling limitations
 
-The term *modeling* in this context means the act of refining and enriching raw data, as part of authoring a report using the data. Examples of modeling include:
+The term *modeling* in this context means the act of refining and enriching raw data as part of authoring a report using the data. Examples of modeling include:
 
 - Defining relationships between tables.
 - Adding new calculations, like calculated columns and measures.
@@ -190,19 +226,15 @@ The term *modeling* in this context means the act of refining and enriching raw 
 - Defining column formatting, default summarization, and sort order.
 - Grouping or clustering values.
 
-You can still make many of these model enrichments when you use DirectQuery, and use the principle of enriching the raw data to improve later consumption. However, some modeling capabilities aren't available or are limited with DirectQuery. The limitations are usually applied to avoid performance issues.
+You can still make many of these model enrichments when you use DirectQuery, and use the principle of enriching the raw data to improve later consumption. However, some modeling capabilities aren't available or are limited with DirectQuery. The limitations are applied to avoid performance issues.
 
 The following limitations are common to all DirectQuery sources. More limitations might apply to individual sources.
 
-- **No built-in date hierarchy:** With imported data, every date/datetime column also has a built-in date hierarchy available by default. For example, if you import a table of sales orders that includes a column **OrderDate**, and you use **OrderDate** in a visual, you can choose the appropriate date level to use, such as year, month, or day. This built-in date hierarchy isn't available with DirectQuery. If there's a **Date** table available in the underlying source, as is common in many data warehouses, you can use the DAX Time Intelligence functions as usual.
+- **No built-in date hierarchy:** With imported data, every date/datetime column also has a built-in date hierarchy available by default. For example, if you import a table of sales orders that includes a column **OrderDate**, and you use **OrderDate** in a visual, you can choose the appropriate date level to use, such as year, month, or day. This built-in date hierarchy isn't available with DirectQuery. If there's a **Date** table available in the underlying source, as is common in many data warehouses, you can use the Data Analysis Expressions (DAX) time-intelligence functions as usual.
 
-- **Date/time support only to second-level accuracy:** When you use time columns in your dataset, Power BI issues queries to the underlying DirectQuery source only up to the seconds detail level, not milliseconds. Remove this part of times from your source columns.
+- **Date/time support only to seconds-level accuracy:** For datasets that use time columns, Power BI issues queries to the underlying DirectQuery source only up to the seconds detail level, not milliseconds. Remove milliseconds data from your source columns.
 
 - **Limitations in calculated columns:** Calculated columns can only be intra-row, that is they can refer only to values of other columns of the same table, without using any aggregate functions. Also, the allowed DAX scalar functions, such as `LEFT()`, are limited to those functions that can be pushed to the underlying source. The functions vary depending upon the exact capabilities of the source. Functions that aren't supported aren't listed in autocomplete when authoring the DAX query for a calculated column, and result in an error if used.
-
-  You can use calculated tables in DirectQuery by using [composite models](../transform-model/desktop-composite-models.md#calculated-tables).
-  
-  For information about bidirectional relationship filtering, download [Bidirectional cross-filtering](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx). This white paper presents examples in the context of SQL Server Analysis Services, but the fundamental points apply equally to Power BI.
 
 - **No support for parent-child DAX functions:** When in DirectQuery mode, it's not possible to use the family of `DAX PATH()` functions that usually handle parent-child structures, such as charts of accounts or employee hierarchies.
 
@@ -210,21 +242,13 @@ The following limitations are common to all DirectQuery sources. More limitation
 
 ### Reporting limitations
 
-Almost all reporting capabilities are supported for DirectQuery models. As long as the underlying source offers a suitable level of performance, you can use the same set of visualizations as for imported data. There are some important limitations in some of the other capabilities the Power BI service offers after a report is published.
+Almost all reporting capabilities are supported for DirectQuery models. As long as the underlying source offers a suitable level of performance, you can use the same set of visualizations as for imported data.
 
-- **Quick Insights isn't supported:** Power BI Quick Insights searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially interesting insights. Because Quick Insights requires very high-performance queries, this feature isn't available on datasets that use DirectQuery.
+One general limitation is that the maximum length of data in a text column for DirectQuery datasets is 32,764 characters. Reporting on longer texts results in an error.
 
-- **Using Explore in Excel results in poor performance:** You can explore a dataset by using the **Explore in Excel** capability, which lets you create pivot tables and pivot charts in Excel. This capability is supported for datasets that use DirectQuery, but performance is usually slower than creating visuals in Power BI. If using Excel is important for your scenarios, account for this issue in deciding whether to use DirectQuery.
+The following Power BI reporting capabilities can cause performance issues in DirectQuery-based reports:
 
-- **Excel doesn't show hierarchies:** When you connect from Excel to an Azure Analysis Services model or Power BI dataset that uses DirectQuery, for example by using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), Excel doesn't show any hierarchies defined in the model or dataset.
-
-- **Text columns have a maximum length:** The maximum length of the data in a text column for datasets using DirectQuery is 32,764 characters. Reporting on longer texts results in an error.
-
-### Reporting capabilities that affect performance
-
-The following reporting capabilities can cause performance issues:
-
-- **Measure filters:** Visuals containing measures, or aggregates of columns, can contain filters in those measures. For example, the following graphic shows **SalesAmount** by **Category**, but only includes categories with more than **20M** of sales.
+- **Measure filters:** Visuals that use measures or aggregates of columns can contain filters in those measures. For example, the following graphic shows **SalesAmount** by **Category**, but only includes categories with more than **20M** of sales.
   
   ![Screenshot showing showing measures that contain filters](media/desktop-directquery-about/directquery-about_05.png)
   
@@ -237,57 +261,32 @@ The following reporting capabilities can cause performance issues:
 
 - **TopN filters:** You can define advanced filters to filter on only the top or bottom `N` values ranked by some measure. For example, filters can include the top 10 categories. This approach again sends two queries to the underlying source. However, the first query returns all categories from the underlying source, and then the TopN are determined based on the returned results. Depending on the cardinality of the column involved, this approach can lead to performance issues or query failures because of the one-million row limit on query results.
 
-- **Median:** Any aggregation, such as `Sum` or `Count Distinct`, is pushed to the underlying source. However, the `median` aggregate isn't usually supported by the underlying source. In such cases, the detail data is retrieved from the underlying source, and the median is calculated from the returned results. This approach is reasonable for calculating the median over a relatively small number of results. Performance issues or query failures because of the one-million row limit occur if the cardinality is large. For example, **Median Country/Region Population** might be reasonable, but **Median Sales Price** might not be reasonable.
+- **Median:** Any aggregation, such as `Sum` or `Count Distinct`, is pushed to the underlying source. However, usually the `median` aggregate isn't supported by the underlying source. In such cases, the detail data is retrieved from the underlying source, and the median is calculated from the returned results. This approach is reasonable for calculating the median over a relatively small number of results.
+
+  Performance issues or query failures can arise if the cardinality is large because of the one-million row limit. For example, querying for **Median Country/Region Population** might be reasonable, but **Median Sales Price** might not be reasonable.
 
 - **Advanced text filters like 'contains':** Advanced filtering on a text column allows filters like `contains` and `begins with`. These filters can result in degraded performance for some data sources. In particular, don't use the default `contains` filter if you need an exact match. Although the results might be the same depending on the actual data, the performance might be drastically different because of indexes.
 
-- **Multi-select slicers:** By default, slicers only allow making a single selection to be made. Allowing multi-selection in filters can cause performance issues, because the user selects a set of items in the slicer. For example, if the user selects 10 products of interest, each new selection results in queries being sent to the source. Although the user can select the next item before the query completes, this approach results in extra load on the underlying source.
+- **Multi-select slicers:** By default, slicers only allow making a single selection. Allowing multi-selection in filters can cause performance issues. For example, if the user selects 10 products of interest, each new selection results in queries being sent to the source. Although the user can select the next item before the query completes, this approach results in extra load on the underlying source.
 
-- **Totals on visuals:** By default, tables and matrices display totals and subtotals. In many cases, getting the values for such totals requires sending separate queries to the underlying source. This requirement applies whenever you use `DistinctCount` aggregation, or in all cases that use DirectQuery over SAP BW or SAP HANA. Switch off such totals by using the **Format** pane.
-
-### Other limitations
-
-Some other general implications of using DirectQuery follow:
-
-- **If data is changing, you must refresh to show the latest data:** Given the use of caches, there's no guarantee that visuals always show the latest data. For example, a visual might show transactions in the past day. A slicer change might refresh the visual to show transactions for the past two days, including recent, newly arrived transactions. But returning the slicer to its original value results in it again showing the cached previous value.
-
-  Selecting **Refresh** clears any caches and refreshes all the visuals on the page to show the latest data.
-
-- **If data is changing, there's no guarantee of consistency between visuals:** Different visuals, whether on the same page or on different pages, might be refreshed at different times. If the data in the underlying source is changing, there's no guarantee that each visual shows the data at the same point in time.
-
-  Given that more than one query might be required for a single visual, for example, to obtain the details and the totals, even consistency within a single visual isn't guaranteed. To guarantee this consistency would require the overhead of refreshing all visuals whenever any visual refreshed, along with using costly features like snapshot isolation in the underlying data source.
-
-  You can mitigate this issue to a large extent by selecting **Refresh** to refresh all of the visuals on the page. Even if using import mode, there's a similar problem of maintaining consistency when you import data from more than one table.
-
-- **You must Refresh in Power BI Desktop to reflect any schema changes:** After a report is published, **Refresh** in the Power BI service refreshes the visuals in the report. If the schema of the underlying source has changed, those changes aren't automatically applied to the available fields in the field list.
-
-  If tables or columns were removed from the underlying source, it might result in query failure upon refresh. Open the report in Power BI Desktop and choose **Refresh** to update the fields in the model to reflect the changes.
-
-- **A limit of one million rows can return on any query:** There's a fixed limit of one million rows that can return in any single query to the underlying source. This limit generally has no practical implications, and visuals won't display that many points. However, the limit can occur in cases where Power BI isn't fully optimizing the queries sent, and is requesting some intermediate result that exceeds the limit.
-
-  The limit can also occur while building a visual, on the path to a more reasonable final state. For example, including **Customer** and **TotalSalesQuantity** could hit this limit if there were more than one million customers, until you applied some filter.
-
-  The error that returns is: **The resultset of a query to external data source has exceeded the maximum allowed size of '1000000' rows.**
-
-  > [!NOTE]
-  > Premium capacities let you exceed the one million row limit. For more information, see [max intermediate row set count](../enterprise/service-admin-premium-workloads.md#max-intermediate-row-set-count).
-
-- **You can't change from import to DirectQuery mode:** You can switch a model from DirectQuery mode to import mode if you import all the necessary data. It's not possible to switch back to DirectQuery mode, primarily because of the feature set that DirectQuery mode doesn't support.
-
-  DirectQuery models over multidimensional sources like SAP BW also can't be switched from DirectQuery to import mode, because of the different treatment of external measures.
+- **Totals on table visuals:** By default, tables and matrices display totals and subtotals. In many cases, getting the values for such totals requires sending separate queries to the underlying source. This requirement applies whenever you use `DistinctCount` aggregation, or in all cases that use DirectQuery over SAP BW or SAP HANA. You can switch off such totals by using the **Format** pane.
 
 ## DirectQuery in the Power BI service
 
-All DirectQuery data sources are supported from Power BI Desktop, and some sources are also available directly from within the Power BI service. For example, a business user can use Power BI to connect to their data in Salesforce, and immediately get a dashboard, without using Power BI Desktop.
+All DirectQuery data sources are supported from Power BI Desktop, and some sources are also available directly from within the Power BI service. A business user can use Power BI to connect to their data in Salesforce, for example, and immediately get a dashboard, without using Power BI Desktop.
 
-Only the following DirectQuery-enabled sources are available directly from the Power BI service:
+Only the following two DirectQuery-enabled sources are available directly in the Power BI service:
 
 - Spark
 - Azure Synapse Analytics (formerly SQL Data Warehouse)
 
-Even for these two sources, it's still best to start use of DirectQuery within Power BI Desktop. While it's easy to initially make the connection in the Power BI service, there are limitations on further enhancing the resulting report. For example, it's not possible to create any calculations, or use many analytical features, or refresh the metadata to reflect any changes to the underlying schema.
+Even for these two sources, it's still best to start DirectQuery use within Power BI Desktop. While it's easy to initially make the connection in the Power BI service, there are limitations on further enhancing the resulting report. For example, in the service it's not possible to create any calculations, or use many analytical features, or refresh the metadata to reflect changes to the underlying schema.
 
-The performance of a DirectQuery report in the Power BI service depends on the degree of load placed on the underlying data source. The load depends on the number of users that share the report and dashboard, the complexity of the report, and whether the report defines row-level security.
+The performance of a DirectQuery report in the Power BI service depends on the degree of load placed on the underlying data source. The load depends on:
+
+- The number of users that share the report and dashboard.
+- The complexity of the report.
+- Whether the report defines row-level security.
 
 ### Report behavior
 
@@ -295,13 +294,21 @@ When you open a report in the Power BI service, all the visuals on the currently
 
 Every user interaction on the report might result in visuals being refreshed. For example, selecting a different value on a slicer requires sending a new set of queries to refresh all of the affected visuals. The same is true for selecting a visual to cross-highlight other visuals, or changing a filter. Similarly, creating or editing a report requires queries to be sent for each step on the path to produce the final visual.
 
-There's some caching of results. The refresh of a visual is instantaneous if the exact same results was recently obtained. If row-level security is defined, these caches aren't shared across users.
+There's some caching of results. The refresh of a visual is instantaneous if the exact same results were recently obtained. If row-level security is defined, these caches aren't shared across users.
+
+There are important limitations in some of the capabilities the Power BI service offers for published DirectQuery reports.
+
+- **Quick insights aren't supported:** Power BI quick insights search different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially interesting insights. Because quick insights requires high-performance queries, this feature isn't available on datasets that use DirectQuery.
+
+- **Using Explore in Excel results in poor performance:** You can explore a dataset by using the **Explore in Excel** capability, which lets you create pivot tables and pivot charts in Excel. This capability is supported for datasets that use DirectQuery, but performance is slower than creating visuals in Power BI. If using Excel is important for your scenarios, account for this issue in deciding whether to use DirectQuery.
+
+- **Excel doesn't show hierarchies:** For example, when you use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), Excel doesn't show any hierarchies defined in Azure Analysis Services models or Power BI datasets that use DirectQuery.
 
 ### Dashboard refresh
 
-You can pin individual visuals or entire pages to dashboard as tiles. Tiles that are based on DirectQuery datasets refresh automatically by sending queries to the underlying data sources on a schedule. By default, datasets refresh every hour, but you can configure refresh between weekly and every 15 minutes as part of dataset settings.
+You can pin individual visuals or entire pages to dashboards as tiles. Tiles that are based on DirectQuery datasets refresh automatically by sending queries to the underlying data sources on a schedule. By default, datasets refresh every hour, but you can configure refresh between weekly and every 15 minutes as part of dataset settings.
 
-If no row-level security is defined in the model, each tile is refreshed once, and the results are shared across all users. If you use row-level security, Each tile requires separate queries per user to be sent to the underlying source.
+If no row-level security is defined in the model, each tile is refreshed once, and the results are shared across all users. If you use row-level security, each tile requires separate queries per user to be sent to the underlying source.
 
 There can be a large multiplier effect. A dashboard with 10 tiles, shared with 100 users, created on a dataset using DirectQuery with row-level security, results in at least 1000 queries being sent to the underlying data source for every refresh. Give careful consideration to the use of row-level security and the configuration of the refresh schedule.
 
@@ -331,7 +338,7 @@ This article doesn't cover the wide range of database optimization recommendatio
 
 When you define the model, follow this guidance:
 
-- **Avoid complex queries in Power Query Editor.** Power Query Editor translates a complex query into a single SQL query. The single query appears in the subselect of every query sent to that table. If that query is complex, it might result in performance issues on every query sent. You can get the actual SQL query for a set of steps by selecting the last step in Power Query Editor and choosing **View Native Query** from the context menu.
+- **Avoid complex queries in Power Query Editor.** Power Query Editor translates a complex query into a single SQL query. The single query appears in the subselect of every query sent to that table. If that query is complex, it might result in performance issues on every query sent. You can get the actual SQL query for a set of steps by right-clicking the last step under **Applied steps** in Power Query Editor and choosing **View Native Query**.
 
 - **Keep measures simple.** At least initially, limit measures to simple aggregates. If the measures operate in a satisfactory manner, you can define more complex measures, but pay attention to performance.
 
@@ -339,7 +346,7 @@ When you define the model, follow this guidance:
 
 - **Avoid relationships on 'uniqueidentifier' columns.** Power BI doesn't natively support a `uniqueidentifier`datatype. Defining a relationship between `uniqueidentifier` columns results in a query with a join that involves a cast. Again, this approach commonly leads to poor performance. The only workaround is to materialize columns of an alternative type in the underlying data source.
 
-- **Hide the 'to' column on relationships.** The **to** column on relationships is commonly the primary key on the **to** table. That column should be hidden, but if hidden, it doesn't appear in the field list and can't be used in visuals. Often the columns on which relationships are based are actually *system columns*, for example surrogate keys in a data warehouse. It's still best to hide such columns. If the column does have meaning, then introduce a calculated column that's visible, and that has a simple expression of being equal to the primary key, as in the following example:
+- **Hide the 'to' column on relationships.** The `to` column on relationships is commonly the primary key on the `to` table. That column should be hidden, but if hidden, it doesn't appear in the field list and can't be used in visuals. Often the columns on which relationships are based are actually *system columns*, for example surrogate keys in a data warehouse. It's still best to hide such columns. If the column does have meaning, then introduce a calculated column that's visible, and that has a simple expression of being equal to the primary key, as in the following example:
 
   ```sql  
       ProductKey_PK   (Destination of a relationship, hidden)
@@ -348,11 +355,15 @@ When you define the model, follow this guidance:
       ...
   ```
 
-- **Examine all calculated columns and data type changes.** These capabilities aren't necessarily harmful, but they result in queries being sent to the underlying source that contain expressions rather than simple references to columns. Those queries might result in indexes not being used.
+- **Examine all calculated columns and data type changes.** These capabilities aren't necessarily harmful, but they result in queries being sent to the underlying source that contain expressions rather than simple references to columns. Those queries might result in indexes not being used. 
 
-- **Avoid bidirectional cross filtering on relationships.** Use of bidirectional cross filtering can lead to query statements that don't perform well.
+  You can have calculated tables with DirectQuery by using [composite models](../transform-model/desktop-composite-models.md#calculated-tables).
 
-- **Experiment with setting *Assume referential integrity*.** The Assume Referential Integrity setting on relationships enables queries to use `INNER JOIN` rather than `OUTER JOIN` statements. This guidance generally improves query performance, although it depends on the specifics of the data source.
+- **Avoid bidirectional cross filtering on relationships.** Use of bidirectional cross filtering can lead to query statements that don't perform well. For more information about bidirectional cross filtering, see [Enable bidirectional cross-filtering for DirectQuery in Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md).
+
+  You can also download [Bidirectional cross-filtering](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx). This white paper presents examples in the context of SQL Server Analysis Services, but the fundamental points apply equally to Power BI.
+
+- **Experiment with setting *Assume referential integrity*.** The **Assume referential integrity** setting on relationships enables queries to use `INNER JOIN` rather than `OUTER JOIN` statements. This guidance generally improves query performance, although it depends on the specifics of the data source.
 
 - **Don't use the relative data filtering in Power Query Editor.** It's possible to define relative date filtering in Power Query Editor. For example, you can filter to the rows where the date is in the last 14 days.
   
@@ -362,25 +373,26 @@ When you define the model, follow this guidance:
   
   ![Screenshot that shows filtering rows in a native SQL query.](media/desktop-directquery-about/directquery-about_03.png)
   
-  This result is probably not what you wanted. To ensure the filter is applied based on the date at the time the report runs, apply the filter as a report filter in the report. You can create a calculated column that calculates the number of days ago by using the `DAX DATE()` function, and use that calculated column in the filter.
+  This result is probably not what you want. To ensure the filter is applied based on the date at the time the report runs, apply the filter as a report filter in the report. You can create a calculated column that calculates the number of days ago by using the `DAX DATE()` function, and use that calculated column in the filter.
 
+  
 ### Report design
 
 When you create a report that uses a DirectQuery connection, follow this guidance:
 
-- **Consider using query reduction options:** Power BI provides report options to send fewer queries, and to disable certain interactions that cause a poor experience if the resulting queries take a long time to run. These options apply to your report while you interact with it in Power BI Desktop, and also apply when users consume the report in the Power BI service.
+- **Consider using query reduction options:** Power BI provides report options to send fewer queries, and to disable certain interactions that cause a poor experience if the resulting queries take a long time to run. These options apply when you interact with your report in Power BI Desktop, and also apply when users consume the report in the Power BI service.
 
   To access these options in Power BI Desktop, go to **File** > **Options and settings** > **Options** and select **Query reduction**.
 
   ![Screenshot that shows Query reduction options.](media/desktop-directquery-about/directquery-about_03b.png)
 
-  Checkbox selections on the **Query reduction** screen let you disable cross-highlighting throughout your report. You can also show an **Apply** button for slicers or filter selections. No queries are sent until you select the **Apply** button on the filter or slicer. The queries then use your selections to filter the data. This button lets you then make many slicer and filter selections before applying them.
+  Checkbox selections on the **Query reduction** screen let you disable cross-highlighting throughout your report. You can also show an **Apply** button for slicers or filter selections. No queries are sent until you select the **Apply** button on the filter or slicer. The queries then use your selections to filter the data. This button lets you make many slicer and filter selections before applying them.
 
 - **Apply filters first:** Always apply any applicable filters at the start of building a visual. For example, rather than drag in **TotalSalesAmount** and **ProductName**, and then filter to a particular year, apply the filter on **Year** at the beginning.
 
-  Each step of building a visual sends a query. Although it's possible to make another change before the first query completes, this approach still leaves unnecessary load on the underlying source. Applying filters early generally makes those intermediate queries less costly. Failing to apply filters early can result in hitting the one million row limit.
+  Each step of building a visual sends a query. Although it's possible to make another change before the first query completes, this approach still leaves unnecessary load on the underlying source. Applying filters early generally makes those intermediate queries less costly. Failing to apply filters early can result in hitting the 1-million row limit.
 
-- **Limit the number of visuals on a page:** When you open a page or change a page level slicer or filter, all the visuals on the page refresh. There's also a limit on the number of parallel queries. As the number of visuals increases, some visuals refresh serially, which increases the time it takes to refresh the page. Therefore, it's best to limit the number of visuals on a single page, and instead have more, simpler pages.
+- **Limit the number of visuals on a page:** When you open a page or change a page level slicer or filter, all the visuals on the page refresh. There's a limit on the number of parallel queries. As the number of visuals increases, some visuals refresh serially, which increases the time it takes to refresh the page. Therefore, it's best to limit the number of visuals on a single page, and instead have more, simpler pages.
 
 - **Consider switching off interaction between visuals:** By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page. For example, if you select **1999** on the pie chart, the column chart is cross-highlighted to show the sales by category for **1999**.
   
@@ -388,7 +400,8 @@ When you create a report that uses a DirectQuery connection, follow this guidanc
   
   Cross-filtering and cross-highlighting in DirectQuery require queries to be submitted to the underlying source. You should switch off this interaction if the time taken to respond to users' selections is unreasonably long. You can switch off this interaction for either the entire report, or on a case-by-case basis. For more information, see [How visuals cross-filter each other in a Power BI report](../consumer/end-user-interactions.md).
 
-### Maximum connections
+<a name="maximum-number-of-connections-option-for-directquery"></a>
+### Maximum number of connections
 
 You can set the maximum number of connections DirectQuery opens for each underlying data source, which controls the number of queries concurrently sent to each data source.
 
@@ -398,7 +411,7 @@ DirectQuery opens a default maximum number of 10 concurrent connections. To chan
 
 The setting is only enabled when there's at least one DirectQuery source in the current report. The value applies to all DirectQuery sources, and to any new DirectQuery sources added to that report.
 
-Increasing **Maximum connections per data source** allows sending more queries, up to the maximum number specified, to the underlying data source. This approach is useful when many visuals are on a single page, or many users access a report at the same time. Once the maximum number of connections is reached, further queries are queued until a connection becomes available. Increasing this limit results in more load on the underlying source, so the setting isn't guaranteed to improve overall performance.
+Increasing **Maximum connections per data source** allows sending more queries, up to the maximum number specified, to the underlying data source. This approach is useful when many visuals are on a single page, or many users access a report at the same time. Once the maximum number of connections is reached, further queries are queued until a connection becomes available. A higher limit results in more load on the underlying source, so the setting isn't guaranteed to improve overall performance.
 
 Once you publish a report, the maximum number of concurrent queries also depends on fixed limits set on the target environment where the report is published. Power BI, Power BI Premium, and Power BI Report Server impose different limits. The table below lists the upper limits of the active connections per data source for each Power BI environment. These limits apply to cloud data sources and on-premises data sources such as SQL Server, Oracle, and Teradata.
 
@@ -417,11 +430,11 @@ This section describes how to diagnose performance issues, or how to get more de
 
 Start diagnosing performance issues in Power BI Desktop, rather than in the Power BI service. Performance issues are often based on the performance of the underlying source. You can more easily identify and diagnose issues in the more isolated Power BI Desktop environment.
 
-This approach initially eliminates certain components, such as the Power BI gateway. If the performance issues don't occur in Power BI Desktop, you can investigate the specifics of the report in the Power BI service. The [performance analyzer](../create-reports/desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
+This approach initially eliminates certain components, such as the Power BI gateway. If the performance issues don't occur in Power BI Desktop, you can investigate the specifics of the report in the Power BI service. The [Performance analyzer](../create-reports/desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
 
-Similarly, first try to isolate any issues to one visual, rather than many visuals on a page. If a single visual on a Power BI Desktop page is sluggish, use the [performance analyzer](../create-reports/desktop-performance-analyzer.md) to determine the queries that Power BI Desktop sends to the underlying source.
+Similarly, first try to isolate any issues to one visual, rather than many visuals on a page. If a single visual on a Power BI Desktop page is sluggish, use the **Performance analyzer** to determine the queries that Power BI Desktop sends to the underlying source.
 
-You can also view traces and diagnostic information that some underlying data sources emit. Even if there are no traces from the source, trace files might contain useful details of how the query was executed and how it can be improved. you can use the following process to view the queries Power BI sends and their execution times.
+You can also view traces and diagnostic information that some underlying data sources emit. Even if there are no traces from the source, trace files might contain useful details of how the query was executed and how it can be improved. You can use the following process to view the queries Power BI sends and their execution times.
 
 ### Use SQL Server Profiler to see queries
 
@@ -440,7 +453,7 @@ You can read the trace files by using the *SQL Server Profiler*, part of the fre
 
 ![Screenshot that shows SQL Server Profiler.](media/desktop-directquery-about/directquery-about_07.png)
 
-To read the trace file for the current session:
+To open the trace file for the current session:
 
 1. During a Power BI Desktop session, select **File** > **Options and settings** > **Options**, and then select **Diagnostics**.
 
@@ -464,10 +477,9 @@ SQL Server Profiler displays all events from the current session. The following 
 
 - One or more pairs of `DirectQuery Begin` and `DirectQuery End` events, which represent queries sent to the underlying data source as part of evaluating the DAX query.
 
-Multiple DAX queries can run in parallel, so events from different groups can be interleaved. You can use the `ActivityID` value to determine which events belong to the same group.
-
-![]()
 [ ![Screenshot of SQL Server Profiler with Query Begin and Query End events.](media/desktop-directquery-about/directquery-about_08.png)](media/desktop-directquery-about/directquery-about_08.png#lightbox)
+
+Multiple DAX queries can run in parallel, so events from different groups can be interleaved. You can use the `ActivityID` value to determine which events belong to the same group.
 
 The following columns are also of interest:
 
@@ -488,7 +500,7 @@ Keep individual sessions reasonably small, perhaps 10 seconds of actions, not hu
 
 ### Understand the format of queries
 
-The general format of Power BI Desktop queries uses subselects for each table they reference. The Power Query Editor query defines the subselects. For example, assume you have the following [TPC-DS](https://www.tpc.org/tpcds/default5.asp) tables in SQL Server:
+The general format of Power BI Desktop queries uses subselects for each table they reference. The Power Query Editor query defines the subselect queries. For example, assume you have the following [TPC-DS](https://www.tpc.org/tpcds/default5.asp) tables in SQL Server:
 
 ![Screenshot that shows TPC-DS tables in SQL Server.](media/desktop-directquery-about/directquery-about_09.png)
 
@@ -503,9 +515,9 @@ Results in the following visual in Power BI:
 
 ![Screenshot that shows the visual result of a query.](media/desktop-directquery-about/directquery-about_11.png)
 
-Refreshing that visual produces the following SQL query. There are three subselects for `Web_Sales`, `Item`, and `Date_dim`, which each return all the columns on the respective table, even though the visual references only four columns.
+Refreshing that visual produces the following SQL query. There are three subselect queries for `Web_Sales`, `Item`, and `Date_dim`, which each return all the columns on the respective table, even though the visual references only four columns.
 
-Power Query Editor defines these exact queries in the subselects. This use of subselects doesn't affect performance for the data sources DirectQuery supports. Data sources like SQL Server optimize away the references to the other columns.
+Power Query Editor defines the exact subselect queries. This use of subselect queries doesn't affect performance for the data sources DirectQuery supports. Data sources like SQL Server optimize away the references to the other columns.
 
 Power BI uses this pattern because the analyst provides the SQL query directly. Power BI uses the query as provided, without an attempt to rewrite it.
 
