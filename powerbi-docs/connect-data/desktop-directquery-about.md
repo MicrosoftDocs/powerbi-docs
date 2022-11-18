@@ -220,7 +220,9 @@ Almost all reporting capabilities are supported for DirectQuery models. As long 
 
 - **Text columns have a maximum length:** The maximum length of the data in a text column for datasets using DirectQuery is 32,764 characters. Reporting on longer texts results in an error.
 
-The following reporting capabilities can also cause performance issues:
+### Reporting capabilities that affect performance
+
+The following reporting capabilities can cause performance issues:
 
 - **Measure filters:** Visuals containing measures, or aggregates of columns, can contain filters in those measures. For example, the following graphic shows **SalesAmount** by **Category**, but only includes categories with more than **20M** of sales.
   
@@ -315,7 +317,7 @@ This section provides high-level guidance on how to successfully use DirectQuery
 
 Validate that simple visuals refresh within five seconds, to provide a reasonable interactive experience. If visuals take longer than 30 seconds to refresh, it's likely that further issues following report publication will make the solution unworkable.
 
-If queries are slow, examine the queries sent to the underlying source, and the reason for the slow performance. For more information, see [Diagnose performance issues](#diagnose-performance-issues).
+If queries are slow, examine the queries sent to the underlying source, and the reason for the slow performance. For more information, see [Performance diagnostics](#performance-diagnostics).
 
 This article doesn't cover the wide range of database optimization recommendations across the full set of potential underlying sources. The following standard database practices apply to most situations:
 
@@ -386,7 +388,7 @@ When you create a report that uses a DirectQuery connection, follow this guidanc
   
   Cross-filtering and cross-highlighting in DirectQuery require queries to be submitted to the underlying source. You should switch off this interaction if the time taken to respond to users' selections is unreasonably long. You can switch off this interaction for either the entire report, or on a case-by-case basis. For more information, see [How visuals cross-filter each other in a Power BI report](../consumer/end-user-interactions.md).
 
-### Maximum number of connections
+### Maximum connections
 
 You can set the maximum number of connections DirectQuery opens for each underlying data source, which controls the number of queries concurrently sent to each data source.
 
@@ -409,23 +411,23 @@ Once you publish a report, the maximum number of concurrent queries also depends
 > [!NOTE]
 > The maximum number of DirectQuery connections setting applies to all DirectQuery sources when you enable [enhanced metadata](desktop-enhanced-dataset-metadata.md), which is the default setting for all models created in Power BI Desktop. 
 
-## Diagnose performance issues
+## Performance diagnostics
 
 This section describes how to diagnose performance issues, or how to get more detailed information to optimize your reports.
 
 Start diagnosing performance issues in Power BI Desktop, rather than in the Power BI service. Performance issues are often based on the performance of the underlying source. You can more easily identify and diagnose issues in the more isolated Power BI Desktop environment.
 
-This approach initially eliminates certain components, such as the Power BI gateway. If the performance issues don't happen in Power BI Desktop, you can investigate the specifics of the report in the Power BI service. The [performance analyzer](../create-reports/desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
+This approach initially eliminates certain components, such as the Power BI gateway. If the performance issues don't occur in Power BI Desktop, you can investigate the specifics of the report in the Power BI service. The [performance analyzer](../create-reports/desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
 
-Similarly, first try to isolate any issues to an individual visual, rather than many visuals on a page. If a single visual on a Power BI Desktop page is still sluggish, use the [performance analyzer](../create-reports/desktop-performance-analyzer.md) to determine the queries that Power BI Desktop sends to the underlying source.
+Similarly, first try to isolate any issues to one visual, rather than many visuals on a page. If a single visual on a Power BI Desktop page is sluggish, use the [performance analyzer](../create-reports/desktop-performance-analyzer.md) to determine the queries that Power BI Desktop sends to the underlying source.
 
-You can also view traces and diagnostic information that the underlying data source emits. Traces might also contain useful details of how the query was executed, and how it can be improved. Even if there are no traces from the source, you can use the following procedure to view the queries Power BI sends, along with their execution times.
+You can also view traces and diagnostic information that some underlying data sources emit. Even if there are no traces from the source, trace files might contain useful details of how the query was executed and how it can be improved. you can use the following process to view the queries Power BI sends and their execution times.
 
-### Determine what queries Power BI Desktop sends
+### Use SQL Server Profiler to see queries
 
-By default, Power BI Desktop logs events during a given session to a trace file called *FlightRecorderCurrent.trc*.
+By default, Power BI Desktop logs events during a given session to a trace file called *FlightRecorderCurrent.trc*. The trace file is in the Power BI Desktop folder for the current user, in a folder called *AnalysisServicesWorkspaces*.
 
-For some DirectQuery sources, this log includes all queries sent to the underlying data source. The following sources send queries to the log:
+For some DirectQuery sources, this trace file includes all queries sent to the underlying data source. The following data sources send queries to the log:
 
 - SQL Server
 - Azure SQL Database
@@ -434,88 +436,90 @@ For some DirectQuery sources, this log includes all queries sent to the underlyi
 - Teradata
 - SAP HANA
 
-The trace file is in the *AppData* folder for the current user, at *\<User>\\AppData\\Local\\Microsoft\\Power BI Desktop\\AnalysisServicesWorkspaces*.
+You can read the trace files by using the *SQL Server Profiler*, part of the free download [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
-To find the trace file:
+![Screenshot that shows SQL Server Profiler.](media/desktop-directquery-about/directquery-about_07.png)
 
-1. In Power BI Desktop, select **File** > **Options and settings** > **Options**, and then select **Diagnostics**.
+To read the trace file for the current session:
+
+1. During a Power BI Desktop session, select **File** > **Options and settings** > **Options**, and then select **Diagnostics**.
 
 1. Under **Crash Dump Collection**, select **Open crash dump/traces folder**.
 
    ![Screenshot that shows the link to open the traces folder.](media/desktop-directquery-about/directquery-about_06.png)
 
-   The *\<User>\\AppData\\Local\\Microsoft\\Power BI Desktop\\Traces* folder opens.
+   The *Power BI Desktop\\Traces* folder opens.
 
-1. Navigate to the parent folder *AnalysisServicesWorkspaces*, which contains one workspace folder for every open instance of Power BI Desktop. These folders are named with an integer suffix, such as *AnalysisServicesWorkspace2058279583*. The workspace folder is deleted when the associated Power BI Desktop session ends.
+1. Navigate to the parent folder and then to the *AnalysisServicesWorkspaces* folder, which contains one workspace folder for every open instance of Power BI Desktop. These folders are named with an integer suffix, such as *AnalysisServicesWorkspace2058279583*. The workspace folder is deleted when the associated Power BI Desktop session ends.
 
-   Inside the workspace folder, the *\\Data* folder contains the trace file *FlightRecorderCurrent.trc* for the current Power BI session.
+   Inside the workspace folder for the current Power BI session, the *\\Data* folder contains the *FlightRecorderCurrent.trc* trace file. Make a note of the location.
 
-You can read the trace files by using the *SQL Server Profiler*, part of the free download [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
+1. Open SQL Server Profiler, and select **File** > **Open** > **Trace File**.
 
-![Screenshot that shows SQL Server Profiler.](media/desktop-directquery-about/directquery-about_07.png)
+1. Navigate to or enter the path to the trace file for the current Power BI session, and open *FlightRecorderCurrent.trc*.
 
-To open the trace file, take the following steps:
+SQL Server Profiler displays all events from the current session. The following screenshot highlights a group of events for a query. Each query group has the following events:
 
-1. In SQL Server Profiler, select **File** > **Open** > **Trace file**.
+- A `Query Begin` and `Query End` event, which represent the start and end of a DAX query generated by changing a visual or filter in the Power BI UI, or from filtering or transforming data in the Power Query Editor.
 
-1. Enter the path to the trace file for the currently open Power BI session, such as: *C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*.
+- One or more pairs of `DirectQuery Begin` and `DirectQuery End` events, which represent queries sent to the underlying data source as part of evaluating the DAX query.
 
-1. Open *FlightRecorderCurrent.trc*.
+Multiple DAX queries can run in parallel, so events from different groups can be interleaved. You can use the `ActivityID` value to determine which events belong to the same group.
 
-All events from the current session are displayed. An annotated example is shown here, which highlights groups of events. Each group has the following events:
+![]()
+[ ![Screenshot of SQL Server Profiler with Query Begin and Query End events.](media/desktop-directquery-about/directquery-about_08.png)](media/desktop-directquery-about/directquery-about_08.png#lightbox)
 
-- A `Query Begin` and `Query End` event, which represent the start and end of a DAX query generated by the UI, for example, from a visual, or from populating a list of values in the filter UI.
-- One or more pairs of `DirectQuery Begin` and `DirectQuery End` events, which represent a query sent to the underlying data source, as part of evaluating the DAX query.
+The following columns are also of interest:
 
-Multiple DAX queries can run in parallel, so events from different groups can be interleaved. The value of the `ActivityID` can be used to determine which events belong to the same group.
-
-![SQL Server Profiler with Query Begin and Query End events](media/desktop-directquery-about/directquery-about_08.png)
-
-Other columns of interest are as follows:
-
-- **TextData:** The textual detail of the event. For `Query Begin/End` events, the detail is the DAX query. For `DirectQuery Begin/End` events, the detail is the SQL query sent to the underlying source. The **TextData** for the currently selected event is also displayed in the region at the bottom.
+- **TextData:** The textual detail of the event. For `Query Begin` and `Query End` events, the detail is the DAX query. For `DirectQuery Begin` and `DirectQuery End` events, the detail is the SQL query sent to the underlying source. The **TextData** for the currently selected event also appears in the pane at the bottom of the screen.
 - **EndTime:** The time when the event completed.
-- **Duration:** The duration, in milliseconds, taken to execute the DAX or SQL query.
-- **Error:** Indicates if an error occurred, in which case the event is also displayed in red.
+- **Duration:** The duration, in milliseconds, it took to run the DAX or SQL query.
+- **Error:** Whether an error occurred, in which case the event also displays in red.
 
-In the image above, some of the less interesting columns have been narrowed, to allow other columns to be seen more easily.
+To capture a trace to help diagnose a potential performance issue:
 
-We recommend the following approach to capturing a trace to help diagnose a potential performance issue:
+1. Open a single Power BI Desktop session, to avoid the confusion of multiple workspace folders.
 
-- Open a single Power BI Desktop session, to avoid the confusion of multiple workspace folders.
-- Do the set of actions of interest in Power BI Desktop. Include a few additional actions, to ensure that the events of interest are flushed into the trace file.
-- Open SQL Server Profiler and examine the trace, as described previously. Remember that closing Power BI Desktop deletes the trace file. Also, further actions in Power BI Desktop don't immediately appear. The trace file should be closed and reopened to see the new events.
-- Keep individual sessions reasonably small, perhaps 10 seconds of actions, not hundreds. This approach makes it easier to interpret the trace file. There's also a limit on the size of the trace file. For long sessions, there's a chance of early events being dropped.
+1. Do the set of actions of interest in Power BI Desktop. Include a few more actions, to ensure that the events of interest are flushed into the trace file.
 
-### Understand the formats of queries Power BI Desktop sends
+1. Open SQL Server Profiler and examine the trace. Remember that closing Power BI Desktop deletes the trace file. Also, further actions in Power BI Desktop don't immediately appear. You must close and reopen the trace file to see new events.
 
-The general format of queries created and sent by Power BI Desktop use subselects for each of the tables referenced. The Power Query Editor query defines the subselect. For example, assume the following TPC-DS tables in SQL Server:
+Keep individual sessions reasonably small, perhaps 10 seconds of actions, not hundreds. This approach makes it easier to interpret the trace file. There's also a limit on the size of the trace file. For long sessions, there's a chance of early events being dropped.
 
-![TPC-DS tables in SQL Server](media/desktop-directquery-about/directquery-about_09.png)
+### Understand the format of queries
 
-Consider the following query:
+The general format of Power BI Desktop queries uses subselects for each table they reference. The Power Query Editor query defines the subselects. For example, assume you have the following [TPC-DS](https://www.tpc.org/tpcds/default5.asp) tables in SQL Server:
 
-![A sample query](media/desktop-directquery-about/directquery-about_10.png)
+![Screenshot that shows TPC-DS tables in SQL Server.](media/desktop-directquery-about/directquery-about_09.png)
 
-That query results in the following visual:
+Running the following query:
 
-![Visual result of a query](media/desktop-directquery-about/directquery-about_11.png)
+```sql
+SalesAmount (SUMX(Web_Sales, [ws_sales_price]*[ws_quantity]))
+by Item[i_category]
+for Date_dim[d_year] = 2000
+```
+Results in the following visual in Power BI:
 
-Refreshing that visual will result in the SQL query shown here. As you can tell, there are three subselects for `Web Sales`, `Item`, and `Date_dim`, that each return all the columns on the respective table, even though only four columns are actually referenced by the visual. These queries in the subselects that are shaded are exactly the result of the queries defined in Power Query Editor. Use of subselects in this manner hasn't been found to impact performance for the data sources so far supported for DirectQuery. Data sources like SQL Server optimize away the references to the other columns.
+![Screenshot that shows the visual result of a query.](media/desktop-directquery-about/directquery-about_11.png)
 
-Power BI employs this pattern because the SQL query used can be provided directly by the analyst. It's used "as provided", without an attempt to rewrite it.
+Refreshing that visual produces the following SQL query. There are three subselects for `Web_Sales`, `Item`, and `Date_dim`, which each return all the columns on the respective table, even though the visual references only four columns.
 
-![SQL query used as provided](media/desktop-directquery-about/directquery-about_12.png)
+Power Query Editor defines these exact queries in the subselects. This use of subselects doesn't affect performance for the data sources DirectQuery supports. Data sources like SQL Server optimize away the references to the other columns.
+
+Power BI uses this pattern because the analyst provides the SQL query directly. Power BI uses the query as provided, without an attempt to rewrite it.
+
+![Screenshot of the SQL query used as provided.](media/desktop-directquery-about/directquery-about_12.png)
 
 ## Next steps
 
-For more information about DirectQuery, see:
+For more information about DirectQuery in Power BI, see:
 
 - [Data sources supported by DirectQuery](power-bi-data-sources.md)
 - [Use DataQuery in Power BI Desktop](desktop-use-directquery.md)
 
-This article described aspects of DirectQuery that are common across all data sources. See the following articles for details that are specific to specific sources:
+This article described aspects of DirectQuery that are common across all data sources. See the following articles for details about specific sources:
 
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
-
+- [Use DirectQuery for Power BI datasets and Analysis Services (preview)](desktop-directquery-datasets-azure-analysis-services.md)
