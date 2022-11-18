@@ -39,7 +39,7 @@ The table below describes the resources and limits of each SKU.
 
 | Capacity          |     |      |         | Dataset |        |     |       | Dataflow | Export API |
 | ----------------- | --- | ---- | ------- | --- | ------ | --- | ----- | -------- | ---- |
-| **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  | **Max Concurrent Pages**<sup>6</sup> |
+| **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  | **Max concurrent pages**<sup>6</sup> |
 | EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |  4 | 20 |
 | EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |  8 | 25 |
 | EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  | 16 | 35 |
