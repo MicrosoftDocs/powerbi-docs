@@ -67,7 +67,7 @@ Options for selected visualizations:
    * If you want the selected visualization to have no impact on one of the other visualizations on the page, select the **no impact** icon :::image type="icon" source="media/service-reports-visual-interactions/power-bi-no-impact.png":::.
 
 ## Change the interactions of drillable visualizations
-[Certain Power BI visualizations can be drilled](../consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. However, that behavior can be changed.
+[Certain Power BI visualizations can be drilled](../consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. However, that behavior can be changed. In Power BI service, you can edit interactions by clicking on the **Visual interactions** dropdown menu and setting **Edit interactions** to **On**.
 
 > [!TIP]
 > Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with a drill-down feature on the **New hires** tab.
