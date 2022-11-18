@@ -73,6 +73,8 @@ Migration doesn't include:
 - Service principals configured for the Azure Analysis Services server and model database aren't included in the restored dataset in Power BI.
 - Server redirection enabling client applications, tools, and automation processes to be automatically redirected to the newly migrated dataset in Power BI are not included in the migration step. Redirection is enabled separately, after migration is completed.
 
+Migration is completed through the XMLA endpoint. After migration, modifying dataset metadata requires the use of tools that work through the XMLA endpoint when enabled for read/write. Similar to other datasets in Power BI that have metadata modified through the XMLA endpoint, migrated datasets can't be downloaded as a Power BI Desktop file. To modify migrated dataset metadata, use [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms), [ALM Toolkit](http://alm-toolkit.com/), or [Tabular Editor](https://tabulareditor.github.io/). To learn more about data model management through the XMLA endpoint, see [Advanced data model management](../guidance/powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md)
+
 ### Redirection
 
 Server *redirection* enables [XMLA endpoint-based client tools](service-premium-connect-tools.md#client-applications-and-tools) and automation processes to continue to work without having to change the server name reference in the connection string. Client applications, tools, and automation processes are automatically redirected to the migrated dataset in Power BI. If a server alias is configured for the Azure Analysis Services server, it too will redirect to the migrated dataset in Power BI.
@@ -107,7 +109,17 @@ After enabling server redirection, you can then pause your server in the Azure p
 
 ### Report rebind
 
-**During preview**, Live connect reports in the Power BI service  connected to an Azure Analysis Services model database being migrated with the feature aren't automatically rebound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a new binding to the new dataset.
+**During preview**, Live connect reports in the Power BI service connected to an Azure Analysis Services model database being migrated with the feature aren't automatically rebound to the new dataset in Power BI. Use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a new binding to the new dataset.
+
+After rebind by using the API, changes to the Live connect reports can only be made in the Power BI service. Currently, you can't make report changes in a Power BI Desktop file that was previously bound to the model in Azure Analysis Services and then republish to the service.
+
+## Important considerations
+
+- **During preview**, if you use the [Reports - Rebind Report](/rest/api/power-bi/reports/rebind-report) Power BI REST API to create a new binding to the migrated dataset, you can't make changes to reports in a Power BI Desktop .pbix that were previously bound to the model in Azure Analysis Services and then republish to Power BI. Report changes for a migrated dataset can be made in the Power BI service.
+
+- **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.
+
+- Datasets migrated by using the Azure Analysis Services to Power BI Premium migration feature in Power BI can't be downloaded as a .pbix file. To modify dataset metadata, use Visual Studio, the open-source ALM Toolkit, or the open-source Tabular Editor.
 
 ## To migrate from Azure Analysis Services to Power BI
 
