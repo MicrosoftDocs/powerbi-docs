@@ -21,12 +21,13 @@ This article documents the information in the Power BI auditing schema that is s
 * SensitivityLabelRemoved
 
 ## SensitivityLabelEventData
+
 |Field|Type|Must appear in the schema|Description|
 |---------|---------|---------|---------|
 |SensitivityLabelId|Edm.Guid||The guid of the new label. This field is only present when the activity key is SensitivityLabelApplied or SensitivityLabelChanged.|
 |OldSensitivityLabelId|Edm.Guid||The guid of the label on the item before the action. This field is only present when the activity key is SensitivityLabelChanged or SensitivityLabelRemoved.|
 |[ActionSource](#actionsource)|Edm.Enum|Yes|This field indicates whether the label change is the result of an automatic or manual process.|
-|[ActionSourceDetail](#actionsourcedetail)|Edm.Enum|Yes|This field gives more detail about what caused the action to take place.|	 
+|[ActionSourceDetail](#actionsourcedetail)|Edm.Enum|Yes|This field gives more detail about what caused the action to take place.|
 |[LabelEventType](#labeleventtype)|Edm.Enum|Yes|This field indicates whether the action resulted in a more restrictive label, less restrictive label, or a label of the same degree of sensitivity.|
 
 ## ArtifactType
