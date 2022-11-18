@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 11/17/2022
 ---
 
 # Plan deployment to migrate to Power BI
@@ -81,7 +81,6 @@ Additional capabilities are available when a workspace is stored on a [Premium c
 - Support for more frequent data refreshes.
 - Support for using the full feature set of dataflows.
 - Enterprise features, including deployment pipelines and the XMLA endpoint.
-- Support for paginated reports (when the workload is enabled).
 
 ## Determine data acquisition method
 
