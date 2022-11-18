@@ -33,9 +33,9 @@ With Power BI Desktop, you can easily import Excel workbooks that contain Power 
 
    ![Screenshot that shows the Import Excel workbook contents message.](media/desktop-import-excel-workbooks/import-excel-power-bi-5.png)
 
-   Power BI Desktop analyzes the workbook and converts it into a Power BI Desktop file (.pbix). This action is a one-time event; after the Power BI Desktop file creates with these steps, the Power BI Desktop file has no dependence on the original Excel workbook, and can be modified, saved, and shared without affecting the original workbook.
+   Power BI Desktop analyzes the workbook and converts it into a Power BI Desktop file (.pbix). This action is a one-time event. Once created with these steps, the Power BI Desktop file has no dependence on the original Excel workbook. You can modify, save, and share it without affecting the original workbook.
 
-   After the import finishes, a summary page appears that describes the items that were converted, and also lists any items that couldn't be imported.
+   After the import finishes, a summary page appears that describes the items that were converted. The summary page also lists any items that couldn't be imported.
 
    ![Screenshot that shows the Import Excel workbook contents summary page.](media/desktop-import-excel-workbooks/importexceltopbi_3.png)
 
@@ -55,7 +55,7 @@ Power BI Desktop can import the following elements, commonly referred to as *obj
 | --- | --- |
 | Power Query queries |All Power Query queries from Excel are converted to queries in Power BI Desktop. If there are query groups defined in the Excel Workbook, the same organization replicates in Power BI Desktop. All queries are loaded unless they're set to **Only Create Connection** in the **Import Data** Excel dialog box. Customize the load behavior by selecting **Properties** from the **Home** tab of Power Query Editor in Power BI Desktop. |
 | Power Pivot external data connections |All Power Pivot external data connections convert to queries in Power BI Desktop. |
-| Linked tables or current workbook tables |If there's a worksheet table in Excel linked to the data model, or linked to a query (by using *From Table* or the *Excel.CurrentWorkbook()* function in M), the following options present: <ol><li><b>Import the table to the Power BI Desktop file</b>. This table is a one-time snapshot of the data, after which the data is read-only in the table in Power BI Desktop. There's a size limitation of 1 million characters (total, combining all column headers and cells) for tables created using this option.</li><li><b>Keep a connection to the original workbook</b>. Alternatively, you can keep a connection to the original Excel Workbook. Power BI Desktop retrieves the latest content in this table with each refresh, just like any other query you create against an Excel workbook in Power BI Desktop.</li></ul> |
+| Linked tables or current workbook tables |If there's a worksheet table in Excel linked to the data model, or linked to a query (by using *From Table* or the *Excel.CurrentWorkbook()* function in M), you'll see the following options: <br><br>**Import the table to the Power BI Desktop file**. This table is a one-time snapshot of the data, after which the data is read-only in the table in Power BI Desktop. There's a size limitation of 1 million characters (total, combining all column headers and cells) for tables created using this option.<br><br>**Keep a connection to the original workbook**. Alternatively, you can keep a connection to the original Excel Workbook. Power BI Desktop retrieves the latest content in this table with each refresh, just like any other query you create against an Excel workbook in Power BI Desktop. |
 | Data model calculated columns, measures, KPIs, data categories, and relationships |These data model objects convert to the equivalent objects in Power BI Desktop. Note there are certain data categories that aren't available in Power BI Desktop, such as Image. In these cases, the data category information resets for the columns in question. |
 
 ## Are there any limitations to importing a workbook?
