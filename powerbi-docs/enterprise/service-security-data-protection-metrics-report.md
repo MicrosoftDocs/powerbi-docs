@@ -18,7 +18,7 @@ The data protection metrics report is a dedicated report that [Power BI administ
 
 The report features:
 
-* A 100 stacked stacked column chart that shows daily sensitivity label usage in the tenant for the last 7, 30, or 90 days. This chart makes it easy to track the relative usage of the different label types over time.
+* A 100 percent stacked column chart that shows daily sensitivity label usage in the tenant for the last 7, 30, or 90 days. This chart makes it easy to track the relative usage of the different label types over time.
 * Donut charts that show the current state of sensitivity label usage in the tenant for dashboards, reports, datasets, and dataflows.
 * A link to the Defender for Cloud Apps portal where Power BI alerts, users-at-risk, activity logs, and other information is available. For more information, see [Using Microsoft Defender for Cloud Apps controls in Power BI](./service-security-using-defender-for-cloud-apps-controls.md).
 
