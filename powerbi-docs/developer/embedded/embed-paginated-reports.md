@@ -30,6 +30,10 @@ To get started, you're required to have:
 
 * A [capacity](#step-2---create-a-capacity), with [paginated reports workload](../../enterprise/service-admin-premium-workloads.md#paginated-reports) enabled
 
+    >[!NOTE]
+    >You only need to enable this workload with Power BI Premium Gen1 capacities.
+
+
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## [Embed for your organization](#tab/organization)
