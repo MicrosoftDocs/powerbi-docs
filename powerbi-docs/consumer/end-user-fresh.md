@@ -37,15 +37,15 @@ It's less helpful to know which type of timestamp goes where, and more helpful t
 
 ## Content lists
 
-In a list of content in the Power BI service, there's an owner column and a timestamp column. The type of owner and timestamp depends on the content. The following example shows the Publisher name and Published date on the **Apps** page.
+In a list of content in the Power BI service, there's an owner column and a timestamp column. The type of owner and timestamp depends on the content. The following example shows the Publisher name and Published date on the Apps page.
 
 :::image type="content" source="media/end-user-fresh/power-bi-app.png" alt-text="Screenshot showing a list of apps with a published date and publisher.":::
 
-The next example shows the owner of the content and the Shared date when you go to the Browse page and then the Shared with me tab.
+The next example shows the Owner of the content and the Shared date when you go to the Browse page and then the Shared with me tab.
 
 :::image type="content" source="media/end-user-fresh/power-bi-shared.png" alt-text="Screenshot showing shared with me screen. Shared date and owner are outlined.":::
 
-The final example shows a content list in a workspace. The owner of the content, the Refreshed date, and the date of the Next refresh are listed.
+The final example shows a content list in a workspace. The Owner of the content, the Refreshed date, and the date of the Next refresh are listed.
 
 :::image type="content" source="media/end-user-fresh/power-bi-app-workspace-list.png" alt-text="Screenshot showing a workspace open to the content list. Refresh dates and owner are outlined.":::
 
