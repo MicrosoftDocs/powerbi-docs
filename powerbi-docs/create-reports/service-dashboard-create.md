@@ -1,6 +1,6 @@
 ---
 title: Create a Power BI dashboard from a report
-description: Learn how to create a Power BI dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard.
+description: Learn how to create a quick and easy dashboard that pins visualizations from a report that's already been built.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -15,9 +15,7 @@ ms.date: 11/15/2022
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard.  
-
-You can start by creating a quick and easy dashboard that pins visualizations from a report that's already been built.
+You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard. In this article, you create a quick and easy dashboard that pins visualizations from a report that's already been built.
 
 After you complete this article, you'll understand:
 - The relationship between dashboards and reports.
@@ -40,35 +38,20 @@ Watch Amanda create a new dashboard by pinning visualizations from a report. The
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
-## Import a dataset with a report
-In this procedure, you import one of the Power BI sample datasets and use it to create a new dashboard. The sample is an Excel workbook with two PowerView sheets. When Power BI imports the workbook, it adds a dataset and a report to your workspace. The report is automatically created from the PowerView sheets.
+## Open a sample report
 
-1. Download the [Procurement Analysis sample](https://go.microsoft.com/fwlink/?LinkId=529784) Excel file. We recommend saving it in your OneDrive for Business.
-2. Open the Power BI service in your browser (app.powerbi.com).
-3. On the navigation pane, select **My Workspace** and then select **Get Data**.
+In this procedure, you open one of the Power BI sample datasets available from the Learning center in the Power BI service. It's installed automatically in My Workspace.
 
-    ![Screenshot of the navigation pane, highlighting Get data.](media/service-dashboard-create/power-bi-get-data-new-look.png)
-4. Under **Files**, select **Get**.
+1. In the nav pane, select, **Learning center**.
+1. Select **Regional Sales Sample** from the carousel.
 
-   ![Screenshot of Files dialog and Get button.](media/service-dashboard-create/power-bi-select-files.png)
-5. Go to the location where you saved the Procurement Analysis sample Excel file. Select it and then select **Connect**.
+    picture of Regional Sales Sample in the carousel.
 
-   ![Screenshot of OneDrive for Business sample folder.](media/service-dashboard-create/power-bi-connectnew.png)
-6. For this exercise, select **Import**.
+1. The Regional Sales Sample opens in Reading view in the Power BI service.
 
-    ![Screenshot of OneDrive for Business window, highlighting Import.](media/service-dashboard-create/power-bi-import.png)
-7. When the success message appears, select the **x** to dismiss it.
+## Pin tiles to a dashboard
 
-   ![Screenshot of a success message, highlighting the X.](media/service-dashboard-create/power-bi-view-datasetnew.png)
-
-> [!TIP]
-> Did you know? You can narrow the navigation pane by selecting the icon with three lines at the top :::image type="icon" source="media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png":::. That gives you more room for the report itself.
-
-### Open the report and pin tiles to your dashboard
-1. In the same workspace, select the **Procurement Analysis Sample** report to open it.
-
-    ![Screenshot of the My workspace window, highlighting the Procurement Analysis Sample.](media/service-dashboard-create/power-bi-reports.png)
-    The report opens in Reading view. Notice it has two tabs on the left: **Discount Analysis** and **Spend Overview**. Each tab represents a page of the report.
+1. In the Regional Sales Sample, etc.
 
 2. Select **More options (...)** > **Edit** to open the report in Editing view.
 
