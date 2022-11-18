@@ -1,6 +1,6 @@
 ---
 title: Drill mode in the Power BI service
-description: See how to drill down, drill up, and expand by using the drill feature in a visual in the Microsoft Power BI service.
+description: Learn how to drill down, drill up, and expand by using the drill feature in a visual in the Microsoft Power BI service.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -28,9 +28,9 @@ You can tell if a visual has a hierarchy by hovering over it. If the drill contr
 
 ## Drill down and up
 
-The following example is a treemap that has a hierarchy made up of territory, city, postal code, and store name. The treemap shows the total number of units sold this year by territory. Territory is the top level of the hierarchy. The chart is filtered by the territories of Kentucky and Tennessee.
+The following example is a bar chart that has a hierarchy made up of category, manufacturer, segment, and product. The bar chart shows the total number of units sold in the year 2014 by category. Category is the top level of the hierarchy. The chart is filtered by the categories Rural, Urban, Mix, and Youth.
 
-![Screenshot of the treemap. The filters and drill features are outlined.](./media/end-user-drill/power-bi-treemap.png)  
+![Screenshot of the bar chart. The filters and drill features are outlined.](./media/end-user-drill/power-bi-treemap.png)  
 
 ## Ways to access the drill features
 
@@ -46,7 +46,7 @@ Another way to access the drill features is by right-clicking a data point on th
 
 ## Drill down all fields at once
 
-There are many ways to drill into your visual. Selecting the double arrow drill-down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon3.png"::: takes you to the next level in the hierarchy. For example, if you're at the territory level for Kentucky and Tennessee, you can drill down to the city level, then the postal code level, and, finally, the store name level for both states. Each step in the path shows you new information.
+There are many ways to drill into your visual. Selecting the double arrow drill-down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon3.png"::: takes you to the next level in the hierarchy. For example, if you're at the category level, you can drill down to the manufacturer level, then the segment level, and, finally, the product level for all categories. Each step in the path shows you new information.
 
 :::image type="content" source="./media/end-user-drill/power-bi-drill-path.png" alt-text="Diagram showing the steps of the drill pathway." lightbox="./media/end-user-drill/power-bi-drill-path.png#lightbox":::
 
@@ -56,7 +56,7 @@ To go up a level in the hierarchy, select the drill-up icon :::image type="icon"
 
 The double arrow drill-down icon drills down all fields on the canvas at once. This example shows how to drill down one field at a time.
 
-1. From the territory level, where the chart shows just Kentucky and Tennessee, select the drill-down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon2.png"::: to turn it on.
+1. From the category level, where the chart shows Rural and Urban, select the drill-down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon2.png"::: to turn it on.
 
     Now you have the option of drilling down **one field at a time** by selecting a visual element, like a bar, bubble, or leaf.
 
