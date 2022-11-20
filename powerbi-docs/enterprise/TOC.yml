@@ -22,6 +22,8 @@
       href: service-encryption-customer-managed-keys.md
     - name: High availability and failover FAQ
       href: service-admin-failover.yml
+    - name: Migrate from Azure Analysis Services
+      href: aas-pbi-migration-overview.md
   - name: Licensing
     expanded: false
     items:
