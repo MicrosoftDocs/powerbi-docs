@@ -1,13 +1,13 @@
 ---
 title:  Mobile development in Power BI
-description:  How to create mobile-friendly Power BI visuals.
+description: Learn how to create mobile-friendly Power BI visuals by using essential and recommended functions to add interactive functionality.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/12/2021
+ms.date: 11/19/2022
 ---
 
 # How to create mobile-friendly Power BI visuals
