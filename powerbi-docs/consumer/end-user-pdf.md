@@ -88,7 +88,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
 * When exporting to PDF, reports using themes with custom fonts will have the custom font replaced with a default font.
 * While we look to provide a consistent experience, we can't guarantee the exported PDF from the Power BI service will always match the exported PDF from a local Power BI Desktop file.
-* When exporting to PDF, we cannot guarantee pixel perfect fidelity for Power BI reports. The resolution of exported report pages is 1280 pixels x 720 pixels. 
+* When exporting to PDF, we cannot guarantee precise fidelity for Power BI reports. The resolution of exported report pages is 1280 pixels x 720 pixels. 
 * Visuals with scrollbars are exported in their default state.  The visual will display all possible rows, starting with the first row. Even if you have the visual scrolled down, when exported, the visual will display unscrolled. 
 
     ![Export visual with scrollbars.](media/end-user-pdf/export-to-pdf-03.png)

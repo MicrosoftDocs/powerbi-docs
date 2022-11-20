@@ -83,16 +83,13 @@ You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelin
 
 If you already have a workspace that you'd like to use with a specific stage, instead of deploying you can [assign](deployment-pipelines-assign.md) that workspace to the appropriate stage.
 
->[!NOTE]
->To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-).
-
-When deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
+When you're deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
 
 Once the deployment is complete, refresh the dataset. For more information, see [deploying content to an empty stage](deployment-pipelines-process.md#deploying-content-to-an-empty-stage).
 
 ### Deploying options
 
-Deployment pipelines offers three options when it comes to deploying your Power BI content:
+Deployment pipelines offer three options when it comes to deploying your Power BI content:
 
 * [Deploying all content](#deploying-all-content) - Deploy all your Power BI content to the target stage.
 
@@ -134,11 +131,11 @@ After selecting which content to deploy, a pop-up window lists all the items you
 
 To leave a note, expand the **Add a note** option and write your note in the text box. When you're ready to deploy, select **Deploy**.
 
-:::image type="content" source="media/deployment-pipelines-get-started/add-note.png" alt-text="A screenshot showing the deployment pop-up window, with the add a note option expanded.":::
+:::image type="content" source="media/deployment-pipelines-get-started/add-note.png" alt-text="A screenshot showing the deployment pop-up window, with the Add a note option expanded.":::
 
 ## Step 4 - Create deployment rules
 
-When working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
+When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
 When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
@@ -211,10 +208,10 @@ This section lists the limitations for the deployment rules.
 
 * If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
-* After deploying a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
+* After you deploy a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
 
 >[!NOTE]
->Parameter rules are not supported for paginated reports.
+>Parameter rules aren't supported for paginated reports.
 
 ### Supported data sources for dataflow and dataset rules
 

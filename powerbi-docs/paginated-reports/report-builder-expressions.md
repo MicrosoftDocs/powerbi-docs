@@ -82,4 +82,4 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
