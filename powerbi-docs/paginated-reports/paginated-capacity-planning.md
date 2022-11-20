@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 11/20/2022
 LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
@@ -31,6 +31,8 @@ When you plan your capacity, consider the following:
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
 * The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
+
+* Exporting large reports into formats such as Excel and PDF, requires more resources than reading every page, using toggles and searching within the reports.
 
 ### How many users can a SKU handle?
 
@@ -76,11 +78,13 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 * There are multiple Power BI items and operations that might be involved in report rendering. You might need to sum their CPU consumption.
 
+* There are multiple Power BI items and operations that might be involved in report rendering as renders may take long time. A long running operation in the *Timepoint* page can be displayed as a list of operations, with none of the durations longer than 30 seconds. You might need to sum the render operations CPU consumption. Sorting by the start time can help display the full history of the render.
+
 ### Calculate the max report renders
 
 Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](./../enterprise/service-premium-smoothing.md#how-to-detect-overload).
 
-$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time}} $
+$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time (in seconds)}} $
 
 ### Calculate the max number of users
 
@@ -92,9 +96,9 @@ $ \text {max SKU users} = {\text {max concurrent reports renders} \over 0.05} $
 
 You can use an extended formula to estimate the capacity needed for different report usages.
 
-Upload several paginated reports with different usages, and use the metric app to get the average CPU processing time for each one. When you have all the information, use this formula.
+Upload several paginated reports with different number of daily renders, and use the metric app to get the average CPU processing time for each one. The sum of all your report renders per day should be equal to 100%. When you have all the information, use this formula.
 
-$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {A usage} \times \text {A processing time}} + \text {B usage} \times \text {B processing time} + \text {... N usage} \times \text{N processing time}}$
+$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {A renders} \times \text {A processing time}} + \text {B renders} \times \text {B processing time} + \text {...} + \text{N renders} \times \text{N processing time}}$
 
 ## Examples
 
@@ -110,17 +114,17 @@ When using the second formula, you get a maximum of 1,200 users.
 
 $ 1,200 = {60 \over 0.05} $
 
-For *P2 SKUs*, you can multiply these numbers by two, as the capacity has twice the number of CPU cores. The sum of all your report usages should be equal to one.
+For *P2 SKUs*, you can multiply these numbers by two, as the capacity has twice the number of CPU cores.
 
 #### Advanced calculation
 
-Let’s assume that you have three paginated reports with the following CPU usage:
+Let’s assume that you have three paginated reports with the daily rendering percent listed in the table below.
 
-| Report | CPU usage | CPU processing time (in seconds) |
-|--------|-----------|----------------------------------|
-| A      | 60%       |  2                               |
-| B      | 30%       |  5                               |
-| C      | 10%       | 10                               |
+| Report | Number of rendered reports per day | CPU processing time (in seconds) |
+|--------|------------------------------------|----------------------------------|
+| A      | 60%                                |  2                               |
+| B      | 30%                                |  5                               |
+| C      | 10%                                | 10                               |
 
 The formulas for a *P1 SKU* will be:
 
