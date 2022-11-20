@@ -58,7 +58,7 @@ In Power BI, you can `fetchMoreData` in one of two ways:
 
 ### Segments aggregation mode (default)
 
-With this mode, the dataview provided to the visual contains the accumulated data from all the previous `fetchMoreData requests`. Therefore, dataview size is expected to grow with each update. For example, if a total of 100,000 rows are expected and the window size is set to 10,000, the first update dataview should include 10,000 rows, the second update dataview should include 20,000 rows, and so on.
+With this mode, the dataview provided to the visual contains the accumulated data from all the previous `fetchMoreData requests`. Therefore, dataview size grows with each update according to the window size. For example, if a total of 100,000 rows are expected and the window size is set to 10,000, the first update dataview should include 10,000 rows, the second update dataview should include 20,000 rows, and so on.
 
 This mode is selected by calling `fetchMoreData` with `aggregateSegments = true`.
 
@@ -117,7 +117,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 ### Incremental updates mode
 
-With this mode, the dataview provided to the visual only contains just data. This way, the dataview size doesn't pass the defined window size. For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a dataview size of 10,000 and one update with a dataview of size 1,000.
+With this mode, the dataview provided to the visual only contains the next set of incremental data. The dataview size is equal to the defined window size (or smaller, if the last bit of data is smaller than the window size). For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a dataview size of 10,000 and one update with a dataview of size 1,000.
 
 This mode is selected by calling `fetchMoreData` with `aggregateSegments = false`.
 
