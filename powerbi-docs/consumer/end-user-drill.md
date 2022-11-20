@@ -30,7 +30,7 @@ You can tell if a visual has a hierarchy by hovering over it. If the drill contr
 
 The following example is a bar chart that has a hierarchy made up of category, manufacturer, segment, and product. The bar chart shows the total number of units sold in the year 2014 by category. Category is the top level of the hierarchy. The chart is filtered by the categories Rural and Urban.
 
-![Screenshot of the bar chart. The filters and drill features are outlined.](./media/end-user-drill/power-bi-treemap.png)  
+:::image type="content" source="./media/end-user-drill/power-bi-filter.png" alt-text="Screenshot of the bar chart. The filters are outlined.":::
 
 ## Ways to access the drill features
 
@@ -38,11 +38,11 @@ There are two ways to access the drill-down, drill-up, and expand features for v
 
 One way is to hover over a visual to use the icons in the action bar. Turn on the drill-down option by selecting the single downward arrow. The grey background indicates that the drill-down option is turned on.
 
-![Screenshot of the drill options in the action bar.](./media/end-user-drill/power-bi-drill-hover.png)
+:::image type="content" source="./media/end-user-drill/power-bi-drill-hover.png" alt-text="Screenshot of the drill options in the action bar.":::
 
 Another way to access the drill features is by right-clicking a data point on the visual to open a menu with available options.
 
-![Screenshot of the right-click menu from a data point.](./media/end-user-drill/power-bi-drill-action-menu.png)
+:::image type="content" source="./media/end-user-drill/power-bi-drill-action-menu.png" alt-text="Screenshot of the right-click menu from a data point.":::
 
 ## Drill down all fields at once
 
@@ -60,14 +60,14 @@ The double arrow drill-down icon drills down all fields on the canvas at once. T
 
     Now you have the option of drilling down **one field at a time** by selecting a visual element, like a bar, bubble, or leaf.
 
-    ![Screenshot of visual with the drill-down on/off icon turned on.](media/end-user-drill/power-bi-select-drill-icon.png)
+    :::image type="content" source="media/end-user-drill/power-bi-select-drill-icon.png" alt-text="Screenshot of visual with the drill-down on/off icon turned on.":::
 
     > [!NOTE]
     > If you don't turn on the drill-down option and you select a visual element, it cross-filters the other charts on the report page rather than drilling down.
 
 2. Select the bar for Rural. The bar chart now shows all the Rural manufacturers.
 
-    ![Screenshot of the bar chart showing the Rural manufacturers.](media/end-user-drill/power-bi-drill-down-first.png)
+    :::image type="content" source="media/end-user-drill/power-bi-drill-down-first.png" alt-text="Screenshot of the bar chart showing the Rural manufacturers.":::
 
 3. At this point, you can:
 
@@ -79,13 +79,13 @@ The double arrow drill-down icon drills down all fields on the canvas at once. T
 
     Continue to drill down one field at a time by selecting **Natura**. The bar chart now shows the segments for the Natura manufacturer in the Rural category.
 
-    ![Screenshot of the bar chart showing the Productivity and Select segments.](media/end-user-drill/power-bi-drill-twice.png)
+    :::image type="content" source="media/end-user-drill/power-bi-drill-twice.png" alt-text="Screenshot of the bar chart showing the Productivity and Select segments.":::
 
     Notice that the title changes to show which level you are on as you drill down and back up again.
 
 4. Drill down to the products by selecting the **Productivity** bar. Now you are at the product level.
 
-    ![Screenshot of the bar chart showing products of the Productivity segment.](media/end-user-drill/power-bi-drill-last.png)
+    :::image type="content" source="media/end-user-drill/power-bi-drill-last.png" alt-text="Screenshot of the bar chart showing products of the Productivity segment." lightbox="media/end-user-drill/power-bi-drill-last.png#lightbox":::
 
 ## Expand fields
 
@@ -101,15 +101,15 @@ The following example shows how to use this feature to expand all fields at one 
 
 1. From the previous step, select the drill-up arrow until you reach the second level, **Total Units by Category and Manufacturer**.
 
-    ![Screenshot of the bar chart showing all data for Rural.](media/end-user-drill/power-bi-expand-second.png)
+    :::image type="content" source="media/end-user-drill/power-bi-expand-second.png" alt-text="Screenshot of the bar chart showing all data for Rural.":::
 
 2. Confirm that the drill-down option :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon2.png"::: is still turned on and select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png":::. The bar chart shows more detail. It now shows category, manufacturer, and segment.
 
-    ![Screenshot of the visual showing category, manufacturer, and segment.](./media/end-user-drill/power-bi-expand-third.png)
+    :::image type="content" source="./media/end-user-drill/power-bi-expand-third.png" alt-text="Screenshot of the visual showing category, manufacturer, and segment.":::
 
 3. Select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png"::: one more time to display all four hierarchy levels of detail for Rural. Hover over a bar to see more detail.
 
-    ![Screenshot of the bar chart showing a tooltip with bar specific data.](./media/end-user-drill/power-bi-expand-final.png)
+    :::image type="content" source="./media/end-user-drill/power-bi-expand-final.png" alt-text="Screenshot of the bar chart showing a tooltip with bar specific data." lightbox="./media/end-user-drill/power-bi-expand-final.png#lightbox":::
 
 ## Expand one field at a time
 
@@ -128,11 +128,11 @@ Use **Show as a table** to get a look behind the scenes. Each time you drill or 
 
 1. In the upper right corner, select **More actions** (...), and then select **Show as a table**.
 
-    ![Screenshot of the menu on the action bar. Show as a table is outlined.](./media/end-user-drill/power-bi-more-actions.png)
+    :::image type="content" source="./media/end-user-drill/power-bi-more-actions.png" alt-text="Screenshot of the menu on the action bar. Show as a table is outlined.":::
 
     The data that makes up the treemap appears below the visual.
 
-    ![Screenshot of bar chart with data table displayed below.](./media/end-user-drill/power-bi-show-table.png)
+    :::image type="content" source="./media/end-user-drill/power-bi-show-table.png" alt-text="Screenshot of bar chart with data table displayed below." lightbox="./media/end-user-drill/power-bi-show-table.png#lightbox":::
 
 2. Select the double arrow icon to drill down all fields at once. Watch the data in the table change to reflect the data that's being used to create the bar chart. The following table shows the results of drilling down all fields at once from the category level to the product level.  
 
