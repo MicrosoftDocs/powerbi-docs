@@ -50,7 +50,7 @@ The **Expanded** layout includes a different set of information. The images belo
 
 This view includes **Favorites + frequents** and **Featured** at the top, with tabs for **Recent**, **Favorites**, **My apps**, and **From external orgs** below. 
 
-:::image type="content" source="media/end-user-home/power-bi-expanded.png" alt-text="Screenshot showing the Power BI service Home of an experienced user with the Expanded toggle selected.":::
+:::image type="content" source="media/end-user-home/power-bi-expanded-view.png" alt-text="Screenshot showing the Power BI service Home of an experienced user with the Expanded toggle selected.":::
 
 ## Locating content from your Home canvas
 
