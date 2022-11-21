@@ -6,7 +6,7 @@ ms.author: rosode
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 01/11/2022
+ms.date: 11/23/2022
 LocalizationGroup: Connect to services
 ---
 
@@ -22,11 +22,19 @@ Accurate carbon accounting requires good information from partners, vendors, and
 ## Prerequisites
 
 To install the Emissions Impact Dashboard for Azure in Power BI and connect it to your data, make sure you have the following: before installing the app.
+
 * A Power BI Pro license. If you don’t have a Power BI Pro license, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
+
 * An admin role with read/write permissions on your Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
-* The Emissions Impact Dashboard for Azure is supported for EA Direct and MCA/MPA (CSP with Azure Plan) accounts.
-    * If you have an EA Direct account, you must be an Enrollment Administrator with either read or write permissions and have your company's [enrollment number](#finding-your-companys-enrollment-number-ea-direct-customers-only).
-    * If you have an MCA/MPA (CSP with Azure Plan) account (that is, you have a direct billing relationship with Microsoft), you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner, and have your company's [billing account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only).
+
+* The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MPA accounts with direct billing relationships with Microsoft.
+
+  > [!IMPORTANT]
+  > Cloud solution providers (CSPs) are supported. Customers who purchase Azure from a CSP aren't supported and must work directly with their CSP partner to learn about their cloud emissions. Legacy accounts aren't supported.
+
+  * If you have an EA Direct account, you must be a Billing Account Administrator (formerly known as an Enrollment Administrator) with either read or write permissions and have your company's billing account ID (formerly known as the [enrollment number](#finding-your-companys-enrollment-number-ea-direct-customers-only)).
+
+  * If you have an MCA or MPA and direct billing relationship with Microsoft, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner and have your company's [billing account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only).
 
 ## Install the app
 
