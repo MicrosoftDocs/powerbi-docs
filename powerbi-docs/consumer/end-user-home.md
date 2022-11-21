@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/16/2022
+ms.date: 11/21/2022
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
@@ -38,7 +38,7 @@ Your Home view will also depend on the layout you've selected. By default, you'l
 - is used frequently by your closest colleagues
 - is Getting started content
 
-The screenshots below show a **Simplified** layout for a new user and then for a more experienced user.
+The screenshots below show an example **Simplified** layout for a new user and then for a more experienced user.
 
 
 :::image type="content" source="media/end-user-home/power-bi-home.png" alt-text="Screenshot of Simplified view for a new user.":::
@@ -48,16 +48,16 @@ The screenshots below show a **Simplified** layout for a new user and then for a
 
 The **Expanded** layout includes a different set of information. The images below are using the *Expanded* view. Once you've selected the **Expanded** toggle, the expanded layout will become your default Home layout. 
 
-:::image type="content" source="media/end-user-home/power-bi-user-home.png" alt-text="Screenshot of Expanded view for a new user.":::
+This view includes **Favorites + frequents** and **Featured** at the top, with tabs for **Recent**, **Favorites**, **My apps**, and **From external orgs** below. 
 
-:::image type="content" source="media/end-user-home/power-bi-expanded-user.png" alt-text="Screenshot showing the Power BI service Home of an experienced user with the Expanded toggle selected.":::
+:::image type="content" source="media/end-user-home/power-bi-expanded-view.png" alt-text="Screenshot showing the Power BI service Home of an experienced user with the Expanded toggle selected.":::
 
 ## Locating content from your Home canvas
 
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they're merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
 
 - The Home canvas displays and organizes your favorite, frequent, recent, and recommended, along with apps and workspaces.  If you're new to the Power BI service, you'll also have Getting started content. Select a card, or an item in a list, to open it.
-- Along the left side, is a navigation pane, referred to as the nav pane. On the nav pane, your same content is organized a little differently. Select **Browse** to see your recent, favorite, and shared content. Select **Data hub** to see data available to you from across your organization. Select **Apps** to see a list of apps available to you. And, select **Knowledge center** to see learning materials, sample reports, training, and more. 
+- Along the left side, is a navigation pane, referred to as the nav pane. On the nav pane, your same content is organized a little differently. Select **Browse** to see your recent, favorite, and shared content. Select **Data hub** to see data available to you from across your organization. Select **Apps** to see a list of apps available to you. And, select **Knowledge/Learning center** to see learning materials, sample reports, training, and more. 
 - At the top, the global search box lets you search for content by title, name, or keyword.
 
 The following topics review each of these options for finding and viewing content.
@@ -67,7 +67,7 @@ On the Home canvas, you can view all the content that you have permission to use
  
 As you work in the Power BI service, you'll receive dashboards, reports, and apps from colleagues, and then Power BI Home will eventually fill in. Over time, it might resemble the following (shown using Expanded layout).
 
-:::image type="content" source="media/end-user-home/power-bi-full-new.png" alt-text="A screenshot of the Welcome screen for the Power BI service.":::
+:::image type="content" source="media/end-user-home/power-bi-full.png" alt-text="A screenshot of the Welcome screen for the Power BI service.":::
 
  
 The next few topics take a closer look at each section of Home. Your Home landing page may look different. Power BI optimizes Home based on your usage and settings and the layout that you've selected.
@@ -92,6 +92,8 @@ The next section is two (or more) tabbed lists.
 - **Recent** is the content you've visited most recently. Notice the timestamp for each item. 
 
 - The **My apps** section lists [apps that have been shared with you](end-user-apps.md) or that you've [downloaded from AppSource](end-user-apps.md); the most recent apps are listed here. 
+
+- **From external orgs** (Preview) lists shared datasets available from other tenants. Use this list to discover and connect to data from external providers.
 
 - In some scenarios, you'll also see a tab for content that you've tagged as [**Favorites**](end-user-favorite.md). 
 
