@@ -19,7 +19,7 @@ Microsoft Power BI service operated by 21Vianet is designed to comply with regul
 
 To accommodate the requirements of regional cloud customers, Power BI operated by 21Vianet plans differ from commercial plans in some respects. We attempt to make features available within 30 days of general availability. However in some cases, underlying dependencies prevent a feature from being available.
 
-The following table lists features of Power BI that aren't yet available in the Power BI operated by 21Vianet environment or that are available with limited functionality. 
+The following table lists features of Power BI that are **not** yet available in the Power BI operated by 21Vianet environment, or that are available with limited functionality. 
 
 |Product area | Feature or scenario | Commercial cloud status | 21Vianet availability | More information |
 |----|----|----|----|----|
