@@ -1,6 +1,6 @@
 ---
 title: Configure scheduled refresh
-description: Covers the steps to select a gateway and configure scheduled refresh.
+description: Learn how to select a gateway connection and configure a scheduled refresh in the Power BI service.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
@@ -30,7 +30,7 @@ To get to the **Schedule refresh** screen:
 
 You'll see different options here depending on whether you have a personal gateway or enterprise gateway online and available.
 
-If no gateway is available, you'll see **Gateway connection** disabled. You also see a message indicating how to install the personal gateway.
+If no gateway is available, you'll see **Gateway connection** disabled. You'll also see a message indicating how to install the personal gateway.
 
 If you have a personal gateway configured and it's online, it's available to select. It shows offline if it's not available.
 
