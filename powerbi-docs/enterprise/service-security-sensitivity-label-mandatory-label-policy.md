@@ -26,7 +26,7 @@ In the Power BI service:
 
 * Users must apply a sensitivity label before they can save new reports, dashboards, or datasets.
 * Users must apply a sensitivity label before they can save changes to the settings or content of existing, unlabeled reports and dashboards.
-* If users try to import data from an unlabeled *.pbix* file, a prompt requires them to select a label before the import continues. The label they select is applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
+* If users try to import data from an unlabeled *.pbix* file, a prompt requires them to select a label before the import can continue. The label they select is applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
 
 In Power BI Desktop:
 
@@ -46,8 +46,8 @@ Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="
 
 Requirements for using PowerShell
 
-* You need the Exchange Online PowerShell (EXO) module to run this command. For more information, see [About the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)
-* A connection to the Purview compliance portal is also required. For more information, see [Connect to Security & Compliance PowerShell using the EXO module](/powershell/exchange/connect-to-scc-powershell)
+* You need the Exchange Online PowerShell (EXO) module to run this command. For more information, see [About the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
+* A connection to the Purview compliance portal is also required. For more information, see [Connect to Security & Compliance PowerShell using the EXO module](/powershell/exchange/connect-to-scc-powershell).
 
 ### Documentation
 
@@ -57,7 +57,7 @@ Requirements for using PowerShell
 
 ## Considerations and limitations
 
-* Mandatory labeling in Power BI covers most common scenarios, but there may be some less common flows that still allow a user to create or edit unlabeled content.
+* Mandatory labeling in Power BI covers most common scenarios, but there can be some less common flows that still allow a user to create or edit unlabeled content.
 * The mandatory label policy setting for Power BI is independent of the mandatory label policy setting for files and email.
 * Mandatory labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to mandatory label policies.
 * Mandatory labeling in Power BI isn't supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). B2B users aren't subject to mandatory label policies.
