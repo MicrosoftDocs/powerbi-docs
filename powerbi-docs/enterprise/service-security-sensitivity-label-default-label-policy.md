@@ -27,7 +27,7 @@ This article describes how to enable a default label policy, both in the [Micros
 
 ## Enabling a default label policy for Power BI
 
-A Microsoft 365 administrator can enable a default label policy for Power BI by selecting the desired label in the **Apply this label by default to Power BI** dropdown menu in the policy settings for Power BI in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/informationprotection). For more information, see [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
+A Microsoft 365 administrator can enable a default label policy for Power BI by selecting the desired label in the **Apply this default label to Power BI content** dropdown menu in the policy settings for Power BI in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/informationprotection). For more information, see [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
 :::image type="content" source="media/service-security-sensitivity-label-default-label-policy/default-labels-config-in-compliance-center.png" alt-text="Screenshot of security and label policy page. Create policy, Power BI, and apply a default label to Power BI content are highlighted.":::
 
