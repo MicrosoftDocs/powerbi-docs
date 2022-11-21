@@ -17,17 +17,17 @@ You can use the powerful [Python programming language](https://www.python.org/) 
 The following sections provide an alphabetical table of which Python packages are supported in Power BI. 
 
 ## Request support for a new Python package
-Supported Python packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an Python package not found in that list, please submit your request to [Power BI Ideas](https://ideas.powerbi.com).
+Supported Python packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of a Python package not found in that list, please submit your request to [Power BI Ideas](https://ideas.powerbi.com).
 
 ## Requirements and Limitations of Python packages
 There are a handful of requirements and limitations for Python packages:
 
 * Current Python runtime: Python 3.7.7.
 * The Power BI service, for the most part, supports Python packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
-* The Power BI service supports packages published in PyPI. The service does not support private or custom Python packages. Users are encouraged to make their private packages available on PyPI prior to requesting the package be available in the Power BI service.
+* The Power BI service supports packages published in PyPI. The service doesn't support private or custom Python packages. Users are encouraged to make their private packages available on PyPI prior to requesting the package be available in the Power BI service.
 * For Python visuals in **Power BI Desktop**, you can install any package, including custom Python packages.
-* For security and privacy reasons, Python packages that provide client-server queries over the World-Wide Web in the service, are not supported. Networking is blocked for such attempts.
-* The approval process for including a new Python package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
+* For security and privacy reasons, Python packages that provide client-server queries over the World-Wide Web in the service, aren't supported. Networking is blocked for such attempts.
+* The approval process for including a new Python package has a tree of dependencies; some dependencies required to be installed in the service can't be supported.
 
 ## Python packages that are supported in Power BI
 The following table shows which packages **are supported** in the Power BI service.
