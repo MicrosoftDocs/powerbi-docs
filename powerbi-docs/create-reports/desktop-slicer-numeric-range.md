@@ -4,16 +4,16 @@ description: Learn how to use a slicer for constraining to numeric ranges in Pow
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
+ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/06/2020
+ms.date: 09/12/2022
 LocalizationGroup: Create reports
 ---
 # Use the numeric range slicer in Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 With the numeric range slicer, you can apply all sorts of filters to any numeric column in your data model. There are three options for filtering your numeric data: between numbers, less than or equal to a number, or greater than or equal to a number. This simple technique is a powerful way to filter your data.
 
@@ -23,21 +23,23 @@ With the numeric range slicer, you can apply all sorts of filters to any numeric
 
 In this video, Will walks through creating a numeric range slicer.
 
-> [!NOTE]
-> This video uses an older version of Power BI Desktop.
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
 ## Add a numeric range slicer
 
 You can use the numeric range slicer like you would use any other slicer. Just create a **Slicer** visual for your report, and then select a numeric value for the **Field** value. In the following image, we selected the **LineTotal** field.
 
-![Create a numeric range slicer](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
+![Screenshot shows how to create a numeric range slicer in Power B I Desktop.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-create.png)
 
 Select the down-arrow in the upper-right corner of the numeric range slicer and a menu appears.
 
 ![Numeric range slicer menu](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
+
+> [!NOTE]  
+> If you don't see the down arrow, open the **Format** pane for the slicer and set the **Slicer header** to **On**.
 
 For the numeric range, you can select from the following three options:
 
@@ -71,10 +73,11 @@ You could, for example, have a long date format for the underlying data type. In
 
 Displaying the Short Date format in the slicer ensures the length of the string stays consistent and compact within the slicer.
 
-## Limitations and considerations
+## Considerations and limitations
 
-The following limitations and considerations apply to the numeric range slicer:
+The following considerations and limitations apply to the numeric range slicer:
 
 * The numeric range slicer filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on the sales amount, not the sum of the sales amount for each data point of a visual.
 * It doesn't currently work with measures.
 * You can type any number into a numeric slicer, even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
+* The date range slicer allows for any date values even if they do not exist in the underlying date column.

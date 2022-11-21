@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/19/2020
+ms.date: 06/02/2021
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service

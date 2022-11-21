@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Power BI mobile apps documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information for using the Power BI mobile apps.
 
 metadata:
   title: Power BI mobile apps documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information for using the Power BI mobile apps.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: powerbi-mobile
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT
@@ -41,7 +41,7 @@ landingContent:
             url: mobile-android-app-get-started.md
           - text: iOS get started
             url: mobile-iphone-app-get-started.md
-          - text: Windows 10 get started
+          - text: Windows get started
             url: mobile-windows-10-phone-app-get-started.md
       - linkListType: quickstart
         links:
@@ -62,7 +62,7 @@ landingContent:
           - text: Share a dashboard or report
             url: mobile-share-dashboard-from-the-mobile-apps.md
           - text: Optimize reports for the mobile apps
-            url: ../../create-reports/desktop-create-phone-report.md
+            url: ../../create-reports/power-bi-create-mobile-optimized-report-about.md
 
   # Card (optional)
   - title: On-premises reports

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/14/2020
+ms.date: 10/04/2021
 ---
 
 # Create a template app in Power BI
 
 Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions for creating a Power BI template app.
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource or your own web service. If you're distributing your template app through your own web service, you can even [automate part of the installation process](../developer/template-apps/template-apps-auto-install.md) to make things easier for your customers.
+If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource or your own web service. If you're distributing your template app through your own web service, you can even [automate part of the installation process](template-apps-auto-install.md) to make things easier for your customers.
 
 Power BI admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
@@ -25,11 +25,11 @@ Here are the requirements for building a template app:
 - A [Power BI pro license](../fundamentals/service-self-service-signup-for-power-bi.md)
 - An [installation of Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) (optional)
 - Familiarity with the [basic concepts of Power BI](../fundamentals/service-basic-concepts.md)
-- Permissions to share a template app publicly (for more information, see Power BI [admin portal, Template app settings](../admin/service-admin-portal.md#template-apps-settings)
+- Permissions to share a template app publicly (for more information, see Power BI [admin portal, Template app settings](../admin/service-admin-portal-template-app.md)
 
 ## Create the template workspace
 
-To create a template app you can distribute to other Power BI tenants, you need to create it in one of the new workspaces.
+To create a template app you can distribute to other Power BI tenants, you need to create it in a workspace.
 
 1. In the Power BI service, select **Workspaces** > **Create a workspace**.
 
@@ -37,11 +37,16 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 2. In **Create a workspace**, enter a name, description (optional), and logo image (optional) for your workspace.
 
-    ![Try new workspaces](media/service-template-apps-create/power-bi-upgrade-new.png)
+    ![Screenshot showing the Create a workspace dialog box.](media/service-template-apps-create/power-bi-upgrade-new.png)
 
 4. Expand the **Advanced** section and select **Develop a template app**.
 
     ![Develop a template app](media/service-template-apps-create/power-bi-template-app-develop.png)
+
+    >[!Important]
+    > App builder workspace settings do not affect the workspaces where app installers install the app, which means that an app developed in a premium capacity workspace will not be automatically be installed on a premium capacity workspace. It is therefore **not** recommended to use premium capacity for the builder workspace, as installer workspaces may not be premium capacity, and functionality that relies on premium capacity will not work unless the installer manually moves the installed workspace to premium capacity.
+    >
+    > Do not select Large dataset storage format. This format is not supported for template apps.
 
 5. Select **Save**.
 >[!NOTE]
@@ -78,7 +83,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Navigation**
 
-    Activate the **New navigation builder**, where you can define the nav pane of the app (See [Design the navigation experience](../collaborate-share/service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
+    In the navigation builder, you define the nav pane of the app (See [Add content to the app](../collaborate-share/service-create-distribute-apps.md#add-content-to-the-app)).
 
    ![Set app landing page](media/service-template-apps-create/power-bi-install-app-content.png)
     
@@ -91,7 +96,13 @@ Now that you have content in your workspace, you're ready to package it in a tem
     ![Control](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >Exporting to .pbix format is always blocked for users installing the app.
+    >If you want to protect your data, disable the **Download the report to file** option and then configure the other two options as desired.
+    >
+    >Why:
+    >
+    > The view, edit, and export controls on this tab apply only to the Power BI service. Once you download the .pbix file, it is no longer in the service. It puts a copy of your data, unprotected, in a location chosen by the user. You then no longer have any control over what the user can do with it.
+    >
+    > If you want to limit access to your queries and measures while still allowing your users to add their own data sources, consider checking only the **Export or externally connect to data** options. This enables users to add their own data sources without being able to edit your dataset. [Learn more](../transform-model/desktop-composite-models.md)
 
     **Parameters**
 
@@ -182,7 +193,7 @@ Let's go through the stages:
     >[!NOTE]
     > When the app is promoted it becomes publicly available outside your organization.
 
-    If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](../admin/service-admin-portal.md#template-apps-settings) in the admin portal.
+    If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](../admin/service-admin-portal-template-app.md) in the admin portal.
 11. Select **Promote** to confirm your choice.
 12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Partner center offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Submit only pre-production links to the Partner center. Only after the app is approved and you get notification that it is published in AppSource, can you promote this package to production in Power BI.
 13. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
@@ -196,7 +207,7 @@ To make your app widely available to thousands of Power BI users in the world, w
 
 ## Automate parameter configuration during installation
 
-If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](../developer/template-apps/template-apps-auto-install.md) for details.
+If you are an ISV and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This makes things easier for your customers and increases the likelihood of a successful installation because they don't have to supply details that they might not know. See [Automated configuration of a template app installation](template-apps-auto-install.md) for details.
 
 ## Next steps
 

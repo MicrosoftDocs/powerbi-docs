@@ -26,7 +26,7 @@ The following table describes differences between an on-premises data gateway an
 
 |   |On-premises data gateway | On-premises data gateway (personal mode) |
 | ---- | ---- | ---- |
-|**Cloud services supported** |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
+|**Cloud services supported** |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows | None |
 |**Runs** |As configured by users who have access to the gateway |As you for Windows authentication and as configured by you for other authentication types |
 |**Can install only as computer admin** |Yes |No |
 |**Centralized gateway and data source management** |Yes |No |
@@ -56,7 +56,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whi
 
    `%localappdata%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config`
 
-2. At the bottom of the file, add the following text:
+2. At the bottom of the file, before `</Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.GatewayCoreSettings>` add the following text:
 
     ```xml
     <setting name="EnableFastCombine" serializeAs="String">

@@ -3,11 +3,11 @@ title: Access Power BI featured tables in Excel
 description: In Excel, you can find data from featured tables in Power BI datasets in the Organization Data Types Gallery. 
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: lukaszp
+ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/07/2020
+ms.date: 12/10/2021
 LocalizationGroup: Share your work
 ---
 # Access Power BI featured tables in Excel organization data types
@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 Do you create datasets in Power BI? Read about [setting featured tables in Power BI Desktop](service-create-excel-featured-tables.md).
 
 > [!NOTE]
-> In Excel, you can also analyze data from any Power BI dataset that you can access in Power BI. See [Other ways to access Power BI datasets from Excel](service-analyze-in-excel.md#other-ways-to-access-power-bi-datasets-from-excel) in the "Analyze in Excel for Power BI" article for details.
+> In Excel, you can also [analyze data from any Power BI dataset](service-connect-excel-power-bi-datasets.md) that you can access in Power BI.
 > 
 
 ## The Excel Data Types Gallery
@@ -114,7 +114,7 @@ You can also refresh individual cells. Right-click the cell and select **Data Ty
 
 ## Licensing
 
-The Excel Data Types Gallery and connected experiences to Power BI featured tables is available for Excel subscribers with a Power BI Pro service plan.. 
+The Excel Data Types Gallery and connected experiences to Power BI featured tables is available for Excel subscribers with a Power BI Pro service plan.
 
 ## Security
 
@@ -124,7 +124,7 @@ Excel caches the data returned for the entire row. Anyone you share the Excel fi
 
 ## Administrative control
 
-Power BI admins can control who in the organization can use featured tables in the Excel Data Types Gallery. See [Allow connections to featured tables](../admin/service-admin-portal.md#allow-connections-to-featured-tables) in the Admin portal article for details. 
+Power BI admins can control who in the organization can use featured tables in the Excel Data Types Gallery. See [Allow connections to featured tables](../admin/service-admin-portal-export-sharing.md#allow-connections-to-featured-tables) in the Admin portal article for details. 
  
 ### Auditing
 
@@ -150,7 +150,7 @@ Here are the current limitations:
     - Measures defined on related tables.
     - Implicit measures calculated from relationships.
 
-- Excel only displays featured tables (*data types*) that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces  aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
+- When using Power BI featured tables in Excel, your Power BI data may be processed in a region or geography that is different than where your Power BI tenant data is stored at rest.
 
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 

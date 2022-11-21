@@ -7,10 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/02/2020
+ms.date: 09/12/2021
 LocalizationGroup: Create reports
 ---
 # Use dashboard themes in the Power BI service
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
 With **dashboard themes** you can apply a color theme to your entire dashboard, such as corporate colors, seasonal coloring, or any other color theme you might want to apply. When you apply a dashboard theme, all visuals on your dashboard use the colors from your selected theme. A few exceptions apply, described in the [Considerations and limitations](#considerations-and-limitations) section of this article.
 
 ![Screenshot of example dashboard with theme background image.](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
@@ -100,7 +103,7 @@ The JSON file for dashboard theming includes:
 
 - name: The theme name (only required field).
 - foreground and background: Colors for the dashboard.
-- dataColors: A list of hexcode to use for data in charts. You can include as few or as many colors as you want.
+- dataColors: A list of hex code to use for data in charts. You can include as few or as many colors as you want.
 - tiles: Background and color configurations for dashboards.
 - visualStyles: Granular formatting for visuals.
 

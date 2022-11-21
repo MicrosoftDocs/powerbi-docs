@@ -7,41 +7,42 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/05/2019
+ms.date: 06/03/2022
 LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
 
-The IT Spend Analysis sample content pack contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
+The IT Spend Analysis built-in sample contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 ![Dashboard for the IT Spend Analysis sample](media/sample-it-spend/it1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial explores the IT Spend Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
+This tutorial explores the IT Spend Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
 ## Get the sample
 
- Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+ Before you can use the sample, you must first [download it in the service](#get-the-built-in-sample), or as a [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-### Get the content pack for this sample
+### Get the built-in sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
 
-   If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the bottom-left corner, select **Get Data**.
+2. In the bottom-left corner, select **Get data**.
    
-   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+
 3. On the **Get Data** page that appears, select **Samples**.
    
 4. Select **IT Spend Analysis Sample**, then choose **Connect**.  
   
    ![Connect to sample](media/sample-it-spend/it-connect.png)
    
-5. Power BI imports the content pack and then adds a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
    
    ![IT Spend Analysis Sample entry](media/sample-it-spend/it-spend-analysis-sample-entry.png)
   
@@ -51,7 +52,7 @@ Alternatively, you can download the IT Spend Analysis sample as a [.pbix file](h
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529783). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
+If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
 ## IT Spend Analysis Sample dashboard
 The two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give us an overview of how well we're doing against the plan and against the latest quarterly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let's explore the cause of this variance: when, where, and in which category.
@@ -71,11 +72,12 @@ However, just looking at this chart and drawing conclusions can be misleading. W
     Next, let's explore which category in the USA is causing the variance.
 
 ## Ask questions of the data
-1. Select **IT Spend Analysis Sample** in the top nav pane to return to the sample dashboard.
-2. Select **Ask a question about your data**.
-3. From the **Questions to get you started** list on the left side, select **what is the plan by IT area**.
+2. In the dashboard, select **Ask a question about your data**.
+3. From the **Try one of these to get started** list on the left side, select **top cost element groups by plan**.
 
-   ![Plan by IT Area chart](media/sample-it-spend/it-area-chart.png)
+   ![Screenshot that shows selecting Top cost element groups by plan.](media/sample-it-spend/it-area-chart.png)
+   
+   ![Screenshot that shows the results of selecting Top cost element groups by plan.](media/sample-it-spend/question-results.png)
 
 4. In the Q&A box, clear the previous entry and enter *show IT areas, var plan % and var le3 % bar chart*.
 
@@ -102,18 +104,18 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
 ## Plan Variance Analysis page
 
-1. Select the **Plan Variance Analysis** tab on the bottom of the page.
+1. Select the **Plan Variance Analysis** page.
 
 2. In the **Var Plan and Var Plan % by Business Area** chart on the left, select the **Infrastructure** column to highlight infrastructure business area values in the rest of the page.
 
     ![Plan Variance Analysis page](media/sample-it-spend/it7.png)
 
-   Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country, as compared to all other business areas. 
+   Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country or region, as compared to all other business areas. 
 
 3. Use the **IT Area** and **IT Sub Area** slicers on the right to filter the values in the rest of the page and to explore the data. 
 
 ## Edit the report
-Select **Edit Report** in the upper-left corner to explore in Editing view:
+Select **Edit** in the black **Power BI** header bar to explore in Editing view:
 
 * See how the pages are made, the fields in each chart, and the filters on the pages.
 * Add pages and charts, based on the same data.
@@ -121,6 +123,6 @@ Select **Edit Report** in the upper-left corner to explore in Editing view:
 * Pin charts of interest to your dashboard.
 
 ## Next steps: Connect to your data
-This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get data** for a new copy of this sample.
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).

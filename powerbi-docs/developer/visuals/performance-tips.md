@@ -1,52 +1,55 @@
 ---
-title: Performance Tips
-description: How to build a high performance Power BI visual
-author: KesemSharabi
-ms.author: kesharab
+title: Performance tips for creating quality Power BI custom visuals
+description: How to build a high performance Power BI custom visual.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/20/2020
+ms.date: 02/20/2022
 ---
-# How to build a high performance Power BI visual
-This article will cover techniques on how a developer can achieve high performance when rendering visuals. 
+# Performance tips for creating quality Power BI custom visuals
 
-No one wants a visual to take its time when rendering and squeezing every drop of performance you can out of code becomes critical when rendering. 
+This article will cover techniques on how a developer can achieve high performance when rendering their custom visuals.
+
+No one wants a visual to take its time when rendering. Getting the visual to render as quickly as possible becomes critical when writing the code.
 
 > [!NOTE]
-> As we continue to improve and enhance the platform, new versions of the API are constantly being released. In order to get the most out of the Power BI visuals' platform and feature set, it's recommended you keep up-to-date with the most recent version.
->
-> Since the latest **version 2.1**, Power BI visual load times have improved on average by 20%.
+> As we continue to improve and enhance the platform, new versions of the API are constantly being released. In order to get the most out of the Power BI visuals' platform and feature set, we recommend that you keep up-to-date with the most recent version. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
-## Power BI visual performance tips
-Here are some recommendations on how to achieve optimal visual performance. 
+Here are some recommendations for achieving optimal performance for your custom visual.
 
-### Use User Timing API
+## Use the User Timing API
+
 Using the **User Timing API** to measure your app's JavaScript performance can help you decide which parts of the script need optimization.
 
 For more information, see the [User Timing API](https://msdn.microsoft.com/library/hh772738(v=vs.85).aspx).
 
-### Review animation loops
-Does the animation loop redraw unchanged elements? 
+## Review animation loops
 
- - Problem: It wastes time to draw elements that don’t change from frame-to-frame.
+Does the animation loop redraw unchanged elements?
 
- - Solution: Update frames selectively. 
- 
-When the time comes to animate static visualizations, it’s tempting to lump draw code into one update function and repeatedly call it with new data for each iteration of the animation loop.
+ If so, it wastes time drawing elements that don’t change from frame-to-frame.
 
-Instead consider the following update pattern, use a visual constructor method to draw everything static, then the update function only needs to draw visualization elements that change. 
+Solution: Update the frames selectively.
+
+When you're animating static visualizations, it’s tempting to lump all the draw code into one update function and repeatedly call it with new data for each iteration of the animation loop.
+
+Instead consider using a visual constructor method to draw everything static. Then the update function only needs to draw visualization elements that change.
 
    > [!TIP]
    > Inefficient animation loops are commonly found in axes and legends.
 
-### Cache DOM Nodes 
-When a node or list of nodes is retrieved from the DOM, you need to think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete additional nodes in the relevant area, caching them can improve your application's overall efficiency.
+## Cache DOM nodes
 
-To make sure that your code is fast and doesn’t slow down the browser, keep DOM access to a minimum. 
+When a node or list of nodes is retrieved from the DOM, think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete more nodes in the relevant area, caching them can improve your application's overall efficiency.
 
-- Before: 
+To make sure that your code is fast and doesn’t slow down the browser, keep DOM access to a minimum.
+
+### Cache DOM nodes example
+
+**Instead of**:
 
    ```javascript
    public update(options: VisualUpdateOptions) { 
@@ -54,7 +57,7 @@ To make sure that your code is fast and doesn’t slow down the browser, keep DO
    }
    ```
 
-- After: 
+**Try**:
 
    ```javascript
    public constructor(options: VisualConstructorOptions) { 
@@ -67,10 +70,13 @@ To make sure that your code is fast and doesn’t slow down the browser, keep DO
    }
    ```
 
-### Avoid DOM manipulation 
-Limit DOM manipulation as much as possible.  Insert operations like `prepend()`, `append()`, and `after()` are time-consuming and shouldn't be used unless necessary.
+## Avoid DOM manipulation
 
-For instance:
+Limit DOM manipulation as much as possible.  *Insert operations* like `prepend()`, `append()`, and `after()` are time-consuming and shouldn't be used unless necessary.
+
+### DOM manipulation example
+
+**Instead of:**
 
   ```javascript
   for (let i=0; i<1000; i++) { 
@@ -78,7 +84,9 @@ For instance:
   }
   ```
 
-The above example could be quickened using `html()` and building the list beforehand: 
+**Try:**
+
+Make the above example faster by using `html()` and building the list beforehand:
 
   ```javascript
   let list = ''; 
@@ -89,22 +97,25 @@ The above example could be quickened using `html()` and building the list before
   $('#list').html(list); 
   ```
 
-### Reconsider JQuery
+## Reconsider JQuery
 
-Limiting your JS frameworks and using native JS whenever possible can increase the available bandwidth and lower your processing overhead. This can also limit compatibility issues with older browsers. 
+Limit your JS frameworks and use native JS whenever possible to increase the available bandwidth and lower your processing overhead. Doing this might also decrease compatibility issues with older browsers.
 
-For more information, see [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for alternative examples to functions such as JQuery's `show`, `hide`, `addClass`, and more.  
+For more information, see [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for alternative examples for functions such as JQuery's `show`, `hide`, `addClass`, and more.  
 
-### Use canvas or WebGL 
-For repeated use of animations consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content. 
+## Use canvas or WebGL
 
-You can read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)). 
+For repeated use of animations, consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
 
-### Use requestAnimationFrame instead of setTimeout 
+You can read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)).
+
+## Use requestAnimationFrame instead of setTimeout
+
 If you use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, your animation functions are called **before** the browser calls another repaint.
 
 For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
 
 ## Next steps
 
-Learn more about optimization techniques in the [Optimization guide for Power BI](../../guidance/power-bi-optimization.md).
+>[!div class="nextstepaction"]
+>[Optimization guide for Power BI](../../guidance/power-bi-optimization.md)

@@ -7,10 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 05/28/2021
 LocalizationGroup: Create reports
 ---
 # Publish datasets and reports from Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 When you publish a Power BI Desktop file to the Power BI service, you publish the data in the model to your Power BI workspace. The same is true for any reports you created in **Report** view. You’ll see a new dataset with the same name, and any reports in your Workspace navigator.
 
 Publishing from Power BI Desktop has the same effect as using **Get Data** in Power BI to connect to and upload a Power BI Desktop file.
@@ -19,13 +22,13 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 > Any changes you make to the report in Power BI won't be saved back to the original Power BI Desktop file. This includes when you add, delete, or change visualizations in reports.
 
 ## To publish a Power BI Desktop dataset and reports
-1. In Power BI Desktop, choose **File** \> **Publish** \> **Publish to Power BI** or select **Publish** on the ribbon.  
+1. In Power BI Desktop, choose **File** \> **Publish** \> **Publish to Power BI** or select **Publish** on the **Home** ribbon.  
 
    ![Publish button](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
 
 2. Sign in to Power BI, if you aren't already signed in.
-3. Select the destination. Beginning with the September 2020 release, you can search your list of available workspaces to find the workspace into which you want to publish. The search box lets you filter your workspaces. Select the workspace, and then click the **Select** button to publish.
+3. Select the destination. You can search your list of available workspaces to find the workspace into which you want to publish. The search box lets you filter your workspaces. Select the workspace, and then click the **Select** button to publish.
 
    ![Select publish destination](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
 
@@ -45,7 +48,12 @@ This process is straightforward, but there are a few things you should know:
 * When you republish a dataset published from Power BI Desktop and have a refresh schedule defined, a dataset refresh is started as soon as you republish.
 * When you make a change to a dataset and then republish it, a message shows you how many workspaces, reports, and dashboards are potentially impacted by the change, and asks you to confirm that you want to replace the currently published dataset with the one you modified. The message also provides a link to the full dataset impact analysis in the Power BI service, where you can see more information and take action to mitigate the risks of your change.
 
-   ![Warning about impact of republishing a dataset](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
+   ![Warning about impact of republishing a dataset.](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
+
+* If the dataset (and report, if one exists)  in the Power BI service that you're overwriting have sensitivity labels that differ from the label that is applied to your *.pbix* file, a dialog will prompt you to choose whether to keep those labels or to overwrite them with the label coming from your *.pbix* file.
+
+    ![Screenshot of dialog for choosing to keep or overwrite sensitivity labels in service.](media/desktop-upload-desktop-files/pbid-dataset-overwrite-labels-desktop-dialog.png)
+
 
    [Learn more about Dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md).
 

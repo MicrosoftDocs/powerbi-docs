@@ -5,35 +5,35 @@ author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: pbi-explore
+ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 09/13/2021
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-You can ask Power BI to look through your data and find interesting trends and patterns. These trends and patterns are presented in the form of visuals that are called *Insights*. 
+You can ask Power BI to look through your data and find interesting trends and patterns. These trends and patterns are presented in the form of visuals that are called *Insights*. Insights are available for visuals on dashboards, visuals in reports, and entire report pages. 
 
 To learn how to use Insights, see [Power BI Insights](end-user-insights.md)
 
 ![a set of Insights](media/end-user-insight-types/power-bi-insight-line.png)
 
 ## How does Insights work?
-Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. Power BI *business users* can run Insights on dashboard tiles.
+Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. You can run Insights on dashboard tiles, report visuals, and report pages.
 
 ## Some terminology
 Power BI uses statistical algorithms to uncover  Insights. The algorithms are listed and described in the next section of this article. Before we get to the algorithms, here are definitions for some terms that may be unfamiliar. 
 
 * **Measure** - a measure is a quantitative (numeric) field that can be used to do calculations. Common calculations are sum, average, and minimum. For example, if our company makes and sells skateboards, our measures might be number of skateboards sold and average profit per year.  
-* **Dimension** - dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.   
+* **Dimension** - dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.   
 * **Correlation** - a correlation tells us how the behavior of things are related.  If their patterns of increase and decrease are similar, then they are positively correlated. And if their patterns are opposite, then they are negatively correlated. For example, if sales of our red skateboard increase each time we run a tv marketing campaign, then sales of the red skateboard and the tv campaign are positively correlated.
 * **Time series** - a time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.  
 * **Continuous variable** - a continuous variable can be any value between its minimum and maximum limits, otherwise it is a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.  
 
 ## What types of insights can you find?
-These are the algorithms that Power BI uses. 
+Power BI can find ten types of insights for dashboard tiles and these ten are described below.  For reports, Power BI proactively  performs analyses for anomalies, trends, and KPIs. 
 
 ### Category outliers (top/bottom)
 Highlights cases where one or two categories have much larger values than other categories.  

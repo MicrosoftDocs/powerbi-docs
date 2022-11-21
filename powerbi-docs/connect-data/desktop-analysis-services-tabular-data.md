@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/28/2020
+ms.date: 04/19/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to Analysis Services tabular data in Power BI Desktop
@@ -26,7 +26,7 @@ When you’ve created dynamic reports in Power BI Desktop, you can share them by
 **Select items and import into Power BI Desktop**: When you connect with this option, you can select items like tables, columns, and measures in your tabular model or perspective and load them into a Power BI Desktop model. Use Power BI Desktop’s Power Query Editor to further shape what you want and its modeling features to further model the data. Because no live connection between Power BI Desktop and the tabular model is maintained, you can then explore your Power BI Desktop model offline or publish to your Power BI site.
 
 ## To connect to a tabular model
-1. In Power BI Desktop, on the **Home** tab, select **Get Data** > **More** > **Database**.
+1. In Power BI Desktop, on the **Home** ribbon, select **Get Data** > **More** > **Database**.
    
 1. Select **SQL Server Analysis Services database**, and then select **Connect**.
    
@@ -39,7 +39,7 @@ When you’ve created dynamic reports in Power BI Desktop, you can share them by
    - If you’re connecting live, select a tabular model or perspective.
   
       ![Select Navigator tabular model or perspective](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
-   - If you chose to select items and get data, select a tabular model or perspective, and then select a particular table or column to load. To shape your data before loading, select **Edit Queries** to open Power Query Editor. When you’re ready, select **Load** to import the data into Power BI Desktop.
+   - If you chose to select items and get data, select a tabular model or perspective, and then select a particular table or column to load. To shape your data before loading, select **Transform data** to open Power Query Editor. When you’re ready, select **Load** to import the data into Power BI Desktop.
 
       ![Select Navigator table or column to load](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
@@ -82,7 +82,7 @@ After you create a Power BI Desktop file with an explore live connection, there 
 
 To change the server name:
 
-1. Select **Edit Queries** from the **Home** tab.
+1. Select **Transform data > Data source settings** from the **Home** tab.
 
 2. In the **SQL Server Analysis Services database** window, enter the new **Server** name, and then select **OK**.
 

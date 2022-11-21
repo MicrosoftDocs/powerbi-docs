@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: tutorial
-ms.date: 11/08/2019
+ms.date: 08/25/2021
 LocalizationGroup: Learn more
 ---
 # Tutorial: Create your own measures in Power BI Desktop
@@ -15,9 +15,9 @@ By using measures, you can create some of the most powerful data analysis soluti
 
 ## Prerequisites
 
-- This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Query Editor to import data, work with multiple related tables, and add fields to the report canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md).
+- This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Power Query Editor to import data, work with multiple related tables, and add fields to the report canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md).
   
-- This tutorial uses the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company, Contoso. Because this data is imported from a database, you can't connect to the datasource or view it in Query Editor. Download and extract the file on your computer.
+- This tutorial uses the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company, Contoso. Because this data is imported from a database, you can't connect to the datasource or view it in Power Query Editor. Download and extract the file on your computer.
 
 ## Automatic measures
 
@@ -37,7 +37,7 @@ To change the chart aggregation, follow these steps:
 
 1. Select the **SalesAmount** visualization in the report canvas.  
 
-1. In the **Value** area of the **Visualizations** pane, select the down arrow to the right of **SalesAmount**. 
+1. In the **Values** area of the **Visualizations** pane, select the down arrow to the right of **SalesAmount**. 
 
 1. From the menu that appears, select **Average**. 
 
@@ -47,9 +47,9 @@ To change the chart aggregation, follow these steps:
 
 Depending on the result you want, you can change the type of aggregation. However, not all types of aggregation apply to every numeric datatype. For example, for the **SalesAmount** field, Sum and Average are useful, and Minimum and Maximum have their place as well. However, Count doesn't make sense for the **SalesAmount** field, because while its values are numeric, they’re really currency.
 
-Values calculated from measures change in response to your interactions with your report. For example, if you drag the **RegionCountryName** field from the **Geography** table onto your existing **SalesAmount** chart, it changes to show the average sales amounts for each country.
+Values calculated from measures change in response to your interactions with your report. For example, if you drag the **RegionCountryName** field from the **Geography** table onto your existing **SalesAmount** chart, it changes to show the average sales amounts for each country or region.
 
-![SaleAmount by Country](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
+![SaleAmount by Country or Region](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
 
 When the result of a measure changes because of an interaction with your report, you've affected your measure’s *context*. Every time you interact with your report visualizations, you're changing the context in which a measure calculates and displays its results.
 
@@ -63,7 +63,7 @@ When you create your own measure, it's called a *model* measure, and it's added 
 
 ### Quick measures
 
-Starting with the February 2018 release of Power BI Desktop, many common calculations are available as *quick measures*, which write the DAX formulas for you based on your inputs in a window. These quick, powerful calculations are also great for learning DAX or seeding your own customized measures. 
+Many common calculations are available as *quick measures*, which write the DAX formulas for you based on your inputs in a window. These quick, powerful calculations are also great for learning DAX or seeding your own customized measures. 
 
 Create a quick measure using one of these methods: 
  - From a table in the **Fields** pane, right-click or select **More options** (**...**), and then select **New quick measure** from the list.
@@ -149,17 +149,17 @@ To create a measure, follow these steps:
 ### Use your measure in the report
 Add your new **Net Sales** measure to the report canvas, and calculate net sales for whatever other fields you add to the report. 
 
-To look at net sales by country:
+To look at net sales by country or region:
 
 1. Select the **Net Sales** measure from the **Sales** table, or drag it onto the report canvas.
     
 1. Select the **RegionCountryName** field from the **Geography** table, or drag it onto the **Net Sales** chart.
     
-    ![Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
+    ![Net Sales by Country or Region](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
     
 1. To see the difference between net sales and total sales by country, select the **SalesAmount** field or drag it onto the chart. 
 
-    ![Sales Amount and Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
+    ![Sales Amount and Net Sales by Country or Region](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
     The chart now uses two measures: **SalesAmount**, which Power BI summed automatically, and the **Net Sales** measure, which you manually created. Each measure was calculated in the context of another field, **RegionCountryName**.
     

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/15/2020
+ms.date: 05/14/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to SSAS multidimensional models in Power BI Desktop
 
 With Power BI Desktop, you can access *SSAS multidimensional models*, commonly referred to as *SSAS MD*.
 
-To connect to an SSAS MD database, select **Get Data**, choose **Database** > **SQL Server Analysis Services database**, and then select **Connect**:
+To connect to an SSAS MD database, select **Get data**, choose **Database** > **SQL Server Analysis Services database**, and then select **Connect**:
 
 ![SQL Server Analysis Services (SSAS) database, Get Data dialog box, Power BI Desktop](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
@@ -49,7 +49,7 @@ To help simplify complex models in a multidimensional model, you can define a se
 
 ### Dimension attribute type
 
-Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *Country*, and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to the element in the **Field** pane in Power BI.
+Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *CountryRegion*, and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to the element in the **Field** pane in Power BI.
 
 Power BI can also render images when you provide a field that contains URLs (uniform resource locators) of the images. You may specify these fields as *ImageURL* types in SQL Server Data Tools (or then in Power BI). Its type information is then provided to Power BI in the tabular metadata. Power BI can then retrieve those images from the URL and display them in visuals.
 
@@ -92,7 +92,7 @@ There are certain limitations to using SSAS MD:
 
 ## Supported features of SSAS MD in Power BI Desktop
 
-Consumption of the following elements is supported in this release of SSAS MD. For more information about these features, see [Understanding power view for multidimensional models](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014).
+Consumption of the following elements is supported in this release of SSAS MD. For more information about these features, see [Understanding power view for multidimensional models](/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models).
 
 * Default members
 * Dimension attributes

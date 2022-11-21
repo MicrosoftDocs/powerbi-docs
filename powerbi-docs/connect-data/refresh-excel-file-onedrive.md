@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/06/2019
+ms.date: 06/03/2022
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
@@ -18,18 +18,18 @@ You can import Excel workbooks that are stored on your local machine, or in clou
 
 Importing files from OneDrive, or SharePoint Online, is a great way to make sure the work you’re doing in Excel stays in-sync with the Power BI service. Any data you’ve loaded into your file’s model is imported into the dataset, and any reports you’ve created in the file are loaded into Reports in Power BI. If you make changes to your file on OneDrive, or SharePoint Online, like add new measures, change column names, or edit visualizations, once you save, those changes are updated in Power BI too, usually within about an hour.
 
-When you import an Excel workbook from your personal OneDrive, any data in the workbook, like tables in worksheets and/or data that are loaded into the Excel data model and the structure of the data model, are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive, or SharePoint Online, about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in the Power BI service.
+When you import an Excel workbook from your personal OneDrive, any data in the workbook, like tables in worksheets and/or data that are loaded into the Excel data model and the structure of the data model, are imported into a new dataset in Power BI. Power BI automatically connects to the workbook on OneDrive, or SharePoint Online, about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in the Power BI service.
 
 You can refresh the dataset in the Power BI service. When you manually refresh, or schedule refresh, on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive, or SharePoint Online. 
 
 ## What’s supported?
 
-In Power BI, **Refresh Now** and **Schedule Refresh** are supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+In Power BI, **Refresh Now** and **Schedule Refresh** are supported for datasets created from Power BI Desktop files imported from a local drive where Get data/Power Query Editor is used to connect to and load data from any of the following data sources:  
 
 ### Power BI Gateway - Personal
 
-* All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
-* All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+* All online data sources shown in Power BI Desktop’s Get data and Power Query Editor.
+* All on-premises data sources shown in Power BI Desktop’s Get data and Power Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]

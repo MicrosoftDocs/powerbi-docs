@@ -5,9 +5,9 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 09/29/2022
 LocalizationGroup: Conceptual
 ---
 
@@ -91,7 +91,7 @@ Apps also have a unique feature that allows app authors to install the applicati
 
 As Contoso continues to work with its subcontractors or suppliers, the external Engineers need to work closely with Contoso's analysts. Power BI provides several collaboration features that help users communicate about content they can consume. Dashboard commenting (and soon Report commenting) allows users to discuss data points they see and communicate with report authors to ask questions.
 
-Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users cannot be @mentioned and do not receive notifications that they've received a comment. Guest users cannot use the subscriptions feature within Power BI at the time of writing. In an upcoming release, those restrictions will be lifted and the Guest user will receive an email when a comment @mentions them, or when a subscription is delivered to their email that contains a link to the content in Power BI.
+Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users cannot be @mentioned and do not receive notifications that they've received a comment. In an upcoming release, those restrictions will be lifted and the Guest user will receive an email when a comment @mentions them. Guest users can use the subscriptions feature within Power BI to subscribe themselves to a report or dashboard. Learn more in Email subscriptions for reports and dashboards in the Power BI service.  
 
 ### Access content in the Power BI mobile apps
 
@@ -239,7 +239,7 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     In this approach, Contoso invites the guest users to its Azure AD ahead of time and then distributes Power BI content to them. Contoso can invite guest users from the Azure portal or using PowerShell. Here are the steps to invite guest users from the Azure portal:
 
-    - Contoso's Azure AD administrator navigates to **Azure portal > Azure Active Directory > Users and groups > All users > New guest user**
+    - Contoso's Azure AD administrator navigates to **Azure portal** > **Azure Active Directory** > **Users** > **All users** > **New guest user**
 
     ![Guest user](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_15.png)
 
@@ -331,7 +331,7 @@ It is important to recognize that the Azure AD account will be used or created i
 Contoso can choose one of three approaches to license guest users from its suppliers and partner organizations to have access to Power BI content.
 
 > [!NOTE]
-> _The Azure AD B2B's free tier is enough to use Power BI with Azure AD B2B. Some advanced Azure AD B2B features like dynamic groups require additional licensing. Please refer to the Azure AD B2B documentation for additional information:_ [_https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](/azure/active-directory/b2b/licensing-guidance)
+> The Azure AD B2B's free tier is enough to use Power BI with Azure AD B2B. Some advanced Azure AD B2B features like dynamic groups require additional licensing. For more information, see the [Azure AD B2B documentation](/azure/active-directory/b2b/licensing-guidance).
 
 ### Approach 1: Contoso uses Power BI Premium
 
@@ -394,7 +394,7 @@ This opens a page where Contoso's BI team can see the two roles they created.  N
 
 ![Row-level security](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_30.png)
 
-In the example Contoso is adding a user in a partner organization with email address "[adam@themeasuredproduct.com](mailto:adam@themeasuredproduct.com)" to the Europe role:
+In the example Contoso is adding a user in a partner organization with email address `admin@fabrikam.com` to the Europe role:
 
 ![Row-level security settings](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_31.png)
 
@@ -490,7 +490,7 @@ To help these users to log in to Power BI, provide them with the Tenant URL. To 
 
     ![Tenant URL](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
 
-When using the Allow external guest users to edit and manage content in the organization, the specified guest users get access to your organization's Power BI and see any content to which they have permission. They can access Home, browse and contribute content to workspaces, install apps where they are on the access list, and have a My workspace. They can create or be an Admin of workspaces that use the new workspace experience.
+When using the Allow external guest users to edit and manage content in the organization, the specified guest users get access to your organization's Power BI and see any content to which they have permission. They can access Home, browse and contribute content to workspaces, install apps where they are on the access list, and have a My workspace. They can create or be an Admin of workspaces.
 
 > [!NOTE]
 > When using this option make sure to review the governance section of this document since default Azure AD settings prevent Guest users to use certain features like people pickers which can lead to a reduced experience.**
@@ -499,15 +499,13 @@ For guest users enabled through the Allow external guest users to edit and manag
 
 - Direct publishing from Power BI desktop to the Power BI service
 - Guest users cannot use Power BI desktop to connect to service datasets in the Power BI service
-- Classic workspaces tied to Microsoft 365 Groups: Guest user cannot create or be Admins of these workspaces. They can be members.
 - Sending ad-hoc invites is not supported for workspace access lists
 - Power BI Publisher for Excel is not supported for guest users
 - Guest users cannot install a Power BI Gateway and connect it to your organization
 - Guest users cannot install apps publish to the entire organization
-- Guest users cannot use, create, update, or install organizational content packs
+- Guest users cannot use, create, update, or install template apps
 - Guest users cannot use Analyze in Excel
 - Guest users cannot be @mentioned in commenting ( this functionality will be added in an upcoming release )
-- Guest users cannot use subscriptions ( this functionality will be added in an upcoming release )
 - Guest users who use this capability should have a work or school account. Guest users using Personal accounts experience more limitations due to sign-in restrictions.
 
 
@@ -518,9 +516,7 @@ For guest users enabled through the Allow external guest users to edit and manag
 
 When using Azure AD B2B sharing, the Azure Active Directory administrator controls aspects of the external user's experience. These are controlled on the External collaboration settings page within the Azure Active Directory settings for your Tenant.
 
-Details on the settings are available here:
-
-[https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations](/azure/active-directory/b2b/delegate-invitations)
+For more information, see [Configure external collaboration settings](/azure/active-directory/b2b/delegate-invitations).
 
 > [!NOTE]
 > By default, the Guest users permissions are limited option is set to Yes, so Guest users within Power BI have limited experiences especially surround sharing where people picker UIs do not work for those users. It is important to work with your Azure AD administrator to set it to No, as shown below to ensure a good experience.**
@@ -607,7 +603,7 @@ Reasons not to choose this alternative:
 
 The end user must always click through the consent experience before they can access content.
 
-If you will be inviting many guest users, we recommend that you delegate this from your core Azure AD admins by [adding a user to the guest inviter role in the resource organization](/azure/active-directory/active-directory-b2b-add-guest-to-role). This user can invite other users in the partner organization by using the sign-in UI, PowerShell scripts, or APIs. This reduces the administrative burden on your Azure AD admins to invite or resent invites to users at the partner organization.
+If you will be inviting many guest users, we recommend that you delegate this from your core Azure AD admins by [adding a user to the guest inviter role in the resource organization](/azure/active-directory/external-identities/add-users-administrator). This user can invite other users in the partner organization by using the sign-in UI, PowerShell scripts, or APIs. This reduces the administrative burden on your Azure AD admins to invite or resent invites to users at the partner organization.
 
 **Can Contoso force multi-factor authentication for guest users if its partners don't have multi-factor authentication?**
 

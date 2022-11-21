@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/29/2020
+ms.date: 09/08/2021
 LocalizationGroup: Model your data
 ---
 # Create measures for data analysis in Power BI Desktop
 
 Power BI Desktop helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
 
-Measures are used in some of the most common data analyses. Simple summarizations such as sums, averages, minimum, maximum and counts can be set through the **Fields** well. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look. For more information, see [Create measures](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
+Measures are used in some of the most common data analyses. Simple summarizations such as sums, averages, minimum, maximum and counts can be set through the **Fields** well. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look. For more information, see [Create measures](/training/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## Understanding measures
 
-In Power BI Desktop, measures are created and displayed in *Report View* or *Data View*. Measures you create yourself appear in the **Fields** list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
+In Power BI Desktop, measures are created and displayed in *Report View*, *Data View*, or *Model View*. Measures you create yourself appear in the **Fields** list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
 ![Measure fields in Fields](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
 > [!NOTE]
-> You might also be interested in *quick measures*, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn Data Analysis Expressions (DAX) syntax, since they're automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
+> You might also be interested in *quick measures*, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn Data Analysis Expressions (DAX) syntax, since their automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
 > 
 > 
 
@@ -75,9 +75,12 @@ You can create subfolders by using a backslash character. For example, *Finance\
 
 You can make a field appear in multiple folders by using a semicolon to separate the folder names. For example, *Products\Names;Departments* results in the field appearing in a *Departments* folder as well as a *Names* folder inside a *Products* folder.
 
-You can create a special table that contains only measures. That table always appears at the top of the **Fields**. To do so, create a table with just one column. You can use **Enter Data** to create that table. Then move your measures to that table. Finally, hide the column, but not the table, that you created. Select the arrow at the top of **Fields** to close and reopen the fields list to see your changes.
+You can create a special table that contains only measures. That table always appears at the top of the **Fields**. To do so, create a table with just one column. You can use **Enter data** to create that table. Then move your measures to that table. Finally, hide the column, but not the table, that you created. Select the arrow at the top of **Fields** to close and reopen the fields list to see your changes.
 
 ![Organize measures and keep them on top of the Fields List](media/desktop-measures/measures-05.png)
+
+> [!TIP]
+> Hidden measures are displayed and accessible in Power BI Desktop, however, you will not see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
 
 ## Learn more
 

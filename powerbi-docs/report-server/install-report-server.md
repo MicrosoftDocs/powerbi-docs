@@ -1,18 +1,22 @@
 ---
 title: Install Power BI Report Server
-description: 'Learn how to install Power BI Report Server.'
+description: 'Learn how to install Power BI Report Server, or create a virtual machine running Power BI Report Server on Azure.'
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/16/2020
+ms.date: 06/22/2022
+ms.custom: intro-installation
 ---
 
 # Install Power BI Report Server
 
 Learn how to install Power BI Report Server.
+
+> [!TIP]
+> Another option is to create a [virtual machine (VM) with a Power BI Report Server Enterprise Image](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftpowerbi.pbirs?tab=overview) on Windows Server 2019 from Azure Marketplace.
 
 ## Download Power BI Report Server
 
@@ -49,6 +53,9 @@ Selecting **Power BI Report Server key** displays a dialog containing your produ
 #### SQL Server Enterprise Software Assurance (SA)
 
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/).
+
+ > [!IMPORTANT]
+ > When installing Power BI Report Server on multiple servers for a scale-out scenario, all servers must use the same Power BI Premium product key or SQL Server Enterprise Software Assurance (SA) product key.
 
 ## Install your report server
 
@@ -147,7 +154,7 @@ Open up the TCP port that you've configured for your Web Service URL and Web Por
 
 [Administrator overview](admin-handbook-overview.md)  
 [How to find your report server product key](find-product-key.md)  
-[Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 [Verify a Reporting Services installation](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Configure the report server service account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Configure report server URLs](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

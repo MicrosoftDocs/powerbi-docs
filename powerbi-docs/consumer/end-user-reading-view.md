@@ -13,8 +13,8 @@ ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/30/2020
-#As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
+ms.date: 10/06/2022
+ms.custom: mode-portal, intro-quickstart
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*
 
@@ -96,10 +96,10 @@ It's not necessary to open Power BI to monitor a dashboard.  You can subscribe i
 
 #### Get alerts when your data reaches a threshold
 Your data is live, and your visuals update automatically to reflect this. If you want to get notified when data changes above or below a threshold you set, use data alerts. Alerts work on gauges, KPIs, and cards.    
-![tile, card, kpi](media/end-user-alerts/card-gauge-kpi.png)
+:::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing gauge, kpi, and card.":::
 
 Power BI sends you an email when the value increases or decreases past the limit you set.  
-![Alert email](media/end-user-alerts/power-bi-email.png)
+:::image type="content" source="media/end-user-alerts/power-bi-email.png" alt-text="Alert email.":::
 
 Learn more about [Power BI alerts](end-user-alerts.md)
 
@@ -115,21 +115,6 @@ Learn more about [Power BI Q&A](end-user-q-and-a.md)
 Visuals are made up of datapoints, and by hovering over a datapoint, you can view the details.
 
 ![hover to see details](media/end-user-reading-view/power-bi-hover.gif)
-
-### Favorite a dashboard
-When you make content a *favorite*,  you'll be able to access it from [Home](end-user-home.md) and from the nav pane. The nav pane is visible from just about every area of the Power BI service. Favorites are typically the dashboards, report pages, and apps that you visit most often.
-
-To save content as a favorite, from the upper right corner of the Power BI service, select the star icon. 
-   
-![Screenshot showing upper right corner of a dashboard, with the star icon outlined in red.](./media/end-user-reading-view/power-bi-favorite-icon.png)
-
-To see your favorites, select **Favorites** from the nav pane.
-
-![Screenshot of Home with Favorites selected and outlined in red.](./media/end-user-reading-view/power-bi-list-favorite.png)
-
-Take a look at the other actions available in the menu bar.  We don't cover all of them in this article, but we do cover them in other articles.  Learn more by using the Power BI table of contents or **Search** field. 
-
-Learn more about [favorites and featured](end-user-favorite.md)
 
 ### Adjust the display dimensions
 Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  
@@ -190,13 +175,10 @@ With a visual active, select **More options** (...) and choose **Show as a table
 
 
 ### Export data to Excel
-In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility.
+In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility. For more information, visit [Export the data that was used to create a visualization](../visuals/power-bi-visualization-export-data.md).
 
-![data exported to Excel](./media/end-user-reading-view/power-bi-export-powerpoint.png)
+Exporting isn't limited to individual visuals; you can export entire reports to Excel or PowerPoint to share with your colleagues. For more information, see [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and [Power BI in PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md).
 
-<!-- Exporting isn't limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
-
-![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
 
 This has been a quick overview of just some of the things *business users* can do with the Power BI service.  
 
@@ -207,4 +189,3 @@ This has been a quick overview of just some of the things *business users* can d
 
 ## Next steps
 [Power BI for business users](end-user-consumer.md)
-

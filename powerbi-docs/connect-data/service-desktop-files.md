@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 05/27/2021
 LocalizationGroup: Data from files
 ---
 # Get data from Power BI Desktop files
@@ -30,7 +30,7 @@ Once you bring data into **Power BI Desktop** and create a few reports, it’s t
 >[!IMPORTANT]
 >The maximum file size you can import into Power BI is 1 gigabyte.
 
-1. In Power BI, in the navigator pane, click ** Get Data**.
+1. In Power BI, in the navigator pane, click **Get data**.
    
    ![Screenshot of Get Data, showing the button in the navigation pane.](media/service-desktop-files/pbid_get_data_button.png)
 2. In **Files**, click **Get**.

@@ -1,20 +1,20 @@
 ---
 title: Import Excel workbooks into Power BI Desktop
-description: You can import Excel workbooks that contain Power Query queries, Power Pivot models, and Power View worksheets into Power BI Desktop.
+description: You can import Excel workbooks that contain Power Query queries and Power Pivot models into Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/22/2020
+ms.date: 06/03/2022
 LocalizationGroup: Connect to data
 ---
 # Import Excel workbooks into Power BI Desktop
-With Power BI Desktop, you can easily import Excel workbooks that contain Power Query queries, Power Pivot models, and Power View worksheets into Power BI Desktop. Power BI Desktop automatically creates reports and visualizations based on the Excel workbook. Once imported, you can continue to improve and refine those reports with Power BI Desktop, using the existing features and new features released with each Power BI Desktop monthly update.
+With Power BI Desktop, you can easily import Excel workbooks that contain Power Query queries and Power Pivot models into Power BI Desktop. Power BI Desktop automatically creates reports and visualizations based on the Excel workbook. Once imported, you can continue to improve and refine those reports with Power BI Desktop, using the existing features and new features released with each Power BI Desktop monthly update.
 
 ## How do I import an Excel workbook?
-1. To import an Excel workbook into Power BI Desktop, select **File** > **Import** > **Power Query, Power Pivot, Power View**.
+1. To import an Excel workbook into Power BI Desktop, select **File** > **Import** > **Power Query, Power Pivot**.
 
    ![Import Excel workbook](media/desktop-import-excel-workbooks/importexceltopbi_1.png)
 
@@ -56,15 +56,13 @@ Power BI Desktop can import the following elements, commonly referred to as *obj
 | Power Pivot external data connections |All Power Pivot external data connections are converted to queries in Power BI Desktop. |
 | Linked tables or current workbook tables |If there's a worksheet table in Excel linked to the data model, or linked to a query (by using *From Table* or the *Excel.CurrentWorkbook()* function in M), the following options are presented: <ol><li><b>Import the table to the Power BI Desktop file</b>. This table is a one-time snapshot of the data, after which the data is read-only in the table in Power BI Desktop. There's a size limitation of 1 million characters (total, combining all column headers and cells) for tables created using this option.</li><li><b>Keep a connection to the original workbook</b>. Alternatively, you can keep a connection to the original Excel Workbook and Power BI Desktop retrieves the latest content in this table with each refresh, just like any other query created against an Excel workbook in Power BI Desktop.</li></ul> |
 | Data model calculated columns, measures, KPIs, data categories, and relationships |These data model objects are converted to the equivalent objects in Power BI Desktop. Note there are certain data categories that aren't available in Power BI Desktop, such as Image. In these cases, the data category information is reset for the columns in question. |
-| Power View worksheets |A new report page is created for each Power View worksheet in Excel. The name and order of these report pages match the original Excel workbook. |
 
 ## Are there any limitations to importing a workbook?
 There are a few limitations to importing a workbook into Power BI Desktop:
 
-* **External connections to SQL Server Analysis Services tabular models:** In Excel 2013, it's possible to create a connection to SQL Server Analysis Services tabular models and create Power View reports on top of these models without the need to import the data. This type of connection is currently not supported as part of importing Excel workbooks into Power BI Desktop. As a workaround, you must recreate these external connections in Power BI Desktop.
+* **External connections to SQL Server Analysis Services tabular models:** In Excel 2013, it's possible to create a connection to SQL Server Analysis Services tabular models without the need to import the data. This type of connection is currently not supported as part of importing Excel workbooks into Power BI Desktop. As a workaround, you must recreate these external connections in Power BI Desktop.
 * **Hierarchies:** This type of data model object is currently not supported in Power BI Desktop. As such, hierarchies are skipped as part of importing an Excel workbook into Power BI Desktop.
 * **Binary data columns:** This type of data model column is currently not supported in Power BI Desktop. Binary data columns are removed from the resulting table in Power BI Desktop.
-* **Unsupported Power View elements:** There are a few features in Power View that aren't available in Power BI Desktop, such as themes or certain types of visualizations (scatter chart with play axis, drill-down behaviors, and so on). These unsupported visualizations result in *Unsupported Visualization* messages on their corresponding locations in the Power BI Desktop report, which you can delete or reconfigure as needed.
 * **Named Ranges using** ***From Table*** **in Power Query, or using** ***Excel.CurrentWorkbook*** **in M:** Importing this named range data into Power BI Desktop isn't currently supported, but it's a planned update. Currently, these named ranges are loaded into Power BI Desktop as a connection to the external Excel workbook.
 * **PowerPivot to SSRS:** PowerPivot external connections to SQL Server Reporting Services (SSRS) aren't currently supported, because that data source isn't currently available in Power BI Desktop.
 

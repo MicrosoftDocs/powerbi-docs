@@ -3,7 +3,8 @@ title: Developer learning catalog
 description: Find all the training options for Power BI for developers, from most basic to most advanced.
 author: margoc
 ms.author: margoc
-ms.prod: powerbi
+ms.service: powerbi
+ms.subservice: powerbi-resource
 ms.topic: article
 ms.date: 03/25/2020
 ---
@@ -22,6 +23,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 ## Embedded<a name="embedded"></a>
 | Content | Description | Format  | Length      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
+| [Embed Power BI analytics](/training/paths/power-bi-embedded/) | Learn how to programmatically embed Power BI content by using the Power BI REST API and the Power BI client APIs, enforce row-level security (RLS) for embedded content, automate common Power BI setup tasks, configure a development environment, and determine appropriate licensing.   | Free, self-paced online learning path       |    3 hr 27 min            |
 | [Best Practices for Managing Power BI Embedded Analytics for Multi-Tenant Deployments](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html) | Power BI Embedded is a powerful service that allows you to white label Power BI in your own applications. Watch this webinar to learn how to manage Power BI Embedded deployments.   | Webinar       |                |
 | [Learn about Power BI Embedded in 20 minutes](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | This webinar is being presented to give an introduction to Power BI Embedded. By the end of this webinar, users should be able to understand what Power BI Embedded is, the next steps to get started with the product, and where to go for help/resources. | Webinar       |                |
 | [Developing with Power BI Embedding by Ted Pattison– The April 2018 Update](https://www.youtube.com/watch?v=swnGlrRy588)  | In this developer-oriented webinar, Ted Pattison will discuss recent enhancements to the Power BI embedding platform and how they can be leveraged by ISVs and enterprise developers. | YouTube video | 59 min 49 sec  |

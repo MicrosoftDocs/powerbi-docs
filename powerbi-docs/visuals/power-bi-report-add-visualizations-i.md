@@ -8,29 +8,50 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 07/12/2022
+ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
 
 # Add visuals to a Power BI report (part 1)
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
-
-This article gives a quick introduction to creating a visualization in a report. It applies to both the Power BI service and Power BI Desktop. For more-advanced content, [see Part 2](power-bi-report-add-visualizations-ii.md) of this series.
+This article gives a quick introduction to creating a visualization in a report. For more-advanced content, [see Part 2](power-bi-report-add-visualizations-ii.md) of this series.
 
 ## Prerequisites
 
-This tutorial uses the [Sales & marketing PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open**
-   
-2. Find your copy of the **Sales and marketing sample PBIX file**
+This tutorial uses the Sales and Marketing Sample.
 
-1. Open the **Sales and marketing sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Download the [sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to your desktop.
 
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+2. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
+
+3. Browse to the **Sales and Marketing Sample PBIX** file, then select **Open**.
+
+4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
+ 
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+
+This tutorial uses the built-in Sales and Marketing Sample in the Power BI service.
+
+1. Open the Power BI service, then select on **Get data** in the bottom left corner.
+
+2. On the Get Data page that appears, select **Samples**.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
+
+3. Select the **Sales and Marketing Sample**, and choose **Connect**.
+
+4. Select **Edit** on the menu bar to display the **Visualizations** pane.
+
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md)
@@ -39,33 +60,33 @@ This tutorial uses the [Sales & marketing PBIX file](https://download.microsoft.
 
 1. Create a visualization by selecting a field from the **Fields** pane.
 
-    Start with a numeric field like **Sales** > **TotalSales**. Power BI creates a column chart with a single column.
+   Start with a numeric field like **SalesFact** > **Sales $**. Power BI creates a column chart with a single column.
 
-    ![Screenshot of a column chart with a single column.](media/power-bi-report-add-visualizations-i/power-bi-column-chart.png)
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-column-chart.png" alt-text="Screenshot of a column chart with a single column.":::
 
-    Or, start with a category field, such as **Name** or **Product**. Power BI creates a table and adds that field to the **Values** well.
+   Or, start with a field, such as **Product** > **Category**. Power BI creates a table and adds that field to the **Columns** well.
 
-    ![Screenshot of a table with four categories](media/power-bi-report-add-visualizations-i/power-bi-product.png)
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-product.png" alt-text="Screenshot of a table with four categories.":::
 
-    Or, start with a geography field, such as **Geo** > **City**. Power BI and Bing Maps create a map visualization.
+   Or, select the **Filled map** icon and drag a geography field, such as **Geo** > **City**, to the **Location** well. Power BI and Bing Maps create a map visualization.
 
-    ![Screenshot of a map visualization.](media/power-bi-report-add-visualizations-i/power-bi-maps.png)
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-maps.png" alt-text="Screenshot of a map visualization.":::
 
 ## Change the type of visualization
 
- Create a visualization and then change its type. 
- 
- 1. Select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Values** well.
+Create a visualization and then change its type.
 
-    ![Screenshot of the Fields pane with the Values well called out.](media/power-bi-report-add-visualizations-i/power-bi-create-visual.png)
+1. Select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Columns** well.
+
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-create-visual.png" alt-text="Screenshot of the Fields pane with the Values well called out.":::
 
 1. Change the visualization to a column chart by selecting the **Stacked column chart** icon.
 
-   ![Screenshot of the Visualizations pane with the Stacked column chart icon called out.](media/power-bi-report-add-visualizations-i/power-bi-convert.png)
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-convert.png" alt-text="Screenshot of the Visualizations pane with the Stacked column chart icon called out.":::
 
-1. To change the way the visual is sorted, select **More actions** (...).  Use the sort options to change the direction of the sort (ascending or descending) and change the column being used to sort (**Sort by**).
+1. To change the way the visual is sorted, select **More options** (...) and then **Sort axis**. Use the menu options to change the direction of the Sort axis (ascending or descending) or change the column that is being sorted on.
 
-   ![Screenshot of the More actions dropdown.](media/power-bi-report-add-visualizations-i/power-bi-sort.png)
+   :::image type="content" source="media/power-bi-report-add-visualizations-i/power-bi-sort.png" alt-text="Screenshot of the More actions dropdown showing the sort axis options.":::
   
 ## Next steps
 

@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/11/2019
+ms.date: 10/20/2022
 LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 With custom format strings in **Power BI Desktop**, you can customize how fields appear in visuals, and make sure your reports look just the way you want them to look.
 
@@ -19,11 +21,11 @@ With custom format strings in **Power BI Desktop**, you can customize how fields
 
 ## How to use custom format strings
 
-To create custom format strings, select the field in the **Modeling** view, and then select **Format** from the **Properties** pane.
+To create custom format strings, select the field in the **Modeling** view, and then select the dropdown arrow under **Format** in the **Properties** pane.
 
 ![Custom from the Format drop down](media/desktop-custom-format-strings/custom-format-strings-02.png)
 
-Once you've selected **Custom** from the **Format** drop down, you can select from a list of commonly used format strings. 
+Once you've selected **Custom** from the **Format** drop down menu, you can select from a list of commonly used format strings. 
 
 ![Screenshot shows details of the custom format.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
@@ -68,9 +70,9 @@ A user-defined format expression for numbers can have from one to three sections
 
 Here are examples of different formats for different value strings:
 
-|   | **Format Strings** |   |   |   |
+|Values   | Format String | Format String  | Format String  | Format String  |
 | --- | --- | --- | --- | --- |
-| **Values** | **0.00;-0.0;&quot;Zero&quot;** | **0.00;;** | **0.00;-0.0;** | **0.00;** |
+| |**0.00;-0.0;&quot;Zero&quot;** | **0.00;;** | **0.00;-0.0;** | **0.00;** |
 | **-1.234** | -1.2 | &quot;&quot; | -1.2 | &quot;&quot; |
 | **0** | &quot;Zero&quot; | &quot;&quot; | &quot;&quot; | 0.00 |
 | **1.234** | 1.23 | 1.23 | 1.23 | 1.23 |
@@ -122,7 +124,7 @@ The following table identifies characters you can use to create **user-defined d
 | nn | Display the minute as a number with a leading zero (00–59). |
 | s | Display the second as a number without a leading zero (0–59). |
 | ss | Display the second as a number with a leading zero (00–59). |
-| AM/PM | Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M. |
+| tt | Use the 12-hour clock and display an uppercase AM with any hour before noon; display an uppercase PM with any hour between noon and 11:59 P.M. |
 
 The following table identifies characters you can use to create **user-defined number formats**.
 
@@ -137,8 +139,8 @@ The following table identifies characters you can use to create **user-defined n
 | ( **:** ) | Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings. |
 | ( **/** ) | Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
 | ( **E- E+ e- e+** ) | Scientific format. If the format expression contains at least one digit placeholder ( **0**  or  **#** ) to the right of E-, E+, e-, or e+, the number is displayed in scientific format and E or e is inserted between the number and its exponent. The number of digit placeholders to the right determines the number of digits in the exponent. Use E- or e- to place a minus sign next to negative exponents. Use E+ or e+ to place a minus sign next to negative exponents and a plus sign next to positive exponents. |
-| **- + $**  ( ) | Display a literal character. To display a character other than one of those listed, precede it with a backslash (\) or enclose it in double quotation marks (&quot; &quot;). |
-| ( **\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\). The backslash itself isn&#39;t displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\). Examples of characters that can&#39;t be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &amp;, \&lt;, \&gt;, and !). |
+| **- + $**  ( ) | Display a literal character. To display a character other than one of those listed, precede it with a backslash (\\) or enclose it in double quotation marks (&quot; &quot;). |
+| ( **\\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\\). The backslash itself isn&#39;t displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\\\). Examples of characters that can&#39;t be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &amp;, &lt;, &gt;, and !). |
 | (&quot;ABC&quot;) | Display the string inside the double quotation marks (&quot; &quot;). |
 
 

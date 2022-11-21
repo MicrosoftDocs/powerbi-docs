@@ -1,6 +1,6 @@
 ---
 title: Scatter, bubble, and dot plot charts in Power BI
-description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
+description: 'Learn how to use scatter charts, dot plot charts, and bubble charts in Power BI.'
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
@@ -8,14 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/21/2019
+ms.date: 07/11/2022
+ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
 # Scatter charts, bubble charts, and dot plot charts in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 A scatter chart always has two value axes to show: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data the chart represents.
 
@@ -25,9 +24,9 @@ You can set the number of data points, up to a maximum of 10,000.
 
 ### Scatter and bubble charts
 
-A scatter chart shows the relationship between two numerical values. A bubble chart replaces data points with bubbles, with the bubble *size* representing an additional third data dimension.
+A scatter chart shows the relationship between two numerical values. A bubble chart replaces data points with bubbles, with the bubble *size* representing a third data dimension.
 
-![Screenshot of a sample bubble chart.](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+:::image type="content" source="media/power-bi-visualization-scatter/power-bi-bubble-chart.png" alt-text="Screenshot of a sample bubble chart.":::
 
 Scatter charts are a great choice:
 
@@ -46,9 +45,9 @@ Scatter charts are a great choice:
 
 * To show patterns in large sets of data, for example by showing linear or non-linear trends, clusters, and outliers.
 
-* To compare large numbers of data points without regard to time.  The more data that you include in a sScatter chart, the better the comparisons that you can make.
+* To compare large numbers of data points without regard to time. The more data that you include in a scatter chart, the better the comparisons that you can make.
 
-In addition to what Scatter charts can do for you, bubble charts are a great choice:
+In addition to what scatter charts can do, bubble charts are a great choice:
 
 * If your data has three data series that each contains a set of values.
 
@@ -58,23 +57,45 @@ In addition to what Scatter charts can do for you, bubble charts are a great cho
 
 ### Dot plot charts
 
-A dot plot chart is similar to a bubble chart and scatter chart, but is instead used to plot categorical data along the X-Axis.
+A dot plot chart is similar to a bubble chart and scatter chart, but is instead used to plot categorical data along the horizontal axis.
 
-![Screenshot of a dot plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
+:::image type="content" source="media/power-bi-visualization-scatter/power-bi-dot-plot.png" alt-text="Screenshot of a dot plot chart.":::
 
-They're a great choice if you want to include categorical data along the X-Axis.
+They're a great choice if you want to include categorical data along the horizontal axis.
 
 ## Prerequisites
 
-This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-1. From the upper left section of the menubar, select **File** > **Open**
-   
-2. Find your copy of the **Retail Analysis sample PBIX file**
+This tutorial uses the Retail Analysis Sample.
 
-1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Download the [sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+2. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
+
+3. Browse to the **Retail Analysis Sample PBIX.pbix** file, then select **Open**.
+
+4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
+
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+# [Power BI service](#tab/powerbi-service)
+
+This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
+
+1. Open the Power BI service, then click on **Get data** in the bottom left corner.
+
+2. On the Get Data page that appears, select **Samples**.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
+
+3. Select the **Retail Analysis Sample**, and choose **Connect**.
+
+4. Select **Edit** on the menu bar to display the **Visualizations** pane.
+
+5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+
+---
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
@@ -89,17 +110,17 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
     * **District** > **District**
 
-    ![Screenshot of the cluster column chart, the Visualizations pane, and the Fields pane with the fields that you selected called out.](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
+    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-bar-chart.png" alt-text="Screenshot of the cluster column chart, the Visualizations pane, and the Fields pane with the fields that you selected.":::
 
-1. In the **Visualization** pane, select  ![Screenshot of the scatter chart icon.](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png) to convert the cluster column chart to a scatter chart.
+1. In the **Visualization** pane, select :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png"::: to convert the cluster column chart to a scatter chart.
 
-   ![Screenshot of the cluster column chart becoming a scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter-new.png)
+    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-new.png" alt-text="Screenshot of the cluster column chart becoming a scatter chart.":::
 
-1. Drag **District** from **Details** to **Legend**.
+1. Drag **District** from **Values** to **Legend**.
 
     Power BI displays a scatter chart that plots **Total Sales Variance %** along the Y-Axis, and plots **Sales Per Square Feet** along the X-Axis. The data point colors represent districts:
 
-    ![Screenshot of the scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter2.png)
+    :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter2.png" alt-text="Screenshot of the scatter chart.":::
 
 Now let's add a third dimension.
 
@@ -107,69 +128,70 @@ Now let's add a third dimension.
 
 1. From the **Fields** pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** well. The data points expand to volumes proportionate with the sales value.
 
-   ![Screenshot of the scatter chart becoming a bubble chart by adding Sales Vale to the Size well.](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
+   :::image type="content" source="media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png" alt-text="Screenshot of the scatter chart becoming a bubble chart by adding Sales Vale to the Size well.":::
 
 1. Hover over a bubble. The size of the bubble reflects the value of **This Year Sales**.
 
-    ![tooltips display](media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png)
+   :::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png" alt-text="Tooltips display.":::
 
-1. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand **General**, and adjust the **Data Volume**.
+1. To set the number of data points to include in your bubble chart, in the **Format visual** section of the **Visualizations** pane, select **General**, and adjust the **Number of data points** under **Advanced options**.
 
-    ![Screenshot of the Visualizations pane with the Format icon, General drop-down, and Data Volume option called out.](media/power-bi-visualization-scatter/pbi-scatter-data-volume.png)
+    :::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-data-volume.png" alt-text="Screenshot of the Visualizations pane with the Number of data points option under the Format visual icon.":::
 
     You can set the max data volume to any number up to 10,000. As you get into the higher numbers, we suggest testing first to ensure good performance.
 
     > [!NOTE]
-    > More data points can mean a longer loading time. If you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well. You want to confirm that the performance of the chart matches your users' expectations.
+    > More data points can mean a longer loading time. If you choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well. You want to confirm that the performance of the chart matches your users' expectations.
 
-1. Continue formatting the visualization colors, labels, titles, background, and more. To [improve accessibility](../create-reports/desktop-accessibility-overview.md), consider adding marker shapes to each line. To select the marker shape, expand **Shapes**, select **Marker shape**, and select a shape.
+1. Continue formatting the visualization colors, labels, titles, background, and more. To [improve accessibility](../create-reports/desktop-accessibility-overview.md), consider adding marker shapes to each line. To select the marker shape, expand **Markers** under **Visual**, choose **Shape**, and select a shape.
 
-    ![Screenshot of the Shapes drop-down with the Marker shape options called out.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
+    :::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-marker.png" alt-text="Screenshot of the Shapes drop-down with the Marker shape options called out.":::
 
     Change the marker shape to a diamond, triangle, or square. Using a different marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 
-1. Open the Analytics pane ![Screenshot of the icon for the Analytics pane.](media/power-bi-visualization-scatter/power-bi-analytics.png) to add additional information to your visualization.  
-    - Add a Median line. Select **Median line** > **Add**. By default, Power BI adds a median line for *Sales per sq ft*. This isn't very helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Measure** to *Total sales variance %*.  
+1. Open the Analytics pane :::image type="icon" source="media/power-bi-visualization-scatter/power-bi-analytics.png"::: to add additional information to your visualization.
+  
+    - Add a median line. Select **Median line** > **Add line**. By default, Power BI adds a median line for *Sales per sq ft*. This line isn't helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Series** to *Total sales variance %*.  
 
-        ![Screenshot of the bubble chart with median line added.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+        :::image type="content" source="media/power-bi-visualization-scatter/power-bi-analytics-median.png" alt-text="Screenshot of the bubble chart with median line added.":::
 
-    - Add symmetry shading to show which points have a higher value of the x-axis measure compared to the y-axis measure, and vice-versa. When you turn symmetry shading on in the Analytics pane, Power BI shows you the background of your scatter chart symmetrically based on your current axis upper and lower boundaries. This is a very quick way to identify which axis measure a data point favors, especially when you have a different axis range for your x- and y-axis.
+    - Add symmetry shading to show which points have a higher value of the x-axis measure compared to the y-axis measure, and vice-versa. When you activate symmetry shading in the Analytics pane, Power BI shows you the background of your scatter chart symmetrically based on your current axis upper and lower boundaries. You can quickly identify which axis measure a data point favors, especially when you have a different axis range for your x and y axis.
 
-        a. Change the **Total sales variance %** field to **Gross margin last year %**
+        a. Change the **Y Axis** field to **Gross Margin Last Year %**
 
-        ![Screenshot of the Details with Gross Margin Last Year percent selected.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+        :::image type="content" source="media/power-bi-visualization-scatter/power-bi-format-symmetry.png" alt-text="Screenshot of the Details with Gross Margin Last Year percent selected.":::
 
-        b. From the Analytics pane, add **Symmetry shading**. We can see from the shading that Hosiery (the green bubble in the pink shaded area) is the only category that favors  gross margin rather than its sales per store square footage. 
+        b. From the Analytics pane, add **Symmetry shading**. We can see from the shading that Hosiery (the blue square in the pink shaded area) is the only category that favors  gross margin rather than its sales per store square footage. 
 
-        ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+        :::image type="content" source="media/power-bi-visualization-scatter/power-bi-symmetry.png" alt-text="Screenshot of the bubble chart with symmetry shading added.":::
 
     - Continue exploring the Analytics pane to discover interesting insights in your data. 
 
-        ![Screenshot of the Analytics pane.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
+        :::image type="content" source="media/power-bi-visualization-scatter/power-bi-analytics-example.png" alt-text="Screenshot of the Analytics pane.":::
 
 ## Create a dot plot chart
 
-To create a dot plot chart, replace the numerical **X-Axis** field with a categorical field.
+To create a dot plot chart, replace the numerical **X Axis** field with a categorical field.
 
-From the **X-Axis** pane, remove **Sales per sq ft** and replace it with **District** > **District Manager**.
+From the **X Axis** pane, remove **Sales per sq ft** and replace it with **District** > **District Manager**.
 
-![Screenshot of a new dot plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
+:::image type="content" source="media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png" alt-text="Screenshot of a new dot plot chart.":::
 
 ## Considerations and troubleshooting
 
 ### Your scatter chart has only one data point
 
-Does your scatter chart have only one data point that aggregates all the values on the X- and Y-axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
+Does your scatter chart have only one data point that aggregates all the values on the x- and y-axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
-![Screenshot of a scatter chart with one data point.](media/power-bi-visualization-scatter/pbi-scatter-tshoot1.png)
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-1.png" alt-text="Screenshot of a scatter chart with one data point.":::
 
 Add a field to the **Details** well to tell Power BI how to group the values. The field must be unique for each point you want to plot. A simple row number or ID field will do.
 
-![Screenshot of a scatter chart with RowNum added to the Details well.](media/power-bi-visualization-scatter/pbi-scatter-tshoot.png)
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot.png" alt-text="Screenshot of a scatter chart with RowNum added to the Details well.":::
 
 If you don't have that in your data, create a field that concatenates your X and Y values together into something unique per point:
 
-![Screenshot of a scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
+:::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with TempTime added to the Details well.":::
 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
 
@@ -179,6 +201,5 @@ You might also be interested in the following articles:
 
 * [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Tips to sort and distribute data plots in Power BI reports](../guidance/report-tips-sort-distribute-data-plots.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

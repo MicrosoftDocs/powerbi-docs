@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/06/2020
+ms.date: 01/18/2022
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
@@ -32,24 +32,23 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
     ![tile ellipses](./media/end-user-tiles/power-bi-ellipsis.png)
 2. Select the ellipses to open the tile action menu. The options available vary by your permissions, the visual type, and the method used to create the tile. For example, the menu items available for tiles pinned from Q&A are different than the tiles pinned from a report. Here is an action menu for a tile created using Q&A.
 
-
-   
     ![Screenshot shows menu with nine options.](./media/end-user-tiles/power-bi-qna-menu.png)
 
-   
     Some of the actions available from these menus are:
-   
-   * [Open the report that was used to create the tile ](end-user-reports.md) ![report icon](./media/end-user-tiles/chart-icon.jpg)  
-   
-   * [Open the Q&A question that was used to create the tile ](end-user-reports.md) ![Q&A icon](./media/end-user-tiles/qna-icon.png)  
-   
 
-   * [Open the workbook that was used to create the tile ](end-user-reports.md) ![worksheet icon](./media/end-user-tiles/power-bi-open-worksheet.png)  
-   * [View the tile in focus mode ](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
-   * [View insights ](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
+   * [Open the report that was used to create the tile](end-user-reports.md) ![report icon](./media/end-user-tiles/chart-icon.jpg)  
+
+   * [Open the Q&A question that was used to create the tile](end-user-reports.md) ![Q&A icon](./media/end-user-tiles/qna-icon.png)  
+
+   * [View the tile in focus mode](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
+
+   * [View insights](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
+
    * [Add a comment and start a discussion](end-user-comment.md)  ![comment icon](./media/end-user-tiles/comment-icons.png)
+
    * [Manage alerts set on a dashboard tile](end-user-alerts.md)  ![alert icon](./media/end-user-tiles/power-bi-alert-icon.png)
-   * [Open the data in Excel](end-user-export.md)  ![export icon](./media/end-user-tiles/power-bi-export-icon.png)
+
+   * [Open the data in Excel](/power-bi/visuals/power-bi-visualization-export-data)  ![export icon](./media/end-user-tiles/power-bi-export-icon.png)
 
 
 3. To close the action menu, select a blank area in the canvas.
@@ -67,12 +66,11 @@ When you select a tile, what happens next depends on how the tile was created an
   - The report that was used to create the visualization was not saved, or has been deleted.
   - The tile was created from a workbook in Excel Online, and you do not have at least Read permissions for that workbook.
   - If the tile was created from SSRS, and you don't have permission to the SSRS report or you don't have access to the network where the SSRS server is located.
-* For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
-* If the original visualization used to create the tile changes, the tile doesn't change.  For example, if the *designer* pinned a line chart from a report and then changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
+- For tiles created directly on the dashboard using **Add tile**, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
+- If the original visualization used to create the tile changes, the tile doesn't change.  For example, if the *designer* pinned a line chart from a report and then changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
+- If a workspace is moved to Premium capacity, the existing dashboard refresh cache does not move with the workspace. The new cache will be created the first time a user visits the dashboard in the new Premium capacity. After that, every data refresh will refresh the cache and update the data.
 
 ## Next steps
 [Data refresh](../connect-data/refresh-data.md)
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
-
-

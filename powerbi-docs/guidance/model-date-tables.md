@@ -2,12 +2,12 @@
 title: Create date tables in Power BI Desktop
 description: Techniques and guidance for creating date tables in Power BI Desktop.
 author: peter-myers
-ms.author: v-pemyer
-ms.reviewer: asaxton
+ms.author: v-petermyers
+ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/02/2022
 ---
 
 # Create date tables in Power BI Desktop
@@ -49,10 +49,7 @@ If you're developing a DirectQuery model and your data source doesn't include a 
 
 ## Generate with Power Query
 
-You can generate a date table using Power Query. Here are two blog entries that show you how:
-
-- [Creating a Date Dimension with a Power Query Script](https://www.mattmasson.com/2014/02/creating-a-date-dimension-with-a-power-query-script/) by Matt Masson
-- [Generating A Date Dimension Table In Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) by Chris Webb
+You can generate a date table using Power Query. For more information, see Chris Webb's blog entry [Generating A Date Dimension Table In Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/).
 
 > [!TIP]
 > If you don't have a data warehouse or other consistent definition for time in your organization, consider using Power Query to publish a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). Then, have all data modelers connect to the dataflow to add date tables to their models. The dataflow becomes the single source of truth for time in your organization.
@@ -65,6 +62,9 @@ You can generate a date table in your model by creating a calculated table using
 
 - Use the **CALENDAR** function when you want to define a date range. You pass in two values: the start date and end date. These values can be defined by other DAX functions, like `MIN(Sales[OrderDate])` or `MAX(Sales[OrderDate])`.
 - Use the **CALENDARAUTO** function when you want the date range to automatically encompass all dates stored in the model. You can pass in a single optional parameter that's the end month of the year (if your year is a calendar year, which ends in December, you don't need to pass in a value). It's a helpful function, because it ensures that full years of dates are returned—it's a requirement for a marked date table. What's more, you don't need to manage extending the table to future years: When a data refresh completes, it triggers the recalculation of the table. A recalculation will automatically extend the table's date range when dates for a new year are loaded into the model.
+
+> [!TIP]
+> For more information about creating calculated tables, including an example of how to create a date table, work through the [Add calculated tables and columns to Power BI Desktop models](/training/modules/dax-power-bi-add-calculated-tables/) learning module.
 
 ## Clone with DAX
 

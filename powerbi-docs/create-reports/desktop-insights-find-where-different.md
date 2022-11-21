@@ -1,47 +1,44 @@
 ---
-title: Use insights to find where distribution is different (Preview)
+title: Use insights to find where distribution is different
 description: Easily gain insights to find where a distribution seen in a chart is different in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 04/23/2021
 LocalizationGroup: Create reports
 ---
-# Apply insights in Power BI Desktop to discover where distributions vary (preview)
+# Apply insights in Power BI to discover where distributions vary
 
-Often in visuals, you see a data point, and wonder about whether distribution would be the same for different categories. With **insights** in **Power BI Desktop** you can find out with just a few clicks.
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Consider the following visual, which shows *Total Sales* by *Country*. As the chart shows, most sales come from the United States, accounting for 57% of all sales with lessor contributions coming from the other countries. It's often interesting in such cases to explore whether that same distribution would be seen for different sub-populations. For example, is this the same for all years, all sales channels, and all categories of products?  While you could apply different filters and compare the results visually, doing so can be time consuming and error prone. 
+Often in visuals, you see a data point, and wonder about whether distribution would be the same for different categories. With **insights** in **Power BI** you can find out with just a few clicks.
+
+Consider the following visual, which shows *TotalSales* by *CountryName*. As the chart shows, most sales come from the United States, accounting for 57% of all sales with lessor contributions coming from the other countries/regions. It's often interesting in such cases to explore whether that same distribution would be seen for different sub-populations. For example, is this the same for all years, all sales channels, and all categories of products?  While you could apply different filters and compare the results visually, doing so can be time consuming and error prone. 
 
 ![Chart with big distribution](media/desktop-insights-find-where-different/find-where-different_01.png)
 
-You can tell **Power BI Desktop** to find where a distribution is different, and get fast, automated, insightful analysis about your data. Simply right-click on a data point, and select **Analyze > Find where the distribution is different**, and insight is delivered to you in an easy-to-use window.
+You can tell **Power BI** to find where a distribution is different, and get fast, automated, insightful analysis about your data. Simply right-click on a data point, and select **Analyze** > **Find where this distribution is different**, and insight is delivered to you in an easy-to-use window.
 
 ![Insights for where distribution is different](media/desktop-insights-find-where-different/find-where-different_02.png)
 
-In this example, the automated analysis quickly shows that for *Touring Bikes*, the  proportion of sales in the United States and Canada are lower, while the proportion coming from the other countries is higher.   
-
-> [!NOTE]
-> This feature is in preview, and is subject to change. The insight feature is enabled and on by default (you don't need to check a Preview box to enable it) beginning with the September 2017 version of **Power BI Desktop**.
-> 
-> 
+In this example, the automated analysis quickly shows that for *Touring Bikes*, the  proportion of sales in the United States and Canada are lower, while the proportion coming from the other countries/regions is higher.   
 
 ## Using insights
-To use insights to find where distributions seen on charts are different, just right-click on any data point (or on the visual as a whole), and select **Analyze > Find where the distribution is different**.
+To use insights to find where distributions seen on charts are different, just right-click on any data point (or on the visual as a whole), and select **Analyze** > **Find where this distribution is different**.
 
 ![Right-click to get insights](media/desktop-insights-find-where-different/find-where-different_03.png)
 
-**Power BI Desktop** then runs its machine learning algorithms over the data, and populates a window with a visual and a description that describes which categories (columns), and which values of those columns, result in the most significantly different distribution. Insights are provided as a column chart, as shown in the following image. 
+**Power BI** then runs its machine learning algorithms over the data, and populates a window with a visual and a description that describes which categories (columns), and which values of those columns, result in the most significantly different distribution. Insights are provided as a column chart, as shown in the following image. 
 
 ![Column chart](media/desktop-insights-find-where-different/find-where-different_04.png)
 
 The values with the selected filter applied are shown using the normal default color. The overall values, as seen on the original starting visual, are shown in grey for easy comparison. Up to three different filters might be included (*Touring Bikes*, *Mountain Bikes*, *Road Bikes* in this example) and different filters can be chosen by clicking on them (or using ctrl-click to select multiple).
 
-For simple additive measures, like *Total Sales* in this example, the comparison is based on the relative, rather than absolute, values. Hence while the sales for Touring Bikes are lower than overall sales for all categories, by default the visual uses a dual axis to allow the comparison between the proportion of sales across different countries, for Touring Bikes versus all categories of bikes.  Switching the toggle below the visual allows the two values to be displayed in the same axis, allowing the absolute values to easily be compared (as shown in the following image).    
+For simple additive measures, like *Total Sales* in this example, the comparison is based on the relative, rather than absolute, values. Hence while the sales for Touring Bikes are lower than overall sales for all categories, by default the visual uses a dual axis to allow the comparison between the proportion of sales across different countries/regions, for Touring Bikes versus all categories of bikes.  Switching the toggle below the visual allows the two values to be displayed in the same axis, allowing the absolute values to easily be compared (as shown in the following image).    
 
 ![visuals shown when using insights](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -49,7 +46,7 @@ The descriptive text also gives some indication of the level of importance that 
 
 The *thumbs up* and *thumbs down* icons at the top of the page are provided so you can provide feedback about the visual and the feature. Doing so provides feedback, but it does not currently train the algorithm to influence the results returned next time you use the feature.
 
-And importantly, the **+** button at the top of the visual lets you add the selected visual to your report, just as if you created the visual manually. You can then format or otherwise adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI Desktop**.
+And importantly, the **+** button at the top of the visual lets you add the selected visual to your report, just as if you created the visual manually. You can then format or otherwise adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI**.
 
 You can use insights when your report is in reading or editing mode, making it versatile for both analyzing data, and for creating visuals you can easily add to your reports.
 
@@ -58,14 +55,14 @@ You can think of the algorithm as taking all the other columns in the model, and
 
 You likely wonder what *different* means. For example, say that the overall split of sales between the USA and Canada was the following:
 
-|Country  |Sales ($M)|
+|Country/Region  |Sales ($M)|
 |---------|----------|
 |USA      |15        |
 |Canada   |5         |
 
 Then for a particular category of product *“Road Bike*) the split of sales might be:
 
-|Country  |Sales ($M)|
+|Country/Region  |Sales ($M)|
 |---------|----------|
 |USA      |3        |
 |Canada   |1         |
@@ -74,14 +71,14 @@ While the numbers are different in each of those tables, the relative values bet
 
 By contrast consider a measure like margin, that is calculated as Profit/Cost, and say that the overall margins for the USA and Canada were the following
 
-|Country  |Margin (%)|
+|Country/Region  |Margin (%)|
 |---------|----------|
 |USA      |15        |
 |Canada   |5         |
 
 Then for a particular category of product *“Road Bike*) the split of sales might be:
 
-|Country  |Margin (%)|
+|Country/Region  |Margin (%)|
 |---------|----------|
 |USA      |3        |
 |Canada   |1         |
@@ -94,9 +91,9 @@ So for additive measures, like *Sales* in the previous example, a column and lin
 
 Similarly, for non-additive measures like *Margin* in the previous example, a column and line chart is used, where the use of a single axis means the absolute values can easily be compared. Again the line (filled with grey) shows the overall value. Whether comparing actual or relative numbers, the determination of the degree to which two distributions are different is not simply a matter of calculating the difference in the values. For example:
 
-* The size of the population is factored in, as a difference is less statistically significant and less interesting when it applies to a smaller proportion of the overall population. As an example, the distribution of sales across countries might be very different for some particular product, this would not be considered interesting if there were thousands of products, and hence that particular product accounted for only a small percentage of the overall sales.
+* The size of the population is factored in, as a difference is less statistically significant and less interesting when it applies to a smaller proportion of the overall population. As an example, the distribution of sales across countries/regions might be very different for some particular product, this would not be considered interesting if there were thousands of products, and hence that particular product accounted for only a small percentage of the overall sales.
 
-* Differences for those categories where the original values were very high or very close to zero are weighted higher than others. For example, if a country overall contributes only 1% of sales, but for some particular type of product contributes 6%, that is more statistically significant, and therefore considered more interesting, than a country whose contribution changed from 50% to 55%. 
+* Differences for those categories where the original values were very high or very close to zero are weighted higher than others. For example, if a country or region overall contributes only 1% of sales, but for some particular type of product contributes 6%, that is more statistically significant, and therefore considered more interesting, than a country or region whose contribution changed from 50% to 55%. 
 
 * Various heuristics are employed to select the most meaningful results, for example by considering other relationships between the data.
      
@@ -136,7 +133,7 @@ In addition, the following model types and data sources are currently not suppor
 * Embedding
 
 ## Next steps
-For more information about **Power BI Desktop**, and how to get started, check out the following articles.
+For more information about **Power BI**, and how to get started, check out the following articles.
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)

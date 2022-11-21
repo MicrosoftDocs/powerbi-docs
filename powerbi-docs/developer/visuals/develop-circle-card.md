@@ -1,46 +1,40 @@
 ---
 title: Learn how to develop your own Power BI visual using the circle card visual as an example
-description: This tutorial explains how you can develop a Power BI visual
-author: KesemSharabi
-ms.author: kesharab
+description: This tutorial explains how you can develop a Power BI visual.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 09/02/2020
+ms.date: 08/07/2022
 ---
 
 # Tutorial: Develop a Power BI circle card visual
-
-As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
 In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Create a development project for your visual.
 > * Develop your visual with D3 visual elements.
 > * Configure your visual to process data.
+> * Configure your visual to adapt to size changes.
+> * Configure adaptive color and border settings for your visual.
+
+>[!NOTE]
+>For the full source code of this visual, see [circle card Power BI visual](https://github.com/microsoft/powerbi-visuals-circlecard).
 
 ## Prerequisites
 
-Before you start developing your Power BI visual, verify that you have everything listed in this section.
-
-* You need a **Power BI Pro** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
-
-* [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
-
-* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
-
-* An environment ready for developing a Power BI visual. [Set up your environment for developing a Power BI visual](environment-setup.md).
-
-* This tutorial uses the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report. If you need more information about Power BI service, and uploading files, refer to the [Get started creating in the Power BI service](../../fundamentals/service-get-started.md) tutorial.
+[!INCLUDE[Power BI tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 ## Create a development project
 
 In this section you'll create a project for the circle card visual.
 
-1. Open PowerShell and navigate to the folder you want to create your project in.
+1. Open **PowerShell** and navigate to the folder you want to create your project in.
 
 2. Enter the following command:
 
@@ -59,58 +53,13 @@ In this section you'll create a project for the circle card visual.
     ```powershell
     pbiviz start
     ```
+
     >[!IMPORTANT]
-    >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+    >Do not close the **PowerShell** window until the end of the tutorial. To stop the visual from running, enter *Ctrl+C* and if prompted to terminate the batch job, enter *Y*, and press *Enter*.
 
-## View the circle card in Power BI service
+## View the visual in Power BI service
 
-To test the circle card visual in Power BI service, we'll use the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service.
-
-You can also use your own report to test the circle card visuals.
-
->[!NOTE]
->Before you continue, verify that you [enabled the visuals developer settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
-
-1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
-
-2. Select **More options** > **Edit**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the edit option in Power B I service.](media/develop-circle-card/edit-report.png)
-
-3. Create a new page for testing, by clicking on the **New page** button at the bottom of the Power BI service interface.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the new page button in Power B I service.](media/develop-circle-card/new-page.png)
-
-4. From the **Visualizations** pane, select the **Developer Visual**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
-
-    This visual represents the custom visual that you're running on your computer. It's only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting is enabled.
-
-5. Verify that a visual was added to the report canvas.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the new visual added to the report.](media/develop-circle-card/new-visual.png)
-
-    This is a simple visual that displays the number of times its update method has been called. At this stage, the visual does not retrieve any data.
-
-    >[!NOTE]
-    >If the visual displays a connection error message, open a new tab in your browser, navigate to `https://localhost:8080/assets/status`, and authorize your browser to use this address.
-    >
-    >![Screenshot of the new visual displaying a connection error.](media/develop-circle-card/connection-error.png)
-
-6. While the new visual is selected, go to the **Fields** pane, expand **Sales**, and select **Quantity**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/develop-circle-card/fields-sales-quantity.png)
-
-7. To test how the visual is responding, resize it and notice that the *Update count* value increments every time you resize the visual.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the new visual displaying a different update count number, after being resized.](media/develop-circle-card/resized-visual.png)
+[!INCLUDE[View the Power BI visual in Power BI service](../../includes/visual-tutorial-view.md)]
 
 ## Add visual elements and text
 
@@ -136,17 +85,18 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
 3. Remove the following code lines from the *visual.ts* file.
 
     * The *VisualSettings* import:
+
         ```typescript
         import { VisualSettings } from "./settings";
         ```
 
-    * The four class-level private variable declarations.
+    * The five class-level private variable declarations.
 
     * All the lines of code inside the *constructor*.
 
     * All the lines of code inside the *update* method.
 
-    * All the remaining code lines below the *update* method, including the *parseSettings* and *enumerateObjectInstances* methods.
+    * All the remaining code below the *update* method, including the *getFormattingModel*.
 
 4. Add the following lines of code at the end of the import section:
 
@@ -162,7 +112,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
         import * as d3 from "d3";
         type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
         ```
-    
+
         >[!NOTE]
         >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library).
 
@@ -290,10 +240,7 @@ import powerbi from "powerbi-visuals-api";
 import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
 import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
 import IVisual = powerbi.extensibility.visual.IVisual;
-import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
-import VisualObjectInstance = powerbi.VisualObjectInstance;
 import DataView = powerbi.DataView;
-import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
 import IVisualHost = powerbi.extensibility.IVisualHost;
 import * as d3 from "d3";
 type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
@@ -305,7 +252,7 @@ export class Visual implements IVisual {
     private circle: Selection<SVGElement>;
     private textValue: Selection<SVGElement>;
     private textLabel: Selection<SVGElement>;
-
+    
     constructor(options: VisualConstructorOptions) {
         this.svg = d3.select(options.element)
             .append('svg')
@@ -319,7 +266,7 @@ export class Visual implements IVisual {
         this.textLabel = this.container.append("text")
             .classed("textLabel", true);
     }
-
+    
     public update(options: VisualUpdateOptions) {
         let width: number = options.viewport.width;
         let height: number = options.viewport.height;
@@ -373,9 +320,9 @@ Delete unneeded lines of code from the capabilities file.
 
 Stop the visual from running and restart it.
 
-1. In the PowerShell window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+1. In the **PowerShell** window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-2. In PowerShell, start the visual.
+2. In **PowerShell**, start the visual.
 
     ```powershell
     pbiviz start
@@ -418,17 +365,17 @@ In this section, you'll define data roles and data view mappings. You'll also mo
 
 ### Configure the capabilities file
 
-Modify the **capabilities.json** file to define the data role and data view mappings.
+Modify the **capabilities.json** file to define the data role, objects, and data view mappings.
 
-* **Defining the data role**
+* **Define the data role**
 
     Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a field that's summed up.
 
     1. Open the **capabilities.json** file in VS Code.
 
-    2. Remove all the content inside the **dataRoles** array (lines 3-12).
+    2. Remove all the content inside the *dataRoles* array (lines 3-12).
 
-    3. Insert the following code to the **dataRoles** array.
+    3. Insert the following code to the *dataRoles* array.
 
         ```json
         {
@@ -440,15 +387,15 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     4. Save the **capabilities.json** file.
 
-* **Defining the data view mapping**
+* **Define the data view mapping**
 
-    Define a filed called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
+    Define a field called *measure* in the *dataViewMappings* array. This field can be passed to the data role.
 
     1. Open the **capabilities.json** file in VS Code.
 
-    2. Remove all the content inside the **dataViewMappings** array (lines 10-30).
+    2. Remove all the content inside the *dataViewMappings* array (lines 10-30).
 
-    3. Insert the following code to the **dataViewMappings** array.
+    3. Insert the following code to the *dataViewMappings* array.
 
         ```json
         {
@@ -465,7 +412,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
 ### (Optional) Review the capabilities file code changes
 
-Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option. 
+Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option.
 
 1. In Power BI service, open the *Power BI US Sales Analysis* report. If you're using a different report to develop the circle card visual, navigate to that report.
 
@@ -477,7 +424,7 @@ Verify that the circle card visual displays the *measure* field, and review the 
     > [!Note]
     > The visual project does not yet include data binding logic.
 
-3. In the floating toolbar, select **Show Dataview**. 
+3. In the floating toolbar, select **Show Dataview**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the show dataview button, located in the circle card floating toolbar.](media/develop-circle-card/show-dataview.png)
@@ -494,13 +441,13 @@ Verify that the circle card visual displays the *measure* field, and review the 
 
 6. To toggle back to the visual, in the toolbar floating above the visual, select **Show Dataview**.
 
-### Configure the visual to consume data
+## Configure the visual to consume data
 
 Make changes to the **visual.ts** file, so that the circle card visual will be able to consume data.
 
 1. Open the **visual.ts** file in VS Code.
 
-2. Add the following line to import the `DataView` interface from the `powerbi` module.
+2. Make sure the following line appears in the file to import the `DataView` interface from the `powerbi` module. If it is not in the file, then add it.
 
     ```typescript
     import DataView = powerbi.DataView;
@@ -528,7 +475,11 @@ Make changes to the **visual.ts** file, so that the circle card visual will be a
 
 4. Save the **visual.ts** file.
 
-5. Review the visual in Power BI service. The visual now displays the value and the display name.
+5. Review the visual in Power BI service.
+
+The visual now displays the name and value of the selected data field.
+
+You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
 
 ## Next steps
 
@@ -536,10 +487,7 @@ Make changes to the **visual.ts** file, so that the circle card visual will be a
 > [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 
 > [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
+> [Power BI visuals project structure](visual-project-structure.md)
 
 > [!div class="nextstepaction"]
 > [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
-
-> [!div class="nextstepaction"]
-> [Power BI visuals project structure](visual-project-structure.md)

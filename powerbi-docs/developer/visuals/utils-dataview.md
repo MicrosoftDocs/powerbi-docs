@@ -1,14 +1,14 @@
 ---
 title: Introduction to use Data view utils in Power BI visual
-description: This article describes how to use SVG utils  simplify parsing of the DataView object for Power BI visuals
-author: KesemSharabi
-ms.author: kesharab
-manager: rkarlin
+description: This article describes how to use SVG utils  simplify parsing of the DataView object for Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
+manager:
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
-ms.date: 06/18/2019
+ms.topic: conceptual
+ms.date: 10/12/2022
 ---
 
 # DataViewUtils
@@ -19,8 +19,9 @@ The `DataViewUtils` is a set of functions and classes to simplify parsing of the
 
 To install the package, you should run the following command in the directory with your current custom visual:
 
-npm install powerbi-visuals-utils-dataviewutils --save
-This command installs the package and adds a package as a dependency to your package.json
+`npm install powerbi-visuals-utils-dataviewutils --save`
+
+This command installs the package and adds a package as a dependency to your `package.json` file.
 
 ## DataViewWildcard
 
@@ -30,7 +31,7 @@ This command installs the package and adds a package as a dependency to your pac
 
 Example:
 
- ```typescript
+```typescript
 import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 
 let selector = dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals);
@@ -678,6 +679,10 @@ export class YourVisual extends IVisual {
 ```
 
 ## enumerateObjectInstances
+
+> [!IMPORTANT]
+> `enumerateObjectInstances` was deprecated in API version 5.1. It was replaced by [`getFormattingModel`](format-pane.md).
+> For `FormattingModel` utils see [utils formatting model](./utils-formatting-model.md).
 
 This static method enumerates properties and returns an instance of `VisualObjectInstanceEnumeration`.
 

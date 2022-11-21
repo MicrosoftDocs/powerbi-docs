@@ -1,169 +1,125 @@
-﻿- name: "Power BI admin and enterprise"
+- name: Power BI administration
   href: index.yml
-  expanded: true
+  expanded: false
   items:
-  - name: Overview
-    expanded: true
-    items: 
-    - name: "What is Power BI administration?"
-      href: service-admin-administering-power-bi-in-your-organization.md
-    - name: "Where is my tenant located?"
-      href: service-admin-where-is-my-tenant-located.md
-    - name: What is Power BI Premium?
-      href: service-premium-what-is.md
-  - name: Concepts
-    expanded: true
+  - name: General info for admins
+    expanded: false
     items:
-    - name: "Administration role in Microsoft 365"
-      href: service-admin-role.md
-    - name: "Licensing for your organization"
-      href: service-admin-licensing-organization.md
-    - name: "Power BI for US Government"
-      items:
-      - name: "Power BI for US Government"
-        href: service-govus-overview.md
-      - name: "Enroll a US Government organization"
-        href: service-govus-signup.md
-    - name: Power BI in national clouds
-      items:
-      - name: "Migrate to Go Local German regions"
-        href: service-admin-migrate-data-germany.md    
-      - name: "FAQ for Germany Cloud customers"
-        href: service-govde-faq.md
-    - name: "Frequently asked questions (FAQ)"
-      href: service-admin-faq.md
-    - name: "High availability and failover FAQ"
-      href: service-admin-failover.md
-    - name: Power BI Premium
-      items:
-      - name: Managing Premium capacities
-        href: service-premium-capacity-manage.md
-      - name: Optimizing Premium capacities
-        href: service-premium-capacity-optimize.md
-      - name: Premium capacity scenarios
-        href: service-premium-capacity-scenarios.md
-      - name: Power BI Premium FAQ
-        href: service-premium-faq.md
-      - name: Power BI Premium Per User FAQ
-        href: service-premium-per-user-faq.md        
-  - name: How to
-    items: 
-    - name: "Licensing and sign-up"
-      items:
-      - name: "Get Power BI for your organization"
-        href: service-admin-org-subscription.md
-      - name: "Purchase Power BI Pro"
-        href: service-admin-purchasing-power-bi-pro.md
-      - name: "Disable self-service sign-up"
-        href: service-admin-disable-self-service.md
-      - name: "View and manage user licenses"
-        href: service-admin-manage-licenses.md
-      - name: "Sign up with a Microsoft 365 Trial"
-        href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-      - name: "Add Power BI with a Microsoft 365 partner"
-        href: service-admin-syndication-partner.md
-    - name: "Using the admin portal"
-      href: service-admin-portal.md
-    - name: "Use private links for Power BI"
-      href: service-security-private-links.md      
-    - name: "Manage Power BI visuals admin settings"
-      href: organizational-visuals.md
-    - name: "Find users that have signed in"
-      href: service-admin-access-usage.md
-    - name: "Track user activities"
-      href: service-admin-auditing.md
-    - name: "Track service health"
-      href: service-admin-health.md
-    - name: "Enable service principal authentication for read-only admin APIs"
-      href: read-only-apis-service-principal-authentication.md
-    - name: "Closing your account"
-      href: service-admin-closing-your-account.md
-    - name: "Using Azure AD B2B"
-      href: service-admin-azure-ad-b2b.md
-    - name: "Manage Power BI Desktop sign-in form"
-      href: desktop-admin-sign-in-form.md
-    - name: "Data protection"
-      items:
-      - name: "Data protection in Power BI"
-        href: service-security-data-protection-overview.md
-      - name: "Sensitivity label overview"
-        href: service-security-sensitivity-label-overview.md
-      - name: "Enable sensitivity labeling"
-        href: service-security-enable-data-sensitivity-labels.md
-      - name: "How to apply sensitivity labels"
-        href: service-security-apply-data-sensitivity-labels.md
-      - name: "Use Microsoft Cloud App Security with Power BI"
-        href: service-security-using-microsoft-cloud-app-security-controls.md
-      - name: "Protection metrics report"
-        href: service-security-data-protection-metrics-report.md
-    - name: "Row-level security"
-      href: service-admin-rls.md
-    - name: Enable content certification
-      href: service-admin-setup-certification.md
-    - name: Configure mobile apps with Intune
-      href: service-admin-mobile-intune.md
-    - name: Power BI Premium
-      items:
-      - name: Purchase Power BI Premium
-        href: service-admin-premium-purchase.md
-      - name: Configure and manage capacities
-        href: service-admin-premium-manage.md
-      - name: Configure workloads
-        href: service-admin-premium-workloads.md
-      - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md        
-      - name: Monitor capacities with the app
-        href: service-admin-premium-monitor-capacity.md
-      - name: Monitor Premium workload metrics
-        href: service-premium-metrics-app.md      
-      - name: Monitor capacities in the Admin portal
-        href: service-admin-premium-monitor-portal.md
-      - name: Configure large datasets
-        href: service-premium-large-models.md
-      - name: Configure Multi-Geo
-        href: service-admin-premium-multi-geo.md
-      - name: Bring your own encryption keys
-        href: service-encryption-byok.md
-      - name: Use customer managed keys
-        href: service-encryption-customer-managed-keys.md        
-      - name: Restart a Premium capacity
-        href: service-admin-premium-restart.md
-      - name: Dataset connectivity with the XMLA endpoint
-        href: service-premium-connect-tools.md
-      - name: Automation with service principals
-        href: service-premium-service-principal.md
-      - name: Troubleshoot XMLA endpoint connectivity
-        href: troubleshoot-xmla-endpoint.md
-  - name: Reference
-    items: 
-    - name: "PowerShell, REST APIs, and .NET SDK"
-      href: service-admin-reference.md
-    - name: "Power BI cmdlets for PowerShell"
-      href: /powershell/power-bi/
-      maintainContext: true
+    - name: What is Power BI administration?
+      href: service-admin-administering-power-bi-in-your-organization.md
+    - name: Administration role in Microsoft 365
+      href: service-admin-role.md      
+    - name: How to use the same account login for Power BI and Azure
+      href: service-admin-how-to-use-the-same-account-as-azure.md 
+    - name: Frequently asked questions (FAQ)
+      href: service-admin-faq.yml                       
+  - name: System administration
+    expanded: false
+    items:
+    - name: Manage Power BI Desktop sign-in form
+      href: desktop-admin-sign-in-form.md   
+    - name: Manage Power BI visuals admin settings
+      href: organizational-visuals.md           
     - name: Service URL reference
-      href: power-bi-whitelist-urls.md
-  - name: Resources
-    items: 
-    - name: "Power BI governance and deployment approaches"
-      href: service-admin-governance.md
-    - name: "Power BI security"
-      href: service-admin-power-bi-security.md      
-    - name: "Privacy levels"
-      href: desktop-privacy-levels.md
-  - name: Troubleshoot
-    items: 
-    - name: "Can't sign in?"
-      href: power-bi-cannot-sign-in.md
-    - name: "Power BI support options"
-      href: service-support-options.md
-    - name: "Service interruption notifications"
-      href: service-interruption-notifications.md
-    - name: "Forgot your password for Power BI?"
-      href: service-admin-forgot-your-password.md
-    - name: "Capturing additional diagnostic information for Power BI"
-      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
-    - name: "Alternate email address for Power BI"
-      href: service-admin-alternate-email-address-for-power-bi.md
-    - name: "How to use the same account login for Power BI and Azure"
-      href: service-admin-how-to-use-the-same-account-as-azure.md
+      href: power-bi-allow-list-urls.md     
+    - name: Share metadata with Microsoft 365 services
+      href: admin-share-power-bi-metadata-microsoft-365-services.md
+    - name: Find where data is stored
+      href: service-admin-where-is-my-tenant-located.md
+    - name: Data storage for cross-service capabilities
+      href: service-admin-m365-data-access-storage.md      
+    - name: Move between regions
+      href: /power-bi/support/service-admin-region-move
+    - name: Track service health
+      href: /power-bi/support/service-admin-health
+    - name: Find users that have signed in
+      href: service-admin-access-usage.md
+    - name: Track user activities
+      href: service-admin-auditing.md
+    - name: Set up Data in space for the mobile apps (preview)
+      href: ../consumer/mobile/mobile-apps-data-in-space-set-up.md        
+  - name: Monitor and manage Power BI
+    expanded: false
+    items:
+    - name: About the Admin portal
+      href: service-admin-portal.md      
+    - name: Configure Azure connections
+      href: service-admin-portal-azure-connections.md
+    - name: Customize Power BI branding
+      href: service-admin-custom-branding.md
+    - name: Manage capacity settings
+      href: service-admin-portal-capacity-settings.md
+    - name: Manage embed codes
+      href: service-admin-portal-embed-codes.md
+    - name: Manage featured content
+      href: service-admin-portal-featured-content.md
+    - name: Manage organizational visuals
+      href: service-admin-portal-organizational-visuals.md
+    - name: Manage Premium Per User
+      href: service-admin-portal-premium-per-user.md
+    - name: Manage users
+      href: service-admin-portal-users.md
+    - name: View audit logs
+      href: service-admin-portal-audit-logs.md
+    - name: View information protection metrics
+      href: service-admin-portal-protection-metrics.md
+    - name: View refresh summary
+      href: service-admin-portal-refresh-summary.md
+    - name: View usage metrics
+      href: service-admin-portal-usage-metrics.md
+    - name: View workspace info
+      href: service-admin-portal-workspaces.md
+  - name: Tenant settings
+    expanded: false
+    items:
+    - name: About tenant settings
+      href: service-admin-portal-about-tenant-settings.md
+    - name: Tenant settings list
+      expanded: false
+      items:
+      - name: Help and support settings
+        href: /power-bi/support/service-admin-portal-help-support
+      - name: Workspace settings
+        href: service-admin-portal-workspace.md       
+      - name: Information protection
+        href: service-admin-portal-information-protection.md     
+      - name: Export and sharing settings
+        href: service-admin-portal-export-sharing.md      
+      - name: Discovery settings
+        href: service-admin-portal-discovery.md
+      - name: Content pack and app settings
+        href: service-admin-portal-content-pack-app.md
+      - name: Integration settings
+        href: service-admin-portal-integration.md
+      - name: Power BI visuals
+        href: service-admin-portal-power-bi-visuals.md
+      - name: R and Python visuals settings
+        href: service-admin-portal-r-python-visuals.md
+      - name: Audit and usage settings
+        href: service-admin-portal-audit-usage.md
+      - name: Dashboard settings
+        href: service-admin-portal-dashboard.md
+      - name: Developer settings
+        href: service-admin-portal-developer.md
+      - name: Admin API settings
+        href: service-admin-portal-admin-api-settings.md
+      - name: Dataflow settings
+        href: service-admin-portal-dataflow.md    
+      - name: Template app settings
+        href: service-admin-portal-template-app.md           
+      - name: Q&A settings
+        href: service-admin-portal-qa.md
+      - name: Dataset Security
+        href: service-admin-portal-dataset-security.md
+      - name: Advanced networking 
+        href: service-admin-portal-advanced-networking.md
+      - name: Metrics settings
+        href: service-admin-portal-goals-settings.md
+      - name: User experience experiments
+        href: service-admin-portal-user-experience-experiments.md
+      - name: Share data with your Microsoft 365 services
+        href: service-admin-portal-share-data-microsoft-365-services.md
+      - name: Insights settings
+        href: service-admin-portal-insights.md
+      - name: Quick measure suggestions settings
+        href: service-admin-portal-quick-measure-suggestions-settings.md

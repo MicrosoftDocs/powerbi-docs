@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: quickstart
-ms.date: 01/10/2020
+ms.date: 05/14/2021
+ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: quickstart
 #Customer intent: As a data analyst or report creator, I want to connect to data in Power BI Desktop, so I can use Power BI Desktop to build data models and create reports.
 ---
@@ -15,7 +16,7 @@ LocalizationGroup: quickstart
 
 In this quickstart, you connect to data using Power BI Desktop, which is the first step in building data models and creating reports.
 
-![Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Power BI Desktop](media/desktop-quickstart-connect-to-data/what-is-desktop_01.png)
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
@@ -37,7 +38,7 @@ Once you install Power BI Desktop, launch the application so it's running on you
 
 With Power BI Desktop, you can connect to many different types of data. These sources include basic data sources, such as a Microsoft Excel file. You can connect to online services that contain all sorts of data, such as Salesforce, Microsoft Dynamics, Azure Blob Storage, and many more.
 
-To connect to data, from the **Home** ribbon select **Get Data**.
+To connect to data, from the **Home** ribbon select **Get data**.
 
 ![Get Data on Home ribbon](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 

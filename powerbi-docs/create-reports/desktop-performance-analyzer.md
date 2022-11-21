@@ -7,22 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/23/2020
+ms.date: 09/09/2021
 LocalizationGroup: Create reports
 ---
 # Use Performance Analyzer to examine report element performance
 
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
 In **Power BI Desktop** you can find out how each of your report elements, such as visuals and DAX formulas, are performing. Using the **Performance Analyzer**, you can see and record logs that measure how each of your report elements performs when users interact with them, and which aspects of their performance are most (or least) resource intensive.
 
-![Performance analyzer](media/desktop-performance-analyzer/performance-analyzer-01.png)
+:::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-01-inline.png" alt-text="Screenshot shows Performance analyzer." lightbox="media/desktop-performance-analyzer/performance-analyzer-01-expanded.png":::
 
 Performance Analyzer inspects and displays the duration necessary for updating or refreshing all visuals that user interactions initiate, and presents the information so you can view, drill down, or export the results. Performance Analyzer can help you identify visuals that are impacting the performance of your reports, and identify the reason for the impact.
 
 ## Displaying the Performance Analyzer pane
 
-In **Power BI Desktop** select the **View** ribbon. In the **Show** area of the **View** ribbon you can select the checkbox next to **Performance Analyzer** to display the Performance Analyzer pane.
+In **Power BI Desktop** select the **View** ribbon, and then select **Performance Analyzer** to display the Performance Analyzer pane.
 
-![Select Performance analyzer in the View ribbon](media/desktop-performance-analyzer/performance-analyzer-02.png)
+:::image type="content" source="media/desktop-performance-analyzer/performance-analyzer-02-inline.png" alt-text="Screenshot shows how to select Performance analyzer in the View ribbon." lightbox="media/desktop-performance-analyzer/performance-analyzer-02-expanded.png":::
 
 Once selected, the Performance Analyzer is displayed in its own pane, to the right of the report canvas.
 
@@ -30,7 +32,7 @@ Once selected, the Performance Analyzer is displayed in its own pane, to the rig
 
 Performance analyzer measures the processing time (including the time to create or update a visual) required to update report elements initiated as a result of any user interaction that results in running a query. For example, adjusting a slicer requires the slicer visual to be modified, a query to be sent to the data model, and affected visuals that must be updated as a result of the new settings. 
 
-To have Performance Analyzer begin recording, simply select **Start recording**
+To have Performance Analyzer begin recording, simply select **Start recording**.
 
 ![Start recording](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
@@ -51,8 +53,9 @@ Each visual's log information includes the time spent (duration) to complete the
 * **DAX query** - if a DAX query was required, this is the time between the visual sending the query, and for Analysis Services to return the results.
 * **Visual display** - time required for the visual to draw on the screen, including time required to retrieve any web images or geocoding. 
 * **Other** - time required by the visual for preparing queries, waiting for other visuals to complete, or performing other background processing.
+* **Evaluated parameters** (preview) - time spent evaluating the field parameters within a visual. Learn more about [field parameters (preview)](../create-reports/power-bi-field-parameters.md).
 
-The **Duration (ms)** values indicate the difference between a *start* and *end* timestamp for each operation. Most canvas and visual operations execute sequentially on a single User Interface thread, which is shared by multiple operations. The reported durations include time spent queued while other operations complete. The [Performance Analyzer sample](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) on GitHub and its associated [documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) provide details about how visuals query data, and how they render.
+The **Duration (ms)** values indicate the difference between a *start* and *end* timestamp for each operation. Most canvas and visual operations execute sequentially on a single User Interface thread, which is shared by multiple operations. The reported durations include time spent queued while other operations complete. The [Performance Analyzer sample](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer) on GitHub and its associated [documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) provide details about how visuals query data, and how they render.
 
 
 ![elements of log information](media/desktop-performance-analyzer/performance-analyzer-06.png)
@@ -61,11 +64,14 @@ After you've interacted with elements of the report you want to measure with Per
 
 To clear out the information in the Performance Analyzer pane, select **Clear**. All information is erased and is not saved when you select **Clear**. See the next section to learn how to save information in logs. 
 
+> [!TIP]
+> When Power BI processes queries and their associated metadata, the processing of the query can be impacted by the complexity of the schema, the number of tables in the database(s), the complexity of the relationships between them, and the number of foreign key constraints on the tables. Such complexity can result in initial delays in returning or rendering a report.
+
 ## Refreshing visuals
 
 You can select **Refresh visuals** in the Performance Analyzer pane to refresh all visuals on the current page of the report, and thereby have Performance Analyzer gather information about all such visuals.
 
-You can also refresh individual visuals. When Performance Analyzer is recording, you can select **Refresh this visual** found in the top-right corner of each visual, to refresh that visual, and capture its performance information.
+You can also refresh individual visuals. When Performance Analyzer is recording, you can select **Analyze this visual** found in the top-right corner of each visual, to refresh that visual, and capture its performance information.
 
 ![refresh an individual visual](media/desktop-performance-analyzer/performance-analyzer-07.png)
 
@@ -88,5 +94,5 @@ For more information about **Power BI Desktop**, and how to get started, check o
 
 For information about the Performance Analyzer sample, check out the following resources.
 
-* [Performance Analyzer sample](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
-* [Performance Analyzer sample documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)
+* [Performance Analyzer sample](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer)
+* [Performance Analyzer sample documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

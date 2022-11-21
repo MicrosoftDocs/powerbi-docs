@@ -1,5 +1,5 @@
 ---
-title: Using templates in Power BI Desktop
+title: Create and use report templates in Power BI Desktop
 description: Create and share templates in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -7,28 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/16/2019
+ms.date: 05/28/2021
 LocalizationGroup: Connect to data
 ---
-# Create report templates for Power BI Desktop
+# Create and use report templates in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 With **Power BI Desktop,** you can create compelling reports that share insights across your entire organization. With Power BI Desktop **templates**, you can streamline your work by creating a report template, based on an existing template, which you or other users in your organization can use as a starting point for a new report's layout, data model, and queries. Templates in **Power BI Desktop** help you jump-start and standardize report creation.
 
 ![Export report as a template](media/desktop-templates/desktop-templates-01.png)
 
-## Creating templates
+## Creating report templates
 
 Power BI report templates contain the following information from the report from which they were generated:
 
 * Report **pages**, visuals, and other visual elements
-* The **data model definition**, including the schema, relationships, measures, and other model definition artifacts
+* The **data model definition**, including the schema, relationships, measures, and other model definition items
 * All **query definitions**, such as queries, Query Parameters, and other query elements
 
 What is *not* included in templates is the report's data. 
 
 Report templates use the file extension .PBIT (compare to Power BI Desktop reports, which use the .PBIX extension). 
 
-To create a report template, select **File > Export > Power BI template** from the menu, which brings up the following window, which prompts you to provide a description for the template. In this example, our description for the template is *Monthly sales report template.*
+To create a report template, select **File > Export > Power BI template** from the menu, which brings up the following window, which prompts you to provide a description for the template. In this example, our description for the template is *Monthly sales report template*.
 
 ![Export template description dialog](media/desktop-templates/desktop-templates-02.png)
 
@@ -41,7 +43,7 @@ And that's it, your Power BI report template is created in the file location you
 > [!NOTE]
 > Power BI report template files are generally much smaller than a Power BI Desktop report, because templates to not contain any data - just the report definitions themselves. 
 
-## Using templates
+## Using report templates
 
 To use a Power BI report template, simply open it in Power BI Desktop and begin using it. You can open Power BI report templates in two ways:
 
@@ -50,15 +52,15 @@ To use a Power BI report template, simply open it in Power BI Desktop and begin 
 
 ![Import a template](media/desktop-templates/desktop-templates-04.png)
 
-When you open a report template, a dialog appears values for any parameters that are defined in the report on which the template is based. For example, if a report analyzes customers based on country or region and has a *Country* parameter to specify the customer base, a prompt appears for you to select a *Country* value from the list of values that were specified when defining the parameter. 
+When you open a report template, a dialog may appear. The dialog asks for values for any parameters that are defined in the report the template is based on. For example, if a report analyzes customers based on country or region and has a *CountryRegion* parameter to specify the customer base, select a *CountryRegion* value from that list.  Each list of values are specified when defining the parameter. 
 
 ![Specify parameters for a template](media/desktop-templates/desktop-templates-05a.png)
 
-Once any required parameters are provided, you're prompted for the location of the underlying data associated with the report. The current report creator can then connect to data based on their credentials.
+After any required parameters are provided, you're prompted for the location of the underlying data associated with the report. The current report creator can then connect to data based on their credentials.
 
 ![Specify data location for a template](media/desktop-templates/desktop-templates-05.png)
 
-Once parameters and data have been specified, a report is created containing all the pages, visuals, data model artifacts, and queries that were part of the report on which the template is based. 
+Once parameters and data have been specified, a report is created. This report contains all the pages, visuals, data model items, and queries that are in the report on which the template is based.
 
 That's it. Creating and using report templates in Power BI Desktop is easy, enabling you to easily reproduce compelling layouts and other report aspects, and share them with others.
 

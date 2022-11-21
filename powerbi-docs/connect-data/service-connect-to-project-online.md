@@ -44,7 +44,7 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
     > [!NOTE]
     > You need to have Portfolio Viewer, Portfolio Manager, or Administrator permissions for the Project Web App you are connecting to.
 
-9. You’ll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data, you will see the contents of your new workspace. You may need to refresh the dataset to get the latest updates. 
+9. You'll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data, you will see the contents of your new workspace. You may need to refresh the dataset to get the latest updates. 
 
     After Power BI imports the data you will see the report with 13 pages and dataset in the nav pane. 
 
@@ -62,7 +62,7 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 
 **Expand the Template App**
 
-Download the [GitHub PBIT file](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) to further customize and update the Content Pack.
+Download the [GitHub PBIT file](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) to further customize and update the template app.
 
 ## Next steps
 [Get started in Power BI](../fundamentals/service-get-started.md)

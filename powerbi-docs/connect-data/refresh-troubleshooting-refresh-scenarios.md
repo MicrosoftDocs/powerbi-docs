@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 12/14/2020
+ms.date: 01/06/2021
 LocalizationGroup: Data refresh
 ---
 
@@ -26,7 +26,6 @@ You should always ensure that basic requirements for refresh are met and verifie
 
 Once you've confirmed those requirements are met, take a look through the following sections for more troubleshooting. 
 
-
 ## Email notifications
 
 If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email or an email list you're subscribed to from the appropriate datasets in Power BI. They can do this from the following area in the Power BI admin portal.
@@ -35,7 +34,7 @@ If you're coming to this article from an email notification, and you no longer w
 
 ## Refresh using Web connector doesn't work properly
 
-If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you have updated your dataset or report after November 18th, 2016, you must use a gateway for refresh to work properly.
+If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you've updated your dataset or report after November 18, 2016, you must use a gateway for refresh to work properly.
 
 ## Unsupported data source for refresh
 
@@ -44,7 +43,7 @@ When configuring a dataset, you may get an error indicating the dataset uses an 
 
 ## Dashboard doesn't reflect changes after refresh
 
-Please wait about 10-15 minutes for a refresh to be reflected in the dashboard tiles. If it is still not showing up, re-pin the visualization to the dashboard.
+Wait about 10-15 minutes for a refresh to be reflected in the dashboard tiles. If it's still not showing up, repin the visualization to the dashboard.
 
 ## GatewayNotReachable when setting credentials
 
@@ -58,23 +57,25 @@ This could be an issue with your M script within your Power BI Desktop file or E
 
 For a list of errors you may encounter with dashboard tiles, and explanations, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
 
-## Refresh fails when updating data from sources that use AAD OAuth
+## Refresh fails when updating data from sources that use Azure AD OAuth
 
-The Azure Active Directory (**AAD**) OAuth token, used by many different data sources, expires in approximately one hour. You can run into situations where loading data takes longer than the token expiration (more than one hour), since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
+The Azure Active Directory (**Azure AD**) OAuth token, used by many different data sources, expires in approximately one hour. You can run into situations where loading data takes longer than the token expiration (more than one hour), since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
 
-Data sources that use AAD OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, this may be the reason.
+Data sources that use Azure AD OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, this may be the reason.
 
-Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance (or other AAD OAuth data source) is so large that it can run into the two-hour data-load threshold, you may experience a data load timeout from the Power BI service as well.
+Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance (or other Azure AD OAuth data source) is so large that it can run into the two-hour data-load threshold, you may experience a data load timeout from the Power BI service as well.
 
-Also note that, for refresh to work properly, when connecting to a **SharePoint Online** data source using AAD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
+Also note that, for refresh to work properly, when connecting to a **SharePoint Online** data source using Azure AD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
+
+In addition, if you want to connect to a data source from Power BI service using OAuth2, the data source must be in the same tenant as Power BI service. Currently, multi-tenant connection scenarios aren’t supported with OAuth2.
 
 ## Uncompressed data limits for refresh
 
-The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit on the amount of uncompressed data that is processed during refresh to 10 GB. This limit accounts for the compression, and therefore is much higher than 1 GB. Datasets in Power BI Premium are not subject to this limit. If refresh in the Power BI service fails for this reason, please reduce the amount of data being imported to Power BI and try again.
+The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit on the amount of uncompressed data that is processed during refresh to 10 GB. This limit accounts for the compression, and therefore is much higher than 1 GB. Datasets in Power BI Premium aren't subject to this limit. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
 
 ## Scheduled refresh timeout
 
-Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
+Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
 
 ## Scheduled refresh failures
 
@@ -87,6 +88,26 @@ This error can occur because of expired cached credentials. Clear your internet 
 ## Data refresh failure because of password change or expired credentials
 
 Data refresh can also fail due to expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. This forces an update of your credentials.
+
+## Refresh a column of the ANY type containing TRUE/FALSE results in unexpected values
+
+When you create a report in Power BI Desktop that contains an ANY data type column, and that column contains TRUE/FALSE values, the values of that column can differ between the Power BI Desktop and the Power BI service after a refresh. In Power BI Desktop, the underlying engine converts the boolean values to strings, retaining TRUE or FALSE values. In the Power BI service, the underlying engine converts the values to objects, and then converts the values to -1 or 0.
+
+Visuals created in Power BI Desktop using such columns may behave or appear as designed prior to a refresh event, but may change (due to TRUE/FALSE being converted to -1/0) after the refresh event.
+
+## Resolve the error: Container exited unexpectedly with code 0x0000DEAD
+
+If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the dataset.
+
+## Refresh operation throttled by Power BI Premium
+
+A Premium capacity may throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities, or more rarely, in Premium Gen2 capacities. When a refresh operation is canceled the following error message is logged into the refresh history:
+
+*The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
+ 
+If the error occurs frequently, use the [schedule view](../connect-data/refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the [Capacities and SKUs](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table.
+
+To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations.
 
 ## Next steps
 

@@ -7,8 +7,8 @@ services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: reference
-ms.date: 11/21/2020
+ms.topic: conceptual
+ms.date: 11/03/2022
 ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -69,7 +69,7 @@ A mathematical determination of the size or number of something.
 [Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
-A Power BI [visual type](end-user-visual-type.md).
+A Power BI [visual type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 **card** (Power BI Home)    
 Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
@@ -77,11 +77,11 @@ Power BI Home displays rectangular and square pictures that represent dashboards
 **certified custom visual**    
 A Power BI custom visual that has met requirements and passed strict security testing.
 
-**classification**    
-Also called data classification. This option can be turned on by Power BI admins to raise awareness of the level of security required for a dashboard. The classification types can be customized by an organization.
-
 **connect live**    
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
+
+**connector**    
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk and more than 100 additional data sources. 
 
 **container**    
 The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
@@ -91,9 +91,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 
 **content list**    
 The content index for an app.
-
-**content pack**    
- A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
 
 **content view**
 
@@ -118,9 +115,6 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 **dashboard**    
 In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [basic concepts, dashboards](end-user-basic-concepts.md).
 
-**data classification**    
-See classification
-
 **data connector**    
 See connectors
 
@@ -140,11 +134,11 @@ Free Power BI tool used primarily be report designers, admins, and developers.
 Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
 
 **Dimension**    
-Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.   
+Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.   
 
 **drill up, drill down, drillthrough**    
-In Power BI, use drill down and drill up to refer to the ability to explore the next level of detail in a report or visual. 
-Use drillthrough to refer to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
+In Power BI, "drill down" and "drill up" refer to the ability to explore the next level of detail in a report or visual. 
+"Drill through" refers to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
 Drill to details commonly means to show the underlying records.
 
 ## E
@@ -237,6 +231,7 @@ This has been replaced with **nav pane** but may still appear in some documentat
 The controls along the left edge of Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **license**    
@@ -272,6 +267,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 The controls along the left edge of the Power BI service.
 
 First instance: navigation pane
+
 Subsequent mentions or tight spaces: nav pane
 
 **notification**    
@@ -299,13 +295,13 @@ PaaS stands for platform as a service. For example, Power BI Embedded.
 Reports have one or more pages. Each tab on the report canvas represents a page.
 
 **paginated reports**    
-Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
+Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
 
 **pbiviz**    
 The file extension for a Power BI custom visual.
 
 **pbix**    
-The file extension for a Power BI Desktop file.
+The file extension for a Power BI Desktop file (letters pronounced individually as P-B-I-X).
 
 **permissions**    
 What a user can and can't do in Power BI is based on permissions. As a *consumer* you won't have the same permissions as a *designer*, administrator, or developer.
@@ -347,6 +343,7 @@ An online SaaS (Software as a service) service. For more information, see [What 
 A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
+
 See *account*.
 
 **publish**    
@@ -380,7 +377,7 @@ Read-only view for reports (as opposed to Editing View).
 The ability to stream data and update dashboards in real time from sources such as sensors, social media, usage metrics, and anything else from which time-sensitive data can be collected or transmitted.  
 
 **Recent**    
-The container in the nav pane that holds all the individual artifacts that were accessed last.
+The container in the nav pane that holds all the individual items that were accessed last.
 
 **related content**    
 Shows the individual pieces of content that contribute to the current content. For example, for a dashboard, you can see the reports and datasets providing the data and visualizations on the dashboard.   
@@ -421,11 +418,11 @@ A standalone resource available to customers by subscription or license. A servi
 The location for Power BI users to manage their own general settings, such as whether to preview new features, set the default language, close their account, etc. Also, users manage individual settings for content assets, alerts, and subscriptions. Represented by a cog icon.
 
 **share, sharing**    
-In Power BI, sharing typically means directly sharing an individual artifact (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
+In Power BI, sharing typically means directly sharing an individual item (a dashboard or report) with one or more people by using their email address. Requires a Power BI Pro license for sender and recipient.
 On mobile devices, share can refer to native OS share functionality, such as "annotate and share."  
 
 **Shared with me**     
-The container in the nav pane that holds all the individual artifacts that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual items that were directly shared by another Power BI user.
 
 **snapshot**    
 In Power BI, a snapshot is a static image vs. a live image of a tile, dashboard, or report.

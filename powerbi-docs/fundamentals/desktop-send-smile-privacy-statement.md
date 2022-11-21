@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/23/2022
 LocalizationGroup: Learn more
 ---
 # Power BI Desktop Send a Smile Privacy Statement
 
-Beginning with the March 2018 version of **Power BI Desktop**, error reporting uses the Windows Error Reporting platform rather than the *Send a Smile* or *Send a Frown* functionality. You can get more information about the Windows Error Reporting platform in the [Windows Privacy blog](https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/). 
+Error reporting uses the Windows Error Reporting platform rather than the *Send a Smile* or *Send a Frown* functionality. You can get more information about the Windows Error Reporting platform in the [Windows Privacy blog](https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/). 
 
 ## For versions of Power BI Desktop prior to March 2018
 
@@ -60,4 +60,3 @@ Microsoft is committed to helping protect the security of your personal informat
 
 ## Changes to this Privacy Statement
 Microsoft might occasionally update this Privacy Statement. The last updated date at the top of the Privacy Statement is updated with every revision. We encourage you to periodically review this Privacy Statement to be informed of how Microsoft is helping to protect your information.
-

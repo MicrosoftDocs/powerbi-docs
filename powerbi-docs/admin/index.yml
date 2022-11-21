@@ -1,73 +1,68 @@
 ### YamlMime:Landing
 
-title: Power BI admin and enterprise documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+title: Power BI administration
+summary: Administer Power BI for your organization.
 
 metadata:
-  title: Power BI admin and enterprise documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  title: Power BI service administration
+  description: Learn how to use the Power BI service admin tools.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-admin
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 03/17/2020
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 10/19/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: Power BI for admins and enterprises
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: "What is Power BI administration?"
-            url: service-admin-administering-power-bi-in-your-organization.md
-          - text: "What is Power BI Premium?"
-            url: service-premium-what-is.md
-      - linkListType: concept
-        links:
-          - text: "Administration role"
-            url: service-admin-role.md
 
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: concept
+      - linkListType: get-started
         links:
-          - text: "Licensing for your organization"
-            url: service-admin-licensing-organization.md
-          - text: "Using the admin portal"
-            url: service-admin-portal.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Purchase Power BI Pro"
-            url: service-admin-purchasing-power-bi-pro.md
-          - text: "Sign up with a Microsoft 365 Trial"
-            url: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-          - text: "Add Power BI with a Microsoft 365 partner"
-            url: service-admin-syndication-partner.md
+          - text: What is Power BI administration
+            url: service-admin-administering-power-bi-in-your-organization.md
+          - text: Use the same account for Power BI and Azure
+            url: service-admin-how-to-use-the-same-account-as-azure.md
 
-  # Card
-  - title: Manage your organization
+  # Card (optional)
+  - title: System administration
     linkLists:
-      - linkListType: concept
-        links:
-          - text: "Premium capacity scenarios"
-            url: service-premium-capacity-scenarios.md
       - linkListType: how-to-guide
         links:
-          - text: "Where is my tenant located?"
+          - text: Manage the Power BI Desktop sign-in form
+            url: desktop-admin-sign-in-form.md
+          - text: Add Power BI URLs to your allowlist
+            url: power-bi-allow-list-urls.md
+          - text: Add custom branding
+            url: service-admin-custom-branding.md
+          - text: Find where data is stored
             url: service-admin-where-is-my-tenant-located.md
-          - text: "Find users that have signed in"
-            url: service-admin-access-usage.md
-          - text: "Auditing Power BI"
-            url: service-admin-auditing.md
-          - text: "Track service health"
-            url: service-admin-health.md
-          - text: "Closing your Power BI account"
-            url: service-admin-closing-your-account.md
+          - text: Data storage for cross-service capabilities
+            url: service-admin-m365-data-access-storage.md      
+          - text: Find your org's default region
+            url: service-admin-where-is-my-tenant-located.md
+
+  # Card (optional)
+  - title: Monitoring
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Track user activities
+            url: service-admin-auditing.md           
+            
+  # Card (optional)
+  - title: Feature enablement
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Admin portal settings
+            url: service-admin-portal.md
+          - text: Settings for Power BI visual
+            url: organizational-visuals.md

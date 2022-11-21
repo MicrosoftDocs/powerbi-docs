@@ -1,15 +1,17 @@
 ---
-title: Connect a report to a dataset using dynamic binding in Power BI embedded analytics 
-description: Learn how to embed a report using dynamic binding.
-author: KesemSharabi
-ms.author: kesharab
-ms.topic: how-to
+title: Connect a Power BI report to a dataset using dynamic binding
+description: Learn how to embed a Power BI report using dynamic binding.
+author: mberdugo
+ms.author: monaberdugo
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/07/2019
+ms.date: 06/07/2022
 ---
 
-# Connect a report to a dataset using dynamic binding 
+# Connect a report to a dataset using dynamic binding
+
+✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
 
 When a report is connected to a dataset, you can use dynamic binding. The connection between the report and the dataset, is known as *binding*. When the binding is determined at the point of embedding, as opposed to being predetermined earlier, the binding is known as dynamic binding.
 
@@ -27,37 +29,22 @@ Dynamic binding is supported for both *Embedding for your organization* and *Emb
 
 |Scenario  |Data ownership  |Token  |Requirements  |
 |---------|---------|---------|---------|
-|*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user who's Azure AD token is used, must have appropriate permissions for all artifacts.         |
-|*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embedtoken/generatetoken), to generate an embed token that supports multiple artifacts.         |
+|*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user who's Azure AD token is used, must have appropriate permissions for all items (reports, datasets, etc.).         |
+|*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embed-token/generate-token), to generate an embed token that supports multiple items.         |
+
+>[!NOTE]
+> The maximum number of data sources allowed per user is 1000. This limit implies that the combined number of datas sources used in the dynamic binding between reports and datasets by this user cannot exceed 1000.
 
 ## Adjusting the config object
-Add `datasetBinding` to the config object. Use the example below as a reference.
 
-```javascript
-var config = {
-    type: 'report',
-    tokenType: models.TokenType.Embed,
-    accessToken: accessToken,
-    embedUrl: embedUrl,
-    id: "reportId", // The wanted report id
-    permissions: permissions,
-
-    // -----  Adjustment required for dynamic binding ---- //
-    datasetBinding: {
-        datasetId: "notOriginalDatasetId",  // </The wanted dataset id
-    }
-    // ---- End of dynamic binding adjustment ---- //
-};
-
-// Get a reference to the embedded report HTML element
-var embedContainer = $('#embedContainer')[0];
-
-// Embed the report and display it within the div container
-var report = powerbi.embed(embedContainer, config);
-```
+For dynamic binding to work, you need to add `datasetBinding` to the config object. To learn how this is done, see [Bind datasets dynamically to a report](/javascript/api/overview/powerbi/bind-report-datasets).
 
 ## Next steps
 
-If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content:
-* [Tutorial: Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
-* [Tutorial: Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
+If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content.
+
+>[!div class="nextstepaction"]
+>[Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
+
+>[!div class="nextstepaction"]
+>[Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)

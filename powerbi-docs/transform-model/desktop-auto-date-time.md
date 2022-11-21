@@ -2,12 +2,12 @@
 title: "Auto date/time in Power BI Desktop"
 description: Understand auto date/time functionality in Power BI Desktop.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/23/2019
+ms.date: 03/17/2022
 ---
 
 # Apply auto date/time in Power BI Desktop
@@ -42,7 +42,7 @@ If it were possible to see the rows of an auto date/time table, they would look 
 >
 > Further, it's not possible to work with them when using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), or connecting to the model using non-Power BI report designers.
 
-The table also defines a hierarchy, providing visuals with a drill down path through year, quarter, month, and day levels.
+The table also defines a hierarchy, providing visuals with a drill-down path through year, quarter, month, and day levels.
 
 If it were possible to see an auto date/time table in the Model view diagram, it would look like this (related columns are highlighted):
 
@@ -87,6 +87,11 @@ The current file option, too, can also be turned on or off at any time. When tur
 In Power BI Desktop, you select _File > Options and settings > Options_, and then select either the **Global** or **Current File** page. On either page, the option exists in the **Time intelligence** section.
 
 ![Configuring Power BI Desktop options. The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
+
+## Considerations and limitations
+
+While using Analysis Services data sources, having relationships defined on the *DateTime* columns may not behave as expected. Analysis Services only uses *DateTime* data types; *Date* and *Time* data types are Power BI formatting constructs implemented on top of Analysis Services, so any model-dependent objects will still appear as *DateTime* to Analysis Services (such as relationships, groups, and so on). As such, if a user selects *Date* from the **Modeling** tab for such columns, they still do not register as being the same date, because the time portion of the data is still being considered by Analysis Services. To correct the behavior, the column data types should be updated in the **Power Query Editor** to remove the *Time* portion from the imported data, so when Analysis Services is handling the data, the values will appear the same. 
+
 
 ## Next steps
 

@@ -7,17 +7,184 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 11/2/2022
 ---
 
 # Change log for Power BI Report Server
 
-This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
+This change log is for Power BI Report Server and lists new items along with bug fixes for each released build. Always follow the guide on how to [upgrade Power BI Report Server](upgrade.md) when performing any upgrade.
 
-See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
+See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## September 2022
+- **Power BI Report Server**
+    - *Version: 1.15.8300.38452 (build 15.0.1110.120), Released: September 26, 2022*
+        - Features
+            - Custom Visual API shipped with release - version v4.7.0 
+            - Option to add a custom hyperlink to a Report Server Portal 
+            - Option to include Client IP address in some log messages
+            - Accessibility links are added for French and Italian localizations 
+        - Bug fixes
+            -  Fixed issue with grouped visuals with swapped Y-Axis displaying.
+            -  Fixed font and background color reflection in total of row/column.
+            -  Fixed issue with loading PBIX report in iFrame with a specific filter.
+            -  Fixed issue with a date picker pop-up and dropdown list for parameters were disappearing.
+            -  Fixed decoding of + sign to a space in RDL URL parameters.
+            -  Fixed multiple issues with multi-value and multiselect parameters in RDL Parameters tab.
+        - [Deprecated features](/sql/reporting-services/deprecated-features-in-sql-server-reporting-services-ssrs)
+            -  Report Parts support deprecated
+        - [Discontinued features](/sql/reporting-services/discontinued-functionality-to-sql-server-reporting-services-in-sql-server)
+            -  Mobile Reports functionality discontinued
+            -  Pin to PowerBI functionality discontinued
+            
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.109.1021.0 (September 2022), Released: October 4, 2022*
+        - Performance fix for open and save of PBIX files with large number of queries.
+   - *Version: 2.109.801.0 (September 2022), Released: September 26, 2022*
+        - Support for September 2022 Power BI Report Server
+        - Bug fixes
+
+           
+## May 2022
+- **Power BI Report Server**
+    - *Version: 1.14.8179.37378 (build 15.0.1108.297), Released: May 26, 2022*
+        - Features
+            - Custom Visual API shipped with release - version v4.5.0 
+        - Bug fixes
+            -  Fixed issue with RSPowerBI.exe process causing out of memory exceptions.
+            -  Fixed scheduled refresh in some cases leading to 'unable to combine data' error.
+            -  Fixed issue with zero white space in report.
+            -  Fixed issue where help button tooltip wasn't localized in some locales.
+            -  Fixed issue with SVG formatted image used as report background.
+            -  Fixed custom visual loading with EnableCDNVisual disabled.
+            -  Fixed issue with datetimeoffset field being incorrect after a schedule refresh.
+            -  Fixed issue with cropping of custom branding.
+            -  Fixed issue with subscriptions using Leave Blank option.
+            -  Fixed performance regression seen in some types of Power BI reports.
+            -  Fixed issue with url encoding.
+        
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.105.1143.0 (May 2022), Released: June 7, 2022*
+        - Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
+   - *Version: 2.105.961.0 (May 2022), Released: May 26, 2022*
+        - Support for May 2022 Power BI Report Server
+        - Bug fixes
+
+## January 2022
+- **Power BI Report Server**
+    - *Version: 1.13.8086.22725 (build 15.0.1108.159), Released: February 23, 2022*
+    	- Bug fixes
+    	   - Fixed issue with V3 reports with SAP HANA datasource and Kerberos single sign-on.
+    	   - Several minor UI fixes in new portal experience.
+    - *Version: 1.13.8054.40631 (Build 15.0.1108.153), Released: January 24, 2022*
+        - Features
+            - Custom Visual API shipped with release - version v4.0.0
+            - Original Portal experience for PBIRS has been removed. Previously UsePortalV2 = false in database would enable the original experience, but this has been removed.
+            -  Added new theming variables to enable customizing newly added background colors (*IconColor). The full list can be found in the [colors.json example in the documentation](/sql/reporting-services/branding-the-web-portal#colorsjson-example). 
+        - Bug fixes
+            -  Fixed various accessibility issues in new portal
+            -  Various small UI tweaks in new portal
+            -  Fixed issue with setting datetimes in subscriptions
+            -  Fixed issue with managing reports with multiple data sources
+            -  Fixed issue with username and password passed in via URL
+            -  Fixed issue related to KPIs with certain characters in name
+            -  Fixed issue blocking opening breadcrumb link in new tab
+            -  Fixed issue with saving changes when editing cache refresh plan
+            -  Fixed issue on parameter tab for reports with many parameters
+            -  Fixed issue in config tool connecting to SQL server to create ReportServer database
+        
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.100.4082.0 (January 2022), Released: June 8, 2022*
+        - Fix for the Azure Active Directory authentication issue on WebView2: now users will be able to authenticate and connect to all MS AAD resources.
+   - *Version: 2.100.1381.0 (January 2022), Released: January 24, 2022*
+        - Support for January 2022 Power BI Report Server   
+       
+## September 2021
+- **Power BI Report Server**
+    - *Version: 1.12.7981.11681 (build 15.0.1107.166), Released: December 6, 2021*
+    	- Version number update only, no functional changes.
+    - *Version: 1.12.7977.29537 (Build 15.0.1107.165), Released: November 9, 2021*
+        - Bug fixes
+            - Fixed issue blocking upload of CSV, XLS, and XLSB files.
+            - Fixed security issue related to certain PBIX files.
+            - Fixed issue where usernames with commas displayed oddly in new portal.
+            - Fixed issue with data parameters not displaying correctly.
+            - Fixed issue with download button not visible when viewing Excel workbooks.
+            - Fixed issue where PBIX data sources couldn't be edited if more than one existed.
+            - Fixed issue where old portal displayed "May 2021" instead of "September 2021".
+    - *Version: 1.12.7936.39665 (Build 15.0.1107.146), Released: September 27, 2021*
+        - Features
+            - Custom Visual API shipped with release - version v3.8.0 
+            - Updated support for Power BI reports including those with small multiples.
+            - Updated Power BI Report Server portal experience as default experience.
+        - Bug fixes
+        - Deprecated support for Internet Explorer.
+        
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.97.2222.0 (September 2021), Released: December 6, 2021*
+        - Bug fix for the progress dialog: now import/refresh progress will be shown after import/refresh.
+        - Bug fix for table tooltips: now last refreshed time information will be available from table tooltips outside of the model view.
+    - *Version: 2.97.863.0 (September 2021), Released: September 27, 2021*
+        - Contains changes required for connection with Power BI Report Server (September 2021).
+        - Updated gallery view for custom visuals.
+        - Bug fixes.
+
+## May 2021
+- **Power BI Report Server**
+    - *Version: 1.11.8091.10468 (Build 15.0.1106.457), Released: March 4, 2022*
+        - Security updates
+    - *Version: 1.11.7815.26414 (Build 15.0.1106.169), Released: May 27, 2021*
+        - Features
+            - Added enhancements for PBIX reports containing "models with enhanced metadata".
+            - Custom Visual API shipped with release - version 3.5.0
+        - Bug fixes
+            - Fixed issue with caching of linked reports.
+            - Fixed issue where "Changed by" section would show incorrect date on some PBIX reports.
+            - Fixed issue causing "Datasource is not found" for PBIX report data sources.
+            - Fixed issue causing "No credentials were found for the datasource" for PBIX report data sources.
+            - Fixed permission issue for live connect of SSAS tabular PBIX reports.
+            - Fixed various issues in new portal preview.
+        - Security updates
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.93.1681.0 (May 2021), Released: July 6, 2021*
+       - Contains fix for Google Auth: Google Auth is moved to System Browser (non embedded) to allow users to log into Google Analytics and Google Big Query.
+    - *Version: 2.93.982.0 (May 2021), Released: May 27, 2021*
+        - Contains changes required for connection with Power BI Report Server (May 2021).
+        - "Models with enhanced metadata" is now the only option for modeling in Power BI Desktop for RS.
+        - Bug fixes
+    - *Version: 2.93.3901.0 (May 2021), Released: October 25, 2021*
+        - Contains changes required for support Chromium 89.
+
+## January 2021
+- **Power BI Report Server**
+    - *Version: 1.10.7737.32652 (Build 15.0.1105.230), Released: March 12, 2021*
+        - Bug fixes
+            - Fixed issue with URL filters causing PBIX reports to not load.
+    - *Version: 1.10.7698.27886 (Build 15.0.1105.195), Released: January 28, 2021*
+        - Features
+            - New Icons relate to Power BI and Power BI reports.
+            - Custom Visual API shipped with release - version 3.5.0
+            - New portal preview experience added behind 'UsePortalV2' feature switch in ReportServer catalog's ConfigurationInfo table.
+        - Bug fixes
+            - Fixed issue with scheduled refresh of Power BI reports with certain models using enhanced model metadata.
+            - Fixed issue editing data driven subscriptions in portal.
+        - Security updates
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.88.2361.0 (January 2021), Released: March 12, 2021*
+        - Bug fixes
+   - *Version: 2.88.1382.0 (January 2021), Released: January 28, 2021* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (January 2021)        
+   
 ## October 2020
 - **Power BI Report Server**
+    - *Version: 1.9.7709.41358 (Build 15.0.1104.310), Released: March 9, 2021*
+        - Security Updates [(KB 5001285)](https://support.microsoft.com/topic/description-of-the-security-update-for-power-bi-report-server-october-2020-march-9-2021-kb5001285-d2b664c1-5622-4d07-bb92-9543f95ec4de)
+    - *Version: 1.9.7675.15620 (Build 15.0.1104.300), Released: January 8, 2021*
+        - Bug fixes
+            - Fixed issue with refresh of reports with two or more datasources that differ only by the casing of the letters.
+            - Fixed issue with refresh of reports certain combinations of nested joins.
     - *Version: 1.9.7627.11028 (Build 15.0.1104.264), Released: November 18, 2020*
         - Bug fixes
             - Fixed issue preventing users from changing fields in site settings via the portal.
@@ -43,11 +210,19 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Updated MHTML renderer to use newer HTML DOCTYPE.
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: 2.86.3481.0 (October 2020), Released: March 31, 2021*
+        - Bug fixes
+   - *Version: 2.86.2841.0 (October 2020), Released: February 5, 2021*
+        - Bug fixes
+   - *Version: 2.86.1321.0 (October 2020), Released: November 18, 2020*
+        - Bug fixes
    - *Version: 2.86.961.0 (October 2020), Released: October 27, 2020* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (October 2020)        
    
 ## May 2020
 - **Power BI Report Server**
+    - *Version: 1.8.7710.39564 (Build 15.0.1103.241), Released: March 9, 2021*
+        - Security Updates [(KB 5001284)](https://prod.support.services.microsoft.com/topic/description-of-the-security-update-for-power-bi-report-server-may-2020-march-9-2021-kb5001284-578b456e-a4de-4ceb-b4f8-61455a74ca58)
     - *Version: 1.8.7485.35104 (Build 15.0.1103.234), Released: June 30, 2020*
         - Bug fixes
             - Fixed an issue in scale-out scenarios where reports weren't reflecting edits immediately in the server after upload.
@@ -122,7 +297,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Bug fixes
             - Fix for .net framework 4.7 not installed.
 	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
-	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is https://+80/reportserver.
+	        - Fix for URLRoot value not working if there are multiple web service URL bindings and one of them is https://+80/reportserver.
 		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
 		  
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9, 2019*
@@ -139,7 +314,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
              - Fix for accessibility issues encountered while using Internet Explorer and Microsoft Edge.
              - Fix for SAP HANA issues while testing connection.
              - Fix for issues found while providing list of email addresses.
-             - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
+             - Fix for Power BI reports that use a DirectQuery data source and integrated authentication.
              - Fix for Paginated reports to render with filter parameters when snapshot is enabled.
              - Fix for double execution of stored procedures during report execution.
              - Fix for default service account being granted SQL Server login permissions, when custom service account is configured to run the Power BI Report Server.
@@ -157,7 +332,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - *Version: 2.73.5586.1241 (September 2019), Released: October 9, 2019*
         - Bug fixes
             - Fix for Text Filter custom visual.
-	        - Fix for the performance of drop down slicers.
+	        - Fix for the performance of drop-down slicers.
 	        - Fix for Strip PII from telemetry.
             
     - *Version: 2.73.5586.821 (September 2019), Released: September 26, 2019* (new build and new version)

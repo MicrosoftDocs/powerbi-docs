@@ -3,13 +3,13 @@ title: "Tutorial: Consume an Azure Machine Learning model in Power BI"
 titleSuffix: Azure Machine Learning
 description: Learn how to consume Azure Machine Learning models in Power BI.
 services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
+ms.service: powerbi
+ms.subservice: powerbi-ai
 ms.topic: tutorial
 ms.author: samkemp
 author: samuel100
 ms.reviewer: sdgilley, maggies
-ms.date: 12/10/2020
+ms.date: 02/17/2021
 ---
 
 # Tutorial: Consume Azure Machine Learning models in Power BI
@@ -22,6 +22,9 @@ This tutorial walks you through creating a Power BI report based on a machine le
 > * Create a report with a visualization based on that model.
 > * Publish that report to the Power BI service.
 > * Set up scheduled refresh for the report.
+
+> [!NOTE]
+> Currently, Online endpoints (v2 endpoint) are not supported in Power BI yet. ACI/AKS web services (v1 web services) are only supported. 
 
 ## Prerequisites
 
@@ -53,6 +56,10 @@ https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
 
 Select **OK**.
 
+In **Access Web content**, select **Anonymous** > **Connect**.
+
+:::image type="content" source="media/service-aml-integrate/anonymous-access-web-content.png" alt-text="Screenshot showing anonymous access for Web content.":::
+
 Select **Transform data** to open the **Power Query Editor** window.
 
 In the Home ribbon of the Power Query Editor, select the **Azure Machine Learning** button.
@@ -64,6 +71,9 @@ After signing in to your Azure account using single sign-on, you see a list of a
 Power Query populates the columns automatically for you. You remember that in our schema for the service, we had a Python decorator that specified the inputs. Select **OK**.
 
 :::image type="content" source="media/service-aml-integrate/aml-pbi-run.png" alt-text="Screenshot showing Azure Machine Learning Models.":::
+
+> [!NOTE]
+> For time series models, Power BI may not automatically detect the date format for the time column. To proceed, convert the time column to Date/Time type in Power BI before invoking Azure Machine Learning.
 
 Selecting **OK** calls the Azure Machine Learning service. It triggers a warning on data privacy for both the data and the endpoint.
 
@@ -80,7 +90,9 @@ The data that the service returns is a **list**.
 > [!NOTE]
 > If you deployed a designer model, you see a **record**.
 
-To get the predictions, on the **Transform** ribbon select the **Expand column** button > **Expand to New Rows**.
+To get the predictions, select the double-headed arrow in the **AzureML.my-diabetes-model** column header > **Expand to New Rows**.
+
+:::image type="content" source="media/service-aml-integrate/expand-column.png" alt-text="Screenshot showing Expand column icon.":::
 
 After the expansion, you see the predictions in the AzureML.my-diabetes-model column.
 

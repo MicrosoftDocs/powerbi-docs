@@ -1,8 +1,8 @@
 ---
 title:  Introduction to usage of test utils in Power BI visual
-description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals
-author: KesemSharabi
-ms.author: kesharab
+description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -20,7 +20,7 @@ To use this package, you'll need to install the following:
 
 * [node.js](https://nodejs.org), it's recommended to use the LTS version
 * [npm](https://www.npmjs.com/), version 3.0.0 or higher
-* The [PowerBI-visuals-tools](https://github.com/Microsoft/PowerBI-visuals-tools) package
+* The [`PowerBI-visuals-tools`](https://github.com/Microsoft/PowerBI-visuals-tools) package
 
 ## Installation
 

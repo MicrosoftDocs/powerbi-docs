@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/08/2020
+ms.date: 04/30/2021
 LocalizationGroup: Get started
 ---
 # Integrate Power BI data alerts with Power Automate
@@ -85,4 +85,6 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
 ## Next steps
 * [Get started with Power Automate](/power-automate/getting-started/)
 * [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
+* [Create a Power Automate button visual](../create-reports/power-bi-automate-visual.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

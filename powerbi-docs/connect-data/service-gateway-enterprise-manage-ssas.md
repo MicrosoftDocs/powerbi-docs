@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 5/6/2022
+ms.custom: video-Qb5EEjkHoLg, video-eATPS-c7YRU
 LocalizationGroup: Gateways
 ---
 # Manage your data source - Analysis Services
@@ -21,30 +22,37 @@ To learn more about how to set up a live connection to Analysis Services, [watch
 > [!NOTE]
 > If you have an Analysis Services data source, you need to install the gateway on a computer joined to the same forest/domain as your Analysis Services server.
 
+> [!NOTE]
+> The gateway only supports Windows authentication for Analysis Services.
+
 ## Add a data source
 
 For information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select **Analysis Services** for **Data Source Type** if you're connecting to either a multidimensional or tabular server.
 
-![Add the Analysis Services data source](media/service-gateway-enterprise-manage-ssas/datasourcesettings2-ssas.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/new-data-source.png" alt-text=" Screenshot of Add the Analysis Services data source." :::
 
 Fill in the information for the data source, which includes **Server** and **Database**. The information that you enter for **Username** and **Password** is used by the gateway to connect to the Analysis Services instance.
 
 > [!NOTE]
 > The Windows account you enter must be a member of the Server Administrator role on the Analysis Services instance you're connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-![Filling in the data source settings](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 
-After you fill in everything, select **Add**. You can now use this data source for scheduled refresh or live connections against an Analysis Services instance that's on-premises. You see *Connection Successful* if it succeeded.
+![Filling in the data source settings](media/service-gateway-enterprise-manage-ssas/data-source-credentials.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/new-data-source.png" alt-text=" Screenshot of Filling in the data source settings." :::
 
-![Displaying the connection status](media/service-gateway-enterprise-manage-ssas/datasourcesettings4.png)
+
+After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or live connections against an Analysis Services instance that's on-premises. 
 
 ### Advanced settings
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. The privacy-level setting doesn't apply to live connections. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-![Setting the privacy level](media/service-gateway-enterprise-manage-ssas/datasourcesettings9.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/privacy-level-setting.png" alt-text=" Screenshot of Setting the privacy level." :::
 
 ## User names with Analysis Services
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
@@ -55,6 +63,9 @@ The email address must match a defined user principal name (UPN) within the loca
 You can also [map your Power BI sign-in name with a local directory UPN](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
 ## Map user names for Analysis Services data sources
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
@@ -74,15 +85,15 @@ We describe these two approaches, in order, in the following two sections.
 For Analysis Services data sources, you can configure custom UPN rules. Custom rules help you if your Power BI service sign-in names don't match your local directory UPN. For example, if you sign in to Power BI with john@contoso.com but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
 
 To get to the UPN mapping screen, follow these steps.
+1.	Go to the gear icon and select **Manage Gateways**.
+2.	Select the data source, and then select the **Settings** button from the top ribbon.
+3.	You see a box with **Map user names**.
 
-1. Go to the gear icon, and select **Manage Gateways**.
-2. Expand the gateway that contains the Analysis Services data source. Or, if you haven't created the Analysis Services data source, you can do that at this point.
-3. Select the data source, and then select the **Users** tab.
-4. Select **Map user names**.
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/map-user-names.png" alt-text=" Screenshot of UPN mapping screen." :::
 
-    ![UPN mapping screen](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_02.png)
+To see options to add rules and test for a given user, select **Add new rule**.
 
-You see options to add rules and test for a given user.
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/add-new-rules.png" alt-text=" Screenshot of UPN mapping screen new rule." :::
 
 > [!NOTE]
 > You might change a user that you didn't intend to change. For example, if **Replace (original value)** is contoso.com and **With (New name)** is @contoso.local, all users with a sign-in that contains @contoso.com are then replaced with @contoso.local. Also, if **Replace (Original name)** is dave@contoso.com and **With (New name)** is dave@contoso.local, a user with the sign-in of v-dave@contoso.com is sent as v-dave@contoso.local.
@@ -93,8 +104,7 @@ To perform on-premises Active Directory property lookup to remap Azure AD UPNs t
 
 In the Power BI service, the following occurs:
 
-* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as
-       firstName.lastName@contoso.com.
+* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as `firstName.lastName@contoso.com`.
 
 > [!NOTE]
 > Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* the user name string is sent to the on-premises data gateway.
@@ -117,7 +127,7 @@ To configure your gateway to perform the Active Directory lookup:
 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations for your Active Directory users. The following configuration values are examples. Specify the values based on your Active Directory configuration. These configurations are case sensitive, so make sure they match the values in Active Directory.
 
-    ![Azure AD settings](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+    :::image type="content" source="media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png" alt-text=" Screenshot of Azure AD settings." :::
 
     If no value is provided for the ADServerPath configuration, the gateway uses the default global catalog. You can also specify multiple values for the ADServerPath. Each value must be separated by a semicolon, as shown in the following example:
 
@@ -154,11 +164,10 @@ To create a mapping rule, enter a value for **Original name** and **New name** a
 | Replace (Original name) |The email address that you used to sign in to Power BI. |
 | With (New name) |The value you want to replace it with. The result of the replacement is what is passed to the EffectiveUserName property for the Analysis Services connection. |
 
-![Creating a mapping rule](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-effective-user-names.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/replace-with-rule.png" alt-text=" Screenshot of Creating a mapping rule." :::
 
-When you select an item in the list, you can choose to reorder it by using the chevron icons. Or, you can delete the entry.
+When you select an item in the list, you can choose to reorder it by drag and drop. Or, you can delete the entry.
 
-![Reordering an item in the list](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-entry-selected.png)
 
 ### Use a wildcard
 
@@ -168,12 +177,12 @@ You can use a wildcard (*) for your **Replace (Original name)** string. It can o
 
 To validate what an original name is replaced with, enter a value for **Original name**. Select **Test rule**.
 
-![Testing a mapping rule](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-test-mapping-rule.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/test-rule.png" alt-text=" Screenshot of Testing a mapping rule." :::
 
 > [!NOTE]
 > Rules that are saved take a few minutes before the service starts to use them. The rule works immediately in the browser.
 
-### Limitations for mapping rules
+### Considerations and limitations
 
 Mapping is for the specific data source that's being configured. It's not a global setting. If you have multiple Analysis Services data sources, you have to map the users for each data source.
 
@@ -193,9 +202,9 @@ Models provide security based on user roles. Roles are defined for a particular 
 
 Row-level security is specific to Analysis Services row-level security. Models can provide dynamic, row-level security. Unlike having at least one role that users belong to, dynamic security isn't required for any tabular model. At a high level, dynamic security defines a user’s read access to data right down to a particular row in a particular table. Similar to roles, dynamic row-level security relies on a user’s Windows user name.
 
-A user’s ability to query and view model data is determined by:
+A user’s ability to query and viewmodel data is determined by:
 
-- The roles that their Windows user account belong to as a member.
+- The roles that their Windows user account belongs to as a member.
 - Dynamic row-level security, if it's configured.
 
 Implementing role and dynamic row-level security in models are beyond the scope of this article. To learn more, see [Roles (SSAS tabular)](/analysis-services/tabular-models/roles-ssas-tabular) and [Security roles (Analysis Services - Multidimensional data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) on MSDN. For the most in-depth understanding of tabular model security, download and read the [Securing the tabular BI semantic model whitepaper](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
@@ -260,7 +269,7 @@ After you publish, either from Power BI Desktop or **Get Data**, your reports sh
 
 If you're listed in the **Users** tab of the data source configured within the gateway and the server and database name match, you see the gateway as an option to use with scheduled refresh.
 
-![Displaying the users](media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png)
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/powerbi-gateway-enterprise-schedule-refresh.png" alt-text=" Screenshot of Displaying the users." :::
 
 ### Limitations of Analysis Services live connections
 

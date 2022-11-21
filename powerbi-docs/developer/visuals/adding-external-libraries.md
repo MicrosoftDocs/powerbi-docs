@@ -1,15 +1,16 @@
 ---
 title:  Adding external libraries to Power BI visuals
 description: This article describes how to use external libraries in Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 02/24/2020
+ms.date: 02/24/2022
 ---
-# Adding external libraries
+
+# How to add external libraries
 
 This article describes how to use external libraries in Power BI visuals. It includes information about installing, importing, and calling external libraries from the Power BI visual's code.
 
@@ -19,7 +20,7 @@ This article describes how to use external libraries in Power BI visuals. It inc
 2. Import the required modules into the source files using the external library.
 
 >[!NOTE]
->If you'd like to add typings to your JavaScript library, and get intellisense and compile-time safety, make sure that you install the appropriate package.
+> To add typings to your JavaScript library, and get [Intellisense](https://code.visualstudio.com/docs/editor/intellisense) and compile-time safety, make sure that you install the appropriate package.
 
 ### Installing the d3 library
 
@@ -62,3 +63,8 @@ For a full example, see the [Power BI visualizations](https://github.com/Microso
     ```less
     @import (less) "node_modules/bootstrap/dist/css/bootstrap.css";
     ```
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Set up your environment for developing a Power BI visual](environment-setup.md)

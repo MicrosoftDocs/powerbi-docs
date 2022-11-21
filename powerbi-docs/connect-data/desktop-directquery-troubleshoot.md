@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 10/24/2019
+ms.date: 05/14/2021
 ---
 
 # Troubleshoot developing DirectQuery models in Power BI Desktop
@@ -22,6 +22,13 @@ Similarly, it is recommended to first try to isolate any issues to an individual
 
 Let's say those steps (in the previous paragraphs of this topic) have been taken—we now have a single visual on a page in Power BI Desktop that is still sluggish. To determine what queries are being sent to the underlying source by Power BI Desktop, you can use the Performance Analyzer. It's also possible to view traces/diagnostic information that might be emitted by the underlying data source. Such traces might also contain useful information about the details of how the query was executed, and how it can be improved.
 
+> [!NOTE]
+>  When working with DirectQuery SQL-based sources, the Performance Analyzer only shows queries for the following data sources: 
+> - SQL Server
+> - Oracle
+> - Teradata
+> 
+
 Further, even in the absence of such traces from the source, it's possible to view the queries sent by Power BI, along with their execution times, as described next.
 
 ## Review trace files
@@ -32,7 +39,7 @@ For some DirectQuery sources, this log includes all queries sent to the underlyi
 
 - SQL Server
 - Azure SQL Database
-- Azure SQL Data warehouse
+- Azure Synapse Analytics (formerly SQL Data Warehouse)
 - Oracle
 - Teradata
 - SAP HANA
@@ -49,7 +56,7 @@ Navigating to that folder's parent folder displays the folder containing _Analys
 
 Inside that folder is a _\Data_ subfolder that contains the trace file FlightRecorderCurrent.trc for the current Power BI session. The corresponding workspace folder is deleted when the associated Power BI Desktop session ends.
 
-The trace files can be opened by using the SQL Server Profiler tool, which is available as a free download as part of SQL Server Management Studio. You can get that from [this location](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+The trace files can be opened by using the SQL Server Profiler tool, which is available as a free download as part of SQL Server Management Studio. You can get that from [this location](/sql/ssms/download-sql-server-management-studio-ssms).
 
 Once you download and install SQL Server Management Studio, run SQL Server Profiler.
 

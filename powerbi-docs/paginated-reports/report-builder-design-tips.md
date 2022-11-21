@@ -11,7 +11,7 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 ---
 # Report design tips in Power BI Report Builder
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 Use the following tips to help design your paginated reports in Power BI Report Builder.  
   
@@ -70,7 +70,7 @@ Use the following tips to help design your paginated reports in Power BI Report 
   
 -   Use the **Zoom** control to adjust your view of the design surface. You can work with the whole page or smaller sections of the page.  
   
--   To drag fields from the Report Data pane to the Grouping pane, avoid dragging the field across other report items on the design surface because this selects the other items and unselects the tablix data region. Drag the field down the Report Data pane and then across to the Grouping pane.  
+-   To drag fields from the Report Data pane to the Grouping pane, avoid dragging the field across other report items on the design surface because this selects the other items and deselects the tablix data region. Drag the field down the Report Data pane and then across to the Grouping pane.  
   
 ###  <a name="Selecting"></a> Selecting items  
  To help select the object that you want on the report design surface, use the ESC key, the right-click context menu, the Properties pane, and the Grouping pane.  
@@ -142,4 +142,4 @@ Use the following tips to help design your paginated reports in Power BI Report 
  
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  

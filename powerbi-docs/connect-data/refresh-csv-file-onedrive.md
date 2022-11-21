@@ -4,11 +4,11 @@ description: Refresh a dataset created from a comma separated value (.csv) file 
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/12/2019
+ms.date: 05/21/2021
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from a .CSV file on OneDrive or SharePoint Online
@@ -27,7 +27,7 @@ If you have both a personal OneDrive and OneDrive for Business, it’s recommend
 
 Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different [Microsoft account](https://account.microsoft.com).
 
-When you sign into your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates with datasets in Power BI
+When you sign into your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates with datasets in Power BI.
 
 ![Sign in example](media/refresh-csv-file-onedrive/refresh_signin_keepmesignedin.png)
 

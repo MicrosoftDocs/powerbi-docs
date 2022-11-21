@@ -2,7 +2,7 @@
 title: On-premises data gateway sizing
 description: Guidance for working sizing the On-premises data gateway.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -63,7 +63,7 @@ Determining the correct sizing for your gateway machine can depend on the follow
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 
 > [!NOTE]
-> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../admin/service-premium-what-is.md#capacity-nodes).
+> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacity-nodes).
 
 ## Recommendations
 
@@ -79,14 +79,14 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 - Strive for reliability, fast speeds, and low, consistent latencies
 - Eliminate—or reduce—machine hops between the gateway and your data sources
-- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Add Power BI URLs to your allow list](../admin/power-bi-whitelist-urls.md).
+- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Add Power BI URLs to your allow list](../admin/power-bi-allow-list-urls.md).
 - Configure [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) to establish private, managed connections to Power BI
 - For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../admin/service-admin-where-is-my-tenant-located.md)
 - For Live Connection workloads to SQL Server Analysis Services (SSAS) involving dynamic RLS, ensure good connectivity between the gateway machine and the on-premises Active Directory
 
 ### Clustering
 
-For large-scale deployments, you can create a gateway of cluster installations. Clusters avoid single points of failure, and can load balance traffic across gateways. You can:
+For large-scale deployments, you can create a gateway with multiple cluster members. Clusters avoid single points of failure, and can load balance traffic across gateways. You can:
 
 - Install one or more gateways in a cluster
 - Isolate workloads to standalone gateways, or clusters of gateway servers
@@ -100,14 +100,14 @@ Dataset design, and their settings, can impact on gateway workloads. To reduce g
 For Import datasets:
 
 - Configure less frequent data refresh
-- Configure [incremental refresh](../admin/service-premium-incremental-refresh.md) to minimize the amount of data to transfer
+- Configure [incremental refresh](../connect-data/incremental-refresh-overview.md) to minimize the amount of data to transfer
 - Whenever possible, ensure [query folding](power-query-folding.md) takes place
 - Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model
 
 For DirectQuery datasets:
 
 - Optimize data sources, model, and report designs—for more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md)
-- Create [aggregations](../transform-model/desktop-aggregations.md) to cache higher-level results to reduce the number of DirectQuery requests
+- Create [aggregations](../enterprise/aggregations-auto.md) to cache higher-level results to reduce the number of DirectQuery requests
 - Restrict [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency
 - Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model

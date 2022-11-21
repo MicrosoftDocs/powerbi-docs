@@ -8,7 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.reviewer: ''
 ms.custom: ""
-ms.date: 04/28/2020
+ms.date: 09/08/2021
 LocalizationGroup: Data from databases
 ---
 
@@ -27,8 +27,8 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 * Ensure firewall rules for the database are configured to "[Allow access to Azure services](/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)."
 * Every action such as selecting a column or adding a filter will send a query back to the database.
 * Tiles are refreshed every hour (refresh does not need to be scheduled). You can adjust how often to refresh in the Advanced settings when you connect.
-* Q&A is not available for DirectQuery datasets.
 * Schema changes are not picked up automatically.
+* Changing the data source connection string alias from xxxx.database.windows.net to xxxx.domain.com indicates to the Power BI service that it is an on-premises datasource and always requires a gateway connection to be established.
 
 These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.
 

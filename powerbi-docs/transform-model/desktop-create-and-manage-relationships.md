@@ -7,26 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/28/2020
+ms.date: 10/20/2022
 LocalizationGroup: Model your data
 ---
 # Create and manage relationships in Power BI Desktop
-When you import multiple tables, chances are you'll do some analysis using data from all those tables. Relationships between those tables are necessary to accurately calculate results and display the correct information in your reports. Power BI Desktop makes creating those relationships easy. In fact, in most cases you won’t have to do anything, the autodetect feature does it for you. However, sometimes you might have to create relationships yourself, or need to make changes to a relationship. Either way, it’s important to understand relationships in Power BI Desktop and how to create and edit them.
+When you have multiple tables, chances are you'll do some analysis using data from all those tables. Relationships between those tables are necessary to accurately calculate results and display the correct information in your reports. Power BI Desktop makes creating those relationships easy. In fact, in most cases you won’t have to do anything, the autodetect feature does it for you. However, sometimes you might have to create relationships yourself, or need to make changes to a relationship. Either way, it’s important to understand relationships in Power BI Desktop and how to create and edit them.
 
 ## Autodetect during load
 If you query two or more tables at the same time, when the data is loaded, Power BI Desktop attempts to find and create relationships for you. The relationship options **Cardinality**, **Cross filter direction**, and **Make this relationship active** are automatically set. Power BI Desktop looks at column names in the tables you're querying to determine if there are any potential relationships. If there are, those relationships are created automatically. If Power BI Desktop can't determine with a high level of confidence there's a match, it doesn't create the relationship. However, you can still use the **Manage relationships** dialog box to manually create or edit relationships.
 
 ## Create a relationship with autodetect
-On the **Home** tab, select **Manage Relationships** \> **Autodetect**.
+On the **Modeling** tab, select **Manage relationships** \> **Autodetect**.
 
 ![Create a relationship with autodetect](media/desktop-create-and-manage-relationships/automaticrelationship.gif)
 
 ## Create a relationship manually
-1. On the **Home** tab, select **Manage Relationships** \> **New**.
+1. On the **Modeling** tab, select **Manage relationships** \> **New**.
 
 2. In the **Create relationship** dialog box, in the first table drop-down list, select a table. Select the column you want to use in the relationship.
 
-3. In the second table drop-down list, select the other table you want in the relationship. Select the other column you want to use, and then elect **OK**.
+3. In the second table drop-down list, select the other table you want in the relationship. Select the other column you want to use, and then select **OK**.
 
    ![Create a manual relationship](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
@@ -41,11 +41,51 @@ If you encounter that error, there are a couple ways to fix the issue:
 
 For more information, see this [blog post](/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message).
 
+Alternatively, in the **Model view** diagram layouts, you can drag and drop a column from one table to a column in another table to create a relationship.
 
 ## Edit a relationship
-1. On the **Home** tab, select **Manage Relationships**.
 
-2. In the **Manage relationships** dialog box, select the relationship, then select **Edit**.
+There are two ways to edit a relationship in Power BI.
+
+The first method to edit a relationship is using the **Editing relationships in the Properties** pane in **Model view**, where you can click any line between two tables to see the relationship options in the **Properties** pane. Be sure to expand the **Properties** pane to see the relationship options.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/relationships-options-03.png" alt-text="Screen shot of adjusting relationships.":::
+
+You can also see a [video demonstration](https://youtu.be/Vlo7dJgr4WM?t=710) of editing relationships in the **Properties** pane. 
+
+The other method of editing a relationship is using the **Relationship editor dialog**, which you can open many ways from within Power BI Desktop. The following list shows different ways you can open the **Relationship editor dialog**:
+
+From **Report view** do any of the following:
+* Select the **Modeling** ribbon > **Manage relationships**, then select the relationship and select **Edit**.
+* Select a table in the **Fields** list then select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+
+From the **Data** view select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+
+From the **Model** view do any of the following:
+* Select the **Home** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+* Double-click any line between two tables.
+* Right-click any line between two tables and then choose **Properties**.
+* Select any line between two tables, then select **Open relationship editor** in the **Properties** pane.
+
+Finally, you can also edit a relationship from any view, right-click or select the ellipsis to get to the context menu of any table, then select **Manage relationships**, select the relationship and then select **Edit**
+
+The following image shows a screen shot of the **Edit relationship** window.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/relationships-options-04.png" alt-text="Screen shot of the edit relationship window.":::
+
+## Editing relationships using different methods
+
+Using the **Edit relationships dialog** is a more guided experience for editing relationships in Power BI, and is currently in preview. You can see a preview of the data in each table and as you select different columns, the window automatically validates the relationship and offers appropriate cardinality and cross filter selections.
+
+Editing relationships in the **Properties** pane is a streamlined approach to editing relationships in Power BI. You only see the table names and columns from which you can choose, you are not presented with a data preview, and the relationship choices you make are only validated when you select **Apply changes**. Using the **Properties** pane and its streamlined approach reduces the number of queries generated when editing a relationship, which can important for big data scenarios, especially when using DirectQuery connections. Relationships created using the **Properties** pane can also be more advanced than the relationships allowed to be created in the **Edit relationships dialog**.
+
+You can also multi-select relationships in the **Model** view diagram layouts. Pressing the Ctrl key and select (click on) more than one line to select multiple relationships. Common properties can be edited in the **Properties** pane and **Apply changes** will process the changes in one transaction. 
+
+Single or multi-selected relationships can also be deleted by pressing *Delete* on your keyboard. You cannot undo the delete action, so a dialog prompts you to confirm deleting the relationships.
+
+> [!IMPORTANT]
+> Editing relationships in the properties pane feature is currently in preview. While in preview, functionality and documentation are likely to change. You must enable this feature in Power BI Desktop by going to **File > Options and settings > Options > Preview features** and then in the GLOBAL section, select the checkbox next to **Relationship pane**.
+
 
 ## Configure additional options
 When you create or edit a relationship, you can configure additional options. By default, Power BI Desktop automatically configures additional options based on its best guess, which can be different for each relationship based on the data in the columns.
@@ -53,7 +93,7 @@ When you create or edit a relationship, you can configure additional options. By
 ### Cardinality
 The **Cardinality** option can have one of the following settings:
 
-**Many to one (\*:1)**: A many-to-one relationship is the most common, default type of realtionship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
+**Many to one (\*:1)**: A many-to-one relationship is the most common, default type of relationship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
 
 **One to one (1:1)**: In a one-to-one relationship, the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
 
@@ -66,7 +106,7 @@ For more information about when to change cardinality, see [Understanding additi
 ### Cross filter direction
 The **Cross filter direction** option can have one the following settings:
 
-**Both**: For filtering purposes, both tables are treated as if they're a single table. The **Both** setting works well with a single table that has a number of lookup tables that surround it. An example is a sales actuals table with a lookup table for its department. This configuration is often called a star schema configuration (a central table with several lookup tables). However, if you have two or more tables that also have lookup tables (with some in common) then you wouldn't want to use the **Both** setting. To continue the previous example, in this case, you also have a budget sales table that records target budget for each department. And, the department table is connected to both the sales and the budget table. Avoid the **Both** setting for this kind of configuration.
+**Both**: For filtering purposes, both tables are treated as if they're a single table. The **Both** setting works well with a single table that has many lookup tables that surround it. An example is a sales actuals table with a lookup table for its department. This configuration is often called a star schema configuration (a central table with several lookup tables). However, if you have two or more tables that also have lookup tables (with some in common) then you wouldn't want to use the **Both** setting. To continue the previous example, in this case, you also have a budget sales table that records target budget for each department. And, the department table is connected to both the sales and the budget table. Avoid the **Both** setting for this kind of configuration.
 
 **Single**: The most common, default direction, which means filtering choices in connected tables work on the table where values are being aggregated. If you import a Power Pivot in Excel 2013 or earlier data model, all relationships will have a single direction. 
 
@@ -139,7 +179,7 @@ Why these columns? Well, if we look at the **Project** column in the **ProjectHo
 If we look at the **ProjName** column in the **CompanyProject** table, we see there’s only one of each of the color values for the project name. Each color value in this table is unique, and that’s important, because we can create a relationship between these two tables. In this case, a many-to-one relationship. In a many-to-one relationship, at least one column in one of the tables must contain unique values. There are some additional options for some relationships, which we'll look at later. For now, let’s create a relationship between the project columns in each of our two tables.
 
 ### To create the new relationship
-1. Select **Manage Relationships** from the **Home** tab.
+1. Select **Manage relationships** from the **Modeling** tab.
 2. In **Manage relationships**, select **New** to open the **Create relationship** dialog box, where we can select the tables, columns, and any additional settings we want for our relationship.
 3. In the first drop-down list, select **ProjectHours** as the first table, then select the **Project** column. This side is the *many* side of our relationship.
 4. In the second drop-down list, **CompanyProject** is preselected as the second table. Select the **ProjName** column. This side is the *one* side of our relationship. 
@@ -352,3 +392,65 @@ We can change the active relationship and get **SubmittedBy** instead of **Opene
 Sometimes your model has multiple tables and complex relationships between them. **Relationship** view in Power BI Desktop shows all of the relationships in your model, their direction, and cardinality in an easy to understand and customizable diagram. 
 
 To learn more, see [Work with Relationship view in Power BI Desktop](desktop-relationship-view.md).
+
+
+## Troubleshooting
+
+This section provides guidance and troubleshooting information when working with relationships in Power BI.
+
+### Relationships between fields cannot be determined
+
+Power BI attempts to show relevant data in visuals by inferring the relationships from the model being used. Sometimes such inferences aren't obvious, and you might be surprised to see an error in your visual, indicating there is no relationship between certain columns. 
+ 
+To explain how Power BI determines whether fields are related, let's use an example model to illustrate a few scenarios in the following sections. The following image shows the sample model we'll use in the example scenarios.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-01.png" alt-text="Sample model used in troubleshooting scenarios":::
+
+**Scenario 1: Traditional star schema and no measure constraint provided.** Referring to the sample model in the previous image, let's look first at the right half of the images with the *Vendor - Purchases - Product* tables. This is a traditional star schema with the Fact table (*Purchases*) and two Dimension tables (*Product* and *Vendor*). The relationship between the dimension tables and the fact table is *1 to Many* (one product corresponds to many purchases, one vendor corresponds to many purchases). In this type of schema, we can answer questions like *What sales do we have for product X?* and *What sales do we have for Vendor Y?* and *What products does Vendor Y sell?*
+
+If we want to correlate *Products* and *Vendors*, we can do so by looking at the *Purchases* table to see if there is an entry with the same product and vendor. A sample query might look like the following: 
+
+`Correlate Product[Color] with Vendor[Name] where CountRows(Purchases)>0`
+
+The `where CountRows(Purchases)>0` is an implicit constraint that Power BI would add to ensure relevant data is returned.
+By doing this correlation through the *Purchases* table, we can return pairings of Product-Vendor that have at least one entry in a fact table, pairings that make sense from the data perspective. You can expect any nonsensical combinations of Product-Vendor for which there has never been a sale (which would be useless for analysis) will not be displayed.
+ 
+**Scenario 2: Traditional star schema and measure constraint provided.** In the previous example in Scenario 1, if the user provides a constraint in the form of summarized column (Sum/Average/Count of Purchase Qty, for example) or a model measure (Distinct Count of VendID), Power BI can generate a query in the form of the following: 
+
+`Correlate Product[Color] with Vendor[Name] where MeasureConstraint is not blank`
+
+In such a case, Power BI attempts to return combinations that have meaningful values for the constraint provided by the user (non-blank). Power BI does not need to also add its own implicit constraint of *CountRows(Purchases)>0*, such as what was done like in the previous Scenario 1, because the constraint provided by the user is sufficient.
+
+**Scenario 3: Non-star schema and no measure constraint provided.** In this scenario, we focus our attention to the center of the model, where we have the *Sales - Product - Purchases* tables, where we have one dimension table (*Product*) and two Fact Tables (*Sales*, *Purchases*). Since this is not a star schema, we can't answer the same kind of questions as we had in Scenario 1. Let's say we try to correlate *Purchases* and *Sales*; since *Purchases* has a *Many to 1* relationship with *Product*, and *Product* has a *1 to Many* relationship with *Sales*, *Sales* and *Purchases* are indirectly *Many to Many*. We can link one *Product* to many *Purchases* and one *Product* to many sales, but we cannot link one *Sale* to many *Purchases* or vice versa. We can only link many *Purchases* to many *Sales*.
+
+In this situation, if we try to combine *Purchase[VenID]* and *Sales[CustID]* in a visual, Power BI does not have a concrete constraint it can apply, due to the *Many to Many* relationship between those tables. Though there may custom constraints (not necessarily stemming from the relationships established in the model) that can be applied for various scenarios, Power BI cannot infer a default constraint solely based on the relationships. If Power BI attempted to return all combinations of the two tables, it would create a large cross join and return non-relevant data. Instead of this, Power BI raises an error in the visual, such as the following.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Error dialog when relationship cannot be inferred":::
+
+**Scenario 4: Non-star schema and measure constraint provided.** If we take the example from Scenario 3 and add a user provided constraint in the form of a summarized column (*Count of Product[ProdID]* for example) or a model measure (*Sales[Total Qty]*) Power BI can generate a query in the form of *Correlate Purchase[VenID]* and *Sales[CustID]* where *MeasureConstraint* is not blank. 
+
+In this case, Power BI respects the user's constraint as being the sole constraint Power BI needs to apply, and return the combinations that produce non-blank values for it. The user has guided Power BI to the scenario it wants, and Power BI applies the guidance.
+
+**Scenario 5: When a measure constraint is provided but it is partially related to the columns.** There are cases where the measure constraint provided by the user is not entirely related to all the columns in the visual. A model measure always relates everything; Power BI treats this as a black box when attempting to find relationships between columns in the visual, and assume the user knows what they are doing by using it. However, summarized columns in the form of *Sum*, *Average*, and similar summaries chosen from the user interface can be related to only a subset of the columns/tables used in the visual based on the relationships of the table to which that column belongs. As such, the constraint applies to some pairings of columns, but not to all, in which case Power BI attempts to find default constraints it can apply for the columns that are not related by the user provided constraint (such as in Scenario 1). If Power BI cannot find any, the following error is returned.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Error dialog when Power BI cannot find default constraints":::
+
+#### Resolving relationship errors
+
+When you see the **Can't determine relationships between the fields** error, you can take the following steps to attempt to resolve the error:
+
+1. Check your model. Is it set up appropriately for the types of questions you want answered from your analysis? Can you change some of the relationships between tables? Can you avoid creating an indirect *Many to Many*?
+    
+    Consider converting your reversed *V* shape schema to two tables, and use a direct *Many to Many* relationship between them as described in [apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
+2.	Add a constraint to the visual in the form of a summarized column or a model measure.
+3.	If a summarized column is added and there still is an error, consider using a model measure.
+ 
+
+## Next steps
+
+For more information about models and relationships, see the following articles:
+* [Use composite models in Power BI Desktop](desktop-composite-models.md)
+* [Storage mode in Power BI Desktop](desktop-storage-mode.md)
+* [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
+* [Power BI data sources](../connect-data/power-bi-data-sources.md)
+

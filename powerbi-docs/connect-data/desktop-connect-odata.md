@@ -4,17 +4,17 @@ description: Easily connect to and use an OData feed in Power BI Desktop
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 02/04/2022
 LocalizationGroup: Connect to data
 ---
 # Connect to OData feeds in Power BI Desktop
 In Power BI Desktop, you can connect to an **OData feed** and use the underlying data just like any other data source in Power BI Desktop.
 
-To connect to an OData feed, select **Get Data > OData Feed** from the **Home** ribbon in Power BI Desktop.
+To connect to an OData feed, select **Get data > OData feed** from the **Home** ribbon in Power BI Desktop.
 
 ![Screenshot of the Get Data ribbon in Power B I Desktop, showing the OData Feed selection.](media/desktop-connect-odata/connect-to-odata_1.png)
 
@@ -22,11 +22,14 @@ In the **OData Feed** window that appears, type or paste your OData feed URL int
 
 ![Screenshot of the OData Feed dialog, showing the URL field.](media/desktop-connect-odata/connect-to-odata_2.png)
 
+> [!TIP]
+> The location of the Northwind OData feed changes occasionally. Currently the link is https://services.odata.org/v2/northwind/northwind.svc/.
+
 Power BI Desktop connects to the OData feed, and displays the available tables and other data elements in the **Navigator** window. When you select an element, the right pane of the **Navigator** window displays a preview of the data. You can select as many tables as you want to import. The **Navigator** window shows a preview of the currently selected table.
 
 ![Screenshot of the Navigator dialog, showing a preview of the selected table's data.](media/desktop-connect-odata/connect-to-odata_3.png)
 
-You can choose the **Edit** button, which launches **Query Editor**, where you can shape and transform the data from the OData feed before importing it into Power BI Desktop. Or you can select the **Load** button, and import all of the data elements you selected in the left pane.
+You can choose the **Transform Data** button, which launches **Power Query Editor**, where you can shape and transform the data from the OData feed before importing it into Power BI Desktop. Or you can select the **Load** button, and import all of the data elements you selected in the left pane.
 
 When we select **Load**, Power BI Desktop imports the selected items, and displays a **Load** window of the import progress.
 

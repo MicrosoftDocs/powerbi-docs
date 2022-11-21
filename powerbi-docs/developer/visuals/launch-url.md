@@ -1,12 +1,12 @@
 ---
-title: Create a launch URL
+title: Create a launch URL in Power BI
 description: This article describes how can open URL on new tab by using Power BI Visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
@@ -80,7 +80,7 @@ private createHelpLinkElement(): Element {
     linkElement.setAttribute("title", "Open documentation");
     linkElement.setAttribute("class", "helpLink");
     linkElement.addEventListener("click", () => {
-        this.host.launchUrl("https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial");
+        this.host.launchUrl("https://learn.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial");
     });
     return linkElement;
 };

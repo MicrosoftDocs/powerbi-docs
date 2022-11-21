@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/04/2020
+ms.date: 08/10/2021
 LocalizationGroup: Create reports
 ---
 # Keyboard shortcuts in Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The tables in this article describe the shortcuts available in a Power BI report. 
 
@@ -51,27 +53,67 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Right-click | <ul><li>Windows keyboard: **Windows context key + F10**. The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 | Clear selection | **Ctrl + Shift + C** |
 | Show or hide tooltip | **Ctrl + H** |
+| Move a visual on the canvas (small moves)* | **Arrow keys (up, down, right, left**) |
+| Move a visual on the canvas (bigger moves)* | **Shift + arrow keys** |
+| Resize a visual* | **Arrow keys**  |
+| Maintain aspect ratio*  | **Shift** + drag the resize handles |
+| Group Visuals*  | Select visuals + **Ctrl + G** |
 
-## Table and matrix navigation
+
+\* Must be in editing mode
+
+## Table navigation
 | To do this action          | Press                |
 | :------------------- | :------------------- |
 | Move focus up / down one cell (across all cells in all areas)  | **Up arrow key** / **Down arrow key** |
 | Move focus left / right one cell (across all cells in all areas)  | **Left arrow key** / **Right arrow key** |
+| Moves the focus to the last cell in the current row | **Ctrl + Right arrow key** / **End key** |
+| Moves the focus to the first cell in the current row | **Ctrl + Left arrow key** / **Home key** |
+| Moves the focus to the last element in the current column | **Ctrl + Down arrow key** |
+| Moves the focus to the first element in the current column | **Ctrl + Up arrow key** |
+| Moves the focus to the first element in the table (top left corner) | **Ctrl + Home key** |
+| Moves the focus to the last element in the table (bottom right corner) | **Ctrl + End key** |
+| Moves the focus to the last row displayed in the current column | **Page down key** |
+| Moves focus to the first row displayed in the current column | **Page up key** |
+| Selecting multiple noncontiguous rows | **Ctrl + Enter** / **Ctrl + Space** |
+| Selecting multiple contiguous rows | **Shift + Down arrow key or Up arrow key** |
+| Clear selected rows | **Ctrl + Shift + C** |
+| Open URL links | **Ctrl + Alt + O** |
+| Open Context Menu| **Shift + F10** |
+
+
+
+## Matrix navigation
+| To do this action          | Press                |
+| :------------------- | :------------------- |
+| Expand matrix | **Shift + Right arrow key** |
+| Collapse matrix | **Shift + Left arrow key** |
 
 ## Pane navigation
 | To do this action           | Press                |
 | :------------------- | :------------------- |
-| Multi-select | **Ctrl + spacebar** |
+| Multi-select | **Ctrl + Spacebar** |
 | Collapse a single table | **Left arrow key** |
 | Expand a single table | **Right arrow key** |
 | Collapse all tables | **Alt + Shift + 1** |
 | Expand all tables | **Alt + Shift + 9** |
 | Open a context menu | <ul><li>Windows keyboard: **Windows context key + F10**.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 
+## Canvas zoom
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Zoom in | **Ctrl + Plus** or **Ctrl + (mouse scroll wheel forward)** |
+| Zoom out | **Ctrl + Minus** or **Ctrl + (mouse scroll wheel backward)** |
+
 ## Slicer
 | To do this action         | Press                |
 | :------------------- | :------------------- |
-| Interact with a slicer | **Ctrl + Right arrow key** |
+| Interact with a slicer | **Enter** |
+| Move focus between menu items | **Up arrow key / Down arrow key** |
+| Move focus to first menu item	| **Home** |
+| Move focus to last menu item | **End** |
+| Select multiple contiguous items | **Shift + Up arrow key / Down arrow key** |
+| Open context menu | **Shift + F10** |
 
 ## Selection pane
 | To do this action           | Press                |
@@ -84,16 +126,25 @@ In our continued effort to improve accessibility, the previous list of experienc
 ## DAX editor
 | To do this action          | Press                |
 | :------------------- | :------------------- |
+| Go to line number | **Ctrl + G** |
 | Move line up / down | **Alt + Up arrow key** / **Down arrow key** |
 | Copy line up / down | **Shift + Alt + Up arrow key** / **Down arrow key** |
 | Insert line below | **Shift + Enter** |
 | Insert line above | **Ctrl + Shift + Enter** |
+| Delete selected word | **Ctrl + Del**|
+| Delete all selected lines | **Ctrl + Shift + K**|
 | Jump to matching bracket | **Ctrl + Shift +** \ |
+| Jump to start of a line of code | **Ctrl + Home**  |
+| Jump to the end of a line of code | **Ctrl + End** |
 | Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
 | Insert cursor | **Alt + Click** |
-| Select current line | **Ctrl + I** |
+| Select current line | **Ctrl + L** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
 | Select all occurrences of current word | **Ctrl + F2** |
+| Select next occurrences of current selection | **Ctrl + D** |
+| Select the line above | **Shift + Up arrow key** |
+| Select the line below | **Shift + Down arrow key** |
+| Enter multiple lines of code up / down |**Ctrl + Alt + Up arrow key** / **Down arrow key**|
 | Comment a line | **Ctrl + /** or **Ctrl + K + C** |
 | Uncomment a line | **Ctrl + /** or **Ctrl + K + U** |
 | Increase font size | **Ctrl + +** Or **Scroll Up** |

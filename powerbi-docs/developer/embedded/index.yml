@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Power BI embedded analytics documentation
-summary: Learn to use the two embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
+summary: Learn to use the two Power BI embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
 
 metadata:
   title: Power BI embedded analytics documentation
@@ -11,8 +11,8 @@ metadata:
   ms.subservice: powerbi-developer
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: KesemSharabi
-  ms.author: kesharab
+  author: mberdugo
+  ms.author: monaberdugo
   ms.date: 31/03/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -20,18 +20,33 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+
   # Card (optional)
   - title: Get started
     linkLists:
       - linkListType: get-started
         links:
-          - text: "What is embedding with Power BI?"
-            url: embedding.md
-          - text: "What is Power BI Embedded in Azure?"
-            url: azure-pbie-what-is-power-bi-embedded.md
+          - text: "What is Power BI embedded analytics?"
+            url: embedded-analytics-power-bi.md
           - text: "Frequently asked questions"
-            url: embedded-faq.md
+            url: embedded-faq.yml
+      - linkListType: whats-new
+        links:
+          - text: "Power BI Embedded Generation 2"
+            url: power-bi-embedded-generation-2.md
+      - linkListType: reference
+        links:
+          - text: "Power BI Developer in a Day course"
+            url: ../../learning-catalog/developer-online-course.md
 
+  # Card (optional)
+  - title: Client APIs
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+            
   # Card
   - title: Embed reports or dashboards
     linkLists:
@@ -39,12 +54,14 @@ landingContent:
         links:
           - text: "Tutorial: Embed Power BI content into an application for your customers"
             url: embed-sample-for-customers.md
-          - text: "Tutorial: Embed Power BI content into an application for your organization"
-            url: embed-sample-for-your-organization.md
-          - text: "Tutorial: Embed Power BI paginated reports into an application for your customers"
-            url: embed-paginated-reports-customers.md
-          - text: "Tutorial: Embed a Power BI content into your application for national clouds"
-            url: embed-sample-for-customers-national-clouds.md
+          - text: "Tutorial: Embed a Power BI report in an application for your organization"
+            url: embed-organization-app.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Embed Power BI paginated reports"
+            url: embed-paginated-reports.md
+          - text: "Embed using a service principal"
+            url: embed-service-principal.md                              
       - linkListType: reference
         links:
           - text: "Embedding setup tool"
@@ -75,17 +92,29 @@ landingContent:
   # Card (optional)
   - title: References and resources
     linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Playground
+            url: https://go.microsoft.com/fwlink/?linkid=848279
       - linkListType: reference
         links:
           - text: "Power BI REST APIs"
             url: /rest/api/power-bi/
-          - text: "Power BI REST API Reference"
-            url: ../automation/rest-api-reference.md
           - text: Developer center
             url: https://powerbi.microsoft.com/developers/
           - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi
-          - text: Playground
-            url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
-          - text: "JavaScript wiki"
-            url: https://github.com/Microsoft/powerbi-javascript/wiki
+          - text: "Power BI embedded analytics Client APIs"
+            url: /javascript/api/overview/powerbi/
+
+  # Card (optional)
+  - title: Learn
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Power BI Dev Camp
+            url: dev-camp-links.md
+      - linkListType: reference
+        links:
+          - text: Dev Camp website
+            url: https://www.powerbidevcamp.net/        

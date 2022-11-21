@@ -4,7 +4,7 @@ description: Learn how to encrypt the connection when connecting to a HANA serve
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
@@ -17,20 +17,20 @@ LocalizationGroup: Connect to data
 We recommend that you encrypt connections to an SAP HANA server from Power BI Desktop and the Power BI service. You can enable HANA encryption using SAP's proprietary CommonCryptoLib (formerly known as sapcrypto) library. SAP recommends using CommonCryptoLib.
 
 > [!IMPORTANT]
-> SAP no longer supports the OpenSSL, and as a result, Microsoft also has discontinued its support. Existing and new connections will continue to work properly until the end of 2020, but will not work from January 1, 2021 onwards. Use CommonCryptoLib instead.
+> SAP no longer supports the OpenSSL, and as a result, Microsoft also has discontinued its support. Use CommonCryptoLib instead.
 
-This article provides an overview of enabling encryption using OpenSSL and references some specific areas of the SAP documentation. We update content and links periodically, but for comprehensive instructions and support, always refer to the official SAP documentation. If you want to set up encryption using CommonCryptoLib instead of OpenSSL, see [How to Configure TLS/SSL in SAP HANA 2.0](https://blogs.sap.com/2018/11/13/how-to-configure-tlsssl-in-sap-hana-2.0/) For steps on how to migrate from OpenSSL to CommonCryptoLib, see [SAP Note 2093286](https://launchpad.support.sap.com/#/notes/2093286) (s-user required).
+This article provides an overview of enabling encryption using CommonCryptoLib and references some specific areas of the SAP documentation. We update content and links periodically, but for comprehensive instructions and support, always refer to the official SAP documentation. You should set up encryption using CommonCryptoLib instead of OpenSSL, for steps to do so see [How to Configure TLS/SSL in SAP HANA 2.0](https://blogs.sap.com/2018/11/13/how-to-configure-tlsssl-in-sap-hana-2.0/) For steps on how to migrate from OpenSSL to CommonCryptoLib, see [SAP Note 2093286](https://launchpad.support.sap.com/#/notes/2093286) (s-user required).
 
 > [!NOTE]
-> The setup steps for encryption detailed in this article overlap with the setup and configuration steps for SAML SSO. Whether you choose OpenSSL or CommonCryptoLib as your HANA server's encryption provider, make sure that your choice is consistent across SAML and encryption configurations.
+> The setup steps for encryption detailed in this article overlap with the setup and configuration steps for SAML SSO. Use CommonCryptoLib as your HANA server's encryption provider, and make sure that your choice of CommonCryptoLib is consistent across SAML and encryption configurations.
 
-There are four phases to enabling encryption for SAP HANA using OpenSSL. We cover these phases next.  For more information, see [Securing the Communication between SAP HANA Studio and SAP HANA Server through SSL](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/).
+There are four phases to enabling encryption for SAP HANA. We cover these phases next. For more information, see [Securing the Communication between SAP HANA Studio and SAP HANA Server through SSL](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/).
 
-## Use OpenSSL
+## Use CommonCryptoLib
 
-Ensure your HANA server is configured to use OpenSSL as its cryptographic provider. Replace the missing path information below with the server ID (sid) of your HANA server.
+Ensure your HANA server is configured to use CommonCryptoLib as its cryptographic provider. Replace the missing path information below with the server ID (sid) of your HANA server.
 
-![OpenSSL cryptographic provider](media/desktop-sap-hana-encryption/ssl-crypto-provider.png)
+![CommonCryptoLib cryptographic provider](media/desktop-sap-hana-encryption/ssl-crypto-provider.png)
 
 ## Create a certificate signing request
 
@@ -84,19 +84,14 @@ Get the certificate signed by a certificate authority (CA) that is trusted by th
 
     ![Trusted Root Certification Authorities folder](media/desktop-sap-hana-encryption/trusted-root-certification.png)
 
-    You must first convert trust.pem into a .crt file before you can import the certificate into the Trusted Root Certification Authorities folder, for example by executing the following OpenSSL command:
+    You must first convert trust.pem into a .crt file before you can import the certificate into the Trusted Root Certification Authorities folder.
 
-    ```
-    openssl x509 -outform der -in your-cert.pem -out your-cert.crt
-    ```
-    
-    For information about using OpenSSL for the conversion, see the [OpenSSL documentation](https://www.openssl.org/docs/man1.0.2/man3/x509.html).
 
 ## Test the connection
 
 Test the connection in Power BI Desktop or the Power BI service.
 
-1. In Power BI Desktop or in the **Manage gateways** page of the Power BI service, ensure that **Validate server certificate** is enabled before attempting to establish a connection to your SAP HANA server. For **SSL crypto provider**, select mscrypto if you've followed the OpenSSL setup steps and commoncrypto if you've configured that library as your crypto provider. Leave the SSL key store and SSL trust store fields blank.
+1. In Power BI Desktop or in the **Manage gateways** page of the Power BI service, ensure that **Validate server certificate** is enabled before attempting to establish a connection to your SAP HANA server. For **SSL crypto provider**, select commoncrypto if you've configured the CommonCryptoLib library as your crypto provider. Leave the SSL key store and SSL trust store fields blank. 
 
     - Power BI Desktop
 

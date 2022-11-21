@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ""
-ms.date: 09/22/2020
+ms.date: 01/06/2022
 ---
 
 # Upgrade Power BI Report Server
@@ -17,7 +17,7 @@ Learn how to upgrade Power BI Report Server.
 
  **Download** ![download icon](media/upgrade/download.png "download icon")
 
-To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 ## Before you begin
 
@@ -44,7 +44,7 @@ Power BI Report Server uses configuration files to store application settings. B
 * config.json
 * RSHostingService.exe.config
 * Rsreportserver.config
-* Rssvrpolicy.config
+* Rssrvpolicy.config
 * Reportingservicesservice.exe.config
 * Web.config for the Report Server ASP.NET applications
 * Machine.config for ASP.NET
@@ -77,12 +77,12 @@ Power BI Report Server receives security fixes via Microsoft Update. To enable g
 
 ## Upgrade Power BI Desktop
 
-After you upgrade the report server, make sure that any Power BI report authors upgrade to the version of Power BI Desktop optimized for Power BI Report Server that matches the server.
+After you upgrade the report server, make sure that any Power BI report authors upgrade to the version of Power BI Desktop for Power BI Report Server that matches the server.
 
 ## Next steps
 
 * [Administrator overview](admin-handbook-overview.md)  
-* [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
+* [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
 * [Verify a Reporting Services installation](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 * [Configure the report server service account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 * [Configure report server URLs](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

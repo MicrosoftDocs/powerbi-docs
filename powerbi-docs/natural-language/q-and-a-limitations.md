@@ -4,7 +4,7 @@ description: Current limitations of Power BI Q&A
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
-ms.subservice: pbi-reports-dashboards
+ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 09/09/2020
 ---
@@ -28,8 +28,6 @@ In each of these configurations, row-level security is also supported.
 **DirectQuery support for Q&A** (preview)
 
 Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one small change to the behavior of Q&A when it's in DirectQuery mode: After you type your question, you select the **Submit** button. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
-
-Other DirectQuery sources aren't supported for Q&A. We don’t block Q&A altogether if you have other DirectQuery sources in your dataset, but some questions may not be answered correctly or return errors.
 
 ### Data sources not supported
 
@@ -60,8 +58,8 @@ Teach Q&A allows you to fix two types of errors:
 
 Currently we don't support redefining a recognized term or defining other types of conditions or phrases. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
-- Country which is USA
-- Country which is not USA
+- Country or region which is USA
+- Country or region which is not USA
 - Products > 100
 - Products greater than 100
 - Products = 100

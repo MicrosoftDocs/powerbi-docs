@@ -2,18 +2,18 @@
 title: Monitor report performance in Power BI
 description: Guidance on how to monitor report performance in Power BI.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/16/2020
+ms.date: 04/02/2021
 ---
 
 # Monitor report performance in Power BI
 
-Monitor report performance in Power BI Desktop by using the [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md), learn where the bottlenecks are, and learn how you can improve report performance.
+Monitor report performance in Power BI Desktop using the [Performance Analyzer](../create-reports/desktop-performance-analyzer.md). Monitoring will help you learn where the bottlenecks are, and how you can improve report performance.
 
 Monitoring performance is relevant in the following situations:
 
@@ -22,6 +22,10 @@ Monitoring performance is relevant in the following situations:
 - Your model calculations are slow.
 
 Slow queries or report visuals should be a focal point of continued optimization.
+
+
+> [!NOTE]
+> The Performance Analyzer cannot be used to monitor Premium Per User (PPU) activities or capacity.
 
 ## Use Query Diagnostics
 
@@ -50,7 +54,7 @@ Use SQL Server Profiler when your data source is either:
 - Azure Analysis Services
 
 > [!CAUTION]
-> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is not supported. Changes to the data model may lead to corruption and data loss.
+> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is supported [only for specific operations](/power-bi/transform-model/desktop-external-tools#supported-write-operations). Other changes to the data model with operations that aren't supported may lead to corruption and data loss.
 
 To create a SQL Server Profiler trace, follow these instructions:
 
@@ -72,7 +76,9 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 ## Monitor Premium metrics
 
-For Power BI Premium capacities, use the **Power BI Premium Metrics app** to monitor the health and capacity of your Power BI Premium subscription. For more information, see [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md).
+Monitor performance of content deployed into your organization's Power BI Premium Gen2 capacity with the help of the [Gen2 metrics app](./../enterprise/service-premium-gen2-metrics-app.md).
+
+To monitor the Power BI Premium original version capacities, use the [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md).
 
 ## Next steps
 
@@ -81,6 +87,6 @@ For more information about this article, check out the following resources:
 - [Query Diagnostics](/power-query/QueryDiagnostics)
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
 - [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md)
-- [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md)
+- [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

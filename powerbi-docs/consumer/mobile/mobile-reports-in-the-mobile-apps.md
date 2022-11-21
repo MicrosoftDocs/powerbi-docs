@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/17/2020
+ms.date: 04/06/2021
 ---
 # Explore reports in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android tablet](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10 devices](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
+| ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android tablet](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows devices](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:---: |:---: |:---: |:---: |:---: |
-| iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
+| iPhones |iPads |Android phones |Android tablets |Windows devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 A Power BI report is an interactive view of your data, with visuals that represent different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process:
 
@@ -152,9 +152,9 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 ## Investigate anomalies in time series data
 
-[Anomaly detection](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) is a Power BI feature that automatically detects anomalies (i.e. values that lay outside expected ranges) on line charts with time series data. In addition, it provides possible explanations, ranked according their explanatory strength, for the cause of the anomalous values. Anomaly detection is available if it has been enabled on the chart by the report creator. 
+[Anomaly detection](https://powerbi.microsoft.com/blog/anomaly-detection-preview/) is a Power BI feature that automatically detects anomalies (i.e. values that lay outside expected ranges) on line charts with time series data. In addition, it provides possible explanations, ranked according to their explanatory strength, for the cause of the anomalous values. Anomaly detection is available if it has been enabled on the chart by the report creator. 
 
-When you view a report that has anomaly detection enabled on a chart with time series data, you’ll see the the anomalies indicated on chart, just like you would in the Power BI service and in Power BI Desktop. 
+When you view a report that has anomaly detection enabled on a chart with time series data, you’ll see the anomalies indicated on chart, just like you would in the Power BI service and in Power BI Desktop. 
 
 ![Screenshot of line chart that has anomaly indications.](media/mobile-reports-in-the-mobile-apps/mobile-detected-anomalies.png)
 
@@ -203,5 +203,5 @@ See [app interaction settings](./mobile-app-interaction-settings.md) for informa
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
-* [Create a version of a report that's optimized for phones](../../create-reports/desktop-create-phone-report.md)
+* [Create a version of a report that's optimized for phones](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

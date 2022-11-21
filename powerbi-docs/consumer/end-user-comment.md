@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/03/2020
+ms.date: 07/10/2021
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
@@ -23,7 +23,7 @@ Add a personal comment or start a conversation about a dashboard or report with 
 > Collaborating with others, including adding comments to shared reports, requires a Power BI Pro license or for the content to be hosted in Power BI Premium capacity. [Which license type do I have?](end-user-license.md)
 
 ## How to use the Comments feature
-Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or add a comment targeted at specific colleagues.  
+Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or add a comment targeted at specific colleagues. Comments can be up to 2000 characters, including @mentions of other users and spaces.
 
 When you add a comment to a report, Power BI captures the current filter and slicer values and creates a [bookmark](end-user-bookmarks.md). This means that when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
 
@@ -63,7 +63,7 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 ### Add a comment to a specific dashboard or report visual
 In addition to adding comments to an entire dashboard or to an entire report page, you can add comments to individual dashboard tiles and individual report visuals. The processes are similar, and in this example we're using a report.
 
-1. Hover over the visual and select **More actions** (...).    
+1. Hover over the visual and select **More options** (...).    
 2. From the dropdown, select **Add a comment**.
 
     ![Add a comment is first choice](media/end-user-comment/power-bi-comment-reports.png)  
@@ -86,7 +86,7 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 5. Select **Close** to return to the dashboard or report.
 
 ### Get your colleagues attention by using the @ sign
-Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. The @mentioned individuals will immediately receive an e-mail in their inbox, and if they are using a Power BI Mobile app, they will receive a push notification on their device. They can open the comment directly from the notification, view the data, and reply accordingly.
+Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. The @mentioned individuals will immediately receive an e-mail in their inbox, and if they are using a Power BI Mobile app, they will receive a push notification on their device. They can open the report or dashboard directly from the notification, see the comment, view the data, and reply accordingly.
 
 Here's a conversation I'm having with the visualization *designer*. They are using the @ symbol to ensure I see the comment. I receive a notification and select the link to open this dashboard and the relevant conversation.  
 
@@ -94,6 +94,8 @@ Here's a conversation I'm having with the visualization *designer*. They are usi
 
 ## Considerations and troubleshooting
 
+- Comments are limited to 2000 characters, including @mentions of other users and spaces.
+- The maximum number of conversations on a dashboard or report is 100. The maximum number of comments per conversation is 1000. To add a new conversation or comment, delete prior conversations or comments.
 - Bookmarks are not captured when you reply to a conversation. Only the first comment in a conversation creates a bookmark.
 - If you are using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual paginated report visuals is not available.
 

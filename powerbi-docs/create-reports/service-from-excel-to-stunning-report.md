@@ -7,11 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/30/2020
+ms.date: 09/20/2022
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams
-Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in various third-party systems and files on your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in files on your laptop. In the past, it’s taken hours to create a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report and share it in Microsoft Teams in no time!
 
@@ -26,6 +29,11 @@ In this tutorial, we upload an Excel file, create a new report, and share it wit
 > * Pin the report visuals to a dashboard.
 > * Share a link to the dashboard.
 > * Share the dashboard in Microsoft Teams
+
+## Prerequisites
+- [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
+- Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it your computer or to OneDrive for Business.
+
 
 ## Prepare data in Excel
 Let’s take a simple Excel file as an example. 
@@ -43,10 +51,7 @@ Let’s take a simple Excel file as an example.
    ![Screenshot of Data formatted as a table.](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## Upload your Excel file to the Power BI service
-The Power BI service connects to many data sources, including Excel files that live on your computer. 
-
- > [!NOTE] 
- > To follow along with the rest of this tutorial, download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
+The Power BI service connects to many data sources, including Excel files that live on your computer.
 
 1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 1. In **My workspace**, select **New** > **Upload a file**.
@@ -54,17 +59,17 @@ The Power BI service connects to many data sources, including Excel files that l
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-upload.png" alt-text="Screenshot of the Upload a file option.":::
 
 1. Select **Local File**, browse to where you saved the Financial Sample Excel file, and select **Open**.
-7. On the **Local File** page, select **Import**.
+1. On the **Local File** page, select **Import**.
 
     Now you have a Financial Sample dataset. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-dataset.png" alt-text="Screenshot of My Workspace with Financial Sample dataset.":::
 
-2. You want to create a report. Still in **My workspace**, select **New** > **Report**.
+1. You want to create a report. Still in **My workspace**, select **New** > **Report**.
 
    ![Screenshot of the New report option.](media/service-from-excel-to-stunning-report/power-bi-new-report.png)
 
-3. In the **Select a dataset to create a report** dialog box, select your **Financial Sample** dataset > **Create**.
+1. In the **Select a dataset to create a report** dialog box, select your **Financial Sample** dataset > **Create**.
 
    ![Screenshot of Select a dataset dialog box.](media/service-from-excel-to-stunning-report/power-bi-select-dataset.png)
 
@@ -78,39 +83,39 @@ You see the Sigma symbols in the Fields list? Power BI has detected that those f
 
 1. To have more room for the report canvas, select **Hide the navigation pane**, and minimize the **Filters** pane.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-hide-nav-pane.png" alt-text="Screenshot of minimizing the navigation pane."::: 
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-hide-nav-pane.png" alt-text="Screenshot of minimizing the navigation pane.":::
 
-1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Fields** pane, drag **Profit** to the report canvas. 
+1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Fields** pane, drag **Profit** to the report canvas.
 
-   By default, Power BI displays a column chart with one column. 
+   By default, Power BI displays a column chart with one column.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-profit-column.png" alt-text="Screenshot of column chart with one column.":::
 
-3. Drag **Date** to the report canvas. 
+1. Drag **Date** to the report canvas.
 
    Power BI updates the column chart to show profit by date.
 
-   ![Screenshot of column chart in report editor.](media/service-from-excel-to-stunning-report/power-bi-profit-date.png)
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-profit-date.png" alt-text="Screenshot of column chart in report editor.":::
 
     December 2014 was the most profitable month.
-   
+
     > [!TIP]
     > If your chart values don't look as you expect, check your aggregations. For example, in the **Values** well, select the **Profit** field you just added and ensure the data is being aggregated the way you'd like it. In this example, we're using **Sum**.
-    > 
+    >
 
 ### Create a map
 
-Your manager wants to know which countries are the most profitable. Impress your manager with a map visualization. 
+Your manager wants to know which countries/regions are the most profitable. Impress your manager with a map visualization.
 
-1. Select a blank area on your report canvas. 
+1. Select a blank area on your report canvas.
 
 2. From the **Fields** pane, drag the **Country** field to your report canvas, then drag the **Profit** field to the map.
 
    Power BI creates a map visual with bubbles representing the relative profit of each location.
 
-   ![Screenshot of map visual in report editor.](media/service-from-excel-to-stunning-report/power-bi-map-visual.png)
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of map visual in report editor.":::
 
-    Looks like the European countries are outperforming the North American countries.
+    Looks like the European countries/regions are outperforming the North American countries/regions.
 
 ### Create a visual showing sales
 
@@ -118,15 +123,15 @@ What about displaying a visual showing sales by product and market segment? Easy
 
 1. Select the blank canvas.
 
-1. In the **Fields** pane, select the **Sales**, **Product**, and **Segment** fields. 
-   
-   Power BI creates a clustered column chart. 
+1. In the **Fields** pane, select the **Sales**, **Product**, and **Segment** fields.
 
-2. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**. 
+   Power BI creates a clustered column chart.
 
-   ![Screenshot of Stacked column chart in report editor.](media/service-from-excel-to-stunning-report/power-bi-stacked-column.png)
+1. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**.
 
-3. To sort the chart, select **More options** (...) > **Sort by**.
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-stacked-column.png" alt-text="Screenshot of Stacked column chart in report editor.":::
+
+1. To sort the chart, select **More options** (**...**) > **Sort by**.
 
 ### Spruce up the visuals
 
@@ -168,25 +173,24 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
    ![Screenshot of Share icon.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard.png)
 
-2. In the **Share dashboard** page, enter the email addresses of the recipients in the **Enter email addresses** box and add a message in the box below it. 
+2. In the **Share dashboard** screen, enter the email addresses of the recipients in the **Enter a name or email addresses** field, and add an optional message.
 
-3. Decide which of these options you want, if any:
+3. Select the option to **Send an email notification**. Decide which of these other options you want, if any:
 
-    - **Allow recipients to share your dashboard**. 
-    - **Allow recipients to build new content using the underlying datasets**.
-    - **Send an email notification to recipients.**
+    - **Allow recipients to share this dashboard**
+    - **Allow recipients to build content with the data associated with this dashboard**
 
    ![Screenshot of Share dashboard pane](media/service-from-excel-to-stunning-report/power-bi-share-dashboard-pane.png)
 
-1. Select **Share**.
+1. Select **Grant access**.
 
 ## Share to Microsoft Teams
 
 You can also share reports and dashboards directly to your colleagues in Microsoft Teams.
 
-1. To share in Teams, at the top of the dashboard, select **Share to Teams**.
+1. To share in Teams, at the top of the dashboard, select **Chat in Teams**.
 
-   ![Screenshot of Share to Teams option.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
+   ![Screenshot of Chat in Teams option.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
 
 2. Power BI displays the **Share to Teams** dialog. Enter the name of a person, group, or channel and select **Share**. 
    

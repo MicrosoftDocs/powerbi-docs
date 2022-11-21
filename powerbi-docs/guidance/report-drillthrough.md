@@ -2,10 +2,10 @@
 title: Use report page drillthrough
 description: Guidance for working with report page drillthrough.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 11/28/2019
 ---
@@ -18,7 +18,7 @@ It's recommended that you design your report to allow report users to achieve th
 
 1. View a report page.
 2. Identify a visual element to analyze more deeply.
-3. Right-click the visual element to drillthrough.
+3. Right-click the visual element to drill through.
 4. Perform complimentary analysis.
 5. Return to the source report page.
 
@@ -35,7 +35,7 @@ When your report page displays summarized results, a drillthrough page can lead 
 
 The following example shows what happens when a report user drills through from a monthly sales summary. The drillthrough page contains a detailed list of orders for a specific month.
 
-![A matrix visual titled "Sales Summary" groups sales by year and month on the rows, and country on the columns. A drillthrough page is also displayed.](media/report-drillthrough/suggestion-drillthrough-add-depth.png)
+![A matrix visual titled "Sales Summary" groups sales by year and month on the rows, and country or region on the columns. A drillthrough page is also displayed.](media/report-drillthrough/suggestion-drillthrough-add-depth.png)
 
 ### Broader perspective
 

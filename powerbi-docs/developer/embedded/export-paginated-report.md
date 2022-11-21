@@ -1,37 +1,49 @@
 ---
 title: Export Power BI embedded analytics paginated reports API
-description: Learn how to export an embedded Power BI paginated report 
-author: KesemSharabi
-ms.author: kesharab
+description: Learn how to export an embedded Power BI paginated report.
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/05/2020
+ms.date: 10/24/2022
 ---
 
-# Export paginated report to file (preview)
+# Export paginated report to file
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
+
 * **.pptx** (PowerPoint)
-* **.pdf**
+* **.pdf** (and [Accessible PDF, or PDF/UA](../../report-server/rendering-extension-support.md))
 * **.xlsx** (Excel)
-* **.dox** (Word)
+* **.docx** (Word)
 * **.csv**
 * **.xml**
 * **.mhtml**
-* **Image**
-    * When exporting to an image, set the image format via the `OutputFormat` format setting
-    * The supported OutputFormat values are: .bmp, .emf, .gif, .jpeg, .png, or .tiff (default)
+* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are:
+
+  * *.tiff* (default)
+  * *.bmp*
+  * *.emf*
+  * *.gif*
+  * *.jpeg*
+  * *.png*
 
 ## Usage examples
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx, and when it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes and other format specific settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes, and other format-specific settings. As the API is asynchronous, it may take some time for the file to be available.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
 ## Using the API
+
+### Rendering events
+
+To make sure the export doesn't begin before the visual finishes rendering use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
+
+### Polling
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
@@ -43,9 +55,9 @@ When the export is complete, the polling API call returns a [Power BI URL](/rest
 
 Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
 
-Here are two examples, one for exporting the first four pages of a report using the report page size to a .pptx file, and another for exporting the third page of a report to a .jpeg file.
+Here are two examples. The first is for exporting the first four pages of a report using the report page size to a .pptx file. The second example is for exporting the third page of a report to a .jpeg file.
 
-**Exporting the first four pages to a .pptx**
+#### Exporting the first four pages to a .pptx
 
 ```json
 {
@@ -60,7 +72,7 @@ Here are two examples, one for exporting the first four pages of a report using 
 }
 ```
 
-**Exporting the third page to a .jpeg**
+#### Exporting the third page to a .jpeg
 
 ```json
 {
@@ -79,7 +91,7 @@ Here are two examples, one for exporting the first four pages of a report using 
 
 You can use the `exportToFile` API to programmatically export a report with a set of report parameters. This is done using [report parameter](../../paginated-reports/paginated-reports-parameters.md) capabilities.
 
-Here is an example for setting report parameter values.
+Here's an example for setting report parameter values.
 
 ```json
 {
@@ -105,7 +117,7 @@ When using a Power BI dataset that has Row Level Security (RLS) defined as a dat
 
 To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
 
-Here is an example for supplying an effective user name for RLS.
+Here's an example of supplying an effective user name for RLS.
 
 ```json
 {
@@ -117,8 +129,47 @@ Here is an example for supplying an effective user name for RLS.
       }
 }
 ```
-## PPU concurrent requests
-The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.md). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
+
+### Single Sign-on SQL and Dataverse (SSO)
+
+In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the request header isn't used to access the data. The token must be passed in with the effective identity in the post body.
+
+Getting the correct access token for the resource that you want to access can sometimes be tricky.
+
+* For Azure SQL, the resource is `https://database.windows.net`.
+* For Dataverse, the resource is the `https://` address for your environment. For example, `https://contoso.crm.dynamics.com`.
+
+Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
+
+Here's an example for supplying an effective identity (user name) with an access token.
+
+```json
+{
+       "format":"PDF",
+       "paginatedReportConfiguration":{
+          "formatSettings":{
+             "AccessiblePDF":"true",
+             "PageHeight":"11in",
+             "PageWidth":"8.5in",
+             "MarginBottom":"2in"
+          },
+          "identities":[
+             {
+                "username":"john@contoso.com",
+                "identityBlob": {
+                "value": "eyJ0eX....full access token"
+         }
+        }
+     ]
+   }
+}
+```
+
+## Concurrent requests
+
+The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent report pages depends on the type and number of SKUs you have. It's *not* the same number as for other Power BI reports. If you exceed the limit and get a *Too Many Requests* (429) error, try to distribute the load over time or get a larger capacity.
+
+when using [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within a five-minute window will result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -253,6 +304,7 @@ public class ExportedFile
 ### End-to-end example
 
 This is an end-to-end example for exporting a report. This example includes the following stages:
+
 1. [Sending the export request](#step-1---sending-an-export-request).
 2. [Polling](#step-2---polling).
 3. [Getting the file](#step-3---getting-the-file).
@@ -285,15 +337,31 @@ private async Task<ExportedFile> ExportPaginatedReport(
 }
 ```
 
+## Considerations and limitations
+
+* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
+
+  * The caller is a service principal profile.
+  * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
+  * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
+
+* Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
+
+  * The caller is a service principal profile.
+  * The caller is a master user and an effective identity was provided.
+
+* When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
+
+* Export of a report is limited to 60 minutes, which matches the life of the user access token.
+
+* If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider reducing the amount of data using appropriate filters.
+
+* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online.  
+
 ## Next steps
 
 Review how to embed content for your customers and your organization:
 
-> [!div class="nextstepaction"]
->[Export report to file](export-to.md)
-
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+* [Export report to file](export-to.md)
+* [Embed for your customers](embed-sample-for-customers.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)

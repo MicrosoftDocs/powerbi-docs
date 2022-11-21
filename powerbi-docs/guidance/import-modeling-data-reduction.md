@@ -2,10 +2,10 @@
 title: Data reduction techniques for Import modeling
 description: Understand different techniques to help reduce the data loaded into Import models.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 08/05/2019
 ---
@@ -18,8 +18,8 @@ Import models are loaded with data that is compressed and optimized and then sto
 
 Despite the efficiencies achieved by the VertiPaq storage engine, it is important that you strive to minimize the data that is to be loaded into your models. It is especially true for large models, or models that you anticipate will grow to become large over time. Four compelling reasons include:
 
-- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host models up to 13 GB in size. For further information, read the [Power BI Premium support for large datasets](../admin/service-premium-what-is.md) article.
-- Smaller model sizes reduce contention for capacity resources, in particular memory. It allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates. For more information, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md).
+- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host models up to 13 GB in size. For further information, read the [Power BI Premium support for large datasets](../enterprise/service-premium-what-is.md) article.
+- Smaller model sizes reduce contention for capacity resources, in particular memory. It allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates. For more information, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
 - Smaller models achieve faster data refresh, resulting in lower latency reporting, higher dataset refresh throughput, and less pressure on source system and capacity resources.
 - Smaller table row counts can result in faster calculation evaluations, which can deliver better overall query performance.
 
@@ -83,13 +83,13 @@ Power Query queries that are intended support data integration with other querie
 
 ## Disable auto date/time
 
-Power BI Desktop includes an option called _Auto date/time_. When enabled, it creates a hidden auto date/time table for date columns to support report authors when configuring filters, grouping, and drill down for calendar time periods. The hidden tables are in fact calculated tables that will increase the size of the model. For guidance about using this option, refer to the [Auto date/time guidance in Power BI Desktop](../transform-model/desktop-auto-date-time.md) article.
+Power BI Desktop includes an option called _Auto date/time_. When enabled, it creates a hidden auto date/time table for date columns to support report authors when configuring filters, grouping, and drill-down actions for calendar time periods. The hidden tables are in fact calculated tables that will increase the size of the model. For guidance about using this option, refer to the [Auto date/time guidance in Power BI Desktop](../transform-model/desktop-auto-date-time.md) article.
 
 ## Switch to Mixed mode
 
 In Power BI Desktop, a Mixed mode design produces a Composite model. Essentially, it allows you to determine storage mode _for each table_. Therefore, each table can have its Storage Mode property set as Import or DirectQuery (Dual is another option).
 
-An effective technique to reduce the model size is to set the Storage Mode property for larger fact-type tables to DirectQuery. Consider that this design approach could work well in conjunction with the [Group by and summarize](#group-by-and-summarize) technique introduced earlier. For example, summarized sales data could be used to achieve high performance "summary" reporting. A drill through page could display granular sales for specific (and narrow) filter context, displaying all in-context sales orders. In this example, the drill through page would include visuals based on a DirectQuery table to retrieve the sales order data.
+An effective technique to reduce the model size is to set the Storage Mode property for larger fact-type tables to DirectQuery. Consider that this design approach could work well in conjunction with the [Group by and summarize](#group-by-and-summarize) technique introduced earlier. For example, summarized sales data could be used to achieve high performance "summary" reporting. A drill through page could display granular sales for specific (and narrow) filter context, displaying all in-context sales orders. In this example, the drillthrough page would include visuals based on a DirectQuery table to retrieve the sales order data.
 
 There are, however, many security and performance implications related to Composite models. For further information, read the [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md) article.
 

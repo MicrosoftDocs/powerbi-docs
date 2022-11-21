@@ -6,7 +6,7 @@ author: davidiseminger
  
 ms.service: powerbi
 ms.topic: include
-ms.date: 04/28/2020
+ms.date: 09/08/2021
 ms.author: davidi
 ---
 
@@ -22,5 +22,6 @@ When the SSO option is enabled and your users access reports built atop the data
 
 The SSO option takes affect across all datasets that use this data source. It does not affect the authentication method used for import scenarios.
 
-> [!Note]
-> Azure Multi-Factor Authentication (MFA) is not supported. Users who want to use SSO with DirectQuery must be exempted from MFA.
+> [!NOTE]
+> For SSO to work properly, the dataset must be on the same tenant as the Azure SQL resource.
+

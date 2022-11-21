@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 11/16/2020
+ms.date: 03/23/2022
 ---
 # Create a link to a specific location in the Power BI mobile apps
 You can use links to directly access specific Power BI content, such as a specific report, report page, dashboard, tile, etc.
@@ -20,6 +20,10 @@ There are mainly two scenarios for using links to access content in the Power BI
 This article covers the following cases:
 * Using links to open specific Power BI content from outside the mobile app. Two link formats are described. One uses a redirect method and can be used no matter where Power BI will open. The other opens directly in the Power BI mobile app and will work only on mobile devices that have the mobile app installed.
 * Using links inside Power BI to navigate to specific Power BI content.
+
+The mobile apps support report links that include query-string parameters. Such links open in the mobile app pre-filtered according to the conditions defined in the query string. [Learn more about creating report URLs with query string parameters](../../collaborate-share/service-url-filters.md).
+
+The mobile apps also support passing parameters to paginated reports via URLs. See [Pass a report parameter in a URL for a paginated report](../../paginated-reports/report-builder-url-pass-parameters.md) for details.
 
 ## Use links from outside the mobile app
 When you want to link to a specific item in Power BI from outside the mobile app, there are two options, depending on where the link is going to be opened:
@@ -35,7 +39,7 @@ The link format described in this section uses redirection to make sure the link
 
 The link must start with a special prefix, followed by query parameters:
 
-https<nolink>://app.powerbi.com/Redirect?**[QUERYPARAMETERS]**</code>
+http:\//app.powerbi.com/Redirect?**[QUERYPARAMETERS]**
 
 > [!IMPORTANT]
 > If your content is hosted in special datacenter such as Government, China, etc., the link should start with the appropriate Power BI address, such as **app.powerbigov.us** or **app.powerbi.cn**.
@@ -51,9 +55,12 @@ The query parameters are:
 | **reportObjectId** | 36 character guid | Report object ID (if action is OpenReport)<br>Example: **reportObjectId=6114cec7-78e1-4926-88ff-0bc5338452cf** |
 | **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile)<br>Example: **tileObjectId=a845dcb8-a289-43a8-94ea-67a8c0a068f9** |
 | **reportPage** | ReportSection&lt;num&gt; | Page name if you want to open a specific report page. (if action is OpenReport)<br>Example: **reportPage=ReportSection6**  |
-| **bookmarkGuid** | 36 character guid | Bookmark ID, if you want to open a specific bookmarked view. (if action is OpenReport)<br>Example: **bookmarkGuid=18e8872f-6db8-4cf8-8298-3b2ab254cc7f** |
+| **bookmarkGuid** | 36 character guid | Bookmark ID, if you want to open a specific bookmarked view. (if action is OpenReport)<br>Example: **bookmarkGuid=18e8872f-6db8-4cf8-8298-3b2ab254cc7f**<br>**Note**: Values of the format *BookmarkXXXXXXXXXXXXXXXXXXX* are not supported. |
 | **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **ctid=5367c770-09d0-4110-bf6a-d760cb5ef681** . |
 ||||
+
+>[!NOTE]
+> Report-level bookmarks do not have a bookmarkGUID format and currently cannot be passed as a parameter of a deep link.
 
 **Examples:**
 
@@ -61,15 +68,15 @@ In the following examples, placeholders for the parameter values are highlighted
 
 * **Open an app**
 
-    https<nolink>://app.powerbi.com/Redirect?action=OpenApp&appId=**&lt;appid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
+    https\://app.powerbi.com/Redirect?action=OpenApp&appId=**&lt;appid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
    
 * **Open a dashboard that is part of an app**
 
-    https<nolink>://app.powerbi.com/Redirect?action=OpenDashboard&appId=**&lt;appid-guid&gt;**&dashboardObjectId=**&lt;dashboardid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
+    https\://app.powerbi.com/Redirect?action=OpenDashboard&appId=**&lt;appid-guid&gt;**&dashboardObjectId=**&lt;dashboardid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
 
 * **Open a report that is part of a workspace other than My Workspace**
 
-    https<nolink>://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**&lt;reportid-guid&gt;**&groupObjectId=**&lt;groupobjectid-guid&gt;**&reportPage=**ReportSection&lt;num&gt;**
+    https\://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**&lt;reportid-guid&gt;**&groupObjectId=**&lt;groupobjectid-guid&gt;**&reportPage=**ReportSection&lt;num&gt;**
 
 ### How to get the correct link format
 
@@ -87,19 +94,19 @@ The examples below show where you can find the IDs you need in the URLs of the i
 
 * To find a 36-character dashboard object ID, navigate to the specific dashboard you want to link to in the Power BI service and find the dashboard object ID and any other required IDs in the places indicated below:
 
-    https<nolink>://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
+    https\://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
 
 * To find a 36-character report object ID, navigate to the specific report you want to link to in the Power BI service and find the necessary IDs as illustrated below. Note that this example contains a reference to a specific report page and a specific bookmark.
 
-    https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?bookmarkGuid=**&lt;bookmark-id&gt;**
+    https\://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?bookmarkGuid=**&lt;bookmark-id&gt;**
 
 * To link to an item in a workspace other than My Workspace, you need to extract the group object ID. This example shows a report from a workspace other than My Workspace.
 
-    https<nolink>://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
+    https\://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
 
 ### Create a link that opens only on a device that has the Power BI mobile app installed
 
-The link format described in this section links to a specific location within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10. This link format opens the location directly, without any of the redirection involved in the method described in the previous section. **This format can only be opened on mobile devices that have the Power BI mobile app installed**.
+The link format described in this section links to a specific location within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows. This link format opens the location directly, without any of the redirection involved in the method described in the previous section. **This format can only be opened on mobile devices that have the Power BI mobile app installed**.
 
 Links of this format can point directly to dashboards, tiles, and reports. The destination of the deep link determines its format. Follow these steps to create deep links to different locations. 
 
@@ -117,7 +124,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To get the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service and extract it from the URL. For example, the dashboard object id is highlighted in the following URL from the Power BI service:
 
-    https<nolink>://app.powerbi.com/groups/me/dashboards/**&lt;61b7e871-cb98-48ed-bddc-6572c921e270&gt;**
+    https\://app.powerbi.com/groups/me/dashboards/**&lt;61b7e871-cb98-48ed-bddc-6572c921e270&gt;**
 
     If the dashboard is not in My Workspace, you need to add the group object ID as well, either before or after the dashboard ID. The deep link shown below has the group object id parameter added after the dashboard object id:
 
@@ -133,7 +140,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character dashboard and tile object IDs, navigate to the specific dashboard in the Power BI service and open the tile in focus mode. In the example below the dashboard and tile IDs are highlighted.
 
-    https<nolink>://app.powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
+    https\://app.powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus
 
     To open to this tile directly then, the link would be:
 
@@ -151,7 +158,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     To find the 36-character report object id, navigate to the specific report in the Power BI service. The following URL from the Power BI service illustrates the report ID you would need to extract.
 
-    https<nolink>://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
 
     If the report is not in My Workspace, you need to add **&GroupObjectId=<36-character-group-id>** as well, either before or after the report ID. For example, in this case the deep link would be:
 
@@ -167,7 +174,7 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
     The report page is called **ReportSection**, followed by a number. Again, to find the values you need, open the report in the Power BI service, navigate to the specific report page, and extract the values you need from the URL. For example, the highlighted sections of this URL represent the values you would need to open to a specific report page:
 
-    https<nolink>://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**</code>
+    https\://app.powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/**ReportSection11**
 
 * **Open in full-screen mode (for Windows devices only)**
 
@@ -187,7 +194,11 @@ Links of this format can point directly to dashboards, tiles, and reports. The d
 
 In the Power BI mobile apps, links inside Power BI work just as they work in the Power BI service.
 
-If you want to add link to your report that points to another Power BI item, you can just copy that item's URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+If you want to add link to your report that points to another Power BI item, you can just copy that item's URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](../../create-reports/service-add-hyperlink-to-text-box.md).
+
+## Considerations and limitations
+
+Deep links to reports with a bookmarkGuid param are supported in the Mobile apps only when the value of the bookmarkGuid parameter has the standard 36-character GUID format. Links where the bookmarkGuid parameter value has the format *BookmarkXXXXXXXXXXXXXXXXXXX* are not supported.
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
@@ -195,4 +206,4 @@ Your feedback helps us decide what to implement in the future, so don’t forget
 * [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
-* [What is Power BI?](../../power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)

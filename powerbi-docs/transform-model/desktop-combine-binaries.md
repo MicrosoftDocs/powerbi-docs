@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/13/2020
+ms.date: 08/13/2021
 LocalizationGroup: Transform and shape data
 ---
 # Combine files (binaries) in Power BI Desktop
 
 Here's a powerful approach to importing data into **Power BI Desktop**: If you have multiple files that have the same schema, combine them into a single logical table. This popular technique has been made more convenient and more expansive.
 
-To start the process of combining files from the same folder, select **Get Data**, choose **File** > **Folder**, and then select **Connect**.
+To start the process of combining files from the same folder, select **Get data**, choose **File** > **Folder**, and then select **Connect**.
 
 ![Connect to folder file, Get Data dialog box, Power BI Desktop](media/desktop-combine-binaries/combine-binaries_1.png)
 
-Enter the folder path, select **OK**, and then select **Transform Data** to see the folder's files in Power Query Editor.
+Enter the folder path, select **OK**, and then select **Transform data** to see the folder's files in Power Query Editor.
 
 ## Combine files behavior
 

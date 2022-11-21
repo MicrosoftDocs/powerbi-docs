@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/08/2020
+ms.date: 10/28/2022
 LocalizationGroup: Get started
 ---
 # Export a paginated report for each row in an Excel Online table or SharePoint list
@@ -22,9 +22,9 @@ Looking for other Power Automate templates for Power BI paginated reports? See [
 
 ## Prerequisites  
 
-To follow along, make sure you have:
+To follow along, make sure you meet these criteria:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../admin/service-premium-what-is.md#paginated-reports).
+- You can publish to My Workspace, or you have at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
 - Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 - If you're using an Excel Online table, it needs to be formatted as a table in Excel. See [Create a table](https://support.microsoft.com/office/create-a-table-in-excel-bf0ce08b-d012-42ec-8ecf-a2259c9faf3f) to learn how.
 
@@ -97,7 +97,7 @@ To follow along, make sure you have:
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-email-15.png" alt-text="In the case where you're sending your paginated report as an email via Outlook.":::
 
-1. When you're done, select **Next step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors. 
+1. When you're done, select **New step** or **Save**. Power Automate creates and evaluates the flow, and lets you know if it finds errors. 
 
 1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow. 
 

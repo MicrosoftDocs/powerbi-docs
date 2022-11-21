@@ -2,10 +2,10 @@
 title: Query folding guidance in Power BI Desktop
 description: Guidance for achieving Power Query query folding in Power BI Desktop.
 author: peter-myers
-ms.author: v-pemyer
+ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 11/09/2019
 ---
@@ -47,5 +47,5 @@ The following bulleted-list provides specific guidance.
 For more information about this article, check out the following resources:
 
 - Power Query [Query folding](/power-query/power-query-folding) concept article
-- [Incremental refresh in Power BI Premium](../admin/service-premium-incremental-refresh.md)
+- [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

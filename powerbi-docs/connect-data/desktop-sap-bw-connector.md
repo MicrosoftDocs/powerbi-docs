@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/13/2020
+ms.date: 01/22/2021
 LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
@@ -16,7 +16,7 @@ With Power BI Desktop, you can access *SAP Business Warehouse (BW)* data.
 
 For information about how SAP customers can benefit from connecting Power BI to their existing SAP BW systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-Starting with the June 2018 release of Power BI Desktop and generally available in October 2018, you can use the *SAP BW connector* with an implementation that has significant improvements in performance and capabilities. Microsoft developed SAP BW connector *Implementation 2.0*. Select either version 1 of the SAP BW Connector, or the Implementation 2.0 SAP Connector. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connecting to SAP BW from Power BI Desktop.
+You can use the *SAP BW connector* with an implementation that has significant improvements in performance and capabilities. Microsoft developed SAP BW connector *Implementation 2.0*. Select either version 1 of the SAP BW Connector, or the Implementation 2.0 SAP Connector. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connecting to SAP BW from Power BI Desktop.
 
 We suggest you use the Implementation 2.0 SAP Connector whenever possible.
 
@@ -27,7 +27,7 @@ We recommend using the Implementation 2.0 SAP Connector whenever possible. This 
 1. Install the *SAP NetWeaver* library on your local computer. You can get the SAP NetWeaver library from your SAP administrator or directly from the [SAP Software Download Center](https://support.sap.com/swdc). Since the SAP Software Download Center changes its structure frequently, more specific guidance for navigating that site isn't available. The SAP NetWeaver library is usually included in the SAP Client Tools installation.
 
    You can search for *SAP Note #1025361* to get the download location for the most recent version. Make sure the architecture for the SAP NetWeaver library (32-bit or 64-bit) matches your Power BI Desktop installation. Install all files included in the *SAP NetWeaver RFC SDK* according to the SAP Note.
-2. In Power BI Desktop, select **Get Data**. The **Database** options include *SAP Business Warehouse Application Server* and *SAP Business Warehouse Message Server*.
+2. In Power BI Desktop, select **Get data**. The **Database** options include *SAP Business Warehouse Application Server* and *SAP Business Warehouse Message Server*.
 
    ![Get Data options for SAP](media/desktop-sap-bw-connector/sap_bw_2a.png)
 
@@ -39,8 +39,8 @@ You can download the [SAP .NET Connector 3.0](https://support.sap.com/en/product
 
 The connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation. Currently, the website lists two versions for .NET 4.0 framework:
 
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) as zip file (6.896 KB), June 1, 2019
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) as zip file (7.180 KB), June 1, 2019
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) or later (.NET Framework 4.0)
+* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) or later (.NET Framework 4.0)
 
 When you install, in **Optional setup steps**, make sure you select *Install assemblies to GAC*.
 
@@ -63,6 +63,9 @@ You can also specify two additional **Advanced options**: **Language code**, and
 
 ![additional connection information](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
+> [!NOTE]
+> If you use **Language code** and publish to the service, you need to enable "skip test connection" in the service data source settings when using the gateway.
+
 If you don't specify an MDX statement, the connection setting displays the list of cubes available in the server. You can drill down and select items from the available cubes, including dimensions and measures. Power BI exposes queries and cubes exposed by the [Open Analysis Interfaces](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
 
 When you select one or more items from the server, the Navigator dialog creates a preview of the output table.
@@ -80,7 +83,7 @@ The **Navigator** dialog also provides display options:
 After selecting all necessary objects, you can decide what to do next by selecting one of the following options:
 
 * Select **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data or making further modifications using the **Data** or **Relationships** views.
-* Select **Edit** to open **Query Editor**. Specify additional data transformation and filtering steps before the entire set of rows is brought into the Power BI Desktop data model.
+* Select **Transform Data** to open **Power Query Editor**. Specify additional data transformation and filtering steps before the entire set of rows is brought into the Power BI Desktop data model.
 
 In addition to importing data from SAP BW cubes, you can also import data from a wide range of other data sources in Power BI Desktop, and then you can combine them into a single report. This ability presents all sorts of interesting scenarios for reporting and analytics on top of SAP BW data.
 
@@ -88,7 +91,7 @@ In addition to importing data from SAP BW cubes, you can also import data from a
 
 Create a new connection to use Implementation 2.0 of the SAP BW Connector. To create a new connection, take the following steps.
 
-1. Select **Get Data**. Select either **SAP Business Warehouse Application Server** or **SAP Business Warehouse Message Server**, and then connect.
+1. Select **Get data**. Select either **SAP Business Warehouse Application Server** or **SAP Business Warehouse Message Server**, and then connect.
 
 2. In the new connection dialog, select the implementation. Selecting **2.0** for **Implementation**, as shown in the following image, enables **Execution mode**, **Batch size** and **Enable characteristic structures**.
 
@@ -133,7 +136,7 @@ The following list describes some of the additional improvements that come with 
 
 Changing existing reports to use Implementation 2.0 is only possible in import mode. Follow these steps:
 
-1. Open an existing report, select **Edit Queries** in the ribbon, and then select the SAP Business Warehouse query to update.
+1. Open an existing report, select **Transform data** in the ribbon, and then select the SAP Business Warehouse query to update.
 
 1. Right-click the query and select **Advanced Editor**.
 

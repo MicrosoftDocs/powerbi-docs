@@ -5,9 +5,10 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
+ms.custom: video-ZqhmaiORLw0
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/11/2019
+ms.date: 04/30/2021
 LocalizationGroup: Connect to data
 ---
 # Connect to LinkedIn Sales Navigator in Power BI Desktop
@@ -20,6 +21,9 @@ In **Power BI Desktop**, you can connect to **LinkedIn Sales Navigator** to help
 To connect to LinkedIn data using the **LinkedIn Sales Navigator**, you need to have a LinkedIn Sales Navigator Enterprise plan, and either be an Admin or Reporting User on the Sales Navigator Contract.
 
 The following video provides a quick tour and tutorial for using the **LinkedIn Sales Navigator** template app, which is described in detail [later in this article](#using-the-linkedin-sales-navigator-template-app). 
+
+> [!NOTE]  
+> This video might use earlier versions of Power BI Desktop or the Power BI service.
 
 > [!VIDEO https://www.youtube.com/embed/ZqhmaiORLw0]
 
@@ -48,13 +52,7 @@ When you connect successfully, you're prompted to select which data from your Li
 
 ![Select data with Navigator](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-09.png)
 
-You can create whatever reports you like with your LinkedIn Sales Navigator data. To make things easier, there is also a LinkedIn Sales Navigator .PBIX file that you can download, that has sample data already provided, so you can get familiar with the data and the reports, without having to start from scratch.
-
-You can download the PBIX file from the following location:
-* [PBIX for LinkedIn Sales Navigator](service-template-apps-samples.md)
-
-In addition to the PBIX file, the LinkedIn Sales Navigator also has a template app that you can download and use, too. The next section describes the template app in detail.
-
+You can create whatever reports you like with your LinkedIn Sales Navigator data.
 
 ## Using the LinkedIn Sales Navigator template app
 

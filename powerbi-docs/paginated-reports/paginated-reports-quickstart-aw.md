@@ -1,22 +1,22 @@
 ---
 title: "Tutorial: Create a paginated report and upload it to the Power BI service"
-description: In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
+description: In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to any workspace in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 11/06/2018
+ms.date: 10/27/2022
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.
+In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to any workspace in the Power BI service.
 
-![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
+![Screenshot showing Paginated report in the Power BI service.](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
 Here are the steps you complete in this tutorial:
 
@@ -39,8 +39,8 @@ Here are the prerequisites for creating the paginated report:
 
 Here are the prerequisites for uploading your paginated report to the Power BI service:
 
-- You need a [Power BI Pro license](../admin/service-admin-licensing-organization.md).
-- You need a workspace on the service in a [Power BI Premium capacity](../admin/service-premium-what-is.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
+- You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+- You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
 
 ## Create the matrix with a wizard
   
@@ -48,17 +48,17 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
   
      The **Getting Started** dialog box opens.  
   
-     ![Report Builder Getting Started](media/paginated-reports-create-embedded-dataset/power-bi-paginated-get-started.png)
+     ![Screenshot showing Report Builder Getting Started.](media/paginated-reports-create-embedded-dataset/power-bi-paginated-get-started.png)
   
 1.  In the left pane, verify that **New Report** is selected, and in the right pane, select **Table or Matrix Wizard**.  
   
 4.  In the **Choose a dataset** page, select **Create a dataset** > **Next**.  
 
-    ![Create a dataset](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
+    ![Screenshot showing Create a dataset.](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
 5.  In the **Choose a connection to a data source** page, select **New**. 
 
-    ![New data source](media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png)
+    ![Screenshot showing New data source.](media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png)
   
      The **Data Source Properties** dialog box opens.  
   
@@ -68,7 +68,7 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
   
 8.  Select **Build** next to the **Connection string** box. 
 
-    ![Data source properties - Build](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png)
+    ![Screenshot showing Data source properties - Build.](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png)
 
 9. **In Azure:** Go back to the Azure portal and select **SQL databases**.
 
@@ -82,7 +82,7 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 
 1. Under **Connect to a database**, select the drop-down arrow and select the database name you created in Azure.
  
-    ![Data source connection properties](media/paginated-reports-quickstart-aw/power-bi-paginated-connection-properties.png)
+    ![Screenshot showing Data source connection properties.](media/paginated-reports-quickstart-aw/power-bi-paginated-connection-properties.png)
 
 1. Select **Test Connection**. You see the **Test results** message that **Test connection succeeded**.
 
@@ -90,13 +90,13 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 
    Now in the **Connection string** box, Report Builder displays the connection string you just created. 
 
-    ![Data source connection string](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png)
+    ![Screenshot showing Data source connection string.](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png)
 
 1. Select **OK**.
   
 9. In the **Choose a connection to a data source** page, you see "(in this Report)" under the data source connection you just created. Select that data source  > **Next**.  
 
-    ![My Azure data source](media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png)
+    ![Screenshot showing My Azure data source.](media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png)
 
 10. Type the same user name and password in the box. 
   
@@ -111,17 +111,17 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 
      Because **Relationships** > **Auto Detect** is selected, Report Builder detects the relationships between these tables. 
     
-    ![Design a query](media/paginated-reports-quickstart-aw/power-bi-paginated-design-query.png)
+    ![Screenshot showing Design a query.](media/paginated-reports-quickstart-aw/power-bi-paginated-design-query.png)
  
 1.  Select **Run Query**. Report Builder displays the **Query results**. 
  
-     ![Query results](media/paginated-reports-quickstart-aw/power-bi-paginated-query-results.png)
+     ![Screenshot showing Query results.](media/paginated-reports-quickstart-aw/power-bi-paginated-query-results.png)
 
 18. Select **Next**. 
 
 19. In the **Choose a dataset** page, choose the dataset you just created > **Next**.
 
-    ![Choose a dataset](media/paginated-reports-quickstart-aw/power-bi-paginated-choose-dataset.png)
+    ![Screenshot showing Choose a dataset.](media/paginated-reports-quickstart-aw/power-bi-paginated-choose-dataset.png)
 
 1. In the **Arrange fields** page, drag these fields from the **Available fields** box to the **Row groups** box:
 
@@ -137,7 +137,7 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 
     Report Builder automatically made the fields in the **Values** box sums.
 
-    ![Arrange fields](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-fields.png)
+    ![Screenshot showing Arrange fields.](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-fields.png)
 
 24. In the **Choose the layout** page, keep all the default settings, but clear **Expand/collapse groups**. In general, the expand/collapse groups feature is great, but this time you want the table to wrap to multiple pages.
 
@@ -147,7 +147,7 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 
 Let's pause for a moment to look at the results of the wizard.
 
-![The results of the Matrix wizard](media/paginated-reports-quickstart-aw/power-bi-paginated-wizard-results.png)
+![Screenshot showing The results of the Matrix wizard.](media/paginated-reports-quickstart-aw/power-bi-paginated-wizard-results.png)
 
 1. In the Report Data pane, you see the embedded Azure data source and the embedded dataset based on it, both of which you created. 
 
@@ -175,7 +175,7 @@ To see the actual values, you need to run the report.
 
    Now you see the values. The matrix has many more rows than you saw in Design view! Note that Report Builder says it's page **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieves enough data for a few pages at a time. The question mark indicates that Report Builder hasn't loaded all the data yet.
 
-   ![Run the report](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
+   ![Screenshot showing Run the report.](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
 2. Select **Print Layout**. The report will be in this format when you print it. Report Builder now knows the report has 33 pages, and has automatically added a date and time stamp in the footer.
 
@@ -197,7 +197,7 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
 
 2. Expand **Margins** and change **Left** and **Right** from 1in to 0.75in. 
 
-    ![Set page margins](media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png)
+    ![Screenshot showing Set page margins.](media/paginated-reports-quickstart-aw/power-bi-paginated-set-margins.png)
   
 ### Add a report title  
 
@@ -221,7 +221,7 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 6. Drag **Overall Total Pages** to the footer, to the right of "of", then drag its right side to make it square, too.
 
-    ![Drag page numbers](media/paginated-reports-quickstart-aw/power-bi-paginated-add-page-numbers.png)
+    ![Screenshot showing Drag page numbers.](media/paginated-reports-quickstart-aw/power-bi-paginated-add-page-numbers.png)
 
 ### Make the table wider  
 
@@ -231,7 +231,7 @@ Now you can make the matrix wide enough to fill the width of the page, and make 
 
 3. Hover over the gray bar at the top of the matrix at the right edge of the Company Name column. Drag to the right, until the column ends at 1 3/8 inches. 
 
-    ![Drag the right edge of the column](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png)
+    ![Screenshot showing Drag the right edge of the column.](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png)
 
 4. Drag the right edge of Product name until the column ends at 3 3/4 inches.   
 
@@ -243,15 +243,15 @@ If you noticed when you ran the report, the dollar amounts aren't formatted as c
 
 1. Select the upper-left [Sum(OrderQty)] cell, hold down the Shift key, and select lower-right [Sum(LineTotal)] cell.
 
-    ![Select cells with currency values](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
+    ![Screenshot showing Select cells with currency values.](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
 2. On the **Home** tab, select the dollar sign (**$**) currency symbol, then select the arrow next to **Placeholder styles** > **Sample Values**.
  
-    ![Show sample values](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
+    ![Screenshot showing Show sample values.](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 
     Now you can see the values are formatted as currency.
 
-    ![Currency sample values](media/paginated-reports-quickstart-aw/power-bi-paginated-display-sample-values.png)
+    ![Screenshot showing Currency sample values.](media/paginated-reports-quickstart-aw/power-bi-paginated-display-sample-values.png)
 
 ### Add column headers on each page
 
@@ -259,15 +259,15 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 1. In the far-right end of the top bar in the Grouping pane, select the drop-down arrow > **Advanced Mode**.
 
-    ![Turn on Advanced Mode](media/paginated-reports-quickstart-aw/power-bi-paginated-advanced-mode.png)
+    ![Screenshot showing Turn on Advanced Mode.](media/paginated-reports-quickstart-aw/power-bi-paginated-advanced-mode.png)
 
 2. Select the top **Static** bar in the **Row Groups**. You see that the Company Name cell in the matrix is selected.
 
-   ![Select static group](media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png)
+   ![Screenshot showing Select static group.](media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png)
 
 3. In the **Properties** pane, you're looking at the properties for **Tablix Member**. Set **KeepWithGroup** to **After** and **RepeatOnNewPage** to **True**.
 
-    ![Set RepeatOnNewPage](media/paginated-reports-quickstart-aw/power-bi-paginated-repeat-on-new-page.png)
+    ![Screenshot showing Set RepeatOnNewPage.](media/paginated-reports-quickstart-aw/power-bi-paginated-repeat-on-new-page.png)
 
     It's time to run the report and see how it looks now.
 
@@ -275,7 +275,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 6. Select **Print Layout**, if it's not already selected. Now the report has 29 pages. Scroll through a few pages. You see the currency is formatted, the columns have headings on every page, and the report has a footer with page numbers and date and time stamp on every page.
  
-    ![Finished page](media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png)
+    ![Screenshot showing Finished page.](media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png)
 
 7. Save the report to your computer.
  
@@ -285,19 +285,7 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 1. In the Power BI service (`https://app.powerbi.com`) in the nav pane, select **Workspaces** > **Create workspace**.
 
-2. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
-
-3. Select the arrow next to **Advanced** and turn on **Dedicated capacity**. 
-
-    ![Create workspace in Premium capacity](media/paginated-reports-quickstart-aw/power-bi-paginated-create-workspace-premium-capacity.png)
-
-    If you can't turn it on, you need to ask your Power BI admin to give you permission to add the workspace to the dedicated Premium capacity.
-
-4. Choose an **available dedicated capacity for this workspace**, if necessary > **Save**.
-    
-    ![Diamond Premium icon](media/paginated-reports-quickstart-aw/power-bi-paginated-diamond-icon.png)
-
-    If the workspace isn't in a Premium capacity, when you try to upload your report you see the message, "Unable to upload paginated report." Contact your Power BI administrator to move the workspace.
+1. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
 
 1. In your new workspace, select **Get Data**.
 
@@ -307,22 +295,22 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
    Power BI imports your file, and you see it under **Reports** on the App list page.
 
-    ![Report in App list](media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png)
+    ![Screenshot showing Report in App list.](media/paginated-reports-quickstart-aw/power-bi-paginated-app-list.png)
 
 4. Select the report to view it.
 
 5. If you get an error, you may need to reenter your credentials. Select the **Manage** icon.
 
-    ![Manage your report](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
+    ![Screenshot showing Manage your report.](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
 
 6. Select **Edit credentials** and enter the credentials you used in Azure when you created the Azure database.
 
-    ![Edit report credentials](media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png)
+    ![Screenshot showing Edit report credentials.](media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png)
 
 7. Now you can view your paginated report in the Power BI service.
 
-    ![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
+    ![Screenshot showing Paginated report in the Power BI service.](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+[What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 05/06/2022
 LocalizationGroup: Gateways
 ---
 
@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and Oracle data sources either for scheduled refresh or for DirectQuery.
 
 ## Connect to an Oracle database
-To connect to an Oracle database with the on-premises data gateway, the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, but will always match the 64-bit gateway.
+To connect to an Oracle database with the on-premises data gateway, the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, that will always match the 64-bit gateway.
 
 Supported Oracle versions: 
 - Oracle Server 9 and later
@@ -31,14 +31,14 @@ Supported Oracle versions:
 > Choose a version of Oracle Data Access Client (ODAC) which is compatible with your Oracle Server. For instance, ODAC 12.x does not always support Oracle Server version 9.
 > Choose the Windows installer of the Oracle Client.
 > During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
- 
-After the client is installed and ODAC is configured properly, we recommend using PowerBI Desktop or other test client to verify correct installation and configuration on the Gateway.
+
+After the client is installed and ODAC is configured properly, we recommend using Power BI Desktop or other test client to verify correct installation and configuration on the Gateway.
 
 ## Add a data source
 
 For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select **Oracle**.
 
-![Add the Oracle data source](media/service-gateway-onprem-manage-oracle/data-source-oracle.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/add-data-source-oracle.png" alt-text=" Screenshot of adding a oracle data source to the gateway." :::
 
 After you select the Oracle data source type, fill in the information for the data source, which includes **Server** and **Database**. 
 
@@ -47,17 +47,17 @@ Under **Authentication Method**, you can choose either **Windows** or **Basic**.
 > [!NOTE]
 > All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-![Filling in the data source settings](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/authentication-oracle.png" alt-text=" Screenshot of filling credentials for oracle data source." :::
 
-After you fill in everything, select **Add**. You can now use this data source for scheduled refresh or DirectQuery against an Oracle server that's on-premises. You see *Connection Successful* if it succeeded.
+After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against an Oracle server that's on-premises. You see *Created New data source* if it succeeded.
 
-![Displaying the connection status](media/service-gateway-onprem-manage-oracle/datasourcesettings4.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/successful-data-source-oracle.png" alt-text=" Screenshot of successful creation for oracle data source." :::
 
 ### Advanced settings
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-![Setting the privacy level](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
+:::image type="content" source="media/service-gateway-onprem-manage-oracle/privacy-level-oracle.png" alt-text=" Screenshot of privacy level settings for oracle data source." :::
 
 ## Use the data source
 
@@ -96,13 +96,13 @@ These errors might occur if the Oracle client either isn't installed or isn't co
 
 You might also encounter a compatibility issue between the Oracle server version and the Oracle Data Access Client version. Typically, you want these versions to match, as some combinations are incompatible. For instance, ODAC 12.x does not support Oracle Server version 9.
 
-For diagnosing connectivity issues between the data source server and the Gateway machine, we recommend installing a client(such as PowerBI Desktop or Oracle ODBC Test) on the gateway machine. You can use the client to check connectivity to the data source server.
+For diagnosing connectivity issues between the data source server and the Gateway machine, we recommend installing a client (such as Power BI Desktop or Oracle ODBC Test) on the gateway machine. You can use the client to check connectivity to the data source server.
 
 For additional troubleshooting information that relates to the gateway, see [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
 ## Next steps
 
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
-* [Power BI Premium](../admin/service-premium-what-is.md)
+* [Power BI Premium](../enterprise/service-premium-what-is.md)
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).

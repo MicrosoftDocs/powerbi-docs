@@ -16,7 +16,7 @@ LocalizationGroup: Common tasks
 
 You've learned about [Power BI reports](end-user-reports.md), and those are the types of report you're most likely to encounter. Power BI reports are optimized for exploration and interactivity. A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
 
-However, there is another type of report called a *paginated report*. Receiving and viewing paginated reports requires a Power BI Pro license of for the report to be saved in Premium capacity.  [Learn about licenses](end-user-license.md).  
+However, there is another type of report called a *paginated report*. Receiving and viewing paginated reports requires a Power BI Pro license for the report to be saved in Premium capacity.  [Learn about licenses](end-user-license.md).  
 
 ## Identify a paginated report
 
@@ -27,7 +27,7 @@ In content lists and on your Home landing page, paginated reports can be identif
 
 ## What is a paginated report?
 
-These reports are called *paginated* because they're formatted to fit well on a printed page. One advantage is that they display all the data in a table, even if the table spans multiple pages. Paginated reports are sometimes called "pixel perfect" because report *designers* control the report page layout exactly.
+These reports are called *paginated* because they're formatted to fit well on a printed page. One advantage is that they display all the data in a table, even if the table spans multiple pages. Report *designers* can control the report page layout exactly.
 
 Paginated reports are best for scenarios that require a highly formatted, pixel-perfect output optimized for printing or PDF generation. A profit and loss statement is a good example of the type of report you would probably want to see as a paginated report.
 
@@ -81,16 +81,16 @@ Some paginated reports have many pages.  Use the page controls to navigate throu
 ![page controls](./media/end-user-paginated-report/power-bi-page-control.png)
 
 ### Export the paginated report
-You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep the "pixel perfect" formatting. 
+You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep their formatting. 
 
-![Screenshot showing an exported paginated report.](./media/end-user-paginated-report/power-bi-export-choices.png)
+![Screenshot showing the formats for exporting a paginated report.](./media/end-user-paginated-report/power-bi-export-menu.png)
 
 ![four different export types](./media/end-user-paginated-report/power-bi-four.png)
 
 ### Subscribe to the paginated report
 When you subscribe to a paginated report, Power BI sends you an email with the report as an attachment. In setting up your subscription, you choose how often you want to receive the emails: daily, weekly, hourly, or monthly. The subscription contains an attachment of the entire report output, up to 25MB in size. Export the entire report or choose the parameters ahead of time. Choose from many different attachment types, including Excel, PDF, PowerPoint, and more.  
 
-![Formats for subscribing](./media/end-user-paginated-report/power-bi-export-choices.png)
+![Export formats for subscribing.](./media/end-user-paginated-report/power-bi-export-subscription-choices.png)
 
 ## Considerations and troubleshooting
 
@@ -102,5 +102,5 @@ When you subscribe to a paginated report, Power BI sends you an email with the r
 
 ## Next steps
 - [Power BI reports](end-user-reports.md)
-- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
+- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.yml)
 - More questions? Try the [Power BI Community](https://community.powerbi.com/).

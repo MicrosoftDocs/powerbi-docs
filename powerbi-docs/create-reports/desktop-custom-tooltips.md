@@ -7,14 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/15/2020
+ms.date: 09/14/2022
 LocalizationGroup: Create reports
 ---
-# Customize tooltips in Power BI Desktop
+# Customize tooltips in Power BI
 
-Tooltips are an elegant way of providing more contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop.
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-![Default tooltip](media/desktop-custom-tooltips/custom-tooltips-1.png)
+Tooltips are an elegant way of providing more contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop. You can customize tooltips in Power BI Desktop and in the Power BI service.
+
+![Screenshot showing the default tooltip.](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
 When a visualization is created, the default tooltip displays the data point's value and category. There are many instances when customizing the tooltip information is useful. Customizing tooltips provides additional context and information for users viewing the visual. Custom tooltips enable you to specify additional data points that display as part of the tooltip.
 
@@ -22,16 +24,18 @@ When a visualization is created, the default tooltip displays the data point's v
 
 To create a customized tooltip, in the **Fields** well of the **Visualizations** pane, drag a field into the **Tooltips** bucket, shown in the following image. In the following image, three fields have been placed into the **Tooltips** bucket.
 
-![Adding tooltip fields](media/desktop-custom-tooltips/custom-tooltips-2.png)
+![Screenshot showing the added tooltip fields.](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
 Once tooltips are added to **Tooltips**, hovering over a data point on the visualization shows the values for those fields.
 
-![Custom tooltip](media/desktop-custom-tooltips/custom-tooltips-3.png)
+![Screenshot showing custom tooltip.](media/desktop-custom-tooltips/custom-tooltips-3.png)
 
-## Customizing tooltips with aggregation or quick measures
+## Customize tooltips with aggregation or quick measures
 
-You can further customize a tooltip by selecting an aggregation function or a *quick measure*. Select the arrow beside the field in the **Tooltips** bucket. Then, select from the available options.
+You can further customize a tooltip by selecting an aggregation function. Select the arrow beside the field in the **Tooltips** bucket. Then, select from the available options.
 
-![Tooltip with quick measure](media/desktop-custom-tooltips/custom-tooltips-4.png)
+![Screenshot showing tooltip with quick measure.](media/desktop-custom-tooltips/custom-tooltips-4.png)
+
+In Power BI Desktop, you can also select a *quick measure*. Read about [creating quick measures](../transform-model/desktop-quick-measures.md) in Power BI Desktop.
 
 There are many ways to customize tooltips, using any field available in your dataset, to convey quick information and insights to users viewing your dashboards or reports.

@@ -1,25 +1,29 @@
 ---
-title: DAX basics in Power BI Desktop
-description: DAX basics in Power BI Desktop
+title: Learn DAX basics in Power BI Desktop
+description: Learn about DAX basics in Power BI Desktop
 author: Minewiskan
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/21/2019
+ms.date: 05/06/2022
 LocalizationGroup: Model your data
 ---
-# Apply DAX basics in Power BI Desktop
+# Learn DAX basics in Power BI Desktop
+
 This article is for users new to Power BI Desktop. It gives you a quick and easy introduction on how you can use Data Analysis Expressions (DAX) to solve a number of basic calculation and data analysis problems. We’ll go over some conceptual information, a series of tasks you can complete, and a knowledge check to test what you’ve learned. After completing this article, you should have a good understanding of the most important fundamental concepts in DAX.
 
 ## What is DAX?
+
 DAX is a collection of functions, operators, and constants that can be used in a formula, or expression, to calculate and return one or more values. Stated more simply, DAX helps you create new information from data already in your model.
 
 ## Why is DAX so important?
+
 It’s easy to create a new Power BI Desktop file and import some data into it. You can even create reports that show valuable insights without using any DAX formulas at all. But, what if you need to analyze growth percentage across product categories and for different date ranges? Or, you need to calculate year-over-year growth compared to market trends? DAX formulas provide this capability and many other important capabilities as well. Learning how to create effective DAX formulas will help you get the most out of your data. When you get the information you need, you can begin to solve real business problems that affect your bottom line. This is the power of Power BI, and DAX will help you get there.
 
 ## Prerequisites
+
 You might already be familiar with creating formulas in Microsoft Excel. That knowledge will be helpful in understanding DAX, but even if you have no experience with Excel formulas, the concepts described here will help you get started creating DAX formulas and solving real-world BI problems right away.
 
 We’ll focus on understanding DAX formulas used in calculations, more specifically, in measures and calculated columns. You should already be familiar with using Power BI Desktop to import data and add fields to a report, and you should also be familiar with fundamental concepts of [Measures](desktop-measures.md) and [Calculated columns](desktop-calculated-columns.md).
@@ -44,7 +48,7 @@ This formula includes the following syntax elements:
 
 **C.** The DAX function **SUM**, which adds up all of the numbers in the **Sales[SalesAmount]** column. You’ll learn more about functions later.
 
-**D.** Parenthesis **()**, which surround an expression that contains one or more arguments. All functions require at least one argument. An argument passes a value to a function.
+**D.** Parenthesis **()**, which surround an expression that contains one or more arguments. Most functions require at least one argument. An argument passes a value to a function.
 
 **E.** The referenced table, **Sales**.
 
@@ -107,11 +111,13 @@ Let’s create a simple formula. This task will help you further understand form
     
    **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
     
-10. Select the checkmark ![Checkmark icon](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) in the formula bar or press Enter to validate the formula and add it to the model.
+10. Select the checkmark ![Checkmark icon](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) in the formula bar or press Enter to validate the formula and add it to the Sales table.
 
-You did it! You just created a complex measure by using DAX, and not an easy one at that. What this formula will do is calculate the total sales for the previous quarter, depending on the filters applied in a report. For example, if we put SalesAmount and our new Previous Quarter Sales measure in a chart, and then add Year and QuarterOfYear as Slicers, we’d get something like this:
+You did it! You just created a complex measure by using DAX, and not an easy one at that. What this formula will do is calculate the total sales for the previous quarter, depending on the filters applied in a report. For example, if we put SalesAmount and our new Previous Quarter Sales measure from the Sales table into a Clustered column chart, then from the Calendar table add Year as a slicer and select 2011, and then add QuarterOfYear as another Slicer and select 4, we get a chart like this:
 
 ![Previous Quarter Sales and SalesAmount chart](media/desktop-quickstart-learn-dax-basics/qsdax_3_chart.png)
+
+Keep in mind, the sample model contains only a small amount of sales data from 1/1/2011 to 1/19/2013. If you select a year or quarter where SalesAmount cannot be summed, or your new measure cannot calculate sales data for the current or previous quarter, no data for that period is shown. For example, if you select 2011 for Year and 1 for QuarterOfYear, no data is shown for Previous Quarter Sales because there is no data for the fourth quarter of 2010.
 
 You were just introduced to several important aspects of DAX formulas: 
 
@@ -124,6 +130,7 @@ You were just introduced to several important aspects of DAX formulas:
 - You used the CALCULATE function. This function is one of the most powerful functions in DAX. As you author models and create more complex formulas, you'll likely use this function many times. Although further discussion about the CALCULATE function is outside the scope of this article, as your knowledge of DAX grows, pay special attention to it.
 
 ### Syntax QuickQuiz
+
 1. What does this button on the formula bar do?
    
    > ![Button selection](media/desktop-quickstart-learn-dax-basics/qsdax_2_syntaxquiz.png)
@@ -134,6 +141,7 @@ You were just introduced to several important aspects of DAX formulas:
 Answers are provided at the end of this article.
 
 ### Functions
+
 Functions are predefined formulas that perform calculations by using specific values, called arguments, in a particular order or structure. Arguments can be other functions, another formula, expression, column references, numbers, text, logical values such as TRUE or FALSE, or constants.
 
 DAX includes the following categories of functions: [Date and Time](/dax/date-and-time-functions-dax), [Time Intelligence](/dax/time-intelligence-functions-dax), [Information](/dax/information-functions-dax), [Logical](/dax/logical-functions-dax), [Mathematical](/dax/math-and-trig-functions-dax), [Statistical](/dax/statistical-functions-dax), [Text](/dax/text-functions-dax), [Parent/Child](/dax/parent-and-child-functions-dax), and [Other](/dax/other-functions-dax) functions. If you’re familiar with functions in Excel formulas, many of the functions in DAX will appear similar to you; however, DAX functions are unique in the following ways:
@@ -147,6 +155,7 @@ DAX includes the following categories of functions: [Date and Time](/dax/date-an
   As you can see, functions in DAX can help you create powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas by using many different functions. One of the best places to learn details about each of the DAX functions is in the [DAX Function Reference](/dax/).
 
 ### Functions QuickQuiz
+
 1. What does a function always reference?
 2. Can a formula contain more than one function?
 3. What category of functions would you use to concatenate two text strings into one string?
@@ -154,13 +163,14 @@ DAX includes the following categories of functions: [Date and Time](/dax/date-an
 Answers are provided at the end of this article.
 
 ### Context
+
 Context is one of the most important DAX concepts to understand. There are two types of context in DAX: row context and filter context. We’ll first look at row context.
 
-**Row context**
+#### Row context
 
 Row context is most easily thought of as the current row. It applies whenever a formula has a function that applies filters to identify a single row in a table. The function will inherently apply a row context for each row of the table over which it is filtering. This type of row context most often applies to measures.
 
-**Filter context**
+#### Filter context
 
 Filter context is a little more difficult to understand than row context. You can most easily think of filter context as: One or more filters applied in a calculation that determines a result or value.
 

@@ -5,10 +5,10 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-data-sources
+ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 08/03/2020
+ms.date: 12/09/2021
 #customer intent: "As a Power BI end user, I want to build a Machine Learning model, so I can use machine learning with Power BI."
 LocalizationGroup: Connect to services
 ---
@@ -105,6 +105,14 @@ In the final step, we must provide a name for our model. Name the model _Purchas
 
 ![Save the model](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-14.png)
 
+You may run into an error that states *Credentials not found for data source* or something similar, in which case you need to update your credentials so the data can be scored. To update credentials go to **My Workspace** in the Power BI service and in the header bar select **More options (...) > Settings > Settings**.
+
+:::image type="content" source="media/service-aml-integrate/settings-pbi.png" alt-text="Screenshot showing settings.":::
+
+Select **Datasets**, expand **Data source credentials**, then select **Edit Credentials**.
+
+:::image type="content" source="media/service-aml-integrate/data-refresh.png" alt-text="Screenshot showing credential refresh.":::
+
 The training process will begin by sampling and normalizing your historical data and splitting your dataset into two new entities _Purchase Intent Prediction Training Data_ and _Purchase Intent Prediction Testing Data_.
 
 Depending on the size of the dataset, the training process can take anywhere from a few minutes to the training time selected at the previous screen. At this point, you can see the model in the **Machine learning models** tab of the dataflow. The Ready status indicates that the model has been queued for training or is under training.
@@ -174,6 +182,10 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 ## Using the scored output from the model in a Power BI report
 
 To use the scored output from your machine learning model you can connect to your dataflow from the Power BI desktop, using the Dataflows connector. The **Online Visitors enriched Purchase Intent Prediction** entity can now be used to incorporate the predictions from your model in Power BI reports.
+
+## Limitations
+
+There are some known issues with using Gateway with AutoML. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to create or apply these models.
 
 ## Next steps
 
