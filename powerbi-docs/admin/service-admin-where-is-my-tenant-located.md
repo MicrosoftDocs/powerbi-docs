@@ -23,7 +23,7 @@ The region where your data is stored is important because it can affect the inte
 
 The first user in your organization to sign up for Power BI or Microsoft 365 chooses the country or region for the business identity. Azure Active Directory, the shared identity and access management service for the cloud, creates a tenant in the data center region closest to the selected country or region. Azure Active Directory is a multi-tenant service, and each organization is represented as an individual tenant in the data center.
 
-The region you select during sign-up determines where data is stored. This region will be the same location for all users in your organization, no matter where they are. For best performance, the selected region should be in the same geographical area as most of your users. For more information about signing up for Power BI and choosing the data region, see [Get a Power BI service subscription for your organization](../enterprise/service-admin-org-subscription.md).
+The region you select during sign-up determines where data is stored. This region will be the same location for all users in your organization, no matter where they are. Ideally, the selected region will be in the same geographical area as most of your users. For more information about signing up for Power BI and choosing the data region, see [Get a Power BI service subscription for your organization](../enterprise/service-admin-org-subscription.md).
 
 > [!IMPORTANT]
 > After sign-up you can't change the default data region yourself. For information about how to request a support-driven data region migration, see [Move between regions](/power-bi/support/service-admin-region-move).
@@ -40,7 +40,7 @@ To find the default data region for your organization, follow these steps:
 
      :::image type="content" source="media/service-admin-where-is-my-tenant-located/help-about-power-bi.png" alt-text="Screen capture showing help and support menu with about Power B I highlighted.":::
 
-1. Look for the value next to **Your data is stored in**. The location shown is the default region where your data is stored. Your data might be stored in different regions from your workspaces.
+1. Look for the value next to **Your data is stored in**. The location shown is the default region where your data is stored. You may also be using capacities in different regions for your workspaces.
 
      :::image type="content" source="media\service-admin-where-is-my-tenant-located\power-bi-data-region.png" alt-text="Screen capture showing about Power B I with data storage location highlighted.":::
 
