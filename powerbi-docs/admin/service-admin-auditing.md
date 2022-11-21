@@ -196,7 +196,7 @@ You receive an error if the selected date range is greater than 90 days. If you'
 
 ### Search the audit logs by users
 
-You can search for audit log entries for activities done by specific users. Enter one or more user names in the **Users** field. User names appear as email addresses. This box should be left blank to return entries for all users (and service accounts) in your organization.
+You can search for audit log entries for activities done by specific users. Enter one or more user names in the **Users** field. User names appear in email address format. This box should be left blank to return entries for all users (and service accounts) in your organization.
 
 ![Screenshot of the Audit log search with Users called out.](media/service-admin-auditing/search-audit-log-by-user.png)
 
