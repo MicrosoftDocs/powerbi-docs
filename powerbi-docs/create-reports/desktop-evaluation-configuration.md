@@ -118,9 +118,12 @@ You can change this setting in the user interface in Power BI Desktop. On the **
 
 - Default. This is the default selection and limits the maximum number of concurrent jobs to 6.
 - One. This limits the maximum number of concurrent jobs to 1 and effectively disables parallel loading of tables.
-- Custom. You can enter any positive number here to define your own maximum number of concurrent jobs.
+- Custom. You can enter any positive number here to define your own maximum number of concurrent jobs. The maximum number of concurrent jobs allowed is 30. 
 
 :::image type="content" source="media/desktop-evaluation-configuration/desktop-evaluation-configuration-settings-concurrent-jobs.png" alt-text="Screenshot that shows the changing maximum number of concurrent jobs data loading parallelization settings in Power BI Desktop.":::
+
+> [!NOTE]
+> Changing the maximum number of concurrent jobs settings will affect the dataset refresh performance in Desktop but only the datasets in Power BI Premium or Premium Per User can execute the jobs concrrently as specified in this setting. Datasets in Power BI Pro capacities will not benefit from this setting.  
 
 ## Interaction between maximum number of simultaneous evaluations and maximum number of concurrent jobs
 If you configure the maximum number of simultaneous evaluations to a higher number than the maximum number of concurrent jobs, then the Power BI engine will limit its parallelization to the maximum number of concurrent jobs. If you configure the maximum number of simultaneous evaluations to a lower number than the maximum number of concurrent jobs, then the Power BI engine can start the maximum number of concurrent jobs, based on available system resources, but the maximum number of simultaneous evaluations may constrain how many Power Query operations can be executed concurrently by those jobs. The remaining jobs are queued waiting until one of the jobs completes. In this situation however, the evaluation of calculated columns, calculated tables and other Power BI engine items that do not rely on Power Query will not be restricted by the maximum number of simultaneous evaluations and can reach the maximum number of parallel jobs as determined by the maximum number of concurrent jobs.
