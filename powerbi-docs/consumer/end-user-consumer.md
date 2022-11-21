@@ -43,7 +43,7 @@ As a business user, you don't have access to all of the capabilities of Power BI
 
 You might hear the term "Power BI Desktop" or just "Desktop". Designers use this stand-alone tool to build and share dashboards and reports. It's important to know that there are other Power BI tools out there, but if you're a business user, you only work with the Power BI service.
 
-When you work with shared content, you need one of the following:
+When you work with shared content, you need one of the following requirements:
 
 - A Power BI Pro or Premium Per User (PPU) license
 - Your organization must have a Power BI Premium subscription, and the content that's shared with you must come from Premium capacity
@@ -59,7 +59,7 @@ As you filter, slice, subscribe, and export, your work doesn't impact the underl
 
 You can't corrupt your data. Power BI is a great place to explore and experiment without worrying that you might break something.  
 
-That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, you can simply click the Reset button.  
+That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, you can click the Reset button.  
 
 :::image type="icon" source="media/end-user-consumer/power-bi-reset.png":::
 
