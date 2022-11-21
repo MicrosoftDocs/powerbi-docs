@@ -115,17 +115,7 @@ Follow the steps below to make sure your dataset configurations are set correctl
 - [How-to video](https://go.microsoft.com/fwlink/?linkid=2151608)
 - [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 
-### Finding your company’s enrollment number (EA Direct customers only)
-
-Follow the steps below to find your company's billing account ID (formerly known as the enrollment number), or ask your organization’s Azure administrator.
-
-1. Sign into the [Azure Enterprise portal](https://ea.azure.com) as an admin.
-
-1. Select **Active Directory** or **Manage** on the left-hand navigation bar. Your company’s enrollment number will display.
-
-   :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/enrollment-number.png" alt-text="Screenshot of find billing account ID.":::
-
-### Finding your company's billing account ID (MCA/MPA)
+### Finding your company's billing account ID
 
 Follow the steps below to find your company's billing account ID, or ask your organization’s Azure administrator.
 
