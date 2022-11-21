@@ -31,23 +31,23 @@ This procedure uses the Retail Analysis sample available in the Power BI service
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-1. In Power BI Desktop, go to the **Home** tab, select **Insert**, then select **Text box**.
+1. In Power BI Desktop, go to the **Home** tab, select **Insert**, and then select **Text box**.
 
-   ![Screenshot in Power BI Desktop, highlighting the Text box.](media/power-bi-reports-add-text-and-shapes/desktop-select-text-box.png)
+   ![Screenshot of Power BI Desktop, highlighting the Text box.](media/power-bi-reports-add-text-and-shapes/desktop-select-text-box.png)
 
 # [Power BI service](#tab/powerbi-service)
 
 1. In the Power BI service, open a report in Editing view, and select **Text box** from the top menu.
 
-   ![Screenshot in Power BI service, highlighting the Text box.](media/power-bi-reports-add-text-and-shapes/power-bi-select-text-box.png)
+   ![Screenshot of Power BI service, highlighting the Text box.](media/power-bi-reports-add-text-and-shapes/power-bi-select-text-box.png)
 
 2. Power BI places an empty text box on the canvas. To position the text box, select the grey area at the top and drag to your desired location. To resize the text box, select and drag any of the sizing handles.
 
    ![Screenshot of the text box on the canvas.](media/power-bi-reports-add-text-and-shapes/power-bi-position-text-box.png)
 
-3. Type your text into the text box. Optionally, you can then set the format font style, including color, size, and subscript or superscript, and text alignment, including bulleted lists.
+3. Type your text into the text box. You can then set the format font style, including color, size, and subscript or superscript, and text alignment, including bulleted lists.
 
-4. With the text box still selected, you can add additional formatting in the **Format text box** pane. In this example, the text has a theme color, and added bullets and superscript. You can also specify an exact size and position for a text box.  
+4. With the text box still selected, add additional formatting in the **Format text box** pane. In this example, the text has a theme color, and added bullets and superscript. You can also specify an exact size and position for a text box.  
 
    ![Screenshot of the text box with example font, font size, and alignment.](media/power-bi-reports-add-text-and-shapes/power-bi-formatting.png)
 
@@ -91,7 +91,7 @@ You can also add a *smart narrative* to your report. The smart narrative visuali
 
 1. In the **Visualizations** pane, select the **Smart narrative** icon. If you don't see it, you may need to turn on the preview.
 
-    ![Screenshot of Visualizations, highlighting the Smart narrative icon.](media/power-bi-reports-add-text-and-shapes/power-bi-smart-narrrative-icon.png)
+    ![Screenshot of the Visualizations pane, highlighting the Smart narrative icon.](media/power-bi-reports-add-text-and-shapes/power-bi-smart-narrrative-icon.png)
 
 2. Power BI creates a text box with auto-generated text describing interesting features of the data in your report.
 
