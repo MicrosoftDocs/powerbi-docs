@@ -12,10 +12,13 @@ ms.date: 11/1/2022
 
 # Configure credentials programmatically for Power BI
 
-Follow the steps in this article to configure credentials programmatically for Power BI. Configuring credentials programmatically also allows you to encrypt credentials.
+✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+
+Follow the steps in this article, to configure credentials programmatically for Power BI. Configuring credentials programmatically also allows you to encrypt credentials.
 
 >[!NOTE]
->* The calling user must be a dataset owner or a gateway admin. Using a [service principal](../embedded/embed-service-principal.md) is also possible. For example, the service principal might also be the dataset owner.
+>
+>* The calling user must be a dataset owner or a gateway admin. You can also use a [service principal](../embedded/embed-service-principal.md). For example, the service principal can be the dataset owner.
 >* Cloud data sources and their corresponding credentials are managed at the user level.
 
 ## Update the credentials flow for data sources

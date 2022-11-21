@@ -60,7 +60,7 @@ sections:
       - question: |
           Why can't I see the pipeline stage tag in my workspace?
         answer: |
-          Deployment pipelines displays a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access) or if you're a [workspace admin](deployment-pipelines-process.md#workspace-admin).
+          Deployment pipelines display a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#permissions) or if you're a workspace admin.
           
           > [!div class="mx-imgBorder"]
           > ![A screenshot of the production tag in a production pipeline workspace.](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -102,7 +102,7 @@ sections:
         answer: |
           When you assign a workspace to a deployment pipelines stage, deployment pipelines checks the Power BI items (such as reports and dashboards) in the workspace. If there are two Power BI items from the same type with the same name in an adjacent stage, deployment pipelines can't determine which one of them should match the one in the assigned workspace. For example, if you're trying to assign a workspace to the *test stage*, and one of your reports is called 'regional sales', if you have more than one report with the same name in either the *development* or *production* stages, the assignment will fail. Assigning your workspace will also fail if the workspace you're assigning has two datasets titles 'regional sales dataset', and there's a dataset with the same name in either the *development* or *production* stages. To resolve this error, change the name of the item that doesn't match the item in the stage you're trying to assign. You can select the links in the error message to open the items in the Power BI service. 
           
-          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-assign-error.png" alt-text="A screenshot of the can't assign the workspace error message in deployment pipelines.":::
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-assign-error.png" alt-text="A screenshot of the Can't assign the workspace error message in deployment pipelines.":::
 
       - question: |
           Why am I seeing the 'different' symbol after I assigned a workspace with datasets that are similar to those in adjacent stages?
@@ -189,7 +189,7 @@ sections:
           >Backwards deployment only supports [full deployment](deployment-pipelines-get-started.md#deploying-all-content). It doesn't support [selective deployment](deployment-pipelines-get-started.md#selective-deployment)
           
       - question: |
-          Why do I need to deploy after configuring deployment rules?
+          Why do I need to deploy after I configure deployment rules?
         answer: |
           Deployment rules aren't applied immediately after they're configured. To apply deployment rules, you have to deploy the datasets from the source stage to the target stage which includes the created deployment rules. After configuring deployment rules, and before you deploy, the *different* indicator is shown next to the dataset with the configured rules. This indicates that you need to deploy that dataset from the source stage to the target stage. Once you deploy, if no other changes were made, the *different* indicator will disappear signifying that the rules were applied successfully.
 
@@ -225,9 +225,9 @@ sections:
       - question: |
           Why am I getting the message 'can't start the deployment'?
         answer: |
-          When using [incremental refresh](deployment-pipelines-process.md#incremental-refresh), only certain [changes to the dataset](deployment-pipelines-process.md#considerations-and-limitations) you're deploying are allowed. If you made dataset changes that aren't allowed, your deployment will fail and you'll receive this message:
+          When you're using [incremental refresh](deployment-pipelines-process.md#incremental-refresh), only certain [changes to the dataset](deployment-pipelines-process.md#considerations-and-limitations) you're deploying are allowed. If you made dataset changes that aren't allowed, your deployment will fail and you'll receive this message:
 
-          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-start-deployment-error.png" alt-text="A screenshot of the can't start the deployment error message in deployment pipelines.":::
+          :::image type="content" source="media/deployment-pipelines-troubleshooting/cannot-start-deployment-error.png" alt-text="A screenshot of the Can't start the deployment error message in deployment pipelines.":::
   
           If you made changes to your dataset intentionally, you can use one of the following workarounds:
 
@@ -263,7 +263,7 @@ sections:
       - question: |
           How do I resolve a source and target dataset format version mismatch error?
         answer: |
-          The *Can’t start deployment* error that states that *the source and target datasets have different data modeling formats*, occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines isn’t able to deploy from the source stage to the target stage. To avoid this error, use a dataset that has the same (or higher) model version in the source stage. You can upgrade the dataset model in the source stage using an [XMLA read-write endpoint](./../enterprise/service-premium-connect-tools.md#enable-xmla-read-write) or Power BI Desktop. After upgrading the dataset, republish it to the source stage.
+          The *Can’t start deployment* error that states that *the source and target datasets have different data modeling formats*, occurs when the dataset in the target stage has a higher model version than the dataset in the source stage. In such cases, deployment pipelines aren’t able to deploy from the source stage to the target stage. To avoid this error, use a dataset that has the same (or higher) model version in the source stage. You can upgrade the dataset model in the source stage using an [XMLA read-write endpoint](./../enterprise/service-premium-connect-tools.md#enable-xmla-read-write) or Power BI Desktop. After upgrading the dataset, republish it to the source stage.
 
       - question: |
           How do I resolve a data source connectivity mode mismatch error?
@@ -280,8 +280,11 @@ sections:
       - question: |
           Why can't I see a paginated report?
         answer: |
-          To view a paginated report in the pipeline, you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
-          
+          To view a paginated report in the pipeline you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
+
+          >[!NOTE]
+          >You only need to enable this workload with Power BI Premium Gen1 capacities.
+
       - question: |
           Why can't I deploy a paginated report?
         answer: |
@@ -310,7 +313,7 @@ sections:
       - question: |
           Where are my paginated report subreports?
         answer: |
-          Paginated report subreports are kept in the same folder that holds your paginated report. To avoid rendering problems, when using [selective copy](deployment-pipelines-get-started.md#selective-deployment) to copy a paginated report with subreports, select both the parent report and the subreports.
+          Paginated report subreports are kept in the same folder that holds your paginated report. To avoid rendering problems, when you're using [selective copy](deployment-pipelines-get-started.md#selective-deployment) to copy a paginated report with subreports, select both the parent report and the subreports.
           
       - question: |
           How do I create a deployment rule for a paginated report with a Power BI dataset?
@@ -323,14 +326,14 @@ sections:
           
           * **Database** - The database format for a paginated report with a Power BI dataset, is `sobe_wowvirtualserver-<dataset ID>`. For example, `sobe_wowvirtualserver-d51fd26e-9124-467f-919c-0c48a99a1d63`. Replace the `<dataset ID>` with your dataset's ID. You can get the dataset ID from the URL, by selecting the GUID that comes after `datasets/` and before the next forward slash.
           
-              :::image type="content" source="media/deployment-pipelines-troubleshooting/datasets-id.png" alt-text="A screenshot of the dataset I D as it appears in a Power B I U R L.":::
+              :::image type="content" source="media/deployment-pipelines-troubleshooting/datasets-id.png" alt-text="A screenshot of the dataset ID as it appears in a Power BI URL.":::
           
           * **Server** - The server that hosts your database. Keep the existing server as is.
 
       - question: |
           Why deploying a large number of paginated reports fails?
         answer: |
-          A deployment of a large number of paginated reports with rules, might fail due to an overload on the capacity. To overcome this problem, either purchase a higher SKU, or use selective deployment.
+          A deployment of a large number of paginated reports with rules might fail due to an overload on the capacity. To overcome this problem, either purchase a higher SKU, or use selective deployment.
 
       - question: |
           After deployment, can I download the RDL file of the paginated report?
@@ -359,7 +362,7 @@ sections:
       - question: |
           Where is my datamart's dataset?
         answer: |
-          Deployment pipelines doesn't display datasets that belong to datamarts in the pipeline stages. When deploying a datamart, its dataset is also deployed. You can view your datamart's dataset in the workspace of the stage it's in. 
+          Deployment pipelines don't display datasets that belong to datamarts in the pipeline stages. When you're deploying a datamart, its dataset is also deployed. You can view your datamart's dataset in the workspace of the stage it's in. 
 
       - question: |
           Why can't I deploy a datamart in the pipeline?
@@ -397,7 +400,7 @@ sections:
       - question: |
           Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?
         answer: |
-          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages are required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
+          To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#permissions-table) permissions for the workspaces in its adjacent stages. Workspace member (or higher) permissions in the adjacent stages are required to enable deployment pipelines to establish connections between Power BI items in neighboring pipeline stages.
 
           
           :::image type="content" source="media/deployment-pipelines-troubleshooting/workspace-permission-needed.png" alt-text="A screenshot of the workspace member permission needed message in the test stage of a deployment pipeline.":::

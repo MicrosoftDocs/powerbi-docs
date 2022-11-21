@@ -52,13 +52,7 @@ Embedded Gen 2 has the same [architecture improvements](../../enterprise/service
 
 ## Autoscaling in Embedded Gen2
 
-Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, customers can configure autoscale using these options:
-
-* [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
-
-* Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU*, *CPU Per Workload*, and *Overload*.
-
-* [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+See [Autoscale your capacity](azure-pbie-scale-capacity.md#autoscale-your-capacity) for a description of how to autoscale yuor Gen2 capacity.
 
 ## Considerations and limitations
 

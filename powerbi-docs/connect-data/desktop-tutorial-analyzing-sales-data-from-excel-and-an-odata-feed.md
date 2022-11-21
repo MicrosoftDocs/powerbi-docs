@@ -237,11 +237,11 @@ Next, create a chart showing order dollar amounts (**LineTotal**) over time (**O
    >[!TIP]
    >If you only see **Years** on the chart and only three data points, select the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**. Alternatively, you may need select **Options and settings > Options** from the **File** menu, and under **Data Load**, deselect the *Auto date/time for new files* option.
 
-Finally, create a map visualization showing order amounts from each country.
+Finally, create a map visualization showing order amounts from each country or region.
 
-1. With nothing selected on the canvas, select **ShipCountry** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. Power BI Desktop detects that the data is country names. It then automatically creates a map visualization, with a data point for each country with orders.
+1. With nothing selected on the canvas, select **ShipCountry** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. Power BI Desktop detects that the data is country or region names. It then automatically creates a map visualization, with a data point for each country or region with orders.
 
-1. To make the data point sizes reflect each country's order amounts, drag the **LineTotal** field onto the map. You can also drag it to **Add data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country.
+1. To make the data point sizes reflect each country's/region's order amounts, drag the **LineTotal** field onto the map. You can also drag it to **Add data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country or region.
 
    ![LineTotals by ShipCountry map visualization](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/linetotals-by-shipcountry-map-visualization.png)
 
@@ -262,7 +262,7 @@ Select a **Quantity by ProductName** chart product to see the map and the date c
 
 ## Complete the sales analysis report
 
-Your completed report combines data from the *Products.xlsx* Excel file and the Northwind OData feed in visuals that help you analyze different countries' order information, time frames, and products. When your report is ready, you can [upload it to Power BI service](../create-reports/desktop-upload-desktop-files.md) to share it with other Power BI users.
+Your completed report combines data from the *Products.xlsx* Excel file and the Northwind OData feed in visuals that help you analyze different countries' or regions' order information, time frames, and products. When your report is ready, you can [upload it to Power BI service](../create-reports/desktop-upload-desktop-files.md) to share it with other Power BI users.
 
 ## Next steps
 
