@@ -43,7 +43,6 @@ There are several roles that work together to administer Power BI for your organ
 | Power BI Premium Capacity Administrator | A single Premium capacity | Assign workspaces to the capacity|
 | | | Manage user permission to the capacity |
 | | | Manage workloads to configure memory usage |
-| | | Restart the capacity |
 | Power BI Embedded Capacity Administrator | A single Embedded capacity | Assign workspaces to the capacity|
 | | | Manage user permission to the capacity |
 | | | Manage workloads to configure memory usage |
