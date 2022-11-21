@@ -38,7 +38,7 @@ Your Home view will also depend on the layout you've selected. By default, you'l
 - is used frequently by your closest colleagues
 - is Getting started content
 
-The screenshots below show a **Simplified** layout for a new user and then for a more experienced user.
+The screenshots below show an example **Simplified** layout for a new user and then for a more experienced user.
 
 
 :::image type="content" source="media/end-user-home/power-bi-home.png" alt-text="Screenshot of Simplified view for a new user.":::
