@@ -25,7 +25,7 @@ The following table lists features of Power BI that are **not** yet available in
 |----|----|----|----|----|
 |Power BI | Purview integration with Power BI |Generally available | Not available |  |
 |Power BI | Metrics | Public preview | Not available |  |
-|Power BI | Using Azure ExpressRoute to integrate an on-premises gateway | Generally available | Not available | [Azure ExpressRoute for Office 365](/microsoft-365/enterprise/azure-expressroute) isn't supported for 21Vianet.) |
+|Power BI | Using Azure ExpressRoute to integrate an on-premises gateway | Generally available | Not available | [Azure ExpressRoute for Office 365](/microsoft-365/enterprise/azure-expressroute) isn't supported in the 21Vianet environment. |
 |Power BI | Template app marketplace | Generally available | Not available | AppSource isn't available in China. |
 | Power BI | Datamart | Public preview | Not available |  |
 | Power BI and Office | Teams - embed interactive Power BI report | Generally available | Not available | |
