@@ -39,7 +39,7 @@ A dashboard isn't just a pretty picture, it's an interactive canvas. The tiles u
 
 ## Dashboards versus reports for Power BI business users
 
-How you interact with Power BI depends on your job role. As a consumer or business user, you receive content, like dashboards, reports, and apps, from colleagues who are designers. Reports can be confused with dashboards because they are both canvases filled with visualizations, but there are major differences from a Power BI business user's point of view.
+How you interact with Power BI depends on your job role. As a consumer or business user, you receive content, like dashboards, reports, and apps, from colleagues who are designers. Reports can be confused with dashboards because they're both canvases filled with visualizations, but there are major differences from a Power BI business user's point of view.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
