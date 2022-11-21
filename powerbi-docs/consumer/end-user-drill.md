@@ -129,11 +129,11 @@ When you drill down, you only go to the next level of the hierarchy. When you ex
 
 Use **Show as a table** to get a look behind the scenes. Each time you drill or expand, **Show as a table** displays the data that's used to build the visual. This feature makes it easier to see how hierarchies, drill, and expand work together to build visuals.
 
-1. In the upper right corner, select **More actions** (...), and then select **Show as a table**.
+1. In the upper right corner, select **More options** (...), and then select **Show as a table**.
 
     :::image type="content" source="./media/end-user-drill/power-bi-more-actions.png" alt-text="Screenshot of the menu on the action bar. Show as a table is outlined.":::
 
-    The data that makes up the treemap appears below the visual.
+    The data that makes up the bar chart appears below the visual.
 
     :::image type="content" source="./media/end-user-drill/power-bi-show-table.png" alt-text="Screenshot of bar chart with data table displayed below." lightbox="./media/end-user-drill/power-bi-show-table.png#lightbox":::
 
@@ -142,8 +142,6 @@ Use **Show as a table** to get a look behind the scenes. Each time you drill or 
     The first table represents the top level of the hierarchy. It shows the categories Rural and Urban. The next three tables represent the bar chart's data as you drill down all levels at once, from category to manufacturer to segment to product.
 
     :::image type="content" source="./media/end-user-drill/power-bi-show-data.png" alt-text="Screenshot of showing data for all four levels of drilling down." lightbox="./media/end-user-drill/power-bi-show-data.png#lightbox":::
-
-    Notice that the totals are the same for City, PostalCode, and Name. Totals don't always match, but for this data, there's only one store in each postal code and in each city.  
 
 ## Considerations and limitations
 
