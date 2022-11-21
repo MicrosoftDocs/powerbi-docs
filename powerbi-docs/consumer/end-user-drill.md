@@ -24,7 +24,7 @@ Report designers often add date hierarchies to visuals. A common date hierarchy 
 
 You can tell if a visual has a hierarchy by hovering over it. If the drill control options appear in the action bar, your visual has a hierarchy.
 
-![Screenshot of the drill control icons on the action bar.](./media/end-user-drill/power-bi-drill-icons.png)
+:::image type="icon" source="./media/end-user-drill/power-bi-drill-icons.png":::
 
 ## Drill down and up
 
@@ -115,10 +115,13 @@ The following example shows how to use this feature to expand all fields at one 
 
 To get detailed data for one field, you can expand down one level in the hierarchy.
 
-1. From the previous step, select the drill-up icon until you reach the postal code level.
-2. Select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png":::. The treemap now shows two levels of the hierarchy, postal code and store name.
+1. From the previous step, select the drill-up icon until you reach the category level.
+2. With the drill-down icon turned off, select the Rural bar, and then select the expand down icon :::image type="icon" source="./media/end-user-drill/power-bi-drill-icon6.png":::.
 
-    ![Screenshot of the treemap showing postal code and store name.](./media/end-user-drill/power-bi-expand.png)
+    :::image type="content" source="./media/end-user-drill/power-bi-expand-one.png" alt-text="Screenshot showing the Rural bar selected.":::
+    On the next level, the data for the field you selected is emphasized.
+
+    :::image type="content" source="./media/end-user-drill/power-bi-expand-one-field.png" alt-text="Screenshot showing the Category and Manufacturer level. The Rural data is emphasized.":::
 
 When you drill down, you only go to the next level of the hierarchy. When you expand, you go to the next level of the hierarchy while also preserving the data of the level you're on.
 
