@@ -8,7 +8,7 @@ ms.custom: video-JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/16/2022
+ms.date: 11/21/2022
 LocalizationGroup: Dashboards
 ---
 
@@ -83,11 +83,9 @@ Next, Power BI sends an alert to your **Notification center** and, optionally, a
 
 There are many ways to manage your alerts:
 
-* From the dashboard tile
-
-* From the Power BI **Settings** menu
-
-* On a tile in the [Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* From the [dashboard tile](#from-the-dashboard-tile).
+* From the [Power BI **Settings** menu](#from-the-power-bi-settings-menu).
+* On a tile in the [Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the dashboard tile
 
@@ -131,9 +129,7 @@ There are many ways to manage your alerts:
 ## Next steps
 
 * [Create a Power Automate workflow that includes a data alert](../collaborate-share/service-flow-integration.md).
-
 * [Set data alerts on your mobile device](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
-
 * [What is Power BI?](../fundamentals/power-bi-overview.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
