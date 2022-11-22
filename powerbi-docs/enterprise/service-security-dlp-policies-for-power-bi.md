@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 10/15/2022
+ms.date: 11/22/2022
 LocalizationGroup: Data from files
 ---
 
