@@ -51,7 +51,7 @@ You can publish DirectQuery reports to the Power BI service, but you need to tak
 
 - To connect the Power BI service to DirectQuery data sources other than Azure SQL Database, Azure Synapse Analytics (formerly SQL Data Warehouse), Amazon Redshift, and Snowflake Data Warehouse, [install an on-premises data gateway](service-gateway-onprem.md) and register the data source.
 
-- If you used DirectQuery with cloud sources like Azure SQL Database, Azure Synapse, Amazon Redshift, or Snowflake Data Warehouse, you don't need an on-premises data gateway, but must provide credentials for the Power BI service to open the published report. Without credentials, an error occurs when you try to open a published report or explore a dataset created with a DirectQuery connection.
+- If you used DirectQuery with cloud sources like Azure SQL Database, Azure Synapse, Amazon Redshift, or Snowflake Data Warehouse, you don't need an on-premises data gateway. You still must provide credentials for the Power BI service to open the published report. Without credentials, an error occurs when you try to open a published report or explore a dataset created with a DirectQuery connection.
 
 To provide credentials for opening the report and refreshing the data:
 
