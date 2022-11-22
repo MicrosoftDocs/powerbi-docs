@@ -28,7 +28,7 @@ For more advanced solutions that give your users more flexibility and control, u
 
 ## What are the Power BI embedded analytics solutions?
 
-Power BI embedded analytics gives you additional benefits over secure embed. It offers a rich, fully integrated experience with full API support, automatic authentication, and the reports can be hosted in apps as well as web pages. It allows you to reduce developer resources by automating the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
+Power BI embedded analytics gives you additional benefits over secure embed. It offers a rich, fully integrated experience with full API support, automatic authentication, and the reports can be hosted in apps as well as web pages. Embedded analytics allows you to automate the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
 
 Power BI Embedded has basically the [same features as Power BI Premium](../../enterprise/service-premium-features.md).
 
