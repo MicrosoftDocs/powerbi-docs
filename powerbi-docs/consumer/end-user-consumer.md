@@ -25,28 +25,28 @@ As the data piles up, it becomes harder to find what you need quickly, and you w
 
 ## Overview of the Power BI service
 
-Power BI makes your job easier and more impactful. All of the content you receive becomes charts and graphs that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are beautiful, colorful, and compelling visuals. They tell stories about your content.
+Power BI makes your job easier and more impactful. All the content you receive becomes charts and graphs that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are beautiful, colorful, and compelling visuals. They tell stories about your content.
 
 :::image type="content" source="media/end-user-consumer/power-bi-consumer-examples.png" alt-text="Screenshot shows a Power BI report with different kinds of charts." lightbox="media/end-user-consumer/power-bi-consumer-examples.png#lightbox":::
 
-Open the Power BI service in a browser or on a mobile device. You and your colleagues work from the same trusted dashboards and reports. The data updates and refreshes automatically, so you're always working with the freshest content.
+Open the Power BI service in a browser or on a mobile device. You and your colleagues work from the same trusted dashboards and reports. Power BI updates the data automatically, so you're always working with the freshest content.
 
 :::image type="content" source="media/end-user-consumer/power-bi-funnel.png" alt-text="Diagram shows data in several formats merging into Power BI. It's displayed on a computer screen and a hand-held device.":::
 
-The content isn't static, so you can dig in and look for trends, insights, and other business intelligence. Slice and dice the visual, and even ask it questions in your own words. Or, sit back and let your data discover interesting insights, send you alerts when data changes, or email reports to you on a schedule that you set. All of your content is available to you anytime, in the cloud or on-premises, from any device. That's just the beginning of what Power BI can do.
+The content isn't static, so you can dig in and look for trends, insights, and other business intelligence. Slice and dice the visual, and even ask it questions in your own words. Or, sit back and let your data discover interesting insights, send you alerts when data changes, or email reports to you on a schedule that you set. All your content is available to you anytime, in the cloud or on-premises, from any device. That's just the beginning of what Power BI can do.
 
 ## Are you a Power BI business user?
 
 How you interact with Power BI depends on your job role. As a consumer or business user, you receive content, like dashboards, reports, and apps, from colleagues. You work in the Power BI service, which is the online or mobile version of Power BI. You review and interact with your content to make business decisions.
 
-As a business user, you don't have access to all of the capabilities of Power BI. That's ok, because your job isn't building dashboards and reports. You use the Power BI service for analysis, monitoring, exploration, and decision making.
+As a business user, you don't have access to all the capabilities of Power BI. That's ok, because your job isn't building dashboards and reports. You use the Power BI service for analysis, monitoring, exploration, and decision making.
 
-You might hear the term "Power BI Desktop" or just "Desktop". Designers use this stand-alone tool to build and share dashboards and reports. It's important to know that there are other Power BI tools out there, but if you're a business user, you only work with the Power BI service.
+You might hear the term "Power BI Desktop" or just "Desktop." Designers use this stand-alone tool to build and share dashboards and reports. It's important to know that there are other Power BI tools out there, but if you're a business user, you only work with the Power BI service.
 
-When you work with shared content, you need one of the following requirements:
+When you work with shared content, you meet one of the following requirements:
 
-- A Power BI Pro or Premium Per User (PPU) license
-- Your organization must have a Power BI Premium subscription, and the content that's shared with you must come from Premium capacity
+- You have a Power BI Pro or Premium Per User (PPU) license.
+- Your organization has a Power BI Premium subscription, and the content that's shared with you comes from Premium capacity.
 
 > [!NOTE]
 > Users with PPU capacity subscriptions can't share content with users who have a Pro or free license.
@@ -59,12 +59,12 @@ As you filter, slice, subscribe, and export, your work doesn't impact the underl
 
 You can't corrupt your data. Power BI is a great place to explore and experiment without worrying that you might break something.  
 
-That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, you can click the Reset button.  
+That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, you can select the **Reset** button.  
 
 :::image type="icon" source="media/end-user-consumer/power-bi-reset.png":::
 
 ## Next steps
 
-[Take a tour of the Power BI service for business users](end-user-reading-view.md).  
-[Power BI service training for business users](/training/paths/consume-data-with-power-bi/).  
-[Terminology and concepts for Power BI business users](end-user-basic-concepts.md).
+[Take a tour of the Power BI service for business users](end-user-reading-view.md)  
+[Power BI service training for business users](/training/paths/consume-data-with-power-bi/)  
+[Terminology and concepts for Power BI business users](end-user-basic-concepts.md)
