@@ -1,6 +1,6 @@
 ---
 title: Fetch more data from Power BI
-description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals.
+description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals by using the fetchMoreData API.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -94,7 +94,7 @@ btn_click(){
 {
     // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available; as a response, Power BI will call update method
+        // request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData(true);
         // handle rejection
         if (!request_accepted) {
@@ -111,7 +111,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 ### Incremental updates mode
 
-With the incremental update mode, the dataview that is provided to the visual contains only incremental data. Therefore, dataview size doesn't pass the defined window size. For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a dataview size of 10,000 and one update with a dataview size of 1,000.
+With the incremental updates mode, the dataview that is provided to the visual contains only incremental data. Therefore, dataview size doesn't pass the defined window size. For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a dataview size of 10,000 and one update with a dataview size of 1,000.
 
 The incremental updates mode is selected by calling `fetchMoreData` with `aggregateSegments = false`.
 
@@ -160,7 +160,7 @@ btn_click(){
 {
     // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available; as a response, Power BI will call update method
+        // request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData(false);
         // handle rejection
         if (!request_accepted) {
@@ -174,7 +174,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 > [!NOTE]
 > Although the data in the different updates of the dataviews are mostly exclusive, there is some overlap between consecutive dataviews.
-> For table and categorical data mapping, it is expected the the first `N` dataview rows will contain data copied from the previous dataview.
+> For table and categorical data mapping, it is expected that the first `N` dataview rows will contain data copied from the previous dataview.
 > `N` can be determined by `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
 ## Considerations and limitations
