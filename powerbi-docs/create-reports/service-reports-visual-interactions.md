@@ -87,7 +87,7 @@ For both Power BI Desktop and Power BI service, [certain Power BI visualizations
    ![Screenshot of Power BI Desktop, showing Apply drill-down filters to dropdown menu, highlighting Entire page selection.](media/service-reports-visual-interactions/power-bi-drill.png)
 
    # [Power BI service](#tab/powerbi-service)
-   In Power BI service, you can edit interactions by clicking on the **Visual interactions** dropdown menu and setting **Edit interactions** and **Drilling filters other visuals** to **On**.
+   In Power BI service, you can edit interactions by clicking on the **Visual interactions** dropdown menu and setting **Drilling filters other visuals** to **On**.
 
    ![Screenshot of Power BI service that shows Drilling filters other visuals set to On.](media/service-reports-visual-interactions/drilling-filters-other-visuals.png)
 
