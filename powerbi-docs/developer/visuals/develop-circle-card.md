@@ -33,14 +33,14 @@ In this tutorial, you learn how to:
 
 ## Create a development project
 
-In this section you'll create a project for the circle card visual.
+In this section, you'll create a project for the circle card visual.
 
 >[!NOTE]
 >In this tutorial, [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is used for developing the Power BI visual.
 
 1. Open a new terminal in **VS Code** and navigate to the folder you want to create your project in.
 
-2. Enter the following command in the Powershell terminal:
+2. Enter the following command in the PowerShell terminal:
 
     ```PowerShell
     pbiviz new CircleCard
@@ -92,7 +92,7 @@ Set up the **visual.ts** file.
     >[!div class="mx-imgBorder"]
     >![Screenshot of accessing the visual.ts file in V S code.](media/develop-circle-card/visual-file.png)
 
-2. Remove all the code under the MIT Licence comment.
+2. Remove all the code under the MIT License comment.
 
     > [!IMPORTANT]
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the Massachusetts Institute of Technology (MIT) License. As part of the agreement, you must leave the comments at the top of the file.
@@ -116,11 +116,11 @@ Set up the **visual.ts** file.
    type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
    ```
 
-   Note that among the items you imported are:
+   Notice that among the items you imported are:
     * *IVisualHost* -  A collection of properties and services used to interact with the visual host (Power BI).
     * *D3 library* - JavaScript library for creating data driven documents.
 
-4. Below the imports, create an empty *visual* class. This is the class that implements the IVisual interface where all visuals begin:
+4. Below the imports, create an empty *visual* class. The *visual* class implements the IVisual interface where all visuals begin:
 
     ```typescript
     export class Visual implements IVisual {
@@ -128,7 +128,7 @@ Set up the **visual.ts** file.
     }
     ```
 
-   For information about what goes into the visual class see [Visual API](./visual-api.md). In the next three steps we'll define this class. 
+   For information about what goes into the visual class, see [Visual API](./visual-api.md). In the next three steps, we'll define this class.
 
 5. Add class-level *private* methods at the beginning of the *visual* class:
 
@@ -299,7 +299,7 @@ export class Visual implements IVisual {
 
 ### Modify the capabilities file
 
-The circle card visual is a very simple visual that doesn't create any objects in the Format pane. Therefore, you can safely remove the *objects* section of the file.
+The circle card visual is a simple visual that doesn't create any objects in the Format pane. Therefore, you can safely remove the *objects* section of the file.
 
 1. Open your project in VS Code (**File** > **Open Folder**).
 
@@ -468,7 +468,7 @@ So far, the visual renders, but doesn't display any data. In this section, you'l
 
 1. Open the **visual.ts** file in VS Code.
 
-2. In the *update* method, do the following:
+2. In the *update* method:
 
     * Add the following statement as the first statement. The statement assigns *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
 
