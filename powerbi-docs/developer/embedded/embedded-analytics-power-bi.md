@@ -22,13 +22,13 @@ Power BI embedded analytics allows you to embed your Power BI items such as repo
 
 ## Secure embed
 
-[Secure embed](../../collaborate-share/service-embed-secure.md) is the simplest no-code way to embed a report into any portal that accepts a URL or iFrame. The viewer of the report have the proper Power BI license. The viewer can interact with the report, but not edit, save, or make any changes to it. Secure embed is available in the Power BI service.
+[Secure embed](../../collaborate-share/service-embed-secure.md) is the simplest no-code way to embed a report into any portal that accepts a URL or iFrame. The viewer of the report must have the proper Power BI license. The viewer can interact with the report, but not edit, save, or make any changes to it. Secure embed is available in the Power BI service.
 
 For more advanced solutions that give your users more flexibility and control, use one of the [Power BI embedded analytics solutions](#what-are-the-power-bi-embedded-analytics-solutions) described in this article.
 
 ## What are the Power BI embedded analytics solutions?
 
-Power BI embedded analytics gives you additional benefits over secure embed. It allows you to reduce developer resources by automating the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
+Power BI embedded analytics gives you additional benefits over secure embed. It offers a rich, fully integrated experience with full API support, automatic authentication, and the reports can be hosted in apps as well as web pages. It allows you to reduce developer resources by automating the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
 
 Power BI Embedded has basically the [same features as Power BI Premium](../../enterprise/service-premium-features.md).
 
