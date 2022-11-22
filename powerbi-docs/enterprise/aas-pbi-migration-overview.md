@@ -100,9 +100,9 @@ The following applications connecting to a migrated dataset through redirection 
 > [!NOTE]
 > PowerShell cmdlets, SQL Server Management Studio, and Server Profiler (installed with SSMS) versions that support server redirect are currently pending release.
 
-When you enable server redirection for a migration, the Azure Analysis Services server must exist, and can't be paused. The current user must be both server administrator and workspace administrator.
+Server redirection for a migration can be enabled by using an On/Off setting. When you enable server redirection, the Azure Analysis Services server must exist and can't be paused. The current user must be both server administrator and workspace administrator.
 
-After enabling server redirection, you can then pause your server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You aren't billed while your server is paused. Deleting servers with server redirect is currently not supported.
+When Redirection status for the migration shows Server Redirection Enabled, you can then pause your server in the Azure portal or by using the Azure Analysis Services REST API. Client applications, tools, and processes are redirected to the dataset in Power BI. You aren't billed while your server is paused. Deleting servers with server redirect is currently not supported.
 
 > [!CAUTION]
 > **During preview**, do not delete your Azure Analysis Services server! Doing so will cause redirection to fail and there is no way to recover redirection.

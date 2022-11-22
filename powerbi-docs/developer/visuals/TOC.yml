@@ -129,7 +129,7 @@
     - name: "License enforcement API"
       href: licensing-api.md
     - name: Transactability and licensing FAQ
-      href: licensing-faq.md
+      href: licensing-faq.yml
   - name: Reference
     items: 
     - name: "Changelog"

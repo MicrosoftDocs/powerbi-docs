@@ -61,6 +61,8 @@
         href: ../connect-data/desktop-directquery-troubleshoot.md
       - name: Troubleshoot your embedded application 
         href: ../developer/embedded/embedded-troubleshoot.md      
+      - name: Troubleshoot developing custom visuals 
+        href: ../developer/visuals/power-bi-custom-visuals.md             
     - name: Gateways
       expanded: false
       items:

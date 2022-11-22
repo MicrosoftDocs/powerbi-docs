@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: overview
 ms.date: 06/21/2022
-LocalizationGroup: Premium 
+LocalizationGroup: Premium
 ---
 
 # Power BI Premium features
@@ -37,7 +37,6 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[Model size limit](service-premium-gen2-what-is.md#memory-allocation) |Available memory is set to:</br></br>*Premium Gen2* - The limit of memory footprint of a single Power BI item; see the column *Max memory per dataset* in the [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus) table</br></br>*Premium (original version)* - The cumulative consumption of memory of the capacity; see the column *RAM* in the table at the bottom of [Capacity nodes](service-premium-what-is.md#capacity-nodes)</br></br>*Premium Per User (PPU)* - See [Considerations and limitations](service-premium-per-user-faq.yml#considerations-and-limitations)</br></br>*Embedded* - See the column *Max memory per dataset* in the [SKU memory and computing power](../developer/embedded/embedded-capacity.md#sku-memory-and-computing-power) table|
 |[Multi-geo](../admin/service-admin-premium-multi-geo.md) |Deploy content to data centers in regions other than the home region of your tenant</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md), [Premium (original version)](service-premium-what-is.md), and [Embedded](../developer/embedded/embedded-analytics-power-bi.md)  |
 |On-demand loading capabilities for large models |Improve report load time by loading datasets to memory on demand |
-|[Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |Pixel-perfect reports |
 |[Power BI Report Server](./../report-server/get-started.md) |On-premises report server</br></br>Available for [Premium Gen2](service-premium-gen2-what-is.md) and [Premium (original version)](service-premium-what-is.md) |
 |Refresh rate |The ability to [refresh more than eight times a day](../connect-data/refresh-data.md#data-refresh)|
 |[Query caching](../connect-data/power-bi-query-caching.md) |Speed up reports by using local caching |
@@ -54,3 +53,4 @@ This article lists the main Power BI Premium features. Most of the features appl
 
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](service-premium-what-is.md)
+
