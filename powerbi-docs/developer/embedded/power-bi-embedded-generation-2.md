@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 01/02/2022
-ms.custom: intro-overview
+ms.date: 11/02/2022
+ms.custom: intro-overview, engagement-fy23
 ---
 
 # Power BI Embedded Generation 2
@@ -52,17 +52,9 @@ Embedded Gen 2 has the same [architecture improvements](../../enterprise/service
 
 ## Autoscaling in Embedded Gen2
 
-Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, customers can configure autoscale using these options:
-
-* [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
-
-* Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU*, *CPU Per Workload*, and *Overload*.
-
-* [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+See [Autoscale your capacity](azure-pbie-scale-capacity.md#autoscale-your-capacity) for a description of how to autoscale yuor Gen2 capacity.
 
 ## Considerations and limitations
-
-* Memory allocation settings for specific workloads don't apply to Embedded Gen2 capacities. For more information, see [Embedded Gen 2 memory enhancements](embedded-capacity.md#embedded-gen-2-memory-enhancements)
 
 * If you're using XMLA with Embedded Gen2, make sure you're using the most recent versions of the data modeling and management tools.
 

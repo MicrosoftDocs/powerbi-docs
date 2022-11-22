@@ -27,7 +27,7 @@ Even before you start typing, Q&A displays a new screen with suggestions to help
 - **Provide complex conditions** Show me sales where product category is Category 1 or Category 2
 - **Return a specific visual** Show me sales by product as pie chart
 - **Use complex aggregations** Show me median sales by product
-- **Sort results** Show me top 10 countries by sales ordered by country code
+- **Sort results** Show me top 10 countries/regions by sales ordered by country or region code
 - **Compare data** Show me date by total sales vs total cost
 - **View trends** Show me sales over time
 

@@ -34,6 +34,7 @@ Web Content Accessibility Guidelines (WCAG) help make web content accessible to 
 1. **Perceivable**. Information and user interface components must be presentable to users in ways they can perceive.
 2. **Operable**. User interface components and navigation must be operable.
 3. **Understandable**. Information and the operation of user interface must be understandable.
+4. **Robust**. Content can be interpreted by a wide range of user agents including assistive technologies.
 
 ### US Section 508
 
@@ -42,6 +43,10 @@ US Section 508 is a standard that requires governments and federal agencies to m
 ### EN 301 549
 
 EN 301 549 is the Harmonized European Standard for Accessibility requirements for ICT products and services.  
+
+### Conformance Documentation
+
+To find updated conformance reports, search for Power BI in the [Microsoft Accessibility Conformance Portal](https://www.microsoft.com/en-us/accessibility/conformance-reports)
 
 ## Next steps
 
