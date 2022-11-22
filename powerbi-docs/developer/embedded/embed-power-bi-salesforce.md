@@ -63,17 +63,8 @@ To embed Power BI content that uses the embed for your organization solution, fo
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
+* [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 
->[!div class="nextstepaction"]
->[Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
+* [Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
 
->[!div class="nextstepaction"]
->[Embed a Power BI report in an application for your organization](embed-organization-app.md)
-
->[!div class="nextstepaction"]
->[Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/)
-
->[!div class="nextstepaction"]
->[Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279)
+* [Power BI embedded analytics Client APIs](/javascript/api/overview/powerbi/)
