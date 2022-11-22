@@ -12,7 +12,7 @@ ms.date: 05/26/2021
 
 # View a paginated report in the Power BI service
 
-In this article, you learn about viewing a paginated report to the Power BI service. Paginated reports are reports created in Report Builder and uploaded to any  workspace in a Premium capacity. Look for the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-view-power-bi-service/premium-diamond.png) next to the workspace name. 
+In this article, you learn about viewing a paginated report to the Power BI service. Paginated reports are reports created in Report Builder and can be uploaded to any  workspace.
 
 Paginated reports have their own icon ![Paginated report icon](media/paginated-reports-view-power-bi-service/power-bi-paginated-report-icon.png).
 
