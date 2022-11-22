@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/26/2021
+ms.date: 11/22/2022
 ---
 
 # View a paginated report in the Power BI service
