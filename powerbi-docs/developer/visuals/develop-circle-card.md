@@ -40,7 +40,7 @@ In this section you'll create a project for the circle card visual.
 
 1. Open a new terminal in **VS Code** and navigate to the folder you want to create your project in.
 
-2. Enter the following command:
+2. Enter the following command in the Powershell terminal:
 
     ```PowerShell
     pbiviz new CircleCard
@@ -52,7 +52,16 @@ In this section you'll create a project for the circle card visual.
 
    For a detailed explanation of the function of each of these files, see [Power BI visual project structure](./visual-project-structure.md).
 
-4. Check the terminal window and confirm that you're in the circleCard directory. Start the circle card visual. 
+4. Check the terminal window and confirm that you're in the circleCard directory. Install the [Power BI visual tools dependencies](https://www.npmjs.com/package/powerbi-visuals-tools).
+
+   ```powershell
+   npm install
+   ```
+
+   >[!TIP]
+   > To see which dependencies have been installed in your visual, check the *package.json* file.
+
+5. Start the circle card visual.
 
     ```powershell
     pbiviz start
@@ -290,7 +299,7 @@ export class Visual implements IVisual {
 
 ### Modify the capabilities file
 
-The circle card visual is a very simple visual that doesn't create any objects in the Format pane. Therefore, you can safely remove this section for easier readability.
+The circle card visual is a very simple visual that doesn't create any objects in the Format pane. Therefore, you can safely remove the *objects* section of the file.
 
 1. Open your project in VS Code (**File** > **Open Folder**).
 
@@ -308,9 +317,9 @@ The circle card visual is a very simple visual that doesn't create any objects i
 
 Stop the visual from running and restart it.
 
-1. In the **PowerShell** window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+1. In the **PowerShell** window where you started the visual, enter Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
 
-2. In **PowerShell**, start the visual.
+2. In **PowerShell**, start the visual again.
 
     ```powershell
     pbiviz start
@@ -380,7 +389,7 @@ Modify the **capabilities.json** file to define the data role, objects, and data
 
     1. Open the **capabilities.json** file in VS Code.
 
-    2. Remove all the content inside the *dataViewMappings* array (lines 10-30).
+    2. Remove all the content inside the *dataViewMappings* array.
 
     3. Insert the following code to the *dataViewMappings* array.
 
