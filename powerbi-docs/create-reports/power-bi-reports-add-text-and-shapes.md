@@ -47,7 +47,7 @@ This procedure uses the Retail Analysis sample available in the Power BI service
 
 3. Type your text into the text box. You can then set the format font style, including color, size, and subscript or superscript, and text alignment, including bulleted lists.
 
-4. With the text box still selected, add additional formatting in the **Format text box** pane. In this example, the text has a theme color, and added bullets and superscript. You can also specify an exact size and position for a text box.  
+4. With the text box still selected, add other formatting in the **Format text box** pane. In this example, the text has a theme color, and added bullets and superscript. You can also specify an exact size and position for a text box.  
 
    ![Screenshot of the text box with example font, font size, and alignment.](media/power-bi-reports-add-text-and-shapes/power-bi-formatting.png)
 
