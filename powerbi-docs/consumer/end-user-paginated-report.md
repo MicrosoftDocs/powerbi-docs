@@ -98,7 +98,7 @@ When you subscribe to a paginated report, Power BI sends you an email with the r
 
 - A paginated report can appear blank until you select parameters and choose **View report**.
 
-- If you don't have any paginated reports, check out these [sample paginated reports](../paginated-reports/paginated-reports-samples) that you can import to your workspace. 
+- If you don't have any paginated reports, check out these [sample paginated reports](../paginated-reports/paginated-reports-samples.md) that you can import to your workspace. 
 
 ## Next steps
 - [Power BI reports](end-user-reports.md)
