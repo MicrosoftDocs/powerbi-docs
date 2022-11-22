@@ -89,7 +89,7 @@ For both Power BI Desktop and Power BI service, [certain Power BI visualizations
    # [Power BI service](#tab/powerbi-service)
    In Power BI service, you can edit interactions by clicking on the **Visual interactions** dropdown menu and setting **Edit interactions** and **Drilling filters other visuals** to **On**.
 
-   ![Screenshot of Power BI service, showing Drilling filters other visuals set to On.](media/service-reports-visual-interactions/drilling-filters-other-visuals.png)
+   ![Screenshot of Power BI service that shows Drilling filters other visuals set to On.](media/service-reports-visual-interactions/drilling-filters-other-visuals.png)
 
 1. If the behavior you see isn't what you'd prefer, you can change the interactions [as described previously](#change-the-interaction-behavior).
 
