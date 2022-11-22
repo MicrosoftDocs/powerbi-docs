@@ -107,11 +107,11 @@ sections:
           On the left side of the utilization report, a bar chart visual displays utilization information between workspaces for the time span of the report. The bar chart visual can be used for chargebacks, providing each workspace represents a different business unit, cost center, or other entity to which chargebacks can apply.
 
       - question: |
-          How does Power BI report usage analysis? 
+          How does Power BI report CPU usage? 
         answer: |
           When you buy a capacity, you get a predefined number of v-cores, as listed in [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus). Your total v-cores are split into an equal number of frontend and backend cores.
           
-          * **Frontend v-cores** - Support the web service, APIs, scheduling, user rights management and so forth. Frontend v-cores are used for service delivery and are assigned to a capacity pool. Power BI doesn't calculate CPU usage or overload based on these cores.
+          * **Frontend v-cores** - Support the web service, APIs, scheduling, user rights management and so forth, and are assigned to a capacity pool. Power BI doesn't calculate CPU usage or overload based on these cores.
           
           * **Backend v-cores** - Used by Power BI [workloads](service-admin-premium-workloads.md) and include both interactive and background operations.
           
