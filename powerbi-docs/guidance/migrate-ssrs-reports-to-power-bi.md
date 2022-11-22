@@ -77,9 +77,9 @@ Over time, the tool may be improved by Microsoft. The community is encouraged to
 
 After verifying that your organization meets the pre-requisites, you're ready to start the _Pre-migration_ stage. This stage has three phases:
 
-1. Discover
-1. Assess
-1. Prepare
+1. [Discover](#discover)
+1. [Assess](#assess)
+1. [Prepare](#prepare)
 
 ### Discover
 
@@ -95,13 +95,13 @@ Only .rdl reports can be migrated from your SSRS servers to Power BI. Each migra
 
 The following SSRS item types, however, can't be migrated to Power BI:
 
-- Shared data sources and shared datasets: The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets, provided that they're using supported data sources.
-- Resources such as image files
-- Linked reports migrate, whether the *parent* report that links to them is selected for migration or no. In the Power BI service, they're regular .rdl reports. 
-- KPIs (SSRS 2016, or later—Enterprise Edition only)
-- Mobile reports (SSRS 2016, or later—Enterprise Edition only)
-- Report models (deprecated)
-- Report parts (deprecated)
+- **Shared data sources** and **shared datasets**: The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets, provided that they're using supported data sources.
+- **Resources** such as image files
+- **Linked reports** migrate, whether the *parent* report that links to them is selected for migration or no. In the Power BI service, they're regular .rdl reports. 
+- **KPIs**: SSRS 2016, or later—Enterprise Edition only
+- **Mobile reports**: SSRS 2016, or later—Enterprise Edition only
+- **Report models**: deprecated
+- **Report parts**: deprecated
 
 If your .rdl reports rely on features [not yet supported by Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](/power-bi/consumer/end-user-reports). Even if your .rdl reports can migrate, we recommend you consider modernizing them as Power BI reports, when it makes sense.
 
