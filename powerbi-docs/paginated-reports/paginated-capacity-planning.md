@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/20/2022
+ms.date: 11/22/2022
 LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
@@ -46,7 +46,7 @@ To test paginated reports on different capacities, we executed three different t
 
 Our analysis for Power BI Premium shows that the number of concurrent users at any given time, including daily peak times, doesn't tend to exceed five percent of the total user base.  
 
-Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](./../enterprise/service-premium-smoothing.md#how-to-detect-overload).
+Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](./../enterprise/service-premium-smoothing.md#how-to-detect-overload). When your capacity is overloaded, throttling will occur on your capacity.
 
 | Workload   | P1 SKU      | P2 SKU      |
 |------------|-------------|-------------|
