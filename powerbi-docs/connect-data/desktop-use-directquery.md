@@ -1,13 +1,13 @@
 ---
 title: Use DirectQuery in Power BI Desktop
-description: Use DirectQuery or live connections in Power BI Desktop.
+description: See how to create and publish reports that use DirectQuery data sources, and some benefits, limitations, and recommendations.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/18/2022
+ms.date: 11/23/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -17,11 +17,11 @@ When you connect to any data source with Power BI Desktop, you can import a copy
 
 Here are the differences between using import and DirectQuery connectivity modes:
 
-- **Import**: A copy of the data from the selected tables and columns imports into Power BI Desktop. As you create or interact with visualizations, Power BI Desktop uses the imported data. To see underlying data changes after the initial import or the most recent refresh, you must refresh the data and import the full dataset again.
+- **Import**: A copy of the data from the selected tables and columns imports into Power BI Desktop. As you create or interact with visualizations, Power BI Desktop uses the imported data. To see underlying data changes after the initial import or the most recent refresh, you must import the full dataset again to refresh the data.
 
-- **DirectQuery**: No data imports into Power BI Desktop. For relational sources, the selected tables and columns appear in the Power BI Desktop **Fields** list. For multidimensional sources like SAP Business Warehouse (SAP BW), the dimensions and measures of the selected cube appear in the **Fields** list. As you create or interact with visualizations, Power BI Desktop queries the underlying data source, so you're always viewing current data.
+- **DirectQuery**: No data imports into Power BI Desktop. For relational sources, you can select tables and columns to appear in the Power BI Desktop **Fields** list. For multidimensional sources like SAP Business Warehouse (SAP BW), the dimensions and measures of the selected cube appear in the **Fields** list. As you create or interact with visualizations, Power BI Desktop queries the underlying data source, so you're always viewing current data.
 
-  With DirectQuery, when you create or interact with a visualization, you must query the underlying source. The time that's needed to refresh the visualization depends on the performance of the underlying data source. If the data needed to service the request was recently requested, Power BI Desktop uses the recent data to reduce the time required to show the visualization. Selecting **Refresh** from the **Home** ribbon refreshes all visualizations with current data.
+With DirectQuery, when you create or interact with a visualization, you must query the underlying source. The time that's needed to refresh the visualization depends on the performance of the underlying data source. If the data needed to service the request was recently requested, Power BI Desktop uses the recent data to reduce the time required to show the visualization. Selecting **Refresh** from the **Home** ribbon refreshes all visualizations with current data.
 
 Many data modeling and data transformations are available when using DirectQuery, although with some performance-based limitations. For more information about DirectQuery benefits, limitations, and recommendations, see [DirectQuery in Power BI](desktop-directquery-about.md).
 
@@ -31,7 +31,7 @@ Some benefits of using DirectQuery include:
 
 - DirectQuery lets you build visualizations over very large datasets, where it would be unfeasible to import all the data with pre-aggregation.
 
-- DirectQuery reports always use current data. Underlying data changes require you to refresh the data to see the changes, and for large reports, displaying current data could require unfeasibly large data reimports. 
+- DirectQuery reports always use current data. Seeing underlying data changes requires you to refresh the data, and reimporting large datasets to refresh data could be unfeasible.
 
 - The 1-GB dataset limitation doesn't apply with DirectQuery.
 
@@ -47,11 +47,11 @@ To connect to a data source with DirectQuery:
 
 ## Publish to the Power BI service
 
-You can publish reports you created using DirectQuery to the Power BI service, but you need to take extra steps for Power BI service to open the reports.
+You can publish DirectQuery reports to the Power BI service, but you need to take extra steps for the Power BI service to open the reports.
 
-- To connect to DirectQuery data sources other than Azure SQL Database, Azure Synapse Analytics (formerly SQL Data Warehouse), Amazon Redshift, and Snowflake Data Warehouse, [install an on-premises data gateway](service-gateway-onprem.md) and register the data source.
+- To connect the Power BI service to DirectQuery data sources other than Azure SQL Database, Azure Synapse Analytics (formerly SQL Data Warehouse), Amazon Redshift, and Snowflake Data Warehouse, [install an on-premises data gateway](service-gateway-onprem.md) and register the data source.
 
-- If you used cloud sources like Azure SQL Database, Azure Synapse, Amazon Redshift, or Snowflake Data Warehouse with DirectQuery, you don't need an on-premises data gateway. You must provide credentials before the Power BI service can show the published report. Otherwise, an error occurs when you try to open a published report or explore a dataset created with a DirectQuery connection.
+- If you used DirectQuery with cloud sources like Azure SQL Database, Azure Synapse, Amazon Redshift, or Snowflake Data Warehouse, you don't need an on-premises data gateway, but must provide credentials for the Power BI service to open the published report. Without credentials, an error occurs when you try to open a published report or explore a dataset created with a DirectQuery connection.
 
 To provide credentials for opening the report and refreshing the data:
 
@@ -64,19 +64,17 @@ To provide credentials for opening the report and refreshing the data:
 1. Under **Data source connection**, provide the credentials to connect to the data source.
 
 > [!NOTE]
-> If you used DirectQuery with an Azure SQL Database that has a private IP address, you need an on-premises gateway.
+> If you used DirectQuery with an Azure SQL Database that has a private IP address, you need to use an on-premises gateway.
 
 ## Considerations and limitations
 
-Some Power BI Desktop features aren't supported in DirectQuery mode, or they have limitations. Some capabilities in the Power BI service, such as quick insights, also aren't available for datasets that use DirectQuery. When deciding whether to use DirectQuery, consider these feature limitations.
-
-Consider the following factors when you use DirectQuery:
+Some Power BI Desktop features aren't supported in DirectQuery mode, or they have limitations. Some capabilities in the Power BI service, such as quick insights, also aren't available for datasets that use DirectQuery. When you decide whether to use DirectQuery, consider these feature limitations. Also consider the following factors:
 
 ### Performance and load considerations
 
 DirectQuery sends all requests to the source database, so the required refresh time for visuals depends on how long the underlying source takes to return results. Five seconds or less is the recommended response time for receiving requested data for visuals. Refresh times over 30 seconds produce an unacceptably poor experience for users consuming the report. A query that takes longer than four minutes times out in the Power BI service, and the user receives an error.
 
-Load on the source database also depends on the number of Power BI users who consume the published report, especially if the report uses row-level security (RLS). The refresh of a non-RLS dashboard tile shared by multiple users sends a single query to the database, but refreshing a dashboard tile that uses RLS requires one query per user. The added queries significantly increase load and potentially affect performance.
+Load on the source database also depends on the number of Power BI users who consume the published report, especially if the report uses row-level security (RLS). The refresh of a non-RLS dashboard tile shared by multiple users sends a single query to the database, but refreshing a dashboard tile that uses RLS requires one query per user. The increased queries significantly increase load and potentially affect performance.
 
 ### One-million row limit
 
