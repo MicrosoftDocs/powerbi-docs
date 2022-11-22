@@ -74,7 +74,7 @@ constructor(options: VisualConstructorOptions)
   * `locale`, returns a locale string, see [Localization](./localization.md)
   * `instanceId`, returns a string to identify the current visual instance
   * `colorPalette`, returns the colorPalette required to apply colors to your data
-  * `fetchMoreData`, supports using more data than the standard limit (1K rows)
+  * `fetchMoreData`, supports using more data than the standard limit (1K rows), see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
 
  ```typescript

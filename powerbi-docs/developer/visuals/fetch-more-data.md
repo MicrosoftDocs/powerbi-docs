@@ -113,7 +113,7 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-> To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. When this limit is reached, `fetchMoreData()` returns `false`.
+> To avoid client memory constraints, Power BI limits the fetched data total to 100 MB. When this limit is reached, `fetchMoreData()` returns `false`.
 
 ### Incremental updates mode
 
@@ -187,6 +187,9 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 >
 > N can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
+The visual keeps the dataview passed to it so it can access the data without communicating with PowerBI.  
+To refresh the data and return to the beginning, the visual can call the `persistProperties()` API.
+
 ## Customized data reduction
 
 Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
@@ -256,8 +259,5 @@ The data reduction information will appear under *visual* in the format pane.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Data view mappings](dataview-mappings.md)
-
-> [!div class="nextstepaction"]
-> [DataViewUtils](utils-dataview.md)
+* [Data view mappings](dataview-mappings.md)
+* [DataViewUtils](utils-dataview.md)
