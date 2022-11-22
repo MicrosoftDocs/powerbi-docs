@@ -109,7 +109,11 @@ sections:
       - question: |
           How does Power BI report usage analysis? 
         answer: |
-          When you buy a capacity, you get a predefined number of v-cores, as listed in [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus). Your total v-cores correlate to the amount of CPU your capacity has. Frontend cores support the web service, APIs, scheduling, user rights management and so forth. Frontend v-cores are used for service delivery and are assigned to a capacity pool. Power BI doesn't calculate CPU usage or overload based on these cores. Backend v-cores are used by Power BI [workloads](service-admin-premium-workloads.md) and include both interactive and background operations.
+          When you buy a capacity, you get a predefined number of v-cores, as listed in [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus). Your total v-cores are split into an equal number of frontend and backend cores.
+          
+          * **Frontend v-cores** - Support the web service, APIs, scheduling, user rights management and so forth. Frontend v-cores are used for service delivery and are assigned to a capacity pool. Power BI doesn't calculate CPU usage or overload based on these cores.
+          
+          * **Backend v-cores** - Used by Power BI [workloads](service-admin-premium-workloads.md) and include both interactive and background operations.
           
           By reporting your capacity's CPU usage levels, the [Power BI Premium Utilization and Metrics](service-premium-gen2-metrics-app.md) app helps you understand how well your capacity is performing. To provide a simple way of measuring your capacity's performance, the app reports CPU usage for your total amount of v-cores. The app does this by doubling the CPU consumption reported from the backend v-cores. Power BI makes throttling and autoscale decisions based on the data that's displayed in the app.      
           
