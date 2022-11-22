@@ -53,7 +53,7 @@ Compared to paginated reports, Power BI reports are much more interactive. Power
 
 ## Interact with a paginated report
 
-The way you interact with a paginated report is different from other reports. You can do things like print, bookmark, export, and comment, but there is less interactivity. Often, paginated reports require input from you to populate the report canvas.  Other times the report displays default data and you can enter parameters to see different data.
+The way you interact with a paginated report is different from other reports. You can do things like print, bookmark, export, and comment, but there's less interactivity. Often, paginated reports require input from you to populate the report canvas.  Other times the report displays default data and you can enter parameters to see different data.
 
 ### Print a paginated report
 
@@ -83,7 +83,7 @@ Some paginated reports have many pages.  Use the page controls to navigate throu
 ![Screenshot showing page controls.](./media/end-user-paginated-report/power-bi-page-control.png)
 
 ### Export the paginated report
-You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep their formatting. 
+You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When you export, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep their formatting. 
 
 ![Screenshot showing the formats for exporting a paginated report.](./media/end-user-paginated-report/power-bi-export-menu.png)
 
