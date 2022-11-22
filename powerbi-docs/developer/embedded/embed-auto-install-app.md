@@ -22,7 +22,7 @@ If a user has access to an app that isn't installed, and the user tries to embed
 
 ## Embedding for Power BI users (User owns data)
 
-To allow the automatic installation of apps for your users, add the *Create APIs* permission to your application when you're [registering your application](register-app.md#register-an-azure-ad-app). If you've already registered your app, add the Create APIs permission by [changing your application's permissions](/power-bi/developer/embedded/change-permissions).
+To allow the automatic installation of apps for your users, add the *Create APIs* permission to your application when you're [registering your application](register-app.md#step-2---register-your-application). If you've already registered your app, add the Create APIs permission by [changing your application's permissions](/power-bi/developer/embedded/change-permissions).
 
 :::image type="content" source="media/embed-auto-install-app/register-app-create-content.png" alt-text="Screenshot of the Power BI embedding setup tool, which shows the selected Create APIs option.":::
 
