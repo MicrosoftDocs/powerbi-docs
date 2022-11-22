@@ -20,7 +20,7 @@ To embed content from an app, the user must have [access to the app](../../colla
 
 If a user has access to an app that isn't installed, and the user tries to embed app content, the embedding will fail. Avoid this problem by allowing automatic installation of the app upon embedding content. Allowing automatic installation means if the app the user tries to embed content from isn't installed, then the app is automatically installed for the user. Automatic app installation results in a smooth experience for the user.
 
-## Embedding for Power BI users (user-owned data)
+## Embedding for Power BI users (User owns data)
 
 To allow the automatic installation of apps for your users, add the *Create APIs* permission to your application when you're [registering your application](register-app.md#register-an-azure-ad-app). If you've already registered your app, add the Create APIs permission by [changing your application's permissions](/power-bi/developer/embedded/change-permissions).
 
