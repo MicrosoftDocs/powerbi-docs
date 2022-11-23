@@ -35,10 +35,6 @@
       href: service-admin-licensing-organization.md
     - name: View and manage user licenses
       href: service-admin-manage-licenses.md      
-    - name: Power BI for US Government
-      href: service-govus-overview.md
-    - name: Enroll a US Government organization
-      href: service-govus-signup.md
     - name: Disable self-service sign-up
       href: service-admin-disable-self-service.md
     - name: Sign up with a Microsoft 365 Trial
@@ -49,6 +45,17 @@
       href: service-admin-alternate-email-address-for-power-bi.md
     - name: Closing your account
       href: service-admin-closing-your-account.md      
+  - name: Power BI sovereign clouds
+    expanded: false
+    items:
+    - name: Power BI for US Government
+      href: service-govus-overview.md
+    - name: Enroll a US Government organization
+      href: service-govus-signup.md
+    - name: Power BI in China
+      href: regions-power-bi-china-cloud.md
+    - name: Move between regions
+      href: ../admin/service-admin-region-move.md
   - name: Premium
     expanded: false
     items:

@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/03/2022
+ms.date: 11/17/2022
 ms.custom: intro-migration
 ---
 
@@ -295,11 +295,16 @@ To identify the user, Power BI utilizes a unique name claim in Azure AD while AA
 
 [Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out) isn't supported by Power BI Premium.
 
+## Migration feature
+
+The Microsoft Azure Analysis Services to Microsoft Power BI Premium migration feature in Power BI migrates as AAS database to a dataset in Power BI Premium, Power BI Premium Per User, or Power BI Embedded workspace. For more information, see [Migrate Azure Analysis Services to Power BI](/power-bi/enterprise/aas-pbi-migration-overview).
+
 ## Next steps
 
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md)
+- [Migrate Azure Analysis Services to Power BI](/power-bi/enterprise/aas-pbi-migration-overview)
 - Questions? [Try asking the Power BI community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
 
