@@ -1,10 +1,9 @@
 ---
 title: Create custom Power BI visuals without data binding
 description: Learn how to create custom visuals for Power BI without data roles by using the No data binding feature.
-author: Demonkratiy
-ms.author: v-asemenov
-ms.reviewer: monaberdugo
-manager: mgolan
+author: mberdugo
+ms.author: monaberdugo
+ms.reviewer: v-asemenov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
@@ -23,11 +22,17 @@ The `dataRoles` property of the [capabilities model](capabilities.md) allows you
 
 Using the `dataRoles` capabilities property, you can render a visual and use the `update` method to change the format settings. You can change settings even if the data buckets are empty, or if your visual doesn't use any data roles.
 
-The following illustrations show two examples of a Power BI visual. The first graphic requires binding data. There are no data roles, or the data wells are empty, so the formatting settings are disabled.
+The following tabs show two examples of a Power BI visual. One visual requires binding data, and the other uses the *no data roles* feature and doesn't require binding data.
+
+## [Binding data required](#tab/NoDataroles)
+
+When binding data is required, the formatting settings are disabled if there are no data roles or the data wells are empty.
 
 :::image type="content" source="media/no-dataroles-support/no-dataroles-1.png" alt-text="Screenshot of a Power BI visual that shows empty data and inactive visual settings in the Visualizations pane.":::
 
-The second graphic uses the No data binding feature. There are no data roles, or the data wells are empty, but the formatting settings are enabled.
+## [Binding data not required](#tab/NoDatarolesSupport)
+
+With the *no data binding* feature, the formatting settings are enabled even if there are no data roles or the data wells are empty.
 
 :::image type="content" source="media/no-dataroles-support/no-dataroles-2.png" alt-text="Screenshot of a Power BI visual that shows empty data and active format settings in the Visualizations pane.":::
 
@@ -36,7 +41,7 @@ The second graphic uses the No data binding feature. There are no data roles, or
 ## How to create a visual that doesn't require data binding
 
 > [!NOTE]
-> This feature is available from version 3.6.0 of the [powerbi-visuals-api](changelog.md#api-v360) and above.
+> This feature is available from [API version 3.6.0](changelog.md#api-v360) and above.
 
 To enable the No data binding feature, set the following two parameters in the *capabilities.json* file to `true`.
 
@@ -53,8 +58,5 @@ To enable the No data binding feature, set the following two parameters in the *
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Using capabilities](capabilities.md)
-
-> [!div class="nextstepaction"]
-> [Add a landing page](landing-page.md)
+* [Using capabilities](capabilities.md)
+* [Add a landing page](landing-page.md)
