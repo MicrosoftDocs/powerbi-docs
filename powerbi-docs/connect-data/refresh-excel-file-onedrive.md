@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/18/2022
+ms.date: 11/22/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -25,7 +25,7 @@ You can refresh the dataset in the Power BI service. When you manually refresh o
 
 ## What’s supported?
 
-In Power BI, **Refresh Now** and **Schedule Refresh** are supported for datasets created from Power BI Desktop files imported from a local drive where Get data/Power Query Editor is used to connect to and load data from any of the following data sources:  
+Power BI supports **Refresh Now** and **Schedule Refresh** for datasets you create from Power BI Desktop files imported from a local drive. Whereas, you can use Get data and Power Query Editor to connect to and load data from any of the following data sources:  
 
 ### Power BI Gateway - Personal
 
@@ -40,19 +40,19 @@ In Power BI, **Refresh Now** and **Schedule Refresh** are supported for datasets
 >
 >
 
-## Difference between OneDrive or OneDrive for Business
+## What's the difference between OneDrive or OneDrive for Business?
 
-If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into your accounts.
+If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep files you want to import in OneDrive for Business. Here’s why: You likely use two different accounts to sign into your accounts.
 
-Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you'll likely sign in with a different [Microsoft account](https://account.microsoft.com).
+In Power BI, connecting to OneDrive for Business is typically seamless because the same account you use to sign into Power BI is often the same account you use to sign into OneDrive for Business. But, with personal OneDrive, you'll likely sign in with a different [Microsoft account](https://account.microsoft.com).
 
 When you sign in with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
 
-![Keep me signed in check box](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
+![Screenshot showing the Keep me signed in check box.](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
 
 If your Microsoft account credentials have changed, edits to your file on OneDrive can't be synchronized with the dataset or reports in Power BI. You’ll need to reconnect and import the file again from your personal OneDrive.
 
-## Options for connecting to Excel file
+## Options for connecting to an Excel file
 
 When you connect to an Excel workbook in OneDrive for Business, or SharePoint Online, you have two options for getting your workbook into Power BI.
 
@@ -66,38 +66,40 @@ When you set up a refresh schedule this way, the only difference is refreshed da
 
 ## How do I make sure data is loaded to the Excel data model?
 
-When you use Power Query (**Get & Transform** in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the **Add this data to the Data Model** option in the **Load To** dialog box.
+When you use Power Query (**Get & Transform Data** in Excel 2016) to connect to a data source, you have several options of where to load the data. To ensure that you load data into the data model, you must select the **Add this data to the Data Model** option in the **Load To** dialog box.
 
 > [!NOTE]
 > The images here show Excel 2016.
 >
 >
 
-In **Navigator**, select **Load To…**  
+1. In Excel, select **Data** > **Get Data**  and pick where you want your data to come from. In this example, the data loads from an Excel workbook.
+1. Select your data file and choose **Import**.
+1. In **Navigator**, select your file and choose **Load To…** .
 
-![Load To... command](media/refresh-excel-file-onedrive/refresh_loadtodm_1.png)
+   ![Screenshot that shows the Load To... command in Excel.](media/refresh-excel-file-onedrive/refresh_loadtodm_1.png)
 
-Or, If you select **Edit** in **Navigator**, you’ll open the Query Editor. There you can select **Close & Load To….**  
+1. Or, in Excel, select **Data** > **Get Data** > **Launch Power Query Editor** to open the Query Editor. There you can select **Close & Load To….**  
 
-![Close & Load To... command](media/refresh-excel-file-onedrive/refresh_loadtodm_2.png)
+   ![Screenshot that shows the Close & Load To... command in Excel.](media/refresh-excel-file-onedrive/refresh_loadtodm_2.png)
 
-Then in **Load To**, make sure you select **Add this data to the Data Model**.  
+1. Then in **Import Data**, be sure to select **Add this data to the Data Model**.  
 
-![Add this to the Data Model check box](media/refresh-excel-file-onedrive/refresh_loadtodm_3.png)
+![Screenshot that shows the Add this to the Data Model check box.](media/refresh-excel-file-onedrive/refresh_loadtodm_3.png)
 
 ### What if I use Get External Data in Power Pivot?
 
-No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data is automatically loaded to the data model.
+No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data automatically loads to the data model.
 
 ## How do I schedule refresh?
 
-When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data, then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data, then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service also update.
 
 For details on how to set up scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
 ## When things go wrong
 
-When things go wrong, it’s usually because Power BI can’t sign into data sources. Or it's because the dataset connects to an on-premises data source and the gateway is offline. Be sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to sign into your data sources again in Data Source Credentials.
+When things go wrong, it’s usually because Power BI can’t sign into data sources. Or it's because the dataset connects to an on-premises data source and the gateway is offline. Be sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI is signed out from a data source, be sure to sign into your data sources again in Data Source Credentials.
 
 Be sure to leave the **Send refresh failure notification email to me** selected. You’ll want to know right away if a scheduled refresh fails.
 
@@ -107,9 +109,9 @@ Refresh isn't supported for OData feeds connected to and queried from Power Pivo
 
 ## Troubleshooting
 
-Sometimes refreshing data might not go as expected. Typically, a problem with refreshing is an issue with the data gateway. Take a look at the following gateway troubleshooting articles for tools, tips, and known issues.
+Sometimes refreshing data might not go as expected. Typically, problems with refreshing are an issue with the data gateway. Take a look at the following troubleshooting gateway articles for tools, tips, and known issues.
 
-- [Troubleshoot the On-premises data gateway](service-gateway-onprem-tshoot.md)
-- [Troubleshoot the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
+* [Troubleshoot the on-premises data gateway](service-gateway-onprem-tshoot.md)
+* [Troubleshoot the Power BI gateway - personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
