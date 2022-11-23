@@ -8,11 +8,11 @@ ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 08/26/2022
+LocalizationGroup: Data from files
 searchScope:
   - create reports
   - datamarts
   - Power BI
-LocalizationGroup: Data from files
 ---
 
 # Create reports using datamarts
