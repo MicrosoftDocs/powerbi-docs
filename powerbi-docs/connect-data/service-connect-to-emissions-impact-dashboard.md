@@ -133,7 +133,7 @@ Follow the steps below to find your company's billing account ID, or ask your or
 
 **I’m receiving an error at the time of connecting my data with the dashboard. What can I do?**
 
-First, check Azure Cost Management and verify that you have Admin privileges. If you don’t, request this access from your administrator. Next, ensure you’re using the correct billing account ID orenrollment number.
+First, check Azure Cost Management and verify that you have Admin privileges. If you don’t, request this access from your administrator. Next, ensure you’re using the correct billing account ID or enrollment number.
 
 **I entered my enrollment number/billing account ID, but my company data isn’t loading. What’s the issue?**
 
