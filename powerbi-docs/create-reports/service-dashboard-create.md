@@ -45,9 +45,11 @@ In this procedure, you open one of the Power BI sample datasets available from t
 1. In the nav pane, select, **Learning center**.
 1. Select **Regional Sales Sample** from the carousel.
 
-    picture of Regional Sales Sample in the carousel.
+   [![Screenshot of Power BI Learning Center carousel, highlighting the Regional Sales Sample.](media/service-dashboard-create/power-bi-regional-sales-sample-in-carousel.png)](media/service-dashboard-create/power-bi-regional-sales-sample-in-carousel.png#lightbox)
 
 1. The Regional Sales Sample opens in Reading view in the Power BI service.
+
+   [![Screenshot of the regional sales sample.](media/service-dashboard-create/power-bi-regional-sales-sample.png)](media/service-dashboard-create/power-bi-regional-sales-sample.png#lightbox)
 
 ## Pin tiles to a dashboard
 
