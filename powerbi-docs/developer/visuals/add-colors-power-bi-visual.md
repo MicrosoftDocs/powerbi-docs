@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/09/2022
+ms.date: 11/10/2022
 ---
 
 # Add colors to your Power BI visuals
