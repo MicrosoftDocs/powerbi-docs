@@ -30,7 +30,7 @@ Open the Power BI service with an email link or in a browser.
 
 - When you receive an email from a colleague with a link to a dashboard or report, select **Open this report** or **Open this dashboard** to open the Power BI service.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="Screenshot shows an email which contains a link to a report.":::
+    :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="Screenshot shows an email that contains a link to a report.":::
 
 - To open the Power BI service in a browser, enter **app.powerbi.com** into the address bar.
 
@@ -64,7 +64,7 @@ On the Home page, you can see all the content that you have permission to use. T
 
 :::image type="content" source="media/end-user-sign-in/power-bi-recent.png" alt-text="Screenshot showing a report in the Recent section on the Home page.":::
 
-Reports shared with you are also stored under **Shared with me** on the **Browse** page.
+Reports shared with you're also stored under **Shared with me** on the **Browse** page.
 
 If you don't want Power BI to open to Home, you can [set a featured dashboard or report](/power-bi/consumer/end-user-dashboards) to open instead.
 
