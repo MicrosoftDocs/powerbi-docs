@@ -14,7 +14,7 @@ ms.date: 11/09/2022
 
 This article describes how to add colors to your custom visuals and how to handle data points for a visual that has defined colors.
 
-[`IVisualHost`](visual-api.md#visualconstructoroptions), the collection of properties and services that interact with the visual host, can use colors in custom visuals with the `colorPalette` service. The example code in this article modifies the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart). For the SampleBarChart visual source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
+[`IVisualHost`](visual-api.md#visualconstructoroptions), the collection of properties and services that interact with the visual host, can define colors in custom visuals with the `colorPalette` service. The example code in this article modifies the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart). For the SampleBarChart visual source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
 To get started creating visuals, see [Developing a a Power BI circle card visual](develop-circle-card.md).
 
@@ -86,7 +86,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 Then, apply the data from `dataPoints` to the [d3](https://d3js.org/)-selection `barSelection` inside the `update` method:
 
 ```typescript
-// This code is actually for d3 v5
+// This code is for d3 v5
 // in d3 v5 for this case we should use merge() after enter() and apply changes on barSelectionMerged
 this.barSelection = this.barContainer
     .selectAll('.bar')
@@ -115,8 +115,5 @@ this.barSelection
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Capabilities and properties of Power BI visuals](capabilities.md).
-
-> [!div class="nextstepaction"]
-> [How to debug Power BI visuals](visuals-how-to-debug.md)
+* [Capabilities and properties of Power BI visuals](capabilities.md).
+* [How to debug Power BI visuals](visuals-how-to-debug.md)
