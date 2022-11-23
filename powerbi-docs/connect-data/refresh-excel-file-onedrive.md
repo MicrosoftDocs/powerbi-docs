@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/22/2022
+ms.date: 11/23/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -29,8 +29,8 @@ Power BI supports **Refresh Now** and **Schedule Refresh** for datasets you crea
 
 ### Power BI Gateway - Personal
 
-* All online data sources shown in Power BI Desktop’s Get data and Power Query Editor.
-* All on-premises data sources shown in Power BI Desktop’s Get data and Power Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+* All online data sources shown in Power BI Desktop’s Get Data and Power Query Editor.
+* All on-premises data sources shown in Power BI Desktop’s Get Data and Power Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
@@ -44,9 +44,9 @@ Power BI supports **Refresh Now** and **Schedule Refresh** for datasets you crea
 
 If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep files you want to import in OneDrive for Business. Here’s why: You likely use two different accounts to sign into your accounts.
 
-In Power BI, connecting to OneDrive for Business is typically seamless because the same account you use to sign into Power BI is often the same account you use to sign into OneDrive for Business. But, with personal OneDrive, you'll likely sign in with a different [Microsoft account](https://account.microsoft.com).
+In Power BI, connecting to OneDrive for Business is typically seamless because you likely use the same account to sign into Power BI as OneDrive for Business. But with personal OneDrive, it's more common to sign in with a different [Microsoft account](https://account.microsoft.com).
 
-When you sign in with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
+When you sign into OneDrive for Business with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
 
 ![Screenshot showing the Keep me signed in check box.](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
 
@@ -56,9 +56,9 @@ If your Microsoft account credentials have changed, edits to your file on OneDri
 
 When you connect to an Excel workbook in OneDrive for Business, or SharePoint Online, you have two options for getting your workbook into Power BI.
 
-[**Import Excel data into Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – When you import an Excel workbook from your OneDrive for Business, or SharePoint Online, it works as described above.
+[**Import Excel data into Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – When you import an Excel workbook from your OneDrive for Business, or SharePoint Online, it works as described previously.
 
-[**Connect, Manage, and View Excel in Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for Business, or SharePoint Online.
+[**Connect, Manage, and View Excel in Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for Business or SharePoint Online.
 
 When you connect to an Excel workbook this way, a dataset isn't created in Power BI. But the workbook appears in the Power BI service under Reports with an Excel icon next to the name. Unlike with Excel Online, when you connect to your workbook from Power BI, if your workbook has connections to external data sources that load data into the Excel data model, you can set up a refresh schedule.
 
@@ -66,26 +66,21 @@ When you set up a refresh schedule this way, the only difference is refreshed da
 
 ## How do I make sure data is loaded to the Excel data model?
 
-When you use Power Query (**Get & Transform Data** in Excel 2016) to connect to a data source, you have several options of where to load the data. To ensure that you load data into the data model, you must select the **Add this data to the Data Model** option in the **Load To** dialog box.
+When you use Power Query (**Get & Transform Data** in Excel 2016 and later) to connect to a data source, you have several options of where to load the data. To ensure that you load data into the data model, you must select the **Add this data to the Data Model** option in the **Import Data** dialog box.
 
-> [!NOTE]
-> The images here show Excel 2016.
->
->
-
-1. In Excel, select **Data** > **Get Data**  and pick where you want your data to come from. In this example, the data loads from an Excel workbook.
-1. Select your data file and choose **Import**.
+1. In Excel, select **Data** > **Get Data**  and pick where you want your data to come from. In this example, the data loads from an Excel workbook file.
+1. In the file browser window, locate and select your data file and then choose **Import**.
 1. In **Navigator**, select your file and choose **Load To…** .
 
-   ![Screenshot that shows the Load To... command in Excel.](media/refresh-excel-file-onedrive/refresh_loadtodm_1.png)
+      ![Screenshot that shows a file to select and import from the Navigator window.](media/refresh-excel-file-onedrive/select-and-import-data-file.png)
 
 1. Or, in Excel, select **Data** > **Get Data** > **Launch Power Query Editor** to open the Query Editor. There you can select **Close & Load To….**  
 
    ![Screenshot that shows the Close & Load To... command in Excel.](media/refresh-excel-file-onedrive/refresh_loadtodm_2.png)
 
-1. Then in **Import Data**, be sure to select **Add this data to the Data Model**.  
+1. Then, in **Import Data**, be sure to select **Add this data to the Data Model** and select **OK**.  
 
-![Screenshot that shows the Add this to the Data Model check box.](media/refresh-excel-file-onedrive/refresh_loadtodm_3.png)
+   ![Screenshot that shows the Add this to the Data Model check box.](media/refresh-excel-file-onedrive/refresh_loadtodm_3.png)
 
 ### What if I use Get External Data in Power Pivot?
 
@@ -93,9 +88,9 @@ No problem. Whenever you use Power Pivot to connect to and query data from an on
 
 ## How do I schedule refresh?
 
-When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data, then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service also update.
+When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data. It then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service also update.
 
-For details on how to set up scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
+For more information on how to set up scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
 ## When things go wrong
 
