@@ -27,9 +27,9 @@ In the Power BI service, you can apply sensitivity labels to reports, dashboards
 Requirements needed to apply sensitivity labels in the Power BI service:
 
 * You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you wish to label.
-* Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure.
+* Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
-* Meet all [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
+* All requirements were met. For more information, see [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
 
 When data protection is enabled on your tenant, sensitivity labels appear in the sensitivity column in the list view of dashboards, reports, datasets, and dataflows.
 
@@ -59,7 +59,7 @@ The following two images illustrate these steps on a dataset.
 
 Select **More options (...)** and then **Settings**.
 
-![Screenshot of a workspace with more and settings highlighted.](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-05.png)
+![Screenshot showing how to open dataset settings.](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-05.png)
 
 On the settings datasets tab, open the sensitivity label section, choose the desired sensitivity label, and select **Apply**.
 
@@ -73,9 +73,9 @@ On the settings datasets tab, open the sensitivity label section, choose the des
 To use sensitivity labels in Power BI Desktop:
 
 * You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md).
-* Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure.
+* Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
-* Meet all [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
+* All requirements were met. For more information, see [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
 * You must be signed in.
 
 Watch a short video on applying sensitivity labels and then try it out yourself.
@@ -90,7 +90,7 @@ To apply a sensitivity label on the file you're working on, select the sensitivi
 ![Screenshot of a portion of the Power BI Desktop menu with the sensitivity label menu expanded.](media/service-security-apply-data-sensitivity-labels/sensitivity-label-menu-desktop.png)
 
 > [!NOTE]
-> If the sensitivity button is greyed out, it might indicate that you don't have an appropriate license or that you don't belong to a security group with permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
+> If the sensitivity button is greyed out, it might indicate that you don't have an appropriate license or that you don't belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
 >
 > If a particular label you wish to change is greyed out, you might not have the correct [usage rights](service-security-sensitivity-label-change-enforcement.md) to change that label. If you need to change a sensitivity label and can't, either ask the person who applied the label in the first place to modify it, or contact the Microsoft 365/Office security administrator and request the necessary [usage rights](service-security-sensitivity-label-change-enforcement.md) for the label.
 
@@ -100,12 +100,12 @@ After you've applied the label, it will be visible in the status bar.
 
 ### Sensitivity labels when uploading or downloading .pbix files to/from the service
 
-* When you publish a .pbix file to the Power BI service from Desktop, or when you upload a .pbix file to the Power BI service directly using **Get data**, the .pbix file's label is applied to both the report and the dataset that are created in the service. If the .pbix file you're publishing or uploading replaces existing assets (that is, that have the same name as the .pbix file), a dialog will prompt you to choose whether to keep the labels on those assets or to have the .pbix file's label overwrite those labels. If the .pbix file is unlabeled, the label in the service is retained.
-* When you download a .pbix file from the Power BI service using **Download this file** and the report and dataset you're downloading have different sensitivity labels, the more restrictive label is applied to the .pbix file.
+* When you publish a .pbix file to the Power BI service from Desktop, or when you upload a .pbix file to the Power BI service directly using **Get data**, the .pbix file's label is applied to both the report and the dataset that are created in the service. If the .pbix file you're publishing or uploading replaces existing assets (that is, that have the same name as the .pbix file), a dialog will prompt you to choose whether to keep the labels on those assets or to have the .pbix file's label overwrite those labels. If the .pbix file is unlabeled, the labels in the service will be retained.
+* When you download a .pbix file from the Power BI service using **Download this file**, if the report and dataset being downloaded both have labels, and those labels are different, the label that will be applied to the .pbix file is the more restrictive of the two.
 
 ## Remove sensitivity labels
 
-You can remove sensitivity labels from both the service or Desktop.
+You can remove sensitivity labels in both the service and in Desktop.
 
 ### Service
 
