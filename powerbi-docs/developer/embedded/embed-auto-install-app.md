@@ -18,7 +18,7 @@ To embed content from an app, the user needs [access to the app](../../collabora
 
 ## Automatically install an app upon embedding content
 
-If you have access to an app that isn't installed, and try to embed app content, the embedding will fail. To avoid this problem, by allow automatic installation of the app upon embedding content. Allowing automatic installation means if the app the user tries to embed content from isn't installed, then the app is automatically installed for the user. Automatic app installation results in a smoother experience for the user.
+If you have access to an app that isn't installed, and try to embed app content, the embedding will fail. To avoid this problem, allow automatic installation of the app upon embedding content. Allowing automatic installation means if the app the user tries to embed content from isn't installed, then the app is automatically installed for the user. Automatic app installation results in a smoother experience for the user.
 
 ## Embedding for Power BI users (User owns data)
 

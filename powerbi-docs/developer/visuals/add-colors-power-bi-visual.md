@@ -61,7 +61,7 @@ public update(options: VisualUpdateOptions) {
 
 Next, specify `dataPoints`. In this example, each of the `dataPoints` has a defined value, category, and color property. `dataPoints` can also include other properties.
 
-In `SampleBarChart`, the `visualTransform` method is a part of the Bar Chart view model. Because the `visualTransform` method iterates through all the `dataPoints` calculations, it's the ideal place to assign colors, as in the following code:
+In `SampleBarChart`, the `visualTransform` method is a part of the Bar Chart viewmodel. Because the `visualTransform` method iterates through all the `dataPoints` calculations, it's the ideal place to assign colors, as in the following code:
 
 ```typescript
 
