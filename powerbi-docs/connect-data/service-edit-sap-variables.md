@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/23/20212
+ms.date: 11/23/2022
 LocalizationGroup: Data from databases
 ---
 
