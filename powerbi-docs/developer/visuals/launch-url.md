@@ -15,11 +15,11 @@ ms.date: 06/18/2019
 By creating a launch URL, you can open a new browser tab or window by adding the `host.launchUrl()` API call to the code of a Power BI visual.
 
 > [!IMPORTANT]
-> The `host.launchUrl()` was introduced in Visuals API 1.9.0.
+> The `host.launchUrl()` method was introduced in Visuals API 1.9.0.
 
 ## Sample
 
-Import the `IVisualHost` interface and enter the link to the `host` object in the constructor of the visual.
+Import the `IVisualHost` interface and save the link to the `host` object in the constructor of the visual.
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
