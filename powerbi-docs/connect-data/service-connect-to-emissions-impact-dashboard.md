@@ -32,9 +32,9 @@ To install the Emissions Impact Dashboard for Azure in Power BI and connect it t
   > [!IMPORTANT]
   > Cloud solution providers (CSPs) are supported. Customers who purchase Azure from a CSP aren't supported and must work directly with their CSP partner to learn about their cloud emissions. Legacy accounts aren't supported.
 
-  * If you have an EA Direct account, you must be a Billing Account Administrator (formerly known as an Enrollment Administrator) with either read or write permissions and have your company's billing account ID (formerly known as the [enrollment number](#finding-your-companys-enrollment-number-ea-direct-customers-only)).
+  * If you have an EA Direct account, you must be a Billing Account Administrator (formerly known as an Enrollment Administrator) with either read or write permissions and have your company's [billing account ID]([billing account ID](#finding-your-companys-billing-account-id) (formerly known as the enrollment number).
 
-  * If you have an MCA or MPA and direct billing relationship with Microsoft, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner and have your company's [billing account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only).
+  * If you have an MCA or MPA and direct billing relationship with Microsoft, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner and have your company's [billing account ID](#finding-your-companys-billing-account-id).
 
 ## Install the app
 
@@ -94,7 +94,7 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
 1. Go to the workspace panel and open the app workspace.
 
-1. Open the **Scheduled Refresh** option in the dataset settings and make sure the [Enrollment ID](#finding-your-companys-enrollment-number-ea-direct-customers-only) or [billing account ID](#finding-your-companys-billing-account-id-mcampa-csp-with-azure-plan-customers-only) is correct.
+1. Open the **Scheduled Refresh** option in the dataset settings and make sure the [billing account ID](#finding-your-companys-billing-account-id) is correct.
 
     :::image type="content" source="media/service-connect-to-emissions-impact-dashboard/schedule-refresh.png" alt-text="Screenshot of schedule refresh.":::
 
@@ -115,7 +115,7 @@ Follow the steps below to make sure your dataset configurations are set correctl
 - [How-to video](https://go.microsoft.com/fwlink/?linkid=2151608)
 - [The carbon benefits of cloud computing: A study on the Microsoft Cloud in partnership with WSP](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 
-### Finding your company's billing account ID
+## Finding your company's billing account ID
 
 Follow the steps below to find your company's billing account ID, or ask your organization’s Azure administrator.
 
