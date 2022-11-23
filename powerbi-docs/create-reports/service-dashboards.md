@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/14/2022
+ms.date: 11/23/2022
 LocalizationGroup: Dashboards
 ---
 # Introduction to dashboards for Power BI designers
@@ -22,11 +22,17 @@ Dashboards are a feature of the Power BI service. They're not available in Power
 
 ## Dashboard basics
 
-The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports. If you're new to Power BI, see [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md).
-
-The visualizations on a dashboard originate from reports, and each report is based on a dataset. A dashboard is an introduction to the underlying reports and datasets. Selecting a visualization takes you to the report and dataset that it's based on.
+The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports, and each report is based on a dataset. A dashboard is an introduction to the underlying reports and datasets. Selecting a visualization takes you to the report and dataset that it's based on. If you're new to Power BI, see [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md).
 
 ![Diagram that shows the relationship between dashboards, reports, datasets.](media/service-dashboards/power-bi-diagram.png)
+
+You can pin other kinds of tiles on dashboards:
+
+- Pin a [tile from another dashboard](service-pin-tile-to-another-dashboard.md).
+- Pin a [tile from Excel](service-dashboard-pin-tile-from-excel.md).
+- Create a [tile in Q&A and pin it](service-dashboard-pin-tile-from-q-and-a.md).
+- Pin an [entire report page](service-dashboard-pin-live-tile-from-report.md).
+- Add [images, videos, and more](service-dashboard-add-widget.md) to a dashboard.
 
 ## Advantages of dashboards
 Dashboards are a way to monitor your business and see all your most important metrics at a glance. The visualizations on a dashboard can come from one underlying dataset or many, and from one underlying report or many. A dashboard combines on-premises and cloud data, providing a consolidated view of data.
