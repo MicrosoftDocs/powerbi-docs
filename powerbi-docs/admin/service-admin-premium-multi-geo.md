@@ -71,7 +71,7 @@ In the Admin Portal, you can view all the capacities for your Power BI tenant an
 
 If you need to change the region for existing content, you have two options:
 
-- Create a second capacity, and move workspaces. Free users won't experience any downtime as long as the tenant has spare v-cores.
+- Create a second capacity and move workspaces. Free users won't experience any downtime as long as the tenant has spare v-cores.
 - If creating a second capacity isn't an option, you can temporarily move the content back to shared capacity from Premium. You don't need extra v-cores, but free users will experience some downtime.
 
 ## Move content out of Multi-Geo  
@@ -86,13 +86,13 @@ Large-storage format datasets shouldn't be moved from the region where they were
 ## Considerations and limitations
 
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
-- Cached data and queries stored in a remote region stays in that region at rest. Additionally, the data at rest will be replicated to another region in the same Azure geography for disaster recovery if the Azure geography contains more than one region. Data in transit might go back and forth between multiple geographies.
+- Cached data and queries stored in a remote region stays in that region at rest. Additionally, the data at rest is replicated to another region in the same Azure geography for disaster recovery if the Azure geography contains more than one region. Data in transit might go back and forth between multiple geographies.
 - The source data might remain in the region from which the data was moved for up to 30 days when moving data from one region to another in a Multi-Geo environment. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
 - Query text and query result traffic for imported and DirectQuery data models doesn't transit through the home region. The report metadata does still come from the home region, and certain DNS routing states might take such traffic out of the region.
 - Certain features such as screenshots, data alerts and others will still process data in the home region.
 - The detailed dataset metadata that is cached as part of [enhanced metadata scanning](../enterprise/service-admin-metadata-scanning.md) is always stored in the home region, even if the scanned dataset is located in a remote region.
 - The [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) feature isn't supported on Multi-GEO at this time.
-- It's possible to create and maintain large-storage format datasets in remote regions to meet data residency requirements. However, you can't move storage format datasets to another region. Moving large-storage format datasets from the region where they were created will result in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. If you must move such a model, you must deploy it as if it was a new model, and then delete the old model from the undesired region.
+- It's possible to create and maintain large-storage format datasets in remote regions to meet data residency requirements. However, you can't move storage format datasets to another region. Moving large-storage format datasets from the region where they were created results in reports failing to load the dataset. Move the large-storage dataset back to its original region to make it available. If you must move such a model, deploy it as if it was a new model, and then delete the old model from the undesired region.
 - Multi-Geo doesn't support Metrics.
 
 ## Next steps
