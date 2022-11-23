@@ -22,7 +22,7 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 > Any changes you make to the report in Power BI won't be saved back to the original Power BI Desktop file. This includes when you add, delete, or change visualizations in reports.
 
 ## To publish a Power BI Desktop dataset and reports
-1. In Power BI Desktop, choose **File** \> **Publish** \> **Publish to Power BI** or select **Publish** on the **Home** ribbon.
+1. In Power BI Desktop, choose **File** > **Publish** > **Publish to Power BI** or select **Publish** on the **Home** ribbon.
 
    ![Screenshot of the Power BI Home ribbon, highlighting Publish.](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
@@ -44,15 +44,15 @@ This process is straightforward, but you should know the following:
 * Two or more datasets in Power BI with the same name as the Power BI Desktop file could cause publishing to fail. Make sure you have only one dataset in Power BI with the same name. You can also rename the file and publish, creating a new dataset with same name as the file.
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken.
 * Power BI ignores some format changes of existing columns. For example, if you change a column’s format from 0.25% to 25%.
-* If you have a refresh schedule that is configured for your existing dataset in Power BI, you should verify that you are signed in during republishing. For example, when you add new data sources to your file and then republish, you have to sign into them before the next scheduled refresh.
+* If you have a refresh schedule that's configured for your existing dataset in Power BI, you should verify that you're signed in during republishing. For example, when you add new data sources to your file and then republish, you have to sign into them before the next scheduled refresh.
 * When you republish a dataset published from Power BI Desktop and have a refresh schedule defined, a dataset refresh is started as soon as you republish.
 * When you make a change to a dataset and then republish it, a message shows you how many workspaces, reports, and dashboards are potentially impacted by the change. The message then asks you to confirm that you want to replace the currently published dataset with the one you modified. The message also provides a link to the full dataset impact analysis in the Power BI service. From there, you can see more information and take action to mitigate the risks of your change.
 
    ![Screenshot of a Replace this dataset warning dialog.](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
 
-* If the dataset (and, if one exists, the report) in the Power BI service that you're overwriting has sensitivity labels that differ from the label that is applied to your .pbix file, a dialog will prompt you to choose whether to keep those labels or to overwrite them with the label coming from your .pbix file.
+* If the dataset (and, if one exists, the report) in the Power BI service that you're overwriting has sensitivity labels that differ from the label in your .pbix file, a dialog appears. The dialog lets you choose whether to keep the existing labels or overwrite them with the ones coming from your .pbix file.
 
-    ![Screenshot of the dialog for choosing to keep or overwrite sensitivity labels in service.](media/desktop-upload-desktop-files/pbid-dataset-overwrite-labels-desktop-dialog.png)
+    ![Screenshot of the dialog for choosing to keep or overwrite sensitivity labels in the service.](media/desktop-upload-desktop-files/pbid-dataset-overwrite-labels-desktop-dialog.png)
 
 
    [Learn more about Dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md).
