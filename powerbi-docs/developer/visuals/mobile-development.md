@@ -14,7 +14,7 @@ ms.date: 11/19/2022
 
 Mobile devices allow users to connect to their data anytime and anywhere.
 
-[Power BI app for Windows, iOS, and Android](../../consumer/mobile/mobile-apps-for-mobile-devices.md) enables business users to have a comprehensive view of their data that is always at their fingertips.
+[Power BI apps for Windows, iOS, and Android](../../consumer/mobile/mobile-apps-for-mobile-devices.md) enable business users to have a comprehensive view of their data that's always at their fingertips.
 
 As a developer creating Power BI visuals, you must address the unique constraints of each mobile device to reach as many users as possible and provide the best mobile experience.
 
@@ -44,7 +44,7 @@ The following requirements are essential for developing mobile-friendly visuals:
   | `contextmenu` | external library |
   | `mouseover` | `touchmove` |
   | `mouseout` | `touchmove` (or external library) |
-  | `wheel` | `NaN` |
+  | `wheel` | `N/A` |
 
   > [!NOTE]
   > Not all mobile or touch screen devices support mouse (or *mouse* prefixed) events. In unsupported cases, handle both *mouse* and *touch* events at the same time.
@@ -55,7 +55,7 @@ The following functions are optional. The optional functions can be used to crea
 
 * **Recommended rendering**
 
-  To support smaller visual sizes, add format options that allow the user to adjust the size of each element. For example, adding format options to labels to use in reports and dashboards. The format options allow users to customize a visual specifically for their mobile device.
+  To support smaller visual sizes, add format options that allow the user to adjust the size of each element. For example, add format options to labels to use in reports and dashboards. The format options allow users to customize a visual specifically for their mobile device.
   
   The same settings can be applied to the visuals in desktop browsers and, if needed, be overridden to adapt the visual to smaller screens.
 
@@ -64,7 +64,7 @@ The following functions are optional. The optional functions can be used to crea
 
 * **Recommended interactivity**
 
-  Consider adding mobile-specific event handlers, such as dragging and scrolling.
+  Consider adding mobile-specific event handlers, like dragging and scrolling.
 
 * **Failover**
 
@@ -72,9 +72,9 @@ The following functions are optional. The optional functions can be used to crea
 
 ## Supported browsers and devices
 
-Powers BI visuals must render on all devices supporting Power BI Apps. For more information, see [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md) and [Power BI mobile apps](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
+Power BI visuals must render on all devices that support Power BI apps. For more information, see [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md) and [Power BI mobile apps](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Developing a Power BI circle card visual](./develop-circle-card.md)
+> [Develop a Power BI circle card visual](./develop-circle-card.md)
