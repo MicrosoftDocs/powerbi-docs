@@ -1,6 +1,6 @@
 ---
 title: Introduction to the total and subtotal API in Power BI visual
-description: This article describes how to use the Total and Subtotal API for Power BI visuals to request aggregated subtotal data from the Power BI host.
+description: Learn how to use the Total and Subtotal API for Power BI visuals to request aggregated subtotal data from the Power BI host.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -12,7 +12,7 @@ ms.date: 11/22/2022
 
 # Request aggregated subtotal data
 
-The *Total and Subtotal API* allows custom visuals with a matrix data-view to request aggregated subtotal data from the Power BI host. The subtotals can be calculated for the entire matrix dataset or specified for individual levels of the matrix data hierarchy. See the [sample report](https://github.com/microsoft/Powerbi-Visuals-SampleMatrix/tree/master/doc) for an example of the Total and Subtotal API in a Power BI visual.
+The *Total and Subtotal API* allows custom visuals with a matrix data-view to request aggregated subtotal data from the Power BI host. The subtotals are calculated for the entire matrix dataset or specified for individual levels of the matrix data hierarchy. See the [sample report](https://github.com/microsoft/Powerbi-Visuals-SampleMatrix/tree/master/doc) for an example of the Total and Subtotal API in a Power BI visual.
 
 >[!NOTE]
 >Requesting subtotal data is supported in version 2.6.0 and later. The `rowSubtotalType` property is available in version 5.1.0 and later. To find out which version you're using, check the `apiVersion` in the *pbiviz.json* file.
@@ -117,7 +117,7 @@ enum RowSubtotalType {
    }
 ```
 
-To review the available customizations, expand the **Subtotals** drop-down menu in the **Format** property pane, modify the subtotals settings, and track the changes to the subtotals presentation (named *Totals*) in the Visualizations pane.
+To review the available customizations, expand the **Subtotals** drop-down menu in the **Format** property pane. Modify the subtotals settings and track the changes to the subtotals presentation (named *Totals*) in the Visualizations pane.
 
 :::image type="content" source="../../visuals/media/desktop-matrix-visual/power-bi-subtotal.png" alt-text="Screenshot of the Power BI Visualizations pane, which shows the Column and Row subtotals field wells.":::
 
