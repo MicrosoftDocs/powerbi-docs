@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/14/2022
+ms.date: 11/22/2022
 LocalizationGroup: Reports
 ---
 # Change how visuals interact in a Power BI report
@@ -73,25 +73,38 @@ For both Power BI Desktop and Power BI service, [certain Power BI visualizations
 > Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with a drill-down feature on the **New hires** tab.
 >
 
-1. Select the drillable visual to make it active.
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+1. In Power BI Desktop, select a drillable visual to make it active.
  
 1. Turn on the drill-down feature by selecting the drill-down icon.
 
-    ![Screenshot of a vizualization, highlighting the drill down icon.](media/service-reports-visual-interactions/power-bi-drill-down.png)
+    ![Screenshot of a vizualization in Power BI Desktop, highlighting the drill-down icon.](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
-1. Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection.
-
-   # [Power BI Desktop](#tab/powerbi-desktop)
-   On Power BI Desktop, from the menu bar, select **Format**, select the drop-down caret under **Apply drill down filters to**, and select **Entire page**.
+1. From the menu bar, select **Format**, select the drop-down caret under **Apply drill down filters to**, and select **Entire page**.
 
    ![Screenshot of Power BI Desktop, showing Apply drill-down filters to dropdown menu, highlighting Entire page selection.](media/service-reports-visual-interactions/power-bi-drill.png)
 
-   # [Power BI service](#tab/powerbi-service)
-   In Power BI service, you can edit interactions by clicking on the **Visual interactions** dropdown menu and setting **Drilling filters other visuals** to **On**.
+1. Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection.
+
+1. If the behavior you see isn't what you want, you can change the interactions, as described previously.
+
+# [Power BI service](#tab/powerbi-service)
+
+1. In the Power BI service, select a drillable visual to make it active.
+ 
+1. Turn on the drill-down feature by selecting the drill-down icon.
+
+    ![Screenshot of a vizualization in the Power BI service, highlighting the drill-down icon.](media/service-reports-visual-interactions/power-bi-drill-down.png)
+
+1. Select the **Visual interactions** dropdown menu and set **Drilling filters other visuals** to **On**.
 
    ![Screenshot of Power BI service that shows Drilling filters other visuals set to On.](media/service-reports-visual-interactions/drilling-filters-other-visuals.png)
 
-1. If the behavior you see isn't what you'd prefer, you can change the interactions [as described previously](#change-the-interaction-behavior).
+1. Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection.
+
+1. If the behavior you see isn't what you want, you can change the interactions, as described previously.
+---
 
 ## Considerations and troubleshooting
 If you build a matrix with fields from different tables, then try to cross-highlight by selecting multiple items at different levels of the hierarchy, you get errors on the other visuals.
