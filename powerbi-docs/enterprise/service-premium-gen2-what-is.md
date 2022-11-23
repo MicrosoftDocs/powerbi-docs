@@ -40,11 +40,11 @@ The table below describes the resources and limits of each SKU.
 | Capacity          |     |      |         | Dataset |        |     |       | Dataflow | Export API |
 | ----------------- | --- | ---- | ------- | --- | ------ | --- | ----- | -------- | ---- |
 | **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  | **Max concurrent pages**<sup>6</sup> |
-| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |  4 | 20 |
-| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |  8 | 25 |
-| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  | 16 | 35 |
-| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  | 32 | 50 |
-| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  | 64 | 95 |
+| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |  4 |  20 |
+| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |  8 |  25 |
+| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  | 16 |  35 |
+| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  | 32 |  55 |
+| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  | 64 |  95 |
 | P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  | 64 | 175 |
 | P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  | 64 | 200 |
 | P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  | 64 | 200 |
@@ -59,7 +59,7 @@ The table below describes the resources and limits of each SKU.
 
 <sup>5</sup> Learn more about [parallel tasks in dataflows](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium).
 
-<sup>6</sup> Review [Export API Considerations and Limitations](../developer/embedded/export-to#concurrent-requests) for Power BI interactive (not paginated) reports.
+<sup>6</sup> See [Export Power BI report to file](../developer/embedded/export-to.md) for more information.
 
 ## Subscriptions and licensing
 
