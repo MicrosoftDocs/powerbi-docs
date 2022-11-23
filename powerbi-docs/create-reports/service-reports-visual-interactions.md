@@ -99,7 +99,7 @@ For both Power BI Desktop and Power BI service, [certain Power BI visualizations
 
 1. Select the **Visual interactions** dropdown menu and set **Drilling filters other visuals** to **On**.
 
-   ![Screenshot of Power BI service that shows Drilling filters other visuals set to On.](media/service-reports-visual-interactions/drilling-filters-other-visuals.png)
+    :::image type="content" source="media/service-reports-visual-interactions/drilling-filters-other-visuals.png" alt-text="Screenshot of Power BI service that shows Drilling filters other visuals set to On.":::
 
 1. Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection.
 
