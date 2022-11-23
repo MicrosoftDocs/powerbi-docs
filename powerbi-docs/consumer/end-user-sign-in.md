@@ -1,6 +1,6 @@
 ---
 title: Sign in and out of the Power BI service
-description: Learn how to sign in and out of the Power BI service on the web, and learn how to safely interact with your content.
+description: Learn how to sign in and out of the Power BI service on the web and safely interact with your content.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 ## Power BI accounts
 
-Before you can sign in to Power BI, you need an account. There are two ways to get a Power BI account. Your organization can purchase Power BI licenses for its employees, or individuals can sign up for [free trials or personal licenses](../fundamentals/service-self-service-signup-for-power-bi.md). This article covers the first scenario.
+Before you can sign in to Power BI, you need an account. There are two ways to get a Power BI account. Your organization can purchase Power BI licenses for its employees or individuals can sign up for [free trials or personal licenses](../fundamentals/service-self-service-signup-for-power-bi.md). This article covers the first scenario.
 
 ## Sign in for the first time
 
@@ -30,21 +30,21 @@ Open the Power BI service with an email link or in a browser.
 
 - When you receive an email from a colleague with a link to a dashboard or report, select **Open this report** or **Open this dashboard** to open the Power BI service.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="Screenshot shows an email that contains a link to a report.":::
+    :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="A screenshot that shows an email that contains a link to a report.":::
 
 - To open the Power BI service in a browser, enter **app.powerbi.com** into the address bar.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-signin.png" alt-text="Screenshot shows a browser with the Power BI web address in the address bar.":::
+    :::image type="content" source="media/end-user-sign-in/power-bi-signin.png" alt-text="A screenshot that shows a browser with the Power BI web address in the address bar.":::
 
 ### Step 2: Type your email address
 
 1. The first time you sign in, Microsoft asks if you already have a Microsoft 365 account. Select **SIGN IN**.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-already.png" alt-text="Screenshot shows the Microsoft 365 sign-in message.":::
+    :::image type="content" source="media/end-user-sign-in/power-bi-already.png" alt-text="A screenshot that shows the Microsoft 365 sign-in message.":::
 
 2. Enter your Microsoft 365 account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code that's sent to your email or mobile device.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-pass.png" alt-text="Screenshot shows an Enter password dialog box.":::
+    :::image type="content" source="media/end-user-sign-in/power-bi-pass.png" alt-text="A screenshot that shows an Enter password dialog box.":::
 
     Sometimes, your global administrator assigns you a license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this email account for your sign-in.
 
@@ -52,21 +52,21 @@ Open the Power BI service with an email link or in a browser.
 
 Review the terms and conditions. If you agree, select the checkbox and then select **Start**.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-term.png" alt-text="Screenshot showing the terms and conditions dialog.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-term.png" alt-text="A screenshot showing the terms and conditions dialog.":::
 
 ### Step 4: Review your Home landing page
 
 On your first visit, Power BI opens your **Home** landing page. If **Home** doesn't open, select it from the navigation pane.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-home-first.png" alt-text="Screenshot of the navigation pane with Home outlined.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-home-first.png" alt-text="A screenshot of the navigation pane with Home outlined.":::
 
 On the Home page, you can see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. You can find the report that your colleague emailed to you under **Recent** on the **Home** page.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-recent.png" alt-text="Screenshot showing a report in the Recent section on the Home page.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-recent.png" alt-text="A screenshot showing a report in the Recent section on the Home page.":::
 
 Reports shared with you're also stored under **Shared with me** on the **Browse** page.
 
-If you don't want Power BI to open to Home, you can [set a featured dashboard or report](/power-bi/consumer/end-user-dashboards) to open instead.
+If you don't want Power BI to open to **Home**, you can [set a featured dashboard or report](/power-bi/consumer/end-user-dashboards) to open instead.
 
 ## Safely interact with content
 
@@ -74,7 +74,7 @@ As a business user, others share content with you and you interact with that con
 
 That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, select the **Reset** button.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-reset.png" alt-text="Screenshot showing the reset button on the action bar.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-reset.png" alt-text="A screenshot showing the reset button on the action bar.":::
 
 ## Sign out of the Power BI service
 
@@ -82,11 +82,11 @@ When you close or sign out of the Power BI service, your changes are saved so yo
 
 To close Power BI, close the browser tab where you're working.
 
-:::image type="content" source="media/end-user-sign-in/power-bi-close-tab.png" alt-text="Screenshot showing the x on the browser tab to close Power BI.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-close-tab.png" alt-text="A screenshot showing the x on the browser tab to close Power BI.":::
 
-If you share a computer, we recommend signing out each time you close Power BI. To sign out, in the upper right corner, select your profile picture, and then select **Sign out**.  
+If you share a computer, we recommend signing out each time you close Power BI. In the upper right corner, select your profile picture, and then select **Sign out**.  
 
-:::image type="content" source="media/end-user-sign-in/power-bi-signout.png" alt-text="Screenshot showing the profile menu and sign out is outlined.":::
+:::image type="content" source="media/end-user-sign-in/power-bi-signout.png" alt-text="A screenshot showing the profile menu and sign out is outlined.":::
 
 ## Troubleshooting
 
