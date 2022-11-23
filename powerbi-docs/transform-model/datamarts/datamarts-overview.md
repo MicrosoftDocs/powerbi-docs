@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 06/16/2022
+LocalizationGroup: Data from files
 searchScope:
   - datamarts
   - Power BI
-LocalizationGroup: Data from files
 ---
 # Introduction to datamarts
 
