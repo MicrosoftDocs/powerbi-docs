@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-lJKgWnvl6bQ
-ms.date: 11/15/2022
+ms.date: 11/23/2022
 ---
 # Create a Power BI dashboard from a report
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard. In this article, you create a quick and easy dashboard that pins visualizations from a report that's already been built.
+You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard. In this article, you create a quick and easy dashboard that pins visualizations from an existing report.
 
 After you complete this article, you'll understand:
 - The relationship between dashboards and reports.
@@ -38,26 +38,15 @@ Watch Amanda create a new dashboard by pinning visualizations from a report. The
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
-## Open a sample report
-
-In this procedure, you open one of the Power BI sample datasets available from the Learning center in the Power BI service. It's installed automatically in My Workspace.
-
-1. In the nav pane, select, **Learning center**.
-1. Select **Regional Sales Sample** from the carousel.
-
-   [![Screenshot of Power BI Learning Center carousel, highlighting the Regional Sales Sample.](media/service-dashboard-create/power-bi-regional-sales-sample-in-carousel.png)](media/service-dashboard-create/power-bi-regional-sales-sample-in-carousel.png#lightbox)
-
-1. The Regional Sales Sample opens in Reading view in the Power BI service.
-
-   [![Screenshot of the regional sales sample.](media/service-dashboard-create/power-bi-regional-sales-sample.png)](media/service-dashboard-create/power-bi-regional-sales-sample.png#lightbox)
-
 ## Pin tiles to a dashboard
 
-1. In the Regional Sales Sample, etc.
-
-2. Select **More options (...)** > **Edit** to open the report in Editing view.
+1. Open a report and select **More options (...)** > **Edit** to open the report in Editing view.
 
     ![Screenshot of the report, highlighting more options and edit.](media/service-dashboard-create/power-bi-reading-view.png)
+    
+    > [!TIP]  
+    > You don't have to open the report in Edit mode, but you do have to have edit permissions for the report.
+
 3. Hover over a visualization to reveal the options that are available. To add a visualization to a dashboard, select the pin icon :::image type="icon" source="media/service-dashboard-create/power-bi-pin-icon.png":::.
 
     ![Screenshot of a visualization, highlighting the pin icon.](media/service-dashboard-create/power-bi-hover.png)
