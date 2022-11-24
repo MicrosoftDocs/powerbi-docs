@@ -28,7 +28,7 @@ The visualizations you see on the dashboard are called *tiles*. You *pin* tiles 
 
 You can pin many kinds of tiles to dashboards:
 
-- Pile a [tile from a report](service-dashboard-create.md).
+- Pin a [tile from a report](service-dashboard-create.md).
 - Pin a [tile from another dashboard](service-pin-tile-to-another-dashboard.md).
 - Pin a [tile from Excel](service-dashboard-pin-tile-from-excel.md).
 - Create a [tile in Q&A and pin it](service-dashboard-pin-tile-from-q-and-a.md).
