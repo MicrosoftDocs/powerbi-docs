@@ -37,12 +37,14 @@ For existing policies, it's also possible to enable default label policies for P
 Set-LabelPolicy -Identity "<default label policy name>" -AdvancedSettings @{powerbidefaultlabelid="<LabelId>"}
 ```
 
-Where, `<default label policy name>` is the name of the policy whose associated sensitivity label you want to be applied by default to unlabeled content in Power BI.
+Where:
+
+* `<default label policy name>` is the name of the policy whose associated sensitivity label you want to be applied by default to unlabeled content in Power BI.
 
 >[!IMPORTANT]
 >If a user has more than one label policy, the default label setting is always taken from the policy with the highest priority, make sure to configure the default label on that policy.
 
-Requirements for using PowerShell
+**Requirements for using PowerShell**
 
 * The Exchange Online PowerShell V2 (EXO V2) module. For more information, see [About the Exchange Online PowerShell V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
 * A connection to the Microsoft Purview compliance portal. For more information, see [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
@@ -55,7 +57,7 @@ Requirements for using PowerShell
 
 ## Considerations and limitations
 
-* Default labeling in Power BI covers most common scenarios, but there might be some less common flows that still allow users to open or create unlabeled *.pbix* files or Power BI artifacts.
+* Default labeling in Power BI covers most common scenarios, but there may be some less common flows that still allow users to open or create unlabeled *.pbix* files or Power BI artifacts.
 * Default label policy settings for Power BI are independent of the default label policy settings for files and email.
 * Default labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to default label policies.
 * Default label policies in Power BI aren't supported for [external guest users (Azure AD B2B)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power BI service, no default label is applied automatically.
