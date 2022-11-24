@@ -53,7 +53,13 @@ XMLA	                Honored, manual sync required
 
 ## Enable Query Scale Out
 
-Use the XMLA endpoint to turn on scale out.
+Use the XMLA endpoint to turn on scale out. Before you begin verify that:
+
+* [XMLA read/write](service-premium-connect-tools.md#enable-xmla-read-write) is enabled.
+
+* Your workspace resides on a Premium capacity and the [Large dataset storage format](service-premium-large-models.md) is enabled.
+
+### Step 1 - Establish the XML connection
 
 1. Start SQL Server Management Studio (SSMS) and in the **Connect to Server** dialog box, fill in the fields as listed below.
 
@@ -111,13 +117,11 @@ Use the XMLA endpoint to turn on scale out.
 
     :::image type="content" source="media/service-premium-scale-out/ssms-connect.png" alt-text="A screenshot showing how to add the scale out XMLA script to S Q L Server Management Studio (S S M S).":::
 
-### Before you begin
+### Step 2 - Enable scale out using Power BI Desktop
 
-Verify that you have everything listed below before you begin.
+1. Open Power BI Desktop.
 
-* [XMLA read/write](service-premium-connect-tools,md#enable-xmla-read-write) is enabled.
-
-* Your workspace resides on a Premium capacity and the [Large dataset storage format](service-premium-large-models.md) is enabled.
+2. 
 
 ## Connecting to a specific dataset type
 
