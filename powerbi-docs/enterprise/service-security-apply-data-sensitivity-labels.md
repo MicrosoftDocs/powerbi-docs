@@ -29,7 +29,7 @@ Requirements needed to apply sensitivity labels in the Power BI service:
 * You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md) and edit permissions on the content you wish to label.
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
-* All requirements were met. For more information, see [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
+* All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
 
 When data protection is enabled on your tenant, sensitivity labels appear in the sensitivity column in the list view of dashboards, reports, datasets, and dataflows.
 
@@ -75,7 +75,7 @@ To use sensitivity labels in Power BI Desktop:
 * You must have a [Power BI Pro or Premium Per User (PPU) license](./service-admin-purchasing-power-bi-pro.md).
 * Sensitivity labels must be enabled for your organization. Contact your Power BI admin if you aren't sure about this.
 * You must belong to a security group that has permissions to apply sensitivity labels, as described in [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
-* All requirements were met. For more information, see [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
+* All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
 * You must be signed in.
 
 Watch a short video on applying sensitivity labels and then try it out yourself.
