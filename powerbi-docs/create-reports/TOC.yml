@@ -442,8 +442,6 @@
       href: service-dashboard-create.md
     - name: "Create a copy of a dashboard"
       href: service-dashboard-copy.md
-    - name: "Pin a tile to a dashboard from a report"
-      href: service-dashboard-pin-tile-from-report.md
     - name: "Pin a tile from one dashboard to another"
       href: service-pin-tile-to-another-dashboard.md
     - name: "Pin a tile to a dashboard from Excel"
