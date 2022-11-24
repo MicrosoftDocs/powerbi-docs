@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 09/14/2022
+ms.date: 11/24/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -73,26 +73,22 @@ Capacity administrators automatically have their my workspaces assigned to Premi
 
 As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) section, there are two Power BI Premium SKU families: **EM** and **P**. All Power BI Premium SKUs are available as capacity *nodes*, each representing a set amount of resources consisting of processor, memory, and storage.  In addition to resources, each SKU has operational limits on the number of DirectQuery and Live Connection connections per second, and the number of parallel model refreshes. While there is a lot of overlap in features for the two SKU families, only the P Premium SKU gives free users the ability to consume content hosted in the Premium capacity.  EM SKUs are used for embedding content.
 
-Processing is achieved by a set number of v-cores, divided equally between backend and frontend.
-
-**Backend v-cores** are responsible for core Power BI functionality, including query processing, cache management, running R services, model refresh, and server-side rendering of reports and images. Backend v-cores are assigned a fixed amount of memory that is primarily used to host models, also known as active datasets.
-
-**Frontend v-cores** are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything related to the user experiences.
+Processing is achieved by a set number of v-cores.
 
 Storage is set to **100 TB per capacity node**.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table:
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
-| ----------------- | --- | ---- | ---- | --- | ------ | --- | --- |
-| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
-| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
-| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  3  |
-| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
-| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
-| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 24  |
-| P4/A7<sup>2</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
-| P5/A8<sup>2</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
+| Capacity SKUs | V-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
+| ----------------- | --- | ---- | ------ | --- | --- |
+| EM1/A1            |   1 |    3 |   3.75 |  1  |  1  |
+| EM2/A2            |   2 |    5 |   7.5  |  2  |  2  |
+| EM3/A3            |   4 |   10 |  15    |  2  |  3  |
+| P1/A4             |   8 |   25 |  30    |  6  |  6  |
+| P2/A5             |  16 |   50 |  60    |  6  | 12  |
+| P3/A6             |  32 |  100 | 120    | 10  | 24  |
+| P4/A7<sup>2</sup> |  64 |  200 | 240    | 10  | 48  |
+| P5/A8<sup>2</sup> | 128 |  400 | 480    | 10  | 96  |
 
 <sup>1</sup> The model refresh parallelism limits only apply to dataset workloads per capacity.
 
@@ -131,7 +127,7 @@ Refreshes of import models are always memory intensive as models must be loaded 
 
 Incremental refresh performs partition refresh instead of a full model refresh, and will typically be faster and require less memory, and can substantially reduce the capacity's resource usage. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables or columns that are complex or are based on a large volume of data.
 
-Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this isn't possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, a limit on the number of concurrent refreshes, calculated as the ceiling of 1.5 x the number of backend v-cores, is imposed. If there are too many concurrent refreshes, the scheduled refresh is queued until a refresh slot is available, resulting in the operation taking longer to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times. If there still aren't enough resources, the refresh will then fail.
+Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this isn't possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, a limit on the number of concurrent refreshes, calculated as the ceiling of 1.5 x the number of v-cores, is imposed. If there are too many concurrent refreshes, the scheduled refresh is queued until a refresh slot is available, resulting in the operation taking longer to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times. If there still aren't enough resources, the refresh will then fail.
 
 ### Regional support
 
