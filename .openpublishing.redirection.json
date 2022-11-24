@@ -3722,7 +3722,12 @@
         },
         {
             "source_path": "powerbi-docs/service-dashboard-pin-tile-from-report.md",
-            "redirect_url": "/power-bi/create-reports/service-dashboard-pin-tile-from-report",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-dashboard-pin-tile-from-report.md",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
             "redirect_document_id": true
         },
         {

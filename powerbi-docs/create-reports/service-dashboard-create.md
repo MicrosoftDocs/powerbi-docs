@@ -1,6 +1,6 @@
 ---
 title: Create a Power BI dashboard from a report
-description: Learn how to create a quick and easy dashboard that pins visualizations from a report that's already been built.
+description: Learn how to create a quick and easy dashboard that pins visualizations from an existing report.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -19,7 +19,6 @@ You've read [Introduction to dashboards in Power BI](service-dashboards.md), and
 
 After you complete this article, you'll understand:
 - The relationship between dashboards and reports.
-- How to open Editing view in the report editor.
 - How to pin tiles.
 - How to navigate between a dashboard and a report.
  
@@ -30,7 +29,7 @@ After you complete this article, you'll understand:
 >
 > 
 
-## Video: Create a dashboard by pinning visuals and images from a report
+## Video: Create a dashboard by pinning visuals from a report
 Watch Amanda create a new dashboard by pinning visualizations from a report. Then, follow the steps in the next section to try it out yourself by using the Procurement Analysis sample.
     
 > [!NOTE]  
@@ -47,41 +46,46 @@ Watch Amanda create a new dashboard by pinning visualizations from a report. The
     > [!TIP]  
     > You don't have to open the report in Edit mode, but you do have to have edit permissions for the report.
 
-3. Hover over a visualization to reveal the options that are available. To add a visualization to a dashboard, select the pin icon :::image type="icon" source="media/service-dashboard-create/power-bi-pin-icon.png":::.
+1. Hover over a visualization to reveal the options that are available. To add a visualization to a dashboard, select the pin icon :::image type="icon" source="media/service-dashboard-create/power-bi-pin-icon.png":::.
 
     ![Screenshot of a visualization, highlighting the pin icon.](media/service-dashboard-create/power-bi-hover.png)
-4. Select the option for **New dashboard** and enter a name.
+1. Select whether to pin to an existing dashboard or new dashboard.
+
+   - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that have been shared with you won't appear in the dropdown.
+   - **New dashboard**: Enter the name of the new dashboard.
+
+1. In this case, we select the option for **New dashboard** and enter a name.
 
     ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-tile.png)
-5. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, select **Save**.
+
+1. In some cases, the item you're pinning might have a *theme* already applied. For example, visuals pinned from an Excel workbook. If so, select the theme to apply to the tile:
+
+    - **Use destination theme**: The theme of the dashboard.
+    - **Keep current theme**: The theme of the report.
+
+1. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, select **Save**.
 
     ![Screenshot of a success message, highlighting Go to dashboard.](media/service-dashboard-create/power-bi-pin-success.png)
 
     Power BI opens the new dashboard, which has one tile: the visualization you just pinned.
 
    ![Screenshot of a dashboard with one tile.](media/service-dashboard-create/power-bi-pinned.png)
-7. Select the tile to return to the report. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window appears, select **Existing dashboard**.  
+1. Select the tile to return to the report. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window appears, select **Existing dashboard**.  
 
    ![Screenshot of the Pin to dashboard window, highlighting Existing dashboard.](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
-## Pin an entire report page to the dashboard
-Instead of pinning one visual at a time, you can [pin an entire report page as a live tile](service-dashboard-pin-live-tile-from-report.md).
+## Pin an entire report page
+Another option is to pin an entire report page to a dashboard, which is an easy way to pin more than one visualization at a time. When you pin an entire page, the tiles are *live*. That is, you can interact with them there on the dashboard. Changes you make to any of the visualizations in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
 
-1. In the report editor, select the **Spend Overview** tab to open the second page of the report.
+For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md).
 
-   ![Screenshot of the report editor, highlighting Spend Overview.](media/service-dashboard-create/power-bi-page-tab.png)
-
-2. You want all the visuals in the report on your dashboard. In the upper-right corner of the menubar, select **Pin to a dashboard**. On a dashboard, live page tiles are updated each time the page is refreshed.
-
-   ![Screenshot of the menubar, highlighting Pin to a dashboard.](media/service-dashboard-create/power-bi-pin-live.png)
-
-3. When the **Pin to dashboard** window appears, select **Existing dashboard**.
-
-   ![Screenshot of the Pin to dashboard window with the Existing dashboard option selected and a Pin live button.](media/service-dashboard-create/power-bi-pin-live2.png)
-
-4. After the Success message appears, select **Go to dashboard**. There you see the tiles you pinned from the report. In the example below, we've pinned two tiles from page one of the report and one live tile, which is page two of the report.
-
-   ![Screenshot of a Power BI dashboard with the visualizations from this article.](media/service-dashboard-create/power-bi-dashboard.png)
+## Considerations and limitations
+Some report formatting options or themes aren't applied to visuals when you pin them to a dashboard.
+- Border, shadow, and background settings are ignored in the pinned tile.
+- For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
+- Conditional formatting isn't applied.
+- Visuals will adjust their size to fit the size of the tile. This can result in differences in layout as if the visual had been resized on the report.
+- Because some visualizations use background images, pinning might not work if the background image is too large. Try reducing the image size or using image compression.
 
 ## Next steps
 Congratulations on creating your first dashboard. Now that you have a dashboard, there's much more you can do with it. Start exploring on your own, or see one of the following articles:
