@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 Another way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by pinning an entire report page. This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are *live*; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.
 
-:::image type="content" source="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png" alt-text="Sceenshot of live tile page pinned from report.":::
+:::image type="content" source="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png" alt-text="Screenshot of live tile page pinned from report.":::
 
 Pinning live tiles from reports to dashboards is only available in the Power BI service (app.powerbi.com).
 
