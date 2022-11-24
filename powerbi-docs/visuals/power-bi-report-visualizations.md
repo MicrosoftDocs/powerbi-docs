@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In the Power BI service, visuals can be [pinned from reports to dashboards](../create-reports/service-dashboard-pin-tile-from-report.md).
+Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In the Power BI service, visuals can be [pinned from reports to dashboards](../create-reports/service-dashboard-create.md).
 
 It's important to make the distinction between report *designers* and report *consumers*. If you're the person building or modifying the report, then you're a designer. Designers have edit permissions to the report and its underlying dataset. In Power BI Desktop, you can open the dataset in Data view and create visuals in Report view. In Power BI service, you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you](../consumer/end-user-shared-with-me.md), you're a report *consumer*. You'll be able to view and interact with the report and its visuals but you won't be able to make as many changes as a *designer* can.
 
@@ -72,7 +72,7 @@ Try [changing the type of visualization](power-bi-report-change-visualization-ty
 
 ## Pin the visualization
 
-In Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../create-reports/service-dashboard-pin-tile-from-report.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change. If it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
+In Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../create-reports/service-dashboard-create.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change. If it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
 
 ## Considerations and limitations
 

@@ -14,11 +14,11 @@ ms.date: 11/03/2022
 
 ❌&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
 
-To embed content from an app, the user must have [access to the app](../../collaborate-share/service-create-distribute-apps.md) that contains the content to embed. If the app is installed for the user, then the user can embed content from the app. For more information, see [Embed reports or dashboards from app](./index.yml). To make embedding content from an app easier, you can set up [automatic app installation](https://powerbi.microsoft.com/blog/automatically-install-apps/) in PowerBI.com for your organization. Defining automatic app installation is a tenant level action and applies to all apps.
+To embed content from an app, the user needs [access to the app](../../collaborate-share/service-create-distribute-apps.md) that contains the content to embed. If the app isn't installed, the embedding will fail. To make embedding content from an app easier, you can set up [automatic app installation](https://powerbi.microsoft.com/blog/automatically-install-apps/) in PowerBI.com for your organization. Defining automatic app installation is a tenant level action and applies to all apps.
 
-## Automatically installing an app upon embedding content
+## Automatically install an app upon embedding content
 
-If a user has access to an app that isn't installed, and the user tries to embed app content, the embedding will fail. Avoid this problem by allowing automatic installation of the app upon embedding content. Allowing automatic installation means if the app the user tries to embed content from isn't installed, then the app is automatically installed for the user. Automatic app installation results in a smooth experience for the user.
+If you have access to an app that isn't installed, and try to embed app content, the embedding will fail. To avoid this problem, allow automatic installation of the app upon embedding content. Allowing automatic installation means if the app the user tries to embed content from isn't installed, then the app is automatically installed for the user. Automatic app installation results in a smoother experience for the user.
 
 ## Embedding for Power BI users (User owns data)
 
@@ -36,4 +36,4 @@ To use automatic application installation, the app creator must install the app.
 
 * You can only embed reports and dashboards in this scenario.
 
-* This feature is currently not supported for app-owned data and SharePoint embedding scenarios.
+* This feature is currently not supported for app-owns data or SharePoint embedding scenarios.
