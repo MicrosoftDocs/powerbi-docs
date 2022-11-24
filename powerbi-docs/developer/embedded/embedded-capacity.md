@@ -101,7 +101,7 @@ The table below lists payment and usage considerations per capacity.
 
 The table below describes the resources and limits of each SKU.
 
-[!INCLUDE [Power BI capacity and SKUs](./../includes/capacity-table.md)]
+[!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 

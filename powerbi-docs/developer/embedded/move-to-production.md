@@ -35,7 +35,7 @@ By creating a capacity, you can take advantage of having a resource for your cus
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
-[!INCLUDE [Power BI capacity and SKUs](./../includes/capacity-table.md)]
+[!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
 ## Development testing
 
