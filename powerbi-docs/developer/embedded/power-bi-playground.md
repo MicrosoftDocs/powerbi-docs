@@ -37,6 +37,13 @@ Drag and drop code snippets into the report, or type them directly into the code
 
 :::image type="content" source="media/power-bi-playground/sandbox-add-code.png" alt-text="A screenshot of the developer sandbox in use.":::
 
+The sandbox supports the following languages:
+
+* JavaScript
+* TypeScript
+
+The user can switch between languages, and the last language used is saved for next time.
+
 ## Explore our APIs
 
 You can interact with code snippets and embed reports, dashboards, Q&As, and more in **Explore our APIs**.
