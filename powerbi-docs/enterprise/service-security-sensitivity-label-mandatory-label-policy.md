@@ -22,13 +22,13 @@ To help ensure comprehensive protection and governance of sensitive data, you ca
 
 ## What happens when a mandatory label policy is in effect?
 
-In the Power BI service:
+**In the Power BI service**:
 
 * Users must apply a sensitivity label before they can save new reports, dashboards, or datasets.
 * Users must apply a sensitivity label before they can save changes to the settings or content of existing, unlabeled reports and dashboards.
 * If users try to import data from an unlabeled *.pbix* file, a prompt requires them to select a label before the import can continue. The label they select is applied to the resulting dataset and report in the service. **It is not applied to the *.pbix* file itself**.
 
-In Power BI Desktop:
+**In Power BI Desktop**:
 
 * Users must apply sensitivity labels to unlabeled *.pbix* files before they can save or publish to the service.
 
@@ -44,9 +44,10 @@ If you have an existing policy, and you want to enable mandatory labeling in Pow
 Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbimandatory="true"}
 ```
 
-Where, `<policy name>` is the name of the policy where you want to set labeling as mandatory in Power BI.
+Where:
+* `<policy name>` is the name of the policy where you want to set labeling in Power BI as mandatory.
 
-Requirements for using PowerShell
+**Requirements for using PowerShell**
 
 * You need the Exchange Online PowerShell (EXO) module to run this command. For more information, see [About the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 * A connection to the Purview compliance portal is also required. For more information, see [Connect to Security & Compliance PowerShell using the EXO module](/powershell/exchange/connect-to-scc-powershell).
