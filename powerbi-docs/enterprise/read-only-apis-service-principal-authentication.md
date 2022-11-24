@@ -24,8 +24,8 @@ To enable service principal authentication for Power BI read-only APIs, follow t
 
 1. [Create an Azure AD app](/azure/active-directory/develop/howto-create-service-principal-portal). You can skip this step if you already have an Azure AD app you want to use. Take note of the App-Id for later steps.
 
-    >[!NOTE]
-    > Make sure the app you use doesn't have any admin-consent required permissions for Power BI set on it in Azure portal. [See how to check whether your app has any such permissions](#how-to-check-if-your-app-has-admin-consent-required-permissions). 
+    >[!IMPORTANT]
+    > Make sure the app you use doesn't have any admin-consent required permissions for Power BI set on it in the Azure portal. [See how to check whether your app has any such permissions](#how-to-check-if-your-app-has-admin-consent-required-permissions). 
 1. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
     Make sure to select **Security** as the Group type.
 
@@ -36,7 +36,7 @@ To enable service principal authentication for Power BI read-only APIs, follow t
     1. Select **Add Members**.
 
     > [!IMPORTANT]
-    > Make sure the app you use doesn't have any admin-consent required permissions for Power BI set on it in the Azure portal. [See how to check whether your app has any such permissions](#how-to-check-if-your-app-has-admin-consent-required-permissions).
+    > Make sure the app doesn't have any admin-consent required permissions for Power BI set on it in the Azure portal. [See how to check whether your app has any such permissions](#how-to-check-if-your-app-has-admin-consent-required-permissions).
 
 4. Enable the Power BI service admin settings:
     1. Log into the Power BI admin portal. You need to be a Power BI admin to see the tenant settings page.
