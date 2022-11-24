@@ -12,7 +12,7 @@ ms.date: 11/23/2022
 
 # Package a Power BI visual
 
-Before you can load a visual that you created into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you have to package it. Using this tutorial, you will:
+Before you can load your custom visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you need to package it. Using this tutorial, you will:
 
 * [Provide property values](#enter-property-values) and metadata for the visual.
 * [Update the icon](#update-the-icon-optional).
@@ -29,7 +29,7 @@ Before you can load a visual that you created into [Power BI Desktop](https://po
 
     The visual's display name appears in the **Visualizations** pane of Power BI when the cursor hovers over the visual icon.
 
-4. Fill in or modify the following additional fields in the *pbiviz.json* file:
+4. Fill in or modify the following optional fields in the *pbiviz.json* file:
     * `visualClassName`
     * `description`
 
@@ -74,7 +74,7 @@ Before you can load a visual that you created into [Power BI Desktop](https://po
 
     :::image type="content" source="media/package-visual/dist-folder.png" alt-text="Screenshot of Windows Explorer, which shows the folder hierarchy of the Power BI visual project. The dist folder is highlighted.":::
 
-The package outputs to the */dist/* folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You have now packaged the custom visual, and it is now ready for use.
+The package outputs to the */dist/* folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You packaged the custom visual, and it's ready for use.
 
 ## Next steps
 
