@@ -1,6 +1,6 @@
 ---
 title: Create Power BI visuals using Python in Power BI Desktop
-description: Create Power BI visuals using Python
+description: Use Python scripts to create several kinds of visualizations in Power BI Desktop.
 author: otarb
 ms.author: otarb
 ms.reviewer: ''
