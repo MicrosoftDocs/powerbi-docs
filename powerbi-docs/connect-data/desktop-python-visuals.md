@@ -153,7 +153,7 @@ Python visuals in Power BI Desktop have the following limitations:
 
 ### Security
 
-Python visuals use Python scripts, which could contain code that has security or privacy risks. When you attempt to view or interact with an Python visual for the first time, you get a security warning. Enable Python visuals only if you trust the author and source, or after you review and understand the Python script.
+Python visuals use Python scripts, which could contain code that has security or privacy risks. When you attempt to view or interact with a Python visual for the first time, you get a security warning. Enable Python visuals only if you trust the author and source, or after you review and understand the Python script.
 
 ### Licensing
 
