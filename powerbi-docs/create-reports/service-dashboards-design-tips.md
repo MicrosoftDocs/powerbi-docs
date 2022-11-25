@@ -14,9 +14,9 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-After you've created a dashboard and added some tiles, think about how to make your dashboard both visually interesting and functional. In general, you want the most important information to stand out, having it clean and uncluttered.
+After you've created a dashboard and added some tiles, think about how to make your dashboard both visually interesting and functional. In general, you want the most important information to stand out and be clean and uncluttered.
 
-![Screenshot of the Sales and Marketing Sample dashboard](media/service-dashboards-design-tips/power-bi-marketing-sample-dashboard.png)
+![Screenshot of the Sales and Marketing Sample dashboard.](media/service-dashboards-design-tips/power-bi-marketing-sample-dashboard.png)
 
 > [!TIP]
 > Like this dashboard? You can download it and related reports from AppSource. Go to **Get data** > **Services**. Search for **Microsoft Sample - Sales & Marketing** > **Get it now**.
@@ -28,9 +28,9 @@ Watch [Dashboard design best practices in Power BI](https://www.youtube.com/watc
 ## Consider your audience
 When optimizing your dashboard's appearance for your audience, consider the following:
 
-- How will they use the dashboard?
-- What key metrics will help them make decisions?
-- What learned or cultural assumptions may affect design choices?
+- How do they use the dashboard?
+- What key metrics help them make decisions?
+- What learned or cultural assumptions might affect design choices?
 - What information does your audience need to be successful?
 
 Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those items often contain many details. Your readers can drill into the reports from your dashboard, so don't put a detail on the dashboard unless that's what your readers need to monitor.
@@ -60,7 +60,7 @@ Read about [creating a tile with just a number](../visuals/power-bi-visualizatio
 Most people read from top to bottom. Put the highest level of data at the top left corner, and show more detail as you move in the direction the audience uses for reading (left-to-right, top-to-bottom).
 
 ## Use the right visualization for the data
-Avoid visualization variety for the sake of variety. Visualizations should paint a picture and be easy to read and interpret. For some data and visualizations, a simple graphic visualization is enough. Other data may need a more complex visualization. Use titles, labels, and other customization to help the reader.  
+Avoid visualization variety for the sake of variety. Visualizations should paint a picture and be easy to read and interpret. For some data and visualizations, a simple graphic visualization is enough. Other data might need a more complex visualization. Use titles, labels, and other customization to help the reader.  
 
 * Be careful when you use visuals that are hard to read, such as 3D charts.
 * Pie charts, donut charts, gauges, and other circular chart types aren't ideal data visualizations. Because humans can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts are best if they have fewer than eight categories. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. Gauge charts are great for displaying the current status in the context of a goal.
