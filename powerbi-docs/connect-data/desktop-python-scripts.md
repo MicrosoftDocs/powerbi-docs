@@ -1,6 +1,6 @@
 ---
 title: Run Python scripts in Power BI Desktop
-description: Running Python Scripts in Power BI Desktop
+description: Run Python scripts directly in Power BI Desktop and import the resulting datasets into a Power BI Desktop data model.
 author: otarb
 ms.author: otarb
 ms.reviewer: ''
@@ -42,13 +42,13 @@ To enable Python scripting in Power BI:
 1. Select **OK**.
 
 > [!IMPORTANT]
-> Power BI runs scripts directly by using the *python.exe* executable from the directory you provide in **Settings**. Python distributions that require an extra step to prepare the environment, such as Conda, might fail to run. Use the official Python distribution from [https://www.python.org](https://www.python.org) to avoid these issues. Another possible solution is to start Power BI Desktop from your custom Python environment prompt.
+> Power BI runs scripts directly by using the *python.exe* executable from the directory you provide in **Settings**. Python distributions that require an extra step to prepare the environment, such as Conda, might fail to run. To avoid these issues, use the official Python distribution from [https://www.python.org](https://www.python.org). Another possible solution is to start Power BI Desktop from your custom Python environment prompt.
 
 ## Create a Python script
 
 Create a script in your local Python development environment and make sure it runs successfully. When preparing and running a Python script in Power BI Desktop, there are a few limitations:
 
-- Only pandas data frames are imported, so make sure the data you want to import to Power BI is represented in a data frame.
+- Only pandas data frames import, so make sure the data you want to import to Power BI is represented in a data frame.
 - Any Python script that runs longer than 30 minutes times out.
 - Interactive calls in the Python script, such as waiting for user input, halt the script's execution.
 - If you set the working directory within the Python script, you must define a full path to the working directory rather than a relative path.
@@ -84,7 +84,7 @@ To run your Python script:
 
 1. On the **Python script** screen, paste your Python script into the **Script** field, and select **OK**.
 
-   ![Screeshot that shows pasting the sample Python script into the Python script dialog box.](media/desktop-python-scripts/python-scripts-6.png)
+   ![Screenshot that shows pasting the sample Python script into the Python script dialog box.](media/desktop-python-scripts/python-scripts-6.png)
 
 1. If the script runs successfully, the **Navigator** window appears, and you can load the data. Select the **df** table, and then select **Load**.
 
