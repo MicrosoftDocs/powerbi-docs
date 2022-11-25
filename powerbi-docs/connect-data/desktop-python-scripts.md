@@ -37,7 +37,7 @@ To enable Python scripting in Power BI:
 
    ![Screenshot that shows the Python script options for Power BI Desktop.](media/desktop-python-scripts/python-scripts-7.png)
 
-1. If necessary, supply or edit your local Python installation path in **Detected Python home directories**. In the preceding image, the Python's installation local path is *C:\\Python*. Make sure this is the Python installation you want to use.
+1. If necessary, supply or edit your local Python installation path in **Detected Python home directories**. In the preceding image, the Python's installation local path is *C:\\Python*. Make sure to select the local Python installation that you want to use.
 
 1. Select **OK**.
 
@@ -46,7 +46,7 @@ To enable Python scripting in Power BI:
 
 ## Create a Python script
 
-Create a script in your local Python development environment and make sure it runs successfully. When preparing and running a Python script in Power BI Desktop, there are a few limitations:
+Create a script in your local Python development environment and make sure it runs successfully. When you prepare and run a Python script in Power BI Desktop, there are a few limitations:
 
 - Only pandas data frames import, so make sure the data you want to import to Power BI is represented in a data frame.
 - Any Python script that runs longer than 30 minutes times out.
@@ -103,3 +103,5 @@ For more information about Python in Power BI, see:
 
 - [Create Python visuals in Power BI Desktop](desktop-python-visuals.md)
 - [Use an external Python IDE with Power BI](desktop-python-ide.md)
+- [Use Python in Power Query Editor](desktop-python-in-query-editor.md)
+
