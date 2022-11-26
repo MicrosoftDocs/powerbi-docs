@@ -34,17 +34,17 @@ The following example passes a single value through to a parameter dynamically.
 
 ### Add the parameters
 
-1. In Power BI Desktop, select **Home*- > **Transform data*- > **Transform data*- to open the Power Query Editor.
+1. In Power BI Desktop, select **Home** > **Transform data** > **Transform data** to open the Power Query Editor.
 
-1. In the Power Query Editor, select **New Parameters*- under **Manage Parameters*- in the ribbon.
+1. In the Power Query Editor, select **New Parameters** under **Manage Parameters** in the ribbon.
 
    ![Screenshot that shows the Ribbon menu.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-02.png)
 
-1. In the **Manage Parameters*- window, fill out the information about the parameter.
+1. In the **Manage Parameters** window, fill out the information about the parameter.
 
    ![Screenshot that shows parameter information](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-03.png)
 
-1. Select **New*- to add more parameters.
+1. Select **New** to add more parameters.
 
     ![Screenshot that shows New to create another parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-04.png)
 
@@ -89,22 +89,22 @@ Create a table for each parameter with a column that provides the possible value
 
 Now that you created the tables with the `Date` field, you can bind each field to a parameter. Binding a field to a parameter means that as the selected value for the field changes, the value passes to the parameter and updates the query that references the parameter.
 
-1. To bind a field, in the Power BI Desktop **Model*- view, select the newly created field, and in the **Properties*- pane, select **Advanced**.
+1. To bind a field, in the Power BI Desktop **Model** view, select the newly created field, and in the **Properties** pane, select **Advanced**.
 
    > [!NOTE]
    > The column data type should match the M parameter type.
 
    ![Screenshot that shows binding the field to a parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-10.png)
 
-1. Select the dropdown under **Bind to parameter*- and select the parameter that you want to bind to the field:
+1. Select the dropdown under **Bind to parameter** and select the parameter that you want to bind to the field:
 
     ![Screenshot that shows binding the parameter to the field.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-11.png)
 
-   Since this example is for setting the parameter to a single value, keep **Multi-select*- set to **No**, which is the default:
+   Since this example is for setting the parameter to a single value, keep **Multi-select** set to **No**, which is the default:
 
    ![Screenshot that shows multi-select set to No.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-12.png)
 
-   If your use cases require passing multiple values to a single parameter, set the control to **Yes*- and make sure your M query is set up to accept multiple values. Here's an example for `RepoNameParameter`, which allows for multiple values:
+   If your use cases require passing multiple values to a single parameter, set the control to **Yes** and make sure your M query is set up to accept multiple values. Here's an example for `RepoNameParameter`, which allows for multiple values:
 
    ![Screenshot that shows a multivalue example.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-13.png)
 
@@ -116,27 +116,27 @@ Now that you created the tables with the `Date` field, you can bind each field t
 
    ![Screenshot that shows referencing the fields.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-15.png)
 
-If you set the mapped column to **No*- for **Multi-select**, you must either use a single select mode in the slicer, or require single select in the filter card.
+If you set the mapped column to **No** for **Multi-select**, you must either use a single select mode in the slicer, or require single select in the filter card.
 
 ## Enable Select all
 
-You must take more steps to allow users to be able to use the **Select all*- option in a slicer or filter card. 
+You must take more steps to allow users to be able to use the **Select all** option in a slicer or filter card. 
 
 In this example, the Power BI Desktop model has a field called **Country**, which is a list of countries/regions bound to an M parameter called **countryNameMParameter**. This parameter is enabled for **Multi-select**, but not enabled for **Select all**. 
 
 ![Screenshot that shows an example of a multiselect M parameter.](media/desktop-dynamic-m-query-parameters/example-multi-select-m-parameter.png)
 
-1. Enable the **Select all*- toggle to enable the **Select all value*- input. Edit the **Select all value*- or note the default value.
+1. Enable the **Select all** toggle to enable the **Select all value** input. Edit the **Select all value** or note the default value.
 
    ![Screenshot that shows Select all for an M parameter.](media/desktop-dynamic-m-query-parameters/select-all-settings-parameter.png)
 
-   This value passes to the parameter as a list that contains the **Select all value*- you defined. Therefore, when you define this value or use the default value, make sure the value is unique and doesn't exist in the field that's bound to the parameter.
+   This value passes to the parameter as a list that contains the **Select all value** you defined. Therefore, when you define this value or use the default value, make sure the value is unique and doesn't exist in the field that's bound to the parameter.
    
-1. Launch the Power Query Editor, select the query, and then select **Advanced Editor**. Edit the M query to use the **Select all value*- to refer to the Select all option.
+1. Launch the Power Query Editor, select the query, and then select **Advanced Editor**. Edit the M query to use the **Select all value** to refer to the Select all option.
 
    ![Screenshot that shows an M query.](media/desktop-dynamic-m-query-parameters/m-query-screenshot.png)
 
-1. In the **Advanced Editor**, add a Boolean expression that evaluates to `true` if the parameter is enabled for **Multi-select*- and contains the **Select all value**, and otherwise returns `false`: 
+1. In the **Advanced Editor**, add a Boolean expression that evaluates to `true` if the parameter is enabled for **Multi-select** and contains the **Select all value**, and otherwise returns `false`: 
 
    ![Screenshot that shows an example Boolean expression for Select all.](media/desktop-dynamic-m-query-parameters/select-all-boolean-used-source-query.png)
 
@@ -144,7 +144,7 @@ In this example, the Power BI Desktop model has a field called **Country**, whic
 
    ![Screenshot that shows the Select all Boolean used in the source query.](media/desktop-dynamic-m-query-parameters/m-query-boolean-expression-select-all.png)
 
-1. Once you update your M query to account for the new **Select all value**, you can now use the **Select all*- function in slicers or filters.
+1. Once you update your M query to account for the new **Select all value**, you can now use the **Select all** function in slicers or filters.
 
 ![Screenshot that shows Select all in a slicer.](media/desktop-dynamic-m-query-parameters/select-all-slicer.png)
 
