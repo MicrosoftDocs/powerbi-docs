@@ -140,7 +140,7 @@ In this example, the Power BI Desktop model has a field called **Country**, whic
 
    ![Screenshot that shows an example Boolean expression for Select all.](media/desktop-dynamic-m-query-parameters/select-all-boolean-used-source-query.png)
 
-1. Incorporate the result of this Select all Boolean expression into the source query. The example has a Boolean query parameter in the source query called `includeAllCountries` that is set to the result of the Boolean expression from the previous step. You use this parameter in a filter clause in the query, such that `false` for the Boolean filters to the selected country or region names, and `true` effectively applies no filter.
+1. Incorporate the result of the Select all Boolean expression into the source query. The example has a Boolean query parameter in the source query called `includeAllCountries` that is set to the result of the Boolean expression from the previous step. You use this parameter in a filter clause in the query, such that `false` for the Boolean filters to the selected country or region names, and `true` effectively applies no filter.
 
    ![Screenshot that shows the Select all Boolean used in the source query.](media/desktop-dynamic-m-query-parameters/m-query-boolean-expression-select-all.png)
 
@@ -184,7 +184,7 @@ in
 
 ## Potential security risk
 
-Report readers who can dynamically set the values for M query parameters may be able to access more data or trigger modifications to the source system by using by using *injection attacks*. This possibility depends on how you reference the parameters in the M query and what values you pass to that parameter.
+Report readers who can dynamically set the values for M query parameters may be able to access more data or trigger modifications to the source system by using *injection attacks*. This possibility depends on how you reference the parameters in the M query and what values you pass to that parameter.
 
 For example, you have a parameterized Kusto query constructed as follows:
 
@@ -214,7 +214,7 @@ In this example, the attacker can get access to information about games that hav
 
 To mitigate the security risk, avoid string concatenation of M parameter values within the query. Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query.
 
-If a data source supports importing stored procedures, consider storing your query logic there and invoking it in M. Alternatively, if available, use a parameter passing mechanism that's built in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
+If a data source supports importing stored procedures, consider storing your query logic there and invoking it in the M query. Alternatively, if available, use a parameter passing mechanism that's built in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
 
 Here are some examples:
 
@@ -244,7 +244,7 @@ There are some considerations and limitations when you use dynamic M query param
 - Parameter names can't be DAX reserved words nor contain spaces. You can append `Parameter` to the end of the parameter name to help avoid this limitation.
 - Table names can't contain spaces or special characters.
 - If your parameter is the `Date/Time` data type, you need to cast it within the M query as `DateTime.Date(<YourDateParameter>)`.
-- If you use SQL sources, you might get a confirmation dialog every time the parameter value changes. This is due to a security setting: **Require user approval for new native database queries**. You can find and turn off this setting in the **Security** section of the Power BI Desktop **Options**.
+- If you use SQL sources, you might get a confirmation dialog every time the parameter value changes. This dialog is due to a security setting: **Require user approval for new native database queries**. You can find and turn off this setting in the **Security** section of the Power BI Desktop **Options**.
 
 ### Unsupported out-of-box parameter types:
 
