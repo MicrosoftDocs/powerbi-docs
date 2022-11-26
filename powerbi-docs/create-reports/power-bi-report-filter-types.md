@@ -12,7 +12,7 @@ LocalizationGroup: Reports
 ---
 # Types of filters in Power BI reports
 
-Filters don't all behave the same way because they're not created the same way. How you create them influences how they behave in the filter pane in editing mode. This article shows the different kinds of filters, the different ways you create them, and the different things they're good for. For more information, see [add filters to reports](power-bi-report-add-filter.md).
+Filters don't all behave the same way because they're not created the same way. How you create them influences how they behave in the filter pane in editing mode. This article describes the different kinds of filters, the different ways you create them, and the different things they're good for. For more information, see [add filters to reports](power-bi-report-add-filter.md).
 
 ![Screenshot of a sample Power BI Filter pane.](media/power-bi-report-filter-types/power-bi-filter-pane.png)
 
