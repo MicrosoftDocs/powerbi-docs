@@ -42,7 +42,7 @@ The following example passes a single value through to a parameter dynamically.
 
 1. In the **Manage Parameters** window, fill out the information about the parameter.
 
-   ![Screenshot that shows parameter information](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-03.png)
+   ![Screenshot that shows parameter information.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-03.png)
 
 1. Select **New** to add more parameters.
 
@@ -80,7 +80,7 @@ Create a table for each parameter with a column that provides the possible value
 
    ```EndDateTable = CALENDAR (DATE(2016,1,1), DATE(2016,12,31))```
 
-   ![Screenshot that shows the second table](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-09.png)
+   ![Screenshot that shows the second table.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-09.png)
 
    > [!NOTE]
    > Use a different column name that's not in an actual table. If they're the same name, the selected value is applied as a filter to the actual query.
