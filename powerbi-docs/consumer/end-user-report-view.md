@@ -59,13 +59,13 @@ You can also resize your entire browser to change the display size of your repor
 
 ## Zoom in on a visual
 
-Sometimes it's difficult to see the details in a visual. You can focus on one visual by itself and make it bigger by using Focus mode. For more information, see [Focus mode and Full screen mode](end-user-focus.md).
+Sometimes it's difficult to see the details in a visual. You can focus on one visual by itself to make it bigger by using Focus mode. For more information, see [Focus mode and Full screen mode](end-user-focus.md).
 
-### A visual in Focus mode
+The following example shows a visual in Focus mode.
 
 :::image type="content" source="media/end-user-report-view/power-bi-focus.png" alt-text="A screenshot of a visual open in focus mode.":::
 
-### A visual in Full screen mode
+The following example shows a visual in Full screen mode.
 
 :::image type="content" source="media/end-user-report-view/power-bi-visual-full-screen.png" alt-text="A screenshot of a visual open in full screen mode.":::
 
