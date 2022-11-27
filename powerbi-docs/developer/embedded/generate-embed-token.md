@@ -34,9 +34,6 @@ We recommend using workspace-based isolation with profiles, but if you want to u
 
 In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
->[!NOTE]
->The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API.
-
 ### Access Level
 
 Use the *allowEdit* parameter to grant the user viewing or editing permissions.
