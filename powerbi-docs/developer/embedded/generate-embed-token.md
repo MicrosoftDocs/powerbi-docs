@@ -8,32 +8,21 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 08/18/2022
+ms.date: 11/18/2022
 ---
 
 # Generate an embed token
 
 ✔️&nbsp;App&nbsp;owns&nbsp;data ❌&nbsp;User&nbsp;owns&nbsp;data
 
-[Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authorize your request against the Power BI service.
+[Generate token](/rest/api/power-bi/embed-token/generate-token) is a REST API that lets you generate a token for embedding a Power BI report or dataset in a web app or a portal. It can generate a token for a single item or for multiple reports or datasets. The token is used to authorize your request against the Power BI service.
 
 The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials in the app (effective identity).
 
 After successful authentication, access to the relevant data is granted.
 
-You can use APIs to generate a token for the following items:
-
-* [Dashboards](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
-
-* [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
-
-* [Generate an embed token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token)
-
-* [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
-
-* [Reports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
-
-* [Tiles](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
+> [!NOTE]
+> [Generate token](/rest/api/power-bi/embed-token/generate-token) is the newer, version 2 API that works for both reports and datasets, and single or multiple items. It's preferred over the legacy version 1 APIs [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) and [Reports GenerateTokenForCreateInGroup](/rest/api/power-bi/embed-token/reports-generate-token-for-create-in-group).
 
 ## Securing your data
 
@@ -50,17 +39,9 @@ In the generate token APIs, the *GenerateTokenRequest* section describes the tok
 
 ### Access Level
 
-Use the *accessLevel* parameter to determine the user's access level.
+Use the *allowEdit* parameter to grant the user viewing or editing permissions.
 
-* **View** - Grant the user viewing permissions.
-
-* **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
-
-    If you're using the [Generate token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
-
-* **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
-
-    For report creation, you must also supply the *datasetId* parameter.
+**Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report). For report creation, you must also supply the *datasetId* parameter.
 
 ### Saving a copy of the report
 
@@ -104,6 +85,20 @@ To embed Power BI report that has a dataset with a Direct Query connection to an
 ## Renew tokens before they expire
 
 Tokens come with a time limit. This means that after embedding a Power BI item, you have a limited amount of time to interact with it. To give your users a continuous experience, [renew (or refresh) the token before it expires](/javascript/api/overview/powerbi/refresh-token).
+
+## Dashboards and tiles
+
+The [Generate token](/rest/api/power-bi/embed-token/generate-token) works for reports and datasets. To generate an embed token for a dashboard or tile, use the version 1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embed-token/dashboards-generate-token-in-group) or [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group) APIs. These APIs generate tokens for only one item at a time. You can't generate a token for multiple items.
+
+For these APIs, use the *accessLevel* parameter to determine the user's access level.
+
+* **View** - Grant the user viewing permissions.
+
+* **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
+
+* **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
+
+    For report creation, you must also supply the *datasetId* parameter.
 
 ## Considerations and limitations
 
