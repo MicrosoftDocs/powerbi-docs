@@ -15,7 +15,7 @@ LocalizationGroup: Connect to data
 
 Power BI can connect to data by using existing connectors and generic data sources, like ODBC, OData, OLE DB, Web, CSV, XML, and JSON. Developers can also enable new data sources with custom data extensions called *custom connectors*. Microsoft certifies and distributes some custom connectors as *certified connectors*.
 
-To use non-certified custom connectors that you or another party develop, you must adjust your Power BI Desktop security settings to allow extensions to load without validation or warning. Because this code can handle credentials, including sending them over HTTP, and ignore privacy levels, you should only use this security setting if you completely trust your custom connectors.
+To use non-certified custom connectors that you or another party develop, you must adjust your Power BI Desktop security settings to allow extensions to load without validation or warning. These extensions can ignore privacy levels and handle credentials, including sending them over HTTP, so you should use this setting only if you completely trust your custom connectors.
 
 Another option is for the developer to sign the connector with a certificate, and provide the information you need to use the connector without changing your security settings. For more information, see [Trusted third-party connectors](desktop-trusted-third-party-connectors.md).
 
