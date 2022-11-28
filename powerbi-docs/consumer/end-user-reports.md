@@ -74,4 +74,4 @@ If you're a business user, you receive reports from report designers. The follow
 * To see which dataset the report is using and which dashboards are showing visuals from the report, see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
-> If you didn't find what you're looking for here, use the table of contents on this page to browse more articles.
+> If you didn't find what you're looking for here, use the table of contents on this page to browse more articles. 
