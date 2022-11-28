@@ -21,7 +21,7 @@ Custom branding changes the look of Power BI for your whole organization. Users 
 - Prepare your images for upload. You'll need these files:
   - A logo file that's saved in .png format, is 10 KB or smaller, and is at least 200 x 30 pixels. Choosing a PNG file makes sure your logo has a high-resolution appearance on all screens and at all zoom levels. The logo appears on every page.
   - A cover image that's saved in .jpg or .png format, is 1 MB or smaller, and is at least 1920 x 160 pixels. Get creative with your choice with an image that complements your theme color and feels welcoming. The cover image appears only at the top of Home.
-- Identify the hex or decimal code for your theme color. Your theme color appears on every page and provides the background for your logo. You should choose a color that complements your logo and cover image or that matches other custom branding in your organization.
+- Identify the hex or decimal code for your theme color. Your theme color appears on every page and provides the background for your logo. Choose a color that complements your logo and cover image or that matches other custom branding in your organization.
 
 The following image indicates where each of these elements appears in the Power BI service:
 
