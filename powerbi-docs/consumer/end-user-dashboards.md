@@ -59,4 +59,4 @@ How you interact with Power BI depends on your job role. As a consumer or busine
 * Learn how to use [Power BI Q&A](end-user-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
 
 > [!TIP]
-> Use the table of contents available on this page to find even more information.
+> Use the table of contents available on this page to find even more information. 
