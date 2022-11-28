@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.custom: video-RE4Y8Jv
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 11/28/2022
 LocalizationGroup: Reports
 ---
 # Let report readers use field parameters to change visuals (preview)
