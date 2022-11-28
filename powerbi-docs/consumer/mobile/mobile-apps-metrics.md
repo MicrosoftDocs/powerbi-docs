@@ -15,13 +15,16 @@ ms.custom: mode-portal
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) |
-|:--- |:--- |:--- |:--- |
-|iPhones |iPads |Android phones |Android tablets |
+| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Windows devices](././media/mobile-apps-metrics/win-10-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |:--- |
+|iPhones |iPads |Android phones |Android tablets | Windows devices
 
 The Power BI mobile apps make it easy for you to keep on top of your metrics while on the go. While scorecards and metrics are [created in the Power BI service](../../create-reports/service-goals-create.md), in the app you can monitor progress on your metrics, make check-ins to update progress, add notes, and, when a metric is connected to a report, easily open the associated report to dig deeper into the data.
 
-This article explains how to monitor your metrics on the mobile app and shows you how to update progress and to dig deeper into the data when the metric is connected to a report.
+This article explains how to monitor your metrics on the mobile apps for iOS and Android devices, and shows you how to update progress and to dig deeper into the data using those apps.
+
+> [!NOTE]
+> Monitoring, updating, and digging into metrics on the Power BI app for Windows devices is very similar to tracking your metrics in the Power BI service. See [Stay on top of your metrics](../../create-reports/service-goals-check-in.md) for detail.
 
 To read more about metrics, see [Get started with metrics in Power BI](../../create-reports/service-goals-introduction.md)
 
