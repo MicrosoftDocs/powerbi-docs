@@ -18,9 +18,9 @@ You can run Python scripts directly in Power BI Desktop and import the resulting
 
 - To run Python scripts in Power BI Desktop, you need to install Python on your local machine. You can download Python from the [Python website](https://www.python.org). The current Python scripting release supports Unicode characters and spaces in the installation path.
 
-- The Power BI Python integration requires the installation of the following two Python packages. In a console or shell, use the [pip](https://pip.pypa.io/en/stable) command-line tool to install the packages. The pip tool is packaged with recent Python versions.
+- The Power BI Python integration requires installation of the following two Python packages. In a console or shell, use the [pip](https://pip.pypa.io/en/stable) command-line tool to install the packages. The pip tool is packaged with recent Python versions.
 
-  - [Pandas](https://pandas.pydata.org) is a software library for data manipulation and analysis. Pandas offers data structures and operations for manipulating numerical tables and time series. To import into Power BI, Python data must be in a [pandas data frame](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). A data frame is a two-dimensional data structure, such as tables with rows and columns.
+  - [Pandas](https://pandas.pydata.org) is a software library for data manipulation and analysis. Pandas offers data structures and operations for manipulating numerical tables and time series. To import into Power BI, Python data must be in a [pandas data frame](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). A data frame is a two-dimensional data structure, such as a table with rows and columns.
 
   - [Matplotlib](https://matplotlib.org) is a plotting library for Python and its numerical mathematics extension [NumPy](https://www.numpy.org). Matplotlib provides an object-oriented API for embedding plots into general-purpose graphical user interface (GUI) applications for Python, such as Tkinter, wxPython, Qt, or GTK+.
 
