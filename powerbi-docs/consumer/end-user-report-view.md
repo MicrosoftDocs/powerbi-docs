@@ -71,4 +71,4 @@ The following example shows a visual in Full screen mode.
 
 ## Next steps
 
-- [Take a tour of the report Filters pane](end-user-report-filter.md)
+- [Take a tour of the report Filters pane](end-user-report-filter.md) 
