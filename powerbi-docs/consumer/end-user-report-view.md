@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/26/2022
+ms.date: 11/28/2022
 LocalizationGroup: Reports
 ---
 
@@ -37,7 +37,7 @@ If you don't want any scroll bars, but you want to make the best use of your scr
 
 :::image type="content" source="media/end-user-report-view/power-bi-view-fit.png" alt-text="A screenshot of a report set to Fit to page.":::
 
-Change your display colors by selecting **High contrast colors** in the **View** menu. Select one of the options, High-contrast #1, High-contrast #2, High-contrast black, or High-contrast white. This feature gives people with impaired vision more options to see the reports better. The example below is the High-contrast #1 option.
+Change your display colors by selecting **High contrast colors** in the **View** menu. Select one of the options, such as High-contrast #1, High-contrast #2, High-contrast black, or High-contrast white. This feature gives people with impaired vision options to see the reports better. The example below is the High-contrast #1 option.
 
 :::image type="content" source="media/end-user-report-view/power-bi-contrast1.png" alt-text="A screenshot of a report set to High contrast number 1.":::
 
@@ -49,13 +49,9 @@ When you exit the report, your **View** settings aren't saved. The changes rever
 
 ## Use your browser to change page display
 
-The zoom controls in your browser increase or decrease the available canvas area. Decreasing the zoom expands the available canvas area, and increasing the zoom decreases the available canvas area.
+Use the zoom controls in your browser to increase or decrease the available canvas area. Decreasing the zoom expands the available canvas area, and increasing the zoom decreases the available canvas area.
 
 :::image type="content" source="media/end-user-report-view/power-bi-zoom.png" alt-text="A screenshot showing the browser zoom controls.":::
-
-You can also resize your entire browser to change the display size of your report.
-
-![short video showing browser resizing](media/end-user-report-view/power-bi-resize-browser.gif)
 
 ## Zoom in on a visual
 
@@ -65,7 +61,7 @@ The following example shows a visual in Focus mode.
 
 :::image type="content" source="media/end-user-report-view/power-bi-focus.png" alt-text="A screenshot of a visual open in focus mode.":::
 
-The following example shows a visual in Full screen mode.
+The next example shows a visual in Full screen mode.
 
 :::image type="content" source="media/end-user-report-view/power-bi-visual-full-screen.png" alt-text="A screenshot of a visual open in full screen mode.":::
 
