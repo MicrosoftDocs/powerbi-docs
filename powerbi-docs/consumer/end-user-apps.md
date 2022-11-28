@@ -70,4 +70,4 @@ There are a few other ways to get apps. Some of these ways are listed below.
 ## Next steps
 
 * [Open and interact with an app](end-user-app-view.md)
-* [Other ways to share content](end-user-shared-with-me.md)
+* [Other ways to share content](end-user-shared-with-me.md) 
