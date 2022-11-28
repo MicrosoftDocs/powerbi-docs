@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -20,15 +20,23 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## December 2022
+
+### Track your metrics on the Windows app
+
+Now you can monitor your Power BI metrics and scorecards, and even check in progress, directly from the Windows app!
+
+![Screenshot of the metrics page in the Power BI app for Windows.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-metrics-windows-app.png)
+
 ## November 2022
 
-## Announcing the new Power BI accent color
+### Announcing the new Power BI accent color
 
 Power BI has updated its accent color to teal! This change improves color contrast and visibility in the user interface and makes using Power BI easier and more accessible.
 
 ## October 2022
 
-## New and improved metrics details pane
+### New and improved metrics details pane
 
 The newly designed metrics details pane is now easier to understand and use, and gives you even more data at a glance. [Check out our documentation](./mobile-apps-metrics.md#metric-detail-pane)!
 
