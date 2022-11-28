@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 04/14/2022
 ---
 
-# Embedded analytics application tokens
+# Embedded analytics access tokens
 
 ✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
 
