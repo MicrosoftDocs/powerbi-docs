@@ -37,7 +37,7 @@ Watch this video showing how to add page and bookmark navigators, and then try i
 
 On the **Insert** tab, select **Buttons** > **Navigator** > **Page navigator**.
 
-:::image type="content" source="media/desktop-buttons/navigator-in-ribbon.png" alt-text="Screenshot of the buttons dropdown menu, with Navigator selected.":::
+:::image type="content" source="media/desktop-buttons/navigator-in-ribbon.png" alt-text="Screenshot of the Buttons dropdown menu, with Navigator selected.":::
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -61,7 +61,7 @@ The page navigator is automatically in sync with your report pages, meaning:
 
 If you want to further customize the pages that show or hide in the page navigator, go to the **Format navigator** pane > **Pages** tab. There, you have the option to **Show/hide hidden pages** or **Show/hide tooltip pages**:
 
-:::image type="content" source="media/button-navigators/page-settings.png" alt-text="Screenshot of the Format navigator, highlighting  the Pages settings."lightbox="media/button-navigators/page-settings.png":::
+:::image type="content" source="media/button-navigators/page-settings.png" alt-text="Screenshot of the Format navigator, highlighting the Pages settings."lightbox="media/button-navigators/page-settings.png":::
 
 > [!NOTE]
 > If you’re testing out the page navigator in Power BI Desktop or in edit mode of the Power BI Service, you need to press Ctrl + click to navigate to the desired page.
@@ -118,7 +118,9 @@ If the bookmark you use for deselection is within the bookmark navigator, you ca
 :::image type="content" source="media/button-navigators/hide-deselection-bookmark-setting.png" alt-text="Screenshot the Bookmarks navigator option to Hide deselection bookmark."lightbox="media/button-navigators/hide-deselection-bookmark-setting.png":::
  
 ## Formatting options
-Just like with other buttons, there are lots of formatting options for the navigators including:
+
+Just like for other buttons, there are many formatting options for the navigators including:
+
 - Fill
 - Text
 - Outline
@@ -128,21 +130,25 @@ Just like with other buttons, there are lots of formatting options for the navig
 - Rotation
 
 The navigators also include two additional formatting options:
+
 - Grid layout
 - Selected state
 
 ### Grid layout
+
 The grid layout tab includes options to change the orientation of the navigator in the following forms:
+
 - Horizontal
 - Vertical
 - Grid  
 
-:::image type="content" source="media/button-navigators/grid-layout-settings.png" alt-text="Screenshot of Grid layout settings with sample button in the visual.":::
+:::image type="content" source="media/button-navigators/grid-layout-settings.png" alt-text="Screenshot of Grid layout settings with sample buttons in the visual.":::
 
 It also includes the option to change the **Padding** between buttons in the navigator.
 
 ### Selected state
+
 The navigators have the option to customize the Selected state of the button. You can use this option to help the selected state of the button stand out from the default state. In this example, we’ve customized both the **Fill** and **Text** formatting for the **Selected** state:
 
-:::image type="content" source="media/button-navigators/selected-state-settings.png" alt-text="Screenshot of Selected state settings.":::
+:::image type="content" source="media/button-navigators/selected-state-settings.png" alt-text="Screenshot of the Selected state settings in the Format navigator.":::
 
