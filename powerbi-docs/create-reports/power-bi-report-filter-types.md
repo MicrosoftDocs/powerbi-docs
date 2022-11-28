@@ -48,7 +48,7 @@ Cross-drill filters are automatically added to the pane when a drill-down filter
 
 ## Drillthrough filters
 
-Drillthrough filters get passed from one page to another via the drillthrough feature. They show up in the Drillthrough pane. There are two types of drillthrough filters. The first type invokes the drillthrough. If you can edit a report, you can edit, delete, clear, hide, or lock this type of filter. The second type gets passed to the target, based on the page-level filters of the source page. You can edit, delete, or clear this transient type of drillthrough filter. You can't lock or hide this filter for end users.
+Drillthrough filters get passed from one page to another via the drillthrough feature. They show in the Drillthrough pane. There are two types of drillthrough filters. The first type invokes the drillthrough. If you can edit a report, you can edit, delete, clear, hide, or lock this type of filter. The second type gets passed to the target, based on the page-level filters of the source page. You can edit, delete, or clear this transient type of drillthrough filter. You can't lock or hide this filter for end users.
 
 Read about [creating drillthrough filters](desktop-drillthrough.md).
 
