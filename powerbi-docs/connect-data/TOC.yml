@@ -265,8 +265,6 @@
       items: 
       - name: "Connect to services with apps"
         href: service-connect-to-services.md
-      - name: "Analyze Popular Stocks with Power BI"
-        href: service-connect-to-analyze-stocks.md
       - name: "COVID-19 US Tracking Report"
         href: service-connect-to-covid-19-tracking.md
       - name: "Crisis Communication Presence Report"
@@ -275,7 +273,7 @@
         href: service-connect-to-github.md
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
-      - name: "Emissions Impact Dashboard"
+      - name: "Emissions Impact Dashboard for Azure"
         href: service-connect-to-emissions-impact-dashboard.md
       - name: "Emissions Impact Dashboard for Microsoft 365"
         href: service-connect-emissions-impact-dashboard-microsoft-365.md

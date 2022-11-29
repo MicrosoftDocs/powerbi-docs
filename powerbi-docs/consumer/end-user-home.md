@@ -22,7 +22,13 @@ After you sign in to the Power BI service, select **Home** from the navigation p
 
 :::image type="content" source="media/end-user-home/power-bi-open-home.png" alt-text="A screenshot of the nav pane for the Power BI service with Home selected.":::
 
-Your Home page opens. The layout and content on Home is different for every user. New users have less content, but that changes as they use Power BI more often. Only the content that you can access appears on your Home. For example, if you don't have permissions to a report, that report doesn't appear on Home.
+Your Home page opens. The layout and content on Home is different for every user. New users have less content, but that changes as they use Power BI more often. Only the content that you can access appears on your Home. For example, if you don't have permissions to a report, that report doesn't appear on Home. 
+
+> [!NOTE]
+> The **Getting started** section on Home is being deprecated mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Learning/Knowledge center**. 
+>
+> :::image type="content" source="media/end-user-home/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
+
 
 ## Simplified layout and Expanded layout
 

@@ -3,7 +3,7 @@ title: "Create a paginated report with a Power BI shared dataset - Power BI Repo
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 01/17/2022
+ms.date: 10/27/2022
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: video-NfoOK4QRkhI
@@ -22,10 +22,11 @@ You can use a dataset that you create in Power BI Desktop as a data source for P
 Here's a list of what you need and don't need to use a shared dataset in Power BI Report Builder.
 
 - Power BI Report Builder. [Download and install Power BI Report Builder](https://aka.ms/pbireportbuilder).
-- The dataset doesn't have to be in a workspace in a Premium capacity, and you don't need to be a member of that workspace. 
+- The dataset can be in any workspace, and you don't need to be a member of that workspace.
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
-- You don't need a Power BI Pro or Premium Per User (PPU) license to create a paginated report in Report Builder. 
-- You do need a Power BI Pro or Premium Per User (PPU) license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
+- You don't need a Power BI Pro or Premium Per User (PPU) license to create a paginated report in Power BI Report Builder. 
+- You do need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license to publish your paginated report.
+- You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
 - Optional: If you want to follow along with this article, download the Power BI Desktop [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop and add a table with a lot of columns. In the **Format** pane, turn off **Totals**. Then publish it to a workspace in the Power BI service.
 
     ![Totals off](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
@@ -224,4 +225,4 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
