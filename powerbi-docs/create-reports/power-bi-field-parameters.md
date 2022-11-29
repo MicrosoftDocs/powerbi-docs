@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.custom: video-RE4Y8Jv
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 11/28/2022
 LocalizationGroup: Reports
 ---
 # Let report readers use field parameters to change visuals (preview)
@@ -54,11 +54,11 @@ Once you’ve created a field parameter, you can use the parameter to control th
 
 You can use the parameter in the field drop zones for a visual. Note that certain visual properties have restrictions on the number and type of fields that you can use.
 
-From the context menu, you can also choose if the field parameter shows the values or the display names of the selected field(s) for all non-slicer visuals. 
+From the context menu, you can also choose if the field parameter shows the values or the display names of the selected field(s). 
 
 - In the **Values** box, select the down arrow next to the parameter name and select **Show selected field**.
 
-    :::image type="content" source="media/power-bi-field-parameters/show-selected-field-setting.png" alt-text="Screenshot for non-slicer visuals, customize if the visual displays the values or the display names of the selected fields.":::
+    :::image type="content" source="media/power-bi-field-parameters/show-selected-field-setting.png" alt-text="Screenshot showing how to customize if the visual displays the values or the display names of the selected fields.":::
 
 ## Edit a field parameter
 
