@@ -46,7 +46,6 @@ At the top of each page, the **CapacityID** field allows you to select the capac
 
 The artifacts section is made up of two visuals, one on top of the other, in the left side of the page. The top visual is a stacked column table, and below it is a matrix table.
 
-
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Gen2 metrics app.":::
 
 #### Multi metric column chart
