@@ -1,6 +1,6 @@
 ---
 title: Package a Power BI visual
-description: Learn how to package a Power BI visual so it can be shared and imported by other users by using this tutorial.
+description: Learn how to enter property values, update an icon, and package a Power BI visual so it can be shared and imported by other users.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -23,11 +23,11 @@ Before you can load your custom visual into [Power BI Desktop](https://powerbi.m
 1. In **PowerShell**, stop the visual if it's running.
 2. In **VS Code**, navigate to the root folder of your visual project and open the *pbiviz.json* file.
 
-3. In the `visual` object, define the `displayName` value to what you want to be your visual's display name.
+3. In the `visual` object, set the `displayName` value to what you want to be your visual's display name.
 
     :::image type="content" source="media/custom-visual-develop-tutorial-format-options/display-name-viz.png" alt-text="Screenshot of VS Code, which shows the display name value is set to Circle Card.":::
 
-    The visual's display name appears in the **Visualizations** pane of Power BI when the cursor hovers over the visual icon.
+    The visual's display name appears in the **Visualizations** pane of Power BI when you hover the cursor over the visual icon.
 
 4. Fill in or modify the following optional fields in the *pbiviz.json* file:
     * `visualClassName`
