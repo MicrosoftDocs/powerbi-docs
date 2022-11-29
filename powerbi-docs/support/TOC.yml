@@ -51,7 +51,7 @@
   - name: Troubleshooting guide
     items:
     - name: Power BI
-      href: ../troubleshoot.md
+      href: ../troubleshoot/index.yml
       
       
 
