@@ -28,6 +28,26 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
 
 Before you can use the sample, you must first download the [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
+### Get the sample from the Power BI service
+
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+
+   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
+
+2. In the center of the workspace, select **Add content**.
+
+   :::image type="content" source="../media/power-bi-add-content.png" alt-text="Screenshot of the workspace, highlighting Add content.":::
+
+3. On the **Get Data** page that appears, select **Samples**.
+
+4. Select **Sales and Marketing Sample**, then choose **Connect**.
+
+   ![Screenshot of the Connect to sample option.](media/sample-sales-and-marketing/sales9.png)
+
+5. Power BI imports the sample and then adds a new dashboard, report, and dataset to your current workspace.
+
+   ![Screenshot of the Sales and Marketing Sample entry.](media/sample-sales-and-marketing/sales11.png)
+
 ### Get the .pbix file for this sample
 
 You can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
