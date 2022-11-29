@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: faq
-  ms.date: 09/02/2020
+  ms.date: 10/19/2022
   ms.custom: licensing support
   LocalizationGroup: Get started
 title: Frequently asked questions about Power BI
@@ -90,7 +90,7 @@ sections:
           * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
           * [Get started with Power BI as a *business user*](index.yml) article
           * [Join our community](https://community.powerbi.com/) and ask questions
-          * See [10 tips for getting help](../fundamentals/service-tips-for-finding-help.md) for more suggestions
+          * See [10 tips for getting help](../support/service-tips-for-finding-help.md) for more suggestions
           
       - question: |
          What browsers does Power BI support?

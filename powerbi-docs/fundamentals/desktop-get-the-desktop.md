@@ -55,7 +55,7 @@ There are a few advantages to getting Power BI Desktop from the Microsoft Store:
 The following consideration and limitations apply when you install Power BI Desktop from the Microsoft Store:
 
 * If you use the SAP connector, you may need to move your SAP driver files to the *Windows\System32* folder.
-* Installing Power BI Desktop from the Microsoft Store doesn't copy user settings from the .exe version. You might have to reconnect to your recent datasources and reenter your data source credentials. 
+* Installing Power BI Desktop from the Microsoft Store doesn't copy user settings from the .exe version. You might have to reconnect to your recent data sources and reenter your data source credentials. 
 
 > [!NOTE]
 > The Power BI Report Server version of Power BI Desktop is a separate and different installation from the versions discussed in this article. For information about the Report Server version of Power BI Desktop, see [Create a Power BI report for Power BI Report Server](../report-server/quickstart-create-powerbi-report.md).

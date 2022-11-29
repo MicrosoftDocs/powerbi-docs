@@ -56,7 +56,7 @@ There are two types of workspaces: *My workspace* and *workspaces*.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in a workspace.
 
--  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, each workspace member needs a Power BI Pro or Premium Per User (PPU) license. Read more about the [new workspaces](../collaborate-share/service-create-the-new-workspaces.md). 
+-  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, each workspace member needs a Power BI Pro or Premium Per User (PPU) license. Read more about [workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
     Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that will make up a Power BI app. So what is an *app*? It's a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro or Premium Per User (PPU) licenses.  
 
@@ -65,7 +65,7 @@ To learn more about sharing in general, start with [Ways to share dashboards you
 Now, on to the five Power BI building blocks.
 
 ## Dataflows
-A *dataflow* helps organizations to unify data from disparate sources. They are optional, and are often used in complex or larger projects. They represent data prepared and staged for use by datasets. Dataflows are surfaced in Power BI Desktop with a dedicated connector to enable reporting. When you connect to a dataflow, your dataset can use the previously prepared data and business logic, promoting a single source of the truth and data reusability.”They leverage the extensive collection of Microsoft data connectors, enabling the ingestion of data from on-premises and cloud-based data sources.
+A *dataflow* helps organizations to unify data from disparate sources. They are optional, and are often used in complex or larger projects. They represent data prepared and staged for use by datasets. Dataflows are surfaced in Power BI Desktop with a dedicated connector to enable reporting. When you connect to a dataflow, your dataset can use the previously prepared data and business logic, promoting a single source of the truth and data reusability. They leverage the extensive collection of Microsoft data connectors, enabling the ingestion of data from on-premises and cloud-based data sources.
 
 Dataflows are only created and managed in workspaces (but not *My Workspace*), and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they're scheduled to refresh on a recurring basis to store up-to-date data. They're great for preparing data for use—and potential re-use—by your datasets. For more information, see the [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md) article.
 

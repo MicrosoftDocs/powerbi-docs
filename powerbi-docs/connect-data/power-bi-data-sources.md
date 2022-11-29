@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 08/03/2022
+ms.date: 11/22/2022
 ---
 
 # Power BI data sources
@@ -63,7 +63,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Dataverse | Yes | Yes | Yes | Yes | No | Yes |
 | Delta Sharing | Yes | Yes | No | Yes | No | Yes |
 | Denodo | Yes | Yes | Yes | Yes | Yes | Yes |
-| Dremio | Yes | Yes | Yes | Yes | Yes | Yes |
+| Dremio | Yes | Yes | Yes | Yes | No | Yes |
 | Dynamics 365 (online) | Yes | Yes | No | No | No | No |
 | Dynamics 365 Business Central | Yes | Yes | No | No | No | Yes |
 | Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | No |
@@ -107,7 +107,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Intersystems IRIS | Yes | Yes | Yes | Yes | Yes | Yes |
 | Intune Data Warehouse | Yes | Yes | No | No | No | Yes |
 | Jethro ODBC | Yes | Yes | Yes | Yes | Yes | Yes |
-| JSON | Yes | Yes | No | Yes** | No <sup>3</sup> | Yes |
+| JSON | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Kognitwin | Yes | Yes | No | Yes | No | Yes |
 | Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes | Yes |
 
@@ -119,7 +119,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Marketo | Yes | Yes | No | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | Yes |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
-| Microsoft Exchange | Yes | Yes | No | Yes | No | No |
+| Microsoft Exchange | Yes | Yes | No | No | No | No |
 | Microsoft Exchange Online individual accounts  <sup>8</sup> | Yes | Yes | No | No | No | Yes |
 | Microsoft Graph Security | Yes | Yes | No | Yes | No | Yes |
 | Mixpanel | Yes | Yes | No | No | No | No |
@@ -139,7 +139,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No | No |
 | Planview Projectplace | Yes | Yes | No | No | No | Yes |
 | PostgreSQL | Yes | Yes | Yes | Yes | No | Yes |
-| Power BI dataflows | Yes | Yes | No | No | No | Yes |
+| Power BI dataflows | Yes | Yes | Yes | No | No | Yes |
 | Power BI datasets | Yes | Yes | Yes | No | No | No |
 | Power platform dataflows | Yes | Yes | No | No | No | Yes |
 | Python script | Yes | Yes <sup>4</sup> | No | Yes <sup>4</sup> | Yes | No |
@@ -158,8 +158,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SAP Business Warehouse Message Server | Yes | Yes | Yes | Yes | Yes | Yes |
 | SAP Business Warehouse Server | Yes | Yes | Yes | Yes | Yes | Yes |
 | SAP HANA | Yes | Yes | Yes | Yes | Yes | Yes |
-| SharePoint Folder | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
-| SharePoint List | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
+| SharePoint Folder | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
+| SharePoint List | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | SharePoint Online List | Yes | Yes | No | Yes | No | Yes |
 | Smartsheet | Yes | Yes | No | No | No | Yes |
 | Snowflake | Yes | Yes | Yes | Yes | No | Yes |
@@ -187,7 +187,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | tyGraph | Yes | Yes | No | No | No | No |
 | Usercube | Yes | Yes | No | Yes | No | Yes |
 | Vertica | Yes | Yes | Yes | Yes | Yes | Yes |
-| Web | Yes | Yes | No | Yes | Yes <sup>6</sup> | Yes |
+| Web | Yes | Yes | No | Yes | Yes <sup>5</sup> | Yes |
 | Webtrends | Yes | Yes | No | No | No | Yes |
 | Workforce Dimensions | Yes | Yes | No | Yes | No | Yes |
 | Workplace Analytics | Yes | Yes | No | Yes | No | No |

@@ -43,7 +43,7 @@ Use a pop-up window to explain how to purchase a license when an invalid (or exp
 
 ### Submission process
 
-Follow the [submission process](office-store.md#submit-your-custom-visual-to-appsource) and then navigate to the *Offer setup* tab. Select the *My product requires the purchase of a service* check box.
+Follow the [submission process](./office-store.md#submit-or-update-your-custom-visual-to-appsource) and then navigate to the *Offer setup* tab. Select the *My product requires the purchase of a service* check box.
 
 After the Power BI visual is validated and approved, the Microsoft AppSource listing for the IAP Power BI visual states, *more purchase may be required* under the pricing options.
 
@@ -149,7 +149,7 @@ When publishing a Power BI visual, consider the following recommendations to giv
 
 ## FAQ
 
-For more information about Power BI visuals, see  [Frequently asked questions about Power BI visuals with extra purchases](./power-bi-custom-visuals-faq.yml#visuals-with-additional-purchases).
+For more information about Power BI visuals, see [Frequently asked questions about Power BI visuals with extra purchases](/power-bi/developer/visuals/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## Next steps
 

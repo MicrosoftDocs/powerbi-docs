@@ -13,12 +13,33 @@ LocalizationGroup: Gateways
 
 # Azure Active Directory (Azure AD) SSO
 
-Azure AD SSO enables single sign on on the data gateway to cloud data sources that rely on Azure Active Directory (Azure AD)-based authentication. When you configure Azure AD SSO on the on-premises data gateway for an applicable data source, queries execute under the Azure AD identity of the user that interacts with the Power BI report.
+Azure AD SSO enables single sign-on on the data gateway to cloud data sources that rely on Azure Active Directory (Azure AD)-based authentication. When you configure Azure AD SSO on the on-premises data gateway for an applicable data source, queries execute under the Azure AD identity of the user that interacts with the Power BI report.
 
 While Azure Virtual Networks (VNets) offer network isolation and security for your resources on the Microsoft cloud, you now require a secure way to connect to these data sources. On-premises data gateways help you achieve that. Additionally, Azure AD SSO as explained above allows users to see only data that they have access to.
 
 >[!NOTE]
 > VNet data gateways, which are available in public preview for Power BI Premium Datasets, eliminate the need to install an on-premises data gateway for connecting to your VNet data sources. To learn more about VNet gateways and their current limitations, see [What is a virtual network (VNet) data gateway (Preview)](/data-integration/vnet/overview).
+
+The following data sources are currently not supported with Azure AD SSO using an on-premises data gateway behind an Azure vnet:
+  * Analysis Services
+  * ADLS Gen1
+  * ADLS Gen2
+  * Azure Blobs
+  * CDPA
+  * Exchange
+  * OData
+  * SharePoint
+  * SQL Server
+  * Web
+  * AzureDevOpsServer
+  * CDSTOData
+  * Cognite
+  * CommonDataService
+  * Databricks
+  * EQuIS
+  * Kusto (when using the newer “DataExplorer” function)
+  * VSTS
+  * Workplace Analytics
 
 For more information on SSO and list of data sources supported for Azure AD SSO, see [Overview of single sign-on (SSO) for on-premises data gateways in Power BI](service-gateway-sso-overview.md). 
 

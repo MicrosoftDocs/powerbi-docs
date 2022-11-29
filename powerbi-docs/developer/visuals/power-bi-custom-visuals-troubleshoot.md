@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 07/31/2022
 ---
 
@@ -52,4 +52,6 @@ Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft
 ## Next steps
 
 * [Setting up your Power BI environment](environment-setup.md)
-* [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml#organizational-power-bi-visuals)
+* [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml)
+
+More questions? [Try the Power BI Community](https://community.powerbi.com/)  

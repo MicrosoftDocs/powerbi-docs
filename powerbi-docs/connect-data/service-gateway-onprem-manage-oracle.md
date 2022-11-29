@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and Oracle data sources either for scheduled refresh or for DirectQuery.
 
 ## Connect to an Oracle database
-To connect to an Oracle database with the on-premises data gateway, the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, but will always match the 64-bit gateway.
+To connect to an Oracle database with the on-premises data gateway, the correct Oracle client software must be installed on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, that will always match the 64-bit gateway.
 
 Supported Oracle versions: 
 - Oracle Server 9 and later

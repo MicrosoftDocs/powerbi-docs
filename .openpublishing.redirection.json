@@ -6,13 +6,53 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-207-scorecard-in-app-wont-load-until-user-visits-workspace-first.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-203-decomposition-tree-shows-title-collapsed-level.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-175-unable-to-load-dataset-list-in-excel.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-166-dax-query-fails-parameter-case-sensitivity.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-164-filter-not-correct-after-applying-bookmark.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-152-uploading-paginated-report-with-same-name-fails.md",
             "redirect_url": "/power-bi/troubleshoot/index",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/admin/service-planned-maintenance.md",
-            "redirect_url": "power-bi/troubleshoot/service-planned-maintenance",
+            "redirect_url": "/power-bi/support/service-planned-maintenance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/service-planned-maintenance.md",
+            "redirect_url": "/power-bi/support/service-planned-maintenance",
             "redirect_document_id": false
         },
         {
@@ -284,6 +324,11 @@
             "source_path": "powerbi-docs/report-server/release-notes.md",
             "redirect_url": "/power-bi/report-server/whats-new",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/report-server/report-server-migration-tool.md",
+            "redirect_url": "/power-bi/report-server/whats-new",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/report-server/user-handbook-overview.md",
@@ -1791,6 +1836,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/power-bi-cannot-sign-in.md",
+            "redirect_url": "/power-bi/support/power-bi-cannot-sign-in",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-whitelist-urls.md",
             "redirect_url": "/power-bi/admin/power-bi-whitelist-urls",
             "redirect_document_id": true
@@ -1826,6 +1876,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md",
+            "redirect_url": "/power-bi/support/service-admin-capturing-additional-diagnostic-information-for-power-bi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-closing-your-account.md",
             "redirect_url": "/power-bi/enterprise/service-admin-closing-your-account",
             "redirect_document_id": true
@@ -1851,8 +1906,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-admin-health.md",
-            "redirect_url": "/power-bi/admin/service-admin-health",
+            "source_path": "powerbi-docs/admin/service-admin-health.md",
+            "redirect_url": "/power-bi/support/service-admin-health",
             "redirect_document_id": true
         },
         {
@@ -1972,8 +2027,13 @@
         },
         {
             "source_path": "powerbi-docs/service-collaborate-power-bi-workspace.md",
-            "redirect_url": "/power-bi/collaborate-share/service-collaborate-power-bi-workspace",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-collaborate-power-bi-workspace.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-create-distribute-apps.md",
@@ -1987,7 +2047,12 @@
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-workspaces-new-look.md",
-            "redirect_url": "/power-bi/collaborate-share/service-create-workspaces",
+            "redirect_url": "/power-bi/collaborate-share/service-create-the-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-create-workspaces.md",
+            "redirect_url": "/power-bi/collaborate-share/service-create-the-new-workspaces",
             "redirect_document_id": false
         },
         {
@@ -2041,9 +2106,19 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-interruption-notifications.md",
+            "redirect_url": "/power-bi/support/service-interruption-notifications",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-manage-app-workspace-in-power-bi-and-office-365.md",
-            "redirect_url": "/power-bi/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-modern-usage-metrics.md",
@@ -2053,7 +2128,7 @@
         {
             "source_path": "powerbi-docs/service-new-workspaces.md",
             "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-copy-refresh-access.md",
@@ -2077,8 +2152,13 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-disconnect.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-disconnect",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-disconnect.md",
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-introduction.md",
@@ -2092,8 +2172,13 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-manage-update-delete.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-manage-update-delete",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-manage-update-delete.md",
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-power-bi-get-started-third-party-apps.md",
@@ -2181,13 +2266,23 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-support-options.md",
+            "redirect_url": "/power-bi/support/service-support-options",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-tutorial-analyze-in-excel.md",
             "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/designer/service-upgrade-workspaces.md",
-            "redirect_url": "/power-bi/collaborate-share/service-upgrade-workspaces",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-upgrade-workspaces.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
             "redirect_document_id": true
         },
         {
@@ -2493,7 +2588,7 @@
         {
             "source_path": "powerbi-docs/desktop-use-onedrive-business-links.md",
             "redirect_url": "/power-bi/connect-data/desktop-use-onedrive-business-links",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/powerbi-azure-landing.md",
@@ -2612,12 +2707,22 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-search.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-azure-search",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-azure-search.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
-            "redirect_url": "/power-bi/collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business",
+            "redirect_url": "/power-bi/connect-data/desktop-use-onedrive-business-links",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
+            "redirect_url": "/power-bi/connect-data/desktop-use-onedrive-business-links",
             "redirect_document_id": true
         },
         {
@@ -2661,7 +2766,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/connect-data/service-connect-to-xero.md",
+            "source_path": "powerbi-docs/connect-data/service-connect-to-analyze-stocks.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
@@ -3593,7 +3698,7 @@
         {
             "source_path": "powerbi-docs/service-dashboard-create.md",
             "redirect_url": "/power-bi/create-reports/service-dashboard-create",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-dashboard-edit-tile.md",
@@ -3617,7 +3722,12 @@
         },
         {
             "source_path": "powerbi-docs/service-dashboard-pin-tile-from-report.md",
-            "redirect_url": "/power-bi/create-reports/service-dashboard-pin-tile-from-report",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-dashboard-pin-tile-from-report.md",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
             "redirect_document_id": true
         },
         {
@@ -3801,8 +3911,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-admin-portal-help-support.md",
+            "redirect_url": "/power-bi/support/service-admin-portal-help-support",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-tips-for-finding-help.md",
             "redirect_url": "/power-bi/fundamentals/service-tips-for-finding-help",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/service-tips-for-finding-help.md",
+            "redirect_url": "/power-bi/support/service-tips-for-finding-help",
             "redirect_document_id": true
         },
         {
@@ -3813,6 +3933,11 @@
         {
             "source_path": "powerbi-docs/supported-languages-countries-regions.md",
             "redirect_url": "/power-bi/fundamentals/supported-languages-countries-regions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-region-move.md",
+            "redirect_url": "/power-bi/support/service-admin-region-move",
             "redirect_document_id": true
         },
         {
@@ -4377,7 +4502,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.mdservice-premium-capacity-manage-gen2.md",
+            "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.md",
             "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage-gen2",
             "redirect_document_id": false
         }, 
@@ -4619,6 +4744,22 @@
         {
             "source_path": "powerbi-docs/enterprise/service-admin-governance.md",
             "redirect_url": "/power-bi/guidance/powerbi-adoption-roadmap-governance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-forgot-your-password.md",
+            "redirect_url": "/power-bi/admin/power-bi-cannot-sign-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/admin-tenant-settings.md",
+            "redirect_url": "/power-bi/admin/service-admin-portal-about-tenant-settings",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "powerbi-docs/admin/admin-microsoft-graph-metadata.md",
+            "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
             "redirect_document_id": false
         }
     ]           

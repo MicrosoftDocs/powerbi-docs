@@ -35,14 +35,15 @@ After you select a new location for Power BI Desktop to save the diagnostic info
 
 The diagnostics ZIP file might contain the following files and directories, based on what happened on your computer and your settings:
 
-- **ErrorsInfo.yaml** - Contains [details about the error that occurred](#details-about-the-error-that-occurred) and gets created only if an error dialog was shown.
-- **PackagingErrorsInfo.yaml** - Contains information about errors that occurred while collecting the information (if any).
+- **ErrorsInfo.yaml** - contains [details about the error that occurred](#details-about-the-error-that-occurred) and gets created only if an error dialog was shown.
+- **PackagingErrorsInfo.yaml** - Contains information about errors that have occurred while collecting the details (if any).
 - **AnalysisServicesInfo.trc** - Contains information [about the performance of your data model](#performance-of-your-data-model).
 - **SessionDeviceInfo.txt** - Contains [session and device information](#session-and-device-information).
 - **AutoPageRefresh.json** - Contains [the data refresh settings](#data-refresh-settings).
 - **CSDL.xml** - Describes the [structure of the data model](#structure-of-your-data-model).
 - **DataModelSchema.json** - Describes the [structure of the data model](#structure-of-your-data-model).
-- **Traces/ folder and files** - Contains more [session and device information](#session-and-device-information).
+- **Traces/ folder and files** - Contains additional [session and device information](#session-and-device-information).
+- **QuerySchemas/ folder and files** - Contains query information and data model structure for remote models.
 
 :::image type="content" source="media/desktop-diagnostics/desktop-diagnostics-03.png" alt-text="Screenshot of an Explorer window showing the path to the diagnostics zip file and the contents.":::
 
@@ -121,12 +122,13 @@ Error information is especially relevant if you're experiencing:
 
 The information collected is a text description of everything you can see in the data model view in Power BI Desktop, including:
 
-- Table information, including name, and number of rows.
-- Column information, including name, data types, number of distinct values, minimum and maximum values.
-- Relationships, including to or from tables and columns, direction, cardinality and other settings.
-- Calculated columns definitions.
-- Measure definitions.
-- Role definitions.
+- Table information, including name, number of rows
+- Column information, including name, data types, number of distinct values, minimum and maximum values
+- Relationships, including to/from which table and column, direction, cardinality and other settings
+- Calculated columns definitions
+- Measure definitions
+- Role definitions
+- Remote source structure and query
 
 Data model structure information is especially relevant if you're experiencing:
 

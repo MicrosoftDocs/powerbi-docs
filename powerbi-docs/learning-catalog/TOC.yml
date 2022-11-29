@@ -31,7 +31,7 @@
     - name: "Online course: Power BI embedded"
       href: developer-online-course.md
     - name: Introduction to DAX
-      href: /learn/paths/dax-power-bi/
+      href: /training/paths/dax-power-bi/
   - name: More learning resources
     expanded: true
     items:
