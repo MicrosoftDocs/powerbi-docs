@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 09/20/2022
 ---
 
 # View Power BI content shared with you from an external organization
@@ -42,6 +42,7 @@ Even though you need to have a Power BI artifact link to connect to an external 
 
 - Users must have an active Power BI account and Home tenant.
 - Users must be signed in to their Power BI home tenant, before they can access the content shared with them from an external tenant.
+- The app doesn't support cross-cloud B2B sharing scenarios, where a user's home tenant and the external item being shared with them are hosted in different clouds.
 - Conditional access and other Intune policies are not supported in Azure AD B2B and in Power BI mobile. That means that the app enforces only the home organization's policies, if they exist.
 - Push notifications are received from the home organization site only (even when the user is connected as a guest to an external organization). Opening the notification reconnects the app to the user's home organization site.
 - If the user shuts down the app, when reopened the app connects automatically to the user's home organization.

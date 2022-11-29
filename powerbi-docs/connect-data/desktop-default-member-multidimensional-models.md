@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 09/23/2022
 LocalizationGroup: Data from files
 ---
 # Work with multidimensional models in Power BI
@@ -47,16 +47,16 @@ Now let's imagine the following *default members* are set for these columns:
 
 * City > Seattle
 * State > WA
-* Country > US
+* Country or Region > US
 * Population > Large
 
 Now let's examine what happens when each of the columns is used in Power BI. When visuals group on the following columns, here are the results:
 
-* **City** - Power BI displays all the cities by clearing all the **default members** for *City*, *State*, *Country* but preserves the **default member** for *Population*; Power BI cleared the entire ARP for *City*.
+* **City** - Power BI displays all the cities by clearing all the **default members** for *City*, *State*, *Country or Region* but preserves the **default member** for *Population*; Power BI cleared the entire ARP for *City*.
     > [!NOTE]
     > *Population* is not in the ARP path of *City*, it is solely related to *State* and thus Power BI doesn't clear it.
-* **State** - Power BI displays all the *States* by clearing all **default members** for *City*, *State*, *Country* and *Population*.
-* **Country** - Power BI displays all the countries by clearing all **default members** for *City*, *State* and *Country*, but preserves the **default member** for *Population*.
+* **State** - Power BI displays all the *States* by clearing all **default members** for *City*, *State*, *Country or Region* and *Population*.
+* **Country or Region** - Power BI displays all the countries/regions by clearing all **default members** for *City*, *State* and *Country or Region*, but preserves the **default member** for *Population*.
 * **City and State** - Power BI clears all **default members** for all columns.
 
 Groups displayed in the visual have their entire ARP path cleared. 

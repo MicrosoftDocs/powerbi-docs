@@ -2,7 +2,7 @@
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 01/12/2022
+ms.date: 09/07/2022
 ms.author: davidi
 ---
 
@@ -15,17 +15,3 @@ The current limitations for row-level security on cloud models are as follows:
 * Service principals cannot be added to an RLS role. Accordingly, RLS won’t be applied for apps using a service principal as the final effective identity.
 * Only Import and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
 * The Test as role/View as role feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled.
-
-## Issue: Republishing when RLS is configured
-
-There's a known issue where you'll get an error message if you try to publish a previously published report from Power BI Desktop. The scenario is as follows:
-
-1. Anna has a dataset that is published to the Power BI service and has configured RLS.
-
-1. Anna updates the report in Power BI Desktop and republishes.
-
-1. Anna receives an error.
-
-### Workaround
-
-Republish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by selecting **Get Data** > **Files**.

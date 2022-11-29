@@ -377,9 +377,6 @@ button.addEventListener("click", (mouseEvent) => {
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Bind visual properties to data points](objects-properties.md#objects-selector)
-
-> [!div class="nextstepaction"]
 > [Handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)
 
 > [!div class="nextstepaction"]

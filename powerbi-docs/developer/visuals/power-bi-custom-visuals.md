@@ -7,9 +7,9 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 07/17/2022
+ms.date: 11/2/2022
 LocalizationGroup: Visualizations
-ms.custom: intro-overview
+ms.custom: intro-overview, engagement-fy23
 ---
 
 # What are custom visuals in Power BI and where can I get them?
@@ -63,11 +63,14 @@ For more information on how to assign licenses see [Licensing and transactabilit
 
 To see how licenses are enforced, see [custom visual licenses](./custom-visual-licenses.md)
 
+[More questions about assigning and managing licenses?](./licensing-faq.yml)
+
 ### Certified Power BI visuals
 
 Certified Power BI visuals are visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet certain specified code requirements that the Microsoft Power BI team has tested and approved. The tests are designed to check that the visual doesn't access external services or resources.
 
-To view the list of certified Power BI visuals, or to submit your own, see [Certified Power BI visuals](power-bi-custom-visuals-certified.md).
+To view the list of certified Power BI visuals, go to [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+To submit your own visual for certification, see [Certified Power BI visuals](power-bi-custom-visuals-certified.md).
 
 ### Sample reports for Power BI visuals
 
@@ -100,6 +103,8 @@ If you're a web developer and want to create your own visual and add it to AppSo
 > [!WARNING]
 > A Power BI custom visual could contain code with security or privacy risks. Make sure you trust the author and source before importing it to your report.
 
+For some examples of Power BI custom visuals available for downloading on github, see [Examples of Power BI visuals](./samples.md).
+
 ## Considerations and limitations
 
 Licensed visuals aren't supported in the following environments. Therefore, if licensed visuals are used in these environments, Power BI can't tell the ISV if the user is licensed, nor will it block the visual.
@@ -114,5 +119,6 @@ Licensed visuals aren't supported in the following environments. Therefore, if l
 * [Develop a Power BI circle card visual](develop-circle-card.md)
 * [Power BI visuals project structure](visual-project-structure.md)
 * [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md)
-* [Frequently asked questions](power-bi-custom-visuals-faq.yml)
-* [Power BI Community](https://community.powerbi.com/)
+* [Examples of Power BI visuals](./samples.md)
+
+More questions? try the [Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/29/2022
+ms.date: 09/18/2022
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -44,7 +44,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 After you've deployed Microsoft 365, you can add a Power BI Pro subscription. To buy the Power BI Pro government service, follow the guidance in [Enroll your US government organization](service-govus-signup.md). Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
 
 > [!IMPORTANT]
-> Power BI US Government isn't available as a *Free* license. If you've purchased Power BI Premium, you don't have to assign licenses to users to allow them to consume content published to a Premium capacity. For all other access, including publishing content to the Premium capacity, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues.
+> Power BI US Government isn't available as a *Free* license. If you've purchased Power BI Premium, you don't have to assign licenses to users to allow them to consume content published to a Premium capacity. For all other access, including access to the admin portal and the ability to publish content to the Premium capacity, each user must be assigned a *Pro* or *Premium Per User (PPU)* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues.
 > 
 > To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
 >
@@ -125,7 +125,7 @@ There are some limitations to the B2B experience that you should be aware of:
 
 To accommodate the requirements of government cloud customers, government plans differ from commercial plans in some respects. Our goal is to make all features available in government clouds within 30 days of general availability. In a few cases, underlying dependencies prevent us from making a feature available. 
 
-The following table lists features that aren't yet available in a particular government environment or that are available with limited functionality. The table uses the following keys:
+The following table lists features of Power BI that aren't yet available in a particular government environment or that are available with limited functionality. The table uses the following keys:
 
 | Key | Description |
 |-----|------|
@@ -152,6 +152,8 @@ If a release is planned for an environment, we include the quarter of estimated 
 <sup>1</sup> Although B2B collaboration is available for GCC, external users must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B collaboration for US government, see [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
+
+For more information about support for Power BI components in Power Apps, see [Power Apps US Government feature limitations](/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
 
 ## Next steps
 

@@ -182,7 +182,7 @@ The type of upgrade and trial options that you are offered will depend on how yo
 [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)
 
 [Power BI features by license type](../consumer/end-user-features.md)    
-[Tips for finding help](../fundamentals/service-tips-for-finding-help.md)    
+[Tips for finding help](../support/service-tips-for-finding-help.md)    
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

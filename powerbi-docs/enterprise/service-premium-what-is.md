@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 06/29/2022
+ms.date: 09/14/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -60,6 +60,7 @@ For more information about Premium per user, including a feature comparison and 
 With Power BI Premium, you get *reserved capacities*. In contrast to a shared capacity where workloads' analytics processing run on computational resources shared with other customers, a reserved capacity is for exclusive use by an organization. It's isolated with reserved computational resources, which provide dependable and consistent performance for hosted content. Note that the processing of the following types of Power BI content is stored in shared capacity rather than your reserved capacity:
 
 * Excel workbooks (unless data is first imported into Power BI Desktop)
+* Analyze in Excel
 * [Push datasets](/rest/api/power-bi/pushdatasets)
 * [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 * [Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
@@ -182,7 +183,7 @@ The Power BI REST APIs include a collection of [Capacities APIs](/rest/api/power
 
 ## Large datasets
 
-Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbix) model files up to a maximum of **10 GB** in size. When loaded, the model can then be published to a workspace assigned to a Premium capacity. The dataset can then be refreshed to up to **12 GB** in size.
+Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbix) model files up to a maximum of **10 GB** in size. When loaded, the model can then be published to a workspace assigned to a Premium capacity.
 
 ### Size considerations
 
@@ -220,8 +221,6 @@ Incremental refresh provides an integral part of having and maintaining large da
 ## Paginated reports
 
 Paginated reports, supported on all EM, A and P SKU's in Premium Gen2, are based on Report Definition Language (RDL) technology in SQL Server Reporting Services. While based on RDL technology, it's not the same as Power BI Report Server, which is a downloadable reporting platform you can install on-premises, also included with Power BI Premium. Paginated reports are formatted to fit well on a page that can be printed or shared. Data is displayed in a table, even if the table spans multiple pages. By using the free [**Power BI Report Builder**](https://aka.ms/pbireportbuilder) Windows Desktop application, users author paginated reports and publish them to the service.
-
-In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%. 
 
 ## Premium features unique to Dataflows
 

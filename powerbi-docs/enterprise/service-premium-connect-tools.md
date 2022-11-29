@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 04/21/2022
+ms.date: 11/03/2022
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -127,7 +127,7 @@ With some tools, such as SQL Server Profiler, you must specify an *Initial Catal
 
 ### Duplicate workspace names
 
-[New workspaces](../collaborate-share/service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. Workspaces that haven't been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
+[Workspaces](../collaborate-share/service-new-workspaces.md) in Power BI impose validation to disallow creating or renaming workspaces with duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
 
 **Cannot connect to `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.**
 
@@ -178,30 +178,37 @@ The following table describes the implications of the setting **Export data** fo
 
 Access through the XMLA endpoint will honor security group membership set at the workspace/app level.
 
-Workspace contributors and above have write access to the dataset and are therefore equivalent to Analysis Services database admins. They can deploy new datasets from Visual Studio and execute TMSL scripts in SSMS.
+Workspace contributors and above have Write dataset permissions, which are effectively the same as Analysis Services database admins. They can deploy new datasets from Visual Studio and execute TMSL scripts in SSMS.
 
-Operations that require Analysis Services server admin permissions (rather than database admin) such as server-level traces and user impersonation using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property are not supported in Premium workspaces at this time.
+Users with Build dataset permissions are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
 
-Other users who have [Build permission](../connect-data/service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
+Operations that require Analysis Services server admin permissions (rather than database admin) in general are not supported.
+
+### Impersonation
+
+User impersonation by using the [EffectiveUserName connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth)  is supported when connecting to Premium workspace datasets. The account specified in EffectiveUserName must be in the tenant's Azure Active Directory and must have both **Read** and **Build** permissions for the dataset being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail, and an error is returned.
+
+You can also perform impersonation by specifying one or more workspace roles in the [Roles connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#roles). With the Roles property, you can test downgrading role members with Write permissions to Read permissions. The following Role permissions apply depending on the account of the user signed in:
+
+- If the user performing impersonation *is* a workspace admin, which is effectively the same as a server admin in Analysis Services, they do not need to be a member of any of the specified roles.
+
+- If the user performing impersonation  *is not* a workspace admin, they must belong to one or more of the specified roles, otherwise a user not found or no permissions type error is returned.
 
 ### Model roles
 
-With the XMLA endpoint, roles can be defined for a dataset, role membership can be defined for Azure Active Directory (Azure AD) users, and row-level security (RLS) filters can be defined. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
+With the XMLA endpoint, roles, role membership, row-level security (RLS), and object-level security (OLS) can be defined for users in the tenant's Azure Active Directory (AAD). Model roles in Power BI are used only for RLS and OLS. Use the Power BI security model to control permissions beyond RLS and OLS.
 
-For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined by using SSMS to create role objects and define role properties. In most cases, however, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
+For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined in Power BI Desktop prior to publishing to the service. Role membership is specified in the Power BI service. SSMS can also be used to create and manage roles. In most cases, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
-The following limitations apply when working with dataset roles through the XMLA endpoint:
+The following limitations apply when working with roles through the XMLA endpoint:
 
-- The only permission for a *role* that can be set for datasets is Read permission. Other permissions are granted using the Power BI security model.
-- Service Principals, which require workspace Member or Admin permissions cannot be added to roles.
+- The only permission for a role that can be set for datasets is Read permission. Other permissions are granted using the Power BI security model.
+- Service Principals do not work with RLS and OLS, and cannot be added as model role members.
 - Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles.
-- The "Roles=" connection string property can be used to test downgrading role members with Write permissions to Read permissions. The member account must still be a member of the relevant RLS role. This is different than using Impersonation with SQL Server Analysis Services or Azure Analysis Services where if the account is a server admin, the RLS role membership is assumed. For Premium workspaces, since there is no server admin, the account must belong to a role in order for RLS to be applied.
 
-To learn more, see [Roles in tabular models](/analysis-services/tabular-models/roles-ssas-tabular).
+### Setting data source credentials
 
-### Setting data-source credentials
-
-Metadata specified through the XMLA endpoint can create connections to data sources, but cannot set data-source credentials. Instead, credentials can be set in the dataset settings page in the Power BI Service.
+Metadata specified through the XMLA endpoint can create connections to data sources, but cannot set data source credentials. Instead, credentials can be set in the dataset settings page in the Power BI Service.
 
 ### Service principals
 
@@ -262,6 +269,9 @@ Unlike configuring refresh in the Power BI service, refresh operations through t
 
 Date, time, and status for dataset refresh operations that include a write transaction through the XMLA endpoint are recorded and shown in dataset Refresh history.
 
+>[!NOTE]
+>Refresh operations performed by the XMLA endpoint, don't automatically refresh tile caches. Tile caches are only refreshed when a user accesses the report.
+
 :::image type="content" source="media/service-premium-connect-tools/refresh-history-via-xmla.png" alt-text="Refresh history  via XMLA endpoint":::
 
 ## Dynamic Management Views (DMV)
@@ -277,9 +287,9 @@ XMLA write operations on datasets authored in Power BI Desktop and published to 
 > [!CAUTION]
 > At this time, a write operation on a dataset authored in Power BI Desktop will prevent it from being downloaded back as a PBIX file. Be sure to retain your original PBIX file.
 
-### Data-source declaration
+### data source declaration
 
-When connecting to data sources and querying data, Power BI Desktop uses Power Query M expressions as inline data source declarations. While supported in Premium workspaces, Power Query M inline data-source declaration is not supported by Azure Analysis Services or SQL Server Analysis Services. Instead, Analysis Services data modeling tools like Visual Studio create metadata using *structured* and/or *provider* data source declarations. With the XMLA endpoint, Premium also supports structured and provider data sources, but not as part of Power Query M inline data source declarations in Power BI Desktop models. To learn more, see [Understanding providers](/azure/analysis-services/analysis-services-datasource#understanding-providers).
+When connecting to data sources and querying data, Power BI Desktop uses Power Query M expressions as inline data source declarations. While supported in Premium workspaces, Power Query M inline data source declaration is not supported by Azure Analysis Services or SQL Server Analysis Services. Instead, Analysis Services data modeling tools like Visual Studio create metadata using *structured* and/or *provider* data source declarations. With the XMLA endpoint, Premium also supports structured and provider data sources, but not as part of Power Query M inline data source declarations in Power BI Desktop models. To learn more, see [Understanding providers](/azure/analysis-services/analysis-services-datasource#understanding-providers).
 
 ### Power BI Desktop in live connect mode
 

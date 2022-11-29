@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 09/13/2021
+ms.date: 09/20/2022
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams
@@ -59,17 +59,17 @@ The Power BI service connects to many data sources, including Excel files that l
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-upload.png" alt-text="Screenshot of the Upload a file option.":::
 
 1. Select **Local File**, browse to where you saved the Financial Sample Excel file, and select **Open**.
-7. On the **Local File** page, select **Import**.
+1. On the **Local File** page, select **Import**.
 
     Now you have a Financial Sample dataset. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-dataset.png" alt-text="Screenshot of My Workspace with Financial Sample dataset.":::
 
-2. You want to create a report. Still in **My workspace**, select **New** > **Report**.
+1. You want to create a report. Still in **My workspace**, select **New** > **Report**.
 
    ![Screenshot of the New report option.](media/service-from-excel-to-stunning-report/power-bi-new-report.png)
 
-3. In the **Select a dataset to create a report** dialog box, select your **Financial Sample** dataset > **Create**.
+1. In the **Select a dataset to create a report** dialog box, select your **Financial Sample** dataset > **Create**.
 
    ![Screenshot of Select a dataset dialog box.](media/service-from-excel-to-stunning-report/power-bi-select-dataset.png)
 
@@ -83,39 +83,39 @@ You see the Sigma symbols in the Fields list? Power BI has detected that those f
 
 1. To have more room for the report canvas, select **Hide the navigation pane**, and minimize the **Filters** pane.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-hide-nav-pane.png" alt-text="Screenshot of minimizing the navigation pane."::: 
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-hide-nav-pane.png" alt-text="Screenshot of minimizing the navigation pane.":::
 
-1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Fields** pane, drag **Profit** to the report canvas. 
+1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Fields** pane, drag **Profit** to the report canvas.
 
-   By default, Power BI displays a column chart with one column. 
+   By default, Power BI displays a column chart with one column.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-profit-column.png" alt-text="Screenshot of column chart with one column.":::
 
-3. Drag **Date** to the report canvas. 
+1. Drag **Date** to the report canvas.
 
    Power BI updates the column chart to show profit by date.
 
-   ![Screenshot of column chart in report editor.](media/service-from-excel-to-stunning-report/power-bi-profit-date.png)
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-profit-date.png" alt-text="Screenshot of column chart in report editor.":::
 
     December 2014 was the most profitable month.
-   
+
     > [!TIP]
     > If your chart values don't look as you expect, check your aggregations. For example, in the **Values** well, select the **Profit** field you just added and ensure the data is being aggregated the way you'd like it. In this example, we're using **Sum**.
-    > 
+    >
 
 ### Create a map
 
-Your manager wants to know which countries are the most profitable. Impress your manager with a map visualization. 
+Your manager wants to know which countries/regions are the most profitable. Impress your manager with a map visualization.
 
-1. Select a blank area on your report canvas. 
+1. Select a blank area on your report canvas.
 
 2. From the **Fields** pane, drag the **Country** field to your report canvas, then drag the **Profit** field to the map.
 
    Power BI creates a map visual with bubbles representing the relative profit of each location.
 
-   ![Screenshot of map visual in report editor.](media/service-from-excel-to-stunning-report/power-bi-map-visual.png)
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of map visual in report editor.":::
 
-    Looks like the European countries are outperforming the North American countries.
+    Looks like the European countries/regions are outperforming the North American countries/regions.
 
 ### Create a visual showing sales
 
@@ -123,15 +123,15 @@ What about displaying a visual showing sales by product and market segment? Easy
 
 1. Select the blank canvas.
 
-1. In the **Fields** pane, select the **Sales**, **Product**, and **Segment** fields. 
-   
-   Power BI creates a clustered column chart. 
+1. In the **Fields** pane, select the **Sales**, **Product**, and **Segment** fields.
 
-2. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**. 
+   Power BI creates a clustered column chart.
 
-   ![Screenshot of Stacked column chart in report editor.](media/service-from-excel-to-stunning-report/power-bi-stacked-column.png)
+1. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**.
 
-3. To sort the chart, select **More options** (...) > **Sort by**.
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-stacked-column.png" alt-text="Screenshot of Stacked column chart in report editor.":::
+
+1. To sort the chart, select **More options** (**...**) > **Sort by**.
 
 ### Spruce up the visuals
 

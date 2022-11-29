@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 03/25/2021
+ms.date: 08/12/2022
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -32,9 +32,9 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Create Power BI reports in the browser | No | Yes |  |
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) |
 | Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../collaborate-share/service-create-distribute-apps.md) |
+| Dynamic M Query Parameters | No | Yes | |
 | Gateway required | No | Yes for on-premises data sources |  |
 | Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) |
-| Organizational content packs | No | Yes | Organizational content packs are being deprecated, and replaced by template apps. |
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
 | Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports/paginated-reports-report-builder-power-bi.md) in a Premium capacity |
@@ -49,7 +49,6 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Many-to-many relationships | No | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
 | Cross-report drillthrough | No | Yes | [Use cross-report drillthrough](../create-reports/desktop-cross-report-drill-through.md) |
 | Full-screen mode | No | Yes | [Full-screen mode](../consumer/end-user-focus.md) in the Power BI service |
-| Advanced Microsoft 365 collaboration | No | Yes | [Collaborate in a workspace](../collaborate-share/service-collaborate-power-bi-workspace.md) with Microsoft 365 |
 | R scripts and visuals | No | Yes | [Create R visuals](../create-reports/desktop-r-visuals.md) and run R scripts in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with R scripts or visuals to Power BI Report Server.  |
 | Python scripts and visuals | No | Yes | [Create Python scripts](../connect-data/desktop-python-scripts.md) and visuals in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with Python scripts or visuals to Power BI Report Server. |
 | Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features |

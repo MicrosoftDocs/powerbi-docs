@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 02/20/2020
+ms.date: 09/22/2022
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
 LocalizationGroup: Connect to services
 ---

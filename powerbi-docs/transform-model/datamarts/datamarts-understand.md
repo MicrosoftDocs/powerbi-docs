@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 05/24/2022
+ms.date: 09/12/2022
 LocalizationGroup: Data from files
 ---
 # Understand datamarts
@@ -54,6 +54,34 @@ Incremental refresh and real-time data for datamarts offers the following advant
 * Resource consumption is reduced
 * Enables you to create large datamarts
 * Easy to configure
+
+
+## Understand proactive caching
+
+Proactive caching enables automatic import of the underlying data for the auto-generated dataset so you don't need to manage or orchestrate the storage mode. Import mode for the auto-generated dataset provides performance acceleration for the datamart's dataset by using the fast Vertipaq engine. By using proactive caching, Power BI changes the storage mode of your model to import, which uses the in-memory engine in Power BI and Analysis Services.
+
+Proactive caching works in the following way: after each refresh, the storage mode for the auto-generated dataset is changed to DirectQuery. Proactive caching builds a side-by-side import model asynchronously and is managed by the datamart, and does not impact availability or performance of the datamart. Queries coming in after the auto-generated dataset is complete will use the import model.
+
+Auto-generation of the import model occurs within approximately ten minutes after no changes are detected in the datamart. Changes to the import dataset include the following:
+
+* Refreshes
+* New data sources
+* Schema changes:
+    * New data sources
+    * Updates to data preparation steps in Power Query Online
+* Any modeling updates, such as:
+    * Measures
+    * Hierarchies
+    * Descriptions
+
+### Best practices for proactive caching
+
+Use *Deployment Pipelines* for changes to ensure the best performance, and to ensure users are using the import model. Using *Deployment Pipelines* is already a best practice for building datamarts, but doing so ensures you take advantage of the proactive caching more often.
+
+### Considerations and limitations for proactive caching
+
+* Power BI currently caps the duration of caching operations to ten minutes.
+* Constraints of uniqueness/non-null for particular columns will be enforced in the Import model and will fail the cache building if the data does not conform.
 
 
 ## Next steps

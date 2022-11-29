@@ -107,8 +107,6 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 * The ADLS Gen 2 account must be accessible by the user trying to create the dataflow
 
-* Creating dataflows from CDM folders is only available in the new workspace experience
-
 * The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core is not supported
 
 ## Create a dataflow using import/export
