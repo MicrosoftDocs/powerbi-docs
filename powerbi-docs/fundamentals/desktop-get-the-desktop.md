@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 02/15/2022
+ms.date: 11/29/2022
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -17,7 +17,7 @@ With Power BI Desktop, you can build advanced queries, models, and reports that 
 To get Power BI Desktop, you can use one of the two approaches.
 
 * [Install as an app from the Microsoft Store](#install-as-an-app-from-the-microsoft-store).
-* [Download directly, as an executable you download and install on your computer](#download-power-bi-desktop-directly).
+* [Download directly, as an executable and install on your computer](#download-power-bi-desktop-directly).
 
 Either of the two approaches gets the latest version of Power BI Desktop onto your computer. However, there are some differences worth noting, as described in the following sections.
 
@@ -45,17 +45,16 @@ There are a few ways to access the most recent version of Power BI Desktop from 
 
 There are a few advantages to getting Power BI Desktop from the Microsoft Store:
 
-* **Automatic updates**: Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date.
-* **Smaller downloads**: Microsoft Store ensures only components that have changed in each update are downloaded to your machine, resulting in smaller downloads for each update.
-* **Admin privilege isn't required**: When you download the package directly and install it, you must be an administrator for the installation to complete successfully. If you get Power BI Desktop from the Microsoft Store, the install doesn't require admin privilege.
-* **IT roll-out enabled**: Through the Microsoft Store for Business, you can more easily deploy, or *roll out*, Power BI Desktop to everyone in your organization
-
+* **Automatic updates**: Windows downloads the latest version automatically in the background as soon as it's available, so your version is always up to date.
+* **Smaller downloads**: Microsoft Store ensures only components that changed in each update are downloaded to your computer, resulting in smaller downloads for each update.
+* **Admin privilege isn't required**: When you download the package directly and install it, you must be an administrator for the installation to complete successfully. If you get Power BI Desktop from the Microsoft Store, the install doesn't require admin rights.
+* **IT roll-out enabled**: Through the Microsoft Store for Business, you can deploy, or *roll out*, Power BI Desktop to everyone in your organization.
 * **Language detection**: The Microsoft Store version includes all supported languages, and checks the language used on your computer each time it's launched. This language support also affects the localization of models created in Power BI Desktop. For example, built-in date hierarchies match the language that Power BI Desktop is using when the .pbix file is created.
 
-The following consideration and limitations apply when you install Power BI Desktop from the Microsoft Store:
+The following consideration and limitation apply when you install Power BI Desktop from the Microsoft Store:
 
-* If you use the SAP connector, you may need to move your SAP driver files to the *Windows\System32* folder.
-* Installing Power BI Desktop from the Microsoft Store doesn't copy user settings from the .exe version. You might have to reconnect to your recent datasources and reenter your data source credentials.
+* If you use the SAP connector, you might need to move your SAP driver files to the *Windows\System32* folder.
+* Installing Power BI Desktop from the Microsoft Store doesn't copy user settings from the .exe version. You might have to reconnect to your recent data sources and re-enter your credentials.
 
 > [!NOTE]
 > The Power BI Report Server version of Power BI Desktop is a separate and different installation from the versions discussed in this article. For information about the Report Server version of Power BI Desktop, see [Create a Power BI report for Power BI Report Server](../report-server/quickstart-create-powerbi-report.md).
@@ -139,7 +138,7 @@ You can also use the following syntax parameters, which you specified with a `pr
 |`ENABLECXP`                    | A value of `1` enrolls in the customer experience program that captures information about usage of the product.|
 |`INSTALLDESKTOPSHORTCUT`       | A value of `1` adds a shortcut to the Desktop.         |
 |`INSTALLLOCATION`              | The file path to where you want it installed.         |
-|`LANGUAGE`                     | The locale code (for example, en-US, de-DE, pr-BR) to force the default language of the application. If you don't specify the language, Power BI Desktop displays the Windows OS language. You can change this setting in the **Options** dialog.         |
+|`LANGUAGE`                     | The locale code (for example, `en-US`, `de-DE`, `pr-BR`) to force the default language of the application. If you don't specify the language, Power BI Desktop displays the Windows OS language. You can change this setting in the **Options** dialog.         |
 |`REG_SHOWLEADGENDIALOG`        | A value of `0` disables showing the dialog that appears before you've signed in to Power BI Desktop.         |
 |`DISABLE_UPDATE_NOTIFICATION`  | A value of `1` disables update notifications.         |
 
@@ -169,12 +168,12 @@ If you're deploying Power BI Desktop to your users with a tool that requires a W
 Upgrading an install from an .exe to a .msi that you've extracted from an .exe isn't supported.   In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
 
 > [!IMPORTANT]
-> Power BI Desktop is not supported in Virtualized Environment (eg. Citrix).
+> Power BI Desktop isn't supported in virtual environments such as Citrix.
 
 ### Issues when using previous releases of Power BI Desktop
 
 Some users might encounter an error message similar to the following message when they use an outdated version of Power BI Desktop:
-*We weren't able to restore the saved database to the model*
+*We weren't able to restore the saved database to the model*.
 
 Updating to the current version of Power BI Desktop usually solves this issue.
 
