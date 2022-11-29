@@ -36,7 +36,7 @@ Before you can use the sample, you must first download the [.pbix file](#get-the
 
 2. In the center of the workspace, select **Add content**.
 
-   :::image type="content" source="../media/power-bi-add-content.png" alt-text="Screenshot of the workspace, highlighting Add content.":::
+   :::image type="content" source="media/sample-sales-and-marketing/power-bi-add-content.png" alt-text="Image alt text.":::
 
 3. On the **Get Data** page that appears, select **Samples**.
 
