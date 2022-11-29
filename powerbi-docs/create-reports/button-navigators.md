@@ -47,7 +47,7 @@ Select **Edit** to edit the report, then on the menu bar select **Buttons** > **
 
 ---
 
-When you select the Page navigator option, Power BI automatically creates a page navigator for you:
+When you select the **Page navigator** option, Power BI automatically creates a page navigator for you:
 
 :::image type="content" source="media/desktop-buttons/example-page-navigator.png" alt-text="Screenshot of an example page navigator.":::
 
@@ -69,7 +69,7 @@ If you want to further customize the pages that show or hide in the page navigat
 ## Bookmark navigator
 Before you can create the bookmark navigator, you need to [create the bookmarks](desktop-bookmarks.md). Additionally, create separate bookmark groups if you plan on creating different bookmark navigators within the same report.
 
-:::image type="content" source="media/desktop-buttons/example-bookmarks.png" alt-text="Screenshot of a Bookmarks navigator examples.":::  
+:::image type="content" source="media/desktop-buttons/example-bookmarks.png" alt-text="Screenshot showing a Bookmarks navigator example.":::  
 
 Once you’ve created your bookmarks, select the **Bookmark navigator** option.
 
@@ -113,9 +113,9 @@ You also have the option to **Allow deselection**, meaning users can deselect al
 
 Once you have bookmarked the deselected state, turn on **Allow deselection** and select the bookmark that you want to **Launch on deselection**. In this case, that bookmark is named *No filter*.
 
-If the bookmark you use for deselection is within the bookmark navigator, you can choose to **Hide the deselection bookmark** within the navigator if you don’t want to show it:
+If the bookmark you use for deselection is within the bookmark navigator, you can turn on **Hide deselection bookmark** within the navigator if you don’t want to show it:
 
-:::image type="content" source="media/button-navigators/hide-deselection-bookmark-setting.png" alt-text="Screenshot the Bookmarks navigator option to Hide deselection bookmark."lightbox="media/button-navigators/hide-deselection-bookmark-setting.png":::
+:::image type="content" source="media/button-navigators/hide-deselection-bookmark-setting.png" alt-text="Screenshot of the Bookmarks navigator option to Hide deselection bookmark."lightbox="media/button-navigators/hide-deselection-bookmark-setting.png":::
  
 ## Formatting options
 
