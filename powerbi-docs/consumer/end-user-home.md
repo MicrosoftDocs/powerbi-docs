@@ -1,13 +1,13 @@
 ---
 title: Find content from Power BI service Home
-description: Start on the Home canvas and locate and open reports, dashboards, and apps.
+description: Open reports, dashboards, apps, and workspaces from the Power BI service Home. Learn how to change your layout and feature your important content.
 author: mihart
 ms.author: mihart
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/27/2022
+ms.date: 11/28/2022
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
