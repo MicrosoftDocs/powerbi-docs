@@ -170,8 +170,8 @@ The following table describes the implications of the setting **Export data** fo
 
 |Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
 |---------|---------|---------|
-|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
-|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
+|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *allowed*         |
+|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *allowed*        |
 
 **Allow live connections** is an export and sharing setting.
 
@@ -197,7 +197,7 @@ You can also perform impersonation by specifying one or more workspace roles in 
 
 ### Model roles
 
-With the XMLA endpoint, roles, role membership, row-level security (RLS), and object-level security (OLS) can be defined for users in the tenant's Azure Active Directory (AAD). Model roles in Power BI are used only for RLS and OLS. Use the Power BI security model to control permissions beyond RLS and OLS.
+With the XMLA endpoint, roles, role membership, row-level security (RLS), and object-level security (OLS) can be defined for users in the tenant's Azure Active Directory (Azure AD). Model roles in Power BI are used only for RLS and OLS. Use the Power BI security model to control permissions beyond RLS and OLS.
 
 For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For datasets in Power BI, roles can be defined in Power BI Desktop prior to publishing to the service. Role membership is specified in the Power BI service. SSMS can also be used to create and manage roles. In most cases, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
