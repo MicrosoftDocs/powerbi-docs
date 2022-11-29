@@ -459,7 +459,7 @@ When scale out is enabled, the following connections are maintained.
 
 * Power BI Desktop connects to the *read-only* dataset by default.
 
-* [Live connection](./../connect-data/desktop-report-lifecycle-datasets) reports, are connected to the *read-only* dataset copy.
+* [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports, are connected to the *read-only* dataset copy.
 
 * XMLA clients are connected to the *read/write* dataset copy by default.
 
