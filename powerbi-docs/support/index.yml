@@ -26,16 +26,22 @@ landingContent:
     linkLists: 
       - linkListType: how-to-guide
         links:
-          - text: How to contact Support
+          - text: Support overview
+            url: ./power-platform/admin/support-overview.md
+          - text: How to contact Support #can we eliminate the PBI version?
             url: service-support-options.md
           - text: Create a Support ticket
-            url: x.md
+            url: ./power-platform/admin/get-help-support.md
           - text: Manage a Support ticket
             url: x.md
           - text: Consent to access customer data 
-            url: linktoppac.md
+            url: ./power-platform/admin/support-environment
+          - text: Find your organization ID and name
+            url: ./power-platform/admin/determine-org-id-name.md
           - text: Capture diagnostic information (traces) for Support
             url: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+          - text: Policies and communications for Power BI
+            url: ./power-platform/admin/policies-communications.md
 
 # Card (optional)
   - title: Support-related admin settings
@@ -56,22 +62,26 @@ landingContent:
             url:  service-admin-health.md
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
-          - text: About planned maintenance
-            url: x.md
+          - text: What is the planned maintenance schedule
+            url: service-planned-maintenance.md
           - text: Is this a known issue?
             url: ../troubleshoot/known-issues/power-bi-known-issues.md
           - text: Look for an answer in the Community forum
             url: https://community.powerbi.com
+          - text: Tips for getting answers to your Power BI questions
+            url: service-tips-for-finding-help.md
+          - text: Notifications explained
+            url: ./power-platform/admin/notifications-explained.md
           - text: If you are having trouble signing in or resetting your password
             url: power-bi-cannot-sign-in.md 
-          - text: Request a region move 
+          - text: Request and prepare for a region move 
             url: service-admin-region-move.md  
 
   # Card
-  - title: x
+  - title: Troubleshooting guides
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: x
-            url: x
+          - text: Power BI
+            url: ../troubleshoot
             
