@@ -83,5 +83,5 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Power BI
-            url: ../troubleshoot
+            url: ../troubleshoot.md
             
