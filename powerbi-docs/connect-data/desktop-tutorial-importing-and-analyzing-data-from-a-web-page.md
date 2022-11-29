@@ -56,9 +56,9 @@ To import the data:
 
 ## Shape data in Power Query Editor
 
-You want to make the data easier to scan by displaying only the years and the countries that won. You can use the Power Query Editor to perform these data shaping and cleansing steps.
+You want to make the data easier to scan by displaying only the years and the countries/regions that won. You can use the Power Query Editor to perform these data shaping and cleansing steps.
 
-First, remove all the columns except for two from the table. Rename these columns as *Year* and *Country* later in the process.
+First, remove all the columns except for two from the table. Rename these columns as *Year* and *CountryRegion* later in the process.
 
 1. In the **Power Query Editor** grid, select the columns. Select Ctrl to select multiple items.
 
@@ -94,7 +94,7 @@ Some cells contain only the word "Year" rather than year values. You can filter 
 
    ![Filter data](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
 
-Since you're only looking at the final winners data now, you can rename the second column to **Country**. To rename the column:
+Since you're only looking at the final winners data now, you can rename the second column to **CountryRegion**. To rename the column:
 
 1. Double-click or tap and hold in the second column header, or
    - Right-click the column header, and select **Rename**, or
@@ -106,11 +106,11 @@ Since you're only looking at the final winners data now, you can rename the seco
 
    ![Rename ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
 
-1. Type **Country** in the header and press **Enter** to rename the column.
+1. Type **CountryRegion** in the header and press **Enter** to rename the column.
 
-You also want to filter out rows like "2020" that have null values in the **Country** column. You could use the filter menu as you did with the **Year** values, or you can:
+You also want to filter out rows like "2020" that have null values in the **CountryRegion** column. You could use the filter menu as you did with the **Year** values, or you can:
 
-1. Right-click on the **Country** cell in the **2020** row, which has the value *null*.
+1. Right-click on the **CountryRegion** cell in the **2020** row, which has the value *null*.
 
 1. Select **Text Filters** > **Does not Equal** in the context menu to remove any rows that contain that cell's value.
 
@@ -141,15 +141,15 @@ The query loads into the Power BI Desktop *Report* view, where you can see it in
 
 To create a visualization based on your data:
 
-1. Select the **Country** field in the **Fields** pane, or drag it to the report canvas. Power BI Desktop recognizes the data as country names, and automatically creates a **Map** visualization.
+1. Select the **CountryRegion** field in the **Fields** pane, or drag it to the report canvas. Power BI Desktop recognizes the data as country/region names, and automatically creates a **Map** visualization.
 
    ![Map visualization](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png)
 
-1. Enlarge the map by dragging the handles in the corners so all the winning country names are visible.  
+1. Enlarge the map by dragging the handles in the corners so all the winning country/region names are visible.  
 
    ![Enlarge map](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
 
-1. The map shows identical data points for every country that won a Euro Cup tournament. To make the size of each data point reflect how often the country has won, drag the **Year** field to **Drag data fields here** under **Size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries that have won more tournaments.
+1. The map shows identical data points for every country/region that won a Euro Cup tournament. To make the size of each data point reflect how often the country/region has won, drag the **Year** field to **Drag data fields here** under **Size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries/regions that have won more tournaments.
 
    ![Drag Count of Year into Size](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
 
@@ -181,7 +181,7 @@ Your map visualization now looks like this:
 
 ### Change the visualization type
 
-You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union and Czechoslovakia, because those countries no longer exist on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values.
+You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union, because that country/region no longer exists on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values.
 
 To change the map to a pie chart, select the map and then select the **Pie chart** icon in the **Visualizations** pane.
 
@@ -189,7 +189,7 @@ To change the map to a pie chart, select the map and then select the **Pie chart
 
 >[!TIP]
 >- You can use the **Data colors** formatting options to make "Germany" and "West Germany" the same color. 
->- To group the countries with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort by Count of Year**.
+>- To group the countries/regions with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort by Count of Year**.
 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 

@@ -81,8 +81,8 @@ Depending on the type of export, you need to pass different attributes to the [E
 |Attribute   |Page     |Single visual  |Comments|
 |------------|---------|---------|---|
 |`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a page in a specific state|
-|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the `getPages` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).   |
-|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the `getVisuals` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
+|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the [`getPages` client API](/javascript/api/overview/powerbi/get-visuals).   |
+|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the [`getVisuals` client API](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
 
 ### Bookmarks
 

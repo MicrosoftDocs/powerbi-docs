@@ -76,5 +76,5 @@ Frequently, you preview a report as a step in updating and then saving a report 
   
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
   

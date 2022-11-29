@@ -208,7 +208,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
-| Bretagne |Bretagne |Brittany |
+| Bretagne |Bretagne | |
 | Centre-Val de Loire |Centre-Val de Loire |Centre-Val de Loire |
 | Corse |Corse |Corsica |
 | Grand Est |  |  |
@@ -355,7 +355,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### UK: Countries
+### UK: Countries/Regions
 
 | ID | ISO | Name |
 | --- | --- | --- |

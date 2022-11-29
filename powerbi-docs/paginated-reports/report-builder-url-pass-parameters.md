@@ -6,9 +6,9 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.reviewer: "cfinlan"
+ms.reviewer: "nisrinivasan"
 ms.custom: ""
-ms.date: 05/11/2022
+ms.date: 10/27/2022
 
 ---
 
@@ -30,7 +30,8 @@ Browsers should automatically perform the proper URL encoding. You don't have to
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+- You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
 
 ## Parameter examples
 
@@ -89,4 +90,4 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d
 ## Next steps
 
 - [URL parameters in paginated reports in Power BI](report-builder-url-parameters.md)
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

@@ -120,7 +120,7 @@ sections:
       - question: |
           Does the Certification process ensure that there's no data leakage?
         answer: |
-          The tests performed are designed to check that the visual doesn't access external services or resources. 
+          The tests performed are designed to check that third party visuals don't access external services or resources. 
           
           Microsoft is not the author of third-party Power BI visuals. We advise customers to contact the author directly to verify the functionality of third-party Power BI visuals.
            

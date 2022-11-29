@@ -28,7 +28,7 @@ A *relationship with a many-to-many cardinality* in Power BI Desktop is composed
 
 Before *relationships with a many-to-many cardinality* became available, the relationship between two tables was defined in Power BI. At least one of the table columns involved in the relationship had to contain unique values. Often, though, no columns contained unique values.
 
-For example, two tables might have had a column labeled Country. The values of Country weren't unique in either table, though. To join such tables, you had to create a workaround. One workaround might be to introduce extra tables with the needed unique values. With *relationships with a many-to-many cardinality*, you can join such tables directly, if you use a relationship with a cardinality of *many-to-many*.
+For example, two tables might have had a column labeled CountryRegion. The values of CountryRegion weren't unique in either table, though. To join such tables, you had to create a workaround. One workaround might be to introduce extra tables with the needed unique values. With *relationships with a many-to-many cardinality*, you can join such tables directly, if you use a relationship with a cardinality of *many-to-many*.
 
 ## Use relationships with a many-to-many cardinality
 
