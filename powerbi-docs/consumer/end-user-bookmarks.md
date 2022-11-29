@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/02/2022
+ms.date: 11/29/2022
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -16,8 +16,6 @@ LocalizationGroup: Create reports
 
 ## Introduction to bookmarks
 A bookmark captures the state of a report page. This includes the settings you've made to filters, slicers, and visuals on that page. Once the report page is set the way you want, give it a friendly name. Now you can return to that state of the report page with a single click. Simply select a bookmark, and Power BI takes you back to that view.  
-
-
 
 ## Types of bookmarks
 There are two types of bookmarks: *personal* and *report*. Report bookmarks are added to reports by report *designers*. When the designers share their reports with colleagues, the bookmarks travel with the report. Everyone who can open and view that report can also see and use the report bookmarks. Personal bookmarks can be created by anyone who can open a report, they don't even require edit permissions. However, if you create personal bookmarks and share your report, the personal bookmarks do not travel with the report. Personal bookmarks are for your use only. However, if you want to share your personal bookmarks, this article provides some tips and tricks to do so.
