@@ -43,7 +43,7 @@ For more information about authentication, check out the [github wiki page](http
 
 ## Create a Quick visualize instance
 
-Create a `QuickVisualize` instance from the [data frame you created](#create-a-pandas-dataframe). Use the `get_dataset_config` utility method to help create a [`dataset_create_config`](/javascript/api/powerbi/powerbi-models/idatasetcreateconfiguration) object from the pandas data frame. If you're using a data frame other than pandas, you need to of parsing the data yourself.
+Create a `QuickVisualize` instance from the [data frame you created](#create-a-pandas-data-frame). Use the `get_dataset_config` utility method to help create a [`dataset_create_config`](/javascript/api/powerbi/powerbi-models/idatasetcreateconfiguration) object from the pandas data frame. If you're using a data frame other than pandas, you need to of parsing the data yourself.
 
 ```python
 # Create quick visualization instance
