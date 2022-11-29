@@ -159,4 +159,4 @@ The ability to hide items on Power BI Home is deprecated. If you previously hid 
 
 ## Next steps
 
-Overview of the [Power BI basic concepts](end-user-basic-concepts.md)
+Overview of the [Power BI basic concepts](end-user-basic-concepts.md) 
