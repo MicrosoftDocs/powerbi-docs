@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 11/02/2022
+ms.date: 11/29/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to get monitor and update metrics in the Power BI mobile app.
 ---
@@ -21,10 +21,8 @@ Applies to:
 
 The Power BI mobile apps make it easy for you to keep on top of your metrics while on the go. While scorecards and metrics are [created in the Power BI service](../../create-reports/service-goals-create.md), in the app you can monitor progress on your metrics, make check-ins to update progress, add notes, and, when a metric is connected to a report, easily open the associated report to dig deeper into the data.
 
-This article explains how to monitor your metrics on the mobile apps for iOS and Android devices, and shows you how to update progress and to dig deeper into the data using those apps.
-
 > [!NOTE]
-> Monitoring, updating, and digging into metrics on the Power BI app for Windows devices is very similar to tracking your metrics in the Power BI service. See [Stay on top of your metrics](../../create-reports/service-goals-check-in.md) for detail.
+> This article explains how to monitor your metrics in the mobile apps for iOS and Android devices. For information about tracking your metrics in the mobile app for Windows devices, see [Stay on top of your metrics](../../create-reports/service-goals-check-in.md). While this article shows how to monitor metrics in the Power BI service, the experience in the Windows app is similar, with the exception that in the Windows app you can't create or edit metrics and scorecards - you can only consume them and perform check-ins.
 
 To read more about metrics, see [Get started with metrics in Power BI](../../create-reports/service-goals-introduction.md)
 
