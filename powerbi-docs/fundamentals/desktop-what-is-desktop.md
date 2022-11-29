@@ -40,7 +40,7 @@ There are three views available in Power BI Desktop, which you select on the lef
 
 The following image shows the three views, as displayed along the left side of the canvas:
 
-![Screenshot of Power BI Desktop showing the Three Views panel.](media/desktop-what-is-desktop/what-is-desktop-07.png)
+![Screenshot of Power BI Desktop showing the Three Views panel.](media/desktop-what-is-desktop/what-is-desktop-view-icons.png)
 
 ## Connect to data
 
