@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.custom: contperf-fy22q3
 ms.topic: how-to
-ms.date: 11/17/2022
+ms.date: 11/28/2022
 LocalizationGroup: Gateways
 ---
 
@@ -256,7 +256,7 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
     > [!NOTE]
-    > Set **ADUserNameReplacementProperty** to `userPrincipalName` to always use the Power BI UPN.
+    > In multi-domain scenarios, you may need to set the **ADUserNameReplacementProperty** to `userPrincipalName` to preserve the domain information of the user.
 
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 

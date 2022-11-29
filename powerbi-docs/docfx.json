@@ -36,6 +36,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/power-bi/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-MSPowerBI",
+      "show_latex": true,
       "contributors_to_exclude": [
         "openpublishingbuild",
         "sudeepku",
