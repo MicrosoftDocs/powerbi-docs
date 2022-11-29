@@ -35,6 +35,6 @@ Administrators, there are security implications to consider before enabling this
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
 
 

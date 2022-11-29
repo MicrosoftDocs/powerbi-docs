@@ -49,7 +49,7 @@ The examples show:
 * How the grid orientation and style settings of a visual can be changed to better suit phone layout.
 * How different shapes can be used to better fit the mobile design.
 * How a visual's font size can be adjusted to fit in with other report visuals.
-* How you can create precise, pixel perfect design with size and position settings.
+* How you can create precise design with size and position settings.
 * How chart settings can be adjusted to maximize real estate.
 
 In the animated images below, the starting points show the mobile layout after some visuals have been placed on the canvas. The images then show how those visuals are changed using the Visualizations formatting pane. 

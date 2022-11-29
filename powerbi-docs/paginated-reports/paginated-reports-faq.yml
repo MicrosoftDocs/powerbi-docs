@@ -15,8 +15,7 @@ summary: |
   
   This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
-  This article answers many common questions people have about paginated reports in Power BI Premium, and about Report Builder, the standalone tool for authoring paginated reports. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. If you have a Premium Per User license, you can convert any workspace, including My Workspace, to a Premium workspace. See the [Power BI Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml#end-user-experience) for details.
-  
+  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to any workspace.  
 
 sections:
   - name: Administration
@@ -141,7 +140,9 @@ sections:
       - question: |
           How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
         answer: |
-          A project on GitHub now supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the tool here: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
+          If you're using SQL Server 2022 Reporting Services, this article, [Publish .rdl files to Power BI from Reporting Services](../guidance/publish-reporting-services-power-bi-service.md), explains how to migrate.
+          
+          If you're using previous versions of SQL Server Reporting Services, a project on GitHub supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the: [RDL Migration Tool](https://github.com/microsoft/RdlMigration).
           
       - question: |
           Can I open reports and publish directly to the service?

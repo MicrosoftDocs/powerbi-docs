@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 10/19/2022
+ms.date: 11/22/2022
 LocalizationGroup: Data from files
 ---
 
@@ -19,13 +19,12 @@ To help organizations detect and protect their sensitive data, Power BI supports
 ## Considerations and limitations
 
 * DLP policies for Power BI are defined in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
-* DLP policies apply to workspaces. Only workspaces hosted in [Premium Gen2 capacities](./service-premium-gen2-what-is.md) are supported.
-* DLP dataset evaluation workloads impact capacity. See [CPU metering for DLP policy evaluation](https://powerbi.microsoft.com/blog/updates-to-microsoft-purview-data-loss-prevention-policies-in-power-bi/) for more information.
-* Workspaces are supported, provided that they're hosted in Premium Gen2 capacities.
-* DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
+* DLP policies apply to workspaces. Only workspaces hosted in [Premium Gen2 capacities](./service-premium-gen2-what-is.md) and [Premium Per User](./service-premium-per-user-faq.yml) workspaces are supported.
+* DLP dataset evaluation workloads impact capacity. See [CPU metering for DLP policy evaluation](#cpu-metering-for-dlp-policy-evaluation) for more information.
+* DLP policy templates aren't yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
-* DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
-* DLP policies for Power BI are not supported in sovereign clouds.
+* DLP policies for Power BI aren't supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
+* DLP policies for Power BI aren't supported in sovereign clouds.
 * Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
 
 ## Licensing and permissions
@@ -46,6 +45,17 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 * Compliance administrator
 * Security administrator
 * Compliance data administrator
+
+## CPU metering for DLP policy evaluation
+
+This section is relevant only for workspaces hosted on Premium Gen2 capacities. It doesn't apply to Premium Per User workspaces.
+
+DLP policy evaluation uses CPU from the premium capacity associated with the workspace where the dataset being evaluated is located. CPU consumption of the evaluation is calculated as 30% of the CPU consumed by the action that triggered the evaluation. For example, if a refresh action costs 30 milliseconds of CPU, the DLP scan will cost another 9 milliseconds. This fixed 30% additional CPU consumption for DLP evaluation helps you predict the impact of DLP policies on your overall Capacity CPU utilization, and perform capacity planning when rolling out DLP policies in your organization.
+
+Use the Power BI Premium Capacity Metrics App to monitor the CPU usage of your DLP policies. For more information, see [Use the Gen2 metrics app](./service-premium-gen2-metrics-app.md).
+
+>[!NOTE]
+>As mentioned, metering of DLP evaluation to calculate CPU consumption applies only to workspaces hosted on Premium Gen2 capacities. DLP evaluation in Premium Per User workspaces is included in the PPU license.
 
 ## How do DLP policies for Power BI work
 
@@ -99,13 +109,13 @@ When a DLP policy detects an issue with a dataset:
 
     ![Screenshot of D L P choose custom policy page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-choose-custom.png)
  
-    When done, click **Next**.
+    When done, select **Next**.
 
 1. Name the policy and provide a meaningful description.
 
     ![Screenshot of D L P policy name description section.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-name-description.png)
  
-    When done, click **Next**.
+    When done, select **Next**.
 
 1. Enable Power BI as a location for the DLP policy. **Disable all other locations**. Currently, DLP policies for Power BI must specify Power BI as the sole location.
 
@@ -121,15 +131,15 @@ When a DLP policy detects an issue with a dataset:
 
     ![Screenshot of D L P choose workspaces dialog.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-choose-workspaces.png)
  
-    After enabling Power BI as a DLP location for the policy and choosing which workspaces the policy will apply to, click **Next**.
+    After enabling Power BI as a DLP location for the policy and choosing which workspaces the policy will apply to, select **Next**.
 
 1. The **Define policy settings** page appears. Choose **Create or customize advanced DLP rules** to begin defining your policy.
 
     ![Screenshot of D L P create advanced rule page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-create-advanced-rule.png)
  
-    When done, click **Next**.
+    When done, select **Next**.
 
-1. On the **Customize advanced DLP rules** page, you can either start creating a new rule or choose an existing rule to edit. Click **Create rule**.
+1. On the **Customize advanced DLP rules** page, you can either start creating a new rule or choose an existing rule to edit. Select **Create rule**.
 
     ![Screenshot of D L P create rule page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-create-rule.png)
 
@@ -155,15 +165,15 @@ In the condition section, you define the conditions under which the policy will 
     >[!NOTE]
     > Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
  
-    When you choose either **Sensitive info types** or **Sensitivity labels**, you will be able to choose the particular sensitivity labels or sensitive info types you want to detect from a list that will appear in a sidebar.
+    When you choose either **Sensitive info types** or **Sensitivity labels**, you'll be able to choose the particular sensitivity labels or sensitive info types you want to detect from a list that will appear in a sidebar.
 
     ![Screenshot of sensitivity-label and sensitive info types choices.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-sensitivity-labels-types.png)
 
-    When you select a sensitive info type as a condition, you then need to specify how many instances of that type must be detected in order for the condition to be considered as met. You can specify from 1 to 500 instances. If you want to detect 500 or more unique instances, enter a range of '500' to 'Any'. You also can select the degree of confidence in the matching algorithm. Click the info button next to the confidence level to see the definition of each level.
+    When you select a sensitive info type as a condition, you then need to specify how many instances of that type must be detected in order for the condition to be considered as met. You can specify from 1 to 500 instances. If you want to detect 500 or more unique instances, enter a range of '500' to 'Any'. You also can select the degree of confidence in the matching algorithm. Select the info button next to the confidence level to see the definition of each level.
 
     ![Screenshot of confidence level setting for sensitive info types.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-confidence-level-settings.png) 
 
-    You can add additional sensitivity labels or sensitive info types to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the items in the group is required for the condition to hold. If you specified more than one sensitivity label, you will only be able to choose **Any of these**, since datasets can’t have more than one label applied.
+    You can add additional sensitivity labels or sensitive info types to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the items in the group is required for the condition to hold. If you specified more than one sensitivity label, you'll only be able to choose **Any of these**, since datasets can’t have more than one label applied.
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
 
@@ -218,7 +228,7 @@ Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwli
 
 ![Screenshot of D L P Alerts tab.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
-Click on an alert to start drilling down to its details and to see management options.
+Select an alert to start drilling down to its details and to see management options.
 
 ## Next steps
 
