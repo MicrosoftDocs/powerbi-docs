@@ -36,7 +36,7 @@ Before you can use the sample, you must first download the [.pbix file](#get-the
 
 2. In the center of the workspace, select **Add content**.
 
-   :::image type="content" source="media/sample-sales-and-marketing/power-bi-add-content.png" alt-text="Image alt text.":::
+   :::image type="content" source="media/sample-sales-and-marketing/power-bi-add-content.png" alt-text="Screenshot of the workspace, highlighting Add content.":::
 
 3. On the **Get Data** page that appears, select **Samples**.
 
@@ -57,13 +57,13 @@ You can download the Sales and Marketing sample as a [.pbix file](https://downlo
 If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
 ## What is the dashboard showing?
-Start at the dashboard and look at the tiles the CMO has chosen to pin. You see information about tge market share, sales, and sentiment. Data is broken down by region, time, and competition.
+Start at the dashboard and look at the tiles the CMO has chosen to pin. You see information about the market share, sales, and sentiment. Data is broken down by region, time, and competition.
 
 * The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
 * The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how the market share fluctuates over time. Notice the large drop in June. The rolling 12-month (R12M) share, which was increasing for a while, is starting to stall.
 * The biggest competitor is Aliqui, as evident in the middle column chart tile (**Total Units YTD Variance %**).
 * Most of the business is in the East and Central regions.
-* The line chart at the bottom (**Total Units for 2014**) shows that the dip in June isn't seasonal; none of the competitors show the same trend.
+* The line chart at the bottom (**Total Units for 2014**) shows that the dip in June isn't seasonal; no competitors show the same trend.
 * The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for the industry are **Productivity** and **Convenience**.
 
 ## Use Q&A to dig a little deeper
