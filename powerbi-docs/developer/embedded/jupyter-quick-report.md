@@ -12,22 +12,22 @@ ms.date: 11/18/2022
 ---
 # Create a report quickly in Jupyter notebook
 
-If you're using Jupyter notebook, you can create a Power BI report with just a few steps.
+If you're using Jupyter notebook, you can create a Power BI report with just a few steps. These are temporary report that aren't saved automatically. Every time you run the code a new report will be created and the old one will be removed. You can save the report manually, if you want.
 
 ## Import modules
 
 First, import the necessary methods and classes from `powerbiclient` + import `pandas` to create a data frame.
 
-```javascript
-from powerbiclient import QuickVisualize, Report, QuickVisualize, get_dataset_config
+```python
+from powerbiclient import QuickVisualize, get_dataset_config
 import pandas as pd
 ```
 
-## Create a pandas dataframe
+## Create a pandas data frame
 
-Create a pandas dataframe from a sample CSV file and update it. The following example shows just one example of creating a dataframe.  (users can create df in any way they want, this is just an example)
+Create a [pandas data frame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) from a sample CSV file and update it. The following example shows just one example of creating a data frame.  (users can create df in any way they want, this is just an example)
 
-:::image type="content" source="./media/jupyter-quick-report/create-pandas-dataframe.png" alt-text="Screenshot of example dataframe showing supermarket sales data.":::
+:::image type="content" source="./media/jupyter-quick-report/create-pandas-dataframe.png" alt-text="Screenshot of example data frame showing supermarket sales data.":::
 
 ## Authenticate to Power BI
 
@@ -35,21 +35,17 @@ You need to authenticate when quick creating quick visualization features just l
 
 * Pass an access token (string)
 
-* Create an instance of AuthenticationResult. This be an interactive login or a device code login. Here's an example of a device code login:
-
-  ```javascript
-  # Authentication
-  from powerbiclient.authentication import DeviceCodeLoginAuthentication
-  auth = DeviceCodeLoginAuthentication()
-  ```
+* Create an instance of AuthenticationResult. This be an interactive login or a device code login.
 
 * Don’t pass anything. If you don't pass anything, the default is a device code login.
 
+For more information about authentication, check out the [github wiki page](https://github.com/microsoft/powerbi-jupyter/wiki#authenticate-to-power-bi-and-acquire-an-access-token).
+
 ## Create a Quick visualize instance
 
-Create a `QuickVisualize` instance from the [dataframe you created](#create-a-pandas-dataframe). Use the `get_dataset_config` utility method to help create a `dataset_create_config` object from the pandas dataframe. If you're using a dataframe other than pandas, you need to of parsing the data yourself.
+Create a `QuickVisualize` instance from the [data frame you created](#create-a-pandas-dataframe). Use the `get_dataset_config` utility method to help create a [`dataset_create_config`](/javascript/api/powerbi/powerbi-models/idatasetcreateconfiguration) object from the pandas data frame. If you're using a data frame other than pandas, you need to of parsing the data yourself.
 
-```javascript
+```python
 # Create quick visualization instance
 qv = QuickVisualize(get_dataset_config(df), auth=auth)
 ```
