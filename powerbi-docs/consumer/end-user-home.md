@@ -45,20 +45,22 @@ The next example shows a **Simplified** layout for an experienced user.
 
 The **Expanded** layout shows more information. If you select the **Expanded** view from the View menu, the expanded layout becomes your default Home layout.
 
+This view includes **Favorites + frequents** and **Featured** at the top, with tabs for **Recent**, **Favorites**, **My apps**, and **From external orgs** below.
+
 The following example shows the **Expanded** view for a new user.
 
 :::image type="content" source="media/end-user-home/power-bi-user-home.png" alt-text="A screenshot of the Expanded view for a new user." lightbox="media/end-user-home/power-bi-user-home.png#lightbox":::
 
 The next example shows the **Expanded** view for an experienced user.
 
-:::image type="content" source="media/end-user-home/power-bi-expanded-user.png" alt-text="A screenshot of the Expanded view for an experienced user." lightbox="media/end-user-home/power-bi-expanded-user.png#lightbox":::
+:::image type="content" source="media/end-user-home/power-bi-expanded-view.png" alt-text="A screenshot of the Expanded view for an experienced user." lightbox="media/end-user-home/power-bi-expanded-view.png#lightbox":::
 
 ## Locate content from your Home canvas
 
 Power BI Home offers three ways of locating and viewing your content. All three approaches access the same pool of content in different ways. Searching is sometimes the easiest and quickest way to find something, while other times, selecting a card on the Home canvas is your best option.
 
 - The Home canvas shows your favorite, frequent, recent, recommended, apps and workspaces. If you're new to the Power BI service, you also have Getting started content. Select a card, or an item in a list, to open it.
-- Along the left side is a navigation pane, referred to as the nav pane. The nav pane has the same content as Home, but it's organized differently. Select **Browse** to see your recent, favorite, and shared content. Select **Data hub** to see data available to you from across your organization. Select **Apps** to see a list of apps available to you. And select **Knowledge center** to see learning materials, sample reports, and training.
+- Along the left side is a navigation pane, referred to as the nav pane. The nav pane has the same content as Home, but it's organized differently. Select **Browse** to see your recent, favorite, and shared content. Select **Data hub** to see data available to you from across your organization. Select **Apps** to see a list of apps available to you. And select **Knowledge/Learning center** to see learning materials, sample reports, and training.
 - At the top of Home, you can search for content by title, name, or keyword in the global search box.
 
 The following sections review these options for finding and viewing content.
@@ -69,7 +71,7 @@ On the Home canvas, you can view all the content that you have permission to use
 
 As you work in the Power BI service, you receive dashboards, reports, and apps from colleagues, and Power BI Home fills in with content. Over time, it might resemble the following Expanded layout example.
 
-:::image type="content" source="media/end-user-home/power-bi-full-new.png" alt-text="A screenshot of the Expanded Home for the Power BI service." lightbox="media/end-user-home/power-bi-full-new.png#lightbox":::
+:::image type="content" source="media/end-user-home/power-bi-full.png" alt-text="A screenshot of the Expanded Home for the Power BI service." lightbox="media/end-user-home/power-bi-full.png#lightbox":::
 
 Your Home landing page might look different. Power BI optimizes Home based on your usage, settings, and the layout you select.
 
@@ -94,6 +96,8 @@ The next section of your Home contains two or more tabbed lists.
 - **Recent** is the content you've visited most recently. Notice the timestamp for each item.
 
 - The **My apps** section lists [apps that have been shared with you](end-user-apps.md) or that you've [downloaded from AppSource](end-user-apps.md). The most recent apps are listed here.
+
+- **From external orgs** (Preview) lists shared datasets available from other tenants. Use this list to discover and connect to data from external providers.
 
 :::image type="content" source="./media/end-user-home/power-bi-recent.png" alt-text="A screenshot of the Home list view with the Recent tab selected.":::
 
