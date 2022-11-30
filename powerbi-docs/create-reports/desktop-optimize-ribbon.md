@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/16/2022
+ms.date: 11/29/2022
 LocalizationGroup: Create reports
 ---
 # Optimize ribbon in Power BI Desktop (Preview)
@@ -21,10 +21,10 @@ The following sections describe the tools that the **Optimize** ribbon provides.
 In Power BI, you can choose from authoring reports based on small improvised data models, to big data models backed with billions and billions of rows of data, allowing you choose from different [table data storage modes](../transform-model/desktop-storage-mode.md). These options vary widely in how data is accessed and used, such as: 
 
 * Downloading the data locally for tables in [import mode](../connect-data/desktop-directquery-about.md#import-connections)
-* Only querying data when in visuals with tables in [DirectQuery mode](../connect-data/desktop-directquery-about.md#import-connections)
+* Only querying data when in visuals with tables in [DirectQuery mode](../connect-data/desktop-directquery-about.md#directquery-connections)
 * Options between the two previous bullets, such as with [hybrid tables](https://powerbi.microsoft.com/blog/announcing-public-preview-of-hybrid-tables-in-power-bi-premium/) or datasets with some tables in import and others in DirectQuery
 
-Additionally, you can create a report from an already published dataset or model from Power BI, Azure Analysis Services, or SQL Server Analysis Services using [Live Connection](../connect-data/desktop-directquery-about.md#import-connections) or [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), where you may not know what storage mode the underlying tables are using.
+Additionally, you can create a report from an already published dataset or model from Power BI, Azure Analysis Services, or SQL Server Analysis Services using [Live Connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), where you may not know what storage mode the underlying tables are using.
 
 When selecting from among such options, the table storage modes dictate whether you're in an import or DirectQuery reporting scenario, which can impact your report authoring experience. **DirectQuery report scenarios** are defined as those with any visual sending queries to the data source directly, which can be identified in the Performance analyzer as visuals with a **Direct query** line, as shown in the following image.
 
