@@ -16,6 +16,22 @@ Filters don't all behave the same way because they're not created the same way. 
 
 ![Screenshot of a sample Power BI Filter pane.](media/power-bi-report-filter-types/power-bi-filter-pane.png)
 
+## Compare filter types
+
+This table compares what authors can do with the different types of filters. Select a link to read more about each type.
+
+| Filter type | Edit | Clear | Delete | Hide | Lock | Sort | Rename |
+|----|----|----|----|----|----|----|----|
+| [Automatic filters](#automatic-filters) | Y | Y | N | Y | Y | Y | Y |
+| [Manual filters](#manual-filters) | Y | Y | Y | Y | Y | Y | Y |
+| [Include/Exclude](#include-and-exclude-filters) filters | N | N | Y | Y | Y | Y | N |
+| [Drill-down](#drill-down-filters) filters | Y | Y | N | N | N | N | N |
+| [Cross-drill](#cross-drill-filters) filters | N | N | N | N | N | N | N |
+| [Drillthrough](#drillthrough-filters) filters (Invokes drillthrough) | Y | Y | Y | Y | Y | N | N |
+| Drillthrough filters (Transient) | Y | Y | Y | N | N | N | N |
+| [URL](#url-filters) filters - transient | Y | Y | Y | N | N | N | N |
+| [Pass-through](#pass-through-filters) filters | N | N | Y | Y | N | Y | N |
+
 Start with the two most common filter types: automatic and manual.
 
 ## Automatic filters
@@ -67,23 +83,6 @@ For more information, see [setting up URL filters](../collaborate-share/service-
 Pass-through filters are visual-level filters created through Q&A. If you can edit a report, you can delete, hide, or sort these filters in the pane. However, you can't rename, edit, clear, or lock these filters.
 
 ![Screenshot of a visual, highlighting the information that has the pass-through filter applied.](media/power-bi-report-filter-types/power-bi-filters-qna.png)
-
-## Comparing filter types
-
-This table compares what authors can do with the different types of filters.
-
-| Filter type | Edit | Clear | Delete | Hide | Lock | Sort | Rename |
-|----|----|----|----|----|----|----|----|
-| Manual filters | Y | Y | Y | Y | Y | Y | Y |
-| Auto filters | Y | Y | N | Y | Y | Y | Y |
-| Include/Exclude filters | N | N | Y | Y | Y | Y | N |
-| Drill-down filters | Y | Y | N | N | N | N | N |
-| Cross-drill filters | N | N | N | N | N | N | N |
-| Drillthrough filters (Invokes drillthrough) | Y | Y | Y | Y | Y | N | N |
-| Drillthrough filters (Transient) | Y | Y | Y | N | N | N | N |
-| URL filters - transient | Y | Y | Y | N | N | N | N |
-| Pass Through filters | N | N | Y | Y | N | Y | N |
-
 
 ## Next steps
 
