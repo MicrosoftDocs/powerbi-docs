@@ -81,17 +81,17 @@ Tokens come with a time limit. This means that after embedding a Power BI item, 
 
 The [Generate token](/rest/api/power-bi/embed-token/generate-token) works for reports and datasets. To generate an embed token for a dashboard or tile, use the version 1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embed-token/dashboards-generate-token-in-group) or [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group) APIs. These APIs generate tokens for only one item at a time. You can't generate a token for multiple items.
 
-For these APIs, use the *accessLevel* parameter to determine the user's access level.
+For these APIs:
 
-* **View** - Grant the user viewing permissions.
+* Use the *accessLevel* parameter to determine the user's access level.
 
-* **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
+  * **View** - Grant the user viewing permissions.
 
-* **Create** - Grant the user permissions to create a new report (only applies when generating an embed token for creating a report).
+  * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-    For report creation, you must also supply the *datasetId* parameter.
+  * **Create** - Grant the user permissions to create a new report (only applies when generating an embed token for creating a report).    For report creation, you must also supply the *datasetId* parameter.
 
-Use the *allowSaveAs* boolean to let users save the report as a new report. This setting is set to *false* by default, and only applies when generating an embed token for a report.
+* Use the *allowSaveAs* boolean to let users save the report as a new report. This setting is set to *false* by default, and only applies when generating an embed token for a report.
 
 ## Considerations and limitations
 
