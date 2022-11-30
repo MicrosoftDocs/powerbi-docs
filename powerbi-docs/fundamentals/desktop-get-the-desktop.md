@@ -16,7 +16,7 @@ With Power BI Desktop, you can build advanced queries, models, and reports that 
 
 To get Power BI Desktop, you can use one of two approaches:
 
-* [Install as an app from the Microsoft Store](#install-power-bi-desktop-from-the-microsoft-store).
+* [Install as an app from the Microsoft Store](#install-as-an-app-from-the-microsoft-store).
 * [Download directly as an executable and install on your computer](#download-power-bi-desktop-directly).
 
 Either of the two approaches gets the latest version of Power BI Desktop onto your computer. However, there are some differences worth noting, as described in the following sections.
