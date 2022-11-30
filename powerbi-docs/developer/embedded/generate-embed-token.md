@@ -40,8 +40,6 @@ In the generate token APIs, the *GenerateTokenRequest* section describes the tok
   
 * Add the workspace ID to the embed token to allow the user to create new reports (either SaveAs or CreateNew) in that workspace.
 
-* Use the *allowSaveAs* boolean to let users save the report as a new report in their own workspace. This setting is set to *false* by default, and only applies when generating an embed token for a report.
-
 ### Row Level Security
 
 With [Row Level Security (RLS)](embedded-row-level-security.md), the identity you use can be different from the identity of the service principal or master user you're using to generating the token. By using different identities, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
@@ -92,6 +90,8 @@ For these APIs, use the *accessLevel* parameter to determine the user's access l
 * **Create** - Grant the user permissions to create a new report (only applies when generating an embed token for creating a report).
 
     For report creation, you must also supply the *datasetId* parameter.
+
+Use the *allowSaveAs* boolean to let users save the report as a new report in their own workspace. This setting is set to *false* by default, and only applies when generating an embed token for a report.
 
 ## Considerations and limitations
 
