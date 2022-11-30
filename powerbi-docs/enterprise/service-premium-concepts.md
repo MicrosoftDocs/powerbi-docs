@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/24/2022
+ms.date: 11/30/2022
 LocalizationGroup: Premium
 ---
 # Premium Gen2 capacity load evaluation
@@ -62,7 +62,7 @@ The following image shows how autoscale works.
 
 :::image type="content" source="media/service-premium-concepts/service-premium-concepts-03.png" alt-text="Diagram showing auto scale operation in premium generation two capacity." lightbox="media/service-premium-concepts/service-premium-concepts-03.png":::
 
-Autoscale always considers your current capacity size to evaluate how much you use. When you autoscale one v-core is added to your capacity. This means that if you're using a P1 SKU with eight v-cores, your maximum capacity is now at 255 seconds ($8\times{30}+0.5\times{30}$) of CPU time in an evaluation cycle.
+Autoscale always considers your current capacity size to evaluate how much you use. When you autoscale, one v-core is added to your capacity. This means that if you're using a P1 SKU with eight v-cores, your maximum capacity is now at 270 seconds ($8\times{30}+1\times{30}$) of CPU time in an evaluation cycle.
 
 Autoscale always ensures that no single interactive operation can account for all of your capacity, and you must have two or more operations occurring in a single evaluation cycle to initiate autoscale.
 
