@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 11/18/2022
+ms.date: 11/28/2022
 ---
 # Create a report quickly in Jupyter notebook
 
