@@ -31,7 +31,7 @@ If you need to troubleshoot an issue with Power BI data in Excel, see the follow
 
 If you need to troubleshoot an issue in Power BI with Analyze in Excel, see the following sections:
 
-* [Connection can't be made error occurs](#connection-cannot-be-made-error-occurs)
+* [Connection cannot be made error occurs](#connection-cannot-be-made-error-occurs)
 * [No data models](#no-data-models)
 * [Token expired error](#token-expired-error-occurs)
 
