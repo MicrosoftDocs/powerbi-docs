@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/03/2022
+ms.date: 11/29/2022
 ms.custom: intro-get-started
 ---
 # Scenarios: When to use hierarchies in Power BI scorecards

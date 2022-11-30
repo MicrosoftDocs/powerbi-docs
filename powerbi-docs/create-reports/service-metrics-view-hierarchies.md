@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/03/2022
+ms.date: 11/29/2022
 ms.custom: intro-get-started
 ---
 # View hierarchies in Power BI metrics
@@ -32,11 +32,11 @@ All connected values, mapped owners, and statuses dictated by rules will reflect
 
 You can view intersections of multiple hierarchies.  For example, you can look at a cross section between one selection from product, and one selection from the geography hierarchy, indicated in the slicer name as shown in the images below.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-two-slicers.png" alt-text="A hierarchy slicer that shows two hierarchies set up." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-two-slicers.png":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-two-slicers.png" alt-text="Screenshot of A hierarchy slicer that shows two hierarchies set up." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-two-slicers.png":::
 
 Here the header within a scorecard restates the two levels of the hierarchy that a user chose, Germany and Laptops.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-cross-section-slicer.png" alt-text="A header within a scorecard that restates the two levels of the hierarchy a user chose, Germany and Laptops.":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-cross-section-slicer.png" alt-text="Screenshot of A header within a scorecard that restates the two levels of the hierarchy a user chose, Germany and Laptops.":::
 
 ## Heatmap view
 
