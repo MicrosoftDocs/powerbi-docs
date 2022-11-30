@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 11/30/2022
 LocalizationGroup: Administration
 ---
 
@@ -28,7 +28,8 @@ The following are the scanner APIs. They support both public and sovereign cloud
 
 Before metadata scanning can be run, a Power BI admin needs to set it up. See [Setting up metadata scanning in an organization](../admin/service-admin-metadata-scanning-setup.md).
 
-The app you develop for scanning can authenticate via either a standard delegated admin access token or a service principal. The two authentication paths are mutually exclusive. **When running under a service principal, there must be no Power BI admin-consent-required permissions set on your app**. For more information, see [Enable service principal authentication for read-only admin APIs](./read-only-apis-service-principal-authentication.md).
+> [!IMPORTANT]
+> The app you develop for scanning can authenticate via either a standard delegated admin access token or a service principal. The two authentication paths are mutually exclusive. **When running under a service principal, there must be no Power BI admin-consent-required permissions set on your app**. For more information, see [Enable service principal authentication for read-only admin APIs](./read-only-apis-service-principal-authentication.md).
 
 ## Run metadata scanning
 
