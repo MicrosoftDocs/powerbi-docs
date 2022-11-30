@@ -130,17 +130,15 @@ Limit your JS frameworks and use native JS whenever possible to increase the ava
 
 For more information, see [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for alternative examples for functions such as JQuery's `show`, `hide`, `addClass`, and more.  
 
-## Consider canvas or WebGL
+## Animation
 
-For repeated use of animations, consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
+* For repeated use of animations, consider using [**Canvas**](https://web.dev/canvas-performance/) or [**WebGL**](https://www.khronos.org/webgl/) instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
 
-You can read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)).
+  Read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)).
 
-## Use requestAnimationFrame instead of setTimeout
+* Use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, so your animation functions are called **before** the browser calls another repaint.
 
-If you use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, your animation functions are called **before** the browser calls another repaint.
-
-For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
+  For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
 
 ## Next steps
 
