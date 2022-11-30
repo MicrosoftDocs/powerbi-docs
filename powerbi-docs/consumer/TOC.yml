@@ -91,11 +91,11 @@
   - name: Metrics
     items: 
     - name: "Get started with metrics"
-      href: ../create-reports/service-goals-introduction.md
+      href: ../create-reports/service-goals-introduction.md?context=/power-bi/consumer/context/context
     - name: "Stay on top of your metrics"
-      href: ../create-reports/service-goals-check-in.md
+      href: ../create-reports/service-goals-check-in.md?context=/power-bi/consumer/context/context
     - name: "View hierarchies in metrics"
-      href: ../create-reports/service-metrics-view-hierarchies.md
+      href: ../create-reports/service-metrics-view-hierarchies.md?context=/power-bi/consumer/context/context
   - name: Power BI in Teams
     items: 
     - name: "Use data for productive meetings"
