@@ -22,7 +22,7 @@ The generate token API uses a single identity (a master user or service principa
 After successful authentication, access to the relevant data is granted.
 
 > [!NOTE]
-> [Generate token](/rest/api/power-bi/embed-token/generate-token) is the newer, version 2 API that works for both reports and datasets, and single or multiple items. It's preferred over the legacy version 1 APIs [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) and [Reports GenerateTokenForCreateInGroup](/rest/api/power-bi/embed-token/reports-generate-token-for-create-in-group).
+> [Generate token](/rest/api/power-bi/embed-token/generate-token) is the newer, version 2 API that works for both reports and datasets, and single or multiple items. It's preferred over the legacy version 1 APIs. For dashboards and tiles use the V1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) and [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group).
 
 ## Securing your data
 
