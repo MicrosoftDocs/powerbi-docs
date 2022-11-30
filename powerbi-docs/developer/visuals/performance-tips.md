@@ -8,21 +8,48 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/20/2022
+ms.custom: engagement-fy23
 ---
 # Performance tips for creating quality Power BI custom visuals
 
-This article will cover techniques on how a developer can achieve high performance when rendering their custom visuals.
+This article covers techniques a developer can use to achieve high performance when rendering custom visuals.
 
-No one wants a visual to take its time when rendering. Getting the visual to render as quickly as possible becomes critical when writing the code.
+No one wants a visual to take a long time to render. Getting the visual to render as quickly as possible is critical when writing the code.
 
 > [!NOTE]
 > As we continue to improve and enhance the platform, new versions of the API are constantly being released. In order to get the most out of the Power BI visuals' platform and feature set, we recommend that you keep up-to-date with the most recent version. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 Here are some recommendations for achieving optimal performance for your custom visual.
 
-## Use the User Timing API
+## Reduce plugin size
 
-Using the **User Timing API** to measure your app's JavaScript performance can help you decide which parts of the script need optimization.
+A smaller custom visual plugin size means:
+
+* faster downloads
+* faster installation
+
+To decrease plugin size, see if you can [remove unused code](https://web.dev/remove-unused-code/) and try [tree-shaking and code-splitting](https://www.azavea.com/blog/2019/03/07/lessons-on-tree-shaking-lodash/).
+
+## Check render time of the visual
+
+Measure the render time of your visual to see which parts of the script need optimization.
+
+### Power BI Desktop performance analyzer
+
+Use the [Power BI Desktop performance analyzer](../../create-reports/desktop-performance-analyzer.md) to check how your visual renders in the following cases:
+
+* first render of the visual
+* with thousands of data points
+* with a single data point/measure (to determine the visual render overhead)
+* filtering
+* slicing
+* resizing (may not work in the performance analyzer)
+
+Then, if possible, compare these measurements with those of a similar core visual to see if there are parts that need optimization.
+
+### Use the User Timing API
+
+Using the **User Timing API** to measure your app's JavaScript performance can also help you decide which parts of the script need optimization.
 
 For more information, see the [User Timing API](https://msdn.microsoft.com/library/hh772738(v=vs.85).aspx).
 
@@ -72,7 +99,7 @@ To make sure that your code is fast and doesn’t slow down the browser, keep DO
 
 ## Avoid DOM manipulation
 
-Limit DOM manipulation as much as possible.  *Insert operations* like `prepend()`, `append()`, and `after()` are time-consuming and shouldn't be used unless necessary.
+Limit DOM manipulations as much as possible.  *Insert operations* like `prepend()`, `append()`, and `after()` are time-consuming and should only be used when necessary.
 
 ### DOM manipulation example
 
@@ -103,7 +130,7 @@ Limit your JS frameworks and use native JS whenever possible to increase the ava
 
 For more information, see [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for alternative examples for functions such as JQuery's `show`, `hide`, `addClass`, and more.  
 
-## Use canvas or WebGL
+## Consider canvas or WebGL
 
 For repeated use of animations, consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
 
@@ -117,5 +144,4 @@ For more information, see this [sample](https://testdrive-archive.azurewebsites.
 
 ## Next steps
 
->[!div class="nextstepaction"]
 >[Optimization guide for Power BI](../../guidance/power-bi-optimization.md)
