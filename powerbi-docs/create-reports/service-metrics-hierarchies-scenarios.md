@@ -23,7 +23,7 @@ Metrics support cascading scorecards that roll up along hierarchies you set up i
 
 ## Scenario 1: Measuring organizational health across teams
 
-Cascading scorecards are great tools for standardized metrics across many different segments in an organization.  In this scenario, it’s easy to track the health of an organization by measuring employee engagement, satisfaction, and hiring goals – metrics that are often mapped across an entire company. This scorecard below allows senior leadership to see how each division within the organization is measuring against standard metrics like attrition rates, compliance trainings, employee satisfaction, and diverse and inclusive hiring goals.
+Cascading scorecards are great tools for standardized metrics across many different segments in an organization.  In this scenario, it’s easy to track the health of an organization by measuring employee engagement, satisfaction, and hiring goals – metrics that are often mapped across an entire company. The following scorecard allows senior leadership to see how each division within the organization is measuring against standard metrics like attrition rates, compliance trainings, employee satisfaction, and diverse and inclusive hiring goals.
 
 This scorecard becomes not only an artifact for metric tracking, but an integral tool for decision making at a high level of an organization to improve company culture and overall organizational health.
 

@@ -16,15 +16,15 @@ ms.custom: intro-get-started
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. You can set up a hierarchy for a scorecard and map the Power BI datasets referenced by your metrics to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data. That’s potentially thousands of automated scorecard views with just a few clicks.
-Power BI will cascade connected metric values to each level of the hierarchy. Users can easily drill into the hierarchy to see progress, statuses and do check-ins at different levels. In the images below, you can see the different levels of a project hierarchy in the slicer, and as you navigate to each level or sublevel of the hierarchy, your metric values, statuses, owners, and progress will change along with it.
+Power BI will cascade connected metric values to each level of the hierarchy. Users can easily drill into the hierarchy to see progress, statuses and do check-ins at different levels. In the following images, you see the different levels of a project hierarchy in the slicer, and as you navigate to each level or sublevel of the hierarchy, your metric values, statuses, owners, and progress will change along with it.
 
 This scorecard is set up with a hierarchy, and the filter is open exposing the hierarchy slicer.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview.png":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview.png" alt-text="Example of a scorecard with a hierarchy in place, filter is open exposing the hierarchy slicer." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview.png":::
 
 In this image, the filter is open exposing the hierarchy slicer and filters applied on the scorecard.
 
-:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview-2.png" alt-text="Example of a scorecard with a hierarchy set up, filter is open exposing the hierarchy slicer and filters applied on the scorecard." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview-2.png":::
+:::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview-2.png" alt-text="Example of a scorecard with a hierarchy in place, filter is open exposing the hierarchy slicer and filters applied on the scorecard." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scorecard-overview-2.png":::
 
 ## Requirements for creating hierarchies
 

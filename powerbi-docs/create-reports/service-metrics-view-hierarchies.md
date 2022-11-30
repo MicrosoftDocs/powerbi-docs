@@ -30,7 +30,7 @@ All connected values, mapped owners, and statuses dictated by rules will reflect
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-manual-info-icon.png" alt-text="Screenshot of hover text indicating a manual metric.":::
 
-You can view intersections of multiple hierarchies.  For example, you can look at a cross section between one selection from product, and one selection from the geography hierarchy, indicated in the slicer name as shown in the images below.
+You can view intersections of multiple hierarchies.  For example, you can look at a cross section between one selection from product, and one selection from the geography hierarchy, indicated in the slicer name as shown in the following images.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-two-slicers.png" alt-text="Screenshot of A hierarchy slicer that shows two hierarchies set up." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-two-slicers.png":::
 
