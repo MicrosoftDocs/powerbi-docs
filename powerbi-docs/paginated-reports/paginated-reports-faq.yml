@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 08/12/2022
+  ms.date: 11/29/2022
 title: "Paginated reports in Power BI: FAQ"
 summary: |
   [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
@@ -238,12 +238,14 @@ sections:
           What are globalization limitations related to DateTime parameters?
         answer: |
           When working with DateTime fields in paginated reports, keep in mind that currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
-          
-          When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with the following notification:
+      - question: |
+          I get a "Your session has expired" message. Why? 
+        answer: |
+          When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification:
           
           :::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Paginated reports session expired notification":::
           
-          The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report isn't displayed in the active tab of the browser.
+          The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, when the report is displayed in the active tab of the browser. The session will time out after 10 minutes of inactivity, or earlier when the device is locked or inactive, when the report isn't displayed in the active tab of the browser.
 
       - question: |
           I get an "error communicating with Analysis Services." Why? 
