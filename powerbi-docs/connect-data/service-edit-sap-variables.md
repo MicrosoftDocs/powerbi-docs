@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 11/23/2022
 LocalizationGroup: Data from databases
 ---
 
@@ -72,6 +72,9 @@ If you encounter errors that the Power BI service couldn't load data for the vis
 
 * **Use *Edit variables* in Power BI Desktop** - if you don't want to use *Edit variables*, you can open the report in Power BI Desktop and uncheck the option at the report level.
 
+## Considerations and limitations
+
+You cannot edit SAP variables in the Power BI mobile apps.
 
 ## Next steps
 

@@ -49,7 +49,7 @@ To help simplify complex models in a multidimensional model, you can define a se
 
 ### Dimension attribute type
 
-Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *Country*, and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to the element in the **Field** pane in Power BI.
+Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *CountryRegion*, and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to the element in the **Field** pane in Power BI.
 
 Power BI can also render images when you provide a field that contains URLs (uniform resource locators) of the images. You may specify these fields as *ImageURL* types in SQL Server Data Tools (or then in Power BI). Its type information is then provided to Power BI in the tabular metadata. Power BI can then retrieve those images from the URL and display them in visuals.
 

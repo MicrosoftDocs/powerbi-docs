@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 10/21/2022
+ms.date: 11/22/2022
 ---
 
 # Power BI data sources
@@ -63,7 +63,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Dataverse | Yes | Yes | Yes | Yes | No | Yes |
 | Delta Sharing | Yes | Yes | No | Yes | No | Yes |
 | Denodo | Yes | Yes | Yes | Yes | Yes | Yes |
-| Dremio | Yes | Yes | Yes | Yes | Yes | Yes |
+| Dremio | Yes | Yes | Yes | Yes | No | Yes |
 | Dynamics 365 (online) | Yes | Yes | No | No | No | No |
 | Dynamics 365 Business Central | Yes | Yes | No | No | No | Yes |
 | Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | No |

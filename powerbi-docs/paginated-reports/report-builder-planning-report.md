@@ -45,4 +45,4 @@ You can save your report to your local computer and continue to work on it, or r
   
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

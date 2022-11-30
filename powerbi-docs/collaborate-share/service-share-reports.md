@@ -84,7 +84,7 @@ If you prefer to share directly to users, you can also share your filtered repor
     ![Screenshot showing include my changes.](media/service-share-reports/include-my-changes.png)
 
     The **Include my changes** setting includes any changes to the following:
-    - Filters (filter pane or URL filters)
+    - Filters (filter pane)
     - Slicers
     - Personalize visuals
     - Cross-filtering or cross-highlighting

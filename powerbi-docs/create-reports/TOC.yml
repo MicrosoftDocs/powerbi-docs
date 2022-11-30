@@ -58,6 +58,8 @@
     items: 
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
+    - name: "Optimize ribbon in Power BI Desktop"
+      href: desktop-optimize-ribbon.md      
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -450,8 +452,6 @@
       href: service-dashboard-create.md
     - name: "Create a copy of a dashboard"
       href: service-dashboard-copy.md
-    - name: "Pin a tile to a dashboard from a report"
-      href: service-dashboard-pin-tile-from-report.md
     - name: "Pin a tile from one dashboard to another"
       href: service-pin-tile-to-another-dashboard.md
     - name: "Pin a tile to a dashboard from Excel"
@@ -480,6 +480,8 @@
       href: ../paginated-reports/report-builder-power-bi.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
+    - name: Paginated reports capacity planning
+      href: ../paginated-reports/paginated-capacity-planning.md      
     - name: Report Builder change log
       href: ../paginated-reports/paginated-reports-change-log.md
     - name: Sample Power BI paginated reports

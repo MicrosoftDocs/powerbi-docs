@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-We understand it's critical to keep your report layout pixel perfect. Sometimes, it can be challenging, because you and your colleagues may view those reports on screens with different aspect ratios and sizes. 
+We understand it's critical to keep your report layout precise. Sometimes, it can be challenging, because you and your colleagues may view those reports on screens with different aspect ratios and sizes. 
 
 The default display view is **Fit to page** and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
 
