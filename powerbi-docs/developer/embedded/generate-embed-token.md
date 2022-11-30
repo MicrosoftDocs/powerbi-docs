@@ -36,15 +36,11 @@ In the generate token APIs, the *GenerateTokenRequest* section describes the tok
 
 ### Access Level
 
-Use the *allowEdit* parameter to grant the user viewing or editing permissions.
+* Use the *allowEdit* parameter to grant the user viewing or editing permissions.
+  
+* Add the workspace ID to the embed token to allow the user to create new reports (either SaveAs or CreateNew) in that workspace.
 
-**Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report). For report creation, you must also supply the *datasetId* parameter.
-
-### Saving a copy of the report
-
-Use the *allowSaveAs* boolean to let users save the report as a new report. This setting is set to *false* by default.
-
-This parameter is only applicable when generating an embed token for a report.
+* Use the *allowSaveAs* boolean to let users save the report as a new report in their own workspace. This setting is set to *false* by default, and only applies when generating an embed token for a report.
 
 ### Row Level Security
 
@@ -93,7 +89,7 @@ For these APIs, use the *accessLevel* parameter to determine the user's access l
 
 * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-* **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
+* **Create** - Grant the user permissions to create a new report (only applies when generating an embed token for creating a report).
 
     For report creation, you must also supply the *datasetId* parameter.
 
