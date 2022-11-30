@@ -58,7 +58,7 @@ auth = DeviceCodeLoginAuthentication()
 
 For more information about authentication, check out the [github wiki page](https://github.com/microsoft/powerbi-jupyter/wiki#authenticate-to-power-bi-and-acquire-an-access-token).
 
-## Create and render a Quick visualize instance
+## Create and render a quick visualize instance
 
 Create a `QuickVisualize` instance from the [DataFrame you created](#create-a-pandas-dataframe). Use the `get_dataset_config` utility method to help create a [`dataset_create_config`](/javascript/api/powerbi/powerbi-models/idatasetcreateconfiguration) object from the pandas DataFrame. If you're using a DataFrame other than pandas, parse the data yourself.
 
