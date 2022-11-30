@@ -1,6 +1,6 @@
 ---
 title: Manage users
-description: Learn how to mange Power BI users in the Microsoft 365 admin center by accessing the Users tab through the Power Bi Admin portal .
+description: Learn how to manage Power BI users in the Microsoft 365 admin center by accessing the Users tab through the Power BI Admin portal.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
