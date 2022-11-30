@@ -46,7 +46,7 @@ In Premium Gen2, the enhanced compute engine is individually set for each datafl
 
 * **Disabled**
 
-* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when the dataflow is connected to another dataflow.
+* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when a table in the dataflow is referenced by another table or when the dataflows is connected to another dataflow in the same workspace.
 
 * **On**
 
