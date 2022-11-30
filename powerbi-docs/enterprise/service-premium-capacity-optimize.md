@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/24/2022
+ms.date: 11/29/2022
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -130,7 +130,7 @@ When the conditions are not met, the refresh is queued until the conditions are 
 
 For a full refresh, recall that at least double the current dataset memory size is required. If sufficient memory is not available, then the refresh cannot commence until model eviction frees up memory - this means delays until one or more datasets becomes inactive and can be evicted.
 
-Recall that the supported number of maximum concurrent refreshes is set to 1.5 times the number of v-cores, rounded up.
+Recall that the supported number of maximum concurrent refreshes is set to 0.75 times the number of v-cores, rounded up.
 
 A scheduled refresh will fail when it cannot commence before the next scheduled refresh is due to commence. An on-demand refresh triggered manually from the UI will attempt to run up to three times before failing.
 

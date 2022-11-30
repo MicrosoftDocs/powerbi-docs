@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/24/2022
+ms.date: 11/29/2022
 LocalizationGroup: Premium
 ---
 # Power BI Premium Gen2 architecture
@@ -33,7 +33,7 @@ When the content needs to be viewed or refreshed, it is read from the storage la
 
 As your capacity renders and refreshes more content, it uses more computation nodes, each with enough resources to complete operations fast and successfully. This means your capacity may use multiple computational nodes and in some cases, content might even move between nodes due to the Power BI service performing internal load-balancing across nodes or resources. When such load balancing occurs, Power BI makes sure content movement doesn't impact end-user experiences.
 
-There are several positive outcomes from distributing content (datasets, dataflows, and paginated reports) processing across shared nodes:
+There are several positive outcomes from distributing the processing of content (datasets, dataflows, paginated reports and other workloads) across multiple nodes.
 
 * The shared nodes are at least as large as an original Premium P3 node, which means there are more v-cores to perform any operations, which can increase performance by up to 16x when comparing to an original Premium P1.
 
