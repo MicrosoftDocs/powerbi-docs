@@ -27,7 +27,7 @@ Either of the two approaches gets the latest version of Power BI Desktop onto yo
 > [!NOTE]
 > The Power BI Report Server version of Power BI Desktop is a separate and different installation from the versions discussed in this article. For information about the Report Server version of Power BI Desktop, see [Create a Power BI report for Power BI Report Server](../report-server/quickstart-create-powerbi-report.md).
 
-## Install Power BI Desktop from the Microsoft Store
+## Install as an app from the Microsoft Store
 
 1. Use one of the following options to open the **Power BI Desktop** page of the Microsoft Store:
 
