@@ -41,11 +41,9 @@ Where is the dashboard going to be displayed? If it's on a large monitor, you ca
 Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best.
 
 - Can you avoid scroll bars on your dashboard?
-- Is the dashboard too cluttered?  
+- Is the dashboard too cluttered? Remove all but essential information.
 
-Remove all but essential information.
-
-## Make use of full screen mode
+## Make use of full-screen mode
 When presenting a dashboard, display it in [full-screen mode](../consumer/end-user-focus.md), without distractions.
 
 ## Accent the most important information
@@ -67,7 +65,7 @@ Avoid visualization variety for the sake of variety. Visualizations should paint
 * Be consistent with chart scales on axes, chart dimension ordering. Be consistent with the colors used for dimension values within charts as well.
 * Be careful encoding quantitative data. Don’t exceed three or four numerals when displaying numbers. Display measures to one or two numerals left of the decimal point and scale for thousands or millions. For example, use 3.4 million not 3,400,000.
 * Don’t mix levels of precision and time. Make sure that time frames are distinct and consistent. Don’t have one chart that has last month next to filtered charts from a specific month of the year.
-* Don’t mix large and small measures on the same scale, such as on a line or bar chart. For example, don't mix one measure that's in the millions with another measure that's in the thousands. With such a large scale, it's be difficult to see the differences of the measure that's in the thousands. If you need to mix, choose a visualization that allows the use of a second axis.
+* Don’t mix large and small measures on the same scale, such as on a line or bar chart. For example, don't mix one measure that's in the millions with another measure that's in the thousands. With such a large scale, it's difficult to see the differences of the measure that's in the thousands. If you need to mix, choose a visualization that allows the use of a second axis.
 * Don’t clutter your charts with data labels that aren't needed. The values in bar charts are usually understood without displaying the actual number.
 * Pay attention to how [charts are sorted](../consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to quickly find a particular category within many other categories, sort by the axis.  
 
