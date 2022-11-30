@@ -91,7 +91,7 @@ For these APIs, use the *accessLevel* parameter to determine the user's access l
 
     For report creation, you must also supply the *datasetId* parameter.
 
-Use the *allowSaveAs* boolean to let users save the report as a new report in their own workspace. This setting is set to *false* by default, and only applies when generating an embed token for a report.
+Use the *allowSaveAs* boolean to let users save the report as a new report. This setting is set to *false* by default, and only applies when generating an embed token for a report.
 
 ## Considerations and limitations
 
