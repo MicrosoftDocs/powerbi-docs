@@ -1,6 +1,6 @@
 ---
 title: Embed Power BI reports in Microsoft Teams
-description: You can easily embed interactive Power BI reports in Microsoft Teams channels and chats.
+description: Learn how to easily embed interactive Power BI reports in Microsoft Teams channels and chats.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 04/29/2021
+ms.date: 11/21/2022
 ---
 
 # Embed Power BI content in Microsoft Teams
@@ -33,27 +33,27 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
 1. Open a channel or chat in Microsoft Teams, and select the **+** icon.
 
-    ![Screenshot of Add a tab to a channel or chat.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
+    ![Screenshot of how to add a tab to a channel or chat.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
 
 1. Select the **Power BI** tab.
 
-    ![Screenshot of Microsoft Teams tab list showing Power B I.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
+    ![Screenshot of the Microsoft Teams tab list showing Power B I.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
 
 1. Use the provided options to select a report from a workspace or a Power BI app.
 
-    ![Screenshot of Power B I tab for Microsoft Teams settings.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
+    ![Screenshot of the Power B I tab for Microsoft Teams settings.](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
 
-1. The tab name updates automatically to match the name of the report name, but you can change it.
+    The tab name updates automatically to match report name, but you can change it.
 
 1. Select **Save**.
 
 ### Reports you can embed on the Power BI tab
 
-You can embed the following types of reports on the **Power BI** tab:
+You can embed the following report types on the **Power BI** tab:
 
-- Interactive and paginated reports.
-- Reports in workspaces, including My workspace.
-- Reports in Power BI apps.
+- Interactive and paginated reports
+- Reports in workspaces, including My workspace
+- Reports in Power BI apps
 
 ## Start a conversation
 
@@ -61,15 +61,15 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 
 - Select the **Show tab conversation** icon in the upper-right corner.
 
-    ![Screenshot of Show tab conversation icon.](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-icon.png)
+    ![Screenshot of the Show tab conversation icon.](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-icon.png)
 
     The first comment is a link to the report. Everyone in that Microsoft Teams channel can see and discuss the report in the conversation.
 
-    ![Screenshot of Tab conversation.](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-tab.png)
+    ![Screenshot of the Tab conversation.](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-tab.png)
 
 ## Known issues and limitations
 
-- In Microsoft Teams, when you export data from a visual in a Power BI report, it's automatically saved to your Downloads folder. It's an Excel file called "data (*n*).xlsx" where *n* is the number of times you've exported data to the same folder.
+- In Microsoft Teams, when you export data from a visual in a Power BI report, the data is automatically saved to your *Downloads* folder. It's an Excel file called "data (*n*).xlsx" where *n* is the number of times you've exported data to the same folder.
 - You can't embed Power BI dashboards in the **Power BI** tab for Microsoft Teams.
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
 - In national clouds, the **Power BI** tab isn't available.
