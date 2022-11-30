@@ -2,26 +2,23 @@
   href: index.yml
   expanded: true
   items:
-  - name: Microsoft Support
+  - name: About Support requests
     items:
-    - name: Power BI support options for paid customers
+    - name: Support overview
+      href: /power-platform/admin/support-overview.md
+    - name: How to contact Support
       href: service-support-options.md
-    - name: Options for contacting support for sign-in issues
-      href: power-bi-cannot-sign-in.md
-    - name: About planned maintenance for the Power BI service
-      href: service-planned-maintenance.md     
-    - name: Capture diagnostic information before contacting support
-      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
-    - name: Request a region move via a support request
-      href: service-admin-region-move.md
-    - name: 10 tips for getting help with Power BI
-      href: service-tips-for-finding-help.md
-    - name: View current and historical service health in the Microsoft 365 admin center
-      href: service-admin-health.md 
-    - name: Learn about how to receive email notifications when there is a Power BI service disruption or outage
-      href: service-interruption-notifications.md
-    - name: Help and support settings
-      href: service-admin-portal-help-support.md
+    - name: Create a Support ticket
+      href: /power-platform/admin/get-help-support.md
+    - name: Manage a Support ticket
+      href: x.md
+    - name: Consent to access customer data
+      href: /power-platform/admin/support-environment
+    - name: Capture diagnostic information (traces)
+      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+    - name: Policies and communications for Power BI
+      href: /power-platform/admin/policies-communications.md
+
   - name: Before you contact Support
     items:
     - name: View current and historical service health in the Microsoft 365 admin center
@@ -30,6 +27,8 @@
       href: https://support.powerbi.com
     - name: What is the planned maintenance schedule
       href: service-planned-maintenance.md
+    - text: Find your organization ID and name
+      href: ./power-platform/admin/determine-org-id-name.md
     - name: Is this a known issue?
       href: ../troubleshoot/known-issues/power-bi-known-issues.md
     - name: Look for an answer in the Community forum
@@ -42,12 +41,14 @@
       href: power-bi-cannot-sign-in.md 
     - name: Request and prepare for a region move 
       href: service-admin-region-move.md 
+ 
   - name: Support-related admin settings
     items:
     - name: Help and Support settings
       href: service-admin-portal-help-support.md
     - name: Service interruption notifications
       href: service-interruption-notifications.md
+
   - name: Troubleshooting guide
     items:
     - name: Power BI
