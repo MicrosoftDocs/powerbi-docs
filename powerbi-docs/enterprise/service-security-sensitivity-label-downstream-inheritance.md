@@ -28,7 +28,7 @@ Downstream inheritance is illustrated below by using [lineage view](../collabora
 
 ## Downstream inheritance modes
 
-Downstream inheritance operates in one of two modes. The Power BI admin decides via a [tenant setting](#enabling-fully-automated-downstream-inheritance) which mode is operable on the tenant.
+Downstream inheritance operates in one of two modes. The Power BI admin decides via a [tenant setting](#enable-fully-automated-downstream-inheritance) which mode is operable on the tenant.
 
 * **Downstream inheritance with user consent** (default): In this mode, when users apply sensitivity labels on datasets or reports, they can choose whether to also apply that label downstream. They make their choice by selecting the box that appears with the sensitivity label selector.
 * **Fully automated downstream inheritance** (when enabled by a Power BI admin): In this mode, downstream inheritance happens automatically whenever a label is applied to a dataset or report. There's no checkbox provided for user consent.
