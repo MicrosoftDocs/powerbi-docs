@@ -1,5 +1,5 @@
 ---
-title: Edit your Azure Active Directory app's permissions
+title: Edit your Azure AD app's permission settings
 description: Learn how to change the API permissions on your Azure AD application.
 author: mberdugo
 ms.author: monaberdugo
