@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 11/21/2022
+ms.date: 12/01/2022
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with the Power BI service.
 ms.custom: intro-overview
@@ -25,7 +25,7 @@ As the data piles up, it becomes harder to find what you need quickly, and you w
 
 ## Overview of the Power BI service
 
-Power BI makes your job easier and more impactful. All the content you receive becomes charts and graphs that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are beautiful, colorful, and compelling visuals. They tell stories about your content.
+Power BI makes your job easier and more impactful. All the content you receive becomes charts and graphs that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are beautiful, colorful, and compelling visuals. They tell stories about your data.
 
 :::image type="content" source="media/end-user-consumer/power-bi-consumer-examples.png" alt-text="Screenshot shows a Power BI report with different kinds of charts." lightbox="media/end-user-consumer/power-bi-consumer-examples.png#lightbox":::
 
@@ -33,7 +33,7 @@ Open the Power BI service in a browser or on a mobile device. You and your colle
 
 :::image type="content" source="media/end-user-consumer/power-bi-funnel.png" alt-text="Diagram shows data in several formats merging into Power BI. It's displayed on a computer screen and a hand-held device.":::
 
-The content isn't static, so you can dig in and look for trends, insights, and other business intelligence. Slice and dice the visual, and even ask it questions in your own words. Or, sit back and let your data discover interesting insights, send you alerts when data changes, or email reports to you on a schedule that you set. All your content is available to you anytime, in the cloud or on-premises, from any device. That's just the beginning of what Power BI can do.
+The content isn't static, so you can dig in and look for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions in your own words. Or, sit back and let your data discover interesting insights, send you alerts when data changes, or email reports to you on a schedule that you set. All your content is available to you anytime, in the cloud or on-premises, from any device. That's just the beginning of what Power BI can do.
 
 ## Are you a Power BI business user?
 
