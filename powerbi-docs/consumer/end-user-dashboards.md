@@ -25,7 +25,7 @@ The visualizations on the dashboard are called *tiles* and are *pinned* to the d
 >
 >You can view and share dashboards on [mobile devices](mobile/mobile-apps-view-dashboard.md).
 >
->To view dashboards that colleagues share with you, you must have Power BI Pro or Premium. For more information, see [Power BI license types](end-user-license.md).
+>To view dashboards that colleagues share with you, you must have a Pro license or the content must be shared with you from a workspace in Premium capacity. For more information, see [Power BI license types](end-user-license.md).
 
 The visualizations on a dashboard come from reports, and each report is based on one dataset. You can think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
 
@@ -48,8 +48,7 @@ How you interact with Power BI depends on your job role. As a consumer or busine
 | **Data sources** | One or more report or dataset per dashboard |A single dataset per report |
 | **Filtering** | No, you can't filter or slice | Yes, there are many ways to filter, highlight, and slice |
 | **Set alerts** | Yes, you can create email alerts when certain conditions are met | No, you can't set alerts |
-| **Featured** | Yes, you can set a featured dashboard | No, you can't set a featured report |
-| **See underlying dataset tables and fields** | No, you can export data, but you can't see tables and fields in the dashboard itself |Yes, you can see dataset tables, fields, and values |
+| **Can see underlying dataset tables and fields** |No. Can export data but can't see the dataset tables and fields in the dashboard itself |Yes. Can see dataset tables and fields and values that you have permissions to see |
 
 ## Next steps
 
