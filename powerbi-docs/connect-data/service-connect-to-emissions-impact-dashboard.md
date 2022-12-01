@@ -25,7 +25,7 @@ To install the Emissions Impact Dashboard for Azure in Power BI and connect it t
 
 * A Power BI Pro license. If you don’t have a Power BI Pro license, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
 
-* An admin role with read/write permissions on your Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
+* An admin role with read/write permissions on your Azure tenant. If you don't have these permissions, contact an Azure admin who has read/write permissions.
 
 The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MPA accounts with direct billing relationships with Microsoft.
 
