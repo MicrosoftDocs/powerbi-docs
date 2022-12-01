@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: faq
-  ms.date: 07/07/2022
+  ms.date: 07/08/2022
 title: Frequently asked questions about Power BI Embedded
 summary: |
   * If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
@@ -65,7 +65,7 @@ sections:
       - question: |
           How can I autoscale Embedded Gen2?
         answer: |
-          Embedded Gen 2 does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2) 
+          Embedded Gen 2 does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](./azure-pbie-scale-capacity.md#autoscale-your-capacity). 
 
       - question: |
           How is Embedded Gen2 resource utilization evaluated?
@@ -240,14 +240,12 @@ sections:
       - question: |
           What is the difference between using row-level security (RLS) vs. JavaScript filters?
         answer: |
-          There's often confusion around when to use RLS versus JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
+          There's often confusion around when to use RLS versus JavaScript filters. One method is about controlling what a specific user can see, and the other is about optimizing the user's view.
           
-          For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
+          With RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
           
-          For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
-          
-          Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
-          
+          With client-side filtering (JavaScript), the ISV might decide what the end user sees in the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
+                   
       - question: |
           How do I manage permissions for service principals with Power BI?
         answer: |

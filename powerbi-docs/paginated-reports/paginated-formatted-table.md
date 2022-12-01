@@ -108,7 +108,7 @@ You can export the table before or after you save it. Paginated reports have ric
 
 ## Save your report
 
-You can save the report to any workspace, including workspaces that aren't in a Power BI Premium capacity.
+You can save the report to any workspace.
 
 1. On the **File** menu, save, download, or print your report.
 
@@ -132,7 +132,7 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 
 ## Considerations and limitations
 
-- You can create a formatted table in any workspace. It doesn't need to be in a Premium workspace.
+- You can create a formatted table in any workspace.
 - You can't create a formatted table from Power BI datasets based on a live connection.
 
 ## Next steps
