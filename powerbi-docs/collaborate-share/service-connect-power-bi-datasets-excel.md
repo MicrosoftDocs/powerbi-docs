@@ -32,18 +32,18 @@ Connect to Power BI datasets in Excel by starting in the Power BI service or in 
 
 ## Prerequisites
 
-Here are things to keep in mind for connecting to Power BI datasets in Excel:
+Here are things to keep in mind when you connect to Power BI datasets in Excel:
 
 - Analyzing Power BI data in Excel is supported for Microsoft Excel 2010 SP1 and later.
 - Your dataset in Power BI *must have pre-defined measures*. Excel PivotTables don't support drag-and-drop aggregation of numeric fields. Read about [creating measures](../transform-model/desktop-measures.md).
 - Analyzing Power BI data in Excel requires that the dataset be in a Power BI Premium workspace or that you have a Power BI Pro or Premium Per User (PPU) license. For more information about the differences in functionality between license types, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
-- You need permissions for the underlying dataset if you want to connect to Power BI datasets in Excel. You could have this permission one of the following ways:
+- You need permissions for the underlying dataset if you want to connect to Power BI datasets in Excel. You can have this permission in one of the following ways:
 
-    Have the Member role in the workspace containing the dataset.
+  - Have the Member role in the workspace that contains the dataset.
 
-    Have Build permission for the dataset in a workspace, or in an app that contains the dataset. For more information about this permission for Power BI datasets, see [Build permission](../connect-data/service-datasets-build-permissions.md).
+  - Have Build permission for the dataset in a workspace, or in an app that contains the dataset. For more information about this permission for Power BI datasets, see [Build permission](../connect-data/service-datasets-build-permissions.md).
 
-- You can only analyze Power BI data in the Excel desktop app on computers running Microsoft Windows. For computers running other operating systems, you can analyze Power BI data in Excel for the web.
+- You can only analyze Power BI data in the Excel desktop app on computers that run Microsoft Windows. For computers that run other operating systems, you can analyze Power BI data in Excel for the web.
 
 ## Next steps
 
