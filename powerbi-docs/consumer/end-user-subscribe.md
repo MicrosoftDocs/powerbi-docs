@@ -48,7 +48,6 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
    :::image type="content" source="./media/end-user-subscribe/power-bi-changes.png" alt-text="Subscribe window.":::
 
-
 3.  Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
 4. Edit or add recipients by email address, ensuring that you've at least one. Optionally, add a subject and email message details. 
@@ -56,9 +55,12 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > [!NOTE]
     > Guest users can only subscribe themselves. 
 
-5. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 8 below.) 
+5. For Power BI reports, use the dropdown to select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 9 below.) 
+
+    > [!TIP]
+    > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
  
-6. 
+6. When creating a subscription for a report, you'll have the option to **Include my changes**. When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report.  This includes:  
 
     - filters (filter pane)
     - slicers
@@ -74,10 +76,6 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > [!NOTE]
     > The **Include my changes** field isn't available for dashboards or paginated reports. 
 
-6. For Power BI reports, select the **Report page** you want to appear in the email's preview image. To subscribe to more than one page in a report, either create a new subscription for each report page by selecting **Add new subscription** and choosing a different page from the dropdown, or selecting the **Full report attachment as** checkbox under **Also include**. (For more information about full report attachments, see step 9 below.) 
-
-    > [!TIP]
-    > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
 7. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  
     
     > [!TIP]
@@ -86,18 +84,18 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     - If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). 
     - You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after the Scheduled Time.  
 
-7. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You'll receive notification(s) before the scheduled end date to ask if you'd like to extend it.
+8. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date will be the date you created the subscription and the end date will be one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You'll receive notification(s) before the scheduled end date to ask if you'd like to extend it.
  
 
-8. Include additional information in the email. Select one or more of these checkboxes.
+9. Include additional information in the email. Select one or more of these checkboxes.
     - **Permission to access the report/dashboard in Power BI**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com).
     - **Link to report/dashboard in Power BI**: Include a “Go to report” button in the body of the email that links to the report or dashboard in the Power BI service.
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email.
     - **Full report attachment as (for Power BI reports only)**: If the report is in a workspace backed by a Premium **Gen2** capacity or Premium Per User (PPU) license, add the full report as an attachment instead of only a single report page. Select PDF or PowerPoint for the attachment format. The attachment respects all privacy labels for the report. The size of the attachment is limited to no more than 20 pages and less than 25 MB. For more information about Premium Gen2, see [What is Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md).
 
-9. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying dataset. 
+10. If everything looks good, select **Save and close**. To test out your subscription, select **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying dataset. 
 
-10. You'll now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
+You'll now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
 
     
     > [!NOTE]
@@ -126,7 +124,7 @@ When creating a subscription, you can add other email addresses in the same doma
 
 ### Subscribe external users 
 
-You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity.  
+You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. Guest users cannot add subscriptions for external users. 
 
 - If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select  **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
@@ -134,7 +132,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - *Sharing* content with a colleague outside of your domain doesn't require a Premium capacity. For example, if you're aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (aka Business-to-business users) have been added to your organization as Azure Active Directory (AAD) guest users. To learn more about guest users see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (aka Business-to-business users) are external users who have been added to your organization as Azure Active Directory (AAD) guest users. To learn more about guest users see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Subscribe to paginated reports 
 
@@ -281,7 +279,6 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 Email subscriptions don't support:
  
 * R-powered Power BI visuals  
-* bookmarks
 * most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
 * Dataset refresh operations using an XMLA endpoint.
 
