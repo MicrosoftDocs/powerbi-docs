@@ -36,7 +36,7 @@ Your Power BI admin also needs to enable subscriptions in your tenant. If you’
 
 
 ## Subscribe to a report or dashboard
-Whether you're subscribing to a dashboard or to a report page, the process is similar. The same button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few additional field options, so we'll use a report for our example. 
+Whether you're subscribing to a dashboard or to a report page, the process is similar. The same button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we'll use a report for our example. 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-subscriber.png" alt-text="select the Subscribe icon":::
 
@@ -55,12 +55,12 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > [!NOTE]
     > Guest users can only subscribe themselves. 
 
-5. For Power BI reports, use the dropdown to select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 9 below.) 
+5. For Power BI reports, use the dropdown to select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more information about full report attachments, see step 9 below.) 
 
     > [!TIP]
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
  
-6. When creating a subscription for a report, you'll have the option to **Include my changes**. When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report.  This includes:  
+6. When creating a subscription for a report, you'll choose whether to **Include my changes**. When **Include my changes** is unchecked, Power BI ignores all changes you may have made to the report, and subscribes you to the report as published by the author. When **Include my changes** is checked, Power BI subscribes you to the report including all changes you've made to the report.  Changes include:  
 
     - filters (filter pane)
     - slicers
@@ -109,7 +109,7 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Contributor, Member, or Admin role in that workspace.  You’ll know you have the Contributor, Member or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-- To be part of the organization. [Guest users](../enterprise/service-admin-azure-ad-b2b.md) cannot subscribe others.
+- To be part of the organization. [Guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others.
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
@@ -123,15 +123,15 @@ When creating a subscription, you can add other email addresses in the same doma
 
 ### Subscribe external users 
 
-You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. Guest users cannot add subscriptions for external users. 
+You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. Guest users can't add subscriptions for external users. 
 
-- If you subscribe external users to a report or dashboard, they will receive a share notification immediately after you select  **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
+- If you subscribe external users to a report or dashboard, they'll receive a share notification immediately after you select  **Save and close** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
 
 - Premium Per User workspaces don't qualify as Premium capacity workspaces. 
 
 - *Sharing* content with a colleague outside of your domain doesn't require a Premium capacity. For example, if you're aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (aka Business-to-business users) are external users who have been added to your organization as Azure Active Directory (AAD) guest users. To learn more about guest users see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (also known as Business-to-business users) are external users who have been added to your organization as Azure Active Directory (AAD) guest users. To learn more about guest users, see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Subscribe to paginated reports 
 
@@ -165,7 +165,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 - The maximum attachment size is 25 MB.
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
-- There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
+- There's no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
 - Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. However, you can't create data-driven subscriptions for paginated reports in the Power BI service.
 
 
