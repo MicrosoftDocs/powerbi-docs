@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 10/13/2022
+  ms.date: 11/22/2022
   
 title: Deployment pipelines troubleshooting
 summary: |
@@ -274,6 +274,11 @@ sections:
           Why are some tiles in my dashboard not displaying information after deployment? 
         answer: |
           When you pin a tile to a dashboard, if the tile relies on an [unsupported Power BI item](deployment-pipelines-process.md#unsupported-items), or on an item that you don't have permissions to deploy, after deploying the dashboard the tile will not render. For example, if you create a tile from a report that relies on a dataset you're not an admin on, when deploying the report you'll get an error warning. However, when deploying the dashboard with the tile, you'll not receive an error message, the deployment will succeed, but the tile will not display any information.   
+
+      - question: |
+          Why did my dataset deployment fail? 
+        answer: |
+          There could be a few possible reasons for your dataset deployment to fail. One of the reasons may be due to a large dataset that isn't configured with the [large dataset format](./../enterprise/service-premium-large-models.md). If your dataset is larger than 4GB and isn't using the large dataset format, it might fail to be deployed. Try setting your dataset to use the large dataset format, and redeploy.
 
   - name: Paginated reports
     questions:
