@@ -1,6 +1,6 @@
 ---
 title: Sensitivity label downstream inheritance in Power BI
-description: Learn how when you apply sensitivity labels to datasets or reports in the Power BI service, they can be propagated to downstream content.
+description: Learn how sensitivity labels can be propagated to downstream content when you apply them to datasets or reports in the Power BI service.
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -13,27 +13,27 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity label downstream inheritance
 
-When a sensitivity label is applied to a dataset or report in the Power BI service, it's possible for the label to trickle down and be applied to content built from that dataset or report. For datasets, the label is applied to other datasets, reports, and dashboards. For reports, the label is applied to dashboards. This capability is called downstream inheritance.
+When a sensitivity label is applied to a dataset or report in the Power BI service, it's possible for the label to trickle down and be applied to content that's built from that dataset or report. For datasets, the label is applied to other datasets, reports, and dashboards. For reports, the label is applied to dashboards. This capability is called downstream inheritance.
 
 Downstream inheritance is a critical link in Power BI’s end-to-end information protection solution. Together with [inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md), [inheritance upon creation of new content](service-security-sensitivity-label-overview.md#sensitivity-label-inheritance-upon-creation-of-new-content), [inheritance upon export to file](service-security-sensitivity-label-overview.md#sensitivity-labels-and-protection-on-exported-data), and other capabilities for applying sensitivity labels, downstream inheritance helps ensure that sensitive data remains protected throughout its journey through Power BI, from data source to point of consumption. 
 
-Downstream inheritance is illustrated below by using [lineage view](../collaborate-share/service-data-lineage.md). When a label is applied to the dataset “Customer profitability”, that label filters down and gets applied to the dataset’s downstream content. Downstream content includes the reports that are built using that dataset, and a dashboard that is built from visuals from one of those reports.
+Downstream inheritance is illustrated below by using [lineage view](../collaborate-share/service-data-lineage.md). When a label is applied to the dataset “Customer profitability,” that label filters down and gets applied to the dataset’s downstream content. Downstream content includes the reports that are built using that dataset, and a dashboard that's built from visuals from one of those reports.
 
 ![Screenshot of lineage view that shows downstream inheritance.](media/service-security-sensitivity-label-downstream-inheritance/downstream-inheritance-lineage-view.png)
 
 >[!IMPORTANT]
 >
 >* Downstream inheritance never overwrites labels that were applied manually.
->* Downstream inheritance never overwrites a label with a less restrictive label.
+>* Downstream inheritance never overwrites a label by applying a label that's less restrictive than the current one.
 
 ## Downstream inheritance modes
 
-Downstream inheritance operates in one of two modes. The Power BI admin decides via a [tenant setting](#enabling-fully-automated-downstream-inheritance) which mode will be operable on the tenant.
+Downstream inheritance operates in one of two modes. The Power BI admin decides via a [tenant setting](#enabling-fully-automated-downstream-inheritance) which mode is operable on the tenant.
 
-* **Downstream inheritance with user consent** (default): In this mode, when users apply sensitivity labels on datasets or reports, they can choose whether to apply that label downstream as well. They make their choice by checking the box that appears with the sensitivity label selector.
-* **Fully automated downstream inheritance** (when enabled by Power BI admin): In this mode, downstream inheritance happens automatically whenever a label is applied to a dataset or report. There's no checkbox provided for user consent.
+* **Downstream inheritance with user consent** (default): In this mode, when users apply sensitivity labels on datasets or reports, they can choose whether to also apply that label downstream. They make their choice by selecting the box that appears with the sensitivity label selector.
+* **Fully automated downstream inheritance** (when enabled by a Power BI admin): In this mode, downstream inheritance happens automatically whenever a label is applied to a dataset or report. There's no checkbox provided for user consent.
 
-The two downstream inheritance modes are explained in more detail below.
+The two downstream inheritance modes are explained in more detail in the following sections.
 
 ### Downstream inheritance with user consent
 
@@ -41,7 +41,7 @@ In user consent mode, when a user applies a sensitivity label to a dataset or re
 
 ![Screenshot of the sensitivity label dialog with the user consent for downstream inheritance checked.](media/service-security-sensitivity-label-downstream-inheritance/downstream-inheritance-user-consent-checkbox.png)
 
-By default, the checkbox is selected. When the user applies a sensitivity label to a dataset or report, the label will filter down to its downstream content. For each downstream item, the label will be applied only if:
+By default, the checkbox is selected. When the user applies a sensitivity label to a dataset or report, the label filters down to its downstream content. For each downstream item, the label is applied only if:
 
 * The user who applied or changed the label has Power BI edit permissions on the downstream item. That is, the user is an admin, member, or contributor in the workspace where the downstream item is located.
 * The user who applied or changed the label is [authorized](service-security-sensitivity-label-change-enforcement.md) to change the sensitivity label that already exists on the downstream item. 
@@ -50,13 +50,13 @@ Clearing the checkbox prevents the label from being inherited downstream.
 
 ### Fully automated downstream inheritance
 
-In fully automated mode, a label applied to either a dataset or report will automatically propagate and be applied to the dataset or report’s downstream content. This propagation occurs without regard to edit permissions on the downstream item and any [usage rights](service-security-sensitivity-label-change-enforcement.md) on the label.
+In fully automated mode, a label applied to either a dataset or report automatically propagates and is applied to the dataset or report’s downstream content. This propagation occurs without regard to edit permissions on the downstream item and any [usage rights](service-security-sensitivity-label-change-enforcement.md) on the label.
 
 ## Relaxed label change enforcement
 
-In certain cases, downstream inheritance (like other automated labeling scenarios) can result in a situation where no user has all the required permissions needed to change a label. For such situations, label change enforcement relaxations are in place to guarantee access to affected items. See [Relaxations to accommodate automatic labeling scenarios](service-security-sensitivity-label-change-enforcement.md#relaxations-to-accommodate-automatic-labeling-scenarios) for detail.
+In certain cases, downstream inheritance (like other automated labeling scenarios) can result in a situation where no user has all the required permissions needed to change a label. For such situations, label change enforcement relaxations are in place to guarantee access to affected items. See [Relaxations to accommodate automatic labeling scenarios](service-security-sensitivity-label-change-enforcement.md#relaxations-to-accommodate-automatic-labeling-scenarios) for details.
 
-## Enabling fully automated downstream inheritance
+## Enable fully automated downstream inheritance
 
 By default, downstream inheritance operates in user consent mode. To switch downstream inheritance in the tenant to fully automated mode, the Power BI admin must enable the **Automatically apply sensitivity labels to downstream content** tenant setting in the admin portal.
 
@@ -64,9 +64,9 @@ By default, downstream inheritance operates in user consent mode. To switch down
 
 ## Considerations and limitations
 
-* Downstream inheritance is limited to 80 items. If the number of downstream items exceeds 80, no downstream inheritance takes place. Only the item where the label was applied will receive the label.
+* Downstream inheritance is limited to 80 items. If the number of downstream items exceeds 80, no downstream inheritance takes place. Only the item where the label was applied receives the label.
 * Downstream inheritance never overwrites manually applied labels.
-* Downstream inheritance never replaces a label on downstream content with a label that is less restrictive than the currently applied label.
+* Downstream inheritance never replaces a label on downstream content with a label that's less restrictive than the currently applied label.
 * [Sensitivity labels inherited from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) are automatically propagated downstream only when fully automated downstream inheritance mode is enabled.
 
 ## Next steps
