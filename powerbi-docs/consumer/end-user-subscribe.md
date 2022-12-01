@@ -97,9 +97,8 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 You'll now receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.  
 
-    
-    > [!NOTE]
-    > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
+> [!NOTE]
+> To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
 
    
    ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscriptions-email.png)
