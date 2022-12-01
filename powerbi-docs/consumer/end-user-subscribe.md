@@ -53,7 +53,12 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 4. Edit or add recipients by email address, ensuring that you've at least one. Optionally, add a subject and email message details. 
 
+    > [!NOTE]
+    > Guest users can only subscribe themselves. 
+
 5. For Power BI reports, select the **Report page** you want to appear in the preview image. To subscribe to more than one page in a report, either select **Add new subscription** and choose a different page from the dropdown, or select the **Full report attachment as** checkbox under **Also include**. (For more details about full report attachments, see step 8 below.) 
+ 
+6. 
 
     - filters (filter pane)
     - slicers
