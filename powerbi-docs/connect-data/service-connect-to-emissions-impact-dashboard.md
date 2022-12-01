@@ -29,7 +29,7 @@ To install the Emissions Impact Dashboard for Azure in Power BI and connect it t
 
 The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MPA accounts with direct billing relationships with Microsoft.
 
-* If you have an EA Direct account, you must be a Billing Account Administrator (formerly known as an Enrollment Administrator) with either read or write permissions and have your company's [billing account ID]([billing account ID](#finding-your-companys-billing-account-id) (formerly known as the enrollment number).
+* If you have an EA Direct account, you must be a Billing Account Administrator (formerly known as an Enrollment Administrator) with either read or write permissions and have your company's [billing account ID](#finding-your-companys-billing-account-id) (formerly known as the enrollment number).
 
 * If you have an MCA or MPA and direct billing relationship with Microsoft, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner and have your company's [billing account ID](#finding-your-companys-billing-account-id).
 
