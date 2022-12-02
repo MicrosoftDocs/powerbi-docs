@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 11/29/2022
+ms.date: 12/01/2022
 LocalizationGroup: Troubleshooting
 ---
 
@@ -27,7 +27,7 @@ If you need to troubleshoot an issue with Power BI data in Excel, see the follow
 
 * [Forbidden error](#forbidden-error) 
 * [Unable to access on-premises Analysis Services](#unable-to-access-on-premises-analysis-services)
-* [Can't drag anything to the PivotTable Values area (no measures)](#cant-drag-anything-to-the-pivottable-values-area-no-measures)
+* [Can't drag anything to the PivotTable Values area (no measures)](#cant-drag-anything-to-the-pivottable-values-area)
 
 If you need to troubleshoot an issue in Power BI with Analyze in Excel, see the following sections:
 
@@ -46,7 +46,7 @@ If you still run into errors, log into Power BI with the account that has permis
 ## Unable to access on-premises Analysis Services
 If you're trying to access a dataset that has a live connection to SQL Server Analysis Services or Azure Analysis Services data, you may receive an error message. This error may occur because a user can't connect to Power BI datasets. This situation may happen when you build datasets on live connections to Analysis Services unless the user has read access to the data in Analysis Services in addition to the datasets permissions in Power BI.
 
-## Can't drag anything to the PivotTable Values area (no measures)
+## Can't drag anything to the PivotTable Values area
 Excel connects to Power BI through an external OLAP model. When these applications connect, the *PivotTable* requires you to define **measures** in the external model because all calculations are performed on the server. This requirement is different from working with a local data source, such as tables in Excel and working with datasets in **Power BI Desktop** or the **Power BI service**). In those cases, the tabular model is available locally, and [you can use implicit measures](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4). Implicit measures are generated dynamically, and not stored in the data model. In these cases, the behavior in Excel is different from the behavior in **Power BI Desktop** or the **Power BI service**. For instance, there may be columns in the data that can be treated as measures in Power BI, but can't be used as measures, or values, in Excel.
 
 To address this issue, you have a few options:
