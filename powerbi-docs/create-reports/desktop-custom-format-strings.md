@@ -24,7 +24,7 @@ To create custom format strings, select the field in the **Modeling** view, and 
 
 ![Screenshot of the Properties pane, highlighting the Format menu.](media/desktop-custom-format-strings/custom-format-strings-02.png)
 
-Once you've selected **Custom** from the **Format** dropdown menu, you can select from a list of commonly used format strings.
+Once you've selected **Custom** from the **Format** dropdown menu, choose from a list of commonly used format strings.
 
 ![Screenshot of the Formatting menu, highlighting Custom.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
@@ -34,7 +34,7 @@ Custom format strings follow the VBA style syntax, common to Excel and other Mic
 
 The following tables define the syntax supported in Power BI.
 
-### Supported **Date symbols**
+### Supported Date symbols
 
 | **Symbol** | **Range** |
 | --- | --- |
@@ -45,9 +45,9 @@ The following tables define the syntax supported in Power BI.
 | _mmm_ | Displays abbreviated month names (Hijri month names have no abbreviations) |
 | _mmmm_ | Displays full month names |
 | _yy_ | 00-99 (Last two digits of year) |
-| _yyyy_ | 100-9999 (Three- or Four-digit year) |
+| _yyyy_ | 100-9999 (Three- or four-digit year) |
 
-### Supported **Time symbols**
+### Supported Time symbols
 
 | **Symbol** | **Range** |
 | --- | --- |
@@ -63,7 +63,7 @@ The following tables define the syntax supported in Power BI.
 
 You can see an [example](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) of how to format custom value strings.
 
-A user-defined format expression for numbers can have one to three sections separated by semicolons. If you include semicolons with nothing between them, the missing section won't be displayed (it will be ""). If the semicolon isn't specified, it will use the positive format.
+A user-defined format expression for numbers can have one to three sections separated by semicolons. If you include semicolons with nothing between them, the missing section won't display (it will be ""). If you don't specify the semicolon, it uses the positive format.
 
 Here are examples of different formats for different value strings:
 
@@ -78,7 +78,7 @@ The following table identifies the predefined **named date and time formats**:
 
 | **Format name** | **Description** |
 | --- | --- |
-| **General Date** | Display a date and/or time, for example, 4/3/93 05:34 PM. If there's no fractional part, display only a date, for example, 4/3/93. If there's no integer part, display time only, for example, 05:34 PM. Date display is determined by your system settings. |
+| **General Date** | Display a date and time, for example, 4/3/93 05:34 PM. If there's no fractional part, display only a date, for example, 4/3/93. If there's no integer part, display time only, for example, 05:34 PM. Date display is determined by your system settings. |
 | **Long Date** | Display a date according to your system's long date format. |
 | **Short Date** | Display a date using your system's short date format. |
 | **Long Time** | Display a time using your system's long time format; includes hours, minutes, seconds. |
@@ -101,8 +101,8 @@ The following table identifies characters you can use to create **user-defined d
 
 | **Character** | **Description** |
 | --- | --- |
-| ( **:** ) | Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings. |
-| ( **/** ) | Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
+| ( **:** ) | Time separator. In some locales, other characters might be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings. |
+| ( **/** ) | Date separator. In some locales, other characters might be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
 | d | Display the day as a number without a leading zero (1–31). |
 | dd | Display the day as a number with a leading zero (01–31). |
 | ddd | Display the day as an abbreviation (Sun–Sat). Localized. |
@@ -131,8 +131,8 @@ The following table identifies characters you can use to create **user-defined n
 | ( **.** ) | Decimal placeholder. In some locales, a comma is used as the decimal separator. The decimal placeholder determines how many digits are displayed to the left and right of the decimal separator. If the format expression contains only number signs to the left of this symbol, numbers smaller than 1 begin with a decimal separator. To display a leading zero displayed with fractional numbers, use 0 as the first-digit placeholder to the left of the decimal separator. The actual character used as a decimal placeholder in the formatted output depends on the Number Format recognized by your system. |
 | (**%)** | Percentage placeholder. The expression is multiplied by 100. The percent character ( **%** ) is inserted in the position where it appears in the format string. |
 | ( **,** ) | Thousand separators. In some locales, a period is used as a thousand separator. The thousand separator separates thousands from hundreds within a number that has four or more places to the left of the decimal separator. Standard use of the thousand separator is specified if the format contains a thousand separator surrounded by digit placeholders ( **0**  or  **#** ). Two adjacent thousand separators or a thousand separator immediately to the left of the decimal separator (whether or not a decimal is specified) means "scale the number by dividing it by 1000, rounding as needed." For example, you can use the format string "##0,," to represent 100 million as 100. Numbers smaller than 1 million are displayed as 0. Two adjacent thousand separators in any position other than immediately to the left of the decimal separator are treated simply as specifying the use of a thousand separator. The actual character used as the thousand separator in the formatted output depends on the Number Format recognized by your system. |
-| ( **:** ) | Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings. |
-| ( **/** ) | Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
+| ( **:** ) | Time separator. In some locales, other characters might be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings. |
+| ( **/** ) | Date separator. In some locales, other characters might be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
 | ( **E- E+ e- e+** ) | Scientific format. If the format expression contains at least one digit placeholder ( **0**  or  **#** ) to the right of E-, E+, e-, or e+, the number is displayed in scientific format and E or e is inserted between the number and its exponent. The number of digit placeholders to the right determines the number of digits in the exponent. Use E- or e- to place a minus sign next to negative exponents. Use E+ or e+ to place a minus sign next to negative exponents and a plus sign next to positive exponents. |
 | **- + $**  ( ) | Display a literal character. To display a different character, precede it with a backslash (\\) or enclose it in double quotation marks (" "). |
 | ( **\\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\\). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\\\). Date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, /, and :) can't be displayed as literal characters, the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &, <, >, and !). |
