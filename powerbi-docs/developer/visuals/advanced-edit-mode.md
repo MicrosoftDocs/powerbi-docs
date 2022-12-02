@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/10/2022
+ms.date: 12/2/2022
 ---
 
 # Advanced edit mode in Power BI visuals
@@ -20,7 +20,7 @@ By default, the visual doesn't support Advanced Edit mode (`"advancedEditModeSup
 
 The possible values are:
 
-* `0` - **NotSupported**. The visual doesn't support Advanced Edit mode. The **Edit** button does not appear on this visual.
+* `0` - **NotSupported**. The visual doesn't support Advanced Edit mode. The **Edit** button doesn't appear on this visual.
 
 * `1` - **SupportedNoAction**. The visual supports Advanced Edit mode and doesn't require more changes. Power BI doesn't switch the visual to *Focus* Mode. Developers might use this setting as an external button to run several processes in the same viewport.
 
@@ -34,7 +34,7 @@ An **Edit** button appears if:
 
 * The visual is viewed in report editing mode.
 
-If the `advancedEditModeSupport` property is missing from the *capabilities.json* file or set to `NotSupported`, the **Edit** button does not appear.
+If the `advancedEditModeSupport` property is missing from the *capabilities.json* file or set to `NotSupported`, the **Edit** button doesn't appear.
 
 When you select **Edit**, the visual gets an `update()` call with `EditMode` set to `Advanced`. Depending on the value that's set in the *capabilities.json* file, the following actions occur:
 
