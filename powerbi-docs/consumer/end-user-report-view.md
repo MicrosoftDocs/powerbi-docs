@@ -25,7 +25,7 @@ The options in the **View** menu give you flexibility to display report pages at
 
 :::image type="content" source="media/end-user-report-view/power-bi-menu-view.png" alt-text="A screenshot of the View menu options on the action bar.":::
 
-If you view a report on a small device, it might be hard to see titles and legends. Select **View** and then select **Actual size** to increase the size of the report page. Use the scroll bars to move around the report.
+If you view a report on a small device, it might be hard to see titles and legends. Select **View** > **Actual size** to increase the size of the report page. Use the scroll bars to move around the report.
 
 :::image type="content" source="media/end-user-report-view/power-bi-view-actual.png" alt-text="A screenshot of a report set to Actual size with two scroll bars.":::
 
