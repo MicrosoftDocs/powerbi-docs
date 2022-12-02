@@ -23,7 +23,7 @@ A Power BI report is a multi-perspective view into a dataset, with visuals that 
 
 A. This report has four pages (or tabs). The example shows the **Sentiment** page.  
 B. This page has five visuals and a page title.  
-C. The **Filters** pane shows two filters applied to all report pages. To collapse the **Filters** pane, select the arrow (**>**).  
+C. The **Filters** pane shows any applied filters. To collapse the **Filters** pane, select the arrow (**>**).  
 D. The Power BI banner shows the name of the report and the last updated date. Select the arrow to open a menu that shows the name of the report owner.  
 E. The action bar contains actions to take on this report. For example, you can add a comment, view a bookmark, or export data from the report. Select **More options** (...) to see a list of report functions.
 
