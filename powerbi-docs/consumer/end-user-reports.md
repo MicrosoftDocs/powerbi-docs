@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/23/2022
+ms.date: 12/02/2022
 LocalizationGroup: Reports
 ---
 
@@ -56,8 +56,7 @@ Your changes won't affect underlying data, but that doesn't mean you can't save 
 | **Data sources** | One or more report or dataset per dashboard |A single dataset per report |
 | **Filtering** | No, you can't filter or slice | Yes, there are many ways to filter, highlight, and slice |
 | **Set alerts** | Yes, you can create email alerts when certain conditions are met | No, you can't set alerts |
-| **Featured** | Yes, you can set a featured dashboard | No, you can't set a featured report |
-| **See underlying dataset tables and fields** | No, you can export data, but you can't see tables and fields in the dashboard itself |Yes, you can see dataset tables, fields, and values that you have permissions to see |
+| **Can see underlying dataset tables and fields** |No. Can export data but can't see the dataset tables and fields in the dashboard itself |Yes. Can see dataset tables and fields and values that you have permissions to see |
 | **Customization** | No  | Yes, you can filter, export, view related content, add bookmarks, generate QR codes, and analyze in Excel |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
@@ -65,7 +64,9 @@ Your changes won't affect underlying data, but that doesn't mean you can't save 
 
 ## Next Steps
 
-If you're a business user, you receive reports from report designers. The following resources are for business users:
+Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You'll want to learn how to create and share reports.
+
+Or you may be a *business user*, someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *business user*, these links are for you:
 
 * Start with a [tour of the Power BI service](end-user-basic-concepts.md), so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the [interactions available to business users](end-user-reading-view.md).
