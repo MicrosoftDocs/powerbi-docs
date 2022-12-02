@@ -12,7 +12,7 @@ ms.date: 11/10/2022
 
 # Advanced edit mode in Power BI visuals
 
-In *Advanced Edit* mode, you can use advanced UI controls in your Power BI visual. From the *Report Editing* mode, select the **Edit** button on a visual and set the edit mode to **Advanced**. The visual uses the `EditMode` flag to determine if the visual displays the **Edit** UI control.
+In *Advanced Edit* mode, you can use advanced UI controls in your Power BI visual. From the *Report Editing* mode, select the **Edit** button on a visual and choose the **Advanced** edit mode. The visual uses the `EditMode` flag to determine if the visual displays the **Edit** UI control.
 
 :::image type="content" source="media/advanced-edit-mode/edit-mode.png" alt-text="Screenshot of a Power BI visual, which shows the Edit button in the visual menu.":::
 
