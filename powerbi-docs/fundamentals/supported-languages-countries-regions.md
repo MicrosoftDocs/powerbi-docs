@@ -67,7 +67,7 @@ The Power BI service (in the browser) is available in the following 44 languages
 
 ### Report or dashboard subscription language
 
-When you create a subscription for a report or dashboard, you may be surprised to see that the subscription is in U.S. English, even though Power BI is in another language. If so, you need to specify a language for your browser. See [The language in my subscription is not correct](../consumer/service-troubleshoot-subscribe.yml) in the article "Troubleshoot Power BI subscriptions."
+When you create a subscription for a report or dashboard, you may be surprised to see that the subscription is in U.S. English, even though Power BI is in another language. If so, you need to specify a language for your browser. See [The language in my subscription is not correct](../collaborate-share/service-troubleshoot-subscribe.yml) in the article "Troubleshoot Power BI subscriptions."
 
 ## Languages for Power BI Desktop
 Power BI Desktop is available in the same languages as the Power BI service, except Hebrew and Arabic. Desktop doesn't support right-to-left languages.

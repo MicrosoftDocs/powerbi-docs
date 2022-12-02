@@ -24,7 +24,7 @@
     - name: "Subscribe to reports and dashboards"
       href: end-user-subscribe.md
     - name: "Troubleshoot creating and using subscriptions"  
-      href: service-troubleshoot-subscribe.md
+      href: service-troubleshoot-subscribe.yml
     - name: "Filter a report using parameters in the URL"
       href: service-url-filters.md
     - name: "Endorse your content"
