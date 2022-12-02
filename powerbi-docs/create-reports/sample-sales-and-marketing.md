@@ -12,25 +12,21 @@ LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
 
-This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
-
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. [obviEnce](http://www.obvience.com/) created the sample with real data, which has been anonymized. The data is available in the following formats: *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
-
 The Sales and Marketing sample contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this dashboard to keep an eye on the industry and the company's market share, product volume, sales, and sentiment.
 
 VanArsdel has many competitors but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. However, for unknown reasons, VanArsdel's market share has started to decline, with significant dips in June.
 
 [![Screenshot of the dashboard for the Sales and Marketing sample.](media/sample-sales-and-marketing/sales1.png)](media/sample-sales-and-marketing/sales1.png#lightbox)
 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. [obviEnce](http://www.obvience.com/) created the sample with real data, which has been anonymized. The data is available in the following formats: *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
+
+This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
+
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service.
 
 ## Get the sample
 
 To use the sample, download the [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample). If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to **My Workspace** in the Power BI service.
-
-### Get the .pbix file for this sample
-
-You can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the sample from the Power BI service
 
@@ -52,11 +48,16 @@ You can download the Sales and Marketing sample as a [.pbix file](https://downlo
 
    [![Screenshot of the Sales and Marketing Sample entry.](media/sample-sales-and-marketing/sales11.png)](media/sample-sales-and-marketing/sales11.png#lightbox)
 
+### Get the .pbix file for this sample
+
+You can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+
 ### Get the Excel workbook for this sample
 
 If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
-## Explore the dashboard
+## What is our dashboard telling us?
+
 Start at the dashboard and look at the tiles the CMO has chosen to pin. You see information about the market share, sales, and sentiment. Data is broken down by region, time, and competition.
 
 * The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
@@ -68,7 +69,9 @@ Start at the dashboard and look at the tiles the CMO has chosen to pin. You see 
 
 ## Use Q&A to dig a little deeper
 
-By using Q&A, you can discover additional details in the data. For example, which segments drive sales? Do they match the industry trend?
+By using Q&A, you can discover additional details in the data. 
+
+### Which segments drive sales? Do they match the industry trend?
 
 1. Select the **Total Units Overall by Segment** tile, which opens Q&A and populates it with the query, *total units by segment*.
 2. At the end of the existing query, add: *for VanArsdel*. Q&A interprets the question and displays an updated chart with the answer. Notice that product volume is mostly from the **Convenience** and **Moderation** segments.
@@ -77,17 +80,19 @@ By using Q&A, you can discover additional details in the data. For example, whic
 3. The share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
 4. Return to the dashboard by selecting the **Sales and Marketing Sample** from the left navigation bar.
 
-Notice the **Total Units YTD by Manufacturer, Region** tile. You can use Q&A to discover the total unit market share by category.
+### What does total unit market share look like for category (versus region)?
+
+1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category.
 
    [![Screenshot of the Total Units YTD by Manufacturer, Region tile.](media/sample-sales-and-marketing/sales3.png)](media/sample-sales-and-marketing/sales3.png#lightbox)
 
-1. Select the question field at the top of the dashboard and type the question, *total units by manufacturer and category for 2014 as a treemap*. Notice how the visualization updates as you type the question.
+2. Select the question field at the top of the dashboard and type the question, *total units by manufacturer and category for 2014 as a treemap*. Notice how the visualization updates as you type the question.
 
    [![Screenshot of the Q&A Total units by manufacturer and category.](media/sample-sales-and-marketing/sales12.png)](media/sample-sales-and-marketing/sales12.png#lightbox)
 
-2. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
+3. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
 
-## Examine the Sales and Marketing Sample report
+## Sales and Marketing Sample report
 
 Dashboards are entry points into reports. If a tile is created from an underlying report, selecting that tile opens the report.
 
