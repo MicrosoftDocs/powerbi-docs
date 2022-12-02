@@ -59,7 +59,7 @@ There are several ways to get a new app. You can search, find, and install apps 
 
     ![A screenshot showing the apps page in the navigation pane.](./media/end-user-apps/power-bi-apps.png)
 
-For detailed step-by-step instructions for getting and exploring an app, see [Open and interact with an app](end-user-app-view.md).
+For detailed step-by-step instructions for getting and exploring an app, see [Install and use apps with dashboards and reports in Power BI](end-user-app-view.md).
 
 There are a few other ways to get apps. Some of these ways are listed below.
 
@@ -69,5 +69,5 @@ There are a few other ways to get apps. Some of these ways are listed below.
 
 ## Next steps
 
-* [Open and interact with an app](end-user-app-view.md)
-* [Other ways to share content](end-user-shared-with-me.md)
+* [Install and use apps with dashboards and reports in Power BI](end-user-app-view.md)
+* [Other ways to share content](end-user-shared-with-me.md) 
