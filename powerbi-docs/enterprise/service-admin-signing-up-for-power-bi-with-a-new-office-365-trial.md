@@ -63,4 +63,4 @@ When you use this sign-up method, you create a new organizational tenant, and yo
 [Power BI licensing in your organization](service-admin-licensing-organization.md)  
 [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)
