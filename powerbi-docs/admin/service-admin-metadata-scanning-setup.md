@@ -1,6 +1,6 @@
 ---
 title: Set up metadata scanning in an organization
-description: Learn about how to set up and enable metadata scanning in your organization.
+description: Learn about how to set up and enable metadata scanning in your organization through the administrator settings.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
