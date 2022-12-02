@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 12/02/2022
 LocalizationGroup: Get started
 ---
 
@@ -26,13 +26,13 @@ After you have an account set up, you can sign in and get started in the Power B
 
 ### Step 1: Open the Power BI service
 
-Open the Power BI service with an email link or in a browser.
+The Power BI service runs in a browser.
 
-- When you receive an email from a colleague with a link to a dashboard or report, select **Open this report** or **Open this dashboard** to open the Power BI service.
+- If you've received an email from a colleague, with a link to a dashboard or report, select the link to **Open this report** or **Open this dashboard**.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="A screenshot that shows an email that contains a link to a report.":::
 
-- To open the Power BI service in a browser, enter **app.powerbi.com** into the address bar.
+- Otherwise, open your favorite browser and type **app.powerbi.com**.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-signin.png" alt-text="A screenshot that shows a browser with the Power BI web address in the address bar.":::
 
@@ -60,13 +60,11 @@ On your first visit, Power BI opens your **Home** landing page. If **Home** does
 
 :::image type="content" source="media/end-user-sign-in/power-bi-home-first.png" alt-text="A screenshot of the navigation pane with Home outlined.":::
 
-On the Home page, you can see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. You can find the report that your colleague emailed to you under **Recent** on the **Home** page.
+On Home, you can see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. You can find the report that your colleague emailed to you under **Recent** on the **Home** page.
 
 :::image type="content" source="media/end-user-sign-in/power-bi-recent.png" alt-text="A screenshot showing a report in the Recent section on the Home page.":::
 
 Reports shared with you're also stored under **Shared with me** on the **Browse** page.
-
-If you don't want Power BI to open to **Home**, you can [set a featured dashboard or report](/power-bi/consumer/end-user-dashboards) to open instead.
 
 ## Safely interact with content
 
@@ -84,7 +82,7 @@ To close Power BI, close the browser tab where you're working.
 
 :::image type="content" source="media/end-user-sign-in/power-bi-close-tab.png" alt-text="A screenshot showing the x on the browser tab to close Power BI.":::
 
-If you share a computer, we recommend signing out each time you close Power BI. In the upper right corner, select your profile picture, and then select **Sign out**.  
+If you share a computer, we recommend signing out each time you close Power BI. In the upper right corner, select your profile picture, and then choose **Sign out**.  
 
 :::image type="content" source="media/end-user-sign-in/power-bi-signout.png" alt-text="A screenshot showing the profile menu and sign out is outlined.":::
 
