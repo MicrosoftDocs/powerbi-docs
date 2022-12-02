@@ -7,14 +7,14 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 11/29/2022
+ms.date: 12/02/2022
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-In Power BI, the term *content* refers to visuals, like apps, dashboards, and reports. Content is created by Power BI designers who share it with their colleagues. Your content is accessible and viewable in the Power BI service. Power BI **Home** is the best place to start working in the Power BI service.
+In Power BI, the term *content* refers to visuals, like apps, dashboards, and reports. Content is created by Power BI designers who share it with their colleagues. Your content is accessible and viewable in the Power BI service, and often the best place to start working in the Power BI service is from Power BI **Home**.
 
 ## Explore Power BI Home
 
@@ -49,15 +49,11 @@ The next example shows a **Simplified** layout for an experienced user.
 
 :::image type="content" source="media/end-user-home/power-bi-simplified-user.png" alt-text="A screenshot of the Simplified view for an experienced user." lightbox="media/end-user-home/power-bi-simplified-user.png#lightbox":::
 
-The **Expanded** layout shows more information. If you select the **Expanded** view from the View menu, the expanded layout becomes your default Home layout.
+The **Expanded** layout includes a different set of information. If you select the **Expanded** view from the View menu, the expanded layout becomes your default Home layout.
 
 This view includes **Favorites + frequents** and **Featured** at the top, with tabs for **Recent**, **Favorites**, **My apps**, and **From external orgs** below.
 
-The following example shows the **Expanded** view for a new user.
-
-:::image type="content" source="media/end-user-home/power-bi-user-home.png" alt-text="A screenshot of the Expanded view for a new user." lightbox="media/end-user-home/power-bi-user-home.png#lightbox":::
-
-The next example shows the **Expanded** view for an experienced user.
+The following example shows the **Expanded** view for an experienced user.
 
 :::image type="content" source="media/end-user-home/power-bi-expanded-view.png" alt-text="A screenshot of the Expanded view for an experienced user." lightbox="media/end-user-home/power-bi-expanded-view.png#lightbox":::
 
@@ -95,7 +91,7 @@ The **Featured** section contains content that your administrator or colleagues 
 
 :::image type="content" source="./media/end-user-home/power-bi-home-featured.png" alt-text="A screenshot of the Featured section on Home.":::
 
-### Recents and My apps
+### Recents, My apps, and Favorites
 
 The next section of your Home contains two or more tabbed lists.
 
@@ -104,6 +100,8 @@ The next section of your Home contains two or more tabbed lists.
 - The **My apps** section lists [apps that have been shared with you](end-user-apps.md) or that you've [downloaded from AppSource](end-user-apps.md). The most recent apps are listed here.
 
 - **From external orgs** (Preview) lists shared datasets available from other tenants. Use this list to discover and connect to data from external providers.
+
+- In some scenarios, you'll also see a tab for content that you've tagged as [Favorites](end-user-favorite.md).
 
 :::image type="content" source="./media/end-user-home/power-bi-recent.png" alt-text="A screenshot of the Home list view with the Recent tab selected.":::
 
@@ -119,9 +117,9 @@ The nav pane classifies your content in ways that help you find what you need qu
 
 :::image type="content" source="media/end-user-home/power-bi-nav-pane.png" alt-text="A screenshot of the navigation pane on Home.":::
 
-Use the nav pane to locate and move between dashboards, reports, and apps. Occasionally, using the nav pane is the quickest way to get to content. The nav pane is there when you open your Home landing page and remains there as you open other areas of the Power BI service. It can be collapsed by selecting this icon :::image type="icon" source="media/end-user-home/power-bi-hide.png"::: .
+Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane is the quickest way to get to content. The nav pane is there when you open your Home landing page and remains there as you open other areas of the Power BI service. It can be collapsed by selecting this icon :::image type="icon" source="media/end-user-home/power-bi-hide.png"::: .
   
-The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas, like Apps, Data hub, Metrics, Knowledge center, and Workspaces. The Browse page contains your Recent, Favorites, and Shared with me. Select a container to see all the content.
+The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Metrics, Shared with me, and workspaces. The Browse page contains your Recent, Favorites, and Shared with me. Select a container to see all the content.
 
 Quickly find the content you want on the nav pane. Content is organized similar to the Home canvas, but shows lists instead of cards.
 
