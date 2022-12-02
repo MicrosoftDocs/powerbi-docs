@@ -19,7 +19,7 @@ A Power BI report is a multi-perspective view into a dataset, with visuals that 
 
 ## The parts of a report
 
-:::image type="content" source="./media/end-user-reports/power-bi-report.png" alt-text="Screenshot showing the Sales and Marketing Sample report page.":::
+:::image type="content" source="./media/end-user-reports/power-bi-report.png" alt-text="Screenshot showing the Sales and Marketing Sample report page." lightbox="./media/end-user-reports/power-bi-report.png#lightbox":::
 
 A. This report has four pages (or tabs). The example shows the **Sentiment** page.  
 B. This page has five visuals and a page title.  
