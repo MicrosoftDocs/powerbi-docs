@@ -7,7 +7,7 @@ ms.reviewer: miguem
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/26/2022
+ms.date: 12/02/2022
 ms.custom: licensing support, css_fy20Q4, intro-overview
 LocalizationGroup: Share your work
 ---
@@ -49,9 +49,9 @@ There are several ways to get a new app. You can search, find, and install apps 
 
 1. On the Apps page, select **Get apps**.
 
-    ![A screenshot of the Apps page with the Get apps button outlined.](./media/end-user-apps/power-bi-get-apps-button.png)
+    :::image type="content" source="./media/end-user-apps/power-bi-get-apps-button.png" alt-text="A screenshot of the Apps page with the Get apps button outlined.":::
 
-1. Browse through the list of apps in the Power BI apps marketplace until you find one to install. **Organizational apps** are only available to people in your company. **Template apps** are published by Microsoft and the community, and they're available for any Power BI user to install.
+1. Browse through the list of apps in the Power BI apps marketplace until you find one to install. **Organizational apps** are only available to people in your company. **Template apps** are published by Microsoft and the community, and they're available for any Power BI user with a Pro license to install.
 
     ![A screenshot showing the apps marketplace.](./media/end-user-apps/power-bi-app-marketplace.png)
 
