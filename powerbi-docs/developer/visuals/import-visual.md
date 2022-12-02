@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/23/2022
+ms.date: 12/2/2022
 ---
 
 # Import a Power BI visual from AppSource into your workspace
@@ -31,7 +31,7 @@ If you download or receive a Power BI visual file, you have to [import](#import-
 
    :::image type="content" source="media/import-visual/get-visuals.png" alt-text="Screenshot of the Power BI Visualizations Pane, which shows the Get more visuals option is highlighted.":::
 
-4. Select **AppSource visuals** and select the visual you want to import.
+4. Select **AppSource visuals** and choose the visual you want to import.
 
    :::image type="content" source="media/import-visual/select-visual.png" alt-text="Screenshot of the Power BI visuals dialog, which shows the visuals available for import and the highlighted AppSource visuals option.":::
 
