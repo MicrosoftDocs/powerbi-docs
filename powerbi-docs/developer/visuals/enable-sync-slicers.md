@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/19/2022
+ms.date: 12/2/2022
 ms.custom: engagement-fy23
 ---
 
@@ -19,7 +19,7 @@ Sometimes you might want to use a slicer on only one specific page of the report
 
 For information about sync slicers and how they work, see [Sync and use slicers on other pages](../../visuals/power-bi-visualization-slicers.md#sync-and-use-slicers-on-other-pages).
 
-## How to enable the sync slicers feature
+## How to enable the sync slicer feature
 
 In the *capabilities.json* file, set `"supportsSynchronizingFilterState": true`, as shown in the following example:
 
