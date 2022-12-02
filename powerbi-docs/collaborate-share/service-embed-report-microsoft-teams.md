@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 11/21/2022
+ms.date: 12/01/2022
 ---
 
 # Embed Power BI content in Microsoft Teams
@@ -18,12 +18,15 @@ You can easily embed interactive Power BI reports in Microsoft Teams channels an
 
 ## Requirements
 
-To embed a report on the **Power BI** tab in Teams, ensure these requirements are met:
+To embed a report on the **Power BI** tab in Teams, you need to meet these requirements:
 
 - Teams has the **Power BI** tab.
 - You have at least a Viewer role in the workspace that hosts the report. For information about the different roles, see [Roles in workspaces](service-roles-new-workspaces.md).
-- Users who want to see the report on the **Power BI** tab in Teams have permission to view the report.
-- Users are Teams users with access to channels and chats.
+
+To view a report on the **Power BI** tab in Teams, your users need to meet these requirements:
+
+- They're Teams users with access to channels and chats.
+- They have permission in Power BI to view the report.
 
 See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 
@@ -51,7 +54,8 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
 You can embed the following report types on the **Power BI** tab:
 
-- Interactive and paginated reports
+- Power BI interactive reports (.pbix files)
+- Power BI paginated reports (.rdl files)
 - Reports in workspaces, including My workspace
 - Reports in Power BI apps
 
@@ -69,7 +73,7 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 
 ## Known issues and limitations
 
-- In Microsoft Teams, when you export data from a visual in a Power BI report, the data is automatically saved to your *Downloads* folder. It's an Excel file called **data (*n*).xlsx where** *n* is the number of times you've exported data to the same folder.
+- In Microsoft Teams, when you export data from a visual in a Power BI report, the data is automatically saved to your *Downloads* folder. It's an Excel file called **data (*n*).xlsx**, where *n* is the number of times you've exported data to the same folder.
 - You can't embed Power BI dashboards in the **Power BI** tab for Microsoft Teams.
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
 - In national clouds, the **Power BI** tab isn't available.
