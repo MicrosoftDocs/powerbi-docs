@@ -25,18 +25,18 @@ There may be times when connecting Excel to Power BI data that you get an unexpe
 
 If you need to troubleshoot an issue with Power BI data in Excel, see the following sections:
 
-* [Forbidden error occurs](#forbidden-error-occurs) 
-* [Unable to access on-premises Analysis services](#unable-to-access-on-premises-analysis-services)
+* [Forbidden error](#forbidden-error) 
+* [Unable to access on-premises Analysis Services](#unable-to-access-on-premises-analysis-services)
 * [Can't drag anything to the PivotTable Values area (no measures)](#cant-drag-anything-to-the-pivottable-values-area-no-measures)
 
 If you need to troubleshoot an issue in Power BI with Analyze in Excel, see the following sections:
 
-* [Connection cannot be made error occurs](#connection-cannot-be-made-error-occurs)
-* [No data models](#no-data-models)
-* [Token expired error](#token-expired-error-occurs)
+* [Connection cannot be made error](#connection-cannot-be-made)
+* [Can't find OLAP cube model error](#cant-find-olap-cube-model)
+* [Token expired error](#token-expired-error)
 
 
-## Forbidden error occurs
+## Forbidden error
 A user may have more than one Power BI account. When Excel tries to connect to Power BI by using credentials from one of those accounts, it may attempt to use credentials that don't have access to the desired dataset or report.
 
 When this situation occurs, you may receive an error titled **Forbidden**. This error means you may be signed into Power BI with credentials that don't have permission to access the dataset. After encountering the **Forbidden** error and when you see the prompt, type the credentials that have permission to access the dataset you're trying to use.
@@ -51,19 +51,19 @@ Excel connects to Power BI through an external OLAP model. When these applicatio
 
 To address this issue, you have a few options:
 
-1. [Create measures in your data model in **Power BI Desktop**](../transform-model/desktop-tutorial-create-measures.md). Then, publish the data model to the **Power BI service** and access that published dataset from Excel.
-2. [Create measures in your data model from Excel PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
-3. If you imported data from an Excel workbook that had only tables and no data model, then you can [add the tables to the data model](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42). Then, follow the steps in the previous step to create measures in your data model.
+- [Create measures in your data model in **Power BI Desktop**](../transform-model/desktop-tutorial-create-measures.md). Then, publish the data model to the **Power BI service** and access that published dataset from Excel.
+- [Create measures in your data model from Excel PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
+- If you imported data from an Excel workbook that had only tables and no data model, then you can [add the tables to the data model](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42). Then, follow the steps in the previous step to create measures in your data model.
 
 Once you define your measures in the model in the Power BI service, you can use them in the **Values** area in Excel PivotTables.
 
-## Connection cannot be made error occurs
+## Connection cannot be made
 The primary cause for a **Connection cannot be made** error is that your computer's OLE DB provider client libraries aren't current.
 
-## No data models
+## Can't find OLAP cube model
 The primary cause for a **Can't find OLAP cube model** error is that the dataset you're trying to access has no data model, and therefore the dataset can't be analyzed in Excel.
 
-## Token expired error occurs
+## Token expired error
 The primary cause for a **Token expired** error is that you haven't recently used the **Analyze in Excel** feature on the computer you're using. To resolve this error, reenter your credentials or reopen the file, and the error should go away.
 
 ## Next steps
