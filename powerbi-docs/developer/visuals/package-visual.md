@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/23/2022
+ms.date: 12/3/2022
 ---
 
 # Package a Power BI visual
@@ -29,9 +29,11 @@ Before you can load your custom visual into [Power BI Desktop](https://powerbi.m
 
     The visual's display name appears in the **Visualizations** pane of Power BI when you hover the cursor over the visual icon.
 
-4. Fill in or modify the following optional fields in the *pbiviz.json* file:
+4. Fill in or modify the following fields in the *pbiviz.json* file:
     * `visualClassName`
     * `description`
+
+    `visualClassName` is optional, but `description` must be filled in for the package command to run.
 
 5. Fill in `supportUrl` and `gitHubUrl` with the URLs that a user can visit to get support and view your visual's GitHub project.
 
