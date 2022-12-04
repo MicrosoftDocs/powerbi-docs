@@ -83,9 +83,8 @@ All certified visuals must pass all the [certification requirements](power-bi-cu
 
 ## Next steps
 
-* [Learn how to create a Power BI visual](develop-circle-card.md)
+* [Performance tips for creating quality Power BI custom visuals](performance-tips.md)
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 * [Test your Power BI visual before submitting for certification](submission-testing.md)  
-* [Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
 **More questions?** [Try asking the Power BI Community](https://community.powerbi.com/)

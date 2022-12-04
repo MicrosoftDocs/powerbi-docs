@@ -23,50 +23,61 @@ Here are some recommendations for achieving optimal performance for your custom 
 
 ## Reduce plugin size
 
-A smaller custom visual plugin size means:
+A smaller custom visual plugin size results in:
 
-* faster downloads
-* faster installation
+* faster download time
+* faster installation whenever the visual is run
 
-To decrease plugin size, see if you can [remove unused code](https://web.dev/remove-unused-code/) and try [tree-shaking and code-splitting](https://www.azavea.com/blog/2019/03/07/lessons-on-tree-shaking-lodash/).
+These third party resources can help you decrease your plugin size, by finding ways for you to [remove unused code](https://web.dev/remove-unused-code/) or [tree-shaking and code-splitting](https://www.azavea.com/blog/2019/03/07/lessons-on-tree-shaking-lodash/).
 
 ## Check render time of the visual
 
-Measure the render time of your visual to see which parts of the script need optimization.
+Measure the render time of your visual in various situations to see which, if any, parts of the script need optimization.
 
 ### Power BI Desktop performance analyzer
 
-Use the [Power BI Desktop performance analyzer](../../create-reports/desktop-performance-analyzer.md) to check how your visual renders in the following cases:
+:::image type="content" source="./media/performance-tips/performance-analyzer.png" alt-text="Screenshot of Performance Analyzer icon in main menu.":::
+
+Use the [Power BI Desktop performance analyzer](../../create-reports/desktop-performance-analyzer.md) (**View** > **Performance Analyzer**) to check how your visual renders in the following cases:
 
 * first render of the visual
-* with thousands of data points
-* with a single data point/measure (to determine the visual render overhead)
+* thousands of data points
+* a single data point/measure (to determine the visual render overhead)
 * filtering
 * slicing
 * resizing (may not work in the performance analyzer)
 
-Then, if possible, compare these measurements with those of a similar core visual to see if there are parts that need optimization.
+If possible, compare these measurements with those of a similar core visual to see if there are parts that can be optimized.
 
 ### Use the User Timing API
 
-Using the **User Timing API** to measure your app's JavaScript performance can also help you decide which parts of the script need optimization.
+Use the [**User Timing API**](https://developer.mozilla.org/docs/Web/API/User_Timing_API) to measure your app's JavaScript performance. This API can also help you decide which parts of the script need optimization.
 
-For more information, see the [User Timing API](https://msdn.microsoft.com/library/hh772738(v=vs.85).aspx).
+For more information, see the [Using the User Timing API](https://developer.mozilla.org/docs/Web/API/User_Timing_API/Using_the_User_Timing_API).
 
-## Review animation loops
+## Other ways to test your custom visual
 
-Does the animation loop redraw unchanged elements?
+* Code instrumentation - Use the following console tools to gather data about your custom visual's performance (note that these tools link to external third party tools):
 
- If so, it wastes time drawing elements that don’t change from frame-to-frame.
+  * [console.log()](https://developer.mozilla.org/docs/Web/API/Console/log)
+  * [console.dir()](https://developer.mozilla.org/docs/Web/API/Console/dir)
+  * [console.time()](https://developer.mozilla.org/docs/Web/API/console/time)
+  * [console.timeEnd()](https://developer.mozilla.org/docs/Web/API/console/timeEnd)
 
-Solution: Update the frames selectively.
+* The following web developer tools can also help measure your visual's performance, but keep in mind that they profile Power BI as well:
 
-When you're animating static visualizations, it’s tempting to lump all the draw code into one update function and repeatedly call it with new data for each iteration of the animation loop.
+  * [Metrics](https://web.dev/metrics/)
+  * [JavaScript profiler](https://yonatankra.com/how-to-profile-javascript-performance-in-the-browser/)
 
-Instead consider using a visual constructor method to draw everything static. Then the update function only needs to draw visualization elements that change.
+Once you determined which parts of your visual need optimization, check out these tips.
 
-   > [!TIP]
-   > Inefficient animation loops are commonly found in axes and legends.
+## Update messages
+
+When you update the visual:
+
+* Don't rerender the entire visual if only some elements have changed. Render only the necessary elements.
+* Store the data view passed on update. Render only the data points that are different from the previous data view. If they haven't changed, there's no need to rerender them.
+* Resizing is often done automatically by the browser and doesn't require an update to the visual.
 
 ## Cache DOM nodes
 
@@ -74,7 +85,7 @@ When a node or list of nodes is retrieved from the DOM, think about whether you 
 
 To make sure that your code is fast and doesn’t slow down the browser, keep DOM access to a minimum.
 
-### Cache DOM nodes example
+For example:
 
 **Instead of**:
 
@@ -101,7 +112,7 @@ To make sure that your code is fast and doesn’t slow down the browser, keep DO
 
 Limit DOM manipulations as much as possible.  *Insert operations* like `prepend()`, `append()`, and `after()` are time-consuming and should only be used when necessary.
 
-### DOM manipulation example
+For example:
 
 **Instead of:**
 
@@ -132,13 +143,47 @@ For more information, see [youmightnotneedjquery.com](http://youmightnotneedjque
 
 ## Animation
 
-* For repeated use of animations, consider using [**Canvas**](https://web.dev/canvas-performance/) or [**WebGL**](https://www.khronos.org/webgl/) instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
+### Animation options
 
-  Read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)).
+For repeated use of animations, consider using [**Canvas**](https://web.dev/canvas-performance/) or [**WebGL**](https://www.khronos.org/webgl/) instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
 
-* Use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, so your animation functions are called **before** the browser calls another repaint.
+Read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)).
 
-  For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
+### Canvas performance tips
+
+Check out the following third party sites for tips on improving canvas performance.
+
+* [Fast load times](https://web.dev/fast/)
+* [Improving HTML5 Canvas performance](https://web.dev/canvas-performance/)
+* [Optimizing canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas)
+
+For example, learn how to [avoid unnecessary canvas state changes](https://web.dev/canvas-performance/#avoid-unnecessary-canvas-state-changes) by rendering by color instead of position.
+
+### Animation functions
+
+ Use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, so your animation functions are called **before** the browser calls another repaint.
+
+For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
+
+### Animation loops
+
+Does the animation loop redraw unchanged elements?
+
+If so, it wastes time drawing elements that don’t change from frame-to-frame.
+
+Solution: Update the frames selectively.
+
+When you're animating static visualizations, it’s tempting to lump all the draw code into one update function and repeatedly call it with new data for each iteration of the animation loop.
+
+Instead, consider using a visual constructor method to draw everything static. Then the update function only needs to draw visualization elements that change.
+
+   > [!TIP]
+   > Inefficient animation loops are often found in axes and legends.
+
+## Common issues
+
+* Text size calculation tips - when there are a lot of data points, don't waste time calculating text size for each point. Calculate a few points and then estimate.
+* If some elements of the visual aren't seen in the display, there's not need to render them.
 
 ## Next steps
 
