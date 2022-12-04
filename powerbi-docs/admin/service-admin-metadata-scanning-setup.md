@@ -20,7 +20,7 @@ Before metadata scanning can be run over an organization's Power BI workspaces, 
 
 ## Enable service principal authentication for read-only admin APIs
 
-Service principal is an authentication method that can be used to let an Azure AD application access Power BI APIs. With this authentication method, you don’t have to maintain a service account with an admin role. Rather, to allow your app to use the Admin APIs, you just have to give your approval after as part of the tenant settings configuration.
+Service principal is an authentication method that can be used to let an Azure AD application access Power BI APIs. With this authentication method, you don’t have to maintain a service account with an admin role. Rather, to allow your app to use the Admin APIs, you just have to give your approval once as part of the tenant settings configuration.
 
 To see how to enable service principal access to read-only Admin APIs, see [Enable service principal authentication for read-only admin APIs](../enterprise/read-only-apis-service-principal-authentication.md).
 
@@ -40,7 +40,7 @@ To enable these settings, go to **Admin portal > Tenant settings > Admin API set
 ### Model caching
 
 Enhanced metadata scanning uses a caching mechanism to ensure that **capacity resources are not impacted**.
-Getting low-level metadata requires that the model is available in memory. To make sure Power BI shared or Premium capacity resources aren't impacted by having to load the model for every API call, the enhanced metadata scanning feature uses successful dataset refreshes and republishing by creating a cache of the model that is loaded into memory on those occasions. Then, when enhanced metadata scanning takes place, API calls are made against the cached model. No load is placed on your capacity resources due to enhanced metadata scanning.
+Getting low-level metadata requires that the model be available in memory. To make sure Power BI shared or Premium capacity resources aren't impacted by having to load the model for every API call, the enhanced metadata scanning feature uses successful dataset refreshes and republishing by creating a cache of the model that is loaded into memory on those occasions. Then, when enhanced metadata scanning takes place, API calls are made against the cached model. No load is placed on your capacity resources due to enhanced metadata scanning.
 
 Caching happens every successful dataset refresh and republish only if the following conditions are met:
 
