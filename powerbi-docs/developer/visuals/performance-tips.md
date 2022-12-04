@@ -182,7 +182,7 @@ Instead, consider using a visual constructor method to draw everything static. T
 
 ## Common issues
 
-* Text size calculation tips - when there are a lot of data points, don't waste time calculating text size for each point. Calculate a few points and then estimate.
+* Text size calculation: When there are a lot of data points, don't waste time calculating text size for each point. Calculate a few points and then estimate.
 * If some elements of the visual aren't seen in the display, there's not need to render them.
 
 ## Next steps
