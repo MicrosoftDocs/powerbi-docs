@@ -472,7 +472,7 @@ You can connect to specific type of dataset copy by appending one of the followi
 
 ## Disable Power BI Query Scale Out
 
-To disable Power BI Query Scale out, set `QueryScaleOut` to zero. see the code snippet in [establish the XML connection](#step-1---establish-the-xml-connection).
+To disable Power BI Query Scale out, set `QueryScaleOut` to zero. For more information, see the code snippet in [establish the XML connection](#step-1---establish-the-xml-connection).
 
 ## Considerations and limitations
 
