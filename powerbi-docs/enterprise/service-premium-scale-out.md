@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Power BI Query Scale Out (preview)
 
-Power BI Query Scale Out helps Power BI deliver fast performances while your reports and dashboards are consumed by a large audience. Scale Out uses your Premium capacity to host dataset copies. The copies boost the performance of your reports and dashboards, by increasing throughput when multiple users submit queries at the same time.
+Power BI Query Scale Out helps Power BI deliver fast performances while your reports and dashboards are consumed by a large audience. Scale Out uses your Premium capacity to host dataset copies. By increasing throughput, the dataset copies ensure that performance doesn’t slow down when multiple users submit queries at the same time.
 
 When Power BI creates the dataset copies, it separates *read-only* datasets from *read/write* datasets. The *read-only* datasets serve the Power BI report and dashboard consumption, and the *read/write* dataset is used when write operations and refreshes are required. During write operations and refreshes, the *read-only* datasets continues to serve your reports and dashboards without being disturbed. When needed, the *read-only* and *read/write* datasets are synced so that the *read-only* datasets are kept up-to-date. Using this method, Power BI Query Scale Out reduces the impact of write operations and dataset refreshes on your capacity.
 
@@ -472,17 +472,7 @@ You can connect to specific type of dataset copy by appending one of the followi
 
 ## Disable Power BI Query Scale Out
 
-Power BI Query Scale Out is enabled by default and can be disabled by a Power BI admin. To disable this feature, follow the instructions below.
-
-1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
-
-2. Expand the **Scale-out settings**.
-
-3. Toggle the switch so that it shows **Disabled**.
-
-4. Select **Execute** and wait for the query to complete.
-
-    :::image type="content" source="media/service-premium-scale-out/disable-scale-out.png" alt-text="A screenshot showing how to disable the scale out tenant settings in the Power BI admin portal.":::
+To disable Power BI Query Scale out, set `QueryScaleOut` to zero. see the code snippet in [establish the XML connection](#step-1---establish-the-xml-connection).
 
 ## Considerations and limitations
 
