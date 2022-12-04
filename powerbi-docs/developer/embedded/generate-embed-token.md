@@ -38,7 +38,7 @@ In the generate token APIs, the *GenerateTokenRequest* section describes the tok
 
 * Use the *allowEdit* parameter to grant the user viewing or editing permissions.
   
-* Add the workspace ID to the embed token to allow the user to create new reports (either SaveAs or CreateNew) in that workspace.
+* Add the workspace ID to the embed token to allow the user to create new reports (either *SaveAs* or *CreateNew*) in that workspace.
 
 ### Row Level Security
 
