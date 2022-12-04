@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 11/03/2022
+ms.date: 12/01/2022
 
 LocalizationGroup: Share your work
 ---
@@ -253,7 +253,9 @@ Things to keep in mind about publishing apps:
 * You can create up to ten audience groups per app.
 * We have temporarily relaxed the access list limit from 100 users or groups per audience group for the app. However, please note that this is temporary, and we might change the limit in the near future. We still recommend you use one or more user groups that contain all the desired users.
 * If the user you added to the app access list already has access to the app through the workspace, they're not shown in the access list for the app.  
-* When you select a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
+* You can either pin an entire report page to a dashboard using Live pin or pin a single visual as a tile from a report to the dashboard. 
+* When you select a visual pinned as a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
+* In order to see an entire report page pinned as a live pin to a dashboard or a drill-down report to work, the app creators have to include the report in the app audience. 
 * The support site URL is shown in the item information card.
 * By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
 * Currently, having multiple audiences isn't supported in Power BI Mobile apps and deployment pipelines. This is a temporary limitation.

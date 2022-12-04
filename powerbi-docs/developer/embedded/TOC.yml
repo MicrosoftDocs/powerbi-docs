@@ -19,7 +19,7 @@
       href: register-app.md
     - name: "Configure credentials"
       href: configure-credentials.md    
-    - name: "Change your app permissions"
+    - name: "Edit your app permissions"
       href: change-permissions.md
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
