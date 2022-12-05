@@ -36,9 +36,9 @@ You can also create a collection of bookmarks, arrange them in the order you wan
 
 ### Open the Bookmarks pane
 
-Open the **Bookmarks** pane by selecting the ![Screenshot of the icon for opening the Bookmarks page](media/end-user-bookmarks/power-bi-bookmark.png)icon and choosing either **Add a personal bookmark** or **Show more bookmarks**.
+Open the **Bookmarks** pane by selecting the :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choosing either **Add a personal bookmark** or **Show more bookmarks**.
 
-:::image type="content" source="media/end-user-bookmarks/power-bi-bookmark-icon.png" alt-text="A screenshot showing the bookmarks icon in the action bar.":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-bookmark-icon.png" alt-text="A screenshot showing the bookmark menu in the action bar.":::
 
 ### Share changes
 
@@ -68,7 +68,7 @@ If you can view a report, then you can also add personal bookmarks. The maximum 
 - The current page
 - Filters
 - Slicers, including slicer type (for example, dropdown or list) and slicer state
-- Visual selection state, such as cross-highlight filters
+- Visual selection state (such as cross-highlight filters)
 - Sort order
 - Drill location
 
@@ -81,9 +81,9 @@ If you have access to the **Selection** pane, you can also set and save:
 
 Configure a report page how you want it to appear in the bookmark. The following example has filters applied. The example shows changes to the:
 
-1. existing Date filter on the **Filters** pane.
-1. existing Regions filter on the **Filters** pane. **West** is selected.
-1. data point on the doughnut chart visual. It cross-filters and cross-highlights the report canvas.
+1. Existing Date filter on the **Filters** pane.
+1. Existing Regions filter on the **Filters** pane. **West** is selected.
+1. Data point on the doughnut chart visual. It cross-filters and cross-highlights the report canvas.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied.":::
 
