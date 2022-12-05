@@ -72,7 +72,7 @@ In the Power BI service, you can use the [deployment pipeline tool](../create-re
 
 Another workflow involves paginated reports in the Power BI service. Enterprise report creators design paginated reports to be printed or shared. They can also share these reports in the Power BI service. They're called *paginated* because they're formatted to fit well on a page. They're often used for operational reports, or for printing forms such as invoices or transcripts. They display all the data in a table, even if the table spans multiple pages. Power BI Report Builder is the standalone tool for authoring paginated reports.
 
-:::image type="content" source="media/power-bi-overview/paginated-report-invoice-power-bi-service.png" alt-text="Screenshot of paginated report in the Power B I service.":::
+:::image type="content" source="media/power-bi-overview/paginated-report-invoice-power-bi-service.png" alt-text="Screenshot of paginated report in the Power BI service.":::
 
 Read more about [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in the Power BI service.
 
