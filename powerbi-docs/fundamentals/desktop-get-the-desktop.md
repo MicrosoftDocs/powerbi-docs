@@ -35,13 +35,13 @@ Either of the two approaches gets the latest version of Power BI Desktop onto yo
 
    * From the [Power BI service](./service-get-started.md), in the upper right corner, select the **Download** icon and then choose **Power BI Desktop**.
 
-      ![Screenshot of Microsoft Store showing the Power BI Desktop download option.](media/desktop-get-the-desktop/getpbid_downloads.png)
+      :::image type="content" source="media/desktop-get-the-desktop/getpbid_downloads.png" alt-text="Screenshot of Microsoft Store showing the Power BI Desktop download option.":::
 
    * Go to the [Power BI Desktop product page](https://powerbi.microsoft.com/desktop/), and then select **Download Free**.
   
 2. After you've landed on the **Power BI Desktop** page of the Microsoft Store, select **Install**.
 
-     ![Screenshot of Microsoft Store showing the Power BI Desktop install option.](media/desktop-get-the-desktop/getpbid_04.png)
+     :::image type="content" source="media/desktop-get-the-desktop/getpbid_04.png" alt-text="Screenshot of Microsoft Store showing the Power BI Desktop install option.":::
 
 There are a few advantages to getting Power BI Desktop from the Microsoft Store:
 
@@ -64,7 +64,7 @@ This approach makes distribution, updates, and installation much easier and more
 
 To download the Power BI Desktop executable from the Download Center, select **Download** from the [Download Center page](https://www.microsoft.com/download/details.aspx?id=58494). Then specify the 32-bit or 64-bit installation file to download.
 
-  ![Screenshot of Download Center showing the 64-bit Power BI Desktop download selected.](media/desktop-get-the-desktop/download-desktop-exe.png)
+  :::image type="content" source="media/desktop-get-the-desktop/download-desktop-exe.png" alt-text="Screenshot of Download Center showing the 64-bit Power BI Desktop download selected.":::
 
 ## Install Power BI Desktop
 
@@ -72,7 +72,7 @@ You're prompted to run the installation file after you finish downloading it.
 
 After you launch the installation package, Power BI Desktop installs as an application and runs on your desktop.
 
-![Screenshot of Power BI Desktop installation showing the setup wizard.](media/desktop-get-the-desktop/desktop-install-01.png)
+:::image type="content" source="media/desktop-get-the-desktop/desktop-install-01.png" alt-text="Screenshot of Power BI Desktop installation showing the setup wizard.":::
 
 > [!NOTE]
 > Installing the deprecated MSI version and the Microsoft Store version of Power BI Desktop on the same computer. Sometimes referred to as a *side-by-side* installation isn't supported. Manually uninstall Power BI Desktop before you download it from the Microsoft Store.
@@ -81,7 +81,7 @@ After you launch the installation package, Power BI Desktop installs as an appli
 
 When you launch Power BI Desktop, a welcome screen appears.
 
-![Screenshot of Power BI Desktop installation showing the welcome screen.](media/desktop-get-the-desktop/desktop-splash-screen.png)
+:::image type="content" source="media/desktop-get-the-desktop/desktop-splash-screen.png" alt-text="Screenshot of Power BI Desktop installation showing the welcome screen.":::
 
 When you launch Power BI Desktop for the first time, if the installation isn't an upgrade, you're prompted to fill out a form or sign in to the Power BI service before you can continue.
 
