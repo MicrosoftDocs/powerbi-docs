@@ -196,7 +196,7 @@ Here's how to set the model language.
 
 ### Choose the DAX separators in Power BI Desktop
 
-By default, DAX uses commas (,) to separate items in a list and periods (.) to indicate the decimal place in a number. While we do recommend using the defaults, you can use the DAX separators based on the your Windows locale settings. 
+By default, DAX uses commas (,) to separate items in a list and periods (.) to indicate the decimal place in a number. While we do recommend using the defaults, you can use the DAX separators based on your Windows locale settings. 
 
 Here's how to make Power BI Desktop use localized DAX separators:
 
