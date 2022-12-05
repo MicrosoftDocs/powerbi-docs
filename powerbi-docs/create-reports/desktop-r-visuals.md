@@ -152,5 +152,5 @@ R visuals in Power BI Desktop have the following limitations:
 ## Next steps
 For more information about R in Power BI, see the following articles:
 
-- [Running R Scripts in Power BI Desktop](../connect-data/desktop-r-scripts.md)
-- [Use an external R IDE with Power BI](../connect-data/desktop-r-ide.md)
+* [Running R Scripts in Power BI Desktop](../connect-data/desktop-r-scripts.md)
+* [Use an external R IDE with Power BI](../connect-data/desktop-r-ide.md)
