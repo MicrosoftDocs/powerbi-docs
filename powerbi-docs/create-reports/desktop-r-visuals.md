@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 12/5/2022
 LocalizationGroup: Create reports
 ---
 # Create Power BI visuals using R
@@ -69,7 +69,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
    In the example shown in the following image, three fields are selected: Horse Power, gear, and drat. As a result of those selections, the R script editor generates binding code, which is summarized as follows:
    
    * Create a dataframe called **dataset**, which is comprised of the different fields selected by the user.
-   * The default aggregation is *do not summarize*.
+   * The default aggregation is: *do not summarize*.
    * Similar to table visuals, fields are grouped and duplicate rows appear only once.
    
    ![Screenshot of the R script editor, highlighting the script code.](media/desktop-r-visuals/r-visuals-5.png)
@@ -127,27 +127,27 @@ R visuals are created from R scripts, which might contain code with security or 
 ## Known limitations
 R visuals in Power BI Desktop have the following limitations:
 
-- Data sizes: Data used by an R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used, and a message is displayed on the image.
+* Data sizes: Data used by an R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used, and a message is displayed on the image.
 
-- Output size: R visuals have an output size limit of 2MB.
+* Output size: R visual has an output size limit of 2MB.
 
-- Resolution: All R visuals are displayed at 72 DPI.
+* Resolution: All R visuals are displayed at 72 DPI.
 
-- Plotting device: Only plotting to the default device is supported.
+* Plotting device: Only plotting to the default device is supported.
 
-- Calculation times: If an R visual calculation exceeds five minutes, it causes a time-out error.
+* Calculation times: If an R visual calculation exceeds five minutes, it causes a time-out error.
 
-- Relationships: As with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.
+* Relationships: As with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.
 
-- Refreshes: R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and can't be the source of cross-filtering.
+* Refreshes: R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and can't be the source of cross-filtering.
 
-- Highlights: R visuals respond if you highlight other visuals, but you can't select elements in the R visual to cross filter other elements.
+* Highlights: R visuals respond if you highlight other visuals, but you can't select elements in the R visual to cross filter other elements.
 
-- Display devices: Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
+* Display devices: Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
 
-- Column renaming: R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
+* Column renaming: R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
 
-- RRO installations: In this release, the 32-bit version of Power BI Desktop doesn't automatically identify RRO installations; you must manually provide the path to the R installation directory in **Options and settings** > **Options** > **R Scripting**.
+* RRO installations: In this release, the 32-bit version of Power BI Desktop doesn't automatically identify RRO installations; you must manually provide the path to the R installation directory in **Options and settings** > **Options** > **R Scripting**.
 
 ## Next steps
 For more information about R in Power BI, see the following articles:
