@@ -122,7 +122,7 @@ When you use a Power BI dataset as the data source for your paginated report and
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md) 
+- [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md) 
 - [Tutorial: Create a paginated report and upload it to the Power BI service](../paginated-reports/paginated-reports-quickstart-aw.md) 
 - [Power BI Paginated Reports in a Day course](../learning-catalog/paginated-reports-online-course.md) 
 

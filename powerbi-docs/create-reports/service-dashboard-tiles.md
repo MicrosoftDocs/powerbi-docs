@@ -34,7 +34,7 @@ Need help with understanding the building blocks that make up Power BI? See [Bas
 There are many different ways to add (pin) a tile to a dashboard. You can pin tiles from:
 
 * [Power BI Q&A](service-dashboard-pin-tile-from-q-and-a.md)
-* [A report](service-dashboard-pin-tile-from-report.md)
+* [A report](service-dashboard-create.md)
 * [Another dashboard](service-pin-tile-to-another-dashboard.md)
 * [Excel workbook on OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Quick Insights](service-insights.md)

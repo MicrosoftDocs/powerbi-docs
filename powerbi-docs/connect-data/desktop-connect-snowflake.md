@@ -18,7 +18,7 @@ To connect to a **Snowflake** computing warehouse, select **Get Data** from the 
 
 ![Screenshot of the Get Data dialog, showing the Snowflake database selection.](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
-In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md). Please note that only AAD SSO supports DirectQuery.
+In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md). Please note that AAD SSO only supports DirectQuery.
 
 ![Screenshot of the Snowflake dialog, showing the Import radio button selected.](media/desktop-connect-snowflake/connect-snowflake-3.png)
 

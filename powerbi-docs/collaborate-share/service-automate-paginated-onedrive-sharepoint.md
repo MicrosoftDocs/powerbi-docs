@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 10/28/2022
 LocalizationGroup: Get started
 ---
 # Save a paginated report to OneDrive for Business or SharePoint Online
@@ -21,10 +21,10 @@ Looking for other Power Automate templates for Power BI paginated reports? See [
 
 ## Prerequisites  
 
-To follow along, make sure you have:
+To follow along, make sure you meet these criteria:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A4/P1 – A6/P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../enterprise/service-premium-what-is.md#paginated-reports)
-- Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
+- You can publish to My Workspace, or you have at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
+- You have access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 
 ## Save a paginated report to OneDrive for Business or a SharePoint Online folder 
 
