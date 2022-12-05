@@ -35,40 +35,47 @@ The steps you specify (such as rename a table, transform a data type, or delete 
 
 From [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md), let's use the retirement data, which we found by connecting to a web data source, to shape that data to fit our needs. We'll add a custom column to calculate rank based on all data being equal factors, and compare this column to the existing column, **Rank**.  
 
+1. First, let's promote the first row of data into column headers. Select the first row, then choose **Transform \> Use First Row as Headers**.
+
+    :::image type="content" source="media/desktop-shape-and-combine-data/transform-first-row-headers.png" alt-text="Promote first row of data to column headers":::
+
+1. Transform the data type of the index columns (**Affordability** to **Crime**) from text to whole numbers.
+
+    To choose more than one column, select a column, hold down **SHIFT**, select more adjacent columns, and then right-click a column header. You can also use the **CTRL** key to choose non-adjacent columns one by one.
+
+    Select the columns, then choose **Transform \> Data Type \> Whole Number**.
+
+    :::image type="content" source="media/desktop-shape-and-combine-data/transform-column-data-type.png" alt-text="Change column data type from text to whole numbers":::
+
 1. From the **Add Column** ribbon, select **Custom Column**, which lets you add a custom column.
 
     :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_customcolumn.png" alt-text="Select Custom Column":::
 
-1. In the **Custom Column** window, in **New column name**, enter _New Rank_. For the **Custom column formula**, enter the following data:
+1. In the **Custom Column** window, in **New column name**, enter *New rank*. For the **Custom column formula**, enter the following data:
 
     ```
-    ([Cost of living] + [Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 8
+    ([Affordability] + [#"Well-being"] + [#"Culture & diversity"] + [Weather] + [Crime]) / 5    
     ```
  
 1. Make sure the status message is *No syntax errors have been detected*, and select **OK**.
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png" alt-text="Custom Column page with no snytanx errors":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/custom-column-dialog.png" alt-text="Custom Column dialog with no syntax errors":::
 
 1. To keep column data consistent, transform the new column values to whole numbers. To change them, right-click the column header, and then select **Change Type \> Whole Number**. 
 
-    To choose more than one column, select a column, hold down **SHIFT**, select more adjacent columns, and then right-click a column header. You can also use the **CTRL** key to choose non-adjacent columns one by one.
+    :::image type="content" source="media/desktop-shape-and-combine-data/change-column-data-type.png" alt-text="Change column data type to Whole Number":::
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_changetype2.png" alt-text="Select Whole Number column data":::
-
-1. To *transform* column data types, from the current data type to another, select **Data Type Text** from the **Transform** ribbon. 
-
-   :::image type="content" source="media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png" alt-text="Select Data Type Text":::
-
-1. In **Query Settings**, the **Applied Steps** list reflects any shaping steps applied to the data. To remove a step from the shaping process, select the **X** to the left of the step. 
+1. In **Query Settings**, the **Applied Steps** list shows the shaping steps applied to the data. To remove a step from the shaping process, select the **X** to the left of the step. 
 
     In the following image, the **Applied Steps** list reflects the added steps so far: 
      - **Source**: Connecting to the website.
      - **Extracted Table from Html**: Selecting the table. 
+     - **Promoted**: Changing the top row of data into column headers.
      - **Changed Type**: Changing text-based number columns from *Text* to *Whole Number*. 
      - **Added Custom**: Adding a custom column.
-     - **Changed Type1**: The most recent applied step.
+     - **Changed Type1**: The most recent applied step, transform the default custom column type from text to whole number.
 
-       :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png" alt-text="List of Applied Steps":::
+       :::image type="content" source="media/desktop-shape-and-combine-data/query-editor-list-applied-steps.png" alt-text="Query ":::
 
 ## Adjust data
 
