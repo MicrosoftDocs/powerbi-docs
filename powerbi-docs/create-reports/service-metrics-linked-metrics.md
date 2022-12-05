@@ -31,15 +31,15 @@ to any scorecards you have edit access. A linked metric will only be visible to 
 2. Click on the **New** button.
 3. Select **Link to existing metric (preview)** option.
 
-   :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-1.png" alt-text="Screenshot of the option to link a metric in a scorecard.":::
+  [ ![Screenshot of the option to link a metric in a scorecard.](media/service-metrics-linked-metrics/linked-goals-1.png)](media/service-metrics-linked-metrics/linked-goals-1.png#lightbox)
 
 4.Pick the scorecard that contains the metric you’d like to link from the list provided.
 
-   :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-2.png" alt-text="Screenshot of list of scorecards.":::
+ [ ![Screenshot of list of scorecards.](media/service-metrics-linked-metrics/linked-goals-2.png)](media/service-metrics-linked-metrics/linked-goals-2.png#lightbox)
 
 5. Select the metric(s) you’d like to include in this scorecard.
 
-   :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-3.png" alt-text="Screenshot of selecting the metric to link.":::
+ [ ![Screenshot of selecting the metric to link.](media/service-metrics-linked-metrics/linked-goals-3.png)](media/service-metrics-linked-metrics/linked-goals-3.png#lightbox)
    
 6. Select **Continue** and the linked metric(s) will appear on this scorecard.
 
@@ -51,7 +51,7 @@ Check-ins will be reflected in all scorecards that contain the linked metric and
 You can make edits only in the source metric. 
 You can navigate from the linked metric to the source metric by selecting “Go to source metric” from the overflow menu of the linked metric.
 
-   :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-4.png" alt-text="Screenshot showing option to go to source metric.":::
+ [ ![Screenshot showing option to go to source metric.](media/service-metrics-linked-metrics/linked-goals-4.png)](media/service-metrics-linked-metrics/linked-goals-4.png#lightbox)
    
 Edits will be reflected in all scorecards that contain the linked metric.
 
@@ -59,11 +59,11 @@ Edits will be reflected in all scorecards that contain the linked metric.
 
 You can see the name and link to the source scorecard in the Details pane.
 
-   :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-5.png" alt-text="Screenshot showing details of the linked metric in Details pane.":::
+ [ ![Screenshot showing details of the linked metric in Details pane.](media/service-metrics-linked-metrics/linked-goals-5.png)](media/service-metrics-linked-metrics/linked-goals-5.png#lightbox)
    
 You can also see this information in the Connections pane.
-   
-   :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-6.png" alt-text="Screenshot showing details of the linked metric in Connections pane.":::
+
+ [ ![Screenshot showing details of the linked metric in Connections pane.](media/service-metrics-linked-metrics/linked-goals-6.png)](media/service-metrics-linked-metrics/linked-goals-6.png#lightbox)
 
 ## Linked metrics considerations
 
