@@ -22,9 +22,9 @@ Power BI lets you visualize data from various sources. When you create a visual,
 
 To illustrate how Power BI determines which data is relevant to display, let's look at a table as a simple example. Using the model represented in the [example data model](#example-data-model) section, found at the end of this article, consider a table built with the following settings:
 
-- **1. Groups from the same table:** **Product[Color] - Product[Size]**
+**1. Groups from the same table:** **Product[Color] - Product[Size]**
 
-|Product[Color]  |Product[Size]  |
+|*Product[Color]*  |*Product[Size]*  |
 |---------|---------|
 |Blue     |Large         |
 |Blue     |Medium         |
@@ -35,20 +35,20 @@ In this example, Power BI displays the combinations of **[Color-Size]** that exi
 
 Now let's look at a different combination:
 
-- **2. Groups from different but directly related tables and a measure:** **ProductStyle[Finish] - Product[Color] - Sum(Sales[Quantity])**
+**2. Groups from different but directly related tables and a measure:** **ProductStyle[Finish] - Product[Color] - Sum(Sales[Quantity])**
 
-|ProductStyle[Finish]  |Product[Color]  |Sum(Sales[Quantity])  |
+|*ProductStyle[Finish]*  |*Product[Color]* |*Sum(Sales[Quantity])*  |
 |---------|---------|---------|
 |Gloss     |Blue         |10         |
 |Matte     |Blue         |15         |
 
-In this example, Power BI displays only combinations that exist. Combinations that don't exist in the model, such as *None* + *Blue* or *Matte* + *Red* aren't displayed. The condition that determines which combinations exist is the value for *Sum(Sales[Quantity])*.
+In this example, Power BI displays only combinations that exist. Combinations that don't exist in the model, such as ("None" + "Blue") or ("Matte" + "Red") won't be displayed. The condition that determines which combinations exist is the value for *Sum(Sales[Quantity])* not being blank.
 
 Let's look at a different case:
 
-- **3. Groups from different but related tables and no measure:** **ProductStyle[Finish] - Product[Color]**
+**3. Groups from different but related tables and no measure:** **ProductStyle[Finish] - Product[Color]**
 
-|ProductStyle[Finish]  |Product[Color]  |
+|*ProductStyle[Finish]*  |*Product[Color]*  |
 |---------|---------|
 |Gloss     |Blue         |
 |Gloss     |Red         |
@@ -56,20 +56,20 @@ Let's look at a different case:
 
 Because there's no explicit measure, and the two tables are directly related, Power BI attempts to inject a measure to constrain the resulting combinations. In this case, Power BI injects a `CALCULATE(COUNTROWS('Product'))` measure, which shouldn't be blank, since **Product** is what is common to both tables.
 
-In this case, Power BI displays the combinations that have entries in the **Product** table, which excludes the combinations of *None* + *Blue* and *Matte* + *Red*.
+In this case, Power BI displays the combinations that have entries in the Product table, which excludes the combinations of *("None" + "Blue")* and *("Matte" + "Red")*.
 
-- **Groups from different and unrelated tables**
+**4. Groups from different and unrelated tables**
 
-   The sample model doesn't include this combination, but if there are groups from different and unrelated tables, Power BI can't relate the columns. The result would be a cross join of all the values of each column. In that situation, Power BI issues an error of the type *unconstrained join* because such cross joins are expensive to compute in the database, and they don't provide much information to a user.
+The sample model doesn't include this combination, but if there are groups from different and unrelated tables, Power BI can't relate the columns. The result would be a cross join of all the values of each column. In that situation, Power BI issues an error of the type *unconstrained join* because such cross joins are expensive to compute in the database, and they don't provide much information to a user.
 
-   ![Screenshot of an error dialog, stating Can't determine relationships between the fields.](media/desktop-show-items-no-data/show-items-no-data_01.png)
+![Screenshot of an error dialog, stating Can't determine relationships between the fields.](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
 
 ## Showing items with no data
 
 The previous section describes how Power BI determines which data is relevant to display, but there may be times when you *want* to show items with no data.
 
-The **Show items with no data** feature lets you include data rows and columns that contain blank measure values, which means that they don't contain measure data (blank measure values).
+The **Show items with no data** feature lets you include data rows and columns that don't contain measure data (blank measure values).
 
 To enable the **Show items with no data** feature, follow these steps:
 
@@ -83,14 +83,14 @@ The **Show items with no data** feature doesn't have any effect in the following
 * There's no measure added to the visual, and the grouping columns come from the same table.
 * Groups are unrelated. Power BI doesn't run queries for visuals that have unrelated groups.
 * The measure is unrelated to any of the groups. In this case, the measure will never be blank for only some group combinations.
-* There's a user-defined measure filter that excludes blank measures, for example: **SalesAmount > 0**
+* There's a user-defined measure filter that excludes blank measures. For example: *SalesAmount > 0*
 
 >[!CAUTION]
 >Enabling the option to show items with no data may negatively affect performance and can cause slow rendering of visuals or a time-out of data export.
 
 ### How Show items with no data works
 
-The most interesting uses of **Show items with no data** are when measures are present. Consider the situation when the groups are from the same table or can be related through a path in the model. For example, **ProductStyle** is directly related to **Product** and indirectly related to **Sales**, or when **ProductStyle** and **ProductCategory** can be related through the **Product** table.
+The most interesting uses of **Show items with no data** are when measures are present. Consider the situation when the groups are from the same table or can be related through a path in the model. For example, *ProductStyle* is directly related to *Product* and indirectly related to *Sales*. *ProductStyle* and *ProductCategory* can be related through the *Product* table.
 
 Let's look at a couple interesting cases and compare when **Show items with no data** is off and then on.
 
@@ -98,14 +98,14 @@ Let's look at a couple interesting cases and compare when **Show items with no d
 
 How it appears when the **Show items with no data** feature is off:
 
-|Product[Color]  |Product[Size]  |Sum(Sales[Quantity])  |
+|*Product[Color]*  |*Product[Size]* |*Sum(Sales[Quantity])*  |
 |---------|---------|---------|
 |Blue     |Medium         |15         |
 |Blue     |Small         |10         |
 
 How it appears when the **Show items with no data** feature is on:
 
-|Product[Color]  |Product[Size]  |Sum(Sales[Quantity])  |
+|*Product[Color]*  |*Product[Size]*  |*Sum(Sales[Quantity])*  |
 |---------|---------|---------|
 |Blue     |Large         |         |
 |Blue     |Medium         |15         |
@@ -116,16 +116,16 @@ Notice how two new combinations show up with the feature turned on: *Blue - Larg
 
 - **2. Grouping columns from related tables:** **ProductStyle[Finish] - Product[Color] - Sum(Sales[Quantity])**
 
-Power BI displays the following data when the **Show items with no data** feature is off:
+How it appears when the **Show items with no data** feature is off:
 
-|ProductStyle[Finish]  |Product[Color]  |Sum(Sales[Quantity])  |
+|*ProductStyle[Finish]*  |*Product[Color]*  |*Sum(Sales[Quantity])*  |
 |---------|---------|---------|
 |Gloss     |Blue         |10         |
 |Matte     |Blue         |15         |
 
-Power BI displays the following data when the **Show items with no data** feature is on:
+How it appears when the **Show items with no data** feature is on:
 
-|ProductStyle[Finish]  |Product[Color]  |Sum(Sales[Quantity])  |
+|*ProductStyle[Finish]*  |*Product[Color]*  |*Sum(Sales[Quantity])*  |
 |---------|---------|---------|
 |Gloss     |Blue         |10         |
 |Gloss     |Red         |         |
@@ -146,7 +146,7 @@ Now look at an example of changing the order, and how it impacts results. This e
 
 This is how it appears with **Show items with no data** feature on:
 
-|Product[Color] |ProductStyle[Finish]  |Sum(Sales[Quantity])  |
+|*Product[Color]* |*ProductStyle[Finish]*  |*Sum(Sales[Quantity])*  |
 |---------|---------|---------|
 |Blue     |Gloss         |10         |
 |Blue     |Matte         |15         |
@@ -174,7 +174,9 @@ When you use the **Export summarized data** feature, the behavior of the **Show 
 
 ## Example data model
 
-The examples in this article use the following data model:
+This section shows the sample data model used in the examples in this article.
+
+**Model**:
 ![Diagram of the relationships in the data model.](media/desktop-show-items-no-data/show-items-no-data_03.png)
 
 **Data**:
