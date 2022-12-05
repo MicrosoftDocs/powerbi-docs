@@ -16,7 +16,7 @@ ms.custom: intro-overview
 
 *Power BI Desktop* is a free application you install on your local computer that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple different sources of data, and combine them (often called *modeling*) into a data model. This data model lets you build visuals, and collections of visuals you can share as reports, with other people inside your organization. Most users who work on business intelligence projects use Power BI Desktop to create reports, and then use the *Power BI service* to share their reports with others.
 
-![Screenshot of Power BI Desktop showing sample data.](media/desktop-what-is-desktop/what-is-desktop-01.png)
+:::image type="content" source="media/desktop-what-is-desktop/what-is-desktop-01.png" alt-text="Screenshot of Power BI Desktop showing sample data.":::
 
 The most common uses for Power BI Desktop are as follows:
 
@@ -40,7 +40,7 @@ There are three views available in Power BI Desktop, which you select on the lef
 
 The following image shows the three views, as displayed along the left side of the canvas:
 
-![Screenshot of Power BI Desktop showing the Three Views panel.](media/desktop-what-is-desktop/what-is-desktop-view-icons.png)
+:::image type="content" source="media/desktop-what-is-desktop/what-is-desktop-view-icons.png" alt-text="Screenshot of Power BI Desktop showing the Three Views panel.":::
 
 ## Connect to data
 
@@ -52,11 +52,11 @@ To connect to data:
 
    The **Get Data** window appears, showing the many categories to which Power BI Desktop can connect.
 
-   ![Screenshot of Power BI Desktop showing the Get Data dialog box.](media/desktop-what-is-desktop/what-is-desktop_02.png)
+   :::image type="content" source="media/desktop-what-is-desktop/what-is-desktop_02.png" alt-text="Screenshot of Power BI Desktop showing the Get Data dialog box.":::
 
 1. When you select a data type, you're prompted for information, such as the URL and credentials, necessary for Power BI Desktop to connect to the data source on your behalf.
 
-   ![Screenshot of Power BI Desktop showing SQL Server database dialog box.](media/desktop-what-is-desktop/what-is-desktop_03.png)
+   :::image type="content" source="media/desktop-what-is-desktop/what-is-desktop_03.png" alt-text="Screenshot of Power BI Desktop showing SQL Server database dialog box.":::
 
 1. After you connect to one or more data sources, you may want to transform the data so it's useful for you.
 
@@ -70,13 +70,13 @@ To start Power Query Editor:
 
    The **Power Query Editor** window appears.
 
-   ![Screenshot of Power BI Desktop showing the Power Query Editor window.](media/desktop-getting-started/designer_gsg_editquery.png)
+   :::image type="content" source="media/desktop-getting-started/designer_gsg_editquery.png" alt-text="Screenshot of Power BI Desktop showing the Power Query Editor window.":::
 
 Each step you take in transforming data (such as renaming a table, transforming a data type, or deleting a column) is recorded by Power Query Editor. Every time this query connects to the data source, those steps are carried out so that the data is always shaped the way you specify.
 
 The following image shows the **Power Query Editor** window for a query that was shaped, and turned into a model.
 
- ![Screenshot of Power BI Desktop showing the Power Query Editor window for a query that was shaped.](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+:::image type="content" source="media/desktop-getting-started/shapecombine_querysettingsfinished.png" alt-text="Screenshot of Power BI Desktop showing the Power Query Editor window for a query that was shaped.":::
 
 Once your data is how you want it, you can create visuals.
 
@@ -84,13 +84,13 @@ Once your data is how you want it, you can create visuals.
 
 After you have a data model, you can drag *fields* onto the report canvas to create *visuals*. A visual is a graphic representation of the data in your model. There are many different types of visuals to choose from in Power BI Desktop. The following visual shows a simple column chart.
 
-![Screenshot of Power BI Desktop showing a sample bar chart.](media/desktop-what-is-desktop/what-is-desktop_04.png)
+:::image type="content" source="media/desktop-what-is-desktop/what-is-desktop_04.png" alt-text="Screenshot of Power BI Desktop showing a sample bar chart.":::
 
 To create or change a visual:
 
 - From the **Visualizations** pane, select the **Build visual** icon.
 
-   ![Screenshot of Power BI Desktop showing the Visualizations pane.](media/desktop-what-is-desktop/what-is-desktop_05.png)
+   :::image type="content" source="media/desktop-what-is-desktop/what-is-desktop_05.png" alt-text="Screenshot of Power BI Desktop showing the Visualizations pane.":::
 
    If you already have a visual selected on the report canvas, the selected visual changes to the type you selected.
 
@@ -104,7 +104,7 @@ With Power BI Desktop you can create complex and visually rich reports, using da
 
 In the following image, you see the first page of a Power BI Desktop report, named **Overview**, as seen on the tab near the bottom of the image.
 
-![Screenshot of Power BI Desktop showing the Overview tab.](media/desktop-what-is-desktop/what-is-desktop-01.png)
+:::image type="content" source="media/desktop-what-is-desktop/what-is-desktop-01.png" alt-text="Screenshot of Power BI Desktop showing the Overview tab.":::
 
 ## Share reports
 
