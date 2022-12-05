@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/29/2022
+ms.date: 12/5/2022
 LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
@@ -58,14 +58,14 @@ If you want to view the data source for this sample, it's also available as an E
 
 ## What is our dashboard telling us?
 
-Start at the dashboard and look at the tiles the CMO has chosen to pin. You see information about the market share, sales, and sentiment. Data is broken down by region, time, and competition.
+Let's start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. Data is broken down by region, time, and competition.
 
 * The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
-* The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how the market share fluctuates over time. Notice the large drop in June. The rolling 12-month (R12M) share, which was increasing for a while, is starting to stall.
-* The biggest competitor is Aliqui, as evident in the middle column chart tile (**Total Units YTD Variance %**).
-* Most of the business is in the East and Central regions.
-* The line chart at the bottom (**Total Units for 2014**) shows that the dip in June isn't seasonal; no competitors show the same trend.
-* The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for the industry are **Productivity** and **Convenience**.
+* The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how our market share fluctuates over time. Notice the large drop in June. Our rolling 12-month (R12M) share, which was increasing for a while, is now starting to stall.
+* Our biggest competitor is Aliqui, as evident in the middle column chart tile (**Total Units YTD Variance %**).
+* Most of our business is in the East and Central regions.
+* The line chart at the bottom (**Total Units for 2014**) shows that our dip in June isn't seasonal; none of our competitors show the same trend.
+* The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for our industry are **Productivity** and **Convenience**.
 
 ## Use Q&A to dig a little deeper
 
@@ -77,7 +77,7 @@ By using Q&A, you can discover additional details in the data.
 2. At the end of the existing query, add: *for VanArsdel*. Q&A interprets the question and displays an updated chart with the answer. Notice that product volume is mostly from the **Convenience** and **Moderation** segments.
 
    [![Screenshot of Q&A total units by segment for VanArsdel.](media/sample-sales-and-marketing/sales2.png)](media/sample-sales-and-marketing/sales2.png#lightbox)
-3. The share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
+3. Our share in the **Moderation** and **Convenience** categories is high. VanArsdel competes in these segments.
 4. Return to the dashboard by selecting the **Sales and Marketing Sample** from the left navigation bar.
 
 ### What does total unit market share look like for category (versus region)?
@@ -96,18 +96,20 @@ By using Q&A, you can discover additional details in the data.
 
 Dashboards are entry points into reports. If a tile is created from an underlying report, selecting that tile opens the report.
 
-On the dashboard, the **% Units Market Share R12M** line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart shows that the market share is no longer increasing over time. It's even declining a bit. Why does VanArsdel have a large market share dip in June?
+On our dashboard, the **% Units Market Share R12M** line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart shows that our market share is no longer increasing over time. It's even declining a bit. Why do we have a large market share dip in June?
 
 The report has four pages: VanArsdel Market Share, YTD Category Trend Analysis, Sentiment, and Growth Opportunities.
  
 ### VanArsdel - Market Share page
 Page one of the report focuses on VanArsdel's market share.
 
+1. On the dashboard, select the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart to open the **VanArsdel - Market Share** page of the Sales and Marketing Sample report.
+
    [![Screenshot of the VanArsdel Market Share page.](media/sample-sales-and-marketing/sales5.png)](media/sample-sales-and-marketing/sales5.png#lightbox)
 
-1. Look at the **Total Units by Month and isVanArsdel** column chart at the bottom of the report. The black column represents VanArsdel (products) and the green column is competition. The drop in June 2014 that VanArsdel experienced was not experienced by the competition.
+2. Look at the **Total Units by Month and isVanArsdel** column chart at the bottom of the report. The black column represents VanArsdel (our products), and the green column is our competition. The drop in June 2014 that VanArsdel experienced was not experienced by the competition.
 
-2. The **Total Category Volume by Segment** bar chart on the right is filtered to show VanArsdel's top two segments. Take a closer look at this filter:
+3. The **Total Category Volume by Segment** bar chart on the right is filtered to show VanArsdel's top two segments. Take a closer look at this filter:
 
    a. Select the **Total Category Volume by Segment** chart.
 
@@ -117,18 +119,18 @@ Page one of the report focuses on VanArsdel's market share.
 
    d. Modify the filter by selecting **Segment** to expand it, and then check **Productivity** to add that segment.  
 
-3. In the **Total Units by Month and isVanArsdel** chart, select **Yes** in the legend to cross-filter the page by **VanArsdel**. In the **Total Category Volume by Segment** chart, notice that VanArsdel doesn't compete in the **Productivity** segment.
+4. In the **Total Units by Month and isVanArsdel** chart, select **Yes** in the legend to cross-filter the page by **VanArsdel**. In the **Total Category Volume by Segment** chart, notice that we don't compete in the **Productivity** segment.
 
-4. Select the **Yes** again in the legend to remove the filter.
+5. Select the **Yes** again in the legend to remove the filter.
 
-5. Look at the **% Units Market Share and % Units Market Share R12M by Month** line chart. It shows the monthly market share and rolling 12-month market shares. Rolling-months data helps to smooth out monthly fluctuations and shows the long-term trends. In the **Total Category Volume by Segment** bar chart, select **Convenience**, and then **Moderation** to see the fluctuation in market share for each segment. Notice that the **Moderation** segment shows much more fluctuation in market share.
+6. Look at the **% Units Market Share and % Units Market Share R12M by Month** line chart. It shows our monthly market share and rolling 12-month market shares. Rolling-months data helps to smooth out monthly fluctuations and shows the long-term trends. In the **Total Category Volume by Segment** bar chart, select **Convenience**, and then **Moderation** to see the fluctuation in market share for each segment. Notice that the **Moderation** segment shows much more fluctuation in market share.
 
 Next, look at the **Sentiment Analysis** page of the report.
 
 ### YTD Category Trend Analysis page
 Page two of the report focuses on the year-to-date category trend.
 
-[![YTD Category Trend Analysis page](media/sample-sales-and-marketing/reportpage2.png)](media/sample-sales-and-marketing/reportpage2.png#lightbox)
+[![Screenshot of the YTD Category Trend Analysis page.](media/sample-sales-and-marketing/reportpage2.png)](media/sample-sales-and-marketing/reportpage2.png#lightbox)
 
 Notice the following details:
 
@@ -145,9 +147,9 @@ Page three of the report focuses on consumer sentiment.
 
 [![Screenshot of the Sentiment Analysis page.](media/sample-sales-and-marketing/sales6.png)](media/sample-sales-and-marketing/sales6.png#lightbox)
 
-Tweets, Facebook posts, blogs, and articles all contribute to consumer sentiment, which is shown in the two line charts on left side of the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment?
+Tweets, Facebook posts, blogs, and articles all contribute to consumer sentiment, which is shown in the two line charts on left side of the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for our products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment?
 
-First, look at external sources. In February, several articles and blog posts rated VanArsdel's customer service as the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service, and customers and the industry took note. In July, positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment is reflected in the **Total Units by Month** charts on pages one and two of the report. Perhaps this partially explains VanArsdel market share dips for June?
+Let's look at external sources. In February, several articles and blog posts rated VanArsdel's customer service as the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service, and customers and the industry took note. In July, positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment is reflected in the **Total Units by Month** charts on pages one and two of the report. Perhaps this partially explains our market share dips for June?
 
 Sentiment gap might be another area to explore. Which districts have the highest sentiment gap? How can management capitalize on it? How can they replicate it in other districts?
 
