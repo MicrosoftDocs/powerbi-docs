@@ -26,7 +26,7 @@ After you've installed R, Power BI Desktop enables it automatically. To verify t
 
 2. On the left side of the **Options** page, under **Global**, select **R scripting**.
 
-3. Under **R script options**, verify that your local R installation is specified in **Detected R home directories** and that it properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\Microsoft\R Open\R-3.4.4\\**.
+3. Under **R script options**, verify that your local R installation is specified in **Detected R home directories** and that it properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\R Open\R-3.4.4\\**.
    
    ![Screenshot of the R script options page, highlighting Detected R home directories.](media/desktop-r-visuals/r-visuals-2.png)
 
