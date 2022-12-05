@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 With Power BI Desktop, you can use *R* to visualize your data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) is a language and environment for statistical computing and graphics.
 
 ## Install R
-By default, Power BI Desktop doesn't include, deploy, or install the R engine. To run R scripts in Power BI Desktop, you must separately install R on your local computer. You can download and install R for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
+By default, Power BI Desktop doesn't include, deploy, or install the R engine. To run R scripts in Power BI Desktop, you must separately install R on your local computer. You can download and install R for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters and spaces (empty characters) in the installation path.
 
 ## Enable R visuals in Power BI Desktop
 After you've installed R, Power BI Desktop enables it automatically. To verify that Power BI Desktop has enabled R in the correct location, follow these steps:
@@ -129,7 +129,7 @@ R visuals in Power BI Desktop have the following limitations:
 
 * Data sizes: Data used by an R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used, and a message is displayed on the image.
 
-* Output size: R visual has an output size limit of 2MB.
+* Output size: R visual has an output size limit of 2 MB.
 
 * Resolution: All R visuals are displayed at 72 DPI.
 
@@ -145,7 +145,7 @@ R visuals in Power BI Desktop have the following limitations:
 
 * Display devices: Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
 
-* Column renaming: R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
+* Column renaming: R visuals don't support renaming input columns. Columns will be referred to by their original name during script execution.
 
 * RRO installations: In this release, the 32-bit version of Power BI Desktop doesn't automatically identify RRO installations; you must manually provide the path to the R installation directory in **Options and settings** > **Options** > **R Scripting**.
 
