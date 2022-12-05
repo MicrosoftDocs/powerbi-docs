@@ -46,7 +46,7 @@ While you can't share your actual personal bookmarks with others, you can select
 
 If you do have reshare permissions, when you share the report you can choose to include your changes.
 
-:::image type="content" source="media/end-user-bookmarks/power-bi-share-changes.png" alt-text="A screenshot showing the Share dialog. Include my changes is outlined.":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-share-changes.png" alt-text="A screenshot showing the Share dialog with Include my changes outlined.":::
 
 The following are a few ways you can share your view with others:
 
@@ -85,21 +85,17 @@ Configure a report page how you want it to appear in the bookmark. The following
 1. Existing Regions filter on the **Filters** pane. **West** is selected.
 1. Data point on the doughnut chart visual. It cross-filters and cross-highlights the report canvas.
 
-:::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied.":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied." lightbox="media/end-user-bookmarks/power-bi-personal.png#lightbox":::
 
 1. Once your report page and visuals are arranged how you want them, from the **Bookmarks** pane, select **Personal bookmarks > Add**.
 
-1. The personal bookmark gets a generic name, or you can enter a name. Select **Save**.
-
-1. To *rename*, *make default*, *delete*, or *update* your bookmark, select the ellipses next to the bookmark's name.
+1. The personal bookmark gets a generic name, or you can enter a name. Select **Save**. To *rename*, *make default*, *delete*, or *update* your bookmark, select the ellipses next to the bookmark's name.
 
 1. Open the **YTD Category** page of your report and create another personal bookmark. The bookmark in the following example captures the YTD information for the VanArsdel company.
 
     :::image type="content" source="media/end-user-bookmarks/power-bi-second-bookmark.png" alt-text="A screenshot showing the Bookmarks pane. One of the listed bookmarks is outlined.":::
 
-1. To open the **Bookmarks** pane, select **Show more bookmarks** in the **Bookmarks** menu. To switch between your two bookmarks, select the name of a bookmark in the **Bookmarks** pane.
-
-    ![Display a particular bookmark by selecting.](media/end-user-bookmarks/bookmarks.gif)
+1. Now that you have two bookmarks, switch between them by selecting the bookmark in the **Bookmarks** pane.
 
 1. To return to the original published view of the report, select the **Reset** icon, and then select **Reset** on the dialog.
 
@@ -116,7 +112,7 @@ To view the report bookmarks created by the report *designer*, from the **Bookma
 
 ### Report bookmarks
 
-If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. This report page has four bookmarks: B1, B2, VanArsdel YTD, and All YTD. **All YTD** is currently selected.
+If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. This report page has four bookmarks: B1 ON, B2 ON, VanArsdel YTD, and All YTD. **All YTD** is currently selected.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-bookmark-list.png" alt-text="A screenshot showing the Bookmarks pane. A list of bookmarks is outlined.":::
 
@@ -130,7 +126,7 @@ When in **View** mode, there are a few features to notice:
 - The bookmark title bar has arrows where you can move to the next or previous bookmark.
 - To exit **View** mode, select **Exit** from the **Bookmarks** pane, or select the **X** in the bookmark title bar.
 
-:::image type="content" source="media/end-user-bookmarks/power-bi-view-bookmarks.png" alt-text="A screenshot showing bookmarks in view mode. The title bar is outlined.":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-view-bookmarks.png" alt-text="A screenshot showing bookmarks in view mode with the title bar outlined.":::
 
 In **View** mode, you can close the **Bookmarks** pane to provide more space for your presentation. While in **View** mode, all visuals are interactive and available for cross-highlighting, like they are when interacting with them in other modes.
 
@@ -138,7 +134,7 @@ In **View** mode, you can close the **Bookmarks** pane to provide more space for
 
 From the upper-right corner of your report canvas, select **Reset to default**. This action removes all your changes in the report and sets it back to the designer's last saved view of the report.
 
-:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
+:::image type="content" source="media/end-user-bookmarks/power-bi-personalize-reset-all.png" alt-text="A screenshot showing the reset button in the action bar.":::
 
 ## Considerations and limitations
 
