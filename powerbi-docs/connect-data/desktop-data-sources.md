@@ -274,6 +274,7 @@ Available Template Apps may vary based on your organization.
 
 That's all there is to connecting to data sources in Power BI Desktop! Try connecting to data from our growing list of data sources, and check back often. We continue to add to this list all the time.
 
+<a name="using-pbids-files-to-get-data"></a>
 ## Use PBIDS files to get data
 
 PBIDS files are Power BI Desktop files that have a specific structure and a *.PBIDS* extension to identify them as Power BI data source files.
