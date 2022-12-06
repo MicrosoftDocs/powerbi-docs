@@ -45,25 +45,23 @@ The exact steps for sign up can vary depending on your organization and what you
 - Select a **Try free** or **Start free** button. You'll find the **Try free** type of buttons on `powerbi.microsoft.com`, in related Microsoft products, and in documentation and marketing articles.
 - Receive an email with a link to a Power BI dashboard, report, or app. You haven't previously signed in to your Power BI account.
 
-### Step 1
+1. Select **Try free** from [powerbi.microsoft.com](https://powerbi.com). You might then be prompted to select **Try Power BI for free**.
 
-- Select **Try free** from [powerbi.microsoft.com](https://powerbi.com). You might then be prompted to select **Try Power BI for free**.
+   ![Screenshot of Power BI service showing powerbi.microsoft.com in a web browser.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try.png)
 
-    ![Screenshot of Power BI service showing powerbi.microsoft.com in a web browser.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try.png)
+   ![Screenshot of Power BI service showing the Try Power BI for free prompt.](media/service-self-service-signup-for-power-bi/power-bi-start-free.png)
 
-    ![Screenshot of Power BI service showing the Try Power BI for free prompt.](media/service-self-service-signup-for-power-bi/power-bi-start-free.png)
+   Or, select an email link to a Power BI dashboard, report, or app.
 
-- Or, select an email link to a Power BI dashboard, report, or app.
-
-    ![Screenshot of Power BI service showing an email being sent from powerbi.com.](media/service-self-service-signup-for-power-bi/power-bi-emails.png)
+   ![Screenshot of Power BI service showing an email being sent from powerbi.com.](media/service-self-service-signup-for-power-bi/power-bi-emails.png)
 
 1. When prompted, sign in using your organizational account.
 
-    ![Screenshot of Power BI service showing a prompt to enter new email address.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-in.png)
+   ![Screenshot of Power BI service showing a prompt to enter new email address.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-in.png)
 
 1. In this example, Microsoft 365 recognizes you and knows that you already have at least one other Microsoft service installed. Select **Sign in**.
 
-    ![Screenshot of Power BI service showing that Microsoft recognizes the email.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-up.png)
+   ![Screenshot of Power BI service showing that Microsoft recognizes the email.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-sign-up.png)
 
 1. You might receive one of these dialog boxes:
 
