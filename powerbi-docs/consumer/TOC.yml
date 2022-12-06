@@ -109,7 +109,7 @@
     - name: "View automatic insights for dashboard tiles"
       href: end-user-insights.md
     - name: "Create a dashboard alert"
-        href: end-user-alerts.md 
+      href: end-user-alerts.md 
    - name: Reports
     items:
     - name: "Reports"
