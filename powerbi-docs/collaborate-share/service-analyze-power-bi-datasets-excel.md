@@ -20,7 +20,7 @@ The Excel file uses an MSOLAP connection string to connect to your dataset in Po
 
 With that connection to the data in Power BI now established, you can create PivotTables and charts. Then, you can analyze that dataset just as you would with a local dataset in Excel.
 
-:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png" alt-text="":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png" alt-text="Screenshot that shows a blank PivotTable for analysis in Excel.":::
 
 
 ![Screenshot that shows a blank PivotTable for analysis in Excel.](media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png) ](media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png#lightbox)
