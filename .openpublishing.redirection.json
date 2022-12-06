@@ -802,12 +802,12 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/consumer/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
@@ -2232,12 +2232,22 @@
         },
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/service-troubleshoot-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/service-troubleshoot-subscribe",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/collaborate-share/service-report-subscribe.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
@@ -2766,7 +2776,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/connect-data/service-connect-to-xero.md",
+            "source_path": "powerbi-docs/connect-data/service-connect-to-analyze-stocks.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
@@ -3698,7 +3708,7 @@
         {
             "source_path": "powerbi-docs/service-dashboard-create.md",
             "redirect_url": "/power-bi/create-reports/service-dashboard-create",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-dashboard-edit-tile.md",
@@ -3722,7 +3732,12 @@
         },
         {
             "source_path": "powerbi-docs/service-dashboard-pin-tile-from-report.md",
-            "redirect_url": "/power-bi/create-reports/service-dashboard-pin-tile-from-report",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-dashboard-pin-tile-from-report.md",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
             "redirect_document_id": true
         },
         {
@@ -4497,7 +4512,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.mdservice-premium-capacity-manage-gen2.md",
+            "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.md",
             "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage-gen2",
             "redirect_document_id": false
         }, 

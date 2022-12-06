@@ -41,7 +41,7 @@ highlightedContent:
     # Card
     - title: Edit relationships in the Properties pane
       itemType: how-to-guide
-      url: desktop-create-and-manage-relationships.md#edit-a-relationship
+      url: /power-bi/transform-model/desktop-create-and-manage-relationships#edit-a-relationship
     # Card
     - title: "Power BI Premium features: Original, Gen2, and Per User"
       itemType: concept
@@ -308,7 +308,7 @@ conceptualContent:
         - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
           itemType: how-to-guide
           text: Troubleshoot refresh scenarios
-        - url: consumer/service-troubleshoot-subscribe.yml
+        - url: collaborate-share/service-troubleshoot-subscribe.yml
           itemType: how-to-guide
           text: Troubleshoot subscribing to reports and dashboards
       # footerLink (optional)

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom: contperf-fy22q3
-ms.date: 10/23/2022
+ms.date: 11/15/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -227,7 +227,13 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 ### General
 
-* Power BI admins: If a sensitivity label is or becomes a parent (that is, has sublabels), exporting data from content that has that label applied will fail. See [Sublabels (grouping labels)](/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels).
+* Don't use parent labels. A parent label is a label that has sublabels. You cannot apply parent labels, but a label that is already applied may become a parent label if it acquires sublabels. If you come across an item that has a parent label, apply the appropriate sublabel. To change a parent label, you must have [sufficient usage rights on the label](./service-security-sensitivity-label-change-enforcement.md).
+
+    If an item has a parent label, note the following behavior:
+    * Parent labels will not be inherited.
+    * Mandatory label policies will not be applied to items that have a parent label. This means users won't be required to apply a meaningful label in order to save the item, and the item will escape mandatory label policies designed to promote total coverage.
+    * If you try to export data from an item that has a parent label, export will fail.
+    * It is possible to publish a *.pbix* file that has a parent label, but if the parent label is protected, publish will fail. The solution is to apply a suitable sublabel.
 
 * Data sensitivity labels aren’t supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
 
@@ -235,7 +241,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Purview compliance portal](https://compliance.microsoft.com/).
 
-* Getting data from encrypted Excel (.xlsx) files isn’t supported. This includes "Get data" and refresh scenarios.
+* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an *unprotected* sensitivity label will succeed, but the sensitivity label will not be inherited. See [Sensitivity label inheritance from data sources](./service-security-sensitivity-label-inheritance-from-data-sources.md) for detail.
 
 * Information protection in Power BI doesn't support **B2B** and **multi-tenant scenarios**.
 

@@ -101,7 +101,7 @@ If the mapped column is set to **No** for Multi-select, you must use either a si
 ## Enable Select all
 
 There are additional steps if you want end-users to be able to use the **Select all** option in the slicer or filter card. 
-Let’s use the following scenario as an example. Within the **Model** tab of Power BI Desktop, you can see we have a field called **Country** (list of countries) that is bound to an M parameter called **countryNameMParameter**:
+Let’s use the following scenario as an example. Within the **Model** tab of Power BI Desktop, you can see we have a field called **Country** (list of countries/regions) that is bound to an M parameter called **countryNameMParameter**:
 
 ![Example of multi-select M Parameter](media/desktop-dynamic-m-query-parameters/example-multi-select-m-parameter.png)
 

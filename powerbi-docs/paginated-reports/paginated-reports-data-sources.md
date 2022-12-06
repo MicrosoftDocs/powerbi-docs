@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/27/2022
+ms.date: 10/27/2022
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -18,7 +18,8 @@ This article spells out supported data sources for paginated reports in the Powe
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+- You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
 
 ## Natively supported data sources
 
@@ -79,7 +80,7 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
   
 ## Considerations and limitations
 
-- When using a Power BI dataset as a data source, you may see an error message **"Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint."** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the Analyze in Excel endpoint [(which has a 2 GB data limit)](../collaborate-share/service-analyze-power-bi-datasets-excel.md#considerations-and-limitations) to support Power BI datasets in Premium and non-Premium workspaces.
+- When using a Power BI dataset as a data source, you may see an error message **"Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint."** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the Analyze in Excel endpoint [(which has a 2 GB data limit)](../collaborate-share/service-analyze-power-bi-datasets-excel.md#considerations-and-limitations) to support Power BI datasets in any workspace.
 
 ## Next steps
 

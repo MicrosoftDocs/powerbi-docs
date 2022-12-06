@@ -115,10 +115,10 @@ To understand the different types of phrasings, you’re first going to need to 
 
 
 ### Attribute phrasings
-Attribute phrasings are the workhorse of Q&A, used when one thing is acting as an attribute of another thing. They’re simple and straightforward, and perform most of the heavy lifting when you haven't defined a subtler, more detailed phrasing. Attribute phrasings are described using the basic verb “have” (“products have categories” and "host countries have host cities"). They also automatically allow questions with the prepositions “of” and “for” (“categories of products”, “orders for products”) and possessive (“John’s orders”). Attribute phrasings are used in these kinds of questions:
+Attribute phrasings are the workhorse of Q&A, used when one thing is acting as an attribute of another thing. They’re simple and straightforward, and perform most of the heavy lifting when you haven't defined a subtler, more detailed phrasing. Attribute phrasings are described using the basic verb “have” (“products have categories” and "host countries/regions have host cities"). They also automatically allow questions with the prepositions “of” and “for” (“categories of products”, “orders for products”) and possessive (“John’s orders”). Attribute phrasings are used in these kinds of questions:
 
 - Which customers have orders?
-- List host cities by country ascending
+- List host cities by country or region ascending
 - Show orders that have chai
 - List customers with orders
 - What is the category of each product?
@@ -262,7 +262,7 @@ Binding: {Table: Employees}
 ```
 
 ### Preposition phrasings
-Preposition phrasings are used to describe how things in your model are related via prepositions. For example, a “cities are in countries” phrasing improves understanding of questions like “count the cities in Washington”. Some preposition phrasings are created automatically when a column is recognized as a geographical entity. Preposition phrasings are used in these kinds of questions:
+Preposition phrasings are used to describe how things in your model are related via prepositions. For example, a “cities are in countries or regions” phrasing improves understanding of questions like “count the cities in Washington”. Some preposition phrasings are created automatically when a column is recognized as a geographical entity. Preposition phrasings are used in these kinds of questions:
 
 - Count the customers in New York
 - List the books about linguistics

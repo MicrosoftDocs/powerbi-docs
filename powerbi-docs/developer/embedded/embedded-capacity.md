@@ -19,22 +19,19 @@ Power BI embedded analytics requires a capacity (*A*, *EM*, or *P* SKU) in order
 >[!NOTE]
 >You'll need a Power BI Pro or Premium Per User (PPU) account to publish content.
 
-## What is embedded analytics?
+## What are the different capacities?
 
 Power BI embedded analytics offers two publishing solutions. Each solution requires different SKUs.
 
-* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications.
+* [*Power BI Embedded*](#power-bi-embedded)  is an Azure offering aimed at ISVs and developers who want to embed visuals into their applications. Power BI Embedded uses *A* SKUs.
 
-* Embedding Power BI is part of Microsoft Office's [*Power BI Premium*](#power-bi-premium). It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+* [*Power BI Premium*](#power-bi-premium) is a Microsoft Office offer that includes Embedding Power BI. It's geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium uses *EM* or *P* SKUs.
 
 ### Power BI Embedded
 
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
-
->[!NOTE]
->Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
 
 ### Power BI Premium
 
@@ -104,57 +101,36 @@ The table below lists payment and usage considerations per capacity.
 
 The table below describes the resources and limits of each SKU.
 
-#### [Premium Gen2](#tab/gen2)
-
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
-| ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
-| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
-| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
-| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  |
-| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
-| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
-| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
-| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
-| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
+| Capacity          |     |      |         | Dataset |        |     |       | Dataflow |
+| ----------------- | --- | ---- | ------- | --- | ------ | --- | ----- | -------- |
+| **Capacity SKUs** | **Total v-cores** |**Backend v-cores** | **Frontend v-cores** | **Max memory per dataset (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  |
+| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |  4 |
+| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |  8 |
+| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  | 16 |
+| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  | 32 |
+| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  | 64 |
+| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  | 64|
+| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  | 64 |
+| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  | 64 |
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
 <sup>2</sup> These limits only apply to the datasets workload per capacity.
 
-<sup>3</sup> The *Max memory per dataset (GB)* column (also called the *model size limit*) represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
+<sup>3</sup> The *RAM per dataset (GB)* column (also called the *model size limit*) represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
 <sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
-#### [Premium Gen1](#tab/gen1)
+<sup>5</sup> Learn more about [parallel tasks in dataflows](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium).
 
-| Capacity SKUs | Total v-cores | Backend v-cores | Frontend v-cores | Memory (GB) | DirectQuery/Live connection (per second) | Max memory per query (GB) | Model refresh parallelism<sup>1</sup> |
-| ------ | --- | ---- | ---- | --- | ------ | --- | --- |
-| EM1/A1 |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |  1  |
-| EM2/A2 |   2 |  1   |  1   |   5 |   7.5  |  2  |  2  |
-| EM3/A3 |   4 |  2   |  2   |  10 |  15    |  2  |  3  |
-| P1/A4  |   8 |  4   |  4   |  25 |  30    |  6  |  6  |
-| P2/A5  |  16 |  8   |  8   |  50 |  60    |  6  | 12  |
-| P3/A6  |  32 | 16   | 16   | 100 | 120    | 10  | 24  |
-| P4/A7<sup>2</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 48  |
-| P5/A8<sup>2</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 96  |
+Note the amount of memory available on each node size described in the *RAM (GB)* column of the table. It's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded A4 capacity, a *single dataset* size is limited to 25 GB, and not the total memory footprint of *all* datasets handled at the same time.
 
-<sup>1</sup> The model refresh parallelism limits only apply to dataset workloads per capacity.
+### Embedded gen 2 memory enhancements
 
-<sup>2</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
-
----
-
-#### Embedded Gen 2 memory enhancements
-
-The amount of memory available on each node size is described in the *RAM (GB)* column in the [SKU memory and computing power](#sku-memory-and-computing-power) table. With [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md) (also known as Embedded Gen 2), it's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, a single dataset size is limited to 25 GB, compared to the original Power BI Embedded capacity, where the total memory footprint of *all* datasets handled at the same time was limited to 25 GB.
+The amount of memory available on each node size is described in the RAM (GB) column in the SKU memory and computing power table. With Power BI Embedded Generation 2 (also known as Embedded Gen 2), it's set to the memory footprint limit of a single Power BI item (such as a dataset, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Gen2 A4 capacity, a single dataset size is limited to 25 GB, compared to the original Power BI Embedded capacity, where the total memory footprint of all datasets handled at the same time was limited to 25 GB.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
-
-> [!div class="nextstepaction"]
-> [Embed from apps](./index.yml)
+* [Embed for your customers](embed-sample-for-customers.md)
+* Embed for your organization](embed-sample-for-your-organization.md)
+* [Embed from apps](./index.yml)
