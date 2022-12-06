@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 In the Data Types Gallery in Excel, users can find data from *featured tables* in your Power BI datasets. In this article, you learn how to set tables as *featured* in your datasets. These tags make it easier for users to add enterprise data to their Excel sheets. Here are the basic steps for setting and sharing featured tables.
 
-1. Identify featured tables in your datasets in Power BI Desktop (this article)
+1. Identify featured tables in your datasets in Power BI Desktop (this article).
 1. Save those datasets with featured tables to a shared workspace. Report creators can create reports with those featured tables.
 1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. The article [Access Power BI featured tables in Excel](service-excel-featured-tables.md) describes how to consume these featured tables in Excel.
 
@@ -68,7 +68,7 @@ Here are the current limitations:
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
 - Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for the English-language search. Searching in other languages might not result in accurate matches. 
-- Featured tables use Power BI Q&A indexing when users query data in those tables. See [How does indexing work with Q&A?](../natural-language/q-and-a-data-sources.md#how-does-indexing-work-with-qa) for details.
+- Featured tables use Power BI Q&A indexing when users query data in those tables. For more information, see [How does indexing work with Q&A](../natural-language/q-and-a-data-sources.md#how-does-indexing-work-with-qa).
 - Most numerical columns aren't considered for matching. If the Row label or Key column are numeric, they're included for matching.
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
@@ -78,7 +78,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 
 - Power BI returns at most 100 row suggestions for each cell.
 - Some symbols aren't supported.
-- Setting or updating the featured table isn't supported in the XMLA endpoint
+- Setting or updating the featured table isn't supported in the XMLA endpoint.
 - You can use Excel files with a data model to publish featured tables. Load the data into Power BI Desktop and then publish the featured table.
 - Changing the Table name, Row Label, or Key Column in the featured table may impact Excel users with linked cells to rows in the table. 
 - Excel shows when the data was retrieved from the Power BI dataset. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
