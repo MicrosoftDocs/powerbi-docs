@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/05/2022
+ms.date: 12/06/2022
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 ## Introduction to bookmarks
 
-A bookmark captures the state of a report page. It includes the settings you've made to filters, slicers, and visuals on that page. Once the report page is set the way you want, give it a friendly name. Now you can easily return to that state of the report page. Select a bookmark, and Power BI takes you back to that view.
+A bookmark captures the state of a report page. It includes the settings you've made to filters, slicers, and visuals on that page. After the report page is set the way you want, give it a friendly name. Now you can easily return to that state of the report page. Select a bookmark, and Power BI takes you back to that view.
 
 ## Types of bookmarks
 
@@ -26,17 +26,17 @@ There are two types of bookmarks: *personal* and *report*. Report bookmarks are 
 
 This article explains how to create and use *personal* bookmarks. It also explains how to interact with *report* bookmarks that have been created by others and shared with you. Viewing shared content requires either a Power BI Pro or a Premium Per User license. [Which license do I have?](end-user-license.md)
 
-If you'll be designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
+If you're designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
 
 ## Use personal bookmarks to save insights and build stories in Power BI
 
-There are many uses for personal bookmarks. Say you discover an interesting insight and want to preserve it--create a personal bookmark so you can return later. Need to leave and want to preserve your current work, create a personal bookmark. You can even make a personal bookmark your default view of a report, so each time you return, that view of the report page opens first.
+There are many uses for personal bookmarks. If you discover an interesting insight and want to preserve it, create a personal bookmark so you can return later. If you need to leave and want to preserve your current work, create a personal bookmark. You can even make a personal bookmark your default view of a report, so each time you return, that view of the report page opens first.
 
 You can also create a collection of bookmarks, arrange them in the order you want, and then step through each bookmark in a presentation to highlight a series of insights that tell a story. This feature works like a slideshow, where you select an arrow to go forward or backward. There's a limit of 20 personal bookmarks per report.
 
 ### Open the Bookmarks pane
 
-Open the **Bookmarks** pane by selecting the :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choosing either **Add a personal bookmark** or **Show more bookmarks**.
+To open the **Bookmarks** pane, select the :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choose either **Add a personal bookmark** or **Show more bookmarks**.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-bookmark-icon.png" alt-text="A screenshot showing the bookmark menu in the action bar.":::
 
@@ -79,7 +79,7 @@ If you have access to the **Selection** pane, you can also set and save:
 
 ### Create two bookmarks
 
-Configure a report page how you want it to appear in the bookmark. The following example has filters applied. The example shows changes to the:
+Configure a report page the way you want it to appear in the bookmark. The following example has filters applied. The example shows changes to the:
 
 1. Existing Date filter on the **Filters** pane.
 1. Existing Regions filter on the **Filters** pane. **West** is selected.
@@ -87,7 +87,7 @@ Configure a report page how you want it to appear in the bookmark. The following
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied." lightbox="media/end-user-bookmarks/power-bi-personal.png#lightbox":::
 
-1. Once your report page and visuals are arranged how you want them, from the **Bookmarks** pane, select **Personal bookmarks > Add**.
+1. After your report page and visuals are arranged how you want them, from the **Bookmarks** pane, select **Personal bookmarks > Add**.
 
 1. The personal bookmark gets a generic name, or you can enter a name. Select **Save**. To *rename*, *make default*, *delete*, or *update* your bookmark, select the ellipses next to the bookmark's name.
 
@@ -120,7 +120,7 @@ If the report *designer* included report bookmarks, you'll find them under the *
 
 To present or view bookmarks in order, select **View** from the **Bookmarks** pane to begin a slideshow.
 
-When in **View** mode, there are a few features to notice:
+When in **View** mode, notice the following features:
 
 - The name of the bookmark appears in the bookmark title bar, which appears at the bottom of the canvas.
 - The bookmark title bar has arrows where you can move to the next or previous bookmark.
@@ -140,11 +140,11 @@ From the upper-right corner of your report canvas, select **Reset to default**. 
 
 In this release of **personal bookmarks**, there are a few considerations and limitations to keep in mind.
 
-- The bookmark captures the state of the page at the time the bookmark was created. When someone selects the bookmark, Power BI attempts to show them that bookmark in its original report state. However, there are situations where showing the bookmark isn't possible. For example, if the report owner changes the name of a field that is used by the bookmark, Power BI will no longer be able to display visuals, filters, or slicers that use that field. Certain visuals will display no data for the renamed field. Filtered or sliced visuals will revert to the default view.
+- The bookmark captures the state of the page at the time the bookmark was created. When someone selects the bookmark, Power BI attempts to show them that bookmark in its original report state. However, there are situations where showing the bookmark isn't possible. For example, if the report owner changes the name of a field that is used by the bookmark, Power BI will no longer display visuals, filters, or slicers that use that field. Certain visuals will display no data for the renamed field. Filtered or sliced visuals will revert to the default view.
 
 - Most Power BI custom visuals should work well with personal bookmarking. If you run into trouble with bookmarking and a Power BI custom visual, contact the creator of that visual, and ask them to add support for bookmarks.
 
-- Generally, your personal bookmarks won't be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a personal bookmark, then you'll receive an error message the next time you attempt to open that bookmark.
+- Generally, your personal bookmarks aren't affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a personal bookmark, you'll receive an error message the next time you attempt to open that bookmark.
 
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
