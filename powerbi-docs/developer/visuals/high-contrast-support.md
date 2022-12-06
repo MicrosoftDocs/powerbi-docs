@@ -7,12 +7,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/18/2021
+ms.date: 12/06/2022
 ---
 
 # High-contrast mode support in Power BI visuals
 
-The Windows *high-contrast* setting makes text and apps easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI visuals. For more information, see [high-contrast support in Power BI](../../create-reports/desktop-accessibility-creating-reports.md#high-contrast-color-view).
+The Windows *high-contrast* setting makes text and graphics easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI visuals. For more information, see [high-contrast support in Power BI](../../create-reports/desktop-accessibility-creating-reports.md#high-contrast-color-view).
 
 To view an implementation of high-contrast support, go to the [`PowerBI-visuals-sampleBarChart` visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
@@ -31,12 +31,12 @@ The *colorPalette* member of `options.host` has several properties for high-cont
 
 * Get high-contrast colors
 
-    When displaying in high-contrast mode, your visual should limit itself to the following settings:
+  When displaying in high-contrast mode, your visual should limit itself to the following settings:
 
-    * **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
-    * **Background** color is used for background, and as the fill color of outlined shapes.
-    * **Foreground - selected** color is used to indicate a selected or active element.
-    * **Hyperlink** color is used only for hyperlink text.
+  * **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
+  * **Background** color is used for background, and as the fill color of outlined shapes.
+  * **Foreground - selected** color is used to indicate a selected or active element.
+  * **Hyperlink** color is used only for hyperlink text.
 
     > [!NOTE]
     > If a secondary color is needed, foreground color may be used with some opacity (Power BI native visuals use 40% opacity). Use this sparingly to keep the visual details easy to see.
@@ -80,19 +80,19 @@ Power BI native visuals follow these guidelines:
 * When a data element is highlighted, all other elements change their opacity to 40%.
 * For slicers and active filter elements use foreground-selected color.
 
-In the following sample bar chart, for example, all bars are drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
+The following sample bar chart, for example, is drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
 
 ### [Standard colors](#tab/Standard)
 
-![Sample Bar Chart using standard colors](media/high-contrast-support/hc-samplebarchart-standard.png)
+:::image type="content" source="media/high-contrast-support/hc-samplebarchart-standard.png" alt-text="Screenshot of sample Bar Chart using standard colors.":::
 
 ### [High contrast-dark color theme](#tab/Dark)
 
-![Sample Bar Chart using *Dark #2* color theme](media/high-contrast-support/hc-samplebarchart-dark2.png)
+:::image type="content" source="media/high-contrast-support/hc-samplebarchart-dark2.png" alt-text="Screenshot of sample Bar Chart using Dark #2 color theme.":::
 
 ### [High contrast-white color theme](#tab/White)
 
-![Sample Bar Chart using *White* color theme](media/high-contrast-support/hc-samplebarchart-white.png)
+:::image type="content" source="media/high-contrast-support/hc-samplebarchart-white.png" alt-text="Screenshot of sample Bar Chart using White color theme.":::
 
 ---
 

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 11/22/2022
+ms.date: 12/01/2022
 LocalizationGroup: Data from files
 ---
 
@@ -25,6 +25,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
 * DLP policies for Power BI aren't supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
 * DLP policies for Power BI aren't supported in sovereign clouds.
+* Custom sensitive info types of the type *Keyword list* and *Keyword dictionary* are currently not supported when using DLP policies for the Power BI location.
 * Currently, DLP policies for Power BI don't support scanning for sensitive info types in data stored in the Southeast Asia region. See [How to find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#how-to-find-the-default-region-for-your-organization) to learn how to find your organization's default data region.
 
 ## Licensing and permissions

@@ -58,6 +58,8 @@
     items: 
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
+    - name: "Optimize ribbon in Power BI Desktop"
+      href: desktop-optimize-ribbon.md      
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -418,6 +420,8 @@
       href: service-goals-create-connected.md
     - name: "Create submetrics"
       href: service-metrics-submetrics.md
+    - name: "Create linked metrics"
+      href: service-metrics-linked-metrics.md
     - name: "Create custom statuses"
       href: service-goals-custom-status.md
     - name: "Create automated status rules"
