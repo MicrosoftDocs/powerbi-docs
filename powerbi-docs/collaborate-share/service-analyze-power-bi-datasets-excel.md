@@ -1,6 +1,6 @@
 ---
 title: Build refreshable Excel reports with Power BI data
-description: Learn how you can build refreshable reports in Excel with Power BI datasets so you can analyze the data like you would with a dataset that is local to Excel.
+description: Learn how to build refreshable reports in Excel with Power BI datasets so you can analyze the data like you would with a dataset that is local to Excel.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ikedeagu
@@ -32,7 +32,7 @@ You can refresh the Power BI dataset connection to update your reports in Excel 
 
 - The second way is to select **Data** in the Excel ribbon and then choose **Refresh**.
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png" alt-text="Screenshot that shows where to select Data in the Excel ribbon and choose Refresh.":::
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png" alt-text="Screenshot that shows where to select Data in the Excel ribbon and choose Refresh." lightbox="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png"::::::
 
     > [!IMPORTANT]
     > The **Refresh** option updates the Power BI connection string for the report you see on the sheet. The **Refresh All** option updates all the connection strings in the Excel workbook, including non-Power BI data sources.
