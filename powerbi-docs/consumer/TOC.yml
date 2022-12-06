@@ -111,7 +111,7 @@
     - name: "Create a dashboard alert"
       href: end-user-alerts.md 
    - name: Reports
-    items:
+     items:
     - name: "Reports"
       href: end-user-reports.md
     - name: "View a report"
