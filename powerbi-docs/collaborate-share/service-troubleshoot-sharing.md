@@ -12,11 +12,11 @@ LocalizationGroup: Share your work
 ---
 # Troubleshoot issues that occur when you share dashboards and reports
 
-Here are some common issues that may come up when you share a dashboard or report, or when someone else shares with you. 
+Here are some common issues that might come up when you share a dashboard or report, or when someone else shares with you. 
 
 ## Dashboard recipients see a lock icon in a tile
 
-The people you share with may see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
+The people you share with might see a locked tile in a dashboard, or a "Permission required" message when they try to view a report.
 
 :::image type="content" source="media/service-share-dashboards/power-bi-locked_tile_small.png" alt-text="Screenshot that shows the Power BI locked tile.":::
 
