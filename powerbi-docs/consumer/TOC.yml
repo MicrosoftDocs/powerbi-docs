@@ -110,8 +110,8 @@
       href: end-user-insights.md
     - name: "Create a dashboard alert"
       href: end-user-alerts.md 
-   - name: Reports
-     items:
+  - name: Reports
+    items:
     - name: "Reports"
       href: end-user-reports.md
     - name: "View a report"
