@@ -20,7 +20,10 @@ The Excel file uses an MSOLAP connection string to connect to your dataset in Po
 
 With that connection to the data in Power BI now established, you can create PivotTables and charts. Then, you can analyze that dataset just as you would with a local dataset in Excel.
 
-:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png" alt-text="Screenshot that shows a blank PivotTable for analysis in Excel.":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png" alt-text="":::
+
+
+![Screenshot that shows a blank PivotTable for analysis in Excel.](media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png) ](media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png#lightbox)
 
 ## Refresh the data
 
@@ -32,7 +35,7 @@ You can refresh the Power BI dataset connection to update your reports in Excel 
 
 - The second way is to select **Data** in the Excel ribbon and then choose **Refresh**.
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png" alt-text="Screenshot that shows where to select Data in the Excel ribbon and choose Refresh." lightbox="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png"::::::
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png" alt-text="Screenshot that shows where to select Data in the Excel ribbon and choose Refresh." lightbox="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-data-refresh.png":::
 
     > [!IMPORTANT]
     > The **Refresh** option updates the Power BI connection string for the report you see on the sheet. The **Refresh All** option updates all the connection strings in the Excel workbook, including non-Power BI data sources.
