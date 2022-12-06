@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-By using Power BI’s built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks. These navigators should save hours of effort building and managing your page or bookmark navigation experiences.
+Using Power BI’s built-in navigators, you can quickly build page and bookmark navigation experiences with just a few clicks. These navigators should save hours of effort building and managing your page or bookmark navigation experiences.
 
 :::image type="content" source="media/desktop-buttons/example-report.png" alt-text="Screenshot of an example report with page and bookmark navigation."lightbox="media/desktop-buttons/example-report.png":::
 
@@ -119,7 +119,7 @@ If the bookmark that you’re using for deselection is within the bookmark navig
  
 ## Formatting options
 
-Just like for other buttons, there are many formatting options for the navigators including:
+Just like for other buttons, there are lots of formatting options for the navigators including:
 
 - Fill
 - Text
