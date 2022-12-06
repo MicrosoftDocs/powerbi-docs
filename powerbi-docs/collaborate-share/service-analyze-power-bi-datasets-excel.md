@@ -23,7 +23,7 @@ With that connection to the data in Power BI now established, you can create Piv
 :::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png" alt-text="Screenshot that shows a blank PivotTable for analysis in Excel.":::
 
 
-![Screenshot that shows a blank PivotTable for analysis in Excel.](media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png) ](media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png#lightbox)
+![Screenshot that shows a blank PivotTable for analysis in Excel.](media/service-analyze-power-bi-datasets-excel/analyze-powerbi-datasets-excel-pivottable.png#lightbox)
 
 ## Refresh the data
 
