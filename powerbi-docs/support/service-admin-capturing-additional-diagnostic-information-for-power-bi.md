@@ -37,7 +37,7 @@ Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open
 
     2. Select the **Console** tab, then select **Settings** > **Preserve log**.
 
-           :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-console-settings.png" alt-text="Screenshot of the Google Chrome developer tools with console tab and preserve log selected." :::
+       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-console-settings.png" alt-text="Screenshot of the Google Chrome developer tools with console tab and preserve log selected." :::
 
         Select **Settings** again to close the **Console settings**.
 
@@ -132,7 +132,7 @@ The following steps show how to use the developer tools in Firefox. For more inf
 
     2. Select the **Console** tab, then select **Console settings** > **Persist Logs**.
 
-           :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-console-persist-logs.png" alt-text="Screenshot of the Inspector tools with console tab and persist logs selected." :::
+       :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-console-persist-logs.png" alt-text="Screenshot of the Inspector tools with console tab and persist logs selected." :::
 
 3. After the options are set, clear any recording in progress. Select the **Network** tab, then **Clear**.
 
