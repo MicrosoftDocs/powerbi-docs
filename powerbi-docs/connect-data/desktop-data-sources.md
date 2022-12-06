@@ -274,13 +274,13 @@ Available Template Apps may vary based on your organization.
 
 That's all there is to connecting to data sources in Power BI Desktop! Try connecting to data from our growing list of data sources, and check back often. We continue to add to this list all the time.
 
-## Using PBIDS files to get data
+## Use PBIDS files to get data
 
-PBIDS files are Power BI Desktop files that have a specific structure, and they have a *.PBIDS* extension to identify them as Power BI data source files.
+PBIDS files are Power BI Desktop files that have a specific structure and a *.PBIDS* extension to identify them as Power BI data source files.
 
 You can create a PBIDS file to streamline the **Get Data** experience for new or beginner report creators in your organization. If you create the PBIDS file from existing reports, it's easier for beginning report authors to build new reports from the same data.
 
-When an author opens a PBIDS file, Power BI Desktop opens and prompts the user for credentials to authenticate and connect to the data source that's specified in the file. The **Navigator** dialog box appears, and the user must select the tables from that data source to load into the model. Users may also need to select the database(s) and connection mode if none was specified in the PBIDS file.
+When an author opens a PBIDS file, Power BI Desktop prompts the user for credentials to authenticate and connect to the data source that the file specifies. The **Navigator** dialog box appears, and the user must select the tables from that data source to load into the model. Users may also need to select the database(s) and connection mode if none was specified in the PBIDS file.
 
 From that point forward, the user can begin building visualizations or select **Recent Sources** to load a new set of tables into the model.
 
@@ -289,7 +289,7 @@ Currently, PBIDS files only support a single data source in one file. Specifying
 
 ### How to create a PBIDS connection file
 
-If you have an existing Power BI Desktop *.PBIX* file that's already connected to the data you’re interested in, you can simply export these connection files from within Power BI Desktop. This is the recommended method, since the PBIDS file can be auto-generated from Desktop. You can also still edit or manually create the file in a text editor. 
+If you have an existing Power BI Desktop PBIX file that's already connected to the data you’re interested in, you can export these connection files from within Power BI Desktop. This method is recommended, since the PBIDS file can be auto-generated from Desktop. You can also still edit or manually create the file in a text editor. 
 
 1. To create the PBIDS file, select **File** > **Options and settings** > **Data source settings**.
 
@@ -301,7 +301,7 @@ If you have an existing Power BI Desktop *.PBIX* file that's already connected t
 
 1. In the **Save As** dialog box, give the file a name, and select **Save**. Power BI Desktop generates the PBIDS file, which you can rename and save in your directory, and share with others.
 
-You can also open the file in a text editor, and modify the file further, including specifying the mode of connection in the file itself, as shown in the following image. 
+You can also open the file in a text editor, and modify the file further, including specifying the mode of connection in the file itself. The following image shows a PBIDS file open in a text editor.
 
 ![Screenshot that shows a PBIDS file open in a text editor.](media/desktop-data-sources/data-sources-11.png)
 
