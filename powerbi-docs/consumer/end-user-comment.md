@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/05/2022
+ms.date: 12/06/2022
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
@@ -27,7 +27,7 @@ Comments can be added to an entire dashboard, individual visuals on a dashboard,
 
 When you add a comment to a report, Power BI captures the current filter and slicer values, and creates a [bookmark](end-user-bookmarks.md). So, when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
 
-![report with filters video](media/end-user-comment/power-bi-comment.gif)
+:::image type="content" source="media/end-user-comment/power-bi-comment.gif" alt-text="Gif":::
 
 Why is this feature important? Say a colleague applied a filter that revealed an interesting insight that they want to share with the team. Without that filter selected, the comment might not make sense.
 
