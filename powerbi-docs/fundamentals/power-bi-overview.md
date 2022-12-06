@@ -14,13 +14,13 @@ ms.custom: intro-overview
 
 # What is Power BI?
 
-Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data may be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone or everyone you want.
+Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data might be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone or everyone you want.
 
 ## The parts of Power BI
 
 Power BI consists of several elements that all work together, starting with these three basics:
 
-- A Windows desktop application called *Power BI Desktop*
+- A Windows desktop application called *Power BI Desktop*.
 - An online software as a service (SaaS) service called the *Power BI service*.
 - Power BI Mobile apps for Windows, iOS, and Android devices.
 
@@ -35,7 +35,7 @@ Beyond those three, Power BI also features two other elements:
 
 ## How Power BI matches your role
 
-How you use Power BI may depend on your role in a project or on a team. Other people, in other roles, might use Power BI differently.
+How you use Power BI depends on your role in a project or on a team. Other people, in other roles, might use Power BI differently.
 
 For example, you might primarily use the Power BI service to view reports and dashboards. Your number-crunching, business-report-creating coworker might make extensive use of Power BI Desktop or Power BI Report Builder to create reports, then publish those reports to the Power BI service, where you view them. Another coworker, in sales, might mainly use the Power BI Mobile app to monitor progress on sales quotas, and to drill into new sales lead details.
 
