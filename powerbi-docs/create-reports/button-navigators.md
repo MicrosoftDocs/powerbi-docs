@@ -59,7 +59,7 @@ The page navigator is automatically in sync with your report pages, meaning:
 - The navigator updates automatically as you add or remove pages in your report.
 - The titles of the buttons update automatically as you rename pages.
 
-If you want to further customize the pages that show or hide in the page navigator, go to the **Format navigator** pane > **Pages** tab. There, you have the option to **Show/hide hidden pages** or **Show/hide tooltip pages**:
+If you want to further customize the pages that show or hide in the page navigator, go to the **Format navigator** pane > **Pages** tab. There, you can **Show/hide hidden pages** or **Show/hide tooltip pages**:
 
 :::image type="content" source="media/button-navigators/page-settings.png" alt-text="Screenshot of the Format navigator, highlighting the Pages settings."lightbox="media/button-navigators/page-settings.png":::
 
@@ -107,11 +107,11 @@ By default, **All** bookmarks are shown in the bookmark navigator; however, you 
 
 :::image type="content" source="media/desktop-buttons/selecting-all-bookmarks-or-bookmark-group.png" alt-text="Screenshot of the bookmark group options within the Bookmark dropdown menu.":::
 
-You also have the option to **Allow deselection**, meaning users can deselect all the buttons in the bookmark navigator. This option is great for building a toggle-like experience or allowing for a deselected default state. To set up either of these types of experiences, first create a bookmark with the desired deselected state. Here’s an example of a deselected state:
+You also can **Allow deselection**, meaning users can deselect all the buttons in the bookmark navigator. This option is great for building a toggle-like experience or allowing for a deselected default state. To set up either of these types of experiences, first create a bookmark with the desired deselected state. Here’s an example of a deselected state:
 
 :::image type="content" source="media/desktop-buttons/example-unselected-state.png" alt-text="Screenshot of an example bookmark navigator in the deselected state.":::
 
-Once you have bookmarked the deselected state, turn on **Allow deselection** and select the bookmark that you want to **Launch on deselection**. In this case, that bookmark is named *No filter*.
+Once you've bookmarked the deselected state, turn on **Allow deselection** and select the bookmark that you want to **Launch on deselection**. In this case, that bookmark is named *No filter*.
 
 If the bookmark that you’re using for deselection is within the bookmark navigator already, you can choose to **Hide the deselection bookmark** within the navigator if you don’t want to show it:
 
@@ -129,7 +129,7 @@ Just like for other buttons, there are many formatting options for the navigator
 - Shape glow
 - Rotation
 
-The navigators also include two additional formatting options:
+The navigators also include two more formatting options:
 
 - Grid layout
 - Selected state
@@ -148,7 +148,7 @@ It also includes the option to change the **Padding** between buttons in the nav
 
 ### Selected state
 
-The navigators have the option to customize the Selected state of the button. You can use this option to help the selected state of the button stand out from the default state. In this example, we’ve customized both the **Fill** and **Text** formatting for the **Selected** state:
+The navigators can customize the Selected state of the button. You can use this option to help the selected state of the button stand out from the default state. In this example, we’ve customized both the **Fill** and **Text** formatting for the **Selected** state:
 
 :::image type="content" source="media/button-navigators/selected-state-settings.png" alt-text="Screenshot of the Selected state settings in the Format navigator.":::
 
