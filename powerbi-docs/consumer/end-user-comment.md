@@ -29,9 +29,9 @@ When you add a comment to a report, Power BI captures the current filter and sli
 
 :::image type="content" source="media/end-user-comment/power-bi-comment.gif" alt-text="Gif":::
 
-Why is this feature important? Say a colleague applied a filter that revealed an interesting insight that they want to share with the team. Without that filter selected, the comment might not make sense.
+Why is this feature important? If a colleague applied a filter that revealed an insight to share with the team, the comment might not make sense without that filter selected.
 
-If you're using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual paginated report visuals isn't available.
+If you're using a paginated report, you can only leave a general comment about your report. Support for leaving comments on individual paginated report visuals isn't available.
 
 ### Add a general comment to a dashboard or report
 The process for adding comments to a dashboard or report is similar.  In this example, we're using a dashboard. 
@@ -44,11 +44,11 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 
     ![Screenshot of dashboard with Comments section selected](media/end-user-comment/power-bi-first-comments.png)
 
-2. To respond, select **Reply**, type your response, and select **Post**.  
+2. To respond, select **Reply**, type your response, and then select **Post**.  
 
     ![Select Reply screen](media/end-user-comment/power-bi-comments-reply.png)
 
-    By default, Power BI directs your response to the colleague who started the comment thread, in this case Aaron. 
+    By default, Power BI directs your response to the colleague who started the comment thread, which is Lee in this case. 
 
     ![Comment with response](media/end-user-comment/power-bi-respond.png)
 
@@ -56,12 +56,12 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 
     ![Screenshot showing new thread](media/end-user-comment/power-bi-new-commenting.png)
 
-    The comments for this dashboard now look like this.
+    The comments for this dashboard now look like the following example.
 
     ![Comments conversations](media/end-user-comment/power-bi-conversation.png)
 
 ### Add a comment to a specific dashboard or report visual
-In addition to adding comments to an entire dashboard or to an entire report page, you can add comments to individual dashboard tiles and individual report visuals. The processes are similar, and in this example we're using a report.
+In addition to adding comments to an entire dashboard or to an entire report page, you can add comments to individual dashboard tiles and individual report visuals. The processes are similar, and in this example we're using a dashboard.
 
 1. Hover over the visual and select **More options** (...).    
 2. From the menu, select **Add a comment**.
@@ -72,13 +72,13 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 
     ![Screenshot of visual selected and Comments dialog open](media/end-user-comment/power-bi-comments-column.png)  
 
-4. Type your comment and select **Post**.
+4. Enter your comment and select **Post**.
 
     ![Comments dialog with new message](media/end-user-comment/power-bi-comment-spikes.png)  
 
-    - On a report page, selecting a comment that was made on a visual highlights that visual (see below).
+    - On a report page, when you select a comment on a visual, that visual is highlighted (see the following example).
 
-    - On a dashboard, the chart icon ![comment with chart icon](media/end-user-comment/power-bi-comment-chart-icon.png) lets us know that a comment is tied to a specific visual. Comments that apply to the entire dashboard don't have a special icon. Selecting the chart icon highlights the related visual on the dashboard.
+    - On a dashboard, the chart icon ![comment with chart icon](media/end-user-comment/power-bi-comment-chart-icon.png) shows that a comment is tied to a specific visual. Comments that apply to the entire dashboard don't have a special icon. Selecting the chart icon highlights the related visual on the dashboard.
     
 
     ![related visual highlighted](media/end-user-comment/power-bi-highlights.png)
@@ -97,7 +97,7 @@ Here's a conversation I'm having with the visualization *designer*. They're usin
 - Comments are limited to 2000 characters, including @mentions of other users and spaces.
 - The maximum number of conversations on a dashboard or report is 100. The maximum number of comments per conversation is 1000. To add a new conversation or comment, delete prior conversations or comments.
 - Bookmarks aren't captured when you reply to a conversation. Only the first comment in a conversation creates a bookmark.
-- If you're using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual paginated report visuals isn't available.
+- If you're using a paginated report, you can only leave a general comment about your report.  Support for leaving comments on individual paginated report visuals isn't available.
 
 ## Next steps
 Back to [visualizations for business users](end-user-visualizations.md)    
