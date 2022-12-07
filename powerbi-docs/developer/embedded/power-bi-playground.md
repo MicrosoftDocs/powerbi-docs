@@ -37,12 +37,9 @@ Drag and drop code snippets into the report, or type them directly into the code
 
 :::image type="content" source="media/power-bi-playground/sandbox-add-code.png" alt-text="A screenshot of the developer sandbox in use.":::
 
-The sandbox supports the following languages:
+You can choose between JavaScript and TypeScript for writing your code. All API code snippets will be updated based on your selection, and the last language used is saved for next time.
 
-* JavaScript
-* TypeScript
-
-The user can switch between languages, and the last language used is saved for next time.
+:::image type="content" source="./media/power-bi-playground/select-language.png" alt-text="Screenshot of menu to select either Javascript or Typescript.":::
 
 ## Explore our APIs
 
