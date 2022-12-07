@@ -57,13 +57,29 @@ If the sensitivity button is greyed out, it may indicate that you don't have an 
 
 ### The sensitivity label doesn't protect an exported file
 
-* Sensitivity labels and file encryption aren't applied in non-supported export paths. Supported export paths are export to Excel, PDF, and PowerPoint, as well as download to .pbix. To prevent leakage of sensitive data, the Power BI admin can block export from non-supported export paths using Power BI's [export and sharing settings](../admin/service-admin-portal.md).
+Sensitivity labels and file encryption aren't applied in non-supported export paths. Applying sensitivity labels and their associated protection to data that leaves the Power BI service is currently supported for the following export paths:
+
+* Export to Excel, PDF files (Service only), and PowerPoint.
+* Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
+* PivotTable in Excel with a live connection to a Power BI dataset, for users with Microsoft 365 E3 license and above.
+* Download to .pbix (Service)
+
+To prevent leakage of sensitive data, the Power BI admin can block export from non-supported export paths using Power BI's [export and sharing settings](../admin/service-admin-portal.md).
 
 ### Miscellaneous problems with sensitivity labels
 
-* It isn't recommended to allow users to apply parent labels within Power BI (a label is considered to be a parent label only if it has sublabels). If a parent label is applied to content, exporting data from that content to a file (Excel, PowerPoint, and PDF) will fail. See [Sublabels (grouping labels)](/microsoft-365/compliance/sensitivity-labels).
+* Don't use parent labels. A parent label is a label that has sublabels. You cannot apply parent labels, but a label that is already applied may become a parent label if it acquires sublabels. If you come across an item that has a parent label, apply the appropriate sublabel. To change a parent label, you must have [sufficient usage rights on the label](./service-security-sensitivity-label-change-enforcement.md).
+
+    If an item has a parent label, note the following behavior:
+    * Parent labels will not be inherited.
+    * Mandatory label policies will not be applied to items that have a parent label. This means users won't be required to apply a meaningful label in order to save the item, and the item will escape mandatory label policies designed to promote total coverage.
+    * If you try to export data from an item that has a parent label, export will fail.
+    * It is possible to publish a *.pbix* file that has a parent label, but if the parent label is protected, publish will fail. The solution is to apply a suitable sublabel.
+
 * In the Power BI service, if a dataset has a label that has been deleted from the label admin center, you won't be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label. In Desktop, if a .pbix file has such an invalid label, you won't be able to save the file.
+
 * Power BI doesn't support sensitivity labels of the Do Not Forward, user-defined, and HYOK protection types. The Do Not Forward and user-defined protection types refer to labels defined in the Microsoft Purview compliance portal.
+
 * Getting data from encrypted Excel (.xlsx) files isn't supported. This includes "Get data" and refresh scenarios.
 
 ## Problems with PBIX files
@@ -76,32 +92,35 @@ In Power BI Desktop, sensitivity labels with encryption settings affect access t
 
 ### Can't open protected .pbix file in Desktop
 
-* Using sensitivity labels in Desktop requires the Desktop December 2020 release and later. If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you'll be prompted to upgrade your Desktop version.
-* Protected .pbix files can be only opened by a user who has [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights)
+Using sensitivity labels in Desktop requires the Desktop December 2020 release and later. If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you'll be prompted to upgrade your Desktop version.
+
+Protected .pbix files can be only opened by a user who has [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights)
 
 ### Can't save a labeled .pbix file in Desktop
 
-* If the label applied to a .pbix file hasn't been published to the user in the Microsoft Purview compliance portal, the user won't be able to save the file in Desktop. 
-* Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it's recommended to go back online and try saving again. 
-* Very large .pbix files (over 2 GB) can't be saved with a sensitivity label. To work around this limitation, save the file without the label, publish it to the Power BI service, and then apply the label to the published dataset and report.
+If the label applied to a .pbix file hasn't been published to the user in the Microsoft Purview compliance portal, the user won't be able to save the file in Desktop. 
+
+Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it's recommended to go back online and try saving again. 
+
+Very large .pbix files (over 2 GB) can't be saved with a sensitivity label. To work around this limitation, save the file without the label, publish it to the Power BI service, and then apply the label to the published dataset and report.
 
 In general, when you protect a file with a sensitivity label that applies encryption, it's good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
 
 ### Can't publish or get data of a protected .pbix file
 
-* "Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's label policy. If the label isn't in the user's label policy, the Publish or Get data action will fail.
+"Publish" or "Get data" of a protected .pbix file requires that the label on the .pbix file be in the user's label policy. If the label isn't in the user's label policy, the Publish or Get data action will fail.
 
 ### Can't publish or import a .pbix file with a sensitivity label to the service using APIs running under a service principal
 
-* Publishing or importing a .pbix file with a sensitivity label to the service via APIs running under a service principal isn't supported and will fail. To mitigate, users can remove the labels and then publish using service principals.
+Publishing or importing a .pbix file with a sensitivity label to the service via APIs running under a service principal isn't supported and will fail. To mitigate, users can remove the labels and then publish using service principals.
 
 ### Can't upload a protected file to Desktop via Get data
 
-* Get data can upload protected files only if they're local. Protected files from online services such as SharePoint Online or OneDrive for Business can't be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
+Get data can upload protected files only if they're local. Protected files from online services such as SharePoint Online or OneDrive for Business can't be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
 ### Can't open protected .pbix file in Power BI Desktop for Power BI Report Server
 
-* Power BI Desktop for Power BI Report Server doesn't support information protection. If you try to open a protected .pbix file, the file won't open, and you'll receive an error message. Sensitivity-labeled .pbix files that aren't encrypted can be opened as normal.
+Power BI Desktop for Power BI Report Server doesn't support information protection. If you try to open a protected .pbix file, the file won't open, and you'll receive an error message. Sensitivity-labeled .pbix files that aren't encrypted can be opened as normal.
 
 ## Sovereign clouds
 
@@ -112,7 +131,7 @@ Sensitivity labels are supported in the following sovereign clouds:
 
 ## Sensitivity label support in template apps
 
-* Data sensitivity labels aren't supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
+Data sensitivity labels aren't supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
 
 ## Default labeling
 
@@ -122,32 +141,37 @@ Default label policies aren't currently supported in the Power BI service.
 
 ### The pbix file I created didn't get the default label, even though default labeling is enabled on my tenant
 
-* Default labeling in Power BI is in preview, so there may be flows that allow users to open or create an unlabeled .pbix file.
+Default labeling in Power BI is in preview, so there may be flows that allow users to open or create an unlabeled .pbix file.
 
 ### The default label applied to my Power BI content isn't the same as the label applied to my emails and files
 
-* Default label policy settings for Power BI are independent of the default label policy settings for files and email.
+Default label policy settings for Power BI are independent of the default label policy settings for files and email.
 
 ### B2B users manage to open and create unlabeled .pbix files, even though default labeling is on.
 
-* Default label policies in Power BI aren't supported for external guest users (B2B users). When a B2B user opens or creates an unlabeled file in Power BI Desktop, no default label will be applied to the file automatically.
+Default label policies in Power BI aren't supported for external guest users (B2B users). When a B2B user opens or creates an unlabeled file in Power BI Desktop, no default label will be applied to the file automatically.
 
 ## Mandatory labeling
 
 ### Mandatory labeling for Power BI is enabled but some artifacts are getting created or saved without a label having to be applied.
 
-* Mandatory labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to mandatory label policies.
-* Mandatory labeling in Power BI is in preview, so there may be flows that allow the user to create or edit unlabeled content.
-* Mandatory labeling in Power BI isn't supported for external guest users (B2B users). B2B users aren't subject to mandatory label policies.
+Mandatory labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to mandatory label policies.
+
+There may be flows that allow the user to create or edit unlabeled content.
+
+Mandatory labeling in Power BI isn't supported for external guest users (B2B users). B2B users aren't subject to mandatory label policies.
 
 ## Downstream inheritance
 
 ### Downstream inheritance is enabled, but some or all downstream items don't inherit the label
 
-* Downstream inheritance is limited to 80 items. If the number of downstream items exceeds 80, no downstream inheritance takes place. Only the item the label was actually applied to will receive the label.
-* Downstream inheritance never overwrites labels that were applied manually.
-* Downstream inheritance never overwrites a label with a less restrictive label.
-* Sensitivity labels inherited from data sources are automatically propagated downstream only when [fully automated downstream inheritance mode](./service-security-sensitivity-label-downstream-inheritance.md) is enabled.
+Downstream inheritance is limited to 80 items. If the number of downstream items exceeds 80, no downstream inheritance takes place. Only the item the label was actually applied to will receive the label.
+
+Downstream inheritance never overwrites labels that were applied manually.
+
+Downstream inheritance never overwrites a label with a less restrictive label.
+
+Sensitivity labels inherited from data sources are automatically propagated downstream only when [fully automated downstream inheritance mode](./service-security-sensitivity-label-downstream-inheritance.md) is enabled.
 
 ## Sensitivity label inheritance from data sources
 
@@ -206,12 +230,12 @@ The data protection metrics report isn't available to [external users (Azure Act
 
 ### My paginated report doesn't inherit the sensitivity label of the model it's based on.
 
-* Downstream inheritance isn't supported. The label of an upstream model won't propagate down to its downstream paginated reports.
+Downstream inheritance isn't supported. The label of an upstream model won't propagate down to its downstream paginated reports.
 
 ### The sensitivity label on my paginated report doesn't get applied to the report's downstream content.
 
-* The label of a paginated report won't propagate down to the report's downstream content.
+The label of a paginated report won't propagate down to the report's downstream content.
 
 ### I can create and save paginated reports with no sensitivity label even though mandatory labeling is enabled.
 
-* Mandatory labeling won't apply to paginated reports.
+Mandatory labeling won't apply to paginated reports.
