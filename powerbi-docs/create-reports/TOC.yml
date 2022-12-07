@@ -58,6 +58,8 @@
     items: 
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
+    - name: "Optimize ribbon in Power BI Desktop"
+      href: desktop-optimize-ribbon.md      
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -418,6 +420,8 @@
       href: service-goals-create-connected.md
     - name: "Create submetrics"
       href: service-metrics-submetrics.md
+    - name: "Create linked metrics"
+      href: service-metrics-linked-metrics.md
     - name: "Create custom statuses"
       href: service-goals-custom-status.md
     - name: "Create automated status rules"
@@ -430,8 +434,16 @@
       href: service-goals-move.md
     - name: "Metrics and Power Automate"
       href: service-goals-power-automate.md
-    - name: "Create and add Scorecards in reports"
-      href: ../visuals/power-bi-visualization-scorecard-visual.md   
+    - name: "Create and add scorecards to reports"
+      href: ../visuals/power-bi-visualization-scorecard-visual.md 
+    - name: Hierarchies in scorecards
+      items: 
+      - name: "Get started with hierarchies"
+        href: service-metrics-get-started-hierarchies.md 
+      - name: "Scenarios for using hierarchies"
+        href: service-metrics-hierarchies-scenarios.md 
+      - name: "View hierarchies in scorecards"
+        href: service-metrics-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: "Intro to dashboards"
@@ -470,6 +482,8 @@
       href: ../paginated-reports/report-builder-power-bi.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
+    - name: Paginated reports capacity planning
+      href: ../paginated-reports/paginated-capacity-planning.md      
     - name: Report Builder change log
       href: ../paginated-reports/paginated-reports-change-log.md
     - name: Sample Power BI paginated reports
