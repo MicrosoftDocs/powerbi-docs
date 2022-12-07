@@ -39,7 +39,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Help and Support settings
-            url: service-admin-portal-help-support.md
+            url: ../admin/service-admin-portal-help-support.md
           - text: Service interruption notifications
             url: service-interruption-notifications.md
 
