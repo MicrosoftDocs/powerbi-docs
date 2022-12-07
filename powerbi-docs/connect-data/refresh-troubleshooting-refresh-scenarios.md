@@ -29,7 +29,8 @@ After you've confirmed these requirements are met, take a look through the follo
 
 If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate datasets in Power BI. An admin uses the following area in the Power BI admin portal.
 
-![Screenshot of admin area for changing Power BI email refresh notifications.](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
+:::image type="content" source="media/refresh-troubleshooting-refresh-scenarios/refresh-email.png" alt-text="Screenshot of admin area for changing Power BI email refresh notifications.":::
+
 
 ## Refresh using Web connector doesn't work properly
 

@@ -20,17 +20,17 @@ Power BI Premium, Premium Per User, and Power BI Embedded workspaces support ope
 
 Workspaces use the [XML for Analysis](/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current&preserve-view=true) (XMLA) protocol for communications between client applications and the engine that manages your Power BI workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management. Data sent over the XMLA protocol is fully encrypted.
 
-By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can query dataset model data, metadata, events, and schema. *Read-write* operations using the endpoint can be enabled providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read-write enabled, datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
+By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can query dataset model data, metadata, events, and schema. *Read-write* operations using the endpoint can be enabled providing more dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read-write enabled, datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
 
 ## Terms of Use
 
-Use of the XMLA endpoint is subject to the following:
+Use of the XMLA endpoint is subject to the following conditions:
 
-**Single-user application** - The application uses a single user account or app identity to access a Power BI dataset through the XMLA endpoint. Typical examples are developer tools, admin scripts, and automated processes to perform data modeling and administrative tasks, such as altering the metadata of a dataset, performing a backup or restore operation, or triggering a data refresh. The user account or app identity that the client application uses to access a dataset must have a valid Premium Per User (PPU) license unless the dataset resides on a Premium capacity.
+**Single-user application** - The application uses a single user account or app identity to access a Power BI dataset through the XMLA endpoint. Typical examples are developer tools, admin scripts, and automated processes to perform data modeling and administrative tasks. These tasks include altering the metadata of a dataset, performing a backup or restore operation, or triggering a data refresh. The user account or app identity that the client application uses to access a dataset must have a valid Premium Per User (PPU) license unless the dataset resides on a Premium capacity.
 
 **Multi-user application** - The application provides multiple users with access to a Power BI dataset. For example, a middle-tier application integrating a dataset into a business solution and accessing the dataset on behalf of its business users.
 
-- For Premium Per User (PPU) workspaces, the application must require each user to sign in to Power BI. The application uses each user's access token to access the datasets. The application is not permitted to use a service account or other app identity to perform tasks on behalf of its users. Each user must use their own Power BI account for opening reports, accessing datasets, and executing queries.
+- For Premium Per User (PPU) workspaces, the application must require each user to sign in to Power BI. The application uses each user's access token to access the datasets. The application isn't permitted to use a service account or other app identity to perform tasks on behalf of its users. Each user must use their own Power BI account for opening reports, accessing datasets, and executing queries.
 - For Premium workspaces, the application may use a service account or app identity on behalf of the end users without requiring each user to sign in to Power BI.
 
 ## Client applications and tools
@@ -47,7 +47,7 @@ Here are some of the most common applications and tools used with Azure Analysis
 
 **Analysis Services Deployment Wizard** – Installed with SSMS, this tool provides deployment of Visual Studio authored tabular model projects to Analysis Services and Premium workspaces. It can be run interactively or from the command line for automation. XMLA read-write is required. To learn more, see [Analysis Services Deployment Wizard](/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard?view=power-bi-premium-current&preserve-view=true).
 
-**PowerShell cmdlets** – Analysis Services cmdlets can be used to automate dataset management tasks like refresh operations. XMLA read-write is required. Version **21.1.18256** (for Premium Gen2 capacities, see [Premium Gen2 prerequisites](service-premium-transition-gen1-to-gen2.md#premium-gen2-prerequisites)) or higher of the [SqlServer PowerShell module](https://www.powershellgallery.com/packages/SqlServer/) is required. Azure Analysis Services cmdlets in the Az.AnalysisServices module are not supported for Power BI datasets. To learn more, see [Analysis Services PowerShell Reference](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current&preserve-view=true).
+**PowerShell cmdlets** – Analysis Services cmdlets can be used to automate dataset management tasks like refresh operations. XMLA read-write is required. Version **21.1.18256** (for Premium Gen2 capacities, see [Premium Gen2 prerequisites](service-premium-transition-gen1-to-gen2.md#premium-gen2-prerequisites)) or higher of the [SqlServer PowerShell module](https://www.powershellgallery.com/packages/SqlServer/) is required. Azure Analysis Services cmdlets in the Az.AnalysisServices module aren't supported for Power BI datasets. To learn more, see [Analysis Services PowerShell Reference](/analysis-services/powershell/analysis-services-powershell-reference?view=power-bi-premium-current&preserve-view=true).
 
 **Power BI Report Builder** - A tool for authoring paginated reports. Create a report definition that specifies what data to retrieve, where to get it, and how to display it. You can preview your report in Report Builder and then publish your report to the Power BI service. XMLA read-only is required. To learn more, see [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
@@ -61,7 +61,7 @@ Here are some of the most common applications and tools used with Azure Analysis
 
 ### Client libraries
 
-Client applications and tools don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries that applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft applications like Excel, SQL Server Management Studio (SSMS), and Analysis Services projects extension for Visual Studio install all three client libraries and update them along with regular application and extension updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, it may be necessary to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](/azure/analysis-services/analysis-services-data-providers).
+Client applications and tools don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These libraries are the same client libraries that applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft applications like Excel, SQL Server Management Studio (SSMS), and Analysis Services projects extension for Visual Studio install all three client libraries and update them along with regular application and extension updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, it may be necessary to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](/azure/analysis-services/analysis-services-data-providers).
 
 The minimum required client library versions for Premium Gen2 capacities are listed in the [Premium Gen2 prerequisites](service-premium-transition-gen1-to-gen2.md#premium-gen2-prerequisites).
 
@@ -71,11 +71,11 @@ When using the XMLA endpoint for dataset management with write operations, it's 
 
 ## Enable XMLA read-write
 
-By default, Premium capacity or Premium Per User dataset workloads have the XMLA endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write.
+By default, Premium capacity or Premium Per User dataset workloads have the XMLA endpoint property setting enabled for read-only. This read-only setting means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write.
 
 ### To enable read-write for a Premium capacity
 
-1. Click **Settings** > **Admin portal**.
+1. Select **Settings** > **Admin portal**.
 1. In the Admin portal, select **Capacity settings** > **Power BI Premium** > capacity name.
 1. Expand **Workloads**. In the **XMLA Endpoint** setting, select **Read Write**. The XMLA Endpoint setting applies to *all workspaces and datasets* assigned to the capacity.
 
@@ -83,7 +83,7 @@ By default, Premium capacity or Premium Per User dataset workloads have the XMLA
 
 ### To enable read-write for Premium Per User
 
-1. Click **Settings** > **Admin portal**.
+1. Select **Settings** > **Admin portal**.
 1. In the Admin portal, select **Premium Per User**.
 1. Expand **Dataset workload settings**. In the **XMLA Endpoint** setting, select **Read Write**.
 
@@ -155,7 +155,7 @@ The following datasets aren't accessible by using the XMLA endpoint. These datas
 
 ### Server/workspace alias
 
-Server name aliases, supported in Azure Analysis Services are not supported for Premium workspaces.
+Server name aliases, supported in Azure Analysis Services aren't supported for Premium workspaces.
 
 ## Security
 
@@ -169,8 +169,8 @@ The following table describes the implications of the setting **Export data** fo
 
 |Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises datasets = **enabled**  |
 |---------|---------|---------|
-|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-prem datasets *allowed*         |
-|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-prem datasets *allowed*        |
+|Allow Live Connections toggle = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises datasets *allowed*         |
+|Allow Live Connections toggle = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises datasets *allowed*        |
 
 **Allow live connections** is an export and sharing setting.
 
@@ -180,9 +180,9 @@ Access through the XMLA endpoint will honor security group membership set at the
 
 Workspace contributors and above have write access to the dataset and are therefore equivalent to Analysis Services database admins. They can deploy new datasets from Visual Studio and execute TMSL scripts in SSMS.
 
-Operations that require Analysis Services server admin permissions (rather than database admin) such as server-level traces and user impersonation using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property are not supported in Premium workspaces at this time.
+Operations that require Analysis Services server admin permissions (rather than database admin) such as server-level traces and user impersonation using the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth) connection-string property aren't supported in Premium workspaces at this time.
 
-Other users who have [Build permission](../connect-data/service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
+Other users who have [Build permission](../connect-data/service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they can't see internal dataset metadata.
 
 ### Model roles
 
@@ -193,15 +193,15 @@ For tabular model projects authored in Visual Studio, roles can be defined by us
 The following limitations apply when working with dataset roles through the XMLA endpoint:
 
 - The only permission for a *role* that can be set for datasets is Read permission. Other permissions are granted using the Power BI security model.
-- Service Principals, which require workspace Member or Admin permissions cannot be added to roles.
+- Service Principals, which require workspace Member or Admin permissions can't be added to roles.
 - Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles.
-- The "Roles=" connection string property can be used to test downgrading role members with Write permissions to Read permissions. The member account must still be a member of the relevant RLS role. This is different than using Impersonation with SQL Server Analysis Services or Azure Analysis Services where if the account is a server admin, the RLS role membership is assumed. For Premium workspaces, since there is no server admin, the account must belong to a role in order for RLS to be applied.
+- The "Roles=" connection string property can be used to test downgrading role members with Write permissions to Read permissions. The member account must still be a member of the relevant RLS role. This is different than using Impersonation with SQL Server Analysis Services or Azure Analysis Services where if the account is a server admin, the RLS role membership is assumed. For Premium workspaces, since there's no server admin, the account must belong to a role in order for RLS to be applied.
 
 To learn more, see [Roles in tabular models](/analysis-services/tabular-models/roles-ssas-tabular).
 
 ### Setting data-source credentials
 
-Metadata specified through the XMLA endpoint can create connections to data sources, but cannot set data-source credentials. Instead, credentials can be set in the dataset settings page in the Power BI Service.
+Metadata specified through the XMLA endpoint can create connections to data sources, but can't set data-source credentials. Instead, credentials can be set in the dataset settings page in the Power BI Service.
 
 ### Service principals
 
@@ -218,7 +218,7 @@ To learn more, see [Automate Premium workspace and dataset tasks with service pr
 
 ## Deploy model projects from Visual Studio (SSDT)
 
-Deploying a tabular model project in Visual Studio to a Premium workspace is much the same as deploying to an Azure or SQL Server Analysis Services server. The only differences are in the Deployment Server property specified for the project, and how data source credentials are specified so processing operations can import data from data sources into the new dataset on the workspace.
+Deploying a tabular model project in Visual Studio to a Premium workspace is much the same as deploying to an Azure or SQL Server Analysis Services server. The only differences are in the Deployment Server property specified for the project, and how data source credentials are specified, so processing operations can import data from data sources into the new dataset on the workspace.
 
 To deploy a tabular model project authored in Visual Studio, you must first set the workspace connection URL in the project **Deployment Server** property. In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace connection URL.
 
@@ -228,13 +228,13 @@ When the Deployment Server property has been specified, the project can then be 
 
 **When deployed the first time**, a dataset is created in the workspace by using metadata from the model.bim. As part of the deployment operation, after the dataset has been created in the workspace from model metadata, processing to load data into the dataset from data sources will fail.
 
-Processing fails because unlike when deploying to an Azure or SQL Server Analysis Server instance, where data source credentials are prompted for as part of the deployment operation, when deploying to a Premium workspace data source credentials cannot be specified as part of the deployment operation. Instead, after metadata deployment has succeeded and the dataset has been created, data source credentials are then specified in the Power BI Service in dataset settings. In the workspace, select **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
+Processing fails because unlike when deploying to an Azure or SQL Server Analysis Server instance, where data source credentials are prompted for as part of the deployment operation, when deploying to a Premium workspace data source credentials can't be specified as part of the deployment operation. Instead, after metadata deployment has succeeded and the dataset has been created, data source credentials are then specified in the Power BI Service in dataset settings. In the workspace, select **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
 
 ![Data source credentials](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
 
 When data source credentials are specified, you can then refresh the dataset in the Power BI service, configure schedule refresh, or process (refresh) from SQL Server Management Studio to load data into the dataset.
 
-The deployment **Processing Option** property specified in the project in Visual Studio is observed. However, if a data source has not yet had credentials specified in the Power BI service, even if the metadata deployment succeeds, processing will fail. You can set the property to **Do Not Process**, preventing an attempt to process as part of the deployment, but you might want to set the property back to **Default** because once the data source credentials are specified in the data source settings for the new dataset, processing as part of subsequent deployment operations will then succeed.
+The deployment **Processing Option** property specified in the project in Visual Studio is observed. However, if a data source hasn't yet had credentials specified in the Power BI service, even if the metadata deployment succeeds, processing will fail. You can set the property to **Do Not Process**, preventing an attempt to process as part of the deployment, but you might want to set the property back to **Default** because once the data source credentials are specified in the data source settings for the new dataset, processing as part of subsequent deployment operations will then succeed.
 
 ## Connect with SSMS
 
@@ -258,7 +258,7 @@ To learn more about using SSMS to script metadata, see [Create Analysis Services
 
 The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](/azure/automation/automation-intro), and [Azure Functions](/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](../connect-data/incremental-refresh-overview.md) historical partitions without having to reload all historical data.
 
-Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-time-out) is not imposed.
+Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint aren't limited to 48 refreshes per day, and the [scheduled refresh timeout](../connect-data/refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-time-out) isn't imposed.
 
 Date, time, and status for dataset refresh operations that include a write transaction through the XMLA endpoint are recorded and shown in dataset Refresh history.
 
@@ -266,7 +266,7 @@ Date, time, and status for dataset refresh operations that include a write trans
 
 ## Dynamic Management Views (DMV)
 
-Analysis Services [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) provide visibility of dataset metadata, lineage, and resource usage. DMVs available for querying in Power BI through the XMLA endpoint are limited to, at most, those that require database-admin permissions. Some DMVs for example are not accessible because they require Analysis Services server-admin permissions.
+Analysis Services [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) provide visibility of dataset metadata, lineage, and resource usage. DMVs available for querying in Power BI through the XMLA endpoint are limited to, at most, those that require database-admin permissions. Some DMVs, for example,  aren't accessible because they require Analysis Services server-admin permissions.
 
 ## Power BI Desktop authored datasets
 
@@ -279,19 +279,19 @@ XMLA write operations on datasets authored in Power BI Desktop and published to 
 
 ### Data-source declaration
 
-When connecting to data sources and querying data, Power BI Desktop uses Power Query M expressions as inline data source declarations. While supported in Premium workspaces, Power Query M inline data-source declaration is not supported by Azure Analysis Services or SQL Server Analysis Services. Instead, Analysis Services data modeling tools like Visual Studio create metadata using *structured* and/or *provider* data source declarations. With the XMLA endpoint, Premium also supports structured and provider data sources, but not as part of Power Query M inline data source declarations in Power BI Desktop models. To learn more, see [Understanding providers](/azure/analysis-services/analysis-services-datasource#understanding-providers).
+When connecting to data sources and querying data, Power BI Desktop uses Power Query M expressions as inline data source declarations. While supported in Premium workspaces, Power Query M inline data-source declaration isn't supported by Azure Analysis Services or SQL Server Analysis Services. Instead, Analysis Services data modeling tools like Visual Studio create metadata using *structured* and/or *provider* data source declarations. With the XMLA endpoint, Premium also supports structured and provider data sources, but not as part of Power Query M inline data source declarations in Power BI Desktop models. To learn more, see [Understanding providers](/azure/analysis-services/analysis-services-datasource#understanding-providers).
 
 ### Power BI Desktop in live connect mode
 
 Power BI Desktop can connect to a Power BI Premium dataset using a live connection. When using a live connection, data doesn't need to be replicated locally, making it easier for users to consume semantic models. There are two ways users can connect:
 
-By selecting **Power BI datasets**, and then selecting a dataset to create a report. This is the **recommended** way for users to connect live to datasets. This method provides an improved discover experience showing the endorsement level of datasets. Users don't need to find and keep track of workspace URLs. To find a dataset, users simply type in the dataset name or scroll to find the dataset they're looking for.
+- By selecting **Power BI datasets**, and then selecting a dataset to create a report. This is the **recommended** way for users to connect live to datasets. This method provides an improved discover experience showing the endorsement level of datasets. Users don't need to find and keep track of workspace URLs. To find a dataset, users simply type in the dataset name or scroll to find the dataset they're looking for.
 
-![Connect live to dataset](media/service-premium-connect-tools/dataset-live-connect.png)
+    ![Connect live to dataset](media/service-premium-connect-tools/dataset-live-connect.png)
 
-The other way users can connect is by using **Get Data** > **Analysis Services**, specify a Power BI Premium workspace name as a URL,  select **Connect live**, and then in Navigator, select a dataset. In this case, Power BI Desktop uses the XMLA endpoint to connect live to the dataset as though it were an Analysis Services data model.
+- The other way users can connect is by using **Get Data** > **Analysis Services**, specify a Power BI Premium workspace name as a URL,  select **Connect live**, and then in Navigator, select a dataset. In this case, Power BI Desktop uses the XMLA endpoint to connect live to the dataset as though it were an Analysis Services data model.
 
-![Connect live to Analysis Services dataset](media/service-premium-connect-tools/as-live-connect.png)
+    ![Connect live to Analysis Services dataset](media/service-premium-connect-tools/as-live-connect.png)
 
 Organizations that have existing reports connected live to Analysis Services data models intending to migrate to Premium datasets only have to change the server name URL in **Transform data** > **Data source settings**.
 
