@@ -1088,7 +1088,7 @@
         {
             "source_path": "powerbi-docs/support/service-admin-portal-help-support.md",
             "redirect_url": "/power-bi/admin/service-admin-portal-help-support",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },{
             "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
             "redirect_url": "/power-bi/admin/service-admin-portal",
