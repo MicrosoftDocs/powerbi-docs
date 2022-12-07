@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 11/29/2022
+ms.date: 12/07/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to get monitor and update metrics in the Power BI mobile app.
 ---
