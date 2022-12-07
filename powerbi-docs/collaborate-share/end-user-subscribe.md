@@ -28,7 +28,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 ## Requirements
 The requirements apply to users in the organization and to [guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need either:
 
-- A Power BI Pro or [Premium Per User (PPU) license](end-user-license.md) or
+- A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md) or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md), and 
 - permissions to access the particular report or dashboard. 
 
@@ -178,7 +178,7 @@ Subscriptions are managed on a workspace level. Subscriptions can be viewed and 
 
 To see all subscriptions that you own in a given workspace, start by selecting that workspace to make it active. Then, from the upper right corner of the Power BI service, select the gear icon ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Subscriptions**. This example shows all of your subscriptions for the workspace named **Sales and Marketing for DOCS**.
 
-For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
+For help understanding workspaces, see [Workspaces in Power BI](../consumer/end-user-workspaces.md). 
 
 :::image type="content" source="media/end-user-subscribe/power-bi-manage-workspaces.png" alt-text="Screenshot showing workspace with Subscriptions selected from the top.":::
 
@@ -271,7 +271,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **Apps** 
 
-- For [Power BI apps](end-user-apps.md) you've installed, you can only create subscriptions for others if you're the owner of the app. 
+- For [Power BI apps](../consumer/end-user-apps.md) you've installed, you can only create subscriptions for others if you're the owner of the app. 
 - Workspace admins can't manage subscriptions created by another user in an app (as opposed to a workspace). Subscriptions created within apps are saved to a user's **My workspace** and admins don't have access to users' **My workspaces**. 
 
 **Unsupported features**    
@@ -285,5 +285,4 @@ Email subscriptions don't support:
 ## Next steps
 
 [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml)   
-[Search for and sort content](end-user-search-sort.md)
-'
+[Search for and sort content](../consumer/end-user-search-sort.md)
