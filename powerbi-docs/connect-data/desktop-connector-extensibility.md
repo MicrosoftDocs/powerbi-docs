@@ -1,13 +1,13 @@
 ---
 title: Connector extensibility in Power BI
-description: Read about connector extensibility capabilities, features, security settings, and certified connectors.
+description: Learn about connector extensibility capabilities, features, security settings, and certified connectors.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/28/2022
+ms.date: 12/06/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -27,7 +27,7 @@ To use a non-certified custom connector:
 
 1. Put the connector *.pq*, *.pqx*, *.m*, or *.mez* file in your local *\[Documents]\\Power BI Desktop\\Custom Connectors* folder. If the folder doesn't exist, create it.
 
-1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Security**.
+1. To adjust the data extension security settings, in Power BI Desktop, select **File** > **Options and settings** > **Options** > **Security**.
 
 1. Under **Data Extensions**, select **(Not Recommended) Allow any extension to load without validation or warning**.
 
