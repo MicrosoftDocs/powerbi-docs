@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Start in Microsoft Excel to connect to Power BI datasets
 
-From a new Excel workbook in either Excel for the web or the Excel data app, you can connect to Power BI datasets that other users share with you. See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) before you get started.
+From a new Excel workbook in either Excel for the web or the Excel desktop app, you can connect to Power BI datasets that other users share with you. See the **Prerequisites** section of [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md#prerequisites) before you get started.
 
 ## Enable connected experiences
 
