@@ -13,11 +13,11 @@ LocalizationGroup: Premium
 
 # Power BI Query Scale Out (preview)
 
-Power BI Query Scale Out helps Power BI deliver fast performances while your reports and dashboards are consumed by a large audience. Scale Out uses your Premium capacity to host dataset copies. By increasing throughput, the dataset copies ensure that performance doesn’t slow down when multiple users submit queries at the same time.
+Power BI Query Scale Out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Scale Out uses your Premium capacity to host copies of your dataset. By increasing throughput, the dataset copies ensure that performance doesn’t slow down when multiple users submit queries at the same time.
 
-When Power BI creates the dataset copies, it separates *read-only* datasets from *read/write* datasets. The *read-only* datasets serve the Power BI report and dashboard consumption, and the *read/write* dataset is used when write operations and refreshes are required. During write operations and refreshes, the *read-only* datasets continues to serve your reports and dashboards without being disturbed. When needed, the *read-only* and *read/write* datasets are synced so that the *read-only* datasets are kept up-to-date. Using this method, Power BI Query Scale Out reduces the impact of write operations and dataset refreshes on your capacity.
+When Power BI creates the dataset copies, it separates *read-only* copies of the dataset from a *read/write* copy of the dataset. The *read-only* dataset copies serve the Power BI report and dashboard consumption, and the *read/write* dataset copy is used when write operations and refreshes are performed. During write operations and refreshes, the *read-only* dataset copies continue to serve your reports and dashboards without being disturbed. When needed, the *read-only* and *read/write* datasets are synced so that the *read-only* copies are kept up-to-date. Using this method, Power BI Query Scale Out reduces the impact of write operations and dataset refreshes on your capacity.
 
-Only XMLA endpoints and advance APIs connect to the *read/write* dataset copy. All other operations connect to the *read-only* dataset copy. The table below lists the required sync for each refresh method, when Power BI Query Scale Out is enabled.
+Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. All other operations connect to the *read-only* dataset copy. The table below lists the required sync for each refresh method, when Power BI Query Scale Out is enabled.
 
 | Refresh method    | Sync                 |
 |-------------------|----------------------|
@@ -62,7 +62,7 @@ Before you enable Power BI Query Scale Out, verify that the following Prerequisi
 
 Use the XMLA endpoint to turn on scale out. Before you begin verify that:
 
-### Step 1 - Establish the XML connection
+### Step 1 - Establish the XMLA connection
 
 1. Start SQL Server Management Studio (SSMS) and in the **Connect to Server** dialog box, fill in the fields as listed below.
 
@@ -467,7 +467,7 @@ When scale out is enabled, the following connections are maintained.
 
 You can connect to specific type of dataset copy by appending one of the following strings to the dataset's URL.
 
-* **read-only** - `?readonly`
+* **Read-only** - `?readonly`
 * **Read/write** - `?readwrite`
 
 ## Disable Power BI Query Scale Out
