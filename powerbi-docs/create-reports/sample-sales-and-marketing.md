@@ -20,45 +20,45 @@ VanArsdel has many competitors but is the market leader in its industry. The CMO
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. [obviEnce](http://www.obvience.com/) created the sample with real data, which has been anonymized. The data is available in the following formats: *.pbix* Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
-This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop.
+This tutorial explores the Sales and Marketing sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop.
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service.
 
 ## Get the sample
 
-To use the sample, download the [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample). If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to **My Workspace** in the Power BI service.
+Before you can use the sample, you must first download the [dashboard, report, and dataset](#get-the-sample-from-the-power-bi-service), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the sample from the Power BI service
 
-1. Open the Power BI service, sign in, and open the workspace where you want to save the sample.
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
 
-   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to My Workspace.
+   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
 
-2. In the center of the workspace, select **Add content**.
-
-   :::image type="content" source="media/sample-sales-and-marketing/power-bi-add-content.png" alt-text="Screenshot of the workspace, highlighting Add content.":::
+2. In the bottom-left corner, select **Get data**.
+   
+   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Screenshot showing select Get data.":::
 
 3. On the **Get Data** page that appears, select **Samples**.
-
-4. Select **Sales and Marketing Sample**, and then choose **Connect**.
-
-   ![Screenshot of the Connect to sample option.](media/sample-sales-and-marketing/sales9.png)
-
+   
+4. Select **Sales and Marketing Sample**, then choose **Connect**.   
+  
+   ![Screenshot showing Connect to sample.](media/sample-sales-and-marketing/sales9.png)
+   
 5. Power BI imports the sample and then adds a new dashboard, report, and dataset to your current workspace.
-
-   [![Screenshot of the Sales and Marketing Sample entry.](media/sample-sales-and-marketing/sales11.png)](media/sample-sales-and-marketing/sales11.png#lightbox)
-
+   
+   ![Screenshot showing Sales and Marketing Sample entry.](media/sample-sales-and-marketing/sales11.png)
+  
 ### Get the .pbix file for this sample
 
-You can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
 If you want to view the data source for this sample, it's also available as an Excel workbook. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To download the eight original Excel files, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
-## What is our dashboard telling us?
+## What is the dashboard telling us?
 
-Let's start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. Data is broken down by region, time, and competition.
+Let's start the tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. Data is broken down by region, time, and competition.
 
 * The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
 * The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how our market share fluctuates over time. Notice the large drop in June. Our rolling 12-month (R12M) share, which was increasing for a while, is now starting to stall.
@@ -82,7 +82,7 @@ By using Q&A, you can discover additional details in the data.
 
 ### What does total unit market share look like for category (versus region)?
 
-1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category.
+1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?
 
    [![Screenshot of the Total Units YTD by Manufacturer, Region tile.](media/sample-sales-and-marketing/sales3.png)](media/sample-sales-and-marketing/sales3.png#lightbox)
 
@@ -167,6 +167,6 @@ Notice the following details:
 By filtering the visualizations by VanArsdel, by segment, by month, and by region, VanArsdel can discover growth opportunities.
 
 ## Next steps: Connect to your data
-After experimenting with this report, you can choose not to save your changes.
+After experimenting with this report, you can choose not to save your changes. If you do save them, you can always get a new copy of this sample.
 
-Now that you've seen how Power BI dashboards, Q&A, and reports can provide insights into data, connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
+Now that you've seen how Power BI dashboards, Q&A, and reports can provide insights into data, try connecting to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md).
