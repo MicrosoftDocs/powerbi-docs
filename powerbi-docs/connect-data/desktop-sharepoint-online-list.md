@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create a report on a SharePoint List in Power BI Desktop
 
-Many teams and organizations use lists in SharePoint Online to store data because it's easy to set up and easy for users to update.  Sometimes a chart is a much easier way for users to quickly understand the data rather than looking at the list itself. In this tutorial, we show how to transform your SharePoint list data into a Power BI report.
+Many teams and organizations use lists in SharePoint Online to store data because it's easy to set up and easy for users to update.  Sometimes a chart is a much easier way for users to quickly understand the data rather than looking at the list itself. In this tutorial, you learn how to transform your SharePoint list data into a Power BI report.
 
 Watch this five-minute tutorial video, or scroll down for step-by-step instructions.
 
