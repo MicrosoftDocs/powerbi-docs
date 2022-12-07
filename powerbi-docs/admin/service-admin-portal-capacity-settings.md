@@ -1,6 +1,6 @@
 ---
 title: Manage Capacity settings
-description: Learn how to manage and configure your Power BI capacity settings through the he Power BI Premium tab.
+description: Learn how to manage your Power BI capacity settings and understand what settings you can configure for your organization.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
