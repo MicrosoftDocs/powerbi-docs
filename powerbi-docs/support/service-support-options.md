@@ -25,7 +25,7 @@ If you're an end user, you can contact Support directly if you have a Power BI P
    > [!NOTE]
    >If you got your Power BI Pro or Power BI Premium Per User license through a guest affiliation with another organization, you can't contact Support. Your license must be assigned directly by the organization that manages your work or school account to enable Support options.
 
-2. Verify whether Power BI Support is your admin's preferred option when you need help. To check, select (**?**) from the page header in Power BI service, then choose **Help & Support > About Power BI**. If this selection takes you to Power BI Support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product does not have a Support contract, you will receive a message that "This product is not supported.
+2. Verify whether Power BI Support is your admin's preferred option when you need help. To check, select (**?**) from the page header in Power BI service, then choose **Help & Support > About Power BI**. If this selection takes you to Power BI Support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a Support contract, you'll receive a message that "This product is not supported.
 
    :::image type="content" source="media/service-support-options/support-menu.png" alt-text="Screen capture showing help menu with Get help selected.":::
 
