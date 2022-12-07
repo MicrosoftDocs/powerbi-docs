@@ -61,7 +61,7 @@ If the sensitivity button is greyed out, it may indicate that you don't have an 
 
 ### Miscellaneous problems with sensitivity labels
 
-* It isn't recommended to allow users to apply parent labels within Power BI (a label is considered to be a parent label only if it has sublabels). If a parent label is applied to content, exporting data from that content to a file (Excel, PowerPoint, and PDF) will fail. See [Sublabels (grouping labels)](microsoft-365/compliance/sensitivity-labels).
+* It isn't recommended to allow users to apply parent labels within Power BI (a label is considered to be a parent label only if it has sublabels). If a parent label is applied to content, exporting data from that content to a file (Excel, PowerPoint, and PDF) will fail. See [Sublabels (grouping labels)](/microsoft-365/compliance/sensitivity-labels).
 * In the Power BI service, if a dataset has a label that has been deleted from the label admin center, you won't be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label. In Desktop, if a .pbix file has such an invalid label, you won't be able to save the file.
 * Power BI doesn't support sensitivity labels of the Do Not Forward, user-defined, and HYOK protection types. The Do Not Forward and user-defined protection types refer to labels defined in the Microsoft Purview compliance portal.
 * Getting data from encrypted Excel (.xlsx) files isn't supported. This includes "Get data" and refresh scenarios.
@@ -192,7 +192,7 @@ In order for the data protection metrics report to be successfully generated[, i
 
 ### I can't access the Defender for Cloud Apps information.
 
-In order to access Defender for Cloud Apps information, your organization must have the appropriate [Defender for Cloud Apps license](./service-security-using-microsoft-cloud-app-security-controls.md).
+In order to access Defender for Cloud Apps information, your organization must have the appropriate [Defender for Cloud Apps license](./service-security-using-defender-for-cloud-apps-controls.md).
 
 ### I don't see the data protection metrics report in Shared with me, Recents, or Favorites
 
