@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/20/2022
+ms.date: 12/08/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -83,13 +83,11 @@ Workspaces reside within capacities. Each Power BI user has a personal workspace
 
 Capacity administrators automatically have their My workspaces assigned to Premium capacities.
 
-## Memory allocation
+## Dataset memory allocation
 
-With *Premium Gen2* and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each SKU is set to the limit of the memory consumption of a single Power BI item. For example, in a Premium Gen2 P1 capacity, you can host as many Power BI items as you need, as long as the size of your largest Power BI item isn't bigger than 25 GB. You can find the memory upper limits for each SKU, in the *Max memory per dataset* column of the [Capacities and SKUs](#capacities-and-skus) table.
+With *Premium Gen2* and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available for datasets on each SKU is set to the limit of the memory consumption of a single Power BI dataset. For example, in a Premium Gen2 P1 capacity, you can host as many Power BI datasets as you need, as long as the size of your largest Power BI dataset isn't bigger than 25 GB. You can find the dataset memory upper limits for each SKU, in the *Max memory per dataset* column of the [Capacities and SKUs](#capacities-and-skus) table.
 
-In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all items simultaneously running. In *Premium Gen2* and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), there's no memory limit for the capacity as a whole. Instead, individual items (such as datasets, dataflows and paginated reports) can't exceed the amount of memory the capacity SKU offers. This includes all the operations ([interactive and background](service-premium-interactive-background-operations.md)) being processed for the item while it's in use. Dataset operations such as queries are also subject to individual memory limits.
-
-To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Three separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per dataset* allocation.
+Dataset operations such as queries are subject to individual memory limits. To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Three separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per dataset* allocation.
 
 * **Loading the dataset** - The first action is loading the dataset into the memory.
 
