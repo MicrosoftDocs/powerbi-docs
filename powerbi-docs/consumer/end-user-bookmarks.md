@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/06/2022
+ms.date: 12/08/2022
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -24,7 +24,7 @@ There are two types of bookmarks: *personal* and *report*. Report bookmarks are 
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-both-bookmark.png" alt-text="A screenshot showing the Bookmarks menu.":::
 
-This article explains how to create and use *personal* bookmarks. It also explains how to interact with *report* bookmarks that have been created by others and shared with you. Viewing shared content requires either a Power BI Pro or a Premium Per User license. [Which license do I have?](end-user-license.md)
+This article explains how to create and use *personal* bookmarks. It also explains how to interact with *report* bookmarks that have been created by others and shared with you. Viewing shared content requires either a Power BI Pro or a Premium Per User license or for the report or dashboard to be saved in Premium capacity and shared with you. [Which license do I have?](end-user-license.md)
 
 If you're designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
 
@@ -72,18 +72,17 @@ If you can view a report, then you can also add personal bookmarks. The maximum 
 - Sort order
 - Drill location
 
-If you have access to the **Selection** pane, you can also set and save:
+If you have Edit permissions to a report, you can set and save additional elements that will be saved with the bookmark. To open the Selection pane, select **Edit** > **View** > **Selection pane**.
 
-- The visibility of an object
-- The focus or **Spotlight** modes of any visible object
+:::image type="content" source="media/end-user-bookmarks/power-bi-selection.png" alt-text="A screenshot showing the Selection pane.":::
 
 ### Create two bookmarks
 
 Configure a report page the way you want it to appear in the bookmark. The following example has filters applied. The example shows changes to the:
 
-1. Existing Date filter on the **Filters** pane.
-1. Existing Regions filter on the **Filters** pane. **West** is selected.
-1. Data point on the doughnut chart visual. It cross-filters and cross-highlights the report canvas.
+- Existing Date filter on the **Filters** pane.
+- Existing Regions filter on the **Filters** pane. **West** is selected.
+- Data point on the doughnut chart visual. It cross-filters and cross-highlights the report canvas.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-personal.png" alt-text="A screenshot showing a report with filters applied." lightbox="media/end-user-bookmarks/power-bi-personal.png#lightbox":::
 
@@ -91,7 +90,7 @@ Configure a report page the way you want it to appear in the bookmark. The follo
 
 1. The personal bookmark gets a generic name, or you can enter a name. Select **Save**. To *rename*, *make default*, *delete*, or *update* your bookmark, select the ellipses next to the bookmark's name.
 
-1. Open the **YTD Category** page of your report and create another personal bookmark. The bookmark in the following example captures the YTD information for the VanArsdel company.
+1. Open a different report page and create another personal bookmark. The bookmark in the following example captures the YTD information for the VanArsdel company.
 
     :::image type="content" source="media/end-user-bookmarks/power-bi-second-bookmark.png" alt-text="A screenshot showing the Bookmarks pane. One of the listed bookmarks is outlined.":::
 
@@ -108,7 +107,7 @@ To view the report bookmarks created by the report *designer*, from the **Bookma
 :::image type="content" source="media/end-user-bookmarks/power-bi-show-bookmark.png" alt-text="A screenshot showing the Bookmarks pane. Report bookmarks is outlined.":::
 
 > [!NOTE]
-> To view shared reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in reserved capacity. To learn more, see [Licensing](end-user-license.md).
+> To view shared reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in Premium capacity. To learn more, see [Licensing](end-user-license.md).
 
 ### Report bookmarks
 
