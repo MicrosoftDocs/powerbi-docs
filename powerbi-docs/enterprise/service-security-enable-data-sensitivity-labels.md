@@ -48,9 +48,9 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 
 Sensitivity labels must be enabled on the tenant before they can be used in both the service and in Desktop. This section describes how to enable them in the tenant settings.
 
-1. To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
+To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section
 
-   :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png" alt-text="Screenshot of the Admin portal with tenant settings and information protection highlighted.":::
+![Find the Information Protection section](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png)
 
 1. In the **Information Protection** section, expand **Allow users to apply sensitivity labels for content**.
 
