@@ -85,7 +85,7 @@ For example:
   }
   ```
 
-* You can restore a corrupte database. As long as you backup your database periodically, restoring your database is the most robust way to recover it. Use the XMLA command below to restore your database.
+* You can restore a corrupt database. As long as you backup your database periodically, restoring your database is the most robust way to recover it. Use the XMLA command below to restore your database.
 
   ```
   <Restore xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
