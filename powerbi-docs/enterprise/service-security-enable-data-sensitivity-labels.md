@@ -1,6 +1,6 @@
 ---
 title: Enable sensitivity labels in Power BI
-description: Learn how Power BI administrators can use the Admin portal to allow users to apply sensitivity labels to content.
+description: Learn how Power BI administrators can enable sensitivity labels in Power BI.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -11,16 +11,16 @@ LocalizationGroup: Data from files
 ---
 # Enable sensitivity labels in Power BI
 
-In order for [sensitivity labels from Microsoft Purview Information Protection](/microsoft-365/compliance/sensitivity-labels) to be used in Power BI, they must be enabled on the tenant. This article shows Power BI admins how to allow users to apply sensitivity labels to content. For an overview about sensitivity labels in Power BI, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md). For information about applying sensitivity labels in Power BI, see [Applying sensitivity labels](./service-security-apply-data-sensitivity-labels.md)
+In order for [sensitivity labels from Microsoft Purview Information Protection](/microsoft-365/compliance/sensitivity-labels) to be used in Power BI, they must be enabled on the tenant. This article shows Power BI admins how to do this. For an overview about sensitivity labels in Power BI, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md). For information about applying sensitivity labels in Power BI, see [Applying sensitivity labels](./service-security-apply-data-sensitivity-labels.md)
 
 When sensitivity labels are enabled:
 
-* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, content includes reports, dashboards, datasets, and dataflows. In Power BI Desktop, content refers to *.pbix* files.
+* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, this means their reports, dashboards, datasets, and dataflows. In Power BI Desktop, it means their *.pbix* files.
 * In the service, all members of the organization will be able to see those labels. In Desktop, only members of the organization who have the labels published to them will be able to see the labels.
 
-Enabling sensitivity labels requires an Azure Information Protection license. See [Licensing and requirements](#licensing-and-requirements) for details.
+Enabling sensitivity labels requires an Azure Information Protection license. See [Licensing and requirements](#licensing-and-requirements) for detail.
 
-## Give us your feedback
+#### Give us your feedback
 
 The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
 
@@ -31,18 +31,18 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
     > [!NOTE]
     > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Purview Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
-* To apply labels to Power BI content and files, a user must have a Power BI Pro, or Premium Per User (PPU) license in addition to an Azure Information Protection license mentioned earlier.
+* To be able to apply labels to Power BI content and files, a user must have a Power BI Pro or Premium Per User (PPU) license in addition to one of the Azure Information Protection licenses mentioned above.
 
 * Office apps have their own [licensing requirements for viewing and applying sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels).
 
-* Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. See [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels) for details.
+* Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. See [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels) for detail.
 
-* Customers in China must enable rights management for the tenant, and add the Microsoft Purview Information Protection Sync Service service principle. For more information, see steps 1 and 2 in [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet&preserve-view=true#configure-aip-for-customers-in-china).
+* Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet&preserve-view=true#configure-aip-for-customers-in-china).
 
-* Using sensitivity labels in Desktop requires the December 2020 release or later.
+* Using sensitivity labels in Desktop requires the Desktop December 2020 release or later.
 
     > [!NOTE]
-    > If you try to open a protected *.pbix* file with a Desktop version earlier than December 2020, it fails, and you're prompted to upgrade your Desktop version.
+    > If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you'll be prompted to upgrade your Desktop version.
 
 ## Enable sensitivity labels
 
@@ -50,12 +50,12 @@ Sensitivity labels must be enabled on the tenant before they can be used in both
 
 To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
 
-   :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png" alt-text="Screenshot of the Admin portal with tenant settings and information protection highlighted.":::
+![Find the Information Protection section](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png)
 
-In the **Information Protection** section:
+In the **Information Protection** section, perform the following steps:
 
-1. Expand **Allow users to apply sensitivity labels for content**.
-1. Switch **Enabled** on.
+1. Open **Allow users to apply sensitivity labels for Power BI content**.
+1. Enable the toggle.
 1. Define who can apply and change sensitivity labels in Power BI assets. By default, everyone in your organization will be able to apply sensitivity labels. However, you can choose to enable setting sensitivity labels only for specific users or security groups. With either the entire organization or specific security groups selected, you can exclude specific subsets of users or security groups.
 
    * When sensitivity labels are enabled for the entire organization, exceptions are typically security groups.
@@ -65,16 +65,12 @@ In the **Information Protection** section:
 1. Select **Apply**.
    :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-02.png" alt-text="Screenshot of the expanded information protection section.":::
 
-> [!IMPORTANT]
-> Only Power BI Pro users who have *create* and *edit* permissions on the asset, and who are part of the relevant security group that was set in this section, will be able to set and edit the sensitivity labels. Users who are not part of this group won't be able to set or edit the label.
-
 ## Troubleshooting
 
-Power BI uses sensitivity labels from Purview Information Protection.  If you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following reasons:
+Power BI uses sensitivity labels from Purview Information Protection.  Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following reasons:
 
-* You don't have an Azure Information Protection [license](#licensing-and-requirements).
-* Sensitivity labels weren't [migrated](#enable-sensitivity-labels) to the Microsoft Purview Information Protection version supported by Power BI.
-* No sensitivity labels from Microsoft Purview Information Protection are [defined in the organization](#enable-sensitivity-labels).
+* Sensitivity labels haven't been [migrated](#enable-sensitivity-labels) to the Microsoft Purview Information Protection version supported by Power BI.
+* No sensitivity labels from Microsoft Purview Information Protection have been [defined in the organization](#enable-sensitivity-labels).
 
 ## Considerations and limitations
 
