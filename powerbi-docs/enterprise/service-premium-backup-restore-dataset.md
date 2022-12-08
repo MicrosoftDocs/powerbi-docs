@@ -73,17 +73,41 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * There's a new property, `IgnoreIncompatibilities`, for the `restore` command. The new property addresses RLS incompatibilities between Azure AS and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file, for which some roles don't have read permission, you have to specify `IgnoreIncompatibilities` in your `restore` command, otherwise, restore will fail. Once `IgnoreIncompatibilities` is specified, the role without the read permission will be dropped. So far, there's no UX support to `IgnoreIncompatibilities` in SSMS, so you need to specify it in a `restore` command manually.
 For example:
 
-```
-{
-  "restore": {
-    "database": "DB",
-    "file": "/Backup.abf",
-    "allowOverwrite": true,
-    "security": "copyAll",
-    "ignoreIncompatibilities": true
+  ```
+  {
+    "restore": {
+      "database": "DB",
+      "file": "/Backup.abf",
+      "allowOverwrite": true,
+      "security": "copyAll",
+      "ignoreIncompatibilities": true
+    }
   }
-}
-```
+  ```
+
+* You can restore a corrupt database. As long as you backup your database periodically, restoring your database is the most robust way to recover it. Use the XMLA command below to restore your database.
+
+  ```
+  <Restore xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <File>DatabaseBackup.abf</File>
+    <DatabaseName>DatabaseName</DatabaseName>
+    <AllowOverwrite>true</AllowOverwrite>
+  </Restore>
+  ```
+
+  When restoring a database, you might get this error: *We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /ForceRestore option to restore the dataset with the existing dataset unloaded and offline*. In such cases, use the `ForceRestore`property to trigger a forced restore operation.
+
+  ```
+  {
+    "restore": {
+      "database": "DB",
+      "file": "/Backup.abf",
+      "allowOverwrite": true,
+      "security": "copyAll",
+      "forceRestore": true
+    }
+  }
+  ```
 
 ## Next steps
 
