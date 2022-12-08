@@ -119,7 +119,7 @@ sections:
       - question: |
           What licenses and workspace permissions do I need to publish, manage, and view paginated reports?
         answer: |
-        A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace. Users with free, Pro and PPU licenses can view the content.
+          A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace. Users with free, Pro and PPU licenses can view the content.
  
       - question: |
           The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
