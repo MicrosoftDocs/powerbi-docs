@@ -70,9 +70,9 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
 * Only **enhanced format model (V3 model)** is allowed to be restored.
 * **Password** encryption in the backup command isn't supported
-* There's a new property, `IgnoreIncompatibilities`, for the `restore` command that addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `IgnoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `IgnoreIncompatibilities` property, however, you can specify it in a `restore` command in an XMLA query. For example:
+* There's a new property, `ignoreIncompatibilities`, for the `restore` command that addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
 
-    ```xml
+    ```json
       {
         "restore": {
           "database": "DB",
@@ -96,11 +96,11 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 
 * When restoring a database, you might get the following error:
  
-    "*We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /ForceRestore option to restore the dataset with the existing dataset unloaded and offline.*"
+    "*We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /forceRestore option to restore the dataset with the existing dataset unloaded and offline.*"
 
-    In these cases, in an XMLA query, use the `restore` command  with the `ForceRestore` property to trigger a forced restore operation. For example:
+    In these cases, with the `restore` command, add the `forceRestore` property to trigger a forced restore operation. For example, when using TMSL:
     
-    ```xml
+    ```json
         {
           "restore": {
           "database": "DB",
