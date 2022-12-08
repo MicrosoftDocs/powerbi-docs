@@ -21,20 +21,20 @@ Accurate carbon accounting requires good information from partners, vendors, and
 
 ## Prerequisites
 
-To install the Emissions Impact Dashboard for Azure in Power BI and connect it to your data, make sure you have the following: before installing the app.
+To install the Emissions Impact Dashboard for Azure in Power BI and connect it to your data, make sure you have the following before installing the app:
 
 * A Power BI Pro license. If you don’t have a Power BI Pro license, [get a free trial now](https://powerbi.microsoft.com/power-bi-pro).
 
-* An admin role with read/write permissions on your Azure tenant. If you don't have such permissions, contact an Azure admin who has read/write permissions.
+* An admin role with read/write permissions on your Azure tenant. If you don't have these permissions, contact an Azure admin who has read/write permissions.
 
-* The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MPA accounts with direct billing relationships with Microsoft.
+The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MPA accounts with direct billing relationships with Microsoft.
 
-  > [!IMPORTANT]
-  > Cloud solution providers (CSPs) are supported. Customers who purchase Azure from a CSP aren't supported and must work directly with their CSP partner to learn about their cloud emissions. Legacy accounts aren't supported.
+* If you have an EA Direct account, you must be a Billing Account Administrator (formerly known as an Enrollment Administrator) with either read or write permissions and have your company's [billing account ID](#finding-your-companys-billing-account-id) (formerly known as the enrollment number).
 
-  * If you have an EA Direct account, you must be a Billing Account Administrator (formerly known as an Enrollment Administrator) with either read or write permissions and have your company's [billing account ID]([billing account ID](#finding-your-companys-billing-account-id) (formerly known as the enrollment number).
+* If you have an MCA or MPA and direct billing relationship with Microsoft, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner and have your company's [billing account ID](#finding-your-companys-billing-account-id).
 
-  * If you have an MCA or MPA and direct billing relationship with Microsoft, you must be a Billing Account Administrator with a role as Billing Account Reader/Contributor/Owner and have your company's [billing account ID](#finding-your-companys-billing-account-id).
+> [!IMPORTANT]
+> Cloud solution providers (CSPs) are supported. Customers who purchase Azure from a CSP aren't supported and must work directly with their CSP partner to learn about their cloud emissions. Legacy accounts aren't supported.
 
 ## Install the app
 

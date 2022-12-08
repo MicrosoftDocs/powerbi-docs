@@ -802,12 +802,12 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/consumer/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
@@ -2232,12 +2232,22 @@
         },
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/service-troubleshoot-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/service-troubleshoot-subscribe",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/collaborate-share/service-report-subscribe.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
