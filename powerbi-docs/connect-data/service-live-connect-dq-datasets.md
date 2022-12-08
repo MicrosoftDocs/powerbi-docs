@@ -26,13 +26,13 @@ Another way of creating a report in Power BI Desktop, is to connect it to a data
 
 * An on-premises instance of SQL Server Analysis Services (SSAS)
 
-## DirectQuery mode
+## DirectQuery
 
 A Power BI dataset can have data copied into it, in what's called [import mode](service-dataset-modes-understand.md#import-mode). Or, the dataset can request data from a data source it's connected to using a method called [DirectQuery](service-dataset-modes-understand.md#directquery-mode).
 
-When using DirectQuery, your report uses Data Analysis Expression (DAX) queries to get the data. After the dataset receives the report's DAX query, it generates another set of queries that are run on your data source, to get the required data. If for example your data source is an SQL Server database, Power BI will generate SQL queries to get the data it needs. Other data sources may generate queries in other query languages.
+When using *DirectQuery*, your report uses Data Analysis Expression (DAX) queries to get data. After the dataset receives the report's DAX query, it generates another set of queries that are run on your data source, to get the required data. If for example your data source is an SQL Server database, Power BI will generate SQL queries to get the data it needs. Other data sources may generate queries in other query languages.
 
-DirectQuery mode is useful when:
+*DirectQuery* is useful when:
 
 * Your're working against data sources with a large volume of data
 
