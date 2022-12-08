@@ -53,17 +53,20 @@ To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**,
 ![Find the Information Protection section](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png)
 
 In the **Information Protection** section, perform the following steps:
-
 1. Open **Allow users to apply sensitivity labels for Power BI content**.
 1. Enable the toggle.
 1. Define who can apply and change sensitivity labels in Power BI assets. By default, everyone in your organization will be able to apply sensitivity labels. However, you can choose to enable setting sensitivity labels only for specific users or security groups. With either the entire organization or specific security groups selected, you can exclude specific subsets of users or security groups.
 
    * When sensitivity labels are enabled for the entire organization, exceptions are typically security groups.
    * When sensitivity labels are enabled only for specific users or security groups, exceptions are typically specific users.  
+    This approach makes it possible to prevent certain users from applying sensitivity labels in Power BI, even if they belong to a group that has permissions to do so.
 
-   This approach makes it possible to prevent certain users from applying sensitivity labels in Power BI, even if they belong to a group that has the right permissions.
-1. Select **Apply**.
-   :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-02.png" alt-text="Screenshot of the expanded information protection section.":::
+1. Press **Apply**.
+
+![Enable sensitivity labels](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-02.png)
+
+> [!IMPORTANT]
+> Only Power BI Pro users who have *create* and *edit* permissions on the asset, and who are part of the relevant security group that was set in this section, will be able to set and edit the sensitivity labels. Users who are not part of this group won't be able to set or edit the label.
 
 ## Troubleshooting
 
