@@ -17,7 +17,7 @@ LocalizationGroup: Consumer
 
 Add a personal comment or start a conversation about a dashboard or report with your colleagues. The **comment** feature is just one of the ways a *business user* can collaborate with others.
 
-:::image type="content" source="media/end-user-comment/comment.gif" alt-text="Gif showing the Comments screen when there are no comments added.":::
+:::image type="content" source="media/end-user-comment/comment.gif" alt-text="An animation showing the Comments screen when there are no comments added.":::
 
 > [!NOTE]
 > Collaborating with others, including adding comments to shared reports, requires a Power BI Pro license or for the content to be hosted in Power BI Premium capacity. [Which license type do I have?](end-user-license.md)
@@ -27,7 +27,7 @@ Comments can be added to an entire dashboard, individual visuals on a dashboard,
 
 When you add a comment to a report, Power BI captures the current filter and slicer values, and creates a [bookmark](end-user-bookmarks.md). So, when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
 
-:::image type="content" source="media/end-user-comment/power-bi-comment.gif" alt-text="Gif showing the Comments section being opened and then the bookmark on a comment is selected.":::
+:::image type="content" source="media/end-user-comment/power-bi-comment.gif" alt-text="An animation showing the Comments section being opened and then the bookmark on a comment is selected.":::
 
 Why is this feature important? If a colleague applied a filter that revealed an insight to share with the team, the comment might not make sense without that filter selected.
 
@@ -50,11 +50,11 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 
     By default, Power BI directs your response to the colleague who started the comment thread, which is Lee in this case. 
 
-    :::image type="content" source="media/end-user-comment/power-bi-respond.png" alt-text="Screenshot showing a comment with a reply below it.":::
+    :::image type="content" source="media/end-user-comment/power-bi-respond.png" alt-text="Screenshot showing a comment from Lee and a colleague’s response.":::
 
  3. If you want to add a comment that isn't part of an existing thread, enter your comment in the upper text field.
 
-    :::image type="content" source="media/end-user-comment/power-bi-new-commenting.png" alt-text="Screenshot showing the comment text field.":::
+    :::image type="content" source="media/end-user-comment/power-bi-new-commenting.png" alt-text="Screenshot showing the comment input field outlined.":::
 
     The comments for this dashboard now look like the following example.
 
@@ -85,7 +85,7 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 5. Select **Close** to return to the dashboard or report.
 
 ### Get your colleagues attention by using the @ symbol
-Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol appears in blue font. The @mentioned individuals will immediately receive an e-mail in their inbox, and if they're using a Power BI Mobile app, they'll receive a push notification on their device. They can open the report or dashboard directly from the notification, see the comment, view the data, and reply accordingly.
+Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol. When you type the "\@" symbol, Power BI opens a dropdown menu where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol appears in blue font. The @mentioned individuals will immediately receive an e-mail in their inbox, and if they're using a Power BI Mobile app, they'll receive a push notification on their device. They can open the report or dashboard directly from the notification, see the comment, view the data, and reply accordingly.
 
 Here's a conversation I'm having with the visualization *designer*. They're using the @ symbol to ensure I see the comment. I receive a notification and select the link to open this dashboard and the relevant conversation.  
 
