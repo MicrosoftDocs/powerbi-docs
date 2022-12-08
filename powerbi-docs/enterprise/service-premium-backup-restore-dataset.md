@@ -73,17 +73,46 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * There's a new property, `IgnoreIncompatibilities`, for the `restore` command. The new property addresses RLS incompatibilities between Azure AS and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file, for which some roles don't have read permission, you have to specify `IgnoreIncompatibilities` in your `restore` command, otherwise, restore will fail. Once `IgnoreIncompatibilities` is specified, the role without the read permission will be dropped. So far, there's no UX support to `IgnoreIncompatibilities` in SSMS, so you need to specify it in a `restore` command manually.
 For example:
 
-```
-{
-  "restore": {
-    "database": "DB",
-    "file": "/Backup.abf",
-    "allowOverwrite": true,
-    "security": "copyAll",
-    "ignoreIncompatibilities": true
+  ```
+  {
+    "restore": {
+      "database": "DB",
+      "file": "/Backup.abf",
+      "allowOverwrite": true,
+      "security": "copyAll",
+      "ignoreIncompatibilities": true
+    }
   }
-}
-```
+  ```
+
+* Now, you can restore a database over a broken database. We are happy to announce that you have a new robust approach to recover your corrupted database! Previously, you can only recover the corrupted database by republishing. However, republish is not kind of ideal way because it has following drawbacks,
+  - You will lose all modifications from XMLA endpoint you ever made.
+  - You will lose all reports created or modified from Power BI portal.
+  - You need to refresh database after republish, it may take a lot of time, especially for incremental refresh.
+
+  Restore will be the most robust way to recover your database as long as you backup your database periodically. You are able to restore over a broken database. You can run below XMLA restore command to approach it.
+  ```
+  <Restore xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <File>DatabaseBackup.abf</File>
+    <DatabaseName>DatabaseName</DatabaseName>
+    <AllowOverwrite>true</AllowOverwrite>
+  </Restore>
+  ```
+  Note that, you cannot use TMSL restore command because TMSL will try to load the database first but databsae is broken so it always fails. You can only use XMLA command to do restore in case of broken database.
+
+* There is a new property, `ForceRestore`, for restore command. The new property is to address that restore a database under memory pressure. When you get error message, "We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /ForceRestore option to restore the dataset with the existing dataset unloaded and offline.", you can run below restore command to trigger force restore.
+
+  ```
+  {
+    "restore": {
+      "database": "DB",
+      "file": "/Backup.abf",
+      "allowOverwrite": true,
+      "security": "copyAll",
+      "forceRestore": true
+    }
+  }
+  ```
 
 ## Next steps
 
