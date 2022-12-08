@@ -85,7 +85,7 @@ For example:
   }
   ```
 
-* You can restore a database that's linked to a broken database. As long as you backup your database periodically, restoring your databse is the most robust way to recover it. Use the XMLA command below to restore your database.
+* You can restore a corrupte database. As long as you backup your database periodically, restoring your database is the most robust way to recover it. Use the XMLA command below to restore your database.
 
   ```
   <Restore xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
@@ -95,7 +95,7 @@ For example:
   </Restore>
   ```
 
-* There is a new property, `ForceRestore`, for restore command. The new property is to address that restore a database under memory pressure. When you get error message, "We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /ForceRestore option to restore the dataset with the existing dataset unloaded and offline.", you can run below restore command to trigger force restore.
+  When restoring a database, you might get this error: *We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /ForceRestore option to restore the dataset with the existing dataset unloaded and offline*. In such cases, use the `ForceRestore`property to trigger a forced restore operation.
 
   ```
   {
