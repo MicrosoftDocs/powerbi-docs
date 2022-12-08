@@ -20,7 +20,7 @@ In this tutorial, you start with a dimensional model and build a beautiful repor
 You work at AdventureWorks and your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which day had the most sales in February 2019? 
-- Which country is the company seeing the most success in? 
+- Which country/region is the company seeing the most success in? 
 - Which product category and reseller business types should the company continue to invest in? 
 
 Using our [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx), we can build this report in no time. Here’s what the final report will look like.
@@ -218,7 +218,7 @@ Here are the hierarchies you need to create.
 | SalesOrder  | Sales Orders | Sales Order |
 |     |         | Sales Order Line |
 | SalesTerritory    | Sales Territories | Group |
-|     |         | Country |
+|     |         | Country-Region |
 |     |         | Region |
  
 Your data model should now look like the following data model. It has the same tables, but each dimension table contains a hierarchy: 
@@ -311,15 +311,15 @@ Next you create a line chart to see which month and year had the highest sales a
 
  
 
-### Visual 3: Order Quantity by Reseller Country 
+### Visual 3: Order Quantity by Reseller Country-Region 
 
-Now we'll create a map to see in which Country the Resellers have the highest Order Quantity Amount.
+Now we'll create a map to see in which Country or Region the Resellers have the highest Order Quantity Amount.
 
 1. From the Fields pane, drag the **Country-Region** field from the **Reseller** table to a blank area on your report canvas. Power BI creates a map. 
 
 1. Drag the **Order Quantity** field from the **Sales** table and drop it on the map. Make sure **Country-Region** is in the **Location** well and **Order Quantity** in the **Bubble size** well. 
 
-    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-order-quantity-by-reseller-country.png" alt-text="Screenshot of Map of order quantity by country/region.":::
+    :::image type="content" source="media/desktop-dimensional-model-report/report-sales-order-quantity-by-reseller-country-region.png" alt-text="Screenshot of Map of order quantity by country/region.":::
 
 ### Visual 4: Sales Amount by Product Category and Reseller Business type 
 
@@ -402,11 +402,11 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 1. Set **Text** size to **16 pt**. 
 1. On the **General** tab, toggle **Shadow** to **On**. 
 
-**Visual 3, Order Quantity by Reseller Country**
+**Visual 3, Order Quantity by Reseller Country-Region**
 
-1. Select Visual 3, Order Quantity by Reseller Country. 
+1. Select Visual 3, Order Quantity by Reseller Country-Region. 
 1. In the **Map setting** section, change **Style** to **Grayscale**. 
-1. On the **General** tab, in the **Title** section, change **Text** to "Order Quantity by Reseller Country".
+1. On the **General** tab, in the **Title** section, change **Text** to "Order Quantity by Reseller Country-Region".
 1. Set **Text size** to **16 pt**. 
 1. Also on the **General** tab, toggle **Shadow** to **On**.
 
@@ -446,7 +446,7 @@ In summary, this report answers your manager’s top questions:
 - Which day had the most sales in February 2019? 
     February 25, with a sales amount of $253,915.47. 
 
-- Which country is the company seeing the most success in? 
+- Which country/region is the company seeing the most success in? 
     In the United States, with an order quantity of 132,748. 
 
 - Which product category and reseller business types should the company continue to invest in? 
@@ -473,6 +473,6 @@ To share your report with your manager and colleagues, publish it to the Power B
 ## Next steps 
 
 - Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
-- Learn more about [DAX and data modeling in Power BI Desktop](/learn/modules/dax-power-bi-models/)
+- Learn more about [DAX and data modeling in Power BI Desktop](/training/modules/dax-power-bi-models/)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -46,7 +46,7 @@ In Premium Gen2, the enhanced compute engine is individually set for each datafl
 
 * **Disabled**
 
-* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when the dataflow is connected to another dataflow.
+* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when a table in the dataflow is referenced by another table or when the dataflows is connected to another dataflow in the same workspace.
 
 * **On**
 
@@ -78,7 +78,7 @@ Once the enhanced compute engine is on, return to **dataflows** and you should s
 
 To make best use of the compute engine, split the ETL stage into two separate dataflows, in the following way:
 
-* **Dataflow 1** - this dataflow should only be ingesting all of the required from a data source, and placing it into dataflow 2.
+* **Dataflow 1** - this dataflow should only be ingesting all of the required from a data source.
 * **Dataflow 2** - perform all ETL operations in this second dataflow, but ensure you're referencing Dataflow 1, which should be on the same capacity. Also ensure you perform operations that can fold (filter, group by, distinct, join) first, before any other operation, to ensure the compute engine is utilized.
 
 ### Common questions and answers

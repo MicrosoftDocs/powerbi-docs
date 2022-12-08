@@ -164,7 +164,7 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 6. Go back to Q&A and type *total profit by country*. 
 
-    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country.png" alt-text="Screenshot of total profit by country.":::
+    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country-region.png" alt-text="Screenshot of total profit by country/region.":::
 
 8. Pin the map to the Financial Sample dashboard, too.
 
@@ -172,7 +172,7 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 10. Place the cursor after *by country* in the Q&A box and type *as bar*. Power BI creates a bar chart with the results.
 
-    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-bar.png" alt-text="Screenshot of bar chart visualization.":::
+    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-region-bar.png" alt-text="Screenshot of bar chart visualization.":::
 
 11. Pin the bar chart to your Financial Sample dashboard, too.
 
@@ -223,10 +223,10 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 [Quickly create a report by pasting data into the Power BI service](../create-reports/service-quick-create-report.md)
 
-Explore these collections of Microsoft Learn content for Power BI:
+Explore these training resources for Power BI:
 
 > [!div class="nextstepaction"]
->[Learn Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+>[Learn Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 
 > [!div class="nextstepaction"]
 > [Become a Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

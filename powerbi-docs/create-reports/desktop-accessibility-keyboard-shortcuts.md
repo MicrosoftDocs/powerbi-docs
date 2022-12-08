@@ -62,18 +62,37 @@ In our continued effort to improve accessibility, the previous list of experienc
 
 \* Must be in editing mode
 
-## Table and matrix navigation
+## Table navigation
 | To do this action          | Press                |
 | :------------------- | :------------------- |
 | Move focus up / down one cell (across all cells in all areas)  | **Up arrow key** / **Down arrow key** |
 | Move focus left / right one cell (across all cells in all areas)  | **Left arrow key** / **Right arrow key** |
-| Expand matrix | **Shift + Left arrow key** |
-| Collapse matrix | **Shift + Right arrow key** |
+| Moves the focus to the last cell in the current row | **Ctrl + Right arrow key** / **End key** |
+| Moves the focus to the first cell in the current row | **Ctrl + Left arrow key** / **Home key** |
+| Moves the focus to the last element in the current column | **Ctrl + Down arrow key** |
+| Moves the focus to the first element in the current column | **Ctrl + Up arrow key** |
+| Moves the focus to the first element in the table (top left corner) | **Ctrl + Home key** |
+| Moves the focus to the last element in the table (bottom right corner) | **Ctrl + End key** |
+| Moves the focus to the last row displayed in the current column | **Page down key** |
+| Moves focus to the first row displayed in the current column | **Page up key** |
+| Selecting multiple noncontiguous rows | **Ctrl + Enter** / **Ctrl + Space** |
+| Selecting multiple contiguous rows | **Shift + Down arrow key or Up arrow key** |
+| Clear selected rows | **Ctrl + Shift + C** |
+| Open URL links | **Ctrl + Alt + O** |
+| Open Context Menu| **Shift + F10** |
+
+
+
+## Matrix navigation
+| To do this action          | Press                |
+| :------------------- | :------------------- |
+| Expand matrix | **Shift + Right arrow key** |
+| Collapse matrix | **Shift + Left arrow key** |
 
 ## Pane navigation
 | To do this action           | Press                |
 | :------------------- | :------------------- |
-| Multi-select | **Ctrl + spacebar** |
+| Multi-select | **Ctrl + Spacebar** |
 | Collapse a single table | **Left arrow key** |
 | Expand a single table | **Right arrow key** |
 | Collapse all tables | **Alt + Shift + 1** |

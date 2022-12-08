@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/28/2022
+ms.date: 11/16/2022
 ---
 
 # Collaborate with Power BI in Microsoft Teams, Outlook, and Office
@@ -27,6 +27,7 @@ Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office t
 - [View all the Power BI tabs you have](service-teams-pivot.md) in Microsoft Teams: Select the **In Teams** tab on the Power BI app home page.
 - [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams: Analyze your Teams activity.
 - [Get notified](service-teams-notifications.md) in the Teams activity feed when important things happen in Power BI.
+- Discover and use Power BI in Teams mobile.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
 
@@ -69,7 +70,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
     - Power BI messaging extension, which provides link previews, search, and link unfurling
     - Power BI activity feed notifications
     - Chat in Microsoft Teams
-- In other national clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support the new workspace experience or reports in Power BI apps.
+- In other national clouds, the new **Power BI** tab isn't available. An older version might be available that doesn't support workspaces or reports in Power BI apps.
 - After you save the tab, you can't change the tab name through the tab settings. Use the **Rename** option to change it.
 - Link previews don't work in meeting chat or private channels.
 - The messaging extension may process request and response data in a region that's different from your Power BI tenant home region.

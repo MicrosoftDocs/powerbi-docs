@@ -7,16 +7,15 @@ services: power-bi-embedded
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/06/2022
+ms.date: 08/18/2022
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 
 # Embed a report with cloud-based RLS
 
-This article explains how to embed Power BI content that uses RLS into a standard Power BI app owns data application.
+**APPLIES TO:** ✔️&nbsp;App&nbsp;owns&nbsp;data ❌&nbsp;User&nbsp;owns&nbsp;data
 
-> [!NOTE]
-> This article is only relevant for app owns data customers.
+This article explains how to embed Power BI content that uses RLS into a standard Power BI app owns data application.
 
 ## Prerequisites
 
@@ -98,7 +97,6 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
         );
        
         // Create a request for getting an embed token for the rls identity defined above
-        // This method works only with new Power BI V2 workspace experience
         var tokenRequest = new GenerateTokenRequestV2(
             reports: new List<GenerateTokenRequestV2Report>() { new GenerateTokenRequestV2Report(reportId) },
             datasets: datasetIds.Select(datasetId => new GenerateTokenRequestV2Dataset(datasetId.ToString())).ToList(),

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/10/2022
+ms.date: 09/04/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -148,8 +148,6 @@ For datasets using the large dataset storage format, Power BI automatically sets
 
 Keep in mind the following restrictions when using large datasets:
 
-* **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
-
 * **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 
 * **Supported regions**: Large datasets are available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers). Review the table in [region availability](#region-availability) to see a list of all the supported regions.
@@ -195,6 +193,8 @@ The following list provides regions where large datasets in Power BI are availab
 | Korea South         | koreasouth                |
 | North Central US    | northcentralus            |
 | North Europe        | northeurope               |
+| South Africa North  | southafricanorth          |
+| South Africa West   | southafricawest           |
 | South Central US    | southcentralus            |
 | Southeast Asia      | southeastasia             |
 | Switzerland North   | switzerlandnorth          |

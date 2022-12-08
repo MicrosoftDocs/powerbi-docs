@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/25/2022
+ms.date: 11/17/2022
 ---
 
 # Power BI implementation planning: Workspace-level workspace planning
@@ -326,7 +326,7 @@ There are several settings you can set up for each individual workspace. These s
 
 Each workspace has a [license type](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings) setting. It can be set to **Power BI Pro**, **Premium per user (PPU)**, **Premium per capacity**, or **Embedded**. This setting is important for workspace planning because it determines:
 
-- **Features:** Certain features, such as deployment pipelines and paginated reports, aren't supported in a Power BI Pro workspace.
+- **Features:** Certain features, such as deployment pipelines, aren't supported in a Power BI Pro workspace.
 - **Content access:** The license type determines who can access content in the workspace:
   - Only users who have a PPU license (in addition to being assigned a workspace role) can access a PPU workspace.
   - If you expect to deliver content to content viewers who have a free Power BI license, you'll need a Premium per capacity workspace.

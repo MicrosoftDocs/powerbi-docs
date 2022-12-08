@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: mihart
   ms.author: mihart
-  ms.date: 04/05/2022
+  ms.date: 11/21/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -30,7 +30,6 @@ landingContent:
             url: known-issues/power-bi-known-issues.md
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
-
   # Card (optional)
   - title: Troubleshooting
     linkLists:
@@ -39,20 +38,11 @@ landingContent:
           - text: Troubleshoot refresh scenarios
             url: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
           - text: Troubleshoot subscribing to reports and dashboards
-            url: ../consumer/service-troubleshoot-subscribe.yml
+            url: ../collaborate-share/service-troubleshoot-subscribe.yml
           - text: Troubleshoot gateways
             url: ../connect-data/service-gateway-onprem-tshoot.md
           - text: Troubleshoot tile errors
             url: ../connect-data/refresh-troubleshooting-tile-errors.md 
 
-              # Card (optional)
-  - title: Contacting support
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Power BI support options for paid customers
-            url: ../admin/service-support-options.md
-          - text: Options for contacting support for sign-in issues
-            url: ../admin/power-bi-cannot-sign-in.md  
-          
+
             

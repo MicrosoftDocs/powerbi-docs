@@ -74,11 +74,11 @@ To customize and share your app, select the pencil icon at the top right corner 
 ![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
 
 
-For information about editing artifacts in the workspace, see
+For information about editing items in the workspace, see
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
+Once you are done making any changes you wish to the items in the workspace, you are ready to publish and share the app. See [Create and publish your app](../collaborate-share/service-create-distribute-apps.md) to learn how to do this.
 
 ## What's included in the app
 The following data is available from GitHub in Power BI:     
@@ -126,7 +126,7 @@ If necessary, you can verify your GitHub credentials.
 ## Next steps
 
 * [Tutorial: Connect to a GitHub repo with Power BI](service-tutorial-connect-to-github.md)
-* [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+* [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [Connect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -13,13 +13,11 @@ metadata:
     
 title: Power BI custom visuals FAQ
 summary: | 
-
-    ## Organizational Power BI visuals
-
-    The [admin portal](../../admin/organizational-visuals.md) enables managing Power BI visuals for your organization.
+  * If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
+  * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 sections:
-  - name: Ignored
+  - name: Organizational visuals
     questions:
       - question: |
           How can the admin manage access to organizational Power BI custom visuals?
@@ -64,11 +62,11 @@ sections:
           * Admins can control which Power BI visuals are available throughout the organization.
           
           * Admins can enable/disable visuals for testing from the admin portal.
-          
-          ## Certified Power BI visuals
 
-      - question: |
-          What are certified Power BI visuals?
+          
+  - name: Certified Power BI visuals
+    questions:
+      - question: What are certified Power BI visuals?
         answer: |
           Certified Power BI visuals are Power BI visuals that meet certain [requirements](power-bi-custom-visuals-certified.md), and are certified by Microsoft.
           
@@ -122,7 +120,7 @@ sections:
       - question: |
           Does the Certification process ensure that there's no data leakage?
         answer: |
-          The tests performed are designed to check that the visual doesn't access external services or resources. 
+          The tests performed are designed to check that third party visuals don't access external services or resources. 
           
           Microsoft is not the author of third-party Power BI visuals. We advise customers to contact the author directly to verify the functionality of third-party Power BI visuals.
            
@@ -133,8 +131,8 @@ sections:
           
           Some visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
           
-          ## Visuals with additional purchases
-
+  - name: Visuals with additional purchases
+    questions:
       - question: |
           What is a visual with additional purchases?
         answer: |
@@ -172,13 +170,15 @@ sections:
           
           Certification is an optional process, it's up to you to decide if you want your IAP visual to be certified.
           
-          ## More questions
-
+  - name: More questions
+    questions:
       - question: |
           How to get support?
         answer: Feel free to contact the Power BI visuals support team at pbicvsupport@microsoft.com, with any questions, comments, or issues you have.  
 
 additionalContent: |
   ## Next steps
-    
+        
   For more information, visit [Troubleshooting your Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
+          
+  More questions? [Try the Power BI Community](https://community.powerbi.com/)  

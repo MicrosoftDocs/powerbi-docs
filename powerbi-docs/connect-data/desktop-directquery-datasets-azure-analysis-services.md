@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 06/13/2022
+ms.date: 11/22/2022
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Analysis Services (preview)
@@ -117,8 +117,6 @@ There are a few **considerations** to keep in mind when using **DirectQuery for 
 
 - For premium capacities, the ["XMLA endpoint" should be set to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
-- If using a [classic workspace](../collaborate-share/service-create-workspaces.md) in combination with this feature, it isn't sufficient to set permissions on the dataset itself. For classic workspaces, all users accessing reports that leverage this feature must be members of the workspace. Consider [upgrading classic workspaces to new workspaces](../collaborate-share/service-upgrade-workspaces.md) to avoid this situation.
-
 - RLS rules will be applied on the source on which they're defined, but won't be applied to any other datasets in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table from another source group nor can you define RLS on a local table that has a relationship to another source group.
 
 - KPIs, row level security, and translations won't be imported from the source in this preview release.
@@ -160,8 +158,7 @@ There are also a few **limitations** you need to keep in mind:
   - [Sample Datasets](../create-reports/sample-datasets.md#eight-original-samples)
   - [Excel Online Refresh](refresh-excel-file-onedrive.md)
   - Import Excel / CSV files
-  - [Content Packs (deprecated)](../collaborate-share/service-upgrade-workspaces.md#content-packs-during-upgrade)
-  - [Usage Metrics (classic workspaces)](../collaborate-share/service-usage-metrics.md) 
+  - [Usage metrics (My workspace)](../collaborate-share/service-usage-metrics.md) 
 
 - Using DirectQuery on datasets from “My workspace” isn't currently supported. 
 
@@ -180,6 +177,13 @@ There are also a few **limitations** you need to keep in mind:
 - Take over of a dataset that is using the **DirectQuery to other datasets** feature isn't currently supported.
 
 - [As with any DirectQuery data source](desktop-directquery-about.md#reporting-limitations), hierarchies defined in an Analysis Services model or Power BI dataset won't be shown when connecting to the model or dataset in DirectQuery mode using Excel. 
+
+- **Use low-cardinality columns in cross source group relationships**: When you create a relationship across two different source groups, the columns participating in the relationship (also called the *join* columns) should have low cardinality, ideally 50,000 or less. This consideration applies to non-string key columns; for string key columns, see the following consideration. 
+
+- **Avoid using large strings key columns in cross source group relationships**: When creating a cross source group relationship, avoid using large string columns as the relationship columns, especially for columns that have larger cardinality. When you must use strings columns as the relationship column, calculate the expected string length for the filter by multiplying cardinality (C) by the average length of the string column (A). Make sure the expected string length is below 250,000, such that *A ∗ C < 250,000*.
+
+
+
 
 ### Tenant considerations
 

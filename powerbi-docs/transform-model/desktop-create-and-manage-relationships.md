@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/29/2021
+ms.date: 10/20/2022
 LocalizationGroup: Model your data
 ---
 # Create and manage relationships in Power BI Desktop
-When you import multiple tables, chances are you'll do some analysis using data from all those tables. Relationships between those tables are necessary to accurately calculate results and display the correct information in your reports. Power BI Desktop makes creating those relationships easy. In fact, in most cases you won’t have to do anything, the autodetect feature does it for you. However, sometimes you might have to create relationships yourself, or need to make changes to a relationship. Either way, it’s important to understand relationships in Power BI Desktop and how to create and edit them.
+When you have multiple tables, chances are you'll do some analysis using data from all those tables. Relationships between those tables are necessary to accurately calculate results and display the correct information in your reports. Power BI Desktop makes creating those relationships easy. In fact, in most cases you won’t have to do anything, the autodetect feature does it for you. However, sometimes you might have to create relationships yourself, or need to make changes to a relationship. Either way, it’s important to understand relationships in Power BI Desktop and how to create and edit them.
 
 ## Autodetect during load
 If you query two or more tables at the same time, when the data is loaded, Power BI Desktop attempts to find and create relationships for you. The relationship options **Cardinality**, **Cross filter direction**, and **Make this relationship active** are automatically set. Power BI Desktop looks at column names in the tables you're querying to determine if there are any potential relationships. If there are, those relationships are created automatically. If Power BI Desktop can't determine with a high level of confidence there's a match, it doesn't create the relationship. However, you can still use the **Manage relationships** dialog box to manually create or edit relationships.
@@ -41,11 +41,51 @@ If you encounter that error, there are a couple ways to fix the issue:
 
 For more information, see this [blog post](/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message).
 
+Alternatively, in the **Model view** diagram layouts, you can drag and drop a column from one table to a column in another table to create a relationship.
 
 ## Edit a relationship
-1. On the **Modeling** tab, select **Manage relationships**.
 
-2. In the **Manage relationships** dialog box, select the relationship, then select **Edit**.
+There are two ways to edit a relationship in Power BI.
+
+The first method to edit a relationship is using the **Editing relationships in the Properties** pane in **Model view**, where you can click any line between two tables to see the relationship options in the **Properties** pane. Be sure to expand the **Properties** pane to see the relationship options.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/relationships-options-03.png" alt-text="Screen shot of adjusting relationships.":::
+
+You can also see a [video demonstration](https://youtu.be/Vlo7dJgr4WM?t=710) of editing relationships in the **Properties** pane. 
+
+The other method of editing a relationship is using the **Relationship editor dialog**, which you can open many ways from within Power BI Desktop. The following list shows different ways you can open the **Relationship editor dialog**:
+
+From **Report view** do any of the following:
+* Select the **Modeling** ribbon > **Manage relationships**, then select the relationship and select **Edit**.
+* Select a table in the **Fields** list then select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+
+From the **Data** view select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+
+From the **Model** view do any of the following:
+* Select the **Home** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+* Double-click any line between two tables.
+* Right-click any line between two tables and then choose **Properties**.
+* Select any line between two tables, then select **Open relationship editor** in the **Properties** pane.
+
+Finally, you can also edit a relationship from any view, right-click or select the ellipsis to get to the context menu of any table, then select **Manage relationships**, select the relationship and then select **Edit**
+
+The following image shows a screen shot of the **Edit relationship** window.
+
+:::image type="content" source="media/desktop-create-and-manage-relationships/relationships-options-04.png" alt-text="Screen shot of the edit relationship window.":::
+
+## Editing relationships using different methods
+
+Using the **Edit relationships dialog** is a more guided experience for editing relationships in Power BI, and is currently in preview. You can see a preview of the data in each table and as you select different columns, the window automatically validates the relationship and offers appropriate cardinality and cross filter selections.
+
+Editing relationships in the **Properties** pane is a streamlined approach to editing relationships in Power BI. You only see the table names and columns from which you can choose, you are not presented with a data preview, and the relationship choices you make are only validated when you select **Apply changes**. Using the **Properties** pane and its streamlined approach reduces the number of queries generated when editing a relationship, which can important for big data scenarios, especially when using DirectQuery connections. Relationships created using the **Properties** pane can also be more advanced than the relationships allowed to be created in the **Edit relationships dialog**.
+
+You can also multi-select relationships in the **Model** view diagram layouts. Pressing the Ctrl key and select (click on) more than one line to select multiple relationships. Common properties can be edited in the **Properties** pane and **Apply changes** will process the changes in one transaction. 
+
+Single or multi-selected relationships can also be deleted by pressing *Delete* on your keyboard. You cannot undo the delete action, so a dialog prompts you to confirm deleting the relationships.
+
+> [!IMPORTANT]
+> Editing relationships in the properties pane feature is currently in preview. While in preview, functionality and documentation are likely to change. You must enable this feature in Power BI Desktop by going to **File > Options and settings > Options > Preview features** and then in the GLOBAL section, select the checkbox next to **Relationship pane**.
+
 
 ## Configure additional options
 When you create or edit a relationship, you can configure additional options. By default, Power BI Desktop automatically configures additional options based on its best guess, which can be different for each relationship based on the data in the columns.

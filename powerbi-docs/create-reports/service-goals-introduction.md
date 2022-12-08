@@ -19,7 +19,7 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
 :::image type="content" source="media/service-goals-introduction/power-bi-metrics-hub.png" alt-text="Screenshot of Metrics page with metrics, scorecards, and samples.":::
 
-This article covers the basics of using Metrics in the Power BI service. See the other articles about metrics for more detail:
+This article covers the basics of using metrics in the Power BI service. See the other articles about metrics for more detail:
 
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)
@@ -113,7 +113,7 @@ Changing the tracking cycle only changes the trend that you see below your value
 
 **Why don’t I see the Power BI workspace I’m looking for when I create a scorecard?**
 
-In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md). 
+In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
 Scorecards do have metric-level permissions roles. While workspace permissions give view or build access to the workspace, metric-level permissions restrict access so that certain people can only see certain metrics and perform check-ins within a scorecard. Read more about [metric-level permissions in scorecards](service-goals-set-permissions.md).
 
