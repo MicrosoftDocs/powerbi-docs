@@ -48,27 +48,22 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 
 Sensitivity labels must be enabled on the tenant before they can be used in both the service and in Desktop. This section describes how to enable them in the tenant settings.
 
-1. To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
+To enable sensitivity labels on the tenant, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
 
    :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png" alt-text="Screenshot of the Admin portal with tenant settings and information protection highlighted.":::
 
-1. In the **Information Protection** section, expand **Allow users to apply sensitivity labels for content**.
+In the **Information Protection** section:
 
-   :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-02.png" alt-text="Screenshot of the expanded information protection section.":::
-
+1. Expand **Allow users to apply sensitivity labels for content**.
 1. Switch **Enabled** on.
-
-   :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-03.png" alt-text="Screenshot of the enabled switch in the on position.":::
-
 1. Define who can apply and change sensitivity labels in Power BI assets. By default, everyone in your organization will be able to apply sensitivity labels. However, you can choose to enable setting sensitivity labels only for specific users or security groups. With either the entire organization or specific security groups selected, you can exclude specific subsets of users or security groups.
 
    * When sensitivity labels are enabled for the entire organization, exceptions are typically security groups.
    * When sensitivity labels are enabled only for specific users or security groups, exceptions are typically specific users.  
-    This approach makes it possible to prevent certain users from applying sensitivity labels in Power BI, even if they belong to a group that has the right permissions.
 
-   :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-04.png" alt-text="Screenshot of the apply to section. The entire organization is selected.":::
-
+   This approach makes it possible to prevent certain users from applying sensitivity labels in Power BI, even if they belong to a group that has the right permissions.
 1. Select **Apply**.
+   :::image type="content" source="media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-02.png" alt-text="Screenshot of the expanded information protection section.":::
 
 > [!IMPORTANT]
 > Only Power BI Pro users who have *create* and *edit* permissions on the asset, and who are part of the relevant security group that was set in this section, will be able to set and edit the sensitivity labels. Users who are not part of this group won't be able to set or edit the label.
