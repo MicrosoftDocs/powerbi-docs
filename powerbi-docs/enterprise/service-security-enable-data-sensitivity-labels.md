@@ -31,18 +31,18 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
     > [!NOTE]
     > If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to the Purview Information Protection Unified Labeling platform in order for the them to be used in Power BI. [Learn more about migrating sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
-* To apply labels to Power BI content and files, a user must have a Power BI Pro, or Premium Per User (PPU) license in addition to an Azure Information Protection license mentioned earlier.
+* To be able to apply labels to Power BI content and files, a user must have a Power BI Pro or Premium Per User (PPU) license in addition to one of the Azure Information Protection licenses mentioned above.
 
 * Office apps have their own [licensing requirements for viewing and applying sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels).
 
 * Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. See [Create and configure sensitivity labels and their policies](/microsoft-365/compliance/create-sensitivity-labels) for detail.
 
-* Customers in China must enable rights management for the tenant, and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet&preserve-view=true#configure-aip-for-customers-in-china).
+* Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet&preserve-view=true#configure-aip-for-customers-in-china).
 
 * Using sensitivity labels in Desktop requires the Desktop December 2020 release or later.
 
     > [!NOTE]
-    > If you try to open a protected *.pbix* file with a Desktop version earlier than December 2020, it fails, and you're prompted to upgrade your Desktop version.
+    > If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you'll be prompted to upgrade your Desktop version.
 
 ## Enable sensitivity labels
 
