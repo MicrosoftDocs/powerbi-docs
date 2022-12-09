@@ -13,7 +13,7 @@ ms.author: maggies
 ---
 # Add a multi-value parameter to a paginated report
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
   You can add a parameter to a paginated report that allows the user to select more than one value for the parameter.  
   
