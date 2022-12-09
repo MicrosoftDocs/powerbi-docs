@@ -15,7 +15,7 @@ summary: |
   
   This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
-  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to any workspace.  
+  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. You don't need a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md) to publish paginated reports to My Workspace. You do need a PPU or Power BI Pro license and write access to publish to other workspaces. Users with free, Pro, and PPU licenses can view the content. To learn more about licensing, see [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
 
 sections:
   - name: Administration
@@ -115,11 +115,6 @@ sections:
           - On the **File** menu, look for a button labeled **Disable preview features**. If that button is there, select it, and allow the page to refresh. 
           
           If the report now renders as expected, leave preview features disabled for now. Otherwise, you can reenable preview features by selecting the **Enable preview features** button on the **File** menu. After 30 days, preview features are automatically reenabled, but you can disable them again through the same steps.   
-          
-      - question: |
-          What licenses and workspace permissions do I need to publish, manage, and view paginated reports?
-        answer: |
-          A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace. Users with free, Pro and PPU licenses can view the content.
  
       - question: |
           The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
