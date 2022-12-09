@@ -802,12 +802,12 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/consumer/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
@@ -1086,6 +1086,10 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/support/service-admin-portal-help-support.md",
+            "redirect_url": "/power-bi/admin/service-admin-portal-help-support",
+            "redirect_document_id": false
+        },{
             "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
             "redirect_url": "/power-bi/admin/service-admin-portal",
             "redirect_document_id": false
@@ -2232,12 +2236,22 @@
         },
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/service-troubleshoot-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/service-troubleshoot-subscribe",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/collaborate-share/service-report-subscribe.md",
-            "redirect_url": "/power-bi/consumer/end-user-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": false
         },
         {
@@ -3908,11 +3922,6 @@
         {
             "source_path": "powerbi-docs/service-self-service-signup-for-power-bi.md",
             "redirect_url": "/power-bi/fundamentals/service-self-service-signup-for-power-bi",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/admin/service-admin-portal-help-support.md",
-            "redirect_url": "/power-bi/support/service-admin-portal-help-support",
             "redirect_document_id": true
         },
         {

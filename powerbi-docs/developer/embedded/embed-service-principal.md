@@ -51,7 +51,7 @@ To use service principal and an application ID  embedded analytics, follow these
 5. Embed your content.
 
 > [!IMPORTANT]
-> Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
+> An Azure AD application doesn't require you to configure any Delegated Permissions or Application Permissions in the Azure portal when it has been created for a service principal. When you create an Azure AD application for a service principal to access the Power BI REST API, it is recommended that you **avoid adding permissions**. They're never used and can cause errors that are hard to troubleshoot.
 
 ## Step 1 - Create an Azure AD app
 
