@@ -43,7 +43,7 @@ The **Create new content** section contains options for creating and importing c
 
 For other file types, like XML Table (*.xml*) or text (*.txt*) files, you can use **Get & Transform** to query, transform, and load that data into an Excel or Power BI Desktop file first. You can then import the Excel or Power BI Desktop file into Power BI.
 
-Where you store your files makes a significant difference, too. OneDrive for Business provides the greatest amount of flexibility and integration with Power BI. It's OK to keep your files on your local drive. Though if you need to refresh your data, there are a few extra steps. For more information, see the article links below.
+Where you store your files makes a significant difference, too. OneDrive for work or school provides the greatest amount of flexibility and integration with Power BI. It's OK to keep your files on your local drive. Though if you need to refresh your data, there are a few extra steps. For more information, see the article links below.
 
 ### Databases
 ![Screenshot of the databases, showing databases in the cloud logos.](media/service-get-data/pbi_getdata_databases.png)
@@ -85,7 +85,7 @@ A **data source** is where the data in a dataset comes from. For example, the da
 ## Data refresh
 Maybe you save your files on your local drive or a drive somewhere in your organization. You may need a Power BI gateway so that you can refresh the dataset in Power BI. The computer that stores the file needs to be on when a refresh happens. You can reimport your file or use Publish from Excel or Power BI Desktop, but those options aren't automated processes.
 
-If you save your files on OneDrive for Business or SharePoint - Team Sites, you can then connect to or import them into Power BI. Then, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file. It connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
+If you save your files on OneDrive for work or school or SharePoint - Team Sites, you can then connect to or import them into Power BI. Then, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file. It connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
 
 Template apps from services are automatically updated. In most cases, they're updated once a day. You can manually refresh, but if you see any updated data will depend on the service provider. Updates to template apps from people in your organization will depend on the data sources used. They'll also depend on how the person who created the template app configured the refresh.
 

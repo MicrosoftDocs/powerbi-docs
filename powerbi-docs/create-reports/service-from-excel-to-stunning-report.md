@@ -32,7 +32,7 @@ In this tutorial, we upload an Excel file, create a new report, and share it wit
 
 ## Prerequisites
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it your computer or to OneDrive for Business.
+- Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it your computer or to OneDrive for work or school.
 
 
 ## Prepare data in Excel
