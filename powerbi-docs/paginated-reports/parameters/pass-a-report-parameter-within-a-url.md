@@ -15,6 +15,9 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Pass a Report Parameter Within a URL
+
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+
   You can pass report parameters to a report by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine.  
 
 > [!NOTE]

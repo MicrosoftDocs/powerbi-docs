@@ -15,12 +15,12 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Associate a Query Parameter with a Report Parameter (Report Builder and SSRS)
+
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+
   When you define a dataset query that contains a query variable, the query command is parsed. For each query variable, a corresponding dataset parameter and report parameter are created. The dataset parameter points to the report parameter. This enables a user to enter a value that passes directly to the query. Each time you edit the query command, the same process takes place.  
   
  If you rename a report parameter that is bound to a query parameter, you need to manually link the query parameters to the renamed report parameter by using the procedure in this topic.  
-  
-> [!NOTE]  
-> [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
   
 ### To associate a query parameter with a report parameter  
   

@@ -15,6 +15,9 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Dataset Properties Dialog Box, Parameters
+
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+
   Select **Parameters** on the **Dataset Properties** dialog box to add, change, and delete query parameters, including query parameters that link to report parameters.  
   
  Whenever the query is changed on the query tab, the query command is parsed. For each query parameter that is identified, a report parameter with an identical case-sensitive name is created. By default, the query parameter is automatically added to the query parameter list and linked to the corresponding report parameter.  
