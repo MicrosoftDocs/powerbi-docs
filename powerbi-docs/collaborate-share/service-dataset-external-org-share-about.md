@@ -57,7 +57,8 @@ This article provides a basic introduction to in-place dataset sharing in Power 
 - The following tenant settings across workspaces and existing B2B capabilities need to be enabled: 
     - [Control the use of datasets across workspaces](../connect-data/service-datasets-admin-across-workspaces.md)
     - [Allow Azure Active Directory guest users to access Power BI](../guidance/whitepaper-azure-b2b-power-bi.md) 
-    - [Allow XMLA endpoints and analyze in Excel with on-premises datasets](../enterprise/service-premium-connect-tools.md) 
+    - [Allow XMLA endpoints and analyze in Excel with on-premises datasets](../enterprise/service-premium-connect-tools.md)
+    - [Allow live connections] (../service-admin-portal-export-sharing.md)
 
 - For using in-place dataset sharing, Power BI admins will need to turn on the following settings in the admin portal: 
     - **Allow guest users to work with shared datasets in their own tenants**
