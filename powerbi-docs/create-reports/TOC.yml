@@ -479,39 +479,65 @@
   - name: Paginated reports
     items: 
     - name: Report Builder in Power BI
-      href: ../paginated-reports/report-builder-power-bi.md
+      item: 
+      - name: Report Builder in Power BI
+        href: ../paginated-reports/report-builder-power-bi.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
+      - name: Get around Report Design View
+        href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Previewing reports
+        href: ../paginated-reports/report-builder-previewing-reports.md
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+    - name: Design paginated reports
+      item: 
+      - name: Planning a report
+        href: ../paginated-reports/report-builder-planning-report.md
+      - name: Design tips
+        href: ../paginated-reports/report-builder-design-tips.md
+      - name: Subreports
+        href: ../paginated-reports/subreports.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
+    - name: Visualizations in paginated reports
+      item: 
+      - name: Display percentage values on pie charts
+        href: ../paginated-reports/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs.md
+    - name: Data sources and datasets
+      item: 
+      - name: Understanding paginated report data
+        href: ../paginated-reports/report-builder-data.md
+      - name: Supported data sources
+        href: ../paginated-reports/paginated-reports-data-sources.md
+      - name: Support for ODBC data sources
+        href: ../paginated-reports/paginated-reports-odbc-support.md
+      - name: Create an embedded data source
+        href: ../paginated-reports/paginated-reports-embedded-data-source.md
+      - name: Create an embedded dataset
+        href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
       href: ../paginated-reports/paginated-capacity-planning.md      
-    - name: Report Builder change log
-      href: ../paginated-reports/paginated-reports-change-log.md
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
-    - name: Get around Report Design View
-      href: ../paginated-reports/paginated-reports-report-design-view.md
-    - name: Planning a report
-      href: ../paginated-reports/report-builder-planning-report.md
-    - name: Understanding paginated report data
-      href: ../paginated-reports/report-builder-data.md
-    - name: Supported data sources
-      href: ../paginated-reports/paginated-reports-data-sources.md
-    - name: Support for ODBC data sources
-      href: ../paginated-reports/paginated-reports-odbc-support.md
-    - name: Design tips
-      href: ../paginated-reports/report-builder-design-tips.md
     - name: Tables, matrixes, lists
       href: ../paginated-reports/report-builder-tables-matrices-lists.md
     - name: Parameters
-      href: ../paginated-reports/report-builder-parameters.md
-    - name: URL parameters in paginated reports
-      href: ../paginated-reports/report-builder-url-parameters.md
+      item:
+      - name: Parameters
+        href: ../paginated-reports/report-builder-parameters.md
+      - name: URL parameters in paginated reports
+        href: ../paginated-reports/report-builder-url-parameters.md
+      - name: Create parameters
+        href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Pass a report parameter in a URL
+        href: ../paginated-reports/report-builder-url-pass-parameters.md
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
       href: ../paginated-reports/paginated-reports-pagination.md
-    - name: Previewing reports
-      href: ../paginated-reports/report-builder-previewing-reports.md
     - name: Default system credentials for web proxy
       href: ../paginated-reports/report-builder-web-proxy-authentication.md
     - name: Enter data directly in a paginated report
@@ -520,30 +546,16 @@
       href: ../paginated-reports/paginated-reports-edit-service.md
     - name: Create exportable formatted data tables
       href: ../paginated-reports/paginated-formatted-table.md
-    - name: Create an embedded data source
-      href: ../paginated-reports/paginated-reports-embedded-data-source.md
-    - name: Create an embedded dataset
-      href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
     - name: Create a report with a Power BI shared dataset
       href: ../paginated-reports/report-builder-shared-datasets.md
     - name: Create a paginated report from a Power BI report
       href: ../paginated-reports/paginated-reports-download-rdl.md
-    - name: Create parameters
-      href: ../paginated-reports/paginated-reports-parameters.md
     - name: Set up row-level security
       href: ../paginated-reports/paginated-reports-rls.md
     - name: Set report views
       href: ../paginated-reports/page-view.md
-    - name: Subreports
-      href: ../paginated-reports/subreports.md
-    - name: Troubleshoot subreports
-      href: ../paginated-reports/subreports-troubleshoot.md
-    - name: Pass a report parameter in a URL
-      href: ../paginated-reports/report-builder-url-pass-parameters.md
     - name: Publish a paginated report
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
-    - name: Keyboard shortcuts in Power BI Report Builder
-      href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
   - name: "Deployment pipelines"  
