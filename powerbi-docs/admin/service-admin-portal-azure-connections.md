@@ -34,7 +34,7 @@ By default, workspace admins can't connect their own storage account. This featu
 
 To activate this feature, go to **Admin portal > Azure connections > Connect to Azure resources > Workspace-level storage permissions**, and check the **Allow workspace admins to connect their own storage account** checkbox.
 
-  :::image type="content" source="media/service-admin-portal-azure-connections/connect-own-storage-account-switch.png" alt-text="Screenshot of the Allow workspace admins to connect their own Log Analytics workspace checkbox.":::
+  :::image type="content" source="media/service-admin-portal-azure-connections/connect-own-storage-account-switch.png" alt-text="Screenshot of the Azure connections settings page showing the Allow workspace admins to connect their own Log Analytics workspace checkbox":::
 
 ## Next steps
 
