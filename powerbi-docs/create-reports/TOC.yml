@@ -534,6 +534,8 @@
         href: ../paginated-reports/paginated-reports-parameters.md
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/report-builder-url-pass-parameters.md
+      - name: Add a multi-value parameter
+        href: ../paginated-reports/parameters/add-a-multi-value-parameter-to-a-report.md
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
