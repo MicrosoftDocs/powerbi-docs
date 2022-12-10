@@ -21,12 +21,12 @@ ms.author: maggies
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  To parameterize an MDX query for an [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] data source, you must add a query parameter to the query. In the MDX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
+  To parameterize an MDX query for an Analysis Services data source, you must add a query parameter to the query. In the MDX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
   
   
 ### To define a query parameter in MDX in Design mode  
   
-1.  In the Report Data pane, right-click on a dataset created from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] data source type, and then click **Query**. The MDX query designer opens in Design mode.  
+1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The MDX query designer opens in Design mode.  
   
 2.  Drag a dimension to the filter area and drop it on the first cell in the **Dimension** column.  
   
@@ -50,7 +50,7 @@ ms.author: maggies
   
 ### To define a query parameter in MDX in Query mode  
   
-1.  In the Report Data pane, right-click on a dataset created from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] data source type, and then click **Query**. The MDX query designer opens in Design mode.  
+1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The MDX query designer opens in Design mode.  
   
 2.  On the toolbar, click **Design** to toggle to Query mode.  
   

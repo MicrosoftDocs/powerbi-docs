@@ -23,7 +23,7 @@ ms.author: maggies
     
 ### To add or edit a report parameter  
   
-1.  In [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion.md)] or Report Designer in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], in the **Report Data** pane, right-click the **Parameters** node and click **Add Parameter**. The **Report Parameter Properties** dialog box opens.  
+1.  In Power BI Report Builder, in the **Report Data** pane, right-click the **Parameters** node and click **Add Parameter**. The **Report Parameter Properties** dialog box opens.  
   
 2.  In **Name**, type the name of the parameter or accept the default name.  
   

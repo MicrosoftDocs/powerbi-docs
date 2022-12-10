@@ -19,10 +19,10 @@ ms.author: maggies
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  You can use the following parameters as part of a URL to configure the look and feel of your [!INCLUDE[ssRSCurrent](../includes/ssrscurrent-md.md)] reports. The most common parameters are listed in this section. Parameters are case-insensitive and begin with the parameter prefix *rs:* if directed to the report server and *rc:* if directed to an HTML Viewer. You can also specify parameters that are specific to devices or rendering extensions. For more information about device-specific parameters, see [Specify device information settings in a URL](../reporting-services/specify-device-information-settings-in-a-url.md).
+  You can use the following parameters as part of a URL to configure the look and feel of your paginated reports. The most common parameters are listed in this section. Parameters are case-insensitive and begin with the parameter prefix *rs:* if directed to the report server and *rc:* if directed to an HTML Viewer. You can also specify parameters that are specific to devices or rendering extensions. For more information about device-specific parameters, see [Specify device information settings in a URL](../reporting-services/specify-device-information-settings-in-a-url.md).
   
 > [!IMPORTANT]  
->  For a SharePoint mode report server it's important that the URL includes the `_vti_bin` proxy syntax to route the request through SharePoint and the [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] HTTP proxy. The proxy adds context to the HTTP request that's required to ensure proper execution of the report for SharePoint mode report servers. For examples, see [Access report server items using URL access](../reporting-services/access-report-server-items-using-url-access.md).
+>  For a SharePoint mode report server it's important that the URL includes the `_vti_bin` proxy syntax to route the request through SharePoint and the Reporting Services HTTP proxy. The proxy adds context to the HTTP request that's required to ensure proper execution of the report for SharePoint mode report servers. For examples, see [Access report server items using URL access](../reporting-services/access-report-server-items-using-url-access.md).
 > 
 > Reporting Services integration with SharePoint is no longer available after SQL Server 2016.
   
@@ -49,7 +49,7 @@ ms.author: maggies
     https://myspsite/subsite/_vti_bin/reportserver?https://myspsite/subsite/Sales&rc:Parameters=Collapsed  
     ```  
   
--   **Zoom**: Sets the report zoom value as an integer percentage or a string constant. Standard string values include **Page Width** and **Whole Page**. This parameter is ignored by versions of Internet Explorer earlier than Internet Explorer 5.0 and all non-[!INCLUDE[msCoName](../includes/msconame-md.md)] browsers. The default value of this parameter is **100**.
+-   **Zoom**: Sets the report zoom value as an integer percentage or a string constant. Standard string values include **Page Width** and **Whole Page**. This parameter is ignored by versions of Internet Explorer earlier than Internet Explorer 5.0 and all non-Microsoft browsers. The default value of this parameter is **100**.
   
      For example, in native mode:
   
@@ -266,7 +266,7 @@ ms.author: maggies
 -   **ShowHideToggle**: Toggles the show and hide state of a section of the report. Specify a positive integer to represent the section to toggle.
   
 ##  <a name="bkmk_webpart"></a> Report Viewer web part commands (rv:)
- The following [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] reserved report parameter names are used to target the Report Viewer web part that's integrated with SharePoint. These parameter names are prefixed with *rv:*. The Report Viewer web part also accepts the *rs:ParameterLanguage* parameter.
+ The following SQL Server reserved report parameter names are used to target the Report Viewer web part that's integrated with SharePoint. These parameter names are prefixed with *rv:*. The Report Viewer web part also accepts the *rs:ParameterLanguage* parameter.
   
 -   **Toolbar**: Controls the toolbar display for the Report Viewer web part. The default value is **Full**. Values can be:
   

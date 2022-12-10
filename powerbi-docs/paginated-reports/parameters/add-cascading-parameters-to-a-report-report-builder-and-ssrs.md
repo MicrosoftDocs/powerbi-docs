@@ -35,9 +35,9 @@ ms.author: maggies
   
 5.  In **Query**, type the query to use to retrieve data for this report. The query must include the following parts:  
   
-    1.  A list of data source fields. For example, in a [!INCLUDE[tsql](../../includes/tsql-md.md)] statement, the SELECT statement specifies a list of database column names from a given table or view.  
+    1.  A list of data source fields. For example, in a Transact-SQL statement, the SELECT statement specifies a list of database column names from a given table or view.  
   
-    2.  One query parameter for each cascading parameter. A query parameter limits the data retrieved from the data source by specifying certain values to include or exclude from the query. Typically, query parameters occur in a restriction clause in the query. For example, in a [!INCLUDE[tsql](../../includes/tsql-md.md)] SELECT statement, query parameters occur in the WHERE clause.  
+    2.  One query parameter for each cascading parameter. A query parameter limits the data retrieved from the data source by specifying certain values to include or exclude from the query. Typically, query parameters occur in a restriction clause in the query. For example, in a Transact-SQL SELECT statement, query parameters occur in the WHERE clause.  
   
 6.  Click **Run** (**!**). After you include query parameters and then run the query, report parameters that correspond to the query parameters are automatically created.  
   
@@ -58,7 +58,7 @@ ms.author: maggies
   
 4.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
   
-5.  In **Query**, type the query to use to retrieve values for this parameter. Queries for independent parameters typically do not contain query parameters. For example, to create a query for a parameter that provides all category values, you might use a [!INCLUDE[tsql](../../includes/tsql-md.md)] statement similar to the following:  
+5.  In **Query**, type the query to use to retrieve values for this parameter. Queries for independent parameters typically do not contain query parameters. For example, to create a query for a parameter that provides all category values, you might use a Transact-SQL statement similar to the following:  
   
     ```  
     SELECT DISTINCT <column name> FROM <table>  
@@ -102,7 +102,7 @@ ms.author: maggies
   
 4.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
   
-5.  In **Query**, type the query to use to retrieve values for this parameter. Queries for dependent parameters typically include query parameters for each parameter that this parameter is dependent on. For example, to create a query for a parameter that provides all subcategory (dependent parameter) values for a category (independent parameter), you might use a [!INCLUDE[tsql](../../includes/tsql-md.md)] statement similar to the following:  
+5.  In **Query**, type the query to use to retrieve values for this parameter. Queries for dependent parameters typically include query parameters for each parameter that this parameter is dependent on. For example, to create a query for a parameter that provides all subcategory (dependent parameter) values for a category (independent parameter), you might use a Transact-SQL statement similar to the following:  
   
     ```  
     SELECT DISTINCT Subcategory FROM <table>   
