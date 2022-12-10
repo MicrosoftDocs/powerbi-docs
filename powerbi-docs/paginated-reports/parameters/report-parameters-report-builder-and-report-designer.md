@@ -53,7 +53,7 @@ To try adding a parameter to a report yourself, see [Tutorial: Add a Parameter t
 
 When you view a report that has parameters, the report viewer toolbar displays each parameter so you can interactively specify values. The following illustration shows the parameter area for a report with parameters @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota, and @SalesDate.  
 
-![View report with parameters](../../reporting-services/report-design/media/ssrb-rptparamviewrpt.png "View report with parameters")  
+![View report with parameters](../report-design/media/ssrb-rptparamviewrpt.png "View report with parameters")  
   
 1. **Parameters pane** The report viewer toolbar displays a prompt and default value for each parameter. You can customize the layout of parameters in the parameters pane. For more information, see [Customize the Parameters Pane in a Report &#40;Report Builder&#41;](../../reporting-services/report-design/customize-the-parameters-pane-in-a-report-report-builder.md).  
   
@@ -78,7 +78,7 @@ You can create report parameters in a few different ways.
   
  Add a dataset query that contains variables or a dataset stored procedure that contains input parameters. A dataset parameter is created for each variable or input parameter, and a report parameter is created for each dataset parameter.  
   
- ![Report Builder Parameter Dataset Properties](../../reporting-services/report-design/media/ssrb-paramdatasetprops.png "Report Builder Parameter Dataset Properties")  
+ ![Report Builder Parameter Dataset Properties](../report-design/media/ssrb-paramdatasetprops.png "Report Builder Parameter Dataset Properties")  
   
  This image from Report Builder shows:  
   

@@ -54,7 +54,7 @@ ms.author: maggies
   
 2.  On the toolbar, click **Design** to toggle to Query mode.  
   
-3.  On the MDX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box](../../reporting-services/report-data/media/iconqueryparameter.gif "Icon for the Query Parameters dialog box")). The Query Parameters dialog box opens.  
+3.  On the MDX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box](../report-design/media/iconqueryparameter.gif "Icon for the Query Parameters dialog box")). The Query Parameters dialog box opens.  
   
 4.  In the **Parameter** column, click **\<Enter Parameter>**, and then type the name of a parameter.  
   
