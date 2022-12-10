@@ -848,7 +848,7 @@ There are two ways that Power BI can obtain credentials to refresh a dataset.
 - The dataset owner stores credentials in the dataset settings.
 - The dataset owner references a gateway in the dataset settings (that contains a data source with stored credentials).
 
-If a different user needs to set up refresh or set dataset parameters, that user will need to take ownership of the dataset. Dataset ownership can be taken over by a workspace administrator, member, or contributor.
+If a different user needs to set up refresh or set dataset parameters, they will need to take ownership of the dataset. Dataset ownership can be taken over by a workspace administrator, member, or contributor.
 
 > [!NOTE]
 > Taking dataset ownership permanently removes any stored credentials for the dataset. Credentials must be re-entered to allow data refresh operations to resume.

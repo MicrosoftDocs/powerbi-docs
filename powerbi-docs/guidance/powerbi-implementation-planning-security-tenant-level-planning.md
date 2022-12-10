@@ -161,7 +161,11 @@ There are two ways to invite guest users to your tenant.
 
 Every Azure AD tenant has a globally unique identifier (GUID) known as the _tenant ID_. In Power BI, it's known as the _customer tenant ID (CTID)_. The CTID allows the Power BI service to locate content from the perspective of a different organizational tenant. The CTID needs to be appended to URLs when sharing content with an external user.
 
-Here's an example of using the CTID parameter: _https://app.powerbi.com/Redirect?action=OpenApp&amp;appId=abc123&amp;ctid=def456_
+Here's an example of using the CTID parameter.
+
+```http
+https://app.powerbi.com/Redirect?action=OpenApp&appId=abc123&ctid=def456
+```
 
 When you need to provide the [CTID for your organization](powerbi-implementation-planning-tenant-setup.md#tenant-id-for-external-users) to an external user, you can find it in the Power BI service by opening the **About Power BI** dialog window. It's available from the **Help &amp; Support (?)** menu located at the top-right of the Power BI service. The CTID is appended to the end of the tenant URL.
 

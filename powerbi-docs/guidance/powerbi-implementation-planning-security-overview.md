@@ -37,8 +37,8 @@ The focus for this series of articles is on security and privacy. It's organized
 - **[Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md):** Strategic decisions and actions you should consider that affect securing the content in your Power BI tenant. The focus is on strategic decisions that will impact consumers and content creators. It also includes strategies for file locations, external users, and using groups.
 - **[Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md):** Tactical decisions and actions you should consider when planning how to deliver secure content to read-only consumers. The focus is primarily on report viewers and app viewers. It also includes techniques for how to enforce data security and information about the *Request access* workflow for consumers.
 - **[Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md):** Tactical decisions and actions you should consider when planning for enterprise and self-service creators, who create, manage, secure, and publish content. It also includes the data discovery experience and the *Request access* workflow for content creators.
-- **Capacity and data storage security planning:** (article not currently available) Tactical decisions and actions you should consider when planning for Premium capacities and where data is stored.
-- **Gateway security planning:** (article not currently available) Tactical decisions and actions you should consider when planning for gateway and data source security.
+- **Capacity and data storage security planning (article not currently available):** Tactical decisions and actions you should consider when planning for Premium capacities and where data is stored.
+- **Gateway security planning (article not currently available):** Tactical decisions and actions you should consider when planning for gateway and data source security.
 
 ## Next steps
 
