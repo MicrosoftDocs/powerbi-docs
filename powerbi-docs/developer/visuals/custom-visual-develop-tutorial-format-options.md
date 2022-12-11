@@ -81,11 +81,11 @@ Now let's add new group called *color* for configuring the color and width of th
 2. In **Visual Studio Code**, in the `capabilities.json` file, insert the following JSON fragment into the object labeled **objects**.
 
     ```json
-        "dataPoint": {
-            "displayName": "Data colors",
+       "circle": {
             "properties": {
-                "defaultColor": {
-                    "displayName": "Default color",
+                "circleColor": {
+                    "displayName": "Color",
+                    "description": "The fill color of the circle.",
                     "type": {
                         "fill": {
                             "solid": {
@@ -94,41 +94,17 @@ Now let's add new group called *color* for configuring the color and width of th
                         }
                     }
                 },
-                "showAllDataPoints": {
-                    "displayName": "Show all",
+                "circleThickness": {
+                    "description": "The circle thickness.",
                     "type": {
-                        "bool": true
-                    }
-                },
-                "fill": {
-                    "displayName": "Fill",
-                    "type": {
-                        "fill": {
-                            "solid": {
-                                "color": true
-                            }
-                        }
-                    }
-                },
-                "fillRule": {
-                    "displayName": "Color saturation",
-                    "type": {
-                        "fill": {}
-                    }
-                },
-                 "fontSize": {
-                    "displayName": "Text Size",
-                    "type": {
-                        "formatting": {
-                            "fontSize": true
-                        }
+                        "numeric": true
                     }
                 }
             }
         }
     ```
 
-    The JSON fragment describes a group called *Data colors*, which sets the color, fill, saturation, and test size for the visual.
+    The JSON fragment describes a group called *circle*, which consists of two variables - *circleColor* and *circleThickness*.
 
 3. Save the `capabilities.json` file.
 
@@ -144,60 +120,32 @@ Now let's add new group called *color* for configuring the color and width of th
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
-    export class VisualSettings extends FormattingSettingsModel {
-     public dataPoint: dataPointSettings = new dataPointSettings();
-     public cards = [this.dataPoint]
+    export class CircleSettings extends FormattingSettingsCard{
+        public circleColor = new formattingSettings.ColorPicker({
+                    name: "circleColor",
+                    displayName: "Color",
+                    value: {value: "white"}
+        });
+
+        public circleThickness = new formattingSettings.NumUpDown({
+                    name: "circleThickness",
+                    displayName: "Thickness",
+                    value: 2,
+        });
+
+        name: string = "circle";
+        displayName: string = "Circle";
+        slices: Array<FormattingSettingsSlice> = [this.circleColor, this.circleThickness];
+
     }
 
-    export class dataPointSettings extends FormattingSettingsCard {
-     // Default color
-     public defaultColor = new formattingSettings.ColorPicker({
-      name: "defaultColor",
-      displayName: "Default Color",
-      value: {value: ""}
-     });
-     // Show all
-     public showAllDataPoints = new formattingSettings.ToggleSwitch({
-      name: "showAllDataPoints",
-      displayName: "Show all",
-      value: true
-     });
-     // Fill
-     public fill = new formattingSettings.ColorPicker({
-      name: "fill",
-      displayName: "Fill",
-      value: {value: ""}
-     });
-     // Color saturation
-     public fillRule = new formattingSettings.Slider({
-      name: "fillRule",
-      displayName: "Color saturation",
-      value: 0,
-      options: {
-       minValue: {
-               type: powerbi.visuals.ValidatorType.Min,
-                value: 0,
-            },
-            maxValue: {
-                type: powerbi.visuals.ValidatorType.Max,
-                value: 100,
-            }
-          }
-     });
-     // Text Size
-     public fontSize = new formattingSettings.NumUpDown({
-      name: "fontSize",
-      displayName: "Text Size",
-      value: 12,
-     })
-
-     name: string = "dataPoint";
-        displayName: string = "Data colors";
-        slices: Array<FormattingSettingsSlice> = [this.defaultColor, this.showAllDataPoints, this.fill, this.fillRule, this.fontSize];
-      }
+    export class VisualSettings extends FormattingSettingsModel {
+        public circle: CircleSettings = new CircleSettings();
+     public cards: FormattingSettingsCard[] = [this.circle]
+    }
     ```
 
-    This module defines the two classes.  The **VisualSettings** class ???, and the The **dataPointSettings** class which defines the properties described in the `capabilities.json` file and also sets default values.???
+    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the capabilities.json file (circleColor and circleThickness) and also sets default values. The The **VisualSettingsModel ** class which defines the properties described in the `capabilities.json` file and also sets default values.???
 
 6. Save the `settings.ts` file.
 
