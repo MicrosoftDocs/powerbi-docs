@@ -133,7 +133,7 @@ Discovery of existing data is useful for:
 
 You can set up a dataset or datamart as discoverable when it's been [endorsed](/power-bi/collaborate-share/service-endorsement-overview) (certified or promoted). When it's discoverable, content creators can find it in the [data hub](/power-bi/connect-data/service-data-hub).
 
-A content creator can also request access to the dataset or datamart. Essentially, an access request asks for [Build permission](#read-and-build-for-underlying-dataset), which is required to create new content based on it. When responding to requests for access, consider using groups instead of individual users. For more information about how to use groups for this purpose, see [Request access workflow for consumers](powerbi-implementation-planning-security-report-consumer-planning.md#request-access-workflow-for-consumers).
+A content creator can also request access to the dataset or datamart. Essentially, an access request asks for [Build permission](#read-and-build-permissions-for-underlying-dataset), which is required to create new content based on it. When responding to requests for access, consider using groups instead of individual users. For more information about how to use groups for this purpose, see [Request access workflow for consumers](powerbi-implementation-planning-security-report-consumer-planning.md#request-access-workflow-for-consumers).
 
 Consider the following three examples.
 
