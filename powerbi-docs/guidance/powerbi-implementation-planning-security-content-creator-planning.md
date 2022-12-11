@@ -517,7 +517,8 @@ Power BI datasets can connect to other datasets in a process known as _chaining_
 
 The _Allow DirectQuery connections to Power BI datasets_ tenant setting allows Power BI administrators to set up which groups of content creators can create chained datasets. If you don't want to restrict dataset creators from chaining datasets, you can leave this setting enabled for the entire organization and rely on workspace access and dataset permissions. In some cases, you may consider restricting this capability to approved content creators.
 
-As a data creator, you can restrict chaining to your dataset. It's done by enabling the _Discourge DirectQuery connection to this dataset_ option in Power BI Desktop. For more information, see [Manage DirectQuery connections to a published dataset](/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset#discourage-directquery-connections-to-a-dataset-using-power-bi-desktop).
+> [!NOTE]
+> As a dataset creator, you can restrict chaining to your dataset. It's done by enabling the _Discourage DirectQuery connection to this dataset_ option in Power BI Desktop. For more information, see [Manage DirectQuery connections to a published dataset](/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset#discourage-directquery-connections-to-a-dataset-using-power-bi-desktop).
 
 #### Dataset API queries
 
