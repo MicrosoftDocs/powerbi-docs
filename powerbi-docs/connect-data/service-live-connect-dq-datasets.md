@@ -16,9 +16,9 @@ ms.date: 12/08/2022
 
 ## Live connection
 
-When you create a report in Power BI Desktop, a .pbix file is created. Usually, the .pbix contains both the report and its dataset. When you publish or upload the .pbix to Power BI service, it's split into a report and a dataset.
+*Live connection* is a method that lets you build a report in Power BI Desktop without having to build a dataset for it. When you create your report in Power BI Desktop, you can connect it to a dataset that already exists. A *live connection* allows you to rely on existing data, which can be updated without accessing the report. 
 
-Another way of creating a report in Power BI Desktop, is to connect it to a dataset that already exists. This method is called *live connection*, and it allows you to rely on existing data, which can be updated without accessing the report. Using *live connection* you can connect your report to one of the following data sources:
+Using *live connection* you can connect your report to one of the following data sources:
 
 * A dataset that already exists in Power BI service
 
@@ -28,7 +28,7 @@ Another way of creating a report in Power BI Desktop, is to connect it to a data
 
 ## DirectQuery
 
-A Power BI dataset can have data copied into it, in what's called [import mode](service-dataset-modes-understand.md#import-mode). Or, the dataset can request data from a data source it's connected to using a method called [DirectQuery](service-dataset-modes-understand.md#directquery-mode).
+A Power BI dataset can have data copied into it during a refresh operation, in what's called [import mode](service-dataset-modes-understand.md#import-mode). Or, the dataset can dynamically request data from a data source it's connected to using a method called [DirectQuery](service-dataset-modes-understand.md#directquery-mode).
 
 When using *DirectQuery*, your report uses Data Analysis Expression (DAX) queries to get data. After the dataset receives the report's DAX query, it generates another set of queries that are run on your data source, to get the required data. If for example your data source is an SQL Server database, Power BI will generate SQL queries to get the data it needs. Other data sources may generate queries in other query languages.
 
@@ -37,6 +37,8 @@ When using *DirectQuery*, your report uses Data Analysis Expression (DAX) querie
 * Your're working against data sources with a large volume of data
 
 * You want to use 'near real-time' data
+
+You can also use *DirectQuery* with Analysis Services, as described in [Using DirectQuery for Power BI datasets and Analysis Services](desktop-directquery-datasets-azure-analysis-services.md).
 
 ## Next steps
 
