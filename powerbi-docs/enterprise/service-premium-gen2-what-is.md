@@ -85,7 +85,7 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 ## Dataset memory allocation
 
-With *Premium Gen2* and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available for datasets on each SKU is set to the limit of the memory consumption of a single Power BI dataset. For example, in a Premium Gen2 P1 capacity, you can host as many Power BI datasets as you need, as long as the size of your largest Power BI dataset isn't bigger than 25 GB. You can find the dataset memory upper limits for each SKU, in the *Max memory per dataset* column of the [Capacities and SKUs](#capacities-and-skus) table.
+With *Premium Gen2* and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), there's a limit on the memory available for each dataset based on the SKU. For example, in a Premium Gen2 P1 capacity, any dataset that exceeds 25 GB in memory usage would result in failures. You can find the dataset memory upper limits for each SKU, in the *Max memory per dataset* column of the [Capacities and SKUs](#capacities-and-skus) table.
 
 Dataset operations such as queries are subject to individual memory limits. To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Three separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per dataset* allocation.
 
@@ -97,7 +97,7 @@ Dataset operations such as queries are subject to individual memory limits. To i
 
 ## Refreshes
 
-Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There's no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
+Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
 ## Monitoring
 
