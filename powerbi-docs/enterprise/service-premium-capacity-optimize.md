@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/29/2022
+ms.date: 12/11/2022
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -227,7 +227,7 @@ Consider the optimization possibilities for a Composite model. Recall that a Com
 
 Many optimization possibilities discussed in the [Optimizing Power BI hosted models](#optimizing-power-bi-hosted-models) section apply also to models developed with Azure Analysis Services and SQL Server Analysis Services. Clear exceptions are certain features which are not currently supported, including Composite models and aggregation tables.
 
-An additional consideration for externally-hosted datasets is the database hosting in relation to the Power BI service. For Azure Analysis Services, this means creating the Azure resource in the same region as the Power BI tenant (home region). For SQL Server Analysis Services, for IaaS, this means hosting the VM in the same region, and for on-premises, it means ensuring an efficient gateway setup.
+An additional consideration for externally hosted datasets is the database hosting in relation to the Power BI service. For Azure Analysis Services, this means creating the Azure resource in the same region as the Power BI tenant (home region). For SQL Server Analysis Services, for IaaS, this means hosting the VM in the same region, and for on-premises, it means ensuring an efficient gateway setup.
 
 As an aside, it may be of interest to note that Azure Analysis Services databases and SQL Server Analysis Services tabular databases require that their models be loaded fully into memory and that they remain there at all times to support querying. Like the Power BI service, there needs to be sufficient memory for refreshing if the model must remain online during the refresh. Unlike the Power BI service, there is no concept that models are automatically aged in and out of memory according to usage. Power BI Premium, therefore, offers a more efficient approach to maximize model querying with lower memory usage.
 
