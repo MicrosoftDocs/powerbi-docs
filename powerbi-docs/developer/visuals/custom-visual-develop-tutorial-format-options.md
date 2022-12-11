@@ -49,7 +49,7 @@ This tutorial explains how to add common formatting properties to a visual. We'l
 
 3. In **Visual Studio Code**, open the `capabilities.json` file.
 
-4. Before the **dataViewMappings** array, add **objects** (after line 8).
+4. Before the **dataViewMappings** array, add **objects**.
 
     ```json
     "objects": {},
@@ -81,21 +81,46 @@ Now let's add new group called *color* for configuring the color and width of th
 2. In **Visual Studio Code**, in the `capabilities.json` file, insert the following JSON fragment into the object labeled **objects**.
 
     ```json
-        {
-            "circle": {
-                "properties": {
-                    "circleColor": {
-                        "type": {
-                            "fill": {
-                                "solid": {
-                                    "color": true
-                                }
+        "dataPoint": {
+            "displayName": "Data colors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
                             }
                         }
-                    },
-                    "circleThickness": {
-                        "type": {
-                            "numeric": true
+                    }
+                },
+                "showAllDataPoints": {
+                    "displayName": "Show all",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Fill",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fillRule": {
+                    "displayName": "Color saturation",
+                    "type": {
+                        "fill": {}
+                    }
+                },
+                 "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
                         }
                     }
                 }
@@ -103,7 +128,7 @@ Now let's add new group called *color* for configuring the color and width of th
         }
     ```
 
-    The JSON fragment describes a group called *circle*, which consists of two variables -  *circleColor* and *circleThickness*.
+    The JSON fragment describes a group called *Data colors*, which sets the color, fill, saturation, and test size for the visual.
 
 3. Save the `capabilities.json` file.
 
@@ -113,45 +138,82 @@ Now let's add new group called *color* for configuring the color and width of th
 
     ```typescript
     import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
+    import powerbi from "powerbi-visuals-api";
 
     import FormattingSettingsCard = formattingSettings.Card;
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
-    export class CircleSettings extends FormattingSettingsCard{
-        public circleColor = new formattingSettings.ColorPicker({
-            name: "circleColor",
-            displayName: "Color",
-            value: { value: "#ffffff" }
-        });
-
-        public circleThickness = new formattingSettings.NumUpDown({
-            name: "circleThickness",
-            displayName: "Thickness",
-            value: 2
-        });
-
-        public name: string = "circle";
-        public displayName: string = "Circle";
-        public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness]
+    export class VisualSettings extends FormattingSettingsModel {
+     public dataPoint: dataPointSettings = new dataPointSettings();
+     public cards = [this.dataPoint]
     }
 
-    export class VisualSettingsModel extends FormattingSettingsModel {
-        public circle: CircleSettings = new CircleSettings();
-        public cards: FormattingSettingsCard[] = [this.circle];
-    }
+    export class dataPointSettings extends FormattingSettingsCard {
+     // Default color
+     public defaultColor = new formattingSettings.ColorPicker({
+      name: "defaultColor",
+      displayName: "Default Color",
+      value: {value: ""}
+     });
+     // Show all
+     public showAllDataPoints = new formattingSettings.ToggleSwitch({
+      name: "showAllDataPoints",
+      displayName: "Show all",
+      value: true
+     });
+     // Fill
+     public fill = new formattingSettings.ColorPicker({
+      name: "fill",
+      displayName: "Fill",
+      value: {value: ""}
+     });
+     // Color saturation
+     public fillRule = new formattingSettings.Slider({
+      name: "fillRule",
+      displayName: "Color saturation",
+      value: 0,
+      options: {
+       minValue: {
+               type: powerbi.visuals.ValidatorType.Min,
+                value: 0,
+            },
+            maxValue: {
+                type: powerbi.visuals.ValidatorType.Max,
+                value: 100,
+            }
+          }
+     });
+     // Text Size
+     public fontSize = new formattingSettings.NumUpDown({
+      name: "fontSize",
+      displayName: "Text Size",
+      value: 12,
+     })
+
+     name: string = "dataPoint";
+        displayName: string = "Data colors";
+        slices: Array<FormattingSettingsSlice> = [this.defaultColor, this.showAllDataPoints, this.fill, this.fillRule, this.fontSize];
+      }
     ```
-    This module defines the two classes. The **CircleSettings** class defines two properties with names that match the objects defined in the `capabilities.json` file (**circleColor** and **circleThickness**) and also sets default values.
+
+    This module defines the two classes.  The **VisualSettings** class ???, and the The **dataPointSettings** class which defines the properties described in the `capabilities.json` file and also sets default values.???
 
 6. Save the `settings.ts` file.
 
 7. Open the `visual.ts` file.
 
-8. In the `visual.ts` file, import *VisualSettings* and *FormattingSettingsService*:
+8. In the `visual.ts` file, import the following:
 
     ```typescript
-    import { VisualSettings } from "./settings";
+    import "./../style/visual.less";
+    import powerbi from "powerbi-visuals-api";
     import { FormattingSettingsService } from "powerbi-visuals-utils-formattingmodel";
+    import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
+    import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import IVisual = powerbi.extensibility.visual.IVisual;
+    import DataView = powerbi.DataView;
+    import { VisualSettings } from "./settings";
     ```
 
     and in the **Visual** class add the following properties:
@@ -262,7 +324,7 @@ In this section you will learn how to
 
 ### Update the icon
 
-1. In the **assets** object of the `pbiviz.json` file, notice that the document defines a path to an icon. The icon is the image that appears in the **_Visualizations_** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
+1. In the **assets** object of the `pbiviz.json` file, notice that the document defines a path to an icon. The icon is the image that appears in the ***Visualizations*** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
 
 2. In Windows Explorer, copy the `icon.png` file, and then paste it to replace the default file located in the **assets** folder.
 
