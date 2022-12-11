@@ -646,7 +646,7 @@ For more information about using dataflows, see the [self-service data preparati
 
 ### Datamart creator permissions
 
-A [datamart](/power-bi/transform-model/datamarts/datamarts-overview) is a self-service analytics solutions that enables users to store and explore data that's loaded in a fully managed relational database. It also comprises an auto-generated dataset.
+A [datamart](/power-bi/transform-model/datamarts/datamarts-overview) is a self-service analytics solution that enables users to store and explore data that's loaded in a fully managed relational database. It also comprises an auto-generated dataset.
 
 Datamarts provide a simple low-code experience to ingest data from different data sources, and to extract, transform, and load (ETL) the data by using Power Query Online. The data is loaded into an Azure SQL Database that's fully managed and requires no tuning or optimization. The auto-generated dataset is always synchronized with the managed database because it's in DirectQuery mode.
 
