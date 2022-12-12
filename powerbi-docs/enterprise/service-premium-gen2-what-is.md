@@ -22,7 +22,6 @@ The following table lists some of the Premium Gen2 enhancements.
 |Enhancement           |Details  |
 |----------------------|---------|
 |Purchase Premium for individuals in your organization  |See [Power BI Premium Per User (PPU)](service-premium-per-user-faq.yml). |
-|Better performance    |Power BI operations will run at up to 16 times faster than previously, always perform at top speed, and won't slow down when the load on the capacity approaches the capacity limit. |
 |Improved metrics      |Capacity performance depends only on the amount of CPU usage. Metrics can be easily understood using the [Power BI Premium Capacity Utilization and Metrics](service-premium-gen2-metrics-app.md) app. |
 |Autoscale             |An optional feature that prevents slowdowns caused by throttling on overloaded capacities. When enabled, if the load on the capacity exceeds the capacity limits, [autoscale](service-premium-auto-scale.md) automatically adds one v-core at a time for 24-hour periods. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. |
 
@@ -55,7 +54,7 @@ The table below describes the resources and limits of each SKU.
 
 <sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
 
-<sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+<sup>4</sup> These SKUs aren’t available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 <sup>5</sup> Learn more about [parallel tasks in dataflows](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium).
 
@@ -97,7 +96,7 @@ Dataset operations such as queries are subject to individual memory limits. To i
 
 ## Refreshes
 
-Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
+Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits, and the model refresh parallelism limit for the SKU. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
 ## Monitoring
 
