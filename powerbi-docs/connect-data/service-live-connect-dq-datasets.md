@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/08/2022
+ms.date: 12/12/2022
 ---
 
 # Live connection and DirectQuery comparison
@@ -34,7 +34,7 @@ When using *DirectQuery*, your report uses Data Analysis Expression (DAX) querie
 
 *DirectQuery* is useful when:
 
-* Your're working against data sources with a large volume of data
+* You're working against data sources with a large volume of data
 
 * You want to use 'near real-time' data
 
