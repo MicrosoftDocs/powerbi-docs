@@ -25,9 +25,9 @@ ms.custom: include file
 
 <sup>2</sup> These limits only apply to the datasets workload per capacity.
 
-<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-gen2-what-is.md#memory-allocation).
+<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
 
-<sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+<sup>4</sup> These SKUs aren’t available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 <sup>5</sup> Learn more about [parallel tasks in dataflows](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium).
 
