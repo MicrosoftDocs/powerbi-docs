@@ -61,9 +61,9 @@ sections:
       - question: |
           How do users sign up for Power BI?
         answer: |
-          As a Microsoft 365 administrator, you can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Microsoft 365 admin center. When a Microsoft 365 admin signs up for Power BI, they can assign user licenses to users who should have access.
+          As a Microsoft 365 administrator, you can sign up for Power BI through the [Power BI website](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Microsoft 365 admin center. When a Microsoft 365 admin signs up for Power BI, they can assign user licenses to users who should have access.
           
-          Additionally, individual users in your organization might be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, the service automatically assigns a Power BI license to the user. For more information, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](../enterprise/service-admin-licensing-organization.md).
+          Additionally, individual users in your organization might be able to sign up for Power BI through the [Power BI website](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, the service automatically assigns a Power BI license. For more information, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](../enterprise/service-admin-licensing-organization.md).
           
       - question: |
           How do individual users in my organization sign up?
@@ -85,9 +85,9 @@ sections:
       - question: |
           How can I prevent users from joining my existing Microsoft 365 tenant?
         answer: |
-          There are steps you can take, as a global administrator, to prevent users from joining your existing Microsoft 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 for Education for Students, Faculty, and Staff).
+          There are steps you can take, as a global administrator, to prevent users from joining your existing Microsoft 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 Education for students, faculty, and staff).
           
-          Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell](/powershell/scripting/overview).)
+          Use the following PowerShell script to prevent new users from joining a managed tenant. For more information, see [What is Powershell?](/powershell/scripting/overview)
           
           ```powershell
           $msolcred = get-credential
@@ -128,7 +128,7 @@ sections:
         answer: |
           The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to *true*, which means it's enabled. If you acquired Power BI through a partner, this might be set to *false*, which means it's disabled.
           
-          Use the following PowerShell script to disable ad hoc subscriptions.([Learn more about PowerShell](/powershell/scripting/overview).)
+          Use the following PowerShell script to disable ad hoc subscriptions. For more information, see [What is Powershell?](/powershell/scripting/overview)
           
           1. Sign into Azure Active Directory by using your Microsoft 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
           
@@ -193,7 +193,7 @@ sections:
       - question: |
           If I have multiple domains, can I control the Microsoft 365 tenant that users get added to?
         answer: |
-          If you do nothing, the service creates a tenant for each user email domain and subdomain. If you want all users to be in the same tenant regardless of their email address extensions: Create a target tenant ahead of time, or use an existing tenant. Then add all the existing domains and subdomains that you want consolidated within that tenant. Every user with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
+          If you do nothing, the service creates a tenant for each user email domain and subdomain. If you want all users to be in the same tenant regardless of their email address extensions, create a target tenant ahead of time or use an existing tenant. Next, add all the existing domains and subdomains that you want consolidated within that tenant. Every user with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
           
           > [!IMPORTANT]
           > After you've created users, there's no supported automated mechanism to move users across tenants. To learn about adding domains to a single Microsoft 365 tenant, see [Add your users and domain to Microsoft 365](/office365/admin/setup/add-domain/).
