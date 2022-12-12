@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 08/07/2022
+ms.date: 12/12/2022
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -73,8 +73,8 @@ The process for exporting a report from Power BI Desktop to PDF is similar to th
 ## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PDF** feature.
 
-* R, Python, and Power Apps visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
-* Power BI visuals that have been certified are supported. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. In the PDF, they display with an error message.
+* R, Python, Power BI Visio visuals, and Power Apps visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
+* Power BI visuals that have been certified are supported in most cases. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. In the PDF, they display with an error message.
 * The ESRI ArcGIS for Power BI visual is not supported.
 * Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
 * Reports larger than 500 MB currently can't be exported. 
