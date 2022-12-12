@@ -168,7 +168,7 @@
         href: service-security-sensitivity-label-audit-schema.md  
       - name: Protection metrics report
         href: service-security-data-protection-metrics-report.md
-      - name: Troubleshooting sensitivity labels
+      - name: Troubleshoot sensitivity labels
         href: service-security-sensitivity-label-troubleshooting.md
     - name: Data loss prevention
       expanded: false
