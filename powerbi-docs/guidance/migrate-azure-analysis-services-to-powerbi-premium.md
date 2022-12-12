@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 11/24/2022
 ms.custom: intro-migration
 ---
 
@@ -159,11 +159,7 @@ The Premium Per User (PPU) license is a per-user license that provides a lower-c
 > [!TIP]
 > It's possible to incrementally upgrade Power BI Pro licenses to PPU licenses.
 
-### Frontend vs. backend v-cores and Pro licenses
-
-Power BI Premium provides unlimited distribution of Power BI content to end users without requiring Power BI Pro licenses.
-
-The cost of Power BI Premium is split equally between *frontend and backend v-cores*. Frontend v-cores are mostly responsible for the web service, reporting, and user experiences. Power BI datasets consume resources from backend v-cores. To get the best value from Power BI Premium, customers should strive to strike a balance between frontend and backend usage. For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacity-nodes).
+### Pro licenses
 
 A Pro (or PPU) license is required to publish and manage Power BI content. Pro licenses are typically assigned to developers and administrators, not end users.
 

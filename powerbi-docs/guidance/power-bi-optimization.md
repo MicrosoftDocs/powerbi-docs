@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/17/2022
+ms.date: 11/24/2022
 ---
 
 # Optimization guide for Power BI
@@ -37,7 +37,7 @@ Power BI visualizations can be dashboards, Power BI reports, or Power BI paginat
 
 It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your dataset enforces dynamic [row-level security (RLS)](../enterprise/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
 
-When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to back-end cores on the fly.
+When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to v-cores on the fly.
 
 As the name suggests, retrieving the data from the cache provides better and more consistent performance than relying on the data source. One way to take advantage of this functionality is to have dashboards be the first landing page for your users. Pin often-used and highly requested visuals to the dashboards. In this way, dashboards become a valuable "first line of defense", which delivers consistent performance with less load on the capacity. Users can still click through to a report to analyze details.
 
