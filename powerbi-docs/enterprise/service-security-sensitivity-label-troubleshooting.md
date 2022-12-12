@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/07/2022
+ms.date: 12/12/2022
 LocalizationGroup: Data from files
 ---
 
@@ -75,7 +75,7 @@ To prevent leakage of sensitive data, the Power BI admin can block export from n
 
 * Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Purview compliance portal](https://compliance.microsoft.com/).
 
-* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an *unprotected* sensitivity label will succeed, but the sensitivity label will not be inherited. See [Sensitivity label inheritance from data sources](./service-security-sensitivity-label-inheritance-from-data-sources.md) for detail.
+* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an **unprotected** sensitivity label will succeed, but the sensitivity label will not be inherited. See [Sensitivity label inheritance from data sources](./service-security-sensitivity-label-inheritance-from-data-sources.md) for detail.
 
 ## Problems with PBIX files
 
@@ -184,7 +184,7 @@ Sensitivity labels inherited from data sources are automatically propagated down
 * The data in the data source must be labeled with sensitivity labels from Microsoft Purview Information Protection.
 * The scope of the labels must be Files and emails and Azure Purview assets. See Extending sensitivity labels to Azure Purview and Creating new sensitivity labels or modifying existing labels.
 * Sensitivity labels must be enabled in Power BI.
-* The Apply sensitivity labels from data sources to their data in Power BI (preview) tenant admin setting must be enabled.
+* The **Apply sensitivity labels from data sources to their data in Power BI (preview)** tenant admin setting must be enabled.
 * All conditions for applying a label must be met.
 * Inheritance from data sources isn't supported for datasets located in classic workspaces. My Workspace and V2 workspaces are supported.
 * Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
@@ -203,7 +203,8 @@ Sensitivity labels inherited from data sources are automatically propagated down
 
 ## Defender for Cloud Apps
 
-* To use Defender for Cloud Apps with Power BI, you must use and configure relevant Microsoft security services, some of which are set outside Power BI. In order to have Defender for Cloud Apps in your tenant, you must have one of the following licenses:
+To use Defender for Cloud Apps with Power BI, you must use and configure relevant Microsoft security services, some of which are set outside Power BI. In order to have Defender for Cloud Apps in your tenant, you must have one of the following licenses:
+
 * Defender for Cloud Apps: Provides Defender for Cloud Apps capabilities for all supported apps, part of the EMS E5 and Microsoft 365 E5 suites.
 * Office 365 Cloud App Security (a subset of Defender for Cloud Apps): Provides Cloud App Security capabilities only for Office 365, part of the Office 365 E5 suite.
 
@@ -231,7 +232,7 @@ In order to access Defender for Cloud Apps information, your organization must h
 
 ### I don't see the data protection metrics report in Shared with me, Recents, or Favorites
 
-* The data protection metrics report is a special report and doesn't show up in the **Shared with me**, **Recent**, and **Favorites** lists.
+The data protection metrics report is a special report and doesn't show up in the **Shared with me**, **Recent**, and **Favorites** lists.
 
 ### I can't share the data protection metrics report with external users
 
