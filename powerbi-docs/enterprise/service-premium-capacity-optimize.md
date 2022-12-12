@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/17/2022
+ms.date: 12/11/2022
 ms.custom: 
 LocalizationGroup: Premium
 ---
@@ -130,7 +130,7 @@ When the conditions are not met, the refresh is queued until the conditions are 
 
 For a full refresh, recall that at least double the current dataset memory size is required. If sufficient memory is not available, then the refresh cannot commence until model eviction frees up memory - this means delays until one or more datasets becomes inactive and can be evicted.
 
-Recall that the supported number of maximum concurrent refreshes is set to 1.5 times the backend v-cores, rounded up.
+Recall that the supported number of maximum concurrent refreshes is set to 0.75 times the number of v-cores, rounded up.
 
 A scheduled refresh will fail when it cannot commence before the next scheduled refresh is due to commence. An on-demand refresh triggered manually from the UI will attempt to run up to three times before failing.
 
@@ -227,7 +227,7 @@ Consider the optimization possibilities for a Composite model. Recall that a Com
 
 Many optimization possibilities discussed in the [Optimizing Power BI hosted models](#optimizing-power-bi-hosted-models) section apply also to models developed with Azure Analysis Services and SQL Server Analysis Services. Clear exceptions are certain features which are not currently supported, including Composite models and aggregation tables.
 
-An additional consideration for externally-hosted datasets is the database hosting in relation to the Power BI service. For Azure Analysis Services, this means creating the Azure resource in the same region as the Power BI tenant (home region). For SQL Server Analysis Services, for IaaS, this means hosting the VM in the same region, and for on-premises, it means ensuring an efficient gateway setup.
+An additional consideration for externally hosted datasets is the database hosting in relation to the Power BI service. For Azure Analysis Services, this means creating the Azure resource in the same region as the Power BI tenant (home region). For SQL Server Analysis Services, for IaaS, this means hosting the VM in the same region, and for on-premises, it means ensuring an efficient gateway setup.
 
 As an aside, it may be of interest to note that Azure Analysis Services databases and SQL Server Analysis Services tabular databases require that their models be loaded fully into memory and that they remain there at all times to support querying. Like the Power BI service, there needs to be sufficient memory for refreshing if the model must remain online during the refresh. Unlike the Power BI service, there is no concept that models are automatically aged in and out of memory according to usage. Power BI Premium, therefore, offers a more efficient approach to maximize model querying with lower memory usage.
 
@@ -241,7 +241,7 @@ Capacity Admins will therefore need to consider many factors specific to your en
 
 - **Model size and data characteristics** - Import models must be fully loaded into memory to allow querying or refreshing. LC/DQ datasets can require significant processor time and possibly significant memory to evaluate complex measures or RLS rules. Memory and processor size, and LC/DQ query throughput are constrained by the capacity size.
 - **Concurrent active models** - The concurrent querying of different import models will deliver best responsiveness and performance when they remain in memory. There should be sufficient memory to host all heavily-queried models, with additional memory to allow for their refresh.
-- **Import model refresh** - The refresh type (full or incremental), duration and complexity of Power Query queries and calculated table/column logic can impact on memory and especially processor usage. Concurrent refreshes are constrained by the capacity size (1.5 x backend v-cores, rounded up).
+- **Import model refresh** - The refresh type (full or incremental), duration and complexity of Power Query queries and calculated table/column logic can impact on memory and especially processor usage. Concurrent refreshes are constrained by the capacity size (0.75 x v-cores, rounded up).
 - **Concurrent queries** - Many concurrent queries can result in unresponsive reports when processor or LC/DQ connections exceeds the capacity limit. This is especially the case for report pages that include many visuals.
 - **Dataflows and paginated reports** - The capacity can be configured to support dataflows and paginated reports, with each requiring a configurable maximum percentage of capacity memory. Memory is dynamically allocated to dataflows, but is statically allocated to paginated reports.
 
