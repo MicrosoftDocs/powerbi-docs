@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/13/2022
+ms.date: 11/24/2022
 LocalizationGroup: Premium 
 ---
 
@@ -126,11 +126,11 @@ The CPU over time chart displays the following elements:
 
 * **Interactive CPU** - Red columns represent the number of CPU seconds used during interactive operations in a 30 second period.
 
-    [*Interactive*](service-premium-interactive-background-operations.md#interactive-operations) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
+    [*Interactive*](service-premium-interactive-background-operations.md#interactive-operations) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads.
 
 * **Background** - Blue columns represent the number of CPU seconds used during background operations in a 30 second period.
 
-    [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores.
+    [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes.
 
 * **CPU Limit** - A yellow dotted line that shows the threshold of the allowed number of CPU seconds for the selected capacity. Columns that stretch above this line, represent timepoints where the capacity is overloaded.
 
