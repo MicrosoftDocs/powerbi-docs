@@ -163,7 +163,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
     :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules.png" alt-text="A screenshot of the deployment rules pane, showing that you can set rules for dataflows, datasets, datamarts and paginated reports.":::
 
-3. Select the dataflow, dataset or paginated report you want to create a rule for.
+3. Select the dataflow, dataset, datamart or paginated report you want to create a rule for.
 
     :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules-selection.png" alt-text="A screenshot of the deployment rules pane, showing two datasets in the datasets tab. To configure a rule select an item from one of the tabs.":::
 
