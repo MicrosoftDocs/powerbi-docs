@@ -76,7 +76,7 @@ Use one of the autoscaling techniques described here to elastically resize your 
 
 ## Considerations and limitations
 
-Scaling gen1 capacities can take about a minute. During this time, the capacity won't be available and embedded content may fail to load. With [Embedded Gen2](power-bi-embedded-generation-2.md) capacities, you can scale your Power BI Embedded resource without experiencing any downtime.
+Scaling capacities may involve a small amount of downtime.
 
 ## Next steps
 

@@ -155,7 +155,7 @@ The templates used in this quickstart are from [Azure Quickstart Templates](http
 
 Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - create a Power BI Embedded capacity.
 
-Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
+Use this template to create a Power BI Embedded resource.
 
 ```json
 {
@@ -331,14 +331,8 @@ Your subscription must be associated with an Azure Active Directory (Azure AD) o
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Manage capacities](../../enterprise/service-admin-premium-manage.md)
+* [Manage capacities](../../enterprise/service-admin-premium-manage.md)
+* [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
+* [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 
->[!div class="nextstepaction"]
->[Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
-
->[!div class="nextstepaction"]
->[Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[More questions? Try asking the Power BI Community](https://community.powerbi.com/)
+[More questions? Try asking the Power BI Community](https://community.powerbi.com/)

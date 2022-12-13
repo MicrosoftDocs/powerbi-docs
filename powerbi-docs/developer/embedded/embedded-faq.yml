@@ -60,7 +60,7 @@ sections:
       - question: |
           What is Power BI Embedded Generation 2?
         answer: |
-          Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+          Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplifies the management of embedded capacities, and improves the Power BI Embedded experience.
 
       - question: |
           How can I autoscale Embedded Gen2?
