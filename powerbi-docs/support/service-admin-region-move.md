@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 11/21/2022
+ms.date: 12/13/2022
 ms.custom: template-how-to; subject-moving-resources
 ---
 
