@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/13/2022
+ms.date: 12/14/2022
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -81,6 +81,7 @@ The **Database** category provides the following data connections:
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Google BigQuery (Azure AD)(Beta)
 * Vertica
 * Snowflake
 * Essbase
@@ -136,7 +137,7 @@ The **Azure** category provides the following data connections:
 * Azure Database for PostgreSQL
 * Azure Blob Storage
 * Azure Table Storage
-* Azure Cosmos DB
+* Azure Cosmos DB v1
 * Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
@@ -181,13 +182,15 @@ The **Online Services** category provides the following data connections:
 * Smartsheet
 * SparkPost (Beta)
 * SweetIQ (Beta)
-* Planview Enterprise One - CTM (Beta)
+* Planview Enterprise Architecture
 * Zendesk (Beta)
 * Asana (Beta)
 * Assemble Views
 * Automation Anywhere
 * Automy Data Analytics (Beta)
 * Dynamics 365 Customer Insights (Beta)
+* Databricks (Beta)
+* Digital Construction Works Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM
@@ -200,14 +203,14 @@ The **Online Services** category provides the following data connections:
 * Projectplace for Power BI
 * Product Insights (Beta)
 * Profisee (Beta)
-* Quick Base
+* Quickbase
 * SoftOne BI (Beta)
 * Spigit (Beta)
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
 * Viva Insights
-* Zoho Creator (Beta)
+* Zoho Creator
 
 
 
@@ -234,7 +237,7 @@ The **Other** category provides the following data connections:
 * Acterys : Model Automation & Planning (Beta)
 * Amazon OpenSearch Service (Beta)
 * Anaplan Connector
-Autodesk Construction Cloud (Beta)
+* Autodesk Construction Cloud (Beta)
 * Solver
 * BitSight Security Ratings
 * BQE Core
@@ -246,7 +249,7 @@ Autodesk Construction Cloud (Beta)
 * EQuIS (Beta)
 * FactSet RMS (Beta)
 * FHIR
-* Google Sheets (Beta)
+* Google Sheets
 * Information Grid (Beta)
 * Jamf Pro (Beta)
 * Kognitwin
