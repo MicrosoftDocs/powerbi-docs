@@ -34,7 +34,7 @@ In this tutorial, you will:
 ## Prerequisites
 
 * **Sign up for Power BI**: If you're not already signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-* **Install the Power BI app for iOS**: [Download the iOS app](https://apps.apple.com/app/microsoft-power-bi/id929738808) from the Apple App Store to your iPad, iPhone, or iPod Touch.
+* **Install the Power BI app for iOS**: [Download the iOS app](https://apps.apple.com/app/microsoft-power-bi/id929738808) from the Apple App Store to your iPad or iPhone.
 * **Download sample data**: The first step is to download the **Opportunity Analysis Sample** into your Power BI service account. See [Install built-in samples](../../create-reports/sample-datasets.md#install-built-in-samples) for instructions. Be sure to choose the **Opportunity Analysis Sample**.
 
 
