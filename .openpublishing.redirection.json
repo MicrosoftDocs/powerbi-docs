@@ -4774,6 +4774,11 @@
             "source_path": "powerbi-docs/developer/embedded/embedded-transition-gen1-to-gen2.md",
             "redirect_url": "/power-bi/developer/embedded/index",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/power-bi-embedded-generation-2.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
         }
     ]           
 }
