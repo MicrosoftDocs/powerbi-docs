@@ -159,7 +159,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
     :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment settings button, located in the deployment settings.":::
 
-2. You can set rules to **dataflows**, **datasets**, **datamarts** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
+2. You can set rules to **dataflows**, **datasets**, **datamarts** and **paginated reports**. To find the Power BI item you want to set a rule for, use the search functionality or filter functionalities.
 
     :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules.png" alt-text="A screenshot of the deployment rules pane, showing that you can set rules for dataflows, datasets, datamarts and paginated reports.":::
 
