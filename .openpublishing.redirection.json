@@ -1086,6 +1086,10 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/support/service-admin-portal-help-support.md",
+            "redirect_url": "/power-bi/admin/service-admin-portal-help-support",
+            "redirect_document_id": false
+        },{
             "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
             "redirect_url": "/power-bi/admin/service-admin-portal",
             "redirect_document_id": false
@@ -3921,11 +3925,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/admin/service-admin-portal-help-support.md",
-            "redirect_url": "/power-bi/support/service-admin-portal-help-support",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/service-tips-for-finding-help.md",
             "redirect_url": "/power-bi/fundamentals/service-tips-for-finding-help",
             "redirect_document_id": true
@@ -4765,11 +4764,15 @@
             "source_path": "powerbi-docs/guidance/admin-tenant-settings.md",
             "redirect_url": "/power-bi/admin/service-admin-portal-about-tenant-settings",
             "redirect_document_id": false
-        }
-        ,
+        },
         {
             "source_path": "powerbi-docs/admin/admin-microsoft-graph-metadata.md",
             "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embedded-transition-gen1-to-gen2.md",
+            "redirect_url": "/power-bi/developer/embedded/index",
             "redirect_document_id": false
         }
     ]           

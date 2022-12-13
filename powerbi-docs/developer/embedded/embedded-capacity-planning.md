@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/3/2022
+ms.date: 11/24/2022
 ms.custom: engagement-fy23
 ---
 
@@ -49,24 +49,7 @@ For a more detailed tutorial on optimizing performance, see our [learn module](/
 The following table summarizes all the limitations that are dependent on the capacity size.​
 To determine the minimum SKU for your capacity, check the **Max memory per dataset (GB)** column. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
-| ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
-| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
-| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
-| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  |
-| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
-| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
-| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
-| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
-| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
-
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
-
-<sup>2</sup> These limits only apply to the datasets workload per capacity.
-
-<sup>3</sup> The *Max memory per dataset (GB)* column (also called the *model size limit*) represents an upper bound for the dataset size. However, some memory must be reserved for operations such as dataset refreshes and queries. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
-
-<sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+[!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
 ## Assess your capacity load
 
