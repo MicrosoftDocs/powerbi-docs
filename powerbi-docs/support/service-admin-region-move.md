@@ -29,6 +29,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 ### Awareness
 
+- The end-to-end migration process may take up to six months. We prioritize service reliability and deployment schedules can change, so we may need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
+
 - Migration requires about six hours of down time. During migration, users can't access Power BI and will see an error message similar to the one shown in the following screenshot. The actual down time depends on the volume of data to be migrated.
 
   :::image type="content" source="media\service-admin-region-move\user-error-message.png" alt-text="Screen capture showing example error message shown to users during migration.":::
