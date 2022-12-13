@@ -7,11 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/08/2022
+ms.date: 12/13/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
-
 
 # What is Power BI Premium Gen2?
 
@@ -74,7 +73,9 @@ Dataset operations such as queries are subject to individual memory limits. To i
 
 ## Refreshes
 
-Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits, and the model refresh parallelism limit for the SKU. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
+Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. However, refreshing individual datasets is governed by existing capacity memory and CPU limits, and the model refresh parallelism limit for the SKU, as described in [Capacities and SKUs](#capacities-and-skus).
+
+You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
 ## Monitoring
 
