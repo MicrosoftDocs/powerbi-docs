@@ -155,9 +155,9 @@ You can configure data source rules and parameter rules. The following table lis
 
 To create a deployment rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
 
-1. In the pipeline stage you want to create a deployment rule for, select **Deployment settings**.
+1. In the pipeline stage you want to create a deployment rule for, select **Deployment rules**.
 
-    :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment settings button, located in the deployment settings.":::
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment rules button, located in the deployment rules.":::
 
 2. You can set rules to **dataflows**, **datasets**, **datamarts** and **paginated reports**. To find the Power BI item you want to set a rule for, use the search functionality or filter functionalities.
 
