@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/22/2022
+ms.date: 12/13/2022
 ---
 
 # Administrators: Manage the Power BI Desktop sign-in form
