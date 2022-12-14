@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 12/14/20202
 ---
 # Fixing "Corporate SSL certificate is untrusted" - Power BI
 When signing in to the Android mobile app for Microsoft Power BI, you may see the message, "Could not authenticate because your corporate SSL certificate is untrusted by this device. Contact your company IT admin." 

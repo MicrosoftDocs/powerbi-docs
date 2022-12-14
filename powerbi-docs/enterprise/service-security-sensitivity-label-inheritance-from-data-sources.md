@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 11/03/2021
+ms.date: 12/14/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity label inheritance from data sources (preview)
@@ -32,8 +32,8 @@ To be operative, [sensitivity label inheritance from data sources must be enable
     1. [Classify your Azure SQL data using Azure Purview labels](/azure/sql-database/scripts/sql-database-import-purview-labels).
     * The scope of the labels must be **Files and emails** and **Azure Purview assets**. See [Extending sensitivity labels to Azure Purview](/azure/purview/create-sensitivity-label#extending-sensitivity-labels-to-azure-purview) and [Creating new sensitivity labels or modifying existing labels](/azure/purview/create-sensitivity-label#creating-new-sensitivity-labels-or-modifying-existing-labels).
 * [Sensitivity labels must be enabled in Power BI](service-security-enable-data-sensitivity-labels.md).
-* The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled.
 * All conditions for applying a label must be met.
+* Power BI service only: The **[Apply sensitivity labels from data sources to their data in Power BI (preview)](../admin/service-admin-portal-information-protection.md#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)** tenant admin setting must be enabled.
 
 ## Inheritance behavior
 * In the Power BI service, when the dataset is connected to the data source, Power BI inherits the label and applies it automatically to the dataset. Subsequently, inheritance occurs upon dataset refresh. In Power BI Desktop, when you connect to the data source via **Get data**, Power BI inherits the label and automatically applies it to the *.pbix* file (both the dataset and report). Subsequently inheritance occurs upon refresh. 
