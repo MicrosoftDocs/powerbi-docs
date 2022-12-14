@@ -16,7 +16,7 @@ When signing in to the Android mobile app for Microsoft Power BI, you may see th
 What you need to do usually depends on the operating system on your Android device, but there are a couple of other issues that may cause this error.
 
 ## Google Chrome version 
-The the Google Chrome app on your device may need updating. Install the latest version of the Google Chrome app.
+The Google Chrome app on your device may need updating. Install the latest version of the Google Chrome app.
 
 ## Time-zone settings
 Time-zone settings on your device may be wrong.
