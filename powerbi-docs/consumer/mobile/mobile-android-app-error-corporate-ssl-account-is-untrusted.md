@@ -15,21 +15,11 @@ When signing in to the Android mobile app for Microsoft Power BI, you may see th
 
 What you need to do usually depends on the operating system on your Android device, but there are a couple of other issues that may cause this error.
 
-## On Android 7 or later
-Look for an update for an app named **Chrome**, and install the update.
-
-## On Android 6 and earlier
-Your device may need an updated version of System Webview. It may be installed on your device, and you may just need to click **Update**.
-
-If System Webview isn't installed on your device:
-
-1. On your Android device, close Power BI.
-2. Open the Google Play Store and search for **System Webview** by Google Inc.
-3. Install it.
-4. Restart the Power BI app and sign in.
+## Google Chrome version 
+The the Google Chrome app on your device may need updating. Install the the latest version of the Google Chrome app.
 
 ## Time-zone settings
-Time-zone settings on your device may be wrong. 
+Time-zone settings on your device may be wrong.
 
 Go to **Settings** > **System** > **Date and time** to check them.
 
