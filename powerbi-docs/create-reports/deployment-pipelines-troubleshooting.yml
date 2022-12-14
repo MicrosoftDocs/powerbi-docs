@@ -60,7 +60,7 @@ sections:
       - question: |
           Why can't I see the pipeline stage tag in my workspace?
         answer: |
-          Deployment pipelines display a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#permissions) or if you're a workspace admin.
+          Deployment pipelines display a pipeline stage tag in workspaces that are assigned to a pipeline. To see these tags, you need to be a [pipeline admin](deployment-pipelines-process.md#permissions). Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#permissions).
           
           > [!div class="mx-imgBorder"]
           > ![A screenshot of the production tag in a production pipeline workspace.](media/deployment-pipelines-troubleshooting/production-tag.png)
