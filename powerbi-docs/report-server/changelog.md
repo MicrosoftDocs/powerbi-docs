@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/2/2022
+ms.date: 12/14/2022
 ---
 
 # Change log for Power BI Report Server
@@ -18,6 +18,17 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## September 2022
 - **Power BI Report Server**
+    - *Version: 1.15.8377.1837 (build 15.0.1110.135), Released: December 13, 2022*
+        - Features
+            - Power BI Migration is enabled by default
+            - Multi-row card selection is supported
+            - Added ability to restrict Excel files for upload
+        - Bug fixes
+            -  Fixed issue with saving subscriptions using weekdays-based schedule
+            -  Fixed issue with refreshing long text data through ODBC in PBIX reports
+            -  Fixed issue with rendering custom visuals in new PBIX reports
+            -  Fixed issue with rendering RDL report with parameters by pressing Enter in parameter field
+            
     - *Version: 1.15.8300.38452 (build 15.0.1110.120), Released: September 26, 2022*
         - Features
             - Custom Visual API shipped with release - version v4.7.0 
