@@ -21,9 +21,7 @@ The app is updated regularly with new features and functionality. Make sure you'
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](/power-bi/admin/service-interruption-notifications#capacity-and-reliability-notifications) for more information.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
-
->To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 
 > [!NOTE]
 > The metrics app cannot be used to monitor Premium Per User (PPU) activities or capacity.
@@ -307,6 +305,7 @@ You can use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacit
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
 
 Power BI has released Power BI Premium Gen2, which improves the Power BI Premium experience with improvements in the following:
+
 * Performance
 * Per-user licensing
 * Greater scale
