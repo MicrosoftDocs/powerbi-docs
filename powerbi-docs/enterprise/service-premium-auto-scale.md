@@ -31,7 +31,7 @@ The following sections describe the steps in detail.
 >[!NOTE]
 >
 >* Autoscale isn’t available for Microsoft 365 Government Community Cloud (GCC), due to the use of the commercial Azure cloud.
->* Embedded Gen 2 does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity)
+>* [Embedded Gen 2](../developer/embedded/embedded-analytics-power-bi.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity)
 
 ## Configure an Azure subscription to use with Autoscale
 

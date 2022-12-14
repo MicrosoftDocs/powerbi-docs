@@ -25,7 +25,6 @@ Power BI is constantly improving in how it protects Premium capacity users again
 
 > [!NOTE]
 > Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 capacities do not require restarts, so this feature is not available in Premium Gen2.
->
 
 > [!NOTE]
 > This process and functionality does not apply to Power BI Premium Per User (PPU) capacities or activities.

@@ -122,7 +122,7 @@ In a healthy capacity the visual will look like this, showing a gap between All 
 In a capacity experiencing memory pressure, the same visual will clearly show active memory and total memory converging, meaning that it is impossible to load additional datasets into memory then. In this case, the Power BI administrator can click **Capacity Restart** (in **Advanced Options** of the capacity settings area of the admin portal). Restarting the capacity results in all datasets being flushed from memory and allowing them to reload into memory as required (by queries or data refresh).
 
 > [!NOTE]
-> For Premium Gen2 and Embedded Gen2, memory consumption does not need to be tracked. The only limitation in Premium Gen2 and Embedded Gen2, is on the memory footprint of a single item. The footprint cannot exceed the memory available on the capacity. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> For Premium Gen2 and [Embedded Gen2](../developer/embedded/embedded-analytics-power-bi.md), memory consumption does not need to be tracked. The only limitation in Premium Gen2 and Embedded Gen2, is on the memory footprint of a single item. The footprint cannot exceed the memory available on the capacity. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 
 ![**Active** memory converging with **All** memory](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
@@ -143,7 +143,7 @@ This effect can be especially apparent when a dataset is consumed in short burst
 In some cases, Power BI administrators can request that dataset owners create a less volatile query workload by creating a dashboard (which queries periodically with any dataset refresh for cached tiles) instead of a report. This can help prevent spikes when the dashboard is loaded. This solution may not always be possible for given business requirements, however it can be an effective way to avoid CPU saturation, without making changing to the dataset.
 
 > [!NOTE]
-> For Premium Gen2 and Embedded Gen2, CPU time utilization is tracked on a per-item level, and is visible in the capacity utilization app. Each item displays its total CPU time utilization on a given timespan. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> For Premium Gen2 and [Embedded Gen2](../developer/embedded/embedded-analytics-power-bi.md), CPU time utilization is tracked on a per-item level, and is visible in the capacity utilization app. Each item displays its total CPU time utilization on a given timespan. For more information about Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
 
 ## Acknowledgments
 
