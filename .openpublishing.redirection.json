@@ -4751,6 +4751,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-android-error-update-android-system-webview.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/enterprise/service-admin-governance.md",
             "redirect_url": "/power-bi/guidance/powerbi-adoption-roadmap-governance",
             "redirect_document_id": false
