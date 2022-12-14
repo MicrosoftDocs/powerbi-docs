@@ -41,7 +41,7 @@ Work through [Run Python scripts in Power BI Desktop](desktop-python-scripts.md)
 
 1. After you import the Python script, select the **Python visual** icon in the Power BI Desktop **Visualizations** pane.
 
-   ![Screenshot that shows the Python option in Visualizations](media/desktop-python-visuals/python-visuals-2.png)
+   ![Screenshot that shows the Python option in Visualizations.](media/desktop-python-visuals/python-visuals-2.png)
 
 1. In the **Enable script visuals** dialog box that appears, select **Enable**.
 
@@ -172,7 +172,7 @@ The following table describes Python visuals capabilities based on licensing.
 |**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    |  
 |**Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    | 
 
-For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](../enterprise/service-admin-purchasing-power-bi-pro.md)
+For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](../enterprise/service-admin-purchasing-power-bi-pro.md).
 
 ## Next steps
 
