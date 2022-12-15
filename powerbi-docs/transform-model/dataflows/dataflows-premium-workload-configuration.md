@@ -67,7 +67,7 @@ We'll use this restaurant analogy as we explain and provide guidance on each of 
 
 #### Premium capacity SKUs - scale up the hardware
 
-Power BI Premium workloads use v-cores to serve fast queries across the various workload types. The [capacity nodes](../../enterprise/service-premium-gen2-what-is.md#capacity-nodes) article includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there – [Capacity nodes](../../enterprise/service-premium-gen2-what-is.md#capacity-nodes). 
+Power BI Premium workloads use v-cores to serve fast queries across the various workload types. [Capacities and SKUs](../../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there.
 
 In our restaurant analogy, choosing a capacity is like choosing a higher-quality restaurant. Though a higher cost, you can expect a higher level of performance due to the increase in v-cores and more memory. When you go to a bigger restaurant, you get a bigger kitchen, and better chefs, which are akin to upgrading to a higher SKU in Power BI Premium, giving you the benefit of increasing CPU speed, increasing memory per operation, and adding more parallelism.
 

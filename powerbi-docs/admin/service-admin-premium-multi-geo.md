@@ -111,4 +111,4 @@ Power BI has released Power BI Premium Gen2, which improves the Power BI Premium
 - Autoscaling
 - Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](../enterprise/service-premium-gen2-what-is).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](../enterprise/service-premium-gen2-what-is.md).
