@@ -30,5 +30,4 @@ The following links provide information that can be useful for customer-managed 
 
 * [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 * [Configure Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md)
-* [How capacities function](service-premium-what-is.md#how-capacities-function)
 * [Power BI security white paper](../guidance/whitepaper-powerbi-security.md)
