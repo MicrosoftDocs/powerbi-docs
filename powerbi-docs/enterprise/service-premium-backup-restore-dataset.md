@@ -114,12 +114,12 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 
 ## Next steps
 
-* [What is Power BI Premium?](service-premium-what-is.md)
+* [What is Power BI Premium?](service-premium-gen2-what-is.md)
 * [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 * [Analysis Services cmdlets for PowerShell](https://www.powershellgallery.com/packages/Az.AnalysisServices)
 * [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
-* [Power BI Premium FAQ](service-premium-faq.yml)
+* [Power BI Premium FAQ](service-premium-gen2-faq.yml)
 * [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
 * [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 * [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
