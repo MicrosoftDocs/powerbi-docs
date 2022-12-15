@@ -21,7 +21,7 @@ Managing Power BI Premium involves creating, managing, and monitoring Premium ca
 The **Capacity Settings** page of the Power BI Admin portal displays the number of v-cores purchased and Premium capacities available. The page allows Global administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-gen2-what-is.md#power-bi-premium-generation-2).
 
 > [!NOTE]
 > You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
@@ -47,7 +47,7 @@ Capacity Admins cannot access workspace content unless explicitly assigned in wo
 
 Capacity size is selected from an available list of SKU options, which is constrained by the number of available v-cores in the pool. It's possible to create multiple capacities from the pool, which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing workspaces, and several workspaces in shared capacity.
 
-![An example setup for the fictitious Contoso organization](media/service-premium-capacity-manage/contoso-organization-example.png)
+![An example setup for the fictitious Contoso organization](media/service-premium-capacity-manage-gen2/contoso-organization-example.png)
 
 A Premium capacity can be assigned to a region other than the home region of the Power BI tenant, known as multi-geo. Multi-geo provides administrative control over which datacenters within defined geographic regions your Power BI content resides. The rationale for a multi-geo deployment is typically for corporate or government compliance, rather than performance and scale. Report and dashboard loading still involves requests to the home region for metadata. To learn more, see [Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md).
 
@@ -81,13 +81,13 @@ Capacity Admins, as well as Global Administrators or Power BI service administra
 
 You can enable Premium capabilities in a workspace by setting the proper license mode. To set a license mode, you must be both a workspace admin, and have assignment permissions. To enable Premium capabilities for P and EM SKUs, set the license mode to Premium per capacity. To enable Premium capabilities for A SKU’s, set the license mode to Embedded. To enable Premium capabilities for Premium Per User (PPU), mark the license mode as Premium Per User. To remove a workspace from Premium, mark the workspace license mode as Pro.
 
-![Using the Workspace pane to assign a workspace to a Premium capacity](media/service-premium-capacity-manage/assign-workspace-capacity-02.png)
+![Using the Workspace pane to assign a workspace to a Premium capacity](media/service-premium-capacity-manage-gen2/assign-workspace-capacity-02.png)
 
 Workspace admins can remove a workspace from a capacity (to shared capacity) without requiring assignment permission. Removing workspaces from reserved capacities effectively relocates the workspace to shared capacity. Note that removing a workspace from a Premium capacity may have negative consequences resulting, for example, in shared content becoming unavailable to Power BI Free licensed users, or the suspension of scheduled refresh when they exceed the allowances supported by shared capacities.
 
 In the Power BI service, a workspace assigned to a Premium capacity is easily identified by the diamond icon that adorns the workspace name.
 
-![Identifying a workspace assigned to a Premium capacity](media/service-premium-capacity-manage/premium-diamond-icon.png)
+![Identifying a workspace assigned to a Premium capacity](media/service-premium-capacity-manage-gen2/premium-diamond-icon.png)
 
 ### Planning your capacity size in advance
 
@@ -97,7 +97,7 @@ Different Premium capacity SKUs have different amounts of resources that are mad
 
 * **Item size** - The size of a Power BI item relates to the amount of data available for processing inside the item. Size can have multiple dimensions depending on the item. Datasets size for example is determined by the footprint the dataset has in memory while being processed. Different items may have size measures that are defined differently. The size footprint across the capacity, unlike CPU, is not aggregated across all active items but is evaluated per item only. This means a capacity can support multiple items running concurrently if neither of those items exceeds the capacity size limit.
 
-Due to the individually enforced nature of a Power BI item's size measure, the size usually dictates how big a capacity should be. For example, if you have a P1 SKU, datasets are supported up to a [limit of 25Gb](service-premium-what-is.md#capacity-nodes). As long as your datasets do not exceed this value, the SKU should meet your needs. You can evaluate a typical dataset’s size by measuring the memory footprint of the Power BI Desktop tool. A typical item's usage pattern will dictate its CPU power spend, which if exhausted can severely degrade report interaction performance for end-users. Therefore, once you have a typical report for evaluation, it will be beneficial to use that report in a load test, and evaluate the results to determine whether a higher SKU size or turning on autoscale is required.
+Due to the individually enforced nature of a Power BI item's size measure, the size usually dictates how big a capacity should be. For example, if you have a P1 SKU, datasets are supported up to a [limit of 25Gb](service-premium-gen2-what-is.md#capacity-nodes). As long as your datasets do not exceed this value, the SKU should meet your needs. You can evaluate a typical dataset’s size by measuring the memory footprint of the Power BI Desktop tool. A typical item's usage pattern will dictate its CPU power spend, which if exhausted can severely degrade report interaction performance for end-users. Therefore, once you have a typical report for evaluation, it will be beneficial to use that report in a load test, and evaluate the results to determine whether a higher SKU size or turning on autoscale is required.
 
 #### How to decide when to turn on autoscale? 
 

@@ -62,4 +62,4 @@ When your capacity overloads, you can choose to either turn on [autoscale](servi
 > [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](service-premium-what-is.md)
+> [What is Power BI Premium?](service-premium-gen2-what-is.md)

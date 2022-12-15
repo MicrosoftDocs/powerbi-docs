@@ -71,7 +71,7 @@ See [Autoscale your capacity](azure-pbie-scale-capacity.md#autoscale-your-capaci
 > [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
+> [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
 >[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)
