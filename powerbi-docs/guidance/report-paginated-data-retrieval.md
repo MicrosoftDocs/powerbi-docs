@@ -2,12 +2,12 @@
 title: Data retrieval guidance for paginated reports
 description: Guidance for creating data sources and datasets for Power BI paginated reports.
 author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+ms.author: maggies
+ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/23/2021
+ms.date: 12/15/2022
 ---
 
 # Data retrieval guidance for paginated reports
