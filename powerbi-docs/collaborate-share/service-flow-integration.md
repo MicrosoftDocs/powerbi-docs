@@ -30,7 +30,7 @@ This template has one trigger, a Power BI data alert, and one action, to send an
 
 1. Select **Continue**.
 
-    :::image type="content" source="media/service-flow-integration/power-automate-power-bi-mail.png" alt-text="Screenshot of the Power Automate, Power B I to mail option.":::
+    :::image type="content" source="media/service-flow-integration/power-automate-power-bi-mail.png" alt-text="Screenshot of the Power Automate, Power BI to mail option.":::
 
 1. In the **Alert ID** box, select a Power BI data alert. To learn how to create an alert, see [Data alerts in Power BI](../create-reports/service-set-data-alerts.md).
    
