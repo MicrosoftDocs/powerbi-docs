@@ -25,7 +25,7 @@ You can add your organizational account as a co-administrator in Azure by follow
 
 1. Sign in to the [Azure portal](https://portal.azure.com/). If you're a user in multiple Azure directories, select **Subscriptions**. Then filter to view only the directory and subscriptions you want to edit.
 
-1. In the nav pane, select **Access control (IAM)**, then select **Add** > **Add co-administrator**.
+1. In the nav pane, select **Access control (IAM)**, then choose **Add** > **Add co-administrator**.
 
     :::image type="content" source="media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator-2021.png" alt-text="Screenshot of the Access control with the Add a co-administrator called out.":::
 
