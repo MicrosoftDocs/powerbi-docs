@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 12/15/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -21,6 +21,10 @@ For related "What's New" information, see:
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## December 2022
+
+### Support for linked metrics (iOS and Android)
+
+The mobile apps for iOS and Android devices now support linked metrics. Linked metrics are metrics that are connected to multiple scorecards. All check-ins and updates to linked metrics are reflected everywhere the metric appears. Linked metrics make it easier to avoid creating duplicate metrics tracking the same thing. [Learn more about linked metrics](../../create-reports/service-metrics-linked-metrics.md)
 
 ### Track your metrics on the Windows app
 
