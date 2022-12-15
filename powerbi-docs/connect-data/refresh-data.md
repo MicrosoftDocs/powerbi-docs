@@ -51,7 +51,7 @@ The amount of memory required to refresh a dataset depends on whether you're per
 
 We recommend that you plan your capacity usage to ensure that the extra memory needed for dataset refresh, is accounted for. Having enough memory prevents refresh issues that can occur if your datasets require more memory than available, during refresh operations. To find out how much memory is available for each dataset on a Premium capacity, refer to the [Capacities and SKUs](./../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table.
 
-For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-gen2-what-is.md#large-datasets).
+For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-large-models.md).
 
 #### Datasets in DirectQuery mode
 

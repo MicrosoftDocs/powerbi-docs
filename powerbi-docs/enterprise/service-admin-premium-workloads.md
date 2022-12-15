@@ -327,7 +327,7 @@ A Power BI administer can enable or disable the paginated reports workload. When
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Power BI Premium Generation 2](service-premium-gen2-what-is.md#power-bi-premium-generation-2)
+>[Power BI Premium Generation 2](service-premium-gen2-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
