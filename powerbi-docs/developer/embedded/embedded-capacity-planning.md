@@ -24,7 +24,7 @@ Some of the things to consider when planning your capacity are:
 * Other usage patterns that are hard to predict
 
 >[!NOTE]
->This article explains how to plan what capacity you need and how to do a load testing assessment for Power BI embedded analytics A-SKUs. To plan your capacity size for *EM* or *P* SKUs see [Planning your capacity size in advance](../../enterprise/service-premium-capacity-manage-gen2.md#planning-your-capacity-size-in-advance).
+>This article explains how to plan what capacity you need and how to do a load testing assessment for Power BI embedded analytics A-SKUs.
 
 When planning your capacity, take the following steps:
 
@@ -60,7 +60,7 @@ To test or assess your capacity load:
 2. **Assign the workspace** (or workspaces) you’ll use to test to the Gen2 capacity you created. You can do this one of the following ways:
 
    * *Programmatically* with the [Groups AssignToCapacity API](/rest/api/power-bi/capacities/groups-assign-to-capacity). Check the assignment status with the [Groups CapacityAssignmentStatus API](/rest/api/power-bi/capacities/groups-capacity-assignment-status) or via a *PowerShell* script (see `AssignWorkspacesToCapacity` in [this sample](https://github.com/Azure-Samples/powerbi-powershell/blob/master/Zero-Downtime-Capacity-Scale.ps1)).
-   * [*Manually*](../../enterprise/service-premium-capacity-manage-gen2.md#assigning-workspaces-to-capacities) as a workspace admin or via the Admin portal as a capacity admin (see also [Assign a workspace to a capacity using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-using-a-master-user))​.
+   * *Manually* as a workspace admin or via the Admin portal as a capacity admin (see also [Assign a workspace to a capacity using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-using-a-master-user))​.
 
 3. As the capacity admin, [install the Gen2 capacity metrics app](../../enterprise/service-premium-install-gen2-app.md). Provide the capacity ID and time (in days) to monitor, and then refresh the data. For more information, see [Use the Gen2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md).​
 

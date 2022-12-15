@@ -122,7 +122,7 @@ As noted above, the guest user must have the proper licensing in place to view t
 
 #### Use Power BI Premium capacity
 
-Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates and large model sizes.
+Assigning the workspace to [Power BI Premium capacity](service-premium-gen2-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates and large model sizes.
 
 ![Diagram of the guest user experience with Power B I Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -174,9 +174,9 @@ The following tenant level settings in Power BI provide controls to admins. See 
   * [Show Azure Active Directory guests in lists of suggested people](../admin/service-admin-portal-export-sharing.md#show-azure-active-directory-guests-in-lists-of-suggested-people) 
 
 There are also Azure Active Directory settings that can limit what external guest users can do within your organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings: 
-  * [Manage External Collaboration Settings](https://learn.microsoft.com/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
-  * [Allow or block invitations to B2B users from specific organizations](https://learn.microsoft.com/azure/active-directory/external-identities/allow-deny-list)
-  * [Use Conditional Access to allow or block access](https://learn.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) 
+  * [Manage External Collaboration Settings](/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
+  * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/external-identities/allow-deny-list)
+  * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) 
 
 
 Additionally, to use in-place dataset sharing, tenant admins need to enable the following settings: 
