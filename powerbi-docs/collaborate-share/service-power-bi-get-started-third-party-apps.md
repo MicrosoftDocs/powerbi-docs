@@ -1,5 +1,5 @@
 ---
-title: Use third-party apps in Power BI
+title: Work with third-party apps in Power BI
 description: Learn how to integrate a third-party app with Power BI and then revoke permissions to an application at any time.
 author: maggiesMSFT
 ms.author: maggies
@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 ms.custom: intro-get-started
 ---
 
-# Use third-party apps in Power BI
+# Work with third-party apps in Power BI
 
 With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third-party app that integrates Power BI tiles into a custom-built web application. When you use a third-party app, you need to grant that application certain permissions to your Power BI account and resources. It's important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. For more information, see [Revoke third party app permissions](#revoke-third-party-app-permissions).
 
