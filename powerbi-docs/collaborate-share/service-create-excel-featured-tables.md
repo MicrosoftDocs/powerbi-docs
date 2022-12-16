@@ -50,7 +50,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 
 - Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for the English-language search. Searching in other languages might not result in accurate matches. 
 - Featured tables use Power BI Q&A indexing when users query data in those tables. For more information, see [How does indexing work with Q&A](../natural-language/q-and-a-data-sources.md#how-does-indexing-work-with-qa).
-- Most numerical columns aren't considered for matching. If the Row label or Key column are numeric, they're included for matching.
+- Most numerical columns aren't considered for matching. If the Row label or Key column is numeric, they're included for matching.
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
     - Rows with text columns whose values exactly match “Orange” or “County” are returned. 
