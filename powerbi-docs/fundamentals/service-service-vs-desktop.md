@@ -1,6 +1,6 @@
 ---
 title: Comparing Power BI Desktop and the Power BI service
-description: Learn the difference between Power BI Desktop and Power Bi service.
+description: Learn the difference between Power BI Desktop and the Power Bi service.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
