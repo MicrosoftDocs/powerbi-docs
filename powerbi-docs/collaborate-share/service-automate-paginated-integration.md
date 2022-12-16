@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 12/01/2022
+ms.date: 12/16/2022
 LocalizationGroup: Get started
 ---
 # Export Power BI paginated reports with Power Automate
