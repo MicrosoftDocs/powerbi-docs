@@ -7,6 +7,8 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: cookiemccray
+
 ---
 
 # Find and retire unused .rdl reports
