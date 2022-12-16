@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 12/16/2022
 LocalizationGroup: Share your work
 ---
 # Connect Excel to Power BI datasets
