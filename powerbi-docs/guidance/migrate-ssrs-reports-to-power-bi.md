@@ -17,6 +17,10 @@ ms.custom: intro-migration
 
 This article targets Power BI Report Server and SQL Server Reporting Services (SSRS) report authors and Power BI administrators. It provides you with guidance to help you migrate your [Report Definition Language (.rdl)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
 
+:::image type="content" source="media/migrate-ssrs-reports-to-power-bi/rdl-migration-diagram.png" alt-text="Diagram showing migrating .rdl reports from on premises to the Power BI service.":::
+
+_Diagram shows the path migrating .rdl reports from on premises to the Power BI service._
+
 > [!NOTE]
 > In Power BI, .rdl reports are called _paginated reports_.
 
@@ -113,7 +117,7 @@ Generally, Power BI paginated reports are optimized for **printing**, or **PDF g
 
 Referencing [custom code](/power-bi/paginated-reports/paginated-reports-faq#can-i-run-custom-code-in-my-report-) DLL files within a report isn't supported.  
 
-Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](/sql/reporting-services/report-builder/exporting-to-a-pdf-file-report-builder-and-ssrs?view=sql-server-ver16#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
+Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](/sql/reporting-services/report-builder/exporting-to-a-pdf-file-report-builder-and-ssrs#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
 
 
 ### Prepare
