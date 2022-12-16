@@ -7,10 +7,10 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: troubleshooting
-ms.date: 12/06/2022
+ms.date: 12/16/2022
 LocalizationGroup: Share your work
 ---
-# Troubleshoot issues that occur when you share dashboards and reports
+# Troubleshoot issues sharing dashboards and reports
 
 Here are some common issues that might come up when you share a dashboard or report, or when someone else shares with you. 
 
