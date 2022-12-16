@@ -11,6 +11,8 @@ ms.author: maggies
 
 # Find and retire unused .rdl reports
 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] ✔️&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server ✔️&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
+
 Your company may deal with hundreds of paginated reports (.rdl files) in Power BI Report Server and SQL Server Reporting Services (SSRS). Some of those reports may become obsolete and need to be retired. As a report author or administrator, you don't want to migrate unused reports to the [Power BI service](https://app.powerbi.com). As you plan for a migration to the cloud, we suggest doing some housekeeping to get rid of unused .rdl reports. This best practice supports retention governance and allows your organization to make use of a retention schedule and data policy.  
 
 There are two processes for checking unused reports. We extend the cleanup to unused objects, as well as to get rid of unused database tables that could have potentially stale data.  
@@ -19,14 +21,14 @@ There are two processes for checking unused reports. We extend the cleanup to un
 
 First, we suggest that you create a [server audit and database audit specification](/sql/relational-databases/security/auditing/create-a-server-audit-and-database-audit-specification). Auditing an instance of the SQL Server Database Engine or an individual database involves tracking and logging events that occur on the Database Engine. SQL Server audit lets you create server audits, which can contain server audit specifications for server level events, and database audit specifications for database level events. Audited events can be written to the event logs or to audit files.
 
-Once you've filled your audit log with tables and stored procedures used for reports, you can export those objects to an Excel file and share them with stakeholders. Let them know you are preparing to deprecate unused objects.  
+Once you've filled your audit log with tables and stored procedures used for reports, you can export those objects to an Excel file and share them with stakeholders. Let them know you're preparing to deprecate unused objects.  
 
 > [!NOTE]
-> Some important reports may run only rarely, so be sure to ask for feedback on database objects that are infrequently used. By deprecating an object, you can alter the object name by placing a *zdel* in front of it, so the object drops to the bottom of the Object Explorer. This way, if you decide later that you need the *zdel* object, you can alter the name back to the original. Once you know you are ready to remove them from your database, you can create a cadence to delete unused objects. 
+> Some important reports may run only rarely, so be sure to ask for feedback on database objects that are infrequently used. By deprecating an object, you can alter the object name by placing a *zdel* in front of it, so the object drops to the bottom of the Object Explorer. This way, if you decide later that you need the *zdel* object, you can alter the name back to the original. Once you know you're ready to remove them from your database, you can create a cadence to delete unused objects. 
 
 ## Create a Reports Usage metrics list
 
-Second, you will want to create an .rdl Reports Usage metrics list by querying Report Server DB. Use the T-SQL below to derive the usage counts. If your report server is configured to store one year of report execution history, you can use a specific date to filter the usage metrics.
+Second, you'll want to create an .rdl Reports Usage metrics list by querying Report Server DB. Use the T-SQL below to derive the usage counts. If your report server is configured to store one year of report execution history, you can use a specific date to filter the usage metrics.
 
 ```tsql
 
@@ -54,5 +56,5 @@ From here you can decide whether to delete the unused reports right away or repl
 
 ## See also
 
-[Publish .rdl files to Power BI from Reporting Services](/power-bi/guidance/publish-reporting-services-power-bi-service)
-[Migrate SQL Server Reporting Services reports to Power BI](/power-bi/guidance/migrate-ssrs-reports-to-power-bi)
+- [Publish .rdl files to Power BI from Reporting Services](/power-bi/guidance/publish-reporting-services-power-bi-service)
+- [Migrate SQL Server Reporting Services reports to Power BI](/power-bi/guidance/migrate-ssrs-reports-to-power-bi)

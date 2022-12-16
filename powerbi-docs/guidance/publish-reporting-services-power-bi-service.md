@@ -63,12 +63,6 @@ Select **Publish** to find the .rdl files you want to publish from SSRS to the P
 - Select **Publish all reports** to select all the .rdl files in the current folder and start the migration. 
 - Select **Select reports to publish** to open a list view of all .rdl files in the current folder. Select the reports and folders you want to migrate.
 
-You can also publish individual articles.
-
-- On the **More info** menu next to an .rdl report, select **Publish**. 
-
-    :::image type="content" source="media/publish-reporting-services-power-bi-service/rdl-more-info-publish-power-bi.png" alt-text="Screenshot showing More info > Publish.":::
-
 # [Power BI Report Server](#tab/powerbi-report-server)
 
 Select **Publish** to find the .rdl files you want to publish from Power BI Report Server to the Power BI service.
@@ -78,13 +72,13 @@ Select **Publish** to find the .rdl files you want to publish from Power BI Repo
 - Select **Publish all reports** to select all the .rdl files in the current folder and start the migration.
 - Select **Select reports to publish** to open a list view of all .rdl files in the current folder. You select which of the reports and folders you want to migrate.
 
+---
+
 You can also publish individual articles.
 
 - On the **More info** menu next to an .rdl report, select **Publish**.
 
     :::image type="content" source="media/publish-reporting-services-power-bi-service/power-bi-report-server-individual-publish.png" alt-text="Screenshot showing More options to Publish.":::
-
----
 
 ## Step 1b: Select reports 
 
@@ -142,19 +136,9 @@ Now that you're signed in, select the dropdown arrow to find and **Select a work
 
 ## Step 4: View reports 
 
-# [SQL Server Reporting Services](#tab/reporting-services)
-
-In the Power BI service, navigate to the workspace where you saved the reports. 
-
-:::image type="content" source="media/publish-reporting-services-power-bi-service/paginated-reports-power-bi.png" alt-text="Screenshot showing paginated reports in a workspace.":::
-
-# [Power BI Report Server](#tab/powerbi-report-server)
-
 In the Power BI service, navigate to the workspace where you saved the reports.
 
 :::image type="content" source="media/publish-reporting-services-power-bi-service/paginated-reports-power-bi-service.png" alt-text="Screenshot showing paginated reports in Power B I service.":::
-
----
 
 Select a report to view it in the Power BI service.
 
