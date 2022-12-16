@@ -23,13 +23,13 @@ The Power BI service also hosts *paginated reports*. You create paginated report
 
 The following Venn diagram compares Power BI Desktop and the Power BI service. The middle shows some of the areas where they overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show the features that are unique to either the Desktop application or to the Power BI service.  
 
-:::image type="content" source="media/service-service-vs-desktop/power-bi-venn-desktop-service.png" alt-text="Venn diagram showing the relationship between Power BI Desktop and the Power BI service." link="<https://link.com>":::
+:::image type="content" source="media/service-service-vs-desktop/power-bi-venn-desktop-service.png" alt-text="Venn diagram showing the relationship between Power BI Desktop and the Power BI service.":::
 
 ## Edit Power BI reports
 
 In both the application and the service, you build and edit Power BI *reports*. A report can have one or many pages, with visuals and collections of visuals. Add bookmarks, buttons, filters, and drillthrough to enhance navigation in your reports.
 
-:::image type="content" source="media/service-service-vs-desktop/power-bi-editing-desktop-service.png" alt-text="Screenshots of Power BI Desktop and the Power BI service, with numbered sections" link="<https://link.com>":::
+:::image type="content" source="media/service-service-vs-desktop/power-bi-editing-desktop-service.png" alt-text="Screenshots of Power BI Desktop and the Power BI service, with numbered sections" link=":::
 
 The report editors in Power BI Desktop and in the service are similar. They're made up of three sections:  
 
