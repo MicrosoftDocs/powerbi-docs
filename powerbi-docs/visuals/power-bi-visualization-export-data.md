@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 10/19/2022
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
