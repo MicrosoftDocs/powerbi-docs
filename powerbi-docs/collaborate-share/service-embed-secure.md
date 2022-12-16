@@ -1,21 +1,21 @@
 ---
 title: Embed a report in a secure portal or website
-description: The Power BI embeds feature enables users to easily and securely embed reports in internal web portals.
+description: The Power BI embed feature provides a way to easily and securely embed reports in internal web portals.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/02/2022
+ms.date: 10/18/2022
 LocalizationGroup: Share your work
 ---
 
 # Embed a report in a secure portal or website
 
-With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iFrame. 
+With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or IFrame. 
 
-The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals using a low-code approach requiring only basic HTML and JavaScript knowledge.
+The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals by using a low-code approach that requires only basic HTML and JavaScript knowledge.
 
 ## How to embed Power BI reports into portals
 
@@ -23,58 +23,58 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 2. On the **File** menu, select **Embed report** >  **Website or portal**.
 
-    ![Website or portal option](media/service-embed-secure/power-bi-more-options-website.png)
+    :::image type="content" source="media/service-embed-secure/power-bi-more-options-website.png" alt-text="Screenshot of Embed report selected from File menu with website or portal option highlighted.":::
 
-2. In the **Secure embed code** dialog, select the **link you can use to embed this content**, or the **HTML you can paste into your blog or website** in an iFrame.
+3. In the **Secure embed code** dialog, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an IFrame in a blog or website, select the value under **HTML you can paste into a website**.
 
-    ![Embed option dialog box](media/service-embed-secure/secure-embed-code-dialog.png)
+    :::image type="content" source="../collaborate-share/media/service-embed-secure/securely-embed-report-in-website-or-portal.png" alt-text="Screenshot of Embed option dialogue box":::
 
-3. Whether a user opens a report URL directly, or one embedded in a web portal, report access requires authentication. The following screen appears if a user has not signed-in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab could open. Have them check for pop-up blockers if they don't get prompted to sign in.
+4. Whether a user opens a report URL directly, or one that's embedded in a web portal, report access requires authentication. The following screen appears if a user hasn't signed in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab should open. Have them check for pop-up blockers if they don't get prompted to sign in.
 
-    ![Sign in to view this report](media/service-embed-secure/secure-embed-sign-in.png)
+    :::image type="content" source="./media/service-embed-secure/sign-in-power-bi-report.png" alt-text="Screenshot of Power BI Sign-in page displaying sign-in to view this report dialogue.":::
 
-4. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users who have view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed – either they need a Power BI Pro or Premium Per User (PPU) license, or the report must be in a workspace that is in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, once signed in, other reports load automatically.
+5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license. Also, the report must be in a workspace that's in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
-    ![Embed report](media/service-embed-secure/secure-embed-report.png)
+    :::image type="content" source="./media/service-embed-secure/sales-and-marketing-sample-1.png" alt-text="Screenshot of Sales and Marketing sample report.":::
 
-5. When using an iFrame, you may need to edit the **height** and **width** to have it fit in your portal's web page.
+6. When you use an IFrame, you might need to edit the **height**, and **width** values to have it fit in your portal's web page.
 
-    ![Set height and width](media/service-embed-secure/secure-embed-size.png)
+    :::image type="content" source="media/service-embed-secure/secure-embed-size.png" alt-text="Screenshot of se height and width dialogue box":::
 
-## Granting report access
+## Grant report access
 
 The **Embed** option doesn't automatically permit users to view the report. View permissions are set in the Power BI service.
 
-In the Power BI service, you can share embedded reports with users requiring access. If you're using a Microsoft 365 Group, you can list the user as a workspace member.
+In the Power BI service, you can share embedded reports with users who require access. If you use a Microsoft 365 Group, you can list the user as a workspace member.
 
 ## Licensing
 
-To view the embedded report, users need either a Power BI Pro or Premium Per User (PPU) license or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-admin-premium-purchase.md).
+To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-admin-premium-purchase.md).
 
-## Customize your embed experience using URL settings
+## Customize your embed experience by using URL settings
 
-You can customize the user experience using the embed URL's input settings. In the provided iFrame, you can update the URL's  **src** settings.
+You can customize the user experience by using the embed URL's input settings. In the provided IFrame, you can update the URL's  **src** settings.
 
 | Property  | Description  |
 |-----------|--------------|
-| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |
-| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |
+| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when you view a report in the Power BI service, as shown later in this article. |
+| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL that you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |
 
 ## Set which page opens for an embedded report 
 
-You can find the **pageName** value at the report URL's end  when viewing a report in the Power BI service.
+You can find the **pageName** value at the end of report's URL when you view a report in the Power BI service.
 
 1. Open the report from the Power BI service in your web browser, and then copy the address bar URL.
 
-    ![Report section](media/service-embed-secure/secure-embed-report-section.png)
+    :::image type="content" source="media/service-embed-secure/secure-embed-report-section.png"alt-text="Screenshot of report section.":::
 
-2. Append the **pageName** setting to the URL.
+2. Append the **pageName** property and its value to the end of the URL.
 
-    ![Append pageName](media/service-embed-secure/secure-embed-append-page-name.png)
+    :::image type="content" source="media/service-embed-secure/secure-embed-append-page-name.png"alt-text="Screenshot of Appending the pageName setting to the URL with pageName=ReportSection 2 highlighted.":::
 
-## Filter report content using URL filters 
+## Filter report content by using URL filters 
 
-You can use [URL Filters](service-url-filters.md) to provide different report views. For example, the URL below filters the report to show data for the Energy industry.
+You can use [URL Filters](service-url-filters.md) to provide different report views. For example, the following URL filters the report to show data for the energy industry.
 
 Using the combination of **pageName** and [URL Filters](service-url-filters.md) can be powerful. You can build experiences using basic HTML and JavaScript.
 
@@ -84,7 +84,7 @@ For example, here's a button you can add to an HTML page:
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-When selected, the button calls a function to update the iFrame with an updated URL, which includes the Energy industry filter.
+When selected, the button calls a function to update the IFrame with an updated URL, which includes the Energy industry filter.
 
 ```javascript
 function show(pageName, filterValue)
@@ -110,29 +110,29 @@ report.src = newUrl;
 }
 ```
 
-![Filter](media/service-embed-secure/secure-embed-filter.png)
+:::image type="content" source="media/service-embed-secure/secure-embed-filter.png"alt-text="Screenshot of Filter with $ filter equals industries slash industry e q Energy highlighted.":::
 
 You can add as many buttons as you'd like to create a low-code custom experience. 
 
 ## Considerations and limitations
 
-* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. Read more about [passing report parameters in a URL for a paginated report](../paginated-reports/report-builder-url-pass-parameters.md).
+* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. For more information, see [Pass a report parameter in a URL for a paginated report in Power BI](../paginated-reports/report-builder-url-pass-parameters.md).
 
-* Secure embed works for reports published to the Power BI service.
+* The secure embed option works for reports that are published to the Power BI service.
 
 * The user needs to sign in to view the report whenever they open a new browser window.
 
-* Some browsers require you to refresh the page after sign-in, especially when using  InPrivate or Incognito modes.
+* Some browsers require you to refresh the page after sign-in, especially when you use InPrivate or Incognito modes.
 
-* You may encounter issues if using unsupported browser versions. Power BI supports [the following list of browsers](../fundamentals/power-bi-browsers.md).
+* You might encounter issues if you use unsupported browser versions. For a list of browsers that Power BI supports, see [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
 
-* The classic SharePoint Server isn't supported, as it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
+* The classic SharePoint Server isn't supported, because it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 
-* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration using the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
+* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration by using the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
+* The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They are blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
 
-* The authentication token lifetime is controlled based on your AAD settings. When the authentication token expires, the user will need to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it could be shorter or longer in your organization.  There is no ability to automatically refresh the token in this scenario.
+* The authentication token lifetime is controlled based on your Azure AD settings. When the authentication token expires, the user will need to sign in again to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
 
 ## Next steps
 
@@ -142,4 +142,4 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * [Embed with report web part in SharePoint Online](service-embed-report-spo.md)
 
-* [Publish to Web from Power BI](service-publish-to-web.md)
+* [Publish to web from Power BI](service-publish-to-web.md)

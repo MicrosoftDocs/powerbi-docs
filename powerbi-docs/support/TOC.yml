@@ -2,25 +2,57 @@
   href: index.yml
   expanded: true
   items:
-  - name: Microsoft Support
-    expanded: true
+  - name: About Support requests
     items:
-    - name: Power BI support options for paid customers
+    - name: Support overview
+      href: /power-platform/admin/support-overview
+    - name: How to contact Support
       href: service-support-options.md
-    - name: Options for contacting support for sign-in issues
-      href: power-bi-cannot-sign-in.md
-    - name: About planned maintenance for the Power BI service
-      href: service-planned-maintenance.md     
-    - name: Capture diagnostic information before contacting support
-      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md 
-    - name: Request a region move via a support request
-      href: service-admin-region-move.md
-    - name: 10 tips for getting help with Power BI
-      href: service-tips-for-finding-help.md
+    - name: Create a Support ticket
+      href: /power-platform/admin/get-help-support
+    - name: Consent to access customer data
+      href: /power-platform/admin/support-environment
+    - name: Policies and communications for Power BI
+      href: /power-platform/admin/policies-communications
+
+  - name: Before you contact Support
+    items:
     - name: View current and historical service health in the Microsoft 365 admin center
-      href: service-admin-health.md 
-    - name: Learn about how to receive email notifications when there is a Power BI service disruption or outage
+      href: service-admin-health.md
+    - name: Check for service-wide outages
+      href: https://support.powerbi.com
+    - name: Check the planned maintenance schedule
+      href: service-planned-maintenance.md
+    - name: Find out if this is a known issue
+      href: ../troubleshoot/known-issues/power-bi-known-issues.md
+    - name: Look for an answer in the Community forum
+      href: https://community.powerbi.com
+    - name: Tips for getting answers to your Power BI questions
+      href: service-tips-for-finding-help.md
+    - name: Capture diagnostic information (traces)
+      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+    - name: Find your organization ID and name
+      href: /power-platform/admin/determine-org-id-name
+    - name: Try these steps if you can't sign in
+      href: power-bi-cannot-sign-in.md 
+    - name: Prepare for a region move 
+      href: service-admin-region-move.md 
+ 
+  - name: Support-related admin topics
+    items:
+    - name: Enable Help and Support notifications
+      href: ../admin/service-admin-portal-help-support.md
+    - name: Enable service interruption notifications
       href: service-interruption-notifications.md
-    - name: Help and support settings
-      href: service-admin-portal-help-support.md
+    - name: Learn about notifications
+      href: /power-platform/admin/notifications-explained
+
+  - name: Troubleshooting guide
+    items:
+    - name: Power BI
+      href: ../troubleshoot/index.yml
+      
+      
+
+
  

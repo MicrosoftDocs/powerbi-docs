@@ -46,7 +46,7 @@ All the above steps can be fully automated using [Power BI REST APIs](/rest/api/
 Before you can create service principal profiles, you need to:
 
 * Set up the service principal by following the *first three steps* of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
-* From a Power BI tenant admin account, enable creating profiles in the tenant.
+* From a Power BI tenant admin account, enable creating profiles in the tenant *using the same security group you used when you created the service principal*.
 
  :::image type="content" source="./media/embed-multi-tenancy/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
@@ -258,9 +258,9 @@ Service principal profiles aren't supported with Azure Analysis Services (AAS) i
 
 ### Power BI capacity limitations
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-what-is#large-datasets).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-gen2-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-gen2-what-is#large-datasets).
 * To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](/power-bi/enterprise/service-premium-large-models) setting.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-gen2-what-is#capacity-nodes).
 * Scaling a capacity in Gen 1, on average, takes between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script). For Gen 2, scaling is instantaneous.
 
 ### Manage service principals

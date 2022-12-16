@@ -74,31 +74,31 @@ constructor(options: VisualConstructorOptions)
   * `locale`, returns a locale string, see [Localization](./localization.md)
   * `instanceId`, returns a string to identify the current visual instance
   * `colorPalette`, returns the colorPalette required to apply colors to your data
-  * `fetchMoreData`, supports using more data than the standard limit (1K rows)
+  * `fetchMoreData`, supports using more data than the standard limit (1K rows), see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
 
- ```typescript
-   export interface IVisualHost extends extensibility.IVisualHost {
-       createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
-       : () => ISelectionManager;
-       colorPalette: ISandboxExtendedColorPalette;
-       persistProperties: (changes: VisualObjectInstancesToPersist) => void;
-       applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
-       tooltipService: ITooltipService;
-       telemetry: ITelemetryService;
-       authenticationService: IAuthenticationService;
-       locale: string;
-       allowInteractions: boolean;
-       launchUrl: (url: string) => void;
-       fetchMoreData: () => boolean;
-       instanceId: string;
-       refreshHostData: () => void;
-       createLocalizationManager: () => ILocalizationManager;
-       storageService: ILocalVisualStorageService;
-       eventService: IVisualEventService;
-       switchFocusModeState: (on: boolean) => void;
-   }
-   ```
+    ```typescript
+     export interface IVisualHost extends extensibility.IVisualHost {
+         createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
+         : () => ISelectionManager;
+         colorPalette: ISandboxExtendedColorPalette;
+         persistProperties: (changes: VisualObjectInstancesToPersist) => void;
+         applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
+         tooltipService: ITooltipService;
+         telemetry: ITelemetryService;
+         authenticationService: IAuthenticationService;
+         locale: string;
+         allowInteractions: boolean;
+         launchUrl: (url: string) => void;
+         fetchMoreData: () => boolean;
+         instanceId: string;
+         refreshHostData: () => void;
+         createLocalizationManager: () => ILocalizationManager;
+         storageService: ILocalVisualStorageService;
+         eventService: IVisualEventService;
+         switchFocusModeState: (on: boolean) => void;
+     }
+     ```
 
 ## update
 

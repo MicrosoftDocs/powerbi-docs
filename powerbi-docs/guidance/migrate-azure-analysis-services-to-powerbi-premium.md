@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/03/2022
+ms.date: 11/24/2022
 ms.custom: intro-migration
 ---
 
@@ -51,7 +51,7 @@ Consolidation of items (like reports and dashboards) in Power BI results in simp
 
 ### Power BI Premium Gen2
 
-Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](/power-bi/enterprise/service-premium-what-is#power-bi-premium-generation-2-preview). Thanks to its distributed architecture, the new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
+Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](/power-bi/enterprise/service-premium-gen2-what-is#power-bi-premium-generation-2-preview). Thanks to its distributed architecture, the new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
 
 Scalability benefits associated with Premium Gen2 are described [later in this article](#scalability-benefits).
 
@@ -159,11 +159,7 @@ The Premium Per User (PPU) license is a per-user license that provides a lower-c
 > [!TIP]
 > It's possible to incrementally upgrade Power BI Pro licenses to PPU licenses.
 
-### Frontend vs. backend v-cores and Pro licenses
-
-Power BI Premium provides unlimited distribution of Power BI content to end users without requiring Power BI Pro licenses.
-
-The cost of Power BI Premium is split equally between *frontend and backend v-cores*. Frontend v-cores are mostly responsible for the web service, reporting, and user experiences. Power BI datasets consume resources from backend v-cores. To get the best value from Power BI Premium, customers should strive to strike a balance between frontend and backend usage. For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacity-nodes).
+### Pro licenses
 
 A Pro (or PPU) license is required to publish and manage Power BI content. Pro licenses are typically assigned to developers and administrators, not end users.
 
@@ -179,7 +175,7 @@ For more information, see:
 
 ## Scalability benefits
 
-[Premium Gen2](/power-bi/enterprise/service-premium-what-is#power-bi-premium-generation-2-preview) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
+[Premium Gen2](/power-bi/enterprise/service-premium-gen2-what-is#power-bi-premium-generation-2-preview) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
 
 Power BI Premium provides features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
 
@@ -222,7 +218,7 @@ Like for AAS, you can use a service principal as an automation account for Power
 
 ### Custom security
 
-Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embedded-row-level-security.md#using-the-customdata-feature) feature.
+Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embed-azure-analysis-services.md#dynamic-security---rls) feature.
 
 However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
 
@@ -295,11 +291,16 @@ To identify the user, Power BI utilizes a unique name claim in Azure AD while AA
 
 [Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out) isn't supported by Power BI Premium.
 
+## Migration feature
+
+The Microsoft Azure Analysis Services to Microsoft Power BI Premium migration feature in Power BI migrates as AAS database to a dataset in Power BI Premium, Power BI Premium Per User, or Power BI Embedded workspace. For more information, see [Migrate Azure Analysis Services to Power BI](/power-bi/enterprise/aas-pbi-migration-overview).
+
 ## Next steps
 
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md)
+- [Migrate Azure Analysis Services to Power BI](/power-bi/enterprise/aas-pbi-migration-overview)
 - Questions? [Try asking the Power BI community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
 
