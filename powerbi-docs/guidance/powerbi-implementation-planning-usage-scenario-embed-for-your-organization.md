@@ -14,10 +14,10 @@ ms.date: 02/07/2022
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your organization_. (The developer isn't necessarily responsible for creating the Power BI content.) The **For your organization** scenario applies when the app audience comprises users who have permission and appropriate licenses to access Power BI content in the organization. These users must have organizational accounts, which authenticate with Azure Active Directory (Azure AD).
+This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your organization_. (The developer isn't necessarily responsible for creating the Power BI content.) The **For your organization** scenario applies when the application audience comprises users who have permission and appropriate licenses to access Power BI content in the organization. These users must have organizational accounts (including guest accounts), which authenticate with Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> In this scenario, Power BI is software-as-a-service (SaaS). The scenario is sometimes referred to as _User owns data_.
+> In this scenario, Power BI is software-as-a-service (SaaS). The embedding scenario is sometimes referred to as _User owns data_.
 
 ## Scenario diagram
 
@@ -29,12 +29,12 @@ The above diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The Power BI content creator develops a BI solution using [Power BI Desktop](/power-bi/fundamentals/desktop-what-is-desktop). |
+| ![Item 1.](media/common/icon-01-red-30x30.png) | The Power BI content creator develops a BI solution by using [Power BI Desktop](/power-bi/fundamentals/desktop-what-is-desktop). |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | When ready, the content creator publishes the Power BI Desktop file (.pbix) to the [Power BI service](/power-bi/fundamentals/power-bi-service-overview). |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | To connect to data sources that reside within a private organizational network, an [On-premises data gateway](/power-bi/connect-data/service-gateway-onprem) is required for data refresh. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | A Power BI workspace contains Power BI items ready for embedding. For non-personal workspaces, users of the custom application belong to a workspace role, which grants them privileges to view (or create or modify) Power BI content. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The custom application prompts the app user to authenticate with Azure AD. When authentication succeeds, the custom application caches the Azure AD access token. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | The custom application uses the Azure access token to make Power BI REST API calls on behalf of the app user. Specifically, the application uses the access token to retrieve metadata about workspace items. Metadata includes properties required to embed content in the custom application. |
+| ![Item 3.](media/common/icon-03-red-30x30.png) | To connect to any data sources that reside within a private organizational network, an [on-premises data gateway](/power-bi/connect-data/service-gateway-onprem) is required for data refresh. |
+| ![Item 4.](media/common/icon-04-red-30x30.png) | A Power BI workspace contains Power BI items ready for embedding. For non-personal workspaces, users of the custom application have [permission to view (or create or modify) Power BI content](powerbi-implementation-planning-security-report-consumer-planning.md) because they belong to a workspace role or they have direction permissions. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | The custom application prompts the app user to authenticate with Azure AD. When authentication succeeds, the custom application caches an Azure AD access token. |
+| ![Item 6.](media/common/icon-06-red-30x30.png) | The custom application uses the Azure AD access token to make Power BI REST API calls on behalf of the app user. Specifically, the application uses the access token to retrieve metadata about workspace items. Metadata includes properties required to embed content in the custom application. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | The custom application embeds a specific Power BI item in an `iframe` HTML element. The application can support the creation and editing of Power BI reports, providing the user has permission to do so. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
 
@@ -51,7 +51,7 @@ There are several reasons why you might embed Power BI content for your organiza
 - **Customized logging:** You might want to log custom events to record Power BI content access and use, beyond what the [activity log](/power-bi/admin/service-admin-auditing) records.
 
 > [!TIP]
-> If you're looking to create a BI portal styled for your organization, you might be able to achieve that by simply adding [custom branding](/power-bi/admin/service-admin-custom-branding) to the Power BI service.
+> If you're looking to create a BI portal styled for your organization, you might be able to achieve that by simply adding [custom branding to the Power BI service](/power-bi/admin/service-admin-custom-branding).
 
 ### No-code embedding
 
@@ -61,7 +61,7 @@ Developing a programmatic solution requires skill, time, and effort. Consider th
 - Use a [secure embed code](/power-bi/collaborate-share/service-embed-secure) (or HTML) that's generated by Power BI to embed Power BI reports in internal web portals.
 - [Embed reports in a Microsoft Teams channel or chat](/power-bi/collaborate-share/service-embed-report-microsoft-teams).
 
-When using these techniques, report consumers must belong to the organization, be authenticated, and have permission to access the reports. Power BI ensures that all permissions and data security are enforced when consumers view the reports. Sometimes, users might be challenged to authenticate by signing in to Power BI.
+These techniques require that report consumers belong to the organization, be authenticated, and have permission to access the reports. Power BI ensures that all permissions and data security are enforced when consumers view the reports. Sometimes, users might be challenged to authenticate by signing in to Power BI.
 
 ### Embeddable content
 
@@ -76,11 +76,11 @@ When embedding for your organization, you can embed the following Power BI conte
 
 There's no limitation on where the content resides. The content could reside in a personal workspace or a regular workspace. What matters is that the app user has permission to view (or create or edit) the content. For example, it's possible to embed content from the app user's personal workspace.
 
-Any content the user can see in the Power BI service can be embedded in a custom application. If the user has permission to create or edit content, it's possible for a custom app to support that functionality (for Power BI reports only).
+Any content the user can see in the Power BI service may be embedded in a custom application. If the user has permission to create or edit content, it's possible for a custom app to support that functionality (for Power BI reports only).
 
 ### Authentication
 
-The authentication flow is interactive authentication with Azure AD, which means that the app user will be challenged to authenticate. When authenticated, Azure AD returns an access token. It's the responsibility of the custom application to cache the access token so that it can be used to make Power BI REST API calls and to embed content inside the `iframe` HTML element. Those calls can retrieve metadata about Power BI content on behalf of the app user, including the properties required to embed it in the custom application.
+The authentication flow is _interactive authentication_ with Azure AD. Interactive authentication means that the app user will be challenged to authenticate. When authenticated, Azure AD returns an access token. It's the responsibility of the custom application to cache the access token so that it can be used to make Power BI REST API calls and to embed content inside an `iframe` HTML element. Those calls can retrieve metadata about Power BI content on behalf of the app user, including the properties required to embed it in the custom application.
 
 ### Licensing
 
@@ -88,12 +88,14 @@ There's no specific licensing requirement to embed for your organization. What m
 
 ### Power BI client APIs
 
-The [Power BI client APIs](/javascript/api/overview/powerbi/)allow a developer to achieve tight integration between the custom application and the Power BI content. They develop the application by writing custom logic with JavaScript or TypeScript that runs in the browser. The application can set up and automate operations, and it can respond to user-initiated actions. Additionally, you can integrate Power BI capabilities, including navigation, filters and slicers, menu operations, layout, and bookmarks. An application can set up and automate operations, and it can respond to user-initiated actions. Additionally, you can integrate Power BI capabilities, including navigation, filters and slicers, menu operations, layout, and bookmarks.
+The [Power BI client APIs](/javascript/api/overview/powerbi/) allow a developer to achieve tight integration between the custom application and the Power BI content. They develop the application by writing custom logic with JavaScript or TypeScript that runs in the browser.
+
+The application can set up and automate operations, and it can respond to user-initiated actions. Additionally, you can integrate Power BI capabilities, including navigation, filters and slicers, menu operations, layout, and bookmarks.
 
 > [!TIP]
 > The _Power BI Embedded Analytics Playground_ is a website that helps you learn, explore, and experiment with Power BI embedded analytics. It includes a developer sandbox for hands-on experiences that use the client APIs with sample Power BI content or your own content. Code snippets and showcases are available for you to explore, too.
-
-For more information, see [What is the Power BI embedded analytics playground?](/power-bi/developer/embedded/power-bi-playground/)
+>
+> For more information, see [What is the Power BI embedded analytics playground?](/power-bi/developer/embedded/power-bi-playground/)
 
 ### Gateway setup
 
@@ -108,8 +110,8 @@ The [activity log](/power-bi/admin/service-admin-auditing) records user activiti
 
 ## Next steps
 
-For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
-
 To learn more about Power BI embedded analytics, work through the [Embed Power BI analytics](/training/paths/power-bi-embedded/) learning path.
 
 You can also work through the [Power BI Developer in a Day course](/power-bi/learning-catalog/developer-online-course/). It includes a self-study kit that guides you through the process of developing an ASP.NET Core MVC app.
+
+For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
