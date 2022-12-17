@@ -7,7 +7,7 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/15/2022
+ms.date: 12/16/2022
 ms.custom: intro-migration
 ---
 
@@ -19,7 +19,7 @@ This article targets Power BI Report Server and SQL Server Reporting Services (S
 
 :::image type="content" source="media/migrate-ssrs-reports-to-power-bi/rdl-migration-diagram.png" alt-text="Diagram showing migrating .rdl reports from on premises to the Power BI service.":::
 
-_Diagram shows the path migrating .rdl reports from on premises to the Power BI service._
+_Flow diagram shows the path migrating on-premises .rdl reports to paginated reports the Power BI service._
 
 > [!NOTE]
 > In Power BI, .rdl reports are called _paginated reports_.
