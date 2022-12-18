@@ -36,6 +36,7 @@ When creating a Premium capacity, administrators are required to define:
 At least one Capacity Admin must be assigned. Users assigned as Capacity Admins can:
 
 * Remove assigned workspaces from the capacity
+* Specify a default capacity for personal workspaces
 * Manage user permissions and assign:
     * Additional Capacity Admins
     * Contributors - Users who are allowed to assign workspaces to that capacity (Capacity Admins are automatically also Contributors)
