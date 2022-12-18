@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Manage Azure connections
 
-The Azure connections admin settings connect Azure services to Power BI. By using these settings, you can store your dataflows in your organization's Azure Data Lake Storage Gen2 (ADLS Gen2) account. You can review the benefits of this approach in [Reasons to use the ADLS Gen 2 workspace or tenant connection](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#reasons-to-use-the-adls-gen-2-workspace-or-tenant-connection).
+The Azure connections admin settings connect Azure services to Power BI. Using these settings, you can store your dataflows in your organization's Azure Data Lake Storage Gen2 (ADLS Gen2) account. You can review the benefits of this approach in [Reasons to use the ADLS Gen 2 workspace or tenant connection](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#reasons-to-use-the-adls-gen-2-workspace-or-tenant-connection).
 
 The Azure connections admin settings have the following options:
 
@@ -26,7 +26,7 @@ The Azure connections admin settings have the following options:
 
 ## Tenant-level storage
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. Storing dataflows in Azure Data Lake allows you to access them by using the Azure portal, Azure Storage Explorer, and Azure APIs. For more information, see [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. Storing dataflows in Azure Data Lake allows you to access them using the Azure portal, Azure Storage Explorer, and Azure APIs. For more information, see [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md).
 
 ## Workspace-level storage permissions
 
