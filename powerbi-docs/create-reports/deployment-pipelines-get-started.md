@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 10/02/2022
+ms.date: 12/18/2022
 ---
 
 # Get started with deployment pipelines
@@ -217,25 +217,18 @@ This section lists the limitations for the deployment rules.
 
 Data source rules can only be defined for the following data sources:
 
-* Azure Analysis Services
-
-* Azure Synapse
-
-* SQL Server Analysis Services (SSAS)
-
-* Azure SQL Server
-
-* SQL server
-
-* Odata Feed
-
-* Oracle
-
-* SapHana (only supported for import mode; not direct query mode)
-
-* SharePoint
-
-* Teradata
+|Data source  |Dataset  |Dataflow  |Paginated reports |
+|---------|---------|---------|---|
+|Azure Analysis Services |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Azure Synapse     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SQL Server Analysis Services (SSAS) |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Azure SQL Server |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SQL server     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Odata Feed     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/no.png" alt-text="No."::: |
+|Oracle     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SapHana (only supported for import mode; not direct query mode) |         |         |   |
+|SharePoint     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/no.png" alt-text="No."::: |
+|Teradata     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
 
 For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
 
