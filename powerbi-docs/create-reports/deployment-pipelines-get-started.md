@@ -213,11 +213,11 @@ This section lists the limitations for the deployment rules.
 >[!NOTE]
 >Parameter rules aren't supported for paginated reports.
 
-### Supported data sources for dataflow and dataset rules
+### Supported data sources for rules
 
-Data source rules can only be defined for the following data sources:
+The table below lists the data sources that you can define rules for. For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
 
-|Data source  |Dataset  |Dataflow  |Paginated reports |
+|Data source  |Dataset  |Dataflow  |Paginated report |
 |---------|---------|---------|---|
 |Azure Analysis Services |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
 |Azure Synapse     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
@@ -229,8 +229,6 @@ Data source rules can only be defined for the following data sources:
 |SapHana (only supported for import mode; not direct query mode) |         |         |   |
 |SharePoint     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/no.png" alt-text="No."::: |
 |Teradata     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
-
-For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
 
 ## Step 5 - Deploy content from one stage to another
 
