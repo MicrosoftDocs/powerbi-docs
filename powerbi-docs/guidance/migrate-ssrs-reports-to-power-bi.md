@@ -181,11 +181,6 @@ We highly recommended you complete the following actions to ensure the best poss
 
 The Post-migration phase is crucial for reconciling any issues, and that you address any performance concerns. Adding the paginated reports workload to a capacity can contribute to slow performance—for paginated reports _and other content_ stored in the capacity.
 
-For more information about these issues, including specific steps to understand and mitigate them, see the following articles:
-
-- [Optimizing Premium capacities](/power-bi/enterprise/service-premium-capacity-optimize)
-- [Monitor Premium capacities within the app](/power-bi/enterprise/service-admin-premium-monitor-capacity)
-
 ## Next steps
 
 For more information about this article, check out the following resources:

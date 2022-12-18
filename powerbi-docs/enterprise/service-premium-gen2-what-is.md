@@ -120,7 +120,7 @@ The following known limitations currently apply to Premium Gen2.
 > [Power BI Premium Per User](service-premium-per-user-faq.yml)
 
 > [!div class="nextstepaction"]
-> [Managing Premium capacities](service-premium-capacity-manage.md)
+> [Managing Premium Gen2 capacities](service-premium-capacity-manage-gen2.md)
 
 > [!div class="nextstepaction"]
 > [Power BI Embedded Generation 2](../developer/embedded/embedded-analytics-power-bi.md)

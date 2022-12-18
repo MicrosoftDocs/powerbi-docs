@@ -162,7 +162,11 @@ When connecting to a Power BI workspace with SSMS, ensure the following:
 
 ### Query execution in SSMS
 
+<<<<<<< HEAD
 When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](.././developer/embedded/embedded-analytics-power-bi.md) capacity, SQL Server Management Studio may display the following error:
+=======
+When connected to a workspace in a [Premium Gen2](service-premium-gen2-what-is.md) or an [Embedded Gen2](.././developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+>>>>>>> aca65191a18f1ce69616c67e0acefa52606ac50e
 
 ```
 Executing the query ...

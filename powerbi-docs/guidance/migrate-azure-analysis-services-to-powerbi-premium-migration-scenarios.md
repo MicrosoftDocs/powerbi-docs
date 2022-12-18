@@ -257,7 +257,7 @@ Customers can realize many benefits when they migrate from AAS to Power BI Premi
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium](migrate-azure-analysis-services-to-powerbi-premium.md)
-- [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+- [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 - Questions? [Try asking the Power BI community](https://community.powerbi.com/)
