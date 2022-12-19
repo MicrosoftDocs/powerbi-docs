@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 12/19/2022
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -19,6 +19,7 @@ Power BI can be your personal data analysis and visualization tool, and can also
 For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
 ## License scenarios
+
 Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro, Power BI Premium, and Power BI Premium Per User (PPU). Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help with answering these questions, see [Interact with the Power BI service as a Free user](../consumer/end-user-features.md), [What is Power BI Premium](../enterprise/service-premium-what-is.md), and [Licenses and subscriptions for business users](../consumer/end-user-license.md).
 
 | Scenario  | Creator  | Consumer |
