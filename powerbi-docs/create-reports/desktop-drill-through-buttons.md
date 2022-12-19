@@ -14,13 +14,13 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-You can create a *drillthrough* button in Power BI, a button that drills through to a page with details that are filtered to a specific context.
+You can create a *drillthrough* button in Power BI. This button drill through to a page with details that are filtered to a specific context.
 
 One way to drill through in a report is to right-click in a visual. However, if you want the drillthrough action to be more obvious, you can create a drillthrough button instead. A drillthrough button can increase the discoverability of important drillthrough scenarios in your reports, and you can conditionally determine how the button looks and acts. For example, you can show different text on a button if certain conditions are met.
 
 In this example, after you select the Word bar in the chart, the **See details** drillthrough button is enabled.
 
-![Screenshot of the Category Breakdown visual, highlighting the See details drillthrough button.](media/desktop-drill-through-buttons/power-bi-drill-through-visual-button.png)
+![Screenshot of visual, highlighting the See details drillthrough button.](media/desktop-drill-through-buttons/power-bi-drill-through-visual-button.png)
 
 When you select the **See details** button, you drill through to the Market Basket Analysis page. As you can see in the following visual, the drillthrough page is now filtered for Word.
 
@@ -32,7 +32,7 @@ To set up a drillthrough button, you first need to [set up a valid drillthrough 
 
 Because the drillthrough button has two states, enabled and disabled, you see two tooltip options.
 
-:::image type="content" source="media/desktop-drill-through-buttons/power-bi-create-drill-through-button.png" alt-text="Screenshot of visual and Format menu, highlighting options to set up a drillthrough button." lightbox="media/desktop-drill-through-buttons/power-bi-create-drill-through-button.png":::
+:::image type="content" source="media/desktop-drill-through-buttons/power-bi-create-drill-through-button.png" alt-text="Screenshot of visual and the Format menu, highlighting the options to set up a drillthrough button." lightbox="media/desktop-drill-through-buttons/power-bi-create-drill-through-button.png":::
 
 If you leave the tooltips boxes blank, Power BI automatically generates tooltips. Those tooltips are based on the destination and drillthrough fields.
 
@@ -96,7 +96,7 @@ These formatting options include:
 
 In Power BI Desktop, you can use conditional formatting to change the button text based on the selected value of a field. To do so, create a measure that outputs the desired string based on the DAX function `SELECTEDVALUE`.
 
-Here's an example measure that outputs "See product details" if a single Product value isn't selected; otherwise, it outputs "See details for [the selected Product]":
+The following example measure outputs "See product details" if a single Product value isn't selected. If a single product value is selected, the measure outputs "See details for [the selected Product]":
 
 ```dax
 String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0, "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
@@ -162,7 +162,7 @@ Here are some scenarios where you might want the button drillthrough destination
 
 Let's look at the first case, where you want to keep the button disabled until more conditions are met. In Power BI Desktop, you need to create a basic DAX measure that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drillthrough destination page.
 
-Here’s an example DAX measure that requires a store to be selected before the user can drill through on a product to store details page:
+Here’s an example DAX measure that requires a store to be selected before the user can drill through on a Product to Store details page:
 
 ```dax
 Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, “Store details”)
@@ -176,7 +176,7 @@ After you've created the measure, follow these steps in Power BI Desktop:
 
 1. For the last step, you select the DAX measure you created as the field value for the destination.
 
-   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-based-formula.png" alt-text="Screenshot of the Destination Action pane, highlighting the selection for What field should we base this on.":::
+   :::image type="content" source="media/desktop-drill-through-buttons/drill-through-based-formula.png" alt-text="Screenshot of the Destination Action pane, highlighting the base field selection.":::
 
    Now you see the button is disabled even when a single product is selected because the measure also requires you to select a single store.
 
@@ -236,7 +236,7 @@ In this example, the user would need to select a product, a store, *and* a desti
 - This button doesn't allow for multiple destinations using a single button.
 - This button only supports drillthroughs within the same report; in other words, it doesn't support cross-report drillthrough.
 - The disabled state formatting for the button is tied to the color classes in your report theme. Learn more about [color classes](desktop-report-themes.md#setting-structural-colors).
-- The drillthrough action works for all built-in visuals and *some* visuals imported from AppSource. However, it isn't guaranteed to work with *all* visuals imported from AppSource.
+- The drillthrough action works for all built-in visuals and *some* visuals imported from AppSource. However, it's not guaranteed to work with *all* visuals imported from AppSource.
 
 ## Next steps
 
