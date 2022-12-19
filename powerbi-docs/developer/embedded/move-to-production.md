@@ -24,7 +24,7 @@ Note that **all workspaces** (the ones containing the reports or dashboards, and
 
 By creating a capacity, you can take advantage of having a resource for your customers. There are two types of capacities you can choose from:
 
-* **Power BI Premium** - A tenant-level Microsoft 365 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
+* **Power BI Premium** - A tenant-level Microsoft 365 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
 
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
@@ -35,24 +35,7 @@ By creating a capacity, you can take advantage of having a resource for your cus
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
-| ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
-| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
-| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
-| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  |
-| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
-| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
-| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
-| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
-| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
-
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
-
-<sup>2</sup> These limits only apply to the datasets workload per capacity.
-
-<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
-
-<sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+[!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
 ## Development testing
 
