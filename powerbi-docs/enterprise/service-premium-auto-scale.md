@@ -98,10 +98,10 @@ Here's a short video that shows how quickly you can configure Autoscale for Powe
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](service-premium-what-is.md)
+> [What is Power BI Premium?](service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium FAQ](service-premium-faq.yml)
+> [Power BI Premium FAQ](service-premium-gen2-faq.yml)
 
 > [!div class="nextstepaction"]
 > [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)

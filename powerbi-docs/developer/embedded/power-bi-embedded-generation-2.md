@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 11/02/2022
+ms.date: 12/08/2022
 ms.custom: intro-overview, engagement-fy23
 ---
 
@@ -60,7 +60,7 @@ See [Autoscale your capacity](azure-pbie-scale-capacity.md#autoscale-your-capaci
 
 * Analysis services features in Embedded Gen2 are only supported on the latest client libraries. For more information see [Considerations and limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
-* For a list of Embedded Gen2 memory restrictions, see [Memory allocation](../../enterprise/service-premium-gen2-what-is.md#memory-allocation).
+* For a list of Embedded Gen2 memory restrictions, see [Memory allocation](../../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
 
 ## Next steps
 
@@ -71,7 +71,7 @@ See [Autoscale your capacity](azure-pbie-scale-capacity.md#autoscale-your-capaci
 > [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
+> [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
 >[Monitoring Power BI Embedded data reference](monitor-power-bi-embedded-reference.md)
