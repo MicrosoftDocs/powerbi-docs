@@ -1,6 +1,6 @@
 ---
 title: Comparing Power BI Desktop and the Power BI service
-description: Learn the difference between Power BI Desktop and the Power BI service.
+description: Learn and compare the differences between Power BI Desktop download application and the cloud-based Power BI service.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
@@ -29,7 +29,7 @@ The following Venn diagram compares Power BI Desktop and the Power BI service. T
 
 In both the application and the service, you build and edit Power BI *reports*. A report can have one or many pages, with visuals and collections of visuals. Add bookmarks, buttons, filters, and drillthrough to enhance navigation in your reports.
 
-:::image type="content" source="media/service-service-vs-desktop/power-bi-editing-desktop-service.png" alt-text="Screenshots of Power BI Desktop and the Power BI service, with numbered sections.":::
+:::image type="content" source="media/service-service-vs-desktop/power-bi-editing-desktop-service.png" alt-text="Screenshot showing a report in the Power BI service and Desktop, with numbered sections.":::
 
 The report editors in Power BI Desktop and in the service are similar. They're made up of three sections:  
 
