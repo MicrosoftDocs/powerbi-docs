@@ -188,7 +188,7 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 1. In the Admin portal, select **Capacity settings** from the navigation pane.
 1. From the list of capacities that appears, select the name of the capacity you wish to specify as the default capacity.
 1. On the capacity page, expand the **Workspaces assigned to this capacity** option and then choose **Assign workspaces**.
-1. On the assign workspaces side panel that opens, select **The entire organization's My Workspaces**
+1. On the assign workspaces side panel that opens, select the **The entire organization's My Workspaces** option.
 
     When this option is selected, all existing personal workspaces will be assigned to this premium capacity, and whenever a new personal workspace is created, it will be assigned to this premium capacity by default.
 
