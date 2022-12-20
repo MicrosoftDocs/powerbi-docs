@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisite
 
-This tutorial explains how to add common formatting properties to a visual. We'll use the [Circle card](develop-circle-card.md) visual as an example. We'll add the ability to change the color and thickness of the circle. If you don't have the [Circle card](develop-circle-card.md) project folder that you created in that tutorial, please redo the tutorial before continuing.
+This tutorial explains how to add common formatting properties to a visual. We'll use the [Circle card](develop-circle-card.md) visual as an example. We'll add the ability to change the color and thickness of the circle. If you don't have the [Circle card](develop-circle-card.md) project folder that you created in that tutorial, redo the tutorial before continuing.
 
 ## Adding formatting options
 
@@ -144,7 +144,7 @@ Now let's add new group called *color* for configuring the circle color and thic
 
 7. Open the `visual.ts` file.
 
-8. In the `visual.ts` file, import the following:
+8. In the `visual.ts` file, import the :
 
     ```typescript
     import { VisualSettings } from "./settings";
@@ -186,9 +186,9 @@ Now let's add new group called *color* for configuring the circle color and thic
     this.visualSettings.circle.circleThickness.value = Math.min(10, this.visualSettings.circle.circleThickness.value);
     ```
 
-    This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, and converts it to a number between 0 and 10.
+    This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, and converts it to a number between zero and 10.
 
-    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/radius.png" alt-text="Screenshot of setting circle thickness to between zero and ten.":::
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/radius.png" alt-text="Screenshot of setting circle thickness to between zero and 10.":::
 
 12. In the **circle element**, modify the values passed to the **fill style** and **stroke-width style** as follows:
 
@@ -216,7 +216,7 @@ Now let's add new group called *color* for configuring the circle color and thic
 
 16. In the **visual format** options, expand **Circle**.
 
-    ![Circle format](media/custom-visual-develop-tutorial-format-options/circle-format.png)
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/circle-format.png" alt-text="Screenshot of the final circle card visuals format pane elements.":::
 
     Modify the **color** and **thickness** option.
 
