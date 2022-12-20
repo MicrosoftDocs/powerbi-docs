@@ -14,7 +14,9 @@ ms.topic: how-to
 
 [!INCLUDE [applies-yes-paginated-yes-service-yes-desktop](../includes/applies-yes-paginated-yes-service-yes-desktop.md)]
 
-You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You've created a Power BI report in Power BI Desktop. You spent a lot of time designing the data model, then created a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that will show all the rows in that matrix. A Power BI paginated report can do that: print a table or matrix that runs to multiple pages, with page headers and footers and a perfect page layout that you design. It will complement the Power BI Desktop report. You want them to be based on the exact same data, with no discrepancies, so you use the same dataset.
+You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You've created a Power BI report in Power BI Desktop. You spent a lot of time designing the data model, then created a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that will show all the rows in that matrix.
+
+A Power BI paginated report can do that: print a table or matrix that runs to multiple pages, with page headers and footers and a perfect page layout that you design. It will complement the Power BI Desktop report. You want them to be based on the exact same data, with no discrepancies, so you use the same dataset.
 
 ![Screenshot of Report Builder paginated report printed from Power BI Desktop.](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
@@ -25,13 +27,15 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 - Download and install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
 - The dataset can be in any workspace, and you don't need to be a member of that workspace.
 - To access a Power BI dataset, you need to have *Build permission* for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
-- You don't need a Power BI Pro or Premium Per User (PPU) license to create a paginated report in Power BI Report Builder. 
-- You do need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license to publish your paginated report.
-- You can publish to *My Workspace*, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
+- You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license to publish your paginated report.
+- You don't need a Power BI Pro or PPU license to create a paginated report in Power BI Report Builder. 
+- You can publish to *My Workspace*. For any other workspace, you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
-If you want to follow along with this article, download the [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop, and add a table with many columns. In the **Format** pane, slide the toggle under **Totals** to the off position. Then [publish the report to a workspace](../create-reports/desktop-upload-desktop-files.md) in the Power BI service.
+If you want to follow along with this article, download the [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop, and add a table with many columns. In the **Format** pane, slide the toggle under **Totals** to the off position.
 
-  ![Screenshot of Totals toggled to off position in the Format pane.](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
+    ![Screenshot of Totals toggled to off position in the Format pane.](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
+
+Then [publish the report to a workspace](../create-reports/desktop-upload-desktop-files.md) in the Power BI service.
 
 ## Connect to the Power BI dataset
 
@@ -44,10 +48,10 @@ If you want to follow along with this article, download the [Retail Analysis sam
     > [!NOTE]
     > You can't create the data source or dataset for a Power BI dataset by using the Report Builder Table, Matrix, or Chart wizards. After you've created them, you can use the wizards to create tables, matrixes, or charts based on them.
 
-1. Search or browse for the dataset, or for the workspace where the dataset, then choose **Select**. Report Builder fills in the dataset name.
+1. Search or browse for the dataset, or for the workspace where the dataset resides, then choose **Select**. Report Builder fills in the dataset name.
 
     ![Screenshot that shows datasets to select from.](media/report-builder-shared-datasets/power-bi-report-builder-select-dataset.png)
-    
+
 1. The dataset is listed under Data Sources in the Report Data pane.
 
     ![Screenshot of the Report Data pane with the dataset listed under Data Sources.](media/report-builder-shared-datasets/power-bi-report-builder-data-source.png)
