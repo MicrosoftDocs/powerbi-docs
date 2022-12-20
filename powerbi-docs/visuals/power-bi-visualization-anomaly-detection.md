@@ -1,6 +1,6 @@
 ---
 title: Anomaly detection tutorial
-description: 'Tutorial: Detect Anomalies in Power BI'
+description: Learn how to use Anomaly detection of Power BI Desktop to detect anomalies automatically, format anomalies, and explain the anomalies in the data.
 author: aphilip94
 ms.author: anphil
 ms.reviewer: mihart
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: video-RE4M2hp
 ms.topic: how-to
-ms.date: 11/11/2021
+ms.date: 12/20/2022
 LocalizationGroup: Visualizations
 ---
 # Anomaly detection
