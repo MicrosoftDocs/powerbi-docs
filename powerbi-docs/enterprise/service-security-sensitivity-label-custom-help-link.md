@@ -29,7 +29,7 @@ You can define a custom help link for sensitivity labels in two ways:
 
 * If a dedicated custom help link for Power BI isn't set, Power BI uses the custom help link defined for Office 365 apps. The custom help link is defined in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/informationprotection). For more information, see [What label policies can do](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do).
 
-    :::image type="content" source="media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-compliance-ui.png" alt-text="Screenshot shows the Microsoft Purview settings page. Create policy, settings, and provide a custom help link are highlighted.":::
+    :::image type="content" source="media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link-purview-ui.png" alt-text="Screenshot shows the Microsoft Purview settings page. Create policy, settings, and provide a custom help link are highlighted.":::
 
 If a user has more than one label policy, the custom URL is always taken from the policy with the highest priority, so be sure to configure the custom URL on that policy.
 
