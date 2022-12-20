@@ -59,7 +59,11 @@
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
     - name: "Optimize ribbon in Power BI Desktop"
-      href: desktop-optimize-ribbon.md      
+      items:
+      - name: "Optimize ribbon in Power BI Desktop overview"
+        href: desktop-optimize-ribbon.md
+      - name: "DirectQuery optimization scenarios"
+        href: desktop-optimize-ribbon-scenarios.md          
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
