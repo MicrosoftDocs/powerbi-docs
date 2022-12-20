@@ -20,11 +20,7 @@ ms.author: maggies
 
   You can pass report parameters to a report by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine.  
 
-> [!NOTE]
-> Reporting Services integration with SharePoint is no longer available after SQL Server 2016.
   
-> [!IMPORTANT]  
->  It is important the URL include the `_vti_bin` proxy syntax to route the request through SharePoint and the Reporting Services HTTP proxy. The proxy adds some context to the HTTP request, context that is required to ensure proper execution of the report for SharePoint mode report servers.  
 >   
 >  If you don't include the proxy syntax, then you need to prefix the parameter with *rp:*.  
   
@@ -45,34 +41,33 @@ ms.author: maggies
   
 ```  
   
-parameter=value  
+rp:parameter=value  
 ```  
   
- For example, to specify two parameters, "ReportMonth" and "ReportYear", defined in a report, use the following URL for a native mode report server:  
+ For example, to specify two parameters, "Salesperson" and "State", defined in a report in your My Workspace,you'd use the following URL:  
   
 ```  
-https://myrshost/ReportServer?/AdventureWorks 2008R2/Employee_Sales_Summary_2008R2&ReportMonth=3&ReportYear=2008  
+https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d?rp:Salesperson=Tie+Bear&rp:State=Utah 
 ```  
   
- For example, to specify the same two parameters defined in a report, use the following URL for a SharePoint integrated mode report server. Note the `/_vti_bin`:  
+To specify the same two parameters defined in a report in an app, you'd use the following URL:  
   
 ```  
-https://myspsite/subsite/_vti_bin/reportserver?https://myspsite/subsite/AdventureWorks 2008R2/Employee_Sales_Summary_2008R2.rdl&ReportMonth=3&ReportYear=2008  
+https://app.powerbi.com/groups/me/apps/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0/rdlreports/b1d5e659-639e-41d0-b733-05d2bca9853c?rp:Salesperson=Tiggee&rp:State=Utah 
 ```  
   
- To pass a null value for a parameter, use the following syntax:  
+ To pass a null value for a parameter, use the following syntax: 
   
 ```  
   
-parameter  
-:isnull=true  
+parameter:isnull=true  
   
 ```  
   
  For example,  
   
 ```  
-SalesOrderNumber:isnull=true  
+rp:SalesOrderNumber:isnull=true 
 ```  
   
  To pass a **Boolean** value, use 0 for false and 1 for true. To pass a **Float** value, include the decimal separator of the server locale  
@@ -81,30 +76,25 @@ SalesOrderNumber:isnull=true
 >  If your report contains a report parameter that has a default value and the value of the **Prompt** property is **false** (that is, the Prompt User property is not selected in Report Manager), then you cannot pass a value for that report parameter within a URL. This provides administrators an option for preventing end users from adding or modifying the values of certain report parameters.  
   
 ##  <a name="bkmk_examples"></a> Additional Examples  
- The following URL example includes spaces and multiple parameters  
-  
--   Folder name of "SQL Server User Education Team" includes spaces and therefore the "+" replaces each space.  
-  
--   Report name of "team project report" includes spaces and therefore the "+" replaces each space.  
-  
--   Passes two parameters of "teamgrouping2" with a value of "xgroup" and "teamgrouping1" with a value of "ygroup".  
-  
-```  
-https://myserver/Reportserver?/SQL+Server+User+Education+Team/_ContentTeams/folder123/team+project+report&teamgrouping2=xgroup&teamgrouping1=ygroup  
-```  
-  
- The following URL example includes a multi-value parameter "OrderID. The format for a Multi-Value parameter is to repeat the parameter name for each value.  
-  
-```  
-https://myserver/Reportserver?/SQL+Server+User+Education+Team/_ContentTeams/folder123/team+project+report&teamgrouping2=xgroup&teamgrouping1=ygroup&OrderID=747&OrderID=787&OrderID=12  
-```  
-  
- The following URL example passes a single parameter of *SellStartDate* with a value of "7/1/2005", for a native mode report server.  
-  
-```  
-https://myserver/ReportServer/Pages/ReportViewer.aspx?%2fProduct_and_Sales_Report_AdventureWorks&SellStartDate=7/1/2005  
-```  
-  
+The following URL example includes a multi-value parameter "Salesperson”. The format for a multi-value parameter is to repeat the parameter name for each value.
 
   
+```  
+https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d?rp:Salesperson=Tie+Bear&rp:Salesperson=Mickey
+```  
   
+The following URL example passes a single parameter of SellStartDate with a value of "7/1/2005", for a native mode report server.  
+  
+```  
+https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d?rp:SellStartDate=7/1/2005
+```  
+  
+## Considerations and limitations
+  
+- If your report contains a report parameter that has a default value, and the value of the Prompt property is false (that is, the Prompt User property isn't selected in Report Manager), then you can't pass a value for that report parameter within a URL. This provides administrators the option of preventing end users from adding or modifying the values of certain report parameters.
+- Power BI doesn't support a query string of more than 2,000 characters. You may inadvertently exceed this value if you use URL parameters to view your paginated report, especially if your query string contains multiple parameter values. To properly load the report, reduce the number of characters to under 2,000.
+- The limit in the query string is evaluated after you're signed in to Power BI. If you open the report before signing in, the limit is reduced.
+  
+## Next steps
+ - [URL parameters in paginated reports in Power BI] (https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-builder-url-parameters)
+ - [What are paginated reports in Power BI?](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-report-builder-power-bi)
