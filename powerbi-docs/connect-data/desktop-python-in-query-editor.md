@@ -14,11 +14,11 @@ LocalizationGroup: Connect to data
 
 You can use **Python**, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Power Query Editor**. This integration of Python into **Power Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. **Python** is a powerful language, and can be used in **Power Query Editor** to prepare your data model and create reports.
 
-## Installing Python
+## Install Python
 
 To use **Python** in Power BI Desktop's **Power Query Editor**, you need to install **Python** on your local machine. You can download and install **Python** for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/).
 
-## Using Python in Power Query Editor
+## Use Python in Power Query Editor
 
 To show how to use **Python** in **Power Query Editor**, take this example from a stock market dataset, based on a CSV file that you can [download from here](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following procedure:
 
@@ -30,7 +30,7 @@ To show how to use **Python** in **Power Query Editor**, take this example from 
 
    ![Screenshot of the CSV file dialog, showing the selected CSV.](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
 
-1. Once the data is loaded, you see it in the **Fields** pane in Power BI Desktop.
+1. Once the data is loaded, you see it in the **Fields** pane in **Power BI Desktop**.
 
    ![Screenshot of the Fields pane, showing the loaded data.](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
 
@@ -69,13 +69,13 @@ To show how to use **Python** in **Power Query Editor**, take this example from 
 
 With just three lines of Python script, **Power Query Editor** filled in the missing values with a predictive model.
 
-## Creating visuals from Python script data
+## Create visuals from Python script data
 
 Now we can create a visual to see how the Python script code using the *pandas* library completed the missing values, as shown in the following image:
 
 ![Screenshot of the visual, showing original data and completed missing values of the pandas library.](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
 
-Once that visual is complete, and any other visuals you might want to create using **Power BI Desktop**, you can save the **Power BI Desktop** file. Power BI Desktop files save with the *.pbix* file name extension. Then use the data model, including the Python scripts that are part of it, in the Power BI service.
+Once that visual is complete, and any other visuals you might want to create using **Power BI Desktop**, you can save the **Power BI Desktop** file. **Power BI Desktop** files save with the *.pbix* file name extension. Then use the data model, including the Python scripts that are part of it, in the Power BI service.
 
 > [!NOTE]
 > Want to see a completed .pbix file with these steps completed? You're in luck. You can download the completed **Power BI Desktop** file used in these examples [right here](https://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix).
