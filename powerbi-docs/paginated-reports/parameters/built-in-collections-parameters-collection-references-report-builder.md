@@ -49,12 +49,9 @@ ms.author: maggies
   
  For more information about using parameters in a filter, see [Report Parameters &#40;Report Builder and Report Designer&#41;](../../reporting-services/report-design/report-parameters-report-builder-and-report-designer.md).  
   
-## See Also  
- [Expressions &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expressions-report-builder-and-ssrs.md)   
- [Commonly Used Filters &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/commonly-used-filters-report-builder-and-ssrs.md)   
- [Add, Change, or Delete a Report Parameter &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
- [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../reporting-services/tutorial-add-a-parameter-to-your-report-report-builder.md)   
- [Report Builder Tutorials](../../reporting-services/report-builder-tutorials.md)   
- [Built-in Collections in Expressions &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/built-in-collections-in-expressions-report-builder.md)  
-  
-  
+## Next Steps
+[Change the order of a paginated report parameter - Microsoft Report Builder & Power BI Report Builder | Microsoft Learn](../../paginated-reports/parameters/change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)
+
+[Add a multi-value parameter to a paginated report - Microsoft Report Builder & Power BI Report Builder | Microsoft Learn](../../paginated-reports/parameters/add-a-multi-value-parameter-to-a-report.md)
+
+[Customize the Parameters pane in a paginated report - Microsoft Report Builder & Power BI Report Builder | Microsoft Learn](../../paginated-reports/parameters/customize-the-parameters-pane-in-a-report-report-builder.md)
