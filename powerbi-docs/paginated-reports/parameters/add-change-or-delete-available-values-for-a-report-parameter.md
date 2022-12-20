@@ -2,7 +2,7 @@
 title: "Add, change, or delete available values for a paginated report parameter | Microsoft Docs"
 description: Customize the list of choices a user can make in a paginated report for a parameter in Report Builder by specifying a list of available values to display to the user.
 ms.date: 03/07/2017
-ms.service: reporting-services
+ms.service: powerbi
 ms.subservice: report-design
 
 
@@ -69,7 +69,7 @@ ms.author: maggies
   
      When you preview the report, you the drop-down list of available values for the parameter no longer appears.  
   
-## See Also  
+## See Also 
  [Change the Order of a Report Parameter &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
  [Add, Change, or Delete a Report Parameter &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
  [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
