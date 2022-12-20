@@ -12,15 +12,15 @@ LocalizationGroup: Connect to data
 ---
 # Use Python in Power Query Editor
 
-You can use **Python**, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Power Query Editor**. This integration of Python into **Power Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. **Python** is a powerful language, and can be used in **Power Query Editor** to prepare your data model and create reports.
+You can use *Python*, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Power Query Editor**. This integration of Python into **Power Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. Python is a powerful language, and can be used in **Power Query Editor** to prepare your data model and create reports.
 
 ## Install Python
 
-To use **Python** in Power BI Desktop's **Power Query Editor**, you need to install **Python** on your local machine. You can download and install **Python** for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/).
+To use Python in Power BI Desktop's **Power Query Editor**, you need to install Python on your local machine. You can download and install Python for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/).
 
-## Use Python in Power Query Editor
+## Use Python with Power Query Editor
 
-To show how to use **Python** in **Power Query Editor**, take this example from a stock market dataset, based on a CSV file that you can [download from here](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following procedure:
+To show how to use Python in **Power Query Editor**, take this example from a stock market dataset, based on a CSV file that you can [download from here](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following procedure:
 
 1. First, load your data into **Power BI Desktop**. In this example, load the *EuStockMarkets_NA.csv* file and select **Get data** > **Text/CSV** from the **Home** ribbon in **Power BI Desktop**.
 
