@@ -30,12 +30,12 @@ In this tutorial, you complete the following steps:
 
 * If you don't already have one, sign up for a [free Power BI trial](https://powerbi.microsoft.com/getting-started-with-power-bi) before you begin.
 * [Install Power BI Desktop](https://powerbi.microsoft.com/desktop) on a local computer.
-* [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [AdventureWorks sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about the AdventureWorks sample databases, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
+* [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [AdventureWorksDW2017 sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about the AdventureWorks sample databases, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
 * [Install SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
 * [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install) on the same local computer as SQL Server. In production, the gateway would usually be on a different computer.
 
 > [!NOTE]
-> If you're not a gateway administrator, or don't want to install a gateway yourself, contact a gateway administrator in your organization. The administrator can create the required data source definition to connect your dataset to your SQL Server database.
+> If you're not a gateway administrator, or don't want to install a gateway yourself, ask a gateway administrator in your organization to create the required data source definition to connect your dataset to your SQL Server database.
 
 ## Create and publish a Power BI Desktop file
 
@@ -54,12 +54,12 @@ Use the following procedure to create a basic Power BI report that uses the Adve
 
    ![Screenshot of SQL Server advanced options](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
-1. Select **OK**
+1. Select **OK**.
 
 1. On the next screen, verify your credentials, and then select **Connect**.
 
    > [!NOTE]
-   > If authentication fails, make sure you selected the correct authentication method and used an account with database access. In test environments, you might use **Database** authentication with an explicit username and password. In production environments, you typically use **Windows** authentication. For more assistance, see [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md) or contact your database administrator.
+   > If authentication fails, make sure you selected the correct authentication method and used an account with database access. In test environments, you might use **Database** authentication with an explicit username and password. In production environments, you typically use **Windows** authentication. For more assistance, see [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md), or contact your database administrator.
 
 1. If an **Encryption Support** dialog box appears, select **OK**.
 
@@ -83,7 +83,7 @@ Use the following procedure to create a basic Power BI report that uses the Adve
 
    ![Screenshot that shows the finished column chart.](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-   Notice that the **Road-250 Red** product has the same list price as the other **Road-250** products. This measure will change when you later update the data and refresh the report.
+   Notice that the **Road-250 Red** product has the same list price as the other **Road-250** products. This price will change when you later update the data and refresh the report.
 
 1. Save the report with the name *AdventureWorksProducts.pbix*.
 
@@ -95,7 +95,7 @@ Use the following procedure to create a basic Power BI report that uses the Adve
 
    ![Screenshot of the Publish to Power BI screen.](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
-## Connect the dataset to a SQL Server database
+## Connect the dataset to the SQL Server database
 
 In Power BI Desktop, you connected directly to your on-premises SQL Server database. In the Power BI service, you need a data gateway to act as a bridge between the cloud and your on-premises network. Follow these steps to add your on-premises SQL Server database as a data source to a gateway and connect your dataset to this data source.
 
@@ -105,7 +105,7 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 1. Select the **Datasets** tab, and then select the **AdventureWorksProducts** dataset from the list of datasets.
 
-1. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't see a gateway, make sure you followed the instructions to [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
+1. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't see a gateway, make sure you followed the instructions to [install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
    ![Screenshot that shows the Gateway connection in Settings.](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
@@ -162,7 +162,7 @@ Now that you've configured a refresh schedule, Power BI refreshes your dataset a
 
 ## Do an on-demand refresh
 
-To refresh the data sooner, such as to test your gateway and data source configuration, you can do an on-demand refresh by using the **Refresh Now** option in the left pane **Dataset** menu. On-demand refreshes don't affect the next scheduled refresh time, but they do count against the daily refresh limit.
+To refresh the data anytime, such as to test your gateway and data source configuration, you can do an on-demand refresh by using the **Refresh Now** option in the left pane **Dataset** menu. On-demand refreshes don't affect the next scheduled refresh time, but they do count against the daily refresh limit.
 
 To illustrate an on-demand refresh, first change the sample data by using SSMS to update the `DimProduct` table in the AdventureWorksDW2017 database, as follows:
 
@@ -212,7 +212,7 @@ It's a good idea to periodically use the refresh history to check the outcomes o
 Follow these instructions to clean up the resources you created for this tutorial:
 
 - If you don't want to use the sample data anymore, use SSMS to drop the database.
-- If you don't want to use the SQL Server data source, remove the data source from your data gateway. Also consider uninstalling the data gateway, if you only installed it for this tutorial.
+- If you don't want to use the SQL Server data source, remove the data source from your data gateway. Also consider uninstalling the data gateway, if you installed it only for this tutorial.
 - Also delete the AdventureWorksProducts dataset and report that Power BI created when you published the *AdventureWorksProducts.pbix* file.
 
 ## Next steps
