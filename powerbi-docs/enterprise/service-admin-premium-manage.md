@@ -175,6 +175,9 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 * [They can designate the capacity as the default capacity for all new My workspaces](#designate-a-default-capacity-for-all-new-my-workspaces). In this case, all new My workspaces will be assigned to that capacity by default upon creation.
 * [They can designate the capacity as the default capacity for all new My workspaces **and** all existing My workspaces](#designate-a-default-capacity-for-all-existing-and-new-my-workspaces). In this case, all existing My workspaces will be reassigned to that capacity, and all new My workspaces will be assigned to that capacity by default upon creation.
 
+> [!NOTE]
+> My workspace owners can remove their My workspace from Premium capacity and reassign it to non-premium capacity. Reassigning My workspaces to non-premium capacity may cause data residency compliance issues. Power BI administrators can prevent such issues by turning off the [Users can reassign personal workspaces]() tenant admin setting in the Admin portal. When this admin setting is off, My workspace owners can't reassign their My workspaces to other capacities.
+
 ### Designate a default capacity for all new My workspaces
 
 1. In the Admin portal, select **Capacity settings** from the navigation pane.
@@ -191,9 +194,6 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 1. On the assign workspaces side panel that opens, select the **The entire organization's My Workspaces** option.
 
     When this option is selected, all existing My workspaces will be assigned to this Premium capacity, and all new My workspaces will be assigned to this capacity by default upon creation.
-
-> [!NOTE]
-> My workspace owners can remove their My workspace from Premium capacity and reassign it to non-premium capacity. Reassigning My workspaces to non-premium capacity may cause data residency compliance issues. Power BI administrators can prevent such issues by turning off the [Users can reassign personal workspaces]() tenant admin setting in the Admin portal. When this admin setting is off, My workspace owners can't reassign their My workspaces to other capacities.
 
 ## Power BI Report Server product key
 
