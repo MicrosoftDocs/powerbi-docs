@@ -172,7 +172,7 @@ Once saved, the workspace and all its contents are moved into Premium capacity w
 
 A Power BI admin or capacity admin can designate a capacity as the default capacity for My workspaces. They have two options:
 
-* [They can designate the capacity as the default capacity for all new My workspaces](#designate-a-default-capacity-for-all-new-my-workspaces). In this case, all new My workspaces will be assigned to that capacity by default upon creation.
+* [They can designate the capacity as the default capacity for all new My workspaces](#designate-a-default-capacity-for-all-new-my-workspaces). In this case, all new My workspaces will be assigned to that capacity by default upon creation. Existing My workspaces remain where they are.
 * [They can designate the capacity as the default capacity for all new My workspaces **and** all existing My workspaces](#designate-a-default-capacity-for-all-existing-and-new-my-workspaces). In this case, all existing My workspaces will be reassigned to that capacity, and all new My workspaces will be assigned to that capacity by default upon creation.
 
 > [!NOTE]
