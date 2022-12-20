@@ -25,7 +25,7 @@ The Power BI service also hosts *paginated reports*. You create paginated report
 
 In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle shows some of the areas where the two overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show some of the features that are unique to either the Desktop application or to the Power BI service.  
 
-![Venn diagram showing the relationship between Power B I Desktop and the Power B I service.](media/service-service-vs-desktop/power-bi-venn.png)
+![Venn diagram showing the relationship between Power B I Desktop and the Power B I service.](media/service-service-vs-desktop/power-bi-venn-diagram.png)
 
 ## Editing Power BI reports
 
