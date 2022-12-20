@@ -105,8 +105,6 @@ https://myserver/Reportserver?/SQL+Server+User+Education+Team/_ContentTeams/fold
 https://myserver/ReportServer/Pages/ReportViewer.aspx?%2fProduct_and_Sales_Report_AdventureWorks&SellStartDate=7/1/2005  
 ```  
   
-## See Also  
- [URL Access &#40;SSRS&#41;](../reporting-services/url-access-ssrs.md)   
- [URL Access Parameter Reference](../reporting-services/url-access-parameter-reference.md)  
+
   
   
