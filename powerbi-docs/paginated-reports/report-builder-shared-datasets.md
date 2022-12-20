@@ -33,7 +33,7 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 
 If you want to follow along with this article, download the [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop, and add a table with many columns. In the **Format** pane, slide the toggle under **Totals** to the off position.
 
-    ![Screenshot of Totals toggled to off position in the Format pane.](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
+![Screenshot of Totals toggled to off position in the Format pane.](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 
 Then [publish the report to a workspace](../create-reports/desktop-upload-desktop-files.md) in the Power BI service.
 
