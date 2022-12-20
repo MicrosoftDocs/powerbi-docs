@@ -18,7 +18,7 @@ To determine which problem is causing your sign-in issue, the first step is to c
 
 Let's take a look at each of those issues in turn. At the end of this article is a discussion on how to capture a *trace* in Power BI Desktop, which can help track down troubleshooting issues.
 
-## Proxy Authentication Required error
+## Proxy authentication required error
 
 The following screen shows an example of the *proxy authentication required* error.
 
@@ -47,7 +47,7 @@ For customers who are part of a government cloud, fixing this issue can be done 
 
 Current versions of **Power BI Desktop** use the current version of the Active Directory Authentication Library (ADAL), which doesn't allow a redirect to non-secured (non-HTTPS) URLs.
 
-The following exceptions in *Power BI Desktop* trace files are associated with this error:
+The following exceptions in **Power BI Desktop** trace files are associated with this error:
 
 * `Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Non-HTTPS url redirect is not supported in webview`
 * `ErrorCode: non_https_redirect_failed`
@@ -85,7 +85,7 @@ It isn't necessary to have the registry entry in both locations.
 
 ![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03b.png)
 
-After the registry entry is created, the proxy settings defined in Internet Explorer are used when Power BI Desktop makes web requests. A restart might be necessary.
+After the registry entry is created, the proxy settings defined in Internet Explorer are used when **Power BI Desktop** makes web requests. A restart might be necessary.
 
 As with any change to proxy or credential settings, there are security implications to creating this registry entry, so administrators must make sure they've configured the Internet Explorer proxies correctly before enabling this feature.
 
@@ -98,6 +98,6 @@ The following recommendations should be followed whenever enabling this feature 
 * Only use **Negotiation** as the authentication scheme for the proxy server, to ensure only proxy servers that are joined to the Active Directory network are used by the client.
 * Don't use **NTLM fallback** on clients that use this feature.
 * If users aren't on a network with a proxy when this feature is enabled and configured as recommended in this section, the process of attempting to contact the proxy server and using default system credentials isn't used.
-* Power BI Desktop isn't proxy-aware, and thus proxy mechanisms including **Azure Application Proxy** and other proxy services, won't work properly with Power BI Desktop
+* **Power BI Desktop** isn't proxy-aware, and thus proxy mechanisms including **Azure Application Proxy** and other proxy services, won't work properly with **Power BI Desktop**
 
 [Using default system credentials for web proxy](#using-default-system-credentials-for-web-proxy)
