@@ -1,6 +1,6 @@
 ---
 title: Learn DAX basics in Power BI Desktop
-description: Learn about how effectively use DAX basics in Power BI Desktop to solve real business problems for your organization.
+description: Learn about how to effectively use DAX basics in Power BI Desktop to solve real business problems for your organization.
 author: Minewiskan
 ms.author: davidi
 ms.reviewer: ''
@@ -40,7 +40,7 @@ We'll frame our understanding of DAX around three fundamental concepts: *Syntax*
 
 Before you create your own formulas, let’s take a look at DAX formula syntax. Syntax includes the various elements that make up a formula, or more simply, how the formula is written. For example, here's a simple DAX formula for a measure:
 
-![DAX formula syntax](media/desktop-quickstart-learn-dax-basics/qsdax_1_syntax.png)
+![Screenshot of a DAX formula with pointers to individual syntax elements.](media/desktop-quickstart-learn-dax-basics/qsdax_1_syntax.png)
 
 This formula includes the following syntax elements:
 
