@@ -492,6 +492,10 @@
       href: ../paginated-reports/paginated-reports-change-log.md
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Get around Report Design View
       href: ../paginated-reports/paginated-reports-report-design-view.md
     - name: Planning a report
