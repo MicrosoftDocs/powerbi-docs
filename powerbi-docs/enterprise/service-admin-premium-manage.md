@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 12/19/2022
+ms.date: 12/20/2022
 LocalizationGroup: Premium
 ---
 
@@ -168,32 +168,32 @@ You can also assign a workspace to a Premium capacity from the settings of that 
 
 Once saved, the workspace and all its contents are moved into Premium capacity without any experience interruption for end users.
 
-## Designating a default capacity for personal workspaces
+## Designate a default capacity for My workspaces
 
-A Power BI admin or capacity admin can designate a capacity as the default capacity for personal workspaces. They have two options:
+A Power BI admin or capacity admin can designate a capacity as the default capacity for My workspaces. They have two options:
 
-* They can designate the capacity as the default capacity for all new personal workspaces. In this case, all new personal workspaces will be assigned to that capacity by default upon creation.
-* They can designate the capacity as the default capacity for all new personal workspaces **and** all existing personal workspaces. In this case, all existing personal workspaces will be reassigned to that capacity, and all new personal workspaces will be assigned to that capacity by default upon creation.
+* [They can designate the capacity as the default capacity for all new My workspaces](#designate-a-default-capacity-for-all-new-my-workspaces). In this case, all new My workspaces will be assigned to that capacity by default upon creation.
+* [They can designate the capacity as the default capacity for all new My workspaces **and** all existing My workspaces](#designate-a-default-capacity-for-all-existing-and-new-my-workspaces). In this case, all existing My workspaces will be reassigned to that capacity, and all new My workspaces will be assigned to that capacity by default upon creation.
 
-**Designate a default capacity for all new personal workspaces**
+### Designate a default capacity for all new My workspaces
 
 1. In the Admin portal, select **Capacity settings** from the navigation pane.
 1. From the list of capacities that appears, select the name of the capacity you wish to specify as the default capacity.
 1. On the capacity page, expand the **Preferred capacity for My workspace** option and turn on the toggle.
 
-    When the toggle is on, all new personal workspaces will be assigned to this Premium capacity by default upon creation.
+    When the toggle is on, all new My workspaces will be assigned to this Premium capacity by default upon creation.
 
-**Designate a default capacity for all existing and new personal workspaces**  
+### Designate a default capacity for all existing and new My workspaces  
 
 1. In the Admin portal, select **Capacity settings** from the navigation pane.
 1. From the list of capacities that appears, select the name of the capacity you wish to specify as the default capacity.
 1. On the capacity page, expand the **Workspaces assigned to this capacity** option and then choose **Assign workspaces**.
 1. On the assign workspaces side panel that opens, select the **The entire organization's My Workspaces** option.
 
-    When this option is selected, all existing personal workspaces will be assigned to this Premium capacity, and all new personal workspaces will be assigned to this capacity by default upon creation.
+    When this option is selected, all existing My workspaces will be assigned to this Premium capacity, and all new My workspaces will be assigned to this capacity by default upon creation.
 
 > [!NOTE]
-> Personal workspace owners can remove their personal workspace from Premium capacity and reassign it to non-premium capacity. Reassigning personal workspaces to non-premium capacity may cause data residency compliance issues. Power BI administrators can prevent this situation by turning off the [Users can reassign personal workspaces]() tenant admin setting in the Admin portal. When this admin setting is off, personal workspace owners aren't able to reassign their personal workspaces to other capacities.
+> My workspace owners can remove their My workspace from Premium capacity and reassign it to non-premium capacity. Reassigning My workspaces to non-premium capacity may cause data residency compliance issues. Power BI administrators can prevent such issues by turning off the [Users can reassign personal workspaces]() tenant admin setting in the Admin portal. When this admin setting is off, My workspace owners can't reassign their My workspaces to other capacities.
 
 ## Power BI Report Server product key
 
