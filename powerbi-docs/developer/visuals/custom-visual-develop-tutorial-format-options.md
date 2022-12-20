@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 09/29/2022
+ms.date: 12/19/2022
 ---
 
 # Tutorial: Add formatting options to the Circle Card visual
@@ -39,13 +39,11 @@ This tutorial explains how to add common formatting properties to a visual. We'l
     pbiviz start
     ```
 
-2. In **Power BI**, select the **Format page**.
+2. In **Power BI**, select the **Format panel**.
 
-    You should see a message that reads - *Formatting options are unavailable for this visual.*
+    You should see general formatting options, but not any visual formatting options.
 
-    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/format-paintbrush.png" alt-text="Screenshot of formatting paintbrush icon on the visualizations pane.":::
-
-    If you see formatting options here but can't change them skip to [Adding custom formatting options](#adding-custom-formatting-options) to customize them.
+    :::image type="content" source="media/custom-visual-develop-tutorial-format-options/view-general-formatting-options.png" alt-text="Screenshot of formatting panel with only general formatting options.":::
 
 3. In **Visual Studio Code**, open the `capabilities.json` file.
 
