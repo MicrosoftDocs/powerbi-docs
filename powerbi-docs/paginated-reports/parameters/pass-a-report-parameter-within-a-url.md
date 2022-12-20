@@ -96,5 +96,5 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d
 - The limit in the query string is evaluated after you're signed in to Power BI. If you open the report before signing in, the limit is reduced.
   
 ## Next steps
- - [URL parameters in paginated reports in Power BI] (https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-builder-url-parameters)
+ - [URL parameters in paginated reports in Power BI](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-builder-url-parameters)
  - [What are paginated reports in Power BI?](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-report-builder-power-bi)
