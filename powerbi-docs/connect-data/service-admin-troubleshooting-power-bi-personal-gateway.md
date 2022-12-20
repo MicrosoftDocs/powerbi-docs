@@ -42,13 +42,13 @@ Many issues can surface when the gateway version is out of date. It's a good gen
 
 You might get this error in settings for a dataset if you have a scheduled refresh and then you uninstalled and reinstalled the gateway (personal mode). When you uninstall a gateway (personal mode), the data source credentials for a dataset that was configured for refresh are removed from the Power BI service.
 
-**Solution:** In Power BI, go to the refresh settings for a dataset. In **Manage Data Sources**, for any data source with an error, select **Edit credentials**. Then sign in to the data source again.
+**Solution:** In the Power BI service, go to the refresh settings for a dataset. In **Manage Data Sources**, for any data source with an error, select **Edit credentials**. Then sign in to the data source again.
 
 **Error: The credentials provided for the dataset are invalid. Please update the credentials through a refresh or in the Data Source Settings dialog to continue.**
 
 **Solution:** If you get a credentials message, it could mean:
 
-- The usernames and passwords that you used to sign in to data sources aren't up to date. In Power BI, go to refresh settings for the dataset. In **Manage Data Sources**, select **Edit credentials** to update the credentials for the data source.
+- The usernames and passwords that you used to sign in to data sources aren't up to date. In the Power BI service, go to refresh settings for the dataset. In **Manage Data Sources**, select **Edit credentials** to update the credentials for the data source.
 - Mashups between a cloud source and an on-premises source, in a single query, fail to refresh in the gateway (personal mode) if one of the sources is using OAuth for authentication. An example of this issue is a mashup between CRM Online and a local SQL Server instance. The mashup fails because CRM Online requires OAuth.
   
   This error is a known issue, and it's being looked at. To work around the problem, have a separate query for the cloud source and the on-premises source. Then, use a merge or append query to combine them.
@@ -57,8 +57,8 @@ You might get this error in settings for a dataset if you have a scheduled refre
 
 **Solution:** If you get an unsupported data source message in **Schedule Refresh** settings, it could mean:
 
-- The data source isn't currently supported for refresh in Power BI.
-- The Excel workbook doesn't contain a data model, only worksheet data. Power BI currently only supports refresh if the uploaded Excel workbook contains a data model. When you import data by using Power Query in Excel, choose the **Load** option to load data to a data model. This option ensures that data is imported into a data model.
+- The data source isn't currently supported for refresh in the Power BI service.
+- The Excel workbook doesn't contain a data model, only worksheet data. The Power BI service currently only supports refresh if the uploaded Excel workbook contains a data model. When you import data by using Power Query in Excel, choose the **Load** option to load data to a data model. This option ensures that data is imported into a data model.
 
 **Error: [Unable to combine data] \<query part>/\<…>/\<…> is accessing data sources that have privacy levels, which cannot be used together. Please rebuild this data combination.**
 
@@ -79,7 +79,7 @@ You might get this error in settings for a dataset if you have a scheduled refre
 > [!NOTE]
 > If you have a 32-bit version of Excel, you can't install a 64-bit version ACE provider on the same computer.
 
-**Windows authentication is not supported for Access database:** Power BI currently only supports Anonymous authentication for the Access database.
+**Windows authentication is not supported for Access database:** The Power BI service currently only supports Anonymous authentication for the Access database.
 
 **Error: Sign-in error when you enter credentials for a data source:** If you get an error like this one when you enter Windows credentials for a data source:
 
@@ -93,7 +93,7 @@ You might still be on an older version of the gateway (personal mode).
 
 ![Screenshot shows a data source credential error message.](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 
-Power BI doesn't currently support Windows authentication for a data source using an ACE OLEDB provider.
+The Power BI service doesn't currently support Windows authentication for a data source using an ACE OLEDB provider.
 
 **Solution:** To work around this error, select **Anonymous authentication**. For a legacy ACE OLEDB provider, anonymous credentials are equal to Windows credentials.
 
@@ -107,7 +107,7 @@ If you receive an error when dashboard tiles refresh, see [Troubleshooting tile 
 
 With **Refresh history**, you can see what errors occurred and find useful data if you need to create a support request. You can view both scheduled and on-demand refreshes. Here's how you get to **Refresh history**.
 
-1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the **More options (...)** menu, and select **Schedule refresh**.
+1. In the Power BI service navigation pane, in **Datasets**, select a dataset. Open the **More options (...)** menu, and select **Schedule refresh**.
 
    ![Screenshot shows selecting Schedule refresh from the navigation pane.](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 
