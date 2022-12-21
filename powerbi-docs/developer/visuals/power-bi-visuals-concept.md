@@ -13,7 +13,7 @@ ms.date: 02/05/2022
 
 # Power BI visuals system integration
 
-The article describes how Power BI handles the interactions between the user, visual, and host.
+The article describes the [Visual API](./visual-api.md), and how Power BI handles the interactions between the user, visual, and host.
 
 The [`update` method](visual-api.md#update) is called whenever the visual's size or any of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
@@ -25,7 +25,7 @@ Actions and subsequent updates in Power BI can be initiated by the user or by th
 
 The following figure shows how common visual-based actions, like selecting a bookmark, are processed in Power BI.
 
-![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.png)
+![Diagram of the Power BI visual process.](media/power-bi-visuals-concept/visual-concept.png)
 
 ## User interacts with a visual through Power BI
 
@@ -124,8 +124,6 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
-> [!div class="nextstepaction"]
-> [Developing a Power BI circle card visual](./develop-circle-card.md)
-
-> [!div class="nextstepaction"]
-> [Publish Power BI visuals to Partner Center](office-store.md)
+* [Read about the Visual API](./visual-api.md)
+* [Developing a Power BI circle card visual](./develop-circle-card.md)
+* [Publish Power BI visuals to Partner Center](office-store.md)

@@ -65,7 +65,7 @@ This folder contains the visual's source code.
 
 In this folder, the Power BI visuals tool creates the following files:
 
-* `visual.ts` - The visual's main source code.
+* `visual.ts` - The visual's main source code. Read about the [Visual API](./visual-api.md).
 * `settings.ts` - The code of the visual's settings. The classes in the file provide an interface for defining your [visual's properties](./objects-properties.md#properties).
 
 ### style
@@ -169,8 +169,5 @@ The comments in the following code caption from the `pbiviz.json` file, describe
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Power BI visual concept](power-bi-visuals-concept.md)
-
->[!div class="nextstepaction"]
->[Step by step guide to developing a visual](develop-circle-card.md).
+* [Power BI visual concept](power-bi-visuals-concept.md)
+* [Step by step guide to developing a visual](develop-circle-card.md).
