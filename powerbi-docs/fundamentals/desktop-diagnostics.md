@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/29/2022
+ms.date: 12/21/2022
 LocalizationGroup: Get started
 ---
 # Power BI Desktop diagnostics collection
 
-To provide better supportability and diagnostics, Power BI Desktop can collect and submit diagnostic information. The process of collecting and sending Power BI diagnostic information is simple and easy to use. You should only save diagnostic details when instructed to do so by Microsoft Support. 
+To provide better supportability and diagnostics, Power BI Desktop can collect and submit diagnostic information. The process of collecting and sending Power BI diagnostic information is simple and easy to use. You should only save diagnostic details when instructed to do so by Microsoft Support.
 
 ## How to save diagnostics details in Power BI Desktop
 
@@ -53,7 +53,7 @@ If requested by Microsoft support, send the ZIP file containing the diagnostic d
 
 The following video shows the diagnostics collection process:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWDX8S]
+> [Simplifying collection of diagnostic information](https://www.microsoft.com/videoplayer/embed/RWDX8S)
 
 ## Diagnostic information collected
 
