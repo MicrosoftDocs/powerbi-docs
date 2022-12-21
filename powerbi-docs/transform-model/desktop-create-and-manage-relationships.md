@@ -204,7 +204,7 @@ In the interest of full disclosure, you just created this relationship the hard 
 
 Now, let’s look at the table in our report canvas again.
 
-:::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_reportfilterswithrel.png" alt-text="Screenshot of the Priority and Hours fields selected from the Fields pane.":::
+:::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_reportfilterswithrel.png" alt-text="Screenshot of the Priority and Hours fields selected from the Fields pane with new relationship.":::
 
 That looks a whole lot better, doesn’t it?
 
@@ -264,7 +264,7 @@ The **CompanyProjectPriority** table is a list of all company projects and their
 
 If we create a relationship between the **Approved Projects** column in the **ProjectBudget** table and the **ProjectName** column in the **CompanyProjectPriority** table, Power BI automatically sets **Cardinality** to **One to one (1:1)** and **Cross filter direction** to **Both**.
 
- :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png" alt-text="Screenshot of the Create relationship dialog box.":::
+ :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png" alt-text="Screenshot of the Create relationship dialog box with Cardinality to One to one (1:1) and Cross filter direction to Both.":::
 
 The reason Power BI makes these settings is because, to Power BI Desktop, the best combination of the two tables is as follows:
 
@@ -320,11 +320,11 @@ With single direction cross filtering, if you create a report that summarizes th
 
 Filter specification will flow from **CompanyProject** to **ProjectHours** (as shown in the following image), but it won’t flow up to **CompanyEmployee**.
 
- :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png" alt-text="Diagram of a cross filtering example.":::
+ :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png" alt-text="Diagram of a cross filtering example with flow from CompanyProject to ProjectHours.":::
 
 However, if you set the cross filtering direction to **Both**, it will work. The **Both** setting allows the filter specification to flow up to **CompanyEmployee**.
 
- :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png" alt-text="Diagram of a cross filtering example.":::
+ :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png" alt-text="Diagram of a cross filtering example with flow both ways":::
 
 With the cross filtering direction set to **Both**, our report now appears correct:
 
