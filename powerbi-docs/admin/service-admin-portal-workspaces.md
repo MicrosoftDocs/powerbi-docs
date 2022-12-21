@@ -58,18 +58,17 @@ These features are described in the following sections.
 
 ### Gain access to any user's My workspace
 
+Once inside the My workspace, you’ll be able to perform any actions as if it’s your own My workspace. You can view and make any changes to the contents, including sharing or unsharing. But you will not be able to grant anyone else access to the My workspace.  
+
 To gain access to a particular My workspace
 
 1. In the Power BI Admin portal, open the Workspaces page and find the personal workspace you want to get access to.
 1. Select the workspace and then choose **Get Access** from the ribbon, or select **More options (...)** and choose **Get Access**.
 
-electing this option, admins will be able to get access to the My workspace. The same option is present at the ribbon too. See Figure 1. 
+> [!NOTE]
+> Once access is obtained, the ribbon and the More options (...) menu will show **Remove Access** for the same My workspace. If you do not remove access by selecting one of these options, access will automatically be revoked for the admin after 24-hours. The My workspace owner's access remains intact.
 
-Once this option is selected, the My workspace will be available in the list of workspaces accessible from the navigation pane. You can tell it is a My workspace by noticing the icon. See Figure 2. 
-
-Once access is obtained, the same context menu will show Remove Access for the same My workspace. If you do not remove access by selecting this option, then access will be automatically revoked for the admin after a 24-hour period. My workspace owner’s access will remain intact. See Figure 3. 
-
-Once inside the My workspace, you’ll be able to perform any actions as if it’s your own My workspace. You can view and make any changes to the contents, including sharing or unsharing. But you will not be able to grant anyone else access to the My workspace.  
+Once you've gotten access, the My workspace will show up in the list of workspaces accessible from the navigation pane. The icon indicates that it is a My workspace.
 
 ### Designate a default capacity for My workspaces
 
@@ -82,7 +81,17 @@ Power BI admins can designate a default capacity for My workspaces. However, eve
 ### Restore a deleted My workspace as an app workspace
 
 When users leave the company, their My workspaces show up as Deleted in the State column on the Workspaces page in the Admin portal. Power BI admins can restore deleted My workspaces as app workspaces that other users can collaborate in.
-During this restoration process, The Power BI admin needs to assign at least one Workspace admin in the new app workspace, as well as give the new workspace a name. After the workspace has been restored, it will show up as Workspace in the Type column on the Workspaces page in the Admin portal
+
+During this restoration process, the Power BI admin needs to assign at least one Workspace admin in the new app workspace, as well as give the new workspace a name. After the workspace has been restored, it will show up as *Workspace* in the Type column on the Workspaces page in the Admin portal.
+
+To restore a deleted My workspace as an app workspace
+
+1. In the Power BI Admin portal, open the Workspaces page and find the deleted personal workspace you want to restore.
+1. Select the workspace and then choose **Restore** from the ribbon, or select **More options (...)** and choose **Restore**.
+1. In the Restore workspaces panel that appears, give a new name to the workspace and assign at least one user the Admin role in the workspace.
+1. When done, select **Restore**.
+
+After the deleted workspace has been restored as an app workspace, it is just like any other app workspace. 
 
 ## Next steps
 
