@@ -1,13 +1,13 @@
 ---
 title: Power BI webinars
-description: Power BI webinars
+description: Register for upcoming Power BI live webinars or watch recorded sessions on-demand for features  such as Getting started, Partners solutions, and much more.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/02/2022
+ms.date: 12/21/2022
 ---
 # Power BI webinars
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) and Anna Khachatryan (v-annakh) are vendors who work with Chauncy Freels and help to maintain this list of webinars"
@@ -22,19 +22,20 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Get started with these popular on-demand webinars:
 
-**Starter Guide for Power BI Consumers**  
-by Will Thompson  
+Starter guide for Power BI consumers  
+by Will Thompson, Microsoft  
 [Watch now](https://info.microsoft.com/ww-ondemand-Starter-Guide-for-Power-BI-Consumers.html)  
 
-**Drive Productivity and Effective Decision-Making with Excel and Power BI**  
-by Ikechukwu Edeagu  
+Drive productivity and effective decision-making with Excel and Power BI  
+by Ikechukwu Edeagu, Microsoft  
 [Watch now](https://info.microsoft.com/ww-ondemand-Drive-Productivity-And-Effective-Decision-Making-With-Excel-And-Power-BI.html)  
 
-**Unleash Your Dynamics 365 Data with Azure Synapse Analytics and Power BI**  
+Unleash your Dynamics 365 data with Azure Synapse Analytics and Power BI
+by Cillian Mitchell, Microsoft and Scott Sewell, Microsoft  
 [Watch now](https://info.microsoft.com/ww-ondemand-unleash-your-data-with-azure-synapse-analytics-and-power-bi.html)  
 
-**Quickly transform your Organization with a Data-Driven culture through Power BI**  
-by Lukasz Pawlowski  
+Quickly transform your organization with a data-driven culture through Power BI  
+by Lukasz Pawlowski, Microsoft  
 [Watch now](https://info.microsoft.com/ww-ondemand-quickly-transform-your-organization-with-a-data-driven-culture-through-power-bi.html)  
 
 **Power BI: Security and Governance for Your Organization**  
