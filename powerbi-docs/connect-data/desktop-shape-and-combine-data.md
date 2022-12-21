@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 11/28/2022
+ms.date: 12/9/2022
 LocalizationGroup: Transform and shape data
 #Customer intent: As a data analyst or report creator, I want to connect to more than one data source, so that I can use those data sources to create data models and build reports.
 ---
@@ -23,35 +23,132 @@ In this tutorial, you'll learn how to:
 
 This tutorial demonstrates how to shape a query by using Power BI Desktop, highlighting the most common tasks. The query used here is described in more detail, including how to create the query from scratch, in [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md).
 
-Power Query Editor in Power BI Desktop makes ample use of right-click menus, and the **Transform** ribbon. Most of what you can select in the ribbon is also available by right-clicking an item, such as a column, and choosing from the menu that appears.
+Power Query Editor in Power BI Desktop uses the right-click menus, and the **Transform** ribbon. Most of what you can select in the ribbon is also available by right-clicking an item, such as a column, and choosing from the menu that appears.
 
 ## Shape data
 
 To shape data in Power Query Editor, you provide step-by-step instructions for Power Query Editor to adjust the data as it loads and presents the data. The original data source isn't affected; only this particular view of the data is adjusted, or *shaped*.
 
-The steps you specify (such as rename a table, transform a data type, or delete a column) are recorded by Power Query Editor. Each time this query connects to the data source, Power Query Editor carries out those steps so that the data is always shaped the way you specify. This process occurs whenever you use Power Query Editor, or for anyone who uses your shared query, such as on the Power BI service. Those steps are captured, sequentially, in the **Query Settings** pane, under **Applied Steps**. We’ll go through each of those steps in the next few paragraphs.
+The steps you specify (such as rename a table, transform a data type, or delete a column) are recorded by Power Query Editor. Each time this query connects to the data source, Power Query Editor carries out those steps so that the data is always shaped the way you specify. This process occurs whenever you use Power Query Editor, or for anyone who uses your shared query, such as on the Power BI service. Those steps are captured, sequentially, in the **Query Settings** pane, under **APPLIED STEPS**. We’ll go through each of those steps in the next few paragraphs.
 
-:::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png" alt-text="Applied steps in Query Settings":::
+:::image type="content" source="media/desktop-shape-and-combine-data/query-settings-applied-steps.png" alt-text="Screenshot showing the Query Settings pane with Applied steps":::
 
-From [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md), let's use the retirement data, which we found by connecting to a web data source, to shape that data to fit our needs. We'll add a custom column to calculate rank based on all data being equal factors, and compare this column to the existing column, **Rank**.  
+1. Import the data from a web source, in this case a local file. Copy the following HTML code, paste it into a new file, and save the new file on your computer as `RetirementDataTable.html`. You can use Notepad or any other text editor.
 
-1. First, let's promote the first row of data into column headers. Select the first row, then choose **Transform \> Use First Row as Headers**.
+    ```html
+    <!DOCTYPE html>
+    <!-- saved from url=https://bankrate.infogram.com/best-and-worst-states-for-retirees-ranking-table-1hd12yxwn0rlw6k -->
+    <html lang="en">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        </head>
+    
+        <body>
+    
+          <table>
+            <tr>
+              <th>State</th>
+              <th>Overall rank</th>
+              <th>Overall score</th>
+              <th>Affordability</th>
+              <th>Well-being</th>
+              <th>Culture & diversity</th>
+              <th>Weather</th>
+              <th>Crime</th>
+            </tr>
+    
+            <tr>
+              <td>Florida</td><td>1</td><td>32.04</td><td>18</td><td>20</td><td>1</td><td>5</td><td>27</td></tr><tr>
+              <td>Georgia</td><td>2</td><td>30.37</td><td>7</td><td>35</td><td>37</td><td>4</td><td>29</td></tr><tr>
+              <td>Michigan</td><td>3</td><td>30.19</td><td>1</td><td>39</td><td>30</td><td>36</td><td>26</td></tr><tr>
+              <td>Ohio</td><td>4</td><td>29.79</td><td>11</td><td>32</td><td>34</td><td>21</td><td>20</td></tr><tr>
+              <td>Missouri</td><td>5</td><td>29.78</td><td>3</td><td>36</td><td>32</td><td>19</td><td>42</td></tr><tr>
+              <td>Kentucky</td><td>6</td><td>29.25</td><td>5</td><td>47</td><td>50</td><td>3</td><td>11</td></tr><tr>
+              <td>Texas</td><td>7</td><td>29.07</td><td>9</td><td>27</td><td>48</td><td>10</td><td>38</td></tr><tr>
+              <td>Tennessee</td><td>8</td><td>28.85</td><td>2</td><td>42</td><td>33</td><td>13</td><td>45</td></tr><tr>
+              <td>Pennsylvania</td><td>9</td><td>28.10</td><td>27</td><td>18</td><td>15</td><td>33</td><td>12</td></tr><tr>
+              <td>South Dakota</td><td>10</td><td>28.06</td><td>15</td><td>33</td><td>16</td><td>41</td><td>22</td></tr><tr>
+              <td>West Virginia</td><td>11</td><td>28.04</td><td>14</td><td>48</td><td>16</td><td>8</td><td>16</td></tr><tr>
+              <td>Mississippi</td><td>12</td><td>27.82</td><td>4</td><td>50</td><td>49</td><td>11</td><td>22</td></tr><tr>
+              <td>Arizona</td><td>13</td><td>27.54</td><td>24</td><td>25</td><td>20</td><td>1</td><td>41</td></tr><tr>
+              <td>Iowa</td><td>14</td><td>27.28</td><td>19</td><td>30</td><td>27</td><td>31</td><td>12</td></tr><tr>
+              <td>North Carolina</td><td>15</td><td>27.17</td><td>16</td><td>38</td><td>29</td><td>17</td><td>32</td></tr><tr>
+              <td>Illinois</td><td>16</td><td>26.45</td><td>28</td><td>13</td><td>31</td><td>30</td><td>25</td></tr><tr>
+              <td>Wisconsin</td><td>17</td><td>26.42</td><td>26</td><td>24</td><td>22</td><td>38</td><td>12</td></tr><tr>
+              <td>Indiana</td><td>18</td><td>26.25</td><td>12</td><td>41</td><td>43</td><td>24</td><td>22</td></tr><tr>
+              <td>Oklahoma</td><td>19</td><td>26.13</td><td>6</td><td>43</td><td>46</td><td>14</td><td>42</td></tr><tr>
+              <td>New York</td><td>20</td><td>26.08</td><td>42</td><td>5</td><td>5</td><td>34</td><td>15</td></tr><tr>
+              <td>Virginia</td><td>21</td><td>26.05</td><td>34</td><td>12</td><td>40</td><td>23</td><td>9</td></tr><tr>
+              <td>Wyoming</td><td>22</td><td>25.83</td><td>23</td><td>29</td><td>19</td><td>49</td><td>7</td></tr><tr>
+              <td>New Hampshire</td><td>23</td><td>25.79</td><td>37</td><td>21</td><td>7</td><td>45</td><td>1</td></tr><tr>
+              <td>North Dakota</td><td>24</td><td>25.63</td><td>25</td><td>16</td><td>39</td><td>46</td><td>18</td></tr><tr>
+              <td>South Carolina</td><td>25</td><td>25.49</td><td>17</td><td>40</td><td>25</td><td>16</td><td>46</td></tr><tr>
+              <td>New Jersey</td><td>26</td><td>25.30</td><td>46</td><td>3</td><td>21</td><td>26</td><td>3</td></tr><tr>
+              <td>Nevada</td><td>27</td><td>25.28</td><td>32</td><td>17</td><td>11</td><td>20</td><td>40</td></tr><tr>
+              <td>Colorado</td><td>28</td><td>25.23</td><td>30</td><td>7</td><td>24</td><td>44</td><td>37</td></tr><tr>
+              <td>Arkansas</td><td>29</td><td>25.04</td><td>8</td><td>49</td><td>41</td><td>8</td><td>46</td></tr><tr>
+              <td>Nebraska</td><td>30</td><td>24.96</td><td>28</td><td>19</td><td>35</td><td>37</td><td>21</td></tr><tr>
+              <td>Utah</td><td>31</td><td>24.81</td><td>35</td><td>10</td><td>47</td><td>25</td><td>18</td></tr><tr>
+              <td>Massachusetts</td><td>32</td><td>24.78</td><td>47</td><td>1</td><td>13</td><td>35</td><td>10</td></tr><tr>
+              <td>Idaho</td><td>33</td><td>24.71</td><td>21</td><td>34</td><td>36</td><td>43</td><td>6</td></tr><tr>
+              <td>Rhode Island</td><td>34</td><td>24.70</td><td>44</td><td>11</td><td>9</td><td>28</td><td>7</td></tr><tr>
+              <td>Minnesota</td><td>35</td><td>24.64</td><td>33</td><td>15</td><td>23</td><td>42</td><td>17</td></tr><tr>
+              <td>Alabama</td><td>36</td><td>24.59</td><td>10</td><td>46</td><td>42</td><td>15</td><td>44</td></tr><tr>
+              <td>Kansas</td><td>37</td><td>24.41</td><td>20</td><td>26</td><td>45</td><td>27</td><td>35</td></tr><tr>
+              <td>Oregon</td><td>38</td><td>24.33</td><td>40</td><td>14</td><td>6</td><td>29</td><td>28</td></tr><tr>
+              <td>Louisiana</td><td>39</td><td>24.30</td><td>13</td><td>44</td><td>44</td><td>6</td><td>48</td></tr><tr>
+              <td>Delaware</td><td>40</td><td>23.76</td><td>39</td><td>22</td><td>2</td><td>18</td><td>36</td></tr><tr>
+              <td>Washington</td><td>41</td><td>23.49</td><td>38</td><td>9</td><td>28</td><td>32</td><td>34</td></tr><tr>
+              <td>Hawaii</td><td>42</td><td>23.31</td><td>50</td><td>2</td><td>8</td><td>2</td><td>32</td></tr><tr>
+              <td>Connecticut</td><td>43</td><td>23.10</td><td>48</td><td>8</td><td>14</td><td>39</td><td>4</td></tr><tr>
+              <td>Maryland</td><td>44</td><td>22.23</td><td>43</td><td>4</td><td>38</td><td>22</td><td>29</td></tr><tr>
+              <td>Vermont</td><td>45</td><td>22.22</td><td>45</td><td>23</td><td>3</td><td>40</td><td>4</td></tr><tr>
+              <td>Montana</td><td>46</td><td>21.96</td><td>31</td><td>31</td><td>10</td><td>47</td><td>29</td></tr><tr>
+              <td>New Mexico</td><td>47</td><td>21.70</td><td>22</td><td>45</td><td>18</td><td>12</td><td>50</td></tr><tr>
+              <td>California</td><td>48</td><td>21.61</td><td>49</td><td>6</td><td>12</td><td>7</td><td>38</td></tr><tr>
+              <td>Maine</td><td>49</td><td>19.48</td><td>41</td><td>37</td><td>4</td><td>50</td><td>2</td></tr><tr>
+              <td>Alaska</td><td>50</td><td>17.31</td><td>36</td><td>28</td><td>26</td><td>48</td><td>49</td></tr>
+          </table>
+        </body>
+      </html>
+    ```
+    
+1. Open `RetirementDataTable.html` in a web browser and copy its URL from the browser's address bar.
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/transform-first-row-headers.png" alt-text="Promote first row of data to column headers":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/local-table-url.png" alt-text="Screenshot showing the URL for the local file RetirementDataTable.html":::
 
-1. Transform the data type of the index columns (**Affordability** to **Crime**) from text to whole numbers.
+1. Select the **Get data** dropdown, then choose **Web**.
 
-    To choose more than one column, select a column, hold down **SHIFT**, select more adjacent columns, and then right-click a column header. You can also use the **CTRL** key to choose non-adjacent columns one by one.
+    :::image type="content" source="media/desktop-shape-and-combine-data/get-data-web.png" alt-text="Screenshot showing the Get data menu with the Web source selected":::
 
-    Select the columns, then choose **Transform \> Data Type \> Whole Number**.
+1. Paste the copied URL into the **From Web** dialog and select **OK**.
+ 
+    :::image type="content" source="media/desktop-shape-and-combine-data/from-web-dialog-with-url.png" alt-text="Screenshot showing the Get data menu with the Web source selected":::
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/transform-column-data-type.png" alt-text="Change column data type from text to whole numbers":::
+1. In the **Navigator** dialog, select `Table 1`, then choose **Transform Data**.
 
-1. From the **Add Column** ribbon, select **Custom Column**, which lets you add a custom column.
+    :::image type="content" source="media/desktop-shape-and-combine-data/get-data-web-navigator-dialog-transform-data.png" alt-text="Screenshot showing the Navigator dialog with an HTML table selected and the Transform Data button":::
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_customcolumn.png" alt-text="Select Custom Column":::
+1. The Power Query Editor window opens. You can see the default steps applied so far, in the **Query Settings** pane under **APPLIED STEPS**. 
 
-1. In the **Custom Column** window, in **New column name**, enter *New rank*. For the **Custom column formula**, enter the following data:
+     - **Source**: Connecting to the website.
+     - **Extracted Table from Html**: Selecting the table. 
+     - **Promoted Headers**: Changing the top row of data (`<th>` lines in the source HTML) into column headers.
+     - **Changed Type**: Changing the column types, which are imported as text, to their inferred types. 
+
+    :::image type="content" source="media/desktop-shape-and-combine-data/power-query-editor-query-settings-dialog.png" alt-text="Screenshot showing how to Power Query window with Query Settings highlighted":::
+
+1. Change the table name from the default `Table 1` to `Retirement Data`, then press **Enter**.
+
+    :::image type="content" source="media/desktop-shape-and-combine-data/query-settings-change-table-name.png" alt-text="Screenshot showing how to edit a table name in Query Settings":::
+
+1. The existing data is ordered by a weighted score, as described [here](https://infogram.com/best-and-worst-states-for-retirees-ranking-table-1hd12yxwn0rlw6k). Let's add a custom column to calculate a different score, based on all data being equal factors. We'll then sort the table on this column to compare the custom score's ranking to the existing **Rank**.
+
+1. From the **Add Column** ribbon, select **Custom Column**.
+
+    :::image type="content" source="media/desktop-shape-and-combine-data/add-column-custom-column.png" alt-text="Screenshot showing the Add Column ribbon with the Custom Column button":::
+
+1. In the **Custom Column** dialog, in **New column name**, enter *New score*. For the **Custom column formula**, enter the following data:
 
     ```
     ([Affordability] + [#"Well-being"] + [#"Culture & diversity"] + [Weather] + [Crime]) / 5    
@@ -59,112 +156,97 @@ From [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-sta
  
 1. Make sure the status message is *No syntax errors have been detected*, and select **OK**.
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/custom-column-dialog.png" alt-text="Custom Column dialog with no syntax errors":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/custom-column-dialog.png" alt-text="Screenshot showing the Custom Column dialog with the column name, column formula, and no syntax errors":::
 
-1. To keep column data consistent, transform the new column values to whole numbers. To change them, right-click the column header, and then select **Change Type \> Whole Number**. 
+1. In **Query Settings**, the **APPLIED STEPS** list now shows the new **Added Custom** step we just defined. 
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/change-column-data-type.png" alt-text="Change column data type to Whole Number":::
+      :::image type="content" source="media/desktop-shape-and-combine-data/query-settings-applied-steps-custom-column.png" alt-text="Screenshot of Query Editor showing the Applied Steps list":::
 
-1. In **Query Settings**, the **Applied Steps** list shows the shaping steps applied to the data. To remove a step from the shaping process, select the **X** to the left of the step. 
+## Adjust the data
 
-    In the following image, the **Applied Steps** list reflects the added steps so far: 
-     - **Source**: Connecting to the website.
-     - **Extracted Table from Html**: Selecting the table. 
-     - **Promoted**: Changing the top row of data into column headers.
-     - **Changed Type**: Changing text-based number columns from *Text* to *Whole Number*. 
-     - **Added Custom**: Adding a custom column.
-     - **Changed Type1**: The most recent applied step, transform the default custom column type from text to whole number.
-
-       :::image type="content" source="media/desktop-shape-and-combine-data/query-editor-list-applied-steps.png" alt-text="Query ":::
-
-## Adjust data
-
-Before we can work with this query, we need to make a few changes to adjust its data:
+Before we work with this query, let's make a few changes to adjust its data:
 
    - Adjust the rankings by removing a column.
 
-       We've decided **Cost of living** isn't a factor in our results. After removing this column, we find that the data remains unchanged. 
+      For example, assume **Affordability** isn't a factor in our results. Removing this column from the query doesn't affect the other data. 
 
    - Fix any errors.
 
-       Because we removed a column, we need to readjust our calculations in the **New Rank** column, which involves changing a formula.
+       Because we removed a column, we need to adjust our calculations in the **New score** column by changing its formula.
 
    - Sort the data.
 
-       Sort the data based on the **New Rank** and **Rank** columns.
+       Sort the data based on the **New score** column, then create an associated **New rank** column to compare to the existing **Rank** column.
  
    - Replace the data.
 
-       We'll highlight how to replace a specific value and the need of inserting an **Applied Step**.
-
-   - Change the table name. 
-
-       Because **Table 0** isn't a useful descriptor for the table, we'll change its name.
+       We'll highlight how to replace a specific value and how to insert an applied step.
 
 These changes are described in the following steps. 
 
-1. To remove the **Cost of living** column, select the column, choose the **Home** tab from the ribbon, and then select **Remove Columns**.
+1. To remove the **Affordability** column, select the column, choose the **Home** tab from the ribbon, and then choose **Remove Columns**.
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png" alt-text="Select Remove Columns":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/remove-columns-button.png" alt-text="Screentshot showing the Remove Columns button":::
 
-   Notice the **New Rank** values haven't changed, due to the ordering of the steps. Because Power Query Editor records the steps sequentially, yet independently, of each other, you can move each **Applied Step** up or down in the sequence. 
+   Note the **New score** values haven't changed, due to the ordering of the steps. Power Query Editor records the steps sequentially, yet independently, of each other. To apply actions in a different sequence, you can move each applied step up or down. 
 
-1. Right-click a step. Power Query Editor provides a menu that lets you do the following tasks: 
-   - **Rename**: Rename the step.
-   - **Delete**: Delete the step.
-   - **Delete** **Until End**: Remove the current step, and all subsequent steps.
-   - **Move before**: Move the step up in the list.
-   - **Move after**: Move the step down in the list.
+1. Right-click a step to see its context menu.
+
+   :::image type="content" source="media/desktop-shape-and-combine-data/applied-steps-context-menu.png" alt-text="Screenshot showing the Applied Steps context menu":::
 
 1. Move up the last step, **Removed Columns**, to just above the **Added Custom** step.
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_movestep.png" alt-text="Move up step in Applied Steps":::
+   :::image type="content" source="media/desktop-shape-and-combine-data/applied-steps-moved-step-up.png" alt-text="Screenshot showing the Applied Steps list with the Removed Columns step now above the Custom Column step":::
 
 1. Select the **Added Custom** step. 
 
-   Notice the data now shows _Error_, which we'll need to address.
+   Notice the **New score** column now shows *Error* rather than the calculated value.
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_error2.png" alt-text="Error result in column data":::
+   :::image type="content" source="media/desktop-shape-and-combine-data/custom-column-new-score-showing-errors.png" alt-text="Screenshot showing the New score column with Error values":::
 
-   There are a few ways to get more information about each error. If you select the cell without clicking on the word *Error*, Power Query Editor displays the error information.
+   There are several ways to get more information about each error. If you select the cell without clicking on the word *Error*, Power Query Editor displays the error information.
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png" alt-text="Error information in Power Query Editor":::
+   :::image type="content" source="media/desktop-shape-and-combine-data/new-score-column-error-details.png" alt-text="Screenshot showing the New score column with Error details":::
 
-   If you select the word *Error* directly, Power Query Editor creates an **Applied Step** in the **Query Settings** pane and displays information about the error. 
+   If you select the word *Error* directly, Power Query Editor creates an **Applied Step** in the **Query Settings** pane and displays information about the error. Because we don't need to display error information anywhere else, select **Cancel**.
 
-1. Because we don't need to display information about the errors, select **Cancel**.
+1. To fix the errors, there are two changes needed, removing the *Affordability* column name and changing the divisor from 5 to 4. You can make these changes in two ways:
 
-1. To fix the errors, select the **New Rank** column, then display the column's data formula by selecting the **Formula Bar** checkbox from the **View** tab. 
+    1. Right-click the **Custom Column** step and select **Edit Settings**. This brings up the **Custom Column** dialog you used to create the **New score** column. Edit the formula as described previously, until it looks like this:
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_formulabar.png" alt-text="Select Formula Bar":::
+       :::image type="content" source="media/desktop-shape-and-combine-data/custom-column-dialog-with-errors-fixed.png" alt-text="Screenshot showing the Custom Column dialog with formula errors fixed":::
+    
+    1. Select the **New score** column, then display the column's data formula by enabling the **Formula Bar** checkbox from the **View** tab. 
 
-1. Remove the _Cost of living_ parameter and decrement the divisor, by changing the formula as follows: 
-   ```
-    Table.AddColumn(#"Removed Columns", "New Rank", each ([Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 7)
-   ```
+       :::image type="content" source="media/desktop-shape-and-combine-data/new-score-column-show-formula-bar.png" alt-text="Screenshot showing the New score column and its data formula":::
+        
+       Edit the formula as described previously, until it looks like this, then press **Enter**.
 
-1. Select the green checkmark to the left of the formula box, or press **Enter**.
-
+          ```
+          = Table.AddColumn(#"Removed Columns", "New score", each ([#"Well-being"] + [#"Culture & diversity"] + [Weather] + [Crime]) / 4)
+          ```
+      
+    
    Power Query Editor replaces the data with the revised values and the **Added Custom** step completes with no errors.
 
    > [!NOTE]
    > You can also select **Remove Errors**, by using the ribbon or the right-click menu, which removes any rows that have errors. However, in this tutorial we want to preserve all the data in the table.
 
-1. Sort the data based on the **New Rank** column. First, select the last applied step, **Changed Type1** to display the most recent data. Then, select the drop-down located next to the **New Rank** column header and select **Sort Ascending**.
+1. Sort the data based on the **New score** column. First, select the last applied step, **Added Custom** to display the most recent data. Then, select the drop-down located next to the **New score** column header and choose **Sort Descending**.
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_sort.png" alt-text="Sort data in New Rank column":::
+   :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_sort.png" alt-text="Sort data in New score column":::
 
-   The data is now sorted according to **New Rank**. However, if you look at the **Rank** column, you'll notice the data isn't sorted properly in cases where the **New Rank** value is a tie. 
+   The data is now sorted according to **New score**. However, if you look at the **Rank** column, you'll notice the data isn't sorted properly in cases where the **New score** value is a tie. 
 
-1. To fix the data sorting issue, select the **New Rank** column and change the formula in the **Formula Bar** to the following formula:
+1. To fix the data sorting issue, select the **New score** column and change the formula in the **Formula Bar** to the following formula:
 
    ```
-    = Table.Sort(#"Changed Type1",{{"New Rank", Order.Ascending},{"Rank", Order.Ascending}})
+    = Table.Sort(#"Changed Type1",{{"New score", Order.Ascending},{"Rank", Order.Ascending}})
    ```
 
 1. Select the green checkmark to the left of the formula box, or press **Enter**. 
 
-   The rows are now ordered in accordance with both **New Rank** and **Rank**. In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Power Query Editor automatically inserts a new step directly after the currently selected **Applied Step**. 
+   The rows are now ordered in accordance with both **New score** and **Rank**. In addition, you can select an **Applied Step** anywhere in the list, and continue shaping the data at that point in the sequence. Power Query Editor automatically inserts a new step directly after the currently selected **Applied Step**. 
 
 1. In **Applied Step**, select the step preceding the custom column, which is the **Removed Columns** step. Here we'll replace the value of the **Weather** ranking in Arizona. Right-click the appropriate cell that contains Arizona's **Weather** ranking, and then select **Replace Values**. Note which **Applied Step** is currently selected.
 
@@ -178,17 +260,11 @@ These changes are described in the following steps.
 
 1. Change the data value to _51_. 
 
-   Power Query Editor replaces the data for Arizona. When you create a new **Applied Step**, Power Query Editor names it based on the action; in this case, **Replaced Value**. If you have more than one step with the same name in your query, Power Query Editor adds a number (in sequence) to each subsequent **Applied Step** to differentiate between them.
+   Power Query Editor replaces the data for Arizona. When you create a new applied step, Power Query Editor names it based on the action, in this case, **Replaced Value**. If you have more than one step with the same name in your query, Power Query Editor appends an increasing number to each subsequent applied step's name.
 
 1. Select the last **Applied Step**, **Sorted Rows**. 
 
    Notice the data has changed regarding Arizona's new ranking. This change occurs because we inserted the **Replaced Value** step in the correct location, before the **Added Custom** step.
-
-1. Lastly, we want to change the name of the new table from **Table0** to something descriptive. In the **Query Settings** pane, under **Properties**, enter the new name of the table as *RetirementStats*, and then select **Enter**.
-
-   :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_renametable2.png" alt-text="Rename table in Query Settings":::
-
-   When we start creating reports, it’s useful to have descriptive table names, especially when we connect to multiple data sources, which are listed in the **Fields** pane of the **Report** view.
 
    We’ve now shaped our data to the extent we need to. Next let’s connect to another data source, and combine data.
 
@@ -235,7 +311,7 @@ To get the data into shape, follow these steps:
    :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_removecolumns.png" alt-text="Remove column":::
 
    > [!NOTE]
-   > The *sequence* of applied steps in Power Query Editor is important, and affects how the data is shaped. It’s also important to consider how one step may impact another subsequent step. For example, if you remove a step from the Applied Steps, subsequent steps may not behave as originally intended.
+   > The *sequence* of applied steps in Power Query Editor is important, and affects how the data is shaped. It’s also important to consider how one step may impact another subsequent step. For example, if you remove a step from the applied steps, subsequent steps may not behave as originally intended.
 
    > [!NOTE]
    > When you resize the Power Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Power Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
@@ -252,8 +328,8 @@ Now that we’ve shaped the StateCodes table the way we want, let’s combine th
 
 There are two primary ways of combining queries: *merging* and *appending*.
 
-- When you have one or more *columns* that you’d like to add to another query, you *merge* the queries. 
-- When you have additional *rows* of data that you’d like to add to an existing query, you *append* the query.
+- When you've one or more *columns* that you’d like to add to another query, you *merge* the queries. 
+- When you have more *rows* of data that you’d like to add to an existing query, you *append* the query.
 
 In this case, we want to merge the queries:
  
@@ -290,7 +366,7 @@ In this case, we want to merge the queries:
    If we had left the checkbox selected for **Use original column name as prefix**, the merged column would be named **NewColumn.State Code**.
 
    > [!NOTE]
-   > If you want to explore how to bring in the NewColumn table, you can experiment a bit. If you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane, and your query returns to the state prior to applying that **Expand** step. You can do this as many times as you like until the expand process looks the way you want it.
+   > If you want to explore how to bring in the NewColumn table, you can experiment a bit. If you don’t like the results, just delete that step from the **APPLIED STEPS** list in the **Query Settings** pane, and your query returns to the state prior to applying that **Expand** step. You can do this as many times as you like until the expand process looks the way you want it.
 
    We now have a single query (table) that combines two data sources, each of which has been shaped to meet our needs. This query can be a basis for interesting data connections, such as housing cost statistics, demographics, or job opportunities in any state.
 
