@@ -47,16 +47,16 @@ Admins can also manage and recover workspaces using either the admin portal or P
 
 ## Govern My workspaces
 
-Power BI’s My workspace is a personal workspace for any Power BI user to work with their own content. While generally only My workspace owners have access to their My workspaces, as set of features makes it easier for admins to govern these personal workspaces. With these features, Power BI admins can 
+Every Power BI user has a personal workspace called My workspace where they can work with their own content. While generally only My workspace owners have access to their My workspaces, Power BI admins can use a set of features to help them govern these workspaces. With these features, Power BI admins can 
 
-* Gain access to the contents of any user’s My workspace
+* Gain access to the contents of any user's My workspace
 * Designate a capacity for all existing and new My workspaces
 * Prevent users from moving My workspaces to a different capacity that may reside in non-compliant regions
 * Restore deleted My workspaces as app workspaces
 
 These features are described in the following sections.
 
-### Gain access to any user’s My workspace
+### Gain access to any user's My workspace
 
 To gain access to a particular My workspace
 
