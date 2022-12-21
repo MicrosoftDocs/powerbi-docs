@@ -36,7 +36,7 @@ Read about [how report readers use filters](../consumer/end-user-report-filter.m
 
 ## Build the Filters pane
 
-By default the Filters pane is formatted based on your current report settings. In the Filters pane, you configure which filters to include and update existing filters. The Filters pane looks the same for your report consumers when you publish your report.
+By default, the Filters pane is formatted based on your current report settings. In the Filters pane, you configure which filters to include and update existing filters. The Filters pane looks the same for your report consumers when you publish your report.
 
 1. When you add a visual to a report canvas, Power BI automatically adds a filter to the Filters pane for each field in the visual.
 
@@ -191,50 +191,52 @@ The default sort order for filters is alphabetical. To start custom sort mode, d
 
 We've improved the keyboard navigation for the Filters pane. You can tab through every part of the Filters pane and use the context key on your keyboard or **Shift+F10** to open the context menu.
 
-![Screenshot of the Filters pane.](media/power-bi-report-filter/power-bi-filter-accessible.png)
+![Screenshot of the Filters pane, showing the context menu.](media/power-bi-report-filter/power-bi-filter-accessible.png)
 
 ## Rename filters
 
-When you're editing the Filters pane, you can double-click the title to edit it. Renaming is useful if you want to update the filter card to make more sense for your end users. Keep in mind renaming the filter card doesn't rename the display name of the field in the fields list. It just changes the display name used in the filter card.
+When you're editing the Filters pane, you can double-click the title to edit it. Renaming is useful if you want to update the filter card to make more sense for your end users. Renaming the filter card doesn't rename the display name of the field in the fields list. Renaming the filter card just changes the display name used in the filter card.
 
-![Rename a filter](media/power-bi-report-filter/power-bi-filter-rename.png)
+![Screenshot of the Filters pane, highlighting the filter title.](media/power-bi-report-filter/power-bi-filter-rename.png)
 
 ## Filters pane search
 
 The Filters pane search feature allows you to search across your filter cards by title. This feature is helpful if you have several different filter cards in your Filters pane and need to find a specific card.
 
-![Search for a filter](media/power-bi-report-filter/power-bi-filter-search.png)
+![Screenshot of the Filters pane, with an example title entered,](media/power-bi-report-filter/power-bi-filter-search.png)
 
 You can also format the search box, just as you can format the other elements of the Filters pane.
 
-![Screenshot shows the option to format the search box in Power BI Desktop.](media/power-bi-report-filter/power-bi-desktop-filter-format-search.png)
+![Screenshot of the Filters pane, highlighting the option to format the search box.](media/power-bi-report-filter/power-bi-desktop-filter-format-search.png)
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-While this Filters pane search feature is on by default, you can also choose to turn it on or off by selecting **Enable search for Filters pane** in the **Report** settings of the **Options** dialog.
+While the Filters pane search feature is on by default, you can also choose to turn it on or off by selecting **Enable search for Filters pane** in the **Report** settings of the **Options** dialog.
 
-![Turn search on or off](media/power-bi-report-filter/power-bi-enable-search-filter.png)
+![Screenshot of the Options menu, highlighting the Enable search for Filters pane.](media/power-bi-report-filter/power-bi-enable-search-filter.png)
 
 # [Power BI service](#tab/powerbi-service)
 While this Filters pane search feature is on by default, you can also choose to turn it on or off.
 Select **File** > **Setting**, then select **Enable search for Filters pane**.
 
-![Screenshot shows the option to Enable search for Filters pane in the Power BI service.](media/power-bi-report-filter/power-bi-service-enable-search-filter.png)
+![Screenshot shows the option to Enable search for Filters pane.](media/power-bi-report-filter/power-bi-service-enable-search-filter.png)
 
 ---
 
 ## Restrict changes to filter type
 
 # [Power BI Desktop](#tab/powerbi-desktop)
+
 Under the **Filtering experience** section of **Report** settings, you can control if users can change the filter type.
 
-![Restrict changing filter type](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
+![Screenshot of the Filtering experience section, highlighting Allow users to change filter types.](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
 # [Power BI service](#tab/powerbi-service)
+
 You can control if users can change the filter type.
 Select **File** > **Setting**, then select **Allow users to change filter types**.
 
-![Restrict changing filter type](media/power-bi-report-filter/power-bi-service-enable-change-filter-type.png)
+![Screenshot of the Filtering experience menu, highlighting Allow users to change filter types.](media/power-bi-report-filter/power-bi-service-enable-change-filter-type.png)
 
 ---
 
@@ -243,22 +245,24 @@ Select **File** > **Setting**, then select **Allow users to change filter types*
 By default, your report readers can save filters for your report. You can choose to not allow them to save filters.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
+
 Also in **Report** settings of the **Options** dialog, under **Persistent filters**, select **Don't allow end users to save filters on this file in the Power BI service**.
 
 :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this file in the Power BI service.":::
 
 # [Power BI service](#tab/powerbi-service)
+
 Select **File** > **Setting**. Under **Persistent filters**, select **Don't allow end users to save filters on this report**.
 
-:::image type="content" source="media/power-bi-report-filter/power-bi-service-persistent-filters.png" alt-text="Screenshot of Don't allow end users to save filters on this report.":::
+:::image type="content" source="media/power-bi-report-filter/power-bi-service-persistent-filters.png" alt-text="Screenshot of the Persistent Filters dialog, showing Don't allow end users to save filters on this report.":::
 
 ---
 
 ## Apply filters button
 
-In Power BI Desktop, you can add a single **Apply** button to the filter pane, allowing you and your end-users to apply all filter modifications at once. Having this button can be useful if you want to defer applying filter changes. You only have to wait once, after you're ready to apply all the filter changes to the report or visuals.
+In Power BI Desktop, you can add a single **Apply** button to the filter pane, allowing you and your end-users to apply all filter modifications at once. Having this button is useful if you want to defer applying filter changes. You only have to wait once, after you're ready to apply all the filter changes to the report or visuals.
 
-:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Apply filter button":::
+:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Screenshot of Filters pane, showing the applied filters.":::
 
 ### Turn on the Apply button
 
@@ -268,7 +272,7 @@ You can set this feature at the report level, only in Power BI Desktop. However,
 
 1. Select **Add a single Apply button to the filter pane to apply changes at once**.
 
-    :::image type="content" source="media/power-bi-report-filter/apply-all-filters.png" alt-text="Turn on Apply filter button":::
+    :::image type="content" source="media/power-bi-report-filter/apply-all-filters.png" alt-text="Screenshot of the Options menu, highlighting Add a single Apply button to the filter pane to apply changes at once.":::
 
 ### Format the Apply button
 
@@ -281,7 +285,7 @@ Currently, you can control some of the formatting for the **Apply** text for the
 - Under **Header**
   - **Header text size** controls text size.
 
-:::image type="content" source="media/power-bi-report-filter/format-apply-filter.png" alt-text="Format the Apply filter button text":::
+:::image type="content" source="media/power-bi-report-filter/format-apply-filter.png" alt-text="Screenshot of the Filters pane, Format the Apply filter button text":::
 
 ## Considerations and limitations
 
