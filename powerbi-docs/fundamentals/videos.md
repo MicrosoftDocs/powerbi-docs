@@ -64,6 +64,6 @@ Related Power BI videos are collected into playlists to help you easily find sub
 
 * [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_video-docs-link)
 * [Watch Power BI demos](https://powerbi.microsoft.com/demo/)
-* Discover [videos from Azure about Power BI Embedded and Synapse Analytics](https://azure.microsoft.com/search/?q=Power+Bi)
+* [Microsoft Learn tutorial for Power BI Embedded and Azure Synapse workspaces](https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-power-bi)
  
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
