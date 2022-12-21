@@ -53,7 +53,7 @@ If requested by Microsoft support, send the ZIP file containing the diagnostic d
 
 The following video shows the diagnostics collection process:
 
-> [Simplifying collection of diagnostic information](https://www.microsoft.com/videoplayer/embed/RWDX8S)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDX8S]
 
 ## Diagnostic information collected
 
