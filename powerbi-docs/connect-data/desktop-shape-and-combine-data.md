@@ -123,7 +123,7 @@ The steps you specify (such as rename a table, transform a data type, or delete 
 
 1. Paste the copied URL into the **From Web** dialog and select **OK**.
  
-    :::image type="content" source="media/desktop-shape-and-combine-data/from-web-dialog-with-url.png" alt-text="Screenshot showing the Get data menu with the Web source selected":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/from-web-dialog-with-url.png" alt-text="Screenshot showing the From Web dialog with the source file's URL":::
 
 1. In the **Navigator** dialog, select `Table 1`, then choose **Transform Data**.
 
@@ -225,8 +225,7 @@ These changes are described in the following steps.
           ```
           = Table.AddColumn(#"Removed Columns", "New score", each ([#"Well-being"] + [#"Culture & diversity"] + [Weather] + [Crime]) / 4)
           ```
-      
-    
+          
    Power Query Editor replaces the data with the revised values and the **Added Custom** step completes with no errors.
 
    > [!NOTE]
@@ -355,7 +354,7 @@ In this case, we want to merge the queries:
 
    :::image type="content" source="media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png" alt-text="NewColumn column":::
 
-1. To expand the merged table, and select which columns to include, select the expand icon (:::image type="content" source="media/desktop-shape-and-combine-data/icon.png)" alt-text="Expand icon":::. 
+1. To expand the merged table, and select which columns to include, select the expand icon (:::image type="content" source="media/desktop-shape-and-combine-data/icon.png" alt-text="Expand icon":::. 
 
    The **Expand** window appears.
 
