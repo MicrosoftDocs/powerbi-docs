@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 12/15/2022
+  ms.date: 12/21/2022
   
 title: Deployment pipelines troubleshooting
 summary: |
@@ -302,6 +302,19 @@ sections:
           After deployment, can I download the RDL file of the paginated report?
         answer: |
           After a deployment, if you download the RDL of the paginated report, it might not be updated with the latest version which you can see in Power BI service.
+
+      - question: |
+          What can I do if I have a dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables?
+        answer: |
+          Datasets that use DirectQuery or Composite connectivity mode and have variation or calendar tables aren't supported in deployment pipelines. If your deployment fails and you think it's because you have a dataset with a variation table, you can look for the [variations](/dotnet/api/microsoft.analysisservices.tabular.column.variations?view=analysisservices-dotnet) property in one of the table columns.
+
+          You can use one of these following methods to edit your dataset so that you can use it in deployment pipelines":::
+
+          * In your dataset, instead of using DirectQuery or Composite mode, use CachedModel connectivity mode.
+
+          * Remove the auto-calendar tables from your dataset and delete the variations from all the columns in your table.
+
+            Deleting a variation may invalidate user authored measures, calculated columns and calculated tables. Use this method only if you understand how your dataset model works as it may result in data corruption is your visuals.
 
   - name: Dataflows
     questions:
