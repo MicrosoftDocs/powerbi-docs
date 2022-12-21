@@ -1,6 +1,6 @@
 ﻿---
 title: Custom help link for sensitivity labels
-description: Learn how to create a custom help link for your sensitivity labels that goes to your organization's web page.
+description: Learn how to create a custom help link for your sensitivity label menu.
 author: paulinbar
 ms.author: painbar
 manager: kfollis
@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 ---
 # Custom help link for sensitivity labels
 
-To help your organization's Power BI users understand and use your sensitivity labels, you can provide a *Learn more* link to your organization’s custom web page. You can provide details about what your users see when they're applying or being prompted to apply sensitivity labels. The image below shows an example of how the *Learn more* link appears when applying a sensitivity label in Power BI Desktop.
+To help your organization's Power BI users understand and use your sensitivity labels, you can provide a *Learn more* link pointing to your organization’s custom web page that users will see when they're applying or being prompted to apply sensitivity labels. The image below is an example that shows how the *Learn more* link appears when applying a sensitivity label in Power BI Desktop.
 
 :::image type="content" source="media/service-security-sensitivity-label-custom-help-link/sensitivity-label-custom-help-link.png" alt-text="Screenshot shows the sensitivity icon with the menu expanded. Learn more is highlighted.":::
 
@@ -21,7 +21,7 @@ To help your organization's Power BI users understand and use your sensitivity l
 
 You can define a custom help link for sensitivity labels in two ways:
 
-* By using the Security & Compliance PowerShell [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) command. You can use this cmdlet and the following syntax to create a Power BI dedicated help link.
+* Using the Security & Compliance Center PowerShell [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) command. This creates a Power BI dedicated help link.
 
     ```powershell
     Set-LabelPolicy -Identity "<policy name>" -AdvancedSettings @{powerbicustomurl=https://<your link>}
