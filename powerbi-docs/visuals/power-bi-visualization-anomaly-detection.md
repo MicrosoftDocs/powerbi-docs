@@ -1,6 +1,6 @@
 ---
 title: Anomaly detection tutorial
-description: Learn how to use Anomaly detection of Power BI Desktop to detect anomalies automatically, format anomalies, and explain the anomalies in the data.
+description: Learn how to use Anomaly detection of Power BI Desktop to add anomalies, format anomalies, and view and configure explanations.
 author: aphilip94
 ms.author: anphil
 ms.reviewer: mihart
@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Anomaly detection
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 Anomaly detection helps you enhance your line charts by automatically detecting anomalies in your time series data. It also provides explanations for the anomalies to help with root cause analysis.  With just a couple of clicks, you can easily find insights without slicing and dicing the data. You can create and view anomalies in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop.
 
@@ -21,11 +21,11 @@ Anomaly detection helps you enhance your line charts by automatically detecting 
  > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M2hp]
- 
+
 ## Get started
 This tutorial uses online sales data for various products. To follow along with this tutorial, download the [sample file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) of an online-sales scenario.
 
-You can enable Anomaly detection by selecting the chart and selecting **Find anomalies** in the analytics pane. 
+You can enable Anomaly detection by selecting the chart and selecting **Find anomalies** in the analytics pane.
 
 :::image type="content" source="media/power-bi-visualization-anomaly-detection/entry-point.png" alt-text="Screenshot showing entry point for anomaly detection.":::
 
