@@ -1,8 +1,8 @@
 ---
 title: Power BI Application lifecycle management (ALM) deployment pipelines overview 
 description: An introduction to deployment pipelines the Power BI Application lifecycle management (ALM) tool
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
@@ -20,7 +20,7 @@ The deployment pipelines tool enables BI creators to manage the lifecycle of org
 
 You can learn how to use the deployment pipelines tool by following these links.
 
- * [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines) - A Power BI Learn module that walks you through creating a deployment pipeline.
+* [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines) - A Power BI Learn module that walks you through creating a deployment pipeline.
 
 * [Get started with deployment pipelines](deployment-pipelines-get-started.md) - A Power BI article that explains how to create a pipeline, as well as key functions such as backward deployment and deployment rules.
 
@@ -36,11 +36,11 @@ Deployment pipelines is designed as a pipeline with three stages:
 
     You're ready to enter the test stage after you've made all the needed changes to your content. You upload the modified content so it can be moved to this test stage. Here are three examples of what can be done in the test environment:
 
-    * Share content with testers and reviewers
+  * Share content with testers and reviewers
 
-    * Load and run tests with larger volumes of data
+  * Load and run tests with larger volumes of data
 
-    * Test your app to see how it will look for your end users
+  * Test your app to see how it will look for your end users
 
 * **<a name="production"></a>Production**
 

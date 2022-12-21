@@ -1,8 +1,8 @@
 ---
 title: Get started using deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 description: Learn how to use deployment pipelines, the Power BI Application lifecycle management (ALM) tool
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
@@ -19,7 +19,7 @@ This article walks you through the basic settings required for using deployment 
 You can also complete the [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines) Learn module, which shows how to create a deployment pipeline.
 
 >[!NOTE]
->In a deployment pipeline, one workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
+>In a deployment pipeline, one Premium workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
 
 ## Accessing deployment pipelines
 
@@ -31,7 +31,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
     * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
 
-* You're an admin of a [workspace](../collaborate-share/service-create-the-new-workspaces.md).
+* You're an admin of a Premium [workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 >[!NOTE]
 > You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.
@@ -42,7 +42,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 You can create a pipeline from the deployment pipelines tab, or from a workspace.
 
-After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given access to the pipeline and will become [pipeline admins](deployment-pipelines-process.md#permissions). Pipeline access enables users to view, share, edit, and delete the pipeline.
+After the pipeline is created, you can share it with other users, edit, or delete it. When you share a pipeline with others, those will be given access to the pipeline and will become [pipeline admins](deployment-pipelines-process.md#permissions). Pipeline access enables users to view, share, edit, and delete the pipeline.
 
 ### Create a pipeline from the deployment pipelines tab
 
@@ -77,61 +77,17 @@ Follow the instructions in the link to [assign a workspace to a pipeline](deploy
 
 ## Step 3 - Deploy to an empty stage
 
-Any [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
-
-You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines) to programmatically perform deployments. For more information, see [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md).
-
-If you already have a workspace that you'd like to use with a specific stage, instead of deploying you can [assign](deployment-pipelines-assign.md) that workspace to the appropriate stage.
-
-When you're deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
-
-Once the deployment is complete, refresh the dataset. For more information, see [deploying content to an empty stage](deployment-pipelines-process.md#deploying-content-to-an-empty-stage).
-
-### Deploying options
+When you finished working with content in a pipeline stage, you can deploy it to the next stage. Deploying content to another stage is usually done after you've performed some actions in the pipeline. For example, made development changes to your content in the development stage, or tested your content in the test stage. A typical workflow for moving content from stage to stage, is development to test, and then test to production, but you can deploy in any direction. You can learn more about this process, in the [deploy content to an existing workspace](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace) section.
 
 Deployment pipelines offer three options when it comes to deploying your Power BI content:
 
-* [Deploying all content](#deploying-all-content) - Deploy all your Power BI content to the target stage.
+* [Deploying all content](deployment-pipelines-deploy/md#deploying-all-content) - Deploy all your Power BI content to the target stage.
 
-* [Selective deployment](#selective-deployment) - Select which Power BI content to deploy to the target stage.
+* [Selective deployment](deployment-pipelines-deploy/md##selective-deployment) - Select which Power BI content to deploy to the target stage.
 
-* [Backwards deployment](#backwards-deployment) - Deploy your content to a previous stage in the pipeline.
+* [Backwards deployment](deployment-pipelines-deploy/md##backwards-deployment) - Deploy your content to a previous stage in the pipeline.
 
-After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](#review-your-deployment-and-leave-a-note).
-
-#### Deploying all content
-
-Select the stage to deploy from and then select the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
-
-:::image type="content" source="media/deployment-pipelines-get-started/deploy.png" alt-text="A screenshot showing the deploy button for the development and test stages in a deployment pipeline." lightbox="media/deployment-pipelines-get-started/deploy.png":::
-
-#### Selective deployment
-
-To deploy only specific items, select the **Show more** link, and then select the items you wish to deploy. When clicking the deploy button, only the selected items are deployed to the next stage.
-
-Since dashboards, reports, datasets and dataflows are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
-
-:::image type="content" source="media/deployment-pipelines-get-started/selective-deploy.png" alt-text="A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option." lightbox="media/deployment-pipelines-get-started/selective-deploy.png":::
-
->[!NOTE]
-> * You can't deploy a Power BI item to the next stage, if the items it's dependent on doesn't exist in the stage you are deploying to. For example, deploying a report without a dataset will fail, unless the dataset already exists in the target stage.
-> * You might get unexpected results if you choose to deploy a Power BI item without the item it's dependent on. This can happen when a dataset or a dataflow in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
-
-#### Backwards deployment
-
-You can choose to deploy to a previous stage, for example in a scenario where you assign an existing workspace to a production stage and then deploy it backwards, first to the test stage, and then to the development one.
-
-Deploying to a previous stage works only if the previous stage is empty. When deploying to a previous stage, you can't select specific items. All content in the stage will be deployed.
-
-:::image type="content" source="media/deployment-pipelines-get-started/deploy-back.png" alt-text="A screenshot showing the deploy to previous stage button, available from the test or production stage menus." lightbox="media/deployment-pipelines-get-started/deploy-back.png":::
-
-### Review your deployment and leave a note
-
-After selecting which content to deploy, a pop-up window lists all the items you're about to deploy. You can review the list and add a note to the deployment. Adding a note is optional, but it is highly recommended as the notes are added to the [deployment history](deployment-pipelines-history.md). With a note for each deployment, reviewing the history of your pipelines becomes more meaningful.
-
-To leave a note, expand the **Add a note** option and write your note in the text box. When you're ready to deploy, select **Deploy**.
-
-:::image type="content" source="media/deployment-pipelines-get-started/add-note.png" alt-text="A screenshot showing the deployment pop-up window, with the Add a note option expanded.":::
+After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](deployment-pipelines-deploy/md##review-your-deployment-and-leave-a-note).
 
 ## Step 4 - Create deployment rules
 
@@ -180,6 +136,7 @@ To create a deployment rule, follow the steps in this section. After you create 
         * Select *Other* and manually add the new data source. You can only change to a data source from the same type.
 
         >[!NOTE]
+        >
         >* *Data source rules* will be grayed out if you're not the owner of the Power BI item you're creating a rule for, or if your Power BI item doesn't contain any data sources.
         >* For *dataflows*, *datasets* and *paginated reports*, the data source list is taken from the source pipeline stage.
         >* You can’t use the same data source in more than one rule.
@@ -249,7 +206,7 @@ When reviewing the test and production stage cards, you can see the last deploym
 
 Deployment time is useful for establishing when a stage was last updated. It can also be helpful if you want to track time between test and production deployments.
 
-## Comparing stages
+## Compare stages
 
 When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
 
