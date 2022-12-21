@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
-ms.date: 11/26/2019
+ms.date: 12/13/2022
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 ---
 # Tutorial: Ask questions about your data with the Q&A virtual analyst in the Power BI iOS apps
@@ -33,12 +33,9 @@ In this tutorial, you will:
 
 ## Prerequisites
 
-* **Sign up for Power BI**: If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-* **Install the Power BI for iOS app**: [Download the iOS app](https://apps.apple.com/app/microsoft-power-bi/id929738808) from the Apple App Store to your iPad, iPhone, or iPod Touch. The following versions support the Power BI for iOS app:
-  * iPad with iOS 11 or later.
-  * iPhone 5 and above, with iOS 11 or later. 
-  * iPod Touch with iOS 11 or later.
-* **Download sample data**: The first step is to download the **Opportunity Analysis Sample** to the Power BI service. See [Downloading samples to My workspace in the Power BI service](./mobile-apps-download-samples.md) for instructions on how to do this.
+* **Sign up for Power BI**: If you're not already signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+* **Install the Power BI app for iOS**: [Download the iOS app](https://apps.apple.com/app/microsoft-power-bi/id929738808) from the Apple App Store to your iPad or iPhone.
+* **Download sample data**: The first step is to download the **Opportunity Analysis Sample** into your Power BI service account. See [Install built-in samples](../../create-reports/sample-datasets.md#install-built-in-samples) for instructions. Be sure to choose the **Opportunity Analysis Sample**.
 
 
 Once you've completed the prerequisites and downloaded the sample data, you're ready to view the samples on your iOS device.
@@ -79,21 +76,7 @@ Once you've completed the prerequisites and downloaded the sample data, you're r
 
 ## Clean up resources
 
-When you've finished the tutorial, you can delete the Opportunity Analysis sample dashboard, report, and dataset.
-
-1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
-
-2. In the navigation pane, select **My Workspace**.
-
-3. Click the dashboards tab, and then on the Opportunity Analysis Sample line click the trash can.
-
-    ![Screenshot shows Power B I workspace with a dashboard selected and the delete icon called out.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
-
-    Now select the reports tab and do the same.
-
-4. Now select the datasets tab, click **More options** (...), and then choose **Delete**.
-
-    ![Screenshot shows Power B I workspace with a dataset selected and Delete selected from the More options menu.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
+When you've finished the tutorial, you can delete the Opportunity Analysis sample dashboard, report, and dataset. See [Clean up resources](../../fundamentals/service-get-started.md#clean-up-resources) for instructions about how to do this.
 
 ## Next steps
 

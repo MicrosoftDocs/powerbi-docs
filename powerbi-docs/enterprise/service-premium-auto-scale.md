@@ -29,8 +29,9 @@ To enable Autoscale, the following steps need to be completed:
 The following sections describe the steps in detail.
 
 >[!NOTE]
+>
 >* Autoscale isn’t available for Microsoft 365 Government Community Cloud (GCC), due to the use of the commercial Azure cloud.
->* [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2)
+>* [Embedded Gen 2](../developer/embedded/embedded-analytics-power-bi.md) does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity)
 
 ## Configure an Azure subscription to use with Autoscale
 
@@ -98,10 +99,10 @@ Here's a short video that shows how quickly you can configure Autoscale for Powe
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](service-premium-what-is.md)
+> [What is Power BI Premium?](service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium FAQ](service-premium-faq.yml)
+> [Power BI Premium FAQ](service-premium-gen2-faq.yml)
 
 > [!div class="nextstepaction"]
 > [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
