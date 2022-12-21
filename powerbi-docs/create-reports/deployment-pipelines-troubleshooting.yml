@@ -241,11 +241,11 @@ sections:
       - question: |
           What can I do if I have a dataset with DirectQuery or Composite connectivity mode, that uses variation or auto date/time tables?
         answer: |
-          Datasets that use DirectQuery or Composite connectivity mode and have variation or [auto date/time](../transform-model/desktop-auto-date-time.md) tables aren't supported in deployment pipelines. If your deployment fails and you think it's because you have a dataset with a variation table, you can look for the [variations](/dotnet/api/microsoft.analysisservices.tabular.column.variations?view=analysisservices-dotnet) property in one of the table columns. You can use one of the methods listed below to edit your dataset so that it works in deployment pipelines.
+          Datasets that use DirectQuery or Composite connectivity mode and have variation or [auto date/time](../transform-model/desktop-auto-date-time.md) tables aren't supported in deployment pipelines. If your deployment fails and you think it's because you have a dataset with a variation table, you can look for the [variations](/dotnet/api/microsoft.analysisservices.tabular.column.variations?view=analysisservices-dotnet) property in your table's columns. You can use one of the methods listed below to edit your dataset so that it works in deployment pipelines.
 
           * In your dataset, instead of using DirectQuery or Composite mode, use CachedModel connectivity mode.
 
-          * Remove the auto-calendar tables from your dataset and delete the variations from all the columns in your table. Deleting a variation may invalidate user authored measures, calculated columns and calculated tables. Use this method only if you understand how your dataset model works as it may result in data corruption in your visuals.
+          * Remove the auto date/time tables from your dataset and delete the variations from all the columns in your tables. Deleting a variation may invalidate user authored measures, calculated columns and calculated tables. Use this method only if you understand how your dataset model works as it may result in data corruption in your visuals.
 
   - name: Paginated reports
     questions:
