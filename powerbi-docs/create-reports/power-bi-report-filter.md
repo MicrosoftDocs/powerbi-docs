@@ -183,7 +183,7 @@ You can now modify the default settings of the Filters pane with the theme file.
 
 Custom sort functionality is available in the Filters pane. When creating your report, you can drag and drop filters to rearrange them in any order.
 
-![Animated GIF of the Filters pane, showing filters being rearranged.](media/power-bi-report-filter/power-bi-filter-sort.gif)
+![An animation of the Filters pane, showing filters being rearranged.](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
 The default sort order for filters is alphabetical. To start custom sort mode, drag any filter to a new position. You can only reorder filters within the level they apply to. For example, you can change the order of the visual-level filters within the visual-level section of the Filters pane.
 
@@ -262,7 +262,7 @@ Select **File** > **Setting**. Under **Persistent filters**, select **Don't allo
 
 In Power BI Desktop, you can add a single **Apply** button to the filter pane, allowing you and your end-users to apply all filter modifications at once. Having this button is useful if you want to defer applying filter changes. You only have to wait once, after you're ready to apply all the filter changes to the report or visuals.
 
-:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Screenshot of Filters pane, showing the applied filters.":::
+:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Screenshot of the Filters pane, showing the applied filters.":::
 
 ### Turn on the Apply button
 
