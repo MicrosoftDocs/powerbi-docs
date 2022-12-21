@@ -1,31 +1,31 @@
 ---
 title: Fetch more data from Power BI
-description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals.
+description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals by using the fetchMoreData API.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/01/2022
+ms.date: 11/18/2022
 ---
 
 # Fetch more data from Power BI
 
-The **fetchMoreData API** lets you load data chunks of different sizes as a way of enabling Power BI visuals to bypass the hard limit of a 30K row data view. In addition to the original approach of aggregating all the chunks requested, the API now also supports loading data chunks incrementally.
+The **fetchMoreData API** lets you load data chunks of different sizes as a way of enabling Power BI visuals to bypass the hard limit of a 30K row data view. In addition to the original approach of aggregating all requested chunks, the API now also supports loading data chunks incrementally.
 
 You can configure the number of rows to fetch at a time in advance, or you can use [`dataReductionCustomization`](#customized-data-reduction) to allow the report author set the chunk size dynamically.
 
 >[!NOTE]
-> The `fetchMoreData` API is available from version 3.4.
+> The `fetchMoreData` API is available in version 3.4 and above.
 >
-> The dynamic `dataReductionCustomization` API is available from version 5.2
+> The dynamic `dataReductionCustomization` API is available in version 5.2 and above.
 >
 > To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Enable a segmented fetch of large datasets
 
-Define a window size for `dataReductionAlgorithm` in the visual's *capabilities.json* file for the required `dataViewMapping`. The `count` determines the window size, which limits the number of new data rows that can be appended to the `dataview` in each update.
+Define a window size for `dataReductionAlgorithm` in the visual's *capabilities.json* file for the required `dataViewMapping`. The `count` determines the window size, which limits the number of new data rows that you can append to the `dataview` in each update.
 
 For example, add the following code in the *capabilities.json* file to append 100 rows of data at a time:
 
@@ -53,14 +53,14 @@ New segments are appended to the existing `dataview` and provided to the visual 
 
 In Power BI, you can `fetchMoreData` in one of two ways:
 
-* segments aggregation mode
-* incremental updates mode
+* *segments aggregation* mode
+* *incremental updates* mode
 
 ### Segments aggregation mode (default)
 
-With this mode, the data view provided to the visual contains the accumulated data from all the previous `fetchMoreData requests`. Therefore, the data view size grows with each update according to the window size. For example, if a total of 100,000 rows are expected and the window size is set to 10,000, the first update data view should include 10,000 rows, the second update data view should include 20,000 rows, and so on.
+With the segments aggregation mode, the data view that is provided to the visual contains the accumulated data from all previous `fetchMoreData requests`. Therefore, the data view size grows with each update according to the window size. For example, if a total of 100,000 rows are expected, and the window size is set to 10,000, the first update data view should include 10,000 rows, the second update data view should include 20,000 rows, and so on.
 
-This mode is selected by calling `fetchMoreData` with `aggregateSegments = true`.
+Select the segments aggregation mode by calling `fetchMoreData` with `aggregateSegments = true`.
 
 You can determine whether data exists by checking for the existence of `dataView.metadata.segment`:
 
@@ -72,9 +72,7 @@ You can determine whether data exists by checking for the existence of `dataView
     }
 ```
 
-You also can check to see whether it's the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment and `VisualDataChangeOperationKind.Append` refers to subsequent segments.
-
-For a sample implementation, see the following code snippet:
+You also can check to see whether the update is the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment and `VisualDataChangeOperationKind.Append` refers to subsequent segments.
 
 ```typescript
 // CV update implementation
@@ -93,14 +91,14 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-You also can invoke the `fetchMoreData` method from a UI event handler, as shown here:
+You also can invoke the `fetchMoreData` method from a UI event handler:
 
 ```typescript
 btn_click(){
 {
     // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available; as a response, Power BI will call update method
+        // request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData(true);
         // handle rejection
         if (!request_accepted) {
@@ -117,9 +115,9 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 ### Incremental updates mode
 
-With this mode, the data view provided to the visual only contains the next set of incremental data. The data view size is equal to the defined window size (or smaller, if the last bit of data is smaller than the window size). For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a data view size of 10,000 and one update with a data view of size 1,000.
+With the incremental updates mode, the data view that is provided to the visual contains only the next set of incremental data. The data view size is equal to the defined window size (or smaller, if the last bit of data is smaller than the window size). For example, if a total of 101,000 rows are expected and the window size is set to 10,000, the visual would get 10 updates with a data view size of 10,000 and one update with a data view of size 1,000.
 
-This mode is selected by calling `fetchMoreData` with `aggregateSegments = false`.
+The incremental updates mode is selected by calling `fetchMoreData` with `aggregateSegments = false`.
 
 You can determine whether data exists by checking for the existence of `dataView.metadata.segment`:
 
@@ -131,9 +129,7 @@ You can determine whether data exists by checking for the existence of `dataView
     }
 ```
 
-You also can check to see whether it's the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Segment` refers to subsequent segments.
-
-For a sample implementation, see the following code snippet:
+You also can check if the update is the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Segment` refers to subsequent segments.
 
 ```typescript
 // CV update implementation
@@ -161,14 +157,14 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-You also can invoke the `fetchMoreData` method from a UI event handler, as shown here:
+You also can invoke the `fetchMoreData` method from a UI event handler:
 
 ```typescript
 btn_click(){
 {
     // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available; as a response, Power BI will call update method
+        // request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData(false);
         // handle rejection
         if (!request_accepted) {
@@ -181,11 +177,11 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-> Although the data in the different updates of the data views are mostly exclusive, there will be some overlap between consecutive data views.
+> Although the data in the different updates of the data views are mostly exclusive, there is some overlap between consecutive data views.
 >
-> For table and categorical data mapping, the the first N data view rows can be expected to contain data copied from the previous data view.
+> For table and categorical data mapping, the first `N` data view rows can be expected to contain data copied from the previous data view.
 >
-> N can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
+> `N` can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
 The visual keeps the data view passed to it so it can access the data without extra communications with Power BI.  
 
@@ -250,11 +246,11 @@ The data reduction information will appear under *visual* in the format pane.
 
 ## Considerations and limitations
 
-* Window size is limited to a range of 2-30,000.
+* The window size is limited to a range of 2-30,000.
 
-* Data view total row count is limited to 1,048,576 rows.
+* The data view total row count is limited to 1,048,576 rows.
 
-* In segments aggregation mode, data view memory size is limited to 100 MB.
+* In segments aggregation mode, the data view memory size is limited to 100 MB.
 
 ## Next steps
 
