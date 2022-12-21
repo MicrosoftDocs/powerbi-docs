@@ -81,13 +81,13 @@ When you finished working with content in a pipeline stage, you can deploy it to
 
 Deployment pipelines offer three options when it comes to deploying your Power BI content:
 
-* [Deploying all content](deployment-pipelines-deploy/md#deploying-all-content) - Deploy all your Power BI content to the target stage.
+* [Deploying all content](deployment-pipelines-deploy.md#deploying-all-content) - Deploy all your Power BI content to the target stage.
 
-* [Selective deployment](deployment-pipelines-deploy/md##selective-deployment) - Select which Power BI content to deploy to the target stage.
+* [Selective deployment](deployment-pipelines-deploy.md##selective-deployment) - Select which Power BI content to deploy to the target stage.
 
-* [Backwards deployment](deployment-pipelines-deploy/md##backwards-deployment) - Deploy your content to a previous stage in the pipeline.
+* [Backwards deployment](deployment-pipelines-deploy.md##backwards-deployment) - Deploy your content to a previous stage in the pipeline.
 
-After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](deployment-pipelines-deploy/md##review-your-deployment-and-leave-a-note).
+After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](deployment-pipelines-deploy.md##review-your-deployment-and-leave-a-note).
 
 ## Step 4 - Create deployment rules
 
