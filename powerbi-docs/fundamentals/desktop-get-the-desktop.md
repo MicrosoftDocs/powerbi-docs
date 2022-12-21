@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 11/29/2022
+ms.date: 12/20/2022
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -115,28 +115,28 @@ We want your experience with Power BI Desktop to be great. If you run into any i
 When you install Power BI Desktop, you can set properties and options with command-line switches. These settings are especially useful for administrators who manage or facilitate the installation of Power BI Desktop across organizations.
 
 |Command-line option  |Behavior  |
-|------------------------------------|---------------------------------------------------------------------------------------------|
-|`-q`, `-quiet`, `-s`, `-silent`     | Silent install                                        |
-|`-passive`                          | Show the progress bar only during installation.       |
-|`-norestart`                        | Suppress the computer restart requirement.              |
-|`-forcerestart`                     | Restart the computer after installation without a prompt. |
-|`-promptrestart`                    | Prompt the user if a computer restart is required (default).    |
-|`-l<>`, `-log<>`                    | Log the installation to a specific file, with the file specified in \<\>. |
-|`-uninstall`                        | Uninstall Power BI Desktop.                                       |
-|`-repair`                           | Repair the installation or install Power BI Desktop if it's not currently installed.                         |
-|`-package`, `-update`               | Install Power BI Desktop (default, as long as `-uninstall` or `-repair` aren't specified).        |
+|---------------------|----------|
+|`-q`, `-quiet`, `-s`, `-silent` | Silent install |
+|`-passive`| Show the progress bar only during installation.|
+|`-norestart`| Suppress the computer restart requirement.|
+|`-forcerestart` | Restart the computer after installation without a prompt. |
+|`-promptrestart`| Prompt the user if a computer restart is required (default). |
+|`-l<>`, `-log<>`| Log the installation to a specific file, with the file specified in \<\>. |
+|`-uninstall` | Uninstall Power BI Desktop. |
+|`-repair` | Repair the installation or install Power BI Desktop if it's not currently installed.|
+|`-package`, `-update` | Install Power BI Desktop (default, as long as `-uninstall` or `-repair` aren't specified). |
 
 You can also use the following syntax parameters, which you specify with a `property = value` syntax:
 
 |Parameter  |Meaning  |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-|`ACCEPT_EULA`                  | Requires a value of `1` to automatically accept the End-User Licensing Agreement (EULA).         |
-|`ENABLECXP`                    | A value of `1` enrolls in the customer experience program that captures information about usage of the product.|
-|`INSTALLDESKTOPSHORTCUT`       | A value of `1` adds a shortcut to the Windows desktop.         |
-|`INSTALLLOCATION`              | The file path where you want Power BI Desktop installed.         |
-|`LANGUAGE`                     | The locale code, for example, `en-US`, `de-DE`, `pr-BR` to force the default language of the application. If you don't specify the language, Power BI Desktop uses the Windows OS language. You can change this setting in the **Options** dialog.         |
-|`REG_SHOWLEADGENDIALOG`        | A value of `0` disables the dialog that appears before you sign in to Power BI Desktop.         |
-|`DISABLE_UPDATE_NOTIFICATION`  | A value of `1` disables update notifications.         |
+|-----------|---------|
+|`ACCEPT_EULA`  | Requires a value of `1` to automatically accept the End-User Licensing Agreement (EULA).  |
+|`ENABLECXP`  | A value of `1` enrolls in the customer experience program that captures information about usage of the product.|
+|`INSTALLDESKTOPSHORTCUT`  | A value of `1` adds a shortcut to the Windows desktop. |
+|`INSTALLLOCATION`  | The file path where you want Power BI Desktop installed. |
+|`LANGUAGE`   | The locale code, for example, `en-US`, `de-DE`, `pr-BR` to force the default language of the application. If you don't specify the language, Power BI Desktop uses the Windows OS language. You can change this setting in the **Options** dialog. |
+|`REG_SHOWLEADGENDIALOG` | A value of `0` disables the dialog that appears before you sign in to Power BI Desktop. |
+|`DISABLE_UPDATE_NOTIFICATION`| A value of `1` disables update notifications. |
 
 For example, you can run Power BI Desktop with the following options and parameters to install without any user interface, use the German language:
 
