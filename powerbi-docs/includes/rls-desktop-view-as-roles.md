@@ -10,7 +10,7 @@ After you've created your roles, test the results of the roles within Power BI D
 
     ![Screenshot of the View as roles window with None selected.](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-1. Select a role you created, and then select **OK** to apply that role.
+1. Select a role you created. Then select **OK** to apply that role.
 
    The report renders the data relevant for that role.
 
