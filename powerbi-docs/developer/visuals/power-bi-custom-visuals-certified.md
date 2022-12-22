@@ -72,7 +72,7 @@ Make sure that the following commands don't return any errors.
 * `npm install`
 * `pbiviz package`
 * `npm audit` - Must not return any warnings with high or moderate level.
-* [ESlint from Microsoft](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals) with [the required configuration](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). This command must not return any lint errors.
+* [ESlint from Microsoft](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals). This command must not return any lint errors.
 
 ### Compiling requirements
 
