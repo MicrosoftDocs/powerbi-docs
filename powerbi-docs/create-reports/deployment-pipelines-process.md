@@ -22,7 +22,7 @@ You can also deploy content programmatically, using the [deployment pipelines RE
 
 When you deploy content to an empty stage, the metadata of the reports, dashboards, and datasets in the workspace you're deploying from, is copied to the stage you're deploying to. A new workspace for the stage you deployed to, is created on a Premium capacity.
 
-There are two ways to deploy content from one stage to the next one. You can deploy all the content, or you can [select which content items to deploy](deployment-deploy.md#selective-deployment).
+There are two ways to deploy content from one stage to the next one. You can deploy all the content, or you can [select which content items to deploy](deployment-pipelines-deploy.md#selective-deployment).
 
 You can also deploy content backwards, from a later stage in the deployment pipeline, to an earlier one.
 
