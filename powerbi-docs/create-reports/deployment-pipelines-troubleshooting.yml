@@ -373,7 +373,7 @@ sections:
       - question: |
           Why did my deployment fail due to broken rules?
         answer: |
-          If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-create-rules.md), and make sure you follow the [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+          If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-create-rules.md), and make sure you follow the [deployment rules limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations).
           
           If your deployment was previously successful, and is suddenly failing with broken rules, it may be due to a dataset being republished. The following changes to the source dataset, result in a failed deployment:
           
@@ -431,7 +431,7 @@ sections:
       - question: |
           Troubleshooting errors
         answer: |
-          Use this section to troubleshoot pipeline [rules](deployment-pipelines-create-rules.md) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
+          Use this section to troubleshoot pipeline [rules](deployment-pipelines-create-rules.md) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-create-rules.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
     
           |Error message |Solution |
           |--------------|---------|
