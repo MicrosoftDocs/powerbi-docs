@@ -28,7 +28,7 @@ You can configure data source rules and parameter rules. The following table lis
 >[!NOTE]
 > Data source rules only work when you change data sources from the same type.
 
-### Create a deployment rule
+## Create a deployment rule
 
 To create a deployment rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
 
@@ -64,7 +64,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
     * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
-### Deployment rule limitations
+## Deployment rule limitations
 
 This section lists the limitations for the deployment rules.
 
@@ -91,7 +91,7 @@ This section lists the limitations for the deployment rules.
 >[!NOTE]
 >Parameter rules aren't supported for paginated reports.
 
-### Supported data sources for dataflow and dataset rules
+## Supported data sources for dataflow and dataset rules
 
 Data source rules can only be defined for the following data sources:
 
