@@ -39,7 +39,7 @@ Here are the prerequisites for creating the paginated report:
 
 Here are the prerequisites for uploading your paginated report to the Power BI service:
 
-- You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+- You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
 
 - You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
 
@@ -83,7 +83,7 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 1. On the **Overview** tab, copy the value in the **Server name** box.
 
 
-1. **In Report Builder**: Go back to Report Builder. In the **Connection Properties** dialog box, under **Server name** paste the server name you copied.
+1. **In Report Builder**: Go back to Report Builder. In the **Connection Properties** dialog box, under **Server name**, paste the server name you copied.
 
 1. For **Log on to the server**, make sure **Use SQL Server Authentication** is selected, then type the user name and password you created in Azure for the sample database.
 
@@ -196,7 +196,7 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
 
 1. Click in the gray area around the design surface to show the **Report** properties.
 
-    If you don’t see the Properties pane, click the **View** tab > **Properties**.
+    If you don’t see the Properties pane, select the **View** tab > **Properties**.
 
 2. Expand **Margins** and change **Left** and **Right** from 1 inch to 0.75 inch.
 
@@ -214,7 +214,7 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 1. At the bottom of the design surface, you see **[&ExecutionTime]** on the right in the footer. 
 
-2. In the Report Data pane, expand the Built-in Fields folder. Drag **Page Number** to the left side of the footer, at the same height as **[&ExecutionTime]**.
+2. In the Report Data pane, expand the **Built-in Fields** folder. Drag **Page Number** to the left side of the footer, at the same height as **[&ExecutionTime]**.
 
 3. Drag the right side of the **[&PageNumber]** box to make it square.
 
@@ -230,13 +230,13 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 Now you can make the matrix wide enough to fill the width of the page, and make the text columns wider so the names don't scroll as much. 
  
-1. Select the matrix, then select the Company Name column.
+1. Select the matrix, then select the **Company Name** column.
 
-3. Hover over the gray bar at the top of the matrix at the right edge of the Company Name column. Drag to the right, until the column ends at 1 3/8 inches. 
+3. Hover over the gray bar at the top of the matrix at the right edge of the **Company Name** column. Drag to the right, until the column ends at 1 3/8 inches.
 
     ![Screenshot showing Drag the right edge of the column.](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-column.png)
 
-4. Drag the right edge of Product name until the column ends at 3 3/4 inches.
+4. Drag the right edge of **Product Name** until the column ends at 3 3/4 inches.
 
 Now the matrix is almost as wide as the print area.
 
@@ -244,7 +244,7 @@ Now the matrix is almost as wide as the print area.
 
 If you noticed when you ran the report, the dollar amounts aren't formatted as currency yet.
 
-1. Select the upper-left **[Sum(OrderQty)]** cell, hold down the Shift key, and select lower-right **[Sum(LineTotal)]** cell.
+1. Select the upper-left **[Sum(OrderQty)]** cell, hold down the Shift key, and select the lower-right **[Sum(LineTotal)]** cell.
 
     ![Screenshot showing Select cells with currency values.](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
@@ -264,7 +264,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
     ![Screenshot showing Turn on Advanced Mode.](media/paginated-reports-quickstart-aw/power-bi-paginated-advanced-mode.png)
 
-2. Select the top **Static** bar in the **Row Groups**. You see that the Company Name cell in the matrix is selected.
+2. Select the top **Static** bar in the **Row Groups**. You see that the **Company Name** cell in the matrix is selected.
 
    ![Screenshot showing Select static group.](media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png)
 
@@ -288,13 +288,10 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 1. In the [Power BI service](https://app.powerbi.com) nav pane, select **Workspaces** > **Create workspace**.
 
-1. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
+1. Name your workspace **Azure AW** or other unique name. You're the only member for now.
 
-1. In your new workspace, select **Get Data**.
 
-2. In the **Files** box > **Get**.
-
-3. Select **Local File**, navigate to where you saved the file > **Open**.
+1. In your new workspace, select **Upload** > **Browse**. Navigate to where you saved the file > **Open**.
 
    Power BI imports your file, and you see it under **Reports** on the App list page.
 
