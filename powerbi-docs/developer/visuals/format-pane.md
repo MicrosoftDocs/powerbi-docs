@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/12/2022
+ms.date: 12/12/2022
 ---
 
 # Customize the format pane in Power BI custom visuals
