@@ -28,7 +28,7 @@ Once the deployment is complete, refresh the dataset. For more information, see 
 
 Deployment pipelines offer three options when it comes to deploying your Power BI content:
 
-* [Deploying all content](#deploying-all-content) - Deploy all your Power BI content to the target stage.
+* [Deploying all content](#deploy-all-content) - Deploy all your Power BI content to the target stage.
 
 * [Selective deployment](#selective-deployment) - Select which Power BI content to deploy to the target stage.
 
