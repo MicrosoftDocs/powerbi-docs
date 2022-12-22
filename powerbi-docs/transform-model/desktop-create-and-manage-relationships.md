@@ -22,7 +22,7 @@ If you query two or more tables at the same time, when the data is loaded, Power
 
 On the **Modeling** tab, select **Manage relationships** \> **Autodetect**.
 
-:::image type="content" source="media/desktop-create-and-manage-relationships/automaticrelationship.gif" alt-text="Video showing how to create a relationship with autodetect.":::
+:::image type="content" source="media/desktop-create-and-manage-relationships/automaticrelationship.gif" alt-text="Animation showing how to create a relationship with autodetect.":::
 
 ## Create a relationship manually
 
@@ -32,7 +32,7 @@ On the **Modeling** tab, select **Manage relationships** \> **Autodetect**.
 
 3. In the second table drop-down list, select the other table you want in the relationship. Select the other column you want to use, and then select **OK**.
 
-   :::image type="content" source="media/desktop-create-and-manage-relationships/manualrelationship2.gif" alt-text="Video showing how to create a manual relationship.":::
+   :::image type="content" source="media/desktop-create-and-manage-relationships/manualrelationship2.gif" alt-text="Animation showing how to create a manual relationship.":::
 
 By default, Power BI Desktop automatically configures the options **Cardinality** (direction), **Cross filter direction**, and **Make this relationship active** for your new relationship. However, you can change these settings if necessary. For more information, see [Understanding additional options](#understanding-additional-options).
 
@@ -64,14 +64,14 @@ From **Report view** do any of the following:
 * Select the **Modeling** ribbon > **Manage relationships**, then select the relationship and select **Edit**.
 * Select a table in the **Fields** list then select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
 
-From the Data view, select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+From the Data view, select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then choose **Edit**.
 
 From the **Model** view do any of the following:
 
-* Select the **Home** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+* Select the **Home** ribbon > **Manage relationships**, then choose the relationship and then select **Edit**.
 * Double-click any line between two tables.
 * Right-click any line between two tables and then choose **Properties**.
-* Select any line between two tables, then select **Open relationship editor** in the **Properties** pane.
+* Select any line between two tables, then choose **Open relationship editor** in the **Properties** pane.
 
 Finally, you can also edit a relationship from any view, right-click or select the ellipsis to get to the context menu of any table, then select **Manage relationships**, select the relationship and then select **Edit**
 
@@ -85,7 +85,7 @@ Using the **Edit relationships dialog** is a more guided experience for editing 
 
 Editing relationships in the **Properties** pane is a streamlined approach to editing relationships in Power BI. You only see the table names and columns from which you can choose, you aren't presented with a data preview, and the relationship choices you make are only validated when you select **Apply changes**. Using the **Properties** pane and its streamlined approach reduces the number of queries generated when editing a relationship, which might be important for big data scenarios, especially when using DirectQuery connections. Relationships created using the **Properties** pane can also be more advanced than the relationships allowed to be created in the **Edit relationships dialog**.
 
-You can also multi-select relationships in the **Model** view diagram layouts by pressing the Ctrl key and selecting more than one line to select multiple relationships. Common properties can be edited in the **Properties** pane and **Apply changes** will process the changes in one transaction.
+You can also multi-select relationships in the **Model** view diagram layouts by pressing the Ctrl key and selecting more than one line to choose multiple relationships. Common properties can be edited in the **Properties** pane and **Apply changes** will process the changes in one transaction.
 
 Single or multi-selected relationships can also be deleted by pressing *Delete* on your keyboard. You can't undo the delete action, so a dialog prompts you to confirm deleting the relationships.
 
@@ -316,7 +316,7 @@ Single direction cross filtering works for many situations. In fact, if you’ve
 
 With single direction cross filtering, if you create a report that summarizes the project hours, you can then choose to summarize (or filter) by the **CompanyProject** table and its **Priority** column or the **CompanyEmployee** table and its **City** column. If however, you want to count the number of employees per projects (a less common question), it won’t work. You’ll get a column of values that are all the same. In the following example, both relationship's cross filtering direction is set to a single direction: towards the **ProjectHours** table. In the **Values** well, the **Project** field is set to **Count**:
 
- :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png" alt-text="Screenshot of visualization tab used with the Employee and Project fields.":::
+ :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png" alt-text="Screenshot of a or the visualization tab used with the Employee and Project fields.":::
 
 Filter specification will flow from **CompanyProject** to **ProjectHours** (as shown in the following image), but it won’t flow up to **CompanyEmployee**.
 
@@ -336,7 +336,7 @@ Cross filtering both directions works well for a pattern of table relationships 
 
 Cross filtering direction doesn't work well with a more general pattern often found in databases, like in this diagram:
 
- :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_crossfilterwithloops.png" alt-text="Diagram of cross filtering both directions in database pattern.":::
+ :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_crossfilterwithloops.png" alt-text="Diagram of cross filtering in both directions on a database pattern.":::
 
 If you have a table pattern like this, with loops, then cross filtering can create an ambiguous set of relationships. For instance, if you sum up a field from TableX and then choose to filter by a field on TableY, then it’s not clear how the filter should travel, through the top table or the bottom table. A common example of this kind of pattern is with TableX as a sales table with actuals data and for TableY to be budget data. Then, the tables in the middle are lookup tables that both tables use, such as division or region.
 
@@ -395,7 +395,7 @@ If we add both relationships to the model (**OpenedBy** first), then the **Manag
 
 Now, if we create a report that uses **Role** and **Employee** fields from **EmployeeRole**, and the **Hours** field from **ProjectTickets** in a table visualization in the report canvas, we see only project sponsors because they’re the only ones that opened a project ticket.
 
- :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png" alt-text="Screenshot of Employee, Role, and Hours fields selected.":::
+ :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png" alt-text="Screenshot shows the Employee, Role, and Hours fields selected.":::
 
 We can change the active relationship and get **SubmittedBy** instead of **OpenedBy**. In **Manage relationships**, uncheck the **ProjectTickets(OpenedBy)** to **EmployeeRole(Employee)** relationship, and then check the **EmployeeRole(Employee)** to **Project Tickets(SubmittedBy)** relationship.
 
@@ -438,7 +438,7 @@ In such a case, Power BI attempts to return combinations that have meaningful va
 
 In this situation, if we try to combine *Purchase[VenID]* and *Sales[CustID]* in a visual, Power BI doesn't have a concrete constraint it can apply, due to the *Many to Many* relationship between those tables. Though there might be custom constraints (not necessarily stemming from the relationships established in the model) that can be applied for various scenarios, Power BI can't infer a default constraint solely based on the relationships. If Power BI attempted to return all combinations of the two tables, it would create a large cross join and return non-relevant data. Instead of this, Power BI raises an error in the visual, such as the following.
 
-:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Screenshot of an error dialog when relationship cannot be inferred.":::
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Screenshot of an error dialog when relationship can’t be inferred. Alternatively, Screenshot of an error dialog where relationship isn’t inferred.":::
 
 **Scenario 4: Non-star schema and measure constraint provided.** If we take the example from Scenario 3, and add a user provided constraint in the form of a summarized column (*Count of Product[ProdID]* for example) or a model measure (*Sales[Total Qty]*) Power, BI can generate a query in the form of *Correlate Purchase[VenID]* and *Sales[CustID]* where *MeasureConstraint* isn't blank.
 
@@ -446,7 +446,7 @@ In this case, Power BI respects the user's constraint as being the sole constrai
 
 **Scenario 5: When a measure constraint is provided but it is partially related to the columns.** There are cases where the measure constraint provided by the user isn't entirely related to all the columns in the visual. A model measure always relates everything. Power BI treats this scenario as a black box when attempting to find relationships between columns in the visual, and it assumes the user knows what they're doing by using it. However, summarized columns in the form of *Sum*, *Average*, and similar summaries chosen from the user interface can be related to only a subset of the columns/tables used in the visual based on the relationships of the table to which that column belongs. As such, the constraint applies to some pairings of columns, but not to all. In that case Power BI attempts to find default constraints it can apply for the columns that aren't related by the user provided constraint (such as in Scenario 1). If Power BI can't find any, the following error is returned.
 
-:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Screenshot of an error dialog when Power BI cannot find default constraints.":::
+:::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Screenshot of an error dialog when Power BI can’t find default constraints.":::
 
 #### Resolving relationship errors
 
