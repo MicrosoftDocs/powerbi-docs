@@ -393,7 +393,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) isn't supported.
 
-* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations).
 
 ### Dataflow limitations
 
@@ -403,7 +403,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Deploying common data model (CDM) isn't supported.
 
-* For deployment pipeline rule limitations that affect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+* For deployment pipeline rule limitations that affect dataflows, see [Deployment rules limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations).
 
 * If a dataflow is being refreshed during deployment, the deployment will fail.
 
