@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 12/21/2022
 ms.custom: ''
 LocalizationGroup: Gateways
 ---
@@ -16,39 +16,37 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-Power BI supports many [on-premises data sources](power-bi-data-sources.md), and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we show you how to add SQL Server as a data source. The steps are similar for other data sources.
+Power BI supports many [on-premises data sources](power-bi-data-sources.md), and each source has its own requirements. You can use a gateway for a single data source or multiple data sources. For this example, you learn how to add SQL Server as a data source. The steps are similar for other data sources.
 
-Most data sources management operations can be performed by using APIs as well. For more information, see [REST APIs (Gateways)](/rest/api/power-bi/gateways).
+You can also do most data sources management operations by using APIs. For more information, see [REST APIs (Gateways)](/rest/api/power-bi/gateways).
 
-If you don't have a gateway installed yet, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install) to get started.
+If you don't have a gateway installed, [install an on-premises data gateway](/data-integration/gateway/service-gateway-install) to get started.
 
 ## Add a data source
 
-1. From the page header in the Power BI service, select  **Settings** ![Settings gear icon](media/service-gateway-data-sources/icon-gear.png) > **Manage gateways**.
+1. At the upper-right of the Power BI service screen, select the **Settings** ![Settings gear icon](media/service-gateway-data-sources/icon-gear.png) icon, and then select **Manage connections and gateways**.
 
-    :::image type="content" source="media/service-gateway-data-sources/manage-gateways.png" alt-text="Screenshot of Manage gateways.":::
+   :::image type="content" source="media/service-gateway-data-sources/manage-gateways.png" alt-text="Screenshot that shows selecting Manage connections and gateways.":::
 
+2. Select **New** at the top of the screen to add a new data source.
 
-2.	Select **New** at the top of the ribbon to add a new data source.
-
-3.	Choose the gateway you want to create the connection on, by providing the **Gateway cluster name**, then select the **Data Source Type.** In this example, we'll choose SQL Server.
+3. On the **New connection** screen, select **On-premises**, choose or provide the **Gateway cluster name** you want to create the connection on, provide a **Connection name**, and select the **Data Source Type**. For this example, choose **SQL Server**.
 
 4. Enter information about the data source. For SQL Server, provide the **Server** and **Database**.
 
-    :::image type="content" source="media/service-gateway-data-sources/server-database.png" alt-text="Screenshot of how to fill in data source settings.":::
+   :::image type="content" source="media/service-gateway-data-sources/server-database.png" alt-text="Screenshot of how to fill in data source settings.":::
 
-5. Select an **Authentication Method** to use when connecting to the data source. For SQL Server, choose **Windows** or **Basic** (SQL Authentication). Enter the credentials for your data source.
+5. Select an **Authentication Method** to use when connecting to the data source, **Basic**, **Windows**, or **OAuth2**. For SQL Server, choose **Windows** or **Basic** (SQL Authentication). Enter the credentials for your data source.
 
    :::image type="content" source="media/service-gateway-data-sources/authentification.png" alt-text="Screenshot of how to fill out authentication settings.":::
 
-    If the selected authentication method is OAuth:
-    * Any query that runs longer than the OAuth token expiration policy may fail.
-    * Cross-tenant AAD accounts are not supported
-    
-    If the selected authentication method is Windows:
-    * Make sure that account has access on the machine. If not sure, make sure to add NT-AUTHORITY\Authenticated Users (S-1-5-11) to the local machine “Users” group.
+   If you selected authentication method **OAuth2**:
+   - Any query that runs longer than the OAuth token expiration policy may fail.
+   - Cross-tenant Azure Active Directory (Azure AD) accounts aren't supported.
+   
+   If you selected authentication method **Windows**, make sure that account has access on the machine. If you're not sure, make sure to add `NT-AUTHORITY\Authenticated Users (S-1-5-11)` to the local machine `Users` group.
 
-6. Under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
+6. Optionally, under **Advanced settings**, you could configure [Single Sign-On (SSO)](service-gateway-sso-overview.md) for your data source. 
 
     :::image type="content" source="media/service-gateway-data-sources/single-sign-on.png" alt-text="Screenshot of advanced settings for data sources.":::
 
@@ -84,7 +82,7 @@ You can now use this data source to include data from SQL Server in your Power B
 
 ## Remove a data source
 
-You can remove a data source if you no longer use it. Removing a data source breaks any dashboards and reports that rely on that data source.
+You can remove a data source if you no longer use it. If you remove a data source, any dashboards and reports that rely on that data source no longer work.
 
 To remove a data source, select the data source and then select **Remove** from top ribbon. 
 
