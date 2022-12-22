@@ -49,7 +49,7 @@ Here's a list of the different deployment types the APIs support:
 
 * **Deploy all** - A single API call that deploys all the content in the workspace to the next stage in the pipeline. For this operation, use the [Deploy all](/rest/api/power-bi/pipelines/deployall) API.
 
-* **Selective deploy** - Deploys only specific Power BI items (such as reports or dashboards) in the pipeline. For this operation, use the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) API.
+* **Selective deploy** - Deploys only specific Power BI items, such as reports or dashboards, in the pipeline. For this operation, use the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) API.
 
 * **Backward deploy** - Deploys new Power BI items to the previous stage. Backward deployment only works if the Power BI items that are deployed don't already exist in the target stage. For this operation, use either the [Deploy all](/rest/api/power-bi/pipelines/deployall) or the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) APIs, with `isBackwardDeployment` set to `True`.
 
