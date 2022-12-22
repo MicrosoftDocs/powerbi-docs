@@ -88,7 +88,7 @@ To install the libraries listed in this article, open PowerShell and enter the i
 [D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It relies on widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
 
 ```powershell
-npm i d3@^5.0.0 --save
+npm i d3 --save
 ```
 
 ### TypeScript definitions
@@ -96,7 +96,7 @@ npm i d3@^5.0.0 --save
 Install TypeScript definitions so that you can develop your Power BI visual in [TypeScript](https://www.typescriptlang.org/), a superset of JavaScript.
 
 ```powershell
-npm i @types/d3@^5.0.0 --save
+npm i @types/d3 --save
 ```
 
 ### core-js
@@ -104,7 +104,7 @@ npm i @types/d3@^5.0.0 --save
 [core-js](https://www.npmjs.com/package/core-js) is a modular standard library for JavaScript that includes polyfills for ECMAScript.
 
 ```powershell
-npm i core-js@3.2.1 --save
+npm i core-js --save
 ```
 
 ### powerbi-visual-api
