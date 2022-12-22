@@ -54,80 +54,6 @@ npm i -g powerbi-visuals-tools@latest
 >[!NOTE]
 >You might get some warnings when you run this command. They should not prevent *pbiviz* from installing.
 
-## Create and install a certificate
-
-For a client (your computer) and a server (Power BI service) to interact securely, a [Secure Sockets Layer (SSL) Certificate](create-ssl-certificate.md) is required. Without a certificate to ensure secure interactions, they will be blocked by the browser.
-
-### [Windows](#tab/windows)
-
-This process describes running a PowerShell command that launches the **Certificate Import Wizard**. Follow the steps below to configure the certificate in the wizard.
-
->[!IMPORTANT]
->Do not close the PowerShell window during this procedure.
-
-1. Open Windows PowerShell and enter the following command.
-
-    ```powershell
-    pbiviz --install-cert
-    ```
-
-    This command starts the Certificate Import Wizard.
-
-    >[!NOTE]
-    >
-    >* If you don't have permission to run pbiviz, start **PowerShell** as an administrator and run the command `Set-ExecutionPolicy RemoteSigned`, then try again.
-    >* If the Certificate Import Wizard doesn't open automatically, navigate to the certificate location in **File Explorer**, right-click on it, and select *Install*.
-
-2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and select **Next**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's first window, with the store location option set to current user.](media/environment-setup/certificate-wizard-store-location.png)
-
-3. In the **File to Import** window, select **Next**.
-
-4. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and select **Browse**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's certificate store window, with the place all certificates in the following store selected.](media/environment-setup/certificate-wizard-certificate-store.png)
-
-5. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select **OK**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the select certificate store window, with the Trusted Root Certification Authorities folder selected.](media/environment-setup/trusted-root.png)
-
-6. Select *Next* in the **Certificate Store** window.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's certificate store window, with the Trusted Root Certification Authorities folder selected, and the next button highlighted.](media/environment-setup/certificate-wizard-store-next.png)
-
-7. In the **Completing the Certificate Import Wizard** window, verify your settings and select **Finish**.
-
-    >[!NOTE]
-    >If you receive a security warning, select **Yes**.
-
-### [OSX](#tab/sdk2osx)
-
-1. Open *Keychain Access*.
-
-2. If the lock in the upper left is locked, select it to unlock it. Search for *localhost* and double-click the certificate.
-
-    ![Install SSL cert 1 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
-
-3. Select **Always Trust** and close the window.
-
-    ![Install SSL cert 2 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
-
-4. Enter your username and password, and select **Update Settings**.
-
-    ![Install SSL cert 3 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx3.png)
-
-5. Close any browsers that you have open.
-
-> [!NOTE]
-> If the certificate is not recognized, restart your computer.
-
----
-
 ## (Optional) Verify that your environment is set up
 
 Confirm that the Power BI visuals tools package is installed. In PowerShell, run the command `pbiviz` and review the output, including the list of supported commands.
@@ -156,9 +82,6 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
 To develop your own Power BI visual, you'll need to install additional libraries. This section describes how to install these libraries and verify that the installation is successful.
 
 To install the libraries listed in this article, open PowerShell and enter the installation command for each component.
-
->[!NOTE]
->Once these libraries are installed on your computer, you'll be able to use them for any Power BI visuals project. This is a one time installation procedure, per machine.
 
 ### D3 JavaScript library
 
