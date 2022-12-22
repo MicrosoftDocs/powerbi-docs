@@ -58,6 +58,8 @@
     items: 
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
+    - name: "Optimize ribbon in Power BI Desktop"
+      href: desktop-optimize-ribbon.md      
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -80,12 +82,16 @@
       href: desktop-performance-analyzer.md        
     - name: "Add visual elements to reports"
       href: desktop-visual-elements-for-reports.md   
-    - name: "Add report tooltips to enhance your visuals"
-      href: desktop-tooltips.md        
-    - name: "Create modern visual tooltips"
-      href: desktop-visual-tooltips.md        
     - name: "Power Automate button visual"
       href: power-bi-automate-visual.md            
+    - name: Creating tooltips
+      items: 
+      - name: "Add report tooltips to enhance your visuals"
+        href: desktop-tooltips.md        
+      - name: "Create modern visual tooltips"
+        href: desktop-visual-tooltips.md        
+      - name: "Customize tooltips"
+        href: desktop-custom-tooltips.md
     - name: Filters and slicers in reports
       items: 
       - name: "Filters and highlighting in reports"
@@ -148,8 +154,6 @@
       href: desktop-inline-hierarchy-labels.md
     - name: "Restrict data access with row-level security"
       href: desktop-rls.md
-    - name: "Customize tooltips"
-      href: desktop-custom-tooltips.md
     - name: "Add text boxes, shapes, and smart narratives"
       href: power-bi-reports-add-text-and-shapes.md
     - name: "Add a hyperlink to a text box"
@@ -416,6 +420,8 @@
       href: service-goals-create-connected.md
     - name: "Create submetrics"
       href: service-metrics-submetrics.md
+    - name: "Create linked metrics"
+      href: service-metrics-linked-metrics.md
     - name: "Create custom statuses"
       href: service-goals-custom-status.md
     - name: "Create automated status rules"
@@ -428,8 +434,16 @@
       href: service-goals-move.md
     - name: "Metrics and Power Automate"
       href: service-goals-power-automate.md
-    - name: "Create and add Scorecards in reports"
-      href: ../visuals/power-bi-visualization-scorecard-visual.md   
+    - name: "Create and add scorecards to reports"
+      href: ../visuals/power-bi-visualization-scorecard-visual.md 
+    - name: Hierarchies in scorecards
+      items: 
+      - name: "Get started with hierarchies"
+        href: service-metrics-get-started-hierarchies.md 
+      - name: "Scenarios for using hierarchies"
+        href: service-metrics-hierarchies-scenarios.md 
+      - name: "View hierarchies in scorecards"
+        href: service-metrics-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: "Intro to dashboards"
@@ -440,8 +454,6 @@
       href: service-dashboard-create.md
     - name: "Create a copy of a dashboard"
       href: service-dashboard-copy.md
-    - name: "Pin a tile to a dashboard from a report"
-      href: service-dashboard-pin-tile-from-report.md
     - name: "Pin a tile from one dashboard to another"
       href: service-pin-tile-to-another-dashboard.md
     - name: "Pin a tile to a dashboard from Excel"
@@ -470,10 +482,16 @@
       href: ../paginated-reports/report-builder-power-bi.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
+    - name: Paginated reports capacity planning
+      href: ../paginated-reports/paginated-capacity-planning.md      
     - name: Report Builder change log
       href: ../paginated-reports/paginated-reports-change-log.md
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Get around Report Design View
       href: ../paginated-reports/paginated-reports-report-design-view.md
     - name: Planning a report

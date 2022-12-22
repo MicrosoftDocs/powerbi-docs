@@ -250,7 +250,7 @@ The code in this section uses the .NET Core dependency injection pattern. When y
 The `RequiredScopes` field holds a string array containing a set of [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) supported by the Power BI service API. When your application calls across the network to acquire an Azure AD token, it will pass this set of delegated permissions so that Azure AD can include them in the access token it returns.
 
 >[!NOTE]
->Verify that your *Azure AD app* is configured with the scopes required by your web app. For more information, see [Change your Azure AD app's permissions](register-app.md#change-your-azure-ad-apps-permissions).
+>Verify that your *Azure AD app* is configured with the scopes required by your web app. For more information, see [Change your Azure AD app's permissions](./change-permissions.md).
 
 1. In your app's project, create a new folder titled **Services**.
 

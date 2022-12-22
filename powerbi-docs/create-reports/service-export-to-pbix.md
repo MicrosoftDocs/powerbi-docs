@@ -135,6 +135,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * To download the .pbix file, you must be at least a Contributor to the workspace.
 * Datasets with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file.
 * Datasets enabled for [large models](../enterprise/service-premium-large-models.md) can't be downloaded to a .pbix file.
+* Datasets migrated from Azure Analysis Services by using the [Azure Analysis Services to Power BI Premium migration feature](../enterprise/aas-pbi-migration-overview.md) can't be downloaded to a .pbix file.
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](deployment-pipelines-process.md#considerations-and-limitations).
 * Datasets modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
 * You can't download datasets based on data imported from OneDrive for Business.

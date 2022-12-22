@@ -83,7 +83,7 @@ The following articles provide more information about Power BI and its many feat
 
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
+* [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
 * [Organize work in workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)
 * [Creating a dataflow](../dataflows/dataflows-create.md)
 * [Dataflows best practices](../dataflows/dataflows-best-practices.md)

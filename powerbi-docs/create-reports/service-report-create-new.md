@@ -92,10 +92,10 @@ Our CMO has some additional questions for us to answer. They'd like to know how 
    
    ![video of using slicer](media/service-report-create-new/power-bi-slicer-video2.gif)  
 
-Continue exploring your data and adding visualizations. When you find especially interesting insights, [pin them to a dashboard](service-dashboard-pin-tile-from-report.md).
+Continue exploring your data and adding visualizations. When you find especially interesting insights, [pin them to a dashboard](service-dashboard-create.md).
 
 ## Next steps
 
-* [Pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)
+* [Pin visualizations to a dashboard](service-dashboard-create.md)
 * [Change report settings in the Power BI service](power-bi-report-settings.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -20,9 +20,6 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
   * Each file in the .zip represents a report page
   * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
 
->[!IMPORTANT]
->The `exporttofile` API is only available in for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2)
-
 ## Usage examples
 
 You can use the export feature in several ways. Here are a couple of examples:
@@ -81,8 +78,8 @@ Depending on the type of export, you need to pass different attributes to the [E
 |Attribute   |Page     |Single visual  |Comments|
 |------------|---------|---------|---|
 |`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a page in a specific state|
-|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the `getPages` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).   |
-|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the `getVisuals` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
+|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the [`getPages` client API](/javascript/api/overview/powerbi/get-visuals).   |
+|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the [`getVisuals` client API](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
 
 ### Bookmarks
 
@@ -375,7 +372,6 @@ private async Task<ExportedFile> ExportPowerBIReport(
 
 ## Considerations and limitations
 
-* The `exporttofile` API is only available for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2).
 * An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * All related datasets in the report you're exporting must reside on a Premium or Embedded capacity, including datasets with a Direct Query connection.

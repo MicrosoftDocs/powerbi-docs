@@ -462,7 +462,7 @@ The [update method](visual-api.md#update) is called every time the size of the v
 
 #### Scaling
 
-We need to scale the visual so that the number of bars and current values fit into the defined width and height limits of the visual. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#set-the-width-and-height).
+We need to scale the visual so that the number of bars and current values fit into the defined width and height limits of the visual. This is similar to the [update method in the Circle card tutorial](develop-circle-card.md#modify-the-visuals-file).
 
 To calculate the scale, we use the `scaleLinear` and `scaleBand` methods that were imported earlier from the `d3-scale` library.
 

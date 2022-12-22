@@ -29,7 +29,7 @@ Power BI supports the following national clouds:
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../enterprise/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country/region you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../../enterprise/service-govus-signup.md), or a [Power BI for China cloud account](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](embed-sample-for-your-organization.md).
