@@ -64,6 +64,8 @@
       href: desktop-default-member-multidimensional-models.md            
     - name: "About using DirectQuery in Power BI"
       href: desktop-directquery-about.md
+    - name: "Live connection and DirectQuery comparison"
+      href: service-live-connect-dq-datasets.md     
     - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
       href: desktop-directquery-datasets-azure-analysis-services.md      
   - name: How-to guides
@@ -273,7 +275,7 @@
         href: service-connect-to-github.md
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
-      - name: "Emissions Impact Dashboard"
+      - name: "Emissions Impact Dashboard for Azure"
         href: service-connect-to-emissions-impact-dashboard.md
       - name: "Emissions Impact Dashboard for Microsoft 365"
         href: service-connect-emissions-impact-dashboard-microsoft-365.md

@@ -142,7 +142,7 @@ Save your settings and exit. Your SQL Managed Instance is now configured to allo
 
 ## Next steps
 
-* [What is Power BI Premium?](service-premium-what-is.md)
+* [What is Power BI Premium?](service-premium-gen2-what-is.md)
 * [Enable a Public Endpoint in the SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure)
 * [az network nsg rule](/cli/azure/network/nsg/rule)
 * [Add a network security group rule in PowerShell](/azure/service-fabric/scripts/service-fabric-powershell-add-nsg-rule)

@@ -42,7 +42,7 @@ Before you sign-up or purchase, determine which [license type](../enterprise/ser
 * With a free license, you can explore Power BI for personal data analysis and visualization using My Workspace, but you can't share with other users. A Power BI Pro or Power BI Premium Per User license is required to share content. 
 * With a Pro license, you can collaborate with Premium per-user and Pro users by creating and sharing content. If that content is in Premium capacity, a Pro user can collaborate with free, Premium per user, and Pro users by creating and sharing content.	
 * With a Premium Per User license, you can access Premium features for yourself and other users who also have a Premium Per User license.  A Power BI Premium subscription unlocks access to a variety of features, capabilities, and types of content that are only available through Premium. Power BI Premium is available as an add-on to Power BI Pro.
- For information about Premium subscriptions, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md).
+ For information about Premium subscriptions, see [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md).
 
 > [!NOTE]
 > Direct purchase of or upgrade to Pro or Premium Per User isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.

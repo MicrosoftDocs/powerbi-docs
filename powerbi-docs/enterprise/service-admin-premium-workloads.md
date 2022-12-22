@@ -94,7 +94,7 @@ Use the [Power BI Premium utilization and metrics app](../enterprise/service-pre
 
 ### [Gen1](#tab/gen1)
 
-The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities.
+The [Power BI Premium Capacity Metrics app](service-premium-gen2-metrics-app.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities.
 
 ---
 
@@ -268,7 +268,7 @@ When refreshing a dataflow, the dataflow workload spawns a container for each en
 * Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 * Dataflow entities include computation steps, for example, a join.  
 
-It's recommended you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app to analyze Dataflow workload performance.
+It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-gen2-metrics-app.md) app to analyze Dataflow workload performance.
 
 In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won't help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
 
@@ -327,10 +327,7 @@ A Power BI administer can enable or disable the paginated reports workload. When
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2)
-
->[!div class="nextstepaction"]
->[Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)
+>[Power BI Premium Generation 2](service-premium-gen2-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)

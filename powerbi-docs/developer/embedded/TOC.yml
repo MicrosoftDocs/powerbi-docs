@@ -19,7 +19,7 @@
       href: register-app.md
     - name: "Configure credentials"
       href: configure-credentials.md    
-    - name: "Change your app permissions"
+    - name: "Edit your app permissions"
       href: change-permissions.md
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
@@ -53,24 +53,18 @@
       href: ../../collaborate-share/service-embed-secure.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
   - name: Tokens
     items:
-    - name: "Embedded analytics application tokens"
+    - name: "Embedded analytics access tokens"
       href: embed-tokens.md      
     - name: "Generating an embed token"
       href: generate-embed-token.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
   - name: Export to file
-    items:        
+    items:
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md
-  - name: Embedded Gen2
-    items:
-    - name: "What is Power BI Embedded Generation 2?"
-      href: "power-bi-embedded-generation-2.md"
-    - name: "Plan your transition to Power BI Embedded Gen2"
-      href: embedded-transition-gen1-to-gen2.md
   - name: Capacities and SKUs
     items:
     - name: "Move an embedded app to production"
