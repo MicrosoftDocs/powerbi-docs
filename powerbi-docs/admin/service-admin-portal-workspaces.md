@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
-As an administrator, you can view the workspaces that exist in your organization on the **Workspaces** tab. On this tab, you can perform these actions:
+As an administrator, you can govern the workspaces that exist in your organization on the **Workspaces** tab. On this tab, you can perform these actions:
 
 - Refresh the list of workspaces and their details.
 - Export the data about the workspaces to a .csv file.
@@ -50,7 +50,7 @@ Admins can also manage and recover workspaces using either the admin portal or P
 Every Power BI user has a personal workspace called My workspace where they can work with their own content. While generally only My workspace owners have access to their My workspaces, Power BI admins can use a set of features to help them govern these workspaces. With these features, Power BI admins can 
 
 * Gain access to the contents of any user's My workspace
-* Designate a capacity for all existing and new My workspaces
+* Designate a default capacity for all existing and new My workspaces
 * Prevent users from moving My workspaces to a different capacity that may reside in non-compliant regions
 * Restore deleted My workspaces as app workspaces
 
