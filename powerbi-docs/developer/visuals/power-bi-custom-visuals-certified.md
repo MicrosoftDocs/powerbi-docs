@@ -72,7 +72,10 @@ Make sure that the following commands don't return any errors.
 * `npm install`
 * `pbiviz package`
 * `npm audit` - Must not return any warnings with high or moderate level.
-* [ESlint from Microsoft](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals). This command must not return any lint errors.
+* ESlint with the [required configuration](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals). This command must not return any lint errors.
+
+  >[NOTE!]
+  > We're in the process of migrating from TSlint to ESLint. Visuals using TSlint will be accepted for certification until March 2023. After that, ESlint will be required.
 
 ### Compiling requirements
 
