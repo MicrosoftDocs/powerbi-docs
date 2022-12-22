@@ -464,7 +464,7 @@ displayName: this.localization.getDisplayName("Font_Color_DisplayNameKey");
 description: this.localization.getDisplayName("Font_Color_DescriptionKey");
 ```
 
-To localize formatting model utils [formatting utils localization](utils-formatting.md#localization).
+To localize formatting model utils [formatting utils localization](utils-formatting-model.md#localization).
 
 ## GitHub Resources
 
