@@ -67,7 +67,7 @@ To install the *Power BI Premium Capacity Utilization and Metrics* app for the f
 
 3. In the *Install this Power BI app* window, select **Install**.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\install-app.png" alt-text="Screenshot of the install this Power BI app, with the install button highlighted.":::
+    :::image type="content" source="media\service-premium-install-gen2-app\install-app.png" alt-text="Screenshot of the install this Power B I app, with the install button highlighted.":::
 
 4. Wait a few seconds for the app to install.
 
@@ -144,7 +144,7 @@ To complete the installation, configure the Power BI Premium utilization and met
 
 8. Select a capacity from the **capacity name** dropdown.
 
-    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop-down box in the Power BI premium utilization and metrics app.":::
+    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop-down box in the Power B I premium utilization and metrics app.":::
 
 9. After you configure the app, it can take a few minutes for the app to get your data. If you run the app and it's not displaying any data, refresh the app. This behavior happens only when you open the app for the first time.
 
