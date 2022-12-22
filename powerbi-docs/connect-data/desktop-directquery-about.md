@@ -319,6 +319,7 @@ When you define the model, follow this guidance:
   
   This data is probably not what you want. To ensure the filter is applied based on the date at the time the report runs, apply the date filter in the report. You can create a calculated column that calculates the number of days ago by using the `DAX DATE()` function, and use that calculated column in the filter.
 
+<a name="report-design-guidance"></a>
 ### Report design
 
 When you create a report that uses a DirectQuery connection, follow this guidance:
