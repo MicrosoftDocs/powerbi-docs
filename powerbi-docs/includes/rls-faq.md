@@ -3,7 +3,7 @@
 **Answer:** No, visuals won't render properly. You'll have to re-create the roles and rules within Power BI Desktop and then publish to the Power BI service.
 
 **Question:** Can I create these roles for Analysis Services data sources?  
-**Answer:** Yes, if you imported the data into Power BI Desktop. If you're using a live connection, you won't be able to configure RLS within the Power BI service. This is defined within the Analysis Services model on-premises.
+**Answer:** Yes, if you imported the data into Power BI Desktop. If you're using a live connection, you can't configure RLS within the Power BI service. This is defined within the Analysis Services model on-premises.
 
 **Question:** Can I use RLS to limit the columns or measures accessible by my users?  
 **Answer:** No, if a user has access to a particular row of data, they can see all the columns of data for that row.

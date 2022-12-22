@@ -10,21 +10,21 @@ After you've created your roles, test the results of the roles within Power BI D
 
     ![Screenshot of the View as roles window with None selected.](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-1. Select a role you created. Then select **OK** to apply that role.
+1. Select a role you created. Then choose **OK** to apply that role.
 
    The report renders the data relevant for that role.
 
-1. You can also select **Other user** and supply a given user.
+1. You can also select **Other user** and supply another user.
 
     ![Screenshot of the View as roles window with an example user entered.](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
 
-   It's best to supply the User Principal Name (UPN) as that's what the Power BI service and Power BI Report Server use.
+   It's best to supply the User Principal Name (UPN) because that's what the Power BI service and Power BI Report Server use.
 
    Within Power BI Desktop, **Other user** displays different results only if you're using dynamic security based on your DAX expressions.
 
 1. Select **OK**.
 
-   The report renders based on what that user can see.
+   The report renders based on what that user's permissions allow them to see.
 
    > [!NOTE]
    > The **View as roles** feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled.

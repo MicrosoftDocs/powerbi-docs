@@ -2,7 +2,7 @@
 
 You can define roles and rules within Power BI Desktop. When you publish to Power BI, you also publish the role definitions.
 
-To define security roles, follow these steps:
+To define security roles:
 
 1. Import data into your Power BI Desktop report, or configure a DirectQuery connection.
 
@@ -22,7 +22,7 @@ To define security roles, follow these steps:
     >[!NOTE]
     >You can't define a role with a comma, for example `London,ParisRole`.
 
-5. Under **Tables**, select the table to which you want to apply a DAX rule.
+5. Under **Tables**, select the table to which you want to apply a DAX (Data Analysis Expression) rule.
 
 6. In the **Table filter DAX expression** box, enter the DAX expressions. This expression returns a value of true or false. For example: ```[Entity ID] = “Value”```.
 
