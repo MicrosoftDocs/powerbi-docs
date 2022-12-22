@@ -153,7 +153,6 @@ myNumericSlice = new formattingSettings.NumUpDown({
 
 1. Open your `settings.ts` file.
 2. Build your own formatting settings model with all its components (cards, slices, properties ...), and name it `VisualFormattingSettings`.
-<<<<<<< HEAD
   Replace your settings code with the following:
 
  ```typescript
@@ -184,39 +183,6 @@ myNumericSlice = new formattingSettings.NumUpDown({
      slices: Array<FormattingSettingsSlice> = [this.myNumericSlice];
  }
  ```
-=======
-
-Replace your settings code with the following code:
-
-```typescript
-import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
-
-import FormattingSettingsCard = formattingSettings.Card;
-import FormattingSettingsSlice = formattingSettings.Slice;
-import FormattingSettingsModel = formattingSettings.Model;
-
-export class VisualSettingsModel extends FormattingSettingsModel {
-    // Building my visual formatting settings card
-    myVisualCard: FormattingSettingsCard = new myVisualCardSettings();
-
-    // Add formatting settings card to cards list in model
-    cards: Array<FormattingSettingsCard> = [this.myVisualCard];
-}
-
-class myVisualCardSettings extends FormattingSettingsCard {
-    myNumericSlice = new formattingSettings.NumUpDown({
-        name: "myNumericSlice",
-        displayName: "My Formatting Numeric Slice",
-        value: 100,
-    });
-
-    name: string = "myVisualCard";
-    displayName: string = "My Formatting Card";
-    analyticsPane: boolean = false;
-    slices: Array<FormattingSettingsSlice> = [this.myNumericSlice];
-}
-```
->>>>>>> 9f7187380c720b74d3d4ae708f71fd54da9fb18c
 
 3. In your capabilities file, add your formatting objects and properties
 
