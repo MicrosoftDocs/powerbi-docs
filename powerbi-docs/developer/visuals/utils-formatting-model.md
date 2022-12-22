@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 10/23/2022
+ms.custom: engagement-fy23
 ---
 
 # FormattingModel utils
