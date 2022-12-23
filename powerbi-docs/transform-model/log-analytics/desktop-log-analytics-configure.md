@@ -195,11 +195,11 @@ PowerBIDatasetsWorkspace
 | summarize percentiles(DurationMs, 0.5, 0.9) by bin(TimeGenerated, 1h)
 
 
-// refresh durations by workspace and dataset for last 7d
+// refresh durations by workspace and dataset for last 30d
 PowerBIDatasetsWorkspace
 | where TimeGenerated > ago(30d)
 | where OperationName == 'CommandEnd'
-| where ExecutingUser contains 'system'
+| where ExecutingUser contains 'Power BI Service'
 | where EventText contains 'refresh'
 | project PowerBIWorkspaceName, DatasetName = ArtifactName, DurationMs
 
