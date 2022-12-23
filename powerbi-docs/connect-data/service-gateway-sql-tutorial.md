@@ -123,8 +123,8 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
    Under **Authentication**:
 
-   - **Authentication method**: Select **Windows**, **Basic**, or **OAuth**, usually **Windows**.
-   - **Username** and **Password**: Enter the credentials you use to connect to SQL Server, or select **Skip test connection** to skip test authentication.
+   - **Authentication method**: Select **Windows**, **Basic**, or **OAuth2**, usually **Windows**.
+   - **Username** and **Password**: Enter the credentials you use to connect to SQL Server.
 
    ![Screenshot that shows the New connection settings.](./media/service-gateway-sql-tutorial/data-source-settings.png)
 
