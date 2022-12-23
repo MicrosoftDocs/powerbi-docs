@@ -24,36 +24,36 @@ If you don't have a gateway installed, [install an on-premises data gateway](/da
 
 ## Add a data source
 
-1. At the upper-right of the Power BI service screen, select the **Settings** ![Settings gear icon](media/service-gateway-data-sources/icon-gear.png) icon, and then select **Manage connections and gateways**.
+1. From the page header in the Power BI service, select the **Settings** ![Settings gear icon](media/service-gateway-data-sources/icon-gear.png) icon, and then select **Manage connections and gateways**.
 
    :::image type="content" source="media/service-gateway-data-sources/manage-gateways.png" alt-text="Screenshot that shows selecting Manage connections and gateways.":::
 
 2. Select **New** at the top of the screen to add a new data source.
 
-3. On the **New connection** screen, select **On-premises**, choose or provide the **Gateway cluster name** you want to create the connection on, provide a **Connection name**, and select the **Data Source Type**. For this example, choose **SQL Server**.
+3. On the **New connection** screen, select **On-premises**, provide the **Gateway cluster name** you want to create the connection on, provide a **Connection name**, and select the **Data Source Type**. For this example, choose **SQL Server**.
 
 4. Enter information about the data source. For SQL Server, provide the **Server** and **Database**.
 
+   :::image type="content" source="media/service-gateway-data-sources/server-database.png" alt-text="Screenshot of how to fill in data source settings.":::
+
    > [!NOTE]
    > To use the data source for Power BI reports and dashboards, the server and database names must match between Power BI Desktop and the data source you add to the gateway.
-
-   :::image type="content" source="media/service-gateway-data-sources/server-database.png" alt-text="Screenshot of how to fill in data source settings.":::
 
 5. Select an **Authentication Method** to use when connecting to the data source, **Basic**, **Windows**, or **OAuth2**. For SQL Server, choose **Windows** or **Basic** (SQL Authentication). Enter the credentials for your data source.
 
    :::image type="content" source="media/service-gateway-data-sources/authentification.png" alt-text="Screenshot of how to fill out authentication settings.":::
 
-   If you selected authentication method **OAuth2**:
+   If you selected **OAuth2** authentication method:
    - Any query that runs longer than the OAuth token expiration policy may fail.
    - Cross-tenant Azure Active Directory (Azure AD) accounts aren't supported.
    
-   If you selected authentication method **Windows**, make sure that account has access on the machine. If you're not sure, make sure to add `NT-AUTHORITY\Authenticated Users (S-1-5-11)` to the local machine `Users` group.
+   If you selected **Windows** authentication method, make sure that account has access on the machine. If you're not sure, make sure to add *NT-AUTHORITY\\Authenticated Users (S-1-5-11)* to the local machine **Users** group.
 
 6. Optionally, under **Single sign-on**, you can configure [single sign-on (SSO)](service-gateway-sso-overview.md) for your data source. 
 
     :::image type="content" source="media/service-gateway-data-sources/single-sign-on.png" alt-text="Screenshot of Single sign-on settings for data sources.":::
 
-   Depending on your organization settings, you can configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Azure AD for DirectQuery queries** for DirectQuery-based reports. You can configure **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
+   Depending on your organization settings, for DirectQuery-based reports, you can configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Azure AD for DirectQuery queries**. You can configure **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
 
    If you use **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery-based report, the report uses the credentials of the user that signs in to the Power BI service. A refresh-based report uses the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method you choose.
 
@@ -115,11 +115,11 @@ You can also give users and security groups administrative access to the gateway
 
 ### Add users to a data source
 
-1. At the upper-right of the Power BI service screen, select the **Settings** icon, and then select **Manage connections and gateways**.
+1. From the page header in the Power BI service, select the **Settings** icon, and then select **Manage connections and gateways**.
 2. Select the data source where you want to add users.
 3. Select **Manage users** from the top ribbon
 4. On the **Manage users** screen, enter the users and/or security groups from your organization who can access the selected data source.
-1. Select the new user name, and select the role to assign: **User**, **User with sharing**, or **Owner**.
+1. Select the new user name, and select the role to assign: **User**, **User with resharing**, or **Owner**.
 1. Select **Share**, and the added member's name is added to the list of people who can publish reports that use this data source.
 
     :::image type="content" source="media/service-gateway-data-sources/manage-users.png" alt-text="Screenshot of Add user.":::
@@ -132,7 +132,7 @@ On the **Manage Users** tab for the data source, you can remove users and securi
 
 ## Store encrypted credentials in the cloud
 
-When you add a data source to the gateway, you must provide credentials for that data source. All queries to the data source run by using these credentials. The credentials are encrypted securely with symmetric encryption, so that they can't be decrypted in the cloud before they're stored in the cloud. The credentials are sent to the machine that runs the on-premises gateway, where they're decrypted when the data sources are accessed.
+When you add a data source to the gateway, you must provide credentials for that data source. All queries to the data source run by using these credentials. The credentials are encrypted securely with symmetric encryption, so that they can't be decrypted in the cloud. The credentials are sent to the machine that runs the on-premises gateway, where they're decrypted when the data sources are accessed.
 
 ## List of available data source types
 
