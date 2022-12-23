@@ -8,7 +8,7 @@ ms.custom: video-dtdLul6otYE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/16/2022
+ms.date: 12/23/2022
 LocalizationGroup: Common tasks
 ---
 
