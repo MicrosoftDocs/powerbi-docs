@@ -201,7 +201,7 @@ PowerBIDatasetsWorkspace
 | where OperationName == 'CommandEnd'
 | where ExecutingUser contains 'system'
 | where EventText contains 'refresh'
-| project WorkspaceName, DatasetName = ArtifactName, DurationMs
+| project PowerBIWorkspaceName, DatasetName = ArtifactName, DurationMs
 
 ```
 
