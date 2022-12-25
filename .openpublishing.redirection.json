@@ -3505,6 +3505,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/desktop-rls.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-rls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/desktop-r-powered-custom-visuals.md",
             "redirect_url": "/power-bi/create-reports/desktop-r-powered-custom-visuals",
             "redirect_document_id": true
