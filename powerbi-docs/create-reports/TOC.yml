@@ -153,7 +153,7 @@
     - name: "Use inline hierarchy labels"
       href: desktop-inline-hierarchy-labels.md
     - name: "Restrict data access with row-level security"
-      href: service-admin-rls.md
+      href: ../create-reports/service-admin-rls.md
     - name: "Add text boxes, shapes, and smart narratives"
       href: power-bi-reports-add-text-and-shapes.md
     - name: "Add a hyperlink to a text box"
