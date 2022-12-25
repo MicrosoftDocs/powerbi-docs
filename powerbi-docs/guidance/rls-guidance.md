@@ -17,7 +17,7 @@ This article targets you as a data modeler working with Power BI Desktop. It des
 It's important to understand RLS filters _table rows_. They can't be configured to restrict access to model objects, including tables, columns, or measures.
 
 > [!NOTE]
-> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](../create-reports/service-admin-rls.md).
+> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md).
 >
 > Also, it doesn't cover enforcing RLS in live connections to external-hosted models with Azure Analysis Services or SQL Server Analysis Services. In these cases, RLS is enforced by Analysis Services. When Power BI connects using single-sign on (SSO), Analysis Services will enforce RLS (unless the account has admin privileges).
 
@@ -198,7 +198,7 @@ When a specific user can see all data, it's possible they're accessing reports d
 For more information related to this article, check out the following resources:
 
 - [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md)
-- [Restrict data access with row-level security (RLS) for Power BI Desktop](../create-reports/service-admin-rls.md)
+- [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md)
 - [Model relationships in Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
