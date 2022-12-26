@@ -26,7 +26,7 @@ summary: |
     * [Dataflow limitations](deployment-pipelines-process.md#dataflow-limitations)
     * [Datamart limitations](deployment-pipelines-process.md#datamart-limitations)
   * Deployment rules:
-    * [Deployment rule limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations)
+    * [Deployment rule limitations](deployment-pipelines-create-rules.md#considerations-and-limitations)
     * [Supported data sources for dataflow and dataset rules](deployment-pipelines-create-rules.md#supported-data-sources-for-dataflow-and-dataset-rules)
   * [Incremental refresh](deployment-pipelines-process.md#considerations-and-limitations)
   * [Automation](deployment-pipelines-automation.md#considerations-and-limitations)
@@ -153,7 +153,7 @@ sections:
         answer: |
           You can’t change the data source connection in Power BI service.
           
-          If you want to change the data source in the test or production stages, you can use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Deployment rules will only come into effect after the next deployment.
+          If you want to change the data source in the test or production stages, you can use [deployment rules](deployment-pipelines-create-rules.md) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Deployment rules will only come into effect after the next deployment.
           
       - question: |
           I fixed a bug in production, but now I can't select the 'deploy to previous stage' button. Why is it greyed out?
@@ -269,7 +269,7 @@ sections:
         answer: |
           At present, datasets are treated as an external Analysis Services data source, and connections to datasets aren't switched automatically after deployment.
           
-          When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to point your paginated report to any dataset you want, including for example the target stage dataset.
+          When you deploy a paginated report that's connected to a Power BI dataset, it continues to point to the dataset it was originally connected to. Use [deployment rules](deployment-pipelines-create-rules.md) to point your paginated report to any dataset you want, including for example the target stage dataset.
           
           If you're using a paginated report with a Power BI dataset, see [How do I create a deployment rule for a paginated report with a Power BI dataset?](#how-do-i-create-a-deployment-rule-for-a-paginated-report-with-a-power-bi-dataset-)
           
@@ -373,7 +373,7 @@ sections:
       - question: |
           Why did my deployment fail due to broken rules?
         answer: |
-          If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-create-rules.md), and make sure you follow the [deployment rules limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations).
+          If you have problems configuring deployment rules, visit [deployment rules](deployment-pipelines-create-rules.md), and make sure you follow the [deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
           
           If your deployment was previously successful, and is suddenly failing with broken rules, it may be due to a dataset being republished. The following changes to the source dataset, result in a failed deployment:
           
@@ -401,7 +401,7 @@ sections:
       - question: |
           Why are the deployment rules greyed out?
         answer: |
-          To create a [deployment rule](deployment-pipelines-get-started.md#step-4---create-deployment-rules), you must be the owner of the Power BI item you're creating a deployment rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
+          To create a [deployment rule](deployment-pipelines-create-rules.md), you must be the owner of the Power BI item you're creating a deployment rule for. If you're not the owner of the Power BI item, deployment rules will be greyed out.
           
           >[!div class="mx-imgBorder"]
           >![A screenshot showing deployment pipelines deployment rules greyed out.](media/deployment-pipelines-troubleshooting/rules-greyed-out.png)
@@ -431,7 +431,7 @@ sections:
       - question: |
           Troubleshooting errors
         answer: |
-          Use this section to troubleshoot pipeline [rules](deployment-pipelines-create-rules.md) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-create-rules.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
+          Use this section to troubleshoot pipeline [rules](deployment-pipelines-create-rules.md) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-create-rules.md#considerations-and-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-create-rules.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
     
           |Error message |Solution |
           |--------------|---------|

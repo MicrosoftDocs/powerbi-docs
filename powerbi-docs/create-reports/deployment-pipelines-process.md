@@ -114,7 +114,7 @@ There are three methods you can use to avoid using auto-binding:
 
 #### Auto-binding and parameters
 
-Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment won't take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).
+Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment won't take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-create-rules.md).
 
 >[!NOTE]
 >If you're using parameter rules to rebind items, the parameters must be of type `Text`.  
@@ -167,9 +167,9 @@ Deployment pipelines doesn't support the following items:
 
 During deployment, the following item properties are copied and overwrite the item properties at the target stage:
 
-* Data sources ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
+* Data sources ([deployment rules](deployment-pipelines-create-rules.md) are supported)
 
-* Parameters​ ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
+* Parameters​ ([deployment rules](deployment-pipelines-create-rules.md) are supported)
 
 * Report visuals​
 
@@ -393,7 +393,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) isn't supported.
 
-* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations).
+* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
 
 ### Dataflow limitations
 
@@ -403,7 +403,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Deploying common data model (CDM) isn't supported.
 
-* For deployment pipeline rule limitations that affect dataflows, see [Deployment rules limitations](deployment-pipelines-create-rules.md#deployment-rule-limitations).
+* For deployment pipeline rule limitations that affect dataflows, see [Deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
 
 * If a dataflow is being refreshed during deployment, the deployment will fail.
 
