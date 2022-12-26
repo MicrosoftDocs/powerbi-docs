@@ -5147,7 +5147,7 @@ June provided a shining collection of interesting updates for Power BI Desktop.
 
 ### Data Access:
 
--   Row Level Security [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/) [[article]](../create-reports/desktop-rls.md)
+-   Row Level Security [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/) [[article]](../enterprise/service-admin-rls.md)
 
 ### Data Connectors:
 
