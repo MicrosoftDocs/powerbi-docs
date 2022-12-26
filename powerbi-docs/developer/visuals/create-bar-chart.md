@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 [!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 >[!NOTE]
->If [the D3 JavaScript library](environment-setup.md#d3-javascript-library) wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
+>If the D3 JavaScript library wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
 
 Creating a bar chart visual involves the following steps:
 

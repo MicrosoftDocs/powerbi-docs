@@ -114,7 +114,7 @@ Set up the **visual.ts** file.
    ```
 
     >[!NOTE]
-    >If [the D3 JavaScript library](environment-setup.md#d3-javascript-library) wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
+    >If the D3 JavaScript library wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
 
    Notice that among the items you imported are:
     * *IVisualHost* -  A collection of properties and services used to interact with the visual host (Power BI).
