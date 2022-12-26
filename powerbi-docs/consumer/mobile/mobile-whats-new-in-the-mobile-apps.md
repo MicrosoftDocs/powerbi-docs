@@ -52,7 +52,7 @@ Have a link to an app you don't have access to? Now you can request access direc
 
 ### Portrait view now fully supported in Report Server
 
-Now your non-mobile-optimized report pages hosted on Report Server will open no matter which way you're holding your phone - you no longer have to tip your phone on it's side to view such reports. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small landscape view of report. To get a larger view, either tilt your phone to the side, or just use pinch and zoom to zoom in on the area of the report you're interested in.
+Now your non-mobile-optimized report pages hosted on Report Server will open no matter which way you're holding your phone - you no longer have to tip your phone on its side to view such reports. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small landscape view of report. To get a larger view, either tilt your phone to the side, or just use pinch and zoom to zoom in on the area of the report you're interested in.
 
 ## September 2022
 
