@@ -43,13 +43,19 @@ To install *node.js*:
 
 The *pbiviz* tool, which is written using JavaScript, compiles the visual source code of the *pbiviz* package.
 
-The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets.
+The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets. You can install *pbiviz* locally or globally. If you install it globally you only have to do it once per machine. If you install it locally, you have to install it for each project, but you are guaranteed to be using the latest version.
 
-To install the latest version of *pbiviz*, open Windows PowerShell and enter the following command.
+* To install the latest version of *pbiviz* globally, open Windows PowerShell and enter the following command.
 
-```powershell
-npm i -g powerbi-visuals-tools@latest
-```
+  ```powershell
+  npm i -g powerbi-visuals-tools@latest
+  ```
+
+* To install the latest version of *pbiviz* as a local project dependency, open Windows PowerShell and enter the following command.
+
+  ```powershell
+  npm i powerbi-visuals-tools@latest
+  ```
 
 >[!NOTE]
 >You might get some warnings when you run this command. They should not prevent *pbiviz* from installing.
@@ -76,80 +82,6 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
-
-## Install development libraries
-
-To develop your own Power BI visual, you'll need to install additional libraries. This section describes how to install these libraries and verify that the installation is successful.
-
-To install the libraries listed in this article, open PowerShell and enter the installation command for each component.
-
-### D3 JavaScript library
-
-[D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It relies on widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
-
-```powershell
-npm i d3 --save
-```
-
-### TypeScript definitions
-
-Install TypeScript definitions so that you can develop your Power BI visual in [TypeScript](https://www.typescriptlang.org/), a superset of JavaScript.
-
-```powershell
-npm i @types/d3 --save
-```
-
-### core-js
-
-[core-js](https://www.npmjs.com/package/core-js) is a modular standard library for JavaScript that includes polyfills for ECMAScript.
-
-```powershell
-npm i core-js --save
-```
-
-### powerbi-visual-api
-
-Install the Power BI Visuals API definitions.
-
-```powershell
-npm i powerbi-visuals-api --save-dev
-```
-
-### (Optional) Verify that the D3 library is installed
-
-[Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section, we'll use VS Code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
-
->[!NOTE]
->The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#create-a-development-project) instructions.
-
-1. Open VS Code.
-
-    >[!TIP]
-    >You can open **VS Code** from PowerShell by executing the following command from within the project folder:
-    >
-    >```powershell
-    >code .
-    >```
-
-2. In VS Code, open the **File** menu and select **Open Folder**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the VS  studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
-
-3. In the **Open Folder** window, select the folder that contains your Power BI visual project, and select **Select Folder**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of selecting the Power B I visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
-
-4. In the **Explorer** pane, expand the **node_modules** folder and verify that the **d3** library is installed.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the 3d folder in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
-
-5. In the **Explorer** pane, expand **node_modules > @types  > d3** and verify that the file **index.t.ds** is installed.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the index.t.ds file in a Power B I visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
 
 ## Next steps
 
