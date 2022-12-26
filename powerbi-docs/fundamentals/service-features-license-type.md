@@ -41,7 +41,7 @@ When using a PPU license, content created by a PPU licensed user can only be sha
 
 A capacity-based Premium license (often referred to as a Premium *subscription*) allows Pro or PPU users to create and save content in Premium capacity workspaces. They can then share that workspace with colleagues who have any license type. Only users with a Pro or PPU license can create and save content in Premium capacities, and only if their organization has purchased Premium capacity. 
 
-To discover more about Power BI Premium, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+To discover more about Power BI Premium, see [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
 
 
 | License type | Capabilities when workspace is in shared capacity | Additional  capabilities when workspace is in Premium capacity |
