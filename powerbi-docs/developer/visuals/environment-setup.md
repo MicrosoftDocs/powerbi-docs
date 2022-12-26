@@ -23,7 +23,6 @@ In this article, you'll learn how to:
 > * [Install *node.js*](#install-nodejs).
 > * [Install *pbiviz*](#install-pbiviz).
 > * [Set up Power BI service for developing a visual](#set-up-power-bi-service-for-developing-a-visual).
-> * [Install additional libraries](#install-development-libraries) (required for developing a visual).
 
 ## Install node.js
 

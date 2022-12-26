@@ -29,9 +29,7 @@ In this tutorial, you learn how to:
 [!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 >[!NOTE]
->
-> This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
->If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
+>If [the D3 JavaScript library](environment-setup.md#d3-javascript-library) wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
 
 Creating a bar chart visual involves the following steps:
 
