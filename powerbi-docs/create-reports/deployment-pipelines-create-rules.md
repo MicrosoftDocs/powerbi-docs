@@ -64,33 +64,6 @@ To create a deployment rule, follow the steps in this section. After you create 
 
     * **Parameter rules** - Select a parameter from the list of parameters; the current value is shown. Edit the value to the value you want to take effect after each deployment.
 
-## Deployment rule limitations
-
-This section lists the limitations for the deployment rules.
-
-* To create a deployment rule, you must be the owner of the dataflow, dataset or paginated report you're creating a rule for.
-
-* Deployment rules cannot be created in the development stage.
-
-* When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
-
-* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are not kept. To use these rules, you'll need to reconfigure them.
-
-* Rules for dataflows that have other dataflows as sources, are not supported.
-
-* Data source rules for common data model (CDM) folders in a dataflow, are not supported.
-
-* Rules for datasets that use dataflows as their source, are not supported.
-
-* If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
-
-* If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
-
-* After you deploy a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
-
->[!NOTE]
->Parameter rules aren't supported for paginated reports.
-
 ## Supported data sources for dataflow and dataset rules
 
 Data source rules can only be defined for the following data sources:
@@ -116,6 +89,33 @@ Data source rules can only be defined for the following data sources:
 * Teradata
 
 For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
+
+## Considerations and limitations
+
+This section lists the limitations for the deployment rules.
+
+* To create a deployment rule, you must be the owner of the dataflow, dataset or paginated report you're creating a rule for.
+
+* Deployment rules cannot be created in the development stage.
+
+* When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
+
+* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are not kept. To use these rules, you'll need to reconfigure them.
+
+* Rules for dataflows that have other dataflows as sources, are not supported.
+
+* Data source rules for common data model (CDM) folders in a dataflow, are not supported.
+
+* Rules for datasets that use dataflows as their source, are not supported.
+
+* If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
+
+* If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
+
+* After you deploy a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
+
+>[!NOTE]
+>Parameter rules aren't supported for paginated reports.
 
 ## Next steps
 

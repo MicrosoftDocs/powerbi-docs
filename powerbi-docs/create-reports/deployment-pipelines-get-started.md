@@ -27,9 +27,9 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 * You have one of the following Premium licenses:
 
-    * You're a Power BI [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
+  * You're a Power BI [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md), and you belong to an organization that has Premium capacity.
 
-    * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
+  * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
 
 * You're an admin of a Premium [workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -89,7 +89,7 @@ Deployment pipelines offer three options when it comes to deploying your Power B
 
 After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](deployment-pipelines-deploy.md#review-your-deployment-and-leave-a-note).
 
-## Step 4 - Create deployment rules
+## Step 4 - Create deployment rules(optional)
 
 When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
@@ -118,8 +118,8 @@ To allow a quick visual insight into the differences between two sequential stag
 * **Green indicator** – The metadata for each content item in both stages, is the same.
 
 * **Orange indicator** - Appears if one of these conditions is met:
-    * Some of the content items in each stage, were changed or updated (have different metadata).
-    * There is a difference in the number of items between the stages.
+  * Some of the content items in each stage, were changed or updated (have different metadata).
+  * There is a difference in the number of items between the stages.
 
 When two sequential stages aren't the same, a **compare** link appears underneath the orange comparison icon. Clicking the link opens the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. Changed items get one of the following labels:
 
@@ -136,7 +136,7 @@ When two sequential stages aren't the same, a **compare** link appears underneat
 
 The comparison is designed to help you understand the difference between the stages. In the comparison display, items are arranged according to the logic listed below.
 
-1. The source workspace items are ordered alphabetically withing groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports and lastly dashboards.
+1. The source workspace items are ordered alphabetically within groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports, and lastly dashboards.
 
 2. The target workspace is ordered according to the source workspace. Each item resides in the same row as its equivalent item in the source stage.
 
@@ -146,7 +146,7 @@ The comparison is designed to help you understand the difference between the sta
 
 ## Overriding content
 
-When you deploy after making changes to content in the source stage, the content you changed in the target stage is overwritten. After clicking *deploy*, you'll get a warning listing the number of items that will be overwritten.
+When you change content in the source stage and then deploy to the target stage, those items are overwritten in the target stage. After you select *deploy*, you'll get a warning listing the number of items that will be overwritten.
 
 :::image type="content" source="media/deployment-pipelines-get-started/replaced-content.png" alt-text="A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.":::
 
