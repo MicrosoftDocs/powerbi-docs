@@ -42,18 +42,12 @@ To install *node.js*:
 
 The *pbiviz* tool, which is written using JavaScript, compiles the visual source code of the *pbiviz* package.
 
-The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets. You can install *pbiviz* locally or globally. If you install it globally you only have to do it once per machine. If you install it locally, you have to install it for each project, but you are guaranteed to be using the latest version.
+The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets.
 
-* To install the latest version of *pbiviz* globally, open Windows PowerShell and enter the following command.
+To install the latest version of *pbiviz*, open Windows PowerShell and enter the following command.
 
   ```powershell
   npm i -g powerbi-visuals-tools@latest
-  ```
-
-* To install the latest version of *pbiviz* as a local project dependency, open Windows PowerShell and enter the following command.
-
-  ```powershell
-  npm i powerbi-visuals-tools@latest
   ```
 
 >[!NOTE]
