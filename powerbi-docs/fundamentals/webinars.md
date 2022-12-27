@@ -107,7 +107,7 @@ by Miguel Martinez
 [Watch now](https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html)
 
 Data-driven insights for real-time decisions and stronger customer connections
-by Shruti Shukla and Chandra Stevens  
+<br>by Shruti Shukla and Chandra Stevens  
 [Watch now](https://info.microsoft.com/ww-Landing-DataDrivenInsights.html)
 
 Get up and running quickly with Power BI  
@@ -118,7 +118,7 @@ Drive a remote data culture with Power BI and Microsoft Teams
 by Lukasz Pawlowski  
 [Watch now](https://info.microsoft.com/ww-Landing-RemoteDataCulturePowerBIandMicrosoftTeams.html)
 
-Better together: 5 benefits Excel users will get from using Power BI  
+Better together: Five benefits Excel users will get from using Power BI  
 by Miguel Martinez and Carlos Otero  
 [Watch now](https://info.microsoft.com/ww-Landing-FiveBenefitsExcelUsersWillGetFromUsingPowerBI-Webinar.html)
 
@@ -164,7 +164,7 @@ Watch recorded sessions at any time.
 
 Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data
 <br>by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
-[Register to watch](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide)
+[Register to watch](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
 
 Explore the total economic impact of Microsoft Power BI  
 by Megan Tomlin, Microsoft and Jonathan Lipsitz, Forrester Consulting  
@@ -314,7 +314,7 @@ Boost your BI with location intelligence
 by Scott Ball, Esri and Enrique Plaza, Microsoft  
 [Register and watch now](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
-5 habits of a successful trend curator  
+Five habits of a successful trend curator  
 by Rohit Bhargava, Non-Obvious  
 [Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html)
 
