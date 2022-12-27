@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/02/2021
+ms.date: 12/27/2022
 ms.custom: licensing support
 LocalizationGroup: Consumers
 ---
@@ -25,7 +25,7 @@ LocalizationGroup: Consumers
 ## Types of workspaces
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content. *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
 
-**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces shared with *business users* don't include the datasets.
+**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that's necessary for that app to be utilized. Content might include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app might contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces shared with *business users* don't include the datasets.
 
 The **Customer Profitability** workspace below contains a dashboard, a report, a workbook, and a dataset.
 
