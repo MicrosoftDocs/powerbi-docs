@@ -33,11 +33,11 @@ Focus mode and full screen mode are two different ways to see more detail in you
 
 In the following example, we started with a report (1), opened one of the visuals in focus mode (2) and then opened that same visual in full screen mode (3). 
 
-![Individual screenshots of a report view, focus mode, and full screen mode.](media/end-user-focus/power-bi-reports.png)
+[![Individual screenshots of a report view, focus mode, and full screen mode.](media/end-user-focus/power-bi-reports.png)](media/end-user-focus/power-bi-reports.png#lightbox)
 
 ## When to use full screen mode
 
-![Screenshot of a dashboard in full screen mode and default mode.](media/end-user-focus/power-bi-dashboard-focus.png)
+[![Screenshot of a dashboard in full screen mode and default mode.](media/end-user-focus/power-bi-dashboard-focus.png)](media/end-user-focus/power-bi-dashboard-focus.png#lightbox)
 
 Display your Power BI service content (dashboards, report pages, and visuals) without the distraction of menus and nav panes. You get an unadulterated, full view of your content at a glance, all the time. This view is sometimes referred to as TV mode.   
 
@@ -54,7 +54,7 @@ Use full screen mode to:
 
 ***Focus*** mode lets you expand (pop out) a visual or tile to see more detail. Maybe you have a dashboard or report that is a little crowded and you want to zoom in on only one visual. This function is a perfect use of focus mode.  
 
-![Screenshot of a dashboard tile in default mode and then focus mode.](media/end-user-focus/power-bi-compare.png)
+[![Screenshot of a dashboard tile in default mode and then focus mode.](media/end-user-focus/power-bi-compare.png)](media/end-user-focus/power-bi-compare.png#lightbox)
 
 While in focus mode, a Power BI *business user* can interact with any filters that were applied when this visual was created. In the Power BI service, you can use focus mode on a dashboard tile or report visual.
 
@@ -110,10 +110,10 @@ Focus mode is available for dashboard tiles and report visuals.
 
 The visual opens and fills the entire canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed.
 
-   ![Screenshot showing that the tile fills report canvas.](media/end-user-focus/power-bi-filter.png)
+   [![Screenshot showing that the tile fills report canvas.](media/end-user-focus/power-bi-filter.png)](media/end-user-focus/power-bi-filter.png#lightbox)
 
 
-   ![Screenshot showing that the tile fills the report canvas with the Filters pane collapsed.](media/end-user-focus/power-bi-filter-collapse.png)  
+   [![Screenshot showing that the tile fills the report canvas with the Filters pane collapsed.](media/end-user-focus/power-bi-filter-collapse.png)](media/end-user-focus/power-bi-filter-collapse.png#lightbox)  
 
 Explore further by [modifying the filters](end-user-report-filter.md) and looking for interesting discoveries in your data. As a *business user*, you can't add new filters, change the fields being used in the visuals, or create new visuals. However, you can interact with the existing filters. 
 
