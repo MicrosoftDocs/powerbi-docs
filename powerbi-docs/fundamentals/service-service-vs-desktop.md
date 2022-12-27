@@ -21,13 +21,7 @@ The **Power BI service** is a cloud-based service, or *software as a service* (S
 
 The following Venn diagram compares Power BI Desktop and the Power BI service. The middle shows some of the areas where they overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show the features that are unique to either the Desktop application or to the Power BI service.  
 
-:::image type="content" source="media/service-service-vs-desktop/power-bi-venn-desktop-service.png" alt-text="Venn diagram showing the relationship between Power BI Desktop and the Power BI service.":::
-
-In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle shows some of the areas where the two overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show some of the features that are unique to either the Desktop application or to the Power BI service.  
-
-![Venn diagram showing the relationship between Power B I Desktop and the Power B I service.](media/service-service-vs-desktop/power-bi-venn-diagram.png)
-
-:::image type="content" source="media/service-service-vs-desktop/power-bi-editing-desktop-service.png" alt-text="Screenshot showing a report in the Power BI service and Desktop, with numbered sections.":::
+:::image type="content" source="media/service-service-vs-desktop/power-bi-venn-diagram.png" alt-text="Venn diagram showing the relationship between Power BI Desktop and the Power BI service.":::
 
 The report editors in Power BI Desktop and in the service are similar. They're made up of three sections:  
 
