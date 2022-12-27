@@ -101,7 +101,7 @@ To upgrade a previous installation of the *Power BI Premium Capacity Utilization
 
 3. Select **Install**.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\update-app.png" alt-text="Screen capture of the update app window, with the update, the workspace and the app option selected, and the install button highlighted.":::
+    :::image type="content" source="media\service-premium-install-gen2-app\update-app.png" alt-text="Screen capture of the update app window with the update, the workspace and the app option selected, and the install button highlighted.":::
 
 ---
 
@@ -113,7 +113,7 @@ To complete the installation, configure the Power BI Premium utilization and met
 
 2. Select the **Premium Capacity Utilization And Metrics** app.
 
-3. when you see the message *You have to connect to your own data to view this report*, select **Connect**.
+3. When you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
     :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of the Power BI premium utilization and metrics app's setup screen, showing the connect button.":::
 
@@ -142,7 +142,7 @@ To complete the installation, configure the Power BI Premium utilization and met
 
     :::image type="content" source="media/service-premium-install-gen2-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to OAuth2 and the privacy level setting for this data source option is set to organizational. The sign-in and continue button is highlighted.":::
 
-8. Select a capacity from the **capacity name** dropdown.
+8. Select a capacity from the **Capacity Name** drop down.
 
     :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop-down box in the Power BI premium utilization and metrics app.":::
 
