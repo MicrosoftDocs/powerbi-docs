@@ -106,7 +106,7 @@ Quickstart guide to navigating Power BI
 by Miguel Martinez  
 [Watch now](https://info.microsoft.com/ww-Landing-Quickstart-Guide-to-Navigating-Power-BI.html)
 
-Data-driven insights for real-time decisions and stronger customer connections**  
+Data-driven insights for real-time decisions and stronger customer connections
 by Shruti Shukla and Chandra Stevens  
 [Watch now](https://info.microsoft.com/ww-Landing-DataDrivenInsights.html)
 
@@ -164,7 +164,7 @@ Watch recorded sessions at any time.
 
 Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data
 <br>by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
-[Register to watch](https://mipc.eventbuilder.com/event/47133)
+[Register to watch](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide)
 
 Explore the total economic impact of Microsoft Power BI  
 by Megan Tomlin, Microsoft and Jonathan Lipsitz, Forrester Consulting  
@@ -194,7 +194,7 @@ Nine trends shaping the future of big data analytics
 by Vijay Gopalakrishnan  
 [Register and watch now](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html)
 
-Get up and running quickly with Power BI  
+Getting started with Power BI  
 by Miguel Martinez  
 [Register and watch now](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
@@ -230,7 +230,7 @@ Power BI, Excel, and Microsoft 365: Optimize your Enterprise Data
 by Olaf Hubel and Miguel Martinez  
 [Register and watch now](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
-Simply compelling—tips for better visualization design  
+Simply compelling—Tips for better visualization design  
 by Miranda Li  
 [Register and watch now](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
@@ -286,7 +286,7 @@ by Reid Havens
 
 [Watch this series](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
-Power BI: How to get insights from your workday HR data  
+Power BI: How to get insights from your Workday HR data  
 by Iman Eftekhari, Agile Analytics, Julia Paton, Agile Analytics, and Shahram Karimi, QBE Insurance  
 [Register and watch now](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html)
 
@@ -302,7 +302,7 @@ Proven healthcare solutions to improve both patient outcomes and profitability
 by Stephen Cracknell, UA Medical IT and Stuart Macanliss, US Medical IT  
 [Register and watch now](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-Digital transformation in manufacturers: Leverage analytics to maximize profitability  
+Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability  
 by Jon Thompson, Blue Margin and Jim Pastor, Elgin Fastener Group  
 [Register and watch now](https://info.microsoft.com/digital-transformation-in-manufacturing.html?)
 
@@ -326,7 +326,7 @@ Power BI tricks, tips, and tools from the owners of PowerBI.Tips
 by Mike Carlo and Seth Bauer  
 [Watch now](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
-Data storytelling with Power BI  
+Storytelling with your data and Power BI  
 by Tristan Malherbe  
 [Watch now](https://www.youtube.com/watch?v=egk0suekwHo)
 
@@ -342,7 +342,7 @@ Power BI security deep dive
 by Kasper de Jonge  
 [Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-Ask a Partner: Developing custom visuals for Power BI  
+Ask a Partner: Developing Power BI visuals for Power BI  
 by Ted Pattison  
 [Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
@@ -356,12 +356,12 @@ by Nagasaikiran Kambhampati, Myriad Consulting and Miguel Martinez, Microsoft
 Power BI adoption framework webinar series  
 by Manu Kanwarpal and Paul Henwood  
 [Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)  
-[Register and watch now - Part 2 - Governance](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)  
-[Register and watch now - Part 3 - Service Management](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)  
-[Register and watch now - Part 4 - Security](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)  
-[Register and watch now - Part 5 - Rollout](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)  
+[Register and watch now - Part 3 - Service Management: Power BI Service Management Insights](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)  
+[Register and watch now - Part 4 - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)  
+[Register and watch now - Part 5 - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
-A walkthrough of Power BI most advanced features through Star Wars data  
+Be a full stack Power BI Jedi - A walkthrough of Power BI most advanced features through Star Wars data  
 by Gil Raviv  
 [Watch now](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
