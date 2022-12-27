@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Administering Power BI - frequently asked questions (FAQ)
-  description: Learn the answers to frequently asked questions on Power BI sign up, tenant management, and other administrative tasks.
+  description: Learn the answers to frequently asked questions on Power BI sign-up, tenant management, and other administrative tasks.
   author: kfollis
   ms.author: kfollis
   ms.reviewer: ''
@@ -24,7 +24,7 @@ sections:
         answer: |
           * [Using PowerShell](#using-powershell)
           * [How do users sign up for Power BI?](#how-do-users-sign-up-for-power-bi-)
-          * [How do individual users in my organization sign up?](#how-do-individual-users-in-my-organization-sign-up-)
+          * [How do individual users in my organization sign-up?](#how-do-individual-users-in-my-organization-sign-up-)
           * [How can I prevent users from joining my existing organization?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant-)
           * [How can I allow users to join my existing organization?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant-)
           * [How do I check if I have the block on in the tenant?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant-)
@@ -87,7 +87,7 @@ sections:
         answer: |
           There are steps you can take, as a global administrator, to prevent users from joining your existing Microsoft 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 Education for students, faculty, and staff).
           
-          Use the following PowerShell script to prevent new users from joining a managed tenant. For more information, see [What is Powershell?](/powershell/scripting/overview)
+          Use the following PowerShell script to prevent new users from joining a managed tenant. For more information, see [What is PowerShell?](/powershell/scripting/overview)
           
           ```powershell
           $msolcred = get-credential
@@ -128,7 +128,7 @@ sections:
         answer: |
           The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to *true*, which means it's enabled. If you acquired Power BI through a partner, this might be set to *false*, which means it's disabled.
           
-          Use the following PowerShell script to disable ad hoc subscriptions. For more information, see [What is Powershell?](/powershell/scripting/overview)
+          Use the following PowerShell script to disable ad hoc subscriptions. For more information, see [What is PowerShell?](/powershell/scripting/overview)
           
           1. Sign into Azure Active Directory by using your Microsoft 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
           
