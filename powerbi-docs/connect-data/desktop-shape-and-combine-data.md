@@ -56,7 +56,7 @@ The steps you specify (such as rename a table, transform a data type, or delete 
      - **Promoted Headers**: Changing the top row of data into column headers.
      - **Changed Type**: Changing the column types, which are imported as text, to their inferred types. 
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/power-query-editor-query-settings-dialog.png" alt-text="Screenshot of Power Query Editor window with Query Settings highlighted.":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/power-query-editor-query-settings-dialog.png" alt-text="Screenshot of the Power Query Editor window with Query Settings highlighted.":::
 
 1. Change the table name from the default `Table 1` to `Retirement Data`, then press **Enter**.
 
@@ -159,7 +159,7 @@ These changes are described in the following steps.
 
 1. In **APPLIED STEPS**, select the step preceding the custom column, which is the **Removed Columns** step. Here we'll replace the value of the **Housing cost** ranking in Oregon. Right-click the appropriate cell that contains Oregon's **Housing cost** value, and then select **Replace Values**. Note which **Applied Step** is currently selected.
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/replace-value.png" alt-text="Screenshot of Power Query Editor window showing the Housing cost column with the Replace Values right-click menu item highlighted.":::
+   :::image type="content" source="media/desktop-shape-and-combine-data/replace-value.png" alt-text="Screenshot of the Power Query Editor window showing the Housing cost column with the Replace Values right-click menu item highlighted.":::
 
 1. Select **Insert**.
 
@@ -215,7 +215,7 @@ To get the data into shape, follow these steps:
    :::image type="content" source="media/desktop-shape-and-combine-data/state-table-remove-other-columns.png" alt-text="Screenshot of Power Query Editor highlighting the Remove Columns dropdown and the Remove Other Columns item.":::
 
    > [!NOTE]
-   > The *sequence* of applied steps in Power Query Editor is important, and affects how the data is shaped. It’s also important to consider how one step may impact another subsequent step. For example, if you remove a step from the applied steps, subsequent steps may not behave as originally intended.
+   > The *sequence* of applied steps in Power Query Editor is important, and affects how the data is shaped. It’s also important to consider how one step might impact another subsequent step. For example, if you remove a step from the applied steps, subsequent steps might not behave as originally intended.
 
    > [!NOTE]
    > When you resize the Power Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Power Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
@@ -234,8 +234,8 @@ Now that we’ve shaped the *State Codes* table the way we want, let’s combine
 
 There are two primary ways of combining queries: *merging* and *appending*.
 
-- When you've one or more *columns* that you’d like to add to another query, you *merge* the queries. 
-- When you have more *rows* of data that you’d like to add to an existing query, you *append* the query.
+- For one or more *columns* that you’d like to add to another query, you *merge* the queries. 
+- For one or more *rows* of data that you’d like to add to an existing query, you *append* the query.
 
 In this case, we want to merge the queries:
  
@@ -245,7 +245,7 @@ In this case, we want to merge the queries:
 
    :::image type="content" source="media/desktop-shape-and-combine-data/merge-queries.png" alt-text="Screenshot of Power Query Editor's Merge Queries dropdown with the Merge Queries item highlighted.":::
 
-   You may be prompted to set the privacy levels, to ensure the data is combined without including or transferring data you don't want transferred.
+   You might be prompted to set the privacy levels, to ensure the data is combined without including or transferring data you don't want transferred.
 
    The **Merge** window appears. It prompts you to select which table you'd like merged into the selected table, and the matching columns to use for the merge. 
 
@@ -272,7 +272,7 @@ In this case, we want to merge the queries:
    > [!NOTE]
    > If you want to explore how to bring in the **State Codes** table, you can experiment a bit. If you don’t like the results, just delete that step from the **APPLIED STEPS** list in the **Query Settings** pane, and your query returns to the state prior to applying that **Expand** step. You can do this as many times as you like until the expand process looks the way you want it.
 
-   We now have a single query (table) that combines two data sources, each of which has been shaped to meet our needs. This query can be a basis for interesting data connections, such as housing cost statistics, quality of life, or crime rate in any state.
+   We now have a single query (table) that combines two data sources, each of which was shaped to meet our needs. This query can be a basis for interesting data connections, such as housing cost statistics, quality of life, or crime rate in any state.
 
 1. To apply your changes and close Power Query Editor, select **Close & Apply** from the **Home** ribbon tab. 
 
