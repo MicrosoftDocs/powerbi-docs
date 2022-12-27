@@ -78,11 +78,6 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Troubleshooting your Power BI environment setup](power-bi-custom-visuals-troubleshoot.md)
-
-> [!div class="nextstepaction"]
-> [Create a Power BI circle card visual](develop-circle-card.md)
-
-> [!div class="nextstepaction"]
-> [Create an R-powered Power BI visual](create-r-based-power-bi-desktop.md)
+* [Learn about the Power BI visual project structure](./visual-project-structure.md)
+* [Create a Power BI circle card visual](develop-circle-card.md)
+* [Create an R-powered Power BI visual](create-r-based-power-bi-desktop.md)
