@@ -1,21 +1,21 @@
 ---
-title: Automate your deployment pipeline using APIs and Azure DevOps
-description: Learn how to automate your deployment pipeline, the Power BI Application lifecycle management (ALM) tool, using APIs and Azure DevOps.
+title: Automate your deployment pipeline by using APIs and Azure DevOps
+description: Learn how to automate your deployment pipeline, the Power BI Application lifecycle management (ALM) tool, by using APIs and Azure DevOps.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
-ms.date: 12/22/2022
+ms.date: 12/27/2022
 ---
 
-# Automate your deployment pipeline using APIs and Azure DevOps
+# Automate your deployment pipeline by using APIs and Azure DevOps
 
 The Power BI [deployment pipelines](deployment-pipelines-overview.md) tool enables business intelligence teams to build an efficient and reusable release process for their Power BI content.
 
 To achieve continuous integration and continuous delivery (CI/CD) of content, many organizations use automation tools, including [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops). Organizations that use Azure DevOps, can use the [Power BI automation tool](#use-the-power-bi-automation-tools-extension) extension, which supports many of the deployment pipelines API operations.
 
-You can use the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines) to integrate Power BI into your organization's automation process. Here are a few examples of what can be done using the APIs:
+You can use the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pipelines) to integrate Power BI into your organization's automation process. Here are a few examples of what can be done by using the APIs:
 
 * Manage pipelines from start to finish, including creating a pipeline, assigning a workspace to any stage, and deploying and deleting the pipeline.
 
@@ -23,11 +23,11 @@ You can use the [deployment pipelines Power BI REST APIs](/rest/api/power-bi/pip
 
 * Integrate Power BI into familiar DevOps tools such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) or [GitHub Actions](https://docs.github.com/en/actions).
 
-* Schedule pipeline deployments to happen automatically at a given time.
+* Schedule pipeline deployments to happen automatically at a specific time.
 
 * Deploy multiple pipelines at the same time.
 
-* Cascade depending pipeline deployments. If you have content that's connected across pipelines, you can make sure some pipelines are deployed before others.
+* Cascade depending on pipeline deployments. If you have content that's connected across pipelines, you can make sure some pipelines are deployed before others.
 
 ## Deployment pipelines API functions
 
@@ -53,13 +53,13 @@ Here's a list of the different deployment types the APIs support:
 
 * **Backward deploy** - Deploys new Power BI items to the previous stage. Backward deployment only works if the Power BI items that are deployed don't already exist in the target stage. For this operation, use either the [Deploy all](/rest/api/power-bi/pipelines/deployall) or the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) APIs, with `isBackwardDeployment` set to `True`.
 
-* **Update App** - As part of the deployment API call, you can update the content of the app that's related to that stage. Updated Power BI items will automatically be available to your end users, once a deployment has been completed. For this operation, use either the [Deploy all](/rest/api/power-bi/pipelines/deployall) or the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) APIs, with [PipelineUpdateAppSettings](/rest/api/power-bi/pipelines/selectivedeploy#pipelineupdateappsettings).
+* **Update App** - As part of the deployment API call, you can update the content of the app that's related to that stage. Updated Power BI items are automatically available to your end users, after a deployment has completed. For this operation, use either the [Deploy all](/rest/api/power-bi/pipelines/deployall) or the [Selective deploy](/rest/api/power-bi/pipelines/selectivedeploy) APIs, with [PipelineUpdateAppSettings](/rest/api/power-bi/pipelines/selectivedeploy#pipelineupdateappsettings).
 
 ## Before you begin
 
-Before you start using the deployment pipelines APIs, make sure you have the following:
+Before you use the deployment pipelines APIs, make sure you have the following:
 
-* The [*service principal*](./../developer/embedded/embed-service-principal.md), or the *user* you're using to call the APIs, needs [pipeline and workspace permissions](deployment-pipelines-process.md#permissions) and access to an [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added).
+* The [*service principal*](./../developer/embedded/embed-service-principal.md), or the *user* that will call the APIs, needs [pipeline and workspace permissions](deployment-pipelines-process.md#permissions) and access to an [Azure AD application](/azure/active-directory/develop/active-directory-how-applications-are-added).
 
 * If you're going to use PowerShell scripts, install the Power BI PowerShell cmdlets [Install-Module MicrosoftPowerBIMgmt](/powershell/power-bi/overview).
 
@@ -67,7 +67,7 @@ Before you start using the deployment pipelines APIs, make sure you have the fol
 
 To automate the Power BI deployment processes from within your [release pipeline in Azure DevOps](/azure/devops/pipelines), you can use one of these methods:
 
-* **PowerShell** - The script signs into Power BI using a *service principal* or a *user*.
+* **PowerShell** - The script signs into Power BI by using a *service principal* or a *user*.
 
 * **Power BI automation tools** - This extension works with a [*service principal*](./../developer/embedded/embed-service-principal.md) or a *user*.
 
@@ -75,18 +75,18 @@ You can also use other [Power BI REST API](/rest/api/power-bi/) calls, to comple
 
 ### Use the Power BI automation tools extension
 
-The Power BI automation tools extension is an [open source](https://github.com/microsoft/powerbi-azure-pipelines-extensions) Azure DevOps extension that provides a range of deployment pipelines operations that can be performed in Azure DevOps. The extension eliminates the need for using APIs or scripts to manage pipelines. Each operation can be used individually to perform a task, such as creating a pipeline. Operations can be used together in an Azure DevOps pipeline to create a more complex scenario, such as creating a pipeline, assigning a workspace to the pipeline, adding users, and deploying.
+The Power BI automation tools extension is an [open source](https://github.com/microsoft/powerbi-azure-pipelines-extensions) Azure DevOps extension that provides a range of deployment pipelines operations that can be performed in Azure DevOps. The extension eliminates the need for APIs or scripts to manage pipelines. Each operation can be used individually to perform a task, such as creating a pipeline. Operations can be used together in an Azure DevOps pipeline to create a more complex scenario, such as creating a pipeline, assigning a workspace to the pipeline, adding users, and deploying.
 
 After you add the [Power BI automation tools](https://marketplace.visualstudio.com/items?itemName=ms-pbi-api.pbi-automation-tools) extension to DevOps, you need to create a service connection. The following connections are available:
 
-* **Service principal** (recommended) - This connection authenticates using a [service principal](./../developer/embedded/embed-service-principal.md) and requires the Azure AD app’s secret and application ID. When using this option, verify that the [Power BI service admin settings](./../developer/embedded/embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings) for the service principal are enabled.
+* **Service principal** (recommended) - This connection authenticates by using a [service principal](./../developer/embedded/embed-service-principal.md) and requires the Azure AD app’s secret and application ID. When you use this option, verify that the [Power BI service admin settings](./../developer/embedded/embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings) for the service principal are enabled.
 
-* **Username and password** – Configured as a generic service connection with a username and a password. This connection method doesn’t support multi-factor authentication. Microsoft recommends using the service principal connection method as it doesn’t require storing user credentials on Azure DevOps.
+* **Username and password** – Configured as a generic service connection with a username and a password. This connection method doesn’t support multi-factor authentication. We recommend that you use the service principal connection method because it doesn’t require storing user credentials on Azure DevOps.
 
 >[!NOTE]
 >The Power BI automation tools extension uses an Azure DevOps service connection to store credentials. For more information, see [How we store your credentials for Azure DevOps Services](/azure/devops/organizations/security/credential-storage).
 
-Once you enable a service connection for your Azure DevOps Power BI automation tools, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
+After you enable a service connection for your Azure DevOps Power BI automation tools, you can [create pipeline tasks](/azure/devops/extend/develop/add-build-task). The extension includes the following deployment pipelines tasks:
 
 * Create a new pipeline
 
@@ -124,7 +124,7 @@ This section describes an example PowerShell script that deploys a dataset, repo
 
 To run a PowerShell script that performs a deployment, you'll need the following components. You can add any of these parts into [tasks](/azure/devops/pipelines/tasks/utility/powershell) in your Azure pipeline stages.
 
-1. **Sign in** - Before you can deploy your content, you need to sign in to Power BI using a *service principal* or a *user*. Use the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) command to sign in.
+1. **Sign in** - Before you can deploy your content, you need to sign in to Power BI by using a *service principal* or a *user*. Use the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) command to sign in.
 
 2. **Build your request body** - In this part of the script you specify which Power BI items (such as reports and dashboards) you're deploying.
 
@@ -173,11 +173,11 @@ To run a PowerShell script that performs a deployment, you'll need the following
 
 ## Considerations and limitations
 
-* Deployment using APIs is subject to the same [limitations](deployment-pipelines-process.md#considerations-and-limitations) as the Power BI deployment pipelines user interface.
+* Deployment by using APIs is subject to the same [limitations](deployment-pipelines-process.md#considerations-and-limitations) as the Power BI deployment pipelines user interface.
 
 * A *service principal* can't configure *OAuth* credentials. After you deploy new items, the signed in *service principal* becomes the owner of any deployed paginated reports and datasets. In such cases, a refresh can't be completed.
 
-* Deploying dataflows using a *service principal* isn't supported.
+* Deploying dataflows by using a *service principal* isn't supported.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
