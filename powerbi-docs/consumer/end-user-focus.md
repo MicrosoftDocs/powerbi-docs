@@ -77,7 +77,7 @@ Your selected content fills the entire screen. When you're in full screen mode, 
 
   * Select the **Back**, **Go back**, or **Back to report** button  to navigate to the previous page in your browser. If the previous page was a Power BI page, it too will display in full screen mode.  Full screen mode will persist until you exit out.
 
-  * :::image type="image" source="media/end-user-focus/power-bi-fit-to-screen-icon.png":::    
+  * :::image type="icon" source="media/end-user-focus/power-bi-fit-to-screen-icon.png":::    
     Use the **Fit to page** button to display your dashboard at the largest size possible without resorting to scrollbars.  
 
     ![Screenshot showing how fit to screen appears.](media/end-user-focus/power-bi-fit-screen.png)
@@ -87,7 +87,7 @@ Your selected content fills the entire screen. When you're in full screen mode, 
 
     ![Screenshot showing how Fit to width changes the appearance of the canvas.](media/end-user-focus/power-bi-fit-to-width-new.png)
 
-  * :::image type="icon" source="media/end-user-focus/power-bi-report-nav2.png" ":::       
+  * :::image type="icon" source="media/end-user-focus/power-bi-report-nav2.png":::       
     In full screen reports, use these arrows to move between the pages in the report.    
   * :::image type="icon" source="media/end-user-focus/exit-fullscreen-new.png":::     
   To exit full screen mode, select the **Exit full screen** icon.
