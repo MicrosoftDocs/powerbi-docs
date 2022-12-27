@@ -31,15 +31,15 @@ Admins can also control users' ability to create new workspace experience worksp
 
 The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Workspaces in Power BI](../collaborate-share/service-new-workspaces.md).
 
-|Column  |Description  |
-|---------|---------|
-|Name |XXX |
-|Description |XXX |
-|Type |XXX |
-|State |XXX |
-|Capacity name |XXX |
-|Capacity SKU Tier |XXX |
-|Upgrade status |XXX |
+| Column | Description |
+| --------- | --------- |
+| Name | The name given to the workspace. |
+| Description | Additional information about what the workspace was created for. (Optional) |
+| Type | The type of workspace. There are two types of workspaces, **workspace** and **personal group** |
+| State | The state lets you know if the workspace is available for use. There are five states, **Active**, **Orphaned**, **Deleted**, **Removing**, and **Not found**. For more information about workspace states, see [Workspace states](#workspace-states). |
+| Capacity name | Name given to the workspace's capacity. |
+| Capacity SKU Tier | The type of license used for the workspace's capacity. Capacity SKU Tiers include **Premium Gen2** and **Premium Per User (PPU)**. For more information about capacity tiers, see [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md). |
+| Upgrade status | The upgrade status lets you know if the workspace is eligible for a Power BI upgrade. |
 
 On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
 
