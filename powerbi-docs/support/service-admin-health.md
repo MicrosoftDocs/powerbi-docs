@@ -25,11 +25,11 @@ For more information about roles, see [Administrator roles related to Power BI](
 
 1. From the nav pane, select **Show all** > **Health** > **Service health**. The Service health page appears. Active issues are listed on this overview page:
 
-    :::image type="content" source="media/service-admin-health/service-health-2022.png" alt-text="Screenshot of the Microsoft 365 admin center with the Health and Service health options called out.":::
+    :::image type="content" source="media/service-admin-health/service-health-2022.png" alt-text="Screenshot of the Microsoft 365 admin center with the Health and Service health options called out." lightbox="media/service-admin-health/service-health-2022.png":::
 
 1. To see more information, select an item.
 
-    :::image type="content" source="media/service-admin-health/service-health-active-issues.png" alt-text="Screenshot of the Service health page with an active issue selected. The issue details pane for the selected item is on the right side of the screen.":::
+    :::image type="content" source="media/service-admin-health/service-health-active-issues.png" alt-text="Screenshot of the Service health page with an active issue selected. The issue details pane for the selected item is on the right side of the screen." lightbox="media/service-admin-health/service-health-active-issues.png":::
 
     Scroll down to see more information, then close the pane when you're finished.
 
