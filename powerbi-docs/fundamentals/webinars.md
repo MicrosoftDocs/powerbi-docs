@@ -164,7 +164,7 @@ Watch recorded sessions at any time.
 
 Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data
 <br>by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
-[Register to watch](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
+[Register to watch](/microsoft-365/compliance/sensitivity-labels)
 
 Explore the total economic impact of Microsoft Power BI  
 by Megan Tomlin, Microsoft and Jonathan Lipsitz, Forrester Consulting  
