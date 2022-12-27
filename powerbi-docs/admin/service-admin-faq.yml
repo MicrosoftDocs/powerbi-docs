@@ -24,7 +24,7 @@ sections:
         answer: |
           * [Using PowerShell](#using-powershell)
           * [How do users sign up for Power BI?](#how-do-users-sign-up-for-power-bi-)
-          * [How do individual users in my organization sign-up?](#how-do-individual-users-in-my-organization-sign-up-)
+          * [How do individual users in my organization sign up?](#how-do-individual-users-in-my-organization-sign-up-)
           * [How can I prevent users from joining my existing organization?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant-)
           * [How can I allow users to join my existing organization?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant-)
           * [How do I check if I have the block on in the tenant?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant-)
