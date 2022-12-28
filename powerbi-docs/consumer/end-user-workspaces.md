@@ -1,13 +1,13 @@
 ---
 title: How content is organized in workspaces
-description: Learn about workspaces and workspace roles
+description: Learn about the types of Power BI workspaces and which permissions and licensing you need to access them.
 author: mihart
 ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/27/2022
+ms.date: 12/28/2022
 ms.custom: licensing support
 LocalizationGroup: Consumers
 ---
@@ -20,20 +20,20 @@ LocalizationGroup: Consumers
 
  You can see your workspaces in Power BI by selecting **Workspaces** from your navigation pane.
 
- ![Screenshot shows navigation pane showing two types of workspaces.](media/end-user-workspaces/power-bi-home-workspace.png)
+ ![Screenshot shows the navigation pane with two types of workspaces.](media/end-user-workspaces/power-bi-home-workspace.png)
 
 ## Types of workspaces
-**My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content. *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
+**My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content. *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you're creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
 
-**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that's necessary for that app to be utilized. Content might include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app might contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces shared with *business users* don't include the datasets.
+**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that's necessary for that app to be utilized. Content might include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app might contain only one dashboard, or three of each content type, or even 20 reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces shared with *business users* don't include the datasets.
 
-The **Customer Profitability** workspace below contains a dashboard, a report, a workbook, and a dataset.
+The following **Azure Decom** workspace contains several reports and a dashboard.
 
 ![Screenshot shows how a workspace appears under the Workspaces menu item and contains reports and a dashboard.](media/end-user-workspaces/power-bi-app-workspace.png)
 
 ## Permissions in the workspaces
 
-Access permissions determine what you can do in a workspace, so teams can collaborate.  When granting access to a workspace, *designers* add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
+Access permissions determine what you can do in a workspace, so teams can collaborate. When *designers* grant access to a workspace, they add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
 
 
 As a Power BI *business user*, you'll typically interact in workspaces using the **Viewer** role. But a *designer* could also assign you to the **Member** or **Contributor** role. The Viewer role lets you view and interact with content (dashboards, reports, apps) created by others and shared with you. And because the Viewer role can't access the underlying dataset, it's a safe way to interact with content and not have to worry that you'll "hurt" the underlying data.
@@ -41,7 +41,7 @@ As a Power BI *business user*, you'll typically interact in workspaces using the
 
 For a detailed list of what you can do as a *business user* with the Viewer role, see [Power BI features for business users](end-user-features.md).
 
-For a detailed list of all four roles and their capabilities, see [workspace roles](../collaborate-share/service-roles-new-workspaces.md).
+For a detailed list of all four roles and their capabilities, see [Workspace roles](../collaborate-share/service-roles-new-workspaces.md).
 
 
 ## Licensing, workspaces, and capacity
@@ -49,9 +49,9 @@ Licensing also plays a part in determining what you can and can't do in a worksp
 
 Often, *business users* work with a free license. [Learn more about licensing](end-user-license.md). If the content isn't stored in Premium capacity, the business user won't have access.
 
-If the workspace is stored in Premium capacity, *business users* will be able to view and interact with the content in that workspace. A diamond icon identifies the workspaces that are stored in Premium capacity.
+If the workspace is stored in Premium capacity, *business users* will be able to view and interact with the content in that workspace. This icon :::image type="icon" source="media/end-user-workspaces/power-bi-diamond-icon.png"::: identifies Premium workspaces. This icon :::image type="icon" source="media/end-user-workspaces/power-bi-PPU-icon.png"::: identifies Premium Per User workspaces.
 
-![Workspaces selected](media/end-user-workspaces/power-bi-diamonds.png)
+![Screenshot showing a list of Workspaces with Premium icons outlined.](media/end-user-workspaces/power-bi-diamonds.png)
 
 To learn more, see [Which license do I have?](end-user-license.md).
 
