@@ -19,9 +19,9 @@ LocalizationGroup: Reports
 There are many ways to filter and highlight reports in Power BI. Putting all of that information in one article would be a lot, so we've broken it into these sections:
 
 * Introduction to filters and highlighting, as seen in this article.
-* How [filters and highlighting work in Reading view](../consumer/end-user-interactions.md) in the Power BI service. What you can do is more limited than Editing view, but you still have a wide range of filtering and highlighting options. 
+* How [filters and highlighting work in Reading view](../consumer/end-user-interactions.md) in the Power BI service. What you can do is more limited than Editing view, but you still have a wide range of filtering and highlighting options.
 * How to [create filters in the Filters pane](power-bi-report-add-filter.md) in Power BI Desktop and the Power BI service. When you have editing permissions for a report, you can create, modify, and delete filters in reports.
-* After you add filters, you can [format the filters](power-bi-report-filter.md) to act the way you want and look like the rest of the report.
+* After you add filters, you can [format the filters](power-bi-report-filter.md) to act the way you want and to look like the rest of the report.
 * You've learned how filters and highlighting work by default. Now learn how to [change the way visualizations on a page filter and highlight each other](service-reports-visual-interactions.md).
 * Read about other [types of filters in Power BI reports](power-bi-report-filter-types.md).
 
@@ -38,7 +38,7 @@ There are four standard types of filters that you create in the Filters pane.
 - **Report filter** applies to all pages in the report.
 - **Drillthrough filter** With drillthrough in the Power BI service and Power BI Desktop, you create a *destination* report page that focuses on a specific entity, such as a supplier. From the other report pages, users can right-click a data point for that entity and drill through to the focused page.
 
-To create the first three, the visual, page, and report filters, see [Add a filter to a report in Power BI](power-bi-report-add-filter.md).
+To create the visual, page, and report filters, see [Add a filter to a report in Power BI](power-bi-report-add-filter.md).
 
 To create drillthrough filters, see [Set up drillthrough in Power BI reports](desktop-drillthrough.md).
 
