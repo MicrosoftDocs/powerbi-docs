@@ -45,7 +45,7 @@ And that's typically the extent of the interaction - setting the parameters. If 
 
 This simple paginated report generates profit by year after you select the **Year** parameter. 
 
-![Screenshot showing a report with the year parameter selected.](./media/end-user-paginated-report/power-bi-one-parameter.png)
+:::image type="content" source="./media/end-user-paginated-report/power-bi-one-parameter.png" alt-text="Screenshot showing a report with the year parameter selected.":::
 
 Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support more types of visuals, including custom visuals.
 
