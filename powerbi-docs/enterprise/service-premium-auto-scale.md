@@ -55,7 +55,7 @@ To select an Azure subscription to work with Autoscale, take the following steps
 
     :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-create-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group pane. Create is highlighted." lightbox="media/service-premium-auto-scale/azure-auto-scale-create-resource-group.png":::
 
-1. Name your resource group and select **Review + create**. The following image shows an example resource group named *powerBIPremiumAutoscaleCores*. You can name your resource group whatever you want. Make a note of the name of the subscription, and the name of your resource group. You'll need to select it from a list when you configure Autoscale in the Power BI Admin Portal.
+1. Name your resource group and select **Review + create**. The following image shows an example resource group named *powerBIPremiumAutoscaleCores*. You can name your resource group whatever you want. Make a note of the name of the subscription, and the name of your resource group. You'll need to select it from a list when you configure Autoscale in the Power BI Admin portal.
 
     :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-name-resource-group.png" alt-text="Screenshot of the create a resource group page. The resource group text field and the review plus create button are highlighted." lightbox="media/service-premium-auto-scale/azure-auto-scale-name-resource-group.png":::
 
@@ -76,7 +76,7 @@ The following steps show you how to enable and associate Autoscale with the reso
 
     :::image type="content" source="media/service-premium-auto-scale/pbi-auto-scale-off-p2.png" alt-text="Screenshot of the Power BI Admin portal showing capacity settings. Autoscale off and the manage Autoscale button are highlighted.":::
 
-1. Autoscale only works with Power BI Premium Gen2. To enable Gen2 is easy: just move the slider to **Enabled** in the **Premium Generation 2** box. <!--- not sure if this is still available --->
+1. Autoscale only works with Power BI Premium Gen2. To enable Gen2 is easy: just move the slider to **Enabled** in the **Premium Generation 2** box.
 
     :::image type="content" source="media/service-premium-auto-scale/enable-gen2.gif" alt-text="Animation that shows how to enable Premium Generation Two.":::
 
@@ -84,11 +84,11 @@ The following steps show you how to enable and associate Autoscale with the reso
 
     :::image type="content" source="media/service-premium-auto-scale/pbi-auto-scale-settings-p2.png" alt-text="Screenshot of selecting the Autoscale settings page. The enable Autoscale check box is highlighted.":::
 
-1. Select the Azure subscription to use with Autoscale. Only subscriptions available to the current user are displayed, which is why you must be at least a *contributor* for the subscription. Once your subscription is selected, choose the **Resource group** you created in the previous section, from the list of resource groups available to the subscription.
+1. Select the Azure subscription to use with Autoscale. Only subscriptions available to the current user are displayed, which is why you must be at least a *contributor* for the subscription. Once your subscription is selected, choose the **Resource group** you created in the previous section, from the list of resource groups available to the subscription. Assign the maximum number of v-cores to use for Autoscale, and then select **Save**.
 
     :::image type="content" source="media/service-premium-auto-scale/pbi-auto-scale-settings-p2-02.png" alt-text="Screenshot of the Autoscale settings page showing subscription, resource group and Autoscale max settings..":::
 
-1. Assign the maximum number of v-cores to use for Autoscale, and then select **Save**. Power BI applies your changes, then closes the pane and returns the view to **Capacity settings** with the settings you applied. The following image shows the maximum v-cores configured for Autoscale.
+1. Power BI applies your changes, then closes the pane and returns the view to **Capacity settings** with the settings you applied. The following image shows the maximum v-cores configured for Autoscale.
 
     :::image type="content" source="media/service-premium-auto-scale/pbi-auto-scale-on-p2.png" alt-text="Screenshot of the capacity settings screen after Autoscale is set to on and configured.":::
 
@@ -99,10 +99,10 @@ The following short video shows how quickly you can configure Autoscale for Powe
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](service-premium-gen2-what-is.md)
+> [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium FAQ](service-premium-gen2-faq.yml)
+> [Power BI Premium Gen2 FAQ](service-premium-gen2-faq.yml)
 
 > [!div class="nextstepaction"]
 > [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
