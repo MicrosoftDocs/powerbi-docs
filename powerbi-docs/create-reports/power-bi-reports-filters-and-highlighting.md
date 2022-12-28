@@ -1,6 +1,6 @@
 ---
 title: Filters and highlighting in Power BI reports
-description: About filters and highlighting in Power BI reports
+description: Learn how to use filters and highlighting in reports on both Power BI Desktop and the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
