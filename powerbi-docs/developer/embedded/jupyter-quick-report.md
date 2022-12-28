@@ -30,34 +30,26 @@ import pandas as pd
 
 ## Create a pandas DataFrame
 
-Create a [pandas DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) from a sample CSV file and update it. The following example shows just one example of creating a DataFrame.  (users can create df in any way they want, this is just an example)
+Create a [pandas DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) from a sample CSV file and update it. The following example shows just one example of creating a DataFrame, but you can create your own DataFrame any way you want.
 
 ```python
 # Import your own CSV as a pandas data frame
 df = pd.read_csv('Financial Sample.csv')
 
 # Perform preprocessing
-df = df.drop(['Month Number', ' Month Name ', 'Year'], axis=1)
+df = df.drop(['Month Number', 'Month Name', 'Year'], axis=1)
 df = df.loc[df['Units Sold'] > 1000]
-df['Discounted'] = df[' Discount Band '] != ' None '
+df['Discounted'] = df['Discount Band'] != ' None '
 ```
 
 ## Authenticate to Power BI
 
-You need to authenticate when quick creating quick visualization features just like you do when embedding a report and . There are three authentication options:
-
-* Pass an access token (string)
-
-* Create an instance of AuthenticationResult. This be an interactive login or a device code login.
-
-* Don’t pass anything. If you don't pass anything, the default is a device code login.
-
 ```python
-# Authenticate to Power BI using the device code authentication method
-
+# Import the DeviceCodeLoginAuthentication class to authenticate against Power BI
 from powerbiclient.authentication import DeviceCodeLoginAuthentication
-
-auth = DeviceCodeLoginAuthentication()
+    
+# Initiate device authentication
+device_auth = DeviceCodeLoginAuthentication()
 ```
 
 For more information about authentication, check out the [github wiki page](https://github.com/microsoft/powerbi-jupyter/wiki#authenticate-to-power-bi-and-acquire-an-access-token).
@@ -68,7 +60,7 @@ Create a `QuickVisualize` instance from the [DataFrame you created](#create-a-pa
 
 ```python
 # Create a Power BI report from your data
-qv_report = QuickVisualize(get_dataset_config(df), auth=auth)
+qv_report = QuickVisualize(get_dataset_config(df), device_auth=auth)
 
 # Render report
 qv_report
@@ -78,9 +70,9 @@ qv_report
 
 ## Customize the report (optional)
 
-Once you created the report, they can be customized based on the data.  
+Once you created the report, you can customize it based on the data.  
 
-* You can define the size of he container.
+* You can define the size of the container.
 
   ```python
   # Set new width and height for the container
