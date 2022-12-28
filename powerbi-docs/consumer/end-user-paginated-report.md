@@ -39,13 +39,13 @@ When report *designers* create a paginated report, they're really creating a *re
 
 Select a paginated report to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
 
-   ![Screenshot showing Parameters for the report.](./media/end-user-paginated-report/power-bi-select-parameters.png)
+   ![Screenshot showing the parameters for the report.](./media/end-user-paginated-report/power-bi-select-parameters.png)
 
 And that's typically the extent of the interaction - setting the parameters. If you're a billing analyst, you might use paginated reports to create or print invoices. If you're a sales manager, you might use paginated reports to view orders by store or sales person. 
 
 This simple paginated report generates profit by year after you select the **Year** parameter. 
 
-![Screenshot showing Simple one parameter report.](./media/end-user-paginated-report/power-bi-one-parameter.png)
+![Screenshot showing a report with the year parameter selected.](./media/end-user-paginated-report/power-bi-one-parameter.png)
 
 Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support more types of visuals, including custom visuals.
 
@@ -68,7 +68,7 @@ Paginated reports can have many pages. For example, this report has 563 pages. E
 
 In this sales order report, there are three parameters: Business type, Reseller, and Order number. 
 
-![Screenshot showing the report with three parameters.](./media/end-user-paginated-report/power-bi-parameter-bar.png)
+:::image type="content" source="./media/end-user-paginated-report/power-bi-parameter-bar.png" alt-text="Screenshot showing the report with three parameters.":::
 
 To change the information shown, enter new values for the three parameters and select **View report**. Here, we've selected **Specialty bike shop**, **Alpine Ski House**, and order number **SO46085**. Select **View report** to refresh the report canvas with the new sales order.
 
@@ -85,9 +85,9 @@ Some paginated reports have many pages. Use the page controls to navigate throug
 ### Export the paginated report
 You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, and Excel. When you export, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep their formatting. 
 
-![Screenshot showing the formats for exporting a paginated report.](./media/end-user-paginated-report/power-bi-export-menu.png)
+:::image type="content" source="./media/end-user-paginated-report/power-bi-export-menu.png" alt-text="Screenshot showing the formats for exporting a paginated report.":::
 
-![Screenshot showing four different export types.](./media/end-user-paginated-report/power-bi-four.png)
+[![Screenshot showing four different export types.](./media/end-user-paginated-report/power-bi-four.png)](./media/end-user-paginated-report/power-bi-four.png#lightbox)
 
 ### Subscribe to the paginated report
 When you subscribe to a paginated report, Power BI sends you an email with the report as an attachment. When you set up your subscription, you choose how often you want to receive the emails: daily, weekly, hourly, or monthly. The subscription contains an attachment of the entire report output, up to 25MB in size. Export the entire report, or choose the parameters ahead of time. Choose from many attachment types, like Excel, PDF, and PowerPoint.  
