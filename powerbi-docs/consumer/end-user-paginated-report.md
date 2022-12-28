@@ -1,6 +1,6 @@
 ---
 title: Paginated reports in the Power BI service
-description: Documentation describing paginated reports and how to view them in the Power BI service
+description: Learn what a paginated report is, how they work, and how to view and export them in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: christopher.finlan
