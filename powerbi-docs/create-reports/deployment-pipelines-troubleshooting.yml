@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 12/21/2022
+  ms.date: 12/28/2022
   
 title: Deployment pipelines troubleshooting
 summary: |
@@ -245,7 +245,7 @@ sections:
 
           * In your dataset, instead of using DirectQuery or Composite mode, use [import](../connect-data/service-dataset-modes-understand.md#import-mode) mode.
 
-          * Remove the [auto date/time](../transform-model/desktop-auto-date-time.md) tables from your dataset and delete the variations from all the columns in your tables. Deleting a variation may invalidate user authored measures, calculated columns and calculated tables. Use this method only if you understand how your dataset model works as it may result in data corruption in your visuals.
+          * Remove the [auto date/time](../transform-model/desktop-auto-date-time.md) tables from your dataset. If necessary, delete any remaining variations from all the columns in your tables. Deleting a variation may invalidate user authored measures, calculated columns and calculated tables. Use this method only if you understand how your dataset model works as it may result in data corruption in your visuals.
 
   - name: Paginated reports
     questions:
