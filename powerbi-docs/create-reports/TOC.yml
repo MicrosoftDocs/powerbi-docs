@@ -153,7 +153,7 @@
     - name: "Use inline hierarchy labels"
       href: desktop-inline-hierarchy-labels.md
     - name: "Restrict data access with row-level security"
-      href: desktop-rls.md
+      href: ../enterprise/service-admin-rls.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: "Add text boxes, shapes, and smart narratives"
       href: power-bi-reports-add-text-and-shapes.md
     - name: "Add a hyperlink to a text box"
@@ -420,6 +420,8 @@
       href: service-goals-create-connected.md
     - name: "Create submetrics"
       href: service-metrics-submetrics.md
+    - name: "Create linked metrics"
+      href: service-metrics-linked-metrics.md
     - name: "Create custom statuses"
       href: service-goals-custom-status.md
     - name: "Create automated status rules"
@@ -432,8 +434,16 @@
       href: service-goals-move.md
     - name: "Metrics and Power Automate"
       href: service-goals-power-automate.md
-    - name: "Create and add Scorecards in reports"
-      href: ../visuals/power-bi-visualization-scorecard-visual.md   
+    - name: "Create and add scorecards to reports"
+      href: ../visuals/power-bi-visualization-scorecard-visual.md 
+    - name: Hierarchies in scorecards
+      items: 
+      - name: "Get started with hierarchies"
+        href: service-metrics-get-started-hierarchies.md 
+      - name: "Scenarios for using hierarchies"
+        href: service-metrics-hierarchies-scenarios.md 
+      - name: "View hierarchies in scorecards"
+        href: service-metrics-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: "Intro to dashboards"
@@ -478,6 +488,10 @@
       href: ../paginated-reports/paginated-reports-change-log.md
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Get around Report Design View
       href: ../paginated-reports/paginated-reports-report-design-view.md
     - name: Planning a report

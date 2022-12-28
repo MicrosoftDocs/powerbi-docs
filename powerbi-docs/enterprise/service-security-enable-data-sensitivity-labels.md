@@ -1,12 +1,12 @@
 ---
 title: Enable sensitivity labels in Power BI
-description: Learn how to enable sensitivity labels in Power BI
+description: Learn how Power BI administrators can enable sensitivity labels in Power BI.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 03/01/2022
+ms.date: 12/06/2022
 LocalizationGroup: Data from files
 ---
 # Enable sensitivity labels in Power BI
@@ -15,7 +15,7 @@ In order for [sensitivity labels from Microsoft Purview Information Protection](
 
 When sensitivity labels are enabled:
 
-* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, this means their reports, dashboards, datasets, and dataflows. In Power BI Desktop, it means their .pbix files.
+* Specified users and security groups in the organization can classify and [apply sensitivity labels](./service-security-apply-data-sensitivity-labels.md) to their Power BI content. In the Power BI service, this means their reports, dashboards, datasets, and dataflows. In Power BI Desktop, it means their *.pbix* files.
 * In the service, all members of the organization will be able to see those labels. In Desktop, only members of the organization who have the labels published to them will be able to see the labels.
 
 Enabling sensitivity labels requires an Azure Information Protection license. See [Licensing and requirements](#licensing-and-requirements) for detail.
@@ -39,10 +39,10 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 
 * Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection?view=o365-21vianet&preserve-view=true#configure-aip-for-customers-in-china).
 
-* Using sensitivity labels in Desktop requires the Desktop December 2020 release and later.
+* Using sensitivity labels in Desktop requires the Desktop December 2020 release or later.
 
     > [!NOTE]
-    > If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you will be prompted to upgrade your Desktop version.
+    > If you try to open a protected .pbix file with a Desktop version earlier than December 2020, it will fail, and you'll be prompted to upgrade your Desktop version.
 
 ## Enable sensitivity labels
 
@@ -70,15 +70,14 @@ In the **Information Protection** section, perform the following steps:
 
 ## Troubleshooting
 
-Power BI uses sensitivity labels from Purview Information Protection. Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following:
+Power BI uses sensitivity labels from Purview Information Protection.  Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following reasons:
 
-* You do not have an Azure Information Protection [license](#licensing-and-requirements).
-* Sensitivity labels have not been [migrated](#enable-sensitivity-labels) to the Microsoft Purview Information Protection version supported by Power BI.
-* No sensitivity labels from Purview Information Protection have been [defined in the organization](#enable-sensitivity-labels).
+* Sensitivity labels haven't been [migrated](#enable-sensitivity-labels) to the Microsoft Purview Information Protection version supported by Power BI.
+* No sensitivity labels from Microsoft Purview Information Protection have been [defined in the organization](#enable-sensitivity-labels).
 
 ## Considerations and limitations
 
-See [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#considerations-and-limitations) for the list of sensitivity label limitations in Power BI.
+For a list of sensitivity label limitations in Power BI, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#considerations-and-limitations).
 
 ## Next steps
 

@@ -79,7 +79,6 @@ For more information about the differences between the Embedded and Premium SKUs
 
 ## Next steps
 
-* [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
 * [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)

@@ -53,7 +53,9 @@
     - name: Troubleshoot report performance in Power BI
       href: ../guidance/report-performance-troubleshoot.md
     - name: Troubleshoot the Power BI add-in for PowerPoint
-      href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md    
+      href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md
+    - name: Troubleshoot sensitivity labels
+      href: ../enterprise/service-security-sensitivity-label-troubleshooting.md    
     - name: Develop in Power BI
       expanded: false
       items:
@@ -115,7 +117,7 @@
       - name: Troubleshoot sharing dashboards and reports
         href: ../collaborate-share/service-troubleshoot-sharing.md
       - name: Troubleshoot subscriptions
-        href: ../consumer/service-troubleshoot-subscribe.yml 
+        href: ../collaborate-share/service-troubleshoot-subscribe.yml 
     - name: Visuals
       expanded: false
       items:

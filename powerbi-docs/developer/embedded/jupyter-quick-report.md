@@ -6,14 +6,18 @@ ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: ""
-ms.date: 11/28/2022
+ms.date: 12/28/2022
 ---
 # Create a report quickly in Jupyter notebook
 
 If you're using Jupyter notebook, you can create a Power BI report with just a few steps without having to leave the notebook. This lets you easily tell the story of your data using Power BI's visualization capabilities as part of your notebook experience.  
 These are temporary reports that aren't saved automatically. Every time you run the code a new report will be created and the old one will be removed. You can manually save the report for later use in your notebook or in Power BI.
+
+## Prerequisites
+
+To create an report in Jupyter notebook, make sure you have the [Power BI client package installed](/javascript/api/overview/powerbi/powerbi-jupyter#install-the-power-bi-client-package).
 
 ## Import modules
 
