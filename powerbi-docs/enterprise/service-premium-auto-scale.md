@@ -80,7 +80,7 @@ The following steps show you how to enable and associate Autoscale with the reso
 
     :::image type="content" source="media/service-premium-auto-scale/enable-gen2.gif" alt-text="Animation that shows how to enable Premium Generation Two.":::
 
-1. Select **Manage auto-scale**  to enable and configure **Autoscale**. The **Auto-scale settings** pane appears. Select  **Enable auto scale**.
+1. Select **Manage Autoscale**  to enable and configure **Autoscale**. The **Autoscale settings** pane appears. Select  **Enable Autoscale**.
 
     :::image type="content" source="media/service-premium-auto-scale/pbi-auto-scale-settings-p2.png" alt-text="Screenshot of selecting the Autoscale settings page. The enable Autoscale check box is highlighted.":::
 
