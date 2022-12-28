@@ -10,6 +10,9 @@
       tocHref: /power-bi/
       topicHref: /power-bi/
       items:
+      - name: Administration
+        tocHref: /power-bi/admin/
+        topicHref: /power-bi/admin/index
       - name: Consumers
         tocHref: /power-bi/consumer/
         topicHref: /power-bi/consumer/index
@@ -29,9 +32,6 @@
         - name: Power BI visuals
           tocHref: /power-bi/developer/visuals/
           topicHref: /power-bi/developer/visuals/index
-        - name: Power BI visuals
-          tocHref: /power-bi/create-reports/
-          topicHref: /power-bi/developer/visuals/index          
         - name: Automation
           tocHref: /power-bi/developer/automation/
           topicHref: /power-bi/developer/automation/index
@@ -71,3 +71,9 @@
       - name: Transform, shape, model data
         tocHref: /power-bi/transform-model/
         topicHref: /power-bi/transform-model/index
+      - name: Enterprise
+        tocHref: /power-bi/enterprise/
+        topicHref: /power-bi/enterprise/index
+      - name: Troubleshooting
+        tocHref: /power-bi/troubleshoot/
+        topicHref: /power-bi/troubleshoot/index
