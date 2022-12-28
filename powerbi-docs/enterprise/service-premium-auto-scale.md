@@ -78,7 +78,7 @@ The following steps show you how to enable and associate Autoscale with the reso
 
 2. Autoscale only works with Power BI Premium Gen2. To enable Gen2 is easy: just move the slider to **Enabled** in the **Premium Generation 2** box. 
 
-    :::image type="content" source="media/service-premium-auto-scale/enable-gen2.gif" alt-text="Video of enabling Premium Generation Two.":::
+    :::image type="content" source="media/service-premium-auto-scale/enable-gen2.gif" alt-text="Animation that shows how to enable Premium Generation Two.":::
 
 3. Select **Manage auto-scale**  to enable and configure **Autoscale**. The **Auto-scale settings** pane appears. Select  **Enable auto scale**.
 
@@ -94,7 +94,7 @@ The following steps show you how to enable and associate Autoscale with the reso
 
 Here's a short video that shows how quickly you can configure Autoscale for Power BI Premium Gen2:
 
-:::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Video of configuring Autoscale for Premium Generation 2.":::
+:::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Animation that shows how to configure Autoscale for Premium Generation 2.":::
 
 ## Next steps
 
