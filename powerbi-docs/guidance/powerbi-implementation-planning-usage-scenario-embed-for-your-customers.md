@@ -43,14 +43,6 @@ The above diagram depicts the following user actions, tools, and features:
 
 The following are some key points to emphasize about programmatically embed Power BI content in a custom application for your customers.
 
-### Use cases
-
-There are several reasons why you might embed Power BI content for your customers.
-
-- **Internal business intelligence portal:** You might want to create an internal business intelligence (BI) portal as a replacement for the Power BI service. That way, you can create a custom application that integrates content from Power BI and other BI tools.
-- **Internal app:** You might want to develop an intranet app that shows data visualizations. For example, an intranet site for a manufacturing department could show real-time visuals that provide up-to-date information about the production line.
-- **Customized logging:** You might want to log custom events to record Power BI content access and use, beyond what the [activity log](/power-bi/admin/service-admin-auditing) records.
-
 ### Embeddable content
 
 When embedding for your customers, you can embed the following Power BI content types:
@@ -114,6 +106,25 @@ The application can set up and automate operations, and it can respond to user-i
 > The _Power BI Embedded Analytics Playground_ is a website that helps you learn, explore, and experiment with Power BI embedded analytics. It includes a developer sandbox for hands-on experiences that use the client APIs with sample Power BI content or your own content. Code snippets and showcases are available for you to explore, too.
 >
 > For more information, see [What is the Power BI embedded analytics playground?](/power-bi/developer/embedded/power-bi-playground/)
+
+### Enforce data permissions
+
+When the app users should only have access to view a subset of data, you need to develop a solution that restricts access to Power BI dataset data. The reason might be because some users aren't permitted to view specific data, such as sales results of other sales regions. Achieving this requirement commonly involves setting up row-level security (RLS), which involves defining roles and rules that filter model data.
+
+When you use the _For your customers scenario_, the app must set the effective identity to restrict access to data. This effective identity determines how Power BI will connect to the model and how it will enforce RLS security roles. How you set up the effective identity depends on the type of Power BI dataset.
+
+For more information about RLS roles for embedded content, see [Enforce data permissions for Power BI embedded analytics](/training/modules/power-bi-embedded-permissions-analytics/).
+
+### Multitenancy applications
+
+Multiple organizations can use a multitenancy app, where each organization is a tenant. A multitenancy app that embeds Power BI analytics can use the _For your customers_ scenario because the app users include external users. When designing a multitenancy app, you can choose from two different tenancy models.
+
+The recommended approach is to use the _workspace separation_ model. You can achieve this approach by creating one Power BI workspace for each tenant. Each workspace contains Power BI artifacts that are specific to that tenant, and the datasets connect to a separate database for each tenant.
+
+> [!TIP]
+> For more information about the workspace separation model, see [Automate workspace separation](/training/modules/power-bi-embedded-automate/workspace-separation). For more information about scalable multitenancy apps, see [Service principal profiles for multitenancy apps in Power BI Embedded](/power-bi/developer/embedded/embed-multi-tenancy).
+
+Alternatively, the single multi-customer database model is available. When you use this model, your solution will achieve separation with a single workspace that includes a set of Power BI artifacts that are shared across all tenants. Row-level security (RLS) roles, which are defined in the datasets, will help filter the data more securely to ensure that organizations only view their own data.
 
 ### Gateway setup
 
