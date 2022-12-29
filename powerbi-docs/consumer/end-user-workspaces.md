@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/28/2022
+ms.date: 12/29/2022
 ms.custom: licensing support
 LocalizationGroup: Consumers
 ---
@@ -20,7 +20,7 @@ LocalizationGroup: Consumers
 
  You can see your workspaces in Power BI by selecting **Workspaces** from your navigation pane.
 
- ![Screenshot shows the navigation pane with two types of workspaces.](media/end-user-workspaces/power-bi-home-workspace.png)
+ :::image type="content" source="media/end-user-workspaces/power-bi-home-workspace.png" alt-text="Screenshot shows the navigation pane with two types of workspaces.":::
 
 ## Types of workspaces
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content. *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you're creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
@@ -29,7 +29,7 @@ LocalizationGroup: Consumers
 
 The following **Azure Decom** workspace contains several reports and a dashboard.
 
-![Screenshot shows how a workspace appears under the Workspaces menu item and contains reports and a dashboard.](media/end-user-workspaces/power-bi-app-workspace.png)
+:::image type="content" source="media/end-user-workspaces/power-bi-app-workspace.png" alt-text="Screenshot shows how a workspace appears under the Workspaces menu item and contains reports and a dashboard.":::
 
 ## Permissions in the workspaces
 
@@ -51,7 +51,7 @@ Often, *business users* work with a free license. [Learn more about licensing](e
 
 If the workspace is stored in Premium capacity, *business users* will be able to view and interact with the content in that workspace. This icon :::image type="icon" source="media/end-user-workspaces/power-bi-diamond-icon.png"::: identifies Premium workspaces. This icon :::image type="icon" source="media/end-user-workspaces/power-bi-PPU-icon.png"::: identifies Premium Per User workspaces.
 
-![Screenshot showing a list of Workspaces with Premium icons outlined.](media/end-user-workspaces/power-bi-diamonds.png)
+:::image type="content" source="media/end-user-workspaces/power-bi-diamonds.png" alt-text="Screenshot showing a list of Workspaces with Premium icons outlined.":::
 
 To learn more, see [Which license do I have?](end-user-license.md).
 
