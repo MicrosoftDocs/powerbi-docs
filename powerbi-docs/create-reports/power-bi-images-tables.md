@@ -1,6 +1,6 @@
 ---
 title: Display images in a table, matrix, or slicer in a report
-description: In Power BI Desktop, you create a column with hyperlinks to images. Then in either Power BI Desktop or the Power BI service, add those hyperlinks to a report table, matrix, slicer, or multi-row card to display the image.
+description: Learn how to create a column with hyperlinks to images in Power BI Desktop. Then, in either Power BI Desktop or the Power BI service, add those hyperlinks to a report table, matrix, slicer, or multi-row card to display the image.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -25,7 +25,7 @@ A good way to enhance your reports is to add images to them. Static images on th
 
 1. Select that column. On the **Column tools** ribbon, for **Data category**, select **Image URL**.
 
-    ![Screenshot of Data category menu, highlighting Image URL.](media/power-bi-images-tables/power-bi-set-url-image.png)
+    ![Screenshot of the Data category menu, highlighting Image URL.](media/power-bi-images-tables/power-bi-set-url-image.png)
 
 1. Add the column to a table, matrix, slicer, or multi-row card.
 
@@ -37,11 +37,11 @@ Images in your report need to be anonymously accessible. On OneDrive, you may be
 
 1. On your OneDrive site, open an image and select **More options (...)** > **Embed**.
 
-    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed.png" alt-text="Screenshot of image on OneDrive, highlighting the More Options dropdown menu and the Embed selection.":::
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed.png" alt-text="Screenshot of an image on OneDrive, highlighting the More Options dropdown menu and the Embed selection.":::
 
 1. Select **Generate**.
 
-    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-generate.png" alt-text="Screenshot of Embed window, highlighting Generate.":::
+    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-generate.png" alt-text="Screenshot of the Embed window, highlighting Generate.":::
 
 1. Copy the URL and paste it in the **Image URL** column.
 
@@ -68,4 +68,4 @@ Your organization may not allow displaying images stored on OneDrive for Busines
 
 [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Try the Power BI community](https://community.powerbi.com/)
