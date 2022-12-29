@@ -66,7 +66,7 @@ To clear out the information in the Performance Analyzer pane, select **Clear**.
 > [!TIP]
 > When Power BI processes queries and their associated metadata, the processing of the query can be impacted by the complexity of the schema, the number of tables in the database(s), the complexity of the relationships between them, and the number of foreign key constraints on the tables. Such complexity can result in initial delays in returning or rendering a report.
 
-## Refreshing visuals
+## Refresh visuals
 
 You can select **Refresh visuals** in the Performance Analyzer pane to refresh all visuals on the current page of the report and thereby have Performance Analyzer gather information about all such visuals.
 
