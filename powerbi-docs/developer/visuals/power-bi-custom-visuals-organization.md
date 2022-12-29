@@ -1,6 +1,6 @@
 ---
 title: Organization visuals in Power BI
-description: Learn how to administer, use, and create custom Power BI visuals that are stored in an organizational repository.
+description: Learn about the considerations and limitations that apply when you develop organizational visuals in Power BI.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -17,7 +17,7 @@ You can develop your own custom Power BI visuals tailored to your own or your or
 
 Some organizations might have unique requirements for their Power BI visuals. They might need visuals that can convey specific data or insights unique to their organization. They might have special data requirements, or they might highlight private business methods. These organizations can develop and maintain their own Power BI visuals that they can share throughout their organization.
 
-The Power BI administrator uses the Admin portal to deploy and manage organizational visuals. Once the visuals are deployed into the organizational repository, users in the organization can easily discover and import them into their reports directly from Power BI Desktop.
+The Power BI administrator uses the Admin portal to deploy and manage organizational visuals. After the visuals are deployed to the organizational repository, users in the organization can easily discover and import them into their reports directly from Power BI Desktop.
 
 :::image type="content" source="media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg" alt-text="Diagram that shows the Power BI workflow for visuals.":::
 
@@ -41,7 +41,7 @@ Be aware of the following [admin](#admin-considerations) and [user](#user-consid
 
 - Organizational Power BI visuals can't be [exported to PowerPoint](../../collaborate-share/end-user-powerpoint.md) or displayed in emails received when a user [subscribes to report pages](../../consumer/end-user-subscribe.md). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace support these features.
 - Organizational Power BI visuals aren't supported in Power BI report server.
-- Certain visuals don't render if deployed through the organization repository. Use the **Add from AppSource** option in the Admin portal to manage the following visuals:
+- Certain visuals won't render if deployed through the organization's repository. Use the **Add from AppSource** option in the Admin portal to manage the following visuals:
 
   - Visio
   - Mapbox
