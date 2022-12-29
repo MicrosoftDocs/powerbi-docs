@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 12/31/2022
 ---
 
 # Composite model guidance in Power BI Desktop
@@ -46,7 +46,7 @@ Whenever possible, it's best to develop a model in import mode. This mode provid
 However, challenges related to large data volumes, or reporting on near real-time data, can't always be solved by import models. In either of these cases, you can consider a DirectQuery model, providing your data is stored in a single data source that's [supported by DirectQuery mode](/power-bi/connect-data/power-bi-data-sources). For more information, see [DirectQuery models in Power BI Desktop](/power-bi/connect-data/desktop-directquery-about).
 
 > [!TIP]
-> If you're objective is only to extend an existing tabular model with more data, whenever possible, add that data to the existing data source.
+> If your objective is only to extend an existing tabular model with more data, whenever possible, add that data to the existing data source.
 
 ## Table storage mode
 
@@ -55,14 +55,14 @@ In a composite model, you can set the [storage mode](/power-bi/transform-model/d
 - **DirectQuery:** We recommend that you set this mode for tables that represent large data volumes, or which need to deliver near real-time results. Data will never be imported into these tables. Usually, these tables will be [fact-type tables](/power-bi/guidance/star-schema#star-schema-overview), which are tables that are summarized.
 - **Import:** We recommend that you set this mode for tables that aren't used for filtering and grouping of fact tables in DirectQuery or Hybrid mode. It's also the only option for tables based on sources not supported by DirectQuery mode. Calculated tables are always import tables.
 - **Dual:** We recommend that you set this mode for [dimension-type tables](/power-bi/guidance/star-schema#star-schema-overview), when there's a possibility they'll be queried together with DirectQuery fact-type tables from the same source.
-- **Hybrid:** We recommend that you set this mode by adding import partitions, as well as one DirectQuery partition to a fact table when you want to include the latest data changes in real time, or when you want to provide fast access to the most frequently used data through import partitions while leaving the bulk of more infrequently used data in the data warehouse.
+- **Hybrid:** We recommend that you set this mode by adding import partitions, and one DirectQuery partition to a fact table when you want to include the latest data changes in real time, or when you want to provide fast access to the most frequently used data through import partitions while leaving the bulk of more infrequently used data in the data warehouse.
 
 There are several possible scenarios when Power BI queries a composite model.
 
 - **Queries only import or dual table(s):** Power BI retrieves all data from the model cache. It will deliver the fastest possible performance. This scenario is common for dimension-type tables queried by filters or slicer visuals.
 - **Queries dual table(s) or DirectQuery table(s) from the same source:** Power BI retrieves all data by sending one or more native queries to the DirectQuery source. It will deliver good performance, especially when appropriate indexes exist on the source tables. This scenario is common for queries that relate dual dimension-type tables and DirectQuery fact-type tables. These queries are _intra source group_, and so all one-to-one or one-to-many relationships are evaluated as [regular relationships](/power-bi/transform-model/desktop-relationships-understand#regular-relationships).
 - **Queries dual table(s) or hybrid table(s) from the same source**: This scenario is a combination of the previous two scenarios. Power BI retrieves data from the model cache when it's available in import partitions, otherwise it sends one or more native queries to the DirectQuery source. It will deliver the fastest possible performance because only a slice of the data is queried in the data warehouse, especially when appropriate indexes exist on the source tables. As for the dual dimension-type tables and DirectQuery fact-type tables, these queries are intra source group, and so all one-to-one or one-to-many relationships are evaluated as regular relationships.
-- **All other queries**: These queries involve cross source group relationships. It's either because an import table relates to a DirectQuery table, or a dual table relates to a DirectQuery table from a different source—in which case it behaves as an import table. All relationships are evaluated as [limited relationships](/power-bi/transform-model/desktop-relationships-understand#limited-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as a virtual table. In this case, the native query can be inefficient, especially for large grouping sets. Lastly, it has the potential to expose sensitive data in the native query.
+- **All other queries**: These queries involve cross source group relationships. It's either because an import table relates to a DirectQuery table, or a dual table relates to a DirectQuery table from a different source—in which case it behaves as an import table. All relationships are evaluated as [limited relationships](/power-bi/transform-model/desktop-relationships-understand#limited-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as materialized subqueries. In this case, the native query can be inefficient, especially for large grouping sets.
 
 In summary, we recommend that you:
 
@@ -73,7 +73,6 @@ In summary, we recommend that you:
 - Set appropriate refresh frequencies to keep the model cache for dual and hybrid tables (and any dependent calculated tables) in sync with the source database(s).
 - Strive to ensure data integrity across source groups (including the model cache) because limited relationships will eliminate rows in query results when related column values don't match.
 - Whenever possible, optimize DirectQuery data sources with appropriate indexes for efficient joins, filtering, and grouping.
-- Don't load sensitive data into import, dual, or hybrid tables if there's risk of a native query being intercepted. For more information, see [Use composite models in Power BI Desktop (Security implications)](/power-bi/transform-model/desktop-composite-models#security-implications).
 
 ## User-defined aggregations
 
@@ -96,7 +95,7 @@ When a model relationship spans source groups, it's known as a _cross source gro
 When defining cross source group relationships, consider the following recommendations.
 
 - **Use low-cardinality relationship columns:** For best performance, we recommend that the relationship columns be low cardinality, meaning they should store less than 50,000 unique values. This recommendation is especially true when combining tabular models, and for non-text columns.
-- **Avoid using large text relationship columns:** If you must use text columns in a relationship, calculate the expected text length for the filter by multiplying the cardinality by the average length of the text column. The possible text length shouldn't exceed 250,000 characters.
+- **Avoid using large text relationship columns:** If you must use text columns in a relationship, calculate the expected text length for the filter by multiplying the cardinality by the average length of the text column. The possible text length shouldn't exceed 1,000,000 characters.
 - **Raise the relationship granularity:** If possible, create relationships at a higher level of granularity. For example, instead of relating a date table on its date key, use its month key instead. This design approach requires that the related table includes a month key column, and reports won't be able to show daily facts.
 - **Strive to achieve a simple relationship design:** Only create a cross source group relationship when it's needed, and try to limit the number of tables in the relationship path. This design approach will help to improve performance and avoid [ambiguous relationship paths](/power-bi/transform-model/desktop-relationships-understand#resolve-relationship-path-ambiguity).
 
@@ -121,7 +120,7 @@ RegionalSalesDirect = CALCULATE(SUM(Sales[Sales]), USERELATIONSHIP(Region[Region
 
 Notice how the **RegionalSales** measure refers to the **TotalSales** measure, while the **RegionalSalesDirect** measure doesn't. Instead, the **RegionalSalesDirect** measure uses the expression `SUM(Sales[Sales])`, which is the expression of the **TotalSales** measure.
 
-The difference in the result in subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Date** table. Therefore, the filter also propagates from the **Date** table to the **Sales** table. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions are semantically equivalent.
+The difference in the result is subtle. When Power BI evaluates the **RegionalSales** measure, it applies the filter from the **Region** table to both the **Sales** table and the **Date** table. Therefore, the filter also propagates from the **Date** table to the **Sales** table. In contrast, when Power BI evaluates the **RegionalSalesDirect** measure, it only propagates the filter from the **Region** table to the **Sales** table. The results returned by **RegionalSales** measure and the **RegionalSalesDirect** measure could differ, even though the expressions are semantically equivalent.
 
 > [!IMPORTANT]
 > Whenever you use the `CALCULATE` function with an expression that's a measure in a remote source group, test the calculation results thoroughly.
@@ -130,7 +129,7 @@ The difference in the result in subtle. When Power BI evaluates the **RegionalSa
 
 Consider a scenario when a cross source group relationship has high-cardinality relationship columns.
 
-In this scenario, the **Date** table is related to the **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. The tables belong to different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is 01/01/1900 and the latest date is 12/31/2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
+In this scenario, the **Date** table is related to the **Sales** table on the **DateKey** columns. The data type of the **DateKey** columns is integer, storing whole numbers that use the _yyyymmdd_ format. The tables belong to different source groups. Further, it's a high-cardinality relationship because the earliest date in the **Date** table is January 1, 1900 and the latest date is December 31, 2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
 
 :::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-2.png" alt-text="Diagram shows the scenario 2 model design as described in the previous paragraph." border="false":::
 
@@ -161,7 +160,7 @@ When a Power BI table visual queries the composite model by grouping on the **Ye
 
 :::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-3-visual.png" alt-text="Diagram shows a table visual that doesn't show the 2023 target amount. Also, the target amount total of 600 doesn't equal the two shown values for 2021 and 2022 (100 and 200)." border="false":::
 
-If the relationship between the **Date** table and the **Target** table were an intra source group relationship (assuming the **Target** table belonged to source group **B**), the visual would include a _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
+If the relationship between the **Date** table and the **Target** table is an intra source group relationship (assuming the **Target** table belonged to source group **B**), the visual will include a _(Blank)_ year to show the 2023 (and any other unmatched years) target amount.
 
 > [!IMPORTANT]
 > To avoid misreporting, ensure that there are matching values in the relationship columns when dimension and fact tables reside in different source groups.
@@ -174,9 +173,12 @@ You should consider specific limitations when adding calculated columns and calc
 
 ### Calculated columns
 
-Calculated columns added to a DirectQuery table that sources its data from a relational database, like Microsoft SQL Server, are limited to expressions that operate on a single row at a time. These expressions can't use [DAX iterator functions](/training/modules/dax-power-bi-iterator-functions/), like `SUMX`.
+Calculated columns added to a DirectQuery table that sources its data from a relational database, like Microsoft SQL Server, are limited to expressions that operate on a single row at a time. These expressions can't use [DAX iterator functions](/training/modules/dax-power-bi-iterator-functions/), like `SUMX`, or filter context modification functions, like `CALCULATE`.
 
-A calculated column expression on a remote DirectQuery table is limited to intra-row evaluation only. However, you can use such an expression, but it will result in an error when it's used in a visual. For example, if you add a calculated column to a remote DirectQuery table named **DimProduct** by using the expression `[Product Sales] / SUM (DimProduct[ProductSales])`, it will work fine. However, it will result in an error when it's used in a visual because it violates the intra-row evaluation restriction.
+> [!NOTE]
+> It's not possible to added calculated columns or calculated tables that depend on chained tabular models.
+
+A calculated column expression on a remote DirectQuery table is limited to intra-row evaluation only. However, you can author such an expression, but it will result in an error when it's used in a visual. For example, if you add a calculated column to a remote DirectQuery table named **DimProduct** by using the expression `[Product Sales] / SUM (DimProduct[ProductSales])`, you'll be able to successfully save the expression in the model. However, it will result in an error when it's used in a visual because it violates the intra-row evaluation restriction.
 
 In contrast, calculated columns added to a remote DirectQuery table that's a tabular model, which is either a Power BI dataset or Analysis Services model, are more flexible. In this case, all DAX functions are allowed because the expression will be evaluated within the source tabular model.
 
@@ -200,13 +202,19 @@ Be sure to create dimension tables that are separate from fact tables so that Po
 
 Whenever possible, avoid having dimension tables in one source group that relate to a fact table in a different source group. That's because it's better to have *intra* source group relationships than *cross* source group relationships, especially for high-cardinality relationship columns. As [described earlier](#cross-source-group-relationship-scenario-3), cross source group relationships rely on having matching values in the relationship columns, otherwise unexpected results may be shown in report visuals.
 
+### Row-level security
+
+If your model includes user-defined aggregations, calculated columns on import tables, or calculated tables, ensure that any row-level security (RLS) is set up correctly and tested.
+
+If the composite model connects to other tabular models, RLS rules are only applied on the source group (local model) where they're defined. They won't be applied to other source groups (remote models). Also, you can't define RLS rules on a table from another source group nor can you define RLS rules on a local table that has a relationship to another source group.
+
 ## Report design
 
 In some situations, you can improve the performance of a composite model by designing an optimized report layout.
 
 ### Single source group visuals
 
-Whenever possible, create visuals that use fields from a single source group. That's because queries generated by visuals will perform better when the result is retrieved from a single source group. Consider creating two visuals, positioned side by side, that retrieve data from two different source groups.
+Whenever possible, create visuals that use fields from a single source group. That's because queries generated by visuals will perform better when the result is retrieved from a single source group. Consider creating two visuals positioned side by side that retrieve data from two different source groups.
 
 ### Use sync slicers
 
@@ -230,9 +238,8 @@ For more information, see [Sync separate slicers](/power-bi/visuals/power-bi-vis
 Here's some other guidance to help you design and maintain composite models.
 
 - **Performance and scale:** If your reports were previously live connected to a Power BI dataset or Analysis Services model, the Power BI service could reuse visual caches across reports. After you convert the live connection to create a local DirectQuery model, reports will no longer benefit from those caches. As a result, you might experience slower performance or even refresh failures. Also, the workload for the Power BI service will increase, which might require you to scale up your capacity or distribute the workload across other capacities. For more information about data refresh and caching, see [Data refresh in Power BI](/power-bi/connect-data/refresh-data).
-- **Security:** If your model includes user-defined aggregations, calculated columns on import tables, or calculated tables, ensure that any row-level security (RLS) is set up correctly and tested.
 - **Renaming:** We don't recommend that you rename datasets used by composite models, or rename their workspaces. That's because composite models connect to Power BI datasets by using the workspace and dataset names (and not their internal unique identifiers). Renaming a dataset or workspace could break the connections used by your composite model.
-- **Governance:** We don't recommend that your _single version of the truth_ model be a composite model. That's because it would be dependent on other data sources or models, which if updated, could result in breaking the composite model. Instead, we recommended that you publish an enterprise semantic model as the single version of truth. Consider this model to be a reliable foundation. Other data modelers can then create composite models that extend the foundation model to create specialized models.
+- **Governance:** We don't recommend that your _single version of the truth_ model is a composite model. That's because it would be dependent on other data sources or models, which if updated, could result in breaking the composite model. Instead, we recommended that you publish an enterprise semantic model as the single version of truth. Consider this model to be a reliable foundation. Other data modelers can then create composite models that extend the foundation model to create specialized models.
 - **Data lineage:** Use the [data lineage](/power-bi/collaborate-share/service-data-lineage) and [dataset impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) features before publishing composite model changes. These features are available in the Power BI service, and they can help you to understand how datasets are related and used. It's important to understand that you can't perform impact analysis on external datasets that are displayed in lineage view but are in fact located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
 - **Schema updates:** You should refresh your composite model in Power BI Desktop when schema changes are made to upstream data sources. You'll then need to republish the model to the Power BI service. Be sure to thoroughly test calculations and dependent reports.
 
