@@ -86,9 +86,9 @@ Once you created the report, you can customize it to get the most valuable insig
 
   :::image type="content" source="./media/jupyter-quick-report/set-container-size.png" alt-text="Screenshot of rendered visuals with command setting size of the container to 350 by 600.":::
 
-For a quick report demo, see the [GitHub repository](https://github.com/microsoft/powerbi-jupyter/).
+For a demo Jupyter notebook, see the [GitHub repository](https://github.com/microsoft/powerbi-jupyter/).
 
 ## Next steps
 
 [Learn more about developing in Jupyter notebook](/javascript/api/overview/powerbi/powerbi-jupyter)
-[Quick create in Jupyter notebook GitHub repository](https://github.com/microsoft/powerbi-jupyter/)
+[Quick create demo Jupyter notebook GitHub repository](https://github.com/microsoft/powerbi-jupyter/)
