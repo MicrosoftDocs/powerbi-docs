@@ -14,7 +14,8 @@ LocalizationGroup: Data from files
 
 By using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data. By using real-time session controls in Azure Active Directory (Azure AD), you can ensure your Power BI analytics are secure. Once these policies are set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
 
-Microsoft Defender for Cloud Apps is now part of [**Microsoft 365 Defender**](https://security.microsoft.com). For more information, see [**Microsoft Defender for Cloud Apps in Microsoft 365 Defender**](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+> [!NOTE]
+> Microsoft Defender for Cloud Apps is now part of [**Microsoft 365 Defender**](https://security.microsoft.com). For more information, see [**Microsoft Defender for Cloud Apps in Microsoft 365 Defender**](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
 :::image type="content" source="media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-cloud-apps-catalog.png" alt-text="Screenshot of the Defender for Cloud Apps window showing the Cloud app catalog page with Power BI highlighted.":::
 
