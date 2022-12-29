@@ -58,18 +58,18 @@ There's no limitation on where the content resides, except the content can't res
 
 ### Authentication
 
-The authentication flow is _non-interactive authentication_ with Azure AD (also known as _silent authentication_). Non-interactive authentication means that the app user isn't required to have a Power BI account, and even when they do, it isn't used. So a dedicated Azure AD identity, known as the embedding identity, authenticates with Azure AD. An embedding identity can be a service principal or a master user account.
+The authentication flow is _non-interactive authentication_ with Azure AD (also known as _silent authentication_). Non-interactive authentication means that the app user isn't required to have a Power BI account, and even when they do, it isn't used. So a dedicated Azure AD identity, known as the embedding identity, authenticates with Azure AD. An embedding identity can be a service principal or a master user account (described later).
 
 The authentication flow attempts to acquire an Azure token in a way in which the authentication service can't prompt the user for additional information. Once the app user authenticates with the app (the app can use any authentication method), the app uses the embedding identity to acquire an Azure AD token by using a non-interactive authentication flow.
 
-Once your app acquires an Azure AD token, it caches it and then uses it to generate an _embed token_. An embed token represents facts about Power BI content and how to access them. The app uses the embed token to embed content inside an `iframe` HTML element.
+Once the app acquires an Azure AD token, it caches it and then uses it to generate an _embed token_. An embed token represents facts about Power BI content and how to access them. The app uses the embed token to embed content inside an `iframe` HTML element.
 
 #### Service principal
 
 An app can use a service principal to acquire an Azure AD token. An Azure service principal is a security identity used by apps. It defines the access policy and permissions for the app in the Azure AD tenant, enabling core features such as authentication of the app during sign in, and authorization during resource access. A service principal can authenticate by using an app secret or certificate. A service principal can only use Power BI REST APIs, when the _Allow service principals to use Power BI APIs_ tenant setting is enabled, and the service principal belongs to an allowed group.
 
 > [!TIP]
-> We recommend that you secure service principals by using certificates for your production apps, rather than secret keys, because it's more secure.
+> We recommend using a service principal for production apps. It provides the highest security and for this reason it's the approach recommended by Azure AD. Also, it supports better automation and scale and there's less management overhead. However, it requires Power BI admin rights to set up and manage.
 
 #### Master user account
 
@@ -111,7 +111,7 @@ The application can set up and automate operations, and it can respond to user-i
 
 When the app users should only have access to view a subset of data, you need to develop a solution that restricts access to Power BI dataset data. The reason might be because some users aren't permitted to view specific data, such as sales results of other sales regions. Achieving this requirement commonly involves setting up row-level security (RLS), which involves defining roles and rules that filter model data.
 
-When you use the _For your customers scenario_, the app must set the effective identity to restrict access to data. This effective identity determines how Power BI will connect to the model and how it will enforce RLS security roles. How you set up the effective identity depends on the type of Power BI dataset.
+When you use the _For your customers scenario_, the app must set the effective identity of the embed token to restrict access to data. This effective identity determines how Power BI will connect to the model and how it will enforce RLS roles. How you set up the effective identity depends on the type of Power BI dataset.
 
 For more information about RLS roles for embedded content, see [Enforce data permissions for Power BI embedded analytics](/training/modules/power-bi-embedded-permissions-analytics/).
 
@@ -124,7 +124,7 @@ The recommended approach is to use the _workspace separation_ model. You can ach
 > [!TIP]
 > For more information about the workspace separation model, see [Automate workspace separation](/training/modules/power-bi-embedded-automate/workspace-separation). For more information about scalable multitenancy apps, see [Service principal profiles for multitenancy apps in Power BI Embedded](/power-bi/developer/embedded/embed-multi-tenancy).
 
-Alternatively, the single multi-customer database model is available. When you use this model, your solution will achieve separation with a single workspace that includes a set of Power BI artifacts that are shared across all tenants. Row-level security (RLS) roles, which are defined in the datasets, will help filter the data more securely to ensure that organizations only view their own data.
+Alternatively, the single multi-customer database model is available. When you use this model, your solution will achieve separation with a single workspace that includes a set of Power BI items that are shared across all tenants. RLS roles, which are defined in the datasets, will help filter the data more securely to ensure that organizations only view their own data.
 
 ### Gateway setup
 
@@ -135,7 +135,7 @@ Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is re
 
 ### System oversight
 
-The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
+The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption.
 
 ## Next steps
 
