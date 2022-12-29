@@ -98,7 +98,7 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 - Use AppSource as your online store to host your application. This way everyone using Power BI can find your app.
 - Consider offering more than one template app for separate unique scenarios.
 - Enable data customization. For example, support custom connection and parameters configuration by the installer.
-- If you're an ISV and are distributing your app through your web service, consider automating parameter configuration during installation to make things easier for your customers and to increase the likelihood of a successful installation. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
+- If you're an independent software vendor and are distributing your app through your web service, consider automating parameter configuration during installation to make things easier for your customers and to increase the likelihood of a successful installation. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
 
 See [Tips for authoring template apps in Power BI](service-template-apps-tips.md) for more suggestions.
 
@@ -106,12 +106,12 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 
 | Feature | Known Limitation |
 |---------|---------|
-| Contents: Datasets | Exactly one dataset should be present. Only datasets built in Power BI Desktop (*.pbix* files) are allowed. Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (*.rdl* files), or Excel workbooks. |
+| Contents: Datasets | Exactly one dataset should be present. Only datasets built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (*.rdl* files), and Excel workbooks. |
 |Contents:  Reports   | A single template app can't include more than 20 reports. |
 |Contents: Dashboards | Real-time tiles aren't allowed. In other words, no support for push or streaming datasets. |
 |Contents: Dataflows | Not supported: Dataflows. |
 |Contents from files | Only *.pbix* files are allowed. Not supported: *.rdl* files (paginated reports) and Excel workbooks. |
-| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. Not supported: Live connections (no Azure AS), on-premises data sources (personal and enterprise gateways aren't supported), real time (no support for push dataset), and composite models. |
+| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. Not supported: Live connections, on-premises data sources (personal and enterprise gateways aren't supported), real time (no support for push dataset), and composite models. |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed. |
 | Query parameters | Not supported: Parameters of type *Any*, *Date*, or *Binary* type block refresh operation for dataset. |
 | Incremental refresh | Template apps don't support incremental refresh. |
