@@ -126,6 +126,10 @@ The recommended approach is to use the _workspace separation_ model. You can ach
 
 Alternatively, the single multi-customer database model is available. When you use this model, your solution will achieve separation with a single workspace that includes a set of Power BI items that are shared across all tenants. RLS roles, which are defined in the datasets, will help filter the data more securely to ensure that organizations only view their own data.
 
+### No-code embedding
+
+Developing a programmatic solution requires skill, time, and effort. Consider that there's one embedding technique known as _no-code embedding_ that non-developers can use to embed Power BI reports or dashboards in [Power Pages](/power-apps/maker/portals/add-powerbi).
+
 ### Gateway setup
 
 Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) dataset.
