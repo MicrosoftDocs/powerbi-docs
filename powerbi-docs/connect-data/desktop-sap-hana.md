@@ -29,25 +29,25 @@ This release has many capabilities for SAP HANA, as shown in the following list:
 
 * The Power BI connector for SAP HANA uses the SAP ODBC driver to provide the best user experience.
 
-* SAP HANA supports both DirectQuery and Import options.
+* SAP HANA supports both DirectQuery and import options.
 
-* Power BI supports HANA information models, such as Analytic and Calculation Views, and has optimized navigation.
+* Power BI supports HANA information models, such as analytic and calculation views, and has optimized navigation.
 
-* With SAP HANA, you can also use the direct SQL feature to connect to Row and Column Tables.
+* With SAP HANA, you can also use the direct SQL feature to connect to row and column tables.
 
-* Power BI includes Optimized Navigation for HANA Models.
+* Power BI includes optimized navigation for HANA Models.
 
-* Power BI supports SAP HANA Variables and Input parameters.
+* Power BI supports SAP HANA variables and input parameters.
 
-* Power BI supports HDI-container-based Calculation Views.
+* Power BI supports HDI-container-based calculation views.
 
-  * Support for HDI-container-based Calculation Views is available in Power BI Desktop. To access your HDI-container-based Calculation Views in Power BI, ensure that the HANA database users you use with Power BI have permission to access the HDI runtime container that stores the views you want to access. To grant this access, create a Role that allows access to your HDI container. Then assign the role to the HANA database user that you use with Power BI. This user must also have permission to read from the system tables in the \_SYS\_BI schema, as usual.
+  * Support for HDI-container-based calculation views is available in Power BI Desktop. To access your HDI-container-based calculation views in Power BI, ensure that the HANA database users you use with Power BI have permission to access the HDI runtime container that stores the views you want to access. To grant this access, create a role that allows access to your HDI container. Then assign the role to the HANA database user that you use with Power BI. This user must also have permission to read from the system tables in the \_SYS\_BI schema, as usual.
 
     Consult the official SAP documentation for detailed instructions on how to create and assign database roles. [This SAP blog post](https://blogs.sap.com/2018/01/24/the-easy-way-to-make-your-hdi-container-accessible-to-a-classic-database-user/) may be a good place to start.
 
-  * There are currently some limitations for HANA variables attached to HDI-based Calculation Views. These limitations are because of errors on the HANA side.
+  * There are currently some limitations for HANA variables attached to HDI-based calculation views. These limitations are because of errors on the HANA side.
   
-    First, it isn't possible to apply a HANA variable to a shared column of an HDI-container-based Calculation View. To fix this limitation, upgrade to HANA 2 version 37.02 and onwards or to HANA 2 version 42 and onwards.
+    First, it isn't possible to apply a HANA variable to a shared column of an HDI-container-based calculation view. To fix this limitation, upgrade to HANA 2 version 37.02 and onwards or to HANA 2 version 42 and onwards.
 
     Second, multi-entry default values for variables and parameters currently don't show up in the Power BI UI. An error in SAP HANA causes this limitation, but SAP hasn't announced a fix yet.
 
