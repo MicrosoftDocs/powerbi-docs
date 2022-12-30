@@ -46,7 +46,7 @@ To install the on-premises data gateway (personal mode):
 
    ![Screenshot that shows selecting the on-premises data gateway (personal mode).](media/service-gateway-personal-mode/personal-gateway-select.png)
 
-1. On the next screen, review the minimum requirements, verify or edit the installation path, such as , and select the checkbox to accept the terms of use and privacy statement. Then select **Install**.
+1. On the next screen, review the minimum requirements, verify or edit the installation path, and select the checkbox to accept the terms of use and privacy statement. Then select **Install**.
 
 1. After the installation completes successfully, enter your email address under **Email address to use with this gateway**, and select **Sign in**. 
 
