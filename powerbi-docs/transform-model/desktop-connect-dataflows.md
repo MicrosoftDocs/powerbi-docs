@@ -1,6 +1,6 @@
 ---
 title: Connect to data created by Power Platform dataflows in Power BI Desktop
-description: ELearn how to easily connect to and use dataflows in Power BI Desktop and get the best performance while using them.
+description: Learn how to easily connect to, use, and get the best performance while using dataflows in Power BI Desktop. 
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
