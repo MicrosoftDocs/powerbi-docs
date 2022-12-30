@@ -39,7 +39,7 @@ The following sections describe the steps for configuring real-time controls for
 
 The steps necessary to set session controls are completed in the Azure AD and Defender for Cloud Apps portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Defender for Cloud Apps service.
 
-Defender for Cloud Apps operates in a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. For a description of the whole process, see [Defender for Cloud Apps article](/cloud-app-security/proxy-deployment-aad).
+Defender for Cloud Apps operates in a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. For a description of the whole process, see [Defender for Cloud Apps](/cloud-app-security/proxy-deployment-aad).
 
 1. [Create an Azure AD conditional access test policy](/defender-cloud-apps/proxy-deployment-aad#conf-idp)
 1. [Sign into each app using a user scoped to the policy](/defender-cloud-apps/proxy-deployment-aad#sign-in-scoped)
@@ -76,7 +76,7 @@ Custom activity policies are configured in the Defender for Cloud Apps portal. F
 
 ## Built-in Defender for Cloud Apps detections for Power BI
 
-Defender for Cloud Apps detection enable administrators to monitor specific activities of a monitored app. For Power BI, there are currently two dedicated, built-in Defender for Cloud Apps detections:
+Defender for Cloud Apps detection enables administrators to monitor specific activities of a monitored app. For Power BI, there are currently two dedicated, built-in Defender for Cloud Apps detections:
 
 * **Suspicious share** – detects when a user shares a sensitive report with an unfamiliar (external to the organization) email. A sensitive report is a report whose sensitivity label is set to **INTERNAL-ONLY** or higher.
 
