@@ -27,7 +27,7 @@ This first refresh operation can take quite some time depending on the amount of
 
 Partitions are created for and named by period granularity: Years, quarters, months, and days. The most recent partitions, the *refresh* partitions, contains rows in the refresh period you specify in the policy. Historical partitions contain rows by complete period up to the refresh period. If real time is enabled, a DirectQuery partition picks up any data changes that occurred after the end date of the refresh period. Granularity for refresh and historical partitions is dependent on the refresh and historical (store) periods you choose when defining the policy.
 
-For example, if today's date is February 2, 2021 and our FactInternetSales table at the data source contains rows up through today, if our policy specifies to include real-time changes, refresh rows in the last one day refresh period, and store rows in the last three years historical period. Then with the first refresh operation, a DirectQuery partition is created for changes in the future, a new import partition is created for today's rows, a historical partition is created for yesterday, a whole day period, February 1, 2021. A historical partition is created for the previous whole month period (January 2021), a historical partition is created for the previous whole year period (2020), and historical partitions for 2019 and 2018 whole year periods are created. No whole quarter partitions are created because we haven't yet completed the first full quarter of 2021.
+For example, if today's date is February 2, 2021 and our **FactInternetSales** table at the data source contains rows up through today, if our policy specifies to include real-time changes, refresh rows in the last one day refresh period, and store rows in the last three years historical period. Then with the first refresh operation, a DirectQuery partition is created for changes in the future, a new import partition is created for today's rows, a historical partition is created for yesterday, a whole day period, February 1, 2021. A historical partition is created for the previous whole month period (January 2021), a historical partition is created for the previous whole year period (2020), and historical partitions for 2019 and 2018 whole year periods are created. No whole quarter partitions are created because we haven't yet completed the first full quarter of 2021.
 
 :::image type="content" source="media/incremental-refresh-xmla/partition-naming.png" border="false" alt-text="Diagram shows the partition naming granularity described in the text.":::
 
@@ -106,7 +106,7 @@ Prior to publishing the model to the service, in Power Query Editor, add another
 
 After selecting **Close & Apply** in Power Query Editor, defining the incremental refresh policy, and saving the model, the model is published to the service. From the service, the initial refresh operation is run on the dataset. Partitions for the **FactInternetSales** table are created according to the policy, but no data is loaded and processed because all data is filtered out.
 
-After the initial refresh operation is complete, back in Power Query Editor, the other filter on the `ProductKey` column is removed. After selecting **Close & Apply** in Power Query Editor and saving the model, the model *is not published again*. If the model is published again, it overwrites the incremental refresh policy settings and forces a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, perform a [metadata only deployment](#metadata-only-deployment) by using ALM Toolkit that removes the filter on the `ProductKey` column from the *dataset*. SSMS can then be used to selectively process partitions. When all partitions have been fully processed, which must include a process recalculation on all partitions, from SSMS, subsequent refresh operations on the dataset from the service refresh only the incremental refresh partitions.
+After the initial refresh operation is complete, back in Power Query Editor, the other filter on the `ProductKey` column is removed. After selecting **Close & Apply** in Power Query Editor and saving the model, the model *is not published again*. If the model is published again, it overwrites the incremental refresh policy settings and forces a full refresh on the dataset when a subsequent refresh operation is performed from the service. Instead, perform a [metadata only deployment](#metadata-only-deployment) by using application lifecycle management (ALM) Toolkit that removes the filter on the `ProductKey` column from the *dataset*. SSMS can then be used to selectively process partitions. When all partitions have been fully processed, which must include a process recalculation on all partitions, from SSMS, subsequent refresh operations on the dataset from the service refresh only the incremental refresh partitions.
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.
@@ -117,7 +117,7 @@ To learn more about processing tables and partitions from SSMS, see [Process dat
 
 ## Custom queries for detect data changes
 
-TMSL and TOM can be used to override the detected data changes behavior. Not only can this method be used to avoid persisting the last-update column in the in-memory cache, it can enable scenarios where a configuration or instruction table is prepared by ETL processes for flagging only the partitions that need to be refreshed. This method can create a more efficient incremental refresh process where only the required periods are refreshed, no matter how long ago data updates took place.
+TMSL and TOM can be used to override the detected data changes behavior. Not only can this method be used to avoid persisting the last-update column in the in-memory cache, it can enable scenarios where a configuration or instruction table is prepared by extract, transform, and load (ETL) processes for flagging only the partitions that need to be refreshed. This method can create a more efficient incremental refresh process where only the required periods are refreshed, no matter how long ago data updates took place.
 
 The `pollingExpression` is intended to be a lightweight M expression or name of another M query. It must return a scalar value and will be executed for each partition. If the value returned is different to what it was the last time an incremental refresh occurred, the partition is flagged for full processing.
 
@@ -139,7 +139,7 @@ The following example covers all 120 months in the historical period for backdat
 
 > [!TIP]
 > Be sure to check out videos, blogs, and more provided by Power BI's community of BI experts.
-
+>
 >- [Search for **"Power BI Incremental refresh detect data changes"** on Bing](https://www.bing.com/videos/search?q=power+bi+incremental+refresh+detect+data+changes).
 
 ## Metadata only deployment
@@ -178,7 +178,7 @@ The process includes of the following steps:
 3. Define a `RefreshPolicy` object with the desired archiving (rolling window) and incremental refresh periods as well as a source expression that filters the target table based on the `RangeStart` and `RangeEnd` parameters. Set the refresh policy mode to *Import* or *Hybrid* depending on your real-time data requirements. Hybrid causes Power BI to add a DirectQuery partition to the table to fetch the latest changes from the data source that occurred after the last refresh time.
 4. Add the refresh policy to the table and perform a full refresh so that Power BI partitions the table according to your requirements.
 
-The following code sample demonstrates how to perform the previous steps by using TOM. If you want to use this sample as is, you must have a copy for the AdventureWorksDW database and import the FactInternetSales table into a dataset. The code sample assumes that the RangeStart and RangeEnd parameters and the DateKey function don't exist in the dataset. Just import the FactInternetSales table and publish the dataset to a workspace on Power BI Premium. Then update the workspaceUrl so that the code sample can connect to your dataset. Update any more code lines as necessary.
+The following code sample demonstrates how to perform the previous steps by using TOM. If you want to use this sample as is, you must have a copy for the AdventureWorksDW database and import the **FactInternetSales** table into a dataset. The code sample assumes that the `RangeStart` and `RangeEnd` parameters and the `DateKey` function don't exist in the dataset. Just import the **FactInternetSales** table and publish the dataset to a workspace on Power BI Premium. Then update the `workspaceUrl` so that the code sample can connect to your dataset. Update any more code lines as necessary.
 
 ```csharp
 using System;
