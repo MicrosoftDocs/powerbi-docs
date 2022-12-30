@@ -1,6 +1,6 @@
 ---
 title: Power BI visual data point selections
-description: This article describes how to use the selection manager to add data point selections to Power BI visuals.
+description: Learn how to use the selection manager to add data point selections to Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: rkarlin
@@ -77,7 +77,7 @@ This object has corresponding methods to create `selections` for different types
 
 > [!NOTE]
 > The methods `withTable` and `withMatrixNode` were introduced on API 2.5.0 of the Power BI visuals.
-> If you need to use selections for table or matrix data view mappings you need to update API version to 2.5.0 or higher.
+> If you need to use selections for table or matrix data view mappings, update to API version 2.5.0 or higher.
 
 ### Create selections for categorical data view mapping
 
@@ -159,9 +159,9 @@ The visual uses the following data view mapping:
 
 In the preceding example, `Manufacturer` is `columns` and `Type` is `rows`. A series is created by grouping values by `rows` (`Type`).
 
-The visual should able to slice data by `Manufacturer` or `Type`.
+The visual should be able to slice data by `Manufacturer` or `Type`.
 
-For example, if a user selects `Chrysler` by `Manufacturer`, other visuals should show following data:
+For example, if a user selects `Chrysler` by `Manufacturer`, other visuals should show the following data:
 
 | Manufacturer | Type | Value |
 | - | - | - |
@@ -170,7 +170,7 @@ For example, if a user selects `Chrysler` by `Manufacturer`, other visuals shoul
 | **Chrysler** | Import Car | 0 |
 | **Chrysler** | Import Truck | 6362 |
 
-When the user selects `Import Car` by  `Type` (selects data by series), the other visuals should show following data:
+When the user selects `Import Car` by  `Type` (selects data by series), the other visuals should show the following data:
 
 | Manufacturer | Type | Value |
 | - | - | - |
@@ -353,7 +353,7 @@ button.addEventListener("click", () => {
 });
 ```
 
-The interface of the `select` method is
+The interface of the `select` method:
 
 ```typescript
 interface ISelectionManager {
