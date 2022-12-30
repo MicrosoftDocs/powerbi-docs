@@ -27,7 +27,7 @@ The following table describes differences between an on-premises data gateway an
 |   |On-premises data gateway | On-premises data gateway (personal mode) |
 | ---- | ---- | ---- |
 |**Supports cloud services:** |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows | None |
-|**Runs under credentials:** |As configured by users who have access to the gateway |As you for Windows authentication, or as you configure for other authentication types |
+|**Runs under credentials:** |As configured by users who have access to the gateway |Your credentials for Windows authentication, or credentials you configure for other authentication types |
 |**Can install only as computer admin** |Yes |No |
 |**Centralized gateway and data source management** |Yes |No |
 |**Can import data and schedule refresh** |Yes |Yes |
@@ -60,7 +60,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
 
 1. Use Windows File Explorer to open the file *\<localappdata>\\Microsoft\\On-premises data gateway (personal mode)\\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
 
-2. At the end of the file, before `</Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.GatewayCoreSettings>` add the following code, and then save the file.
+2. At the end of the file, before `</Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.GatewayCoreSettings>`, add the following code, and then save the file.
 
     ```xml
     <setting name="EnableFastCombine" serializeAs="String">
@@ -72,29 +72,31 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
 
 ## Frequently asked questions (FAQ)
 
-**Question:** Can you run the on-premises data gateway (personal mode) side-by-side with the on-premises data gateway version that used to be called the Enterprise gateway?
+- **Question:** Can you run the on-premises data gateway (personal mode) side-by-side with the on-premises data gateway that used to be called the Enterprise gateway?
   
-**Answer:** Yes, both gateways can run simultaneously.
+  **Answer:** Yes, both gateways can run simultaneously.
 
-**Question:** Can you run the on-premises data gateway (personal mode) as a service?
+- **Question:** Can you run the on-premises data gateway (personal mode) as a service?
   
-**Answer:** No. The on-premises data gateway (personal mode) can run only as an application. To run a gateway as a service or in admin mode, use the [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) version that used to be called the Enterprise gateway.
+  **Answer:** No. The on-premises data gateway (personal mode) can run only as an application. To run a gateway as a service or in admin mode, use the [on-premises data gateway](/data-integration/gateway/service-gateway-onprem), which used to be called the Enterprise gateway.
 
-**Question:** How often does the on-premises data gateway (personal mode) update?
+- **Question:** How often does the on-premises data gateway (personal mode) update?
   
-**Answer:** The personal gateway updates monthly.
+  **Answer:** The personal gateway updates monthly.
 
-**Question:** Why does the personal gateway ask you to update your credentials?
+- **Question:** Why does the personal gateway ask you to update your credentials?
   
-**Answer:** Many situations can trigger a request for credentials. The most common scenario is that you reinstalled the on-premises data gateway (personal mode) on a different machine than your original Power BI personal gateway. There could also be an issue in the data source, or Power BI failed to make a test connection, or a timeout or system error occurred. To update your credentials in the Power BI service, select the gear icon in the header, select **Settings**, and then choose **Datasets**. Select the dataset you want, and then choose **Data source credentials**.
+  **Answer:** Many situations can trigger a request for credentials. The most common scenario is that you reinstalled the on-premises data gateway (personal mode) on a different machine than your original Power BI personal gateway. There could also be an issue in the data source, or Power BI failed to make a test connection, or a timeout or system error occurred.
+  
+  To update your credentials in the Power BI service, select the gear icon in the header and then choose **Settings**. On the **Datasets** tab, select the dataset, and then choose **Data source credentials**.
 
-**Question:** How long is a personal gateway offline during an upgrade?
+- **Question:** How long is a personal gateway offline during an upgrade?
   
-**Answer:** Upgrading the personal gateway to a new version takes only few minutes.
+  **Answer:** Upgrading the personal gateway to a new version takes only few minutes.
 
-**Question:** Does the personal gateway support R and Python scripts?
+- **Question:** Does the personal gateway support R and Python scripts?
   
-**Answer:** Yes, personal mode supports R and Python scripts.​
+  **Answer:** Yes, personal mode supports R and Python scripts.​
 
 ## Next steps
 
