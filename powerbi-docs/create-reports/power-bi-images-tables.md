@@ -60,7 +60,7 @@ Your organization may not allow displaying images stored on OneDrive for Busines
 ## Considerations
 
 - The image needs to be in one of these file formats: .bmp, .jpg, .jpeg, .gif, .png, or .svg
-- The URL needs to be anonymously accessible, not on a site that requires a sign-in, such as SharePoint. However, if images are hosted on SharePoint or OneDrive, you may be able to get an embed code that points directly to them.
+- The URL needs to be anonymously accessible, not on a site that requires a sign-in, such as SharePoint. However, if images are hosted on SharePoint or OneDrive, you might be able to get an embed code that points directly to them.
 
 ## Next steps
 
