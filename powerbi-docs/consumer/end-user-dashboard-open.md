@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/29/2022
+ms.date: 12/30/2022
 LocalizationGroup: Dashboards
 ms.custom:  
 ---
@@ -37,9 +37,7 @@ If that workspace contains a dashboard, you'll see the following icon.
 
 Once you've identified a dashboard, open it by selecting it and the dashboard will fill your Power BI canvas.
 
-You can find dashboards in all of the containers in the nav pane. 
-
-![Animation showing all the locations where dashboards can be found.](media/end-user-dashboard-open/power-bi-open-dashboard.gif)
+On the navigation pane, you can find dashboards in:
 
 - **Home** 
 - **Browse**
