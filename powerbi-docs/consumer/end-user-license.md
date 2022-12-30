@@ -45,7 +45,7 @@ Within those workspaces, designers assign roles, like **Viewer**, **Contributor*
 
 When a designer creates and publishes an app, they grant access to individuals or entire organizations. The extent to which you can interact with the app's content depends on the specific access permissions given to you. For example, you might be given access to view the app, connect to the underlying datasets, make copies of reports, or share the content.
 
-For more information about Premium capacity, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+For more info about Premium capacity, see [What is Microsoft Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md).
 
 ## Find out which licenses you have
 

@@ -238,7 +238,7 @@ The following table compares the standard features available to all Power BI use
 In services or applications where ArcGIS Map for Power BI is not available, the visualization will show as an empty visual with the Power BI logo.
 
 **I'm not seeing all of my information on the map**    
-When geocoding latitude/longitude on the map, up to 30,000 data points are displayed. When geocoding data points such as zip codes or street addresses, only the first 15,000 data points are geocoded. Geocoding place names or countries is not subject to the 15,000 address limit.
+When geocoding latitude/longitude on the map, up to 30,000 data points are displayed. When geocoding data points such as zip codes or street addresses, only the first 15,000 data points are geocoded. Geocoding place names or countries/regions is not subject to the 15,000 address limit.
 
 **Is there any charge for using ArcGIS Map for Power BI?**
 

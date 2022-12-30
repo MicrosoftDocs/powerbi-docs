@@ -7,14 +7,17 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/14/2020
+ms.date: 12/14/2022
 ---
 
 # Color utils
+
 This article will help you to install, import, and use color utils. This article describes how to use color utils simplify applying of themes and palettes on visual's data points on Power BI visuals.
 
-## Requirements
+## Prerequisites
+
 To use the package, you should have the following things:
+
 * [node.js](https://nodejs.org) (we recommend the latest LTS version)
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
 * The custom visual created by [`PowerBI-visuals-tools`](https://www.npmjs.com/package/powerbi-visuals-tools)
@@ -32,6 +35,7 @@ This command installs the package and adds a package as a dependency to your `pa
 ## Usage
 
 To user interactivity utils, you have to import the required component in the source code of the visual.
+
 ```typescript
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
 ```
@@ -42,18 +46,24 @@ Learn how to install and use the ColorUtils in your Power BI visuals:
 The Usage Guide describes a public API of the package. You will find a description and a few examples for each public interface of the package.
 
 This package contains the following classes and modules:
+
 * [ColorHelper](#colorhelper) - helps to generate different colors for your chart values
 * [colorUtils](#colorutils) - helps to convert color formats
 
-## `ColorHelper`
+## ColorHelper
+
 The `ColorHelper` class provides the following functions and methods:
 
-### `getColorForSeriesValue` 
+### getColorForSeriesValue
+
 This method gets the color for the given series value. If no explicit color or default color has been set, then the color is allocated from the color scale for this series.
+
 ```typescript
 getColorForSeriesValue(objects: IDataViewObjects, value: PrimitiveValue, themeColorName?: ThemeColorName): string;
 ```
-#### Example
+
+#### getColorForSeriesValue example
+
 ```typescript
 import powerbi from "powerbi-visuals-api";
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -101,12 +111,16 @@ export class YourVisual implements IVisual {
 }
 ```
 
-### `getColorForMeasure`
+### getColorForMeasure
+
 This method gets the color for the given measure.
+
 ```typescript
  getColorForMeasure(objects: IDataViewObjects, measureKey: any, themeColorName?: ThemeColorName): string;
 ```
-#### Example
+
+#### Get color for measure example
+
 ```typescript
 import powerbi from "powerbi-visuals-api";
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -146,11 +160,15 @@ export class YourVisual implements IVisual {
 ```
 
 ### static `normalizeSelector`
+
 This method returns the normalized selector
+
 ```typescript
 static normalizeSelector(selector: Selector, isSingleSeries?: boolean): Selector;
 ```
-#### Example
+
+#### static normalizeSelector example
+
 ```typescript
 import ISelectionId = powerbi.visuals.ISelectionId;
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -163,16 +181,21 @@ Methods `getThemeColor` and `getHighContrastColor` are both related to color the
 Also `ColorHelper` has `isHighContrast` property that should be useful for check.
 
 ### `getThemeColor`
+
 This method returns theme color
 ```typescript
  getThemeColor(themeColorName?: ThemeColorName): string;
 ```
+
 ### `getHighContrastColor`
+
  This  method return color for high contrast mode
 ```typescript
 getHighContrastColor(themeColorName?: ThemeColorName, defaultColor?: string): string;
 ```
+
 #### Example related to high contrast mode usage:
+
 ```typescript
 
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -202,8 +225,8 @@ export class MyVisual implements IVisual {
 }
 ```
 
-
 ## `ColorUtils`
+
  The module provides the following functions:
 
 * [hexToRGBString](#hextorgbstring)
@@ -217,13 +240,14 @@ export class MyVisual implements IVisual {
 * [hexBlend](#hexblend)
 
 ### hexToRGBString
+
 Converts hex color to RGB string.
 
 ```typescript
 function hexToRGBString(hex: string, transparency?: number): string
 ```
 
-#### Example
+#### hexToRGBString example
 
 ```typescript
 import  { hexToRGBString } from "powerbi-visuals-utils-colorutils";
@@ -234,13 +258,14 @@ hexToRGBString('#112233');
 ```
 
 ### rotate
+
 Rotates RGB color.
 
 ```typescript
 function rotate(rgbString: string, rotateFactor: number): string
 ```
 
-#### Example
+#### rotate example
 
 ```typescript
 import { rotate } from "powerbi-visuals-utils-colorutils";
@@ -249,13 +274,14 @@ rotate("#CC0000", 0.25); // returns: #66CC00
 ```
 
 ### parseColorString
+
 Parses any color string to RGB format.
 
 ```typescript
 function parseColorString(color: string): RgbColor
 ```
 
-#### Example
+#### parseColorString example
 
 ```typescript
 import { parseColorString } from "powerbi-visuals-utils-colorutils";
@@ -268,13 +294,14 @@ parseColorString('rgba(1, 2, 3, 1.0)');
 ```
 
 ### calculateHighlightColor
+
 Calculate the highlight color from the rgbColor based on the lumianceThreshold and delta.
 
 ```typescript
 function calculateHighlightColor(rgbColor: RgbColor, lumianceThreshold: number, delta: number): string
 ```
 
-#### Example
+#### calculateHighlightColor example
 
 ```typescript
 import { calculateHighlightColor } from "powerbi-visuals-utils-colorutils";
@@ -288,13 +315,14 @@ calculateHighlightColor(yellowRGB, 0.8, 0.2);
 ```
 
 ### createLinearColorScale
+
 Returns a linear color scale for given domain of numbers.
 
 ```typescript
 function createLinearColorScale(domain: number[], range: string[], clamp: boolean): LinearColorScale
 ```
 
-#### Example
+#### createLinearColorScale example
 
 ```typescript
 import { createLinearColorScale } from "powerbi-visuals-utils-colorutils";
@@ -309,6 +337,7 @@ scale(10); // returns: yellow
 ```
 
 ### shadeColor
+
 Converts string hex expression to number, calculate percentage and R, G, B channels.
 Applies percentage for each channel and returns back hex value as string with pound sign.
 
@@ -316,7 +345,7 @@ Applies percentage for each channel and returns back hex value as string with po
 function shadeColor(color: string, percent: number): string
 ```
 
-#### Example
+#### shadeColor example
 
 ```typescript
 import { shadeColor } from "powerbi-visuals-utils-colorutils";
@@ -328,13 +357,14 @@ shadeColor('#00B8AA', 0); // returns '#00b8aa'
 ```
 
 ### rgbBlend
+
 Overlays a color with opacity over a background color. Any alpha-channel is ignored.
 
 ```typescript
 function rgbBlend(foreColor: RgbColor, opacity: number, backColor: RgbColor): RgbColor
 ```
 
-#### Example
+#### rgbBlend example
 
 ```typescript
 import { rgbBlend} from "powerbi-visuals-utils-colorutils";
@@ -345,13 +375,14 @@ rgbBlend({R: 100, G: 100, B: 100}, 0.5, {R: 200, G: 200, B: 200});
 ```
 
 ### channelBlend
+
 Blends a single channel for two colors.
 
 ```typescript
 function channelBlend(foreChannel: number, opacity: number, backChannel: number): number
 ```
 
-#### Example
+#### channelBlend example
 
 ```typescript
 import { channelBlend} from "powerbi-visuals-utils-colorutils";
@@ -363,13 +394,14 @@ channelBlend(88, 0, 88); // returns: 88
 ```
 
 ### hexBlend
+
 Overlays a color with opacity over a background color.
 
 ```typescript
 function hexBlend(foreColor: string, opacity: number, backColor: string): string
 ```
 
-#### Example
+#### hexBlend example
 
 ```typescript
 import { hexBlend} from "powerbi-visuals-utils-colorutils";

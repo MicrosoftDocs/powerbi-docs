@@ -98,7 +98,7 @@ Data refresh is a super important part of Power BI, and much too deep to cover h
 ## Considerations and limitations
 For all data sources used in the Power BI service, consider the following limitations. There are other limitations that apply to specific features, but the following list applies to the full Power BI service:
 
-* **Dataset size limit** - There's a 1-GB limit for datasets stored in Shared capacities in the Power BI service. If you need larger datasets, you can use [Power BI Premium](../enterprise/service-premium-what-is.md).
+* **Dataset size limit** - There's a 1-GB limit for datasets stored in Shared capacities in the Power BI service. If you need larger datasets, you can use [Power BI Premium](../enterprise/service-premium-gen2-what-is.md).
 
 * **Distinct values in a column** - When caching data in a Power BI dataset (sometimes called 'Import' mode), there is a 1,999,999,997  limit on the number of distinct values that can be stored in a column.
 
