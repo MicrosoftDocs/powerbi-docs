@@ -15,18 +15,18 @@ LocalizationGroup: Administration
 
 Microsoft Intune enables organizations to manage devices and applications. The Power BI mobile applications for iOS and Android integrate with Intune. This integration enables you to manage the application on your devices, and to control security. Through configuration policies, you can control items like requiring an access pin, how data is handled by the application, and even encrypting application data when the app isn't in use.
 
-The Microsoft Power BI mobile app allows you to get access to your important business information. You can view and interact with your dashboards and reports for all your organization's managed device and app business data. For more information about supported Intune apps, see [Microsoft Intune protected apps](/intune/apps/apps-supported-intune-apps).
+The Microsoft Power BI mobile app allows you to get access to your important business information. You can view and interact with your dashboards and reports for all your organization's managed devices and app business data. For more information about supported Intune apps, see [Microsoft Intune protected apps](/intune/apps/apps-supported-intune-apps).
 
 ## General mobile device management configuration
 
 This article assumes that Intune is configured properly and you have devices enrolled with Intune. This article isn't meant as a full configuration guide for Intune. For more information, see [Microsoft Intune securely manages identities, manages apps, and manages devices](/intune/fundamentals/what-is-intune).
 
-Microsoft Intune can co-exist with Device Management in the Microsoft 365 dashboard. If you're using Device Management, the device will show as enrolled, and it is available to manage in Intune.
+Microsoft Intune can co-exist with Device Management in the Microsoft 365 dashboard. If you're using Device Management, the device will show as enrolled, and it's available to manage in Intune.
 
 Before end users can get to the Power BI app on their devices, an Intune admin must add the app to Intune and assign the app to end users.
 
 > [!NOTE]
-> After you configure Intune, background data refresh is turned off for the Power BI mobile app on your iOS or Android device. Power BI refreshes the data from the Power BI service on the web when you enter the app.
+> After you configure Intune, background data refresh is turned off for the Power BI mobile app on your iOS or Android device. Power BI refreshes the data from the Power BI service on the web when you open the app.
 
 ## Add the Power BI app to Intune
 
@@ -51,7 +51,7 @@ To create and assign an app protection policy for the Power BI app, follow the s
 
 ## Step 4: Use the application on a device
 
-Managed apps are apps that your company's support can set up to help protect company data that you can access from the app. When you access company data in a managed app on your device, you might notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
+Managed apps are apps that your company's support team can set up to help protect company data that you can access from the app. When you access company data in a managed app on your device, you might notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
 
 To understand how your end users can use the Power BI app on their device, review the steps in the following articles:
 
