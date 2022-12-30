@@ -1,6 +1,6 @@
 ---
 title: Add tooltips to Power BI custom visuals
-description: Learn how to configure simple or modern tooltips in Power BI custom visuals that will provide more detail to a user.
+description: Learn how to configure simple or modern tooltips in Power BI custom visuals that provide more details to users.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -24,7 +24,7 @@ You can change the style of your tooltips or add drilling actions by enabling th
 
 The following image shows a tooltip in a sample bar chart:
 
-:::image type="content" source="media/add-tooltips/tooltips-in-samplebarchart.png" alt-text="Screenshot that shows sample bar chart tooltip.":::
+:::image type="content" source="media/add-tooltips/tooltips-in-samplebarchart.png" alt-text="Screenshot that shows sample bar chart tooltips.":::
 
 The above tooltip image illustrates a single bar category and value. You can extend the tooltip to display multiple values.
 
