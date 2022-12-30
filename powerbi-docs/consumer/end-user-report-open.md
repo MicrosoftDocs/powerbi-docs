@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/03/2022
+ms.date: 12/30/2022
 #This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
 # View a report in the Power BI service for business users
@@ -39,7 +39,7 @@ Power BI designers can share a report with you by sending an email link or by ad
 
 4. Notice the tabs along the left side. Each tab represents a report page. Select the **YTD Category** tab to open the **YTD Category Trend Analysis** page.
 
-   ![Screenshot showing the YTD Category Trend Analysis page open.](./media/end-user-report-open/power-bi-report-open.png)
+   :::image type="content" source="./media/end-user-report-open/power-bi-report-open.png" alt-text="Screenshot showing the YTD Category Trend Analysis page open." lightbox="./media/end-user-report-open/power-bi-report-open.png":::
 
 5. Expand the **Filters** pane along the right side. Filters that are applied to this report page, or to the entire report, are displayed here. You can change these filters to see the impact on your visuals and report.
 
@@ -47,15 +47,15 @@ Power BI designers can share a report with you by sending an email link or by ad
 
 6. Hover over a visual to show the actions you can perform. To see the filters applied to a specific visual, select the filter icon.
 
-   ![Screenshot showing filters for the selected visual.](./media/end-user-report-open/power-bi-visual-filters.png)
+   :::image type="content" source="./media/end-user-report-open/power-bi-visual-filters.png" alt-text="Screenshot showing filters for the selected visual.":::
 
 7. You can also change the display (zoom) of the report page. On the action bar, select the **View** icon, and then select **Actual size**. Notice the difference that view option makes in how Power BI displays your report.
 
-   ![Screenshot showing the Actual size view.](./media/end-user-report-open/power-bi-view-actual.png)
+   :::image type="content" source="./media/end-user-report-open/power-bi-view-actual.png" alt-text="Screenshot showing the Actual size view.":::
 
 8. On the action bar, select the **View** icon, and then select **Fit to width**. Notice the difference that view option makes in how Power BI displays your report.
 
-   ![Screenshot showing the Fit to width view.](./media/end-user-report-open/power-bi-width.png)
+   :::image type="content" source="./media/end-user-report-open/power-bi-width.png" alt-text="Screenshot showing the Fit to width view.":::
 
 There are many ways for you to interact with a report to discover insights and make business decisions. Other articles about Power BI reports are available in the table of contents on this page.
 
@@ -75,7 +75,7 @@ You can follow along in this tutorial with Microsoft sample content by using a f
 
 5. Scroll down and select **My Apps**.
 
-   ![Screenshot shows the My apps section of Power BI Home.](./media/end-user-report-open/power-bi-apps-new.png)
+   :::image type="content" source="./media/end-user-report-open/power-bi-apps-new.png" alt-text="Screenshot shows the My apps section of Power BI Home.":::
 
 6. Select your new **Sales and Marketing** app to open it. Depending on the options set by the app designer, the app opens to a dashboard or a report. This app opens to a dashboard.  
 
@@ -83,13 +83,13 @@ You can follow along in this tutorial with Microsoft sample content by using a f
 
 Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a tile opens the report that was used to create the tile.
 
-1. From the **Sales and Marketing** dashboard, select the *Total Units YTD Var %* column chart tile.
+1. From the **Sales and Marketing** dashboard, select the *Total Units YTD Variance %* column chart tile.
 
-    ![Screenshot showing a dashboard and a tile is selected.](./media/end-user-report-open/power-bi-dashboards.png)
+    :::image type="content" source="./media/end-user-report-open/power-bi-dashboards.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
 
 2. The associated report opens to the *YTD Category Trend Analysis* page because this is where the chart is located in the report.
 
-    ![Screenshot showing the YTD Category Trend Analysis page.](./media/end-user-report-open/power-bi-report-tab.png)
+    :::image type="content" source="./media/end-user-report-open/power-bi-report-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
 
 > [!NOTE]
 > Not all tiles lead to a report.
