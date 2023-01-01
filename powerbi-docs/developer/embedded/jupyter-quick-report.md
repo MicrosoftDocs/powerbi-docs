@@ -42,7 +42,7 @@ df = pd.read_csv('Financial Sample.csv')
 # Perform preprocessing
 df = df.drop(['Month Number', 'Month Name', 'Year'], axis=1)
 df = df.loc[df['Units Sold'] > 1000]
-df['Discounted'] = df['Discount Band'] != ' None '
+df['Discounted'] = df['Discount Band'] != 'None'
 ```
 
 ## Authenticate to Power BI
@@ -63,10 +63,10 @@ Create a `QuickVisualize` instance from the [DataFrame you created](#create-a-pa
 
 ```python
 # Create a Power BI report from your data
-qv_report = QuickVisualize(get_dataset_config(df), device_auth=auth)
+PBI_visualize = QuickVisualize(get_dataset_config(df), auth=device_auth)
 
-# Render report
-qv_report
+# Render new report
+PBI_visualize
 ```
 
 :::image type="content" source="./media/jupyter-quick-report/render-visual.png" alt-text="Screenshot of visuals rendered in Jupyter notebook.":::
@@ -81,10 +81,10 @@ Once you created the report, you can customize it to get the most valuable insig
 
   ```python
   # Set new width and height for the container
-  qv_report.set_size(350, 600)
+  PBI_visualize.set_size(400, 600)
   ```
 
-  :::image type="content" source="./media/jupyter-quick-report/set-container-size.png" alt-text="Screenshot of rendered visuals with command setting size of the container to 350 by 600.":::
+  :::image type="content" source="./media/jupyter-quick-report/update-visual.gif" alt-text="Gif showing how to render a new report.":::
 
 For a demo Jupyter notebook, see the [GitHub repository](https://github.com/microsoft/powerbi-jupyter/).
 
