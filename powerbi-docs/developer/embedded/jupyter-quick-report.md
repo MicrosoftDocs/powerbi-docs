@@ -90,5 +90,7 @@ For a demo Jupyter notebook, see the [GitHub repository](https://github.com/micr
 
 ## Next steps
 
-[Learn more about developing in Jupyter notebook](/javascript/api/overview/powerbi/powerbi-jupyter)
-[Quick create demo Jupyter notebook GitHub repository](https://github.com/microsoft/powerbi-jupyter/)
+* [Learn more about developing in Jupyter notebook](/javascript/api/overview/powerbi/powerbi-jupyter)
+* [Quick create demo Jupyter notebook GitHub repository](https://github.com/microsoft/powerbi-jupyter/)
+
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
