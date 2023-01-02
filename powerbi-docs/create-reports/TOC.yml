@@ -563,7 +563,7 @@
     - name: "Deployment history"
       href: deployment-pipelines-history.md  
     - name: "Create deployment pipeline rules"
-      href: deployment-pipelines-create-riles.md                      
+      href: deployment-pipelines-create-rules.md                      
     - name: "Automate deployment pipelines"
       href: deployment-pipelines-automation.md         
     - name: "Best practices"
