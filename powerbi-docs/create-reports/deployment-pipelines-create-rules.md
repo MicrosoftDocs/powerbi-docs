@@ -1,5 +1,5 @@
 ---
-title: Power BI Application lifecycle management (ALM) create deployment rules
+title: Create deployment rules Power BI Application lifecycle management (ALM)
 description: Learn how to create rules simplify deploying content with the Power BI Application lifecycle management (ALM) tool
 author: mberdugo
 ms.author: monaberdugo
@@ -14,7 +14,7 @@ ms.date: 07/31/2022
 
 When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
-When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
+When you deploy content between pipeline stages, you can configure deployment rules to change the content while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database instead of one in the test stage, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
 You can configure data source rules and parameter rules. The following table lists the type of Power BI items you can configure rules for, and the type of rule you can configure for each one.
 
@@ -30,7 +30,7 @@ You can configure data source rules and parameter rules. The following table lis
 
 ## Create a deployment rule
 
-To create a deployment rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
+To create a deployment rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules won't apply until you deploy the datasets from the source to the target stage.
 
 1. In the pipeline stage you want to create a deployment rule for, select **Deployment rules**.
 
@@ -42,11 +42,11 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 3. Select the dataflow, dataset, datamart or paginated report you want to create a rule for.
 
-    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules-selection.png" alt-text="A screenshot of the deployment rules pane, showing two datasets in the datasets tab. To configure a rule select an item from one of the tabs.":::
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules-selection.png" alt-text="A screenshot of the deployment rules pane, showing two datasets in the datasets tab. To configure a rule, select an item from one of the tabs.":::
 
 4. Select the type of rule you want to create, expand the list, and then select **Add rule**. There are two types of rules you can create:
 
-    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rule-types.png" alt-text="A screenshot of the deployment rules pane, showing a selected dataset and the two rule types, data source and parameter, you can configure for it.":::
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-rule-types.png" alt-text="A screenshot of the deployment rules pane. It shows a selected dataset and the two rule types, data source and parameter, you can configure for it.":::
 
     * **Data source rules**
 
@@ -66,7 +66,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 ## Supported data sources for dataflow and dataset rules
 
-Data source rules can only be defined for the following data sources:
+Data source rules can be defined for the following data sources:
 
 * Azure Analysis Services
 
@@ -82,7 +82,7 @@ Data source rules can only be defined for the following data sources:
 
 * Oracle
 
-* SapHana (only supported for import mode; not direct query mode)
+* SapHana (import mode only; not direct query mode)
 
 * SharePoint
 
@@ -96,23 +96,23 @@ This section lists the limitations for the deployment rules.
 
 * To create a deployment rule, you must be the owner of the dataflow, dataset or paginated report you're creating a rule for.
 
-* Deployment rules cannot be created in the development stage.
+* Deployment rules can't be created in the development stage.
 
-* When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
+* When an item is removed or deleted, its rules are deleted too. These rules can't be restored.
 
-* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are not kept. To use these rules, you'll need to reconfigure them.
+* When you unassign and reassign a workspace to [reestablish connections](deployment-pipelines-troubleshooting.yml#how-do-i-reestablish-connections-after-deployment-), rules for that workspace are lost. To use these rules again, reconfigure them.
 
-* Rules for dataflows that have other dataflows as sources, are not supported.
+* Rules for dataflows that have other dataflows as sources, aren't supported.
 
-* Data source rules for common data model (CDM) folders in a dataflow, are not supported.
+* Data source rules for common data model (CDM) folders in a dataflow, aren't supported.
 
-* Rules for datasets that use dataflows as their source, are not supported.
+* Rules for datasets that use dataflows as their source, aren't supported.
 
-* If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
+* If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule won't be valid anymore, and deployment will fail.
 
-* If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
+* If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule won't be valid anymore, and the deployment will fail.
 
-* After you deploy a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
+* After you deploy a paginated report with a data source rule, you can't open the report using [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 >[!NOTE]
 >Parameter rules aren't supported for paginated reports.
