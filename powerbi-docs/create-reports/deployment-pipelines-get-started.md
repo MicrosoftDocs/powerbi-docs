@@ -89,15 +89,7 @@ Deployment pipelines offer three options when it comes to deploying your Power B
 
 After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](deployment-pipelines-deploy.md#review-your-deployment-and-leave-a-note).
 
-## Step 4 - Create deployment rules(optional)
-
-When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
-
-When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
-
-[Read about how to define deployment rules.](deployment-pipelines-create-rules.md)
-
-## Step 5 - Deploy content from one stage to another
+## Step 4 - Deploy content from one stage to another
 
 Once you have content in a pipeline stage, you can deploy it to the next stage. Deploying content to another stage is usually done after you've performed some actions in the pipeline. For example, made development changes to your content in the development stage, or tested your content in the test stage. A typical workflow for moving content from stage to stage, is development to test, and then test to production. You can learn more about this process, in the [deploy content to an existing workspace](deployment-pipelines-process.md#deploy-content-to-an-existing-workspace) section.
 
@@ -106,6 +98,14 @@ To deploy content to the next stage in the deployment pipeline, select the deplo
 When reviewing the test and production stage cards, you can see the last deployment time. This indicates the last time content was deployed to the stage.
 
 Deployment time is useful for establishing when a stage was last updated. It can also be helpful if you want to track time between test and production deployments.
+
+## Step 5 - Create deployment rules (optional)
+
+When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
+
+When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
+
+[Read about how to define deployment rules.](deployment-pipelines-create-rules.md)
 
 ## Compare stages
 
@@ -143,14 +143,6 @@ The comparison is designed to help you understand the difference between the sta
 3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
 
 :::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
-
-## Overriding content
-
-When you change content in the source stage and then deploy to the target stage, those items are overwritten in the target stage. After you select *deploy*, you'll get a warning listing the number of items that will be overwritten.
-
-:::image type="content" source="media/deployment-pipelines-get-started/replaced-content.png" alt-text="A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.":::
-
-You can learn more about [which items are copied to the next stage](deployment-pipelines-process.md#deployed-items), and [which items are not copied](deployment-pipelines-process.md#unsupported-items), in [Understand the deployment process](deployment-pipelines-process.md).
 
 ## Next steps
 

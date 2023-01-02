@@ -48,6 +48,14 @@ Deployment pipelines is designed as a pipeline with three stages:
 
 :::image type="content" source="media/deployment-pipelines-overview/full-pipeline.gif" alt-text="A screenshot of a working deployment pipeline with all three stages, development, test and production, populated.":::
 
+## Deployment method
+
+When deploy content from the source stage to a target stage, any content that has the same name is overwritten in the target stage. Content in the target stage that doesn't exist in the source stage remains in the taget stage as is. After you select *deploy*, you'll get a warning listing the number of items that will be overwritten.
+
+:::image type="content" source="media/deployment-pipelines-get-started/replaced-content.png" alt-text="A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.":::
+
+You can learn more about [which items are copied to the next stage](deployment-pipelines-process.md#deployed-items), and [which items are not copied](deployment-pipelines-process.md#unsupported-items), in [Understand the deployment process](deployment-pipelines-process.md).
+
 ## Next steps
 
 >[!div class="nextstepaction"]

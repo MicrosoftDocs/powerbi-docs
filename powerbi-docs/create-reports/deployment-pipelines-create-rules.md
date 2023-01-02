@@ -108,11 +108,11 @@ This section lists the limitations for the deployment rules.
 
 * Rules for datasets that use dataflows as their source, aren't supported.
 
-* If the data source defined in a rule is changed or removed from the item it points to in the source stage, the rule won't be valid anymore, and deployment will fail.
-
-* If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule won't be valid anymore, and the deployment will fail.
+* If the data source or parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule won't be valid anymore, and deployment will fail.
 
 * After you deploy a paginated report with a data source rule, you can't open the report using [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
+
+* Even though the deployment rules only take effect the next time you deploy to that stage, if you compare the stages before you deploy, the comparison is 
 
 >[!NOTE]
 >Parameter rules aren't supported for paginated reports.

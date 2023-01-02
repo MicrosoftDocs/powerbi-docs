@@ -131,7 +131,7 @@ A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.
 
 ## Deployed items
 
-When you deploy content from one pipeline stage to another, the copied content contains the following Power BI items:
+When you deploy content from one pipeline stage to another, the copied content can contain the following Power BI items:
 
 * Datasets
 
