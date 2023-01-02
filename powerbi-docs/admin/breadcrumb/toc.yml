@@ -1,3 +1,6 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
 - name: Learn
   tocHref: /
   topicHref: /
@@ -12,4 +15,7 @@
       items:
       - name: Administration
         tocHref: /power-bi/admin/
+        topicHref: /power-bi/admin/index
+      - name: Administration
+        tocHref: /power-bi/consumer/mobile/
         topicHref: /power-bi/admin/index
