@@ -68,7 +68,7 @@ To create a deployment rule, follow the steps in this section. After you create 
 
 Data source rules can be defined for the following data sources:
 
-* Azure Analysis Services
+* Azure Analysis Services (AAS)
 
 * Azure Synapse
 
