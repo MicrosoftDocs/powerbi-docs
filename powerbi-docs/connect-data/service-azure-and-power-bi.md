@@ -41,7 +41,7 @@ For more information, take a look at the following resources:
 * [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
 * [Azure Storage](https://azure.microsoft.com/services/storage/) (Blob storage and Table storage)
 
-And for more information about Azure resources available in Power BI, see the **Azure data sources** section in [data sources in Power BI Desktop](desktop-data-sources.md).
+And for more information about Azure resources available in Power BI, see [Azure data sources](desktop-data-sources.md#azure-data-sources).
 
 ## Get complex (and ahead) using Azure services and Power BI
 
@@ -63,4 +63,4 @@ Embed stunning, interactive data visualizations in applications, websites, porta
 
 ## What could you do with Azure and Power BI?
 
-There are all sorts of scenarios where **Azure** and **Power BI** can be combined. The possibilities and opportunities are as unique as your business. For more information about **Azure services**, check out this [overview page](/azure/machine-learning/team-data-science-process/plan-your-environment), which describes **Data Analytics Scenarios using Azure**, and learn how to transform your data sources into intelligence that drives your business ahead.
+There are all sorts of scenarios where Azure and Power BI can be combined. The possibilities and opportunities are as unique as your business. For more information about Azure services, check out this [overview page](/azure/machine-learning/team-data-science-process/plan-your-environment), which describes Data Analytics Scenarios using Azure, and learn how to transform your data sources into intelligence that drives your business ahead.
