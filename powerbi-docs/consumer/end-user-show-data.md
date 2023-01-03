@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/30/2022
+ms.date: 01/03/2022
 LocalizationGroup: Visualizations
 ---
 # Show data with Power BI reports
@@ -20,7 +20,7 @@ A Power BI visual is constructed using data from underlying datasets. If you're 
 
 You can also [export the data to Excel](/power-bi/visuals/power-bi-visualization-export-data) for visuals in a report and visuals on a dashboard.   
 
-## Show the data being used to create a report visual
+## Show the data that creates a report visual
 1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
 2. To show the data behind the visual, select **More options** (...) and choose **Show as a table**.
    
