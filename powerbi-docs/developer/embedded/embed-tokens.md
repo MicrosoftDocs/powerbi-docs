@@ -33,6 +33,8 @@ For both *embed for your customers* and *embed for your organization* solutions,
 
 You can acquire an Azure AD token in one of the following ways:
 
+* Use the external [Postman](https://www.postman.com/) tool to acquire a token.
+
 * Follow the sample solutions at [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/). For example:  
   
   * For *Embed for your customers* see [this AadService.cs file](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20customers/AppOwnsData/Services/AadService.cs). You can find the `authorityUrl` and `scopeBase` at [AppOwnsData/Web.config](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20customers/AppOwnsData/Web.config).
@@ -41,8 +43,6 @@ You can acquire an Azure AD token in one of the following ways:
 
   > [!NOTE]
   > You can find the `authorityUrl` and `scopeBase` values for the some of the other Sovereign clouds in [Embed content in your app for government and national clouds](embed-sample-for-customers-national-clouds.md).
-
-* Use the [Postman](https://www.postman.com/) tool to acquire a token. See below steps: 
 
 ## Embed token
 
