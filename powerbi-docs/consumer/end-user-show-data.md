@@ -24,7 +24,7 @@ You can also [export the data to Excel](/power-bi/visuals/power-bi-visualization
 1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
 2. To show the data behind the visual, select **More options** (...) and choose **Show as a table**.
    
-   :::image type="content" source="./media/end-user-show-data/power-bi-show-data-vertical.png" alt-text="Screenshot showing Show as a table selected from the More options dropdown.":::
+   :::image type="content" source="./media/end-user-show-data/power-bi-show-data-vertical.png" alt-text="Screenshot with Show as a table selected from the More options dropdown.":::
 
 3. By default, the data appears below the visual.
    
