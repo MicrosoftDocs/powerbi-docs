@@ -7,8 +7,8 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 09/29/2022
-ms.custom: licensing support, pbibetadocbug
+ms.date: 11/18/2022
+ms.custom: licensing support
 LocalizationGroup: consumers
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a Power BI service user with a free license, you explore content (such as reports, apps, scorecards, dashboards, and more) in order to make business decisions. That content is created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. In order to share it with users with free licenses, designers need to publish that content to a group workspace backed by a Premium capacity. Premium capacity provides the benefit of [unlimited content sharing](../enterprise/service-premium-what-is.md#unlimited-content-sharing). Sometimes, designers share content by sending you links to content such as a Power BI app [Apps in the Power BI service](end-user-apps.md), and sometimes the [content automatically installs](end-user-apps.md) and appears in Power BI under **Apps** or **Browse** > **Shared with me**.
+As a Power BI service user with a free license, you explore content (such as reports, apps, scorecards, dashboards, and more) in order to make business decisions. That content is created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. In order to share it with users with free licenses, designers need to publish that content to a group workspace backed by a Premium capacity. Premium capacity provides the benefit of unlimited content sharing. Sometimes, designers share content by sending you links to content such as a Power BI app [Apps in the Power BI service](end-user-apps.md), and sometimes the [content automatically installs](end-user-apps.md) and appears in Power BI under **Apps** or **Browse** > **Shared with me**.
 
 There are many different ways designers can share content. But this article is for Power BI users with a free license, and therefore only describes how "free users" receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -27,7 +27,7 @@ In the [previous article](end-user-license.md), you learned that what you can do
 This article lists which features in the Power BI service are available to users with Free licenses. 
 
 > [!NOTE]
-> In soverign cloud environments with Power BI Premium capacity, all users can view content without needing an assigned license.  
+> In sovereign cloud environments with Power BI Premium capacity, all users can view content without needing an assigned license.  
 
 ## Quick review of terminology
 
@@ -41,11 +41,11 @@ Roles determine who can do what in that workspace. Free users are assigned the *
 
 ### Premium capacity
 
-When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to the Premium capacity. Content in workspaces hosted in Premium capacity can be consumed by users with any Power BI license as long as they have appropriate permissions to access the content.
+When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to the Premium capacity. Content in workspaces hosted in Premium capacity can be accessed by users with any Power BI license as long as they have appropriate permissions to access the content.
 
 ### Licenses
 
-Each Power BI service user has a free license, a Power BI Pro license, or a Premium Per user license. As long as your colleagues use Premium capacity workspaces to share content, free users can view and interact with that content.
+Each Power BI service user has at least one of the following: a free license, a Power BI Pro license, a Premium Per user license. As long as your colleagues use Premium capacity workspaces to share content, free users can view and interact with that content.
 
 To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that is hosted in a Premium workspace. Select **View account** to see more details about your account.
 

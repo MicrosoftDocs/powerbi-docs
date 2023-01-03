@@ -35,7 +35,7 @@ When your report page displays summarized results, a drillthrough page can lead 
 
 The following example shows what happens when a report user drills through from a monthly sales summary. The drillthrough page contains a detailed list of orders for a specific month.
 
-![A matrix visual titled "Sales Summary" groups sales by year and month on the rows, and country on the columns. A drillthrough page is also displayed.](media/report-drillthrough/suggestion-drillthrough-add-depth.png)
+![A matrix visual titled "Sales Summary" groups sales by year and month on the rows, and country or region on the columns. A drillthrough page is also displayed.](media/report-drillthrough/suggestion-drillthrough-add-depth.png)
 
 ### Broader perspective
 

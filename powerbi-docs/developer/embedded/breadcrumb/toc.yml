@@ -1,3 +1,6 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
 - name: Docs
   href: /
   topicHref: /
@@ -22,4 +25,7 @@
           topicHref: /power-bi/developer/visuals/index
         - name: Embedded analytics
           tocHref: /power-bi/collaborate-share/
+          topicHref: /power-bi/developer/embedded/index
+        - name: Embedded analytics
+          tocHref: /power-bi/enterprise/
           topicHref: /power-bi/developer/embedded/index

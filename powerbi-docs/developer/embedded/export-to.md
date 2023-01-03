@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 08/24/2022
+ms.date: 12/24/2022
 ---
 
 # Export Power BI report to file
@@ -19,9 +19,6 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
   * When you export to a .png, a report with multiple pages is compressed into a .zip file
   * Each file in the .zip represents a report page
   * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
-
->[!IMPORTANT]
->The `exporttofile` API is only available in for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2)
 
 ## Usage examples
 
@@ -54,7 +51,7 @@ When the export is complete, the polling API call returns a [Power BI URL](/rest
 
 ## Supported features
 
-This section describes the operation of the following supported features:
+This section describes how to use the following supported features:
 
 * [Selecting which pages to print](#selecting-which-pages-to-print)
 * [Exporting a page or a single visual](#exporting-a-page-or-a-single-visual)
@@ -64,6 +61,7 @@ This section describes the operation of the following supported features:
 * [Row Level Security (RLS)](#row-level-security-rls)
 * [Data protection](#data-protection)
 * [Localization](#localization)
+* [Dynamic binding](#dynamic-binding)
 
 ### Selecting which pages to print
 
@@ -81,8 +79,8 @@ Depending on the type of export, you need to pass different attributes to the [E
 |Attribute   |Page     |Single visual  |Comments|
 |------------|---------|---------|---|
 |`bookmark`  |Optional |![Does not apply to.](../../media/no.png)|Use to export a page in a specific state|
-|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the `getPages` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).   |
-|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the `getVisuals` client API. For more information, see [Get pages and visuals](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
+|`pageName`  |![Applies to.](../../media/yes.png)|![Applies to.](../../media/yes.png)|Use the [GetPages](/rest/api/power-bi/reports/getpage) REST API or the [`getPages` client API](/javascript/api/overview/powerbi/get-visuals).   |
+|`visualName`|![Does not apply to.](../../media/no.png)|![Applies to.](../../media/yes.png)|There are two ways to get the name of the visual:<li>Use the [`getVisuals` client API](/javascript/api/overview/powerbi/get-visuals).</li><li>Listen and log the *visualClicked* event, which is triggered when a visual is selected. For more information, see [How to handle events](/javascript/api/overview/powerbi/handle-events)</li>. |
 
 ### Bookmarks
 
@@ -135,6 +133,11 @@ A report with a sensitivity label can't be exported to a .pdf or a .pptx using a
 ### Localization
 
 When using the `exportToFile` API, you can pass your desired locale. The localization settings affect the way the report is displayed, for example by changing formatting according to the selected local.
+
+### Dynamic binding
+
+To export a report while it's connected to a dataset other then the default dataset, specify the required dataset ID in the [`datasetToBind`](/rest/api/power-bi/reports/export-to-file#powerbireportexportconfiguration) parameter when calling the API.
+[Read more about dynamic binding](./embed-dynamic-binding.md).
 
 ## Concurrent requests
 
@@ -375,7 +378,6 @@ private async Task<ExportedFile> ExportPowerBIReport(
 
 ## Considerations and limitations
 
-* The `exporttofile` API is only available for Gen2 capacities. If you are using a gen1 capacity, [upgrade to Gen2](azure-pbie-create-capacity.md#upgrade-a-capacity-to-gen2).
 * An export API operation load will be evaluated as a slow-running background operation, as described in [Premium Gen2 capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * All related datasets in the report you're exporting must reside on a Premium or Embedded capacity, including datasets with a Direct Query connection.
@@ -383,7 +385,6 @@ private async Task<ExportedFile> ExportPowerBIReport(
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported.
-* Dynamic Dataset binding isn't supported.
 * Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
 * The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
   * Uncertified Power BI custom visuals
