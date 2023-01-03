@@ -42,7 +42,7 @@ Let’s take an Excel file as an example.
 
 1. Before you can load your Excel file into Power BI, you must organize your data in a flat table. In a flat table, each column contains the same data type; for example, text, date, number, or currency. Your table should have a header row but no columns or rows that display totals.
 
-   ![Screenshot of data organized in Excel.](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
+   ![Screenshot of the data organized in Excel.](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
 
 2. Next, format your data as a table. In Excel, on the **Home** tab, in the **Styles** group, select **Format as Table**.
 
@@ -50,7 +50,7 @@ Let’s take an Excel file as an example.
 
    Your Excel worksheet is now ready to load into Power BI.
 
-   ![Screenshot of data formatted as a table.](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
+   ![Screenshot of the data formatted as a table.](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## Upload your Excel file to the Power BI service
 
@@ -118,7 +118,7 @@ Your manager wants to know which countries and regions are the most profitable. 
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of map visual in report editor.":::
 
-    The European regions appear to be outperforming the North American regions.
+    You can see that the European regions are outperforming the North American regions.
 
 ### Create a visual showing sales
 
