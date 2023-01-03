@@ -14,8 +14,8 @@ ms.date: 12/30/2022
 
 When you create a visual, sometimes it's useful to display additional information to the customer in a separate window. For example, you might want to:
 
-- **show additional information** - Such as a text note or a video
-- **display an input data dialog box** - Such as a date dialog box
+- **Show additional information** - Such as a text note or a video
+- **Display an input data dialog box** - Such as a date dialog box
 
 For these purposes, you can create a dialog visual pop-up window, called a *dialog box* in this article.
 
