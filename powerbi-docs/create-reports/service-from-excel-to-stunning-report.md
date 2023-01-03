@@ -72,7 +72,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
    ![Screenshot of My workspace, highlighting the New dropdown menu and the Report option.](media/service-from-excel-to-stunning-report/power-bi-new-report.png)
 
-1. Select **Pick a published dataset**. Then in the **Data hub** dialogue box, select your **Financial Sample** dataset > **Auto-create report**.
+1. Select **Pick a published dataset**. Then in the **Data hub** dialogue box, choose your **Financial Sample** dataset > **Auto-create report**.
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-data-hub.png" alt-text="Screenshot of the Data hub dialog box, highlighting the Financial Sample dataset." lightbox="media/service-from-excel-to-stunning-report/power-bi-data-hub.png":::
 
@@ -80,7 +80,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
 The report opens in Editing view and displays the blank report canvas. On the right are the **Visualizations**, **Filters**, and **Fields** panes. Your Excel workbook table data appears in the **Fields** pane. At the top is the name of the table, **financials**. Under that, Power BI lists the column headings as individual fields.
 
-Do you see the Sigma symbols in the Fields list? Power BI has detected that those fields are numeric. Power BI also indicates a geographic field with a globe symbol.
+Notice the Sigma symbols in the Fields list. Power BI has detected the numeric fields. Power BI detect geographic fields and displays a globe symbol.
 
 ![Screenshot of the Fields pane, highlighting Excel entries.](media/service-from-excel-to-stunning-report/power-bi-fields-list-financial.png)
 
@@ -103,7 +103,7 @@ Do you see the Sigma symbols in the Fields list? Power BI has detected that thos
     December 2014 was the most profitable month.
 
     > [!TIP]
-    > If your chart values don't look as you expect, check your aggregations. For example, in the **Values** well, select the **Profit** field you just added and ensure the data is being aggregated the way you'd like it to be. In this example, we're using **Sum**.
+    > If your chart values don't look as you expect, check your aggregations. For example, in the **Values** well, select the **Profit** field you just added and make sure the data is being aggregated the way you want. In this example, we're using **Sum**.
     >
 
 ### Create a map
@@ -150,13 +150,13 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 ## Pin to a dashboard
 
-Now you can pin all of your visuals to the blank dashboard that Power BI created by default.
+You can pin all of your visuals to the blank dashboard that Power BI created by default.
 
 1. Hover over a visual and select **Pin visual**.
 
    ![Screenshot of a visual, highlighting the Pin visual icon.](media/service-from-excel-to-stunning-report/power-bi-pin-visual.png)
 
-1. You need to save your report before you can pin a visual to the dashboard. Give your report a name and select **Save**.
+1. You must save your report before you can pin a visual to the dashboard. Give your report a name and select **Save**.
 1. Pin each visual to the dashboard that Power BI created, **Financial Sample.xlsx**.
 1. When you pin the last visual, select **Go to dashboard**.
 1. Power BI added a placeholder Financial Sample.xlsx tile to the dashboard automatically. Select **More options (...)** > **Delete tile**.
@@ -177,7 +177,7 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
 2. In the **Share dashboard** screen, enter the email addresses of the recipients in the **Enter a name or email addresses** field and add an optional message.
 
-3. Select the option to **Send an email notification**. Decide which of these other options you want, if any:
+3. Select the option to **Send an email notification**. Choose any other options you want:
 
     - **Allow recipients to share this dashboard**
     - **Allow recipients to build content with the data associated with this dashboard**
