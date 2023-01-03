@@ -20,10 +20,10 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
 
-When testing or updating a visual that is already published, make sure you're using the correct version of the visual **without changing the GUID**. To override the AppSource version with a local file version, enable Developer mode in either Power BI Desktop or Power BI service.
+When testing or updating a visual that's already published, make sure you're using the correct version of the visual **without changing the GUID**. To override the AppSource version with a local file version, enable Developer mode in either Power BI Desktop or Power BI service.
 
 >[!IMPORTANT]
->When testing or debugging a new version of a visual that is available in AppSource, **do not change the GUID of the visual**. Use Developer mode instead.
+>When testing or debugging a new version of a visual that's available in AppSource, **do not change the GUID of the visual**. Use Developer mode instead.
 
 ### Enable Developer mode in Power BI Desktop
 
@@ -65,9 +65,9 @@ Verify that your visual passes the general test cases.
 | Select with Ctrl, Alt, and Shift keys. | No unexpected behaviors appear. |
 | Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
 | Resize your visual. | Visual reacts correctly to resizing. |
-| Set the report size to the minimum. | There are no display errors. |
+| Set the report size to the minimum. | There's no display errors. |
 | Ensure scroll bars work correctly. | Scroll bars should exist, if necessary. Check scroll bar sizes. Scroll bars shouldn't be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are needed for different sizes of the visual. |
-| Pin your visual to a **Dashboard**. | The visual displayS properly. |
+| Pin your visual to a **Dashboard**. | The visual displays properly. |
 | Add multiple versions of your visual to a single report page. | All versions of the visual display and operate properly. |
 | Add multiple versions of your visual to multiple report pages. | All versions of the visual display and operate properly. |
 | Switch between report pages. | The visual displays properly. |
@@ -124,7 +124,7 @@ Your visual should perform at an acceptable level. Use developer tools to valida
 
 | Test case | Expected results
 | --------- | ----------------
-| Create a visual with many visual elements. | The visual performs well and doesn't freeze the application. There are no performance issues with elements such as animation speed, resizing, filtering, and selecting.
+| Create a visual with many visual elements. | The visual performs well and doesn't freeze the application. There aren't any performance issues with elements such as animation speed, resizing, filtering, and selecting.
 
 ## Next steps
 
