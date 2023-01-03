@@ -1,5 +1,5 @@
 ---
-title: Understand the permission tokens needed for embedding a Power BI app
+title: Permission tokens needed for embedding a Power BI app
 description: Learn which tokens your Power BI app needs to authenticate against Azure and Power BI service.
 author: mberdugo
 ms.author: monaberdugo
@@ -42,7 +42,7 @@ You can acquire an Azure AD token in one of the following ways:
   > [!NOTE]
   > You can find the `authorityUrl` and `scopeBase` values for the some of the other Sovereign clouds in [Embed content in your app for government and national clouds](embed-sample-for-customers-national-clouds.md).
 
-* Use the [Postman](https://www.postman.com/) tool to acquire a token. See below steps by steps (refer to Labs:: Get auth token using POSTMAN - Access Token and Embed Token - Overview (visualstudio.com), just FYI, do not add into external docs): 
+* Use the [Postman](https://www.postman.com/) tool to acquire a token. See below steps: 
 
 ## Embed token
 
