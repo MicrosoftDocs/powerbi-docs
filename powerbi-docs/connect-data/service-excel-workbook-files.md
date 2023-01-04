@@ -22,7 +22,7 @@ Power BI supports importing or connecting to workbooks created in Excel 2007 and
 If your workbook has simple worksheets with ranges of data, be sure to format those ranges as tables to get the most out of your data in Power BI. When you create reports in Power BI, the named tables and columns in the **Fields** pane make it much easier to visualize your data.
 
 ### Workbooks with data models
-A workbook can contain a data model that has one or more tables of data loaded into it by using linked tables, Power Query, **Get & Transform** in Excel 2016, or Power Pivot. Power BI supports all data model properties, such as relationships, measures, hierarchies, and key progress indicators (KPIs).
+A workbook can contain a data model that has one or more tables of data loaded into it by using linked tables, Power Query, **Get & Transform** in Excel, or Power Pivot. Power BI supports all data model properties, such as relationships, measures, hierarchies, and key progress indicators (KPIs).
 
 > [!NOTE]
 > You can't share workbooks with data models across Power BI tenants. For example, a user who signs in to Power BI with a `contoso.com` account can't share an Excel workbook with a user who signs in with a `woodgrovebank.com` account.
@@ -52,7 +52,7 @@ There's a new, streamlined experience for uploading files to the Power BI servic
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-01.png" alt-text="Screenshot of the Upload menu options.":::
 
-If you choose to upload a local file, Power BI adds a copy of the file to the workspace. If you use the OneDrive for Business or SharePoint options, Power BI creates a connection to the file. As you make changes to the file in SharePoint, Power BI can automatically sync those changes about once an hour.
+If you choose to upload a local file, Power BI adds a copy of the file to the workspace. If you use the **OneDrive for Business** or **SharePoint** options, Power BI creates a connection to the file. As you make changes to the file in SharePoint, Power BI can automatically sync those changes about once an hour.
 
 This upload method is easy to use, and the **OneDrive for Business** and **SharePoint** options use the same file selection interface as many other Microsoft products. Rather than having to enter a direct URL to a SharePoint site, you can simply select one of your sites through the **Quick access** section or the **More places** links.
 
@@ -125,7 +125,6 @@ Instead of using the **Upload** option from your workspace, you can use **Get da
 
 1. At the bottom of the Power BI navigation pane, select **Get data**.
    
-   ![]()
    :::image type="content" source="media/service-excel-workbook-files/excel_get_data_button.png" alt-text="Screenshot of Get data in the navigation pane.":::
    
 2. Under **Files**, select **Get**.
