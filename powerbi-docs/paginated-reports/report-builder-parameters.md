@@ -8,7 +8,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 06/06/2019
+ms.date: 01/04/2023
 ---
 
 # Report parameters in Power BI Report Builder
