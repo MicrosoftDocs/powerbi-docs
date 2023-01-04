@@ -558,8 +558,6 @@
       items:
       - name: Device information settings for rendering extensions
         href: ../paginated-reports/device-info/device-information-settings-for-paginated-reports-rendering-extensions.md
-      - name: ATOM device information settings
-        href: /sql/reporting-services/atom-device-information-settings?context=/power-bi/create-reports/context/context
       - name: CSV device information settings
         href: ../paginated-reports/device-info/csv-device-information-settings.md
       - name: Excel device information settings
