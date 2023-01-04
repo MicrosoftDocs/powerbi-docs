@@ -7,7 +7,7 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/04/2021
+ms.date: 01/04/2023
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources
