@@ -14,7 +14,6 @@ In Power BI paginated reports, device information settings are used to pass rend
   
 ## Specific device information settings
   
-- [ATOM device information settings](/sql/reporting-services/atom-device-information-settings?context=/power-bi/create-reports/context/context) 
 - [CSV device information settings](csv-device-information-settings.md) 
 - [Excel device information settings](/sql/reporting-services/excel-device-information-settings?context=/power-bi/create-reports/context/context) 
 - [Word device information settings](/sql/reporting-services/word-device-information-settings?context=/power-bi/create-reports/context/context) 
