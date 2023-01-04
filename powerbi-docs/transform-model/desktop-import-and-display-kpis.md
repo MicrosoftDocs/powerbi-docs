@@ -15,7 +15,7 @@ LocalizationGroup: Model your data
 
 With **Power BI Desktop**, you can import and display KPIs in tables, matrices, and cards.
 
-Follow these steps to import and display KPIs:
+To import and display KPIs:
 
 1. Start with an Excel workbook that has a Power Pivot model and KPIs.
 
