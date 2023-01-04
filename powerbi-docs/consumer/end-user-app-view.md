@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/03/2022
+ms.date: 01/04/2022
 ms.custom: licensing support, intro-installation
 LocalizationGroup: Share your work
 ---
@@ -27,7 +27,7 @@ You can get a new app:
 With Power BI mobile, you can only install an app from a direct link. The Power BI apps marketplace isn't available in Power BI mobile. If the app designer installs the app automatically, you'll see it in your list of apps.
 
 ## Apps and licenses
-Not all Power BI users can view and interact with apps. If you have a free license, you can open apps that are stored in Premium capacity and that have been shared with you. If you have a Pro license or a Premium Per User license, you can open apps that have been shared with you.
+Not all Power BI users can view and interact with apps. If you have a free license, you can open apps that are stored in Premium capacity and that are shared with you. If you have a Pro license or a Premium Per User license, you can open apps that are shared with you.
 
 So, if you can't open an app, contact your administrator or help desk. For information about licensing, see [Power BI licensing](end-user-license.md).
 
@@ -55,7 +55,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 
    Alternatively, you can use the search box to get a filtered selection of apps. Type part of the name of an app or category, such as finance, analytics, or marketing, to make it easier to find the item you're looking for. 
 
-   The search box is sensitive to the tab you have open. Only apps of the selected type will be returned. If the **All apps** tab is open, both organizational and template apps are returned. It can be confusing when an organizational app and a template app have the same name. Just remember that the template app tiles have a shopping bag icon in the top right corner.
+   The search box is sensitive to the tab you have open. Only apps of the selected type are returned. If the **All apps** tab is open, both organizational and template apps are returned. It can be confusing when an organizational app and a template app have the same name. Just remember that the template app tiles have a shopping bag icon in the top right corner.
 
 4. When you find the app that you want, select **Get it Now** to install it.
 
@@ -65,7 +65,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 * If you're installing a template app, you'll be taken to the template app offering in AppSource. See [an example](end-user-app-marketing.md) of how to download and install a sample template app from the Power BI apps marketplace. The app is installed, along with a workspace of the same name.
 
    > [!NOTE]
-   > If you're using a free user license, you'll be able to download apps but you won't be able to view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity. For more information, see [Licenses for business users](end-user-license.md).
+   > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity. For more information, see [Licenses for business users](end-user-license.md).
 
 ## Install an app from a direct link
 You can also install an organizational app from a direct link:    
@@ -106,7 +106,7 @@ Apps have different layouts, visuals, colors, and options, but they all have the
 1. The app navigation pane.  Below the name of the app is the list of content. This app has one report with six pages. Select a report page name to open it. We currently have the *Return rate* page open. 
 1. Select the arrow to expand the **Filters** pane.
 
-You can also explore the associated workspace if you've been given access. When you install or download a template app, the Power BI service creates a workspace for you. When you install an organizational app, it might not include access to the workspace. [Learn about workspaces](end-user-workspaces.md). Select **Power BI** (number 2) to return to **Home** and choose **Workspaces**. 
+You can explore the associated workspace if you've been given access. When you install or download a template app, the Power BI service creates a workspace for you. When you install an organizational app, it might not include access to the workspace. For more information, see [Collaborate in workspaces](end-user-workspaces.md). Select **Power BI** (number 2) to return to **Home** and choose **Workspaces**. 
 
 ![Screenshot of the Sales and Marketing workspace showing one report and one dataset.](./media/end-user-app-view/power-bi-new-workspace.png)
 
@@ -114,7 +114,7 @@ You can also explore the associated workspace if you've been given access. When 
 
 Sometimes app designers release new versions of their apps. How you get the new version depends on how you received the original. 
 
-* If you got the app from your organization, the update to the new version is entirely transparent - you don't have to do anything. 
+* If you got the app from your organization, the update to the new version is automatic and you don't have to do anything. 
 
 * If you got a template app from AppSource, the next time you open the app you'll see a notification banner. The notification lets you know that a new version is available. 
 
@@ -122,18 +122,18 @@ Sometimes app designers release new versions of their apps. How you get the new 
 
         <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
 
-    2. When prompted to install the updated app, select **Install**. 
+    1. When prompted to install the updated app, select **Install**. 
 
         ![Screenshot of the dialog to install and update an app.](./media/end-user-app-view/power-bi-installs.png) 
 
-    3. Because you already have a version of this app, you can decide whether you want to replace the existing version, update only the workspace content *without* updating the app, or install the updated app in a new workspace.
+    1. Because you already have a version of this app, you can decide whether you want to replace the existing version, update only the workspace content *without* updating the app, or install the updated app in a new workspace.
 
         ![Screenshot of the Update app dialog. The option called update the workspace and the app is selected.](./media/end-user-app-view/power-bi-already-installed.png) 
 
      > [!NOTE] 
-     > Installing a new version overwrites any changes you might have made to the app's reports and dashboards. To keep your updated reports and dashboards, you can save them under a different name or in a different location before installing. 
+     > Installing a new version overwrites any changes you might have made to the app's reports and dashboards. To keep your updated reports and dashboards, save them under a different name or in a different location before installing. 
 
-    4. Once you've installed the updated version, select **Update app** to complete the update process. 
+    1. Once you've installed the updated version, select **Update app** to complete the update process. 
 
 ## Considerations and troubleshooting
 
