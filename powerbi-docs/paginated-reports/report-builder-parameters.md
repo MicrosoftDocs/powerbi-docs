@@ -21,13 +21,13 @@ This article describes the common uses for Power BI Report Builder report parame
 
 Here are some of the most common ways to use parameters.  
   
-**Control paginated report data**
+**Control paginated report data:**
   
 - Filter paginated report data at the data source by writing dataset queries that contain variables.  
   
 - Allow users to specify values to customize the data in a paginated report. For example, provide two parameters for the start date and end date for sales data.  
   
-**Vary report presentation**
+**Vary report presentation:**
   
 - Allow users to specify values to help customize the appearance of a report. For example, provide a Boolean parameter to indicate whether to expand or collapse all nested row groups in a table.  
   
