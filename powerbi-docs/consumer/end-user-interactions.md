@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/03/2022
+ms.date: 01/04/2022
 LocalizationGroup: Reports
 ---
 
@@ -21,25 +21,27 @@ One of the great features of Power BI is the way all visuals on a report page ar
 
 ## How visuals interact with each other
 
-By default, selecting a data point in one visual on a report page will cross-filter or cross-highlight the other visuals on the page. Exactly how the visuals on a page interact is set by the report *designer*. *Designers* have options to turn visual interactions on and off, and to change the default cross-filtering, cross-highlighting, and [drilling](end-user-drill.md) behavior.
+By default, selecting a data point in one visual on a report page will cross-filter or cross-highlight the other visuals on the page. The report *designer* sets how the visuals on a page interact. *Designers* have options to turn visual interactions on and off, and to change the default cross-filtering, cross-highlighting, and [drilling](end-user-drill.md) behavior.
 
 If you haven't encountered hierarchies or drilling yet, you can learn all about them by reading [Drill down in Power BI](end-user-drill.md).
 
-### Cross-filtering and cross-highlighting
+### Cross-filter and cross-highlight
 
 Cross-filtering and cross-highlighting can be useful to identify how one value in your data contributes to another. The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visuals.  
 
-Let's define these terms as we look at the following report pages. The "Total category volume by segment" doughnut chart has two values: "Moderation" and "Convenience".
+The following report pages show examples of cross-filtering and cross-highlighting. The **Total Category Volume by Segment** bar chart has two values, **Moderation** and **Convenience**.
 
-:::image type="content" source="media/end-user-interactions/power-bi-gauge.png" alt-text="Report page":::
+:::image type="content" source="media/end-user-interactions/power-bi-gauge.png" alt-text="Screenshot showing the VanArsdel Market Share report page.":::
 
-1. Let's see what happens when we select **Moderation**.
+In the following example, **Moderation** is selected.
 
-    :::image type="content" source="media/end-user-interactions/power-bi-filtered.png" alt-text="Report page after Moderation segment of doughnut chart selected.":::
+:::image type="content" source="media/end-user-interactions/power-bi-filtered.png" alt-text="Report page after Moderation segment of doughnut chart selected.":::
 
-2. **Cross-filtering** removes data that doesn't apply. Selecting **Moderation** in the doughnut chart cross-filters the line chart. The line chart now only displays data points for the Moderation segment.
+Because **Moderation** is selected on the bar chart:
 
-3. **Cross-highlighting** retains all the original data points but dims the portion that doesn't apply to your selection. Selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that applies to the Convenience segment and highlights all the data that applies to the Moderation segment.
+- **Cross-filtering** removes data that doesn't apply. Selecting **Moderation** in the bar chart cross-filters the line chart. The line chart now only displays data points for the Moderation segment.
+
+- **Cross-highlighting** retains all the original data points but dims the portion that doesn't apply to your selection. Selecting **Moderation** in the bar chart cross-highlights the column chart. The column chart dims all the data that applies to the Convenience segment and highlights all the data that applies to the Moderation segment.
 
 ## Considerations and troubleshooting
 
@@ -53,6 +55,4 @@ Let's define these terms as we look at the following report pages. The "Total ca
 
 ## Next steps
 
-[How to use report filters](../consumer/end-user-report-filter.md)
-
-[About filtering and highlighting](end-user-report-filter.md).
+[Take a tour of the report Filters pane](end-user-report-filter.md)
