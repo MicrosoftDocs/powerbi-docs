@@ -1,6 +1,6 @@
 ---
 title: Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
-description: Learn what are the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool.
+description: Learn about the best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.custom: intro-deployment
 
 # Best practices for deployment pipelines, the Power BI Application lifecycle management (ALM) tool
 
-This article provides guidance for BI creators who are managing their content throughout its lifecycle. The article focuses on the use of deployment pipelines as a BI content lifecycle management tool.
+This article provides guidance for business intelligence (BI) creators who are managing their content throughout its lifecycle. The article focuses on the use of deployment pipelines as a BI content lifecycle management tool.
 
 The article is divided into four sections:
 
@@ -36,7 +36,7 @@ Prepare your content for on-going management throughout its lifecycle. Review th
 
 ### Treat each workspace as a complete package of analytics
 
-Ideally, a workspace contains a complete view of one aspect (such as department, business unit, project, or vertical) in your organization. This complete view makes it easier to manage permissions for different users and allows content releases for the entire workspace to be controlled according to a planned schedule.
+Ideally, a workspace contains a complete view of one aspect (such as department, business unit, project, or vertical) in your organization. This complete view makes it easier to manage permissions for different users and to allow content releases for the entire workspace to be controlled according to a planned schedule.
 
 If you use [centralized datasets](../connect-data/service-datasets-across-workspaces.md) that are used across the organization, you should create two types of workspaces:
 
@@ -99,16 +99,16 @@ Consider Power BI Desktop as your local development environment. Power BI Deskto
 
 ### Version control for PBIX files
 
-If you want to manage the version history of your reports and datasets, use Power BI's [auto-sync with OneDrive](../connect-data/refresh-desktop-file-onedrive.md). Power BI's auto-sync with OneDrive keeps your files updated with the latest version and enables you to retrieve older versions if needed.
+If you want to manage the version history of your reports and datasets, see [Refresh a dataset stored on OneDrive or SharePoint Online](../connect-data/refresh-desktop-file-onedrive.md). Synchronizing a dataset with OneDrive keeps your files updated with the latest version and enables you to retrieve older versions if needed.
 
 >[!NOTE]
->Use auto-sync with OneDrive (or any other repository) only with the PBIX files in the deployment pipeline's development stage. Don't sync PBIX files into the deployment pipeline's test and production stages. This causes problems with deploying content across the pipeline.
+>Synchronizing with OneDrive (or any other repository) only with the PBIX files in the deployment pipeline's development stage. Don't sync PBIX files into the deployment pipeline's test and production stages. This causes problems with deploying content across the pipeline.
 
 ### Separate modeling development from report and dashboard development
 
 For enterprise scale deployments, you should separate dataset development and the development of reports and dashboards. To promote changes to only a report or a dataset, use the deployment pipelines selective deploy option.
 
-This approach should start from Power BI Desktop by creating a separate PBIX file for datasets and reports. For example, you can create a dataset PBIX file and uploaded it to the development stage. Later, your report authors can create a new PBIX only for the report and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) by using a live connection. This technique allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
+This approach should start from Power BI Desktop by creating a separate PBIX file for datasets and reports. For example, you can create a dataset PBIX file and upload it to the development stage. Later, your report authors can create a new PBIX only for the report and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) by using a live connection. This technique allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
 
 With [shared datasets](../connect-data/service-datasets-share.md), you can also use this method across workspaces.
 
@@ -136,7 +136,7 @@ Make sure that these three factors are addressed in your test environment:
 
 When testing, you can use the same capacity as the production stage. However, this capacity can make production unstable during load testing. To avoid unstable production, use another capacity similar in resources to the production capacity, for testing. To avoid extra costs, you can use [Azure A capacities](../developer/embedded/azure-pbie-create-capacity.md) to pay only for the testing time.
 
-![A diagram showing a deployment pipeline with a test environment simulating the production environment.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+:::image type="content" source="media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png" alt-text="A diagram showing a deployment pipeline with a test environment simulating the production environment.":::
 
 ### Use deployment rules with a real-life data source
 
@@ -191,7 +191,7 @@ Deployment in a pipeline updates the workspace content, but it doesn't update th
 
 ### Quick fixes to content
 
-In case there are bugs in production that require a quick fix, don't upload a new PBIX version directly to the production stage or make an online change in Power BI service. Deploying backwards to test and development stages isn't possible when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, the correct way to treat this problem is to implement the fix in the development stage and push it to the rest of the deployment pipeline stages. This allows checking that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
+In case there are issues in production that require a quick fix, don't upload a new PBIX version directly to the production stage or make an online change in Power BI service. Deploying backwards to test and development stages isn't possible when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, the correct way to treat this problem is to implement the fix in the development stage and push it to the rest of the deployment pipeline stages. This allows checking that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
 
 ## Next steps
 
