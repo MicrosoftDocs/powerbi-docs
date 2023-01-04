@@ -1,6 +1,6 @@
 ---
 title: Use quick measures for common and powerful calculations
-description: Quick measures provide ready-made DAX formulas that make quick work of common calculations.
+description: Learn how to use quick measures provide ready-made DAX formulas that make quick work of common calculations.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -27,7 +27,7 @@ When you select **New quick measure**, the **Quick measures** window appears, le
 
 Select the **Select a calculation** field to see a long list of available quick measures.
 
-:::image type="content" source="media/desktop-quick-measures/quick-measures_04.png" alt-text="Screenshot of the Quick measures screen and the Select a calculation dropdown menu.":::
+:::image type="content" source="media/desktop-quick-measures/quick-measures_04.png" alt-text="Screenshot of the Quick measures screen and the Select a calculation drop-down menu.":::
 
 The five quick measure calculation types, with their calculations, are:
 
@@ -114,7 +114,7 @@ Imagine you need to do a year-over-year calculation, but you're not sure how to 
 
 You can always delete quick measures from your model if you don't like them by right-clicking or selecting the **...** next to the measure and selecting **Delete from model**. You can also rename a quick measure whatever you like by selecting **Rename** from the menu.
 
-:::image type="content" source="media/desktop-quick-measures/quick-measures_11.png" alt-text="Screenshot of delete or rename a quick measure options in a drop down.":::
+:::image type="content" source="media/desktop-quick-measures/quick-measures_11.png" alt-text="Screenshot of delete and rename a quick measure options in a drop-down menu.":::
 
 ## Considerations and limitations
 
