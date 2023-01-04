@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Import and analyze data from a webpage'
-description: 'Tutorial: Import and analyze data from a webpage using Power BI Desktop'
+description: 'This tutorial shows you how to import and analyze data from a webpage using Power BI Desktop. Learn how to create and customize a map and a pie chart.'
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 05/20/2021
+ms.date: 01/04/2023
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze webpage data by using Power BI Desktop
@@ -22,9 +22,9 @@ As a long-time soccer fan, you want to report on the UEFA European Championship 
 
 ## Connect to a web data source
 
-You can get the UEFA winners data from the Results table on the UEFA European Football Championship Wikipedia page at https://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
+You can get the UEFA winners data from the Results table on the UEFA European Football Championship Wikipedia page at `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship`.
 
-![Wikipedia Results table](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+![Screenshot shows Wikipedia Results table for the Euro Cup, which includes winners and other information.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
 Web connections are only established using basic authentication. Web sites requiring authentication may not work properly with the Web connector.
 
@@ -32,27 +32,29 @@ To import the data:
 
 1. In the Power BI Desktop **Home** ribbon tab, drop down the arrow next to **Get Data**, and then select **Web**.
 
-   ![Get Data from ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png) 
+   ![Screenshot shows the Get data option on the ribbon with Web selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png)
 
-   >[!NOTE]
-   >You can also select the **Get Data** item itself, or select **Get Data** from the Power BI Desktop get started dialog, then select **Web** from the **All** or **Other** section of the **Get Data** dialog, and then select **Connect**.
+   > [!NOTE]
+   >
+   > You can also select the **Get Data** item itself, or select **Get Data** from the Power BI Desktop get started dialog, then select **Web** from the **All** or **Other** section of the **Get Data** dialog, and then select **Connect**.
 
 1. In the **From Web** dialog, paste the URL `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship` into the **URL** text box, and then select **OK**.
 
-    ![Get Data from dialog](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
+    ![Screenshot shows the From Web dialog where you can enter the URL for the webpage.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
 
-   After connecting to the Wikipedia web page, the **Navigator** dialog shows a list of available tables on the page. You can select any of the table names to preview its data. The **Results[edit]** table has the data you want, although it's not exactly in the shape you want. You'll reshape and clean up the data before loading it into your report.
+   After you connect to the Wikipedia web page, the **Navigator** dialog shows a list of available tables on the page. You can select any of the table names to preview its data. The **Results[edit]** table has the data you want, although it's not exactly in the shape you want. You'll reshape and clean up the data before loading it into your report.
 
-   ![Navigator dialog box](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+   ![Screenshot shows the Navigator dialog with a table selected and Transform Data highlighted.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
 
-   >[!NOTE]
-   >The **Preview** pane shows the most recent table selected, but all selected tables will load into the Power Query Editor when you select **Transform Data** or **Load**.
+   > [!NOTE]
+   >
+   > The **Preview** pane shows the most recent table selected, but all selected tables will load into the Power Query Editor when you select **Transform Data** or **Load**.
 
 1. Select the **Results[edit]** table in the **Navigator** list, and then select **Transform Data**.
 
    A preview of the table opens in **Power Query Editor**, where you can apply transformations to clean up the data.
 
-   ![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   ![Screenshot shows Power Query Editor with imported data ready for transformations.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
 
 ## Shape data in Power Query Editor
 
@@ -64,11 +66,11 @@ First, remove all the columns except for two from the table. Rename these column
 
 1. Right-click and select **Remove Other Columns**, or select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab, to remove all other columns from the table.
 
-   ![Remove other columns drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png)
+   ![Screenshot shows columns highlighted with Remove Other Columns selected in the context menu.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png)
 
    or
 
-   ![Remove other columns ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
+   ![Screenshot shows columns highlighted with Remove Other Columns selected in the ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
 
 Next, remove the extra word *Details* from the first column cells.
 
@@ -76,15 +78,15 @@ Next, remove the extra word *Details* from the first column cells.
 
 1. Right-click, and select **Replace Values**, or select **Replace Values** from the **Transform** group in the **Home** tab of the ribbon. This option is also found in the **Any Column** group in the **Transform** tab.
 
-   ![Replace Values drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) 
+   ![Screenshot shows a column highlighted with Replace Values selected in the context menu.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) 
 
    or
 
-   ![Replace Values ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
+   ![Screenshot shows a column highlighted with Replace Values selected in the ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
 
 1. In the **Replace Values** dialog, type **Details** in the **Value To Find** text box, leave the **Replace With** text box empty, and then select **OK** to delete the word *Details* from this column.
 
-   ![Remove a word from the column](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
+   ![Screenshot shows the Replace Values dialog where you can remove a word from a column.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
 
 Some cells contain only the word "Year" rather than year values. You can filter the column to only display rows that don't contain the word "Year".
 
@@ -92,7 +94,7 @@ Some cells contain only the word "Year" rather than year values. You can filter 
 
 1. In the drop-down menu, scroll down and clear the checkbox next to the **Year** option, and then select **OK**.
 
-   ![Filter data](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
+   ![Screenshot shows Text Filters in the context menu where you can remove entries.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
 
 Since you're only looking at the final winners data now, you can rename the second column to **CountryRegion**. To rename the column:
 
@@ -100,11 +102,11 @@ Since you're only looking at the final winners data now, you can rename the seco
    - Right-click the column header, and select **Rename**, or
    - Select the *column and select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon.
 
-   ![Rename drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) 
+   ![Screenshot shows the Rename option selected from the context menu for a column.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png)
   
    or
 
-   ![Rename ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
+   ![Screenshot shows the Rename option selected from the ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
 
 1. Type **CountryRegion** in the header and press **Enter** to rename the column.
 
@@ -132,10 +134,12 @@ The query loads into the Power BI Desktop *Report* view, where you can see it in
 
    ![Fields Pane](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 
->[!TIP]
->You can always get back to the Power Query Editor to edit and refine your query by:
->- Selecting the **More options** ellipsis (**...**) next to **Euro Cup Winners** in the **Fields** pane, and selecting **Edit query**, or
->- Selecting **Transform data** in the **Queries** group of the **Home** ribbon tab in Report view. 
+> [!TIP]
+>
+> You can always get back to the Power Query Editor to edit and refine your query by:
+>
+> - Selecting the **More options** ellipsis (**...**) next to **Euro Cup Winners** in the **Fields** pane, and selecting **Edit query**, or
+> - Selecting **Transform data** in the **Queries** group of the **Home** ribbon tab in Report view.
 
 ## Create a visualization
 
@@ -149,7 +153,7 @@ To create a visualization based on your data:
 
    ![Enlarge map](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
 
-1. The map shows identical data points for every country/region that won a Euro Cup tournament. To make the size of each data point reflect how often the country/region has won, drag the **Year** field to **Drag data fields here** under **Size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries/regions that have won more tournaments.
+1. The map shows identical data points for every country/region that won a Euro Cup tournament. To make the size of each data point reflect how often the country/region has won, drag the **Year** field to **Drag data fields here** under **Bubble size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries/regions that have won more tournaments.
 
    ![Drag Count of Year into Size](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
 
@@ -159,7 +163,7 @@ As you can see, it's very easy to create visualizations based on your data. It's
 
 ### Format the map
 
-You can change the appearance of a visualization by selecting it and then selecting the **Format** (paint roller) icon in the **Visualizations** pane. For example, the "Germany" data points in your visualization could be misleading, because West Germany won two tournaments and Germany won one, and the map superimposes the two points rather than separating or adding them together. You can color these two points differently to highlight this fact. You can also give the map a more descriptive and attractive title.
+You can change the appearance of a visualization by selecting it and then selecting the **Format** (paint roller) icon in the **Visualizations** pane. For example, the "Germany" data points in your visualization could be misleading, because West Germany won two tournaments and Germany won one. The map superimposes the two points rather than separating or adding them together. You can color these two points differently to highlight this fact. You can also give the map a more descriptive and attractive title.
 
 1. With the visualization selected, select the **Format** icon, and then select **Data colors** to expand the data color options.
 
@@ -187,15 +191,16 @@ To change the map to a pie chart, select the map and then select the **Pie chart
 
 ![Change visualization to a pie chart](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png)
 
->[!TIP]
->- You can use the **Data colors** formatting options to make "Germany" and "West Germany" the same color. 
->- To group the countries/regions with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort by Count of Year**.
+> [!TIP]
+>
+> - You can use the **Data colors** formatting options to make "Germany" and "West Germany" the same color. 
+> - To group the countries/regions with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort by Count of Year**.
 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
 ## See also
 
-* [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-* [Watch Power BI videos](../fundamentals/videos.md)
-* [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
-* [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
+- [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+- [Watch Power BI videos](../fundamentals/videos.md)
+- [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
+- [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
