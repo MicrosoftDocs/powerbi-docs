@@ -64,9 +64,9 @@ If you don't have a subscription, the **OneDrive for Business** and **SharePoint
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screen shot of subscription services disabled.":::
 
-If you want to import data from an Excel file into a Power BI dataset, use the **Get data** experience. For more information, see [Import or connect to an Excel workbook by using Get Data](#import-or-connect-to-an-excel-workbook-by-using-get-data).
+If you want to import data from an Excel file into a Power BI dataset, use the **Get data** experience. For more information, see [Import or connect to an Excel workbook by using Get data](#import-or-connect-to-an-excel-workbook-by-using-get-data).
 
-You can't use **Upload** to get files from personal OneDrive accounts, but you can continue to use the **Get data** experience for workbooks in personal OneDrive accounts.
+You can't use **Upload** to get files from personal OneDrive accounts, but you can continue to use the [Get data](#import-or-connect-to-an-excel-workbook-by-using-get-data) experience for workbooks in personal OneDrive accounts.
 
 ## Prepare your workbook for Power BI
 Watch this helpful video to learn more about how to make sure your Excel workbooks are ready for Power BI.
@@ -81,7 +81,7 @@ Where you save your workbook file makes a difference.
 
 - **Local**. If you save your workbook file to a drive on your computer or another location in your organization, you can load your file into Power BI. Your file actually remains on the source drive, so Power BI doesn't really import the file. Power BI actually creates a new dataset and loads data and any data model from the workbook into the dataset.
 
-  Excel also has a **Publish** feature under the **File** menu. Using **Publish** is effectively the same as using **Get Data** > **Files** > **Local File** from Power BI. It's often easier to update your dataset in Power BI if you regularly make changes to the workbook.
+  Excel also has a **Publish** feature under the **File** menu. Using **Publish** is effectively the same as using **Get Data** > **Files** > **Local File** from Power BI. If you regularly make changes to the workbook, it's often easier to update your dataset in Power BI.
 
 - **OneDrive - Business**. Signing in to OneDrive for Business with the same account as Power BI is by far the most effective way to keep your work in Excel and your Power BI dataset, reports, and dashboards in sync. Both Power BI and OneDrive are in the cloud, so Power BI connects to your workbook file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI dataset, reports, and dashboards.
 
@@ -95,7 +95,7 @@ Where you save your workbook file makes a difference.
 
 <a name="one-excel-workbook--two-ways-to-use-it"></a>
 ## Import or connect to an Excel workbook
-If you save your workbook files to OneDrive for Business, you have a couple of ways to explore your data in Power BI.
+If you save your workbook files to OneDrive for Business, you have a couple of ways to explore your data in Power BI, **Import** or **Connect**.
 
 ![Screenshot of OneDrive for Business, showing the option to Import or Connect to Excel data.](media/service-excel-workbook-files/excel_import_connect.png)
 
@@ -108,7 +108,7 @@ You can continue editing your workbook. When you save your changes, Power BI syn
 |---------|---------|
 |Open the report, after the cache expires.|Open the dashboard, after the cache refreshes.|
 |Select **Refresh** in the report.|Select **Refresh** in the dashboard.|
-|     |If the dashboard is already open, automatically for pinned tiles, when the cache refreshes.|
+|     |Automatically for pinned tiles when the cache refreshes, if the dashboard is already open.|
 
 > [!NOTE]
 > Pinned report pages don't have the automatic refresh feature.
