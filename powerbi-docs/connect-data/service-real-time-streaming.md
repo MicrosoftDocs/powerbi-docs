@@ -117,7 +117,9 @@ To get started with real-time streaming, you choose one of the following ways to
 
 For either option, you need to set up streaming data in Power BI. To get your real-time streaming dataset working in Power BI:
 
-1. In either an existing or new dashboard, select **Add a tile**, and then select **Custom Streaming Data**.
+1. In either an existing or new dashboard, select **Add a tile**.
+
+1. On the **Add a tile** page, select **Custom Streaming Data**, and then select **Next**.
 
    ![Screenshot of the Add a tile page, showing the Custom Streaming Data selection.](media/service-real-time-streaming/real-time-streaming-1.png)
 
@@ -186,7 +188,7 @@ Here's an example of how real-time streaming in Power BI works. This sample uses
    
    ![Screenshot of the New streaming dataset dialog, showing defaults for the Dataset name and Values from stream fields.](media/service-real-time-streaming/real-time-streaming-9.png)
    
-1. In your Power BI workspace, create a new dashboard, and at the top of the screen, select **Edit** > **Add a tile**.
+1. Back in your Power BI workspace, create a new dashboard, and at the top of the screen, select **Edit** > **Add a tile**.
 
 1. Select **Custom Streaming Data**, and select **Next**.
 
@@ -214,7 +216,7 @@ Streaming datasets are designed to display the latest data. You can use the **Ca
 
 For push datasets, if you have a timestamp in the schema, you can try creating a report visual with the `last N` filter.
 
-#### How can you do any modeling on real-time datasets?
+#### How can you do modeling on real-time datasets?
 Modeling isn't possible on a streaming dataset, because the data isn't stored permanently. For a push dataset, you can use the [create dataset REST API](/rest/api/power-bi/push-datasets/datasets-post-dataset) to create a dataset with relationship and measures, and use the [update table REST APIs](/rest/api/power-bi/push-datasets/datasets-put-table) to add measures to existing tables.
 
 #### How can you clear all the values on a push or streaming dataset?
