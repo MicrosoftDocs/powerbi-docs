@@ -1,6 +1,6 @@
 ---
 title: Get data from Excel workbook files
-description: Learn how to get data from Excel workbook files into Power BI
+description: Learn how to get data from Excel workbook files into Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -64,9 +64,9 @@ If you don't have a subscription, the **OneDrive for Business** and **SharePoint
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screen shot of subscription services disabled.":::
 
-If you want to import data from an Excel file into a Power BI dataset, use the **Get data** experience. For more information, see [Import or connect to an Excel workbook by using Get data](#import-or-connect-to-an-excel-workbook-by-using-get-data).
+If you want to import data from an Excel file into a Power BI dataset, use the **Get data** experience. For more information, see [Import or connect to an Excel workbook by using Get data](#import-or-connect-by-using-get-data).
 
-You can't use **Upload** to get files from personal OneDrive accounts, but you can continue to use the [Get data](#import-or-connect-to-an-excel-workbook-by-using-get-data) experience for workbooks in personal OneDrive accounts.
+You can't use **Upload** to get files from personal OneDrive accounts, but you can continue to use the [Get data](#import-or-connect-by-using-get-data) experience for workbooks in personal OneDrive accounts.
 
 ## Prepare your workbook for Power BI
 Watch this helpful video to learn more about how to make sure your Excel workbooks are ready for Power BI.
@@ -94,7 +94,7 @@ Where you save your workbook file makes a difference.
 - **SharePoint - Team Sites**. Saving your Power BI Desktop files to SharePoint Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 <a name="one-excel-workbook--two-ways-to-use-it"></a>
-## Import or connect to an Excel workbook
+## Import or connect from OneDrive for Business
 If you save your workbook files to OneDrive for Business, you have a couple of ways to explore your data in Power BI, **Import** or **Connect**.
 
 ![Screenshot of OneDrive for Business, showing the option to Import or Connect to Excel data.](media/service-excel-workbook-files/excel_import_connect.png)
@@ -125,7 +125,7 @@ Choose the **Connect** option if you have only data in worksheets, or you have r
 In Excel 2016 and later, you can also use **File** > **Publish** > **Upload**. It's essentially the same thing. For more information, see [Publish to Power BI from Microsoft Excel](service-publish-from-excel.md).
 
 <a name="import-or-connect-to-an-excel-workbook-from-power-bi"></a>
-## Import or connect to an Excel workbook by using Get data
+## Import or connect by using Get data
 
 Instead of using the **Upload** option from your workspace, you can use **Get data** to import or connect to an Excel workbook.
 
