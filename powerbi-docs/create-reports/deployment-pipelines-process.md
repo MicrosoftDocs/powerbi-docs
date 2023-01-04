@@ -16,13 +16,13 @@ The deployment process lets you clone content from one stage in the pipeline to 
 
 During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you can't use the content in the target stage.
 
-You can also deploy content programmatically, using the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines). You can learn more about this process in the [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md) article.
+You can also deploy content programmatically, using the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines). You can learn more about this process in [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md).
 
 ## Deploying content to an empty stage
 
 When you deploy content to an empty stage, the metadata of the reports, dashboards, and datasets in the workspace you're deploying from, is copied to the stage you're deploying to. A new workspace for the stage you deployed to, is created on a Premium capacity.
 
-There are two ways to deploy content from one stage to the next one. You can deploy all the content, or you can [select which content items to deploy](deployment-pipelines-deploy.md#selective-deployment).
+There are two ways to deploy content from one stage to another. You can deploy all the content, or you can [select which items to deploy](deployment-pipelines-deploy.md#selective-deployment).
 
 You can also deploy content backwards, from a later stage in the deployment pipeline, to an earlier one.
 
@@ -30,7 +30,7 @@ After the deployment is complete, refresh the datasets so that you can use the n
 
 ### Creating a Premium workspace
 
-During first-time deployment, deployment pipelines checks if you have Premium permissions.  
+The first time you deploy content, deployment pipelines checks if you have Premium permissions.  
 
 If you have Premium permissions, the content of the workspace is copied to the stage you're deploying to, and a new  workspace for that stage is created on the Premium capacity.
 
@@ -46,13 +46,13 @@ The deploying user automatically becomes the dataset owner of the cloned dataset
 
 Deploying content in a working production pipeline, to a stage that has an existing workspace, includes the following:
 
-* Deploying new content as an addition, to a stage that already contains content.
+* Deploying new content as an addition to the content already there.
 
-* New content deployed to replace old content, in a current working  stage.
+* Deploying new content to replace some of the content already there.
 
 ### Deployment process
 
-Content from the current stage is copied over to the target stage. Power BI identifies existing content in the target stage and overwrites it. To identify which content item needs to be overwritten, deployment pipelines uses the connection between the parent item and its clones. This connection is kept when new content is created. The overwrite operation only overwrites the content of the item. The item's ID, URL, and permissions remain unchanged.
+When content from the current stage is copied to the target stage, Power BI identifies existing content in the target stage and overwrites it. To identify which content item needs to be overwritten, deployment pipelines uses the connection between the parent item and its clones. This connection is kept when new content is created. The overwrite operation only overwrites the content of the item. The item's ID, URL, and permissions remain unchanged.
 
 In the target stage, [item properties that aren't copied](deployment-pipelines-process.md#item-properties-that-are-not-copied), remain as they were before deployment. New content and new items are copied from the current stage to the target stage.
 
