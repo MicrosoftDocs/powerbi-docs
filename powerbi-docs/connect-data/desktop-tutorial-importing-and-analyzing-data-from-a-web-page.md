@@ -26,7 +26,7 @@ You can get the UEFA winners data from the Results table on the UEFA European Fo
 
 ![Screenshot shows Wikipedia Results table for the Euro Cup, which includes winners and other information.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
-Web connections are only established using basic authentication. Web sites requiring authentication may not work properly with the Web connector.
+Web connections are only established using basic authentication. Web sites requiring authentication might not work properly with the Web connector.
 
 To import the data:
 
@@ -44,17 +44,17 @@ To import the data:
 
    After you connect to the Wikipedia web page, the **Navigator** dialog shows a list of available tables on the page. You can select any of the table names to preview its data. The **Results[edit]** table has the data you want, although it's not exactly in the shape you want. You'll reshape and clean up the data before loading it into your report.
 
-   ![Screenshot shows the Navigator dialog with a table selected and Transform Data highlighted.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+   :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png" alt-text="Screenshot shows the Navigator dialog with a table selected and Transform Data highlighted." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png":::
 
    > [!NOTE]
    >
-   > The **Preview** pane shows the most recent table selected, but all selected tables will load into the Power Query Editor when you select **Transform Data** or **Load**.
+   > The **Preview** pane shows the most recent table selected, but all selected tables load into the Power Query Editor when you select **Transform Data** or **Load**.
 
 1. Select the **Results[edit]** table in the **Navigator** list, and then select **Transform Data**.
 
    A preview of the table opens in **Power Query Editor**, where you can apply transformations to clean up the data.
 
-   ![Screenshot shows Power Query Editor with imported data ready for transformations.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png" alt-text="Screenshot shows Power Query Editor with imported data ready for transformations." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png":::
 
 ## Shape data in Power Query Editor
 
@@ -62,7 +62,7 @@ You want to make the data easier to scan by displaying only the years and the co
 
 First, remove all the columns except for two from the table. Rename these columns as *Year* and *CountryRegion* later in the process.
 
-1. In the **Power Query Editor** grid, select the columns. Select Ctrl to select multiple items.
+1. In the **Power Query Editor** grid, select the columns. Select **Ctrl** to select multiple items.
 
 1. Right-click and select **Remove Other Columns**, or select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab, to remove all other columns from the table.
 
@@ -72,13 +72,13 @@ First, remove all the columns except for two from the table. Rename these column
 
    ![Screenshot shows columns highlighted with Remove Other Columns selected in the ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
 
-Next, remove the extra word *Details* from the first column cells.
+This version of the imported data has the word *Details* appended to the year. You can remove the extra word *Details* from the first column cells.
 
 1. Select the first column.
 
 1. Right-click, and select **Replace Values**, or select **Replace Values** from the **Transform** group in the **Home** tab of the ribbon. This option is also found in the **Any Column** group in the **Transform** tab.
 
-   ![Screenshot shows a column highlighted with Replace Values selected in the context menu.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) 
+   ![Screenshot shows a column highlighted with Replace Values selected in the context menu.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png)
 
    or
 
@@ -110,13 +110,13 @@ Since you're only looking at the final winners data now, you can rename the seco
 
 1. Type **CountryRegion** in the header and press **Enter** to rename the column.
 
-You also want to filter out rows like "2020" that have null values in the **CountryRegion** column. You could use the filter menu as you did with the **Year** values, or you can:
+You also want to filter out rows that have `null` values in the **CountryRegion** column. You could use the filter menu as you did with the **Year** values, or you can:
 
 1. Right-click on the **CountryRegion** cell in the **2020** row, which has the value *null*.
 
 1. Select **Text Filters** > **Does not Equal** in the context menu to remove any rows that contain that cell's value.
 
-   ![Text filter](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
+   ![Screenshot shows a context menu with Text Filters, the Does Not Equal selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
 
 ## Import the query into Report View
 
@@ -124,15 +124,15 @@ Now that you've shaped the data the way you want, you're ready to name your quer
 
 1. In the **Query Settings** pane, in the **Name** text box, enter **Euro Cup Winners**.
 
-   ![Name the query](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
+   ![NScreenshot shows Query Settings with the name Euro Cup Winners entered.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
 
 1. Select **Close & Apply** > **Close & Apply** from the **Home** tab of the ribbon.
 
-   ![Close & Apply](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
+   ![Screenshot shows the Close & Apply option on the Home ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
 
 The query loads into the Power BI Desktop *Report* view, where you can see it in the **Fields** pane.
 
-   ![Fields Pane](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
+   ![Screenshot shows the Fields pane with Euro Cup Winners fields, Country and Year.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 
 > [!TIP]
 >
@@ -147,15 +147,15 @@ To create a visualization based on your data:
 
 1. Select the **CountryRegion** field in the **Fields** pane, or drag it to the report canvas. Power BI Desktop recognizes the data as country/region names, and automatically creates a **Map** visualization.
 
-   ![Map visualization](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png)
+   :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png" alt-text="Screenshot shows a map visualization of the Country/Region field." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png":::
 
 1. Enlarge the map by dragging the handles in the corners so all the winning country/region names are visible.  
 
-   ![Enlarge map](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
+   ![Screenshot shows the map enlarged, as described.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
 
 1. The map shows identical data points for every country/region that won a Euro Cup tournament. To make the size of each data point reflect how often the country/region has won, drag the **Year** field to **Drag data fields here** under **Bubble size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries/regions that have won more tournaments.
 
-   ![Drag Count of Year into Size](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
+   :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png" alt-text="Screenshot shows the result of dragging Count of Year into Bubble size." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png":::
 
 ## Customize the visualization
 
@@ -163,33 +163,33 @@ As you can see, it's very easy to create visualizations based on your data. It's
 
 ### Format the map
 
-You can change the appearance of a visualization by selecting it and then selecting the **Format** (paint roller) icon in the **Visualizations** pane. For example, the "Germany" data points in your visualization could be misleading, because West Germany won two tournaments and Germany won one. The map superimposes the two points rather than separating or adding them together. You can color these two points differently to highlight this fact. You can also give the map a more descriptive and attractive title.
+You can change the appearance of a visualization by selecting it and then selecting the **Format** (paint brush) icon in the **Visualizations** pane. For example, the "Germany" data points in your visualization could be misleading, because West Germany won two tournaments and Germany won one. The map superimposes the two points rather than separating or adding them together. You can color these two points differently to highlight this fact. You can also give the map a more descriptive and attractive title.
 
-1. With the visualization selected, select the **Format** icon, and then select **Data colors** to expand the data color options.
+1. With the visualization selected, select the **Format** icon, and then select **Visual** > **Bubbles** > **Colors** to expand the data color options.
 
-   ![Format icon and data colors selection](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
+   ![Screenshot shows the Format icon selected with the Bubbles option open and Colors highlighted.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
 
 1. Turn **Show all** to **On**, and then select the drop-down menu next to **West Germany** and choose a yellow color.
 
-   ![Change color](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
+   ![Screenshot shows colors you can select to change the color, including Theme colors and Recent colors.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
 
-1. Select **Title** to expand the title options, and in the **Title text** field, type **Euro Cup Winners** in place of the current title.
+1. Select **General** > **Title** to expand the title options, and in the **Text** field, type **Euro Cup Winners** in place of the current title.
 
-1. Change **Font color** to red, **Text size** to **12**, and **Font family** to **Segoe (Bold)**.
+1. Change **Text color** to red, size to **12**, and **Font** to **Segoe UI (Bold)**.
 
-   ![Font color, size, and family](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
+   ![Screenshot shows the Title option, where you can change font color, size, and family.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
 
-Your map visualization now looks like this:
+Your map visualization now looks like this example:
 
-![Formatted map visualization](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web18.png)
+:::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web18.png" alt-text="Screenshot shows the map visualization with the formatting changes applied." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web18.png":::
 
 ### Change the visualization type
 
-You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union, because that country/region no longer exists on the world map. Another type of visualization like a treemap or pie chart may be more accurate, because it shows all the values.
+You can change the type of a visualization by selecting it and then selecting a different icon at the top of the **Visualizations** pane. For example, your map visualization is missing the data for the Soviet Union, because that country/region no longer exists on the world map. Another type of visualization like a *treemap* or *pie chart* might be more accurate, because it shows all the values.
 
-To change the map to a pie chart, select the map and then select the **Pie chart** icon in the **Visualizations** pane.
+To change the map to a pie chart, select the map and then choose the **Pie chart** icon in the **Visualizations** pane.
 
-![Change visualization to a pie chart](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png)
+:::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png" alt-text="Screenshot shows the same fields changed to a pie chart." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png":::
 
 > [!TIP]
 >
