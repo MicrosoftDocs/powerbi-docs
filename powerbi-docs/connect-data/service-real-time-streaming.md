@@ -13,9 +13,9 @@ LocalizationGroup: Data from files
 # Real-time streaming in Power BI
 Power BI with real-time streaming helps you stream data and update dashboards in real time. Any visual or dashboard created in Power BI can display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, or many other time-sensitive data collectors or transmitters.
 
-![Screenshot of the Environmental sensors dashboard, showing the results of the data in real-time.](media/service-real-time-streaming/real-time-streaming-10.png)
-
 This article shows you how to set up and use real-time streaming datasets in Power BI.
+
+![Screenshot of the Environmental sensors dashboard, showing the results of the data in real-time.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 ## Types of real-time datasets
 First, it's important to understand the types of real-time datasets that are designed to display in tiles and dashboards, and how those datasets differ.
@@ -74,7 +74,7 @@ This section describes how to create and push data into the three primary types 
 You can push data into a dataset by using the following methods:
 
 * The Power BI REST APIs
-* The Streaming Dataset UI
+* The Power BI streaming dataset UI
 * Azure Stream Analytics
 
 ### Use Power BI REST APIs to push data
@@ -87,7 +87,7 @@ If no `defaultMode` flag is set, the dataset defaults to a push dataset. If the 
 
 Once a dataset is created, you can use the [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) REST APIs to push data. All requests to REST APIs are secured by using *Azure Active Directory (Azure AD) OAuth*.
 
-### Use the Streaming Dataset UI to push data
+### Use the streaming dataset UI to push data
 In the Power BI service, you can create a dataset by selecting the **API** approach, as shown in the following screenshot:
 
 ![Screenshot of the New streaming dataset choices, showing the API selection.](media/service-real-time-streaming/real-time-streaming-0b.png)
@@ -117,9 +117,9 @@ To get started with real-time streaming, you choose one of the following ways to
 
 For either option, you need to set up streaming data in Power BI. To get your real-time streaming dataset working in Power BI:
 
-1. In either an existing or new dashboard, select **Add a tile**, and then select **Custom streaming data**.
+1. In either an existing or new dashboard, select **Add a tile**, and then select **Custom Streaming Data**.
 
-   ![Screenshot of the dashboard, showing the Custom streaming data selection in the Add tile section.](media/service-real-time-streaming/real-time-streaming-1.png)
+   ![Screenshot of the Add a tile page, showing the Custom Streaming Data selection.](media/service-real-time-streaming/real-time-streaming-1.png)
 
 1. On the **Add a custom streaming data tile** page, you can select an existing dataset, or select **Manage datasets** to import your streaming dataset if you already created one. If you don't have streaming data set up yet, select **Add streaming dataset** to get started.
 
@@ -138,7 +138,7 @@ There are three ways to create a real-time streaming data feed that Power BI can
 
 This section describes the Power BI REST API and PubNub options, and explains how to create a streaming tile or dataset from the streaming data source. You can then use the dataset to build reports. For more information about the Azure Stream option, see [Power BI output from Azure Stream Analytics](/azure/stream-analytics/power-bi-output).
 
-### Use the POWER BI REST API
+### Use the Power BI REST API
 The Power BI REST API makes real-time streaming easier for developers. After you select **API** on the **New streaming dataset** screen and select **Next**, you can provide entries that enable Power BI to connect to and use your endpoint. For more information about the API, see [Use the Power BI REST APIs](/rest/api/power-bi).
 
 ![Screenshot of the New streaming dataset dialog, showing the Power BI REST API entries for a connection.](media/service-real-time-streaming/real-time-streaming-5.png)
@@ -163,8 +163,6 @@ PubNub data streams are often high volume, and aren't always suitable for storag
 ## Example of real-time streaming in Power BI
 Here's an example of how real-time streaming in Power BI works. This sample uses a publicly available stream from PubNub. Follow along with the example to see the value of real-time streaming for yourself.
 
-Here are the steps:
-
 1. In the Power BI service, select or create a new dashboard. At the top of the screen, select **Edit** > **Add a tile**. 
 
 1. On the **Add a tile** screen, select **Custom Streaming Data**, and then select **Next**.
@@ -177,7 +175,7 @@ Here are the steps:
 
 1. On the **New streaming dataset** page, select **PubNub**, and then select **Next**.
 
-1. On the next screen, enter a **Dataset name**, enter the following values into the next two fields, and then select **Next**:
+1. On the next screen, enter a **Dataset name**, enter the following values into the next two fields, and then select **Next**.
    
    - **Sub-key:** *sub-c-99084bc5-1844-4e1c-82ca-a01b18166ca8*
    - **Channel name:** *pubnub-sensor-network*
@@ -207,12 +205,12 @@ Here are some common questions and answers about real-time streaming in Power BI
 #### Can you use filters on push or streaming datasets?
 Streaming datasets don't support filtering. For push datasets, you can create a report, filter the report, and then pin the filtered visuals to a dashboard. However, there's no way to change the filter on the visual once it's on the dashboard.
 
-You can pin the live report tile to the dashboard separately, and then you can change the filters. However, live report tiles won't update in real time as data is pushed in. You have to manually update the visual by selecting the **Refresh** icon at the upper-right of the dashboard page.
+You can pin the live report tile to the dashboard separately, and then you can change the filters. However, live report tiles won't update in real time as data is pushed in. You have to manually update the visual by selecting the **Refresh** icon at top right on the dashboard page.
 
 When you apply filters to push datasets that have `DateTime` fields with millisecond precision, equivalence operators aren't supported. Operators such as greater than \> or less than \< operate properly.
 
 #### How do you see the latest value on push or streaming datasets?
-Streaming datasets are designed to display the latest data. You can use the **Card** streaming visual type to easily see the latest numeric values. The card doesn't support `DateTime` or `Text` data types.
+Streaming datasets are designed to display the latest data. You can use the **Card** streaming visual type to easily see the latest numeric values. Card visuals don't support `DateTime` or `Text` data types.
 
 For push datasets, if you have a timestamp in the schema, you can try creating a report visual with the `last N` filter.
 
