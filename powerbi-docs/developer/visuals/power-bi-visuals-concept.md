@@ -17,8 +17,8 @@ The article describes the [Visual API](./visual-api.md), and how Power BI handle
 
 Actions and subsequent updates in Power BI can be initiated manually or automatically. They three main types of updates are:
 
-* [Interact with a visual through Power BI](#user-interacts-with-a-visual-through-power-bi).
-* [Interact with the visual directly](#user-interacts-with-the-visual-directly).
+* [Interact with a visual through Power BI](#interact-with-a-visual-through-power-bi).
+* [Interact with the visual directly](#interact-with-the-visual-directly).
 * [Visual interact with Power BI](#visual-interacts-with-power-bi).
 
 The following figure shows how common visual-based actions, like selecting a bookmark, process in Power BI.
