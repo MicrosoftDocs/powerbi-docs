@@ -160,7 +160,7 @@ The integration of PubNub streaming with Power BI helps you create and use your 
 > [!IMPORTANT]
 > You can secure PubNub channels by using a PubNub Access Manager (PAM) authentication key. This key is shared with all users who have access to the dashboard. For more information about PubNub access control, see [Manage Access](https://www.pubnub.com/docs/web-javascript/pam-security).
 
-PubNub data streams are often high volume, and aren't always suitable for storage and historical analysis in their original form. To use Power BI for historical analysis of PubNub data, you can aggregate the raw PubNub stream and send it to Power BI. [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics) is one way to do that process.
+PubNub data streams are often high volume, and aren't always suitable for storage and historical analysis in their original form. To use Power BI for historical analysis of PubNub data, you must aggregate the raw PubNub stream and send it to Power BI, for example by using [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics).
 
 ## Example of real-time streaming in Power BI
 Here's an example of how real-time streaming in Power BI works. This sample uses a publicly available stream from PubNub. Follow along with the example to see the value of real-time streaming for yourself.
