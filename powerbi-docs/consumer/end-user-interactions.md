@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page contain that data change based on your selection.
 
-![video of visuals interacting](media/end-user-interactions/interactions.gif)
+![Animation selecting data points in one visual, which shows how other visuals are effected.](media/end-user-interactions/interactions.gif)
 
 ## How visuals interact with each other
 
@@ -31,11 +31,11 @@ Cross-filtering and cross-highlighting can be useful to identify how one value i
 
 The following report pages show examples of cross-filtering and cross-highlighting. The **Total Category Volume by Segment** bar chart has two values, **Moderation** and **Convenience**.
 
-:::image type="content" source="media/end-user-interactions/power-bi-gauge.png" alt-text="Screenshot showing the VanArsdel Market Share report page.":::
+:::image type="content" source="media/end-user-interactions/power-bi-gauge.png" alt-text="Screenshot of the VanArsdel Market Share report page with a visual highlighted.":::
 
 In the following example, **Moderation** is selected.
 
-:::image type="content" source="media/end-user-interactions/power-bi-filtered.png" alt-text="Report page after Moderation segment of doughnut chart selected.":::
+:::image type="content" source="media/end-user-interactions/power-bi-filtered.png" alt-text="Screenshot of a report page after the Moderation segment of the bar chart is selected.":::
 
 Because **Moderation** is selected on the bar chart:
 
@@ -49,7 +49,7 @@ Because **Moderation** is selected on the bar chart:
 
 - Visual-level filters are retained when cross-filtering and cross-highlighting other visuals on the report page. So, if VisualA has visual-level filters applied by the report designer or by you, and you use VisualA to interact with VisualB, visual-level filters from VisualA will be applied to VisualB.
 
-    ![Report page showing filters already set](media/end-user-interactions/power-bi-visual-filters.png)
+    :::image type="content" source="media/end-user-interactions/power-bi-visual-filters.png" alt-text="Screenshot of a report visual with filters already set.":::
 
 - If the tables have no hierarchical relationships, slicing up the measures (often referred as complex slicers) might result in an error. If you have access to the logs, you'll see the message "Measures are not allowed with complex slicers unless they have a filter context change". To avoid this situation, don't use complex slicers or remodel the relationships to get the desired output.
 
