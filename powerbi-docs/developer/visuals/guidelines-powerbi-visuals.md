@@ -1,20 +1,20 @@
 ---
 title: Guidelines for publishing Power BI custom visuals
-description: Guidelines to publish your custom visual to Microsoft AppSource so others can discover and purchase it.
+description: Guidelines to publish Power BI custom visuals to Microsoft AppSource and help with online discoverability.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 04/24/2022
+ms.date: 01/04/2023
 ---
 
 # Guidelines for publishing Power BI custom visuals
 
-Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, follow these guidelines for creating a great experience for your users.
+Before [publishing your Power BI visuals to Microsoft AppSource](office-store.md) for others to discover and use, follow these guidelines to create a great experience for your users.
 
-## *Free* and *for purchase* Power BI visuals
+## Power BI visuals: *Free* or *for purchase*
 
 Power BI visuals submitted to the [Commercial Marketplace](/azure/marketplace/overview) (Microsoft AppSource) can be made available for free, or they can have an *additional purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins.
 
@@ -22,24 +22,24 @@ Like the free Power BI visuals, an IAP Power BI visual can also be certified. Be
 
 ### Power BI visuals with IAP features
 
-An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features available for a fee. In the Power BI visual's description, developers must notify users about features that require additional purchases to operate. Currently, Microsoft doesn't provide native APIs to support the purchase of apps and add-ins.
+An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features available for a fee. In the Power BI visual's description, developers must notify users about features that require additional purchases to operate them. Currently, Microsoft doesn't provide native APIs to support the purchase of apps and add-ins.
 
 Developers may use any third-party payment system for these purchases. For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 >[!IMPORTANT]  
-> If you update your Power BI visual from *free* to *additional purchase may be required*, users must receive the same level of free functionality as before the update. You may add optional advanced paid features in addition to the existing free features.
+> If you update your Power BI visual from *free* to *additional purchase may be required*, customers must receive the same level of free functionality as before the update. You may add optional advanced paid features in addition to the existing free features.
 
 ### Watermarks
 
 You can use watermarks to allow customers to continue using the IAP advanced features without paying.
 
-Watermarks let you showcase the full functionality of the Power BI visual before a purchase is made.
+Watermarks let you showcase the full functionality of the Power BI visual to customers before they make a purchase.
 
-Only use watermarks on **paid** features that are used without a valid license. Watermarks aren't allowed on free features of IAP visuals.
+Only use watermarks on **paid** features used without a valid license. Watermarks aren't allowed on free features of IAP visuals.
 
 ### Pop-up window
 
-Use a pop-up window to explain how to purchase a license when an invalid (or expired) license is used with your Power BI IAP visual.
+Use a pop-up window to explain how to purchase a license when customers use an invalid (or expired) license with your Power BI IAP visual.
 
 ### Submission process
 
