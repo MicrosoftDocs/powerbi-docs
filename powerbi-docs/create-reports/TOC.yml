@@ -554,6 +554,12 @@
       href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
+    - name: "Device information settings"  
+      items:
+      - name: Device information settings for rendering extensions
+        href: ../paginated-reports/device-info/device-information-settings-for-paginated-reports-rendering-extensions.md
+      - name: CSV device information settings
+        href: ../paginated-reports/device-info/csv-device-information-settings.md
   - name: "Deployment pipelines"  
     items:
     - name: "Introduction to deployment pipelines"
