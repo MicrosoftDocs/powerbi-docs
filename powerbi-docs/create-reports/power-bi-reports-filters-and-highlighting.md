@@ -102,7 +102,7 @@ You can explore the relationships between the visuals in your report without usi
 - **Cross-highlighting** Selecting a value in one visual highlights the related data in visuals such as column and bar charts. Cross-highlighting doesn't remove the unrelated data from those visuals. The unrelated data is still visible but dimmed. 
 - **Cross-filtering** Selecting a value in one visual acts more like a filter in other visuals, such as line charts, scatter charts, and maps. In those visuals, only the related data remains visible. The unrelated data isn't visible, just as you'd see with a filter. 
 
-To remove the highlighting, select the value again, or select any empty space in the same visual. For more examples, see the [Cross-filtering and cross-highlighting](../consumer/end-user-interactions.md#cross-filtering-and-cross-highlighting) section of "How visuals cross-filter each other in a Power BI report."
+To remove the highlighting, select the value again, or select any empty space in the same visual. For more examples, see the [Cross-filtering and cross-highlighting](../consumer/end-user-interactions.md#cross-filter-and-cross-highlight) section of "How visuals cross-filter each other in a Power BI report."
 
 :::image type="content" source="media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif" alt-text="Animation showing cross-filtering and cross-highlighting.":::
 
