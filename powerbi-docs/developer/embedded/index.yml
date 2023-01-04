@@ -32,8 +32,8 @@ landingContent:
             url: embedded-faq.yml
       - linkListType: whats-new
         links:
-          - text: "Power BI Embedded Generation 2"
-            url: power-bi-embedded-generation-2.md
+          - text: "Multitenancy solutions"
+            url: embed-multi-tenancy.md
       - linkListType: reference
         links:
           - text: "Power BI Developer in a Day course"
