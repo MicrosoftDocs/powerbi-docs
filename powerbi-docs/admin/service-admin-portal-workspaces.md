@@ -12,7 +12,7 @@ ms.date: 01/05/2023
 LocalizationGroup: Administration
 ---
 
-# View workspaces
+# Manage workspaces
 
 Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
