@@ -16,32 +16,32 @@ LocalizationGroup: Administration
 
 Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
-As an administrator, you can govern the workspaces that exist in your organization on the **Workspaces** tab. On this tab, you can perform these actions:
-
-- Refresh the list of workspaces and their details.
-- Export the data about the workspaces to a .csv file.
-- See details about a workspace, including its ID, its users and their roles, and its dashboards, reports, and datasets.
-- Edit the list of people who have access. You can use this feature to delete workspaces by first adding yourself to a workspace as an admin then opening the workspace to delete it.
-- Edit the Name and Description fields.
-- Upgrade classic workspaces to the new workspace experience.
+As A Power BI administrator, you can govern the workspaces that exist in your organization on the **Workspaces** tab. On this tab, you see a list of all the workspaces in your tenant. Above the list, an ribbon provides to help you govern the workspaces. These options also appear in the **More options (...)** menu of the selected workspace. These options are described in [workspace options section](#workspace-options).
 
 :::image type="content" source="media/service-admin-portal-workspaces/power-bi-workspaces-admin-portal.png" alt-text="Screenshot that shows a Power B I workspaces list in the admin portal.":::
 
-Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](service-admin-portal-workspace.md) in this article for details.
-
-The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Workspaces in Power BI](../collaborate-share/service-new-workspaces.md).
+The columns of the list of workspaces are described below
 
 | Column | Description |
 | --------- | --------- |
-| Name | The name given to the workspace. |
-| Description | Additional information about what the workspace was created for. (Optional) |
-| Type | The type of workspace. There are two types of workspaces, **workspace** and **personal group** |
-| State | The state lets you know if the workspace is available for use. There are five states, **Active**, **Orphaned**, **Deleted**, **Removing**, and **Not found**. For more information about workspace states, see [Workspace states](#workspace-states). |
-| Capacity name | Name given to the workspace's capacity. |
-| Capacity SKU Tier | The type of license used for the workspace's capacity. Capacity SKU Tiers include **Premium Gen2** and **Premium Per User (PPU)**. For more information about capacity tiers, see [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md). |
-| Upgrade status | The upgrade status lets you know if the workspace is eligible for a Power BI upgrade. |
+| **Name** | The name given to the workspace. |
+| **Description** | The information that is given in the description field of the workspace settings. |
+| **Type** | The type of workspace. There are three types of workspaces, **Workspace**, **Personal Group** ("My workspace"), and **Admin Workspace**. |
+| **State** | The state lets you know if the workspace is available for use. There are five states, **Active**, **Orphaned**, **Deleted**, **Removing**, and **Not found**. For more information, see [Workspace states](#workspace-states). |
+| **Capacity name** | Name given to the workspace's capacity. |
+| **Capacity SKU Tier** | The type of license used for the workspace's capacity. Capacity SKU Tiers include **Premium Gen2** and **Premium Per User (PPU)**. For more information about capacity tiers, see [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md). |
+| **Upgrade status** | The upgrade status lets you know if the workspace is eligible for a Power BI upgrade. |
 
-On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
+The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Workspaces in Power BI](../collaborate-share/service-new-workspaces.md).
+
+Admins can also control users' ability to create new workspace experience workspaces and classic workspaces. See [Workspace settings](service-admin-portal-workspace.md) in this article for details.
+
+Admins can also manage and recover workspaces using either the admin portal or PowerShell cmdlets.
+
+
+## Workspace states
+
+The possible workspace states are described below.
 
 |State  |Description  |
 |---------|---------|
@@ -51,9 +51,26 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 | **Removing** | After you delete a workspace, and once the 90 day grace period passes, the workspace moves into the *Removing* state. During this state, the workspace is permanently removed. Permanently removing a workspace takes a short while, and depends on the service and folder content. |
 | **Not found** | If the customer's API request includes a workspace ID for a workspace that doesn't belong to the customer's tenant, "Not found" is returned as the status for that ID. |
 
-Admins can also manage and recover workspaces using either the admin portal or PowerShell cmdlets.
+## Workspace options
 
-![Admins can also manage and recover workspaces.](media/service-admin-portal-workspaces/admin-portal-manage-workspaces.png)
+The ribbon at the top of the list and the More options (...) menus of the individual workspaces provide options that to help you manage the workspaces. The Refresh and the Export options are always present, while the selection of other options that appear depends on the workspace type and status. All the options are described below.
+
+|Option  |Description  |
+|---------|---------|
+| **Refresh** | Refreshes the workspace list.|
+| **Export** |Exports the table as a *.csv* file.|
+| **Details** |Lists the items that are contained in the workspace.|
+| **Edit** |Enables you edit the workspace name and description. |
+| **Access** |Enables you to manage workspace access. You can use this feature to delete workspaces by first adding yourself to a workspace as an admin then opening the workspace to delete it.|
+| **Get access** |Grants you temporary access to another user's MyWorkspace. See [Gain access to any user's My workspace](#gain-access-to-any-users-my-workspace) for detail.|
+| **Capacity** |Enables you assign the workspace to Premium capacity or to remove it from Premium capacity. |
+| **Recover** |Enables you to restore an orphaned workspace. |
+| **Restore** |Enables you to restore the MyWorkspace of a user that has left the organization. See [Restore a deleted My workspace as an app workspace](#restore-a-deleted-my-workspace-as-an-app-workspace) for detail. |
+
+>[!NOTE]
+> Admins can also manage and recover workspaces using PowerShell cmdlets.
+>
+> Admins can also control users' ability to create new workspace experience workspaces and classic workspaces. See [Workspace settings](service-admin-portal-workspace.md) in this article for details.
 
 ## Govern My workspaces
 
