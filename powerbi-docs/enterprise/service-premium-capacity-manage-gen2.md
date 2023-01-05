@@ -36,7 +36,7 @@ When creating a Premium capacity, administrators are required to define:
 At least one Capacity Admin must be assigned. Users assigned as Capacity Admins can:
 
 * Remove assigned workspaces from the capacity
-* Specify a default capacity for personal workspaces
+* Specify a default capacity for My workspaces
 * Manage user permissions and assign:
     * Additional Capacity Admins
     * Contributors - Users who are allowed to assign workspaces to that capacity (Capacity Admins are automatically also Contributors)
@@ -75,10 +75,10 @@ Workspaces can be assigned to a Premium capacity in the Power BI Admin portal or
 
 Capacity Admins, as well as Global Administrators or Power BI service administrators, can bulk assign workspaces in the Power BI Admin portal. Bulk assigned can apply to:
 
-- **Workspaces by users** - All workspaces owned by those users, including personal workspaces, are assigned to the Premium capacity. This will include the reassignment of workspaces when they're already assigned to a different Premium capacity. In addition, the users are also assigned workspace assignment permissions.
+- **Workspaces by users** - All workspaces owned by those users, including My workspaces, are assigned to the Premium capacity. This will include the reassignment of workspaces when they're already assigned to a different Premium capacity. In addition, the users are also assigned workspace assignment permissions.
 
 - **Specific workspaces**
-- **The entire organization's workspaces** - All workspaces, including personal workspaces, are assigned to the Premium capacity. All current and future users are assigned workspace assignment permissions. This approach isn't recommended. A more targeted approach is preferred.
+- **The entire organization's workspaces** - All workspaces, including My workspaces, are assigned to the Premium capacity. All current and future users are assigned workspace assignment permissions. This approach isn't recommended. A more targeted approach is preferred.
 
 You can enable Premium capabilities in a workspace by setting the proper license mode. To set a license mode, you must be both a workspace admin, and have assignment permissions. To enable Premium capabilities for P and EM SKUs, set the license mode to Premium per capacity. To enable Premium capabilities for A SKUs, set the license mode to Embedded. To enable Premium capabilities for Premium Per User (PPU), mark the license mode as Premium Per User. To remove a workspace from Premium, mark the workspace license mode as Pro.
 
