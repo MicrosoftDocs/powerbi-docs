@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 11/10/2022
+ms.date: 01/05/2023
 LocalizationGroup: Administration
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 Go to the **Admin portal** to access this feature. For information about how to get to and use the Admin portal, see [About the Admin portal](service-admin-portal.md).
 
-As A Power BI administrator, you can govern the workspaces that exist in your organization on the **Workspaces** tab. On this tab, you see a list of all the workspaces in your tenant. Above the list, an ribbon provides to help you govern the workspaces. These options also appear in the **More options (...)** menu of the selected workspace. These options are described in [workspace options section](#workspace-options).
+As A Power BI administrator, you can govern the workspaces that exist in your organization on the **Workspaces** tab. On this tab, you see a list of all the workspaces in your tenant. Above the list, a ribbon provides options to help you govern the workspaces. These options also appear in the **More options (...)** menu of the selected workspace. The list of options varies depending on workspace type and status. All the options are described under [workspace options](#workspace-options).
 
 :::image type="content" source="media/service-admin-portal-workspaces/power-bi-workspaces-admin-portal.png" alt-text="Screenshot that shows a Power B I workspaces list in the admin portal.":::
 
@@ -33,11 +33,6 @@ The columns of the list of workspaces are described below
 | **Upgrade status** | The upgrade status lets you know if the workspace is eligible for a Power BI upgrade. |
 
 The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Workspaces in Power BI](../collaborate-share/service-new-workspaces.md).
-
-Admins can also control users' ability to create new workspace experience workspaces and classic workspaces. See [Workspace settings](service-admin-portal-workspace.md) in this article for details.
-
-Admins can also manage and recover workspaces using either the admin portal or PowerShell cmdlets.
-
 
 ## Workspace states
 
