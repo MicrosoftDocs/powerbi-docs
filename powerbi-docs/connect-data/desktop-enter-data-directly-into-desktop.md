@@ -25,7 +25,7 @@ Power BI Desktop might attempt to make minor transformations on the data, if app
 
 If you want to shape the data you entered or pasted, select **Edit** to open **Power Query Editor**. You can shape and transform the data before bringing it into Power BI Desktop. Select **Load** to import the data as it appears.
 
-When you select **Load**, Power BI Desktop creates a new table from your data, and makes it available in the **Fields** pane. In the following image, Power BI Desktop shows my new table, called *Table1*, and the two fields within that table that were created.
+When you select **Load**, Power BI Desktop creates a new table from your data, and makes it available in the **Fields** pane. In the following image, Power BI Desktop shows your new table, called **Table**, and the two fields within that table that were created.
 
 ![Screenshot shows the table created with the two fields loaded into Power BI Desktop.](media/desktop-enter-data-directly-into-desktop/enter-data-directly_3.png)
 
