@@ -65,7 +65,7 @@ The ribbon at the top of the list and the More options (...) menus of the indivi
 >[!NOTE]
 > Admins can also manage and recover workspaces using PowerShell cmdlets.
 >
-> Admins can also control users' ability to create new workspace experience workspaces and classic workspaces. See [Workspace settings](service-admin-portal-workspace.md) in this article for details.
+> Admins can also control users' ability to create new workspace experience workspaces and classic workspaces. See [Workspace settings](./service-admin-portal-workspace.md) in this article for details.
 
 ## Govern My workspaces
 

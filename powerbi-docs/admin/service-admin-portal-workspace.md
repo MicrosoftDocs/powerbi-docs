@@ -16,12 +16,6 @@ LocalizationGroup: Administration
 
 These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
-In **Tenant settings**, the admin portal has three sections for controlling workspaces:
-
-- [Create the new workspace experiences](service-admin-portal-workspace.md#create-the-new-workspaces).
-- [Use datasets across workspaces](service-admin-portal-workspace.md#use-datasets-across-workspaces).
-- [Block upgrading empty classic workspaces](service-admin-portal-workspace.md#empty-classic-workspaces).
-
 ## Create workspaces (new workspace)
 
 Workspaces are places where users collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can let everybody or nobody in an organization create new workspace experience workspaces. Workspace creation can also be limited to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
