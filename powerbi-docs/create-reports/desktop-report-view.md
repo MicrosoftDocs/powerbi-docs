@@ -56,7 +56,7 @@ To delete a page, select the **x** on the page's tab at the bottom of the Report
 
 ## Copy and paste between reports
 
-You can easily take a visual from one Power BI Desktop report and paste it into another report. Use the Ctrl+C keyboard shortcut to copy your report visual. In the other Power BI Desktop report, use Ctrl+V to paste the visual into the other report. You can select one visual at a time or all visuals on a page to copy. Then paste into the destination Power BI Desktop report.
+You can easily take a visual from one Power BI Desktop report and paste it into another report. Use the Ctrl+C keyboard shortcut to copy your report visual. In the other Power BI Desktop report, use Ctrl+V to paste the visual into the other report. You can select one visual at a time, or all visuals on a page, to copy then paste into the destination Power BI Desktop report.
 
 The ability to copy and paste visuals is useful for people who build and updates multiple reports frequently. When you copy between files, settings and formatting that have been explicitly set in the formatting pane will carry forward, while visual elements relying on a theme or the default settings automatically update to match the theme of the destination report. When you get a visual formatted and appearing the way you want, you can copy and paste that visual into new reports and preserve your work.
 
@@ -68,7 +68,7 @@ To correct the error, replace the broken fields with the fields you want to use 
 
 ## Hide report pages
 
-When you create a report, you can also hide pages from a report. This approach might be useful if you need to create underlying data or visuals in a report, but you don't want those pages to be visible to others. Hiding pages can be useful when you create tables or supporting visuals that are used in other report pages. There are many other creative reasons you might want to create a report page and hide it from a report you want to publish.
+When you create a report, you can also hide pages from a report. This approach might be useful if you need to create underlying data or visuals in a report, but you don't want those pages to be visible to others. Hiding pages can be useful when you create tables or supporting visuals that are used in other report pages. There are many other creative reasons you might want to create a report page then hide it from a report you want to publish.
 
 Hiding a report page is easy. Right-click on the report page tab, and select **Hide** from the menu that appears.
 
@@ -82,8 +82,8 @@ There are a few considerations to keep in mind when hiding a report page:
 
 * You *can't* see a hidden report page when you view the report in the Power BI service in **Reading** view, but you *can* see it in **Edit** view.
 
-* If you're looking at the hidden page when you save the report, then you publish it to the Power BI service, that page is the first one your report readers will see.
+* If you're looking at the hidden page when you save the report, and then you publish it to the Power BI service, that page is the first one your report readers will see.
 
 * Hiding a report page is *not* a security measure. The page can still be accessed by users, and its content is still accessible using drillthrough and other methods.
 
-* When a page is hidden in View mode, no view-mode navigation arrows are shown.
+* No view-mode navigation arrows appear when a page is hidden in View mode.
