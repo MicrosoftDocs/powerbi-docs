@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # PPTX Device Information Settings
-  The following table lists the device information settings for rendering [!INCLUDE[ssRSnoversion](/sql/includes/ssrsnoversion-md)] reports in the PPTX format.  
+  The following table lists the device information settings for rendering reports in the PPTX format.  
   
 |Setting|Value|  
 |-------------|-----------|  

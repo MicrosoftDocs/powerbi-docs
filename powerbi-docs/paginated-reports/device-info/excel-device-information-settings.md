@@ -10,7 +10,7 @@ ms.author: maggies
 ---
 
 # Excel Device Information Settings
-  The following table lists the device information settings for rendering in [!INCLUDE[ofprexcel](/sql/includes/ofprexcel-md)] format.  
+  The following table lists the device information settings for rendering in Microsoft Excel format.  
   
 |Setting|Value|  
 |-------------|-----------|  
