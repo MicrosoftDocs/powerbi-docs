@@ -1,8 +1,8 @@
 ---
 title: Deployment pipelines, the Power BI Application lifecycle management (ALM) tool, process
 description: Understand how deployment pipelines, the Power BI Application lifecycle management (ALM) tool, works
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
@@ -12,7 +12,7 @@ ms.date: 11/16/2022
 
 # Understand the deployment process
 
-The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
+The deployment process lets you clone content from one stage in the deployment pipeline to another, typically from development to test, and from test to production.
 
 During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you can't use the content in the target stage.
 
@@ -20,7 +20,7 @@ You can also deploy content programmatically, using the [deployment pipelines RE
 
 ## Deploying content to an empty stage
 
-When you deploy content to an empty stage, the metadata of the reports, dashboards, and datasets in the workspace you're deploying from, is copied to the stage you're deploying to. A new workspace for the stage you deployed to, is created on a Premium capacity.
+When you deploy content to an empty stage, a new workspace is created on a Premium capacity for the stage you deploy to. All the metadata in the reports, dashboards, and datasets of the original workspace is copied to the new workspace in the stage you're deploying to.
 
 There are two ways to deploy content from one stage to another. You can deploy all the content, or you can [select which items to deploy](deployment-pipelines-deploy.md#selective-deployment).
 
