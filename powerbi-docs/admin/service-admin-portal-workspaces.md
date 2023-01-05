@@ -80,8 +80,6 @@ These features are described in the following sections.
 
 ### Gain access to any user's My workspace
 
-Once inside the My workspace, you’ll be able to perform any actions as if it’s your own My workspace. You can view and make any changes to the contents, including sharing or unsharing. But you will not be able to grant anyone else access to the My workspace.  
-
 To gain access to a particular My workspace
 
 1. In the Power BI Admin portal, open the Workspaces page and find the personal workspace you want to get access to.
@@ -90,7 +88,9 @@ To gain access to a particular My workspace
 > [!NOTE]
 > Once access is obtained, the ribbon and the More options (...) menu will show **Remove Access** for the same My workspace. If you do not remove access by selecting one of these options, access will automatically be revoked for the admin after 24-hours. The My workspace owner's access remains intact.
 
-Once you've gotten access, the My workspace will show up in the list of workspaces accessible from the navigation pane. The icon indicates that it is a My workspace.
+When you got access, the My workspace will show up in the list of workspaces accessible from the navigation pane. The icon indicates that it is a My workspace.
+
+Once you go inside the My workspace, you’ll be able to perform any actions as if it’s your own My workspace. You can view and make any changes to the contents, including sharing or unsharing. But you will not be able to grant anyone else access to the My workspace.  
 
 ### Designate a default capacity for My workspaces
 
