@@ -25,7 +25,7 @@ If your visual interacts with other visuals, selects data points, or filters oth
 >> Creating a visual that supports bookmarks requires:
 >
 > - [Powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) version 3.0.0 or later for filter visuals and any visual that uses `InteractivityService`.
-> - Visual API version 1.11.0 or later for non-filter visuals that use `SelectionManager` rather than `InteractivityService`.
+> - Visual API version 1.11.0 or later for non-filter visuals that use `SelectionManager` instead of `InteractivityService`.
 
 ## How Power BI visuals interact with Power BI in report bookmarks
 
