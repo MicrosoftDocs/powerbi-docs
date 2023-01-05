@@ -3,7 +3,7 @@ title: "XML Device Information Settings for Power BI paginated reports| Microsof
 description: Learn details about the various device information settings you can use to render in XML format.
 ms.date: 01/05/2023
 ms.service: powerbi
-ms.subservice: paginated-reports
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies

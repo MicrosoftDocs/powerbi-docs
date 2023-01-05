@@ -3,7 +3,7 @@ title: "PPTX Device Information Settings for Power BI paginated reports| Microso
 description: Learn details about the device information settings for rendering Reporting Services reports in the PPTX format. 
 ms.date: 01/05/2023
 ms.service: powerbi
-ms.subservice: paginated-reports
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies

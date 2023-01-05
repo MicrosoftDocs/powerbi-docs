@@ -3,7 +3,7 @@ title: "Image Device Information Settings for Power BI paginated reports| Micros
 description: Learn about the various device information settings you can use to render in an image format in Reporting Services.
 ms.date: 01/05/2023
 ms.service: powerbi
-ms.subservice: paginated-reports
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies

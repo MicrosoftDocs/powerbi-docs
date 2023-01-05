@@ -3,7 +3,7 @@ title: "HTML Device Information Settings for Power BI paginated reports| Microso
 description: Learn about the various device information settings that are available for rendering in HTML format.
 ms.date: 01/05/2023
 ms.service: powerbi
-ms.subservice: paginated-reports
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies

@@ -3,7 +3,7 @@ title: "PDF Device Information Settings for Power BI paginated reports| Microsof
 description: Learn about the device information settings that are available for rendering reports in PDF format.
 ms.date: 01/05/2023
 ms.service: powerbi
-ms.subservice: paginated-reports
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
