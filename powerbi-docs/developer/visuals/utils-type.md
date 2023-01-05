@@ -126,7 +126,7 @@ double.lessWithPrecision(0.995, 1, 0.001);
 
 ### lessOrEqualWithPrecision
 
-This function checks if the first value is less or equal than the second value.
+This function checks if the first value is less than or equal to the second value.
 
 ```typescript
 function lessOrEqualWithPrecision(x: number, y: number, precision?: number): boolean;
@@ -145,7 +145,7 @@ double.lessOrEqualWithPrecision(1.005, 1, 0.01);
 
 ### greaterWithPrecision
 
-This function checks if the first value it greater than the second value.
+This function checks if the first value is greater than the second value.
 
 ```typescript
 function greaterWithPrecision(x: number, y: number, precision?: number): boolean;
@@ -164,7 +164,7 @@ double.greaterWithPrecision(1, 0.995, 0.01);
 
 ### greaterOrEqualWithPrecision
 
-This function checks if the first value is greater or equal to the second value.
+This function checks if the first value is greater than or equal to the second value.
 
 ```typescript
 function greaterOrEqualWithPrecision(x: number, y: number, precision?: number): boolean;
@@ -335,7 +335,7 @@ double.removeDecimalNoise(21.493000000000002);
 
 ### isInteger
 
-This function checks if the number is integer.
+This function checks if the number is an integer.
 
 ```typescript
 function isInteger(value: number): boolean;
@@ -373,7 +373,7 @@ double.toIncrement(0.6383723, 0.05);
 
 ## Prototype
 
-The `Prototype` module provides abilities to inherit objects.
+The `Prototype` module provides the ability to inherit objects.
 
 It provides the following functions:
 
@@ -429,7 +429,7 @@ prototype.inheritSingle(base);
 
 ## PixelConverter
 
-The `PixelConverter` module provides an ability to convert pixels to points, and points to pixels.
+The `PixelConverter` module provides the ability to convert pixels to points, and points to pixels.
 
 It provides the following functions:
 
