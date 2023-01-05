@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 You can streamline your report authoring experience with the **Optimize** ribbon in Power BI Desktop in any reporting scenario. The **Optimize** ribbon has four tools that can be used for any reporting scenario; DirectQuery reporting scenarios will find them most useful, as visual queries are sent back to the data source with many visual changes.
 
-The following sections describe the tools that the **Optimize** ribbon provides. 
+The following sections describe the tools that the **Optimize** ribbon provides. After reading this article, be sure to checkout [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md), to learn about how tools and features in the Optimize ribbon can streamline your DirectQuery report authoring.
 
 ## Reporting scenarios
 
@@ -89,6 +89,7 @@ You might also be interested in learning about **Performance analyzer**:
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
+* [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md)  
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data Types in Power BI Desktop](../connect-data/desktop-data-types.md)

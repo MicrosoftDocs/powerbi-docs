@@ -1,8 +1,8 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: oksanakyrychenko
-ms.author: v-okkyry
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals

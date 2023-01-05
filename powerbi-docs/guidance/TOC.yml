@@ -193,6 +193,8 @@
           href: powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md
         - name: "Embed for your organization"
           href: powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md
+        - name: "Embed for your customers"
+          href: powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
       - name: "Tenant setup"
