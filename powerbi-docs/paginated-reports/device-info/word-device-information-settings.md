@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Word Device Information Settings
-  The following table lists the device information settings for rendering in [!INCLUDE[ofprword](/sql/includes/ofprword-md)] format.  
+  The following table lists the device information settings for rendering in Microsoft Word format.  
   
 |Setting|Value|  
 |-------------|-----------|  
