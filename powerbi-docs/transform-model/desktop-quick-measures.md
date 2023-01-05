@@ -1,6 +1,6 @@
 ---
 title: Use quick measures for common and powerful calculations
-description: Learn how to use quick measures provide ready-made DAX formulas that make quick work of common calculations.
+description: Learn how to use quick measures to provide ready-made DAX formulas that make quick work of common calculations.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -25,7 +25,7 @@ You can also right-click or select the drop-down arrow next to any value in the 
 
 When you select **New quick measure**, the **Quick measures** window appears, letting you choose the calculation you want and the fields to run the calculation against.
 
-Select the **Select a calculation** field to see a long list of available quick measures.
+Choose the **Select a calculation** field to see a long list of available quick measures.
 
 :::image type="content" source="media/desktop-quick-measures/quick-measures_04.png" alt-text="Screenshot of the Quick measures screen and the Select a calculation drop-down menu.":::
 
@@ -78,7 +78,7 @@ Let's take a look at a quick measure in action.
 
 The following matrix visual shows a sales table for various products. It's a basic table that includes the sales totals for each category.
 
-:::image type="content" source="media/desktop-quick-measures/quick-measures_05.png" alt-text="Screenshot of a matrix visual showing a sales table":::
+:::image type="content" source="media/desktop-quick-measures/quick-measures_05.png" alt-text="Screenshot of a matrix visual showing a sales table.":::
 
 With the matrix visual selected, choose the drop-down arrow next to **TotalSales** in the **Values** well, and select **New quick measure**.
 
@@ -86,7 +86,7 @@ In the **Quick measures** window, under **Calculation**, select **Average per ca
 
 Drag **Average Unit Price** from the **Fields** pane into the **Base value** field. Leave **Category** in the **Category** field, and select **OK**.
 
-:::image type="content" source="media/desktop-quick-measures/quick-measures_06.png" alt-text="Screenshot of Power B I Desktop showing Filters option in Fields pane.":::
+:::image type="content" source="media/desktop-quick-measures/quick-measures_06.png" alt-text="Screenshot of the Power BI Desktop showing the Filters option in the Fields pane.":::
 
 When you select **OK**, several interesting things happen.
 
@@ -114,7 +114,7 @@ Imagine you need to do a year-over-year calculation, but you're not sure how to 
 
 You can always delete quick measures from your model if you don't like them by right-clicking or selecting the **...** next to the measure and selecting **Delete from model**. You can also rename a quick measure whatever you like by selecting **Rename** from the menu.
 
-:::image type="content" source="media/desktop-quick-measures/quick-measures_11.png" alt-text="Screenshot of delete and rename a quick measure options in a drop-down menu.":::
+:::image type="content" source="media/desktop-quick-measures/quick-measures_11.png" alt-text="Screenshot of the options delete and rename a quick measure in a drop-down menu.":::
 
 ## Considerations and limitations
 
@@ -134,4 +134,4 @@ You can use your own custom date tables with time intelligence quick measures. I
 
 ### Additional information and examples
 
-Have an idea for a quick measure that isn't already provided? Great! Check out the [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) page, and submit your ideas and DAX formulas for quick measures you'd like to see in Power BI Desktop. We'll consider adding them to the quick measures list in a future release.
+Have an idea for a quick measure that isn't already provided? Great! Go to the [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) page, and submit your ideas and DAX formulas for quick measures you'd like to see in Power BI Desktop. We'll consider adding them to the quick measures list in a future release.
