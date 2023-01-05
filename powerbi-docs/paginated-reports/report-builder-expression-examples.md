@@ -13,11 +13,11 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).   
+Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).
 
-This topic provides examples of expressions that can be used for common tasks in a report.  
+This article provides examples of expressions that can be used for common tasks in a report.  
   
-- [Visual Basic functions](#VisualBasicFunctions): Examples for date, string, conversion and conditional Visual Basic functions.  
+- [Visual Basic functions](#VisualBasicFunctions): Examples for date, string, conversion, and conditional Visual Basic functions.  
   
 - [Report functions](#ReportFunctions): Examples for aggregates and other built-in report functions.  
   
@@ -29,10 +29,10 @@ This topic provides examples of expressions that can be used for common tasks in
   
 - [Custom code](#CustomCode): Examples of embedded custom code.  
   
-For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see topics under [Expressions in Power BI Report Builder](report-builder-expressions.md). 
+For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see [Expressions in Power BI Report Builder](report-builder-expressions.md). 
   
 ## Functions  
-Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions in custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
+Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic runtime library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions in custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic functions
 You can use Visual Basic functions to manipulate the data that's displayed in text boxes or used for parameters, properties, or other areas of the report. This section provides examples demonstrating some of these functions. For more information, see [Visual Basic runtime library members](/dotnet/visual-basic/language-reference/runtime-library-members) on MSDN.  
@@ -47,7 +47,7 @@ The .NET Framework provides many custom format options, for example, for specifi
     =Round(1.3)  
     ```  
   
-     You can also write an expression to round a value to a multiple that you specify, similar to the **MRound** function in Excel. Multiply the value by a factor that creates an integer, round the number, and then divide by the same factor. For example, to round 1.3 to the nearest multiple of .2 (1.4), use the following expression:  
+     You can also write an expression to round a value to a multiple that you specify, similar to the **MRound** function in Excel. Multiply the value by a factor that creates an integer, round the number, and then divide by the same factor. For example, to round 1.3 to the nearest multiple of 0.2, which is 1.4, use the following expression:  
   
     ```  
     =Round(1.3*5)/5  
@@ -86,7 +86,7 @@ The .NET Framework provides many custom format options, for example, for specifi
     =DateAdd(DateInterval.Month, 6, Parameters!StartDate.Value)  
     ```  
   
--   The **Year** function displays the year for a particular date. You can use this to group dates together or to display the year as a label for a set of dates. This expression provides the year for a given group of sales order dates. The **Month** function and other functions can also be used to manipulate dates. For more information, see the Visual Basic documentation.  
+-   The **Year** function displays the year for a particular date. You can group dates together or to display the year as a label for a set of dates. This expression provides the year for a given group of sales order dates. The **Month** function and other functions can also be used to manipulate dates. For more information, see the [Visual Basic documentation](/dotnet/visual-basic).  
   
     ```  
     =Year(Fields!OrderDate.Value)  
@@ -102,7 +102,7 @@ The .NET Framework provides many custom format options, for example, for specifi
   
      When used as a calculated field in a dataset, you can use this expression on a chart to aggregate values by week within each month.  
   
--   The following expression formats the *SellStartDate* value as MMM-YY. SellStartDate field is a datetime data type.  
+-   The following expression formats the *SellStartDate* value as MMM-yy. SellStartDate field is a datetime data type.  
   
     ```  
     =FORMAT(Fields!SellStartDate.Value, "MMM-yy")  
@@ -134,7 +134,7 @@ The .NET Framework provides many custom format options, for example, for specifi
     =DATEDIFF("yyyy", First(Fields!SellStartDate.Value, "DataSet1"), First(Fields!LastReceiptDate.Value, "DataSet2"))  
     ```  
   
--   The **DatePart** function returns an Integer value containing the specified component of a given *Date* value.The following expression returns the year for the first value of the *SellStartDate* in DataSet1. The dataset scope is specified because there are multiple datasets in the report.  
+-   The **DatePart** function returns an *Integer* value containing the specified component of a given *Date* value. The following expression returns the year for the first value of the *SellStartDate* in DataSet1. The dataset scope is specified because there are multiple datasets in the report.  
   
     ```  
     =Datepart("yyyy", First(Fields!SellStartDate.Value, "DataSet1"))  
@@ -192,7 +192,7 @@ The .NET Framework provides many custom format options, for example, for specifi
     = Join(Parameters!MySelection.Value)  
     ```  
   
-     The following example does the same as the above example, as well as displays a text string prior to the list of selected values.  
+     The following example does the same as the above example, and displays a text string prior to the list of selected values.  
   
     ```  
     ="Report for " & JOIN(Parameters!MySelection.Value, " & ")  
@@ -255,7 +255,7 @@ You can use Visual Basic functions to convert a field from the one data type to 
   
      Values greater than or equal to 10 display with a green background, between 1 and 9 display with a blue background, and less than 1 display with a red background.  
   
--   A different way to get the same functionality uses the **Switch** function. The **Switch** function is useful when you have three or more conditions to test. The **Switch** function returns the value associated with the first expression in a series that evaluates to true:  
+-   A different way to get the same functionality uses the **Switch** function. The **Switch** function is useful when there are three or more conditions to test. The **Switch** function returns the value associated with the first expression in a series that evaluates to true:  
   
     ```  
     =Switch(Fields!PctComplete.Value >= 10, "Green", Fields!PctComplete.Value >= 1, "Blue", Fields!PctComplete.Value = 1, "Yellow", Fields!PctComplete.Value <= 0, "Red")  
@@ -281,7 +281,7 @@ You can use Visual Basic functions to convert a field from the one data type to 
     =IIF(Fields!Department.Value = "Development", "EmployeeReport", Nothing)  
     ```  
   
--   Test if a field value is null. This expression can be used to control the *Hidden* property of an image report item. In the following example, the image specified by the field *LargePhoto* is displayed only if the value of the field is not null.  
+-   Test if a field value is null. This expression can be used to control the *Hidden* property of an image report item. In the following example, the image specified by the field *LargePhoto* is displayed only if the value of the field isn't null.  
   
     ```  
     =IIF(IsNothing(Fields!LargePhoto.Value),True,False)  
@@ -365,7 +365,7 @@ When designing a report, you may want to display the name of the report and page
 >  You can refer to only one report item per expression in a page header or footer. Also, you can refer to the text box name, but not the actual data expression within the text box, in page header and footer expressions.  
   
 ###  <a name="PageBreaks"></a> Page breaks  
-In some reports, you may want to place a page break at the end of a specified number of rows instead of, or in addition to, on groups or report items. To do this, create a group that contains the groups or detail records you want, add a page break to the group, and then add a group expression to group by a specified number of rows.  
+In some reports, you may want to place a page break at the end of a specified number of rows instead of, or in addition to, on groups or report items. Create a group that contains the groups or detail records you want, add a page break to the group, and then add a group expression to group by a specified number of rows.  
   
 -   The following expression, when placed in the group expression, assigns a number to each set of 25 rows. When a page break is defined for the group, this expression results in a page break every 25 rows.  
   
@@ -380,7 +380,7 @@ In some reports, you may want to place a page break at the end of a specified nu
     ```  
   
 ##  <a name="Properties"></a> Properties  
-Expressions are not only used to display data in text boxes. They can also be used to change how properties are applied to report items. You can change style information for a report item, or change its visibility.  
+Expressions aren't only used to display data in text boxes. They can also be used to change how properties are applied to report items. You can change style information for a report item, or change its visibility.  
   
 ###  <a name="Formatting"></a> Formatting  
   
@@ -400,7 +400,7 @@ Expressions are not only used to display data in text boxes. They can also be us
     =Iif(RowNumber(Nothing) Mod 2, "PaleGreen", "White")  
     ```  
   
-     If you are using an expression for a specified scope, you may have to indicate the dataset for the aggregate function:  
+     If you use an expression for a specified scope, you may have to indicate the dataset for the aggregate function:  
   
     ```  
     =Iif(RowNumber("Employees") Mod 2, "PaleGreen", "White")  
@@ -469,7 +469,7 @@ You can use expressions in a parameter to vary the default value for the paramet
     =Parameters!Department.Value  
     ```  
   
--   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter doesn't appear in the toolbar and the report reader cannot change the default value. You can use a hidden parameter set to a default value as custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
+-   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter doesn't appear in the toolbar and the report reader can't change the default value. You can use a hidden parameter set to a default value as custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
   
     ```  
     =Fields(Parameters!ParameterField.Value).Value  
@@ -492,7 +492,7 @@ To avoid this condition, use one of the following strategies:
     =IIF(Field!B.Value=0, 0, Field!A.Value / IIF(Field!B.Value =0, 1, Field!B.Value))  
     ```  
   
--   Use a custom code function to return the value for the expression. The following example returns the percentage difference between a current value and a previous value. This can be used to calculate the difference between any two successive values and it handles the edge case of the first comparison (when there is no previous value) and cases whether either the previous value or the current value is **null** (**Nothing** in Visual Basic).  
+-   Use a custom code function to return the value for the expression. The following example returns the percentage difference between a current value and a previous value. This can be used to calculate the difference between any two successive values and it handles the edge case of the first comparison (when there's no previous value) and cases whether either the previous value or the current value is **null** (**Nothing** in Visual Basic).  
   
     ```  
     Public Function GetDeltaPercentage(ByVal PreviousValue, ByVal CurrentValue) As Object  
@@ -512,7 +512,7 @@ To avoid this condition, use one of the following strategies:
     =Code.GetDeltaPercentage(Previous(Sum(Fields!Sales.Value),"ColumnGroupByYear"), Sum(Fields!Sales.Value))  
     ```  
   
-     This helps to avoid run-time exceptions. You can now use an expression like `=IIF(Me.Value < 0, "red", "black")` in the *Color* property of the text box to conditionally the display text based on whether the values are greater than or less than 0.  
+     This code helps to avoid run-time exceptions. You can now use an expression like `=IIF(Me.Value < 0, "red", "black")` in the *Color* property of the text box to conditionally the display text based on whether the values are greater than or less than 0.  
   
 ## Next steps
 
