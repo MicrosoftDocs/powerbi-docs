@@ -1,12 +1,12 @@
 ---
 title: Intro to Q&A tooling to train Power BI Q&A (preview)
-description: Introduction to Power BI Q&A tooling
+description: Learn about Q&A tooling so you can imporve the natural language experience for your users.
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 01/06/2023
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
 
@@ -38,29 +38,29 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 
 ## Field synonyms
 
-Select **Field synonyms** to see all the tables and columns that belong to the model. This view allows you to add alternative names to match the columns to help users. You can also choose whether or not a column or table should be hidden from Q&A.
+1. Select **Field synonyms** to see all the tables and columns that belong to the model. This view allows you to add alternative names to match the columns to help users. You can also choose whether or not a column or table should be hidden from Q&A.
 
-![Screenshot of Q&A field synonyms home.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+   ![Screenshot of Q&A field synonyms home.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
 
-Select one of the tables to expand and you'll see a dialog similar to the one below.
+1. Select one of the tables to expand and you'll see a dialog similar to the following example.
 
-![Screenshot of Q&A field synonyms expanded.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+   ![Screenshot of Q&A field synonyms expanded.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
 
-The dialog shows all the columns, tables, and respective terms/synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and also add or remove terms for multiple columns. 
+   The dialog shows all the columns, tables, and respective terms and synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and add or remove terms for multiple columns. 
 
-- Add terms - If you have a field called sales, you may decide to add a term called revenue so a user can use this word instead of being required to use the word sales. Select **Add** to quickly add a new term.
+   - Add terms - If you have a field called sales, you may decide to add a term called revenue so a user can use this word instead of being required to use the word sales. Select **Add** to quickly add a new term.
 
-- Include in Q&A - This option allows a column or table to be omitted from Q&A, meaning it won't be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. If there are numerous date fields, or foreign keys, you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
+   - Include in Q&A - This option allows a column or table to be omitted from Q&A, meaning it won't be shown and a result can't be displayed with this column. You might decide not to include a column when dealing with dates. If there are numerous date fields or foreign keys, you might decide to remove all but one of the date fields, so the correct date column is picked when a user asks a date related question.
 
-- Suggested Terms - Q&A also recommends suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions aren't added, They still function, but they give the user an orange dotted line indicating Q&A thinks it has an answer but isn't sure. If the suggested synonym is correct, select the plus icon (+) so it can be used as a synonym. If the suggestion is incorrect, select the x to remove the term. It won't be used as a term/synonym and won't function inside Q&A. The initial suggestions are powered by Office Dictionary or can come from renames found inside a report. Another way to get more suggested terms is through synonym sharing within your organization. 
+   - Suggested Terms - Q&A also recommends suggested terms retrieved from our suggestions engine to help you quickly add terms and synonyms. If the suggestions aren't added, they still function, but they give the user an orange dotted line indicating that Q&A thinks it has an answer but isn't sure. If the suggested synonym is correct, select the plus icon (+), so it can be used as a synonym. If the suggestion is incorrect, select the x to remove the term. It won't be used as a term or synonym and won't function inside Q&A. The initial suggestions are powered by Office Dictionary or they can come from renames found inside a report. Another way to get more suggested terms is through synonym sharing within your organization. 
 
 ### Synonym sharing
-With synonym sharing, you can leverage your coworkers’ synonyms and minimize duplicate effort when adding synonyms to your models. 
-To connect to shared synonyms, navigate to **Q&A setup** > **Field synonyms** and select **Get more synonyms**.
+With synonym sharing, you can leverage your coworker's synonyms and minimize duplicate effort when adding synonyms to your models. 
+To connect to shared synonyms, go to **Q&A setup** > **Field synonyms** and select **Get more synonyms**.
 
 ![Screenshot of selecting Field synonyms, then Get more synonyms.](media/q-and-a-tooling-intro/get-shared-synonyms.png)
 
-This process may take a few seconds, but once it’s completed, you also have the option to share your synonyms to everyone in your org as well. 
+This process might take a few seconds, but once it’s completed, you also have the option to share your synonyms to everyone in your organization. 
 
 > [!NOTE] 
 > Synonyms are only shared when you publish the report.
@@ -83,13 +83,13 @@ Select **Review questions** to see a list of datasets being used in the Power BI
 
 ## Teach Q&A
 
-The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. To learn more, see [Teach Q&A](q-and-a-tooling-teach-q-and-a.md)
+The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. For more imformation, see [Teach Q&A](q-and-a-tooling-teach-q-and-a.md)
 
 ![Screenshot of Q&A teach synonym preview.](media/q-and-a-tooling-intro/qna-tooling-teach-fixpreview.png)
 
 ## Manage terms
 
-Anything you've saved from the Teach Q&A section shows up here, so you can review or delete terms you've defined. Currently you can't edit an existing definition, so to redefine a term you must delete and recreate that term.
+Anything you've saved from the Teach Q&A section shows up here, so you can review or delete terms you've defined. Currently, you can't edit an existing definition. So, to redefine a term you must delete and recreate that term.
 
 ![Screenshot of Q&A Manage terms.](media/q-and-a-tooling-intro/qna-manage-terms.png)
 
@@ -99,21 +99,21 @@ Anything you've saved from the Teach Q&A section shows up here, so you can revie
 > The suggested questions show up for all instances of the Q&A visual. It isn't possible to create a separate set of suggestions for each Q&A visual.
 > 
 
-Without doing any setup, the Q&A visual suggest several questions to get started with. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the autogenerated questions with your own questions.
+Without doing any setup, the Q&A visual suggests several questions to get started. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the autogenerated questions with your own questions.
 
 To start, type the question you want to add in the text box. In the preview section, you see what the result will look like in the Q&A visual. 
 
 :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-suggest-questions.png" alt-text="Suggest Q&A questions":::
  
-Select the **Add** button to add this question to **Your suggested questions**. Every additional question is added to the end of this list. The questions will show up in the Q&A visual in the same order as they do in this list. 
+Select the **Add** button to add this question to **Your suggested questions**. Each question is added to the end of this list. The questions will show up in the Q&A visual in the same order as they do in this list. 
 
 :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Screenshot of saving suggested questions.":::
  
-Make sure to select **Save** to show your list of suggested questions in the Q&A visual. 
+Select **Save** to show your list of suggested questions in the Q&A visual. 
 
 ## Set a row label
 
-A row label allows you to define which column (or *field*) best identifies a single row in a table. For example, for a table called 'Customer', the row label is usually 'Display Name'. Providing this extra metadata allows Q&A to plot a more helpful visual when users type in 'Show me sales by customer'. Instead of treating 'customer' as a table, it can instead use 'Display Name' and display a bar chart showing each customer's sales. You can only set the row label Modeling view. 
+A row label allows you to define which column (or *field*) best identifies a single row in a table. For example, for a table called 'Customer', the row label is usually 'Display Name'. Providing this extra metadata allows Q&A to plot a more helpful visual when users type in 'Show me sales by customer'. Instead of treating 'customer' as a table, it can instead use 'Display Name' and display a bar chart showing each customer's sales. You can only set the row label in Modeling view. 
 
 1. In Power BI Desktop, select Modeling view.
 
@@ -123,8 +123,8 @@ A row label allows you to define which column (or *field*) best identifies a sin
 
 ## Configure the linguistic schema (advanced)
 
-In Power BI, you can completely train and enhance the natural language engine inside Q&A, including changing the scoring and weighting of the underlying natural language results. To learn how, see [Edit Q&A linguistic schema and add phrasings](q-and-a-tooling-advanced.md).
+In Power BI, you can completely train and enhance the natural language engine inside Q&A. You can change the scoring and weighting of the underlying natural language results. For more information, see [Edit Q&A linguistic schema and add phrasings](q-and-a-tooling-advanced.md).
 
 ## Next steps
 
-There are many other best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
+There are many other best practices for improving the natural language engine. For more information, see [Q&A best practices](q-and-a-best-practices.md).
