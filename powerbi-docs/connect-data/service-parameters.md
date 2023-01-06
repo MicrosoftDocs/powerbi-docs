@@ -32,7 +32,7 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
     ![Screenshot shows the Settings window with Parameters expanded.](media/service-parameters/power-bi-settings.png)
 
-    Review the parameter settings and make changes if needed.
+1. Review the parameter settings and make changes if needed.
 
 ## Considerations and limitations
 
