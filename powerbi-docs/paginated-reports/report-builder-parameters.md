@@ -79,7 +79,7 @@ This image from Report Builder shows:
 Create a parameter manually from the **Report Data** pane. You can configure report parameters so that a user can interactively enter values to help customize the contents or appearance of a report. You can also configure report parameters so that a user can't change pre-configured values.  
 
 > [!NOTE]  
-> Because parameters are managed independently on the server, republishing a main report with new parameter settings doesn't overwrite the existing parameters settings on the report.  
+> Because parameters are managed independently on the server, republishing a main report with new parameter settings doesn't overwrite the existing parameter settings on the report.  
 
 ### Parameter values
 
@@ -91,7 +91,7 @@ The following options are for selecting parameter values in the report.
   
 - Select a value from a drop-down list for one parameter, which determines the values that are available in the drop-down list for another parameter. These are cascading parameters. Cascading parameters enables you to successively filter parameter values from thousands of values to a manageable number. For more information, see [Use cascading parameters in paginated reports](../guidance/paginated-report-cascading-parameter.md).
 
-- Run the report without having to first select a parameter value because a default value has been created for the parameter.  
+- Run the report without having to first select a parameter value because a default value was created for the parameter.  
   
 ## <a name="bkmk_Report_Parameters"></a> Report parameter properties
 
@@ -130,11 +130,11 @@ When you design a report, report parameters are saved in the report definition. 
   
 - **Report subscriptions.** You can specify parameter values to filter data and deliver reports through subscriptions. 
   
-Parameter properties for a published report are preserved if you republish the report definition. If the report definition is republished as the same report, and parameter names and data types remain the same, your property settings are retained. If you add or delete parameters in the report definition, or change the data type or name of an existing parameter, you may need to change the parameter properties in the published report.  
+Parameter properties for a published report are preserved if you republish the report definition. If the report definition is republished as the same report, and parameter names and data types remain the same, your property settings are retained. If you add or delete parameters in the report definition, or change the data type or name of an existing parameter, you might need to change the parameter properties in the published report.  
   
 Not all parameters can be modified in all cases. If a report parameter gets a default value from a dataset query, that value can't be modified for a published report and can't be modified on the report server. The value that is used at run time is determined when the query runs, or in the case of expression-based parameters, when the expression is evaluated.  
   
-Report execution options can affect how parameters are processed. A report that runs as a snapshot can't use parameters that are derived from a query unless the query includes default values for the parameters.  
+Report execution options can affect how parameters are processed. A report that runs as a snapshot can't use parameters derived from a query unless the query includes default values for the parameters.  
   
 ##  <a name="bkmk_Parameters_Subscription"></a> Parameters for a subscription
 You can define a subscription for an on-demand report or for a snapshot, and specify parameter values to use during subscription processing.  
