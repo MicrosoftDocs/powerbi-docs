@@ -12,7 +12,7 @@ LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
 
-Report creators add query parameters to reports in Power BI Desktop. Parameters allow you to make parts of reports depend on one or more parameter *values*. For example, a report creator may create a parameter that restricts the data to a single country/region, or a parameter that defines acceptable formats for fields like dates, time, and text.
+Report creators add query parameters to reports in Power BI Desktop. Parameters allow you to make parts of reports depend on one or more parameter *values*. For example, a report creator might create a parameter that restricts the data to a single country/region, or a parameter that defines acceptable formats for fields like dates, time, and text.
 
 ![Screenshot of Power Query Editor Home tab showing Manage Parameters option in Power BI Desktop.](media/service-parameters/power-bi-manage-parameters.png)
 
