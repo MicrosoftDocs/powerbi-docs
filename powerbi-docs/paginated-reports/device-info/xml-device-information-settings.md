@@ -13,7 +13,6 @@ ms.author: maggies
   
 |Setting|Values|Details|  
 |-------------|------------|-------------|  
-|**XSLT**|The path in the report server namespace of an XSLT to apply to the XML file, for example **/Transforms/myxslt**.|The xsl file must be a published resource on the report server and you must access it through a report server item path. The value of this setting is applied after any XSLT that is specified in the report. If the **XSLT** setting is applied, the **OmitSchema** setting is ignored.|  
 |**MIMEType**|The Multipurpose Internet Mail Extensions (MIME) type of the XML file.||  
 |**UseFormattedValues**|**true**<br /><br /> **false**|Indicates whether to render the formatted value of a text box when generating the XML data.<br /><br /> A value of false indicates that the underlying value of the text box is used.|  
 |**Indented**|**true**<br /><br /> **false**|Indicates whether to generate indented XML. The default value of **false** generates non-indented, compressed XML.|  
