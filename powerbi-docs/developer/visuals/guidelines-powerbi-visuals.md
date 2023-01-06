@@ -1,6 +1,6 @@
 ---
 title: Guidelines for publishing Power BI custom visuals
-description: Guidelines to publish Power BI custom visuals to Microsoft AppSource and help with online discoverability.
+description: Learn about the guidelines to publish Power BI custom visuals to Microsoft AppSource so that others can discover and use them.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -12,11 +12,11 @@ ms.date: 01/04/2023
 
 # Guidelines for publishing Power BI custom visuals
 
-Before [publishing your Power BI visuals to Microsoft AppSource](office-store.md) for others to discover and use, follow these guidelines to create a great experience for your users.
+Before you [publish Power BI custom visuals to Microsoft commercial marketplace](office-store.md) for others to discover and use, follow these guidelines to create a great experience for your users.
 
-## Power BI visuals: *Free* or *for purchase*
+## Power BI visuals: Free or for purchase
 
-Power BI visuals submitted to the [Commercial Marketplace](/azure/marketplace/overview) (Microsoft AppSource) can be made available for free, or they can have an *additional purchase may be required* tag. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins.
+Power BI visuals submitted to the [Commercial Marketplace](/azure/marketplace/overview) (Microsoft AppSource) can be made available for free, or you can add the tag *additional purchase may be required*. Visuals with the *additional purchase may be required* designation are similar to in-app purchase (IAP) add-ins.
 
 Like the free Power BI visuals, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
 
@@ -24,10 +24,10 @@ Like the free Power BI visuals, an IAP Power BI visual can also be certified. Be
 
 An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features available for a fee. In the Power BI visual's description, developers must notify users about features that require additional purchases to operate them. Currently, Microsoft doesn't provide native APIs to support the purchase of apps and add-ins.
 
-Developers may use any third-party payment system for these purchases. For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies#11002-displaying-ads).
+Developers can use any third-party payment system for these purchases. For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 >[!IMPORTANT]  
-> If you update your Power BI visual from *free* to *additional purchase may be required*, customers must receive the same level of free functionality as before the update. You may add optional advanced paid features in addition to the existing free features.
+> If you update your Power BI visual from *free* to *additional purchase may be required*, customers must receive the same level of free functionality as before the update. You can add optional advanced paid features in addition to the existing free features.
 
 ### Watermarks
 
@@ -43,14 +43,14 @@ Use a pop-up window to explain how to purchase a license when customers use an i
 
 ### Submission process
 
-Follow the [submission process](./office-store.md#submit-or-update-your-custom-visual-to-appsource), then navigate to the *Offer setup* tab. Select the *My product requires the purchase of a service* check box.
+Follow the [submission process](./office-store.md#submit-or-update-your-custom-visual-to-appsource), then navigate to the **Offer setup** tab. Select the **My product requires the purchase of a service** check box.
 
 After the Power BI visual is validated and approved, the Microsoft AppSource listing for the IAP Power BI visual displays that *more purchase may be required* under the pricing options.
 
 ## Context menu
 
 The context menu is the menu that displays when the user right-clicks inside a visual.
-All Power BI visuals should enable the context menu to give users a unified experience. For more information to learn how to add a context menu, see [Add a context menu to your Power BI visual](context-menu.md).
+All Power BI visuals should enable the context menu to give users a unified experience. For more information, see [Add a context menu to your Power BI visual](context-menu.md).
 
 :::image type="content" source="media/guidelines-powerbi-visuals/context-menu.png" alt-text="Screenshot of a Power BI visual context menu.":::
 
@@ -72,15 +72,15 @@ There are three types of commercial logos:
 
 * **Logo**: Two elements locked together, an icon and a name.
 
-   :::image type="content" source="media/guidelines-powerbi-visuals/microsoft-logo.png" alt-text="Screenshot of the Microsoft logo.":::
+   :::image type="icon" source="media/guidelines-powerbi-visuals/microsoft-logo.png":::
 
 * **Symbol**: A graphic without any text.
 
-    :::image type="content" source="media/guidelines-powerbi-visuals/microsoft-symbol.png" alt-text="Screenshot of the Microsoft symbol.":::
+   :::image type="icon" source="media/guidelines-powerbi-visuals/microsoft-symbol.png":::
 
 * **Logotype**: A text logo without an icon.
 
-    :::image type="content" source="media/guidelines-powerbi-visuals/microsoft-logotype.png" alt-text="Screenshot of the Microsoft logo without an icon.":::
+    :::image type="icon" source="media/guidelines-powerbi-visuals/microsoft-logotype.png":::
 
 ### Commercial logo color
 
@@ -88,15 +88,15 @@ When using a commercial logo, the color of the logo must be grey (hex color #C8C
 
 * **Logo**
 
-    :::image type="content" source="media/guidelines-powerbi-visuals/grey-microsoft-logo.png " alt-text="Screenshot of the Microsoft logo in the color grey.":::
+    :::image type="icon" source="media/guidelines-powerbi-visuals/grey-microsoft-logo.png":::
 
 * **Symbol**
 
-    :::image type="content" source="media/guidelines-powerbi-visuals/grey-microsoft-symbol.png" alt-text="Screenshot of the Microsoft symbol in the color grey.":::
+    :::image type="icon" source="media/guidelines-powerbi-visuals/grey-microsoft-symbol.png":::
 
 * **Logotype**
 
-    :::image type="content" source=" media/guidelines-powerbi-visuals/grey-microsoft-logotype.png " alt-text="Screenshot of the Microsoft logo without an icon in the color grey.":::
+   :::image type="icon" source="media/guidelines-powerbi-visuals/grey-microsoft-logotype.png":::
 
 > [!TIP]
 >
@@ -126,11 +126,11 @@ Commercial logos are only allowed in edit mode. When selected, a commercial logo
 
 * Avoid a colorful or a black commercial logo. The commercial logo must be grey (hex color #C8C8C8).
 
-    :::image type="content" source="media/guidelines-powerbi-visuals/no-color-logo.png" alt-text="Screenshot of an unauthorized colorful Microsoft logo."::: :::image type="content" source="media/guidelines-powerbi-visuals/black-logo.png" alt-text="Screenshot of an unauthorized Microsoft grey logo.":::
+    :::image type="icon" source="media/guidelines-powerbi-visuals/no-color-logo.png"::: :::image type="icon" source="media/guidelines-powerbi-visuals/black-logo.png":::
 
 * Avoid a commercial logo with effects such as gradients or strong shadows.
 
-     :::image type="content" source="media/guidelines-powerbi-visuals/no-style-logo.png" alt-text="Screenshot of an example of an unauthorized Microsoft logo.":::
+     :::image type="icon" source="media/guidelines-powerbi-visuals/no-style-logo.png":::
 
 ## Best practices
 
