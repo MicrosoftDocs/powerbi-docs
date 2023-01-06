@@ -47,11 +47,11 @@ This section provides information for each folder and file in the directory that
 
 ### .vscode
 
-This folder contains the VS code project settings.
+This folder contains the VS Code project settings.
 
 To configure your workspace, edit the `.vscode/settings.json` file.
 
-For more information, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
+For more information, see [User and workspace settings](https://code.visualstudio.com/docs/getstarted/settings).
 
 ### assets
 
@@ -106,7 +106,7 @@ This file contains the [TSLint configuration](https://palantir.github.io/tslint/
 
 ## Metadata entries
 
-The comments in the following code caption from the `pbiviz.json` file, describe the metadata entries. Certain metadata, like the author's name and email, are required before you can package the visual.
+The comments in the following code caption from the `pbiviz.json` file describe the metadata entries. Certain metadata, like the author's name and email, are required before you can package the visual.
 
 > [!NOTE]
 >
@@ -170,4 +170,4 @@ The comments in the following code caption from the `pbiviz.json` file, describe
 ## Next steps
 
 * [Power BI visuals system integration](power-bi-visuals-concept.md)
-* [Develop a Power BI circle card visual](develop-circle-card.md).
+* [Develop a Power BI circle card visual](develop-circle-card.md)
