@@ -1,6 +1,6 @@
 ---
 title: Keyboard shortcuts in Power BI Desktop
-description: Learn how to navigate Power BI desktop by using keyboard commands and shortcuts. The tables in this article describe the shortcuts available.
+description: Learn how to navigate Power BI Desktop by using keyboard commands and shortcuts. The tables in this article describe the shortcuts available.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -36,8 +36,8 @@ In our continued effort to improve accessibility, the previous list of experienc
 | To do this action           | Press                |
 | :------------------- | :------------------- |
 | Move focus between sections  | **Ctrl + F6** |
-| Move focus forward in section | **Tab**         |
-| Move focus backward in section | **Shift + Tab** |
+| Move focus forward in a section | **Tab**         |
+| Move focus backward in a section | **Shift + Tab** |
 | Select or clear selection of an object | **Enter** or **spacebar** |
 | Multi-select objects | **Ctrl + spacebar** |
 
@@ -174,9 +174,9 @@ There are a few known issues and limitations with the accessibility features. Yo
 The collection of articles for Power BI accessibility are the following:
 
 * [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
-* [Creating accessible Power BI reports](desktop-accessibility-creating-reports.md)
-* [Consuming reports in Power BI with accessibility tools](desktop-accessibility-consuming-tools.md)
-* [Creating Power BI reports with accessibility tools](desktop-accessibility-creating-tools.md)
+* [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
+* [Consume Power BI reports by using accessibility features](desktop-accessibility-consuming-tools.md)
+* [Creating reports in Power BI using accessibility tools](desktop-accessibility-creating-tools.md)
 * [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
 
 You might also be interested in the following:
