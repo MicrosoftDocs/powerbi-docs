@@ -14,7 +14,7 @@ ms.date: 01/04/2023
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-This article spells out how to configure Open Database Connectivity (ODBC) data sources in the Power BI gateway, and how to use ODBC data sources in Power BI Report Builder.
+This article explains how to configure Open Database Connectivity (ODBC) data sources in the Power BI gateway, and how to use ODBC data sources in Power BI Report Builder.
 
 Data Source Name (DSN) and driver connection strings are both supported. 
 
@@ -23,7 +23,7 @@ Data Source Name (DSN) and driver connection strings are both supported.
 
 ## Before you install the Power BI gateway
 
-You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate machine from Power BI Report Builder or Power BI Desktop. There are some scenarios where using the same machine might cause problems. 
+You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate computer from Power BI Report Builder or Power BI Desktop. There are some scenarios where using the same computer might cause problems. 
 
 ## Install and configure Power BI Report Builder for ODBC data source
 
@@ -42,10 +42,10 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
     >Personal gateways aren't supported for paginated reports, because they require DirectQuery support.
 
 2. Refer to the article [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md) for information on setting it up.
-3. Install the 64-bit ODBC driver that you plan to use on the gateway machine.
+3. Install the 64-bit ODBC driver that you plan to use on the gateway computer.
 
     >[!NOTE]
-    >File DSNs aren't supported. If you'd like to use a DSN, create a 64-bit [System DSN](/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the gateway machine.
+    >File DSNs aren't supported. If you'd like to use a DSN, create a 64-bit [System DSN](/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the gateway computer.
 
 1. To configure an ODBC data source in the Power BI service, select **Manage connections and gateways** under **Settings**:
 
