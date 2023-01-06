@@ -342,7 +342,7 @@ The module provides the following functions:
 
 ## endsWith
 
-This function determines if a string ends with a substring.
+This function checks if a string ends with a substring.
 
 ```typescript
 function endsWith(str: string, suffix: string): boolean;
@@ -380,7 +380,7 @@ stringExtensions.equalIgnoreCase("Power BI", "power bi");
 
 ### startsWith
 
-This function determines if a string starts with a substring;
+This function checks if a string starts with a substring;
 
 ```typescript
 function startsWith(a: string, b: string): boolean;
@@ -399,7 +399,7 @@ stringExtensions.startsWith("Power BI", "Power");
 
 ### contains
 
-This function determines if a string contains a specified substring.
+This function checks if a string contains a specified substring.
 
 ```typescript
 function contains(source: string, substring: string): boolean;
@@ -418,7 +418,7 @@ stringExtensions.contains("Microsoft Power BI Visuals", "Power BI");
 
 ### isNullOrEmpty
 
-Determines if a string is null or undefined or empty.
+Checks if a string is null or undefined or empty.
 
 ```typescript
 function isNullOrEmpty(value: string): boolean;
