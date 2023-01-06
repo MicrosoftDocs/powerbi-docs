@@ -173,7 +173,7 @@ The one exception to the “normalization is better” rule occurs when there's 
 
 This step applies specifically to Q&A (and not to Power BI reports in general). Users often have many terms they use to refer to the same thing, such as total sales, net sales, and  total net sales. You can add these synonyms to tables and columns in the Power BI model. 
 
-This step can be important. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them. They're not choosing from a predefined list of columns. The more sensible synonyms you add, the better your experience is with your report. To add synonyms, in Power BI Desktop go to Model view and select a field or table. The Properties pane shows the **Synonyms** box, where you can add synonyms.
+This step can be important. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them. They're not choosing from a predefined list of columns. The more sensible synonyms you add, the better your user's experience is with your report. To add synonyms, in Power BI Desktop go to Model view and select a field or table. The Properties pane shows the **Synonyms** box, where you can add synonyms.
 
 :::image type="content" source="media/q-and-a-best-practices/qna-modelling-pane-synonyms.png" alt-text="Screenshot showing the Q&A Properties pane with the Synonyms field highlighted.":::
 
