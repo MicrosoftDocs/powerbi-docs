@@ -32,7 +32,7 @@ When Power BI Desktop creates a measure, it's most often created for you automat
 
     :::image type="content" source="media/desktop-tutorial-create-measures/meastut_salesamountchart.png" alt-text="Screenshot of the SalesAmount column chart.":::
 
-Any field (column) in the **Fields** pane with a sigma icon ![Sigma icon](media/desktop-tutorial-create-measures/meastut_sigma.png) is numeric, and its values can be aggregated. Rather than display a table with many values (2,000,000 rows for **SalesAmount**), Power BI Desktop automatically creates and calculates a measure to aggregate the data if it detects a numeric datatype. Sum is the default aggregation for a numeric datatype, but you can easily apply different aggregations like average or count. Understanding aggregations is fundamental to understanding measures, because every measure performs some type of aggregation.
+   Any field (column) in the **Fields** pane with a sigma icon ![Sigma icon](media/desktop-tutorial-create-measures/meastut_sigma.png) is numeric, and its values can be aggregated. Rather than display a table with many values (2,000,000 rows for **SalesAmount**), Power BI Desktop automatically creates and calculates a measure to aggregate the data if it detects a numeric datatype. Sum is the default aggregation for a numeric datatype, but you can easily apply different aggregations like average or count. Understanding aggregations is fundamental to understanding measures, because every measure performs some type of aggregation.
 
 To change the chart aggregation, follow these steps:
 
@@ -50,7 +50,7 @@ Depending on the result you want, you can change the type of aggregation. Howeve
 
 Values calculated from measures change in response to your interactions with your report. For example, if you drag the **RegionCountryName** field from the **Geography** table onto your existing **SalesAmount** chart, it changes to show the average sales amounts for each country/region.
 
-:::image type="content" source="media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png" alt-text="Screenshot of the chart showing SaleAmount by Country/Region":::
+:::image type="content" source="media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png" alt-text="Screenshot of the chart showing SaleAmount by Country/Region.":::
 
 When the result of a measure changes because of an interaction with your report, you've affected your measure’s *context*. Every time you interact with your report visualizations, you're changing the context in which a measure calculates and displays its results.
 
