@@ -1,6 +1,6 @@
 ---
-title: Work with Report View in Power BI Desktop
-description: Report View in Power BI Desktop
+title: Work with Report view in Power BI Desktop
+description: Learn how to work with Report view in Power BI Desktop to create any number of report pages with visualizations.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -56,7 +56,7 @@ To delete a page, select the **x** on the page's tab at the bottom of the Report
 
 ## Copy and paste between reports
 
-You can easily take a visual from one Power BI Desktop report and paste it into another report. Use the Ctrl+C keyboard shortcut to copy your report visual. In the other Power BI Desktop report, use Ctrl+V to paste the visual into the other report. You can select one visual at a time, or all visuals on a page, to copy then paste into the destination Power BI Desktop report.
+You can easily take a visual from one Power BI Desktop report and paste it into another report. Use the Ctrl+C keyboard shortcut to copy your report visual. In the other Power BI Desktop report, use Ctrl+V to paste the visual into the other report. You can copy one visual at a time, or all visuals on a page, then paste into the destination Power BI Desktop report.
 
 The ability to copy and paste visuals is useful for people who build and updates multiple reports frequently. When you copy between files, settings and formatting that have been explicitly set in the formatting pane will carry forward, while visual elements relying on a theme or the default settings automatically update to match the theme of the destination report. When you get a visual formatted and appearing the way you want, you can copy and paste that visual into new reports and preserve your work.
 
