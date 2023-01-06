@@ -13,7 +13,7 @@ ms.date: 01/06/2023
 
 # Formatting utils
 
-Formatting utils contain classes, interfaces, and methods to format values. It also contains extender methods to process strings, and measure text size in an SVG/HTML document.
+Formatting utils contain classes, interfaces, and methods to format values. It also contains extender methods to process strings and measure text size in an SVG/HTML document.
 
 ## Text measurement service
 
@@ -312,7 +312,7 @@ textMeasurementService.getDivElementWidth(svg)
 
 ### getTailoredTextOrDefault
 
-Compares a labels text size to the available size, and renders ellipses when the available size is smaller.
+Compares a label's text size to the available size, and renders ellipses when the available size is smaller.
 
 ```typescript
 function getTailoredTextOrDefault(textProperties: TextProperties, maxWidth: number): string;
@@ -380,7 +380,7 @@ stringExtensions.equalIgnoreCase("Power BI", "power bi");
 
 ### startsWith
 
-This function checks if a string starts with a substring;
+This function checks if a string starts with a substring.
 
 ```typescript
 function startsWith(a: string, b: string): boolean;
@@ -592,7 +592,7 @@ For an example, see [custom visual code](https://github.com/Microsoft/powerbi-vi
 
 ## ValueFormatterOptions
 
-This interface describes `options` of the IValueFormatter and options of 'create' function.
+This interface describes `options` of the IValueFormatter and options of `create` function.
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
