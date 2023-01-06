@@ -41,7 +41,7 @@ The .NET Framework provides many custom format options, for example, for specifi
   
 ### Math functions  
   
--   The **Round** function is useful to round numbers to the nearest integer. The following expression rounds a 1.3 to 1:  
+-   The **Round** function is useful to round numbers to the nearest integer. The following expression rounds 1.3 to 1:  
   
     ```  
     =Round(1.3)  
@@ -102,7 +102,7 @@ The .NET Framework provides many custom format options, for example, for specifi
   
      When used as a calculated field in a dataset, you can use this expression on a chart to aggregate values by week within each month.  
   
--   The following expression formats the *SellStartDate* value as MMM-yy. SellStartDate field is a datetime data type.  
+-   The following expression formats the *SellStartDate* value as MMM-yy. The SellStartDate field is a datetime data type.  
   
     ```  
     =FORMAT(Fields!SellStartDate.Value, "MMM-yy")  
@@ -241,7 +241,7 @@ You can use Visual Basic functions to convert a field from the one data type to 
   
 ###  <a name="DecisionFunctions"></a> Decision functions  
   
--   The **Iif** function returns one of two values depending on whether the expression is true or not. The following expression uses the **Iif** function to return a Boolean value of **True** if the value of *LineTotal* exceeds 100. Otherwise it returns **False**:  
+-   The **IIF** function returns one of two values depending on whether the expression is true or not. The following expression uses the **IIF** function to return a Boolean value of **True** if the value of *LineTotal* exceeds 100. Otherwise it returns **False**:  
   
     ```  
     =IIF(Fields!LineTotal.Value > 100, True, False)  
@@ -325,7 +325,7 @@ In an expression, you can add a reference to additional report functions that ma
 You can use expressions to manipulate how data appears on a report. For example, you can display the values of two fields in a single text box, display information about the report, or affect how page breaks are inserted in the report.  
   
 ###  <a name="PageHeadersandFooters"></a> Page headers and footers  
-When designing a report, you may want to display the name of the report and page number in the report footer. To do this, you can use the following expressions:  
+When designing a report, you can display the name of the report and page number in the report footer. To do this, you can use the following expressions:  
   
 -   The following expression provides the name of the report and the time it was run. It can be placed in a text box in the report footer or in the body of the report. The time is formatted with the .NET Framework formatting string for short date:  
   
@@ -365,7 +365,7 @@ When designing a report, you may want to display the name of the report and page
 >  You can refer to only one report item per expression in a page header or footer. Also, you can refer to the text box name, but not the actual data expression within the text box, in page header and footer expressions.  
   
 ###  <a name="PageBreaks"></a> Page breaks  
-In some reports, you may want to place a page break at the end of a specified number of rows instead of, or in addition to, on groups or report items. Create a group that contains the groups or detail records you want, add a page break to the group, and then add a group expression to group by a specified number of rows.  
+In some reports, you can place a page break at the end of a specified number of rows instead of, or in addition to, on groups or report items. Create a group that contains the groups or detail records you want, add a page break to the group, and then add a group expression to group by a specified number of rows.  
   
 -   The following expression, when placed in the group expression, assigns a number to each set of 25 rows. When a page break is defined for the group, this expression results in a page break every 25 rows.  
   
@@ -400,7 +400,7 @@ Expressions aren't only used to display data in text boxes. They can also be use
     =Iif(RowNumber(Nothing) Mod 2, "PaleGreen", "White")  
     ```  
   
-     If you use an expression for a specified scope, you may have to indicate the dataset for the aggregate function:  
+     If you use an expression for a specified scope, you might have to indicate the dataset for the aggregate function:  
   
     ```  
     =Iif(RowNumber("Employees") Mod 2, "PaleGreen", "White")  
@@ -442,7 +442,7 @@ You can customize URLs by using report data and also conditionally control wheth
     ="https://adventure-works/MyInfo?ID=" & Fields!EmployeeID.Value  
     ```  
   
--   The following expression conditionally controls whether to add a URL in a text box. This expression depends on a parameter named *IncludeURLs* that allows a user to decide whether to include active URLs in a report. This expression is set as an action on a text box. By setting the parameter to False and then viewing the report, you can export the report Microsoft Excel without hyperlinks.  
+-   The following expression conditionally controls whether to add a URL in a text box. This expression depends on a parameter named *IncludeURLs* that allows a user to decide whether to include active URLs in a report. This expression is set as an action on a text box. By setting the parameter to False and then viewing the report, you can export the report to Microsoft Excel without hyperlinks.  
   
     ```  
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
@@ -492,7 +492,7 @@ To avoid this condition, use one of the following strategies:
     =IIF(Field!B.Value=0, 0, Field!A.Value / IIF(Field!B.Value =0, 1, Field!B.Value))  
     ```  
   
--   Use a custom code function to return the value for the expression. The following example returns the percentage difference between a current value and a previous value. This can be used to calculate the difference between any two successive values and it handles the edge case of the first comparison (when there's no previous value) and cases whether either the previous value or the current value is **null** (**Nothing** in Visual Basic).  
+-   Use a custom code function to return the value for the expression. The following example returns the percentage difference between a current value and a previous value. This can be used to calculate the difference between any two successive values and it handles the edge case of the first comparison (when there's no previous value) and cases where either the previous value or the current value is **null** (**Nothing** in Visual Basic).  
   
     ```  
     Public Function GetDeltaPercentage(ByVal PreviousValue, ByVal CurrentValue) As Object  
@@ -512,7 +512,7 @@ To avoid this condition, use one of the following strategies:
     =Code.GetDeltaPercentage(Previous(Sum(Fields!Sales.Value),"ColumnGroupByYear"), Sum(Fields!Sales.Value))  
     ```  
   
-     This code helps to avoid run-time exceptions. You can now use an expression like `=IIF(Me.Value < 0, "red", "black")` in the *Color* property of the text box to conditionally the display text based on whether the values are greater than or less than 0.  
+     This code helps to avoid run-time exceptions. You can now use an expression like `=IIF(Me.Value < 0, "red", "black")` in the *Color* property of the text box to conditionally display text based on whether the values are greater than or less than 0.  
   
 ## Next steps
 
