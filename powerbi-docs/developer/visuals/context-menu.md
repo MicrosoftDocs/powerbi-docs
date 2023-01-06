@@ -1,6 +1,6 @@
 ---
 title: Add context menu to Power BI custom visual
-description: Learn how to add a context menu to a Power BI visual.
+description: Learn how you can use the sample BarChart visual to add a context menu that displays on a Power BI visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
@@ -22,12 +22,12 @@ There are two modes of context menus for each visual. The mode that displays dep
 ## [Context menu on empty space](#tab/EmptySpace)
 
 >[!div class="mx-imgBorder"]
->![Context menu called on empty space](media/context-menu/context-menu-called-on-empty-space-in-barchart.png)
+>:::image type="content" source="media/context-menu/context-menu-called-on-empty-space-in-barchart.png" alt-text="Screenshot of a visual with the basic context menu called from an empty space.":::
 
 ## [Context menu on data point](#tab/DataPoint)
 
 >[!div class="mx-imgBorder"]
->![Context menu called on datapoint](media/context-menu/datapoint-context-menu-in-barchart.png)
+>:::image type="content" source="media/context-menu/datapoint-context-menu-in-barchart.png" alt-text="Screenshot of a visual with the basic context menu called from a data point.":::
 
 ---
 
@@ -40,7 +40,7 @@ Use `selectionManager.showContextMenu()` with parameters `selectionId` and a pos
 > * The `selectionManager.showContextMenu()` is available from Visuals API version 2.2.0.
 > * All visuals published to AppSource must support both `ContextMenu` modes (empty space and data point).
 
-The following example shows how to add a context menu to a visual. The code is taken from the `barChart.ts` file, which is part to the [sample BarChart visual](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart):
+The following example shows how to add a context menu to a visual. The code is taken from the `barChart.ts` file, which is part of the [sample BarChart visual](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart):
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -60,7 +60,7 @@ public update(options: VisualUpdateOptions) {
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Make visual interactive](selection-api.md)
+>[Add interactivity into visual by Power BI visuals selections](selection-api.md)
 
 >[!div class="nextstepaction"]
 >[Build a bar chart](create-bar-chart.md)
