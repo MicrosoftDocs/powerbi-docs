@@ -53,7 +53,7 @@ For small teams, PPU can bridge the gap between Free, Pro, and Premium per capac
 
 Imagine that you need to create dataflows for consumption but have security requirements:
 
-:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Graphic that describes the scenario.":::
+:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Diagram that describes the scenario.":::
 
 In this scenario, you likely have two types of workspaces:
 
@@ -76,7 +76,7 @@ Lineage for privileged individuals also shows the referenced workspace and allow
 
 The following diagram illustrates this setup. On the left is the architectural pattern. On the right is an example that shows sales data split and secured by region.
 
-:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-02.png" alt-text="Graphic that describes how to use linked tables and dataflows.":::
+:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-02.png" alt-text="Diagram that describes how to use linked tables and dataflows.":::
 
 ## Reduce refresh times for dataflows
 
@@ -114,7 +114,7 @@ Generally, by using DirectQuery trades up-to-date data in your dataset with slow
 - An import would be too time consuming.
 - You're willing to trade cached performance for up-to-date data.
 
-### Solution: Use the dataflow connector to enable query folding and incremental refresh for import
+### Solution: Use the dataflows connector to enable query folding and incremental refresh for import
 
 The unified Dataflows connector can significantly reduce evaluation time for steps performed over computed entities, such as performing joins, distinct, filters, and group by operations. There are two specific benefits:
 
