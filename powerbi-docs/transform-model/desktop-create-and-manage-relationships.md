@@ -316,7 +316,7 @@ Single direction cross filtering works for many situations. In fact, if you’ve
 
 With single direction cross filtering, if you create a report that summarizes the project hours, you can then choose to summarize (or filter) by the **CompanyProject** table and its **Priority** column or the **CompanyEmployee** table and its **City** column. If however, you want to count the number of employees per projects (a less common question), it won’t work. You’ll get a column of values that are all the same. In the following example, both relationship's cross filtering direction is set to a single direction: towards the **ProjectHours** table. In the **Values** well, the **Project** field is set to **Count**:
 
- :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png" alt-text="Screenshot of a or the visualization tab used with the Employee and Project fields.":::
+ :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png" alt-text="Screenshot of the visualization tab used with the Employee and Project fields.":::
 
 Filter specification will flow from **CompanyProject** to **ProjectHours** (as shown in the following image), but it won’t flow up to **CompanyEmployee**.
 
