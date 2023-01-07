@@ -21,21 +21,25 @@ This article discusses the benefits, best practices, considerations, and limitat
 <a name="using-a-power-bi-service-live-connection-for-report-lifecycle-management"></a>
 ## Power BI live connection and report lifecycle management
 
-One challenge with the popularity of Power BI is the proliferation of reports, dashboards, and underlying data models. It's easy to create compelling reports in Power BI Desktop, [publish](../create-reports/desktop-upload-desktop-files.md) those reports in the Power BI service, and create great dashboards from those datasets. Because report creators often use the same or nearly the same datasets, knowing which dataset a report is based on and the freshness of that dataset becomes a challenge. The Power BI service live connection addresses that challenge by making it easier and more consistent to create, share, and expand on reports and dashboards with common datasets.
+One challenge with the popularity of Power BI is the resulting proliferation of reports, dashboards, and underlying data models. It's easy to create compelling reports in Power BI Desktop, [publish](../create-reports/desktop-upload-desktop-files.md) those reports in the Power BI service, and create great dashboards from those datasets.
+
+Because report creators often use the same or nearly the same datasets, knowing which dataset a report is based on and the freshness of that dataset becomes a challenge. The Power BI service live connection addresses that challenge by using common datasets to make it easier and more consistent to create, share, and expand on reports and dashboards.
 
 ### Create and share a dataset everyone can use
 
-A business analyst on your team who is skilled at creating good data models, often called datasets, can create a dataset and report and then share that report in the Power BI service.
+A business analyst on your team who is skilled at creating good data models, also called datasets, can create a dataset and report and then share that report in the Power BI service.
 
 ![Screenshot shows the Publish button in Power BI Desktop.](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-If everyone on the team created their own versions of the dataset and shared their reports with the team, there would be many reports from different datasets in your team's Power BI workspace. It would be hard to tell which report was the most recent, whether the datasets were the same, or what the differences were. With the Power BI service live connection feature, other team members can use the analyst's published dataset for their own reports in their own workspaces. Everyone can use the same solid, vetted, published dataset to build their own unique reports.
+If everyone on the team created their own versions of the dataset and shared their reports with the team, there would be many reports from different datasets in your team's Power BI workspace. It would be hard to tell which report was the most recent, whether the datasets were the same, or what the differences were.
+
+With the Power BI service live connection feature, other team members can use the analyst's published dataset for their own reports in their own workspaces. Everyone can use the same solid, vetted, published dataset to build their own unique reports.
 
 ### Connect to the dataset by using a Power BI service live connection
 
 In Power BI Desktop, the team business analyst creates a report and the dataset the report is based on. The analyst then publishes the report to the Power BI service, and the report shows up in the team's workspace. For more information about workspaces, see [Workspaces in Power BI](../collaborate-share/service-new-workspaces.md).
 
-The report owner uses the **Build permission** setting to make the report available to everyone in and out of the workspace to see and use. Team members in and out of the team workspace can now establish a live connection to the analyst's shared data model by using the Power BI service live connection feature. Team members can create their own unique reports, from the original dataset, in their own workspaces.
+The business analyst can use the Build permission setting to make the report available to everyone in and out of the workspace to see and use. Team members in and out of the team workspace can now establish a live connection to the shared data model by using the Power BI service live connection feature. Team members can create their own unique reports, from the original dataset, in their own workspaces.
 
 The following image shows how one Power BI Desktop report and its data model publish to the Power BI service. Others users connect to the data model by using the Power BI service live connection, and base their own unique reports in their own workspaces on the shared dataset.
 
@@ -69,7 +73,7 @@ The first step in managing the report lifecycle by using a Power BI service live
 
    ![Screenshot that shows publishing succeeded.](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-1. Now that your report with its dataset is in the Power BI service, you can *promote* it, or attest to its quality and reliability. You can also request for the report to be *certified* by a central authority in your Power BI tenant. With either of these endorsements, your dataset appears at the top of the list when people are looking for datasets. For more information, see [Endorse your content](../collaborate-share/service-endorse-content.md).
+1. Now that your report with its dataset is in the Power BI service, you can *promote* it, or attest to its quality and reliability. You can also request for the report to be *certified* by a central authority in your Power BI tenant. For more information, see [Endorse your content](../collaborate-share/service-endorse-content.md).
 
 1. The last step is to set Build permission in the Power BI service for the dataset the report is based on. Build permission determines who can see and use your dataset. You can set Build permission in the workspace itself, or when you share an app from the workspace. For more information, see [Build permission for shared datasets](service-datasets-build-permissions.md).
 
@@ -83,7 +87,7 @@ Teammates who have access to the workspace where the report and dataset were pub
 
    If you're not signed in, Power BI prompts you to sign in.
 
-1. The **Data hub** shows the workspaces you're a member of and all the shared datasets you have Build permission for, in any workspace.
+1. The **Data hub** shows the workspaces you're a member of, and all the shared datasets you have Build permission for in any workspace.
 
    To find the dataset you want, you can:
 
