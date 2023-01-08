@@ -31,11 +31,11 @@ When you build a report on top of an existing dataset, the first step is to conn
 
 ## Copy a report
 
-When you find a report you like, in a workspace or an app, you can make a copy of it. Then modify it to fit your needs. You don't have to worry about creating the data model. That data model is already created for you. And it's much easier to modify an existing report than it's to start from scratch. Read more about [copying reports](service-datasets-copy-reports.md).
+When you find a report you like, in a workspace or an app, you can make a copy of it, and then modify it to fit your needs. You don't have to worry about creating the data model. The data model is already created for you. And it's much easier to modify an existing report than it is to start from scratch. Read more about [copying reports](service-datasets-copy-reports.md).
 
 ## Build permission for datasets
 
-With **Build** permission type, if you're a dataset creator, you can determine who in your organization can build new content on your datasets. People with **Build** permission can also build new content on the dataset outside Power BI, such as Excel sheets by using Analyze in Excel, XMLA, and export. Read more about the [Build permission](service-datasets-build-permissions.md).
+With **Build** permission type, if you're a dataset creator, you can determine who in your organization can build new content on your datasets. People with **Build** permission can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export. Read more about the [Build permission](service-datasets-build-permissions.md).
 
 ## Promotion and certification
 
@@ -53,8 +53,8 @@ The specific features and experiences built on shared dataset capabilities are l
 
 ## Considerations and limitations
 
-- As an app publisher, you have to make sure that your audience has access to datasets outside of the workspace. Otherwise, users can encounter issues when interacting with your app: reports don't open without dataset access and dashboard tiles show as locked. Also, users aren't able to open the app if the first item in its navigation is a report without access to the dataset.
-- By design, *Publish to web* doesn’t work for a report based on a shared dataset.
+- As an app publisher, you have to make sure that your audience has access to datasets outside of the workspace. Otherwise, users will encounter issues when interacting with your app: reports won't open without dataset access and dashboard tiles will show as locked. Also, users won't able to open the app if the first item in its navigation is a report without access to the dataset.
+- By design, *Publish to web* doesn't work for a report based on a shared dataset.
 - If two people are members of a workspace that is accessing a shared dataset, it's possible that only one of them can see the related dataset in the workspace. Only people with at least **Read** access to the dataset can see the shared dataset.
 
 ## Next steps
