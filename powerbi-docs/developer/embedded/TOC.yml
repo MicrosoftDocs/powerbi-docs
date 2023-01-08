@@ -95,7 +95,7 @@
     items:
     - name: "Embedding security features"
       href: embedded-row-level-security.md
-    - name: "Embed with cloud-based RLS"
+    - name: "Embed with RLS"
       href: cloud-rls.md
     - name: "RLS in embedded paginated reports"
       href: paginated-reports-row-level-security.md

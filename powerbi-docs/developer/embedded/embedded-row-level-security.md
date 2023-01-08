@@ -38,7 +38,7 @@ Depending on the situation, some common cases where security measures can be app
 Depending on your setup, you may have to take several steps before you can generate an embed token.
 For instructions on how to embed reports or other items, go to the link that best describes your specific scenario:
 
-* [Cloud based RLS](cloud-rls.md)
+* [Standard RLS](cloud-rls.md)
 * [Embedding paginated reports](paginated-reports-row-level-security.md)
 * [SQL Server Analysis Services](sql-server-analysis-services-embed.md)
 * [Azure Analysis Services](./embed-azure-analysis-services.md)
