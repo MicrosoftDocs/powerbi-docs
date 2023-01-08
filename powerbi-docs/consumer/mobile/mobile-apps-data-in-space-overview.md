@@ -1,5 +1,5 @@
 ---
-title: 'Data in space overview'
+title: 'Power BI Data in space overview'
 description: This article provides an overview of the Power BI mobile app's Data in space feature.
 author: paulinbar
 ms.author: painbar
@@ -13,18 +13,14 @@ ms.custom: mode-portal
 ---
 # Data in space overview (preview)
 
-Applies to:
-
-| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) |
-|:--- |:--- |
-|iPhones |iPads |
-
 **Data in space** is a new Power BI Mobile feature that uses augmented reality technology to create spatial anchors in the real world and attach Power BI data to them, so that data can be connected to the physical environment it is relevant to.
 
-Data in space is currently supported on iPhones and iPads.
+Data in space is currently supported on ARKit-compatible iPhones and iPads. See Apple's documentation to check whether your iPhone or iPad is ARKit compatible.
 
-This article provides a general overview of the Data in space feature. See [Next steps](#next-steps) for specific information about pinning and accessing Power BI data in space, or about setting up Data in space in your organization (administrators).
-
+This article provides a general overview of the Data in space feature. For more information, see also:
+* [Pin Power BI reports to locations in the real world](mobile-apps-data-in-space-pin-reports.md)
+* [Find and access Power BI reports pinned to locations in the real world](mobile-apps-data-in-space-find-pinned-reports.md)
+* [Administrators: Set up Data in space in your organization](mobile-apps-data-in-space-set-up.md)
 
 ## How can Data in space benefit me?
 

@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 02/14/2022
+ms.date: 10/02/2022
 ---
 
 # Assign a workspace to a deployment pipeline
@@ -60,7 +60,7 @@ To unassign a workspace from a pipeline stage, follow these steps:
 
 4. In the *Unassign workspace* dialogue box, select **Unassign**.
 
-    :::image type="content" source="media/deployment-pipelines-assign/unassign-note.png" alt-text="A screenshot showing the unassign workspace pop up window in deployment pipelines, with the unassign button highlighted.":::
+    :::image type="content" source="media/deployment-pipelines-assign/unassign-note.png" alt-text="A screenshot showing the unassign workspace pop-up window in deployment pipelines, with the unassign button highlighted.":::
 
 ## Item connections
 
@@ -70,15 +70,13 @@ Connections between items are only established when you assign a workspace to a 
 
 ## Limitations
 
-* The workspace must be a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
-
 * You must be an admin of the workspace.
 
 * The workspace is not assigned to any other pipeline.
 
-* The workspace must reside on a [Premium capacity](../enterprise/service-premium-what-is.md).
+* The workspace must reside on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
 
-* To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#workspace-member) permissions for the workspaces in its adjacent stages. For more information see [Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?](deployment-pipelines-troubleshooting.yml#why-am-i-getting-the--workspace-member-permissions-needed--error-message-when-i-try-to-assign-a-workspace-)
+* To assign a workspace you need at least [workspace member](deployment-pipelines-process.md#permissions-table) permissions for the workspaces in its adjacent stages. For more information see [Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?](deployment-pipelines-troubleshooting.yml#why-am-i-getting-the--workspace-member-permissions-needed--error-message-when-i-try-to-assign-a-workspace-)
 
 * You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
@@ -91,6 +89,9 @@ Connections between items are only established when you assign a workspace to a 
 
 >[!div class="nextstepaction"]
 >[Get started with deployment pipelines](deployment-pipelines-get-started.md)
+
+>[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

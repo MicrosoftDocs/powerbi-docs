@@ -1,33 +1,33 @@
 ---
-title: Manage customer data for multi-customer applications with service principal profiles
-description: Create, import, update, and assign multi-customer workspaces in embedded analytics using service principal profiles.
+title: Use service principal profiles to manage customer data in multitenant apps
+description: Create, import, update, and assign multitenant workspaces in embedded analytics using service principal profiles.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 10/18/2022
 ---
 
-# Service principal profiles for multi-customer apps in Power BI Embedded
+# Service principal profiles for multitenancy apps in Power BI Embedded
 
-This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
+This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or any other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
 > [!NOTE]
-> For the sake of simplicity, all ISVs and Power BI Embedded Enterprise application owners will be referred to as ISVs in this article.
+> The word *tenant* in Power BI can sometimes refer to an Azure AD tenant. In this article, however, we use the term *multitenancy* to describe a solution where a single instance of a software application serves multiple customers or organizations (tenants) requiring physical and logical separation of data. . For example, the Power BI app builder can allocate a separate workspace for each if its customers (or tenants) as we show below. These customers are not necessarily Azure AD tenants, so don’t confuse the term *multitenant application* that we use here, with the [Azure AD multitenant application](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-A *service principal profile* is a profile created by a service principal. The ISV application calls the Power BI APIs using a service principal profile, as explained in this article.
+A *service principal profile* is a profile created by a [service principal](./embed-service-principal.md). The ISV app calls the Power BI APIs using a service principal profile, as explained in this article.
 
-The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer. When a customer visits the ISV app, the app uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
+The ISV application [service principal](pbi-glossary.md#service-principal) creates a different Power BI profile for each customer, or [tenant](./pbi-glossary.md#tenant). When a customer visits the ISV app, the app uses the corresponding profile to generate an [embed token](pbi-glossary.md#embed-token) that will be used to render a report in the browser.
 
-Using service principal profiles enables the ISV application to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
+Using service principal profiles enables the ISV app to host multiple customers on a single [Power BI tenant](pbi-glossary.md#power-bi-tenant). Each profile represents one customer in Power BI. In other words, each profile creates and manages Power BI content for one specific customer's data.
 
- :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multi-tenancy.":::
+ :::image type="content" source="media/embed-multi-tenancy/multi-tenant-saas-profiles.png" alt-text="Diagram of SP Profiles and multitenancy.":::
 
 >[!NOTE]
->This article is aimed at organizations that want to set up a multi-customer app using service principal profiles.
->If your organization already has an app that supports multiple customers from a single Power BI tenant, and you want to migrate to the service principal profile model, see [Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md).
+>This article is aimed at organizations that want to set up a multitenant app using service principal profiles.
+>If your organization already has an app that supports multitenancy, and you want to migrate to the service principal profile model, see [Migrate to the service principal profiles model](migration-to-sp-profiles.md).
 
 Setting up your Power BI content involves the following steps:
 
@@ -46,7 +46,7 @@ All the above steps can be fully automated using [Power BI REST APIs](/rest/api/
 Before you can create service principal profiles, you need to:
 
 * Set up the service principal by following the *first three steps* of [Embed Power BI content with service principal](embed-service-principal.md#step-1---create-an-azure-ad-app).
-* From a Power BI tenant admin account, enable creating profiles in the tenant.
+* From a Power BI tenant admin account, enable creating profiles in the tenant *using the same security group you used when you created the service principal*.
 
  :::image type="content" source="./media/embed-multi-tenancy/service-principal-profile-feature-switch.png" alt-text="Screenshot of Admin portal switch.":::
 
@@ -81,7 +81,7 @@ The following points are important to understand when using profiles:
 * A profile owner can't be changed after creation.
 * A profile isn't a standalone identity. It needs the service principal [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) token to call Power BI REST APIs.
 
-ISV applications call Power BI REST APIs by providing the service principal Azure AD token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
+ISV apps call Power BI REST APIs by providing the service principal Azure AD token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
 
 ```rest
   GET https://api.powerbi.com/v1.0/myorg/groups HTTP/1.1
@@ -95,7 +95,7 @@ Power BI [workspaces](pbi-glossary.md#workspace) are used to host Power BI items
 
 Each profile needs to:
 
-* Create at least one [Power BI workspace](../../collaborate-share/service-create-workspaces.md)
+* Create at least one [Power BI workspace](../../collaborate-share/service-create-the-new-workspaces.md)
 
   ```rest
   POST https://api.powerbi.com/v1.0/myorg/groups HTTP/1.1
@@ -108,7 +108,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace
+* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace. The service principal profile must have *Admin* access to the workspace.
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
@@ -147,19 +147,19 @@ Then, use the *Update parameters* API to define which customers' data the datase
 ISVs usually store their customers' data in one of two ways:
 
 * [A separate database for each customer](#a-separate-database-for-each-customer)
-* [A single multi-customer database](#a-single-multi-customer-database)
+* [A single multitenant database](#a-single-multitenant-database)
 
-In either case, you should end up with single-customer datasets (one dataset per customer) in Power BI.  
+In either case, you should end up with single-tenant datasets (one dataset per customer) in Power BI.  
 
 ### A separate database for each customer
 
-If the ISV application has a separate database for each customer, create single-customer datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
+If the ISV application has a separate database for each customer, create single-tenant datasets in Power BI. Provide each dataset with connection details that point to its matching database. Use one of the following methods to avoid creating multiple identical reports with different connection details:
 
 * **Dataset parameters:** Create a dataset with [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) in the connection details (such as SQL server name, SQL database name). Then, import a report into a customer's workspace and change the [parameters](/rest/api/power-bi/datasets/update-parameters-in-group) to match the customer's database details.
 
-* **Update Dataseource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/update-datasources-in-group).
+* **Update Datasource API:** Create a .pbix that points to a data source with sample content. Then, import the .pbix into a customer's workspace and change the connection details using the [Update Datasource API](/rest/api/power-bi/datasets/update-datasources-in-group).
 
-### A single multi-customer database
+### A single multitenant database
 
 If the ISV application uses one database for all its customers, separate the customers into different datasets in Power BI as follows:
 
@@ -195,7 +195,7 @@ X-PowerBI-Profile-Id: a4df5235-6f18-4141-9e99-0c3512f41306
 
 ## Design aspects
 
-Before setting up a profile-based multi-customer solution, you should be aware of the following issues:
+Before setting up a profile-based multitenant solution, you should be aware of the following issues:
 
 * [Scalability](#scalability)
 * [Automation & operational complexity](#automation-and-operational-complexity)
@@ -217,17 +217,17 @@ Even with these advantages, you should consider the potential scale of your appl
 
 With Power BI profile-based separation, you might need to manage hundreds or thousands of items. Therefore, it's important to define the processes that frequently happen in your application lifecycle management, and ensure you have the right set of tools to do these operations at scale. Some of these operations include:
 
-* Adding a new customer
-* Updating a report for some or all customers
-* Updating the dataset schema for some or all customers
-* Unplanned customizations for specific customers
+* Adding a new tenant
+* Updating a report for some or all tenants
+* Updating the dataset schema for some or all tenants
+* Unplanned customizations for specific tenants
 * Frequency of dataset refreshes
 
-For example, creating a profile and a workspace for a new customer is a common task, which can be [fully automated](https://www.powerbidevcamp.net/sessions/session11/) with the [Power BI REST API](/rest/api/power-bi/).
+For example, creating a profile and a workspace for a new tenant is a common task, which can be [fully automated](https://www.powerbidevcamp.net/sessions/session11/) with the [Power BI REST API](/rest/api/power-bi/).
 
 ### Multi-Geo needs  
 
-Multi-Geo support for Power BI Embedded means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world. To support different customers in different regions, assign the customer's workspace to a capacity in the desired region. This task is a simple operation that doesn't involve extra cost. However, if you have customers that need data from multiple regions, the customer profile should duplicate all items into multiple workspaces that are assigned to different regional capacities. This duplication may increase both cost and management complexity.
+Multi-Geo support for Power BI Embedded means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world. To support different customers in different regions, assign the customer's workspace to a capacity in the desired region. This task is a simple operation that doesn't involve extra cost. However, if you have customers that need data from multiple regions, the tenant profile should duplicate all items into multiple workspaces that are assigned to different regional capacities. This duplication may increase both cost and management complexity.
 
 For compliance reasons, you may still want to create multiple Power BI tenants in different regions. Read more about [multi-geo](../../admin/service-admin-premium-multi-geo.md).
 
@@ -237,7 +237,7 @@ Application developers using Power BI Embedded need to [purchase a Power BI Embe
 
 * The smallest object you can independently assign to a capacity is a [workspace](pbi-glossary.md#workspace) (you can't assign a report, for example). By separating customers by profiles, you get different workspaces - one per customer. This way, you get full flexibility to manage each customer according to their performance needs, and optimize capacity utilization by scaling up or down. For example, you can manage large and essential customers with high volume and volatility in a separate capacity to ensure a consistent level of service, while grouping smaller customers in another capacity to optimize costs.
 
-* Separating workspaces also means separating datasets between customers so that data models are in smaller chunks, rather than a single large dataset. These smaller models enable the capacity to manage memory usage more efficiently. Small, unused datasets can be evicted after a period of inactivity, in order to maintain good performance.
+* Separating workspaces also means separating datasets between tenants so that data models are in smaller chunks, rather than a single large dataset. These smaller models enable the capacity to manage memory usage more efficiently. Small, unused datasets can be evicted after a period of inactivity, in order to maintain good performance.
 
 When buying a capacity, consider the limit on the number of parallel refreshes, as refresh processes might need extra capacity when you have multiple datasets.
 
@@ -246,7 +246,7 @@ When buying a capacity, consider the limit on the number of parallel refreshes, 
 This article explains how to use profiles to create a separate dataset for each customer. Alternatively, ISV applications can store all their customers' data in one large dataset and use [Row-level security (RLS)](embedded-row-level-security.md) to protect each customer's data. This approach can be convenient for ISVs that have relatively few customers and small to medium-sized datasets because:
 
 * There's only one report and one dataset to maintain
-* The onboarding  process for new customers can be simplified
+* The onboarding process for new customers can be simplified
 
 Before using RLS, however, make sure you understand its limitations. All the data for all customers are in one large Power BI dataset. This dataset runs in a single capacity with its own scaling and other limitations.
 
@@ -254,13 +254,13 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ## Considerations and limitations
 
-Service principal profiles are not supported with Azure Analysis Services (AAS) in live connection mode.
+Service principal profiles aren't supported with Azure Analysis Services (AAS) in live connection mode.
 
 ### Power BI capacity limitations
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-what-is#large-datasets).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-gen2-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-gen2-what-is#large-datasets).
 * To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](/power-bi/enterprise/service-premium-large-models) setting.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-gen2-what-is#capacity-nodes).
 * Scaling a capacity in Gen 1, on average, takes between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script). For Gen 2, scaling is instantaneous.
 
 ### Manage service principals
@@ -276,26 +276,26 @@ Often, the ISV application needs to save a mapping between a profile ID and a cu
 > Be very careful when deleting a service principal. You don't want to accidentally lose data from all its associated profiles.
 
 If you delete the service principal in the active directory, all its profiles in Power BI will be deleted. However, Power BI won't delete the content immediately, so the tenant admin can still access the workspaces. Be careful when deleting a service principal used in a production system, especially when you created profiles using this service principal in Power BI.
-If you do delete a service principal that has created profiles, be aware that you will need to recreate all the profiles, provide the new profiles access to the relevant workspaces, and update the profile IDs in the ISV application database.
+If you do delete a service principal that has created profiles, be aware that you'll need to recreate all the profiles, provide the new profiles access to the relevant workspaces, and update the profile IDs in the ISV application database.
 
 ### Data separation
 
 When data is separated by service principal profiles, a simple mapping between a profile and customer prevents one customer from seeing another customer's content. Using a single *service principal* requires that the service principal has access to all the different workspaces in all the profiles.
 
-To add extra separation, you can assign a separate service principal to each customer, instead of having a single service principal access multiple workspaces using different profiles. This has several advantages, including:
+To add extra separation, assign a separate service principal to each tenant, instead of having a single service principal access multiple workspaces using different profiles. Assigning separate service principals has several advantages, including:
 
-* Human error or a credential leak won't cause multiple customers' data to be exposed.
-* Certificate rotation can be done separately for each customer.
+* Human error or a credential leak won't cause multiple tenants' data to be exposed.
+* Certificate rotation can be done separately for each tenant.
 
-However, using multiple service principals comes with a high management cost. Select this path only if you need the extra separation. Keep in mind that the configuration of which data to show an end user is defined when you [generate the embed token](/rest/api/power-bi/embedtoken), a backend-only process that end users can't see or change. Requesting an embed token using a customer-specific profile will generate an embed token for that specific profile, which will give you customer separation in consumption.
+However, using multiple service principals comes with a high management cost. Select this path only if you need the extra separation. Keep in mind that the configuration of which data to show an end user is defined when you [generate the embed token](/rest/api/power-bi/embedtoken), a backend-only process that end users can't see or change. Requesting an embed token using a tenant-specific profile will generate an embed token for that specific profile, which will give you customer separation in consumption.
 
 #### One report, multiple datasets
 
-Generally, you have one report and one dataset per customer. If you have hundreds of reports, you'll have hundreds of datasets. Sometimes, you might have one report format, with different datasets (for example, different parameters or connection details). Each time you have a new version of the report, you'll need to update all the reports for all customers. Although you can automate this, it's easier to manage if you have just one copy of the report. This can be achieved by creating a workspace that contains the report to embed. During a session runtime, you can bind the report to the customer-specific dataset. Read [dynamic bindings](embed-dynamic-binding.md) for more details.
+Generally, you have one report and one dataset per tenant. If you have hundreds of reports, you'll have hundreds of datasets. Sometimes, you might have one report format, with different datasets (for example, different parameters or connection details). Each time you have a new version of the report, you'll need to update all the reports for all tenants. Although you can automate this, it's easier to manage if you have just one copy of the report. Create a workspace that contains the report to embed. During a session runtime, bind the report to the tenant-specific dataset. Read [dynamic bindings](embed-dynamic-binding.md) for more details.
 
 #### Customizing and authoring content
 
-When you create content, carefully consider who you allow to edit it. If you permit multiple users in each tenant to edit it's easy to exceed dataset limitations. If you decide to give users editing capability, we recommend monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
+When you create content, carefully consider who has permission to edit it. If you allow multiple users in each tenant to edit, it's easy to exceed dataset limitations. If you decide to give users editing capability, monitor their content generation closely, and scale up as needed. For the same reason, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the ISV application allows content personalization, consider introducing workspace retention policies for user-specific content. Retention policies make it easier to delete content when users move to a new position, leave the company, or stop using the platform.
 
 #### System-Managed identity
 
@@ -309,13 +309,12 @@ Be careful when using a system-managed identity because:
 
 Due to the above considerations, we recommend that you use a user-assigned managed identity.
 
+## Example
+
+For an example of how to use service principal profiles to manage a multitenant environment with Power BI and App-Owns-Data embedding, download the [App owns data multitenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) repository from [Power BI Dev Camp](https://www.powerbidevcamp.net/) (third party site).
+
 ## Next steps
 
->[!div class="nextstepaction"]
->[Learn more about service principals](embed-service-principal.md)
-
->[!div class="nextstepaction"]
->[Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
-
->[!div class="nextstepaction"]
->[Migrate multi-customer applications to the service principal profiles model](migration-to-sp-profiles.md)
+* [Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
+* [Migrate multitenancy apps to the service principal profiles model](migration-to-sp-profiles.md)
+* [Develop scalable multitenancy applications with Power BI embedding](/power-bi/guidance/develop-scalable-multitenancy-apps-with-powerbi-embedding)

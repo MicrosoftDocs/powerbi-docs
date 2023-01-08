@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/27/2021
+ms.date: 10/21/2022
 LocalizationGroup: Transform and shape data
 ---
 # Using the Log Analytics for Power BI Datasets Template App (preview)
 
 Power BI is integrating with Azure Log Analytics (LA) to enable administrators and Premium workspace owners to configure a connection from Power BI to a Log Analytics workspace in Azure subscriptions that they control. We published a template app to give you a head start with your analysis. This article describes the app so you can understand how to use the parameters, filters, navigation, and drillthrough paths to answer questions about dataset operations from the perspective of the Analysis Services (AS) engine. We will describe each page so you can understand its purpose and the typical use cases they support.
 
-To [install the AS Engine app](install-as-engine-app.md), you must have a Log Analytics workspace. Once installed, anyone in the organization with the right permissions can view the app.
+To [install the AS Engine app](install-as-engine-app.md), you must have a Log Analytics workspace. Once installed, anyone in the organization with the right permissions can view the app. You can see the source .pbit for the template app on [Github](https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports).
 
 ## App Goals
 We wanted to build an app that can be used to analyze AS engine behavior in general, and to help isolate and debug specific problems in depth. Any operation can be sliced by CapacityId, Workspace Name, Dataset Name, and ReportId to give you the necessary context. We are looking into providing you with more item names, and not just the ID.
@@ -81,7 +81,7 @@ The following parameters are defined in the template:
 
 |**Parameter**  |**Description**  |
 |---------|---------|
-|Days Ago To Start     |Load data from the specified number of days ago. Maximum value you can select here is 30 days.    |
+|Days Ago To Start     |Load data from the specified day to the time the call was initiated. The maximum value you can select is 30 days. However, your Premium capacity memory limits apply to this parameter. If those limits are exceeded, the template app may fail to refresh.    |
 |Days Ago To Finish  |Load data up to the specified number of days ago. Use 0 for today. | 
 |Log Analytics Table |Preset values corresponding to the Log Analytics source table:<br> -	PowerBIDatasetsWorkspace<br> -	PowerBIDatasetsTenant <br> Currently only PowerBIDatasetsWorkspace is supported. |
 |Log Analytics WorkspaceId |GUID of the Azure Log Analytics workspace containing the AS Engine data. |
@@ -454,6 +454,6 @@ The following articles provide more information about Power BI and its many feat
 * [Install Log Analytics Template App](install-as-engine-app.md)
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
+* [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
 
 

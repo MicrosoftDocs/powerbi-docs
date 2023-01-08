@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/27/2022
+ms.date: 11/04/2022
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal
@@ -19,9 +19,7 @@ This article walks through how to scale a Power BI Embedded capacity in Microsof
 This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven't, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md) to get started.
 
 > [!NOTE]
->
-> * With Gen1 capacities, a scaling operation can take about a minute. During this time, the capacity won't be available and embedded content may fail to load. With [Embedded Gen2](power-bi-embedded-generation-2.md) capacities, you can scale your Power BI Embedded resource without experiencing any downtime.
-> * To autoscale a gen2 capacity see [Autoscaling](#autoscaling).
+> This article describes the process for vertically scaling A SKUs. It doesn't talk about horizontal scaling or P SKUs.
 
 ## Scale a capacity
 
@@ -59,15 +57,26 @@ This assumes you created a Power BI Embedded capacity (**A SKU**). If you haven'
     > [!div class="mx-imgBorder"]
     > ![Screenshot current tier information.](media/azure-pbie-scale-capacity/azure-portal-confirm-tier.png)
 
-## Autoscaling
+## Autoscale your capacity
 
-Embedded Gen2 does not provide an out-of-the-box vertical autoscale feature. Instead, you can increase or decrease the size of your gen2 capacity using one of these options:
+Use one of the autoscaling techniques described here to elastically resize your capacity and address its memory and CPU needs.
 
-* [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).
+* [Power BI Embedded Azure Resource Manager REST APIs](/rest/api/power-bi-embedded/), for example [Capacities - Update](/rest/api/power-bi-embedded/capacities/update).  See this [runbook PowerShell script capacity scale-up sample](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/PowerShell%20Scripts/ScaleUp-Automation-RunBook.ps1) on how to use this API call can create your own versions of upscale and down-scale scripts.
 
-* Power BI Embedded Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as *CPU*, *CPU Per Workload*, and *Overload*.
+* Use [Azure alerts](/azure/azure-monitor/alerts/alerts-overview) to track Power BI Gen2 [capacity metrics](monitor-power-bi-embedded-reference.md#capacities) such as:
+  * *Overload* - 1 if capacity's CPU surpassed 100% and is in an overloaded state. Otherwise, 0.
+  * *CPU* utilization in percentage
+  * *CPU Per Workload* if specific workloads are used, such as paginated reports
+  
+   When these metrics reach the value specified in the Azure Monitor Alert rules, the rule will trigger an upscale or downscale runbook script.
 
-* [Azure alerts](/azure/azure-monitor/alerts/alerts-overview). You can use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+   For example, you can create a rule that if Overload = 1 or if CPU = 95%, then the upscale capacity runbook script will be invoked to update the capacity to a higher SKU.  
+   You can also create a rule that if the CPU drops below 50%, a down-scale runbook script will be invoked to update the capacity to a lower CPU.  
+   Use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
+
+## Considerations and limitations
+
+Scaling capacities may involve a small amount of downtime.
 
 ## Next steps
 

@@ -9,34 +9,31 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 07/10/2022
+ms.date: 07/13/2022
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
 
-This article walks you through how to create a [Power BI Embedded](embedded-analytics-power-bi.md#power-bi-embedded) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
+This article walks you through how to create a [Power BI Embedded](embedded-analytics-power-bi.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
- >[!Important]
- >Within the next few months, all Gen1 capacities will be deprecated and only [Power BI Embedded Gen2](../../enterprise/service-premium-gen2-what-is.md) capacities will available. We recommend that you [upgrade your embedded capacities to Gen2](#upgrade-a-capacity-to-gen2) using the Azure portal or the ARM API.
+## Prerequisites
 
-## Before you begin
+Before you can create a capacity, you need the following:
 
-To complete this quickstart, you need:
+1. An **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
-* **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
+2. A **Power BI tenant:** At least one account in your Azure AD tenant must be signed up for Power BI. Sign into Power BI from that account.
 
-* **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
+3. **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account, if you don't already have one.
 
-* **Power BI tenant:** At least one account in your Azure AD tenant must be signed up for Power BI.
-
-* **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
+4. **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
 
 >[!NOTE]
 >To create or manage a capacity, you must have the built-in role of [contributor](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) or higher.
 
-Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
+Before creating a Power BI Embedded capacity, make sure you're signed into Power BI at least once.
 
 ### [Portal](#tab/portal)
 
@@ -108,7 +105,7 @@ Power BI embedded capacity commands require version 2.3.1 or later of the Azure 
 
 2. Install the Azure CLI extension.
 
-    When working with extension references for the Azure CLI, you must first install the extension.  Azure CLI extensions give you access to experimental and pre-release commands that have not yet shipped as part of the core CLI.  To learn more about extensions including updating and uninstalling, see [Use extensions with Azure CLI](/cli/azure/azure-cli-extensions-overview).
+    When working with extension references for the Azure CLI, you must first install the extension.  Azure CLI extensions give you access to experimental and pre-release commands that haven't yet shipped as part of the core CLI.  To learn more about extensions including updating and uninstalling, see [Use extensions with Azure CLI](/cli/azure/azure-cli-extensions-overview).
 
     Install the extension for Power BI embedded capacity by running the following command:
 
@@ -155,7 +152,7 @@ The templates used in this quickstart are from [Azure Quickstart Templates](http
 
 Once Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](/azure/templates/microsoft.powerbidedicated/allversions) - create a Power BI Embedded capacity.
 
-Use this template to create an [Embedded Gen 2](power-bi-embedded-generation-2.md) resource.
+Use this template to create a Power BI Embedded resource.
 
 ```json
 {
@@ -277,64 +274,14 @@ To delete the capacity you created, follow these steps:
 
 ---
 
-## Upgrade a capacity to Gen2
+## Considerations and limitations
 
-You can upgrade a Gen1 capacity to Gen2 in either the Azure UI portal, or the ARM API.
-
-### [Azure UI](#tab/ui)
-
-To upgrade a Gen1 capacity to Gen2 in the Azure UI:
-
-1. Select the capacity.
-2. From the overview section select **Update to Gen 2**.
-
-    :::image type="content" source="media/azure-pbie-create-capacity/upgrade-to-gen-2.png" alt-text="Screenshot of a Power BI upgrade capacity option in the Azure portal.":::
-
-3. Select **Yes** to confirm.
-
-    :::image type="content" source="media/azure-pbie-create-capacity/confirm-upgrade.png" alt-text="Screenshot of a Power BI confirm upgrade in the Azure portal.":::
-
-The capacity will update automatically in a few seconds.
-
-### [ARM API](#tab/arm)
-
-Here's an example of a template for upgrading a capacity to Gen2:
-
-#### Request
-
-```http
-PATCH https://management.azure.com/subscriptions/613192d7-503f-477a-9cfe-4efc3ee2bd60/resourceGroups/TestRG/providers/Microsoft.PowerBIDedicated/capacities/azsdktest?api-version=2021-01-01
-```
-
-#### Request body
-
-```json
-{
-  "sku": {
-    "name": "A1",
-    "tier": "PBIE_Azure"
-  },
-  "tags": {
-    "testKey": "testValue"
-  },
-  "properties": {
-    "mode": "Gen2"
-  }
-}
-```
-
----
+Your subscription must be associated with an Azure Active Directory (Azure AD) organizational account. Microsoft personal accounts aren't supported
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Manage capacities](../../enterprise/service-admin-premium-manage.md)
+* [Manage capacities](../../enterprise/service-admin-premium-manage.md)
+* [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
+* [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 
->[!div class="nextstepaction"]
->[Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
-
->[!div class="nextstepaction"]
->[Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[More questions? Try asking the Power BI Community](https://community.powerbi.com/)
+[More questions? Try asking the Power BI Community](https://community.powerbi.com/)

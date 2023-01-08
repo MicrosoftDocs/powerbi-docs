@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 04/15/2021
+ms.date: 09/29/2022
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
 # Ways to collaborate and share in Power BI
 
-You've created reports or dashboards. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
+You've created reports, dashboards, scorecards, and datasets. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
@@ -27,25 +27,27 @@ You've created reports or dashboards. Maybe you want to collaborate on them with
 
 **Distribute or share dashboards and reports**
 
-- [*Share reports or dashboards*](#share-reports-or-dashboards) from your My Workspace or another workspace.
+- [Share reports, dashboards, and scorecards](#share-reports-or-dashboards) from your My Workspace or another workspace.
 - Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
-- Bundle reports and dashboards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
-- [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
+- Use [presentation mode to display reports and dashboards](#display-reports-and-dashboards-full-screen-on-windows-devices) in full-screen on Windows devices and Surface Hub.
+- Present live [Power BI report pages in PowerPoint](#present-live-report-pages-in-powerpoint).
 - [Print reports](#print-or-save-as-pdf-or-other-static-file).
 - [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
+- Bundle reports, dashboards, and scorecards in workspaces into *apps* and [distribute your apps](#distribute-insights-in-an-app) to a larger group or your whole organization.
+- [Embed reports](#embed-reports-in-secure-portals-or-public-web-sites) in *secure portals* or *public web sites*.
  
 **Share data**
 
 - [Create *shared datasets*](#share-a-dataset) that coworkers can use as the basis for their own reports, in their own workspaces.
 - [Create *dataflows*](#create-dataflows) as a way to share a common data source.
 
-No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
+No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-gen2-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
 ## Collaborate in a workspace
 
 When teams work together, they need access to the same documents so they can collaborate easily. In Power BI workspaces, teams share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, or they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
 
-Workspaces provide roles that determine what permissions your coworkers have. Use those roles to determine who can manage the workspace, edit or distribute content, or just view content. Read more about [roles in the new workspaces](service-roles-new-workspaces.md).
+Workspaces provide roles that determine what permissions your coworkers have. Use those roles to determine who can manage the workspace, edit or distribute content, or just view content. Read more about [roles in workspaces](service-roles-new-workspaces.md).
 
 ![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
 
@@ -58,7 +60,7 @@ Now, imagine you have a finished report you need to share with your colleagues. 
 - If colleagues just need to see that report and not all the content in the workspace, you can share the report via link or grant them direct access.
 - If the report is better consumed with related reports or dashboards that you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
 
-Read about how to [create the new workspaces](service-create-the-new-workspaces.md). 
+Read about how to [create workspaces](service-create-the-new-workspaces.md). 
 
 ## Collaborate in Microsoft Teams
 
@@ -77,7 +79,7 @@ Let's say your report in Power BI Desktop is ready, and you want other people to
 ![Screenshot of sharing a report.](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-new-look.png)
 
 
-You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying dataset, unless [row-level security (RLS)](../enterprise/service-admin-rls.md) is applied.
+You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-gen2-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying dataset, unless [row-level security (RLS)](../enterprise/service-admin-rls.md) is applied.
 
 You can share reports via links that give access:
 
@@ -102,7 +104,7 @@ In the Power BI mobile apps for iOS and Android devices, you can annotate a tile
 
 ![Annotate and share in the mobile apps](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-iphone-annotate.png)
 
-You're sharing a snapshot of the tile, report, or visual. Your recipients see it exactly as it was when you sent the mail. The mail also contains a link to the dashboard or report. If they have a Power BI Pro license or the content is in a [Premium capacity](../enterprise/service-premium-what-is.md), and you've shared the content with them already, they can open it. You can send snapshots of tiles to anyone, not just coworkers in the same email domain.
+You're sharing a snapshot of the tile, report, or visual. Your recipients see it exactly as it was when you sent the mail. The mail also contains a link to the dashboard or report. If they have a Power BI Pro license or the content is in a [Premium capacity](../enterprise/service-premium-gen2-what-is.md), and you've shared the content with them already, they can open it. You can send snapshots of tiles to anyone, not just coworkers in the same email domain.
 
 Read more about [annotating and sharing tiles, reports, and visuals](../consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
 
@@ -118,7 +120,7 @@ Apps are easy to find and install in the Power BI service ([https://app.powerbi.
 
 After they install the app, they can view it in their browser or mobile device.
 
-For your users to view your app, they need a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
+For your users to view your app, they need a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md) for details.
 
 You can publish apps to people outside your organization, too. They can view and interact with the app content, but can't share it with others. Now you can create *template apps* and deploy them to any Power BI customer.
 
@@ -138,6 +140,22 @@ With the **Embed in SharePoint Online** and the **Embed** option in the Power BI
 
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
+
+## Display reports and dashboards full-screen on Windows devices
+
+You can use *presentation mode* to display reports and dashboards full-screen on Windows devices and Surface Hub. Presentation mode is a feature of the [Power BI app for Windows](https://go.microsoft.com/fwlink/?LinkID=526478). It's useful for sharing on display monitors in hallways, at meetings or conferences, on a dedicated projector at the office, and so on.
+
+![Screenshot of a report in presentation mode.](../consumer/mobile/media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
+
+Read more about [presentation mode](../consumer/mobile/mobile-windows-10-app-presentation-mode.md).
+
+## Present live report pages in PowerPoint
+
+You can enhance your data storytelling with live, interactive Power BI data by adding Power BI report pages to PowerPoint. You can interact with them just as you would in Power BI. The live report page is interactive in both PowerPoint edit and slide-show modes. You can apply filters and slicers, select data points, and drill down on data.
+
+![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif)
+
+Read more about [storytelling with Power BI in PowerPoint](service-power-bi-powerpoint-add-in-about.md).
 
 ## Print or save as PDF or other static file
 

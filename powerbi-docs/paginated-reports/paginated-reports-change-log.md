@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/18/2021
+ms.date: 11/22/2022
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,47 @@ ms.date: 04/18/2021
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## November 2022
+
+Version 15.7.1801.18, released November 22, 2022
+
+### Features
+
+- Added tool version metadata to generated RDL file.
+	
+Version 15.7.1800.11, released November 2, 2022
+
+### Bug fixes
+
+- Fixed issue where Report Builder becomes unresponsive if left open for longer periods of time.
+- Fixed accessibility issues.
+
+## August 2022
+	
+Version 15.7.1799.16, released August 18, 2022
+
+### Features
+
+- Added new telemetry endpoints.
+- Updated versions of some utilized open-source software projects.
+
+### Bug fixes 
+	
+- Fixed several accessibility issues across the application.
+- Fixed issue where parameters could get duplicated.
+
+## July 2022
+	
+Version 15.7.1798.91, released July 18, 2022
+	
+### Bug fixes 
+	
+- Fixed several localization issues with strings only displaying in English.
+- Fixed issue related to 407 proxy authentication.
+- Fixed issue related to parameter formulas when validating query.
+- Fixed issue where Report Builder would close saving a report.
+- Fixed issue where there is an extra border around Report Builder in some versions of Windows.
 
 ## April 2022
 
@@ -72,7 +113,7 @@ Version 15.7.01678.0001, released August 6, 2021
 
 ### Features
 
-- Moved to 64 bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
+- Moved to 64-bit architecture for enhanced memory limits and other performance gains. Note: Previously installed third-party data providers may need to be updated to their x64 bit versions.
 - Enhanced support for DAX DateTime parameters.
 
 ## June 2021 
@@ -131,6 +172,6 @@ See the September 2020 Power BI Report Builder blog post for the complete list o
 
 ## Next steps 
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
 - [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md)

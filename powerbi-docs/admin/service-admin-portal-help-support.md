@@ -12,9 +12,9 @@ ms.date: 03/10/2022
 LocalizationGroup: Administration
 ---
 
-# Help and support admin settings
+# Help and support tenant settings
 
-These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
+These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](../admin/service-admin-portal-about-tenant-settings.md).
 
 ## Publish "Get Help" information
 
@@ -22,7 +22,7 @@ These settings are configured in the tenant settings section of the Admin portal
 
 Admins can specify internal URLs to override the destination of links on the Power BI help menu and for license upgrades. If custom URLs are set, users in the organization go to internal help and support resources instead of the default destinations. The following resource destinations can be customized:
 
-* **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](/learn/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
+* **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](/training/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
 
 * **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
 
@@ -59,7 +59,7 @@ Admins can provide a custom message that appears before a user publishes a repor
 ```markdown
 ### Important Disclaimer 
 
-Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. Learn about [giving access to the new workspaces](../collaborate-share/give-access-new-workspaces.md). 
+Before publishing the report to a workspace, be sure to validate that the appropriate users or groups have access to the destination workspace. If some users or groups should *not* have access to the content and underlying artifacts, remove or modify their access to the workspace, or publish the report to a different workspace. Learn about [giving access to workspaces](../collaborate-share/give-access-new-workspaces.md). 
 ```
 
 The **Custom message** text area does support scrolling, so you can provide a message up to 5,000 characters.
@@ -78,4 +78,4 @@ As with other tenant settings, you can choose who the **Custom message** applies
 
 ## Next steps
 
-* [About tenant settings](service-admin-portal-about-tenant-settings.md)
+* [About tenant settings](../admin/service-admin-portal-about-tenant-settings.md)

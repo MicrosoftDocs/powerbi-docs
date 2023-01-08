@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 07/10/2022
+ms.date: 09/04/2022
 ms.custom: references_regions
 LocalizationGroup: Premium
 ---
@@ -103,7 +103,7 @@ You can check the status of dataset conversions to and from Premium Files by usi
 
 ## Dataset eviction
 
-Dataset eviction is a Premium feature that allows the sum of dataset sizes to be significantly greater than the memory available for the purchased SKU size of the capacity. A single dataset is still constrained to the memory limits of the SKU. Power BI uses dynamic memory management to evict inactive datasets from memory. Datasets are evicted so that Power BI can load other datasets to address user queries. For more info on dynamic memory management, see [How capacities function](service-premium-what-is.md#how-capacities-function).
+Dataset eviction is a Premium feature that allows the sum of dataset sizes to be significantly greater than the memory available for the purchased SKU size of the capacity. A single dataset is still constrained to the memory limits of the SKU. Power BI uses dynamic memory management to evict inactive datasets from memory. Datasets are evicted so that Power BI can load other datasets to address user queries. For more info on dynamic memory management, see [Dataset eviction](service-premium-large-models.md#dataset-eviction).
 
 >[!NOTE]
 >If you have to wait for an evicted dataset to be reloaded, you might experience a noticeable delay.
@@ -147,8 +147,6 @@ For datasets using the large dataset storage format, Power BI automatically sets
 ## Considerations and limitations
 
 Keep in mind the following restrictions when using large datasets:
-
-* **New workspaces are required**: Large datasets only work with [New workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
 * **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 
@@ -195,6 +193,8 @@ The following list provides regions where large datasets in Power BI are availab
 | Korea South         | koreasouth                |
 | North Central US    | northcentralus            |
 | North Europe        | northeurope               |
+| South Africa North  | southafricanorth          |
+| South Africa West   | southafricawest           |
 | South Central US    | southcentralus            |
 | Southeast Asia      | southeastasia             |
 | Switzerland North   | switzerlandnorth          |
@@ -222,10 +222,7 @@ The following links provide information that can be useful for working with larg
 > [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 
 > [!div class="nextstepaction"]
-> [How capacities function](service-premium-what-is.md#how-capacities-function)
-
-> [!div class="nextstepaction"]
 > [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> [Power BI Premium Generation 2](service-premium-gen2-what-is.md).

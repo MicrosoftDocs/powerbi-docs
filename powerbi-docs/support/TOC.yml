@@ -1,0 +1,58 @@
+- name: Power BI support
+  href: index.yml
+  expanded: true
+  items:
+  - name: About Support requests
+    items:
+    - name: Support overview
+      href: /power-platform/admin/support-overview
+    - name: How to contact Support
+      href: service-support-options.md
+    - name: Create a Support ticket
+      href: /power-platform/admin/get-help-support
+    - name: Consent to access customer data
+      href: /power-platform/admin/support-environment
+    - name: Policies and communications for Power BI
+      href: /power-platform/admin/policies-communications
+
+  - name: Before you contact Support
+    items:
+    - name: View current and historical service health in the Microsoft 365 admin center
+      href: service-admin-health.md
+    - name: Check for service-wide outages
+      href: https://support.powerbi.com
+    - name: Check the planned maintenance schedule
+      href: service-planned-maintenance.md
+    - name: Find out if this is a known issue
+      href: ../troubleshoot/known-issues/power-bi-known-issues.md
+    - name: Look for an answer in the Community forum
+      href: https://community.powerbi.com
+    - name: Tips for getting answers to your Power BI questions
+      href: service-tips-for-finding-help.md
+    - name: Capture diagnostic information (traces)
+      href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+    - name: Find your organization ID and name
+      href: /power-platform/admin/determine-org-id-name
+    - name: Try these steps if you can't sign in
+      href: power-bi-cannot-sign-in.md 
+    - name: Prepare for a region move 
+      href: service-admin-region-move.md 
+ 
+  - name: Support-related admin topics
+    items:
+    - name: Enable Help and Support notifications
+      href: ../admin/service-admin-portal-help-support.md
+    - name: Enable service interruption notifications
+      href: service-interruption-notifications.md
+    - name: Learn about notifications
+      href: /power-platform/admin/notifications-explained
+
+  - name: Troubleshooting guide
+    items:
+    - name: Power BI
+      href: ../troubleshoot/index.yml
+      
+      
+
+
+ 

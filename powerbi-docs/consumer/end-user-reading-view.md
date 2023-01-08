@@ -13,7 +13,7 @@ ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/30/2020
+ms.date: 10/06/2022
 ms.custom: mode-portal, intro-quickstart
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*
@@ -175,13 +175,10 @@ With a visual active, select **More options** (...) and choose **Show as a table
 
 
 ### Export data to Excel
-In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility.
+In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility. For more information, visit [Export the data that was used to create a visualization](../visuals/power-bi-visualization-export-data.md).
 
-![data exported to Excel](./media/end-user-reading-view/power-bi-export-powerpoint.png)
+Exporting isn't limited to individual visuals; you can export entire reports to Excel or PowerPoint to share with your colleagues. For more information, see [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and [Power BI in PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md).
 
-<!-- Exporting isn't limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
-
-![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
 
 This has been a quick overview of just some of the things *business users* can do with the Power BI service.  
 

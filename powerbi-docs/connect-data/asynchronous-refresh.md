@@ -6,10 +6,11 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 05/27/2022
+ms.date: 11/06/2022
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
+
 # Enhanced refresh with Power BI REST API
 
 By using any programming language that supports REST calls, you can perform dataset refresh operations by using the Power BI REST API.
@@ -25,7 +26,8 @@ The Power BI Refresh Dataset REST API enables dataset-refresh operations to be c
 - Cancel refresh operations
 
 > [!NOTE]
-> During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
+> * During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
+> * Refresh operations performed by the enhanced refresh Power BI REST API, do not automatically refresh tile caches. Tile caches are only refreshed when a user accesses the report.
 
 ## Base URL
 
@@ -88,7 +90,7 @@ The body may resemble the following:
 
 ```
 
-Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh operation and another is submitted, a 409 Conflict HTTP status code is returned.
+Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh operation and another is submitted, a 400 Conflict HTTP status code is returned.
 
 ### Parameters
 
@@ -211,7 +213,7 @@ To cancel an in-progress refresh operation, use the DELETE verb on the refresh o
 For example,
 
 ```http
-DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes /1344a272-7893-4afa-a4b3-3fb87222fdac
+DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes/1344a272-7893-4afa-a4b3-3fb87222fdac
 ``````
 
 ## Limitations
@@ -249,7 +251,7 @@ Power BI uses dynamic memory management to optimize capacity memory. If during a
 
 #### Solution: Run the refresh operation again
 
-To learn more about Dynamic memory management and dataset eviction, see [What is Power BI Premium - How capacities function](../enterprise/service-premium-what-is.md#how-capacities-function).
+To learn more about Dynamic memory management and dataset eviction, see [Dataset eviction](../enterprise/service-premium-large-models.md#dataset-eviction).
 
 ## Code sample
 

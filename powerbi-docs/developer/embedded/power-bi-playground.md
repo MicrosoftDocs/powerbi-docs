@@ -13,6 +13,8 @@ ms.custom: intro-overview
 
 # What is the Power BI embedded analytics playground?
 
+✔️&nbsp;User&nbsp;owns&nbsp;data ❌&nbsp;App&nbsp;owns&nbsp;data
+
 The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics. It’s also where you can keep up with all the new features and updates of Power BI embedded.
 
 :::image type="content" source="media/power-bi-playground/playground-home.png" alt-text="A screenshot of the playground home page.":::
@@ -24,9 +26,6 @@ The playground has the following main experiences:
 * [Explore our APIs](#explore-our-apis)
 * [Showcases](#showcases)
 * [Learning center](#learning-center)
-
->[!TIP]
->For a demonstration of how to best use the playground, watch this [video](https://microsofteur-my.sharepoint.com/personal/alonba_microsoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Falonba%5Fmicrosoft%5Fcom%2FDocuments%2FDocuments%2FCamtasia%2FPower%20BI%20Embedded%20Playground%2FPower%20BI%20Embedded%20Playground%2Emp4&parent=%2Fpersonal%2Falonba%5Fmicrosoft%5Fcom%2FDocuments%2FDocuments%2FCamtasia%2FPower%20BI%20Embedded%20Playground)
 
 ## Developer sandbox
 
@@ -58,11 +57,6 @@ The Learning center is a collection of Power BI embedded analytics resources. It
 
 :::image type="content" source="media/power-bi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center.":::
 
-## Considerations and limitations
-
-The Power BI embedded playground runs in *user owns data* mode only.
-
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Explore the embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279)
+[Explore the embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279)

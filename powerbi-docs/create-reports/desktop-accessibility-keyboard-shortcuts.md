@@ -62,23 +62,48 @@ In our continued effort to improve accessibility, the previous list of experienc
 
 \* Must be in editing mode
 
-## Table and matrix navigation
+## Table navigation
 | To do this action          | Press                |
 | :------------------- | :------------------- |
 | Move focus up / down one cell (across all cells in all areas)  | **Up arrow key** / **Down arrow key** |
 | Move focus left / right one cell (across all cells in all areas)  | **Left arrow key** / **Right arrow key** |
-| Expand matrix | **Shift + Left arrow key** |
-| Collapse matrix | **Shift + Right arrow key** |
+| Moves the focus to the last cell in the current row | **Ctrl + Right arrow key** / **End key** |
+| Moves the focus to the first cell in the current row | **Ctrl + Left arrow key** / **Home key** |
+| Moves the focus to the last element in the current column | **Ctrl + Down arrow key** |
+| Moves the focus to the first element in the current column | **Ctrl + Up arrow key** |
+| Moves the focus to the first element in the table (top left corner) | **Ctrl + Home key** |
+| Moves the focus to the last element in the table (bottom right corner) | **Ctrl + End key** |
+| Moves the focus to the last row displayed in the current column | **Page down key** |
+| Moves focus to the first row displayed in the current column | **Page up key** |
+| Selecting multiple noncontiguous rows | **Ctrl + Enter** / **Ctrl + Space** |
+| Selecting multiple contiguous rows | **Shift + Down arrow key or Up arrow key** |
+| Clear selected rows | **Ctrl + Shift + C** |
+| Open URL links | **Ctrl + Alt + O** |
+| Open Context Menu| **Shift + F10** |
+
+
+
+## Matrix navigation
+| To do this action          | Press                |
+| :------------------- | :------------------- |
+| Expand matrix | **Shift + Right arrow key** |
+| Collapse matrix | **Shift + Left arrow key** |
 
 ## Pane navigation
 | To do this action           | Press                |
 | :------------------- | :------------------- |
-| Multi-select | **Ctrl + spacebar** |
+| Multi-select | **Ctrl + Spacebar** |
 | Collapse a single table | **Left arrow key** |
 | Expand a single table | **Right arrow key** |
 | Collapse all tables | **Alt + Shift + 1** |
 | Expand all tables | **Alt + Shift + 9** |
 | Open a context menu | <ul><li>Windows keyboard: **Windows context key + F10**.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
+
+## Canvas zoom
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Zoom in | **Ctrl + Plus** or **Ctrl + (mouse scroll wheel forward)** |
+| Zoom out | **Ctrl + Minus** or **Ctrl + (mouse scroll wheel backward)** |
 
 ## Slicer
 | To do this action         | Press                |
@@ -113,7 +138,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Jump to the end of a line of code | **Ctrl + End** |
 | Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
 | Insert cursor | **Alt + Click** |
-| Select current line | **Ctrl + I** |
+| Select current line | **Ctrl + L** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
 | Select all occurrences of current word | **Ctrl + F2** |
 | Select next occurrences of current selection | **Ctrl + D** |

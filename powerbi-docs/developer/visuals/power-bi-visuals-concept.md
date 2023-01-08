@@ -3,7 +3,7 @@ title: Power BI visual system integration
 description: This article describes the interaction between the Power BI user, visual, and host.
 author: mberdugo
 ms.author: monaberdugo
-manager: rkarlin
+manager:
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -13,7 +13,7 @@ ms.date: 02/05/2022
 
 # Power BI visuals system integration
 
-The article describes how Power BI handles the interactions between the user, visual, and host.
+The article describes the [Visual API](./visual-api.md), and how Power BI handles the interactions between the user, visual, and host.
 
 The [`update` method](visual-api.md#update) is called whenever the visual's size or any of its values changes. The `update` method contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
@@ -25,7 +25,7 @@ Actions and subsequent updates in Power BI can be initiated by the user or by th
 
 The following figure shows how common visual-based actions, like selecting a bookmark, are processed in Power BI.
 
-![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.png)
+![Diagram of the Power BI visual process.](media/power-bi-visuals-concept/visual-concept.png)
 
 ## User interacts with a visual through Power BI
 
@@ -33,7 +33,7 @@ The user can interact with Power BI to update a visual in the following ways:
 
 * A user opens the visual's properties panel.
 
-    When a user opens the visual's properties panel, Power BI fetches supported objects and properties from the visual's *capabilities.json* file. To receive actual values of properties, Power BI calls the `enumerateObjectInstances` method of the visual. The visual returns actual values of properties.
+    When a user opens the visual's properties panel, Power BI fetches supported objects and properties from the visual's *capabilities.json* file. To receive actual values of properties, Power BI calls the `getFormattingModel` method of the visual (APIs earlier than version 5.0 call `enumerateObjectInstances` instead). The API returns modern format pane model components, properties, and their actual values.
 
     For more information, see [Capabilities and properties of Power BI visuals](capabilities.md).
 
@@ -124,8 +124,6 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
-> [!div class="nextstepaction"]
-> [Developing a Power BI circle card visual](./develop-circle-card.md)
-
-> [!div class="nextstepaction"]
-> [Publish Power BI visuals to Partner Center](office-store.md)
+* [Read about the Visual API](./visual-api.md)
+* [Developing a Power BI circle card visual](./develop-circle-card.md)
+* [Publish Power BI visuals to Partner Center](office-store.md)

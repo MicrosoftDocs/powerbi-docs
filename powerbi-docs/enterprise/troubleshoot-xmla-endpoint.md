@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 04/21/2022
+ms.date: 07/20/2022
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -130,6 +130,10 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation.
 
+## Email subscriptions
+
+Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](./../consumer/end-user-subscribe.md).
+
 ## Errors on Premium Gen 2 capacity
 
 ### Connect to Server error in SSMS
@@ -158,7 +162,7 @@ When connecting to a Power BI workspace with SSMS, ensure the following:
 
 ### Query execution in SSMS
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](.././developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](.././developer/embedded/embedded-analytics-power-bi.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...

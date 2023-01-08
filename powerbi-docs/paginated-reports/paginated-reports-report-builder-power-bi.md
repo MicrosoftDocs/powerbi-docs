@@ -1,5 +1,5 @@
 ---
-title: "What are paginated reports in Power BI Premium?"
+title: "What are paginated reports in Power BI?"
 description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,14 +8,14 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 12/17/2021
+ms.date: 10/27/2022
 ---
 
-# What are paginated reports in Power BI Premium?
+# What are paginated reports in Power BI?
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-*Paginated reports* are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called *pixel perfect* because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service. 
+*Paginated reports* are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports for the Power BI service.
 
 Here are some quick links if you're ready to get started:
 
@@ -97,9 +97,9 @@ You view your paginated report in the Power BI service in a browser, and also in
 
 ## Create a subscription to your report
 
-You can now set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
+You can set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
 
-For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/end-user-subscribe.md). 
+For details, see "Subscribe to paginated reports" in the article [Email subscriptions for reports and dashboards in the Power BI service](../consumer/end-user-subscribe.md#subscribe-to-paginated-reports). 
 
 ## Use deployment pipelines with paginated reports
 
@@ -118,6 +118,7 @@ Here are some other features that aren't supported:
 - Document maps. They don't render in the Power BI service, but they do when you export a report.
 - Drillthrough reports.  Consider using URL parameters with paginated reports for drillthrough scenarios.
 - Shared data sources and shared datasets.
+- Data-driven subscriptions for paginated reports in the Power BI service.
 
  
 ## Next steps

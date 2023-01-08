@@ -1,32 +1,32 @@
 ---
-title: Power BI visuals samples
-description: This article presents sample Power BI visuals including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
+title: Examples of Power BI visuals
+description: This article presents examples of Power BI visuals that can be found in GitHub, including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
-ms.date: 04/15/2021
+ms.topic: conceptual
+ms.date: 10/13/2022
 ---
 
-# Samples of Power BI visuals
+# Examples of Power BI visuals
 
-You can download, use, and modify these Power BI custom visuals from GitHub. These samples illustrate how to handle common situations when developing with Power BI.
+This article describes some of the Power BI visuals you can download, use, and modify from GitHub. These sample visuals illustrate how to handle common situations when developing with Power BI.
 
 ## Slicers
 
 A slicer narrows the portion of data shown in other visualizations in a report. Slicers are one of several ways to filter data in Power BI.
 
-| <img src="media/samples/chiclet-slicer.png" alt="Screenshot shows Chiclet Slicer." width="200">  | <img src="media/samples/timeline-slicer.png" alt="Screenshot shows Timeline slicer." width="200"> | 
+| <img src="media/samples/chiclet-slicer.png" alt="Screenshot shows Chiclet Slicer." width="200">  | <img src="media/samples/timeline-slicer.png" alt="Screenshot shows Timeline slicer." width="200"> |
 | ------------- | ------------- |
-| [Chiclet Slicer](https://github.com/Microsoft/powerbi-visuals-chicletslicer/)  </br>Display image or text buttons that act as an in-canvas filter on other visuals | [Timeline slicer](https://github.com/Microsoft/powerbi-visuals-timeline/) </br>Graphical date range selector that filters by date | 
+| [Chiclet Slicer](https://github.com/Microsoft/powerbi-visuals-chicletslicer/)  </br>Display image or text buttons that act as an in-canvas filter on other visuals | [Timeline slicer](https://github.com/Microsoft/powerbi-visuals-timeline/) </br>Graphical date range selector that filters by date |
 |<img src="media/samples/sample-slicer.png" alt="Screenshot shows Slicer sample." width="200">|
 |[Slicer sample](https://github.com/Microsoft/powerbi-visuals-sampleslicer/) </br>Demonstrates the use of the Advanced Filtering API|
 
 ## Charts
 
-Be inspired with our gallery, including bar charts, pie charts, Word Cloud, and others.
+Get inspired with our gallery of Power BI visuals, including bar charts, pie charts, Word Cloud, and others.
 
 | <img src="media/samples/aster-plot.png" alt="Screenshot shows Aster Plot." width="200">  | <img src="media/samples/bullet-chart.png" alt="Screenshot shows Bullet chart." width="200"> | 
 | ------------- | ------------- |
@@ -62,7 +62,7 @@ WebGL lets web content use an API based on OpenGL ES 2.0 to do 2D and 3D renderi
 
 ## R visuals
 
-These samples demonstrate how to harness the analytic and visual power of R visuals and R scripts.
+These examples demonstrate how to harness the analytic and visual power of R visuals and R scripts.
 
 | <img src="media/samples/association-rules.png" alt="Screenshot shows Association rules." width="200">| <img src="media/samples/clustering.png" alt="Screenshot shows Clustering." width="200">|
 |------------- |------------- | 
@@ -80,5 +80,5 @@ These samples demonstrate how to harness the analytic and visual power of R visu
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Developing a Power BI circle card visual](develop-circle-card.md)
+* [Import a Power BI visual](./import-visual.md)
+* [Develop your own Power BI custom visual](./develop-circle-card.md)

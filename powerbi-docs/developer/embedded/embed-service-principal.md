@@ -51,7 +51,7 @@ To use service principal and an application ID  embedded analytics, follow these
 5. Embed your content.
 
 > [!IMPORTANT]
-> Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
+> An Azure AD application doesn't require you to configure any Delegated Permissions or Application Permissions in the Azure portal when it has been created for a service principal. When you create an Azure AD application for a service principal to access the Power BI REST API, it is recommended that you **avoid adding permissions**. They're never used and can cause errors that are hard to troubleshoot.
 
 ## Step 1 - Create an Azure AD app
 
@@ -240,7 +240,6 @@ Once your content is embedded, you're ready to [move to production](move-to-prod
 
 ## Considerations and limitations
 
-* Service principal only works with [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
 * A capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
@@ -252,17 +251,6 @@ Once your content is embedded, you're ready to [move to production](move-to-prod
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Register an app](register-app.md)
-
-> [!div class="nextstepaction"]
->[Power BI Embedded for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[Embed using a service principal and a certificate](embed-service-principal-certificate.md)
-
->[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-
->[!div class="nextstepaction"]
->[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+* [Register an app](register-app.md)
+* [Power BI Embedded for your customers](embed-sample-for-customers.md)
+* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)

@@ -1,5 +1,5 @@
 ---
-title: The Visual Filters API in Power BI visuals in Power BI embedded analytics for better embedded BI insights
+title: The Visual Filters API for better embedded BI insights
 description: This article discusses how Power BI visuals can filter other visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo
@@ -7,12 +7,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2021
+ms.date: 06/19/2022
 ---
 
 # The Visual Filters API in Power BI visuals
 
-The Visual Filters API allows you to filter data in Power BI visuals. The main difference between the filter API and other ways of selecting data is the way that it affects other visuals in the report. When a filter is applied to a visual, only the filtered data will be visible in all visuals, despite highlight support by other visuals.
+The Visual Filters API allows you to filter data in Power BI visuals. The main difference between the filter API and other ways of selecting data is how it affects other visuals in the report. When a filter is applied to a visual, only the filtered data will be visible in all visuals, despite highlight support by other visuals.
 
 To enable filtering for the visual, the *capabilities.json* file should contain a `filter` object in the `general` section.
 
@@ -40,7 +40,7 @@ To enable filtering for the visual, the *capabilities.json* file should contain 
 >    npm install powerbi-models --save
 >    ```
 >
-> * If you are using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
+> * If you're using an older (earlier than 3.x.x) version of the tools, include `powerbi-models` in the visuals package. For more information, see the short guide, [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
 
 All filters use the [`IFilter` interface](/azure/machine-learning/studio-module-reference/ifilter-interface), as shown in the following code:
 
@@ -302,5 +302,4 @@ visualHost.applyJsonFilter(null, "general", "filter", FilterAction.merge);
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Add interactivity to visual using Power BI visuals selections](selection-api.md)
+[Use Power BI visuals selections to add interactivity to a visual](selection-api.md)

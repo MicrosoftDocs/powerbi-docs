@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/19/2022
+ms.date: 10/11/2022
 ---
 
 # Visual API
@@ -21,7 +21,7 @@ The visual class should implement the following methods as shown in the sample b
 
 * [`constructor`](#constructor), a standard constructor that initializes the visual's state
 * [`update`](#update), updates the visual's data
-* [`enumerateObjectInstances`](#enumerateobjectinstances-optional), returns objects that populate the property pane (formatting options) where you can modify them as needed
+* [`getFormattingModel`](#getformattingmodel-optional), returns a formatting model that populates the property pane (formatting options) where you can modify properties as needed
 * [`destroy`](#destroy-optional), a standard destructor for cleanup
 
 ```typescript
@@ -35,8 +35,8 @@ class MyVisual implements IVisual {
         //code to update your visual goes here (called on all view or data changes)
     }
 
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
-        //returns objects to populate the property pane (called for each object defined in capabilities)
+    public getFormattingModel(): FormattingModel {
+        // returns modern format pane formatting model that contain all format pane components and properties (called on opening format and analytics pane or on editing format properties)
     }
     
     public destroy(): void {
@@ -74,31 +74,31 @@ constructor(options: VisualConstructorOptions)
   * `locale`, returns a locale string, see [Localization](./localization.md)
   * `instanceId`, returns a string to identify the current visual instance
   * `colorPalette`, returns the colorPalette required to apply colors to your data
-  * `fetchMoreData`, supports using more data than the standard limit (1K rows)
+  * `fetchMoreData`, supports using more data than the standard limit (1K rows), see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
 
- ```typescript
-   export interface IVisualHost extends extensibility.IVisualHost {
-       createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
-       : () => ISelectionManager;
-       colorPalette: ISandboxExtendedColorPalette;
-       persistProperties: (changes: VisualObjectInstancesToPersist) => void;
-       applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
-       tooltipService: ITooltipService;
-       telemetry: ITelemetryService;
-       authenticationService: IAuthenticationService;
-       locale: string;
-       allowInteractions: boolean;
-       launchUrl: (url: string) => void;
-       fetchMoreData: () => boolean;
-       instanceId: string;
-       refreshHostData: () => void;
-       createLocalizationManager: () => ILocalizationManager;
-       storageService: ILocalVisualStorageService;
-       eventService: IVisualEventService;
-       switchFocusModeState: (on: boolean) => void;
-   }
-   ```
+    ```typescript
+     export interface IVisualHost extends extensibility.IVisualHost {
+         createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
+         : () => ISelectionManager;
+         colorPalette: ISandboxExtendedColorPalette;
+         persistProperties: (changes: VisualObjectInstancesToPersist) => void;
+         applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
+         tooltipService: ITooltipService;
+         telemetry: ITelemetryService;
+         authenticationService: IAuthenticationService;
+         locale: string;
+         allowInteractions: boolean;
+         launchUrl: (url: string) => void;
+         fetchMoreData: () => boolean;
+         instanceId: string;
+         refreshHostData: () => void;
+         createLocalizationManager: () => ILocalizationManager;
+         storageService: ILocalVisualStorageService;
+         eventService: IVisualEventService;
+         switchFocusModeState: (on: boolean) => void;
+     }
+     ```
 
 ## update
 
@@ -119,17 +119,13 @@ public update(options: VisualUpdateOptions): void
 * `jsonFilters?: IFilter[]`, collection of applied json filters
 * `isInFocus?: boolean`, flag to indicate if the visual is in focus mode or not
 
-## enumerateObjectInstances *(optional)*
+## getFormattingModel *(optional)*
 
-This method is called for every `object` listed in the [`capabilities.json`](capabilities.md) file. For each `object` (currently just the name), you return a `VisualObjectInstanceEnumeration` with information about how to display this property.
+This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane.md) with all information on the properties pane design, hierarchy, properties and latest formatting values.
 
 ```typescript
-enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualObjectInstanceEnumeration
+getFormattingModel(): visuals.FormattingModel;
 ```
-
-### EnumerateVisualObjectInstancesOptions
-
-* `objectName: string`, name of the object
 
 ## destroy *(optional)*
 
@@ -139,13 +135,10 @@ The destroy function is called when your visual is unloaded and can be used for 
 public destroy(): void
 ```
 
-> [!Note]
+> [!TIP]
 > Power BI generally doesn't call `destroy` since it's faster to remove the entire IFrame that contains the visual.
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Visual project structure](visual-project-structure.md)
-
->[!div class="nextstepaction"]
->[Local storage API](local-storage.md)
+* [Visual project structure](visual-project-structure.md)
+* [Local storage API](local-storage.md)

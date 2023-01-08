@@ -1,6 +1,6 @@
 ---
-title: Insights
-description: 'How to get insights in reports'
+title: Find Insights in your reports
+description: 'The Insights feature helps you easily explore and find insights such as anomalies and trends in your data as you interact and consume your reports.'
 author: aphilip94
 ms.author: anphil
 ms.reviewer: 
@@ -8,29 +8,35 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
 ms.topic: how-to
-ms.date: 09/21/2021
+ms.date: 08/04/2022
 LocalizationGroup: 
 ---
-# Insights (preview)
+# Find Insights in your reports (preview)
 
- The Insights feature helps users easily explore and find insights such as anomalies, trends in their data as they interact and consume their reports. It  notifies a user if there are interesting insights in the reports and also provides explanations for the insights. It works out of the box on any report so the consumers can automatically start getting insights from their reports without any setup.
+This *Insights* feature helps you easily explore and find insights such as anomalies and trends in your data as you interact and consume your reports. It notifies you if there are interesting insights and provides explanations for them. It works out of the box on any report, so you can automatically start getting insights from your reports without any setup.
  
  [![Screenshot showing how to get insights.](media/power-bi-insights/insights.gif)](media/power-bi-insights/insights.gif#lightbox)
- 
+
+**Did you know?** Power BI has other insights features that use artificial intelligence (AI):
+
+- [Insights for *individual visuals*](desktop-insights.md) analyzes and explains the fluctuations of data points in visuals.
+- [Insights for *dashboard tiles*](../consumer/end-user-insights.md) looks at the data being used to render that tile, and presents them in interactive visuals.
+- [Quick Insights for *datasets*](service-insights.md) automatically generates data insights on a dataset in the Power BI service.
+- [AI Insights for *data models*](../transform-model/desktop-ai-insights.md) in Power Query provide access to pre-trained machine learning models from Azure Cognitive Services.
+
 ## License requirements
 
- Insights is supported for reports in Premium and Premium Per User (PPU) workspaces. You can also use the feature in non-premium workspaces if you have a PPU license, but  notifications won't be supported. 
+ Insights is supported for reports in workspaces that are hosted in [Power BI Premium](../enterprise/service-premium-gen2-what-is.md) and [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) capacities. If you have a PPU license, you can also use the feature in workspaces that are hosted in shared capacities, but notifications won't be supported. 
 
- 
 ## Notifications
 
-Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy based on factors like recency, significance of the trend/anomaly. These notifications are supported only in Premium and PPU workspaces. Please note that the tenant and report setting for receiving notifications should be turned on for this to work.
+Power BI automatically runs insights analysis when you open a report. The light bulb in the action bar turns yellow and toast notifications are shown if there are **Top** insights for visuals in your current report page. **Top** insights are those that are noteworthy, based on factors like recency and significance of the trend or anomaly. These notifications are supported only in Premium and PPU workspaces. Note that the tenant and report setting for receiving notifications should be turned on for this to work.
 
  ![Screenshot showing toast notification for insights.](media/power-bi-insights/toast.png)
  
-Click on the **See insights** button to open the Insights pane or choose **Show me later** if you’d not like to get further notifications for this report in the current session.
+Select the **See insights** button to open the Insights pane or choose **Show me later** if you’d not like to get further notifications for this report in the current session.
 
-If you usually dismiss these notifications or don't engage with them, they'll be disabled for the current session. You can click on **Keep Showing** to continue getting notifications.
+If you usually dismiss these notifications or don't engage with them, they'll be disabled for the current session. You can select **Keep Showing** to continue getting notifications.
 
  ![Screenshot showing notification when toasts are dismissed.](media/power-bi-insights/toast-dismiss.png)
  
@@ -41,7 +47,7 @@ If you usually dismiss these notifications or don't engage with them, they'll be
  
 ## Get insights on reports and visuals
 
-Click on **Get insights** in the action bar to open the Insights pane.
+Select **Get insights** in the action bar to open the Insights pane.
 
 ![Screenshot showing Get Insights button in the app bar.](media/power-bi-insights/get-insights-button.png)
 
@@ -77,13 +83,13 @@ The trend is significant and is the steepest trend within a single series or acr
 - Recent trend:
 The trend is significant and is the most recent trend within a single series or across multiple series in a visual.
 - Trend reversal:
-Recent trend in a single series or across multiple series in a visual where the reversal is significant compared to the previous trend segment.
+Recent trend in a single series or across multiple series in a visual where the reversal is significant, compared to the previous trend segment.
 
 ### KPI analysis
-KPI analysis with a target looks at the variance of the current value to its target, and it's considered significant if the variance is significantly high or low compared to other segments. Whereas KPI analysis without a target looks at the value itself and flags ones that are significantly high or low compared to other segments. 
+KPI analysis with a target looks at the variance of the current value to its target. It's considered significant if the variance is high or low compared to other segments. KPI analysis without a target looks at the value itself and flags ones that are high or low compared to other segments. 
 
 ## Explanations
-Click on the card to get more details about the insight. 
+Select the card to get more details about the insight. 
 Expand/collapse the cards under **Possible Explanations** to view/hide the explanation visuals and text. 
 
 ### Anomalies
@@ -102,33 +108,35 @@ For KPI analysis explanations, Power BI looks for and identifies the categories 
 ![Screenshot showing explanations for KPI analysis insight.](media/power-bi-insights/kpi-explanations.png)
 
 ## Details
-If the insight talks about multiple anomalies, or trends, clicking on the insight card will show you the **Details** cards to help you choose the specific anomaly/trend/KPI segment you’d like to get explanations for.
+If the insight mentions multiple anomalies, or trends, selecting the insight card will show you the **Details** cards to help you choose the specific anomaly/trend/KPI segment you’d like to get explanations for.
 
 ![Screenshot showing details pane for insight.](media/power-bi-insights/details.png)
 
 ## Considerations and limitations
-- Insights is currently not available in Apps and Embedded for reports in Premium workspaces. Users with PPU license can still use Insights. The Power BI team is working on a fix.
-- If no insights found are found, you’ll be shown the following message: “We didn’t find any insights”. This can be because:
-  - The data or visuals aren't supported
-     -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as Line chart, Area chart, Stacked Area chart, Stacked bar chart, Stacked column chart, Clustered bar chart, Clustered column chart, KPI. KPI analysis insight is supported on KPI, Gauge, Cards, Bar, and Column charts.
 
-     -	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They aren't supported on custom date hierarchy. 
-  -	The data doesn't have significant anomalies or trends. You can try filtering your data or check back later when there’s new data.
-  -	The following functionality isn't supported:
-     - Publish to Web
-     -	Live Connection to Azure Analysis Services or SQL Server Analysis Services
-     -	MultiDimensional Analysis Services data sources (e.g. SAP BW, SAP HANA)
-     -	Power BI Report Server
+**Insights** is currently not available in apps and embedded for reports in Premium workspaces. Users with PPU license can still use Insights.
+If no insights found are found, you see this message: “We didn’t find any insights”. Here are some possible reasons:
+
+- The data or visuals aren't supported:
+    -	 Anomalies and trend insights are supported on time series with numeric data on visuals such as line charts; area charts; stacked area, bar, and column charts; clustered bar and column charts; and KPIs. KPI analysis insight is supported on KPIs, gauges, cards, and bar and column charts.
+    -	Anomalies and trends are only supported for built-in date hierarchy or date time fields. They aren't supported on custom date hierarchy. 
+-	The data doesn't have significant anomalies or trends. You can try filtering your data or check back later when there’s new data.
+-	The following functionality isn't supported:
+    - Publish to Web
+    -	Live Connection to Azure Analysis Services or SQL Server Analysis Services
+    -	MultiDimensional Analysis Services data sources (for example, SAP BW and SAP HANA)
+    -	Power BI Report Server
   
-- Explanations aren't supported in the following cases:         
-   - TopN filters
-   - Include/exclude filters
-   - Measure filters
-   - Non-numeric measures
-   - Use of "Show value as"
-   - Filtered measures: filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature.
-   - Some measure types such as % grand total and measures from extension schemas
-   - RLS
+**Explanations** aren't supported in the following cases:
 
-  If no explanations are found, you’ll be shown the following message: “We didn’t find any significant explanations”. You can try bringing in more fields for the analysis.
+- TopN filters
+- Include/exclude filters
+- Measure filters
+- Non-numeric measures
+- Use of "Show value as"
+- Filtered measures: filtered measures are visual level calculations with a specific filter applied (for example, Total Sales for France), and are used on some of the visuals created by the insights feature.
+- Some measure types such as % grand total and measures from extension schemas
+- RLS
+
+If no explanations are found, you see this message: “We didn’t find any significant explanations”. You can try bringing in more fields for the analysis.
 
