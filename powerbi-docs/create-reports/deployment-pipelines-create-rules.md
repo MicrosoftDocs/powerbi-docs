@@ -112,7 +112,7 @@ This section lists the limitations for the deployment rules.
 
 * After you deploy a paginated report with a data source rule, you can't open the report using [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
-* Even though the deployment rules only take effect the next time you deploy to that stage, if you compare the stages before you deploy, the comparison is 
+* Deployment rules only take effect the next time you deploy to that stage. However, if you create rules and then compare the stages before you deploy, the comparison is done based on the rules that were created even though they haven't taken effect yet.
 
 >[!NOTE]
 >Parameter rules aren't supported for paginated reports.
