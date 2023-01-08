@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 11/16/2022
+ms.date: 12/28/2022
 ---
 
 # Understand the deployment process
@@ -387,7 +387,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity can't be deployed.
 
-* A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported.
+* A dataset with DirectQuery or Composite connectivity mode, that uses variation or [auto date/time](../transform-model/desktop-auto-date-time.md) tables, isn’t supported. For more information see [What can I do if I have a dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables?](deployment-pipelines-troubleshooting.yml#what-can-i-do-if-i-have-a-dataset-with-directquery-or-composite-connectivity-mode--that-uses-variation-or-auto-date-time-tables-)
 
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 

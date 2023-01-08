@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/14/2020
+ms.date: 12/14/2022
 ---
 
 # Color utils
@@ -62,7 +62,7 @@ This method gets the color for the given series value. If no explicit color or d
 getColorForSeriesValue(objects: IDataViewObjects, value: PrimitiveValue, themeColorName?: ThemeColorName): string;
 ```
 
-#### Example
+#### getColorForSeriesValue example
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -167,7 +167,7 @@ This method returns the normalized selector
 static normalizeSelector(selector: Selector, isSingleSeries?: boolean): Selector;
 ```
 
-#### Example
+#### static normalizeSelector example
 
 ```typescript
 import ISelectionId = powerbi.visuals.ISelectionId;
@@ -247,7 +247,7 @@ Converts hex color to RGB string.
 function hexToRGBString(hex: string, transparency?: number): string
 ```
 
-#### Example
+#### hexToRGBString example
 
 ```typescript
 import  { hexToRGBString } from "powerbi-visuals-utils-colorutils";
@@ -265,7 +265,7 @@ Rotates RGB color.
 function rotate(rgbString: string, rotateFactor: number): string
 ```
 
-#### Example
+#### rotate example
 
 ```typescript
 import { rotate } from "powerbi-visuals-utils-colorutils";
@@ -281,7 +281,7 @@ Parses any color string to RGB format.
 function parseColorString(color: string): RgbColor
 ```
 
-#### Example
+#### parseColorString example
 
 ```typescript
 import { parseColorString } from "powerbi-visuals-utils-colorutils";
@@ -301,7 +301,7 @@ Calculate the highlight color from the rgbColor based on the lumianceThreshold a
 function calculateHighlightColor(rgbColor: RgbColor, lumianceThreshold: number, delta: number): string
 ```
 
-#### Example
+#### calculateHighlightColor example
 
 ```typescript
 import { calculateHighlightColor } from "powerbi-visuals-utils-colorutils";
@@ -322,7 +322,7 @@ Returns a linear color scale for given domain of numbers.
 function createLinearColorScale(domain: number[], range: string[], clamp: boolean): LinearColorScale
 ```
 
-#### Example
+#### createLinearColorScale example
 
 ```typescript
 import { createLinearColorScale } from "powerbi-visuals-utils-colorutils";
@@ -345,7 +345,7 @@ Applies percentage for each channel and returns back hex value as string with po
 function shadeColor(color: string, percent: number): string
 ```
 
-#### Example
+#### shadeColor example
 
 ```typescript
 import { shadeColor } from "powerbi-visuals-utils-colorutils";
@@ -364,7 +364,7 @@ Overlays a color with opacity over a background color. Any alpha-channel is igno
 function rgbBlend(foreColor: RgbColor, opacity: number, backColor: RgbColor): RgbColor
 ```
 
-#### Example
+#### rgbBlend example
 
 ```typescript
 import { rgbBlend} from "powerbi-visuals-utils-colorutils";
@@ -382,7 +382,7 @@ Blends a single channel for two colors.
 function channelBlend(foreChannel: number, opacity: number, backChannel: number): number
 ```
 
-#### Example
+#### channelBlend example
 
 ```typescript
 import { channelBlend} from "powerbi-visuals-utils-colorutils";
@@ -401,7 +401,7 @@ Overlays a color with opacity over a background color.
 function hexBlend(foreColor: string, opacity: number, backColor: string): string
 ```
 
-#### Example
+#### hexBlend example
 
 ```typescript
 import { hexBlend} from "powerbi-visuals-utils-colorutils";

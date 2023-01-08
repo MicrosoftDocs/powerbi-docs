@@ -29,9 +29,7 @@ In this tutorial, you learn how to:
 [!INCLUDE[Power B I tutorials prerequisites](../../includes/visual-tutorial-prerequisites.md)]
 
 >[!NOTE]
->
-> This tutorial uses version 5 of the [d3 JavaScript library](https://d3js.org/) to produce dynamic, interactive data visualizations.
->If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) now.
+>If the D3 JavaScript library wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
 
 Creating a bar chart visual involves the following steps:
 
@@ -1010,7 +1008,7 @@ Follow the instructions in [Package a Power BI visual](package-visual.md) to pre
 
 >[!NOTE]
 >
->For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [Power BI visuals sample bar chart](package-visual.md).
+>For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
 ## Next steps
 
