@@ -32,7 +32,7 @@ To find items using device search:
     * Workspaces
     * Items shared by the contact you search for
 
-    :::image type="content" source="./media/mobile-apps-ios-siri-search/power-bi-spotlight-search.png" alt-text="Screenshot showing Power BI search results in iOS device search":::
+    :::image type="content" source="./media/mobile-apps-ios-siri-search/power-bi-spotlight-search.png" alt-text="Screenshot showing Power BI search results in iOS device search.":::
 
 3. Once you find the item you want, tap on it. The Power BI app opens directly on the selected item.
 
