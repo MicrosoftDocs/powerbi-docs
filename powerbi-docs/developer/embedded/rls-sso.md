@@ -77,7 +77,7 @@ The value provided in the identity blob should be a valid access token to Azure 
    > [!Note]
    > To be able to create an access token for Azure SQL, the application must have **Access Azure SQL DB and Data Warehouse** delegated permission to **Azure SQL Database** API on Azure AD app registration configuration in the Azure portal.
 
-  :::image type="content" source="media/rls-sso/token-based-app-reg-azure-portal.png" alt-text="Screenshot of token based app registration." lightbox="media/rls-sso/token-based-app-reg-azure-portal.png:::
+  :::image type="content" source="media/rls-sso/token-based-app-reg-azure-portal.png" alt-text="Screenshot of token based app registration." lightbox="media/rls-sso/token-based-app-reg-azure-portal.png":::
 
 ## Next steps
 
