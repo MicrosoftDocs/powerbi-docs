@@ -26,7 +26,7 @@ The token-based identity only works for DirectQuery models on a capacity - conne
 
    :::image type="content" source="media/rls-sso/token-based-configure-azure-sql-db.png" alt-text="Screenshot of configure Azure SQL server.":::
 
-## Token-based Identity SDK additions
+## Token-based identity SDK additions
 
 The identity blob property was added to our effective identity in the token generation scenario.
 
