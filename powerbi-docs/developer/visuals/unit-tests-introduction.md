@@ -274,7 +274,7 @@ The configuration file includes the following properties:
 
 For descriptions of all Karma configurations, go to the [Karma Configuration File](https://karma-runner.github.io/1.0/config/configuration-file.html) page.
 
-For your convenience, you can add a test command into `scripts`:
+For your convenience, you can add a test command into `scripts` in *package.json*:
 
 ```json
 {
