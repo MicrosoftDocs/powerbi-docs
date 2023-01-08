@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 01/07/2023
 ---
 
-# Embed a report with Token-based Identity (SSO)
+# Embed a report with token-based identity (SSO)
 
-The **token-based identity** allows you to specify the effective identity for an embed token using an [Azure Active Directory (AAD) access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) for an **Azure SQL Database**.
+The **token-based identity** allows you to specify the effective identity for an embed token using an [Azure Active Directory (Azure AD) access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) for an **Azure SQL Database**.
 
 Customers that keep their data in **Azure SQL Database** can manage users and their access to data in Azure SQL when integrating with **Power BI Embedded**.
 
-When generating the embed token, specify the effective identity of a user in Azure SQL. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
+When generating the embed token, specify the effective identity of a user in Azure SQL. You can specify the effective identity of a user by passing the Azure AD access token to the server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
 
 It can be used to manage each user's view in Azure SQL or to sign in to Azure SQL as a specific customer in a multi-tenant DB. It can also apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
 
 Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
 
-The token-based identity only works for DirectQuery models on a capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on a capacity - connected to an Azure SQL Database, which is configured to allow Azure AD authentication ([learn more about Azure AD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
 
-   ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
+   :::image type="content" source="media/rls-sso/token-based-configure-azure-sql-db.png" alt-text="Screenshot of configure Azure SQL server.":::
 
 ## Token-based Identity SDK additions
 
@@ -54,7 +54,7 @@ Identity blob can be created using the following call.
 public IdentityBlob(string value);
 ```
 
-## Token-based Identity REST API Usage
+## Token-based identity REST API usage
 
 If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatetokeningroup#definitions), you can add identity blob inside each identity.
 
@@ -75,9 +75,9 @@ If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatet
 The value provided in the identity blob should be a valid access token to Azure SQL Server.
 
    > [!Note]
-   > To be able to create an access token for Azure SQL, the application must have **Access Azure SQL DB and Data Warehouse** delegated permission to **Azure SQL Database** API on AAD app registration configuration in the Azure portal.
+   > To be able to create an access token for Azure SQL, the application must have **Access Azure SQL DB and Data Warehouse** delegated permission to **Azure SQL Database** API on Azure AD app registration configuration in the Azure portal.
 
-   ![App registration](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+ :::image type="content" source="media/rls-sso/token-based-app-reg-azure-portal.png" alt-text="Screenshot of token based app registration. lightbox="media/rls-sso/token-based-app-reg-azure-portal.png":::
 
 ## Next steps
 
