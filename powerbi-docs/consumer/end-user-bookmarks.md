@@ -132,9 +132,6 @@ When in **View** mode, there are a few features to notice:
 
 When you're in **View** mode, you can close the **Bookmarks** pane (by clicking the X on that pane) to provide more space for your presentation. And, while in **View** mode, all visuals are interactive and available for cross-highlighting, just as they would otherwise be when interacting with them. 
 
-
-
-
 ### Reset all your changes to a report
 
 From the upper-right corner of your report canvas, select **Reset to default**. This removes all your changes in the report and sets it back to the designer's last saved view of the report.
