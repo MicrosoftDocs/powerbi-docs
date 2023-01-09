@@ -39,7 +39,7 @@ With the Power BI service live connection feature, other team members can use th
 
 In Power BI Desktop, the team business analyst creates a report and the dataset the report is based on. The analyst then publishes the report to the Power BI service, and the report shows up in the team's workspace. For more information about workspaces, see [Workspaces in Power BI](../collaborate-share/service-new-workspaces.md).
 
-The business analyst can use the Build permission setting to make the report available to everyone in and out of the workspace to see and use. Team members in and out of the team workspace can now establish a live connection to the shared data model by using the Power BI service live connection feature. Team members can create their own unique reports, from the original dataset, in their own workspaces.
+The business analyst can use the Build permission setting to make the report available for anyone in or out of the workspace to see and use. Team members in and out of the team workspace can now establish a live connection to the shared data model by using the Power BI service live connection feature. Team members can create their own unique reports, from the original dataset, in their own workspaces.
 
 The following image shows how one Power BI Desktop report and its data model publish to the Power BI service. Others users connect to the data model by using the Power BI service live connection, and base their own unique reports in their own workspaces on the shared dataset.
 
@@ -47,11 +47,11 @@ The following image shows how one Power BI Desktop report and its data model pub
 
 ## Set up and use a Power BI service live connection
 
-Now you know the usefulness of the Power BI service live connection for report lifecycle management. Learn the steps to get from a great report and dataset to a shared dataset that your teammates can use in Power BI.
+Now that you know the usefulness of the Power BI service live connection for report lifecycle management, see how to get from a great report and dataset to a shared dataset that teammates use in Power BI.
 
 ### Publish a Power BI report and dataset
 
-The first step in managing the report lifecycle by using a Power BI service live connection is to have a report and dataset for teammates to use.
+The first step in using a Power BI service live connection to manage report lifecycle is to publish a report and dataset for teammates to use.
 
 1. To publish the report, from Power BI Desktop, select **Publish** from the **Home** tab.
 
