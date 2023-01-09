@@ -1,6 +1,6 @@
 ---
 title: "MHTML device information settings for Power BI paginated reports | Microsoft Docs"
-description: Learn about the various device information settings for rendering reports in Web archive (MHTML) format. 
+description: Learn about the various device information settings for rendering Power BI paginated reports in Web archive (MHTML) format. 
 ms.date: 01/05/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # MHTML device information settings for Power BI paginated reports
-  The following table lists the device information settings for rendering reports in Web archive (MHTML) format.  
+  The following table lists the device information settings for rendering Power BI paginated reports in Web archive (MHTML) format.  
   
 |Setting|Value|  
 |-------------|-----------|  
