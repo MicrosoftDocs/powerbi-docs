@@ -1,6 +1,6 @@
 ---
 title: Refresh a dataset created from an Excel workbook - cloud
-description:  Learn how to refresh a dataset created from an Excel workbook on OneDrive for Business or SharePoint Online.
+description:  Learn how to refresh a dataset created from an Excel workbook on OneDrive for work or school or SharePoint Online.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
@@ -13,7 +13,7 @@ LocalizationGroup: Data refresh
 
 # Refresh a dataset created from an Excel workbook on OneDrive or SharePoint Online
 
-You can import Excel workbooks from your local machine, or from cloud storage such as OneDrive for Business or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
+You can import Excel workbooks from your local machine, or from cloud storage such as OneDrive for work or school or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
 
 ## What are the advantages?
 
@@ -44,13 +44,14 @@ Power BI supports the **Refresh Now** and **Schedule Refresh** options for datas
 >
 >
 
-## What's the difference between OneDrive and OneDrive for Business?
+## OneDrive or OneDrive for work or school. What’s the difference?
 
-If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep files you want to import in OneDrive for Business. Here’s why: You likely use two different accounts to sign in and access your files.
+If you have both a personal OneDrive and OneDrive for work or school, it’s recommended you keep files you want to import in OneDrive for work or school. Here’s why: You likely use two different accounts to sign in and access your files.
 
-In Power BI, connecting to OneDrive for Business is typically seamless because you likely use the same account to sign in to Power BI as OneDrive for Business. But with personal OneDrive, it's more common to sign in with a different [Microsoft account](https://account.microsoft.com).
+In Power BI, connecting to OneDrive for work or school is typically seamless because you likely use the same account to sign in to Power BI as OneDrive for work or school. But with personal OneDrive, it's more common to sign in with a different [Microsoft account](https://account.microsoft.com).
+>>>>>>> 837e862abf2aaf7c124dd4017ed51c5416d7e5b2
 
-When you sign in to OneDrive for Business with your Microsoft account, select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
+When you sign in to OneDrive for work or school with your Microsoft account, select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
 
 ![Screenshot showing the Keep me signed in checkbox.](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
 
@@ -58,11 +59,11 @@ If your Microsoft account credentials change, edits to your file on OneDrive can
 
 ## Options for connecting to an Excel file
 
-When you connect to an Excel workbook in OneDrive for Business or SharePoint Online, you have two options for getting your workbook into Power BI.
+When you connect to an Excel workbook in OneDrive for work or school, or SharePoint Online, you have two options on how to get what’s in your workbook into Power BI.
 
-[**Import Excel data into Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – When you import an Excel workbook from your OneDrive for Business or SharePoint Online, it works as described previously.
+[**Import Excel data into Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – When you import an Excel workbook from your OneDrive for work or school or SharePoint Online, it works as described previously.
 
-[**Connect, manage, and view Excel in Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for Business or SharePoint Online.
+[**Connect, manage, and view Excel in Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for work or school or SharePoint Online.
 
 When you connect to an Excel workbook this way, a dataset isn't created in Power BI. But the workbook appears in the Power BI service under Reports with an Excel icon next to the name. Unlike with Excel Online, when you connect to your workbook from Power BI, if your workbook has connections to external data sources that load data into the Excel data model, you can set up a refresh schedule.
 

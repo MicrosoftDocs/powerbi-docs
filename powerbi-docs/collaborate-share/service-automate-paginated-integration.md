@@ -37,7 +37,7 @@ To follow along, make sure you have:
 
 Select a template from the following list to start the step-by-step walkthrough.  
 
-- [Save a Power BI paginated report to OneDrive for Business or a SharePoint Online folder](service-automate-paginated-onedrive-sharepoint.md).  
+- [Save a Power BI paginated report to OneDrive for work or school or a SharePoint Online folder](service-automate-paginated-onedrive-sharepoint.md).  
 - [Export a Power BI paginated report for items in a SharePoint Online List, or for each row in an Excel Online table](service-automate-paginated-excel-sharepoint-list.md).
 - [Save a Power BI paginated report to a local system folder](service-automate-paginated-local-file.md).
 
