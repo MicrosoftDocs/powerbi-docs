@@ -1,12 +1,12 @@
 ---
 title: Intro to Q&A tooling to train Power BI Q&A (preview)
-description: Learn about Q&A tooling so you can imporve the natural language experience for your users.
+description: Learn about Q&A tooling so you can improve the natural language experience for your users.
 author: maggiesMSFT
 ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/06/2023
+ms.date: 01/09/2023
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
 
@@ -30,21 +30,21 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 1. Open Power BI Desktop and use Q&A to create a visual. 
 2. From the corner of the visual, select the gear icon. 
 
-    ![Screenshot of Q&A visual gear.](media/q-and-a-tooling-intro/qna-visual-gear.png)
+    :::image type="content" source="media/q-and-a-tooling-intro/qna-visual-gear.png" alt-text="Screenshot of the Q and A search box with the gear icon highlighted.":::
 
     The Getting started page opens.  
 
-    ![Screenshot of Q&A Getting started.](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
+    ![Screenshot of the Q and A Getting started page.](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
 ## Field synonyms
 
 1. Select **Field synonyms** to see all the tables and columns that belong to the model. This view allows you to add alternative names to match the columns to help users. You can also choose whether or not a column or table should be hidden from Q&A.
 
-   ![Screenshot of Q&A field synonyms home.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+   ![Screenshot of the Q and A Field synonyms page.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
 
 1. Select one of the tables to expand and you'll see a dialog similar to the following example.
 
-   ![Screenshot of Q&A field synonyms expanded.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+   ![Screenshot of the Q and A Field synonyms page with fields expanded.](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
 
    The dialog shows all the columns, tables, and respective terms and synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and add or remove terms for multiple columns. 
 
@@ -58,40 +58,40 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 With synonym sharing, you can leverage your coworker's synonyms and minimize duplicate effort when adding synonyms to your models. 
 To connect to shared synonyms, go to **Q&A setup** > **Field synonyms** and select **Get more synonyms**.
 
-![Screenshot of selecting Field synonyms, then Get more synonyms.](media/q-and-a-tooling-intro/get-shared-synonyms.png)
+![Screenshot of the Field synonyms page with the Get more synonyms button highlighted.](media/q-and-a-tooling-intro/get-shared-synonyms.png)
 
 This process might take a few seconds, but once it’s completed, you also have the option to share your synonyms to everyone in your organization. 
 
 > [!NOTE] 
 > Synonyms are only shared when you publish the report.
 
-![Screenshot of Success dialog box.](media/q-and-a-tooling-intro/share-your-synonyms.png)
+![Screenshot of the dialog box to share synonyms with everyone in your org.](media/q-and-a-tooling-intro/share-your-synonyms.png)
 
 Any shared synonyms that match fields in your model show up in the **Suggested terms** section. You can select the plus icon (+) on the suggested term to add it as a field synonym.
 
-![Screenshot of selecting the plus icon (+) on the suggested term to add it as a field synonym.](media/q-and-a-tooling-intro/share-synonyms-in-suggested-terms.png)
+![Screenshot of the Field synonyms page with the plus icon selected.](media/q-and-a-tooling-intro/share-synonyms-in-suggested-terms.png)
 
 As new synonyms get shared within your organization, you can select the refresh icon to ensure that your **Suggested terms** are in sync with your organization.
 
-![Screenshot of ensuring that your Suggested terms are in sync with your organization.](media/q-and-a-tooling-intro/refresh-shared-synonyms.png)
+:::image type="content" source="media/q-and-a-tooling-intro/refresh-shared-synonyms.png" alt-text="Screenshot of the option called Share your synonyms with everyone in your org. The checkbox is selected.":::
 
 ## Review questions
 
 Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here, you can select a dataset and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
 
-![Screenshot of Q&A review questions.](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
+:::image type="content" source="media/q-and-a-tooling-intro/qna-tooling-review-questions.png" alt-text="Screenshot of the Q and A Review questions page.":::
 
 ## Teach Q&A
 
-The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. For more imformation, see [Teach Q&A](q-and-a-tooling-teach-q-and-a.md)
+The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. For more information, see [Teach Q&A to understand questions and terms](q-and-a-tooling-teach-q-and-a.md).
 
-![Screenshot of Q&A teach synonym preview.](media/q-and-a-tooling-intro/qna-tooling-teach-fixpreview.png)
+![Screenshot of the Teach Q and A page with a question entered in the search box.](media/q-and-a-tooling-intro/qna-tooling-teach-fixpreview.png)
 
 ## Manage terms
 
 Anything you've saved from the Teach Q&A section shows up here, so you can review or delete terms you've defined. Currently, you can't edit an existing definition. So, to redefine a term you must delete and recreate that term.
 
-![Screenshot of Q&A Manage terms.](media/q-and-a-tooling-intro/qna-manage-terms.png)
+![Screenshot of the Teach Q and A page with a term selected and defined.](media/q-and-a-tooling-intro/qna-manage-terms.png)
 
 ## Suggest questions
 
@@ -101,15 +101,15 @@ Anything you've saved from the Teach Q&A section shows up here, so you can revie
 
 Without doing any setup, the Q&A visual suggests several questions to get started. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the autogenerated questions with your own questions.
 
-To start, type the question you want to add in the text box. In the preview section, you see what the result will look like in the Q&A visual. 
+1. To start, type the question you want to add in the text box. In the preview section, you see what the result will look like in the Q&A visual. 
 
-:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-suggest-questions.png" alt-text="Suggest Q&A questions":::
+   :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-suggest-questions.png" alt-text="Screenshot of the Suggest questions page with the search box highlighted.":::
  
-Select the **Add** button to add this question to **Your suggested questions**. Each question is added to the end of this list. The questions will show up in the Q&A visual in the same order as they do in this list. 
+1. Select the **Add** button to add this question to **Your suggested questions**. Each question is added to the end of this list. The questions will show up in the Q&A visual in the same order as they do in this list. 
 
-:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Screenshot of saving suggested questions.":::
+   :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Screenshot of the Suggest questions page with the section called Reorder your suggested questions highlighted.":::
  
-Select **Save** to show your list of suggested questions in the Q&A visual. 
+1. Select **Save** to show your list of suggested questions in the Q&A visual. 
 
 ## Set a row label
 
@@ -127,4 +127,4 @@ In Power BI, you can completely train and enhance the natural language engine in
 
 ## Next steps
 
-There are many other best practices for improving the natural language engine. For more information, see [Q&A best practices](q-and-a-best-practices.md).
+There are many other best practices for improving the natural language engine. For more information, see [Best practices to optimize Q&A](q-and-a-best-practices.md).
