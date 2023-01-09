@@ -10,7 +10,9 @@ ms.author: maggies
 ---
 # Image device information settings for Power BI paginated reports
   The following table lists the device information settings for rendering in an image format in Power BI paginated reports.  
-  
+
+## Settings 
+
 |Setting|Value|  
 |-------------|-----------|  
 |**Columns**|The number of columns to set for the report. This value overrides the report's original settings.|  
