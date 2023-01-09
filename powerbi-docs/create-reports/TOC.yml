@@ -565,7 +565,7 @@
       - name: Word device information settings
         href: ../paginated-reports/device-info/word-device-information-settings.md
       - name: HTML device information settings
-        href: ../paginated-reports/device-info/html-device-information-settings.md
+        href: /sql/reporting-services/html-device-information-settings?context=/power-bi/create-reports/context/context
       - name: Image device information settings
         href: ../paginated-reports/device-info/image-device-information-settings.md
       - name: MHTML device information settings
@@ -573,7 +573,7 @@
       - name: PDF device information settings
         href: ../paginated-reports/device-info/pdf-device-information-settings.md
       - name: RGDI device information settings
-        href: ../paginated-reports/device-info/rgdi-device-information-settings.md
+        href: /sql/reporting-services/rgdi-device-information-settings?context=/power-bi/create-reports/context/context
       - name: PPTX device information settings
         href: ../paginated-reports/device-info/pptx-device-information-settings.md
   - name: "Deployment pipelines"  
