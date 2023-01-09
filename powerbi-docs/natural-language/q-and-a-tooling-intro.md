@@ -48,19 +48,19 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 
    The dialog shows all the columns, tables, and respective terms and synonyms that users can use when asking questions against the dataset. You can quickly see all the terms in one place and add or remove terms for multiple columns. 
 
-   - Add terms - If you have a field called sales, you may decide to add a term called revenue so a user can use this word instead of being required to use the word sales. Select **Add** to quickly add a new term.
+   - Add terms - If you have a field called sales, you might decide to add a term called revenue, so a user can use this word instead of being required to use the word sales. Select **Add** to quickly add a new term.
 
    - Include in Q&A - This option allows a column or table to be omitted from Q&A, meaning it won't be shown and a result can't be displayed with this column. You might decide not to include a column when dealing with dates. If there are numerous date fields or foreign keys, you might decide to remove all but one of the date fields, so the correct date column is picked when a user asks a date related question.
 
    - Suggested Terms - Q&A also recommends suggested terms retrieved from our suggestions engine to help you quickly add terms and synonyms. If the suggestions aren't added, they still function, but they give the user an orange dotted line indicating that Q&A thinks it has an answer but isn't sure. If the suggested synonym is correct, select the plus icon (+), so it can be used as a synonym. If the suggestion is incorrect, select the x to remove the term. It won't be used as a term or synonym and won't function inside Q&A. The initial suggestions are powered by Office Dictionary or they can come from renames found inside a report. Another way to get more suggested terms is through synonym sharing within your organization. 
 
 ### Synonym sharing
-With synonym sharing, you can leverage your coworker's synonyms and minimize duplicate effort when adding synonyms to your models. 
+With synonym sharing, you can use your coworker's synonyms and minimize duplicate effort when adding synonyms to your models. 
 To connect to shared synonyms, go to **Q&A setup** > **Field synonyms** and select **Get more synonyms**.
 
 ![Screenshot of the Field synonyms page with the Get more synonyms button highlighted.](media/q-and-a-tooling-intro/get-shared-synonyms.png)
 
-This process might take a few seconds, but once it’s completed, you also have the option to share your synonyms to everyone in your organization. 
+This process might take a few seconds, but once it’s completed, you can share your synonyms with everyone in your organization. 
 
 > [!NOTE] 
 > Synonyms are only shared when you publish the report.
