@@ -59,13 +59,7 @@ If your Microsoft account credentials change, edits to your file on OneDrive can
 
 ## Options for connecting to an Excel file
 
-When you connect to an Excel workbook in OneDrive for work or school, or SharePoint Online, you’ll have two options on how to get what’s in your workbook into Power BI.
-
-[**Import Excel data into Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – When you import an Excel workbook from your OneDrive for work or school, or SharePoint Online, it works as described above.
-
-[**Connect, Manage, and View Excel in Power BI**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – When using this option, you create a connection from Power BI right to your workbook on OneDrive for work or school, or SharePoint Online.
-=======
-When you connect to an Excel workbook in OneDrive for work or school, or SharePoint Online, you have two options for getting your workbook into Power BI.
+When you connect to an Excel workbook in OneDrive for work or school, or SharePoint Online, you have two options on how to get what’s in your workbook into Power BI.
 
 [**Import Excel data into Power BI**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – When you import an Excel workbook from your OneDrive for work or school or SharePoint Online, it works as described previously.
 
