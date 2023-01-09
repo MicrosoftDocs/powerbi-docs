@@ -115,7 +115,7 @@ To complete the installation, configure the Power BI Premium utilization and met
 
 3. When you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of the Power BI premium utilization and metrics app's setup screen, showing the connect button.":::
+    :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of the Power B I premium utilization and metrics app's setup screen, showing the connect button.":::
 
 4. In the **Connect to Premium Capacity Utilization And Metrics** first window, fill in the fields according to the table:
 
@@ -140,11 +140,11 @@ To complete the installation, configure the Power BI Premium utilization and met
 
 7. Select **Sign in and continue**.
 
-    :::image type="content" source="media/service-premium-install-gen2-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to OAuth2 and the privacy level setting for this data source option is set to organizational. The sign-in and continue button is highlighted.":::
+    :::image type="content" source="media/service-premium-install-gen2-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to O Auth 2 and the privacy level setting for this data source option is set to organizational. The sign-in and continue button is highlighted.":::
 
 8. Select a capacity from the **Capacity Name** drop down.
 
-    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop-down box in the Power B I premium utilization and metrics app.":::
+    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop down box in the Power B I premium utilization and metrics app.":::
 
 9. After you configure the app, it can take a few minutes for the app to get your data. If you run the app and it's not displaying any data, refresh the app. This behavior happens only when you open the app for the first time.
 
