@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/02/2022
+ms.date: 01/09/2023
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -148,9 +148,8 @@ In this release of **personal bookmarks**, there are a few considerations and li
 
 * Most Power BI custom visuals should work well with personal bookmarking. If you run into trouble with bookmarking and a Power BI custom visual, contact the creator of that visual and ask them to add support for bookmarks.    
 
-* Generally, your personal bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a personal bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
-
-* In the Power BI mobile apps you can view bookmarks but you can't create them. For more information about using bookmarks in the mobile apps, see [Bookmarks](./mobile/mobile-reports-in-the-mobile-apps.md#bookmarks) in "Explore reports in the Power BI mobile apps".
+* Generally, your personal bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a personal bookmark, then you will receive an error message the next time you attempt to open that bookmark.
+* In the Power BI mobile apps you can view bookmarks but you can't create them. For more information about using bookmarks in the mobile apps, see [Explore reports in the Power BI mobile apps](./mobile/mobile-reports-in-the-mobile-apps.md#bookmarks).
 * Because personal bookmarks capture the exploration state of the current page, personal bookmarks won't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark will only capture the slicer change on the current page. 
 
 
