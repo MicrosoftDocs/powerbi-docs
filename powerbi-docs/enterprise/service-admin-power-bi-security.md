@@ -7,15 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 12/29/2022
 LocalizationGroup: Administration
 ---
 
 # Power BI Security
 
-For detailed information about Power BI security, see the [Power BI Security white paper](../guidance/whitepaper-powerbi-security.md).
+For detailed information about Power BI security, see the [Power BI Security white paper](/power-bi/guidance/whitepaper-powerbi-security).
 
-The Power BI service is built on **Azure**, Microsoft’s cloud computing infrastructure and platform. The architecture of the Power BI service is based on two clusters:
+To plan for Power BI security, see the Power BI implementation planning [security series of articles](/power-bi/guidance/powerbi-implementation-planning-security-overview). It expands upon the content in the Power BI Security white paper. While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
+
+The Power BI service is built on **Azure**, Microsoft's cloud computing infrastructure and platform. The architecture of the Power BI service is based on two clusters:
 
 - The Web Front End (**WFE**) cluster. The **WFE** cluster manages the initial connection and authentication to the Power BI service.
 - The **Back-End** cluster. Once authenticated, the **Back-End** handles all subsequent user interactions. Power BI uses Azure Active Directory (Azure AD) to store and manage user identities. Azure AD also manages data storage and metadata using Azure BLOB and Azure SQL Database, respectively.
@@ -40,7 +42,7 @@ Power BI uses two primary repositories for storing and managing data:
 - Data uploaded from users is typically sent to **Azure Blob Storage**.
 - All metadata including items for the system itself are stored in the **Azure SQL Database**.
 
-The dotted line shown in the **Back-End** cluster diagram, clarifies the boundary between the two components that are accessible by users shown on the left of the dotted line. Roles that are only accessible by the system are shown on the right. When an authenticated user connects to the Power BI Service, the connection and any request by the client is accepted and managed by the **Gateway Role** which then interacts on the user’s behalf with the rest of the Power BI Service. For example, when a client attempts to view a dashboard, the **Gateway Role** accepts that request, and then separately sends a request to the **Presentation Role** to retrieve the data needed by the browser to display the dashboard. Eventually, connections and client requests are handled by **Azure API Management**.
+The dotted line shown in the **Back-End** cluster diagram, clarifies the boundary between the two components that are accessible by users shown on the left of the dotted line. Roles that are only accessible by the system are shown on the right. When an authenticated user connects to the Power BI Service, the connection and any request by the client is accepted and managed by the **Gateway Role** which then interacts on the user's behalf with the rest of the Power BI Service. For example, when a client attempts to view a dashboard, the **Gateway Role** accepts that request, and then separately sends a request to the **Presentation Role** to retrieve the data needed by the browser to display the dashboard. Eventually, connections and client requests are handled by **Azure API Management**.
 
 ## User Authentication
 

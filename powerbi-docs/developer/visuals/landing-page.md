@@ -1,38 +1,36 @@
 ---
 title: Add a landing page to your Power BI visuals
-description: This article describes how to add landing page to Power BI visuals.
+description: This tutorial describes how to add a landing page to Power BI visuals by setting capabilities in a visual's capabilities.json file.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/11/2022
+ms.date: 11/18/2022
 ---
 
 # Add a landing page to your Power BI visual
 
-A Power BI visual’s landing page enables you to display information in your Power BI visual card, before it’s loaded with data. Here are a few examples of what a visual’s landing page can display:
+A Power BI visual's landing page can display information in your Power BI visual card before the card gets data. A visual's landing page can display:
 
-* Text that explains how to use the visual
-* A link to your website
-* A link to a video
+* Text that explains how to use the visual.
+* A link to your website.
+* A link to a video.
 
-An example of a landing page is shown in the following image:
+:::image type="content" source="media/landing-page/app-landing-page.png" alt-text="Screenshot of a Power BI visual's example landing page.":::
 
-![landing page screenshot](media/landing-page/app-landing-page.png)
-
-This article explains how to design a landing page for your visual. The landing page is displayed whenever the visual has no data in it.
+This article explains how to design a landing page for your visual. The landing page appears whenever the visual has no data in it.
 
 >[!NOTE]
->Designing a Power BI visual landing page is supported from API version 2.3.0. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
+>Designing a Power BI visual landing page is supported in API version 2.3.0 and above. To find out which version you're using, check the `apiVersion` in the *pbiviz.json* file.
 
 ## Creating a landing page
 
-To create a landing page, certain capabilities have to be set in the `capabilities.json` file.
+To create a landing page, two capabilities must be set in the `capabilities.json` file.
 
 * For the landing page to work, enable `supportsLandingPage`.
-* For the landing page to be displayed in view mode or for the visual to be interactive even when in [no data-roles mode](no-dataroles-support.md), enable `supportsEmptyDataView`.
+* For the landing page to be displayed in view mode, or for the visual to be interactive even when in [no data-roles mode](no-dataroles-support.md), enable `supportsEmptyDataView`.
 
 ```json
     {
@@ -43,7 +41,7 @@ To create a landing page, certain capabilities have to be set in the `capabiliti
 
 ## Example of a visual with a landing page
 
-The following code shows how a landing page can be added to bar chart visual.
+The following code shows how a landing page can be added to a bar chart visual.
 
 ```typescript
 export class BarChart implements IVisual {

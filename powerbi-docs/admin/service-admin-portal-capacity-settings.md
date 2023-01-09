@@ -1,6 +1,6 @@
 ---
 title: Manage Capacity settings
-description: Learn how to configure Power BI capacity settings.
+description: Learn how to manage your Power BI capacity settings and understand what settings you can configure for your organization.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -28,17 +28,17 @@ Capacity is a dedicated set of resources reserved for exclusive use. Premium and
 
 ## Power BI Premium
 
-The **Power BI Premium** tab enables you to manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization. All users within your organization can see the **Power BI Premium** tab, but they only see contents within it if they are assigned as either a *Capacity admin* or a user that has assignment permissions. If a user does not have any permissions, the following message appears.
+The **Power BI Premium** tab enables you to manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization. All users within your organization can see the **Power BI Premium** tab, but they only see contents within it if they're assigned as either a *Capacity admin* or a user that has assignment permissions. If a user doesn't have any permissions, the following message appears:
 
 ![No access to Premium settings](media/service-admin-portal-capacity-settings/premium-settings-no-access.png)
 
 To understand more about the concepts of capacity management, see [Managing Premium Gen2 capacities](../enterprise/service-premium-capacity-manage-gen2.md).
 
-The capacity management process, is described in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md).
+The capacity management process is described in [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md).
 
 ## Power BI Embedded
 
-The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](../developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
+The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Because you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](../developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
 
 For more information about Power BI Embedded, see:
 

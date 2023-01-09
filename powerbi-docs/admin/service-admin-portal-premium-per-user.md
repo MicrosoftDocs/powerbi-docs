@@ -1,6 +1,6 @@
 ---
 title: Manage Premium Per User
-description: Learn how to manage Power BI Premium Per User.
+description: Learn how to manage and understand how to use Power BI Premium Per User settings in the Admin portal.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -8,21 +8,21 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 04/05/2022
+ms.date: 12/08/2022
 LocalizationGroup: Administration
 ---
 
 # Manage Premium Per User
 
-[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) is a way to license Premium features on a per user basis. Once the first user is assigned a PPU license, associated features can be turned on in any workspace. Admins can manage the auto refresh and dataset workload settings that are shown to users and their default values. For example, access to the XMLA endpoint can be turned off, set to read only, or set to read and write.
+[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) is a way to license Premium features on a per user basis. After the first user is assigned a PPU license, associated features can be turned on in any workspace. Admins can manage the auto refresh and dataset workload settings that are shown to users and their default values. For example, access to the XMLA endpoint can be turned off, set to read only, or set to read and write.
 
 [!INCLUDE[Get to the admin settings](../includes/admin-portal-settings.md)]
 
 ## PPU settings
 
-You can configure the following PPU settings in the admin portal.
+You can configure the following PPU settings in the admin portal on the **Premium Per User** tab.
 
-   :::image type="content" source="media/service-admin-portal-premium-per-user/premium-per-user-options.png" alt-text="Premium per user settings.":::
+   :::image type="content" source="media/service-admin-portal-premium-per-user/premium-per-user-options.png" alt-text="Screenshot of the Premium per user settings.":::
 
 ### Auto refresh
 

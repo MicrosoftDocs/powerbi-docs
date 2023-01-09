@@ -59,7 +59,11 @@
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
     - name: "Optimize ribbon in Power BI Desktop"
-      href: desktop-optimize-ribbon.md      
+      items:
+      - name: "Optimize ribbon in Power BI Desktop overview"
+        href: desktop-optimize-ribbon.md
+      - name: "DirectQuery optimization scenarios"
+        href: desktop-optimize-ribbon-scenarios.md          
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -153,7 +157,7 @@
     - name: "Use inline hierarchy labels"
       href: desktop-inline-hierarchy-labels.md
     - name: "Restrict data access with row-level security"
-      href: desktop-rls.md
+      href: ../enterprise/service-admin-rls.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: "Add text boxes, shapes, and smart narratives"
       href: power-bi-reports-add-text-and-shapes.md
     - name: "Add a hyperlink to a text box"
@@ -420,6 +424,8 @@
       href: service-goals-create-connected.md
     - name: "Create submetrics"
       href: service-metrics-submetrics.md
+    - name: "Create linked metrics"
+      href: service-metrics-linked-metrics.md
     - name: "Create custom statuses"
       href: service-goals-custom-status.md
     - name: "Create automated status rules"
@@ -432,8 +438,16 @@
       href: service-goals-move.md
     - name: "Metrics and Power Automate"
       href: service-goals-power-automate.md
-    - name: "Create and add Scorecards in reports"
-      href: ../visuals/power-bi-visualization-scorecard-visual.md   
+    - name: "Create and add scorecards to reports"
+      href: ../visuals/power-bi-visualization-scorecard-visual.md 
+    - name: Hierarchies in scorecards
+      items: 
+      - name: "Get started with hierarchies"
+        href: service-metrics-get-started-hierarchies.md 
+      - name: "Scenarios for using hierarchies"
+        href: service-metrics-hierarchies-scenarios.md 
+      - name: "View hierarchies in scorecards"
+        href: service-metrics-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: "Intro to dashboards"
@@ -478,6 +492,10 @@
       href: ../paginated-reports/paginated-reports-change-log.md
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Get around Report Design View
       href: ../paginated-reports/paginated-reports-report-design-view.md
     - name: Planning a report
@@ -536,6 +554,28 @@
       href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
+    - name: "Device information settings"  
+      items:
+      - name: Device information settings for rendering extensions
+        href: ../paginated-reports/device-info/device-information-settings-for-paginated-reports-rendering-extensions.md
+      - name: CSV device information settings
+        href: ../paginated-reports/device-info/csv-device-information-settings.md
+      - name: Excel device information settings
+        href: /sql/reporting-services/excel-device-information-settings?context=/power-bi/create-reports/context/context
+      - name: Word device information settings
+        href: /sql/reporting-services/word-device-information-settings?context=/power-bi/create-reports/context/context
+      - name: HTML device information settings
+        href: /sql/reporting-services/html-device-information-settings?context=/power-bi/create-reports/context/context
+      - name: Image device information settings
+        href: /sql/reporting-services/image-device-information-settings?context=/power-bi/create-reports/context/context
+      - name: MHTML device information settings
+        href: /sql/reporting-services/mhtml-device-information-settings?context=/power-bi/create-reports/context/context
+      - name: PDF device information settings
+        href: /sql/reporting-services/pdf-device-information-settings?context=/power-bi/create-reports/context/context
+      - name: RGDI device information settings
+        href: /sql/reporting-services/rgdi-device-information-settings?context=/power-bi/create-reports/context/context
+      - name: PPTX device information settings
+        href: /sql/reporting-services/pptx-device-information-settings?context=/power-bi/create-reports/context/context
   - name: "Deployment pipelines"  
     items:
     - name: "Introduction to deployment pipelines"
