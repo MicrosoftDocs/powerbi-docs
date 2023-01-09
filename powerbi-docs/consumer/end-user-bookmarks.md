@@ -150,7 +150,7 @@ In this release of **personal bookmarks**, there are a few considerations and li
 
 * Generally, your personal bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a personal bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
 
-* This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
+* In the Power BI mobile apps you can view bookmarks but you can't create them. For more information about using bookmarks in the mobile apps, see [Bookmarks](./mobile/mobile-reports-in-the-mobile-apps.md#bookmarks) in "Explore reports in the Power BI mobile apps".
 * Because personal bookmarks capture the exploration state of the current page, personal bookmarks won't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark will only capture the slicer change on the current page. 
 
 
