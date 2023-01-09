@@ -38,16 +38,16 @@ Where you save your file makes a difference.
 
 - **Local**. If you save your workbook file to a drive on your computer or another location in your organization, you can *import* your file into Power BI. Your file actually remains on the source drive, so Power BI doesn't really import the file. Power BI actually creates a new dataset in your site and loads your data and in some cases your data model into the dataset. Any reports in your file appear in your Power BI site under **Reports**.
 
-- **OneDrive - Business**. If you have OneDrive for Business, sign in to OneDrive for Business with the same account you use for Power BI. This method is by far the most effective way to keep your work in Excel, Power BI Desktop, or CSV files in sync with your Power BI dataset, reports, and dashboards. Both Power BI and OneDrive are in the cloud, so Power BI connects to your file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI dataset, reports, and dashboards.
+- **OneDrive for work or school**. If you have OneDrive for work or school, sign in with the same account you use for Power BI. This method is by far the most effective way to keep your work in Excel, Power BI Desktop, or CSV files in sync with your Power BI dataset, reports, and dashboards. Both Power BI and OneDrive are in the cloud, so Power BI connects to your file on OneDrive about once an hour. If Power BI finds any changes, it automatically updates your Power BI dataset, reports, and dashboards.
 
 - **OneDrive - Personal**. If you save your workbook files to your personal OneDrive account, you get many of the same benefits as with OneDrive for Business. The biggest difference is that when you first connect to your file by using **Get Data** > **Files** > **OneDrive – Personal**, you need to sign in to your OneDrive with your Microsoft account, which might be different from the account you use to sign in to Power BI.
 
   When you sign in to your OneDrive with your Microsoft account, be sure to select the **Keep me signed in** option. Power BI can then connect to your workbook file about every hour and make sure your Power BI dataset is in sync.
 
-- **SharePoint - Team Sites**. Saving your Power BI Desktop files to SharePoint Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+- **SharePoint - Team Sites**. Saving your Power BI Desktop files to SharePoint Team Sites is much the same as saving to OneDrive for work or school. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 > [!NOTE]
-> Datasets imported from OneDrive for Business or OneDrive Personal can't be updated from local files. You must replace the file in OneDrive for Business or OneDrive Personal for Power BI to update the dataset. Alternatively, you can delete the dataset and its related items and then reimport from a local file.
+> Datasets imported from OneDrive for work or school or OneDrive Personal can't be updated from local files. You must replace the file in OneDrive for Business or OneDrive Personal for Power BI to update the dataset. Alternatively, you can delete the dataset and its related items and then reimport from a local file.
 
 ## Ready to get started?
 

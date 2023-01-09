@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/15/2022
+ms.date: 10/16/2022
 ---
 
 # Develop scalable multitenancy applications with Power BI embedding

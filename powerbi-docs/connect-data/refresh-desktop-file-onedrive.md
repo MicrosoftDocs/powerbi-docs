@@ -43,10 +43,10 @@ Power BI supports **Refresh** and **Schedule refresh** for datasets created from
 > [!NOTE]
 > A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
 
-## OneDrive or OneDrive for Business. What’s the difference?
-If you have both a personal OneDrive and OneDrive for Business, you should keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
+## OneDrive or OneDrive for work or school. What’s the difference?
+If you have both a personal OneDrive and OneDrive for work or school, you should keep any files you want to import into Power BI in OneDrive for work or school. Here’s why: You likely use two different accounts to sign into them.
 
-When you connect to OneDrive for Business in Power BI, connection is easy because your Power BI account is often the same account as your OneDrive for Business account. With personal OneDrive, you usually sign in with a different [Microsoft account](https://account.microsoft.com).
+When you connect to OneDrive for work or school in Power BI, connection is easy because your Power BI account is often the same account as your OneDrive for work or school account. With personal OneDrive, you usually sign in with a different [Microsoft account](https://account.microsoft.com).
 
 When you sign in with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.
 

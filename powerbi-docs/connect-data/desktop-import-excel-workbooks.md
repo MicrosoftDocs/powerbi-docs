@@ -25,9 +25,9 @@ With Power BI Desktop, you can easily import Excel workbooks that contain Power 
    Although there's currently no limitation on the size or number of objects in the workbook, larger workbooks take longer for Power BI Desktop to analyze and import.
 
    > [!NOTE]
-   > To load or import Excel files from shared OneDrive for Business folders or from Microsoft 365 group folders, use the URL of the Excel file, and input it into the Web data source in Power BI Desktop. There are a few steps you need to follow to properly format the OneDrive for Business URL; for information and the correct series of steps, see [Use OneDrive for Business links in Power BI Desktop](desktop-use-onedrive-business-links.md).
-   >
-   >
+   > To load or import Excel files from shared OneDrive for work or school folders or from Microsoft 365 group folders, use the URL of the Excel file, and input it into the Web data source in Power BI Desktop. There are a few steps you need to follow to properly format the OneDrive for work or school URL; for information and the correct series of steps, see [Use OneDrive for work or school links in Power BI Desktop](desktop-use-onedrive-business-links.md).
+   > 
+   > 
 
 3. From the import dialog box that appears, select **Start**.
 
