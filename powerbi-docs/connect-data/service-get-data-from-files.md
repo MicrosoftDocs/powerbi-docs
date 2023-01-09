@@ -47,7 +47,7 @@ Where you save your file makes a difference.
 - **SharePoint - Team Sites**. Saving your Power BI Desktop files to SharePoint Team Sites is much the same as saving to OneDrive for work or school. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 > [!NOTE]
-> Datasets imported from OneDrive for work or school or OneDrive Personal can't be updated from local files. You must replace the file in OneDrive for work or school or OneDrive Personal for Power BI to update the dataset. Alternatively, you can delete the dataset and its related items and then reimport from a local file.
+> You can't update datasets imported from OneDrive for work or school or OneDrive Personal from local files. For Power BI to update the dataset, you must replace the file in OneDrive for work or school or OneDrive Personal. Alternatively, you can delete the dataset and its related items and then reimport from a local file.
 
 ## Ready to get started?
 
