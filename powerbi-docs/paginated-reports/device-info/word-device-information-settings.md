@@ -10,7 +10,9 @@ ms.author: maggies
 ---
 # Word device information settings for Power BI paginated reports
   The following table lists the device information settings for rendering Power BI paginated reports in Microsoft Word format.  
-  
+
+## Settings 
+
 |Setting|Value|  
 |-------------|-----------|  
 |**AutoFit**|**False**. AutoFit is set to **false** set on any Word table.<br /><br /> **True**. AutoFit is set to **true** on every Word table.<br /><br /> **Never**. AutoFit values are not set on any Word table and behavior reverts to the Word default.<br /><br /> **Default**. AutoFit is set on tables that are narrower than the physical drawing area (physical page width excluding margins) per logical page.|  
