@@ -31,7 +31,7 @@ Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL D
 
 ### Data sources not supported
 
-Power BI Q&A currently does not support the following configurations:
+Power BI Q&A doesn't support the following configurations:
 
 - Object level security with any type of data source
 - Composite models
@@ -43,7 +43,7 @@ The new tooling dialog allows users to customize and improve the natural languag
 
 ## Review question limitations
 
-The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you might notice that some questions aren't recorded. They are intentionally not recorded. The natural language engine performs a series of data cleansing steps to ensure that every key stroke from a user isn't recorded or shown.
+The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you might notice that some questions aren't recorded. They're intentionally not recorded. The natural language engine performs a series of data cleansing steps to ensure that every key stroke from a user isn't recorded or shown.
 
 Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
 
@@ -58,8 +58,8 @@ Teach Q&A allows you to fix two types of errors:
 
 Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
-- Country or region which is USA
-- Country or region which is not USA
+- Country/region which is USA
+- Country/region which is not USA
 - Products > 100
 - Products greater than 100
 - Products = 100
@@ -77,4 +77,4 @@ Currently, redefining a recognized term or defining other types of conditions or
 
 ## Next steps
 
-There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
+There are several best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
