@@ -1,5 +1,5 @@
 ---
-title: "Image Device Information Settings for Power BI paginated reports| Microsoft Docs"
+title: "Image device information settings for Power BI paginated reports| Microsoft Docs"
 description: Learn about the various device information settings you can use to render in an image format in Reporting Services.
 ms.date: 01/05/2023
 ms.service: powerbi
@@ -8,7 +8,7 @@ ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Image Device Information Settings
+# Image device information settings for Power BI paginated reports
   The following table lists the device information settings for rendering in IMAGE format.  
   
 |Setting|Value|  
