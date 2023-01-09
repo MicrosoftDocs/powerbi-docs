@@ -47,7 +47,7 @@ The following image shows how one Power BI Desktop report and its data model pub
 
 ## Set up and use a Power BI service live connection
 
-Now that you understand the usefulness of the Power BI service live connection for report lifecycle management, see how to get from a great report and dataset to a shared dataset that teammates can use in Power BI.
+You can see the usefulness of the Power BI service live connection for report lifecycle management. Now find out how to get from a great report and dataset to a shared dataset that teammates can use in Power BI.
 
 ### Publish a Power BI report and dataset
 
