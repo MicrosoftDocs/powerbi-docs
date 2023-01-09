@@ -561,21 +561,21 @@
       - name: CSV device information settings
         href: ../paginated-reports/device-info/csv-device-information-settings.md
       - name: Excel device information settings
-        href: /sql/reporting-services/excel-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/excel-device-information-settings.md
       - name: Word device information settings
-        href: /sql/reporting-services/word-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/word-device-information-settings.md
       - name: HTML device information settings
-        href: /sql/reporting-services/html-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/html-device-information-settings.md
       - name: Image device information settings
-        href: /sql/reporting-services/image-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/image-device-information-settings.md
       - name: MHTML device information settings
-        href: /sql/reporting-services/mhtml-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/mhtml-device-information-settings.md
       - name: PDF device information settings
-        href: /sql/reporting-services/pdf-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/pdf-device-information-settings.md
       - name: RGDI device information settings
-        href: /sql/reporting-services/rgdi-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/rgdi-device-information-settings.md
       - name: PPTX device information settings
-        href: /sql/reporting-services/pptx-device-information-settings?context=/power-bi/create-reports/context/context
+        href: ../paginated-reports/device-info/pptx-device-information-settings.md
   - name: "Deployment pipelines"  
     items:
     - name: "Introduction to deployment pipelines"
