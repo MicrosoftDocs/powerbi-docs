@@ -357,7 +357,7 @@ sections:
           
           * **Deploying to a stage with content** - Any [Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [PPU](../enterprise/service-premium-per-user-faq.yml) user, who's a member or admin of both workspaces in the source and target deployment stages.
           
-          * **Overwriting a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. Any user who's a member ir admin of both workspaces, bit the tenant admin can restrict this to target dataset owners only.
+          * **Overwriting a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. Any user who's a member or admin of both workspaces, but the tenant admin can restrict this to target dataset owners only.
           
       - question: |
           Which permissions do I need to configure deployment rules?
