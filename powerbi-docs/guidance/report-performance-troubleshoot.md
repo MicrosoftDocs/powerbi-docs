@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot report performance in Power BI
 description: Troubleshooting guide to diagnose slow report performance in Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

@@ -45,11 +45,11 @@ Images in your report need to be anonymously accessible. On OneDrive, you may be
 
     :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-copy-url.png" alt-text="Copy the URL.":::
 
-### Add images from OneDrive for Business
+### Add images from OneDrive for work or school
 
-Your organization may not allow displaying images stored on OneDrive for Business. If they do allow it, follow these steps.
+Your organization may not allow displaying images stored on OneDrive for work or school. If they do allow it, follow these steps.
 
-1. In OneDrive for Business, open an image and select **View original**.
+1. In OneDrive for work or school, open an image and select **View original**.
 1. Copy the URL that generates.
 1. Select **Anyone with the link** to generate a sharing link that anyone can view, so that it has anonymous access set.
 
