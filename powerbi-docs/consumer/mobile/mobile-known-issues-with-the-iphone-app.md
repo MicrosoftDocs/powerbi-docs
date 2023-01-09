@@ -12,7 +12,7 @@ ms.date: 01/06/2023
 
 # Fixing "communication failures" in iOS mobile apps - Power BI
 
-| :::image type="content" source="./media/mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png" alt-text="iPhone logo"::: | :::image type="content" source="./media/mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png" alt-text="iPad logo"::: |
+| :::image type="icon" source="./media/mobile-known-issues-with-the-iphone-app/iphone-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-known-issues-with-the-iphone-app/ipad-logo-50-px.png"::: |
 |:--- |:--- |
 | iPhones |iPads |
 
@@ -24,8 +24,8 @@ You might see this message if your iPhone or iPad internet connection requires a
 
 ### Workaround
 
-Switch the iPhone or iPad to another connection that doesn't require an explicit HTTP proxy setting (i.e., one configured as HTTP Proxy is Off).
+Switch the iPhone or iPad to another connection that doesn't require an explicit HTTP proxy setting, that is, one configured as HTTP Proxy is Off.
 
 ## Other issues?
 
-Try asking the [Power BI Community](https://community.powerbi.com/).
+Ask the [Power BI Community](https://community.powerbi.com/).
