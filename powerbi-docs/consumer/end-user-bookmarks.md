@@ -17,8 +17,6 @@ LocalizationGroup: Create reports
 ## Introduction to bookmarks
 A bookmark captures the state of a report page. This includes the settings you've made to filters, slicers, and visuals on that page. Once the report page is set the way you want, give it a friendly name. Now you can return to that state of the report page with a single click. Simply select a bookmark, and Power BI takes you back to that view.  
 
-
-
 ## Types of bookmarks
 There are two types of bookmarks: *personal* and *report*. Report bookmarks are added to reports by report *designers*. When the designers share their reports with colleagues, the bookmarks travel with the report. Everyone who can open and view that report can also see and use the report bookmarks. Personal bookmarks can be created by anyone who can open a report, they don't even require edit permissions. However, if you create personal bookmarks and share your report, the personal bookmarks don't travel with the report. Personal bookmarks are for your use only. However, if you want to share your personal bookmarks, this article provides some tips and tricks to do so.
 
@@ -27,9 +25,6 @@ There are two types of bookmarks: *personal* and *report*. Report bookmarks are 
 This article explains how to create and use *personal* bookmarks.  It also explains how to interact with *report* bookmarks that have been created by others and shared with you. Viewing shared content requires either a Power BI Pro or a Premium Per User license. [Which license do I have?](end-user-license.md)
 
 If you'll be designing reports and creating report bookmarks for others to use, see [Create report bookmarks](../create-reports/desktop-bookmarks.md).
-
-
-
 
 ## Use *personal* *bookmarks* to save insights and build stories in Power BI 
 There are many uses for personal bookmarks. Say you discover an interesting insight and want to preserve it -- create a personal bookmark so you can return later. Need to leave and want to preserve your current work, create a personal bookmark. You can even make a personal bookmark your default view of a report, so each time you return, that view of the report page opens first. 
@@ -58,8 +53,6 @@ When a personal bookmark is on you can use the comment feature on the Power BI s
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-share-changes.png" alt-text="Share changes":::
  
-
-
 ## Create personal bookmarks in the Power BI service
 If you can view a report, then you can also add personal bookmarks. The maximum number of personal bookmarks per report is 20. When you create a bookmark, the following elements are saved with the bookmark:
 
@@ -113,7 +106,6 @@ To view the report bookmarks created by the report *designer*, from the **Bookma
 ### Report bookmarks
 If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. This report page has four bookmarks: B1, B2, VanArsdel YTD, and All YTD. **All YTD** is currently selected.
 
-
 ![Show Report bookmarks.](media/end-user-bookmarks/power-bi-bookmark-list.png)
 
 Select a bookmark to change to that report view. 
@@ -149,10 +141,5 @@ In this release of **personal bookmarks**, there are a few considerations and li
 * In the Power BI mobile apps you can view bookmarks but you can't create them. For more information about using bookmarks in the mobile apps, see [Explore reports in the Power BI mobile apps](./mobile/mobile-reports-in-the-mobile-apps.md#bookmarks).
 * Because personal bookmarks capture the exploration state of the current page, personal bookmarks won't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark will only capture the slicer change on the current page. 
 
-
 ## Next steps
 [Personalize visuals in a report](end-user-personalize-visuals.md)
-
-
-
-
