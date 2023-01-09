@@ -16,10 +16,9 @@ LocalizationGroup: Create reports
 
 With **dashboard themes** you can apply a color theme to your entire dashboard, such as corporate colors, seasonal coloring, or any other color theme you might want to apply. When you apply a dashboard theme, all visuals on your dashboard use the colors from your selected theme. A few exceptions apply, described in the [Considerations and limitations](#considerations-and-limitations) section of this article.
 
-![Screenshot of example dashboard with a theme background image.](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
+![Screenshot of an example dashboard with a theme background image.](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
 
 Changing the colors of the report visuals on a dashboard doesn't affect the visuals in the associated report. Also, when you pin tiles from a report that already has a [report theme applied](desktop-report-themes.md), you can choose to keep the current theme or use the dashboard theme.
-
 
 ## Prerequisites
 
@@ -31,9 +30,9 @@ To get started, open a dashboard that you created, or can edit. Select **Edit** 
 
 ![Screenshot of the Edit drop down menu, highlighting the Dashboard theme option.](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 
-In the dashboard pane that appears, select one of the pre-built themes.  In the following example, we've selected **Dark**.
+In the dashboard pane that appears, select one of the pre-built themes. In the following example, we've selected **Dark**.
 
-![Screenshot of the Dashboard theme window.](media/service-dashboard-themes/power-bi-theme-menu.png)
+![Screenshot of the Dashboard theme window and dropdown menu.](media/service-dashboard-themes/power-bi-theme-menu.png)
 
 ![Screenshot of the dashboard with the Dark option applied.](media/service-dashboard-themes/power-bi-theme-dark.png)
 
