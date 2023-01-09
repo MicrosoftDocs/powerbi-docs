@@ -51,7 +51,7 @@ You can teach Q&A two types of terms:
 
 When working with data, you often have names of fields that could be referred to by alternative names. An example could be 'Sales'. Numerous words or phrases could refer to sales, such as 'revenue'. If a column is named 'Sales' and report consumers type 'revenue', Q&A might fail to pick the correct column to answer the question appropriately. In that case, you want to tell Q&A that 'Sales' and 'Revenue' refer to the same thing.
 
-Q&A automatically detects when an unrecognized word is a noun by using knowledge from Microsoft Office. If Q&A detects a noun, it prompts you by using the prompt:
+Q&A automatically detects when an unrecognized word is a noun by using knowledge from Microsoft Office. If Q&A detects a noun, it prompts you by using the phrase:
 
 - **refers to** 
 
@@ -63,7 +63,7 @@ If you provide something other than a field from the data model, you might get u
 
 ### Define an adjective filter condition
 
-Sometimes you might want to define terms that act as a condition on the underlying data. An example could be 'Awesome Publishers'. 'Awesome' could be a condition that only selects publishers that have published X number of products. Q&A tries to detect adjectives and then provides the prompt:
+Sometimes, you might want to define terms that act as a condition on the underlying data. An example could be 'Awesome Publishers'. 'Awesome' could be a condition that only selects publishers that have published X number of products. Q&A tries to detect adjectives and then provides the prompt:
 
 - **that have**  
 
