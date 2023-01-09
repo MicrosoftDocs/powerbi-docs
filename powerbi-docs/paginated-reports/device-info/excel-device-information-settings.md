@@ -11,7 +11,9 @@ ms.author: maggies
 
 # Excel device information settings for Power BI paginated reports
   The following table lists the device information settings for rendering Power BI paginated reports in Microsoft Excel format.  
-  
+
+## Settings 
+
 |Setting|Value|  
 |-------------|-----------|  
 |**OmitDocumentMap**|Indicates whether to omit the document map for reports that support it. The default value is **false**.|  
