@@ -9,8 +9,8 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 
-# Excel Device Information Settings
-  The following table lists the device information settings for rendering in Microsoft Excel format.  
+# Excel device information settings for Power BI paginated reports
+  The following table lists the device information settings for rendering Power BI paginated reports in Microsoft Excel format.  
   
 |Setting|Value|  
 |-------------|-----------|  
