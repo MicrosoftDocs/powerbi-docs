@@ -22,3 +22,7 @@ In Power BI paginated reports, device information settings are used to pass rend
 - [PPTX device information settings](pptx-device-information-settings.md) 
 - [Word device information settings](word-device-information-settings.md) 
 - [XML device information settings](xml-device-information-settings.md)
+
+## Next steps
+
+- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
