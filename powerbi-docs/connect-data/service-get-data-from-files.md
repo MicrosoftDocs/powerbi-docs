@@ -27,7 +27,7 @@ To better understand the importance of datasets and how to get data for them, lo
 
 In Power BI, a dataset is like the engine in your car. The dataset provides the data, metrics, and information that's displayed in your Power BI dashboard. Your engine, or dataset, needs fuel, and data is the fuel in Power BI. Your car has a fuel tank that provides gas to the engine. Power BI also needs a fuel tank of data you can feed your dataset. That fuel tank can be a Power BI Desktop file, Excel workbook file, or CSV file.
 
-To take it one step further, a fuel tank in a car has to be filled with gas. The gas for a Power BI Desktop, Excel, or CSV file is data from a data source that you put it into an Excel, Power BI Desktop, or CSV file. You can manually enter rows of data into an Excel workbook or CSV file, or you can connect to the external data source to query and load data into your file. Once you have a file with some data, you can get the file into Power BI as a dataset.
+To take it one step further, a fuel tank in a car has to be filled with gas. The gas for a Power BI Desktop, Excel, or CSV file is data from a data source that you put it into the Excel, Power BI Desktop, or CSV file. You can manually enter rows of data into an Excel workbook or CSV file, or you can connect to the external data source to query and load data into your file. Once you have a file with some data, you can get the file into Power BI as a dataset.
 
 > [!NOTE]
 > Data in Excel workbooks must be in a table or data model to import into Power BI.
@@ -55,4 +55,4 @@ See the following articles to learn more about getting your file into Power BI.
 
 - [Get data from Excel workbook files](service-excel-workbook-files.md)
 - [Get data from Power BI Desktop files](service-desktop-files.md)
-- [Get data from comma-Separated value (CSV) files](service-comma-separated-value-files.md)
+- [Get data from comma-separated value (CSV) files](service-comma-separated-value-files.md)
