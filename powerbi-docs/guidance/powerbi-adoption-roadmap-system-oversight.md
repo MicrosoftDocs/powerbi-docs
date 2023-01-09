@@ -1,8 +1,8 @@
 ---
 title: "Power BI adoption roadmap: System oversight"
 description: Apply system oversight consisting of administrative activities to drive strong and successful adoption of Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
