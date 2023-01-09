@@ -19,12 +19,12 @@ sections:
   - name: Ignored
     questions:
       - question: |
-         What is the Microsoft Power BI service?
+         What's the Microsoft Power BI service?
         answer: |
           The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
           
       - question: |
-         What is a Power BI business user?
+         What's a Power BI business user?
         answer: |
           The way you interact with Power BI will depend on your job role. As an end user or *business user*, you're the person who receives content (dashboards, reports, and apps) from colleagues. If you work in the online or mobile version of Power BI, then you're using the Power BI service to review and interact with content to make business decisions.  For more information, see [Power BI for business users](index.yml).
           
@@ -74,7 +74,7 @@ sections:
         answer: |
           To use the Power BI service for free, you need a Web browser and email, then download the Power BI mobile apps from their respective stores (also for free).
           
-          * [App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+          * [Apple App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
           * [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
           * [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
           
@@ -91,7 +91,7 @@ sections:
           * See [10 tips for getting help](../support/service-tips-for-finding-help.md) for more suggestions
           
       - question: |
-         What browsers does Power BI support?
+         Which browsers does Power BI support?
         answer: |
           Here's a complete list of [supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
           
