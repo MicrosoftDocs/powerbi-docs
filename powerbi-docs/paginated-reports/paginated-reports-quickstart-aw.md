@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 10/27/2022
+ms.date: 01/09/2023
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to any workspace in the Power BI service.
+This tutorial explains how to connect to a sample Azure SQL database, use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages, and then upload the paginated report to any workspace in the Power BI service.
 
 ![Screenshot showing paginated report in the Power BI service.](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -39,9 +39,9 @@ Here are the prerequisites for creating the paginated report:
 
 Here are the prerequisites for uploading your paginated report to the Power BI service:
 
-- You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+- You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
 
-- You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
+- You can publish to My Workspace. For any other workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
 ## Create the matrix with a wizard
   
@@ -73,7 +73,6 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 
      The **Connection Properties** dialog box opens.
 
-
 1. **In the Azure portal:** Go back to the Azure portal and select **SQL databases**.
 
     ![Screenshot showing SQL databases in the Azure portal.](media/paginated-reports-quickstart-aw/power-bi-azure-portal.png)
@@ -81,7 +80,6 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 1. Select the Azure SQL database you created in the quickstart "Create an Azure SQL database sample in the Azure portal" in the **Prerequisites** section of this article.
 
 1. On the **Overview** tab, copy the value in the **Server name** box.
-
 
 1. **In Report Builder**: Go back to Report Builder. In the **Connection Properties** dialog box, under **Server name**, paste the server name you copied.
 
@@ -152,17 +150,17 @@ Let's pause for a moment to look at the results of the wizard.
 
 ![Screenshot showing the results of the Matrix wizard.](media/paginated-reports-quickstart-aw/power-bi-paginated-wizard-results.png)
 
-1. In the Report Data pane, you see the embedded Azure data source and the embedded dataset based on it, both of which you created. 
+1. In the **Report Data** pane, you see the embedded Azure data source and the embedded dataset based on it, both of which you created. 
 
 2. The design surface is about 6 inches wide. On the design surface, you see the matrix, displaying column headings and placeholder values. The matrix has six columns and appears to be only five rows tall. 
 
-3. Order Qty, Unit Price, and Line Total are all sums, and each row group has a subtotal. 
+3. **Order Qty**, **Unit Price**, and **Line Total** are all sums, and each row group has a subtotal. 
 
     You still don't see actual data values. You need to run the report to see them.
 
-4. In the Properties pane, the selected matrix is called Tablix1. A *tablix* in Report Builder is a data region that displays data in rows and columns. It can be either a table or a matrix.
+4. In the **Properties** pane, the selected matrix is called Tablix1. A *tablix* in Report Builder is a data region that displays data in rows and columns. It can be either a table or a matrix.
 
-5. In the Grouping pane, you see the three row groups you created in the wizard: 
+5. In the **Grouping** pane, you see the three row groups you created in the wizard: 
 
     - CompanyName
     - Sales Order
@@ -186,17 +184,17 @@ To see the actual values, you need to run the report.
 
 Now you have a report with a matrix that wraps to 33 pages. Let's add some other features and improve how it looks. You can run the report after every step, if you want to see how it's coming along.
 
-- On the **Run** tab of the Ribbon, select **Design**, so you can continue modifying it.  
+- On the **Run** tab of the ribbon, select **Design**, so you can continue modifying it.  
 
 ### Set page width
 
 Typically a paginated report is formatted for printing, and a typical page is 8 1/2 X 11 inches. 
 
-1. Drag the ruler to make the design surface 7-inches wide. The default margins are 1 inch on each side, so the side margins need to be narrower.
+1. Drag the ruler to make the design surface 7 inches wide. The default margins are 1 inch on each side, so the side margins need to be narrower.
 
 1. Click in the gray area around the design surface to show the **Report** properties.
 
-    If you don’t see the Properties pane, select the **View** tab > **Properties**.
+    If you don’t see the **Properties** pane, select the **View** tab > **Properties**.
 
 2. Expand **Margins** and change **Left** and **Right** from 1 inch to 0.75 inch.
 
@@ -206,7 +204,7 @@ Typically a paginated report is formatted for printing, and a typical page is 8 
 
 1. Select the words **Click to add title** at the top of the page, then type **Sales by Company**.  
 
-2. Select the title text, and in the Properties pane under **Font**, change **Color** to **Blue**.
+2. Select the title text, and in the **Properties** pane under **Font**, change **Color** to **Blue**.
   
 ### Add a page number
 
@@ -214,7 +212,7 @@ You noticed the report has a date and time stamp in the footer. You can add a pa
 
 1. At the bottom of the design surface, you see **[&ExecutionTime]** on the right in the footer. 
 
-2. In the Report Data pane, expand the **Built-in Fields** folder. Drag **Page Number** to the left side of the footer, at the same height as **[&ExecutionTime]**.
+2. In the **Report Data** pane, expand the **Built-in Fields** folder. Drag **Page Number** to the left side of the footer, at the same height as **[&ExecutionTime]**.
 
 3. Drag the right side of the **[&PageNumber]** box to make it square.
 
@@ -260,7 +258,7 @@ If you noticed when you ran the report, the dollar amounts aren't formatted as c
 
 One more formatting improvement before publishing the report to the Power BI service: making the column headers show up on each page in the report.
 
-1. In the far-right end of the top bar in the Grouping pane, select the drop-down arrow > **Advanced Mode**.
+1. In the far-right end of the top bar in the **Grouping** pane, select the drop-down arrow > **Advanced Mode**.
 
     ![Screenshot showing Turn on Advanced Mode.](media/paginated-reports-quickstart-aw/power-bi-paginated-advanced-mode.png)
 
@@ -289,7 +287,6 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 1. In the [Power BI service](https://app.powerbi.com) nav pane, select **Workspaces** > **Create workspace**.
 
 1. Name your workspace **Azure AW** or other unique name. You're the only member for now.
-
 
 1. In your new workspace, select **Upload** > **Browse**. Navigate to where you saved the file > **Open**.
 
