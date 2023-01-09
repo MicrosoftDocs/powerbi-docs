@@ -109,7 +109,7 @@ Without doing any setup, the Q&A visual suggests several questions to get starte
 
    :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Screenshot of the Suggest questions page with the section called Reorder your suggested questions highlighted." lightbox="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png":::
  
-1. Select **Save** to show your list of suggested questions in the Q&A visual. 
+1. Select **Save** to show your list of suggested questions in the Q&A visual.
 
 ## Set a row label
 
