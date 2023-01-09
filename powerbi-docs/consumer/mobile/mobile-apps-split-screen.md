@@ -13,7 +13,7 @@ ms.date: 01/06/2023
 
 This article applies to the following:
 
-|:::image type="content" source="./media/mobile-apps-split-screen/ios-logo-40-px.png" alt-text="iPad logo"::: | :::image type="content" source="././media/mobile-apps-split-screen/android-logo-40-px.png" alt-text="Android logo"::: |
+|:::image type="icon" source="./media/mobile-apps-split-screen/ios-logo-40-px.png"::: |:::image type="icon" source="././media/mobile-apps-split-screen/android-logo-40-px.png"::: |
 |:--- |:--- |
 |iPads |Android tablets |
 
@@ -33,4 +33,4 @@ Working side by side with another app works best with reports that have been opt
 ## Device requirements
 
 - **Android tablets**: Split-screen mode requires that your device have multi-window support. Check your device's documentation to see if it has the necessary support.
-- **iPads**: Split View is supported on iPads running iPadOS 13 and above.
+- **iPads**: Split View is supported on iPads running iPad OS 13 and above.
