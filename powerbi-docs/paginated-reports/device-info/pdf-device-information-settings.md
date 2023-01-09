@@ -10,7 +10,9 @@ ms.author: maggies
 ---
 # PDF device information settings for Power BI paginated reports
   The following table lists the device information settings for rendering Power BI paginated reports in PDF format.  
-  
+
+## Settings 
+
 |Setting|Value|  
 |-------------|-----------|  
 | **AccessiblePDF** | Indicates whether to render an accessible/tagged PDF, which is larger in size but easier for screen readers and other assistive technologies to read and navigate. The default value is **false**. [Available in Power BI Report Server (March 2018) and later] |
