@@ -10,7 +10,9 @@ ms.author: maggies
 ---
 # PPTX device information settings for Power BI paginated reports
   The following table lists the device information settings for rendering Power BI paginated reports in the PPTX format.  
-  
+
+## Settings 
+
 |Setting|Value|  
 |-------------|-----------|  
 |**Columns**|The number of columns to set for the report. This value overrides the report's original settings.|  
