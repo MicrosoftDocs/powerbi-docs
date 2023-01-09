@@ -1,6 +1,6 @@
 ---
-title: "PDF Device Information Settings for Power BI paginated reports| Microsoft Docs"
-description: Learn about the device information settings that are available for rendering reports in PDF format.
+title: "PDF device information settings for Power BI paginated reports| Microsoft Docs"
+description: Learn about the device information settings that are available for rendering Power BI paginated reports in PDF format.
 ms.date: 01/05/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,8 +8,8 @@ ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ---
-# PDF Device Information Settings
-  The following table lists the device information settings for rendering reports in PDF format.  
+# PDF device information settings for Power BI paginated reports
+  The following table lists the device information settings for rendering Power BI paginated reports in PDF format.  
   
 |Setting|Value|  
 |-------------|-----------|  
