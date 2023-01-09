@@ -10,7 +10,9 @@ ms.author: maggies
 ---
 # MHTML device information settings for Power BI paginated reports
   The following table lists the device information settings for rendering Power BI paginated reports in Web archive (MHTML) format.  
-  
+ 
+## Settings 
+ 
 |Setting|Value|  
 |-------------|-----------|  
 |**JavaScript**|Indicates whether JavaScript is supported in the rendered report.|  
