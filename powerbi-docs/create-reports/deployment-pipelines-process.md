@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-deployment
-ms.date: 11/16/2022
+ms.date: 12/28/2022
 ---
 
 # Understand the deployment process
@@ -127,7 +127,7 @@ In many cases, when you have a small change such as adding or removing a table, 
 
 ### Requirements for deploying to a stage with an existing workspace
 
-A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../enterprise/service-premium-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
+A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../enterprise/service-premium-gen2-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
 
 ## Deployed items
 
@@ -371,7 +371,7 @@ The table below lists required permissions for popular deployment pipeline actio
 
 This section lists most of the limitations in deployment pipelines.
 
-* The workspace must reside on a [premium capacity](../enterprise/service-premium-what-is.md).
+* The workspace must reside on a [premium capacity](../enterprise/service-premium-gen2-what-is.md).
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
@@ -387,7 +387,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity can't be deployed.
 
-* A dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables, isn’t supported.
+* A dataset with DirectQuery or Composite connectivity mode, that uses variation or [auto date/time](../transform-model/desktop-auto-date-time.md) tables, isn’t supported. For more information see [What can I do if I have a dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables?](deployment-pipelines-troubleshooting.yml#what-can-i-do-if-i-have-a-dataset-with-directquery-or-composite-connectivity-mode--that-uses-variation-or-auto-date-time-tables-)
 
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 

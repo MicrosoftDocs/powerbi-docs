@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/11/2022
+  ms.date: 12/15/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -43,7 +43,7 @@ highlightedContent:
       itemType: how-to-guide
       url: /power-bi/transform-model/desktop-create-and-manage-relationships#edit-a-relationship
     # Card
-    - title: "Power BI Premium features: Original, Gen2, and Per User"
+    - title: "Power BI Premium features"
       itemType: concept
       url: enterprise/service-premium-features.md
     # Card
@@ -94,9 +94,9 @@ conceptualContent:
     # Card
     - title: Enterprise
       links:
-        - url: enterprise/service-premium-gen2-what-is.md
+        - url: enterprise/service-premium-features.md
           itemType: overview
-          text: What is Power BI Premium Gen2?
+          text: Power BI Premium features
         - url: enterprise/service-admin-power-bi-security.md
           itemType: concept
           text: Security
@@ -234,22 +234,6 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
-        text: See more
-    # Card
-    - title: Power BI Premium Gen2
-      links:
-        - url: enterprise/service-premium-gen2-what-is.md
-          itemType: overview
-          text: What is Power BI Premium Gen2?
-        - url: enterprise/service-premium-concepts.md
-          itemType: concept
-          text: Understanding Power BI Premium Gen2
-        - url: enterprise/service-premium-gen2-metrics-app.md
-          itemType: concept
-          text: Use the Gen2 metrics app
-      # footerLink (optional)
-      footerLink:
-        url: enterprise/index.yml
         text: See more
     # Card
     - title: Power BI in the mobile apps
