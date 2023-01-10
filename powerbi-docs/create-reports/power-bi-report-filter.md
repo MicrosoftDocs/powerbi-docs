@@ -203,7 +203,7 @@ When you're editing the Filters pane, you can double-click the title to edit it.
 
 The Filters pane search feature allows you to search across your filter cards by title. This feature is helpful if you have several different filter cards in your Filters pane and need to find a specific card.
 
-![Screenshot of the Filters pane, with an example title entered,](media/power-bi-report-filter/power-bi-filter-search.png)
+![Screenshot of the Filters pane, with an example title entered.](media/power-bi-report-filter/power-bi-filter-search.png)
 
 You can also format the search box, just as you can format the other elements of the Filters pane.
 
@@ -285,7 +285,7 @@ Currently, you can control some of the formatting for the **Apply** text for the
 - Under **Header**
   - **Header text size** controls text size.
 
-:::image type="content" source="media/power-bi-report-filter/format-apply-filter.png" alt-text="Screenshot of the Filters pane, Format the Apply filter button text":::
+:::image type="content" source="media/power-bi-report-filter/format-apply-filter.png" alt-text="Screenshot of the Filters pane, Format the Apply filter button text.":::
 
 ## Considerations and limitations
 
