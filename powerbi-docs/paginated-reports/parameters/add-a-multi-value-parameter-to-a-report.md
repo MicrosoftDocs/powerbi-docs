@@ -17,7 +17,7 @@ ms.author: maggies
 
   You can add a parameter to a paginated report that allows the user to select more than one value for the parameter.  
   
- You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](../../powerbi-docs/paginated-reports/parameters/pass-a-report-parameter-within-a-url.md).  
+ You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](../../paginated-reports/parameters/pass-a-report-parameter-within-a-url.md).  
    
   
 ## To add a multi-value parameter  
