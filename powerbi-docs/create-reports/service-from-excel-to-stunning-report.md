@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.date: 01/03/2023
 LocalizationGroup: Data from files
 ---
-# Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams
+# Tutorial: From Excel workbook to a Power BI report in Microsoft Teams
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
