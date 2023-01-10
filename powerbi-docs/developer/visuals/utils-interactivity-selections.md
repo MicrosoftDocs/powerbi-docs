@@ -54,7 +54,7 @@ Import the CSS file as a `.less` file because the Power BI visuals tool wraps ex
 
 Usually, data points contain selections and values. The interface extends the `SelectableDataPoint` interface.
 
-`SelectableDataPoint` already contains properties as described below.
+`SelectableDataPoint` already contains properties as follows:
 
 ```typescript
   /** Flag for identifying that a data point was selected */
@@ -100,7 +100,7 @@ Usually, data points contain selections and values. The interface extends the `S
 2. Extend the base behavior class.
 
     > [!NOTE]
-    > `BaseBehavior` was introduced in the [5.6.x version of interactivity utils](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). If you use an older version, create a behavior class from the sample below.
+    > `BaseBehavior` was introduced in the [5.6.x version of interactivity utils](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). If you use an older version, create a behavior class from the following sample.
 
 3. Define the interface for the behavior class options.
 
@@ -240,7 +240,7 @@ Usually, data points contain selections and values. The interface extends the `S
       }
     ```
 
-8. The `renderSelection` method is responsible for updating the visual state of elements in the chart. The following is a sample implementation of `renderSelection`.
+8. The `renderSelection` method is responsible for updating the visual state of elements in the chart. Aa sample implementation of `renderSelection` follows.
 
     ```typescript
     public renderSelection(hasSelection: boolean): void {
@@ -265,7 +265,7 @@ Usually, data points contain selections and values. The interface extends the `S
     });
     ```
 
-    * `selectionMerge` is the *d3* selection object, which represents all the visuals's selectable elements.
+    * `selectionMerge` is the *d3* selection object, which represents all the visual's selectable elements.
     * `select(this.target)` is the *d3* selection object, which represents the visual's main DOM elements.
     * `this.categories` are data points with elements, where the interface is `VisualDataPoint` or `categories: VisualDataPoint[];`.
     * `this.behavior` is a new instance of `visual behavior` created in the constructor of the visual, as shown:
