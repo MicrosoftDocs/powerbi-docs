@@ -25,40 +25,37 @@ Visuals are found on dashboards, in reports and can be created instantly using P
 
 ## What can I do with visuals?
 
-Visuals are created by report and dashboard *designers* and shared with colleagues. The designer assigns different permissions to their colleagues, depending on how each colleague will use the report or dashboard. For example, a *developer* permissions will differ from a *business user* permissions.
+Visuals are created by report and dashboard *designers* and shared with colleagues. The designer assigns different permissions to their colleagues, depending on how each colleague will use the report or dashboard. For example, a *developer* can be assigned different permissions than a *business user*.
 
-The most common tasks for a *business user* are listed in the table below, with links to step-by-step instructions. *Business users* have many options for interacting with visuals to uncover insights and make data-driven business decisions.  
+The following table lists the most common tasks for a *business user* with links to step-by-step instructions. *Business users* have many options for interacting with visuals to uncover insights and make data-driven business decisions.  
 
-The administrator or the *designer* can disable your ability to see or use these features. And some of these features only work on specific visual types.  If you have any questions, contact your administrator or the owner of the report or dashboard. To find the owner, select the dashboard or report dropdown. 
+The administrator or the *designer* can disable your ability to see or use these features. And some of these features only work on specific visual types.  If you have any questions, contact your administrator or the owner of the report or dashboard. To find the owner, select the dashboard or report dropdown.
 
 ![Title dropdown showing owner](media/end-user-visualizations/power-bi-designer.png)
 
-
 > [!IMPORTANT]
 > But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language, and Q&A answers the question in the form of a visual. Q&A is a way business users can create their own visuals instantly. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for business users](end-user-q-and-a.md).
-
-
 
 |Task  |On a dashboard  |In a report  | In Q&A
 |---------|---------|---------|--------|
 |[Add comments to a visual or start a conversation with colleagues about it](end-user-comment.md).     |  Yes       |   Yes      |  No  |
 |[Open and explore the report where the visual was created](end-user-tiles.md).     |    Yes     |   n/a      |  No |
-|[View all the the filters and slicers that are affecting the visual](end-user-report-filter.md).     |    If you open in focus mode.     |   Yes      | No |
+|[View all the filters and slicers affecting the visual](end-user-report-filter.md).     |    Yes, if you open in focus mode.     |   Yes      | No |
 |[Open and explore a visual in Q&A (if the *designer* used Q&A to create the visual)](end-user-q-and-a.md).     |   Yes      |   n/a      |  n/a  |
 |[Explore and create a visual in Q&A (visuals created with Q&A can't be saved)](end-user-q-and-a.md).     |   Yes      |   If designer has added Q&A to the report.      |  Yes  |
-|[Ask Power BI to look for interesting facts or trends](end-user-insights.md) In the visual's data for you.  These automatically generated visuals are called *insights*.     |    Yes, for tiles.    |  No       | No   |
-|[View just one visual at a time using *focus* mode](end-user-focus.md).     | Yes, for tiles.        |   Yes, for visuals.      | n/a  |
-|[Look up the last time the visual was refreshed](end-user-fresh.md).     |  Yes       |    Yes     | n/a  |
-|[View just one visual at a time, without borders or nav panes, using *full screen* mode](end-user-focus.md).     |   Yes      |  Yes       | By default  |
-|[Print](end-user-print.md).     |  Yes       |   Yes      | No  |
+|[Use Power BI to find interesting facts or trends&mdash;automatically generated visuals are called insights](end-user-insights.md).     |    Yes, for tiles.    |  No       | No   |
+|[View one visual at a time using *focus* mode](end-user-focus.md).     | Yes, for tiles.        |   Yes, for visuals.      | n/a  |
+|[Check the visual's timestamp and see the latest refresh time](end-user-fresh.md).     |  Yes       |    Yes     | n/a  |
+|[View one visual at a time, without borders or nav panes, using *full screen* mode](end-user-focus.md).     |   Yes      |  Yes       | By default  |
+|[How to Print from the Power BI service](end-user-print.md).     |  Yes       |   Yes      | No  |
 |[Dig into the visual by adding and modifying visual filters.](end-user-report-filter.md)     |    No     |   Yes      | No  |
 |Hover over a visual to reveal additional details and tooltips.     |    Yes     |   Yes      | Yes  |
-|[Cross-filter and cross-highlight other visuals on the page.](end-user-interactions.md)    |   No      |   Yes      | n/a  |
+|[How visuals cross-filter and cross-highlight each other in a Power BI report.](end-user-interactions.md)    |   No      |   Yes      | n/a  |
 |[Show the data used to create the visual](end-user-show-data.md).     |  No       |   Yes      | No  |
-| [Change the way the visual is sorted](end-user-change-sort.md). | No  | Yes  | Can change sort by rewording the question.  |
+| [Change the way the visual is sorted](end-user-change-sort.md). | No  | Yes  | You can change sort by rewording the question.  |
 | [Add a spotlight to a visual](end-user-spotlight.md). | No  | Yes  |  No |
-| [Export to Excel.](/power-bi/visuals/power-bi-visualization-export-data) | Yes | Yes | No|
-| [Create an alert](end-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | Yes  | No  | No |
+| [Export data to Excel from a Power BI dashboard tile or a report visual.](/power-bi/visuals/power-bi-visualization-export-data) | Yes | Yes | No|
+| [Create an alert to notify you when a value crosses a limit you've set](end-user-alerts.md).  | Yes  | No  | No |
 | [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | No      | Yes  | n/a |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | No  | Yes   | No |
 
