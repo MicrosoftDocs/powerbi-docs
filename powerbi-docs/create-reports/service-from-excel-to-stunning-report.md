@@ -80,7 +80,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
 The report opens in Editing view and displays the blank report canvas. On the right are the **Visualizations**, **Filters**, and **Fields** panes. Your Excel workbook table data appears in the **Fields** pane. At the top is the name of the table, **financials**. Under that, Power BI lists the column headings as individual fields.
 
-Notice the Sigma symbols in the Fields list. Power BI has detected the numeric fields. Power BI detect geographic fields and displays a globe symbol.
+Notice the Sigma symbols in the Fields list? Power BI has detected that those fields are numeric. Power BI also detects geographic fields and displays a globe symbol.
 
 ![Screenshot of the Fields pane, highlighting Excel entries.](media/service-from-excel-to-stunning-report/power-bi-fields-list-financial.png)
 
