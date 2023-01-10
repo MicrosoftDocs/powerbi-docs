@@ -1,6 +1,6 @@
 ---
 title: Power BI visuals interactivity utils
-description: The article describes how to add selections into Power BI visuals by using interactivity utils.
+description: Learn how the interactivity utils can help simplify the implementation of cross-selection and cross-filtering in your Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: rkarlin
@@ -8,7 +8,7 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/24/2020
+ms.date: 01/10/2023
 ---
 
 # Power BI visuals interactivity utils
@@ -16,7 +16,7 @@ ms.date: 02/24/2020
 Interactivity utils (`InteractivityUtils`) is a set of functions and classes that can be used to simplify the implementation of cross-selection and cross-filtering.
 
 > [!NOTE]
-> The new updates of interactivity utils support only the latest version of tools (3.x.x and above).
+> The latest updates of interactivity utils support only the latest version of tools (3.x.x and above).
 
 ## Installation
 
@@ -26,7 +26,7 @@ Interactivity utils (`InteractivityUtils`) is a set of functions and classes tha
     npm install powerbi-visuals-utils-interactivityutils --save
     ```
 
-2. If you're using version 3.0 or later or the tool, install `powerbi-models` to resolve dependencies.
+2. If you're using version 3.0 or later of the tool, install `powerbi-models` to resolve dependencies.
 
     ```bash
     npm install powerbi-models --save
@@ -74,7 +74,7 @@ Usually, data points contain selections and values. The interface extends the `S
 
 ## Defining an interface for data points
 
-1. Create an instance of interactivity utils and save the object as a property of the visual
+1. Create an instance of interactivity utils and save the object as a property of the visual.
 
     ```typescript
     export class Visual implements IVisual {
@@ -126,9 +126,9 @@ Usually, data points contain selections and values. The interface extends the `S
 
     **Defining a class for `visual behavior`**
 
-    The class is responsible to handle `click` `contextmenu` mouse events.
+    The class is responsible for `click` and `contextmenu` mouse events.
 
-    When a user clicks on data elements, the visual calls the selection handler to select data points. if the user clicks on the background element of the visual, it calls the clear selection handler.
+    When a user clicks data elements, the visual calls the selection handler to select data points. if the user clicks the background element of the visual, it calls the clear selection handler.
 
     The class has the following correspond methods:
     * `bindClick`
@@ -181,7 +181,7 @@ Usually, data points contain selections and values. The interface extends the `S
     }
     ```
 
-5. To handle click on elements, call the *d3* selection object `on` method. This also applies for `elementsSelection` and `clearCatcherSelection`.
+5. To handle a click on elements, call the *d3* selection object `on` method. This also applies for `elementsSelection` and `clearCatcherSelection`.
 
     ```typescript
     protected bindClick() {
@@ -221,7 +221,7 @@ Usually, data points contain selections and values. The interface extends the `S
     }
     ```
 
-7. To assign functions to handlers, the interactivity utils calls the `bindEvents` method. Add the following calls to  the `bindEvents` method:
+7. To assign functions to handlers, the interactivity utils calls the `bindEvents` method. Add the following calls to the `bindEvents` method:
     * `bindClick`
     * `bindClearCatcher`
     * `bindContextMenu`
@@ -240,7 +240,7 @@ Usually, data points contain selections and values. The interface extends the `S
       }
     ```
 
-8. The `renderSelection` method is responsible for updating the visual state of elements in the chart. Here's a sample implementation of `renderSelection`.
+8. The `renderSelection` method is responsible for updating the visual state of elements in the chart. The following is a sample implementation of `renderSelection`.
 
     ```typescript
     public renderSelection(hasSelection: boolean): void {
@@ -268,7 +268,7 @@ Usually, data points contain selections and values. The interface extends the `S
     * `selectionMerge` is the *d3* selection object, which represents all the visuals's selectable elements.
     * `select(this.target)` is the *d3* selection object, which represents the visual's main DOM elements.
     * `this.categories` are data points with elements, where the interface is `VisualDataPoint` or `categories: VisualDataPoint[];`.
-    * `this.behavior` is a new instance of `visual behavior` created in the constructor of the visual, as shown below.
+    * `this.behavior` is a new instance of `visual behavior` created in the constructor of the visual, as shown:
 
       ```typescript
       export class Visual implements IVisual {
@@ -280,10 +280,11 @@ Usually, data points contain selections and values. The interface extends the `S
         // ...
       }
       ```
+
 ## Next steps
 
-* [Read how to handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)
+* [Visuals with selection](bookmarks-support.md#visuals-with-selection)
 
-* [Read how to add context menu for visuals data points](context-menu.md)
+* [Add a context menu to your Power BI visual](context-menu.md)
 
-* [Read how to use selection manager to add selections into Power BI Visuals](selection-api.md)
+* [Add interactivity into visual by Power BI visuals selection](selection-api.md)
