@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 01/10/2023
 ---
 # Limitations of Power BI Q&A
 
@@ -27,7 +27,7 @@ In each of these configurations, row-level security is also supported.
 
 **DirectQuery support for Q&A** (preview)
 
-Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one small change to the behavior of Q&A when it's in DirectQuery mode: After you enter your question, you select the **Submit** button. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
+Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one change to the behavior of Q&A when it's in DirectQuery mode: After you enter your question, select **Submit**. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
 
 ### Data sources not supported
 
@@ -39,11 +39,11 @@ Power BI Q&A doesn't support the following configurations:
 
 ## Tooling limitations
 
-The new tooling dialog allows users to customize and improve the natural language in Q&A. To learn more about tooling, read the [intro to Q&A tooling](q-and-a-tooling-intro.md).
+The new tooling dialog allows users to customize and improve the natural language in Q&A. To learn more about tooling, see [Intro to Q&A tooling](q-and-a-tooling-intro.md).
 
 ## Review question limitations
 
-The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you might notice that some questions aren't recorded. They're intentionally not recorded. The natural language engine performs a series of data cleansing steps to ensure that every key stroke from a user isn't recorded or shown.
+The review questions only store questions asked about your data model for up to 28 days. When using the new review questions capability, you might notice that some questions aren't recorded. They're intentionally not recorded. The natural language engine performs a series of data cleansing steps to ensure that every key stroke from a user isn't recorded or shown.
 
 Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
 
@@ -77,4 +77,4 @@ Currently, redefining a recognized term or defining other types of conditions or
 
 ## Next steps
 
-There are several best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
+There are several best practices for improving the natural language engine. For more information, see [Best practices to optimize Q&A in Power BI](q-and-a-best-practices.md).
