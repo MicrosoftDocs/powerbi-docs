@@ -15,7 +15,13 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With the numeric range slicer, you can apply all sorts of filters to any numeric column in your data model. There are three options for filtering your numeric data: between numbers, less than or equal to a number, or greater than or equal to a number. This simple technique is a powerful way to filter your data.
+With the numeric range slicer, you can apply all sorts of filters to any numeric column in your data model. There are three options for filtering your numeric data: 
+
+- Between numbers 
+- Less than or equal to a number
+- Greater than or equal to a number. 
+
+This simple technique is a powerful way to filter your data.
 
 ![Screenshot of a Visual, highlighting a numeric range slicer.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
