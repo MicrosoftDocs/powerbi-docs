@@ -108,7 +108,7 @@ Notice the Sigma symbols in the Fields list? Power BI has detected that those fi
 
 ### Create a map
 
-Your manager wants to know which countries and regions are the most profitable. Impress your manager with a map visualization.
+Your manager wants to know which countries/regions are the most profitable. Impress your manager with a map visualization.
 
 1. Select a blank area on your report canvas.
 
