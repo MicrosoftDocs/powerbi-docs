@@ -40,7 +40,7 @@ ms.author: maggies
   
 3.  Repeat step 2 for additional query parameters.  
   
-## See Also  
+## Next Steps
  [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md)   
 
   
