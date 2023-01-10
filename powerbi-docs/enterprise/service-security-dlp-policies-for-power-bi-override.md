@@ -36,3 +36,4 @@ The action or combination of actions you see may vary depending on the policy co
 * [Get started with Data loss prevention policies for Power BI](/microsoft-365/compliance/dlp-powerbi-get-started)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+* [Power BI implementation planning: Data loss prevention for Power BI](/power-bi/guidance/powerbi-implementation-planning-data-loss-prevention)
