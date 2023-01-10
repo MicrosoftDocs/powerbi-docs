@@ -1,6 +1,6 @@
 ---
 title: Single Sign-On in the Power BI mobile Windows app
-description: Set up Single Sign-On (SSO) in the Power BI mobile Windows app so that you access all your applications and resources by signing in only once.
+description: Set up Single Sign-On (SSO) in the Power BI mobile Windows app so that you can access all your applications and resources by signing in only once.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -19,7 +19,7 @@ Because the Power BI Windows app is integrated into Azure Active Directory, you 
 SSO is enabled only for Windows devices managed by Azure Active Directory.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+>Power BI mobile app support for **phones using Windows 10 Mobile** was discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Sign in with SSO
 
