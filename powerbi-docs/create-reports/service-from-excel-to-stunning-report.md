@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams"
+title: "Tutorial: From Excel workbook to a Power BI report in Microsoft Teams"
 description: This article shows how you can quickly create a stunning report in the Power BI service from an Excel workbook, and share it in Teams.
 author: maggiesMSFT
 ms.author: maggies
