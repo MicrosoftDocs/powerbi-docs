@@ -96,7 +96,7 @@ These formatting options include:
 
 In Power BI Desktop, you can use conditional formatting to change the button text based on the selected value of a field. To do so, create a measure that outputs the desired string based on the DAX function `SELECTEDVALUE`.
 
-The following example measure outputs "See product details" if a single Product value isn't selected. If a single product value is selected, the measure outputs "See details for [the selected Product]":
+The following example measure outputs "See product details" if a single Product value is *not* selected. If a single product value is selected, the measure outputs "See details for [the selected Product]":
 
 ```dax
 String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0, "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
