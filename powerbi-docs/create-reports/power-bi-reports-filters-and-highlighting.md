@@ -83,7 +83,7 @@ Learn more about Reading view: [Take a tour of the report Filters pane](../consu
 
 When you open a report in Power BI Desktop, you see that **Filters** is just one of several editing panes available. You see the same panes if you open a report in Editing view in the Power BI service.
 
-![Screenshot of a dashboard, highlighting a filters pane in Editing view](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
+![Screenshot of a dashboard, highlighting a filters pane in Editing view.](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
 This page of the report has four page-level filters. By selecting the column chart, we see it also has three visual-level filters.
 
