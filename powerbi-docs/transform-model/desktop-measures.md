@@ -1,13 +1,13 @@
 ---
 title: Measures in Power BI Desktop
-description: Learn how to create and use measures in Power BI Desktop, including quick measures and DAX syntax, to help you create insights for your data.
+description: Learn how to create and use measures, including quick measures and DAX syntax, in Power BI Desktop to help you create insights for your data.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/08/2021
+ms.date: 01/10/2023
 LocalizationGroup: Model your data
 ---
 # Create measures for data analysis in Power BI Desktop
