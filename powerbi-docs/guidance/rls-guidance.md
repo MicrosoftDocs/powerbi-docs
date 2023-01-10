@@ -1,8 +1,8 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

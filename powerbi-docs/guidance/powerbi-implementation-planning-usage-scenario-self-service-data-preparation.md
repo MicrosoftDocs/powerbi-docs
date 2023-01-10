@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Self-service data preparation"
 description: "Learn how Power BI self-service data preparation is about using dataflows to centralize data cleansing and transformation work."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
