@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 01/03/2023
+ms.date: 01/10/2023
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a Power BI report in Microsoft Teams
