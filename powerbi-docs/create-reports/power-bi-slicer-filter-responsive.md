@@ -79,4 +79,4 @@ You can follow the same steps to make a time or range slicer responsive. After y
 ## Next steps
 
 - [Slicers in the Power BI service](../visuals/power-bi-visualization-slicers.md)
-- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- More questions? [Ask the Power BI Community](https://community.powerbi.com/)
