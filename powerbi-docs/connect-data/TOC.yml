@@ -161,7 +161,7 @@
         href: desktop-assume-referential-integrity.md
       - name: "Access SAP BW data with the SAP BW Connector"
         href: desktop-sap-bw-connector.md
-      - name: "Use OneDrive for Business links"
+      - name: "Use OneDrive for work or school links"
         href: desktop-use-onedrive-business-links.md
       - name: "Third-party service: Use the Google Analytics connector"
         href: service-google-analytics-connector.md

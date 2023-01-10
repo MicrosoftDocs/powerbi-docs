@@ -1,7 +1,7 @@
 ---
 title: Many-to-many relationship guidance
 description: Guidance for developing many-to-many model relationships.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi

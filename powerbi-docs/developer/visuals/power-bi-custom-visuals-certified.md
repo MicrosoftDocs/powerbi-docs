@@ -58,10 +58,10 @@ The repository must include the following files:
 * **capabilities.json** - If you're submitting a newer version of an existing Power BI visual with changes to the properties in this file, verify that they don't break reports for existing users.
 * **pbiviz.json**
 * **package.json**. The visual must have the following package installed:
-  * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
-  * ["typescript"](https://www.npmjs.com/package/typescript) - Version 3.0.0 or higher
-  * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib) - Version 6.2.0 or higher
-  * The file must contain a command for running linter -  `"lint": "tslint -c tslint.json -p tsconfig.json"`
+  * ["typescript"](https://www.npmjs.com/package/typescript)
+  * ["eslint"](https://www.npmjs.com/package/eslint)
+  * ["eslint-plugin-powerbi-visuals"](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals)
+  * The file must contain a command for running linter -  `"eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx"`
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -72,7 +72,10 @@ Make sure that the following commands don't return any errors.
 * `npm install`
 * `pbiviz package`
 * `npm audit` - Must not return any warnings with high or moderate level.
-* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with [the required configuration](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). This command must not return any lint errors.
+* `ESlint` with the [required configuration](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals). This command must not return any lint errors.
+
+  >[!NOTE]
+  > We're in the process of migrating from TSlint to ESLint. Visuals using TSlint will be accepted for certification until March 2023. After that, ESlint will be required.
 
 ### Compiling requirements
 
