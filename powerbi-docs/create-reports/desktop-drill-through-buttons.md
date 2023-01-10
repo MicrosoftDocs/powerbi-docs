@@ -190,7 +190,7 @@ For the other common case where you want to support multiple destinations, follo
 
    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-create-table.png" alt-text="Screenshot showing the Create Table window.":::
 
-1. Power BI uses an exact string match to set the drillthrough destination. You must make sure that the entered values exactly align with your drillthrough page names.
+1. Because Power BI uses an exact string match to set the drillthrough destination, make sure that the entered values align exactly with your drillthrough page names.
 
 1. After you've created the table, add it to the page as a single-select slicer.
 
