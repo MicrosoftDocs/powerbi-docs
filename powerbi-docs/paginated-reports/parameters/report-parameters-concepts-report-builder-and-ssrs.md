@@ -39,7 +39,9 @@ ms.author: maggies
   
 ## Next Steps  
  [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
- [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../paginated-reports/paginated-reports-quickstart-aw.md)   
+ 
+ [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../paginated-reports/paginated-reports-quickstart-aw.md) 
+ 
  [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../reporting-services/tutorial-add-a-parameter-to-your-report-report-builder.md)  
   
   
