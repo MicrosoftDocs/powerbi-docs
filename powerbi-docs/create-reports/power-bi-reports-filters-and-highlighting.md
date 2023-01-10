@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 12/28/2022
+ms.date: 01/10/2023
 LocalizationGroup: Reports
 ---
 # Filters and highlighting in Power BI reports
