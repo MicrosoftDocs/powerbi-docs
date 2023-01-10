@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/01/2023
+ms.date: 01/10/2023
 ---
 
 # Power BI usage scenarios: Embed for your customers
