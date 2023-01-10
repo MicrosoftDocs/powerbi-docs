@@ -16,7 +16,7 @@ This article describes and provides remedies for several circumstances where Pow
 
 ## Issues with opening encrypted PBIX files
 
-You can't open encrypted PBIX files by using a Power BI Desktop version that doesn't support information protection. If you need to continue using Power BI Desktop, update it to a version that supports information protection.
+You can't open encrypted PBIX files by using a Power BI Desktop version that doesn't support information protection. If you need to continue using Power BI Desktop, update to a version that supports information protection.
 
 **Solution:** [Select this link to directly download the latest Power BI Desktop installation executable](https://www.microsoft.com/download/confirmation.aspx?id=58494). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file. 
 
@@ -34,11 +34,11 @@ Users who installed and are running previous versions of the Power BI on-premise
 
 - Run Power BI Desktop with administrator privileges.
 
-  You can instead launch Power BI Desktop as an administrator, which also allows Power BI Desktop to successfully open. It's still recommended to install the latest version of thePower BI on-premises data gateway.
+  You can instead launch Power BI Desktop as an administrator, which also allows Power BI Desktop to successfully open. It's still recommended to install the latest version of the Power BI on-premises data gateway.
 
   Power BI Desktop is a multiprocess architecture, and several of these processes communicate by using Windows named pipes. Other processes might interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls block the pipes or redirect traffic to a specific port.
 
-  Opening Power BI Desktop with administrator privilege might resolve that issue. If you can't open Power BI Desktop with administrator privilege, ask your administrator which security rules are preventing named pipes from properly communicating. Then add Power BI Desktop and its subprocesses to their allow lists.
+  Opening Power BI Desktop with administrator privilege might resolve that issue. If you can't open Power BI Desktop with administrator privilege, ask your administrator which security rules are preventing named pipes from properly communicating. Then add Power BI Desktop and its subprocesses to their allowlists.
 
 ## Issues connecting to SQL Server
 
@@ -52,7 +52,7 @@ When you attempt to connect to a SQL Server database, you might see an error mes
 
 ## "Unable to sign in" issues
 
-You might see a message similar to this:
+You might see a message similar to the following text:
 
 `Unable to sign in. Sorry, we encountered an error while trying to sign you in. Details: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.`
 
@@ -60,7 +60,7 @@ You might see a message similar to this:
 
 ## Issues starting the Microsoft Store version of Power BI Desktop
 
-You might see a message similar to this:
+You might see a message similar to the following text:
 
 `Hmmmm... can't reach this page. ms-pbi.pbi.microsoft.com's server IP address could not be found. Application event log message - The description for Event ID 1 from source`
 
@@ -77,12 +77,12 @@ The message might include further information, such as the following:
 
 Rarely, Power BI Desktop might fail to start and displays a gray window or an error message that mentions **WebView2**.
 
-![Screenshot of an error message mentioning WebView2.](media/desktop-error-launching-desktop/webview2-error.png)
+:::image type="content" source="media/desktop-error-launching-desktop/webview2-error.png" alt-text="Screenshot of an error message mentioning WebView2.":::
 
-Most cases are caused by a program on your machine, usually antivirus software. To verify whether this is the case, do the following steps:
+Most cases are caused by a program on your machine, usually antivirus software. To verify whether a program is causing the issue, do the following steps:
 
 1. Close Power BI Desktop.
-1. Open Windows **Settings** > **About** > **Advanced System Settings** and configure a new environment variable.
+1. Open Windows **Settings** > **About** > **Advanced System Settings** and select **Environment Variables**.
 
    ![Screenshot of the System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/environment-variables.png)
 
@@ -93,7 +93,7 @@ Most cases are caused by a program on your machine, usually antivirus software. 
 1. Start Power BI Desktop and verify that it starts successfully this time.
 1. Delete the environment variable you set.
 
-**Solution:** If the preceding steps fixed the issue, disable any software that might be interfering, or provide an exemption for the WebView2 process.
+**Solution:** If the preceding steps fixed the issue, disable any software that might be interfering with Power BI Desktop startup, or provide an exemption for the WebView2 process.
 
 If you still have issues, submit a support incident to [Power BI support](https://support.powerbi.com), and provide the following information:
 
@@ -115,7 +115,7 @@ If you still have issues, submit a support incident to [Power BI support](https:
   |%localappdata%\Temp\ | msedge_installer.log|
   |%localappdata%\Temp\ | MicrosoftEdgeUpdate.log|
 
-- **Event Viewer logs.** Start Event Viewer from the **Start** menu. In Event Viewer, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right-click on **Operational** in the left pane and choose **Save All Events As**. Store the file somewhere you can retrieve it.
+- **Event Viewer logs.** Start Event Viewer from the **Start** menu. In Event Viewer, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right-click **Operational** in the left pane and choose **Save All Events As**. Store the file somewhere you can retrieve it.
 
   :::image type="content" source="media/desktop-error-launching-desktop/eventviewer-save-all-events-as.png" alt-text="Screenshot of Event viewer showing the context menu with Save All Events As highlighted.":::
 
@@ -129,7 +129,7 @@ If you still have issues, submit a support incident to [Power BI support](https:
 
   1. Stop capturing by selecting the open-square **Capture** button.
 
-     :::image type="content" source="media/desktop-error-launching-desktop/procmon-stop.png" alt-text="Screenshot of Process Monitor with Capture button highlighted.":::
+     :::image type="content" source="media/desktop-error-launching-desktop/procmon-stop.png" alt-text="Screenshot of Process Monitor with Capture button highlighted to stop capturing.":::
 
   1. Clear all traces by selecting the **Clear** garbage can button.
 
@@ -137,13 +137,13 @@ If you still have issues, submit a support incident to [Power BI support](https:
 
   1. Start capturing by selecting the **Capture** button.
 
-     :::image type="content" source="media/desktop-error-launching-desktop/procmon-start.png" alt-text="Screenshot of Process Monitor with Capture button highlighted.":::
+     :::image type="content" source="media/desktop-error-launching-desktop/procmon-start.png" alt-text="Screenshot of Process Monitor with Capture button highlighted to start capturing.":::
 
   1. Launch Power BI Desktop and wait for the error to appear.
 
   1. Stop the capture by selecting the **Capture** button.
 
-     :::image type="content" source="media/desktop-error-launching-desktop/procmon-stop.png" alt-text="Screenshot of Process Monitor with Capture button highlighted.":::
+     :::image type="content" source="media/desktop-error-launching-desktop/procmon-stop.png" alt-text="Screenshot of Process Monitor with Capture button highlighted to stop capturing again.":::
 
   1. Save the traces by choosing **File** > **Save**. In the **Save to File** dialog box, select **All events** and **Native Process Monitor Format (PML)**, provide a path for the file, and then select **OK**.
 
@@ -181,13 +181,13 @@ If you still have issues, submit a support incident to [Power BI support](https:
 
   1. When you're done, choose **Save** to stop the recording and save the results to your computer.
 
-    :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-save.png" alt-text="Screenshot of Windows Performance Recorder with Save highlighted.":::
+     :::image type="content" source="media/desktop-error-launching-desktop/performance-recorder-save.png" alt-text="Screenshot of Windows Performance Recorder with Save highlighted.":::
 
-  1. Provide all information collected to the support team on request.
+  1. Provide all information you collected to the support team on request.
 
 ## Data connection time-outs
 
-When you try to create a new connection or connect to an existing Power BI dataset, Power BI Desktop might time out without establishing the connection. You might see the connection spinner continue to turn, but the connection never completes.
+When you try to create a new connection or connect to an existing Power BI dataset, Power BI Desktop might time out without establishing the connection. The connection spinner might continue to turn, but the connection never completes.
 
 This situation can happen if your machine has a security product such as Digital Guardian or other security products installed. In some cases, the installed security product can interfere with outgoing network connection request calls, causing the connection attempt to time out or fail.
 
@@ -197,7 +197,7 @@ This situation can happen if your machine has a security product such as Digital
 
 The Power BI documentation team strives to cover as many Power BI Desktop issues as possible. The team regularly looks at issues that might affect many customers, and includes them in articles.
 
-If your issue opening Power BI Desktop isn't associated with the on-premises data gateway, or if the resolutions in this article don't work, you can submit a support incident to [Power BI support](https://support.powerbi.com) to help identify and solve your issue.
+If your issue isn't related to an on-premises data gateway, or if the resolutions in this article don't work, you can submit a support incident to [Power BI support](https://support.powerbi.com).
 
 Whenever you experience issues with Power BI Desktop, it's helpful to turn on tracing and gather log files. Log files can help isolate and identify the issue. To turn on tracing in Power BI Desktop, choose **File** > **Options and settings** > **Options**, select **Diagnostics**, and then select **Enable tracing**. Power BI Desktop must be running to set this option, but it's helpful for any future issues associated with opening Power BI Desktop.
 
