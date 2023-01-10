@@ -87,7 +87,7 @@ Then the first column is not rendered during runtime because the entire column i
 For reports that were authored before SQL Server Reporting Services 2016, a default parameter layout grid of 2 columns and N rows will be used during runtime. To change the default layout, open the report in Microsoft Report Builder and save the report. After saving the report, the customized parameter layout information will be saved to the .rdl file.
 
 
-## See also
+## Next Steps
  [Report Parameters &#40;Report Builder and Report Designer&#41;](../../reporting-services/report-design/report-parameters-report-builder-and-report-designer.md)
 
 
