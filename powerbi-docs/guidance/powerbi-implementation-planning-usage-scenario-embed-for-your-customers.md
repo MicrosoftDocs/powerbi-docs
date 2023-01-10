@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/31/2022
+ms.date: 10/01/2023
 ---
 
 # Power BI usage scenarios: Embed for your customers
@@ -42,6 +42,12 @@ The above diagram depicts the following user actions, tools, and features:
 ## Key points
 
 The following are some key points to emphasize about programmatically embed Power BI content in a custom application for your customers.
+
+### Use case
+
+Often, embedding _For your customers_ is done by Independent Software Vendors (ISVs). ISVs recognize a need to embed analytics in their apps. It allows users to have direct access to in-context insights, helping them make decisions based on facts instead of opinions. Instead of developing visualizations, it's usually faster and less expensive to embed Power BI content.
+
+ISVs can develop a _multitenancy application_, where each of their customers is a tenant. A multitenancy application that embeds Power BI analytics will use the _For your customers_ scenario because the application users include external users. Multitenancy applications are described in more detail [later in this article](#multitenancy-applications).
 
 ### Embeddable content
 
