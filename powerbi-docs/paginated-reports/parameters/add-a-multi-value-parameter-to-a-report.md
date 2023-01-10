@@ -18,8 +18,7 @@ ms.author: maggies
   You can add a parameter to a paginated report that allows the user to select more than one value for the parameter.  
   
  You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](../../powerbi-docs/paginated-reports/parameters/pass-a-report-parameter-within-a-url.md).  
-  
- For information on how to pass multiple parameter values to a stored procedure, see [Working With Multi-Select Parameters for SSRS Reports](https://go.microsoft.com/fwlink/?LinkId=321529) on mssqltips.com.  
+   
   
 ## To add a multi-value parameter  
   
@@ -49,7 +48,7 @@ ms.author: maggies
   
      An available values list limits the choices a user can make to only valid values for the parameter. For multiple values, the top of list begins with a **Select All** feature so the user can select or clear all values with a single click. If you choose to get the available values for the report parameter from a dataset query, be sure to select a dataset that does not contain the query variable that is associated with the same report parameter.  
   
-     For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter.md).  
+     For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md).  
 
 ## Next Steps  
  [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../paginated-reports/parameters/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
