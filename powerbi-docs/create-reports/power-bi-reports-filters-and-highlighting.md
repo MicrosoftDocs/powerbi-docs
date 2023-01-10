@@ -18,7 +18,7 @@ LocalizationGroup: Reports
 
 There are many ways to filter and highlight reports in Power BI. Putting all of that information in one article would be a lot, so we've broken it into these sections:
 
-* Introduction to filters and highlighting, as seen in this article.
+* Introduction to filters and highlighting, the article you're reading now.
 * How [filters and highlighting work in Reading view](../consumer/end-user-interactions.md) in the Power BI service. What you can do is more limited than Editing view, but you still have a wide range of filtering and highlighting options.
 * How to [create filters in the Filters pane](power-bi-report-add-filter.md) in Power BI Desktop and the Power BI service. When you have editing permissions for a report, you can create, modify, and delete filters in reports.
 * After you add filters, you can [format the filters](power-bi-report-filter.md) to act the way you want and to look like the rest of the report.
