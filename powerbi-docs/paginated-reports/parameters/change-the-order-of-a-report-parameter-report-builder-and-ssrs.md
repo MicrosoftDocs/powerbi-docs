@@ -27,13 +27,13 @@ You can change the order of report parameters by doing either of the following:
   
      ![Change the order of the parameters in the Report Data pane](../report-design/media/ssrs-changeorderofparameters-reportdata.png "Change the order of the parameters in the Report Data pane")  
   
--   In the parameters pane, drag the parameter to a new column or row in the pane. When you change the location of the parameter in the pane, the parameter order changes in the **Report Data** pane. For more information about moving parameters in the pane, see [Customize the Parameters Pane in a Report &#40;Report Builder&#41;](../../reporting-services/report-design/customize-the-parameters-pane-in-a-report-report-builder.md).  
+-   In the parameters pane, drag the parameter to a new column or row in the pane. When you change the location of the parameter in the pane, the parameter order changes in the **Report Data** pane. For more information about moving parameters in the pane, see [Customize the Parameters Pane in a Report &#40;Report Builder&#41;](../../paginated-reports/parameters/customize-the-parameters-pane-in-a-report-report-builder.md).  
   
 ## Next Steps  
- [Report Parameters &#40;Report Builder and Report Designer&#41;](../../reporting-services/report-design/report-parameters-report-builder-and-report-designer.md)   
- [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
- [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../reporting-services/tutorial-add-a-parameter-to-your-report-report-builder.md)   
+ [Report Parameters &#40;Report Builder and Report Designer&#41;](../../paginated-reports/report-design/report-parameters-report-builder-and-report-designer.md)   
+ [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
+ [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../paginated-reports/tutorial-add-a-parameter-to-your-report-report-builder.md)   
  [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Parameters Collection References &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/built-in-collections-parameters-collection-references-report-builder.md)  
+ [Parameters Collection References &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/built-in-collections-parameters-collection-references-report-builder.md)  
   
   
