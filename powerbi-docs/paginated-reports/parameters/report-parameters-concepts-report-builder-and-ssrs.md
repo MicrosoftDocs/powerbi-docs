@@ -37,9 +37,9 @@ ms.author: maggies
   
  If you plan to create report snapshots, histories, or subscriptions to a published report, you must understand how report parameters affect the design requirements for the report.  
   
-## See Also  
- [Reporting Services Concepts (SSRS)](../reporting-services-concepts-ssrs.md)
- [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md)   
+## Next Steps  
+ [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+ [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../paginated-reports/paginated-reports-quickstart-aw.md)   
  [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../reporting-services/tutorial-add-a-parameter-to-your-report-report-builder.md)  
   
   
