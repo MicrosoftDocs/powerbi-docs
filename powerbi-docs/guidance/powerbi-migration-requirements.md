@@ -1,8 +1,8 @@
 ---
 title: Gather requirements to migrate to Power BI
 description: Guidance on gathering and prioritizing requirements when migrating to Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

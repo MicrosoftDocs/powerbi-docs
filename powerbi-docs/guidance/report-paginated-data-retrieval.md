@@ -1,13 +1,13 @@
 ---
 title: Data retrieval guidance for paginated reports
 description: Guidance for creating data sources and datasets for Power BI paginated reports.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: kfollis
+ms.author: maggies
+ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/23/2021
+ms.date: 12/15/2022
 ---
 
 # Data retrieval guidance for paginated reports
@@ -104,6 +104,14 @@ If you need to combine data from multiple data sources, you have two options:
 
 - **Combine report datasets**: If the data sources are [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can consider creating calculated fields that use the [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) or [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) Report Builder functions.
 - **Develop a Power BI Desktop model**: It's likely more efficient, however, that you develop a data model in Power BI Desktop. You can use Power Query to combine queries based on any [supported data source](../connect-data/power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
+
+## Network latency
+Network latency can impact report performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned to a specific region.
+
+> [!TIP]
+> To determine where your tenant is located, see [Where is my Power BI tenant located?](../admin/service-admin-where-is-my-tenant-located.md)
+
+When users from a tenant access the Power BI service, their requests always route to this region. As requests reach the Power BI service, the service may then send additional requests—for example, to the underlying data source, or a data gateway—which are also subject to network latency. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI capacity as close as possible. Preferably, they reside within the same region. If network latency is an issue, try locating gateways and data sources closer to your Power BI capacity by placing them inside cloud-hosted virtual machines.
 
 ## SQL Server complex data types
 

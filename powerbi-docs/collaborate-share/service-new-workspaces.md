@@ -45,7 +45,7 @@ Power BI doesn't create a Microsoft 365 group behind the scenes when you create 
 
     Power BI doesn't synchronize between Microsoft 365 group membership and permissions for users or groups with access to the workspace. You can synchronize them: Manage workspace access through the same Microsoft 365 group whose file storage you configure in this setting.
 
-- You can also **store Power BI content in OneDrive for Business**. With the Workspace OneDrive feature in workspaces, you can configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
+- You can also **store Power BI content in OneDrive for work or school**. With the Workspace OneDrive feature in workspaces, you can configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
  
     Read about [how to set the workspace OneDrive](service-create-the-new-workspaces.md#set-a-workspace-onedrive).  
 

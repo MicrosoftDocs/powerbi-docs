@@ -6,7 +6,7 @@ ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 11/21/2022
+ms.date: 12/13/2022
 ms.custom: template-how-to; subject-moving-resources
 ---
 
@@ -28,6 +28,8 @@ Your default data region is determined by the location selected during sign-up. 
 The migration process moves all tenant data to the new region. The GUID assigned to datasets, reports, dashboards, and other content don't change. However, there are some limitations you should be aware of and preparation steps you need to take.
 
 ### Awareness
+
+- The end-to-end migration process may take up to six months. We prioritize service reliability and deployment schedules can change, so we may need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
 
 - Migration requires about six hours of down time. During migration, users can't access Power BI and will see an error message similar to the one shown in the following screenshot. The actual down time depends on the volume of data to be migrated.
 

@@ -1,13 +1,13 @@
 ---
 title: Power BI adoption roadmap maturity levels
 description: A description of the maturity levels used in the Power BI adoption roadmap series of articles.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI adoption roadmap maturity levels
@@ -24,7 +24,7 @@ The three types of adoption shown in the above diagram include:
 | --- | --- |
 | ![Type 1.](media/common/icon-01-red-30x30.png) | **Organizational adoption:** Organizational adoption refers to the effectiveness of Power BI governance. It also refers to data management practices that support and enable business intelligence efforts. |
 | ![Type 2.](media/common/icon-02-red-30x30.png) | **User adoption:** User adoption is the extent to which consumers and creators continually increase their knowledge. It's concerned with whether they're actively using Power BI, and whether they're using it in the most effective way. |
-| ![Type 3.](media/common/icon-03-red-30x30.png) | **Solution adoption:** Solution adoption refers to the impact and business value achieved for individual requirements and Power BI items. |
+| ![Type 3.](media/common/icon-03-red-30x30.png) | **Solution adoption:** Solution adoption refers to the impact and business value achieved for individual requirements and Power BI solutions. |
 
 As the four arrows in the previous diagram indicate, the three types of adoption are all strongly inter-related:
 

@@ -6,8 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: how-to
-ms.date: 12/08/2022
+ms.date: 01/09/2023
 LocalizationGroup: Create reports
 ---
 # Bookmarks in the Power BI service
@@ -15,10 +14,12 @@ LocalizationGroup: Create reports
 [!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
 ## Introduction to bookmarks
-
 A bookmark captures the state of a report page. It includes the settings you've made to filters, slicers, and visuals on that page. After the report page is set the way you want, give it a friendly name. Now you can easily return to that state of the report page. Select a bookmark, and Power BI takes you back to that view.
 
 ## Types of bookmarks
+There are two types of bookmarks: *personal* and *report*. Report bookmarks are added to reports by report *designers*. When the designers share their reports with colleagues, the bookmarks travel with the report. Everyone who can open and view that report can also see and use the report bookmarks. Personal bookmarks can be created by anyone who can open a report, they don't even require edit permissions. However, if you create personal bookmarks and share your report, the personal bookmarks don't travel with the report. Personal bookmarks are for your use only. However, if you want to share your personal bookmarks, this article provides some tips and tricks to do so.
+
+![Show dropdowns for both types of bookmarks.](media/end-user-bookmarks/power-bi-both-bookmark.png)
 
 There are two types of bookmarks: *personal* and *report*. Report bookmarks are added to reports by report *designers*. When the designers share their reports with colleagues, the bookmarks travel with the report. Everyone who can open and view that report can also see and use the report bookmarks. Personal bookmarks can be created by anyone who can open a report, they don't even require edit permissions. However, if you create personal bookmarks and share your report, the personal bookmarks don't travel with the report. Personal bookmarks are for your use only. However, if you want to share your personal bookmarks, this article provides some tips and tricks to do so.
 
@@ -34,6 +35,7 @@ There are many uses for personal bookmarks. If you discover an interesting insig
 
 You can also create a collection of bookmarks, arrange them in the order you want, and then step through each bookmark in a presentation to highlight a series of insights that tell a story. This feature works like a slideshow, where you select an arrow to go forward or backward. There's a limit of 20 personal bookmarks per report.
 
+
 ### Open the Bookmarks pane
 
 To open the **Bookmarks** pane, select the :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choose either **Add a personal bookmark** or **Show more bookmarks**.
@@ -48,7 +50,8 @@ If you do have reshare permissions, when you share the report you can choose to 
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-share-changes.png" alt-text="A screenshot showing the Share dialog with Include my changes outlined.":::
 
-The following are a few ways you can share your view with others:
+Here are a few ways you can share your view with others:
+
 
 - **Share your active view**. If you have a personal bookmark active when you share your report, recipients see the bookmarked version of that report page but don't see your bookmark in their "Personal bookmarks" list. They see the result of your personal bookmark.
 
@@ -110,7 +113,6 @@ To view the report bookmarks created by the report *designer*, from the **Bookma
 > To view shared reports, you will need a Power BI Pro or Premium Per User license, or for the report to be saved in Premium capacity. To learn more, see [Licensing](end-user-license.md).
 
 ### Report bookmarks
-
 If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. This report page has four bookmarks: B1 ON, B2 ON, VanArsdel YTD, and All YTD. **All YTD** is currently selected.
 
 :::image type="content" source="media/end-user-bookmarks/power-bi-bookmark-list.png" alt-text="A screenshot showing the Bookmarks pane. A list of bookmarks is outlined.":::
@@ -152,3 +154,4 @@ In this release of **personal bookmarks**, there are a few considerations and li
 ## Next steps
 
 [Personalize visuals in a report](end-user-personalize-visuals.md)
+

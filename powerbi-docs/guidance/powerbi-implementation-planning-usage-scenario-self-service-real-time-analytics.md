@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Self-service real-time analytics"
 description: "Learn how business analysts can produce real-time Power BI reports."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -117,7 +117,7 @@ Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is re
 
 The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption.
 
-By using the [Premium Capacity Metrics app](/power-bi/enterprise/service-admin-premium-monitor-capacity) that's available to administrators, you can visualize how much of the capacity is being used by low-priority queries. Low-priority queries consist of automatic page refresh queries and model refresh queries. Change detection queries aren't low priority.
+By using the [Premium Capacity Metrics app](/power-bi/enterprise/service-premium-gen2-metrics-app) that's available to administrators, you can visualize how much of the capacity is being used by low-priority queries. Low-priority queries consist of automatic page refresh queries and model refresh queries. Change detection queries aren't low priority.
 
 ## Next steps
 
