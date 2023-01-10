@@ -20,7 +20,7 @@ You can't open encrypted PBIX files by using a Power BI Desktop version that doe
 
 **Solution:** [Select this link to directly download the latest Power BI Desktop installation executable](https://www.microsoft.com/download/confirmation.aspx?id=58494). The latest version of Power BI Desktop supports information protection and can decrypt and open any encrypted PBIX file. 
 
-## Issues with the on-premises data gateway
+## On-premises data gateway issues
 
 Users who installed and are running previous versions of the Power BI on-premises data gateway can be blocked from opening Power BI Desktop. Previous versions of the on-premises data gateway placed administrative policy restrictions on named pipes on the local machine.
 
@@ -28,45 +28,44 @@ Users who installed and are running previous versions of the Power BI on-premise
 
 - Install the latest version of the Power BI on-premises data gateway.
 
-  The latest version of the Power BI On-premises data gateway doesn't place named pipe restrictions on the local machine, and allows Power BI Desktop to open properly. If you need to continue using the Power BI on-premises data gateway, the recommended resolution is to update it. [Select this link to directly download the latest Power BI on-premises data gateway installation executable](https://www.microsoft.com/download/details.aspx?id=53127). 
+  The latest version of the Power BI on-premises data gateway doesn't place named pipe restrictions on the local machine, and allows Power BI Desktop to open properly. If you need to continue using the Power BI on-premises data gateway, the recommended resolution is to update it. [Select this link to directly download the latest Power BI on-premises data gateway installation executable](https://www.microsoft.com/download/details.aspx?id=53127). 
 
-- Uninstall or stop the Power BI on-premises data gateway service. You can uninstall the Power BI On-premises data gateway if you no longer need it. Or you can stop the Power BI on-premises data gateway service, which removes the policy restriction and allows Power BI Desktop to open.
+- Uninstall or stop the Power BI on-premises data gateway service. You can uninstall the Power BI on-premises data gateway if you no longer need it. Or you can stop the Power BI on-premises data gateway service, which removes the policy restriction and allows Power BI Desktop to open.
 
 - Run Power BI Desktop with administrator privileges.
 
-  You can instead launch Power BI Desktop as an administrator, which also allows Power BI Desktop to successfully open. It's still recommended to install the latest version of the Power BI on-premises data gateway.
+  You can launch Power BI Desktop as an administrator, which also allows Power BI Desktop to successfully open. It's still recommended to install the latest version of the Power BI on-premises data gateway.
 
   Power BI Desktop is a multiprocess architecture, and several of these processes communicate by using Windows named pipes. Other processes might interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls block the pipes or redirect traffic to a specific port.
 
-  Opening Power BI Desktop with administrator privilege might resolve that issue. If you can't open Power BI Desktop with administrator privilege, ask your administrator which security rules are preventing named pipes from properly communicating. Then add Power BI Desktop and its subprocesses to their allowlists.
+  Opening Power BI Desktop with administrator privilege might resolve that issue. If you can't open Power BI Desktop with administrator privilege, ask your administrator which security rules are preventing named pipes from properly communicating. Then add Power BI Desktop and its subprocesses to the allowlists.
 
 ## Issues connecting to SQL Server
 
-When you attempt to connect to a SQL Server database, you might see an error message similar to the following text:
+When you attempt to connect to a SQL Server database, you might see a message similar to the following error:
 
-`An error happened while reading data from the provider:`\
-`'Could not load file or assembly 'System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=xxxxxxxxxxxxx' or one of its dependencies.`\
-`Either a required impersonation level was not provided, or the provided impersonation level is invalid. (Exception from HRESULT: 0x80070542)'`
+**An error happened while reading data from the provider:<br>
+'Could not load file or assembly 'System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=xxxxxxxxxxxxx' or one of its dependencies. Either a required impersonation level was not provided, or the provided impersonation level is invalid. (Exception from HRESULT: 0x80070542)'**
 
 **Solution:** You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection. Opening Power BI Desktop as an administrator and establishing the connection registers the required DLLs. After that, you no longer have to open Power BI Desktop as an administrator. However, if you're connecting to SQL server with alternate Windows credentials, you have to open Power BI Desktop as an administrator every time you connect.
 
 ## "Unable to sign in" issues
 
-You might see a message similar to the following text:
+You might see a message similar to the following error:
 
-`Unable to sign in. Sorry, we encountered an error while trying to sign you in. Details: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.`
+**Unable to sign in. Sorry, we encountered an error while trying to sign you in. Details: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.**
 
-**Solution:** Uncheck the **Enable certification revocation check**. For details, see [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md). 
+**Solution:** Disable the certification revocation check at **Options and settings** > **Options** > **Security** > **Certification Revocation**. For details, see [Certificate revocation check, Power BI Desktop](../create-reports/desktop-certificate-revocation.md). 
 
 ## Issues starting the Microsoft Store version of Power BI Desktop
 
-You might see a message similar to the following text:
+You might see a message similar to the following error:
 
-`Hmmmm... can't reach this page. ms-pbi.pbi.microsoft.com's server IP address could not be found. Application event log message - The description for Event ID 1 from source`
+**Hmmmm... can't reach this page. ms-pbi.pbi.microsoft.com's server IP address could not be found. Application event log message - The description for Event ID 1 from source**
 
-The message might include further information, such as the following:
+The message might include further information, such as the following details:
 
-`Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.`
+**Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.**
 
 **Solution:** Reinstall WebView2 by using the following steps, which don't require elevated administrative permissions.
 
@@ -75,18 +74,18 @@ The message might include further information, such as the following:
 
 ## Issues related to WebView2
 
-Rarely, Power BI Desktop might fail to start and displays a gray window or an error message that mentions **WebView2**.
+Rarely, Power BI Desktop might fail to start and displays a gray window, or an error message that mentions **WebView2**.
 
 :::image type="content" source="media/desktop-error-launching-desktop/webview2-error.png" alt-text="Screenshot of an error message mentioning WebView2.":::
 
-Most cases are caused by a program on your machine, usually antivirus software. To verify whether a program is causing the issue, do the following steps:
+Most cases are caused by a program on your machine, usually antivirus software. To verify whether a program is causing the issue, take the following steps:
 
 1. Close Power BI Desktop.
-1. Open Windows **Settings** > **About** > **Advanced System Settings** and select **Environment Variables**.
+1. Open Windows **Settings** > **About** > **Advanced system settings** and select **Environment Variables**.
 
    ![Screenshot of the System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/environment-variables.png)
 
-   Add `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` to the User environment variables, and set the value to `--disable-features=RendererCodeIntegrity`:
+   Select **New** under **User variables** and add variable name *WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS* with value *--disable-features=RendererCodeIntegrity*.
 
    :::image type="content" source="media/desktop-error-launching-desktop/environment-variable-new-user-variable.png" alt-text="Screenshot of the new User variable and value.":::
  
@@ -119,7 +118,7 @@ If you still have issues, submit a support incident to [Power BI support](https:
 
   :::image type="content" source="media/desktop-error-launching-desktop/eventviewer-save-all-events-as.png" alt-text="Screenshot of Event viewer showing the context menu with Save All Events As highlighted.":::
 
-- **The ClientState key from Registry Editor.** Open Registry Editor by searching for *regedit* in Windows Search or in the **Start** menu. In Registry Editor, navigate to **HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\ClientState**. Right-click the **ClientState** key in the left pane, choose **Export**, and save the file.
+- **The ClientState key from Registry Editor.** Open Registry Editor by searching for *regedit* in Windows Search or the **Start** menu. In Registry Editor, navigate to **HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\ClientState**. Right-click **ClientState** in the left pane, choose **Export**, and save the file.
 
   :::image type="content" source="media/desktop-error-launching-desktop/export-registry-key.png" alt-text="Screenshot of Registry Editor showing the context menu with Export highlighted.":::
 
