@@ -7,7 +7,7 @@ ms.reviewer: christopher.finlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/28/2022
+ms.date: 01/10/2023
 LocalizationGroup: Common tasks
 ---
 # Paginated reports in the Power BI service
