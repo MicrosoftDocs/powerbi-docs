@@ -192,7 +192,7 @@ The .NET Framework provides many custom format options, for example, for specifi
     = Join(Parameters!MySelection.Value)  
     ```  
   
-     The following example does the same as the above example, and displays a text string prior to the list of selected values.  
+     The following example does the same as the previous example, and displays a text string prior to the list of selected values.  
   
     ```  
     ="Report for " & JOIN(Parameters!MySelection.Value, " & ")  
