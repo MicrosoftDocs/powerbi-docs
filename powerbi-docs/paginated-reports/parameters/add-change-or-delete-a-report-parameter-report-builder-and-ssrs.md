@@ -1,5 +1,5 @@
 ---
-title: "Add, change, or delete a paginated report parameter | Microsoft Docs"
+title: "Add, change, or delete a Power BI paginated report parameter | Microsoft Docs"
 description: Choose report data, connect related reports, and vary the report presentation with the addition of report parameters in a paginated report in Report Builder.
 ms.date: 03/07/2017
 ms.service: powerbi
@@ -11,15 +11,15 @@ ms.assetid: d44a8e0a-10cf-4502-9391-09743ffc9bad
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Add, change, or delete a paginated report parameter (Report Builder)
+# Add, change, or delete a Power BI paginated report parameter (Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  A paginated report parameter provides a way to choose report data, connect related reports together, and vary the report presentation. You can provide a default value and a list of available values, and the user can change the selection.  
+  A Power BI paginated report parameter provides a way to choose report data, connect related reports together, and vary the report presentation. You can provide a default value and a list of available values, and the user can change the selection.  
   
- After you publish a report, you can change the default values, the available values, and other properties for a report parameter on the report server. You can provide multiple sets of default parameter values by creating linked reports. For more information, see [Report Parameters &#40;Report Builder&#41;](../../reporting-services/report-design/report-parameters-report-builder-and-report-designer.md).  
+ After you publish a report, you can change the default values, the available values, and other properties for a report parameter on the report server. You can provide multiple sets of default parameter values by creating linked reports. For more information, see [Report Parameters &#40;Report Builder&#41;](../../paginated-reports/report-design/report-parameters-report-builder-and-report-designer.md).  
   
- This article is about adding report parameters to a paginated report in Power BI Report Builder.
+ This article is about adding report parameters to a Power BI paginated report in Power BI Report Builder.
     
 ### To add or edit a report parameter  
   
@@ -53,15 +53,15 @@ ms.author: maggies
   
 2.  Right-click the report parameter and click **Delete**.  
   
-## See Also  
- [Add, Change, or Delete Available Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter.md)   
- [Add, Change, or Delete Default Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-default-values-for-a-report-parameter.md)   
- [Change the Order of a Report Parameter &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
- [Report Parameters &#40;Report Builder and Report Designer&#41;](../../reporting-services/report-design/report-parameters-report-builder-and-report-designer.md)   
- [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
- [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../reporting-services/tutorial-add-a-parameter-to-your-report-report-builder.md)   
+## Next steps  
+ [Add, Change, or Delete Available Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-change-or-delete-available-values-for-a-report-parameter.md)   
+ [Add, Change, or Delete Default Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-change-or-delete-default-values-for-a-report-parameter.md)   
+ [Change the Order of a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
+ [Report Parameters &#40;Report Builder and Report Designer&#41;](../../paginated-reports/report-design/report-parameters-report-builder-and-report-designer.md)   
+ [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
+ [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../paginated-reports/tutorial-add-a-parameter-to-your-report-report-builder.md)   
  [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Parameters Collection References &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/built-in-collections-parameters-collection-references-report-builder.md)   
- [Add a multi-value parameter to a Report](../../reporting-services/report-design/add-a-multi-value-parameter-to-a-report.md)  
+ [Parameters Collection References &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/built-in-collections-parameters-collection-references-report-builder.md)   
+ [Add a multi-value parameter to a Report](../../paginated-reports/report-design/add-a-multi-value-parameter-to-a-report.md)  
   
   
