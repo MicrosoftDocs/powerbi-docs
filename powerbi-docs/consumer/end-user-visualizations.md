@@ -14,16 +14,16 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-At its most basic, a *visualization* (or *visual*) is a chart built by Power BI *designers* using the data in reports and datasets.
+At its most basic, a ***visualization** (or *visual*) is a chart built by Power BI *designers* using the data in reports and datasets.
 
-Visuals are found on dashboards, in reports and can be created instantly using Power BI Q&A. When a designer creates a visual in a report, they can *pin* it to a dashboard. A [visual on a dashboard is called a *tile*](end-user-tiles.md). The following example shows a dashboard with eight tiles.
+Visuals are found on dashboards, in reports and can be created instantly using Power BI Q&A. When a designer creates a visual in a report, they can *pin* it to a dashboard. For more information, see [Interact with visuals in reports, dashboards, and apps](end-user-tiles.md). The following example shows a dashboard with eight tiles.
 
-![Dashboard with tiles](media/end-user-visualizations/power-bi-dashboard.png)
+![Screenshot of a Power BI service window showing a dashboard in the main pane](media/end-user-visualizations/power-bi-dashboard.png)
 
 > [!TIP]
-> We recommend first reading the overview topic [Power BI basic concepts for *business users*](end-user-basic-concepts.md) before reading this more-detailed content.
+> We recommend first reading the overview topic [Basic concepts for the Power Bi service business user](end-user-basic-concepts.md) before reading this more-detailed content.
 
-## What can I do with visuals?
+## What can I do with visuals
 
 Visuals are created by report and dashboard *designers* and shared with colleagues. The designer assigns different permissions to their colleagues, depending on how each colleague will use the report or dashboard. For example, a *developer* can be assigned different permissions than a *business user*.
 
@@ -31,10 +31,10 @@ The following table lists the most common tasks for a *business user* with links
 
 The administrator or the *designer* can disable your ability to see or use these features. And some of these features only work on specific visual types.  If you have any questions, contact your administrator or the owner of the report or dashboard. To find the owner, select the dashboard or report dropdown.
 
-![Title dropdown showing owner](media/end-user-visualizations/power-bi-designer.png)
+![Screenshot of the title dropdown with the expand icon and contact name highlighted](media/end-user-visualizations/power-bi-designer.png)
 
 > [!IMPORTANT]
-> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language, and Q&A answers the question in the form of a visual. Q&A is a way business users can create their own visuals instantly. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for business users](end-user-q-and-a.md).
+> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language, and Q&A answers the question in the form of a visual. Q&A is a way business users can create their own visuals instantly. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. For more information, see [Q&A for Power BI business users](end-user-q-and-a.md).
 
 |Task  |On a dashboard  |In a report  | In Q&A
 |---------|---------|---------|--------|
@@ -60,6 +60,6 @@ The administrator or the *designer* can disable your ability to see or use these
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | No  | Yes   | No |
 
 ## Next steps
-Back to [Basic concepts for business users](end-user-basic-concepts.md)
-[Select a visual to open a report](end-user-report-open.md)
-[Types of visuals available in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Basic concepts for the Power BI service business users](end-user-basic-concepts.md)
+- [View a report in the Power BI service for business users](end-user-report-open.md)
+- [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
