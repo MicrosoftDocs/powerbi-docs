@@ -15,7 +15,7 @@ author: maggiesMSFT
 ms.author: maggies
 monikerRange: ">=sql-server-2016 <=sql-server-2016"
 ---
-# Set parameters on a published paginated report - SharePoint Integrated Mode (Report Builder)
+# Set parameters on a Power BI published paginated report - SharePoint Integrated Mode (Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
@@ -79,7 +79,7 @@ monikerRange: ">=sql-server-2016 <=sql-server-2016"
   
 7.  Click **Apply**.  
   
-## See Also  
+## Next steps  
  [SharePoint Site and List Permission Reference for Report Server Items](../../paginated-reports/security/sharepoint-site-and-list-permission-reference-for-report-server-items.md)  
   
   
