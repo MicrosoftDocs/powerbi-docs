@@ -1,22 +1,22 @@
 ---
 title:  Introduction to usage of test utils in Power BI visual
-description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals.
+description: Learn how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 02/14/2020
+ms.date: 01/11/2023
 ---
 
 # Power BI visuals test utils
 
-This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for elements such as data views, selections and color schemas.
+This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for elements, such as data views, selections, and color schemas.
 
 ## Requirements
 
-To use this package, you'll need to install the following:
+To use this package, install the following:
 
 * [node.js](https://nodejs.org), it's recommended to use the LTS version
 * [npm](https://www.npmjs.com/), version 3.0.0 or higher
@@ -60,7 +60,7 @@ abstract class VisualBuilderBase<T extends IVisual> {
 ```
 
 > [!NOTE]
-> For further examples, see [writing VisualBuilderBase unit tests](./unit-tests-introduction.md#create-a-visual-instance-builder) and a [real usage VisualBuilderBase scenario](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts).
+> For further examples, see [Writing VisualBuilderBase unit tests](./unit-tests-introduction.md#create-a-visual-instance-builder) and a [Real usage VisualBuilderBase scenario](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts).
 
 ## DataViewBuilder
 
