@@ -51,7 +51,7 @@ When you view a report that has parameters, the report viewer toolbar displays e
   
 6. **View Report**. After you enter parameter values, select **View Report** to run the report. If all parameters have default values, the report runs automatically on first view.  
   
-## <a name="bkmk_Create_Parameters"></a> Creating parameters
+## <a name="bkmk_Create_Parameters"></a> Create parameters
 
 You can create report parameters in a few different ways.
   
