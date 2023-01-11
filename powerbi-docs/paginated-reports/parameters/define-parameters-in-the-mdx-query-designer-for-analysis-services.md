@@ -1,8 +1,8 @@
 ---
-title: "Define Parameters in the MDX Query Designer for Analysis Services | Microsoft Docs"
+title: "Define Parameters in the MDX Query Designer for Analysis Services data source of a Power BI paginated report | Microsoft Docs"
 description: Learn how to define query parameters in the Multidimensional Expression (MDX) query designer for Analysis Services.
 ms.date: 03/14/2017
-ms.service: reporting-services
+ms.service: powerbi
 ms.subservice: report-data
 
 
@@ -17,11 +17,11 @@ ms.assetid: 4ad1e5bc-f510-4752-b4f6-589e55317a90
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Define Parameters in the MDX Query Designer for Analysis Services
+# Define Parameters in the MDX Query Designer for Analysis Services data source of a Power BI paginated report
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  To parameterize an MDX query for an Analysis Services data source, you must add a query parameter to the query. In the MDX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
+  To parameterize an MDX query for an Analysis Services data source of a Power BI paginated report, you must add a query parameter to the query. In the MDX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
   
   
 ### To define a query parameter in MDX in Design mode  
@@ -76,8 +76,8 @@ ms.author: maggies
   
      To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
   
-## See Also  
- [Analysis Services Connection Type for MDX &#40;SSRS&#41;](../../reporting-services/report-data/analysis-services-connection-type-for-mdx-ssrs.md)   
- [Analysis Services MDX Query Designer User Interface](../../reporting-services/report-data/analysis-services-mdx-query-designer-user-interface.md)  
+## Next steps  
+ [Analysis Services Connection Type for MDX &#40;SSRS&#41;](../../paginated-reports/report-data/analysis-services-connection-type-for-mdx-ssrs.md)   
+ [Analysis Services MDX Query Designer User Interface](../../paginated-reports/report-data/analysis-services-mdx-query-designer-user-interface.md)  
   
   
