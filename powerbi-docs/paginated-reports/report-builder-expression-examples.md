@@ -418,7 +418,7 @@ You can show and hide items in a report using the visibility properties for the 
 -   The following expression, when used for initial visibility of detail rows in a group, shows the detail rows for all sales exceeding 90 percent in the *PctQuota* field:  
   
     ```  
-    =Iif(Fields!PctQuota.Value>.9, False, True)  
+    =IIF(Fields!PctQuota.Value>.9, False, True)  
     ```  
   
 -   The following expression, when set in the *Hidden* property of a table, shows the table only if it has more than 12 rows:  
