@@ -92,7 +92,7 @@ The .NET Framework provides many custom format options, for example, for specifi
     =Year(Fields!OrderDate.Value)  
     ```  
   
--   You can combine functions in an expression to customize the format. The following expression changes the format of a date in the form month-day-year to month-week-week number. For example, "12/23/2009" to "December Week 3":  
+-   You can combine functions in an expression to customize the format. The following expression changes the format of a date in the form month-day-year to month-week-week number. For example, change "12/18/2022" to "December Week 3":  
   
     ```  
     =Format(Fields!MyDate.Value, "MMMM") & " Week " &   
