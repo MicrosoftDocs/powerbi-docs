@@ -296,7 +296,7 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 4. Select the report to view it.
 
-5. If you get an error, you may need to reenter your credentials. Select the ellipses to the right of the report, then choose the **Manage** icon.
+5. If you get an error, you might need to reenter your credentials. Select the ellipses to the right of the report, then choose **Manage**.
 
     ![Screenshot showing Manage your report.](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
 
