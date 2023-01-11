@@ -18,8 +18,8 @@ In this article, you learn about a feature in Microsoft Power BI Report Builder 
  
 ## Prerequisites
 
-- To enter data directly in a paginated report, [download and install Power BI Report Builder](https://aka.ms/pbireportbuilder). 
-- To save your paginated report to the Power BI service, you need a [Power BI Pro account](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license, and write access to any workspace.
+
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 - To save your paginated report to a report server, you need permissions to [edit the RsReportServer.config file](#upload-the-paginated-report-to-a-report-server).
 
 ## Create a data source and dataset
