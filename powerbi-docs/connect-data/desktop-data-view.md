@@ -21,8 +21,6 @@ When you're modeling your data, sometimes you want to see what's actually in a t
 
 Let's take a closer look at some of the elements found in Data view.
 
-![Screenshot shows the Data view in Power BI Desktop.](media/desktop-data-view/dataview_fullscreen.png)
-
 :::image type="content" source="media/desktop-data-view/dataview_fullscreen.png" alt-text="Screenshot shows the Data view in Power BI Desktop." lightbox="media/desktop-data-view/dataview_fullscreen.png":::
 
 1. **Data view icon**. Select this icon to enter **Data** view.
