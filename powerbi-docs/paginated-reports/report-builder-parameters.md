@@ -81,7 +81,7 @@ Create a parameter manually from the **Report Data** pane. You can configure rep
 > [!NOTE]  
 > Because parameters are managed independently on the server, republishing a main report with new parameter settings doesn't overwrite the existing parameter settings on the report.  
 
-### Parameter values
+## Select parameter values
 
 The following options are for selecting parameter values in the report.  
   
