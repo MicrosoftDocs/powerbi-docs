@@ -1,5 +1,5 @@
 ---
-title: "Associate a Query Parameter with a Report Parameter (Report Builder) | Microsoft Docs"
+title: "Associate a Query Parameter with a Report Parameter (Report Builder) for a Paginated Report | Microsoft Docs"
 description: Learn uses for Reporting Services report parameters, the properties you can set, and how to associate a dataset query parameter with a report parameter.
 ms.date: 03/01/2017
 ms.service: reporting-services
@@ -14,7 +14,7 @@ ms.assetid: 6d297e1a-ff71-472a-addc-349e863092b5
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Associate a Query Parameter with a Report Parameter (Report Builder and SSRS)
+# Associate a Query Parameter with a Report Parameter (Report Builder and SSRS) for a Paginated Report
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
