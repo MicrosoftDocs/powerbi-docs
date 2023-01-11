@@ -204,7 +204,7 @@ This method returns a touch start event name.
 function touchEndEventName(): string
 ```
 
-This method returns a touch start event name.
+This method returns a touch end event name.
 
 #### `usePointerEvents`
 
