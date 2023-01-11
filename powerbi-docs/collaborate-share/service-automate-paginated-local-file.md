@@ -67,5 +67,5 @@ To follow along, make sure you meet these criteria:
 
 - [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)
-- More questions? [Try the Power BI Community](https://community.powerbi.com/)
+- More questions? [Ask the Power BI Community](https://community.powerbi.com/)
 
