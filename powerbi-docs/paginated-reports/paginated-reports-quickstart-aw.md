@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 01/09/2023
+ms.date: 01/10/2023
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
@@ -49,7 +49,7 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
   
      The **Getting Started** dialog box opens.  
   
-     ![Screenshot showing Report Builder Getting Started.](media/paginated-reports-create-embedded-dataset/power-bi-paginated-get-started.png)
+     ![Screenshot showing Report Builder Getting Started.](media/paginated-reports-quickstart-aw/power-bi-get-started.png)
   
 1. In the left pane, verify that **New Report** is selected, and in the right pane, select **Table or Matrix Wizard**.  
   
@@ -296,7 +296,7 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 4. Select the report to view it.
 
-5. If you get an error, you may need to reenter your credentials. Select the **Manage** icon.
+5. If you get an error, you may need to reenter your credentials. Select the ellipses to the right of the report, then choose the **Manage** icon.
 
     ![Screenshot showing Manage your report.](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
 
@@ -305,8 +305,6 @@ Now that you've created this paginated report, it's time to upload it to the Pow
     ![Screenshot showing Edit report credentials.](media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png)
 
 7. Now you can view your paginated report in the Power BI service.
-
-    ![Screenshot showing Paginated report in the Power BI service.](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
 ## Next steps
 
