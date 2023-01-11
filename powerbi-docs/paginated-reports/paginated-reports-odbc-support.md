@@ -49,7 +49,7 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
 
 1. To configure an ODBC data source in the Power BI service, select **Manage connections and gateways** under **Settings**:
 
-    :::image type="content" source="media/paginated-reports-odbc-support/powerbi-manage-gateway.png" alt-text="Screenshot of Manage gateway option under settings.":::
+    :::image type="content" source="media/paginated-reports-odbc-support/power-bi-manage-gateway.png" alt-text="Screenshot of Manage gateway option under settings.":::
 
 1. Select **New** at the top of the ribbon to add a new data source. Then choose **Add data source** >  **ODBC Data Source Type**:
 
