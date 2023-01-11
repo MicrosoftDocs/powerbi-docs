@@ -74,7 +74,7 @@ This image from Report Builder shows:
   
 4. The parameters listed in the **Dataset Properties** dialog box.  
   
-**Create a parameter manually**
+### Create a parameter manually
   
 Create a parameter manually from the **Report Data** pane. You can configure report parameters so that a user can interactively enter values to help customize the contents or appearance of a report. You can also configure report parameters so that a user can't change pre-configured values.  
 
