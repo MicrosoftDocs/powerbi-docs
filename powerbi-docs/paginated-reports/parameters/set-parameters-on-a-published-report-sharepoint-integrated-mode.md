@@ -1,8 +1,8 @@
 ---
-title: "Set parameters on a published paginated report - SharePoint Integrated Mode | Microsoft Docs"
+title: "Set parameters on a published Power BI paginated report - SharePoint Integrated Mode | Microsoft Docs"
 description: Learn how to set parameters and run a parameterized paginated report, in the report definition or after the report is published, in Report Builder.
 ms.date: 03/07/2017
-ms.service: reporting-services
+ms.service: powerbi
 ms.subservice: report-design
 
 
@@ -27,7 +27,7 @@ monikerRange: ">=sql-server-2016 <=sql-server-2016"
   
  To set parameter properties on a published report, you must have Edit Items permission for the report. You can modify some or all of the parameter properties on a report that you run from a SharePoint site. You cannot personalize a report by saving a combination of parameter values that you want to use repeatedly. Any default values that you specify are used by all users who open the report.  
   
- If the report is embedded in a Report Viewer Web part that is configured to always show that report, set the properties on the Report Viewer Web Part. For more information, see [Add the Report Viewer Web Part to a Web Page &#40;Reporting Services in SharePoint Integrated Mode&#41;](../../reporting-services/report-server-sharepoint/add-the-report-viewer-web-part-to-a-web-page.md).  
+ If the report is embedded in a Report Viewer Web part that is configured to always show that report, set the properties on the Report Viewer Web Part. For more information, see [Add the Report Viewer Web Part to a Web Page &#40;Reporting Services in SharePoint Integrated Mode&#41;](../../paginated-reports/report-server-sharepoint/add-the-report-viewer-web-part-to-a-web-page.md).  
   
 ### To run a parameterized report  
   
@@ -80,6 +80,6 @@ monikerRange: ">=sql-server-2016 <=sql-server-2016"
 7.  Click **Apply**.  
   
 ## See Also  
- [SharePoint Site and List Permission Reference for Report Server Items](../../reporting-services/security/sharepoint-site-and-list-permission-reference-for-report-server-items.md)  
+ [SharePoint Site and List Permission Reference for Report Server Items](../../paginated-reports/security/sharepoint-site-and-list-permission-reference-for-report-server-items.md)  
   
   
