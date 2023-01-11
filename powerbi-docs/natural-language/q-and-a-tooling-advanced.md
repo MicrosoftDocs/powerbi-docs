@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/10/2023
+ms.date: 01/11/2023
 ---
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 
 It's powerful to use common phrases and natural language to ask questions of your data. It's even more powerful when your data answers. When you ask Power BI Q&A a question, it makes a best effort to answer correctly. You can edit the linguistic schema to improve the Q&A answers for even better interactions.
@@ -28,7 +28,7 @@ Linguistic schemas are saved in a .yaml format. This format is related to the po
 
 ## Prerequisites
 
-- Read the article [Improving your data model for Q&A](q-and-a-best-practices.md) to learn about tips for designing and improving your data model. It also provides an important section about adding synonyms. 
+- Read the article [Improving your data model for Q&A](q-and-a-best-practices.md) to learn about tips for designing and improving your data model. It provides an important section about adding synonyms. 
 - Download the sample [.yaml and .pbix files](https://go.microsoft.com/fwlink/?linkid=871858).   
 - Install a .yaml file editor. We recommend [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -49,7 +49,7 @@ In Visual Studio Code, install the YAML Support by Red Hat extension.
 1. Select **Install > Reload**.
 
 
-## Working with linguistic schemas
+## Work with linguistic schemas
 
 There are two ways to work with linguistic schemas. One way is to edit, import, and export the .yaml from the ribbon in Power BI Desktop. That way is covered in the Power BI [Q&A Tooling experience](q-and-a-tooling-intro.md) article. You don't have to open the .yaml file to improve Q&A. 
 
@@ -333,7 +333,7 @@ Binding: {Table: Customers}
 Another example would be adding the alternate phrasing “employees sell customers products” to the “customers buy products from employees” relationship. You don't need to add variations like “employees sell products *to customers*” or “products are sold to customers *by employees*” because the “by” and “to” variations of the subject and indirect object are inferred automatically by Q&A.
 
 ## Considerations and troubleshooting
-If you make a change to a .lsdl.yaml file that doesn't conform to the linguistic schema format, validation squiggles indicate the issues: 
+If you make a change to a .lsdl.yaml file that doesn't conform to the linguistic schema format, validation squiggles indicate the issue: 
 
 ![Screenshot of a sample .yaml file showing errors.](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
