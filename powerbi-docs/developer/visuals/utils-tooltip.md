@@ -183,7 +183,6 @@ interface TooltipServiceWrapperOptions {
     tooltipService: ITooltipService;
     rootElement: Element;
     handleTouchDelay: number;
-    getEventMethod?: () => MouseEvent;
 ```
 
 ### `Touch events`
