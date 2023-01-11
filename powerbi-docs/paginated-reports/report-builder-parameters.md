@@ -33,7 +33,7 @@ Here are some of the most common ways to use parameters.
   
 - Allow users to customize report data and appearance by including parameters in an expression.  
   
-## <a name="UserInterface"></a> Viewing a report with parameters
+## <a name="UserInterface"></a> View a report with parameters
 
 When you view a report that has parameters, the report viewer toolbar displays each parameter so you can interactively specify values. The following illustration shows the parameter area for a report with parameters @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota, and @SalesDate.  
 
