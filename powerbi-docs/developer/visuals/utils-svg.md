@@ -1,5 +1,5 @@
 ---
-title: Introduction to use SVG utils in Power BI visual
+title: Introduction to SVG utils in Power BI visuals
 description: Learn about the SVG utils package and see examples of how you can use them to simplify SVG manipulations for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
@@ -13,7 +13,7 @@ ms.date: 01/10/2023
 
 # SVG utils
 
-SVGUtils is a set of functions and classes to simplify SVG manipulations for Power BI visuals
+SVGUtils is a set of functions and classes to simplify SVG manipulations for Power BI visuals.
 
 ## Installation
 
@@ -63,7 +63,7 @@ divSelector.class === "sample-block"; // returns: true
 
 ## manipulation
 
-The `manipulation` provides some special functions to generate strings for using with SVG transform property.
+The `manipulation` method provides some special functions to generate strings that you can use with the SVG transform property.
 
 The module provides the following functions:
 
@@ -433,7 +433,7 @@ This function returns a bottom-right position of the rectangle.
 function bottomRight(rect: IRect): IPoint;
 ```
 
-### Example
+Example:
 
 ```typescript
 import { shapes } from "powerbi-visuals-utils-svgutils";
@@ -469,7 +469,7 @@ Rect.clone({ left: 25, top: 25, width: 100, height: 100 });
 
 ### toString
 
-This function converts rectangle to string.
+This function converts the rectangle to a string.
 
 ```typescript
 function toString(rect: IRect): string;
