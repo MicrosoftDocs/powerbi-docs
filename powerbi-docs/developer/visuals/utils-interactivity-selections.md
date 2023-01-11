@@ -38,7 +38,7 @@ Interactivity utils (`InteractivityUtils`) is a set of functions and classes tha
     import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
     ```
 
-### Including the CSS files
+### Include CSS files
 
 To use the package with your Power BI visual, import the following CSS file to your `.less` file.
 
@@ -72,7 +72,7 @@ Usually, data points contain selections and values. The interface extends the `S
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-## Defining an interface for data points
+## Define an interface for data points
 
 1. Create an instance of interactivity utils and save the object as a property of the visual.
 
@@ -124,11 +124,11 @@ Usually, data points contain selections and values. The interface extends the `S
 
 4. Define a class for `visual behavior`. Or, extend the `BaseBehavior` class.
 
-    **Defining a class for `visual behavior`**
+    **Define a class for `visual behavior`**
 
     The class is responsible for `click` and `contextmenu` mouse events.
 
-    When a user clicks data elements, the visual calls the selection handler to select data points. if the user clicks the background element of the visual, it calls the clear selection handler.
+    When a user clicks data elements, the visual calls the selection handler to select data points. If the user clicks the background element of the visual, it calls the clear selection handler.
 
     The class has the following correspond methods:
     * `bindClick`
@@ -166,7 +166,7 @@ Usually, data points contain selections and values. The interface extends the `S
     }
     ```
 
-    **Extending the `BaseBehavior` class**
+    **Extend the `BaseBehavior` class**
 
     ```typescript
     import powerbi from "powerbi-visuals-api";
@@ -240,7 +240,7 @@ Usually, data points contain selections and values. The interface extends the `S
       }
     ```
 
-8. The `renderSelection` method is responsible for updating the visual state of elements in the chart. Aa sample implementation of `renderSelection` follows.
+8. The `renderSelection` method is responsible for updating the visual state of elements in the chart. A sample implementation of `renderSelection` follows.
 
     ```typescript
     public renderSelection(hasSelection: boolean): void {
