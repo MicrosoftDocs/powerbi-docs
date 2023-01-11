@@ -27,15 +27,15 @@ The insights feature is built on a growing [set of advanced analytical algorithm
 When you run insights on a dashboard tile, Power BI searches just the data used to create that single dashboard tile. 
 
 1. [Open a dashboard](end-user-dashboards.md).
-2. Hover over a tile. select **More options** (...), and choose **View insights**. 
+2. Hover over a tile. select **More options** (...), and choose **View insights**.
 
     ![Screenshot showing selection of ellipsis displays dropdown](./media/end-user-insights/power-bi-hover.png)
 
 
-3. The tile opens in [Focus mode](end-user-focus.md) with the insights cards displayed along the right.    
+3. The tile opens in [Focus mode](end-user-focus.md) with the insights cards displayed along the right.
    
     [![Screenshot of insights cards.](./media/end-user-insights/power-bi-insights-tiles.png)](./media/end-user-insights/power-bi-insights-tiles-expanded.png#lightbox)
-4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
+4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.
 
 ## Interact with the insight cards
 
@@ -58,5 +58,5 @@ To return to your report, from the upper left corner, select **Exit Focus mode**
 
 ## Next steps
 
-Run insights on report visuals [using the Analyze feature](end-user-analyze-visuals.md)    
+Run insights on report visuals [using the Analyze feature](end-user-analyze-visuals.md)
 Learn about the [types of Insights available](end-user-insight-types.md)
