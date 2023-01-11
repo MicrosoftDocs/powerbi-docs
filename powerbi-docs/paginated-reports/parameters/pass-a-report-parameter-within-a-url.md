@@ -1,5 +1,5 @@
 ---
-title: "Pass a Report Parameter Within a URL | Microsoft Docs"
+title: "Pass a Report Parameter Within a URL for a Paginated Report | Microsoft Docs"
 description: Learn how to pass report parameters directly to the report processing engine by including them in a report URL.
 ms.date: 03/01/2017
 ms.service: reporting-services
@@ -14,11 +14,11 @@ ms.assetid: f93a94cc-27b5-435a-aa85-69e6ec6459ad
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Pass a Report Parameter Within a URL
+# Pass a Report Parameter Within a URL for a Paginated Report
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  You can pass report parameters to a report by including them in a report URL. These URL parameters are not prefixed because they are passed directly to the report processing engine.  
+  You can pass report parameters to a report by including them in a report URL for Paginated Reports. These URL parameters are not prefixed because they are passed directly to the report processing engine.  
 
   
 >   
