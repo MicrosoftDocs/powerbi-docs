@@ -16,9 +16,9 @@ With Power BI Desktop you can connect to the world of data, create compelling an
 
 Power BI Desktop has three views:
 
-* **Report** view – where you use queries you create to build compelling visualizations, arranged as you want them to appear, and with multiple pages, that you can share with others
-* **Data** view – see the data in your report in data model format, where you can add measures, create new columns, and manage relationships
-* **Model** view – get a graphical representation of the relationships that have been established in your data model, and manage or modify them as needed.
+* **Report** view – You can use queries that you create to build compelling visualizations, arranged as you want them to appear, and with multiple pages, that you can share with others.
+* **Data** view – See the data in your report in data model format, where you can add measures, create new columns, and manage relationships.
+* **Model** view – Get a graphical representation of the relationships that are established in your data model, and manage or modify them as needed.
 
 Access these views by selecting one of the three icons along the left side of Power BI Desktop. In the following image, **Report** view is selected, indicated by the yellow band beside the icon.  
 
@@ -34,7 +34,7 @@ But first, let's see get acquainted with Power Query Editor.
 
 To get to Power Query Editor, select **Transform data** from the **Home** tab of Power BI Desktop.  
 
-:::image type="content" source="media/desktop-query-overview/query-overview-transform.png" alt-text="Screenshot of Power BI Desktop showing Power Query Editor Home tab.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-transform.png" alt-text="Screenshot of Power BI Desktop with the transform data icon highlighted.":::
 
 With no data connections, Power Query Editor appears as a blank pane, ready for data.  
 
@@ -65,7 +65,7 @@ The **Home** tab contains the common query tasks.
 
 To connect to data and begin the query building process, select **New Source**. A menu appears, providing the most common data sources.  
 
-:::image type="content" source="media/desktop-query-overview/query-overview-new-source-menu.png" alt-text="Screenshot of Power BI Desktop showing New Source button.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-new-source-menu.png" alt-text="Screenshot of Power BI Desktop showing the New Source button.":::
 
 For more information about available data sources, see [Data Sources](../connect-data/desktop-data-sources.md). For information about connecting to data, including examples and steps, see [Connect to Data](../connect-data/desktop-connect-to-data.md).
 
@@ -76,17 +76,17 @@ The **Transform** tab provides access to common data transformation tasks, such 
 * Splitting columns
 * Other data-driven tasks
 
-:::image type="content" source="media/desktop-query-overview/query-overview-transform-ribbon.png" alt-text="Screenshot of Power BI Desktop showing Home tab.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-transform-ribbon.png" alt-text="Screenshot of Power BI Desktop showing the Transform tab.":::
 
 For more information about transforming data, including examples, see [Tutorial: Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
 The **Add Column** tab provides more tasks associated with adding a column, formatting column data, and adding custom columns. The following image shows the **Add Column** tab.  
 
-:::image type="content" source="media/desktop-query-overview/query-overview-add-column-ribbon.png" alt-text="Screenshot of Power BI Desktop showing Add Column tab.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-add-column-ribbon.png" alt-text="Screenshot of Power BI Desktop showing the Add Column tab.":::
 
 The **View** tab on the ribbon is used to toggle whether certain panes or windows are displayed. It's also used to display the Advanced Editor. The following image shows the **View** tab.  
 
-:::image type="content" source="media/desktop-query-overview/query-overview-view-ribbon.png" alt-text="Screenshot of Power BI Desktop showing View tab.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-view-ribbon.png" alt-text="Screenshot of Power BI Desktop showing the View tab.":::
 
 It's useful to know that many of the tasks available from the ribbon are also available by right-clicking a column, or other data, in the center pane.
 
@@ -94,7 +94,7 @@ It's useful to know that many of the tasks available from the ribbon are also av
 
 The left pane, or **Queries** pane, displays the number of active queries and the name of the query. When you select a query from the left pane, its data is displayed in the center pane, where you can shape and transform the data to meet your needs. The following image shows the left pane with a query.  
 
-:::image type="content" source="media/desktop-query-overview/query-overview-the-left-pane.png" alt-text="Screenshot of Power BI Desktop showing Queries in left pane.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-the-left-pane.png" alt-text="Screenshot of Power BI Desktop showing Queries in the left pane.":::
 
 ## The center (Data) pane
 
@@ -102,7 +102,7 @@ In the center pane, or **Data** pane, data from the selected query is displayed.
 
 The following image shows the Web data connection established earlier. The **Overall score** column is selected, and its header is right-clicked to show the available menu items. Notice that many of these items in the right-click menu are the same as buttons in the ribbon tabs.  
 
-:::image type="content" source="media/desktop-query-overview/query-overview-the-center-pane.png" alt-text="Screenshot of Power BI Desktop showing Data in center pane.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-the-center-pane.png" alt-text="Screenshot of Power BI Desktop showing Data in the center pane.":::
 
 When you select a right-click menu item (or a ribbon button), the query applies the step to the data. It also saves step as part of the query itself. The steps are recorded in the **Query Settings** pane in sequential order, as described in the next section.  
 
@@ -110,7 +110,7 @@ When you select a right-click menu item (or a ribbon button), the query applies 
 
 The right pane, or **Query Settings** pane, is where all steps associated with a query are displayed. For example, in the following image, the **Applied Steps** section of the **Query Settings** pane reflects the fact that we just changed the type of the **Overall score** column.
 
-:::image type="content" source="media/desktop-query-overview/query-overview-query-settings-pane.png" alt-text="Screenshot of Power BI Desktop showing Query Settings in right pane.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-query-settings-pane.png" alt-text="Screenshot of Power BI Desktop showing Query Settings in the right pane.":::
 
 As more shaping steps are applied to the query, they're captured in the **Applied Steps** section.
 
@@ -123,22 +123,22 @@ In the **Query Settings** pane, you can rename steps, delete steps, or reorder t
 ## Advanced Editor
 
 The **Advanced Editor** lets you see the code that Power Query Editor is creating with each step. It also lets you create your own shaping code. To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the existing query code.  
-:::image type="content" source="media/desktop-query-overview/query-overview-advanced-editor.png" alt-text="Screenshot of Power BI Desktop showing Advanced Editor dialog box.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-advanced-editor.png" alt-text="Screenshot of Power BI Desktop showing the Advanced Editor dialog box.":::
 
 You can directly edit the code in the **Advanced Editor** window. To close the window, select the **Done** or **Cancel** button.  
 
 ## Saving your work
 
 When your query is where you want it, select **Close & Apply** from Power Query Editor's **File** menu. This action applies the changes and closes the editor.  
-:::image type="content" source="media/desktop-query-overview/query-overview-close-nload.png" alt-text="Screenshot of Power BI Desktop showing Close and Apply option under File tab.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-close-nload.png" alt-text="Screenshot of Power BI Desktop showing the Close and Apply option under the File tab.":::
 
 As progress is made, Power BI Desktop provides a dialog to display its status.  
-:::image type="content" source="media/desktop-query-overview/query-overview-loading.png" alt-text="Screenshot of Power BI Desktop showing Applied Query Changes confirmation dialog box.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-loading.png" alt-text="Screenshot of Power BI Desktop showing the Applied Query Changes confirmation dialog box.":::
 
 When you're ready, Power BI Desktop can save your work in the form of a *.pbix* file.
 
 To save your work, select **File** \> **Save** (or **File** \> **Save As**), as shown in the following image.
-:::image type="content" source="media/desktop-query-overview/query-overview-save-work.png" alt-text="Screenshot of Power BI Desktop showing Power Query Editor File tab.":::
+:::image type="content" source="media/desktop-query-overview/query-overview-save-work.png" alt-text=" Screenshot of Power BI Desktop showing the Power Query Editor File tab. The save and save as options highlighted.":::
 
 ## Next steps
 
@@ -146,6 +146,6 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
+* [Connect to data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Perform common query tasks in Power BI Desktop](desktop-common-query-tasks.md)
