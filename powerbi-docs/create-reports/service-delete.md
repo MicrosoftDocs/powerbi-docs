@@ -70,13 +70,13 @@ If you're a workspace admin, you can delete a workspace with no effect on any Mi
 - Removing a *dashboard* doesn't delete the underlying dataset or any reports associated with that dashboard.
 - If you're the *owner of a dashboard or report*, you can remove it. If you've shared it with colleagues, removing it from your Power BI workspace removes it from their Power BI workspaces too.
 - If a *dashboard or report is shared with you*, you can't remove it.
-- Deleting a report doesn't delete the dataset that the report is based on.  Any visualizations that you pinned to a dashboard from the report are also safe. They remain on the dashboard until you delete them individually.
+- Deleting a report doesn't delete the dataset that the report is based on. Any visualizations that you pinned to a dashboard from the report are also safe. They remain on the dashboard until you delete them individually.
 - You can delete a *dataset*. However, deleting a dataset also deletes all reports and dashboard tiles that contain data from that dataset.
 - You can remove *workbooks*. However, removing a workbook also removes all reports and dashboard tiles that contain data from this workbook. If a workbook is stored on OneDrive for Business, deleting it from Power BI doesn't delete it from OneDrive.
 
 ## Next steps
 
-This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete:  
+This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete:
 
 - [Featured dashboards](/power-bi/consumer/end-user-dashboards)
 - [Favorite dashboards](../consumer/end-user-favorite.md)
