@@ -58,7 +58,7 @@ You can create report parameters in a few different ways.
 > [!NOTE]
 > Not all data sources support parameters.
   
-**Dataset query or stored procedure with parameters**
+### Dataset query or stored procedure with parameters
   
 Add a dataset query that contains variables or a dataset stored procedure that contains input parameters. A dataset parameter is created for each variable or input parameter, and a report parameter is created for each dataset parameter.  
   
