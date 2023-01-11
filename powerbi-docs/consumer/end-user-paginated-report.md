@@ -1,13 +1,13 @@
 ---
 title: Paginated reports in the Power BI service
-description: Documentation describing paginated reports and how to view them in the Power BI service
+description: Learn what a paginated report is, how they work, and how to view and export them in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: christopher.finlan
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/21/2022
+ms.date: 01/10/2023
 LocalizationGroup: Common tasks
 ---
 # Paginated reports in the Power BI service
@@ -22,10 +22,10 @@ Power BI reports are optimized for exploration and interactivity. A sales report
 
 ## Identify a paginated report
 
-In content lists and on your Home landing page, paginated reports can be identified by their icon ![paginated report icon](media/end-user-paginated-report/power-bi-report-icon.png).  A paginated report can be shared with you directly, or as part of a [Power BI app](end-user-apps.md). If the report *designer* gave you permissions, you'll be able to re-share the paginated report and subscribe yourself and others.
+In content lists and on your Home landing page, paginated reports can be identified by their icon :::image type="icon" source="media/end-user-paginated-report/power-bi-report-icon.png":::. A paginated report can be shared with you directly, or as part of a [Power BI app](end-user-apps.md). If the report *designer* gave you permissions, you'll be able to re-share the paginated report and subscribe yourself and others.
 
 
-![Screenshot showing Report list with one standard report and one paginated report.](./media/end-user-paginated-report/power-bi-report-lists.png)
+![Screenshot showing the report list with one standard report and one paginated report.](./media/end-user-paginated-report/power-bi-report-lists.png)
 
 ## What is a paginated report?
 
@@ -39,15 +39,15 @@ When report *designers* create a paginated report, they're really creating a *re
 
 Select a paginated report to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
 
-   ![Screenshot showing Parameters for the report.](./media/end-user-paginated-report/power-bi-select-parameters.png)
+   ![Screenshot showing the parameters for the report.](./media/end-user-paginated-report/power-bi-select-parameters.png)
 
-And that's typically the extent of the interaction - setting the parameters. If you're a billing analyst, you may use paginated reports to create or print invoices. If you're a sales manager, you may use paginated reports to view orders by store or sales person. 
+And that's typically the extent of the interaction - setting the parameters. If you're a billing analyst, you might use paginated reports to create or print invoices. If you're a sales manager, you might use paginated reports to view orders by store or sales person. 
 
-This simple paginated report generates profit by year, after you select the **Year** parameter. 
+This simple paginated report generates profit by year after you select the **Year** parameter. 
 
-![Screenshot showing Simple one parameter report.](./media/end-user-paginated-report/power-bi-one-parameter.png)
+:::image type="content" source="./media/end-user-paginated-report/power-bi-one-parameter.png" alt-text="Screenshot showing a report with the year parameter selected.":::
 
-Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support many more types of visuals, including custom visuals.
+Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support more types of visuals, including custom visuals.
 
 
 
@@ -61,38 +61,38 @@ The way you interact with a paginated report is different from other reports. Yo
 
 Paginated reports can have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice and repeating headers and footers. When you print this report, you'll get page breaks between invoices.
 
-   ![Screenshot showing Page one of a paginated report for Tailspin Toys.](./media/end-user-paginated-report/power-bi-paginated-500.png)
+   ![Screenshot showing a page of the paginated report for Tailspin Toys.](./media/end-user-paginated-report/power-bi-paginated-500.png)
 
 
 ### Navigate the paginated report
 
 In this sales order report, there are three parameters: Business type, Reseller, and Order number. 
 
-![Screenshot showing report with three parameters.](./media/end-user-paginated-report/power-bi-parameter-bar.png)
+:::image type="content" source="./media/end-user-paginated-report/power-bi-parameter-bar.png" alt-text="Screenshot showing the report with three parameters.":::
 
-To change the information being displayed, enter new values for the three parameters and select **View report**. Here, we've selected **Specialty bike shop**, **Alpine Ski House**, and order number **SO46085**. Selecting **View report** refreshes our report canvas with this new sales order.
+To change the information shown, enter new values for the three parameters and select **View report**. Here, we've selected **Specialty bike shop**, **Alpine Ski House**, and order number **SO46085**. Select **View report** to refresh the report canvas with the new sales order.
 
 ![Screenshot showing how to change the parameters.](./media/end-user-paginated-report/power-bi-orders.png)
 
-The new sales order displays, using the parameters we selected. 
+The new sales order shows the parameters we selected. 
 
-![Screenshot showing a new sales order.](./media/end-user-paginated-report/power-bi-new-orders.png)
+![Screenshot showing a sales order with new parameters.](./media/end-user-paginated-report/power-bi-new-orders.png)
 
-Some paginated reports have many pages.  Use the page controls to navigate through the report. 
+Some paginated reports have many pages. Use the page controls to navigate through the report. 
 
-![Screenshot showing page controls.](./media/end-user-paginated-report/power-bi-page-control.png)
+![Screenshot showing the page controls in the top menu bar.](./media/end-user-paginated-report/power-bi-page-control.png)
 
 ### Export the paginated report
-You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When you export, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep their formatting. 
+You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, and Excel. When you export, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep their formatting. 
 
-![Screenshot showing the formats for exporting a paginated report.](./media/end-user-paginated-report/power-bi-export-menu.png)
+:::image type="content" source="./media/end-user-paginated-report/power-bi-export-menu.png" alt-text="Screenshot showing the formats for exporting a paginated report.":::
 
-![Screenshot showing four different export types.](./media/end-user-paginated-report/power-bi-four.png)
+[![Screenshot showing four different export types.](./media/end-user-paginated-report/power-bi-four.png)](./media/end-user-paginated-report/power-bi-four.png#lightbox)
 
 ### Subscribe to the paginated report
-When you subscribe to a paginated report, Power BI sends you an email with the report as an attachment. In setting up your subscription, you choose how often you want to receive the emails: daily, weekly, hourly, or monthly. The subscription contains an attachment of the entire report output, up to 25MB in size. Export the entire report or choose the parameters ahead of time. Choose from many different attachment types, including Excel, PDF, PowerPoint, and more.  
+When you subscribe to a paginated report, Power BI sends you an email with the report as an attachment. When you set up your subscription, you choose how often you want to receive the emails: daily, weekly, hourly, or monthly. The subscription contains an attachment of the entire report output, up to 25MB in size. Export the entire report, or choose the parameters ahead of time. Choose from many attachment types, like Excel, PDF, and PowerPoint.  
 
-![Screenshot showing Export formats for subscribing.](./media/end-user-paginated-report/power-bi-export-subscription-choices.png)
+![Screenshot showing the export formats for subscribing.](./media/end-user-paginated-report/power-bi-export-subscription-choices.png)
 
 ## Considerations and troubleshooting
 

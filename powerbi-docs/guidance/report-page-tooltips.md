@@ -1,7 +1,7 @@
 ---
 title: Extend visuals with report page tooltips
 description: Guidance for working with report page tooltips.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi

@@ -46,9 +46,9 @@ In addition to the natively supported data sources, the following data sources c
 | Data source | Enterprise gateway | VNet gateway |
 | --- | --- | --- |
 | SQL Server (supports SSO) | ✔️ | ✔️ |
-| SQL Server Analysis Services | ✔️ | ✔️|
+| SQL Server Analysis Services (supports SSO) | ✔️ | ✔️|
 | Oracle (supports SSO) | ✔️ | |
-| Teradata | ✔️ | |
+| Teradata (supports SSO) | ✔️ | |
 | ODBC | ✔️ | |
 
 For paginated reports, Azure Analysis Services currently can't be accessed using either a Power BI enterprise gateway or a VNet gateway. When you authenticate with SSO, service principal isn't supported.

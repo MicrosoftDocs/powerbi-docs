@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Departmental BI"
 description: "Learn how Power BI departmental BI is about business unit content distribution."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -54,7 +54,7 @@ The following are some key points to emphasize about the departmental BI scenari
 
 ### Source file storage
 
-[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and interactive reports. For departmental BI, it's important to store the source Power BI Desktop file in a secure, shared location. Locations such as OneDrive for Business or SharePoint (not depicted in the scenario diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
+[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and interactive reports. For departmental BI, it's important to store the source Power BI Desktop file in a secure, shared location. Locations such as OneDrive for work or school or SharePoint (not depicted in the scenario diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
 
 When the co-management of a BI solution involves multiple people with different skillsets, consider decoupling the model and reports into separate Power BI Desktop files (described in the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario). This approach encourages reuse of the dataset and is more efficient than continually alternating between the people who are editing the Power BI Desktop file. That's particularly helpful when, for instance, one person works on the dataset while another person works on the reports.
 
