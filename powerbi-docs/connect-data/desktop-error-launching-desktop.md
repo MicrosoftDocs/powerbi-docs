@@ -22,7 +22,7 @@ You can't open encrypted PBIX files by using a Power BI Desktop version that doe
 
 ## On-premises data gateway issues
 
-Users who installed and are running previous versions of the Power BI on-premises data gateway can be blocked from opening Power BI Desktop. Previous versions of the on-premises data gateway placed administrative policy restrictions on named pipes on the local machine.
+Users who installed and are running earlier versions of the Power BI on-premises data gateway can be blocked from opening Power BI Desktop. Previous versions of the on-premises data gateway placed administrative policy restrictions on named pipes on the local machine.
 
 **Solution:** To resolve the issue associated with the on-premises data gateway and enable Power BI Desktop to open, use one of the following options:
 
@@ -70,7 +70,7 @@ The message might include further information, such as the following details:
 **Solution:** Reinstall WebView2 by using the following steps, which don't require elevated administrative permissions.
 
 1. Uninstall webview2.
-1. Reinstall webview2 by using the [installation link](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
+1. Reinstall webview2 by using this [installation link](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
 
 ## Issues related to WebView2
 
@@ -85,7 +85,7 @@ Most cases are caused by a program on your machine, usually antivirus software. 
 
    ![Screenshot of the System Properties window with Environment Variables highlighted.](media/desktop-error-launching-desktop/environment-variables.png)
 
-   Select **New** under **User variables** and add variable name *WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS* with value *--disable-features=RendererCodeIntegrity*.
+   Select **New** under **User variables** and add variable name *WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS* with the value *--disable-features=RendererCodeIntegrity*.
 
    :::image type="content" source="media/desktop-error-launching-desktop/environment-variable-new-user-variable.png" alt-text="Screenshot of the new User variable and value.":::
  
@@ -190,7 +190,7 @@ When you try to create a new connection or connect to an existing Power BI datas
 
 This situation can happen if your machine has a security product such as Digital Guardian or other security products installed. In some cases, the installed security product can interfere with outgoing network connection request calls, causing the connection attempt to time out or fail.
 
-**Solution:** Try disabling the security product, and then attempt the connection again. If the connection succeeds after you disable the security product, you know that the security product was the cause of the connection failure.
+**Solution:** Try disabling the security product, and then attempt the connection again. If the connection succeeds after you disable the security product, you know that the security product was probably the cause of the connection failure.
 
 ## Other launch issues
 
