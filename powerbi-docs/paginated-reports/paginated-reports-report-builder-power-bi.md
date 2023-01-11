@@ -8,7 +8,7 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 10/27/2022
+ms.date: 01/11/2023
 ---
 
 # What are paginated reports in Power BI?
