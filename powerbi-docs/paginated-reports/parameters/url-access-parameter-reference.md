@@ -1,5 +1,5 @@
 ---
-title: "URL access parameter reference | Microsoft Docs"
+title: "URL access parameter reference for paginated reports| Microsoft Docs"
 description: Use the parameters in this article as part of a URL to configure the look and feel of your Reporting Services reports.
 ms.date: 05/22/2020
 
@@ -15,17 +15,11 @@ ms.assetid: 1c3e680a-83ea-4979-8e79-fa2337ae12a3
 author: maggiesMSFT
 ms.author: maggies
 ---
-# URL access parameter reference
+# URL access parameter reference for paginated reports
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  You can use the following parameters as part of a URL to configure the look and feel of your paginated reports. The most common parameters are listed in this section. Parameters are case-insensitive and begin with the parameter prefix *rs:* if directed to the report server and *rc:* if directed to an HTML Viewer. You can also specify parameters that are specific to devices or rendering extensions. For more information about device-specific parameters, see [Specify device information settings in a URL](../reporting-services/specify-device-information-settings-in-a-url.md).
-  
-> [!IMPORTANT]  
->  For a SharePoint mode report server it's important that the URL includes the `_vti_bin` proxy syntax to route the request through SharePoint and the Reporting Services HTTP proxy. The proxy adds context to the HTTP request that's required to ensure proper execution of the report for SharePoint mode report servers. For examples, see [Access report server items using URL access](../reporting-services/access-report-server-items-using-url-access.md).
-> 
-> Reporting Services integration with SharePoint is no longer available after SQL Server 2016.
-  
+  You can use the following parameters as part of a URL to configure the look and feel of your paginated reports. The most common parameters are listed in this section. Parameters are case-sensitive and begin with the parameter prefix *rp:*. You can also specify parameters that are specific to rendering extensions. 
 
 ##  <a name="bkmk_htmlviewer"></a> HTML Viewer commands (rc:)
  - HTML Viewer commands are used to target the HTML Viewer and are prefixed with *rc:*:
