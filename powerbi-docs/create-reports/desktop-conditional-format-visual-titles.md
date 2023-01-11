@@ -24,7 +24,7 @@ Creating dynamic titles, sometimes called *expression-based titles*, is straight
 
 The first step in creating an expression-based title is to create a field in your model to use for the title.
 
-There are all sorts of creative ways to have your visual title reflect what you want it to say or what you want to express. Let's take a look at a couple examples.
+There are all sorts of creative ways to have your visual title reflect what you want it to say or what you want to express. Let's take a look at a couple of examples.
 
 You can create an expression that changes based on the filter context that the visual receives for the product's brand name. The following image shows the DAX formula for such a field.
 
@@ -72,6 +72,6 @@ There are a few limitations to the current implementation of expression-based ti
 
 This article described how to create DAX expressions that turn the titles of your visuals into dynamic fields that can change as users interact with your reports. You might find the following articles useful as well.
 
-* [Conditional formatting in tables](desktop-conditional-table-formatting.md)
-* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
-* [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
+* [Apply conditional formatting in tables and matrixes](desktop-conditional-table-formatting.md)
+* [Use cross-report drillthrough in Power BI](desktop-cross-report-drill-through.md)
+* [Set up drillthrough in Power BI reports](desktop-drillthrough.md)
