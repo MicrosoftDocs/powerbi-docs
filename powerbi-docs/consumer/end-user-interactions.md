@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page contain that data change based on your selection.
+One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain the same data change based on your selection.
 
 ![Animation selecting data points in one visual, which shows how other visuals are effected.](media/end-user-interactions/interactions.gif)
 
