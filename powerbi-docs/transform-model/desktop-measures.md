@@ -1,6 +1,6 @@
 ---
 title: Measures in Power BI Desktop
-description: Learn how to create and use measures, including quick measures and DAX syntax, in Power BI Desktop to help you create insights for your data.
+description: Learn how you can create and use measures, including quick measures and DAX syntax in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -37,7 +37,7 @@ DAX formulas are a lot like Excel formulas. DAX even has many of the same functi
 
 Jan is a sales manager at Contoso. Jan has been asked to provide reseller sales projections over the next fiscal year. Jan decides to base the estimates on last year's sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
 
-To report the estimates, Jan imports last year's sales data into Power BI Desktop. Jan finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Jan renames the **SalesAmount** field to *Last Years Sales*. Jan then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as single value that is the sum of all reseller sales from last year.
+To report the estimates, Jan imports last year's sales data into Power BI Desktop. Jan finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Jan renames the **SalesAmount** field to *Last Years Sales*. Jan then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that is the sum of all reseller sales from last year.
 
 Jan notices that even without specifying a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
 
@@ -69,7 +69,7 @@ Measures have a *Home* table that defines where they're found in the field list.
 
 You can also organize fields in a table into *Display Folders*. Select **Model** from the left edge of the Power BI Desktop. In the **Properties** pane, select the field you want to move from the list of available fields. Enter a name for a new folder in **Display folder** to create a folder. Creating a folder moves the selected field into that folder.
 
-:::image type="content" source="media/desktop-measures/measures-04.gif" alt-text="Video showing the creation of a field for measures.":::
+:::image type="content" source="media/desktop-measures/measures-04.gif" alt-text="Animation that shows the steps to create.":::
 
 You can create subfolders by using a backslash character. For example, *Finance\Currencies* creates a *Finance* folder and within it, a *Currencies* folder.
 
@@ -80,10 +80,10 @@ You can create a special table that contains only measures. That table always ap
 :::image type="content" source="media/desktop-measures/measures-05.png" alt-text="Screenshot of the changed fields list.":::
 
 > [!TIP]
-> Hidden measures are displayed and accessible in Power BI Desktop, however, you will not see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
+> Hidden measures are displayed and accessible in Power BI Desktop, however, you won't see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
 
 ## Learn more
 
 We’ve only provided you with a quick introduction to measures here. There’s a lot more to help you learn how to create your own. For more information, see [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md). You can download a sample file and get step-by-step lessons on how to create more measures.  
 
-To dive a little deeper into DAX, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). The [Data Analysis Expressions Reference](/dax/) provides detailed articles on each of the functions, syntax, operators, and naming conventions. DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services. There are many other great resources available, too. Be sure to check out the [DAX Resource Center Wiki](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), where influential members of the BI community share their knowledge of DAX.
+To dive a little deeper into DAX, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). The [Data Analysis Expressions Reference](/dax/) provides detailed articles on each of the functions, syntax, operators, and naming conventions. DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services. There are many other great resources available, too. Be sure to check out the [DAX Resource Center Wiki](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), where influential members of the BI community share their knowledge of DAX.
