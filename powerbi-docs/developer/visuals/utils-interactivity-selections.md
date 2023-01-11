@@ -72,7 +72,7 @@ Usually, data points contain selections and values. The interface extends the `S
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-## Define an interface for data points
+## Defining an interface for data points
 
 1. Create an instance of interactivity utils and save the object as a property of the visual.
 
