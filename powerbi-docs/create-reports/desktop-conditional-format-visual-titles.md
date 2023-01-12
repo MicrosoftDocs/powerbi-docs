@@ -28,7 +28,7 @@ There are all sorts of creative ways to have your visual title reflect what you 
 
 You can create an expression that changes based on the filter context that the visual receives for the product's brand name. The following image shows the DAX formula for such a field.
 
-![Screenshot showing the DAX formula: Line chart title = "Units by Time and Class for " & Selected Value (Sales[Brand Name]).](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
+![Screenshot showing the DAX formula: Line chart title = "Units by Time and Class for " & SELECTEDVALUE(Sales[BrandName]).](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
 Another example is using a dynamic title that changes based on the user's language or culture. You can create language-specific titles in a DAX measure by using the `USERCULTURE()` function. This function returns the culture code for the user, based on their operating system or browser settings. You can use the following DAX switch statement to select the correct translated value.
 
