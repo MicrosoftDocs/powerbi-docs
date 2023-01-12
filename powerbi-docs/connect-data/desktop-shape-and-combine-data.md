@@ -108,7 +108,8 @@ These changes are described in the following steps.
 
     :::image type="content" source="media/desktop-shape-and-combine-data/remove-columns-button.png" alt-text="Screenshot of Power Query Editor's Home menu with the Remove Columns button highlighted.":::
 
-   >[!NOTE] The **New score** values haven't changed, due to the ordering of the steps. Power Query Editor records the steps sequentially, yet independently, of each other. To apply actions in a different sequence, you can move each applied step up or down. 
+   > [!NOTE] 
+   > The **New score** values haven't changed, due to the ordering of the steps. Power Query Editor records the steps sequentially, yet independently, of each other. To apply actions in a different sequence, you can move each applied step up or down. 
 
 1. Right-click a step to see its context menu.
 
