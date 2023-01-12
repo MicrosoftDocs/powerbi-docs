@@ -12,7 +12,7 @@ ms.date: 01/12/2023
 
 # Color utils
 
-This article will help you to install, import, and use color utils. This article describes how to use color utils to apply themes and palettes on Power BI visual's data points.
+This article will help you to install, import, and use color utils. Learn how to use color utils to apply themes and palettes on a Power BI visual's data points.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ To user interactivity utils, you have to import the required component in the so
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
 ```
 
-Learn how to install and use the ColorUtils in your Power BI visuals:
+Learn how to install and use the colorUtils in your Power BI visuals:
 
 * [Usage Guide]
 The Usage Guide describes a public API of the package. It provides a description and examples for each public interface.
@@ -194,7 +194,7 @@ This method returns the theme color.
 getHighContrastColor(themeColorName?: ThemeColorName, defaultColor?: string): string;
 ```
 
-#### Example related to high-contrast mode usage
+#### High-contrast mode example
 
 ```typescript
 
