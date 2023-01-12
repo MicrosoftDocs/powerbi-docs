@@ -33,7 +33,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 Here are the prerequisites for creating the paginated report:
 
-- Install [Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder). 
+- Install [Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center for free.
 - Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab. Remember the user name and password you created in Azure.
 
 License requirements for publishing Power BI paginated reports (.rdl files) are the same as for Power BI reports (.pbix files).

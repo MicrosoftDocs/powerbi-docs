@@ -19,9 +19,8 @@ This article provides information and links to several sample Power BI paginated
 
 ## Prerequisites
 
-
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-- OK, you're ready to download these sample paginated reports from GitHub! You don't need a GitHub account. 
+- Now you're ready to download these sample paginated reports from GitHub. You don't need a GitHub account. 
 
 ## Download the reports
 
