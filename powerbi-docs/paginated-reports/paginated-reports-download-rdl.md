@@ -19,7 +19,7 @@ This article explains how to create a paginated report from a Power BI report or
 ## Prerequisites 
 
 - To create a Power BI paginated report in the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
-- You can create it in My Workspace. For any other workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+- You can create it in My Workspace. For any other workspace, you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
 
 ## Create the paginated report
 
@@ -27,7 +27,7 @@ This article explains how to create a paginated report from a Power BI report or
 
 1. There are three different ways you can create a paginated report from the Power BI service:
 
-    In list view, select **More options (...)** for a Power BI report, then select **Create paginated report**. 
+    In list view, select **More options (...)** for a Power BI report, then choose **Create paginated report**. 
 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-download-rdl.png" alt-text="Screenshot of Create a paginated report from a Power BI report in the Power BI service.":::
 
