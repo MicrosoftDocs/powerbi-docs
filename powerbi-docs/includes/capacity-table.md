@@ -5,12 +5,13 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 01/11/2023
+ms.date: 01/12/2023
 ms.custom: include file
 ---
 
-| Capacity SKUs | Capacity v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | Dataset DirectQuery/Live connection (per second)<sup>1, 2</sup> | Dataset max memory per query (GB)<sup>1, 2</sup> | Dataset model refresh parallelism<sup>2</sup> | Dataflow parallel tasks<sup>5</sup> | Export API max concurrent pages<sup>6</sup>|
+| Capacity          |     | Dataset |        |     |       | Dataflow | Export API |
 | ----------------- | --- | ------- | ------ | --- | ----- | -------- | ---------- |
+| **Capacity SKUs** | **V-cores** | **Max memory (GB)**<sup>1, 2, 3</sup> | **DirectQuery/Live connection (per second)**<sup>1, 2</sup> | **Max memory per query (GB)**<sup>1, 2</sup> | **Model refresh parallelism**<sup>2</sup> | **Dataflow parallel tasks**<sup>5</sup>  | **Max concurrent pages**<sup>6</sup> |
 | EM1/A1            |   1 |   3 |   3.75 |  1  |   5  |  4 |  20 |
 | EM2/A2            |   2 |   5 |   7.5  |  2  |  10  |  8 |  25 |
 | EM3/A3            |   4 |  10 |  15    |  2  |  20  | 16 |  35 |
@@ -24,7 +25,7 @@ ms.custom: include file
 
 <sup>2</sup> These limits only apply to the dataset workload per capacity.
 
-<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
+<sup>3</sup> The *Max memory (GB)* column under the *Dataset* header represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
 
 <sup>4</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
