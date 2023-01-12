@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Workspace-level workspace planning"
 description: "This article introduces the Power BI workspace tactical planning decisions you should make at the workspace level."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Workspace-level workspace planning
@@ -63,9 +63,9 @@ One of the key areas of the Power BI adoption roadmap is [content ownership and 
 
 The secondary objective for a Power BI workspace is to distribute content to consumers who need to view the content. There are several different ways to approach content distribution in the Power BI service:
 
-- **Reports can be viewed using a Power BI app:** Content stored in a non-personal workspace can be published to a Power BI app. A Power BI app is a more user-friendly experience than viewing reports directly in a workspace. For this reason, using a Power BI app is the best approach for distributing content to consumers. Sometimes the goals for how you want to distribute content with an app are a significant factor in determining how to organize content in or across workspaces.
+- **Reports can be viewed by using a Power BI app:** Content stored in a non-personal workspace can be published to a Power BI app. A Power BI app is a more user-friendly experience than viewing reports directly in a workspace. For this reason, using a Power BI app is the best approach for distributing content to consumers. Audiences for a Power BI app are very flexible. However, sometimes the goals for how you want to distribute content with an app are a factor in determining how to organize content in or across workspaces. For more information about securing Power BI apps, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#power-bi-app-permissions) article.
 - **Reports can be viewed directly in the workspace:** This approach is often appropriate for informal, collaborative workspaces. Workspace roles define who can view or edit the content contained in a workspace.
-- **Reports can be shared:** Use of [sharing](/power-bi/collaborate-share/service-share-dashboards) (links or direct access) is useful when there's a need to provide read-only access to a single item within a workspace. We recommend that you use app permissions and workspace roles instead of sharing because they're easier to maintain.
+- **Reports can be shared:** Use of [sharing](/power-bi/collaborate-share/service-share-dashboards) (links or direct access) is useful when there's a need to provide read-only access to a single item within a workspace. We recommend that you use app permissions and workspace roles instead of sharing because they're easier to maintain. For more information, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) article.
 - **Reports can be embedded in another application and viewed there:** Sometimes the intention is for consumers to view Power BI content that's embedded in another application. Embedding content is useful when it makes sense for the user to remain in the application so they stay within its workflow.
 
 Another key area of the Power BI adoption roadmap is content delivery scope. The ways that a workspace will support content distribution will differ based on the content delivery scope:
@@ -273,7 +273,7 @@ When planning to use groups, you might consider creating one group per role per 
 - *Power BI **app viewers** – Quarterly Financials*
 
 > [!TIP]
-> Creating the groups listed above provides flexibility. However, it involves creating and managing many groups. Also, managing a large number of groups can be challenging when groups are only created and maintained by IT. This challenge can be mitigated by enabling [self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management#self-service-group-management-scenarios) to certain satellite members. These members can include the Center of Excellence (COE), champions, or trusted users who have been trained in how to manage role memberships for their business unit.
+> Creating the groups listed above provides flexibility. However, it involves creating and managing many groups. Also, managing a large number of groups can be challenging when groups are only created and maintained by IT. This challenge can be mitigated by enabling [self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management#self-service-group-management-scenarios) to certain satellite members. These members can include the Center of Excellence (COE), champions, or trusted users who have been trained in how to manage role memberships for their business unit. For more information, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md#planning-for-power-bi-groups) article.
 
 When data workspaces are separated from reporting workspaces, as discussed earlier in this article, it results in an even larger number of groups. Consider how the number of groups doubles from five to 10 when you separate data and reporting roles:
 
@@ -303,7 +303,7 @@ The effective use of groups for workspace roles can require considerable plannin
 Lastly, the examples show one workspace - *Quarterly Financials* - but often it's possible to manage a collection of workspaces with one set of groups. For example, multiple workspaces owned and managed by the finance team could use the same groups.
 
 > [!NOTE]
-> You'll often plan security more broadly, taking into consideration dataset [read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) requirements, and row-level security (RLS) requirements. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
+> You'll often plan security more broadly, taking into consideration dataset [Read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) permission requirements, and row-level security (RLS) requirements. For more information about what to consider for security planning, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

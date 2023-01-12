@@ -20,7 +20,8 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 * **.csv**
 * **.xml**
 * **.mhtml**
-* **Image** When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are:
+* **Image**  
+  When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are:
 
   * *.tiff* (default)
   * *.bmp*

@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/14/2022
+ms.date: 12/30/2022
 LocalizationGroup: Create reports
 ---
 # Customize tooltips in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Tooltips are an elegant way of providing more contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop. You can customize tooltips in Power BI Desktop and in the Power BI service.
+Tooltips are an elegant way of providing contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop. You can customize tooltips in Power BI Desktop and in the Power BI service.
 
 ![Screenshot showing the default tooltip.](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-When a visualization is created, the default tooltip displays the data point's value and category. There are many instances when customizing the tooltip information is useful. Customizing tooltips provides additional context and information for users viewing the visual. Custom tooltips enable you to specify additional data points that display as part of the tooltip.
+When a visualization is created, the default tooltip displays the data point's value and category. There are many instances when customizing the tooltip information is useful. Customizing tooltips provides context and information for users viewing the visual. Custom tooltips enable you to specify more data points that display as part of the tooltip.
 
 ## How to customize tooltips
 
@@ -32,7 +32,7 @@ Once tooltips are added to **Tooltips**, hovering over a data point on the visua
 
 ## Customize tooltips with aggregation or quick measures
 
-You can further customize a tooltip by selecting an aggregation function. Select the arrow beside the field in the **Tooltips** bucket. Then, select from the available options.
+You can further customize a tooltip by selecting an aggregation function. Select the arrow beside the field in the **Tooltips** bucket. Then select from the available options.
 
 ![Screenshot showing tooltip with quick measure.](media/desktop-custom-tooltips/custom-tooltips-4.png)
 

@@ -23,7 +23,7 @@ Sovereign clouds support Multi-Geo across regions within that cloud.
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support for Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](../enterprise/service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](../enterprise/service-premium-gen2-what-is.md).
 
 
 > [!NOTE]
@@ -97,7 +97,7 @@ Large-storage format datasets shouldn't be moved from the region where they were
 
 ## Next steps
 
-- [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+- [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
 - [Multi-Geo support for Power BI Embedded](../developer/embedded/embedded-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
@@ -111,4 +111,4 @@ Power BI has released Power BI Premium Gen2, which improves the Power BI Premium
 - Autoscaling
 - Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](../enterprise/service-premium-what-is.md#power-bi-premium-generation-2).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](../enterprise/service-premium-gen2-what-is.md).

@@ -74,7 +74,7 @@ constructor(options: VisualConstructorOptions)
   * `locale`, returns a locale string, see [Localization](./localization.md)
   * `instanceId`, returns a string to identify the current visual instance
   * `colorPalette`, returns the colorPalette required to apply colors to your data
-  * `fetchMoreData`, supports using more data than the standard limit (1K rows)
+  * `fetchMoreData`, supports using more data than the standard limit (1K rows), see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
 
     ```typescript
@@ -121,7 +121,7 @@ public update(options: VisualUpdateOptions): void
 
 ## getFormattingModel *(optional)*
 
-This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns `FormattingModel` with all information on the properties pane design, hierarchy, properties and latest formatting values.
+This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane.md) with all information on the properties pane design, hierarchy, properties and latest formatting values.
 
 ```typescript
 getFormattingModel(): visuals.FormattingModel;
