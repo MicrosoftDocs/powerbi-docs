@@ -14,9 +14,9 @@ LocalizationGroup: Connect to data
 
 This article describes data types that Power BI Desktop and Data Analysis Expressions (DAX) support.
 
-When you load data, Power BI Desktop tries to convert the data types of source columns into data types that support more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop converts the data column to a Whole number data type, which is better suited for storing integers.
+When you load data, Power BI Desktop tries to convert the data types of source columns into data types that support more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop converts the data column to a **Whole number** data type, which is better suited for storing integers.
 
-This concept is important because some DAX functions have special data type requirements. In many cases DAX *implicitly* converts data types, as described later in this article, but in some cases it doesn't. For instance, if a DAX function requires a Date data type, but the data type for your column is Text, the DAX function won't work correctly. So it's important and useful to use the correct data type for a column.
+This concept is important because some DAX functions have special data type requirements. In many cases DAX *implicitly* converts data types, as described later in this article, but in some cases it doesn't. For instance, if a DAX function requires a **Date** data type, but the data type for your column is **Text**, the DAX function won't work correctly. So it's important and useful to use the correct data type for a column.
 
 ## Determine and specify a column's data type
 
@@ -30,7 +30,7 @@ In Data View or Report View, select the column, and then select
 
 ![Screenshot of Data Review, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-The Data Type dropdown selection in Power Query Editor has two data types not present in Data View or Report View: **Date/Time/Timezone** and **Duration**. When you load a column with these data types into the model and view it in Data View or Report view, a **Date/Time/Timezone** column converts into a **Date/time** data type, and a **Duration** column converts into a **Decimal number** data type.
+The Data Type dropdown selection in Power Query Editor has two data types not present in Data View or Report View: **Date/Time/Timezone** and **Duration**. When you load a column with these data types into the Power BI model and view it in Data View or Report view, a **Date/Time/Timezone** column converts into a **Date/time** data type, and a **Duration** column converts into a **Decimal number** data type.
 
 The **Binary** data type isn't supported outside of the Power Query Editor. In the Power Query Editor, you can use the **Binary** data type when you load binary files if you convert it to other data types before loading it into the Power BI model. The **Binary** selection exists in the Data View and Report View menus for legacy reasons, but if you try to load **Binary** columns into the Power BI model, you might run into errors.
 
@@ -140,17 +140,17 @@ In Power Query Editor, the resulting data is shown as follows.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Screenshot of textual data with various leading and trailing spaces in Power Query Editor.":::
 
-When you go to the **Data** tab in Power BI after you load the data, the same table looks like the following image.
+When you go to the **Data** tab in Power BI after you load the data, the same table looks like the following image, with the same number of rows as before.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-05.png" alt-text="Screenshot of the same textual data after loading into Power BI returns the same number of rows as before.":::
 
 However, a visual based on this data returns just two rows.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-text-06.png" alt-text="Screenshot of a table visual based on the same data returns just two lines of data - the first row has a total index of 60 and the second row has a total index of 11.":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-06.png" alt-text="Screenshot of a table visual based on the same data returning just two lines of data.":::
 
-As the above image shows, the first row has a total value of '60' for the *Index* field, which leads to the conclusion that the first row in the visual represents the last two rows of the data loaded previously, whereas the second row with total *Index* value of '11' represents the first two rows. The difference between the number of rows between the visual and the data table is caused by the engine automatically removing (trimming) any trailing spaces, but not any leading spaces. So the first and second row and the third and fourth row are deemed the same and therefore the visual returns these results.
+In the preceding image, the first row has a total value of *60* for the **Index** field, so the first row in the visual seems to represent the last two rows of the loaded data. The second row with total **Index** value of *11* represents the first two rows. The difference in the number of rows between the visual and the data table is caused by the engine automatically removing or trimming trailing spaces, but not leading spaces. So the first and second row and the third and fourth row are evaluated as identical, and therefore the visual returns these results.
 
-This behavior can occur when working with visuals, and also with error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following image.
+This behavior can also cause error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following image.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-08.png" alt-text="Screenshot of an error message showing: Column 'Name' in Table 'Customers' contains a duplicate value 'Dylan Williams' and this is not allowed for columns on the one side of a many-to-one relationship or for columns that are used as the primary key of a table.":::
 
@@ -158,9 +158,10 @@ In other situations, you might be unable to create a many-to-one or one-to-one r
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Screenshot of the relationship dialog showing a 'the cardinality you selected isn't valid for this relationship' error, which is related to duplicate values being detected.":::
 
-These errors are traced back to leading or trailing spaces and can be resolved by using the [Text.Trim](/powerquery-m/text-trim) function to remove the spaces in the Data Transformation window.
+You can trace these errors back to leading or trailing spaces and resolve them by using the [Text.Trim](/powerquery-m/text-trim) function to remove the spaces in the Data Transformation window.
 
-### True/false type
+## True/false type
+
 **True/False** – A Boolean value of either a True or False.
 
 Power BI converts and displays data differently in certain situations. This section describes common cases of converting Boolean values, and how to address conversions that create unexpected results in Power BI.  
@@ -201,123 +202,123 @@ Once the data type is changed and republished to the Power BI service, and when 
 
 In summary, when working with Boolean data in Power BI, make sure your columns are set to the **True/False** data type in Power BI Desktop.
 
-### Blanks/nulls type
-**Blank** - Is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the [BLANK](/dax/blank-function-dax) function, and test for blanks by using the [ISBLANK](/dax/isblank-function-dax) logical function.
+## Blank type
 
-### Binary data type
+**Blank** is a DAX data type that represents and replaces SQL nulls. You can create a blank by using the [BLANK](/dax/blank-function-dax) function, and test for blanks by using the [ISBLANK](/dax/isblank-function-dax) logical function.
 
-The Binary data type can be used to represent any other data with a binary format. Inside the Power Query Editor, you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. Binary columns aren't supported in the Power BI data model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.
+## Binary type
 
-
-
+The **Binary** data type can be used to represent any data with a binary format. In the Power Query Editor, you can use this data type when loading binary files if you convert it to other data types before you load it into the Power BI model. Binary columns aren't supported in the Power BI data model. The **Binary** selection exists in the Data View and Report View menus for legacy reasons, but if you try to load binary columns to the Power BI model, you might run into errors.
 
 > [!NOTE]
->  If a binary column is in the output of the steps of a query, attempting to refresh the data through a gateway can cause errors. It's recommended that you explicitly remove any binary columns as the last step in your queries.    
-> 
+> If a binary column is in the output of the steps of a query, attempting to refresh the data through a gateway can cause errors. It's recommended that you explicitly remove any binary columns as the last step in your queries.
 
-### Table data type
-DAX uses a table data type in many functions, such as aggregations and time intelligence calculations. Some functions require a reference to a table; other functions return a table that can then be used as input to other functions. In some functions that require a table as input, you can specify an expression that evaluates to a table; for some functions, a reference to a base table is required. For information about the requirements of specific functions, see [DAX Function Reference](/dax/dax-function-reference).
+## Table type
+DAX uses a table data type in many functions, such as aggregations and time intelligence calculations. Some functions require a reference to a table. Other functions return a table that can then be used as input to other functions.
 
-## Implicit and explicit data type conversion in DAX formulas
-Each DAX function has specific requirements as to the types of data that are used as inputs and outputs. For example, some functions require integers for some arguments and dates for others; other functions require text or tables.
+In some functions that require a table as input, you can specify an expression that evaluates to a table. Some functions require a reference to a base table. For information about the requirements of specific functions, see the [DAX Function Reference](/dax/dax-function-reference).
 
-If the data in the column you specify as an argument is incompatible with the data type required by the function, DAX in many cases will return an error. However, wherever possible DAX will attempt to implicitly convert the data to the required data type. For example:
+## Implicit and explicit data type conversion
 
-* You can type a date as a string, and DAX will parse the string and attempt to cast it as one of the Windows date and time formats.
-* You can add TRUE + 1 and get the result 2, because TRUE is implicitly converted to the number 1 and the operation 1+1 is performed.
-* If you add values in two columns, and one value happens to be represented as text ("12") and the other as a number (12), DAX implicitly converts the string to a number and then does the addition for a numeric result. The following expression returns 44: = "22" + 22.
-* If you attempt to concatenate two numbers, DAX will present them as strings and then concatenate. The following expression returns "1234": = 12 & 34.
+Each DAX function has specific requirements for the types of data to use as inputs and outputs. For example, some functions require integers for some arguments and dates for others. Other functions require text or tables.
 
-### Table of implicit data conversions
-The type of conversion that is performed is determined by the operator, which casts the values it requires before performing the requested operation. These tables list the operators, and indicate the conversion that is performed on each data type in the column when it is paired with the data type in the intersecting row.
+If the data in the column you specify as an argument is incompatible with the data type the function requires, DAX in many cases returns an error. However, wherever possible DAX attempts to implicitly convert the data to the required data type.
+
+For example:
+
+- If you type a date as a string, DAX parses the string and tries to cast it as one of the Windows date and time formats.
+- You can add TRUE + 1 and get the result 2, because DAX implicitly converts TRUE to the number 1, and does the operation 1+1.
+- If you add values in two columns with one value represented as text ("12") and the other as a number (12), DAX implicitly converts the string to a number and then does the addition for a numeric result. The expression = "22" + 22 returns 44.
+- If you try to concatenate two numbers, DAX presents them as strings and then concatenates. The expression = 12 & 34 returns "1234".
+
+### Tables of implicit data conversions
+The operator determines the type of conversion DAX performs by casting the values it requires before doing the requested operation. The following tables list the operators, and the conversion DAX does on each data type when it pairs with the data type in the intersecting cell.
 
 > [!NOTE]
->  Text data types are not included in these tables. When a number is represented as in a text format, in some cases Power BI will attempt to determine the number type and represent it as a number.
-> 
-> 
+>  These tables don't include **Text** data type. When a number is represented in a text format, in some cases Power BI tries to determine the number type and represent the data as a number.
 
-**Addition (+)**
+#### Addition (+)
 
-| Operator(+) | INTEGER | CURRENCY | REAL | Date/time |
+|| INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |Date/time |
-| CURRENCY |CURRENCY |CURRENCY |REAL |Date/time |
-| REAL |REAL |REAL |REAL |Date/time |
-| Date/time |Date/time |Date/time |Date/time |Date/time |
+| **INTEGER** |INTEGER |CURRENCY |REAL |Date/time |
+| **CURRENCY** |CURRENCY |CURRENCY |REAL |Date/time |
+| **REAL** |REAL |REAL |REAL |Date/time |
+| **Date/time** |Date/time |Date/time |Date/time |Date/time |
 
-For example, if a real number is used in an addition operation in combination with currency data, both values are converted to REAL, and the result is returned as REAL.
+For example, if an addition operation uses a real number in combination with currency data, DAX converts both values to REAL and returns the result as REAL.
 
-**Subtraction (-)**
+#### Subtraction (-)
 
 In the following table, the row header is the minuend (left side) and the column header is the subtrahend (right side).
 
-| Operator(-) | INTEGER | CURRENCY | REAL | Date/time |
+|| INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |REAL |
-| CURRENCY |CURRENCY |CURRENCY |REAL |REAL |
-| REAL |REAL |REAL |REAL |REAL |
-| Date/time |Date/time |Date/time |Date/time |Date/time |
+| **INTEGER** |INTEGER |CURRENCY |REAL |REAL |
+| **CURRENCY** |CURRENCY |CURRENCY |REAL |REAL |
+| **REAL** |REAL |REAL |REAL |REAL |
+| **Date/time** |Date/time |Date/time |Date/time |Date/time |
 
-For example, if a date is used in a subtraction operation with any other data type, both values are converted to dates, and the return value is also a date.
+For example, if a subtraction operation uses a date with any other data type, DAX converts both values to dates, and the return value is also a date.
 
 > [!NOTE]
->    Data models also support the unary operator, - (negative), but this operator does not change the data type of the operand.
+> Data models support the unary operator, - (negative), but this operator doesn't change the data type of the operand.
 > 
 > 
 
-**Multiplication (*)**
+#### Multiplication (\*)
 
-| Operator(*) | INTEGER | CURRENCY | REAL | Date/time |
+|| INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |INTEGER |
-| CURRENCY |CURRENCY |REAL |CURRENCY |CURRENCY |
-| REAL |REAL |CURRENCY |REAL |REAL |
+| **INTEGER** |INTEGER |CURRENCY |REAL |INTEGER |
+| **CURRENCY** |CURRENCY |REAL |CURRENCY |CURRENCY |
+| **REAL** |REAL |CURRENCY |REAL |REAL |
 
-For example, if an integer is combined with a real number in a multiplication operation, both numbers are converted to real numbers, and the return value is also REAL.
+For example, if a multiplication operation combines an integer with a real number, DAX converts both numbers to real numbers, and the return value is also REAL.
 
-**Division (/)**
+#### Division (/)
 
 In the following table, the row header is the numerator and the column header is the denominator.
 
-| Operator(/) (Row/Column) | INTEGER | CURRENCY | REAL | Date/time |
+|| INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
-| INTEGER |REAL |CURRENCY |REAL |REAL |
-| CURRENCY |CURRENCY |REAL |CURRENCY |REAL |
-| REAL |REAL |REAL |REAL |REAL |
-| Date/time |REAL |REAL |REAL |REAL |
+|**INTEGER**|REAL |CURRENCY |REAL |REAL |
+|**CURRENCY**|CURRENCY |REAL |CURRENCY |REAL |
+|**REAL**|REAL |REAL |REAL |REAL |
+|**Date/time**|REAL |REAL |REAL |REAL |
 
-For example, if an integer is combined with a currency value in a division operation, both values are converted to real numbers, and the result is also a real number.
+For example, if a division operation combines an integer with a currency value, DAX converts both values to real numbers, and the result is also a real number.
 
 ### Comparison operators
-In comparison expressions, Boolean values are considered greater than string values and string values are considered greater than numeric or date/time values; numbers and date/time values are considered to have the same rank. No implicit conversions are performed for Boolean or string values; BLANK or a blank value is converted to 0/""/false depending on the data type of the other compared value.
+In comparison expressions, DAX considers Boolean values greater than string values, and string values greater than numeric or date/time values. Numbers and date/time values have the same rank. DAX doesn't do any implicit conversions for Boolean or string values. BLANK or a blank value is converted to 0, "", or false depending on the data type of the other compared value.
 
 The following DAX expressions illustrate this behavior:
 
-=IF(FALSE()\>"true","Expression is true", "Expression is false"), returns "Expression is true"
+- =IF(FALSE()\>"true","Expression is true", "Expression is false"), returns "Expression is true"
 
-=IF("12"\>12,"Expression is true", "Expression is false"), returns "Expression is true"
+- =IF("12"\>12,"Expression is true", "Expression is false"), returns "Expression is true"
 
-=IF("12"=12,"Expression is true", "Expression is false"), returns "Expression is false"
+- =IF("12"=12,"Expression is true", "Expression is false"), returns "Expression is false"
 
-Conversions are performed implicitly for numeric or date/time types as described in the following table:
+DAX does implicit conversions for numeric or date/time types as the following table describes:
 
 | Comparison Operator | INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
-| INTEGER |INTEGER |CURRENCY |REAL |REAL |
-| CURRENCY |CURRENCY |CURRENCY |REAL |REAL |
-| REAL |REAL |REAL |REAL |REAL |
-| Date/time |REAL |REAL |REAL |Date/Time |
+| **INTEGER** |INTEGER |CURRENCY |REAL |REAL |
+| **CURRENCY** |CURRENCY |CURRENCY |REAL |REAL |
+| **REAL** |REAL |REAL |REAL |REAL |
+| **Date/time** |REAL |REAL |REAL |Date/Time |
 
-### Handling blanks, empty strings, and zero values
-In DAX, a null, blank value, empty cell, or a missing value is all represented by the same new value type, a BLANK. You can also generate blanks by using the BLANK function, or test for blanks by using the ISBLANK function.
+### Blanks, empty strings, and zero values
+DAX represents a null, blank value, empty cell, or missing value by the same new value type, a BLANK. You can also generate blanks by using the BLANK function, or test for blanks by using the ISBLANK function.
 
-How blanks are handled in operations such as addition or concatenation depends on the individual function. The following table summarizes the differences between DAX and Microsoft Excel formulas, in the way that blanks are handled.
+How operations such as addition or concatenation handle blanks depends on the individual function. The following table summarizes the differences between how DAX and Microsoft Excel formulas handle blanks.
 
 | Expression | DAX | Excel |
 | --- | --- | --- |
-| BLANK + BLANK |BLANK |0(zero) |
+| BLANK + BLANK |BLANK |0 (zero) |
 | BLANK + 5 |5 |5 |
-| BLANK * 5 |BLANK |0(zero) |
+| BLANK \* 5 |BLANK |0 (zero) |
 | 5/BLANK |Infinity |Error |
 | 0/BLANK |NaN |Error |
 | BLANK/BLANK |BLANK |Error |
@@ -328,10 +329,9 @@ How blanks are handled in operations such as addition or concatenation depends o
 | BLANK OR BLANK |BLANK |Error |
 | BLANK AND BLANK |BLANK |Error |
 
-
 ## Next steps
 
-You can do all sorts of things with Power BI Desktop and data. For more information on its capabilities, check out the following resources:
+You can do all sorts of things with Power BI Desktop and data. For more information on Power BI capabilities, see the following resources:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
