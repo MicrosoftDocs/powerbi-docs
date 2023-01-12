@@ -67,7 +67,7 @@ axis.getRecommendedNumberOfTicksForYAxis(100);
 
 ### getBestNumberOfTicks
 
-Gets the optimal number of ticks based on minimum value, maximum value, measure metadata and max tick count;
+Gets the optimal number of ticks based on minimum value, maximum value, measure metadata, and max tick count.
 
 ```typescript
 function getBestNumberOfTicks(
@@ -172,7 +172,7 @@ axis.isOrdinal(type);
 
 ### isDateTime
 
-Checks if value is of DateTime type.
+Checks if a value is of the DateTime type.
 
 ```typescript
 function isDateTime(type: ValueTypeDescriptor): boolean;
@@ -540,7 +540,7 @@ The `DataLabelManager` class provides the following methods:
 
 ## hideCollidedLabels
 
-This method arranges the labels position and visibility on the canvas according to labels sizes and overlapping.
+This method arranges the labels position and visibility on the canvas according to label sizes and overlapping.
 
 ```typescript
 function hideCollidedLabels(
@@ -652,7 +652,7 @@ function enumerateCategoryLabels(
 
 ### createColumnFormatterCacheManager
 
-This function returns the Cache Manager that provides quick access to formatted labels
+This function returns the Cache Manager that provides quick access to formatted labels.
 
 ```typescript
 function createColumnFormatterCacheManager(): IColumnFormatterCacheManager;
@@ -678,7 +678,7 @@ let formattedValue = formatter.format(value);
 
 ## Legend service
 
-The `Legend` service provides helper interfaces for creating and managing Power BI legends for Power BI visuals
+The `Legend` service provides helper interfaces for creating and managing Power BI legends for Power BI visuals.
 
 The module provides the following functions and interfaces:
 
@@ -722,7 +722,7 @@ public constructor(options: VisualConstructorOptions) {
 
 ### ILegend
 
-This Interface implements all methods necessary for legend creation
+This Interface implements all methods necessary for legend creation.
 
 ```typescript
 export interface ILegend {
