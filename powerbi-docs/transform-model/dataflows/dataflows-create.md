@@ -1,6 +1,6 @@
 ---
 title: Creating a dataflow
-description: Learn about the different options to create a dataflow or build on top of an existing dataflow in PowerBI.
+description: Learn about the different options to create a dataflow or build on top of an existing dataflow in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -16,7 +16,7 @@ A **dataflow** is a collection of tables that are created and managed in workspa
 
 To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows aren't available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
 
-:::image type="content" source="media/dataflows-create/create-options.png" alt-text="Screenshot of options for creating a datflow.":::
+:::image type="content" source="media/dataflows-create/create-options.png" alt-text="Screenshot of options for creating a dataflow.":::
 
 There are multiple ways to create or build on top of a new dataflow:
 
@@ -32,13 +32,13 @@ The following sections explore each of these ways to create a dataflow in detail
 
 ## Create a dataflow by using define new tables
 
-By using the Define new tables option lets you define a new table and connect to a new data source.
+Using the Define new tables option lets you define a new table and connect to a new data source.
 
 :::image type="content" source="media/dataflows-create/create-connectors.png" alt-text="Screenshot showing options for data sources." lightbox="media/dataflows-create/create-connectors.png":::
 
 When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
 
-:::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of form after choosing azure sql as a connector.":::
+:::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of form after choosing Azure sql as a connector.":::
 
 Once connected, you can select which data to use for your table. When you choose data and a source, Power BI reconnects to the data source. The reconnection keeps the data in your dataflow refreshed at the frequency that you select later in the setup process.
 
