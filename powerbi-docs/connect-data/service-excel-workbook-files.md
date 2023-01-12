@@ -43,6 +43,7 @@ Mark data as specific data types in Excel to improve the Power BI experience. Po
 - True/false
 - Text
 
+
 ## Streamlined upload to Power BI
 There's a new, streamlined experience for uploading files to the Power BI service. In the workspace where you want to add the file, select the **Upload** option next to **New** at the top of the page. In the drop-down menu, select:
 
@@ -51,6 +52,7 @@ There's a new, streamlined experience for uploading files to the Power BI servic
 - **Browse** to upload files from your computer.
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-01.png" alt-text="Screenshot of the Upload menu options.":::
+
 
 If you choose to upload a local file, Power BI adds a copy of the file to the workspace. If you use the **OneDrive for Business** or **SharePoint** options, Power BI creates a connection to the file. As you make changes to the file in SharePoint, Power BI can automatically sync those changes about once an hour.
 
@@ -61,6 +63,7 @@ When you upload an Excel file, the workbook item appears in Power BI just like i
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-02.png" alt-text="Screenshot of an Excel workbook listed in Power BI.":::
 
 If you don't have a subscription, the **OneDrive for Business** and **SharePoint** options are disabled, but you can still select **Browse** to get local files from your computer. The following image shows the subscription options disabled, with the **Browse** option highlighted.
+
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screen shot of subscription services disabled.":::
 
@@ -93,11 +96,12 @@ Where you save your workbook file makes a difference.
 
 - **SharePoint - Team Sites**. Saving your Power BI Desktop files to SharePoint Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
+
 <a name="one-excel-workbook--two-ways-to-use-it"></a>
 ## Import or connect from OneDrive for Business
 If you save your workbook files to OneDrive for Business, you have a couple of ways to explore your data in Power BI, **Import** or **Connect**.
 
-![Screenshot of OneDrive for Business, showing the option to Import or Connect to Excel data.](media/service-excel-workbook-files/excel_import_connect.png)
+![Screenshot of OneDrive for work or school, showing the option to Import or Connect to Excel data.](media/service-excel-workbook-files/excel_import_connect.png)
 
 ### Import Excel data into Power BI
 When you choose **Import**, Power BI imports any supported data in tables and any data model into a new Power BI dataset.

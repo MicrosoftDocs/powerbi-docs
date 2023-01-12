@@ -1,8 +1,8 @@
 ---
 title: Power BI adoption roadmap
 description: An overview of the Power BI adoption roadmap series of articles.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
