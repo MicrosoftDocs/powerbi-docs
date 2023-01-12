@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-**APPLIES TO:** :::image type="icon" source="media/no-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;Desktop ::image type="icon" source="media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;service
+**APPLIES TO:** :::image type="icon" source="media/no-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;Desktop :::image type="icon" source="media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;service
