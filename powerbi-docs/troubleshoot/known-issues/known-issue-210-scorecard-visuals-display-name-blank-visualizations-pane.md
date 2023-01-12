@@ -13,7 +13,7 @@ ms.custom: known-issue-210
 
 When selecting the **Format visual** tab of the visualizations pane for scorecard visuals, you won't see the metrics card's display name.
 
-**APPLIES TO:** ✔️ Power BI metrics
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI metrics
 
 **Status:** Fixed: July 25, 2022
 
