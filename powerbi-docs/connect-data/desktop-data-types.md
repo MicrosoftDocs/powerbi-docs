@@ -72,7 +72,7 @@ Calculations that do equality-related comparisons between values of **Decimal nu
 
 This issue is most apparent when you use the [RANKX function](/dax/rankx-function-dax) in a DAX expression, which calculates the result twice, resulting in slightly different numbers. The difference between the two numbers isn't noticeable by the report user, but the rank result can be noticeably inaccurate. To avoid unexpected results, you can change the column data type from **Decimal number** to either **Fixed decimal number** or **Whole number**, or do a forced rounding by using [ROUND](/dax/round-function-dax). The **Fixed decimal number** data type has greater precision because the decimal separator always has four digits to its right.
 
-Rarely, calculations that sum the values of a column of **Decimal number** data type can return unexpected results. This result is most likely with columns that have large amounts of both positive numbers and negative numbers. The result of the sum is affected by the distribution of values across rows in the column. If a required calculation sums most of the positive numbers before summing most of the negative numbers, the large positive partial sum at the beginning can potentially skew the results. If the calculation happens to add balanced positive and negative numbers, the query retains more precision and therefore returns more accurate results. To avoid unexpected results, you can change the column data type from **Decimal number** to **Fixed decimal number** or **Whole number**.
+Rarely, calculations that sum the values of a column of **Decimal number** data type can return unexpected results. This result is most likely with columns that have large amounts of both positive numbers and negative numbers. The result of the sum is affected by the distribution of values across rows in the column. If a required calculation sums most of the positive numbers before summing most of the negative numbers, the large positive partial sum at the beginning can potentially skew the results. If the calculation happens to add balanced positive and negative numbers, the query retains more precision, and therefore returns more accurate results. To avoid unexpected results, you can change the column data type from **Decimal number** to **Fixed decimal number** or **Whole number**.
 
 ## Date/time types
 
@@ -98,7 +98,7 @@ The way Power BI stores text data can cause the data to display differently in c
 
 The engine that stores and queries data in Power BI is *case insensitive*, and treats different capitalization of letters as the same value. *A* is equal to *a*. However, Power Query is *case sensitive*. where *A* isn't the same as *a*. The difference in case sensitivity can lead to situations where text data seemingly inexplicably changes capitalization after loading into Power BI.
 
-The following example shows order data: An **OrderNo** column that's unique for each order, and an **Addressee** column that shows the addressee name entered manually at order time. Note that Power Query Editor shows several orders with the same **Addressee** names entered into the system with varying capitalizations.
+The following example shows order data: An **OrderNo** column that's unique for each order, and an **Addressee** column that shows the addressee name entered manually at order time. Power Query Editor shows several orders with the same **Addressee** names entered into the system with varying capitalizations.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Screenshot of textual data with various capitalizations in Power Query":::
 
@@ -110,7 +110,7 @@ This change happens because Power Query Editor is case sensitive, so it shows th
 
 When loading data, the Power BI engine evaluates each row individually, starting from the top. For each text column, such as **Addressee**, the engine stores a dictionary of unique values to improve performance through data compression. The engine sees the first three values in the **Addressee** column as unique and stores them in the dictionary. After that, because the engine is case insensitive, it evaluates the names as identical.
 
-*Taina Hasu* is the same as *TAINA HASU* and *Taina HASU*, so the engine doesn't store those variations, but instead refers to the first variation it stored. The name *MURALI DAS* appears in uppercase letters, because that's how the name appeared the first time the engine evaluated it when loading the data from top to bottom.
+*Taina Hasu* is the same as *TAINA HASU* and *Taina HASU*, so the engine doesn't store those variations, but refers to the first variation it stored. The name *MURALI DAS* appears in uppercase letters, because that's how the name appeared the first time the engine evaluated it when loading the data from top to bottom.
 
 This image illustrates the evaluation process:
 
@@ -125,7 +125,7 @@ For the fourth row, the engine compares the value against the names in the dicti
 
 ### Leading and trailing spaces
 
-The Power BI engine automatically trims any trailing spaces that follow text data, but doesn't remove leading spaces that precede the data. When you work with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion. If you don't remove leading or trailing spaces, you might fail to create a relationship because duplicate values are detected, or visuals might return unexpected results.
+The Power BI engine automatically trims any trailing spaces that follow text data, but doesn't remove leading spaces that precede the data. When you work with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion. If you don't remove leading or trailing spaces, a relationship might fail to create because of duplicate values, or visuals might return unexpected results.
 
 The following example shows data about customers: a **Name** column that contains the name of the customer and an **Index** column that's unique for each entry. The customer name repeats four times, but each time with different combinations of leading and trailing spaces. These variations can occur with manual data entry over time. The names appear within quotes for clarity.
 
@@ -166,39 +166,39 @@ You can trace these errors back to leading or trailing spaces and resolve them b
 
 Power BI converts and displays data differently in certain situations. This section describes common cases of converting Boolean values, and how to address conversions that create unexpected results in Power BI.  
 
-For the best and most consistent results, when loading a column that contains Boolean information (true/false) into Power BI, set the column type to *True/False* as described and explained in the following example.
+For the best and most consistent results, when loading a column that contains Boolean information (true/false) into Power BI, set the column type to **True/False**, as the following example explains.
 
-In this example, we loaded data about whether our customers have signed up for our newsletter: a value of *TRUE* indicates the customer has signed up for the newsletter, a value of *FALSE* indicates the customer has not signed up. However, when we publish the report to the Power BI service, we notice that the column tracking the newsletter sign-up status shows as *0* and *-1* instead of the expected values of *TRUE* or *FALSE*. The following collections of steps involving querying, publishing, and refreshing the data describe how conversions occur, and how to address them.
+In this example, you load data about whether your customers have signed up for your newsletter. A value of *TRUE* indicates the customer has signed up for the newsletter, and a value of *FALSE* indicates the customer hasn't signed up. However, when you publish the report to the Power BI service, you notice that the column tracking the newsletter signup status shows as *0* and *-1* instead of the expected values of *TRUE* or *FALSE*. The following steps describe how these conversions occur, and how to address them.
 
-The simplified query for this table shown in the following image.
+The simplified query for this table appears in the following image:
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-01.png" alt-text="Columns set to boolean":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-01.png" alt-text="Screenshot that shows columns set to Boolean.":::
 
-The data type of the **Subscribed To Newsletter** column is set to *Any*, and as a result of that data type setting, the data is loaded as text into the Power BI model:
+The data type of the **Subscribed To Newsletter** column is set to **Any**, and as a result, Power BI loads the data into the model as **Text**.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-02.png" alt-text="Data loaded into Power B I appears as expected":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-02.png" alt-text="Screenshot showing the data loaded into Power BI.":::
 
-When we add a simple visualization showing the detailed information per customer, the data appears in the visual as expected, both in Power BI Desktop, and when published to the Power BI service. 
+When you add a simple visualization that shows the detailed information per customer, the data appears in the visual as expected, both in Power BI Desktop and when published to the Power BI service.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-03.png" alt-text="Visual shows data appearing as expected":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-03.png" alt-text="Screenshot of a visual that shows the data appearing as expected.":::
 
-However, when we refresh the dataset in the Power BI service the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
+However, when you refresh the dataset in the Power BI service, the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-04.png" alt-text="Visual shows data appearing in an unexpected format after refresh":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-04.png" alt-text="Screenshot of a visual that shows data appearing in an unexpected format after refresh.":::
 
-If we republish the report from Power BI Desktop, the **Subscribed To Newsletter** column will again show *TRUE* or *FALSE* as we expect, but once a refresh occurs in the Power BI service, the values are again changed to show *-1* and *0*.
+If you republish the report from Power BI Desktop, the **Subscribed To Newsletter** column again shows *TRUE* or *FALSE* as you expect, but once a refresh occurs in the Power BI service, the values are again changed to show *-1* and *0*.
 
-The **solution** to ensure this doesn't happen is to set any Boolean columns to type **True/False** in Power BI Desktop, and republish your report.
+The solution to ensure that this situation doesn't happen is to set any Boolean columns to type **True/False** in Power BI Desktop, and republish your report.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-05.png" alt-text="Change the data type of the column to true false":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-05.png" alt-text="Screenshot of changing the data type of the column to True/False.":::
 
-When the change is made, the visualization shows the values in the **Subscribed To Newsletter** column slightly differently; rather than the text being all capital letters (as entered in the table), they are now italic and only the first letter is capitalized, which is the result of change the column's data type.
+When you make the change, the visualization shows the values in the **Subscribed To Newsletter** column slightly differently. Rather than the text being all capital letters as entered in the table, it's now in italics, and only the first letter is capitalized. This change is one result of changing the column's data type.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-06.png" alt-text="Values appear differently when the data type is changed":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-06.png" alt-text="Screenshot of values appearing differently when you change the data type.":::
 
-Once the data type is changed and republished to the Power BI service, and when a refresh occurs, the values are displayed as *True* or *False*, as expected.
+Once you change the data type and republish to the Power BI service, and a refresh occurs, the report displays the values as *True* or *False*, as expected.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-07.png" alt-text="When true or false values use the true false data type, data appears as expected after refresh":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-07.png" alt-text="Screenshot that shows true or false values that use the True/false data type appear as expected after refresh.":::
 
 In summary, when working with Boolean data in Power BI, make sure your columns are set to the **True/False** data type in Power BI Desktop.
 
