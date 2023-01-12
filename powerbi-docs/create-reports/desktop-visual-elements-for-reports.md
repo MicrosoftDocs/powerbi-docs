@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 With **Power BI Desktop** you can use visual elements, such as wallpaper and improved visual headers for visualizations, to enhance the appearance of your reports.
 
-![Add wallpaper and small visual headers to enhance reports](media/desktop-visual-elements-for-reports/visual-elements-for-reports_01.png)
+![Screenshot of a sample Power BI Desktop report with enhanced visuals.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_01.png)
 
 You can put enhancements to use in your reports and make your analytics and reports even more appealing than before. The enhancements discussed in this article include the following:
 
@@ -29,11 +29,11 @@ The following sections describe how to use these enhancements and how to apply t
 
 You can format the gray area outside your report page using **wallpaper**. The following image has a red box that clarifies where the wallpaper area applies.
 
-![Wallpaper covers the gray area around a report](media/desktop-visual-elements-for-reports/visual-elements-for-reports_02.png)
+![Screenshot of Power BI Desktop, highlighting  the wallpaper area.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_02.png)
 
-You can either set wallpaper on a per-report-page basis or have the same wallpaper for every page in your report. To set your wallpaper, tap or click the **Formatting** icon when no visual is selected in your report and the **Wallpaper** card appears in the pane.
+You can either set wallpaper on a per-report-page basis or have the same wallpaper for every page in your report. To set your wallpaper, select the **Formatting** icon when no visual is selected in your report and the **Wallpaper** card appears in the pane.
 
-![Wallpaper area in Formatting pane](media/desktop-visual-elements-for-reports/visual-elements-for-reports_03.png)
+![Screenshot of the Visualizations pane, highlighting the Wallpaper option.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_03.png)
 
 You can choose a color to apply as **wallpaper** by selecting the **Color** dropdown, or you can select the **Add Image** button to select an image to apply as wallpaper. You can also apply transparency to your wallpaper, whether it's a color or an image, using the **Transparency** slider.
 
@@ -49,9 +49,9 @@ For all new reports, the default settings are the following:
 * The report **page** is set to **white** and its transparency is set to **100%**.
 * The **wallpaper** is set to **white** and its transparency is set to **0%**.
 
-When you set your page background to greater than 50% transparency, a dotted border appears while you are creating or editing your report to show you the boundary of the report canvas border.
+When you set your page background to greater than 50% transparency, a dotted border appears while you're creating or editing your report to show you the boundary of the report canvas border.
 
-![Transparency greater than 50% results in dotted border](media/desktop-visual-elements-for-reports/visual-elements-for-reports_04.png)
+![Screenshot of the Visualizations pane, highlighting the Canvas background settings for a dotted border with a transparency greater than 50%.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_04.png)
 
 It's important to note that the dotted boundary *only* shows up when editing your report and does *not* appear for people who are viewing your published report, such as when it's viewed in the **Power BI service**.
 
@@ -64,15 +64,15 @@ The headers for visuals in reports have been significantly improved. The primary
 
 By default, the header appears inside the visual aligned with the title. In the following image, you can see the header (the pin icon, the expand icon, and the ellipses icon) within the visual and aligned to the right, along the same horizontal position as the visual's title.
 
-![Visual headers can now reside inside a visual or be moved](media/desktop-visual-elements-for-reports/visual-elements-for-reports_05.png)
+![Screenshot of a visual, showing the header alongside the title.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_05.png)
 
 If your visual doesn't have a title, the header floats above the top of the visual aligned to the right, as shown in the following image.
 
-![Visual headers float above visuals if no title exists](media/desktop-visual-elements-for-reports/visual-elements-for-reports_07.png)
+![Screenshot of a visual, showing the header at the top right of the visual.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_07.png)
 
 If your visual is positioned all the way to the top of your report, the visual header instead snaps to the bottom of the visual.
 
-![Visual headers snap to the bottom when bordering the top of the report](media/desktop-visual-elements-for-reports/visual-elements-for-reports_08.png)
+![Screenshot of a visual, showing the header at the bottom of the visual.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_08.png)
 
 Each visual also has a card in the **Formatting** section of the **Visualizations** pane called **Visual header**. You can adjust all sorts of characteristics of the visual header.
 
@@ -83,17 +83,17 @@ Each visual also has a card in the **Formatting** section of the **Visualization
 
 For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace > Reports**, selecting a report, and then selecting the **Settings** icon. There you see settings for the report for which you selected **Settings** and you can adjust the settings from there, as shown in the following image.
 
-![Settings in the Power BI service to use improved visual headers](media/desktop-visual-elements-for-reports/visual-elements-for-reports_10.png)
+![Screenshot of the settings for a report in the Power BI service.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_10.png)
 
 ### Enabling improved visual headers for existing reports
 
 The new visual header is the default behavior for all new reports. For existing reports, you need to enable this behavior in **Power BI Desktop** by going to **File > Options and settings > Options** and then in the **Report settings** section, enable the **Use the modern visual header with updated styling options** checkbox.
 
-![Existing reports must mark the Options checkbox to use improved visual headers](media/desktop-visual-elements-for-reports/visual-elements-for-reports_06.png)
+![Screenshot of the Options menu, highlighting Report settings and the Use the modern visual header with updated styling options checkbox.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_06.png)
 
 ## Next steps
 
-For more information about **Power BI Desktop**, and how to get started, check out the following articles.
+For more information about **Power BI Desktop**, and how to get started, see the following articles:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
