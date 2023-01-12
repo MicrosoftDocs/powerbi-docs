@@ -26,7 +26,7 @@ The columns of the list of workspaces are described below
 | --------- | --------- |
 | **Name** | The name given to the workspace. |
 | **Description** | The information that is given in the description field of the workspace settings. |
-| **Type** | The type of workspace. There are three types of workspaces, **Workspace**, **Personal Group** ("My workspace"), and **Admin Workspace**. |
+| **Type** | The type of workspace. There are three types of workspaces, **Workspace**, **Personal Group** ("My workspace") ![Screenshot of personal workspace icon.](./media/service-admin-portal-workspaces/personal-workspace-icon.png), and **Admin monitoring**[Screenshot of admin monitoring workspace icon.](./media/service-admin-portal-workspaces/admin-monitoring-workspace-icon.png). |
 | **State** | The state lets you know if the workspace is available for use. There are five states, **Active**, **Orphaned**, **Deleted**, **Removing**, and **Not found**. For more information, see [Workspace states](#workspace-states). |
 | **Capacity name** | Name given to the workspace's capacity. |
 | **Capacity SKU Tier** | The type of license used for the workspace's capacity. Capacity SKU Tiers include **Premium Gen2** and **Premium Per User (PPU)**. For more information about capacity tiers, see [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md). |
