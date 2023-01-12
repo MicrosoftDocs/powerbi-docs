@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/11/2023
+ms.date: 01/12/2023
 ---
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 
 It's powerful to use common phrases and natural language to ask questions of your data. It's even more powerful when your data answers. When you ask Power BI Q&A a question, it makes a best effort to answer correctly. You can edit the linguistic schema to improve the Q&A answers for even better interactions.
@@ -28,7 +28,7 @@ Linguistic schemas are saved in a .yaml format. This format is related to the po
 
 ## Prerequisites
 
-- Read the article [Improving your data model for Q&A](q-and-a-best-practices.md) to learn about tips for designing and improving your data model. It provides an important section about adding synonyms. 
+- See [Best practices to optimize Q&A in Power BI](q-and-a-best-practices.md) to learn about tips for designing and improving your data model. It provides an important section about adding synonyms. 
 - Download the sample [.yaml and .pbix files](https://go.microsoft.com/fwlink/?linkid=871858).   
 - Install a .yaml file editor. We recommend [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -337,4 +337,4 @@ If you make a change to a .lsdl.yaml file that doesn't conform to the linguistic
 
 ![Screenshot of a sample .yaml file showing errors.](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)
