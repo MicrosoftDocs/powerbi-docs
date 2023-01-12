@@ -27,15 +27,15 @@ For example, imagine you're a personnel manager who has a table of **Northwest E
 
 **Northwest Employees**
 
- :::image type="content" source="media/desktop-calculated-tables/calctables_nwempl.png" alt-text="Screenshot of Power BI Desktop showing tabular data of Northwest Employees.":::
+ :::image type="content" source="media/desktop-calculated-tables/calctables_nwempl.png" alt-text="Screenshot of the Northwest employees table.":::
 
 **Southwest Employees**
 
- :::image type="content" source="media/desktop-calculated-tables/calctables_swempl.png" alt-text="Screenshot of Power BI Desktop showing tabular data of Southwest Employees.":::
+ :::image type="content" source="media/desktop-calculated-tables/calctables_swempl.png" alt-text="Screenshot of the Southwest employees table.":::
 
 In Report View, Data View, or Model View of Power BI Desktop, in the **Calculations** group select **New table**. It's a bit easier to do in **Table tools** in the Data View, because then you can immediately see your new calculated table.
 
- :::image type="content" source="media/desktop-calculated-tables/calctables_formulabarempty.png" alt-text="Screenshot of the new table in Data View.":::
+ :::image type="content" source="media/desktop-calculated-tables/calctables_formulabarempty.png" alt-text="Screenshot of the Power BI Desktop menu ribbon with Table tools, New table and Data view highlighted.":::
 
 Enter the following formula in the formula bar:
 
@@ -47,7 +47,7 @@ A new table named **Western Region Employees** is created, and appears just like
 
  :::image type="content" source="media/desktop-calculated-tables/calctables_westregionempl.png" alt-text="Screenshot of the new calculated table.":::
 
- :::image type="content" source="media/desktop-calculated-tables/calctables_fieldlist.png" alt-text="Screenshot of the new table in Fields pane.":::
+ :::image type="content" source="media/desktop-calculated-tables/calctables_fieldlist.png" alt-text="Screenshot of the new table in the Fields pane.":::
 
 ## Functions for calculated tables
 
