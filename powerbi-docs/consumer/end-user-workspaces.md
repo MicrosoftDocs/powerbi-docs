@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/29/2022
+ms.date: 01/12/2023
 ms.custom: licensing support
 LocalizationGroup: Consumers
 ---
