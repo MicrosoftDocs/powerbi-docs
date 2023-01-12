@@ -67,7 +67,7 @@ To launch a Python IDE from Power BI Desktop, take the following steps:
 
 6. Your specified Python IDE is launched by Power BI Desktop, as shown in the following image. In this image, Visual Studio Code is the default Python IDE.
 
-   :::image type="content" source="media/desktop-python-ide/python-ide-7.png" alt-text="Screenshot of the Python IDE, showing it in Visual Studio Code." lightbox="media/desktop-python-ide/python-ide-7.png:::   
+   :::image type="content" source="media/desktop-python-ide/python-ide-7.png" alt-text="Screenshot of the Python IDE, showing it in Visual Studio Code." lightbox="media/desktop-python-ide/python-ide-7.png":::
 
    > [!NOTE]
    > Power BI Desktop adds the first three lines of the script so it can import your data from Power BI Desktop once you run the script.
