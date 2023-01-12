@@ -14,7 +14,7 @@ ms.custom: known-issue-211
 The GetVisuals() client side API doesn't return the visual title correctly when called before the report renders.
 
 
-**APPLIES TO:** ✔️ Power BI Service
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Service
 
 **Status:** Fixed: July 25, 2022
 

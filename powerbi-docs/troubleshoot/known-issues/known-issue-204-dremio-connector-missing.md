@@ -13,7 +13,7 @@ ms.custom: known-issue-204
 
 We recently enabled Cloud based refresh for Dremio, removing its gateway requirement.  However, there has been a recent update that has put the Dremio connector back into the "gateway only" category.
 
-**APPLIES TO:** ✔️ Power BI Service
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Service
 
 **Status:** Fixed: July 25, 2022
 
