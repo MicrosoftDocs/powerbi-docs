@@ -88,7 +88,7 @@ To gain access to a particular My workspace
 > [!NOTE]
 > Once access is obtained, the ribbon and the More options (...) menu will show **Remove Access** for the same My workspace. If you do not remove access by selecting one of these options, access will automatically be revoked for the admin after 24-hours. The My workspace owner's access remains intact.
 
-When you got access, the My workspace will show up in the list of workspaces accessible from the navigation pane. The icon ![Screenshot of personal workspace icon in the list of workspaces table explanation.](./media/service-admin-portal-workspaces/personal-workspace-icon.png) indicates that it is a My workspace.
+Once you have access, the My workspace will show up in the list of workspaces accessible from the navigation pane. The icon ![Screenshot of personal workspace icon in the list of workspaces table explanation.](./media/service-admin-portal-workspaces/personal-workspace-icon.png) indicates that it is a My workspace.
 
 Once you go inside the My workspace, you’ll be able to perform any actions as if it's your own My workspace. You can view and make any changes to the contents, including sharing or unsharing. But you can't grant anyone else access to the My workspace.  
 
