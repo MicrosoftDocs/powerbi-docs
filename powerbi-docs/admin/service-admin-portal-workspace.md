@@ -56,14 +56,17 @@ Additional notes on deletion of empty workspaces:
 
 ## Users can reassign personal workspaces 
 
-*My workspace* is a personal workspace that any Power BI user can own and manage their content.
+Personal workspaces are the My workspaces that every user has for their personal content. Power BI and capacity admins can [designate a preferred capacity for My workspaces](../enterprise/service-admin-premium-manage.md#designate-a-default-capacity-for-my-workspaces). By default, however, My workspace owners can still change the capacity assignment of their workspace. If a Power BI or capacity admin designates a Premium capacity as the default capacity for My workspaces, but a My workspace owner then changes that capacity assignment back to shared capacity, this could result in non-compliance with data residency requirements.
 
-Power BI tenant admins can now manage and designate a preferred capacity to a personal workspace. See [Govern My workspaces](./service-admin-portal-workspaces.md#govern-my-workspaces) for detail. However, the owner of My workspace can still change the preferred capacity. If the My workspace owner move their My workspace back to Pro capacity, which is Shared capacity, it could cause the content contained within the workspace to be non-compliant for data residency requirements. The Power BI tenant admin can turn off the **Users can reassign personal workspaces** tenant setting to prevent My workspace owners from reassigning the capacity of their My workspace.
+To prevent such a scenario, the Power BI admin can turn off the **Users can reassign personal workspaces** tenant setting. When this setting is off, My workspace owners can't change the capacity assignment of their My workspace.
 
-To prevent My workspace owners from reassigning their My workspace to a different capacity:
-1. Go to the Power BI Admin portal and select **Tenant settings**. 
+To turn off the setting:
+1. Go to the Power BI Admin portal and select **Tenant settings**.
 1. In the tenant settings, scroll down to the **Workspace settings** section.
-1. Find the setting called **Users can reassign personal workspaces**. By default, this setting is on, which means any My workspace user can reassign their My workspace capacity. To prevent users from being able to reassign the capacity of their My workspace, turn the setting off.
+1. Find the setting called **Users can reassign personal workspaces**. By default, this setting is on, which means that any My workspace owner can reassign their My workspace capacity. To prevent users from being able to reassign the capacity of their My workspace, turn the setting off.
+
+For more information about My workspace governance, see [Govern My workspaces](./service-admin-portal-workspaces.md#govern-my-workspaces).
+
 
 ## Next steps
 
