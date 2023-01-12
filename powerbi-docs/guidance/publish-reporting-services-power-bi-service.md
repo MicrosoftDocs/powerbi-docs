@@ -7,7 +7,7 @@ ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cookiemccray
-ms.date: 12/15/2022
+ms.date: 1/12/2023
 ms.custom:
 ---
 
@@ -147,7 +147,8 @@ Select a report to view it in the Power BI service.
 
 If you'd like to disable the migration setting, you need to update your report server. For more information on server properties, see the article [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services):
 
-- EnablePowerBIReportMigrate and 
+- EnablePowerBIReportMigrate
+- PowerBIMigrateCountLimit
 - PowerBIMigrateUrl 
  
 For sovereign clouds, you can update the Power BI endpoints by changing the site settings in the web portal.  
