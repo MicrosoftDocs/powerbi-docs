@@ -65,8 +65,7 @@ To turn off the setting:
 1. In the tenant settings, scroll down to the **Workspace settings** section.
 1. Find the setting called **Users can reassign personal workspaces**. By default, this setting is on, which means that any My workspace owner can reassign their My workspace capacity. To prevent users from being able to reassign the capacity of their My workspace, turn the setting off.
 
-For more information about My workspace governance, see [Govern My workspaces](./service-admin-portal-workspaces.md#govern-my-workspaces).
-
+For more information, see [Prevent My workspace owners from reassigning their My workspaces to a different capacity](./service-admin-portal-workspaces.md#prevent-my-workspace-owners-from-reassigning-their-my-workspaces-to-a-different-capacity).
 
 ## Next steps
 
