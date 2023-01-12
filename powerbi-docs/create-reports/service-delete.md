@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 01/12/2023
 LocalizationGroup: Common tasks
 ---
 # Delete almost anything in the Power BI service
@@ -19,7 +19,7 @@ This article shows you how to delete a dashboard, report, workbook, dataset, app
 ## Delete a dashboard, report, dataset, or workbook
 
 1. In your workspace, select the **All** tab.
-1. Select **More options (...)** next to the asset you want to delete, and select **Delete**.
+1. Select **More options (...)** next to the asset you want to delete, and choose **Delete**.
 
     ![Screenshot of the Power BI service, highlighting the more options icon and Delete.](media/service-delete/power-bi-delete-dashboard.png)
 
@@ -30,7 +30,7 @@ This article shows you how to delete a dashboard, report, workbook, dataset, app
 You can easily remove apps from your apps list page. Removing an app doesn't delete the app for other members. Only an admin or a member of a workspace can permanently delete the app from that workspace.
 
 1. In the nav pane, select **Apps** to open the apps list page.
-2. Hover over the app you want to delete, select **More options (...)**, and then select **Delete**.
+2. Hover over the app you want to delete, select **More options (...)**, and then choose **Delete**.
 
    ![Screenshot of the apps list page, highlighting the more options icon and Delete.](media/service-delete/power-bi-delete-app.png)
 
@@ -49,7 +49,7 @@ Only workspace admins can remove people from a workspace. If you're an admin, yo
 
     :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Screenshot of the workspace list view, highlighting Access.":::
 
-1. In the **Access** pane, select **More options (...)** next to the name of the person you want to remove, and select **Remove**.
+1. In the **Access** pane, select **More options (...)** next to the name of the person you want to remove, and choose **Remove**.
 
     :::image type="content" source="media/service-delete/power-bi-access-remove.png" alt-text="Screenshot of the Access pane, highlighting the more options icon and Remove.":::
 
