@@ -56,7 +56,7 @@ The steps you specify (such as rename a table, transform a data type, or delete 
      - **Promoted Headers**: Changing the top row of data into column headers.
      - **Changed Type**: Changing the column types, which are imported as text, to their inferred types. 
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/power-query-editor-query-settings-dialog.png" alt-text="Screenshot of the Power Query Editor window with Query Settings highlighted.":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/power-query-editor-query-settings-dialog.png" alt-text="Screenshot of the Power Query Editor window with Query Settings highlighted." lightbox="media/desktop-shape-and-combine-data/power-query-editor-query-settings-dialog.png":::
 
 1. Change the table name from the default `Table 1` to `Retirement Data`, then press **Enter**.
 
@@ -76,7 +76,7 @@ The steps you specify (such as rename a table, transform a data type, or delete 
  
 1. Make sure the status message is *No syntax errors have been detected*, and select **OK**.
 
-    :::image type="content" source="media/desktop-shape-and-combine-data/custom-column-dialog.png" alt-text="Screenshot of Power Query Editor's Custom Column dialog shwowing the new column name, custom column formula, and no syntax errors.":::
+    :::image type="content" source="media/desktop-shape-and-combine-data/custom-column-dialog.png" alt-text="Screenshot of Power Query Editor's Custom Column dialog showing the new column name, custom column formula, and no syntax errors.":::
 
 1. In **Query Settings**, the **APPLIED STEPS** list now shows the new **Added Custom** step we just defined. 
 
@@ -108,7 +108,7 @@ These changes are described in the following steps.
 
     :::image type="content" source="media/desktop-shape-and-combine-data/remove-columns-button.png" alt-text="Screenshot of Power Query Editor's Home menu with the Remove Columns button highlighted.":::
 
-   Note the **New score** values haven't changed, due to the ordering of the steps. Power Query Editor records the steps sequentially, yet independently, of each other. To apply actions in a different sequence, you can move each applied step up or down. 
+   >[!NOTE] The **New score** values haven't changed, due to the ordering of the steps. Power Query Editor records the steps sequentially, yet independently, of each other. To apply actions in a different sequence, you can move each applied step up or down. 
 
 1. Right-click a step to see its context menu.
 
@@ -212,7 +212,7 @@ To get the data into shape, follow these steps:
 
 1. Remove all unneeded columns. Because we need only the mapping of each state to its official two-letter abbreviation (**Name and status of region** and **ANSI** columns), we can remove the other columns. First select the **Name and status of region** column, then hold down the **CTRL** key and select the **ANSI** column. From the **Home** tab on the ribbon, select **Remove Columns \> Remove Other Columns**.
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/state-table-remove-other-columns.png" alt-text="Screenshot of Power Query Editor highlighting the Remove Columns dropdown and the Remove Other Columns item.":::
+   :::image type="content" source="media/desktop-shape-and-combine-data/state-table-remove-other-columns.png" alt-text="Screenshot of Power Query Editor highlighting the Remove Columns dropdown and the Remove Other Columns item." lightbox="media/desktop-shape-and-combine-data/state-table-remove-other-columns.png":::
 
    > [!NOTE]
    > The *sequence* of applied steps in Power Query Editor is important, and affects how the data is shaped. It’s also important to consider how one step might impact another subsequent step. For example, if you remove a step from the applied steps, subsequent steps might not behave as originally intended.
@@ -259,7 +259,7 @@ In this case, we want to merge the queries:
 
    Power Query Editor creates a new column at the end of the query, which contains the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the column, but you can **Expand** the table and include whichever columns you want.
 
-1. To expand the merged table, and select which columns to include, select the expand icon (:::image type="icon" source="media/desktop-shape-and-combine-data/icon.png" alt-text="Expand icon.":::). 
+1. To expand the merged table, and select which columns to include, select the expand icon (:::image type="icon" source="media/desktop-shape-and-combine-data/icon.png":::). 
 
    The **Expand** window appears.
 
