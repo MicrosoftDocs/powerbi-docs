@@ -1,6 +1,6 @@
 ---
-title: Single Sign-On in the Power BI mobile Windows app
-description: Set up Single Sign-On (SSO) in the Power BI mobile Windows app so that you can access all your applications and resources by signing in only once.
+title: Single sign-on in the Power BI mobile Windows app
+description: Set up single sign-on (SSO) in the Power BI mobile Windows app so that you can access all your applications and resources by signing in only once.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -10,9 +10,9 @@ ms.topic: how-to
 ms.date: 01/09/2023
 ---
 
-# Single Sign-On in the Power BI mobile Windows app
+# Single sign-On in the Power BI mobile Windows app
 
-Read about Single Sign-On (SSO) in the Power BI mobile Windows app. SSO means you access all the applications and resources you need to do business by signing in only once, with a single user account. Once you're signed in, you can access all those applications without having to authenticate again.
+Read about single sign-on (SSO) in the Power BI mobile Windows app. SSO means you access all the applications and resources you need to do business by signing in only once, with a single user account. Once you're signed in, you can access all those applications without having to authenticate again.
 
 Because the Power BI Windows app is integrated into Azure Active Directory, you can use your primary organizational account not only to sign in to your domain-joined devices, but also to sign in to the Power BI service. If you're viewing Power BI on a Windows phone, make sure the account you use for Power BI is configured as a work or school account in the device settings.  
 
