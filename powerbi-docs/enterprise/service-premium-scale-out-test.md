@@ -1,0 +1,155 @@
+---
+title: Power BI Premium Scale-out test
+description: Learn how test the Power BI Premium Scale-out feature after it's enabled
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-premium
+ms.topic: tutorial
+ms.date: 01/12/2023
+LocalizationGroup: Premium
+---
+
+# Tutorial: Test Power BI Query Scale Out
+
+This tutorial details how you can test the [Power BI Query Scale Out](service-premium-scale-out.md) feature after it's enabled.
+
+1. [Step 1 - Create a scale out query](#step-1---create-a-scale-out-query)
+
+2. [Step 2 - Create a time column](#step-2---create-a-time-column)
+
+3. [Step 3 - Connect to the read/write dataset copy](#step-3---connect-to-the-readwrite-dataset-copy-optional) (optional)
+
+4. [Step 4 - Validate the read/write connection](#step-4---validate-the-readwrite-connection-optional) (optional)
+
+### Step 1 - Create a scale out query
+
+1. Open Power BI Desktop and sign into your account.
+
+2. Select **Transform data** to open the Power BI *Power Query Editor*.
+
+    :::image type="content" source="media/service-premium-scale-out-test/transform-data.png" alt-text="A screenshot highlighting the transform data button in Power B I Desktop.":::
+
+3. In the Power BI *Power Query Editor*, select **New Source**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/new-source.png" alt-text="A screenshot highlighting the new source button in the power query editor in Power B I Desktop.":::
+
+4. In the *Get Data* pop-up window, select **Blank Query** and select **Connect**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/blank-query.png" alt-text="A screenshot highlighting the blank query option in the get data window in Power B I Desktop.":::
+
+5. Select *Query 1*, and then select **Advanced editor**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/advanced-editor.png" alt-text="A screenshot highlighting the advanced editor button in the power query editor in Power B I Desktop.":::
+
+6. Enter the following *M Formula language* code.
+
+    ```
+    let 
+        Source = "Dataset last refreshed:",    
+        #"Converted to Table" = #table(1, {{Source}}), 
+        #"Renamed Columns" = Table.RenameColumns(#"Converted to Table",{{"Column1", "RefreshInfo"}}) 
+    in 
+        #"Renamed Columns"
+
+7. Select **Done**.
+
+8. In the *Power Query Editor* select **Close & Apply**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/close-and-apply.png" alt-text="A screenshot showing the close and apply button in the power query editor in Power B I Desktop.":::
+
+### Step 2 - Create a time column
+
+1. In Power BI Desktop select **Data**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/data.png" alt-text="A screenshot showing the data button highlighted in Power B I Desktop.":::
+
+2. In the *Fields* pane, select **Query 1**.
+
+3. Select **New column**.
+
+4. Enter the following DAX expression to define a new calculated column.
+
+    ```dax
+    Time = NOW()
+    ```
+
+    :::image type="content" source="media/service-premium-scale-out-test/time-now-dax-query.png" alt-text="A screenshot showing the time equals now dax query.":::
+
+5. Select **Report**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/report.png" alt-text="A screenshot showing the report button highlighted in Power B I Desktop.":::
+
+6. Select **Publish** and in the *Microsoft Power BI Desktop* pop-up window, select **Save**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/publish-dataset.png" alt-text="A screenshot showing the Microsoft Power B I Desktop pop up window after the publish button is selected. The publish and save buttons are highlighted.":::
+
+7. in the *Publish to Power BI* pop-up window, select the workspace you want to enable scale out for, and then select **Select**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/publish.png" alt-text="A screenshot showing the publish to Power B I pop up window in the Power B I Desktop.":::
+
+### Step 3 - Connect to the read/write dataset copy (optional)
+
+By default, Power BI Desktop connects to the *read-only* dataset copy. To connect to the *read/wrtie* replica, follow these steps:
+
+1. In SQL Server Management Studio (SSMS), expand *Databases* and select the uploaded Power BI dataset.
+
+2. Run a simple DAX query such as:
+
+    ```dax
+    Evaluate Query1
+    ```
+
+    :::image type="content" source="media/service-premium-scale-out-test/evaluate-query.png" alt-text="A screenshot showing the evaluate query 1 D A X query in S Q L Server Management Studio.":::
+
+### Step 4 - Validate the read/write connection (optional)
+
+If you followed [step 4](#step-4---connect-to-the-readwrite-dataset-copy-optional), you're connected to the *read/write* dataset copy. You can validate this connection by following these steps:
+
+1. In SQL Server Management Studio (SSMS), right-click your dataset, select **Process Database**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/process-database.png" alt-text="A screenshot showing the process database option highlighted in S Q L Server Management Studio.":::
+
+2. In the *Process Database* dialog box, select **OK**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/process-database-dialog.png" alt-text="A screenshot showing the process database window with the O K button highlighted.":::
+
+3. Once the process completes successfully, select **Close** and close the *Process Database* window.
+
+4. In the DAX query window, execute the query *Evaluate Query1* again.
+
+5. Switch back to Power BI Desktop, and select **Refresh**. Power BI Desktop shows the old time because it's connected to the *read-only* replica. SQL Server Management Studio (SSMS) shows the new time because it's connected to the *read/write* replica.
+
+    :::image type="content" source="media/service-premium-scale-out-test/refresh.png" alt-text="A screenshot showing the refresh button in Power B I Desktop.":::
+
+6. In SQL Server Management Studio (SSMS), expand your query and then expand **Tables**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/expand-tables.png" alt-text="A screenshot showing query 1 in the expanded tables view in S Q L Server Management Studio.":::
+
+7. Right-click *Query 1*, and then select **Script table as > Create Or Replace To > New Query Editor Window**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/new-query-editor.png" alt-text="A screenshot showing selecting Script table as, then Create Or Replace To, then New Query Editor Window in S Q L Server Management Studio.":::
+
+8. In the Tabular Model Scripting Language (TMSL) script file, change the table `name` property to `RefreshTimeTable` and select **execute**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/refresh-time-table.png" alt-text="A screenshot showing changing the name property in table, to RefreshTimeTable in the in the Tabular Model Scripting Language (T M S L) script file in S Q L Server Management Studio.":::
+
+9. In SQL Server Management Studio (SSMS), right-click the *Tables* node and then select **Refresh**.
+
+    :::image type="content" source="media/service-premium-scale-out-test/refresh-time-table.png" alt-text="A screenshot showing the refresh option after right clicking the table node in S Q L Server Management Studio.":::
+
+    The *Query 1* table name changes to *RefreshTimeTable*.
+
+    :::image type="content" source="media/service-premium-scale-out-test/new-table-name.png" alt-text="A screenshot showing that the table name is now RefreshTimeTable in S Q L Server Management Studio.":::
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Power BI Query Scale Out](service-premium-scale-out.md)
+
+> [!div class="nextstepaction"]
+> [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)
+
+> [!div class="nextstepaction"]
+> [Compare scale-out dataset copies](service-premium-scale-out-app.md)
