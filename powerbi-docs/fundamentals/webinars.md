@@ -162,7 +162,7 @@ by Kim Manis and Lukasz Pawlowski
 
 Watch recorded sessions at any time.
 
-Leverage M365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data
+Leverage Microsoft 365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data
 <br>by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
 [Register to watch](/microsoft-365/compliance/sensitivity-labels)
 
