@@ -60,32 +60,36 @@ This slicer filters data by district manager. If you want to follow along with t
 
 This slicer filters data by district manager. If you want to follow along with this procedure, use the built-in Retail Analysis Sample.
 
-1. Open the Power BI service, then click on **Get data** in the bottom left corner.
+1. In the Power BI service (app.powerbi.com), select **Learn** in the left nav.
 
-2. On the Get Data page that appears, select **Samples**.
+2. On the Learning center page, under **Sample reports**, scroll until you see the **Retail Analysis Sample**.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-service-learning-center-samples.png" alt-text="Screenshot of the Learning center page with the Retail Analysis Sample.":::
 
-3. Select the **Retail Analysis Sample**, and choose **Connect**.
+3. Select the **Retail Analysis Sample**. It opens in Reading mode.
 
-4. Click **Edit** on the menu bar to display the **Visualizations** pane, then select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: to create a new slicer.
+4. Select **Edit** on the menu bar to display the **Visualizations** pane, then select the **Slicer** icon :::image type="icon" source="media/power-bi-visualization-slicers/slicer-icon.png"::: to create a new slicer.
 
 ---
 5. With the new slicer selected, from the **Fields** pane, expand the **District** table and select **DM** to populate the slicer.
 
    The new slicer is now populated with a list of district manager names and their selection boxes.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-desktop.png" alt-text="Screenshot of Slicer populated with district manager names in the desktop version.":::
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-new-slicer-desktop.png" alt-text="Screenshot of Slicer populated with district manager names.":::
 
 6. Resize and drag the elements on the canvas to make room for the slicer. If you resize the slicer too small, its items are cut off. 
 
 7. Select names on the slicer and notice the effects on the other visualizations on the page. Select names again to deselect them, or hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none.
 
-8. Alternately, select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-format-brush.png) in the **Visualizations** pane to format your slicer.
+    :::image type="content" source="media/power-bi-visualization-slicers/slicer-vertical-multi-select.png" alt-text="Screenshot showing vertical slicer with three names selected and report filtered.":::
 
-   There are too many options to describe them all here; experiment and create a slicer that works for you. In the following image, the first slicer has a horizontal orientation and colored backgrounds for the items. The second slicer has a vertical orientation and colored text for a more standard look.
+8. Now select the **Format** icon ![Screenshot of Format icon.](media/power-bi-visualization-slicers/power-bi-format-brush.png) in the **Visualizations** pane to format your slicer.
 
-   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-filter-examples.png" alt-text="Screenshot of Formatted slicer.":::
+9. Resize the slicer to be wide but not tall.
+
+1. In the **Format** pane, under **Visual**, expand **Slicer settings** > **Options**, and select **Tile**.
+
+   :::image type="content" source="media/power-bi-visualization-slicers/power-bi-tile-slicer.png" alt-text="Screenshot of Tile slicer.":::
 
    >[!TIP]
    >Slicer list items are sorted in ascending order, by default. To reverse the sort order to descending, select the ellipsis (**...**) in the top right corner of the slicer and choose **Sort descending**.
