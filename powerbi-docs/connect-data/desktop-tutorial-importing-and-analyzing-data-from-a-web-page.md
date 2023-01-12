@@ -116,7 +116,7 @@ You also want to filter out rows that have `null` values in the **CountryRegion*
 
 1. Select **Text Filters** > **Does not Equal** in the context menu to remove any rows that contain that cell's value.
 
-   ![Screenshot shows a context menu with Text Filters, the Does Not Equal selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
+   ![Screenshot shows a context menu with Text Filters and Does Not Equal selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
 
 ## Import the query into Report View
 
@@ -124,7 +124,7 @@ Now that you've shaped the data the way you want, you're ready to name your quer
 
 1. In the **Query Settings** pane, in the **Name** text box, enter **Euro Cup Winners**.
 
-   ![NScreenshot shows Query Settings with the name Euro Cup Winners entered.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
+   ![Screenshot shows Query Settings with the name Euro Cup Winners entered.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
 
 1. Select **Close & Apply** > **Close & Apply** from the **Home** tab of the ribbon.
 
