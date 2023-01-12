@@ -1,129 +1,146 @@
 ---
 title: Data types in Power BI Desktop
-description: Data types in Power BI Desktop
+description: Learn about the different kinds of data types in Power BI Desktop and DAX expressions.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 10/20/2022
+ms.date: 01/11/2023
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
 
-This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX).
+This article describes data types that Power BI Desktop and Data Analysis Expressions (DAX) support.
 
-When you load data into Power BI Desktop, it will attempt to convert the data type of the source column into a data type that better supports more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop will convert the entire column of data to a Whole Number data type, which is better suited for storing integers.
+When you load data, Power BI Desktop tries to convert the data types of source columns into data types that support more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop converts the data column to a Whole number data type, which is better suited for storing integers.
 
-This concept is important because some DAX functions have special data type requirements. While in many cases DAX will implicitly convert a data type for you, there are some cases where it will not.  For instance, if a DAX function requires a Date data type and the data type for your column is Text, the DAX function will not work correctly.  So, it’s both important and useful to get the correct data type for a column. Implicit conversions are described later in this article.
+This concept is important because some DAX functions have special data type requirements. In many cases DAX *implicitly* converts data types, as described later in this article, but in some cases it doesn't. For instance, if a DAX function requires a Date data type, but the data type for your column is Text, the DAX function won't work correctly. So it's important and useful to use the correct data type for a column.
 
-## Determine and specify a column’s data type
+## Determine and specify a column's data type
 
-In Power BI Desktop, you can determine and specify a column’s data type in the Power Query Editor, or in Data View or Report View:
+In Power BI Desktop, you can determine and specify a column's data type in the Power Query Editor, in Data View, or in Report View:
 
-**Data types in Power Query Editor**
+In Power Query Editor, select the column and then select 
 
-![Screenshot of the Data type ribbon, showing it in the Query Editor.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
+![Screenshot of the Query Editor, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
-**Data types in Data View or Report View**
+In Data View or Report View, select the column, and then select 
 
-![Screenshot of the Data type ribbon, showing it in the Data View.](media/desktop-data-types/pbiddatatypesindatareportview.png)
+![Screenshot of Data Review, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-The Data Type drop down in Power Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types is loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
+The Data Type dropdown selection in Power Query Editor has two data types not present in Data View or Report View: **Date/Time/Timezone** and **Duration**. When you load a column with these data types into the model and view it in Data View or Report view, a **Date/Time/Timezone** column converts into a **Date/time** data type, and a **Duration** column converts into a **Decimal number** data type.
 
-The **Binary** data type is not currently supported outside of the Power Query Editor. Inside the Power Query Editor you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.  
+The **Binary** data type isn't supported outside of the Power Query Editor. In the Power Query Editor, you can use the **Binary** data type when you load binary files if you convert it to other data types before loading it into the Power BI model. The **Binary** selection exists in the Data View and Report View menus for legacy reasons, but if you try to load **Binary** columns into the Power BI model, you might run into errors.
 
-### Number types
+## Number types
 
-Power BI Desktop supports three number types:
-
-**Decimal Number** – Represents a 64 bit (eight-byte) floating point number. It’s the most common number type and corresponds to numbers as you usually think of them.  Although designed to handle numbers with fractional values, it also handles whole numbers.  The Decimal Number type can handle negative values from -1.79E +308 through -2.23E -308, 0, and positive values from 2.23E -308 through 1.79E + 308. For example, numbers like 34, 34.01, and 34.000367063 are valid decimal numbers. The largest precision that can be represented in a Decimal Number type is 15 digits long. The decimal separator can occur anywhere in the number. The Decimal Number type corresponds to how Excel stores its numbers. The Decimal Number data type is specified in the Tabular Object Model (TOM) as DataType.Double Enum type <sup>[1](#enum)</sup>.
-
-**Fixed Decimal Number** – Has a fixed location for the decimal separator. The decimal separator always has four digits to its right and allows for 19 digits of significance.  The largest value it can represent is 922,337,203,685,477.5807 (positive or negative). The Fixed Decimal Number type is useful in cases where rounding might introduce errors. When you work with many numbers that have small fractional values, they can sometimes accumulate and force a number to be slightly off. Since the values past the four digits to the right of decimal separator are truncated, the Fixed Decimal type can help you avoid these kinds of errors. If you’re familiar with SQL Server, this data type corresponds to SQL Server’s Decimal (19,4), or the Currency data type in Analysis Services and Power Pivot in Excel. The Fixed Decimal Number data type is specified in TOM as DataType.Decimal Enum type <sup>[1](#enum)</sup>.
-
-**Whole Number** – Represents a 64 bit (eight-byte) integer value. Because it’s an integer, it has no digits to the right of the decimal place. It allows for 19 digits; positive or negative whole numbers between -9,223,372,036,854,775,807 (-2^63+1) and 9,223,372,036,854,775,806 (2^63-2). It can represent the largest possible precision of the various numeric data types.  As with the Fixed Decimal type, the Whole Number type can be useful in cases where you need to control rounding. The Whole Number data type is specified in TOM as DataType.Int64 Enum type <sup>[1](#enum)</sup>.
+Power BI Desktop supports three number types: **Decimal number**, **Fixed decimal number**, and **Whole number**.
 
 > [!NOTE]
->  The Power BI Desktop data model supports 64 bit integer values, but the largest number the visuals can safely express is 9,007,199,254,740,991 (2^53-1) due to JavaScript limitations. If you work with numbers in your data model above this, you can reduce the size through calculations before adding them to a visual.
-> 
->
+> You can use the Tabular Object Model (TOM) Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> property to specify the <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums for number types. For more information about programmatically modifying objects in Power BI, see [Program Power BI datasets with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
 
-<a name="enum">1</a> - <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums are specified in the tabular Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> *property*. To learn more about programmatically modifying objects in Power BI, see [Programming Power BI datasets with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
+### Decimal number
 
-#### Ensuring accuracy of number type calculations
+**Decimal number** is the most common number type, and can handle numbers with fractional values and whole numbers. **Decimal number** represents 64-bit (eight-byte) floating point numbers with negative values from *-1.79E +308* through *-2.23E -308*, positive values from *2.23E -308* through *1.79E +308*, and *0*. Numbers like *34*, *34.01*, and *34.000367063* are valid decimal numbers.
 
-Column values of **Decimal Number** data type are stored as *approximate* data types according to the IEEE 754 Standard for floating point numbers. Approximate data types have inherent limitations in their *precision* because instead of storing the exact value of a number, they may be stored as an extremely close, or rounded, approximation of it. This means that it's possible for precision loss, or *imprecision*, to occur if the number of floating point digits cannot be reliably quantified in the floating-point value. The potential for imprecision can appear as unexpected or inaccurate calculation results in some reporting scenarios.
+The highest precision that the **Decimal number** type can represent is 15 digits. The decimal separator can occur anywhere in the number. This type corresponds to how Excel stores its numbers, and TOM specifies this type as `DataType.Double Enum`.
 
-Calculations performing equality related comparisons (=, \< \>, \>= and \<=) between values of Decimal Number data type can potentially return unexpected results. This is most apparent when using the [RANKX function](/dax/rankx-function-dax) in a DAX expression where the result is calculated twice, resulting in slightly different numbers. The difference between the two numbers is not noticeable by the report user but the rank result can be noticeably inaccurate. To avoid unexpected results, you can change the column data type from **Decimal Number** to either **Fixed Decimal Number** or **Whole Number**, or do a forced rounding using [ROUND](/dax/round-function-dax). The Fixed Decimal Number data type has greater precision because the decimal separator always has four digits to its right.
+### Fixed decimal number
 
-While rare, calculations that sum the values of a column of Decimal Number data type can potentially return unexpected results. This is most likely with columns that have both a large amount of positive numbers and a large amount of negative numbers. The result of the sum is affected by the distribution of values across rows in the column. If the calculation required to return a query result sums most of the positive numbers before summing most of the negative numbers, the partial sum at the beginning can potentially lose precision as it can be skewed by the large positive partial sum. On the other hand, if a query happens to add balanced positive and negative numbers, the sum will retain more precision and therefore more accurate results are returned. To avoid unexpected results, you can change the column data type from **Decimal Number** to **Fixed Decimal Number** or **Whole Number**.
+The **Fixed decimal number** data type has a fixed location for the decimal separator. The decimal separator always has four digits to its right, and allows for 19 digits of significance. The largest value the **Fixed decimal number** can represent is positive or negative *922,337,203,685,477.5807*.
 
-### Date/time types
+The **Fixed decimal number** type is useful in cases where rounding might introduce errors. Many numbers that have small fractional values can sometimes accumulate and force a number to be slightly inaccurate. By truncating the values past the four digits to the right of decimal separator, the **Fixed decimal number** type can help you avoid these kinds of errors.
 
-Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Time/Timezone and Duration are converted during load into the model. The Power BI Desktop data model only supports date/time, but they can be formatted as dates or times independently. 
+This data type corresponds to SQL Server’s **Decimal (19,4)**, or the **Currency** data type in Analysis Services and Power Pivot in Excel. TOM specifies this type as `DataType.Decimal Enum`.
 
-**Date/Time** – Represents both a date and time value.  Underneath the covers, the Date/Time value is stored as a Decimal Number Type.  So you can actually convert between the two.   The time portion of a date is stored as a fraction to whole multiples of 1/300 seconds (3.33 ms).  Dates between years 1900 and 9999 are supported.
+### Whole number
 
-**Date** – Represents just a Date (no time portion).  When converted into the model, a Date is the same as a Date/Time value with zero for the fractional value.
+**Whole number** represents a 64-bit (eight-byte) integer value. Because it's an integer, **Whole number** has no digits to the right of the decimal place. This type allows for 19 digits of positive or negative whole numbers between *-9,223,372,036,854,775,807* (*-2^63+1*) and *9,223,372,036,854,775,806* (*2^63-2*), so can represent the largest precision of the numeric data types.
 
-**Time** – Represents just Time (no Date portion).  When converted into the model, a Time value is the same as a Date/Time value with no digits to the left of the decimal place.
-
-**Date/Time/Timezone** – Represents a UTC Date/Time with a timezone offset.  It’s converted into Date/Time when loaded into the model. The Power BI model doesn't adjust the timezone based on a user's location or locale etc. If a value of 09:00 is loaded into the model in the USA, it will display as 09:00 wherever the report is opened or viewed. 
-
-**Duration** – Represents a length of time. It’s converted into a Decimal Number Type when loaded into the model.  As a Decimal Number type it can be added or subtracted from a Date/Time field with correct results.  As a Decimal Number type, you can easily use it in visualizations that show magnitude.
-
-### Text type
-**Text** - A Unicode character data string. Can be strings, numbers, or dates represented in a text format. Maximum string length is 268,435,456 Unicode characters (256 mega characters) or 536,870,912 bytes.
-
-Power BI stores data in ways that can cause it to display data differently in certain situations. This section describes common situations when working with Text data may appear to change slightly between querying data using Power Query, and then, after the data has been loaded.
-
-#### Case (in-)sensitivity
-The engine that stores and queries data in Power BI is case insensitive - which means the engine treats different capitalization of letters as the same value: *a* is equal to *A*. Power Query, however, *is* case sensitive: *a* is **not** equal to *A*. The difference in case sensitivity leads to situations where text data is loaded into Power BI and subsequently changes capitalization, seemingly inexplicably.
-In the following simple example, we loaded data about orders: an *OrderNo* column which is unique for each order and an *Addressee* column that contains the addressee's name, which is entered manually at the time of order. In Power Query this data is shown as follows:
-
-:::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Textual data with various capitalizations in Power Query":::
-
-Notice there are multiple orders with the same name as addressee, although entered into the system slightly differently.
-
-When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following table.
-
-:::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="The same textual data after loading into Power BI has changed capitalization":::
-
-Notice that the capitalization of some of the names has changed from the way it was originally entered. This change is because the engine that stores data in Power BI is case *insensitive* and treats the lowercase and uppercase version of the same character as the same. Power Query *is* case sensitive, so makes that distinction and therefore shows the data exactly as it was stored in the source system. However, the data in the second screenshot has been loaded into the engine of Power BI and therefore has changed.
-
-When loading data, the engine evaluates each row, one by one, starting from the top. For each text column (such as *Addressee*), the engine stores a dictionary of unique values to achieve performance through data compression. While processing the *Addressee* column, the first three values the engine comes across are unique and stored in the dictionary. However, from the fourth name (order 1004) onwards, since the engine is case insensitive, the names are seen as the same: *Taina Hasu* is the same as *TAINA HASU* as well as *Taina HASU*. As a result, the engine does not store that name, but instead refers to the first name it came across. That also explains why the name *MURALI DAS* is written in capitals, as that is simply the way the name was written when the engine first evaluated it when loading the data top to bottom.
-
-This image explains this process:
-:::image type="content" source="media/desktop-data-types/desktop-data-types-text-03.png" alt-text="Depiction of the data load process and mapping text values to a dictionary of unique values":::
-
-In the example above, the engine loads the first row of data, creates the *Addressee* dictionary and adds *Taina Hasu* to it. It also adds a reference to that value in the *Addressee* column on the table it loaded. It does this for the second and third row as well, as both of these names are not equivalent to the others when compared ignoring case.
-
-The *Addressee* for the fourth row is compared against the names in the dictionary and is found: since the engine is case insensitive, *TAINA HASU* and *Taina Hasu* are the same. As a result, the engine does not add a new name to the *Addressee* dictionary, instead it refers to the existing name. This is the same for the remaining rows.
+As with the **Fixed decimal** type, the **Whole number** type can be useful when you need to control rounding. TOM represents the **Whole number** data type as `DataType.Int64 Enum`.
 
 > [!NOTE]
->  Since the engine that stores and queries data in Power BI is case-*in*sensitive, special care must be taken when working in DirectQuery mode with a source that *is* case-sensitive. Power BI assumes that the source has eliminated duplicate rows; since Power BI is case-insensitive, two values that differ by case only are treated as duplicate, whereas the source might not treated as such. In such cases the final result is undefined and should be avoided. If you are using DirectQuery mode and your data source is case-sensitive, you must normalize casing in the source query or in Power Query.
-> 
->
+> The Power BI Desktop data model supports 64-bit integer values, but due to JavaScript limitations, the largest number Power BI visuals can safely express is *9,007,199,254,740,991* (*2^53-1*). If your data model has larger numbers, you can reduce their size through calculations before you add them to visuals.
 
-#### Trailing spaces
-When working with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion, since the Power BI engine automatically trims any trailing spaces but not leading spaces. Without removing leading or trailing spaces, you might fail to create a relationship because duplicate values are detected or visuals might return unexpected results.
-As a simple example, we loaded data about customers: a *Name* column which contains the name of the customer and an *Index* column that is unique for each entry. Notice the customer name is repeated four times, but each time with different combinations of leading and trailing spaces:
+### Accuracy of number type calculations
 
-|Row|Leading space|Trailing space|Name (within quotes for clarity)|Index|Text length|
+Column values of **Decimal number** data type are stored as *approximate* data types, according to the IEEE 754 Standard for floating point numbers. Approximate data types have inherent precision limitations because instead of storing exact number values, they may store extremely close, or rounded, approximations. Precision loss, or *imprecision*, can occur if the floating-point value can't reliably quantify the number of floating point digits. Imprecision can potentially appear as unexpected or inaccurate calculation results in some reporting scenarios.
+
+Calculations that do equality-related comparisons between values of **Decimal number** data type can potentially return unexpected results. Equality comparisons include equals *=*, greater than or less than *\< \>*, greater than or equal to *\>=*, and less than or equal to *\<=*. 
+
+This issue is most apparent when you use the [RANKX function](/dax/rankx-function-dax) in a DAX expression, which calculates the result twice, resulting in slightly different numbers. The difference between the two numbers isn't noticeable by the report user, but the rank result can be noticeably inaccurate. To avoid unexpected results, you can change the column data type from **Decimal number** to either **Fixed decimal number** or **Whole number**, or do a forced rounding by using [ROUND](/dax/round-function-dax). The **Fixed decimal number** data type has greater precision because the decimal separator always has four digits to its right.
+
+Rarely, calculations that sum the values of a column of **Decimal number** data type can return unexpected results. This result is most likely with columns that have large amounts of both positive numbers and negative numbers. The result of the sum is affected by the distribution of values across rows in the column. If a required calculation sums most of the positive numbers before summing most of the negative numbers, the large positive partial sum at the beginning can potentially skew the results. If the calculation happens to add balanced positive and negative numbers, the query retains more precision and therefore returns more accurate results. To avoid unexpected results, you can change the column data type from **Decimal number** to **Fixed decimal number** or **Whole number**.
+
+## Date/time types
+
+Power BI Desktop supports five **Date/Time** data types in Power Query Editor. Both **Date/Time/Timezone** and **Duration** convert during load into the model. The Power BI Desktop data model supports **Date/time**, or you can format the values as dates or times independently.
+
+- **Date/Time**  represents both a date and time value. The underlying **Date/Time** value is stored as a **Decimal number** type, so you can actually convert between the two types. The time portion stores as a fraction to whole multiples of 1/300 seconds (3.33 ms). The data type supports dates between years 1900 and 9999.
+
+- **Date** represents just a date with no time portion.  A **Date** converts into the model as a **Date/Time** value with zero for the fractional value.
+
+- **Time** represents just a time with no date portion. A **Time** converts into the model as a **Date/Time** value with no digits to the left of the decimal point.
+
+- **Date/Time/Timezone** represents a UTC date/time with a timezone offset and converts into **Date/Time** when loaded into the model. The Power BI model doesn't adjust the timezone based on a user's location or locale. A value of 09:00 loaded into the model in the USA displays as 09:00 wherever the report is opened or viewed.
+
+- **Duration** represents a length of time, and converts into a **Decimal Number** type when loaded into the model. As **Decimal Number** type, you can add or subtract the values from **Date/Time** values with correct results, and easily use the values in visualizations that show magnitude.
+
+## Text type
+
+**Text** is a Unicode character data string, which can be strings, numbers, or dates represented in a text format. The maximum string length is 268,435,456 Unicode characters (256 mega characters), or 536,870,912 bytes.
+
+The way Power BI stores text data can cause the data to display differently in certain situations. The next sections describe common situations that can cause **Text** data to change appearance slightly between querying data in Power Query Editor and loading it into Power BI.
+
+### Case sensitivity
+
+The engine that stores and queries data in Power BI is *case insensitive*, and treats different capitalization of letters as the same value. *A* is equal to *a*. However, Power Query is *case sensitive*. where *A* isn't the same as *a*. The difference in case sensitivity can lead to situations where text data seemingly inexplicably changes capitalization after loading into Power BI.
+
+The following example shows order data: An **OrderNo** column that's unique for each order, and an **Addressee** column that shows the addressee name entered manually at order time. Note that Power Query Editor shows several orders with the same **Addressee** names entered into the system with varying capitalizations.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Screenshot of textual data with various capitalizations in Power Query":::
+
+After Power BI loads the data, capitalization of some of the names in the **Data** tab changes from the original entry. Duplicate names change into one of the capitalization variants.
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="Screenshot that shows the textual data with changed capitalization after loading into Power BI.":::
+
+This change happens because Power Query Editor is case sensitive, so it shows the data exactly as stored in the source system. The engine that stores data in Power BI is case insensitive, so treats the lowercase and uppercase versions of a character as identical. Power Query data loaded into the Power BI engine changes accordingly.
+
+When loading data, the Power BI engine evaluates each row individually, starting from the top. For each text column, such as **Addressee**, the engine stores a dictionary of unique values to improve performance through data compression. The engine sees the first three values in the **Addressee** column as unique and stores them in the dictionary. After that, because the engine is case insensitive, it evaluates the names as identical.
+
+*Taina Hasu* is the same as *TAINA HASU* and *Taina HASU*, so the engine doesn't store those variations, but instead refers to the first variation it stored. The name *MURALI DAS* appears in uppercase letters, because that's how the name appeared the first time the engine evaluated it when loading the data from top to bottom.
+
+This image illustrates the evaluation process:
+
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-03.png" alt-text="Diagram that shows the data load process and mapping text values to a dictionary of unique values.":::
+
+In the preceding example, the Power BI engine loads the first row of data, creates the **Addressee** dictionary, and adds *Taina Hasu* to it. The engine also adds a reference to that value in the **Addressee** column on the table it loaded. The engine does the same for the second and third rows, because these names aren't equivalent to the others when ignoring case.
+
+For the fourth row, the engine compares the value against the names in the dictionary and finds the name. Since the engine is case insensitive, *TAINA HASU* and *Taina Hasu* are the same. The engine doesn't add a new name to the dictionary, but refers to the existing name. The same process happens for the remaining rows.
+
+> [!NOTE]
+> Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows. Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined. To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
+
+### Leading and trailing spaces
+
+The Power BI engine automatically trims any trailing spaces that follow text data, but doesn't remove leading spaces that precede the data. When you work with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text to avoid confusion. If you don't remove leading or trailing spaces, you might fail to create a relationship because duplicate values are detected, or visuals might return unexpected results.
+
+The following example shows data about customers: a **Name** column that contains the name of the customer and an **Index** column that's unique for each entry. The customer name repeats four times, but each time with different combinations of leading and trailing spaces. These variations can occur with manual data entry over time. The names appear within quotes for clarity.
+
+|Row|Leading space|Trailing space|Name|Index|Text length|
 |---|---|---|---|---|---|
 |1|No|No|"Dylan Williams"|1|14|
 |2|No|Yes|"Dylan Williams "|10|15|
 |3|Yes|No|" Dylan Williams"|20|15|
 |4|Yes|Yes|" Dylan Williams "|40|16|
 
-These variations can occur with manual data entry over time. In Power Query, the resulting data is shown as follows.
+In Power Query Editor, the resulting data is shown as follows.
 
-:::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Screenshot of textual data with various leading and trailing spaces in Power Query":::
+:::image type="content" source="media/desktop-data-types/desktop-data-types-text-04.png" alt-text="Screenshot of textual data with various leading and trailing spaces in Power Query Editor.":::
 
-
-
-When we go to the **Data** tab in Power BI after the data was loaded, the same table looks like the following image.
+When you go to the **Data** tab in Power BI after you load the data, the same table looks like the following image.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-05.png" alt-text="Screenshot of the same textual data after loading into Power BI returns the same number of rows as before.":::
 
