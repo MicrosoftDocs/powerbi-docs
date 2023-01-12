@@ -16,7 +16,7 @@ In the past, you were able to try Power BI REST APIs on each operation reference
 
 The "Try it" button is currently missing on all REST API pages.
 
-**APPLIES TO:** ✔️ Power BI REST APIs
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI REST APIs
 
 **Status:** Fixed: August 22, 2022
 
