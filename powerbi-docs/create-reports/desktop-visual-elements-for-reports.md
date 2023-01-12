@@ -29,7 +29,7 @@ The following sections describe how to use these enhancements and how to apply t
 
 You can format the gray area outside your report page using **wallpaper**. The following image has a red box that clarifies where the wallpaper area applies.
 
-![Screenshot of Power BI Desktop, highlighting  the wallpaper area.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_02.png)
+![Screenshot of Power BI Desktop, highlighting the wallpaper area.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_02.png)
 
 You can either set wallpaper on a per-report-page basis or have the same wallpaper for every page in your report. To set your wallpaper, select the **Formatting** icon when no visual is selected in your report and the **Wallpaper** card appears in the pane.
 
@@ -40,7 +40,7 @@ You can choose a color to apply as **wallpaper** by selecting the **Color** drop
 It's useful to keep in mind the following definitions that pertain to **wallpaper**:
 
 * The gray area outside of your report area is the **wallpaper** area.
-* The area in the canvas where you can place visuals is referred to as the report **page**, and in the **Format pane**, that area can be modified using the **Page background** dropdown.
+* The area in the canvas where you can place visuals is referred to as the report **page** and, in the **Format pane**, can be modified using the **Page background** dropdown.
 
 The report **page** is always in the foreground (when compared to the wallpaper), while the **wallpaper** is behind it and the furthest-back element on the report page. When you apply transparency to the page, the visuals in your report also have the transparency applied, allowing your wallpaper to be visible in the background through your visuals.
 
@@ -56,7 +56,7 @@ When you set your page background to greater than 50% transparency, a dotted bor
 It's important to note that the dotted boundary *only* shows up when editing your report and does *not* appear for people who are viewing your published report, such as when it's viewed in the **Power BI service**.
 
 > [!NOTE]
-> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature does not include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. For more information on **Export to PDF**, see [export to PDF](../consumer/end-user-pdf.md).
+> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature does not include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. For more information, see [export to PDF](../consumer/end-user-pdf.md).
 
 ## Use improved visual headers in Power BI reports
 
@@ -64,7 +64,7 @@ The headers for visuals in reports have been significantly improved. The primary
 
 By default, the header appears inside the visual aligned with the title. In the following image, you can see the header (the pin icon, the expand icon, and the ellipses icon) within the visual and aligned to the right, along the same horizontal position as the visual's title.
 
-![Screenshot of a visual, showing the header alongside the title.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_05.png)
+![Screenshot of a visual, showing the header to the right of the title.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_05.png)
 
 If your visual doesn't have a title, the header floats above the top of the visual aligned to the right, as shown in the following image.
 
@@ -93,7 +93,7 @@ The new visual header is the default behavior for all new reports. For existing 
 
 ## Next steps
 
-For more information about **Power BI Desktop**, and how to get started, see the following articles:
+For more information about **Power BI Desktop** and how to get started, see:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
