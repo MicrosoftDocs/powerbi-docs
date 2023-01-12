@@ -14,9 +14,9 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words. The first part of this article shows how you use Q&A in dashboards in the Power BI service. The second part shows what you can do with Q&A when creating reports in either the Power BI service or Power BI Desktop. For more background, see [Q&A for consumers](../consumer/end-user-q-and-a.md).
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words. The first part of this article shows how you use Q&A in dashboards in the Power BI service. The second part shows what you can do with Q&A when creating reports in either the Power BI service or Power BI Desktop. For more information, see [Q&A for Power BI business users](../consumer/end-user-q-and-a.md).
 
-[Q&A in the Power BI mobile apps](../consumer/mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](../developer/embedded/qanda.md) are covered in separate articles.
+[Q&A virtual analyst in iOS apps – Power BI](../consumer/mobile/mobile-apps-ios-qna.md) and [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md) are covered in separate articles.
 
 Q&A is interactive and fun. Often one question leads to others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&A to create visualizations, dig into those visuals, and then pin them to dashboards.
 
@@ -27,17 +27,17 @@ Q&A is interactive and fun. Often one question leads to others as the visualizat
 
 ## Part 1: Use Q&A on a dashboard in the Power BI service
 
-In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **More options (...)** from the menu bar, and then select **See related content**.
+In the [Power BI service](/app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **More options (...)** from the menu bar, and then choose **See related content**.
 
 ![Screenshot of the Power BI service, highlighting the more options icon and the See related content option.](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-The Q&A question box is located in the upper-left corner of your dashboard where you type your question using natural language. Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for consumers** article. Q&A recognizes the words you type and figures out where, and in which dataset, to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
+The Q&A question box is located in the upper-left corner of your dashboard where you type your question using natural language. Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for for Power BI business users** article. Q&A recognizes the words you type and figures out where, and in which dataset, to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
 
 ![Screenshot shows a Power BI dashboard with an option to Ask a question about your data.](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
 
 The answer to your question is displayed as an interactive visualization and updates as you modify the question.
 
-1. Open a dashboard and place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and may even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-create-featured-questions.md).
+1. Open a dashboard and place your cursor in the question box. Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and might even see complete questions listed if the dataset owner has created [featured questions](service-q-and-a-create-featured-questions.md).
 
    ![Screenshot highlighting Q&A suggested questions.](media/power-bi-tutorial-q-and-a/power-bi-qna-suggested-questions.png)
 
@@ -45,7 +45,7 @@ The answer to your question is displayed as an interactive visualization and upd
 
 2. Select from the list of questions, or begin typing your own question and select from the dropdown suggestions.
 
-   ![Screenshot of an example Q&A entry with with suggestions.](media/power-bi-tutorial-q-and-a/power-bi-qna-select-a-question-how-many-stores.png)
+   ![Screenshot of an example Q&A entry with suggestions.](media/power-bi-tutorial-q-and-a/power-bi-qna-select-a-question-how-many-stores.png)
 
 3. As you type a question, Q&A picks the best visualization to display your answer.
 
@@ -55,23 +55,23 @@ The answer to your question is displayed as an interactive visualization and upd
 
    ![Screenshot of an example Q&A entry, showing a bar graph visualization.](media/power-bi-tutorial-q-and-a/power-bi-qna-stores-by-state-bar-chart.png)
 
-5. When you type a question, Power BI looks for the best answer using any dataset that has a tile on that dashboard. If all the tiles are from *datasetA*, then your answer will come from *datasetA*. If there are tiles from *datasetA* and *datasetB*, then Q&A searches for the best answer from those 2 datasets.
+5. When you type a question, Power BI looks for the best answer using any dataset that has a tile on that dashboard. If all the tiles are from *datasetA*, then your answer will come from *datasetA*. If there are tiles from *datasetA* and *datasetB*, then Q&A searches for the best answer from those two datasets.
 
    > [!TIP]
    > Be careful. If you only have one tile from *datasetA* and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
    >
 
-6. When you're happy with the result, pin the visualization to a dashboard by selecting the pin icon in the top right corner. If the dashboard has been shared with you, or is part of an app, you won't be able to pin.
+6. When you're happy with the result, pin the visualization to a dashboard by selecting the pin icon in the top right corner. If the dashboard was shared with you, or is part of an app, you won't be able to pin.
 
-   ![Screenshot of an example Q&A entry, highlighting Pin visual.](media/power-bi-tutorial-q-and-a/power-bi-qna-pin-visual.png)
+   ![Screenshot of an example Q&A entry, highlighting the Pin visual.](media/power-bi-tutorial-q-and-a/power-bi-qna-pin-visual.png)
 
 ## Part 2: Use Q&A in a report in Power BI service or Power BI Desktop
 
-Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and may be completely blank or contain pages full of visualizations. However, just because a report is blank, doesn't mean there isn't any data for you to explore--the dataset is linked to the report and is waiting for you to explore and create visualizations. To see which dataset is being used to create a report, open the report in Power BI service Reading view and select **More options (...)** > **See related content** from the menu bar.
+Use Q&A to explore your dataset and to add visualizations to the report and to dashboards. A report is based on a single dataset and might be blank or contain pages full of visualizations. However, just because a report is blank, doesn't mean there isn't any data for you to explore--the dataset is linked to the report and is waiting for you to explore and create visualizations. To see which dataset is being used to create a report, open the report in Power BI service Reading view and select **More options (...)** > **See related content** from the menu bar.
 
 ![Screenshot of the Power Bi service more options icon, highlighting see related content.](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-To use Q&A in reports, you must have edit permissions for the report and underlying dataset. In the [Q&A for consumers](../consumer/end-user-q-and-a.md) article, we refer to this as a *creator* scenario. If instead you're *consuming* a report that has been shared with you, Q&A isn't available.
+To use Q&A in reports, you must have edit permissions for the report and underlying dataset. In the [Q&A for Power BI business users](../consumer/end-user-q-and-a.md) article, we refer to this as a *creator* scenario. If instead you're *consuming* a report that has been shared with you, Q&A isn't available.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -89,7 +89,7 @@ To use Q&A in reports, you must have edit permissions for the report and underly
 
 ---
 
-2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
+2. A Q&A question box displays on your report canvas. In the following example, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
 
    ![Screenshot shows a canvas with the Q&A question box on a visualization.](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 
@@ -121,8 +121,8 @@ With Q&A, not only can you ask your data to speak for itself, you can tell Power
 
 ## Next steps
 
-- [Q&A for consumers](../consumer/end-user-q-and-a.md)
-- [Tips for asking questions in Q&A](../consumer/end-user-q-and-a-tips.md)
-- [Prepare a workbook for Q&A](service-prepare-data-for-q-and-a.md)
-- [Prepare an on-premises dataset for Q&A](service-q-and-a-direct-query.md)
+- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+- [Tips for asking questions in Power BI Q&A](../consumer/end-user-q-and-a-tips.md)
+- [Make Excel data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
+- [Enable Q&A for live connections in Power BI](service-q-and-a-direct-query.md)
 - [Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)
