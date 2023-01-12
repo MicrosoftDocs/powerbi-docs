@@ -67,7 +67,7 @@ URL text that corresponds to the value of the parameter being used.
 You can pass report parameters to a report by including them in a paginated report URL. 
 
 ### Report parameters (`rp:`) 
-For examples of passing report parameters on the URL, see [Pass a report parameter in a URL](report-builder-url-pass-parameters.md).
+For examples of passing report parameters in a URL, see [Pass a report parameter in a URL](report-builder-url-pass-parameters.md).
 
 > [!NOTE]
 > Report parameters require the parameter prefix `rp:` and are case-sensitive. 
@@ -109,12 +109,12 @@ Specifies whether the parameter panel is closed or open when the report loads, o
 - `rdl:parameterPanel`
 
 Available values:
-- **collapsed**: loads the report with parameter panel closed. The parameter button is enabled so that users can select the button to expand;
-- **hidden**: loads the report with parameter panel closed and the parameter button disabled;
-- **expanded** (default): loads the report with parameter panel open and the parameter button enabled;
+- **collapsed**: loads the report with parameter panel closed. The parameter button is enabled so that users can select the button to expand.
+- **hidden**: loads the report with parameter panel closed and the parameter button disabled.
+- **expanded** (default): loads the report with parameter panel open and the parameter button enabled.
 
 #### Device info
-You may specify additional output parameters for the following export formats. 
+You can specify additional output parameters for the following export formats. 
 
 - PDF / ACCESSIBLEPDF:
     - rdl:AccessiblePDF=true/false
