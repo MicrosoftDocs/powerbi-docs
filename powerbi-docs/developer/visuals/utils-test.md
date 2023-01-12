@@ -16,7 +16,7 @@ This article helps you install, import, and use the Power BI visuals test utils.
 
 ## Requirements
 
-To use this package, install the following:
+To use this package, install:
 
 * [node.js](https://nodejs.org), it's recommended to use the LTS version
 * [npm](https://www.npmjs.com/), version 3.0.0 or higher
@@ -137,7 +137,7 @@ abstract class TestDataViewBuilder {
   ```
    
 > [!NOTE]
-> For further examples, see [writing TestDataViewBuilder unit tests](./unit-tests-introduction.md#how-to-add-static-data-for-unit-tests) and a [real usage TestDataViewBuilder scenario](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts).
+> For more examples, see [Writing TestDataViewBuilder unit tests](./unit-tests-introduction.md#how-to-add-static-data-for-unit-tests) and a [Real usage TestDataViewBuilder scenario](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts).
 
 ## Mocks
 
@@ -424,7 +424,7 @@ class MockITelemetryService implements ITelemetryService {
     function createTelemetryService(): ITelemetryService;
     ```
 ### MockIAuthenticationService
-Simulates the work of **AuthenticationService** by providing a mocked AAD token.
+Simulates the work of **AuthenticationService** by providing a mocked Azure Active Directory token.
 ```typescript
 class MockIAuthenticationService implements IAuthenticationService  {
     constructor(token: string);
