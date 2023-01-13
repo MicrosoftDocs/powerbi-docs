@@ -340,7 +340,7 @@ dataViewObjects.getFillColor(objects, property);
 
 ### getCommonValue
 
-This is a universal function for retrieving the color or value of a given object.
+This universal function retrieves the color or value of a given object.
 
 ```typescript
 function getCommonValue(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultValue?: any): any;
