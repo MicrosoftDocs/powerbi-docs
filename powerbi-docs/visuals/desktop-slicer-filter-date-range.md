@@ -6,6 +6,7 @@ ms.author: maggies
 ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
+ms.custom: video-zIZPA0UrJyA
 ms.topic: how-to
 ms.date: 01/13/2023
 ms.custom: sample-Sales-and-Marketing
@@ -22,6 +23,15 @@ With the **relative date slicer** or **relative date filter**, you can apply tim
 
 To share your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
+## Video
+
+In this video, Will walks through creating a date range slicer.
+
+> [!NOTE]  
+> This video uses earlier versions of Power BI Desktop or the Power BI service.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
+
 ## Create the relative date range slicer
 
 You can use the relative date slicer just like any other slicer. Create a **Slicer** visual for your report and then select a date value for the **Field** value. In the following image, we selected the *Date* field.
@@ -32,11 +42,9 @@ Select the slicer, and in the **Format** pane, under **Visual** > **Slicer setti
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/set-relative-date-range-slicer-filter.png" alt-text="Screenshot of the slicer visual with the Format pane and the Relative Date selected.":::
 
-For the relative date slicer, select *Relative Date*.
+You can then select the settings in the date slicers.
 
-You can then select the settings.
-
-For the first setting in the *relative date slicer*, you have the following choices:
+For the first setting, you have the following choices:
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png" alt-text="Screenshot of the Relative config options with the first setting called out.":::
 
@@ -44,11 +52,11 @@ For the first setting in the *relative date slicer*, you have the following choi
 - Next
 - This
 
-The second (middle) setting in the *relative date slicer* lets you enter a number to define the relative date range.
+In the second (middle) setting in the relative date slicer, you enter a number to define the relative date range.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04a.png" alt-text="Screenshot of the Relative config options with the second setting called out.":::
 
-The third setting lets you pick the date measurement. You have the following choices:
+In the third setting, you pick the date measurement. You have the following choices:
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png" alt-text="Screenshot of the Relative config options with the third setting called out.":::
 

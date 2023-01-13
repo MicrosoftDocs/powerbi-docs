@@ -4,7 +4,6 @@ description: Learn how to use a slicer for constraining to numeric or date range
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -15,7 +14,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With the numeric range slicer and the date range slicer, you can create filters for any numeric column or date column in your data model. There are three options for filtering your data:
+With the numeric range slicer and the date range slicer, you can create filters for any numeric or date column in your data model. There are three options for filtering your data:
 
 - Between numbers or dates.
 - Less than or equal to a number or date.
@@ -25,30 +24,21 @@ This simple technique is a powerful, visual way to filter your data.
 
 :::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range.png" alt-text="Screenshot of a visual, highlighting a numeric range slicer.":::
 
-## Video
-
-In this video, Will walks through creating a date range slicer.
-
-> [!NOTE]  
-> This video uses earlier versions of Power BI Desktop or the Power BI service.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
-
 ## Add a numeric range slicer
 
 You can use a numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value.
 
 Power BI automatically creates a numeric range slicer. By default, it's set to **Between**.
 
-![Screenshot of the Numeric range slicer menu.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between.png" alt-text="Screenshot of the Numeric range slicer menu.":::
 
 ## Add a date range slicer
 
-Create a **Slicer** visual for your report, and then select a date value for the **Field** value.
+Create a **Slicer** visual for your report, and then select a date field for the **Field** value.
 
 Power BI automatically creates a date range slicer. By default, it's set to **Between**.
 
-![Screenshot of the Date range slicer and the FOrmat pane.](media/desktop-slicer-numeric-range/slicer-date-range-between.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/slicer-date-range-between.png" alt-text="Screenshot of the Date range slicer and the FOrmat pane.":::
 
 Besides the basic date range slicer, there are two other options, explained in these articles:
 
@@ -67,11 +57,11 @@ You can use the slider to select numeric values that fall between the numbers. S
 
 In the following image, the report page filters for **Sales Amount** values that range between 2,100.00 and 25,000.00.
 
-![Screenshot of a visual, highlighting the Numeric range slicer set to Between.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between-specific-numbers.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between-specific-numbers.png" alt-text="Screenshot of a visual, highlighting the Numeric range slicer set to Between.":::
 
 When you select **Less than or equal to**, the left (lower value) handle of the slider bar disappears, and you can adjust only the upper-bound limit of the slider bar. In the following image, the lower limit is gone.
 
-![Screenshot of a visual, highlighting the Numeric range slicer set to Less than or equal to.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-less-than.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-less-than.png" alt-text="Screenshot of a visual, highlighting the Numeric range slicer set to Less than or equal to.":::
 
 If you select **Greater than or equal to**, then the right (higher value) slider bar handle disappears. You can then adjust the lower value, but not the upper value.
 
