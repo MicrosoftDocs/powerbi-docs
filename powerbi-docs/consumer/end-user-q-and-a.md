@@ -1,6 +1,6 @@
 ---
 title: Q&A for Power BI business users
-description: This article explains what Power BI Q&A natural language queries are and how to use the Q&A feature.
+description: Learn how you can use the Power BI Q&A feature and natural language capabilities with your report visuals.
 author: mihart
 ms.author: mihart
 ms.reviewer: mohammad.ali
@@ -24,30 +24,30 @@ Use Q&A to explore your data using natural language capabilities and receive ans
 
 Q&A picks the best chart or graph based on the data displayed. Sometimes data is defined as a certain type or category, telling Q&A how to display it. For example, if data is defined as a date type, it's more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
 
-You can also tell Q&A which visual to use by adding it to your question. But keep in mind that it may not always be possible for Q&A to display the data using the visual type you requested. Q&A will prompt you with a list of workable visual types.
+You can tell Q&A which visual to use by adding it to your question. But keep in mind that it isn't always be possible for Q&A to display the data using the visual type you requested. Q&A will prompt you with a list of workable visual types.
 
 ## Where can I use Q&A?
 
-You can find Q&A on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. Unless the *designer* has given you edit permissions, you can use Q&A to explore data but won't be able to save any visualizations created with Q&A.
+You can find Q&A on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. Unless the designer has given you edit permissions, you can use Q&A to explore data but won't be able to save any visualizations created with Q&A.
 
 ![Screenshot of Ask a question about your data in a red box on the visual dashboard.](media/end-user-q-and-a/power-bi-qna.png)
 
-Q&A is available on reports, if the report *designer* added an interactive [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).
+Q&A is available on reports, if the report designer added an interactive [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).
 
 ![Screenshot of the Q&A question box highlighted by a red box on the report.](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 ## Q&A on dashboards
 
-**Power BI Q&A** is available with a Pro or Premium license.  [Q&A virtual analyst in iOS apps](mobile/mobile-apps-ios-qna.md) and [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md) are covered in separate articles. **Power BI Q&A** only supports answering natural language queries in English, although there's a preview available for Spanish that can be enabled by your Power BI administrator.
+Q&A is available with a Pro or Premium license.  [Q&A virtual analyst in iOS apps](mobile/mobile-apps-ios-qna.md) and [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md) are covered in separate articles. **Power BI Q&A** only supports answering natural language queries in English, although there's a preview available for Spanish that can be enabled by your Power BI administrator.
 
 ![Screenshot of the Q&A query for revenue by region as a treemap.](media/end-user-q-and-a/power-bi-treemaps.png)
 
 ## The Q&A visual in Power BI reports
 
 A report designer can add a specific type of interactive visual called the
-Q&A visual. Power BI report end users can ask natural language questions and create a new report visual that represents the answer to the question. The Q&A visual behaves like any other visual in a report. **Cross-filter**, **cross-highlight**, bookmarks, and comments are enabled.
+Q&A visual. Power BI report end users can ask natural language questions and create a new report visual that represents the answer to the question. The Q&A visual behaves like any other visual in a report. Cross-filter, cross-highlight, bookmarks, and comments are enabled.
 
-Q&A visuals have a **question** box across the top of the visual. You type your question into the **question** box and Q&A responds with a visual. The Q&A visual can be used over and over again to ask questions about your data. When you leave the report, the Q&A visual resets to its default.
+Q&A visuals have a question box across the top of the visual. You type your question into the question box and Q&A responds with a visual. The Q&A visual can be used over and over again to ask questions about your data. When you leave the report, the Q&A visual resets to its default.
 
 ![Screenshot of default Q&A visual identified by the question box at the top.](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
@@ -73,8 +73,8 @@ Choose **Settings** > **Dashboards**. Make sure there's a check mark next to **S
 
 ## Privacy
 
-Microsoft may use your questions to improve Power BI, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
+Microsoft might use your questions to improve Power BI. For more informaion, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
 
 ## Next steps
 
-Learn how to ask your own natural language questions and create answers in the form of visuals. [Q&A Tutorial](end-user-q-and-a-tutorial.md)
+To learn how to ask your own natural language questions and create answers in the form of visuals, see the [Q&A Tutorial](end-user-q-and-a-tutorial.md).
