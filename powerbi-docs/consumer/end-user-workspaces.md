@@ -14,7 +14,7 @@ LocalizationGroup: Consumers
 
 # Collaborate in workspaces
 
- *Workspaces* are places to collaborate with colleagues on specific content. Workspaces are created by Power BI *designers* to hold collections of dashboards and reports. The designer can then share the workspace with colleagues. Designers can also bundle a collection of dashboards and reports into an *app* and distribute it to the entire community, to their organization, or to specific people or groups. Certain types of apps, called *template apps*, create a workspace when the app is installed. [Learn more about apps](end-user-apps.md). 
+ *Workspaces* are places to collaborate with colleagues on specific content. Workspaces are created by Power BI *designers* to hold collections of dashboards and reports. The designer can then share the workspace with colleagues. Designers can also bundle a collection of dashboards and reports into an *app* and distribute it to the entire community, to their organization, or to specific people or groups. Certain types of apps, called *template apps*, create a workspace when the app is installed. [Learn more about apps](end-user-apps.md).
 
  Everyone using the Power BI service also has a **My workspace**.  My workspace is your personal sandbox where you can create content for yourself.
 
