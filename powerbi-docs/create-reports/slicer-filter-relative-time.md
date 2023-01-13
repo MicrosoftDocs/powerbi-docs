@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. Using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour.
+With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. By using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour.
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Animation showing an example graph that uses the relative time slicer.":::
 
