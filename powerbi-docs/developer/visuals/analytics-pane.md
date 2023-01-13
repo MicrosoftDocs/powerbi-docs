@@ -56,9 +56,9 @@ For the **Analytics** pane, the object is defined as follows:
    }
       ```
 
-1. In the Formatting settings card, specify that the card belongs to the Analytics pane by setting the card `analyticsPane` parameter to true. By default, the card `analyticsPane` parameter is false, and the card will be added to the Formatting pane. See the following implementations:
+1. In the Formatting settings card, specify that the card belongs to the Analytics pane by setting the card `analyticsPane` parameter to true. By default, the card `analyticsPane` parameter is false, and the card will be added to the Formatting pane.
 
-#### [Using FormattingModel Utils](#tab/API-5-1-Impl-FormattingModel-Utils)
+#### [With FormattingModel Utils](#tab/API-5-1-Impl-FormattingModel-Utils)
 
 ```typescript
 class YourAnalyticsCardSettings extends FormattingSettingsCard {
@@ -147,7 +147,7 @@ Define other properties the same way for **Format** objects, and enumerate objec
 
 ## Considerations and limitations
 
-* The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selectors-types) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have user-defined multiple instances of a card.
+* The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selectors-types) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have multiple instances of a user-defined card.
 * Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.
 
 ## Next Steps
