@@ -18,7 +18,7 @@ You can ask Power BI to look through your data and find interesting trends and p
 
 To learn how to use Insights, see [View data insights on dashboard tiles with Power BI](end-user-insights.md).
 
-![Screenshot of a set of Insights with the Insights panel highlighted.](media/end-user-insight-types/power-bi-insight-line.png)
+[ ![Screenshot of a set of Insights with the Insights panel highlighted.](media/end-user-insight-types/power-bi-insight-line.png) ](media/end-user-insight-types/power-bi-insight-line.png)
 
 ## How does Insights work?
 
@@ -26,17 +26,17 @@ Power BI searches different subsets of your dataset and applies a set of sophist
 
 ## Some terminology
 
-Power BI uses statistical algorithms to uncover Insights. The algorithms are listed and described in the next section of this article. Before we get to the algorithms, here are definitions for some terms that may be unfamiliar.
+Power BI uses statistical algorithms to uncover Insights. The algorithms are listed and described in the next section of this article. Before we get to the algorithms, here are definitions for some terms that might be unfamiliar.
 
-* *Measure* - a measure is a quantitative (numeric) field that can be used to do calculations. Common calculations are sum, average, and minimum. For example, if our company makes and sells skateboards, our measures might be number of skateboards sold and average profit per year.
+* *Measure* - A measure is a quantitative (numeric) field that can be used to do calculations. Common calculations are sum, average, and minimum. For example, if our company makes and sells skateboards, our measures might be number of skateboards sold and average profit per year.
   
-* *Dimension* - dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
+* *Dimension* - Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
-* *Correlation* - a correlation tells us how the behavior of things is related.  If their patterns of increase and decrease are similar, they're positively correlated. If their patterns are opposite, they're negatively correlated. For example, if sales of red skateboards increase each time we run a tv marketing campaign, sales of the red skateboards and the tv marketing campaign are positively correlated.
+* *Correlation* - A correlation tells us how the behavior of things relate.  If their patterns of increase and decrease are similar, they're positively correlated. If their patterns are opposite, they're negatively correlated. For example, if sales of red skateboards increase each time we run a tv marketing campaign, sales of the red skateboards and the tv marketing campaign are positively correlated.
 
-* *Time series* - a time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.
+* *Time series* - A time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.
   
-* *Continuous variable* - a continuous variable can be any value between its minimum and maximum limits, otherwise it's a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.  
+* *Continuous variable* - A continuous variable can be any value between its minimum and maximum limits, otherwise it's a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.  
 
 ## What types of insights can you find?
 
@@ -62,7 +62,7 @@ Detects cases where multiple measures show a similar pattern or trend when plott
 
 ### Low Variance
 
-Detects cases where data points for a dimension aren't far from the mean, so the *variance* is low. Let's say you have the measure "sales" and a dimension "region". And looking across region you see that there's little difference between the data points and the mean (of the data points). The insight triggers when the variance of sales across all regions is below a threshold. In other words, when sales are similar across all regions.
+Detects cases where data points for a dimension aren't far from the mean, so the *variance* is low. Let's say you have the measure "sales" and a dimension "region". And looking across the region you see that there's little difference between the data points and the mean (of the data points). The insight triggers when the variance of sales across all regions is below a threshold. In other words, when sales are similar across all regions.
 
 ![Screenshot of a low variance Insight visual.](./media/end-user-insight-types/power-bi-insights-low-variance.png)
 
