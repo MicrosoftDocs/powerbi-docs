@@ -87,30 +87,30 @@ This slicer filters data by district manager. If you want to follow along with t
 
 By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date slicers that you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
 
-Use visual interactions to exclude some page visualizations from being affected by others. On the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
+Use visual interactions to exclude some page visualizations from being affected by others. For example, in the Retail Analysis sample on the **Overview** page, the **Total Sales Variance by FiscalMonth and District Manager** chart shows overall comparative data for district managers by month, which is information that you may want to keep visible. Use visual interactions to keep slicer selections from filtering this chart.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-1. Go to the **Overview** page of the report, and then select the **DM** slicer you previously created.
+1. Select a slicer that you previously created. In this case, on the **Overview** page of the Retail Analysis sample report, select the **District Manager** slicer.
 
-2. Select **Format** from the menu, and then select **Edit interactions**.
+2. Select the **Format** ribbon, then select **Edit interactions**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-desktop.png" alt-text="Screenshot of the Edit Interactions button on desktop version.":::
 
-    Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+    Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the other visuals on the page. Initially, the **Filter** option is preselected on all the controls.
 
 # [Power BI service](#tab/powerbi-service)
 
-1. Go to the **Overview** page of the report, and then select the **District Manager** slicer you previously created.
+1. Select a slicer that you previously created. In this case, on the **Overview** page of the Retail Analysis sample report, select the **District Manager** slicer.
 
-2. Select **Visual interactions** from the menu, and then switch on **Edit interactions**.
+2. Select **Visual interactions** from the menu, and then turn on **Edit interactions**.
 
    :::image type="content" source="media/power-bi-visualization-slicers/edit-interactions-service.png" alt-text="Screenshot of the Edit Interactions button in the service version.":::
 
-    Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the visuals on the page. Initially, the **Filter** option is preselected on all the controls.
+    Filter controls, :::image type="icon" source="media/power-bi-visualization-slicers/filter-controls.png"::: each with a **Filter** and a **None** option, appear above all the other visuals on the page. Initially, the **Filter** option is preselected on all the controls.
 
 ---
-3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **DM** slicer from filtering it. 
+3. Select the **None** option in the filter control above the **Total Sales Variance by FiscalMonth and District Manager** chart to stop the **Dostrict Manager** slicer from filtering it. 
 
 For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
@@ -232,15 +232,13 @@ For range slicers, responsive formatting changes the style of the slider and pro
 
 ### Selection controls
 
-- Under **Selection**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer. With it, you can select or deselect all items as once. When all items are selected, selecting an item deselects it, allowing an *is-not* type of filter.
-
-    **Show "Select all" option** is **Off** by default.
+- The **Show "Select all" option** is **Off** by default. Under **Selection**, turn **Show "Select all" option** to **On** to add a **Select all** item to the slicer. With it, you can select or deselect all items as once. When all items are selected, selecting one item deselects it, allowing an *is-not* type of filter.
 
     :::image type="content" source="media/power-bi-visualization-slicers/slicer-select-all.png" alt-text="Screenshot of adding a Select all option to a slicer.":::
 
 - **Single select** is **Off** by default. Selecting an item selects it. When you hold down the **Ctrl** key, you can select multiple items. Selecting an item again deselects it.
 
-    When you turn **Single select** to **On**, the check boxes become radio buttons, and you can't select more than one item at a time.
+    When you turn **Single select** to **On**, you can't select more than one item at a time. In vertical list slicers, the check boxes become radio buttons.
 
 ### Title options
 
@@ -250,7 +248,7 @@ The **Title text** in **Slicer header** is **On** by default. This selection sho
 
 ### Other formatting options
 
-Other formatting options are **Off** by default. Turn **On** these options to control them: 
+Other formatting options are **Off** by default. Turn **On** these options to control them:
 
 - **Lock aspect**: Keep the relative height and width of the slicer if it's resized. Under **General** > **Properties** > **Size**.
 - **Background**: Add a background color to the slicer and set its transparency. Under **General** > **Effects**.

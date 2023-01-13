@@ -1,6 +1,6 @@
 ---
-title: Use the numeric range slicer in Power BI
-description: Learn how to use a slicer for constraining to numeric ranges in Power BI Desktop and the Power BI service.
+title: Create a numeric or date range slicer in Power BI
+description: Learn how to use a slicer for constraining to numeric or date ranges in Power BI Desktop and the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,39 +8,52 @@ ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 01/13/2023
 LocalizationGroup: Create reports
 ---
-# Use the numeric range slicer in Power BI
+# Create a numeric or date range slicer in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With the numeric range slicer, you can apply all sorts of filters to any numeric column in your data model. There are three options for filtering your numeric data: 
+With the numeric range slicer and the date range slicer, you can create filters for any numeric column or date column in your data model. There are three options for filtering your data:
 
-- Between numbers. 
-- Less than or equal to a number.
-- Greater than or equal to a number. 
+- Between numbers or dates.
+- Less than or equal to a number or date.
+- Greater than or equal to a number or date.
 
 This simple technique is a powerful, visual way to filter your data.
 
-![Screenshot of a visual, highlighting a numeric range slicer.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range.png" alt-text="Screenshot of a visual, highlighting a numeric range slicer.":::
 
 ## Video
 
-In this video, Will walks through creating a numeric range slicer.
+In this video, Will walks through creating a date range slicer.
 
 > [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+> This video uses earlier versions of Power BI Desktop or the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe>
 
 ## Add a numeric range slicer
 
-You can use the numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value. 
+You can use a numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value.
 
 Power BI automatically creates a numeric range slicer. By default, it's set to **Between**.
 
 ![Screenshot of the Numeric range slicer menu.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between.png)
+
+## Add a date range slicer
+
+Create a **Slicer** visual for your report, and then select a date value for the **Field** value.
+
+Power BI automatically creates a date range slicer. By default, it's set to **Between**.
+
+![Screenshot of the Date range slicer and the FOrmat pane.](media/desktop-slicer-numeric-range/slicer-date-range-between.png)
+
+Besides the basic date range slicer, there are two other options, explained in these articles:
+
+- The [relative date range slicer](../visuals/desktop-slicer-filter-date-range.md).
+- The [relative time range slicer](slicer-filter-relative-time.md).
 
 ## Format the range slicer
 

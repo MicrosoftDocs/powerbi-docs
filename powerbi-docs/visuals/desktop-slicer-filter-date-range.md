@@ -1,5 +1,5 @@
 ---
-title: Use a relative date slicer or filter in Power BI
+title: Create a relative date slicer or filter in Power BI
 description: Learn how to use a slicer or filter to constrain relative date ranges in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,12 +7,12 @@ ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/15/2022
+ms.date: 01/13/2023
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Create reports
 ---
 
-# Creating a relative date slicer and filter in Power BI
+# Create a relative date slicer and filter in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -28,9 +28,9 @@ You can use the relative date slicer just like any other slicer. Create a **Slic
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png" alt-text="Screenshot of the Visualizations pane with the slicer visual icon and the Field well called out.":::
 
-Select the slicer on your canvas and then the carat in the upper-right corner of the slicer visual. If the visual has date data, the menu displays the option for **Relative Date**.
+Select the slicer, and in the **Format** pane, under **Visual** > **Slicer settings** > **Options**, change the **Style** to **Relative Date**.
 
-:::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png" alt-text="Screenshot of the slicer visual with the carat and the Relative option called out.":::
+:::image type="content" source="media/desktop-slicer-filter-date-range/set-relative-date-range-slicer-filter.png" alt-text="Screenshot of the slicer visual with the Format pane and the Relative Date selected.":::
 
 For the relative date slicer, select *Relative Date*.
 
