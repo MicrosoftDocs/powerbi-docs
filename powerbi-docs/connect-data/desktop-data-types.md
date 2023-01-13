@@ -14,7 +14,7 @@ LocalizationGroup: Connect to data
 
 This article describes data types that Power BI Desktop and Data Analysis Expressions (DAX) support.
 
-When you load data, Power BI Desktop tries to convert the data types of source columns into data types that support more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop converts the data column to a **Whole number** data type, which is better suited for storing integers.
+When Power BI loads data, it tries to convert the data types of source columns into data types that support more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop converts the data column to a **Whole number** data type, which is better suited for storing integers.
 
 This concept is important because some DAX functions have special data type requirements. In many cases DAX [implicitly converts data types](#implicit-and-explicit-data-type-conversion), but in some cases it doesn't. For instance, if a DAX function requires a **Date** data type, but the data type for your column is **Text**, the DAX function won't work correctly. So it's important and useful to use the correct data types for columns.
 
@@ -22,7 +22,7 @@ This concept is important because some DAX functions have special data type requ
 
 In Power BI Desktop, you can determine and specify a column's data type in the Power Query Editor, in Data View, or in Report View:
 
-- In Power Query Editor, select the column and then select **Data type** in the **Transform** group of the ribbon.
+- In Power Query Editor, select the column and then select **Data Type** in the **Transform** group of the ribbon.
 
   ![Screenshot of the Power Query Editor, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
@@ -50,13 +50,13 @@ The highest precision that the **Decimal number** type can represent is 15 digit
 
 The **Fixed decimal number** data type has a fixed location for the decimal separator. The decimal separator always has four digits to its right, and allows for 19 digits of significance. The largest value the **Fixed decimal number** can represent is positive or negative *922,337,203,685,477.5807*.
 
-The **Fixed decimal number** type is useful in cases where rounding might introduce errors. Numbers that have small fractional values can sometimes accumulate and force a number to be slightly inaccurate. By truncating the values past the four digits to the right of decimal separator, the **Fixed decimal number** type can help you avoid these kinds of errors.
+The **Fixed decimal number** type is useful in cases where rounding might introduce errors. Numbers that have small fractional values can sometimes accumulate and force a number to be slightly inaccurate. The **Fixed decimal number** type can help you avoid these kinds of errors by truncating the values past the four digits to the right of decimal separator.
 
 This data type corresponds to SQL Server’s **Decimal (19,4)**, or the **Currency** data type in Analysis Services and Power Pivot in Excel. TOM specifies this type as `DataType.Decimal` Enum.
 
 ### Whole number
 
-**Whole number** represents a 64-bit (eight-byte) integer value. Because it's an integer, **Whole number** has no digits to the right of the decimal place. This type allows for 19 digits of positive or negative whole numbers between *-9,223,372,036,854,775,807* (*-2^63+1*) and *9,223,372,036,854,775,806* (*2^63-2*), so can represent the highest precision of the numeric data types.
+**Whole number** represents a 64-bit (eight-byte) integer value. Because it's an integer, **Whole number** has no digits to the right of the decimal place. This type allows for 19 digits of positive or negative whole numbers between *-9,223,372,036,854,775,807* (*-2^63+1*) and *9,223,372,036,854,775,806* (*2^63-2*), so can represent the largest possible numbers of the numeric data types.
 
 As with the **Fixed decimal** type, the **Whole number** type can be useful when you need to control rounding. TOM represents the **Whole number** data type as `DataType.Int64` Enum.
 
@@ -69,7 +69,7 @@ Column values of **Decimal number** data type are stored as *approximate* data t
 
 Precision loss, or *imprecision*, can occur if the floating-point value can't reliably quantify the number of floating point digits. Imprecision can potentially appear as unexpected or inaccurate calculation results in some reporting scenarios.
 
-Calculations that do equality-related comparisons between values of **Decimal number** data type can potentially return unexpected results. Equality comparisons include equals `=`, greater than `>`, less than `<`, greater than or equal to `>=`, and less than or equal to `<=`. 
+Equality-related comparison calculations between values of **Decimal number** data type can potentially return unexpected results. Equality comparisons include equals `=`, greater than `>`, less than `<`, greater than or equal to `>=`, and less than or equal to `<=`. 
 
 This issue is most apparent when you use the [RANKX function](/dax/rankx-function-dax) in a DAX expression, which calculates the result twice, resulting in slightly different numbers. Report users might not notice the difference between the two numbers, but the rank result can be noticeably inaccurate. To avoid unexpected results, you can change the column data type from **Decimal number** to either **Fixed decimal number** or **Whole number**, or do a forced rounding by using [ROUND](/dax/round-function-dax). The **Fixed decimal number** data type has greater precision, because the decimal separator always has four digits to its right.
 
@@ -79,7 +79,7 @@ If a required calculation sums most of the positive numbers before summing most 
 
 ## Date/time types
 
-Power BI Desktop supports five **Date/Time** data types in Power Query Editor. Both **Date/Time/Timezone** and **Duration** convert during load into the Power BI Desktop data tmodel. The model supports **Date/time**, or you can format the values as dates or times independently.
+Power BI Desktop supports five **Date/Time** data types in Power Query Editor. Both **Date/Time/Timezone** and **Duration** convert during load into the Power BI Desktop data model. The model supports **Date/Time**, or you can format the values as dates or times independently.
 
 - **Date/Time**  represents both a date and time value. The underlying **Date/Time** value is stored as a **Decimal number** type, so you can convert between the two types. The time portion stores as a fraction to whole multiples of 1/300 seconds (3.33 ms). The data type supports dates between years 1900 and 9999.
 
@@ -109,9 +109,9 @@ After Power BI loads the data, capitalization of some of the names in the **Data
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="Screenshot that shows the textual data with changed capitalization after loading into Power BI.":::
 
-This change happens because Power Query Editor is case sensitive, so it shows the data exactly as stored in the source system. The engine that stores data in Power BI is case insensitive, so treats the lowercase and uppercase versions of a character as identical. Power Query data loaded into the Power BI engine changes accordingly.
+This change happens because Power Query Editor is case sensitive, so it shows the data exactly as stored in the source system. The engine that stores data in Power BI is case insensitive, so treats the lowercase and uppercase versions of a character as identical. Power Query data loaded into the Power BI engine can change accordingly.
 
-When loading data, the Power BI engine evaluates each row individually, starting from the top. For each text column, such as **Addressee**, the engine stores a dictionary of unique values to improve performance through data compression. The engine sees the first three values in the **Addressee** column as unique and stores them in the dictionary. After that, because the engine is case insensitive, it evaluates the names as identical.
+The Power BI engine evaluates each row individually when it loads data, starting from the top. For each text column, such as **Addressee**, the engine stores a dictionary of unique values, to improve performance through data compression. The engine sees the first three values in the **Addressee** column as unique and stores them in the dictionary. After that, because the engine is case insensitive, it evaluates the names as identical.
 
 The engine sees the name "Taina Hasu" as the same as "TAINA HASU" and "Taina HASU", so it doesn't store those variations, but refers to the first variation it stored. The name "MURALI DAS" appears in uppercase letters, because that's how the name appeared the first time the engine evaluated it when loading the data from top to bottom.
 
@@ -119,7 +119,7 @@ This image illustrates the evaluation process:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-03.png" alt-text="Diagram that shows the data load process and mapping text values to a dictionary of unique values." border="false":::
 
-In the preceding example, the Power BI engine loads the first row of data, creates the **Addressee** dictionary, and adds *Taina Hasu* to it. The engine also adds a reference to that value in the **Addressee** column on the table it loaded. The engine does the same for the second and third rows, because these names aren't equivalent to the others when ignoring case.
+In the preceding example, the Power BI engine loads the first row of data, creates the **Addressee** dictionary, and adds *Taina Hasu* to it. The engine also adds a reference to that value in the **Addressee** column on the table it loads. The engine does the same for the second and third rows, because these names aren't equivalent to the others when ignoring case.
 
 For the fourth row, the engine compares the value against the names in the dictionary and finds the name. Since the engine is case insensitive, "TAINA HASU" and "Taina Hasu" are the same. The engine doesn't add a new name to the dictionary, but refers to the existing name. The same process happens for the remaining rows.
 
@@ -153,9 +153,9 @@ However, a visual based on this data returns just two rows.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-06.png" alt-text="Screenshot of a table visual based on the same data returning just two lines of data.":::
 
-In the preceding image, the first row has a total value of *60* for the **Index** field, so the first row in the visual seems to represent the last two rows of the loaded data. The second row with total **Index** value of *11* represents the first two rows. The difference in the number of rows between the visual and the data table is caused by the engine automatically removing or trimming trailing spaces, but not leading spaces. So the first and second row and the third and fourth row are evaluated as identical, and therefore the visual returns these results.
+In the preceding image, the first row has a total value of *60* for the **Index** field, so the first row in the visual represents the last two rows of the loaded data. The second row with total **Index** value of *11* represents the first two rows. The difference in the number of rows between the visual and the data table is caused by the engine automatically removing or trimming trailing spaces, but not leading spaces. So the engine evaluates the first and second rows, and the third and fourth rows, as identical, and the visual returns these results.
 
-This behavior can also cause error messages related to relationships because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following image:
+This behavior can also cause error messages related to relationships, because duplicate values are detected. For example, depending on the configuration of your relationships, you might see an error similar to the following image:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-08.png" alt-text="Screenshot of an error message about duplicate values.":::
 
@@ -163,7 +163,7 @@ In other situations, you might be unable to create a many-to-one or one-to-one r
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-07.png" alt-text="Screenshot of the relationship dialog showing a 'the cardinality you selected isn't valid for this relationship' error, which is related to duplicate values being detected.":::
 
-You can trace these errors back to leading or trailing spaces, and resolve them by using [Text.Trim](/powerquery-m/text-trim) or **Trim** to remove the spaces under **Transform** in Power Query Editor.
+You can trace these errors back to leading or trailing spaces, and resolve them by using [Text.Trim](/powerquery-m/text-trim), or **Trim** under **Transform**, to remove the spaces in Power Query Editor.
 
 ## True/false type
 
@@ -173,7 +173,7 @@ Power BI converts and displays data differently in certain situations. This sect
 
 In this example, you load data about whether your customers have signed up for your newsletter. A value of *TRUE* indicates the customer has signed up for the newsletter, and a value of *FALSE* indicates the customer hasn't signed up.
 
-However, when you publish the report to the Power BI service, the column tracking the newsletter signup status shows as *0* and *-1* instead of the expected values of *TRUE* or *FALSE*. The following steps describe how this conversion occurs, and how to address it.
+However, when you publish the report to the Power BI service, the newsletter signup status column shows *0* and *-1* instead of the expected values of *TRUE* or *FALSE*. The following steps describe how this conversion occurs, and how to prevent it.
 
 The simplified query for this table appears in the following image:
 
@@ -193,7 +193,7 @@ However, when you refresh the dataset in the Power BI service, the **Subscribed 
 
 If you republish the report from Power BI Desktop, the **Subscribed To Newsletter** column again shows *TRUE* or *FALSE* as you expect, but once a refresh occurs in the Power BI service, the values again change to show *-1* and *0*.
 
-The solution to prevent this situation s to set any Boolean columns to type **True/False** in Power BI Desktop, and republish your report.
+The solution to prevent this situation is to set any Boolean columns to type **True/False** in Power BI Desktop, and republish your report.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-05.png" alt-text="Screenshot of changing the data type of the column to True/False.":::
 
@@ -201,7 +201,7 @@ When you make the change, the visualization shows the values in the **Subscribed
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-06.png" alt-text="Screenshot of values appearing differently when you change the data type.":::
 
-Once you change the data type and republish to the Power BI service, and a refresh occurs, the report displays the values as *True* or *False*, as expected.
+Once you change the data type, republish to the Power BI service, and a refresh occurs, the report displays the values as *True* or *False*, as expected.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-07.png" alt-text="Screenshot that shows true or false values that use the True/false data type appear as expected after refresh.":::
 
@@ -235,8 +235,8 @@ For example:
 
 - If you type a date as a string, DAX parses the string and tries to cast it as one of the Windows date and time formats.
 - You can add *TRUE + 1* and get the result *2*, because DAX implicitly converts *TRUE* to the number *1*, and does the operation *1+1*.
-- If you add values in two columns with one value represented as text ("12") and the other as a number (12), DAX implicitly converts the string to a number and then does the addition for a numeric result. The expression = "22" + 22 returns 44.
-- If you try to concatenate two numbers, DAX presents them as strings and then concatenates. The expression *= 12 & 34* returns "1234".
+- If you add values in two columns with one value represented as text ("12") and the other as a number (12), DAX implicitly converts the string to a number, and then does the addition for a numeric result. The expression *= "22" + 22* returns *44*.
+- If you try to concatenate two numbers, DAX presents them as strings, and then concatenates. The expression *= 12 & 34* returns *"1234"*.
 
 ### Tables of implicit data conversions
 The operator determines the type of conversion DAX performs by casting the values it requires before doing the requested operation. The following tables list the operators, and the conversion DAX does on each data type when it pairs with the data type in the intersecting cell.
