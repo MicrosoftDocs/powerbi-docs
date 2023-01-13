@@ -28,7 +28,7 @@ There are multiple ways to create or build on top of a new dataflow:
 The following sections explore each of these ways to create a dataflow in detail.
 
 > [!NOTE]
-> Dataflows can be created by user in a Premium workspace, users with a Pro license, and users with a Premium Per User (PPU) license.
+> Dataflows can be created by users in a Premium workspace, users with a Pro license, and users with a Premium Per User (PPU) license.
 
 ## Create a dataflow by using define new tables
 
@@ -38,7 +38,7 @@ Using the Define new tables option lets you define a new table and connect to a 
 
 When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
 
-:::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of form after choosing Azure sql as a connector.":::
+:::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of the form displayed after you choose Azure SQL as a connector.":::
 
 Once connected, you can select which data to use for your table. When you choose data and a source, Power BI reconnects to the data source. The reconnection keeps the data in your dataflow refreshed at the frequency that you select later in the setup process.
 
@@ -78,6 +78,7 @@ By selecting **Enable load**, you create a new table for which its source is the
 Any transformation you perform on this newly created table is run on the data that already resides in Power BI dataflow storage. That means that the query won't run against the external data source from which the data was imported, like the data pulled from the SQL database. Instead the query is performed on the data that resides in the dataflow storage.
 
 **Example use cases**
+
 What kind of transformations can be performed with computed tables? Any transformation that you usually specify by using the transformation user interface in Power BI, or the M editor, are all supported when performing in-storage computation.
 
 Consider the following example: you have an *Account* table that contains the raw data for all the customers from your Dynamics 365 subscription. You also have *ServiceCalls* raw data from the Service Center, with data from the support calls that were performed from the different account in each day of the year.
@@ -108,11 +109,11 @@ Creating a dataflow from a CDM folder allows you to reference a table that has b
 
 There are a few requirements for creating dataflows from CDM folders, as the following list describes:
 
-* The ADLS Gen 2 account must have the appropriate permissions set up in order for PBI to access the file
+* The ADLS Gen 2 account must have the appropriate permissions set up in order for PBI to access the file.
 
-* The ADLS Gen 2 account must be accessible by the user trying to create the dataflow
+* The ADLS Gen 2 account must be accessible by the user trying to create the dataflow.
 
-* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core isn't supported
+* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core isn't supported.
 
 ## Create a dataflow by using import/export
 
