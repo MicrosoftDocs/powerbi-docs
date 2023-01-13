@@ -1,6 +1,6 @@
 ---
 title: The Analytics pane in Power BI visuals
-description: Learn how to create dynamic reference lines in Power BI visuals.
+description: Learn how to manage the Analytics pane to create dynamic reference lines, like min, max, or average, in Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -98,7 +98,7 @@ class YourAnalyticsCardSettings extends FormattingSettingsCard {
 };
 ```
 
-### [Older API's (before 5.1)](#tab/Old-API)
+### [Older APIs (before 5.1)](#tab/Old-API)
 
 1. Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
 
