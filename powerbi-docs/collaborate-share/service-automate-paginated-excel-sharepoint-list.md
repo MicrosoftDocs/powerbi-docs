@@ -83,7 +83,7 @@ To follow along, make sure you meet these criteria:
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-1-2-3-12.png" alt-text="Enter values for Case, Case 2, and Case 3.":::
 
-1. In the case where you're saving your paginated reported to OneDrive, select the **Folder Path** where it should be saved.  
+1. In the case where you're saving your paginated report to OneDrive, select the **Folder Path** where it should be saved.  
 
     :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-onedrive-13.png" alt-text="Screenshot that shows the case where you're saving to OneDrive.":::
 
