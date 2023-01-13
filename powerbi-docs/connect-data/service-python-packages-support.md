@@ -1,5 +1,5 @@
 ---
-title: Create visuals by using Python packages in Power BI
+title: Learn which Python packages are supported
 description: Learn which Python packages are supported for Power BI visualizations. You can suggest support for a Python package.
 author: otarb
 ms.author: otarb
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 01/13/2023
 LocalizationGroup: Connect to data
 ---
-# Create visuals by using Python packages in Power BI
+# Learn which Python packages are supported in Power BI
 
 You can use the powerful [Python programming language](https://www.python.org/) to create visuals in Power BI. Many Python packages are supported in Power BI and more are being supported all the time.
 
