@@ -240,7 +240,7 @@ The module provides the following functions:
 
 ### getValue
 
-This function returns the value of the given object.
+This function returns the value of the specific object.
 
 ```typescript
 function getValue<T>(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultValue?: T): T;
@@ -273,7 +273,7 @@ dataViewObjects.getValue(objects, property);
 
 ### getObject
 
-This function returns an object of the given object.
+This function returns an object from specified objects.
 
 ```typescript
 function getObject(objects: DataViewObjects, objectName: string, defaultValue?: IDataViewObject): IDataViewObject;
@@ -340,7 +340,7 @@ dataViewObjects.getFillColor(objects, property);
 
 ### getCommonValue
 
-This universal function retrieves the color or value of a given object.
+This universal function retrieves the color or value of a specific object.
 
 ```typescript
 function getCommonValue(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultValue?: any): any;
