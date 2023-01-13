@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 01/13/2023
 LocalizationGroup: Create reports
 ---
 
@@ -17,9 +17,9 @@ LocalizationGroup: Create reports
 
 With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. Using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Animation showing an example graph using the relative time slicer.":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Animation showing an example graph that uses the relative time slicer.":::
 
-You don't have to use the feature in conjunction with the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature. However, many relative time scenarios pair well with the automatic page refresh feature.
+You don't have to use the relative time feature in conjunction with the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature. However, many relative time scenarios pair well with the automatic page refresh feature.
 
 > [!NOTE]
 > When you apply a relative time filter or slicer at the page or report level, all visuals on that page or report are filtered to the exact same time range by using a shared *anchor* time. Because visuals might have slightly different execution times, this shared anchor time ensures that visuals are synchronized across your page or across your report. For more information, see [anchor time](#understanding-anchor-time).
