@@ -1,6 +1,6 @@
 ---
 title: Overview of single sign-on for on-premises data gateways
-description: Configure your gateway to enable single sign-on (SSO) from Power BI to on-premises data sources.
+description: Learn how to configure your gateway to enable single sign-on from Power BI to on-premises data sources.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
@@ -17,7 +17,7 @@ You can get seamless single sign-on (SSO) connectivity, enabling Power BI report
 
 * Active Directory (AD) SSO, which includes:
   * [Kerberos](service-gateway-sso-kerberos.md) constrained delegation.
-  * Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)).
+  * [Security Assertion Markup Language (SAML)](service-gateway-sso-saml.md).
 * Azure Active Directory (Azure AD) SSO.
 
 > [!NOTE]
