@@ -17,7 +17,7 @@ The **Optimize** ribbon in Power BI Desktop can improve report authoring perform
 :::image type="content" source="media/desktop-optimize-ribbon/desktop-optimize-ribbon.png" alt-text="Power BI Desktop Optimize ribbon":::
 
 > [!IMPORTANT]
-> The Optimize ribbon feature is currently in **preview**. While in preview, functionality and documentation are likely to change.
+> The Optimize ribbon features are currently in **preview**. When in preview, functionality and documentation are likely to change.
 
 How you use features on the ribbon depends on the [table data storage modes](../transform-model/desktop-storage-mode.md) used in your model. For example:
 
@@ -35,7 +35,7 @@ The following sections describe features the Optimize ribbon provides. After rea
 
 Typically, when authoring a report, you create a new visual or change an existing visual by adding or removing columns and measures to the visual's field well. When making changes like these, a DAX query is sent to the data source and the data in the visual is updated. You can see if DAX queries are being sent by using Performance analyzer. If making changes to visuals seems slow, you can stop those DAX queries to the data source by using **Pause visuals** in the Optimize ribbon. When paused, the *entire report is paused*. Visuals enter a **Visual has pending changes** state. No queries are sent to the data source.
 
-In **Visual has pending changes** state, the report surface:
+When paused, the report surface:
 
 * Shows a banner with a **Refresh** button that refreshes all visuals in the report, and a **Resume visual queries** button that unpauses the Paused state.
 * Individual visuals show a banner with a **Refresh** button allowing you to refresh that visual only. Other visuals in the report remain paused.
