@@ -1,13 +1,13 @@
 ---
 title: Overview of accessibility in Power BI
-description: Features and suggestions for creating accessible Power BI Desktop reports including Web Content Accessibility Guidelines (WCAG)
+description: Learn how to create accessible Power BI Desktop reports with Web Content Accessibility Guidelines (WCAG).
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 09/22/2022
+ms.date: 01/13/2023
 LocalizationGroup: Create reports
 ---
 
@@ -17,11 +17,11 @@ When working with Power BI, consider the different types of users who may intera
 
 ![Screenshot showing a high-contrast color setting in Power BI service.](media/desktop-accessibility/accessibility-05b.png)
 
-This article provides an overview of Power BI and accessibility. Additional articles provide guidance, and tools, which can help you create great reports with accessibility in mind.
+This article provides an overview of Power BI and accessibility. Other articles provide guidance, and tools, which can help you create great reports with accessibility in mind.
 
 ## Universal design
 
-Universal design is the design of products that are usable by as many people as reasonably possible, without the need for special adaptation or specialized design. When creating reports or experiences in Power BI, it’s important to consider the needs of your users. Designing an accessible experience won't only benefit your end users who may have hearing, motor, cognitive, or visual impairments. It can help all the end users in your organization. Power BI gives you the tools to make and consume accessible reports. It’s up to you, as a report creator, to use those tools to improve everyone’s experience.
+Universal design is the design of products that are usable by as many people as reasonably possible, without the need for special adaptation or specialized design. When creating reports or experiences in Power BI, it’s important to consider the needs of your users. Designing an accessible experience won't only benefit your end users who may have hearing, motor, cognitive, or visual impairments. It can also help all the end users in your organization. Power BI gives you the tools to make and consume accessible reports. It’s up to you, as a report creator, to use those tools to improve everyone’s experience.
 
 ## Accessibility standards
 
@@ -52,8 +52,8 @@ To find updated conformance reports, search for Power BI in the [Microsoft Acces
 
 For more information about Power BI accessibility, see the following resources:
 
-* [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
-* [Consume Power BI reports by using accessibility features](desktop-accessibility-consuming-tools.md)
+* [Creating accessible reports in Power BI](desktop-accessibility-creating-reports.md)
+* [Consuming reports in Power BI with accessibility tools](desktop-accessibility-consuming-tools.md)
 * [Creating reports in Power BI using accessibility tools](desktop-accessibility-creating-tools.md)
 * [Keyboard shortcuts in Power BI Desktop](desktop-accessibility-keyboard-shortcuts.md)
 * [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
