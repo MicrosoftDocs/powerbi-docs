@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 05/10/2022
+ms.date: 01/17/2023
 LocalizationGroup: Gateways
 ---
 
@@ -17,42 +17,34 @@ LocalizationGroup: Gateways
 
 You can use the on-premises data gateway to merge or append on-premises and cloud data sources in the same query. This solution is helpful when you want to combine data from multiple sources without having to use separate queries.
 
->[!NOTE]
->This article applies only to datasets that have cloud and on-premises data sources merged or appended in a single query. For datasets that include separate queries--one that connects to an on-premises data source and the other to a cloud data source--the gateway doesn't execute the query for the cloud data source.
+> [!NOTE]
+> This article applies only to datasets that have cloud and on-premises data sources merged or appended in a single query. For datasets that include separate queries, for instance, one that connects to an on-premises data source and the other to a cloud data source, the gateway doesn't execute the query for the cloud data source.
 
 ## Prerequisites
 
 - A [gateway installed](/data-integration/gateway/service-gateway-install) on a local computer.
 - A Power BI Desktop file with queries that combine on-premises and cloud data sources.
 
->[!NOTE]
->To access any cloud data sources, you must ensure that the gateway has access to those data sources.
+> [!NOTE]
+> To access any cloud data sources, you must ensure that the gateway has access to those data sources.
 
-1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-mashup-on-premises-cloud/icon-gear.png) > **Manage gateways**.
+1. In the upper-right corner of the Power BI service, select the gear icon :::image type="icon" source="media/service-gateway-mashup-on-premises-cloud/icon-gear.png"::: then **Manage connections and gateways**.
 
-    ![Manage gateways](media/service-gateway-mashup-on-premises-cloud/manage-gateways.png)
+   ![Screenshot shows the gear icon with its context menu with Manage connections and gateways selected.](media/service-gateway-mashup-on-premises-cloud/manage-gateways.png)
 
-2. Select the gateway you want to configure, and select **Settings** from the top ribbon
+1. Select the gateway you want to configure, and select **Settings** from the top ribbon
 
-3. Under **Gateway Cluster Settings**, select **Allow user's cloud data sources to refresh through this gateway cluster** > **Apply**.
+    :::image type="content" source="media/service-gateway-mashup-on-premises-cloud/open-settings-gateway.png" alt-text="Screenshot of opening the setting page for gateways." :::
 
-    :::image type="content" source="media/service-gateway-mashup-on-premises-cloud/open-settings-gateway.png" alt-text=" Screenshot of opening the setting page for gateways." :::
+1. Under **Settings**, select **Allow user's cloud data sources to refresh through this gateway cluster**, then select **Save**.
 
+1. To  add any [on-premises data sources](service-gateway-enterprise-manage-scheduled-refresh.md#add-a-data-source) used in your queries, select **Connections**, then select **New** to create a connection. You don't need to add the cloud data sources here.
 
-4. Under this gateway cluster, add any [on-premises data sources](service-gateway-enterprise-manage-scheduled-refresh.md#add-a-data-source) used in your queries. You don't need to add the cloud data sources here.
+1. Select your gateway for **Gateway cluster name**. Name the connection and specify the type of connection and other required information. Then select **Create**.
 
-5. Upload to the Power BI service your Power BI Desktop file with the queries that combine on-premises and cloud data sources.
+1. Upload to the Power BI service your Power BI Desktop file with the queries that combine on-premises and cloud data sources.
 
-6. On the **Dataset settings** page for the new dataset:
-
-   - For the on-premises source, select the gateway associated with this data source.
-   - Under **Data source credentials**, edit the cloud data source credentials, as necessary.
-
-    Make sure privacy levels for both cloud and on-premises data sources are set appropriately to ensure the joins are handled securely.
-
-     :::image type="content" source="media/service-gateway-mashup-on-premises-cloud/refresh-gateway-cluster.png" alt-text=" Screenshot of enabeling the setting for refreshing cloud data sources over the gateway." :::
-
-7. With the cloud credentials set, you can now refresh the dataset by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
+With the cloud credentials set, you can now refresh the dataset by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
 
 ## Next steps
 
