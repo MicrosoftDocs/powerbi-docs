@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 01/13/2023
 ---
 
 # Color utils
@@ -34,7 +34,7 @@ This command installs the package and adds a package as a dependency to your `pa
 
 ## Usage
 
-To user interactivity utils, you have to import the required component in the source code of the visual.
+To use interactivity utils, you have to import the required component in the source code of the visual.
 
 ```typescript
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
@@ -56,7 +56,7 @@ The `ColorHelper` class provides the following functions and methods:
 
 ### getColorForSeriesValue
 
-This method gets the color for the given series value. If no explicit color or default color has been set, then the color is allocated from the color scale for this series.
+This method gets the color for a specific series value. If no explicit color or default color has been set, then the color is allocated from the color scale for this series.
 
 ```typescript
 getColorForSeriesValue(objects: IDataViewObjects, value: PrimitiveValue, themeColorName?: ThemeColorName): string;
@@ -113,7 +113,7 @@ export class YourVisual implements IVisual {
 
 ### getColorForMeasure
 
-This method gets the color for the given measure.
+This method gets the color for a specific measure.
 
 ```typescript
  getColorForMeasure(objects: IDataViewObjects, measureKey: any, themeColorName?: ThemeColorName): string;
@@ -177,8 +177,7 @@ let selectionId: ISelectionId = ...;
 let selector = ColorHelper.normalizeSelector(selectionId.getSelector(), false);
 ```
 
-Methods `getThemeColor` and `getHighContrastColor` are both related to color theme colors.
-Also, `ColorHelper` has the `isHighContrast` property, which is useful for check.
+Methods `getThemeColor` and `getHighContrastColor` are both related to color theme colors. `ColorHelper` has the `isHighContrast` property.
 
 ### `getThemeColor`
 
@@ -241,7 +240,7 @@ export class MyVisual implements IVisual {
 
 ### hexToRGBString
 
-Converts hex color to RGB string.
+Converts a hex color to an RGB string.
 
 ```typescript
 function hexToRGBString(hex: string, transparency?: number): string
@@ -316,7 +315,7 @@ calculateHighlightColor(yellowRGB, 0.8, 0.2);
 
 ### createLinearColorScale
 
-Returns a linear color scale for the given domain of numbers.
+Returns a linear color scale for a specific domain of numbers.
 
 ```typescript
 function createLinearColorScale(domain: number[], range: string[], clamp: boolean): LinearColorScale
@@ -339,7 +338,7 @@ scale(10); // returns: yellow
 ### shadeColor
 
 Converts a string hex expression to a number, and calculates the percentage and R, G, B channels.
-Applies the percentage for each channel and returns back the hex value as a string with a pound sign.
+Applies the percentage for each channel and returns the hex value as a string with a pound sign.
 
 ```typescript
 function shadeColor(color: string, percent: number): string
