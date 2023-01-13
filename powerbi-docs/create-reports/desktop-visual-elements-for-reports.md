@@ -25,7 +25,7 @@ You can put enhancements to use in your reports and make your analytics and repo
 
 The following sections describe how to use these enhancements and how to apply them to your reports.
 
-## Use wallpaper in Power BI reports
+## Using wallpaper in Power BI reports
 
 You can format the gray area outside your report page using **wallpaper**. The following image has a red box that clarifies where the wallpaper area applies.
 
@@ -35,7 +35,7 @@ You can either set wallpaper on a per-report-page basis or have the same wallpap
 
 ![Screenshot of the Visualizations pane, highlighting the Wallpaper option.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_03.png)
 
-You can choose a color to apply as **wallpaper** by selecting the **Color** dropdown, or you can select the **Add Image** button to select an image to apply as wallpaper. You can also apply transparency to your wallpaper, whether it's a color or an image, using the **Transparency** slider.
+You can choose a color to apply as **wallpaper** by selecting the **Color** dropdown, or you can select the **Add Image** button to select an image to apply as wallpaper. You can also apply transparency to your wallpaper, whether it's a color or an image by using the **Transparency** slider.
 
 It's useful to keep in mind the following definitions that pertain to **wallpaper**:
 
@@ -56,9 +56,9 @@ When you set your page background to greater than 50% transparency, a dotted bor
 It's important to note that the dotted boundary *only* shows up when editing your report and does *not* appear for people who are viewing your published report, such as when it's viewed in the **Power BI service**.
 
 > [!NOTE]
-> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature does not include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. For more information, see [export to PDF](../consumer/end-user-pdf.md).
+> If you use dark-colored backgrounds for wallpaper and set text color to white or very light, be mindful that the **Export to PDF** feature doesn't include wallpaper, so any exports with white fonts will be nearly invisible in the exported PDF file. For more information, see [export to PDF](../consumer/end-user-pdf.md).
 
-## Use improved visual headers in Power BI reports
+## Using improved visual headers in Power BI reports
 
 The headers for visuals in reports have been significantly improved. The primary improvements are that the header has been detached from the visual, so its position can be adjusted based on your preference of layout and positioning. The header now appears within the visual itself instead of floating above it.
 
@@ -81,7 +81,7 @@ Each visual also has a card in the **Formatting** section of the **Visualization
 > [!NOTE]
 > The visibility of toggles don't affect your report when you're authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are important during editing, especially warning icons that alert you to issues while editing.
 
-For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace > Reports**, selecting a report, and then selecting the **Settings** icon. There you see settings for the report for which you selected **Settings** and you can adjust the settings from there, as shown in the following image.
+For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace > Reports**, selecting a report, and then choosing the **Settings** icon. There you see settings for the report for which you selected **Settings** and you can adjust the settings from there, as shown in the following image.
 
 ![Screenshot of the settings for a report in the Power BI service.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_10.png)
 
@@ -98,6 +98,6 @@ For more information about **Power BI Desktop** and how to get started, see:
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Connect to Data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
+* [Connect to Data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
+* [Perform common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
