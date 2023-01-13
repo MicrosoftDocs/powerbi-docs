@@ -17,13 +17,13 @@ LocalizationGroup: Create reports
 
 With the numeric range slicer, you can apply all sorts of filters to any numeric column in your data model. There are three options for filtering your numeric data: 
 
-- Between numbers 
-- Less than or equal to a number
+- Between numbers. 
+- Less than or equal to a number.
 - Greater than or equal to a number. 
 
-This simple technique is a powerful way to filter your data.
+This simple technique is a powerful, visual way to filter your data.
 
-![Screenshot of a Visual, highlighting a numeric range slicer.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
+![Screenshot of a visual, highlighting a numeric range slicer.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range.png)
 
 ## Video
 
@@ -36,36 +36,31 @@ In this video, Will walks through creating a numeric range slicer.
 
 ## Add a numeric range slicer
 
-You can use the numeric range slicer like you would use any other slicer. Just create a **Slicer** visual for your report, and then select a numeric value for the **Field** value. In the following image, we selected the **LineTotal** field.
+You can use the numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value. 
 
-![Screenshot of the Visualizations pane, highlighting the Slicer icon and the LineTotal Field.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-create.png)
+Power BI automatically creates a numeric range slicer. By default, it's set to **Between**.
 
-Select the down-arrow in the upper-right corner of the numeric range slicer and a menu appears.
+![Screenshot of the Numeric range slicer menu.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between.png)
 
-![Screenshot of the Numeric range slicer menu.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
+## Format the range slicer
 
-> [!NOTE]  
-> If you don't see the down arrow, open the **Format** pane for the slicer and set the **Slicer header** to **On**.
-
-For the numeric range, you can select from the following three options:
+In the **Format** pane, under **Visual** > **Slicer settings** > **Options**, select one of these options:
 
 * **Between**
 * **Less than or equal to**
 * **Greater than or equal to**
 
-When you select **Between** from the menu, a slider appears. You can use the slider to select numeric values that fall between the numbers. Sometimes the granularity of moving the slicer bar makes landing exactly on that number difficult. You can use the slider and select either box to type in the values you want. This option is convenient when you want to slice on specific numbers.
+You can use the slider to select numeric values that fall between the numbers. Sometimes the granularity of moving the slicer bar makes landing exactly on that number difficult. You can use the slider, or select either box to type in the values you want. This option is convenient when you want to slice on specific numbers.
 
-In the following image, the report page filters for **LineTotal** values that range between 2500.00 and 6000.00.
+In the following image, the report page filters for **Sales Amount** values that range between 2,100.00 and 25,000.00.
 
-![Screenshot of a visual, highlighting the Numeric range slicer set to Between.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
+![Screenshot of a visual, highlighting the Numeric range slicer set to Between.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between-specific-numbers.png)
 
-When you select **Less than or equal to**, the left (lower value) handle of the slider bar disappears, and you can adjust only the upper-bound limit of the slider bar. In the following image, we set the slider bar maximum to 5928.19.
+When you select **Less than or equal to**, the left (lower value) handle of the slider bar disappears, and you can adjust only the upper-bound limit of the slider bar. In the following image, the lower limit is gone.
 
-![Screenshot of a visual, highlighting the Numeric range slicer set to Less than.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-4-less-than.png)
+![Screenshot of a visual, highlighting the Numeric range slicer set to Less than or equal to.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-less-than.png)
 
-Lastly, if you select **Greater than or equal to**, then the right (higher value) slider bar handle disappears. You can then adjust the lower value, as seen in the following image. Now, only items with a **LineTotal** greater than or equal to 4902.99 display in the visuals on the report page.
-
-![Screenshot of a visual, highlighting the Numeric range slicer set to Greater than.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
+If you select **Greater than or equal to**, then the right (higher value) slider bar handle disappears. You can then adjust the lower value, but not the upper value.
 
 ## Snap to whole numbers with the numeric range slicer
 
@@ -77,6 +72,8 @@ When you use a slicer to display or set a range of dates, the dates display in t
 
 You could, for example, have a long date format for the underlying data type. In this case, a date format such as *dddd, MMMM d, yyyy* would format a date in other visuals or circumstances as *Wednesday, March 14, 2001*. But in the date range slicer, that date displays in the slicer as *03/14/2001*.
 
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-date.png" alt-text="Screenshot showing a slicer witha date range.":::
+
 Displaying the Short Date format in the slicer ensures the length of the string stays consistent and compact within the slicer.
 
 ## Considerations and limitations
@@ -87,3 +84,8 @@ The following considerations and limitations apply to the numeric range slicer:
 * The numeric range slicer doesn't currently work with measures.
 * You can type any number into a numeric slicer even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
 * The date range slicer allows for any date values even if they don't exist in the underlying date column.
+
+## Next steps
+
+- [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
