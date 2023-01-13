@@ -72,7 +72,7 @@ When you use a slicer to display or set a range of dates, the dates display in t
 
 You could, for example, have a long date format for the underlying data type. In this case, a date format such as *dddd, MMMM d, yyyy* would format a date in other visuals or circumstances as *Wednesday, March 14, 2001*. But in the date range slicer, that date displays in the slicer as *03/14/2001*.
 
-:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-date.png" alt-text="Screenshot showing a slicer witha date range.":::
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-date.png" alt-text="Screenshot showing a slicer with a date range.":::
 
 Displaying the Short Date format in the slicer ensures the length of the string stays consistent and compact within the slicer.
 
