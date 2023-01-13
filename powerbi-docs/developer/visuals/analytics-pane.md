@@ -98,7 +98,7 @@ class YourAnalyticsCardSettings extends FormattingSettingsCard {
 };
 ```
 
-### [Older API's (before 5.1)](#tab/Old-API)
+### [Older APIs (before 5.1)](#tab/Old-API)
 
 1. Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
 
