@@ -6,10 +6,9 @@ ms.author: maggies
 ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.custom: video-zIZPA0UrJyA
 ms.topic: how-to
 ms.date: 01/13/2023
-ms.custom: sample-Sales-and-Marketing
+ms.custom: video-zIZPA0UrJyA, sample-Sales-and-Marketing
 LocalizationGroup: Create reports
 ---
 
@@ -97,7 +96,7 @@ The following considerations and limitations currently apply to the **relative d
 
 - The data type for the field in the slicer must be a date, and not the default of text. Otherwise, the relative options don't show up in the slicer.
 - Data models in **Power BI** don't include time zone info. The models can store times, but there's no indication of the time zone they're in.
-- The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you are in the UTC time zone, you and your colleague must account for the time offset you experience.
+- The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you are in the UTC time zone, you and your colleague must account for the time offset that you experience.
 - You can convert data captured in a local time zone to UTC using the **Query Editor**.
 
 ## Next steps

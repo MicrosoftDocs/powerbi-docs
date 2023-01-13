@@ -38,7 +38,7 @@ Create a **Slicer** visual for your report, and then select a date field for the
 
 Power BI automatically creates a date range slicer. By default, it's set to **Between**.
 
-:::image type="content" source="media/desktop-slicer-numeric-range/slicer-date-range-between.png" alt-text="Screenshot of the Date range slicer and the FOrmat pane.":::
+:::image type="content" source="media/desktop-slicer-numeric-range/slicer-date-range-between.png" alt-text="Screenshot of the Date range slicer and the Format pane.":::
 
 Besides the basic date range slicer, there are two other options, explained in these articles:
 
