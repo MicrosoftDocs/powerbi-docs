@@ -73,13 +73,13 @@ Equality-related comparison calculations between values of **Decimal number** da
 
 This issue is most apparent when you use the [RANKX function](/dax/rankx-function-dax) in a DAX expression, which calculates the result twice, resulting in slightly different numbers. Report users might not notice the difference between the two numbers, but the rank result can be noticeably inaccurate. To avoid unexpected results, you can change the column data type from **Decimal number** to either **Fixed decimal number** or **Whole number**, or do a forced rounding by using [ROUND](/dax/round-function-dax). The **Fixed decimal number** data type has greater precision, because the decimal separator always has four digits to its right.
 
-Rarely, calculations that sum the values of a column of **Decimal number** data type can return unexpected results. This result is most likely with columns that have large amounts of both positive numbers and negative numbers. The result of the sum is affected by the distribution of values across rows in the column.
+Rarely, calculations that sum the values of a column of **Decimal number** data type can return unexpected results. This result is most likely with columns that have large amounts of both positive numbers and negative numbers. The sum result is affected by the distribution of values across rows in the column.
 
 If a required calculation sums most of the positive numbers before summing most of the negative numbers, the large positive partial sum at the beginning can potentially skew the results. If the calculation happens to add balanced positive and negative numbers, the query retains more precision, and therefore returns more accurate results. To avoid unexpected results, you can change the column data type from **Decimal number** to **Fixed decimal number** or **Whole number**.
 
 ## Date/time types
 
-Power BI Desktop supports five **Date/Time** data types in Power Query Editor. Both **Date/Time/Timezone** and **Duration** convert during load into the Power BI Desktop data model. The model supports **Date/Time**, or you can format the values as dates or times independently.
+Power BI Desktop supports five **Date/Time** data types in Power Query Editor. Both **Date/Time/Timezone** and **Duration** convert during load into the Power BI Desktop data model. The model supports **Date/Time**, or you can format the values as **Date** or **Time** independently.
 
 - **Date/Time**  represents both a date and time value. The underlying **Date/Time** value is stored as a **Decimal number** type, so you can convert between the two types. The time portion stores as a fraction to whole multiples of 1/300 seconds (3.33 ms). The data type supports dates between years 1900 and 9999.
 
@@ -105,7 +105,7 @@ The following example shows order data: An **OrderNo** column that's unique for 
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-01.png" alt-text="Screenshot of textual data with various capitalizations in Power Query":::
 
-After Power BI loads the data, capitalization of some of the names in the **Data** tab changes from the original entry. Duplicate names change into one of the capitalization variants.
+After Power BI loads the data, capitalization of the duplicate names in the **Data** tab changes from the original entry into one of the capitalization variants.
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-text-02.png" alt-text="Screenshot that shows the textual data with changed capitalization after loading into Power BI.":::
 
@@ -124,13 +124,13 @@ In the preceding example, the Power BI engine loads the first row of data, creat
 For the fourth row, the engine compares the value against the names in the dictionary and finds the name. Since the engine is case insensitive, "TAINA HASU" and "Taina Hasu" are the same. The engine doesn't add a new name to the dictionary, but refers to the existing name. The same process happens for the remaining rows.
 
 > [!NOTE]
-> Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows.
+> Because the engine that stores and queries data in Power BI is case insensitive, take special care when you work in DirectQuery mode with a case-sensitive source. Power BI assumes that the source has eliminated duplicate rows. Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined.
 > 
-> Because Power BI is case insensitive, it treats two values that differ only by case as duplicate, whereas the source might not treat them as such. In such cases, the final result is undefined. To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
+> To avoid this situation, if you use DirectQuery mode with a case-sensitive data source, normalize casing in the source query or in Power Query Editor.
 
 ### Leading and trailing spaces
 
-The Power BI engine automatically trims any trailing spaces that follow text data, but doesn't remove leading spaces that precede the data. To avoid confusion, when you work with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text. If you don't remove leading or trailing spaces, a relationship might fail to create because of duplicate values, or visuals might return unexpected results.
+The Power BI engine automatically trims any trailing spaces that follow text data, but doesn't remove leading spaces that precede the data. To avoid confusion, when you work with data that contains leading or trailing spaces, you should use the [Text.Trim](/powerquery-m/text-trim) function to remove spaces at the beginning or end of the text. If you don't remove leading spaces, a relationship might fail to create because of duplicate values, or visuals might return unexpected results.
 
 The following example shows data about customers: a **Name** column that contains the name of the customer and an **Index** column that's unique for each entry. The names appear within quotes for clarity. The customer name repeats four times, but each time with different combinations of leading and trailing spaces. These variations can occur with manual data entry over time.
 
