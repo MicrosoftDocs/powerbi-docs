@@ -12,7 +12,7 @@ ms.date: 08/11/2022
 
 # Create an Azure Active Directory tenant to use with Power BI
 
-✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 This article shows you how to create a new Azure Active Directory (Azure AD) tenant to use when creating a custom app that calls [Power BI REST APIs](/rest/api/power-bi/).
 

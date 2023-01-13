@@ -5,9 +5,9 @@
  author: maggiesMSFT
  ms.service: powerbi
  ms.topic: include
- ms.date: 08/04/2021
+ ms.date: 01/12/2023
  ms.author: maggies
  ms.custom: include file
 ---
 
-**APPLIES TO:** ✔️&nbsp;Power&nbsp;BI&nbsp;Report&nbsp;Builder ✔️&nbsp;Power&nbsp;BI&nbsp;service ❌&nbsp;Power&nbsp;BI&nbsp;Desktop
+**APPLIES TO:** :::image type="icon" source="media/yes-icon.svg" border="false":::Power&nbsp;BI&nbsp;Report&nbsp;Builder :::image type="icon" source="media/yes-icon.svg" border="false":::Power&nbsp;BI&nbsp;service :::image type="icon" source="media/no-icon.svg" border="false":::Power&nbsp;BI&nbsp;Desktop

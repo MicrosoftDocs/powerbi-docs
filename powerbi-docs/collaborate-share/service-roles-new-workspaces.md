@@ -30,26 +30,26 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
-| Update and delete the workspace.  | ✔️ |   |   |   | 
-| Add or remove people, including other admins.  |  ✔️ |   |   |   |
-| Allow Contributors to update the app for the workspace.  |  ✔️ |   |   |   |
-| Add members or others with lower permissions.  |  ✔️ | ✔️  |   |   |
-| Publish, unpublish, and change permissions for an app. |  ✔️ | ✔️  |   |   |
-| Update an app. |  ✔️ | ✔️  |  If allowed <sup>1</sup>  |   |
-| Share an item or share an app.<sup>2</sup> |  ✔️ | ✔️  |   |   |
-| Allow others to reshare items.<sup>2</sup> |  ✔️ | ✔️  |   |   |
-| Feature apps on colleagues' home. |  ✔️ | ✔️  |   |   |
-| Manage dataset permissions.<sup>3</sup> | ✔️ | ✔️ |  |  |
-| Feature dashboards and reports on colleagues' home. |  ✔️ | ✔️  | ✔️ |   |
-| Create, edit, and delete content, such as reports, in the workspace.  |  ✔️ | ✔️  | ✔️  |   |
-| Publish reports to the workspace, and delete content.  |  ✔️ | ✔️  | ✔️  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ✔️ | ✔️  | ✔️  |   |
-| Copy a report.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
-| Create metrics that's based on a dataset in the workspace.<sup>3</sup> | ✔️ | ✔️ | ✔️ |  |
-| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
-| Modify gateway connection settings.<sup>4</sup> | ✔️ | ✔️ | ✔️ |  |
-| View and interact with an item.<sup>5</sup> |  ✔️ | ✔️  | ✔️  | ✔️  |
-| Read data that's stored in workspace dataflows. | ✔️ | ✔️ | ✔️ | ✔️ |
+| Update and delete the workspace.  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |   |   | 
+| Add or remove people, including other admins.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |   |   |
+| Allow Contributors to update the app for the workspace.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |   |   |
+| Add members or others with lower permissions.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
+| Publish, unpublish, and change permissions for an app. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
+| Update an app. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |  If allowed <sup>1</sup>  |   |
+| Share an item or share an app.<sup>2</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
+| Allow others to reshare items.<sup>2</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
+| Feature apps on colleagues' home. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |   |
+| Manage dataset permissions.<sup>3</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |  |
+| Feature dashboards and reports on colleagues' home. |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |   |
+| Create, edit, and delete content, such as reports, in the workspace.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |
+| Publish reports to the workspace, and delete content.  |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |
+| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |   |
+| Copy a report.<sup>3</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
+| Create metrics that's based on a dataset in the workspace.<sup>3</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
+| Schedule data refreshes via the on-premises gateway.<sup>4</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
+| Modify gateway connection settings.<sup>4</sup> | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |  |
+| View and interact with an item.<sup>5</sup> |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |
+| Read data that's stored in workspace dataflows. | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
 
 <sup>1</sup> Contributors can [update the app that's associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to edit it.
 

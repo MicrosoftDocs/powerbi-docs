@@ -1,6 +1,6 @@
 ---
 title: Connect to an OData feed in Power BI Desktop
-description: Easily connect to and use an OData feed in Power BI Desktop
+description: Learn how to easily connect to and use an OData feed in Power BI Desktop. Use the underlying data just like any other data source.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,13 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/04/2022
+ms.date: 01/10/2023
 LocalizationGroup: Connect to data
 ---
 # Connect to OData feeds in Power BI Desktop
+
 In Power BI Desktop, you can connect to an **OData feed** and use the underlying data just like any other data source in Power BI Desktop.
 
-To connect to an OData feed, select **Get data > OData feed** from the **Home** ribbon in Power BI Desktop.
+To connect to an OData feed, select **Get data** > **OData feed** from the **Home** ribbon in Power BI Desktop.
 
 ![Screenshot of the Get Data ribbon in Power B I Desktop, showing the OData Feed selection.](media/desktop-connect-odata/connect-to-odata_1.png)
 
@@ -23,7 +24,7 @@ In the **OData Feed** window that appears, type or paste your OData feed URL int
 ![Screenshot of the OData Feed dialog, showing the URL field.](media/desktop-connect-odata/connect-to-odata_2.png)
 
 > [!TIP]
-> The location of the Northwind OData feed changes occasionally. Currently the link is https://services.odata.org/v2/northwind/northwind.svc/.
+> The location of the Northwind OData feed changes occasionally. Currently the link is `https://services.odata.org/v2/northwind/northwind.svc/`.
 
 Power BI Desktop connects to the OData feed, and displays the available tables and other data elements in the **Navigator** window. When you select an element, the right pane of the **Navigator** window displays a preview of the data. You can select as many tables as you want to import. The **Navigator** window shows a preview of the currently selected table.
 
@@ -31,7 +32,7 @@ Power BI Desktop connects to the OData feed, and displays the available tables a
 
 You can choose the **Transform Data** button, which launches **Power Query Editor**, where you can shape and transform the data from the OData feed before importing it into Power BI Desktop. Or you can select the **Load** button, and import all of the data elements you selected in the left pane.
 
-When we select **Load**, Power BI Desktop imports the selected items, and displays a **Load** window of the import progress.
+When you select **Load**, Power BI Desktop imports the selected items, and displays a **Load** window of the import progress.
 
 ![Screenshot of the Load dialog, showing the import progress.](media/desktop-connect-odata/connect-to-odata_4.png)
 
@@ -39,15 +40,16 @@ Once complete, Power BI Desktop makes the selected tables and other data element
 
 ![Screenshot of the Fields pane, showing the list of selected tables.](media/desktop-connect-odata/connect-to-odata_5.png)
 
-And that’s it!
+And that's it!
 
 You’re now ready to use the imported data from the OData feed in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as other Excel workbooks, databases, or any other data source.
 
 ## Next steps
+
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
-* [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+* [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)
+* [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)
