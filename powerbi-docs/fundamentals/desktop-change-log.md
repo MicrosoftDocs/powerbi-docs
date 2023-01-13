@@ -22,7 +22,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 Bug fixes/improvements:
 * AS Engine fix. DAX queries that contain query-scope calculated tables and send through external tools will not return error in certain cases.
-* DAX window functions fix. Now function will not return error in certain cases when the <relation> parameter use CalculateTable function.
+* DAX window functions fix. Now function will not return error in certain cases when the *relation* parameter use CalculateTable function.
 * Fix to data view filter menu.  Customers will see correct distinct values after applying filter/sort by another column.
 
 
