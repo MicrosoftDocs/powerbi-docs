@@ -15,8 +15,16 @@ ms.date: 01/12/2023
 
 *Pagination* refers to the number of pages in a report, and the arrangement of report items on those pages. Pagination in Power BI paginated reports varies depending on the rendering extension you use to view and deliver the report. When you run a report on the report server, the report uses the HTML renderer. HTML follows a specific set of pagination rules. If you export the same report to PDF, for example, you're using the PDF renderer, which uses a different set of rules. Therefore, the report paginates differently. You need to understand the rules used to control pagination in Power BI paginated reports. Then you can successfully design an easy-to-read report that you optimize for the renderer you plan to use to deliver your report.  
   
-This article discusses the effect of the physical page size and the report layout on how hard-page-break renderers render the report. You can set properties to modify the physical page size and margins, and divide the report into columns; use the **Report Properties** pane, the **Properties** pane, or the **Page Setup** dialog box. Access the **Report Properties** pane by clicking the blue area outside the report body. Access the **Page Setup** dialog box by selecting **Run** on the Home tab, and then choosing **Page Setup** on the Run tab.  
-  
+This article discusses the effect of the physical page size and the report layout on how hard-page-break renderers render the report. You can set properties to modify the physical page size and margins, and divide the report into columns; use the **Report Properties** pane, the **Properties** pane, or the **Page Setup** dialog box. 
+
+Access the **Report Properties** pane in Report Builder by clicking the area outside the report body.
+
+![Screenshot of the Report Properties pane.](media/paginated-reports-pagination/power-bi-report-properties.png)
+
+Access the **Page Setup** dialog box by selecting **Run** on the Home tab, and then choose **Page Setup** on the Run tab.
+
+![Screenshot of the Page Setup dialog box.](media/paginated-reports-pagination/power-bi-page-setup.png)
+
 > [!NOTE]  
 >  If you've designed a report to be one page wide, but it renders across multiple pages, check that the width of the report body, including margins, isn't larger than the physical page size width. To prevent empty pages from being added to your report, you can reduce the container size by dragging the container corner to the left.  
 
