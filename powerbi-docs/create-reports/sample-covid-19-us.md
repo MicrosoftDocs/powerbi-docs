@@ -15,9 +15,9 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. By using Power BI Desktop, they can analyze and visualize COVID-19 data to keep their communities informed at the city, county, state, and national levels. Then by using Power BI Publish to Web, they can share the report publicly to inform citizens. This article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
+The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. By using Power BI Desktop, they can analyze and visualize COVID-19 data to keep their communities informed at the city, county, state, and national levels. Then, by using Power BI Publish to Web, they can share the report publicly to inform citizens. This article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 
-:::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="Screenshot of COVID-19 sample with US data.":::
+:::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="Screenshot of the COVID-19 sample with US data.":::
 
 This article covers how to:
 
@@ -76,7 +76,7 @@ To get started, [download the .pbix file (here)](https://go.microsoft.com/fwlink
 
 1. Select the **Refresh** button.
 
-    :::image type="content" source="media/sample-covid-19-us/power-bi-desktop-refresh-button.png" alt-text="Screenshot of the Power BI Refresh button.":::
+    :::image type="icon" source="media/sample-covid-19-us/power-bi-desktop-refresh-button.png":::
 
 2. Select **Anonymous** > **Connect**.
 
@@ -109,7 +109,7 @@ If you intend to publish the customized report on your website, it's best to con
 
 To embed your customized report in your own website, follow the instructions for how to [create your own publish-to-web embed code](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
-Once you publish your embed code, use the iFrame on the confirmation dialog to embed in your website.
+After you publish your embed code, use the iFrame on the confirmation dialog to embed in your website.
 
 If you make changes to the report in Power BI Desktop, you can publish and replace the existing report in the Power BI service. The embed code doesn't change. It takes approximately an hour for changes to the report or refreshed data to appear on your website.
 
@@ -119,7 +119,7 @@ You can also mash up the data in this report with data from another source. The 
 
 1. In Power BI Desktop, select **Get data** > **Web**.
 
-    :::image type="content" source="media/sample-covid-19-us/power-bi-desktop-get-data.png" alt-text="Screenshot of the Power BI Get data button.":::
+    :::image type="icon" source="media/sample-covid-19-us/power-bi-desktop-get-data.png":::
 
 2. Enter the following URL:
 
