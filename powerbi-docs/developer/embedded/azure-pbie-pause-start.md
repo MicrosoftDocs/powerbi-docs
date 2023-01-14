@@ -23,7 +23,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 Pausing your capacity prevents you from being billed. Pausing your capacity is great if you don't need to use the capacity for some time. Use the following steps to pause your capacity.
 
 > [!NOTE]
-> Pausing a capacity may prevent content from being available within Power BI. Make sure to unassign workspaces from your capacity before pausing the capacity to prevent workspace interruption.
+> Pausing a capacity can prevent content from being available within Power BI. Make sure to unassign workspaces from your capacity before pausing the capacity to prevent workspace interruption.
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
