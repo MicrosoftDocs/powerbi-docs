@@ -33,7 +33,7 @@ The following sections describe features the Optimize ribbon provides. After rea
 
 ## Pause visuals
 
-Typically, when authoring a report, you create a new visual or change an existing visual by adding or removing columns and measures to the visual's field well. When making changes like these, a DAX query is sent to the data source and the data in the visual is updated. You can see if DAX queries are being sent by using Performance analyzer. If making changes to visuals seems slow, you can stop those DAX queries to the data source by using **Pause visuals** in the Optimize ribbon. When paused, the *entire report is paused*. Visuals enter a **Visual has pending changes** state. No queries are sent to the data source.
+Typically, when authoring a report, you create a new visual or change an existing visual by adding or removing columns and measures to the visual's field well. When making changes like these, a DAX query is sent to the data source and the data in the visual is updated. You can see if DAX queries are being sent by using Performance analyzer. If making changes to visuals seems slow, you can stop those DAX queries to the data source by using **Pause visuals** in the Optimize ribbon. When paused, the *entire report is paused*. Instead of visuals sending DAX queries because of changes,  visuals enter a **Visual has pending changes** state. No queries are sent to the data source until refreshed or the report is unpaused.
 
 When paused, the report surface:
 
@@ -90,6 +90,12 @@ The Optimize ribbon includes the same **Performance analyzer** button as shown i
 :::image type="content" source="media/desktop-optimize-ribbon/desktop-optimization-performance-analyzer.png" alt-text="Performance analyzer dialog":::
 
 To learn more, see [Use Performance analyzer to examine report element performance](desktop-performance-analyzer.md).
+
+## Video
+
+See the Optimize ribbon features introduction at Microsoft Ignite 2022.  
+
+> [!VIDEO https://www.youtube.com/embed/TopbQfxcPxM]
 
 ## See also
 
