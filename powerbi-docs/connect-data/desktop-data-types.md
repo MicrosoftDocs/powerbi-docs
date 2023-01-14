@@ -113,7 +113,7 @@ This change happens because Power Query Editor is case sensitive, so it shows th
 
 The Power BI engine evaluates each row individually when it loads data, starting from the top. For each text column, such as **Addressee**, the engine stores a dictionary of unique values, to improve performance through data compression. The engine sees the first three values in the **Addressee** column as unique and stores them in the dictionary. After that, because the engine is case insensitive, it evaluates the names as identical.
 
-The engine sees the name "Taina Hasu" as the same as "TAINA HASU" and "Taina HASU", so it doesn't store those variations, but refers to the first variation it stored. The name "MURALI DAS" appears in uppercase letters, because that's how the name appeared the first time the engine evaluated it when loading the data from top to bottom.
+The engine sees the name "Taina Hasu" as identical to "TAINA HASU" and "Taina HASU", so it doesn't store those variations, but refers to the first variation it stored. The name "MURALI DAS" appears in uppercase letters, because that's how the name appeared the first time the engine evaluated it when loading the data from top to bottom.
 
 This image illustrates the evaluation process:
 
