@@ -12,7 +12,7 @@ ms.custom: intro-overview
 
 # What is Power BI embedded analytics?
 
-**APPLIES TO:** ✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 Power BI embedded analytics allows you to embed your Power BI items such as reports, dashboards and tiles, in a web application or in a website. You can:
 
