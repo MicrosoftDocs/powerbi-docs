@@ -105,7 +105,7 @@ By default, Power BI Desktop connects to the *read-only* dataset copy. To connec
 
 ### Step 4 - Validate the read/write connection (optional)
 
-If you followed [step 4](#step-4---connect-to-the-readwrite-dataset-copy-optional), you're connected to the *read/write* dataset copy. You can validate this connection by following these steps:
+If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optional), you're connected to the *read/write* dataset copy. You can validate this connection by following these steps:
 
 1. In SQL Server Management Studio (SSMS), right-click your dataset, select **Process Database**.
 
