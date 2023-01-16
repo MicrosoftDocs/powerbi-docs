@@ -1,11 +1,11 @@
 ---
 title: Power BI capacity table
-description: View the Power BI capacity and SKU table which lists each SKUs specifications.
+description: See specifications for various Power BI Embedded capacity SKUs, including the v-core count, the max memory per dataset and query, and other information.
 services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 11/30/2022
+ms.date: 01/12/2023
 ms.custom: include file
 ---
 
@@ -23,11 +23,11 @@ ms.custom: include file
 
 <sup>1</sup> The [Power BI Premium Utilization and Metrics app](./../enterprise/service-premium-install-gen2-app.md) doesn't currently expose these metrics.
 
-<sup>2</sup> These limits only apply to the datasets workload per capacity.
+<sup>2</sup> These limits only apply to the dataset workload per capacity.
 
-<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
+<sup>3</sup> The *Max memory (GB)* column under the *Dataset* header represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity might be smaller than the numbers in this column. For more information, see [Memory allocation](./../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
 
-<sup>4</sup> These SKUs aren’t available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+<sup>4</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
 <sup>5</sup> Learn more about [parallel tasks in dataflows](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium).
 
