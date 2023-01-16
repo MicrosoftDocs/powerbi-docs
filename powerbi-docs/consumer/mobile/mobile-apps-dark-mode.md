@@ -1,6 +1,6 @@
 ---
 title: Dark mode
-description: Learn about dark mode, the differences between light mode and dark mode and how to turn dark mode on and off on Power BI services.
+description: Learn about dark mode, the differences between light mode and dark mode, and how to turn dark mode on and off on Power BI services.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
