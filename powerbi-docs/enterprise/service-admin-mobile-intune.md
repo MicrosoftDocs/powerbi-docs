@@ -1,6 +1,6 @@
 ---
 title: Configure mobile apps with Microsoft Intune
-description: Learn how to get the Power BI mobile app for iOS and Android devices by using Microsoft Intune and Microsoft 365 Device Management. 
+description: Learn how to configure the Power BI mobile apps with Microsoft Intune. This includes how to add and deploy the application and how to create a mobile application policy to control security. 
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -19,29 +19,29 @@ The Microsoft Power BI mobile app allows you to get access to your important bus
 
 ## General mobile device management configuration
 
-This article assumes that Intune is configured properly and you have devices enrolled with Intune. This article isn't meant as a full configuration guide for Intune. For more information, see [Microsoft Intune securely manages identities, manages apps, and manages devices](/intune/fundamentals/what-is-intune).
+This article assumes that Intune is configured properly and you have devices enrolled with Intune. This article isn't meant as a full configuration guide for Intune. For more information about Intune, see [What is Intune?](/intune/fundamentals/what-is-intune).
 
-Microsoft Intune can co-exist with Device Management in the Microsoft 365 dashboard. If you're using Device Management, the device will show as enrolled, and it's available to manage in Intune.
+Microsoft Intune can co-exist with Mobile Device Management (MDM) within Microsoft 365. If you're using MDM, the device will show as enrolled with MDM, but is available to manage in Intune.
 
-Before end users can get to the Power BI app on their devices, an Intune admin must add the app to Intune and assign the app to end users.
+Before end users use the Power BI app on their devices, an Intune admin must add the app to Intune and assign the app to end users.
 
 > [!NOTE]
 > After you configure Intune, background data refresh is turned off for the Power BI mobile app on your iOS or Android device. Power BI refreshes the data from the Power BI service on the web when you open the app.
 
-## Add the Power BI app to Intune
+## Step 1: Add the Power BI app to Intune
 
 To add the Power BI app to Intune, follow the steps in the appropriate article:
 
 - [Add iOS store apps to Microsoft Intune](/intune/apps/store-apps-ios)
 - [Add Android store apps to Microsoft Intune](/intune/apps/store-apps-android)
 
-## Assign the app to your end users
+## Step 2: Assign the app to your end users
 
 After you've added the Power BI app to Microsoft Intune, assign the app to users and devices. It's important to note that you can assign an app to a device whether or not the device is managed by Intune.
 
 To assign the Power BI app to users and devices, follow the steps in [Assign apps to groups with Microsoft Intune](/intune/apps/apps-deploy).
 
-## Create and assign app protection policies
+## Step 3: Create and assign app protection policies
 
 App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is in the app. A managed app is an app that has APP applied to it, and can be managed by Intune.
 
@@ -49,7 +49,7 @@ Mobile Application Management (MAM) app protection policies allow you to manage 
 
 To create and assign an app protection policy for the Power BI app, follow the steps in [How to create and assign app protection policies](/intune/apps/app-protection-policies).
 
-## Use the application on a device
+Step 4: ## Use the application on a device
 
 Managed apps are apps that your company's support team can set up to help protect company data that you can access from the app. When you access company data in a managed app on your device, you might notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
 
