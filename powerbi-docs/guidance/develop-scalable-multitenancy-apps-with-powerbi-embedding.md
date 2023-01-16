@@ -26,7 +26,7 @@ The **Embed for your organization** scenario applies when the application audien
 The **Embed for your customer** scenario applies when the application audience comprises *external* users. The application is responsible for authenticating users. To access Power BI content, the application relies on an embedding identity (Azure AD service principal or master user account) to authenticate with Azure AD. In this scenario, Power BI is platform-as-a-service (PaaS). It's sometimes referred to as *App owns data*.
 
 > [!NOTE]
-> It's important to understand that the service principal profiles feature was designed for use in *Embed for your customer* scenario. That's because this scenario offers ISVs and enterprise organizations the ability to embed with greater scale to a large number of users and to a large number of customer tenants.
+> It's important to understand that the service principal profiles feature was designed for use with the *Embed for your customer* scenario. That's because this scenario offers ISVs and enterprise organizations the ability to embed with greater scale to a large number of users and to a large number of customer tenants.
 
 ## Multitenancy application development
 
