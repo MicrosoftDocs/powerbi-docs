@@ -14,7 +14,7 @@ ms.custom: known-issue-220
 
 If you have owner permission but no gateway level permission on a data source, you may not be able to update the credentials for that data source.  The page will just show as loading and the credentials won't update.
 
-**APPLIES TO:** ✔️ Power BI Gateway
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Gateway
 
 **Status:** Fixed: September 2, 2022
 

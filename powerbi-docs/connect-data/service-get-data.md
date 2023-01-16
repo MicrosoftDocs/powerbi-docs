@@ -87,7 +87,7 @@ The data in a dataset comes from a data source. For example, data could come fro
 ## Data refresh
 If you save your file on a local drive or a drive in your organization, you might need a Power BI gateway to be able to refresh the dataset in Power BI. The computer that stores the file must be running at refresh time. You can also reimport your file, or use **Publish** from Excel or Power BI Desktop, but those options aren't automated processes.
 
-If you save your files on OneDrive or SharePoint team sites, your dataset, reports, and dashboard are always up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your files or import the files into Power BI. Power BI connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
+If you save your files on OneDrive for work or school or SharePoint - Team Sites, your dataset, reports, and dashboard are always up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your files or import the files into Power BI. Power BI connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
 
 Template apps from services also automatically update, once a day in most cases. You can manually refresh, but whether you see updated data depends on the service provider. Updates to template apps from people in your organization depend on the data sources they use, and how the app creator configured the refresh.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/27/2022
+ms.date: 12/8/2022
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -45,11 +45,11 @@ In addition to the natively supported data sources above, the following data sou
 
 | Data Source | Enterprise gateway | VNet gateway |
 | --- | --- | --- |
-| SQL Server (supports SSO) | ✔️ | ✔️ |
-| SQL Server Analysis Services | ✔️ | ✔️|
-| Oracle (supports SSO) | ✔️ | |
-| Teradata | ✔️ | |
-| ODBC | ✔️ | |
+| SQL Server (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| SQL Server Analysis Services (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::|
+| Oracle (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |
+| Teradata (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |
+| ODBC | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |
 
 For paginated reports, Azure Analysis Services currently can't be accessed via either a Power BI enterprise gateway or a VNet gateway. When authenticating with SSO, service principal isn't supported.
 
