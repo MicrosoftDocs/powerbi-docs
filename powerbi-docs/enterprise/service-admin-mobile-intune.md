@@ -49,7 +49,7 @@ Mobile Application Management (MAM) app protection policies allow you to manage 
 
 To create and assign an app protection policy for the Power BI app, follow the steps in [How to create and assign app protection policies](/intune/apps/app-protection-policies).
 
-Step 4: ## Use the application on a device
+## Step 4: Use the application on a device
 
 Managed apps are apps that your company's support team can set up to help protect company data that you can access from the app. When you access company data in a managed app on your device, you might notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
 
