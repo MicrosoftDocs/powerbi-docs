@@ -25,7 +25,7 @@ This article covers the following cases:
 
 * Using links inside Power BI to navigate to specific Power BI content.
 
-The mobile apps support report links that include query-string parameters. Such links open in the mobile app pre-filtered according to the conditions defined in the query string. For more information, see [Filter a report query string parameters in the URL](../../collaborate-share/service-url-filters.md).
+The mobile apps support report links that include query-string parameters. Such links open in the mobile app pre-filtered according to the conditions defined in the query string. For more information about creating report URLs with query string parameters, see [Filter a report query string parameters in the URL](../../collaborate-share/service-url-filters.md).
 
 The mobile apps also support passing parameters to paginated reports via URLs. For more information, see [Pass a report parameter in a URL for a paginated report](../../paginated-reports/report-builder-url-pass-parameters.md) for details.
 
