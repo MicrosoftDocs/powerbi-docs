@@ -1,7 +1,7 @@
 ---
 title: On-premises data gateway sizing
 description: Guidance for working sizing the On-premises data gateway.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi

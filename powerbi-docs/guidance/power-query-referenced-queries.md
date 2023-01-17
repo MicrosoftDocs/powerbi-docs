@@ -1,7 +1,7 @@
 ---
 title: Referencing Power Query queries
 description: Guidance for referencing Power Query queries.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi

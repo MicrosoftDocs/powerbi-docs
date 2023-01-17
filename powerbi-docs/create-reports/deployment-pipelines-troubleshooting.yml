@@ -60,7 +60,7 @@ sections:
       - question: |
           Why can't I see the pipeline stage tag in my workspace?
         answer: |
-          Deployment pipelines display a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#permissions) or if you're a workspace admin.
+          Deployment pipelines display a pipeline stage tag in workspaces that are assigned to a pipeline. To see these tags, you need to be a [pipeline admin](deployment-pipelines-process.md#permissions). Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#permissions).
           
           > [!div class="mx-imgBorder"]
           > ![A screenshot of the production tag in a production pipeline workspace.](media/deployment-pipelines-troubleshooting/production-tag.png)
@@ -357,7 +357,7 @@ sections:
           
           * **Deploying to a stage with content** - Any [Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [PPU](../enterprise/service-premium-per-user-faq.yml) user, who's a member or admin of both workspaces in the source and target deployment stages.
           
-          * **Overwriting a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
+          * **Overwriting a dataset** - Deployment overwrites each dataset that is included in the target stage, even if the dataset wasn't changed. Any user who's a member or admin of both workspaces, but the tenant admin can restrict this to target dataset owners only.
           
       - question: |
           Which permissions do I need to configure deployment rules?
