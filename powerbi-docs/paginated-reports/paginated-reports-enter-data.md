@@ -1,43 +1,44 @@
 ---
 title: "Enter data directly in a paginated report in Report Builder"
-description: In this article, you see how you can enter data directly into a paginated report in Report Builder. 
+description: Learn how you can enter data directly into a paginated report as an embedded dataset in Report Builder. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/27/2022
+ms.date: 01/17/2023
 ---
 
-# Enter data directly in a paginated report in Report Builder - Power BI
+# Enter data directly in a paginated report in Report Builder
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-In this article, you learn about a feature in Microsoft Power BI Report Builder that lets you enter data directly into an RDL report as an embedded dataset. You can type the data directly in a dataset in your report, or paste it from another program like Microsoft Excel. After you've created a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus you can add more than one table and use one as a filter for the other. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
+This article explains a feature in Microsoft Power BI Report Builder that lets you enter data directly into a paginated report as an embedded dataset. You can type the data directly in a dataset in your report, or paste it from another program like Microsoft Excel. After you create a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus, you can add more than one table and use one as a filter for the other. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
  
 ## Prerequisites
 
-- To enter data directly in a paginated report, [download and install Power BI Report Builder](https://aka.ms/pbireportbuilder). 
-- To save your paginated report to the Power BI service, you need a [Power BI Pro account](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license, and write access to any workspace.
-- To save your paginated report to a report server, you need permissions to [edit the RsReportServer.config file](#upload-the-paginated-report-to-a-report-server).
+- To enter data directly in a paginated report, download and install [Power BI Report Builder](https://aka.ms/pbireportbuilder). 
+- To save your paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to any workspace.
+- To save your paginated report to a report server, you need permissions to [edit the *RsReportServer.config* file](#upload-the-paginated-report-to-a-report-server).
 
 ## Create a data source and dataset
 
-After you’ve downloaded and installed Report Builder, you follow the same workflow you use to add an embedded data source and dataset to your report. In the following procedure, under **Data Sources** you see a new option: **Enter Data**.  You only need to set up this data source once in a report. After that, you can create multiple tables of entered data as separate datasets, all using that single data source.
+After you download and install Report Builder, follow the same workflow you use to add an embedded data source and dataset to your report. In the following procedure, under **Data Sources** you see a new **Enter Data** option. You only need to set up this data source once in a report. After that, you can create multiple tables of entered data as separate datasets, all using that single data source.
 
 1. In the **Report Data** pane, select **New** > **Dataset**.
 
     ![Screenshot of Report Builder New Dataset.](media/paginated-reports-enter-data/paginated-new-dataset.png)
 
 1. In the **Dataset Properties** dialog box, give your dataset a name. Don't include spaces. 
+
 2. Next to **Data source**, select **New**.
 
     ![Screenshot of New embedded data source.](media/paginated-reports-enter-data/paginated-new-data-source.png)
 
 1. In the **Select connection type** box, select **Enter Data** > **OK**.
 
-    ![Screenshot of Enter Data data source.](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
+    ![Screenshot of Enter Data source.](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
 
 1. Back in the **Dataset Properties** dialog box, select **Query Designer**.
 
@@ -77,18 +78,18 @@ Now that you have a data source and dataset, you're ready to create your report.
 
 1. On the **Insert** menu, select **Table** > **Table Wizard**.
 
-    :::image type="content" source="media/paginated-reports-enter-data/paginated-table-wizard.png" alt-text="Screenshot of selecting the Table Wizard option.":::
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-table-wizard.png" alt-text="Screenshot of the Table Wizard option.":::
 
 1. Select the dataset you just created > **Next**.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-choose-dataset.png" alt-text="Screenshot of the Choose a dataset dialog.":::
 
-2.	In the Arrange fields page, drag fields you want to group by from the **Available fields** box to the **Row groups** box. In this example:
+2. In the Arrange fields page, drag fields you want to group by from the **Available fields** box to the **Row groups** box. In this example:
 
     - CountryRegion
     - SalesYear
 
-3.	Drag the fields you want to aggregate from the **Available fields** box to the **Values** box. In this example:
+3. Drag the fields you want to aggregate from the **Available fields** box to the **Values** box. In this example:
 
     - SalesAmount
 
@@ -97,9 +98,10 @@ Now that you have a data source and dataset, you're ready to create your report.
     :::image type="content" source="media/paginated-reports-enter-data/paginated-select-aggregation.png" alt-text="Screenshot of different aggregations to choose from.":::
  
 1. Select **Next**.
-4.	In the **Choose the layout** page, keep all the default settings, but clear **Expand/collapse groups**. In general, expanding and collapsing groups is great, but this time we want to see all the data.
 
-5.	Select **Next** > **Finish**. The table is displayed on the design surface.
+1. In the **Choose the layout** page, keep all the default settings, but clear **Expand/collapse groups**. In general, expanding and collapsing groups is great, but this time you want to see all the data.
+
+5. Select **Next** > **Finish**. The table is displayed on the design surface.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-design-view-matrix.png" alt-text="Screenshot of the report in Design view.":::
 
@@ -107,17 +109,17 @@ Now that you have a data source and dataset, you're ready to create your report.
 
 To see the actual values and preview the report, you run it.
 
-1. Select **Run** in the **Home** ribbon.
+1. Select **Run** on the **Home** menu.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-run-report.png" alt-text="Screenshot of selecting Run on the Home ribbon.":::
 
     Now you see the values. The matrix has more rows than you saw in Design view!  You can either format the page or decide to use the default settings before saving to your local computer or publishing to the service.
 
-1. To see how your report will look when you print it, select **Print Layout**.
+1. To see how your report looks when you print it, select **Print Layout**.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-select-print.png" alt-text="Screenshot of selecting Print Layout.":::
 
-    Now you see it as it will look on a printed page.
+    Now you see how it looks on a printed page.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-print-layout.png" alt-text="Screenshot of report in print layout view.":::
 
@@ -127,7 +129,7 @@ Now that paginated reports are supported in the Power BI service, you can upload
 
 ## Upload the paginated report to a report server
 
-You can also upload your paginated report to a Power BI Report Server or SQL Server Reporting Services 2016 or 2017 report server. Before you do, you need to add the following item to your RsReportServer.config as an additional data extension. Back up your RsReportServer.config file before you make the change, in case you run into any issues.
+You can also upload your paginated report to a Power BI Report Server or SQL Server Reporting Services 2016 or 2017 report server. Before you do, you need to add the following item to your *RsReportServer.config* as an additional data extension. Back up your *RsReportServer.config* file before you make the change, in case you run into any issues.
 
 ```xml
 <Extension Name="ENTERDATA" Type="Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions">
@@ -137,11 +139,11 @@ You can also upload your paginated report to a Power BI Report Server or SQL Ser
 </Extension>
 ```
 
-After you've edited it, here's what the list of data providers in the config file should look like:
+After you edit it, here's what the list of data providers in the config file looks like:
 
-![Screenshot of RsReportServer config file.](media/paginated-reports-enter-data/paginated-rsreportserver-config-file.png)
+![Screenshot of the Report Server config file.](media/paginated-reports-enter-data/paginated-report-server-config-file.png)
 
-That’s it – you can now publish reports that use this new functionality to your report server.
+That’s it. You can now publish reports that use this new functionality to your report server.
 
 ## Next steps
 
