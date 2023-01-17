@@ -180,9 +180,9 @@
   - name: Power BI Scale-Out
     expanded: false
     items:
-    - name: Power BI Query Scale Out
+    - name: Power BI Dataset Scale-Out
       href: service-premium-scale-out.md
-    - name: Test Power BI Query Scale Out
+    - name: Test Power BI Dataset Scale-Out
       href: service-premium-scale-out-test.md
     - name: Sync a read-only scale-out replica   
       href: service-premium-scale-out-sync-replica.md  

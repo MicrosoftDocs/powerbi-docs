@@ -1,21 +1,21 @@
 ---
 title: Compare scale-out dataset copies
-description: Learn how to compare Power BI dataset copies when using the Power BI Premium Scale-out feature
+description: Learn how to compare Power BI dataset copies when using the Power BI Dataset Scale-Out feature
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 01/17/2023
 LocalizationGroup: Premium
 ---
 
 # Compare scale-out dataset copies
 
-After enabling [Power BI Query Scale Out](service-premium-auto-scale.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
+After enabling [Power BI Dataset Scale-Out](service-premium-auto-scale.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
 
-This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Query Scale Out is enabled.
+This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Dataset Scale-Out is enabled.
 
 * [App 1 - Compare the timestamps](#app-1---compare-the-timestamps)
 
@@ -30,8 +30,8 @@ This section provides a few Visual Studio app examples for comparing dataset pro
 Use the code below to create an application that compares the timestamps of the *read/write* and *read-only* replicas. Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your dataset's name.
 
 ```typescript
-string workspaceUrl = "WorkspaceUrl"; 
-string datasetName = "DatasetName"; 
+string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace 
+string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
 { 
@@ -73,8 +73,8 @@ Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your da
 
 
 ```typescript
-string workspaceUrl = "WorkspaceUrl"; 
-string datasetName = "DatasetName"; 
+string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace
+string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
     { 
@@ -102,8 +102,8 @@ Console.Read();
 Use the code below to compare the metadata of the *read/write* dataset copy with the metadata of the *read-only* dataset copy. Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your dataset's name.
 
 ```typescript
-string workspaceUrl = "WorkspaceUrl"; 
-string datasetName = "DatasetName"; 
+string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace 
+string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
 { 
@@ -144,8 +144,8 @@ Console.Read();
 Use `ADOMD.NET` to query the data in the dataset replicas. Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your dataset's name.
 
 ```typescript
-string workspaceUrl = "WorkspaceUrl"; 
-string datasetName = "DatasetName"; 
+string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace 
+string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
 string daxQuery = "Evaluate SUMMARIZECOLUMNS(RefreshTimeTable[Time])"; 
 using (var connectionRW = new Microsoft.AnalysisServices.AdomdClient.AdomdConnection()) 
 using (var connectionRO = new Microsoft.AnalysisServices.AdomdClient.AdomdConnection()) 
@@ -191,10 +191,10 @@ Console.Read();
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI Query Scale Out](service-premium-scale-out.md)
+> [Power BI Dataset Scale-Out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
-> [Tutorial: Test Power BI Query Scale Out](service-premium-scale-out-test.md)
+> [Tutorial: Test Power BI Dataset Scale-Out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
 > [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)

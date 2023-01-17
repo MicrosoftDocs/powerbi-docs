@@ -1,21 +1,21 @@
 ---
-title: Power BI Premium Scale-out test
-description: Learn how test the Power BI Premium Scale-out feature after it's enabled
+title: Power BI Dataset Scale-Out test
+description: Learn how test the Power BI Dataset Scale-Out feature after it's enabled
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: tutorial
-ms.date: 01/12/2023
+ms.date: 01/17/2023
 LocalizationGroup: Premium
 ---
 
-# Tutorial: Test Power BI Query Scale Out
+# Tutorial: Test Power BI Dataset Scale-Out
 
-This tutorial details how you can test the [Power BI Query Scale Out](service-premium-scale-out.md) feature after it's enabled.
+This tutorial details how you can test the [Power BI Dataset Scale-Out](service-premium-scale-out.md) feature after it's enabled.
 
-1. [Step 1 - Create a scale out query](#step-1---create-a-scale-out-query)
+1. [Step 1 - Create a Scale-Out query](#step-1---create-a-scale-out-query)
 
 2. [Step 2 - Create a time column](#step-2---create-a-time-column)
 
@@ -23,7 +23,7 @@ This tutorial details how you can test the [Power BI Query Scale Out](service-pr
 
 4. [Step 4 - Validate the read/write connection](#step-4---validate-the-readwrite-connection-optional) (optional)
 
-### Step 1 - Create a scale out query
+### Step 1 - Create a Scale-Out query
 
 1. Open Power BI Desktop and sign into your account.
 
@@ -85,7 +85,7 @@ This tutorial details how you can test the [Power BI Query Scale Out](service-pr
 
     :::image type="content" source="media/service-premium-scale-out-test/publish-dataset.png" alt-text="A screenshot showing the Microsoft Power B I Desktop pop up window after the publish button is selected. The publish and save buttons are highlighted.":::
 
-7. in the *Publish to Power BI* pop-up window, select the workspace you want to enable scale out for, and then select **Select**.
+7. in the *Publish to Power BI* pop-up window, select the workspace you want to enable Scale-Out for, and then select **Select**.
 
     :::image type="content" source="media/service-premium-scale-out-test/publish.png" alt-text="A screenshot showing the publish to Power B I pop up window in the Power B I Desktop.":::
 
@@ -146,7 +146,7 @@ If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optiona
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI Query Scale Out](service-premium-scale-out.md)
+> [Power BI Dataset Scale-Out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
 > [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)

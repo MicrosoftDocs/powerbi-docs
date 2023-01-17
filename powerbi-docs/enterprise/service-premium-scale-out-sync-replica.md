@@ -1,6 +1,6 @@
 ---
-title: Sync a read-only replica
-description: Learn how sync a Power BI read only dataset when using the Power BI Premium Scale-out feature
+title: Sync a read-only dataset scale-out replica
+description: Learn how sync a Power BI read only dataset when using the Power BI Dataset Scale-Out feature
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -11,9 +11,9 @@ ms.date: 01/12/2023
 LocalizationGroup: Premium
 ---
 
-# Sync a read-only scale-out replica
+# Sync a read-only dataset scale-out replica
 
-This article explains how to sync a *read-only* dataset replica after enabling [Power BI Query Scale Out](service-premium-auto-scale.md).
+This article explains how to sync a *read-only* dataset replica after enabling [Power BI Dataset Scale-Out](service-premium-auto-scale.md).
 
 When you're working against the *read/write* dataset, and your customers are using the *read-only* replica, you can perform dataset metadata updates and refreshes without affecting them. However, changes to the dataset model and refreshes take place in the original dataset. To copy these changes to the *read-only* dataset, you'll need to sync it with the *read/write* dataset. To check the sync status of your dataset copies, use the `SyncStatus` REST API. This article describes the PowerShell commands for using this API.
 
@@ -36,13 +36,13 @@ Follow these steps to sync the replicas in Windows PowerShell:
 3. Get the dataset ID by running the command below. Replace `WorkspaceId` with the ID of your workspace.
 
     ```powershell
-    Get-PowerBIDataset -WorkspaceId "WorkspaceId"   
+    Get-PowerBIDataset -WorkspaceId "WorkspaceId"  # Replace WorkspaceID with the ID of your workspace  
     ```
 
 4. Check the sync status of your dataset using the command below. Replace the values of `WorkspaceId` and `DatasetId` appropriately.
 
     ```powershell
-    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/syncStatus' -Method Get | ConvertFrom-Json | Format-List    
+    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/syncStatus' -Method Get | ConvertFrom-Json | Format-List  # Replace WorkspaceID withe the ID of your workspace and DatasetID with the ID of your dataset    
     ```
 
     In the output, the `minActiveReadVersion` and `minActiveReadTimestamp` values refer to the *read-only* dataset copy. The `commitVersion` and `commitTimestamp` values, refer to the *read/write* dataset copy. A difference between them, indicates that the *read-only* replica represents an older version of the dataset.
@@ -50,7 +50,7 @@ Follow these steps to sync the replicas in Windows PowerShell:
 5. Sync the *read/write* and *read-only* dataset copies using the command below. Replace the values of `WorkspaceId` and `DatasetId` appropriately.
 
     ```powershell
-    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/sync' -Method Post | ConvertFrom-Json | Format-List    
+    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/sync' -Method Post | ConvertFrom-Json | Format-List  # Replace WorkspaceID withe the ID of your workspace and DatasetID with the ID of your dataset
     ```
 
     The sync status information in the output indicates that the *read/write* and *read-only* replicas are out of sync, which is expected because you just triggered the sync.  
@@ -60,10 +60,10 @@ Follow these steps to sync the replicas in Windows PowerShell:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI Query Scale Out](service-premium-scale-out.md)
+> [Power BI Dataset Scale-Out](service-premium-scale-out.md)
 
 > [!div class="nextstepaction"]
-> [Tutorial: Test Power BI Query Scale Out](service-premium-scale-out-test.md)
+> [Tutorial: Test Power BI Dataset Scale-Out](service-premium-scale-out-test.md)
 
 > [!div class="nextstepaction"]
 > [Compare scale-out dataset copies](service-premium-scale-out-app.md)
