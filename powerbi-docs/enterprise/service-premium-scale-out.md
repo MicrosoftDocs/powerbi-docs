@@ -122,6 +122,20 @@ Use the XMLA endpoint to turn on Scale-Out.
 
     :::image type="content" source="media/service-premium-scale-out/ssms-connect.png" alt-text="A screenshot showing how to add the Scale-Out XMLA script to S Q L Server Management Studio (S S M S).":::
 
+### Disable Scale Out for your workspace
+
+Power BI Query Scale Out is enabled by default and can be disabled by a Power BI admin. To disable this feature, follow the instructions below.
+
+1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
+
+2. Expand the **Scale-out settings**.
+
+3. Toggle the switch so that it shows **Disabled**.
+
+4. Select **Execute** and wait for the query to complete.
+
+    :::image type="content" source="media/service-premium-scale-out/disable-scale-out.png" alt-text="A screenshot showing how to disable the scale out tenant settings in the Power BI admin portal.":::
+
 ### Disable Scale-Out for your tenant
 
 Power BI Dataset Scale-Out is enabled by default for each tenant. A Power BI admin can disable this tenant settings. To disable Dataset Scale-Out, follow the instructions below.
