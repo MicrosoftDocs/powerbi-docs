@@ -31,17 +31,16 @@ Here are the steps you complete in this tutorial:
 
 Here are the prerequisites for creating the paginated report:
 
-- Install [Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder). 
+- Install [Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder) for free.
 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 - Follow the quickstart [Create an Azure SQL database sample in the Azure portal](/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab. Remember the user name and password you created in Azure.
 
-Here are the prerequisites for uploading your paginated report to the Power BI service:
+License requirements for publishing Power BI paginated reports (.rdl files) are the same as for Power BI reports (.pbix files).
 
-- You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
-
-- You can publish to My Workspace. For any other workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+- With a free license, you can publish paginated reports to My Workspace in the Power BI service. For more information, see [Feature availability for users with free licenses in the Power BI service](../consumer/end-user-features.md#licenses).
+- With a Power BI Pro license or a PPU license, you can publish paginated reports to other workspaces. You also need at least a [contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) in the workspace.
 
 ## Create the matrix with a wizard
   
