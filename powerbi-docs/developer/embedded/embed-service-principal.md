@@ -101,26 +101,34 @@ Create an Azure AD app using one of these methods:
     >[!NOTE]
     >After you leave this window, the client secret value will be hidden, and you'll not be able to view or copy it again.
 
-### Creating an Azure AD app using PowerShell
+### Create an Azure AD app by using PowerShell
 
-This section includes a sample script to create a new Azure AD app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
+The following sample [PowerShell](/powershell/azure/create-azure-service-principal-azureps) script creates a new Azure AD app. Before you run this script, install the [Microsoft Graph PowerShell SDK](/graph/sdks/sdk-installation#install-the-microsoft-graph-powershell-sdk).
 
 ```powershell
-# The app ID - $app.appid
-# The service principal object ID - $sp.objectId
-# The app key - $key.value
+# Sign in as a user who's allowed to create an app.
+Connect-MgGraph -Scopes "Application.ReadWrite.All" 
 
-# Sign in as a user that's allowed to create an app
-Connect-AzureAD
+# Create a new Azure AD web application.
+$web = @{
+    RedirectUris = "https://localhost:44322"
+    HomePageUrl = "https://localhost:44322"
+}
+$params = @{
+    DisplayName = "testApp1"
+    Web = $web
+}
+$app = New-MgApplication @params
 
-# Create a new Azure AD web application
-$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+# Create a service principal.
+$ServicePrincipalID=@{
+  "AppId" = $app.AppId
+  }
+$sp = New-MgServicePrincipal -BodyParameter $($ServicePrincipalId)
 
-# Creates a service principal
-$sp = New-AzureADServicePrincipal -AppId $app.AppId
-
-# Get the service principal key
-$key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
+# Create a key for the service principal.
+$credential = Add-MgServicePrincipalPassword -ServicePrincipalId $($sp.Id)
+Write-Host "Service principal credential: " $($credential.SecretText)
 ```
 
 ## Step 2 - Create an Azure AD security group
@@ -132,26 +140,26 @@ There are two ways to create an Azure AD security group:
 * [Manually (in Azure)](embed-service-principal.md#create-a-security-group-manually)
 * [Using PowerShell](embed-service-principal.md#create-a-security-group-using-powershell)
 
+>[!NOTE]
+>If you want to enable service principal access for the entire organization, skip this step.
+
 ### Create a security group manually
 
 To create an Azure security group manually, follow the instructions in [create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members).
 
-### Create a security group using PowerShell
+### Create a security group by using PowerShell
 
-Below is a sample script for creating a new security group and adding an app to that security group.
-
->[!NOTE]
->If you want to enable service principal access for the entire organization, skip this step.
+The following sample script creates a new security group and adds an app to that security group.
 
 ```powershell
-# Required to sign in as admin
-Connect-AzureAD
+# Sign in as an admin.
+Connect-MgGraph -Scopes "Application.ReadWrite.All" 
 
-# Create an Azure AD security group
-$group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
+# Create an Azure AD security group.
+$group = New-MgGroup -DisplayName "securitygroup1" -SecurityEnabled -MailEnabled:$False -MailNickName "notSet"
 
-# Add the service principal to the group
-Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
+# Add the service principal to the group.
+New-MgGroupMember -GroupId $($group.Id) -DirectoryObjectId $($sp.Id)
 ```
 
 ## Step 3 - Enable the Power BI service admin settings
