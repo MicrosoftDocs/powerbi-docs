@@ -30,9 +30,11 @@ To get started, open a dashboard that you created, or can edit. Select **Edit** 
 
 ![Screenshot of the Edit drop down menu, highlighting the Dashboard theme option.](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 
-In the dashboard pane that appears, select one of the pre-built themes. In the following example, we've selected **Dark**.
+In the dashboard pane that appears, select one of the pre-built themes.
 
 ![Screenshot of the Dashboard theme window and dropdown menu.](media/service-dashboard-themes/power-bi-theme-menu.png)
+
+In the following example, we've selected **Dark**.
 
 ![Screenshot of the dashboard with the Dark option applied.](media/service-dashboard-themes/power-bi-theme-dark.png)
 
@@ -64,7 +66,7 @@ As with the built-in and custom options, when you upload a theme, the colors are
 
     ![Screenshot of the download icon for the JSON file.](media/service-dashboard-themes/power-bi-theme-json.png)
 
-3. In Power BI service, in the Custom Dashboard theme window, select **Upload JSON theme**.
+3. In the Power BI service, in the Custom Dashboard theme window, select **Upload JSON theme**.
 
     ![Screenshot of the Dashboard theme window, highlighting the Upload JSON theme option.](media/service-dashboard-themes/power-bi-upload-theme.png)
 
@@ -80,7 +82,7 @@ If your report uses a different theme from the dashboard theme, in most cases, y
 
 - When pinning a tile to a dashboard, to keep the report theme, select **Keep current theme**. The visual, on the dashboard, will retain the report theme, including transparency settings.
 
-    The only time you see **Tile Theming** options is if you created the report in Power BI Desktop, [added a report theme](desktop-report-themes.md), and then published the report to Power BI service.
+    The only time you see **Tile Theming** options is if you created the report in Power BI Desktop, [added a report theme](desktop-report-themes.md), and then published the report to the Power BI service.
 
     ![Screenshot of the Pin to dashboard window, highlighting the Keep current theme option.](media/service-dashboard-themes/power-bi-keep-current.png)
 
@@ -131,7 +133,7 @@ Here's a sample theme JSON for the default Light theme:
 ## Considerations and limitations
 
 * You can't apply dashboard themes to pinned live report pages, iframe tiles, SSRS tiles, workbook tiles, or images.
-* You see dashboard themes on mobile devices, but you can only create a dashboard theme in Power BI service.
+* You see dashboard themes on mobile devices, but you can only create a dashboard theme in the Power BI service.
 * Dashboard custom themes only work with tiles pinned from reports.
 
 ## Next steps
