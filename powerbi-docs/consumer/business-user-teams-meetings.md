@@ -30,7 +30,7 @@ Here's how you can use data before, during, and after your meetings.
 
 ## Ask data-driven questions
 
-Here questions you can add to your meeting agenda to start discussion and determine the best actions to take to achieve your desired outcomes:
+Here some questions you can add to your meeting agenda to start discussion and determine the best actions to take to achieve your desired outcomes:
 
 - Are we making progress toward our objectives as quickly as we expected to?
 - What actions can we take in the next week or month that are most likely to improve our metrics?
@@ -60,7 +60,7 @@ Here's how to add a Power BI report or scorecard to a meeting.
 
 6. Select **Save**.
 
-    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-save-tab.png" alt-text="Screenshot of the Add a tab  window and Power BI with save the button highlighted.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-save-tab.png" alt-text="Screenshot of the Add a tab window and Power BI with the save button highlighted.":::
 
 7. See [Give team members permission](business-user-teams-share-data.md#give-team-members-permission) in the "Lead data-driven discussions in Microsoft Teams" article for how to share with your colleagues.
 
@@ -95,7 +95,7 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 2. Select a visual.
 3. Select **Copy visual as image** to copy the visual.
 
-    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-copy-visual.png" alt-text="Screenshot of a visual and Copy visual as image icon highlighted.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-copy-visual.png" alt-text="Screenshot of a visual and the Copy visual as image icon highlighted.":::
 
 4. Paste the visual into the meeting chat.
 
