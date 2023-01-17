@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/13/2023
+ms.date: 01/17/2023
 LocalizationGroup: Create reports
 ---
 
 # Overview of accessibility in Power BI
 
-When working with Power BI, consider the different types of users who may interact with your reports. You can create reports that are easily navigated and understood by keyboard or screen reader users. Such reports enable users who may have visual or physical impairments to benefit from your reports.
+When working with Power BI, consider the different types of users who might interact with your reports. You can create reports that are easily navigated and understood by keyboard or screen reader users. Such reports enable users who might have visual or physical impairments to benefit from your reports.
 
 ![Screenshot showing a high-contrast color setting in Power BI service.](media/desktop-accessibility/accessibility-05b.png)
 
@@ -21,7 +21,7 @@ This article provides an overview of Power BI and accessibility. Other articles 
 
 ## Universal design
 
-Universal design is the design of products that are usable by as many people as reasonably possible, without the need for special adaptation or specialized design. When creating reports or experiences in Power BI, it’s important to consider the needs of your users. Designing an accessible experience won't only benefit your end users who may have hearing, motor, cognitive, or visual impairments. It can also help all the end users in your organization. Power BI gives you the tools to make and consume accessible reports. It’s up to you, as a report creator, to use those tools to improve everyone’s experience.
+Universal design is the design of products that are usable by as many people as reasonably possible, without the need for special adaptation or specialized design. When creating reports or experiences in Power BI, it’s important to consider the needs of your users. Designing an accessible experience won't only benefit your end users who might have hearing, motor, cognitive, or visual impairments. It can also help all the end users in your organization. Power BI gives you the tools to make and consume accessible reports. It’s up to you, as a report creator, to use those tools to improve everyone’s experience.
 
 ## Accessibility standards
 
@@ -42,7 +42,7 @@ US Section 508 is a standard that requires governments and federal agencies to m
 
 ### EN 301 549
 
-EN 301 549 is the Harmonized European Standard for Accessibility requirements for ICT products and services.  
+EN 301 549 is the Harmonized European Standard for Accessibility requirements for Information and Communication Technology (ICT) products and services.
 
 ### Conformance Documentation
 
