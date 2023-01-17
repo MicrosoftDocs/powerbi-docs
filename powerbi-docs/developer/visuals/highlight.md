@@ -20,7 +20,7 @@ If you set the `supportsHighlight` property in your `capabilities.json` file to 
 
 ### [No highlight support](#tab/Standard)
 
-:::image type="content" source="media/highlight/dataview-support.png" alt-text="Screenshot of the default dataView behavior without highlighting. lightbox="media/highlight/dataview-support.png":::
+:::image type="content" source="media/highlight/dataview-support.png" alt-text="Screenshot of the default dataView behavior without highlighting." lightbox="media/highlight/dataview-support.png":::
 
 ### [Highlight support](#tab/Highlight)
 
