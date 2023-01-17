@@ -1,6 +1,6 @@
 ---
 title: Use data to make meetings productive in Microsoft Teams
-description: Learn how to use Microsoft Teams to make meetings productive using Power Bi to add reports, present, and share data.
+description: Learn how to make meetings productive in Microsoft Teams using Power BI to add reports and share data.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart, lukaszp
@@ -25,7 +25,7 @@ It’s easy to use Power BI in meetings to help keep crucial data top of mind. I
 Here's how you can use data before, during, and after your meetings.
 
 - **[Before the meeting](#before-the-meeting)**. Add the reports and scorecards directly to the meeting invite so everyone can access to them.
-- **[During the meeting](#during-the-meeting)**. Open and present these reports from the calendar. You can even use chat to share more reports and scorecards or to find the answers questions raised in the meeting.
+- **[During the meeting](#during-the-meeting)**. Open and present these reports from the calendar. You can even use chat to share more reports and scorecards or to find answers to questions raised in the meeting.
 - **[After the meeting](#after-the-meeting)**. Send a summary with the key results discussed and actions the team decided to take to help achieve the desired outcomes.
 
 ## Ask data-driven questions
@@ -36,7 +36,7 @@ Here questions you can add to your meeting agenda to start discussion and determ
 - What actions can we take in the next week or month that are most likely to improve our metrics?
 - What metrics can we start tracking to get a better sense if we’re making progress towards our desired outcomes?
 
-Review your data weekly, or at least monthly, to get in the habit of asking questions, discussing the best actions to take in the next week or two, and helping the team learn to leverage data as they plan their work.
+Review your data weekly, or at least monthly, to get in the habit of asking questions and discussing the best actions to take in the next week or two. It will help the team learn to leverage data as they plan their work.
 
 ## Before the meeting
 
@@ -85,7 +85,7 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 3. Open the meeting in the calendar.
 4. Anyone in the meeting can select the Power BI tab to view the report you added to the meeting.
 
-    :::image type="content" source="media/business-user-teams-meetings/teams-meeting-power-bi-tab.png" alt-text="Screenshot of an open meeting invite, and Power BI report tab highlighed.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-meeting-power-bi-tab.png" alt-text="Screenshot of an open meeting invite, and Power BI report tab highlighted.":::
 
 5. Use the meeting window to present your screen.
 
@@ -105,13 +105,13 @@ When you’re in a meeting, data can help guide the discussion or answer questio
 2. Select the report or a specific visual.
 3. Select the **Chat in Teams** button.
 
-    :::image type="content" source="media/business-user-teams-meetings/power-bi-teams-chat-teams.png" alt-text="Screenshot of a Power BI report in a Teams meeting with the Chat in Teams icon highligthed.":::
+    :::image type="content" source="media/business-user-teams-meetings/power-bi-teams-chat-teams.png" alt-text="Screenshot of a Power BI report in a Teams meeting with the Chat in Teams button highlighted.":::
 
 4. Select the meeting name to send to.
 5. Type your message above the link that's provided.
 6. Select **Send**.
 
-Your message appears as part of the meeting chat. Attendees can open it to see the data you wanted with the filters and slicers applied.
+Your message appears as part of the meeting chat. Attendees can open it to see the data with the filters and slicers applied.
 
 ### Answer questions with data in chat
 
@@ -125,7 +125,7 @@ Your message appears as part of the meeting chat. Attendees can open it to see t
 5. Pick a Power BI item.
 6. Select **Send**.
 
-    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-chat-send.png" alt-text="Screenshot of the chat pane in Teams with the send message icon highlighed.":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-chat-send.png" alt-text="Screenshot of the chat pane in Teams with the send message icon highlighted.":::
 
 7. Select **Open**.
 
@@ -135,7 +135,7 @@ Your message appears as part of the meeting chat. Attendees can open it to see t
 
 It’s useful to share a summary of the most important data points discussed and the actions the team will take to help achieve outcomes. If you captured visuals during the meeting in chat, you can pull those into a meeting summary post in chat or a follow-up message.
 
-Consider using key data points to create metrics and track them in a scorecard. Consistently tracking progress against with a metric through a series of meetings is a great way to keep your team or project on track. 
+Consider using key data points to create metrics and track them in a scorecard. Consistently tracking progress against a metric through a series of meetings is a great way to keep your team or project on track.
 
 ## Next steps
 
