@@ -30,13 +30,13 @@ Follow these steps to sync the replicas in Windows PowerShell:
 2. Get your workspace IDs by running the command below. Replace `WorkspaceName` with the name of your workspace.
 
     ```powershell
-    Get-PowerBIWorkspace -Name "WorkspaceName"  
+    Get-PowerBIWorkspace -Name "<WorkspaceName>"  
     ```
 
 3. Get the dataset ID by running the command below. Replace `WorkspaceId` with the ID of your workspace.
 
     ```powershell
-    Get-PowerBIDataset -WorkspaceId "WorkspaceId"  # Replace WorkspaceID with the ID of your workspace  
+    Get-PowerBIDataset -WorkspaceId "<WorkspaceId>"  # Replace WorkspaceID with the ID of your workspace  
     ```
 
 4. Check the sync status of your dataset using the command below. Replace the values of `WorkspaceId` and `DatasetId` appropriately.

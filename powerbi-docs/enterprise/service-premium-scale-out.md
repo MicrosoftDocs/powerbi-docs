@@ -60,63 +60,17 @@ Before you enable Power BI Dataset Scale-Out, verify that the following Prerequi
 
 ## Enable Dataset Scale-Out
 
-Use the XMLA endpoint to turn on Scale-Out.
+Power BI Dataset Scale-Out is enabled by default and can be disabled by a Power BI admin. To disable this feature, follow the instructions below.
 
-1. Start SQL Server Management Studio (SSMS) and in the **Connect to Server** dialog box, fill in the fields as listed below.
+1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
 
-    | Field          | Value |
-    |----------------|-------|
-    | **Server type**    | Analysis Services |
-    | **Server name**    | Paste the workspace connection string. You can get the connection string by going into your workspace settings, selecting Premium and copying the *Workspace Connection* string. |
-    | **Authentication** | Select the correct authentication type for your environment |
-    | **User name**      | Provide a valid UPN |
+2. Expand the **Scale-out settings**.
 
-2. Select **Connect**.
+3. Toggle the switch so that it shows **Disabled**.
 
-3. In the *Object Explorer* pane, select the **Databases** node.
+4. Select **Execute** and wait for the query to complete.
 
-4. In the toolbar, select **XMLA**. If a *Connect to Analysis Services* dialog box appears, select *Connect*.
-
-5. Paste the following request into the XMLA window. Replace `WorkspaceName` with the name of your workspace.  
-
-    ```xml
-    <Execute xmlns="urn:schemas-microsoft-com:xml-analysis"> 
-        <Command> 
-            <Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
-                <Alter ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
-                    <Object /> 
-                    <ObjectDefinition><Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                                xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" 
-                                xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" 
-                                xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" 
-                                xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" 
-                                xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" 
-                                xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" 
-                                xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" 
-                                xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" 
-                                xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" 
-                                xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" 
-                                xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500"> 
-                            <Name>WorkspaceName</Name> 
-                            <ServerProperties> 
-                                <ServerProperty> 
-                                    <Name>Feature\PBIP\QueryScaleOut</Name> 
-                                    <Value>1</Value> 
-                                </ServerProperty> 
-                            </ServerProperties> 
-                        </Server> 
-                    </ObjectDefinition> 
-                </Alter> 
-            </Batch> 
-        </Command> 
-        <Properties /> 
-    </Execute>  
-    ```
-
-6. Select **Execute**.
-
-    :::image type="content" source="media/service-premium-scale-out/ssms-connect.png" alt-text="A screenshot showing how to add the Scale-Out XMLA script to S Q L Server Management Studio (S S M S).":::
+    :::image type="content" source="media/service-premium-scale-out/disable-scale-out.png" alt-text="A screenshot showing how to disable the scale out tenant settings in the Power BI admin portal.":::
 
 ## Connect to a specific dataset type
 
@@ -134,10 +88,6 @@ You can connect to specific type of dataset copy by appending one of the followi
 
 * **Read-only** - `?readonly`
 * **Read/write** - `?readwrite`
-
-## Disable Power BI Dataset Scale-Out
-
-To disable Power BI Dataset Scale-Out, set `QueryScaleOut` to zero. For more information, see the code snippet in [Enable Dataset Scale-Out](#enable-query-scale-out), step 5.
 
 ## Considerations and limitations
 
