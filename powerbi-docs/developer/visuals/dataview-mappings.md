@@ -1,6 +1,6 @@
 ---
 title: Understand data view mapping in Power BI visuals
-description: Learn how Power BI transforms data before passing it into visuals.
+description: Learn about single, categorical, and matrix data mapping. Specify the conditional requirements for data roles to create different types of visuals.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -19,7 +19,7 @@ Each valid mapping produces a data view. You can provide multiple data mappings 
 * [conditions](#conditions)
 * [categorical](#categorical-data-mapping)
 * [single](#single-data-mapping)
-* [table](#mapping-tables)
+* [table](#map-tables)
 * [matrix](#matrix-data-mapping)
 
 ```json
@@ -118,7 +118,7 @@ For example:
 }
 ```
 
-The resulting data view can still contain other types, like table or categorical, but each mapping contains only the single value. The best practice is to access the value only in single.
+The resulting data view can still contain other types of mapping, like table or categorical, but each mapping contains only the single value. The best practice is to access the value only in single mapping.
 
 ```JSON
 {
@@ -137,7 +137,7 @@ The resulting data view can still contain other types, like table or categorical
 }
 ```
 
-Code sample to process simple data views mapping:
+The following code sample processes simple data views mapping:
 
 ```typescript
 "use strict";
@@ -175,13 +175,13 @@ export class Visual implements IVisual {
 }
 ```
 
-The previous code results in the display of a single value from Power BI:
+The previous code sample results in the display of a single value from Power BI:
 
 :::image type="content" source="media/dataview-mappings/visual-simple-dataview-mapping.png" alt-text="Screenshot of a single data view mapping visual.":::
 
 ## Categorical data mapping
 
-Categorical data mapping is used to get independent groupings or categories of data. The categories can also be further grouped together using *group by* in the data mapping.
+Categorical data mapping is used to get independent groupings or categories of data. The categories can also be grouped together by using "group by" in the data mapping.
 
 ### Basic categorical data mapping
 
@@ -216,8 +216,8 @@ Consider the following data roles and mappings:
 
 The previous example reads "Map my `category` data role so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also, map my `measure` data role to `categorical.values`."
 
-* **for...in**: Include *all* items in this data role in the data query.
-* **bind...to**: Produces the same result as in *for...in* but expects the data role to have a condition restricting it to a *single* field.
+* **for...in**: Includes *all* items in this data role in the data query.
+* **bind...to**: Produces the same result as *for...in* but expects the data role to have a condition restricting it to a *single* field.
 
 ### Group categorical data
 
@@ -264,7 +264,7 @@ The next example uses the same two data roles as the previous example and adds t
 }
 ```
 
-The difference between this mapping and the basic mapping is how `categorical.values` is mapped. When you map the `measure` and `measure2` data roles to the data role `grouping`, the x axis and y axis can be scaled appropriately.
+The difference between this mapping and the basic mapping is how `categorical.values` is mapped. When you map the `measure` and `measure2` data roles to the data role `grouping`, the x-axis and y-axis can be scaled appropriately.
 
 ### Group hierarchical data
 
@@ -476,7 +476,7 @@ Here's the resulting visual:
 
 The *table* data view is essentially a list of data points where numeric data points can be aggregated.
 
-For example, use the [same data in the previous section](#grouping-hierarchical-data), but with the following capabilities:
+For example, use the [same data in the previous section](#group-hierarchical-data), but with the following capabilities:
 
 ```json
 "dataRoles": [
@@ -820,7 +820,7 @@ The visual gets its data structure as described in the following code (only the 
 
 ### Expand and collapse row headers
 
-For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
+For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expand-and-collapse-row-headers).
 The expand and collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row. The row header’s expansion state remains consistent across bookmarks and even across saved reports. It's not specific to each visual.
 
 Expand and collapse commands can be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
@@ -1028,7 +1028,7 @@ You can apply the data reduction algorithm to the `rows` and `columns` sections 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Drill down support](drill-down-support.md)
+> [Add drill-down support](drill-down-support.md)
 
 > [!div class="nextstepaction"]
-> [Rendering a visual without requiring data binding](no-dataroles-support.md)
+> [Create custom Power BI visuals without data binding](no-dataroles-support.md)
