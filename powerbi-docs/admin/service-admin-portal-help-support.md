@@ -32,7 +32,7 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 ## Receive email notifications for service outages or incidents
 
-Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](service-interruption-notifications.md).
+Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](/power-bi/support/service-interruption-notifications).
 
 ## Allow users to try Power BI paid features
 

@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 This article lists the workloads for Power BI Premium, and describes their capacities. Use the *Gen2* and *Gen1* tabs to review the differences between workloads for these Premium offerings.
 
 >[!IMPORTANT]
->Premium Gen1, also known as the original version of Premium, is being deprecated. If you're still using Premium Gen1, you need to migrate your Power BI content to Premium Gen2. For more information, see [Plan your transition to Power BI Premium Gen2](service-premium-transition-gen1-to-gen2.md).
+>Premium Gen1, also known as the original version of Premium, is being deprecated. If you're still using Premium Gen1, you need to migrate your Power BI content to Premium Gen2. For more information, see [Plan your transition to Power BI Premium Gen2](/power-bi/enterprise/service-premium-gen2-what-is).
 
 >[!NOTE]
 >Workloads can be enabled and assigned to a capacity by using the [Capacities](/rest/api/power-bi/capacities) REST APIs.

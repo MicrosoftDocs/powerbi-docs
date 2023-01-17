@@ -126,7 +126,7 @@ Power BI Desktop for Power BI Report Server doesn't support information protecti
 
 Sensitivity labels are supported in the following sovereign clouds:
 
-* [US Government](../admin/service-govus-overview.md): GCC, GCC High, DoD
+* [US Government](/power-bi/enterprise/service-govus-overview): GCC, GCC High, DoD
 * China: Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection.md?view=o365-21vianet&preserve-view=true).
 
 ## Sensitivity label support in template apps
@@ -236,7 +236,7 @@ The data protection metrics report is a special report and doesn't show up in th
 
 ### I can't share the data protection metrics report with external users
 
-The data protection metrics report isn't available to [external users (Azure Active Directory B2B guest users)](../admin/service-admin-azure-ad-b2b.md).
+The data protection metrics report isn't available to [external users (Azure Active Directory B2B guest users)](/power-bi/enterprise/service-admin-azure-ad-b2b).
 
 ## Paginated reports
 

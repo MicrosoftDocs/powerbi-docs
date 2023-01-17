@@ -83,7 +83,7 @@ There are a couple of built in Power BI features that can help you stay up-to-da
 Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md) for a dashboard.  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value on a dashboard passes a specific threshold.  For example, if inventory falls below 25 units or if sales exceed goals.  
 
 ## Subscribe to see changes
-Another way to stay up-to-date is to subscribe to a report or dashboard. Instead of having to log in and open a report or dashboard, you tell Power BI to send you a snapshot on a schedule you set.  For more information, see [subscribe to dashboards and reports](end-user-subscribe.md).
+Another way to stay up-to-date is to subscribe to a report or dashboard. Instead of having to log in and open a report or dashboard, you tell Power BI to send you a snapshot on a schedule you set.  For more information, see [subscribe to dashboards and reports](/power-bi/collaborate-share/end-user-subscribe).
 
 
 
@@ -94,5 +94,5 @@ Another way to stay up-to-date is to subscribe to a report or dashboard. Instead
 
 ## Next steps
 [Create a data alert](end-user-alerts.md)    
-[Subscribe to dashboards and reports](end-user-subscribe.md)    
-[View related content](end-user-related.md)    
+[Subscribe to dashboards and reports](/power-bi/collaborate-share/end-user-subscribe)    
+[View related content](end-user-related.md)

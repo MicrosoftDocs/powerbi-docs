@@ -84,7 +84,7 @@ landingContent:
           - text: Export a report to PDF
             url: end-user-pdf.md
           - text: Subscribe to content
-            url: end-user-subscribe.md
+            url: /power-bi/collaborate-share/end-user-subscribe
 
   # Card
   - title: Advanced topics
