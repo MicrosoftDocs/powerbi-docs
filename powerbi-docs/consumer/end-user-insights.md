@@ -21,7 +21,7 @@ Each visual tile on your dashboard is a doorway into data exploration. For more 
 
 When you run insights on tiles, Power BI looks at the data used to render that tile. If Power BI finds interesting facts or trends in that data, you'll see those facts or trends in the form of interactive visuals. Insights can run on a specific dashboard tile and you can even run insights on an insight!
 
-The insights feature is built on a growing set of advanced analytical algorithms developed in conjunction with Microsoft Research that allows people to find insights in their data in new and intuitive ways. For more information, see [Types of insights supported by Power BI](end-user-insight-types.md). The dashboard insights feature is similar to the dataset **quick insights** feature. To see how to run quick insights on an entire data set, see [Generate data insights on your dataset automatically with Power BI](../create-reports/service-insights.md).
+The insights feature is built on a growing set of advanced analytical algorithms developed in conjunction with Microsoft Research that allows people to find insights in their data in new and intuitive ways. For more information, see [Types of insights supported by Power BI](end-user-insight-types.md). The dashboard insights feature is similar to the dataset **quick insights** feature. To see how to run quick insights on an entire dataset, see [Generate data insights on your dataset automatically with Power BI](../create-reports/service-insights.md).
 
 ## Run insights on a dashboard tile
 When you run insights on a dashboard tile, Power BI searches just the data used to create that single dashboard tile.
@@ -38,7 +38,7 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
 
 Now that you have an insight open, you can continue exploring.
 
-   * Filter the visual on the canvas.  To see the filters, go to the filter's pane and select the arrow in the upper right corner.
+   * Filter the visual on the canvas.  To see the filters, go to the Filter's pane and select the arrow in the upper right corner.
          :::image type="content" source="./media/end-user-insights/power-bi-filter.png" alt-text=" Screenshot of a tile and the insights cards with the filter menu expanded and highlighted.":::
    
    * You can run insights on the insight card itself. This is often referred to as **related insights**. To do this, select an insight card to make it active. It will move to the left side of the report canvas, and new cards, based solely on the data in that single insight, will  display along the right.
