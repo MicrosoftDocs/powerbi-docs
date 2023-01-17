@@ -13,7 +13,7 @@ ms.date: 08/18/2022
 
 # Embed a report with RLS
 
-**APPLIES TO:** ✔️&nbsp;App&nbsp;owns&nbsp;data ❌&nbsp;User&nbsp;owns&nbsp;data
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 This article explains how to embed Power BI content that uses RLS into a standard Power BI app owns data application.
 

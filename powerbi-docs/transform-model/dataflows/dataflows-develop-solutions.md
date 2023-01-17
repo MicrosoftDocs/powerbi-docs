@@ -1,20 +1,20 @@
 ﻿---
 title: Develop solutions with dataflows
-description: Overview of how to develop solutions with dataflows
+description: Learn how to use Power BI data flows in some common scenarios to enable an ecosystem of data for your organization.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/30/2021
+ms.date: 1/5/2023
 LocalizationGroup: Data from files
 ---
 
 
 # Develop solutions with dataflows
 
-Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents some common scenarios. Links to articles and other information help you to understand and use dataflows to their full potential.
+Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents some common scenarios, links to articles, and other information to help you understand and use dataflows to their full potential.
 
 ## Get access to Premium features of dataflows
 
@@ -31,14 +31,14 @@ For these reasons, we recommend that you use dataflows in a Premium capacity whe
 
 Getting access to these [Premium features of dataflows](dataflows-premium-features.md) is possible in two ways:
 
-* Designate a **Premium capacity** to a given workspace and bring your own Pro license to author dataflows here.
-* Bring your own **Premium per user (PPU)** license, which requires other members of the workspace to also possess a PPU license.
+- Designate a **Premium capacity** to a given workspace and bring your own Pro license to author dataflows here.
+- Bring your own **Premium per user (PPU)** license, which requires other members of the workspace to also possess a PPU license.
 
 You can't consume PPU dataflows (or any other content) outside the PPU environment (such as in Premium or other SKUs or licenses).
 
 For Premium capacities, your consumers of dataflows in Power BI Desktop don't need explicit licenses to consume and publish to Power BI. But to publish to a workspace or share a resulting dataset, you'll need at least a Pro license.
 
-For PPU, everyone who creates or consumes PPU content must have a PPU license. This requirement varies from the rest of Power BI in that you need to explicitly license everyone with PPU and you can't mix Free, Pro, or even Premium capacities with PPU content unless you migrate the workspace to a Premium capacity.
+For PPU, everyone who creates or consumes PPU content must have a PPU license. This requirement varies from the rest of Power BI in that you need to explicitly license everyone with PPU. You can't mix Free, Pro, or even Premium capacities with PPU content unless you migrate the workspace to a Premium capacity.
 
 Choosing a model typically depends on your organization's size and goals, but the following guidelines apply.
 
@@ -53,7 +53,7 @@ For small teams, PPU can bridge the gap between Free, Pro, and Premium per capac
 
 Imagine that you need to create dataflows for consumption but have security requirements:
 
-:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Graphic that describes the scenario.":::
+:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Diagram that describes the scenario.":::
 
 In this scenario, you likely have two types of workspaces:
 
@@ -76,7 +76,7 @@ Lineage for privileged individuals also shows the referenced workspace and allow
 
 The following diagram illustrates this setup. On the left is the architectural pattern. On the right is an example that shows sales data split and secured by region.
 
-:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-02.png" alt-text="Graphic that describes how to use linked tables and dataflows.":::
+:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-02.png" alt-text="Diagram that describes how to use linked tables and dataflows.":::
 
 ## Reduce refresh times for dataflows
 
@@ -88,11 +88,11 @@ Power BI supports simple orchestration for dataflows, as defined in [understandi
 
 Disabling load typically is appropriate only when the overhead of loading more queries cancels the benefit of the entity with which you're developing.
 
-While disabling load means Power BI doesn't evaluate that given query, when used as ingredients, that is, referenced in other dataflows, it also means that Power BI doesn't treat it as an existing table where we can provide a pointer to and perform folding and query optimizations. In this sense, performing transformations such as a join or merge is merely a join or merge of two data source queries. Such operations can have a negative effect on performance because Power BI must fully reload already computed logic again and then apply any more logic.
+While disabling load means Power BI doesn't evaluate that given query, when used as ingredients, that is, referenced in other dataflows, it also means that Power BI doesn't treat it as an existing table where we can provide a pointer to and perform folding and query optimizations. In this sense, performing transformations such as a join or merge is merely a join or merge of two data source queries. Such operations can have a negative effect on performance, because Power BI must fully reload already computed logic again and then apply any more logic.
 
 To simplify the query processing of your dataflow and ensure any engine optimizations are taking place, enable load and ensure that the compute engine in Power BI Premium dataflows is set at the default setting, which is **Optimized**.
 
-Enabling load also enables you to keep the complete view of lineage because Power BI considers a non-enabled load dataflow as a new item. If lineage is important to you, don't disable load for entities or dataflows connected to other dataflows.
+Enabling load also enables you to keep the complete view of lineage, because Power BI considers a non-enabled load dataflow as a new item. If lineage is important to you, don't disable load for entities or dataflows connected to other dataflows.
 
 ## Reduce refresh times for datasets
 
@@ -102,19 +102,19 @@ Imagine you have a dataflow that's large, but you want to build datasets off of 
 
 DirectQuery can be used whenever a workspace's enhanced compute engine (ECE) setting is configured explicitly to **On**. This setting is helpful when you have data that doesn't need to be loaded directly into a Power BI model. If you're configuring the ECE to be **On** for the first time, the changes that allow DirectQuery will occur during the next refresh. You'll need to refresh it when you enable it to have changes take place immediately. Refreshes on the initial dataflow load can be slower because Power BI writes data to both storage and a managed SQL engine.
 
-To summarize, using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
+To summarize, by using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
 
-- **Avoid separate refresh schedules**: DirectQuery connects directly to a dataflow, which removes the need to create an imported dataset. As such, using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
+- **Avoid separate refresh schedules**: DirectQuery connects directly to a dataflow, which removes the need to create an imported dataset. As such, by using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
 - **Filtering data**: DirectQuery is useful for working on a filtered view of data inside a dataflow. If you want to filter data, and in this way work with a smaller subset of the data in your dataflow, you can use DirectQuery (and the ECE) to filter dataflow data and work with the filtered subset you need.
 
-Generally, using DirectQuery trades up-to-date data in your dataset with slower report performance compared to import mode. Consider this approach only when:
+Generally, by using DirectQuery trades up-to-date data in your dataset with slower report performance compared to import mode. Consider this approach only when:
 
 - Your use case requires low latency data coming from your dataflow.
 - The dataflow data is large.
 - An import would be too time consuming.
 - You're willing to trade cached performance for up-to-date data.
 
-### Solution: Use the dataflow connector to enable query folding and incremental refresh for import
+### Solution: Use the dataflows connector to enable query folding and incremental refresh for import
 
 The unified Dataflows connector can significantly reduce evaluation time for steps performed over computed entities, such as performing joins, distinct, filters, and group by operations. There are two specific benefits:
 
@@ -139,7 +139,7 @@ Imagine you run a query on the source system, but you don't want to provide dire
 
 ### Solution 1: Use a view for the query or optimize the query
 
-Using an optimized data source and query is your best option. Often, the data source operates best with queries intended for it. Power Query has advanced query-folding capabilities to delegate these workloads. Power BI also provides step-folding indicators in Power Query Online. Read more about types of indicators in the [step-folding indicators documentation](/power-query/step-folding-indicators).
+By using an optimized data source and query is your best option. Often, the data source operates best with queries intended for it. Power Query has advanced query-folding capabilities to delegate these workloads. Power BI also provides step-folding indicators in Power Query Online. Read more about types of indicators in the [step-folding indicators documentation](/power-query/step-folding-indicators).
 
 ### Solution 2: Use Native Query
 
@@ -192,10 +192,10 @@ Many customers today have a need to secure your data assets behind a private end
 
 The following articles provide more information about dataflows and Power BI:
 
-* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
-* [Create a dataflow](dataflows-create.md)
-* [Configure and consume a dataflow](dataflows-configure-consume.md)
-* [Premium features of dataflows](dataflows-premium-features.md)
-* [AI with dataflows](dataflows-machine-learning-integration.md)
-* [Dataflows considerations and limitations](dataflows-features-limitations.md)
-* [Dataflows best practices](dataflows-best-practices.md)
+- [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
+- [Create a dataflow](dataflows-create.md)
+- [Configure and consume a dataflow](dataflows-configure-consume.md)
+- [Premium features of dataflows](dataflows-premium-features.md)
+- [AI with dataflows](dataflows-machine-learning-integration.md)
+- [Dataflows considerations and limitations](dataflows-features-limitations.md)
+- [Dataflows best practices](dataflows-best-practices.md)
