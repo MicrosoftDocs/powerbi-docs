@@ -46,7 +46,7 @@ With the information in the exported file, you can review the capacity, duration
 
 You can select the **Schedule** view by selecting **Schedule** in refresh summaries. The **Schedule** view displays scheduling information for the week, broken down into 30-minute time slots.
 
-:::image type="content" source="(media/refresh-summaries/refresh-summaries-02a.png" alt-text="Screenshot shows the schedule tab of the Refresh schedule page in close up." lightbox="(media/refresh-summaries/refresh-summaries-02a.png":::
+:::image type="content" source="media/refresh-summaries/refresh-summaries-02a.png" alt-text="Screenshot shows the schedule tab of the Refresh schedule page in close up." lightbox="media/refresh-summaries/refresh-summaries-02a.png":::
 
 The **Schedule** view is very useful in determining whether the refresh events scheduled are properly spaced, allowing for all refreshes to complete without overlap, or whether you have scheduled refresh events that are taking too long and creating resource contention. If you find such resource contention, you should adjust your refresh schedules to avoid the conflicts or overlap, so your scheduled refreshes can complete successfully.
 
