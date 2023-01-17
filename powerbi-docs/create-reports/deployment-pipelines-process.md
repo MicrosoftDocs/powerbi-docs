@@ -1,5 +1,5 @@
 ---
-title: Deployment pipelines, the Power BI Application lifecycle management (ALM) tool, process
+title: Understand the Power BI deployment pipelines process
 description: Understand how deployment pipelines, the Power BI Application lifecycle management (ALM) tool, works
 author: mberdugo
 ms.author: monaberdugo
@@ -262,7 +262,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 * Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
 
-#### Considerations and limitations
+#### Incremental refresh limitations
 
 For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). All datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
 

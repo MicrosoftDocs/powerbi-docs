@@ -1,5 +1,5 @@
 ---
-title: Power BI Application lifecycle management (ALM) deployment pipelines overview 
+title: Overview of Power BI deployment pipelines 
 description: An introduction to deployment pipelines the Power BI Application lifecycle management (ALM) tool
 author: mberdugo
 ms.author: monaberdugo
