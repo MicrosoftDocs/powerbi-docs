@@ -62,7 +62,7 @@ If you distribute an app from a workspace, removing people's access to the app d
 
 ## Configure how users request Build permission
 
-Certain actions, such as creating a report with a dataset or accessing the details page of a dataset in the datasets hub, require Build permission on the dataset. When a user who doesn't have Build permission tries to do such an action, they get a dialog that enables them to send a request for Build permission by email to the dataset owner. The email includes the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
+Certain actions, such as creating a report with a dataset or accessing the details page of a dataset in the datasets hub, require Build permission on the dataset. By default, when users who don't have Build permission try to do these actions, a dialog box appears that lets them send an email request for Build permission to the dataset owner. The email includes the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
 
 ![Screenshot of the default Build permission request dialog.](media/service-datasets-build-permissions/build-permission-default-request-dialog.png)
  
