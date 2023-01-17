@@ -1,13 +1,13 @@
 ---
 title: Testing submissions of Power BI custom visuals
-description: This article describes test cases that your Power BI custom visual must pass before publishing it on AppSource. There are also optional test cases.
+description: Learn how to perform test cases that your Power BI custom visual must pass before publishing it on AppSource.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/04/2022
+ms.date: 12/30/2022
 ---
 
 # Test a Power BI custom visual before submitting it for publication
@@ -20,14 +20,14 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 By default, Power BI loads the latest published version of the visual from AppSource, even if you import the visual from a local file.
 
-When testing or updating a visual that is already published, make sure you're using the correct version of the visual **without changing the GUID**. To override the AppSource version with a local file version, enable Developer mode in either Power BI Desktop, or Power BI service.
+When testing or updating a visual that's already published, make sure you're using the correct version of the visual **without changing the GUID**. To override the AppSource version with a local file version, enable Developer mode in either Power BI Desktop or Power BI service.
 
 >[!IMPORTANT]
->When testing or debugging a new version of a visual that is available in AppSource, **do not change the GUID of the visual**. Use Developer mode instead.
+>When testing or debugging a new version of a visual that's available in AppSource, **do not change the GUID of the visual**. Use Developer mode instead.
 
 ### Enable Developer mode in Power BI Desktop
 
-In Power BI Desktop, Developer mode is only valid for one session. If you open a new Power BI Desktop instance for testing, you'll need to enable Developer mode again.
+In Power BI Desktop, Developer mode is valid for only one session. If you open a new Power BI Desktop instance for testing, you need to enable Developer mode again.
 
 To enable Developer mode, follow these steps:
 
@@ -37,7 +37,7 @@ To enable Developer mode, follow these steps:
 4. In the Options window, from the CURRENT FILE list, select **Report settings**.
 5. In Developer Mode, select the **Turn on developer mode for this session** option.
 
-:::image type="content" source="media/submission-testing/developer-mode-desktop.png" alt-text="Screenshot of developer mode in PBI Desktop.":::
+:::image type="content" source="media/submission-testing/developer-mode-desktop.png" alt-text="Screenshot of Developer mode in Power BI Desktop.":::
 
 ### Enable Developer mode in Power BI service
 
@@ -65,12 +65,12 @@ Verify that your visual passes the general test cases.
 | Select with Ctrl, Alt, and Shift keys. | No unexpected behaviors appear. |
 | Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
 | Resize your visual. | Visual reacts correctly to resizing. |
-| Set the report size to the minimum. | There are no display errors. |
+| Set the report size to the minimum. | There's no display errors. |
 | Ensure scroll bars work correctly. | Scroll bars should exist, if necessary. Check scroll bar sizes. Scroll bars shouldn't be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are needed for different sizes of the visual. |
-| Pin your visual to a **Dashboard**. | The visual should be displayed properly. |
-| Add multiple versions of your visual to a single report page. | All versions of the visual be displayed and operate properly. |
-| Add multiple versions of your visual to multiple report pages. | All versions of the visual be displayed and operate properly. |
-| Switch between report pages. | The visual displays correctly. |
+| Pin your visual to a **Dashboard**. | The visual displays properly. |
+| Add multiple versions of your visual to a single report page. | All versions of the visual display and operate properly. |
+| Add multiple versions of your visual to multiple report pages. | All versions of the visual display and operate properly. |
+| Switch between report pages. | The visual displays properly. |
 | Test Reading view and Edit view for your visual. | All functions work correctly. |
 | If your visual uses animations, add, change, and delete elements of your visual. | Animation of visual elements works correctly. |
 | Open the **Property** pane. Turn properties on and off, enter custom text, stress the options available, and input bad data. | The visual responds correctly. |
@@ -80,13 +80,13 @@ Verify that your visual passes the general test cases.
 | Test all numeric, date, and character data types, as in the following tests. | All data is formatted properly. |
 | Review formatting of tooltip values, axis labels, data labels, and other visual elements with formatting. | All elements are formatted correctly. |
 | Verify that data labels use the format string. | All data labels are formatted correctly. |
-| Switch automatic formatting on and off for numeric values in Tooltips. | Tooltips display values correctly. |
+| Switch automatic formatting on and off for numeric values in tooltips. | Tooltips display values correctly. |
 | Test data entries with different types of data, including numeric, text, date-time, and different format strings from the model. Test different data volumes, such as thousands of rows, one row, and two rows. | All displays and features work correctly. |
 | Provide bad data to your visual, such as null, infinity, negative values, and wrong value types. | All displays and features work correctly. |
 
 ## Optional browser testing
 
-The AppSource team validates visual on the most current Windows versions of Google Chrome, Microsoft Edge, and Mozilla Firefox browsers.
+The AppSource team validates a visual on the most current Windows versions of Google Chrome, Microsoft Edge, and Mozilla Firefox browsers.
 Optionally, test your visual in the following browsers.
 
 | Test case | Expected results
@@ -124,7 +124,7 @@ Your visual should perform at an acceptable level. Use developer tools to valida
 
 | Test case | Expected results
 | --------- | ----------------
-| Create a visual with many visual elements. | The visual should perform well and not freeze the application. There should be no performance issues with elements such as animation speed, resizing, filtering, and selecting.
+| Create a visual with many visual elements. | The visual performs well and doesn't freeze the application. There aren't any performance issues with elements such as animation speed, resizing, filtering, and selecting.
 
 ## Next steps
 
