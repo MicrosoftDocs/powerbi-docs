@@ -20,7 +20,7 @@ You can select multiple data points in a visual or multiple visuals in a report 
 
 ### Single-select highlighting
 
-In Power BI reports, you can highlight a data point in a given visual by selecting the data point in the visual. For example, if you have an important bar or chart element, and you want other visuals on the report page to highlight data based on your selection, you can select the data element in one visual and see results reflected in other visuals on the page. This is basic single-select highlighting. The following image shows a basic highlight.
+In Power BI reports, you can highlight a data point in a given visual by clicking the data point in the visual. For example, if you have an important bar or chart element, and you want other visuals on the report page to highlight data based on your selection, you can click the data element in one visual and see results reflected in other visuals on the page. This is basic single-select highlighting. The following image shows a basic highlight.
 
 ![Screenshot shows a single data point selected.](media/desktop-multi-select/multi-select_01.png)
 
@@ -50,7 +50,7 @@ You can select multiple data points within a visual using the same rectangular l
 
 #### Rectangular multi-select with the Ctrl key
 
-While holding down the Ctrl key, select and drag within a visual to select multiple data points. When you release the mouse button, all points overlapping the selection rectangle are selected, and any previous lasso selections are also preserved. If you lasso select an area that incorporates previously selected points using Ctrl while selecting, those data points are deselected (toggled off); using the lasso has the same effect as Ctrl + clicking each point individually.
+While holding down the Ctrl key, click and drag within a visual to select multiple data points. When you release the mouse button, all points overlapping the selection rectangle are selected, and any previous lasso selections are also preserved. If you lasso select an area that incorporates previously selected points using Ctrl while selecting, those data points are deselected (toggled off); using the lasso has the same effect as Ctrl + clicking each point individually.
 
 #### Rectangular multi-select with the Shift key
 
