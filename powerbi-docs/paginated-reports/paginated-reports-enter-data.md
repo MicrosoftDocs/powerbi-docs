@@ -1,5 +1,5 @@
 ---
-title: "Enter data directly in a paginated report in Report Builder"
+title: "Enter data directly into a paginated report in Report Builder"
 description: Learn how you can enter data directly into a paginated report as an embedded dataset in Report Builder. 
 author: maggiesMSFT
 ms.author: maggies
@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 01/17/2023
 ---
 
-# Enter data directly in a paginated report in Report Builder
+# Enter data directly into a paginated report in Report Builder
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-This article explains a feature in Microsoft Power BI Report Builder that lets you enter data directly into a paginated report as an embedded dataset. You can type the data directly in a dataset in your report, or paste it from another program like Microsoft Excel. After you create a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus, you can add more than one table and use one as a filter for the other. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
+This article explains a feature in Microsoft Power BI Report Builder that lets you enter data directly into a paginated report as an embedded dataset. You can type the data directly in a dataset in your report, or paste it from another program like Microsoft Excel. After you create a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus, you can add more than one table and then use one as a filter for the other. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
  
 ## Prerequisites
 
@@ -28,47 +28,47 @@ After you download and install Report Builder, follow the same workflow you use 
 
 1. In the **Report Data** pane, select **New** > **Dataset**.
 
-    ![Screenshot of Report Builder New Dataset.](media/paginated-reports-enter-data/paginated-new-dataset.png)
+    ![Screenshot of the Dataset option in the Report Data pane.](media/paginated-reports-enter-data/paginated-new-dataset.png)
 
 1. In the **Dataset Properties** dialog box, give your dataset a name. Don't include spaces. 
 
 2. Next to **Data source**, select **New**.
 
-    ![Screenshot of New embedded data source.](media/paginated-reports-enter-data/paginated-new-data-source.png)
+    ![Screenshot of the New embedded data source button.](media/paginated-reports-enter-data/paginated-new-data-source.png)
 
 1. In the **Select connection type** box, select **Enter Data** > **OK**.
 
-    ![Screenshot of Enter Data source.](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
+    ![Screenshot of the Enter Data option.](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
 
 1. Back in the **Dataset Properties** dialog box, select **Query Designer**.
 
-    ![Screenshot of select Query Designer.](media/paginated-reports-enter-data/paginated-select-query-designer.png)
+    ![Screenshot of the Query Designer button.](media/paginated-reports-enter-data/paginated-select-query-designer.png)
 
 2. In the **Query Designer** pane, right-click and paste your data in the table.
 
-    ![Screenshot of Enter data in the Query Designer.](media/paginated-reports-enter-data/paginated-enter-data.png)
+    ![Screenshot of the Paste option in the Query Designer.](media/paginated-reports-enter-data/paginated-enter-data.png)
 
 1. To set the column names, double-click each **NewColumn** and type the column name.
 
-    ![Screenshot of Set column names.](media/paginated-reports-enter-data/paginated-column-name.png)
+    ![Screenshot of the column name selection.](media/paginated-reports-enter-data/paginated-column-name.png)
 
 1. If the first row contains column headings from the original data, right-click and delete it.
     
 9. By default, the data type for each column is String. To change the data type, right-click the column header > **Change Type**, and set it to another data type, such as Date or Float.
 
-    ![Screenshot of Change data type.](media/paginated-reports-enter-data/paginated-data-type.png)
+    ![Screenshot of the Change data type options.](media/paginated-reports-enter-data/paginated-data-type.png)
 
 1. When you’ve finished creating the table, select **OK**.  
 
     The query that’s generated is the same as you’d see with an XML data source. Under the covers, we’re using XML as the data provider.  We’ve repurposed it to enable this scenario as well.
 
-    ![Screenshot of XML data structure.](media/paginated-reports-enter-data/paginated-xml-data.png)
+    ![Screenshot of the XML data structure.](media/paginated-reports-enter-data/paginated-xml-data.png)
 
 12. In the **Dataset Properties** dialog box, select **OK**.
 
 13. You see your data source and dataset in the **Report Data** pane.
 
-    ![Screenshot of Dataset in Report Data pane.](media/paginated-reports-enter-data/paginated-report-data-pane.png)
+    ![Screenshot of the Datasets in the Report Data pane.](media/paginated-reports-enter-data/paginated-report-data-pane.png)
 
 You can use your dataset as the basis for data visualizations in your report. You can also add another dataset and use the same data source for it.
 
@@ -121,7 +121,7 @@ To see the actual values and preview the report, you run it.
 
     Now you see how it looks on a printed page.
 
-    :::image type="content" source="media/paginated-reports-enter-data/paginated-print-layout.png" alt-text="Screenshot of report in print layout view.":::
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-print-layout.png" alt-text="Screenshot of the report in print layout view.":::
 
 ## Upload the paginated report to the Power BI service
 
