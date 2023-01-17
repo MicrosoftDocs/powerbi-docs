@@ -76,7 +76,7 @@ Finds cases where most of a total value can be attributed to a single factor whe
 
 This insight type uses a clustering model to find outliers in non-time series data. Outliers detect when there are specific categories with values significantly different than the other categories.
 
-![Screenshot of an outlier Insight Visual](./media/end-user-insight-types/power-bi-outliers.png)
+![Screenshot of an outlier Insight Visual.](./media/end-user-insight-types/power-bi-outliers.png)
 
 ### Overall trends in time series
 
