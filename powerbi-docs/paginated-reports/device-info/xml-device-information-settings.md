@@ -1,5 +1,5 @@
 ---
-title: "XML device information settings for Power BI paginated reports| Microsoft Docs"
+title: "XML device information settings for Power BI paginated reports"
 description: Learn details about the various device information settings you can use to render Power BI paginated reports in XML format.
 ms.date: 01/05/2023
 ms.service: powerbi

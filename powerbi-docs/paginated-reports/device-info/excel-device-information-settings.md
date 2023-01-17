@@ -1,5 +1,5 @@
 ---
-title: "Excel device information settings for Power BI paginated reports| Microsoft Docs"
+title: "Excel device information settings for Power BI paginated reports"
 description: Learn details about the various device information settings for rendering Power BI paginated reports in Microsoft Excel format.
 ms.date: 1/5/2023
 ms.service: powerbi

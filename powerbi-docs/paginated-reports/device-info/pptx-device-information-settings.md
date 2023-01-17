@@ -1,5 +1,5 @@
 ---
-title: "PPTX device information settings for Power BI paginated reports| Microsoft Docs"
+title: "PPTX device information settings for Power BI paginated reports"
 description: Learn details about the device information settings for rendering Power BI paginated reports in the PPTX format. 
 ms.date: 01/05/2023
 ms.service: powerbi
