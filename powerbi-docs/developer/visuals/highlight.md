@@ -1,5 +1,5 @@
 ---
-title: Highlighting in Power BI
+title: Highlight data points in Power BI
 description: Learn how to highlight data points on Power BI visuals with categorical and matrix data view mapping.
 author: mberdugo
 ms.author: monaberdugo
@@ -14,17 +14,17 @@ ms.date: 01/17/2023
 
 This article describes how to highlight data on Power BI visuals.
 
-By default, when an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to only show the selected values. When the `values` array is filtered, all other visuals on the page show only the selected data.
+By default, when an element is selected, the `values` array in the `dataView` [object](objects-properties.md) is filtered to only show the selected values. When the `values` array is filtered, all other visuals on the page only show the selected data.
 
-If you set the `supportsHighlight` property in your `capabilities.json` file to `true`, it results in the full unfiltered `values` array along with a `highlights` array. The `highlights` array is the same length as the values array, and any unselected values are set to `null`. With this property enabled, the visual highlights the appropriate data by comparing the `values` array to the `highlights` array.
+If you set the `supportsHighlight` property in your `capabilities.json` file to `true`, it results in the full unfiltered `values` array along with a `highlights` array. The `highlights` array is the same length as the values array, and any unselected values are set to `null`. With this property enabled, the appropriate data in the visual is highlighted by comparing the `values` array to the `highlights` array.
 
 ### [No highlight support](#tab/Standard)
 
-:::image type="content" source="media/highlight/dataview-support.png" alt-text="Screenshot of the default dataView behavior without highlighting.":::
+:::image type="content" source="media/highlight/dataview-support.png" alt-text="Screenshot of the default dataView behavior without highlighting. lightbox="media/highlight/dataview-support.png":::
 
 ### [Highlight support](#tab/Highlight)
 
-:::image type="content" source="media/highlight/highlight-support.png" alt-text="Screenshot of the dataView that supports highlighting.":::
+:::image type="content" source="media/highlight/highlight-support.png" alt-text="Screenshot of the dataView that supports highlighting." lightbox="media/highlight/highlight-support.png":::
 
 ---
 
@@ -76,7 +76,7 @@ For visuals with [categorical data view mapping](dataview-mappings.md#categorica
 }
 ```
 
-After removing unnecessary code, the default visual source code looks like the following example:
+After you remove unnecessary code, the default visual source code looks like the following example:
 
 ```typescript
 "use strict";
@@ -349,9 +349,9 @@ The sample data to create a hierarchy for matrix data view mapping:
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Create the default visual project, and apply the sample of `capabilities.json`.
+Create the default visual project, and apply the sample of the `capabilities.json` file.
 
-After removing the unnecessary code, the default visual source code looks like the following example:
+After you remove the unnecessary code, the default visual source code looks like the following example:
 
 ```typescript
 "use strict";
@@ -548,7 +548,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The main step of highlighting is to create an additional array of values.
+The main step of highlighting is to create another array of values.
 
 The object of terminal node has two properties for the values array, value and highlight:
 
@@ -643,11 +643,11 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The result is a visual with buttons and values `highlighted value/default value`.
+The result is a visual with buttons and values, like `highlighted value/default value`.
 
-![Screenshot of the visual with matrix data views mapping and highlight.](media/highlight/dev-matrix-visual-highlight-demo.gif)
+:::image type="content" source="media/highlight/dev-matrix-visual-highlight-demo.gif" alt-text="Animation selecting data points on the visual, with matrix data views mapping and highlight." lightbox="media/highlight/dev-matrix-visual-highlight-demo.gif":::
 
 ## Next steps
 
-* [Matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
-* [Add interactivity to visual using selections](selection-api.md)
+* [Matrix data mappings](dataview-mappings.md#matrix-data-mapping)
+* [Add interactivity into visual by Power BI visuals selections](selection-api.md)
