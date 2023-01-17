@@ -24,7 +24,7 @@ Use Q&A to explore your data using natural language capabilities and receive ans
 
 Q&A picks the best chart or graph based on the data displayed. Sometimes data is defined as a certain type or category, telling Q&A how to display it. For example, if data is defined as a date type, it's more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
 
-You can tell Q&A which visual to use by adding it to your question. But keep in mind that it isn't always be possible for Q&A to display the data using the visual type you requested. Q&A will prompt you with a list of workable visual types.
+You can tell Q&A which visual to use by adding it to your question. But keep in mind that it isn't always possible for Q&A to display the data using the visual type you requested. Q&A will prompt you with a list of workable visual types.
 
 ## Where can I use Q&A?
 
@@ -73,7 +73,7 @@ Choose **Settings** > **Dashboards**. Make sure there's a check mark next to **S
 
 ## Privacy
 
-Microsoft might use your questions to improve Power BI. For more informaion, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
+Microsoft might use your questions to improve Power BI. For more information, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
 
 ## Next steps
 
