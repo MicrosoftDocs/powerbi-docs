@@ -1,5 +1,5 @@
 ---
-title: "Report design tips in Power BI Report Builder"
+title: "Design tips for reports in Power BI Report Builder"
 description: Use the following tips to help design and control the appearance of your paginated reports in Power BI Report Builder. 
 author: maggiesMSFT
 ms.author: maggies
@@ -9,7 +9,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 ---
-# Report design tips in Power BI Report Builder
+# Design tips for reports in Power BI Report Builder
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
@@ -23,7 +23,7 @@ A well-designed report conveys information that leads to action. Identify the qu
   
 - If you plan to deliver the report in a specific export format, test the export format early in your design. Feature support varies based on the renderer that you choose.  
   
-- Build complex layouts in stages. You can use rectangles as containers to organize report items. You can build data regions directly on the design surface to maximize your working area. Then, as you complete each one, drag it to the rectangle container. By using rectangles as containers, you can position all their contents in one step. Rectangles also help control the way report items render on each page.  
+- Build complex layouts in stages. You can use rectangles as containers to organize report items. You can build data regions directly on the design surface to maximize your working area. Then, as you complete each one, drag it to the rectangle container. By using a rectangle as a container, you can position all its contents in one step. Rectangles also help control the way report items render on each page.  
   
 - To reduce clutter in a report, consider using conditional visibility for specific report items and let the user choose whether to show the items. You can set visibility based on a parameter or a text box toggle. You can add conditionally hidden text boxes to show interim expression results. When a report displays unexpected data, you can show these interim results to help debug expressions.  
   
@@ -33,9 +33,9 @@ For more information about things to consider as you design your report, see [Pl
   
 ##  <a name="NamingConventions"></a> Naming conventions for reports, data sources, and datasets  
   
-For data sources and datasets, use naming conventions that document the source of data.  
+For data sources and datasets, use naming conventions that document the source of the data.  
   
-- **Data sources.** If you don't want to use an actual server or database due to security reasons, use an alias that indicates the source of the data to the user.  
+- **Data sources.** If you don't want to name an actual server or database due to security reasons, use an alias that indicates the source of the data to the user.  
   
 - **Datasets.** Use a name that indicates which data source it's based on.  
   
@@ -43,14 +43,15 @@ For data sources and datasets, use naming conventions that document the source o
   
 As a first step, get all the data that you want to work with to appear in the **Report Data** pane. As you refine the questions that the report is designed to answer, think about how to limit the data in the report datasets to just what's needed.  
   
-- In general, only include the data that you want to display in a report. Use query variables in your dataset queries to enable the user to choose which data they want to see in the report. If you are creating shared datasets, provide filters based on report parameters to provide the same functionality.  
+- In general, only include the data that you want to display in a report. Use query variables in your dataset queries to let the user choose which data they want to see in the report. If you're creating shared datasets, provide filters based on report parameters to provide the same functionality.  
   
-- If you're an experienced query writer, understand that for intermediate amounts of data, you might want to group data in the report, and not in the query. If you do all your grouping in the query, then the report tends to be a presentation of the query result set. On the other hand, to display aggregated values for large amounts of data on a chart or matrix, there's no need to include detail data.  
+- If you're an experienced query writer, you might want to group data in the report, and not in the query, for intermediate amounts of data. If you do all your grouping in the query, then the report tends to be a presentation of the query result set. On the other hand, to display aggregated values for large amounts of data on a chart or matrix, there's no need to include detail data.  
   
-- Depending on your requirements, you can display names and locations of report data sources, dataset query command text, and parameter values in the report. The first question many new users have is about where the data comes from. To reduce clutter in the report, you can conditionally hide text boxes with this type of information and let users choose whether to see it. Try adding this information on the last page of report. Set the text box visibility based on a parameter that the user can change.  
+- Depending on your requirements, you can display names and locations of report data sources, dataset query command text, and parameter values in the report. Many new users wonder where the data comes from. To reduce clutter in the report, you can conditionally hide text boxes with this type of information and let users choose whether to see it. Try adding this information on the last page of report. Set the text box visibility based on a parameter that the user can change.  
   
 ##  <a name="DesignSurface"></a> Interact with the report design surface  
-The report design surface is not WYSIWIG. When you place report items on the design surface, their relative location affects the way that the items appear on the rendered report page. White space is preserved.  
+
+The report design surface isn't *WYSIWIG*. When you place report items on the design surface, their relative location affects the way that the items appear on the rendered report page. White space is preserved.  
   
 - Use snaplines and layout buttons to align and arrange items on the report design surface. For example, you can align the tops or edges of selected items, expand an item to match the size of another item, or adjust the spacing between items.  
   
@@ -62,7 +63,7 @@ The report design surface is not WYSIWIG. When you place report items on the des
   
     - **CTRL+SHIFT+Arrow keys**: Increase or decrease the size of the selected report item.  
   
-- To add an item to a rectangle, use the upper-left tip of the mouse to point to the initial location of the item in the rectangle container. Use keyboard shortcuts to help position selected objects. The rectangle automatically expands to accommodate the size of the contained items.  
+- To add an item to a rectangle, place the upper-left tip of the mouse pointer over the initial location of the item in the rectangle container. Use keyboard shortcuts to help position selected objects. The rectangle automatically expands to accommodate the size of the contained items.  
   
 - To add multiple items to a tablix cell, first add a rectangle, and then add the items.  
   
@@ -88,7 +89,7 @@ To help select the object that you want on the report design surface, use the ES
   
 ###  <a name="Parameters"></a> Work with parameters  
   
-- The primary purpose of report parameters is to filter data at the data source, and retrieve just what's needed for the purpose of the report.  
+- The primary purpose of report parameters is to filter data at the data source, and retrieve just what's needed in the report.  
   
 - For report parameters, find a balance between allowing interactivity and helping a user get the results they want. For example, you can set default values for a parameter to values that you know are popular.  
   
@@ -122,9 +123,9 @@ On the report design surface, report items grow to accommodate the contents from
   
     - Containers expand to accommodate the growth of child items. For a selected item, in the **Properties** pane, the *Parent* property identifies the container for the item. You can also use the **Document Outline** pane to see the containment hierarchy of report items.  
   
-    - The **Layout** toolbar provides multiple buttons to help align edges, centers, and spacing for report items. To enable the **Layout** toolbar, from the **View** menu, point to **Toolbars**, and then click **Layout**.  
+    - The **Layout** toolbar provides multiple buttons to help align edges, centers, and spacing for report items. To enable the **Layout** toolbar, from the **View** menu, point to **Toolbars**, and then select **Layout**.  
   
-If you plan to save the report as a .pdf file, the report width must be explicitly set to a value that gives you the results that you want in the export file format. For example, set the report page width to exactly 7.9375 inches and the left and right margins to .5 inches.  
+If you plan to save the report as a .pdf file, the report width must be explicitly set to a value that gives you the results that you want in the export file format. For example, set the report page width to exactly 7.9375 inches and the left and right margins to 0.5 inches.  
   
 Use **Print Layout** and **Page Setup** on the report viewer toolbar to render a report in a print-compatible view. To help remove unnecessary blank pages, do the following:  
   
@@ -136,7 +137,7 @@ Use **Print Layout** and **Page Setup** on the report viewer toolbar to render a
   
 4. In column headers, change the text box property *WritingMode* to use vertical text.  
 
-For more guidance, see [Avoid blank pages when printing paginated reports](../guidance/report-paginated-blank-page.md).
+For more information, see [Avoid blank pages when printing paginated reports](../guidance/report-paginated-blank-page.md).
 
 The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support all combine to determine what report items fit together on a rendered page.
  
