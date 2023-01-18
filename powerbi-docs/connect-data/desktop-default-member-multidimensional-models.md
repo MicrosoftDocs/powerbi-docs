@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 
 You can connect to multidimensional models in Power BI, and create reports that visualize all sorts of data within the model. With multidimensional models, Power BI applies rules to how it processes data, based on which column is defined as the *default member*.
 
-With multidimensional models, Power BI handles data from the model based on where the column that contains the **DefaultMember** is used. The `DefaultMember` attribute is set in CSDL (Conceptual Schema Definition Language) for a particular column in a multidimensional model. For more information about the default member, see [Attribute properties - Define a default member](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member). When a data analysis expression (DAX) query is executed, the default member specified in the model is applied automatically.
+With multidimensional models, Power BI handles data from the model based on where the column that contains the **Default Member** is used. The **DefaultMember** property value for an attribute hierarchy is set in CSDL (Conceptual Schema Definition Language) for a particular column in a multidimensional model. For more information about the default member, see [Attribute properties - Define a default member](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member). When a data analysis expression (DAX) query is executed, the default member specified in the model is applied automatically.
 
 This article describes how Power BI behaves under various circumstances when working with multidimensional models, based on where the default member is found.
 
@@ -54,7 +54,7 @@ Now let's examine what happens when each column is used in Power BI. When visual
 
 * **City** - Power BI displays all the cities by clearing all the default members for *City*, *State*, *Country/Region* but preserves the default member for *Population*; Power BI cleared the entire ARP for *City*.
     > [!NOTE]
-    > *Population* is not in the ARP path of *City*, it is solely related to *State* and thus Power BI doesn't clear it.
+    > *Population* isn't in the ARP path of *City*, it's solely related to *State* and thus Power BI doesn't clear it.
 * **State** - Power BI displays all the *States* by clearing all default members for *City*, *State*, *Country/Region* and *Population*.
 * **Country/Region** - Power BI displays all the countries/regions by clearing all default members for *City*, *State* and *Country/Region*, but preserves the default member for *Population*.
 * **City and State** - Power BI clears all default members for all columns.
@@ -64,7 +64,7 @@ Groups displayed in the visual have their entire ARP path cleared.
 If a group isn't displayed in the visual, but is part of the ARP path of another grouped-on column, the following applies:
 
 * Not all branches of the ARP path are cleared automatically.
-* That group is still filtered by that uncleared **default member**.
+* That group is still filtered by that uncleared default member.
 
 ### Slicers and filter cards
 
@@ -85,12 +85,12 @@ Power BI clears a default member for a specified column, if:
 * Power BI groups on that column.
 * Power BI groups on a column related to that column (anywhere in the ARP, up or down).
 * Power BI filters on a column that's in the ARP (up or down).
-* The column has a filter card with *ALL* state.
+* The column has a filter card with *ALL* stated.
 * The column has a filter card with any value selected (Power BI receives a filter for the column).
 
 Power BI doesn't clear a default member for a specified column, if:
 
-* The column has a filter card with default state, and Power BI is groupings on a column in its ARP.
+* The column has a filter card with default stated, and Power BI is grouping on a column in its ARP.
 * The column is above another column in the ARP, and Power BI has a filter card for that other column in default state.
 
 ## Next steps
