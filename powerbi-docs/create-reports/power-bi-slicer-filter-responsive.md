@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 01/17/2023
 LocalizationGroup: Create reports
 ---
 # Create a responsive slicer you can resize in Power BI
@@ -31,9 +31,9 @@ The first step to creating a dynamic slicer is to create a basic slicer.
 
 1. With the slicer selected, in the **Visualizations** pane, select the **Format** tab.
 
-2. Expand the **Slicer settings** section, then for **Orientation**, select **Horizontal**.
+2. Expand the **Slicer settings** section, then for **Style**, select **Tile**.
 
-    ![Screenshot shows setting the slicer to horizontal in Power BI Desktop.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-2-horizontal.png)
+    ![Screenshot shows setting the slicer style to Tile in Power BI Desktop.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-tile.png)
 
 You'll probably want to make it wider, to show more values.
 
