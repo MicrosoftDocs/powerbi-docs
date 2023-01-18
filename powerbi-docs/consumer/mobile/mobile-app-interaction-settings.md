@@ -14,7 +14,7 @@ ms.date: 01/17/2023
 
 ## Overview
 
-The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave. The table below shows the interaction settings that are currently available and the devices which have them.
+The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave. The following table shows the interaction settings that are currently available and the devices which have them.
 
 | Setting | Android phone | iPhone | Android tablet  | iPad |
 |---------|:-:|:-:|:-:|:-:|
@@ -54,19 +54,19 @@ On Android phones the docked report footer setting is **on** by default, meaning
 
 ### Report refresh
 
-The report refresh setting defines how you initiate report refreshes. You can choose either to have a refresh button on all report headers, or to use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report. The figure below illustrates the two alternatives.
+The report refresh setting defines how you initiate report refreshes. You can choose either to have a refresh button on all report headers, or to use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report. The following figure illustrates the two options.
 
 :::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-refresh-button-versus-pull.png" alt-text="Screenshot showing Refresh button versus pull-to-refresh method.":::
 
-On Android phones a refresh button is added by default.
+On Android phones, a refresh button is added by default.
 
-To change the report refresh setting, go to the report refresh item in the interaction settings. The current setting is shown. Tap the value to open a pop-up where you can choose a new value.
+To change the report refresh setting, go to the report refresh item in the interaction settings. The current setting is shown. Tap the value to open a pop-up window where you can choose a new value.
 
 :::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh02.png" alt-text="Screenshot showing how to change the report refresh setting.":::
 
 ## Remote configuration
 
-Interactions can also be configured remotely by an administrator using an MDM tool with an app configuration file. In this way it is possible to standardize the report interaction experience across the organization or for specific groups of users in the organization. See [Configure interaction using mobile device management](./mobile-app-configuration.md) for detail.
+Interactions can also be configured remotely by an administrator using an MDM tool with an app configuration file. In this way it is possible to standardize the report interaction experience across the organization or for specific groups of users in the organization. For more information, see [Configure interaction using mobile device management](./mobile-app-configuration.md).
 
 ## Next steps
 
