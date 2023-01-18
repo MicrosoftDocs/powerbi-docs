@@ -15,15 +15,7 @@ LocalizationGroup: Premium
 
 This article details how you can test the [Power BI Dataset Scale-Out](service-premium-scale-out.md) feature after it's enabled.
 
-1. [Step 1 - Create a Scale-Out query](#step-1---create-a-scale-out-query)
-
-2. [Step 2 - Create a time column](#step-2---create-a-time-column)
-
-3. [Step 3 - Connect to the read/write dataset copy](#step-3---connect-to-the-readwrite-dataset-copy-optional) (optional)
-
-4. [Step 4 - Validate the read/write connection](#step-4---validate-the-readwrite-connection-optional) (optional)
-
-### Step 1 - Create a Scale-Out query
+## Step 1 - Create a Scale-Out query
 
 1. Open Power BI Desktop and sign into your account.
 
@@ -59,7 +51,7 @@ This article details how you can test the [Power BI Dataset Scale-Out](service-p
 
     :::image type="content" source="media/service-premium-scale-out-test/close-and-apply.png" alt-text="A screenshot showing the close and apply button in the power query editor in Power B I Desktop.":::
 
-### Step 2 - Create a time column
+## Step 2 - Create a time column
 
 1. In Power BI Desktop select **Data**.
 
@@ -89,7 +81,7 @@ This article details how you can test the [Power BI Dataset Scale-Out](service-p
 
     :::image type="content" source="media/service-premium-scale-out-test/publish.png" alt-text="A screenshot showing the publish to Power B I pop up window in the Power B I Desktop.":::
 
-### Step 3 - Connect to the read/write dataset copy (optional)
+## Step 3 - Connect to the read/write dataset copy (optional)
 
 By default, Power BI Desktop connects to the *read-only* dataset copy. To connect to the *read/wrtie* replica, follow these steps:
 
@@ -103,7 +95,7 @@ By default, Power BI Desktop connects to the *read-only* dataset copy. To connec
 
     :::image type="content" source="media/service-premium-scale-out-test/evaluate-query.png" alt-text="A screenshot showing the evaluate query 1 D A X query in S Q L Server Management Studio.":::
 
-### Step 4 - Validate the read/write connection (optional)
+## Step 4 - Validate the read/write connection (optional)
 
 If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optional), you're connected to the *read/write* dataset copy. You can validate this connection by following these steps:
 

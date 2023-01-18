@@ -1,6 +1,6 @@
 ---
 title: Sync a read-only dataset scale-out replica
-description: Learn how sync a Power BI read only dataset when using the Power BI Dataset Scale-Out feature
+description: Learn how to sync a Power BI read only dataset when using the Power BI Dataset Scale-Out feature
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''

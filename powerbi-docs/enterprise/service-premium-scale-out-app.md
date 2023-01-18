@@ -17,12 +17,6 @@ After enabling [Power BI Dataset Scale-Out](service-premium-auto-scale.md), you 
 
 This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Dataset Scale-Out is enabled.
 
-* [App 1 - Check the database object properties](#app-1---check-the-database-object-properties)
-
-* [App 2 - Compare the dataset's metadata](#app-2---compare-the-datasets-metadata)
-
-* [App 3 - Query the dataset data](#app-3---query-the-dataset-data)
-
 ## App 1 - Check the database object properties
 
 Use the code below to build an app that checks the [LastUpdate](/analysis-services/assl/properties/lastupdate-element-assl), [LastProcessed](/analysis-services/assl/properties/lastprocessed-element-assl) and [LastSchemaUpdate](/analysis-services/assl/properties/lastschemaupdate-element-assl) properties of your datasets. Before the app performs the checks, it needs to call the `Refresh()` method, to get the replica's metadata.
