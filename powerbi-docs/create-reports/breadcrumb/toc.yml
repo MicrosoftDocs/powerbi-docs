@@ -27,3 +27,17 @@
       - name: Create reports and dashboards
         tocHref: /power-bi/create-reports/
         topicHref: /sql/reporting-services/report-builder/index
+  - name: Power Platform
+    href: /
+    topicHref: /power-platform/
+    items:
+    - name: Power BI
+      tocHref: /power-bi/
+      topicHref: /power-bi/index
+      items:
+      - name: Create reports and dashboards
+        tocHref: /power-bi/guidance/
+        topicHref: /power-bi/create-reports/index
+      - name: Create reports and dashboards
+        tocHref: /power-bi/enterprise/
+        topicHref: /power-bi/create-reports/index

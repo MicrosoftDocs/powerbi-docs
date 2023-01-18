@@ -1,7 +1,7 @@
 ---
 title: Monitor report performance in Power BI
 description: Guidance on how to monitor report performance in Power BI.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton

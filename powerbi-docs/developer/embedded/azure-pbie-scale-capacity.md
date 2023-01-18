@@ -71,12 +71,12 @@ Use one of the autoscaling techniques described here to elastically resize your 
    When these metrics reach the value specified in the Azure Monitor Alert rules, the rule will trigger an upscale or downscale runbook script.
 
    For example, you can create a rule that if Overload = 1 or if CPU = 95%, then the upscale capacity runbook script will be invoked to update the capacity to a higher SKU.  
-   You can also create a rule that if the CPU drops below 50%, a down-scale runbook script will be invoked to update the capacity toa lower CPU.  
+   You can also create a rule that if the CPU drops below 50%, a down-scale runbook script will be invoked to update the capacity to a lower CPU.  
    Use the Power BI Embedded [sample script](monitor-power-bi-embedded-reference.md#example-script-for-scaling-a-capacity) as a reference for scaling a capacity.
 
 ## Considerations and limitations
 
-Scaling gen1 capacities can take about a minute. During this time, the capacity won't be available and embedded content may fail to load. With [Embedded Gen2](power-bi-embedded-generation-2.md) capacities, you can scale your Power BI Embedded resource without experiencing any downtime.
+Scaling capacities may involve a small amount of downtime.
 
 ## Next steps
 

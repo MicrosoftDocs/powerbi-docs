@@ -87,16 +87,13 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. For more information about this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
-    >[!NOTE]
-    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports](../../enterprise/service-premium-gen2-what-is.md#paginated-reports).
-
 The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
 | Capacity Nodes | V-cores | RAM (GB) |
 | --- | --- | --- |
-| EM1/A1 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 |  2.5 |
-| EM2/A2 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 |  5   |
-| EM3/A3 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 10   |
+| EM1/A1 | 1 |  2.5 |
+| EM2/A2 | 2 |  5   |
+| EM3/A3 | 4 | 10   |
 | P1/A4 |  8 |  25 |
 | P2/A5 | 16 |  50 |
 | P3/A6 | 32 | 100 |

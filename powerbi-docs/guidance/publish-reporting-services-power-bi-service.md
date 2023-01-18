@@ -1,32 +1,43 @@
 ---
-title: "Publish .rdl files to Power BI from Reporting Services | Microsoft Docs"
+title: "Publish .rdl files to Power BI from Power BI Report Server and Reporting Services"
 description: "This article provides step-by-step instructions for migrating .rdl files, or *paginated reports*, from SQL Server Reporting Services to the Power BI service."
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 11/04/2022
+ms.reviewer: cookiemccray
+ms.date: 1/12/2023
 ms.custom:
 ---
 
-# Publish .rdl files to Power BI from Reporting Services
+# Publish .rdl files to Power BI from Power BI Report Server and Reporting Services
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] ✔️&nbsp;SQLServer&nbsp;2022&nbsp;Reporting&nbsp;Services
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
  
-Do you have Report Definition Language (.rdl) paginated reports in SQL Server 2022 Reporting Services (SSRS), and you want to migrate them to the Power BI service? This article provides step-by-step instructions for migrating .rdl files, or *paginated reports*, from SQL Server 2022 Reporting Services to the Power BI service. 
+Do you have Report Definition Language (.rdl) paginated reports in Power BI Report Server or SQL Server 2022 Reporting Services (SSRS) that you want to migrate to the Power BI service? This article provides step-by-step instructions for migrating .rdl files *and Power BI reports (.pbix files)* from Power BI Report Server and SQL Server 2022 Reporting Services to the Power BI service.
+
+:::image type="content" source="media/publish-reporting-services-power-bi-service/report-server-publish-migrate.png" alt-text="Screenshot showing Power BI Report Server Migration option.":::
 
 > [!NOTE]
 > If you're using a previous version of Reporting Services, continue to use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) for now.
 
-You can migrate reports without downtime to your SQL Server Reporting Services servers or disruption to your report users. It's important to understand that you don't need to remove any data or reports. You can keep your current environment in place until you're ready for it to be retired.
+You can migrate reports without downtime to your report servers or disruption to your report users. It's important to understand that you don't need to remove any data or reports. You can keep your current environment in place until you're ready for it to be retired.
 
 ## Prerequisites 
 
-You can publish and share paginated reports in your My Workspace or in other workspaces, as long as you can meet these prerequisites: 
+### My Workspace
+
+You can publish and share paginated reports to your My Workspace with a Power BI free license.
+
+### Other workspaces
+
+To publish to other workspaces, you need to meet these prerequisites: 
 
 - You have a Power BI Pro or Premium Per User license.
 - You have write access to the workspace.
+
+Read more about [Power BI licenses](../consumer/end-user-license.md).
 
 ## Supported versions 
 
@@ -42,16 +53,9 @@ You can only migrate .rdl reports from your SSRS servers to Power BI. Each migra
 
 You can publish individual .rdl reports or the contents of entire folders from the SSRS web portal to the Power BI service. Read on to learn how to publish .rdl reports to Power BI.
 
-## Step 1: Set site properties 
+## Step 1: Browse to reports 
 
-The first step to publishing .rdl files to the Power BI service is to set system properties on the report server. Read more about them in the SQL Server Reporting Services article, [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services).
-
-- EnablePowerBIReportMigrate and 
-- PowerBIMigrateUrl
-
-:::image type="content" source="media/publish-reporting-services-power-bi-service/ssrs-system-settings.png" alt-text="Screenshot showing site properties.":::
-
-## Step 2: Browse to reports 
+# [SQL Server Reporting Services](#tab/reporting-services)
 
 Select **Publish** to find the .rdl files you want to publish from SSRS to the Power BI service. 
 
@@ -60,17 +64,24 @@ Select **Publish** to find the .rdl files you want to publish from SSRS to the P
 - Select **Publish all reports** to select all the .rdl files in the current folder and start the migration. 
 - Select **Select reports to publish** to open a list view of all .rdl files in the current folder. Select the reports and folders you want to migrate.
 
+# [Power BI Report Server](#tab/powerbi-report-server)
+
+Select **Publish** to find the .rdl files you want to publish from Power BI Report Server to the Power BI service.
+
+:::image type="content" source="media/publish-reporting-services-power-bi-service/report-server-publish-migrate.png" alt-text="Screenshot showing Migrate options in the report server.":::
+
+- Select **Publish all reports** to select all the .rdl files in the current folder and start the migration.
+- Select **Select reports to publish** to open a list view of all .rdl files in the current folder. You select which of the reports and folders you want to migrate.
+
+---
+
 You can also publish individual articles.
 
-- On the **More info** menu next to an .rdl report, select **Publish**. 
+- On the **More info** menu next to an .rdl report, select **Publish**.
 
-    :::image type="content" source="media/publish-reporting-services-power-bi-service/rdl-more-info-publish-power-bi.png" alt-text="Screenshot showing More info > Publish.":::
+    :::image type="content" source="media/publish-reporting-services-power-bi-service/power-bi-report-server-individual-publish.png" alt-text="Screenshot showing More options to Publish.":::
 
-## Step 2b: Select reports 
-
-If you chose **Select reports to publish**, the next step is to **Select reports to publish to Power BI**. 
-
-:::image type="content" source="media/publish-reporting-services-power-bi-service/rdl-select-reports-publish.png" alt-text="Screenshot showing Select reports to publish to Power BI.":::
+## Step 1b: Select reports 
 
 Items that you can migrate now: 
 
@@ -78,34 +89,82 @@ Items that you can migrate now:
 - Linked reports (.rdl files) 
 - Folders (all .rdl reports from the folder are migrated) 
 
-## Step 3: Sign in/Sign up 
+# [SQL Server Reporting Services](#tab/reporting-services)
+
+If you chose **Select reports to publish**, the next step is to **Select reports to publish to Power BI**. 
+
+:::image type="content" source="media/publish-reporting-services-power-bi-service/rdl-select-reports-publish.png" alt-text="Screenshot showing Select reports to publish to Power BI.":::
+
+# [Power BI Report Server](#tab/powerbi-report-server)
+
+If you chose **Select reports to publish**, the next step is to **Select reports to publish to Power BI**.
+
+:::image type="content" source="media/publish-reporting-services-power-bi-service/power-bi-report-server-select-reports.png" alt-text="Screenshot showing selecting reports to publish.":::
+
+---
+
+## Step 2: Sign in/Sign up 
+
+# [SQL Server Reporting Services](#tab/reporting-services)
 
 After you've selected the reports you want to publish, it's time to **Sign in** to the Power BI service.
 
 :::image type="content" source="media/publish-reporting-services-power-bi-service/rdl-sign-in-power-bi.png" alt-text="Screenshot showing Sign in to Power BI.":::
  
-## Step 4: Choose a workspace 
+# [Power BI Report Server](#tab/powerbi-report-server)
 
-Next select the dropdown arrow to find and **Select a workspace**. 
+After you've selected the reports you want to publish, it's time to **Sign in** to the Power BI service.
+
+:::image type="content" source="media/publish-reporting-services-power-bi-service/power-bi-report-server-sign-in.png" alt-text="Screenshot showing signing in to the Power B I service."::: 
+
+--- 
+
+## Step 3: Choose a workspace 
+
+# [SQL Server Reporting Services](#tab/reporting-services)
+
+Now that you're signed in, select the dropdown arrow to find and **Select a workspace**. 
 
 :::image type="content" source="media/publish-reporting-services-power-bi-service/rdl-select-workspace.png" alt-text="Screenshot showing selecting a workspace.":::
 
-## Step 5: View reports 
+# [Power BI Report Server](#tab/powerbi-report-server)
 
-In the Power BI service, navigate to the workspace where you saved the reports. 
+Now that you're signed in, select the dropdown arrow to find and **Select a workspace**.
 
-:::image type="content" source="media/publish-reporting-services-power-bi-service/paginated-reports-power-bi.png" alt-text="Screenshot showing paginated reports in a workspace.":::
+:::image type="content" source="media/publish-reporting-services-power-bi-service/power-bi-report-server-select-workspace.png" alt-text="Screenshot showing selecting a workspace in the Power B I service.":::
+
+---
+
+## Step 4: View reports 
+
+In the Power BI service, navigate to the workspace where you saved the reports.
+
+:::image type="content" source="media/publish-reporting-services-power-bi-service/paginated-reports-power-bi-service.png" alt-text="Screenshot showing paginated reports in Power B I service.":::
 
 Select a report to view it in the Power BI service.
 
+## Site properties 
+
+If you'd like to disable the migration setting, you need to update your report server. For more information on server properties, see the article [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services):
+
+- EnablePowerBIReportMigrate
+- PowerBIMigrateCountLimit
+- PowerBIMigrateUrl 
+ 
+For sovereign clouds, you can update the Power BI endpoints by changing the site settings in the web portal.  
+
 ## Limitations and considerations
+
+You can migrate .rdl reports from your report servers to the Power BI service. Each migrated .rdl report becomes a Power BI paginated report.
+
+### Converted report features
+
+Shared data sources and datasets aren't yet supported in the Power BI service. When you migrate .rdl reports, the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared datasets and data sources to embedded datasets and data sources, provided they're using supported datasets and data sources.
 
 ### Unsupported item types
 
-You can only migrate .rdl reports from your SSRS servers to the Power BI service. Each migrated .rdl report becomes a Power BI paginated report. You can't migrate the following item types to the Power BI service: 
+You can't migrate the following item types to the Power BI service: 
 
-- Shared data sources 
-- Shared datasets 
 - Resources such as image files 
 - KPIs 
 - Mobile reports (discontinued) 
@@ -114,14 +173,10 @@ You can only migrate .rdl reports from your SSRS servers to the Power BI service
 
 ### Unsupported report features
 
-Some paginated report features in SSRS aren't yet supported in the Power BI service. Paginated reports don't support the following items: 
+Some paginated report features in SSRS aren't yet supported in the Power BI service. Paginated reports don't support the following features: 
 
-- Shared data sources<sup>1</sup>
-- Shared datasets<sup>1</sup>
 - Drill through and click-through to other reports 
 - Custom fonts 
-
-<sup>1</sup> The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) does automatically convert shared datasets and data sources, provided they're using supported datasets and data sources.
 
 You get an error message if you try to upload a file with features that are unsupported in the Power BI service.  
 

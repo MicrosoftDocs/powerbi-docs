@@ -9,109 +9,110 @@
       href: overview.md     
     - name: "Optimization guide for Power BI"
       href: power-bi-optimization.md  
-  - name: Concepts
-    expanded: true
+  - name: Transform and shape data
     items: 
-    - name: Transform and shape data
-      items: 
-      - name: "The importance of query folding"
-        href: power-query-folding.md
-      - name: "Referencing Power Query queries"
-        href: power-query-referenced-queries.md
-      - name: "Disable Power Query background refresh"
-        href: power-query-background-refresh.md 
-      - name: "Best practices for dataflows"
-        href: ../transform-model/dataflows/dataflows-introduction-self-service.md
-    - name: Data modeling    
-      items:
-      - name: "What is a star schema?"
-        href: star-schema.md
-      - name: "Reduce data model size"
-        href: import-modeling-data-reduction.md
-      - name: "Create date tables"
-        href: model-date-tables.md
-      - name: "Auto date/time guidance"
-        href: auto-date-time.md
-      - name: "One-to-one relationships"
-        href: relationships-one-to-one.md
-      - name: "Many-to-many relationships"
-        href: relationships-many-to-many.md 
-      - name: "Active vs inactive relationships"
-        href: relationships-active-inactive.md
-      - name: "Bi-directional relationships"
-        href: relationships-bidirectional-filtering.md
-      - name: "Relationship troubleshooting"
-        href: relationships-troubleshoot.md
-      - name: "DirectQuery model guidance"
-        href: directquery-model-guidance.md  
-      - name: "Composite model guidance"
-        href: composite-model-guidance.md   
-      - name: "Row-level security (RLS) guidance"
-        href: rls-guidance.md
-      - name: "Power Platform modeling guidance"
-        href: powerbi-modeling-guidance-for-power-platform.md
-      - name: "Migrate AAS models to Power BI Premium"
-        href: migrate-azure-analysis-services-to-powerbi-premium.md
-      - name: "Migrate AAS models to Power BI Premium scenarios"
-        href: migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md
-    - name: DAX
-      items:
-      - name: "Appropriate use of error functions"
-        href: /dax/best-practices/dax-error-functions
-      - name: "Avoid converting BLANKs to values"
-        href: /dax/best-practices/dax-avoid-converting-blank
-      - name: "Avoid using FILTER as a filter argument"
-        href: /dax/best-practices/dax-avoid-avoid-filter-as-filter-argument
-      - name: "Column and measure references"
-        href: /dax/best-practices/dax-column-measure-references
-      - name: "DIVIDE function vs divide operator (/)"
-        href: /dax/best-practices/dax-divide-function-operator
-      - name: "Use COUNTROWS instead of COUNT"
-        href: /dax/best-practices/dax-countrows
-      - name: "Use SELECTEDVALUE instead of VALUES"
-        href: /dax/best-practices/dax-selectedvalue
-      - name: "Use variables to improve formulas"
-        href: /dax/best-practices/dax-variables
-      - name: "Sample model"
-        href: /dax/dax-sample-model
-    - name: Power BI reports
-      items:
-      - name: "Separate reports from models"
-        href: report-separate-from-model.md
-      - name: "Extend visuals with report page tooltips"
-        href: report-page-tooltips.md
-      - name: "Use report page drillthrough"
-        href: report-drillthrough.md
-    - name: Power BI paginated reports
-      items:
-      - name: "When to use paginated reports"
-        href: report-paginated-or-power-bi.md
-      - name: "Data retrieval guidance"
-        href: report-paginated-data-retrieval.md
-      - name: "Image use guidance"
-        href: report-paginated-image.md
-      - name: "Use cascading parameters"
-        href: paginated-report-cascading-parameter.md
-      - name: "Avoid blank pages when printing"
-        href: report-paginated-blank-page.md
-      - name: "Migrate SSRS reports to Power BI"
-        href: migrate-ssrs-reports-to-power-bi.md
-    - name: Development
-      items:
-      - name: "Develop scalable multitenancy applications"
-        href: develop-scalable-multitenancy-apps-with-powerbi-embedding.md 
-    - name: Admin and deployment
-      items:
-      - name: "On-premises data gateway sizing"
-        href: gateway-onprem-sizing.md 
-      - name: "Monitor report performance"
-        href: monitor-report-performance.md 
-      - name: "Troubleshoot report performance"
-        href: report-performance-troubleshoot.md
-      - name: "Deployment pipelines best practices"
-        href: ../create-reports/deployment-pipelines-best-practices.md
-      - name: "Access the Power BI activity log"
-        href: admin-activity-log.md
+    - name: "The importance of query folding"
+      href: power-query-folding.md
+    - name: "Referencing Power Query queries"
+      href: power-query-referenced-queries.md
+    - name: "Disable Power Query background refresh"
+      href: power-query-background-refresh.md 
+    - name: "Best practices for dataflows"
+      href: ../transform-model/dataflows/dataflows-introduction-self-service.md
+  - name: Data modeling    
+    items:
+    - name: "What is a star schema?"
+      href: star-schema.md
+    - name: "Reduce data model size"
+      href: import-modeling-data-reduction.md
+    - name: "Create date tables"
+      href: model-date-tables.md
+    - name: "Auto date/time guidance"
+      href: auto-date-time.md
+    - name: "One-to-one relationships"
+      href: relationships-one-to-one.md
+    - name: "Many-to-many relationships"
+      href: relationships-many-to-many.md 
+    - name: "Active vs inactive relationships"
+      href: relationships-active-inactive.md
+    - name: "Bi-directional relationships"
+      href: relationships-bidirectional-filtering.md
+    - name: "Relationship troubleshooting"
+      href: relationships-troubleshoot.md
+    - name: "DirectQuery model guidance"
+      href: directquery-model-guidance.md  
+    - name: "Composite model guidance"
+      href: composite-model-guidance.md   
+    - name: "Row-level security (RLS) guidance"
+      href: rls-guidance.md
+    - name: "Power Platform modeling guidance"
+      href: powerbi-modeling-guidance-for-power-platform.md
+    - name: "Migrate AAS models to Power BI Premium"
+      href: migrate-azure-analysis-services-to-powerbi-premium.md
+    - name: "Migrate AAS models to Power BI Premium scenarios"
+      href: migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md
+  - name: DAX
+    items:
+    - name: "Appropriate use of error functions"
+      href: /dax/best-practices/dax-error-functions
+    - name: "Avoid converting BLANKs to values"
+      href: /dax/best-practices/dax-avoid-converting-blank
+    - name: "Avoid using FILTER as a filter argument"
+      href: /dax/best-practices/dax-avoid-avoid-filter-as-filter-argument
+    - name: "Column and measure references"
+      href: /dax/best-practices/dax-column-measure-references
+    - name: "DIVIDE function vs divide operator (/)"
+      href: /dax/best-practices/dax-divide-function-operator
+    - name: "Use COUNTROWS instead of COUNT"
+      href: /dax/best-practices/dax-countrows
+    - name: "Use SELECTEDVALUE instead of VALUES"
+      href: /dax/best-practices/dax-selectedvalue
+    - name: "Use variables to improve formulas"
+      href: /dax/best-practices/dax-variables
+    - name: "Sample model"
+      href: /dax/dax-sample-model
+  - name: Power BI reports
+    items:
+    - name: "Separate reports from models"
+      href: report-separate-from-model.md
+    - name: "Extend visuals with report page tooltips"
+      href: report-page-tooltips.md
+    - name: "Use report page drillthrough"
+      href: report-drillthrough.md
+  - name: Power BI paginated reports
+    items:
+    - name: "When to use paginated reports"
+      href: report-paginated-or-power-bi.md
+    - name: "Data retrieval guidance"
+      href: report-paginated-data-retrieval.md
+    - name: "Image use guidance"
+      href: report-paginated-image.md
+    - name: "Use cascading parameters"
+      href: paginated-report-cascading-parameter.md
+    - name: "Avoid blank pages when printing"
+      href: report-paginated-blank-page.md
+    - name: "Migrate .rdl reports to Power BI"
+      href: migrate-ssrs-reports-to-power-bi.md
+    - name: "Publish .rdl files to Power BI"
+      href: publish-reporting-services-power-bi-service.md
+    - name: "Retire unused .rdl files"
+      href: retire-unused-reports-ssrs.md
+  - name: Development
+    items:
+    - name: "Develop scalable multitenancy applications"
+      href: develop-scalable-multitenancy-apps-with-powerbi-embedding.md 
+  - name: Admin and deployment
+    items:
+    - name: "On-premises data gateway sizing"
+      href: gateway-onprem-sizing.md 
+    - name: "Monitor report performance"
+      href: monitor-report-performance.md 
+    - name: "Troubleshoot report performance"
+      href: report-performance-troubleshoot.md
+    - name: "Deployment pipelines best practices"
+      href: ../create-reports/deployment-pipelines-best-practices.md
+    - name: "Access the Power BI activity log"
+      href: admin-activity-log.md
   - name: Migrate to Power BI
     items: 
       - name: "Migration overview"
@@ -192,6 +193,8 @@
           href: powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md
         - name: "Embed for your organization"
           href: powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md
+        - name: "Embed for your customers"
+          href: powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
       - name: "Tenant setup"

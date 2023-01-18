@@ -12,7 +12,7 @@ ms.custom: intro-overview
 
 # What is Power BI embedded analytics?
 
-**APPLIES TO:** ✔️&nbsp;App&nbsp;owns&nbsp;data ✔️&nbsp;User&nbsp;owns&nbsp;data
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 Power BI embedded analytics allows you to embed your Power BI items such as reports, dashboards and tiles, in a web application or in a website. You can:
 
@@ -79,7 +79,6 @@ For more information about the differences between the Embedded and Premium SKUs
 
 ## Next steps
 
-* [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
 * [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)

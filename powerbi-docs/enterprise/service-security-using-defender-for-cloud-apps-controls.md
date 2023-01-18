@@ -144,3 +144,4 @@ You might also be interested in the following Azure and security articles:
 * [Session policies](/defender-cloud-apps/session-policy-aad)
 * [Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 * [Data protection metrics report](service-security-data-protection-metrics-report.md)
+* [Power BI implementation planning: Defender for Cloud Apps for Power BI](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls)

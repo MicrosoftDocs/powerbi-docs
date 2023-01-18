@@ -14,7 +14,7 @@ ms.custom: known-issue-178
 In some cases, multi-role row-level security (RLS) for composite models may fail and result in an error.  The error occurs because an incorrect response is given when trying to view the data from the composite model.
 
 
-**APPLIES TO:** ✔️ Row-level security (RLS)
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Row-level security (RLS)
 
 **Status:** Reactivated: July 25, 2022
 

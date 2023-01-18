@@ -13,7 +13,7 @@ ms.custom: known-issue-213
 
 You can create and embed a report with a visual placed to the right side of the report.  Within the embedded report, if you select the visual's **More options** ellipses (...), the visual context menu that appears may get cut off.
 
-**APPLIES TO:** ✔️ Power BI Embedded
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Embedded
 
 **Status:** Fixed: August 3, 2022
 

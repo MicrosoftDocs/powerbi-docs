@@ -13,7 +13,7 @@ ms.custom: known-issue-208
 
 When using the Datamart editor, you can create rules for row-level security (RLS) to specify security roles that will restrict the data shown.  In **Manage Roles** > **Row security settings** > **Create** > **Add filters**, you create a rule that uses a string filter.  If you include a double quote in the string filter, you can't save the filter.
 
-**APPLIES TO:** ✔️ Power BI Service ✔️ Datamarts
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Service :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Datamarts
 
 **Status:** Fixed: July 25, 2022
 
