@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets
 
-When you create a report in Power BI Desktop, you store the report data in a *data model*. When you publish your report to the Power BI service, you publish the data as a *dataset*. You can give other people *Build permission* to that report, so they can discover and reuse the dataset you shared. This article explains how you can control access to the dataset by using the Build permission.
+When you create a report in Power BI Desktop, you store the report data in a *data model*. When you publish your report to the Power BI service, you publish the data as a *dataset*. You can give other people *Build permission* to that dataset, so they can discover and reuse the data you shared. This article explains how you can control access to the dataset by using the Build permission.
 
 Build permission applies to datasets. When you give users Build permission, they can build new content on your dataset, such as reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights discovery.
 
@@ -32,19 +32,19 @@ Users can get Build permission for a dataset in a few different ways:
 
 - An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. For more information, see [Create and manage audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences).
 
-- If you have Reshare and Build permission on a dataset, and you share a report or dashboard you built on that dataset, you can specify that the recipients also get Build permission for the underlying dataset. For more information, see [Share Power BI reports and dashboards with coworkers and others](../collaborate-share/service-share-dashboards.md).
+- If you have Reshare and Build permission on a dataset, and you share a report or dashboard you built on that dataset, you can specify that the recipients also get Build permission for the dataset. For more information, see [Share Power BI reports and dashboards with coworkers and others](../collaborate-share/service-share-dashboards.md).
 
 If a report outside the dataset workspace uses your dataset, you can't delete the dataset. If you try to do so, you get an error message.
 
 ## Remove Build permission
 
-You can remove Build permission. If you remove Build permission, the people whose permission you revoked can still see the report, but can no longer edit the report or export underlying data. Users with only read permission can still export summarized data.
-
 To remove Build permission for users of a shared dataset, follow the instructions at [Manage direct access](service-datasets-manage-access-permissions.md#manage-direct-access).
+
+If you remove Build permission, the people whose permission you revoked can still see the report, but can no longer edit the report or export underlying data. Users with only read permission can still export summarized data.
 
 ### Remove Build permission for a dataset in an app
 
-If you distribute an app from a workspace, removing people's access to the app doesn't automatically remove their build and reshare permissions. To remove their Build permissions, take the following extra steps:
+If you distribute an app from a workspace, removing people's access to the app doesn't automatically remove their build and reshare permissions. To remove their Build permissions, take the following steps:
 
 1. On the workspace list page, select **Update app**. 
 
@@ -66,7 +66,7 @@ If you distribute an app from a workspace, removing people's access to the app d
 
 ## Configure how users request Build permission
 
-Certain actions, such as creating a report with a dataset or accessing the details page of a dataset in the datasets hub, require Build permission on the dataset. By default, when users who don't have Build permission try these actions, they get a dialog box that lets them send an email request for Build permission to the dataset owner. The email includes the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
+Certain actions, such as creating a report with a dataset or accessing the details page of a dataset in the datasets hub, require Build permission on the dataset. By default, when users who don't have Build permission try these actions, they get a dialog box that lets them send email to the dataset owner requesting Build permission. The email includes the user's details, the name of the dataset they’re requesting access to, and any other information they optionally provide.
 
 ![Screenshot of the default Build permission request dialog.](media/service-datasets-build-permissions/build-permission-default-request-dialog.png)
  
