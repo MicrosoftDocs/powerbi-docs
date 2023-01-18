@@ -24,8 +24,8 @@ Thank you for providing feedback throughout the preview. We’re still intereste
 
 Slicer formatting has moved to the Format pane. 
 
-- Changes that used to be in the header of the slicer visual are now in the Format pane.
-- The *horizontal* format has been renamed the *tile* format, based on customer feedback.
+- Settings that used to be in the header of the slicer visual are now in the Format pane.
+- The *horizontal* format has been renamed to the *tile* format, based on customer feedback.
 - The mobile formatting options now have access to this tile setting, too.
 
 See the article [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md) for details.
