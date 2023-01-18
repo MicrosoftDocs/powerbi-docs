@@ -108,7 +108,7 @@
         href: power-bi-report-filter-types.md
       - name: "Slicers"
         href: ../visuals/power-bi-visualization-slicers.md
-      - name: "Numeric range slicers"
+      - name: "Numeric and date range slicers"
         href: desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
         href: ../visuals/desktop-slicer-filter-date-range.md
