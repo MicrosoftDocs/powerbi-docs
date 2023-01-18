@@ -30,7 +30,7 @@ To collect a browser trace and other session information, use the proceeding ste
 Google Chrome and Microsoft Edge (Chromium) are both based on the [Chromium open source project](https://www.chromium.org/Home). The following steps show how to use the developer tools, which are similar in the two browsers. For more information, see [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-chromium). The following reference images are taken from Google Chrome.
 
 1. After signing in, press F12 on your keyboard. Or, in Microsoft Edge select **Settings and more (...)** > **More tools** > **Developer tools**. In Google Chrome, select **Customize and control Google Chrome** :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/chromium-icon-settings.png" alt-text="Screenshot of the Google Chrome settings menu icon." border="false"::: > **More tools** > **Developer tools**.
-1. Prepare to collect the browser trace by setting trace options. You'll also stop and clear any information that was collected before you start to reproduce the problem. By default, the browser keeps trace information only for the page that's currently loaded. Follow these steps to set up the browser to keep all trace information, even if your reproduce problem goes to more than one page:
+1. Prepare to collect the browser trace by setting trace options. You'll also stop and clear any information that was collected before you start to reproduce the problem. By default, the browser keeps trace information only for the page that's currently loaded. Follow these steps to set up the browser to keep all trace information, even if your repro goes to more than one page:
     1. In the **Developer tools** window, select the **Network** tab. Then, select **Preserve log**.
 
        :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/browser-trace-preserve-log.png" alt-text="Screenshot of the Google Chrome developer tools with network tab and preserve log selected." :::
@@ -96,7 +96,7 @@ The following steps show how to use the developer tools in Apple Safari. For mor
 
        :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-console-preserve-log.png" alt-text="Screenshot of the Web Inspector menu with Console and Preserve Log selected." :::
 
-3. After the options are set, select **Network** > **Clear Network Items** to make sure your logs contain only details about the problem you are trying to reproduce.
+3. After the options are set, select **Network** > **Clear Network Items** to make sure your logs contain only details about the problem repro.
 
     :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-clear-network-items.png" alt-text="Screenshot of the Web Inspector menu with Network and Clear Network Items selected." :::
 
@@ -124,7 +124,7 @@ The following steps show how to use the developer tools in Firefox. For more inf
 
 1. After signing in, press F12 on your keyboard. Or, in Firefox select **Open menu** :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/firefox-menu.png" alt-text="Screenshot of the Firefox menu icon." border="false"::: > **Web Developer** > **Toggle Tools**. The tools appear at the bottom of your screen.
 
-1. Next, you'll set options in the **Inspector** to enable your browser to keep all trace information. By default, the browser keeps trace information only for the page that's currently loaded. These settings ensure that trace information is collected even if your reproduced problem requires going to more than one page.
+1. Next, you'll set options in the **Inspector** to enable your browser to keep all trace information. By default, the browser keeps trace information only for the page that's currently loaded. These settings ensure that trace information is collected even if your repro requires going to more than one page.
 
     1. In the **Inspector** window, select the **Network** tab, then select **Network settings** > **Persist Logs**.
 
