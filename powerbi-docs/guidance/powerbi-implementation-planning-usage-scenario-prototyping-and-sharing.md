@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Prototyping and sharing"
 description: "Learn how Power BI prototyping and sharing is about rapid exploration of user requirements."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -66,7 +66,7 @@ A development [workspace](../collaborate-share/service-new-workspaces.md) is app
 
 ### Sharing reports and dashboards
 
-The scenario diagram depicts [sharing](../collaborate-share/service-share-dashboards.md) directly to a recipient (rather than [workspace roles](../collaborate-share/service-roles-new-workspaces.md) or using a [Power BI app](../collaborate-share/service-create-distribute-apps.md#publish-your-app)). Using the sharing feature is appropriate for collaboration scenarios when colleagues work closely together in an informal way. Sharing is useful in this situation because it's limited to a small number of colleagues who need to review and provide feedback on the prototyped solution.
+The scenario diagram depicts [sharing](../collaborate-share/service-share-dashboards.md) directly to a recipient (rather than [workspace roles](../collaborate-share/service-roles-new-workspaces.md) or using a [Power BI app](../collaborate-share/service-create-distribute-apps.md)). Using the sharing feature is appropriate for collaboration scenarios when colleagues work closely together in an informal way. Sharing is useful in this situation because it's limited to a small number of colleagues who need to review and provide feedback on the prototyped solution.
 
 > [!TIP]
 > Individual item sharing should be done infrequently. Since sharing is configured per individual items in a workspace, it's more tedious to maintain and increases the risk of error. A valid alternative to sharing (not depicted in the scenario diagram) is to use [workspace roles](../collaborate-share/service-roles-new-workspaces.md) (described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). Workspace roles work best when colleagues need access to *all items* in a workspace.

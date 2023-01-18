@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: On-premises reporting"
 description: "Learn how Power BI on-premises reporting is about customer-managed reporting."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

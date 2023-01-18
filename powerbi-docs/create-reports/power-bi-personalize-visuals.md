@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/02/2022
+ms.date: 09/14/2022
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -64,44 +64,23 @@ Turn on **Personalize visuals** > **Save**.
 
 When you enable Personalize visuals for a given report, by default all visuals in that report can be personalized. If you don't want all the visuals to be personalized, you can turn the setting on or off per page or per visual.
 
-### Per page
+### Personalize visual per page
 
-# [Power BI Desktop](#tab/powerbi-desktop)
 Select the page tab > select **Format** in the **Visualizations** pane.
 
 :::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting-desktop.png" alt-text="Screenshot shows the menu to select Personalize visual for a page.":::
- 
+
 Slide **Personalize visual** >  **On** or **Off**.
 
-# [Power BI service](#tab/powerbi-service)
-Select the page tab > select **Format** in the **Visualizations** pane.
+### Personalize visual per visual
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Select Personalize Visual for a page.":::
- 
-Slide **Personalize visual** >  **On** or **Off**.
-
----
-
-### Per visual
-
-# [Power BI Desktop](#tab/powerbi-desktop)
-Select the visual. Then select **Format** > **General** > **Icons**.
+Select the visual. Then select **Format** > **General** > **Header icons** > **Icons**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize-desktop.png" alt-text="Screenshot shows the Icons menu, where you can select personalization.":::
- 
+
 Slide **Personalize visual** >  **On** or **Off**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off-desktop.png" alt-text="Screenshot shows the Personalize visual slider.":::
-# [Power BI service](#tab/powerbi-service)
-Select the visual > select **Format** in the **Visualizations** pane > expand **Visual header**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Select Visual header":::
- 
-Slide **Personalize visual** >  **On** or **Off**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
-
----
 
 ## Use Perspectives for a more focused view
 
@@ -111,11 +90,11 @@ For Personalize visuals, you can use **Perspectives** to choose a subset of a mo
 
 Keep the following considerations in mind when working with perspectives:
 
-* Perspectives are not meant to be used as a security mechanism, they are a tool for providing a better end-user experience. All security for a perspective is inherited from the underlying model.
+* Perspectives aren't meant to be used as a security mechanism, they're a tool for providing a better end-user experience. All security for a perspective is inherited from the underlying model.
 
 * Perspectives in both tabular and multi-dimensional models are supported. However, for perspectives in multi-dimensional models, you can only set the perspective to be the same as the base cube for the report.
 
-* Before deleting a perspective from a model, be sure to check that the perspective is not being used in the Personalize visuals experience. 
+* Before deleting a perspective from a model, be sure to check that the perspective isn't being used in the Personalize visuals experience. 
 
 To use Perspectives, you must enable Personalize visuals for the report. You also must create at least one Perspective that includes the dimensions and measures you want end-users to interact with for the Personalize visuals experience.
 
@@ -145,15 +124,15 @@ After you added all the fields you want, be sure to save your settings, both in 
 
 Once you save the new perspective to the model, and save the Power BI Desktop report, navigate to the **Format** pane for the page, where you see a new section for **Personalize visual**.
 
-![Personalize visual section in the Format pane](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
+![Screenshot showing the Personalize visual section in the Format pane.](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
 
 The selection for *Report-reader perspective* is set to *Default fields* initially. Once you select the drop down arrow, you see the other Perspectives you’ve created.
 
-![Select the drop down arrow to see your other perspectives](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
+![Screenshot showing how to Select the drop down arrow to see your other perspectives.](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
 
 Once you set the Perspective for the report page, the Personalize visuals experience for that page is filtered to the selected Perspective. Selecting **Apply to all pages** lets you apply your Perspective setting to all existing pages in your report.
 
-![Select Apply to all pages for the perpective to apply to the entire report](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
+![Screenshot showing how to apply the perpective to the entire report.](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
 
 ## Considerations and limitations
 

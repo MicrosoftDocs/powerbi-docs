@@ -188,6 +188,14 @@ Example of the visual display containing the "feature blocked" banner notificati
 >[!div class="mx-imgBorder"]
 >![visual display containing the "feature blocked" banner notification.](media/licensing-api/feature-banner-upgrade.png)
 
+## Test a licensed visual
+
+To test a licensed visual end to end before making it publicly available:
+
+* If you're creating a brand new offer, add the visual as a private plan for a test customer account. The offer will only be visible to the this test account for purchasing.
+Use this account to validate the offer before making it public.
+* If your visual is already available in AppSource and you want to upgrade it to a licensed visual, you *can't make it a private plan* because that will hide the visual from AppSource, and your existing users won't have access to it. There's currently no way to test a published visual end to end. Test it the same way you tested the original visual to AppSource, by mocking the licensing API value to check the different possibilities.
+
 ## Considerations and limitations
 
 * Tooltip for feature banner is limited by 500 chars.

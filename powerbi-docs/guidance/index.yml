@@ -5,14 +5,15 @@ summary: "Power BI guidance documentation provides best practice information fro
 metadata:
   title: Power BI guidance documentation
   description: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."  
+  author: kfollis
+  ms.author: kfollis
+  ms.reviewer: maroche
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-resource
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 01/14/2020
+  ms.date: 09/22/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -128,8 +129,6 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Tenant settings
-            url: admin-tenant-settings.md 
           - text: On-premises data gateway sizing
             url: gateway-onprem-sizing.md 
           - text: Monitor report performance
@@ -198,24 +197,16 @@ landingContent:
         links:
           - text: Introduction
             url: powerbi-implementation-planning-introduction.md
-          - text: Personal BI
-            url: powerbi-implementation-planning-usage-scenario-personal-bi.md
-          - text: Team BI
-            url: powerbi-implementation-planning-usage-scenario-team-bi.md
-          - text: Departmental BI
-            url: powerbi-implementation-planning-usage-scenario-departmental-bi.md
-          - text: Enterprise BI
-            url: powerbi-implementation-planning-usage-scenario-enterprise-bi.md
-          - text: Managed self-service BI
-            url: powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md
-          - text: Customizable managed self-service BI
-            url: powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md
-          - text: Self-service data preparation
-            url: powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md
-          - text: Prototyping and sharing
-            url: powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md
-          - text: Self-service content publishing
-            url: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
+          - text: Usage scenarios
+            url: powerbi-implementation-planning-usage-scenario-overview.md
+          - text: Tenant setup
+            url: powerbi-implementation-planning-tenant-setup.md
+          - text: Workspaces
+            url: powerbi-implementation-planning-workspaces-overview.md
+          - text: Security
+            url: powerbi-implementation-planning-security-overview.md
+          - text: Info protection and DLP
+            url: powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md
 
   # Card (optional)
   - title: Center of Excellence (COE)

@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1
-ms.date: 02/14/2022
+ms.date: 07/31/2022
 ---
 
 # Introduction to deployment pipelines
@@ -16,10 +16,20 @@ In today’s world, analytics is a vital part of decision making in almost every
 
 The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. It's an efficient and reusable tool for creators in an enterprise with Premium capacity. Deployment pipelines enable creators to develop and test Power BI content in the Power BI service, before the content is consumed by users. The content types include reports, paginated reports, dashboards, datasets and dataflows.
 
-The tool is designed as a pipeline with three stages:
+## Learn to use deployment pipelines
+
+You can learn how to use the deployment pipelines tool by following these links.
+
+ * [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines) - A Power BI Learn module that walks you through creating a deployment pipeline.
+
+* [Get started with deployment pipelines](deployment-pipelines-get-started.md) - A Power BI article that explains how to create a pipeline, as well as key functions such as backward deployment and deployment rules.
+
+## Pipeline structure
+
+Deployment pipelines is designed as a pipeline with three stages:
 
 * **<a name="development"></a>Development**
-    
+
     This stage is used to design, build, and upload new content with  fellow creators. This is the first stage in deployment pipelines.
 
 * **<a name="test"></a>Test**
@@ -45,6 +55,9 @@ The tool is designed as a pipeline with three stages:
 
 >[!div class="nextstepaction"]
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

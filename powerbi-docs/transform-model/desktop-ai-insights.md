@@ -118,7 +118,7 @@ Report authors can select which Premium capacity on which to run AI Insights. By
 
 #### Monitoring with the Capacity Metrics app
 
-Premium capacity owners can monitor the impact of Text Analytics and Vision functions on a capacity with the [Power BI Premium Capacity Metrics app](../enterprise/service-admin-premium-monitor-capacity.md). The app provides detailed metrics on the health of the AI workloads within your capacity. The top chart shows the memory consumption by AI workloads. Premium capacity admins can set the memory limit for the AI workload per capacity. When memory usage reaches the memory limit, you can consider increasing the memory limit or moving some workspaces to a different capacity.
+Premium capacity owners can monitor the impact of Text Analytics and Vision functions on a capacity with the [Power BI Premium Capacity Metrics app](../enterprise/service-premium-gen2-metrics-app.md). The app provides detailed metrics on the health of the AI workloads within your capacity. The top chart shows the memory consumption by AI workloads. Premium capacity admins can set the memory limit for the AI workload per capacity. When memory usage reaches the memory limit, you can consider increasing the memory limit or moving some workspaces to a different capacity.
 
 ### Comparing Power Query and Power Query Online
 
@@ -167,7 +167,7 @@ The steps in this section describe how to grant a Power BI user access to a mode
 
 Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning. The data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema) service documentation. The link includes the example entry script with the statements for the schema generation.
+This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](/azure/machine-learning/how-to-deploy-managed-online-endpoints) service documentation. The link includes the example entry script with the statements for the schema generation.
 
 Specifically, the _@input\_schema_ and _@output\_schema_ functions in the entry script reference the input and output sample formats in the _input\_sample_ and _output\_sample_ variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
@@ -208,5 +208,5 @@ This article provided an overview of integrating Machine Learning into Power BI 
 - [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
 - [Cognitive Services in Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Azure Machine Learning integration in Power BI](./dataflows/dataflows-machine-learning-integration.md)
-- [Monitoring Premium capacities with the app](../enterprise/service-admin-premium-monitor-capacity.md)
+- [Monitoring Premium capacities with the app](../enterprise/service-premium-gen2-metrics-app.md)
 - [AI metrics in the Premium capacity metrics app](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

@@ -1,17 +1,17 @@
 ---
-title: Performance tips creating quality Power BI custom visuals
-description: How to build a high performance Power BI custom visual.
+title: Performance tips for creating quality Power BI custom visuals
+description: Learn specific techniques to develop high performance Power BI custom visuals for your organization.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/20/2022
+ms.date: 01/04/2023
 ---
-# Power BI custom visual performance tips
+# Performance tips for creating quality Power BI custom visuals
 
-This article will cover techniques on how a developer can achieve high performance when rendering their custom visuals.
+This article covers techniques on how a developer can achieve high performance when rendering their custom visuals.
 
 No one wants a visual to take its time when rendering. Getting the visual to render as quickly as possible becomes critical when writing the code.
 
@@ -22,9 +22,9 @@ Here are some recommendations for achieving optimal performance for your custom 
 
 ## Use the User Timing API
 
-Using the **User Timing API** to measure your app's JavaScript performance can help you decide which parts of the script need optimization.
+Using the User Timing API to measure the app's JavaScript performance can help you decide which parts of the script need optimization.
 
-For more information, see the [User Timing API](https://msdn.microsoft.com/library/hh772738(v=vs.85).aspx).
+For more information, see the [User Timing API](https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API).
 
 ## Review animation loops
 
@@ -36,14 +36,14 @@ Solution: Update the frames selectively.
 
 When you're animating static visualizations, it’s tempting to lump all the draw code into one update function and repeatedly call it with new data for each iteration of the animation loop.
 
-Instead consider using a visual constructor method to draw everything static. Then the update function only needs to draw visualization elements that change.
+Instead, use a visual constructor method to draw everything static. Then the update function needs to draw only the visualization elements that change.
 
    > [!TIP]
    > Inefficient animation loops are commonly found in axes and legends.
 
 ## Cache DOM nodes
 
-When a node or list of nodes is retrieved from the DOM, think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete more nodes in the relevant area, caching them can improve your application's overall efficiency.
+When a node or list of nodes is retrieved from the DOM, think about whether you can reuse them in later computations (sometimes even the next loop iteration). As long as you don't need to add or delete more nodes in the relevant area, caching them can improve the application's overall efficiency.
 
 To make sure that your code is fast and doesn’t slow down the browser, keep DOM access to a minimum.
 
@@ -72,11 +72,11 @@ To make sure that your code is fast and doesn’t slow down the browser, keep DO
 
 ## Avoid DOM manipulation
 
-Limit DOM manipulation as much as possible.  *Insert operations* like `prepend()`, `append()`, and `after()` are time-consuming and shouldn't be used unless necessary.
+Limit DOM manipulation as much as possible.  Insert operations like `prepend()`, `append()`, and `after()` are time-consuming and shouldn't be used unless necessary.
 
 ### DOM manipulation example
 
-**Instead of:**
+**Instead of**:
 
   ```javascript
   for (let i=0; i<1000; i++) { 
@@ -84,7 +84,7 @@ Limit DOM manipulation as much as possible.  *Insert operations* like `prepend()
   }
   ```
 
-**Try:**
+**Try**:
 
 Make the above example faster by using `html()` and building the list beforehand:
 
@@ -99,19 +99,19 @@ Make the above example faster by using `html()` and building the list beforehand
 
 ## Reconsider JQuery
 
-Limit your JS frameworks and use native JS whenever possible to increase the available bandwidth and lower your processing overhead. Doing this might also decrease compatibility issues with older browsers.
+Limit JS frameworks and use native JS whenever possible to increase the available bandwidth and lower your processing overhead. Doing this might also decrease compatibility issues with older browsers.
 
 For more information, see [youmightnotneedjquery.com](http://youmightnotneedjquery.com/) for alternative examples for functions such as JQuery's `show`, `hide`, `addClass`, and more.  
 
-## Use canvas or WebGL
+## Use Canvas or WebGL
 
-For repeated use of animations, consider using **Canvas** or **WebGL** instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
+For repeated use of animations, consider using Canvas or WebGL instead of SVG. Unlike SVG, with these options performance is determined by size rather than content.
 
 You can read more about the differences in [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)).
 
 ## Use requestAnimationFrame instead of setTimeout
 
-If you use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, your animation functions are called **before** the browser calls another repaint.
+If you use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update on-screen animations, the animation functions are called **before** the browser calls another repaint.
 
 For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
 

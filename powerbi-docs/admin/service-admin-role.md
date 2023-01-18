@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 10/26/2021
 LocalizationGroup: Administration
 ---
 
 # Understanding Power BI administrator roles
 
-To administer Power BI for your organization, you must be in one of the following roles: Power BI admin, Power Platform admin, or Microsoft 365 global admin. Microsoft 365 user management administrators assign users to the Power BI admin or Power Platform admin roles in the Microsoft 365 admin center, or by using a PowerShell script. For more information, see [Assign roles to user accounts with PowerShell](/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell).
+To administer Power BI for your organization, you must be in one of the following roles: Power BI administrator, Power Platform administrator, or global administrator. Microsoft 365 user administrators assign users to the Power BI administrator or Power Platform administrator roles in the Microsoft 365 admin center, or by using a PowerShell script. For more information, see [Assign roles to user accounts with PowerShell](/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell).
 
-Users in Power BI admin and Power Platform admin roles have full control over org-wide Power BI settings and administrative features, except for licensing. Once a user is assigned the admin role, they can access the [Power BI admin portal](service-admin-portal.md). There, they have access to org-wide usage metrics, and can control org-wide usage of Power BI features. These admin roles are ideal for users who need access to the Power BI admin portal without also granting those users full Microsoft 365 administrative access.
+Users in Power BI administrator and Power Platform administrator roles have full control over org-wide Power BI settings and administrative features, except for licensing. Once a user is assigned an administrator role, they can access the [Power BI admin portal](service-admin-portal.md). There, they have access to org-wide usage metrics and can control org-wide usage of Power BI features. These admin roles are ideal for users who need access to the Power BI admin portal without also granting those users full Microsoft 365 administrative access.
 
 > [!NOTE]
-> In Power BI documentation, "Power BI admin" refers to users in either the Power BI admin or Power Platform admin roles. The documentation makes it clear when the Microsoft 365 global admin role is required for a task.
+> In the Power BI documentation, *Power BI administrator* refers to users in either the Power BI administrator or Power Platform administrator roles. The documentation makes it clear when the global administrator role is required for a task.
 
 ## Considerations and limitations
 
-The Power BI admin and Power Platform admin roles don't provide the following capabilities:
+The Power BI administrator and Power Platform administrator roles don't provide the following capabilities:
 
 * Ability to modify users and licenses within the Microsoft 365 admin center.
 
@@ -44,7 +44,7 @@ To assign users to an admin role in the Microsoft 365 admin center, follow these
 
     ![Manage roles](media/service-admin-role/powerbi-admin-edit-roles.png)
 
-1. Expand **Show all by category**, then select **Power BI admin** or **Power Platform admin**.
+1. Expand **Show all by category**, then select **Power BI administrator** or **Power Platform administrator**.
 
     ![Select admin role](media/service-admin-role/powerbi-admin-role.png)
 
@@ -55,15 +55,17 @@ To assign users to an admin role in the Microsoft 365 admin center, follow these
 You can also assign users to roles by using PowerShell. Users are managed in Azure Active Directory (Azure AD). If you don't already have the Azure AD PowerShell module, [download and install the latest version](https://www.powershellgallery.com/packages/AzureAD/).
 
 1. Connect to Azure AD:
-   ```
-   PS C:\Windows\system32> Connect-AzureAD
+   ```powershell
+   Connect-AzureAD
    ```
 
-1. Get the **ObjectId** for the **Power BI admin** role. You can run [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) to get the **ObjectId**
+1. Get the **ObjectId** for the **Power BI administrator** role. You can run [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) to get the **ObjectId**.
 
+    ```powershell
+    Get-AzureADDirectoryRole
     ```
-    PS C:\Windows\system32> Get-AzureADDirectoryRole
-
+    
+    ```output
     ObjectId                             DisplayName                        Description
     --------                             -----------                        -----------
     00f79122-c45d-436d-8d4a-2c0c6ca246bf Power BI Service Administrator     Full access in the Power BI Service.
@@ -80,9 +82,11 @@ You can also assign users to roles by using PowerShell. Users are managed in Azu
 
 1. Next, get the user's **ObjectId**. You can find that by running [Get-AzureADUser](/powershell/module/azuread/get-azureaduser).
 
+    ```powershell
+    Get-AzureADUser -ObjectId 'tim@contoso.com'
     ```
-    PS C:\Windows\system32> Get-AzureADUser -ObjectId 'tim@contoso.com'
-
+    
+    ```output
     ObjectId                             DisplayName UserPrincipalName      UserType
     --------                             ----------- -----------------      --------
     6a2bfca2-98ba-413a-be61-6e4bbb8b8a4c Tim         tim@contoso.com        Member

@@ -72,7 +72,7 @@ Rolling back to the previous version of a template app is now easier than ever w
 
     ![Screenshot shows the Release Management pane with Extract selected from a menu.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)
     ![Screenshot shows confirmation message to Extract this app.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
-2. In dialog box, enter the name for extracted workspace. a new workspace will be added.
+2. In dialog box, enter the name for extracted workspace. A new workspace will be added.
 
 Your new workspace versioning resets and you can continue to develop and distribute the template app from the newly extracted workspace.
 

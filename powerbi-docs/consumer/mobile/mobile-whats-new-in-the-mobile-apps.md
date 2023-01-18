@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/12/2022
+ms.date: 12/18/2022
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -19,6 +19,74 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## December 2022
+
+### Support for linked metrics
+
+The Power BI mobile apps now support linked metrics. Linked metrics are metrics that are connected to multiple scorecards. All check-ins and updates to linked metrics are reflected everywhere the metric appears. Linked metrics make it easier to avoid creating duplicate metrics tracking the same thing. [Learn more about linked metrics](../../create-reports/service-metrics-linked-metrics.md)
+
+### Track your metrics on the Windows app
+
+Now you can monitor your Power BI metrics and scorecards, and even check in progress, directly from the Windows app!
+
+![Screenshot of the metrics page in the Power BI app for Windows.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-metrics-windows-app.png)
+
+## November 2022
+
+### Announcing the new Power BI accent color
+
+Power BI has updated its accent color to teal! This change improves color contrast and visibility in the user interface and makes using Power BI easier and more accessible.
+
+## October 2022
+
+### New and improved metrics details pane
+
+The newly designed metrics details pane is now easier to understand and use, and gives you even more data at a glance. [Check out our documentation](./mobile-apps-metrics.md#metric-detail-pane)!
+
+![Screenshot of the new and improved metrics details pane in the Power BI mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-metrics-details-pane.png)
+
+### Request access to apps (iOS and Android)
+
+Have a link to an app you don't have access to? Now you can request access directly from your Power BI mobile app.
+
+### Portrait view now fully supported in Report Server
+
+Now your non-mobile-optimized report pages hosted on Report Server will open no matter which way you're holding your phone - you no longer have to tip your phone on its side to view such reports. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small landscape view of report. To get a larger view, either tilt your phone to the side, or just use pinch and zoom to zoom in on the area of the report you're interested in.
+
+## September 2022
+
+### Mobile formatting options are now generally available!
+
+Mobile formatting options allow you to style and format visuals in mobile-optimized layout without affecting their formatting in web layout. You now have the flexibility you need to create beautiful reports truly optimized for phone viewing. [Learn about optimizing your reports for mobile viewing](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
+
+![Screenshot of the visualizations pane in Power B I mobile layout view G A.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-visualizations-pane.png)
+
+## August 2022
+
+### Follow metrics from your mobile app (iOS and Android) (preview)
+
+Now you can follow any metric with just a tap. And you can see all the metrics you're following from the Metrics tab on your home screen. [Learn more!](./mobile-apps-metrics.md#follow-metrics-preview)
+
+![Screenshots showing how to follow a metric from the Power B I mobile app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-follow-metrics.png)
+
+### Find Power BI content in your Teams mobile app! (iOS and Android)
+
+Power BI in Microsoft Teams has come to Teams mobile! Now you can discover Power BI content right there in the Teams mobile app. When you tap the content you want to see, you'll be automatically redirected to the Power BI mobile app for the best viewing experience. [Learn more](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-is-available-in-microsoft-teams-mobile/) 
+
+### Mobile formatting now supports text box visuals
+
+[Mobile formatting in Power BI Desktop](../../create-reports/power-bi-create-mobile-optimized-report-about.md) now supports text box visuals. Now, when you add a text box to the mobile canvas, you can change its format settings to best suit the mobile-optimized view you're creating.
+
+### Power BI fonts are now available on your mobile devices (iOS and Android)
+
+The Power BI mobile apps for iOS and Android now support the full range of fonts available in Power BI Desktop. This means that in the mobile app, your reports will look exactly as you designed them, with the same fonts that you chose while creating the reports in Desktop!
+
+### Upgraded browsing experience with WebView2 (Windows)
+
+ The Power BI app for Windows is now aligned with the overall Power BI migration to Microsoft Edge WebView2, delivering faster performance and a better browsing experience all around.
+
+To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this does not apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
 
 ## July 2022
 
@@ -41,7 +109,6 @@ Now you can track and update metrics that feature multiple targets. Open a metri
 
 ![Screenshot of a metric's details pane in the mobile app showing multiple milestones.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-metric-details-pane.png)
 
-
 ## May 2022
 
 ### Goals has become Metrics
@@ -59,7 +126,7 @@ Changes and updates to goals related to you now show up in your activity feed, a
 
 ![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
 
-### New minimum OS requirement for the Windows app
+### Minimum OS requirement for the Windows app
 The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
 
 ### Goals now supports push notifications (Android and iOS)
@@ -171,7 +238,7 @@ We've introduced a new design and home page to simplify the way you find and ope
 
 ### Paginated Report visuals (preview) now supported (iOS, Android, Windows)
 Paginated Report visuals (preview) enable you to render any paginated report uploaded to the service inside a Power BI report.
-Just like any other Power BI visual, Paginated Report visuals are fully-interactive, and are also supported in the Power BI Mobile apps.
+Just like any other Power BI visual, Paginated Report visuals are fully interactive, and are also supported in the Power BI Mobile apps.
 
 ### Support for passing URL parameters to paginated reports (Android)
 Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)

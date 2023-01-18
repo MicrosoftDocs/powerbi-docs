@@ -7,7 +7,7 @@
     items: 
     - name: "What are Power BI custom visuals"
       href: power-bi-custom-visuals.md
-    - name: "Develop your own Power BI custom visual"
+    - name: "Develop a BI custom visual"
       href: develop-power-bi-visuals.md
   - name: Tutorials
     items:
@@ -29,20 +29,8 @@
       href: import-visual.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.yml
-  - name: Publish your Power BI custom visuals
-    items:
-    - name: "Package a Power BI visual"
-      href: package-visual.md
-    - name: "Test your Power BI custom visual"  
-      href: submission-testing.md
-    - name: "Publish your Power BI custom visuals to AppSource"
-      href: office-store.md
-    - name: "Get a Power BI custom visual certified"
-      href: power-bi-custom-visuals-certified.md
-    - name: "Guidelines for publishing Power BI visuals" 
-      href: guidelines-powerbi-visuals.md
-    - name: "Visuals for an organization in Power BI"
-      href: power-bi-custom-visuals-organization.md
+    - name: "Examples of Power BI visuals"
+      href: samples.md
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"
@@ -55,7 +43,7 @@
       href: capabilities.md
     - name: "Data view mappings"
       href: dataview-mappings.md
-    - name: "Sorting options"
+    - name: "Sort data"
       href: sort-options.md
     - name: "Objects and properties"
       href: objects-properties.md
@@ -68,6 +56,7 @@
     - name: "Troubleshoot environment setup"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Add features to your custom visual
+    expanded: false
     items:
     - name: "Create a dialog box"
       href: create-display-dialog-box.md         
@@ -77,12 +66,16 @@
       href: visuals-interactions.md
     - name: "Add selections"
       href: selection-api.md
-    - name: "Add visuals tooltips"
+    - name: "Visuals tooltips"
       href: add-tooltips.md
-    - name: "Add analytics pane" 
+    - name: "Analytics pane" 
       href: analytics-pane.md
+    - name: "Add format pane"
+      href: format-pane.md
     - name: "Filter visuals" 
       href: filter-api.md
+    - name: "Identity filter" 
+      href: identity-filter-api.md
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
@@ -115,12 +108,28 @@
       href: unit-tests-introduction.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
+  - name: Publish your Power BI custom visual
+    items:
+    - name: "Package a Power BI visual"
+      href: package-visual.md
+    - name: "Test your Power BI custom visual"  
+      href: submission-testing.md
+    - name: "Publish your Power BI custom visuals to AppSource"
+      href: office-store.md
+    - name: "Get a Power BI custom visual certified"
+      href: power-bi-custom-visuals-certified.md
+    - name: "Guidelines for publishing Power BI visuals" 
+      href: guidelines-powerbi-visuals.md
+    - name: "Visuals for an organization in Power BI"
+      href: power-bi-custom-visuals-organization.md
   - name: Licenses
     items:
     - name: Licensing models for AppSource visuals
       href: custom-visual-licenses.md
     - name: "License enforcement API"
       href: licensing-api.md
+    - name: Transactability and licensing FAQ
+      href: licensing-faq.yml
   - name: Reference
     items: 
     - name: "Changelog"
@@ -141,7 +150,6 @@
       href: file-download-api.md
     - name: "Permissions API"
       href: permissions-api.md
-
     - name: "Power BI Visual utilities"
       items:    
       - name: "Adding external libraries"
@@ -150,6 +158,8 @@
         href: utils-interactivity-selections.md
       - name: "Formatting utils"
         href: utils-formatting.md
+      - name: "Formatting model utils"
+        href: utils-formatting-model.md
       - name: "Data view utils"
         href: utils-dataview.md
       - name: "Chart utils"
@@ -168,9 +178,7 @@
     items:
     - name: "Dev Center"
       href: https://powerbi.microsoft.com/developers/
-    - name: "Samples of Power BI visuals"
-      href: samples.md
     - name: "Custom Visuals Git Repo"
-      href: https://github.com/PowerBi-Projects/PowerBI-visuals/
+      href: https://github.com/MicrosoftDocs/powerbi-docs/blob/live/powerbi-docs/developer/visuals/samples.md
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md

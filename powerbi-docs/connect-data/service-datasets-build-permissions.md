@@ -26,11 +26,11 @@ Users also need Build permissions to work with the data *outside* Power BI:
 
 You give Build permission for a dataset in a few different ways:
 
-- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
  
 - Dataset owners can assign Build permission to specific users or security groups on the Manage permissions page. See [Manage dataset access permissions](service-datasets-manage-access-permissions.md) for detail.
 
-- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Allow users to connect to datasets](../collaborate-share/service-create-distribute-apps.md#allow-users-to-connect-to-datasets) in [Publish an app](../collaborate-share/service-create-distribute-apps.md) for detail.
+- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Create and manage audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences) in [Publish an app](../collaborate-share/service-create-distribute-apps.md) for detail.
 
 - Say you have Reshare and Build permission on a dataset. When you share a report or dashboard built on that dataset, you can specify that the recipients also get Build permission for the underlying dataset. See [Share Power BI reports and dashboards](../collaborate-share/service-share-dashboards.md) for detail.
 
@@ -75,7 +75,7 @@ The first option (here shown unchecked) is the default option described at the b
 
 The second option allows you to provide instructions about how to get Build permission, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users try to perform an action that they need Build permission for, if they don’t have that permission, they will see a message containing the instructions you provide.
 
-In the image of the the Request access setting shown above, the Instructions text area contains sample instructions. The instructions must be written in plain text only. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format. The image below shows the instructions as users see them when they try to perform an action that they need Build permission for.
+In the image of the Request access setting shown above, the Instructions text area contains sample instructions. The instructions must be written in plain text only. HTML code snippets and any other type of code formatting will render as plain text rather than the intended format. The image below shows the instructions as users see them when they try to perform an action that they need Build permission for.
 
 ![Screenshot of specific instructions for requesting Build permission.](media/service-datasets-build-permissions/build-permission-specific-instructions-example.png)
 
@@ -96,5 +96,5 @@ You can remove Build permission. If you do, the people whose permissions you hav
 
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Share a dataset](service-datasets-share.md)
-* [Roles in the new workspaces](../collaborate-share/service-roles-new-workspaces.md)
+* [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

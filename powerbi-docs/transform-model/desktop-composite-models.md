@@ -146,17 +146,69 @@ When you use DirectQuery, you should always consider performance, primarily to e
 
 Using composite models adds additional performance considerations. A single visual can result in sending queries to multiple sources, which often pass the results from one query across to a second source. This situation can result in the following forms of execution:
 
-* **An SQL query that includes a large number of literal values**: For example, a visual that requests total **Sales Amount** for a set of selected **Product Managers** would first need to find which **Products** were managed by those product managers. This sequence must happen before the visual sends an SQL query that includes all of the product IDs in a `WHERE` clause.
+* **A source query that includes a large number of literal values**: For example, a visual that requests total **Sales Amount** for a set of selected **Product Managers** would first need to find which **Products** were managed by those product managers. This sequence must happen before the visual sends an SQL query that includes all of the product IDs in a `WHERE` clause.
 
-* **An SQL query that queries at a lower level of granularity, with the data later being aggregated locally**: As the number of **Products** that meet the filter criteria on **Product Manager** grows large, it can become inefficient or unfeasible to include all products in a `WHERE` clause. Instead, you can query the relational source at the lower level of **Products** and then aggregate the results locally. If the cardinality of **Products** exceeds a limit of 1 million, the query fails.
+* **A source query that queries at a lower level of granularity, with the data later being aggregated locally**: As the number of **Products** that meet the filter criteria on **Product Manager** grows large, it can become inefficient or unfeasible to include all products in a `WHERE` clause. Instead, you can query the relational source at the lower level of **Products** and then aggregate the results locally. If the cardinality of **Products** exceeds a limit of 1 million, the query fails.
 
-* **Multiple SQL queries, one per group by value**: When the aggregation uses **DistinctCount** and is grouped by a column from another source, and if the external source doesn't support efficient passing of many literal values that define the grouping, it's necessary to send one SQL query per group by value.
+* **Multiple source queries, one per group by value**: When the aggregation uses **DistinctCount** and is grouped by a column from another source, and if the external source doesn't support efficient passing of many literal values that define the grouping, it's necessary to send one SQL query per group by value.
 
    A visual that requests a distinct count of **CustomerAccountNumber** from the SQL Server table by **Product Managers** imported from the spreadsheet would need to pass in the details from the **Product Managers** table in the query that's sent to SQL Server. Over other sources, Redshift, for example, this action is unfeasible. Instead, there would be one SQL query sent per **Sales Manager**, up to some practical limit, at which point the query would fail.
 
 Each of these cases has its own implications on performance, and the exact details vary for each data source. Although the cardinality of the columns used in the relationship that joins the two sources remains low, a few thousand, performance shouldn't be affected. As this cardinality grows, you should pay more attention to the impact on the resulting performance.
 
-Additionally, the use of many-to-many relationships means that separate queries must be sent to the underlying source for each total or subtotal level, rather than aggregating the detailed values locally. A simple table visual with totals would send two SQL queries, rather than one.
+Additionally, the use of many-to-many relationships means that separate queries must be sent to the underlying source for each total or subtotal level, rather than aggregating the detailed values locally. A simple table visual with totals would send two source queries, rather than one.
+
+## Source groups
+A source group is a collection of items (tables, relationships, etc.) from a DirectQuery source or all import sources involved in a data model. A composite model is comprised of one or more source groups. Consider the following examples:
+- A composite model that connects to a Power BI Dataset called **Sales** and enriches the dataset by adding a **Sales YTD** measure which is not available in the original dataset. This model consists of one source group.
+- A composite model that combines data by importing from a table from an Excel sheet called **Targets** and a CSV file called **Regions**, as well as making a DirectQuery connection to a Power BI Dataset called **Sales**. In this case there are two source groups (see image below):
+  - The first source group contains the tables from the **Targets** Excel sheet, as well as the **Regions** CSV file.
+  - The second source group contains the items from the **Sales** Power BI Dataset.
+
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups.png" alt-text="Diagram showing the Import and Sales source groups containing the tables from the respective sources.":::
+
+If you added another DirectQuery connection to another source, such as a DirectQuery connection to a SQL Server database called **Inventory**, the items from that source will be added as another source group:
+
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources.":::
+
+> [!NOTE]
+> Importing data from another source will **not** add another source group, as all items from all imported sources are in one source group.
+
+### Source groups and relationships
+
+There are two types of relationships in a composite model:
+- **Intra source group relationships.** These relationships relate items within a source group together. These relationships are always regular relationships unless they are many-to-many, in which case they are limited.
+- **Cross source group relationships.** These relationships start in one source group and end in a different source group. These relationships are always limited relationships.
+
+[Read more about the distinction between regular and limited relationships and their impact.](desktop-relationships-understand.md#relationship-evaluation)
+
+For example, below we have added three cross source group relationships, relating tables across the various source groups together:
+
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-3.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources and relationships between the source groups as described above.":::
+
+### Local and remote
+Any item that is in a source group that is a DirectQuery source group is considered **remote**, unless the item was defined locally as part of an extension or enrichment to the DirectQuery source and is not part of the remote source, such as a measure or a calculated table. A calculated table based on a table from the DirectQuery source group belongs to the “Import” source group and is considered **local**.
+Any item that is in the “Import” source group is considered local.
+For example, if you define the following measure in a composite model that uses a DirectQuery connection to the Inventory source, the measure is considered local:
+
+```dax
+[Average Inventory Count] = Average(Inventory[Inventory Count])
+```
+
+### Calculation groups, query and measure evaluation
+[Calculation groups](/analysis-services/tabular-models/calculation-groups) provide a way to reduce the number of redundant measures as well as grouping common measure expressions together. Typical use cases are time-intelligence calculations where you want to provide the ability to switch from actuals to month-to-date, quarter-to-date or year-to-date calculations.
+When working with composite models, it is important to be aware of the interaction between calculation groups and whether a measure only refers to items from a single remote source group. If a measure only refers to items from a single remote source group and the remote model defines a calculation group that impacts the measure, that calculation group will be applied, regardless of if the measure was defined in the remote model or in the local model.
+However, if a measure does not refer to items from a single remote source group exclusively but refers to items from a remote source group on which a remote calculation group is applied, the results of the measure might still be impacted by the remote calculation group. As an example, consider the following:
+- Reseller Sales is a measure defined in the remote model.
+- The remote model contains a calculation group that changes the result of Reseller Sales
+- Internet Sales is a measure defined in the local model.
+- Total Sales is a measure defined in the local model, and has the following definition:
+
+```dax
+[Total Sales] = [Internet Sales] + [Reseller Sales]
+```
+
+In this scenario, the **Internet Sales measure** is not impacted by the calculation group defined in the remote model as they are not part of the same model. However, the calculation group can change the result of the **Reseller Sales** measure, as they are in the same model. This means that the results returned by the **Total Sales** measure must be evaluated carefully. Imagine we use the calculation group in the remote model to return year-to-date results. The result returned by **Reseller Sales** is now a year-to-date value, while the result returned by **Internet Sales** is still an actual. The result of **Total Sales** is now likely unexpected, as it adds an actual to a year-to-date result.
 
 ## Considerations and limitations
 
@@ -170,7 +222,7 @@ The following Live Connect tabular sources can't be used with composite models:
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI datasets
-* [Usage Metrics (classic workspaces)](../collaborate-share/service-usage-metrics.md) 
+* [Usage metrics (My workspace)](../collaborate-share/service-usage-metrics.md) 
 * Azure Analysis Services
 
 The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
@@ -184,3 +236,4 @@ For more information about composite models and DirectQuery, see the following a
 * [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](../connect-data/power-bi-data-sources.md)
 * [Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+* [Model relationships in Power BI Desktop](desktop-relationships-understand.md)

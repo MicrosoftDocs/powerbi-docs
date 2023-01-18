@@ -67,7 +67,7 @@ In the previous workspace flyout, **My Workspace** was above the **Search** box.
  
 :::image type="content" source="../create-reports/media/service-experience-changes/experience-old-my-workspace.png" alt-text="Screenshot showing the old placement of My Workspace."::: 
 
-It's shifting to below the **Search** box in the new workspace flyout.
+It's shifting to below the **Search** box in the workspace flyout.
 
 :::image type="content" source="../create-reports/media/service-experience-changes/experience-new-my-workspace.png" alt-text="Screenshot showing the new placement of My Workspace.":::
  
@@ -85,10 +85,10 @@ Now the Get data experience is moving to the **Create** experience. You access i
 
 Got feedback? We'd love to hear it at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
 
-Explore these collections of Microsoft Learn content for Power BI:
+Explore these training resources for Power BI:
 
 > [!div class="nextstepaction"]
->[Learn Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+>[Learn Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 
 > [!div class="nextstepaction"]
-> [Become a Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+> [Become a Power BI data analyst](https://learn.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

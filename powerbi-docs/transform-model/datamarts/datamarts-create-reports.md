@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 08/26/2022
 LocalizationGroup: Data from files
 ---
 
@@ -28,11 +28,15 @@ Let's take a look at how datamarts can be used with each, in turn.
 
 ## Create reports in the Power BI service 
 
-**Scenario 1:** Using the auto-generated dataset and action menu in the workspace: In the Power BI workspace, navigate to the auto-generated dataset and select the **More** menu (...) to create a report in the Power BI service. 
+**Scenario 1:** From within the datamart experience, using the ribbon and the main home tab, navigate to the **New report** button. This provides a native, quick way to create reports.
+
+Selecting **New report** opens a browser tab to the report editing canvas to a new report that is built on the dataset. When you save your new report you're prompted to choose a workspace, provided you have write permissions for that workspace. If you don't have write permissions, or if you're a free user and the dataset resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
+
+**Scenario 2:** Using the auto-generated dataset and action menu in the workspace: In the Power BI workspace, navigate to the auto-generated dataset and select the **More** menu (...) to create a report in the Power BI service. 
 
 Selecting the **More** opens the report editing canvas to a new report that is built on the dataset. When you save your new report, it's saved in the workspace that contains the dataset as long as you have write permissions on that workspace. If you don't have write permissions, or if you're a free user and the dataset resides in a Premium-capacity workspace, the new report is saved in your *My workspace*.
 
-**Scenario 2:** Using the auto-generated dataset and dataset details page. In the Power BI workspace list, select the auto-generated dataset's name to get to the Dataset details page, where you can find details about the dataset and see related reports. You can also create a report directly from this page. To learn more about creating a report in this fashion, see [Dataset details](../../connect-data/service-dataset-details-page.md).
+**Scenario 3:** Using the auto-generated dataset and dataset details page. In the Power BI workspace list, select the auto-generated dataset's name to get to the Dataset details page, where you can find details about the dataset and see related reports. You can also create a report directly from this page. To learn more about creating a report in this fashion, see [Dataset details](../../connect-data/service-dataset-details-page.md).
 
 In the data hub, you'll see datamarts and their associated auto-generated datasets. Select the datamart to navigate to the datamart's details page where you can see the datamart’s metadata, supported actions, lineage and impact analysis, along with related reports created from that datamart. Auto-generated datasets derived from datamarts behave the same as any dataset.
 

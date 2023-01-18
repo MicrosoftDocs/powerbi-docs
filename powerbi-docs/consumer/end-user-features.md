@@ -7,8 +7,8 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 06/28/2022
-ms.custom: licensing support, pbibetadocbug
+ms.date: 11/18/2022
+ms.custom: licensing support
 LocalizationGroup: consumers
 ---
 
@@ -16,15 +16,18 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a Power BI service customer with a Free license, you explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. Designers need to share content to a workspace backed by a Premium capacity, to benefit from [unlimited content sharing](../enterprise/service-premium-what-is.md#unlimited-content-sharing) as part of Premium. If designers with a Pro or PPU license shares content in a regular workspace, you need the same license as the *designers* have. Pro and PPU users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
+As a Power BI service user with a free license, you explore content (such as reports, apps, scorecards, dashboards, and more) in order to make business decisions. That content is created by *designers* who have Power BI Pro or Premium Per User (PPU) licenses. In order to share it with users with free licenses, designers need to publish that content to a group workspace backed by a Premium capacity. Premium capacity provides the benefit of unlimited content sharing. Sometimes, designers share content by sending you links to content such as a Power BI app [Apps in the Power BI service](end-user-apps.md), and sometimes the [content automatically installs](end-user-apps.md) and appears in Power BI under **Apps** or **Browse** > **Shared with me**.
 
-There are many different ways designers can share content. But this article is for Power BI users with a Free license, and therefore only describes how Free users receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
+There are many different ways designers can share content. But this article is for Power BI users with a free license, and therefore only describes how "free users" receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
-![Power BI navigation pane](media/end-user-features/power-bi-share.png)
+![Power BI navigation pane](media/end-user-features/power-bi-shared.png)
 
-In the [previous article](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your roles and permissions, and where content is stored.
+In the [previous article](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your [roles](../collaborate-share/service-roles-new-workspaces.md) and [permissions](../connect-data/service-datasets-permissions.md), and where content is stored.
 
-This article lists which features in the Power BI service are available to users with Free licenses.   
+This article lists which features in the Power BI service are available to users with Free licenses. 
+
+> [!NOTE]
+> In sovereign cloud environments with Power BI Premium capacity, all users can view content without needing an assigned license.  
 
 ## Quick review of terminology
 
@@ -32,35 +35,33 @@ Let's review some Power BI concepts before we get to the list. This will be a qu
 
 ### Workspaces and roles
 
-Collaborating and sharing in workspaces requires that workspace owners, who have Pro or Premium Per User (PPU) licenses, assign you a *role* in that [workspace](../collaborate-share/service-new-workspaces.md).
+Collaborating and sharing in workspaces requires that workspace owners, who have Pro or Premium Per User (PPU) licenses, assign you a *role* in that [workspace](../collaborate-share/service-roles-new-workspaces.md).
 
-Roles determine who can do what in that workspace. Free users can be assigned any of the roles, but more commonly are assigned the **Viewer** or **Member** role.
-
-Only app workspaces hosted in Premium capacity can be shared with users who have any Power BI license including Free. 
+Roles determine who can do what in that workspace. Free users are assigned the **Viewer** role. Being assigned any other role requires that a free user upgrade to Pro or PPU. 
 
 ### Premium capacity
 
-When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to the Premium capacity. Content in workspaces hosted in Premium capacity can be consumed by users with any Power BI license as long as they have appropriate permissions to access the content
+When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to the Premium capacity. Content in workspaces hosted in Premium capacity can be accessed by users with any Power BI license as long as they have appropriate permissions to access the content.
 
 ### Licenses
 
-Each Power BI service user has a Free license, a Power BI Pro license, or a Premium Per user license. As long as your colleagues use Premium capacity workspaces to share content, Free users can view and collaborate with that content.
+Each Power BI service user has at least one of the following: a free license, a Power BI Pro license, a Premium Per user license. As long as your colleagues use Premium capacity workspaces to share content, free users can view and interact with that content.
 
 To find out what type of license is assigned to your account, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you can share content with other users. When **Free** is shown, you can only create content in My Workspace and consume content that is hosted in a Premium workspace. Select **View account** to see more details about your account.
 
    :::image type="content" source="media/end-user-features/power-bi-licenses.png" alt-text="Screenshot showing license type displayed with account profile.":::
 
-## Power BI feature list for users with a Free license
+## Power BI feature list for users with a free license
 
-The following chart identifies which tasks can be performed by a user with a Free license interacting with content in Premium capacity.
+The following chart identifies which tasks can be performed by a user with a **free** license interacting with content in their own **My Workspace** or in **Premium** capacity.
 
-The first column represents a Free user working with content in **My workspace**. This user cannot collaborate with colleagues in the Power BI service. Colleagues cannot directly share content with this user, and this user cannot share from **My workspace**.
+The first column represents a free user only working with content in **My workspace**. This user cannot collaborate with colleagues in the Power BI service. Colleagues cannot directly share content with this user, and this user cannot share from **My workspace**.
 
-The second column represents a Free user working with content that is saved in Premium capacity.  This Free user:
+The second column represents a free user working with content in a workspace that is saved in Premium capacity.  This free user:
 
-- has a Free user license type
+- has a free user license type
 - is part of an organization that has a Premium capacity subscription
-- gets content (apps, dashboards, reports) from Pro or PPU users who share that content using app workspaces in Premium capacity.
+- gets content (apps, dashboards, reports, etc.) from Pro or PPU users who share that content using group workspaces in Premium capacity.
 - is assigned the **Viewer** role to those app workspaces.
 
 > [!NOTE]
@@ -82,11 +83,12 @@ The second column represents a Free user working with content that is saved in P
 |Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)*| 
 |Open | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
 |Favorite | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
- |Edit, update, reshare, republish |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
+ |Edit, update, republish |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |Create new app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
- |**App workspaces**
+| Reshare an app | ![orange x](media/end-user-features/orange-x.png)  | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
+ |**Workspaces in Premium capacity**
 | Create, edit, or delete workspace or content  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Add endorsements | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Open and view  |  ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
@@ -100,7 +102,6 @@ The second column represents a Free user working with content that is saved in P
 |Create, edit, update, delete | ![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) | 
 |Export tile to .csv |![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Favorite |![green myw](media/end-user-features/green-mwo.png)| ![green dot](media/end-user-license/power-bi-green-dot.png)|
-|Feature |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)|
 |Full screen and focus modes |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |Global search |![green dot](media/end-user-license/power-bi-green-dot.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
 |Insights on tiles |![green myw](media/end-user-features/green-mwo.png)     | ![green dot](media/end-user-license/power-bi-green-dot.png)*|

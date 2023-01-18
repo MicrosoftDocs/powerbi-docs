@@ -199,6 +199,8 @@ Publish to web is supported for the vast majority of data sources and reports in
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
 - Admins can block public internet access, as described in [Private links for accessing Power BI](../enterprise/service-security-private-links.md). In that case, the Publish to Web option is grayed out for your tenant in the Power BI admin portal.
 - License enforcement for custom visuals.
+- Uncertified visuals from the organizational store, when the global tenant switch of the organization for uncertified visuals is on.
+- Public visuals from the organizational store, when the global tenant switch of the organization doesn't allow visuals created using the Power BI SDK.
 
 ## Next steps
 

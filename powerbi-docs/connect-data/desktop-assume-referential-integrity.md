@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/07/2019
+ms.date: 09/23/2022
 LocalizationGroup: Connect to data
 ---
 # Apply the Assume Referential Integrity setting in Power BI Desktop

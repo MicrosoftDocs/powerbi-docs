@@ -1,19 +1,19 @@
 ---
 title: "Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios"
 description: Scenario-based guidance to help you determine the right type and number of Power BI Premium licenses when migrating from Azure Analysis Services.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/24/2022
+ms.date: 12/08/2022
 ms.custom: intro-migration
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios
 
-This article compares five hypothetical scenarios when migrating from Azure Analysis Services (AAS) to Power BI Premium. These scenarios can help you to determine the right type and number of licenses for your business requirements and circumstances.
+This article compares six hypothetical scenarios when migrating from Azure Analysis Services (AAS) to Power BI Premium. These scenarios can help you to determine the right type and number of licenses for your business requirements and circumstances.
 
 > [!NOTE]
 > An attempt has been made to ensure these scenarios are representative of real customer migrations, however individual customer scenarios will of course differ. Also, this article doesn't include pricing details. You can find current pricing here:
@@ -205,13 +205,51 @@ Here are the proposed Power BI licenses:
 | Production | Premium P5 | 12,000 | 220 GB |
 | Production/test/development | PPU | 25 | 5 GB |
 
+## Migration scenario 6
+
+In this migration scenario, an ISV company has 400 customers. Each customer has its own SQL Server Analysis Services (SSAS) multidimensional model (also known as a *cube*). The analysis below compares Azure Analysis Services with the Power BI Embedded alternative.
+
+- The 400 tenants are mainly accessed by 50 analysts from the ISV company as well as two users (on average) from each customer.
+- The total size of the models is about 100 GB.
+
+Here are their estimated AAS licenses:
+
+| **Environment** | **Largest model** | **AAS SKU** |
+|:-|:-:|:-:|
+| Production | 8 GB | S4 |
+| Test | 8 GB | B1 |
+| Development | 1 GB | D1 |
+
+Here are their current Power BI licenses:
+
+| **Users** | **Power BI license** | **Users** |
+|:-|:-:|:-:|
+| Customers | Pro | 800 |
+| Analysts | Pro | 50 |
+| Developers | Pro | 20 |
+
+Once migrated to Power BI Premium:
+
+- The A1/P4 SKU was chosen to allow for future model size growth (EM3/A3 SKU can work also).
+- The 50 analysts will need PPU licenses to access test models above 1 GB in size.
+- The total size of the 400 models isn't relevant for pricing; only the largest model size is important.
+
+Here are their proposed Power BI licenses:
+
+| **Environment** | **Power BI license** | **Users** | **Largest model** |
+|:-|:-|-:|:-:|
+| Production | Premium P1 / Power BI Embedded A4 | Not applicable | 25 GB |
+| Test/development | Premium EM3 / Power BI Embedded A3 | Not applicable | 10 GB |
+| Developers | Pro | 20 | Not applicable |
+| Production/test/development | PPU | 50 | Not applicable |
+
 ## Premium migration benefits
 
 Customers can realize many benefits when they migrate from AAS to Power BI Premium.
 
 - Customers can consolidate to a single platform that reduces cost duplication of paying for both AAS and Power BI Premium.
 - By using Premium for their entire BI stack, customers can unlock increased performance and features. They only need Pro licenses for developers and admins, but not for end users.
-- Customers can use Power BI Premium Gen2 scalability to reduce their capacity requirements, since memory is limited per dataset and isn't compared to total over the server as it is in AAS. For more information, see [Capacity nodes for Premium Gen2](../enterprise/service-premium-gen2-what-is.md#capacity-nodes-for-premium-gen2).
+- Customers can use Power BI Premium Gen2 scalability to reduce their capacity requirements, since memory is limited per dataset and isn't compared to total over the server as it is in AAS. For more information, see [Memory allocation](../enterprise/service-premium-gen2-what-is.md#dataset-memory-allocation).
 - For development and test environments, customers can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](../create-reports/deployment-pipelines-overview.md), and [Premium dataflow features](../transform-model/dataflows/dataflows-premium-features.md?tabs=gen2). Furthermore, they can work with models that above 1 GB in size.
 
 ## Next steps
@@ -219,7 +257,7 @@ Customers can realize many benefits when they migrate from AAS to Power BI Premi
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium](migrate-azure-analysis-services-to-powerbi-premium.md)
-- [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+- [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 - Questions? [Try asking the Power BI community](https://community.powerbi.com/)

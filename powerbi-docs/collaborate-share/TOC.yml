@@ -7,147 +7,159 @@
     items: 
       - name: "Ways to share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
-  - name: Concepts
-    expanded: true
+  - name: Share, publish, & endorse your work
     items: 
-      - name: "The new workspace experience"
-        href: service-new-workspaces.md
-      - name: "Roles in new workspaces"
-        href: service-roles-new-workspaces.md
-      - name: "Monitor usage in classic workspaces"
-        href: service-usage-metrics.md
-      - name: "Monitor usage in new workspaces"
-        href: service-modern-usage-metrics.md
-      - name: "Content endorsement"
-        href: service-endorsement-overview.md
-      - name: "Dataset discoverability"
-        href: service-discovery.md
-  - name: How-to guides
-    expanded: true
-    items:
-    - name: Collaborate in Power BI
-      items: 
-      - name: "Create the new workspaces"
-        href: service-create-the-new-workspaces.md
-      - name: "Give access to new workspaces"
-        href: service-give-access-new-workspaces.md
-      - name: "Upgrade classic workspaces"
-        href: service-upgrade-workspaces.md
-      - name: "Create classic workspaces"
-        href: service-create-workspaces.md
-      - name: "Publish apps from workspaces"
-        href: service-create-distribute-apps.md
-      - name: "Store files in OneDrive for a workspace"
-        href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-      - name: "Manage data storage in workspaces"
-        href: ../admin/service-admin-manage-your-data-storage-in-power-bi.md
-      - name: "Data lineage"
-        href: service-data-lineage.md
-      - name: "Dataset impact analysis"
-        href: service-dataset-impact-analysis.md
-      - name: "Data source impact analysis"
-        href: service-data-source-impact-analysis.md
-      - name: "Apply data sensitivity labels"
-        href: ../enterprise/service-security-apply-data-sensitivity-labels.md
-      - name: "Collaborate in a classic workspace"
-        href: service-collaborate-power-bi-workspace.md
-      - name: "Manage your group in Power BI and Microsoft 365"
-        href: service-manage-app-workspace-in-power-bi-and-office-365.md
-    - name: Power BI in Teams
-      items: 
-      - name: Collaborate in Teams, Outlook, & Office
-        href: service-collaborate-microsoft-teams.md
-      - name: Add the Power BI app to Teams
-        href: service-microsoft-teams-app.md
-      - name: Embed reports in Teams tabs
-        href: service-embed-report-microsoft-teams.md
-      - name: "Chat in Teams directly"
-        href: service-share-report-teams.md
-      - name: "Get a link preview in Teams"
-        href: service-teams-link-preview.md
-      - name: "View all your Power BI tabs in Teams"
-        href: service-teams-pivot.md
-      - name: "Analyze Teams usage in Teams"
-        href: service-teams-analytics.md
-      - name: "Get notifications in Teams"
-        href: service-teams-notifications.md
-    - name: Power BI in PowerPoint
-      items: 
-      - name: "About Power BI in PowerPoint"
-        href: service-power-bi-powerpoint-add-in-about.md
-      - name: "Add a live report page to PowerPoint"
-        href: service-power-bi-powerpoint-add-in-install.md
-      - name: "View and present live report pages in PowerPoint"
-        href: service-power-bi-powerpoint-add-in-view-present.md
-      - name: "Information for the Power BI admin"
-        href: service-power-bi-powerpoint-add-in-admin.md
-      - name: "Troubleshoot the Power BI add-in"
-        href: service-power-bi-powerpoint-add-in-troubleshoot.md
-      - name: "Export a static Power BI report to PowerPoint"
-        href: end-user-powerpoint.md
-    - name: Publish and share your work
-      items: 
-      - name: "Share reports and dashboards"
-        href: service-share-dashboards.md
-      - name: "Request access to a report or dashboard"
-        href: service-request-access.md
-      - name: "Filter and share a report"
-        href: service-share-reports.md
-      - name: "Troubleshoot sharing reports or dashboards"
-        href: service-troubleshoot-sharing.md
-      - name: "Filter a report using parameters in the URL"
-        href: service-url-filters.md
-      - name: "Endorse your content"
-        href: service-endorse-content.md
-      - name: "Feature content on Home"
-        href: service-featured-content.md
-      - name: "Embed report in SharePoint Online"
-        href: service-embed-report-spo.md
-      - name: "Embed report in a secure portal or website"
-        href: service-embed-secure.md
-      - name: "Publish from Power BI to the web"
-        href: service-publish-to-web.md
-      - name: "Share a dashboard that links to an Excel workbook on OneDrive"
-        href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Power BI and Excel
-      items:         
-      - name: "Connect Excel to Power BI datasets"
-        href: service-connect-power-bi-datasets-excel.md
-      - name: "Start in Excel"
-        href: service-connect-excel-power-bi-datasets.md
-      - name: "Start in Power BI"
-        href: service-analyze-in-excel.md
-      - name: "Build refreshable reports in Excel"
-        href: service-analyze-power-bi-datasets-excel.md
-      - name: "Use Power BI featured tables in Excel"
-        href: service-excel-featured-tables.md
-      - name: "Set featured tables"
-        href: service-create-excel-featured-tables.md
-      - name: "Troubleshoot connecting Excel to Power BI data"
-        href: desktop-troubleshooting-analyze-in-excel.md
-      - name: "Error: We couldn't find data in your Excel workbook"
-        href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-    - name: Power BI and Power Automate
-      items: 
-      - name: Integrate data alerts with Power Automate
-        href: service-flow-integration.md
-      - name: Export and email reports with Power Automate
-        href: service-automate-power-bi-report-export.md
-      - name: Export paginated reports with Power Automate
-        href: service-automate-paginated-integration.md
-      - name: Save paginated reports to OneDrive or SharePoint Online
-        href: service-automate-paginated-onedrive-sharepoint.md
-      - name: Export paginated reports from Excel Online or SharePoint list
-        href: service-automate-paginated-excel-sharepoint-list.md
-      - name: Save a paginated report to a local folder
-        href: service-automate-paginated-local-file.md
-      - name: "Power Automate button visual"
-        href: ../create-reports/power-bi-automate-visual.md
-    - name: "Use third-party apps"
-      href: service-power-bi-get-started-third-party-apps.md
-    - name: Organizational content packs
-      items:
-      - name: "Manage, update, delete content packs"
-        href: service-organizational-content-pack-manage-update-delete.md
-      - name: "Remove a connection to a content pack"
-        href: service-organizational-content-pack-disconnect.md
+    - name: "Content endorsement"
+      href: service-endorsement-overview.md
+    - name: "Dataset discoverability"
+      href: service-discovery.md
+    - name: "Share reports and dashboards"
+      href: service-share-dashboards.md
+    - name: "Request access to a report or dashboard"
+      href: service-request-access.md
+    - name: "Filter and share a report"
+      href: service-share-reports.md
+    - name: "Troubleshoot sharing reports or dashboards"
+      href: service-troubleshoot-sharing.md
+    - name: "Subscribe to reports and dashboards"
+      href: end-user-subscribe.md
+    - name: "Troubleshoot creating and using subscriptions"  
+      href: service-troubleshoot-subscribe.yml
+    - name: "Filter a report using parameters in the URL"
+      href: service-url-filters.md
+    - name: "Endorse your content"
+      href: service-endorse-content.md
+    - name: "Feature content on Home"
+      href: service-featured-content.md
+    - name: "Embed report in SharePoint Online"
+      href: service-embed-report-spo.md
+    - name: "Embed report in a secure portal or website"
+      href: service-embed-secure.md
+    - name: "Publish from Power BI to the web"
+      href: service-publish-to-web.md
+    - name: "Share a dashboard that links to an Excel workbook on OneDrive"
+      href: service-share-dashboard-that-links-to-excel-onedrive.md
+  - name: Collaborate in workspaces
+    items: 
+    - name: "Workspaces in Power BI"
+      href: service-new-workspaces.md
+    - name: "Create workspaces"
+      href: service-create-the-new-workspaces.md
+    - name: "Roles in workspaces"
+      href: service-roles-new-workspaces.md
+    - name: "Monitor usage in workspaces"
+      href: service-modern-usage-metrics.md
+    - name: "Monitor usage in My workspace"
+      href: service-usage-metrics.md
+    - name: "Give access to workspaces"
+      href: service-give-access-new-workspaces.md
+    - name: "Publish apps from workspaces"
+      href: service-create-distribute-apps.md
+    - name: "Manage data storage in workspaces"
+      href: ../admin/service-admin-manage-your-data-storage-in-power-bi.md
+    - name: "Data lineage"
+      href: service-data-lineage.md
+    - name: "Dataset impact analysis"
+      href: service-dataset-impact-analysis.md
+    - name: "Data source impact analysis"
+      href: service-data-source-impact-analysis.md
+    - name: "Apply data sensitivity labels"
+      href: ../enterprise/service-security-apply-data-sensitivity-labels.md
+  - name: Power BI in Teams
+    items: 
+    - name: Collaborate in Teams, Outlook, & Office
+      href: service-collaborate-microsoft-teams.md
+    - name: Add the Power BI app to Teams
+      href: service-microsoft-teams-app.md
+    - name: Embed reports in Teams tabs
+      href: service-embed-report-microsoft-teams.md
+    - name: Use data for productive meetings  
+      href: ../consumer/business-user-teams-meetings.md?context=/power-bi/collaborate-share/context/context
+    - name: Use metrics to improve results  
+      href: ../consumer/business-user-teams-goals.md?context=/power-bi/collaborate-share/context/context
+    - name: Lead data-driven discussions  
+      href: ../consumer/business-user-teams-share-data.md?context=/power-bi/collaborate-share/context/context
+    - name: Create reports from your Teams data  
+      href: ../consumer/business-user-teams-create-reports.md?context=/power-bi/collaborate-share/context/context
+    - name: Analyze your collaboration data  
+      href: ../consumer/business-user-teams-collaboration-data.md?context=/power-bi/collaborate-share/context/context
+    - name: "Chat in Teams directly"
+      href: service-share-report-teams.md
+    - name: "Get a link preview in Teams"
+      href: service-teams-link-preview.md
+    - name: "View all your Power BI tabs in Teams"
+      href: service-teams-pivot.md
+    - name: "Analyze Teams usage in Teams"
+      href: service-teams-analytics.md
+    - name: "Get notifications in Teams"
+      href: service-teams-notifications.md
+  - name: Power BI in PowerPoint
+    items: 
+    - name: "About storytelling with Power BI in PowerPoint"
+      href: service-power-bi-powerpoint-add-in-about.md
+    - name: "Add a live report page to PowerPoint"
+      href: service-power-bi-powerpoint-add-in-install.md
+    - name: "View and present live report pages in PowerPoint"
+      href: service-power-bi-powerpoint-add-in-view-present.md
+    - name: "Information for the Power BI admin"
+      href: service-power-bi-powerpoint-add-in-admin.md
+    - name: "Troubleshoot the Power BI add-in"
+      href: service-power-bi-powerpoint-add-in-troubleshoot.md
+    - name: "Export a static Power BI report to PowerPoint"
+      href: end-user-powerpoint.md
+  - name: Power BI and Excel
+    items:         
+    - name: "Connect Excel to Power BI datasets"
+      href: service-connect-power-bi-datasets-excel.md
+    - name: "Start in Excel"
+      href: service-connect-excel-power-bi-datasets.md
+    - name: "Start in Power BI"
+      href: service-analyze-in-excel.md
+    - name: "Build refreshable reports in Excel"
+      href: service-analyze-power-bi-datasets-excel.md
+    - name: "Use Power BI featured tables in Excel"
+      href: service-excel-featured-tables.md
+    - name: "Set featured tables"
+      href: service-create-excel-featured-tables.md
+    - name: "Troubleshoot connecting Excel to Power BI data"
+      href: desktop-troubleshooting-analyze-in-excel.md
+    - name: "Error: We couldn't find data in your Excel workbook"
+      href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
+  - name: Power BI and Power Automate
+    items: 
+    - name: Integrate data alerts with Power Automate
+      href: service-flow-integration.md
+    - name: Export and email reports with Power Automate
+      href: service-automate-power-bi-report-export.md
+    - name: Export paginated reports with Power Automate
+      href: service-automate-paginated-integration.md
+    - name: Save paginated reports to OneDrive or SharePoint Online
+      href: service-automate-paginated-onedrive-sharepoint.md
+    - name: Export paginated reports from Excel Online or SharePoint list
+      href: service-automate-paginated-excel-sharepoint-list.md
+    - name: Save a paginated report to a local folder
+      href: service-automate-paginated-local-file.md
+    - name: "Power Automate button visual"
+      href: ../create-reports/power-bi-automate-visual.md
+  - name: Share Power BI datasets with external users
+    items: 
+    - name: About in-place dataset sharing
+      href: service-dataset-external-org-share-about.md
+    - name: Share datasets with in-place dataset sharing
+      href: service-dataset-external-org-share-provider.md
+    - name: Access datasets shared externally in your own tenant
+      href: service-dataset-external-org-share-view.md
+    - name: Information for Power BI admin
+      href: service-dataset-external-org-share-admin.md
+  - name: Power BI in Power Apps solutions
+    items: 
+    - name: About the Power BI/PowerApps solutions integration
+      href: service-power-bi-powerapps-integration-about.md
+    - name: Enable the Power BI/PowerApps solutions integration
+      href: service-power-bi-powerapps-integration-enable.md
+    - name: Using Power BI in Power Apps solutions
+      href: service-power-bi-powerapps-integration-using.md
+    - name: Considerations working with the Power Apps/Power BI integration
+      href: service-power-bi-powerapps-integration-considerations.md
+  - name: "Use third-party apps"
+    href: service-power-bi-get-started-third-party-apps.md

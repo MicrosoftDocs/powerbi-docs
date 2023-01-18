@@ -12,9 +12,9 @@ ms.date: 06/17/2021
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service
-You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. Many R packages are supported in the Power BI service (and more are being supported all the time), and some packages are not.
+You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. Many R packages are supported in the Power BI service (and more are being supported all the time), and some packages aren't.
 
-The following sections provide an alphabetical table of which R packages are supported in Power BI, and which are not. For more information about R in Power BI, see the [R visuals](../visuals/service-r-visuals.md) article.
+The following sections provide an alphabetical table of which R packages are supported in Power BI, and which aren't. For more information about R in Power BI, see the [R visuals](../visuals/service-r-visuals.md) article.
 
 ## Request support for a new R package
 Supported R packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an R package not found in that list, please submit your request to [Power BI Ideas](https://ideas.powerbi.com).
@@ -24,12 +24,12 @@ There are a handful of requirements and limitations for R packages:
 
 * Current R runtime: Microsoft R 3.4.4
 * The Power BI service, for the most part, supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
-* The Power BI service supports packages published in CRAN. The service does not support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
+* The Power BI service supports packages published in CRAN. The service doesn't support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
 * The **Power BI Desktop** has two variations for R packages:
 
   * For R visuals, you can install any package, including custom R packages
   * For Custom R visuals, only public CRAN packages are supported for auto-installation of the packages
-* For security and privacy reasons, R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service, are not supported. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
+* For security and privacy reasons, R packages that provide client-server queries over the World-Wide Web (such as RgoogleMaps) in the service, aren't supported. Networking is blocked for such attempts. See the following section for a list of supported and unsupported R packages.
 * The approval process for including a new R package has a tree of dependencies; some dependencies required to be installed in the service cannot be supported.
 
 ## R packages that are supported in Power BI
@@ -44,6 +44,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |acepack|1.4.1|https://cran.r-project.org/web/packages/acepack/index.html|
 |actuar|2.3-1|https://cran.r-project.org/web/packages/actuar/index.html|
 |ade4|1.7-10|https://cran.r-project.org/web/packages/ade4/index.html|
+|adegenet|2.1.2|https://cran.r-project.org/web/packages/adegenet/index.html|
 |AdMit|2.1.3|https://cran.r-project.org/web/packages/AdMit/index.html|
 |AER|1.2-5|https://cran.r-project.org/web/packages/AER/index.html|
 |agricolae|1.3-1|https://cran.r-project.org/web/packages/agricolae/index.html|
@@ -63,6 +64,8 @@ The following table shows which packages **are supported** in the Power BI servi
 |ash|1.0-15|https://cran.r-project.org/web/packages/ash/index.html|
 |assertthat|0.2.0|https://cran.r-project.org/web/packages/assertthat/index.html|
 |autocogs|0.1.2|https://cran.r-project.org/web/packages/autocogs/index.html|
+|automap|1.0-14|https://cran.r-project.org/web/packages/automap/index.html|
+|aweek|1.0.1|https://cran.r-project.org/web/packages/aweek/index.html|
 |AzureML|0.2.14|https://cran.r-project.org/web/packages/AzureML/index.html|
 |BaBooN|0.2-0|https://cran.r-project.org/web/packages/BaBooN/index.html|
 |BACCO|2.0-9|https://cran.r-project.org/web/packages/BACCO/index.html|
@@ -107,6 +110,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |bit64|0.9-7|https://cran.r-project.org/web/packages/bit64/index.html|
 |bitops|1.0-6|https://cran.r-project.org/web/packages/bitops/index.html|
 |bizdays|1.0.6|https://cran.r-project.org/web/packages/bizdays/index.html|
+|blandr|0.5.1|https://cran.r-project.org/web/packages/blandr/index.html|
 |blme|1.0-4|https://cran.r-project.org/web/packages/blme/index.html|
 |blob|1.1.1|https://cran.r-project.org/web/packages/blob/index.html|
 |BLR|1.4|https://cran.r-project.org/web/packages/BLR/index.html|
@@ -117,6 +121,9 @@ The following table shows which packages **are supported** in the Power BI servi
 |bnlearn|4.3|https://cran.r-project.org/web/packages/bnlearn/index.html|
 |boa|1.1.8-2|https://cran.r-project.org/web/packages/boa/index.html|
 |bomrang|0.1.4|https://cran.r-project.org/web/packages/bomrang/index.html|
+|BoolNet|2.1.5|https://cran.r-project.org/web/packages/BoolNet/index.html|
+|Boom|0.7|https://cran.r-project.org/web/packages/Boom/index.html|
+|BoomSpikeSlab|0.9.0|https://cran.r-project.org/web/packages/BoomSpikeSlab/index.html|
 |boot|1.3-20|https://cran.r-project.org/web/packages/boot/index.html|
 |bootstrap|2017.2|https://cran.r-project.org/web/packages/bootstrap/index.html|
 |Boruta|5.3.0|https://cran.r-project.org/web/packages/Boruta/index.html|
@@ -127,6 +134,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |broom|0.4.4|https://cran.r-project.org/web/packages/broom/index.html|
 |bspec|1.5|https://cran.r-project.org/web/packages/bspec/index.html|
 |bspmma|0.1-1|https://cran.r-project.org/web/packages/bspmma/index.html|
+|bsts|0.7.1|https://cran.r-project.org/web/packages/bsts/index.html|
 |bupaR|0.4.4|https://cran.r-project.org/web/packages/bupaR/index.html|
 |BVS|4.12.1|https://cran.r-project.org/web/packages/BVS/index.html|
 |C50|0.1.1|https://cran.r-project.org/web/packages/C50/index.html|
@@ -143,6 +151,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |cclust|0.6-21|https://cran.r-project.org/web/packages/cclust/index.html|
 |cellranger|1.1.0|https://cran.r-project.org/web/packages/cellranger/index.html|
 |ChainLadder|0.2.5|https://cran.r-project.org/web/packages/ChainLadder/index.html|
+|changepoint|2.2.2|https://cran.r-project.org/web/packages/changepoint/index.html|
 |checkmate|1.8.5|https://cran.r-project.org/web/packages/checkmate/index.html|
 |checkpoint|0.4.3|https://cran.r-project.org/web/packages/checkpoint/index.html|
 |choroplethrMaps|1.0.1|https://cran.r-project.org/web/packages/choroplethrMaps/index.html|
@@ -150,8 +159,8 @@ The following table shows which packages **are supported** in the Power BI servi
 |circlize|0.4.3|https://cran.r-project.org/web/packages/circlize/index.html|
 |Ckmeans.1d.dp|4.2.1|https://cran.r-project.org/web/packages/Ckmeans.1d.dp/index.html|
 |class|7.3-14|https://cran.r-project.org/web/packages/class/index.html|
-|classInt|0.1-24|https://cran.r-project.org/web/packages/classInt/index.html|
-|cli|1.0.0|https://cran.r-project.org/web/packages/cli/index.html|
+|classInt|0.3-3|https://cran.r-project.org/web/packages/classInt/index.html|
+|CLI|1.0.0|https://cran.r-project.org/web/packages/cli/index.html|
 |ClickClust|1.1.5|https://cran.r-project.org/web/packages/ClickClust/index.html|
 |clickstream|1.3.0|https://cran.r-project.org/web/packages/clickstream/index.html|
 |clue|0.3-54|https://cran.r-project.org/web/packages/clue/index.html|
@@ -165,6 +174,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |collapsibleTree|0.1.6|https://cran.r-project.org/web/packages/collapsibleTree/index.html|
 |colorRamps|2.3|https://cran.r-project.org/web/packages/colorRamps/index.html|
 |colorspace|1.3-2|https://cran.r-project.org/web/packages/colorspace/index.html|
+|colourpicker|1.0|https://cran.r-project.org/web/packages/colourpicker/index.html|
 |combinat|0.0-8|https://cran.r-project.org/web/packages/combinat/index.html|
 |commonmark|1.4|https://cran.r-project.org/web/packages/commonmark/index.html|
 |compiler|3.4.4|NA|
@@ -176,6 +186,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |covr|3.0.1|https://cran.r-project.org/web/packages/covr/index.html|
 |cowplot|0.9.2|https://cran.r-project.org/web/packages/cowplot/index.html|
 |cplm|0.7-5|https://cran.r-project.org/web/packages/cplm/index.html|
+|cpp11|0.4.2|https://cran.r-project.org/web/packages/cpp11/index.html|
 |crayon|1.3.4|https://cran.r-project.org/web/packages/crayon/index.html|
 |crosstalk|1.0.0|https://cran.r-project.org/web/packages/crosstalk/index.html|
 |cslogistic|0.1-3|https://cran.r-project.org/web/packages/cslogistic/index.html|
@@ -186,10 +197,12 @@ The following table shows which packages **are supported** in the Power BI servi
 |curl|3.2|https://cran.r-project.org/web/packages/curl/index.html|
 |CVST|0.2-1|https://cran.r-project.org/web/packages/CVST/index.html|
 |cvTools|0.3.2|https://cran.r-project.org/web/packages/cvTools/index.html|
+|d3heatmap|0.6.1.2|https://cran.r-project.org/web/packages/d3heatmap/index.html|
 |d3Network|0.5.2.1|https://cran.r-project.org/web/packages/d3Network/index.html|
 |d3r|0.8.0|https://cran.r-project.org/web/packages/d3r/index.html|
-|data.table|1.10.4-3|https://cran.r-project.org/web/packages/data.table/index.html|
+|data.table|1.12.6|https://cran.r-project.org/web/packages/data.table/index.html|
 |data.tree|0.7.5|https://cran.r-project.org/web/packages/data.tree/index.html|
+|datasauRus|0.1.4|https://cran.r-project.org/web/packages/datasauRus/index.html|
 |datasets|3.4.4|NA|
 |date|1.2-38|https://cran.r-project.org/web/packages/date/index.html|
 |DBI|0.8|https://cran.r-project.org/web/packages/DBI/index.html|
@@ -215,6 +228,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |digest|0.6.15|https://cran.r-project.org/web/packages/digest/index.html|
 |dimRed|0.1.0|https://cran.r-project.org/web/packages/dimRed/index.html|
 |diptest|0.75-7|https://cran.r-project.org/web/packages/diptest/index.html|
+|distcrete|1.0.3|https://cran.r-project.org/web/packages/distcrete/index.html|
 |DistributionUtils|0.6-0|https://cran.r-project.org/web/packages/DistributionUtils/index.html|
 |distrom|1.0|https://cran.r-project.org/web/packages/distrom/index.html|
 |dlm|1.1-4|https://cran.r-project.org/web/packages/dlm/index.html|
@@ -224,7 +238,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |doSNOW|1.0.16|https://cran.r-project.org/web/packages/doSNOW/index.html|
 |dotCall64|0.9-5.2|https://cran.r-project.org/web/packages/dotCall64/index.html|
 |downloader|0.4|https://cran.r-project.org/web/packages/downloader/index.html|
-|dplyr|0.8.0.1|https://cran.r-project.org/web/packages/dplyr/index.html|
+|dplyr|0.8.3|https://cran.r-project.org/web/packages/dplyr/index.html|
 |DPpackage|1.1-7.4|https://cran.r-project.org/web/packages/DPpackage/index.html|
 |DRR|0.0.3|https://cran.r-project.org/web/packages/DRR/index.html|
 |dse|2015.12-1|https://cran.r-project.org/web/packages/dse/index.html|
@@ -241,7 +255,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |edeaR|0.8.0|https://cran.r-project.org/web/packages/edeaR/index.html|
 |effects|4.0-1|https://cran.r-project.org/web/packages/effects/index.html|
 |ellipse|0.4.1|https://cran.r-project.org/web/packages/ellipse/index.html|
-|ellipsis|0.1.0|https://cran.r-project.org/web/packages/ellipsis/index.html|
+|ellipsis|0.3.0|https://cran.r-project.org/web/packages/ellipsis/index.html|
 |emmeans|1.1.2|https://cran.r-project.org/web/packages/emmeans/index.html|
 |emulator|1.2-15|https://cran.r-project.org/web/packages/emulator/index.html|
 |energy|1.7-2|https://cran.r-project.org/web/packages/energy/index.html|
@@ -304,6 +318,8 @@ The following table shows which packages **are supported** in the Power BI servi
 |fUnitRoots|3042.79|https://cran.r-project.org/web/packages/fUnitRoots/index.html|
 |futile.logger|1.4.3|https://cran.r-project.org/web/packages/futile.logger/index.html|
 |futile.options|1.0.0|https://cran.r-project.org/web/packages/futile.options/index.html|
+|future|1.15.0|https://cran.r-project.org/web/packages/future/index.html|
+|future.apply|1.3.0|https://cran.r-project.org/web/packages/future.apply/index.html|
 |gam|1.15|https://cran.r-project.org/web/packages/gam/index.html|
 |gamlr|1.13-4|https://cran.r-project.org/web/packages/gamlr/index.html|
 |gamlss|5.0-6|https://cran.r-project.org/web/packages/gamlss/index.html|
@@ -316,6 +332,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |gdtools|0.1.7|https://cran.r-project.org/web/packages/gdtools/index.html|
 |gee|4.13-19|https://cran.r-project.org/web/packages/gee/index.html|
 |genalg|0.2.0|https://cran.r-project.org/web/packages/genalg/index.html|
+|generics|0.1.2|https://cran.r-project.org/web/packages/generics/index.html|
 |genetics|1.3.8.1|https://cran.r-project.org/web/packages/genetics/index.html|
 |GenSA|1.1.7|https://cran.r-project.org/web/packages/GenSA/index.html|
 |geojson|0.2.0|https://cran.r-project.org/web/packages/geojson/index.html|
@@ -324,29 +341,31 @@ The following table shows which packages **are supported** in the Power BI servi
 |geoR|1.7-5.2|https://cran.r-project.org/web/packages/geoR/index.html|
 |geoRglm|0.9-11|https://cran.r-project.org/web/packages/geoRglm/index.html|
 |geosphere|1.5-7|https://cran.r-project.org/web/packages/geosphere/index.html|
-|GGally|1.3.2|https://cran.r-project.org/web/packages/GGally/index.html|
+|GGally|2.0.0|https://cran.r-project.org/web/packages/GGally/index.html|
 |ggalt|0.4.0|https://cran.r-project.org/web/packages/ggalt/index.html|
 |gganimate|1.0.3|https://cran.r-project.org/web/packages/gganimate/index.html|
 |ggcorrplot|0.1.1|https://cran.r-project.org/web/packages/ggcorrplot/index.html|
 |ggdendro|0.1-20|https://cran.r-project.org/web/packages/ggdendro/index.html|
 |ggeffects|0.3.2|https://cran.r-project.org/web/packages/ggeffects/index.html|
+|ggExtra|0.9|https://cran.r-project.org/web/packages/ggExtra/index.html|
 |ggforce|0.1.1|https://cran.r-project.org/web/packages/ggforce/index.html|
 |ggformula|0.6.2|https://cran.r-project.org/web/packages/ggformula/index.html|
 |ggfortify|0.4.3|https://cran.r-project.org/web/packages/ggfortify/index.html|
 |gghighlight|0.3.0|https://cran.r-project.org/web/packages/gghighlight/index.html|
 |ggimage|0.1.2|https://cran.r-project.org/web/packages/ggimage/index.html|
+|ggiraph|0.6.1|https://cran.r-project.org/web/packages/ggiraph/index.html|
 |ggjoy|0.4.0|https://cran.r-project.org/web/packages/ggjoy/index.html|
 |ggm|2.3|https://cran.r-project.org/web/packages/ggm/index.html|
-|ggmap|2.6.1|https://cran.r-project.org/web/packages/ggmap/index.html|
+|ggmap|3.0.0|https://cran.r-project.org/web/packages/ggmap/index.html|
 |ggmcmc|1.1|https://cran.r-project.org/web/packages/ggmcmc/index.html|
-|ggplot2|3.2.0|https://cran.r-project.org/web/packages/ggplot2/index.html|
+|ggplot2|3.3.3|https://cran.r-project.org/web/packages/ggplot2/index.html|
 |ggplot2movies|0.0.1|https://cran.r-project.org/web/packages/ggplot2movies/index.html|
 |ggpmisc|0.2.16|https://cran.r-project.org/web/packages/ggpmisc/index.html|
-|ggpubr|0.1.6|https://cran.r-project.org/web/packages/ggpubr/index.html|
+|ggpubr|0.2.3|https://cran.r-project.org/web/packages/ggpubr/index.html|
 |ggQC|0.0.31|https://cran.r-project.org/web/packages/ggQC/index.html|
 |ggRandomForests|2.0.1|https://cran.r-project.org/web/packages/ggRandomForests/index.html|
 |ggraph|1.0.1|https://cran.r-project.org/web/packages/ggraph/index.html|
-|ggrepel|0.7.0|https://cran.r-project.org/web/packages/ggrepel/index.html|
+|ggrepel|0.8.0|https://cran.r-project.org/web/packages/ggrepel/index.html|
 |ggridges|0.4.1|https://cran.r-project.org/web/packages/ggridges/index.html|
 |ggsci|2.8|https://cran.r-project.org/web/packages/ggsci/index.html|
 |ggsignif|0.4.0|https://cran.r-project.org/web/packages/ggsignif/index.html|
@@ -361,6 +380,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |glmmTMB|0.2.0|https://cran.r-project.org/web/packages/glmmTMB/index.html|
 |glmnet|2.0-13|https://cran.r-project.org/web/packages/glmnet/index.html|
 |GlobalOptions|0.0.13|https://cran.r-project.org/web/packages/GlobalOptions/index.html|
+|globals|0.12.4|https://cran.r-project.org/web/packages/globals/index.html|
 |glue|1.3.1|https://cran.r-project.org/web/packages/glue/index.html|
 |gmodels|2.16.2|https://cran.r-project.org/web/packages/gmodels/index.html|
 |gmp|0.5-13.1|https://cran.r-project.org/web/packages/gmp/index.html|
@@ -405,33 +425,41 @@ The following table shows which packages **are supported** in the Power BI servi
 |Hmisc|4.1-1|https://cran.r-project.org/web/packages/Hmisc/index.html|
 |hms|0.4.2|https://cran.r-project.org/web/packages/hms/index.html|
 |hoardr|0.2.0|https://cran.r-project.org/web/packages/hoardr/index.html|
+|hrbrthemes|0.6.0|https://cran.r-project.org/web/packages/hrbrthemes/index.html|
 |HSAUR|1.3-9|https://cran.r-project.org/web/packages/HSAUR/index.html|
 |htmlTable|1.11.2|https://cran.r-project.org/web/packages/htmlTable/index.html|
 |htmltools|0.3.6|https://cran.r-project.org/web/packages/htmltools/index.html|
 |htmlwidgets|1.3|https://cran.r-project.org/web/packages/htmlwidgets/index.html|
 |hts|5.1.5|https://cran.r-project.org/web/packages/hts/index.html|
 |httpuv|1.3.6.2|https://cran.r-project.org/web/packages/httpuv/index.html|
+|httr|1.3.1|https://cran.r-project.org/web/packages/httr/index.html|
 |huge|1.2.7|https://cran.r-project.org/web/packages/huge/index.html|
 |hunspell|2.9|https://cran.r-project.org/web/packages/hunspell/index.html|
+|hydroTSM|0.5-1|https://cran.r-project.org/web/packages/hydroTSM/index.html|
 |IBrokers|0.9-12|https://cran.r-project.org/web/packages/IBrokers/index.html|
 |ifultools|2.0-4|https://cran.r-project.org/web/packages/ifultools/index.html|
 |igraph|1.2.1|https://cran.r-project.org/web/packages/igraph/index.html|
 |imager|0.40.2|https://cran.r-project.org/web/packages/imager/index.html|
+|imputeTS|2.7|https://cran.r-project.org/web/packages/imputeTS/index.html|
 |incidence|1.7.2|https://cran.r-project.org/web/packages/incidence/index.html|
 |influenceR|0.1.0|https://cran.r-project.org/web/packages/influenceR/index.html|
+|InformationValue|1.2.3|https://cran.r-project.org/web/packages/InformationValue/index.html|
 |inline|0.3.14|https://cran.r-project.org/web/packages/inline/index.html|
 |intervals|0.15.1|https://cran.r-project.org/web/packages/intervals/index.html|
 |inum|1.0-0|https://cran.r-project.org/web/packages/inum/index.html|
+|investr|1.4.2|https://cran.r-project.org/web/packages/investr/index.html|
 |ipred|0.9-6|https://cran.r-project.org/web/packages/ipred/index.html|
 |irlba|2.3.2|https://cran.r-project.org/web/packages/irlba/index.html|
 |irr|0.84|https://cran.r-project.org/web/packages/irr/index.html|
+|isoband|0.2.0|https://cran.r-project.org/web/packages/isoband/index.html|
 |ISOcodes|2017.09.27|https://cran.r-project.org/web/packages/ISOcodes/index.html|
 |iterators|1.0.9|https://cran.r-project.org/web/packages/iterators/index.html|
 |janeaustenr|0.1.5|https://cran.r-project.org/web/packages/janeaustenr/index.html|
 |janitor|1.0.0|https://cran.r-project.org/web/packages/janitor/index.html|
+|jmvcore|1.0.8|https://cran.r-project.org/web/packages/jmvcore/index.html|
 |jpeg|0.1-8|https://cran.r-project.org/web/packages/jpeg/index.html|
 |jqr|1.0.0|https://cran.r-project.org/web/packages/jqr/index.html|
-|jsonlite|1.5|https://cran.r-project.org/web/packages/jsonlite/index.html|
+|jsonlite|1.6|https://cran.r-project.org/web/packages/jsonlite/index.html|
 |jsonvalidate|1.0.0|https://cran.r-project.org/web/packages/jsonvalidate/index.html|
 |jtools|0.9.4|https://cran.r-project.org/web/packages/jtools/index.html|
 |kableExtra|0.7.0|https://cran.r-project.org/web/packages/kableExtra/index.html|
@@ -452,6 +480,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |Lahman|6.0-0|https://cran.r-project.org/web/packages/Lahman/index.html|
 |lambda.r|1.2|https://cran.r-project.org/web/packages/lambda.r/index.html|
 |lars|1.2|https://cran.r-project.org/web/packages/lars/index.html|
+|later|1.0.0|https://cran.r-project.org/web/packages/later/index.html|
 |latex2exp|0.4.0|https://cran.r-project.org/web/packages/latex2exp/index.html|
 |lattice|0.20-35|https://cran.r-project.org/web/packages/lattice/index.html|
 |latticeExtra|0.6-28|https://cran.r-project.org/web/packages/latticeExtra/index.html|
@@ -468,9 +497,12 @@ The following table shows which packages **are supported** in the Power BI servi
 |libcoin|1.0-1|https://cran.r-project.org/web/packages/libcoin/index.html|
 |LiblineaR|2.10-8|https://cran.r-project.org/web/packages/LiblineaR/index.html|
 |LICORS|0.2.0|https://cran.r-project.org/web/packages/LICORS/index.html|
+|lifecycle|0.1.0|https://cran.r-project.org/web/packages/lifecycle/index.html|
 |likert|1.3.5|https://cran.r-project.org/web/packages/likert/index.html|
 |limSolve|1.5.5.3|https://cran.r-project.org/web/packages/limSolve/index.html|
+|linelist|0.0.40.9000|https://cran.r-project.org/web/packages/linelist/index.html|
 |linprog|0.9-2|https://cran.r-project.org/web/packages/linprog/index.html|
+|listenv|0.7.0|https://cran.r-project.org/web/packages/listenv/index.html|
 |lm.beta|1.5-1|https://cran.r-project.org/web/packages/lm.beta/index.html|
 |lme4|1.1-16|https://cran.r-project.org/web/packages/lme4/index.html|
 |lmm|1.0|https://cran.r-project.org/web/packages/lmm/index.html|
@@ -499,7 +531,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |MasterBayes|2.55|https://cran.r-project.org/web/packages/MasterBayes/index.html|
 |Matching|4.9-5|https://cran.r-project.org/web/packages/Matching/index.html|
 |MatchIt|3.0.2|https://cran.r-project.org/web/packages/MatchIt/index.html|
-|Matchmaker|0.1.1|https://cran.r-project.org/web/packages/matchmaker/index.html|
+|matchmaker|0.1.1|https://cran.r-project.org/web/packages/matchmaker/index.html|
 |Matrix|1.2-12|https://cran.r-project.org/web/packages/Matrix/index.html|
 |matrixcalc|1.0-3|https://cran.r-project.org/web/packages/matrixcalc/index.html|
 |MatrixModels|0.4-1|https://cran.r-project.org/web/packages/MatrixModels/index.html|
@@ -514,6 +546,8 @@ The following table shows which packages **are supported** in the Power BI servi
 |mda|0.4-10|https://cran.r-project.org/web/packages/mda/index.html|
 |memoise|1.1.0|https://cran.r-project.org/web/packages/memoise/index.html|
 |merTools|0.3.0|https://cran.r-project.org/web/packages/merTools/index.html|
+|meta|4.9-1|https://cran.r-project.org/web/packages/meta/index.html|
+|metafor|2.0-0|https://cran.r-project.org/web/packages/metafor/index.html|
 |methods|3.4.4|NA|
 |metricsgraphics|0.9.0|https://cran.r-project.org/web/packages/metricsgraphics/index.html|
 |mgcv|1.8-23|https://cran.r-project.org/web/packages/mgcv/index.html|
@@ -548,6 +582,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |mosaicCore|0.4.2|https://cran.r-project.org/web/packages/mosaicCore/index.html|
 |mosaicData|0.16.0|https://cran.r-project.org/web/packages/mosaicData/index.html|
 |MSBVAR|0.9-3|https://cran.r-project.org/web/packages/MSBVAR/index.html|
+|msir|1.3.2|https://cran.r-project.org/web/packages/msir/index.html|
 |msm|1.6.6|https://cran.r-project.org/web/packages/msm/index.html|
 |multcomp|1.4-8|https://cran.r-project.org/web/packages/multcomp/index.html|
 |multicool|0.1-10|https://cran.r-project.org/web/packages/multicool/index.html|
@@ -563,6 +598,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |nlme|3.1-131.1|https://cran.r-project.org/web/packages/nlme/index.html|
 |nloptr|1.0.4|https://cran.r-project.org/web/packages/nloptr/index.html|
 |NLP|0.1-11|https://cran.r-project.org/web/packages/NLP/index.html|
+|nls.multstart|1.2.0|https://cran.r-project.org/web/packages/nls.multstart/index.html|
 |NMF|0.21.0|https://cran.r-project.org/web/packages/NMF/index.html|
 |nnet|7.3-12|https://cran.r-project.org/web/packages/nnet/index.html|
 |nnls|1.4|https://cran.r-project.org/web/packages/nnls/index.html|
@@ -574,11 +610,12 @@ The following table shows which packages **are supported** in the Power BI servi
 |openair|2.3-0|https://cran.r-project.org/web/packages/openair/index.html|
 |openssl|1.0.1|https://cran.r-project.org/web/packages/openssl/index.html|
 |osmar|1.1-7|https://cran.r-project.org/web/packages/osmar/index.html|
-|Outbreaks|1.5.0|https://cran.r-project.org/web/packages/outbreaks/index.html|
+|outbreaks|1.5.0|https://cran.r-project.org/web/packages/outbreaks/index.html|
 |OutlierDC|0.3-0|https://cran.r-project.org/web/packages/OutlierDC/index.html|
 |OutlierDM|1.1.1|https://cran.r-project.org/web/packages/OutlierDM/index.html|
 |outliers|0.14|https://cran.r-project.org/web/packages/outliers/index.html|
 |pacbpred|0.92.2|https://cran.r-project.org/web/packages/pacbpred/index.html|
+|packcircles|0.3.3|https://cran.r-project.org/web/packages/packcircles/index.html|
 |padr|0.4.0|https://cran.r-project.org/web/packages/padr/index.html|
 |parallel|3.4.4|NA|
 |partitions|1.9-19|https://cran.r-project.org/web/packages/partitions/index.html|
@@ -591,6 +628,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |PCAmixdata|3.1|https://cran.r-project.org/web/packages/PCAmixdata/index.html|
 |pcaPP|1.9-73|https://cran.r-project.org/web/packages/pcaPP/index.html|
 |pdc|1.0.3|https://cran.r-project.org/web/packages/pdc/index.html|
+|pegas|0.12|https://cran.r-project.org/web/packages/pegas/index.html|
 |PerformanceAnalytics|1.5.2|https://cran.r-project.org/web/packages/PerformanceAnalytics/index.html|
 |permute|0.9-4|https://cran.r-project.org/web/packages/permute/index.html|
 |perry|0.2.0|https://cran.r-project.org/web/packages/perry/index.html|
@@ -618,6 +656,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |prabclus|2.2-6|https://cran.r-project.org/web/packages/prabclus/index.html|
 |pracma|2.1.4|https://cran.r-project.org/web/packages/pracma/index.html|
 |praise|1.0.0|https://cran.r-project.org/web/packages/praise/index.html|
+|precrec|0.10.1|https://cran.r-project.org/web/packages/precrec/index.html|
 |prediction|0.2.0|https://cran.r-project.org/web/packages/prediction/index.html|
 |predmixcor|1.1-1|https://cran.r-project.org/web/packages/predmixcor/index.html|
 |PresenceAbsence|1.1.9|https://cran.r-project.org/web/packages/PresenceAbsence/index.html|
@@ -631,6 +670,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |profileModel|0.5-9|https://cran.r-project.org/web/packages/profileModel/index.html|
 |progress|1.1.2|https://cran.r-project.org/web/packages/progress/index.html|
 |proj4|1.0-8|https://cran.r-project.org/web/packages/proj4/index.html|
+|promises|1.1.0|https://cran.r-project.org/web/packages/promises/index.html|
 |prophet|0.2.1|https://cran.r-project.org/web/packages/prophet/index.html|
 |proto|1.0.0|https://cran.r-project.org/web/packages/proto/index.html|
 |protolite|1.7|https://cran.r-project.org/web/packages/protolite/index.html|
@@ -638,7 +678,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |pryr|0.1.4|https://cran.r-project.org/web/packages/pryr/index.html|
 |pscl|1.5.2|https://cran.r-project.org/web/packages/pscl/index.html|
 |psych|1.8.3.3|https://cran.r-project.org/web/packages/psych/index.html|
-|purrr|0.2.4|https://cran.r-project.org/web/packages/purrr/index.html|
+|purrr|0.3.3|https://cran.r-project.org/web/packages/purrr/index.html|
 |pwr|1.2-2|https://cran.r-project.org/web/packages/pwr/index.html|
 |qap|0.1-1|https://cran.r-project.org/web/packages/qap/index.html|
 |qcc|2.7|https://cran.r-project.org/web/packages/qcc/index.html|
@@ -713,6 +753,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |rex|1.1.2|https://cran.r-project.org/web/packages/rex/index.html|
 |rFerns|2.0.3|https://cran.r-project.org/web/packages/rFerns/index.html|
 |rfm|0.2.0|https://cran.r-project.org/web/packages/rfm/index.html|
+|RGA|0.4.2|https://cran.r-project.org/web/packages/RGA/index.html|
 |rgdal|1.2-18|https://cran.r-project.org/web/packages/rgdal/index.html|
 |rgeos|0.3-26|https://cran.r-project.org/web/packages/rgeos/index.html|
 |rgexf|0.15.3|https://cran.r-project.org/web/packages/rgexf/index.html|
@@ -725,7 +766,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |rjags|4-6|https://cran.r-project.org/web/packages/rjags/index.html|
 |rjson|0.2.15|https://cran.r-project.org/web/packages/rjson/index.html|
 |RJSONIO|1.3-0|https://cran.r-project.org/web/packages/RJSONIO/index.html|
-|rlang|0.3.4|https://cran.r-project.org/web/packages/rlang/index.html|
+|rlang|0.4.1|https://cran.r-project.org/web/packages/rlang/index.html|
 |rlecuyer|0.3-4|https://cran.r-project.org/web/packages/rlecuyer/index.html|
 |rlist|0.4.6.1|https://cran.r-project.org/web/packages/rlist/index.html|
 |rmapshaper|0.3.0|https://cran.r-project.org/web/packages/rmapshaper/index.html|
@@ -782,9 +823,10 @@ The following table shows which packages **are supported** in the Power BI servi
 |selectr|0.4-0|https://cran.r-project.org/web/packages/selectr/index.html|
 |sem|3.1-9|https://cran.r-project.org/web/packages/sem/index.html|
 |sentimentr|2.7.1|https://cran.r-project.org/web/packages/sentimentr/index.html|
+|seqinr|3.6-1|https://cran.r-project.org/web/packages/seqinr/index.html|
 |seriation|1.2-3|https://cran.r-project.org/web/packages/seriation/index.html|
 |setRNG|2013.9-1|https://cran.r-project.org/web/packages/setRNG/index.html|
-|sf|0.6-1|https://cran.r-project.org/web/packages/sf/index.html|
+|sf|0.7-4|https://cran.r-project.org/web/packages/sf/index.html|
 |sfsmisc|1.1-2|https://cran.r-project.org/web/packages/sfsmisc/index.html|
 |sgeostat|1.0-27|https://cran.r-project.org/web/packages/sgeostat/index.html|
 |shape|1.4.4|https://cran.r-project.org/web/packages/shape/index.html|
@@ -812,6 +854,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |snow|0.4-2|https://cran.r-project.org/web/packages/snow/index.html|
 |SnowballC|0.5.1|https://cran.r-project.org/web/packages/SnowballC/index.html|
 |snowFT|1.6-0|https://cran.r-project.org/web/packages/snowFT/index.html|
+|sodium|1.1|https://cran.r-project.org/web/packages/sodium/index.html|
 |sourcetools|0.1.6|https://cran.r-project.org/web/packages/sourcetools/index.html|
 |sp|1.2-7|https://cran.r-project.org/web/packages/sp/index.html|
 |spacetime|1.2-1|https://cran.r-project.org/web/packages/spacetime/index.html|
@@ -828,7 +871,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |spdep|0.7-4|https://cran.r-project.org/web/packages/spdep/index.html|
 |spikeslab|1.1.5|https://cran.r-project.org/web/packages/spikeslab/index.html|
 |splancs|2.01-40|https://cran.r-project.org/web/packages/splancs/index.html|
-|splines|3.4.4|NA|
+|splines|3.4.4|https://cran.r-project.org/web/packages/splines/index.html|
 |spls|2.2-2|https://cran.r-project.org/web/packages/spls/index.html|
 |splus2R|1.2-2|https://cran.r-project.org/web/packages/splus2R/index.html|
 |spTimer|3.0-1|https://cran.r-project.org/web/packages/spTimer/index.html|
@@ -843,6 +886,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |stats|3.4.4|NA|
 |stats4|3.4.4|NA|
 |stepPlr|0.93|https://cran.r-project.org/web/packages/stepPlr/index.html|
+|stinepack|1.4|https://cran.r-project.org/web/packages/stinepack/index.html|
 |stochvol|1.3.3|https://cran.r-project.org/web/packages/stochvol/index.html|
 |stopwords|0.9.0|https://cran.r-project.org/web/packages/stopwords/index.html|
 |stringdist|0.9.4.7|https://cran.r-project.org/web/packages/stringdist/index.html|
@@ -856,7 +900,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |SuppDists|1.1-9.4|https://cran.r-project.org/web/packages/SuppDists/index.html|
 |survey|3.33-2|https://cran.r-project.org/web/packages/survey/index.html|
 |survival|2.41-3|https://cran.r-project.org/web/packages/survival/index.html|
-|survminer|0.4.2|https://cran.r-project.org/web/packages/survminer/index.html|
+|survminer|0.4.6|https://cran.r-project.org/web/packages/survminer/index.html|
 |survMisc|0.5.4|https://cran.r-project.org/web/packages/survMisc/index.html|
 |svglite|1.2.1|https://cran.r-project.org/web/packages/svglite/index.html|
 |svmpath|0.955|https://cran.r-project.org/web/packages/svmpath/index.html|
@@ -866,7 +910,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |systemfit|1.1-20|https://cran.r-project.org/web/packages/systemfit/index.html|
 |syuzhet|1.0.4|https://cran.r-project.org/web/packages/syuzhet/index.html|
 |tau|0.0-20|https://cran.r-project.org/web/packages/tau/index.html|
-|tcltk|3.4.4|NA|
+|tcltk|3.4.4|https://cran.r-project.org/web/packages/tcltk/index.html|
 |tcltk2|1.2-11|https://cran.r-project.org/web/packages/tcltk2/index.html|
 |TeachingDemos|2.10|https://cran.r-project.org/web/packages/TeachingDemos/index.html|
 |tensor|1.5|https://cran.r-project.org/web/packages/tensor/index.html|
@@ -886,7 +930,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |tibble|2.1.1|https://cran.r-project.org/web/packages/tibble/index.html|
 |tibbletime|0.1.1|https://cran.r-project.org/web/packages/tibbletime/index.html|
 |tidycensus|0.4.1|https://cran.r-project.org/web/packages/tidycensus/index.html|
-|tidyr|0.8.0|https://cran.r-project.org/web/packages/tidyr/index.html|
+|tidyr|1.0.0|https://cran.r-project.org/web/packages/tidyr/index.html|
 |tidyselect|0.2.5|https://cran.r-project.org/web/packages/tidyselect/index.html|
 |tidytext|0.1.8|https://cran.r-project.org/web/packages/tidytext/index.html|
 |tidyverse|1.2.1|https://cran.r-project.org/web/packages/tidyverse/index.html|
@@ -896,7 +940,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |timelineS|0.1.1|https://cran.r-project.org/web/packages/timelineS/index.html|
 |timeSeries|3042.102|https://cran.r-project.org/web/packages/timeSeries/index.html|
 |timetk|0.1.0|https://cran.r-project.org/web/packages/timetk/index.html|
-|timevis|0.4|https://cran.r-project.org/web/packages/timevis/index.html|
+|timevis|0.5|https://cran.r-project.org/web/packages/timevis/index.html|
 |tm|0.7-3|https://cran.r-project.org/web/packages/tm/index.html|
 |tmap|1.11-1|https://cran.r-project.org/web/packages/tmap/index.html|
 |tmaptools|1.2-3|https://cran.r-project.org/web/packages/tmaptools/index.html|
@@ -914,16 +958,18 @@ The following table shows which packages **are supported** in the Power BI servi
 |TSA|1.01|https://cran.r-project.org/web/packages/TSA/index.html|
 |tseries|0.10-43|https://cran.r-project.org/web/packages/tseries/index.html|
 |tsfa|2014.10-1|https://cran.r-project.org/web/packages/tsfa/index.html|
+|tsibble|0.8.5|https://cran.r-project.org/web/packages/tsibble/index.html|
 |tsintermittent|1.9|https://cran.r-project.org/web/packages/tsintermittent/index.html|
 |tsoutliers|0.6-6|https://cran.r-project.org/web/packages/tsoutliers/index.html|
 |TSP|1.1-5|https://cran.r-project.org/web/packages/TSP/index.html|
+|TSstudio|0.1.5|https://cran.r-project.org/web/packages/TSstudio/index.html|
 |TTR|0.23-3|https://cran.r-project.org/web/packages/TTR/index.html|
 |tweedie|2.3.2|https://cran.r-project.org/web/packages/tweedie/index.html|
 |tweenr|1.0.1|https://cran.r-project.org/web/packages/tweenr/index.html|
 |twitteR|1.1.9|https://cran.r-project.org/web/packages/twitteR/index.html|
 |udpipe|0.5|https://cran.r-project.org/web/packages/udpipe/index.html|
 |udunits2|0.13|https://cran.r-project.org/web/packages/udunits2/index.html|
-|units|0.5-1|https://cran.r-project.org/web/packages/units/index.html|
+|units|0.6-2|https://cran.r-project.org/web/packages/units/index.html|
 |UpSetR|1.3.3|https://cran.r-project.org/web/packages/UpSetR/index.html|
 |urca|1.3-0|https://cran.r-project.org/web/packages/urca/index.html|
 |useful|1.2.3|https://cran.r-project.org/web/packages/useful/index.html|
@@ -935,7 +981,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |V8|2.2|https://cran.r-project.org/web/packages/V8/index.html|
 |vars|1.5-2|https://cran.r-project.org/web/packages/vars/index.html|
 |vcd|1.4-4|https://cran.r-project.org/web/packages/vcd/index.html|
-|vctrs|0.1.0|https://cran.r-project.org/web/packages/vctrs/index.html|
+|vctrs|0.2.0|https://cran.r-project.org/web/packages/vctrs/index.html|
 |vdiffr|0.2.2|https://cran.r-project.org/web/packages/vdiffr/index.html|
 |vegan|2.4-6|https://cran.r-project.org/web/packages/vegan/index.html|
 |VennDiagram|1.6.20|https://cran.r-project.org/web/packages/VennDiagram/index.html|
@@ -947,6 +993,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |viridisLite|0.3.0|https://cran.r-project.org/web/packages/viridisLite/index.html|
 |visNetwork|2.0.3|https://cran.r-project.org/web/packages/visNetwork/index.html|
 |vistime|0.4.0|https://cran.r-project.org/web/packages/vistime/index.html|
+|waterfalls|0.1.2|https://cran.r-project.org/web/packages/waterfalls/index.html|
 |wavethresh|4.6.8|https://cran.r-project.org/web/packages/wavethresh/index.html|
 |webshot|0.5.0|https://cran.r-project.org/web/packages/webshot/index.html|
 |webutils|0.6|https://cran.r-project.org/web/packages/webutils/index.html|
@@ -974,7 +1021,7 @@ The following table shows which packages **are supported** in the Power BI servi
 |zoo|1.8-1|https://cran.r-project.org/web/packages/zoo/index.html|
 
 
-## R scripts that are not supported in Power BI
+## R scripts that aren't supported in Power BI
 The following table shows which packages are **not supported** in the Power BI service.
 
 | Package | Request Date | Reason |

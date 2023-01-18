@@ -1,47 +1,47 @@
 ---
 title: Introduction to the total and subtotal API in Power BI visual
-description: This article describes the total and subtotal API for creating Power BI visuals.
+description: Learn how to use the Total and Subtotal API for Power BI visuals to request aggregated subtotal data from the Power BI host.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/15/2021
+ms.date: 11/22/2022
 ---
 
 # Request aggregated subtotal data
 
-The *Total and Subtotal API* allows custom visuals with a matrix data-view to request aggregated subtotal data from the Power BI host. The subtotals can be calculated for the entire matrix dataset or specified for individual levels of the matrix data hierarchy (see this [sample report](https://github.com/microsoft/Powerbi-Visuals-SampleMatrix/tree/master/doc)).
+The *Total and Subtotal API* allows custom visuals with a matrix data-view to request aggregated subtotal data from the Power BI host. The subtotals are calculated for the entire matrix dataset or specified for individual levels of the matrix data hierarchy. See the [sample report](https://github.com/microsoft/Powerbi-Visuals-SampleMatrix/tree/master/doc) for an example of the Total and Subtotal API in a Power BI visual.
 
 >[!NOTE]
->Requesting subtotal data is supported from API version 2.6.0. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
+>Requesting subtotal data is supported in version 2.6.0 and later. The `rowSubtotalType` property is available in version 5.1.0 and later. To find out which version you're using, check the `apiVersion` in the *pbiviz.json* file.
 
-Every time a visual refreshes its data, it issues a [data fetch request](fetch-more-data.md) to the Power BI backend. These data requests are usually for values of the fields the user dragged into the field wells of the visual. Sometimes the visual needs other aggregations/subtotals (for example, sum, count) applied to these fields. The API customizes the outgoing data query to request the extra aggregation/subtotal data. Since these calculations are performed by the Power BI backend, they are highly efficient and applicable to large datasets.
+Every time a visual refreshes its data, the visual issues a [data fetch request](fetch-more-data.md) to the Power BI backend. These data requests are usually for values of the fields that the user dragged into the field wells of the visual. Sometimes the visual needs other aggregations or subtotals (for example, sum or count) applied to the field wells. The Total and Subtotal API lets you customize the outgoing data query to request more aggregation or subtotal data.
 
-> [!div class="mx-imgBorder"]
->![Screenshot of visual with subtotals row and columns highlighted.](media/total-subtotal-api/subtotal-visual-results.png)
+:::image type="content" source="media/total-subtotal-api/subtotal-visual-results.png" alt-text="Screenshot of visual with subtotals row and columns highlighted.":::
 
 ## The subtotals API
 
-The API offers the following **boolean customization switches** for each data-view type (currently just the matrix):
+The API offers the following customization for each data-view type (currently, only matrix data-views).
 
-* *rowSubtotals*: Indicates if the subtotal data should be requested for all fields in the rows field well
-* *rowSubtotalsPerLevel*: Indicates if the subtotal data can be toggled for individual fields in the row's field well
-* *columnSubtotals*: Indicates if the subtotal data should be requested for all fields in the columns field well
-* *columnSubtotalsPerLevel*: Indicates if the subtotal data can be toggled for individual fields in the columns field well
-* *levelSubtotalEnabled*: Unlike all other properties, this property is applied to individual rows/columns. This property indicates if the subtotals are requested for the row/column
+* `rowSubtotals`: (boolean) Indicates if the subtotal data should be requested for all fields in the rows field well.
+* `rowSubtotalsPerLevel`: (boolean) Indicates if the subtotal data can be toggled for individual fields in the row's field well.
+* `columnSubtotals`: (boolean) Indicates if the *subtotal* data should be requested for all fields in the columns field well.
+* `columnSubtotalsPerLevel`: (boolean) Indicates if the *subtotal* data can be toggled for individual fields in the columns field well.
+* `levelSubtotalEnabled`: (boolean) Indicates if the subtotals are requested for the row or column. Unlike all the other properties, this property is applied to individual rows or columns.
+* `rowSubtotalsType`: ("Top" or "Bottom") Indicates if the row with the *total* data should be retrieved before (`top`) or after (`bottom`) the rest of the data. If this property is set to `bottom`, the total can only be displayed after all the data has been fetched. The default is `bottom`.
 
-Each of the above switches is assigned a value based on the related properties in the property pane and the defaults.
+Each of the previously listed switches is assigned a value based on the related properties in the property pane and the defaults.
 
 ## How to use the subtotal API
 
-The visual's *capabilities* JSON file has to:
+The visual's *capabilities.json* file has to:
 
-* specify the property each of the above switches maps to
-* provide the default value to be used if the property is undefined
+* specify the property that each of the above switches maps to.
+* provide the default value to be used if the property is undefined.
 
-The switches all look like this:
+The switches use a format like the following example:
 
 ```json
     "rowSubtotals": { 
@@ -53,11 +53,11 @@ The switches all look like this:
             },
 ```
 
-For example, the above indicates that the row subtotals are enabled by the property “rowSubtotals” in the “subTotals” object. It has a default value of “true”.
+The preceding code indicates that the row subtotals are enabled by the property `rowSubtotals` in the `subTotals` object. The property has a default value of `true`.
 
-The API is automatically enabled for a visual whenever the subtotals structure and all the switch mappings are defined in the capabilities JSON file.
+The API is automatically enabled for a visual whenever the subtotals structure and all switch mappings are defined in the *capabilities.json* file.
 
-Below is an example of the complete API configuration in the *capabilities* JSON file (copied from the API sample visual):
+The following code is an example of the complete API configuration in the *capabilities.json* file (copied from the API sample visual):
 
 ```json
 "subtotals": { 
@@ -96,20 +96,37 @@ Below is an example of the complete API configuration in the *capabilities* JSON
                     "propertyName": "levelSubtotalEnabled" 
                 }, 
                 "defaultValue": true 
-            } 
+            },
+            "rowSubtotalsType": {
+                "propertyIdentifier": {
+                    "objectName": "subtotals",
+                    "propertyName": "rowSubtotalsType"
+                },
+                "defaultValue": "Bottom"
+            }
         } 
     }
 ```
 
-It’s important that the enumerateProperities() function of the visual is aligned with the defaults specified in the capabilities. At the same time, the customization logic will operate according to the defaults specified in the capabilities (since no objects are supplied in the data view). The two must be aligned. Otherwise, the actual subtotal customizations might differ from the user’s perception.
+It's important that the `enumerateProperties()` function of the visual aligns with the defaults specified in the *capabilities.json* file. The customization logic operates according to the specified defaults. If the `enumerateProperties()` function and the defaults aren't aligned, the actual subtotal customizations might differ from user expectations.
 
-Check out this [sample report](https://github.com/Microsoft/Powerbi-Visuals-SampleMatrix) in the DOC folder.
+```typescript
+enum RowSubtotalType {
+        Top = "Top",
+        Bottom = "Bottom",
+   }
+```
 
-To review the available customizations, expand the Subtotals drop-down menu in the Format property pane, modify the subtotals settings, and track the changes to the subtotals presentation (named *Totals*) by the visual.
+To review the available customizations, expand the **Subtotals** drop-down menu in the **Format** property pane. Modify the subtotals settings and track the changes to the subtotals presentation (named *Totals*) in the Visualizations pane.
 
-![Subtotals drop-down menu](../../visuals/media/desktop-matrix-visual/power-bi-subtotal.png)
+:::image type="content" source="../../visuals/media/desktop-matrix-visual/power-bi-subtotal.png" alt-text="Screenshot of the Power BI Visualizations pane, which shows the Column and Row subtotals field wells.":::
+
+## Considerations and limitations
+
+* The `rowSubtotalsType` property is only available for rows. You can't set column subtotals to the beginning of a column.
+
+* The [expand and collapse](./dataview-mappings.md#expanding-and-collapsing-row-headers) feature overrides `rowSubtotals`. Subtotals display when the rows are expanded, even if `rowSubtotals` is set to *false*.
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Add interactivity to visual using Power BI visuals selections](selection-api.md)
+[Add interactivity to visual using Power BI visuals selections](selection-api.md)

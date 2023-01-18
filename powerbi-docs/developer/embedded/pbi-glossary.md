@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 06/14/2022
+ms.date: 09/28/2022
 ms.custom: contperf-fy21q1
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
@@ -89,7 +89,7 @@ The navigation at the top left to quickly navigate between reports and dashboard
 
 ### Capacity
 
-[Power BI Premium] Data models running on hardware fully managed by Microsoft in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
+A capacity is a dedicated set of resources reserved for exclusive use. It offers dependable, consistent performance for your content.
 
 ### Card (visual type)
 
@@ -122,10 +122,6 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 ### Content list
 
 The content index for an app.
-
-### Content pack
-
- Deprecated. A collection of pre-packaged datasets, reports, and dashboards. Content packs were replaced with [**apps**](#app-apps). Learn [about the new workspace experience](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Content view
 
@@ -174,6 +170,10 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 
 A collection of data used to create visualizations and reports.
 
+### DAX expression
+
+**Data Analysis Expressions**. A Microsoft formula language used to [build formulas and expressions](/training/modules/dax-power-bi-write-formulas/) in Power BI Desktop, Azure Analysis Services, SQL Server Analysis Services, and Power Pivot in Excel.
+
 ### **Desktop** or **Power BI Desktop**
 
 Free Power BI tool used primarily be report designers, admins, and developers.
@@ -184,7 +184,7 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 
 ### Dimension
 
-Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.
+Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
 ### Drill up, drill down, drill through
 
@@ -271,9 +271,9 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ## I
 
-### Inline frame, iFrame
+### Inline frame, IFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An IFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
@@ -356,11 +356,11 @@ The location in the service where messages are delivered to users, such as notic
 
 ## O
 
-### **OneDrive for Business** vs **OneDrive**
+### **OneDrive for work or school** vs **OneDrive**
 
-OneDrive is a personal account and OneDrive for Business is for work accounts.  
+OneDrive is a personal account and OneDrive for work or school is for work accounts.  
 
-### On-premises (on-prem)
+### On-premises
 
 The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.
 
@@ -376,7 +376,7 @@ Reports have one or more pages. Each tab on the report canvas represents a page.
 
 ### Paginated reports
 
-Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
+Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
 
 ### PBIVIZ
 
@@ -424,7 +424,7 @@ A free, standalone Windows Desktop application used for authoring paginated repo
 
 ### Power BI Report Server
 
-An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). 
+An on-premises report server with a web portal in which you display and manage reports and KPIs. It allows organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments).
 
 ### Power BI service
 
@@ -598,6 +598,10 @@ A [tile](/power-bi/create-reports/service-dashboard-tiles) is a snapshot of your
 A time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.  
 
 ## U
+
+### User Principal Name (UPN)
+
+A format used to specify an internet-style name, such as User.Name@example.microsoft.com. The format consists of a login name and domain separated by the @ symbol.
 
 ## V
 

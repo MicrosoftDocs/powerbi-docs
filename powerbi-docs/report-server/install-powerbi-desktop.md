@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 09/09/2021
+ms.date: 08/04/2022
 ms.custom: intro-installation
 ---
 
@@ -39,6 +39,9 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 2. At the end of the installation, select **Launch Power BI Desktop**.
 
     It starts automatically and you're ready to go.
+
+> [!IMPORTANT]
+> Power BI Desktop is not supported in Virtualized Environment (eg. Citrix). 
 
 ## Verify you're using the correct version
 It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. You can tell you have the right version because **Power BI Desktop (January 2021)** or later is in the title bar. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.

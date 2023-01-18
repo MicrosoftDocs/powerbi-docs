@@ -244,7 +244,7 @@ URL filters are supported in some embedding scenarios and not in others.
 
 ## Next steps
 
-[Pin a visualization to a dashboard](../create-reports/service-dashboard-pin-tile-from-report.md)  
+[Pin a visualization to a dashboard](../create-reports/service-dashboard-create.md)  
 [Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -1,5 +1,5 @@
 ---
-title: Use a relative time slicer or filter in Power BI
+title: Create a relative time slicer or filter in Power BI
 description: Learn how to use a slicer or filter to constrain relative time ranges in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/19/2020
+ms.date: 01/13/2023
 LocalizationGroup: Create reports
 ---
 
-# Use a relative time slicer and filter in Power BI
+# Create a relative time slicer and filter in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. Using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour. 
+With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. Using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Screenshot of relative time example.":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Screenshot showing a graph of a relative time example.":::
 
 You don't have to use the feature in conjunction with the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature. However, many relative time scenarios pair well with the automatic page refresh feature.  
 
@@ -34,44 +34,38 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 2. Select the **Slicer** visualization type.
 
-   # [Power BI Desktop](#tab/powerbi-desktop)
-   :::image type="content" source="media/slicer-filter-relative-time/power-bi-desktop-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in Power B I Desktop.":::
-
-   # [Power BI service](#tab/powerbi-service)
-   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Screenshot of creating a time slicer in the Power B I service.":::
-
-   ---
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-desktop-relative-time-create-slicer.png" alt-text="Screenshot showing how to create a time slicer.":::
 
 ### Create a filter
- 
-- Drag a date or time field to the Filters pane, for **this visual**, **this page**, or **all pages**.
 
-### Set relative time 
+- Drag a date or time field to the **Filters** pane, in the **Filters on this visual**, **Filters on this page**, or **Filters on all pages** section.
 
-Next, you change the filter type to **Relative Time**.
+### Set relative time
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Screenshot of changing to relative time.":::
- 
-Here’s how it looks in a slicer:
+1. Select the slicer, and in the **Format** pane, under **Visual** > **Slicer settings** > **Options**, change the **Style** to **Relative Time**.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Screenshot of relative time in a slicer.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer-set.png" alt-text="Screenshot showing the slicer with the Format pane and Relative Time selected.":::
 
-Here’s how it looks in a filter card: 
+   Here’s how it looks in a slicer:
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Screenshot of relative time in a filter.":::
- 
-With this new filter type, you can filter based on **Last**, **Next**, or **This time period**: 
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Screenshot showing relative time applied to a slicer.":::
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot of choosing Last, Next, or This time period.":::
- 
-You specify the time window using a whole number and a unit of time: **Minutes** or **Hours**.
- 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Screenshot of choosing minutes or hours.":::
+   Here’s how it looks in a filter card:
 
-If you need to save space on the canvas, you can also create the relative time filter as a filter card in the Filters pane.
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Screenshot showing a filter card with Relative time selected as the Filter type.":::
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Screenshot of setting relative time in a filter instead.":::
- 
+1. With this new filter type, you can filter based on a time period of **Last**, **Next**, or **This**:
+
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot showing how to select a time period in a filter.":::
+
+1. You specify the time window using a whole number and a unit of time: **Minutes** or **Hours**.
+
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Screenshot showing how to select a time unit in a filter.":::
+
+1. If you need to save space on the canvas, you can also create the relative time filter as a filter card in the **Filters** pane.
+
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Screenshot showing a filter card with a Filter type of Relative time selected.":::
+
 ## Understanding anchor time
 
 When a filter is applied to the page or report level, all visuals on that page or report are synchronized to the same exact time range. These queries are all issued relative to a time called the *anchor time*. The anchor time automatically refreshes in the following conditions:

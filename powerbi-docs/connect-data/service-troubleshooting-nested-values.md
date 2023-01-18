@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 6/4/2019
+ms.date: 09/23/2022
 LocalizationGroup: Reports
 ---
 # Troubleshooting Nested Values returned as Text in Power BI Service

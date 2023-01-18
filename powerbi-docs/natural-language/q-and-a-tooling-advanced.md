@@ -36,7 +36,7 @@ Linguistic schemas are saved in a .yaml format. This format is related to the po
 We recommend using Visual Studio Code to edit linguistic schema .yaml files. Visual Studio Code includes out-of-the-box support for .yaml files and can be extended to specifically validate the Power BI linguistic schema format.
 1. Install [Visual Studio Code](https://code.visualstudio.com/).    
 
-2. Select the sample linguistic schema that you saved earlier: [.yaml file](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
+2. Select the .yaml file in the sample linguistic schema that you saved earlier: [QnALinguisticSchema.zip](https://go.microsoft.com/fwlink/?linkid=871858).    
 4. Select **Visual Studio Code** and **Always use this app to open .yaml files**.
 
     ![How do you want to open this file](media/q-and-a-tooling-advanced/power-bi-visual-code.png)
@@ -115,10 +115,10 @@ To understand the different types of phrasings, you’re first going to need to 
 
 
 ### Attribute phrasings
-Attribute phrasings are the workhorse of Q&A, used when one thing is acting as an attribute of another thing. They’re simple and straightforward, and perform most of the heavy lifting when you haven't defined a subtler, more detailed phrasing. Attribute phrasings are described using the basic verb “have” (“products have categories” and "host countries have host cities"). They also automatically allow questions with the prepositions “of” and “for” (“categories of products”, “orders for products”) and possessive (“John’s orders”). Attribute phrasings are used in these kinds of questions:
+Attribute phrasings are the workhorse of Q&A, used when one thing is acting as an attribute of another thing. They’re simple and straightforward, and perform most of the heavy lifting when you haven't defined a subtler, more detailed phrasing. Attribute phrasings are described using the basic verb “have” (“products have categories” and "host countries/regions have host cities"). They also automatically allow questions with the prepositions “of” and “for” (“categories of products”, “orders for products”) and possessive (“John’s orders”). Attribute phrasings are used in these kinds of questions:
 
 - Which customers have orders?
-- List host cities by country ascending
+- List host cities by country or region ascending
 - Show orders that have chai
 - List customers with orders
 - What is the category of each product?
@@ -220,7 +220,7 @@ Binding: {Table: Products}
 
  
 ### Noun phrasings
-Noun phrasings define new nouns that describe subsets of things in your model. They often include some type of model-specific measurement or condition. For example, for our Olympics model we might want to add phrasings that distinguish champions from medalists, ball sports from water sports, teams versus individuals, age categories of athletes (teens, adults, seniors), etc. For our movie database, we might want to add noun phrasings for “flops are movies where net profit < 0” so that we can ask questions like “count the flops by year”. There are two forms of noun phrasings, for use in different situations.
+Noun phrasings define new nouns that describe subsets of things in your model. They often include some type of model-specific measurement or condition. For example, for our model we might want to add phrasings that distinguish champions from medalists, land sports from water sports, teams versus individuals, age categories of athletes (teens, adults, seniors), etc. For our movie database, we might want to add noun phrasings for “flops are movies where net profit < 0” so that we can ask questions like “count the flops by year”. There are two forms of noun phrasings, for use in different situations.
 
 *Simple noun phrasings* define a new noun based on a condition, such as “contractors are employees where full time = false” and "champion is athlete where count of medals >5". Simple noun phrasings are used in these kinds of questions:
 
@@ -262,7 +262,7 @@ Binding: {Table: Employees}
 ```
 
 ### Preposition phrasings
-Preposition phrasings are used to describe how things in your model are related via prepositions. For example, a “cities are in countries” phrasing improves understanding of questions like “count the cities in Washington”. Some preposition phrasings are created automatically when a column is recognized as a geographical entity. Preposition phrasings are used in these kinds of questions:
+Preposition phrasings are used to describe how things in your model are related via prepositions. For example, a “cities are in countries or regions” phrasing improves understanding of questions like “count the cities in Washington”. Some preposition phrasings are created automatically when a column is recognized as a geographical entity. Preposition phrasings are used in these kinds of questions:
 
 - Count the customers in New York
 - List the books about linguistics

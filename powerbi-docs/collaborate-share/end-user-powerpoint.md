@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/12/2022
+ms.date: 12/12/2022
 LocalizationGroup: Share your work
 ---
 # Export a report to PowerPoint
@@ -80,7 +80,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
     > [!NOTE]
     > PowerPoint includes the name of each visual on the page and adds alt text for each item. The report creator can include alt text when designing the report. Otherwise, the default is "No alt text provided."
 
-5. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
+5. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 
 When you view an individual slide, you see that each report page is an independent image. Scrolling in PowerPoint is not available since each slide is a static image.
@@ -101,8 +101,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * The following visual types are not supported, and will not be exported to PowerPoint:
    - [Custom visuals that haven't been certified](../developer/visuals/power-bi-custom-visuals-certified.md)) aren't supported. 
-   - The [ESRI ArcGIS visual](../visuals/power-bi-visualizations-arcgis.md) is not supported
-   - R and Python visuals are not supported.
+   - R, Python, Power Apps, Power Automate, Visio, [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md), and paginated report visuals aren't currently supported. 
    - Visuals in a drill down state will be exported in their default state. 
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 
@@ -117,8 +116,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your Power BI admin or report owner disabled the feature. Contact your admin or the owner for details.
 * The resolution of exported report pages is 1280 pixels x 720 pixels. 
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
-
-
+* Export to PowerPoint is not currently supported for tenants in the China North region. 
 
 ## Next steps
 [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    

@@ -34,11 +34,6 @@ You can specify the **Start page** and **End Page** as optional parameters for y
 
 `Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
 
-## Considerations and limitations
-
-When working with the PDF connector on datasets in a Premium capacity, the PDF connector does not properly make the connection. To enable the PDF connector to work on a dataset in a Premium capacity, configure that dataset to use a gateway, and confirm the connection to that dataset goes through the gateway.  
-
-
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 

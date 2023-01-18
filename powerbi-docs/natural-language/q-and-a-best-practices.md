@@ -68,7 +68,7 @@ Power BI aggressively aggregates numeric columns by default, so questions like â
 
 ## Choose a Data Category for each date and geography column
 
-The **Data Category** provides additional semantic knowledge about the content of a column beyond its data type. For example, you can mark an integer column as a zip code, a string column as a City, Country/Region, and so on. Q&A uses this information in two important ways: For visualization selection and for language biases.
+The **Data Category** provides additional semantic knowledge about the content of a column beyond its data type. For example, you can mark an integer column as a zip code, a string column as a City, CountryRegion, and so on. Q&A uses this information in two important ways: For visualization selection and for language biases.
 
 First, Q&A uses the **Data Category** information to help make choices about what kind of visual display to use. For example, it recognizes that columns with date or time **Data Categories** are typically a good choice for the horizontal axis of a line chart or the play axis of a bubble chart. And it assumes that results containing columns with geographical **Data Categories** may look good on a map.
 
@@ -132,7 +132,7 @@ Similarly, consider a typical pivoted value column: a *BookTour* table containin
 
 ### Split formatted columns
 
-If the source from which you're importing your data contains formatted columns, Power BI reports (and Q&A) don't reach inside the column to parse its contents. So if you have, for example, a **Full Address** column that contains the address, city, and country, you should also split it into Address, City, and Country columns so your users can query against them individually.
+If the source from which you're importing your data contains formatted columns, Power BI reports (and Q&A) don't reach inside the column to parse its contents. So if you have, for example, a **Full Address** column that contains the address, city, and country/region, you should also split it into Address, City, and CountryRegion columns so your users can query against them individually.
 
 **Needs work**
 
@@ -140,7 +140,7 @@ If the source from which you're importing your data contains formatted columns, 
 
 **Ready for Q&A**
 
-:::image type="content" source="media/q-and-a-best-practices/desktop-qna-16.png" alt-text="Screenshot shows a table with customers, a full address line, and three lines that break down the address into street, city, and country.":::
+:::image type="content" source="media/q-and-a-best-practices/desktop-qna-16.png" alt-text="Screenshot shows a table with customers, a full address line, and three lines that break down the address into street, city, and country or region.":::
 
 Similarly, if you have any full name columns for a person, add **First Name** and **Last Name** columns, just in case someone wants to ask questions using partial names. 
 

@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Workspace-level workspace planning"
 description: "This article introduces the Power BI workspace tactical planning decisions you should make at the workspace level."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/25/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Workspace-level workspace planning
@@ -37,7 +37,7 @@ With these two examples in mind, consider two specific aspects of workspace purp
 
 The primary objective of a workspace in the Power BI service is to facilitate [collaboration](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#collaborate-in-a-workspace) among multiple people. There are many ways that collaboration can happen in a workspace:
 
-- **Team-based development:** Multiple people can work together to build, test, and publish content. One user may work on the design of the dataset, while other users build reports that connect to the dataset by using [live connections](/connect-data/desktop-report-lifecycle-datasets).
+- **Team-based development:** Multiple people can work together to build, test, and publish content. One user may work on the design of the dataset, while other users build reports that connect to the dataset by using [live connections](/power-bi/connect-data/desktop-report-lifecycle-datasets).
 - **Testing and validations:** Users may need to perform data validations for a new report. Subject matter experts from the business unit may need to perform user acceptance testing (UAT), or a data quality team may need to validate the accuracy of the dataset.
 - **Enhancements:** Stakeholders and consumers of the content may suggest enhancements to the content as circumstances change.
 - **Ownership transfer:** Another person or team may [take over responsibility](powerbi-adoption-roadmap-content-ownership-and-management.md#ownership-transfers) for content that was created by someone else.
@@ -63,9 +63,9 @@ One of the key areas of the Power BI adoption roadmap is [content ownership and 
 
 The secondary objective for a Power BI workspace is to distribute content to consumers who need to view the content. There are several different ways to approach content distribution in the Power BI service:
 
-- **Reports can be viewed using a Power BI app:** Content stored in a non-personal workspace can be published to a Power BI app. A Power BI app is a more user-friendly experience than viewing reports directly in a workspace. For this reason, using a Power BI app is the best approach for distributing content to consumers. Sometimes the goals for how you want to distribute content with an app are a significant factor in determining how to organize content in or across workspaces.
+- **Reports can be viewed by using a Power BI app:** Content stored in a non-personal workspace can be published to a Power BI app. A Power BI app is a more user-friendly experience than viewing reports directly in a workspace. For this reason, using a Power BI app is the best approach for distributing content to consumers. Audiences for a Power BI app are very flexible. However, sometimes the goals for how you want to distribute content with an app are a factor in determining how to organize content in or across workspaces. For more information about securing Power BI apps, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#power-bi-app-permissions) article.
 - **Reports can be viewed directly in the workspace:** This approach is often appropriate for informal, collaborative workspaces. Workspace roles define who can view or edit the content contained in a workspace.
-- **Reports can be shared:** Use of [sharing](/power-bi/collaborate-share/service-share-dashboards) (links or direct access) is useful when there's a need to provide read-only access to a single item within a workspace. We recommend that you use app permissions and workspace roles instead of sharing because they're easier to maintain.
+- **Reports can be shared:** Use of [sharing](/power-bi/collaborate-share/service-share-dashboards) (links or direct access) is useful when there's a need to provide read-only access to a single item within a workspace. We recommend that you use app permissions and workspace roles instead of sharing because they're easier to maintain. For more information, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) article.
 - **Reports can be embedded in another application and viewed there:** Sometimes the intention is for consumers to view Power BI content that's embedded in another application. Embedding content is useful when it makes sense for the user to remain in the application so they stay within its workflow.
 
 Another key area of the Power BI adoption roadmap is content delivery scope. The ways that a workspace will support content distribution will differ based on the content delivery scope:
@@ -223,7 +223,7 @@ Disadvantages of option 3 include:
 
 [Shared datasets](/power-bi/connect-data/service-datasets-across-workspaces), which can be used by multiple reports, reside in different workspaces from the reports. There are many advantages related to decoupling datasets and reports that are described in the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario.
 
-Similarly, dataflows (which can be used by many datasets) can reside in a different workspace from the datasets. The advantages of centralizing data preparation activities with dataflows are described in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario. The [advanced self-service data preparation](/powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario builds further upon those concepts and introduces more ways that workspaces can contribute to a modular structure for data reuse and enterprise scale.
+Similarly, dataflows (which can be used by many datasets) can reside in a different workspace from the datasets. The advantages of centralizing data preparation activities with dataflows are described in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario. The [advanced self-service data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario builds further upon those concepts and introduces more ways that workspaces can contribute to a modular structure for data reuse and enterprise scale.
 
 Separating data workspaces from reporting workspaces is a common practice for supporting [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md). The advantages for separating data workspaces from reporting workspaces include:
 
@@ -273,7 +273,7 @@ When planning to use groups, you might consider creating one group per role per 
 - *Power BI **app viewers** – Quarterly Financials*
 
 > [!TIP]
-> Creating the groups listed above provides flexibility. However, it involves creating and managing many groups. Also, managing a large number of groups can be challenging when groups are only created and maintained by IT. This challenge can be mitigated by enabling [self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management#self-service-group-management-scenarios) to certain satellite members. These members can include the Center of Excellence (COE), champions, or trusted users who have been trained in how to manage role memberships for their business unit.
+> Creating the groups listed above provides flexibility. However, it involves creating and managing many groups. Also, managing a large number of groups can be challenging when groups are only created and maintained by IT. This challenge can be mitigated by enabling [self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management#self-service-group-management-scenarios) to certain satellite members. These members can include the Center of Excellence (COE), champions, or trusted users who have been trained in how to manage role memberships for their business unit. For more information, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md#planning-for-power-bi-groups) article.
 
 When data workspaces are separated from reporting workspaces, as discussed earlier in this article, it results in an even larger number of groups. Consider how the number of groups doubles from five to 10 when you separate data and reporting roles:
 
@@ -303,7 +303,7 @@ The effective use of groups for workspace roles can require considerable plannin
 Lastly, the examples show one workspace - *Quarterly Financials* - but often it's possible to manage a collection of workspaces with one set of groups. For example, multiple workspaces owned and managed by the finance team could use the same groups.
 
 > [!NOTE]
-> You'll often plan security more broadly, taking into consideration dataset [read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) requirements, and row-level security (RLS) requirements. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
+> You'll often plan security more broadly, taking into consideration dataset [Read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) permission requirements, and row-level security (RLS) requirements. For more information about what to consider for security planning, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -326,7 +326,7 @@ There are several settings you can set up for each individual workspace. These s
 
 Each workspace has a [license type](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings) setting. It can be set to **Power BI Pro**, **Premium per user (PPU)**, **Premium per capacity**, or **Embedded**. This setting is important for workspace planning because it determines:
 
-- **Features:** Certain features, such as deployment pipelines and paginated reports, aren't supported in a Power BI Pro workspace.
+- **Features:** Certain features, such as deployment pipelines, aren't supported in a Power BI Pro workspace.
 - **Content access:** The license type determines who can access content in the workspace:
   - Only users who have a PPU license (in addition to being assigned a workspace role) can access a PPU workspace.
   - If you expect to deliver content to content viewers who have a free Power BI license, you'll need a Premium per capacity workspace.
@@ -400,7 +400,7 @@ It's possible to connect a Power BI workspace to an Azure Data Lake Storage Gen2
 
 ### Workspace integration with Azure Log Analytics
 
-[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) is a service within [Azure Monitor](/services/monitor/#features). You can use Azure Log Analytics to review diagnostic data generated by the Analysis Services engine, which hosts Power BI datasets. Azure Log Analytics is available only for Premium per capacity and PPU workspaces. Workspace-level logs are useful for analyzing performance and trends, performing data refresh analysis, analyzing XMLA endpoint operations, and more.
+[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) is a service within [Azure Monitor](/azure/azure-monitor/#features). You can use Azure Log Analytics to review diagnostic data generated by the Analysis Services engine, which hosts Power BI datasets. Azure Log Analytics is available only for Premium per capacity and PPU workspaces. Workspace-level logs are useful for analyzing performance and trends, performing data refresh analysis, analyzing XMLA endpoint operations, and more.
 
 > [!NOTE]
 > Although the names are similar, the data sent to [Azure Log Analytics](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) is slightly different from the data captured by the [Power BI activity log](/power-bi/admin/service-admin-auditing). The data sent to Azure Log Analytics is concerned with [events](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure#events-and-schema) generated by the Analysis Services engine (for example, *Query begin* and *Query end* events). Conversely, the activity log is concerned with tracking [user activities](/power-bi/admin/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) (for example, *View report* or *Edit report* events).

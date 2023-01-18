@@ -1,6 +1,6 @@
 ---
-title: About Power BI in PowerPoint
-description: Learn about the Power BI add-in for PowerPoint that enables you to add live Power BI data to your PowerPoint presentations.
+title: About storytelling with Power BI in PowerPoint
+description: Learn about enhancing data storytelling in PowerPoint with live, interactive Power BI data using the Power BI add-in for PowerPoint.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/02/2022
+ms.date: 09/22/2022
 ---
 
-# About Power BI in PowerPoint
+# About storytelling with Power BI in PowerPoint (preview)
 
-The Power BI add-in for PowerPoint enables you to add live, interactive data from Power BI to your PowerPoint presentations. This means not only that the data shown in your PowerPoint presentation will always be up to date, but also that while you're presenting, you'll be able to filter and drill down on data in response to questions and feedback from your audience without having to switch contexts.
+With the Power BI add-in for PowerPoint, you can enhance your data storytelling in PowerPoint with live, interactive Power BI data. Not only will the data shown in your presentations be always up to date, but also, while you're presenting, you'll be able to filter and drill down on data in response to questions and feedback from your audience without having to switch contexts.
 
 ![Screenshot of the Power BI add-in in PowerPoint](media/service-power-bi-powerpoint-add-in-about/power-bi-powerpoint-addin-storytelling.gif)
 
@@ -35,6 +35,14 @@ Power BI data added to PowerPoint using the Power BI add-in remains in Power BI.
 ## Information for the Power BI administrator
 
 If you're a Power BI administrator, see [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md) for further details about the add-in.
+
+## Considerations and limitations
+
+* The Power BI storytelling add-in requires WebView2 to run Power BI in PowerPoint. WebView2 comes standard on recent Windows versions, but if you get an error when you try to use the add-in, you may need to install it manually. See [Troubleshoot the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-troubleshoot.md) for details.
+* The add-in currently supports Power BI report pages only. Other types of items such as dashboards and paginated reports are not supported.
+* [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios are not supported.
+* The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete**, **Reload**, and **Show as Saved Image** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
+* The add-in is not supported in national clouds.
 
 ## Next Steps
 

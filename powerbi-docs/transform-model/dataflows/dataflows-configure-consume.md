@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 01/10/2021
+ms.date: 09/23/2022
 LocalizationGroup: Data from files
 ---
 # Configure and consume a dataflow

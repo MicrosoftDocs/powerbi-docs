@@ -1,19 +1,19 @@
 ---
-title: Migrate from Azure Analysis Services to Power BI Premium
-description: Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium.
-author: peter-myers
-ms.author: v-petermyers
+title: Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded
+description: Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded.
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/03/2022
+ms.date: 11/24/2022
 ms.custom: intro-migration
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium
 
-This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance and rationale to help migrate their AAS databases to Power BI Premium.
+This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance and rationale to help migrate their AAS databases to Power BI Premium or Power BI Embedded.
 
 ## Background
 
@@ -22,7 +22,8 @@ Power BI has evolved into the leading platform for both self-service and IT-mana
 For over two decades, Microsoft has continued to make deep investments in enterprise BI. AAS and SQL Server Analysis Services (SSAS) are based on mature BI data modeling technology used by countless enterprises. Today, that same technology is also at the heart of Power BI datasets.
 
 > [!NOTE]
-> In this article, the terms data model, semantic model, BI model, tabular model, database, and Power BI dataset have the same meaning. This article commonly uses the terms *data model* for AAS model and *dataset* for Power BI model.
+> In this article, the terms data model, semantic model, BI model, tabular model, database, and Power BI dataset have the same meaning. This article commonly uses the terms *data model* for AAS model and *dataset* for Power BI model. 
+> This article describes the process of migrating to Power BI Premium but this also applies to Power BI Embedded. 
 
 In recent years, Microsoft has taken great strides to deliver AAS capabilities to [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/). To that end, Power BI instantly inherited a large ecosystem of developers, partners, BI tools, and solutions that were built up over decades. Today, the full set of Power BI Premium workloads, features, and capabilities now results in a modern, cloud BI platform that goes far beyond comparable functionality available in AAS or SSAS.
 
@@ -50,7 +51,7 @@ Consolidation of items (like reports and dashboards) in Power BI results in simp
 
 ### Power BI Premium Gen2
 
-Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](/power-bi/enterprise/service-premium-what-is#power-bi-premium-generation-2-preview). Thanks to its distributed architecture, the new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
+Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](/power-bi/enterprise/service-premium-gen2-what-is#power-bi-premium-generation-2-preview). Thanks to its distributed architecture, the new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
 
 Scalability benefits associated with Premium Gen2 are described [later in this article](#scalability-benefits).
 
@@ -105,7 +106,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Enhanced refresh](/power-bi/connect-data/asynchronous-refresh), which allows any programming language to perform asynchronous dataset refreshes by using a REST API call | Yes | Yes |
 | [Backup and restore](../enterprise/service-premium-backup-restore-dataset.md) | Yes | Yes |
 | [Dataset workload settings](/power-bi/enterprise/service-admin-premium-workloads#datasets), which control Premium capacity workloads | No | Yes |
-| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | No <sup>2</sup> |
+| [Server properties](/analysis-services/server-properties/server-properties-in-analysis-services), which control Analysis Services server instance properties | Yes | Yes <sup>1</sup> |
 | [Alias server names](/azure/analysis-services/analysis-services-server-alias), which allow connecting to an Analysis Services server instance by using a shorter alias | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled APIs for scripting and compatibility with services for automation and ALM including Azure Functions, Azure Automation and Azure DevOps | Yes | Yes |
 | **Connectivity** |||
@@ -158,11 +159,7 @@ The Premium Per User (PPU) license is a per-user license that provides a lower-c
 > [!TIP]
 > It's possible to incrementally upgrade Power BI Pro licenses to PPU licenses.
 
-### Frontend vs. backend v-cores and Pro licenses
-
-Power BI Premium provides unlimited distribution of Power BI content to end users without requiring Power BI Pro licenses.
-
-The cost of Power BI Premium is split equally between *frontend and backend v-cores*. Frontend v-cores are mostly responsible for the web service, reporting, and user experiences. Power BI datasets consume resources from backend v-cores. To get the best value from Power BI Premium, customers should strive to strike a balance between frontend and backend usage. For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacity-nodes).
+### Pro licenses
 
 A Pro (or PPU) license is required to publish and manage Power BI content. Pro licenses are typically assigned to developers and administrators, not end users.
 
@@ -178,7 +175,7 @@ For more information, see:
 
 ## Scalability benefits
 
-[Premium Gen2](/power-bi/enterprise/service-premium-what-is#power-bi-premium-generation-2-preview) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
+[Premium Gen2](/power-bi/enterprise/service-premium-gen2-what-is#power-bi-premium-generation-2-preview) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
 
 Power BI Premium provides features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
 
@@ -221,7 +218,7 @@ Like for AAS, you can use a service principal as an automation account for Power
 
 ### Custom security
 
-Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embedded-row-level-security.md#using-the-customdata-feature) feature.
+Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded dataset by using the [CustomData](../developer/embedded/embed-azure-analysis-services.md#dynamic-security---rls) feature.
 
 However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
 
@@ -294,11 +291,16 @@ To identify the user, Power BI utilizes a unique name claim in Azure AD while AA
 
 [Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out) isn't supported by Power BI Premium.
 
+## Migration feature
+
+The Microsoft Azure Analysis Services to Microsoft Power BI Premium migration feature in Power BI migrates as AAS database to a dataset in Power BI Premium, Power BI Premium Per User, or Power BI Embedded workspace. For more information, see [Migrate Azure Analysis Services to Power BI](/power-bi/enterprise/aas-pbi-migration-overview).
+
 ## Next steps
 
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md)
+- [Migrate Azure Analysis Services to Power BI](/power-bi/enterprise/aas-pbi-migration-overview)
 - Questions? [Try asking the Power BI community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
 

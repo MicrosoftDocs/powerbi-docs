@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot report performance in Power BI
 description: Troubleshooting guide to diagnose slow report performance in Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: pbi-troubleshooting
+ms.subservice: powerbi-resource
 ms.topic: troubleshooting
 ms.date: 03/17/2022
 ---
@@ -39,7 +39,7 @@ The first consideration is to understand if the slow report is hosted on a Premi
 
 ### Premium capacity
 
-When the report is hosted on a Premium capacity, use the **Power BI Premium Metrics app** to determine if the report-hosting capacity frequently exceeds capacity resources. It's the case for CPU when it frequently exceeds 80%. For memory, it's when the [active memory metric](../enterprise/service-premium-metrics-app.md#the-active-memory-metric) exceeds 50. When there's pressure on resources, it may be time to [manage or scale the capacity](../enterprise/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
+When the report is hosted on a Premium capacity, use the [Power BI Premium Metrics app](../enterprise/service-premium-gen2-metrics-app.md) to determine if the report-hosting capacity frequently exceeds capacity resources. When there's pressure on resources, it may be time to [manage or scale the capacity](../enterprise/service-admin-premium-manage.md) (flowchart terminator 1). When there are adequate resources, investigate capacity activity during typical report usage (flowchart terminator 2).
 
 ### Shared capacity
 

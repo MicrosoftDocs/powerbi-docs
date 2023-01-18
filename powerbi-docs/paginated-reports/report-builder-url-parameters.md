@@ -6,9 +6,9 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.reviewer: "cfinlan"
+ms.reviewer: "nisrinivasan"
 ms.custom: ""
-ms.date: 12/15/2020
+ms.date: 11/17/2022
 ---
 
 # URL parameters in paginated reports in Power BI
@@ -35,32 +35,42 @@ URL requests to Power BI contain parameters that are processed by the service. T
 URL requests can contain multiple parameters, listed in any order. Parameters are separated by an ampersand (&). Name and value pairs are separated by an equal sign (=). For example:
 
 ```
-powerbiserviceurl?rp:parameter=value&rdl:parameter=value  
+powerbiservicereporturl?rp:parameter=value&rdl:parameter=value  
 ```
 
 ## Syntax description 
 
-### powerbiserviceurl 
+### powerbiservicereporturl 
+The Power BI service URL of your paginated report. For example: 
 
-The Web service URL of your Power BI tenant. For example: 
+```
+https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0
+```
 
-**&**
+### ?
+Used to separate the powerbiservicereporturl and the URL access parameters.
+
+### &
 Used to separate name and value pairs of URL access parameters.
 
-**prefix**
+### prefix
 A prefix for the URL parameter (for example, rp: or rdl:) that specifies an action in the Power BI service. 
 
-> [!NOTE]
-> Report parameters require a parameter prefix and are case-sensitive. 
-
-**parameter** 
+### parameter
 The parameter name. 
 
 ### value 
-
 URL text corresponding to the value of the parameter being used. 
 
+## URL report parameter reference
+
+You can pass report parameters to a report by including them in a paginated report URL. 
+
+### Report parameters (`rp:`) 
 For examples of passing report parameters on the URL, see [Pass a report parameter in a URL](report-builder-url-pass-parameters.md).
+
+> [!NOTE]
+> Report parameters require the parameter prefix **rp:** and are case-sensitive. 
 
 ## URL access parameter reference
 
@@ -89,7 +99,7 @@ Available values are:
 Specifies the type of view use to displayed the report.
 
 -	rdl:reportView
-
+-	available values:
     - 'interactive' (default): load the report in interactive mode.
     - 'pageView': load the report in page view mode.
 
@@ -97,7 +107,7 @@ Specifies the type of view use to displayed the report.
 Specifies whether the parameter panel is closed or open when the report loads, or is hidden altogether.
 
 -	rdl:parameterPanel
-
+-	available values:
     - 'collapsed': load the report with parameter panel closed. The parameter button is enabled so that users can click the button to expand;
     - 'hidden': load the report with parameter panel closed and the parameter button disabled;
     - 'expanded' (default): load the report with parameter panel open and the parameter button enabled;
@@ -120,32 +130,34 @@ PDF / ACCESSIBLEPDF:
 - rdl:MarginTop=decimal(in)
 - rdl:PageHeight=decimal(in)
 - rdl:PageWidth=decimal(in)
-    - rdl:StartPage=integer
+- rdl:StartPage=integer
     
 CSV:
+> [!NOTE]
+> For available *string* values below, reference [CSV Device Information Settings](/sql/reporting-services/csv-device-information-settings)
 
-- rdl:Encoding=string
+- rdl:Encoding=*string*
 - rdl:ExcelMode=true/false
-- rdl:FieldDelimiter=string
+- rdl:FieldDelimiter=*string*
 - rdl:NoHeader=true/false
-- rdl:Qualifier=string
-- rdl:RecordDelimiter=string
+- rdl:Qualifier=*string*
+- rdl:RecordDelimiter=*string*
 - rdl:SuppressLineBreaks=true/false
-    - rdl:UseFormattedValues=true/false
+- rdl:UseFormattedValues=true/false
     
 WORDOPENXML (WORD):
 
 - rdl:AutoFit=string -> True/False/Never/Default
 - rdl:ExpandToggles=true/false
 - rdl:FixedPageWidth=true/false
-- rdl:OmitHyperlinks=true/false
 - rdl:OmitDrillthroughs=true/false
+- rdl:OmitHyperlinks=true/false
 
 EXCELOPENXML (EXCEL):
 
 - rdl:OmitDocumentMap=true/false
 - rdl:OmitFormulas=true/false
-    - rdl:SimplePageHeaders=true/false
+- rdl:SimplePageHeaders=true/false
     
 PPTX (PowerPoint):
  
@@ -161,21 +173,21 @@ PPTX (PowerPoint):
 - rdl:PageHeight=decimal(in)
 - rdl:PageWidth=decimal(in)
 - rdl:StartPage=integer
-    - rdl:UseReportPageSize=true/false
+- rdl:UseReportPageSize=true/false
 
 XML:
 
-- rdl:UseFormattedValues=true/false
+- rdl:Encoding=string
 - rdl:Indented=true/false
 - rdl:OmitNamespace=true/false
 - rdl:OmitSchema=true/false
-- rdl:Encoding=string
 - rdl:Schema=true/false
+- rdl:UseFormattedValues=true/false
 
 **Open hyperlink in same browser window**
-You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report to make Power BI to open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
+You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report to make Power BI open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
 
 ## Next steps
 
 - [Pass a report parameter in a URL for a paginated report in Power BI](report-builder-url-pass-parameters.md)
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

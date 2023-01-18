@@ -7,27 +7,30 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/14/2022
+ms.date: 10/11/2022
 ---
 
 # Objects and properties of Power BI visuals
 
 Objects describe customizable properties that are associated with a visual. An object can have multiple properties, and each property has an associated type that describes what the property will be. This article provides information about objects and property types.
 
-`myCustomObject` is the internal name that's used to reference the object within `dataView` and `enumerateObjectInstances`.
+`myCustomObject` is the internal name that's used to reference the object within `dataView`.
 
 ```json
 "objects": {
     "myCustomObject": {
-        "displayName": "My Object Name",
         "properties": { ... }
     }
 }
 ```
 
-## Display name
+## Display name and description
+
+> [!NOTE]
+> Display name and description are deprecated from API version 5.1+. The display name and description are now added in the formatting model instead of the *capabilities.json* file.
 
 `displayName` is the name that will be shown in the property pane.
+`description` is a description of the formatting property that will be shown to the user as a tooltip.
 
 ## Properties
 
@@ -36,7 +39,6 @@ Objects describe customizable properties that are associated with a visual. An o
 ```json
 "properties": {
     "myFirstProperty": {
-        "displayName": "firstPropertyName",
         "type": ValueTypeDescriptor | StructuralTypeDescriptor
     }
 }
@@ -50,7 +52,6 @@ Example:
 ```json
 "properties": {
     "show": {
-        "displayName": "My Property Switch",
         "type": {"bool": true}
     }
 }
@@ -95,15 +96,11 @@ An example is shown in the following code:
 ```json
 "properties": {
     "showAllDataPoints": {
-        "displayName": "Show all",
-        "displayNameKey": "Visual_DataPoint_Show_All",
         "type": {
             "bool": true
         }
     },
     "fill": {
-        "displayName": "Fill",
-        "displayNameKey": "Visual_Fill",
         "type": {
             "fill": {
                 "solid": {
@@ -113,8 +110,6 @@ An example is shown in the following code:
         }
     },
     "fillRule": {
-        "displayName": "Color saturation",
-        "displayNameKey": "Visual_ColorSaturation",
         "type": {
             "fillRule": {}
         },
@@ -164,7 +159,86 @@ An example of the data role that triggers the fill rule (`the last item`) is sho
 }
 ```
 
-## The enumerateObjectInstances method
+## Formatting pane
+
+To customize the properties in the formatting pane, use one of the following methods, depending on what API version you're using.
+
+### [getFormattingModel API method](#tab/getFormattingModel)
+
+> [!NOTE]
+> The `getFormattingModel` API method is supported from API versions 5.1+
+
+To use objects effectively in API version 5.1+, you need to implement the `getFormattingModel` method.  
+This method builds and returns a formatting model that includes full [properties pane](./format-pane.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
+
+### Capabilities objects reflected in formatting model
+
+Each formatting property in the formatting model needs a corresponding object in the *capabilities.json* file. The formatting property should contain a descriptor with an object name and property name that exactly match the corresponding capabilities object (the object and property names are case sensitive).  
+For example:
+
+For the following formatting property in the formatting model (See the descriptor object content):
+
+```typescript
+ const myCustomCard: powerbi.visuals.FormattingCard = {
+            displayName: "My Custom Object Card",
+            uid: "myCustomObjectCard_uid",
+            groups: [{
+                displayName: undefined,
+                uid: "myCustomObjectGroup_uid",
+                slices: [
+                    {
+                        uid: "myCustomProperty_uid",
+                        displayName: "My Custom Property",
+                        control: {
+                            type: powerbi.visuals.FormattingComponent.ColorPicker,
+                            properties: {
+                                descriptor: {
+                                    objectName: "myCustomObject",
+                                    propertyName: "myCustomProperty",
+                                    selector: null // selector is optional
+                                },
+                                value: { value: "#000000" }
+                            }
+                        }
+                    }
+                ],
+            }],
+        };
+```
+
+The corresponding object from the capabilities `objects` section should be:
+
+```json
+    "objects": {
+        "myCustomObject": {
+            "properties": {
+                "myCustomProperty": {
+                    "type": {
+                         "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }           
+```
+
+### Formatting property selector
+
+The optional selector in formatting properties descriptor determines where each property is bound in the dataView. There are [four distinct options](#objects-selectors-types).
+
+#### Example
+
+The above `myCustomCard` example shows what formatting property in formatting model would look like for an object with one property `myCustomProperty`. This property object bound *statically* to `dataViews[index].metadata.objects`.
+Selector in descriptor can be changed accordingly to [selector type](#objects-selectors-types) you choose.
+
+### [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
+
+> [!NOTE]
+> The enumerateObjectInstances method has been deprecated from API version 5.1. It was replaced by the `getFormattingModel` in the new API.
 
 To use objects effectively, you need a function in your custom visual called `enumerateObjectInstances`. This function populates the property pane with objects and also determines where your objects should be bound within the dataView.  
 
@@ -189,13 +263,39 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 }
 ```
 
-### Properties
+### enumerateObjectInstances properties
 
 The properties in `enumerateObjectInstances` reflect the properties that you defined in your capabilities. For an example, go to the end of this article.
 
-### Objects selector
+### enumerateObjectInstances Example
 
-The selector in `enumerateObjectInstances` determines where each object is bound in the dataView. There are four distinct options.
+The following example shows what one objectEnumeration would look like for a customColor object with one property, *fill*. We want this object bound statically to `dataViews[index].metadata.objects`, as shown:
+
+```typescript
+objectEnumeration.push({
+    objectName: "customColor",
+    displayName: "Custom Color",
+    properties: {
+        fill: {
+            solid: {
+                color: dataPoint.color
+            }
+        }
+    },
+    selector: null
+});
+```
+
+---
+
+### Objects selectors types
+
+The selector in `enumerateObjectInstances` determines where each object is bound in the dataView. There are four distinct options:
+
+* [static](#static)
+* [columns](#columns)
+* [selector](#selector)
+* [scope identity](#scope-identity)
 
 #### static
 
@@ -217,7 +317,7 @@ selector: {
 
 #### selector
 
-This object is bound to the element that you created a `selectionID` for. In this example, let's assume that we've created `selectionID`s for some data points, and that we're looping through them.
+This object is bound to the element that you created a `selectionID` for. In this example, let's assume that we created `selectionID`s for some data points, and we're looping through them.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -236,21 +336,6 @@ selector: {
 }
 ```
 
-##### Example
+## Next steps
 
-The following example shows what one objectEnumeration would look like for a customColor object with one property, *fill*. We want this object bound statically to `dataViews[index].metadata.objects`, as shown:
-
-```typescript
-objectEnumeration.push({
-    objectName: "customColor",
-    displayName: "Custom Color",
-    properties: {
-        fill: {
-            solid: {
-                color: dataPoint.color
-            }
-        }
-    },
-    selector: null
-});
-```
+[Performance tips](performance-tips.md)

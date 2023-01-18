@@ -6,7 +6,7 @@ ms.author: alpowers
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/02/2022
+ms.date: 08/08/2022
 LocalizationGroup: Samples
 ---
 # Artificial Intelligence sample for Power BI: Take a tour
@@ -28,9 +28,9 @@ This tutorial explores the Artificial Intelligence Sample in the Power BI servic
 
 1. Open the Power BI service ([app.powerbi.com](https://app.powerbi.com)) and sign in.
 
-2. In the navigation pane, select **Learn**.
+2. In the navigation pane, select **Knowledge center**.
    
-   :::image type="content" source="media/sample-artificial-intelligence/power-bi-learn.png" alt-text="Screenshot of Select Learn.":::
+   :::image type="content" source="media/sample-artificial-intelligence/power-bi-learn.png" alt-text="Screenshot of Select Knowledge center.":::
 
 3. In the **Sample reports** section, select the **Artificial Intelligence Sample**.
 

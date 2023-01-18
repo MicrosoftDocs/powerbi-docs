@@ -3,12 +3,12 @@ title: Introduction to use Data view utils in Power BI visual
 description: This article describes how to use SVG utils  simplify parsing of the DataView object for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-manager: rkarlin
+manager:
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 10/12/2022
 ---
 
 # DataViewUtils
@@ -679,6 +679,10 @@ export class YourVisual extends IVisual {
 ```
 
 ## enumerateObjectInstances
+
+> [!IMPORTANT]
+> `enumerateObjectInstances` was deprecated in API version 5.1. It was replaced by [`getFormattingModel`](format-pane.md).
+> For `FormattingModel` utils see [utils formatting model](./utils-formatting-model.md).
 
 This static method enumerates properties and returns an instance of `VisualObjectInstanceEnumeration`.
 

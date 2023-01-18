@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/05/2022
+ms.date: 10/05/2022
 ---
 
 # Best practices for faster performance in Power BI embedded analytics
@@ -22,8 +22,10 @@ This article provides recommendations for faster rendering of reports, dashboard
 Keep tools and SDK packages up-to-date.
 
 * Always use the latest version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
-
 * Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continuously release new enhancements, so make sure to follow up from time to time.
+* Use the latest version of [Tabular Editor](https://github.com/otykier/TabularEditor/releases/latest)
+
+* Use the latest version of [Tabular Editor](https://github.com/otykier/TabularEditor/releases/latest)
 
 ## Embed parameters
 

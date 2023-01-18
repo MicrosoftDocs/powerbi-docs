@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 08/02/2022
 LocalizationGroup: Data from files
 ---
 
@@ -223,7 +223,12 @@ The following table shows settings for auto-generated datasets. When these setti
 | Q&amp;A | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-17.png" alt-text="Screenshot of the Q and A setting."::: |
 | Query caching | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-18.png" alt-text="Screenshot of the query caching setting."::: |
 
+## Datamarts considerations and limitations
 
+When using datamarts with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
+
+* You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
+* You cannot name or rename cloud data sources; you can name or rename gateway connections.
 
 ## Next steps
 This article provided sample data and instructions on how to create and interact with datamarts. 

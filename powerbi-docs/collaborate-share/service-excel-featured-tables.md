@@ -114,7 +114,7 @@ You can also refresh individual cells. Right-click the cell and select **Data Ty
 
 ## Licensing
 
-The Excel Data Types Gallery and connected experiences to Power BI featured tables is available for Excel subscribers with a Power BI Pro service plan.. 
+The Excel Data Types Gallery and connected experiences to Power BI featured tables is available for Excel subscribers with a Power BI Pro service plan.
 
 ## Security
 
@@ -149,8 +149,6 @@ Here are the current limitations:
    
     - Measures defined on related tables.
     - Implicit measures calculated from relationships.
-
-- Excel only displays featured tables (*data types*) that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces  aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
 
 - When using Power BI featured tables in Excel, your Power BI data may be processed in a region or geography that is different than where your Power BI tenant data is stored at rest.
 

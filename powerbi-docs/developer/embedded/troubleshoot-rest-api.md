@@ -5,9 +5,9 @@ author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-troubleshooting
+ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 4/07/2022
+ms.date: 11/03/2022
 ---
 
 # Troubleshoot REST APIs
@@ -47,6 +47,18 @@ HTTP/1.1 403 Forbidden
 When you send a [Power BI REST API](/rest/api/power-bi/) request, it might arrive at a cluster that doesn't contain your tenant's data. In that case, redirecting the request may fail due to a timeout.
 
 To fix the timeout exception, resend the request with the `preferClientRouting` parameter set to `true`. If your request arrives at the wrong cluster, the Power BI service returns a *307 Temporary Redirect* HTTP response. In such cases, you need to redirect your request to the new address specified in the response *HTTPS Location header*.
+
+## The update parameters or update data sources API fails after a few minutes
+
+The following generic error is sometimes returned in the response header:
+
+`HTTP/1.1 500 Internal Server Error`
+
+```json
+An error has occurred
+```
+
+When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-parameters-in-group) or the [Datasets - Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group) APIs, this error might indicate that you're updating a large dataset that isn't using the [large dataset](../../enterprise/service-premium-large-models.md) format. Use the large dataset format to avoid the error.
 
 ## Next steps
 

@@ -1,8 +1,8 @@
 ---
 title: Microsoft's BI transformation
 description: Learn how Microsoft successfully drives a data culture for business decision making. It describes their strategy and vision for BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -24,7 +24,7 @@ So, how can your organization, too, revolutionize the way it works with data? Le
 
 Several years ago at Microsoft, our organizational culture encouraged individuals to pursue full ownership of data and insights. It also experienced strong cultural resistance to doing things in a standardized way. So, the organizational culture led to reporting and analytic challenges. Specifically, it led to:
 
-- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each country had their own way of reporting on new revenue. There was no consistency, yet much confusion.
+- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each country or region had their own way of reporting on new revenue. There was no consistency, yet much confusion.
 - Analysts spending 75% of time collecting and compiling data.
 - 78% of reports being created in "offline environment".
 - Over 350 centralized finance tools and systems.

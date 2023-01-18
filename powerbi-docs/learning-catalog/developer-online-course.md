@@ -1,8 +1,8 @@
 ---
 title: "Power BI Developer in a Day course"
 description: This video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: yana.berkovich
 ms.custom: video-dv-ep90wse8
 ms.service: powerbi

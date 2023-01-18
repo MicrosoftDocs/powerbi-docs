@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 04/12/2021
+ms.date: 08/29/2022
 LocalizationGroup: Data from files
 ---
 # Sensitivity label change enforcement

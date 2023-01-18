@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 09/22/2022
 LocalizationGroup: Data from files
 ---
 # Dataflows best practices

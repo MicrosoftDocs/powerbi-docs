@@ -1,13 +1,13 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: willthom
-ms.author: v-okkyry
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 7/21/2022
+ms.date: 01/12/2023
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,82 @@ ms.date: 7/21/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## December 2022 QFE 1
+*Version: 2.112.1161.0, Released: January 10, 2023*
+
+Bug fixes/improvements:
+* AS Engine fix. DAX queries that contain query-scope calculated tables and send through external tools will not return error in certain cases.
+* DAX window functions fix. Now function will not return error in certain cases when the *relation* parameter use CalculateTable function.
+* Fix to data view filter menu.  Customers will see correct distinct values after applying filter/sort by another column.
+
+
+
+## October 2022 QFE 2
+
+*Version: 2.110.1161.0, Released: November 7, 2022*
+
+Bug fixes/improvements:
+* Fix for modeling regression: customers can now rename fields in tables created using DAX expressions, such as Calendar functions and Field parameter tables.
+
+## October 2022 QFE 1
+
+*Version: 2.110.1085.0, Released: November 3, 2022*
+
+Bug fixes/improvements:
+* Fix for Formula bar in model view: customers won't get an error message when deleting a table with selected DAX expression in Formula bar.
+* Fix for Formula bar in model view: customers can now edit DAX expression that contain special Japanese symbols.
+* Fix for Proxy models regression: customers can now rename fields after converting Live connect model to a local model.
+
+## September 2022 QFE 3
+
+*Version: 2.109.1021.0, Released: October 4, 2022*
+
+Bug fixes/improvements:
+* Performance regression fix: customers will now see faster performance when they open and save .pbix files that have a large number of queries.
+
+## September 2022 QFE 2
+
+*Version: 2.109.844.0, Released: September 28, 2022*
+
+Bug fixes/improvements:
+* Horizontal Fusion improvement: now covers more query patterns, including patterns that rely on "TreatAs" to filter results.
+
+## September 2022 QFE 1
+
+*Version: 2.109.782.0, Released: September 20, 2022*
+
+Bug fixes/improvements:
+* Fix for Card visual: users can now set and modify the conditional formatting options to callout value color.
+* Fix for charts with multiple series: conditional formatting will now correctly apply multiple colors to data labels.
+
+## August 2022 QFE 2
+
+*Version: 2.108.997.0, Released: August 25, 2022*
+
+Bug fixes/improvements:
+- Fix for OAuth token refresh for certain data sources like Synapse.
+- Fix for live connections to AS models that have columns or measures included in more than one nested display folder.
+- Data view regression fix: now list of filters in context menu will be displayed even when menu icons are not in focus. 
+- EvaluateAndLog  DAX function fix: now the function will work as expected and won't return an error. 
+- SAP HANA regression fixes: now power query won't show "the index is outside the bounds of the records" error message and there won't be missing values for columns when using Cube.AttributeMemberID on the query.  
+- Rollback change for cashing: cashing will be done the same way as in previous releases
+- Formula bar fixes for cases when “Shift+Enter” is used. 
+- “Apply/discard changes” regression fix.
+
+
+## August 2022 QFE 1
+
+*Version: 2.108.825.0, Released: August 18, 2022*
+
+Bug fixes/improvements:
+- Fix for PBIX open file issue when connecting to Proxy models. 
+- Data view filtering regression fix: now when filtering wide tables by selecting one column and scrolling to select one more column, the filtering/scrolling will work, and user will be able to select a column at the end of a wide table. 
+- Data view regression fix: date and number filter options will be available in the right-click menu. 
+- Formula bar fixes for cases when “Shift+Enter” is used. 
+- “Apply/discard changes” regression fix.
+
 
 ## July 2022 QFE 1
 
