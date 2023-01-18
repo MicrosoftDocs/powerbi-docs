@@ -22,7 +22,7 @@ A *relationship with a many-to-many cardinality* in Power BI Desktop is composed
 
 * **Relationships with a many-to-many cardinality**: With composite models, you can establish *relationships with a many-to-many cardinality* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. The feature is described further in this article.
 
-* **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, began queries that were sent to back-end sources. For more information, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
+* **Storage mode**: You can now specify which visuals require a query to backend data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce backend load. Previously, even simple visuals, such as slicers, began queries that were sent to backend sources. For more information, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
 ## What a relationship with a many-to-many cardinality solves
 
@@ -81,7 +81,7 @@ Before the July 2018 release of Power BI Desktop, you couldn't create a direct r
 
 * Then relate the two original tables to that new table by using common *Many-1* relationships.
 
-You could leave the workaround table visible. Or you might hide the workaround table, so it doesn't appear in the **Fields** list. If you hide the table, the *Many-1* relationships would commonly be set to filter in both directions, and you could use the State field from either table. The latter cross filtering would propagate to the other table. That approach is shown in the following image:
+You could leave the workaround table visible. Or you might hide the workaround table, so it doesn't appear in the **Fields** list. If you hide the table, the *Many-1* relationships would commonly be set to filter in both directions, and you could use the State field from either table. The latter cross-filtering would propagate to the other table. That approach is shown in the following image:
 
 :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_08.png" alt-text="Screenshot of a hidden State table in Relationship view.":::
 
@@ -102,15 +102,15 @@ Let's say you define the new Sales table as the combination of all States here, 
 
 As you can see, TX&mdash;with **Sales** data but unknown *Population* data&mdash;and New York&mdash;with known **Population** data but no **Sales** data&mdash;would be included. This workaround isn't optimal, and it has many issues. For relationships with a many-to-many cardinality, the resulting issues are addressed, as described in the next section.
 
-For more information about implementing this workaround, see [many-to-many relationship guidance](../guidance/relationships-many-to-many.md).
+For more information about implementing this workaround, see [Many-to-many relationship guidance](../guidance/relationships-many-to-many.md).
 
 ## Use a relationship with a many-to-many cardinality instead of the workaround
 
 You can directly relate tables, such as the ones we described earlier, without having to resort to similar workarounds. It's now possible to set the relationship cardinality to *many-to-many*. This setting indicates that neither table contains unique values. For such relationships, you might still control which table filters the other table. Or you can apply bidirectional filtering, where each table filters the other.
 
-In Power BI Desktop, the cardinality defaults to *many-to-many* when it determines neither table contains unique values for the relationship columns. In such cases, a warning message confirms you want to set a relationship, and the change isn't the unintended effect of a data issue.
+In Power BI Desktop, the cardinality defaults to *many-to-many* when it determines neither table contains unique values for the relationship columns. In such cases, a warning message confirms that you want to set a relationship, and that the change isn't the unintended effect of a data issue.
 
-For example, when you create a relationship directly between CityData and Sales&mdash;where filters should flow from CityData to Sales&mdash;Power BI Desktop displays the **Edit relationship** dialog box:
+For example, when you create a relationship directly between CityData and Sales&mdash;where filters should flow from CityData to Sales&mdash;Power BI Desktop displays the **Edit relationship** dialog:
 
 :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_01.png" alt-text="Screenshot of the Edit relationship dialog box with Cardinality and Cross filter direction highlighted.":::
 
@@ -128,7 +128,7 @@ The major differences between *relationships with a many-to-many cardinality* an
 
     A visual showing **State**, **Sales**, and **Sales total** data would result in this graphic:
 
-    :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_14.png" alt-text="Screenshot of the table visual":::
+    :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_14.png" alt-text="Screenshot of a table visual showing State, Sales, and Sales total resulitng from the formula.":::
 
 With the preceding differences in mind, make sure the calculations that use `ALL(<Table>)`, such as *% of grand total*, are returning the intended results.
 
