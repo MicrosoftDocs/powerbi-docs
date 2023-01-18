@@ -1,13 +1,13 @@
 ---
 title: "Subreports in Power BI paginated reports"
-description: In this article, you learn about supported data sources for paginated reports in the Power BI service.
+description: Learn about supported data sources for paginated reports in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/27/2022
+ms.date: 01/17/2023
 ---
 
 # Subreports in Power BI paginated reports
@@ -15,21 +15,22 @@ ms.date: 10/27/2022
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 A *subreport* is a paginated report item that displays another paginated report inside the body of a main paginated report. Conceptually, a subreport in a report is similar to a frame in a Web page. You use it to embed a report within a report. You can use any report as a subreport. You store the report that is displayed as the subreport in the same workspace as the parent report. You can design the parent report to pass parameters to the subreport. A subreport can repeat within data regions, using a parameter to filter data in each instance of the subreport.  
+
+In the following screenshot, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
   
- ![Screenshot showing Subreport in a paginated report.](media/subreports/paginated-report-subreport.png "Screenshot showing Subreport in a paginated report")  
+:::image type="content" source="media/subreports/paginated-report-subreport.png" alt-text="Screenshot showing a subreport in a paginated report.":::
   
- In this illustration, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
-  
-You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. 
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
-- You can publish to My Workspace, or you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
+- Download and install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+- You can publish to My Workspace. For any other workspace, you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
   
 ## Work with Report Builder and the Power BI service
 
-Power BI Report Builder can work with paginated reports on your computer (known as local reports) or with reports on the Power BI service.  When you open Report Builder for the first time, you're asked to sign into your Power BI account. If not, select **Sign In** in the upper-right corner.
+Power BI Report Builder can work with paginated reports on your computer, known as local reports, or with reports on the Power BI service.  When you open Report Builder for the first time, you're asked to sign into your Power BI account. If not, select **Sign In** at the upper-right corner.
 
 :::image type="content" source="media/subreports/report-builder-sign-in.png" alt-text="Screenshot showing Sign in to Power BI.":::
 
@@ -43,7 +44,7 @@ Before you can add a subreport to a main report, first create the two reports an
 
 1. To open an existing local report, on the **File** menu, select **Open** > **This PC** and select an .rdl file.  
 
-2. On the **File** menu, select **Save As** > **Power BI Service**.  See [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md) for details.
+2. On the **File** menu, select **Save As** > **Power BI Service**. For details, see [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md).
 
     > [!NOTE]
     > You can also upload a report by starting in the Power BI service. The same article, [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md), has details.
@@ -56,7 +57,7 @@ Before you can add a subreport to a main report, first create the two reports an
 
 ## Add a subreport to a report
 
-Now that you've saved both reports to the same workspace, you can add one to the other as a subreport. There are two ways to add a subreport.
+After you save both reports to the same workspace, you can add one to the other as a subreport. There are two ways to add a subreport.
 
 1. On the **Insert** ribbon, select the **Subreport** button, or right-click on the report canvas and select **Insert** > **Subreport**.
 
@@ -69,14 +70,15 @@ Now that you've saved both reports to the same workspace, you can add one to the
 3. Configure other properties as needed, including [parameters](#use-parameters-in-subreports).
 
 ## Use parameters in subreports  
- To pass parameters from the parent report to the subreport, define a report parameter in the report that you use as the subreport. When you place the subreport in the parent report, you can select the report parameter and a value to pass from the parent report to the report parameter in the subreport.  
+
+To pass parameters from the parent report to the subreport, define a report parameter in the report that you use as the subreport. When you place the subreport in the parent report, you can select the report parameter and a value to pass from the parent report to the report parameter in the subreport.  
   
 > [!NOTE]  
 > The parameter that you select from the subreport is a *report* parameter, not a *query* parameter.  
   
- You can place a subreport in the main body of the report or in a data region. If you place a subreport in a data region, the subreport repeats with each instance of the group or row in the data region. You can pass a value from the group or row to the subreport. In the subreport value property, use a field expression for the field containing the value you want to pass to the subreport parameter.  
+You can place a subreport in the main body of the report or in a data region. If you place a subreport in a data region, the subreport repeats with each instance of the group or row in the data region. You can pass a value from the group or row to the subreport. In the subreport value property, use a field expression for the field containing the value you want to pass to the subreport parameter.  
   
- For more about working with parameters and subreports, see [Add a subreport and parameters](/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.  
+For more about working with parameters and subreports, see [Add a subreport and parameters](/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.  
 
 ## Preview paginated reports in Report Builder
 
@@ -94,23 +96,23 @@ Because Report Builder is a design tool, previewing the report may look differen
 
 ## Considerations
 
-### Maintaining the connection
+### Maintain the connection
 
 Report Builder doesn’t persist the connection to Power BI when you close the file.  It's possible to work with a local main report with subreports stored in the Power BI workspace. Be sure to save the main report to the Power BI workspace before closing the report.  If you don't, you may get a ‘not found’ message during preview, because there's no live connection to the Power BI service.  In that case, go to a subreport and select its properties.  Open the subreport again from the Power BI service.  This re-establishes the connection, and all other subreports should be fine.
 
-### Renaming a subreport
+### Rename a subreport
 
 If you rename a subreport in the workspace, you need to fix the name reference in the main report. Otherwise, the subreport won't render. The main report still renders with an error message inside the subreport item.
 
 ## Migrate large reports
 
-If you're migrating large reports to Power BI, consider using the [RdlMigration tool](../guidance/migrate-ssrs-reports-to-power-bi.md).  The RdlMigration tool has been updated to handle duplicate subreport names.  Duplicate subreport names can occur when two or more reports share the same name but reside in different subdirectories.  If the names aren't uniquely resolved, only the first subreport is recognized.
+If you're migrating large reports to Power BI, consider using the [RDL migration tool](../guidance/migrate-ssrs-reports-to-power-bi.md#migration-tool-for-previous-versions-of-sql-server). The RDL migration tool has been updated to handle duplicate subreport names.  Duplicate subreport names can occur when two or more reports share the same name but reside in different subdirectories.  If the names aren't uniquely resolved, only the first subreport is recognized.
 
-If you want to use Report Builder to migrate large reports, we recommend working with the subreports first. Save each one to the Power BI workspace to prevent any duplicate report names.
+If you want to use Report Builder to migrate large reports, you should work with the subreports first. Save each one to the Power BI workspace to prevent any duplicate report names.
 
 ## Share reports with subreports
 
-As we've stated, the main report and subreports must be in the same workspace. Otherwise, the subreport doesn't render. When sharing the main report, you also need to share the subreports. If you share the main report in an app, make sure you also include the subreports in that app. If you share the main report with users or user groups directly, make sure you also share each subreport with the same set of users or user groups.
+The main report and subreports must be in the same workspace. Otherwise, the subreport doesn't render. When sharing the main report, you also need to share the subreports. If you share the main report in an app, make sure you also include the subreports in that app. If you share the main report with users or user groups directly, make sure you also share each subreport with the same set of users or user groups.
   
 ## Next steps
 
@@ -118,4 +120,4 @@ As we've stated, the main report and subreports must be in the same workspace. O
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI community](https://community.powerbi.com/)
