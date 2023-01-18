@@ -1,13 +1,13 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: paulinbar
-ms.author: painbar
-ms.reviewer: asaxton
+author: kfollis
+ms.author: kfollis
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 12/29/2022
 ---
 
 # Row-level security (RLS) guidance in Power BI Desktop
@@ -17,7 +17,7 @@ This article targets you as a data modeler working with Power BI Desktop. It des
 It's important to understand RLS filters _table rows_. They can't be configured to restrict access to model objects, including tables, columns, or measures.
 
 > [!NOTE]
-> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md).
+> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](/power-bi/enterprise/service-admin-rls).
 >
 > Also, it doesn't cover enforcing RLS in live connections to external-hosted models with Azure Analysis Services or SQL Server Analysis Services. In these cases, RLS is enforced by Analysis Services. When Power BI connects using single-sign on (SSO), Analysis Services will enforce RLS (unless the account has admin privileges).
 
@@ -34,7 +34,7 @@ FALSE()
 ```
 
 > [!NOTE]
-> A rule will return no table rows when its expression evaluates to **false**.
+> A rule will return no table rows when its expression evaluates to `FALSE`.
 
 Yet, a second role, named **Managers**, allows access to all **Payroll** table rows by using the following rule expression:
 
@@ -57,11 +57,11 @@ Whenever RLS filters are enforced on DirectQuery tables and there are relationsh
 
 ### Measure RLS impact
 
-It's possible to measure the performance impact of RLS filters in Power BI Desktop by using [Performance Analyzer](../create-reports/desktop-performance-analyzer.md). First, determine report visual query durations when RLS isn't enforced. Then, use the **View As** command on the **Modeling** ribbon tab to enforce RLS and determine and compare query durations.
+It's possible to measure the performance impact of RLS filters in Power BI Desktop by using [Performance Analyzer](/power-bi/create-reports/desktop-performance-analyzer). First, determine report visual query durations when RLS isn't enforced. Then, use the **View As** command on the **Modeling** ribbon tab to enforce RLS and determine and compare query durations.
 
 ## Configure role mappings
 
-Once published to Power BI, you must map members to dataset roles. Only dataset owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](../enterprise/service-admin-rls.md#manage-security-on-your-model).
+Once published to Power BI, you must map members to dataset roles. Only dataset owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model).
 
 Members can be user accounts or security groups. Whenever possible, we recommend you map security groups to dataset roles. It involves managing security group memberships in Azure Active Directory. Possibly, it delegates the task to your network administrators.
 
@@ -69,7 +69,7 @@ Members can be user accounts or security groups. Whenever possible, we recommend
 
 Test each role to ensure it filters the model correctly. It's easily done by using the **View As** command on the **Modeling** ribbon tab.
 
-When the model has dynamic rules using the [USERNAME](/dax/username-function-dax) DAX function, be sure to test for expected _and unexpected_ values. When embedding Power BI content—specifically using the [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) scenario—app logic can pass any value as an effective identity user name. Whenever possible, ensure accidental or malicious values result in filters that return no rows.
+When the model has dynamic rules using the [USERNAME](/dax/username-function-dax) DAX function, be sure to test for expected _and unexpected_ values. When embedding Power BI content—specifically using the [embed for your customers](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) scenario—app logic can pass any value as an effective identity user name. Whenever possible, ensure accidental or malicious values result in filters that return no rows.
 
 Consider an example using Power BI embedded, where the app passes the user's job role as the effective user name: It's either "Manager" or "Worker". Managers can see all rows, but workers can only see rows where the **Type** column value is "Internal".
 
@@ -125,7 +125,7 @@ SUMMARIZECOLUMNS(
 ```
 
 > [!NOTE]
-> An [aggregation table](../enterprise/aggregations-auto.md) could achieve the same design requirement.
+> An [aggregation table](/power-bi/enterprise/aggregations-auto) could achieve the same design requirement.
 
 The following RLS rule is applied to the **Salesperson** table:
 
@@ -138,8 +138,8 @@ Each of the three model relationships is described in the following table:
 |Relationship|Description|
 |---------|---------|
 |![Flowchart terminator 1.](media/common/icon-01-red-30x30.png)|There's a many-to-many relationship between the **Salesperson** and **Sales** tables. The RLS rule filters the **EmailAddress** column of the hidden **Salesperson** table by using the [USERNAME](/dax/username-function-dax) DAX function. The **Region** column value (for the report user) propagates to the **Sales** table.|
-|![Flowchart terminator 2.](media/common/icon-02-red-30x30.png)|There's a one-to-many relationships between the **Date** and **Sales** tables.|
-|![Flowchart terminator 3.](media/common/icon-03-red-30x30.png)|There's a one-to-many relationships between the **Date** and **SalesRevenueSummary** tables.|
+|![Flowchart terminator 2.](media/common/icon-02-red-30x30.png)|There's a one-to-many relationship between the **Date** and **Sales** tables.|
+|![Flowchart terminator 3.](media/common/icon-03-red-30x30.png)|There's a one-to-many relationship between the **Date** and **SalesRevenueSummary** tables.|
 
 The following expression defines the **Revenue % All Region** measure:
 
@@ -156,20 +156,20 @@ DIVIDE(
 
 ## Avoid using RLS
 
-Avoid using RLS, whenever it makes sense to do so. If you have only a small number of simplistic RLS rules that apply static filters, consider publishing multiple datasets instead. None of the datasets define roles because each dataset contains data for a specific report user audience, which has the same data permissions. Then, create one workspace per audience and assign access permissions to the workspace or app.
+Avoid using RLS, whenever it makes sense to do so. If you have only a few simplistic RLS rules that apply static filters, consider publishing multiple datasets instead. None of the datasets define roles because each dataset contains data for a specific report user audience, which has the same data permissions. Then, create one workspace per audience and assign access permissions to the workspace or app.
 
 For example, a company that has just two sales regions decides to publish a dataset _for each sales region_ to different workspaces. The datasets don't enforce RLS. They do, however, use [query parameters](/power-query/power-query-query-parameters) to filter source data. This way, the same model is published to each workspace—they just have different dataset parameter values. Salespeople are assigned access to just one of the workspaces (or published apps).
 
 There are several advantages associated with avoiding RLS:
 
 - **Improved query performance:** It can result in improved performance due to fewer filters.
-- **Smaller models:** While it results in more models, they are smaller in size. Smaller models can improve query and data refresh responsiveness, especially if the hosting capacity experiences pressure on resources. Also, it's easier to keep model sizes beneath size limits imposed by your capacity. Lastly, it's easier to balance workloads across different capacities, because you can create workspaces on—or move workspaces to—different capacities.
-- **Additional features:** Power BI features that don't work with RLS, like [Publish to web](../collaborate-share/service-publish-to-web.md), can be used.
+- **Smaller models:** While it results in more models, they're smaller in size. Smaller models can improve query and data refresh responsiveness, especially if the hosting capacity experiences pressure on resources. Also, it's easier to keep model sizes below size limits imposed by your capacity. Lastly, it's easier to balance workloads across different capacities, because you can create workspaces on—or move workspaces to—different capacities.
+- **Additional features:** Power BI features that don't work with RLS, like [Publish to web](/power-bi/collaborate-share/service-publish-to-web), can be used.
 
 However, there are disadvantages associated with avoiding RLS:
 
 - **Multiple workspaces:** One workspace is required for each report user audience. If apps are published, it also means there's one app per report user audience.
-- **Duplication of content:** Reports and dashboards must be created in each workspace. It requires additional effort and time to set up and maintain.
+- **Duplication of content:** Reports and dashboards must be created in each workspace. It requires more effort and time to set up and maintain.
 - **High privilege users:** High privilege users, who belong to multiple report user audiences, can't see a consolidated view of the data. They'll need to open multiple reports (from different workspaces or apps).
 
 ## Troubleshoot RLS
@@ -181,24 +181,24 @@ If RLS produces unexpected results, check for the following issues:
 - Tables contain no data.
 - Incorrect values are loaded into tables.
 - The user is mapped to multiple roles.
-- The model includes aggregation tables, and RLS rules don't consistently filter aggregations and details. For more information, see [Use aggregations in Power BI Desktop (RLS for aggregations)](../enterprise/aggregations-auto.md#custom-alm-solutions).
+- The model includes aggregation tables, and RLS rules don't consistently filter aggregations and details. For more information, see [Use aggregations in Power BI Desktop (RLS for aggregations)](/power-bi/enterprise/aggregations-auto#custom-alm-solutions).
 
 When a specific user can't see any data, it could be because their UPN isn't stored or it's entered incorrectly. It can happen abruptly because their user account has changed as the result of a name change.
 
 > [!TIP]
 > For testing purposes, add a measure that returns the [USERNAME](/dax/username-function-dax) DAX function. You might name it something like "Who Am I". Then, add the measure to a card visual in a report and publish it to Power BI.
 
-When a specific user can see all data, it's possible they're accessing reports directly in the workspace and they're the dataset owner. RLS is only enforced when:
+Creators and consumers with only Read permission on the dataset will only be able to view the data they're allowed to see (based on their RLS role mapping).
 
-- The report is opened in an app.
-- The report is opened in a workspace, and the user is mapped to the [Viewer role](../collaborate-share/service-roles-new-workspaces.md).
+When a user views a report in either a workspace or an app, RLS may or may not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying dataset when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
 
 ## Next steps
 
 For more information related to this article, check out the following resources:
 
-- [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md)
-- [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md)
-- [Model relationships in Power BI Desktop](../transform-model/desktop-relationships-understand.md)
+- [Row-level security (RLS) with Power BI](/power-bi/enterprise/service-admin-rls)
+- [Restrict data access with row-level security (RLS) for Power BI Desktop](/power-bi/enterprise/service-admin-rls)
+- [Model relationships in Power BI Desktop](/power-bi/transform-model/desktop-relationships-understand)
+- [Power BI implementation planning: Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

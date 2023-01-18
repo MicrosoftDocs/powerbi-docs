@@ -1,3 +1,6 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
 - name: Learn
   href: /
   topicHref: /
@@ -10,64 +13,12 @@
       tocHref: /power-bi/
       topicHref: /power-bi/
       items:
-      - name: Consumers
-        tocHref: /power-bi/consumer/
-        topicHref: /power-bi/consumer/index
+      - name: Embedded analytics
+        tocHref: /power-bi/developer/embedded/
+        topicHref: /power-bi/developer/embedded/index
       - name: Mobile
         tocHref: /power-bi/consumer/mobile/
         topicHref: /power-bi/consumer/mobile/index
-      - name: Developer
-        tocHref: /power-bi/developer/
-        topicHref: /power-bi/developer/index
-        items:
-        - name: Embedded analytics
-          tocHref: /power-bi/developer/embedded/
-          topicHref: /power-bi/developer/embedded/index
-        - name: Embedded analytics
-          tocHref: /javascript/api/overview/powerbi/
-          topicHref: /power-bi/developer/embedded/index          
-        - name: Power BI visuals
-          tocHref: /power-bi/developer/visuals/
-          topicHref: /power-bi/developer/visuals/index
-        - name: Power BI visuals
-          tocHref: /power-bi/create-reports/
-          topicHref: /power-bi/developer/visuals/index          
-        - name: Automation
-          tocHref: /power-bi/developer/automation/
-          topicHref: /power-bi/developer/automation/index
-      - name: Guided learning
-        tocHref: /power-bi/guided-learning/
-        topicHref: /power-bi/guided-learning/
-      - name: Learning catalog
-        tocHref: /power-bi/learning-catalog/
-        topicHref: /power-bi/learning-catalog/index
       - name: Report Server
         tocHref: /power-bi/report-server/
         topicHref: /power-bi/report-server/index
-      - name: Guidance
-        tocHref: /power-bi/guidance/
-        topicHref: /power-bi/guidance/index
-      - name: Collaborate, share, integrate
-        tocHref: /power-bi/collaborate-share/
-        topicHref: /power-bi/collaborate-share/index
-      - name: Create reports and dashboards
-        tocHref: /power-bi/create-reports/
-        topicHref: /power-bi/create-reports/index
-      - name: Create reports and dashboards
-        tocHref: /power-bi/visuals/
-        topicHref: /power-bi/create-reports/index
-      - name: Create reports and dashboards
-        tocHref: /power-bi/natural-language/
-        topicHref: /power-bi/create-reports/index
-      - name: Create reports and dashboards
-        tocHref: /power-bi/paginated-reports/
-        topicHref: /power-bi/create-reports/index
-      - name: Connect to data
-        tocHref: /power-bi/connect-data/
-        topicHref: /power-bi/connect-data/index
-      - name: Get started
-        tocHref: /power-bi/fundamentals/
-        topicHref: /power-bi/fundamentals/index
-      - name: Transform, shape, model data
-        tocHref: /power-bi/transform-model/
-        topicHref: /power-bi/transform-model/index

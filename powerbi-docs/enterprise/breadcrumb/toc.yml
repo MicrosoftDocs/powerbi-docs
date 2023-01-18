@@ -1,0 +1,21 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
+- name: Docs
+  href: /
+  topicHref: /
+  items:
+  - name: Power Platform
+    href: /power-platform/
+    topicHref: /power-platform/
+    items:
+    - name: Power BI
+      tocHref: /power-bi/
+      topicHref: /power-bi/
+      items:
+      - name: Enterprise
+        tocHref: /power-bi/enterprise/
+        topicHref: /power-bi/enterprise/index
+      - name: Enterprise
+        tocHref: /power-bi/admin/
+        topicHref: /power-bi/enterprise/index

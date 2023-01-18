@@ -1,6 +1,6 @@
 ---
 title: Enter data directly into Power BI Desktop
-description: Easily add data directly into Power BI Desktop
+description: Find out how to easily add data directly into Power BI Desktop to use that data in your reports and visualizations.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/22/2022
+ms.date: 01/05/2023
 LocalizationGroup: Connect to data
 ---
 # Enter data directly into Power BI Desktop
@@ -17,17 +17,17 @@ With Power BI Desktop, you can enter data directly and use that data in your rep
 
 To enter data directly into Power BI Desktop in the form of a new table, select **Enter data** from the **Home** ribbon.
 
-![Select Enter Data in Home](media/desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
+![Screenshot shows the Enter Data item to select in the Home ribbon.](media/desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
 
-Power BI Desktop may attempt to make minor transformations on the data, if appropriate, just like it does when you load data from any source. For example, in the following case it promoted the first row of data to headers.
+Power BI Desktop might attempt to make minor transformations on the data, if appropriate, just like it does when you load data from any source. For example, in the following case it promoted the first row of data to headers.
 
-![Data with the first row as column titles](media/desktop-enter-data-directly-into-desktop/enter-data-directly_2.png)
+![Screenshot shows the Create Table dialog with added data where the first row is column titles.](media/desktop-enter-data-directly-into-desktop/enter-data-directly_2.png)
 
 If you want to shape the data you entered or pasted, select **Edit** to open **Power Query Editor**. You can shape and transform the data before bringing it into Power BI Desktop. Select **Load** to import the data as it appears.
 
-When you select **Load**, Power BI Desktop creates a new table from your data, and makes it available in the **Fields** pane. In the following image, Power BI Desktop shows my new table, called *Table1*, and the two fields within that table that were created.
+When you select **Load**, Power BI Desktop creates a new table from your data, and makes it available in the **Fields** pane. In the following image, Power BI Desktop shows your new table, called **Table**, and the two fields within that table that were created.
 
-![Fields loaded into Power BI Desktop](media/desktop-enter-data-directly-into-desktop/enter-data-directly_3.png)
+![Screenshot shows the table created with the two fields loaded into Power BI Desktop.](media/desktop-enter-data-directly-into-desktop/enter-data-directly_3.png)
 
 And that’s it. It's that easy to enter data into Power BI Desktop.
 

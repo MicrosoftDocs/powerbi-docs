@@ -27,7 +27,7 @@ When you import an Excel workbook into Power BI, you may see the following error
 2. Select the range of cells that contain your data. The first row should contain your column headers (the column names).
 3. Press **Ctrl + T** to create a table.
 4. Save your workbook.
-5. Return to Power BI and import your workbook again, or if you're working in Excel 2016 and you've saved your workbook to OneDrive for Business, in Excel, click File > Publish.
+5. Return to Power BI and import your workbook again, or if you're working in Excel 2016 and you've saved your workbook to OneDrive for work or school, in Excel, click File > Publish.
 
 ## Details
 ### Cause

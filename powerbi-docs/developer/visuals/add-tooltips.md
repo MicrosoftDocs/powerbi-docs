@@ -1,13 +1,13 @@
 ---
 title: Add tooltips to Power BI custom visuals
-description: This article discusses how you can display tooltips in Power BI custom visuals.
+description: Learn how to configure simple or modern tooltips in Power BI custom visuals that provide more details to users.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 02/02/2022
+ms.date: 12/29/2022
 ---
 
 # Add tooltips to your Power BI visuals
@@ -24,7 +24,7 @@ You can change the style of your tooltips or add drilling actions by enabling th
 
 The following image shows a tooltip in a sample bar chart:
 
-![Sample bar chart tooltips](media/add-tooltips/tooltips-in-samplebarchart.png)
+:::image type="content" source="media/add-tooltips/tooltips-in-samplebarchart.png" alt-text="Screenshot that shows sample bar chart tooltips.":::
 
 The above tooltip image illustrates a single bar category and value. You can extend the tooltip to display multiple values.
 
@@ -41,8 +41,8 @@ You can manage the tooltips in your visual through the `ITooltipService` interfa
     }
 ```
 
-Your visual should listen for mouse events within your visual and call the `show()`, `move()`, and `hide()` delegates, as needed, with the appropriate content populated in the Tooltip `options` objects.
-`TooltipShowOptions` and `TooltipHideOptions` would in turn define what to display and how to behave in these events.
+Your visual should detect mouse events within the visual and call the `show()`, `move()`, and `hide()` delegates, as needed, with the appropriate content populated in the Tooltip `options` objects.
+`TooltipShowOptions` and `TooltipHideOptions` in turn define what to display and how to behave in these events.
 
 Calling these methods involves user events such as mouse moves and touch events, so it's a good idea to create listeners for these events, which would in turn invoke the `TooltipService` members.
 The following example aggregates in a class called `TooltipServiceWrapper`.
@@ -105,11 +105,8 @@ The single entry point for this class to register event listeners is the `addToo
 ```
 
 * **selection: d3.Selection\<Element\>**: The d3 elements over which tooltips are handled.
-
 * **getTooltipInfoDelegate: (args: TooltipEventArgs\<T\>) => VisualTooltipDataItem[]**: The delegate for populating the tooltip content (what to display) per context.
-
 * **getDataPointIdentity: (args: TooltipEventArgs\<T\>) => ISelectionId**: The delegate for retrieving the data point ID (unused in this sample).
-
 * **reloadTooltipDataOnMouseMove? boolean**: A Boolean that indicates whether to refresh the tooltip data during a MouseMove event (unused in this sample).
 
 As you can see, `addTooltip` exits with no action if the `tooltipService` is disabled or there's no real selection.
@@ -146,11 +143,8 @@ The `addTooltip` method next listens to the D3 `mouseover` event, as shown in th
 ```
 
 * **makeTooltipEventArgs**: Extracts the context from the D3 selected elements into a tooltipEventArgs. It calculates the coordinates as well.
-
 * **getTooltipInfoDelegate**: It then builds the tooltip content from the tooltipEventArgs. It's a callback to the BarChart class, because it is the visual's logic. It's the actual text content to display in the tooltip.
-
 * **getDataPointIdentity**: Unused in this sample.
-
 * **this.visualHostTooltipService.show**: The call to display the tooltip.  
 
 Additional handling can be found in the sample for `mouseout` and `mousemove` events.
@@ -172,11 +166,11 @@ The BarChart class was added with a `getTooltipData` member, which simply extrac
         }
 ```
 
-In the preceding implementation, the `header` member is constant, but you can use it for more complex implementations, which require dynamic values. You can populate the `VisualTooltipDataItem[]` with more than one element, which adds multiple lines to the tooltip. It can be useful in visuals such as stacked bar charts where the tooltip may display data from more than a single data point.
+In the preceding implementation, the `header` member is constant, but you can use it for more complex implementations, which require dynamic values. You can populate the `VisualTooltipDataItem[]` with more than one element, which adds multiple lines to the tooltip. It can be useful in visuals such as stacked bar charts where the tooltip might display data from more than a single data point.
 
 ### Call the addTooltip method
 
-The final step is to call the `addTooltip` method when the actual data might change. This call takes place in the `BarChart.update()` method. A call is made to monitor the selection of all the 'bar' elements, passing only the `BarChart.getTooltipData()`, as mentioned previously.
+The final step is to call the `addTooltip` method when the actual data might change. This call takes place in the `BarChart.update()` method. A call is made to monitor the selection of all the "bar" elements, passing only the `BarChart.getTooltipData()`, as mentioned previously.
 
 ```typescript
         this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),
@@ -209,10 +203,9 @@ You can then define the tooltips from the [**Formatting pane**](../../create-rep
 * `supportedTypes`: The tooltip configuration supported by the visual and reflected in the fields well.
   * `default`: Specifies whether the "automatic" tooltips binding via the data field is supported.
   * `canvas`: Specifies whether the report page tooltips are supported.
-
 * `roles`: (Optional) After it's defined, it instructs what data roles are bound to the selected tooltip option in the fields well.
 
-![Report page tooltip](media/add-tooltips/report-page-tooltips.png)
+:::image type="content" source="media/add-tooltips/report-page-tooltips.png" alt-text="Screenshot that shows the Report page tooltip dialog.":::
 
 For more information, see [Report page tooltips usage guidelines](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
@@ -230,7 +223,7 @@ An example of sending the selectionId to tooltip display calls is shown in the f
 
 From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme.
 
-![modern tooltip](media/add-tooltips/modern-tooltip.png)
+:::image type="content" source="media/add-tooltips/modern-tooltip.png" alt-text="Screenshot that shows a modern tooltip.":::
 
 To manage report page modern tooltips support, add the `supportEnhancedTooltips` property to the `tooltips` [object](objects-properties.md) in the *capabilities.json* file.
 
@@ -245,10 +238,10 @@ For example:
 }
 ```
 
-You can see an example of the modern tooltips feature being used in the [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) code.
+See an example of the modern tooltips feature being used in the [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) code.
 
 > [!NOTE]
-> Adding this feature to the *capabilities.json* file will give the user the possibility of enabling this feature for the report. Keep in mind that the user will still have to **[enable the modern tooltip feature](../../create-reports/desktop-visual-tooltips.md#turn-on-the-new-tooltips)** in the report settings.
+> Adding this feature to the *capabilities.json* file gives the user the possibility of enabling this feature for the report. Keep in mind that the user will still have to **[enable the modern tooltip feature](../../create-reports/desktop-visual-tooltips.md#turn-on-the-new-tooltips)** in the report settings.
 
 ## Next steps
 
