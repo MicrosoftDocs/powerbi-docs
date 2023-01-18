@@ -147,6 +147,7 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 > - You can't change the data in the **Data point table** view and save it back to the report.
 > - You can't use **Data point table** when your visual uses a calculated measure in a (multidimensional) measure group.
 > - You can't use **Data point table** when you are connected to a live multidimensional (MD) model.
+> - You can't export the **Data point table** view to PDF or static PowerPoint. 
 
 ## Next steps
 
