@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 12/08/2022
+  ms.date: 01/18/2023
 title: "Paginated reports in Power BI: FAQ"
 summary: |
   [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
@@ -23,7 +23,7 @@ sections:
       - question: |
           What size Premium capacity do I need for paginated reports?
         answer: |
-          Size of recommended Premium capacity would depend upon expected usage. Utilize [capacity planning](/power-bi/paginated-reports/paginated-capacity-planning) documentation for estimating size of Premium capacity needed. Note that paginated reports are also available as part of Power BI Pro license without needing to purchase a Premium capacity.
+          Size of recommended Premium capacity would depend upon expected usage. Use the [capacity planning](paginated-capacity-planning.md) documentation for estimating the size of Premium capacity needed. Note that paginated reports are also available as part of a Power BI Pro license without needing to purchase a Premium capacity.
       - question: |
           What is the maximum memory threshold I can put for paginated reports in my capacity?
         answer: |
