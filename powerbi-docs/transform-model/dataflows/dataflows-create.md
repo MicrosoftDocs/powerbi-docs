@@ -113,7 +113,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 * The ADLS Gen 2 account must be accessible by the user trying to create the dataflow.
 
-* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core is not supported (example: https://myaccount.dfs.core.windows.net/filesystem/path/model.json)
+* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core isn't supported (example: https://myaccount.dfs.core.windows.net/filesystem/path/model.json)
 
 ## Create a dataflow by using import/export
 
