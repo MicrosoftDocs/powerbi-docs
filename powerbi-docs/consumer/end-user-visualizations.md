@@ -18,7 +18,7 @@ At its most basic, a ***visualization** (or *visual*) is a chart built by Power 
 
 Visuals are found on dashboards, in reports and can be created instantly using Power BI Q&A. When a designer creates a visual in a report, they can *pin* it to a dashboard. For more information, see [Interact with visuals in reports, dashboards, and apps](end-user-tiles.md). The following example shows a dashboard with eight tiles.
 
-![Screenshot of a Power BI service window showing a dashboard in the main pane](media/end-user-visualizations/power-bi-dashboard.png)
+![Screenshot of a Power BI service window showing a dashboard in the main pane.](media/end-user-visualizations/power-bi-dashboard.png)
 
 > [!TIP]
 > We recommend first reading the overview topic [Basic concepts for the Power Bi service business user](end-user-basic-concepts.md) before reading this more-detailed content.
