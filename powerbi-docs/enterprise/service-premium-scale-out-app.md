@@ -17,64 +17,21 @@ After enabling [Power BI Dataset Scale-Out](service-premium-auto-scale.md), you 
 
 This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Dataset Scale-Out is enabled.
 
-* [App 1 - Compare the timestamps](#app-1---compare-the-timestamps)
+* [App 1 - Check the database object properties](#app-1---check-the-database-object-properties)
 
-* [App 2 - Check the database object properties](#app-2---check-the-database-object-properties)
+* [App 2 - Compare the dataset's metadata](#app-2---compare-the-datasets-metadata)
 
-* [App 3 - Compare the dataset's metadata](#app-3---compare-the-datasets-metadata)
+* [App 3 - Query the dataset data](#app-3---query-the-dataset-data)
 
-* [App 4 - Query the dataset data](#app-4---query-the-dataset-data)
-
-## App 1 - Compare the timestamps
-
-Use the code below to create an application that compares the timestamps of the *read/write* and *read-only* replicas. Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your dataset's name.
-
-```typescript
-string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace 
-string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
-using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
-using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
-{ 
-    workspace_readwrite.Connect(workspaceUrl + "?readwrite"); 
-    workspace_readonly.Connect(workspaceUrl + "?readonly"); 
-    var datasetRW = workspace_readwrite.Databases.FindByName(datasetName); 
-    var datasetRO = workspace_readwrite.Databases.FindByName(datasetName); 
-
-    if (datasetRW == null || datasetRO == null) 
-    { 
-        throw new ApplicationException("Database cannot be found!"); 
-    } 
-
-    if(datasetRW.Model.ModifiedTime != datasetRO.Model.ModifiedTime || 
-        datasetRW.Model.StructureModifiedTime != datasetRO.Model.StructureModifiedTime) 
-    { 
-        Console.WriteLine("The replicas are out of sync."); 
-    } 
-
-    if (datasetRW.Model.ModifiedTime != datasetRO.Model.ModifiedTime || 
-        datasetRW.Model.StructureModifiedTime != datasetRO.Model.StructureModifiedTime) 
-    { 
-        Console.WriteLine("The replicas are out of sync.\n"); 
-    }    
-    else 
-    { 
-        Console.WriteLine("The replicas are in sync.\n"); 
-    } 
-} 
-Console.WriteLine("Test completed. Press any key to exit."); 
-Console.Read(); 
-```
-
-## App 2 - Check the database object properties
+## App 1 - Check the database object properties
 
 Use the code below to build an app that checks the [LastUpdate](/analysis-services/assl/properties/lastupdate-element-assl), [LastProcessed](/analysis-services/assl/properties/lastprocessed-element-assl) and [LastSchemaUpdate](/analysis-services/assl/properties/lastschemaupdate-element-assl) properties of your datasets. Before the app performs the checks, it needs to call the `Refresh()` method, to get the replica's metadata.
 
-Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your dataset's name.
-
+Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
 
 ```typescript
-string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace
-string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
+string workspaceUrl = "<WorkspaceUrl>";  // Replace <WorkspaceUrl> with the URL of your workspace
+string datasetName = "<DatasetName>";  // Replace <DatasetName> with the name of your dataset 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
     { 
@@ -97,13 +54,13 @@ Console.WriteLine("Test completed. Press any key to exit.");
 Console.Read(); 
 ```
 
-## App 3 - Compare the dataset's metadata
+## App 2 - Compare the dataset's metadata
 
-Use the code below to compare the metadata of the *read/write* dataset copy with the metadata of the *read-only* dataset copy. Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your dataset's name.
+Use the code below to compare the metadata of the *read/write* dataset copy with the metadata of the *read-only* dataset copy. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
 
 ```typescript
-string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace 
-string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
+string workspaceUrl = "<WorkspaceUrl>";  // Replace <WorkspaceUrl> with the URL of your workspace 
+string datasetName = "<DatasetName>";  // Replace <DatasetName> with the name of your dataset 
 using (var workspace_readwrite = new Microsoft.AnalysisServices.Tabular.Server()) 
 using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server()) 
 { 
@@ -139,13 +96,13 @@ Console.WriteLine("Test completed. Press any key to exit.");
 Console.Read(); 
 ```
 
-## App 4 - Query the dataset data
+## App 3 - Query the dataset data
 
-Use `ADOMD.NET` to query the data in the dataset replicas. Replace `WorkspaceUrl` with your workspace's URL, and `DatasetName` with your dataset's name.
+Use `ADOMD.NET` to query the data in the dataset replicas. Replace `<WorkspaceUrl>` with your workspace's URL, and `<DatasetName>` with your dataset's name.
 
 ```typescript
-string workspaceUrl = "WorkspaceUrl";  // Replace WorkspaceUrl with the URL of your workspace 
-string datasetName = "DatasetName";  // Replace DatasetName with the name of your dataset 
+string workspaceUrl = "<WorkspaceUrl>";  // Replace WorkspaceUrl with the URL of your workspace 
+string datasetName = "<DatasetName>";  // Replace DatasetName with the name of your dataset 
 string daxQuery = "Evaluate SUMMARIZECOLUMNS(RefreshTimeTable[Time])"; 
 using (var connectionRW = new Microsoft.AnalysisServices.AdomdClient.AdomdConnection()) 
 using (var connectionRO = new Microsoft.AnalysisServices.AdomdClient.AdomdConnection()) 

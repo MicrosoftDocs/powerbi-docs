@@ -11,9 +11,9 @@ ms.date: 01/17/2023
 LocalizationGroup: Premium
 ---
 
-# Tutorial: Test Power BI Dataset Scale-Out
+# Test Power BI Dataset Scale-Out
 
-This tutorial details how you can test the [Power BI Dataset Scale-Out](service-premium-scale-out.md) feature after it's enabled.
+This article details how you can test the [Power BI Dataset Scale-Out](service-premium-scale-out.md) feature after it's enabled.
 
 1. [Step 1 - Create a Scale-Out query](#step-1---create-a-scale-out-query)
 
@@ -117,31 +117,7 @@ If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optiona
 
 3. Once the process completes successfully, select **Close** and close the *Process Database* window.
 
-4. In the DAX query window, execute the query *Evaluate Query1* again.
-
-5. Switch back to Power BI Desktop, and select **Refresh**. Power BI Desktop shows the old time because it's connected to the *read-only* replica. SQL Server Management Studio (SSMS) shows the new time because it's connected to the *read/write* replica.
-
-    :::image type="content" source="media/service-premium-scale-out-test/refresh.png" alt-text="A screenshot showing the refresh button in Power B I Desktop.":::
-
-6. In SQL Server Management Studio (SSMS), expand your query and then expand **Tables**.
-
-    :::image type="content" source="media/service-premium-scale-out-test/expand-tables.png" alt-text="A screenshot showing query 1 in the expanded tables view in S Q L Server Management Studio.":::
-
-7. Right-click *Query 1*, and then select **Script table as > Create Or Replace To > New Query Editor Window**.
-
-    :::image type="content" source="media/service-premium-scale-out-test/new-query-editor.png" alt-text="A screenshot showing selecting Script table as, then Create Or Replace To, then New Query Editor Window in S Q L Server Management Studio.":::
-
-8. In the Tabular Model Scripting Language (TMSL) script file, change the table `name` property to `RefreshTimeTable` and select **execute**.
-
-    :::image type="content" source="media/service-premium-scale-out-test/refresh-time-table.png" alt-text="A screenshot showing changing the name property in table, to RefreshTimeTable in the in the Tabular Model Scripting Language (T M S L) script file in S Q L Server Management Studio.":::
-
-9. In SQL Server Management Studio (SSMS), right-click the *Tables* node and then select **Refresh**.
-
-    :::image type="content" source="media/service-premium-scale-out-test/refresh-time-table.png" alt-text="A screenshot showing the refresh option after right clicking the table node in S Q L Server Management Studio.":::
-
-    The *Query 1* table name changes to *RefreshTimeTable*.
-
-    :::image type="content" source="media/service-premium-scale-out-test/new-table-name.png" alt-text="A screenshot showing that the table name is now RefreshTimeTable in S Q L Server Management Studio.":::
+4. In the DAX query window, execute the query *Evaluate Query1* again. SQL Server Management Studio (SSMS) shows the latest refresh time because it's connected to the *read/write* replica.
 
 ## Next steps
 

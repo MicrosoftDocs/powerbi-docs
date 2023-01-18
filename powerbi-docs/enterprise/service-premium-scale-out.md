@@ -51,7 +51,6 @@ Before you enable Power BI Dataset Scale-Out, verify that the following Prerequi
     |--------------------------|---------|
     | Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server (MSOLAP) | 16.0.20.201 (March 2022) |
     | Microsoft.AnalysisServices.AdomdClient (ADOMD.NET) | 19.36.0 (March 2022) |
-    | Analysis Services client libraries | 19.49.0.1 |
     | Power BI Desktop         | March 2022 |
     | SQL Server Management Studio (SSMS) | 18.12.1 |
     | Tabular Editor 2         | 2.16.6   |
@@ -81,7 +80,7 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
 
 4. In the toolbar, select **XMLA**. If a *Connect to Analysis Services* dialog box appears, select *Connect*.
 
-5. Paste the following request into the XMLA window. Replace `WorkspaceName` with the name of your workspace.  
+5. Paste the following request into the XMLA window. Replace `<WorkspaceName>` with the name of your workspace.  
 
     ```xml
     <Execute xmlns="urn:schemas-microsoft-com:xml-analysis"> 
@@ -102,7 +101,7 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
                                 xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" 
                                 xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" 
                                 xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500"> 
-                            <Name>WorkspaceName</Name> 
+                            <Name><WorkspaceName></Name> 
                             <ServerProperties> 
                                 <ServerProperty> 
                                     <Name>Feature\PBIP\QueryScaleOut</Name> 
@@ -124,19 +123,25 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
 
 ### Disable Scale Out for your workspace
 
-To disable Power BI Query Scale out for your workspace, set `QueryScaleOut` to zero. For more information, see the code snippet in [Enable Scale-Out for your workspace](#enable-scale-out-for-your-workspace), step 5.
+To disable Power BI Dataset Scale out for your workspace, set the `value` field to zero.
+
+```xml
+<Value>0</Value>
+```
+
+For more information, see the code snippet in [Enable Scale-Out for your workspace](#enable-scale-out-for-your-workspace), step 5.
 
 ### Disable Scale-Out for your tenant
 
-Power BI Dataset Scale-Out is enabled by default for each tenant. A Power BI admin can disable this tenant settings. To disable Dataset Scale-Out, follow the instructions below.
+Power BI Dataset Scale-Out is enabled by default for each tenant. A Power BI admin can disable this tenant setting. To disable Dataset Scale-Out, follow the instructions below.
 
 1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
 
-2. Expand the **Scale-out settings**.
+2. In **Scale-out settings**, expand **Scale-out queries for large datasets**.
 
 3. Toggle the switch so that it shows **Disabled**.
 
-4. Select **Execute** and wait for the query to complete.
+4. Select **Apply**.
 
     :::image type="content" source="media/service-premium-scale-out/disable-scale-out.png" alt-text="A screenshot showing how to disable the scale out tenant settings in the Power BI admin portal.":::
 
