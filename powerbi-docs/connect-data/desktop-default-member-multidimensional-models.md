@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/23/2022
+ms.date: 01/18/2023
 LocalizationGroup: Data from files
 ---
 # Work with multidimensional models in Power BI
@@ -18,7 +18,7 @@ With multidimensional models, Power BI handles data from the model based on wher
 
 This article describes how Power BI behaves under various circumstances when working with multidimensional models, based on where the default member is found.
 
-## Working with filter cards
+## Work with filter cards
 
 When you create a filter card on a field with a default member, the default member field value is selected automatically in the filter card. The result is that all visuals affected by the filter card retain their default models in the database. The values in such filter cards reflect that default member.
 
@@ -31,7 +31,7 @@ For example, imagine we have a *Currency* column and a default member set to *US
 * However, if we deselect the *USD* value from the filter card, the default member for *Currency* is cleared, and now *Total Sales* reflects all currencies.
 * When we select another value in the filter card (let's say we select *EURO*), along the default member, the *Total Sales* reflects the filter *Currency IN {USD, EURO}*.
 
-## Grouping behavior
+## Group visuals
 
 In Power BI, whenever you group a visual on a column that has a default member, Power BI clears the default member for that column and its attribute relationship path. This behavior ensures the visual displays all values, instead of just the default values.
 
@@ -50,7 +50,7 @@ Now let's imagine that the following default members are set for these columns:
 * Country/Region > US
 * Population > Large
 
-Now let's examine what happens when each of the columns is used in Power BI. When visuals group on the following columns, here are the results:
+Now let's examine what happens when each column is used in Power BI. When visuals group on the following columns, here are the results:
 
 * **City** - Power BI displays all the cities by clearing all the default members for *City*, *State*, *Country/Region* but preserves the default member for *Population*; Power BI cleared the entire ARP for *City*.
     > [!NOTE]
