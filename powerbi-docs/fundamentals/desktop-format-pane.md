@@ -4,11 +4,10 @@ description: Get to know the redesigned Format pane in Power BI.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-RE4Yb4T
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/06/2022
+ms.date: 01/12/2023
 LocalizationGroup: Get started
 ---
 # The new Format pane in Power BI
@@ -19,13 +18,17 @@ The redesigned Format pane is now generally available and on by default in both 
 
 Thank you for providing feedback throughout the preview. We’re still interested in your comments. Submit feedback on the [Power BI Ideas](https://ideas.powerbi.com/ideas/) site.
 
-## Video
-
-In this video, Roseanne demonstrates the latest updates to the Format pane.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb4T]
-
 ## Recent updates
+
+### December 2022
+
+Slicer formatting has moved to the Format pane. 
+
+- Settings that used to be in the header of the slicer visual are now in the Format pane.
+- The *horizontal* format has been renamed to the *tile* format, based on customer feedback.
+- The mobile formatting options now have access to this tile setting, too.
+
+See the article [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md) for details.
 
 ### June 2022
 

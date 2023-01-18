@@ -60,7 +60,7 @@
       href: desktop-ribbon.md
     - name: "Optimize ribbon in Power BI Desktop"
       items:
-      - name: "Optimize ribbon in Power BI Desktop overview"
+      - name: "Optimize ribbon overview"
         href: desktop-optimize-ribbon.md
       - name: "DirectQuery optimization scenarios"
         href: desktop-optimize-ribbon-scenarios.md          
@@ -108,7 +108,7 @@
         href: power-bi-report-filter-types.md
       - name: "Slicers"
         href: ../visuals/power-bi-visualization-slicers.md
-      - name: "Numeric range slicers"
+      - name: "Numeric and date range slicers"
         href: desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
         href: ../visuals/desktop-slicer-filter-date-range.md

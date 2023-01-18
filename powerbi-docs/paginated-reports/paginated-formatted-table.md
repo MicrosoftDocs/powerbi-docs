@@ -20,7 +20,7 @@ You can use the formatted table feature to create paginated reports in any works
 
 ## Prerequisites
 
-- You need a Pro license. Read about the different [Power BI licenses](../consumer/end-user-license.md).
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 - You need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md).
 
 ## Get started

@@ -20,10 +20,10 @@ To create a dataflow, launch the Power BI service in a browser then select a **w
 
 There are multiple ways to create or build on top of a new dataflow:
 
-* [Create a dataflow by using define new tables](#create-a-dataflow-by-using-define-new-tables)
-* [Create a dataflow by using linked tables](#create-a-dataflow-by-using-linked-tables)
-* [Create a dataflow by using a computed table](#create-a-dataflow-by-using-a-computed-table)
-* [Create a dataflow by using import/export](#create-a-dataflow-by-using-importexport)
+* [Create a dataflow using define new tables](#create-a-dataflow-using-define-new-tables)
+* [Create a dataflow using linked tables](#create-a-dataflow-using-linked-tables)
+* [Create a dataflow using imported model](#create-a-dataflow-using-a-cdm-folder)
+* [Create a dataflow using import/export](#create-a-dataflow-using-importexport)
 
 The following sections explore each of these ways to create a dataflow in detail.
 
@@ -113,7 +113,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 * The ADLS Gen 2 account must be accessible by the user trying to create the dataflow.
 
-* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core isn't supported.
+* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core is not supported (example: https://myaccount.dfs.core.windows.net/filesystem/path/model.json)
 
 ## Create a dataflow by using import/export
 
