@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-✔️&nbsp;Power BI Premium
+:::image type="icon" source="media/yes-icon.svg" border="false":::&nbsp;Power BI Premium
