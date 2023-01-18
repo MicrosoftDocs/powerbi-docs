@@ -34,7 +34,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Autonomy Data Analytics | Yes | Yes | No | Yes | No | Yes |
 | Azure Analysis Services | Yes | Yes | Yes | No | No | No |
 | Azure Blob Storage | Yes | Yes | No | Yes | No | Yes |
-| Azure Cosmos DB | Yes | Yes | No | No | No | Yes |
+| Azure Cosmos DB | Yes | Yes | Yes | No | No | Yes |
 | Azure Cost Management | Yes | Yes | No | No | No | Yes |
 | Azure Data Explorer (Kusto) | Yes | Yes | Yes | Yes | No | Yes |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No | No |
