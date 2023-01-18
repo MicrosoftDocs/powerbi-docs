@@ -241,11 +241,7 @@ sections:
           
           For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI dataset.
           
-      - question: |
-          I get an error"Unable to render paginated report. Query execution failed for dataset". How do I resolve it?
-        answer: |
-          When using a PBI Dataset as a data source, set the Query.timeout to a value less than 2147483647.
-
+     
 additionalContent: |
 
   ## Next steps
