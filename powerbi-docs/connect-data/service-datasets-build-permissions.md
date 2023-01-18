@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 When you create a report in Power BI Desktop, you store the report data in a *data model*. When you publish your report to the Power BI service, you publish the data as a *dataset*. You can give other people *Build permission* to that dataset, so they can discover and reuse the data you shared. This article explains how you can control access to the dataset by using the Build permission.
 
-Build permission applies to datasets. When you give users Build permission, they can build new content on your dataset, such as reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights discovery.
+Build permission applies to datasets. When you give users Build permission, they can build new content on your dataset, such as reports, dashboards, pinned tiles from Q&A, paginated reports, and Insights discovery. If a report outside the dataset workspace uses your dataset, you can't delete the dataset. If you try to do so, you get an error message.
 
 Users also need Build permissions to do the following actions outside of Power BI:
 
@@ -33,8 +33,6 @@ Users can get Build permission for a dataset in a few different ways:
 - An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. For more information, see [Create and manage audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences).
 
 - If you have Reshare and Build permission on a dataset, and you share a report or dashboard you built on that dataset, you can specify that the recipients also get Build permission for the dataset. For more information, see [Share Power BI reports and dashboards with coworkers and others](../collaborate-share/service-share-dashboards.md).
-
-If a report outside the dataset workspace uses your dataset, you can't delete the dataset. If you try to do so, you get an error message.
 
 ## Remove Build permission
 
