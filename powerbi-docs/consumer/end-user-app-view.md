@@ -40,12 +40,12 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 
 1. To install an app, [sign in to the Power BI service](./end-user-sign-in.md) if prompted. 
 
-1. Select **Apps > Get apps**.  
+2. Select **Apps > Get apps**.  
    If you're brand new to Power BI, your App page looks like the following example. If you already have apps installed, select **Get apps** from the upper right corner of the page.
 
     :::image type="content" source="./media/end-user-app-view/power-bi-get-apps.png" alt-text="Screenshot of the Apps page on the navigation pane.":::
 
-1. The Power BI apps marketplace opens.
+3. The Power BI apps marketplace opens.
 
    :::image type="content" source="./media/end-user-app-view/power-bi-app-marketplace.png" alt-text="Screenshot of the Power BI apps marketplace.":::
 
@@ -58,7 +58,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 
    The search box is sensitive to the tab you have open. Only apps of the selected type are returned. If the **All apps** tab is open, both organizational and template apps are returned. It can be confusing when an organizational app and a template app have the same name. Just remember that the template app tiles have a shopping bag icon in the top right corner.
 
-1. When you find the app that you want, select **Get it Now** to install it.
+4. When you find the app that you want, select **Get it Now** to install it.
 
    ![Screenshot of the Get it Now button to install an app.](./media/end-user-app-view/power-bi-get-now.png)
 
