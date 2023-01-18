@@ -7,7 +7,7 @@ metadata:
   ms.topic: troubleshooting
   ms.service: powerbi
   ms.subservice: pbi-deployment-pipeline
-  ms.date: 12/28/2022
+  ms.date: 01/18/2023
   
 title: Deployment pipelines troubleshooting
 summary: |
@@ -27,7 +27,7 @@ summary: |
     * [Datamart limitations](deployment-pipelines-process.md#datamart-limitations)
   * Deployment rules:
     * [Deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations)
-    * [Supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules)
+    * [Supported data sources for rules](deployment-pipelines-get-started.md#supported-data-sources-for-rules)
   * [Incremental refresh](deployment-pipelines-process.md#considerations-and-limitations)
   * [Automation](deployment-pipelines-automation.md#considerations-and-limitations)
 
@@ -440,7 +440,7 @@ sections:
       - question: |
           Troubleshooting errors
         answer: |
-          Use this section to troubleshoot pipeline [rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-dataflow-and-dataset-rules), and try to reconfigure the rule.
+          Use this section to troubleshoot pipeline [rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) you created. If you don't see a rule error message name, review the [deployment rule limitations](deployment-pipelines-get-started.md#deployment-rule-limitations) and the [supported data sources for dataflow and dataset rules](deployment-pipelines-get-started.md#supported-data-sources-for-rules), and try to reconfigure the rule.
     
           |Error message |Solution |
           |--------------|---------|
