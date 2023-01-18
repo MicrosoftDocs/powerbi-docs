@@ -60,7 +60,7 @@
       href: desktop-ribbon.md
     - name: "Optimize ribbon in Power BI Desktop"
       items:
-      - name: "Optimize ribbon in Power BI Desktop overview"
+      - name: "Optimize ribbon overview"
         href: desktop-optimize-ribbon.md
       - name: "DirectQuery optimization scenarios"
         href: desktop-optimize-ribbon-scenarios.md          
