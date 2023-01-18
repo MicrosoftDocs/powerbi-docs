@@ -82,7 +82,7 @@ The following steps show how to use the developer tools in Apple Safari. For mor
 
        :::image type="content" source="media/service-admin-capturing-additional-diagnostic-information-for-power-bi/safari-show-develop-menu.png" alt-text="Screenshot of the Safari advanced menu with show develop menu in menu bar selected." :::
 
-2. Next, you'll set options in the **Web Inspector** to enable your browser to keep all trace information. By default, the browser keeps trace information only for the page that's currently loaded. These settings ensure that trace information is collected even if your reproduced problem requires going to more than one page.
+2. Next, you'll set options in the **Web Inspector** to enable your browser to keep all trace information. By default, the browser keeps trace information only for the page that's currently loaded. These settings ensure that trace information is collected even if your repro requires going to more than one page.
 
     1. Select **Develop** > **Show Web Inspector**.
 
