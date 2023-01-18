@@ -218,7 +218,7 @@ sections:
       - question: |
           Do I need to set a query time-out for an embedded dataset in a paginated report?
         answer: |
-          Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 600 seconds. For longer running queries, set a large enough timeout value in the Dataset Properties dialog in Power BI Report Builder.
+          Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 600 seconds. For longer running queries, set a max timeout value of 2147483646 in the Dataset Properties dialog in Power BI Report Builder.
       - question: |
           What are globalization limitations related to DateTime parameters?
         answer: |
