@@ -7,7 +7,6 @@ ms.subservice: reporting-services
 
 
 ms.topic: conceptual
-ms.assetid: f93a94cc-27b5-435a-aa85-69e6ec6459ad
 author: maggiesMSFT
 ms.author: maggies
 ---
