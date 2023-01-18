@@ -128,7 +128,7 @@ The major differences between *relationships with a many-to-many cardinality* an
 
     A visual showing **State**, **Sales**, and **Sales total** data would result in this graphic:
 
-    :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_14.png" alt-text="Screenshot of a table visual showing State, Sales, and Sales total resulitng from the formula.":::
+    :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_14.png" alt-text="Screenshot of a table visual showing State, Sales, and Sales total resulting from the formula.":::
 
 With the preceding differences in mind, make sure the calculations that use `ALL(<Table>)`, such as *% of grand total*, are returning the intended results.
 
