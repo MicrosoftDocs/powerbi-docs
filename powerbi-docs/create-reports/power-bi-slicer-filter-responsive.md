@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Responsive slicers resize to fit any space on your report. With responsive slicers, you can resize them to different sizes and shapes, from horizontal to square to vertical, and the values in the slicer rearrange themselves as you do. In Power BI Desktop and in the Power BI service, you can make horizontal slicers and date/range slicers responsive. Date/range slicers also have improved touch areas, so it's easier to change them with a fingertip. You can make responsive slicers as small or as large as you want. They also resize automatically to fit well on reports in the Power BI service and also in the Power BI mobile apps.
+Responsive slicers resize to fit any space on your report. With responsive slicers, you can resize them to different sizes and shapes, from horizontal tile to square to vertical, and the values in the slicer rearrange themselves as you do. In Power BI Desktop and in the Power BI service, you can make tile slicers and date/range slicers responsive. Date/range slicers also have improved touch areas, so it's easier to change them with a fingertip. You can make responsive slicers as small or as large as you want. They also resize automatically to fit well on reports in the Power BI service and also in the Power BI mobile apps.
 
 ![Animation of slicers being moved and resized.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer.gif)
 
@@ -27,7 +27,7 @@ The first step to creating a dynamic slicer is to create a basic slicer.
 
     ![Screenshot shows a field that has been added to the slicer in Power BI Desktop.](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)
 
-## Convert to a horizontal slicer
+## Convert to a tile slicer
 
 1. With the slicer selected, in the **Visualizations** pane, select the **Format** tab.
 
