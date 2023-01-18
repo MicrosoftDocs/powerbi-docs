@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 01/18/2023
 LocalizationGroup: Premium
 ---
 
@@ -42,7 +42,7 @@ Follow these steps to sync the replicas in Windows PowerShell:
 4. Check the sync status of your dataset using the command below. Replace the values of `<WorkspaceId>` and `<DatasetId>` appropriately.
 
     ```powershell
-    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/syncStatus' -Method Get | ConvertFrom-Json | Format-List  # Replace <WorkspaceID> withe the ID of your workspace and <DatasetID> with the ID of your dataset    
+    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/syncStatus' -Method Get | ConvertFrom-Json | Format-List  # Replace <WorkspaceId> withe the ID of your workspace and <DatasetId> with the ID of your dataset    
     ```
 
     In the output, the `minActiveReadVersion` and `minActiveReadTimestamp` values refer to the *read-only* dataset copy. The `commitVersion` and `commitTimestamp` values, refer to the *read/write* dataset copy. A difference between them, indicates that the *read-only* replica represents an older version of the dataset.
@@ -50,7 +50,7 @@ Follow these steps to sync the replicas in Windows PowerShell:
 5. Sync the *read/write* and *read-only* dataset copies using the command below. Replace the values of `<WorkspaceId>` and `<DatasetId>` appropriately.
 
     ```powershell
-    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/sync' -Method Post | ConvertFrom-Json | Format-List  # Replace <WorkspaceID> withe the ID of your workspace and <DatasetID> with the ID of your dataset
+    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/sync' -Method Post | ConvertFrom-Json | Format-List  # Replace <WorkspaceID> withe the ID of your workspace and <DatasetID> with the ID of your dataset
     ```
 
     The sync status information in the output indicates that the *read/write* and *read-only* replicas are out of sync, which is expected because you just triggered the sync.  

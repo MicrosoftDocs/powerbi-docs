@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/17/2023
+ms.date: 01/18/2023
 LocalizationGroup: Premium
 ---
 
@@ -72,12 +72,6 @@ using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server())
     if (datasetRW == null || datasetRO == null) 
     { 
         throw new ApplicationException("Database cannot be found!"); 
-    } 
-
-    if(datasetRW.Model.ModifiedTime != datasetRO.Model.ModifiedTime || 
-        datasetRW.Model.StructureModifiedTime != datasetRO.Model.StructureModifiedTime) 
-    { 
-        Console.WriteLine("The replicas are out of sync."); 
     } 
 
     string tmslRW = Microsoft.AnalysisServices.Tabular.JsonSerializer.SerializeDatabase(datasetRW); 

@@ -51,7 +51,7 @@ Before you enable Power BI Dataset Scale-Out, verify that the following Prerequi
     |--------------------------|---------|
     | Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server (MSOLAP) | 16.0.20.201 (March 2022) |
     | Microsoft.AnalysisServices.AdomdClient (ADOMD.NET) | 19.36.0 (March 2022) |
-    | Power BI Desktop         | March 2022 |
+    | Power BI Desktop         | June 2022 |
     | SQL Server Management Studio (SSMS) | 18.12.1 |
     | Tabular Editor 2         | 2.16.6   |
     | Tabular Editor 3         | 3.2.3    |
