@@ -40,7 +40,7 @@ For more information, see [What's new in Analysis Services](/sql/analysis-servic
 ## Dynamic limits
 In addition to the strategies above, visuals with two hierarchies of grouping columns (axis and legend, or category and series) use one additional strategy called *dynamic limits*.  Dynamic limits are designed to better balance data points.
 
-Dynamic limits provide a better selection of points for sparse data than static limits. For example, a visual could be configured to select 100 categories and 10 series with a total of 1000 points. But the actual data has 50 categories and 20 series.  At query runtime, dynamic limits selects all 20 series to fill up the 1000 points requested.
+Dynamic limits provide a better selection of points for sparse data than static limits. For example, a visual could be configured to select 100 categories and 10 series with a total of 1000 points. But the actual data has 50 categories and 20 series.  At query runtime, dynamic limits select all 20 series to fill up the 1000 points requested.
 
 Dynamic limits are automatically applied when the server is capable. See the following:
 
