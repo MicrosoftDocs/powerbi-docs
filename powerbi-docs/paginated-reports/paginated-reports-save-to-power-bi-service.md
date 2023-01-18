@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 01/18/2023
 ---
 
 # Publish a paginated report to the Power BI service
@@ -18,11 +18,11 @@ This article explains how to publish a paginated report to the Power BI service 
 
 ## Requirements
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
-- You can publish to My Workspace. For any other workspace, you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+
 - If your report data source is on premises, you need to install a gateway. Read more about [on-premises gateways](../connect-data/service-gateway-onprem.md). After you upload the report, you connect to the on-premises data source by using the gateway.
 
-## From Report Builder, publish a paginated report to the Power BI service
+## From Report Builder, publish to the Power BI service
 
 1. In Report Builder, create a new paginated report or open an existing paginated report from the Power BI service. If you open an existing paginated report from the service, the **Save** option is disabled because you're updating a report that's live in the Power BI service.
 
@@ -42,7 +42,7 @@ This article explains how to publish a paginated report to the Power BI service 
 
 5. Select the paginated report to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
 
-    ![Screenshot showing parameters that must be chosen.](media/paginated-reports-save-to-power-bi-service/power-bi-parameters.png)
+    ![Screenshot showing parameters that you need to select.](media/paginated-reports-save-to-power-bi-service/power-bi-parameters.png)
 
 6. If your report data source is on premises, read about how to [connect to a gateway](#connect-to-a-gateway) in this article to access the data source.
 
