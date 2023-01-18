@@ -67,7 +67,7 @@ using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server())
     workspace_readwrite.Connect(workspaceUrl + "?readwrite"); 
     workspace_readonly.Connect(workspaceUrl + "?readonly"); 
     var datasetRW = workspace_readwrite.Databases.FindByName(datasetName); 
-    var datasetRO = workspace_readwrite.Databases.FindByName(datasetName); 
+    var datasetRO = workspace_readonly.Databases.FindByName(datasetName); 
 
     if (datasetRW == null || datasetRO == null) 
     { 
