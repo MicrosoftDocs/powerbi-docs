@@ -23,7 +23,7 @@ Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. 
 |-------------------|----------------------|
 | OnDemand UI       | Always syncs         |
 | Scheduled Refresh | Always syncs         |
-| Basic REST API    | Always syncs         |
+| Basic REST API    | Manual sync required |
 | Advanced REST API | Manual sync required |
 | XMLA              | Manual sync required |
 
