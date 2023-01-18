@@ -24,10 +24,8 @@ You create and modify paginated report definition (.rdl) files in Power BI Repor
 
 ## Prerequisites 
 
-- Download and install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
-- You can publish to My Workspace. For any other workspace, you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
-  
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+ 
 ## Work with Report Builder and the Power BI service
 
 Power BI Report Builder can work with paginated reports on your computer, known as local reports, or with reports on the Power BI service.  When you open Report Builder for the first time, you're asked to sign into your Power BI account. If not, select **Sign In** at the upper-right corner.
