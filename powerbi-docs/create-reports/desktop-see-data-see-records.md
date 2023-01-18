@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 01/18/2023
 LocalizationGroup: Learn more
 ---
 # Use Visual table and Data point table in Power BI
@@ -103,6 +103,10 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 :::image type="content" source="media/desktop-see-data-see-records/service-back-button.png" alt-text="Screenshot that shows the upper-left corner of the Power B I service canvas. Back to report is called out.":::
 
 ---
+> [!NOTE]
+> **Show as table** has the following limitations:
+>
+> - You can't export the **Show as table** view to PDF or static PowerPoint. 
 
 ## Use Data point table in Power BI
 
