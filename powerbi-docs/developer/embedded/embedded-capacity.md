@@ -121,5 +121,6 @@ The amount of memory available on each node size is described in the RAM (GB) co
 ## Next steps
 
 * [Embed for your customers](embed-sample-for-customers.md)
-* Embed for your organization](embed-sample-for-your-organization.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)
 * [Embed from apps](./index.yml)
+
