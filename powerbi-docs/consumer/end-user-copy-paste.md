@@ -34,11 +34,11 @@ The process is almost identical for copying a visual from a dashboard or a repor
 
 1. Copy the visual.
 
-    * **Copy from a dashboard.** On the upper right corner of the visual, select **More actions (...)**, then choose **Copy visual as image**.
+    * **To copy from a dashboard.** On the upper right corner of the visual, select **More actions (...)**, then choose **Copy visual as image**.
 
         :::image type="content" source="media/end-user-copy-paste/power-bi-copy-dash.png" alt-text="Screenshot of a visual with the More actions menu open and Copy visual as image option highlighted.":::
 
-    * **Copy from a report page.** From the upper right corner of the visual, select the icon for **Copy as image with caption**.
+    * **To copy from a report page.** From the upper right corner of the visual, select the icon for **Copy as image with caption**.
 
         :::image type="content" source="media/end-user-copy-paste/power-bi-copy-icon.png" alt-text="Screenshot showing the Copy as image with caption icon.":::
 
