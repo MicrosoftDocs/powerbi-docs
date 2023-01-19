@@ -16,7 +16,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Recent content contains the last items you visited in the Power BI service. This include: dashboards, reports, apps, datasets, workspaces, and workbooks. When you select **Recent** on the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
+**Recent** content contains the last items you visited in the Power BI service. This includes: dashboards, reports, apps, datasets, workspaces, and workbooks. When you select **Recent** on the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
 :::image type="content" source="./media/end-user-recent/power-bi-recents-new.png" alt-text="Screenshot showing Power BI service recent content list.":::
 
@@ -27,8 +27,8 @@ Any items that are marked as [favorites](end-user-favorite.md) have a star icon 
 If your lists get long, use the **Filter by keyword** field, **Filter** button, and column sorting function to find what you need.
 
 - Enter a keyword into the **Filter by keyword** field to show only recent content that includes that keyword.
-- Use the Filter drop-down to sort your content according to the value of the Type, Opened, or Endorsement column.
-- Click a column heading to display a sorting arrow. In this example, hovering over **Location** reveals an arrow -- recent content can be sorted alphabetically by location content type.
+- Use the Filter drop-down to sort your content according to the value of the **Type**, **Opened**, or **Endorsement** column.
+- Click a column heading to display a sorting arrow. In this example, hovering over **Location** reveals an arrow &mdash; recent content can be sorted alphabetically by location content type.
 
 :::image type="content" source="./media/end-user-recent/power-bi-recent-sort-search-new.png" alt-text="Screenshot showing search and sorting options in Power BI.":::
 
@@ -49,5 +49,5 @@ The actions available to you depend on the settings assigned by the content desi
 
 ## Next steps
 
-- Learn about [Power BI service apps](end-user-apps.md)
+- Learn about [Power BI service apps](end-user-apps.md).
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/).
