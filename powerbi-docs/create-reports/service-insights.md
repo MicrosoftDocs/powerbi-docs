@@ -20,7 +20,7 @@ Do you have a new dataset and aren't sure where to start? Need to build a dashbo
 Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire dataset (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
 
 > [!NOTE]
-> Insights don't work with DirectQuery, streaming, and PUSH datasets; it only works with data uploaded to Power BI.
+> The insights feature doesn't work with DirectQuery, streaming, and PUSH datasets; it only works with data uploaded to Power BI.
 >
 > Row-level security (RLS) isn't supported by quick insights, even in import mode.
 >
@@ -69,9 +69,9 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
    * Filter the visualizations. If the **Filters** pane isn't already open, expand it by selecting the arrow on the right side of the window.
 
-       ![Screenshot of the insight Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
+       ![Screenshot of the expanded insight Filters menu.](media/service-insights/power-bi-insights-filter-new.png)
    * Pin the insight card to a dashboard by selecting the pin icon or **Pin visual**.
-   * Run insights on the card itself, which is often referred to as *scoped insights*. In the top-right corner, select the light bulb icon !:::image type="icon" source="media/service-insights/power-bi-bulb-icon.png"::: or **Get Insights**.
+   * Run insights on the card itself, which is often referred to as *scoped insights*. In the top-right corner, select the light bulb icon :::image type="icon" source="media/service-insights/power-bi-bulb-icon.png"::: or **Get Insights**.
 
        ![Screenshot highlighting the Get Insights button.](media/service-insights/pbi-autoinsights-tile.png)
 
