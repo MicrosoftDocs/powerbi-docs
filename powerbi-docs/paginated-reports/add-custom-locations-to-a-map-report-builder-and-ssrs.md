@@ -1,9 +1,9 @@
 ---
-title: "Add custom locations to a map in a paginated report | Microsoft Docs"
-description:  Learn how to add custom locations to a map you have added to a paginated report in Report Builder. 
+title: "Add custom locations to a map in a power bi paginated report | Microsoft Docs"
+description:  Learn how to add custom locations to a map you have added to a power bi paginated report in Report Builder. 
 ms.date: 03/07/2017
-ms.service: reporting-services
-ms.subservice: report-design
+ms.service: powerbi
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
@@ -13,21 +13,19 @@ ms.assetid: 7d36faae-5bcc-446a-9eba-f42349cafacb
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Add custom locations to a map in a paginated report (Report Builder)
+# Add custom locations to a map in a power bi paginated report (Report Builder)
 
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-ssrs-rb](../../includes/ssrs-appliesto-ssrs-rb.md)] [!INCLUDE [ssrs-appliesto-pbi-rb](../../includes/ssrs-appliesto-pbi-rb.md)] [!INCLUDE [ssrb-applies-to-ssdt-yes](../../includes/ssrb-applies-to-ssdt-yes.md)]
 
-  After you add a map to a paginated report, you can add your own point locations.  
+  After you add a map to a power bi paginated report, you can add your own point locations.  
   
  Display properties for all points on a layer are controlled by setting options for the point properties for the layer. For a selected embedded point, you can override the display properties.  
   
 > [!NOTE]  
 >  When you override the layer display properties for the embedded point, the changes that you make are not reversible.  
   
- For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md).  
+ For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md).  
   
-> [!NOTE]  
->  [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
+
   
 ## To add a point layer  
   
@@ -53,8 +51,8 @@ ms.author: maggies
   
 3.  Click the pages and set the display properties that you want to apply to this point.  
   
-## See Also  
- [Maps &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/maps-report-builder-and-ssrs.md)   
- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md)  
+## Next Steps  
+ [Maps &#40;Report Builder&#41;](maps-report-builder-and-ssrs.md)   
+ [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](vary-polygon-line-and-point-display-by-rules-and-analytical-data.md)  
   
   
