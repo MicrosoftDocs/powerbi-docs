@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 01/05/2023
+ms.date: 01/19/2023
 LocalizationGroup: Administration
 ---
 
@@ -26,7 +26,7 @@ The columns of the list of workspaces are described below
 | --------- | --------- |
 | **Name** | The name given to the workspace. |
 | **Description** | The information that is given in the description field of the workspace settings. |
-| **Type** | The type of workspace. There are three types of workspaces:<br>![Screenshot of app workspace icon.](./media/service-admin-portal-workspaces/app-workspace-icon.png) **Workspace** (also known as "app workspace")<br>![Screenshot of personal workspace icon in the list of workspaces table explanation.](./media/service-admin-portal-workspaces/personal-workspace-icon.png) **Personal Group** ("My workspaces")<br>![Screenshot of admin monitoring workspace icon.](./media/service-admin-portal-workspaces/admin-monitoring-workspace-icon.png) **Admin monitoring** (a special workspace accessible by the Power BI admin that contains monitoring reports)|
+| **Type** | The type of workspace. There are two types of workspaces:<br>![Screenshot of app workspace icon.](./media/service-admin-portal-workspaces/app-workspace-icon.png) **Workspace** (also known as "app workspace")<br>![Screenshot of personal workspace icon in the list of workspaces table explanation.](./media/service-admin-portal-workspaces/personal-workspace-icon.png) **Personal Group** ("My workspaces")|
 | **State** | The state lets you know if the workspace is available for use. There are five states, **Active**, **Orphaned**, **Deleted**, **Removing**, and **Not found**. For more information, see [Workspace states](#workspace-states). |
 | **Capacity name** | Name given to the workspace's capacity. |
 | **Capacity SKU Tier** | The type of license used for the workspace's capacity. Capacity SKU Tiers include **Premium Gen2** and **Premium Per User (PPU)**. For more information about capacity tiers, see [Configure and manage capacities in Power BI Premium](../enterprise/service-admin-premium-manage.md). |
