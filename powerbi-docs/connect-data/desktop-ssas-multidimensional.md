@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/20/23
+ms.date: 01/20/2023
 LocalizationGroup: Connect to data
 ---
 # Connect to SSAS multidimensional models in Power BI Desktop
