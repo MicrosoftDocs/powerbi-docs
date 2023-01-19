@@ -71,7 +71,7 @@ using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server())
     string tmslRW = Microsoft.AnalysisServices.Tabular.JsonSerializer.SerializeDatabase(datasetRW); 
     string tmslRO = Microsoft.AnalysisServices.Tabular.JsonSerializer.SerializeDatabase(datasetRO); 
 
-    if(tmslRW != tmslRO) 
+    if (tmslRW != tmslRO) 
     { 
         Console.WriteLine("The replicas are out of sync.\n"); 
     } 
