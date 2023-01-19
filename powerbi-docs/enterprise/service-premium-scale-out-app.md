@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Compare scale-out dataset copies
 
-After enabling [Power BI Dataset Scale-Out](service-premium-auto-scale.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
+After enabling [Power BI Dataset Scale-Out](service-premium-scale-out.md), you might want to compare dataset replicas. The `syncStatus` REST API shows if the *read/write* and *read-only* dataset copies are in sync. You can also use the Tabular Object Model (TOM) to build a custom application that connects to both datasets and compares timestamps, metadata, and query results between them.
 
 This section provides a few Visual Studio app examples for comparing dataset properties when Power BI Dataset Scale-Out is enabled.
 
