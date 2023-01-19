@@ -30,11 +30,11 @@ When you run insights on a dashboard tile, Power BI searches just the data used 
 1. Open a dashboard. For more information, see [Dashboards for business users of the Power BI service](end-user-dashboards.md).
 1. Hover over a tile, select the **More options** (...) feature on the tile, then choose **View insights** from the dropdown menu.
 
-:::image type="content" source="./media/end-user-insights/power-bi-hover.png" alt-text=" Screenshot of a tile showing selection of ellipsis highlighted and displaying a dropdown menu with View insights highlighted.":::
+   :::image type="content" source="./media/end-user-insights/power-bi-hover.png" alt-text=" Screenshot of a tile showing selection of ellipsis highlighted and displaying a dropdown menu with View insights highlighted.":::
 
 1. The tile opens in Focus mode with the insights cards displayed along the right. For more information, see [Display content in more detail: focus mode and full screen mode](end-user-focus.md).
 
-:::image type="content" source="./media/end-user-insights/power-bi-insights-tiles.png" alt-text=" Screenshot of a tile and the insights cards.":::
+   :::image type="content" source="./media/end-user-insights/power-bi-insights-tiles.png" alt-text=" Screenshot of a tile and the insights cards.":::
 
 1. After you decide which insight card to explore, select it. You'll see the selected insight appear on the left, and new insight cards, based solely on the data in that single insight, display along the right.
 
