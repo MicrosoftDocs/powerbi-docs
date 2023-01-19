@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ms.custom: video-qMf7OLJfCz8
 LocalizationGroup: Ask questions of your data
 ---
@@ -16,7 +16,10 @@ LocalizationGroup: Ask questions of your data
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words. The first part of this article shows how you use Q&A in dashboards in the Power BI service. The second part shows what you can do with Q&A when creating reports in either the Power BI service or Power BI Desktop. For more information, see [Q&A for Power BI business users](../consumer/end-user-q-and-a.md).
 
-[Q&A virtual analyst in iOS apps – Power BI](../consumer/mobile/mobile-apps-ios-qna.md) and [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md) are covered in separate articles.
+These articles cover using Q&A in other parts of Power BI:
+
+- [Q&A virtual analyst in Power BI iOS apps](../consumer/mobile/mobile-apps-ios-qna.md)
+- [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md)
 
 Q&A is interactive and fun. Often one question leads to others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&A to create visualizations, dig into those visuals, and then pin them to dashboards.
 
@@ -31,7 +34,7 @@ In the [Power BI service](/app.powerbi.com), a dashboard contains tiles pinned f
 
 ![Screenshot of the Power BI service, highlighting the more options icon and the See related content option.](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-The Q&A question box is located in the upper-left corner of your dashboard where you type your question using natural language. Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for for Power BI business users** article. Q&A recognizes the words you type and figures out where, and in which dataset, to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
+The Q&A question box is where you type your question using natural language. It's located in the upper-left corner of your dashboard. Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for for Power BI business users** article. Q&A recognizes the words you type and figures out where, and in which dataset, to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
 
 ![Screenshot shows a Power BI dashboard with an option to Ask a question about your data.](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
 
@@ -117,7 +120,7 @@ With Q&A, not only can you ask your data to speak for itself, you can tell Power
 
 - If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](service-q-and-a-direct-query.md).
 
-- Say you've opened a report and don't see the Q&A option. If you're using the Power BI service, make sure the report is open in Editing view. If you can't open Editing view, you don't have edit permissions for that report, and you can use Q&A with that specific report.
+- Say you've opened a report and don't see the Q&A option. If you're using the Power BI service, make sure the report is open in Editing view. If you can't open Editing view, you don't have edit permissions for that report, and you can't use Q&A with that specific report.
 
 ## Next steps
 
