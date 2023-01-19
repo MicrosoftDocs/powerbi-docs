@@ -47,7 +47,7 @@ As a first step, get all the data that you want to work with to appear in the **
   
 - If you're an experienced query writer, you might want to group data in the report, and not in the query, for intermediate amounts of data. If you do all your grouping in the query, then the report tends to be a presentation of the query result set. On the other hand, to display aggregated values for large amounts of data on a chart or matrix, there's no need to include detail data.  
   
-- Depending on your requirements, you can display names and locations of report data sources, dataset query command text, and parameter values in the report. Many new users wonder where the data comes from. To reduce clutter in the report, you can conditionally hide text boxes with this type of information and let users choose whether to see it. Try adding this information on the last page of report. Set the text box visibility based on a parameter that the user can change.  
+- Depending on your requirements, you can display names and locations of report data sources, dataset query command text, and parameter values in the report. Many new users wonder where the data comes from. To reduce clutter in the report, you can conditionally hide text boxes with this type of information and let users choose whether to see it. Try adding this information on the last page of the report. Set the text box visibility based on a parameter that the user can change.  
   
 ##  <a name="DesignSurface"></a> Interact with the report design surface  
 
