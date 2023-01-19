@@ -55,10 +55,10 @@ The ribbon at the top of the list and the More options (...) menus of the indivi
 | **Refresh** | Refreshes the workspace list.|
 | **Export** |Exports the table as a *.csv* file.|
 | **Details** |Lists the items that are contained in the workspace.|
-| **Edit** |Enables you edit the workspace name and description. |
+| **Edit** |Enables you to edit the workspace name and description. |
 | **Access** |Enables you to manage workspace access. You can use this feature to delete workspaces by first adding yourself to a workspace as an admin then opening the workspace to delete it.|
 | **Get access** |Grants you temporary access to another user's MyWorkspace. See [Gain access to any user's My workspace](#gain-access-to-any-users-my-workspace) for detail.|
-| **Capacity** |Enables you assign the workspace to Premium capacity or to remove it from Premium capacity. |
+| **Capacity** |Enables you to assign the workspace to Premium capacity or to remove it from Premium capacity. |
 | **Recover** |Enables you to restore an orphaned workspace. |
 | **Restore** |Enables you to restore the MyWorkspace of a user that has left the organization. See [Restore a deleted My workspace as an app workspace](#restore-a-deleted-my-workspace-as-an-app-workspace) for detail. |
 
@@ -88,7 +88,7 @@ To gain access to a particular My workspace
 > [!NOTE]
 > Once access is obtained, the ribbon and the More options (...) menu will show **Remove Access** for the same My workspace. If you do not remove access by selecting one of these options, access will automatically be revoked for the admin after 24-hours. The My workspace owner's access remains intact.
 
-Once you have access, the My workspace will show up in the list of workspaces accessible from the navigation pane. The icon ![Screenshot of personal workspace icon in the list of workspaces table explanation.](./media/service-admin-portal-workspaces/personal-workspace-icon.png) indicates that it is a My workspace.
+Once you have access, the My workspace will show up in the list of workspaces accessible from the navigation pane. The icon ![Screenshot of personal workspace icon in the list of workspaces table explanation.](./media/service-admin-portal-workspaces/personal-workspace-icon.png) indicates that it's a My workspace.
 
 Once you go inside the My workspace, you’ll be able to perform any actions as if it's your own My workspace. You can view and make any changes to the contents, including sharing or unsharing. But you can't grant anyone else access to the My workspace.  
 
@@ -113,7 +113,7 @@ To restore a deleted My workspace as an app workspace
 1. In the Restore workspaces panel that appears, give a new name to the workspace and assign at least one user the Admin role in the workspace.
 1. When done, select **Restore**.
 
-After the deleted workspace has been restored as an app workspace, it is just like any other app workspace. 
+After the deleted workspace has been restored as an app workspace, it's just like any other app workspace. 
 
 ## Next steps
 
