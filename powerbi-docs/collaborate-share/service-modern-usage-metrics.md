@@ -308,6 +308,15 @@ In addition to the above differences between previous and improved usage metrics
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
 - If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
 - If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) and **Block Public Internet Access** in Power BI, the refresh for the dataset will fail and the usage metrics report won't show any data.
+- In order to create and refresh the usage metrics report, the user is required to authenticate to enable the backend API calls to extract the tenant telemetry. For privacy reasons, guest users are not allowed this authentication. This authentication is only allowed for members of the tenant.
+- Page views that are made from mobile devices are not shown in the usage metrics report.
+- Duplicate reports with different Report ObjectIds in the usage metrics report can show up for the following scenarios:
+    - Reports have been deleted and re-created with the same name
+       - If a report has been deleted and then re-created with the same name, it will continue to show up in the filters for the usage metrics report.
+    - Report is included in an App
+       - When a report is included in a Power BI App, it will generate a new Report ObjectId for the embedded report with the same name.
+    - Dataset re-initialization
+       - Each time a new dataset is created, a new report could be created.
 
 ## Frequently asked questions
 
