@@ -23,7 +23,7 @@ ms.author: maggies
 > [!NOTE]  
 >  When you override the layer display properties for the embedded point, the changes that you make are not reversible.  
   
- For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md).  
+ For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
 
   
@@ -52,7 +52,7 @@ ms.author: maggies
 3.  Click the pages and set the display properties that you want to apply to this point.  
   
 ## Next Steps  
- [Maps &#40;Report Builder&#41;](maps-report-builder-and-ssrs.md)   
- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](vary-polygon-line-and-point-display-by-rules-and-analytical-data.md)  
+ [Maps &#40;Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
+ [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
   
   
