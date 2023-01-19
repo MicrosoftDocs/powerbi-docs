@@ -107,7 +107,7 @@ using (var connectionRO = new Microsoft.AnalysisServices.AdomdClient.AdomdConnec
     { 
         while (reader.Read()) 
         { 
-        resultRW = reader.GetString(0); 
+            resultRW = reader.GetString(0); 
         } 
     } 
 
