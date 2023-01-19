@@ -58,7 +58,7 @@ As a report consumer navigates around a report, focus shows up to indicate where
 
 ![Screenshot of a visual in focus for accessibility navigation.](media/desktop-accessibility/accessibility-creating-reports-01.png)
 
-To access the most frequently used keyboard shortcuts, you can press **?** to display a keyboard shortcut dialog. To learn more, see the articles on accessible consumption experiences and keyboard shortcuts in the [Next steps](#next-steps) section at the end of this article.
+To access the most frequently used keyboard shortcuts, you can press **Shift + ?** to display a keyboard shortcut dialog. To learn more, see the articles on accessible consumption experiences and keyboard shortcuts in the [Next steps](#next-steps) section at the end of this article.
 
 ### Screen reader compatibility
 
@@ -72,7 +72,7 @@ Power BI has high contrast support for reports. If you're using a high contrast 
 
 The Power BI service also attempts to detect the high contrast settings selected for Windows, but the effectiveness and accuracy of that detection depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, in the top-left corner you can select **View** > **High contrast colors** while in Edit mode and then select the theme you would like to apply to the report.
 
-![Screenshot of Power BI service in edit mode, highlighting View and High-contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
+![Screenshot of the Power BI service in edit mode, highlighting View and High-contrast colors.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 
 ### Focus mode
 
@@ -127,17 +127,17 @@ To set the tab order, select the **View** tab in the ribbon and under **Show pan
 
 In the **Selection pane**, selecting **Tab order** displays the current tab order for your report. You can select an object, then use the up and down arrow buttons to move the object in the hierarchy. You can also select an object with your mouse and drag it to the position you'd like in the list. Clicking on the number next to an object hides the object from the tab order.
 
-![Screenshot of Tab order in the Selection pane](media/desktop-accessibility/accessibility-creating-reports-09.png)
+:::image type="content" source="media/desktop-accessibility/accessibility-creating-reports-18.png" alt-text="Screenshot of Tab order in the Selection pane" lightbox="media/desktop-accessibility/accessibility-creating-reports-18.png":::
 
 ### Titles and labels
 
 Visual and report page titles are important accessibility features that orient the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report with a new user or someone who is external to your organization, they might not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
 
-![Screenshot of two sample titles. One has the vague title, CY Totals. The Other has a clearer title, Current Year Sales Amount USD Totals.](media/desktop-accessibility/accessibility-creating-reports-10.png)
+![Screenshot of two sample titles, the vague CY Totals, and the clearer Current Year Sales Amount USD Totals.](media/desktop-accessibility/accessibility-creating-reports-10.png)
 
 Within a visual, make sure that any titles, axis labels, legend values, and data labels are easy to read and understand. Compare the following images, where the first image has few numbers or descriptions of the data, and the second has many.
 
-![Screenshot of example images, where one is a basic bar graph and the other is a bar graph with detailed, numerical descriptions.](media/desktop-accessibility/accessibility-creating-reports-11.png)
+![Screenshot of two example images, where one is a simple bar graph and the other is a bar graph with numbers and details.](media/desktop-accessibility/accessibility-creating-reports-11.png)
 
 With data labels, you can even choose to turn on or off the labels for each series in your visual or position them above or below a series. While Power BI does its best to place data labels above or below a line, sometimes it isn't clear. In the following visual, the data labels are jumbled and not easy to read.
 
