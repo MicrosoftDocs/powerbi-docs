@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
 
-Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy a visual and paste it into other applications which support the paste option. Copy a visual and paste it into an email message, Word, PowerPoint, another Power BI report, and many more applications.
+Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy a visual and paste it into other applications that support the paste option. Copy a visual and paste it into an email message, Word, PowerPoint, another Power BI report, and many more applications.
 
 :::image type="content" source="media/end-user-copy-paste/power-bi-paste-copy.png" alt-text="Screenshot of a Power BI visual and the Copy as image with caption icon highlighted.":::
 
@@ -34,11 +34,11 @@ The process is almost identical for copying a visual from a dashboard or a repor
 
 1. Copy the visual.
 
-    * Copy from a dashboard. On the upper right corner of the visual, select **More actions (...)**, then choose **Copy visual as image**.
+    *  **Copy from a dashboard.** On the upper right corner of the visual, select **More actions (...)**, then choose **Copy visual as image**.
 
         :::image type="content" source="media/end-user-copy-paste/power-bi-copy-dash.png" alt-text="Screenshot of a visual with the More actions menu open and Copy visual as image option highlighted.":::
 
-    * Copy from a report page. From the upper right corner of the visual, select the icon for **Copy as image with caption**.
+    *  **Copy from a report page.** From the upper right corner of the visual, select the icon for **Copy as image with caption**.
 
         :::image type="content" source="media/end-user-copy-paste/power-bi-copy-icon.png" alt-text="Screenshot showing the Copy as image with caption icon.":::
 
