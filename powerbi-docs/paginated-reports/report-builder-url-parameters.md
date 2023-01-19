@@ -134,7 +134,7 @@ You can specify additional output parameters for the following export formats.
    
 - CSV:
     > [!NOTE]
-    > For these *string* values, reference [CSV device information settings](/device-info/csv-device-information-settings.md).
+    > For these *string* values, reference [CSV device information settings](./device-info/csv-device-information-settings.md).
     - rdl:Encoding=*string*
     - rdl:ExcelMode=true/false
     - rdl:FieldDelimiter=*string*
