@@ -4,7 +4,7 @@ title: "Formatting numbers and dates in Power BI paginated reports | Microsoft D
 description: Learn how to format numbers and dates in Power BI Report Builder data regions in a paginated report by selecting a format from the Number page of the data region's Properties dialog box.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: 
+ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
