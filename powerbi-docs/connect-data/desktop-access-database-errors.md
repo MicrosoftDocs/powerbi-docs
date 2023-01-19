@@ -1,5 +1,5 @@
 ---
-title: Access and XLS import issues in Power BI Desktop
+title: Troubleshoot Access and XLS import issues in Power BI Desktop
 description: Troubleshoot and resolve Access database and Excel XLS spreadsheet import issues in Power BI Desktop and Power Query Editor.
 author: davidiseminger
 ms.author: davidi
@@ -11,7 +11,7 @@ ms.topic: troubleshooting
 ms.date: 04/19/2021
 LocalizationGroup: Troubleshooting
 ---
-# Access and Excel XLS import issues in Power BI Desktop
+# Troubleshoot Access and Excel XLS import issues in Power BI Desktop
 
 In Power BI Desktop, Access databases and Excel 97-2003 XLS files both use the *Access Database Engine*. Three common situations can prevent the Access Database Engine from working properly:
 
@@ -30,7 +30,7 @@ If you work with dataflows and use a gateway to connect to the data, you must in
 >If the Access Database Engine bit version you install is different from your Microsoft Office bit version, your Office applications won't be able to use the Access Database Engine.
 
 <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>
-## Access Database Engine bit version different from Power BI Desktop bit version
+## Access Database Engine bit version is different from Power BI Desktop bit version
 
 This situation usually occurs when the installed Microsoft Office version is 32-bit and the installed Power BI Desktop version is 64-bit. The opposite can also happen, and the bit version mismatch occurs in either case.
 
@@ -84,7 +84,7 @@ To use both Access Database Engine bit versions:
    ```
 
 <a name="situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription"></a>
-## Access or XLS files with Microsoft 365
+## You use Access or XLS files with Microsoft 365
 
 Office 2013 and Office 2016 Microsoft 365 subscriptions register the Access Database Engine provider in a virtual registry location that only Microsoft Office processes can access. The Mashup Engine, which is responsible for running non-Microsoft 365 Excel and Power BI Desktop, isn't an Office process, so it can't use the Access Database Engine provider.
 
