@@ -1,13 +1,13 @@
 ---
-title: Understand the permission tokens needed for embedding a Power BI application
-description: Learn which tokens your Power BI application needs to authenticate against Azure and Power BI service.
+title: Permission tokens needed for embedding a Power BI app
+description: Learn which tokens your Power BI app needs to authenticate against Azure and Power BI service.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/14/2022
+ms.date: 12/14/2022
 ---
 
 # Embedded analytics access tokens
@@ -30,6 +30,19 @@ For both *embed for your customers* and *embed for your organization* solutions,
 * In the *embed for your customers* scenario, the Azure AD token is used to generate the *embed token*.
 
 * In the *embed for your organization* scenario, the Azure AD token is used to access Power BI.
+
+You can acquire an Azure AD token in one of the following ways:
+
+* Use the external [Postman](https://www.postman.com/) tool to acquire a token.
+
+* Follow the sample solutions at [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/). For example:  
+  
+  * For *Embed for your customers* see [this AadService.cs file](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20customers/AppOwnsData/Services/AadService.cs). You can find the `authorityUrl` and `scopeBase` at [AppOwnsData/Web.config](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20customers/AppOwnsData/Web.config).
+
+  * For *Embed for your organization* see [this OwinOpenIdConnect.cs file](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/UserOwnsData/Services/Security/OwinOpenIdConnect.cs). You can find `authorityUrl` at [UserOwnsData/Web.config](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/Embed%20for%20your%20organization/UserOwnsData/Web.config).
+
+  > [!NOTE]
+  > You can find the `authorityUrl` and `scopeBase` values for the some of the other Sovereign clouds in [Embed content in your app for government and national clouds](embed-sample-for-customers-national-clouds.md).
 
 ## Embed token
 

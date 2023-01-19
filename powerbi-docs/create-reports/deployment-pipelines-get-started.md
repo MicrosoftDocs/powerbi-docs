@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 10/02/2022
+ms.date: 01/18/2023
 ---
 
 # Get started with deployment pipelines
@@ -213,31 +213,22 @@ This section lists the limitations for the deployment rules.
 >[!NOTE]
 >Parameter rules aren't supported for paginated reports.
 
-### Supported data sources for dataflow and dataset rules
+### Supported data sources for rules
 
-Data source rules can only be defined for the following data sources:
+The table below lists the data sources that you can define rules for. For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
 
-* Azure Analysis Services
-
-* Azure Synapse
-
-* SQL Server Analysis Services (SSAS)
-
-* Azure SQL Server
-
-* SQL server
-
-* Odata Feed
-
-* Oracle
-
-* SapHana (only supported for import mode; not direct query mode)
-
-* SharePoint
-
-* Teradata
-
-For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
+|Data source  |Dataset  |Dataflow  |Paginated report |
+|---------|---------|---------|---|
+|Azure Analysis Services |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Azure Synapse     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SQL Server Analysis Services (SSAS) |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Azure SQL Server |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SQL server     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Odata Feed     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/no.png" alt-text="No."::: |
+|Oracle     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SapHana (only supported for import mode; not direct query mode) |         |         |   |
+|SharePoint     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/no.png" alt-text="No."::: |
+|Teradata     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
 
 ## Step 5 - Deploy content from one stage to another
 

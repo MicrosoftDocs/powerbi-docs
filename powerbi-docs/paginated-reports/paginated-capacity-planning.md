@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/24/2022
+ms.date: 01/18/2023
 LocalizationGroup: Premium
 ---
 # Paginated reports capacity planning
@@ -106,9 +106,9 @@ This section includes two examples, one for the [regular calculation](#regular-c
 
 #### Regular calculation
 
-Let’s assume that you're running a paginated report on a *P1 SKU* that has four cores. The total CPU usage for 20 runs is 10 seconds, so the average CPU time per reports is two seconds.
+Let’s assume that you're running a paginated report on a *P1 SKU* that has eight cores. The total CPU usage for 10 runs is 40 seconds, so the average CPU time per reports is four seconds.
 
-$ 60 = {4 \times {30} \over 2} $
+$ 60 = {8 \times {30} \over 4} $
 
 When using the second formula, you get a maximum of 1,200 users.
 
@@ -122,15 +122,15 @@ Let’s assume that you have three paginated reports with the daily rendering pe
 
 | Report | Number of rendered reports per day | CPU processing time (in seconds) |
 |--------|------------------------------------|----------------------------------|
-| A      | 60%                                |  2                               |
-| B      | 30%                                |  5                               |
-| C      | 10%                                | 10                               |
+| A      | 60%                                |  4                               |
+| B      | 30%                                | 10                               |
+| C      | 10%                                | 20                               |
 
 The formulas for a *P1 SKU* will be:
 
 | Value | Formula |
 |-------|---------|
-|Max concurrent report renders | $ ~32.4 = {4 \times {30} \over 0.6 \times{2} + 0.3 \times{5} + 0.1 \times{10}} $ |
+|Max concurrent report renders | $ ~32.4 = {8 \times {30} \over 0.6 \times{4} + 0.3 \times{10} + 0.1 \times{20}} $ |
 |Total SKU users | $ ~650 = {32.4 \over 0.05} $ |
 
 ## Next steps
