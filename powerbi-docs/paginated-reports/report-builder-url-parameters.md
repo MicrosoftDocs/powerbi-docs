@@ -8,7 +8,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.reviewer: "nisrinivasan"
 ms.custom: ""
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # URL parameters in paginated reports in Power BI
@@ -134,7 +134,7 @@ You can specify additional output parameters for the following export formats.
    
 - CSV:
     > [!NOTE]
-    > For these *string* values, reference [CSV device information settings](/sql/reporting-services/csv-device-information-settings).
+    > For these *string* values, reference [CSV device information settings](../device-info/csv-device-information-settings.md).
     - rdl:Encoding=*string*
     - rdl:ExcelMode=true/false
     - rdl:FieldDelimiter=*string*
