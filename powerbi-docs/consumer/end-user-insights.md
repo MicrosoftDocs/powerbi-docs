@@ -52,7 +52,7 @@ To return to your report, select **Exit Focus mode**, located in the upper left 
 
 ## Considerations and troubleshooting
 
--**View insights** doesn't work with all dashboard tile types. For example, it isn't available for Power BI custom visuals, streaming data, DirectQuery tiles, or data protected with RLS (row-level security).<!--[Power BI visuals](end-user-custom-visuals.md)-->
+**View insights** doesn't work with all dashboard tile types. For example, it isn't available for Power BI custom visuals, streaming data, DirectQuery tiles, or data protected with RLS (row-level security).<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 ## Next steps
 
