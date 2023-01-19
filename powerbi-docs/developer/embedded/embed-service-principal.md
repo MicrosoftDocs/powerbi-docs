@@ -27,7 +27,7 @@ This article describes service principal authentication using an *application ID
 >[!NOTE]
 >We recommend that you secure your back-end services by using certificates, rather than secret keys.
 >
->* [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
+>* [Learn more about getting access tokens from Azure AD by using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
 >* To secure your solution by using a certificate, complete the instructions in this article and then follow the steps described in [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).
 
 ## Method
@@ -152,11 +152,11 @@ Your service principal doesn't have access to any of your Power BI content and A
 There are two ways to create an Azure AD security group:
 
 * [Manually (in Azure)](embed-service-principal.md#create-a-security-group-manually)
-* [By using PowerShell](embed-service-principal.md#create-a-security-group-by-using-powershell)
+* [Use PowerShell](embed-service-principal.md#create-a-security-group-by-using-powershell)
 
 ### Create a security group manually
 
-To create an Azure security group manually, follow the instructions in [create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members).
+To create an Azure security group manually, follow the instructions in [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members).
 
 ### Create a security group by using PowerShell
 
