@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 05/15/2021
+ms.date: 01/19/2023
 ms.custom: licensing support
 LocalizationGroup: consumers
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a [*business user*](end-user-consumer.md), you use the Power BI service to explore reports and dashboards so you can make data-backed business decisions. If you've been using Power BI for a while, or have been chatting with your *designer* colleagues, you've probably discovered that there are some features that only work if you have a certain type of license, subscription, or permissions.
+As a [*business user*](end-user-consumer.md), you use the Power BI service to explore reports and dashboards so that you can make data-backed business decisions. If you've been using Power BI for a while, or have been chatting with your *designer* colleagues, you've probably discovered that there are some features that only work if you have a certain type of license, subscription, or permissions.
 
 What you can do in the Power BI service depends on three things:
 -    the type of license and subscription you're using,
@@ -55,7 +55,7 @@ Select your profile picture to display account information. Zalan is using a fre
 
 To see additional details about your account, select **View account**. 
 
-<!-- [Your Microsoft **My account** page](https://portal.office.com/account) opens in a new browser tab.  To see what licenses are assigned to you.  Select the tab for  **Subscriptions**.
+[Your Microsoft **My account** page](https://portal.office.com/account) opens in a new browser tab.  To see what licenses are assigned to you.  Select the tab for  **Subscriptions**.
 
 ![Screenshot of Microsoft 365 Accounts page.](media/end-user-license/power-bi-subscriptions.png)
 
@@ -67,7 +67,7 @@ This second user, Zalan, has a Power BI free license.
 
 ![Office portal subscriptions tab](media/end-user-license/power-bi-license-free.png) 
 
-## Find out if you have access to Premium capacity
+<!-- ## Find out if you have access to Premium capacity
 
 Next, check to see if you're part of an organization that has Premium capacity. Either of the users above, Pro or free, could belong to an organization that has Premium capacity.  Let's check for our second user, Zalan.  
 
@@ -87,7 +87,7 @@ We can determine whether Zalan's organization has Premium capacity by looking up
 
     -->
 
-## Identify content hosted in Premium capacity
+<!-- ## Identify content hosted in Premium capacity
 
 There are a couple of ways to identify content that is stored in Premium capacity. One way is to look for apps and app workspaces with a diamond icon. The diamond indicates that the content is stored in Premium capacity. 
 
@@ -95,7 +95,7 @@ In the image below, three of the apps are stored in Premium capacity.
 
 ![Apps screen](media/end-user-license/power-bi-premium.png)
 
-If you're a user with a free license, as long as the *designer* places the workspace in a Premium capacity, you have the ability, **within that workspace**, to view shared content, collaborate with colleagues, work with the app dashboards and reports, and more. The extent of your permissions is set by your Power BI administrator and by the content designer.
+If you're a user with a free license, as long as the *designer* places the workspace in a Premium capacity, you have the ability, **within that workspace**, to view shared content, collaborate with colleagues, work with the app dashboards and reports, and more. The extent of your permissions is set by your Power BI administrator and by the content designer. -->
 
 ## Putting it all together
 
@@ -123,9 +123,11 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in ei
 
 - It's possible to have more than one Power BI license. The Power BI service will always deliver the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service will use the Pro license.
 
-- If you want to create and share content (dashboards, reports, apps), or open content that someone else shared with you, then you need to have a Pro user license or a Premium per user license. You may be able to sign up for a free 60-day individual trial of the paid version of Power BI Premium Per User. If your organization has enabled self-service trials, select the upgrade dialog that appears in the Power BI service whenever you try to use a Pro feature.
+- If you want to create and share content (dashboards, reports, apps), or open content that someone else shared with you, then you need to have a Pro user license or a Premium per user license. You may be able to sign up for a free individual trial of the paid version of Power BI Premium Per User. If your organization has enabled self-service trials, select the upgrade dialog that appears in the Power BI service whenever you try to use a Pro feature.
 
-    ![dialog with Pro trial link](media/end-user-license/power-bi-ppu-trial.png)
+    :::image type="content" source="media/end-user-license/power-bi-ppu-trial.png" alt-text="Screenshot of dialog with Pro trial link.":::
+
+  If you do not see this dialog, or see a different message when you try to upgrade, that means that you administrator has disabled self-service trials. 
 
   When the 60-day trial expires, your license reverts back to the previous version, either free or Pro. After your trial license reverts, you no longer have access to features that require a Power BI Premium Per User license. If you want to continue with a Premium Per User or a Pro license, contact your administrator or IT Help Desk about purchasing an upgrade. If you don't have an admin or IT Help Desk, visit [the Power BI pricing page](https://powerbi.microsoft.com/pricing/).
 

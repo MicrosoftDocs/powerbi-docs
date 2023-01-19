@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/17/2021
+ms.date: 12/27/2022
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -22,7 +22,7 @@ For an overview of self-service, visit [Self-service for Microsoft 365 products 
 To skip ahead to using self-service, visit [How to use self-service sign-up and self-service purchase](service-self-service-signup-for-power-bi.md).
 
 ## Self-service sign-up versus self-service purchase
-The **self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses. **Self-service purchase** is the feature used by individuals to buy a Pro or Premium Per User license for themselves.     
+The **self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses. **Self-service purchase** is the feature used by individuals to buy a Pro or Premium Per User license for themselves. 
 
 ### Self-service for the Power BI service
 This article describes the self-service process for the  **Power BI service**. If you are looking for help downloading Power BI Desktop or installing the mobile apps, please refer to these articles instead:
@@ -32,15 +32,15 @@ This article describes the self-service process for the  **Power BI service**. I
 ## Get an individual user license for the Power BI service
 There are many different ways to get a per-user license for the Power BI service. These include:
 * If your organization already has a subscription for Power BI, you may be able to self-assign a license. The type of licenses available will depend on what type of subscriptions your organization has purchased and how your admin has configured Power BI. 
-* You can visit powerbi.com and click a "Try free" or "Buy now" link. Then, follow the prompts to complete the sign up or purchase. 
-* If you already have a license and try to use an advanced feature, Power BI may prompt you to upgrade or try a free trial.  Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. Users who already hold a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license.    
+* You can visit powerbi.microsoft.com and click a "Try free" or "Buy now" link. Then, follow the prompts to complete the sign up or purchase. 
+* If you already have a license and try to use an advanced feature, Power BI may prompt you to upgrade or try a free trial.  For example, users with a Power BI free license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service.      
  
 For step-by-step instructions on using self-service sign-up and self-service purchase, see [How to sign up for Power BI as an individual](service-self-service-signup-for-power-bi.md)
 
 ### Power BI license types
-Before you sign-up or purchase, determine which [license type](../enterprise/service-admin-licensing-organization.md) you need. Power BI offers several per-user licenses: free, Pro, and Premium Per User. Power BI also offers a free trial upgrade for Premium Per User. When an individual signs-up or purchases Power BI, they're assigned a Power BI license automatically.  Not sure what type of license you need?  
+Before you sign-up or purchase, determine which [license type](../enterprise/service-admin-licensing-organization.md) you need. Power BI offers several per-user licenses: free, Pro, and Premium Per User. Power BI also offers free trial upgrades. When an individual signs-up or purchases Power BI, they're assigned a Power BI license automatically.  Not sure what type of license you need?  
 * With a free license, you can explore Power BI for personal data analysis and visualization using My Workspace, but you can't share with other users. A Power BI Pro or Power BI Premium Per User license is required to share content. 
-* With a Pro license, you can collaborate with Premium per-user and Pro users by creating and sharing content. If that content is in Premium capacity, a Pro user can collaborate with free, Premium per user, and Pro users by creating and sharing content.	
+* With a Pro license, you can collaborate with Premium per-user and Pro users by creating and sharing content. If that content is in Premium capacity, a Pro user can even share and collaborate with free users.	
 * With a Premium Per User license, you can access Premium features for yourself and other users who also have a Premium Per User license.  A Power BI Premium subscription unlocks access to a variety of features, capabilities, and types of content that are only available through Premium. Power BI Premium is available as an add-on to Power BI Pro.
  For information about Premium subscriptions, see [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md).
 
@@ -53,7 +53,7 @@ You may already have access to Power BI. Perhaps your organization has already a
 
 Check to see if you can already sign in. Open the Power BI service with this URL: app.powerbi.com. If Power BI opens, from the upper right corner, select the **Me** icon to see your current license(s). 
  
-![Screenshot of the Account drop down showing your license type.](media/service-self-service-signup-purchase-for-power-bi/power-bi-licenses.png)
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-license.png" alt-text="Screenshot of the Account drop down showing your license type":::
 
 If you are unable to log in to the Power BI service, or you want an alternate way to look up your Power BI licenses, open your Microsoft account instead.  The URL is: myaccount.microsoft.com. 
 
