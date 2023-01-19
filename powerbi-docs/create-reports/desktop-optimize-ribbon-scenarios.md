@@ -105,7 +105,7 @@ In the **Optimize** ribbon, we select **Optimization presets**, and then select 
 
 :::image type="content" source="media/desktop-optimize-ribbon-scenarios/7-optimization-presets-interactivity.gif" alt-text="Optimization presets interactivity animation":::
 
-In this case, we're calling out DirectQuery reporting scenarios specifically, but they can be used in other reporting scenarios. To learn more, see [Optimize ribbon in Power BI Desktop - Reporting scenarios](desktop-optimize-ribbon.md#reporting-scenarios).
+In this case, we're calling out DirectQuery reporting scenarios specifically, but they can be used in other reporting scenarios.
 
 For a specific visual, we can determine if it’s using DirectQuery by using **Performance analyzer** to see if there's a **Direct query** row . You can see here, DirectQuery is used to return data for our visual:
 

@@ -176,7 +176,18 @@
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md
     - name: Customer Lockbox for Power BI
-      href: service-admin-power-bi-security-lockbox.md                 
+      href: service-admin-power-bi-security-lockbox.md   
+  - name: Power BI Scale-Out
+    expanded: false
+    items:
+    - name: Power BI Dataset Scale-Out
+      href: service-premium-scale-out.md
+    - name: Test Power BI Dataset Scale-Out
+      href: service-premium-scale-out-test.md
+    - name: Sync a read-only scale-out replica   
+      href: service-premium-scale-out-sync-replica.md  
+    - name: Compare scale-out dataset copies      
+      href: service-premium-scale-out-app.md                     
   - name: Automation tools
     expanded: false
     items:
@@ -186,4 +197,4 @@
       href: service-admin-reference.md
     - name: Power BI cmdlets for PowerShell
       href: /powershell/power-bi/
-      maintainContext: true
+      maintainContext: true          

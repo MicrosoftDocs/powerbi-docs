@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/11/2021
+ms.date: 01/18/2023
 LocalizationGroup: Learn more
 ---
 # Use Visual table and Data point table in Power BI
@@ -103,6 +103,10 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 :::image type="content" source="media/desktop-see-data-see-records/service-back-button.png" alt-text="Screenshot that shows the upper-left corner of the Power B I service canvas. Back to report is called out.":::
 
 ---
+> [!NOTE]
+> **Show as table** has the following limitations:
+>
+> - You can't export the **Show as table** view to PDF or static PowerPoint. 
 
 ## Use Data point table in Power BI
 
@@ -143,6 +147,7 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 > - You can't change the data in the **Data point table** view and save it back to the report.
 > - You can't use **Data point table** when your visual uses a calculated measure in a (multidimensional) measure group.
 > - You can't use **Data point table** when you are connected to a live multidimensional (MD) model.
+> - You can't export the **Data point table** view to PDF or static PowerPoint. 
 
 ## Next steps
 
