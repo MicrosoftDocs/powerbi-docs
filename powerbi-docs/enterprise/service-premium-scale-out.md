@@ -63,7 +63,7 @@ Power BI Dataset Scale-Out is enabled by default for your tenant. However, you'l
 
 ### Enable Scale-Out for your workspace
 
-Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable it for. Make sure that the XMLA endpoint property has been [enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable it for. Make sure that the XMLA endpoint has been [enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write).
 
 1. Start SQL Server Management Studio (SSMS) and in the **Connect to Server** dialog box, fill in the fields as listed below.
 
