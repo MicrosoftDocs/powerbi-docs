@@ -88,7 +88,8 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
             <Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
                 <Alter ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
                     <Object /> 
-                    <ObjectDefinition><Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+                    <ObjectDefinition>
+                       <Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                                 xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" 
                                 xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" 
