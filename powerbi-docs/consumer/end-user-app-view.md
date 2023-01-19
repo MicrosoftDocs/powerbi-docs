@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 01/19/2023
 ms.custom: licensing support, intro-installation
 LocalizationGroup: Share your work
 ---
@@ -86,26 +86,26 @@ Still a little confused by the difference between dashboards and reports?  Learn
 
    :::image type="content" source="./media/end-user-app-view/power-bi-apps-card.png" alt-text="Screenshot showing the Apps page on the navigation pane with the View dropdown highlighted." lightbox="./media/end-user-app-view/power-bi-apps-card.png":::
 
-1. Select the app to open it. Depending on the app, you might receive a prompt that looks similar to the following example. Some apps ask you for contact information (name and email) or for product details (customer ID, subscription number, or parameters). Many apps load with sample data and provide a link for you to connect your own data. For guidance on which option to select, see [Install template apps](../connect-data/service-template-apps-install-distribute.md).
+2. Select the app to open it. Depending on the app, you might receive a prompt that looks similar to the following example. Some apps ask you for contact information (name and email) or for product details (customer ID, subscription number, or parameters). Many apps load with sample data and provide a link for you to connect your own data. For guidance on which option to select, see [Install template apps](../connect-data/service-template-apps-install-distribute.md).
 
    ![Screenshot of the Get started page for a new app with the options Connect, Explore app, and Edit workspace.](./media/end-user-app-view/power-bi-customize.png)
 
-1. Select the app card to open it.
+3. Select the app card to open it.
 
    :::image type="content" source="./media/end-user-app-view/power-bi-app-card.png" alt-text="Screenshot of the Sales and Marketing app card with the owner name, date, and time.":::
 
-1. The **Sales and Marketing Sample** app opens to a report. The layout might look different if your app opens to a dashboard. If you select a report in the dashboard, the layout will look like the following example.
+4. The **Sales and Marketing Sample** app opens to a report. The layout might look different if your app opens to a dashboard. If you select a report in the dashboard, the layout will look like the following example.
 
    :::image type="content" source="./media/end-user-app-view/power-bi-app-number.png" alt-text="Screenshot of the Sales and Marketing app with different areas identified by numbers.":::
 
 Apps have different layouts, visuals, colors, and options, but they all have most of the features shown in this example:
 
 1. Name of the app and last updated time. Select the dropdown arrow to look up the owner and Help contact.
-1. Select **Power BI** to return to [Home](end-user-home.md).
-1. Your action bar. 
-1. The report page canvas.
-1. The app navigation pane.  Below the name of the app is the list of content. This app has one report with six pages. Select a report page name to open it. We currently have the *Return rate* page open. 
-1. Select the arrow to expand the **Filters** pane.
+2. Select **Power BI** to return to [Home](end-user-home.md).
+3. Your action bar. 
+4. The report page canvas.
+5. The app navigation pane.  Below the name of the app is the list of content. This app has one report with six pages. Select a report page name to open it. We currently have the *Return rate* page open. 
+6. Select the arrow to expand the **Filters** pane.
 
 You can explore the associated workspace if you've been given access. When you install or download a template app, the Power BI service creates a workspace for you. When you install an organizational app, it might not include access to the workspace. For more information, see [Collaborate in workspaces](end-user-workspaces.md). Select **Power BI** (number 2) to return to **Home** and choose **Workspaces**. 
 
