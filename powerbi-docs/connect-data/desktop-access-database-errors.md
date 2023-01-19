@@ -13,7 +13,7 @@ LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot Access and Excel XLS import issues in Power BI Desktop
 
-In Power BI Desktop, Access databases and Excel 97-2003 XLS files both use the *Access Database Engine*. Three common situations can prevent the Access Database Engine from working properly:
+In Power BI Desktop, imported Access databases and Excel 97-2003 XLS files both use the *Access Database Engine*. Three common situations can prevent the Access Database Engine from working properly:
 
 - No Access Database Engine is installed.
 - The Access Database Engine bit version, 32-bit or 64-bit, is different from the Power BI Desktop bit version.
@@ -69,7 +69,7 @@ If the error occurs with an Excel 97-2003 XLS workbook, you can avoid using the 
 
 ### Solution 4: Install both versions of the Access Database Engine
 
-It's possible to install both versions of the Access Database Engine resolve the issue for Power Query for Excel and Power BI Desktop. This workaround isn't recommended, because it can introduce errors and issues for applications that use the Access Database Engine bit version you installed first.
+You can install both versions of the Access Database Engine to resolve the issue for Power Query for Excel and Power BI Desktop. This workaround isn't recommended, because it can introduce errors and issues for applications that use the Access Database Engine bit version you installed first.
 
 To use both Access Database Engine bit versions:
 
@@ -92,5 +92,5 @@ To fix this situation, [download and install the Access Database Engine Redistri
 
 ## Other import issues
 
-The Power BI team regularly looks for issues that might affect many users, and strives to include them in documentation. If you encounter an issue that this article doesn't cover, submit a question about the issue to [Power BI Support](https://powerbi.microsoft.com/support).
+The Power BI team regularly looks for issues that might affect many users, and tries to include them in documentation. If you encounter an issue that this article doesn't cover, submit a question about the issue to [Power BI Support](https://powerbi.microsoft.com/support).
 
