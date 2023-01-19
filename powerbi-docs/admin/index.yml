@@ -5,7 +5,7 @@ summary: Administer Power BI for your organization.
 
 metadata:
   title: Power BI service administration
-  description: Learn how to use the Power BI service admin tools.
+  description: Learn how to use the Power BI service administrator tools to monitor and manage Power BI for your organization.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-admin
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: KesemSharabi
   ms.author: kesharab
-  ms.date: 03/03/2022
+  ms.date: 11/18/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -28,9 +28,7 @@ landingContent:
         links:
           - text: What is Power BI administration
             url: service-admin-administering-power-bi-in-your-organization.md
-          - text: Can't sign in?
-            url: power-bi-cannot-sign-in.md
-          - text: Use the same account for Power BI and Azure
+          - text: Using the same account for Power BI and Azure
             url: service-admin-how-to-use-the-same-account-as-azure.md
 
   # Card (optional)
@@ -42,27 +40,19 @@ landingContent:
             url: desktop-admin-sign-in-form.md
           - text: Add Power BI URLs to your allowlist
             url: power-bi-allow-list-urls.md
-          - text: Add custom branding
+          - text: Add custom branding to the Power BI service
             url: service-admin-custom-branding.md
-          - text: Find where data is stored
-            url: service-admin-where-is-my-tenant-located.md   
-          - text: Find your org's default region
+          - text: Find the default region for your organization
             url: service-admin-where-is-my-tenant-located.md
-          - text: Move between regions
-            url: service-admin-region-move.md           
+          - text: Where data is located when Power BI data is shared with your Microsoft 365 services
+            url: service-admin-m365-data-access-storage.md
 
   # Card (optional)
   - title: Monitoring
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Service interruption notifications
-            url: service-interruption-notifications.md
-          - text: Capture diagnostic information
-            url: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
-          - text: Track service health
-            url: service-admin-health.md
-          - text: Track user activities
+          - text: Track user activities in Power BI
             url: service-admin-auditing.md           
             
   # Card (optional)
@@ -70,7 +60,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Admin portal settings
+          - text: About the admin portal
             url: service-admin-portal.md
-          - text: Settings for Power BI visual
+          - text: Manage Power BI visuals admin settings
             url: organizational-visuals.md

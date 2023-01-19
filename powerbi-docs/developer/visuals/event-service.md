@@ -3,17 +3,20 @@ title: Render events in Power BI visuals
 description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 05/18/2021
+ms.date: 08/30/2022
 ---
 
 # "Rendering" events in Power BI visuals
 
 In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must include **rendering events**.
 These events let listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
+
+>[!IMPORTANT]
+>Any visual that exports data (for example, to a PowerPoint or *.pdf* file) must contain rendering events to ensure that the export doesn't begin before the visual finished rendering.
 
 The **rendering events API** consists of three methods that should be called during rendering:
 

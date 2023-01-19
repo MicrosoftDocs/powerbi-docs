@@ -15,13 +15,13 @@ LocalizationGroup: Premium
 
 This article describes how to purchase a Power BI Premium capacity for your organization. The article covers using P SKUs for typical production scenarios. P SKUs require a monthly or yearly commitment, and are billed monthly.
 
-For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
+For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-gen2-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
 
 > [!NOTE]
 > If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity where it will continue to be accessible. However, you will not be able to view reports that are based on datasets that are greater than 1 GB or reports that require Premium capacities to render.
 
 > [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifes the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-gen2-what-is.md).
 
 
 ## Purchase P SKUs for typical production scenarios
@@ -113,7 +113,7 @@ You can purchase Power BI Premium for individual users, using the Premium Per Us
 
 [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)\
 [Power BI pricing page](https://powerbi.microsoft.com/pricing/)\
-[Power BI Premium FAQ](service-premium-faq.yml)\
+[Power BI Premium FAQ](service-premium-gen2-faq.yml)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
@@ -126,4 +126,4 @@ Power BI has released Power BI Premium Gen2, which improves the Power BI Premium
 * Autoscaling
 * Reduced management overhead
 
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-gen2-what-is.md).

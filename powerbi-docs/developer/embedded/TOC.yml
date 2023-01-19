@@ -7,10 +7,32 @@
     items:
     - name: "What is Power BI embedded analytics?"
       href: embedded-analytics-power-bi.md
+    - name: Power BI Embedded features
+      href: ../../enterprise/service-premium-features.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
     - name: "What is the Power BI Embedded analytics playground?"
       href: "power-bi-playground.md"    
-  - name: Getting started
+  - name: Power BI Embedded setup
     items: 
+    - name: "Create an Azure Active Directory tenant"
+      href: create-an-azure-active-directory-tenant.md
+    - name: "Power BI app registration tool"
+      href: register-app.md
+    - name: "Configure credentials"
+      href: configure-credentials.md    
+    - name: "Edit your app permissions"
+      href: change-permissions.md
+    - name: "Auto-install apps"
+      href: embed-auto-install-app.md
+    - name: "Performance best practices"
+      href: embedded-performance-best-practices.md
+    - name: "Monitor Power BI Embedded apps"
+      href: monitor-power-bi-embedded.md
+  - name: "Embed content"
+    items:
+    - name: "Embed using service principal"
+      href: embed-service-principal.md
+    - name: "Embed using service principal and a certificate"
+      href: embed-service-principal-certificate.md
     - name: "Embed content for customers"
       href: embed-sample-for-customers.md
     - name: "Embed content for your organization"
@@ -20,63 +42,33 @@
     - name: "Embed a report in an app for your customers"
       href: embed-customer-app.md     
     - name: "Embed a report in an app for your organization"
-      href: embed-organization-app.md      
-  - name: Concepts
-    items:
-    - name: "Embedded analytics application tokens"
-      href: embed-tokens.md      
-    - name: "Generating an embed token"
-      href: generate-embed-token.md
-    - name: "Performance best practices"
-      href: embedded-performance-best-practices.md
-    - name: "Service principal profiles for multi-customer solutions"
-      href: embed-multi-tenancy.md
-    - name: "Migrate to service principal profiles"
-      href: migration-to-sp-profiles.md
-    - name: "Connect a report using dynamic binding"
-      href: embed-dynamic-binding.md
-    - name: "Azure diagnostic logging for Power BI Embedded"
-      href: monitor-power-bi-embedded.md
-  - name: How to
-    items:        
-    - name: "Embed using service principal"
-      href: embed-service-principal.md
-    - name: "Embed using service principal and a certificate"
-      href: embed-service-principal-certificate.md
+      href: embed-organization-app.md 
     - name: "Embed a paginated report"
-      href: embed-paginated-reports.md   
-    - name: "Use the Power BI SDK with service principal profiles"
-      href: service-principal-profile-sdk.md   
-    - name: "Move an embedded app to production"
-      href: move-to-production.md          
-    - name: "Export report to file"
-      href: export-to.md
-    - name: "Export paginated report to file"
-      href: export-paginated-report.md
-    - name: "Configure credentials"
-      href: configure-credentials.md      
+      href: embed-paginated-reports.md  
     - name: "Embed in Salesforce"
       href: embed-power-bi-salesforce.md        
-    - name: "Auto-install apps"
-      href: embed-auto-install-app.md
-    - name: "Create an Azure Active Directory tenant"
-      href: create-an-azure-active-directory-tenant.md
-    - name: "Register an application"
-      href: register-app.md
-    - name: "Monitor Power BI Embedded"
-      href: monitor-power-bi-embedded.md      
     - name: "Embedding Q&A"
       href: qanda.md
     - name: Secure embed
       href: ../../collaborate-share/service-embed-secure.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
-  - name: Embedded Gen2
+  - name: Tokens
     items:
-    - name: "What is Power BI Embedded Generation 2?"
-      href: "power-bi-embedded-generation-2.md"
-    - name: "Plan your transition to Power BI Embedded Gen2"
-      href: embedded-transition-gen1-to-gen2.md
+    - name: "Embedded analytics access tokens"
+      href: embed-tokens.md      
+    - name: "Generating an embed token"
+      href: generate-embed-token.md
+    - name: "Connect a report using dynamic binding"
+      href: embed-dynamic-binding.md
+  - name: Export to file
+    items:
+    - name: "Export report to file"
+      href: export-to.md
+    - name: "Export paginated report to file"
+      href: export-paginated-report.md
   - name: Capacities and SKUs
     items:
+    - name: "Move an embedded app to production"
+      href: move-to-production.md    
     - name: "Capacity and SKUs in Power BI embedded analytics"
       href: embedded-capacity.md
     - name: "Capacity planning"
@@ -85,28 +77,36 @@
       href: azure-pbie-create-capacity.md
     - name: Create a capacity using Multi-Geo in Azure
       href: embedded-multi-geo.md
+    - name: Assess capacity load
+      href: load-assessment-planning-tool.md
     - name: Scale a capacity in Azure
       href: azure-pbie-scale-capacity.md
     - name: Pause and start a capacity in Azure
       href: azure-pbie-pause-start.md
-  - name: Service principal profiles
+  - name: Workspace separation and multitenancy
     items:
-    - name: "Service principal profiles for multi-customer apps"
+    - name: "Service principal profiles for multitenancy apps"
       href: embed-multi-tenancy.md      
     - name: "Power BI SDK and service principal profiles"
       href: service-principal-profile-sdk.md
     - name: "Migrate to the service principal profiles model"
       href: migration-to-sp-profiles.md
-  - name: RLS
+  - name: Security
     items:
-    - name: "Row-level security"
+    - name: "Embedding security features"
       href: embedded-row-level-security.md
-    - name: "Embed a report with cloud-based RLS"
+    - name: "Embed with RLS"
       href: cloud-rls.md
     - name: "RLS in embedded paginated reports"
       href: paginated-reports-row-level-security.md
-    - name: "Embed a report on an on-premises SQL Server Analysis Services (SSAS)"
+    - name: "Embed with on-premises SQL Server Analysis Services (SSAS)"
       href: sql-server-analysis-services-embed.md
+    - name: "Embed with Azure Analysis Services (AAS)"
+      href: embed-azure-analysis-services.md
+    - name: "Single sign-on systems (SSO)"
+      href: rls-sso.md
+    - name: "Embed with object-level security (OLS)"
+      href: embed-object-level-security.md
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"

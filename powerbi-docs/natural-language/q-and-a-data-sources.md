@@ -6,7 +6,7 @@ ms.author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 11/28/2022
 ms.custom: kr2b-contr-experiment
 ---
 
@@ -41,6 +41,7 @@ Enabling Q&A builds an index, to quickly provide real-time feedback to the user 
 - All column names and tables are inserted into the index unless they're explicitly turned off from within the Q&A tooling.
 - All text values of fewer than 100 characters are indexed. Text values of 100 characters and more aren't indexed.
 - The Q&A index stores a maximum of 5 million unique values. If you exceed this number, the index doesn't hold all the potential values, which might decrease Q&A accuracy.
+- The Q&A index is built based on the first 1,000 model entities (tables and fields). If your data model exceeds this number, the index doesn't hold all the potential model entities, which might decrease Q&A accuracy.
 - If an error occurs during indexing, the index remains in a partial state, and recreates on the next refresh.
 
 ## Index refresh and caching

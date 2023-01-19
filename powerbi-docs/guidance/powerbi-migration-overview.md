@@ -1,13 +1,13 @@
 ---
 title: Power BI migration overview
 description: Learn how to plan and conduct a migration from another third-party BI tool to Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 09/27/2022
 ---
 
 # Power BI migration overview
@@ -26,7 +26,7 @@ The articles in the Power BI migration series include:
 1. [Learn from customer Power BI migrations](powerbi-migration-learn-from-customers.md)
 
 > [!NOTE]
-> It's also recommended that you thoroughly read the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) and [Power BI implementation planning](powerbi-implementation-planning-introduction.md) articles.
+> We also recommend that you thoroughly read the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) and [Power BI implementation planning](powerbi-implementation-planning-introduction.md) articles.
 
 There are two assumptions: Your organization has a legacy BI platform currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series of articles.
 

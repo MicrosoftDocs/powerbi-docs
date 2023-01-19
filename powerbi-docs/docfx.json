@@ -36,6 +36,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/power-bi/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-MSPowerBI",
+      "show_latex": true,
       "contributors_to_exclude": [
         "openpublishingbuild",
         "sudeepku",
@@ -63,6 +64,6 @@
     "template": [],
     "dest": "powerbi-docs",
     "markdownEngineName": "markdig",
-    "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
+    "xrefService": [ "https://xref.learn.microsoft.com/query?uid={uid}" ]
   }
 }

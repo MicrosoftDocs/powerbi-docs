@@ -15,7 +15,7 @@ Monitoring your capacities is essential to making informed decisions on how best
 
 ![Power BI Premium Capacity Metrics app report](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
 
-This article describes how to install the app and connect to data sources. For information about the contents of the report and how to use it, see [Monitor Premium capacities with the app](../enterprise/service-admin-premium-monitor-capacity.md), and the [Premium Capacity Metrics app blog post](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
+This article describes how to install the app and connect to data sources. For information about the contents of the report and how to use it, see [Monitor Premium capacities with the app](../enterprise/service-premium-gen2-metrics-app.md), and the [Premium Capacity Metrics app blog post](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
 
 After you've installed the app and connected to the data sources, you can customize the report as per your needs. You can then distribute it to colleagues in your organization.
 
@@ -35,7 +35,7 @@ After you've installed the app and connected to the data sources, you can custom
     ![Install the Power BI Premium Capacity Metrics app](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metric-select-install.png)
 
     > [!NOTE]
-    > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to a new workspace.
+    > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to another workspace.
 
     Once the app has installed, you see it on your Apps page.
 
@@ -83,7 +83,7 @@ To start customizing the app, click the pencil icon in the upper right corner.
 See [Customize and share the app](./service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
 
 ## Next steps
-* [Monitor Premium capacities with the app](../enterprise/service-admin-premium-monitor-capacity.md)
+* [Monitor Premium capacities with the app](../enterprise/service-premium-gen2-metrics-app.md)
 * [Premium Capacity Metrics app blog post](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/)
 * [What are Power BI template apps?](./service-template-apps-overview.md)
 * [Install and distribute template apps in your organization](./service-template-apps-install-distribute.md)

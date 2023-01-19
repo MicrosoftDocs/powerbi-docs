@@ -1,13 +1,13 @@
 ---
 title: Power BI adoption roadmap maturity levels
 description: A description of the maturity levels used in the Power BI adoption roadmap series of articles.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 12/12/2022
 ---
 
 # Power BI adoption roadmap maturity levels
@@ -23,8 +23,8 @@ The three types of adoption shown in the above diagram include:
 | **Type** | **Description** |
 | --- | --- |
 | ![Type 1.](media/common/icon-01-red-30x30.png) | **Organizational adoption:** Organizational adoption refers to the effectiveness of Power BI governance. It also refers to data management practices that support and enable business intelligence efforts. |
-| ![Type 2.](media/common/icon-02-red-30x30.png) | **User adoption:** User adoption is the extent to which consumers and creators continually increase their knowledge. It is concerned with whether they are actively using Power BI, and whether they are using it in the most effective way. |
-| ![Type 3.](media/common/icon-03-red-30x30.png) | **Solution adoption:** Solution adoption refers to the impact and business value achieved for individual requirements and Power BI items. |
+| ![Type 2.](media/common/icon-02-red-30x30.png) | **User adoption:** User adoption is the extent to which consumers and creators continually increase their knowledge. It's concerned with whether they're actively using Power BI, and whether they're using it in the most effective way. |
+| ![Type 3.](media/common/icon-03-red-30x30.png) | **Solution adoption:** Solution adoption refers to the impact and business value achieved for individual requirements and Power BI solutions. |
 
 As the four arrows in the previous diagram indicate, the three types of adoption are all strongly inter-related:
 
@@ -39,11 +39,11 @@ The remainder of this article introduces the three types of Power BI adoption in
 
 Organizational adoption measures the state of Power BI governance and data management practices. There are several organizational adoption goals:
 
-- Effectively support the community.
-- Enable and empower users.
-- Oversee information delivery via enterprise BI and self-service BI with continuous improvement cycles.
+- Effectively support the community
+- Enable and empower users
+- Oversee information delivery via enterprise BI and self-service BI with continuous improvement cycles
 
-It is helpful to think about organizational adoption from the perspective of a maturity model. For consistency with the [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) and the [maturity model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro), this Power BI adoption roadmap aligns with the five levels from the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model), which were later enhanced by the [Data Management Maturity (DMM) model from ISACA](https://cmmiinstitute.com/data-management-maturity) (note the DMM is a paid resource).
+It's helpful to think about organizational adoption from the perspective of a maturity model. For consistency with the [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) and the [maturity model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro), this Power BI adoption roadmap aligns with the five levels from the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model), which were later enhanced by the [Data Management Maturity (DMM) model from ISACA](https://cmmiinstitute.com/data-management-maturity) (note the DMM was a paid resource that has been retired).
 
 Every organization has limited time, funding, and people. So, it requires them to be selective about where they prioritize their efforts. To get the most from your investment in Power BI, seek to attain at least maturity level 300 or 400, as discussed below. It's common that different business units in the organization evolve and mature at different rates, so be cognizant of the organizational state as well as progress for key business units.
 
@@ -52,7 +52,7 @@ Every organization has limited time, funding, and people. So, it requires them t
 
 ### Maturity level 100 – Initial
 
-Level 100 is referred to as *initial* or *performed*. It is the starting point for new data-related investments that are new, undocumented, and without any process discipline.
+Level 100 is referred to as *initial* or *performed*. It's the starting point for new data-related investments that are new, undocumented, and without any process discipline.
 
 Common characteristics of maturity level 100 include:
 
@@ -62,7 +62,7 @@ Common characteristics of maturity level 100 include:
 - Practices are undocumented, with significant reliance on tribal knowledge.
 - There are few formal processes in place for effective data management.
 - Risk exists due to a lack of awareness of how data is used throughout the organization.
-- The potential for a strategic investment with Power BI is acknowledged, but there is no clear path forward for purposeful, organization-wide execution.
+- The potential for a strategic investment with Power BI is acknowledged, but there's no clear path forward for purposeful, organization-wide execution.
 
 ### Maturity level 200 – Repeatable
 
@@ -70,13 +70,13 @@ Level 200 is referred to as *repeatable* or *managed*. At this point on the matu
 
 Common characteristics of maturity level 200 include:
 
-- Certain Power BI content is now critical in importance and/or it is broadly used by the organization.
+- Certain Power BI content is now critical in importance and/or it's broadly used by the organization.
 - There are attempts to document and define repeatable practices, however efforts are siloed, reactive, and deliver varying levels of success.
-- There is an over-reliance on individuals having good judgment and adopting healthy habits that they learned on their own.
-- Power BI adoptions continues to grow organically and produces value, however it takes place in an uncontrolled way.
+- There's an over-reliance on individuals having good judgment and adopting healthy habits that they learned on their own.
+- Power BI adoptions continues to grow organically and produces value. However, it takes place in an uncontrolled way.
 - Resources for an internal community are established, such as a Teams channel or Yammer group.
 - Initial planning for a consistent Power BI governance strategy is underway.
-- There is recognition that a Power BI Center of Excellence (COE) can deliver value.
+- There's recognition that a Power BI Center of Excellence (COE) can deliver value.
 
 ### Maturity level 300 – Defined
 
@@ -102,7 +102,7 @@ Common characteristics of maturity level 400 include:
 
 - Business intelligence efforts deliver significant value.
 - Power BI is commonly used for delivering critical content throughout the organization.
-- There is an established and accepted governance model with cooperation from all key business units.
+- There's an established and accepted governance model with cooperation from all key business units.
 - Training, documentation, and resources are readily available for, and actively used by, the Power BI community of users.
 - Standardized processes are in place for the oversight and monitoring of Power BI usage and practices.
 - The Power BI COE includes representation from all key business units.
@@ -115,8 +115,8 @@ Level 500 is known as *efficient* or *optimizing* because at this point on the m
 Common characteristics of maturity level 500 include:
 
 - The value of Power BI solutions is prevalent in the organization, and Power BI is widely accepted throughout the organization.
-- Power BI skillsets are highly valued in the organization, and they are recognized by leadership.
-- The internal Power BI community is self-sustaining, with support from the COE. The community is not over-reliant on key individuals.
+- Power BI skillsets are highly valued in the organization, and they're recognized by leadership.
+- The internal Power BI community is self-sustaining, with support from the COE. The community isn't over-reliant on key individuals.
 - The COE reviews key performance indicators regularly to measure success of implementation and adoption goals.
 - Continuous improvement is a continual priority.
 - Use of automation adds value, improves productivity, or reduces risk for error.
@@ -124,7 +124,7 @@ Common characteristics of maturity level 500 include:
 > [!NOTE]
 > The above characteristics are generalized. When considering maturity levels and designing a plan, you'll want to consider each topic or goal independently. In reality, it's probably not possible to reach level 500 maturity level for every aspect of Power BI adoption for the entire organization. So, assess maturity levels independently per goal. That way, you can prioritize your efforts where they will deliver the most value. The remainder of the articles in this Power BI adoption series present maturity levels on a per-topic basis.
 
-Individuals—and the organization itself—continually learn, change, and improve. So, that means there's no formal end to adoption-related efforts. However, it is common that effort is reduced as higher maturity levels are reached.
+Individuals—and the organization itself—continually learn, change, and improve. So, that means there's no formal end to adoption-related efforts. However, it's common that effort is reduced as higher maturity levels are reached.
 
 The remainder of this article introduces the second and third types of adoption: [user adoption](#user-adoption-stages) and [solution adoption](#solution-adoption-phases).
 
@@ -133,7 +133,7 @@ The remainder of this article introduces the second and third types of adoption:
 
 ## User adoption stages
 
-User adoption measures the extent to which content consumers and self-service content creators are actively using Power BI effectively. Usage statistics alone do not indicate user adoption. User adoption is also concerned with individual user behaviors and practices. The aim is to ensure users engage with Power BI in the correct way and to its fullest extent.
+User adoption measures the extent to which content consumers and self-service content creators are actively using Power BI effectively. Usage statistics alone don't indicate user adoption. User adoption is also concerned with individual user behaviors and practices. The aim is to ensure users engage with Power BI in the correct way and to its fullest extent.
 
 User adoption encompasses how consumers view content, as well as how self-service creators generate content for others to consume.
 
@@ -144,7 +144,7 @@ User adoption occurs on an individual user basis, but it's measured and analyzed
 Common characteristics of stage 1 user adoption include:
 
 - An individual has heard of, or been initially exposed to, Power BI in some way.
-- An individual may have access to Power BI but is not yet actively using it.
+- An individual may have access to Power BI but isn't yet actively using it.
 
 ### User adoption stage 2 – Understanding
 
@@ -164,7 +164,7 @@ Common characteristics of stage 3 user adoption include:
 
 Common characteristics of stage 4 user adoption include:
 
-- An individual actively uses Power BI on a regular basis.
+- An individual actively uses Power BI regularly.
 - An individual understands how to use Power BI in the way in which it was intended, as relevant for their role.
 - An individual modifies their behavior and activities to align with organizational governance processes.
 - An individual's willingness to support organizational processes and change efforts is growing over time, and they become an advocate for Power BI in the organization.
@@ -177,7 +177,7 @@ It's easy to underestimate the effort it takes to progress from stage 2 (underst
 
 ## Solution adoption phases
 
-Solution adoption is concerned with measuring the impact of individual Power BI solutions. It is also concerned with the level of value solutions provide. The scope for evaluating solution adoption is for one set of requirements, like a set of reports or a single Power BI app.
+Solution adoption is concerned with measuring the impact of individual Power BI solutions. It's also concerned with the level of value solutions provide. The scope for evaluating solution adoption is for one set of requirements, like a set of reports or a single Power BI app.
 
 As a solution progresses to phases 3 or 4, expectations to operationalize the solution are higher.
 
@@ -199,33 +199,33 @@ Common characteristics of phase 2 solution adoption include:
 - The solution is functional and meets the basic set of user requirements. There are likely plans to iterate on improvements and enhancements.
 - The solution is deployed to the Power BI service.
 - All necessary supporting components are in place, such as gateways to support scheduled refresh.
-- Users are aware of the solution and show interest in using it. Potentially, it may be a limited preview release, and may not yet be ready to promote to a production [workspace](../collaborate-share/service-create-the-new-workspaces.md).
+- Users are aware of the solution and show interest in using it. Potentially, it may be a limited preview release, and may not yet be ready to promote to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces).
 
 ### Solution phase 3 – Valuable
 
 Common characteristics of phase 3 solution adoption include:
 
 - Target users find the solution is valuable and experience tangible benefits.
-- The solution is promoted to a production [workspace](../collaborate-share/service-create-the-new-workspaces.md).
+- The solution is promoted to a production [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces).
 - Validations and testing occur to ensure data quality, accurate presentation, accessibility, and acceptable performance.
-- Content is [endorsed](../collaborate-share/service-endorse-content.md), when appropriate.
+- Content is [endorsed](/power-bi/collaborate-share/service-endorse-content), when appropriate.
 - Usage metrics for the solution are actively monitored.
 - User feedback loops are in place to facilitate suggestions and improvements that can contribute to future releases.
 - Solution documentation is generated to support the needs of information consumers (such as data sources used or how metrics are calculated), and help future creators (such as documenting any future maintenance or planned enhancements).
 - Ownership and subject matter experts for the content is clear.
-- Report branding and theming are in place, and they are inline with governance guidelines.
+- Report branding and theming are in place, and they're inline with governance guidelines.
 
 ### Solution phase 4 – Essential
 
 Common characteristics of phase 4 solution adoption include:
 
 - Target users actively and routinely use the solution, and it's considered essential for decision-making purposes.
-- The solution resides in a [production workspace](../create-reports/deployment-pipelines-overview.md) well-separated from development and test content. Change management and release management is carefully controlled due to the impact of changes.
-- A subset of users regularly provide feedback to ensure the solution continues to meet requirements.
+- The solution resides in a [production workspace](/power-bi/create-reports/deployment-pipelines-overview) well-separated from development and test content. Change management and release management are carefully controlled due to the impact of changes.
+- A subset of users regularly provides feedback to ensure the solution continues to meet requirements.
 - Expectations for the success of the solution are clear and are measured.
 - Expectations for support of the solution are clear, especially if there are service level agreements.
 - The solution aligns with organizational governance guidelines and practices.
-- Most content is [certified](../collaborate-share/service-endorse-content.md) since it's critical in nature.
+- Most content is [certified](/power-bi/collaborate-share/service-endorse-content) since it's critical in nature.
 - Formal user acceptance testing for new changes may occur, particularly for IT-managed content.
 
 ## Next steps

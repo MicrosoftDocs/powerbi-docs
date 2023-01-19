@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
 ms.custom: contperf-fy21q1, intro-get-started
-ms.date: 02/14/2022
+ms.date: 01/18/2023
 ---
 
 # Get started with deployment pipelines
@@ -16,7 +16,10 @@ ms.date: 02/14/2022
 
 This article walks you through the basic settings required for using deployment pipelines in Power BI service. It's recommended to read the [deployment pipelines introduction](deployment-pipelines-overview.md), before you proceed.
 
-In a deployment pipeline, one workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
+You can also complete the [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines) Learn module, which shows how to create a deployment pipeline.
+
+>[!NOTE]
+>In a deployment pipeline, one workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
 
 ## Accessing deployment pipelines
 
@@ -28,7 +31,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
     * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
 
-* You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+* You're an admin of a [workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 >[!NOTE]
 > You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.
@@ -39,7 +42,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 You can create a pipeline from the deployment pipelines tab, or from a workspace.
 
-After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access). Pipeline access enables users to view, share, edit, and delete the pipeline.
+After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given access to the pipeline and will become [pipeline admins](deployment-pipelines-process.md#permissions). Pipeline access enables users to view, share, edit, and delete the pipeline.
 
 ### Create a pipeline from the deployment pipelines tab
 
@@ -51,7 +54,7 @@ To create a pipeline from the deployment pipelines tab, do the following:
 
 ### Create a pipeline from a workspace
 
-You can create a pipeline from an existing workspace, providing you're the admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
+You can create a pipeline from an existing workspace, providing you're the admin of a [workspace](../collaborate-share/service-create-the-new-workspaces.md).
 
 1. From the workspace, select **Create a pipeline**.
 
@@ -80,20 +83,29 @@ You can also use the [deployment pipelines REST APIs](/rest/api/power-bi/pipelin
 
 If you already have a workspace that you'd like to use with a specific stage, instead of deploying you can [assign](deployment-pipelines-assign.md) that workspace to the appropriate stage.
 
->[!NOTE]
->To deploy a paginated report, you'll need a [capacity that supports paginated reports](./../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-).
-
-When deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
+When you're deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
 
 Once the deployment is complete, refresh the dataset. For more information, see [deploying content to an empty stage](deployment-pipelines-process.md#deploying-content-to-an-empty-stage).
 
-### Deploying all content
+### Deploying options
+
+Deployment pipelines offer three options when it comes to deploying your Power BI content:
+
+* [Deploying all content](#deploying-all-content) - Deploy all your Power BI content to the target stage.
+
+* [Selective deployment](#selective-deployment) - Select which Power BI content to deploy to the target stage.
+
+* [Backwards deployment](#backwards-deployment) - Deploy your content to a previous stage in the pipeline.
+
+After you choose how to deploy your Power BI content, you can [Review your deployment and leave a note](#review-your-deployment-and-leave-a-note).
+
+#### Deploying all content
 
 Select the stage to deploy from and then select the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
 
 :::image type="content" source="media/deployment-pipelines-get-started/deploy.png" alt-text="A screenshot showing the deploy button for the development and test stages in a deployment pipeline." lightbox="media/deployment-pipelines-get-started/deploy.png":::
 
-### Selective deployment
+#### Selective deployment
 
 To deploy only specific items, select the **Show more** link, and then select the items you wish to deploy. When clicking the deploy button, only the selected items are deployed to the next stage.
 
@@ -105,7 +117,7 @@ Since dashboards, reports, datasets and dataflows are related and have dependenc
 > * You can't deploy a Power BI item to the next stage, if the items it's dependent on doesn't exist in the stage you are deploying to. For example, deploying a report without a dataset will fail, unless the dataset already exists in the target stage.
 > * You might get unexpected results if you choose to deploy a Power BI item without the item it's dependent on. This can happen when a dataset or a dataflow in the target stage, has changed and is no longer identical to the one in the stage you're deploying from.
 
-### Backwards deployment
+#### Backwards deployment
 
 You can choose to deploy to a previous stage, for example in a scenario where you assign an existing workspace to a production stage and then deploy it backwards, first to the test stage, and then to the development one.
 
@@ -113,9 +125,17 @@ Deploying to a previous stage works only if the previous stage is empty. When de
 
 :::image type="content" source="media/deployment-pipelines-get-started/deploy-back.png" alt-text="A screenshot showing the deploy to previous stage button, available from the test or production stage menus." lightbox="media/deployment-pipelines-get-started/deploy-back.png":::
 
+### Review your deployment and leave a note
+
+After selecting which content to deploy, a pop-up window lists all the items you're about to deploy. You can review the list and add a note to the deployment. Adding a note is optional, but it is highly recommended as the notes are added to the [deployment history](deployment-pipelines-history.md). With a note for each deployment, reviewing the history of your pipelines becomes more meaningful.
+
+To leave a note, expand the **Add a note** option and write your note in the text box. When you're ready to deploy, select **Deploy**.
+
+:::image type="content" source="media/deployment-pipelines-get-started/add-note.png" alt-text="A screenshot showing the deployment pop-up window, with the Add a note option expanded.":::
+
 ## Step 4 - Create deployment rules
 
-When working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
+When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.
 
 When you deploy content between pipeline stages, configuring deployment rules enables you to allow changes to content, while keeping some settings intact. For example, if you want a dataset in a production stage to point to a production database, you can define a rule for this. The rule is defined in the production stage, under the appropriate dataset. Once the rule is defined, content deployed from test to production, will inherit the value as defined in the deployment rule, and will always apply as long as the rule is unchanged and valid.
 
@@ -135,15 +155,15 @@ You can configure data source rules and parameter rules. The following table lis
 
 To create a deployment rule, follow the steps in this section. After you create all the deployment rules you need, deploy the datasets with the newly created rules from the source stage to the target stage where the rules were created. Your rules will not apply until you deploy the datasets from the source to the target stage.
 
-1. In the pipeline stage you want to create a deployment rule for, select **Deployment settings**.
+1. In the pipeline stage you want to create a deployment rule for, select **Deployment rules**.
 
-    :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment settings button, located in the deployment settings.":::
+    :::image type="content" source="media/deployment-pipelines-get-started/deployment-settings-screenshot.png" alt-text="A screenshot of the deployment rules button, located in the deployment rules.":::
 
-2. You can set rules to **dataflows**, **datasets**, **datamarts** and **paginated reports**. In the Deployment settings pane, select the type of rule you want to set.
+2. You can set rules to **dataflows**, **datasets**, **datamarts** and **paginated reports**. To find the Power BI item you want to set a rule for, use the search functionality or filter functionalities.
 
     :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules.png" alt-text="A screenshot of the deployment rules pane, showing that you can set rules for dataflows, datasets, datamarts and paginated reports.":::
 
-3. Select the dataflow, dataset or paginated report you want to create a rule for.
+3. Select the dataflow, dataset, datamart or paginated report you want to create a rule for.
 
     :::image type="content" source="media/deployment-pipelines-get-started/deployment-rules-selection.png" alt-text="A screenshot of the deployment rules pane, showing two datasets in the datasets tab. To configure a rule select an item from one of the tabs.":::
 
@@ -188,36 +208,27 @@ This section lists the limitations for the deployment rules.
 
 * If the parameter defined in a rule is changed or removed from the item it points to in the source stage, the rule will not be valid and the deployment will fail.
 
-* After deploying a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
+* After you deploy a paginated report with a data source rule, opening the report using the [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) isn't supported.
 
 >[!NOTE]
->Parameter rules are not supported for paginated reports.
+>Parameter rules aren't supported for paginated reports.
 
-### Supported data sources for dataflow and dataset rules
+### Supported data sources for rules
 
-Data source rules can only be defined for the following data sources:
+The table below lists the data sources that you can define rules for. For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
 
-* Azure Analysis Services
-
-* Azure Synapse
-
-* SQL Server Analysis Services (SSAS)
-
-* Azure SQL Server
-
-* SQL server
-
-* Odata Feed
-
-* Oracle
-
-* SapHana (only supported for import mode; not direct query mode)
-
-* SharePoint
-
-* Teradata
-
-For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).
+|Data source  |Dataset  |Dataflow  |Paginated report |
+|---------|---------|---------|---|
+|Azure Analysis Services |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Azure Synapse     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SQL Server Analysis Services (SSAS) |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Azure SQL Server |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SQL server     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|Odata Feed     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/no.png" alt-text="No."::: |
+|Oracle     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
+|SapHana (only supported for import mode; not direct query mode) |         |         |   |
+|SharePoint     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/no.png" alt-text="No."::: |
+|Teradata     |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |:::image type="content" source="../media/yes.png" alt-text="Yes."::: |
 
 ## Step 5 - Deploy content from one stage to another
 
@@ -256,6 +267,14 @@ When two sequential stages aren't the same, a **compare** link appears underneat
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
+The comparison is designed to help you understand the difference between the stages. In the comparison display, items are arranged according to the logic listed below.
+
+1. The source workspace items are ordered alphabetically withing groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports and lastly dashboards.
+
+2. The target workspace is ordered according to the source workspace. Each item resides in the same row as its equivalent item in the source stage.
+
+3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
+
 :::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
 
 ## Overriding content
@@ -273,6 +292,9 @@ You can learn more about [which items are copied to the next stage](deployment-p
 
 >[!div class="nextstepaction"]
 >[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
 
 >[!div class="nextstepaction"]
 >[Understand the deployment pipelines process](deployment-pipelines-process.md)

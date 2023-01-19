@@ -7,14 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 10/28/2022
 LocalizationGroup: Create reports
 ---
 # Create tooltips based on report pages
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-You can create visually rich **report tooltips** that appear when you hover over visuals, based on report pages you create in **Power BI Desktop** and the **Power BI service**. By creating a report page that serves as your tooltip, your custom tooltips can include visuals, images, and any other collection of items you create in the report page. 
+You can create visually rich **report tooltips** that appear when you hover over visuals, based on report pages you create in **Power BI Desktop** and the **Power BI service**. By creating a report page that serves as your tooltip, your custom tooltips can include visuals, images, and any other collection of items you create in the report page.
+
+Just getting started modifying tooltips? Check out [Customize tooltips](desktop-custom-tooltips.md).
 
 ![Screenshot of report tooltips for Power BI.](media/desktop-tooltips/desktop-tooltips-00a.png)
 

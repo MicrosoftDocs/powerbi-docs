@@ -142,4 +142,4 @@ Use the following tips to help design your paginated reports in Power BI Report 
  
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  

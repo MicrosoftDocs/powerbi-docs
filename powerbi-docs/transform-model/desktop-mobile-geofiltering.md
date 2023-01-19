@@ -30,7 +30,7 @@ For example, say you're a sales manager traveling to meet customers, and you'd l
 4. Continue setting geographic data categories for any other fields in the model. 
    
    > [!NOTE]
-   > You can set multiple columns for each data category in a model, but if you do the model can't filter for geography in the Power BI mobile app. To use geographic filtering in the mobile apps, set only one column for each data category &#151; for example, only one **City** column, one **State or Province** column, and one **Country** column. 
+   > You can set multiple columns for each data category in a model, but if you do the model can't filter for geography in the Power BI mobile app. To use geographic filtering in the mobile apps, set only one column for each data category &#151; for example, only one **City** column, one **State or Province** column, and one **Country or Region** column. 
    > 
    > 
 

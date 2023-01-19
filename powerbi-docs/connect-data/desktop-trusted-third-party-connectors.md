@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 04/3/2019
+ms.date: 09/23/2022
 LocalizationGroup: Connect to data
 ---
 # Trusted third-party connectors

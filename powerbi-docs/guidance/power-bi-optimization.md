@@ -1,13 +1,13 @@
 ---
 title: Optimization guide for Power BI
-description: Optimization guide for Power BI.
-author: peter-myers
-ms.author: v-petermyers
-ms.reviewer: maroche
+description: This article provides guidance that enables developers and administrators to produce and maintain optimized Power BI solutions. You can optimize your solution at different architectural layers.
+author: kfollis
+ms.author: kfollis
+ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/17/2022
+ms.date: 12/15/2022
 ---
 
 # Optimization guide for Power BI
@@ -37,7 +37,7 @@ Power BI visualizations can be dashboards, Power BI reports, or Power BI paginat
 
 It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your dataset enforces dynamic [row-level security (RLS)](../enterprise/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
 
-When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to back-end cores on the fly.
+When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to v-cores on the fly.
 
 As the name suggests, retrieving the data from the cache provides better and more consistent performance than relying on the data source. One way to take advantage of this functionality is to have dashboards be the first landing page for your users. Pin often-used and highly requested visuals to the dashboards. In this way, dashboards become a valuable "first line of defense", which delivers consistent performance with less load on the capacity. Users can still click through to a report to analyze details.
 
@@ -78,7 +78,7 @@ You can optimize the Power BI environment by configuring capacity settings, sizi
 
 ### Capacity settings
 
-When using capacities—available with Power BI Premium (P SKUs), Premium Per User (PPU) licenses, or Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md). For guidance on how to optimize your capacity, see [Optimizing Premium capacities](../enterprise/service-premium-capacity-optimize.md).
+When using capacities—available with Power BI Premium (P SKUs), Premium Per User (PPU) licenses, or Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium Gen2 capacities](../enterprise/service-premium-capacity-manage-gen2.md).
 
 ### Gateway sizing
 
@@ -95,7 +95,7 @@ Network latency can impact report performance by increasing the time required fo
 
 When users from a tenant access the Power BI service, their requests always route to this region. As requests reach the Power BI service, the service may then send additional requests—for example, to the underlying data source, or a data gateway—which are also subject to network latency.
 
-Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Preferably, they reside within the same region. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
+Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI capacity as close as possible. Preferably, they reside within the same region. If network latency is an issue, try locating gateways and data sources closer to your Power BI capacity by placing them inside cloud-hosted virtual machines.
 
 ## Monitoring performance
 

@@ -8,11 +8,11 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 06/01/2022
+ms.date: 09/23/2022
 LocalizationGroup: Administration
 ---
 
-# Export and sharing admin settings
+# Export and sharing tenant settings
 
 These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
@@ -149,11 +149,19 @@ Users in the organization can use the export report to file API to export report
 
 Allow users in this org to certify datasets, dataflows, reports, and apps. See [Enable content certification](service-admin-setup-certification.md) for details.
 
-## Email Subscriptions
+## Create email subscriptions
 
-Users in the organization can create email subscriptions. Learn more about [subscriptions](../consumer/end-user-subscribe.md).
+Users can create email subscriptions to reports and dashboards. Learn more about [subscriptions](../consumer/end-user-subscribe.md).
 
-![Enable email subscriptions](media/service-admin-portal-export-sharing/power-bi-manage-email-subscriptions.png)
+![Screenshot of Enable email subscriptions tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-email-subscriptions.png)
+
+## Allow email subscriptions to be sent to external users 
+
+The **Allow email subscriptions to be sent to external users** setting helps organizations choose whether external users can be included as recipients of email subscriptions.
+
+External users are users outside of the organization that have not been added as Azure Active Directory business-to-business (B2B) guest users. If this setting is turned off, an external user who isn't already a guest user in the organization can't be included as a recipient of an email subscription.
+
+![Screenshot of Allow email subscriptions to be sent to external users tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-external-user-email-subscriptions.png)
 
 ## Featured content
 
@@ -241,11 +249,13 @@ Disabling this switch effectively stops users from publishing new composite mode
 >[!NOTE]
 > Live connections to Power BI datasets are not affected by this switch, nor are live or DirectQuery connections to Azure Analysis Services. These will continue to work regardless of whether the setting is enabled or disabled. In addition, any published reports that leverage a composite model on a Power BI dataset will continue to work even if the setting has been disabled after they were published.
 
-## External sharing
+## Allow guest users to work with shared datasets in their own tenants
 
-This setting is no longer operative. It has no effect, either enabled or disabled, and can be disregarded completely.
+When this setting is turned on, Azure AD B2B guest users of datasets shared with them by users in your organization will be able to access and build on those datasets in their own tenant. See [Use in-place dataset sharing to enable external users to view and share datasets in their own tenants (preview) - Admin info](../collaborate-share/service-dataset-external-org-share-admin.md) for detailed information.
 
-![Screenshot of the no-longer-functional external sharing tenant setting.](media/service-admin-portal-export-sharing/power-bi-admin-tenant-settings-external-sharing.png)
+## Allow specific users to turn on external data sharing
+
+As a Power BI admin, you can specify which users or user groups in your organization can share datasets externally with guests from a different tenant through the in-place mechanism. Disabling this setting prevents any user from sharing datasets externally by blocking the ability of users to turn on external sharing for datasets they own or manage.  See [Use in-place dataset sharing to enable external users to view and share datasets in their own tenants (preview) - Admin info](../collaborate-share/service-dataset-external-org-share-admin.md) for detailed information.
 
 ## Next steps
 

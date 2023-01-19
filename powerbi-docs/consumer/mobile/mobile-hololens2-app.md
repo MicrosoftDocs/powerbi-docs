@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 08/10/2022
 ---
 # Power BI for HoloLens 2 (preview)
 The Power BI app for HoloLens 2 blends your Power BI reports and dashboards with your physical environment to create a 3D, immersive, hands-free experience where you can move through the physical world and get your relevant data when and where you need it.
@@ -61,6 +61,14 @@ If a QR code has been created for a report and attached to an item, such as a pi
 ### Data refresh
 
 Reports and dashboards update while you’re using the app, so if data changes in Power BI while you’re using the app, you’ll see those changes reflected in the reports and dashboards you’re viewing.
+
+## Considerations and limitations
+
+The Power BI app for HoloLens 2 does not currently support the following items:
+* All interactions with reports (filters, slicers, bookmarks, etc.)
+* Power Apps visuals
+* Zebra visuals
+* Access through a proxy
 
 ## Next steps
 

@@ -8,11 +8,11 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 09/19/2022
 LocalizationGroup: Administration
 ---
 
-# Integration admin settings
+# Integration tenant settings
 
 These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
@@ -28,7 +28,7 @@ When enabled, users in the organization can use the ArcGIS Maps for Power BI vis
 
 :::image type="content" source="media/service-admin-portal-integration/admin-integration-use-arcgis-maps-setting.png" alt-text="Screenshot of the use arc gis maps for power b i admin setting.":::
 
-## Use global search for Power BI (Preview)
+## Use global search for Power BI
 
 When enabled, users in the organization can use external search features that rely on Azure Search. See [Navigation for Power BI business users: global search](../consumer/end-user-search-sort.md) for more information.
 
@@ -68,11 +68,17 @@ This setting enables Azure Active Directory (Azure AD) single sign-on (SSO) thro
 
 This feature is important for users who work with reports that require SSO connectivity in DirectQuery mode to data sources deployed in an Azure virtual network (Azure VNet). When you configure SSO for an applicable data source, queries execute under the Azure AD identity of the user that interacts with the Power BI report.
 
-An important security-related consideration is that gateway owners have full control over their on-premises data gateways. This means that it is theoretically possible for a malicious gateway owner to intercept Azure AD SSO tokens as they flow through an on-premises data gateway (this is not a concern for VNet data gateways because they are maintained by Microsoft). 
+An important security-related consideration is that gateway owners have full control over their on-premises data gateways. This means that it's theoretically possible for a malicious gateway owner to intercept Azure AD SSO tokens as they flow through an on-premises data gateway (this isn't a concern for VNet data gateways because they're maintained by Microsoft). 
 
-Because of this possible threat, the Azure AD Single Sign-On feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the **Azure AD Single Sign-On (SSO) for Gateway** tenant setting (shown below) in the Power BI admin portal before data sources can be enabled for Azure AD SSO on an on-premises data gateway. Before enabling the feature, make sure to restrict the ability to deploy on-premises data gateways in your organization to appropriate administrators.  
+Because of this possible threat, the Azure AD single sign-on feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the **Azure AD Single Sign-On (SSO) for Gateway** tenant setting (shown below) in the Power BI admin portal before data sources can be enabled for Azure AD SSO on an on-premises data gateway. Before enabling the feature, make sure to restrict the ability to deploy on-premises data gateways in your organization to appropriate administrators.  
 
 ![Screenshot of Azure AD Single Sign-On (SSO) for Gateway tenant switch.](media/service-admin-portal-integration/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png)
+
+## Power Platform Solutions Integration (Preview)
+
+This setting enables the Power BI/Power Platform Solutions integration from the Power BI side (admin settings also have to be turned on in Power Platform). When the integration is enabled, when Power BI components are created in a Power Apps solution, a special Power BI workspace dedicated to the Power Apps environment is created in Power BI to store copies of the Power BI report and dataset that are being to create the component. For more detail, see [Power BI content management in Power Apps solutions](/power-apps/maker/model-driven-apps/power-bi-content-management-power-apps-solutions) and [About Power BI in Power Apps Solutions](../collaborate-share/service-power-bi-powerapps-integration-about.md).
+
+This setting is on by default. To change the setting, go to the Power BI Admin portal, select **Tenant settings > Integration settings > Power Platform Solutions Integration (Preview)**, and set the toggle as desired.
 
 ## Next steps
 

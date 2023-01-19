@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/14/2021
+ms.date: 10/27/2022
 ---
 
 # Enter data directly in a paginated report in Report Builder - Power BI
@@ -18,8 +18,8 @@ In this article, you learn about a feature in Microsoft Power BI Report Builder 
  
 ## Prerequisites
 
-- To enter data directly in a paginated report, [download and install Power BI Report Builder](https://aka.ms/pbireportbuilder). 
-- To save your paginated report to the Power BI service, you need a [Power BI Pro account](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license, and write access to a workspace in a [Power BI Premium capacity](../enterprise/service-premium-what-is.md).
+
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 - To save your paginated report to a report server, you need permissions to [edit the RsReportServer.config file](#upload-the-paginated-report-to-a-report-server).
 
 ## Create a data source and dataset
@@ -123,7 +123,7 @@ To see the actual values and preview the report, you run it.
 
 ## Upload the paginated report to the Power BI service
 
-Now that paginated reports are supported in the Power BI service, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md) for details.
+Now that paginated reports are supported in the Power BI service, you can upload your paginated report to any workspace. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md) for details.
 
 ## Upload the paginated report to a report server
 
@@ -145,5 +145,5 @@ That’s it – you can now publish reports that use this new functionality to y
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
 - [What is Power BI Report Server?](../report-server/get-started.md)

@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/19/2022
+ms.date: 10/12/2022
 ---
 
 # Add drill-down support
@@ -113,12 +113,12 @@ export class Visual implements IVisual {
         // ...
     }
 
-    private static parseSettings(dataView: DataView): VisualSettings {
-        return <VisualSettings>VisualSettings.parse(dataView);
-    }
-
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
-        return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
+    /**
+     * Returns properties pane formatting model content hierarchies, properties and latest formatting values, Then populate properties pane.
+     * This method is called once each time we open the properties pane or when the user edits any format property. 
+     */
+    public getFormattingModel(): powerbi.visuals.FormattingModel {
+        return this.formattingSettingsService.buildFormattingModel(this.formattingSettings);
     }
 }
 ```
@@ -134,19 +134,20 @@ export class Visual implements IVisual {
 
     constructor(options: VisualConstructorOptions) {
         console.log('Visual constructor', options);
+        this.formattingSettingsService = new FormattingSettingsService();
         this.target = options.element;
         this.updateCount = 0;
 
-        const new_p: HTMLElement = document.createElement("p");
-        new_p.appendChild(document.createTextNode("Hierarchy level:"));
-        const new_em: HTMLElement = document.createElement("em");
-        this.textNode = document.createTextNode(this.updateCount.toString());
-        new_em.appendChild(this.textNode);
-        new_p.appendChild(new_em);
-        this.target.appendChild(new_p);
-
-        this.div = document.createElement("div"); // <== CREATE DIV ELEMENT
-        this.target.appendChild(this.div);
+        if (document) {
+            const new_p: HTMLElement = document.createElement("p");
+            new_p.appendChild(document.createTextNode("Update count:"));
+            const new_em: HTMLElement = document.createElement("em");
+            this.textNode = document.createTextNode(this.updateCount.toString());
+            new_em.appendChild(this.textNode);
+            new_p.appendChild(new_em);
+            this.div = document.createElement("div"); // <== CREATE DIV ELEMENT
+            this.target.appendChild(new_p);
+        }
     }
 }
 ```
@@ -158,7 +159,7 @@ export class Visual implements IVisual {
     // ...
 
     public update(options: VisualUpdateOptions) {
-        this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
         console.log('Visual update', options);
 
         const dataView: DataView = options.dataViews[0];
@@ -246,12 +247,11 @@ To create context menu, save `host` object in the properties of the visual and c
 
 import "core-js/stable";
 import "./../style/visual.less";
-// imports
+// default imports
 
-import powerbiVisualsApi from "powerbi-visuals-api";
-import ISelectionManager = powerbiVisualsApi.extensibility.ISelectionManager;
-import ISelectionId = powerbiVisualsApi.visuals.ISelectionId;
-import ISelectionIdBuilder = powerbiVisualsApi.visuals.ISelectionIdBuilder;
+import IVisualHost = powerbi.extensibility.visual.IVisualHost;
+import ISelectionManager = powerbi.extensibility.ISelectionManager;
+import ISelectionId = powerbi.visuals.ISelectionId;
 
 export class Visual implements IVisual {
     // visual properties
@@ -283,7 +283,7 @@ Change the body of `forEach` function callback to:
 ```typescript
     categoricalDataView.categories[categoricalDataView.categories.length - 1].values.forEach( (category: powerbi.PrimitiveValue, index: number) => {
         // create selectionID for each category value
-        let selectionID: ISelectionID = this.host.createSelectionIdBuilder()
+        let selectionID: ISelectionId = this.host.createSelectionIdBuilder()
             .withCategory(categoricalDataView.categories[0], index)
             .createSelectionId();
 
@@ -439,7 +439,7 @@ export class Visual implements IVisual {
     }
 
     public update(options: VisualUpdateOptions) {
-        this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
         console.log('Visual update', options);
 
         const dataView: DataView = options.dataViews[0];

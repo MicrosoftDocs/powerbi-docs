@@ -12,7 +12,7 @@ ms.date: 03/10/2022
 LocalizationGroup: Administration
 ---
 
-# Q&A admin settings
+# Q&A tenant settings
 
 These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 

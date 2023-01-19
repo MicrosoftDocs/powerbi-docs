@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/07/2022
+  ms.date: 12/15/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -39,21 +39,21 @@ highlightedContent:
       itemType: concept
       url: developer/embedded/export-to.md
     # Card
-    - title: Protect sensitive data with data loss prevention policies
-      itemType: concept
-      url: enterprise/service-security-dlp-policies-for-power-bi.md
-    # Card
-    - title: Get your data on the go with Power BI mobile apps
-      itemType: learn
-      url: /learn/modules/explore-power-bi-mobile-apps
-    # Card
-    - title: Create sparklines in a table or matrix
+    - title: Edit relationships in the Properties pane
       itemType: how-to-guide
-      url: create-reports/power-bi-sparklines-tables.md
+      url: /power-bi/transform-model/desktop-create-and-manage-relationships#edit-a-relationship
     # Card
-    - title: Study Power BI start to finish on Microsoft Learn 
+    - title: "Power BI Premium features"
+      itemType: concept
+      url: enterprise/service-premium-features.md
+    # Card
+    - title: Create submetrics that roll up to metrics
+      itemType: how-to-guide
+      url: create-reports/service-metrics-submetrics.md
+    # Card
+    - title: Study Power BI start to finish on Microsoft training 
       itemType: learn
-      url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+      url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -94,9 +94,9 @@ conceptualContent:
     # Card
     - title: Enterprise
       links:
-        - url: enterprise/service-premium-gen2-what-is.md
+        - url: enterprise/service-premium-features.md
           itemType: overview
-          text: What is Power BI Premium Gen2?
+          text: Power BI Premium features
         - url: enterprise/service-admin-power-bi-security.md
           itemType: concept
           text: Security
@@ -211,7 +211,7 @@ conceptualContent:
           text: Share dashboards and reports
         - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
-          text: Create the new workspaces
+          text: Create workspaces
         - url: collaborate-share/service-microsoft-teams-app.md
           itemType: how-to-guide
           text: Add the Power BI app to Microsoft Teams
@@ -236,22 +236,6 @@ conceptualContent:
         url: collaborate-share/index.yml
         text: See more
     # Card
-    - title: Power BI Premium Gen2
-      links:
-        - url: enterprise/service-premium-gen2-what-is.md
-          itemType: overview
-          text: What is Power BI Premium Gen2?
-        - url: enterprise/service-premium-concepts.md
-          itemType: concept
-          text: Understanding Power BI Premium Gen2
-        - url: enterprise/service-premium-gen2-metrics-app.md
-          itemType: concept
-          text: Use the Gen2 metrics app
-      # footerLink (optional)
-      footerLink:
-        url: enterprise/index.yml
-        text: See more
-    # Card
     - title: Power BI in the mobile apps
       links:
         - url: consumer/mobile/mobile-apps-for-mobile-devices.md
@@ -260,7 +244,7 @@ conceptualContent:
         - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
           itemType: quickstart
           text: Explore dashboards and reports
-        - url: /learn/modules/explore-power-bi-mobile-apps
+        - url: /training/modules/explore-power-bi-mobile-apps
           itemType: learn
           text: Get data on the go with the mobile apps
       # footerLink (optional)
@@ -270,15 +254,15 @@ conceptualContent:
     # Card
     - title: Best practices guidance
       links:
-        - url: guidance/overview.md
-          itemType: overview
-          text: Guidance overview
-        - url: guidance/star-schema.md
+        - url: guidance/powerbi-adoption-roadmap-overview.md
           itemType: concept
-          text: Star schemas
-        - url: guidance/import-modeling-data-reduction.md
+          text: Power BI adoption roadmap
+        - url: guidance/powerbi-implementation-planning-introduction.md
           itemType: concept
-          text: Reduce data model size
+          text: Power BI implementation planning
+        - url: guidance/power-bi-optimization.md
+          itemType: concept
+          text: Optimization guide for Power BI
       # footerLink (optional)
       footerLink:
         url: guidance/index.yml
@@ -289,7 +273,7 @@ conceptualContent:
         - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
           text: Business decision makers
-        - url: /learn/paths/dax-power-bi/
+        - url: /training/paths/dax-power-bi/
           itemType: learn
           text: Get started with DAX
         - url: learning-catalog/learning-catalog-solution-architect.md
@@ -305,15 +289,31 @@ conceptualContent:
         - url: troubleshoot/known-issues/power-bi-known-issues.md
           itemType: overview
           text: Known issues for Power BI features
-        - url: admin/service-interruption-notifications.md
-          itemType: concept
-          text: Service interruption notifications
-        - url: admin/service-support-options.md
+        - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
           itemType: how-to-guide
-          text:  Power BI Pro and Power BI Premium support options
+          text: Troubleshoot refresh scenarios
+        - url: collaborate-share/service-troubleshoot-subscribe.yml
+          itemType: how-to-guide
+          text: Troubleshoot subscribing to reports and dashboards
       # footerLink (optional)
       footerLink:
         url: troubleshoot/index.yml
+        text: See more        
+    # Card
+    - title: Support
+      links:
+        - url: support/service-support-options.md
+          itemType: how-to-guide
+          text: Power BI Pro and Power BI Premium support options
+        - url: support/service-admin-health.md
+          itemType: how-to-guide
+          text: Track Power BI service health in Microsoft 365
+        - url: support/service-admin-region-move.md
+          itemType: how-to-guide
+          text:  Move Power BI to another region
+      # footerLink (optional)
+      footerLink:
+        url: support/index.yml
         text: See more        
 
 # additionalContent section (optional)

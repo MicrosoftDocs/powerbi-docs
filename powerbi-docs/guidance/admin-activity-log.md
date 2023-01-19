@@ -1,7 +1,7 @@
 ---
 title: Access the Power BI activity log
 description: Guidance and sample PowerShell script code to work with the Power BI activity log.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
@@ -53,7 +53,7 @@ To use the sample, you must meet the following requirements:
 #            The Power BI activity log records events using UTC time; so add or subtract days according to your global location.
 
 # SCENARIO: Sample code fragment to retrieve a limited number of attributes for specific events for specific user report viewing activity.
-# You need to get user's Azure Active Directory (AAD) object ID. You can use this Azure AD cmdlet: https://docs.microsoft.com/powershell/module/azuread/get-azureaduser?view=azureadps-2.0
+# You need to get user's Azure Active Directory (AAD) object ID. You can use this Azure AD cmdlet: https://learn.microsoft.com/powershell/module/azuread/get-azureaduser?view=azureadps-2.0
 
 # Dates need to be entered using ISO 8601 format; adjust dates to span no more than 24 hours.
 $a=Get-PowerBIActivityEvent -StartDateTime '2020-06-23T19:00:00.000' -EndDateTime '2020-06-23T20:59:59.999' -ActivityType 'ViewReport' -User [USER AAD ObjectId GUID] | ConvertFrom-Json

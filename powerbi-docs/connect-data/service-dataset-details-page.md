@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 07/05/2022
+ms.date: 09/20/2022
 LocalizationGroup: Share your work
 ---
 # Dataset details
@@ -115,7 +115,25 @@ When you select tables or columns, they will be displayed on the **Table preview
 
    ![Screenshot showing table preview page.](./media/service-dataset-details-page/dataset-details-page-table-preview-page.png)
 
-Table preview may not show all of the data you've selected. To see more, you can export or customize the newly created table (see below).
+Table preview may not show all of the data you've selected. To see more, you can [export](#exporting-data) or [customize](#customizing-the-data) the newly created table (see below).
+
+You can resize column widths using a drag handle next to the column headers. Resizing columns can make the table preview more readable, especially for long column input values.
+
+Table preview without column resizing
+
+![Screenshot showing table preview with unresized columns.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-unresized-columns.png)
+
+Table preview with columns resized
+
+![Screenshot showing table preview with columns resized.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-resized-columns.png)
+
+**Show query**
+
+Show query enables you to copy the DAX query used to create the table preview to the clipboard. This makes it possible to reuse the query for future actions.
+
+![Screenshot showing table preview with the query displayed.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-show-query.png)
+
+**Back**
 
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 

@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 10/27/2022
 ---
 
 # Sample Power BI paginated reports
@@ -19,10 +19,8 @@ This article provides information and links to several sample Power BI paginated
 
 ## Prerequisites
 
-- You can share these reports online, just as they are, with no editing. To do so, you need a Power BI Pro license. Sign up for a [free trial of a Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license).
-- You also need write access to a Power BI workspace in a [Premium capacity](../enterprise/service-premium-what-is.md), or a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
-- To edit these reports, you need to [install Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center.
-- OK, you're ready to download these sample paginated reports from GitHub! You don't need a GitHub account. 
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+- Now you're ready to download these sample paginated reports from GitHub. You don't need a GitHub account. 
 
 ## Download the reports
 
@@ -63,6 +61,22 @@ Data source: Included in the .rdl file
 :::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of sample Power BI paginated report labels.":::
 
 This is a self-contained paginated report sample. It's a multi-column report perfectly sized to fit the print layout of the mailing label template. 
+
+### View the report
+
+When you run this report in Report Builder, it appears to have only one column. 
+
+- Select **Print Layout** to see what it will look like when you print it. 
+
+    :::image type="content" source="media/paginated-reports-samples/report-builder-print-layout.png" alt-text="Screenshot of Print Layout option in Report Builder.":::
+
+Likewise, when you upload this report to the Power BI service and open it there, it opens with only one column. 
+
+- Select **View** > **Print Layout** to see the multicolumn view.
+
+    :::image type="content" source="media/paginated-reports-samples/paginated-view-print-layout.png" alt-text="Screenshot of View menu, Print Layout option.":::
+
+### Report characteristics
 
 Label reports are simple, but have a few unique characteristics to create a paginated label:
 

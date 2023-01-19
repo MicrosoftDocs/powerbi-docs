@@ -1,6 +1,6 @@
 ---
 title: Use an alternate email address
-description: Use an alternate email address
+description: Learn how to set up an alternate email address from Microsoft 365 or PowerShell.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
@@ -30,9 +30,9 @@ To specify an alternate address in Microsoft 365, follow these steps.
 
 1. In the **Contact details** section, select **Edit**.
 
-    If you cannot edit your details, this means your admin manages your email address. Contact your admin to update your email address.
+    If you can't edit your details, an admin manages your email address. Contact your admin to update your alternate email address.
 
-    ![Screenshot of the Contact details dialog, showing how to specify an alternate email.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+    ![Screenshot of the contact details dialog, the edit icon and alternate email are highlighted.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
 1. In the **Alternate email** field, enter the email address you'd like Microsoft 365 to use for Power BI updates.
 
@@ -48,7 +48,7 @@ Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.co
 
 To capture an Azure AD embed token for Power BI, you can use one of three different types of email addresses:
 
-* The main email address associated with a user’s Azure AD account
+* The main email address associated with your Azure AD account
 
 * The UserPrincipalName (UPN) email address
 
@@ -58,10 +58,10 @@ Power BI selects which email to use based on the following sequence:
 
 1. If the mail attribute in the Azure AD user object is present, then Power BI uses that mail attribute for the email address.
 
-1. If the UPN email is *not* a **\*.onmicrosoft.com** domain email address (the information after the "\@" symbol), then Power BI uses that mail attribute for the email address.
+1. If the UPN email isn't a **\*.onmicrosoft.com** domain email address (the information after the "\@" symbol), then Power BI uses that mail attribute for the email address.
 
 1. If the *other email address* array attribute in the Azure AD user object is present, then Power BI uses the first email in that list (since there can be a list of emails in this attribute).
 
 1. If none of the above conditions are present, then Power BI uses the UPN address.
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)

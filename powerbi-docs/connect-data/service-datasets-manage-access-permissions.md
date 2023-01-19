@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/26/2022
+ms.date: 08/18/2022
 LocalizationGroup: Share your work
 ---
 # Manage dataset access permissions (preview)
@@ -43,11 +43,13 @@ These actions will open the datasets manage permissions page. The manage permiss
 
 The direct access tab lists users who have been granted access. For each user, you can see their email address and the permissions they have.
 
-To modify a user’s permissions, select **More options (…)** and choose one of the available options.
+* To modify a user’s permissions, select **More options (…)** and choose one of the available options.
 
-To grant dataset access to another user, click **+ Add user**. The [Share dataset dialog](service-datasets-share.md) will open.
+    ![Screenshot of modifying permissions from the direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-modify.png)
 
-![Screenshot of direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab.png)
+* To grant dataset access to another user, click **+ Add user**. The [Share dataset dialog](service-datasets-share.md) will open.
+
+    ![Screenshot of granting access permissions from the direct access tab on the dataset manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-add-user.png)
 
 ### Managing permissions granted through an app
 
@@ -76,7 +78,8 @@ The shared report links tab lists [links that have been created to shared report
 
 ## Next steps
 
-* [Share access to a dataset](service-datasets-share.md)
-* [Use datasets across workspaces](service-datasets-across-workspaces.md)
+* [Dataset permissions](./service-datasets-permissions.md)
+* [Share access to a dataset](./service-datasets-share.md)
+* [Use datasets across workspaces](./service-datasets-across-workspaces.md)
 * [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

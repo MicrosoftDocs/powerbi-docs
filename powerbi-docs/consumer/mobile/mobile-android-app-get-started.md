@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/21/2022
+ms.date: 11/15/2022
 ms.custom: intro-get-started
 ---
 # Get started with the Power BI mobile app on Android devices
@@ -30,7 +30,7 @@ Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile
 
 [Download the Power BI for Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
   
-Power BI can run on a number of different Android devices, running the Android 6.0 operating system or later. To check on your device, go to **Settings** > **About device** > **Android version**. 
+Power BI can run on a number of different Android devices, running the Android 8.0 operating system or later. To check on your device, go to **Settings** > **About device** > **Android version**. 
 
 **Start when you open the app**    
 Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android device. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.

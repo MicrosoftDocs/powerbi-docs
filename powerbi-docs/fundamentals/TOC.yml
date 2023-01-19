@@ -30,7 +30,7 @@
     - name: "Understand the Power BI service"
       href: service-basic-concepts.md
     - name: "Ten tips for getting help"
-      href: service-tips-for-finding-help.md
+      href: ../support/service-tips-for-finding-help.md
     - name: Licensing
       items: 
       - name: "What is self-service sign-up and self-service purchase?"

@@ -1,5 +1,5 @@
 ---
-title: The Visual Filters API in Power BI visuals in Power BI embedded analytics for better embedded BI insights
+title: The Visual Filters API for better embedded BI insights
 description: This article discusses how Power BI visuals can filter other visuals. Enable better embedded BI insights using Power BI embedded analytics.
 author: mberdugo
 ms.author: monaberdugo

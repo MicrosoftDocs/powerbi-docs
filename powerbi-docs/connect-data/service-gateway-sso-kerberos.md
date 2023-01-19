@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.custom: contperf-fy22q3
 ms.topic: how-to
-ms.date: 06/14/2022
+ms.date: 11/28/2022
 LocalizationGroup: Gateways
 ---
 
@@ -39,7 +39,7 @@ The steps required for configuring gateway single sign-on are outlined below.
     |----|----|
     | Your Active Directory environment is security hardened. | [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
     | The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. | [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
-    | You don't have Azure AD Connect configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. | [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine) |
+    | You don't have Azure AD Connect with user account synchronization configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. | [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine) |
     | You plan to use an SAP HANA data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
     | You plan to use an SAP BW data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
     | You plan to use a Teradata data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
@@ -58,7 +58,7 @@ To configure SPNs and Kerberos delegation settings, a domain administrator shoul
 
 ### Step 3: Configure the Gateway service account
 
-Option A below is the recommended configuration unless you have Azure AD Connect configured and user accounts are synchronized. In that case option B is recommended.
+Option A below is the required configuration unless you have both Azure AD Connect configured and user accounts are synchronized. In that case, option B is recommended.
 
 #### Option A: Run the gateway Windows service as a domain account with SPN
 
@@ -244,7 +244,7 @@ To complete this configuration step, for each domain that contains Active Direct
 
 Complete this section if:
 
-* You don't have Azure AD Connect configured AND
+* You don't have Azure AD Connect with user account synchronization configured AND
 * The UPN used in Power BI for users does not match the UPN in your local Active Directory environment.
 
 Each Active Directory user mapped in this way needs to have SSO permissions for your data source.
@@ -256,7 +256,7 @@ Each Active Directory user mapped in this way needs to have SSO permissions for 
 1. Set **ADUserNameReplacementProperty** to `SAMAccountName` and then save the configuration file.
 
     > [!NOTE]
-    > Set **ADUserNameReplacementProperty** to `userPrincipalName` to always use the Power BI UPN.
+    > In multi-domain scenarios, you may need to set the **ADUserNameReplacementProperty** to `userPrincipalName` to preserve the domain information of the user.
 
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 12/10/2020
+ms.date: 09/22/2022
 LocalizationGroup: Data from files
 ---
 # Dataflows best practices
@@ -32,13 +32,13 @@ The following table provides a collection of links to articles that describe bes
 |Reusing dataflows     |Patterns, guidance, and use cases         |[Reusing dataflows](/power-query/dataflows/best-practices-reusing-dataflows)         |
 |Large-scale implementations     |Large-scale use and guidance to complement enterprise architecture         |[Data warehousing using dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows)         |
 |Leveraging Enhanced Compute     |Potentially improve dataflow performance up to 25x         |[Enhanced Compute Engine](dataflows-premium-workload-configuration.md#using-the-compute-engine-to-improve-performance)         |
-|Optimizing your workload settings     |Get the most our of your dataflows infrastructure by understanding the levers you can pull to maximize performance         |[Dataflows workload configuration](dataflows-premium-workload-configuration.md)         |
+|Optimizing your workload settings     |Get the most out of your dataflows infrastructure by understanding the levers you can pull to maximize performance         |[Dataflows workload configuration](dataflows-premium-workload-configuration.md)         |
 |Joining and expanding tables     |Creating performant joins         |[Optimize expanding table operations](/power-query/optimize-expanding-table-columns)         |
 |Query folding guidance     |Speeding up transformations using the source system         |[Query folding](/power-query/power-query-folding)         |
 |Using data profiling     |Understand column quality, distribution, and profile         |[Data profiling tools](/power-query/data-profiling-tools)         |
 |Implementing error handling     |Developing robust dataflows resilient to refresh errors, with suggestions         |[Patterns for common errors](/power-query/dealing-with-errors)  </br> [Complex error handling](/power-query/error-handling)      |
 |Use Schema view      |Improve the authoring experience when working with a wide table and performing schema level operations         |[Schema view](/power-query/schema-view)         |
-|Linked tables      |Reusing and referencing transformations         |[Linked Tables](./dataflows-create.md#create-a-dataflow-using-linked-tables)         |
+|Linked tables      |Reusing and referencing transformations         |[Linked Tables](./dataflows-create.md#create-a-dataflow-by-using-linked-tables)         |
 |Incremental refresh      |Load the latest or changed data versus a full reload         |[Incremental refresh](/power-query/dataflows/incremental-refresh)         |
 |||
 

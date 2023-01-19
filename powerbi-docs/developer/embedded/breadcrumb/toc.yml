@@ -1,0 +1,31 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
+- name: Docs
+  href: /
+  topicHref: /
+  items:
+  - name: Power Platform
+    href: /power-platform/
+    topicHref: /power-platform/
+    items:
+    - name: Power BI
+      tocHref: /power-bi/
+      topicHref: /power-bi/
+      items:
+      - name: Developer
+        tocHref: /power-bi/developer/
+        topicHref: /power-bi/developer/index
+        items:
+        - name: Embedded analytics
+          tocHref: /power-bi/developer/embedded/
+          topicHref: /power-bi/developer/embedded/index
+        - name: Power BI visuals
+          tocHref: /power-bi/developer/visuals/
+          topicHref: /power-bi/developer/visuals/index
+        - name: Embedded analytics
+          tocHref: /power-bi/collaborate-share/
+          topicHref: /power-bi/developer/embedded/index
+        - name: Embedded analytics
+          tocHref: /power-bi/enterprise/
+          topicHref: /power-bi/developer/embedded/index

@@ -7,89 +7,44 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.custom: ""
-ms.date: 06/27/2022
+ms.custom: engagement-fy23
+ms.date: 11/18/2022
 ---
 
 # Generate an embed token
 
-[Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authorize your request against the Power BI service.
+:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+
+[Generate token](/rest/api/power-bi/embed-token/generate-token) is a REST API that lets you generate a token for embedding a Power BI report or dataset in a web app or a portal. It can generate a token for a single item or for multiple reports or datasets. The token is used to authorize your request against the Power BI service.
 
 The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials in the app (effective identity).
 
 After successful authentication, access to the relevant data is granted.
 
->[!NOTE]
->Generate token is only applicable when you're [*embedding for your customers*](embed-sample-for-customers.md) (also known as the *app owns data* scenario).
-
-You can use APIs to generate a token for the following items:
-
-* [Dashboards](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
-
-* [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
-
-* [Generate an embed token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token)
-
-* [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
-
-* [Reports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
-
-* [Tiles](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
-
-## Workspace versions
-
-Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. You can learn more about the differences between these workspaces in [new and classic workspace differences](../../collaborate-share/service-new-workspaces.md#new-and-classic-workspace-differences).
-
-When creating an embed token, different workspaces have different considerations and require different permissions.
-
-|                  |*Classic* workspace |*New* workspace|
-|------------------|---------|--------|
-|**Considerations**|<li>The dataset and the item must be in the same workspace</li><li>Service principal can't be used</li>  |The dataset and the item can be in two different *new* workspaces |
-|**Workspace permissions**|The master user must be an admin of the workspace  |The service principal or master user must be at least a member of both workspaces |
-
->[!NOTE]
->
->* You can't create an embed token for [My workspace](../../consumer/end-user-workspaces.md#types-of-workspaces).
->* The word *item* refers to a Power BI item such as a dashboard, tile, Q&A or report.
+> [!NOTE]
+> [Generate token](/rest/api/power-bi/embed-token/generate-token) is the newer, version 2 API that works for both reports and datasets, and single or multiple items. It's preferred over the legacy version 1 APIs. For dashboards and tiles use the V1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) and [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group).
 
 ## Securing your data
 
-If you are handling data from multiple customers, consider these two approaches for securing your data: [*Workspace-based isolation*](embed-multi-tenancy.md) and [*Row-level security-based isolation*](./embedded-row-level-security.md). You can find a detailed comparison between them in [service principal profiles and row level security](embed-multi-tenancy.md#row-level-security).
+If you're handling data from multiple customers, there are two main approaches to securing your data: [*Workspace-based isolation*](embed-multi-tenancy.md) and [*Row-level security-based isolation*](./embedded-row-level-security.md). You can find a detailed comparison between them in [service principal profiles and row level security](embed-multi-tenancy.md#row-level-security).
 
-We recommend using workspace-based isolation with profiles, but if you want to use the RLS approach, review the [RLS considerations and limitations](generate-embed-token.md#row-level-security) at the end of this article.
+We recommend using workspace-based isolation with profiles, but if you want to use the RLS approach, review the [RLS section](generate-embed-token.md#row-level-security) at the end of this article.
 
-## Token permissions
+## Token permissions and security
 
 In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
->[!NOTE]
->The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embed-token/generate-token) API.
-
 ### Access Level
 
-Use the *accessLevel* parameter to determine the user's access level.
-
-* **View** - Grant the user viewing permissions.
-
-* **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
-
-    If you're using the [Generate token for multiple reports, datasets, and target workspaces](/rest/api/power-bi/embed-token/generate-token) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
-
-* **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
-
-    For report creation, you must also supply the *datasetId* parameter.
-
-### Saving a copy of the report
-
-Use the *allowSaveAs* boolean to let users save the report as a new report. This setting is set to *false* by default.
-
-This parameter is only applicable when generating an embed  token for a report.
+* Use the *allowEdit* parameter to grant the user viewing or editing permissions.
+  
+* Add the workspace ID to the embed token to allow the user to create new reports (either *SaveAs* or *CreateNew*) in that workspace.
 
 ### Row Level Security
 
-With [Row Level Security (RLS)](embedded-row-level-security.md), the identity you use can be different from the identity of the service principal or master user you're using to generating the token. By using different identities you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
+With [Row Level Security (RLS)](embedded-row-level-security.md), the identity you use can be different from the identity of the service principal or master user you're using to generating the token. By using different identities, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
 
-If you're using RLS, you can sometimes leave out the user's identity (the *EffectiveIdentity* parameter). This allows the token to have access to the entire database. This method can be used to grant access to users such as admins and managers, who have permission to view the entire dataset. However, you can't use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
+If you're using RLS, you can sometimes leave out the user's identity (the *EffectiveIdentity* parameter). When you don't use the *EffectiveIdentity* parameter, the token has access to the entire database. This method can be used to grant access to users such as admins and managers, who have permission to view the entire dataset. However, you can't use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
 
 The table also shows the considerations and limitation applicable to each RLS type.
 
@@ -103,7 +58,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 |SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property in an effective identity object</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
->Service principals must always provide the following:
+>Service principals must always provide the following information:
 >
 >* An identity for any item with an RLS dataset.
 >* For an SSO dataset, an effective RLS identity with the contextual (SSO) identity defined.
@@ -118,14 +73,36 @@ To embed Power BI report that has a dataset with a Direct Query connection to an
   * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each dataset in the request.
   * For each Single Sign-on (SSO) enabled data source, provide the identity blob for the data source in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity).
 
+## Renew tokens before they expire
+
+Tokens come with a time limit. This means that after embedding a Power BI item, you have a limited amount of time to interact with it. To give your users a continuous experience, [renew (or refresh) the token before it expires](/javascript/api/overview/powerbi/refresh-token).
+
+## Dashboards and tiles
+
+The [Generate token](/rest/api/power-bi/embed-token/generate-token) works for reports and datasets. To generate an embed token for a dashboard or tile, use the version 1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embed-token/dashboards-generate-token-in-group) or [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group) APIs. These APIs generate tokens for only one item at a time. You can't generate a token for multiple items.
+
+For these APIs:
+
+* Use the *accessLevel* parameter to determine the user's access level.
+
+  * **View** - Grant the user viewing permissions.
+
+  * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
+
+  * **Create** - Grant the user permissions to create a new report (only applies when generating an embed token for creating a report).    For report creation, you must also supply the *datasetId* parameter.
+
+* Use the *allowSaveAs* boolean to let users save the report as a new report. This setting is set to *false* by default, and only applies when generating an embed token for a report.
+
 ## Considerations and limitations
 
-For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Azure AD token used to call the `GenerateToken` API. Therefore, if you use the same Azure AD token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
+* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Azure AD token used to call the `GenerateToken` API. Therefore, if you use the same Azure AD token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
+
+* If the dataset and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
+
+* You can't create an embed token for [**My workspace**](../../consumer/end-user-workspaces.md#types-of-workspaces).
 
 ## Next steps
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
-* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-* [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
 * [Embed Power BI content with service principal](embed-service-principal.md)

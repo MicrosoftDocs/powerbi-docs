@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/09/2021
+ms.date: 08/23/2022
 LocalizationGroup: Share your work
 ---
 # Share access to a dataset (preview)
@@ -32,6 +32,7 @@ To share a dataset
 
     ![Screenshot of the Share dataset dialog.](media/service-datasets-share/power-bi-dataset-grant-access-dialog.png)
 
+    * **Allow allow recipients to modify this dataset**: This option allows the recipients to modify the dataset.
     * **Allow recipients to share this dataset**: This option allows the recipients to grant access to other users via sharing.
     * **Allow recipients to build content with the data associated with this dataset**: This option grants the recipients [Build permission](service-datasets-build-permissions.md) on the dataset, which enables them to build new reports and dashboards based on the data associated it.
 
@@ -47,6 +48,7 @@ To monitor, change, or remove user access to your dataset, see [Manage dataset a
 
 ## Next steps
 
+* [Dataset permissions](service-datasets-permissions.md)
 * [Manage dataset access permissions](service-datasets-manage-access-permissions.md)
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)

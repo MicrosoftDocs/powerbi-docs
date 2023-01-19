@@ -8,7 +8,7 @@ ms.custom: video-e2PD8m1Q0vU, video-kOuINwgkEkQ, video-Cle_rKBpZ28
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/10/2021
+ms.date: 08/25/2022
 LocalizationGroup: Dashboards
 ---
 
@@ -215,12 +215,12 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
    allowfullscreen></iframe>
   ```
 
-* This code embeds a tweet and retains, as separate links on the dashboard, links for the AFK podcast, \@GuyInACube's Twitter page, Follow, #analytics, reply, retweet, and like.  Selecting the tile itself takes you to the podcast on Twitter.
+* This code embeds a tweet and retains, as separate links on the dashboard, links for the AFK podcast, \@MeganB's Twitter page, Follow, #analytics, reply, retweet, and like.  Selecting the tile itself takes you to the podcast on Twitter.
   
   ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
   <p lang="en" dir="ltr">Listen to
-  <a href="https://twitter.com/GuyInACube">@GuyInACube</a> talk to
+  <a href="https://twitter.com/MeganB">@MeganB</a> talk to
   us about making videos about Microsoft Business Intelligence
   platform
   <a href="https://t.co/TmRgalz7tv">https://t.co/TmRgalz7tv </a>

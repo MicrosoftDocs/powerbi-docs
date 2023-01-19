@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Self-service content publishing"
 description: "Learn how Power BI self-service content publishing is about publishing content to development, test, and production with deployment pipelines."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -95,14 +95,14 @@ Pipeline user permissions (for who can deploy content with a deployment pipeline
 
 When possible, it's recommended that the existing content creator or owner conduct the deployments. In some situations, permissions are more restricted for the production workspace. In that case, it may be appropriate to coordinate the production deployment with someone else who has permission to deploy to production.
 
-[Pipeline users](../create-reports/deployment-pipelines-process.md#user-with-pipeline-access) who are assigned to the workspace member (or admin) role are allowed to compare stages and deploy content. Assigning pipeline users to this role minimizes permissions issues and allows for a smoother deployment process.
+[Pipeline users](../create-reports/deployment-pipelines-process.md#permissions) who are assigned to the workspace member (or admin) role are allowed to compare stages and deploy content. Assigning pipeline users to this role minimizes permissions issues and allows for a smoother deployment process.
 
 > [!TIP]
 > Keep in mind that workspace roles are set separately for development, test, and production. However, pipeline access is set once for the entire pipeline.
 
 ### Power BI Premium licensing
 
-Power BI deployment pipelines are a Premium feature. There are various [ways to obtain licensing](../create-reports/deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-), depending on whether the content is used for development, test, or production purposes. The scenario diagram depicts use of a Premium (P SKUs, such as P1, P2, P3, P4, or P5) [capacity-based license](../enterprise/service-premium-faq.yml#what-is-power-bi-premium---) for the production workspace, and a Power BI Premium Per User (PPU) [user-based Premium license](../enterprise/service-premium-per-user-faq.yml) for the development and test workspaces. Using PPU licensing for workspaces with very few users (as depicted in the scenario diagram) is a cost-effective way to use Premium features, while keeping them separate from the Premium capacity that's assigned for production workloads.
+Power BI deployment pipelines are a Premium feature. There are various [ways to obtain licensing](../create-reports/deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-), depending on whether the content is used for development, test, or production purposes. The scenario diagram depicts use of a Premium [P SKUs](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) such as P1, P2, P3, P4, or P5 for the production workspace, and a Power BI Premium Per User (PPU) [user-based Premium license](../enterprise/service-premium-per-user-faq.yml) for the development and test workspaces. Using PPU licensing for workspaces with very few users (as depicted in the scenario diagram) is a cost-effective way to use Premium features, while keeping them separate from the Premium capacity that's assigned for production workloads.
 
 ### Deployment settings
 

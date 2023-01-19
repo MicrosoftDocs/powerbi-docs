@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 12/07/2022
 LocalizationGroup: Connect to data
 ---
 
@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 
 You can use the Azure Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spend. The Azure Cost Management connector currently supports customers with a direct [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/).  
 
-The Azure Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements are also not supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Azure Cost Management | Microsoft Docs](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
+The Azure Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements are also not supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
 The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) at the billing account or billing profile levels for Microsoft Customer Agreements. 
 
@@ -101,22 +101,22 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 
 Once you successfully authenticate, a **Navigator** window appears with the following available data tables:
 
-| **Table** | **Description** |
-| --- | --- |
-| **Balance summary** | Summary of the balance for the current billing month for Enterprise Agreements (EA). |
-| **Billing events** | Event log of new invoices, credit purchases, etc. Microsoft Customer Agreement only. |
-| **Budgets** | Budget details to view actual costs or usage against existing budget targets. |
-| **Charges** | A month-level summary of Azure usage, Marketplace charges, and charges billed separately. Microsoft Customer Agreement only. |
-| **Credit lots** | Azure credit lot purchase details for the provided billing profile. Microsoft Customer Agreement only. |
-| **Pricesheets** | Applicable meter rates for the provided billing profile or EA enrollment. |
-| **RI charges** | Charges associated to your Reserved Instances over the last 24 months. This table is in the process of being deprecated, please use RI transactions |
-| **RI recommendations (shared)** | Reserved Instance purchase recommendations based on all your subscription usage trends for the last 30 days. |
-| **RI recommendations (single)** | Reserved Instance purchase recommendations based on your single subscription usage trends for the last 30 days. |
-| **RI transactions** | List of transactions for reserved instances on billing account scope. |
-| **RI usage details** | Consumption details for your existing Reserved Instances over the last month. |
-| **RI usage summary** | Daily Azure reservation usage percentage. |
-| **Usage details** | A breakdown of consumed quantities and estimated charges for the given billing profile on EA enrollment. |
-| **Usage details amortized** | A breakdown of consumed quantities and estimated amortized charges for the given billing profile on EA enrollment. |
+| **Table** | **Account Type** | **Supported Scopes** | **Description** |
+| --- | --- | --- | --- |
+| **Balance summary** |  EA only | EA Enrollment | Summary of the balance for the current billing month for Enterprise Agreements (EA). |
+| **Billing events** |  MCA only | Billing Profile | Event log of new invoices, credit purchases, etc. Microsoft Customer Agreement only. |
+| **Budgets** |  EA, MCA | EA Enrollment,MCA Billing Account,MCA Billing Profile | Budget details to view actual costs or usage against existing budget targets. |
+| **Charges** |  MCA only | MCA Billing Profile | A month-level summary of Azure usage, Marketplace charges, and charges billed separately. Microsoft Customer Agreement only. |
+| **Credit lots** |  MCA only | MCA Billing Profile | Azure credit lot purchase details for the provided billing profile. Microsoft Customer Agreement only. |
+| **Pricesheets** |  EA, MCA | EA Enrollment,MCA Billing Profile | Applicable meter rates for the provided billing profile or EA enrollment. |
+| **RI charges** |  EA, MCA | EA Enrollment,MCA Billing Profile | Charges associated to your Reserved Instances over the last 24 months. This table is in the process of being deprecated, please use RI transactions |
+| **RI recommendations (shared)** |  EA, MCA | EA Enrollment,MCA Billing Profile | Reserved Instance purchase recommendations based on all your subscription usage trends for the last 30 days. |
+| **RI recommendations (single)** |  EA, MCA | EA Enrollment,MCA Billing Profile | Reserved Instance purchase recommendations based on your single subscription usage trends for the last 30 days. |
+| **RI transactions** |  EA, MCA | EA Enrollment,MCA Billing Profile | List of transactions for reserved instances on billing account scope. |
+| **RI usage details** |  EA, MCA | EA Enrollment,MCA Billing Profile | Consumption details for your existing Reserved Instances over the last month. |
+| **RI usage summary** |  EA, MCA | EA Enrollment,MCA Billing Profile | Daily Azure reservation usage percentage. |
+| **Usage details** |  EA, MCA | EA Enrollment,MCA Billing Account,MCA Billing Profile | A breakdown of consumed quantities and estimated charges for the given billing profile on EA enrollment. |
+| **Usage details amortized** |  EA, MCA | EA Enrollment,MCA Billing Account,MCA Billing Profile | A breakdown of consumed quantities and estimated amortized charges for the given billing profile on EA enrollment. |
 
 You can select a table to see a preview dialog. You can select one or more tables by selecting the boxes beside their name and then select **Load**.
 

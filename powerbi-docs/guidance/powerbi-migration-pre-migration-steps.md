@@ -1,8 +1,8 @@
 ---
 title: Prepare to migrate to Power BI
 description: Guidance on pre-migration steps when migrating to Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -69,7 +69,7 @@ Note that [Stage 2](powerbi-migration-planning.md) references solution-level dep
 
 Some critical items to address early in a Power BI implementation include:
 
-- [Power BI tenant setting](admin-tenant-settings.md) decisions, which should be documented.
+- [Power BI tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) decisions, which should be documented.
 - [Workspace management](../collaborate-share/service-new-workspaces.md) decisions, which should be documented.
 - Considerations and preferences related to data and [content distribution methods](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), such as apps, workspaces, sharing, subscriptions, and embedding of content.
 - Preferences related to [dataset modes](../connect-data/service-dataset-modes-understand.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [Composite model](composite-model-guidance.md).
@@ -92,7 +92,7 @@ Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-o
 - Power BI tenant setup and integration with Azure Active Directory.
 - Define [Power BI administrators](../admin/service-admin-role.md).
 - Procure and assign initial [user licenses](../enterprise/service-admin-licensing-organization.md).
-- Configure and review [Power BI tenant settings](admin-tenant-settings.md).
+- Configure and review [Power BI tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings).
 - Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Azure Active Directory security groups and users.
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
 - Procure initial [Premium capacity license](../enterprise/service-admin-premium-purchase.md) (if applicable).

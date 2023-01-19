@@ -1,13 +1,13 @@
 ---
 title: Power BI adoption roadmap conclusion
 description: A conclusion and extra resources of the Power BI adoption roadmap series of articles.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/13/2022
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap conclusion
@@ -16,7 +16,7 @@ ms.date: 06/13/2022
 
 This article concludes the series on Power BI adoption. The strategic and tactical considerations and action items presented in this series will assist you in your Power BI adoption efforts, and with creating a productive data culture in your organization.
 
-This series covered the following aspects of adoption:
+This series covered the following aspects of Power BI adoption.
 
 - [Adoption overview](powerbi-adoption-roadmap-overview.md)
 - [Adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md)
@@ -31,7 +31,31 @@ This series covered the following aspects of adoption:
 - [User support](powerbi-adoption-roadmap-user-support.md)
 - [System oversight](powerbi-adoption-roadmap-system-oversight.md)
 
-The rest of this article includes additional adoption-related resources that you might find valuable.
+The rest of this article includes suggested next actions to take. It also includes other adoption-related resources that you might find valuable.
+
+## Next actions to take
+
+It can be overwhelming to decide where to start. The following series of steps provides a process to help you approach your next actions.
+
+1. **Learn:** First, read this series of articles end-to-end. Become familiar with the strategic and tactical considerations and action items that directly lead to successful Power BI adoption. They'll help you to build a data culture in your organization. Discuss the concepts with your colleagues.
+1. **Assess current state:** For each area of the adoption roadmap, assess your current state. Document your findings. Your goal is to have full clarity on where you're now so that you can make informed decisions about what to do next.
+1. **Clarify strategy:** Ensure that you're clear on what your organization's goals are for adopting Power BI. Confirm that your Power BI adoption goals align with your organization's broader strategic goals for the use of data, analytics, and business intelligence in general. Focus on what your immediate strategy is for the next 3-12 months.
+1. **Identify future state:** For each area of the roadmap, identify the gaps between what you want to happen (your future state) and what's happening (your current state). Focus on the next 3-12 months for identifying your desired future state.
+1. **Customize maturity levels:** Using the information you have on your strategy and future state, customize the maturity levels for each area of the roadmap. Update or delete the description for each maturity level so that they're realistic, based on your goals and strategy. Your current state, priorities, staffing, and funding will influence the time and effort it will take to advance to the higher maturity levels.
+1. **Prioritize:** Clarify what's most important to achieve in the next 3-12 months. For instance, you might identify specific user enablement or risk reduction items that are a higher priority than other items. Determine which advancements in maturity levels you should prioritize first.
+1. **Define measurable goals:** Create KPIs (key performance indicators) or OKRs (objectives and key results) to define specific goals. Ensure that the goals are measurable and achievable. Confirm that each goal aligns with your strategy and desired future state.
+1. **Create action items:** Add specific action items to your project plan. Action items will identify who will do what, and when. Include short, medium, and longer-term (backlog) items in your project plan to make it easy to track and reprioritize.
+1. **Track action items:** Use your preferred project planning software to track continual, incremental progress of your action items. Summarize progress and status every quarter for your executive sponsor.
+1. **Adjust:** As new information becomes available—and as priorities change—reevaluate and adjust your focus. Reexamine your strategy, goals, and action items once a quarter so you're certain that you're focusing on the right actions.
+1. **Celebrate:** Pause regularly to appreciate your progress. Celebrate your wins. Reward and recognize people who take the initiative and help achieve your goals. Encourage healthy partnerships between IT and the different areas of the business.
+1. **Repeat:** Continue learning, experimenting, and adjusting as you progress with your Power BI implementation. Use feedback loops to continually learn from everyone in the organization. Ensure that continual, gradual, improvement is a priority.
+
+A few important key points are implied within the previous suggestions.
+
+- **Focus on the near term:** Although it's important to have an eye on the big picture, we recommend that you focus primarily on the next quarter, next semester, and next year. It's easier to assess, plan, and act when you focus on the near term.
+- **Progress will be incremental:** Changes that happen every day, every week, and every month add up over time. It's easy to become discouraged and sense a lack of progress when you're working on a large adoption initiative that takes time. If you keep track of your incremental progress, you'll be surprised at how much you can accomplish over the course of a year.
+- **Changes will continually happen:** Be prepared to reconsider decisions that you make, perhaps every quarter. It's easier to cope with continual change when you expect the plan to change.
+- **Everything correlates together:** As you progress through each of the steps listed above, it's important that everything's correlated from the high-level strategic organizational objectives, all the way down to more detailed action items. That way, you'll know that you're working on the right things.
 
 ## Power BI implementation planning
 
@@ -76,7 +100,7 @@ The [Power Platform adoption framework](https://github.com/PowerPlatformAF/Power
 You may also find useful adoption-related guidance published by other Microsoft technology teams.
 
 - The [Maturity Model for Microsoft 365](/microsoft-365/community/microsoft365-maturity-model--intro) provides information and resources to use capabilities more fully and efficiently.
-- Microsoft Learn has a series of modules to [use the Microsoft service adoption framework to drive adoption in your enterprise](/learn/paths/m365-service-adoption/).
+- Microsoft Learn has a learning path for [using the Microsoft service adoption framework to drive adoption in your enterprise](/training/paths/m365-service-adoption/).
 - The [Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/) is a collection of documentation, implementation guidance, best practices, and tools to accelerate your cloud adoption journey.
 
 A wide variety of other adoption guides for individual technologies can be found online. A few examples include:

@@ -33,6 +33,7 @@ Automatic aggregations are supported for the following data sources:
 
 - Azure SQL Database
 - Azure Synapse Dedicated SQL pool
+- SQL Server 2019 or later
 - Google BigQuery
 - Snowflake
 - Databricks

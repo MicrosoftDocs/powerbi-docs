@@ -78,7 +78,7 @@ Now you can edit the sparkline’s properties.
 
 ## Next steps
 
-[Page layout and formatting](/learn/modules/visuals-in-power-bi/12-formatting)
+[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
 
 [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 

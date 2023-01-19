@@ -1,84 +1,81 @@
 ---
-title: Use the numeric range slicer in Power BI
-description: Learn how to use a slicer for constraining to numeric ranges in Power BI.
+title: Create a numeric or date range slicer in Power BI
+description: Learn how to use a slicer for constraining to numeric or date ranges in Power BI Desktop and the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/13/2022
+ms.date: 01/13/2023
 LocalizationGroup: Create reports
 ---
-# Use the numeric range slicer in Power BI
+# Create a numeric or date range slicer in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With the numeric range slicer, you can apply all sorts of filters to any numeric column in your data model. There are three options for filtering your numeric data: between numbers, less than or equal to a number, or greater than or equal to a number. This simple technique is a powerful way to filter your data.
+With the numeric range slicer and the date range slicer, you can create filters for any numeric or date column in your data model. There are three options for filtering your data:
 
-![Visual with numeric range slicer](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
+- Between numbers or dates.
+- Less than or equal to a number or date.
+- Greater than or equal to a number or date.
 
-## Video
+This simple technique is a powerful, visual way to filter your data.
 
-In this video, Will walks through creating a numeric range slicer.
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
-
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range.png" alt-text="Screenshot of a visual, highlighting a numeric range slicer.":::
 
 ## Add a numeric range slicer
 
-You can use the numeric range slicer like you would use any other slicer. Just create a **Slicer** visual for your report, and then select a numeric value for the **Field** value. In the following image, we selected the **LineTotal** field.
+You can use a numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value.
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+Power BI automatically creates a numeric range slicer. By default, it's set to **Between**.
 
-![Screenshot shows how to create a numeric range slicer in Power B I Desktop.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-create.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between.png" alt-text="Screenshot of the Numeric range slicer menu.":::
 
-# [Power BI service](#tab/powerbi-service)
+## Add a date range slicer
 
-![Screenshot shows how to create a numeric range slicer in the Power B I service.](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
+Create a **Slicer** visual for your report, and then select a date field for the **Field** value.
 
----
+Power BI automatically creates a date range slicer. By default, it's set to **Between**.
 
-Select the down-arrow in the upper-right corner of the numeric range slicer and a menu appears.
+:::image type="content" source="media/desktop-slicer-numeric-range/slicer-date-range-between.png" alt-text="Screenshot of the Date range slicer and the Format pane.":::
 
-![Numeric range slicer menu](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
+Besides the basic date range slicer, there are two other options, explained in these articles:
 
-> [!NOTE]  
-> If you don't see the down arrow, open the **Format** pane for the slicer and set the **Slicer header** to **On**.
+- The [relative date range slicer](../visuals/desktop-slicer-filter-date-range.md).
+- The [relative time range slicer](slicer-filter-relative-time.md).
 
-For the numeric range, you can select from the following three options:
+## Format the range slicer
+
+In the **Format** pane, under **Visual** > **Slicer settings** > **Options**, select one of these options:
 
 * **Between**
 * **Less than or equal to**
 * **Greater than or equal to**
 
-When you select **Between** from the menu, a slider appears. You can use the slider to select numeric values that fall between the numbers. Sometimes the granularity of moving the slicer bar makes it difficult to land exactly on that number. You can also use the slider and select either box to type in the values we want. This option is convenient when you want to slice on specific numbers.
+You can use the slider to select numeric values that fall between the numbers. Sometimes the granularity of moving the slicer bar makes landing exactly on that number difficult. You can use the slider, or select either box to type in the values you want. This option is convenient when you want to slice on specific numbers.
 
-In the following image, the report page filters for **LineTotal** values that range between 2500.00 and 6000.00.
+In the following image, the report page filters for **Sales Amount** values that range between 2,100.00 and 25,000.00.
 
-![Numeric range slicer with Between](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-between-specific-numbers.png" alt-text="Screenshot of a visual, highlighting the Numeric range slicer set to Between.":::
 
-When you select **Less than or equal to**, the left (lower value) handle of the slider bar disappears, and you can adjust only the upper-bound limit of the slider bar. In the following image, we set the slider bar maximum to 5928.19.
+When you select **Less than or equal to**, the left (lower value) handle of the slider bar disappears, and you can adjust only the upper-bound limit of the slider bar. In the following image, the lower limit is gone.
 
-![Numeric range slicer with Less than](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-4-less-than.png)
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-less-than.png" alt-text="Screenshot of a visual, highlighting the Numeric range slicer set to Less than or equal to.":::
 
-Lastly, if you select **Greater than or equal to**, then the right (higher value) slider bar handle disappears. You can then adjust the lower value, as seen in the following image. Now, only items with a **LineTotal** greater than or equal to 4902.99 display in the visuals on the report page.
-
-![Numeric range slicer with Greater than](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
+If you select **Greater than or equal to**, then the right (higher value) slider bar handle disappears. You can then adjust the lower value, but not the upper value.
 
 ## Snap to whole numbers with the numeric range slicer
 
-A numeric range slicer snaps to whole numbers if the data type of the underlying field is *Whole Number*. This feature lets your slicer cleanly align to whole numbers. *Decimal Number* fields let you enter or select fractions of a number. The formatting set in the text box matches the formatting set on the field, even though you can type in or select more precise numbers.
+A numeric range slicer snaps to whole numbers if the data type of the underlying field is *Whole Number*. This feature lets your slicer cleanly align to whole numbers. *Decimal Number* fields let you enter or select fractions of a number. The formatting set in the text box matches the formatting set on the field even though you can type in or select more precise numbers.
 
 ## Display formatting with the date range slicer
 
-When you use a slicer to display or set a range of dates, the dates display in the *Short Date* format. The user's browser or operating system locale determine the date format. As such, it will be the display format no matter what the data type settings are for the underlying data or model.
+When you use a slicer to display or set a range of dates, the dates display in the *Short Date* format. The user's browser or operating system locale determines the date format. As such, it will be the display format no matter what the data type settings are for the underlying data or model.
 
 You could, for example, have a long date format for the underlying data type. In this case, a date format such as *dddd, MMMM d, yyyy* would format a date in other visuals or circumstances as *Wednesday, March 14, 2001*. But in the date range slicer, that date displays in the slicer as *03/14/2001*.
+
+:::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-date.png" alt-text="Screenshot showing a slicer with a date range.":::
 
 Displaying the Short Date format in the slicer ensures the length of the string stays consistent and compact within the slicer.
 
@@ -87,6 +84,11 @@ Displaying the Short Date format in the slicer ensures the length of the string 
 The following considerations and limitations apply to the numeric range slicer:
 
 * The numeric range slicer filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on the sales amount, not the sum of the sales amount for each data point of a visual.
-* It doesn't currently work with measures.
-* You can type any number into a numeric slicer, even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
-* The date range slicer allows for any date values even if they do not exist in the underlying date column.
+* The numeric range slicer doesn't currently work with measures.
+* You can type any number into a numeric slicer even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
+* The date range slicer allows for any date values even if they don't exist in the underlying date column.
+
+## Next steps
+
+- [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

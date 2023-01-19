@@ -169,14 +169,7 @@ When you create an embedded solution, it may be useful to configure Visual Studi
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Register an app](register-app.md)
-
-> [!div class="nextstepaction"]
->[Power BI Embedded for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-
->[!div class="nextstepaction"]
->[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+* [Register an app](register-app.md)
+* [Power BI Embedded for your customers](embed-sample-for-customers.md)
+* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Row-level security using on-premises data gateway with service principal](./sql-server-analysis-services-embed.md)

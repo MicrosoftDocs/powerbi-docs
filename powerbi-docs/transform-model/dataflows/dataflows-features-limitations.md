@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 05/19/2022
+ms.date: 08/02/2022
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -24,7 +24,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
     * There's no guidance or limits for the optimal number of entities is in a dataflow, however, shared dataflows have a refresh limit of two hours per entity, and three per dataflow. So if you have two entities, and each takes two hours, you shouldn't put them in the same dataflow.
     * For Power BI Premium, guidance and limits are driven by individual use cases rather than specific requirements. The only limit for Power BI Premium is a 24-hour refresh per dataflow.
 * A Power BI Premium subscription is required in order to refresh more than 10 dataflows cross workspace
-* PowerQuery limitations are found in the PowerQuery Online usage limits article.
+* PowerQuery limitations are found in the [Power Query Online Limits](https://learn.microsoft.com/power-query/power-query-online-limits) article
 * Power BI dataflows don't support use of global variables in a URL argument.
 * Multi-Geo is currently not supported unless configuring storage to use your own Azure Data Lake Gen2 storage account.
 * Vnet support is achieved by using a gateway.
@@ -55,7 +55,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Importing dataflows that contain linked tables won't fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow)
 
-* Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API
+* Dataflows can be overwritten with the *GenerateUniqueName* and *Abort* parameters
 
 ## Dataflows in shared capacities
 
@@ -123,6 +123,14 @@ Dataflows that exist in Premium have the following considerations and limitation
 
 > [!NOTE]
 > If the Dataflow structure is changed, such as a new or renamed column, the dataset will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the dataset, until refreshed in Power BI Desktop and re-published.
+
+## Dataflows and named connections
+
+When using dataflows with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
+
+* You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
+* You cannot name or rename cloud data sources; you can name or rename gateway connections.
+
 
 ## ADLS limitations
 

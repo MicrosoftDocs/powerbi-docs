@@ -1,8 +1,8 @@
 ---
 title: Create content to migrate to Power BI
 description: Guidance on creating and validating content when migrating to Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -96,7 +96,7 @@ In an Import dataset, data permissions are applied by defining [row-level securi
 The main ways to grant access to Power BI content are:
 
 - [Workspace roles](../collaborate-share/service-roles-new-workspaces.md) (for content editors and viewers).
-- [App permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app) applied to a packaged set of workspace content (for viewers).
+- [App audience permissions](../collaborate-share/service-create-distribute-apps.md#create-and-manage-audiences) applied to a packaged set of workspace content (for viewers).
 - [Sharing](../collaborate-share/service-share-dashboards.md) an individual report or dashboard (for viewers).
 
 > [!TIP]
@@ -128,7 +128,7 @@ Documentation can be stored wherever it's most easily accessed by the target aud
 - **Within individual Power BI Desktop files:** Model elements, like tables and columns, can define a description. These descriptions appear as tooltips in the **Fields** pane when authoring reports.
 
 > [!TIP]
-> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](../admin/service-admin-portal-help-support.md#publish-get-help-information) with its URL location.
+> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](/power-bi/support/service-admin-portal-help-support#publish-get-help-information) with its URL location.
 
 ### Create dataset documentation
 

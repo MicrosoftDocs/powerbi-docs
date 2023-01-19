@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 06/11/2022
+ms.date: 12/24/2022
 
 ---
 
@@ -92,7 +92,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 ### [Node JS](#tab/node-js)
 
-* [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+* [Node.js](https://nodejs.org/en/download/)
 
 * An integrated development environment (IDE). We recommend using one of the following:
 
@@ -458,7 +458,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
     |`clientSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
-    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |Your Azure AD [tenant ID](#tenant-id)         |
 
 10. Run the project by doing the following:
 

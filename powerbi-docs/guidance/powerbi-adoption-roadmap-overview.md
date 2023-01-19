@@ -1,13 +1,13 @@
 ---
 title: Power BI adoption roadmap
 description: An overview of the Power BI adoption roadmap series of articles.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap
@@ -27,7 +27,7 @@ The areas in the above diagram include:
 
 | **Area** | **Description** |
 | --- | --- |
-| ![Area 1.](media/common/icon-01-red-30x30.png) | **Data culture:** Data culture refers to a set of behaviors and norms in the organization that encourages a data-driven culture. Building a data culture is closely related to adopting Power BI, and it is often a key aspect of an organization's digital transformation. |
+| ![Area 1.](media/common/icon-01-red-30x30.png) | **Data culture:** Data culture refers to a set of behaviors and norms in the organization that encourages a data-driven culture. Building a data culture is closely related to adopting Power BI, and it's often a key aspect of an organization's digital transformation. |
 | ![Area 2.](media/common/icon-02-red-30x30.png) | **Executive sponsor:** An executive sponsor is someone with credibility, influence, and authority throughout the organization. They advocate for building a data culture and adopting Power BI. |
 | ![Area 3.](media/common/icon-03-red-30x30.png) | **Content ownership and management:** There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the Center of Excellence (COE) operating model. |
 | ![Area 4.](media/common/icon-04-red-30x30.png) | **Content delivery scope:** There are four primary strategies for content delivery including personal BI, team BI, departmental BI, and enterprise BI. These strategies have a significant influence on adoption, governance, and the COE operating model. |
@@ -55,14 +55,14 @@ Successful Power BI adoption involves making effective processes, support, tools
 > [!IMPORTANT]
 > This series of adoption articles is focused on *organizational* adoption. See the [Power BI adoption maturity levels article](powerbi-adoption-roadmap-maturity-levels.md) for an introduction to the three types of adoption: organizational, user, and solution.
 
-A common misconception is that adoption relates primarily to usage or the number of users. There's no question that usage statistics are an important factor. However, usage is not the only factor. Adoption is not just about *using* the technology on a regular basis; it's about using it *effectively*. Effectiveness is much harder to define and measure.
+A common misconception is that adoption relates primarily to usage or the number of users. There's no question that usage statistics are an important factor. However, usage isn't the only factor. Adoption isn't just about *using* the technology regularly; it's about using it *effectively*. Effectiveness is much harder to define and measure.
 
 Whenever possible, adoption efforts should be aligned across analytics platforms, BI services, and other Power Platform products. These products include Power Apps and Power Automate.
 
 > [!NOTE]
 > Individuals—and the organization itself—are continually learning, changing, and improving. That means there's no formal end to adoption-related efforts.
 
-The remaining articles in this Power BI adoption series discuss the following aspects of adoption:
+The remaining articles in this Power BI adoption series discuss the following aspects of adoption.
 
 - [Adoption maturity levels](powerbi-adoption-roadmap-maturity-levels.md)
 - [Data culture](powerbi-adoption-roadmap-data-culture.md)
@@ -84,17 +84,17 @@ The remaining articles in this Power BI adoption series discuss the following as
 
 ## Target audience
 
-The intended audience of this series of articles is interested in one or more of the following outcomes:
+The intended audience of this series of articles is interested in one or more of the following outcomes.
 
 - Improving their organization's ability to effectively use Power BI.
 - Increasing their organization's maturity level related to Power BI delivery.
 - Understanding and overcoming adoption-related challenges faced when scaling Power BI.
 - Increasing their organization's return on investment (ROI) in data and analytics.
 
-Primarily, this series of articles will be helpful to those who work in an organization with one or more of the following characteristics:
+Primarily, this series of articles will be helpful to those who work in an organization with one or more of the following characteristics.
 
 - Power BI is deployed with some successes.
-- Power BI has pockets of viral adoption, but is not purposefully governed across the entire organization.
+- Power BI has pockets of viral adoption, but isn't purposefully governed across the entire organization.
 - Power BI is deployed with some meaningful scale, but there remains a need to determine:
   - What is effective and what should be maintained.
   - What should be improved.
@@ -110,7 +110,7 @@ Secondarily, this series of articles will be helpful for:
 
 The primary focus of this series of articles is on the Power BI technology platform, with an emphasis on the Power BI service.
 
-To fully benefit from the information provided in these articles, it is an advantage to have at least an understanding of [Power BI fundamental concepts](../fundamentals/power-bi-overview.md).
+To fully benefit from the information provided in these articles, it's an advantage to have at least an understanding of [Power BI fundamental concepts](/power-bi/fundamentals/power-bi-overview).
 
 ## Next steps
 

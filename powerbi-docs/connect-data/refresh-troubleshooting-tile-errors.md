@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 12/06/2018
+ms.date: 09/23/2022
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting tile errors

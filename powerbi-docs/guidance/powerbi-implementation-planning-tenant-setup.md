@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Tenant setup"
 description: "This article introduces important aspects to know about setting up your Power BI tenant."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/25/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Tenant setup
@@ -124,7 +124,7 @@ The relocation of a Power BI tenant to another region isn't a fully automated pr
 
 ### Other specific data regions
 
-Some organizations have *data residency* requirements. Data residency requirements typically include regulatory or industry requirements for storing data in a specific geographic region. *Data sovereignty* requirements are similar, but more stringent because the data is subject to the laws of the country in which the data is stored. Some organizations also have *data localization* requirements, which dictate that data created within certain borders needs to remain within those borders.
+Some organizations have *data residency* requirements. Data residency requirements typically include regulatory or industry requirements for storing data in a specific geographic region. *Data sovereignty* requirements are similar, but more stringent because the data is subject to the laws of the country or region in which the data is stored. Some organizations also have *data localization* requirements, which dictate that data created within certain borders needs to remain within those borders.
 
 Regulatory, industry, or legal requirements can require you to store certain data in Power BI elsewhere from the default data region (described earlier). In these situations, you can benefit from the [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo) feature by creating a capacity in a specific region. In this case, you must assign workspaces to the correct capacity to ensure that the workspace data is stored in the desired geographic location.
 
@@ -147,3 +147,6 @@ Multi-Geo support enables organizations to:
 ## Next steps
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
+
+> [!TIP]
+> To learn how to manage a Power BI tenant, we recommend that you work through the [Administer Power BI learning path](/training/paths/administer-power-bi-part-1/).

@@ -14,13 +14,13 @@ ms.custom: references_regions
 
 # Premium support for China North
 
-*China North* is only supported when using [Premium Gen1](service-premium-what-is.md).
+*China North* is only supported when using [Premium Gen1](service-premium-gen2-what-is.md).
 
 [Premium Gen2](service-premium-gen2-what-is.md) and Gen2 features are not supported when using *China North*.
 
 If you require support for Gen2 or for any of the features listed in this article, use one of the other China regions, *China East*, *China East 2* or *China North 2*.
 
-To learn how to migrate your tenant to another region, see [Move between regions](../admin/service-admin-region-move.md).
+To learn how to migrate your tenant to another region, see [Move between regions](../support/service-admin-region-move.md).
 
 ## Unsupported features
 
@@ -41,4 +41,4 @@ This section lists the Power BI features that aren't supported for *China North*
 ## Next steps
 
 >[!div class="nextstepaction"]
->[What is Power BI Premium?](service-premium-what-is.md)
+>[What is Power BI Premium?](service-premium-gen2-what-is.md)

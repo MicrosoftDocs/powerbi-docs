@@ -7,38 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 04/29/2020
+ms.date: 10/27/2022
 ---
 
 # Subreports in Power BI paginated reports
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-A *subreport* is a paginated report item that displays another paginated report inside the body of a main paginated report. Conceptually, a subreport in a report is similar to a frame in a Web page. You use it to embed a report within a report. You can use any report as a subreport. You store the report that is displayed as the subreport in the same Premium workspace as the parent report. You can design the parent report to pass parameters to the subreport. A subreport can repeat within data regions, using a parameter to filter data in each instance of the subreport.  
+A *subreport* is a paginated report item that displays another paginated report inside the body of a main paginated report. Conceptually, a subreport in a report is similar to a frame in a Web page. You use it to embed a report within a report. You can use any report as a subreport. You store the report that is displayed as the subreport in the same workspace as the parent report. You can design the parent report to pass parameters to the subreport. A subreport can repeat within data regions, using a parameter to filter data in each instance of the subreport.  
   
- ![Subreport in a paginated report](media/subreports/paginated-report-subreport.png "Paginated report subreport")  
+ ![Screenshot showing Subreport in a paginated report.](media/subreports/paginated-report-subreport.png "Screenshot showing Subreport in a paginated report")  
   
  In this illustration, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
   
-You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a Premium workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
 
 ## Prerequisites 
 
-- To publish a Power BI paginated report to the Power BI service, you need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license, or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license, and write access to a workspace in a Power BI Premium capacity.
-  
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+ 
 ## Work with Report Builder and the Power BI service
 
 Power BI Report Builder can work with paginated reports on your computer (known as local reports) or with reports on the Power BI service.  When you open Report Builder for the first time, you're asked to sign into your Power BI account. If not, select **Sign In** in the upper-right corner.
 
-:::image type="content" source="media/subreports/report-builder-sign-in.png" alt-text="Sign in to Power BI":::
+:::image type="content" source="media/subreports/report-builder-sign-in.png" alt-text="Screenshot showing Sign in to Power BI.":::
 
 After signing in, you see a **Power BI Service** option in Power BI Report Builder for the **Open** and **Save As** options on the **File** menu. When you select the **Power BI Service** option to save a report, you create a live connection between Power BI Report Builder and the Power BI service. 
 
-:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Open from the Power BI service":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Screenshot showing Open from the Power BI service.":::
 
 ## Save a local report to the Power BI service
 
-Before you can add a subreport to a main report, first create the two reports and save them to the same Power BI Premium workspace. 
+Before you can add a subreport to a main report, first create the two reports and save them to the same Power BI workspace.
 
 1. To open an existing local report, on the **File** menu, select **Open** > **This PC** and select an .rdl file.  
 
@@ -47,19 +47,19 @@ Before you can add a subreport to a main report, first create the two reports an
     > [!NOTE]
     > You can also upload a report by starting in the Power BI service. The same article, [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md), has details.
 
-3. In the **Save As** dialog box, select a Power BI Premium workspace where you can store your paginated reports.  Premium workspaces have a diamond icon ![Premium diamond icon](media/subreports/report-builder-premium-diamond.png) next to their name.
+3. In the **Save As** dialog box, select a Power BI workspace where you can store your paginated reports.
 
-    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Save as to the Power BI service":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Screenshot showing Save as to the Power BI service.":::
 
 4. Select **Save**.
 
 ## Add a subreport to a report
 
-Now that you've saved both reports to the same Premium workspace, you can add one to the other as a subreport. There are two ways to add a subreport. 
+Now that you've saved both reports to the same workspace, you can add one to the other as a subreport. There are two ways to add a subreport.
 
 1. On the **Insert** ribbon, select the **Subreport** button, or right-click on the report canvas and select **Insert** > **Subreport**.
 
-    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Insert a subreport in a report":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Screenshot showing Insert a subreport in a report.":::
 
     The **Subreport Properties** dialog box opens.  
 
