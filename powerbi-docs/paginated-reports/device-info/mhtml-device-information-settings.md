@@ -1,5 +1,5 @@
 ---
-title: "MHTML device information settings for Power BI paginated reports | Microsoft Docs"
+title: "MHTML device information settings for Power BI paginated reports"
 description: Learn about the various device information settings for rendering Power BI paginated reports in Web archive (MHTML) format. 
 ms.date: 01/05/2023
 ms.service: powerbi

@@ -29,7 +29,7 @@ If you'll be designing reports and creating report bookmarks for others to use, 
 ## Use *personal* *bookmarks* to save insights and build stories in Power BI 
 There are many uses for personal bookmarks. Say you discover an interesting insight and want to preserve it -- create a personal bookmark so you can return later. Need to leave and want to preserve your current work, create a personal bookmark. You can even make a personal bookmark your default view of a report, so each time you return, that view of the report page opens first. 
 
-You can also create a collection of bookmarks, arrange them in the order you want, and then step through each bookmark in a presentation to highlight a series of insights that tell a story.  This works like a slideshow, where you select an arrow to go forward or backward. There's a limit of 20 personal bookmarks per report.
+You can also create a collection of bookmarks, arrange them in the order you want, and then step through each bookmark in a presentation to highlight a series of insights that tell a story.  This works like a slideshow, where you click an arrow to go forward or backward. There is a limit of 20 personal bookmarks per user per report.
 
 ### Open the Bookmarks pane
 
