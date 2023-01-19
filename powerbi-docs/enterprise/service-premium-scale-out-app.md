@@ -37,7 +37,7 @@ using (var workspace_readonly = new Microsoft.AnalysisServices.Tabular.Server())
     if (datasetRW == null || datasetRO == null) 
     { 
         throw new ApplicationException("Database cannot be found!"); 
-    } 
+    }
     datasetRW.Refresh(); 
     datasetRO.Refresh(); 
     Console.WriteLine($"LastUpdated: {datasetRW.LastUpdate} (readwrite) {datasetRO.LastUpdate} (readonly)"); 
