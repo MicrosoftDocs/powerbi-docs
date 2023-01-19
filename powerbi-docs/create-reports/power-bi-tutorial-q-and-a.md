@@ -16,7 +16,7 @@ LocalizationGroup: Ask questions of your data
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words. The first part of this article shows how you use Q&A in dashboards in the Power BI service. The second part shows what you can do with Q&A when creating reports in either the Power BI service or Power BI Desktop. For more information, see [Q&A for Power BI business users](../consumer/end-user-q-and-a.md).
 
-These articles cover using Q&A in other parts of Power BI:
+These articles cover using Q&A in other scenarios in Power BI:
 
 - [Q&A virtual analyst in Power BI iOS apps](../consumer/mobile/mobile-apps-ios-qna.md)
 - [Q&A in Power BI embedded analytics](../developer/embedded/qanda.md)
