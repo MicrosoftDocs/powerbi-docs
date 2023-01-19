@@ -80,7 +80,7 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
 
 4. In the toolbar, select **XMLA**. If a *Connect to Analysis Services* dialog box appears, select *Connect*.
 
-5. Paste the following request into the XMLA window. Replace `<WorkspaceName>` with the name of your workspace.  
+5. Paste the following request into the XMLA window. Replace `[WorkspaceName]` with the name of your workspace.  
 
     ```xml
     <Execute xmlns="urn:schemas-microsoft-com:xml-analysis"> 
@@ -101,7 +101,7 @@ Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable
                                 xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" 
                                 xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" 
                                 xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500"> 
-                            <Name><WorkspaceName></Name> 
+                            <Name>[WorkspaceName]</Name> 
                             <ServerProperties> 
                                 <ServerProperty> 
                                     <Name>Feature\PBIP\QueryScaleOut</Name> 
