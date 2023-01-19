@@ -51,7 +51,7 @@ To use service principal and an application ID for embedded analytics, you take 
 1. Embed your content.
 
 > [!IMPORTANT]
-> An Azure AD application doesn't require you to configure any delegated permissions or application permissions in the Azure portal when it has been created for a service principal. When you create an Azure AD application for a service principal to access the Power BI REST API, it's recommended that you **avoid adding permissions**. They're never used and can cause errors that are hard to troubleshoot.
+> An Azure AD application doesn't require you to configure any delegated permissions or application permissions in the Azure portal when it has been created for a service principal. When you create an Azure AD application for a service principal to access the Power BI REST API, we recommended that you **avoid adding permissions**. They're never used and can cause errors that are hard to troubleshoot.
 
 ## Step 1 - Create an Azure AD app
 
@@ -204,7 +204,7 @@ In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to *
 
 ## Step 4 - Add the service principal to your workspace
 
-Your Azure AD app can only access your Power BI reports, dashboards, and datasets if it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
+Your Azure AD app can access your Power BI reports, dashboards, and datasets only when it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
 
 There are three ways to add a service principal or its security group to your workspace:
 
