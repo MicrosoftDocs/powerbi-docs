@@ -112,7 +112,8 @@ If you publish your Power BI Desktop report to a [workspace](../collaborate-shar
 
 ## Next steps
 
-- [Restrict data access with row-level security (RLS) for Power BI Desktop](../create-reports/desktop-rls.md)
+- [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md)
 - [Row-level security (RLS) guidance in Power BI Desktop](../guidance/rls-guidance.md)
+- [Power BI implementation planning: Report consumer security planning](/power-bi/guidance/powerbi-implementation-planning-security-report-consumer-planning#enforce-data-security-based-on-consumer-identity)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

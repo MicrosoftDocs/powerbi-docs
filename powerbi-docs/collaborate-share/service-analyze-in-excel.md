@@ -34,12 +34,12 @@ In the Power BI service, go to the workspace that contains the dataset or report
     >[!NOTE]
     >If you select **Analyze in Excel** for a report, it's the report's underlying dataset that's brought into Excel.
 
-The Power BI service generates an Excel workbook that contains an OLAP connection to the Power BI dataset, and automatically saves this Excel workbook to your OneDrive for Business. You can open the Excel workbook by selecting **Open in Excel for the web**. The workbook opens in a new browser tab.
+The Power BI service generates an Excel workbook that contains an OLAP connection to the Power BI dataset, and automatically saves this Excel workbook to your OneDrive for work or school. You can open the Excel workbook by selecting **Open in Excel for the web**. The workbook opens in a new browser tab.
 
 :::image type="content" source="media/service-analyze-in-excel/open-workbook-excel-web-app.png" alt-text="Screenshot of Analyze in Excel dialog.":::
     
 >[!NOTE]
->If you don't have OneDrive for Business in your environment, select **Analyze in Excel** to download the Excel workbook to your computer's local Downloads folder.
+>If you don't have OneDrive for work or school in your environment, select **Analyze in Excel** to download the Excel workbook to your computer's local Downloads folder.
     
 The workbook file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Sales Analysis*, the file name would be **Sales Analysis.xlsx**.
     

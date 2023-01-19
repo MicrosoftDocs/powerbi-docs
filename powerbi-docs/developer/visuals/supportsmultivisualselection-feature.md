@@ -1,31 +1,34 @@
 ---
 title: Apply selection to multiple visuals feature in Power BI
-description: This article describes how to apply a selection to multiple visuals by using the supportsMultiVisualSelection feature in Power BI.
+description: This article describes how to apply a selection to multiple visuals by using the support multiple visual selection feature in Power BI.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 11/19/2022
 ---
 
 # Apply a selection to multiple visuals in a report
 
-The `supportsMultiVisualSelection` feature enables you to select values from one visual in a report and have that selection apply to all the visuals in that report.
+The `supportsMultiVisualSelection` feature enables you to select values from one visual in a Power BI report and apply the selected values to all the visuals in that report.
 
-For example, in the **Overview** page of the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md), select *Fashions Direct* from **Chain** in one visual. Select *Jan* from **FiscalMonth** in another visual.
+For example, in the **Overview** page of the [Retail Analysis sample](../../create-reports/sample-retail-analysis.md):
 
-:::image type="content" source="media/supportsMultiVisualSelection-feature/selections.png" alt-text="Screenshot of different visual selections.":::
+1. Select the **Total Sales Variance %, Sales Per Sq Ft and This Year Sales by District and District** visual. In the **Filters** pane that appears, under **Chain**, select **Fashions Direct**.
 
-| Select *chain* from one visual  | Select *month* from another visual  |
-|---|---|
+:::image type="content" source="media/supportsMultiVisualSelection-feature/selections.png" alt-text="Screenshot of the Power BI service. A bubble chart visual is selected. In the Filters pane, Fashions Direct is selected.":::
 
-In the report, these selections apply to *all* visuals that support this feature. The visuals will now scope to **Fashions Direct** and **January**.
+2. Select the **Total Sales Variance by FiscalMonth and District Manager** visual. In the **Filters** pane that appears, under **FiscalMonth**, select **Jan**.
 
-## Enable the *support multiple visual selection* feature
+:::image type="content" source="media/supportsMultiVisualSelection-feature/selections-2.png" alt-text="Screenshot of the Power BI service. A bar chart visual is selected. In the Fiscal Month pane, Jan is selected.":::
 
-To use the `supportsMultiVisualSelection` feature, add the following code to the *capabilities.json* file of your visual.
+In the report, these selections apply to all visuals that support this feature. The scope of the visuals is now limited to **Fashions Direct** and **January**.
+
+## Enable the support multiple visual selection feature
+
+To use the support multiple visual selection feature, add the following code to the *capabilities.json* file of your visual:
 
 ```json
     {   
@@ -37,9 +40,9 @@ To use the `supportsMultiVisualSelection` feature, add the following code to the
 
 ## Considerations and limitations
 
-* This feature requires API v3.2.0 or higher.
+* This feature requires API v3.2.0 or later.
 * This feature doesn't apply to image visuals.
-* This feature doesn't apply to certain advanced visuals such as key driver, decomposition tree, Q&A visuals, textbox, and gauge charts.
+* This feature doesn't apply to certain advanced visuals, such as key driver, decomposition tree, Q&A, textbox, and gauge chart visuals.
 
 ## Next steps
 
