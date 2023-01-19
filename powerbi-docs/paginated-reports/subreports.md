@@ -42,7 +42,7 @@ Before you can add a subreport to a main report, first create the two reports an
 
 1. To open an existing local report, on the **File** menu, select **Open** > **This PC** and select an .rdl file.  
 
-2. On the **File** menu, select **Save As** > **Power BI Service**. For details, see [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md).
+2. On the **File** menu, select **Save As** > **Power BI Service**. For more information, see [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md).
 
     > [!NOTE]
     > You can also upload a report by starting in the Power BI service. The same article, [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md), has details.
@@ -96,7 +96,7 @@ Because Report Builder is a design tool, previewing the report may look differen
 
 ### Maintain the connection
 
-Report Builder doesn’t persist the connection to Power BI when you close the file.  It's possible to work with a local main report with subreports stored in the Power BI workspace. Be sure to save the main report to the Power BI workspace before closing the report.  If you don't, you may get a ‘not found’ message during preview, because there's no live connection to the Power BI service.  In that case, go to a subreport and select its properties.  Open the subreport again from the Power BI service.  This re-establishes the connection, and all other subreports should be fine.
+When you close the file, the connection between Report Builder and Power BI ends. It's possible to work with a local main report with subreports stored in the Power BI workspace. Be sure to save the main report to the Power BI workspace before closing the report.  If you don't, you might get a ‘not found’ message during preview, because there's no live connection to the Power BI service.  In that case, go to a subreport and select its properties.  Open the subreport again from the Power BI service.  This re-establishes the connection, and all other subreports should be fine.
 
 ### Rename a subreport
 
@@ -104,7 +104,7 @@ If you rename a subreport in the workspace, you need to fix the name reference i
 
 ## Migrate large reports
 
-If you're migrating large reports to Power BI, consider using the [RDL migration tool](../guidance/migrate-ssrs-reports-to-power-bi.md#migration-tool-for-previous-versions-of-sql-server). The RDL migration tool has been updated to handle duplicate subreport names.  Duplicate subreport names can occur when two or more reports share the same name but reside in different subdirectories.  If the names aren't uniquely resolved, only the first subreport is recognized.
+If you're migrating large reports to Power BI, consider using the [RDL migration tool](../guidance/migrate-ssrs-reports-to-power-bi.md#migration-tool-for-previous-versions-of-sql-server). The RDL migration tool was updated to handle duplicate subreport names.  Duplicate subreport names can occur when two or more reports share the same name but reside in different subdirectories.  If the names aren't uniquely resolved, only the first subreport is recognized.
 
 If you want to use Report Builder to migrate large reports, you should work with the subreports first. Save each one to the Power BI workspace to prevent any duplicate report names.
 
@@ -114,8 +114,8 @@ The main report and subreports must be in the same workspace. Otherwise, the sub
   
 ## Next steps
 
-[Troubleshoot subreports in Power BI paginated reports](subreports-troubleshoot.md)
+- [Troubleshoot subreports in Power BI paginated reports](subreports-troubleshoot.md)
 
-[View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 
-More questions? [Ask the Power BI community](https://community.powerbi.com/)
+- More questions? [Ask the Power BI community](https://community.powerbi.com/)
