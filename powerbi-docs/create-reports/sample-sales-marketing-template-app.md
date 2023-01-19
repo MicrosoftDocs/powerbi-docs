@@ -28,7 +28,7 @@ After you install it, you see it in your collection of apps. Here you see it in 
 
 You see the app view, with the dashboard and individual report pages in the navigation pane.
 
-:::image type="content" source="media/sample-sales-marketing-template-app/power-bi-sales-marketing-app-navigation-2.png" alt-text="App navigation pane" lightbox="media/sample-sales-marketing-template-app/power-bi-sales-marketing-app-navigation-2.png":::
+:::image type="content" source="media/sample-sales-marketing-template-app/power-bi-sales-marketing-app-navigation-2.png" alt-text="Screenshot of the app view, highlighting the dashboard and report pages in the navigation pane." lightbox="media/sample-sales-marketing-template-app/power-bi-sales-marketing-app-navigation-2.png":::
 
 Because you installed it, you can also open the *workspace* and edit the elements of the template app. Select the **Edit** pencil icon to open the workspace.
 
@@ -46,16 +46,16 @@ Complete the **Setup** tab, including choosing an **App theme color**.
 
 :::image type="content" source="media/sample-sales-marketing-template-app/power-bi-app-setup-2.png" alt-text="Screenshot of the Setup options, including the App theme color.":::
 
-Complete the **Navigation** and **Permission** tabs, then select **Update app**.
+Complete the **Navigation** and **Permissions** tabs, then select **Update app**.
 
 :::image type="content" source="media/sample-sales-marketing-template-app/power-bi-select-update-app-2.png" alt-text="Screenshot of the Power BI service, highlighting the Update app button.":::
 
-Read more about [installing, updating, and sharing template apps in Power BI](../connect-data/service-template-apps-install-distribute.md).
+For more information, see [instal, update, and share template apps in your organization](../connect-data/service-template-apps-install-distribute.md).
 
 ## Next steps
 
 [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-[Data sources for Power BI](../connect-data/service-get-data.md)
+[Data sources for the Power BI service](../connect-data/service-get-data.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
