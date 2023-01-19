@@ -22,7 +22,7 @@ This article describes how Power BI behaves under various circumstances when wor
 
 When you create a filter card on a field with a default member, the default member field value is selected automatically in the filter card. The result is that all visuals affected by the filter card retain their default models in the database. The values in such filter cards reflect that default member.
 
-If the default member is removed, de-selecting the value clears it for all visuals to which the filter card applies, and the values displayed don't reflect the default member.
+If the default member is removed, deselecting the value clears it for all visuals to which the filter card applies, and the values displayed don't reflect the default member.
 
 For example, imagine we have a *Currency* column and a default member set to *USD*:
 
