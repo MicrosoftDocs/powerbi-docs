@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 12/02/2021
+ms.date: 1/19/2023
 LocalizationGroup: Create reports
 ---
 # Use the Analytics pane in Power BI Desktop
 
 With the **Analytics** pane in Power BI Desktop, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** icon and pane is found in the **Visualizations** area of Power BI Desktop.
 
-:::image type="content" source="media/desktop-analytics-pane/analytics-pane_1.png" alt-text="Screenshot of the Visualizations are of Power BI Desktop with the Analytics pane highlighted.":::
+:::image type="content" source="media/desktop-analytics-pane/analytics-pane_1.png" alt-text="Screenshot of the Analytics pane in the Visualizations section.":::
 
 > [!NOTE]
 > The **Analytics** pane only appears when you select a visual on the Power BI Desktop canvas.
@@ -77,9 +77,8 @@ More features and capabilities are being planned, including expanding which visu
 
 ## Apply forecasting
 
-If you have time data in your data source, you can use the *forecasting* feature. Just select a visual, then expand the **Forecast** section of the **Analytics** pane. You might specify many inputs to modify the forecast, such as the **Forecast length** or the **Confidence interval**. The following image shows a basic line visual with forecasting applied. Use your imagination (and play around with forecasting) to see how it might apply to your models.
+If you have time data in your data source, you can use the *forecasting* feature. Select a visual, then expand the **Forecast** section of the **Analytics** pane. You might specify many inputs to modify the forecast, such as the **Forecast length** or the **Confidence interval**. The following image shows a basic line visual with forecasting applied. Use your imagination (and play around with forecasting) to see how it might apply to your models.
 
-![Forecast feature, Analytics pane, Visualizations, Power BI Desktop]()
 :::image type="content" source="media/desktop-analytics-pane/analytics-pane_8.png" alt-text="Screenshot showing a basic line visual with forecasting applied and the forecasting options highlighted in the Analytics pane.":::
 
 > [!NOTE]
@@ -120,7 +119,7 @@ The following visuals can use a *trend line* if there's time data:
 * Line and clustered column chart
 * Scatter chart
 
-Lastly, you can't currently apply any dynamic lines to many visuals, including (but not limited to):
+You can't apply any dynamic lines to these visuals:
 
 * Funnel
 * Line and clustered column chart
@@ -128,16 +127,16 @@ Lastly, you can't currently apply any dynamic lines to many visuals, including (
 * Ribbon chart
 * Non-Cartesian visuals, such as Donut chart, Gauge, Matrix, Pie chart, and Table
 
-The *percentile line* is only available when using imported data in Power BI Desktop or when connected live to a model on a server that's running **Analysis Service 2016** or later, **Azure Analysis Services**, or a dataset on the Power BI service.
+The *percentile line* is only available when using imported data in Power BI Desktop or when connected live to a model on a server that's running Analysis Service 2016 or later, Azure Analysis Services, or a dataset on the Power BI service.
 
 ## Next steps
 
-You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
+You can do all sorts of things with Power BI Desktop. For more information on its capabilities, see the following resources:
 
 * [What's new in Power BI?](../fundamentals/desktop-latest-update.md)
 * [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)
 * [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
-* [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Perform common query tasks in Power BI Desktop](desktop-common-query-tasks.md)
