@@ -12,7 +12,7 @@ ms.date: 10/27/2022
 
 # Create an embedded data source for paginated reports in the Power BI service
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+
 
 In this article, you learn how to create and modify an embedded data source for a paginated report in the Power BI service. You define an embedded data source in a single report, and use it only in that report. Paginated reports published to the Power BI service can't use shared datasets and data sources. Here are some of the data sources you can connect to:
 
