@@ -24,13 +24,13 @@ You can connect to Google Analytics data using the **Google Analytics** connecto
 4. At the bottom of the window, select **Connect**.  
    :::image type="content" source="media/service-google-analytics-connector/tps_googleanalytics_1.png" alt-text="Screenshot of the Get Data ribbon with online services, Google Analytics, and Connect highlighted.":::
 
-You're prompted with a dialog that explains that the connector is a Third-Party Service, and warns about how features and availability can change over time, and other clarifications.  
+You're prompted with a dialog that explains that the connector is a third-party service, and warns about how features and availability can change over time, and other clarifications.  
 ![Screenshot of the connection dialog, showing a warning that the connector relies on a third-party Service.](media/service-google-analytics-connector/tps_googleanalytics_2.png)
 
 When you select **Continue**, you're prompted to sign in to Google Analytics.  
 ![Screenshot of the Google account dialog showing that you aren't signed in.](media/service-google-analytics-connector/tps_googleanalytics_3.png)
 
-When you enter your credentials, you're prompted that Power BI would like to have offline access. This is how you use **Power BI Desktop** to access your Google Analytics data.  
+After you enter your credentials, Power BI requests offline access. This is how you use **Power BI Desktop** to access your Google Analytics data.  
 
 Once you accept, **Power BI Desktop** shows that you're currently signed in.  
 ![Screenshot of the Google account dialog, showing that you're signed in.](media/service-google-analytics-connector/tps_googleanalytics_5.png)
