@@ -1,5 +1,5 @@
 ---
-title: "Formatting numbers and dates in Power BI paginated reports | Microsoft Docs"
+title: "Format numbers and dates in Power BI paginated reports | Microsoft Docs"
 
 description: Learn how to format numbers and dates in Power BI Report Builder data regions in a paginated report by selecting a format from the Number page of the data region's Properties dialog box.
 author: maggiesMSFT
@@ -10,11 +10,11 @@ ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 01/18/2023
 ---
-# Formatting numbers and dates in paginated reports (Power BI Report Builder)
+# Format numbers and dates in paginated reports (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  You can format numbers and dates in data regions in a paginated report by selecting a format from the **Number** page of the corresponding data region's **Properties** dialog box.  
+  You can format numbers and dates in data regions in a Power BI paginated report by selecting a format from the **Number** page of the corresponding data region's **Properties** dialog box.  
   
  To specify format strings within a text box report item, you need to select the item that you want to format, right-click, select **Text Box Properties**, and then click **Number**. You can format individual cells in a table or matrix data region in the same manner, because cells in a table or matrix are individual text boxes.  
   
@@ -23,9 +23,10 @@ ms.date: 01/18/2023
  To specify formatting in a Gauge data region, right-click the scale of the gauge and select **Radial Scale Properties** or **Linear Scale Properties**.  
   
 > [!NOTE]  
->  If some formatting options you want to use are grayed out, it means that those formatting options are not compatible the field's data type, which is set in the data source. For example, if the field contains number values but the field's data type is String, you cannot apply numerical data formatting options such as currency or decimals.  
+>  If some formatting options you want to use are grayed out, it means that those formatting options aren't compatible the field's data type, which is set in the data source. For example, if the field contains number values but the field's data type is String, you cannot apply numerical data formatting options such as currency or decimals.  
  
-## Considerations for Formatting Numbers and Dates  
+## Considerations for formatting numbers and dates  
+
  Before you format numbers and dates in your report, consider the following:  
   
 -   By default, numbers are formatted to reflect the cultural settings on the client computer. Use formatting strings to specify how numbers are displayed so that formatting is consistent regardless of where the person who is viewing the report is located.  
@@ -36,14 +37,14 @@ ms.date: 01/18/2023
   
 -   If you specify an invalid format string, the formatted text is interpreted as a literal string which overrides the formatting.  
   
--   If you are formatting a mix of numbers and characters in the same text box, consider using a placeholder to format the number separately from the rest of the text. For more information, see [Formatting Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs). If an invalid format string is specified for the Format property on the text box, the format string is ignored. If an invalid format string is specified for the Format property on the chart or gauge, the format string that you specified is interpreted as a string and formatting is not applied.  
+-   If you're formatting a mix of numbers and characters in the same text box, consider using a placeholder to format the number separately from the rest of the text. For more information, see [Formatting Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs). If an invalid format string is specified for the Format property on the text box, the format string is ignored. If an invalid format string is specified for the Format property on the chart or gauge, the format string that you specified is interpreted as a string and formatting is not applied.  
   
 -   If you select **Currency** under **Category** and you check **Show values in**, you can select **Thousands**, **Millions**, or **Billions** to display numbers using financial formats. For example, if the field value is 1,789,905,394 and you select **Billions** and specify 2 decimal places, the value displayed in the report is 1.78.  
   
 ## Next steps
- [Formatting Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
- [Formatting Lines, Colors, and Images &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-lines-colors-and-images-report-builder-and-ssrs)   
- [Formatting a Chart &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
- [Format Axis Labels as Dates or Currencies &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
- [Formatting Scales on a Gauge &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)  
+ [Formatting Text and Placeholders &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+ [Formatting Lines, Colors, and Images &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-lines-colors-and-images-report-builder-and-ssrs)   
+ [Formatting a Chart &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
+ [Format Axis Labels as Dates or Currencies &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs)   
+ [Formatting Scales on a Gauge &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)  
   
