@@ -541,7 +541,7 @@
       - name: Add filters to a paginated report
         href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
       - name: Commonly used filters
-        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-serviceg.md
+        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
       - name: Format numbers and dates
         href: ../paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md
       - name: Report Builder change log
