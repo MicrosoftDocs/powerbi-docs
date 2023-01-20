@@ -28,7 +28,7 @@ The following sections describe features and capabilities of Power BI and SSAS M
 
 The following table shows the correspondence between multidimensional objects and the tabular metadata that's returned to Power BI Desktop. Power BI queries the model for tabular metadata. Based on the returned metadata, Power BI Desktop runs appropriate DAX queries against SSAS when you create a visualization, such as a table, matrix, chart, or slicer.
 
-| BISM-Multidimentional object | Tabular Metadata |
+| BISM-Multidimensional object | Tabular Metadata |
 |:--- |:--- |
 | Cube | Model |
 | Cube dimension | Table |
