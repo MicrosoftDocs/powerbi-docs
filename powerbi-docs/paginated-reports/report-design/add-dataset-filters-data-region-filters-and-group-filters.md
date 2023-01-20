@@ -14,7 +14,7 @@ ms.date: 01/18/2023
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  In a Power BI paginated report, a filter is a part of a dataset, a data region, or a data region group that you create to limit the data that is used in the report. Filters help you control report data if you cannot change the dataset query.
+  In a Power BI paginated report, a filter is a part of a dataset, a data region, or a data region group that you create to limit the data that is used in the report. Filters help you control report data if you can't change the dataset query.
   
  Filters also help you control which data is displayed and processed in a report. You can specify filters for a dataset, a data region, or a group, in any combination.  
   
@@ -22,9 +22,9 @@ ms.date: 01/18/2023
  
   
 ##  <a name="When"></a> Choose when to set a filter  
- Specify filters for report items when you cannot filter data at the source. For example, use report filters when the data source does not support query parameters, or you must run stored procedures and cannot modify the query.  
+ Specify filters for report items when you can't filter data at the source. For example, use report filters when the data source doesn't support query parameters, or you must run stored procedures and can't modify the query.  
   
- You can filter report data before or after it is retrieved for a report dataset. To filter data before it is retrieved, change the query for each dataset. When you filter data in the query, you filter data at the data source, which reduces the amount data that must be retrieved and processed in a report. To filter data after it is retrieved, create filter expressions in the report. You can set filter expressions for a dataset, a data region, or a group, including detail groups. You can also include parameters in filter expressions, providing a way to filter data for specific values or for specific users, for example, filtering on a value that identifies the user viewing the report.  
+ You can filter report data before or after it's retrieved for a report dataset. To filter data before it's retrieved, change the query for each dataset. When you filter data in the query, you filter data at the data source, which reduces the amount data that must be retrieved and processed in a report. To filter data after it's retrieved, create filter expressions in the report. You can set filter expressions for a dataset, a data region, or a group, including detail groups. You can also include parameters in filter expressions, providing a way to filter data for specific values or for specific users, for example, filtering on a value that identifies the user viewing the report.  
   
 ##  <a name="Where"></a> Choose where to set a filter  
  Determine where you want to set a filter by the effect you want to achieve in your report. At run time, the report processor applies filters in the following order: on the dataset, and then on the data region, and then on groups from the top down in each group hierarchy. On a table, matrix, and list, filters for row groups, column groups, and adjacent groups are applied independently. On a chart, filters for category groups and series groups are applied independently. When the report processor applies the filter, all filter equations are applied in the order they are defined on the **Filter** page of the **Properties** dialog box for each report item, which is the equivalent of combining them with Boolean AND operations.  
@@ -59,7 +59,7 @@ ms.date: 01/18/2023
  When the filter equation is evaluated by the report processor at run time, the data types for the expression and the value must be the same. The data type of the field you select for **Expression** is determined by the data processing extension or data provider that is used to retrieve data from the data source. The data type of the expression that you enter for **Value** is determined by defaults. The choices for data type are determined by the data types supported for a report definition. Values from the database might be converted by the data provider to a CLR type.  
   
 ### Data type  
- For the report processor to compare two values, the data types must be the same. The following table lists the mapping between CLR data types and report definition data types. Data that you retrieve from a data source might be converted to a data type that is different by the time it is report data.  
+ For the report processor to compare two values, the data types must be the same. The following table lists the mapping between CLR data types and report definition data types. Data that you retrieve from a data source might be converted to a data type that is different by the time it's report data.  
   
 |**Report Definition Schema Data Type**|**CLR Type(s)**|  
 |--------------------------------------------|-----------------------|  
