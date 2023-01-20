@@ -15,7 +15,7 @@ ms.custom: intro-installation
 
 Are you a Power BI analyst? If so, this article explains how you can install [template apps](service-template-apps-overview.md) to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md).
 
-:::image type="content" source="media/service-template-apps-install-distribute/power-bi-all-apps.png" alt-text="Screenshot of the Power BI apps page in the main pane.":::
+:::image type="content" source="media/service-template-apps-install-distribute/power-bi-all-apps.png" alt-text="Screenshot of the Power BI apps page in the main pane." lightbox="media/service-template-apps-install-distribute/power-bi-all-apps.png":::
 
 If you're interested in creating template apps yourself for distribution outside your organization, see [Create a template app in Power BI](service-template-apps-create.md). With little or no coding, Power BI partners can build Power BI apps and make them available to Power BI customers.
 
@@ -32,7 +32,7 @@ To install, customize, and distribute a template app, you need:
 
 1. In the nav pane in the Power BI service, select **Apps** > **Get apps**.
 
-    :::image type="content" source="media/service-template-apps-install-distribute/power-bi-get-apps.png" alt-text="Screenshot of the Power BI apps page with get apps highlighted.":::
+    :::image type="content" source="media/service-template-apps-install-distribute/power-bi-get-apps.png" alt-text="Screenshot of the Power BI apps page with get apps highlighted." lightbox="media/service-template-apps-install-distribute/power-bi-get-apps.png":::
 
 1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by using the search box. Type part of the name of the template app, or select a category such as finance, analytics, or marketing to find the item you're looking for.
 
@@ -40,11 +40,11 @@ To install, customize, and distribute a template app, you need:
 
 1. When you find the template app, select it. The template app offer will display. Select **Get It Now**.
 
-   :::image type="content" source="media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png" alt-text="Screenshot of the AppSource page showing the GitHub template app, get it now is highlighted.":::
+   :::image type="content" source="media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png" alt-text="Screenshot of the AppSource page showing the GitHub template app, get it now is highlighted." lightbox="media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png":::
 
 1. In the dialog box that appears, select **Install**.
 
-    :::image type="content" source="media/service-connect-to-github/power-bi-github-install-dialog.png" alt-text="Screenshot of the GitHub template app install dialog.":::
+    :::image type="content" source="media/service-connect-to-github/power-bi-github-install-dialog.png" alt-text="Screenshot of the install dialog for the GitHub template app.":::
   
     The app is installed, along with a workspace of the same name that has all the artifacts needed for further [customization](#customize-and-share-the-app).
 
@@ -65,13 +65,13 @@ To install, customize, and distribute a template app, you need:
 
 1. Select the **Connect your data** link on the banner at the top of the page.
 
-   ![GitHub app connect your data link](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
+   ![GitHub app connect your data link](media/service-connect-to-github/service-github-app-connect-data.png)
 
     This opens the parameters dialog, where you change the data source from the sample data to your own data source (see [known limitations](service-template-apps-overview.md#known-limitations)), followed by the authentication method dialog. You may have to redefine the values in these dialogs. See the documentation of the specific template app you're installing for details.
 
    ![Screenshot of connect to data dialogs.](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-    Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
+    Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you're viewing sample data.
 
     ![Viewing sample data](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
@@ -83,14 +83,14 @@ After you've connected to your data and data refresh is complete, you can custom
 
 To customize and share your app, select the pencil icon at the top right corner of the page.
 
-![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+![Screenshot of the pencil icon on the menu.](media/service-template-apps-install-distribute/customize-and-share.png)
 
 For information about editing artifacts in the workspace, see
 
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#create-and-publish-your-app) to learn how to do this.
+When you're done making changes to the artifacts in the workspace, you're ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#create-and-publish-your-app) to learn how to do this.
 
 ## Update a template app
 
@@ -107,9 +107,9 @@ If you originally downloaded the app from AppSource, when a new version of the t
 >[!NOTE]
 >If you originally got the app via direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.
 
-  To install the update, either click **Get it** on the notification banner or in the notification center, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, simply click the link.
+  To install the update, either select **Get it** on the notification banner or in the notification center, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, select the link.
   
-  You will be asked how you want the update to affect your currently installed app.
+  You're asked how you want the update to affect your currently installed app.
 
   ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
 
@@ -122,12 +122,12 @@ If you originally downloaded the app from AppSource, when a new version of the t
 ### Overwrite behavior
 
 * Overwriting updates the reports, dashboards, and dataset in the workspace, not the app. Overwriting doesn't change app navigation, setup, and permissions.
-* If you chose the second option above, after you've updated the workspace **you need to update the app to apply changes from the workspace to the app**.
+* If you chose the second option, after you've updated the workspace **you need to update the app to apply changes from the workspace to the app**.
 * Overwriting keeps configured parameters and authentication. After update, an automatic dataset refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
 
   ![Sample data](media/service-template-apps-install-distribute/power-bi-sample-data.png)
 
-* Overwriting always presents sample data until the refresh is complete. If the template app author made changes to the dataset or parameters, users of the workspace and app will not see the new data until the refresh is complete. Rather, they will continue to see sample data during this time.
+* Overwriting always presents sample data until the refresh is complete. If the template app author made changes to the dataset or parameters, users of the workspace and app won't see the new data until the refresh is complete. Instead, they'll still see sample data during this time.
 * Overwriting never deletes new reports or dashboards you've added to the workspace. It only overwrites the original reports and dashboards with changes from the original author.
 
 >[!IMPORTANT]
@@ -137,12 +137,12 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
 An installed template app consists of the app and its associated workspace. If you want to remove the template app, you have two options:
 
-* **Completely remove the app and its associated workspace**: To completely remove template app and its associated workspace, go to the app tile on the Apps page, select the trash icon, and then click **Delete** in the dialog that appears.
+* **Completely remove the app and its associated workspace**: To completely remove template app and its associated workspace, go to the app tile on the Apps page, select the trash icon, and then choose **Delete** in the dialog that appears.
 * **Unpublish the app**: This option removes the app but keeps its associated workspace. This option is useful if, for instance, there are customizations that you made that you want to keep.
 
-    To un-publish the app:
+    To unpublish the app:
     1. Open the app.
-    1. Click the edit app pencil icon to open the template app's workspace.
+    1. Select the edit app pencil icon to open the template app's workspace.
     1. In the template app workspace, select **More option (...)**, and then choose **Unpublish App**.
 
         ![Screenshot of unpublish app option.](media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png)
