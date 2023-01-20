@@ -8,7 +8,7 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 01/19/2023
+ms.date: 01/20/2023
 ---
 
 # What are paginated reports in Power BI?
@@ -109,6 +109,10 @@ In the Power BI service, you can use the deployment pipeline tool with paginated
 - Production
 
 Read about how to [get started with deployment pipelines](../create-reports/deployment-pipelines-get-started.md?tabs=paginated-reports) in the Power BI service.
+
+## Embed Power BI paginated reports
+
+With Power BI embedded analytics, you can create Power BI content that displays paginated reports in a fully integrated and interactive application. You can embed paginated reports either for your customers or for your organization. See [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md) for more information.
 
 ## Considerations and limitations
 
