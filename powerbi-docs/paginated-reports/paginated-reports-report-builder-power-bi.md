@@ -1,6 +1,6 @@
 ---
 title: "What are paginated reports in Power BI?"
-description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.
+description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services, and now they're available in the Power BI service. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.custom: video-jXTiYJKw1Rs, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 01/11/2023
+ms.date: 01/19/2023
 ---
 
 # What are paginated reports in Power BI?
@@ -22,7 +22,7 @@ Here are some quick links if you're ready to get started:
 - [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Sample Power BI paginated reports](paginated-reports-samples.md)
-- Looking for information about Report Builder for Power BI Report Server or SQL Server Reporting Services? See [Install Report Builder - Power BI Report Server](../report-server/install-report-builder.md) instead.
+- Looking for information about Microsoft Report Builder for Power BI Report Server and SQL Server Reporting Services? See [Install Microsoft Report Builder - Power BI Report Server](../report-server/install-report-builder.md) instead.
 
 Paginated reports often have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice, and repeating headers and footers.
 
