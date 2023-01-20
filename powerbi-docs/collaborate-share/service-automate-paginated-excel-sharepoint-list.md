@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to various supported formats and scenarios. In this article, you use a Power Automate template to automate setting up recurring exports of single or multiple paginated reports. You export them in a desired format for each row in an Excel Online table or SharePoint Online list. You can distribute the exported paginated report to OneDrive for work or school or a SharePoint Online site, or email it via Office 365 Outlook.
 
-:::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-overview.png" alt-text="Export a paginated report by using an Excel Online table.":::
+:::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-overview.png" alt-text="Screenshot that shows how to export a paginated report by using an Excel Online table.":::
 
 Each row in your Excel Online table or SharePoint Online list can represent a single user to receive a paginated report on a subscription basis. Or instead, each row can represent a unique paginated report you wish to distribute. Your table or list requires a column that specifies how to distribute a report, whether OneDrive, SharePoint Online, or Outlook. The Power Automate flow uses this column in its Switch statement.
 
@@ -48,11 +48,11 @@ To follow along, make sure you meet these criteria:
 
 1. (Optional) Select **Show advanced options** to set specific **Recurrence** parameters, including **Time zone**, **Start time**, **On these days**, **At these hours**, and **At these minutes**.
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-advanced-recurrence-3.png" alt-text="Optional, select advanced recurrence options.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-advanced-recurrence-3.png" alt-text="Screenshot that shows the option to select advanced recurrence options.":::
 
 1. In the **Location** box, select OneDrive for work or school or the SharePoint Online site where your Excel Online table or SharePoint Online list is saved. Then, select the **Document Library** from the dropdown list.
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-location-4.png" alt-text="Select the location of the Excel Online table.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-location-4.png" alt-text="Screenshot that shows where to select the location of the Excel Online table.":::
 
 1. Select the Excel Online file or SharePoint Online list in the **File** box. Select the name of the table or list from the dropdown list in the **Table** box. 
  
@@ -63,25 +63,25 @@ To follow along, make sure you meet these criteria:
 
 1. Initialize a variable to use for the file name. You can keep or modify the default values for **Name** and **Value**, but leave the **Type** value as **String**.  
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-name-type-6.png" alt-text="Fill in the Name and Value boxes, and keep the Type value set to String.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-name-type-6.png" alt-text="Screenshot that shows the Default output file name dialog box.":::
 
 1. In the **Workspace** box, select a workspace in a reserved capacity. In the **Report** box, select the paginated report in the selected workspace you want to export. If you set **Enter a custom value** from the dropdown list, you can set **Workspace** and **Report** to equal a column in your Excel Online table or SharePoint Online list. These columns should contain Workspace IDs and Report IDs, respectively.  
 
 1. Select an **Export Format** from the dropdown list, or set it equal to a column in your Excel Online table containing desired export formats. for example PDF, DOCX, or PPTX. Optionally, you can specify parameters for the paginated report. Find detailed descriptions of the parameters in the [connector reference for the Power BI REST API](/connectors/powerbi/#export-to-file-for-paginated-reports).
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-export-format-9.png" alt-text="Fill out the Export to File for Paginated Reports dialog box.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-export-format-9.png" alt-text="Screenshot that shows the Export to File for Paginated Reports dialog box.":::
 
 1. In the **Value** box, enter a name for the paginated report once it's exported. Be sure to enter a file extension. You can set it statically, for example `.pdf`, `.docx`, or `.pptx`. Or, set it dynamically by selecting the column in your Excel table corresponding to your desired export format. 
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-output-value-10.png" alt-text="Select the name of the report and a file extension.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-output-value-10.png" alt-text="Screenshot that shows where to select the name of the report and a file extension.":::
 
 1. In the **Switch** section, populate the **On** box with the column in your Excel Online table corresponding to the desired method of delivery: **OneDrive**, **SharePoint**, or **Email**. 
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-switch-11.png" alt-text="In the Switch section, populate the On box with the column in your Excel Online table.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-switch-11.png" alt-text="Screenshot that shows the Switch section where you populate the On box with the column in your Excel Online table.":::
 
 1. In the **Case**, **Case 2**, and **Case 3** sections, enter the values present in the Excel Online table column selected in the previous step.  
 
-    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-1-2-3-12.png" alt-text="Enter values for Case, Case 2, and Case 3.":::
+    :::image type="content" source="media/service-automate-paginated-excel-sharepoint-list/excel-template-case-1-2-3-12.png" alt-text="Screenshot that shows where to enter values for Case, Case 2, and Case 3.":::
 
 1. In the case where you're saving your paginated report to OneDrive, select the **Folder Path** where it should be saved.  
 
