@@ -23,6 +23,8 @@ You can get seamless single sign-on (SSO) connectivity, enabling Power BI report
 > [!NOTE]
 > SSO is only supported by Power BI datasets and not by Power BI dataflows.
 
+## Supported data sources for SSO
+
 AD SSO is usually configured for on-premises data sources that are secured within your on-premises network. Azure AD SSO is configured for data sources that support Azure Active Directory authentication, typically cloud data sources, secured behind an Azure Virtual Network.
 
 While the on-premises data gateway supports SSO by using [DirectQuery](desktop-directquery-about.md) or *Refresh* for the AD-based SSO options, only [DirectQuery](desktop-directquery-about.md) is supported for Azure AD SSO.
@@ -48,6 +50,8 @@ Power BI supports the following data sources:
 
 > [!NOTE]
 > SQL Server Analysis Services also supports SSO, but does so using [Live connections](service-gateway-enterprise-manage-ssas.md#authentication-to-a-live-analysis-services-data-source), rather than using Kerberos or SAML. Power BI doesn't support SSO for [M-extensions](/power-query/samples/trippin/9-testconnection/readme).
+
+## Interact with reports that rely on SSO
 
 When a user interacts with a DirectQuery report in the Power BI service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying data source. When you configure SSO for the data source, queries execute under the identity of the user that interacts with Power BI. That is, they run through the web experience or Power BI mobile apps. Therefore, each user sees precisely the data for which they have permissions in the underlying data source.
 
