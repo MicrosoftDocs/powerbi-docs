@@ -50,7 +50,7 @@ Complete the **Navigation** and **Permissions** tabs, then select **Update app**
 
 :::image type="content" source="media/sample-sales-marketing-template-app/power-bi-select-update-app-2.png" alt-text="Screenshot of the Power BI service, highlighting the Update app button.":::
 
-For more information, see [instal, update, and share template apps in your organization](../connect-data/service-template-apps-install-distribute.md).
+For more information, see [Install, update, and share template apps in your organization](../connect-data/service-template-apps-install-distribute.md).
 
 ## Next steps
 
