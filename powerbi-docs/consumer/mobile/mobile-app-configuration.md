@@ -11,9 +11,9 @@ ms.date: 01/20/2023
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
 
-The Power BI Mobile app for iOS and Android supports app settings that allow administrators of mobile device management (MDM) services, such as Intune, to customize the behavior of the app.
+The Power BI mobile app for iOS and Android supports app settings that allow administrators of mobile device management (MDM) services, such as Intune, to customize the behavior of the app.
 
-The Power BI Mobile app supports the following configuration scenarios:
+The Power BI mobile app supports the following configuration scenarios:
 
 - Report Server configuration (iOS and Android)
 - Data protection settings (iOS and Android)
@@ -28,7 +28,7 @@ The Power BI app for iOS and Android allows administrators to remotely "push" th
 |---|---|---|
 | com.microsoft.powerbi.mobile.ServerURL | String | Report Server URL.<br><br>Should start with http/https.|
 | com.microsoft.powerbi.mobile.ServerUsername | String | [optional]<br><br>The username to use for connecting the server.<br><br>If one does not exist, the app prompts the user to type the username for the connection.|
-| com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional]<br><br>Default value is "Report server"<br><br>A friendly name used in the app to represent the server. |
+| com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional]<br><br>Default value is "Report server".<br><br>A friendly name used in the app to represent the server. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [optional]<br><br>Default value is True. When set to True, it overrides any Report Server definition already in the mobile device. Existing servers that are already configured are deleted. Override set to True also prevents the user from removing that configuration.<br><br>Set to False adds the pushed values, leaving any existing settings. If the same server URL is already configured in the mobile app, the app leaves that configuration as is. The app doesn't ask the user to reauthenticate for the same server. |
 
 ## Data protection settings (iOS and Android)
@@ -37,7 +37,7 @@ The Power BI mobile app for iOS and Android offers administrators the ability to
 
 | Key | Type | Description |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID (iOS) or Fingerprint ID (Android), can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID, FaceID (iOS), or Fingerprint ID (Android), can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
 
 >[!NOTE]
 >Data protection settings are applied only on Android devices that support biometric authentication.
@@ -67,9 +67,9 @@ The Power BI app for iOS and Android offers administrators the ability to config
 | com.microsoft.powerbi.mobile.ReportTapInteraction | String |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configure whether a tap on a visual will also make a data point selection. |
 | com.microsoft.powerbi.mobile.EnableMultiSelect | Boolean |  <nobr>True</nobr><br><nobr>False</nobr> | Configure whether a tap on a data point will replace the current selection or be added to the current selection. |
 | com.microsoft.powerbi.mobile.RefreshAction | String |  <nobr>pull-to-refresh</nobr><br>button | Configure whether the user will have a button to refresh the report or should use pull to refresh. |
-| com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto hidden. |
+| com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto-hidden. |
 
-## Deploying app configuration settings
+## Deploy app configuration settings
 
 The following are the steps you need to create an app configuration policy. Once you've created the configuration policy, you can assign its settings to groups of users.
 
