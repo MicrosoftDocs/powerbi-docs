@@ -54,18 +54,26 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
 
-    ![Screenshot of the Quick Insights canvas.](media/service-insights/power-bi-insights.png)
+    :::image type="content" source="media/service-insights/power-bi-insights.png" alt-text="Screenshot of the Quick Insights canvas" lightbox="media/service-insights/power-bi-insights.png":::
 
 ## Interact with the insight cards
 
 1. Hover over a card and select the pin icon to add the visualization to a dashboard.
 
-2. Hover over a card, select **More options** (...), and then choose **View insights**.
+    :::image type="content" source="media/service-insights/power-bi-insights-pin-icon.png" alt-text="Screenshot of a card, highlighting the pin icon.":::
+    * Pin the visualization to the dashboard of your choice.
+    :::image type="content" source="media/service-insights/power-bi-pin-menu.png" alt-text="Screenshot of the Pin to dashboard dialog.":::
+
+2. Go to the dashboard where you added the visualization.
+
+    :::image type="content" source="media/service-insights/power-bi-insights-go-to-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog, highlighting Go to dashboard.":::
+
+3. Hover over the pinned card, select **More options** (...), and then choose **View insights**.
 
     The insight screen opens in Focus mode.
 
     ![Screenshot of an insight in Focus mode.](media/service-insights/power-bi-insight-focus.png)
-3. In Focus mode you can:
+4. In Focus mode you can:
 
    * Filter the visualizations. If the **Filters** pane isn't already open, expand it by selecting the arrow on the right side of the window.
 
@@ -78,7 +86,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
      The insight displays on the left. New cards, based solely on the data in that single insight, display along the right.
 
        ![Screenshot of an insight and cards displaying data on that insight.](media/service-insights/power-bi-insights-on-insights-new.png)
-4. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
+5. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
 
 ## Next steps
 
