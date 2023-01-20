@@ -28,14 +28,14 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 
 Keep the following notes in mind:
 
-* A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
+* A gateway must be installed and running in order for the Power BI service to connect to on-premises data sources and refresh the dataset.
 * When using Excel 2013, make sure you've updated Power Query to the latest version.
 * Refresh isn't supported for Excel workbooks imported from a local drive where data exists only in worksheets or linked tables. Refresh is supported for worksheet data if it's stored and imported from OneDrive. To learn more, see [Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online](refresh-excel-file-onedrive.md).
 * When you refresh a dataset created from an Excel workbook imported from a local drive, only the data queried from data sources is refreshed.
 
   If you change the structure of the data model in Excel or Power Pivot, for example, create a new measure or change the name of a column, those changes aren't copied to the dataset. If you make such changes, reupload or republish the workbook.
 
-  If you expect to make regular changes to the structure of your workbook and you want those changes to be reflected in the dataset in Power BI without having to reupload, consider putting your workbook on OneDrive. Power BI automatically refreshes both the structure and worksheet data from workbooks stored and imported from OneDrive.
+  If you expect to make regular changes to the structure of your workbook and you want those changes to be reflected in the dataset in the Power BI service without having to reupload, consider putting your workbook on OneDrive. The Power BI service automatically refreshes both the structure and worksheet data from workbooks stored and imported from OneDrive.
 
 ## How do I make sure data is loaded to the Excel data model?
 
