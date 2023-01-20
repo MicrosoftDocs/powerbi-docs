@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/07/2021
+ms.date: 01/20/2023
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -42,7 +42,7 @@ For example, by using composite models, you can build a model that combines the 
 
 A model that combines data from more than one DirectQuery source or that combines DirectQuery with import data is called a composite model.
 
-You can create relationships between tables as you always have, even when those tables come from different sources. Any relationships that are cross-source are created with a cardinality of many-to-many, regardless of their actual cardinality. You can change them to one-to-many, many-to-one, or one-to-one. Whichever cardinality you set, cross-source relationships have different behavior. You can't use Data Analysis Expressions (DAX) functions to retrieve values on the `one` side from the `many` side. You may also see a performance impact versus many-to-many relationships within the same source.
+You can create relationships between tables as you always have, even when those tables come from different sources. Any relationships that are cross-source are created with a cardinality of many-to-many, regardless of their actual cardinality. You can change them to one-to-many, many-to-one, or one-to-one. Whichever cardinality you set, cross-source relationships have different behavior. You can't use Data Analysis Expressions (DAX) functions to retrieve values on the `one` side from the `many` side. You might also see a performance impact versus many-to-many relationships within the same source.
 
 > [!NOTE]
 > Within the context of composite models, all imported tables are effectively a single source, regardless of the actual underlying data sources.
@@ -138,7 +138,7 @@ To allow confirmation that you've considered any security implications, Power BI
 
 Additionally, if an author adds *Table1* from *Model A* to a Composite Model (we'll call it *Model C* for reference), then a user viewing a report built on *Model C* could query **any table** in *Model A* that isn't protected by RLS.
 
-For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models, information that someone retrieves from one source by using the credentials of the user who opens the file would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. When you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
+For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models information that someone retrieves from one source by using the credentials of the user who opens the file would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. When you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
 
 ## Performance implications  
 
@@ -174,7 +174,7 @@ If you added another DirectQuery connection to another source, such as a DirectQ
 :::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources.":::
 
 > [!NOTE]
-> Importing data from another source will **not** add another source group, as all items from all imported sources are in one source group.
+> Importing data from another source will **not** add another source group, because all items from all imported sources are in one source group.
 
 ### Source groups and relationships
 
@@ -185,7 +185,7 @@ There are two types of relationships in a composite model:
 
 [Read more about the distinction between regular and limited relationships and their impact.](desktop-relationships-understand.md#relationship-evaluation)
 
-For example, below we've added three cross source group relationships, relating tables across the various source groups together:
+For example, in the following image we've added three cross source group relationships, relating tables across the various source groups together:
 
 :::image type="content" source="media/desktop-composite-models/composite-models-source-groups-3.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources and relationships between the source groups as described previously.":::
 
@@ -214,7 +214,7 @@ However, if a measure doesn't refer to items from a single remote source group e
 [Total Sales] = [Internet Sales] + [Reseller Sales]
 ```
 
-In this scenario, the **Internet Sales measure** isn't impacted by the calculation group defined in the remote model as they aren't part of the same model. However, the calculation group can change the result of the **Reseller Sales** measure, as they are in the same model. This fact means that the results returned by the **Total Sales** measure must be evaluated carefully. Imagine we use the calculation group in the remote model to return year-to-date results. The result returned by **Reseller Sales** is now a year-to-date value, while the result returned by **Internet Sales** is still an actual. The result of **Total Sales** is now likely unexpected, as it adds an actual to a year-to-date result.
+In this scenario, the **Internet Sales measure** isn't impacted by the calculation group defined in the remote model because they aren't part of the same model. However, the calculation group can change the result of the **Reseller Sales** measure, because they are in the same model. This fact means that the results returned by the **Total Sales** measure must be evaluated carefully. Imagine we use the calculation group in the remote model to return year-to-date results. The result returned by **Reseller Sales** is now a year-to-date value, while the result returned by **Internet Sales** is still an actual. The result of **Total Sales** is now likely unexpected, as it adds an actual to a year-to-date result.
 
 ## Considerations and limitations
 
