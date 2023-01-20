@@ -96,7 +96,7 @@ The current file option, too, can also be turned on or off at any time. When tur
 
 In Power BI Desktop, you select **File > Options and settings > Options**, and then select either the **Global** or **Current File** page. On either page, the option exists in the **Time intelligence** section.
 
-:::image type="complex" source="media/desktop-auto-date-time/auto-date-time-dax-auto-complete.png" alt-text="Screenshot of the Power BI Desktop Options box.":::
+:::image type="complex" source="media/desktop-auto-date-time/auto-date-time-configure-global-options.png" alt-text="Screenshot of the Power BI Desktop Options box.":::
    The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.
 :::image-end:::
 
