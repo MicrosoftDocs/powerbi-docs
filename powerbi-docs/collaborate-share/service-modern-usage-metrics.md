@@ -317,6 +317,7 @@ In addition to the above differences between previous and improved usage metrics
        - When a report is included in a Power BI App, it will generate a new Report ObjectId for the embedded report with the same name.
     - Dataset re-initialization
        - Each time a new dataset is created, a new report could be created.
+- The usage metrics report is not supported in My Workspace.
 
 ## Frequently asked questions
 
