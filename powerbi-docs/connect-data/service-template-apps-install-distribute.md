@@ -1,6 +1,6 @@
 ---
-title: Install, share, and update template apps in your organization - Power BI
-description: Learn about installing, customizing, and sharing template apps in your organization in Power BI.
+title: Install, share, and update template apps in your organization with Power BI
+description: Learn how you can install, customize, and share template apps with your organization from Power BI.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -13,39 +13,39 @@ ms.custom: intro-installation
 
 # Install, share, and update template apps in your organization
 
-Are you a Power BI analyst? If so, this article explains how you can  install [template apps](service-template-apps-overview.md) to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md). 
+Are you a Power BI analyst? If so, this article explains how you can install [template apps](service-template-apps-overview.md) to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md).
 
-![Power BI apps installed](media/service-template-apps-install-distribute/power-bi-get-apps.png)
+:::image type="content" source="media/service-template-apps-install-distribute/power-bi-all-apps.png" alt-text="Screenshot of the Power BI apps page in the main pane.":::
 
-If you're interested in creating template apps yourself for distribution outside your organization, see [Create a template app in Power BI](service-template-apps-create.md). With little or no coding, Power BI partners can build Power BI apps and make them available to Power BI customers. 
+If you're interested in creating template apps yourself for distribution outside your organization, see [Create a template app in Power BI](service-template-apps-create.md). With little or no coding, Power BI partners can build Power BI apps and make them available to Power BI customers.
 
 ## Prerequisites  
 
-To install, customize, and distribute a template app, you need: 
+To install, customize, and distribute a template app, you need:
 
 * A [Power BI pro license](../fundamentals/service-self-service-signup-for-power-bi.md).
 * Permissions to install template apps on your tenant.
 * A valid installation link for the app, which you get either from AppSource or from the app creator.
-* A good familiarity with the [basic concepts of Power BI ](../fundamentals/service-basic-concepts.md).
+* A good familiarity with the [basic concepts of Power BI](../fundamentals/service-basic-concepts.md).
 
 ## Install a template app
 
 1. In the nav pane in the Power BI service, select **Apps** > **Get apps**.
 
-    ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
+    :::image type="content" source="media/service-template-apps-install-distribute/power-bi-get-apps.png" alt-text="Screenshot of the Power BI apps page with get apps highlighted.":::
 
-1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by using the search box. Typing part of the name of the template app, or of a category such as finance, analytics, marketing, etc., will make it easier to find the item you're looking for.
+1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by using the search box. Type part of the name of the template app, or select a category such as finance, analytics, or marketing to find the item you're looking for.
 
-    ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
+    :::image type="content" source="media/service-template-apps-install-distribute/app-source-template-apps.png" alt-text="Screenshot of the AppSource page with template apps highlighted.":::
 
-1. When you find the template app you're looking for, click it. The template app offer will display. Click **GET IT NOW**.
+1. When you find the template app, select it. The template app offer will display. Select **Get It Now**.
 
-   ![Template app offer](media/service-template-apps-install-distribute/power-bi-template-app-offer.png)
+   :::image type="content" source="media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png" alt-text="Screenshot of the AppSource page showing the GitHub template app, get it now is highlighted.":::
 
 1. In the dialog box that appears, select **Install**.
 
-    ![Install app](media/service-template-apps-install-distribute/power-install-dialog.png)
-    
+    :::image type="content" source="media/service-connect-to-github/power-bi-github-install-dialog.png" alt-text="Screenshot of the GitHub template app install dialog.":::
+  
     The app is installed, along with a workspace of the same name that has all the artifacts needed for further [customization](#customize-and-share-the-app).
 
     > [!NOTE]
@@ -85,8 +85,8 @@ To customize and share your app, select the pencil icon at the top right corner 
 
 ![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
 
-
 For information about editing artifacts in the workspace, see
+
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
@@ -97,10 +97,10 @@ Once you are done making any changes you wish to the artifacts in the workspace,
 From time to time, template app creators release new improved versions of their template apps, via either AppSource, direct link, or both.
 
 If you originally downloaded the app from AppSource, when a new version of the template app becomes available, you get notified in two ways:
+
 * An update banner appears in the Power BI service informing you that a new app version is available.
   ![Template app update notification banner](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
 * You receive a notification in Power BI's notification pane.
-
 
   ![Template app update notification pane](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
@@ -136,16 +136,16 @@ If you originally downloaded the app from AppSource, when a new version of the t
 ## Delete a template app
 
 An installed template app consists of the app and its associated workspace. If you want to remove the template app, you have two options:
+
 * **Completely remove the app and its associated workspace**: To completely remove template app and its associated workspace, go to the app tile on the Apps page, select the trash icon, and then click **Delete** in the dialog that appears.
 * **Unpublish the app**: This option removes the app but keeps its associated workspace. This option is useful if, for instance, there are customizations that you made that you want to keep.
 
-    To unpublish the app:
+    To un-publish the app:
     1. Open the app.
     1. Click the edit app pencil icon to open the template app's workspace.
     1. In the template app workspace, select **More option (...)**, and then choose **Unpublish App**.
 
         ![Screenshot of unpublish app option.](media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png)
-
 
 ## Next steps
 
