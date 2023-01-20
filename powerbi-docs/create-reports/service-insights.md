@@ -15,7 +15,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Do you have a new dataset and aren't sure where to start? Need to build a dashboard quickly? Want to look for insights you may have missed?
+Do you have a new dataset and aren't sure where to start? Need to build a dashboard quickly? Want to look for insights you might have missed?
 
 Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire dataset (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
 
@@ -49,7 +49,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
     ![Screenshot of the Insights are ready dialog.](media/service-insights/pbi_autoinsightsuccess.png)
 
     > [!NOTE]
-    > Some datasets can't generate insights because the data isn't statistically significant. To learn more, see [Optimize your data for insights](service-insights-optimize.md).
+    > Some datasets can't generate insights because the data isn't statistically significant. For more information, see [Optimize your data for Power BI quick insights](service-insights-optimize.md).
     >
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
@@ -82,7 +82,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
 ## Next steps
 
-- If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md).
-- Learn about the [types of Quick Insights available](../consumer/end-user-insight-types.md).
+- [Optimize your data for Power BI quick insights](service-insights-optimize.md).
+- [Types of Insights supported by Power BI](../consumer/end-user-insight-types.md).
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/).
