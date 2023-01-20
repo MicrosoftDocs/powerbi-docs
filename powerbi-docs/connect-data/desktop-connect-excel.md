@@ -17,7 +17,7 @@ Connecting to an Excel workbook from Power BI Desktop is straightforward, and th
 
 ## Connect to an Excel workbook
 
-In Power BI Desktop, select **Get Data > Excel** from the **Home** ribbon.
+In Power BI Desktop, select **Get data > Excel** from the **Home** ribbon.
 
 ![Screenshot shows Power BI Desktop with Get data, then Excel selected from the home ribbon.](media/desktop-connect-excel/connect_to_excel_1.png)
 
