@@ -68,7 +68,7 @@ A sensitivity label will also be added to the metadata of the copied visual. The
 
   :::image type="content" source="media//end-user-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot of a visual with the Copy icon disabled.":::
 
-Q: Why is the Copy icon disabled on a visual?
+Q: Why is the Copy icon disabled on a visual?  
 A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain visuals. This includes:
 
 * ESRI and other map visuals
@@ -81,11 +81,11 @@ A: The ability to copy a visual can be turned off by your IT department or Power
 Q: Why is my visual not pasting correctly?  
 A: There are limitations for custom visuals and animated visuals.
 
-Q: Can I to copy a visual from my embedded Power BI report?  
+Q: Can I copy a visual from my embedded Power BI report?  
 A: *Copy visual* is supported only in the **embed for your organization** scenario. It isn't available in the **embed for your customers** scenario.
 
 ## Next steps
 
-* [Visualizations types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Copy and paste a report visualization](../visuals/power-bi-visualization-copy-paste.md).
-* More questions? [Try the Power BI Community](https://community.powerbi.com/)
+* [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Copy and paste a report visualization](../visuals/power-bi-visualization-copy-paste.md)
+* More questions? [Ask the Power BI Community](https://community.powerbi.com/)
