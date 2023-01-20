@@ -1,5 +1,5 @@
 ---
-title: "Add dataset filters, data region filters, and group filters to a Power BI paginated report | Microsoft Docs"
+title: "Add filters to datasets, data regions, and groups in a Power BI paginated report | Microsoft Docs"
 description: Find out how filters can help you control which data is displayed and processed in your paginated reports in Power BI Report Builder.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,24 +9,24 @@ ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 01/18/2023
 ---
-# Add dataset filters, data region filters, and group filters to a paginated report (Power BI Report Builder)
+# Add filters to datasets, data regions, and groups in a paginated report (Power BI Report Builder)
 
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  In a paginated report, a filter is a part of a dataset, a data region, or a data region group that you create to limit the data that is used in the report. Filters are a way to help you control report data if you cannot change the dataset query.
+  In a Power BI paginated report, a filter is a part of a dataset, a data region, or a data region group that you create to limit the data that is used in the report. Filters help you control report data if you cannot change the dataset query.
   
- Filters help you control which data is displayed and processed in a report. You can specify filters for a dataset, a data region, or a group, in any combination.  
+ Filters also help you control which data is displayed and processed in a report. You can specify filters for a dataset, a data region, or a group, in any combination.  
   
- For more information, see [Add a Filter to a Dataset &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-data/add-a-filter-to-a-dataset-report-builder-and-ssrs) and [Filter Equation Examples &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).
+ For more information, see [Add a Filter to a Dataset &#40;Report Builder&#41;](/sql/reporting-services/report-data/add-a-filter-to-a-dataset-report-builder-and-ssrs) and [Filter Equation Examples &#40;Report Builder&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).
  
   
-##  <a name="When"></a> Choosing When to Set a Filter  
+##  <a name="When"></a> Choose when to set a filter  
  Specify filters for report items when you cannot filter data at the source. For example, use report filters when the data source does not support query parameters, or you must run stored procedures and cannot modify the query.  
   
  You can filter report data before or after it is retrieved for a report dataset. To filter data before it is retrieved, change the query for each dataset. When you filter data in the query, you filter data at the data source, which reduces the amount data that must be retrieved and processed in a report. To filter data after it is retrieved, create filter expressions in the report. You can set filter expressions for a dataset, a data region, or a group, including detail groups. You can also include parameters in filter expressions, providing a way to filter data for specific values or for specific users, for example, filtering on a value that identifies the user viewing the report.  
   
-##  <a name="Where"></a> Choosing Where to Set a Filter  
+##  <a name="Where"></a> Choose where to set a filter  
  Determine where you want to set a filter by the effect you want to achieve in your report. At run time, the report processor applies filters in the following order: on the dataset, and then on the data region, and then on groups from the top down in each group hierarchy. On a table, matrix, and list, filters for row groups, column groups, and adjacent groups are applied independently. On a chart, filters for category groups and series groups are applied independently. When the report processor applies the filter, all filter equations are applied in the order they are defined on the **Filter** page of the **Properties** dialog box for each report item, which is the equivalent of combining them with Boolean AND operations.  
   
  The following list compares the effect of setting filters on different report items:  
@@ -35,14 +35,14 @@ ms.date: 01/18/2023
   
 -   **On the data region** Set a filter on the data region when you want one or more data regions that are bound to a single dataset to provide a different view of the dataset. For example, set the filter on one Table data region to display the top ten stores for sales and a different Table data region to display the bottom ten stores for sales in the same report.  
   
--   **On the row or column groups in a Tablix data region** Set a filter on a group when you want to include or exclude certain values for a group expression to control which group values appear in the table, matrix, or list.  
+-   **On the row or column groups in a Tablix data region** Set a filter on a group when you want to include or exclude certain values for a group expression to control which group values appear in the table, matrix, or list. A *tablix* data region is a generalized layout report item that displays paginated report data in cells that are organized into rows and columns. 
   
 -   **On the details group in a Tablix data region** Set a filter on the details group when you have multiple detail groups for a data region and want each detail group to display a different set of data from the dataset.  
   
 -   **On the series or category groups in a Chart data region** Set a filter on a series or category group when you want to include or exclude certain values for a group expression to control which values appear in the chart.  
 
   
-##  <a name="FilterEquations"></a> Understanding a Filter Equation  
+##  <a name="FilterEquations"></a> Understanding a filter equation  
  At run time, the report processor converts the value to the specified data type, and then uses the specified operator to compare the expression and value. The following list describes each part of the filter equation:  
   
 -   **Expression** Defines what you are filtering on. Typically, this is a dataset field.  
@@ -58,7 +58,7 @@ ms.date: 01/18/2023
 ### Expression  
  When the filter equation is evaluated by the report processor at run time, the data types for the expression and the value must be the same. The data type of the field you select for **Expression** is determined by the data processing extension or data provider that is used to retrieve data from the data source. The data type of the expression that you enter for **Value** is determined by defaults. The choices for data type are determined by the data types supported for a report definition. Values from the database might be converted by the data provider to a CLR type.  
   
-### Data Type  
+### Data type  
  For the report processor to compare two values, the data types must be the same. The following table lists the mapping between CLR data types and report definition data types. Data that you retrieve from a data source might be converted to a data type that is different by the time it is report data.  
   
 |**Report Definition Schema Data Type**|**CLR Type(s)**|  
@@ -90,7 +90,7 @@ ms.date: 01/18/2023
  This value can also include a parameter reference to allow a user to interactively select a value on which to filter.  
   
 ## Next steps 
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
+ [Expression Uses in Reports &#40;Report Builder&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
  [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)  
   
   
