@@ -1,12 +1,12 @@
 ---
 title: 'Power BI app configuration settings'
-description: How to customize the behavior of Power BI using MDM tool
+description: Learn how to customize the behavior of Power BI mobile app using a supported mobile device management (MDM) tool.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/14/2020
+ms.date: 01/20/2023
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
@@ -15,10 +15,10 @@ The Power BI Mobile app for iOS and Android supports app settings that allow adm
 
 The Power BI Mobile app supports the following configuration scenarios:
 
-* Report Server configuration (iOS and Android)
-* Data protection settings (iOS and Android)
-* Disable single sign-on (iOS and Android)
-* Interaction settings (iOS and Android)
+- Report Server configuration (iOS and Android)
+- Data protection settings (iOS and Android)
+- Disable single sign-on (iOS and Android)
+- Interaction settings (iOS and Android)
 
 ## Report server configuration (iOS and Android)
 
@@ -40,11 +40,11 @@ The Power BI mobile app for iOS and Android offers administrators the ability to
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID (iOS) or Fingerprint ID (Android), can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
 
 >[!NOTE]
->Data protection settings will be applied only on Android devices that support biometric authentication.
+>Data protection settings are applied only on Android devices that support biometric authentication.
 
 ## Disable single sign-on (iOS and Android)
 
-By default the Power BI mobile app provides a convenient single sign-on experience for a single user by minimizing the number times the user has to provide a username and password. This single sign-on behavior is based on the assumption that the device is the user's personal device, and that there is only one user who uses the device and the apps on it.
+By default the Power BI mobile app provides a convenient single sign-on experience for a user by minimizing the number of times the user has to provide a username and password. This single sign-on behavior is based on the assumption that the device is the user's personal device, and that there is only one user who uses the device and the apps on it.
 
 Admins can turn on the **DisableSingleSignOn** setting in the app config file to remotely configure the app to disable single sign-on and explicitly ask for the user's password when they sign in.
 
@@ -60,7 +60,7 @@ This is an admin-only setting that is configured via remote configuration. The e
 The Power BI app for iOS and Android offers administrators the ability to configure interaction settings if it is decided that default interaction settings need to be changed across groups of users in an organization.
 
 >[!NOTE]
->Not all the interactions are currently supported on all devices. See [Configure report interaction settings](mobile-app-interaction-settings.md) for a chart that shows the currently availability across devices.
+>Not all the interactions are currently supported on all devices. See [Configure report interaction settings](mobile-app-interaction-settings.md) for a chart that shows the current availability across devices.
 
 | Key | Type | Values | Description |
 |---|---|---|---|
@@ -82,6 +82,6 @@ The Intune portal enables administrators to easily deploy these settings to the 
 
 ## Next steps
 
-* Get the Power BI mobile app from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
-* Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Join the conversation at the [Power BI Community](https://community.powerbi.com/)
+- Get the Power BI mobile app from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
+- Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
+- Join the conversation at the [Power BI Community](https://community.powerbi.com/)
