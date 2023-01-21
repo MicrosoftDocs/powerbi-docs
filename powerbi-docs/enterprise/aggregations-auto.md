@@ -96,9 +96,9 @@ As mentioned earlier, a training cycle may not complete within the time limits o
 
 #### Refresh history
 
-Each refresh operation is recorded in the dataset Refresh history. Important information about each refresh is shown, including the amount of memory aggregations in the cache are consuming for the configured query percentage. To view refresh history, in the dataset Settings page, select **Refresh history**. If you want to drill down a little further, select **Show** details.
+Each refresh operation is recorded in the dataset Refresh history. Important information about each refresh is shown, including the number of memory aggregations in the cache are consuming for the configured query percentage. To view refresh history, in the dataset Settings page, select **Refresh history**. If you want to drill down a little further, select **Show** details.
 
-:::image type="content" source="media/aggregations-automatic/cache-refresh-history.png" alt-text="Screenshot of the refresh history window showing the the scheduled history details.":::
+:::image type="content" source="media/aggregations-automatic/cache-refresh-history.png" alt-text="Screenshot of the refresh history window showing the scheduled history details.":::
 
 By regularly checking the refresh history you can ensure your scheduled refresh operations are completing within an acceptable period. Make sure refresh operations are successfully completing before the next scheduled refresh begins.
 
