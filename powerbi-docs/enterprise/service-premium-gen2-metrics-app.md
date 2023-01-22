@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/24/2022
+ms.date: 01/22/2023
 LocalizationGroup: Premium 
 ---
 
@@ -410,7 +410,7 @@ Displays the percentage of fast, moderate, and slow operations from the total nu
 
 ### Artifact size
 
-This visual displays the peak amount of memory detected in any three hour window, over a 14 day period, for the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
+This visual displays the peak amount of memory consumption detected in any three hour window, over a 14 day period, for the operations of the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Gen2 metrics app.":::
 
