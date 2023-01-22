@@ -57,25 +57,25 @@ If the sensitivity button is greyed out, it may indicate that you don't have an 
 
 ### The sensitivity label doesn't protect an exported file
 
-Sensitivity labels and file encryption protect data only when it leaves Power Bi via [supported export paths](./service-security-sensitivity-label-overview.md#supported-export-paths). Data that leaves Power BI via unsupported export paths will not inherit the sensitivity label and will not be encrypted.
+Sensitivity labels and file encryption protect data only when it leaves Power BI via [supported export paths](./service-security-sensitivity-label-overview.md#supported-export-paths). Data that leaves Power BI via unsupported export paths won't inherit the sensitivity label and won't be encrypted.
 
 To prevent leakage of sensitive data, the Power BI admin can block export from non-supported export paths using Power BI's [export and sharing settings](../admin/service-admin-portal.md).
 
 ### Miscellaneous problems with sensitivity labels
 
-* Don't use parent labels. A parent label is a label that has sublabels. You cannot apply parent labels, but a label that is already applied may become a parent label if it acquires sublabels. If you come across an item that has a parent label, apply the appropriate sublabel. To change a parent label, you must have [sufficient usage rights on the label](./service-security-sensitivity-label-change-enforcement.md).
+* Don't use parent labels. A parent label is a label that has sublabels. You can't apply parent labels, but a label that is already applied may become a parent label if it acquires sublabels. If you come across an item that has a parent label, apply the appropriate sublabel. To change a parent label, you must have [sufficient usage rights on the label](./service-security-sensitivity-label-change-enforcement.md).
 
     If an item has a parent label, note the following behavior:
-    * Parent labels will not be inherited.
-    * Mandatory label policies will not be applied to items that have a parent label. This means users won't be required to apply a meaningful label in order to save the item, and the item will escape mandatory label policies designed to promote total coverage.
+    * Parent labels won't be inherited.
+    * Mandatory label policies won't be applied to items that have a parent label. This means users won't be required to apply a meaningful label in order to save the item, and the item will escape mandatory label policies designed to promote total coverage.
     * If you try to export data from an item that has a parent label, export will fail.
-    * It is possible to publish a *.pbix* file that has a parent label, but if the parent label is protected, publish will fail. The solution is to apply a suitable sublabel.
+    * It's possible to publish a *.pbix* file that has a parent label, but if the parent label is protected, publish will fail. The solution is to apply a suitable sublabel.
 
 * In the Power BI service, if a dataset has a label that has been deleted from the label admin center, you won't be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label. In Desktop, if a *.pbix* file has such an invalid label, you won't be able to save the file.
 
 * Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Purview compliance portal](https://compliance.microsoft.com/).
 
-* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an **unprotected** sensitivity label will succeed, but the sensitivity label will not be inherited. See [Sensitivity label inheritance from data sources](./service-security-sensitivity-label-inheritance-from-data-sources.md) for detail.
+* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an **unprotected** sensitivity label will succeed, but the sensitivity label won't be inherited. See [Sensitivity label inheritance from data sources](./service-security-sensitivity-label-inheritance-from-data-sources.md) for detail.
 
 ## Problems with PBIX files
 
@@ -89,7 +89,9 @@ In Power BI Desktop, sensitivity labels with encryption settings affect access t
 
 Using sensitivity labels in Desktop requires the Desktop December 2020 release and later. If you try to open a protected *.pbix* file with a Desktop version earlier than December 2020, it will fail, and you'll be prompted to upgrade your Desktop version.
 
-Protected *.pbix* files can be only opened by a user who has [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights)
+Users with a free license can't open protected *.pbix* files.
+
+Protected *.pbix* files can be only opened by a user who has an appropriate license and [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights)
 
 In rare cases, it may happen that no one has the necessary usage rights for the relevant label except the person that set the label. Then, if that one person leaves the organization or changes aliases within the organization, all access to the .pbix file will be lost. The solution for regaining access to the file in such cases is to either change or remove the sensitivity label on the file using the [set](/rest/api/power-bi/admin/information-protection-set-labels-as-admin)/[remove](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin) sensitivity label Admin APIs. Contact your Power BI admin for assistance (only admins can run the Admin APIs).
 
@@ -114,7 +116,7 @@ Publishing or importing a .pbix file that has a **protected** sensitivity label 
 Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, **with the exception of the following scenarios**:
 
 * Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files: Refresh will fail. Neither report content nor label will be updated.
-* Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label will not be updated.
+* Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label won't be updated.
 * When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
 * If the dataset owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
@@ -213,7 +215,7 @@ Using Defender for Cloud Apps with Power BI is designed to help secure your orga
 * Defender for Cloud Apps can only operate on Excel, PowerPoint, and PDF files.
 * If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/services/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
 * Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Defender for Cloud Apps session control. [See more detail](/defender-cloud-apps/proxy-intro-aad#supported-apps-and-clients).
-* If you experience login difficulties, such as having to login more than once, it could be related to the way some apps handle authentication. See [Slow login in the Defender for Cloud Apps documentation](/defender-cloud-apps/troubleshooting-proxy#slow-login) for more information and remediation steps.
+* If you experience sign in difficulties, such as having to log in more than once, it could be related to the way some apps handle authentication. See [Slow login in the Defender for Cloud Apps documentation](/defender-cloud-apps/troubleshooting-proxy#slow-login) for more information and remediation steps.
 
 > [!CAUTION]
 > In the session policy, in the "Action" part, the "protect" capability works only if no label exists on the item. If a label already exists, the "protect" action won't apply; you can't override an existing label that has already been applied to an item in Power BI.
