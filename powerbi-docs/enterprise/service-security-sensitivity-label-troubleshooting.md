@@ -89,7 +89,9 @@ In Power BI Desktop, sensitivity labels with encryption settings affect access t
 
 Using sensitivity labels in Desktop requires the Desktop December 2020 release and later. If you try to open a protected *.pbix* file with a Desktop version earlier than December 2020, it will fail, and you'll be prompted to upgrade your Desktop version.
 
-Protected *.pbix* files can be only opened by a user who has [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights)
+Users with a free license can't open protected *.pbix* files.
+
+Protected *.pbix* files can be only opened by a user who has an appropriate license and [Full control and/or Export usage rights](/microsoft-365/compliance/encryption-sensitivity-labels) for the relevant label. The user that set the label also has Full control and can never be locked out. [See more detail](/azure/information-protection/configure-usage-rights)
 
 In rare cases, it may happen that no one has the necessary usage rights for the relevant label except the person that set the label. Then, if that one person leaves the organization or changes aliases within the organization, all access to the .pbix file will be lost. The solution for regaining access to the file in such cases is to either change or remove the sensitivity label on the file using the [set](/rest/api/power-bi/admin/information-protection-set-labels-as-admin)/[remove](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin) sensitivity label Admin APIs. Contact your Power BI admin for assistance (only admins can run the Admin APIs).
 
