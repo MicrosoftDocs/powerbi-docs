@@ -33,7 +33,7 @@ For both *embed for your customers* and *embed for your organization* solutions,
 
 You can acquire an Azure AD token in one of the following ways:
 
-* Use the external [Postman](https://www.postman.com/) tool to acquire a token.
+* Use the external [Postman](https://www.postman.com/) tool to acquire a token. For help with this, see the [Power BI Community thread](https://community.powerbi.com/t5/Developer/Power-BI-REST-API-using-postman-generate-embed-token/m-p/310153#M9157). Note that the request URL for a service principal must be https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token, but for a master user, it can be either https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token or https://login.microsoftonline.com/common/oauth2/token.
 
 * Follow the sample solutions at [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/). For example:  
   
