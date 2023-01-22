@@ -24,25 +24,25 @@ Follow these steps to sync the replicas in Windows PowerShell:
 1. Open PowerShell and log into Power BI by running this command:
 
     ```powershell
-    Login-PowerBI 
+    Login-PowerBI
     ```
 
 2. Get your workspace IDs by running the command below. Replace `<WorkspaceName>` with the name of your workspace.
 
     ```powershell
-    Get-PowerBIWorkspace -Name "<WorkspaceName>"  # Replace <WorkspaceID> with the ID of your workspace  
+    Get-PowerBIWorkspace -Name "<WorkspaceName>"  # Replace <WorkspaceName> with the name of your workspace
     ```
 
 3. Get the dataset ID by running the command below. Replace `<WorkspaceId>` with the ID of your workspace.
 
     ```powershell
-    Get-PowerBIDataset -WorkspaceId "<WorkspaceId>"  # Replace <WorkspaceID> with the ID of your workspace  
+    Get-PowerBIDataset -WorkspaceId "<WorkspaceId>"  # Replace <WorkspaceId> with the ID of your workspace
     ```
 
 4. Check the sync status of your dataset using the command below. Replace the values of `<WorkspaceId>` and `<DatasetId>` appropriately.
 
     ```powershell
-    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/syncStatus' -Method Get | ConvertFrom-Json | Format-List  # Replace <WorkspaceId> withe the ID of your workspace and <DatasetId> with the ID of your dataset    
+    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/syncStatus' -Method Get | ConvertFrom-Json | Format-List  # Replace <WorkspaceId> with the ID of your workspace and <DatasetId> with the ID of your dataset
     ```
 
     In the output, the `minActiveReadVersion` and `minActiveReadTimestamp` values refer to the *read-only* dataset copy. The `commitVersion` and `commitTimestamp` values, refer to the *read/write* dataset copy. A difference between them, indicates that the *read-only* replica represents an older version of the dataset.
@@ -50,7 +50,7 @@ Follow these steps to sync the replicas in Windows PowerShell:
 5. Sync the *read/write* and *read-only* dataset copies using the command below. Replace the values of `<WorkspaceId>` and `<DatasetId>` appropriately.
 
     ```powershell
-    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/sync' -Method Post | ConvertFrom-Json | Format-List  # Replace <WorkspaceID> withe the ID of your workspace and <DatasetID> with the ID of your dataset
+    Invoke-PowerBIRestMethod -Url 'groups/<WorkspaceId>/datasets/<DatasetId>/sync' -Method Post | ConvertFrom-Json | Format-List  # Replace <WorkspaceId> with the ID of your workspace and <DatasetId> with the ID of your dataset
     ```
 
     The sync status information in the output indicates that the *read/write* and *read-only* replicas are out of sync, which is expected because you just triggered the sync.  
