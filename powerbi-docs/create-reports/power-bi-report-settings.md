@@ -1,6 +1,6 @@
 ---
 title: 'Change settings for Power BI reports'
-description: Learn how to change settings for reports in Power BI Desktop and the Power BI service.
+description: Learn how to change settings for reports and control how report readers interact with your reports in Power BI Desktop and the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -70,9 +70,9 @@ The report **Settings** pane has three settings for controlling reader interacti
 - **Persistent filters** allow readers to [save filters on the report](power-bi-report-filter.md#allow-saving-filters).
 - **Filtering experience** has two more settings:
 
-    Allow report readers to [change filter types](power-bi-report-filter.md#restrict-changes-to-filter-type).
+    - Allow report readers to [change filter types](power-bi-report-filter.md#restrict-changes-to-filter-type).
 
-    Enable [search in the filter pane](power-bi-report-filter.md#filters-pane-search).
+    - Enable [search in the filter pane](power-bi-report-filter.md#filters-pane-search).
 
 ## Export data
 
@@ -80,7 +80,7 @@ By default, [report readers can export summarized or underlying data](/power-bi/
 
 ## Personalize visuals
 
-Allow your readers to change and personalize the visuals in your report. For more information, see [letting report readers personalize visuals](power-bi-personalize-visuals.md).
+Allow your readers to change and personalize the visuals in your report. For more information, see [Let users personalize visuals in a report](power-bi-personalize-visuals.md).
 
 ## Next steps
 
