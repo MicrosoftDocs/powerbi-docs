@@ -49,7 +49,7 @@ You can develop three different types, or *modes*, of models by using Power BI D
 
 ### Row-level security
 
-External-hosted models and Power BI desktop models can enforce row-Level security (RLS) to limit the data that certain users can retrieve. For example, users assigned to a **Salespeople** security group might be able to view report data only for the sales regions they're assigned to. RLS roles are *dynamic* or *static*. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md).
+External-hosted models and Power BI desktop models can enforce row-level security (RLS) to limit the data that certain users can retrieve. For example, users assigned to a **Salespeople** security group might be able to view report data only for the sales regions they're assigned to. RLS roles are *dynamic* or *static*. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md).
 
 ### Excel workbook models
 
