@@ -1,6 +1,6 @@
 ---
 title: Use the SAP Business Warehouse (BW) Connector in Power BI Desktop
-description: Use the SAP BW Connector in Power BI Desktop
+description: See how to install and use the SAP BW Connector in Power BI Desktop, how to update version 1 SAP BW reports, and SAP BW Connector troubleshooting.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -12,9 +12,9 @@ LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
 
-You can use Power BI Desktop to access SAP Business Warehouse (BW) data. The Implementation 2.0 SAP Connector has significant improvements in performance and capabilities from Implementation 1.0.
+You can use Power BI Desktop to access SAP Business Warehouse (SAP BW) data. The SAP BW Connector Implementation 2.0 has significant improvements in performance and capabilities from version 1.0.
 
-For more information about how SAP customers can benefit from connecting Power BI to their existing SAP BW systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
+For information about how SAP customers can benefit from connecting Power BI to their SAP BW systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
 >[!IMPORTANT]
 >Version 1.0 of the SAP BW connector is deprecated. New connections use Implementation 2.0 of the SAP BW connector. All support for version 1.0 will be removed from the connector in the near future. Use the information in this article to update existing version 1.0 reports so they can use Implementation 2.0 of the connector.
