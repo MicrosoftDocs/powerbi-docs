@@ -16,8 +16,8 @@ Every Power BI visual can display a context menu. The context menu allows you to
 When you right-click anywhere inside a visual's viewport (or long-press for touch devices), the context menu displays.
 There are two modes of context menus for each visual. The mode that displays depends on where you click inside the visual:
 
-* Calling the context menu on **empty space** gives you the basic context menu for the visual.
-* Calling the context menu on a specific **data point** gives you added options that can be applied to that data point. In this case, the context menu also contains the options *Show data point as a table*, *Include*, and *Exclude*, which will apply the corresponding filter to that data point.
+* Call the context menu on **empty space** to see the basic context menu for the visual.
+* Call the context menu on a specific **data point** for added options that can be applied to that data point. In this case, the context menu also contains the options *Show data point as a table*, *Include*, and *Exclude*, which will apply the corresponding filter to that data point.
 
 ## [Context menu on empty space](#tab/EmptySpace)
 
@@ -43,24 +43,28 @@ Use `selectionManager.showContextMenu()` with parameters `selectionId` and a pos
 The following example shows how to add a context menu to a visual. The code is taken from the `barChart.ts` file, which is part of the [sample BarChart visual](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart):
 
 ```typescript
-public update(options: VisualUpdateOptions) {
-    //...
-    //handle context menu
-    this.svg.on('contextmenu', (event) => {
-        let dataPoint: any = d3Select(event.target).datum();
-        this.selectionManager.showContextMenu((dataPoint && dataPoint.data && dataPoint.data.identity) ? dataPoint.data.identity : {}, {
-            x: event.clientX,
-            y: event.clientY
-        });
-        event.preventDefault();
-    });
-}
+constructor(options: VisualConstructorOptions) {
+        ...
+        this.handleContextMenu();
+    }
+
+private handleContextMenu() {
+        this.svg.on('contextmenu', () => {
+            const mouseEvent: MouseEvent = getEvent();
+            const eventTarget: EventTarget = mouseEvent.target;
+            let dataPoint: any = d3Select(<d3.BaseType>eventTarget).datum();
+            this.selectionManager.showContextMenu(dataPoint ? dataPoint.selectionId : {}, {
+                x: mouseEvent.clientX,
+                y: mouseEvent.clientY
+            });
+            mouseEvent.preventDefault();
+        });
+    }
 ```
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Add interactivity into visual by Power BI visuals selections](selection-api.md)
+* [Add interactivity into visual by Power BI visuals selections](selection-api.md)
+* [Build a bar chart](create-bar-chart.md)
 
->[!div class="nextstepaction"]
->[Build a bar chart](create-bar-chart.md)
+More questions? [Ask the Power BI Community](https://community.powerbi.com)
