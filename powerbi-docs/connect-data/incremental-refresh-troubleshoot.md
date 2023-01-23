@@ -24,7 +24,7 @@ Most problems that occur when configuring incremental refresh and real-time data
 
 ### Problem: Loading data takes too long
 
-In Power Query Editor, after selecting **Apply**, loading data takes an excessive amount of time and computer resources. There are several potential causes:
+In Power Query Editor, after selecting **Apply**, loading data takes an excessive amount of time and computer resources. There are several potential causes.
 
 #### Cause: Data type mismatch
 
