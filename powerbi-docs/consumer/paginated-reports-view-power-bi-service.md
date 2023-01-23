@@ -32,7 +32,7 @@ You can also export paginated reports to many formats:
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-in-service.png" alt-text="Screenshot of the workspace in the Power BI service and a paginated report highlighted.":::
 
-1. If the report has parameters, it will not appear when you first open it. Select Parameters, then select **View Report**. The following image is an example of a report with parameters.
+1. If the report has parameters, it will not appear when you first open it. Select **Parameters**, then select **View Report**. The following image is an example of a report with parameters.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-select-parameters.png" alt-text="Screenshot of the Parameters to view the report with the required field highlighted.":::
 
