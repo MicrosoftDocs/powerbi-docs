@@ -127,36 +127,36 @@ To embed your content, you'll need to obtain a few parameter values. The paramet
 
 |Parameter  |.NET Core  |.NET Framework  |React TypeScript |
 |---------|---------|---------|---------|
-|[Client ID](#client-id) |:::image type="icon" source="(../../media/yes.png)"::: |:::image type="icon" source="(../../media/yes.png)":::         |:::image type="icon" source="(../../media/yes.png)"::: |
-|[Client secret](#client-secret) |:::image type="icon" source="(../../media/yes.png)"::: |:::image type="icon" source="(../../media/yes.png)"::: |:::image type="icon" source="(../../media/no.png)"::: |
-|[Workspace ID](#workspace-id) |:::image type="icon" source="(../../media/no.png)"::: |:::image type="icon" source="(../../media/no.png)"::: |:::image type="icon" source="(../../media/yes.png)"::: |
-|[Report ID](#report-id) |:::image type="icon" source="(../../media/no.png)"::: |:::image type="icon" source="(../../media/no.png)"::: |:::image type="icon" source="(../../media/yes.png)"::: |
+|[Client ID](#client-id) |:::image type="icon" source="../../media/yes.png"::: |:::image type="icon" source="../../media/yes.png":::         |:::image type="icon" source="../../media/yes.png"::: |
+|[Client secret](#client-secret) |:::image type="icon" source="../../media/yes.png"::: |:::image type="icon" source="../../media/yes.png"::: |:::image type="icon" source="../../media/no.png"::: |
+|[Workspace ID](#workspace-id) |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/yes.png"::: |
+|[Report ID](#report-id) |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/no.png"::: |:::image type="icon" source="../../media/yes.png"::: |
 
 ### Client ID
 
 >[!TIP]
->**Applies to:** :::image type="icon" source="(../../media/yes.png)":::.NET Core :::image type="icon" source="(../../media/yes.png)":::.NET Framework :::image type="icon" source="(../../media/yes.png)":::React TypeScript
+>**Applies to:** :::image type="icon" source="../../media/yes.png":::.NET Core :::image type="icon" source="../../media/yes.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::React TypeScript
 
 [!INCLUDE[Get the client ID](../../includes/embed-tutorial-client-id.md)]
 
 ### Client secret
 
 >[!TIP]
->**Applies to:** :::image type="icon" source="(../../media/yes.png)":::.NET Core :::image type="icon" source="(../../media/yes.png)":::.NET Framework :::image type="icon" source="(../../media/no.png)":::React TypeScript
+>**Applies to:** :::image type="icon" source="../../media/yes.png":::.NET Core :::image type="icon" source="../../media/yes.png":::.NET Framework :::image type="icon" source="../../media/no.png":::React TypeScript
 
 [!INCLUDE[Get the client secret](../../includes/embed-tutorial-client-secret.md)]
 
 ### Workspace ID
 
 >[!TIP]
->**Applies to:** :::image type="icon" source="(../../media/no.png)":::.NET Core :::image type="icon" source="(../../media/no.png)":::.NET Framework :::image type="icon" source="(../../media/yes.png)":::React TypeScript
+>**Applies to:** :::image type="icon" source="../../media/no.png":::.NET Core :::image type="icon" source="../../media/no.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::React TypeScript
 
 [!INCLUDE[Get the workspace ID](../../includes/embed-tutorial-workspace-id.md)]
 
 ### Report ID
 
 >[!TIP]
->**Applies to:** :::image type="icon" source="(../../media/no.png)":::.NET Core :::image type="icon" source="(../../media/no.png)":::.NET Framework :::image type="icon" source="(../../media/yes.png)":::ReactTypeScript
+>**Applies to:** :::image type="icon" source="../../media/no.png":::.NET Core :::image type="icon" source="../../media/no.png":::.NET Framework :::image type="icon" source="../../media/yes.png":::ReactTypeScript
 
 [!INCLUDE[Get the report ID](../../includes/embed-tutorial-report-id.md)]
 
