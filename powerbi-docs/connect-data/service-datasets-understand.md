@@ -33,7 +33,7 @@ Except for streaming datasets, datasets represent data models, which use the mat
 
 There are two types of external-hosted models: SQL Server Analysis Services and [Azure Analysis Services](/azure/analysis-services/analysis-services-overview).
 
-To connect to a SQL Server Analysis Services model, you must install an [on-premises data gateway](service-gateway-onprem.md) on-premises or on a virtual machine (VM)-hosted infrastructure-as-a-service (IaaS). Azure Analysis Services doesn't require a gateway.
+To connect to a SQL Server Analysis Services model, you must install an [on-premises data gateway](service-gateway-onprem.md) on-premises or on a virtual machine-hosted infrastructure-as-a-service (IaaS). Azure Analysis Services doesn't require a gateway.
 
 It often makes sense to connect to Analysis Services when there are existing model investments, which typically form part of an enterprise data warehouse (EDW). Power BI can make a *live connection* to Analysis Services, and enforce data permissions by using the identity of the Power BI report user. SQL Server Analysis Services supports both multidimensional models, or cubes, and tabular models. As shown in the following image, a live connection dataset passes queries to external-hosted models.
 
@@ -43,7 +43,7 @@ It often makes sense to connect to Analysis Services when there are existing mod
 
 You can use Power BI Desktop, a client application for Power BI development, to develop a model. A Power BI Desktop model is effectively an Analysis Services tabular model.
 
-You can develop models by importing data from dataflows and then integrating them with external data sources. You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. The mode depends on whether data is imported into the model, or whether it remains in the data source. For more information about the modes, see [Dataset modes in the Power BI service](service-dataset-modes-understand.md).
+You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. You can develop models by importing data from dataflows and then integrating them with external data sources. The mode depends on whether data is imported into the model, or whether it remains in the data source. For more information about the modes, see [Dataset modes in the Power BI service](service-dataset-modes-understand.md).
 
 ### Row-level security
 
