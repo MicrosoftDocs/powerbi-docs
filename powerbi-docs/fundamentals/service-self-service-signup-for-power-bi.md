@@ -53,7 +53,7 @@ The exact steps for sign up can vary depending on your organization and what you
 
 - Select **Try free** from [powerbi.microsoft.com](https://powerbi.com). You may then be prompted to select **Try Power BI for free**.
 
-    ![Screenshot of Power BI service showing powerbi.microsoft.com in a web browser.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try.png)    
+    ![Screenshot of the Power BI service showing powerbi.microsoft.com in a web browser.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try.png)    
 
     ![Screenshot of Power BI service showing pthe Try Power BI for free prompt.](media/service-self-service-signup-for-power-bi/power-bi-start-free.png)            
 
@@ -113,7 +113,7 @@ If you'd like to cancel your trial before the expiration date, select your accou
 
 You can make a self-service purchase online from the Power BI website or from in-product purchase prompts. First, you'll be asked to enter an email address to ensure that your email address is already associated with at least one other Microsoft online service. If you're recognized by Microsoft, you're next directed to sign in. After signing in, you are asked to select how many subscriptions you want to buy, and to provide credit card payment. When the purchase is complete, you can begin using your subscription. You'll have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
 
-As with self-service sign-up and trials, your administrator can disable your ability to purchase a Power BI license. You administrator also has the ability to create an alternate path and process for making purchases. For these reasons, you may be presented with different screens than those shown below. 
+As with self-service sign-up and trials, your administrator can disable your ability to purchase a Power BI license. Your administrator also has the ability to create an alternate path and process for making purchases. For these reasons, you may be presented with different screens than those shown below. 
 
 If you have additional questions about self-service purchase, visit the [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
@@ -140,7 +140,7 @@ If self-service purchase is not available, contact your administrator about purc
 In most cases, you can sign up, try, or purchase Power BI service by following the described processes. Some of the issues that may prevent you from signing up are described below, with possible workarounds.
 
 **Personal email addresses**
- You attempt to sign up using a personal email addresses (for example @gmail.com) and you receive a message similar to one of these: 
+ You attempted to sign up using a personal email addresses (for example @gmail.com) and you receive a message similar to one of these: 
 
 *You entered a personal email address: Please enter your work email address so we can securely store your company's data*.
 

@@ -39,7 +39,7 @@ It's possible to have more than one license at the same time.  The service alway
 
 Premium is an organizational *subscription* that provides a different way to store content--in a virtual container called a *capacity*. With Premium capacity, anyone with permissions, whether they're inside or outside your organization, can view content stored in this Premium capacity, without purchasing individual Power BI Pro or Premium per-user licenses. 
 
-Premium capacity enables widespread distribution of content by Pro users without requiring Pro licenses for the recipients who view the content. The person who is creating the content in the Premium capacity uses a Pro licenses to connect to data sources, model data, and create reports and dashboards that are saved to a workspace in Premium capacity. Users without a Pro license can still access a workspace that's in Power BI Premium capacity, as long as they're assigned a [role in that workspace](end-user-workspaces.md). If the workspace owner creates an app based on content in that workspace, users without a Pro license can still view that app in Premium capacity, as long as they've been given permissions for that app. 
+Premium capacity enables widespread distribution of content by Pro users without requiring Pro licenses for the recipients who view the content. The person who is creating the content in the Premium capacity uses a Pro license to connect to data sources, model data, and create reports and dashboards that are saved to a workspace in Premium capacity. Users without a Pro license can still access a workspace that's in Power BI Premium capacity, as long as they're assigned a [role in that workspace](end-user-workspaces.md). If the workspace owner creates an app based on content in that workspace, users without a Pro license can still view that app in Premium capacity, as long as they've been given permissions for that app. 
 
 Within those workspaces, designers assign roles, like **Viewer**, **Contributor**, **Member**, and **Administrator**. These roles determine the extent to which colleagues can interact with the content. For more information, see [workspace permissions and roles.](end-user-workspaces.md) 
 
@@ -127,7 +127,7 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in ei
 
     :::image type="content" source="media/end-user-license/power-bi-ppu-trial.png" alt-text="Screenshot of dialog with Pro trial link.":::
 
-  If you do not see this dialog, or see a different message when you try to upgrade, that means that you administrator has disabled self-service trials. 
+  If you do not see this dialog, or see a different message when you try to upgrade, that means that your administrator has disabled self-service trials. 
 
   When the 60-day trial expires, your license reverts back to the previous version, either free or Pro. After your trial license reverts, you no longer have access to features that require a Power BI Premium Per User license. If you want to continue with a Premium Per User or a Pro license, contact your administrator or IT Help Desk about purchasing an upgrade. If you don't have an admin or IT Help Desk, visit [the Power BI pricing page](https://powerbi.microsoft.com/pricing/).
 
