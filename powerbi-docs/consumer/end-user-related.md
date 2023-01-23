@@ -20,14 +20,14 @@ The **Related content** pane shows you how your Power BI service content -- dash
 
 In the Power BI service, reports are built on datasets, report visuals are pinned to dashboards, and dashboard visuals link back to reports. But how do you know which dashboards are hosting visuals from your Marketing report? And how do you locate those dashboards? Is your Procurement dashboard using visuals from more than one dataset? If so, what are they named and how can you open and edit them? Is your HR dataset being used in any reports or dashboards at all? Or, can it be moved without causing any broken links? Questions like these can be answered on the **Related content** pane. Not only does the pane display the related content, it also allows you to take action on the content and easily navigate between the related content.
 
-:::image type="content" source="./media/end-user-related/power-bi-see-related-pane.png" alt-text="Screenshot that shows the Related content pane in the Power BI service.":::
+:::image type="content" source="./media/end-user-related/power-bi-see-related-pane-new.png" alt-text="Screenshot that shows the Related content pane in the Power BI service.":::
 
 > [!NOTE]
 > The related content feature does not work for streaming datasets.
 
 ## See related content for a dashboard or report
 
-Watch Will view related content for a dashboard. Then follow the step-by-step instructions below the video to try it out yourself with the Procurement Analysis sample.
+In the following video, watch Will view related content for a dashboard. Then follow the step-by-step instructions after the video to try it out yourself with the Sales and Marketing Sample.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
@@ -36,11 +36,11 @@ Watch Will view related content for a dashboard. Then follow the step-by-step in
 
 With a dashboard or report open, select **More options** (...) in the menu bar, and choose **See related content** from the dropdown.
 
-:::image type="content" source="./media/end-user-related/power-bi-see-related.png" alt-text="Screenshot that shows the More options drop-down menu.":::
+:::image type="content" source="./media/end-user-related/power-bi-see-related-new.png" alt-text="Screenshot that shows the More options dropdown menu.":::
 
-The **Related content** pane opens. For a dashboard, it shows all the reports that have visualizations pinned to the dashboard and their associated datasets. For this dashboard, there are visualizations pinned from only one report and that report is based on only one dataset. If you look at the image at the beginning of this article, you'll see related content for a dashboard that has visualizations pinned from two reports, and two datasets.
+The **Related content** pane opens. For a dashboard, it shows all the reports that have visualizations pinned to the dashboard and their associated datasets. For this dashboard, there are visualizations pinned from only one report and that report is based on only one dataset. If you look at the image at the beginning of this article, you'll see related content for a dashboard that has visualizations pinned from two reports, and one dataset.
 
-:::image type="content" source="./media/end-user-related/power-bi-view-related-dashboard.png" alt-text="Screenshot that shows the Related content pane for a dashboard.":::
+:::image type="content" source="./media/end-user-related/power-bi-view-related-dashboard-new.png" alt-text="Screenshot that shows the Related content pane for a dashboard.":::
 
 From here, you can take direct action on the related content, depending on your permissions. For example, select a report or dashboard name to open it. For a listed report, select an icon to open and edit the settings for the report, [get insights](end-user-insights.md), and more. For a dataset, review the last refresh date and time, [analyze in Excel](../collaborate-share/service-analyze-in-excel.md), [get insights](end-user-insights.md), refresh, and more.
 
@@ -65,7 +65,7 @@ From here, you can take direct action on the related content. For example, selec
 ## Considerations and limitations
 
 - If you don't see "See related", look for the icon instead :::image type="icon" source="./media/end-user-related/power-bi-view-related-icon-new.png":::. Select the icon to open the **Related content** pane.
-- To open related content for a report, you need to be in [Reading view](end-user-reading-view.md).
+- To open related content for a report, you need to be in [Reading view](end-user-reading-view.md#reading-view).
 - The related content feature doesn't work for streaming datasets.
 
 ## Next steps
