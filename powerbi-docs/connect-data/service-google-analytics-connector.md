@@ -38,8 +38,7 @@ Once you accept, **Power BI Desktop** shows that you're currently signed in.
 Select **Connect**, and your Google Analytics data is connected to **Power BI Desktop**, and loads the data.  
 ![Screenshot of the Load dialog, showing the Google Analytics data is connected and loading.](media/service-google-analytics-connector/tps_googleanalytics_6.png)
 
-## Changes to the API
-
-Although we attempt to release updates in accordance with any changes, the API might change in a way that affects the results of the queries we generate. In some cases, certain queries might no longer be supported. Due to this dependency, we can't guarantee the results of your queries when you use this connector.
+> [!NOTE]
+> Although we attempt to release updates in accordance with any changes, the API might change in a way that affects the results of the queries we generate. In some cases, certain queries might no longer be supported. Due to this dependency, we can't guarantee the results of your queries when you use this connector.
 
 More details on changes to the Google Analytics API can be found in the [Google Analytics - All API Changelogs](https://developers.google.com/analytics/devguides/changelog).
