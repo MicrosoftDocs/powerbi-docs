@@ -35,7 +35,7 @@ After you've installed the app and connected to the data sources, you can custom
     :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metric-select-install.png" alt-text="Screenshot of the install dialog, install is highlighted.":::
 
     > [!NOTE]
-    > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to another workspace.
+    > If you've installed the app previously, you'll be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to another workspace.
 
     After the app has installed, it appears on your Apps page.
 
@@ -58,13 +58,13 @@ After you've installed the app and connected to the data sources, you can custom
 
    :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/connect-sign-in-and-connect.png)" alt-text="Screenshot of the authentication dialog with sign in and connect highlighted.":::
 
-1. At the Microsoft sign-in screen, sign in to Power BI.
+1. At the Microsoft **Pick an account** dialog, select an account to sign in to Power BI.
 
    :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-microsoft-login.png" alt-text="Screenshot of the Microsoft pick an account dialog.":::
 
-   After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns on.
+   After you're signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns on.
 
-   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-refresh-monitor.png" alt-text="Screenshot of the banner showing a refresh is in progress.":::
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/refresh-is-in-progress.png" alt-text="Screenshot of the banner showing refresh is in progress highlighted.":::
 
    Your report data will automatically refresh once a day, unless you disabled this setting during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
 
