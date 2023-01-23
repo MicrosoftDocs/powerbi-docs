@@ -44,7 +44,7 @@ The locations are also available in the Admin portal at `PowerBI.com`. In the Ad
 
 ## Manage existing capacities location
 
-You can't change a Power BI Embedded resource location once you created a new capacity.
+You can't change a Power BI Embedded resource location after you've created a new capacity.
 
 To move your Power BI content to a different region, follow these steps:
 
@@ -81,4 +81,4 @@ To manage capacities with Multi-Geo through APIs, use the following APIs:
 >[!div class="nextstepaction"]
 >[Multi-Geo in Power BI Premium capacities](../../admin/service-admin-premium-multi-geo.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)
