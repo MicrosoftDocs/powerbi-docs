@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 06/21/2021
+ms.date: 01/23/2023
 ms.custom: intro-installation
 ---
 
@@ -69,7 +69,7 @@ To install, customize, and distribute a template app, you need:
 
     This link opens the parameters dialog, where you change the data source from the sample data to your own data source (see [known limitations](service-template-apps-overview.md#known-limitations)), followed by the authentication method dialog. You might have to redefine the values in these dialogs. See the documentation of the specific template app you're installing for details.
 
-   :::image type="content" source="media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png" alt-text="Screenshot showing the parameters and authentication dialogs for connecting your own data source.":::
+   :::image type="content" source="media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png" alt-text="Screenshot showing the parameters and authentication dialogs for connecting your own data source." lightbox="media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png":::
 
     Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you're viewing sample data.
 
@@ -94,7 +94,7 @@ When you're done making changes to the artifacts in the workspace, you're ready 
 
 ## Update a template app
 
-From time to time, template app creators release new improved versions of their template apps, via either AppSource, direct link, or both.
+Sometimes, template app creators release new improved versions of their template apps, via AppSource, a direct link, or both.
 
 If you originally downloaded the app from AppSource, when a new version of the template app becomes available, you get notified in two ways:
 
@@ -106,7 +106,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
   :::image type="content" source="media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png" alt-text="Screenshot of the Power BI notification icon expanded to show all notifications.":::
 
 >[!NOTE]
->If you originally got the app via direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.
+>If you originally got the app via a direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.
 
   To install the update, either select **Get it** on the notification banner or in the notification center, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, select the link.
   
@@ -124,7 +124,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
 * Overwriting updates the reports, dashboards, and dataset in the workspace, not the app. Overwriting doesn't change app navigation, setup, and permissions.
 * If you chose the second option, after you've updated the workspace **you need to update the app to apply changes from the workspace to the app**.
-* Overwriting keeps configured parameters and authentication. After update, an automatic dataset refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
+* Overwriting keeps configured parameters and authentication. After the update, an automatic dataset refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
 
   :::image type="content" source="media/service-template-apps-install-distribute/power-bi-sample-data.png" alt-text="Screenshot of the banner showing information about the update." lightbox="media/service-template-apps-install-distribute/power-bi-sample-data.png":::
 
@@ -144,10 +144,10 @@ An installed template app consists of the app and its associated workspace. If y
     To unpublish the app:
     1. Open the app.
     1. Select the edit app pencil icon to open the template app's workspace.
-    1. In the template app workspace, select **More option (...)**, and then choose **Unpublish App**.
+    1. In the template app workspace, select **More options (...)**, and then choose **Unpublish App**.
 
        :::image type="content" source="media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png" alt-text="Screenshot of the app workspace with more options and unpublish app highlighted.":::
 
 ## Next steps
 
-[Create a workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+[Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
