@@ -7,220 +7,223 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/22/2021
+ms.date: 01/23/2023
 LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
 
-With Power BI Desktop, you can access *SAP Business Warehouse (BW)* data.
+You can use Power BI Desktop to access SAP Business Warehouse (BW) data. The Implementation 2.0 SAP Connector has significant improvements in performance and capabilities from Implementation 1.0.
 
-For information about how SAP customers can benefit from connecting Power BI to their existing SAP BW systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
+For more information about how SAP customers can benefit from connecting Power BI to their existing SAP BW systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-You can use the *SAP BW connector* with an implementation that has significant improvements in performance and capabilities. Microsoft developed SAP BW connector *Implementation 2.0*. Select either version 1 of the SAP BW Connector, or the Implementation 2.0 SAP Connector. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connecting to SAP BW from Power BI Desktop.
+>[!IMPORTANT]
+>Version 1.0 of the SAP BW connector is deprecated. New connections use Implementation 2.0 of the SAP BW connector. All support for version 1.0 will be removed from the connector in the near future. Use the information in this article to update existing version 1.0 reports so they can use Implementation 2.0 of the connector.
 
-We suggest you use the Implementation 2.0 SAP Connector whenever possible.
+## Use the SAP BW Connector
 
-## Installation of version 1 of the SAP BW Connector
+Follow these steps to install and connect to data with the SAP BW Connector.
 
-We recommend using the Implementation 2.0 SAP Connector whenever possible. This section describes installation of version 1 of the SAP BW Connector.
+### Prerequisite
 
-1. Install the *SAP NetWeaver* library on your local computer. You can get the SAP NetWeaver library from your SAP administrator or directly from the [SAP Software Download Center](https://support.sap.com/swdc). Since the SAP Software Download Center changes its structure frequently, more specific guidance for navigating that site isn't available. The SAP NetWeaver library is usually included in the SAP Client Tools installation.
+Implementation 2.0 of the SAP Connector requires the SAP .NET Connector 3.0. You can download the [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html) from SAP. Access to the download requires a valid S-user sign-in.
 
-   You can search for *SAP Note #1025361* to get the download location for the most recent version. Make sure the architecture for the SAP NetWeaver library (32-bit or 64-bit) matches your Power BI Desktop installation. Install all files included in the *SAP NetWeaver RFC SDK* according to the SAP Note.
-2. In Power BI Desktop, select **Get data**. The **Database** options include *SAP Business Warehouse Application Server* and *SAP Business Warehouse Message Server*.
+>[!IMPORTANT]
+>Be sure to use SAP .NET Connector 3.0. The SAP BW Application Server connector doesn't currently support SAP .NET Connector 3.1.
 
-   ![Get Data options for SAP](media/desktop-sap-bw-connector/sap_bw_2a.png)
+The connector for .NET 4.0 framework comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation version.
 
-## Installation of Implementation 2.0 SAP Connector
+When you install, in **Optional setup steps**, make sure you select **Install assemblies to GAC**.
 
-Implementation 2.0 of the SAP Connector requires the SAP .NET Connector 3.0. Access to the download requires a valid S-user. Contact your SAP Basis team to get the SAP .NET Connector 3.0.
+![Screenshot of the SAP optional setup steps with Install assemblies to GAC selected.](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
-You can download the [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html) from SAP.
+>[!NOTE]
+>The first version of the SAP BW Connector required the NetWeaver DLLs. The current version no longer requires NetWeaver DLLs.
 
-The connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation. Currently, the website lists two versions for .NET 4.0 framework:
+### Connect to SAP BW data in Power BI Desktop
 
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 32-bit (x86) or later (.NET Framework 4.0)
-* SAP Connector for Microsoft .NET 3.0.22.0 for Windows 64-bit (x64) or later (.NET Framework 4.0)
+To connect to SAP BW data by using the SAP BW Connector, take the following steps:
 
-When you install, in **Optional setup steps**, make sure you select *Install assemblies to GAC*.
+1. In Power BI Desktop, select **Get data**.
 
-![SAP optional setup steps](media/desktop-sap-bw-connector/sap_bw_2b.png)
+1. On the **Get Data** screen, select **Database**, and then select either **SAP Business Warehouse Application Server** or **SAP Business Warehouse Message Server**.
 
-> [!NOTE]
-> The first version of SAP BW implementation required NetWeaver DLLs. If you're using Implementation 2.0 of the SAP Connector, and not using the first version, the NetWeaver DLLs are not required.
+   ![Screenshot that shows the Get Data options for SAP.](media/desktop-sap-bw-connector/sap_bw_2a.png)
 
-## Version 1 SAP BW Connector features
+1. Select **Connect**.
 
-The version 1 SAP BW Connector in Power BI Desktop lets you import data from your *SAP Business Warehouse Server* cubes or use DirectQuery.
+1. On the next screen, enter server, system, and client information, and whether to use **Import** or **DirectQuery** connectivity method. For detailed instructions, see:
 
-To learn more about the SAP BW Connector and how to use it with DirectQuery, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
+   - [Connect to an SAP BW Application Server from Power Query Desktop](/power-query/connectors/sap-bw/application-setup-and-connect#connect-to-an-sap-bw-application-server-from-power-query-desktop)
+   - [Connect to an SAP BW Message Server from Power Query Desktop](/power-query/connectors/sap-bw/message-setup-and-connect#connect-to-an-sap-bw-message-server-from-power-query-desktop)
 
-When you connect, specify a **Server**, **System Number**, and **Client ID** to establish the connection.
+   >[!NOTE]
+   >The SAP BW Connector can import data from your SAP Business Warehouse Server cubes, which is the default setting, or use DirectQuery. For more information about using the SAP BW Connector with DirectQuery, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-![SAP server connection settings](media/desktop-sap-bw-connector/sap_bw_3a.png)
+   You can also select **Advanced options**, and select a **Language code**, a custom **MDX statement** to run against the specified server, and other options. For more information, see [Use advanced options](/power-query/connectors/sap-bw/use-advanced-options).
+   
+1. Select **OK** to establish the connection.
 
-You can also specify two additional **Advanced options**: **Language code**, and a custom **MDX statement** to run against the specified server.
+1. Provide any necessary authentication data and select **Connect**. For more information about authentication, see [Authentication with a data source](/power-query/connector-authentication).
 
-![additional connection information](media/desktop-sap-bw-connector/sap_bw_4a.png)
+1. If you didn't specify a custom MDX statement, the **Navigator** screen shows a list of all cubes available on the server. You can drill down and select items from the available cubes, including dimensions and measures. Power BI shows queries and cubes that the [Open Analysis Interfaces](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm) expose.
 
-> [!NOTE]
-> If you use **Language code** and publish to the service, you need to enable "skip test connection" in the service data source settings when using the gateway.
+   When you select one or more items from the server, the **Navigator** shows a preview of the output table.
 
-If you don't specify an MDX statement, the connection setting displays the list of cubes available in the server. You can drill down and select items from the available cubes, including dimensions and measures. Power BI exposes queries and cubes exposed by the [Open Analysis Interfaces](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
+   ![Screenshot of a SAP table preview in the Navigator screen.](media/desktop-sap-bw-connector/sap_bw_5.png)
 
-When you select one or more items from the server, the Navigator dialog creates a preview of the output table.
+   The **Navigator** dialog also provides the following display options:
 
-![SAP table preview](media/desktop-sap-bw-connector/sap_bw_5.png)
+   - **Only selected items**. By default, **Navigator** displays all items. This option is useful to verify the final set of items you select. Alternatively, you can select the column names in the preview area to view the selected items.
+   - **Enable data previews**. This value is the default, and displays data previews. Disable data previews to reduce the number of server calls by no longer requesting preview data.
+   - **Technical names**. SAP BW supports user-defined *technical names* for objects within a cube. Cube owners can expose these friendly names for cube objects, instead of exposing only the physical names for the objects.
 
-The **Navigator** dialog also provides display options:
+   ![Screenshot of the display options in the Navigator window.](media/desktop-sap-bw-connector/sap_bw_6.png)
 
-* **Display Only selected items**. By default, **Navigator** displays all items.  This option is useful for verifying the final set of items selected. An alternative approach to viewing selected items is to select the column names in the preview area.
-* **Enable data previews**. This value is the default. Displays data previews. Disabling data previews reduces the number of server calls, since it no longer requests data for the previews.
-* **Technical names**. SAP BW supports the notion of *technical names* for objects within a cube. Technical names allow a cube owner to expose *friendly names* for cube objects, as opposed to only exposing the *physical names* for those objects in the cube.
+1. After selecting all the objects you want, select one of the following options:
 
-![the Navigator window](media/desktop-sap-bw-connector/sap_bw_6.png)
+   - **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data or making further modifications by using the **Data** or **Model** views.
+   - **Transform Data** to open **Power Query Editor** with the data. Specify additional data transformation and filtering steps before you bring the entire set of rows into the Power BI Desktop data model.
 
-After selecting all necessary objects, you can decide what to do next by selecting one of the following options:
+Along with data from SAP BW cubes, you can also import data from a wide range of other data sources in Power BI Desktop, and combine them into a single report. This ability presents many interesting scenarios for reporting and analytics on top of SAP BW data.
 
-* Select **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data or making further modifications using the **Data** or **Relationships** views.
-* Select **Transform Data** to open **Power Query Editor**. Specify additional data transformation and filtering steps before the entire set of rows is brought into the Power BI Desktop data model.
+## New options in SAP BW Implementation 2.0
 
-In addition to importing data from SAP BW cubes, you can also import data from a wide range of other data sources in Power BI Desktop, and then you can combine them into a single report. This ability presents all sorts of interesting scenarios for reporting and analytics on top of SAP BW data.
+This section lists some SAP BW Connector Implementation 2.0 new features and improvements. For more information, see [Implementation details](/power-query/connectors/sap-bw/implementation-details).
 
-## Using Implementation 2.0 SAP BW Connector
+### Advanced options
 
-Create a new connection to use Implementation 2.0 of the SAP BW Connector. To create a new connection, take the following steps.
+You can set the following options under **Advanced options** on the SAP BW connection screen:
 
-1. Select **Get data**. Select either **SAP Business Warehouse Application Server** or **SAP Business Warehouse Message Server**, and then connect.
+**Execution mode** specifies how the MDX interface executes queries on the server. The following options are valid:
 
-2. In the new connection dialog, select the implementation. Selecting **2.0** for **Implementation**, as shown in the following image, enables **Execution mode**, **Batch size** and **Enable characteristic structures**.
+  - **BasXml**
+  - **BasXmlGzip**
+  - **DataStream**
 
-    ![SAP connection dialog](media/desktop-sap-bw-connector/sap_bw_7.png)
+  The default value is **BasXmlGzip**. This mode can improve performance for low latency or high volume queries.
 
-3. Select **OK**. After this point, experience is the same as described in [Version 1 SAP BW Connector features](#version-1-sap-bw-connector-features) for the version 1 SAP BW Connector.
+- **Batch size** specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number means more calls to the server while retrieving a large dataset. A large value might improve performance, but could cause memory issues on the SAP BW server. The default value is **50000**.
 
-### New options for Implementation 2.0
+- **Enable characteristic structures** changes the way the **Navigator** displays characteristic structures. The default value for this option is false, or unchecked. This option affects the list of objects available for selection, and isn't supported in Native query mode.
 
-Implementation 2.0 supports the following options:
+### Other improvements
 
-* *ExecutionMode* specifies the MDX interface used to execute queries on the server. The following options are valid:
+The following list describes other improvements for Implementation 2.0:
 
-  * `SapBusinessWarehouseExecutionMode.BasXml`
-  * `SapBusinessWarehouseExecutionMode.BasXmlGzip`
-  * `SapBusinessWarehouseExecutionMode.DataStream`
+- Better performance.
+- Ability to retrieve several million rows of data, and fine-tuning through the batch size parameter.
+- Ability to switch execution modes.
+- Support for compressed mode, especially beneficial for high-latency connections or large datasets.
+- Improved detection of `Date` variables.
+- `Date` (ABAP type DATS) and `Time` (ABAP type TIMS) dimensions exposed as dates and times, instead of text values. For more information, see [Support for typed dates in SAP BW](/power-query/connectors/sap-bw/implementation-details#support-for-typed-dates-in-sap-bw).
+- Better exception handling. Errors that occur in BAPI calls are now surfaced.
+- Column folding in BasXml and BasXmlGzip modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request passes on to the server to retrieve a smaller dataset.
 
-    The default value is `SapBusinessWarehouseExecutionMode.BasXmlGzip`.
+## Update existing Implementation 1.0 reports
 
-    Using `SapBusinessWarehouseExecutionMode.BasXmlGzip` may improve performance when experiencing high latency for large datasets.
+To change existing reports to use Implementation 2.0, you must use Import mode.
 
-* *BatchSize* specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number translates into more calls to the server while retrieving a large dataset. A large number of rows may improve performance, but could cause memory issues on the SAP BW server. The default value is 50000 rows.
-
-* *EnableStructures* indicates whether characteristic structures are recognized. The default value for this option is false. Affects the list of objects available for selection. Not supported in Native query mode.
-
-The *ScaleMeasures* option has been deprecated in this implementation. The behavior is now the same as setting *ScaleMeasures* to false, always showing unscaled values.
-
-### Additional improvements for Implementation 2.0
-
-The following list describes some of the additional improvements that come with the new implementation:
-
-* Improved performance.
-* Ability to retrieve several million rows of data, and fine-tuning through the batch size parameter.
-* Ability to switch execution modes.
-* Support for compressed mode. Especially beneficial for high latency connections or large datasets.
-* Improved detection of `Date` variables.
-* [Experimental] Expose `Date` (ABAP type DATS) and `Time` (ABAP type TIMS) dimensions as dates and times respectively, instead of text values.
-* Better exception handling. Errors that occur in BAPI calls are now surfaced.
-* Column folding in BasXml and BasXmlGzip modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request will be passed onto the server to retrieve a smaller dataset.
-
-### Changing existing reports to use Implementation 2.0
-
-Changing existing reports to use Implementation 2.0 is only possible in import mode. Follow these steps:
-
-1. Open an existing report, select **Transform data** in the ribbon, and then select the SAP Business Warehouse query to update.
+1. In Power BI Desktop, from the existing report, select **Transform data** in the ribbon, and then select the SAP Business Warehouse query to update.
 
 1. Right-click the query and select **Advanced Editor**.
 
 1. In the **Advanced Editor**, change the `SapBusinessWarehouse.Cubes` call as follows:
 
-    Determine whether the query already contains an option record, such as the following example:
+1. Determine whether the query already contains an option record, such as the following example:
 
-    ![Screenshot shows a plaintext query with an option record.](media/desktop-sap-bw-connector/sap_bw_9.png)
+   ![Screenshot that shows a plaintext query with an option record.](media/desktop-sap-bw-connector/sap_bw_9.png)
 
-    If so, add the `Implementation` 2.0 option, and remove the `ScaleMeasures` option, if present, as shown:
+1. If so, add the `Implementation` 2.0 option, and remove the `ScaleMeasures` option, if present, as shown:
 
-    ![Screenshot shows a plaintext query with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_10.png)
+   ![Screenshot that shows a plaintext query with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_10.png)
 
-    If the query doesn't already include an options record, just add it. For the following option:
+   >[!NOTE]
+   >The `ScaleMeasures` option is deprecated in this implementation. The connector now always shows unscaled values.
 
-    ![Screenshot shows a plaintext query with an option record added.](media/desktop-sap-bw-connector/sap_bw_11.png)
+1. If the query doesn't already include an options record, add it. For example, change the following option:
 
-    Just change it to:
+   ![Screenshot that shows a plaintext query with an option record added.](media/desktop-sap-bw-connector/sap_bw_11.png)
 
-    ![Screenshot shows a plaintext query of the new option with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_12.png)
+   To:
 
-Every effort has been made to make Implementation 2.0 of the SAP BW Connector compatible with version 1. However, there may be some differences because of the different SAP BW MDX execution modes being used. To resolve any discrepancies, try switching between execution modes.
+   ![Screenshot that shows a plaintext query of the new option with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_12.png)
+
+>[!NOTE]
+>Implementation 2.0 of the SAP BW Connector should be compatible with version 1. However, there might be some differences because of the different SAP BW MDX execution modes. To resolve any discrepancies, try switching between execution modes.
 
 ## Troubleshooting
 
-This section provides troubleshooting situations (and solutions) for working with the SAP BW connector.
+This section provides some troubleshooting situations and solutions for the SAP BW connector. For more information, see [SAP Business Warehouse connector troubleshooting](/power-query/connectors/sap-bw/sap-bw-troubleshooting).
 
-1. Numeric data from SAP BW returns decimal points instead of commas. For example, 1,000,000 is returned as 1.000.000.
+### Numeric data from SAP BW returns misformatted numeric data
 
-   SAP BW returns decimal data with either a `,` (comma) or a `.` (dot) as the decimal separator. To specify which of those SAP BW should use for the decimal separator, the driver used by Power BI Desktop makes a call to `BAPI_USER_GET_DETAIL`. This call returns a structure called `DEFAULTS`, which has a field called `DCPFM` that stores *Decimal Format Notation*. The field takes one of the following values:
+In this issue, SAP BW returns numeric data with decimal points instead of commas. For example, 1,000,000 returns as 1.000.000.
 
-   * ' ' (space) = Decimal point is comma: N.NNN,NN
-   * 'X' = Decimal point is period: N,NNN.NN
-   * 'Y' = Decimal point is N NNN NNN,NN
+SAP BW returns decimal data with either a comma or a period as the decimal separator. To specify which of these characters SAP BW should use for the decimal separator, the Power BI Desktop driver makes a call to `BAPI_USER_GET_DETAIL`. This call returns a structure called `DEFAULTS`, which has a field called `DCPFM` that stores *Decimal Format Notation* as one of the following values:
 
-   Customers who have reported this issue found that the call to `BAPI_USER_GET_DETAIL` is failing for a particular user, who is showing the incorrect data, with an error message similar to the following message:
+- ' ' (space) = Decimal point is comma: N.NNN,NN
+- 'X' = Decimal point is period: N,NNN.NN
+- 'Y' = Decimal point is N: NNN NNN,NN
 
-   ```xml
-    You are not authorized to display users in group TI:
-        <item>
-            <TYPE>E</TYPE>
-            <ID>01</ID>
-            <NUMBER>512</NUMBER>
-            <MESSAGE>You are not authorized to display users in group TI</MESSAGE>
-            <LOG_NO/>
-            <LOG_MSG_NO>000000</LOG_MSG_NO>
-            <MESSAGE_V1>TI</MESSAGE_V1>
-            <MESSAGE_V2/>
-            <MESSAGE_V3/>
-            <MESSAGE_V4/>
-            <PARAMETER/>
-            <ROW>0</ROW>
-            <FIELD>BNAME</FIELD>
-            <SYSTEM>CLNTPW1400</SYSTEM>
-        </item>
-   ```
+With this issue, the call to `BAPI_USER_GET_DETAIL` fails for a particular user, who gets the misformatted data, with an error message similar to the following message:
 
-   To solve this error, users must ask their SAP admin to grant the SAPBW user being used in Power BI the right to execute `BAPI_USER_GET_DETAIL`. It’s also worth verifying that the user has the required `DCPFM` value, as described earlier in this troubleshooting solution.
+```xml
+ You are not authorized to display users in group TI:
+     <item>
+         <TYPE>E</TYPE>
+         <ID>01</ID>
+         <NUMBER>512</NUMBER>
+         <MESSAGE>You are not authorized to display users in group TI</MESSAGE>
+         <LOG_NO/>
+         <LOG_MSG_NO>000000</LOG_MSG_NO>
+         <MESSAGE_V1>TI</MESSAGE_V1>
+         <MESSAGE_V2/>
+         <MESSAGE_V3/>
+         <MESSAGE_V4/>
+         <PARAMETER/>
+         <ROW>0</ROW>
+         <FIELD>BNAME</FIELD>
+         <SYSTEM>CLNTPW1400</SYSTEM>
+     </item>
+```
 
-2. Connectivity for SAP BEx queries
-   
-   You can perform BEx queries in Power BI Desktop by enabling a specific property, as shown in the following image:
-   
-   ![Enable Release for External Access](media/desktop-sap-bw-connector/sap_bw_8.png)
-   
-3. The **Navigator** window doesn't display a data preview and instead provides an *object reference not set to an instance of an object* error message.
-   
-   SAP users need access to specific BAPI function modules to get metadata and retrieve data from SAP BW's InfoProviders. These modules include:
+To solve this error, the SAP admin must grant the Power BI SAP BW user the right to execute `BAPI_USER_GET_DETAIL`. Also verify that the user's data has the correct `DCPFM` value.
 
-   * BAPI_MDPROVIDER_GET_CATALOGS
-   * BAPI_MDPROVIDER_GET_CUBES
-   * BAPI_MDPROVIDER_GET_DIMENSIONS
-   * BAPI_MDPROVIDER_GET_HIERARCHYS
-   * BAPI_MDPROVIDER_GET_LEVELS
-   * BAPI_MDPROVIDER_GET_MEASURES
-   * BAPI_MDPROVIDER_GET_MEMBERS
-   * BAPI_MDPROVIDER_GET_VARIABLES
-   * BAPI_IOBJ_GETDETAIL
+### Need connectivity for SAP BEx queries
 
-   To solve this issue, verify that the user has access to the various MDPROVIDER modules and `BAPI_IOBJ_GETDETAIL`. To further troubleshoot this or similar issues, you can enable tracing. **Select File** > **Options and settings** > **Options**. In **Options**, select **Diagnostics**, then select **Enable tracing**. Attempt to retrieve data from SAP BW while tracing is active, and examine the trace file for more detail.
+You can do BEx queries in Power BI Desktop by enabling the **Release for External Access** property, as shown in the following image:
+
+![Screenshot that shows enabling Release for External Access.](media/desktop-sap-bw-connector/sap_bw_8.png)
+
+### Navigator doesn't display a data preview
+
+In this issue, **Navigator** doesn't display a data preview and instead shows an **Object reference not set to an instance of an object** error message.
+
+SAP users need access to the following specific BAPI function modules to get metadata and retrieve data from SAP BW's InfoProviders:
+
+- BAPI_MDPROVIDER_GET_CATALOGS
+- BAPI_MDPROVIDER_GET_CUBES
+- BAPI_MDPROVIDER_GET_DIMENSIONS
+- BAPI_MDPROVIDER_GET_HIERARCHYS
+- BAPI_MDPROVIDER_GET_LEVELS
+- BAPI_MDPROVIDER_GET_MEASURES
+- BAPI_MDPROVIDER_GET_MEMBERS
+- BAPI_MDPROVIDER_GET_VARIABLES
+- BAPI_IOBJ_GETDETAIL
+
+To solve this issue, verify that the user has access to the `MDPROVIDER` modules and `BAPI_IOBJ_GETDETAIL`.
+
+### Enable tracing
+
+To further troubleshoot these or similar issues, you can enable tracing:
+
+1. In Power BI Desktop, select **File** > **Options and settings** > **Options**.
+1. In **Options**, select **Diagnostics**, and then select **Enable tracing** under **Diagnostic Options**.
+1. Try to get data from SAP BW while tracing is active, and examine the trace file for more detail.
 
 ## SAP BW Connection support
 
-The following table details the current support for SAP BW.
+The following table describes current Power BI support for SAP BW.
 
 |Product  |Mode  |Authentication  |Connector  |SNC Library  |Supported  |
 |---------|---------|---------|---------|---------|---------|
@@ -241,10 +244,9 @@ The following table details the current support for SAP BW.
 
 ## Next steps
 
-For more information about SAP and DirectQuery, check out the following resources:
-
-* [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
-* [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
-* [Using DirectQuery in Power BI](desktop-directquery-about.md)
-* [Power BI data sources](power-bi-data-sources.md)
-* [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw)
+- [SAP BW fundamentals](power-query/connectors/sap-bw/sap-bw-fundamentals)
+- [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
+- [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
+- [Use DirectQuery in Power BI](desktop-directquery-about.md)
+- [Power BI data sources](power-bi-data-sources.md)
+- [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw)
