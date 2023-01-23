@@ -1,6 +1,6 @@
 ---
 title: Connect to Power BI Premium Capacity Metrics
-description: Learn how to install the the Power BI Premium Capacity Metrics template app and then connect to data sources.
+description: Learn how to install the Power BI Premium Capacity Metrics template app and then connect to data sources.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -24,7 +24,7 @@ After you've installed the app and connected to the data sources, you can custom
 
 ## Install the app
 
-1. Go to the Power BI Premium Capacity Metrics app on the the AppSource page: [Power BI Premium Capacity Metrics template app](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt)
+1. Go to the Power BI Premium Capacity Metrics app on the AppSource page: [Power BI Premium Capacity Metrics template app](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt)
 
 1. Select **Get It Now**.
 
@@ -43,11 +43,11 @@ After you've installed the app and connected to the data sources, you can custom
 
 ## Connect to data sources
 
-1. Select Power BI Premium Capacity Metrics on your Apps page.
+1. Select **Power BI Premium Capacity Metrics** on your Apps page.
 
 1. The app opens, showing sample data. Select the **Connect your data** link on the banner at the top of the page.
 
-   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-connect-data.png" alt-text="Screenshot of the Power BI Premium Capacity Metrics app banner with the connect your data link highlighted.":::
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-connect-data.png" alt-text="Screenshot of the Power BI Premium Capacity Metrics app banner with the connect your data link highlighted." lightbox="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-connect-data.png":::
 
 1. In the dialog box that appears, set the UTC offset, that is, the difference in hours between Coordinated Universal Time (UTC) and the time in your location. Select **Next**.
   
@@ -56,7 +56,7 @@ After you've installed the app and connected to the data sources, you can custom
 
 1. In the next dialog that appears, you don't have to do anything. Just select **Sign in and connect**.
 
-   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/premium-capacity-connect-sign-in-and-connect.png" alt-text="Screenshot of the authentication dialog with sign in and connect highlighted.":::
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/premium-capacity-connect-sign-in-and-connect.png" alt-text="Screenshot of the authentication dialog with sign-in and connect highlighted.":::
 
 1. At the Microsoft **Pick an account** dialog, select an account to sign in to Power BI.
 
@@ -64,7 +64,7 @@ After you've installed the app and connected to the data sources, you can custom
 
    After you're signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns on.
 
-   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/refresh-is-in-progress.png" alt-text="Screenshot of the banner showing refresh is in progress highlighted.":::
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/refresh-is-in-progress.png" alt-text="Screenshot of the banner showing refresh is in progress highlighted." lightbox="media/service-connect-to-pbi-premium-capacity-metrics/refresh-is-in-progress.png":::
 
    Your report data will automatically refresh once a day, unless you disabled this setting during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
 
