@@ -13,7 +13,7 @@ ms.custom: intro-installation
 
 # Install, share, and update template apps in your organization
 
-Are you a Power BI analyst? If so, this article explains how you can install [template apps](service-template-apps-overview.md) to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md).
+Are you a Power BI analyst? You can learn more about [template apps](service-template-apps-overview.md) and connect to many of the services that you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md).
 
 :::image type="content" source="media/service-template-apps-install-distribute/power-bi-all-apps.png" alt-text="Screenshot of the Power BI apps page in the main pane." lightbox="media/service-template-apps-install-distribute/power-bi-all-apps.png":::
 
@@ -34,11 +34,11 @@ To install, customize, and distribute a template app, you need:
 
    :::image type="content" source="media/service-template-apps-install-distribute/power-bi-get-apps.png" alt-text="Screenshot of the Power BI apps page with get apps highlighted." lightbox="media/service-template-apps-install-distribute/power-bi-get-apps.png":::
 
-1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by using the search box. Type part of the name of the template app, or select a category such as finance, analytics, or marketing to find the item you're looking for.
+1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource are shown. Browse to find the template app you're looking for, or get a filtered selection by using the search box. Type part of the name of the template app, or select a category such as finance, analytics, or marketing to find the item you're looking for.
 
    :::image type="content" source="media/service-template-apps-install-distribute/app-source-template-apps.png" alt-text="Screenshot of the AppSource page with template apps highlighted." lightbox="media/service-template-apps-install-distribute/app-source-template-apps.png":::
 
-1. When you find the template app, select it. The template app offer will display. Select **Get It Now**.
+1. When you find the template app, select it. The template app offer appears. Select **Get It Now**.
 
    :::image type="content" source="media/service-template-apps-install-distribute/service-github-template-app-appsource-get-it-now.png" alt-text="Screenshot of the AppSource page showing the GitHub template app, get it now is highlighted." lightbox="media/service-template-apps-install-distribute/service-github-template-app-appsource-get-it-now.png":::
 
@@ -51,7 +51,7 @@ To install, customize, and distribute a template app, you need:
     > [!NOTE]
     > If you use an installation link for an app that isn't listed on AppSource, a validation dialog box will ask you to confirm your choice.
     >
-    >To be able to install a template app that isn't listed on AppSource, you need to request the relevant permissions from your admin. See the [template app settings](../admin/service-admin-portal-template-app.md) in Power BI admin portal for details.
+    >To be able to install a template app that isn't listed on AppSource, you can request the relevant permissions from your admin. See the [template app settings](../admin/service-admin-portal-template-app.md) in Power BI admin portal for details.
 
     When the installation finishes successfully, a notification tells you that your new app is ready.
 
@@ -67,7 +67,7 @@ To install, customize, and distribute a template app, you need:
 
    :::image type="content" source="media/service-template-apps-install-distribute/service-github-app-connect-data.png" alt-text="Screenshot of the template page with the link to connect your data is highlighted.":::
 
-    This opens the parameters dialog, where you change the data source from the sample data to your own data source (see [known limitations](service-template-apps-overview.md#known-limitations)), followed by the authentication method dialog. You may have to redefine the values in these dialogs. See the documentation of the specific template app you're installing for details.
+    This link opens the parameters dialog, where you change the data source from the sample data to your own data source (see [known limitations](service-template-apps-overview.md#known-limitations)), followed by the authentication method dialog. You might have to redefine the values in these dialogs. See the documentation of the specific template app you're installing for details.
 
    :::image type="content" source="media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png" alt-text="Screenshot showing the parameters and authentication dialogs for connecting your own data source.":::
 
@@ -75,11 +75,11 @@ To install, customize, and distribute a template app, you need:
 
     :::image type="content" source="media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png" alt-text="Screenshot of the template app window with the banner showing that refresh is in progress.":::
 
-   Your report data will automatically refresh once a day, unless you disabled this during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
+   Your report data will automatically refresh once a day, unless you disabled this setting during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
 
 ## Customize and share the app
 
-After you've connected to your data and data refresh is complete, you can customize any of the reports and dashboards the apps includes, as well as share the app with your colleagues. Remember, however that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
+After you've connected to your data and data refresh is complete, you can customize any of the reports and dashboards the app includes, as well as share the app with your colleagues. Remember, however that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
 
 To customize and share your app, select the pencil icon at the top right corner of the page.
 
@@ -90,7 +90,7 @@ For information about editing artifacts in the workspace, see
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-When you're done making changes to the artifacts in the workspace, you're ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#create-and-publish-your-app) to learn how to do this.
+When you're done making changes to the artifacts in the workspace, you're ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#create-and-publish-your-app) to learn how.
 
 ## Update a template app
 
@@ -114,7 +114,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
   :::image type="content" source="media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png" alt-text="Screenshot of the template app update dialog.":::
 
-* **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option if you didn't make any changes to the app or its content and want to overwrite the old app. Your connections will be reestablished, and the new version of the app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
+* **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option if you didn't make any changes to the app or its content and want to overwrite the old app. Your connections will be re-established, and the new version of the app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
 
 * **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset in the workspace. After updating the workspace, you can choose what you want to include in the app, and then you can update the app to republish it to your organization with the changes.
 
