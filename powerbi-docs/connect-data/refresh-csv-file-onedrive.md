@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/21/2021
+ms.date: 01/23/2023
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from a .CSV file on OneDrive or SharePoint
@@ -25,7 +25,7 @@ Many organizations run processes that automatically query databases for data tha
 
 Comma separated value files are simple text files, connections to external data sources and reports aren't supported. You can't schedule a refresh on a dataset created from a *.csv* file. However, when the file is on OneDrive, or SharePoint, Power BI will automatically synchronize any changes to the file with the dataset about every hour.
 
-## What's the difference between OneDrive and OneDrive for work or school
+## What's the difference between personal OneDrive and OneDrive for work or school
 
 If you have both a personal OneDrive and OneDrive for work or school, we recommended you keep any files you want to connect to Power BI on OneDrive for work or school. Why? Because you likely use two different accounts to sign into them.
 
