@@ -1,90 +1,85 @@
 ---
 title: Connect to Power BI Premium Capacity Metrics
-description: How to get and install the Power BI Premium Capacity Metrics template app, and how to connect to data
+description: Learn how to install the the Power BI Premium Capacity Metrics template app and then connect to data sources.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/18/2020
+ms.date: 01/23/2023
 LocalizationGroup: Connect to services
 ---
-# Connect to Power BI Premium Capacity Metrics
+# Power BI Premium Capacity Metrics app
 
 Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. The Power BI Premium Capacity Metrics app provides the most in-depth information into how your capacities are performing.
 
-![Power BI Premium Capacity Metrics app report](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
+:::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png" alt-text="Screenshot of the Power BI Premium capacity health center." lightbox="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png":::
 
-This article describes how to install the app and connect to data sources. For information about the contents of the report and how to use it, see [Monitor Premium capacities with the app](../enterprise/service-premium-gen2-metrics-app.md), and the [Premium Capacity Metrics app blog post](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
+This article describes how to install the app and connect to data sources. For information about the contents of the report and how to use it, see [Use the Gen2 metrics app](../enterprise/service-premium-gen2-metrics-app.md), and the [Premium Capacity Metrics app blog post](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
 
-After you've installed the app and connected to the data sources, you can customize the report as per your needs. You can then distribute it to colleagues in your organization.
+After you've installed the app and connected to the data sources, you can customize the report according to your needs. You can then distribute it to colleagues in your organization.
 
 > [!NOTE]
 > Installing template apps requires [permissions](./service-template-apps-install-distribute.md#prerequisites). Contact your Power BI admin if you find you don't have sufficient permissions.
 
 ## Install the app
 
-1. Click the following link to get to the app: [Power BI Premium Capacity Metrics template app](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt)
+1. Go to the Power BI Premium Capacity Metrics app on the the AppSource page: [Power BI Premium Capacity Metrics template app](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt)
 
-1. On the AppSource page for the app, select [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt).
+1. Select **Get It Now**.
 
-    [![Power BI Premium Capacity Metrics app in AppSource](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt)
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-appsource-get-it-now.png" alt-text="Screenshot of the Power BI Premium Capacity Metrics App get it now page." lightbox="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-appsource-get-it-now.png":::
 
-1. Select **Install**. 
+1. Select **Install**.
 
-    ![Install the Power BI Premium Capacity Metrics app](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metric-select-install.png)
+    :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metric-select-install.png" alt-text="Screenshot of the install dialog, install is highlighted.":::
 
     > [!NOTE]
     > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to another workspace.
 
-    Once the app has installed, you see it on your Apps page.
+    After the app has installed, it appears on your Apps page.
 
-   ![Power BI Premium Capacity Metrics app on App page](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-apps-page-icon.png)
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-apps-page-icon.png" alt-text="Screenshot of the Power BI apps page, the Power BI Premium Capacity Metrics app is highlighted.":::
 
 ## Connect to data sources
 
-1. Select the icon on your Apps page to open the app.
+1. Select Power BI Premium Capacity Metrics on your Apps page.
 
-1. On the splash screen, select **Explore**.
+1. The app opens, showing sample data. Select the **Connect your data** link on the banner at the top of the page.
 
-   ![Template app splash screen](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-splash-screen.png)
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-connect-data.png" alt-text="Screenshot of the Power BI Premium Capacity Metrics app banner with the connect your data link highlighted.":::
 
-   The app opens, showing sample data.
-
-1. Select the **Connect your data** link on the banner at the top of the page.
-
-   ![Power BI Premium Capacity Metrics app connect your data link](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-connect-data.png)
-
-1. In the dialog box that appears, set the UTC offset, that is, the difference in hours between Coordinated Universal Time and the time in your location. Then click **Next**.
+1. In the dialog box that appears, set the UTC offset, that is, the difference in hours between Coordinated Universal Time (UTC) and the time in your location. Select **Next**.
   
-   ![Power BI Premium Capacity Metrics app set UTC dialog](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-setutc-dialog.png)
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-setutc-dialog.png" alt-text="Screenshot of the connect dialog with UTC offset, next is highlighted.":::
    **Note: The format for half hours should be decimal (for example, 5.5, 2.5, etc.).**
 
-1. In the next dialog that appears, you don't have to do anything. Just select **Sign in**.
+1. In the next dialog that appears, you don't have to do anything. Just select **Sign in and connect**.
 
-   ![Power BI Premium Capacity Metrics app authentication dialog](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-authentication-dialog.png)
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/connect-sign-in-and-connect.png)" alt-text="Screenshot of the authentication dialog with sign in and connect highlighted.":::
 
 1. At the Microsoft sign-in screen, sign in to Power BI.
 
-   ![Microsoft sign-in screen](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-microsoft-login.png)
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-microsoft-login.png" alt-text="Screenshot of the Microsoft pick an account dialog.":::
 
-   After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns.
+   After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns on.
 
-   ![Power BI Premium Capacity Metrics app refresh in progress](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-refresh-monitor.png)
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-refresh-monitor.png" alt-text="Screenshot of the banner showing a refresh is in progress.":::
 
-   Your report data will automatically refresh once a day, unless you disabled this during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
+   Your report data will automatically refresh once a day, unless you disabled this setting during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
 
 ## Customize and share
 
 To start customizing the app, click the pencil icon in the upper right corner.
 
- ![Edit icon](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
+ :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png" alt-text="Screenshot of a Power BI window showing the pencil icon.":::
 
-See [Customize and share the app](./service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
+For more information, see [Customize and share the app](./service-template-apps-install-distribute.md#customize-and-share-the-app).
 
 ## Next steps
-* [Monitor Premium capacities with the app](../enterprise/service-premium-gen2-metrics-app.md)
+
+* [Use the Gen2 metrics app](../enterprise/service-premium-gen2-metrics-app.md)
 * [Premium Capacity Metrics app blog post](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/)
 * [What are Power BI template apps?](./service-template-apps-overview.md)
-* [Install and distribute template apps in your organization](./service-template-apps-install-distribute.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* [Install, share and update template apps in your organization](./service-template-apps-install-distribute.md)
+* Questions? [Ask the Power BI Community](https://community.powerbi.com/)
