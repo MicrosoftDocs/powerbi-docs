@@ -39,7 +39,7 @@ This tutorial includes instructions for configuring an *embed for your organizat
 * React TypeScript
 
 >[!NOTE]
->The *.NET Core* and the *.NET Framework* samples allow the end user to view any Power BI dashboard, report or tile they have access to in Power BI service. The *React TypeScript* sample lets you embed only one report that your end user already has access to on Power BI service.
+>The *.NET Core* and the *.NET Framework* samples allow the end user to view any Power BI dashboard, report or tile they have access to in the Power BI service. The *React TypeScript* sample lets you embed only one report that your end user already has access to in the Power BI service.
 
 The code samples support the following browsers:
 
@@ -292,7 +292,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 ### Run the sample app
 
-1. Open a terminal in and navigate to **Embed for your organization** > **UserOwnsData**.
+1. Open a terminal and navigate to **Embed for your organization** > **UserOwnsData**.
 
 2. Install the required dependencies by entering the following command:
 
@@ -318,7 +318,7 @@ Users need permission to access the Power BI folder the report is in. When you g
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
+>[Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)
 
 > [!div class="nextstepaction"]
 >[Embed paginated reports](embed-paginated-reports.md)
