@@ -51,13 +51,13 @@ You can create relationships between tables as you always have, even when those 
 
 For an example of a composite model, consider a report that has connected to a corporate data warehouse in SQL Server by using DirectQuery. In this instance, the data warehouse contains **Sales by Country**, **Quarter**, and **Bike (Product)** data, as shown in the following image:
 
-:::image type="content" source="media/desktop-composite-models/composite-models_04.png" alt-text="Example of composite models in Relationship view.":::
+:::image type="content" source="media/desktop-composite-models/composite-models_04.png" alt-text="Screenshot of an example with composite models in Relationship view.":::
 
 At this point, you could build simple visuals by using fields from this source. The following image shows total sales by *ProductName*, for a selected quarter.
 
-:::image type="content" source="media/desktop-composite-models/composite-models_05.png" alt-text="Visual based on data from the previous example.":::
+:::image type="content" source="media/desktop-composite-models/composite-models_05.png" alt-text="Screenshot of a visual based on data from the previous example.":::
 
-But what if you have data in an Office Excel spreadsheet about the product manager who's assigned to each product, along with the marketing priority? If you want to view **Sales Amount** by **Product Manager**, it might not be possible to add this local data to the corporate data warehouse. Or it might take months at best.
+But what if you have data in an Excel spreadsheet about the product manager who's assigned to each product, along with the marketing priority? If you want to view **Sales Amount** by **Product Manager**, it might not be possible to add this local data to the corporate data warehouse. Or it might take months at best.
 
 It might be possible to import that sales data from the data warehouse, instead of using DirectQuery. And the sales data could then be combined with the data that you imported from the spreadsheet. However, that approach is unreasonable, for the reasons that lead to using DirectQuery in the first place. The reasons could include:
 
@@ -71,7 +71,7 @@ Here's where composite models come in. Composite models let you connect to the d
 
 In the **Fields** list, you can see two tables: the original **Bike** table from SQL Server and a new **ProductManagers** table. The new table contains the data that's imported from Excel.
 
-:::image type="content" source="media/desktop-composite-models/composite-models_07.png" alt-text="Screenshot of Fields pane with the Bike and ProductManagers fields selected.":::
+:::image type="content" source="media/desktop-composite-models/composite-models_07.png" alt-text="Screenshot of the Fields pane with the Bike and ProductManagers fields selected.":::
 
 Similarly, in the **Relationship** view in Power BI Desktop, we now see another table called **ProductManagers**.
 
@@ -91,7 +91,7 @@ We can now create visuals by using any of the fields in the **Fields** list. Thi
 
 The following example displays a common case of a *dimension* table, such as **Product** or **Customer**, that's extended with some extra data imported from somewhere else. It's also possible to have tables use DirectQuery to connect to various sources. To continue with our example, imagine that **Sales Targets** per **Country** and **Period** are stored in a separate departmental database. As usual, you can use **Get data** to connect to that data, as shown in the following image:
 
-:::image type="content" source="media/desktop-composite-models/composite-models_12.png" alt-text="Screenshot of the Navigator window.":::
+:::image type="content" source="media/desktop-composite-models/composite-models_12.png" alt-text=" Screenshot of the Navigator window with sales targets selected.":::
 
 As we did earlier, we can create relationships between the new table and other tables in the model. Then we can create visuals that combine the table data. Let's look again at the **Relationships** view, where we've established the new relationships:
 
@@ -136,7 +136,7 @@ So, information that's stored in the spreadsheet is now included in a query that
 
 To allow confirmation that you've considered any security implications, Power BI Desktop displays a warning message when you create a composite model.  
 
-Additionally, if an author adds *Table1* from *Model A* to a Composite Model (we'll call it *Model C* for reference), then a user viewing a report built on *Model C* could query **any table** in *Model A* that isn't protected by RLS.
+Additionally, if an author adds *Table1* from *Model A* to a Composite Model (we'll call it *Model C* for reference), then a user viewing a report built on *Model C* could query **any table** in *Model A* that isn't protected by row-level security RLS.
 
 For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models information that someone retrieves from one source by using the credentials of the user who opens the file would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. When you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
 
@@ -160,10 +160,10 @@ Additionally, the use of many-to-many relationships means that separate queries 
 
 ## Source groups
 
-A source group is a collection of items (tables, relationships, etc.) from a DirectQuery source or all import sources involved in a data model. A composite model is made of one or more source groups. Consider the following examples:
+A source group is a collection of items, such as tables and relationships, from a DirectQuery source or all import sources involved in a data model. A composite model is made of one or more source groups. Consider the following examples:
 
 * A composite model that connects to a Power BI Dataset called **Sales** and enriches the dataset by adding a **Sales YTD** measure, which isn't available in the original dataset. This model consists of one source group.
-* A composite model that combines data by importing from a table from an Excel sheet called **Targets** and a CSV file called **Regions**, and making a DirectQuery connection to a Power BI Dataset called **Sales**. In this case, there are two source groups as shown in the following image:
+* A composite model that combines data by importing a table from an Excel sheet called **Targets** and a CSV file called **Regions**, and making a DirectQuery connection to a Power BI Dataset called **Sales**. In this case, there are two source groups as shown in the following image:
   * The first source group contains the tables from the **Targets** Excel sheet, and the **Regions** CSV file.
   * The second source group contains the items from the **Sales** Power BI Dataset.
 
@@ -202,7 +202,7 @@ For example, if you define the following measure in a composite model that uses 
 ### Calculation groups, query and measure evaluation
 
 [Calculation groups](/analysis-services/tabular-models/calculation-groups) provide a way to reduce the number of redundant measures and grouping common measure expressions together. Typical use cases are time-intelligence calculations where you want to be able to switch from actuals to month-to-date, quarter-to-date or year-to-date calculations.
-When working with composite models, it's important to be aware of the interaction between calculation groups and whether a measure only refers to items from a single remote source group. If a measure only refers to items from a single remote source group and the remote model defines a calculation group that impacts the measure, that calculation group will be applied, regardless of if the measure was defined in the remote model or in the local model.
+When working with composite models, it's important to be aware of the interaction between calculation groups and whether a measure only refers to items from a single remote source group. If a measure only refers to items from a single remote source group and the remote model defines a calculation group that impacts the measure, that calculation group will be applied, even if the measure was defined in the remote model or in the local model.
 However, if a measure doesn't refer to items from a single remote source group exclusively but refers to items from a remote source group on which a remote calculation group is applied, the results of the measure might still be impacted by the remote calculation group. Consider the following example:
 
 * Reseller Sales is a measure defined in the remote model.
@@ -237,7 +237,7 @@ The existing limitations of DirectQuery still apply when you use composite model
 
 For more information about composite models and DirectQuery, see the following articles:
 
-* [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Apply many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
 * [Manage storage mode in Power BI Desktop](desktop-storage-mode.md)
 * [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Power BI data sources](../connect-data/power-bi-data-sources.md)
