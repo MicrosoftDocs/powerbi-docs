@@ -211,7 +211,7 @@ For more information, see [Install Power BI Report Server](../report-server/inst
 
 ## Next steps
 
-[Managing Premium capacities](service-premium-capacity-manage.md)
+[Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage-gen2)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
