@@ -56,7 +56,7 @@ After you've installed the app and connected to the data sources, you can custom
 
 1. In the next dialog that appears, you don't have to do anything. Just select **Sign in and connect**.
 
-   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/premium-capacity-connect-sign-in-and-connect.png)" alt-text="Screenshot of the authentication dialog with sign in and connect highlighted.":::
+   :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/premium-capacity-connect-sign-in-and-connect.png" alt-text="Screenshot of the authentication dialog with sign in and connect highlighted.":::
 
 1. At the Microsoft **Pick an account** dialog, select an account to sign in to Power BI.
 
