@@ -50,40 +50,41 @@ The following table lists all SAP BW features that aren't fully supported, or be
 
 | Feature | Description |
 | --- | --- |
-| Local calculations | Local calculations defined in a BEx Query change the numbers as displayed through tools like BEx Analyzer. However, they aren't reflected in the numbers returned from SAP, through the public MDX interface. |
+| **Local calculations** | Local calculations defined in a BEx Query change the numbers as displayed through tools like BEx Analyzer. However, they aren't reflected in the numbers returned from SAP, through the public MDX interface. |
 | | **As such, the numbers seen in a Power BI visual don't necessarily match those for a corresponding visual in an SAP tool.** |
 | | For example, when connecting to a query cube from a BEx query that sets the aggregation to be Cumulated, or running sum, Power BI would get back the base numbers, ignoring that setting. An analyst could certainly then apply a running sum calculation locally in Power BI, but would need to exercise caution in how the numbers are interpreted if this action isn't done. |
-| Aggregations | In some cases, particularly when dealing with multiple currencies, the aggregate numbers returned by the SAP public interface don't match the results shown by SAP tools. |
+| **Aggregations** | In some cases, particularly when dealing with multiple currencies, the aggregate numbers returned by the SAP public interface don't match the results shown by SAP tools. |
 | | **As such, the numbers seen in a Power BI visual don't necessarily match those for a corresponding visual in an SAP tool.** |
 | | For example, totals over different currencies would show as  "*" in BEx Analyzer, but the total would get returned by the SAP public interface, without any information that such an aggregate number is meaningless. Thus the number aggregating, say, $, EUR, and AUD, would get displayed by Power BI. |
-| Currency formatting | Any currency formatting, for example, *$2,300* or *4000 AUD*, isn't reflected in Power BI. |
-| Units of measure | Units of measure, for example, *230 KG*, aren't reflected in Power BI. |
-| Key versus text (short, medium, long) | For an SAP BW characteristic like `CostCenter`, the field list shows a single column Cost Center.  Using that column displays the default text. By showing hidden fields, it's also possible to see the unique name column that returns the unique name assigned by SAP BW, and is the basis of uniqueness. |
+| **Currency formatting** | Any currency formatting, for example, *$2,300* or *4000 AUD*, isn't reflected in Power BI. |
+| **Units of measure** | Units of measure, for example, *230 KG*, aren't reflected in Power BI. |
+| **Key versus text** (short, medium, long) | For an SAP BW characteristic like `CostCenter`, the field list shows a single column Cost Center.  Using that column displays the default text. By showing hidden fields, it's also possible to see the unique name column that returns the unique name assigned by SAP BW, and is the basis of uniqueness. |
 | | The key and other text fields aren't available. |
-| Multiple hierarchies of a characteristic | In SAP, a characteristic can have multiple hierarchies. Then in tools like BEx Analyzer, when a characteristic is included in a query, the user can select the hierarchy to use. |
+| **Multiple hierarchies of a characteristic** | In SAP, a characteristic can have multiple hierarchies. Then in tools like BEx Analyzer, when a characteristic is included in a query, the user can select the hierarchy to use. |
 | | In Power BI, the various hierarchies can be seen in the field list as different hierarchies on the same dimension.  However, selecting multiple levels from two different hierarchies on the same dimension results in empty data being returned by SAP. |
-| Treatment of ragged hierarchies |![Screenshot of ragged content, showing the treatment of ragged hierarchies.](media/desktop-directquery-sap-bw/directquery-sap-bw_01.png) |
-| Scaling factor/reverse sign | In SAP, a key figure can have a scaling factor, for example, *1000*, defined as a formatting option, meaning that all display is scaled by that factor. |
+| **Treatment of ragged hierarchies** |![Screenshot of ragged content, showing the treatment of ragged hierarchies.](media/desktop-directquery-sap-bw/directquery-sap-bw_01.png) |
+| **Scaling factor/reverse sign** | In SAP, a key figure can have a scaling factor, for example, *1000*, defined as a formatting option, meaning that all display is scaled by that factor. |
 | | It can similarly have a property set that reverses the sign. Use of such a key figure in Power BI in a visual, or as part of a calculation results in the unscaled number being used. The sign isn't reversed. The underlying scaling factor isn't available. In Power BI visuals, the scale units shown on the axis (K,M,B) can be controlled as part of the visual formatting. |
-| Hierarchies where levels appear/disappear dynamically | Initially when connecting to SAP BW, the information on the levels of a hierarchy are retrieved, resulting in a set of fields in the field list. This information is cached, and if the set of levels changes, then the set of fields don't change until Refresh is invoked. |
+| **Hierarchies where levels appear/disappear dynamically** | Initially when connecting to SAP BW, the information on the levels of a hierarchy are retrieved, resulting in a set of fields in the field list. This information is cached, and if the set of levels changes, then the set of fields don't change until Refresh is invoked. |
 | | This situation is only possible in **Power BI Desktop**. Such Refresh to reflect changes to the levels can't be invoked in the Power BI service after Publish. |
-| Default filter | A BEx query can include Default Filters, which are applied automatically by SAP BEx Analyzer. These filters aren't exposed, and hence the equivalent usage in Power BI doesn't apply the same filters by default. |
-| Hidden Key figures | A BEx query can control visibility of Key Figures, and those key figures that are hidden don't appear in SAP BEx Analyzer. This fact isn't reflected through the public API, and hence such hidden key figures still appear in the field list. However, they can then be hidden within Power BI. |
-| Numeric formatting | Any numeric formatting, such as number of decimal positions and decimal point, isn't automatically reflected in Power BI. However, it's possible to then control such formatting within Power BI. |
-| Hierarchy versioning | SAP BW allows different versions of a hierarchy to be maintained, for example, the cost center hierarchy in 2007 versus 2008. Only the latest version is available in Power BI, as information on versions isn't exposed by the public API. |
-| Time dependent hierarchies | When using Power BI, time dependent hierarchies are evaluated at the current date. |
-| Currency conversion | SAP BW supports currency conversion, based on rates held in the cube. Such capabilities aren't exposed by the public API, and are therefore not available in Power BI. |
-| Sort Order | The sort order, such as *by Text* or *by Key*, for a characteristic can be defined in SAP. This sort order isn't reflected in Power BI. For example, months might appear as “April”, “Aug”, and so on. |
+| **Default filter** | A BEx query can include Default Filters, which are applied automatically by SAP BEx Analyzer. These filters aren't exposed, and hence the equivalent usage in Power BI doesn't apply the same filters by default. |
+| **Hidden Key figures** | A BEx query can control visibility of Key Figures, and those key figures that are hidden don't appear in SAP BEx Analyzer. This fact isn't reflected through the public API, and hence such hidden key figures still appear in the field list. However, they can then be hidden within Power BI. |
+| **Numeric formatting** | Any numeric formatting, such as number of decimal positions and decimal point, isn't automatically reflected in Power BI. However, it's possible to then control such formatting within Power BI. |
+| **Hierarchy versioning** | SAP BW allows different versions of a hierarchy to be maintained, for example, the cost center hierarchy in 2007 versus 2008. Only the latest version is available in Power BI, as information on versions isn't exposed by the public API. |
+| **Time dependent hierarchies** | When using Power BI, time dependent hierarchies are evaluated at the current date. |
+| **Currency conversion** | SAP BW supports currency conversion, based on rates held in the cube. Such capabilities aren't exposed by the public API, and are therefore not available in Power BI. |
+| **Sort Order** | The sort order, such as *by Text* or *by Key*, for a characteristic can be defined in SAP. This sort order isn't reflected in Power BI. For example, months might appear as “April”, “Aug”, and so on. |
 | | It's not possible to change this sort order in Power BI. |
-| Technical names | In **Get Data**, the characteristic/measure names (descriptions) and technical names can both be seen. The field list contains just the characteristic/measure names (descriptions). |
-| Attributes | It's not possible to access the attributes of a characteristic within Power BI. |
-| End user language setting | The locale used to connect to SAP BW is set as part of the connection details, and doesn't reflect the locale of the final report consumer. |
-| Text Variables | SAP BW allows field names to contain placeholders for variables, for example, *\$YEAR\$ Actuals*, that would then get replaced by the selected value. For example, the field appears as *2016 Actuals* in BEx tools, if the year 2016 were selected for the variable. |
+| **Technical names** | In **Get Data**, the characteristic/measure names (descriptions) and technical names can both be seen. The field list contains just the characteristic/measure names (descriptions). |
+| **Attributes** | It's not possible to access the attributes of a characteristic within Power BI. |
+| **End user language setting** | The locale used to connect to SAP BW is set as part of the connection details, and doesn't reflect the locale of the final report consumer. |
+| **Text Variables** | SAP BW allows field names to contain placeholders for variables, for example, *\$YEAR\$ Actuals*, that would then get replaced by the selected value. For example, the field appears as *2016 Actuals* in BEx tools, if the year 2016 were selected for the variable. |
 | | The column name in Power BI isn't changed depending on the variable value, and therefore would appear as *\$YEAR\$ Actuals*.  However, the column name can then be changed in Power BI. |
-| Customer Exit Variables | Customer Exit variables aren't exposed by the public API, and are therefore not supported by Power BI. |
-| Characteristic Structures | Any Characteristic structures in the underlying SAP BW source results in an ‘explosion’ of measures being exposed in Power BI. For example, with two measures Sales and Costs, and a characteristic structure containing Budget and Actual, four measures are exposed: `Sales.Budget`, `Sales.Actual`, `Costs.Budget`, `Costs.Actual`. |
+| **Customer Exit Variables** | Customer Exit variables aren't exposed by the public API, and are therefore not supported by Power BI. |
+| **Characteristic Structures** | Any Characteristic structures in the underlying SAP BW source results in an ‘explosion’ of measures being exposed in Power BI. For example, with two measures Sales and Costs, and a characteristic structure containing Budget and Actual, four measures are exposed: `Sales.Budget`, `Sales.Actual`, `Costs.Budget`, `Costs.Actual`. |
 
 ## Next steps
+
 For more information about DirectQuery, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
