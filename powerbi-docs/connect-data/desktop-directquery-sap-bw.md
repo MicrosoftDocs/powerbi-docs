@@ -78,10 +78,10 @@ The following table lists all SAP BW features that aren't fully supported, or be
 | **Technical names** | In **Get Data**, the characteristic/measure names (descriptions) and technical names can both be seen. The field list contains just the characteristic/measure names (descriptions). |
 | **Attributes** | It's not possible to access the attributes of a characteristic within Power BI. |
 | **End user language setting** | The locale used to connect to SAP BW is set as part of the connection details, and doesn't reflect the locale of the final report consumer. |
-| **Text Variables** | SAP BW allows field names to contain placeholders for variables, for example, *\$YEAR\$ Actuals*, that would then get replaced by the selected value. For example, the field appears as *2016 Actuals* in BEx tools, if the year 2016 were selected for the variable. |
-| | The column name in Power BI isn't changed depending on the variable value, and therefore would appear as *\$YEAR\$ Actuals*.  However, the column name can then be changed in Power BI. |
-| **Customer Exit Variables** | Customer Exit variables aren't exposed by the public API, and are therefore not supported by Power BI. |
-| **Characteristic Structures** | Any Characteristic structures in the underlying SAP BW source results in an ‘explosion’ of measures being exposed in Power BI. For example, with two measures Sales and Costs, and a characteristic structure containing Budget and Actual, four measures are exposed: `Sales.Budget`, `Sales.Actual`, `Costs.Budget`, `Costs.Actual`. |
+| **Text variables** | SAP BW allows field names to contain placeholders for variables, for example, `$YEAR$ Actuals`, that would then get replaced by the selected value. For example, the field appears as *2016 Actuals* in BEx tools, if the year 2016 were selected for the variable. |
+| | The column name in Power BI isn't changed depending on the variable value, and therefore would appear as `$YEAR$ Actuals`.  However, the column name can then be changed in Power BI. |
+| **Customer exit variables** | Customer Exit variables aren't exposed by the public API, and are therefore not supported by Power BI. |
+| **Characteristic structures** | Any Characteristic structures in the underlying SAP BW source results in an ‘explosion’ of measures being exposed in Power BI. For example, with two measures Sales and Costs, and a characteristic structure containing Budget and Actual, four measures are exposed: `Sales.Budget`, `Sales.Actual`, `Costs.Budget`, `Costs.Actual`. |
 
 ## Next steps
 
