@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/23/2022
+ms.date: 01/20/2023
 ---
 
 # Datasets in the Power BI service
@@ -16,65 +16,74 @@ This article provides a technical explanation of Power BI datasets.
 
 ## Dataset types
 
-Power BI datasets represent a source of data ready for reporting and visualization. There are five different dataset types, created in the following ways:
+Power BI datasets represent a source of data that's ready for reporting and visualization. You can create datasets in the following ways:
 
-- Connecting to an existing data model that isn't hosted in a Power BI capacity
-- Uploading a Power BI Desktop file that contains a model
-- Uploading an Excel workbook (containing one or more Excel tables and/or a workbook data model), or uploading a  CSV (comma-separated values) file
-- Using the Power BI service to create a [push dataset](/rest/api/power-bi/)
-- Using the Power BI service to create a [streaming or hybrid streaming dataset](service-real-time-streaming.md)
+- Connect to an existing data model that isn't hosted in Power BI.
+- Upload a Power BI Desktop file that contains a model.
+- Upload an Excel workbook that contains one or more Excel tables and/or a workbook data model, or upload a comma-separated values (CSV) file.
+- Use the Power BI service to create a [push dataset](/rest/api/power-bi).
+- Use the Power BI service to create a [streaming or hybrid streaming dataset](service-real-time-streaming.md).
 
-Except for streaming datasets, the dataset represents a data model, which leverages the mature modeling technologies of [Analysis Services](/analysis-services/analysis-services-overview).
+Except for streaming datasets, datasets represent data models, which use the mature modeling technologies of [Analysis Services](/analysis-services/analysis-services-overview).
 
 > [!NOTE]
-> In our documentation, sometimes the terms _datasets_ and _models_ are used interchangeably. Generally, from a Power BI service perspective it's referred to as a **dataset**, and from a development perspective it's referred to as a **model**. In the context of our documentation they mean much the same thing.
+> Power BI documentation sometimes uses the terms *dataset* and *model* interchangeably. A *dataset* in the Power BI service refers to a *model* from a development perspective. In a documentation context, the terms mean much the same thing.
 
 ### External-hosted models
 
 There are two types of external-hosted models: SQL Server Analysis Services and [Azure Analysis Services](/azure/analysis-services/analysis-services-overview).
 
-Connecting to a SQL Server Analysis Services model involves installing the [on-premises data gateway](service-gateway-onprem.md), whether it's on-premises or VM-hosted infrastructure-as-a-service (IaaS). Azure Analysis Services doesn't require a gateway.
+To connect to a SQL Server Analysis Services model, you must install an [on-premises data gateway](service-gateway-onprem.md) on-premises or on a virtual machine (VM)-hosted infrastructure-as-a-service (IaaS). Azure Analysis Services doesn't require a gateway.
 
-Connecting to Analysis Services often makes sense when there are existing model investments, typically forming part of an enterprise data warehouse (EDW). Power BI can make a _live connection_ to Analysis Services, enforcing data permissions by using the identity of the Power BI report user. For SQL Server Analysis Services, both multidimensional models (cubes) and tabular models are supported. As shown in the following image, a live connection dataset passes queries to external-hosted models.
+It often makes sense to connect to Analysis Services when there are existing model investments, which typically form part of an enterprise data warehouse (EDW). Power BI can make a *live connection* to Analysis Services, and enforce data permissions by using the identity of the Power BI report user. SQL Server Analysis Services supports both multidimensional models, or cubes, and tabular models. As shown in the following image, a live connection dataset passes queries to external-hosted models.
 
-![A Live Connection dataset passes queries to an external-hosted model](media/service-datasets-understand/live-connection-dataset.png)
+![Diagram that shows how a live connection dataset passes queries to an external-hosted model.](media/service-datasets-understand/live-connection-dataset.png)
 
 ### Power BI Desktop-developed models
 
-Power BI Desktop - a client application intended for Power BI development - can be used to develop a model. The model is effectively an Analysis Services tabular model. Models can be developed by importing data from dataflows, which can then be integrated with external data sources. While the specifics on how modeling can be achieved is outside the scope of this article, it's important to understand that there are three different types, or _modes_, of models that can be developed by using Power BI Desktop. These modes determine whether data is imported into the model, or whether it remains in the data source. The three modes are: Import, DirectQuery, and Composite. For more information about each mode, see the [Dataset modes in the Power BI service](service-dataset-modes-understand.md) article.
+You can use Power BI Desktop, a client application for Power BI development, to develop a model. A Power BI Desktop model is effectively an Analysis Services tabular model.
 
-External-hosted models and Power BI desktop models can enforce row-Level security (RLS) to limit the data that is retrieved for a certain user. For example, users assigned to the **Salespeople** security group can only view report data for the sales region(s) to which they're assigned. RLS roles are _dynamic_ or _static_. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md).
+You can develop models by importing data from dataflows and then integrating them with external data sources. You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. The mode depends on whether data is imported into the model, or whether it remains in the data source. For more information about the modes, see [Dataset modes in the Power BI service](service-dataset-modes-understand.md).
+
+### Row-level security
+
+External-hosted models and Power BI desktop models can enforce row-Level security (RLS) to limit the data that certain users can retrieve. For example, users assigned to a **Salespeople** security group may only view report data for the sales regions they're assigned to. RLS roles are *dynamic* or *static*. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md).
 
 ### Excel workbook models
 
-Creating datasets based on [Excel workbooks](service-excel-workbook-files.md) or [CSV files](service-comma-separated-value-files.md) results in the automatic creation of a model. Excel tables and CSV data are imported to create model tables, while an Excel workbook data model is transposed to create a Power BI model. In all cases, file data is imported into a model.
+Creating datasets based on [Excel workbooks](service-excel-workbook-files.md) or [CSV files](service-comma-separated-value-files.md) automatically creates a model. Imported Excel tables and CSV data create model tables, while Excel workbook data transposes to create a Power BI model. In all cases, file data imports into a model.
 
 ## Summary
 
-Distinctions, then, can be made about Power BI datasets that represent models:
+In summary:
 
-- They're either hosted in the Power BI service, or are externally hosted by Analysis Services.
-- They can store imported data, or they can issue pass-through query requests to underlying data sources, or they can use a mix of both.
-
-Here is a summary of important facts about Power BI datasets that represent models:
-
-- SQL Server Analysis Services hosted models require a gateway to perform live connection queries.
-- Power BI-hosted models that import data:
-  - Must be fully loaded into memory so that they can be queried.
-  - Require refresh to keep data current, and must involve gateways when source data isn't accessible directly over the internet.
-- Power BI-hosted models that use [DirectQuery](desktop-directquery-about.md) storage mode require connectivity to the source data. When the model is queried, Power BI issues queries to the source data to retrieve current data. This mode must involve gateways when source data isn't accessible directly over the internet.
-- Models may enforce RLS rules, enforcing filters to limit data access to certain users.
+- Power BI datasets that represent models are either hosted in the Power BI service, or are externally hosted by Analysis Services.
+- Dataset models can store imported data, or issue pass-through query requests to underlying data sources, or do both.
 
 ## Considerations
 
-To successfully deploy and manage Power BI, it's important to understand where models are hosted, their storage mode, any dependencies on gateways, size of imported data, and refresh type and frequency. These configurations can all have a significant impact on Power BI capacity resources. In addition, the model design itself, including its data preparation queries, relationships, and calculations, all add to the mix of considerations.
+The following important facts and considerations apply to Power BI datasets that represent models:
 
-It's also important to understand that Power BI-hosted Import models can refresh according to a schedule, or be triggered on-demand by a user in the Power BI service.
+- SQL Server Analysis Services-hosted models need a gateway to do live connection queries.
+- To query Power BI-hosted models that import data, you must fully load them into memory.
+- Power BI-hosted models that use Import need refresh to keep data current, and must use gateways when source data isn't accessible directly over the internet.
+- Power BI-hosted Import models can refresh according to a schedule, or a user can trigger on-demand refresh in the Power BI service.
+- Power BI-hosted models that use [DirectQuery](desktop-directquery-about.md) mode require connectivity to the source data. Power BI issues queries to the source data to retrieve current data. This mode must use gateways when source data isn't accessible directly over the internet.
+- Models can enforce RLS rules to filter data access to certain users.
+- To take over ownership if a dataset owner leaves the organization, you can use the [Datasets - Take Over In Group API](/rest/api/power-bi/datasets/take-over-in-group).
 
-In scenarios where the dataset owner might have left the organization and one needs to take over the ownership, use the ["Datasets - Take Over In Group"](/rest/api/power-bi/datasets/take-over-in-group) API.
+To successfully deploy and manage Power BI datasets, you should understand the following factors:
+
+- The model design itself, including its data preparation queries, relationships, and calculations.
+- The following configurations that can significantly impact Power BI capacity resources:
+  - Where models are hosted.
+  - The storage mode.
+  - Any dependencies on gateways.
+  - The size of imported data.
+  - Model refresh type and frequency.
 
 ## Next steps
 
 - [Dataset modes in the Power BI service](service-dataset-modes-understand.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Ask the Power BI Community](https://community.powerbi.com)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
