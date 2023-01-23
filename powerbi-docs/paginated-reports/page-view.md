@@ -26,13 +26,13 @@ When you render a paginated report in the Power BI service, the default view is 
 
 Paginated reports open in the default Web Layout view.
 
-:::image type="content" source="media/page-view/power-bi-paginated-default-view.png" alt-text="Screenshot that shows the default view in the Power BI service.:::
+:::image type="content" source="media/page-view/power-bi-paginated-default-view.png" alt-text="Screenshot that shows the default view in the Power BI service.":::
 
 ### Print Layout
 
 In the Print Layout view, the rendered report looks different compared to the default view. Some properties and concepts in paginated reports only apply to fixed pages. The view is similar to when the report is printed or exported. You can still change some elements, like parameter values, but it doesn't have other interactive features such as column sorting and toggles.
 
-:::image type="content" source="media/page-view/power-bi-paginated-page-view.png" alt-text="Screenshot showing the Print Layout view.:::
+:::image type="content" source="media/page-view/power-bi-paginated-page-view.png" alt-text="Screenshot showing the Print Layout view.":::
 
 The Print Layout supports all the features that the browser's PDF viewer supports, such as Zoom in, Zoom out, and Fit to page.
 
@@ -42,11 +42,11 @@ When you open a paginated report, it renders in the default interactive view. If
 
 1. Select **View** on the toolbar > **Print Layout**.
 
-    :::image type="content" source="media/page-view/power-bi-paginated-page-view-dropdown.png" alt-text="Screenshot showing the Print Layout button under the View menu.:::
+    :::image type="content" source="media/page-view/power-bi-paginated-page-view-dropdown.png" alt-text="Screenshot showing the Print Layout button under the View menu.":::
 
 2. You can change the view settings by selecting **Page Settings** in the **View** menu on the toolbar. 
 
-    :::image type="content" source="media/page-view/power-bi-paginated-page-settings-dropdown.png" alt-text="Screenshot showing the Page Settings button.:::
+    :::image type="content" source="media/page-view/power-bi-paginated-page-settings-dropdown.png" alt-text="Screenshot showing the Page Settings button.":::
 
     The **Page Settings** dialog box has options to set **Page Size** and **Orientation** for the Print Layout. After you apply page settings, the same options apply when you print the page later.
    
