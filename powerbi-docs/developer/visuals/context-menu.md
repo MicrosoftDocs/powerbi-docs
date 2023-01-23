@@ -43,24 +43,28 @@ Use `selectionManager.showContextMenu()` with parameters `selectionId` and a pos
 The following example shows how to add a context menu to a visual. The code is taken from the `barChart.ts` file, which is part of the [sample BarChart visual](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart):
 
 ```typescript
-public update(options: VisualUpdateOptions) {
-    //...
-    //handle context menu
-    this.svg.on('contextmenu', (event) => {
-        let dataPoint: any = d3Select(event.target).datum();
-        this.selectionManager.showContextMenu((dataPoint && dataPoint.data && dataPoint.data.identity) ? dataPoint.data.identity : {}, {
-            x: event.clientX,
-            y: event.clientY
-        });
-        event.preventDefault();
-    });
-}
+constructor(options: VisualConstructorOptions) {
+        ...
+        this.handleContextMenu();
+    }
+
+private handleContextMenu() {
+        this.svg.on('contextmenu', () => {
+            const mouseEvent: MouseEvent = getEvent();
+            const eventTarget: EventTarget = mouseEvent.target;
+            let dataPoint: any = d3Select(<d3.BaseType>eventTarget).datum();
+            this.selectionManager.showContextMenu(dataPoint ? dataPoint.selectionId : {}, {
+                x: mouseEvent.clientX,
+                y: mouseEvent.clientY
+            });
+            mouseEvent.preventDefault();
+        });
+    }
 ```
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Add interactivity into visual by Power BI visuals selections](selection-api.md)
+* [Add interactivity into visual by Power BI visuals selections](selection-api.md)
+* [Build a bar chart](create-bar-chart.md)
 
->[!div class="nextstepaction"]
->[Build a bar chart](create-bar-chart.md)
+More questions? [Ask the Power BI Community](https://community.powerbi.com)
