@@ -61,7 +61,7 @@ You can feature dashboards, reports, and apps so they appear in the Featured sec
 
 Currently, you can only change the Pages pane setting in the Power BI service. When you toggle **Pages pane** on, report readers see the report page tabs along the bottom of the report in Reading view instead of along the side. In Edit view, the report page tabs are already along the bottom of the report.
 
-:::image type="content" source="media/power-bi-report-settings/report-settings-pages-pane.png" alt-text="Screenshot of Pages pane along the bottom of the report.":::
+:::image type="content" source="media/power-bi-report-settings/report-settings-pages-pane.png" alt-text="Screenshot of the Pages pane along the bottom of the report.":::
 
 ## Control filters
 
