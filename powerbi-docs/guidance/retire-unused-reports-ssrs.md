@@ -1,5 +1,5 @@
 ---
-title: "Find and retire unused .rdl reports | Microsoft Docs"
+title: "Find and retire unused .rdl reports"
 description: You don't want to migrate unused .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to the Power BI service. As you plan for a migration to the cloud, we suggest doing some housekeeping to get rid of unused .rdl reports.
 ms.date: 12/15/2022
 ms.service: powerbi
