@@ -30,11 +30,11 @@ You can also export paginated reports to many formats:
 
 1. Open the BI service, then select the paginated report in the workspace.
 
-        :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-in-service.png" alt-text="Screenshot of the workspace in the Power BI service and a paginated report highlighted.":::
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-in-service.png" alt-text="Screenshot of the workspace in the Power BI service and a paginated report highlighted.":::
 
 1. If the report has parameters, it will not appear when you first open it. Select parameters, then select **View Report**. The following image is an example of a report with parameters.
 
-         :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-select-parameters.png" alt-text="Screenshot of the Parameters to view the report with the required field highlighted.":::
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-select-parameters.png" alt-text="Screenshot of the Parameters to view the report with the required field highlighted.":::
 
     You can also change the parameters at any time.
 
@@ -44,7 +44,7 @@ You can also export paginated reports to many formats:
 
 1. Select **Export** to find a format to export your paginated reports.
 
-        :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-export.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
+    :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-export.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
 
 ## Next steps
 
