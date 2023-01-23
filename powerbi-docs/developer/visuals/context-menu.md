@@ -16,8 +16,8 @@ Every Power BI visual can display a context menu. The context menu allows you to
 When you right-click anywhere inside a visual's viewport (or long-press for touch devices), the context menu displays.
 There are two modes of context menus for each visual. The mode that displays depends on where you click inside the visual:
 
-* Calling the context menu on **empty space** gives you the basic context menu for the visual.
-* Calling the context menu on a specific **data point** gives you added options that can be applied to that data point. In this case, the context menu also contains the options *Show data point as a table*, *Include*, and *Exclude*, which will apply the corresponding filter to that data point.
+* Call the context menu on **empty space** to see the basic context menu for the visual.
+* Call the context menu on a specific **data point** for added options that can be applied to that data point. In this case, the context menu also contains the options *Show data point as a table*, *Include*, and *Exclude*, which will apply the corresponding filter to that data point.
 
 ## [Context menu on empty space](#tab/EmptySpace)
 
