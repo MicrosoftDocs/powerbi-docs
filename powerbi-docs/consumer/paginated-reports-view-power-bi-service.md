@@ -12,7 +12,7 @@ ms.date: 01/23/2023
 
 # View a paginated report in the Power BI service
 
-In this article, you learn about viewing a paginated report to the Power BI service. Paginated reports are reports created in Report Builder and can be uploaded to any  workspace.
+In this article, you learn about viewing a paginated report in the Power BI service. Paginated reports are reports created in Report Builder and can be uploaded to any  workspace.
 
 Paginated reports have their own icon :::image type="icon" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-icon.png":::.
 
@@ -38,11 +38,11 @@ You can also export paginated reports to many formats:
 
     You can also change the parameters at any time.
 
-1. When you have a multiple-page report, use the page through feature. Select the arrows at the top of the page or by typing a page number in the box.
+1. When you have a multiple-page report, use the page through feature. Select the arrows at the top of the page or by typing a page number in the box. Look at the following example to see where to find the page through feature.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-page-thru-report.png" alt-text="Screenshot of the Page through feature to view the report highlighted.":::
 
-1. Select **Export** to find a format to export your paginated reports.
+1. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-export.png" alt-text="Screenshot the Export button highlighted, and the dropdown menu open.":::
 
