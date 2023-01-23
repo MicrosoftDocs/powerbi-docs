@@ -55,7 +55,7 @@
     - name: Power BI in China
       href: regions-power-bi-china-cloud.md
     - name: Move between regions
-      href: ../admin/service-admin-region-move.md
+      href: /power-bi/support/service-admin-region-move
   - name: Premium
     expanded: false
     items:
