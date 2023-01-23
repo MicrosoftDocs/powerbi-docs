@@ -126,7 +126,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 * If you chose the second option, after you've updated the workspace **you need to update the app to apply changes from the workspace to the app**.
 * Overwriting keeps configured parameters and authentication. After update, an automatic dataset refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
 
-  :::image type="content" source="media/service-template-apps-install-distribute/power-bi-sample-data.png" alt-text="Screenshot of the banner showing information about the update." lightbox=media/service-template-apps-install-distribute/power-bi-sample-data.png:::
+  :::image type="content" source="media/service-template-apps-install-distribute/power-bi-sample-data.png" alt-text="Screenshot of the banner showing information about the update." lightbox="media/service-template-apps-install-distribute/power-bi-sample-data.png":::
 
 * Overwriting always presents sample data until the refresh is complete. If the template app author made changes to the dataset or parameters, users of the workspace and app won't see the new data until the refresh is complete. Instead, they'll still see sample data during this time.
 * Overwriting never deletes new reports or dashboards you've added to the workspace. It only overwrites the original reports and dashboards with changes from the original author.
