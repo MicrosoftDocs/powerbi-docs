@@ -49,10 +49,7 @@ constructor(options: VisualConstructorOptions) {
     }
 
 private handleContextMenu() {
-        this.svg.on('contextmenu', () => {
-            const mouseEvent: MouseEvent = getEvent();
-            const eventTarget: EventTarget = mouseEvent.target;
-            let dataPoint: any = d3Select(<d3.BaseType>eventTarget).datum();
+        this.rootSelection.on('contextmenu', (event: PointerEvent, dataPoint) => {
             this.selectionManager.showContextMenu(dataPoint ? dataPoint.selectionId : {}, {
                 x: mouseEvent.clientX,
                 y: mouseEvent.clientY
