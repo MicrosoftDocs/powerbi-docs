@@ -55,7 +55,7 @@
     - name: Power BI in China
       href: regions-power-bi-china-cloud.md
     - name: Move between regions
-      href: ../admin/service-admin-region-move.md
+      href: /power-bi/support/service-admin-region-move
   - name: Premium
     expanded: false
     items:
@@ -71,8 +71,6 @@
         href: service-admin-premium-purchase.md   
       - name: Purchase Power BI Premium for testing
         href: service-admin-premium-testing.md                    
-      - name: Plan your transition to Power BI Premium Gen2
-        href: service-premium-transition-gen1-to-gen2.md           
       - name: Managing Premium Gen2 capacities
         href: service-premium-capacity-manage-gen2.md
       - name: Configure and manage capacities

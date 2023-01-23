@@ -39,7 +39,7 @@ Be aware of the following [admin](#admin-considerations) and [user](#user-consid
 
 ### User considerations
 
-- Organizational Power BI visuals can't be [exported to PowerPoint](../../collaborate-share/end-user-powerpoint.md) or displayed in emails received when a user [subscribes to report pages](../../consumer/end-user-subscribe.md). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace support these features.
+- Organizational Power BI visuals can't be [exported to PowerPoint](../../collaborate-share/end-user-powerpoint.md) or displayed in emails received when a user [subscribes to report pages](/power-bi/collaborate-share/end-user-subscribe). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace support these features.
 - Organizational Power BI visuals aren't supported in Power BI report server.
 - Certain visuals won't render if deployed through the organization's repository. Use the **Add from AppSource** option in the Admin portal to manage the following visuals:
 
