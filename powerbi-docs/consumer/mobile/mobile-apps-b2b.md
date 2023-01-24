@@ -46,5 +46,5 @@ Even though you need to have a Power BI artifact link to connect to an external 
 - Push notifications are received from the home organization site only (even when the user is connected as a guest to an external organization). Opening the notification reconnects the app to the user's home organization site.
 - If the user shuts down the app, when reopened the app connects automatically to the user's home organization.
 - When connected to an external organization, some actions are disabled: favorite items, data alerts, commenting, and sharing.
-- Offline data isn't available while you are connected to an external organization.
+- Offline data isn't available while you're connected to an external organization.
 - If you have the Company Portal app installed on your device, then your device must be enrolled.
