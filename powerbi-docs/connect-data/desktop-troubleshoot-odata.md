@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting OData sign in errors in Power BI Desktop
+title: Troubleshooting OData sign-in errors in Power BI Desktop
 description: Learn about solutions to common sign-in issues with OData connections, including credential type not supported error and access denied errors.
 author: davidiseminger
 ms.author: davidi
@@ -11,9 +11,9 @@ ms.topic: troubleshooting
 ms.date: 01/24/2023
 LocalizationGroup: Troubleshooting
 ---
-# Troubleshooting sign in with OData feed
+# Troubleshooting sign-in with OData feed
 
-This article contains troubleshooting options when signing in using and organization account for an OData feed:
+This article contains troubleshooting options when signing in using an organization account for an OData feed:
 
 * Credential type not supported error
 * Access denied errors
@@ -42,7 +42,7 @@ You need to ensure your service is sending auth headers as follows:
   www-authenticate: Bearer authorization_uri=https://login.microsoftonline.com/<Your Active Directory Tenant Id>/oauth2/authorize
   ```
 
-After a successful redirect call, calls to your service have the right access token in the authorization header. If you still see an error, clear the Global Permissions for the OData service uri and try again. To clear Global Permissions, go to **File** > **Options and Settings** > **Data Source Settings** > **Global Permissions**.
+After a successful redirect call, calls to your service have the right access token in the authorization header. If you still see an error, clear the **Global Permissions** for the OData service uri and try again. To clear **Global Permissions**, go to **File** > **Options and Settings** > **Data Source Settings** > **Global Permissions**.
 
 ## Access denied
 
