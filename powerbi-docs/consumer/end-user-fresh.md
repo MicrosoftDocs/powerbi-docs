@@ -8,7 +8,7 @@ ms.subservice: pbi-explore
 ms.reviewer: mihart
 ms.custom:  
 ms.topic: how-to
-ms.date: 11/09/2022
+ms.date: 01/24/2023
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
