@@ -14,7 +14,7 @@ LocalizationGroup: Learn more
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In **Power BI** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, *show as table* , *show data point as a table* or *drillthrough to details*.
+In **Power BI** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, *show as table*, *show data point as a table* or *drillthrough to details*.
 
 You can use **Visual table** to view the data in a visual as a table, or use **Data point table** to view a table of the data used to calculate a single data point. These capabilities are available in Power BI Desktop and in the Power BI service.
 
