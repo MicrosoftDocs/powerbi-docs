@@ -18,7 +18,7 @@ This article describes the support options that are available to customers who h
 
 If you're an end user, you can contact Support directly if you have a Power BI Pro or Power BI Premium Per User license. But, your administrator might prefer you take a different route to get help. Before you contact support, check these requirements:
 
-1. Find out which license you have. To quickly check whether you're eligible to contact Support, select your profile picture from the page header in [the Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you might use the following listed support options. Select **View account** to see more details about your account.
+1. Find out which license you have. To quickly check whether you're eligible to contact Support, select your profile picture from the page header in the [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you might use the following listed support options. Select **View account** to see more details about your account.
 
    :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::
 
