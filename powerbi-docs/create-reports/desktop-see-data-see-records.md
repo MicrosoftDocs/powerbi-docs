@@ -14,7 +14,7 @@ LocalizationGroup: Learn more
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In **Power BI** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, or *drillthrough to details*.
+In **Power BI** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, *show as table* , *show data point as a table* or *drillthrough to details*.
 
 You can use **Visual table** to view the data in a visual as a table, or use **Data point table** to view a table of the data used to calculate a single data point. These capabilities are available in Power BI Desktop and in the Power BI service.
 
@@ -98,15 +98,22 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 
 :::image type="content" source="media/desktop-see-data-see-records/visual-table-06.png" alt-text="Screenshot that shows the upper-left corner of the Power B I Desktop canvas. Back to report is called out.":::
 
+> [!NOTE]
+> **Visual table** has the following limitations:
+>
+> - You can't export the *Visual table* to PDF or static PowerPoint. 
+
 # [Power BI service](#tab/powerbi-service)
 
 :::image type="content" source="media/desktop-see-data-see-records/service-back-button.png" alt-text="Screenshot that shows the upper-left corner of the Power B I service canvas. Back to report is called out.":::
 
----
 > [!NOTE]
 > **Show as table** has the following limitations:
 >
 > - You can't export the **Show as table** view to PDF or static PowerPoint. 
+
+---
+
 
 ## Use Data point table in Power BI
 
@@ -127,6 +134,14 @@ When you select **Data point table** for a data element, the Power BI Desktop ca
 
 :::image type="content" source="media/desktop-see-data-see-records/visual-table-09.png" alt-text="Screenshot of a Power B I Desktop canvas. All the data for the selected column element is visible in a table.":::
 
+> [!NOTE]
+> **Data point table** has the following limitations:
+>
+> - You can't change the data in the **Data point table** view and save it back to the report.
+> - You can't use **Data point table** when your visual uses a calculated measure in a (multidimensional) measure group.
+> - You can't use **Data point table** when you are connected to a live multidimensional (MD) model.
+> - You can't export the **Data point table** view to PDF or static PowerPoint. 
+
 # [Power BI service](#tab/powerbi-service)
 
 You can also focus on one data record in a visualization, and drill into the data behind it. To use **Data point table**, right-click a data element and select **Show data point as a table** from the menu that appears.
@@ -137,17 +152,17 @@ When you select **Show data point as a table** for a data element, the Power BI 
 
 :::image type="content" source="media/desktop-see-data-see-records/service-data-point-table.png" alt-text="Screenshot of the Power B I service. All the data for the selected column element is visible in a table.":::
 
+> [!NOTE]
+> **Show data point as a table** has the following limitations:
+>
+> - You can't change the data in the **Show data point as a table** view and save it back to the report.
+> - You can't use **Save data point as a table** when your visual uses a calculated measure in a (multidimensional) measure group.
+> - You can't use **Save data point as a table** when you are connected to a live multidimensional (MD) model.
+> - You can't export the **Save data point as a table** view to PDF or static PowerPoint. 
 ---
 
 To get back to the report, select **< Back to Report** in the upper-left corner of the canvas.
 
-> [!NOTE]
-> **Data point table** has the following limitations:
->
-> - You can't change the data in the **Data point table** view and save it back to the report.
-> - You can't use **Data point table** when your visual uses a calculated measure in a (multidimensional) measure group.
-> - You can't use **Data point table** when you are connected to a live multidimensional (MD) model.
-> - You can't export the **Data point table** view to PDF or static PowerPoint. 
 
 ## Next steps
 
