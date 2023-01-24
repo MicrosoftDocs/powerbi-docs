@@ -1,32 +1,25 @@
 ---
-title: "Define Parameters in the MDX Query Designer for Analysis Services data source of a Power BI paginated report | Microsoft Docs"
-description: Learn how to define query parameters in the Multidimensional Expression (MDX) query designer for Analysis Services.
-ms.date: 03/14/2017
+title: "Define Parameters in the DAX Query Designer for Analysis Services data source of a Power BI paginated report | Microsoft Docs"
+description: Learn how to define query parameters in the DAX query designer for Analysis Services.
+ms.date: 01/23/2023
 ms.service: powerbi
-ms.subservice: report-data
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
-helpviewer_keywords: 
-  - "parameters [Reporting Services], MDX"
-  - "Multidimensional Expressions [Reporting Services]"
-  - "Data Mining Prediction [Reporting Services]"
-  - "MDX [Reporting Services], defining parameters"
-  - "DMX [Reporting Services]"
-ms.assetid: 4ad1e5bc-f510-4752-b4f6-589e55317a90
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Define Parameters in the MDX Query Designer for Analysis Services data source of a Power BI paginated report
+# Define Parameters in the DAX Query Designer for Analysis Services data source of a Power BI paginated report
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  To parameterize an MDX query for an Analysis Services data source of a Power BI paginated report, you must add a query parameter to the query. In the MDX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
+  To parameterize an DAX query for an Analysis Services data source of a Power BI paginated report, you must add a query parameter to the query. In the DAX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
   
   
-### To define a query parameter in MDX in Design mode  
+### To define a query parameter in DAX in Design mode  
   
-1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The MDX query designer opens in Design mode.  
+1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The DAX query designer opens in Design mode.  
   
 2.  Drag a dimension to the filter area and drop it on the first cell in the **Dimension** column.  
   
@@ -40,7 +33,7 @@ ms.author: maggies
   
 7.  Click **Run**.  
   
-     After you run the query, click **Design** on the toolbar to toggle to Query mode to view the MDX query that was created. Do not change the query text in Query mode if you want to continue to use Design mode to develop the query. Click **Design** to toggle back to Design mode.  
+     After you run the query, click **Design** on the toolbar to toggle to Query mode to view the DAX query that was created. Do not change the query text in Query mode if you want to continue to use Design mode to develop the query. Click **Design** to toggle back to Design mode.  
   
 8.  Select **OK**.
   
@@ -48,13 +41,13 @@ ms.author: maggies
   
      To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
   
-### To define a query parameter in MDX in Query mode  
+### To define a query parameter in DAX in Query mode  
   
-1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The MDX query designer opens in Design mode.  
+1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The DAX query designer opens in Design mode.  
   
 2.  On the toolbar, click **Design** to toggle to Query mode.  
   
-3.  On the MDX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box](../report-design/media/iconqueryparameter.gif "Icon for the Query Parameters dialog box")). The Query Parameters dialog box opens.  
+3.  On the DAX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box](../report-design/media/iconqueryparameter.gif "Icon for the Query Parameters dialog box")). The Query Parameters dialog box opens.  
   
 4.  In the **Parameter** column, click **\<Enter Parameter>**, and then type the name of a parameter.  
   
@@ -77,7 +70,6 @@ ms.author: maggies
      To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
   
 ## Next steps  
- [Analysis Services Connection Type for MDX &#40;SSRS&#41;](../../paginated-reports/report-data/analysis-services-connection-type-for-mdx-ssrs.md)   
- [Analysis Services MDX Query Designer User Interface](../../paginated-reports/report-data/analysis-services-mdx-query-designer-user-interface.md)  
+ [Analysis Services DAX Query Designer User Interface](/sql/reporting-services/report-data/analysis-services-mdx-query-designer-user-interface)  
   
   
