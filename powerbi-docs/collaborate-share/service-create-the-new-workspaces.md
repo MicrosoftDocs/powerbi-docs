@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/20/2022
+ms.date: 11/02/2022
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -135,7 +135,8 @@ However, contributors can't:
 * Create or publish the app for the first time.
 * Add users to the app or change who has permission to the app.
 * Enable or disable automatic installation of app for app users.
-* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups. 
+* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups.
+* Allow or prevent app consumers saving a copy of reports included in the app.  
 
 ## Premium capacity settings
 

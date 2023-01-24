@@ -1,306 +1,179 @@
 ---
-title: Register an app to embed Power BI content in a Power BI embedded analytics application
-description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content.
+title: Get started with Power BI Embedded
+description: Set up Power BI Embedded by using a setup tool to register an Azure AD app, create a workspace, import content, grant permissions, and download a sample app.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: nishalit
+keywords: 
+ms.date: 01/23/2023
+ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: how-to
-ms.date: 12/05/2021
+ms.custom: intro-overview
 ---
+# Set up Power BI Embedded
 
-# Register an Azure AD application to use with Power BI
+:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+
+If you want to start using Power BI Embedded to share your reports with others, use the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup) to get started. This article shows you how.
 
 To use Power BI embedded analytics, you need to register an Azure Active Directory (Azure AD) application in Azure. The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
 
-## Determine your embedding solution
+## Prerequisite
 
-Before registering your app, decide which of the following solutions is best suited for you:
+To set up a Power BI embedded analytics environment, you need one of the following:
 
-* [Embed for your customers](#embed-for-your-customers)
-* [Embed for your organization](#embed-for-your-organization)
+* [Azure AD tenant](./create-an-azure-active-directory-tenant.md) and an organizational (master) user
+* [Power BI Pro](https://powerbi.microsoft.com/power-bi-pro/) account
+
+## Before you begin
+
+Before you can register your app, decide which of the following solutions best suits your needs:
+
+* [For your customers](#embed-for-your-customers)
+* [For your organization](#embed-for-your-organization)
 
 ### Embed for your customers
 
-Use the [embed for your customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you're planning to create an application that's designed for your customers. Users will not need to sign in to Power BI or have a Power BI license, to use your application. Your application will use one of the following methods to authenticate against Power BI:
+Use the [embed-for-your-customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you create an app that's designed for your customers. Users don't need to sign in to Power BI or have a Power BI license to use your app. Your app authenticates against Power BI by using either a **master user** account (a Power BI Pro license used for signing in to Power BI) or a [service principal](embed-service-principal.md).
 
-* **Master user** account (a Power BI Pro license used for signing in to Power BI)
-
-* [Service principal](embed-service-principal.md)
-
-The embed for your customers solution is usually used by independent software vendors (ISVs) and developers who are creating applications for a third party.
+The embed-for-your-customers solution is usually used by independent software vendors (ISVs) and developers who create applications for a third party.
 
 ### Embed for your organization
 
-Use the [embed for your organization](embed-sample-for-your-organization.md) solution, also known as *user owns data*, if you're planning to create an application  that requires users to use their credentials to authenticate against Power BI.
+Use the [embed-for-your-organization](embed-sample-for-your-organization.md) solution, also known as *user owns data*, if you create an application that requires users to use their credentials to authenticate against Power BI.
 
-The embed for your organization solution is usually used by enterprises and big organizations, and is intended for internal users.
+The embed-for-your-organization solution is usually used by enterprises and large organizations, and is intended for internal users.
 
-## Register an Azure AD app
+For more about the two solutions, see [What are the Power BI embedded analytics solutions?](embedded-analytics-power-bi.md#what-are-the-power-bi-embedded-analytics-solutions).
 
-The easiest way to register an Azure AD app is by using the  [Power BI embedding setup tool](https://app.powerbi.com/embedsetup). The tool offers a quick registration process for both embedding solutions, using a simple graphical interface.
+## Set up your environment
 
-If you're creating an *embed for your organization* application, and want more control over your Azure AD app, you can register it manually in the Azure portal.
+After you understand the two embedding options, you can use the setup tool to create your Power BI Embedded environment.
 
-> [!IMPORTANT]
-> Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md).
-
-## [Embed for your customers](#tab/customers)
-
-These steps describe how to register an Azure AD application for the Power BI [embed for your customers](embed-sample-for-customers.md) solution.
+If you prefer to manually set up your environment, skip the steps in the following sections. Instead, follow the steps in [Manual registration](#manual-registration), later in this article.
 
 > [!IMPORTANT]
-> The following instructions will not work for GCC customers. If you are embedding for a GCC, follow the instructions for **Manual registration**.
+> If you're embedding for a GCC, follow the instructions in [Manual registration](#manual-registration).
 
-[!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
+To use the tool to set up your environment, go to the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup). Select the embedding option that you want.
 
-2. In the *Choose an embedding solution* section, select **Embed for your customers**.
+:::image type="content" source="./media/register-app/choose-embedding-solution.png" alt-text="Screenshot of the Power BI embedded analytics setup tool. The options for embedding for your customers or for your organization are highlighted.":::
 
-[!INCLUDE[registration tool step 3](../../includes/register-tool-step-3.md)]
+## Step 1 - Sign in to Power BI
 
-4. In *Step 2 - Register your application*, fill in the following fields:
+1. Under **Step 1** in the setup tool, select **Sign in**. This step signs you in to Power BI. If you're prompted to pick an account, sign in with a user that belongs to your Power BI tenant. The Azure AD app gets registered under this user.
 
-    * **Application Name** - Give your application a name.
+   :::image type="content" source="./media/register-app/step-one-sign-in.png" alt-text="Screenshot of the Power BI embedded analytics setup tool. Under Step 1, the Sign in button is highlighted.":::
 
-    * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
+   > [!NOTE]
+   > If you're already signed in, verify that you're signed in with the user you want to use to create the Azure AD app. To change users, select **sign out**. After the tool restarts, sign in with the correct user.
 
-    ![Screenshot showing how to register you application.](media/register-app/register-app.png)
+1. Select **Next** to go to the next step.
 
-5. Select **Register**.
+   :::image type="content" source="./media/register-app/step-one-signed-in.png" alt-text="Screenshot of the Power BI embedded analytics setup tool after a user has signed in to Power BI. The Next button in highlighted.":::
 
-    Your Azure AD app **Application ID** is displayed in the *Summary* box. Copy this value for later use.
+## Step 2 - Register your application
 
-[!INCLUDE[registration tool steps 6-7](../../includes/register-tool-steps-6-7.md)]
+In this step, you register an Azure AD application in Azure. The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/). You can always change these settings at a later time.
 
-8. In *Step 5 - Grant permissions*, select **Grant permissions** and in the pop-up window select **accept**. This allows your Azure AD app to access the APIs you selected (also known as scopes) with your signed in user. This user is also known as the **master user**.
+### [Embed for your customers](#tab/customers)
 
-9. (Optional) If you created a Power BI workspace and uploaded content to it using the tool, you can now select **Download sample application**. Make sure you copy all the information in the *Summary* Box.
+1. To register your application for your customers, fill in the following fields:
 
-[!INCLUDE[registration tool note](../../includes/register-tool-note.md)]
+   * **Application Name** - Give your application a name.
 
-## [Embed for your organization](#tab/organization)
+   * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can select **Select all** to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
-These steps describe how to register an Azure AD application for the Power BI [embed for your organization](embed-sample-for-your-organization.md) solution.
+   :::image type="content" source="media/register-app/register-app.png" alt-text="Screenshot of the Power BI embedded analytics setup tool. The step for registering an app is visible, with an app name box and API access options.":::
 
-[!INCLUDE[registration tool step 1](../../includes/register-tool-step-1.md)]
+1. Select **Register**.
 
-2. In the *Choose an embedding solution* section, select **Embed for your organization**.
+1. Your Azure AD app **Application ID** is displayed in the **Summary** box. Copy this value for later use.
 
-[!INCLUDE[registration tool step 3](../../includes/register-tool-step-3.md)]
+   :::image type="content" source="./media/register-app/application-id.png" alt-text="Screenshot of the Power BI embedded analytics setup tool, with a Summary box on the right. Information in the box includes an application ID.":::
 
-4. In *Step 2 - Register your application*, fill in the following fields:
+### [Embed for your organization](#tab/organization)
 
-    * **Application Name** - Give your application a name.
+1. To register your application for your organization, fill in the following fields:
 
-    * **Home Page URL** - Enter a URL for your home page.
+   * **Application Name** - Give your application a name.
 
-    * **Redirect URL** - Upon signing in, your application users will be redirected to this address while your application receives an authentication code from Azure. Select one of these options:
+   * **Home Page URL** - Enter a URL for your home page.
 
-        * **Use a default URL** - This option will automatically create and download a sample embedded analytics application. The default URL is http://localhost:13526/.
+   * **Redirect URL** - Select a redirection option. When your users sign in, they're redirected to this address while your application receives an authentication code from Azure. Choose one of these options for this URL:
 
-        * **Use a custom URL** - Select this option if you already have an embedded analytics application, and know what you want to use as a redirect URL.
+     * **Use a default URL** - This option automatically creates and downloads a sample embedded analytics application. The default URL is `http://localhost:13526/`.
+     * **Use a custom URL** - This option is appropriate if you already have an embedded analytics application, and know what you want to use as a redirect URL.
 
-    * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
+   * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. Select **Select all** to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
-5. Select **Register**.
+1. Select **Register**.
 
-    Your Azure AD app **Application ID** and **Application secret** values are displayed in the *Summary* box. Copy these values for later use.
-
-[!INCLUDE[registration tool steps 6-7](../../includes/register-tool-steps-6-7.md)]
-
-8. (Optional) If you created a Power BI workspace and uploaded content to it using the tool, you can now select **Download sample application**. Make sure you copy all the information in the *Summary* Box.
-
-[!INCLUDE[registration tool note](../../includes/register-tool-note.md)]
-
-## [Manual registration](#tab/manual)
-
-Use the Azure AD manual app registration only if you're creating one of the following solutions:
-
-* An *embed for your organization* application.
-
-* An *embed for your customers* application with a *service principal*.
-
-For more information about how to register applications in Azure Active Directory, see [Register an app with the Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app).
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-
-2. Select your Azure AD tenant by selecting your account in the upper right corner of the page.
-
-3. Select **App registrations**. If you can't see this option, search for it.
-
-4. In *App registrations*, select **New registration**.
-
-5. Fill in the following fields:
-
-    * **Name** - Give your application a name.
-
-    * **Supported account type** - Select who can use the application.
-
-6. (Optional) In the **Redirect URI**, add a redirect URL.
-
-7. Select **Register**. After your app is registered you're directed to your app's overview page, where you can obtain the *Application ID*.
+1. Your Azure AD app **Application ID** and **Application secret** values are displayed in the **Summary** box. Copy these values for later use.
 
 ---
 
-## Change your Azure AD app's permissions
+## Step 3 - Create a workspace (optional)
 
-After you register your application, you can make changes to its permissions. Permission changes can be made programmatically, or in the Azure portal.
+Create a workspace in the Power BI service:
+
+* If you already have a Power BI workspace, select **Skip**.
+
+* To create a workspace, enter a name for your workspace, and then select **Create workspace**. Your workspace name and ID appear in the **Summary** box. Copy these values for later use.
+
+  >[!TIP]
+  >For the **embedded analytics sample app** to work as expected, you have to use the tool to create a workspace.
+
+## Step 4 - Import content (optional)
+
+Select one of the following options:
+
+* If you have your own Power BI app, you can select **Skip**.
+
+* If you want to create a sample Power BI app by using a sample report, select **Sample Power BI report**, and then select **Import**.
+
+* If you want to create a sample Power BI app by using your own report, select **Upload a *.pbix* file**, browse for your file, and then select **Import**.
+
+## Step 5 - Grant permissions (*Embed for your customers* only)
+
+Select **Grant permissions** and in the dialog, select **Accept**. This step allows your Azure AD app to access the APIs you selected (also known as scopes) with your signed-in user. This user is also known as the **master user**.
+
+## Download sample app (optional)
+
+If you created a Power BI workspace and uploaded content to it by using this tool, you can now select **Download sample application**.
 
 >[!NOTE]
->Azure AD app permissions are only applicable for these scenarios:
->
->* *Embed for your organization*
->* *Embed for your customers* with the *master user* authentication method
+>If you skipped the optional stages, you can still download a sample Power BI app. However, the code in the downloaded app lacks the properties that get filled in during registration. For example, if you don't create a workspace, the sample app doesn't include the workspace ID.
 
-## [Azure](#tab/Azure)
+Make sure you copy all the information in the **Summary** box. Your Power BI embedding environment is ready to use.
 
-In the Azure portal, you can view your app and make changes to its permissions.
+## Manual registration
 
-1. Sign into the [Azure portal](https://portal.azure.com).
+If you didn't use the Power BI embedded analytics setup tool, use the procedure in this section to manually register an Azure AD app. But take these steps only if you're creating one of the following solutions:
 
-2. Select your Azure AD tenant by selecting your account in the upper right corner of the page.
+* An embed-for-your-organization application
+* An embed-for-your-customers application with a *service principal*
 
-3. Select **App registrations**. If you can't see this option, search for it.
+For more information about how to register applications in Azure AD, see [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
-4. From the **Owned applications** tab, select your app. The application opens in the *Overview* tab, where you can review the *Application ID*.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-5. Select the **View API permissions** tab.
+1. Select your Azure AD tenant by selecting your account in the upper-right corner of the page.
 
-    ![Screenshot of View API permissions tab.](media/register-app/api-permissions.png)
+1. Select **App registrations**. If you don't see this option, search for it.
 
-6. Select **Add a permission**.
+1. In *App registrations*, select **New registration**.
 
-7. To add permissions, follow these steps (note that the first step is different for GCC apps):
+1. Fill in the following fields:
 
-    1. From the **Microsoft APIs** tab, select **Power BI service**.
-    > [!NOTE]
-    > For GCC apps, Select the **APIs my organization uses** tab, and search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.
-    >    ![Screenshot of GCC permissions tab.](media/register-app/find-gcc-apis.png)
+   * **Name** - Give your application a name.
 
-    2. Select **Delegated Permissions** and add or remove the specific permissions you need.
+   * **Supported account type** - Select who can use the application.
 
-    3. When you're done, select **Add permissions** to save your changes.
+1. (Optional) In the **Redirect URI** box, add a redirect URL.
 
-8. To remove a permission, follow these steps:
-
-    1. Select the ellipsis (...) to the right of the permission.
-
-    2. Select **Remove permission**.
-
-    3. In the *Remove permission* pop-up window, select **Yes, remove**.
-
-## [HTTP](#tab/HTTP)
-
-To change your Azure AD app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
-
-1. To get all the service principals within your tenant, call the `Get servicePrincipal` API without `{ID}`.
-
-2. Check for a service principal with your app's *application ID* as the `appId` property.
-
-    ```json
-    Post https://graph.microsoft.com/v1.0/servicePrincipals HTTP/1.1
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    {
-    "accountEnabled" : true,
-    "appId" : "{App_Client_ID}",
-    "displayName" : "{App_DisplayName}"
-    }
-    ```
-
-    >[!NOTE]
-    >`displayName` is optional.
-
-3. Grant Power BI permissions to your app, by assigning one of these values to `consentType`:
-
-    * `AllPrincipals` - Can only be used by a Power BI admin to grant permissions on behalf of all the users in the tenant.
-
-    * `Principal` - Use to grant permissions on behalf of a specific user. If you're using this option, add the `principalId={User_ObjectId}` property to the request body.
-
-     ```json
-     Post https://graph.microsoft.com/v1.0/OAuth2PermissionGrants HTTP/1.1
-     Authorization: Bearer ey..qw
-     Content-Type: application/json
-     {
-     "clientId":"{Service_Plan_ID}",
-     "consentType":"AllPrincipals",
-     "resourceId":"c78a3685-1ce7-52cd-95f7-dc5aea8ec98e",
-     "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
-     "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-     "startTime":"2017-03-29T14:35:32.4933413+03:00"
-     }
-     ```
-
-    > [!NOTE]
-    >
-    > * If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
-    > * The `resourceId` *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure AD. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
-
-4. Grant app permissions to Azure AD, by assigning a value to `consentType`.
-
-    ```json
-    Post https://graph.microsoft.com/v1.0/OAuth2PermissionGrants HTTP/1.1
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    {
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
-    "scope":"User.Read Directory.AccessAsUser.All",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
-
-## [C#](#tab/CSharp)
-
-You can also change your Azure AD app permissions using C#. For more information see the [oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get) API. This method can be useful if you're considering to automate some of your processes.
-
-For more information regarding the HTTP requests, refer to the [HTTP tab](register-app.md?tabs=customers%2CHTTP#change-your-azure-ad-apps-permissions).
-
-```csharp
-var graphClient = GetGraphClient();
-
-currentState.createdApp = await graphClient.Applications
-    .Request()
-    .AddAsync(application);
-
-System.Threading.Thread.Sleep(2000);
-
-var passwordCredential = new PasswordCredential
-{
-    DisplayName = "Client Secret Created in C#"
-};
-
-currentState.createdSecret = await graphClient.Applications[currentState.createdApp.Id]
-    .AddPassword(passwordCredential)
-    .Request()
-    .PostAsync();
-
-var servicePrincipal = new ServicePrincipal
-{
-    AppId = currentState.createdApp.AppId
-};
-
-currentState.createdServicePrincipal = await graphClient.ServicePrincipals
-    .Request()
-    .AddAsync(servicePrincipal);
-
-GraphServiceClient graphClient = new GraphServiceClient(authProvider);
-
-// Use oAuth2PermissionGrant to change permissions
-var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
-               .Request()
-               .GetAsync();
-```
-
----
+1. Select **Register**. After your app is registered, you're directed to your app's overview page, where you can obtain the **Application ID**.
 
 ## Next steps
 
->[!div class="nextstepaction"]
->[Considerations when generating an embed token](generate-embed-token.md)
-
->[!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

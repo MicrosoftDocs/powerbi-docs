@@ -132,7 +132,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ## Email subscriptions
 
-Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](./../consumer/end-user-subscribe.md).
+Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](/power-bi/collaborate-share/end-user-subscribe).
 
 ## Errors on Premium Gen 2 capacity
 
@@ -162,7 +162,7 @@ When connecting to a Power BI workspace with SSMS, ensure the following:
 
 ### Query execution in SSMS
 
-When connected to a workspace in a [Premium Gen2](service-premium-what-is.md#power-bi-premium-generation-2) or an [Embedded Gen2](.././developer/embedded/power-bi-embedded-generation-2.md) capacity, SQL Server Management Studio may display the following error:
+When connected to a workspace in a [Premium Gen2](/power-bi/enterprise/service-premium-gen2-what-is#power-bi-premium-generation-2) or an [Embedded Gen2](.././developer/embedded/embedded-analytics-power-bi.md) capacity, SQL Server Management Studio may display the following error:
 
 ```
 Executing the query ...
@@ -173,7 +173,7 @@ This is an informational message that can be ignored in SSMS 18.8 and higher bec
 
 ### Refresh operations in SSMS
 
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Premium Gen2 or an [Embedded Gen2](/power-bi/developer/embedded/embedded-analytics-power-bi) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
 
 ```
 Executing the query ...

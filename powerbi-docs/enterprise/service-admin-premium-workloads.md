@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 This article lists the workloads for Power BI Premium, and describes their capacities. Use the *Gen2* and *Gen1* tabs to review the differences between workloads for these Premium offerings.
 
 >[!IMPORTANT]
->Premium Gen1, also known as the original version of Premium, is being deprecated. If you're still using Premium Gen1, you need to migrate your Power BI content to Premium Gen2. For more information, see [Plan your transition to Power BI Premium Gen2](service-premium-transition-gen1-to-gen2.md).
+>Premium Gen1, also known as the original version of Premium, is being deprecated. If you're still using Premium Gen1, you need to migrate your Power BI content to Premium Gen2. For more information, see [Plan your transition to Power BI Premium Gen2](/power-bi/enterprise/service-premium-gen2-what-is).
 
 >[!NOTE]
 >Workloads can be enabled and assigned to a capacity by using the [Capacities](/rest/api/power-bi/capacities) REST APIs.
@@ -94,7 +94,7 @@ Use the [Power BI Premium utilization and metrics app](../enterprise/service-pre
 
 ### [Gen1](#tab/gen1)
 
-The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities.
+The [Power BI Premium Capacity Metrics app](service-premium-gen2-metrics-app.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities.
 
 ---
 
@@ -268,7 +268,7 @@ When refreshing a dataflow, the dataflow workload spawns a container for each en
 * Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 * Dataflow entities include computation steps, for example, a join.  
 
-It's recommended you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app to analyze Dataflow workload performance.
+It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-gen2-metrics-app.md) app to analyze Dataflow workload performance.
 
 In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won't help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
 
@@ -279,6 +279,10 @@ The Container Size value can't exceed the maximum memory for the Dataflows workl
 The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service.
 
 Paginated reports offer the same capabilities that SQL Server Reporting Services (SSRS) reports do today, including the ability for report authors to add custom code.  This allows authors to dynamically change reports, such as changing text colors based on code expressions.
+
+>[!NOTE]
+>You need to enable this workload with Power BI Premium Gen1 capacities.
+
 
 ### Outbound connectivity
 
@@ -323,16 +327,13 @@ A Power BI administer can enable or disable the paginated reports workload. When
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2)
-
->[!div class="nextstepaction"]
->[Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)
+>[Power BI Premium Generation 2](service-premium-gen2-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)
 
 >[!div class="nextstepaction"]
->[What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+>[What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
 >[!div class="nextstepaction"]
 >[Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)

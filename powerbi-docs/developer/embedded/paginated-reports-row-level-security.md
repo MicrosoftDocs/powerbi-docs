@@ -13,6 +13,8 @@ ms.date: 06/08/2022
 
 # Implementing row-level security in embedded paginated reports
 
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+
 This article explains how to embed a paginated report that uses [**RLS** (row-level security)](embedded-row-level-security.md) into your *app owns data* application.
 
 > [!NOTE]

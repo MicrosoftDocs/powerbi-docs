@@ -14,7 +14,7 @@ ms.custom: references_regions
 
 # Premium support for China North
 
-*China North* is only supported when using [Premium Gen1](service-premium-what-is.md).
+*China North* is only supported when using [Premium Gen1](service-premium-gen2-what-is.md).
 
 [Premium Gen2](service-premium-gen2-what-is.md) and Gen2 features are not supported when using *China North*.
 
@@ -34,11 +34,11 @@ This section lists the Power BI features that aren't supported for *China North*
 
 * Export Power BI reports to [PDF](../consumer/end-user-pdf.md) and [PowerPoint](../collaborate-share/end-user-powerpoint.md)
 
-* [Email subscriptions](../consumer/end-user-subscribe.md)
+* [Email subscriptions](/power-bi/collaborate-share/end-user-subscribe)
 
 * [Copy paste visuals](../visuals/power-bi-visualization-copy-paste.md) in Power BI reports
 
 ## Next steps
 
 >[!div class="nextstepaction"]
->[What is Power BI Premium?](service-premium-what-is.md)
+>[What is Power BI Premium?](service-premium-gen2-what-is.md)

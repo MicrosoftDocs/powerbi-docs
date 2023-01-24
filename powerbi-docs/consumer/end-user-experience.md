@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: tutorial
-ms.date: 01/19/2022
+ms.date: 11/18/2022
 ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
 #Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
@@ -68,15 +68,15 @@ To begin, open the Power BI service (app.powerbi.com).
 
 
 ## View content (dashboards and reports)
-Content is organized within the context of a workspace. Every business user has at least one workspace, and it's called **My workspace**. When *designer* colleagues share content with you, you may end up with additional workspaces.  For example, if a *designer* assigns you access permissions to one of their workspaces, that workspace will show up in your Power BI site.  
+Content is organized within the context of a workspace. Every business user has at least one workspace, and it's called **My workspace**. When *designer* colleagues share content with you, you may end up with more workspaces.  For example, if a *designer* assigns you access permissions to one of their workspaces, that workspace will show up in your Power BI site.  
 
-**My workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content.  *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading the [Power BI articles for *report creators*](../index.yml).
+**My workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content.  *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you're creating content, consider reading the [Power BI articles for *report creators*](../index.yml).
 
 A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards and reports. 
 
 In this section of the tutorial, we'll put the *Opportunity analysis* sample aside for a while, and look at a workspace that has both a dashboard and a report. If you'd like to follow along, scroll down to the lower left corner of the Power BI service and select **Get data** > **Samples** > **Sales and Marketing Sample** > **Connect**. Reopen **My workspace** to see your new content. 
 
-A workspace is one of the paths into your data. From a workspace you can open a dashboard or report by selecting it from the list.  You can favorite a dashboard or report by hovering and selecting the star icon. If the *designer* gave you [sharing permissions](end-user-shared-with-me.md), you can share from here as well. 
+A workspace is one of the paths into your data. From a workspace, you can open a dashboard or report by selecting it from the list.  You can favorite a dashboard or report by hovering and selecting the star icon. If the *designer* gave you [sharing permissions](end-user-shared-with-me.md), you can share from here as well. 
 
 ![App workspace screen with More actions menu displayed for the report](./media/end-user-experience/power-bi-more-actions.png)
 
@@ -99,12 +99,11 @@ Let's start by opening a dashboard.
     ![Screenshot showing the dropdown menu for a dashboard tile.](./media/end-user-experience/power-bi-tile-menu.png)
 
 
-
 4. Select a dashboard tile to open the report that was used to create that tile. The report opens to the page that contains the visual that is on the tile. Here, I've selected the dashboard tile with the treemap. The Power BI service opens the **YTD Category** report page.
 
     ![Report opens.](./media/end-user-experience/power-bi-report.png)
 
-    Reports have several sections. On the left is the clickable list of report pages. Across the top is the menu bar containing actions you can take with the report.  The options available will depend on the role and permission the report *designer* assigned to you. On the right side is the **Filters** pane. And the center canvas contains the report itself. Similar to the dashboard, there are actions that you can take for the entire report, for individual visuals, and also for a single report page. 
+    Reports have several sections. On the left is the clickable list of report pages. Across the top, is the menu bar containing actions you can take with the report.  The options available will depend on the role and permission the report *designer* assigned to you. On the right side is the **Filters** pane. And the center canvas contains the report itself. Similar to the dashboard, there are actions that you can take for the entire report, for individual visuals, and also for a single report page. 
 
     Learn about reports [Power BI reports](end-user-reports.md).
     Learn more about workspaces [Workspaces](end-user-workspaces.md).
@@ -113,6 +112,11 @@ Let's start by opening a dashboard.
 The nav pane will become more useful as colleagues share content with you. In this section of the tutorial, we'll look at a dashboard and report that belong to a Power BI *business user* who has a lot of shared content.
 
 1. **Home** is the default landing page when you log in to the Power BI service. Home is a great jumping off point and alternate way to navigate your content. Content on Home is organized several different ways: by recommended, favorites, recent, and apps. For new users, the **Getting started** section is especially helpful, with tabs containing samples, documentation, and training content. Just select an item to open it.
+
+    > [!NOTE]
+    > The **Getting started** section on Home is being deprecated in mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Learning/Knowledge center**. 
+    >    
+    >:::image type="content" source="media/end-user-experience/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
 
     Home brings together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open your dashboards, reports, and apps. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues. Your Home canvas also updates with recommended content and learning resources.
 
@@ -124,7 +128,7 @@ The nav pane will become more useful as colleagues share content with you. In th
 
    ![Flyout list for Recent content.](./media/end-user-experience/power-bi-recent.png)
 
-    To see your full list of favorites or recents, select the word or icon. These content lists provide additional details about the reports, apps, and dashboards.
+    To see your full list of favorites or recents, select the word or icon. These content lists provide more details about the reports, apps, and dashboards.
 
     ![Content list for favorites.](./media/end-user-experience/power-bi-favorites.png)
 
@@ -157,7 +161,7 @@ Or, look for the Search **Filters** near the upper right corner of your content 
 To learn more, see [Power BI navigation: search and sort](end-user-search-sort.md)
 
 ## Find the owner
-And we'll end this tutrial with a helpful tip. If you have questions about a dashboard, report, or app -- you can look up the owner. With the content open, select the title dropdown to display the owner. The owner may be a person or a group.
+And we'll end this tutorial with a helpful tip. If you have questions about a dashboard, report, or app--you can look up the owner. With the content open, select the title dropdown to display the owner. The owner may be a person or a group.
 
 ![Home canvas](./media/end-user-experience/power-bi-owner.png)
 

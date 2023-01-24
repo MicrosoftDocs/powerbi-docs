@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 11/8/2022
 ---
 
 # The Analytics pane in Power BI visuals
 
 The [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) allows you to add dynamic reference lines (min, max, average etc.) to your visuals. These lines can help you zoom in on important trends or insights. This article discusses how to create Power BI visuals that can present and manage dynamic reference lines in the **Analytics** pane.
 
-![The Analytics pane](media/analytics-pane/visualization-pane-analytics-tab.png)
+:::image type="content" source="media/analytics-pane/visualization-pane-analytics-tab.png" alt-text="Screenshot of the analytics pane.":::
 
 > [!NOTE]
 > The **Analytics** pane is available from API version 2.5.0. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
@@ -96,12 +96,12 @@ class YourAnalyticsCardSettings extends FormattingSettingsCard {
 };
 ```
 
-### [Old API's](#tab/Old-API)
+### [Older API's (before 5.1)](#tab/Old-API)
 
 * Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
 
     >[!NOTE]
-    >The `objectCategory` field defines the aspect of the visual that the object controls (1=Formatting, 2=Analytics). Use `Formatting` for elements such as look and feel, colors, axes, and labels. Use `Analytics` for elements such as forecasts, trendlines, reference lines, and shapes.
+    >The `objectCategory` field defines the aspect of the visual that the object controls (1=Formatting, 2=Analytics). Use `Formatting` for elements such as look and feel, colors, axes, and labels. Use `Analytics` for elements such as forecasts, reference lines, and shapes.
     >
     > If the `objectCategory` value isn't specified, it defaults to `Formatting`.
 

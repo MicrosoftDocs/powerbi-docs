@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: faq
-  ms.date: 07/07/2022
+  ms.date: 11/24/2022
 title: Frequently asked questions about Power BI Embedded
 summary: |
   * If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
@@ -46,9 +46,9 @@ sections:
         answer: |
           Microsoft recommends that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution. We recommend ISVs buy Power BI Embedded for its cloud-powered embedded analytics components. However, a customer has no restriction on which product to buy.
           
-          There may be some cases where an ISV (typically large), in addition to app embedding, wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization.
+          There may be some cases where an ISV (typically large), in addition to app embedding, wants to use a P SKU to get the extra benefits of the pre-packaged Power BI service within their organization.
 
-          For more on the differences between Premium and Embedded see [Which SKU should I use](embedded-capacity.md#which-sku-should-i-use).
+          For more on the differences between Premium and Embedded, see [Which SKU should I use](embedded-capacity.md#which-sku-should-i-use).
           
       - question: |
           How many embed tokens can I create?
@@ -60,12 +60,12 @@ sections:
       - question: |
           What is Power BI Embedded Generation 2?
         answer: |
-          Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 will simplify the management of embedded capacities, and improve the Power BI Embedded experience. For more information, see [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md).
+          Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience.
 
       - question: |
           How can I autoscale Embedded Gen2?
         answer: |
-          Embedded Gen 2 does not provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2) 
+          Embedded Gen 2 doesn't provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](./azure-pbie-scale-capacity.md#autoscale-your-capacity). 
 
       - question: |
           How is Embedded Gen2 resource utilization evaluated?
@@ -74,14 +74,14 @@ sections:
           
           *Interactive utilization* is evaluated by considering all the interactive operations that completed on or near the current half-minute evaluation cycle.
           
-          *Background utilization* is evaluated by considering all the background operations that completed during the past twenty-four hours, where each background operation contributes only 1/2880 of its total CPU cost (there are 2880 evaluation cycles in each 24-hour period).
+          *Background utilization* is evaluated by considering all the background operations that completed during the past 24 hours, where each background operation contributes only 1/2880 of its total CPU cost (there are 2880 evaluation cycles in each 24-hour period).
           
-          A capacity consists of an equal number of frontend and backend v-cores. The CPU time measured in utilization records reflects the backend v-cores utilization, and this utilization drives the need to scale. Utilization of frontend v-cores is not tracked. You cannot convert frontend to backend v-cores.
+          A capacity consists of a defined number of v-cores. The [Power BI Premium Utilization and Metrics](../../enterprise/service-premium-gen2-metrics-app.md) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
 
       - question: |
           What happens to traffic during overload?
         answer: |
-          If you have an A1 capacity with half backend v-cores, each evaluation cycle quota is 15 seconds (0.5*30) of CPU utilization. If the sum of both utilizations exceeds the total backend core quota in your capacity, the capacity enters a temporary *interactive request delay* mode, during which each interactive request (such as report load, visual interaction, and so on) is delayed before it is sent to the engine for execution. The amount of delay is proportional to the amount of overload detected. Overload of 100% will incur a delay of 20 seconds, while overloads smaller than 10% are allowed.
+          If you have an A1 capacity with one v-core, each evaluation cycle quota is 30 seconds (1*30) of CPU utilization. If the sum of your CPU utilization exceeds the total v-core quota in your capacity, the capacity enters a temporary *interactive request delay* mode, during which each interactive request (such as report load, visual interaction, and so on) is delayed before it's sent to the engine for execution. The amount of delay is proportional to the amount of overload detected. Overload of 100% will incur a delay of 20 seconds, while overloads smaller than 10% are allowed.
 
           The capacity stays in *interactive request delay* mode if the previous evaluation is at greater than 100% resource usage.
 
@@ -102,7 +102,7 @@ sections:
       - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
-          Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you are to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you will arrive at 100% utilization of your resources.
+          Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you're to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you'll arrive at 100% utilization of your resources.
 
       - question: |
           How can I get notified that I'm approaching my max capacity?
@@ -131,7 +131,7 @@ sections:
       - question: |
           What are the prerequisites for creating a PBIE capacity in Azure?
         answer: |
-          * Sign in to your organizational directory (Microsoft accounts aren't supported).
+          * Sign-in to your organizational directory (Microsoft accounts aren't supported).
           * You need to have a Power BI tenant, that is, at least one user in your directory has signed up for Power BI. 
           * You need to have an Azure subscription in your organizational directory.
           
@@ -204,7 +204,7 @@ sections:
       - question: |
           In what Azure regions is PBI Embedded available?
         answer: |
-          Power BI Embedded is non-regional which means it is not dependent on any specific Azure region.
+          Power BI Embedded is non-regional. This means it's not dependent on any specific Azure region.
           
           See [Azure Products by Region](https://azure.microsoft.com/global-infrastructure/services/?products=all) for regional information about all Azure products.
           
@@ -240,14 +240,12 @@ sections:
       - question: |
           What is the difference between using row-level security (RLS) vs. JavaScript filters?
         answer: |
-          There's often confusion around when to use RLS versus JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
+          There's often confusion around when to use RLS versus JavaScript filters. One method is about controlling what a specific user can see, and the other is about optimizing the user's view.
           
-          For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
+          With RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
           
-          For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
-          
-          Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
-          
+          With client-side filtering (JavaScript), the ISV might decide what the end user sees in the initial view, but they can't control changes the end user might apply to the view itself. Since user JavaScript client code can trigger data filtering on the backend, it can't be considered secure.
+                   
       - question: |
           How do I manage permissions for service principals with Power BI?
         answer: |
@@ -333,7 +331,7 @@ sections:
       - question: |
           How does the usage of Power BI Embedded show up on my bill?
         answer: |
-          Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. You are billed as long as your resource is active, even if there's no usage. You need to pause your resource to stop billing.
+          Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. You're billed as long as your resource is active, even if there's no usage. You need to pause your resource to stop billing.
 
       - question: |
           Who needs a Power BI Pro or Premium Per User (PPU) license for Power BI Embedded and why?

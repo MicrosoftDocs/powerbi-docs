@@ -12,9 +12,9 @@ ms.date: 10/11/2022
 
 # Get your Power BI visual certified
 
-Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). These visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
+Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). Third party visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
 
-Certified Power BI visuals offer more features than non-certified visuals. For example, you can [export them to PowerPoint](../../collaborate-share/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](../../consumer/end-user-subscribe.md).
+Certified Power BI visuals offer more features than non-certified visuals. For example, you can [export them to PowerPoint](../../collaborate-share/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](/power-bi/collaborate-share/end-user-subscribe).
 
 The certification process is optional. Power BI visuals that aren't certified, aren't necessarily unsafe. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries can't be certified.
 
@@ -58,10 +58,10 @@ The repository must include the following files:
 * **capabilities.json** - If you're submitting a newer version of an existing Power BI visual with changes to the properties in this file, verify that they don't break reports for existing users.
 * **pbiviz.json**
 * **package.json**. The visual must have the following package installed:
-  * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
-  * ["typescript"](https://www.npmjs.com/package/typescript) - Version 3.0.0 or higher
-  * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib) - Version 6.2.0 or higher
-  * The file must contain a command for running linter -  `"lint": "tslint -c tslint.json -p tsconfig.json"`
+  * ["typescript"](https://www.npmjs.com/package/typescript)
+  * ["eslint"](https://www.npmjs.com/package/eslint)
+  * ["eslint-plugin-powerbi-visuals"](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals)
+  * The file must contain a command for running linter -  `"eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx"`
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -72,7 +72,10 @@ Make sure that the following commands don't return any errors.
 * `npm install`
 * `pbiviz package`
 * `npm audit` - Must not return any warnings with high or moderate level.
-* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with [the required configuration](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). This command must not return any lint errors.
+* `ESlint` with the [required configuration](https://www.npmjs.com/package/eslint-plugin-powerbi-visuals). This command must not return any lint errors.
+
+  >[!NOTE]
+  > We're in the process of migrating from TSlint to ESLint. Visuals using TSlint will be accepted for certification until March 2023. After that, ESlint will be required.
 
 ### Compiling requirements
 

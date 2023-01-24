@@ -44,13 +44,70 @@ Getting the latest data in real time with DirectQuery is only supported for Powe
 
 ### Supported data sources
 
-Incremental refresh and real-time data works best for structured, relational data sources, like SQL Database and Azure Synapse, but can also work for other data sources. In any case, your data source must support the following:
+Incremental refresh and real-time data works best for structured, relational data sources like SQL Database and Azure Synapse, but can also work for other data sources. In any case, your data source must support the following:
 
-**Date column** - The table must contain a date column of date/time or integer data type. The RangeStart and RangeEnd parameters (which must be date/time data type) filter table data based on the date column. For date columns of integer surrogate keys in the form of `yyyymmdd`, you can create a function that converts the date/time value in the RangeStart and RangeEnd parameters to match the integer surrogate keys of the date column. To learn more, see [Configure incremental refresh - Convert DateTime to integer](incremental-refresh-configure.md#convert-datetime-to-integer).
+**Date filtering** - The data source must support some mechanism to filter data by date. For a relational source this is typically a date column of date/time or integer data type on the target table. The RangeStart and RangeEnd parameters, which must be date/time data type, filter table data based on the date column. For date columns of integer surrogate keys in the form of `yyyymmdd`, you can create a function that converts the date/time value in the RangeStart and RangeEnd parameters to match the integer surrogate keys of the date column. To learn more, see [Configure incremental refresh - Convert DateTime to integer](incremental-refresh-configure.md#convert-datetime-to-integer).  
+
+For other data sources, the RangeStart and RangeEnd parameters must be passed to the data source in some way that enables filtering. For file-based data sources where files and folders are organized by date, the RangeStart and RangeEnd parameters can be used to filter the files and folders to select which files to load. For web-based data sources the RangeStart and RangeEnd parameters can be integrated into the HTTP request. For example, the following query can be used for incremental refresh of the traces from an AppInsights instance:
+
+```
+let 
+    strRangeStart = DateTime.ToText(RangeStart,[Format="yyyy-MM-dd'T'HH:mm:ss'Z'", Culture="en-US"]),
+    strRangeEnd = DateTime.ToText(RangeEnd,[Format="yyyy-MM-dd'T'HH:mm:ss'Z'", Culture="en-US"]),
+    Source = Json.Document(Web.Contents("https://api.applicationinsights.io/v1/apps/<app-guid>/query", 
+    [Query=[#"query"="traces 
+    | where timestamp >= datetime(" & strRangeStart &") 
+    | where timestamp < datetime("& strRangeEnd &")
+    ",#"x-ms-app"="AAPBI",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
+    TypeMap = #table(
+    { "AnalyticsTypes", "Type" }, 
+    { 
+    { "string",   Text.Type },
+    { "int",      Int32.Type },
+    { "long",     Int64.Type },
+    { "real",     Double.Type },
+    { "timespan", Duration.Type },
+    { "datetime", DateTimeZone.Type },
+    { "bool",     Logical.Type },
+    { "guid",     Text.Type },
+    { "dynamic",  Text.Type }
+    }),
+    DataTable = Source[tables]{0},
+    Columns = Table.FromRecords(DataTable[columns]),
+    ColumnsWithType = Table.Join(Columns, {"type"}, TypeMap , {"AnalyticsTypes"}),
+    Rows = Table.FromRows(DataTable[rows], Columns[name]), 
+    Table = Table.TransformColumnTypes(Rows, Table.ToList(ColumnsWithType, (c) => { c{0}, c{3}}))
+in
+Table
+```
 
 **Query folding** - Incremental refresh is designed for data sources that support *query folding*, which is Power Query's ability to generate a single query expression to retrieve and transform source data, especially if getting the latest data in real time with DirectQuery. Most data sources that support SQL queries support query folding. Data sources like flat files, blobs, and some web feeds often do not.
 
-When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. The filter is in effect a *transformation* included in the query that defines a WHERE clause based on the parameters. In cases where the filter is not supported by the data source, it cannot be included in the query expression. If the incremental refresh policy includes getting real-time data with DirectQuery, non-folding transformations can't be used. If it’s a pure import mode policy without real-time data, the query mashup engine might compensate and apply the filter locally, which requires retrieving all rows for the table from the data source. This can cause incremental refresh to be slow, and the process can run out of resources either in the Power BI service or in an On-premises Data Gateway - effectively defeating the purpose of incremental refresh.
+When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. If the filter is specified in a query step after the initial source query, it's important that query folding combines the initial query step with the steps reference the RangeStart and RangeEnd paremters. For example, in the following query expression, the `Table.SelectRows` will fold because it immediately follows the `Sql.Database` step, and SQL Server supports folding:
+
+```
+let
+  Source = Sql.Database("dwdev02","AdventureWorksDW2017"),
+  Data  = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
+  #"Filtered Rows" = Table.SelectRows(Data, each [OrderDateKey] >= Int32.From(DateTime.ToText(RangeStart,[Format="yyyyMMdd"]))),
+  #"Filtered Rows1" = Table.SelectRows(#"Filtered Rows", each [OrderDateKey] < Int32.From(DateTime.ToText(RangeEnd,[Format="yyyyMMdd"])))
+  
+in
+  #"Filtered Rows1"
+ ```
+
+There's no requirement the _final query_ support folding. For example in the following expression, we use a non-folding NativeQuery but integrate the RangeStart and RangeEnd parameters directly into SQL:
+
+```
+let
+  Query = "select * from dbo.FactInternetSales where OrderDateKey >= '"& Text.From(Int32.From( DateTime.ToText(RangeStart,"yyyyMMdd") )) &"' and OrderDateKey < '"& Text.From(Int32.From( DateTime.ToText(RangeEnd,"yyyyMMdd") )) &"' ",
+  Source = Sql.Database("dwdev02","AdventureWorksDW2017"),
+  Data = Value.NativeQuery(Source, Query, null, [EnableFolding=false])
+in
+  Data
+```
+
+However, if the incremental refresh policy includes getting real-time data with DirectQuery, non-folding transformations can't be used. If it’s a pure import mode policy without real-time data, the query mashup engine might compensate and apply the filter locally, which requires retrieving all rows for the table from the data source. This can cause incremental refresh to be slow, and the process can run out of resources either in the Power BI service or in an On-premises Data Gateway - effectively defeating the purpose of incremental refresh.
 
 Because support for query folding is different for different types of data sources, verification should be performed to ensure the filter logic is included in the queries being executed against the data source. In most cases, Power BI Desktop attempts to perform this verification for you when defining the incremental refresh policy. For SQL based data sources such as SQL Database, Azure Synapse, Oracle, and Teradata, this verification is reliable. However, other data sources may be unable to verify without tracing the queries. If Power BI Desktop is unable to confirm, a warning is shown in the Incremental refresh policy configuration dialog.
 
@@ -77,7 +134,7 @@ Regardless of incremental refresh, Power BI Pro datasets have a refresh time lim
 
 Because incremental refresh optimizes refresh operations at the partition level in the dataset, resource consumption can be significantly reduced. At the same time, even with incremental refresh, unless through the XMLA endpoint, refresh operations are bound by those same two and five-hour limits. An effective incremental refresh policy not only reduces the amount of data processed with a refresh operation, but also reduces the amount of unnecessary historical data stored in your dataset.
 
-Queries can also be limited by a default time limit for the data source. Most relational data sources allow overriding time limits in the Power Query M expression. For example, the expression below uses the [SQL Server data-access function](/powerquery-m/sql-database) to set CommandTimeout to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
+Queries can also be limited by a default time limit for the data source. Most relational data sources allow overriding time limits in the Power Query M expression. For example, the expression below uses the [SQL Server data-access function](/powerquery-m/sql-database) to set CommandTimeout to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting:
 
 ```powerquery-m
 let

@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Information protection for Power BI"
 description: "Learn about labeling and classification of data assets for use with Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Information protection for Power BI
@@ -199,7 +199,7 @@ Here are some best practices for defining a label structure.
 - **Create a logical hierarchical order:** The order of the labels is crucial to making everything work well. Remember that the last label in the list is the most sensitive. The hierarchical order, in combination with well-selected terms, should be logical and intuitive for users to work with. A clear hierarchy will also make policies easier to create and maintain.
 - **Create just a few labels that apply across the organization:** Having too many labels for users to choose from will be confusing. It will also lead to less accurate label selection. We recommend that you create just a few labels for the initial set.
 - **Use meaningful, generic names:** Avoid using industry jargon or acronyms in your label names. For example, rather than creating a label named _Personally Identifiable Information_, use names like _Highly Restricted_ or _Highly Confidential_ instead.
-- **Use terms that are easily localized into other languages:** For global organizations with operations in multiple countries, it's important to choose label terms that won't be confusing or ambiguous when they're translated into other languages.
+- **Use terms that are easily localized into other languages:** For global organizations with operations in multiple countries/regions, it's important to choose label terms that won't be confusing or ambiguous when they're translated into other languages.
 
 > [!TIP]
 > If you find yourself planning for many labels that are highly specific, step back and reassess your approach. Complexity can lead to user confusion, reduced adoption, and less effective information protection. We recommend that you begin with an initial set of labels (or use what you already have). After you've gained more experience, cautiously expand the set of labels by adding more specific ones when needed.
@@ -480,7 +480,7 @@ If you decide to disallow sharing of protected content, set the **Restrict conte
 We strongly recommend that you plan to enable this tenant setting to disallow sharing of protected content. When enabled, it disallows sharing operations with the entire organization for more sensitive content (defined by the labels that have encryption defined). By enabling this setting, you'll reduce the possibility of data leakage.
 
 >[!IMPORTANT]
-> There's a similar [tenant setting](/power-bi/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) named **Allow shareable links to grant access to everyone in your organization**. Although it has a similar name, its purpose is different. It defines which groups can create a sharing link for the entire organization, regardless of the sensitivity label. In most cases, we recommend this capability be limited in your organization.
+> There's a similar [tenant setting](/power-bi/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) named **Allow shareable links to grant access to everyone in your organization**. Although it has a similar name, its purpose is different. It defines which groups can create a sharing link for the entire organization, regardless of the sensitivity label. In most cases, we recommend this capability be limited in your organization. For more information, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permission-links) article.
 
 ### Supported export file types
 

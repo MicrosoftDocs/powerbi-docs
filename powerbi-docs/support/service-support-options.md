@@ -89,5 +89,5 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 
 ## Next steps
 
-* [Customize help and support settings](service-admin-portal-help-support.md)
+* [Customize help and support settings](../admin/service-admin-portal-help-support.md)
 * [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)

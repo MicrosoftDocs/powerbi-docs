@@ -71,4 +71,4 @@ In Report Builder, tables, matrixes, and lists are *data regions* that display p
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

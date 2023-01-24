@@ -1,13 +1,13 @@
 ---
 title: "Power BI adoption roadmap: Community of practice"
 description: Establish a community of practice to help users drive strong and successful adoption of Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/15/2021
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap: Community of practice
@@ -48,7 +48,7 @@ Champions emerge as leaders of the community of practice who:
 - Can effectively translate business needs into solutions.
 - Communicate well with colleagues.
 
-> [!IMPORTANT]
+> [!TIP]
 > To add an element of fun, some organizations refer to their champions network as *ambassadors*, *Jedis*, *ninjas*, or *rangers*. Microsoft has an internal community called *BI Champs*.
 
 Often, people aren't directly asked to become champions. Commonly, champions are identified by the COE and recognized for the activities they're already doing, such as frequently answering questions in an internal discussion channel or participating in lunch and learns.
@@ -69,9 +69,10 @@ The overriding objective of a community of practice is to facilitate knowledge s
 | Office hours with the COE | Regularly scheduled times when COE experts are available so the community can engage with them. Community users can receive assistance with minimal process overhead. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article. |
 | Internal blog posts or wiki posts | Short blog posts, usually covering technical how-to topics. |
 | Internal Power BI user group | A subset of the community that chooses to meet as a group on a regularly scheduled basis. User group members often take turns presenting to each other to share knowledge and improve their presentation skills. |
+| Book club | A subset of the community select a book to read on a schedule. They discuss what they've learned and share their thoughts with each other. |
 | Internal Power BI conferences or events | An annual or semi-annual internal conference that delivers a series of sessions focused on Power BI. |
 
-> [!IMPORTANT]
+> [!TIP]
 > Inviting an external presenter can reduce the effort level and bring a fresh viewpoint for learning and knowledge sharing.
 
 ## Incentives
@@ -115,7 +116,7 @@ The most critical communication objectives include ensuring your community membe
 - How to share suggestions and ideas.
 
 > [!TIP]
-> Consider requiring a simple *Power BI test* before a user is granted a Power BI license. This *test* is a misnomer because it doesn't focus on any Power BI skills. Rather, it verifies that the user knows where to find help and resources. It sets them up for success. It's also a great opportunity to have users acknowledge any governance policies or data privacy and protection agreements you need them to be aware of. For more information, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.
+> Consider requiring a simple *Power BI quiz* before a user is granted a Power BI license. This *quiz* is a misnomer because it doesn't focus on any Power BI skills. Rather, it's a short series of questions to verify that the user knows where to find help and resources. It sets them up for success. It's also a great opportunity to have users acknowledge any governance policies or data privacy and protection agreements you need them to be aware of. For more information, see the [System oversight](powerbi-adoption-roadmap-system-oversight.md) article.
 
 ### Types of communication
 
@@ -135,53 +136,60 @@ Resources for the internal community, such as documentation, templates, and trai
 
 ## Considerations and key actions
 
-Considerations and key actions you can take to initiate, grow, and sustain your champions network include:
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
-- Clarify your specific goals for cultivating a champions network. Make sure these goals align with your overall Power BI strategy, and that your executive sponsor is on board.
-- Create a plan to support the champions network. Although some aspects of a champions network will always be informally led, determine to what extent the COE will purposefully cultivate and support champion efforts throughout individual business units.
-- Decide what level of commitment and expected time investment will be required of Power BI champions. (Note that the time investment can vary wildly from person to person, and team to team.) Plan to clearly communicate expectations to people who are interested to get involved. Obtain manager approval when appropriate.
-- Determine how you will respond to requests to become a champion, and how the COE will seek out champions. Decide if you will openly encourage interested employees to self-identify as a champion and ask to learn more (less common). Or, whether the COE will observe efforts and extend a private invitation (more common).
-- Consider how many champions is ideal for each functional business area. Usually, 1-2 champions per area works well, but it can vary based on the size of the team, the needs of the self-service community, and how the [COE is structured](powerbi-adoption-roadmap-center-of-excellence.md#structuring-a-coe).
-- Determine how members of the champions network will be managed. It could be implemented through membership in a security group. Consider:
-  - How you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
-  - How the champions network will communicate and collaborate with each other directly (across organizational boundaries).
-  - Whether a private and exclusive discussion forum for champions and COE members is appropriate
-- Ensure champions have the resources they need, including:
-  - Direct access to COE members.
-  - Influence on data policies being implemented (for example, requirements for a dataset certification policy).
-  - Influence on the creation of best practices and guidance (for example, recommendations for accessing a specific source system).
-- Actively involve certain champions as satellite members of the COE. For more information about federating the COE, see the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md#structuring-a-coe) article.
-- Create a feedback loop so champions can easily provide information or submit suggestions to the COE.
-- Routinely provide recognition and incentives for champions. Not only is praise an effective motivator, but the act of sharing examples of successful efforts can motivate and inspire others.
+**Checklist** - Considerations and key actions you can take for the community of practice follow.
 
-Considerations and key actions you can take improve knowledge sharing:
+**Initiate, grow, and sustain your champions network:**
 
-- Determine what kind of activities for knowledge sharing fit well into the organizational data culture.
-- Ensure that all planned knowledge sharing activities are supportable and sustainable.
-- Verify who will take responsibility for coordinating all knowledge sharing activities.
+> [!div class="checklist"]
+> - **Clarify goals:** Clarify what your specific goals are for cultivating a champions network. Make sure these goals align with your overall Power BI strategy, and that your executive sponsor is on board.
+> - **Create a plan for the champions network:** Although some aspects of a champions network will always be informally led, determine to what extent the COE will purposefully cultivate and support champion efforts throughout individual business units. Consider how many champions is ideal for each functional business area. Usually, 1-2 champions per area works well, but it can vary based on the size of the team, the needs of the self-service community, and how the COE is structured.
+> - **Decide on commitment level for champions:** Decide what level of commitment and expected time investment will be required of Power BI champions. Consider whether the time investment will vary wildly from person to person, and team to team due to different responsibilities. Plan to clearly communicate expectations to people who are interested to get involved. Obtain manager approval when appropriate.
+> - **Decide how to identify champions:** Determine how you will respond to requests to become a champion, and how the COE will seek out champions. Decide if you will openly encourage interested employees to self-identify as a champion and ask to learn more (less common). Or, whether the COE will observe efforts and extend a private invitation (more common).
+> - **Determine how members of the champions network will be managed:** Once excellent option for managing who the champions are is with a security group. Consider:
+>     - How you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
+>     - How the champions network will communicate and collaborate with each other directly (across organizational boundaries).
+>     - Whether a private and exclusive discussion forum for champions and COE members is appropriate
+> - **Plan resources for champions:** Ensure members of the champions network have the resources they need, including:
+>     - Direct access to COE members.
+>     - Influence on data policies being implemented (for example, requirements for a dataset certification policy).
+>     - Influence on the creation of best practices and guidance (for example, recommendations for accessing a specific source system).
+> - **Involve champions:** Actively involve certain champions as satellite members of the COE. For more information about federating the COE, see the [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md#structuring-a-coe) article.
+> - **Create a feedback loop for champions:** Ensure that members of the champions network can easily provide information or submit suggestions to the COE.
+> - **Routinely provide recognition and incentives for champions:** Not only is praise an effective motivator, but the act of sharing examples of successful efforts can motivate and inspire others.
 
-Considerations and key actions you can take to introduce incentives:
+**Improve knowledge sharing:**
 
-- Consider what type of incentives you could offer to your champions network.
-- Consider what type of incentives you could offer to your broader internal community.
+> [!div class="checklist"]
+> - **Identify knowledge sharing activities:** Determine what kind of activities for knowledge sharing fit well into the organizational data culture. Ensure that all planned knowledge sharing activities are supportable and sustainable.
+> - **Confirm roles and responsibilities:** Verify who will take responsibility for coordinating all knowledge sharing activities.
 
-Considerations and key actions you can take improve communications:
+**Introduce incentives:**
 
-- Evaluate which methods of communication fit well in your data culture.
-- Determine who will be responsible for different types of communication, how, and when.
-- Set up different ways to communicate, including history retention and search.
+> [!div class="checklist"]
+> - **Identify incentives for champions:** Consider what type of incentives you could offer to members of your champions network.
+> - **Identify incentives for community members:** Consider what type of incentives you could offer to your broader internal community.
+
+**Improve communications:**
+
+> [!div class="checklist"]
+> - **Establish communication methods:** Evaluate which methods of communication fit well in your data culture. Set up different ways to communicate, including history retention and search.
+> - **Identify responsibility:** Determine who will be responsible for different types of communication, how, and when.
 
 ## Maturity levels
 
-The following maturity levels will help you assess the current state of your community of practice:
+:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+
+The following maturity levels will help you assess the current state of your community of practice.
 
 | **Level** | **State of Power BI community** |
 | --- | --- |
-| 100: Initial | Some content creators do great work, but their efforts are unrecognized.</br></br>Efforts to share knowledge are rare and unstructured.</br></br>Communication is inconsistent. |
-| 200: Repeatable | The first set of champions are identified, and champions network goals are established.</br></br>Knowledge sharing practices gain traction and are now more consistent. |
-| 300: Defined | Best practices are actively shared across the organization.</br></br>Knowledge sharing in multiple forms is a normal and regularly scheduled occurrence.</br></br>Goals for transparent communication with the user community are defined and executed with regularity. |
-| 400: Capable | Champions are established for all business units and actively support colleagues in their self-service efforts.</br></br>Incentives to recognize and reward knowledge sharing efforts are a common occurrence.</br></br>Regular and frequent communication occurs based on a predefined communication plan. |
-| 500: Efficient | Bidirectional feedback loops exist between the champions network and the COE. |
+| 100: Initial | Some self-service content creators are doing great work throughout the organization. However, their efforts aren't recognized. </br></br>Efforts to purposefully share knowledge across the organizational boundaries are rare and unstructured. </br></br>Communication is inconsistent, without a purposeful plan. |
+| 200: Repeatable | The first set of champions are identified. </br></br>The goals for a champions network are identified. </br></br>Knowledge sharing practices are gaining traction. |
+| 300: Defined | Knowledge sharing in multiple forms is a normal occurrence. Information sharing happens frequently and purposefully. </br></br>Goals for transparent communication with the user community are defined. |
+| 400: Capable | Champions are identified for all business units. They actively support colleagues in their self-service efforts. </br></br>Incentives to recognize and reward knowledge sharing efforts are a common occurrence. </br></br>Regular and frequent communication occurs based on a predefined communication plan. |
+| 500: Efficient | Bidirectional feedback loops exist between the champions network and the COE. </br></br>Key performance indicators measure community engagement and satisfaction. </br></br>Automation is in place when it adds direct value to the user experience (for example, automatic access to the community). |
 
 ## Next steps
 

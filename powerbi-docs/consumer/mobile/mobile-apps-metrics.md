@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 08/10/2022
+ms.date: 12/07/2022
 ms.custom: mode-portal
 #customer intent: I want to understand how to get monitor and update metrics in the Power BI mobile app.
 ---
@@ -15,13 +15,14 @@ ms.custom: mode-portal
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) |
-|:--- |:--- |:--- |:--- |
-|iPhones |iPads |Android phones |Android tablets |
+| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Windows devices](././media/mobile-apps-metrics/win-10-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |:--- |
+|iPhones |iPads |Android phones |Android tablets | Windows devices
 
 The Power BI mobile apps make it easy for you to keep on top of your metrics while on the go. While scorecards and metrics are [created in the Power BI service](../../create-reports/service-goals-create.md), in the app you can monitor progress on your metrics, make check-ins to update progress, add notes, and, when a metric is connected to a report, easily open the associated report to dig deeper into the data.
 
-This article explains how to monitor your metrics on the mobile app and shows you how to update progress and to dig deeper into the data when the metric is connected to a report.
+> [!NOTE]
+> This article explains how to monitor your metrics in the mobile apps for iOS and Android devices. For information about tracking your metrics in the mobile app for Windows devices, see [Stay on top of your metrics](../../create-reports/service-goals-check-in.md). While this article shows how to monitor metrics in the Power BI service, the experience in the Windows app is similar, with the exception that in the Windows app you can't create or edit metrics and scorecards - you can only consume them and perform check-ins.
 
 To read more about metrics, see [Get started with metrics in Power BI](../../create-reports/service-goals-introduction.md)
 
@@ -84,23 +85,27 @@ A metric’s detail pane has a chart of the metric’s progress and lists all th
 
 ![Screenshot of a metric detail pane that shows a chart of the metric’s progress and lists all the activity on the metric.](media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane.png)
  
-Tap the ellipsis to see update metric or to open a connected report, if any.
- 
-You will have several options:
+**Action buttons**: Tap an action button to update the metric or to start/stop following it. You will have several options:
 * **Quick check-in**: Allows you to check in a value for the current date and to update metric status. Quick check-in is not available for metrics with connected reports.
 * **New check-in**: Allows you to check in a value for a date you choose, update metric status, and also add a note if you want to. In the note, you can \@mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
-* **Connected report (current)**: Opens the report that is connected to the metric’s “current” value. The metric’s “target” value may be connected to a different report. This option is only available if the metric is connected to a report.
+* **Follow/Unfollow**: Allows you to start/stop following the metric in order to keep up to date with activity on the metric.
+
+**Activity/Details toggle**: Use the toggle to switch between views of check-in activity on the metric and details such as connected reports or other info that the scorecard creator has configured.
+
+![Screenshot of a metric detail pane that showing the activity/details toggle.](media/mobile-apps-metrics/power-bi-mobile-app-metric-details-pane-toggle.png)
+
+Tap on a connected report to open it. If you don't see the name of the report, but only the word "Report", it means you don't have access to the report. Tap on the report to request access.
 
 ### Add a note to an existing check-in
 
-Generally, you add note as part of a new check-in, but you can also add a note to an existing check-in as well. Just slide the relevant check-in to the left and choose **New note**.
+Generally, you add note as part of a new check-in, but you can also add a note to an existing check-in as well. On iOS devices, just slide the relevant check-in to the left and choose **New note**. On Android devices, select the relevant check-in and then pick the **New note** icon in the upper right corner of the details pane.
 
 ![Screenshot of the add note option for an existing check-in.](media/mobile-apps-metrics/mobile-apps-add-note.png)
 
 As mentioned, in a note you can @mention a person if you want to get their attention. They will receive [notification](#notifications) that a check-in has been flagged for their attention.
 
-### Delete a check-in
-To delete a check-in, slide the check-in to the left and tap **Delete check-in**.
+### Edit or delete a check-in
+To edit or delete a check-in on iOS devices, slide the check-in to the left and tap the desired option. On Android devices, select the check-in you wish to edit or delete and then select the desired option from the icons in the upper right corner of the details pane.
 
 ![Screenshot of the delete check-in option.](media/mobile-apps-metrics/mobile-apps-delete-checkin.png)
 
@@ -116,7 +121,7 @@ For both kinds of notification, tapping the notification takes you right to the 
 
 ## Follow metrics (preview)
 
-You can follow metrics directly from the mobile app to keep up to date with the activity on those metrics. To start following a metric, just tap **More options (…)** on a metric’s card in the Metrics hub and choose **Follow metric**, or tap the **Follow metric** icon in the metric’s details pane.
+You can follow metrics directly from the mobile app to keep up to date with the activity on those metrics. To start following a metric, just tap **More options (…)** on a metric’s card in the Metrics hub and choose **Follow metric**, or tap the **Follow metric** button in the metric's details pane.
 
 ![Screenshot showing how to mark a metric for following in the Power B I mobile app.](media/mobile-apps-metrics/power-bi-mobile-app-follow-metric.png)
 

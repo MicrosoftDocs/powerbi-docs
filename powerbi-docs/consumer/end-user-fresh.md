@@ -97,6 +97,6 @@ Each individual piece of content within an app has its own updated date and owne
 
 ## Next steps
 
-[Create a data alert](end-user-alerts.md)  
-[Subscribe to dashboards and reports](end-user-subscribe.md)  
-[View related content](end-user-related.md)  
+[Create a data alert](end-user-alerts.md)    
+[Subscribe to dashboards and reports](/power-bi/collaborate-share/end-user-subscribe)    
+[View related content](end-user-related.md)

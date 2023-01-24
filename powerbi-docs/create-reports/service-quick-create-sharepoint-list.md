@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/26/2022
+ms.date: 10/28/2022
 LocalizationGroup: Reports
 ---
 # Create a report quickly from a SharePoint list or library
@@ -73,6 +73,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 ## Considerations and limitations
 
 - Reports are published back to the list or library at the SharePoint data access level of the report creator. Row-level security (RLS) isn't supported for reports created using this method.
+- Because report readers also need a Power BI Pro license, anyone who can read your report can also edit it.
 - Currency formatting is not currently supported. Currency fields will show up with the $ symbol. 
 - If your list or document library has folders, only data in the root folder will be visualized.
 - Very large lists may be slow or may time out altogether. 

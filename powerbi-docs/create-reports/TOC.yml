@@ -58,6 +58,12 @@
     items: 
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
+    - name: "Optimize ribbon in Power BI Desktop"
+      items:
+      - name: "Optimize ribbon overview"
+        href: desktop-optimize-ribbon.md
+      - name: "DirectQuery optimization scenarios"
+        href: desktop-optimize-ribbon-scenarios.md          
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -80,12 +86,16 @@
       href: desktop-performance-analyzer.md        
     - name: "Add visual elements to reports"
       href: desktop-visual-elements-for-reports.md   
-    - name: "Add report tooltips to enhance your visuals"
-      href: desktop-tooltips.md        
-    - name: "Create modern visual tooltips"
-      href: desktop-visual-tooltips.md        
     - name: "Power Automate button visual"
       href: power-bi-automate-visual.md            
+    - name: Creating tooltips
+      items: 
+      - name: "Add report tooltips to enhance your visuals"
+        href: desktop-tooltips.md        
+      - name: "Create modern visual tooltips"
+        href: desktop-visual-tooltips.md        
+      - name: "Customize tooltips"
+        href: desktop-custom-tooltips.md
     - name: Filters and slicers in reports
       items: 
       - name: "Filters and highlighting in reports"
@@ -98,7 +108,7 @@
         href: power-bi-report-filter-types.md
       - name: "Slicers"
         href: ../visuals/power-bi-visualization-slicers.md
-      - name: "Numeric range slicers"
+      - name: "Numeric and date range slicers"
         href: desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
         href: ../visuals/desktop-slicer-filter-date-range.md
@@ -147,9 +157,7 @@
     - name: "Use inline hierarchy labels"
       href: desktop-inline-hierarchy-labels.md
     - name: "Restrict data access with row-level security"
-      href: desktop-rls.md
-    - name: "Customize tooltips"
-      href: desktop-custom-tooltips.md
+      href: ../enterprise/service-admin-rls.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: "Add text boxes, shapes, and smart narratives"
       href: power-bi-reports-add-text-and-shapes.md
     - name: "Add a hyperlink to a text box"
@@ -416,6 +424,8 @@
       href: service-goals-create-connected.md
     - name: "Create submetrics"
       href: service-metrics-submetrics.md
+    - name: "Create linked metrics"
+      href: service-metrics-linked-metrics.md
     - name: "Create custom statuses"
       href: service-goals-custom-status.md
     - name: "Create automated status rules"
@@ -428,8 +438,16 @@
       href: service-goals-move.md
     - name: "Metrics and Power Automate"
       href: service-goals-power-automate.md
-    - name: "Create and add Scorecards in reports"
-      href: ../visuals/power-bi-visualization-scorecard-visual.md   
+    - name: "Create and add scorecards to reports"
+      href: ../visuals/power-bi-visualization-scorecard-visual.md 
+    - name: Hierarchies in scorecards
+      items: 
+      - name: "Get started with hierarchies"
+        href: service-metrics-get-started-hierarchies.md 
+      - name: "Scenarios for using hierarchies"
+        href: service-metrics-hierarchies-scenarios.md 
+      - name: "View hierarchies in scorecards"
+        href: service-metrics-view-hierarchies.md 
   - name: Dashboards
     items: 
     - name: "Intro to dashboards"
@@ -440,8 +458,6 @@
       href: service-dashboard-create.md
     - name: "Create a copy of a dashboard"
       href: service-dashboard-copy.md
-    - name: "Pin a tile to a dashboard from a report"
-      href: service-dashboard-pin-tile-from-report.md
     - name: "Pin a tile from one dashboard to another"
       href: service-pin-tile-to-another-dashboard.md
     - name: "Pin a tile to a dashboard from Excel"
@@ -466,16 +482,16 @@
       href: service-dashboard-themes.md
   - name: Paginated reports
     items: 
-    - name: Report Builder in Power BI
-      href: ../paginated-reports/report-builder-power-bi.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
-    - name: Report Builder change log
-      href: ../paginated-reports/paginated-reports-change-log.md
+    - name: Paginated reports capacity planning
+      href: ../paginated-reports/paginated-capacity-planning.md      
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
-    - name: Get around Report Design View
-      href: ../paginated-reports/paginated-reports-report-design-view.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Planning a report
       href: ../paginated-reports/report-builder-planning-report.md
     - name: Understanding paginated report data
@@ -484,14 +500,6 @@
       href: ../paginated-reports/paginated-reports-data-sources.md
     - name: Support for ODBC data sources
       href: ../paginated-reports/paginated-reports-odbc-support.md
-    - name: Design tips
-      href: ../paginated-reports/report-builder-design-tips.md
-    - name: Tables, matrixes, lists
-      href: ../paginated-reports/report-builder-tables-matrices-lists.md
-    - name: Parameters
-      href: ../paginated-reports/report-builder-parameters.md
-    - name: URL parameters in paginated reports
-      href: ../paginated-reports/report-builder-url-parameters.md
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
@@ -514,8 +522,6 @@
       href: ../paginated-reports/report-builder-shared-datasets.md
     - name: Create a paginated report from a Power BI report
       href: ../paginated-reports/paginated-reports-download-rdl.md
-    - name: Create parameters
-      href: ../paginated-reports/paginated-reports-parameters.md
     - name: Set up row-level security
       href: ../paginated-reports/paginated-reports-rls.md
     - name: Set report views
@@ -524,14 +530,58 @@
       href: ../paginated-reports/subreports.md
     - name: Troubleshoot subreports
       href: ../paginated-reports/subreports-troubleshoot.md
-    - name: Pass a report parameter in a URL
-      href: ../paginated-reports/report-builder-url-pass-parameters.md
     - name: Publish a paginated report
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
-    - name: Keyboard shortcuts in Power BI Report Builder
-      href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
+    - name: Paginated report design
+      items: 
+      - name: Report Builder in Power BI
+        href: ../paginated-reports/report-builder-power-bi.md
+      - name: Add filters to a paginated report
+        href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
+      - name: Commonly used filters
+        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
+      - name: Format numbers and dates
+        href: ../paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
+      - name: Get around Report Design View
+        href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Design tips
+        href: ../paginated-reports/report-builder-design-tips.md
+      - name: Tables, matrixes, lists
+        href: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+    - name: Parameters
+      items: 
+      - name: Parameters
+        href: ../paginated-reports/report-builder-parameters.md
+      - name: URL parameters in paginated reports
+        href: ../paginated-reports/report-builder-url-parameters.md
+      - name: Create parameters
+        href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Pass a report parameter in a URL
+        href: ../paginated-reports/report-builder-url-pass-parameters.md
+    - name: "Device information settings"  
+      items:
+      - name: Device information settings for rendering extensions
+        href: ../paginated-reports/device-info/device-information-settings-for-paginated-reports-rendering-extensions.md
+      - name: CSV device information settings
+        href: ../paginated-reports/device-info/csv-device-information-settings.md
+      - name: Excel device information settings
+        href: ../paginated-reports/device-info/excel-device-information-settings.md
+      - name: Word device information settings
+        href: ../paginated-reports/device-info/word-device-information-settings.md
+      - name: Image device information settings
+        href: ../paginated-reports/device-info/image-device-information-settings.md
+      - name: MHTML device information settings
+        href: ../paginated-reports/device-info/mhtml-device-information-settings.md
+      - name: PDF device information settings
+        href: ../paginated-reports/device-info/pdf-device-information-settings.md
+      - name: PPTX device information settings
+        href: ../paginated-reports/device-info/pptx-device-information-settings.md
   - name: "Deployment pipelines"  
     items:
     - name: "Introduction to deployment pipelines"

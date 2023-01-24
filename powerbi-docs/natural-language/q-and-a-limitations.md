@@ -58,8 +58,8 @@ Teach Q&A allows you to fix two types of errors:
 
 Currently we don't support redefining a recognized term or defining other types of conditions or phrases. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
-- Country which is USA
-- Country which is not USA
+- Country or region which is USA
+- Country or region which is not USA
 - Products > 100
 - Products greater than 100
 - Products = 100

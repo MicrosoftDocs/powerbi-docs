@@ -28,7 +28,7 @@ Try different types of visualizations in the Power BI service and Power BI Deskt
 
    ![Screenshot shows the chart changed to a line chart.](media/power-bi-report-change-visualization-type/change-vizualization-after.png).
 
-1. (Optional) [Pin your visualization](../create-reports/service-dashboard-pin-tile-from-report.md) to your dashboard as a tile. 
+1. (Optional) [Pin your visualization](../create-reports/service-dashboard-create.md) to your dashboard as a tile. 
 
 ## Considerations and troubleshooting
 If you change the visualization type in the report after you pinned it to your dashboard, the dashboard tile does not automatically update. So, if you used the Power BI service to pin the visualization as a line chart and then, in the report, changed it to a bar chart, the already-pinned version of this data will remain a line chart. Pin the bar chart to see it too on the dashboard.

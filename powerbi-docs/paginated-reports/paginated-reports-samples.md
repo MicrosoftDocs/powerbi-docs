@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 08/30/2022
+ms.date: 10/27/2022
 ---
 
 # Sample Power BI paginated reports
@@ -19,10 +19,8 @@ This article provides information and links to several sample Power BI paginated
 
 ## Prerequisites
 
-- You can share these reports online, just as they are, with no editing. To do so, you need a Power BI Pro license. Sign up for a [free trial of a Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license).
-- You also need write access to a Power BI workspace in a [Premium capacity](../enterprise/service-premium-what-is.md), or a [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
-- To edit these reports, you need to [install Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center.
-- OK, you're ready to download these sample paginated reports from GitHub! You don't need a GitHub account. 
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+- Now you're ready to download these sample paginated reports from GitHub. You don't need a GitHub account. 
 
 ## Download the reports
 

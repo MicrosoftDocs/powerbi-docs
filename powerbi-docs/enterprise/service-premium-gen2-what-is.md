@@ -7,11 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 12/13/2022
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
-
 
 # What is Power BI Premium Gen2?
 
@@ -22,12 +21,8 @@ The following table lists some of the Premium Gen2 enhancements.
 |Enhancement           |Details  |
 |----------------------|---------|
 |Purchase Premium for individuals in your organization  |See [Power BI Premium Per User (PPU)](service-premium-per-user-faq.yml). |
-|Better performance    |Power BI operations will run at up to 16 times faster than previously, always perform at top speed, and won't slow down when the load on the capacity approaches the capacity limit. Premium Gen2 also provides complete separation between report interaction and scheduled refreshes. |
 |Improved metrics      |Capacity performance depends only on the amount of CPU usage. Metrics can be easily understood using the [Power BI Premium Capacity Utilization and Metrics](service-premium-gen2-metrics-app.md) app. |
 |Autoscale             |An optional feature that prevents slowdowns caused by throttling on overloaded capacities. When enabled, if the load on the capacity exceeds the capacity limits, [autoscale](service-premium-auto-scale.md) automatically adds one v-core at a time for 24-hour periods. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. |
-
->[!NOTE]
->To review the Power BI Embedded Gen2 enhancements, refer to [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md).
 
 ## Capacities and SKUs
 
@@ -37,24 +32,7 @@ The following table lists some of the Premium Gen2 enhancements.
 
 The table below describes the resources and limits of each SKU.
 
-| Capacity SKUs | Total v-cores |Backend v-cores | Frontend v-cores | Max memory per dataset (GB)<sup>1, 2, 3</sup> | DirectQuery/Live connection (per second)<sup>1, 2</sup> | Max memory per query (GB)<sup>1, 2</sup> | Model refresh parallelism<sup>2</sup> |
-| ----------------- | --- | ---- | ---- | --- | ------ | --- | ---- |
-| EM1/A1            |   1 |  0.5 |  0.5 |   3 |   3.75 |  1  |   5  |
-| EM2/A2            |   2 |  1   |  1   |   5 |   7.5  |  2  |  10  |
-| EM3/A3            |   4 |  2   |  2   |  10 |  15    |  2  |  20  |
-| P1/A4             |   8 |  4   |  4   |  25 |  30    |  6  |  40  |
-| P2/A5             |  16 |  8   |  8   |  50 |  60    |  6  |  80  |
-| P3/A6             |  32 | 16   | 16   | 100 | 120    | 10  | 160  |
-| P4/A7<sup>4</sup> |  64 | 32   | 32   | 200 | 240    | 10  | 320  |
-| P5/A8<sup>4</sup> | 128 | 64   | 64   | 400 | 480    | 10  | 640  |
-
-<sup>1</sup> The [Power BI Premium Utilization and Metrics app](service-premium-install-gen2-app.md) doesn't currently expose these metrics.
-
-<sup>2</sup> These limits only apply to the datasets workload per capacity.
-
-<sup>3</sup> The *Max memory per dataset (GB)* column represents an upper bound for the dataset size. However, an amount of memory must be reserved for operations such as refreshes and queries on the dataset. The maximum dataset size permitted on a capacity may be smaller than the numbers in this column.
-
-<sup>4</sup> SKUs greater than 100 GB aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+[!INCLUDE [Power BI capacity and SKUs](../includes/capacity-table.md)]
 
 ## Subscriptions and licensing
 
@@ -78,13 +56,11 @@ Workspaces reside within capacities. Each Power BI user has a personal workspace
 
 Capacity administrators automatically have their My workspaces assigned to Premium capacities.
 
-## Memory allocation
+## Dataset memory allocation
 
-With *Premium Gen2* and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), the amount of memory available on each SKU is set to the limit of the memory consumption of a single Power BI item. For example, in a Premium Gen2 P1 capacity, you can host as many Power BI items as you need, as long as the size of your largest Power BI item isn't bigger than 25 GB. You can find the memory upper limits for each SKU, in the *Max memory per dataset* column of the [Capacities and SKUs](#capacities-and-skus) table.
+With *Premium Gen2* and [Embedded Gen2](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each dataset based on the SKU. For example, in a Premium Gen2 P1 capacity, any dataset that exceeds 25 GB in memory usage would result in failures. You can find the dataset memory upper limits for each SKU, in the *Max memory per dataset* column of the [Capacities and SKUs](#capacities-and-skus) table.
 
-In the first generation of Premium and Embedded, memory was restricted to a limited amount of RAM used by all items simultaneously running. In *Premium Gen2* and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md), there's no memory limit for the capacity as a whole. Instead, individual items (such as datasets, dataflows and paginated reports) can't exceed the amount of memory the capacity SKU offers. This includes all the operations ([interactive and background](service-premium-interactive-background-operations.md)) being processed for the item while it's in use. Dataset operations such as queries are also subject to individual memory limits.
-
-To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Three separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per dataset* allocation.
+Dataset operations such as queries are subject to individual memory limits. To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Three separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per dataset* allocation.
 
 * **Loading the dataset** - The first action is loading the dataset into the memory.
 
@@ -94,11 +70,13 @@ To illustrate the restriction, consider a dataset with an in-memory footprint of
 
 ## Refreshes
 
-Premium Gen2 and [Embedded Gen 2](../developer/embedded/power-bi-embedded-generation-2.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. There's no limit on the number of refreshes running per v-core. However, the refresh of individual datasets continues to be governed by existing capacity memory and CPU limits. You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
+Premium Gen2 and [Embedded Gen 2](../developer/embedded/embedded-analytics-power-bi.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. However, refreshing individual datasets is governed by existing capacity memory and CPU limits, and the model refresh parallelism limit for the SKU, as described in [Capacities and SKUs](#capacities-and-skus).
+
+You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
 ## Monitoring
 
-When monitoring Premium Gen2 and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), you only need to take into consideration one aspect: *how much CPU your capacity requires to serve the load at any moment*. To monitor your capacity, use the [Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview) app.
+When monitoring Premium Gen2 and [Embedded Gen2](../developer/embedded/embedded-analytics-power-bi.md), you only need to take into consideration one aspect: *how much CPU your capacity requires to serve the load at any moment*. To monitor your capacity, use the [Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview) app.
 
 To install the app, see [Install the Gen2 metrics app](service-premium-install-gen2-app.md). You can learn how to use the app in the article [Use the Gen2 metrics app](service-premium-gen2-metrics-app.md).
 
@@ -106,11 +84,11 @@ Here's what happens when you exceed your CPU limit per the SKU size you purchase
 
 * **Premium Gen2** - If enabled, [autoscale](service-premium-auto-scale.md) kicks in. If autoscale isn't enabled, your capacity throttles its [interactive operations](service-premium-interactive-background-operations.md#interactive-operations).
 
-* **[Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md)** - Your capacity throttles its [interactive operations](service-premium-interactive-background-operations.md#interactive-operations). To autoscale in Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md#autoscaling-in-embedded-gen2).
+* **[Embedded Gen2](../developer/embedded/embedded-analytics-power-bi.md)** - Your capacity throttles its [interactive operations](service-premium-interactive-background-operations.md#interactive-operations). To autoscale in Embedded Gen2, see [Autoscaling in Embedded Gen2](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity).
 
 ## Paginated reports
 
-When using *Premium Gen2* and [Embedded Gen2](../developer/embedded/power-bi-embedded-generation-2.md), Power BI [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) benefit from the architectural and engineering improvements reflected in Premium Gen2.
+When using *Premium Gen2* and [Embedded Gen2](../developer/embedded/embedded-analytics-power-bi.md), Power BI [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) benefit from the architectural and engineering improvements reflected in Premium Gen2.
 
 * **Memory** - There's no memory management for Paginated reports.
 
@@ -142,7 +120,7 @@ The following known limitations currently apply to Premium Gen2.
 > [Power BI Premium Per User](service-premium-per-user-faq.yml)
 
 > [!div class="nextstepaction"]
-> [Managing Premium capacities](service-premium-capacity-manage.md)
+> [Managing Premium Gen2 capacities](service-premium-capacity-manage-gen2.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Embedded Generation 2](../developer/embedded/power-bi-embedded-generation-2.md)
+> [Power BI Embedded Generation 2](../developer/embedded/embedded-analytics-power-bi.md)

@@ -110,7 +110,7 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
     ![Plan Variance Analysis page](media/sample-it-spend/it7.png)
 
-   Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country, as compared to all other business areas. 
+   Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country or region, as compared to all other business areas. 
 
 3. Use the **IT Area** and **IT Sub Area** slicers on the right to filter the values in the rest of the page and to explore the data. 
 

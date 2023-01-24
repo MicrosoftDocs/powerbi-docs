@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/28/2022
+ms.date: 11/16/2022
 ---
 
 # Collaborate with Power BI in Microsoft Teams, Outlook, and Office
@@ -27,6 +27,7 @@ Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office t
 - [View all the Power BI tabs you have](service-teams-pivot.md) in Microsoft Teams: Select the **In Teams** tab on the Power BI app home page.
 - [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams: Analyze your Teams activity.
 - [Get notified](service-teams-notifications.md) in the Teams activity feed when important things happen in Power BI.
+- Discover and use Power BI in Teams mobile.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
 
@@ -36,7 +37,7 @@ In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
 - Ensure the Power BI app is enabled in the Teams Admin center apps list. 
 - Your users with a Power BI (Free) license can access personal analytics including using the built-in Teams analytics report and create reports in their My workspace.
-- Your users with Power BI (Free) licenses can also access content shared to them from a workspace that is part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
+- Your users with Power BI (Free) licenses can also access content shared to them from a workspace that is part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-gen2-what-is.md).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
 - Users will need to sign in within the Power BI app for Teams or the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
