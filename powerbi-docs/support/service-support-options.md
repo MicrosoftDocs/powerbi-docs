@@ -18,14 +18,14 @@ This article describes the support options that are available to customers who h
 
 If you're an end user, you can contact Support directly if you have a Power BI Pro or Power BI Premium Per User license. But, your administrator might prefer you take a different route to get help. Before you contact support, check these requirements:
 
-1. Find out which license you have. To quickly check whether you're eligible to contact Support, select your profile picture from the page header in [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you might use the following listed support options. Select **View account** to see more details about your account.
+1. Find out which license you have. To quickly check whether you're eligible to contact Support, select your profile picture from the page header in [the Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you might use the following listed support options. Select **View account** to see more details about your account.
 
    :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::
 
    > [!NOTE]
    >If you got your Power BI Pro or Power BI Premium Per User license through a guest affiliation with another organization, you can't contact Support. Your license must be assigned directly by the organization that manages your work or school account to enable Support options.
 
-2. Verify whether Power BI Support is your admin's preferred option when you need help. To check, select (**?**) from the page header in Power BI service, then choose **Help & Support > About Power BI**. If this selection takes you to Power BI Support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a Support contract, you'll receive a message that "This product is not supported.
+2. Verify whether Power BI Support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Help & Support > About Power BI**. If this selection takes you to Power BI Support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a Support contract, you'll receive a message that "This product is not supported."
 
    :::image type="content" source="media/service-support-options/support-menu.png" alt-text="Screen capture showing help menu with Get help selected.":::
 
@@ -83,7 +83,7 @@ As a Power BI customer, you can also take advantage of the following offerings f
 
 * **WorkshopPLUS - Data AI: Advanced Data Analytics with Power BI**. This offering presents how you can implement the key principles of data modeling in Power BI, using tools such as Power BI Desktop and the accompanying cloud service for the publishing and consumption of Power BI assets. You'll develop reports, including DAX, and use premium capacities in Power BI. You'll also deal with advanced analytics involving AI components, Premium, and Data flows.
 
-* **Power BI Clinic**. This offering presents how you can optimize your Power BI workload. Use this clinic as a proactive service to help optimize performance before deploying Power BI, or as a reactive service to alleviate existing bottlenecks. You'll have an opportunity to work with a Microsoft SME (Subject Matter Expert) on performance tuning and optimization of "slow running Power BI reports", with a focus on report models and DAX. You'll also have an opportunity to work on "slow dataset refresh" with a focus on refresh performance in the Power BI cloud service or Power BI Report server.
+* **Power BI Clinic**. This offering presents how you can optimize your Power BI workload. Use this clinic as a proactive service to help optimize performance before deploying Power BI, or as a reactive service to alleviate existing bottlenecks. You'll have an opportunity to work with a Microsoft SME (subject matter expert) on performance tuning and optimization of slow running Power BI reports, with a focus on report models and DAX. You'll also have an opportunity to work on slow dataset refresh with a focus on refresh performance in the Power BI cloud service or Power BI Report Server.
   
 Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier and Unified support](https://www.microsoft.com/en-us/unifiedsupport).
 
