@@ -487,7 +487,7 @@
     - name: Paginated reports capacity planning
       href: ../paginated-reports/paginated-capacity-planning.md      
     - name: Process large reports
-      href: ../paginated-reports/process-large-reports.md      
+      href: ../paginated-reports/report-design/process-large-reports.md      
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
     - name: Plan to migrate .rdl reports to Power BI
