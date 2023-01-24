@@ -99,7 +99,7 @@ You view your paginated report in the Power BI service in a browser, and also in
 
 You can set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
 
-For details, see "Subscribe to paginated reports" in the article [Email subscriptions for reports and dashboards in the Power BI service](../consumer/end-user-subscribe.md#subscribe-to-paginated-reports). 
+For details, see "Subscribe to paginated reports" in the article [Email subscriptions for reports and dashboards in the Power BI service](/power-bi/collaborate-share/end-user-subscribe#subscribe-to-paginated-reports). 
 
 ## Use deployment pipelines with paginated reports
 
