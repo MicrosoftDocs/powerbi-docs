@@ -25,7 +25,7 @@ When you import an Excel workbook into the Power BI service, you might see the f
 ## Quick solution
 
 1. Edit your workbook in Excel.
-1. Select the range of cells that contain your data. The first row should contain your column headers, the column names)
+1. Select the range of cells that contain your data. The first row should contain your column headers, the column names.
 1. Press **Ctrl** + **T** to create a table.
 1. Save your workbook.
 1. Return to the Power BI service and import your workbook again, or if you're working in Excel 2016 and you've saved your workbook to OneDrive for work or school, in Excel, select **File** > **Publish**.
@@ -55,11 +55,11 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
 
    ![Screenshot shows insert table selected.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-3.png)
 
-1. You see the following dialog. Make sure **My table has headers** is selected, then choose select **OK**
+1. You see the following dialog. Make sure **My table has headers** is selected, then choose **OK**
 
     ![Screenshot shows the Create Table dialog.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-create-table.png)
 
-1. Now your data is formatted as a table.
+   Now your data is formatted as a table.
 
    ![Screenshot shows data in Excel formatted as a table.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 
