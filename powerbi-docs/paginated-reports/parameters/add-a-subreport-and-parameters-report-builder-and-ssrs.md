@@ -1,28 +1,24 @@
 ---
 title: "Add a subreport and parameters to a Power BI paginated report | Microsoft Docs"
-description: Learn how to add a subreport to a paginated report. Use subreports when you want to create a main report as a container for multiple related reports in Report Builder.
-ms.date: 03/01/2017
+description: Learn how to add a subreport to a paginated report. Use subreports when you want to create a main report as a container for multiple related reports in Power BI Report Builder.
+ms.date: 01/23/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
-f1_keywords: 
-  - "10093"
-  - "sql13.rtp.rptdesigner.subreportproperties.general.f1"
-ms.assetid: 94f960f8-a629-4f1e-8277-c3b8f0680d98
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Add a subreport and parameters to a Power BI paginated report (Report Builder)
+# Add a subreport and parameters to a Power BI paginated report (Power BI Report Builder)
  
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
  Add subreports to a Power BI paginated report when you want to create a main report that is a container for multiple related reports. A subreport is a reference to another report. To relate the reports through data values (for example, to have multiple reports show data for the same customer), you must design a parameterized report (for example, a report that shows the details for a specific customer) as the subreport. When you add a subreport to the main report, you can specify parameters to pass to the subreport.  
   
  You can also add subreports to dynamic rows or columns in a table or matrix. When the main report is processed, the subreport is processed for each row. In this case, consider whether you can achieve the desired effect by using data regions or nested data regions.  
   
- To add a subreport to a report, you must first create the report that will act as the subreport. For more information on creating the subreport, see [Subreports &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/subreports-report-builder-and-ssrs.md).  
+ To add a subreport to a report, you must first create the report that will act as the subreport. For more information on creating the subreport, see [Subreports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/subreports-report-builder-and-ssrs).  
     
 ### To add a subreport  
   
@@ -34,7 +30,7 @@ ms.author: maggies
   
 4.  In the **Subreport Properties** dialog box, type a name in the **Name** text box or accept the default. The name must be unique within the report. By default, a general name such as Subreport1 or Subreport2 is assigned.  
   
-5.  In the **Use this report as a subreport** box, click **Browse**, or type the name of the report. Clicking **Browse** is preferred because the path to the subreport will be specified automatically. You can specify the report in the several ways. For more information, see [Specifying Paths to External Items &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/specifying-paths-to-external-items-report-builder-and-ssrs.md).  
+5.  In the **Use this report as a subreport** box, click **Browse**, or type the name of the report. Clicking **Browse** is preferred because the path to the subreport will be specified automatically. You can specify the report in the several ways. For more information, see [Specifying Paths to External Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specifying-paths-to-external-items-report-builder-and-ssrs).  
   
 6.  (Optional) Click **Yes** for **Omit border on page break** to prevent a border from being rendered in the middle of the subreport if the subreport spans more than one page.  
   
@@ -66,7 +62,7 @@ ms.author: maggies
      Changing the order of a subreport parameter does not affect the processing of the subreport.  
   
 ## Next steps  
- [Subreports &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/subreports-report-builder-and-ssrs.md)   
- [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](../../paginated-reports/report-design/rendering-behaviors-report-builder-and-ssrs.md)  
+ [Subreports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/subreports-report-builder-and-ssrs)   
+ [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)  
   
   
