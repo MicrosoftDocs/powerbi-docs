@@ -60,7 +60,7 @@ To test or assess your capacity load:
 2. Assign the workspace (or workspaces) you'll use to test to the Gen2 capacity you created. You can assign a workspace in one of the following ways:
 
    * *Programmatically* with the [Groups AssignToCapacity API](/rest/api/power-bi/capacities/groups-assign-to-capacity). Check the assignment status with the [Groups CapacityAssignmentStatus API](/rest/api/power-bi/capacities/groups-capacity-assignment-status) or via a *PowerShell* script. For sample code, see the `AssignWorkspacesToCapacity` function in the [Zero-Downtime-Capacity-Scale sample on GitHub](https://github.com/Azure-Samples/powerbi-powershell/blob/master/Zero-Downtime-Capacity-Scale.ps1).
-   * *Manually* as a workspace admin or via the Admin portal as a capacity admin. For more information, see [Assign a workspace to a capacity using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-using-a-master-user)​.
+   * *Manually* as a workspace admin or via the Admin portal as a capacity admin. For more information, see [Assign a workspace to a capacity by using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-by-using-a-master-user)​.
 
 3. As the capacity admin, [install the Power BI Premium Capacity Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md), which is also known as the Gen2 metrics app. Provide the capacity ID and time (in days) to monitor, and then refresh the data. For more information, see [Use the Gen2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md).​
 

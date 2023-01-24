@@ -42,8 +42,8 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) |
 | Automatic page refresh for DirectQuery models | No | Yes | [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) |
 | ArcGIS for Power BI | Yes | Yes | [ArcGIS for Power BI](../visuals/power-bi-visualizations-arcgis.md) |
-| Email subscriptions for Power BI reports | No | Yes | [Subscribe yourself or others](../consumer/end-user-subscribe.md) to a report or dashboard in the Power BI service |
-| Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/end-user-subscribe.md)<br><br>[Email delivery in Reporting Services](/sql/reporting-services/working-with-subscriptions-web-portal)  |
+| Email subscriptions for Power BI reports | No | Yes | [Subscribe yourself or others](/power-bi/collaborate-share/end-user-subscribe) to a report or dashboard in the Power BI service |
+| Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](/power-bi/collaborate-share/end-user-subscribe)<br><br>[Email delivery in Reporting Services](/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Data alerts | No | Yes | [Data alerts](../create-reports/service-set-data-alerts.md) in the Power BI service
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](../enterprise/service-admin-rls.md) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
 | Many-to-many relationships | No | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
