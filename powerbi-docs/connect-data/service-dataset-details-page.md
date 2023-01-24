@@ -101,7 +101,6 @@ Data preview enables you to view selected tables and columns from the dataset, a
 
 To preview a datasets's data from the dataset details page, select its tables and columns on the **Tables** side panel.
 
-![Screenshot of the Tables side panel on the dataset details page.](./media/service-dataset-details-page/dataset-details-page-tables-side-panel.png)
 ![Screenshot of the Tables side panel on the dataset details page.](./media/service-dataset-details-page/dataset-details-page-tables-side-panel-1.png)
 
 If you don't see the side panel, select **Show tables** on the action bar.
