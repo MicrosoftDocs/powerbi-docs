@@ -57,7 +57,7 @@ To connect to SAP BW data by using the SAP BW Connector, take the following step
    - [Connect to an SAP BW Message Server from Power Query Desktop](/power-query/connectors/sap-bw/message-setup-and-connect#connect-to-an-sap-bw-message-server-from-power-query-desktop)
 
    >[!NOTE]
-   >The SAP BW Connector can import data from your SAP Business Warehouse Server cubes, which is the default setting, or use DirectQuery. For more information about using the SAP BW Connector with DirectQuery, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
+   >The SAP BW Connector can import data from your SAP Business Warehouse Server cubes, which is the default setting, or can use DirectQuery. For more information about using the SAP BW Connector with DirectQuery, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
    You can also select **Advanced options**, and select a **Language code**, a custom **MDX statement** to run against the specified server, and other options. For more information, see [Use advanced options](/power-query/connectors/sap-bw/use-advanced-options).
    
@@ -81,20 +81,20 @@ To connect to SAP BW data by using the SAP BW Connector, take the following step
 
 1. After selecting all the objects you want, select one of the following options:
 
-   - **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data or making further modifications by using the **Data** or **Model** views.
-   - **Transform Data** to open **Power Query Editor** with the data. Specify additional data transformation and filtering steps before you bring the entire set of rows into the Power BI Desktop data model.
+   - **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data, or make further modifications by using the **Data** or **Model** views.
+   - **Transform Data** to open **Power Query Editor** with the data. You can specify more data transformation and filtering steps before you bring the entire set of rows into the Power BI Desktop data model.
 
 Along with data from SAP BW cubes, you can also import data from a wide range of other data sources in Power BI Desktop, and combine them into a single report. This ability presents many interesting scenarios for reporting and analytics on top of SAP BW data.
 
 ## New options in SAP BW Implementation 2.0
 
-This section lists some SAP BW Connector Implementation 2.0 new features and improvements. For more information, see [Implementation details](/power-query/connectors/sap-bw/implementation-details).
+This section lists some SAP BW Connector Implementation 2.0 features and improvements. For more information, see [Implementation details](/power-query/connectors/sap-bw/implementation-details).
 
 ### Advanced options
 
 You can set the following options under **Advanced options** on the SAP BW connection screen:
 
-**Execution mode** specifies how the MDX interface executes queries on the server. The following options are valid:
+- **Execution mode** specifies how the MDX interface executes queries on the server. The following options are valid:
 
   - **BasXml**
   - **BasXmlGzip**
@@ -108,7 +108,7 @@ You can set the following options under **Advanced options** on the SAP BW conne
 
 ### Other improvements
 
-The following list describes other improvements for Implementation 2.0:
+The following list describes other Implementation 2.0 improvements:
 
 - Better performance.
 - Ability to retrieve several million rows of data, and fine-tuning through the batch size parameter.
@@ -144,7 +144,7 @@ To change existing reports to use Implementation 2.0, you must use Import mode.
 
    ![Screenshot that shows a plaintext query with an option record added.](media/desktop-sap-bw-connector/sap_bw_11.png)
 
-   To:
+   to:
 
    ![Screenshot that shows a plaintext query of the new option with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_12.png)
 
@@ -161,9 +161,9 @@ In this issue, SAP BW returns numeric data with decimal points instead of commas
 
 SAP BW returns decimal data with either a comma or a period as the decimal separator. To specify which of these characters SAP BW should use for the decimal separator, the Power BI Desktop driver makes a call to `BAPI_USER_GET_DETAIL`. This call returns a structure called `DEFAULTS`, which has a field called `DCPFM` that stores *Decimal Format Notation* as one of the following values:
 
-- ' ' (space) = Decimal point is comma: N.NNN,NN
-- 'X' = Decimal point is period: N,NNN.NN
-- 'Y' = Decimal point is N: NNN NNN,NN
+- `' '` (space) = Decimal point is comma: `N.NNN,NN`
+- `'X'` = Decimal point is period: `N,NNN.NN`
+- `'Y'` = Decimal point is N: `NNN NNN,NN`
 
 With this issue, the call to `BAPI_USER_GET_DETAIL` fails for a particular user, who gets the misformatted data, with an error message similar to the following message:
 
@@ -187,7 +187,7 @@ With this issue, the call to `BAPI_USER_GET_DETAIL` fails for a particular user,
      </item>
 ```
 
-To solve this error, the SAP admin must grant the Power BI SAP BW user the right to execute `BAPI_USER_GET_DETAIL`. Also verify that the user's data has the correct `DCPFM` value.
+To solve this error, the SAP admin must grant the Power BI SAP BW user the right to execute `BAPI_USER_GET_DETAIL`. Also, verify that the user's data has the correct `DCPFM` value.
 
 ### Need connectivity for SAP BEx queries
 
@@ -244,7 +244,7 @@ The following table describes current Power BI support for SAP BW.
 
 ## Next steps
 
-- [SAP BW fundamentals](power-query/connectors/sap-bw/sap-bw-fundamentals)
+- [SAP BW fundamentals](/power-query/connectors/sap-bw/sap-bw-fundamentals)
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [Use DirectQuery in Power BI](desktop-directquery-about.md)
