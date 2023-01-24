@@ -20,7 +20,7 @@ LocalizationGroup: Common tasks
 
 :::image type="content" source="./media/end-user-recent/power-bi-recents-new.png" alt-text="Screenshot showing Power BI service recent content list.":::
 
-Any items that are marked as [favorites](end-user-favorite.md) have a star icon :::image type="icon" source="./media/end-user-favorite/power-bi-favorite-icon.png":::, while items that are stored in [Premium capacity](end-user-license.md) have a diamond icon :::image type="icon" source="./media/end-user-workspaces/power-bi-ppu-icon.png":::.
+Any items that are marked as [favorites](end-user-favorite.md) have a star icon :::image type="icon" source="./media/end-user-recent/power-bi-favorite-shaded-icon.png":::, while items that are stored in [Premium capacity](end-user-license.md) have a diamond icon :::image type="icon" source="./media/end-user-recent/power-bi-diamond-icon.png":::.
 
 ## Search and sort your list of recent content
 
@@ -32,7 +32,7 @@ If your lists get long, use the **Filter by keyword** field, **Filter** button, 
 
 :::image type="content" source="./media/end-user-recent/power-bi-recent-sort-search-new.png" alt-text="Screenshot showing search and sorting options in Power BI.":::
 
-Watch Amanda demonstrate some of the features for navigating your content in the Power BI service.
+In the following video, watch Amanda demonstrate some of the features for navigating your content in the Power BI service.
 
 > [!NOTE]  
 > This video uses earlier versions of Power BI Desktop and Power BI service.
