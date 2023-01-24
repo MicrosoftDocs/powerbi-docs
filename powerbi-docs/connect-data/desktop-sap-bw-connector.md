@@ -17,7 +17,7 @@ You can use Power BI Desktop to access SAP Business Warehouse (SAP BW) data. The
 For information about how SAP customers can benefit from connecting Power BI to their SAP BW systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
 >[!IMPORTANT]
->Version 1.0 of the SAP BW connector is deprecated. New connections use Implementation 2.0 of the SAP BW connector. All support for version 1.0 will be removed from the connector in the near future. Use the information in this article to update existing version 1.0 reports so they can use Implementation 2.0 of the connector.
+>Version 1.0 of the SAP BW connector is deprecated. New connections use Implementation 2.0 of the SAP BW connector. All support for version 1.0 will be removed from the connector in the near future. Use the information in this article to update existing version 1.0 reports to use Implementation 2.0 of the connector.
 
 ## Use the SAP BW Connector
 
@@ -30,18 +30,18 @@ Implementation 2.0 of the SAP Connector requires the SAP .NET Connector 3.0. You
 >[!IMPORTANT]
 >Be sure to use SAP .NET Connector 3.0. The SAP BW Application Server connector doesn't currently support SAP .NET Connector 3.1.
 
-The connector for .NET 4.0 framework comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation version.
+The .NET 4.0 framework connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation version.
 
 When you install, in **Optional setup steps**, make sure you select **Install assemblies to GAC**.
 
 ![Screenshot of the SAP optional setup steps with Install assemblies to GAC selected.](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 >[!NOTE]
->The first version of the SAP BW Connector required the NetWeaver DLLs. The current version no longer requires NetWeaver DLLs.
+>The first version of the SAP BW Connector required the NetWeaver DLLs. The current version doesn't require NetWeaver DLLs.
 
 ### Connect to SAP BW data in Power BI Desktop
 
-To connect to SAP BW data by using the SAP BW Connector, take the following steps:
+To connect to SAP BW data by using the SAP BW Connector, follow these steps:
 
 1. In Power BI Desktop, select **Get data**.
 
@@ -57,7 +57,7 @@ To connect to SAP BW data by using the SAP BW Connector, take the following step
    - [Connect to an SAP BW Message Server from Power Query Desktop](/power-query/connectors/sap-bw/message-setup-and-connect#connect-to-an-sap-bw-message-server-from-power-query-desktop)
 
    >[!NOTE]
-   >The SAP BW Connector can import data from your SAP Business Warehouse Server cubes, which is the default setting, or can use DirectQuery. For more information about using the SAP BW Connector with DirectQuery, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
+   >You can use the SAP BW Connector to import data from your SAP BW Server cubes, which is the default, or you can use DirectQuery to connect to the data. For more information about using the SAP BW Connector with DirectQuery, see [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
    You can also select **Advanced options**, and select a **Language code**, a custom **MDX statement** to run against the specified server, and other options. For more information, see [Use advanced options](/power-query/connectors/sap-bw/use-advanced-options).
    
@@ -74,12 +74,12 @@ To connect to SAP BW data by using the SAP BW Connector, take the following step
    The **Navigator** dialog also provides the following display options:
 
    - **Only selected items**. By default, **Navigator** displays all items. This option is useful to verify the final set of items you select. Alternatively, you can select the column names in the preview area to view the selected items.
-   - **Enable data previews**. This value is the default, and displays data previews. Disable data previews to reduce the number of server calls by no longer requesting preview data.
+   - **Enable data previews**. This value is the default, and displays data previews. Deselect this option to reduce the number of server calls by no longer requesting preview data.
    - **Technical names**. SAP BW supports user-defined *technical names* for objects within a cube. Cube owners can expose these friendly names for cube objects, instead of exposing only the physical names for the objects.
 
    ![Screenshot of the display options in the Navigator window.](media/desktop-sap-bw-connector/sap_bw_6.png)
 
-1. After selecting all the objects you want, select one of the following options:
+1. After you select all the objects you want, choose one of the following options:
 
    - **Load** to load the entire set of rows for the output table into the Power BI Desktop data model. The **Report** view opens. You can begin visualizing the data, or make further modifications by using the **Data** or **Model** views.
    - **Transform Data** to open **Power Query Editor** with the data. You can specify more data transformation and filtering steps before you bring the entire set of rows into the Power BI Desktop data model.
@@ -104,7 +104,7 @@ You can set the following options under **Advanced options** on the SAP BW conne
 
 - **Batch size** specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number means more calls to the server while retrieving a large dataset. A large value might improve performance, but could cause memory issues on the SAP BW server. The default value is **50000**.
 
-- **Enable characteristic structures** changes the way the **Navigator** displays characteristic structures. The default value for this option is false, or unchecked. This option affects the list of objects available for selection, and isn't supported in Native query mode.
+- **Enable characteristic structures** changes the way the **Navigator** displays characteristic structures. The default value for this option is false, or unchecked. This option affects the list of objects available for selection, and isn't supported in native query mode.
 
 ### Other improvements
 
@@ -115,32 +115,32 @@ The following list describes other Implementation 2.0 improvements:
 - Ability to switch execution modes.
 - Support for compressed mode, especially beneficial for high-latency connections or large datasets.
 - Improved detection of `Date` variables.
-- `Date` (ABAP type DATS) and `Time` (ABAP type TIMS) dimensions exposed as dates and times, instead of text values. For more information, see [Support for typed dates in SAP BW](/power-query/connectors/sap-bw/implementation-details#support-for-typed-dates-in-sap-bw).
+- `Date` (ABAP type `DATS`) and `Time` (ABAP type `TIMS`) dimensions exposed as dates and times, instead of text values. For more information, see [Support for typed dates in SAP BW](/power-query/connectors/sap-bw/implementation-details#support-for-typed-dates-in-sap-bw).
 - Better exception handling. Errors that occur in BAPI calls are now surfaced.
-- Column folding in BasXml and BasXmlGzip modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request passes on to the server to retrieve a smaller dataset.
+- Column folding in `BasXml` and `BasXmlGzip` modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request passes on to the server to retrieve a smaller dataset.
 
 ## Update existing Implementation 1.0 reports
 
-To change existing reports to use Implementation 2.0, you must use Import mode.
+You can change existing reports to use Implementation 2.0 only in Import mode.
 
-1. In Power BI Desktop, from the existing report, select **Transform data** in the ribbon, and then select the SAP Business Warehouse query to update.
+1. From the existing report in Power BI Desktop, select **Transform data** in the ribbon, and then select the SAP Business Warehouse query to update.
 
 1. Right-click the query and select **Advanced Editor**.
 
-1. In the **Advanced Editor**, change the `SapBusinessWarehouse.Cubes` call as follows:
+1. In the **Advanced Editor**, change the `SapBusinessWarehouse.Cubes` calls as follows:
 
-1. Determine whether the query already contains an option record, such as the following example:
+1. Determine whether the query already contains an option record, such as the following examples:
 
    ![Screenshot that shows a plaintext query with an option record.](media/desktop-sap-bw-connector/sap_bw_9.png)
 
-1. If so, add the `Implementation` 2.0 option, and remove the `ScaleMeasures` option, if present, as shown:
+   If so, add the `[Implementation 2.0]` option, and remove any `ScaleMeasures` option:
 
    ![Screenshot that shows a plaintext query with the added value Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_10.png)
 
    >[!NOTE]
    >The `ScaleMeasures` option is deprecated in this implementation. The connector now always shows unscaled values.
 
-1. If the query doesn't already include an options record, add it. For example, change the following option:
+1. If the query doesn't already include an options record, add it. For example, change the following entry:
 
    ![Screenshot that shows a plaintext query with an option record added.](media/desktop-sap-bw-connector/sap_bw_11.png)
 
