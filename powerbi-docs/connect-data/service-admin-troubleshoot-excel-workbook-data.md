@@ -55,7 +55,7 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
 
    ![Screenshot shows insert table selected.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-3.png)
 
-1. You see the following dialog. Make sure **My table has headers** is selected, then choose **OK**
+1. You see the following dialog. Make sure **My table has headers** is selected, then choose **OK**.
 
     ![Screenshot shows the Create Table dialog.](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-create-table.png)
 
