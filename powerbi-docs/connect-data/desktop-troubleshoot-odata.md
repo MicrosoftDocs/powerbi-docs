@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting OData sign in errors in Power BI Desktop
-description: Solutions to common sign in issue with OData connections.
+description: Learn about solutions to common sign-in issues with OData connections, including credential type not supported error and access denied errors.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 07/23/2021
+ms.date: 01/24/2023
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshooting sign in with OData feed
@@ -22,35 +22,45 @@ The following sections describe each error, and the steps to remedy them, in tur
 
 ## Credential type not supported
 
-You may see the following error, indicating the credential type is not supported:
+You might see the following error, indicating the credential type isn't supported:
 
-```We are unable to connect because this credential type is not supported by this resource. Please choose another credential type.```
+```text
+We are unable to connect because this credential type is not supported by this resource. Please choose another credential type.
+```
 
 You need to ensure your service is sending auth headers as follows:
-   * First Oauth request without any *authorization* header should send the following header in response:
-      
-      ``` www-authenticate: Bearer realm=https://login.microsoftonline.com/<Your Active Directory Tenant Id> ```
-   
-   * Redirect request to the service with *authorization* header set to *Bearer* should send the following header in response:
-   
-      ```www-authenticate: Bearer authorization_uri=https://login.microsoftonline.com/<Your Active Directory Tenant Id>/oauth2/authorize```
 
-After a successful redirect call, calls to your service will have right access token in the authorization header. If you still see an error, clear the Global Permissions for the OData service uri and try again. To clear Global Permissions, go to **File > Options and Settings > Data Source Settings > Global Permissions**.
+* First Oauth request without any *authorization* header should send the following header in response:
+
+  ```output
+  www-authenticate: Bearer realm=https://login.microsoftonline.com/<Your Active Directory Tenant Id> 
+  ```
+
+* Redirect request to the service with *authorization* header set to *Bearer* should send the following header in response:
+
+  ```output
+  www-authenticate: Bearer authorization_uri=https://login.microsoftonline.com/<Your Active Directory Tenant Id>/oauth2/authorize
+  ```
+
+After a successful redirect call, calls to your service have the right access token in the authorization header. If you still see an error, clear the Global Permissions for the OData service uri and try again. To clear Global Permissions, go to **File** > **Options and Settings** > **Data Source Settings** > **Global Permissions**.
 
 ## Access denied
 
-You may see one of the following errors, indicating access is denied:
+You might see one of the following errors, indicating access is denied:
 
-```access_denied: AADSTS650053: The application 'Microsoft Power Query for Excel' asked for scope 'user_impersonation' that doesn't exist on the resource \<resourceId\>.```
+```output
+access_denied: AADSTS650053: The application 'Microsoft Power Query for Excel' asked for scope 'user_impersonation' that doesn't exist on the resource \<resourceId\>.
+```
 
-```Microsoft Power Query for Excel needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.```
+```output
+Microsoft Power Query for Excel needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
+```
 
 If you encounter such an error, ensure the application registration for your OData service has following settings:
 
-   * *Application ID* is set to the OData service base URI. 
-   * Scope *user_impersonation* is defined. 
-   * The application's permissions are appropriately set by the administrator.
-
+* *Application ID* is set to the OData service base URI.
+* Scope *user_impersonation* is defined.
+* The application's permissions are appropriately set by the administrator.
 
 ## Next steps
 
