@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory (Azure AD) SSO
-description: Learn how you can configure your gateway to enable single sign-on (SSO) to the data gateway to access cloud data sources that rely on Azure Active Directory based authentication.
+description: Learn how you can enable single sign-on to access cloud data sources that rely on Azure Active Directory from the Power BI Admin portal.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
@@ -42,7 +42,7 @@ The following data sources aren't supported with Azure AD SSO using an on-premis
 * VSTS
 * Workplace Analytics
 
-For more information on SSO and a list of data sources supported for Azure AD SSO, see [Overview of single sign-on for on-premises data gateways in Power BI](service-gateway-sso-overview.md).
+For more information on SSO, and a list of supported data sources for Azure AD SSO, see [Overview of single sign-on for on-premises data gateways in Power BI](service-gateway-sso-overview.md).
 
 ## Query steps when running Azure AD SSO
 
@@ -53,7 +53,7 @@ Since the Azure AD token of the user is passed via the gateway, it's possible fo
 * A tenant-level setting in the Power BI admin portal allows only Power BI service admins to enable this feature for a tenant. For more information, see [Azure AD single sign-on for gateways](../admin/service-admin-portal-integration.md#azure-ad-single-sign-on-sso-for-gateway).
 * As a Power BI service admin, you can also control who can install gateways in your tenant. For more information, see [Manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers).
 
-The Azure AD SSO feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the **Azure AD Single Sign-On (SSO) for Gateway** tenant setting in the Power BI admin portal before data sources are enabled for Azure AD SSO on an on-premises data gateway.
+The Azure AD SSO feature is disabled by default for on-premises data gateways. As a Power BI admin, you must enable the **Azure AD Single Sign-On (SSO) for Gateway** tenant setting in the Power BI Admin portal before data sources are enabled for Azure AD SSO on an on-premises data gateway.
 
 :::image type="content" source="media/service-gateway-azure-active-directory-sso/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png" alt-text="Screenshot of the Azure AD SSO for gateway feature in the Power BI Admin portal.":::
 
