@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 01/24/2023
 ---
 # Process large Power BI paginated reports
-  Large reports present certain processing challenges and require certain configurations if they are to run properly. Large reports shouldn't be run on demand unless you configure them to support pagination.  
+  Large Power BI paginated reports present certain processing challenges and require certain configurations if they are to run properly. Large reports shouldn't be run on demand unless you configure them to support pagination.  
   
 > [!NOTE]  
 >  Page breaks are enabled by default. Don't disable page breaks if you think the report will contain a large amount of data. The rendering format that is used to initially render a report opens a report in a browser. If the report isn't paginated, all of the data is included in a single page, which most browsers can't accommodate. For example, a report that contains 5,000 rows of data almost certainly can't be viewed in a browser in a single page.  
