@@ -1,22 +1,17 @@
 ---
 title: "Add, change, or delete default values for a Power BI paginated report parameter | Microsoft Docs"
-description: Use these steps to customize your reports with added, changed, or deleted  default values for paginated report parameters.
-ms.date: 03/07/2017
+description: Use these steps to customize your reports with added, changed, or deleted  default values for Power BI paginated report parameters.
+ms.date: 01/23/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
-f1_keywords: 
-  - "10460"
-  - "sql13.rtp.rptdesigner.reportparameters.defaultvalues.f1"
-  - "10072"
-ms.assetid: 6a87e069-b3a9-47b6-bcec-afcdd8aff65f
 author: maggiesMSFT
 ms.author: maggies
 ---
 
-# Add, change, or delete default values for a Power BI paginated report parameter (Report Builder)
+# Add, change, or delete default values for a Power BI paginated report parameter (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
@@ -24,8 +19,7 @@ ms.author: maggies
   
  Report parameters can represent one value or multiple values. For single values, you can provide a literal or expression. For multiple values, you can provide a static list or a list from a report dataset.  
   
- After you publish a report, you can override the default values that you define in the report in the report authoring tool, by setting parameter property values on the report server. You can also provide multiple sets of default parameter values by creating linked reports. For more information, see  [Report Parameters &#40;Report Builder and Report Designer&#41;](../../paginated-reports/report-design/report-parameters-report-builder-and-report-designer.md)  
-  
+ 
 ### To add or change the default values for a report parameter  
   
 1.  In the Report Data pane, expand the **Parameters** node. Right-click the parameter and click **Edit**. The **Report Parameter Properties** dialog box opens.  
@@ -58,13 +52,12 @@ ms.author: maggies
 4.  Select **OK**.
   
 ## Next steps  
- [Report Parameters &#40;Report Builder and Report Designer&#41;](../../paginated-reports/report-design/report-parameters-report-builder-and-report-designer.md)   
- [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
- [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../paginated-reports/tutorial-add-a-parameter-to-your-report-report-builder.md)   
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Parameters Collection References &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/built-in-collections-parameters-collection-references-report-builder.md)   
- [Change the Order of a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
- [Add, Change, or Delete a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
- [Expressions &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/expressions-report-builder-and-ssrs.md)  
+ [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
+ [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)   
+ [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](add-dataset-filters-data-region-filters-and-group-filters.md)   
+ [Parameters Collection References &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-parameters-collection-references-report-builder)   
+ [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
+ [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
+ [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)  
   
   
