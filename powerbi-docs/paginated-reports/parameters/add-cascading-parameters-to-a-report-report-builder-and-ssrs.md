@@ -1,23 +1,22 @@
 ---
 title: "Add cascading parameters to a Power BI paginated report | Microsoft Docs"
-description: Find out how to use cascading parameters in your paginated reports in Report Builder to manage large amounts of report data. 
-ms.date: 08/17/2018
+description: Find out how to use cascading parameters in your paginated reports in Power BI Report Builder to manage large amounts of report data. 
+ms.date: 01/23/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
-ms.assetid: 3a22eec3-57a7-478e-b6fc-102a9dbe0591
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Add cascading parameters to a Power BI paginated report (Report Builder)
+# Add cascading parameters to a Power BI paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
   Cascading parameters provide a way of managing large amounts of data in a Power BI paginated report. You can define a set of related parameters so that the list of values for one parameter depends on the value chosen in another parameter. For example, the first parameter is independent and might present a list of product categories. When the user selects a category, the second parameter is dependent on the value of the first parameter. Its values are updated with a list of subcategories within the chosen category. When the user views the report, the values for both the category and subcategory parameters are used to filter report data.  
  
- To create cascading parameters, you define the dataset query first and include a query parameter for each cascading parameter that you need. You must also create a separate dataset for each cascading parameter to provide available values. For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-change-or-delete-available-values-for-a-report-parameter.md).  
+ To create cascading parameters, you define the dataset query first and include a query parameter for each cascading parameter that you need. You must also create a separate dataset for each cascading parameter to provide available values. For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-available-values-for-a-report-parameter.md).  
   
  Order is important for cascading parameters because the dataset query for a parameter later in the list includes a reference to each parameter that is earlier in the list. At run time, the order of the parameters in the Report Data pane determines the order in which the parameter queries appear in the report, and therefore, the order in which a user chooses each successive parameter value.  
   
@@ -40,7 +39,7 @@ ms.author: maggies
 6.  Click **Run** (**!**). After you include query parameters and then run the query, report parameters that correspond to the query parameters are automatically created.  
   
     > [!NOTE]  
-    >  The order of query parameters the first time you run a query determines the order that they are created in the report. To change the order, see [Change the Order of a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)  
+    >  The order of query parameters the first time you run a query determines the order that they are created in the report. To change the order, see [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)  
   
 7.  Select **OK**.
   
@@ -146,10 +145,10 @@ ms.author: maggies
 4.  Click **View Report**. The report updates the display based on the parameters you have chosen.  
   
 ## Next steps  
- [Add, Change, or Delete a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
- [Report Parameters &#40;Report Builder and Report Designer&#41;](../../paginated-reports/report-design/report-parameters-report-builder-and-report-designer.md)   
- [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../paginated-reports/tutorial-add-a-parameter-to-your-report-report-builder.md)   
- [Report Builder Tutorials](../../reporting-services/report-builder-tutorials.md)   
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../paginated-reports/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md)  
+ [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
+ [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-parameters-report-builder-and-report-designer.md)   
+ [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)
+ [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)   
+ [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](add-dataset-filters-data-region-filters-and-group-filters.md)   
+ [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs)  
   
