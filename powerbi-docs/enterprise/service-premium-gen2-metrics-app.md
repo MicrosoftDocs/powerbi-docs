@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/22/2023
+ms.date: 01/24/2023
 LocalizationGroup: Premium 
 ---
 
@@ -351,7 +351,7 @@ A table showing every [interactive operation](service-premium-interactive-backgr
 
 * **End** - The time the interactive operation finished.
 
-* **Status** - An indication showing if the operation succeeded or failed.
+* **Status** - An indication showing if the operation succeeded or failed. Cancelled operations are reported as failed operations.
 
     >[!NOTE]
     >CPU usage for failed operations is counted when determining if the capacity is in overload.
