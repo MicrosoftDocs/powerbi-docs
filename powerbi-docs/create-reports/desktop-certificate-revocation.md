@@ -27,9 +27,9 @@ Both methods offer three possible settings:
 
 |Certificate revocation information status | Comprehensive check | Basic check | None / Disabled |
 |---------|---------|---------|---------|
-|Revoked     |  ❌  | ❌  | ✔   |
-|Unknown  |  ❌    |  ✔   |    ✔  |
-|Not revoked  | ✔  |    ✔ |    ✔  |
+|Revoked     |  :::image type="icon" source="../includes/media/no-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/no-icon.svg" border="false":::  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::   |
+|Unknown  |  :::image type="icon" source="../includes/media/no-icon.svg" border="false":::    |  :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::   |    :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |
+|Not revoked  | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |    :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |    :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::  |
 
 ## In Power BI Desktop
 

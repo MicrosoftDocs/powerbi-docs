@@ -1,5 +1,5 @@
 ---
-title: "URL parameters in paginated reports - Power BI Report Builder"
+title: "URL parameters in paginated reports in Power BI"
 description: Learn how to send commands to paginated reports in Power BI by adding a parameter to a URL, which you can include in an email or Web page.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,23 +8,23 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.reviewer: "nisrinivasan"
 ms.custom: ""
-ms.date: 11/17/2022
+ms.date: 01/18/2023
 ---
 
 # URL parameters in paginated reports in Power BI
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-You can send commands to paginated reports in Power BI by adding a parameter to a URL. For example, you may have viewed the report using a specific set of report parameter values. You encapsulate this information in the URL by using predefined URL access parameters. You further customize how Power BI processes the report by embedding parameters for rendering formats, or for the look and feel of the report toolbar. You then paste this URL directly into an email or Web page so others experience your report in the same manner in the browser. 
+You can send commands to paginated reports in Power BI by adding a parameter to a URL. For example, you might have viewed the report using a specific set of report parameter values. You encapsulate this information in the URL by using predefined URL access parameters. You further customize how Power BI processes the report by embedding parameters for rendering formats, or for the look and feel of the report toolbar. You then paste this URL directly into an email or Web page so others experience your report in the same manner in the browser. 
 
 Here are actions you can perform through URL access parameters: 
 
 - Send report parameters to a report. 
 - Initiate the export of the report content in a supported file format. 
 - Hide or view the parameters pane. 
-- Specify DeviceInfo setting. 
+- Specify *DeviceInfo* setting. 
 
-For the complete list of commands and settings available through URL access, see [URL access parameter reference](#url-access-parameter-reference) later in this article. 
+For the complete list of commands and settings available through URL access, see [URL access parameter reference](#url-access-parameter-reference) in this article. 
 
 ## URL access concepts 
 
@@ -48,29 +48,29 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0
 ```
 
 ### ?
-Used to separate the powerbiservicereporturl and the URL access parameters.
+Used to separate the *powerbiservicereporturl* and the URL access parameters.
 
 ### &
 Used to separate name and value pairs of URL access parameters.
 
 ### prefix
-A prefix for the URL parameter (for example, rp: or rdl:) that specifies an action in the Power BI service. 
+A prefix for the URL parameter that specifies an action in the Power BI service. For example, `rp:` or `rdl:`.
 
 ### parameter
 The parameter name. 
 
 ### value 
-URL text corresponding to the value of the parameter being used. 
+URL text that corresponds to the value of the parameter being used. 
 
 ## URL report parameter reference
 
 You can pass report parameters to a report by including them in a paginated report URL. 
 
 ### Report parameters (`rp:`) 
-For examples of passing report parameters on the URL, see [Pass a report parameter in a URL](report-builder-url-pass-parameters.md).
+For examples of passing report parameters in a URL, see [Pass a report parameter in a URL](report-builder-url-pass-parameters.md).
 
 > [!NOTE]
-> Report parameters require the parameter prefix **rp:** and are case-sensitive. 
+> Report parameters require the parameter prefix `rp:` and are case-sensitive. 
 
 ## URL access parameter reference
 
@@ -78,13 +78,12 @@ You can use the following parameters as part of a URL to configure the look and 
 
 ### Report commands (`rdl:`) 
 
-**Export format**
-Specifies the format in which to render and export a report.
+#### Export format
+Specifies the format in which to render and export a report. 
 
-Example: rdl:format=PDF
+- For example: `rdl:format=PDF`
 
-Available values are:
- 
+Available values:
 - PPTX (PowerPoint)
 - MHTML 
 - IMAGE 
@@ -95,97 +94,93 @@ Available values are:
 - ACCESSIBLEPDF (PDF)
 - XML 
 
-**Report View**
-Specifies the type of view use to displayed the report.
+#### Report view
+Specifies the type of view use to display the report.
 
--	rdl:reportView
--	available values:
-    - 'interactive' (default): load the report in interactive mode.
-    - 'pageView': load the report in page view mode.
+- `rdl:reportView`
 
-**Parameter panel**
+Available values:
+- **interactive** (default): loads the report in interactive mode.
+- **pageView**: loads the report in page view mode.
+
+#### Parameter panel
 Specifies whether the parameter panel is closed or open when the report loads, or is hidden altogether.
 
--	rdl:parameterPanel
--	available values:
-    - 'collapsed': load the report with parameter panel closed. The parameter button is enabled so that users can click the button to expand;
-    - 'hidden': load the report with parameter panel closed and the parameter button disabled;
-    - 'expanded' (default): load the report with parameter panel open and the parameter button enabled;
+- `rdl:parameterPanel`
 
-**Device Info**
-You may specify additional output parameters for the following export formats. 
+Available values:
+- **collapsed**: loads the report with parameter panel closed. The parameter button is enabled so that users can select the button to expand.
+- **hidden**: loads the report with parameter panel closed and the parameter button disabled.
+- **expanded** (default): loads the report with parameter panel open and the parameter button enabled.
 
-PDF / ACCESSIBLEPDF:
+#### Device info
+You can specify additional output parameters for the following export formats. 
 
-- rdl:AccessiblePDF=true/false
-- rdl:Columns=integer
-- rdl:ColumnSpacing=decimal(in)
-- rdl:DpiX=integer
-- rdl:DpiY=integer
-- rdl:EndPage=integer
-- rdl:HumanReadablePDF=true/false
-- rdl:MarginBottom=decimal(in)
-- rdl:MarginLeft=decimal(in)
-- rdl:MarginRight=decimal(in)
-- rdl:MarginTop=decimal(in)
-- rdl:PageHeight=decimal(in)
-- rdl:PageWidth=decimal(in)
-- rdl:StartPage=integer
-    
-CSV:
-> [!NOTE]
-> For available *string* values below, reference [CSV Device Information Settings](/sql/reporting-services/csv-device-information-settings)
+- PDF / ACCESSIBLEPDF:
+    - rdl:AccessiblePDF=true/false
+    - rdl:Columns=integer
+    - rdl:ColumnSpacing=decimal(in)
+    - rdl:DpiX=integer
+    - rdl:DpiY=integer
+    - rdl:EndPage=integer
+    - rdl:HumanReadablePDF=true/false
+    - rdl:MarginBottom=decimal(in)
+    - rdl:MarginLeft=decimal(in)
+    - rdl:MarginRight=decimal(in)
+    - rdl:MarginTop=decimal(in)
+    - rdl:PageHeight=decimal(in)
+    - rdl:PageWidth=decimal(in)
+    - rdl:StartPage=integer
+   
+- CSV:
+    > [!NOTE]
+    > For these *string* values, reference [CSV device information settings](./device-info/csv-device-information-settings.md).
+    - rdl:Encoding=*string*
+    - rdl:ExcelMode=true/false
+    - rdl:FieldDelimiter=*string*
+    - rdl:NoHeader=true/false
+    - rdl:Qualifier=*string*
+    - rdl:RecordDelimiter=*string*
+    - rdl:SuppressLineBreaks=true/false
+    - rdl:UseFormattedValues=true/false
 
-- rdl:Encoding=*string*
-- rdl:ExcelMode=true/false
-- rdl:FieldDelimiter=*string*
-- rdl:NoHeader=true/false
-- rdl:Qualifier=*string*
-- rdl:RecordDelimiter=*string*
-- rdl:SuppressLineBreaks=true/false
-- rdl:UseFormattedValues=true/false
-    
-WORDOPENXML (WORD):
+- WORDOPENXML (WORD):
+    - rdl:AutoFit=string -> True/False/Never/Default
+    - rdl:ExpandToggles=true/false
+    - rdl:FixedPageWidth=true/false
+    - rdl:OmitDrillthroughs=true/false
+    - rdl:OmitHyperlinks=true/false
 
-- rdl:AutoFit=string -> True/False/Never/Default
-- rdl:ExpandToggles=true/false
-- rdl:FixedPageWidth=true/false
-- rdl:OmitDrillthroughs=true/false
-- rdl:OmitHyperlinks=true/false
+- EXCELOPENXML (EXCEL):
+    - rdl:OmitDocumentMap=true/false
+    - rdl:OmitFormulas=true/false
+    - rdl:SimplePageHeaders=true/false
 
-EXCELOPENXML (EXCEL):
+- PPTX (PowerPoint):
+     - rdl:Columns=integer
+    - rdl:ColumnSpacing=decimal(in)
+    - rdl:DpiX=integer
+    - rdl:DpiY=integer
+    - rdl:EndPage=integer
+    - rdl:MarginBottom=decimal(in)
+    - rdl:MarginLeft=decimal(in)
+    - rdl:MarginRight=decimal(in)
+    - rdl:MarginTop=decimal(in)
+    - rdl:PageHeight=decimal(in)
+    - rdl:PageWidth=decimal(in)
+    - rdl:StartPage=integer
+    - rdl:UseReportPageSize=true/false
 
-- rdl:OmitDocumentMap=true/false
-- rdl:OmitFormulas=true/false
-- rdl:SimplePageHeaders=true/false
-    
-PPTX (PowerPoint):
- 
-- rdl:Columns=integer
-- rdl:ColumnSpacing=decimal(in)
-- rdl:DpiX=integer
-- rdl:DpiY=integer
-- rdl:EndPage=integer
-- rdl:MarginBottom=decimal(in)
-- rdl:MarginLeft=decimal(in)
-- rdl:MarginRight=decimal(in)
-- rdl:MarginTop=decimal(in)
-- rdl:PageHeight=decimal(in)
-- rdl:PageWidth=decimal(in)
-- rdl:StartPage=integer
-- rdl:UseReportPageSize=true/false
+- XML:
+    - rdl:Encoding=string
+    - rdl:Indented=true/false
+    - rdl:OmitNamespace=true/false
+    - rdl:OmitSchema=true/false
+    - rdl:Schema=true/false
+    - rdl:UseFormattedValues=true/false
 
-XML:
-
-- rdl:Encoding=string
-- rdl:Indented=true/false
-- rdl:OmitNamespace=true/false
-- rdl:OmitSchema=true/false
-- rdl:Schema=true/false
-- rdl:UseFormattedValues=true/false
-
-**Open hyperlink in same browser window**
-You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report to make Power BI open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
+#### Open hyperlink in same browser window
+You can append `rdl:targetSameWindow=true` to the hyperlink URL in your report to make Power BI open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
 
 ## Next steps
 

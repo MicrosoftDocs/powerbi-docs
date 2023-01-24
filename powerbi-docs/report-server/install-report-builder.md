@@ -1,19 +1,19 @@
 ---
-title: "Install Report Builder - Power BI Report Server"
-description: This article explains how to download and install Report Builder for Power BI Report Server.
+title: "Install Microsoft Report Builder - Power BI Report Server"
+description: This article explains how to download and install Microsoft Report Builder for Power BI Report Server.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/07/2020
+ms.date: 01/19/2023
 ms.custom: intro-installation
 ---
 
-# Install Report Builder - Power BI Report Server
+# Install Microsoft Report Builder - Power BI Report Server
 
-Report Builder is a stand-alone app, installed on your computer by you or an administrator. You can install it from the Microsoft Download Center or from Power BI Report Server.  
+Microsoft Report Builder is a stand-alone app, installed on your computer by you or an administrator. You can install it from the Microsoft Download Center or from Power BI Report Server.  
 
 Looking for help with installing Report Builder for the Power BI service? See [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) instead.
   

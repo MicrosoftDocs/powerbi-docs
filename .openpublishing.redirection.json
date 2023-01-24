@@ -4835,6 +4835,11 @@
             "source_path": "powerbi-docs/enterprise/service-premium-capacity-scenarios.md",
             "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
             "redirect_document_id": false
-        }                                                                                                   
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-transition-gen1-to-gen2.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_document_id": false
+        }                                                                                                              
   ]           
 }

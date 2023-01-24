@@ -36,7 +36,6 @@ There are many uses for personal bookmarks. If you discover an interesting insig
 
 You can also create a collection of bookmarks, arrange them in the order you want, and then step through each bookmark in a presentation to highlight a series of insights that tell a story. This feature works like a slideshow, where you select an arrow to go forward or backward. There's a limit of 20 personal bookmarks per report.
 
-
 ### Open the Bookmarks pane
 
 To open the **Bookmarks** pane, select the :::image type="icon" source="media/end-user-bookmarks/power-bi-bookmark.png"::: and choose either **Add a personal bookmark** or **Show more bookmarks**.
