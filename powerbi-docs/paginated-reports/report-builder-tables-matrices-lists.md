@@ -3,7 +3,7 @@ title: "Tables, matrixes, and lists in Power BI Report Builder"
 description: Learn how to use tables, matrixes, and lists in Power BI Report Builder to display paginated report data in cells organized into rows and columns.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 01/13/2023
+ms.date: 01/24/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -15,15 +15,15 @@ ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
 
 In Report Builder, tables, matrixes, and lists are *data regions* that display paginated report data in cells that are organized into rows and columns. The cells typically contain data such as text, dates, and numbers but they can also contain gauges, charts, or report items such as images. Collectively, tables, matrixes, and lists are frequently referred to as *tablix* data regions.  
   
+The following picture shows simple reports with a table, matrix, or list.  
+
+![Screenshot of Report Builder table, matrix, and list reports.](media/report-builder-tables-matrices-lists/report-builder-table-matrix-list.png)
+  
 The table, matrix, and list templates are built on the tablix data region, which is a flexible grid that can display data in cells. In the table and matrix templates, cells are organized into rows and columns. Because templates are variations of the underlying generic tablix data region, you can display data in combination of template formats and change the table, matrix, or list to include the features of another data region as you develop your report. For example, if you add a table and find it doesn't serve your needs, you can add column groups to make the table a matrix.  
   
 The table and matrix data regions can display complex data relationships by including nested tables, matrixes, lists, charts, and gauges. Tables and matrixes have a tabular layout and their data comes from a single dataset, built on a single data source. The key difference between tables and matrixes is that tables can include only row groups, while matrixes have row groups and column groups.  
   
 Lists are a little different. They support a free-form layout that and can include multiple peer tables or matrixes, each using data from a different dataset. Lists can also be used for forms, such as invoices.  
-  
-The following picture shows simple reports with a table, matrix, or list.  
-
-![Screenshot of Report Builder table, matrix, and list reports.](media/report-builder-tables-matrices-lists/report-builder-table-matrix-list.png)
   
 ##  <a name="Table"></a> Tables  
 Use a table to display detail data, organize the data in row groups, or both. The table template contains three columns with a table header row and a details row for data. The following figure shows the initial table template, selected on the design surface:  
