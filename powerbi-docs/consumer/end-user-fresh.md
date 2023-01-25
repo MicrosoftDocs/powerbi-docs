@@ -39,15 +39,15 @@ It's less helpful to know which type of timestamp goes where, and more helpful t
 
 In a list of content in the Power BI service, there's an owner column and a timestamp column. The type of owner and timestamp depends on the content. The following example shows the Publisher name and Published date on the Apps page.
 
-:::image type="content" source="media/end-user-fresh/power-bi-app.png" alt-text="Screenshot showing a list of apps with a published date and publisher.":::
+:::image type="content" source="media/end-user-fresh/power-bi-app.png" alt-text="Screenshot showing a list of apps with a published date and publisher." lightbox="media/end-user-fresh/power-bi-app.png":::
 
 The next example shows the Owner of the content and the Shared date when you go to the Browse page and then the Shared with me tab.
 
-:::image type="content" source="media/end-user-fresh/power-bi-shared.png" alt-text="Screenshot showing shared with me screen. Shared date and owner are outlined.":::
+:::image type="content" source="media/end-user-fresh/power-bi-shared.png" alt-text="Screenshot showing shared with me screen. Shared date and owner are outlined." lightbox="media/end-user-fresh/power-bi-shared.png":::
 
 The final example shows a content list in a workspace. The Owner of the content, the Refreshed date, and the date of the Next refresh are listed.
 
-:::image type="content" source="media/end-user-fresh/power-bi-app-workspace-list.png" alt-text="Screenshot showing a workspace open to the content list. Refresh dates and owner are outlined.":::
+:::image type="content" source="media/end-user-fresh/power-bi-app-workspace-list.png" alt-text="Screenshot showing a workspace open to the content list. Refresh dates and owner are outlined." lightbox="media/end-user-fresh/power-bi-app-workspace-list.png":::
 
 The designer sets up the refresh schedule for content. Some content gets updates continually and other content might refresh daily, weekly, or not at all. Not all content is scheduled for refreshing, so you might see empty entries. If an error occurs during a refresh, an error icon appears in the timestamp column.
 
@@ -65,19 +65,19 @@ The dashboard title menu shows a contact, but not a timestamp. However, you can 
 
 1. View a tile in Focus mode to see the Last refresh timestamp. On a dashboard tile, select **More options** (...) and choose **Open in focus mode**.
 
-    ![Screenshot showing the menu that appears after selecting More options.](media/end-user-fresh/power-bi-fresh-focus.png)
+    :::image type="content" source="media/end-user-fresh/power-bi-fresh-focus.png" alt-text="Screenshot showing the menu that appears after selecting More options.":::
 
     The last refresh date is in the upper right corner. If you don't see it, expand your browser to make it wider.
 
-    ![Screenshot showing the last refresh date in wide browser view.](media/end-user-fresh/power-bi-last-refresh.png)
+    :::image type="content" source="media/end-user-fresh/power-bi-last-refresh.png" alt-text="Screenshot showing the last refresh date in wide browser view.":::
 
 2. Return to the dashboard, select **More actions (...)**, and then select **See related content** from the Power BI upper menu bar.
 
-    ![Screenshot showing See related content on the More options menu.](media/end-user-fresh/power-bi-see-related.png)
+    :::image type="content" source="media/end-user-fresh/power-bi-see-related.png" alt-text="Screenshot showing See related content on the More options menu.":::
 
     The **Related content** pane shows the last refresh information for the dashboard or report's underlying dataset.
 
-    ![Screenshot showing the last refresh date on the Related content pane.](media/end-user-fresh/power-bi-see-related-screen.png)
+    :::image type="content" source="media/end-user-fresh/power-bi-see-related-screen.png" alt-text="Screenshot showing the last refresh date on the Related content pane.":::
 
 ## Stay in sync with your content
 
