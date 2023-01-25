@@ -24,7 +24,7 @@ The following sections describe each error, and the steps to remedy them, in tur
 
 You might see the following error, indicating the credential type isn't supported:
 
-```text
+```output
 We are unable to connect because this credential type is not supported by this resource. Please choose another credential type.
 ```
 
