@@ -1,5 +1,5 @@
 ---
-title: "Get around Report Design View in Power BI Report Builder"
+title: "Get around Report Design View for paginated reports"
 description: Learn how to use the Report Design View in Report Builder to create paginated reports that you can publish in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 01/24/2023
 ---
 
-# Get around Report Design View in Power BI Report Builder
+# Get around Report Design View for paginated reports
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
@@ -83,18 +83,18 @@ The most commonly used properties are available in the dialog boxes and on the r
   
 Depending on the property, you can set a property value from a drop-down list, type the value, or select `<Expression>` to create an expression.  
   
-### Changing the Properties Pane view  
+### Changing the Properties pane view  
 By default, properties displayed in the Properties pane are organized into broad categories, such as Action, Border, Fill, Font, and General. Each category has a set of properties associated with it. For example, the following properties are listed in the Font category: *Color*, *FontFamily*, *FontSize*, *FontStyle*, *FontWeight*, *LineHeight*, and *TextDecoration*. If you prefer, you can alphabetize all the properties listed in the pane. This removes the categories and lists all the properties in alphabetical order, regardless of category.  
   
 The Properties pane has three buttons at the top of pane: **Category**, **Alphabetize**, and **Property Page**. Select the **Category** and **Alphabetize** buttons to switch between the Properties pane views. Select the **Property Pages** button to open the properties dialog box for a selected report item.  
   
 ## 5. Grouping pane
 
-Groups are used to organize your report data into a visual hierarchy and to calculate totals. You can view the row and column groups within a data region on the design surface and also in the Grouping pane. The Grouping pane has two areas: Row Groups and Column Groups. When you select a data region, the Grouping pane displays all the groups within that data region as a hierarchical list: Child groups appear indented under their parent groups.  
+Groups are used to organize your report data into a visual hierarchy and to calculate totals. You can view the row and column groups within a data region on the design surface and also in the Grouping pane. The Grouping pane has two areas: Row Groups and Column Groups. When you select a data region, the Grouping pane displays all the groups within that data region as a hierarchical list. Child groups appear indented under their parent groups.  
   
 You can create groups by dragging fields from the Report Data pane and dropping them on the design surface or in the Grouping pane. In the Grouping pane, you can add parent, adjacent, and child groups, change group properties, and delete groups.  
   
-The Grouping pane is displayed by default but you can close it by clearing the Grouping pane check box on the View tab. The Grouping pane isn't available for the Chart or Gauge data regions.  
+The Grouping pane is displayed by default but you can close it by clearing the Grouping pane check box on the View tab. The Grouping pane isn't available for the *Chart* or *Gauge* data regions.  
   
 For more information, see [Group visuals in Power BI Desktop reports](../create-reports/desktop-grouping-visuals.md).  
   
