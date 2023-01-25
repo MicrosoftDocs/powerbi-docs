@@ -41,7 +41,7 @@ To create a Power BI dataset from a SharePoint list:
     > [!NOTE]
     > If you see the following dialog before you get to the dataset details page, it means that you already have a connection to the SharePoint site under login credentials that may be different from the credentials of your current login.
     >
-    > :::image type="content" source="./media/create-dataset-sharepoint-online-list/choose-credentials-dialog.png" alt-text="Screenshot of previous connection notification.":::
+    > ![Screenshot of previous connection notification.](./media/create-dataset-sharepoint-online-list/choose-credentials-dialog.png)
     >
     > For more information, see [Choosing which credentials to authenticate with](#choosing-which-credentials-to-authenticate-with).
 
