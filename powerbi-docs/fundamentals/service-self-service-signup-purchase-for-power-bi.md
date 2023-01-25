@@ -63,7 +63,7 @@ You might already have access to Power BI. Perhaps your organization added you t
 
 Check to see if you can sign in. Open the Power BI service at [app.powerbi.com](https://app.powerbi.com). If Power BI opens, from the upper right corner, select the **Me** icon to see your current licenses.
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-licenses.png" alt-text="Screenshot of the Account drop down showing your license type.":::
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-licenses-new.png" alt-text="Screenshot of the Account drop down showing your license type.":::
 
 If you can't sign in to the Power BI service, or you want an alternate way to look up your Power BI licenses, open your Microsoft account at [myaccount.microsoft.com](https://myaccount.microsoft.com).
 
@@ -85,7 +85,7 @@ One of the ways to get an individual license is to sign up for a free trial of t
 
 To cancel a trial, select **Cancel trial** from the **Me** icon.
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-cancel-trials.png" alt-text="Screenshot of the Account drop down showing the Cancel trial option.":::
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-cancel-trials-new.png" alt-text="Screenshot of the Account drop down showing the Cancel trial option.":::
 
 ### Unable to sign-up or purchase Power BI
 
