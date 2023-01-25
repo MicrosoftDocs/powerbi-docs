@@ -8,7 +8,7 @@ ms.subservice: pbi-explore
 ms.reviewer: mihart
 ms.custom:  
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 01/25/2023
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
@@ -55,7 +55,7 @@ The designer sets up the refresh schedule for content. Some content gets updates
 
 In a report, there's an arrow on the title bar. Select the arrow to see contact information and a timestamp. Dashboards, worksheets, and scorecards show the owner but not a timestamp. Select the **Owner** or **Contact** link if you have questions or suggestions for the owner of the report.
 
-:::image type="content" source="media/end-user-fresh/power-bi-report-owner.png" alt-text="Screenshot showing the title menu on a report.":::
+:::image type="content" source="media/end-user-fresh/power-bi-report-contact.png" alt-text="Screenshot showing the title menu on a report.":::
 
 ## View dashboards
 
@@ -89,7 +89,7 @@ To be notified if data goes above or below a specified limit, [Create a data ale
 
 ## Subscribe to see changes
 
-Another way to stay up-to-date is to subscribe to a report or dashboard. Instead of logging in to view a report or dashboard, have a snapshot sent to you on a schedule that you set. For more information, see [subscribe to dashboards and reports](end-user-subscribe.md).
+Another way to stay up-to-date is to subscribe to a report or dashboard. Instead of logging in to view a report or dashboard, have a snapshot sent to you on a schedule that you set. For more information, see [subscribe to dashboards and reports](/power-bi/collaborate-share/end-user-subscribe).
 
 ## Considerations and limitations
 
