@@ -1,20 +1,19 @@
 ---
 title: "Associate a Query Parameter with a Report Parameter (Report Builder) for a Paginated Report | Microsoft Docs"
 description: Learn uses for Reporting Services report parameters, the properties you can set, and how to associate a dataset query parameter with a report parameter.
-ms.date: 03/01/2017
+ms.date: 01/25/2023
 ms.service: reporting-services
-ms.subservice: report-data
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
 helpviewer_keywords: 
   - "queries [Reporting Services], parameters"
   - "parameters [Reporting Services], queries"
-ms.assetid: 6d297e1a-ff71-472a-addc-349e863092b5
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Associate a Query Parameter with a Report Parameter (Report Builder and SSRS) for a Paginated Report
+# Associate a Query Parameter with a Report Parameter (Power BI Report Builder) for a Paginated Report
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
@@ -41,7 +40,7 @@ ms.author: maggies
 3.  Repeat step 2 for additional query parameters.  
   
 ## Next Steps
- [Report Embedded Datasets and Shared Datasets &#40;Report Builder and SSRS&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md)   
+ [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs)   
 
   
   
