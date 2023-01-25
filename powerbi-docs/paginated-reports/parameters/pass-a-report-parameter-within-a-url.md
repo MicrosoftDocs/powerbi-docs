@@ -1,7 +1,7 @@
 ---
 title: "Pass a Report Parameter Within a URL for a Paginated Report | Microsoft Docs"
 description: Learn how to pass report parameters directly to the report processing engine by including them in a report URL.
-ms.date: 03/01/2017
+ms.date: 01/25/2023
 ms.service: reporting-services
 ms.subservice: reporting-services
 
@@ -24,7 +24,7 @@ ms.author: maggies
 >   
 >  If you don't include the proxy syntax, then you need to prefix the parameter with *rp:*.  
   
- All query parameters can have corresponding report parameters. You pass a query parameter to a report by passing the corresponding report parameter. For more information, see [Build a Query in the Relational Query Designer &#40;Report Builder and SSRS&#41;](../reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs.md).  
+ All query parameters can have corresponding report parameters. You pass a query parameter to a report by passing the corresponding report parameter. For more information, see [Build a Query in the Relational Query Designer &#40;Power BI Report Builder&#41;](sql/reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs).  
   
 > [!IMPORTANT]
 >  Report parameters are case-sensitive.  
@@ -53,7 +53,7 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d
 To specify the same two parameters defined in a report in an app, you'd use the following URL:  
   
 ```  
-https://app.powerbi.com/groups/me/apps/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0/rdlreports/b1d5e659-639e-41d0-b733-05d2bca9853c?rp:Salesperson=Tiggee&rp:State=Utah 
+https://app.powerbi.com/groups/me/apps/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0/rdlreports/xxxxxxx-639e-41d0-b733-05d2bca9853c?rp:Salesperson=Tiggee&rp:State=Utah 
 ```  
   
  To pass a null value for a parameter, use the following syntax: 
@@ -83,7 +83,7 @@ The following URL example includes a multi-value parameter "Salesperson”. The 
 https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d?rp:Salesperson=Tie+Bear&rp:Salesperson=Mickey
 ```  
   
-The following URL example passes a single parameter of SellStartDate with a value of "7/1/2005", for a native mode report server.  
+The following URL example passes a single parameter of SellStartDate with a value of "7/1/2005".  
   
 ```  
 https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d?rp:SellStartDate=7/1/2005
