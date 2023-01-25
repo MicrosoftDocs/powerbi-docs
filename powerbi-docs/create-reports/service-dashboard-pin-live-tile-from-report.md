@@ -20,7 +20,7 @@ Another way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by p
 
 :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png" alt-text="Screenshot of live tile page pinned from the report." lightbox="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png":::
 
-Pinning live tiles from reports to dashboards is only available in the Power BI service (app.powerbi.com).
+Pinning live tiles from reports to dashboards is only available in the [Power BI service](app.powerbi.com).
 
 > [!NOTE]
 > You can't pin tiles from reports that are shared with you.
@@ -28,7 +28,7 @@ Pinning live tiles from reports to dashboards is only available in the Power BI 
 
 ## Pin a report page
 
-Watch Amanda pin a live report page to a dashboard and then follow the step-by-step instructions below the video to try it yourself.
+Watch Amanda pin a live report page to a dashboard and then follow the step-by-step instructions after the video to try it yourself.
 
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
@@ -38,12 +38,12 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 1. Open a report in [Editing view](service-interact-with-a-report-in-editing-view.md).
 2. With no visualizations selected, from the menu bar, select the **Pin** icon.
 
-   :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-pin.png" alt-text="Screenshot highlighting the Pin icon on the menu bar." lightbox="media/service-dashboard-pin-live-tile-from-report/pbi-pin.png":::
+   :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-pin.png" alt-text="Screenshot highlighting the Pin icon on the menu bar.":::
 
 3. Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
 
-   - **Existing dashboard**: select the name of the dashboard from the dropdown. Dashboards that have been shared with you won't appear in the dropdown.
-   - **New dashboard**: type the name of the new dashboard.
+   - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that were shared with you won't appear in the dropdown.
+   - **New dashboard**: Enter the name of the new dashboard.
 
      ![Screenshot showing the Pin to dashboard dialog.](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
 4. Select **Pin live**. A Success message (near the top right corner) lets you know the page was added as a tile to your dashboard.
