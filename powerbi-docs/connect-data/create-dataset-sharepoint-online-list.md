@@ -55,7 +55,7 @@ When you export a SharePoint list to Power BI, Power BI connects to the SharePoi
 
 If you get the following dialog, it means that you've already established a connection to the SharePoint site in the past. The credentials you used at that time may or may not be different than the credentials of your current sign in. You need to choose whether to continue using the existing sign-in details for the connection (Use existing Power BI credentials), or whether the connection should use your current sign-in credentials from now on (Replace with current app credentials).
 
-:::image type="content" source="{source}" alt-text="Screenshot showing choose credentials dialog.":::
+:::image type="content" source="./media/create-dataset-sharepoint-online-list/choose-credentials-dialog.png" alt-text="Screenshot showing choose credentials dialog.":::
 
 **Why is this important?**
 
