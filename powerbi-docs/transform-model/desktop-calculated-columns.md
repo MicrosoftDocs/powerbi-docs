@@ -18,7 +18,7 @@ Unlike custom columns that are created as part of a query by using **Add Custom 
 
 Calculated columns you create appear in the **Fields** list just like any other field, but they'll have a special icon showing its values are the result of a formula. You can name your columns whatever you want, and add them to a report visualization just like other fields.
 
-:::image type="content" source="/power-bi/transform-model/media/desktop-calculated-columns/calccolinpbid_fields.png)" alt-text="Screenshot of Power BI Desktop showing calculated columns in the Fields view.":::
+:::image type="content" source="/power-bi/transform-model/media/desktop-calculated-columns/calccolinpbid_fields.png" alt-text="Screenshot of Power BI Desktop showing calculated columns in the Fields view.":::
 
 Calculated columns calculate results by using DAX, a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs. It provides immense flexibility in creating formulas to calculate results for just about any data analysis need. To learn more about DAX, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
