@@ -12,7 +12,6 @@ ms.author: maggies
 ---
 # Add, change, or delete a map or map layer in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [ssrs-appliesto-pbi-rb](../../includes/ssrs-appliesto-pbi-rb.md)]
 
   A map is a collection of layers. When you add a map to a Power BI paginated report, you define the first layer. You can create additional layers by using the map layer wizard.  
   
@@ -37,8 +36,7 @@ ms.author: maggies
   
  For more information about layers, see [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md).  
   
-> [!NOTE]  
->  [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
+
   
 ##  <a name="AddLayer"></a> To add a layer from the map layer wizard  
   
