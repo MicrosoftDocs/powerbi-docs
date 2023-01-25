@@ -1,13 +1,13 @@
 ---
 title: "Set report views for paginated reports in the Power BI service"
-description: Learn about the different report views available for paginated reports in the Power BI service.
+description: Learn about the different report views, including the Print Layout view, available for paginated reports in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/27/2022
+ms.date: 01/25/2023
 ---
 
 # Set report views for paginated reports in the Power BI service
