@@ -30,17 +30,17 @@ To create a Power BI dataset from a SharePoint list:
 
 1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the SharePoint list and saved to My workspace. You can choose your own name and destination workspace.
 
-    :::image type="content" source="{source}" alt-text="Screenshot of a dialog where you name the dataset and choose a workspace.":::
+    :::image type="content" source="./media/create-dataset-sharepoint-onlilne-list/name-dataset-dialog.png" alt-text="Screenshot of a dialog where you name the dataset and choose a workspace.":::
 
     The dialog also shows the URL of the data source (SharePoint site) and name of the SharePoint list. To prevent inadvertently exposing sensitive data, make sure that you recognize the data source and are familiar with the data. Select **Review data** if you want to check the SharePoint list before allowing export to continue. For more information about when reviewing the data might be a good idea, see [Reviewing the SharePoint list data](#reviewing-the-sharepoint-list-data).
 
 1. Select **Continue**. Your dataset will be created, and you'll be taken to the [details page](./service-dataset-details-page.md) of the new dataset. From there you can do all the things you can do with a regular Power BI dataset - refresh the data, share the dataset, create new reports, and more. See [dataset details](./service-dataset-details-page.md) for more information.
 
-    :::image type="content" source="{source}" alt-text="Screenshot of the dataset details page of the newly created dataset.":::
+    :::image type="content" source="./media/create-dataset-sharepoint-onlilne-list/dataset-details-page.png" alt-text="Screenshot of the dataset details page of the newly created dataset.":::
 
     > [!NOTE]
     > If you see the following dialog before you get to the dataset details page, it means that you already have a connection to the SharePoint site under login credentials that may be different from the credentials of your current login.
-    > :::image type="content" source="{source}" alt-text="Screenshot of previous connection notification.":::
+    > :::image type="content" source="./media/create-dataset-sharepoint-onlilne-list/choose-credentials-dialog.png" alt-text="Screenshot of previous connection notification.":::
     > For more information, see [Choosing which credentials to authenticate with](#choosing-which-credentials-to-authenticate-with).
 
 ## Reviewing the SharePoint list data
