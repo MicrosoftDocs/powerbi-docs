@@ -1,26 +1,21 @@
 ---
-title: "Map Wizard and Map Layer Wizard (Report Builder) | Microsoft Docs"
-description: Find out how to automate creating a map, adding a map layer, or changing map layer options with the Map Wizards or Map Layer Wizard in Report Builder.
-ms.date: 03/14/2017
+title: "Map Wizard and Map Layer Wizard (Power BI Report Builder) | Microsoft Docs"
+description: Find out how to automate creating a map, adding a map layer, or changing map layer options with the Map Wizards or Map Layer Wizard in Power BI Report Builder.
+ms.date: 01/25/2023
 ms.service: reporting-services
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: reference
-f1_keywords: 
-  - "sql13.rtp.rptdesigner.mapandlayerwizard.f1"
-  - "10542"
-  - "MICROSOFT.REPORTDESIGNER.MAPLAYER.NAME"
-ms.assetid: 48cbe18b-1290-4107-8a1c-ec6acd71f73b
 author: maggiesMSFT
 ms.author: maggies
 ---
 # Map Wizard and Map Layer Wizard (Report Builder and SSRS)
- In [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] paginated reports, the Map Wizard and Map Layer Wizard automate the task of creating a map, adding a map layer, or changing map layer options on an existing layer.  
+ In Power BI paginated reports, the Map Wizard and Map Layer Wizard automate the task of creating a map, adding a map layer, or changing map layer options on an existing layer.  
   
  Before you add a map to a report or a map layer to a map, gather the following information:  
   
--   **Spatial data source.** The location or connection to a source that provides spatial data, for example, the name of a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] instance and a database that contains spatial data, or the name of an Environmental Systems Research Institute, Inc. (ESRI) Shapefile.  
+-   **Spatial data source.** The location or connection to a source that provides spatial data, for example, the name of a SQL Server instance and a database that contains spatial data, or the name of an Environmental Systems Research Institute, Inc. (ESRI) Shapefile.  
   
 -   **Spatial data.** From the spatial data source, a field that contains sets of coordinates that specify locations.  
   
@@ -30,7 +25,7 @@ ms.author: maggies
   
  The following sections provide information about options that you specify when in the Map and Map Layer Wizards.  
   
--   When you first open Report Builder, click the **Map** wizard icon in the center of the design surface.  
+-   When you first open Power BI Report Builder, click the **Map** wizard icon in the center of the design surface.  
   
 -   On the **Insert** tab, click **Map**, and then click **Map Wizard**.  
   
@@ -40,7 +35,7 @@ ms.author: maggies
   
  Click the title of the wizard page for the corresponding help content. The pages that you see vary depending on your choices for the type of map, the source of spatial data, and the source of analytical data.  
   
-1.  [Choose a source of spatial data](#SpatialDataSource). Spatial data can come from the map gallery, an Environmental Systems Research Institute, Inc. (ESRI) Shapefile, or from spatial data in a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] relational database.  
+1.  [Choose a source of spatial data](#SpatialDataSource). Spatial data can come from the map gallery, an Environmental Systems Research Institute, Inc. (ESRI) Shapefile, or from spatial data in a SQL Server relational database.  
   
     -   [What is spatial data?](#SpatialData)  
   
@@ -52,7 +47,7 @@ ms.author: maggies
   
     -   [What is a SQL Server spatial query?](#SqlServerSpatial)  
   
-2.  [Choose spatial data and map view options](#MapView). Set the map view, the map resolution, specify whether to embed spatial data in the report, and specify whether to include a tile background of [!INCLUDE[msCoName](../../includes/msconame-md.md)] Bing map tiles.  
+2.  [Choose spatial data and map view options](#MapView). Set the map view, the map resolution, specify whether to embed spatial data in the report, and specify whether to include a tile background of Microsoft Bing map tiles.  
   
     -   [What is the map view or viewport?](#Viewport)  
   
@@ -92,12 +87,12 @@ ms.author: maggies
   
     -   [What are rules?](#Rules)  
   
- After you add a map or map layer and preview the report, you can change map and map layer options that you set in the wizards. For more information, see [Customize the Data and Display of a Map or Map Layer &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs.md).  
+ After you add a map or map layer and preview the report, you can change map and map layer options that you set in the wizards. For more information, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs.md).  
   
- For more information about maps, see [Maps &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/maps-report-builder-and-ssrs.md). For step-by-step instructions to add a map to a report, see [Tutorial: Map Report &#40;Report Builder&#41;](../../reporting-services/tutorial-map-report-report-builder.md).  
+ For more information about maps, see [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md). For step-by-step instructions to add a map to a report, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder.md).  
   
 ##  <a name="SpatialDataSource"></a> Choose a source of spatial data  
- On this page, specify the spatial data source and which spatial data to include. Spatial data can come from the map gallery, an ESRI Shapefile, or a dataset query that specifies [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] spatial data from a [!INCLUDE[sql2008-md](../../includes/sql2008-md.md)] or later version database.  
+ On this page, specify the spatial data source and which spatial data to include. Spatial data can come from the map gallery, an ESRI Shapefile, or a dataset query that specifies SQL server spatial data.  
   
  You can use the same source or a different source of spatial data for each layer, but you must specify the source every time you add a layer. When the spatial data is from the map gallery or an ESRI Shapefile, the spatial data source is not a separate report item. It does not appear in the Report Data pane.  
   
@@ -110,31 +105,27 @@ ms.author: maggies
  The map gallery contains maps from reports that are located in the map gallery folder for the report authoring environment. Maps from the gallery provide a quick start to add a map to your report. The predefined maps in the gallery are provided by a map provider.  
   
 > [!NOTE]  
->  This [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] mapping feature uses data from TIGER/Line Shapefiles provided courtesy of the U.S. Census Bureau ([https://www.census.gov/](https://www.census.gov/)). TIGER/Line Shapefiles are an extract of selected geographic and cartographic information from the Census MAF/TIGER database. TIGER/Line Shapefiles are available without charge from the U.S. Census Bureau. To obtain more information about the TIGER/Line Shapefiles go to [TIGER/Line Shapefiles and TIGER/Line Files Technical Documentation](https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.html). The boundary information in the TIGER/Line Shapefiles are for statistical data collection and tabulation purposes only; their depiction and designation for statistical purposes does not constitute a determination of jurisdictional authority or rights of ownership or entitlement and they are not legal land descriptions. Census TIGER and TIGER/Line are registered trademarks of the U.S. Bureau of the Census.  
+>  This mapping feature uses data from TIGER/Line Shapefiles provided courtesy of the U.S. Census Bureau ([https://www.census.gov/](https://www.census.gov/)). TIGER/Line Shapefiles are an extract of selected geographic and cartographic information from the Census MAF/TIGER database. TIGER/Line Shapefiles are available without charge from the U.S. Census Bureau. To obtain more information about the TIGER/Line Shapefiles go to [TIGER/Line Shapefiles and TIGER/Line Files Technical Documentation](https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.html). The boundary information in the TIGER/Line Shapefiles are for statistical data collection and tabulation purposes only; their depiction and designation for statistical purposes does not constitute a determination of jurisdictional authority or rights of ownership or entitlement and they are not legal land descriptions. Census TIGER and TIGER/Line are registered trademarks of the U.S. Bureau of the Census.  
   
- To extend the map gallery, you can add or remove reports from the map gallery directory, and add folders to organize the maps. For more information, see [Maps &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/maps-report-builder-and-ssrs.md).  
+ To extend the map gallery, you can add or remove reports from the map gallery directory, and add folders to organize the maps. For more information, see [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md).  
   
 ###  <a name="Shapefile"></a> What is an ESRI shapefile?  
  An ESRI Shapefile is a set of files with data that conforms to the Environmental Systems Research Institute, Inc. (ESRI) shapefile spatial data format. The set of files typically includes the *\<filename>*.shp file that contains the spatial data and a support file, *\<filename>*.dbf.  
   
  When you specify a shape file as a spatial data source and it is located on your local computer, the spatial data is automatically embedded in the report. To use spatial data from an ESRI file dynamically, you must do the following:  
   
- In Report Builder, upload both the .shp file and the .dbf file to the same folder on a report server, and then link to the .shp file as the spatial data source.  
+ In Power BI Report Builder, upload both the .shp file and the .dbf file to the same folder on a report server, and then link to the .shp file as the spatial data source.  
   
- In Report Designer in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], add both the .shp file and the .dbf file to the report project, and then specify the name of the .shp file as the spatial data source.  
   
 ###  <a name="GetShapefiles"></a> Where can I get ESRI shapefiles?  
  ESRI shapefiles are available on the Web. For more information, see [Finding ESRI Shapefiles for a Map](https://go.microsoft.com/fwlink/?linkid=178814).  
   
 ###  <a name="SqlServerSpatial"></a> What is a SQL Server spatial query?  
- A [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] spatial query is a dataset query that specifies data that is either a SQLGeometry or a SQLGeography data type from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] relational database.  
-  
-> [!NOTE]  
->  When you define a data source in the wizard, you will see different query designers in the Design a Query page, depending on what type of data source you are connecting to. For more information, see [Query Design Tools &#40;SSRS&#41;](../report-data/query-design-tools-ssrs.md).  
-  
+ A SQL Server spatial query is a dataset query that specifies data that is either a SQLGeometry or a SQLGeography data type from a SQL Server relational database.  
+   
  When you run the query in the query designer, the result set displays a column with spatial data that appears as text. For example, one row might contain spatial data that is a single point and the next row might contain spatial data that defines a set of points. Each row becomes one map element. You can vary the display of each map element as an indivisible unit.  
   
- For more information, see [Spatial Data Types](../../relational-databases/spatial/spatial-data-types-overview.md).  
+ For more information, see [Spatial Data Types](/sql/relational-databases/spatial/spatial-data-types-overview.md).  
   
 ##  <a name="MapView"></a> Choose spatial data and map view options  
  On this page you can set the following options:  
@@ -147,7 +138,7 @@ ms.author: maggies
   
 -   For embedded data, specify whether to include all data or just the data in the current view.  
   
--   Specify whether to include a [!INCLUDE[msCoName](../../includes/msconame-md.md)] Bing map tiles background.  
+-   Specify whether to include a Microsoft Bing map tiles background.  
   
 ###  <a name="Viewport"></a> What is the map view or viewport?  
  The map viewport defines the map area to display for all layers in your report.  
@@ -181,9 +172,9 @@ ms.author: maggies
   
  For more information about tiles, see [Bing Maps Tiles System](/bingmaps/articles/bing-maps-tile-system). For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
   
- To see a tile background in Design view, you must have Internet access. To see the tile background in preview from a report on a report server, the report server must be configured to support Bing map tiles. For more information, see [Troubleshoot Reports: Map Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs.md) and [Plan a Map Report](../../reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs.md).  
+ To see a tile background in Design view, you must have Internet access. To see the tile background in preview from a report on a report server, the report server must be configured to support Bing map tiles. For more information, see [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder-and-ssrs.md) and [Plan a Map Report](plan-a-map-report-report-builder-and-ssrs.md).  
   
- For more information on other ways to customize a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
+ For more information on other ways to customize a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
   
 ##  <a name="Visualization"></a> Choose map visualization  
  On this page, choose the type of map or map layer to add to your report. The first time you run the wizard, you are adding the map and the first map layer to the report. A map can contain multiple map layers. Each map layer displays a specific type of spatial data: polygons, lines, or points.  
@@ -197,7 +188,7 @@ ms.author: maggies
   
  An **Analytical Map** conveys the relative value of one or more analytical data aggregates for each map element. For example, store sales as marker size, profit range for product categories as marker color, and top selling product as marker type.  
   
- For more information, see [Plan a Map Report &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs.md).  
+ For more information, see [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-a-map-report-report-builder-and-ssrs.md).  
   
 ##  <a name="AnalyticalData"></a> Choose the analytical dataset  
  On this page, specify where to get the analytical data to display on this map layer.  
@@ -241,10 +232,10 @@ ms.author: maggies
   
 -   **Points.** You can specify color, size, and marker type rules.  
   
- The report processor applies the rules that you set and automatically determines the list of items to display in a legend. By default, the results of all rules for all layers display in the first legend. You can adjust this after you complete the wizard. For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md).  
+ The report processor applies the rules that you set and automatically determines the list of items to display in a legend. By default, the results of all rules for all layers display in the first legend. You can adjust this after you complete the wizard. For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
-## See Also  
- [Troubleshoot Reports: Map Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs.md)   
- [Plan a Map Report &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs.md)   
- [Maps &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/maps-report-builder-and-ssrs.md)  
+## Next steps  
+ [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder-and-ssrs.md)   
+ [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-a-map-report-report-builder-and-ssrs.md)   
+ [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md)  
   
