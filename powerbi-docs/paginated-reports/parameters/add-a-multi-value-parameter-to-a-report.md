@@ -1,32 +1,31 @@
 ---
 title: "Add a multi-value parameter to a paginated report | Microsoft Docs"
 description: Learn how to add a parameter to a paginated report that allows the user to select more than one value for the parameter in Report Builder.
-ms.date: 03/07/2017
+ms.date: 01/25/2023
 ms.service: reporting-services
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
-ms.assetid: 12ad0e77-4c28-4bbb-ab11-473ae89ec9f1
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Add a multi-value parameter to a paginated report
+# Add a multi-value parameter to a Power BI paginated report
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  You can add a parameter to a paginated report that allows the user to select more than one value for the parameter.  
+  You can add a parameter to a Power BI paginated report that allows the user to select more than one value for the parameter.  
   
- You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](../../paginated-reports/parameters/pass-a-report-parameter-within-a-url.md).  
+ You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](pass-a-report-parameter-within-a-url.md).  
    
   
 ## To add a multi-value parameter  
   
-1.  In Report Builder, open the report that you want to add the multi-value parameter to.  
+1.  In Power BI Report Builder, open the report that you want to add the multi-value parameter to.  
   
 2.  Right-click the report dataset, and then click **Dataset Properties**  
   
-3.  Add a variable to the dataset query by either editing the query text in the **Query** box, or by adding a filter by using the query designer. For more information, see [Build a Query in the Relational Query Designer &#40;Report Builder and SSRS&#41;](../../reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs.md).  
+3.  Add a variable to the dataset query by either editing the query text in the **Query** box, or by adding a filter by using the query designer. For more information, see [Build a Query in the Relational Query Designer &#40;Power BI Report Builder&#41;](sql/reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs).  
   
     ```  
     WHERE  
@@ -48,10 +47,10 @@ ms.author: maggies
   
      An available values list limits the choices a user can make to only valid values for the parameter. For multiple values, the top of list begins with a **Select All** feature so the user can select or clear all values with a single click. If you choose to get the available values for the report parameter from a dataset query, be sure to select a dataset that does not contain the query variable that is associated with the same report parameter.  
   
-     For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md).  
+     For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-available-values-for-a-report-parameter.md).  
 
 ## Next Steps  
- [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../paginated-reports/parameters/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
- [Add, Change, or Delete a Report Parameter &#40;Report Builder and SSRS&#41;](../../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md)  
+ [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
+ [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-available-values-for-a-report-parameter.md)  
   
   
