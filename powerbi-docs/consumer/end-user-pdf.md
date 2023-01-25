@@ -8,7 +8,7 @@ ms.reviewer: mibruhjell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 01/25/2023
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -77,6 +77,8 @@ There are a few considerations and limitations to keep in mind when you work wit
 * Power BI visuals that have been certified are supported in most cases. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. In the PDF, they display with an error message.
 * Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
 * Reports larger than 500 MB currently can't be exported. 
+* If your report has a visual [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md), you won't have the option to export to PDF.
+* Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will be included in the export, but the visual will display in its default state, without the table.  
 * The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service or Power BI Desktop.
 * If the **Export to PDF** menu item isn't available in the Power BI service, it's likely because your Power BI administrator disabled the feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
