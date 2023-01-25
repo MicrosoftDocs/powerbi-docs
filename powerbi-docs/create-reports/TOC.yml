@@ -59,7 +59,11 @@
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
     - name: "Optimize ribbon in Power BI Desktop"
-      href: desktop-optimize-ribbon.md      
+      items:
+      - name: "Optimize ribbon overview"
+        href: desktop-optimize-ribbon.md
+      - name: "DirectQuery optimization scenarios"
+        href: desktop-optimize-ribbon-scenarios.md          
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -104,7 +108,7 @@
         href: power-bi-report-filter-types.md
       - name: "Slicers"
         href: ../visuals/power-bi-visualization-slicers.md
-      - name: "Numeric range slicers"
+      - name: "Numeric and date range slicers"
         href: desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
         href: ../visuals/desktop-slicer-filter-date-range.md
@@ -153,7 +157,7 @@
     - name: "Use inline hierarchy labels"
       href: desktop-inline-hierarchy-labels.md
     - name: "Restrict data access with row-level security"
-      href: desktop-rls.md
+      href: ../enterprise/service-admin-rls.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: "Add text boxes, shapes, and smart narratives"
       href: power-bi-reports-add-text-and-shapes.md
     - name: "Add a hyperlink to a text box"
@@ -550,6 +554,24 @@
       href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
+    - name: "Device information settings"  
+      items:
+      - name: Device information settings for rendering extensions
+        href: ../paginated-reports/device-info/device-information-settings-for-paginated-reports-rendering-extensions.md
+      - name: CSV device information settings
+        href: ../paginated-reports/device-info/csv-device-information-settings.md
+      - name: Excel device information settings
+        href: ../paginated-reports/device-info/excel-device-information-settings.md
+      - name: Word device information settings
+        href: ../paginated-reports/device-info/word-device-information-settings.md
+      - name: Image device information settings
+        href: ../paginated-reports/device-info/image-device-information-settings.md
+      - name: MHTML device information settings
+        href: ../paginated-reports/device-info/mhtml-device-information-settings.md
+      - name: PDF device information settings
+        href: ../paginated-reports/device-info/pdf-device-information-settings.md
+      - name: PPTX device information settings
+        href: ../paginated-reports/device-info/pptx-device-information-settings.md
   - name: "Deployment pipelines"  
     items:
     - name: "Introduction to deployment pipelines"

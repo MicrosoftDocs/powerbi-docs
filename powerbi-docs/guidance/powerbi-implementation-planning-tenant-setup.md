@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Tenant setup"
 description: "This article introduces important aspects to know about setting up your Power BI tenant."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

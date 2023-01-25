@@ -184,6 +184,7 @@ This tutorial barely scratches the surface of the options and capabilities for c
 - [Pandas API Reference](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
 - [Python visualizations in Power BI service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service)
 - [Using Python Visuals in Power BI ](https://www.absentdata.com/how-to-user-python-and-power-bi)
+- [Comprehensive Python Scripting Tutorial](https://www.janbasktraining.com/blog/python-scripting-tutorial/)
 
 For more information about Python in Power BI, see:
 

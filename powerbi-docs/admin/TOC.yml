@@ -78,7 +78,7 @@
       expanded: false
       items:
       - name: Help and support settings
-        href: /power-bi/support/service-admin-portal-help-support
+        href: service-admin-portal-help-support.md?toc=/power-bi/admin/TOC.json&bc=/power-bi/admin/breadcrumb/toc.json       
       - name: Workspace settings
         href: service-admin-portal-workspace.md       
       - name: Information protection
