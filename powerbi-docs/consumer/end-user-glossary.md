@@ -279,8 +279,8 @@ The location in the service where messages are delivered to users, such as notic
 
 ## O
 
-**OneDrive for Business** vs **OneDrive**    
-OneDrive is a personal account and OneDrive for Business is for work accounts.  
+**OneDrive for work or school** vs **OneDrive**    
+OneDrive is a personal account and OneDrive for work or school is for work accounts.  
 
 **On-premises**    
 The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.

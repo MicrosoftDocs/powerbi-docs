@@ -1,5 +1,5 @@
 ---
-title: Use a relative time slicer or filter in Power BI
+title: Create a relative time slicer or filter in Power BI
 description: Learn how to use a slicer or filter to constrain relative time ranges in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 01/13/2023
 LocalizationGroup: Create reports
 ---
 
-# Use a relative time slicer and filter in Power BI
+# Create a relative time slicer and filter in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -42,9 +42,9 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 ### Set relative time
 
-1. Change the filter type to **Relative Time**.
+1. Select the slicer, and in the **Format** pane, under **Visual** > **Slicer settings** > **Options**, change the **Style** to **Relative Time**.
 
-   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Screenshot showing a filter type with Relative Time selected.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer-set.png" alt-text="Screenshot showing the slicer with the Format pane and Relative Time selected.":::
 
    Here’s how it looks in a slicer:
 

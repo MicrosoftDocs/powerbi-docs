@@ -7,7 +7,7 @@ ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 12/14/2022
+ms.date: 1/4/2023
 ---
 
 # Create and use the paginated report visual
@@ -105,8 +105,8 @@ You can decide whether report filters are automatically applied to the paginated
 - When connecting fields to a paginated report parameter, double-check whether the field values are used as is, in other words, **Don't summarize**, or as aggregates (for example, Sum, Average, and so on). You can use the **Show as a table** option from the context menu of the paginated report visual to see the actual values being passed to paginated reports during runtime. 
 - You can map an aggregate field in Power BI such as Sum, Average, Minimum, or Maximum to a paginated report parameter. If you do, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used. If mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
 - When embedding a Power BI report that contains a paginated report visual, using the *embed for your customers* method, you need a service principal and a multi-resource embed token as explained in [How to embed a Power BI report that contains a paginated report visual](../developer/embedded/embedded-faq.yml#how-can-i-embed-a-power-bi-report-that-contains-a-paginated-report-visual-).
-- The paginated report visual isn't supported for Power BI report subscription or export. You can open the underlying paginated report itself and create a subscription to it, as explained in [Subscribe to paginated reports](../consumer/end-user-subscribe.md?#subscribe-to-paginated-reports).
-- The paginated report visual has a built-in 30,000-value data reduction limit. If any field used in the visual contains more than 30,000 values, a data reduction algorithm kicks in and drops the rows that are above the limit. As a result, the paginated report may show incorrect results due to missing data from report parameters. To work around this, try to use filters to filter out unnecessary values, or map the report parameters to fields with fewer values.
+- The paginated report visual isn't supported for Power BI report subscription or export. You can open the underlying paginated report itself and create a subscription to it, as explained in [Subscribe to paginated reports](/power-bi/collaborate-share/end-user-subscribe#subscribe-to-paginated-reports).
+- The paginated report visual has a built-in 30,000-value data reduction limit due to the [Power BI visual maximum of 30,000](../visuals/power-bi-data-points.md?#power-bi-visuals). If any field used in the visual contains more than 30,000 values, a data reduction algorithm kicks in and drops the rows that are above the limit. As a result, the paginated report may show incorrect results due to missing data from report parameters. To work around this, try to use filters to filter out unnecessary values, or map the report parameters to fields with fewer values.
 - The duration of the paginated report session is capped by the expiration time of your access token. Currently there's no support to automatically refresh the token. After the session expires, a dialog prompts you to refresh the visual and start a new rendering session.
 
 ### Using a Power BI dataset with a date parameter

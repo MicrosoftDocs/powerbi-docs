@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/12/2022
+ms.date: 01/24/2023
 LocalizationGroup: Share your work
 ---
 # Export a report to PowerPoint
@@ -101,7 +101,8 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * The following visual types are not supported, and will not be exported to PowerPoint:
    - [Custom visuals that haven't been certified](../developer/visuals/power-bi-custom-visuals-certified.md)) aren't supported. 
-   - R, Python, Power Apps, Power Automate, Visio, [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md), and paginated report visuals aren't currently supported. 
+   - R, Python, Power Apps, Power Automate, Visio, [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md), and paginated report visuals aren't currently supported.
+   - Visuals [displayed as a Data point table](../create-reports/desktop-see-data-see-records.md) aren't supported.   
    - Visuals in a drill down state will be exported in their default state. 
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 

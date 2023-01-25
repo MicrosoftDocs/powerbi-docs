@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 01/19/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
+
+Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
 
 For related "What's New" information, see:
 
@@ -21,6 +23,10 @@ For related "What's New" information, see:
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## December 2022
+
+### Support for linked metrics
+
+The Power BI mobile apps now support linked metrics. Linked metrics are metrics that are connected to multiple scorecards. All check-ins and updates to linked metrics are reflected everywhere the metric appears. Linked metrics make it easier to avoid creating duplicate metrics tracking the same thing. [Learn more about linked metrics](../../create-reports/service-metrics-linked-metrics.md)
 
 ### Track your metrics on the Windows app
 
@@ -48,7 +54,7 @@ Have a link to an app you don't have access to? Now you can request access direc
 
 ### Portrait view now fully supported in Report Server
 
-Now your non-mobile-optimized report pages hosted on Report Server will open no matter which way you're holding your phone - you no longer have to tip your phone on it's side to view such reports. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small landscape view of report. To get a larger view, either tilt your phone to the side, or just use pinch and zoom to zoom in on the area of the report you're interested in.
+Now your non-mobile-optimized report pages hosted on Report Server will open no matter which way you're holding your phone - you no longer have to tip your phone on its side to view such reports. If you're holding your phone in portrait orientation when you come to such a page, you'll see a small landscape view of report. To get a larger view, either tilt your phone to the side, or just use pinch and zoom to zoom in on the area of the report you're interested in.
 
 ## September 2022
 

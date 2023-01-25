@@ -14,7 +14,7 @@ ms.custom: known-issue-290
 
 You may see a warning message telling you to upgrade to a Premium workspace even though you already have a Premium workspace. You can ignore the message when editing, saving, or refreshing a dataflow.
 
-**APPLIES TO:** ✔️ Power BI Service ✔️ Dataflow
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Service :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Dataflow
 
 **Status:** Open
 
