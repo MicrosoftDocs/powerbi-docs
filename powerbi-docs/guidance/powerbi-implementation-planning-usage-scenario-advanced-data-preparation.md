@@ -174,7 +174,7 @@ When using linked tables or computed tables, make sure that each workspace is as
 There are two important settings to manage in the Admin portal:
 
 - **Azure connections:** The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to set up a connection to an ADLS Gen2 account. This setting allows a Power BI administrator to *bring your own data lake* to dataflows. Once configured, [workspaces can use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level) for storage.
-- **Workspace-level storage:** A Power BI administrator can set workspace-level storage permissions. When enabled, the setting allows [workspace administrators to use a different storage account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-leve) to the one set at tenant-level. Enabling this setting is helpful for decentralized business units that manage their own data lake in Azure.
+- **Workspace-level storage:** A Power BI administrator can set workspace-level storage permissions. When enabled, the setting allows [workspace administrators to use a different storage account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level) to the one set at tenant-level. Enabling this setting is helpful for decentralized business units that manage their own data lake in Azure.
 
 ### Gateway setup
 
