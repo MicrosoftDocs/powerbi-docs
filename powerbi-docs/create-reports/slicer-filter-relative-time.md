@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 01/24/2023
 LocalizationGroup: Create reports
 ---
 
@@ -56,11 +56,11 @@ After you've enabled the feature, you can drag and drop the date or time field t
 
 1. With this new filter type, you can filter based on a time period of **Last**, **Next**, or **This**:
 
-   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot showing a filter card's time period options.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot showing time period options for a filter card.":::
 
 1. You specify the time window using a whole number and a unit of time: **Minutes** or **Hours**.
 
-   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Screenshot showing a filter card's time window options.":::
+   :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Screenshot showing time window options for a filter card.":::
 
 1. If you need to save space on the canvas, you can also create the relative time filter as a filter card in the **Filters** pane.
 
