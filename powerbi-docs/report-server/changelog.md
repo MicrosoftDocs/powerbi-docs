@@ -30,7 +30,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed input of date in date slicer in PBIX reports
             
 - **Power BI Desktop (optimized for Power BI Report Server)**   
-    - *Version:* *2.112.1421.0* *(January 2023), Released: January 24, 2023*   
+    - *Version: 2.112.1421.0 (January 2023), Released: January 24, 2023*   
         - Support for January 2023 Power BI Report Server
         - Bug fixes
 
