@@ -29,7 +29,7 @@ To get insights about collaboration in Microsoft Teams, follow these steps.
     :::image type="content" source="media/business-user-teams-collaboration-data/teams-power-bi-create-analyze-teams.png" alt-text="Screenshot of the Power BI app for Microsoft Teams with Analyze your Teams data highlighted.":::
 
 1. Explore your usage in the automatically generated report.
-1. Explore engagement in the team you participate.
+1. Explore engagement in the teams you participate in.
 
 The report is saved in your Power BI account and stays refreshed. You can keep coming back every few days to see how actions you take effective the trends. When working in a team, it’s great to discuss the data and ways to improve.
 
