@@ -185,7 +185,7 @@ Before you embed your content, make sure you have all the values listed below. S
 |[Workspace ID](#workspace-id)     |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Report ID](#report-id)           |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Client secret](#client-secret) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
-|[Tenant ID](#tenant-id)                 |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
+|[Tenant ID](#tenant-id)                 |![Applies to.](../../media/yes.png) | required only for Node JS |
 |[Power BI username](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Power BI password](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 

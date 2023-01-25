@@ -7,10 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2022
+ms.date: 01/19/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
+
+Power BI Mobile app versions are released on a monthly cadence. The latest version contains not only new features, but also bug fixes.
 
 For related "What's New" information, see:
 

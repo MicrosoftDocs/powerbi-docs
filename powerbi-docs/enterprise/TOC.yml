@@ -55,7 +55,7 @@
     - name: Power BI in China
       href: regions-power-bi-china-cloud.md
     - name: Move between regions
-      href: ../admin/service-admin-region-move.md
+      href: /power-bi/support/service-admin-region-move
   - name: Premium
     expanded: false
     items:
@@ -71,8 +71,6 @@
         href: service-admin-premium-purchase.md   
       - name: Purchase Power BI Premium for testing
         href: service-admin-premium-testing.md                    
-      - name: Plan your transition to Power BI Premium Gen2
-        href: service-premium-transition-gen1-to-gen2.md           
       - name: Managing Premium Gen2 capacities
         href: service-premium-capacity-manage-gen2.md
       - name: Configure and manage capacities
@@ -176,7 +174,18 @@
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md
     - name: Customer Lockbox for Power BI
-      href: service-admin-power-bi-security-lockbox.md                 
+      href: service-admin-power-bi-security-lockbox.md   
+  - name: Power BI Scale-Out
+    expanded: false
+    items:
+    - name: Power BI Dataset Scale-Out
+      href: service-premium-scale-out.md
+    - name: Test Power BI Dataset Scale-Out
+      href: service-premium-scale-out-test.md
+    - name: Sync a read-only scale-out replica   
+      href: service-premium-scale-out-sync-replica.md  
+    - name: Compare scale-out dataset copies      
+      href: service-premium-scale-out-app.md                     
   - name: Automation tools
     expanded: false
     items:
@@ -186,5 +195,4 @@
       href: service-admin-reference.md
     - name: Power BI cmdlets for PowerShell
       href: /powershell/power-bi/
-      maintainContext: true
-      
+      maintainContext: true          
