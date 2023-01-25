@@ -118,7 +118,7 @@ Your message appears as part of the meeting chat. Attendees can open it to see t
 1. Open the meeting chat.
 1. Select **Messaging extensions (...)**.
 
-    :::image type="content" source="media/business-user-teams-meetings/teams-chat-meeting-messaging-extensions.png" alt-text="Screenshot of the chat pane in Teams with the Messaging extensions icon highlighted":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-chat-meeting-messaging-extensions.png" alt-text="Screenshot of the chat pane in Teams with the Messaging extensions icon highlighted.":::
 
 1. Select **Power BI**.
 1. Search for content, or select from your list of recent items.
@@ -129,7 +129,7 @@ Your message appears as part of the meeting chat. Attendees can open it to see t
 
 1. Select **Open**.
 
-    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-chat-open.png" alt-text="Screenshot of the chat pane in Teams with a message showing an Open icon highlighted":::
+    :::image type="content" source="media/business-user-teams-meetings/teams-power-bi-meeting-chat-open.png" alt-text="Screenshot of the chat pane in Teams with a message showing an Open icon highlighted.":::
 
 ## After the meeting
 
