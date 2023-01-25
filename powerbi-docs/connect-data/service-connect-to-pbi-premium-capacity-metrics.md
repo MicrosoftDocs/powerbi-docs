@@ -62,7 +62,7 @@ After you've installed the app and connected to the data sources, you can custom
 
    :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-microsoft-login.png" alt-text="Screenshot of the Microsoft pick an account dialog.":::
 
-   After you're signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns on.
+   After you're signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns.
 
    :::image type="content" source="media/service-connect-to-pbi-premium-capacity-metrics/refresh-is-in-progress.png" alt-text="Screenshot of the banner showing refresh is in progress highlighted." lightbox="media/service-connect-to-pbi-premium-capacity-metrics/refresh-is-in-progress.png":::
 
