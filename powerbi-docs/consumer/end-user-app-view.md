@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 01/25/2023
 ms.custom: licensing support, intro-installation
 LocalizationGroup: Share your work
 ---
