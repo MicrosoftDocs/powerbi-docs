@@ -47,7 +47,7 @@ The following table describes the permissions for ADLS and for Power BI required
 |Create Power BI dataflows writing back to connected ADLS account     | Not applicable        | Workspace contributor         |
 |Consume Power BI dataflow     | Not applicable        | Workspace viewer        |
 
-## Connecting to an Azure Data Lake Gen 2 at a workspace level
+## Connect to an Azure Data Lake Gen 2 at a workspace level
 
 Navigate to a workspace that has no dataflows. Select **Workspace settings**. Choose the **Azure Connections** tab and then select the **Storage** section.
 
@@ -64,7 +64,7 @@ When you select **Connect to Azure**, Power BI retrieves a list of Azure subscri
 
 After you choose your selected, select **Save** and you now have successfully connected the workspace to your own ADLS Gen2 account. Power BI automatically configures the storage account with the required permissions, and sets up the Power BI filesystem where the data will be written. At this point, every dataflow’s data inside this workspace will write directly to this filesystem, which can be used with other Azure services. You now have a single source for all of your organizational or departmental data.
 
-## Understanding configuration
+## Azure connections configuration
 
 Configuring Azure connections is an optional setting with more properties that can optionally be set:
 
@@ -77,7 +77,7 @@ You can optionally, or additionally, configure workspace-level storage permissio
 
 To summarize, if tenant-level storage and workspace-level storage permissions are allowed, then workspace admins can optionally use the default ADLS connection, or opt to configure another storage account separate from the default. If tenant storage isn't set, then workspace admins can optionally configure ADLS accounts on a workspace by workspace basis. Finally, if tenant-level storage is selected and workspace-level storage isn't allowed, then workspace admins can optionally configure their dataflows to use this connection.
 
-## Understanding the structure and format for ADLS Gen 2 workspace connections  
+## Structure and format for ADLS Gen 2 workspace connections  
 
 In the ADLS Gen 2 storage account, all dataflows are stored in the **powerbi** container of the filesystem.
 
@@ -114,15 +114,15 @@ The storage structure adheres to the Common Data Model format. Learn more about 
 
 After it's properly configured, the data and metadata is in your control. Many applications are aware of the CDM and the data can be extended by using Azure, PowerApps, and PowerAutomate. You can also use third-party ecosystems either by conforming to the format or by reading the raw data.
 
-## Detaching Azure Data Lake Gen 2 from a workspace or tenant
+## Detach Azure Data Lake Gen 2 from a workspace or tenant
 
 To remove a connection at a workspace level, you must first ensure all dataflows in the workspace are deleted. After all the dataflows have been removed, select **Disconnect** in the workspace settings. The same applies for a tenant, but you must first ensure all workspaces have also been disconnected from the tenant storage account before you're able to disconnect at a tenant level.
 
-## Disabling Azure Data Lake Gen 2
+## Disable Azure Data Lake Gen 2
 
 In the **Admin portal**, under **dataflows**, you can disable access for users to either use this feature, and can disallow workspace admins to bring their own Azure Storage.
 
-## Reverting from Azure Data Lake Gen 2
+## Revert from Azure Data Lake Gen 2
 
 After the dataflow storage has been configured to use Azure Data Lake Gen 2, there's no way to automatically revert. The process to return to Power BI-managed storage is manual.
 
@@ -138,7 +138,7 @@ To revert the migration that you made to Gen 2, you need to delete your dataflow
 
 5. Configure refresh/recreate incremental refresh policies.  
 
-## Connecting to the data by using the ADLS Gen 2 connector  
+## Connect to the data by using the ADLS Gen 2 connector  
 
 The scope of this document describes ADLS Gen 2 dataflows connections and not the Power BI ADLS Gen 2 connector. Working with the ADLS Gen 2 connector is a separate, possibly additive, scenario. The ADLS connector simply uses ADLS as a datasource. So using Power Query Online to query against that data doesn’t have to be in CDM format, it can be whatever data format the customer wants. For more information, see [Azure Data Lake Storage Gen2](/power-query/connectors/datalakestorage).
 
