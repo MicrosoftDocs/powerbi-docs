@@ -20,7 +20,7 @@ A Power BI report is always bound to a single data source. However, a paginated 
 
 ## Token considerations
 
-There are some special considerations when generating an embed token for a paginated report with an [Embed for your customers](../developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) solution. If the paginated report has one or more Power BI datasets configured as its data sources, you must create a [GenerateTokenRequestV2Dataset](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) object for each dataset, with the following parameters:
+There are some special considerations when generating an embed token for a paginated report with an [Embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) solution. If the paginated report has one or more Power BI datasets configured as its data sources, you must create a [GenerateTokenRequestV2Dataset](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) object for each dataset, with the following parameters:
 
 * `xmlaPermissions` must be set to `ReadOnly`
 
