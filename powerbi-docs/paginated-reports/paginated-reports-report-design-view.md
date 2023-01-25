@@ -16,7 +16,7 @@ ms.date: 01/24/2023
 
 Report Design View in Power BI Report Builder is the design space for creating paginated reports that you can publish to the Power BI service. The design surface is at the center of Report Builder, with the ribbon and panes around it. The design surface is where you add and organize your report items. This article explains the panes you use to add, select, and organize your report resources, and change report item properties.  
 
-![Screenshot of the Report Builder Report Design View.](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
+[ ![Screenshot of the Report Builder Report Design View.](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png#lightbox)
 
 1. [Report Data pane](#1-report-data-pane) 
 2. [Report design surface](#2-report-design-surface)  
@@ -70,7 +70,7 @@ These properties are displayed in the Properties pane. The properties in the pan
   
 - To see the Properties pane, on the **View** tab in the **Show/Hide** group > **Properties**.  
   
-### Changing property values  
+### Change property values  
 In Report Builder, you can change the properties for report items several ways:  
   
 - By selecting buttons and lists on the ribbon.  
@@ -81,9 +81,9 @@ In Report Builder, you can change the properties for report items several ways:
   
 The most commonly used properties are available in the dialog boxes and on the ribbon.  
   
-Depending on the property, you can set a property value from a drop-down list, type the value, or select `<Expression>` to create an expression.  
+Depending on the property, you can set a property value from a dropdown, type the value, or select `<Expression>` to create an expression.  
   
-### Changing the Properties pane view  
+### Change the Properties pane view  
 By default, properties displayed in the Properties pane are organized into broad categories, such as Action, Border, Fill, Font, and General. Each category has a set of properties associated with it. For example, the following properties are listed in the Font category: *Color*, *FontFamily*, *FontSize*, *FontStyle*, *FontWeight*, *LineHeight*, and *TextDecoration*. If you prefer, you can alphabetize all the properties listed in the pane. This removes the categories and lists all the properties in alphabetical order, regardless of category.  
   
 The Properties pane has three buttons at the top of pane: **Category**, **Alphabetize**, and **Property Page**. Select the **Category** and **Alphabetize** buttons to switch between the Properties pane views. Select the **Property Pages** button to open the properties dialog box for a selected report item.  
@@ -94,7 +94,7 @@ Groups are used to organize your report data into a visual hierarchy and to calc
   
 You can create groups by dragging fields from the Report Data pane and dropping them on the design surface or in the Grouping pane. In the Grouping pane, you can add parent, adjacent, and child groups, change group properties, and delete groups.  
   
-The Grouping pane is displayed by default but you can close it by clearing the Grouping pane check box on the View tab. The Grouping pane isn't available for the *Chart* or *Gauge* data regions.  
+The Grouping pane is displayed by default but you can close it by clearing the Grouping pane checkbox on the View tab. The Grouping pane isn't available for the *Chart* or *Gauge* data regions.  
   
 For more information, see [Group visuals in Power BI Desktop reports](../create-reports/desktop-grouping-visuals.md).  
   
