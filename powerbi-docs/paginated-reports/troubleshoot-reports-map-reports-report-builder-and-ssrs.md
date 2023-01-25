@@ -1,28 +1,20 @@
 ---
-title: "Troubleshoot reports: map reports in a paginated report | Microsoft Docs"
-description: Explore troubleshooting ideas for situations that can result when you customize, add a layer, or publish a paginated report with a map in Report Builder.
-ms.date: 07/22/2020
+title: "Troubleshoot reports: map reports in a Power BI paginated report | Microsoft Docs"
+description: Explore troubleshooting ideas for situations that can result when you customize, add a layer, or publish a paginated report with a map in Power BI Report Builder.
+ms.date: 01/25/2023
 ms.service: reporting-services
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
-ms.assetid: a690aec2-056b-40bc-8cab-c694bd2d6d62
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Troubleshoot reports: map reports in a paginated report (Report Builder)
+# Troubleshoot reports: map reports in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-ssrs-rb](../../includes/ssrs-appliesto-ssrs-rb.md)] [!INCLUDE [ssrs-appliesto-pbi-rb](../../includes/ssrs-appliesto-pbi-rb.md)] [!INCLUDE [ssrb-applies-to-ssdt-yes](../../includes/ssrb-applies-to-ssdt-yes.md)]
 
-  Issues with maps in a paginated report might occur when you add a map or map layer to your report, when you customize an existing map or map layer in your report, when you preview a map in a report, or when you publish a report with a map. Use this topic to help troubleshoot these issues.  
+  Issues with maps in a Power BI paginated report might occur when you add a map or map layer to your report, when you customize an existing map or map layer in your report, when you preview a map in a report, or when you publish a report with a map. Use this topic to help troubleshoot these issues.  
     
-   ## Need more help?  
-   
-  Try:  
- * [SQL Server Reporting Services](https://stackoverflow.com/questions/tagged/reporting-services) on Stack Overflow  
- * Share [ideas for SQL](https://feedback.azure.com/forums/908035-sql-server).  
-
   
 ##  <a name="Embedded"></a> Report Definition Size Issues  
  Use this section to help solve issues that relate to report definition size.  
@@ -141,7 +133,7 @@ ms.author: maggies
     >  You can toggle visibility for each layer in the Map pane. When you are designing each layer, toggle all other layers off to determine whether the issue is for an individual layer or is for transparency issues among layers.  
   
 ## I set a filter on the map layer and it has no effect.  
- To filter data for a layer, the data type in the filter expression must be specified. Verify that you have specified the correct underlying data type so that the filter equation correctly evaluates the specified condition. For more information, see [Filter Equation Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs.md).  
+ To filter data for a layer, the data type in the filter expression must be specified. Verify that you have specified the correct underlying data type so that the filter equation correctly evaluates the specified condition. For more information, see [Filter Equation Examples &#40;Power BI Report Builder&#41;](filter-equation-examples-report-builder-and-ssrs.md).  
   
 ##  <a name="Legend"></a> Legend, Color Scale, and Rule Issues  
  Use this section to help solve issues that relate to rules, legend, and color scale options.  
@@ -155,7 +147,7 @@ ms.author: maggies
   
  To control the title and content for each legend, use the Legend properties for the rule. You can specify how many divisions to create, change the calculations that assign values to each division, set minimum and maximum range values, and change the format of the legend text.  
   
- For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs.md).  
+ For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs.md).  
   
 ## The rules that I set do not give the results that I expect.  
  Rules apply to the analytical data that is associated with map elements on a layer. Use the following list to help identify issues with all color rules, size rules, width rules, and marker type rules:  
@@ -164,7 +156,7 @@ ms.author: maggies
   
 -   Match field issues. Match fields enable data binding between map elements and analytical data. The spatial data and analytical data fields that correspond to match fields must have the same data type and the same format. If the match field does not exactly match the spatial data and analytical data, the rule has no effect. For example, if the match field for spatial data has extra blanks or extra punctuation compared to the match field for the analytical data, no match occurs.  
   
--   For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md).  
+-   For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
 ## What is the value NaN on the Color Scale?  
  **NaN** stands for Not a Number. Color scales values are expected to be numeric. Check the distribution settings and the legend text value for the rules that are associated with the color scale. If you created custom distribution ranges, verify that you specified the lower bound on the first range and the upper bound on the last range.  
@@ -172,7 +164,7 @@ ms.author: maggies
 ## My color scale does not appear when I run the report.  
  The color scale displays information to the user when a map layer specifies color rules for polygons, lines, or points for the whole layer or for embedded map elements. If no map element specifies a color rule, or if the color rules specify by using a legend instead of the color map, then the color map does not appear in the rendered report.  
   
- To display the color scale, specify color rules for a layer or an embedded map element. For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs.md).  
+ To display the color scale, specify color rules for a layer or an embedded map element. For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs.md).  
   
 ##  <a name="Tile"></a> Tile Issues  
  Use this section to help solve issues that relate to tile background options.  
@@ -188,7 +180,7 @@ ms.author: maggies
   
 -   For local preview, you must have internet access. For a report that runs from the report server, the report server must be configure to support tile background. For more information, see [Plan a Map Report](plan-a-map-report-report-builder-and-ssrs.md).  
   
- For more information about adding a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
+ For more information about adding a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
   
 ## How do I control the text on a tile layer?  
  Both **Road** and **Hybrid** views include text. The text is part of the tiles that come from Bing Maps Web Services.  
@@ -203,8 +195,7 @@ ms.author: maggies
   
  To specify data that is related to spatial data that is not part of a report dataset, you must use the symbol # followed by a label that specifies the name of the data.  
   
-## See Also  
- [Maps &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/maps-report-builder-and-ssrs.md)   
- [Troubleshoot Report Builder](/previous-versions/sql/2014/reporting-services/troubleshoot-report-builder?view=sql-server-2014&preserve-view=true)  
-  
+## Next steps  
+ [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md)   
+
   
