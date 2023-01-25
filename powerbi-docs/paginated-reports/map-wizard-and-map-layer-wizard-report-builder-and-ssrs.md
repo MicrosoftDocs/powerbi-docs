@@ -10,7 +10,7 @@ ms.topic: reference
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Map Wizard and Map Layer Wizard (Report Builder and SSRS)
+# Map Wizard and Map Layer Wizard (Power BI Report Builder)
  In Power BI paginated reports, the Map Wizard and Map Layer Wizard automate the task of creating a map, adding a map layer, or changing map layer options on an existing layer.  
   
  Before you add a map to a report or a map layer to a map, gather the following information:  
