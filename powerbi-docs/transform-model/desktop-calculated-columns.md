@@ -38,7 +38,7 @@ Jeff right-clicks on the **Geography** table and then selects **New Column**. Je
 CityState = [City] & "," & [State]
 ```
 
-This formula simply creates a new column named **CityState**. For each row in the **Geography** table, it takes values from the **City** column, adds a comma and a space, and then concatenates values from the **State** column.
+This formula creates a new column named **CityState**. For each row in the **Geography** table, it takes values from the **City** column, adds a comma and a space, and then concatenates values from the **State** column.
 
 Now Jeff has the wanted field.
 
@@ -50,10 +50,10 @@ Jeff can now add it to the report canvas along with the number of shipments. Wit
 
 ## Next steps
 
-This article provides a quick introduction to calculated columns here. For more information, check out the following resources:
+This article provides a quick introduction to calculated columns here. For more information, see the following resources:
 
-* To download a sample file and get step-by-step lessons on how to create more columns, see [Tutorial: Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md)
+* To download a sample file and get step-by-step lessons on how to create more columns, see [Tutorial: Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md).
 
 * To learn more about DAX, see [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
-* To learn more about columns you create as part of a query, see the **Create custom columns** section in [Perform common query tasks in Power BI Desktop](/power-bi/transform-model/desktop-common-query-tasks#create-custom-columns)  
+* To learn more about columns you create as part of a query, see [Create custom columns](/power-bi/transform-model/desktop-common-query-tasks#create-custom-columns). 
