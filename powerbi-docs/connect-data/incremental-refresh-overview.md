@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 01/26/2023
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -52,7 +52,7 @@ Incremental refresh and real-time data works best for structured, relational dat
 
 For other data sources, the RangeStart and RangeEnd parameters must be passed to the data source in some way that enables filtering. For file-based data sources where files and folders are organized by date, the RangeStart and RangeEnd parameters can be used to filter the files and folders to select which files to load. For web-based data sources the RangeStart and RangeEnd parameters can be integrated into the HTTP request. For example, the following query can be used for incremental refresh of the traces from an AppInsights instance:
 
-```
+```powerquery-m
 let 
     strRangeStart = DateTime.ToText(RangeStart,[Format="yyyy-MM-dd'T'HH:mm:ss'Z'", Culture="en-US"]),
     strRangeEnd = DateTime.ToText(RangeEnd,[Format="yyyy-MM-dd'T'HH:mm:ss'Z'", Culture="en-US"]),
@@ -85,7 +85,7 @@ Table
 
 There's no requirement the _final query_ support folding. For example in the following expression, we use a non-folding NativeQuery but integrate the RangeStart and RangeEnd parameters directly into SQL:
 
-```
+```powerquery-m
 let
   Query = "select * from dbo.FactInternetSales where OrderDateKey >= '"& Text.From(Int32.From( DateTime.ToText(RangeStart,"yyyyMMdd") )) &"' and OrderDateKey < '"& Text.From(Int32.From( DateTime.ToText(RangeEnd,"yyyyMMdd") )) &"' ",
   Source = Sql.Database("dwdev02","AdventureWorksDW2017"),
@@ -96,7 +96,7 @@ in
 
 When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. If the filter is specified in a query step after the initial source query, it's important that query folding combines the initial query step with the steps reference the RangeStart and RangeEnd paremters. For example, in the following query expression, the `Table.SelectRows` will fold because it immediately follows the `Sql.Database` step, and SQL Server supports folding:
 
-```
+```powerquery-m
 let
   Source = Sql.Database("dwdev02","AdventureWorksDW2017"),
   Data  = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
@@ -109,7 +109,7 @@ in
 
 There's no requirement the _final query_ support folding. For example in the following expression, we use a non-folding NativeQuery but integrate the RangeStart and RangeEnd parameters directly into SQL:
 
-```
+```powerquery-m
 let
   Query = "select * from dbo.FactInternetSales where OrderDateKey >= '"& Text.From(Int32.From( DateTime.ToText(RangeStart,"yyyyMMdd") )) &"' and OrderDateKey < '"& Text.From(Int32.From( DateTime.ToText(RangeEnd,"yyyyMMdd") )) &"' ",
   Source = Sql.Database("dwdev02","AdventureWorksDW2017"),
@@ -134,7 +134,7 @@ When you configure incremental refresh and real-time data by using Power BI Desk
 
 #### Other data source types
 
-By using more custom query functions and query logic, incremental refresh can be used with other types of data sources if filters based on `RangeStart` and `RangeEnd` can be passed in a single query. Data sources include Excel workbook files stored in a folder, files in SharePoint, and RSS feeds. Keep in mind these are advanced scenarios that require further customization and testing beyond what is described here. Be sure to check the [Community](#community) section later in this article for suggestions on how you can find more information about using incremental refresh for unique scenarios.
+By using more custom query functions and query logic, incremental refresh can be used with other types of data sources if filters based on `RangeStart` and `RangeEnd` can be passed in a single query, like with data sources such as Excel workbook files stored in a folder, files in SharePoint, and RSS feeds. Keep in mind these are advanced scenarios that require further customization and testing beyond what is described here. Be sure to check the [Community](#community) section later in this article for suggestions on how you can find more information about using incremental refresh for unique scenarios.
 
 ## Time limits
 
