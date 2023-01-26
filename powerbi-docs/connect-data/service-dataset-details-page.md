@@ -109,11 +109,7 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. 
 
-![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection-1.png)
-
-A partially filled parent checkbox means that only a subset of them has been selected.
-
-![Screenshot showing some columns selected.](./media/service-dataset-details-page/dataset-details-page-selection-2.png)
+![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection-3.png) 
 
 When you select a table or columns in a table, they will be displayed on the **Table preview** page that opens.
 
