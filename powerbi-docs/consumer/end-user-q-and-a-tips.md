@@ -32,13 +32,13 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |**Comparisons**     |   vs, versus, compared to, compared with            |
 |**Conjunctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |
 |**Contractions**     |  Q&A recognizes almost all contractions, try it out. Here are a few examples: didn't, haven't, he'd, he's, isn't, it's, she'll, they'd, weren't, who's, won't, wouldn't          |
-|**Dates**     |       Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see below). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade. Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
+|**Dates**     |       Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see *Relative dates*). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade. Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
 |**Relative dates**     |   today, right now, current time, yesterday, tomorrow, the current, next, the coming, last, previous, ago, before now, sooner than, after, later than, from, at, on, from now, after now, in the future, past, last, previous, within, in, over, N days ago, N days from now, next, once, twice.|
 |    |  Example: count of orders in the past 6 days.  |
 |**Equality (Range)**     |   in, equal to, =, after, is more than, in, between, before  |
 |  |Examples: Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?              |
 |**Equality (Value)**     |   is, equal, equal to, in, of, for, within, is in, is on |
-|   | Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that aren't equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?              |
+|   | Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that aren't equal to 200? Order date of 1/1/2016. 10 in price? Green for color?              |
 |**Names**     |       If a column in the dataset contains the phrase "name" (for example, EmployeeName), Q&A understands the values in that column are names. You can ask questions like "which employees are named robert."          |
 |**Pronouns**  | he, him, himself, his, she, herself, her, hers, it, itself, its, they, their, them, themselves, theirs, this, these, that, those|
 |**Query commands**     |    sorted, sort by, direction, group, group by, by, show, list, display, give me, name, just, only, arrange, rank, compare, to, with, against, alphabetically, ascending, descending, order             |
@@ -54,14 +54,14 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 
 Q&A does its best to understand and answer the question being asked. It tries to understand in several ways. For all of these phrasings, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
 
-- autocompletes words and questions. It uses various strategies, including autocompleting recognized words, stored questions, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
-- corrects spelling.
-- provides a preview of the answer in the form of a visual. The visual updates as you type and edit the question (it doesn't wait for you to press Enter).
-- suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
-- restates the question based on the data in the underlying dataset(s). Q&A replaces the words you used with synonyms from the underlying dataset(s). By reading the restatement, you know whether Q&A understood your question or not.
-- adds a double underline to words it doesn't understand.
-- adds a single underline to words it does understand.
-- allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
+- Autocompletes words and questions. It uses various strategies, including autocompleting recognized words, stored questions, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
+- Corrects spelling.
+- Provides a preview of the answer in the form of a visual. The visual updates as you type and edits the question (it doesn't wait for you to press Enter).
+- Suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
+- Restates the question based on the data in the underlying dataset(s). Q&A replaces the words you used with synonyms from the underlying dataset(s). By reading the restatement, you know whether Q&A understood your question or not.
+- Adds a double underline to words it doesn't understand.
+- Adds a single underline to words it does understand.
+- Allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
 
 ## Tell Q&A which visual to use
 
