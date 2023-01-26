@@ -90,7 +90,7 @@ You can share the dataset with other users in your organization. Clicking the **
 
 ## Data preview
 
-Data preview enables you to view selected tables and columns from the dataset, and provides entry points for exporting the data to supported file formats, creating it as a [paginated report](../paginated-reports/paginated-formatted-table.md), and saving it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+Data preview enables you to view a selected table or columns from the dataset. You can also export the data to supported file formats or create a [paginated report](../paginated-reports/paginated-formatted-table.md).
 
 ### Prerequisites
 
@@ -99,7 +99,7 @@ Data preview enables you to view selected tables and columns from the dataset, a
 
 ### Select data to preview
 
-To preview a datasets's data from the dataset details page, select its tables and columns on the **Tables** side panel.
+To preview a datasets's data from the dataset details page, select a table or columns on the **Tables** side panel.
 
 ![Screenshot of the Tables side panel on the dataset details page.](./media/service-dataset-details-page/dataset-details-page-tables-side-panel-1.png)
 
@@ -107,12 +107,15 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
 
-An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
+An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. 
 
 ![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection-1.png)
+
+A partially filled parent checkbox means that only a subset of them has been selected.
+
 ![Screenshot showing some columns selected.](./media/service-dataset-details-page/dataset-details-page-selection-2.png)
 
-When you select tables or columns, they will be displayed on the **Table preview** page that opens.
+When you select a table or columns in a table, they will be displayed on the **Table preview** page that opens.
 
    ![Screenshot showing table preview page.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-1.png)
 
@@ -131,9 +134,10 @@ Show query enables you to copy the DAX query used to create the table preview to
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 
 >[!NOTE]
-> Table preview is intended to quickly show the underlying data of tables within your dataset. You cannot view measures or select more than one table or fields across tables. You can use the editor that opens when you choose **Create paginated report** (see below) to select measure or select multiple tables or switch between summarized and underlying data. The data in the editor is summarized by default. You can switch to underlying data using **More options**.
+> Table preview is intended to quickly show the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can use the editor that opens when you choose **Create paginated report** (see below)for that.
 >
 
+ 
 ### Exporting data
 
 Selecting the **Export** button on the Table preview page allows you to export the data to one of the supported file formats.
@@ -144,11 +148,16 @@ Selecting the **Export** button on the Table preview page allows you to export t
 
 Selecting the **Create paginated report** button opens the [editor](../paginated-reports/paginated-formatted-table.md). 
 >[!NOTE]
-> Data will change from underlying data to summarized data
+> Data will change from underlying data to summarized data. You can switch to underlying data using **More options**.
 
-In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, etc. You can then either export the report to any of the supported file formats (the file will be saved to your default downloads folder), or you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace you select. Paginated reports fully preserve your report formatting.
+In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, etc. 
 
 ![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor.png)
+
+You can then either export the report to any of the supported file formats (the file will be saved to your default downloads folder), or you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
+
+### Switch from Summarized to underlying data in the editor
+You can switch to underlying data using More options 
 
 ![Screenshot showing more options.](./media/service-dataset-details-page/dataset-details-page-data-switch.png)
 
