@@ -3430,6 +3430,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-pdf.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-pdf",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/desktop-gridlines-snap-to-grid.md",
             "redirect_url": "/power-bi/create-reports/desktop-gridlines-snap-to-grid",
             "redirect_document_id": true
