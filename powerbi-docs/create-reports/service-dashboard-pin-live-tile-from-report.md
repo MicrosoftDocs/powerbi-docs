@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 01/26/2023
 ms.custom: video-EzhfBpPboPA
 LocalizationGroup: Dashboards
 ---
