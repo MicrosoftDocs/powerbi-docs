@@ -75,7 +75,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * R, Python, Power Apps, Power Automate, Visio, [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md), and paginated report visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
 * Power BI visuals that have been certified are supported in most cases. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. In the PDF, they display with an error message.
-* Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
+* Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
 * Reports larger than 500 MB currently can't be exported. 
 * If your report has a visual [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md), you won't have the option to export to PDF.
 * Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will be included in the export, but the visual will display in its default state, without the table.  
@@ -101,4 +101,4 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 ## Next steps
 
-[Print a report](end-user-print.md)
+[Print a report](../consumer/end-user-print.md)
