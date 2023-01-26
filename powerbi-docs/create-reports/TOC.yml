@@ -494,7 +494,7 @@
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
-    - name: Planning a report
+    - name: Plan a paginated report
       href: ../paginated-reports/report-builder-planning-report.md
     - name: Understanding paginated report data
       href: ../paginated-reports/report-builder-data.md

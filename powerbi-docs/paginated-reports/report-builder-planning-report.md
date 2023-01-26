@@ -1,5 +1,5 @@
 ---
-title: "Plan a report in Power BI Report Builder"
+title: "Plan a paginated report in Power BI Report Builder"
 description: Learn how to create many kinds of paginated reports in Power BI Report Builder. To create a useful, easily understood report, it helps to plan first.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,7 +9,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 ---
-# Plan a report in Power BI Report Builder
+# Plan a paginated report in Power BI Report Builder
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
