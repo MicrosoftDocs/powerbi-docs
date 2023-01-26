@@ -54,7 +54,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
 
-    :::image type="content" source="media/service-insights/power-bi-insights.png" alt-text="Screenshot of the Quick Insights canvas" lightbox="media/service-insights/power-bi-insights.png":::
+    :::image type="content" source="media/service-insights/power-bi-insights.png" alt-text="Screenshot of the Quick Insights canvas." lightbox="media/service-insights/power-bi-insights.png":::
 
 ## Interact with the insight cards
 
