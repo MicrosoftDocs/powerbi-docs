@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Connect to a GitHub repo with Power BI'
-description: In this tutorial you connect to real data in the GitHub service with Power BI, and Power BI automatically creates dashboards and reports.
+description: Learn how to connect to real data in the GitHub service in Power BI service and then examine the data in the workspace reports.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: SarinaJoan
@@ -13,126 +13,123 @@ ms.date: 06/22/2021
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Connect to a GitHub repo with Power BI
-In this tutorial, you connect to real data: the Power BI content public repository (also known as a *repo*) in the GitHub service. Power BI automatically creates a dashboard and report with the data. You see answers to questions like: How many people contribute to the Power BI public repo? Who contributes the most? Which day of the week has the most contributions? And other questions. 
 
-You can connect to your own private or public GitHub repos, too. The article [Connect to GitHub with Power BI](service-connect-to-github.md) explains how to use a Power BI *template app* to connect to your repos.
+In this tutorial, you connect to real data: the Power BI content public repository (also known as a *repo*) in the GitHub service. Power BI automatically creates a dashboard and report with the data. You see answers to questions like: How many people contribute to the Power BI public repo? Who contributes the most? Which day of the week has the most contributions? And other questions.
 
-![The GitHub report in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
+You can connect to your own private or public GitHub repos too. To use a Power BI *template app* to connect to your repos, see [Connect to GitHub with Power BI](service-connect-to-github.md).
+
+:::image type="content" source="media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png" alt-text="Screenshot of a sample GitHub report in Power BI.":::
 
 In this tutorial, you complete the following steps:
 
 > [!div class="checklist"]
-> * Sign up for a GitHub account, if you don't have one yet 
-> * Sign in to your Power BI account, or sign up, if you don't have one yet
-> * Open the Power BI service
-> * Find the GitHub app
-> * Enter the information for the Power BI public GitHub repo
-> * View the dashboard and report with GitHub data
-> * Clean up resources by deleting the app
+>
+> * Sign up for a GitHub account, if you don't have one yet.
+> * Sign in to your Power BI account, or sign up, if you don't have one yet.
+> * Open the Power BI service.
+> * Find the GitHub app.
+> * Enter the information for the Power BI public GitHub repo.
+> * View the dashboard and report with GitHub data.
+> * Clean up resources by deleting the app.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## Prerequisites
 
-To complete this tutorial, you need a GitHub account, if you don't already have one. 
+To complete this tutorial, you need a GitHub account, if you don't already have one.
 
-- Sign up for a [GitHub account](/contribute/get-started-setup-github).
-
+* Sign up for a [GitHub account](/contribute/get-started-setup-github).
 
 ## How to connect
-1. Sign in to the Power BI service (`https://app.powerbi.com`). 
-2. In the nav pane, select **Apps**, then **Get apps**.
-   
-   ![Power BI Get apps](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Select **Apps**, type **GitHub** in the search box. Select the app.
-   
+1. Sign in to the [Power BI service](app.powerbi.com).
+1. In the nav pane, select **Apps**, then **Get apps**.
+
+   ![Power BI Get apps](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png)
+
+1. Select **Apps**, type **GitHub** in the search box. Select the app.
+
    ![Power BI Get GitHub](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png)
 
-4. Select **Get it now** and follow any additional instructions.
-5. In **Your new app is ready!**, select **Go to app**.
-6. In the app landing page, select **Connect your data**.
+1. Select **Get it now** and follow any additional instructions.
+1. When you see the notification, **Your new app is ready!**, select **Go to app**.
+1. On the app landing page, select **Connect your data**.
 
-    ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
+    :::image type="content" source="media/service-tutorial-connect-to-github/connect-your-data.png" alt-text="Screenshot of the app banner with connect your data highlighted.":::
 
-7. Enter the repository name and repository owner of the repo. The URL for this repo is https://github.com/MicrosoftDocs/powerbi-docs, so **Repository Owner** is **MicrosoftDocs**, and **Repository** is **powerbi-docs**. 
-   
-    ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+1. In the connect dialog, enter the repository name and repository owner of the repo. The URL for this repo is `https://github.com/MicrosoftDocs/powerbi-docs`, Enter `MicrosoftDocs` as the repository **Owner**, and `powrbi-docs` as the **Repo** name. Select **Next**.
 
-5. Enter the GitHub credentials you created. Power BI might skip this step if you're already signed in to GitHub in your browser. 
+   :::image type="content" source="media/service-tutorial-connect-to-github/tutorial-connect-to-github.png" alt-text="Screenshot of the connect dialog with owner, repo, and next highlighted.":::
 
-6. For **Authentication Method**, keep **oAuth2** selected \> **Sign In**.
+1. Make sure that **Authentication Method** is set to `OAuth2`, and then select **Sign in and connect**.
 
-7. Follow the GitHub authentication screens. Grant Power BI permission to the GitHub data.
-   
+   :::image type="content" source="media/service-tutorial-connect-to-github/tutorial-sign-in-and-connect.png" alt-text="Screenshot of the connecting dialog with authentication method and sign in and connect highlighted.":::
+
+1. If prompted, follow the GitHub authentication instructions and give Power BI permission to your data.
+
    Now Power BI can connect with GitHub and connect to the data.  The data is refreshed once a day.
 
-8. After Power BI imports the data, you see the contents of your new GitHub workspace. 
-9. Select the arrow next to the workspace name in the nav pane. You see the workspace contains a dashboard and a report. 
+1. After Power BI imports the data, you see the contents in your new GitHub workspace.
+1. Expand report in the nav pane to see the contents.
 
-    ![App in the nav pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    :::image type="content" source="media/service-tutorial-connect-to-github/github-dashboard-reports-expanded.png" alt-text="Screenshot of the Github reports expanded with the expand icon highlighted.":::
 
-10. Select **More options** (...) next to the dashboard name > **Rename** > type **GitHub dashboard**.
- 
-    ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
+1. To view the new workspace, select **Workspaces** in the nav pane. Select the GitHub workspace from the list or select **More options** (...) to view settings.
 
-8. Select the global navigation icon to minimize the nav pane, so you have more room.
+   :::image type="content" source="media/service-tutorial-connect-to-github/github-workspace-more-options.png" alt-text="Screenshot of the workspaces list. Workspaces and the GitHub workspace are highlighted.":::
 
-    ![Global navigation icon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
+1. In workspace **Settings** you can rename or delete the workspace.
 
-10. Select your GitHub dashboard.
-    
+   :::image type="content" source="media/service-tutorial-connect-to-github/github-workspace-settings-name.png" alt-text="Screenshot of the workspace settings dialog with workspace name highlighted.":::
+
+1. Select your GitHub dashboard. You can minimize the nav pane, so you have more room
+
     The GitHub dashboard contains live data, so the values you see may be different.
 
-    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
-
-    
+    :::image type="content" source="media/service-tutorial-connect-to-github/github-dashboard-nav-expand.png" alt-text="Screenshot of the GitHub dashboard with the navigation pane compressed with the expand icon highlighted.":::
 
 ## Ask a question
 
-1. Put your cursor in **Ask a question about your data**. Power BI offers **Questions to get your started**. 
+1. Put your cursor in **Ask a question about your data**. Power BI opens the **Q&A** window and offers some sample questions.
 
-1. Select **how many users are there**.
- 
-    ![How many users are there](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
+1. Enter **how many users**.
 
-13. In between **how many** and **users are there**, type **pull requests per**. 
+    :::image type="content" source="media/service-tutorial-connect-to-github/question-how-many-users.png" alt-text="Screenshot of the Q&A result screen with how many users highlighted.":::
+
+1. In between **how many** and **users**, type **pull requests per**.
 
      Power BI creates a bar chart showing the number of pull requests per person.
 
-    ![How many pull requests per user are there](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
+    :::image type="content" source="media/service-tutorial-connect-to-github/how-many-prs-result" alt-text="Screenshot of the Q&A result screen with a bar chart.":::
 
+1. Select the pin icon to pin it to your dashboard, then **Exit Q&A**.
 
-13. Select the pin to pin it to your dashboard, then **Exit Q&A**.
+## View the GitHub report
 
-## View the GitHub report 
+1. In the GitHub dashboard, select **More options** (...) on the column chart **Pull Requests by Month**. Choose **Go to report**.
 
-1. In the GitHub dashboard, select the column chart **Pull Requests by Month** to open the related report.
+    :::image type="content" source="media/service-tutorial-connect-to-github/go-to-report.png" alt-text="Screenshot of the pull requests by month tile with more options and go to report highlighted.":::
 
-    ![Pull requests by month column chart](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
+1. Select a user name in the **Total pull requests by user** chart. A new tile appears with results for one user.
 
-2. Select a user name in the **Total pull requests by user** chart. In this example, we see most of their hours were in January.
+    :::image type="content" source="media/service-tutorial-connect-to-github/cross-filter-tiles.png" alt-text="Screenshot of the pull requests chart for a single user.":::
 
-    ![Power BI GitHub report highlighting](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-cross-filter-total-prs.png)
+1. Select the **Punch Card** tab to view the next page in the report.
 
-3. Select the **Punch Card** tab to view the next page in the report. 
- 
-    ![Power BI GitHub report Punch Card](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
-
-    Apparently Tuesday at 3 pm is the most common time and day of the week for *commits*, when people check in their work.
+    :::image type="content" source="media/service-tutorial-connect-to-github/punch-card-tiles.png" alt-text="Screenshot of the punch card tile and commit bar charts.":::
 
 ## Clean up resources
 
-Now that you've finished the tutorial, you can delete the GitHub app. 
+Now that you've finished the tutorial, you can delete the GitHub app.
 
 1. In the nav pane, select **Apps**.
-2. Hover over the GitHub tile and select the **Delete** garbage can.
+2. On the app tile, select **More options** (...) and then choose **Delete**.
 
-    ![Delete the GitHub app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)
+   :::image type="content" source="media/service-tutorial-connect-to-github/delete-an-app.png" alt-text="Screenshot of the GitHub app tile with apps, more options, and delete highlighted.":::
 
 ## Next steps
 
-In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics. 
- 
+In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics.
+
 > [!div class="nextstepaction"]
 > [Connect to GitHub with a Power BI template app](service-connect-to-github.md)
