@@ -94,7 +94,7 @@ in
   Data
 ```
 
-When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. If the filter is specified in a query step after the initial source query, it's important that query folding combines the initial query step with the steps reference the RangeStart and RangeEnd paremters. For example, in the following query expression, the `Table.SelectRows` will fold because it immediately follows the `Sql.Database` step, and SQL Server supports folding:
+When incremental refresh is configured, a Power Query expression that includes a date/time filter based on the RangeStart and RangeEnd parameters is executed against the data source. If the filter is specified in a query step after the initial source query, it's important that query folding combines the initial query step with the steps reference the RangeStart and RangeEnd parameters. For example, in the following query expression, the `Table.SelectRows` will fold because it immediately follows the `Sql.Database` step, and SQL Server supports folding:
 
 ```powerquery-m
 let
@@ -180,7 +180,7 @@ To configure incremental refresh in Power BI Desktop, you first create two Power
 
 For example, the FactInternetSales data source table averages 10,000 new rows per day. To limit the number of rows initially loaded into the model in Power BI Desktop, specify a two-day period between `RangeStart` and `RangeEnd`.
 
-:::image type="content" source="media/incremental-refresh-overview/manage-parameters.png" alt-text="Screenshot of the Manage Parameters dialog showing the RangeStart and RangeEnd parameters":::
+:::image type="content" source="media/incremental-refresh-overview/manage-parameters.png" alt-text="Screenshot of the Manage Parameters dialog showing the RangeStart and RangeEnd parameters.":::
 
 ### Filter data
 
@@ -194,7 +194,7 @@ With our FactInternetSales example, after creating filters based on the paramete
 
 After filters have been applied and a subset of data has been loaded into the model, you define an incremental refresh policy for the table. After the model is published to the service, the policy is used by the service to create and manage table partitions and perform refresh operations. To define the policy, you use the **Incremental refresh and real-time data** dialog box to specify both required and optional settings.
 
-:::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog.png" alt-text="Screenshot of the 'Incremental refresh and real-time data' dialog showing the 'Incrementally refresh this table' option on":::
+:::image type="content" source="media/incremental-refresh-overview/incremental-refresh-dialog.png" alt-text="Screenshot of the Incremental refresh and real-time data dialog showing the Incrementally refresh this table option on.":::
 
 #### Table
 
