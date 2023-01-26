@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/13/2021
+ms.date: 01/26/2023
 LocalizationGroup: Model your data
 ---
 # Create calculated columns in Power BI Desktop
