@@ -20,7 +20,7 @@ Another way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by p
 
 :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png" alt-text="Screenshot of live tile page pinned from the report." lightbox="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png":::
 
-Pinning live tiles from reports to dashboards is only available in the [Power BI service](app.powerbi.com).
+Pinning live tiles from reports to dashboards is only available in the Power BI service (app.powerbi.com).
 
 > [!NOTE]
 > You can't pin tiles from reports that are shared with you.
