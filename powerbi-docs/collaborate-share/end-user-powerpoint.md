@@ -122,7 +122,7 @@ The following aren't supported for **Export to PowerPoint**.  Either the **Power
 ### General
 * Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
-* Export to PowerPoint in't currently supported for tenants in the China North region. 
+* Export to PowerPoint isn't currently supported for tenants in the China North region. 
 
 ## Next steps
 [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    
