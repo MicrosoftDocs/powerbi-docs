@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
-ms.date: 07/31/2022
+ms.date: 12/21/2022
 ---
 
 # Troubleshoot your Power BI developer environment setup
@@ -30,9 +30,9 @@ For help with installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJ
 
 Run the visual server with the command `pbiviz start` in your terminal's command line *from the root of your visual project*.
 
-![pbiviz start command](media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png)
+:::image type="content" source="media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png" alt-text="Screenshot of powershell running the p b i viz start command showing the server starting.":::
 
-If the server's not running, your SSL certificates were probably not [installed correctly](environment-setup.md#create-and-install-a-certificate). To install your SSL certificates, see [Create and install a certificate](environment-setup.md#create-and-install-a-certificate).
+If the server's not running, your SSL certificates were probably not installed correctly. To install your SSL certificates, see [Create an SSL certificate](create-ssl-certificate.md).
 
 ## Can't see the developer icon on the Visualizations tab
 

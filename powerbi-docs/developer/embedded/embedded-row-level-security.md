@@ -38,7 +38,7 @@ Depending on the situation, some common cases where security measures can be app
 Depending on your setup, you may have to take several steps before you can generate an embed token.
 For instructions on how to embed reports or other items, go to the link that best describes your specific scenario:
 
-* [Cloud based RLS](cloud-rls.md)
+* [Standard RLS](cloud-rls.md)
 * [Embedding paginated reports](paginated-reports-row-level-security.md)
 * [SQL Server Analysis Services](sql-server-analysis-services-embed.md)
 * [Azure Analysis Services](./embed-azure-analysis-services.md)
@@ -47,7 +47,7 @@ For instructions on how to embed reports or other items, go to the link that bes
 ## Considerations and limitations
 
 * Assigning users to roles within the Power BI service doesn't affect RLS or OLS when using an embed token (*App owns data* scenario only).
-* Although RLS setting don't apply to admins, members, or contributors, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
+* Although RLS settings don't apply to admins, members, or contributors, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
 
 ## Next steps
 

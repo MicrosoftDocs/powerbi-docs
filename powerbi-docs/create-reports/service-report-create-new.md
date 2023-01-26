@@ -23,7 +23,7 @@ You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you w
 
 ## Import the Excel file
 
-This method of creating a report starts with a file and a blank report canvas. If you want to follow along, download the [Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for Business.
+This method of creating a report starts with a file and a blank report canvas. If you want to follow along, download the [Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for work or school.
 
 1. In the navigation pane, select **My Workspace**.
    

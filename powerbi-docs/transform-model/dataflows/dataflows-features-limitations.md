@@ -55,7 +55,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Importing dataflows that contain linked tables won't fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow)
 
-* Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API
+* When you deploy a dataflow you can leverage the conflict handlers *GenerateUniqueName* and *Abort* parameters to either abort the operation when it already exists or instruct the API to automatically create an unique name instead
 
 ## Dataflows in shared capacities
 

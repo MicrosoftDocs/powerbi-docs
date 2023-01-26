@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/24/2022
+ms.date: 01/25/2023
 LocalizationGroup: Premium 
 ---
 
@@ -351,7 +351,7 @@ A table showing every [interactive operation](service-premium-interactive-backgr
 
 * **End** - The time the interactive operation finished.
 
-* **Status** - An indication showing if the operation succeeded or failed.
+* **Status** - An indication showing if the operation succeeded or failed. Cancelled operations are reported as failed operations.
 
     >[!NOTE]
     >CPU usage for failed operations is counted when determining if the capacity is in overload.
@@ -410,7 +410,7 @@ Displays the percentage of fast, moderate, and slow operations from the total nu
 
 ### Artifact size
 
-This visual displays the peak amount of memory detected in any three hour window, over a 14 day period, for the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
+This visual displays the peak amount of memory consumption detected in any three hour window, over a 14 day period, for the operations performed on the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Gen2 metrics app.":::
 
@@ -440,7 +440,7 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
     * *Operations triggered by Power BI* - [Background operations](service-premium-interactive-background-operations.md#background-operations) that include system operations such as dataset or dataflow refreshes. Sometimes these operations are performed by Power BI on behalf of a user. For example, a refresh operation may execute background queries to cache tile results for users who viewed these tiles recently. The tile refresh cache queries provide a much faster performance for users, when they next view the dashboard.
 
-* [Email subscriptions](../consumer/end-user-subscribe.md) will be sent with the app's default filter and slicer states. 
+* [Email subscriptions](/power-bi/collaborate-share/end-user-subscribe) will be sent with the app's default filter and slicer states. 
 
 ## Next steps
 

@@ -99,9 +99,6 @@ Set up the **visual.ts** file.
 
 3. Import the libraries and modules needed, and define the type selection for the d3 library:
 
-    >[!NOTE]
-    >If you didn't [install the D3 JavaScript library](environment-setup.md#d3-javascript-library) as part of your setup, install it now.
-
    ```typescript
    "use strict";
 
@@ -115,6 +112,9 @@ Set up the **visual.ts** file.
    import * as d3 from "d3";
    type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
    ```
+
+    >[!NOTE]
+    >If the D3 JavaScript library wasn't installed as part of your setup, install it now. From PowerShell, run `npm i d3@latest --save`
 
    Notice that among the items you imported are:
     * *IVisualHost* -  A collection of properties and services used to interact with the visual host (Power BI).
