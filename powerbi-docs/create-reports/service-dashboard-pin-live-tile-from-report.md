@@ -38,7 +38,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 1. Open a report in [Editing view](service-interact-with-a-report-in-editing-view.md).
 2. With no visualizations selected, from the menu bar, select the **Pin** icon.
 
-   :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-pin.png" alt-text="Screenshot highlighting the Pin icon on the menu bar.":::
+   :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/power-bi-pin.png" alt-text="Screenshot highlighting the Pin icon on the menu bar.":::
 
 3. Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
 
