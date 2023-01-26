@@ -42,7 +42,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 ## How to connect
 
-1. Sign in to the [Power BI service](msit.powerbi.com).
+1. Sign in to the Power BI service (app.powerbi.com).
 1. In the nav pane, select **Apps**, then **Get apps**.
 
    :::image type="content" source="media/service-tutorial-connect-to-github/apps-get-apps.png" alt-text="Screenshot of the apps pane with apps and get apps highlighted.":::
@@ -75,7 +75,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 1. After Power BI imports the data, you see the contents in your new GitHub workspace.
 1. Expand report in the nav pane to see the contents.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/github-dashboard-reports-expanded.png" alt-text="Screenshot of the GitHub reports expanded with the icon highlighted.":::
+    :::image type="content" source="media/service-tutorial-connect-to-github/github-dashboard-nav-expand.png" alt-text="Screenshot of the GitHub report expanded with the icon highlighted.":::
 
 1. To view the new workspace, select **Workspaces** in the nav pane. Select the GitHub workspace from the list or select **More options** (...) to view settings.
 
