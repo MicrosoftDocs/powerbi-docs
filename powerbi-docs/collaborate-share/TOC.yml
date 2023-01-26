@@ -15,7 +15,7 @@
       href: service-discovery.md
     - name: "Share reports and dashboards"
       href: service-share-dashboards.md
-    - name: "Eport a report to PDF"
+    - name: "Export a report to PDF"
       href: end-user-pdf.md
     - name: "Request access to a report or dashboard"
       href: service-request-access.md
