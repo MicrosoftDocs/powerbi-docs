@@ -72,7 +72,7 @@ The columns in the list of related reports are:
 
 To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option.
 
-:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data.png" alt-text="Screenshot of visualize this data section on data details page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data-1.png" alt-text="Screenshot of visualize this data section on data details page.":::
 
 * **Auto-create**: Creates an auto-generated report from the dataset.
 * **From template**: Creates a copy of the template in *My workspace*.
@@ -123,14 +123,14 @@ You can resize column widths using a drag handle next to the column headers. Res
 
 Show query enables you to copy the DAX query used to create the table preview to the clipboard. This makes it possible to reuse the query for future actions.
 
-![Screenshot showing table preview with the query displayed.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-show-query.png)
+![Screenshot showing table preview with the query displayed.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-show-query-1.png)
 
 **Back**
 
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 
 >[!NOTE]
-> Table preview is intended to quickly show the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can use the editor that opens when you choose **Create paginated report** (see below)for that.
+> Table preview is intended to quickly explore the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can choose **Create paginated report** (see below) for that.
 >
 
  
@@ -138,7 +138,7 @@ At any time you can return to the dataset details page by selecting the **Back**
 
 Selecting the **Export** button on the Table preview page allows you to export the data to one of the supported file formats.
 
-![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export.png)
+![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export-1.png)
 
 ### Building a paginated report
 
@@ -148,7 +148,7 @@ Selecting the **Create paginated report** button opens the [editor](../paginated
 
 In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, etc. 
 
-![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor.png)
+![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor-2.png)
 
 You can then either export the report to any of the supported file formats (the file will be saved to your default downloads folder), or you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
 
