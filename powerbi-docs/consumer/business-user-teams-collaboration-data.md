@@ -1,6 +1,6 @@
 ---
 title: Analyze your Teams collaboration data
-description: Learn how to analyze your Teams collaboration data and find ways to improve an become more responsive, agile, and productive. 
+description: Learn how to analyze your Teams collaboration data and find ways to improve and become more responsive, agile, and productive. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: mihart, lukaszp
@@ -31,13 +31,13 @@ To get insights about collaboration in Microsoft Teams, follow these steps.
 1. Explore your usage in the automatically generated report.
 1. Explore engagement in the teams you participate in.
 
-The report is saved in your Power BI account and stays refreshed. You can keep coming back every few days to see how actions you take effective the trends. When working in a team, it’s great to discuss the data and ways to improve.
+The report is saved in your Power BI account and stays refreshed. You can come back every few days to see how  your actions change the trends. When working in a team, it’s great to discuss the data and ways to improve.
 
 ## Questions to ask about your collaboration
 
 ### Am I effective in meetings?  
 
-When looking at your meeting participation, you can see where you spend your time. Look at whether you spend most of your time in meetings or if you have enough focus time to get work done. You can see if you’re mostly participating in or organizing meetings. Depending on your organization and your role, the balance of what’s “right” might change, but it’s important to ask the following:
+When looking at your meeting participation, you can see where you spend your time. Look at whether you spend most of your time in meetings or if you have enough focus time to get work done. You can see if you’re mostly participating in or organizing meetings. Depending on your organization and your role, the balance of what’s “right” might change, but it’s important to ask the following questions:
 
 - Are the meetings I’m in clearly furthering the objectives of my role and my organization?
 - Am I setting the pace of delivery effectively by organizing important meetings to support my objectives?
@@ -46,7 +46,7 @@ When looking at your meeting participation, you can see where you spend your tim
 
 ### Am I building relationships with my colleagues?
 
-Remote and hybrid work enables many of us to work from anywhere, which can impact the relationships we build with colleagues. Building strong relationships with colleagues helps you succeed, overcome challenges, and build a cohesive work environment. Look at the 1:1 calls metric to see if you’re making the connections you need for the future.
+Remote and hybrid work enables many of us to work from anywhere, which can impact the relationships we have with colleagues. It helps to build strong relationships with colleagues to succeed, overcome challenges, and build a cohesive work environment. Look at the 1:1 calls metric to see if you’re making the connections you need for the future.
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-my-meeting-summary.png" alt-text="Screenshot of a visual with My meeting summary in Teams.":::
 
@@ -55,17 +55,17 @@ Remote and hybrid work enables many of us to work from anywhere, which can impac
 Chat experiences help us communicate quickly with others without interrupting their flow of work. Chat messages are fast, easy to write, and allow the recipient to multi-task by responding when they’re able. To use chat effectively, consider how you’re using chat across the experiences Teams offers.
 
 > [!TIP]
-> Start a chat with a coworker by stating why you're contacting them, rather than just typing "Hi" or "Are you busy?" Just ask your question. That way, they can respond rather than wait for you to ask the question.
+> Start a chat with a coworker by stating why you're contacting them, rather than just typing "Hi" or "Are you busy?" Just ask your question. That way, they can respond quickly rather than wait for you to ask the question.
 
 ### Am I sending too many chats?  
 
-Look at the number of chat messages you send in a day and the trend. If you’re sending a lot of messages (20, 30, 40, 50), see what they were and review them. Consider whether a meeting or a 1:1 call could've achieved the same outcome while creating a stronger connection with your colleague. You may even want to send a document rather than writing chats. Consider asking your colleague which option is the most effective for them.
+Look at the number of chat messages you send in a day and the trend. If you’re sending numerous messages (20, 30, 40, 50), see what they were and review them. Consider whether a meeting or a 1:1 call could have achieved the same outcome while creating a stronger connection with your colleague. You may even want to send a document rather than writing chats. Consider asking your colleague which option is the most effective for them.
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-messaging-summary.png" alt-text="Screenshot of a visual with the Summary of messages sent in Teams.":::
 
 ### Am I using channels effectively?
 
-Teams and channels help keep your entire workgroup or project team up to date. Sometimes it’s easier to message someone directly instead of posting in a channel. This practice can raise challenges since others teammates lack visibility into work happening around them and don’t have the opportunity to offer input. It’s also harder for them to jump in and help to finish something when someone goes on vacation. If you’re primarily using Chats, consider if Channels would be a good option to add to your collaboration habits.  
+Teams and channels help keep your entire workgroup or project team up to date. Sometimes it’s easier to message someone directly instead of posting in a channel. This practice can raise challenges since others teammates lack visibility into work happening around them and don’t have the opportunity to offer input. It’s also harder for them to help and finish something when someone goes on vacation. If you’re primarily using Chats, consider if Channels would be a good option to add to your collaboration habits.  
 
 ### Am I using in-meeting experiences in the best way?
 
@@ -75,7 +75,7 @@ Looking at meeting activities such as audio, video, and screen-sharing, you can 
 
 ## Understand activity in teams you access and own
 
-Sometimes where you work is as important as how you work. The **Teams activity** view gives you a summary of how your teams collaborate. You can quickly see which teams you might be missing out on and potentially which you might close. If multiple teams cover the same topic, consider merging them to help everyone work together.  
+Sometimes where you work is as important as how you work. The **Teams activity** view gives you a summary of how your teams collaborate. You can quickly see which teams you might be overlooking and which ones you might close. If multiple teams cover the same topic, consider merging them to help everyone work together.  
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-team-activity.png" alt-text="Screenshot of a visual with Team Activity that includes all groups you belong to.":::
 
