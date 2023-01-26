@@ -94,7 +94,8 @@ Example:
 
 ---
 
-In the formatting settings card, specify that this card belongs to the analytics pane by setting the `set card analyticsPane` parameter to `true`. By default, `analyticsPane` parameter is false and the card will be added to formatting pane, See the implementations below:
+In the formatting settings card, specify that this card belongs to the analytics pane by setting the `set card analyticsPane` parameter to `true`. By default, `analyticsPane` parameter is false and the card will be added to formatting pane. See the implementations below:
+
 #### [Using FormattingModel Utils](#tab/API-5-1-Impl-FormattingModel-Utils)
 
 ```typescript
@@ -123,48 +124,48 @@ class YourAnalyticsCardSettings extends FormattingSettingsCard {
 #### [Without FormattingModel Utils](#tab/API-5-1-Without-FormattingModel-Utils)
 
 ```typescript
-        const show: powerbi.visuals.EnabledSlice = {
-            uid: "enableAxisCard_topLevelToggle_show_uid",
-            suppressDisplayName: true,
-            control: {
-                type: powerbi.visuals.FormattingComponent.ToggleSwitch,
-                properties: {
-                    descriptor: {
-                        objectName: "YourAnalyticsPropertiesCard",
-                        propertyName: "show"
-                    },
-                    value: false
-                }
-            }
-        }
+      const show: powerbi.visuals.EnabledSlice = {
+          uid: "enableAxisCard_topLevelToggle_show_uid",
+          suppressDisplayName: true,
+          control: {
+              type: powerbi.visuals.FormattingComponent.ToggleSwitch,
+              properties: {
+                  descriptor: {
+                      objectName: "YourAnalyticsPropertiesCard",
+                      propertyName: "show"
+                  },
+                  value: false
+              }
+          }
+      }
         
-        const displayNameProperty: powerbi.visuals.FormattingSlice = {
-            uid: "enableAxisCard_displayName_uid",
-            suppressDisplayName: true,
-            control: {
-                type: powerbi.visuals.FormattingComponent.TextInput,
-                properties: {
-                    descriptor: {
-                        objectName: "YourAnalyticsPropertiesCard",
-                        propertyName: "displayName"
-                    },
-                    value: "Analytics Instance",
-                    placeholder: ""
-                }
-            }
-        }
+      const displayNameProperty: powerbi.visuals.FormattingSlice = {
+          uid: "enableAxisCard_displayName_uid",
+          suppressDisplayName: true,
+          control: {
+              type: powerbi.visuals.FormattingComponent.TextInput,
+              properties: {
+                  descriptor: {
+                      objectName: "YourAnalyticsPropertiesCard",
+                      propertyName: "displayName"
+                  },
+                  value: "Analytics Instance",
+                  placeholder: ""
+              }
+          }
+      }
 
-        const averageLineCard: powerbi.visuals.FormattingCard = {
-            displayName: "Your analytics properties card's name",
-            uid: "yourAnalyticsCard_uid",
-            analyticsPane: true, // <===  Add and set analyticsPane variable to true 
-            topLevelToggle: show,
-            groups: [{
-                displayName: undefined,
-                uid: "yourAnalyticsCard_group_uid",
-                slices: [displayNameProperty],
-            }]
-        };
+      const averageLineCard: powerbi.visuals.FormattingCard = {
+          displayName: "Your analytics properties card's name",
+          uid: "yourAnalyticsCard_uid",
+          analyticsPane: true, // <===  Add and set analyticsPane variable to true 
+          topLevelToggle: show,
+          groups: [{
+              displayName: undefined,
+              uid: "yourAnalyticsCard_group_uid",
+              slices: [displayNameProperty],
+          }]
+      };
 ```
 
 ---
