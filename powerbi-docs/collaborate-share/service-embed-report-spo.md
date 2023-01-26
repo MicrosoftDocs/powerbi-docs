@@ -24,7 +24,7 @@ For **Embed report in SharePoint Online** reports to work:
 
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To use an embedded report, users must sign in to the Power BI service to activate their Power BI license.
-* A Power BI Pro or Premium Per User (PPU) license is required to embed a web part in SharePoint Online. 
+* To embed a web part in SharePoint Online, you need a Power BI Pro or Premium Per User (PPU) license. 
 * Users with a free Power BI license can view a report that's hosted in [Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-gen2-what-is.md).
 
 ## Embed your report
@@ -83,19 +83,23 @@ If you're using a Microsoft 365 Group to build your SharePoint Online team site,
 
 ### Share directly with users
 
-Embed a report within an app, and share it directly with users:  
+Embed a report within an app, and share it directly with users.
 
-1. The author, who must be a Pro user, creates a report in a workspace. To share with *Power BI free users*, the author needs to set the workspace as a *Premium workspace*.
+> [!NOTE]
+> - You need a Power BI Pro or Premium Per User (PPU) license to create a report in a workspace. 
+> - To share with *Power BI free users*, the workspace needs to be in a *Premium capacity*.
 
-2. The author publishes the app and installs it. The author must install the app so it has access to the report URL that's used for embedding in SharePoint Online.
+1. Create a report in a workspace. 
 
-3. All end users need to install the app too. You can also use the **Install app automatically** feature. You can enable this feature in the [Power BI admin portal](../admin/service-admin-portal.md), so the app is pre-installed for end users.
+2. Publish the app and install it. You must install the app so it has access to the report URL that's used for embedding in SharePoint Online.
+
+3. All end users need to install the app, too. You can also use the **Install app automatically** feature. In the Power BI admin portal, admins can enable [pushing apps](../admin/service-admin-portal-content-pack-app.md#push-apps-to-end-users), so the app is pre-installed for end users.
 
    ![Screenshot of the Power BI admin portal with Install app automatically selected.](media/service-embed-report-spo/install-app-automatically.png)
 
-4. The author opens the app and goes to the report.
+4. Open the app and go to the report.
 
-5. The author copies the embedded report URL from the report the app installed. Don't use the original report URL from the workspace.
+5. Copy the embedded report URL from the report the app installed. Don't use the original report URL from the workspace.
 
 6. Create a new team site in SharePoint Online.
 
