@@ -101,7 +101,8 @@ Data preview enables you to view a selected table or columns from the dataset. Y
 
 To preview a datasets's data from the dataset details page, select a table or columns on the **Tables** side panel.
 
-![Screenshot of the Tables side panel on the dataset details page.](./media/service-dataset-details-page/dataset-details-page-tables-side-panel-1.png)
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-tables-side-panel-1.png" alt-text="Screenshot of the Tables side panel on the dataset details page.":::
+
 
 If you don't see the side panel, select **Show tables** on the action bar.
 
@@ -109,11 +110,11 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. 
 
-![Screenshot showing all columns selected.](./media/service-dataset-details-page/dataset-details-page-selection-3.png) 
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-selection-3.png" alt-text="Screenshot showing all columns selected."::: 
 
 When you select a table or columns in a table, they will be displayed on the **Table preview** page that opens.
 
-   ![Screenshot showing table preview page.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-1.png)
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-table-preview-page-1.png" alt-text="Screenshot showing table preview page.":::
 
 Table preview may not show all of the data you've selected. To see more, you can [export](#exporting-data) or build a [paginated report](../paginated-reports/paginated-formatted-table.md) (see below).
 
@@ -123,7 +124,7 @@ You can resize column widths using a drag handle next to the column headers. Res
 
 Show query enables you to copy the DAX query used to create the table preview to the clipboard. This makes it possible to reuse the query for future actions.
 
-![Screenshot showing table preview with the query displayed.](./media/service-dataset-details-page/dataset-details-page-table-preview-page-show-query-1.png)
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-query-1.png" alt-text="Screenshot showing table preview with the query displayed.":::
 
 **Back**
 
@@ -138,7 +139,7 @@ At any time you can return to the dataset details page by selecting the **Back**
 
 Selecting the **Export** button on the Table preview page allows you to export the data to one of the supported file formats.
 
-![Screenshot showing table preview export option.](./media/service-dataset-details-page/dataset-details-page-export-1.png)
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-export-1.png" alt-text="Screenshot showing table preview export option.":::
 
 ### Building a paginated report
 
@@ -147,15 +148,13 @@ Selecting the **Create paginated report** button opens the [editor](../paginated
 > Data will change from underlying data to summarized data. You can switch to underlying data using **More options**.
 
 In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, etc. 
-
-![Screenshot showing formatted table editor.](./media/service-dataset-details-page/dataset-details-page-formatted-table-editor-2.png)
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-table-formatted-table-editor-2.png" alt-text="Screenshot showing formatted table editor.":::
 
 You can then either export the report to any of the supported file formats (the file will be saved to your default downloads folder), or you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
 
 ### Switch from Summarized to underlying data in the editor
 You can switch to underlying data using More options 
-
-![Screenshot showing more options.](./media/service-dataset-details-page/dataset-details-page-data-switch.png)
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-data-switch.png" alt-text="Screenshot showing more options."
 
 ## Next steps
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
