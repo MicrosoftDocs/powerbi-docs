@@ -24,7 +24,7 @@ To get insights about collaboration in Microsoft Teams, follow these steps.
 
     Need to install the Power BI app? [Install the Power BI app](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app), then pin it to the Teams navigation pane.
 
-1. Go to the **Create** tab and select **Analyze your Teams** data.
+1. Go to the **Create** tab and select **Analyze your Teams data**.
 
     :::image type="content" source="media/business-user-teams-collaboration-data/teams-power-bi-create-analyze-teams.png" alt-text="Screenshot of the Power BI app for Microsoft Teams with Analyze your Teams data highlighted.":::
 
@@ -69,7 +69,7 @@ Teams and channels help keep your entire workgroup or project team up to date. S
 
 ### Am I using in-meeting experiences in the best way?
 
-Looking at meeting activities such as audio, video, and screen-sharing, you can gain insight into how effectively you’re using in-meeting experiences. If you’re sharing audio but not video, you may be missing opportunities to make a stronger connection with other meeting attendees. If you’re screen-sharing a lot, it could indicate that you’re driving the discussion forward in these meetings.
+Looking at meeting activities such as audio, video, and screen sharing, you can gain insight into how effectively you’re using in-meeting experiences. If you’re sharing audio but not video, you may be missing opportunities to make a stronger connection with other meeting attendees. If you’re screen sharing a lot, it could indicate that you’re driving the discussion forward in these meetings.
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-meeting-activity.png" alt-text="Screenshot of a visual showing the last 31 days of activity in My monthly Teams.":::
 
