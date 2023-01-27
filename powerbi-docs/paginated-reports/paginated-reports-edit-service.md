@@ -28,11 +28,11 @@ This article explains how to quickly edit a paginated report in Power BI Report 
 
     - In list view, select **More options (…)** for a paginated report, then select **Edit in Power BI Report Builder**. 
 
-    :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-list-view.png" alt-text="Screenshot that shows how to open a paginated report from list view in a workspace.":::
+       :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-list-view.png" alt-text="Screenshot that shows how to open a paginated report from list view in a workspace.":::
  
     - Or open your paginated report, then from the **File** menu select **Edit in Report Builder**. 
 
-    :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-file-menu.png" alt-text="Screenshot that shows an option in the Power BI service File menu to send a paginated report to Report Builder.":::
+       :::image type="content" source="media/paginated-reports-edit-service/paginated-edit-file-menu.png" alt-text="Screenshot that shows an option in the Power BI service File menu to send a paginated report to Report Builder.":::
  
 3. Your paginated report opens in Power BI Report Builder with the data source and dataset automatically configured. From here, you can make your edits.
 
@@ -44,7 +44,7 @@ This article explains how to quickly edit a paginated report in Power BI Report 
 
     :::image type="content" source="media/paginated-reports-edit-service/paginated-publish-service.png" alt-text="Screenshot that shows the Publish option in the Power BI Report Builder.":::
 
-1. The workspace where it is already saved is automatically selected. You have the option to change the file name.
+1. The workspace where it's already saved is automatically selected. You have the option to change the file name.
 
     :::image type="content" source="media/paginated-reports-edit-service/paginated-save-as-publish.png" alt-text="Screenshot that shows the option to save the paginated report back to the Power BI service.":::
  
