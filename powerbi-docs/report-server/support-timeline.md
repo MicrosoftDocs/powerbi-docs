@@ -25,10 +25,10 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
 | **Version** | **Availability date** | **Support end date** |
 | --- | --- | --- |
-| January 2023 | January 2023 | January 2024
-| September 2022 | September 2022 | September 2023
-| May 2022 | May 2022 | May 2023
-| January 2022 | January 2022 | January 2023 and all previous versions no longer supported
+| January 2023 | January 2023 | January 2024|
+| September 2022 | September 2022 | September 2023|
+| May 2022 | May 2022 | May 2023|
+| January 2022 | January 2022 | January 2022 and all previous versions no longer supported|
 
 To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
