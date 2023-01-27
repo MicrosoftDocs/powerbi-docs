@@ -58,9 +58,9 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 1. When you see the notification, **Your new app is ready!**, select **Go to app**.
 1. On the app landing page, select **Connect your data**.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/connect-your-data.png" alt-text="Screenshot of the app banner with connect your data highlighted.":::
+   :::image type="content" source="media/service-tutorial-connect-to-github/connect-your-data.png" alt-text="Screenshot of the app banner with connect your data highlighted.":::
 
-1. In the connect dialog, enter the repository name and repository owner of the repo. The URL for this repo is `https://github.com/MicrosoftDocs/powerbi-docs`, Enter `MicrosoftDocs` as the repository **Owner**, and `powrbi-docs` as the **Repo** name. Select **Next**.
+1. In the connect dialog, enter the repository name and repository owner of the repo. The URL for this repo is `https://github.com/MicrosoftDocs/powerbi-docs`. Enter `MicrosoftDocs` as the repository **Owner**, and `powerbi-docs` as the **Repo** name. Select **Next**.
 
    :::image type="content" source="media/service-tutorial-connect-to-github/tutorial-connect-to-github.png" alt-text="Screenshot of the connect dialog with owner, repo, and next highlighted.":::
 
@@ -68,16 +68,13 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
    :::image type="content" source="media/service-tutorial-connect-to-github/tutorial-sign-in-and-connect.png" alt-text="Screenshot of the connecting dialog with authentication method and sign-in and connect highlighted.":::
 
-1. If prompted, follow the GitHub authentication instructions and give Power BI permission to your data.
+1. If prompted, follow the GitHub authentication instructions and give Power BI permission to access your data.
 
-   Now Power BI can connect with GitHub and connect to the data.  The data is refreshed once a day.
+   After Power BI can connect with GitHub, the data in your Power BI dataset is refreshed once a day.
 
-1. After Power BI imports the data, you see the contents in your new GitHub workspace.
-1. Expand report in the nav pane to see the contents.
+After Power BI imports the data, you see the contents in your new GitHub workspace.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/github-dashboard-nav-expand.png" alt-text="Screenshot of the GitHub report expanded with the icon highlighted.":::
-
-1. To view the new workspace, select **Workspaces** in the nav pane. Select the GitHub workspace from the list or select **More options** (...) to view settings.
+1. Select **Workspaces** in the nav pane to see the dashboard, reports, and datasets. You can select **More options** (...) to view settings.
 
    :::image type="content" source="media/service-tutorial-connect-to-github/github-workspace-more-options.png" alt-text="Screenshot of the workspaces list. Workspaces and the GitHub workspace are highlighted.":::
 
@@ -85,41 +82,41 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
    :::image type="content" source="media/service-tutorial-connect-to-github/github-workspace-settings-name.png" alt-text="Screenshot of the workspace settings dialog with workspace name highlighted.":::
 
-1. Select your GitHub dashboard. You can minimize the nav pane, so you have more room
+1. Select your GitHub dashboard. You can minimize or expand the nav pane, so you have more room to see your data.
 
-    The GitHub dashboard contains live data, so the values you see may be different.
+   The GitHub dashboard contains live data, so the values you see may be different.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/github-dashboard-nav-expand.png" alt-text="Screenshot of the GitHub dashboard with the navigation pane compressed with the icon to expand highlighted.":::
+   :::image type="content" source="media/service-tutorial-connect-to-github/github-dashboard-nav-expand.png" alt-text="Screenshot of the GitHub dashboard with the navigation pane compressed with the icon to expand highlighted.":::
 
 ## Ask a question
 
 1. Put your cursor in **Ask a question about your data**. Power BI opens the **Q&A** window and offers some sample questions.
 
-1. Enter **how many users**.
+1. Enter **how many users**, Power BI offers a list of questions.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/question-how-many-users.png" alt-text="Screenshot of the Q&A result screen with how many users highlighted.":::
+   :::image type="content" source="media/service-tutorial-connect-to-github/question-how-many-users.png" alt-text="Screenshot of the Q&A result screen with how many users highlighted.":::
 
-1. In between **how many** and **users**, type **pull requests per**.
+1. You can edit your question, for example, in between **how many** and **users**, type **pull requests per**.
 
-     Power BI creates a bar chart showing the number of pull requests per person.
+   Power BI creates a bar chart visual that shows the number of pull requests per person.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/how-many-prs-result.png" alt-text="Screenshot of the Q&A result screen with a bar chart.":::
+   :::image type="content" source="media/service-tutorial-connect-to-github/how-many-prs-result.png" alt-text="Screenshot of the Q&A result screen with a bar chart.":::
 
-1. Select the pin icon to pin it to your dashboard, then **Exit Q&A**.
+1. Select the pin icon to pin the visual to your dashboard, then **Exit Q&A**.
 
 ## View the GitHub report
 
-1. In the GitHub dashboard, select **More options** (...) on the column chart **Pull Requests by Month**. Choose **Go to report**.
+1. On the GitHub dashboard, select **More options** (...) on the column chart **Pull Requests by Month**. Choose **Go to report**.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/go-to-report.png" alt-text="Screenshot of the pull requests by month tile with more options and go to report highlighted.":::
+   :::image type="content" source="media/service-tutorial-connect-to-github/go-to-report.png" alt-text="Screenshot of the pull requests by month tile with more options and go to report highlighted.":::
 
 1. Select a user name in the **Total pull requests by user** chart. A new tile appears with results for one user.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/cross-filter-tiles.png" alt-text="Screenshot of the pull requests chart for a single user.":::
+   :::image type="content" source="media/service-tutorial-connect-to-github/cross-filter-tiles.png" alt-text="Screenshot of the pull requests chart for a single user.":::
 
-1. Select the **Punch Card** tab to view the next page in the report.
+1. Select the **Punch Card** tab to view the next page of the report. Now you can see volumes of work by hour of the day and day of the week.
 
-    :::image type="content" source="media/service-tutorial-connect-to-github/punch-card-tiles.png" alt-text="Screenshot of the punch card tile and commit bar charts.":::
+   :::image type="content" source="media/service-tutorial-connect-to-github/punch-card-tiles.png" alt-text="Screenshot of the punch card tile and commit bar charts.":::
 
 ## Clean up resources
 
