@@ -14,7 +14,15 @@ ms.date: 01/26/2023
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-When you use subreports in Power BI paginated reports, you might get an unexpected result, or the feature doesn't work as you expected. This article provides solutions for common issues when using subreports. A *subreport* is a report item that displays another report inside the body of a main paginated report. For more information, see [Subreports in Power BI paginated reports](subreports.md).
+When you use subreports in Power BI paginated reports, you might get an unexpected result, or sometimes the feature doesn't work as you expected. This article provides solutions for common issues when using subreports. A *subreport* is a report item that displays another report inside the body of a main paginated report. For more information, see [Subreports in Power BI paginated reports](subreports.md).
+
+Possible issues:
+- [Subreport can't be found](#subreport-cant-be-found)
+- [Subreport renders with unexpected content](#subreport-renders-with-unexpected-content)
+- [Data retrieval fails](#data-retrieval-fails)
+- [Rendering fails: Unspecified parameters](#rendering-fails-unspecified-parameters)
+- [Rendering fails: Recursion limit](#rendering-fails-recursion-limit)
+- [Other errors](#other-errors)
 
 ## Subreport can't be found
 
@@ -53,7 +61,7 @@ Power BI allows users to have multiple reports with the same name in the same wo
 
 ### Troubleshooting
 
-1. Open the main report in Power BI Report Builder and determine the name of the subreport.
+1. Open the main report in Power BI Report Builder and identify the name of the subreport.
 2. Look for reports with the same name in the workspace.
 3. Locate the expected report and rename the rest.
 
@@ -115,7 +123,7 @@ Same as the general troubleshooting steps for reports with data access issues.
 ### Troubleshooting
 
 1. Verify that the subreport can render directly.
-2. If the subreport can render, check the parameters in both the subreport and main report.
+2. If the subreport can render, check the parameters for both the subreport and main report.
 3. Make sure the main report doesn't have more than 50 unique subreports, and the subreport isn't nested deeper than 20 levels.
 4. If you can't resolve the issue, contact Power BI support.
 
