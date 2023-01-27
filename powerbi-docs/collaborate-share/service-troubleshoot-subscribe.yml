@@ -160,7 +160,7 @@ sections:
         answer: |
           There are certain Power BI features that will not work when using the subscription feature.
 
-          - Email subscriptions do not support R, Python, Power Apps, Power Automate, Visio and most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+          - Email subscriptions do not support R, Python, Paginated Report Visuals, Power Apps, Power Automate, Visio and most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
           
           - For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles.
           
