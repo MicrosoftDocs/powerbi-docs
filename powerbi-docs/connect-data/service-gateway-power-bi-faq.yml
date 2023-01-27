@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: On-premises data gateway FAQ - Power BI
-  description: Learn the answers to frequently asked questions about the on-premises data gateway for Power BI.
+  description: Learn the answers to frequently asked questions about the on-premises data gateway for Power BI and Analysis services.
   author: arthiriyer
   ms.author: arthii
   ms.reviewer: ''
@@ -14,7 +14,6 @@ title: On-premises data gateway FAQ - Power BI
 summary: |
     [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
   
-   
 sections:
   - name: Power BI
     questions:
@@ -32,17 +31,17 @@ sections:
       - question: |
          Can I upload Excel workbooks with Power Pivot data models that connect to on-premises data sources, and do I need a gateway for this scenario? 
         answer: |
-         Yes, you can upload the workbook. NO, you don’t need a gateway. But, because the data will reside in the Excel data model, reports in Power BI based on the Excel workbook won't be live. To refresh reports in Power BI, you have to re-upload an updated workbook each time. Or, use the gateway with scheduled refresh.
+         Yes, you can upload the workbook. NO, you don’t need a gateway. But, because the data will reside in the Excel data model, reports in Power BI based on the Excel workbook won't be live. To refresh reports in Power BI, you have to reupload an updated workbook each time. Or, use the gateway with scheduled refresh.
 
       - question: |
-         If users share dashboards that have a DirectQuery connection, will those other users see the data even though they might not have the same permissions? 
+         If users share dashboards with a DirectQuery connection, will other users see the data even though they might not have the same permissions? 
         answer: |
          For a dashboard connected to Azure Analysis Services, users will see only the data they have access to. If the users don't have the same permissions, they won't be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
 
       - question: |
          Why can't I connect to my Oracle server? 
         answer: |
-          You might need to install the Oracle client and configure the *tnsnames.ora* file with the proper server information to connect to your Oracle server. This is a separate installation outside of the gateway. For more information, see [Install the Oracle client](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
+          You might need to install the Oracle client and configure the *tnsnames.ora* file with the proper server information to connect to your Oracle server. The oracle client is a separate installation outside of the gateway. For more information, see [Install the Oracle client](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
           
       - question: |
          Are R scripts supported?
@@ -62,12 +61,12 @@ sections:
       - question: |
          What if I install the gateway on a computer in a different domain from my on-premises server that uses Windows authentication? 
         answer: |
-         No guarantees. It depends on the trust relationship between the two domains. If two different domains are in a trusted domain model, the gateway might be able to connect to the Analysis Services server and the effective username can be resolved. If not, you might encounter a sign-in failure.
+         No guarantees. It depends on the trust relationship between the two domains. If two different domains are in a trusted domain model, the gateway might be able to connect to the Analysis Services server, and the effective username can be resolved. If not, you might encounter a sign-in failure.
 
       - question: |
          How can I find out what effective username is being passed to my on-premises Analysis Services server? 
         answer: |
-          For information about this, see [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md).
+          See [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md).
           
 additionalContent:  |
   ## Next steps
