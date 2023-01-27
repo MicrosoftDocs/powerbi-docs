@@ -277,7 +277,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Unsupported features**    
 Email subscriptions don't support:
  
-* R-powered Power BI visuals  
+* R-powered Power BI visuals, Python, Power Apps, Power Automate, Visio based Visuals
 * most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
 * Dataset refresh operations using an XMLA endpoint.
 
