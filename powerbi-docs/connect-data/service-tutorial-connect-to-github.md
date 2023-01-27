@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 06/22/2021
+ms.date: 01/27/2023
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 LocalizationGroup: Connect to services
 ---
@@ -70,9 +70,8 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 1. If prompted, follow the GitHub authentication instructions and give Power BI permission to access your data.
 
-   After Power BI can connect with GitHub, the data in your Power BI dataset is refreshed once a day.
-
-After Power BI imports the data, you see the contents in your new GitHub workspace.
+   * After Power BI can connect with GitHub, the data in your Power BI dataset is refreshed once a day.
+   * After Power BI imports the data, you see the contents in your new GitHub workspace.
 
 1. Select **Workspaces** in the nav pane to see the dashboard, reports, and datasets. You can select **More options** (...) to view settings.
 
@@ -90,7 +89,7 @@ After Power BI imports the data, you see the contents in your new GitHub workspa
 
 ## Ask a question
 
-1. Put your cursor in **Ask a question about your data**. Power BI opens the **Q&A** window and offers some sample questions.
+1. Select the **Ask a question about your data** text box. Power BI opens the **Q&A** window and offers some sample questions.
 
 1. Enter **how many users**, Power BI offers a list of questions.
 
