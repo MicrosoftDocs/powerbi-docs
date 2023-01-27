@@ -100,7 +100,7 @@ When you have a collection of bookmarks you'd like to present in order, you can 
 
     :::image type="content" source="media/desktop-bookmarks/service-bookmarks-pane-view-slide-show.png" alt-text="Select View in the Bookmarks pane.":::
 
-Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.md#bookmarks-as-a-slide-show) in the Power BI service.
+Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.md#bookmarks-as-a-slideshow) in the Power BI service.
 
 ## Visibility: Using the Selection pane
 Related to the **Bookmarks** pane, the **Selection** pane provides a list of all objects on the current page and allows you to select an object and specify whether it's visible. 
