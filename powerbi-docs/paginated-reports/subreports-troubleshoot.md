@@ -1,24 +1,24 @@
 ---
 title: "Troubleshoot subreports in Power BI paginated reports"
-description: Learn about solutions for common issues when using subreports, which are report items inside a paginated report.
+description: Learn about solutions for common issues when using subreports, which are report items inside a Power BI paginated report.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 10/19/2021
+ms.date: 01/26/2023
 ---
 
 # Troubleshoot subreports in Power BI paginated reports
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-Sometimes when using subreports in paginated reports, you may get an unexpected result, or the feature doesn't work as you expected. This article provides solutions for common issues when using subreports. A *subreport* is a report item that displays another report inside the body of a main paginated report. See [Subreports in Power BI paginated reports](subreports.md) for more background.
+When you use subreports in Power BI paginated reports, you might get an unexpected result, or the feature doesn't work as you expected. This article provides solutions for common issues when using subreports. A *subreport* is a report item that displays another report inside the body of a main paginated report. For more information, see [Subreports in Power BI paginated reports](subreports.md).
 
-## Subreport couldn't be found
+## Subreport can't be found
 
-**Description:** Subreport doesn't render. Instead an error message appears.
+**Description:** The subreport doesn't render. Instead, an error message appears.
 
 ### Message
 
@@ -32,15 +32,15 @@ Sometimes when using subreports in paginated reports, you may get an unexpected 
 
 ### Troubleshooting
 
-**In a workspace**
+**In a workspace:**
 
 - Verify that the report with the name in the error message exists. The name is case insensitive.
 
-**In an app**
+**In an app:**
 
 - Verify that the report with the name in the error message exits in the app. Contact the author of the app for further assistance.
 
-**If the report is shared**
+**If the report is shared:**
 
 1. Verify that the report with the name in the error message is shared with you.
 2. If the report exists, verify that the owner name is the same for the main report and the subreport. Then contact the owner of the main report with that information.
@@ -123,8 +123,8 @@ Same as the general troubleshooting steps for reports with data access issues.
 
 ## Next steps
 
-[Subreports in Power BI paginated reports](subreports.md)
+- [Subreports in Power BI paginated reports](subreports.md).
 
-[View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+- More questions? [Ask the Power BI Community](https://community.powerbi.com/).
