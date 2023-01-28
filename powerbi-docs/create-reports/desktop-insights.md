@@ -30,7 +30,7 @@ The insights feature is contextual, and is based on the immediately previous dat
 > [!NOTE]
 > The insight feature is enabled and on by default in **Power BI**.
 
-## Using insights
+## Use insights
 
 To use insights to explain increases or decreases seen on charts, just right-click on any data point in a bar or line chart, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
 
@@ -126,7 +126,7 @@ The insights feature doesn't support reports that are distributed as an App.
 
 ## Next steps
 
-For more information about **Power BI**, and how to get started, see.
+For more information about **Power BI**, and how to get started, see:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
