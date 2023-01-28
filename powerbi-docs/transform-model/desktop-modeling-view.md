@@ -25,7 +25,7 @@ To access **Modeling view**, select the **Model icon** found on the left side of
 
 With **Modeling view**, you can create diagrams of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex datasets easier. To create a new diagram with only a subset of the tables, select the **+** sign next to the **All tables** tab along the bottom of the Power BI Desktop window.
 
-:::image type="content" source="media/desktop-modeling-view/modeling-view_03.png)" alt-text="Screenshot of the + sign button in the tabs section that creates a new diagram.":::
+:::image type="content" source="media/desktop-modeling-view/modeling-view_03.png" alt-text="Screenshot of the + sign button in the tabs section that creates a new diagram.":::
 
 You can then drag a table from the **Fields** list onto the diagram surface. Right-click the table, and then select **Add related tables** from the menu that appears.
 
