@@ -21,7 +21,7 @@ The report canvas in Power BI Desktop and the Power BI service provides gridline
 
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-desktop.png" alt-text="Screenshot of the report canvas, showing how to use gridlines and snap-to-grid in Power BI Desktop reports.":::
 
-## Enabling gridlines, snap-to-grid, and smart guides
+## Enable gridlines, snap-to-grid, and smart guides
 
 To enable gridlines and snap-to-grid, select the **View** menu, then enable the checkboxes for **Show gridlines** and **Snap objects to grid**. You can select one or both options; they operate independently. In addition, you can turn on **Show smart guides**, which provide relative guidelines when moving a visual or group of visuals.
 
@@ -30,7 +30,7 @@ To enable gridlines and snap-to-grid, select the **View** menu, then enable the 
 > [!NOTE]
 > If **Show gridlines** and **Snap objects to grid** are disabled, connect to any data source and they become enabled.
 
-## Using gridlines
+## Use gridlines
 
 Gridlines are visible guides that help you align your visuals. When you're trying to determine whether two (or more) visuals are aligned horizontally or vertically, use the gridlines to determine whether their borders align.
 
@@ -38,7 +38,7 @@ Use Ctrl+Click to select more than one visual at a time, which displays all sele
 
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-selected-aligned.png" alt-text="Screenshot of the Power BI report canvas, showing how to use gridlines to align your visuals.":::
 
-### Using gridlines inside visuals
+### Use gridlines inside visuals
 
 In Power BI, there are also gridlines inside visuals that provide visible guides for comparing data points and values. You can manage the gridlines within visuals using the **X axis** or **Y axis** card (as appropriate based on visual type) found in the **Format** section of the **Visualizations** pane. You can manage the following elements of gridlines within a visual:
 
@@ -49,11 +49,11 @@ In Power BI, there are also gridlines inside visuals that provide visible guides
 
 Modifying certain elements of gridlines can be especially useful in reports where dark backgrounds are used for visuals. The following images show the **Gridlines** section in the **Y axis** card.
 
-1. With a visual selected, scroll to the **Gridlines** setting and set it to **On**. Then change the settings as desired.
+With a visual selected, scroll to the **Gridlines** setting and set it to **On**. Then change the settings as desired.
 
    :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-gridlines-desktop-axis-edit.png" alt-text="Screenshot of a Power BI Desktop visual, showing the axis gridlines settings.":::
 
-## Using snap-to-grid
+## Use snap-to-grid
 
 When you enable **Snap objects to grid**, all visuals on the Power BI canvas that you move (or resize) are automatically aligned to the nearest grid axis, making it much easier to ensure two or more visuals align to the same horizontal or vertical location or size.
 
@@ -67,13 +67,13 @@ After moving this visual, it's aligned with the grid.
 
 That's all there is to using **gridlines** and **snap-to-grid** to ensure the visuals in your reports are neatly aligned.
 
-## Using smart guides
+## Use smart guides
 
 Smart guides are visible guides that help you align your visuals relative to another visual. These lines appear when a selected visual or group of visuals is moved. When a smart guide appears, you can stop moving the visual, and it will be aligned to a neighboring visual. Smart guides appear for the center, sides, top, and bottom of the selected visual, with respect to a nearby visual.
 
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-smart-gridlines-horiz-vert.png" alt-text="Screenshot of the Power BI report canvas, showing how to use smart guides to align your visuals.":::
 
-## Using z-order
+## Use z-order
 
 You can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each one.
 
@@ -111,13 +111,13 @@ With a few selections from these gridlines, alignment, and distribution tools, y
 
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-2.png" alt-text="Screenshot of the report canvas, showing how to use gridlines and snap-to-grid in Power BI service reports.":::
 
-## Enabling gridlines, snap-to-grid, and smart guides
+## Enable gridlines, snap-to-grid, and smart guides
 
 To enable gridlines and snap-to-grid, select the **View** menu, then turn on **Show gridlines** and **Snap to grid**. You can select one or both options; they operate independently. In addition, you can turn on **Show smart guides**, which provide relative guidelines when moving a visual or group of visuals.
 
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-service-enable-grid-options-2.png" alt-text="Screenshot of the report canvas, showing how to enable gridlines and snap to grid in Power BI Desktop reports.":::
 
-## Using gridlines
+## Use gridlines
 
 Gridlines are visible guides that help you align your visuals. When you're trying to determine whether two (or more) visuals are aligned horizontally or vertically, use the gridlines to determine whether their borders align.
 
@@ -125,7 +125,7 @@ Use Ctrl+Click to select more than one visual at a time, which displays all sele
 
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-selected-aligned.png" alt-text="Screenshot of the Power BI report canvas, showing how to use gridlines to align your visuals.":::
 
-### Using gridlines inside visuals
+### Use gridlines inside visuals
 
 In Power BI, there are also gridlines inside visuals that provide visible guides for comparing data points and values. You can manage the gridlines within visuals using the **X axis** or **Y axis** card (as appropriate based on visual type), found in the **Format** section of the **Visualizations** pane. You can manage the following elements of gridlines within a visual:
 
@@ -144,7 +144,7 @@ Modifying certain elements of gridlines can be especially useful in reports wher
 
    :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-gridlines-service-axis-edit-2.png" alt-text="Screenshot of a Power BI service visual, showing the axis gridlines settings.":::
 
-## Using snap-to-grid
+## Use snap-to-grid
 
 When you enable **Snap objects to grid**, all visuals on the Power BI canvas that you move (or resize) are automatically aligned to the nearest grid axis, making it much easier to ensure two or more visuals align to the same horizontal or vertical location or size.
 
@@ -158,13 +158,13 @@ After moving this visual, it's aligned with the grid.
 
 That's all there is to using **gridlines** and **snap-to-grid** to ensure the visuals in your reports are neatly aligned.
 
-## Using smart guides
+## Use smart guides
 
 Smart guides are visible guides that help you align your visuals relative to another visual. These lines appear when a selected visual or group of visuals is moved. When a smart guide appears, you can stop moving the visual, and it will be aligned to a neighboring visual. Smart guides appear for the center, sides, top, and bottom of the selected visual, with respect to a nearby visual.
 
 :::image type="content" source="media/desktop-gridlines-snap-to-grid/snap-to-grid-smart-gridlines-horiz-vert.png" alt-text="Screenshot of the Power BI report canvas, showing how to use smart guides to align your visuals.":::
 
-## Using z-order
+## Use z-order
 
 You can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each one.
 
