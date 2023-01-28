@@ -20,7 +20,7 @@ Power BI has many built-in features to help people with disabilities more easily
 
 There are a couple terms to know as you read through this article:
 
-* **Focus** is where your mouse is on the page. Focus is indicated by a blue border surrounding an object.
+* **Focus** is where your mouse is on the page. Focus is usually indicated by a blue border surrounding an object.
 * **Canvas** is the page area of your report.
 
 The following sections describe the accessibility tools available for consuming Power BI reports.
