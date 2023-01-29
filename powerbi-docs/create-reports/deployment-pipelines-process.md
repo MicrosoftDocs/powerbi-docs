@@ -127,7 +127,7 @@ In many cases, when you have a small change such as adding or removing a table, 
 
 ### Requirements for deploying to a stage with an existing workspace
 
-A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../enterprise/service-premium-gen2-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
+A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
 
 ## Deployed items
 
@@ -371,7 +371,7 @@ The table below lists required permissions for popular deployment pipeline actio
 
 This section lists most of the limitations in deployment pipelines.
 
-* The workspace must reside on a [premium capacity](../enterprise/service-premium-gen2-what-is.md).
+* The workspace must reside on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 

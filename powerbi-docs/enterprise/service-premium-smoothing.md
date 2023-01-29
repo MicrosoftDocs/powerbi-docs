@@ -1,6 +1,6 @@
 ---
-title: Power BI Premium Gen2 CPU smoothing.
-description: Understand the CPU smoothing concept in Power BI Premium Gen2 works.
+title: Power BI Premium CPU smoothing.
+description: Understand the CPU smoothing concept in Power BI Premium works.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -13,9 +13,9 @@ LocalizationGroup: Premium
 
 # Performance smoothing
 
-Power BI runs performance smoothing on all Premium Gen2 capacities. Smoothing is used to calculate the impact of your operations on your capacity. Knowing what impact your operations have on your capacity affects many Power BI functions such as billing, [autoscale](service-premium-auto-scale.md) and the metrics you see in the [Gen2 app](service-premium-gen2-metrics-app.md).
+Power BI runs performance smoothing on all Premium capacities. Smoothing is used to calculate the impact of your operations on your capacity. Knowing what impact your operations have on your capacity affects many Power BI functions such as billing, [autoscale](service-premium-auto-scale.md) and the metrics you see in the [Premium metrics app](service-premium-gen2-metrics-app.md).
 
-In a Premium Gen2 capacity, CPU usage is the most important measure, because it determines how much of your capacity is in use. By flattening your CPU usage over time, smoothing helps you avoid being penalized due to bursts of intensive CPU usage. When your CPU usage is flatter, you can avoid being throttled when small bursts occur.
+In a Premium capacity, CPU usage is the most important measure, because it determines how much of your capacity is in use. By flattening your CPU usage over time, smoothing helps you avoid being penalized due to bursts of intensive CPU usage. When your CPU usage is flatter, you can avoid being throttled when small bursts occur.
 
 The figures below show the way CPU usage is currently reported in the [CPU over time](service-premium-gen2-metrics-app.md#cpu-over-time) chart, as opposed to the way it used to be reported.  
 
@@ -44,7 +44,7 @@ During each timepoint, Power BI adds up the average CPU usage from both the inte
 
 ## How to detect overload?
 
-You can see if your capacity is overloading, by reviewing the [CPU over time](service-premium-gen2-metrics-app.md#cpu-over-time) chart in the Gen2 app. A spike that goes over the yellow line, indicates an overload. To further investigate the overload, drill through to the [timepoint](service-premium-gen2-metrics-app.md#timepoint) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
+You can see if your capacity is overloading, by reviewing the [CPU over time](service-premium-gen2-metrics-app.md#cpu-over-time) chart in the Premium metrics app. A spike that goes over the yellow line, indicates an overload. To further investigate the overload, drill through to the [timepoint](service-premium-gen2-metrics-app.md#timepoint) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
 
 ## How to resolve overload?
 
@@ -59,7 +59,7 @@ When your capacity overloads, you can choose to either turn on [autoscale](servi
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
+> [What is Power BI Premium?](service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](service-premium-gen2-what-is.md)

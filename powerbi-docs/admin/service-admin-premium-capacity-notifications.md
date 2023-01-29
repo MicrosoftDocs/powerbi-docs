@@ -11,9 +11,9 @@ ms.date: 12/16/2022
 LocalizationGroup: Premium 
 ---
 
-# Configure Power BI Premium Gen2 capacity notifications
+# Configure Power BI Premium capacity notifications
 
-Power BI Premium Gen2 allows you to configure email notifications for your capacity. The emails will be sent to the people you specify in the notifications settings.
+Power BI Premium allows you to configure email notifications for your capacity. The emails will be sent to the people you specify in the notifications settings.
 
 To calculate when to send emails, Power BI checks the capacity every 15 minutes. During the check, the last 15 to 30 minutes of capacity activity are examined.
 
@@ -65,7 +65,7 @@ To configure the capacity notification emails, follow these steps:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium Gen2?](../enterprise/service-premium-gen2-what-is.md)
+> [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
 > [About the admin portal](service-admin-portal.md)
