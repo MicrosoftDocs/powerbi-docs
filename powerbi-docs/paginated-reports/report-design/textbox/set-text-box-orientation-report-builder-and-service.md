@@ -1,19 +1,17 @@
 ---
-title: "Set text box orientation in a paginated report | Microsoft Docs"
+title: "Set text box orientation in a Power BI paginated report | Microsoft Docs"
 description: Find out how to rotate a text box in different directions in your paginated reports in Report Builder. 
-ms.date: 03/01/2017
-ms.service: reporting-services
+ms.date: 01/26/2023
+ms.service: powerbi
 ms.subservice: report-design
-
-
 ms.topic: conceptual
-ms.assetid: 64bd53f4-2f31-4732-8c2e-64c7b54b6972
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: rpatkar
 ---
-# Set text box orientation in a paginated report (Report Builder)
+# Set text box orientation in a paginated report (Power BI Report Builder)
 
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-ssrs-rb](../../includes/ssrs-appliesto-ssrs-rb.md)] [!INCLUDE [ssrs-appliesto-pbi-rb](../../includes/ssrs-appliesto-pbi-rb.md)] [!INCLUDE [ssrb-applies-to-ssdt-yes](../../includes/ssrb-applies-to-ssdt-yes.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
 In a paginated report, you can rotate a text box in different directions:   
 * Horizontally   
@@ -27,7 +25,7 @@ Because you rotate the text box not the text, the rotation applies to all the te
   
 ## To rotate text  
   
-1.  Create a report or open an existing report, and [add a text box](../../reporting-services/report-design/add-move-or-delete-a-text-box-report-builder-and-ssrs.md) to the design surface.  
+1.  Create a report or open an existing report, and [add a text box](/sql/reporting-services/report-design/add-move-or-delete-a-text-box-report-builder-and-ssrs) to the design surface.  
   
 3.  Select the text box that you want to rotate.  
   
@@ -40,8 +38,8 @@ Because you rotate the text box not the text, the rotation applies to all the te
   
 5.  In the list box, select **Horizontal**, **Vertical**, or **Rotate270**.  
   
-## See Also  
- [Text Boxes &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/text-boxes-report-builder-and-ssrs.md)   
- [Tutorial: Format Text &#40;Report Builder&#41;](../../reporting-services/tutorial-format-text-report-builder.md)  
+## Next steps
+ [Text Boxes &#40;Report Builder and Service&#41;](text-boxes-report-builder-and-service)   
+ [Tutorial: Format Text &#40;Report Builder&#41;](/sql/reporting-services/tutorial-format-text-report-builder)  
   
   

@@ -1,27 +1,19 @@
 ---
-title: "Relational Query Designer User Interface (Report Builder) | Microsoft Docs"
+title: "Relational Query Designer User Interface (Power BI Report Builder) | Microsoft Docs"
 description: Learn to use the graphical query designer to explore the metadata, interactively build a query, and view the results for your query.
-ms.date: 03/14/2017
-ms.service: reporting-services
-ms.subservice: report-data
-
-
+ms.date: 01/27/2023
+ms.service: powerbi
+ms.subservice: report-builder
+ms.reviewer: rpatkar
 ms.topic: conceptual
-f1_keywords: 
-  - "10012"
-helpviewer_keywords: 
-  - "query designers"
-  - "accessing data, query designer"
-  - "relational query designer"
-ms.assetid: cd5fa70c-5218-40d5-9ae6-02d798b5c485
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Relational Query Designer User Interface (Report Builder)
-  Report Builder, and Report Designer in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], provide both a graphical query designer and a text-based query designer to help you create a query that specifies the data to retrieve from [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssSDS](../../includes/sssds-md.md)] relational databases and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDWCurrentFull](../../includes/ssdwcurrentfull-md.md)] for a report dataset. Use the graphical query designer to explore the metadata, interactively build a query, and view the results for your query. Use the text-based query designer to view the query that was built by the graphical query designer or to modify a query. You can also import an existing query from a file or report.  
+# Relational Query Designer User Interface (Power BI Report Builder)
+  Power BI Report Builder provides both a graphical query designer and a text-based query designer to help you create a query that specifies the data to retrieve from [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssSDS](../../includes/sssds-md.md)] relational databases and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDWCurrentFull](../../includes/ssdwcurrentfull-md.md)] for a report dataset. Use the graphical query designer to explore the metadata, interactively build a query, and view the results for your query. Use the text-based query designer to view the query that was built by the graphical query designer or to modify a query. You can also import an existing query from a file or report.  
   
 > [!NOTE]  
->  In Report Builder, to specify a query for data source types Oracle, OLE DB, ODBC, and Teradata, you must use the text-based query designer. For more information, see [Text-based Query Designer User Interface &#40;Report Builder&#41;](../../reporting-services/report-data/text-based-query-designer-user-interface-report-builder.md).  
+>  In Power BI Report Builder, to specify a query for data source types Oracle, OLE DB, ODBC, and Teradata, you must use the text-based query designer. For more information, see [Text-based Query Designer User Interface &#40;Report Builder&#41;](/sql/reporting-services/report-data/text-based-query-designer-user-interface-report-builder).  
   
 > [!IMPORTANT]  
 >  Users access data sources when they create and run queries. You should grant minimal permissions on the data sources, such as read-only permissions.  
@@ -36,11 +28,11 @@ ms.author: maggies
   
  The following figure shows the graphical query designer when it is used with tables or views.  
   
- ![Graphical designer for queries](../../reporting-services/report-data/media/rsqd-relational-graphical.gif "Graphical designer for queries")  
+ ![Graphical designer for queries](../media/report-builder-power-bi/rsqd-relational-graphical.gif "Graphical designer for queries")  
   
  The following figure shows the graphical query designer when it is used with stored procedures or table-valued functions.  
   
- ![Stored procedure in graphical query designer](../../reporting-services/report-data/media/rs-relational-graphical-sp.gif "Stored procedure in graphical query designer")  
+ ![Stored procedure in graphical query designer](../media/report-builder-power-bi/rs-relational-graphical-sp.gif "Stored procedure in graphical query designer")  
   
  The following table describes the function of each pane.  
   
@@ -79,14 +71,12 @@ ms.author: maggies
 -   **Delete Field** Deletes the selected field.  
   
 #### Group and Aggregate  
- Queries to databases with a large table might return a number of data rows that is too large to be useful in a report and has a performance impact on the network that transports the vast amount of data and on the report server that processes the report. To limit the number of data rows, the query can include SQL aggregates that summarize the data on the database server. SQL aggregates are different from client-side aggregates, which are applied when the report is rendered.  
+ Queries to databases with a large table might return a number of data rows that is too large to be useful in a report and has a performance impact on the network that transports the vast amount of data and on the paginated reports capacity that processes the report. To limit the number of data rows, the query can include SQL aggregates that summarize the data on the database server. SQL aggregates are different from client-side aggregates, which are applied when the report is rendered.  
   
  Aggregates provide summaries of data and the data is grouped to support the aggregate that deliver the summary data. When you use an aggregate in the query, the other fields returned by the query are automatically grouped and the query includes the SQL GROUP BY clause. You can summarize data without adding an aggregate by using only the **Grouped by** option in the **Group and Aggregate** list. Many of the aggregates include a version that uses the DISTINCT keyword. Including DISTINCT eliminates duplicate values.  
   
  [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] uses [!INCLUDE[tsql](../../includes/tsql-md.md)] and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDWCurrentFull](../../includes/ssdwcurrentfull-md.md)] uses [!INCLUDE[DWsql](../../includes/dwsql-md.md)]. Both dialects of the SQL language support the clause, keyword, and aggregates that the query designer provides.  
-  
- For more information about [!INCLUDE[tsql](../../includes/tsql-md.md)], see [Transact-SQL Reference &#40;Database Engine&#41;](../../t-sql/language-reference.md).  
-  
+    
  The following table list the aggregates and provides brief descriptions of them.  
   
 |Aggregate|Description|  
@@ -189,8 +179,8 @@ ms.author: maggies
  When you select tables and columns or stored procedures and views in the Database View pane, the query designer retrieves the underlying primary key and foreign key relationships from the database schema. By analyzing these relationships, the query designer detects relationships between two tables and adds joins to the query. You can then modify the query by adding groups and aggregates, adding or changing relationships, and adding filters. To view the query text that shows the columns from which to retrieve data, the joins between tables, and any groups or aggregates, click **Edit As Text**.  
   
 ## Text-Based Query Designer  
- For the most control over your query, use the text-based query designer. To switch to the text-based query designer, in the toolbar, click **Edit As Text**. After you edit a query in the text-based query designer, you can no longer use the relational query designer. The query will then always open in the text-based query designer. For more information, see [Text-based Query Designer User Interface &#40;Report Builder&#41;](../../reporting-services/report-data/text-based-query-designer-user-interface-report-builder.md).  
+ For the most control over your query, use the text-based query designer. To switch to the text-based query designer, in the toolbar, click **Edit As Text**. After you edit a query in the text-based query designer, you can no longer use the relational query designer. The query will then always open in the text-based query designer. For more information, see [Text-based Query Designer User Interface &#40;Report Builder&#41;](/sql/reporting-services/report-data/text-based-query-designer-user-interface-report-builder).
   
-## See Also  
- [Query Design Tools &#40;SSRS&#41;](query-design-tools-ssrs.md)  
+## Next steps
+ [Understanding paginated report data in Power BI Report Builder](../report-builder-data.md)  
   
