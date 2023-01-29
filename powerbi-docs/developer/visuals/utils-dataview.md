@@ -1,6 +1,6 @@
 ---
 title: Introduction to use Data view utils in Power BI visual
-description: This article describes how to use SVG utils  simplify parsing of the DataView object for Power BI visuals.
+description: Learn how to install and use SVG utils to simplify parsing of the DataView object for Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 manager:
@@ -8,16 +8,16 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 01/13/2023
 ---
 
 # DataViewUtils
 
-The `DataViewUtils` is a set of functions and classes to simplify parsing of the DataView object for Power BI visuals
+The `DataViewUtils` is a set of functions and classes to simplify parsing of the DataView object for Power BI visuals.
 
 ## Installation
 
-To install the package, you should run the following command in the directory with your current custom visual:
+To install the package, run the following command in the directory with your current custom visual:
 
 `npm install powerbi-visuals-utils-dataviewutils --save`
 
@@ -27,7 +27,7 @@ This command installs the package and adds a package as a dependency to your `pa
 
 `DataViewWildcard` provides the `createDataViewWildcardSelector` function to support a property's [conditional formatting](conditional-format.md#define-how-conditional-formatting-behaves).
 
-`createDataViewWildcardSelector` returns a selector required for defining how the conditional formatting entry in the format pane will be applied, based on `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
+`createDataViewWildcardSelector` returns a selector that's required for defining how the conditional formatting entry in the format pane will be applied, based on `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
 
 Example:
 
@@ -47,7 +47,7 @@ The module provides the following functions:
 
 ### getMeasureIndexOfRole
 
-This function finds the measure by role name and returns its index.
+This function finds the measure by the role name and returns its index.
 
 ```typescript
 function getMeasureIndexOfRole(grouped: DataViewValueColumnGroup[], roleName: string): number;
@@ -92,7 +92,7 @@ dataRoleHelper.getMeasureIndexOfRole(columnGroup, "product");
 
 ### getCategoryIndexOfRole
 
-This function finds the category by role name and returns its index.
+This function finds the category by the role name and returns its index.
 
 ```typescript
 function getCategoryIndexOfRole(categories: DataViewCategoryColumn[], roleName: string): number;
@@ -234,13 +234,13 @@ dataRoleHelper.hasRoleInValueColumn(valueColumn, "company");
 
 ## DataViewObjects
 
-The `DataViewObjects` provides functions to extract values of the objects.
+The `DataViewObjects` provides functions to extract the values of the objects.
 
 The module provides the following functions:
 
 ### getValue
 
-This function returns the value of the given object.
+This function returns the value of the specific object.
 
 ```typescript
 function getValue<T>(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultValue?: T): T;
@@ -273,7 +273,7 @@ dataViewObjects.getValue(objects, property);
 
 ### getObject
 
-This function returns an object of the given object.
+This function returns an object from specified objects.
 
 ```typescript
 function getObject(objects: DataViewObjects, objectName: string, defaultValue?: IDataViewObject): IDataViewObject;
@@ -340,7 +340,7 @@ dataViewObjects.getFillColor(objects, property);
 
 ### getCommonValue
 
-This function is a universal function for retrieving the color or value of a given object.
+This universal function retrieves the color or value of a specific object.
 
 ```typescript
 function getCommonValue(objects: DataViewObjects, propertyId: DataViewObjectPropertyIdentifier, defaultValue?: any): any;
@@ -381,13 +381,13 @@ dataViewObjects.getCommonValue(objects, biProperty); // returns: Power
 
 ## DataViewObject
 
-The `DataViewObject` provides functions to extract value of the object.
+The `DataViewObject` provides functions to extract the value of the object.
 
 The module provides the following functions:
 
 ### getValue
 
-This function returns a value of the object by property name.
+This function returns a value of the object by the property name.
 
 ```typescript
 function getValue<T>(object: IDataViewObject, propertyName: string, defaultValue?: T): T;
@@ -411,7 +411,7 @@ dataViewObject.getValue(object, "microsoft");
 
 ### getFillColorByPropertyName
 
-This function returns a solid color of the object by property name.
+This function returns a solid color of the object by the property name.
 
 ```typescript
 function getFillColorByPropertyName(object: IDataViewObject, propertyName: string, defaultColor?: string): string;
@@ -445,7 +445,7 @@ The module provides the following functions:
 
 ### categoryIsAlsoSeriesRole
 
-This function checks if the category is also series.
+This function checks if the category is also a series.
 
 ```typescript
 function categoryIsAlsoSeriesRole(dataView: DataViewCategorical, seriesRoleName: string, categoryRoleName: string): boolean;
@@ -511,7 +511,7 @@ converterHelper.getSeriesName(metadata);
 
 ### isImageUrlColumn
 
-This function checks if the column contains an image url.
+This function checks if the column contains an image URL.
 
 ```typescript
 function isImageUrlColumn(column: DataViewMetadataColumn): boolean;
@@ -541,7 +541,7 @@ converterHelper.isImageUrlColumn(metadata);
 
 ### isWebUrlColumn
 
-This function checks if the column contains a web url.
+This function checks if the column contains a web URL.
 
 ```typescript
 function isWebUrlColumn(column: DataViewMetadataColumn): boolean;
@@ -571,7 +571,7 @@ converterHelper.isWebUrlColumn(metadata);
 
 ### hasImageUrlColumn
 
-This function checks if the dataView has a column with image url.
+This function checks if the dataView has a column with an image URL.
 
 ```typescript
 function hasImageUrlColumn(dataView: DataView): boolean;
@@ -609,7 +609,7 @@ converterHelper.hasImageUrlColumn(dataView);
 
 ## DataViewObjectsParser
 
-The `DataViewObjectsParser` provides the simplest way to parse properties of the formatting panel.
+The `DataViewObjectsParser` provides the simplest way to parse the properties of the formatting panel.
 
 The class provides the following methods:
 
@@ -634,7 +634,7 @@ dataViewObjectsParser.getDefault();
 
 ### parse
 
-This method parses properties of the formatting panel and returns an instance of `DataViewObjectsParser`.
+This method parses the properties of the formatting panel and returns an instance of `DataViewObjectsParser`.
 
 ```typescript
 static parse<T extends DataViewObjectsParser>(dataView: DataView): T;
@@ -681,12 +681,12 @@ export class YourVisual extends IVisual {
 ## enumerateObjectInstances
 
 > [!IMPORTANT]
-> `enumerateObjectInstances` was deprecated in API version 5.1. It was replaced by [`getFormattingModel`](format-pane.md).
-> For `FormattingModel` utils see [utils formatting model](./utils-formatting-model.md).
+> `enumerateObjectInstances` was deprecated in API version 5.1. It was replaced by [getFormattingModel](format-pane.md).
+> Also, see [FormattingModel utils](./utils-formatting-model.md).
 
 This static method enumerates properties and returns an instance of `VisualObjectInstanceEnumeration`.
 
-Execute it in `enumerateObjectInstances` method of the visual.
+Execute it in the `enumerateObjectInstances` method of the visual.
 
 ```typescript
 static enumerateObjectInstances(dataViewObjectParser: dataViewObjectsParser.DataViewObjectsParser, options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration;

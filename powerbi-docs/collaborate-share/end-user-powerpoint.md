@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 01/25/2023
 LocalizationGroup: Share your work
 ---
 # Export a report to PowerPoint
@@ -64,7 +64,7 @@ After the Power BI service has finished the export process, the notification ban
 
 ![browser notification, at bottom of screen](media/end-user-powerpoint/power-bi-browsers.png)
 
-And that's all there is to it. You can download the file, open it with PowerPoint, and then modify or enhance it like you would any other PowerPoint deck.
+And that's all there's to it. You can download the file, open it with PowerPoint, and then modify or enhance it like you would any other PowerPoint deck.
 
 ## Open the PowerPoint file
 When you open the PowerPoint file that Power BI exported, you find a few cool and useful elements. Take a look at the following image, and check out the numbered elements that describe some of those cool features. Pages in PowerPoint are always created in the standard 9:16 size, regardless of the original page sizes or dimensions in the Power BI report.
@@ -83,7 +83,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 5. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries/regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 
-When you view an individual slide, you see that each report page is an independent image. Scrolling in PowerPoint is not available since each slide is a static image.
+When you view an individual slide, you see that each report page is an independent image. Scrolling in PowerPoint isn't available since each slide is a static image.
 
 ![Screen showing each visual as a separate image](media/end-user-powerpoint/power-bi-images.png)
 
@@ -92,32 +92,37 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 ## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
+### If you don't see the **Export** option
+* Make sure that you're viewing a report (not a dashboard).
+* It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
-* If you don't see the **Export** option, make sure that you are viewing a report (not a dashboard).
+### Features and visuals that aren't supported
+The following aren't supported for **Export to PowerPoint**.  Either the **PowerPoint** export option will be greyed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a grey box with an error message.
 
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
-* When exporting to PowerPoint, if the report uses a custom font, that font will be replaced with a default font.
+* If the report uses a custom font, that font will be replaced with a default font.
 
-* The following visual types are not supported, and will not be exported to PowerPoint:
+* The following visual types aren't supported, and won't be exported to PowerPoint:
    - [Custom visuals that haven't been certified](../developer/visuals/power-bi-custom-visuals-certified.md)) aren't supported. 
    - R, Python, Power Apps, Power Automate, Visio, [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md), and paginated report visuals aren't currently supported.
-   - Visuals [displayed as a Data point table](../create-reports/desktop-see-data-see-records.md) aren't supported.   
-   - Visuals in a drill down state will be exported in their default state. 
-   - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
+   - Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md) don't have the option to export to PowerPoint.
+   - Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will export the visual in its default state, without the table.   
+   - Visuals in a drill-down state will be exported in their default state. 
 
-* Some reports cannot be exported. These include:
-    - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
-    - Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details.
-    - Reports larger than 500 MB when exported. 
-    - Reports being exported to older versions of PowerPoint.
-    - Reports that take longer than an hour to process. 
-    - Report pages that take longer than 6 minutes to load. 
+### Reports that can't be exported
+- If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
+- Reports with more than 50 report pages. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details.
+- Reports larger than 500 MB when exported. 
+- Reports being exported to older versions of PowerPoint.
+- Reports that take longer than an hour to process. 
+- Report pages that take longer than 6 minutes to load.
+- The resolution of exported report pages is 1280 pixels x 720 pixels. 
 
-* If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your Power BI admin or report owner disabled the feature. Contact your admin or the owner for details.
-* The resolution of exported report pages is 1280 pixels x 720 pixels. 
+### General
+* Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
-* Export to PowerPoint is not currently supported for tenants in the China North region. 
+* Export to PowerPoint isn't currently supported for tenants in the China North region. 
 
 ## Next steps
 [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    
