@@ -22,7 +22,7 @@ The [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) allows
 
 ## Manage the Analytics pane
 
-Managing properties in the [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) is very similar to the managing properties in the [**Format** pane](./custom-visual-develop-tutorial-format-options.md). You define an [object](objects-properties.md) in the visual's [*capabilities.json*](capabilities.md) file.
+Managing properties in the [**Analytics** pane](../../transform-model/desktop-analytics-pane.md) is similar to the managing properties in the [**Format** pane](./custom-visual-develop-tutorial-format-options.md). You define an [object](objects-properties.md) in the visual's [*capabilities.json*](capabilities.md) file.
 
 For the **Analytics** pane, the object is defined as follows:
 
@@ -54,7 +54,7 @@ Example:
 }
 ```
 
-### [Older API's (before 5.1)](#tab/Old-API)
+### [Older APIs (before 5.1)](#tab/Old-API)
 
 * Under the object's definition, add the `displayName` and an `objectCategory` field with a value of `2`.
 
@@ -94,7 +94,7 @@ Example:
 
 ---
 
-In the formatting settings card, specify that this card belongs to the analytics pane by setting the `set card analyticsPane` parameter to `true`. By default, `analyticsPane` parameter is false and the card will be added to formatting pane. See the implementations below:
+In the formatting settings card, specify that this card belongs to the analytics pane by setting the `set card analyticsPane` parameter to `true`. By default, `analyticsPane` parameter is false and the card will be added to formatting pane. See the following implementations:
 
 #### [Using FormattingModel Utils](#tab/API-5-1-Impl-FormattingModel-Utils)
 
