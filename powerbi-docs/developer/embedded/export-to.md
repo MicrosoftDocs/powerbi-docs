@@ -378,7 +378,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 
 ## Considerations and limitations
 
-* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium capacity load evaluation](../../enterprise/service-premium-concepts.md#premium-gen2-capacity-load-evaluation).
+* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium capacity load evaluation](../../enterprise/service-premium-concepts.md).
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * All related datasets in the report you're exporting must reside on a Premium or Embedded capacity, including datasets with a Direct Query connection.
 * Exported reports can't exceed a file size of 250 MB.
