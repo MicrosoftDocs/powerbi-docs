@@ -16,7 +16,7 @@ Deployment history is a deployment pipelines feature that enables reviewing the 
 
 You can use the deployment history log, to check the health of your pipeline, and to troubleshoot problems that occurred during previous deployments.
 
-When you perform a deployment, you can use the built-in option to [leave notes](deployment-pipelines-get-started.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
+When you perform a deployment, you can use the built-in option to [leave notes](deployment-pipelines-deploy.md#review-your-deployment-and-leave-a-note), to add additional information to each deployment. Later, when you're looking back at your deployment history, the notes can help you understand what happened during each deployment.
 
 :::image type="content" source="media/deployment-pipelies-history/deployment-history.png" alt-text="A screenshot of the deployment pipelines history pane.":::
 
