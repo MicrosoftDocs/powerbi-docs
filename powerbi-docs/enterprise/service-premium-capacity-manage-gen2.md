@@ -1,6 +1,6 @@
 ---
-title: Manage Microsoft Power BI Premium Gen2 capacities
-description: Describes management tasks for Power BI Premium Gen2 capacities.
+title: Manage Microsoft Power BI Premium capacities
+description: Describes management tasks for Power BI Premium capacities.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -12,16 +12,13 @@ ms.custom:
 LocalizationGroup: Premium
 ---
 
-# Managing Premium Gen2 capacities
+# Managing Premium capacities
 
 Managing Power BI Premium involves creating, managing, and monitoring Premium capacities. This article provides an overview of capacities; see [Configure and manage capacities](service-admin-premium-manage.md) for step-by-step instructions.
 
 ## Creating and managing capacities
 
 The **Capacity Settings** page of the Power BI Admin portal displays the number of v-cores purchased and Premium capacities available. The page allows Global administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
-
-> [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-gen2-what-is.md).
 
 > [!NOTE]
 > You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
@@ -117,10 +114,10 @@ Using the Power BI Premium [Capacity Utilization and Metrics app](service-premiu
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Using autoscale with Premium Gen2](service-premium-auto-scale.md)
+>[Using autoscale with Premium](service-premium-auto-scale.md)
 
 >[!div class="nextstepaction"]
->[Install the Gen2 metrics app](service-premium-install-gen2-app.md)
+>[Install the metrics app](service-premium-install-gen2-app.md)
 
 >[!div class="nextstepaction"]
->[Using the Premium Gen2 metrics app](service-premium-gen2-metrics-app.md)
+>[Using the Premium metrics app](service-premium-gen2-metrics-app.md)
