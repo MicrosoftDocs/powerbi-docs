@@ -48,6 +48,15 @@ The button is a shortcut to the add-in offering in the Office add-in store. The 
 >[!NOTE]
 > The rollout of the Power BI add-in for PowerPoint depends on the update cadence of your organization's Microsoft 365 subscription. Hence the add-in may not immediately be available in your organization. To ensure availability of the add-in, use the latest version of Microsoft 365.
 
+## Sovereign cloud support
+
+The Power BI add-in for PowerPoint is available in sovereign clouds as an admin managed add-in. Admins of Power BI tenants in sovereign clouds can make the add-in available to their users as follows:
+
+1. Sign into the Power BI service with an admin account.
+1. Select Settings and then choose XXX to download the add-in. Only Power BI admins of tenants in sovereign clouds see this option.
+1. See [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins) to learn how to deploy the add-in for your users.
+
+
 ## Next Steps
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
