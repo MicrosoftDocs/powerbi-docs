@@ -17,7 +17,7 @@ You can quickly create a Power BI dataset directly from a SharePoint list. The d
 
 Creating a dataset directly from a SharePoint list is an easy and quick way to share a dataset, because if you save it to a shared workspace, everyone with the sufficient permissions in the workspace can use it. You can also use [dataset sharing](./service-datasets-share.md) to share it with other users who don’t have a role in the workspace.
 
-To keep the data fresh after you’ve created the dataset, either refresh the data manually or set up scheduled refresh. 
+To keep the data fresh after you've created the dataset, either refresh the data manually or set up scheduled refresh.
 
 ## Create a dataset from a SharePoint list
 
