@@ -65,5 +65,5 @@ In paginated reports, you can format any part of the text in a text box independ
  [Add HTML into a Report &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/add-html-into-a-report-report-builder-and-ssrs)   
  [Tables, Matrices, and Lists &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
  [Formatting Numbers and Dates &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)   
- [Placeholder Properties Dialog Box, General &#40;Report Builder and Service&#41;](./text-boxes-report-builder-and-ssrs.md)  
+ [Placeholder Properties Dialog Box, General &#40;Report Builder and Service&#41;](./text-boxes-report-builder-and-service.md)  
   
