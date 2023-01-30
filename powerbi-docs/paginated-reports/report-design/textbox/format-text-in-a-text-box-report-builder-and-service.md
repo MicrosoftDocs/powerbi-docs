@@ -3,7 +3,7 @@ title: "Format text in a text box in Ppower BI paginated reports | Microsoft Doc
 description: Discover how to format text in a text box in paginated reports, and how to mix placeholder text and static text to create mail merges or templates for text in Power BI Report Builder. 
 ms.date: 01/26/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -11,7 +11,7 @@ ms.reviewer: rpatkar
 ---
 # Format text in a text box in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
 In paginated reports, you can format any part of the text in a text box independently, and mix placeholder text and static text in one text box. This ability to mix formats and add placeholder text enables you to create mail merges or templates for text in your paginated report. Any expression can be defined and formatted separately using a placeholder.  
   
@@ -65,5 +65,5 @@ In paginated reports, you can format any part of the text in a text box independ
  [Add HTML into a Report &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/add-html-into-a-report-report-builder-and-ssrs)   
  [Tables, Matrices, and Lists &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)   
  [Formatting Numbers and Dates &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)   
- [Placeholder Properties Dialog Box, General &#40;Report Builder and Service&#41;](text-boxes-report-builder-and-ssrs.md)  
+ [Placeholder Properties Dialog Box, General &#40;Report Builder and Service&#41;](./text-boxes-report-builder-and-ssrs.md)  
   
