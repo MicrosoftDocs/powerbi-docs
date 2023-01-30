@@ -13,7 +13,7 @@ LocalizationGroup: Transform and shape data
 
 # Work with Modeling view in Power BI Desktop
 
-With Modeling view in Power BI Desktop, you can view and work with complex datasets that contain many tables.
+With **Modeling view** in **Power BI Desktop**, you can view and work with complex datasets that contain many tables.
 
 ## Use Modeling view
 
@@ -23,7 +23,7 @@ To access **Modeling view**, select the **Model icon** found on the left side of
 
 ## Create separate diagrams
 
-With **Modeling view**, you can create diagrams of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex datasets easier. To create a new diagram with only a subset of the tables, select the **+** sign next to the **All tables** tab along the bottom of the Power BI Desktop window.
+With **Modeling view**, you can create diagrams of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex datasets easier. To create a new diagram with only a subset of the tables, select the **+** button next to the **All tables** tab along the bottom of the Power BI Desktop window.
 
 :::image type="content" source="media/desktop-modeling-view/modeling-view_03.png" alt-text="Screenshot of the + sign button in the tabs section that creates a new diagram.":::
 
@@ -40,7 +40,7 @@ When you do, tables that are related to the original table are displayed in the 
 
 ## Set common properties
 
-You can select multiple objects at once in **Modeling view** by holding down the **Ctrl** key and clicking multiple tables. When you select multiple tables, they become highlighted in Modeling view. When multiple tables are highlighted, changes applied in the **Properties** pane apply to all selected tables.
+You can select multiple objects at once in **Modeling view** by holding down the **Ctrl** key and selecting multiple tables. When you select multiple tables, they become highlighted in Modeling view. When multiple tables are highlighted, changes applied in the **Properties** pane apply to all selected tables.
 
 For example, you could change the [storage mode](desktop-storage-mode.md) for multiple tables in your diagram view by holding down the **Ctrl** key, selecting tables, then changing the storage mode setting in the **Properties** pane.
 
