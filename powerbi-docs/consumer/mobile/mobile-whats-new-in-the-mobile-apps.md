@@ -243,11 +243,11 @@ Paginated Report visuals (preview) enable you to render any paginated report upl
 Just like any other Power BI visual, Paginated Report visuals are fully interactive, and are also supported in the Power BI Mobile apps.
 
 ### Support for passing URL parameters to paginated reports (Android)
-Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
+Support for passing parameters to paginated reports via the URL now comes to Android! Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/parameters/pass-a-report-parameter-within-a-url.md)
 
 ## May 2021
 ### Support for passing URL parameters to paginated reports (iOS)
-We now support passing parameters to paginated reports via the URL. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/report-builder-url-pass-parameters.md)
+We now support passing parameters to paginated reports via the URL. Passing parameters via the report URL automatically sets the report parameters to those values. [Learn more](../../paginated-reports/parameters/pass-a-report-parameter-within-a-url.md)
 
 ## April 2021
 ### Support for Power BI in Split View (iPads)

@@ -27,7 +27,7 @@ This article covers the following cases:
 
 The mobile apps support report links that include query-string parameters. Such links open in the mobile app pre-filtered according to the conditions defined in the query string. For more information about creating report URLs with query string parameters, see [Filter a report query string parameters in the URL](../../collaborate-share/service-url-filters.md).
 
-The mobile apps also support passing parameters to paginated reports via URLs. For more information, see [Pass a report parameter in a URL for a paginated report](../../paginated-reports/report-builder-url-pass-parameters.md) for details.
+The mobile apps also support passing parameters to paginated reports via URLs. For more information, see [Pass a report parameter in a URL for a paginated report](../../paginated-reports/parameters/pass-a-report-parameter-within-a-url.md) for details.
 
 ## Use links from outside the mobile app
 

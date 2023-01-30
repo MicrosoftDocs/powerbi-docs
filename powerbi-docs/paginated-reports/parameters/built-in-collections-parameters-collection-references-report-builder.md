@@ -4,13 +4,11 @@ description: Discover how to use parameters in an expression to customize pagina
 ms.date: 01/25/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Built-in collections - Parameters collection references in a paginated report (Power BI Report Builder)
+# Built-in parameters collection references in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 

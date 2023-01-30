@@ -47,10 +47,10 @@ ms.author: maggies
   
      An available values list limits the choices a user can make to only valid values for the parameter. For multiple values, the top of list begins with a **Select All** feature so the user can select or clear all values with a single click. If you choose to get the available values for the report parameter from a dataset query, be sure to select a dataset that does not contain the query variable that is associated with the same report parameter.  
   
-     For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-available-values-for-a-report-parameter.md).  
+     For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/add-change-or-delete-available-values-for-a-report-parameter).  
 
 ## Next Steps  
- [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
- [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-available-values-for-a-report-parameter.md)  
+ [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-servicesadd-cascading-parameters-to-a-report-report-builder-and-ssrs)   
+ [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/add-change-or-delete-available-values-for-a-report-parameter)  
   
   
