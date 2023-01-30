@@ -32,7 +32,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |**Comparisons**     |   vs, versus, compared to, compared with            |
 |**Conjunctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |
 |**Contractions**     |  Q&A recognizes almost all contractions, try it out. Here are a few examples: didn't, haven't, he'd, he's, isn't, it's, she'll, they'd, weren't, who's, won't, wouldn't          |
-|**Dates**     |       Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see *Relative dates*). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade. Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
+|**Dates**     |       Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see *Relative dates*). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade. Examples: January 3rd of 1995, January 3rd 1995, Jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
 |**Relative dates**     |   today, right now, current time, yesterday, tomorrow, the current, next, the coming, last, previous, ago, before now, sooner than, after, later than, from, at, on, from now, after now, in the future, past, last, previous, within, in, over, N days ago, N days from now, next, once, twice.|
 |    |  Example: count of orders in the past 6 days.  |
 |**Equality (Range)**     |   in, equal to, =, after, is more than, in, between, before  |
