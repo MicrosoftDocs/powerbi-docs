@@ -143,7 +143,7 @@ Three types of dataflow tables (also known as *entities*) are depicted in the sc
 
 ### Enhanced compute engine
 
-The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md?tabs=gen2#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium. The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-premium-features.md?tabs=gen2) from the enhanced compute engine:
+The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium. The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-premium-features.md) from the enhanced compute engine:
 
 - Split out the staging and transformation dataflows.
 - Use the same workspace to store the staging and transformation dataflows.
@@ -164,7 +164,7 @@ Here are some advantages of using your own data lake:
 - Users (or processes) can directly access the dataflow data stored in the data lake. That's helpful when dataflow reuse occurs beyond Power BI. For example, Azure Data Factory could access the dataflow data.
 - Other tools or systems can manage the data in the data lake. In this case, Power BI could consume the data rather than manage it (not depicted in the scenario diagram).
 
-When using linked tables or computed tables, make sure that each workspace is assigned to the same ADLSGen2 storage account.
+When using linked tables or computed tables, make sure that each workspace is assigned to the same ADLS Gen2 storage account.
 
 > [!NOTE]
 > Dataflow data in ADLS Gen2 is stored within a Power BI-specific container. This container is depicted in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario diagram.

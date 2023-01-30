@@ -57,20 +57,16 @@ sections:
           In development testing, you can use free embed trial tokens with a Pro license. To embed in a production environment, you must purchase a capacity.
   - name: Embedded Gen 2
     questions:
-      - question: |
-          What is Power BI Embedded Generation 2?
-        answer: |
-          Power BI Embedded recently released a new version, called **Embedded Gen2**. Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience.
 
       - question: |
-          How can I autoscale Embedded Gen2?
+          How can I autoscale an Embedded Premium capacity?
         answer: |
-          Embedded Gen 2 doesn't provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Gen2, see [Autoscaling in Embedded Gen2](./azure-pbie-scale-capacity.md#autoscale-your-capacity). 
+          Embedded Premium capacities don't provide an out-of-the-box vertical autoscale feature. To learn about alternative autoscale options for Embedded Premium capacities, see [Autoscaling in Embedded(./azure-pbie-scale-capacity.md#autoscale-your-capacity). 
 
       - question: |
-          How is Embedded Gen2 resource utilization evaluated?
+          How is an Embedded Premium resource utilization evaluated?
         answer: |
-          Power BI Embedded Gen2 evaluates your level of utilization by aggregating utilization records every 30 seconds. Each evaluation is composed of two different aggregations: *Interactive utilization* and *background utilization*. 
+          Power BI Embedded Premium evaluates your level of utilization by aggregating utilization records every 30 seconds. Each evaluation is composed of two different aggregations: *Interactive utilization* and *background utilization*. 
           
           *Interactive utilization* is evaluated by considering all the interactive operations that completed on or near the current half-minute evaluation cycle.
           
@@ -107,14 +103,14 @@ sections:
       - question: |
           How can I get notified that I'm approaching my max capacity?
         answer: |
-          There are two options for Embedded Gen2:
+          There are two options for Embedded Premium:
           * The **Capacity management** page in the Power BI admin portal has a utilization notification checkbox. Users can select the threshold at which an alert will be triggered (the default is 80%), and the email address to which utilization alerts should be sent.
-          * Configure an [Azure Alert](/azure/azure-monitor/alerts/alerts-overview) using the Gen2 CPU metric.
+          * Configure an [Azure Alert](/azure/azure-monitor/alerts/alerts-overview) using the Premium CPU metric.
 
       - question: |
           How much data is Power BI storing? How can I retain more?
         answer: |
-          The Power BI service stores over 90 days of utilization data. Users who need longer data retention can use Bring Your Own Log Analytics (BYOLA) to store more utilization data, which will be available for Embedded Gen2 customers by the Embedded Gen2 generally available (GA) date. 
+          The Power BI service stores over 90 days of utilization data. Users who need longer data retention can use Bring Your Own Log Analytics (BYOLA) to store more utilization data, which will be available for Embedded Premium customers by the Embedded Premium generally available (GA) date. 
 
       - question: |
           How do I use utilization data to perform chargebacks?

@@ -126,7 +126,7 @@ sections:
 
           * You can't have a dataflow run in a PPU workspace, import it to a Power BI dataset in another workspace, and then allow users without a PPU license to access the content.
           
-          * Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium, Premium Gen2, or shared environments) must have its datasets refreshed before use. Reports opened after such migrations without being refreshed will fail with an error like: *This operation isn't allowed, as the database 'database name' is in a blocked state.*
+          * Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium or shared environments) must have its datasets refreshed before use. Reports opened after such migrations without being refreshed will fail with an error like: *This operation isn't allowed, as the database 'database name' is in a blocked state.*
 
 additionalContent: |
  
