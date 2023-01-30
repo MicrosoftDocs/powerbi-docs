@@ -516,10 +516,6 @@
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
-    - name: Visualizations in paginated reports
-      items: 
-      - name: Display percentage values on pie charts
-        href: ../paginated-reports/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
@@ -545,7 +541,7 @@
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/parameters/pass-report-parameter-url.md
       - name: Associate a query parameter with a report parameter
-        href: ../paginated-reports/associate-query-parameter-report-parameter-report-builder.md
+        href: ../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md
       - name: Change the order of report parameters
         href: ../paginated-reports/parameters/change-order-report-parameter-report-builder.md
       - name: Customize the parameters pane
