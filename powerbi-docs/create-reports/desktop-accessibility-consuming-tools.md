@@ -45,7 +45,7 @@ Many Power BI report creators are building reports that contain a large amount o
 
 To navigate through the first level when you navigate to a visual, press **Ctrl + right arrow** to enter that visual. Once you enter that visual, you can press **Tab** to cycle through the main areas of the visual. Those main areas you can cycle through are the data plot area, the axis categories (if applicable to the visual), and the legend if the visual has one.
 
-The following .gif shows how a user cycles through the first level of a visual:
+The following animation shows how a user cycles through the first level of a visual:
 
 :::image type="content" source="media/desktop-accessibility/accessibility-consuming-tools-04.gif" alt-text="Animation showing selections cycling through the first level of a visual.":::
 
@@ -57,7 +57,7 @@ If you’d like to select specific data points, navigate to the data plot area a
 
 If you’d like to select all the data points in a categorical axis, navigate to the axis labels and press **Enter**. Once in the axis labels, you can press **Tab** to navigate through the label names. Press **Enter** to select a label name.
 
-If you’ve navigated into a layer, you can press **Esc** to come out of that layer. The following .gif shows how a user can enter and exit the levels of a visual and select data points, x-axis category labels, jump to a different series, and select all the data points in a series.
+If you’ve navigated into a layer, you can press **Esc** to come out of that layer. The following animation shows how a user can enter and exit the levels of a visual and select data points, x-axis category labels, jump to a different series, and select all the data points in a series.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-consuming-tools-05.gif" alt-text="Animation showing selections cycling through the second level of a visual.":::
 
@@ -67,15 +67,15 @@ If you're unable to navigate to an object or visual while using a keyboard, the 
 
 Slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use **Ctrl + Right arrow** to move through the various controls within the slicer. For example, when you initially press **Ctrl + Right arrow**, the focus is on the eraser. Then, pressing the **spacebar** is equivalent to clicking the eraser button, which erases all values on the slicer.
 
-You can move through the controls in a slicer by pressing **Tab**. Pressing **Tab** when on the eraser moves to the drop-down button. Another **Tab** then moves to the first slicer value if there are multiple values for the slicer, such as a range.
+You can move through the controls in a slicer by pressing **Tab**. Pressing **Tab** when on the eraser moves to the dropdown button. Another **Tab** then moves to the first slicer value if there are multiple values for the slicer, such as a range.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-consuming-tools-06.png" alt-text="Screenshot showing the navigation slicers.":::
 
-### Switching pages
+### Switch pages
 
 When focus is on report page tabs, use the **Tab** or **Arrow** keys to move focus from one report page to the next. The screen reader reads out the title of the report page and whether it's currently selected. To load the report page currently under focus, use the **Enter** key or **spacebar**.
 
-### Accessing the visual header
+### Access the visual header
 
 As you navigate between visuals, you can press **Alt + Shift + F10** to move focus to the visual header. The visual header contains various options including sorting, exporting the data behind the chart, and Focus mode. The icons you see in the visual header will depend on the options the report author has decided to show.
 
@@ -95,7 +95,7 @@ You can press **Alt + Shift + F11** to present an accessible version of the **Sh
 
 The **Show data** feature is an HTML table that's only accessible to a screen reader through this keyboard shortcut. If you open **Show data** from the option in the visual header, a table that's *not* screen reader compatible is displayed. When using **Show data** through keyboard shortcuts, turn on scan mode to take advantage of all the hot keys your screen reader provides.
 
-To exit the **Show Data** view and return to a report, press **Esc**.
+To exit the **Show data** view and return to a report, press **Esc**.
 
 ## High contrast modes
 
