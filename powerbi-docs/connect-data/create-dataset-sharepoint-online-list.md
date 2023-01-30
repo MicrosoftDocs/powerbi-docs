@@ -19,7 +19,7 @@ Creating a dataset directly from a SharePoint list is an easy and quick way to s
 
 To keep the data fresh after you've created the dataset, either refresh the data manually or set up scheduled refresh.
 
-This feature creates a BI dataset in the Power BI service directly from a SharePoint list. If you need to model or transform the data in ways that aren't available in the service, you can also connect to the SharePoint list from Power BI Desktop. For more information, see [Create a report on a SharePoint List in Power BI Desktop](./desktop-sharepoint-online-list.md).
+This feature creates a dataset in the Power BI service directly from a SharePoint list. If you need to model or transform the data in ways that aren't available in the service, you can also connect to the SharePoint list from Power BI Desktop. For more information, see [Create a report on a SharePoint List in Power BI Desktop](./desktop-sharepoint-online-list.md).
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ To create a Power BI dataset from a SharePoint list:
 
     :::image type="content" source="./media/create-dataset-sharepoint-online-list/export-to-power-bi-sharepoint-option.png" alt-text="Screenshot showing Export to Power BI option in SharePoint Export menu.":::
 
-1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the SharePoint list and saved to My workspace. You can choose your own name and destination workspace.
+1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the SharePoint list and saved to My workspace. You can choose your own name and destination workspace. If you are a [free user](../fundamentals/service-features-license-type.md#free-per-user-license) in Power BI, you will only be able to save to My workspace.
 
     :::image type="content" source="./media/create-dataset-sharepoint-online-list/name-dataset-dialog.png" alt-text="Screenshot of a dialog where you name the dataset and choose a workspace.":::
 
