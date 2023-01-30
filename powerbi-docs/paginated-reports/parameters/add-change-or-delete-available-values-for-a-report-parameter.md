@@ -31,7 +31,7 @@ ms.author: maggies
   
     -   Click **Specify values** to manually provide a list of values, and optionally, friendly names (the labels) for the values.  
   
-         Click **Add** and then enter the value in the **Value** text box, and optionally, the label in the **Label** text box. If you do not provide a label, the value is used. You can write an expression for a value. The data type must match the data type of the parameter. Field names cannot be used in an expression for a parameter. For examples, see [Commonly Used Filters &#40;Power BI Report Builder&#41;](commonly-used-filters-report-builder-and-ssrs.md).  
+         Click **Add** and then enter the value in the **Value** text box, and optionally, the label in the **Label** text box. If you do not provide a label, the value is used. You can write an expression for a value. The data type must match the data type of the parameter. Field names cannot be used in an expression for a parameter. For examples, see [Commonly Used Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/commonly-used-filters-report-builder-and-ssrs).  
   
          Repeat this step for as many values as you want to provide. The order of items you see in this list determines the order that the user sees them in the drop-down list. To change the order of an item in the list, click a **Value** or **Label** text box to select the item, and then use the up and down arrow buttons to move the item higher or lower in the list.  
   
