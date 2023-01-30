@@ -9,6 +9,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
 ---
 # Add cascading parameters to a Power BI paginated report (Power BI Report Builder)
 
