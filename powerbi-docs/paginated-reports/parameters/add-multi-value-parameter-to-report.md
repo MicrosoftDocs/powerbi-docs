@@ -14,12 +14,12 @@ ms.author: maggies
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  You can add a parameter to a Power BI paginated report that allows the user to select more than one value for the parameter.  
+  In a Power BI paginated report, you can add a parameter that allows the user to select more than one value for the parameter.  
   
- You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](pass-a-report-parameter-within-a-url.md).  
+ You can pass multiple parameter values to the report within the report URL. For a URL example that includes a multi-value parameter, see [Pass a Report Parameter Within a URL](pass-report-parameter-url.md).  
    
   
-## To add a multi-value parameter  
+## Add a multi-value parameter  
   
 1.  In Power BI Report Builder, open the report that you want to add the multi-value parameter to.  
   
@@ -49,7 +49,7 @@ ms.author: maggies
   
      For more information, see [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/add-change-or-delete-available-values-for-a-report-parameter).  
 
-## Next Steps  
+## Next steps  
  [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-servicesadd-cascading-parameters-to-a-report-report-builder-and-ssrs)   
  [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/add-change-or-delete-available-values-for-a-report-parameter)  
   

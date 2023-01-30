@@ -116,7 +116,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 ## Considerations and limitations
 
-* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. For more information, see [Pass a report parameter in a URL for a paginated report in Power BI](../paginated-reports/parameters/pass-a-report-parameter-within-a-url.md).
+* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. For more information, see [Pass a report parameter in a URL for a paginated report in Power BI](../paginated-reports/parameters/pass-report-parameter-url.md).
 
 * The secure embed option works for reports that are published to the Power BI service.
 

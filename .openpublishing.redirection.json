@@ -1501,12 +1501,12 @@
         },
         {
             "source_path": "powerbi-docs/report-builder-url-pass-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/parameters/pass-a-report-parameter-within-a-url",
+            "redirect_url": "/power-bi/paginated-reports/parameters/pass-report-parameter-url",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/paginated-reports/report-builder-url-pass-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/parameters/pass-a-report-parameter-within-a-url",
+            "redirect_url": "/power-bi/paginated-reports/parameters/pass-report-parameter-url",
             "redirect_document_id": false
         },
         {

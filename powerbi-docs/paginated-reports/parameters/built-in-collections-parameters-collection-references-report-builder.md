@@ -47,8 +47,8 @@ ms.author: maggies
  For more information about using parameters in a filter, see [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer).  
   
 ## Next steps
-[Change the order of a paginated report parameter - Power BI Report Builder](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)
+[Change the order of a paginated report parameter - Power BI Report Builder](change-order-report-parameter-report-builder.md)
 
-[Add a multi-value parameter to a paginated report - Power BI Report Builder](add-a-multi-value-parameter-to-a-report.md)
+[Add a multi-value parameter to a paginated report - Power BI Report Builder](customize-parameters-pane-report-report-builder.md)
 
-[Customize the Parameters pane in a paginated report - Power BI Report Builder](customize-the-parameters-pane-in-a-report-report-builder.md)
+[Customize the Parameters pane in a paginated report - Power BI Report Builder](customize-parameters-pane-report-report-builder.md)

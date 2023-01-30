@@ -543,15 +543,15 @@
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
       - name: Pass a report parameter in a URL
-        href: ../paginated-reports/parameters/pass-a-report-parameter-within-a-url.md
+        href: ../paginated-reports/parameters/pass-report-parameter-url.md
       - name: Associate a query parameter with a report parameter
-        href: ../paginated-reports/associate-a-query-parameter-with-a-report-parameter-report-builder-and-ssrs.md
+        href: ../paginated-reports/associate-query-parameter-report-parameter-report-builder.md
       - name: Change the order of report parameters
-        href: ../paginated-reports/parameters/change-the-order-of-a-report-parameter-report-builder-and-ssrs.md
+        href: ../paginated-reports/parameters/change-order-report-parameter-report-builder.md
       - name: Customize the parameters pane
-        href: ../paginated-reports/parameters/customize-the-parameters-pane-in-a-report-report-builder.md
+        href: ../paginated-reports/parameters/customize-parameters-pane-report-report-builder.md
       - name: Add a multi-value parameter
-        href: ../paginated-reports/parameters/add-a-multi-value-parameter-to-a-report.md
+        href: ../paginated-reports/parameters/customize-parameters-pane-report-report-builder.md
       - name: Built-in parameters collection references
         href: ../paginated-reports/parameters/built-in-collections-parameters-collection-references-report-builder.md
     - name: Expression examples

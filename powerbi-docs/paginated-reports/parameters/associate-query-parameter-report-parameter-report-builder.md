@@ -1,6 +1,6 @@
 ---
 title: "Associate a query parameter with a report parameter for a paginated report (Power BI Report Builder) | Microsoft Docs"
-description: Learn uses for Reporting Services report parameters, the properties you can set, and how to associate a dataset query parameter with a report parameter.
+description: Learn uses for Power BI paginated report parameters, the properties you can set, and how to associate a dataset query parameter with a report parameter.
 ms.date: 01/25/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -12,7 +12,7 @@ ms.author: maggies
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  When you define a dataset query that contains a query variable, the query command is parsed. For each query variable, a corresponding dataset parameter and report parameter are created. The dataset parameter points to the report parameter. This enables a user to enter a value that passes directly to the query. Each time you edit the query command, the same process takes place.  
+  In a Power BI paginated report, when you define a dataset query that contains a query variable, the query command is parsed. For each query variable, a corresponding dataset parameter and report parameter are created. The dataset parameter points to the report parameter. This enables a user to enter a value that passes directly to the query. Each time you edit the query command, the same process takes place.  
   
  If you rename a report parameter that is bound to a query parameter, you need to manually link the query parameters to the renamed report parameter by using the procedure in this topic.  
   
