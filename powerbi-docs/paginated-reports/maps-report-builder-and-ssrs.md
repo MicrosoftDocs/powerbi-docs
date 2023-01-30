@@ -17,7 +17,7 @@ ms.author: maggies
   
  A map contains a title, a viewport that specifies the center point and scale, an optional Bing map tile background for the viewport, one or more layers that display spatial data, and a variety of legends that help users interpret the data visualizations. The following illustration shows the basic parts of a map.  
   
- ![rs_MapElements](../../reporting-services/report-design/media/rs-mapelements.gif "rs_MapElements")  
+ ![rs_MapElements](/sql/reporting-services/report-design/media/rs-mapelements.gif "rs_MapElements")  
   
  To start to use a map immediately, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder) or [Report Samples (Power BI Report Builder)](https://go.microsoft.com/fwlink/?LinkId=198283).  
   
@@ -65,7 +65,7 @@ ms.author: maggies
   
 -   **ESRI Shapefiles.** ESRI Shapefiles contain data that complies with the Environmental Systems Research Institute, Inc. (ESRI) Shapefile spatial data format. ESRI Shapefiles refer to a set of files. Data in the .shp file specifies the geographical or geometrical shapes. Data in the .dbf file provides attributes for the shapes. To view a map in design view or to run a map from the report server, both files must be in the same folder. When you add spatial data from a .shp file on your local file system, the spatial data is embedded in your report. To retrieve spatial data dynamically at run time, upload the Shapefiles to your report server, and then specify them as the source for spatial data. For more information, see [Finding ESRI Shapefiles for a Map](https://go.microsoft.com/fwlink/?linkid=178814).  
   
--   **SQL Server spatial data stored in a database.** You can use a query that specifies **SQLGeometry** or **SQLGeography** data types from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] relational database. For more information, see [Spatial Data Types Overview](../../relational-databases/spatial/spatial-data-types-overview.md).  
+-   **SQL Server spatial data stored in a database.** You can use a query that specifies **SQLGeometry** or **SQLGeography** data types from a  relational database. For more information, see [Spatial Data Types Overview](/sql/relational-databases/spatial/spatial-data-types-overview.md).  
   
      In the result set that you see in the query designer, each row of spatial data is treated as a unit and stored in a single map element. For example, if there are multiple points that are defined in one row in the result set, display properties apply to all points in that map element.  
   
@@ -127,7 +127,7 @@ ms.author: maggies
 ##  <a name="Viewport"></a> Understanding the Map Viewport  
  After you specify map data for a report, you can limit the display area of the map by specifying a map *viewport*. By default, the viewport is the same area as the whole map. To crop the map, you can specify the center, zoom level, and maximum and minimum coordinates that define the area that you want to include in your report. To improve the display of the map in the report, you can move the legends, distance scale, and color scale outside the viewport. The following figure shows a viewport:  
   
- ![rs_MapViewport](../../reporting-services/report-design/media/rs-mapviewport.gif "rs_MapViewport")  
+ ![rs_MapViewport](/sql/reporting-services/report-design/media/rs-mapviewport.gif "rs_MapViewport")  
   
 ##  <a name="TileLayer"></a> Adding a Bing Map Tiles Layer  
  You can add a layer for Bing map tiles that provides a geographic background for the current map view as defined by the viewport. To add a tile layer, you must specify the coordinate system **geographic** and the projection type **Mercator**. Tiles that match the viewport center and zoom level that you select are automatically retrieved from Bing Maps Web Services.  
@@ -167,7 +167,7 @@ ms.author: maggies
   
  To work with layers, select a map on the report design surface to display the Map pane. The Map pane displays the list of layers that are defined for the map. Use this pane to select a layer to change the options, to change the drawing order of layers, to add a layer or run the Map Layer wizard, to hide or show a layer, and to change the view center and zoom level for the map viewport. The following figure shows a viewport:  
   
- ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../../reporting-services/report-design/media/rsmaplayerzone.gif "rsMapLayerZone")  
+ ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](/sql/reporting-services/report-design/media/rsmaplayerzone.gif "rsMapLayerZone")  
   
  For more information about map layers, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs).  
   
