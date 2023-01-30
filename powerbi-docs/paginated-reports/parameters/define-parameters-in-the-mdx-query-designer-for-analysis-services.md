@@ -70,6 +70,6 @@ ms.author: maggies
      To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
   
 ## Next steps  
- [Analysis Services DAX Query Designer User Interface](/sql/reporting-services/report-data/analysis-services-mdx-query-designer-user-interface)  
+ [Analysis Services MDX Query Designer User Interface](/sql/reporting-services/report-data/analysis-services-mdx-query-designer-user-interface)  
   
   
