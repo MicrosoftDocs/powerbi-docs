@@ -4,7 +4,7 @@ title: "Change map legends-color scale-associated rules in a paginated report | 
 description: Learn how to change map legends in a paginated report to help users interpret the data visualization on maps in Power BI Report Builder. 
 ms.date: 01/30/2023
 ms.service: powerbi
-ms.subservice: report builder
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
