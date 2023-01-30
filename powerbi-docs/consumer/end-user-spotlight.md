@@ -22,7 +22,7 @@ With spotlight, you can draw attention to a specific visual on a report page.  I
 
 1. Decide which visual you'd like to highlight on the report page. Select the **More options (...)** dropdown, then choose **Spotlight**.
 
-    :::image type="content" source="media/end-user-spotlight/power-bi-spotlights.png" alt-text="Screenshot of visuals and the More options dropdown menu showing the Spotlight option highlighted":::
+    :::image type="content" source="media/end-user-spotlight/power-bi-spotlights.png" alt-text="Screenshot of visuals and the More options dropdown menu showing the Spotlight option highlighted.":::
 
 1. The selected visual is highlighted, which causes all other visuals on the page to fade to near transparency.
 
