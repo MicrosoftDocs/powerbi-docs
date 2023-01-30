@@ -3,7 +3,7 @@ title: "Customize the display of a map or map layer in a paginated report | Micr
 description:  Improve the user experience of data and display in a paginated report with changes to legends, color, labels, and resolution in Power BI Report Builder. 
 ms.date: 01/30/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
@@ -11,8 +11,6 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Customize the display of a map or map layer in a paginated report (Power BI Report Builder)
-
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-ssrs-rb](../../includes/ssrs-appliesto-ssrs-rb.md)] [!INCLUDE [ssrs-appliesto-pbi-rb](../../includes/ssrs-appliesto-pbi-rb.md)] [!INCLUDE [ssrb-applies-to-ssdt-yes](../../includes/ssrb-applies-to-ssdt-yes.md)]
 
   After you add a map or map layer to a paginated report by using a wizard, you might want to change the way the map looks in the report. You can make improvements by considering the following ideas:  
   
@@ -36,9 +34,7 @@ ms.author: maggies
   
  A map report item includes the following parts: the map itself, a map viewport, a set of titles, a set of legends (legend, color scale, and distance scale), a set of layers, a set of map elements on each layer (polygons or lines or points). Use the information in the following sections to understand which property dialog box controls the display options for different parts of a map.  
   
-> [!NOTE]  
->  [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
-  
+
 ##  <a name="Map"></a> Change Options for the Map  
  On a map report item, you can control the following:  
   
