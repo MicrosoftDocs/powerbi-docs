@@ -19,6 +19,12 @@ Creating a dataset directly from a SharePoint list is an easy and quick way to s
 
 To keep the data fresh after you've created the dataset, either refresh the data manually or set up scheduled refresh.
 
+This feature creates a BI dataset in the Power BI service directly from a SharePoint list. If you need to model or transform the data in ways that aren't available in the service, you can also connect to the SharePoint list from Power BI Desktop. For more information, see [Create a report on a SharePoint List in Power BI Desktop](./desktop-sharepoint-online-list.md).
+
+## Prerequisites
+
+You must have a Power BI account to be able to use this functionality.
+
 ## Create a dataset from a SharePoint list
 
 To create a Power BI dataset from a SharePoint list:
@@ -41,6 +47,8 @@ To create a Power BI dataset from a SharePoint list:
 
     :::image type="content" source="./media/create-dataset-sharepoint-online-list/dataset-details-page.png" alt-text="Screenshot of the dataset details page of the newly created dataset.":::
 
+To keep the data fresh after you've created the dataset, either refresh the data manually or set up scheduled refresh.
+
 ## Reviewing the SharePoint list data
 
 When you export a SharePoint list to Power BI, a redirect URL is created that includes all the parameters needed to launch the create dataset process in Power BI. If you're the person who selected **Export to BI** in your SharePoint list, you probably don't need to worry about reviewing the data because you most likely are familiar with the data you're exporting.
@@ -59,13 +67,13 @@ If you get the following dialog, it means that you've already established a conn
 
 The Power BI view of the SharePoint list data is determined by the permissions of the account used to establish the Power BI connection to the SharePoint data source (that is, the SharePoint site).
 
-If you let Power BI use the existing sign-in details for the connection, the data you see in the dataset you're creating may differ from what you see in the SharePoint list. This is because the data that is shown in the dataset is what the account with the existing credentials can see in the SharePoint list.
+If you let Power BI use the sign-in details you used last time for the connection, the data you'll see in the dataset you're creating may differ from what you see in the SharePoint list. This is because the data that is shown in the dataset is what the account with the credentials you used last time can see in the SharePoint list.
 
-If you replace the existing credentials with your current sign-in credentials, the data you see in the dataset you're creating will be exactly the same as what you see in the SharePoint list. **However, since the connection now uses your current login credentials, views of the data in other datasets you might have created from that SharePoint site might also change, and this could affect reports and other downstream items that users might have created based on those datasets**.
+If you replace the credentials you used last time with your current sign-in credentials, the data you see in the dataset you're creating will be exactly the same as what you see in the SharePoint list. **However, since the connection now uses your current login credentials, views of the data in datasets you might have created previously from that SharePoint site might also change, and this could affect reports and other downstream items that users might have created based on those datasets**.
 
 Take the above considerations into account when you make your choice.
 
-If no previous connection to the SharePoint site exists, Power BI will automatically use your current credentials to establish the connection, and you won't see this dialog.
+If you've never previously connected to the SharePoint site from Power BI, Power BI will automatically use your current credentials to establish the connection, and you won't see this dialog.
 
 ## Considerations and limitations
 
