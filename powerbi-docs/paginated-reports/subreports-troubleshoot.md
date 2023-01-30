@@ -46,7 +46,7 @@ Possible issues:
 
 **In an app:**
 
-- Verify that the report with the name in the error message exits in the app. Contact the author of the app for further assistance.
+- Verify that the report with the name in the error message exists in the app. Contact the author of the app for further assistance.
 
 **If the report is shared:**
 
@@ -57,7 +57,7 @@ Possible issues:
 
 ### Possible reason
 
-Power BI allows users to have multiple reports with the same name in the same workspace
+Power BI allows users to have multiple reports with the same name in the same workspace.
 
 ### Troubleshooting
 
