@@ -33,7 +33,7 @@ Here are examples of two scenarios where barcode scanning is useful:
 
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    :::image type="content" source="media/mobile-apps-scan-barcode/power-bi-camera.png" alt-text="Screenshot of the More options on the navigation pane, showing the scanner selection.":::
+    :::image type="content" source="media/mobile-apps-scan-barcode/power-bi-camera.png" border="false" alt-text="Screenshot of the More options on the navigation pane, showing the scanner selection.":::
 
 2. If your camera is not enabled, you'll need to approve the Power BI app to use the camera. This is a one-time operation.
 3. Point the scanner at a barcode on the item you're interested in. You will see a list of reports that have barcode fields.
@@ -48,14 +48,14 @@ While looking at a report filtered by a barcode on your device, you might want t
 
 On the report's action bar, tap the **Barcode** icon.
 
-:::image type="content" source="media/mobile-apps-scan-barcode/power-bi-barcode-icon-on-report-action-bar.png" alt-text="Screenshot showing barcode icon on Power BI report action bar.":::
+:::image type="content" source="media/mobile-apps-scan-barcode/power-bi-barcode-icon-on-report-action-bar.png" border="false" alt-text="Screenshot showing barcode icon on Power BI report action bar.":::
 
 - If the **Barcode** icon is filled, :::image type="icon" source="media/mobile-apps-scan-barcode/power-bi-barcode-filtered-icon-black.png":::, the filter is active and the report is already filtered by a barcode.
 - If the icon is clear :::image type="icon" source="media/mobile-apps-scan-barcode/power-bi-barcode-unfiltered-icon.png":::", the filter isn't active, and the report isn't filtered by a barcode.
 
 Tap the icon to open a small menu with a floating scanner.
 
-:::image type="content" source="media/mobile-apps-scan-barcode/power-bi-floating-scanner.png" alt-text="Screenshot showing floating barcode scanner.":::
+:::image type="content" source="media/mobile-apps-scan-barcode/power-bi-floating-scanner.png" border="false" alt-text="Screenshot showing floating barcode scanner.":::
 
 - Focus the scanner on the new item to change the filter of the report to a different barcode value.
 - Tap **Clear barcode filter** to go back to the unfiltered report.
