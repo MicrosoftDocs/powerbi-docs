@@ -3,7 +3,7 @@ title: "Data regions and maps in a paginated report | Microsoft Docs"
 description: Explore the types and characteristics of data regions and maps to design the display from your paginated report datasets in Power BI Report Builder.  
 ms.date: 01/30/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report-builder
 
 
 ms.topic: conceptual
@@ -14,7 +14,6 @@ ms.author: maggies
 ---
 # Data regions and maps in a paginated report (Power BI Report Builder)
 
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-ssrs-rb](../../includes/ssrs-appliesto-ssrs-rb.md)] [!INCLUDE [ssrs-appliesto-pbi-rb](../../includes/ssrs-appliesto-pbi-rb.md)] [!INCLUDE [ssrb-applies-to-ssdt-yes](../../includes/ssrb-applies-to-ssdt-yes.md)]
 
   A data region is an object in a paginated report that displays data from a report dataset. Report data can be displayed as numbers and text in a table, matrix, or list; graphically in a chart or gauge; and against a geographic background in a map. Tables, matrices, and lists are all based on the *tablix* data region, which expands as needed to display all the data from the dataset. A tablix data region supports multiple row and column groups and both static and dynamic rows and columns. A chart displays multiple series and category groups in a variety of chart formats. A gauge displays a single value or an aggregated value for a dataset. A map displays spatial data as map elements that can vary in appearance based on aggregated data from a dataset.  
   
@@ -37,7 +36,7 @@ ms.author: maggies
  A gauge presents data as a range with an indicator pointing to a specific value within the range. Gauges are used to display key performance indicators (KPIs) and other metrics. Examples of gauges include linear and circular. Read more about [adding a gauge to a report](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs).  
   
 ## Map  
- A map enables you to present data against a geographical background. Map data can be spatial data from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] query, an ESRI shapefile, or [!INCLUDE[msCoName](../../includes/msconame-md.md)] Bing map tiles. Spatial data consists of sets of coordinates that define polygons that represent shapes or areas, lines that represent routes or paths, and points represented by markers. You can associate aggregate data with map elements to automatically vary their color and size. For example, you can vary the marker type for a store based on sales amount or the color for a road based on speed limit. For more information, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs).  
+ A map enables you to present data against a geographical background. Map data can be spatial data from a query, an ESRI shapefile, or Bing map tiles. Spatial data consists of sets of coordinates that define polygons that represent shapes or areas, lines that represent routes or paths, and points represented by markers. You can associate aggregate data with map elements to automatically vary their color and size. For example, you can vary the marker type for a store based on sales amount or the color for a road based on speed limit. For more information, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs).  
   
 ## Data Regions in the Report Layout  
  You can add multiple data regions to a report. Data regions grow to accommodate the data from the report dataset that they are linked to. For example, a matrix that displays sales for each product by year has a row group based on product names and a column group based on years. When you run the report, the matrix expands down the page for each product and across the page for each year. A chart that is placed next to the matrix on the report design surface displays next to the expanded matrix in the rendered report. The way data regions render on a page follows a set of rules based on the output format of a report. For example, to help control how a chart and matrix render on a page, you might use a rectangle as a container or nest both data regions in a list. For more information, see [Page Layout and Rendering &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs).  
@@ -58,6 +57,6 @@ ms.author: maggies
  For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
   
 ## Next Steps 
- [What are paginated reports in Power BI?](https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-report-builder-power-bi)
- [Power BI Report Builder](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-builder-power-bi?source=recommendations)   
+ [What are paginated reports in Power BI?](https://learn.microsoft.com/power-bi/paginated-reports/paginated-reports-report-builder-power-bi)
+ [Power BI Report Builder](https://learn.microsoft.com/power-bi/paginated-reports/report-builder-power-bi?source=recommendations)   
  [Page Layout and Rendering &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs.md)    
