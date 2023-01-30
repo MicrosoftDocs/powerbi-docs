@@ -54,7 +54,6 @@ ms.author: maggies
 ## Next steps  
  [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
  [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)   
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](add-dataset-filters-data-region-filters-and-group-filters.md)   
  [Parameters Collection References &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-parameters-collection-references-report-builder)   
  [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
  [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
