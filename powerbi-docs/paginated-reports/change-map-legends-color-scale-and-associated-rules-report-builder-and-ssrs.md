@@ -24,7 +24,7 @@ ms.author: maggies
   
 -   **Distance scale** Displays a guide to help interpret the scale of the map. A map has one distance scale. The current map viewport zoom value determines the distance scale.  
   
- ![rs_MapElements](../../reporting-services/report-design/media/rs-mapelements.gif "rs_MapElements")  
+ ![rs_MapElements](/sql/reporting-services/report-design/media/rs-mapelements.gif "rs_MapElements")  
   
 ##  <a name="Viewport"></a> To change the position of a legend relative to the viewport  
   
