@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/06/2023
+ms.date: 01/26/2023
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -45,7 +45,7 @@ In addition to the natively supported data sources, the following data sources c
 | Data source | Enterprise gateway | VNet gateway |
 | --- | --- | --- |
 | SQL Server (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
-| SQL Server Analysis Services (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::|
+| SQL Server Analysis Services | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::|
 | Oracle (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |
 | Teradata (supports SSO) | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |
 | ODBC | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |

@@ -16,7 +16,7 @@ ms.date: 11/02/2022
 See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
 
 >[!TIP]
->Use the [Premium Gen2 Monitoring App](../../enterprise/service-premium-gen2-metrics-app.md) to monitor your capacity.
+>Use the [Premium Monitoring App](../../enterprise/service-premium-gen2-metrics-app.md) to monitor your capacity.
 
 ## Metrics
 
