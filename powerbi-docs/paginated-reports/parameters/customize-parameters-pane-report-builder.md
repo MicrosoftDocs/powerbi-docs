@@ -21,7 +21,7 @@ ms.author: maggies
 
 1.  On the **View** tab, select the **Parameters** checkbox to display the parameters pane.
 
-     ![Screenshot showing Access parameters pane from View tab.](media/customize-parameters-pane-report-report-builder/report-builder-custom-parameter-access-parameter-pane-design-mode.png "Access parameters pane from View tab")
+     ![Screenshot showing Access parameters pane from View tab.](media/customize-parameters-pane-report-builder/report-builder-custom-parameter-access-parameter-pane-design-mode.png "Access parameters pane from View tab")
 
      The pane appears at the top of the design surface.
 
@@ -29,7 +29,7 @@ ms.author: maggies
 
     -   Right-click an empty cell in the parameters pane, and then click **Add Parameter**.
 
-         ![Screenshot showing Add new parameter from parameters pane.](media/customize-parameters-pane-report-report-builder/report-builder-customize-parameter-add-new-parameter.png "Add new parameter from parameters pane")
+         ![Screenshot showing Add new parameter from parameters pane.](media/customize-parameters-pane-report-builder/report-builder-customize-parameter-add-new-parameter.png "Add new parameter from parameters pane")
 
     -   Right-click **Parameters** in the **Report Data** pane, and then click **Add Parameter**.
 
@@ -41,13 +41,13 @@ ms.author: maggies
 
     -   Right-click the parameter in the parameters pane, and then click **Parameter Properties**.
 
-         ![Screenshot showing Access parameter properties from the parameters pane.](media/customize-parameters-pane-report-report-builder/report-builder-customize-parameter-access-parameter-properties-composite.png "Access parameter properties from the parameters pane")
+         ![Screenshot showing Access parameter properties from the parameters pane.](media/customize-parameters-pane-report-builder/report-builder-customize-parameter-access-parameter-properties-composite.png "Access parameter properties from the parameters pane")
 
     -   Right-click the parameter in the **Report Data** pane, and then click **Parameter Properties**.
 
 5.  To add new columns and rows to the pane, or delete existing rows and columns, right-click anywhere in the parameters pane and then click a command on the menu that displays.
 
-     ![Screenshot showing Add columns and rows to the parameters pane.](media/customize-parameters-pane-report-report-builder/report-builder-custom-parameter-add-columns-rows.png "Add columns and rows to the parameters pane")
+     ![Screenshot showing Add columns and rows to the parameters pane.](media/customize-parameters-pane-report-builder/report-builder-custom-parameter-add-columns-rows.png "Add columns and rows to the parameters pane")
 
     > [!IMPORTANT]
     >  When you delete a column or row that contains parameters, the parameters are deleted from the report.
@@ -56,7 +56,7 @@ ms.author: maggies
 
     -   Right-click the parameter in the parameters pane, and then click  **Delete**.
 
-         ![Screenshot showing Delete parameters from the parameters pane.](media/customize-parameters-pane-report-report-builderssrs-custocustom-parameter-delete-parameter.png "Delete parameters from the parameters pane")
+         ![Screenshot showing Delete parameters from the parameters pane.](media/customize-parameters-pane-report-builder/report-builder-custom-parameter-delete-parameter.png "Delete parameters from the parameters pane")
 
     -   Right-click parameter in the **Report Data** pane, and then click **Delete**.
 
@@ -68,19 +68,19 @@ If you have a hidden/internal parameter, the logic of whether it will be rendere
 
 For example, `ReportParameter1` is hidden while the rest of the parameters are visible:
 
-![Screenshot showing Hidden Parameter Example 1.](media/customize-parameters-pane-report-report-builder/report-builder-one-hidden-parameter.png "One hidden parameter in layout grid")
+![Screenshot showing Hidden Parameter Example 1.](media/customize-parameters-pane-report-builder/report-builder-one-hidden-parameter.png "One hidden parameter in layout grid")
 
 This will result as an empty space during runtime because there are visible parameters in first column or first row:
 
-![Screenshot showing Hidden Parameter Example 1 - runtime.](media/customize-parameters-pane-report-report-builder/report-builder-one-hidden-parameter-server.png "One hidden parameter in layout grid result in empty space in runtime")
+![Screenshot showing Hidden Parameter Example 1 - runtime.](media/customize-parameters-pane-report-builder/report-builder-one-hidden-parameter-server.png "One hidden parameter in layout grid result in empty space in runtime")
 
 Using the same example, if you also set `ReportParameter3` as hidden:
 
-![Screenshot showing Hidden Parameter Example 2.](media/customize-parameters-pane-report-report-builder/report-builder-two-hidden-parameters.png "Two hidden parameter in same column")
+![Screenshot showing Hidden Parameter Example 2.](media/customize-parameters-pane-report-builder/report-builder-two-hidden-parameters.png "Two hidden parameter in same column")
 
 Then the first column is not rendered during runtime because the entire column is considered empty:
 
-![Screenshot showing Hidden Parameter Example 2 - runtime.](media/customize-parameters-pane-report-report-builder/report-builder-two-hidden-parameters-server.png "Two hidden parameter in same column in runtime")
+![Screenshot showing Hidden Parameter Example 2 - runtime.](media/customize-parameters-pane-report-builder/report-builder-two-hidden-parameters-server.png "Two hidden parameter in same column in runtime")
 
 ## Default layout
 For reports that were authored before SQL Server Reporting Services 2016, a default parameter layout grid of 2 columns and N rows will be used during runtime. To change the default layout, open the report in Report Builder and save the report. After saving the report, the customized parameter layout information will be saved to the .rdl file.

@@ -549,9 +549,9 @@
       - name: Change the order of report parameters
         href: ../paginated-reports/parameters/change-order-report-parameter-report-builder.md
       - name: Customize the parameters pane
-        href: ../paginated-reports/parameters/customize-parameters-pane-report-report-builder.md
+        href: ../paginated-reports/parameters/customize-parameters-pane-report-builder.md
       - name: Add a multi-value parameter
-        href: ../paginated-reports/parameters/customize-parameters-pane-report-report-builder.md
+        href: ../paginated-reports/parameters/add-multi-value-parameter-to-report.md
       - name: Built-in parameters collection references
         href: ../paginated-reports/parameters/built-in-collections-parameters-collection-references-report-builder.md
     - name: Expression examples

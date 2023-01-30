@@ -16,7 +16,7 @@ ms.author: maggies
 
   Change the order of parameters in a Power BI paginated report when you have a dependent parameter that is listed before the parameter it is dependent on. Parameter order is important when you have cascading parameters, or when you want to show users the default value for one parameter before they choose values for other parameters. A dependent report parameter contains a reference, in either its default values query or valid values query, to a query parameter that points to a report parameter that is after it in the parameter list in the **Report Data** pane.  
   
- The order that you see parameters display on the report viewer toolbar when you run the report, is determined by the order of the parameters in the **Report Data** pane and the location of the parameters in the custom parameters pane. For more information, see [Customize the Parameters Pane in a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-parameters-pane-report-report-builder)  
+ The order that you see parameters display on the report viewer toolbar when you run the report, is determined by the order of the parameters in the **Report Data** pane and the location of the parameters in the custom parameters pane. For more information, see [Customize the Parameters Pane in a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-parameters-pane-report-builder)  
   
 ## Change the order of report parameters  
   
@@ -26,7 +26,7 @@ You can change the order of report parameters by doing either of the following:
   
      ![Screenshot showing changing the order of the parameters in the Report Data pane.](media/change-order-report-parameter-report-builder/ssrs-change-order-parameters-report-data.png "Screenshot showing changing the order of the parameters in the Report Data pane.")  
   
--   In the parameters pane, drag the parameter to a new column or row in the pane. When you change the location of the parameter in the pane, the parameter order changes in the **Report Data** pane. For more information about moving parameters in the pane, see [Customize the Parameters Pane in a Report &#40;Power BI Report Builder&#41;](customize-parameters-pane-report-report-builder.md).  
+-   In the parameters pane, drag the parameter to a new column or row in the pane. When you change the location of the parameter in the pane, the parameter order changes in the **Report Data** pane. For more information about moving parameters in the pane, see [Customize the Parameters Pane in a Report &#40;Power BI Report Builder&#41;](customize-parameters-pane-report-builder.md).  
   
 ## Next steps  
  [Report parameters in Power BI Report Builder](../report-builder-parameters.md)   

@@ -49,6 +49,6 @@ ms.author: maggies
 ## Next steps
 [Change the order of a paginated report parameter - Power BI Report Builder](change-order-report-parameter-report-builder.md)
 
-[Add a multi-value parameter to a paginated report - Power BI Report Builder](customize-parameters-pane-report-report-builder.md)
+[Add a multi-value parameter to a paginated report - Power BI Report Builder](customize-parameters-pane-report-builder.md)
 
-[Customize the Parameters pane in a paginated report - Power BI Report Builder](customize-parameters-pane-report-report-builder.md)
+[Customize the Parameters pane in a paginated report - Power BI Report Builder](customize-parameters-pane-report-builder.md)
