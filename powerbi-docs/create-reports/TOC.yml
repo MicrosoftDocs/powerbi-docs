@@ -530,7 +530,7 @@
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Parameters
       items:
-      - name: Parameters
+      - name: Report parameters
         href: ../paginated-reports/report-builder-parameters.md
       - name: Report parameter concepts in paginated reports
         href: ../paginated-reports/parameters/report-parameters-concepts-report-builder-and-ssrs.md
