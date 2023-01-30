@@ -9,6 +9,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
 ---
 # Add, change, or delete available values for a Power BI paginated report parameter (Power BI Report Builder)
 
@@ -60,7 +61,7 @@ ms.author: maggies
   
 4.  Select **OK**.
   
-     When you preview the report, you the drop-down list of available values for the parameter no longer appears.  
+     When you preview the report, the drop-down list of available values for the parameter no longer appears.  
   
 ## Next steps 
  [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
