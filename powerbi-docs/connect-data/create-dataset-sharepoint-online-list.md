@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 01/30/2023
 ms.custom:
 LocalizationGroup: Visualizations
 ---
 # Create a Power BI dataset directly from a SharePoint list
 
-You can quickly create a dataset directly in the Power BI service from a SharePoint list. The dataset will be full-fledged Power BI dataset that you can use to create reports, analyze in Excel, and more.
+You can quickly create a Power BI dataset directly from a SharePoint list. The dataset will be full-fledged Power BI dataset that you can use to create reports, analyze in Excel, and more.
 
 Creating a dataset directly from a SharePoint list is an easy and quick way to share a dataset, because if you save it to a shared workspace, everyone with the sufficient permissions in the workspace can use it. You can also use [dataset sharing](./service-datasets-share.md) to share it with other users who don’t have a role in the workspace.
 
@@ -34,16 +34,12 @@ To create a Power BI dataset from a SharePoint list:
 
     The dialog also shows the URL of the data source (SharePoint site) and name of the SharePoint list. To prevent inadvertently exposing sensitive data, make sure that you recognize the data source and are familiar with the data. Select **Review data** if you want to check the SharePoint list before allowing export to continue. For more information about when reviewing the data might be a good idea, see [Reviewing the SharePoint list data](#reviewing-the-sharepoint-list-data).
 
-1. Select **Continue**. Your dataset will be created, and you'll be taken to the [details page](./service-dataset-details-page.md) of the new dataset. From there you can do all the things you can do with a regular Power BI dataset - refresh the data, share the dataset, create new reports, and more. See [dataset details](./service-dataset-details-page.md) for more information.
-
-    :::image type="content" source="./media/create-dataset-sharepoint-online-list/dataset-details-page.png" alt-text="Screenshot of the dataset details page of the newly created dataset.":::
+1. Select **Continue**. Your dataset will be created, and you'll be taken to the details page of the new dataset. From there you can do all the things you can do with a regular Power BI dataset - refresh the data, share the dataset, create new reports, and more. See [dataset details](./service-dataset-details-page.md) for more information.
 
     > [!NOTE]
-    > If you see the following dialog before you get to the dataset details page, it means that you already have a connection to the SharePoint site under login credentials that may be different from the credentials of your current login.
-    >
-    > ![Screenshot of previous connection notification.](./media/create-dataset-sharepoint-online-list/choose-credentials-dialog.png)
-    >
-    > For more information, see [Choosing which credentials to authenticate with](#choosing-which-credentials-to-authenticate-with).
+    > If you've connected to the SharePoint site from Power BI before, you'll be asked to choose which credentials to use to for the connection between Power BI and the Sharepoint site before being taken to the dataset details page. For help deciding which credentials to choose, see [Choosing which credentials to authenticate with](#choosing-which-credentials-to-authenticate-with).
+
+    :::image type="content" source="./media/create-dataset-sharepoint-online-list/dataset-details-page.png" alt-text="Screenshot of the dataset details page of the newly created dataset.":::
 
 ## Reviewing the SharePoint list data
 
@@ -55,7 +51,7 @@ Reviewing the data is important if you weren't the one who exported the SharePoi
 
 When you export a SharePoint list to Power BI, Power BI connects to the SharePoint site to get the data from the list. In order to connect, it needs to authenticate with SharePoint.
 
-If you get the following dialog, it means that you've already established a connection to the SharePoint site in the past. The credentials you used at that time may or may not be different than the credentials of your current sign in. You need to choose whether to continue using the existing sign-in details for the connection (Use existing Power BI credentials), or whether the connection should use your current sign-in credentials from now on (Replace with current app credentials).
+If you get the following dialog, it means that you've already established a connection to the SharePoint site in the past. The credentials you used at that time may or may not be different than the credentials of your current sign in. You need to choose whether to continue using the sign-in details you used the last time you connected (*The credentials I used to connect to Power BI last time*), or whether the connection should use your current sign-in credentials from now on (*My current credentials (these may be the same or different)*).
 
 :::image type="content" source="./media/create-dataset-sharepoint-online-list/choose-credentials-dialog.png" alt-text="Screenshot showing choose credentials dialog.":::
 
