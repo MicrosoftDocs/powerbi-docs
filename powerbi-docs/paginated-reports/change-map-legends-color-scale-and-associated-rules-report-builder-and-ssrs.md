@@ -4,7 +4,7 @@ title: "Change map legends-color scale-associated rules in a paginated report | 
 description: Learn how to change map legends in a paginated report to help users interpret the data visualization on maps in Power BI Report Builder. 
 ms.date: 01/30/2023
 ms.service: powerbi
-ms.subservice: report-design
+ms.subservice: report builder
 
 
 ms.topic: conceptual
@@ -13,7 +13,6 @@ ms.author: maggies
 ---
 # Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)
 
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE [ssrs-appliesto-ssrs-rb](../../includes/ssrs-appliesto-ssrs-rb.md)] [!INCLUDE [ssrs-appliesto-pbi-rb](../../includes/ssrs-appliesto-pbi-rb.md)] [!INCLUDE [ssrb-applies-to-ssdt-yes](../../includes/ssrb-applies-to-ssdt-yes.md)]
 
   In a paginated report, a map can contain map legends, a color scale, and a distance scale. These parts of a map help users interpret the data visualization on the map.  
   
