@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/27/2023
+ms.date: 01/30/2023
 LocalizationGroup: Create reports
 ---
 # Use gridlines and snap-to-grid in Power BI reports
