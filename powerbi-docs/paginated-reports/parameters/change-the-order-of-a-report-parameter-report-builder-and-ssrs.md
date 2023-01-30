@@ -31,7 +31,7 @@ You can change the order of report parameters by doing either of the following:
 ## Next Steps  
  [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-parameters-report-builder-and-report-designer.md)   
  [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](add-cascading-parameters-to-a-report-report-builder-and-ssrs.md)   
- [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](tutorial-add-a-parameter-to-your-report-report-builder.md)   
+ [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)   
  [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
  [Parameters Collection References &#40;Power BI Report Builder&#41;](/built-in-collections-parameters-collection-references-report-builder.md)  
   
