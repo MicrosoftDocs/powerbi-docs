@@ -34,7 +34,7 @@ The table below lists the Power BI operations. It provides a short description f
 | [Dataflow refresh](../transform-model/dataflows/dataflows-understand-optimize-refresh.md) | An on demand or scheduled background dataflow refresh, performed by the service or with REST APIs | Dataflows | Background |
 | Dataset on-demand refresh | A background dataset refresh initiated by the user, using the service, REST APIs or public XMLA endpoints | Datasets | Background |
 | Dataset scheduled refresh | A scheduled background dataset refresh, performed by the service, REST APIs or public XMLA endpoints | Datasets | Background |
-| Full report email subscription | A PDF or PowerPoint copy of an entire Power BI report, attached to an [email subscription](../consumer/end-user-subscribe.md) | Report | Background |
+| Full report email subscription | A PDF or PowerPoint copy of an entire Power BI report, attached to an [email subscription](/power-bi/collaborate-share/end-user-subscribe) | Report | Background |
 | Interactive query    | Queries initiated by an on-demand data request from a user. For example, loading a model when opening a report, or user interaction with a report | Datasets | Interactive |
 | PublicApiExport | A Power BI report exported with the [Export report to file](../developer/embedded/export-to.md) REST API | Report | Background |
 | Render | A Power BI paginated report exported with the [Export paginated report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
@@ -45,13 +45,13 @@ The table below lists the Power BI operations. It provides a short description f
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
+> [What is Power BI Premium?](service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium Gen2 architecture](service-premium-architecture.md)
+> [Power BI Premium architecture](service-premium-architecture.md)
 
 > [!div class="nextstepaction"]
-> [Managing Premium Gen2 capacities](service-premium-capacity-manage-gen2.md)
+> [Managing Premium capacities](service-premium-capacity-manage-gen2.md)
 
 > [!div class="nextstepaction"]
-> [Use the gen2 metrics app](service-premium-gen2-metrics-app.md)
+> [Use the metrics app](service-premium-gen2-metrics-app.md)

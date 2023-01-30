@@ -1,6 +1,6 @@
 ---
 title: Introduction to use chart utils in Power BI visual
-description: This article describes how to use chart utils to draw axes and legends Power BI visual.
+description: Learn about the chart utils interfaces and methods to draw axes, data labels, and legends in Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
@@ -8,7 +8,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 01/11/2023
 ---
 
 # Chart utils
@@ -25,13 +25,13 @@ npm install powerbi-visuals-utils-chartutils --save
 
 ## Axis Helper
 
-The axis helper (`axis` object in utils) provides functions to simplify manipulations with axis.
+The axis helper (`axis` object in utils) provides functions to simplify manipulations that have an axis.
 
 The module provides the following functions:
 
 ### getRecommendedNumberOfTicksForXAxis
 
-This function returns recommended number of ticks according to width of chart.
+This function returns the recommended number of ticks according to the width of chart.
 
 ```typescript
 function getRecommendedNumberOfTicksForXAxis(availableWidth: number): number;
@@ -49,7 +49,7 @@ axis.getRecommendedNumberOfTicksForXAxis(1024);
 
 ### getRecommendedNumberOfTicksForYAxis
 
-This function returns recommended number of ticks according to height of chart.
+This function returns the recommended number of ticks according to the height of chart.
 
 ```typescript
 function getRecommendedNumberOfTicksForYAxis(availableWidth: number);
@@ -67,7 +67,7 @@ axis.getRecommendedNumberOfTicksForYAxis(100);
 
 ### getBestNumberOfTicks
 
-Gets the optimal number of ticks based on minimum value, maximum value, and measure metadata and max tick count;
+Gets the optimal number of ticks based on minimum value, maximum value, measure metadata, and max tick count.
 
 ```typescript
 function getBestNumberOfTicks(
@@ -153,7 +153,7 @@ axis.getTickLabelMargins(
 
 ### isOrdinal
 
-Checks if a string is null or undefined or empty.
+Checks if a string is null, undefined or empty.
 
 ```typescript
 function isOrdinal(type: ValueTypeDescriptor): boolean;
@@ -172,7 +172,7 @@ axis.isOrdinal(type);
 
 ### isDateTime
 
-Checks if value is of DateTime type.
+Checks if a value is of the DateTime type.
 
 ```typescript
 function isDateTime(type: ValueTypeDescriptor): boolean;
@@ -318,7 +318,7 @@ return axis.diffScaled(scale, 0, 0));
 
 ### createDomain
 
-This function creates a domain of values for axis.
+This function creates a domain of values for an axis.
 
 ```typescript
 function createDomain(
@@ -465,10 +465,10 @@ var os = axis.createAxis({
 
 ### applyCustomizedDomain
 
-This function sets customized domain, but don't change when nothing is set.
+This function sets a customized domain, but it doesn't change when nothing is set.
 
 ```typescript
-function applyCustomizedDomain(customizedDomain, forcedDomain: any[]): any[];
+function applyCustomizedDomain(customizedDomain: any[], forcedDomain: any[]): any[];
 ```
 
 Example:
@@ -540,7 +540,7 @@ The `DataLabelManager` class provides the following methods:
 
 ## hideCollidedLabels
 
-This method arranges the labels position and visibility on the canvas according to labels sizes and overlapping.
+This method arranges the labels position and visibility on the canvas according to label sizes and overlapping.
 
 ```typescript
 function hideCollidedLabels(
@@ -548,6 +548,7 @@ function hideCollidedLabels(
   data: any[],
   layout: any,
   addTransform: boolean = false
+  hideCollidedLabels?: boolean
 ): LabelEnabledDataPoint[];
 ```
 
@@ -559,13 +560,14 @@ let filteredData = dataLabelManager.hideCollidedLabels(
   this.viewport,
   values,
   labelLayout,
+  true,
   true
 );
 ```
 
 ## IsValid
 
-This static method checks if provided rectangle is valid(has positive width and height).
+This static method checks if the provided rectangle is valid, that is, it has positive width and height.
 
 ```typescript
 function isValid(rect: IRect): boolean;
@@ -590,11 +592,11 @@ DataLabelManager.isValid(rectangle);
 
 The `DataLabelUtils` provides utils to manipulate data labels.
 
-The module provides the following functions, interfaces, and classes:
+The method provides the following functions, interfaces, and classes:
 
 ### getLabelPrecision
 
-This function calculates precision from given format.
+This function calculates precision from a provided format.
 
 ```typescript
 function getLabelPrecision(precision: number, format: string): number;
@@ -602,7 +604,7 @@ function getLabelPrecision(precision: number, format: string): number;
 
 ### getLabelFormattedText
 
-This function returns format precision from given format.
+This function returns format precision from the provided format.
 
 ```typescript
 function getLabelFormattedText(options: LabelFormattedTextOptions): string;
@@ -636,7 +638,7 @@ function enumerateDataLabels(
 
 ### enumerateCategoryLabels
 
-This function adds VisualObjectInstance for Category data labels to enumeration object.
+This function adds VisualObjectInstance for Category data labels to an enumeration object.
 
 ```typescript
 function enumerateCategoryLabels(
@@ -650,7 +652,7 @@ function enumerateCategoryLabels(
 
 ### createColumnFormatterCacheManager
 
-This function returns Cache Manager that provides quick access to formatted labels
+This function returns the Cache Manager that provides quick access to formatted labels.
 
 ```typescript
 function createColumnFormatterCacheManager(): IColumnFormatterCacheManager;
@@ -676,13 +678,13 @@ let formattedValue = formatter.format(value);
 
 ## Legend service
 
-The `Legend` service provides helper interfaces for creating and managing PBI legends for Power BI visuals
+The `Legend` service provides helper interfaces for creating and managing Power BI legends for Power BI visuals.
 
 The module provides the following functions and interfaces:
 
 ### createLegend
 
-This helper function simplifies Power BI Custom Visual legends creation.
+This helper function simplifies Power BI Custom Visual legend creation.
 
 ```typescript
 function createLegend(
@@ -720,7 +722,7 @@ public constructor(options: VisualConstructorOptions) {
 
 ### ILegend
 
-This Interface implements all methods necessary for legend creation
+This Interface implements all methods necessary for legend creation.
 
 ```typescript
 export interface ILegend {
@@ -768,4 +770,4 @@ private renderLegend(): void {
 
 ## Next steps
 
-- [Read how to use InteractivityUtils to add selections into Power BI Visuals](utils-interactivity-selections.md)
+- [Power BI visuals interactivity utils](utils-interactivity-selections.md)

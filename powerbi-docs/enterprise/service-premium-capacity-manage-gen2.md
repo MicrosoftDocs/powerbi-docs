@@ -1,27 +1,24 @@
 ---
-title: Manage Microsoft Power BI Premium Gen2 capacities
-description: Describes management tasks for Power BI Premium Gen2 capacities.
+title: Manage Microsoft Power BI Premium capacities
+description: Describes management tasks for Power BI Premium capacities.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/30/2022
+ms.date: 01/19/2023
 ms.custom:
 LocalizationGroup: Premium
 ---
 
-# Managing Premium Gen2 capacities
+# Managing Premium capacities
 
 Managing Power BI Premium involves creating, managing, and monitoring Premium capacities. This article provides an overview of capacities; see [Configure and manage capacities](service-admin-premium-manage.md) for step-by-step instructions.
 
 ## Creating and managing capacities
 
 The **Capacity Settings** page of the Power BI Admin portal displays the number of v-cores purchased and Premium capacities available. The page allows Global administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
-
-> [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. For more information, see [Power BI Premium Generation 2](service-premium-gen2-what-is.md).
 
 > [!NOTE]
 > You can also get Premium Per User (PPU) licenses for individuals, which provides many of the features and capabilities of a Premium capacity, and also incorporates all functionality included with a Power BI Pro license. For more information, see [Power BI Premium Per User](service-premium-per-user-faq.yml).
@@ -36,14 +33,15 @@ When creating a Premium capacity, administrators are required to define:
 At least one Capacity Admin must be assigned. Users assigned as Capacity Admins can:
 
 * Remove assigned workspaces from the capacity
+* Specify a default capacity for My workspaces
 * Manage user permissions and assign:
     * Additional Capacity Admins
     * Contributors - Users who are allowed to assign workspaces to that capacity (Capacity Admins are automatically also Contributors)
 * Manage Autoscale settings for that capacity
-* Setup email alerts for resource utilization level
+* Set up email alerts for resource utilization level
 * Track capacity resources usage using the dedicated out of the box app 
 
-Capacity Admins cannot access workspace content unless explicitly assigned in workspace permissions. They also don't have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs, or tenant settings. Importantly, Capacity Admins do not have permissions to create new capacities or scale existing capacities. Admins are assigned on a per capacity basis, ensuring that they can only view and manage capacities to which they are assigned.
+Capacity Admins can't access workspace content unless explicitly assigned in workspace permissions. They also don't have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs, or tenant settings. Importantly, Capacity Admins don't have permissions to create new capacities or scale existing capacities. Admins are assigned on a per capacity basis, ensuring that they can only view and manage capacities to which they're assigned.
 
 Capacity size is selected from an available list of SKU options, which is constrained by the number of available v-cores in the pool. It's possible to create multiple capacities from the pool, which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing workspaces, and several workspaces in shared capacity.
 
@@ -62,7 +60,7 @@ Power BI service administrators and Global Administrators can modify Premium cap
 
 Contributor assignment permissions are required to assign a workspace to a specific Premium capacity. The permissions can be granted to the entire organization, specific users, or groups.
 
-By default, Premium capacities support workloads associated with running Power BI queries. Premium capacities also support additional workloads: **AI (Cognitive Services)**, **Paginated Reports**, and **Dataflows**.
+By default, Premium capacities support workloads associated with running Power BI queries. Premium capacities also support other workloads: **AI (Cognitive Services)**, **Paginated Reports**, and **Dataflows**.
 
 Deleting a Premium capacity is possible and won't result in the deletion of its workspaces and content. Instead, it moves any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace is moved to shared capacity of the home region.
 
@@ -74,12 +72,12 @@ Workspaces can be assigned to a Premium capacity in the Power BI Admin portal or
 
 Capacity Admins, as well as Global Administrators or Power BI service administrators, can bulk assign workspaces in the Power BI Admin portal. Bulk assigned can apply to:
 
-- **Workspaces by users** - All workspaces owned by those users, including personal workspaces, are assigned to the Premium capacity. This will include the reassignment of workspaces when they are already assigned to a different Premium capacity. In addition, the users are also assigned workspace assignment permissions.
+- **Workspaces by users** - All workspaces owned by those users, including My workspaces, are assigned to the Premium capacity. This will include the reassignment of workspaces when they're already assigned to a different Premium capacity. In addition, the users are also assigned workspace assignment permissions.
 
 - **Specific workspaces**
-- **The entire organization's workspaces** - All workspaces, including personal workspaces, are assigned to the Premium capacity. All current and future users are assigned workspace assignment permissions. This approach is not recommended. A more targeted approach is preferred.
+- **The entire organization's workspaces** - All workspaces, including My workspaces, are assigned to the Premium capacity. All current and future users are assigned workspace assignment permissions. This approach isn't recommended. A more targeted approach is preferred.
 
-You can enable Premium capabilities in a workspace by setting the proper license mode. To set a license mode, you must be both a workspace admin, and have assignment permissions. To enable Premium capabilities for P and EM SKUs, set the license mode to Premium per capacity. To enable Premium capabilities for A SKU’s, set the license mode to Embedded. To enable Premium capabilities for Premium Per User (PPU), mark the license mode as Premium Per User. To remove a workspace from Premium, mark the workspace license mode as Pro.
+You can enable Premium capabilities in a workspace by setting the proper license mode. To set a license mode, you must be both a workspace admin, and have assignment permissions. To enable Premium capabilities for P and EM SKUs, set the license mode to Premium per capacity. To enable Premium capabilities for A SKUs, set the license mode to Embedded. To enable Premium capabilities for Premium Per User (PPU), mark the license mode as Premium Per User. To remove a workspace from Premium, mark the workspace license mode as Pro.
 
 ![Using the Workspace pane to assign a workspace to a Premium capacity](media/service-premium-capacity-manage-gen2/assign-workspace-capacity-02.png)
 
@@ -93,11 +91,11 @@ In the Power BI service, a workspace assigned to a Premium capacity is easily id
 
 Different Premium capacity SKUs have different amounts of resources that are made available to support Power BI items (such as reports, dashboards and datasets) processed by each capacity. The SKUs differentiate by the number of standard v-cores they have. The most influential resources to consider when sizing in advance are:
 
-* **CPU power** – The amount of CPU power each capacity has is a function of its base v-core and the number of [autoscale](service-premium-auto-scale.md) cores it has (purchased in-advance and allocated in advance during capacity instantiation). The CPU power exhaustion of a capacity is measured by aggregating CPU power used across all the Power BI items it processes. The more operations done against more items, the higher the CPU spend.
+* **CPU power** – The amount of CPU power each capacity has is a function of its base v-core and the number of [autoscale](service-premium-auto-scale.md) cores it has (purchased in-advance and allocated in advance during capacity instantiation). The CPU power exhaustion of a capacity is measured by aggregating CPU power used across all the Power BI items it processes. The more operations done against more items, the higher the CPU spent.
 
-* **Item size** - The size of a Power BI item relates to the amount of data available for processing inside the item. Size can have multiple dimensions depending on the item. Datasets size for example is determined by the footprint the dataset has in memory while being processed. Different items may have size measures that are defined differently. The size footprint across the capacity, unlike CPU, is not aggregated across all active items but is evaluated per item only. This means a capacity can support multiple items running concurrently if neither of those items exceeds the capacity size limit.
+* **Item size** - The size of a Power BI item relates to the amount of data available for processing inside the item. Size can have multiple dimensions depending on the item. Dataset size, for example, is determined by the footprint the dataset has in memory while being processed. Different items may have size measures that are defined differently. The size footprint across the capacity, unlike CPU, isn't aggregated across all active items but is evaluated per item only. This means a capacity can support multiple items running concurrently if neither of those items exceeds the capacity size limit.
 
-Due to the individually enforced nature of a Power BI item's size measure, the size usually dictates how big a capacity should be. For example, if you have a P1 SKU, datasets are supported up to a [limit of 25Gb](service-premium-gen2-what-is.md#capacities-and-skus). As long as your datasets do not exceed this value, the SKU should meet your needs. You can evaluate a typical dataset’s size by measuring the memory footprint of the Power BI Desktop tool. Take into consideration that depending on the type of dataset mode you're using, your dataset size might grow when it's refreshed. For example, datasets that are using [import mode](../connect-data/refresh-data.md#datasets-in-import-mode) require double the size during a full refresh. In such cases, your maximum dataset size should be smaller than half of the maximum memory allocated to your capacity.
+Due to the individually enforced nature of a Power BI item's size measure, the size usually dictates how large a capacity should be. For example, if you have a P1 SKU, datasets are supported up to a [limit of 25 Gb](service-premium-gen2-what-is.md#capacities-and-skus). As long as your datasets don't exceed this value, the SKU should meet your needs. You can evaluate a typical dataset’s size by measuring the memory footprint of the Power BI Desktop tool. Take into consideration that depending on the type of dataset mode you're using, your dataset size might grow when it's refreshed. For example, datasets that use [import mode](../connect-data/refresh-data.md#datasets-in-import-mode) require double the size during a full refresh. In such cases, your maximum dataset size should be smaller than half of the maximum memory allocated to your capacity.
 
 A typical item's usage pattern will dictate its CPU power spend, which if exhausted can severely degrade report interaction performance for end-users. Therefore, once you have a typical report for evaluation, it will be beneficial to use that report in a load test, and evaluate the results to determine whether a higher SKU size or turning on autoscale is required.
 
@@ -109,17 +107,17 @@ Using the Power BI Premium [Capacity Utilization and Metrics app](service-premiu
 
  There are two different indicators that suggest you need to scale up your capacity:  
 
-* Using autoscale beyond a certain degree, is not economically viable. If your autoscaling patterns lead you to consume more than 25% of your capacity size on a regular basis, it may be less costly to upgrade your capacity to a higher SKU since your capacity CPU Power requirements are significantly higher than the capacity’s original power. Here we consider over 25% as both how many cores got added and how long were they added for. For example, a P1 SKU with 8 v-cores that uses auto scale in a way that is equivalent to two additional cores consistently applied, will cost the same as a P2.
+* Using autoscale beyond a certain degree isn't economically viable. If your autoscaling patterns lead you to consume more than 25% of your capacity size on a regular basis, it may be less costly to upgrade your capacity to a higher SKU since your capacity CPU Power requirements are significantly higher than the capacity’s original power. Here we consider over 25% as both how many cores got added and how long were they added for. For example, a P1 SKU with eight v-cores that uses auto scale in a way that is equivalent to two additional cores consistently applied, will cost the same as a P2.
 
-* The size of your Power BI items approach or exceed capacity limits. If the item size of any of the items reported in the metrics app approaches your capacity limit or exceeds it, operations against that item will fail. Therefore if a critical item approaches those limits (80% of the capacity size) it is advisable to consider upgrading the capacity in advance, to avoid interruption of service should that item exceed the capacity limit.
+* The size of your Power BI items approach or exceed capacity limits. If the item size of any of the items reported in the metrics app approaches your capacity limit or exceeds it, operations against that item will fail. Therefore if a critical item approaches those limits (80% of the capacity size) it's advisable to consider upgrading the capacity in advance, to avoid interruption of service should that item exceed the capacity limit.
 
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Using autoscale with Premium Gen2](service-premium-auto-scale.md)
+>[Using autoscale with Premium](service-premium-auto-scale.md)
 
 >[!div class="nextstepaction"]
->[Install the Gen2 metrics app](service-premium-install-gen2-app.md)
+>[Install the metrics app](service-premium-install-gen2-app.md)
 
 >[!div class="nextstepaction"]
->[Using the Premium Gen2 metrics app](service-premium-gen2-metrics-app.md)
+>[Using the Premium metrics app](service-premium-gen2-metrics-app.md)

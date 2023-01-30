@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 01/03/2023
 LocalizationGroup: Visualizations
 ---
-# Show data with Power BI reports
+# Show the data used to create a Power BI visualization
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
@@ -37,6 +37,7 @@ You can also [export the data to Excel](/power-bi/visuals/power-bi-visualization
 To return to the report, select **Back to report** from the upper left corner. 
 
    ![Screenshot showing the Back to report button.](./media/end-user-show-data/power-bi-back.png)
+
 
 ## Next steps
 [Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)    

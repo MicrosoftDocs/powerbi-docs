@@ -14,7 +14,7 @@ ms.date: 03/17/2022
 
 This article provides guidance that enables developers and administrators to troubleshoot slow report performance. It applies to Power BI reports, and also Power BI paginated reports.
 
-Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity, slow reports can also be identified by monitoring the [Power BI Premium Metrics app](../enterprise/service-admin-premium-monitor-capacity.md). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
+Slow reports can be identified by report users who experience reports that are slow to load, or slow to update when interacting with slicers or other features. When reports are hosted on a Premium capacity, slow reports can also be identified by monitoring the [Power BI Premium Metrics app](/power-bi/enterprise/service-premium-gen2-metrics-app). This app helps you to monitor the health and capacity of your Power BI Premium subscription.
 
 ## Follow flowchart steps
 

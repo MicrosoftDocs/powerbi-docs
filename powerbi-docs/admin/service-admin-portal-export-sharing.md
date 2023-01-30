@@ -151,7 +151,7 @@ Allow users in this org to certify datasets, dataflows, reports, and apps. See [
 
 ## Create email subscriptions
 
-Users can create email subscriptions to reports and dashboards. Learn more about [subscriptions](../consumer/end-user-subscribe.md).
+Users can create email subscriptions to reports and dashboards. Learn more about [subscriptions](/power-bi/collaborate-share/end-user-subscribe).
 
 ![Screenshot of Enable email subscriptions tenant setting.](media/service-admin-portal-export-sharing/power-bi-manage-email-subscriptions.png)
 

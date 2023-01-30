@@ -1,43 +1,41 @@
 ---
-title: Trusted Third-Party Connectors in Power BI
-description: How to trust a signed third-party connector in Power BI
+title: Trusted Third-Party Connectors in Power BI Desktop
+description: Learn how to trust a signed third-party connector in Power BI Desktop by editing values in the Registry Editor.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 09/23/2022
+ms.date: 01/23/2023
 LocalizationGroup: Connect to data
 ---
 # Trusted third-party connectors
 
-## Why do you need trusted third-party connectors?
-
-In Power BI, we generally recommend keeping your 'Data extension security' level at the higher level, which prevents loading of code not certified by Microsoft. However, there may be many cases in which you want to load specific connectors--ones you've written, or ones provided to you by a consultant or vendor outside the Microsoft certification path.
+In Power BI Desktop, we generally recommend keeping your *Data extension security* level at the higher level, which prevents loading of code not certified by Microsoft. However, there might be many cases in which you want to load specific connectors. These connectors include ones you've written and ones provided to you by a consultant or vendor outside the Microsoft certification path.
 
 The developer of a given connector can sign it with a certificate and provide you with the information you need to securely load it without lowering your security settings.
 
-If you want to know more about the security settings, you can read about them [here](./desktop-connector-extensibility.md).
+For more information about the security settings, see [Connector extensibility in Power BI](./desktop-connector-extensibility.md).
 
 ## Using the registry to trust third-party connectors
 
-Trusting third-party connectors in Power BI is done by listing the thumbprint of the certificate you want to trust in a specified registry value. If this thumbprint matches the thumbprint of the certificate on the connector you want to load, you will be able to load it in the ‘Recommended’ security level of Power BI. 
+Trusting third-party connectors in Power BI Desktop is done by listing the thumbprint of the certificate you want to trust in a specified registry value. If this thumbprint matches the thumbprint of the certificate on the connector you want to load, you can load it in the *Recommended* security level of Power BI Desktop.
 
-The registry path is HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Make sure the path exists, or create it. We chose this location due to it being primarily controlled by IT policy, as well as requiring local machine administration access to edit. 
+The registry path is `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop`. Make sure the path exists, or create it. This location is chosen due to it being primarily controlled by IT policy and requiring local machine administration access to edit.
 
-![Power BI Desktop Registry with no trusted third-party keys set](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
+:::image type="content" source="media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png" alt-text="Screenshot shows the Power BI Desktop Registry with no trusted third-party keys set." lightbox="media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png":::
 
-Add a new value under the path specified above. The type should be “Multi-String Value” (REG_MULTI_SZ), and it should be called “TrustedCertificateThumbprints” 
+Add a new value under the path specified in the previous image. The type should be Multi-String Value: `REG_MULTI_SZ`. It should be called `TrustedCertificateThumbprints`.
 
-![Power BI Desktop Registry with an entry for trusted third-party connectors but no keys](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
+:::image type="content" source="media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png" alt-text="Screenshot shows the Power BI Desktop Registry with an entry for trusted third-party connectors but no keys." lightbox="media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png":::
 
-Add the thumbprints of the certificates you want to trust. You can add multiple certificates by using “\0” as a delimiter, or in the registry editor, right click -> modify and put each thumbprint on a new line. Example thumbprint is taken from a self-signed certificate. 
+Add the thumbprints of the certificates you want to trust. You can add multiple certificates by using `\0` as a delimiter, or in the Registry Editor, right-click key, then select **Modify** to put each thumbprint on a new line. This example thumbprint is taken from a self-signed certificate.
 
- ![Power BI Desktop Registry with a trusted third-party key set](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
+:::image type="content" source="media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png" alt-text="Screenshot shows the Power BI Desktop Registry with a trusted third-party key set." lightbox="media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png":::
 
-If you’ve followed the instructions properly, and have been given the proper thumbprint by your developer, you should now be able to securely trust connectors signed with the associated certificate.
+If you have the proper thumbprint from your developer, you should now be able to securely trust connectors signed with the associated certificate.
 
-## How to Sign Connectors
+## How to sign connectors
 
-If you have a connector you or a developer need to sign, you can read about it in the Power Query docs [here](/power-query/handlingconnectorsigning).
+If you have a connector you or a developer need to sign, see [Handling Power Query Connector Signing](/power-query/handlingconnectorsigning).

@@ -79,7 +79,7 @@ As you can't edit datasets data sources in Power BI service, we recommend using 
 
 In deployment pipelines, you can configure parameter rules to set specific values for the development, test, and production stages.
 
-If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, in deployment pipelines, this isn't supported for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+If you don’t use parameters for your connection string, you can define data source rules to specify a connection string for a given dataset. However, in deployment pipelines, this isn't supported for all data sources. To verify that you can configure rules for your data source, see [deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
 
 Parameters have more uses, such as making changes to queries, filters, and the text displayed in the report.
 
@@ -140,7 +140,7 @@ When testing, you can use the same capacity as the production stage. However, th
 
 ### Use deployment rules with a real-life data source
 
-If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use [data source rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) to switch data sources in the test stage.
+If you're using the test stage to simulate real life data usage, it's recommended to separate the development and test data sources. The development database should be relatively small, and the test database should be as similar as possible to the production database. Use [data source rules](deployment-pipelines-create-rules.md) to switch data sources in the test stage.
 
 Controlling the amount of data you import from your data source is useful if you use a production data source in the test stage. You can control the amount of data you import from your data source by adding a parameter to your data source query in Power BI Desktop. Use parameter rules to control the amount of imported data or edit the parameter's value.
 You can also use this approach if you don't want to overload your capacity.
@@ -181,7 +181,7 @@ In addition, you should limit access to the pipeline by only enabling pipeline p
 
 ### Set rules to ensure production stage availability
 
-[Deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are a powerful way to ensure the data in production is always connected and available to users. Once deployment rules are applied, deployments can run while you have the assurance that end users see the relevant info without disturbance.
+[Deployment rules](deployment-pipelines-create-rules.md) are a powerful way to ensure the data in production is always connected and available to users. Once deployment rules are applied, deployments can run while you have the assurance that end users will see the relevant info without disturbance.
 
 Make sure that you set production deployment rules for data sources and parameters defined in the dataset.
 
