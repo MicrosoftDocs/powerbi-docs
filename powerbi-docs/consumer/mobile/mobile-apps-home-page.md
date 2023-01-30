@@ -60,7 +60,7 @@ Activity items are aggregated, so all data updates coming from the same app or w
 
 The navigation bar resides at the bottom of the page.
 
-:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-navbar-new.png" border="false" alt-text="Screenshot of the PowerBI mobile app navigation bar.":::
+:::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-navbar-new.png" border="false" alt-text="Screenshot of the Power BI mobile app navigation bar.":::
 
 The navigation bar provides quick access to:
 
