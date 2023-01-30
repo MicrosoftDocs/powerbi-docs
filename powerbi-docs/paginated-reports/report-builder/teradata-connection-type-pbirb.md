@@ -27,7 +27,7 @@ data source=<IP Address>
  For more connection string examples, see [Create data connection strings - Power BI Report Builder](/sql/reporting-services/report-data/data-connections-data-sources-and-connection-strings-report-builder-and-ssrs).  
   
 ##  <a name="Credentials"></a> Credentials  
- Credentials are required to run queries, to preview the report locally.
+ Credentials are required to run queries and preview the report locally.
   
  Once report is published to Power BI service, you will need to set up Power BI Gateway for your report to fetch data from your on-premise Teradata data source. To learn more about Power BI Gateway, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
   
