@@ -483,7 +483,7 @@
   - name: Paginated reports
     items: 
     - name: Report Builder in Power BI
-      item: 
+      items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
       - name: Report Builder change log
@@ -495,7 +495,7 @@
       - name: Keyboard shortcuts in Power BI Report Builder
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: Design paginated reports
-      item: 
+      items: 
       - name: Planning a report
         href: ../paginated-reports/report-builder-planning-report.md
       - name: Design tips
@@ -505,7 +505,7 @@
       - name: Troubleshoot subreports
         href: ../paginated-reports/subreports-troubleshoot.md
     - name: Data sources and datasets
-      item: 
+      items: 
       - name: Understanding paginated report data
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
@@ -517,7 +517,7 @@
       - name: Create an embedded dataset
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
     - name: Visualizations in paginated reports
-      item: 
+      items: 
       - name: Display percentage values on pie charts
         href: ../paginated-reports/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs.md
     - name: Paginated reports FAQ
@@ -533,7 +533,7 @@
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Parameters
-      item:
+      items:
       - name: Parameters
         href: ../paginated-reports/report-builder-parameters.md
       - name: Report parameter concepts in paginated reports
