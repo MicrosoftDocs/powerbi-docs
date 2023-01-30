@@ -31,7 +31,7 @@ ms.author: maggies
  When you design a report, report parameters are saved in the report definition. When you publish a report, report parameters are saved and managed separately from the report definition. After you save the report to the report server, you can do the following:  
   
   
- If you plan to create report subscriptions to a published report, you need to understand how report parameters affect the design requirements for the report.  
+ If you plan to create report subscriptions to a published report, you need to understand how the parameters are used during the runtime of the subscriptions. 
   
 ## Next Steps  
  [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
