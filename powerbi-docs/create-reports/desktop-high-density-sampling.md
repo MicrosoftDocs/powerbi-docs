@@ -31,7 +31,7 @@ By definition, high-density data is sampled to create visualizations reasonably 
 
 The new algorithm for high-density line sampling is available for line chart and area chart visuals with a continuous x-axis.
 
-For a high-density visual, **Power BI** intelligently slices your data into high-resolution chunks and then picks important points to represent each chunk. That process of slicing high-resolution data is tuned to ensure that the resulting chart is visually indistinguishable from rendering all of the underlying data points while remaining faster and more interactive.
+For a high-density visual, **Power BI** intelligently slices your data into high-resolution chunks and then picks important points to represent each chunk. That process of slicing high-resolution data is tuned to ensure that the resulting chart is visually indistinguishable from rendering all of the underlying data points but is faster and more interactive.
 
 ### Minimum and maximum values for high-density line visuals
 
@@ -60,7 +60,7 @@ As mentioned previously, the minimum granularity for each series is 350 points, 
 
 Each bin is represented by two data points, which become the bin's representative data points in the visual. The data points are the high and low value for that bin. By selecting the high and low, the binning process ensures any important high value or significant low value is captured and rendered in the visual.
 
-If that sounds like a lot of analysis to ensure the occasional outlier is captured and properly displayed in the visual, you're correct. However, that's the exact reason for the new algorithm and binning process.
+If that sounds like a lot of analysis to ensure the occasional outlier is captured and properly displayed in the visual, you're correct. That's the exact reason for the new algorithm and binning process.
 
 ## Tooltips and high-density line sampling
 
@@ -70,7 +70,7 @@ Let's say you're creating a visual based on stock price and you're comparing two
 
 Now let's say that the first stock jumps up in price at 12:02, then quickly comes back down 10 seconds later. That's an important data point. When binning occurs for that stock, the high at 12:02 will be a representative data point for that bin.
 
-However, for the second stock, 12:02 was neither a high nor a low in the bin that included that time. Maybe the high and low for the bin that includes 12:02 occurred three minutes later. In that situation, when the line chart is created and you hover over 12:02, you'll see a value in the tooltip for the first stock because it jumped at 12:02 and that value was selected as that bin's high data point. However, you will *not* see any value in the tooltip at 12:02 for the second stock. That's because the second stock had neither a high nor a low for the bin that included 12:02. Therefore, there's no data to show for the second stock at 12:02, and thus, no tooltip data is displayed.
+However, for the second stock, 12:02 wasn't a high nor a low in the bin that included that time. Maybe the high and low for the bin that includes 12:02 occurred three minutes later. In that situation, when the line chart is created and you hover over 12:02, you'll see a value in the tooltip for the first stock. This is because it jumped at 12:02 and that value was selected as that bin's high data point. However, you will *not* see any value in the tooltip at 12:02 for the second stock. That's because the second stock didn't have a high or a low for the bin that included 12:02. Therefore, there's no data to show for the second stock at 12:02, and thus, no tooltip data is displayed.
 
 This situation will happen frequently with tooltips. The high and low values for a given bin might not match perfectly with the evenly scaled x-axis value points, and as such, the tooltip won't display the value.
 
