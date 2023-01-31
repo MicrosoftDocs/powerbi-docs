@@ -34,7 +34,7 @@ Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL D
 Q&A also supports composite models, if the model contains at least one of the following data sources:
 
 - One import data source
-- One DQ data source that supports APPROXIMATEDISTINCOUNT. Refer to the DirectQuery support section in this article for specific sources.
+- One DirectQuery data source that supports APPROXIMATEDISTINCOUNT. Refer to the [DirectQuery support](#directquery-support-for-qa-preview) section in this article for specific sources.
 
 If the model contains a mix of data sources, we only index import columns or columns for data sources that suport APPROXIMATEDISTINCTCOUNT. Thus, you can only ask questions about the instance values for these types of columns. You still can ask questions about the columns themselves. 
 
