@@ -1,6 +1,6 @@
 ---
 title: Understand datamarts (preview)
-description: Learn about important datamarts best practices and concepts, like incremental refresh and proactive caching.
+description:  Learn about best practices and concepts for datamarts, like incremental refresh and proactive caching.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -12,11 +12,11 @@ LocalizationGroup: Data from files
 ---
 # Understand datamarts
 
-This article describes and explains important concepts to understand about datamarts.
+This article describes and explains important concepts about datamarts.
 
-Datamarts provide a semantic layer that is automatically generated and synchronized with the contents of the datamart tables, their structure, and underlying data. This layer is all provided in an automatically generated dataset. This automatic generation and synchronization enables you to further describe the domain of data with things like hierarchies, friendly names and descriptions. You can also set formatting specific to your locale or business requirements. With datamarts, you can also create measures and standardized metrics for reporting. Power BI (and other client tools) can create visuals and provide results for such calculations based on the data in context.
+Datamarts provide a semantic layer that is automatically generated and synchronized with the contents of the datamart tables, their structure, and underlying data. This layer is provided in an automatically generated dataset. This automatic generation and synchronization enables you to further describe the domain of data with things like hierarchies, friendly names and descriptions. You can also set formatting specific to your locale or business requirements. With datamarts, you can create measures and standardized metrics for reporting. Power BI (and other client tools) can create visuals and provide results for such calculations based on the data in context.
 
-The **auto-generated** Power BI dataset created from a datamart eliminates the need for connecting to a separate dataset, setting up refresh schedules, and managing multiple data elements. Instead, you can build your business logic in a datamart and its data will be immediately available in Power BI, enabling the following provides:
+The **auto-generated** Power BI dataset created from a datamart eliminates the need to connect to a separate dataset, set up refresh schedules, and manage multiple data elements. Instead, you can build your business logic in a datamart and its data will be immediately available in Power BI, enabling the following provides:
 
 * Datamart data access through the Dataset Hub.
 * Capability to analyze in Excel.
