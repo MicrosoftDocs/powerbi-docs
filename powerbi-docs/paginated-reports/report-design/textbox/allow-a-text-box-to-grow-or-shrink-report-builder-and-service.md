@@ -13,19 +13,19 @@ ms.reviewer: rpatkar
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  In a paginated report, text boxes aren't just the stand-alone boxes on the report design surface. Every cell in a table or matrix (a tablix data region) also contains a text box, which can be formatted in the same way as stand-alone text boxes. By default, text boxes are a fixed size. You can set options that let a text box expand or shrink based on its contents. These options correspond to the **CanGrow** or **CanShrink** properties in the Properties pane.  
+  In a Power BI paginated report, text boxes aren't just the stand-alone boxes on the report design surface. Every cell in a table or matrix (a *tablix* data region) also contains a text box, which can be formatted in the same way as stand-alone text boxes. By default, text boxes are a fixed size. You can set options that let a text box expand or shrink based on its contents. These options correspond to the **CanGrow** or **CanShrink** properties in the Properties pane.  
   
-## To Allow a Text Box to Grow or Shrink  
+## Allow a text box to grow or shrink  
   
-1.  Right-click the text box and click **Text Box Properties**.  
+1.  Right-click the text box and select **Text Box Properties**.  
   
-2.  Click the **General** tab.  
+2.  Select the **General** tab.  
   
     -   To allow the text box to expand vertically based on its contents, select **Allow height to increase**.  
   
     -   To allow the text box to shrink based on its contents, select **Allow height to decrease**.  
   
 ## Next steps
- [Text Boxes &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/text-boxes-report-builder-and-ssrs)  
+ [Text boxes in paginated reports](text-boxes-report-builder-and-service.md)  
   
   
