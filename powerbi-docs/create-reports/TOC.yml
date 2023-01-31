@@ -531,7 +531,7 @@
     - name: Parameters
       items:
       - name: Report parameters
-        href: ../paginated-reports/parameters/parameters/report-builder-parameters.md
+        href: ../paginated-reports/parameters/report-builder-parameters.md
       - name: Report parameter concepts in paginated reports
         href: ../paginated-reports/parameters/report-parameters-concepts-report-builder-and-ssrs.md
       - name: Create parameters

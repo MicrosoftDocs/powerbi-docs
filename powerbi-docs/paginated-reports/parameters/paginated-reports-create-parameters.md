@@ -12,13 +12,13 @@ ms.date: 10/27/2022
 
 # Create parameters for paginated reports in the Power BI service
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
-In this article, you learn how to create parameters for paginated reports in the Power BI service.  A report parameter provides a way to choose report data and vary the report presentation. You can provide a default value and a list of available values. Your report readers can change the selection. They can also type in the parameter text boxes to search for values. See [View parameters for paginated reports](../consumer/paginated-reports-view-parameters.md) to see how your business users interact with parameters in the Power BI service.  
+In this article, you learn how to create parameters for paginated reports in the Power BI service.  A report parameter provides a way to choose report data and vary the report presentation. You can provide a default value and a list of available values. Your report readers can change the selection. They can also type in the parameter text boxes to search for values. See [View parameters for paginated reports](../../consumer/paginated-reports-view-parameters.md) to see how your business users interact with parameters in the Power BI service.  
 
 The following illustration shows Design view in Power BI Report Builder for a report with the parameters @BuyingGroup, @Customer, @FromDate, and @ToDate. 
   
-![Screenshot showing parameters in Report Builder.](media/parameters/paginated-reports-create-parameters/power-bi-paginated-parameters-report-builder.png)
+![Screenshot showing parameters in Report Builder.](media/paginated-reports-create-parameters/power-bi-paginated-parameters-report-builder.png)
   
 1.  The report parameters in the Report Data pane.  
   
@@ -32,7 +32,7 @@ The following illustration shows Design view in Power BI Report Builder for a re
 
 ## Prerequisites 
 
-[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+[!INCLUDE [power-bi-paginated-prerequisites](../../includes/power-bi-paginated-prerequisites.md)]
   
 ## Create or edit a report parameter  
   
@@ -60,10 +60,10 @@ The following illustration shows Design view in Power BI Report Builder for a re
   
     -   To hide the parameter and protect it from being modified on the report server after the report is published, select **Internal**. The report parameter can then only be viewed in the report definition. For this option, you must set a default value or allow the parameter to accept a null value.  
   
-9. Select **OK**. 
+9. Select **OK**.
 
 ## Next steps
 
-See [View parameters for paginated reports](../consumer/paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
+See [View parameters for paginated reports](../../consumer/paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
 
-For in-depth information about parameters in paginated reports, see [Report parameters in Power BI Report Builder](parameters/report-builder-parameters.md).
+For in-depth information about parameters in paginated reports, see [Report parameters in Power BI Report Builder](report-builder-parameters.md).
