@@ -36,7 +36,7 @@ To create a Power BI dataset from Log Analytics:
 
 1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the Log Analytics XXX?? and saved to My workspace. You can choose your own name and destination workspace. If you are a [free user](../fundamentals/service-features-license-type.md#free-per-user-license) in Power BI, you will only be able to save to My workspace.
 
-    :::image type="content" source="./media/create-dataset-log-analytics-list/name-dataset-dialog.png" alt-text="Screenshot of a dialog where you name the dataset and choose a workspace.":::
+    :::image type="content" source="./media/create-dataset-log-analytics/name-dataset-dialog.png" alt-text="Screenshot of a dialog where you name the dataset and choose a workspace.":::
 
     The dialog also shows the URL of the data source (Log Analytics) and name of the Log Analytics XXX??. To prevent inadvertently exposing sensitive data, make sure that you recognize the data source and are familiar with the data. Select **Review data** if you want to check the Log Analytic results before allowing export to continue. For more information about when reviewing the data might be a good idea, see [Reviewing the Log Analytics data](#reviewing-the-log-analytics-data).
 
