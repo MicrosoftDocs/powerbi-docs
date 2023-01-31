@@ -51,9 +51,9 @@ The features available depend on whether you are the report designer (person who
 
 When you first open an ArcGIS for Power BI map visualization in Reading view, the Map tools button is typically collapsed.
 
-Select the map tools button ![Screenshot of the Map too expand button.](media/end-user-arcgis/power-bi-arcgis-map-tool.png) to expand the tools.
+Select the map tools button :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-map-tool.png "::: to expand the tools.
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand-tools.png" alt-text="Screenshot showing all the selection tools.":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand-tools.png" alt-text="Screenshot of map and all the selection tools displayed.":::
 
 The map tools expand to show the available options. When selected, each tool opens a task pane that provides detailed options.
 
@@ -62,88 +62,89 @@ The map tools expand to show the available options. When selected, each tool ope
 
 ## Select locations
 
- There are multiple ways to select locations on the map. The options available depend on the type of layer selected. If the map contains more than one layer, the selection tool will apply to the active layer. A maximum of 250 data points can be selected at a time. To learn more, see [selection tools](https://doc.arcgis.com/en/power-bi/use/select-features-on-the-map.htm).
+ There are multiple ways to select locations on the map. The options available depend on the type of layer selected. If the map contains more than one layer, the selection tool will apply the action to the active layer. A maximum of 250 data points can be selected at a time. For more information, see [Select locations on the map](https://doc.arcgis.com/en/power-bi/use/select-features-on-the-map.htm).
 
-![All five selection tools.](media/end-user-arcgis/power-bi-arcgis-selection-tools.png)
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-selection-tools.png" alt-text="Screenshot showing the features of the default single select tool.":::
 
-![Selection tool for individual data points.](media/end-user-arcgis/power-bi-arcgis-single-select-tool.png) This is the default tool and selects individual data points and individual features.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-single-select-tool.png ":::  **Single select**. This is the default tool. You can select individual data points and individual features.
 
-![Selection tool for drawing a rectangle.](media/end-user-arcgis/power-bi-arcgis-rectangle-select.png) Select by rectangle draws a rectangle on the map and selects the contained data points and features. Use CTRL to add or remove selections
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-rectangle-select.png"::: **Select by rectangle**. With this tool, you can draw a rectangle on the map and select the contained data points and features. Use **CTRL** to add or remove selections.
 
-![Selection tool for drawing a circle.](media/end-user-arcgis/power-bi-arcgis-freehand-select.png) Select by circle draws a circular shape on the map and selects the contained data points and features. Use CTRL to add or remove selections.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-circle-select.png "::: **Select by circle**. With this tool, you can draw a circular shape on the map and select the contained data points and features. Use **CTRL** to add or remove selections.
 
-![Selection tool for boundaries or polygons.](media/end-user-arcgis/power-bi-arcgis-polygon-select.png) Select by polygon draws boundaries or polygons within reference layers to select contained data points and features. Double-click to complete a selection. Use CTRL to enable snapping.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-polygon-select.png"::: **Select by polygon**. With this tool, you can draw boundaries or polygons within reference layers to select contained data points and features. Double-click your mouse to complete a selection. Use **CTRL** to enable snapping.
 
-![Selection tool for freehand selection.](media/end-user-arcgis/power-bi-arcgis-freehand-select.png) Select by freehand polygon draws a freehand shape on the map and selects the contained data points and features. Use CTRL to add or remove selections.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-freehand-select.png"::: **Select by freehand polygon**. With this tool, you can draw a freehand shape on the map and select the contained data points and features. Use **CTRL** to add or remove selections.
 
-![Selection tool for reference layers.](media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png) Select by reference layer is visible only if there is a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information, see [reference layers](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-reference-layer-select.png"::: **Select by reference layer**. This tool is only visible if there is a reference layer on the map and that reference layer is the active layer. Select features on the reference layer to highlight them. For more information, see [Work with map layers&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
 
-![Selection tool for drive time selection.](media/end-user-arcgis/power-bi-arcgis-drive-time.png) Drive time select is visible only if there is a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [buffer or drive time areas](https://pro.arcgis.com/en/pro-app/latest/tool-reference/business-analyst/find-nearby-locations.htm).
+ :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-drive-time.png"::: **Drive time select** This tool is only visible if there is a search area layer (buffer or drive time area) on the map and the search area layer is the active layer. Draw to select data points and features within the defined area. For more information, see [Find Nearby Locations](https://pro.arcgis.com/en/pro-app/latest/tool-reference/business-analyst/find-nearby-locations.htm).
 
-![Selection tool for erasing a selection.](media/end-user-arcgis/power-bi-arcgis-clear-selection.png) The eraser tool clears all selections.  It is only active after selections have been made on the map.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-clear-selection.png"::: **The eraser tool**. This took clears all selections.  It is only active after selections have been made on the map.
 
 ## Pin a location
 
 Pin a specific address, place, or point of interest on the map. In this example, we're looking for the Washington Monument.
 
-1. Expand the map tools ![Screenshot showing the map tool icon and options.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Search button ![Screenshot of the search tool icon.](media/end-user-arcgis/power-bi-arcgis-search.png) to open the search pane.
-2. Type the keywords **Washington Monument** in the search field.
-    Keywords can include an address, place, or point of interest. As you type, similar recent searches or suggestions based on similar keywords appear.
-3. From the results list, choose **Washington Monument, 2 15th St NW, Washington DC 20024 USA** and select **Close** . A symbol appears on the map, and the map automatically zooms to the location, pinning it for the duration of your session. Pins remain in place on the map only during the current session; you cannot save a pinned location with the map.
-For more information about pinning a location, visit the [ArcGIS for Power BI help](https://doc.arcgis.com/en/power-bi/use/pin-locations.htm).
+1. Expand the map tools :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-map-tool.png":::, if necessary, and select the Search button :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-search.png"::: to open the search pane.
+1. Type the keywords **Washington Monument** in the search field.
+    Keywords can include an address, place, or point of interest. As you type, recent searches or suggestions based on similar keywords appear.
+1. From the results list, choose **Washington Monument, 2 15th St NW, Washington DC 20024 USA** and select **Close** . A symbol appears on the map, and the map automatically zooms to the location, pinning it for the duration of your session. Pins remain in place on the map only during the current session. You cannot save a pinned location with the map.
+For more information, see [Pin a location&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/pin-locations.htm).
 
 ## View, show, or hide layers
 
 As a business user, you can show or hide a layer, change the sequence in which a layer is shown, and zoom to a layer’s data boundaries.  To view your map’s layers, follow these steps:
 
-Expand the map tools ![Screenshot showing the map tool options.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the Layers button ![Search tool icon.](media/end-user-arcgis/power-bi-arcgis-layers.png) to open the **Layers** pane.
+Expand the map tools :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-map-tool.png":::, if necessary, and select the Layers button :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-layers.png"::: to open the **Layers** pane.
 
 - To hide a layer, select the **Hide** button.
-- To show a hidden layer, select the **Show** button ![Icon for unhide.](media/end-user-arcgis/power-bi-arcgis-unhide.png).
+- To show a hidden layer, select the **Show** button :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-unhide.png":::.
 - To change the sequence in which a layer is shown on the map, for example, to display a Demographic reference layer on top of the data layer, drag the reference layer to the top of the list of layers in the **Layers** pane.
 - To zoom to the extent of the layer’s data boundaries, select **More options (...)** and select **Zoom to layer**.
 
-     :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-zoom.png" alt-text="Screenshot showing Zoom to layer for  City.":::
+     :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-zoom.png" alt-text="Screenshot showing Zoom to layer for City.":::
 
 You can also use the **Filters** pane to filter layer content on your ArcGIS for Power BI map based on the available data added by the report designer.
 
 > [!NOTE]
 > If you find that you cannot perform these tasks, it may be that the report designer has disabled these features. Contact the report designer if you have questions.
 
-For more information about working with layers, visit the [ArcGIS for Power BI help](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
+For more information about working with layers, visit the [Work with map layers&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/work-with-map-layers.htm).
 
 ## Filter map layers
 
 The **Filters** pane contains data added by the report designer. There are many different ways to filter your map content.
 
 1. Expand the **Filters** pane to the right of the map visualization.
-   :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-filters-menu.png" alt-text="Screenshot showing the Filters menu.":::
+
+   :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-filters-menu.png" alt-text="Screenshot of the Filter pane menu expanded.":::
+
 1. Select fields to filter the map. Use **Basic filtering**, to choose from data shown on the map. Use **Advanced filtering** to narrow content by specific parameters.
 
-    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-advanced-filter.png" alt-text="Screenshot showing an example of advanced filtering.":::
+    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-advanced-filter.png" alt-text="Screenshot of the Filter menu with Advanced Filtering parameters visible..":::
 
 1. Some filters have value parameters (Boolean) available.  
 
-    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-boolean.png" alt-text="Screenshot showing an example of boolean filtering, with is less than selected.":::
+    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-boolean.png" alt-text="Screenshot of the Filter menu with boolean filtering parameters.":::
 
 1. When you have selected your filter options, select **Apply filter**.
 The map is filtered by your selections
 
 ## Change the basemap
 
-A basemap provides a background, or visual context, for the data in a map. For example, a basemap showing streets can provide context for address data. As a Power BI business user, four basemaps are provided to you: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap, and Streets.
+A basemap provides a background, or visual context, for the data in a map. For example, a basemap that shows streets can provide context for address data. As a Power BI business user, there are four basemaps provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap, and Streets.
 > [!NOTE]
-> The report designer must have made basemaps available to you when designing the report. When unavailable, you will not see the **Basemap** button in the Map tools.
+> For access to basemaps, the report designer must make them available when designing the report. If the basemaps, are unavailable, you will not see the **Basemap** button in the Map tools.
 
 To change the basemap, follow these steps:
 
-1. Expand the map tools ![Map tool options.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the **Basemap** button ![Basemap icon.](media/end-user-arcgis/power-bi-arcgis-basemap.png) to display the gallery of available basemaps.
+1. Expand the map tools :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-map-tool.png":::, if necessary, and select the **Basemap** button :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-basemap.png"::: to display the gallery of available basemaps.
 1. Select the Dark Gray Canvas basemap.
 
-    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-change-basemap.png" alt-text="Screenshot showing Dark Gray Canvas selected and applied to basemap.":::
+    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-change-basemap.png" alt-text="Screenshot of the available basemaps with the Dark Gray Canvas basemap selected and applied.":::
 
-    The map updates to the new basemap.
-For more information about changing the basemap, visit the [ArcGIS for Power BI help](https://doc.arcgis.com/en/power-bi/use/change-the-basemap.htm).
+1. The map updates to the new basemap. For more information, see [Change the basemap&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/change-the-basemap.htm).
 
 ## Get help
 
