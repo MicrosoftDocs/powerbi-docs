@@ -1,6 +1,6 @@
 ---
 title: Explore Power BI data in the mobile app on your Apple Watch
-description: Learn how to install and use the Power BI Apple Watch app to view and update Power BI data on your watch.
+description: Learn how to install and use the Power BI Apple Watch app to view and Power BI content on your watch.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -22,23 +22,23 @@ The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when y
 
 Get to the Power BI Apple Watch app either from the watch's springboard, or by tapping the Power BI widget (if configured) directly from the watch face.
 
-:::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png" alt-text="Photograph shows an Apple Watch with the Power BI app.":::
+:::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png" border="false" alt-text="Photograph shows an Apple Watch with the Power BI app.":::
 
 The Power BI Apple Watch app consists of two parts.
 
-- The **index screen** allows a quick overview of all KPI and card tiles from the synced dashboard.
+* The **index screen** allows a quick overview of all KPI and card tiles from the synced dashboard.
   
-  :::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_indexscreen240.png" alt-text="Photograph of an Apple Watch with the index screen.":::
+  :::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_indexscreen240.png" border="false" alt-text="Photograph of an Apple Watch with the index screen.":::
 
-- The **in-focus tile** allows you to tap a tile on the index screen for an in-depth view of a specific tile.
+* The **in-focus tile** allows you to tap a tile on the index screen for an in-depth view of a specific tile.
   
-  :::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_kpi.png" alt-text="Photograph showing an Apple Watch displaying a tile.":::
+  :::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_kpi.png" border="false" alt-text="Photograph showing an Apple Watch displaying a tile.":::
 
 ## Refresh a dashboard from your Apple Watch
 
 You can refresh a synced dashboard directly from your watch.
 
-- While in the dashboard view on the watch app, deep press your screen and tap **refresh**.
+* While in the dashboard view on the watch app, deep press your screen and tap **refresh**.
 
 Your watch app will now sync your dashboard with data from the Power BI service.
 
@@ -77,19 +77,19 @@ Given the small space on the Apple Watch face, the Power BI Apple Watch app lets
 2. Select Power BI.
 3. Navigate to the widget name field, and then type a new name.
   
-  :::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_oniphone.png" alt-text="Photograph showing an iPhone with the My Watch app open and the Power BI icon visible.":::
+  :::image type="content" source="./media/mobile-apple-watch/pbi_aplwatch_oniphone.png" border="false" alt-text="Photograph showing an iPhone with the My Watch app open and the Power BI icon visible.":::
 
 > [!NOTE]
 > If you don't change the name, the Power BI widget will shorten the name to the number of characters that fit the small space on the watch face.
 
 ## Considerations and limitations
 
-- Card visuals that have a calculated function on the data label color, and that are pinned to a dashboard, might not appear on the Apple Watch when the dashboard is synced with it.
+* Card visuals that have a calculated function on the data label color, and that are pinned to a dashboard, might not appear on the Apple Watch when the dashboard is synced with it.
 
 ## Next steps
 
 Your feedback will help us decide what to implement in the future, so please don't forget to vote for other features that you would like to see in Power BI mobile apps.
 
-- Download the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
-- Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-- Join the conversation at the [Power BI Community](https://community.powerbi.com/)
+* Download the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
+* Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
+* Join the conversation at the [Power BI Community](https://community.powerbi.com/)
