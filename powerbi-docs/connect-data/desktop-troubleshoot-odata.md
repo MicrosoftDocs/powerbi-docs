@@ -25,7 +25,8 @@ The following sections describe each error, and the steps to remedy them, in tur
 You might see the following error, indicating the credential type isn't supported:
 
 ```output
-We are unable to connect because this credential type is not supported by this resource. Please choose another credential type.
+We are unable to connect because this credential type is not supported 
+by this resource. Please choose another credential type.
 ```
 
 You need to ensure your service is sending auth headers as follows:
@@ -42,18 +43,22 @@ You need to ensure your service is sending auth headers as follows:
   www-authenticate: Bearer authorization_uri=https://login.microsoftonline.com/<Your Active Directory Tenant Id>/oauth2/authorize
   ```
 
-After a successful redirect call, calls to your service have the right access token in the authorization header. If you still see an error, clear the **Global Permissions** for the OData service uri and try again. To clear **Global Permissions**, go to **File** > **Options and Settings** > **Data Source Settings** > **Global Permissions**.
+After a successful redirect call, calls to your service have the right access token in the authorization header. If you still see an error, clear the **Global Permissions** for the OData service URI and try again. To clear **Global Permissions**, go to **File** > **Options and Settings** > **Data Source Settings** > **Global Permissions**.
 
 ## Access denied
 
 You might see one of the following errors, indicating access is denied:
 
 ```output
-access_denied: AADSTS650053: The application 'Microsoft Power Query for Excel' asked for scope 'user_impersonation' that doesn't exist on the resource \<resourceId\>.
+access_denied: AADSTS650053: The application 'Microsoft Power Query for Excel' 
+asked for scope 'user_impersonation' that doesn't exist 
+on the resource \<resourceId\>.
 ```
 
 ```output
-Microsoft Power Query for Excel needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
+Microsoft Power Query for Excel needs permission to access resources 
+in your organization that only an admin can grant. 
+Ask an admin to grant permission to this app before you can use it.
 ```
 
 If you encounter such an error, ensure the application registration for your OData service has following settings:
