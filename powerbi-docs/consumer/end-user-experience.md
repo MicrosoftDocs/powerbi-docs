@@ -79,7 +79,7 @@ Let's start by opening a dashboard.
 
 1. Select the name of the dashboard to open it.
 
-   ![Menu that appears on hover](../collaborate-share/media/end-user-experience/power-bi-dashboard.png)
+   ![Menu that appears on hover](media/end-user-experience/power-bi-dashboard.png)
  
 1. The dashboard opens in the Power BI service. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
 
