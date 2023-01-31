@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 
 # Private endpoints for secure access to Power BI
 
-You can use Azure Private Link to provide secure access for data traffic in Power BI. In this configuration, Azure Private Link and Azure Networking private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure instead of going across the internet.
+You can use private links to provide secure access for data traffic in Power BI. In this configuration, Azure Private Link and Azure Networking private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure instead of going across the internet.
 
 When private link connections are used, those connections go through the Microsoft private network backbone when Power BI users access resources in the Power BI service.
 
@@ -46,7 +46,7 @@ In Power BI, you can configure and use an endpoint that allows your organization
 
 The steps that allow you to securely access Power BI from private endpoints are:
 
-1. [Set up private endpoints for Power BI](#enable-private-endpoints-for-power-bi)
+1. [Set up private endpoints for Power BI](#set-up-private-endpoints-for-power-bi)
 2. [Create a Power BI resource in the Azure portal](#create-a-power-bi-resource-in-the-azure-portal)
 3. [Create a virtual network](#create-a-virtual-network)
 4. [Create a virtual machine (VM)](#create-a-virtual-machine-vm)
@@ -149,13 +149,13 @@ The next step is to create a virtual network and subnet. Replace the sample para
 
     :::image type="content" source="media/service-security-private-links/create-virtual-network.png" alt-text="Screenshot of the Basics tab in Create a virtual network.":::
 
-3. Then select **Save**, and then select **Review + create** > **Create**.
+3. Select **Save**, then select **Review + create** > **Create**.
 
-Once you've completed these steps, you can create a virtual machine (VM), as described in the next section.
+After you complete these steps, you can create a VM, as described in the next section.
 
 ## Create a virtual machine (VM)
 
-The next step is to create a virtual network to host the VM.
+The next step is to create a VM.
 
 1. On the upper-left side of the screen in your Azure portal, select **Create a resource > Compute > Virtual Machine**.
 
@@ -256,13 +256,12 @@ The next step is to create a private endpoint for Power BI.
 After you create your VM, called **myVM**, connect to it from the internet using the following steps:
 
 1. In the portal's search bar, enter *myVm*.
-2. Select the **Connect** button. Once you select the **Connect** button, **Connect to virtual machine** opens.
-3. Select **Download RDP File**. Azure creates a Remote Desktop Protocol (.rdp) file and downloads it to your computer.
-4. Open the *.rdp* file.
-5. If prompted, select **Connect**.
-6. Enter the username and password you specified when creating the VM in the previous step.
-7. Select **OK**.
-8. You may receive a certificate warning during the sign-in process. If you receive a certificate warning, select **Yes** or **Continue**.
+1. Select the **Connect** button, and choose **RDP** from the dropdown menu.
+1. Enter an IP address, then select **Download RDP File**. Azure creates a Remote Desktop Protocol (.rdp) file and downloads it to your computer.
+1. Open the *.rdp* file to start Remote Desktop Connection, then select **Connect**.
+1. Enter the username and password you specified when creating the VM in the previous step.
+1. Select **OK**.
+1. You may receive a certificate warning during the sign-in process. If you receive a certificate warning, select **Yes** or **Continue**.
 
 ## Access Power BI privately from the VM
 
