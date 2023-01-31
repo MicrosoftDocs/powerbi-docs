@@ -42,7 +42,7 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 * The add-in currently supports Power BI report pages only. Other types of items such as dashboards and paginated reports are not supported.
 * [Business-to-business (B2B)](../enterprise/service-admin-azure-ad-b2b.md) scenarios are not supported.
 * The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete**, **Reload**, and **Show as Saved Image** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
-* The add-in is not supported in national clouds.
+* In sovereign clouds the add-in is supported as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins) only, as the Office add-in store isn't accessible from sovereign clouds.
 
 ## Next Steps
 
