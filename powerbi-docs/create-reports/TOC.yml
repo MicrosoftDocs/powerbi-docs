@@ -534,6 +534,8 @@
       href: ../paginated-reports/subreports-troubleshoot.md
     - name: Publish a paginated report
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+    - name: Embed a paginated report
+      href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
     - name: Paginated report design
