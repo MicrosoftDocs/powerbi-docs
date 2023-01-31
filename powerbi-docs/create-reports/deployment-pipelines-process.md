@@ -1,8 +1,8 @@
 ---
-title: Deployment pipelines, the Power BI Application lifecycle management (ALM) tool, process
+title: Understand the Power BI deployment pipelines process
 description: Understand how deployment pipelines, the Power BI Application lifecycle management (ALM) tool, works
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: pbi-deployment-pipeline
@@ -12,17 +12,17 @@ ms.date: 12/28/2022
 
 # Understand the deployment process
 
-The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
+The deployment process lets you clone content from one stage in the deployment pipeline to another, typically from development to test, and from test to production.
 
 During deployment, Power BI copies the content from the current stage, into the target one. The connections between the copied items are kept during the copy process. Power BI also applies the configured deployment rules to the updated content in the target stage. Deploying content may take a while, depending on the number of items being deployed. During this time, you can navigate to other pages in the Power BI portal, but you can't use the content in the target stage.
 
-You can also deploy content programmatically, using the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines). You can learn more about this process in the [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md) article.
+You can also deploy content programmatically, using the [deployment pipelines REST APIs](/rest/api/power-bi/pipelines). You can learn more about this process in [Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md).
 
 ## Deploying content to an empty stage
 
-When you deploy content to an empty stage, the metadata of the reports, dashboards, and datasets in the workspace you're deploying from, is copied to the stage you're deploying to. A new workspace for the stage you deployed to, is created on a Premium capacity.
+When you deploy content to an empty stage, a new workspace is created on a Premium capacity for the stage you deploy to. All the metadata in the reports, dashboards, and datasets of the original workspace is copied to the new workspace in the stage you're deploying to.
 
-There are two ways to deploy content from one stage to the next one. You can deploy all the content, or you can [select which content items to deploy](deployment-pipelines-get-started.md#selective-deployment).
+There are two ways to deploy content from one stage to another. You can deploy all the content, or you can [select which items to deploy](deployment-pipelines-deploy.md#selective-deployment).
 
 You can also deploy content backwards, from a later stage in the deployment pipeline, to an earlier one.
 
@@ -30,7 +30,7 @@ After the deployment is complete, refresh the datasets so that you can use the n
 
 ### Creating a Premium workspace
 
-During first-time deployment, deployment pipelines checks if you have Premium permissions.  
+The first time you deploy content, deployment pipelines checks if you have Premium permissions.  
 
 If you have Premium permissions, the content of the workspace is copied to the stage you're deploying to, and a new  workspace for that stage is created on the Premium capacity.
 
@@ -46,13 +46,13 @@ The deploying user automatically becomes the dataset owner of the cloned dataset
 
 Deploying content in a working production pipeline, to a stage that has an existing workspace, includes the following:
 
-* Deploying new content as an addition, to a stage that already contains content.
+* Deploying new content as an addition to the content already there.
 
-* New content deployed to replace old content, in a current working  stage.
+* Deploying new content to replace some of the content already there.
 
 ### Deployment process
 
-Content from the current stage is copied over to the target stage. Power BI identifies existing content in the target stage and overwrites it. To identify which content item needs to be overwritten, deployment pipelines uses the connection between the parent item and its clones. This connection is kept when new content is created. The overwrite operation only overwrites the content of the item. The item's ID, URL, and permissions remain unchanged.
+When content from the current stage is copied to the target stage, Power BI identifies existing content in the target stage and overwrites it. To identify which content item needs to be overwritten, deployment pipelines uses the connection between the parent item and its clones. This connection is kept when new content is created. The overwrite operation only overwrites the content of the item. The item's ID, URL, and permissions remain unchanged.
 
 In the target stage, [item properties that aren't copied](deployment-pipelines-process.md#item-properties-that-are-not-copied), remain as they were before deployment. New content and new items are copied from the current stage to the target stage.
 
@@ -114,7 +114,7 @@ There are three methods you can use to avoid using auto-binding:
 
 #### Auto-binding and parameters
 
-Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment won't take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules).
+Parameters can be used to control the connections between datasets or dataflows and the Power BI items that they depend on. When a parameter controls the connection, auto-binding after deployment won't take place, even when the connection includes a parameter that applies to the dataset’s or dataflow's ID, or the workspace ID. In such cases, you'll need to rebind the items after the deployment by changing the parameter value, or by using [parameter rules](deployment-pipelines-create-rules.md).
 
 >[!NOTE]
 >If you're using parameter rules to rebind items, the parameters must be of type `Text`.  
@@ -127,11 +127,11 @@ In many cases, when you have a small change such as adding or removing a table, 
 
 ### Requirements for deploying to a stage with an existing workspace
 
-A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [premium capacity](../enterprise/service-premium-gen2-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
+A user with a [Pro license](../enterprise/service-admin-purchasing-power-bi-pro.md) or a [PPU user](../enterprise/service-premium-per-user-faq.yml) who's a member of both the target and source deployment workspaces, can deploy content that resides on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md) to a stage with an existing workspace. For more information, review the [permissions](#permissions) section.
 
 ## Deployed items
 
-When you deploy content from one pipeline stage to another, the copied content contains the following Power BI items:
+When you deploy content from one pipeline stage to another, the copied content can contain the following Power BI items:
 
 * Datasets
 
@@ -167,9 +167,9 @@ Deployment pipelines doesn't support the following items:
 
 During deployment, the following item properties are copied and overwrite the item properties at the target stage:
 
-* Data sources ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
+* Data sources ([deployment rules](deployment-pipelines-create-rules.md) are supported)
 
-* Parameters​ ([deployment rules](deployment-pipelines-get-started.md#step-4---create-deployment-rules) are supported)
+* Parameters​ ([deployment rules](deployment-pipelines-create-rules.md) are supported)
 
 * Report visuals​
 
@@ -258,11 +258,11 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 * Enable incremental refresh in a dataset that's already in a *development* workspace.  
 
-* Create a pipeline from a production workspace that has a dataset that uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the *test* stage, and then to the *development* stage.
+* Create a pipeline from a production workspace that has a dataset that uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-deploy.md#backwards-deployment) to deploy to the *test* stage, and then to the *development* stage.
 
 * Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
 
-#### Considerations and limitations
+#### Incremental refresh limitations
 
 For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). All datasets created or modified with Power BI Desktop automatically implement enhanced dataset metadata.
 
@@ -371,7 +371,7 @@ The table below lists required permissions for popular deployment pipeline actio
 
 This section lists most of the limitations in deployment pipelines.
 
-* The workspace must reside on a [premium capacity](../enterprise/service-premium-gen2-what-is.md).
+* The workspace must reside on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
@@ -393,7 +393,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * After deployment, downloading a dataset (from the stage it's been deployed to) isn't supported.
 
-* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+* For a list of deployment rule limitations, see [deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
 
 ### Dataflow limitations
 
@@ -403,7 +403,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Deploying common data model (CDM) isn't supported.
 
-* For deployment pipeline rule limitations that affect dataflows, see [Deployment rules limitations](deployment-pipelines-get-started.md#deployment-rule-limitations).
+* For deployment pipeline rule limitations that affect dataflows, see [Deployment rules limitations](deployment-pipelines-create-rules.md#considerations-and-limitations).
 
 * If a dataflow is being refreshed during deployment, the deployment will fail.
 

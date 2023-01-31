@@ -1,6 +1,6 @@
 ---
-title: Power BI gen2 app fast moderate and slow operations
-description: Power BI gen2 app fast moderate and slow operations
+title: Power BI Premium app fast moderate and slow operations
+description: Power BI Premium app fast moderate and slow operations
 services: powerbi
 author: KesemSharabi
 ms.author: kesharab
