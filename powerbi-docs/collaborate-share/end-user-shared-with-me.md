@@ -17,7 +17,7 @@ LocalizationGroup: Dashboards
 
 Your colleagues have created apps, reports, dashboards, scorecards, workspaces, and datasets. When it comes time to share them with you or to ask for your collaboration, there are several ways that they can do this. In this article, we explain how to view and open content that has been shared with you. 
 
-:::image type="content" source="./media/end-user-shared-with-me/power-bi-browse.png" alt-text="Screenshot showing the Browse menu.":::
+:::image type="content" source="media/end-user-shared-with-me/power-bi-browse.png" alt-text="Screenshot showing the Browse menu.":::
 
 ## Interact with shared content
 
@@ -49,14 +49,14 @@ If your **Shared with me** content list gets long, you've several options for fi
 
 When a designer creates or updates content, they often share that content in email. An email link gives you direct access to a single piece of content, such as a report or an app. Select the link to open and install the content.
 
-:::image type="content" source="./media/end-user-shared-with-me/email-report-link.png" alt-text="Screenshot showing the Browse menu.":::
+:::image type="content" source="media/end-user-shared-with-me/email-report-link.png" alt-text="Screenshot showing the Browse menu.":::
 
 
 
 ## View and open content from your *Apps* tab
-Apps that ve been directly shared with you and apps that you've downloaded are listed in your **Apps** tab. These apps have been sent to you in an email link, that the *creator* or *owner* has automatically installed for you, or that you've installed from [AppSource](../consumer/end-user-apps#get-a-new-app). Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the Apps icon.
+Apps that ve been directly shared with you and apps that you've downloaded are listed in your **Apps** tab. These apps have been sent to you in an email link, that the *creator* or *owner* has automatically installed for you, or that you've installed from [AppSource](../consumer/end-user-apps.md#get-a-new-app). Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the Apps icon.
 
-:::image type="content" source="./media/end-user-shared-with-me/power-bi-apps.png" alt-text="Screenshot showing the Browse menu.":::
+:::image type="content" source="media/end-user-shared-with-me/power-bi-apps.png" alt-text="Screenshot showing the Browse menu.":::
 
 To learn more, see [Install and use apps](../consumer/end-user-apps.md).
 
@@ -65,6 +65,6 @@ One way that *creators* can share with you is by granting you a [role](service-r
 
 ## Next steps
 
-[Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports#share-reports-or-dashboards)
+[Ways to collaborate and share in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md#share-reports-or-dashboards)
 
 [Shared datasets](../connect-data/service-datasets-across-workspaces.md)
