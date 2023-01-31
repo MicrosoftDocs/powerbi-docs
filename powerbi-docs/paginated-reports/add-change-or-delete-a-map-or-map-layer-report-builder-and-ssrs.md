@@ -2,13 +2,14 @@
 title: "Add, change, or delete a map or map layer in a Power BI paginated report | Microsoft Docs"
 description: Learn how to add, remove, or change map options manually or by using the map layer wizard in a Power BI paginated report in Power BI Report Builder.
 ms.date: 01/25/2023
-ms.service: reporting-services
+ms.service: powerbi
 ms.subservice: report-builder
 
 
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
 ---
 # Add, change, or delete a map or map layer in a Power BI paginated report (Power BI Report Builder)
 
@@ -34,7 +35,7 @@ ms.author: maggies
   
  At the bottom of the Map pane is the Map view area. To change the center or zoom options for the map, use the arrow keys to adjust the view center and the slider to adjust the zoom level.  
   
- For more information about layers, see [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md).  
+ For more information about layers, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs).  
   
 
   
@@ -42,13 +43,13 @@ ms.author: maggies
   
 -   From the Ribbon, on the **Insert** menu, click **Map**, and then click **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
   
-     For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-and-map-layer-wizard-report-builder-and-ssrs.md).  
+     For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
   
 ##  <a name="ChangeLayer"></a> To change options for a layer by using the map layer wizard  
   
 -   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, click the layer wizard button (![rs_IconMapLayerWizard](/sql/reporting-services/media/rs-iconmaplayerwizard.gif "rs_IconMapLayerWizard")).  
   
-     For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](map-wizard-and-map-layer-wizard-report-builder-and-ssrs.md).  
+     For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
   
 ##  <a name="AddVectorLayer"></a> To add a point, line, or polygon layer from the Map pane toolbar  
   
@@ -75,7 +76,7 @@ ms.author: maggies
   
     5.  Type the name of the match field from the analytical dataset.  
   
-     For more information about linking spatial and analytical data, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs.md).  
+     For more information about linking spatial and analytical data, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs).  
   
 5.  Select **OK**.
   
@@ -87,15 +88,15 @@ ms.author: maggies
   
 3.  Click **Filters**.  
   
-4.  Define a filter equation to limit the analytical data that is used in the map display. For more information, see [Filter Equation Examples &#40;Power BI Report Builder&#41;](filter-equation-examples-report-builder-and-ssrs.md).  
+4.  Define a filter equation to limit the analytical data that is used in the map display. For more information, see [Filter Equation Examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
 ##  <a name="PointProperties"></a> To control point properties for a point layer or for polygon center points  
   
 1.  Select **General** on the **Map Point Properties** dialog box to change label, tooltip, and marker type options for the following map elements:  
   
-    -   All dynamic or embedded points on a point layer. Color rules, size rules, and marker type rules for points override these options. To override options for a specific embedded point, use the [Map Embedded Point Properties Dialog Box, Marker](maps-report-builder-and-ssrs.md) page.  
+    -   All dynamic or embedded points on a point layer. Color rules, size rules, and marker type rules for points override these options. To override options for a specific embedded point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
   
-    -   The center point for all dynamic or embedded polygons on a polygon layer. Color rules, size rules, and marker type rules for center points override these options. To override options for a specific center point, use the [Map Embedded Point Properties Dialog Box, Marker](maps-report-builder-and-ssrs.md) page.  
+    -   The center point for all dynamic or embedded polygons on a polygon layer. Color rules, size rules, and marker type rules for center points override these options. To override options for a specific center point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
   
 ##  <a name="Embedded"></a> To specify embedded data as a source of spatial data  
   
@@ -105,30 +106,12 @@ ms.author: maggies
   
 3.  In **Use spatial data from**, select **Data embedded in report**.  
   
-4.  To load map elements from an existing report or to create map elements based on an ESRI file, click **Browse**, point to the file, and then click **Open**. The map elements are embedded in this report definition. The spatial data that you point to must match the layer type. For example, for a point layer, you must point to spatial data that specifies sets of point coordinates.  
+4.  To load map elements from an existing report, click **Browse**, point to the file, and then click **Open**. The map elements are embedded in this report definition. The spatial data that you point to must match the layer type. For example, for a point layer, you must point to spatial data that specifies sets of point coordinates.  
   
 5.  In **Spatial field**, specify the name of the field that contains spatial data. You might need to determine this name from the source of spatial data.  
-  
-    > [!NOTE]  
-    >  If you do not know the name of the field and you browsed to an ESRI Shapefile, use the **Link to ESRI shape file option** instead of this option.  
-  
+     
 6.  Select **OK**.
-  
-##  <a name="ESRI"></a> To specify an ESRI Shapefile as a source of spatial data  
-  
-1.  Click the map until the Map pane appears.  
-  
-2.  Right-click the layer, and then click **Layer Data**.  
-  
-3.  In **Use spatial data from**, select **Link to ESRI Shapefile**.  
-  
-4.  In **File name**, type the location of an ESRI Shapefile, or click **Browse** to select an ESRI Shapefile.  
-  
-    > [!NOTE]  
-    >  If the Shapefile is on your local computer, the spatial data is embedded in the report definition. To retrieve the data dynamically when the report is processed, you must upload the ESRI .shp file and its .dbf support file to the report server. For more information, see [Upload a File or Report](/sql/reporting-services/reports/upload-a-file-or-report-report-manager).  
-  
-5.  Select **OK**.
-  
+
 ##  <a name="DatasetField"></a> To specify a report dataset field as a source of spatial data  
   
 1.  Click the map until the Map pane appears.  
@@ -225,9 +208,9 @@ ms.author: maggies
   
     -   Optional. Enter a value for transparency.  
   
-     You can also conditionally hide the layer. For more information, see [Hide an Item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs.md).  
+     You can also conditionally hide the layer. For more information, see [Hide an Item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs).  
   
 ## Next steps  
- [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md)   
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder-and-ssrs.md)  
+ [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
+ [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
   
