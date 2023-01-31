@@ -49,14 +49,12 @@ If your **Shared with me** content list gets long, you've several options for fi
 
 When a designer creates or updates content, they often share that content in email. An email link gives you direct access to a single piece of content, such as a report or an app. Select the link to open and install the content.
 
-:::image type="content" source="media/end-user-shared-with-me/email-report-link.png" alt-text="Screenshot showing the Browse menu.":::
-
-
+:::image type="content" source="media/end-user-shared-with-me/email-report-link.png" alt-text="Screenshot showing an email with a link to a report.":::
 
 ## View and open content from your *Apps* tab
 Apps that ve been directly shared with you and apps that you've downloaded are listed in your **Apps** tab. These apps have been sent to you in an email link, that the *creator* or *owner* has automatically installed for you, or that you've installed from [AppSource](../consumer/end-user-apps.md#get-a-new-app). Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the Apps icon.
 
-:::image type="content" source="media/end-user-shared-with-me/power-bi-apps.png" alt-text="Screenshot showing the Browse menu.":::
+:::image type="content" source="media/end-user-shared-with-me/power-bi-apps.png" alt-text="Screenshot showing Apps selected from the nav pane.":::
 
 To learn more, see [Install and use apps](../consumer/end-user-apps.md).
 
