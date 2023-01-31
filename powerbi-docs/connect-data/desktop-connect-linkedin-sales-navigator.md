@@ -15,7 +15,7 @@ LocalizationGroup: Connect to data
 
 In Power BI Desktop, you can connect to *LinkedIn Sales Navigator* to help find and build relationships just like any other data source in Power BI Desktop, and create ready-made reports about your progress.
 
-![Screenshot shows LinkedIn Sales Navigator Usage tab in the Power BI service.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png" alt-text="Screenshot shows LinkedIn Sales Navigator Usage tab in the Power BI service." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-01.png":::
 
 To connect to LinkedIn data using the **LinkedIn Sales Navigator**, you need to have a LinkedIn Sales Navigator Enterprise plan, and either be an Admin or Reporting User on the Sales Navigator Contract.
 
@@ -44,11 +44,11 @@ In the **LinkedIn Sales Navigator** window that appears, select which data you w
 
 Once you've provided the information, Power BI Desktop connects to the data associated with your LinkedIn Sales Navigator contract. Use the same email address you use to sign in to LinkedIn Sales Navigator through the website.
 
-![Screenshot shows a LinkedIn dialog where you can sign in.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-05.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-05.png" alt-text="Screenshot shows a LinkedIn dialog where you can sign in." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-05.png":::
 
 When you connect successfully, you're prompted to select which data from your LinkedIn Sales Navigator contract from a **Navigator** window.
 
-![Screenshot shows the Navigator window, where you can select data.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-09.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-09.png" alt-text="Screenshot shows the Navigator window, where you can select data." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-09.png":::
 
 You can create whatever reports you like with your LinkedIn Sales Navigator data.
 
@@ -56,11 +56,13 @@ You can create whatever reports you like with your LinkedIn Sales Navigator data
 
 To make using the LinkedIn Sales Navigator as easy as possible, you can use the [template app](service-template-apps-overview.md) that automatically creates a ready-made report from your LinkedIn Sales Navigator data.
 
-![Screenshot shows the template app for LinkedIn Sales Navigator.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-10.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-10.png" alt-text="Screenshot shows the template app for LinkedIn Sales Navigator." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-10.png":::
 
 When you download the app, you can select whether to connect to your data, or explore the app with sample data. You can always go back and connect to your own LinkedIn Sales Navigator data after you explore the sample data.
 
-![Screenshot shows the option to connect to data for LinkedIn Sales Navigator.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-11.png)
+![]()
+
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-11.png" alt-text="Screenshot shows the option to connect to data for LinkedIn Sales Navigator." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-11.png":::
 
 You can get the **LinkedIn Sales Navigator** template app from the following link:
 
@@ -75,23 +77,23 @@ The template app provides four tabs to help analyze and share your information:
 
 The **Usage** tab shows your overall LinkedIn Sales Navigator data.
 
-![Screenshot shows the LinkedIn Sales Navigator Usage tab, which shows your overall LinkedIn Sales Navigator data.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png" alt-text="Screenshot shows the LinkedIn Sales Navigator Usage tab, which shows your overall LinkedIn Sales Navigator data." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-12.png":::
 
 The **Search** tab lets you drill deeper into your search results.
 
-![Screenshot shows the LinkedIn Sales Navigator Search tab.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-13.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-13.png" alt-text="Screenshot shows the LinkedIn Sales Navigator Search tab." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-13.png":::
 
 The **InMail** provides insights into your InMail usage, including number of InMails sent, acceptance rates, and other useful information.
 
-![Screenshot shows the LinkedIn Sales Navigator InMail tab.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-14.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-14.png" alt-text="Screenshot shows the LinkedIn Sales Navigator InMail tab." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-14.png":::
 
 The **SSI** tab provides more details into your social selling index (SSI).
 
-![Screenshot shows the LinkedIn Sales Navigator SSI tab.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-15.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-15.png" alt-text="Screenshot shows the LinkedIn Sales Navigator SSI tab." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-15.png":::
 
 To go from the sample data to your own data, select **edit app** in the top-right corner (the pencil icon) and then select **Connect your data** from the screen that appears.
 
-![Screenshot shows the Connect your data link in the Power BI service.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-16.png)
+:::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-16.png" alt-text="Screenshot shows the Connect your data link in the Power BI service." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-16.png":::
 
 From there you can connect your own data, selecting how many days of data to load. You can load up to 365 days of data. You need to sign in, again using the same email address you use to sign in to LinkedIn Sales Navigator through the website.
 
