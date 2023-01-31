@@ -16,7 +16,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-**Recent** content contains the last items you visited in the Power BI service. This includes: dashboards, reports, apps, datasets, workspaces, and workbooks. When you select **Recent** on the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
+**Recent** content contains the last items you visited in the Power BI service. Recent content includes: dashboards, reports, apps, datasets, workspaces, and workbooks. When you select **Recent** on the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
 :::image type="content" source="./media/end-user-recent/power-bi-recents-new.png" alt-text="Screenshot showing Power BI service recent content list.":::
 
@@ -28,7 +28,7 @@ If your lists get long, use the **Filter by keyword** field, **Filter** button, 
 
 - Enter a keyword into the **Filter by keyword** field to show only recent content that includes that keyword.
 - Use the Filter drop-down to sort your content according to the value of the **Type**, **Opened**, or **Endorsement** column.
-- Click a column heading to display a sorting arrow. In this example, hovering over **Location** reveals an arrow &mdash; recent content can be sorted alphabetically by location content type.
+- Click a column heading to display a sorting arrow. In this example, hovering over **Location** reveals an arrow &mdash;recent content can be sorted alphabetically by location content type.
 
 :::image type="content" source="./media/end-user-recent/power-bi-recent-sort-search-new.png" alt-text="Screenshot showing search and sorting options in Power BI.":::
 
@@ -44,7 +44,7 @@ In the following video, watch Amanda demonstrate some of the features for naviga
 The actions available to you depend on the settings assigned by the content designer. Some of your options might include:
 
 - Select the star icon to [favorite a dashboard, report, or app](end-user-favorite.md) ![star icon](../collaborate-share/media/end-user-shared-with-me/power-bi-star-icon.png).
-- Some dashboards and reports can be re-shared ![share icon](../collaborate-share/media/end-user-shared-with-me/power-bi-share-icon-new.png).
+- Some dashboards and reports can be reshared ![share icon](../collaborate-share/media/end-user-shared-with-me/power-bi-share-icon-new.png).
 - [View insights](end-user-insights.md) that Power BI finds in the report data ![insights icon](../collaborate-share/media/end-user-shared-with-me/power-bi-insights.png).
 
 ## Next steps
