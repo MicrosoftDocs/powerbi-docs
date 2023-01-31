@@ -1,6 +1,6 @@
 ---
-title: "Relational Query Designer User Interface (Power BI Report Builder) | Microsoft Docs"
-description: Learn to use the graphical query designer to explore the metadata, interactively build a query, and view the results for your query.
+title: "Relational query designer user interface (Power BI Report Builder) | Microsoft Docs"
+description: Learn to use the graphical query designer in Power BI Report Builder to explore the metadata, interactively build a query, and view the results for your query.
 ms.date: 01/27/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,7 +9,7 @@ ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Relational Query Designer User Interface (Power BI Report Builder)
+# Relational query designer user interface (Power BI Report Builder)
   Power BI Report Builder provides both a graphical query designer and a text-based query designer to help you create a query that specifies the data to retrieve from [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssSDS](../../includes/sssds-md.md)] relational databases and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDWCurrentFull](../../includes/ssdwcurrentfull-md.md)] for a report dataset. Use the graphical query designer to explore the metadata, interactively build a query, and view the results for your query. Use the text-based query designer to view the query that was built by the graphical query designer or to modify a query. You can also import an existing query from a file or report.  
   
 > [!NOTE]  
@@ -18,7 +18,7 @@ ms.author: maggies
 > [!IMPORTANT]  
 >  Users access data sources when they create and run queries. You should grant minimal permissions on the data sources, such as read-only permissions.  
   
-## Graphical Query Designer  
+## Graphical query designer  
  In the graphical query designer, you can explore the database tables and views, interactively build the SQL SELECT statement that specifies the database tables and columns from which to retrieve data for a dataset. You choose the fields to include in the dataset and optionally, specify filters that limit the data in the dataset. You can specify that filters are used as parameters and provide the value of the filter at run-time. If you choose multiple related tables, the query designer describes the relationship between sets of two tables.  
   
  The graphical query designer is divided into three areas. Depending on whether the query uses tables/views or stored procedures/table-valued functions, the layout of the query designer changes.  
@@ -54,10 +54,10 @@ ms.author: maggies
  [Query results](#QueryResults)  
  Displays sample data for the result set for the automatically generated query.  
   
-###  <a name="DatabaseView"></a> Database View Pane  
+###  <a name="DatabaseView"></a> Database View pane  
  The Database View pane displays the metadata for database objects that you have the permissions to view, which is determined by the data source connection and credentials. The hierarchical view displays database objects organized by database schema. Expand the node for each schema to view tables, views, stored procedures, and table-valued functions. Expand a table or view to display the columns.  
   
-###  <a name="SelectedFields"></a> Selected Fields Pane  
+###  <a name="SelectedFields"></a> Selected Fields pane  
  The Selected Fields pane displays the fields in the report dataset and the groups and aggregates to include in the query.  
   
  The following options are displayed:  
@@ -70,10 +70,10 @@ ms.author: maggies
   
 -   **Delete Field** Deletes the selected field.  
   
-#### Group and Aggregate  
+#### Group and aggregate  
  Queries to databases with a large table might return a number of data rows that is too large to be useful in a report and has a performance impact on the network that transports the vast amount of data and on the paginated reports capacity that processes the report. To limit the number of data rows, the query can include SQL aggregates that summarize the data on the database server. SQL aggregates are different from client-side aggregates, which are applied when the report is rendered.  
   
- Aggregates provide summaries of data and the data is grouped to support the aggregate that deliver the summary data. When you use an aggregate in the query, the other fields returned by the query are automatically grouped and the query includes the SQL GROUP BY clause. You can summarize data without adding an aggregate by using only the **Grouped by** option in the **Group and Aggregate** list. Many of the aggregates include a version that uses the DISTINCT keyword. Including DISTINCT eliminates duplicate values.  
+ Aggregates provide summaries of data, and the data is grouped to support the aggregate that delivers the summary data. When you use an aggregate in the query, the other fields returned by the query are automatically grouped and the query includes the SQL GROUP BY clause. You can summarize data without adding an aggregate by using only the **Grouped by** option in the **Group and Aggregate** list. Many of the aggregates include a version that uses the DISTINCT keyword. Including DISTINCT eliminates duplicate values.  
   
  [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] uses [!INCLUDE[tsql](../../includes/tsql-md.md)] and [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDWCurrentFull](../../includes/ssdwcurrentfull-md.md)] uses [!INCLUDE[DWsql](../../includes/dwsql-md.md)]. Both dialects of the SQL language support the clause, keyword, and aggregates that the query designer provides.  
     
@@ -100,14 +100,14 @@ ms.author: maggies
 |Var Distinct|Returns unique statistical variances. Implements a combination of the VAR aggregate and the DISTINCT keyword.|  
 |VarP Distinct|Returns unique statistical variances. Implements combination of the VARP aggregate and the DISTINCT keyword.|  
   
-###  <a name="FunctionParameters"></a> Function Parameters Pane  
+###  <a name="FunctionParameters"></a> Function Parameters pane  
  The Function Parameters pane displays the parameters for a stored procedure or table-valued function. The following columns are displayed:  
   
 -   **Parameter Name** Displays the name of the parameter that is defined by the stored procedure or table-valued function.  
   
 -   **Value** A value to use for the parameter when the query runs to retrieve data to display in the Query Results pane at design-time. This value is not used when the report runs at run-time.  
   
-###  <a name="Relationships"></a> Relationships Pane  
+###  <a name="Relationships"></a> Relationships pane  
  The Relationships pane displays the join relationships. The relationships can be detected automatically from the foreign key relationships that are retrieved from the database metadata or you can create them manually.  
   
  The following options are displayed:  
@@ -119,15 +119,15 @@ ms.author: maggies
   
 -   **Add Relationship** Adds a relationship to the **Relationship** list.  
   
-     If auto detect is turned on, the tables from which columns are used in the query are automatically added to the **Relationship** list. When auto detect identifies that two tables are related, one table is added to the **Left Table** column, the other the **Right Table** column, and an inner join is created between them. Each relationship generates a JOIN clause in the query. If the tables are not related, all of them are listed in **Left Table** column and the **Join Type** column indicates the tables are not related to other tables. When auto detect is turned on, you cannot manually add relationships between tables that auto detect determines are unrelated.  
+     If auto detect is turned on, the tables from which columns are used in the query are automatically added to the **Relationship** list. When auto detect identifies that two tables are related, one table is added to the **Left Table** column, the other is added to the **Right Table** column, and an inner join is created between them. Each relationship generates a JOIN clause in the query. If the tables are not related, all of them are listed in **Left Table** column and the **Join Type** column indicates the tables are not related to other tables. When auto detect is turned on, you can't manually add relationships between tables if auto detect determines that they're unrelated.  
   
      If auto detect is turned off, you can add and change relationships between tables. Click **Edit Fields** to specify the fields to use to join the two tables.  
   
      The order in which the relationships appear in the **Relationship** list is the order in which the joins will be performed in the query. You can change the order of relationships by moving them up and down in the list.  
   
-     When using multiple relationships in a query, one of the tables in each relationship, except the first one, must be referenced in a proceeding relationships.  
+     When you're using multiple relationships in a query, one of the tables in each relationship, except the first one, must be referenced in a proceeding relationship.  
   
-     If both tables in a relationship are referenced by a preceding relationship then the relationship does not generate a separate join clause; instead a join condition is added to the join clause generated for the preceding relationship. The join type is inferred by the preceding relationship that referenced the same tables.  
+     If both tables in a relationship are referenced by a preceding relationship then the relationship doesn't generate a separate join clause; instead a join condition is added to the join clause generated for the preceding relationship. The join type is inferred by the preceding relationship that referenced the same tables.  
   
 -   **Edit Fields** Opens the **Edit Related Fields** dialog box in which you add and modify relationships between tables. You chose the fields in the right and left tables to join. You can join multiple fields from the left table and right table to specify multiple join conditions in a relationship. The two fields that join the left and right tables do not need to have the same name. The joined fields must have compatible data types.  
   
@@ -146,7 +146,7 @@ ms.author: maggies
   
 -   **Join Fields** Lists the pairs of joined fields, if a relationship has multiple join conditions the pairs of joined fields are separated by commas (,).  
   
-###  <a name="AppliedFilters"></a> Applied Filters Pane  
+###  <a name="AppliedFilters"></a> Applied Filters pane  
  The Applied Filters pane displays the criteria that are used to limit the number of rows of data that are retrieved at run time. Criteria specified in this pane are used to generate an SQL WHERE clause. When you select the parameter option, a report parameter is automatically created. Report parameters that are based on query parameters enable a user to specify values for the query to control the data in the report.  
   
  The following columns are displayed:  
@@ -159,14 +159,14 @@ ms.author: maggies
   
 -   **Parameter** Displays the option to add a query parameter to the query. Use the Dataset properties to view the relationship between query parameter and report parameter.  
   
-###  <a name="QueryResults"></a> Query Results Pane  
+###  <a name="QueryResults"></a> Query Results pane  
  The Query results pane displays the results for the automatically generated query that is specified by selections in the other panes. The columns in the result set are the fields that you specify in the Selected Fields pane and the row data is limited by the filters that you specify in the Applied Filters pane. If the query includes aggregates the result set includes the new aggregate columns. For example, if the column **Color** is aggregated using the Count aggregate, the query results include a new column. By default, this column is named **Count_Color**.  
   
- This data represents values from the data source at the time that you run the query. The data is not saved in the report definition .The actual data in the report is retrieved when the report is processed.  
+ This data represents values from the data source at the time that you run the query. The data isn't saved in the report definition. The actual data in the report is retrieved when the report is processed.  
   
  Sort order in the result set is determined by the order the data is retrieved from the data source. Sort order can be changed by modifying the query or after the data is retrieved for the report.  
   
-### Graphical Query Designer Toolbar  
+### Graphical query designer toolbar  
  The relational query designer toolbar provides the following buttons to help you specify or view the results of a query.  
   
 |Button|Description|  
@@ -175,10 +175,10 @@ ms.author: maggies
 |**Import**|Import an existing query from a file or report. File types .sql and .rdl are supported.|  
 |**Run Query**|Run the query. The Query results pane displays the result set.|  
   
-## Understanding Automatically Generated Queries  
+## Understanding automatically generated queries  
  When you select tables and columns or stored procedures and views in the Database View pane, the query designer retrieves the underlying primary key and foreign key relationships from the database schema. By analyzing these relationships, the query designer detects relationships between two tables and adds joins to the query. You can then modify the query by adding groups and aggregates, adding or changing relationships, and adding filters. To view the query text that shows the columns from which to retrieve data, the joins between tables, and any groups or aggregates, click **Edit As Text**.  
   
-## Text-Based Query Designer  
+## Text-based query designer  
  For the most control over your query, use the text-based query designer. To switch to the text-based query designer, in the toolbar, click **Edit As Text**. After you edit a query in the text-based query designer, you can no longer use the relational query designer. The query will then always open in the text-based query designer. For more information, see [Text-based Query Designer User Interface &#40;Report Builder&#41;](/sql/reporting-services/report-data/text-based-query-designer-user-interface-report-builder).
   
 ## Next steps
