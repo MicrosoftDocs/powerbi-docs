@@ -1,6 +1,6 @@
 ---
-title: "Teradata connection type for Power BI paginated report| Microsoft Docs"
-description: Use the information in this article about the Teradata connection type to learn how to build a paginated report using this data source.
+title: "Teradata connection type for Power BI paginated reports| Microsoft Docs"
+description: Use the information in this article about the Teradata connection type to learn how to build a Power BI paginated report using this data source.
 ms.date: 01/27/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,15 +9,15 @@ ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Teradata Connection Type (Power BI Report Builder)
+# Teradata connection type for Power BI paginated reports (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  To include data from Teradata in your report, you must have a dataset that is based on a report data source of type Teradata. This built-in data source type is based on the .NET Managed Provider for Teradata data processing extension.
+  To include data from Teradata in your Power BI paginated report, you must have a dataset that is based on a report data source of type Teradata. This built-in data source type is based on the .NET Managed Provider for Teradata data processing extension.
   
- Use the information in this topic to build a data source embedded within report. For step-by-step instructions, see [Create and Modify Embedded Data Sources &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/create-and-modify-embedded-data-sources).
+ Use the information in this topic to build a data source embedded within your report. For step-by-step instructions, see [Create and Modify Embedded Data Sources &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/create-and-modify-embedded-data-sources).
   
-##  <a name="Connection"></a> Connection String  
+##  <a name="Connection"></a> Connection string  
  Contact your database administrator for connection information and for the credentials to use to connect to the data source. The following connection string example specifies a Teradata data source on the server specified with an IP address:  
   
 ```  
@@ -29,15 +29,15 @@ data source=<IP Address>
 ##  <a name="Credentials"></a> Credentials  
  Credentials are required to run queries and preview the report locally.
   
- Once report is published to Power BI service, you will need to set up Power BI Gateway for your report to fetch data from your on-premise Teradata data source. To learn more about Power BI Gateway, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
+ Once report is published to the Power BI service, you need to set up a Power BI gateway for your report, to fetch data from your on-premises Teradata data source. To learn more about Power BI gateways, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
   
  For more information, see [Create data connection strings - Power BI Report Builder](/sql/reporting-services/report-data/data-connections-data-sources-and-connection-strings-report-builder-and-ssrs.md) or [Specify Credential and Connection Information for Report Data Sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).  
   
   
-##  <a name="Remarks"></a> Remarks  
- Before you can connect a Teradata data source, you need to have installed the version of the .NET Data Provider for Teradata that supports retrieving data from Teradata. This data provider must be installed on the same computer as Power BI Report Builder and the machine hosting Power BI Gateway. To learn more about Power BI Gateway, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
+##  <a name="Remarks"></a> Considerations  
+ Before you can connect a Teradata data source, you need to have installed the version of the .NET Data Provider for Teradata that supports retrieving data from Teradata. This data provider must be installed on the same computer as Power BI Report Builder and the machine hosting the Power BI gateway. To learn more about Power BI gateways, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
   
-##  <a name="Related"></a> Related Sections  
+##  <a name="Related"></a> Related sections  
  These sections of the documentation provide in-depth conceptual information about report data, as well as procedural information about how to define, customize, and use parts of a report that are related to data.  
     
  [Create data connection strings - Power BI Report Builder](/sql/reporting-services/report-data/data-connections-data-sources-and-connection-strings-report-builder-and-ssrs)  
