@@ -60,8 +60,6 @@ To make using the LinkedIn Sales Navigator as easy as possible, you can use the 
 
 When you download the app, you can select whether to connect to your data, or explore the app with sample data. You can always go back and connect to your own LinkedIn Sales Navigator data after you explore the sample data.
 
-![]()
-
 :::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-11.png" alt-text="Screenshot shows the option to connect to data for LinkedIn Sales Navigator." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-11.png":::
 
 You can get the **LinkedIn Sales Navigator** template app from the following link:
