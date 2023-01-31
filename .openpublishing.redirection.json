@@ -1032,13 +1032,13 @@
         },
         {
             "source_path": "powerbi-docs/service-shared-with-me.md",
-            "redirect_url": "/power-bi/consumer/end-user-shared-with-me",
+            "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/end-user-shared-with-me.md",
+            "source_path": "powerbi-docs/consumer/end-user-shared-with-me.md",
             "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
-            "redirect_document_id": false
+            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-the-new-power-bi-experience.md",

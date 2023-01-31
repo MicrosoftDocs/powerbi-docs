@@ -41,11 +41,6 @@ To begin, open the Power BI service (app.powerbi.com).
 
 ![Screenshot shows the Home page for a new user.](./media/end-user-experience/power-bi-new.png)    
 
-1. If the left navigation pane is collapsed, select the nav pane icon ![icon with 3 horizontal lines](./media/end-user-experience/power-bi-burger.png) to expand it. 
-
-
-
-
 1. Select **Learn** and scroll down to **Sample reports**. We'll grab some sample data to use for our tour of the Power BI service. There are all types of sample data provided for you to explore, and this time we'll use the data about opportunity analysis. 
 
    :::image type="content" source="./media/end-user-experience/power-bi-samples.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
@@ -84,7 +79,7 @@ Let's start by opening a dashboard.
 
 1. Select the name of the dashboard to open it.
 
-   ![Menu that appears on hover](./media/end-user-experience/power-bi-dashboard.png)
+   ![Menu that appears on hover](../collaborate-share/media/end-user-experience/power-bi-dashboard.png)
  
 1. The dashboard opens in the Power BI service. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
 

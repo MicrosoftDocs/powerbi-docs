@@ -43,9 +43,9 @@ In the following video, watch Amanda demonstrate some of the features for naviga
 
 The actions available to you depend on the settings assigned by the content designer. Some of your options might include:
 
-- Select the star icon to [favorite a dashboard, report, or app](end-user-favorite.md) ![star icon](./media/end-user-shared-with-me/power-bi-star-icon.png).
-- Some dashboards and reports can be re-shared ![share icon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-- [View insights](end-user-insights.md) that Power BI finds in the report data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png).
+- Select the star icon to [favorite a dashboard, report, or app](end-user-favorite.md) ![star icon](../collaborate-share/media/end-user-shared-with-me/power-bi-star-icon.png).
+- Some dashboards and reports can be re-shared ![share icon](../collaborate-share/media/end-user-shared-with-me/power-bi-share-icon-new.png).
+- [View insights](end-user-insights.md) that Power BI finds in the report data ![insights icon](../collaborate-share/media/end-user-shared-with-me/power-bi-insights.png).
 
 ## Next steps
 

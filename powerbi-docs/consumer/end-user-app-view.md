@@ -145,4 +145,4 @@ Sometimes app designers release new versions of their apps. How you get the new 
 ## Next steps
 * [Back to the apps overview](end-user-apps.md)
 * [View a Power BI report](end-user-report-open.md)
-* [Other ways content is shared with you](end-user-shared-with-me.md)
+* [Other ways content is shared with you](../collaborate-share/end-user-shared-with-me.md)
