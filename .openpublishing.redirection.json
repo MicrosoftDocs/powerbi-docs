@@ -1426,7 +1426,12 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/paginated-reports-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/paginated-reports-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
             "redirect_document_id": false
         },
         {
@@ -1466,7 +1471,12 @@
         },
         {
             "source_path": "powerbi-docs/report-builder-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/report-builder-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/report-builder-parameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/report-builder-parameters",
             "redirect_document_id": false
         },
         {

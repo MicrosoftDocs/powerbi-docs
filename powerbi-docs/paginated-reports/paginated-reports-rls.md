@@ -28,7 +28,7 @@ To use RLS in a paginated report, you first [create parameters](#create-a-parame
 
 ## Create a parameter using UserID
 
-To apply row-level security to a Power BI paginated report, the first step is to create a parameter and assign the built-in field **UserID**. See the article [Create parameters](report-builder-parameters.md) if you need help creating them. 
+To apply row-level security to a Power BI paginated report, the first step is to create a parameter and assign the built-in field **UserID**. See the article [Create parameters](parameters/report-builder-parameters.md) if you need help creating them. 
 
 Then you use this parameter with **UserId** in a [*filter*](#use-userid-in-a-filter) or in a [*query*](#use-userid-in-a-query) to the data source.
 

@@ -531,13 +531,13 @@
     - name: Parameters
       items:
       - name: Report parameters
-        href: ../paginated-reports/report-builder-parameters.md
+        href: ../paginated-reports/parameters/parameters/report-builder-parameters.md
       - name: Report parameter concepts in paginated reports
         href: ../paginated-reports/parameters/report-parameters-concepts-report-builder-and-ssrs.md
+      - name: Create parameters
+        href: ../paginated-reports/parameters/paginated-reports-create-parameters.md
       - name: URL parameters in paginated reports
         href: ../paginated-reports/report-builder-url-parameters.md
-      - name: Create parameters
-        href: ../paginated-reports/paginated-reports-parameters.md
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/parameters/pass-report-parameter-url.md
       - name: Associate a query parameter with a report parameter

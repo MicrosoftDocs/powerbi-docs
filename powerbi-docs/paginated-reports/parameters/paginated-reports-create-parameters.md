@@ -18,7 +18,7 @@ In this article, you learn how to create parameters for paginated reports in the
 
 The following illustration shows Design view in Power BI Report Builder for a report with the parameters @BuyingGroup, @Customer, @FromDate, and @ToDate. 
   
-![Parameters in Report Builder](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
+![Screenshot showing parameters in Report Builder.](media/parameters/paginated-reports-create-parameters/power-bi-paginated-parameters-report-builder.png)
   
 1.  The report parameters in the Report Data pane.  
   
@@ -66,4 +66,4 @@ The following illustration shows Design view in Power BI Report Builder for a re
 
 See [View parameters for paginated reports](../consumer/paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
 
-For in-depth information about parameters in paginated reports, see [Report parameters in Power BI Report Builder](report-builder-parameters.md).
+For in-depth information about parameters in paginated reports, see [Report parameters in Power BI Report Builder](parameters/report-builder-parameters.md).
