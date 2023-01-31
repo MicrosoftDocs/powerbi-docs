@@ -20,6 +20,8 @@ The Power BI add-in for PowerPoint enables users to add live, interactive data f
 
 To use the Power BI add-in for PowerPoint, users must either have access to the Office add-in store, or the add-in must be made available to them as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
+In sovereign clouds, the add-in must be deployed as an admin managed add-in, since the Office add-in store isn't accessible from sovereign clouds. For further information, see [Deploying the add-in in sovereign clouds](#deploying-the-add-in-in-sovereign-clouds).
+
 ## Licensing
 
 To be able to view live Power BI data in PowerPoint, users must have an active Power BI account and a Power BI Free license, as well as access to the data. If the Power BI report is not located in a Premium capacity, a Power BI Pro license is needed.
