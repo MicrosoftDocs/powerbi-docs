@@ -30,7 +30,7 @@ To view content that has been shared with you, there are two options.
 * **The content *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md) for details.
 
 ## View and open content from your *Shared with me* tab
-Content that has been directly shared with you is listed in your **Shared with me** tab. This is content that has been sent to you in an email link or that the *creator* or *owner* has automatically installed for you. To display the list, from the nav pane, select **Browse > Shared with me**. Scroll through **Shared with me** to see reports, dashboards and scorecards. 
+Content that has been directly shared with you is listed in your **Shared with me** tab. This content has been sent to you in an email link or that the *creator* or *owner* has automatically installed for you. To display the list, from the nav pane, select **Browse > Shared with me**. Scroll through **Shared with me** to see reports, dashboards and scorecards. 
 
 :::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list.png" alt-text="Screenshot showing the Shared with me screen.":::
 
@@ -38,9 +38,9 @@ If you don't see **Shared with me**, select the Expand icon.
 
  :::image type="content" source="media/end-user-shared-with-me/power-bi-expand.png" alt-text="Screenshot with a red box around the Expand icon.":::
 
-From this list you can [favorite](../consumer/end-user-favorite.md) and open content. 
+From this list, you can [favorite](../consumer/end-user-favorite.md) and open content. 
 
-If your **Shared with me** content list gets long, you have several options for finding what you need. Use the search field (1), sort by one of the columns (2), or use the Filters pane. To open the Filters pane, select **Filters** from the upper right corner.
+If your **Shared with me** content list gets long, you've several options for finding what you need. Use the search field (1), sort by one of the columns (2), or use the Filters pane. To open the Filters pane, select **Filters** from the upper right corner.
 
 ![dashboard Owner and Search](./media/end-user-shared-with-me/power-bi-filter.png)
 
@@ -54,14 +54,14 @@ When a designer creates or updates content, they often share that content in ema
 
 
 ## View and open content from your *Apps* tab
-Apps that has been directly shared with you and apps that you have downloaded are listed in your **Apps** tab. These are apps that have been sent to you in an email link, that the *creator* or *owner* has automatically installed for you, or that you have installed from [AppSource](../consumer/end-user-apps#get-a-new-app). Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the Apps icon.
+Apps that ve been directly shared with you and apps that you've downloaded are listed in your **Apps** tab. These apps have been sent to you in an email link, that the *creator* or *owner* has automatically installed for you, or that you've installed from [AppSource](../consumer/end-user-apps#get-a-new-app). Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the Apps icon.
 
 :::image type="content" source="./media/end-user-shared-with-me/power-bi-apps.png" alt-text="Screenshot showing the Browse menu.":::
 
 To learn more, see [Install and use apps](../consumer/end-user-apps.md).
 
 ## Collaborate on content in a *workspace*
-One way that *creators* can share with you is by granting you a [role](service-roles-new-workspaces.md) in a workspace. What you can do with the content in that workspace depends on the role you have been assigned: Viewer, Contributor, Member, Admin.  
+One way that *creators* can share with you is by granting you a [role](service-roles-new-workspaces.md) in a workspace. What you can do with the content in that workspace depends on the role you've been assigned: Viewer, Contributor, Member, Admin.  
 
 ## Next steps
 
