@@ -34,7 +34,7 @@ Here are some examples of how you can use the planning tool.
 
 ### Review the test results
 
-Review the results of your load assessment using the [Gen2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md).
+Review the results of your load assessment using the [Premium] metrics app](../../enterprise/service-premium-gen2-metrics-app.md).
 
 ## Power BI capacity tools GitHub repository
 

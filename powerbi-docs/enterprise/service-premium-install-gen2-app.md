@@ -1,6 +1,6 @@
 ---
-title: Install the Premium Gen2 metrics app
-description: Learn how to install the Premium Gen2 metrics app, which lets you monitor Power BI Premium Gen2 capacities.
+title: Install the Premium metrics app
+description: Learn how to install the Premium metrics app, which lets you monitor Power BI Premium capacities.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -11,20 +11,20 @@ ms.date: 12/27/2022
 LocalizationGroup: Premium 
 ---
 
-# Install the Gen2 metrics app
+# Install the Premium metrics app
 
-The *Power BI Premium Utilization and Metrics* app is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Use this guide to install the app. Once the app is installed, you can [learn how to use it](service-premium-gen2-metrics-app.md).
+The *Power BI Premium Utilization and Metrics* app is designed to provide monitoring capabilities for Power BI Premium capacities. Use this guide to install the app. Once the app is installed, you can [learn how to use it](service-premium-gen2-metrics-app.md).
 
 >[!NOTE]
 >The app is updated regularly with new features and functionalities. If you see there's a pending update in the notifications center, we recommend that you update the app.
 
 ## Prerequisites
 
-Before you install the Gen2 metrics app, review these requirements:
+Before you install the Premium metrics app, review these requirements:
 
 * You need to be a capacity admin
 
-* The app only works with Gen2 capacities
+* The app only works with Premium capacities
 
 ## Install the app
 
@@ -121,7 +121,7 @@ To complete the installation, configure the Power BI Premium utilization and met
 
     |Field          |Required |Value    |Notes    |
     |---------------|---------|---------|---------|
-    |**CapacityID** |Yes |An ID of a capacity you're an admin of |You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Gen2 capacity. The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.</br> After installation, the app will let you see all the capacities you can access. |
+    |**CapacityID** |Yes |An ID of a capacity you're an admin of |You can find the capacity ID in the URL of the capacity management page. In the Power BI service, go to **Settings** > **Admin portal** > **Capacity settings**, then select a Premium capacity. The capacity ID is shown in the URL after */capacities/*. For example, `9B77CC50-E537-40E4-99B9-2B356347E584` is the capacity ID in this URL: `https://app.powerbi.com/admin-portal/capacities/9B77CC50-E537-40E4-99B9-2B356347E584`.</br> After installation, the app will let you see all the capacities you can access. |
     |**UTC_offset** |Yes |Numerical values ranging from `14` to `-12`.</br> To signify a Half hour timezone, use `.5`. For example, for Iran's standard time enter `3.5`.   |Enter your organization's standard time in Coordinated Universal Time (UTC). |
     |**Timepoint**  |Automatically populated  |         |This field is automatically populated and is used for internal purposes. The value in this field will be overwritten when you use the app. |
     |**Timepoint2** |Automatically populated  |         |This field is automatically populated and is used for internal purposes. The value in this field will be overwritten when you use the app. |
@@ -153,4 +153,4 @@ To complete the installation, configure the Power BI Premium utilization and met
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Use the gen2 metrics app](service-premium-gen2-metrics-app.md)
+> [Use the Premium metrics app](service-premium-gen2-metrics-app.md)
