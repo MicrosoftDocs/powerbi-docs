@@ -20,10 +20,12 @@ This article lists and explains the common errors that can occur with tile refre
 The following list explains and offers solutions for common tile refresh errors.
 
 - **Power BI encountered an unexpected error while loading the model. Please try again later.**
+
   or
+
   **Couldn't retrieve the data model. Please contact the dashboard owner to make sure the data sources and model exist and are accessible.**
 
-  Power BI couldn't access your data because the data source wasn't reachable. This issue can happen if the data source was removed, renamed, or moved, if the source is offline, or if permissions have changed. Check that the source is still in the specified location and you still have permission to access it. If that isn't the problem, the source might be slow. Try again later during a time when the load on the source is smaller. If it's an on-premises source, the data source owner might be able to provide more information.
+  Power BI couldn't access your data because the data source wasn't reachable. This issue can happen if the data source was removed, renamed, or moved, if the source is offline, or if permissions have changed. Check that the source is still in the specified location and you still have permission to access it. If that isn't the problem, the source might be slow. Try again later during a time when the load on the source is less. If it's an on-premises source, the data source owner might be able to provide more information.
 
 - **You don't have permission to view this tile or open the workbook.**
 
@@ -39,7 +41,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - **Can't display the data because Power BI can't determine the relationship between two or more fields.**
 
-  You'e trying to use two or more fields from tables that aren't related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. Once you create the relationship, you can add the fields back to the visual. You can use Power BI Desktop or Power Pivot for Excel for this procedure. For more information, see [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md).
+  You'e trying to use two or more fields from tables that aren't related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. Once you create the relationship, you can add the fields back to the visual. You can use Power BI Desktop or Power Pivot for Excel for this process. For more information, see [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md).
 
 - **The groups in the primary axis and the secondary axis overlap. Groups in the primary axis can't have the same keys as groups in the secondary axis.**
 
@@ -57,16 +59,16 @@ The following list explains and offers solutions for common tile refresh errors.
 
   This issue is usually transient. If you try again later and still see this message, [contact support](https://support.powerbi.com).
 
-- Tiles continue to show unfiltered data after enabling single-sign on (SSO).
+- Tiles continue to show unfiltered data after you enable single-sign on (SSO).
 
-  This issue can happen if the underlying dataset uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show the unfiltered data after you enable SSO for the data source, until the next tile refresh is due. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
+  This issue can happen if the underlying dataset uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source, until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
 
   To see the filtered data immediately, you can force a tile refresh. Select the **Refresh** icon at the upper right of a Power BI dashboard.
 
   As a dataset owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, and then select **Settings**. On the **Datasets** tab, expand **Scheduled refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
 
-> [!NOTE]
-> **Automatic dashboard tile and metric refresh** is available only for datasets in DirectQuery or Live Connection modes. Datasets in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.
+  > [!NOTE]
+  > **Automatic dashboard tile and metric refresh** is available only for datasets in DirectQuery or Live Connection modes. Datasets in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.
 
 ## Support contact
 
