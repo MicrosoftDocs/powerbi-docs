@@ -28,7 +28,7 @@ To connect to an Impala database, take the following steps:
 
     ![Screenshot shows the Impala window, where you can enter your server.](media/desktop-connect-impala/connect_impala_3a.png)
 
-1. When prompted, enter your credentials or connect anonymously. The Impala connector supports Anonymous, Basic (user name and password), and Windows authentication.
+1. When prompted, enter your credentials or connect anonymously. The Impala connector supports Anonymous, Windows, and Database authentication.
 
     ![Screenshot shows the Impala dialog where you authenticate your connection.](media/desktop-connect-impala/connect_impala_4.png)
 
