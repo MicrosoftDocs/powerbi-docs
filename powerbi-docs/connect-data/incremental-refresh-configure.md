@@ -1,13 +1,13 @@
 ---
 title: Configure incremental refresh and real-time data for Power BI datasets
-description: Describes how to configure incremental refresh
+description: Learn how to configure incremental refresh for Power BI datasets and real-time data.
 author: minewiskan
 ms.author: owend
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/23/2022
+ms.date: 02/01/2023
 LocalizationGroup: 
 ---
 
@@ -50,7 +50,7 @@ With RangeStart and RangeEnd parameters defined, apply a filter based on *condit
 
     ![Filter rows](media/incremental-refresh-configure/filter-rows.png)
 
-   **Important:** Verify queries have an equal to (=) on either RangeStart or RangeEnd, but not both. If the equal to (=) exists on both parameters, a row could satisfy the conditions for two partitions, which could lead to duplicate data in the model. For example, `#"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] >= RangeStart and [OrderDate] <= RangeEnd)` could result in duplicate data.
+   **Important:** Verify queries have an equal to (=) on either RangeStart or RangeEnd, but not both. If the equal to (=) exists on both parameters, a row could satisfy the conditions for two partitions, which could lead to duplicate data in the model. For example, `= Table.SelectRows(#"Changed Type", each [OrderDate] >= RangeStart and [OrderDate] <= RangeEnd)` could result in duplicate data.
 
     Click **OK** to close.
 
@@ -104,7 +104,7 @@ This task is only required if your table uses integer surrogate keys instead of 
 
 The data type of the RangeStart and RangeEnd parameters must be of date/time data type regardless of the data type of the date column. However, for many data sources, tables don't have a column of date/time data type but instead have a date column of integer surrogate keys in the form of `yyyymmdd`. You typically cannot convert these integer surrogate keys to the Date/Time data type because the result would be a non-folding query expression, but you can create a function that converts the date/time value in the parameters to match the integer surrogate key of the data source table without losing foldability. The function is then called in a filter step. This step is required if the data source table contains *only* a surrogate key as integer data type.
 
-1. In Power Query Editor, click **Get data** > **Blank Query**.
+1. In Power Query Editor, click **New Source** > **Blank Query**.
 
 1. In **Query Settings**, type a name, for example, DateKey, and then in the formula editor, enter the following formula:
 
@@ -112,11 +112,11 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     ![Create DateKey function](media/incremental-refresh-configure/datekey-function.png)
 
-1. To test the formula, in **Enter Parameter**, enter a date\time value, and then click **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete the invoked function query.
+1. To test the formula, in **Enter Parameter**, enter a date/time value, and then click **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete this new **Invoked Function** query.
 
 1. In **Queries**, select the table, and then edit the query formula to call the function with the RangeStart and RangeEnd parameters. For example,
 
-    `= Table.SelectRows(#"Sorted Rows", each [OrderDateKey] > DateKey(RangeStart) and [OrderDateKey] <= DateKey(RangeEnd))`
+    `= Table.SelectRows(#"Reordered Column OrderDateKey", each [OrderDateKey] > DateKey(RangeStart) and [OrderDateKey] <= DateKey(RangeEnd))`
 
     ![Apply DateKey filter](media/incremental-refresh-configure/apply-datekey-filter.png)
 
