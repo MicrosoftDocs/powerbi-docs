@@ -9,6 +9,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
 ---
 # Add custom locations to a map in a Power BI paginated report (Power BI Report Builder)
 
@@ -20,7 +21,7 @@ ms.author: maggies
 > [!NOTE]  
 >  When you override the layer display properties for the embedded point, the changes that you make are not reversible.  
   
- For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
+ For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
 
   
@@ -49,7 +50,7 @@ ms.author: maggies
 3.  Click the pages and set the display properties that you want to apply to this point.  
   
 ## Next Steps  
- [Maps &#40;Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
+ [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
+ [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
   
   
