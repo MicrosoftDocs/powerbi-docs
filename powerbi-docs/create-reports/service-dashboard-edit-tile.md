@@ -93,7 +93,7 @@ You can make tiles many different sizes&mdash;from 1x1 tile units up to 5x5. Sel
 
    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile-menu-new.png" alt-text="Screenshot of the ellipses options menu.":::
 
-3. Select **Edit details** to open the "Tile details" window.
+3. Select **Edit details** to open the "Tile details" dialog.
 
     Change the title and default behavior of the tile. For example, you might decide that a new dashboard displays when a *consumer* selects a tile, instead of opening the report that was used to create that tile.
 
@@ -101,9 +101,9 @@ You can make tiles many different sizes&mdash;from 1x1 tile units up to 5x5. Sel
 
 ### Rename the tile
 
-At the top of the "Tile details" window, change **Title** to **Amount spent**.
+At the top of the "Tile details" dialog, change **Title** to **Amount spent**.
 
-:::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile-title.png" alt-text="Screenshot showing the Tile details window.":::
+:::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile-title.png" alt-text="Screenshot showing the Tile details dialog.":::
 
 <a name="hyperlink"></a>
 
