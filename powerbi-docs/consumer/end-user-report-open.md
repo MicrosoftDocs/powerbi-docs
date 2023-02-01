@@ -7,17 +7,16 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/30/2022
+ms.date: 02/01/2023
 #This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
 # View a report in the Power BI service for business users
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro license to open a report unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity) and shared with you. A user with any Power BI account can have access to reports stored in Premium capacity.  
-For more information, see [Licenses and subscriptions for business users](end-user-license.md).
+A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro or Premium Per User license to open a report that has been shared with you, unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity or in their own My workspace. For more information, see [Licenses and subscriptions for business users](end-user-license.md).
 
-You can follow along in this tutorial with [Microsoft sample content](https://app.powerbi.com/groups/me/getdata/samples) by using a free license.
+You can follow along in this tutorial with [Microsoft sample content](https://app.powerbi.com/groups/me/getdata/samples). When you get Microsoft sample content, it is saved in your My workspace.
 
 Explore the following guidance to learn how to open a report from the Browse page and from a dashboard.
 
@@ -43,7 +42,7 @@ Power BI designers can share a report with you by sending an email link or by ad
 
 5. Expand the **Filters** pane along the right side. Filters that are applied to this report page, or to the entire report, are displayed here. You can change these filters to see the impact on your visuals and report.
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-filters-inline.png" alt-text="Screenshot showing the Power BI service with Filters expanded." lightbox="./media/end-user-report-open/power-bi-filters.png":::
+    :::image type="content" source="./media/end-user-report-open/power-bi-filters-inline.png" alt-text="Screenshot showing the Power BI service with Filters expanded." lightbox="./media/end-user-report-open/power-bi-filters-inline.png":::
 
 6. Hover over a visual to show the actions you can perform. To see the filters applied to a specific visual, select the filter icon.
 
@@ -57,15 +56,15 @@ Power BI designers can share a report with you by sending an email link or by ad
 
    :::image type="content" source="./media/end-user-report-open/power-bi-width.png" alt-text="Screenshot showing the Fit to width view.":::
 
-There are many ways for you to interact with a report to discover insights and make business decisions. Other articles about Power BI reports are available in the table of contents on this page.
+There are many ways for you to interact with a report to discover insights and make business decisions. Other articles about Power BI reports are available in the table of contents.
 
 ## Open a report that's in an app
 
 The apps you receive from colleagues are located on the Home page and in the Apps container on your navigation pane. An [app](end-user-apps.md) is a collection of dashboards and reports that a Power BI designer compiles for you.
 
-You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI account can have access to reports stored in Premium capacity.  
+You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity.  
 
-You can follow along in this tutorial with Microsoft sample content by using a free license.
+You can follow along in this tutorial with Microsoft sample content.
 
 1. In your browser, go to appsource.microsoft.com.
 2. Search for "Sales & Marketing" and select **Microsoft sample - Sales & Marketing**.
