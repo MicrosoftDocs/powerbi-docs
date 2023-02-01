@@ -27,11 +27,11 @@ In this task, use Power Query Editor to create RangeStart and RangeEnd parameter
 
 1. In **Manage Parameters** > **Name**, type **RangeStart** (case sensitive), then in **Type**, select **Date/Time**, and then in **Current Value** enter a start date/time value.
 
-    ![Define Range Start parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-start.png)
+    :::image type="content" source="media/incremental-refresh-configure/create-range-start.png" alt-text="Define Range Start parameter in Manage Parameters dialog":::
 
 1. Create a second parameter named **RangeEnd**. In **Type**, select **Date/Time**, and then in **Current Value** enter an end date/time value.
 
-    ![Define Range End parameter in Manage Parameters dialog](media/incremental-refresh-configure/create-range-end.png)
+    :::image type="content" source="media/incremental-refresh-configure/create-range-end.png" alt-text="Define Range End parameter in Manage Parameters dialog":::
 
 Now that you have RangeStart and RangeEnd parameters, you then filter the data to be loaded into the model based on those parameters.
 
@@ -48,7 +48,7 @@ With RangeStart and RangeEnd parameters defined, apply a filter based on *condit
 
     To specify the second condition, if you selected **is after** in the first condition, then select **is before or equal to**, or if you selected **is after or equal to** in the first condition, then select **is before** for the second condition, then select **Parameter**, and then select **RangeEnd**. For example,
 
-    ![Filter rows](media/incremental-refresh-configure/filter-rows.png)
+    :::image type="content" source="media/incremental-refresh-configure/filter-rows.png" alt-text="Filter rows":::
 
    **Important:** Verify queries have an equal to (=) on either RangeStart or RangeEnd, but not both. If the equal to (=) exists on both parameters, a row could satisfy the conditions for two partitions, which could lead to duplicate data in the model. For example, `= Table.SelectRows(#"Changed Type", each [OrderDate] >= RangeStart and [OrderDate] <= RangeEnd)` could result in duplicate data.
 
@@ -64,7 +64,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 1. In Data view > **Fields** > open the context menu for the table, and then click **Incremental refresh**.
 
-    ![Table context menu](media/incremental-refresh-configure/incremental-refresh-context-menu.png)
+    :::image type="content" source="media/incremental-refresh-configure/incremental-refresh-context-menu.png" alt-text="Table context menu":::
 
 1. In **Incremental refresh and real-time data** > **Select table**, verify or select the table. By default, the Select table listbox defaults to the table you select in Data view.
 
@@ -110,7 +110,7 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     `= (x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
-    ![Create DateKey function](media/incremental-refresh-configure/datekey-function.png)
+    :::image type="content" source="media/incremental-refresh-configure/datekey-function.png" alt-text="Create DateKey function":::
 
 1. To test the formula, in **Enter Parameter**, enter a date/time value, and then click **Invoke**. If the formula is correct, an integer value for the date is returned. After verifying, delete this new **Invoked Function** query.
 
@@ -118,7 +118,7 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     `= Table.SelectRows(#"Reordered Column OrderDateKey", each [OrderDateKey] > DateKey(RangeStart) and [OrderDateKey] <= DateKey(RangeEnd))`
 
-    ![Apply DateKey filter](media/incremental-refresh-configure/apply-datekey-filter.png)
+    :::image type="content" source="media/incremental-refresh-configure/apply-datekey-filter.png" alt-text="Apply DateKey filter":::
 
 ## See also
 
