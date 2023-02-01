@@ -53,7 +53,7 @@ When you first open an ArcGIS for Power BI map visualization in Reading view, th
 
 Select the map tools button :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-map-tool.png "::: to expand the tools.
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand-tools.png" alt-text="Screenshot of map and all the selection tools displayed.":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-expand-tools.png" alt-text="Screenshot of an ArcGIS map and the all map tool options displayed.":::
 
 The map tools expand to show the available options. When selected, each tool opens a task pane that provides detailed options.
 
@@ -148,42 +148,42 @@ To change the basemap, follow these steps:
 
 ## Select Analysis tools
 
-This tool option appears only if the report designer includes data to perform a Find Similar analysis.
+This tool option appears only if the report designer includes data to perform a Find Similar analysis. or more information on the features of the Analysis tools, see [Create ArcGIS in Power BI](../visuals/power-bi-visualizations-arcgis.md).
 
-**Infogrpahics**. With this tool, you can provide interactive cards with specific details about the areas on the map.
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-analysis-tools.png" alt-text="Screenshot of the Map tool menu with the Analysis tools feature expanded.":::
 
-**Reference Layer**. With this tool, you can add a demographic layer to help contextualize your data from Power BI or add a reference layer from ArcGIS to enrich your data.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-infographics-tool.png "::: **Infogrpahics**. With this tool, you can provide interactive cards with specific details about the areas on the map.
 
-**Buffer/Drive time**. With this tool, you can find locations on your map within a specific distance, or ring buffer, of the point of origin.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-reference-layer-tool.png "::: **Reference Layer**. With this tool, you can add a demographic layer to help contextualize your data from Power BI or add a reference layer from ArcGIS to enrich your data.
 
-**Find similar** With this tool, you can quickly identify locations with attributes comparable to those locations currently selected on the map.
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-buffer-tool.png "::: **Buffer/Drive time**. With this tool, you can find locations on your map within a specific distance, or ring buffer, of the point of origin.
 
-For more information on the features of the Analysis tools, see [Create ArcGIS in Power BI](../visuals/power-bi-visualizations-arcgis.md).
+:::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-find-similar-tool.png "::: **Find similar**. With this tool, you can quickly identify locations with attributes comparable to those locations currently selected on the map.
 
 ## Get help
 
 Esri provides comprehensive online documentation for ArcGIS for Power BI.
 To access the ArcGIS for Power BI online help from the visualization, follow these steps:
 
-1. Expand the map tools ![Map tool icon.](media/end-user-arcgis/power-bi-arcgis-map-tool.png), if necessary, and select the **Settings** button ![Screenshot of the Basemap icon.](media/end-user-arcgis/power-bi-arcgis-settings.png)
+1. Expand the map tools :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-map-tool.png"::: and select the **Settings** button :::image type="icon" source="media/end-user-arcgis/power-bi-arcgis-settings.png":::.
 1. In the **Settings** pane, select the **Help** button.
 
-    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-help.png" alt-text="Screenshot showing the Help button displayed on the Settings screen.":::
+    :::image type="content" source="media/end-user-arcgis/power-bi-arcgis-help.png" alt-text="Screenshot of the Help button on the Setting feature of the Map tools.":::
 
 1. Select **OK** in the confirmation window that appears.
 The ArcGIS for Power BI online help opens in a browser window.
-From here you can:
+Then you can:
    - Find answers to frequently asked questions about ArcGIS for Power BI.
-   - Ask questions, find the latest information, report issues, and find answers on the Power BI community thread related to ArcGIS for Power BI.
-   - Give a suggestion for an improvement by submitting it to the Power BI Ideas list.
+   - Find the latest information, report issues, ask questions, and find answers on the Power BI community thread related to ArcGIS for Power BI.
+   - Suggest improvements by submitting it to the Power BI Ideas list.
 
 On the **Settings** pane, you can also view attribution for your map, read about the Esri EUEI (End User Experience) program, and turn **Send usage data** to Esri on or off.
 
 ## Use tooltips
 
-If the map has a reference layer, and the report designer has added tooltips, you can select a location to display its details. The example below shows a tooltip for the Cleveland, Ohio, 2020 Total Population broken down by five-year age increments.
+If the map has a reference layer and the report designer has added tooltips, you can select a location to display its details. The following example shows a tooltip for the Cleveland, Ohio, 2020 Total Population broken down by five-year age increments.
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-cleveland.png" alt-text="Screenshot showing the tooltip.":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-cleveland.png" alt-text="Screenshot of a tooltip for Cleveland, OH, displaying total population breakdown by five-year increments.":::
 
 Hover your pointer over basemap location symbols to display symbol details in a tooltip.
 
