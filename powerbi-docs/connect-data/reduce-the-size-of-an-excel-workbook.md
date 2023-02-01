@@ -1,19 +1,19 @@
 ---
 title: Reduce the size of an Excel workbook to view it in Power BI
-description: Reduce the size of an Excel workbook to view it in Power BI
+description: Learn how you can reduce the size of an Excel workbook to view it in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/10/2019
+ms.date: 02/01/2023
 LocalizationGroup: Data from files
 ---
 # Reduce the size of an Excel workbook to view it in Power BI
 You can upload any Excel workbook smaller than 1 GB to Power BI. An Excel workbook can have two parts: a Data Model, and the rest of the report—the core worksheet contents. If the report meets the following size limits, you can save it to **OneDrive for work or school**, connect to it from Power BI, and view it in Excel Online:
 
-* The workbook as a whole can be up to 1 GB.
+* The workbook can be up to 1 GB.
 * The core worksheet contents can be up to 30 MB.
 
 ## What makes core worksheet contents larger than 30 MB
@@ -29,7 +29,7 @@ Consider removing these elements, if possible.
 
 If the report has a Data Model, you have some other options: 
 
-* Remove data from Excel worksheets, and store it in the Data Model instead. See “Remove data from worksheets” below for details. 
+* Remove data from Excel worksheets, and store it in the Data Model instead. For more information, see the [Remove data from worksheets](#remove-data-from-worksheets) section. 
 * [Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70) to reduce the overall size of the report.
 
 To make any of these changes, you need to edit the workbook in Excel.
@@ -42,9 +42,14 @@ If you import data into Excel from the Power Query tab or the Excel Data tab, th
 When you import data into Excel, follow these tips:
 
 * **In Power Query**: Clear the **Load to worksheet** box.
+
+:::image type="content" source="./media/reduce-the-size-of-an-excel-workbook/load-to-worksheet.png" alt-text="Alt text that describes the content of the image.":::
+
+![Alt text that describes the content of the image.](./media/)
+
   
   The data is imported only into the Data Model, with no data in Excel worksheets.
-* **From the Excel Data tab**, if you previously checked **Table** in the import wizard: Go to **Existing Connections** \> click the connection \> **Only create connection**. Delete the original table or tables created during the initial import.
+* **From the Excel Data tab**, if you previously checked **Table** in the import wizard: Go to **Existing Connections** \> select the connection \> **Only create connection**. Delete the original table or tables created during the initial import.
 * **From the Excel Data tab**: don’t check **Table** in the **Import Data** box.
 
 ## Workbook Size Optimizer
