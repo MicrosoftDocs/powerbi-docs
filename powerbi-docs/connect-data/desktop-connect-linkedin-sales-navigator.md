@@ -68,10 +68,10 @@ You can get the **LinkedIn Sales Navigator** template app from the following lin
 
 The template app provides four tabs to help analyze and share your information:
 
-* Usage
-* Search
-* InMail
-* SSI
+* **Usage**
+* **Search**
+* **InMail**
+* **SSI**
 
 The **Usage** tab shows your overall LinkedIn Sales Navigator data.
 
@@ -81,7 +81,7 @@ The **Search** tab lets you drill deeper into your search results.
 
 :::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-13.png" alt-text="Screenshot shows the LinkedIn Sales Navigator Search tab." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-13.png":::
 
-The **InMail** provides insights into your InMail usage, including number of InMails sent, acceptance rates, and other useful information.
+The **InMail** tab provides insights into your InMail usage, including number of InMails sent, acceptance rates, and other useful information.
 
 :::image type="content" source="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-14.png" alt-text="Screenshot shows the LinkedIn Sales Navigator InMail tab." lightbox="media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-14.png":::
 
