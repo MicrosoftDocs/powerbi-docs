@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/19/2022
+ms.date: 02/01/2023
 ---
 
 # Power BI add-in for PowerPoint - Admin info
 
-The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. Currently, the add-in supports adding report pages to PowerPoint slides individually. The left-hand page navigation pane is not brought in by the add-in, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
+The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. Currently, users can add individual report pages and individual visuals. When a report page is added,the add-in does not bring in the left hand navigation pane, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
 
 ## Requirements
 
