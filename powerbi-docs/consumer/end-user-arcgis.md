@@ -146,6 +146,20 @@ To change the basemap, follow these steps:
 
 1. The map updates to the new basemap. For more information, see [Change the basemap&mdash;ArcGIS for Power BI](https://doc.arcgis.com/en/power-bi/use/change-the-basemap.htm).
 
+## Select Analysis tools
+
+This tool option appears only if the report designer includes data to perform a Find Similar analysis.
+
+**Infogrpahics**. With this tool, you can provide interactive cards with specific details about the areas on the map.
+
+**Reference Layer**. With this tool, you can add a demographic layer to help contextualize your data from Power BI or add a reference layer from ArcGIS to enrich your data.
+
+**Buffer/Drive time**. With this tool, you can find locations on your map within a specific distance, or ring buffer, of the point of origin.
+
+**Find similar** With this tool, you can quickly identify locations with attributes comparable to those locations currently selected on the map.
+
+For more information on the features of the Analysis tools, see [Create ArcGIS in Power BI](../visuals/power-bi-visualizations-arcgis.md).
+
 ## Get help
 
 Esri provides comprehensive online documentation for ArcGIS for Power BI.
