@@ -58,11 +58,9 @@ To embed a paginated report using the sample app, follow these steps:
 
 3. [Assign a workspace to a capacity](#step-3---assign-a-workspace-to-a-capacity).
 
-4. [Enable paginated reports workload](#step-4---enable-paginated-reports-workload).
+4. [Create and upload your paginated report](#step-4---create-and-upload-your-paginated-report).
 
-5. [Create and upload your paginated report](#step-5---create-and-upload-your-paginated-report).
-
-6. [Embed content using the sample application](#step-6---embed-content-using-the-sample-application).
+5. [Embed content using the sample application](#step-5---embed-content-using-the-sample-application).
 
 ## Step 1 - Create a workspace
 
