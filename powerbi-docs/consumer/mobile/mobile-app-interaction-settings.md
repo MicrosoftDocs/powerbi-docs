@@ -25,7 +25,7 @@ The Power BI mobile app has a number of configurable "interaction" settings that
 
 To get to the interaction settings, tap your profile picture to open the [side panel](./mobile-apps-home-page.md#header), choose **Settings**, and find the interaction settings in the **Preferences** section.
 
-:::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section02.png" alt-text="Screenshot showing the Power BI interaction settings.":::
+:::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section-02.png" alt-text="Screenshot showing the Power BI interaction settings.":::
 
 ## Interaction settings
 
@@ -62,7 +62,7 @@ On Android phones, a refresh button is added by default.
 
 To change the report refresh setting, go to the report refresh item in the interaction settings. The current setting is shown. Tap the value to open a pop-up window where you can choose a new value.
 
-:::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh02.png" alt-text="Screenshot showing how to change the report refresh setting.":::
+:::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh-02.png" alt-text="Screenshot showing how to change the report refresh setting.":::
 
 ## Remote configuration
 
