@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 1/31/2023
 LocalizationGroup: Connect to data
 ---
 # Using DirectQuery for Power BI datasets and Analysis Services (preview)
@@ -151,16 +151,15 @@ There are also a few **limitations** you need to keep in mind:
 - Defining RLS on tables from a remote source isn't supported.
 
 - Using any of the following sources as a DirectQuery source isn't supported:
-  - SQL Server Analysis Services (SSAS)
+  - SQL Server Analysis Services (SSAS) before version 2022
   - SAP HANA
   - SAP Business Warehouse
   - [Real-time datasets](service-real-time-streaming.md#types-of-real-time-datasets)
   - [Sample Datasets](../create-reports/sample-datasets.md#eight-original-samples)
   - [Excel Online Refresh](refresh-excel-file-onedrive.md)
-  - Import Excel / CSV files
-  - [Usage metrics (My workspace)](../collaborate-share/service-usage-metrics.md) 
-
-- Using DirectQuery on datasets from “My workspace” isn't currently supported. 
+  - [Data imported from Excel or CSV files on the Service](service-excel-workbook-files.md)
+  - [Usage metrics](../collaborate-share/service-usage-metrics.md) 
+  - [Datasets stored in “My workspace”](../consumer/end-user-workspaces.md#types-of-workspaces)
 
 - Using Power BI Embedded with datasets that include a DirectQuery connection to an Azure Analysis Services model isn't currently supported.
 
@@ -178,12 +177,11 @@ There are also a few **limitations** you need to keep in mind:
 
 - [As with any DirectQuery data source](desktop-directquery-about.md#reporting-limitations), hierarchies defined in an Analysis Services model or Power BI dataset won't be shown when connecting to the model or dataset in DirectQuery mode using Excel. 
 
+### Things to consider
+
 - **Use low-cardinality columns in cross source group relationships**: When you create a relationship across two different source groups, the columns participating in the relationship (also called the *join* columns) should have low cardinality, ideally 50,000 or less. This consideration applies to non-string key columns; for string key columns, see the following consideration. 
 
 - **Avoid using large strings key columns in cross source group relationships**: When creating a cross source group relationship, avoid using large string columns as the relationship columns, especially for columns that have larger cardinality. When you must use strings columns as the relationship column, calculate the expected string length for the filter by multiplying cardinality (C) by the average length of the string column (A). Make sure the expected string length is below 250,000, such that *A ∗ C < 250,000*.
-
-
-
 
 ### Tenant considerations
 
