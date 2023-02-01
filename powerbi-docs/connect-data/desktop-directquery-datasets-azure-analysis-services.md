@@ -151,7 +151,8 @@ There are also a few **limitations** you need to keep in mind:
 - Defining RLS on tables from a remote source isn't supported.
 
 - Using any of the following sources as a DirectQuery source isn't supported:
-  - SQL Server Analysis Services (SSAS) before version 2022
+  - SQL Server Analysis Services (SSAS) Tabular models before version 2022
+  - SSAS Multidimensional models
   - SAP HANA
   - SAP Business Warehouse
   - [Real-time datasets](service-real-time-streaming.md#types-of-real-time-datasets)
