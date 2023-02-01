@@ -4596,11 +4596,6 @@
             "redirect_document_id": false
         }, 
         {
-            "source_path": "powerbi-docs/admin/service-premium-metrics-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
-            "redirect_document_id": false
-        }, 
-        {
             "source_path": "powerbi-docs/admin/service-premium-per-user-faq.yml",
             "redirect_url": "/power-bi/enterprise/service-premium-per-user-faq",
             "redirect_document_id": false
@@ -4824,11 +4819,6 @@
         {
             "source_path": "powerbi-docs/enterprise/service-admin-premium-restart.md",
             "redirect_url": "/power-bi/enterprise/service-premium-what-is",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-premium-faq.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-faq",
             "redirect_document_id": false
         },
         {
