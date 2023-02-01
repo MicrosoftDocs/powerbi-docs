@@ -77,13 +77,20 @@ Controls that help you work with your data in PowerPoint are described below.
 * **Report sensitivity label**: Shows the sensitivity label applied to the report in Power BI. Note: this isn't the sensitivity label (if any) applied to the PowerPoint file itself.
 * **Last update from source**: Shows the time and date of the last data update from the data sources.
 
-### Report options
+### Data options
 
 ![Screenshot of Power B I add-in for PowerPoint report options menu.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-report-options.png)
 
 * **Filter**: Shows or hides the filters pane, where you can filter your report, just like in the Power BI service. This option is available only if filters have been defined on the page.
+* **Data Insights**: Creates a PowerPoint text box containing [insights](../create-reports/insights.md) 
 * **Refresh**: Refreshes the report page with the latest data from the Power BI service. Note: Refresh does not trigger getting data from the data sources.
 * **Reset**: Restores the state of the report page to the state it was in when it was first added to the PowerPoint presentation.
+
+### Style options
+
+![Screenshot of Power B I add-in for PowerPoint style options menu.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png)
+
+* **Outline**: 
 
 ### Add-in options
 
