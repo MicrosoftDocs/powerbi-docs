@@ -30,12 +30,11 @@ These restrictions and notes can change as we continue to improve the experience
 ## Build dashboards and reports in Power BI
 
 > [!IMPORTANT]
-
 > We continually improve connectivity to Azure Synapse Analytics. For the best experience to connect to your Azure Synapse Analytics data source, use Power BI Desktop. After you've built your model and report, you can publish it to the Power BI service. The previously available direct connector for Azure Synapse Analytics in the Power BI service is no longer available.
 
 The easiest way to move between your Synapse Analytics and Power BI is to create reports in Power BI Desktop. To get started, [download and install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 
-## Connecting through Power BI Desktop
+## Connect through Power BI Desktop
 
 You can connect to an Azure Synapse Analytics using the **Get data** button in Power BI Desktop.
 
@@ -55,11 +54,11 @@ You can connect to an Azure Synapse Analytics using the **Get data** button in P
 
 The next section describes how to find parameter values for your connection.
 
-## Finding Parameter Values
+## Find Parameter Values
 
 Your fully qualified server name and database name can be found in the Azure portal. Azure Synapse Analytics only has a presence in the Azure portal at this time.
 
-![Azure portal](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
+:::image type="content" source="media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png" alt-text="Screenshot of the Azure portal with SQK demo data highlighted.":::
 
 > [!NOTE]
 > If your Power BI tenant is in the same region as the Azure Synapse Analytics there will be no egress charges. To find where your Power BI tenant is located, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
