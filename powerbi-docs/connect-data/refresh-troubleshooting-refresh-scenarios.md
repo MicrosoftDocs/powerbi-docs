@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 11/01/2022
+ms.date: 02/01/2023
 LocalizationGroup: Data refresh
 ---
 
@@ -101,13 +101,21 @@ If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try
 
 ## Refresh operation throttled by Power BI Premium
 
-A Premium capacity might throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities. When a refresh operation is canceled, the following error message is logged into the refresh history:
+A Premium capacity might throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities. When a refresh operation is canceled, the following error messages are logged into the refresh history:
 
-*The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
+*You've exceeded the capacity limit for dataset refreshes. Try again when fewer datasets are being processed.*
  
 If the error occurs frequently, use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the [Capacities and SKUs](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table.
 
 To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed. You can also increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity. You can retry the operation if you're using custom [XMLA operations](/analysis-services/xmla/xml-for-analysis-xmla-reference).
+
+*Capacity level limit exceeded.*
+ 
+This error indicates you have too many datasets running refresh at the same time, based on the capacity your organization has purchased. You can retry the refresh operation, or reschedule the refresh time to address this error.
+
+*Node level limit exceeded.*
+ 
+This error indicates a system error in Power BI Premium based on datasets residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
 
 ## Next steps
 
