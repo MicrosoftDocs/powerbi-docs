@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/03/2022
+ms.date: 01/31/2023
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -122,7 +122,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
 * You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md#download-original-sample-power-bi-files) from the Power BI samples article.
 * You can only download usage metric reports in [live connected report mode](#download-modes).
-* You can't download a copy of a report if the copy is saved in a workspace that is different from where the original report is saved.
+* You can't download a copy of a report if the copy is saved in a workspace other than where the original report is saved.
 * If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix will still contain the old data source.
 * Reports created in the Power BI service that are based on a single dataset that's configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or that has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can only be downloaded in [live connected report mode](#download-modes).
 * If you create a Power BI report based on a dataset in one workspace and publish the report to a different workspace, you can download the report in [live connected report mode](#download-modes) only, if the dataset is configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or it has been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
