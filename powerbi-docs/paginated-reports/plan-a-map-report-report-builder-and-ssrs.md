@@ -1,16 +1,17 @@
 ---
-title: "Plan a map Power BI paginated report | Microsoft Docs"
+title: "Plan for adding a map to a Power BI paginated report | Microsoft Docs"
 description: Inspire action and insight with presentation of analytical data against a geographic background by using a map in your Power BI paginated reports in Power BI Report Builder. 
 ms.date: 01/25/2023
-ms.service: reporting-services
+ms.service: powerbi
 ms.subservice: report-builder
 
 
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
 ---
-# Plan a map Power BI paginated report (Power BI Report Builder)
+# Plan for adding a map to a Power BI paginated report (Power BI Report Builder)
 
 
 Good reports present information that leads to actions or insights. To present analytical data such as sales totals or demographics against a geographic background, you can add a map to your Power BI paginated report. A map can contain multiple layers, where each layer displays map elements that are defined by a specific type of spatial data: points that represent locations, lines that represent routes, or polygons that represent areas. You can associate your analytical data with map elements on each layer.  
@@ -48,17 +49,11 @@ Good reports present information that leads to actions or insights. To present a
 ### Find a Source for Spatial Data  
  To find spatial data to use in your map, you can use the following sources:  
   
--   ESRI Shapefiles, including publicly available Shapefiles that you can search for on the Internet.  
-  
 -   Spatial data from SQL Server spatial data sources.  
   
 -   Maps from reports in the Map Gallery.  
-  
--   Third-party sites that offer spatial data as ESRI Shapefiles or SQL Server spatial data.  
-  
--   Bing map tiles, which provide a background for the map view. To display tiles in a map, the report server must be configured to support Bing Maps Web Services.  
-  
- For more information, see "Where can I get ESRI shapefiles?" in [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-and-map-layer-wizard-report-builder-and-ssrs.md).  
+    
+-   Bing map tiles, which provide a background for the map view. 
   
  Spatial data can be politically sensitive and possibly copyrighted. Check the terms of use and privacy statements for spatial data sources to understand how you can use spatial data in your report.  
   
@@ -112,7 +107,7 @@ Good reports present information that leads to actions or insights. To present a
   
  After you add a map with the Map wizard, you can create additional layers or change options for a layer by using the Layer wizard. For more information about the wizards, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-and-map-layer-wizard-report-builder-and-ssrs.md).  
   
- You can customize the display or data options for each layer independently. For more information about customizing a map after you run a wizard, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs.md).  
+ You can customize the display or data options for each layer independently. For more information about customizing a map after you run a wizard, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs).  
   
 ##  <a name="Legend"></a> Plan for Legends  
  To help your users interpret a map, you can add multiple map legends, a color scale, and a distance scale. When you design a map, plan where you want the legends to display. You can specify the following information about each legend:  
@@ -129,7 +124,7 @@ Good reports present information that leads to actions or insights. To present a
   
  By default, all layers display the results of rules in the first map legend. You can create multiple legends and then, for each rule, assign which legend to use to display the results.  
   
- For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data) and [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs.md).  
+ For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data) and [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs).  
   
 ##  <a name="Embedding"></a> Balance Report Definition Size and Report Processing Time  
  Good report design for maps require that you balance the options that control report performance and report definition size. Map elements that are based on spatial data, or Bing map tiles, can be static and embedded in the report definition or dynamic and created every time the report is processed. You must assess the trade-offs for static or dynamic map data and find the balance that works for your circumstances. Consider the following information to make this decision:  
@@ -140,14 +135,13 @@ Good reports present information that leads to actions or insights. To present a
   
 -   Dynamic map elements reduce the report definition size but increase the time that is required to process and render the map.  
   
--   When the source of spatial data is located on the your computer, map elements are always embedded in the report definition. This includes spatial data from the Map Gallery or ESRI Shapefiles that have been installed locally.  
-  
- To use dynamic spatial data, the spatial data source must be on the report server. While using Power BI Report Builder to design reports, you must upload the spatial data to the report server first, and then, in the wizard or in the layer properties, specify that source of spatial data for the map layer.  
+-   When the source of spatial data is located on the your computer, map elements are always embedded in the report definition. This includes spatial data from the Map Gallery that have been installed locally.  
+   
   
 ## Next steps  
- [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs.md)   
+ [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs)   
  [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder.md)   
- [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md)   
+ [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
  [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder-and-ssrs.md)  
   
   
