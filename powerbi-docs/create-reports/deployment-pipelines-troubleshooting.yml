@@ -249,22 +249,11 @@ sections:
 
   - name: Paginated reports
     questions:
-      - question: |
-          Why can't I see a paginated report?
-        answer: |
-          To view a paginated report in the pipeline you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
-
-          >[!NOTE]
-          >You only need to enable this workload with Power BI Premium Gen1 capacities.
 
       - question: |
           Why can't I deploy a paginated report?
         answer: |
-          To deploy a paginated report, both of these conditions must be met:
-          
-          * You need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
-          
-          * In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload).
+          To deploy a paginated report, you need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
           
       - question: |
           Who's the owner of a deployed paginated report?
