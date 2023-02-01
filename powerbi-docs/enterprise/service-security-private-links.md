@@ -165,7 +165,7 @@ The next step is to create a VM.
     |-------------------|---------|
     |**Project details**||
     |Subscription |	Select your Azure Subscription |
-    |Resource group |	Select **myResourceGroup** which you created in the previous section. |
+    |Resource group |	Select **myResourceGroup** which you created in the previous section |
     |**Instance details** ||
     |VM name | Enter **myVm** |
     |Region | Select **West US** |
@@ -179,9 +179,9 @@ The next step is to create a VM.
     |INBOUND PORT RULES ||
     |Public inbound ports | Leave the default **None** |
     |LICENSING ||
-    |I have an eligible Windows 10/11 license | Leave unchecked |
+    |I have an eligible Windows 10/11 license | Check the box |
 
-3. Then select **Next: Disks**
+3. Then select **Next: Disks**.
 
 1. In the **Disks** tab, leave the defaults and select **Next: Networking**.
 
@@ -203,7 +203,7 @@ The next step is to create a VM.
 
 The next step is to create a private endpoint for Power BI.
 
-1. On the upper-left side of the Azure portal screen **Create a resource > Networking > Private Link Center**.
+1. On the upper-left side of the Azure portal screen **Create a resource > Networking > Private Link**.
 2. In **Private Link Center - Overview**, under the option to **Build a private connection to a service**, select **Create private endpoint**.
 3. In the **Create a private endpoint - Basics** tab, enter or select the following information:
 
