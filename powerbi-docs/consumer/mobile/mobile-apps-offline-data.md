@@ -1,6 +1,6 @@
 ---
 title: View your data offline in the Power BI mobile apps
-description: Read about an advantage of viewing Power BI in a mobile app rather than in a browser - you can see your data when you're not connected to a network.
+description: Learn about how you can view your data in Power BI mobile apps when you’re not connected to a network.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -45,7 +45,7 @@ You can turn off background refresh, for example, to avoid network usage. Check 
 > [!NOTE]
 > If you use the Power BI mobile app on an iOS device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 >
-> Read more about [configuring Power BI mobile apps with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md).
+> For more information, see [Configure mobile apps with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md).
 
 ## Offline indicators
 
@@ -53,21 +53,21 @@ Power BI provides clear indicators when you go in and out of offline mode, as we
 
 ## Considerations and limitations
 
-When you're offline with Power BI on your mobile device, you might encounter these limitations:
+When you're offline with Power BI on your mobile device:
 
 * Power BI can cache up to 250 MB of data offline.
-* Reports based on DirectQuery or live connection are not cached and are not available offline.
-* Some tile types require an active server connection, so they aren't available offline; for example, Bing map tiles and some custom tiles.
+* Reports based on DirectQuery or live connection aren't cached and aren't available offline.
+* Some tile types require an active server connection, so they aren't available offline. For example, Bing map tiles and some custom tiles.
 * Whole Excel workbooks in Power BI aren't available offline.
-* You can see Reporting Services mobile reports and KPIs offline, if you have viewed them while connected. They don't refresh in the background. They refresh every time you open them.
-* In the Power BI mobile apps, you can't see Power BI Desktop (.pbix) files saved to Power BI Report Server.
+* You can see Reporting Services mobile reports and KPIs offline, if you viewed them while connected. They don't refresh in the background. They refresh every time you open them.
+* In the Power BI mobile apps, you can't see Power BI Desktop (PBIX) files saved to Power BI Report Server.
 * Paginated reports (RDL) are not available while the network is offline.
 
 ## Next steps
 
 Your feedback helps us decide what to implement in the future, so don't forget to vote for other features you'd like to see in Power BI mobile apps.
 
-* [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
+* [What are the Power BI mobile apps?](mobile-apps-for-mobile-devices.md)
 * Follow [@MSPowerBI](https://twitter.com/mspowerbi) on Twitter
 * Join the conversation at the [Power BI Community](https://community.powerbi.com/)
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
