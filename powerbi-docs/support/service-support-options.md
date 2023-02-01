@@ -38,7 +38,7 @@ Admins can use the **Help + support** experience in the [Power Platform Admin Ce
 
 * Check for known service outages or degradation at [Power BI Support](https://support.powerbi.com).
 
-* To check for known issues with Power BI features, see [Power BI known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)
+* To check for known issues with Power BI features, see [Power BI known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues).
 
 * Look for any notifications about Power BI in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
 
