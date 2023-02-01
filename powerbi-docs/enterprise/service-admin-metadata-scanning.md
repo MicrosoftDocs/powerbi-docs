@@ -13,11 +13,11 @@ LocalizationGroup: Administration
 
 # Metadata scanning
 
-Metadata scanning facilitates governance over your organization's Power BI data by making it possible to quickly catalog and report on all the metadata of your organization's Power BI artifacts. Metadata scanning uses a set of Admin REST APIs that are collectively known as the *scanner APIs*.
+Metadata scanning facilitates governance over your organization's Power BI data by making it possible to quickly catalog and report on all the metadata from your Power BI artifacts. Metadata scanning uses a set of Admin REST APIs that are collectively known as the *scanner APIs*.
 
 With the scanner APIs, you can extract information such as artifact name, owner, sensitivity label, endorsement status, and last refresh. For datasets, you can also extract the metadata of some of the objects they contain, such as table and column names, measures, DAX expressions, mashup queries, and so forth. The metadata of these dataset internal objects is referred to as subartifact metadata.
 
-For a more extensive list of the artifact and subartifact metadata that metadata scanning returns, see the [documentation for the Admin - WorkspaceInfo GetScanResult API](/rest/api/power-bi/admin/workspace-info-get-scan-result).
+For an extensive list of the artifact and subartifact metadata that metadata scanning returns, see the [documentation for the WorkspaceInfo GetScanResult API](/rest/api/power-bi/admin/workspace-info-get-scan-result).
 
 The following are the scanner APIs. They support both public and sovereign clouds.
 
@@ -77,7 +77,7 @@ Metadata scanning requires no special license. It works for all of your tenant m
 ## Next steps
 
 * [Power BI REST Admin APIs](/rest/api/power-bi/admin).
-* [Set up metadata scanning](../admin/service-admin-metadata-scanning-setup.md)
+* [Set up metadata scanning](../admin/service-admin-metadata-scanning-setup.md).
 * [Enable service principal authentication for read-only admin APIs](read-only-apis-service-principal-authentication.md).
 * [WorkspaceInfo GetScanResult](/rest/api/power-bi/admin/workspace-info-get-scan-result).
 * More questions? Try asking the [Power BI Community](https://community.powerbi.com).
