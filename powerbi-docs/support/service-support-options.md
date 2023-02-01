@@ -16,16 +16,16 @@ This article describes the support options that are available to customers who h
 
 ## Get started with support for end users
 
-If you're an end user, you can contact Support directly if you have a Power BI Pro or Power BI Premium Per User license. But, your administrator might prefer you take a different route to get help. Before you contact support, check these requirements:
+If you're an end user, you can contact support directly if you have a Power BI Pro or Power BI Premium Per User license. But, your administrator might prefer you take a different route to get help. Before you contact support, check these requirements:
 
-1. Find out which license you have. To quickly check whether you're eligible to contact Support, select your profile picture from the page header in the [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you might use the following listed support options. Select **View account** to see more details about your account.
+1. Find out which license you have. To quickly check whether you're eligible to contact support, select your profile picture from the page header in the [Power BI service](https://app.powerbi.com). If **Pro account** or **Premium Per User account** is displayed, you might use the following listed support options. Select **View account** to see more details about your account.
 
    :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::
 
    > [!NOTE]
-   >If you got your Power BI Pro or Power BI Premium Per User license through a guest affiliation with another organization, you can't contact Support. Your license must be assigned directly by the organization that manages your work or school account to enable Support options.
+   >If you got your Power BI Pro or Power BI Premium Per User license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
 
-2. Verify whether Power BI Support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Help & Support > About Power BI**. If this selection takes you to Power BI Support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a Support contract, you'll receive a message that "This product is not supported."
+2. Verify whether Power BI support is your admin's preferred option when you need help. To check, select (**?**) from the page header in the Power BI service, then choose **Help & Support > About Power BI**. If this selection takes you to Power BI support, you might use the following listed support options. Otherwise, you'll be directed to the preferred support option for your organization. If your product doesn't have a support contract, you'll receive a message that "This product is not supported."
 
    :::image type="content" source="media/service-support-options/support-menu.png" alt-text="Screen capture showing help menu with Get help selected.":::
 
@@ -34,9 +34,11 @@ If you're an end user, you can contact Support directly if you have a Power BI P
 > [!TIP]
 >Need help getting started with Power BI? Take advantage of the [one-hour workshops offered by our partners and get a free consultation](https://appsource.microsoft.com/marketplace/consulting-services?search=Onehourfreeconsultingoffer).
 
-Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft Support, you should follow these steps:
+Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft support, you should follow these steps:
 
 * Check for known service outages or degradation at [Power BI Support](https://support.powerbi.com).
+
+* To check for known issues with Power BI features, see [Power BI known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)
 
 * Look for any notifications about Power BI in the [Microsoft 365 service health dashboard](https://admin.microsoft.com/#/servicehealth).
 
@@ -46,14 +48,14 @@ Admins can use the **Help + support** experience in the [Power Platform Admin Ce
 
 Learn more about how admins can [contact support for help with Microsoft 365 business products](/microsoft-365/admin/contact-support-for-business-products).
 
-## Connect with Support
+## Connect with support
 
 | **Support option** | **Break-fix technical support** | **Billing support** | **Consulting and training** | **Service level <br>(time to initial engagement)** | **Support channel** |
 | --- | --- | --- | --- | --- | --- |
 | **Community support**: Web forums for users to get peer-to-peer support, guidance, and share solutions. Answers are provided by a global community of Power BI experts and Microsoft employees. | X |   |   | None, engagement is provided on a best-effort basis. | [Power BI Community](https://community.powerbi.com) |
-| **Power BI Pro end-user support**: Basic technical support for end users creating and consuming content in Power BI. | X |   |   | One business day. | [Power BI Support](https://support.powerbi.com)  |
-| **Power BI Premium Per User end-user support**: Technical and billing support for end users creating and consuming content in Power BI. | X | X |  | One business day. | [Power BI Support](https://support.powerbi.com)  |
-| **Power BI Premium admin support**: Technical support for administrators deploying and operating Power BI Premium capacities. | X |   |   | One business day or one hour, depending on severity of case.\* | [Power BI Support](https://support.powerbi.com)<br>OR<br>[Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
+| **Power BI Pro end-user support**: Basic technical support for end users creating and consuming content in Power BI. | X |   |   | One business day. | [Power BI support](https://support.powerbi.com)  |
+| **Power BI Premium Per User end-user support**: Technical and billing support for end users creating and consuming content in Power BI. | X | X |  | One business day. | [Power BI support](https://support.powerbi.com)  |
+| **Power BI Premium admin support**: Technical support for administrators deploying and operating Power BI Premium capacities. | X |   |   | One business day or one hour, depending on severity of case.\* | [Power BI support](https://support.powerbi.com)<br>OR<br>[Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
 | **Power BI admin support**: Technical and billing support for administrators of Power BI deployments at their organizations. To use this option, you must be a Power BI Administrator or be assigned a Microsoft 365 admin role that can manage service requests. | X | X |   | One business day or one hour, depending on severity of case.\* | [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
 | **Microsoft Premier support**: An enterprise-grade approach to support, with account management, the option for on-site support, and services such as training and data model performance optimization. | X | X | X | Various, depending on offering and severity of case.\* | Customer Success Account Manager <br>OR<br> [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) |
 | | | | | | |
