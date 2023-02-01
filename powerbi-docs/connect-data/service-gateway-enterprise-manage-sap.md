@@ -21,24 +21,24 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Connection Type**, select **SAP HANA**.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-sap/new-data-source-sap.png" alt-text=" Screenshot of Add the SAP HANA data source." lightbox="media/service-gateway-enterprise-manage-sap/new-data-source-sap.png":::
+:::image type="content" source="media/service-gateway-enterprise-manage-sap/new-data-source-sap.png" alt-text=" Screenshot of Add the SAP HANA data source.":::
 
 After you select the SAP HANA data source type, fill in the **Server**, **Username**, and **Password** information for the data source.
 
 > [!NOTE]
 > All queries to the data source run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-:::image type="content" source="media/service-gateway-enterprise-manage-sap/sap-credentials.png" alt-text=" Screenshot of Filling in the data source settings." lightbox="media/service-gateway-enterprise-manage-sap/sap-credentials.png":::
+:::image type="content" source="media/service-gateway-enterprise-manage-sap/sap-credentials.png" alt-text=" Screenshot of Filling in the data source settings.":::
 
 After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against an SAP HANA server that is on-premises. You see *Created New data sources* if it succeeded.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-sap/data-source-succesful-sap.png" alt-text=" Screenshot of Displaying the connection status." lightbox="media/service-gateway-enterprise-manage-sap/data-source-succesful-sap.png":::
+:::image type="content" source="media/service-gateway-enterprise-manage-sap/data-source-succesful-sap.png" alt-text=" Screenshot of Displaying the connection status.":::
 
 ### Advanced settings
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Set privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-:::image type="content" source="media/service-gateway-enterprise-manage-sap/privacy-level-sap.png" alt-text=" Screenshot of Setting the privacy level." lightbox="media/service-gateway-enterprise-manage-sap/privacy-level-sap.png":::
+:::image type="content" source="media/service-gateway-enterprise-manage-sap/privacy-level-sap.png" alt-text=" Screenshot of Setting the privacy level.":::
 
 ## Use the data source
 
@@ -61,7 +61,7 @@ After you publish, either from Power BI Desktop or **Get Data**, your reports sh
 
 If you're listed in the **Users** tab of the data source configured within the gateway and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png" alt-text="Screenshot displays the users in the Gateway connection dialog." lightbox="media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png":::
+:::image type="content" source="media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png" alt-text="Screenshot displays the users in the Gateway connection dialog.":::
 
 ## Next steps
 
