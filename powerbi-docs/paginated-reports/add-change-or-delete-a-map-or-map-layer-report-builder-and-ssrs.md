@@ -22,16 +22,16 @@ ms.reviewer: saurkumar
   
  Map layers are drawn from bottom to top in the order that they appear in the Map pane. In the previous figure, the tile layer is drawn first and the polygon layer is drawn last. Layers that are drawn later might hide map elements on layers that are drawn earlier. You can change the order of layers by using the arrow keys on the Map pane toolbar. To show or hide layers, toggle the visibility icon. You can change the transparency of a layer on the **Visibility** page of the **Layer Data** properties dialog box.  
   
- The following table displays the toolbar icons for the **Map** pane.  
-  
+The following table displays the toolbar icons for the **Map** pane.  
+
 |Symbol|Description|When to use|  
 |------------|-----------------|-----------------|  
-|:::image type="icon" source="/sql/reporting-services/media/rs-iconmaplayerwizard.gif":::|Map Layer Wizard|To add a layer by using a wizard, click **New layer wizard**.|  
-|:::image type="icon" source="/sql/reporting-services/media/rs-iconmapaddlayer.gif":::|Add Layer|To manually add a layer, click **Add Layer**, and then click the type of map layer to add.|  
-|:::image type="icon" source="/sql/reporting-services/report-design/media/rs-iconmappolygonlayer.gif":::|Polygon Layer|Add a map layer that displays areas or shapes that are based sets of polygon coordinates.|  
-|:::image type="icon" source="/sql/reporting-services/report-design/media/rs-iconmaplinelayer.gif":::|Line Layer|Add a map layer that displays paths or routes that are based on sets of line coordinates.|  
-|:::image type="icon" source="/sql/reporting-services/report-design/media/rs-iconmappointlayer.gif":::|Point Layer|Add a map layer that displays locations that are based on sets of point coordinates.|  
-|:::image type="icon" source="/sql/reporting-services/report-design/media/rs-iconmaptilelayer.gif":::|Tile Layer|Add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.|  
+|:::image type="icon" source="../../paginated-reports/media/paginated-reports-maps/rs-iconmaplayerwizard.gif":::|Map Layer Wizard|To add a layer by using a wizard, click **New layer wizard**.|  
+|:::image type="icon" source="../../paginated-reports/media/paginated-reports-maps/rs-iconmapaddlayer.gif":::|Add Layer|To manually add a layer, click **Add Layer**, and then click the type of map layer to add.|  
+|:::image type="icon" source="../../paginated-reports/media/paginated-reports-maps/rs-iconmappolygonlayer.gif":::|Polygon Layer|Add a map layer that displays areas or shapes that are based sets of polygon coordinates.|  
+|:::image type="icon" source="../../paginated-reports/media/paginated-reports-maps/rs-iconmaplinelayer.gif":::|Line Layer|Add a map layer that displays paths or routes that are based on sets of line coordinates.|  
+|:::image type="icon" source="../../paginated-reports/media/paginated-reports-maps/rs-iconmappointlayer.gif":::|Point Layer|Add a map layer that displays locations that are based on sets of point coordinates.|  
+|:::image type="icon" source="../../paginated-reports/media/paginated-reports-maps/rs-iconmaptilelayer.gif":::|Tile Layer|Add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.|  
   
  At the bottom of the Map pane is the Map view area. To change the center or zoom options for the map, use the arrow keys to adjust the view center and the slider to adjust the zoom level.  
   
