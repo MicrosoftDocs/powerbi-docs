@@ -1,6 +1,6 @@
 ---
 title: Optimize a dashboard for mobile phones
-description: Learn how to create a customized view of a dashboard in the Power BI service specifically for viewing on mobile phones.
+description: Learn how you can optimize a dashboard for mobile phones by creating a phone view with Power BI service. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 02/01/2023
 LocalizationGroup: Dashboards
 ---
-# Optimize a dashboard for mobile phones - Power BI
+# Optimize a dashboard for mobile phones with Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service-yes-mobile](../includes/applies-no-desktop-yes-service-yes-mobile.md)]
 
@@ -55,6 +55,6 @@ Are you looking for information about viewing dashboards on a mobile device? Try
 
 ## Next steps
 
-* [Create mobile-optimized Power BI reports](power-bi-create-mobile-optimized-report-about.md)
+* [About mobile-optimized Power BI reports](power-bi-create-mobile-optimized-report-about.md)
 * [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
 * More questions? [Ask the Power BI Community](https://community.powerbi.com/)
