@@ -2,13 +2,14 @@
 title: "Troubleshoot reports: map reports in a Power BI paginated report | Microsoft Docs"
 description: Explore troubleshooting ideas for situations that can result when you customize, add a layer, or publish a paginated report with a map in Power BI Report Builder.
 ms.date: 01/25/2023
-ms.service: reporting-services
+ms.service: powerbi
 ms.subservice: report-builder
 
 
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
+ms.reviewer: saurkumar
 ---
 # Troubleshoot reports: map reports in a Power BI paginated report (Power BI Report Builder)
 
@@ -18,27 +19,6 @@ ms.author: maggies
   
 ##  <a name="Embedded"></a> Report Definition Size Issues  
  Use this section to help solve issues that relate to report definition size.  
-  
-## How do I reduce the report definition size?  
- A map layer contains map elements that are created from spatial data. In some cases, map elements are embedded in the report definition. This happens in the following ways:  
-  
--   If the source of spatial data is from a map in the Map Gallery or from an ESRI Shapefile on your local computer, map elements are automatically embedded in the report definition.  
-  
-     If you publish a report to the report server and there is a spatial data source reference to a local file, the spatial data cannot be retrieved at report processing time. To avoid this issue, the map data is embedded in the report definition.  
-  
--   In the Map wizard or Layer wizard, if you select the option to embed spatial data, map elements based on the spatial data are embedded in the map layer in the report definition.  
-  
--   In the Map pane, if you right-click the layer, and then click one of the **Embed Spatial Data** options, map elements based on the spatial data are embedded in the map layer in the report definition.  
-  
--   To remove embedded data that is based on an ESRI Shapefile from a report definition, you must do the following:  
-  
-1.  Upload or publish the ESRI .shp and .dbf files to the report server.  
-  
-2.  In the report, in the Map pane in Design view, select the layer that has embedded data, and open the **Layer Data** properties. In **Use spatial data from**, select **Link to ESRI Shapefile**, and then browse to the folder on the report server that contains the ESRI Shapefiles, select it, and click OK.  
-  
-3.  Save your report. The embedded data for the layer that you changed has been removed from the report definition.  
-  
- Map elements from a report in the Map Gallery will always be embedded in a map layer.  
   
 ##  <a name="Spatial"></a> Spatial Data Issues  
  Use this section to help solve issues that relate to spatial data.  
@@ -62,11 +42,6 @@ ms.author: maggies
 -   Change the query to return the coordinate sets as separate rows in the result set.  
   
 -   Select the map elements to vary and set the corresponding embedded point, line, or polygon properties by overriding the default display properties for the corresponding layer type.  
-  
-## My layer that uses spatial data from an ESRI Shapefile always has embedded data.  
- To ensure that reports with maps can run on a report server, ESRI Shapefiles must be available as resources on the report server. If you add a layer to a map and specify a Shapefile that is on your local file system, the spatial data is automatically embedded in the report.  
-  
- To replace the embedded data with a link to the ESRI Shapefile, you must upload the .shp file and its matching .dbf file to the report server, and then change the source of spatial data for the layer.  
   
 ## I renamed a data source or dataset to a friendly name and now no data appears in my map.  
  The report definition is not automatically updated when you manually change the name of any report item.  
@@ -133,7 +108,7 @@ ms.author: maggies
     >  You can toggle visibility for each layer in the Map pane. When you are designing each layer, toggle all other layers off to determine whether the issue is for an individual layer or is for transparency issues among layers.  
   
 ## I set a filter on the map layer and it has no effect.  
- To filter data for a layer, the data type in the filter expression must be specified. Verify that you have specified the correct underlying data type so that the filter equation correctly evaluates the specified condition. For more information, see [Filter Equation Examples &#40;Power BI Report Builder&#41;](filter-equation-examples-report-builder-and-ssrs.md).  
+ To filter data for a layer, the data type in the filter expression must be specified. Verify that you have specified the correct underlying data type so that the filter equation correctly evaluates the specified condition. For more information, see [Filter Equation Examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
 ##  <a name="Legend"></a> Legend, Color Scale, and Rule Issues  
  Use this section to help solve issues that relate to rules, legend, and color scale options.  
@@ -147,7 +122,7 @@ ms.author: maggies
   
  To control the title and content for each legend, use the Legend properties for the rule. You can specify how many divisions to create, change the calculations that assign values to each division, set minimum and maximum range values, and change the format of the legend text.  
   
- For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs.md).  
+ For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs).  
   
 ## The rules that I set do not give the results that I expect.  
  Rules apply to the analytical data that is associated with map elements on a layer. Use the following list to help identify issues with all color rules, size rules, width rules, and marker type rules:  
@@ -164,13 +139,13 @@ ms.author: maggies
 ## My color scale does not appear when I run the report.  
  The color scale displays information to the user when a map layer specifies color rules for polygons, lines, or points for the whole layer or for embedded map elements. If no map element specifies a color rule, or if the color rules specify by using a legend instead of the color map, then the color map does not appear in the rendered report.  
   
- To display the color scale, specify color rules for a layer or an embedded map element. For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs.md).  
+ To display the color scale, specify color rules for a layer or an embedded map element. For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs).  
   
 ##  <a name="Tile"></a> Tile Issues  
  Use this section to help solve issues that relate to tile background options.  
   
 ## I cannot see the Bing maps tile background.  
- The following settings affect whether a Bing maps tile background displays in local preview or on a report that runs from the report server:  
+ The following settings affect whether a Bing maps tile background displays in local preview or on a report:  
   
 -   The map tile layer must exist. In the Map wizard or Layer wizard, select **Add a Bing Maps background for this map view**. This adds a tile layer for the current map viewport view center and zoom level. You can also add a tile layer from the Map pane toolbar.  
   
@@ -178,7 +153,7 @@ ms.author: maggies
   
 -   The map projection must be **Mercator**.  
   
--   For local preview, you must have internet access. For a report that runs from the report server, the report server must be configure to support tile background. For more information, see [Plan a Map Report](plan-a-map-report-report-builder-and-ssrs.md).  
+-   For local preview, you must have internet access.
   
  For more information about adding a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
   
@@ -191,11 +166,11 @@ ms.author: maggies
  Use this section to help solve issues that relate to label or ToolTip options.  
   
 ## I get an expression error about dataset scope when I set a label or ToolTip to an expression.  
- When your spatial data comes from a map gallery or an ESRI Shapefile, the associated data is not part of a report dataset. You cannot use expression syntax for a dataset field reference to specify this data for a label or tooltip.  
+ When your spatial data comes from a map gallery, the associated data is not part of a report dataset. You cannot use expression syntax for a dataset field reference to specify this data for a label or tooltip.  
   
  To specify data that is related to spatial data that is not part of a report dataset, you must use the symbol # followed by a label that specifies the name of the data.  
   
 ## Next steps  
- [Maps &#40;Power BI Report Builder&#41;](maps-report-builder-and-ssrs.md)   
+ [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
 
   
