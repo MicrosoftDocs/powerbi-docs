@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 3/02/2022
+ms.date: 01/24/2023
 LocalizationGroup: Data from files
 ---
 # Configure dataflow storage to use Azure Data Lake Gen 2
