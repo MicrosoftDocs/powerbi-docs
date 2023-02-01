@@ -26,8 +26,6 @@ ms.reviewer: saurkumar
 ## On the design surface, I see sample spatial data  
  At design time, the design surface might show the message about sample spatial data for the following reasons:  
   
--   Spatial data comes from an ESRI .shp file, but the corresponding .dbf file is not available. ESRI Shapefiles usually include both a .shp file with spatial data and a support file .dbf. Verify that the .dbf file is in the same directory as the .shp file.  
-  
 -   Spatial data comes from a dataset and the data connection for the query is not valid or the current credentials are not valid.  
   
 -   The map layer contains a property with an expression. Expressions are not evaluated until the report runs. To see the map, you must preview the report.  
