@@ -1,6 +1,6 @@
 ---
 title: Edit a dashboard tile
-description: Learn how to create edit, resize, move, rename, pin, delete, and add hyperlinks to a dashboard tile.
+description: Learn how to create, edit, resize, move, rename, pin, delete, and add hyperlinks to a dashboard tile.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -39,7 +39,7 @@ This article covers how to:
 
 ## Prerequisites
 
-To follow along, open Power BI service (not Power BI Desktop) and [download the IT Spend Analysis sample](sample-it-spend.md). When the "Success" message appears, select **Go to dashboard**
+To follow along, open the Power BI service (not Power BI Desktop) and [download the IT Spend Analysis sample](sample-it-spend.md). When the "Success" message appears, select **Go to dashboard**
 
 - - -
 <a name="create"></a>
@@ -48,7 +48,7 @@ To follow along, open Power BI service (not Power BI Desktop) and [download the 
 
 1. From the IT Spend Analysis dashboard, select the "Amount" tile to open the report.
 
-    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-amount-tile.png" alt-text="Screenshot showing the Amount tile.":::
+    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-amount-tile.png" alt-text="Screenshot showing the Amount tile used to open the report.":::
 
 2. Open the report in Editing view by selecting **Edit** from the top menu bar.
 
@@ -81,7 +81,7 @@ On the dashboard, locate the new tile. Select and hold the tile to drag it to a 
 
 You can make tiles many different sizes&mdash;from 1x1 tile units up to 5x5. Select and drag the handle in the bottom right corner to resize the tile.
 
-:::image type="content" source="media/service-dashboard-edit-tile/pbigif_resizetile4.gif" alt-text="Animation of a tile being resized.":::
+:::image type="content" source="media/service-dashboard-edit-tile/pbigif_resizetile4.gif" alt-text="Animation of a sample tile being resized.":::
 
 ## **More options** (...) menu
 
@@ -89,7 +89,7 @@ You can make tiles many different sizes&mdash;from 1x1 tile units up to 5x5. Sel
 
    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile.png" alt-text="Screenshot of a tile, highlighting the ellipses.":::
 
-2. Hover over the "Account" tile and select the ellipses to display the options. The options available vary by tile type. For example, the options available for a live tile are different from options available for a standard visualization tile. Also, if a dashboard has been shared with you, meaning you aren't the owner, you'll have fewer options.
+2. Hover over the "Amount" tile and select the ellipses to display the options. The options available vary by tile type. For example, the options available for a live tile are different from options available for a standard visualization tile. Also, if a dashboard has been shared with you, meaning you aren't the owner, you'll have fewer options.
 
    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile-menu-new.png" alt-text="Screenshot of the ellipses options menu.":::
 
@@ -103,19 +103,19 @@ You can make tiles many different sizes&mdash;from 1x1 tile units up to 5x5. Sel
 
 At the top of the "Tile details" window, change **Title** to **Amount spent**.
 
-:::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile-title.png" alt-text="Screenshot of the Tile details window.":::
+:::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile-title.png" alt-text="Screenshot showing the Tile details window.":::
 
 <a name="hyperlink"></a>
 
 ### Change the default hyperlink
 
-By default, selecting a tile usually takes you to the report where the tile was created or to Q&A if the tile was created in Q&A. Add a custom link to a tile to link to a webpage, another dashboard or report in the same workspace, an SQL Server Reporting Services (SSRS) report, or other online content.
+By default, selecting a tile usually takes you to the report where the tile was created or to Q&A if the tile was created in Q&A. Add a custom link to a tile to link to a webpage, another dashboard or report in the same workspace, a SQL Server Reporting Services (SSRS) report, or other online content.
 
-1. Under the Functionality heading on the "Tile details" window, select **Set custom link**.
+1. In the Functionality section on the "Tile details" dialog, select **Set custom link**.
 
 2. Select **Link to a dashboard or report in the current workspace** and then select from the dropdown. In this example, the Human Resources sample dashboard is selected. If you don't have this sample already in your workspace, you can add it and come back to this step, or you can select a different dashboard.
 
-    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-custom-link.png" alt-text="Screenshot of the Functionality dialog.":::
+    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-custom-link.png" alt-text="Screenshot showing the Functionality dialog.":::
 
 3. Select **Apply**.
 
@@ -127,7 +127,7 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 ### Pin the tile to a different dashboard
 
-1. From the ellipses dropdown menu, select **Pin tile** :::image type="icon" source="../media/pin-icon.png":::.
+1. From **More options**, select **Pin tile** :::image type="icon" source="../media/pin-icon.png":::.
 2. Decide whether to pin a duplicate of this tile to an existing dashboard or to a new dashboard.
 
    :::image type="content" source="media/service-dashboard-edit-tile/pbi_pintoanotherdash.png" alt-text="Screenshot of the Pin to Dashboard dialog.":::
@@ -137,7 +137,7 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 ### Delete the tile
 
-1. To permanently remove a tile from a dashboard, select **Delete tile** :::image type="icon" source="media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png"::: from the ellipses dropdown menu.
+1. To permanently remove a tile from a dashboard, select **More options** > **Delete tile** :::image type="icon" source="media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png"::: from the ellipses dropdown menu.
 
 2. Deleting a tile doesn't delete the underlying visualization. Open the underlying report by selecting the "Amount" tile. Open the last page in your report to see that the original visualization hasn't been deleted from the report.
 
