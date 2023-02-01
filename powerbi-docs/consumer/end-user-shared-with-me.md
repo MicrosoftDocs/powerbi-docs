@@ -22,7 +22,7 @@ No matter which option is used, to view content created by others requires a Pow
 
 ![Share icon](./media/end-user-shared-with-me/power-bi-shared-with-me.png)
 
-Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro or Premium Per User (PPU) license. Read [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md) for details.
+Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro or Premium Per User (PPU) license. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
     
 
 > [!NOTE]  

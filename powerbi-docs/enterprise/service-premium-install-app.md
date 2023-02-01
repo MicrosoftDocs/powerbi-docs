@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Install the Premium metrics app
 
-The *Power BI Premium Utilization and Metrics* app is designed to provide monitoring capabilities for Power BI Premium capacities. Use this guide to install the app. Once the app is installed, you can [learn how to use it](service-premium-gen2-metrics-app.md).
+The *Power BI Premium Utilization and Metrics* app is designed to provide monitoring capabilities for Power BI Premium capacities. Use this guide to install the app. Once the app is installed, you can [learn how to use it](service-premium-metrics-app.md).
 
 >[!NOTE]
 >The app is updated regularly with new features and functionalities. If you see there's a pending update in the notifications center, we recommend that you update the app.
@@ -63,11 +63,11 @@ To install the *Power BI Premium Capacity Utilization and Metrics* app for the f
 
 2. When prompted, sign in to AppSource using your Microsoft account and complete the registration screen. The app takes you to the Power BI service to complete the process. Select **Install** to continue.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\one-more-thing.png" alt-text="Screenshot of the registration window, which includes fields to fill in with your Microsoft account details.":::
+    :::image type="content" source="media\service-premium-install-app\one-more-thing.png" alt-text="Screenshot of the registration window, which includes fields to fill in with your Microsoft account details.":::
 
 3. In the *Install this Power BI app* window, select **Install**.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\install-app.png" alt-text="Screenshot of the install this Power B I app, with the install button highlighted.":::
+    :::image type="content" source="media\service-premium-install-app\install-app.png" alt-text="Screenshot of the install this Power B I app, with the install button highlighted.":::
 
 4. Wait a few seconds for the app to install.
 
@@ -101,7 +101,7 @@ To upgrade a previous installation of the *Power BI Premium Capacity Utilization
 
 3. Select **Install**.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\update-app.png" alt-text="Screen capture of the update app window with the update, the workspace and the app option selected, and the install button highlighted.":::
+    :::image type="content" source="media\service-premium-install-app\update-app.png" alt-text="Screen capture of the update app window with the update, the workspace and the app option selected, and the install button highlighted.":::
 
 ---
 
@@ -115,7 +115,7 @@ To complete the installation, configure the Power BI Premium utilization and met
 
 3. When you see the message *You have to connect to your own data to view this report*, select **Connect**.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\app-setup-connect.png" alt-text="Screen capture of the Power B I premium utilization and metrics app's setup screen, showing the connect button.":::
+    :::image type="content" source="media\service-premium-install-app\app-setup-connect.png" alt-text="Screen capture of the Power B I premium utilization and metrics app's setup screen, showing the connect button.":::
 
 4. In the **Connect to Premium Capacity Utilization And Metrics** first window, fill in the fields according to the table:
 
@@ -140,17 +140,17 @@ To complete the installation, configure the Power BI Premium utilization and met
 
 7. Select **Sign in and continue**.
 
-    :::image type="content" source="media/service-premium-install-gen2-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to O Auth 2 and the privacy level setting for this data source option is set to organizational. The sign-in and continue button is highlighted.":::
+    :::image type="content" source="media/service-premium-install-app/second-window.png" alt-text="Screen capture showing the second connect to premium capacity utilization and metrics window. The authentication method option is set to O Auth 2 and the privacy level setting for this data source option is set to organizational. The sign-in and continue button is highlighted.":::
 
 8. Select a capacity from the **Capacity Name** drop down.
 
-    :::image type="content" source="media/service-premium-install-gen2-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop down box in the Power B I premium utilization and metrics app.":::
+    :::image type="content" source="media/service-premium-install-app/capacity-name.png" alt-text="Screen capture showing the capacity name drop down box in the Power B I premium utilization and metrics app.":::
 
 9. After you configure the app, it can take a few minutes for the app to get your data. If you run the app and it's not displaying any data, refresh the app. This behavior happens only when you open the app for the first time.
 
-    :::image type="content" source="media\service-premium-install-gen2-app\refresh-app.png" alt-text="Screen capture of the Power B I premium utilization and metrics app displaying no data.":::
+    :::image type="content" source="media\service-premium-install-app\refresh-app.png" alt-text="Screen capture of the Power B I premium utilization and metrics app displaying no data.":::
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Use the Premium metrics app](service-premium-gen2-metrics-app.md)
+> [Use the Premium metrics app](service-premium-metrics-app.md)

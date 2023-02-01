@@ -1141,7 +1141,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
@@ -1156,7 +1156,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-large-datasets.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
@@ -1956,12 +1956,12 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-monitor-capacity.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-monitor-portal.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         },
         {
@@ -1976,7 +1976,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-restart.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
@@ -2191,7 +2191,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-capacity-manage.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage-gen2",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
             "redirect_document_id": true
         },
         {
@@ -2201,7 +2201,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-capacity-scenarios.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
@@ -2211,7 +2211,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-faq.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-faq",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
             "redirect_document_id": true
         },
         {
@@ -2221,12 +2221,12 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-metrics-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-premium-what-is.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": true
         },
         {
@@ -4427,12 +4427,12 @@
         },  
         {
             "source_path": "powerbi-docs/admin/service-admin-premium-monitor-capacity.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-premium-monitor-portal.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         },
         {
@@ -4442,7 +4442,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-premium-restart.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
@@ -4522,12 +4522,12 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage-gen2",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
             "redirect_document_id": false
         }, 
         {
             "source_path": "powerbi-docs/admin/service-premium-capacity-manage.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage-gen2",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
             "redirect_document_id": false
         }, 
         {
@@ -4537,7 +4537,7 @@
         }, 
         {
             "source_path": "powerbi-docs/admin/service-premium-capacity-scenarios.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         }, 
         {
@@ -4552,34 +4552,44 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-premium-faq.yml",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-faq",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
             "redirect_document_id": false
         },  
         {
             "source_path": "powerbi-docs/admin/service-premium-gen2-faq.yml",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-faq",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/admin/service-premium-gen2-metrics-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "source_path": "powerbi-docs/admin/service-premium-metrics-app.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         }, 
         {
             "source_path": "powerbi-docs/admin/service-premium-what-is.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/admin/service-premium-gen2-what-is.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
-        },         
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-gen2-what-is.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },                  
         {
             "source_path": "powerbi-docs/admin/service-premium-install-gen2-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-install-gen2-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-install-app",
             "redirect_document_id": false
-        },  
+        }, 
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-install-gen2-app.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-install-app",
+            "redirect_document_id": false
+        },          
         {
             "source_path": "powerbi-docs/admin/service-premium-large-models.md",
             "redirect_url": "/power-bi/enterprise/service-premium-large-models",
@@ -4587,7 +4597,7 @@
         }, 
         {
             "source_path": "powerbi-docs/admin/service-premium-metrics-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         }, 
         {
@@ -4607,7 +4617,7 @@
         }, 
         {
             "source_path": "powerbi-docs/admin/service-premium-transition-gen1-to-gen2.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-transition-gen1-to-gen2",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },   
         {
@@ -4797,54 +4807,59 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/enterprise/service-premium-what-is.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/enterprise/service-premium-capacity-optimize.md",
             "redirect_url": "/power-bi/enterprise/service-premium-architecture",
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/enterprise/service-premium-capacity-manage.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage-gen2",
+            "source_path": "powerbi-docs/enterprise/service-premium-capacity-manage-gen2.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
             "redirect_document_id": false
-        },
+        },        
         {
             "source_path": "powerbi-docs/enterprise/service-admin-premium-monitor-capacity.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-premium-metrics-app.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-admin-premium-restart.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-premium-faq.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-faq",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-premium-gen2-faq.yml",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
+            "redirect_document_id": false
+        },        
+        {
             "source_path": "powerbi-docs/enterprise/service-admin-premium-monitor-portal.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-metrics-app",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-premium-capacity-scenarios.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-premium-transition-gen1-to-gen2.md",
-            "redirect_url": "/power-bi/enterprise/service-premium-gen2-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
-        }                                                                                                              
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-gen2-metrics-app.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium-gen2.md",
+            "redirect_url": "/power-bi/troubleshoot/known-issues/known-issue-dataflow-on-premium",
+            "redirect_document_id": false
+        }                                                                                                                                       
   ]           
 }

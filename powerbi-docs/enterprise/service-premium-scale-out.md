@@ -31,7 +31,7 @@ Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. 
 
 Before you enable Power BI Dataset Scale-Out, verify that the following Prerequisites are met.
 
-* Your workspace resides on a Power BI Premium [capacity](service-premium-gen2-what-is.md#capacities-and-skus):
+* Your workspace resides on a Power BI Premium [capacity](service-premium-what-is.md#capacities-and-skus):
     * P SKUs
     * A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
 

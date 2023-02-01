@@ -52,7 +52,7 @@ sections:
           |Power BI reports on-premises     | X        | ✔        |           
           |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
 
-          <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus).
+          <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
           > [!NOTE]
           > Premium Per User (PPU) only supports BYOK when it's enabled across the entire tenant.
@@ -108,7 +108,7 @@ sections:
           Considerations and limitations
         answer: |
           Considerations when working with Premium Per User licenses.
-          * Premium Per User is the lowest entry-point for Power BI Premium features. It's built upon the Premium platform with built-in mechanisms ensuring that PPU users can use the platform’s ability to scale. PPU is designed to support enterprise workloads including Power BI items with size limits equivalent to that of a P3. For datasets, the 100-GB limit is documented in the [Capacities and SKUs](service-premium-gen2-what-is.md#capacities-and-skus) table.
+          * Premium Per User is the lowest entry-point for Power BI Premium features. It's built upon the Premium platform with built-in mechanisms ensuring that PPU users can use the platform’s ability to scale. PPU is designed to support enterprise workloads including Power BI items with size limits equivalent to that of a P3. For datasets, the 100-GB limit is documented in the [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus) table.
 
           * Your entire PPU tenant has the same 100-TB storage limit that is applied to a Premium capacity.
 
@@ -133,7 +133,7 @@ additionalContent: |
  ## Next steps
 
  >[!div class="nextstepaction"]
- >[What is Power BI Premium?](service-premium-gen2-what-is.md)
+ >[What is Power BI Premium?](service-premium-what-is.md)
 
  >[!div class="nextstepaction"]
  >[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)

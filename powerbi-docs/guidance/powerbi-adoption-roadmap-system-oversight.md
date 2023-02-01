@@ -200,7 +200,7 @@ When becoming acquainted with Power BI, many system administrators assume it's a
 
 Power BI Premium can play a significant role in your BI strategy. Some top reasons to invest in Premium include:
 
-- [Unlimited content distribution](/power-bi/enterprise/service-premium-gen2-what-is#unlimited-content-sharing) to large numbers of read-only (content consumption with a free Power BI license is available in Premium capacity only, not PPU).
+- [Unlimited content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only (content consumption with a free Power BI license is available in Premium capacity only, not PPU).
 - [Deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview) to manage the publication of content to development, test, and production workspaces. They're highly recommended for critical content to improve release stability.
 - [Paginated reports](/power-bi/paginated-reports/paginated-reports-report-builder-power-bi) to deliver highly formatted, pixel-perfect reports. This report type allows content creators to meet other types of information delivery requirements.
 - [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools), which is an industry standard protocol for managing and publishing a dataset, or querying the dataset from any XMLA-compliant tool.
@@ -208,7 +208,7 @@ Power BI Premium can play a significant role in your BI strategy. Some top reaso
 - More frequent [data refreshes](/power-bi/connect-data/refresh-data#power-bi-refresh-types).
 - Storage of data in a specific geographic area ([multi-geo](/power-bi/admin/service-admin-premium-multi-geo) is available by capacity only).
 
-This list isn't all-inclusive. For a complete list of Premium features, see [Power BI Premium FAQ](/power-bi/enterprise/service-premium-gen2-faq).
+This list isn't all-inclusive. For a complete list of Premium features, see [Power BI Premium FAQ](/power-bi/enterprise/service-premium-faq).
 
 #### Managing Premium capacity
 
@@ -220,14 +220,14 @@ Overseeing the health of Power BI Premium capacity is an essential ongoing activ
 Suggestions for managing Premium capacity:
 
 - Create a specific set of criteria for content that will be published to Premium capacity. It's especially relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity isn't well-managed. For a list of items that may be included in the best practices review (such as reasonable dataset size and efficient calculations), see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) article.
-- Regularly use the [Premium monitoring app](/power-bi/enterprise/service-premium-gen2-metrics-app) to understand resource utilization and patterns for the Premium capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
+- Regularly use the [Premium monitoring app](/power-bi/enterprise/service-premium-metrics-app) to understand resource utilization and patterns for the Premium capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
 - Configure the [tenant setting](/power-bi/support/service-interruption-notifications#enable-notifications) so Power BI notifies you if the [Premium capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or an outage or incident occurs.
 
 #### Autoscale
 
 [Autoscale](/power-bi/enterprise/service-premium-auto-scale) is a capability of [Power BI Premium Gen 2](/power-bi/enterprise/service-premium-concepts). It's intended to handle occasional or unexpected bursts in Premium usage levels. Autoscale can respond to these bursts by automatically increasing CPU resources to support the increased workload.
 
-Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity isn't well-managed, autoscale may trigger more often than expected. In this case, the [Premium monitoring app](/power-bi/enterprise/service-premium-gen2-metrics-app) can help you to determine underlying issues and do capacity planning.
+Automated scaling up reduces the risk of performance and user experience challenges in exchange for a financial impact. If the Premium capacity isn't well-managed, autoscale may trigger more often than expected. In this case, the [Premium monitoring app](/power-bi/enterprise/service-premium-metrics-app) can help you to determine underlying issues and do capacity planning.
 
 #### Decentralized Premium capacity management
 
@@ -251,7 +251,7 @@ The previous example has several advantages.
 
 However, the previous example has disadvantages, too.
 
-- The [limits per capacity](/power-bi/enterprise/service-premium-gen2-what-is#capacity-nodes) are lower. The maximum memory size allowed for datasets isn't the entire P3 capacity node size. Rather, it's the assigned capacity size where the dataset is hosted.
+- The [limits per capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes) are lower. The maximum memory size allowed for datasets isn't the entire P3 capacity node size. Rather, it's the assigned capacity size where the dataset is hosted.
 - It's more likely one of the smaller capacities will need to be scaled up at some point in time.
 - There are more capacities to manage in the Power BI tenant.
 
@@ -355,8 +355,8 @@ Consider disabling trials only when:
 Managing and optimizing the cost of cloud services, like Power BI, is an important activity. Here are several activities you may want to consider.
 
 - Analyze who is using—and, more to the point, not using—their allocated Power BI licenses and make necessary adjustments. Power BI usage is analyzed using the [activity log](/power-bi/admin/service-admin-auditing).
-- Analyze the cost effectiveness of [Premium capacity](/power-bi/enterprise/service-premium-gen2-what-is) or [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-). In addition to the [additional features](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers. Unlimited content distribution is only available with Premium capacity, not PPU licensing.
-- Carefully [monitor and manage Premium capacity](/power-bi/enterprise/service-premium-gen2-metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](/power-bi/enterprise/service-premium-gen2-what-is#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
+- Analyze the cost effectiveness of [Premium capacity](/power-bi/enterprise/service-premium-what-is) or [Premium Per User](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-). In addition to the [additional features](/power-bi/enterprise/service-premium-per-user-faq#using-premium-per-user--ppu-), perform a cost/benefit analysis to determine whether Premium licensing is more cost-effective when there are a large number of consumers. Unlimited content distribution is only available with Premium capacity, not PPU licensing.
+- Carefully [monitor and manage Premium capacity](/power-bi/enterprise/service-premium-metrics-app). Understanding usage patterns over time will allow you to predict when to purchase [more capacity](/power-bi/enterprise/service-premium-what-is#capacity-nodes). For example, you may choose to scale up a single capacity from a P1 to P2, or scale out from one P1 capacity to two P1 capacities.
 - If there are occasional spikes in the level of usage, use of [autoscale](/power-bi/enterprise/service-premium-auto-scale) with [Power BI Premium Gen 2](/power-bi/enterprise/service-premium-concepts) is recommended to ensure the user experience isn't interrupted. Autoscale will scale up capacity resources for 24 hours, then scale them back down to normal levels (if sustained activity isn't present). Manage autoscale cost by constraining the maximum number of v-cores, and/or with spending limits set in Azure (because autoscale is supported by the Azure Power BI Embedded service). Due to the pricing model, autoscale is best suited to handle occasional unplanned increases in usage.
 - For Azure data sources, co-locate them in the same region as your Power BI tenant whenever possible. It will avoid incurring [Azure egress charges](https://azure.microsoft.com/pricing/details/bandwidth/). Data egress charges are minimal, but at scale can add up to be considerable unplanned costs.
 
@@ -410,7 +410,7 @@ A wealth of metadata is available for understanding what's happening within your
 
 There are also various [REST APIs](/rest/api/power-bi/) that provide additional information about workspaces, apps, datasets, and more. Of particular interest to administrators are the [admin APIs](/rest/api/power-bi/admin). These APIs provide a means to extract metadata for the entire tenant. The [Power BI Management Module](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true) is a set of PowerShell commands that make it easier to obtain metadata rather than dealing directly with the APIs. However, substantially more information is available directly from the APIs.
 
-Long-term [usage and performance insights](https://powerbi.microsoft.com/blog/announcing-long-term-usage-and-performance-insights-public-preview/) are also available for workspaces backed by [Premium capacity](/power-bi/enterprise/service-premium-gen2-what-is). Administrators can analyze dataset activity, performance, and behavior. This capability is integrated with [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+Long-term [usage and performance insights](https://powerbi.microsoft.com/blog/announcing-long-term-usage-and-performance-insights-public-preview/) are also available for workspaces backed by [Premium capacity](/power-bi/enterprise/service-premium-what-is). Administrators can analyze dataset activity, performance, and behavior. This capability is integrated with [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ### Auditing
 
