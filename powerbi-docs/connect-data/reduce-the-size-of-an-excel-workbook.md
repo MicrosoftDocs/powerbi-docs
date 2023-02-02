@@ -41,7 +41,7 @@ If you import data into Excel from the Power Query Editor or the Excel Data tab,
 
 When you import data into Excel, follow these tips:
 
-* **In Power Query Editor**: Clear the **Load to worksheet** box under **File** > **Options and settings** > **Query Options**.
+* **In Power Query Editor**: Clear the **Load to worksheet** box under **File > Options and settings > Query Options**.
 
   :::image type="content" source="./media/reduce-the-size-of-an-excel-workbook/load-to-worksheet.png" alt-text="Screenshot that shows the Load to worksheet option.":::
   
