@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
   
  To add a subreport to a report, you must first create the report that will act as the subreport. For more information on creating the subreport, see [Subreports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/subreports-report-builder-and-ssrs).  
     
-### To add a subreport  
+## Add a subreport  
   
 1.  On the **Insert** tab, click **Subreport**.  
   
@@ -37,7 +37,7 @@ ms.reviewer: saurkumar
   
 7.  Select **OK**.
   
-### To specify parameters to pass to a subreport  
+## Specify parameters to pass to a subreport  
   
 1.  In Design view, right-click the subreport and then click **Subreport Properties**.  
   
