@@ -47,7 +47,7 @@ Even if you don't have access to a Reporting Services web portal, you can still 
 You can view on-premises Power BI reports, Reporting Services mobile reports, and KPIs in the Power BI mobile apps.
 
 >[!NOTE]
-> To be able to connect to Report Server from your mobile app, you must have access to Report Server’s home folder. Contact the Report Server administrator if you don’t have such access.
+> To connect to Report Server from your mobile app, you must have access to Report Server’s home folder. Contact the Report Server administrator if you don’t have such access.
 
 1. On your mobile device, open the Power BI app.
 2. If you haven't signed in to Power BI yet, tap **Report server**.
@@ -83,7 +83,7 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 
 ### Connect to an on-premises report server in iOS or Android
 
-If you're viewing Power BI in the iOS or Android mobile app, your IT admin may have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server.
+If you're viewing Power BI in the iOS or Android mobile app, your IT admin might have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server.
 
 1. You see a message that your mobile app is configured with a report server. Tap **Sign in**.
 
@@ -108,7 +108,7 @@ Power BI reports, Reporting Services mobile reports, and KPIs are displayed in t
   > [!NOTE]
   > Drill down and up is currently not enabled in Power BI reports on a Power BI Report Server.
   
-  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png" alt-text="Screenshot of a Report Server report.":::
+  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png" alt-text="Screenshot of a Report Server report in the Power BI mobile app.":::
 
 * In Power BI Desktop, report owners can [optimize a report](../../create-reports/power-bi-create-mobile-optimized-report-about.md) for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, :::image type="icon" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png":::, and layout.
   
@@ -116,19 +116,19 @@ Power BI reports, Reporting Services mobile reports, and KPIs are displayed in t
 
 * Tap a KPI to see it in focus mode.
   
-  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png" alt-text="Screenshot of a KPI in focus mode.":::
+  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png" alt-text="Screenshot of a KPI in focus mode in the Power BI mobile app..":::
 
 ## View your favorite KPIs and reports
 
 You can mark KPIs and reports as favorites on the web portal, and then view them in one convenient folder on your mobile device, along with your Power BI favorite dashboards.
 
-* Tap **Favorites** on the navigation bar.
+Tap **Favorites** on the navigation bar.
   
-  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png" alt-text="Screenshot of Favorites icon on the navigation bar.":::
+:::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png" alt-text="Screenshot of Favorites icon on the navigation bar.":::
   
-  Your favorite KPIs and reports from the web portal are all on this page, along with Power BI dashboards in the Power BI service:
+Your favorite KPIs and reports from the web portal are all on this page, along with Power BI dashboards in the Power BI service:
   
-  :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png" alt-text="Screenshot of Power BI reports and dashboard in the Favorites page.":::
+:::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png" alt-text="Screenshot of Power BI reports and dashboard in the Favorites page.":::
 
 ## Remove a connection to a report server
 
@@ -139,4 +139,4 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 ## Next steps
 
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* Questions? [Ask the Power BI Community](https://community.powerbi.com/)
