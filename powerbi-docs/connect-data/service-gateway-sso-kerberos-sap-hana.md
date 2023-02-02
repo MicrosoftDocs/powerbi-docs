@@ -66,7 +66,7 @@ This issue has multiple symptoms.
 
 - When you try to create or refresh a report, you might see the following error message:
 
-   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting TLS/SSL error window." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png:::
+   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting TLS/SSL error window." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png":::
 
 - When you investigate the *Mashup[date]\*.log*, you see the following error message:
 
@@ -134,7 +134,7 @@ When you investigate the same file further, the following (unhelpful) error appe
 
 Capturing Wireshark traces reveals the following error: `KRB5KDC_ERR_BADOPTION`.
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png" alt-text="Screenshot showing a 'No credentials error'." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png:::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png" alt-text="Screenshot showing a 'No credentials error'." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png":::
 
 Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azure.com* file could be found but isn't in the **Services to which this account can present delegated credentials** list on the **Delegation** pane in the Gateway service account.
 
