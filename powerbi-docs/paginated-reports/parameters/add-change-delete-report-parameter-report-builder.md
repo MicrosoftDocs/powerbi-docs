@@ -52,7 +52,7 @@ ms.reviewer: saurkumar
 ## Next steps  
  [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-available-values-for-a-report-parameter.md)   
  [Add, Change, or Delete Default Values for a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-default-values-for-a-report-parameter.md)   
- [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
+ [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs)   
  [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-parameters-report-builder-and-report-designer.md)   
  [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](add-cascading-parameters-report-builder.md)   
  [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)   

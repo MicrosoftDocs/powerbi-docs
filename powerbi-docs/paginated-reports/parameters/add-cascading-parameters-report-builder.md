@@ -40,7 +40,7 @@ ms.reviewer: saurkumar
 6.  Click **Run** (**!**). After you include query parameters and then run the query, report parameters that correspond to the query parameters are automatically created.  
   
     > [!NOTE]  
-    >  The order of query parameters the first time you run a query determines the order that they are created in the report. To change the order, see [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)  
+    >  The order of query parameters the first time you run a query determines the order that they are created in the report. To change the order, see [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs)  
   
 7.  Select **OK**.
   

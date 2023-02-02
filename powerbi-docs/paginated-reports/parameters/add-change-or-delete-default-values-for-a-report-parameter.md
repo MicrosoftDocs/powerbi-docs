@@ -56,7 +56,7 @@ ms.reviewer: saurkumar
  [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](add-cascading-parameters-report-builder.md)   
  [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)   
  [Parameters Collection References &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/built-in-collections-parameters-collection-references-report-builder)   
- [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](change-the-order-of-a-report-parameter-report-builder-and-ssrs.md)   
+ [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs)   
  [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-delete-report-parameter-report-builder.md)  
  [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)  
   
