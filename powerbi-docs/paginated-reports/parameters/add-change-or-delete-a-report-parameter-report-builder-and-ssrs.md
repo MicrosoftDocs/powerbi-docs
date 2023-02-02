@@ -1,6 +1,6 @@
 ---
-title: "Add, change, or delete a Power BI paginated report parameter | Microsoft Docs"
-description: Choose report data, connect related reports, and vary the report presentation with the addition of report parameters in a paginated report in Power BI Report Builder.
+title: "Add or modify Power BI paginated report parameters | Microsoft Docs"
+description: In this article, you learn how to add, change, or delete Power BI paginated report parameters. Choose report data, connect related reports, and vary the report presentation with the addition of report parameters in a paginated report in Power BI Report Builder.
 ms.date: 01/23/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,13 +11,13 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Add, change, or delete a Power BI paginated report parameter (Power BI Report Builder)
+# Add or modify Power BI paginated report parameters (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  A Power BI paginated report parameter provides a way to choose report data, connect related reports together, and vary the report presentation. You can provide a default value and a list of available values, and the user can change the selection.  
+  A Power BI paginated report parameter provides a way to choose report data, connect related reports together, and vary the report presentation. You can provide a default value and a list of available values, and the user can change the selection. In this article, you learn how to add, change, or delete Power BI paginated report parameters.
     
-### To add or edit a report parameter  
+## Add or edit a report parameter  
   
 1.  In Power BI Report Builder, in the **Report Data** pane, right-click the **Parameters** node and click **Add Parameter**. The **Report Parameter Properties** dialog box opens.  
   
@@ -43,7 +43,7 @@ ms.reviewer: saurkumar
   
 9. Select **OK**.
   
-### To delete a report parameter  
+## Delete a report parameter  
   
 1.  In the **Report Data** pane, expand the **Parameters** node.  
   
