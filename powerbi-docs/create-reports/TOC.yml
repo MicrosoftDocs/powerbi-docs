@@ -524,8 +524,6 @@
         href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
       - name: Add or modify default values for parameters
         href: ../paginated-reports/parameters/add-change-or-delete-default-values-for-a-report-parameter.md
-      - name: Add a multi-value parameter
-        href: ../paginated-reports/parameters/add-a-multi-value-parameter-to-a-report.md
       - name: Add a subreport and parameters
         href: ../paginated-reports/parameters/add-subreport-parameters-report-builder.md
       - name: Add cascading parameters
