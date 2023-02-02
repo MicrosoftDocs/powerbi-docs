@@ -1,6 +1,6 @@
 ---
-title: "Add, change, or delete available values for a Power BI paginated report parameter | Microsoft Docs"
-description: Customize the list of choices a user can make in a paginated report for a parameter in Report Builder by specifying a list of available values to display to the user.
+title: "Add or modify available values for a Power BI paginated report parameter | Microsoft Docs"
+description: In this article you learn to add, change, or delete available values for a Power BI paginated report parameter. Customize the list of choices a user can make in a paginated report for a parameter in Report Builder by specifying a list of available values to display to the user.
 ms.date: 01/23/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,17 +11,17 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Add, change, or delete available values for a Power BI paginated report parameter (Power BI Report Builder)
+# Add or modify available values for a Power BI paginated report parameter (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  After you create a Power BI paginated report parameter, you can specify a list of available values to display to the user. An available values list limits the choices a user can make to only valid values for the parameter.  
+  After you create a Power BI paginated report parameter, you can specify a list of available values to display to the user. An available values list limits the choices a user can make to only valid values for the parameter. In this article you learn to add, change, or delete available values for a Power BI paginated report parameter. 
   
  Available values appear in a drop-down list next to the report parameter on the toolbar when the report runs. Report parameters can represent one value or multiple values. For multiple values, the top of list begins with a **Select All** feature so the user can select or clear all values with a single click.  
   
  You can provide a static list of values or a list from a report dataset. You can optionally provide a friendly name for values by specifying a label field. For example, for a parameter based on a `ProductID` field, you can display the `ProductName` field in the parameter label. When the report runs, the user can choose from the product names, but the actual chosen value is the corresponding `ProductID`.  
     
-### To add or change the available values for a report parameter  
+## Add or change the available values for a report parameter  
   
 1.  In the Report Data pane, expand the Parameters node. Right-click the parameter and click **Parameter Properties**. The **Report Parameter Properties** dialog box opens.  
   
@@ -51,7 +51,7 @@ ms.reviewer: saurkumar
   
      When you preview the report, you see a drop-down list of available values for the parameter.  
   
-### To remove the available values for a report parameter  
+## Remove the available values for a report parameter  
   
 1.  In the Report Data pane, expand the Parameters node. Right-click the parameter and click **Parameter Properties**. The **Report Parameters** dialog box opens.  
   
