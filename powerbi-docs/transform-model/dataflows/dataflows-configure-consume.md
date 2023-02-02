@@ -1,49 +1,49 @@
 ---
 title: Configure and consume a dataflow
-description: Learn how to set up a dataflow in Power BI and consume that dataflow in Power BI Desktop.
+description: Learn how to set up a dataflow in the Power BI service and consume that dataflow in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 09/23/2022
+ms.date: 02/02/2023
 LocalizationGroup: Data from files
 ---
 # Configure and consume a dataflow
 
-With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a dataset inside Power BI Desktop, or referenced as a linked or computed table.
+With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a dataset in Power BI Desktop, or referenced as a linked or computed table.
 
 ## Configure a dataflow
 
-To configure the refresh of a dataflow, select the **More** menu (the ellipsis) and choose **Settings**.
+To configure the refresh of a dataflow, select **More options** (the ellipsis) and choose **Settings**.
 
-:::image type="content" source="media/dataflows-configure-consume/dataflow-settings.png" alt-text="Screenshot of the drop-down settings of a Power BI dataflow.":::
+:::image type="content" source="media/dataflows-configure-consume/dataflow-settings.png" alt-text="Screenshot of the dropdown settings of a Power BI dataflow.":::
 
 The **Settings** options provide many options for your dataflow, as the following sections describe.
 
-:::image type="content" source="media/dataflows-configure-consume/dataflow-settings-detailed.png" alt-text="Screenshot of the Settings page for a dataflow after selecting Settings in the dataflow drop-down.":::
+:::image type="content" source="media/dataflows-configure-consume/dataflow-settings-detailed.png" alt-text="Screenshot of the Settings page for a dataflow after selecting Settings in the dataflow dropdown.":::
 
 * **Take ownership:** If you're not the owner of the dataflow, many of these settings are disabled. To take ownership of the dataflow, select **Take over** to take control. You're prompted to provide credentials to ensure you have the necessary access level.
 
 * **Gateway Connection:** In this section, you can choose whether the dataflow uses a gateway, and select which gateway is used.
 
-* **Data Source Credentials:** In this section you choose which credentials are being used, and can change how you authenticate to the data source.
+* **Data source credentials:** In this section you choose which credentials are being used, and can change how you authenticate to the data source.
 
-* **Sensitivity Label:** Here you can define the sensitivity of the data in the dataflow. To learn more about sensitivity labels, see [how to apply sensitivity labels in Power BI](../../enterprise/service-security-apply-data-sensitivity-labels.md).
+* **Sensitivity label:** Here you can define the sensitivity of the data in the dataflow. To learn more about sensitivity labels, see [How to apply sensitivity labels in Power BI](../../enterprise/service-security-apply-data-sensitivity-labels.md).
 
-* **Scheduled Refresh:** Here you can define the times of day the selected dataflow refreshes. A dataflow can be refreshed at the same frequency as a dataset.
+* **Scheduled refresh:** Here you can define the times of day the selected dataflow refreshes. A dataflow can be refreshed at the same frequency as a dataset.
 
-* **Enhanced Compute Engine settings:** Here you can define whether the dataflow is stored inside the compute engine. The compute engine allows subsequent dataflows, which reference this dataflow, to perform merges and joins and other transformations faster than you would otherwise. It also allows DirectQuery to be performed over the dataflow. Selecting **On** ensures the dataflow is always supported in DirectQuery mode, and any references benefit from the engine. Selecting **Optimized** means the engine is only used if there's a reference to this dataflow. Selecting **Off** disables the compute engine and DirectQuery capability for this dataflow.
+* **Enhanced compute engine settings:** Here you can define whether the dataflow is stored in the compute engine. The compute engine allows subsequent dataflows, which reference this dataflow, to perform merges and joins and other transformations faster than you would otherwise. It also allows DirectQuery to be performed over the dataflow. Selecting **On** ensures the dataflow is always supported in DirectQuery mode, and any references benefit from the engine. Selecting **Optimized** means the engine is only used if there's a reference to this dataflow. Selecting **Off** disables the compute engine and DirectQuery capability for this dataflow.
 
-* **Endorsements:** You can define whether the dataflow is certified or promoted.
+* **Endorsement:** You can define whether the dataflow is certified or promoted.
 
 > [!NOTE]
-> Users can create a dataflow in a Premium workspace, users with a Pro license, and users with a Premium Per User (PPU) license.
+> Users with a Pro license or a Premium Per User (PPU) can create a dataflow in a Premium workspace.
 
 ## Refresh a dataflow
 
-Dataflows act as building blocks on top of one another. Suppose you have a dataflow called *Raw Data* and a linked table called *Transformed Data*, which contains a linked table to the *Raw Data* dataflow. When the schedule refresh for the*Raw Data* dataflow triggers, it will trigger any dataflow that references it upon completion. This functionality creates a chain effect of refreshes, allowing you to avoid having to schedule dataflows manually. There are a few nuances to be aware of when dealing with linked tables refreshes:
+Dataflows act as building blocks on top of one another. Suppose you have a dataflow called *Raw Data* and a linked table called *Transformed Data*, which contains a linked table to the *Raw Data* dataflow. When the schedule refresh for the *Raw Data* dataflow triggers, it will trigger any dataflow that references it upon completion. This functionality creates a chain effect of refreshes, allowing you to avoid having to schedule dataflows manually. There are a few nuances to be aware of when dealing with linked tables refreshes:
 
 * A linked table will be triggered by a refresh only if it exists in the same workspace.
 
@@ -52,18 +52,18 @@ Dataflows act as building blocks on top of one another. Suppose you have a dataf
 * Only referenced tables are refreshed when triggered by a source refresh completion. To schedule all the tables, you should set a schedule refresh on the linked table as well. Avoid setting a refresh schedule on linked dataflows to avoid double refresh.
 
 **Cancel Refresh**
-Dataflows support the ability to cancel a refresh, unlike datasets. If a refresh is running a long time, you can select the dataflow options (the ellipses next to the dataflow) and then select **Cancel refresh**.
+Dataflows support the ability to cancel a refresh, unlike datasets. If a refresh is running for a long time, you can select **More options** (the ellipses next to the dataflow) and then select **Cancel refresh**.
 
 **Incremental Refresh (Premium only)**
-Dataflows can be also set to refresh incrementally. To do so, select the dataflow you wish to set up for incremental refresh, and then choose the incremental refresh icon.
+Dataflows can be also be set to refresh incrementally. To do so, select the dataflow you wish to set up for incremental refresh, and then choose the **Incremental Refresh** icon.
 
 :::image type="content" source="media/dataflows-configure-consume/dataflow-created-entity.png" alt-text="Screenshot highlighting the Incremental Refresh Action for a table.":::
 
-Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh) article.
+Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh).
 
 There are some circumstances under which you shouldn't set incremental refresh:
 
-* Linked tables shouldn't use incremental refresh if they reference a dataflow. Dataflows don't support query folding (even if the table is Direct Query enabled).
+* Linked tables shouldn't use incremental refresh if they reference a dataflow. Dataflows don't support query folding (even if the table is DirectQuery enabled).
 
 * Datasets referencing dataflows shouldn't use incremental refresh. Refreshes to dataflows are  generally performant, so incremental refreshes shouldn't be necessary. If refreshes take too long, consider using the compute engine, or DirectQuery mode.
 
@@ -78,12 +78,12 @@ A dataflow can be consumed in the following three ways:
 * Create a connection from external tools that can read from the CDM (Common Data Model) format.
 
 **Consume from Power BI Desktop**
-To consume a dataflow, run Power BI Desktop and select the **Power BI dataflows connector** in the **Get Data** dialog.
+To consume a dataflow, open Power BI Desktop and select **Power BI dataflows** in the **Get Data** dropdown.
 
 > [!NOTE]
 > The Power BI dataflows connector uses a different set of credentials than the current logged in user. This is by design to support multi-tenant users.
 
-:::image type="content" source="media/dataflows-configure-consume/dataflow-connector.png" alt-text="Screenshot of Power BI Desktop highlighting the Power BI dataflows option in the Get data drop-down.":::
+:::image type="content" source="media/dataflows-configure-consume/dataflow-connector.png" alt-text="Screenshot of Power BI Desktop highlighting the Power BI dataflows option in the Get data dropdown.":::
 
 Select the dataflow and tables to which you want to connect.
 
