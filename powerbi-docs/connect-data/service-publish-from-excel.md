@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/31/2023
+ms.date: 02/02/2023
 LocalizationGroup: Data from files
 ---
 # Publish to Power BI from Microsoft Excel
@@ -67,7 +67,7 @@ When you choose **Upload**, no dataset is created in Power BI. Your workbook app
 
 Choose the **Upload** option if you only have data in worksheets, or you have PivotTables and Charts you want to see in Power BI.
 
-Using **Upload** from **Publish to Power BI** in Excel is a similar experience to **Get Data** > **File** > **OneDrive for work or school** > **Connect, Manage and View Excel in Power BI** from Power BI in your browser.
+Using **Upload** from **Publish to Power BI** in Excel is a similar experience to using **Upload** > **OneDrive for Business** > **Upload** in Power BI, and then opening the file in Excel Online from Power BI in your browser.
 
 #### Export workbook data to Power BI
 
@@ -75,7 +75,7 @@ When you choose the **Export** option, any supported data in tables and a data m
 
 Choose the **Export** option if you used the **Get & Transform data** or **Power Pivot** features to load data into a data model.
 
-Using **Export** is similar to using **Get Data** > **File** > **OneDrive for work or school** > **Export Excel data into Power BI** from Power BI in your browser.
+Using **Export** is similar to using **New** > **Upload a file** > **Excel** > **Import** from Power BI in your browser.
 
 ### Publish
 
