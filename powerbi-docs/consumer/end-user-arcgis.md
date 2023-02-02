@@ -187,12 +187,12 @@ If the map has a reference layer and the report designer has added tooltips, you
 
 Hover your pointer over basemap location symbols to display symbol details in a tooltip.
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-abingdon.png" alt-text="Screenshot showing the symbol tooltip.":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-abingdon.png" alt-text="Screenshot of an ArcGIS map with an open symbol tooltip.":::
 
 > [!TIP]
 > You may have to zoom in to select a specific location. If there are overlapping locations, Power BI will present you with more than one tooltip at a time. Select the arrows to move between the tooltips.
 
-:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-multiple-tooltips.png" alt-text="Screenshot showing more than one tooltip at a time.":::
+:::image type="content" source="media/end-user-arcgis/power-bi-arcgis-multiple-tooltips.png" alt-text="Screenshot of a tooltip highlighting the arrows to use when multiple tooltips are available.":::
 
 ## Use infographics
 
