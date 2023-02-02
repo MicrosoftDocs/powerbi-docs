@@ -146,7 +146,7 @@ ms.reviewer: saurkumar
 4.  Click **View Report**. The report updates the display based on the parameters you have chosen.  
   
 ## Next steps  
- [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md)   
+ [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](add-change-delete-report-parameter-report-builder.md)  
  [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-parameters-report-builder-and-report-designer.md)   
  [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)
  [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)   

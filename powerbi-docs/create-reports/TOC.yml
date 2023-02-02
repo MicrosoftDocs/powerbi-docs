@@ -482,10 +482,6 @@
       href: service-dashboard-themes.md
   - name: Paginated reports
     items: 
-    - name: Visualizations in paginated reports
-      items: 
-      - name: Display percentage values on pie charts
-        href: ../paginated-reports/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs.md
     - names: Data sources and datasets
       items: 
       - name: Understand paginated report data
@@ -523,7 +519,7 @@
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/report-builder-url-pass-parameters.md
       - name: Add or modify parameters
-        href: ../paginated-reports/parameters/add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md
+        href: ../paginated-reports/parameters/add-change-delete-report-parameter-report-builder.md
       - name: Add or modify values for parameters
         href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
       - name: Add or modify default values for parameters
@@ -531,9 +527,9 @@
       - name: Add a multi-value parameter
         href: ../paginated-reports/parameters/add-a-multi-value-parameter-to-a-report.md
       - name: Add a subreport and parameters
-        href: ../paginated-reports/parameters/add-a-subreport-and-parameters-report-builder-and-ssrs.md
+        href: ../paginated-reports/parameters/add-subreport-parameters-report-builder.md
       - name: Add cascading parameters
-        href: ../paginated-reports/parameters/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md
+        href: ../paginated-reports/parameters/add-cascading-parameters-report-builder.md
       - name: Define parameters in DAX for Analysis Services data source
         href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
     - name: Expression examples

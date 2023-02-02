@@ -111,7 +111,7 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
 - Select a value from a drop-down list for one parameter, which determines the values that are available in the drop-down list for another parameter. These are cascading parameters. Cascading parameters enables you to successively filter parameter values from thousands of values to a manageable number.  
   
-     For more information, see [Add Cascading Parameters to a Report &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md).  
+     For more information, see [Add Cascading Parameters to a Report in Power BI Report Builder](add-cascading-parameters-report-builder.md).  
   
 - Run the report without having to first select a parameter value because a default value has been created for the parameter.  
   
