@@ -1,6 +1,6 @@
 ---
 title: Configure and consume a dataflow
-description: Learn how to set up a dataflow in Power BI and and consume that dataflow in Power BI Desktop.
+description: Learn how to set up a dataflow in Power BI and consume that dataflow in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -43,7 +43,7 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 ## Refresh a dataflow
 
-Dataflows act as building blocks on top of one another. Suppose you have a dataflow called *Raw Data* and a linked table called *Transformed Data, which contains a linked table to the*Raw Data*dataflow. When the schedule refresh for the dataflow*Raw Data* triggers, it will trigger any dataflow that references it upon completion. This functionality creates a chain effect of refreshes, allowing you to avoid having to schedule dataflows manually. There are a few nuances to be aware of when dealing with linked tables refreshes:
+Dataflows act as building blocks on top of one another. Suppose you have a dataflow called *Raw Data* and a linked table called *Transformed Data*, which contains a linked table to the *Raw Data* dataflow. When the schedule refresh for the*Raw Data* dataflow triggers, it will trigger any dataflow that references it upon completion. This functionality creates a chain effect of refreshes, allowing you to avoid having to schedule dataflows manually. There are a few nuances to be aware of when dealing with linked tables refreshes:
 
 * A linked table will be triggered by a refresh only if it exists in the same workspace.
 
