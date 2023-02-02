@@ -71,7 +71,7 @@ Using **Upload** from **Publish to Power BI** in Excel is a similar experience t
 
 #### Export workbook data to Power BI
 
-When you choose the **Export** option, supported data in tables and the data model export into a new Power BI dataset. You can continue editing your workbook. When you save your changes, they synchronize with the dataset in Power BI, usually within about an hour. If you need more immediate updates, you can select **Publish** again from Excel to export your changes immediately. Any visualizations in reports and dashboards update too.
+When you choose the **Export** option, any supported data in tables and/or a data model are exported into a new dataset in Power BI. You can continue editing your workbook. When you save your changes, they synchronize with the dataset in Power BI, usually within about an hour. If you need more immediate updates, you can select **Publish** again from Excel to export your changes immediately. Any visualizations in reports and dashboards update too.
 
 Choose the **Export** option if you used the **Get & Transform data** or **Power Pivot** features to load data into a data model.
 
