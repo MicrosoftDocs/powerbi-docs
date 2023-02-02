@@ -24,7 +24,9 @@ In some situations, however, you need to discourage these connections from happe
 1. To discourage DirectQuery connections to a dataset, go to **File > Options and settings > Options > Current File > Published dataset settings**. 
 2. On this page, choose the **Discourage DirectQuery connections** option, and select **OK**.
 
-    ![Screenshot of the Discourage DirectQuery connections setting in Power BI Desktop Options menu.](media/desktop-discourage-directquery-connections-to-dataset/desktop-discourage-directquery-connections-to-dataset.png)
+
+    :::image type="content" source="media/desktop-discourage-directquery-connections-to-dataset/desktop-discourage-directquery-connections-to-dataset.png" border="true" alt-text="Screenshot of the Discourage DirectQuery connections setting in Power BI Desktop Options menu.":::
+
 
 ## Use third-party tools to discourage DirectQuery connections to a dataset
 Using third-party tools, you can discourage DirectQuery connections to a dataset by setting the `DiscourageCompositeModels` property on a model to `True`.
