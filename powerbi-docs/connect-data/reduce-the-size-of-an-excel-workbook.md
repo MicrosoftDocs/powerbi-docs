@@ -54,7 +54,7 @@ When you import data into Excel, follow these tips:
 
   1. Select the connection, and then select **Open**. Select **Only Create Connection**.
 
-     :::image type="content" source="./media/reduce-the-size-of-an-excel-workbook/only-create-connection.png" alt-text="Screenshot that shows the Existing Connections button.":::
+     :::image type="content" source="./media/reduce-the-size-of-an-excel-workbook/only-create-connection.png" alt-text="Screenshot that shows the Only Create Connection button.":::
   
   1. Delete the original table or tables created during the initial import.
   
