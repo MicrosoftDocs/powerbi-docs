@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
   
  Order is important for cascading parameters because the dataset query for a parameter later in the list includes a reference to each parameter that is earlier in the list. At run time, the order of the parameters in the Report Data pane determines the order in which the parameter queries appear in the report, and therefore, the order in which a user chooses each successive parameter value.  
   
-## To create the main dataset with a query that includes multiple related parameters  
+## Create the main dataset with a query with multiple related parameters  
   
 1.  In the Report Data pane, right-click a data source, and then click **Add Dataset**.  
   
@@ -46,7 +46,7 @@ ms.reviewer: saurkumar
   
  Next, you will create a dataset that provides the values for the independent parameter.  
   
-## To create a dataset to provide values for an independent parameter  
+## Create a dataset to provide values for an independent parameter  
   
 1.  In the Report Data pane, right-click a data source, and then click **Add Dataset**.  
   
@@ -70,7 +70,7 @@ ms.reviewer: saurkumar
   
  Next, you will set the properties of the first parameter to use this dataset to populate its available values at run-time.  
   
-## To set available values for a report parameter  
+## Set available values for a report parameter  
   
 1.  In the Report Data pane, in the Parameters folder, right-click the first parameter, and then click **Parameter Properties**.  
   
@@ -90,7 +90,7 @@ ms.reviewer: saurkumar
   
  Next, you will create a dataset that provides the values for a dependent parameter.  
   
-## To create a dataset to provide values for a dependent parameter  
+## Create a dataset to provide values for a dependent parameter  
   
 1.  In the Report Data pane, right-click a data source, and then click **Add Dataset**.  
   
@@ -113,7 +113,7 @@ ms.reviewer: saurkumar
   
  Next, you will set the properties of the second parameter to use this dataset to populate its available values at run time.  
   
-## To set available values for the second parameter  
+## Set available values for the second parameter  
   
 1.  In the Report Data pane, in the Parameters folder, right-click the first parameter, and then click **Parameter Properties**.  
   
@@ -131,7 +131,7 @@ ms.reviewer: saurkumar
   
 8.  Select **OK**.
   
-## To test the cascading parameters  
+## Test the cascading parameters  
   
 1.  Click **Run**.  
   
