@@ -45,7 +45,7 @@ Excel supports publishing local Excel files. Files don't need to be saved to One
 > [!IMPORTANT]
 > You can publish local files only if you're using Excel 2016 or later with a Microsoft 365 subscription. Excel 2016 standalone installations can publish to Power BI, but only when the workbook is saved to OneDrive for work or school or to SharePoint Online.
 
-Once published, the workbook content you publish imports into Power BI, separate from the local file. If you want to update the file in Power BI, you must update the local file and publish the updated version again, or you can refresh the data by configuring scheduled refresh on the workbook or dataset in Power BI.
+Once published, the workbook content you publish imports into Power BI, separate from the local file. If you want to update the file in Power BI, you must update the local file and publish the updated version again. Or, you can refresh the data by configuring scheduled refresh on the workbook or dataset in Power BI.
 
 ### Publish from a standalone Excel installation
 
@@ -71,7 +71,7 @@ Using **Upload** from **Publish to Power BI** in Excel is a similar experience t
 
 #### Export workbook data to Power BI
 
-When you choose the **Export** option, any supported data in tables and a data model export into a new dataset in Power BI. You can continue editing your workbook. When you save your changes, they synchronize with the dataset in Power BI, usually within about an hour. If you need more immediate updates, you can select **Publish** again from Excel to export your changes immediately. Any visualizations in reports and dashboards update too.
+When you choose the **Export** option, supported data in tables and the data model export into a new Power BI dataset. You can continue editing your workbook. When you save your changes, they synchronize with the dataset in Power BI, usually within about an hour. If you need more immediate updates, you can select **Publish** again from Excel to export your changes immediately. Any visualizations in reports and dashboards update too.
 
 Choose the **Export** option if you used the **Get & Transform data** or **Power Pivot** features to load data into a data model.
 
