@@ -14,12 +14,12 @@ LocalizationGroup: Data refresh
 
 Power BI supports **Refresh now** and **Schedule refresh** for datasets that are created from imported local Power BI Desktop files. Power BI supports refresh for any of the following data sources that you connect to or load with **Get data** and Power Query Editor.
 
-### Power BI on-premises data gateway (personal mode)
+### Power BI gateway (personal mode)
 
 On-premises data gateway (personal mode) supports refresh for the following data sources:
 
-- All online data sources that show in Power BI Desktop **Get data** and Power Query Editor.
-- All on-premises data sources that show in Power BI Desktop **Get data** and Power Query Editor, except for Hadoop files (HDFS) and Microsoft Exchange.
+- All online data sources that appear in Power BI Desktop **Get data** and Power Query Editor.
+- All on-premises data sources that appear in Power BI Desktop **Get data** and Power Query Editor, except for Hadoop files (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
