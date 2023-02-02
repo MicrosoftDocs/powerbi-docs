@@ -30,7 +30,7 @@ Private endpoints *do not* guarantee that traffic from Power BI to your external
 
 Powered by Azure Private Link, a private endpoint for Power BI is a network interface that connects you privately and securely to the Power BI service.
 
-Private endpoint integration allows platform as a service (PaaS) services to be deployed and accessed privately from a customer's virtual and on-premises networks, while the service is still running outside of the customer’s network. A private endpoint is a single, directional technology that lets clients initiate connections to a given service, but doesn't allow the service to initiate a connection into the customer network. This private endpoint integration pattern provides management isolation, since the service can operate independently of customer network policy configuration. For multi-tenant services, this private endpoint model provides link identifiers to prevent access to other customers' resources hosted within the same service. When you use private endpoints, only a limited set of other PaaS service resources can be accessed from services using the integration.  
+Private endpoint integration allows platform as a service (PaaS) to be deployed and accessed privately from a customer's virtual and on-premises networks, while the service is still running outside of the customer’s network. A private endpoint is a single, directional technology that lets clients initiate connections to a given service, but doesn't allow the service to initiate a connection into the customer network. This private endpoint integration pattern provides management isolation, since the service can operate independently of customer network policy configuration. For multi-tenant services, this private endpoint model provides link identifiers to prevent access to other customers' resources hosted within the same service. When you use private endpoints, only a limited set of other PaaS resources can be accessed from services using the integration.  
 
 The Power BI service implements private endpoints, and not service endpoints.  
 
@@ -65,9 +65,9 @@ To get started, sign in to the [Power BI service](https://app.powerbi.com) as an
 
     :::image type="content" source="media/service-security-private-links/power-bi-admin-portal.png" alt-text="Screenshot of the Admin portal option in the Settings menu.":::
 
-1. Select **Tenant settings** and scroll to  **Advanced Networking**. Toggle the radio button to turn on **Azure Private Link**.
+1. Select **Tenant settings** and scroll to  **Advanced Networking**. Switch the **Azure Private Link** toggle to **Enabled**.
 
-    :::image type="content" source="media/service-security-private-links/service-private-links-01.png" alt-text="Screenshot of the Azure Private Link toggle button under Advanced networking.":::
+    :::image type="content" source="media/service-security-private-links/service-private-links-01.png" alt-text="Screenshot of the Azure Private Link switch under Advanced networking.":::
 
 It takes about 15 minutes to configure a private link for your tenant, which includes configuring a separate FQDN for the tenant in order to communicate privately with Power BI services.
 
@@ -181,7 +181,7 @@ The next step is to create a VM.
     |LICENSING ||
     |I have an eligible Windows 10/11 license | Check the box |
 
-3. Then select **Next: Disks**.
+3. Select **Next: Disks**.
 
 1. In the **Disks** tab, leave the defaults and select **Next: Networking**.
 
@@ -234,7 +234,7 @@ The next step is to create a private endpoint for Power BI.
 
     :::image type="content" source="media/service-security-private-links/service-private-links-07.png" alt-text="Screenshot of the Resource tab in Create a private endpoint.":::
 
-5. Once that information is properly input, select **Next: Configuration** and in the **Create a private endpoint (Preview) - Configuration** and enter or select the following information:
+5. Once that information is properly input, select **Next: Configuration** and in the **Create a private endpoint - Configuration** and enter or select the following information:
 
     |Settings |	Value |
     |-------------------|---------|
@@ -261,14 +261,14 @@ After you create your VM, called **myVM**, connect to it from the internet using
 1. Open the *.rdp* file to start Remote Desktop Connection, then select **Connect**.
 1. Enter the username and password you specified when creating the VM in the previous step.
 1. Select **OK**.
-1. You may receive a certificate warning during the sign-in process. If you receive a certificate warning, select **Yes** or **Continue**.
+1. You might receive a certificate warning during the sign-in process. If you receive a certificate warning, select **Yes** or **Continue**.
 
 ## Access Power BI privately from the VM
 
 The next step is to access Power BI privately, from the virtual machine you created in the previous step, using the following steps: 
 
 1. In the Remote Desktop of myVM, open PowerShell.
-2. Enter nslookup *tenant-object-id-without-hyphens*-api.privatelink.analysis.windows.net.
+2. Enter `nslookup <tenant-object-id-without-hyphens>-api.privatelink.analysis.windows.net`.
 3. You receive a response similar to the following message:
 
     ```
@@ -314,8 +314,8 @@ There are a few considerations to keep in mind while working with private endpoi
 ## Next steps
 
 - [Administering Power BI in your Organization](../admin/service-admin-administering-power-bi-in-your-organization.md)  
-- [Understanding the Power BI admin role](../admin/service-admin-role.md)  
-- [Auditing Power BI in your organization](../admin/service-admin-auditing.md)  
+- [Understanding the Power BI administrator role](../admin/service-admin-role.md)  
+- [Track user activities in Power BI](../admin/service-admin-auditing.md)  
 - [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 The following video shows how to connect a mobile device to Power BI, using private endpoints:
@@ -325,4 +325,4 @@ The following video shows how to connect a mobile device to Power BI, using priv
 
 > [!VIDEO https://www.youtube.com/embed/-3yFtlZBpqs]
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com).
