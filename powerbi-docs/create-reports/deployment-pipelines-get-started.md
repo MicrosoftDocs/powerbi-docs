@@ -21,7 +21,7 @@ You can also complete the [Create and manage a Power BI deployment pipeline](/tr
 >[!NOTE]
 >In a deployment pipeline, one Premium workspace is assigned to each stage. Before you start working with your pipeline in production, review the [capacity requirements](deployment-pipelines-troubleshooting.yml#what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline-) for the pipeline's workspaces.
 
-## Accessing deployment pipelines
+## Prerequisites
 
 You'll be able to access the deployment pipelines feature, if the following conditions are met:
 

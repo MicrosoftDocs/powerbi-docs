@@ -1,0 +1,73 @@
+---
+title: Compare content in different stages before deployment
+description: Learn how to compare the content of the source stage and target stage before deployment with the Power BI Application lifecycle management (ALM) tool
+author: mberdugo
+ms.author: monaberdugo
+ms.topic: how-to
+ms.service: powerbi
+ms.subservice: pbi-deployment-pipeline
+ms.date: 01/31/2023
+---
+
+# Compare content in different deployment stages
+
+Before you deploy content to a different stage, it can be helpful to see the differences between the two stages. The **Change review** icon displays the content of each pipeline and shows you exactly which items are different and where those differences are.
+
+The deployment pipeline home page compares the three deployment stages and indicates if there are any differences. A green circle with a check indicates that the two stages are the same. An orange circle with an "X" indicates that the stages are different.
+
+:::image type="content" source="./media/deployment-pipelines-granular-compare/deployment-pipelines-compare.png" alt-text="Screenshot showing three stages of deployment with a green check between pest and production and an orange X between development and test.":::
+
+## See the differences between paired items
+
+If two stages are different, select **Compare** underneath to see a list of items in each stage.
+
+:::image type="content" source="./media/deployment-pipelines-granular-compare/compare-changes-new.png" alt-text="Screenshot showing a comparison between two stages with one new item and one different item.":::
+
+- Paired items are shown next to each other, even if they have different names.
+- An item that exists in only one of the stages is indicated to be **New**.
+- Paired items that aren't identical are indicated to be **Different**. Differences can be in the settings or schema (or both).
+
+If the items are different, hover over it to see the **change review** icon.
+
+:::image type="content" source="./media/deployment-pipelines-granular-compare/granular-change-icon.png" alt-text="Screenshot showing the  change review icon next to an item.":::
+
+If the only difference between the two items is settings changes, like the name or sensitivity label, the icon is disabled. If there are changes in the schema, you can select it.
+
+## Examine the differences in the item
+
+When you select the **change review** icon, the content of that item is shown as it currently in the source stage and in the target stage.
+
+> [!NOTE]
+> The content that's currently is in the target stage will be overwritten by the content in the source stage.
+
+
+* The up and down arrows jump to the previous or next different line
+* Select the icon to toggle between side by side and inline views
+
+## Considerations and limitations
+
+* You can only compare the content of *text* item types (datasets, dataflows, and pagenated reports)
+* You can only compare changes to the schema content. Settings changes, like file names or sensitivity labels aren't shown.
+
+## Next steps
+
+>[!div class="nextstepaction"]
+>[Introduction to deployment pipelines](deployment-pipelines-overview.md)
+
+>[!div class="nextstepaction"]
+>[Assign a workspace to a pipeline stage](deployment-pipelines-assign.md)
+
+>[!div class="nextstepaction"]
+>[Deployment history](deployment-pipelines-history.md)
+
+>[!div class="nextstepaction"]
+>[Understand the deployment pipelines process](deployment-pipelines-process.md)
+
+>[!div class="nextstepaction"]
+>[Automate your deployment pipeline using APIs and DevOps](deployment-pipelines-automation.md)
+
+>[!div class="nextstepaction"]
+>[Deployment pipelines troubleshooting](deployment-pipelines-troubleshooting.yml)
+
+>[!div class="nextstepaction"]
+>[Deployment pipelines best practices](deployment-pipelines-best-practices.md)

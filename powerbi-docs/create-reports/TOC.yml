@@ -595,7 +595,9 @@
     - name: "Get started"
       href: deployment-pipelines-get-started.md   
     - name: "Assign a workspace"
-      href: deployment-pipelines-assign.md 
+      href: deployment-pipelines-assign.md
+    - name: "Deploy content to a different stage"
+      href: deployment-pipelines-deploy.md
     - name: "Deployment history"
       href: deployment-pipelines-history.md  
     - name: "Create deployment pipeline rules"
