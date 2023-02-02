@@ -55,7 +55,7 @@ Dataflows act as building blocks on top of one another. Suppose you have a dataf
 Dataflows support the ability to cancel a refresh, unlike datasets. If a refresh is running for a long time, you can select **More options** (the ellipses next to the dataflow) and then select **Cancel refresh**.
 
 **Incremental Refresh (Premium only)**
-Dataflows can be also be set to refresh incrementally. To do so, select the dataflow you wish to set up for incremental refresh, and then choose the **Incremental Refresh** icon.
+Dataflows can also be set to refresh incrementally. To do so, select the dataflow you wish to set up for incremental refresh, and then choose the **Incremental Refresh** icon.
 
 :::image type="content" source="media/dataflows-configure-consume/dataflow-created-entity.png" alt-text="Screenshot highlighting the Incremental Refresh Action for a table.":::
 
