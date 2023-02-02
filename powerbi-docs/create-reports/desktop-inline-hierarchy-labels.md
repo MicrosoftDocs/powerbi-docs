@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/01/2023
+ms.date: 02/02/2023
 LocalizationGroup: Create reports
 ---
 # Use inline hierarchy labels in Power BI
@@ -31,7 +31,7 @@ The following image shows a bar chart visual for annual sales. When you right-cl
 > [!NOTE]
 > As an alternative to right-clicking on a bar, you can select the *Expand* button on the top left of the visualization.
 
-  :::image type="content" source="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png" alt-text="Screenshot showing the Expand All button.":::
+  :::image type="content" source="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png" alt-text="Screenshot showing the expand and next level icons.":::
 
 Once **Expand to next level** is selected, the visual expands the date hierarchy from *Year* to *Quarter*, as shown in the following image.
 
@@ -41,7 +41,7 @@ Notice that the *Year* and *Quarter* labels are shown inline together&mdash;this
 
 :::image type="content" source="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-qty-year-quarter-month.png" alt-text="Screenshot showing the visual after Expand All is selected.":::
 
-This is how the built-in *Date* hierarchy, associated with fields that have a *date/time* data type, behaves. Let's head to the next section and see how the new inline hierarchy labels feature is different.
+This is how the built-in *Date* hierarchy, associated with fields that have a *date/time* data type, behaves. Let's head to the next section and see how the inline hierarchy labels feature is different.
 
 ### Use inline hierarchy labels
 
@@ -49,7 +49,7 @@ Now let's look at a different chart by using data that has informal hierarchies.
 
 :::image type="content" source="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand-inline.png" alt-text="Screenshot showing a chart with informal hierarchy in Power BI." lightbox="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand-expanded.png":::
 
-Selecting **Expand to next level** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value&mdash;in this case, **Quantity**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too, by selecting **More options** in the upper right corner (the **...**), then selecting **Sort by ProductName ShipCountry** as shown in the following image:
+Selecting **Expand to next level** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value&mdash;in this case, **Quantity**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too. Select **More options (...)** in the upper right corner, then select **Sort by ProductName ShipCountry** as shown in the following image:
 
 :::image type="content" source="media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png" alt-text="Screenshot showing a chart expanded to the next level with the data sorted by informal hierarchy.":::
 
