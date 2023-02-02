@@ -482,6 +482,22 @@
       href: service-dashboard-themes.md
   - name: Paginated reports
     items: 
+    - name: Visualizations in paginated reports
+      items: 
+      - name: Display percentage values on pie charts
+        href: ../paginated-reports/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs.md
+    - names: Data sources and datasets
+      items: 
+      - name: Understand paginated report data
+        href: ../paginated-reports/report-builder-data.md
+      - name: Supported data sources
+        href: ../paginated-reports/paginated-reports-data-sources.md
+      - name: Support for ODBC data sources
+        href: ../paginated-reports/paginated-reports-odbc-support.md
+      - name: Create an embedded data source
+        href: ../paginated-reports/paginated-reports-embedded-data-source.md
+      - name: Create an embedded dataset
+        href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
@@ -494,20 +510,36 @@
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
-    - name: Planning a report
-      href: ../paginated-reports/report-builder-planning-report.md
-    - name: Understanding paginated report data
-      href: ../paginated-reports/report-builder-data.md
-    - name: Supported data sources
-      href: ../paginated-reports/paginated-reports-data-sources.md
-    - name: Support for ODBC data sources
-      href: ../paginated-reports/paginated-reports-odbc-support.md
+    - name: Tables, matrixes, lists
+      href: ../paginated-reports/report-builder-tables-matrices-lists.md
+    - name: Parameters
+      items:
+      - name: Parameters
+        href: ../paginated-reports/report-builder-parameters.md
+      - name: URL parameters in paginated reports
+        href: ../paginated-reports/report-builder-url-parameters.md
+      - name: Create parameters
+        href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Pass a report parameter in a URL
+        href: ../paginated-reports/report-builder-url-pass-parameters.md
+      - name: Add or modify parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md
+      - name: Add or modify values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
+      - name: Add or modify default values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-default-values-for-a-report-parameter.md
+      - name: Add a multi-value parameter
+        href: ../paginated-reports/parameters/add-a-multi-value-parameter-to-a-report.md
+      - name: Add a subreport and parameters
+        href: ../paginated-reports/parameters/add-a-subreport-and-parameters-report-builder-and-ssrs.md
+      - name: Add cascading parameters
+        href: ../paginated-reports/parameters/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md
+      - name: Define parameters in DAX for Analysis Services data source
+        href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
       href: ../paginated-reports/paginated-reports-pagination.md
-    - name: Previewing reports
-      href: ../paginated-reports/report-builder-previewing-reports.md
     - name: Default system credentials for web proxy
       href: ../paginated-reports/report-builder-web-proxy-authentication.md
     - name: Enter data directly in a paginated report
@@ -516,10 +548,6 @@
       href: ../paginated-reports/paginated-reports-edit-service.md
     - name: Create exportable formatted data tables
       href: ../paginated-reports/paginated-formatted-table.md
-    - name: Create an embedded data source
-      href: ../paginated-reports/paginated-reports-embedded-data-source.md
-    - name: Create an embedded dataset
-      href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
     - name: Create a report with a Power BI shared dataset
       href: ../paginated-reports/report-builder-shared-datasets.md
     - name: Create a paginated report from a Power BI report
@@ -542,6 +570,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Planning a report
+        href: ../paginated-reports/report-builder-planning-report.md
       - name: Add filters to a paginated report
         href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
       - name: Commonly used filters
@@ -552,22 +582,14 @@
         href: ../paginated-reports/paginated-reports-change-log.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Preview reports
+        href: ../paginated-reports/report-builder-previewing-reports.md
       - name: Design tips
         href: ../paginated-reports/report-builder-design-tips.md
       - name: Tables, matrixes, lists
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
       - name: Keyboard shortcuts in Power BI Report Builder
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
-    - name: Parameters
-      items: 
-      - name: Parameters
-        href: ../paginated-reports/report-builder-parameters.md
-      - name: URL parameters in paginated reports
-        href: ../paginated-reports/report-builder-url-parameters.md
-      - name: Create parameters
-        href: ../paginated-reports/paginated-reports-parameters.md
-      - name: Pass a report parameter in a URL
-        href: ../paginated-reports/report-builder-url-pass-parameters.md
     - name: "Device information settings"  
       items:
       - name: Device information settings for rendering extensions
