@@ -92,6 +92,18 @@ The following short video shows how quickly you can configure Autoscale for Powe
 
 :::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Animation that shows how to configure Autoscale for Premium Generation 2.":::
 
+## Disable Autoscale
+
+To disable Autoscale, follow these steps:
+
+1. Open the **Power BI Admin portal** and select **Capacity settings**.
+
+2. Select the capacity you want to disable Autoscale for.
+
+3. Select **Manage Autoscale**
+
+4. Clear the **Enable Autoscale** checkbox.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
