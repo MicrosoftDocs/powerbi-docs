@@ -29,7 +29,7 @@ The following are the scanner APIs. They support both public and sovereign cloud
 Before metadata scanning can be run, a Power BI admin needs to set it up. To learn how to set up metadata scanning, see [Setting up metadata scanning in an organization](../admin/service-admin-metadata-scanning-setup.md).
 
 > [!IMPORTANT]
-> The app you develop for scanning can authenticate using either a standard delegated admin access token or a service principal. The two authentication paths are mutually exclusive. **When running under a service principal, there must be no Power BI admin-consent-required permissions set on your app**. For more information, see [Enable service principal authentication for read-only admin APIs](./read-only-apis-service-principal-authentication.md).
+> The app you develop for scanning can authenticate by using either a standard delegated admin access token or a service principal. The two authentication paths are mutually exclusive. **When running under a service principal, there must be no Power BI admin-consent-required permissions set on your app**. For more information, see [Enable service principal authentication for read-only admin APIs](./read-only-apis-service-principal-authentication.md).
 
 ## Run metadata scanning
 
@@ -60,7 +60,7 @@ Now that you have all the workspaces and the metadata and lineage of their asset
 
 Call [workspaces/modified](/rest/api/power-bi/admin/workspace-info-get-modified-workspaces) with the **modifiedSince** parameter set to the start time of the last scan in order to get the workspaces that have changed, which therefore require another scan. The **modifiedSince** parameter should be set for a date within the last 30 days.
 
-Divide this list into chunks of up to 100 workspaces, and get the data for these changed workspaces using the three API calls, [workspaces/getInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info), [workspaces/scanStatus/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-status), and [workspaces/scanResult/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-result), as described in Step 1.
+Divide this list into chunks of up to 100 workspaces, and get the data for these changed workspaces by using the three API calls, [workspaces/getInfo](/rest/api/power-bi/admin/workspace-info-post-workspace-info), [workspaces/scanStatus/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-status), and [workspaces/scanResult/{scan_id}](/rest/api/power-bi/admin/workspace-info-get-scan-result), as described in Step 1.
 
 ## Considerations and limitations
 
@@ -79,4 +79,4 @@ Metadata scanning requires no special license. It works for all of your tenant m
 * Learn about [Power BI REST Admin APIs](/rest/api/power-bi/admin).
 * [Set up metadata scanning](../admin/service-admin-metadata-scanning-setup.md).
 * [Enable service principal authentication for read-only admin APIs](read-only-apis-service-principal-authentication.md).
-* More questions? Try asking the [Power BI Community](https://community.powerbi.com).
+* More questions? Ask the [Power BI Community](https://community.powerbi.com).
