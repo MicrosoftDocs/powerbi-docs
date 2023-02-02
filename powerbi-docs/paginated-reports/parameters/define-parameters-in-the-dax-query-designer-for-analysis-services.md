@@ -1,6 +1,6 @@
 ---
-title: "Define Parameters in the DAX Query Designer for Analysis Services data source of a Power BI paginated report | Microsoft Docs"
-description: Learn how to define query parameters in the DAX query designer for Analysis Services.
+title: "Define parameters in DAX for Analysis Services data source of a Power BI paginated report | Microsoft Docs"
+description: In this article, you learn how to define query parameters in the DAX query designer for Analysis Services.
 ms.date: 01/23/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,14 +11,13 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Define Parameters in the DAX Query Designer for Analysis Services data source of a Power BI paginated report
+# Define parameters in DAX for Analysis Services data source of a Power BI paginated report
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  To parameterize a DAX query for a PBI dataset of a Power BI paginated report, you must add a query parameter to the query. In the DAX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
-  
-  
-### To define a query parameter in DAX in Design mode  
+To parameterize a DAX query for a PBI dataset of a Power BI paginated report, you must add a query parameter to the query. In the DAX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
+ 
+## Define a query parameter in DAX in Design mode  
   
 1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The DAX query designer opens in Design mode.  
   
@@ -42,7 +41,7 @@ ms.reviewer: saurkumar
   
      To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
   
-### To define a query parameter in DAX in Query mode  
+## Define a query parameter in DAX in Query mode  
   
 1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The DAX query designer opens in Design mode.  
   
