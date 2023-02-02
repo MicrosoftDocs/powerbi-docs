@@ -20,12 +20,12 @@ You must have dataset Owner permissions to enable automatic aggregations. Worksp
 1. In dataset Settings, expand **Scheduled refresh and performance optimization**.
 1. Switch **Automatic aggregations training** to **On**. If the switch is greyed out, ensure Data source credentials for the dataset are configured and you're signed in.
 
-    :::image type="content" source="media/aggregations-automatic-configure/auto-aggs-enable.png" alt-text="Screenshot of scheduled refresh and performance optimization expanded.":::
+    :::image type="content" source="media/aggregations-automatic-configure/automatic-aggregations-training-on.png" alt-text="Screenshot of scheduled refresh and performance optimization expanded.":::
 
 1. In **Refresh schedule**, specify a refresh frequency and time zone. If the Refresh schedule controls are disabled, verify the data source configuration including gateway connection (if necessary) and data source credentials.
 1. Select **Add another time**, and then specify one or more refreshes.
 
-    :::image type="content" source="media/aggregations-automatic-configure/auto-aggs-refresh.png" alt-text="Screenshot showing the refresh frequency section with multiple times set.":::
+    :::image type="content" source="media/aggregations-automatic-configure/refresh-frequency.png" alt-text="Screenshot showing the refresh frequency section with multiple times set. Add another time and apply are highlighted.":::
 
     You must schedule at least one refresh. The first refresh for the frequency you select will include both a *training* operation and a refresh that loads new and updated aggregations into the in-memory cache. Schedule more refreshes to ensure report queries that hit the aggregations cache are getting results that are most in-sync with the backend data source. For more information, see [Refresh operations](aggregations-auto.md#refresh-operations).
 
@@ -58,7 +58,7 @@ Before the system can determine the optimal aggregations to include in the cache
 1. In dataset Settings, expand **Scheduled refresh and performance optimization**
 1. In **Query coverage**, use the **Adjust the percentage of queries that will use the aggregated caches** slider to increase or decrease the percentage to the desired value. As you adjust the percentage, the Query Performance Impact Lift chart provides estimated query response times.
 
-    :::image type="content" source="media/aggregations-automatic-configure/auto-aggregations-adjust-percentage.png" alt-text="Screenshot of the query coverage section showing the slider at 95 percent.":::
+    :::image type="content" source="media/aggregations-automatic-configure/query-coverage.png" alt-text="Screenshot of the query coverage section showing the slider at 74 percent.":::
 
 1. Select **Train and Refresh Now** or **Apply**.
 
@@ -86,7 +86,7 @@ You must have dataset Owner permissions to disable automatic aggregations. Works
 
     When you disable training, you're prompted with an option to delete automatic aggregation tables.
 
-    :::image type="content" source="media/aggregations-automatic-configure/auto-aggs-delete-tables.png" alt-text="Screenshot of the prompt to delete the existing automatic aggregations tables from the dataset.":::
+    :::image type="content" source="media/aggregations-automatic-configure/automatic-aggregations-training-off.png" alt-text="Screenshot of automatic aggregations training off with information about automatic aggregations tables in the dataset.":::
 
     If you choose *not* to delete existing automatic aggregation tables, the tables will remain in the dataset and continue to be refreshed. However, because training is disabled, no new aggregations will be added to them. Power BI will continue to use the existing tables to get aggregated query results when possible.
 
