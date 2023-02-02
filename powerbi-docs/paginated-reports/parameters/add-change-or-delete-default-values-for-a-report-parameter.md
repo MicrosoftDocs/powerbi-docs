@@ -1,6 +1,6 @@
 ---
-title: "Add, change, or delete default values for a Power BI paginated report parameter | Microsoft Docs"
-description: Use these steps to customize your reports with added, changed, or deleted  default values for Power BI paginated report parameters.
+title: "Add or modify default values for a Power BI paginated report parameter | Microsoft Docs"
+description: Use these steps to customize your reports with added, changed, or deleted default values for Power BI paginated report parameters.
 ms.date: 01/23/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -12,16 +12,16 @@ ms.author: maggies
 ms.reviewer: saurkumar
 ---
 
-# Add, change, or delete default values for a Power BI paginated report parameter (Power BI Report Builder)
+# Add or modify default values for a Power BI paginated report parameter (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  After you create a Power BI paginated report parameter, you can provide a list of default values. If all parameters have a valid default value, the report runs automatically when you first view or preview it.  
+  After you create a Power BI paginated report parameter, you can provide a list of default values. If all parameters have a valid default value, the report runs automatically when you first view or preview it. In this article you learn to add, change, or delete default parameter values.
   
  Report parameters can represent one value or multiple values. For single values, you can provide a literal or expression. For multiple values, you can provide a static list or a list from a report dataset.  
   
  
-### To add or change the default values for a report parameter  
+## Add or change the default values for a report parameter  
   
 1.  In the Report Data pane, expand the **Parameters** node. Right-click the parameter and click **Edit**. The **Report Parameter Properties** dialog box opens.  
   
@@ -42,7 +42,7 @@ ms.reviewer: saurkumar
   
 4.  Select **OK**.
   
-### To remove the default values for a report parameter  
+## Remove the default values for a report parameter  
   
 1.  In the Report Data pane, expand the **Parameters** node. Right-click the parameter and click **Edit**. The **Report Parameter Properties** dialog box opens.  
   
