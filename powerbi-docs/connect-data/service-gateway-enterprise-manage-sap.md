@@ -19,7 +19,7 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 ## Add a data source
 
-For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Connection Type**, select **SAP HANA**.
+For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Connection type**, select **SAP HANA**.
 
 :::image type="content" source="media/service-gateway-enterprise-manage-sap/new-data-source-sap.png" alt-text=" Screenshot of Add the SAP HANA data source.":::
 
@@ -30,7 +30,7 @@ After you select the SAP HANA data source type, fill in the **Server**, **Userna
 
 :::image type="content" source="media/service-gateway-enterprise-manage-sap/sap-credentials.png" alt-text=" Screenshot of Filling in the data source settings.":::
 
-After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against an SAP HANA server that is on-premises. You see *Created New data sources* if it succeeded.
+After you fill in everything, select **Create**. You can now use this data source for scheduled refresh or DirectQuery against an SAP HANA server that is on-premises. You see *Created New data source* if it succeeded.
 
 :::image type="content" source="media/service-gateway-enterprise-manage-sap/data-source-succesful-sap.png" alt-text=" Screenshot of Displaying the connection status.":::
 
