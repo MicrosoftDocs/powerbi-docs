@@ -534,8 +534,20 @@
         href: ../paginated-reports/paginated-reports-parameters.md
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/report-builder-url-pass-parameters.md
+      - name: Add or modify parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-a-report-parameter-report-builder-and-ssrs.md
+      - name: Add or modify values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
+      - name: Add or modify default values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-default-values-for-a-report-parameter.md
       - name: Add a multi-value parameter
         href: ../paginated-reports/parameters/add-a-multi-value-parameter-to-a-report.md
+      - name: Add a subreport and parameters
+        href: ../paginated-reports/parameters/add-a-subreport-and-parameters-report-builder-and-ssrs.md
+      - name: Add cascading parameters
+        href: ../paginated-reports/parameters/add-cascading-parameters-to-a-report-report-builder-and-ssrs.md
+      - name: Define parameters in DAX for Analysis Services data source
+        href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
