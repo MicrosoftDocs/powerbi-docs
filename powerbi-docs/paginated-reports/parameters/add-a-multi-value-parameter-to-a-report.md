@@ -17,7 +17,7 @@ ms.author: maggies
 
   You can add a parameter to a paginated report that allows the user to select more than one value for the parameter.  
   
- You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](../../reporting-services/pass-a-report-parameter-within-a-url.md).  
+ You can pass multiple parameter values to the report within the report URL. For a URL example includes a multi-value parameter, see [Pass a Report Parameter Within a URL](/sql/reporting-services/pass-a-report-parameter-within-a-url).  
   
  For information on how to pass multiple parameter values to a stored procedure, see [Working With Multi-Select Parameters for SSRS Reports](https://go.microsoft.com/fwlink/?LinkId=321529) on mssqltips.com.  
   
@@ -27,7 +27,7 @@ ms.author: maggies
   
 2.  Right-click the report dataset, and then click **Dataset Properties**  
   
-3.  Add a variable to the dataset query by either editing the query text in the **Query** box, or by adding a filter by using the query designer. For more information, see [Build a Query in the Relational Query Designer &#40;Report Builder and SSRS&#41;](../../reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs.md).  
+3.  Add a variable to the dataset query by either editing the query text in the **Query** box, or by adding a filter by using the query designer. For more information, see [Build a Query in the Relational Query Designer &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-data/build-a-query-in-the-relational-query-designer-report-builder-and-ssrs).  
   
     ```  
     WHERE  

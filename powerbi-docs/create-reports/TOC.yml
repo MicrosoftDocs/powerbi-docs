@@ -482,7 +482,7 @@
       href: service-dashboard-themes.md
   - name: Paginated reports
     items: 
-    - names: Data sources and datasets
+    - name: Data sources and datasets
       items: 
       - name: Understand paginated report data
         href: ../paginated-reports/report-builder-data.md
