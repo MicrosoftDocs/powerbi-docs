@@ -37,17 +37,17 @@ The first *scheduled* refresh operation for your chosen frequency includes a tra
 
 In such cases, you can manually run one or more *on-demand* training and refresh operations to fully complete the training and load or refresh aggregations in the cache. For example, when checking the Refresh history, if the first *scheduled* training and refresh operation for the day (frequency) doesn't complete within the time limit, and you don't want to wait for the next day's scheduled refresh that includes a training operation to run, you can run one or more on-demand train and refresh operations to fully process the data query log (train) and load aggregations to the cache (refresh).
 
-To run an on-demand train and refresh operation, select **Train and Refresh Now**. Be sure to keep an eye on the refresh history to ensure the on-demand training operation completes successfully. If not, run another train and refresh operations until training completes successfully, and aggregations are loaded or refreshed in the cache.
+To run an on-demand train and refresh operation, select **Train and Refresh Now**. Be sure to keep an eye on the refresh history to ensure the on-demand training operation completes successfully. If not, run another train and refresh operation until training completes successfully, and aggregations are loaded or refreshed in the cache.
 
 Running **Train and Refresh Now** can be helpful for fine-tuning the percentage of report queries that will use aggregations from the in-memory cache. By running an on-demand train and refresh now operation, you can more quickly determine if your new percentage setting allows the training operation to complete within the time limit.
 
 Keep in mind, training and refresh operations, whether scheduled or on-demand are process and resource intensive for both the data source and Power BI. Choose a time when resources are least impacted.
 
-## Fine-tuning
+## Fine-tune
 
 Both user-defined and system-generated aggregations tables are part of the dataset, contribute to the dataset size, and are subject to existing Power BI dataset size constraints. Aggregations processing also consumes resources and impacts dataset refresh durations. An optimal configuration strikes a balance between providing pre-aggregated results from the in-memory aggregations cache for the most frequently used report queries, while accepting slower results for outlier and ad-hoc queries in exchange for faster training and refresh times and a reduced burden on system resources.
 
-### Adjusting the percentage
+### Adjust the percentage
 
 By default, the aggregations cache setting that determines the percentage of report queries that will use aggregations from the in-memory cache is 75%. Increasing the percentage means a greater number of report queries are ranked higher and therefore aggregations for them are included in the in-memory aggregations cache. While a higher percentage can mean more queries are answered from the in-memory cache, it can also mean **longer training and refresh times**. Adjusting to a lower percentage, on the other hand, can mean shorter training and refresh times, and less resource utilization, but report visualization performance could diminish because fewer report queries would be answered by the in-memory aggregations cache, as those report queries instead must then roundtrip to the data source.
 
@@ -55,14 +55,14 @@ Before the system can determine the optimal aggregations to include in the cache
 
 #### To adjust the percentage
 
-1. In dataset Settings, expand **Scheduled refresh and performance optimization**
+1. In dataset Settings, expand **Scheduled refresh and performance optimization**.
 1. In **Query coverage**, use the **Adjust the percentage of queries that will use the aggregated caches** slider to increase or decrease the percentage to the desired value. As you adjust the percentage, the Query Performance Impact Lift chart provides estimated query response times.
 
     :::image type="content" source="media/aggregations-automatic-configure/query-coverage.png" alt-text="Screenshot of the query coverage section showing the slider at 74 percent.":::
 
 1. Select **Train and Refresh Now** or **Apply**.
 
-### Estimating query performance impact
+### Estimate query performance impact
 
 The **Query performance impact** lift chart provides estimated report query run times as a function of the percentage of queries that will use cached aggregations. The chart will initially show 0.0 for all metrics until at least one training/refresh operation is performed. After an initial training/refresh operation, the chart can help you determine if adjusting the percentage of queries that use the in-memory aggregations cache can potentially further improve query response.
 
@@ -80,7 +80,7 @@ Threshold appears as a marker line on the lift chart and indicates the target qu
 
 ## Disable
 
-You must have dataset Owner permissions to disable automatic aggregations. Workspace admins can take over dataset owner permissions.
+You must have dataset owner permissions to disable automatic aggregations. Workspace admins can take over dataset owner permissions.
 
 1. To disable, switch **Automatic aggregations training** to **Off**.
 
@@ -96,6 +96,6 @@ You must have dataset Owner permissions to disable automatic aggregations. Works
 
 ## See also
 
-[Automatic aggregations](aggregations-auto.md)  
-[User-defined aggregations](../transform-model/aggregations-advanced.md)  
-[DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)  
+* [Automatic aggregations](aggregations-auto.md)  
+* [User-defined aggregations](../transform-model/aggregations-advanced.md)  
+* [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)  
