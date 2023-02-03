@@ -1,6 +1,6 @@
 ---
 title: Use parameters to visualize variables
-description: Learn how to create your own parameters to imagine and visualize variables in Power BI reports.
+description: Learn how to create your own parameters to imagine and visualize variables in your Power BI reports.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -58,7 +58,7 @@ Then, create a column visual with **OrderDate** on the axis, and both **SalesAmo
 
 :::image type="content" source="media/desktop-what-if/what-if_07.png" alt-text="Screenshot visualizing SalesAmount from the example measure formula.":::
 
-Then, as you move the slider, you will see that the **Sales after Discount** column reflects the discounted sales amount.
+Then, as you move the slider, you'll see that the **Sales after Discount** column reflects the discounted sales amount.
 
 :::image type="content" source="media/desktop-what-if/what-if_08.png" alt-text="Screenshot of the SalesAmount visual changed by using the parameter slider.":::
 
