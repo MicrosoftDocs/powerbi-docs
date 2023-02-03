@@ -13,7 +13,7 @@ ms.reviewer: rpatkar
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-In a paginated report, you can rotate a text box in different directions:   
+In a Power BI paginated report, you can rotate a text box in different directions:   
 * Horizontally   
 * Vertically (rotated 90 degrees, with text reading from top to bottom, except East Asian text characters)
 
