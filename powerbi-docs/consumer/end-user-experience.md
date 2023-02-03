@@ -158,7 +158,7 @@ For more information, see [Navigation for Power BI business users: global search
 
 ## Find the owner
 
-And we'll end this tutorial with a helpful tip. If you have questions about a dashboard, report, or app--you can look up the owner. With the content open, select the title menu to display the owner's contact link. The owner or contact may be a person or a group.
+And we'll end this tutorial with a helpful tip. If you have questions about a dashboard, report, app, or other content--you can look up the owner. With the content open, select the title menu to display the owner's contact link. The owner or contact may be a person or a group.
 
 :::image type="content" source="./media/end-user-experience/power-bi-owner.png" alt-text="Screenshot showing the title menu where contact information is.":::
 
