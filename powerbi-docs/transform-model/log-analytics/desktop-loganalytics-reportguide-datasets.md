@@ -81,7 +81,7 @@ The following parameters are defined in the template:
 
 |**Parameter**  |**Description**  |
 |---------|---------|
-|Days Ago To Start     |Load data from the specified number of days ago. Maximum value you can select here is 30 days.    |
+|Days Ago To Start     |Load data from the specified day to the time the call was initiated. The maximum value you can select is 30 days. However, your Premium capacity memory limits apply to this parameter. If those limits are exceeded, the template app may fail to refresh.    |
 |Days Ago To Finish  |Load data up to the specified number of days ago. Use 0 for today. | 
 |Log Analytics Table |Preset values corresponding to the Log Analytics source table:<br> -	PowerBIDatasetsWorkspace<br> -	PowerBIDatasetsTenant <br> Currently only PowerBIDatasetsWorkspace is supported. |
 |Log Analytics WorkspaceId |GUID of the Azure Log Analytics workspace containing the AS Engine data. |
@@ -454,6 +454,4 @@ The following articles provide more information about Power BI and its many feat
 * [Install Log Analytics Template App](install-as-engine-app.md)
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
-
-
+* [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)

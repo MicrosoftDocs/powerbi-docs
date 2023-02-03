@@ -29,7 +29,7 @@ Report Builder provides a lot of report items that you can add to your report to
   
 ## Should the data be filtered?
   
-You might want to narrow the scope of the report to specific users or locations, or to a particular time period. To filter the report data, use parameters to retrieve and display only the data you want. For more information, see [Report parameters in Power BI Report Builder](paginated-reports-parameters.md).  
+You might want to narrow the scope of the report to specific users or locations, or to a particular time period. To filter the report data, use parameters to retrieve and display only the data you want. For more information, see [Report parameters in Power BI Report Builder](parameters/paginated-reports-create-parameters.md).  
   
 ## Do you need to create calculations? 
   
@@ -45,4 +45,4 @@ You can save your report to your local computer and continue to work on it, or r
   
 ## Next steps
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

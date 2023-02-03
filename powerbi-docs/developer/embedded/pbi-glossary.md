@@ -184,7 +184,7 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 
 ### Dimension
 
-Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.
+Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group [*measures*](#measure) into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
 ### Drill up, drill down, drill through
 
@@ -271,9 +271,9 @@ The default landing page for Power BI service users. Doesn't modify anything. Ca
 
 ## I
 
-### Inline frame, iFrame
+### Inline frame, IFrame
 
-An iFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
+An IFrame is component of an HTML element that allows you to embed reports and other [items](#item) inside your app. It's essentially a way to display a secondary webpage inside the main page.
 
 ### Implicit measures
 
@@ -356,9 +356,9 @@ The location in the service where messages are delivered to users, such as notic
 
 ## O
 
-### **OneDrive for Business** vs **OneDrive**
+### **OneDrive for work or school** vs **OneDrive**
 
-OneDrive is a personal account and OneDrive for Business is for work accounts.  
+OneDrive is a personal account and OneDrive for work or school is for work accounts.  
 
 ### On-premises
 
@@ -376,7 +376,7 @@ Reports have one or more pages. Each tab on the report canvas represents a page.
 
 ### Paginated reports
 
-Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're also called pixel perfect because you can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
+Paginated reports are designed to be printed or shared. They're called *paginated* because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. You can control their report page layout exactly. Power BI Report Builder is the standalone tool for authoring paginated reports.
 
 ### PBIVIZ
 

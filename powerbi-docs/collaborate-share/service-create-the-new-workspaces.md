@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/20/2022
+ms.date: 11/02/2022
 ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -34,7 +34,7 @@ This article explains how to create *workspaces*, spaces to collaborate with col
     - [Add a Contact list](#create-a-contact-list), the names of people to contact for information about the workspace. By default, the workspace admins are the contacts.
     - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
     - [Assign the workspace to a Premium capacity](#premium-capacity-settings).
-    - Connect the workspace to an Azure Data Lake Gen2 storage account (in preview). Read about this functionality in the article [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
+    - Connect the workspace to an Azure Data Lake Gen2 storage account (in preview). Read about this functionality in the article [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 1. Select **Save**.
 
@@ -135,7 +135,8 @@ However, contributors can't:
 * Create or publish the app for the first time.
 * Add users to the app or change who has permission to the app.
 * Enable or disable automatic installation of app for app users.
-* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups. 
+* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups.
+* Allow or prevent app consumers saving a copy of reports included in the app.  
 
 ## Premium capacity settings
 

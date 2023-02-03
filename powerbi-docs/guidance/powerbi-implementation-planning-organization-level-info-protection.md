@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Organization-level information protection"
 description: "Learn about getting started with information protection with organization-level planning activities for Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Organization-level information protection
@@ -126,6 +126,8 @@ Be aware that an initiative to introduce information protection is complementary
 - Network security requirements
 - Data encryption requirements
 - Data cataloging initiatives
+
+For more information about securing content in Power BI, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

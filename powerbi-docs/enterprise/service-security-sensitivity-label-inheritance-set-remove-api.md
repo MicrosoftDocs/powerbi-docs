@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.custom:
-ms.date: 07/27/2021
+ms.date: 11/21/2022
 LocalizationGroup: Data from files
 ---
 # Set or remove sensitivity labels using Power BI REST admin APIs
 
-To meet compliance requirements, organizations are often required to classify and label all sensitive data in Power BI. This task can be challenging for tenants that have large volumes of data in Power BI. To make the task easier and more effective, the Power BI [setLabels](/rest/api/power-bi/admin/information-protection-set-labels-as-admin) and [removeLabels](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin) admin REST APIs can be used to set and remove sensitivity labels on large numbers of Power BI artifacts programatically.
+To meet compliance requirements, organizations are often required to classify and label all sensitive data in Power BI. This task can be challenging for tenants that have large volumes of data in Power BI. To make the task easier and more effective, you can use Power BI admin REST APIs to programatically [setLabels](/rest/api/power-bi/admin/information-protection-set-labels-as-admin) and [removeLabels](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin) on large numbers of Power BI artifacts.
 
 The APIs set or remove labels from artifacts by artifact ID.
 
 ## Requirements and considerations
 
-* The user must have administrator rights (such as Office 365 Global Administrator or Power BI Service Administrator) to call these APIs.
+* Users must have administrator rights (such as Microsoft 365 Global Administrator or Power BI Service Administrator) to call these APIs.
 * The admin user (and the delegated user, if provided) must have sufficient [usage rights](/azure/information-protection/configure-usage-rights) to set or remove labels.
 * To set a sensitivity label using the setLabels API, the admin user (or the delegated user, if provided) must have the label included in their label policy.
 * The APIs allow a maximum of 25 requests per hour. Each request can update up to 2000 artifacts.
@@ -96,8 +96,8 @@ The following sample demonstrates how to set and remove sensitivity labels on Po
         }
 ```
 
-
 ## Next steps
+
 * [setLabels API](/rest/api/power-bi/admin/information-protection-set-labels-as-admin)
 * [removeLabels API](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin)
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)

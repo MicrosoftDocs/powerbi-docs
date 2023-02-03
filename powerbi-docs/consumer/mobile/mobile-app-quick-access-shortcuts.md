@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/06/2020
+ms.date: 12/14/2022
 ---
 # Use Android app Shortcuts in the Power BI Android app
 
@@ -21,9 +21,7 @@ The Power BI mobile app for Android provides two easy ways to get straight to th
  * **App launcher shortcuts**: You can get directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher icon on your device's home screen to open the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time - the Power BI mobile app keeps track of what you're viewing often and changes the shortcuts accordingly.
 
  >[!NOTE]
- >Android app shortcuts are available from Android 8 and higher.
->
-> Android app shortcuts can be created for only for reports and dashboards hosted in the Power BI service. Shortcuts for Report Server content are not supported. 
+ > Android app shortcuts can be created for only for reports and dashboards hosted in the Power BI service. Shortcuts for Report Server content are not supported. 
 
 ## Create a shortcut to any report or dashboard
 

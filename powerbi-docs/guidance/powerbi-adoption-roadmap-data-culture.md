@@ -1,13 +1,13 @@
 ---
 title: "Power BI adoption roadmap: Data culture"
 description: Encourage a data culture to drive strong and successful adoption of Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap: Data culture
@@ -51,7 +51,7 @@ The concept of data culture can be difficult to define and measure. Even though 
 - Directly influence your adoption strategy.
 - Serve as the high-level guiding principles for enacting governance policies and guidelines.
 
-Data culture outcomes are not specifically mandated. Rather, the state of the data culture is the result of following the governance rules as they're enforced (or the lack of governance rules). Leaders at all levels need to actively demonstrate what's important through their actions, including how they praise, recognize, and reward staff members who take initiative. 
+Data culture outcomes aren't specifically mandated. Rather, the state of the data culture is the result of following the governance rules as they're enforced (or the lack of governance rules). Leaders at all levels need to actively demonstrate what's important through their actions, including how they praise, recognize, and reward staff members who take initiative. 
 
 > [!TIP]
 > If you can take for granted that your efforts to develop a data solution (such as a dataset or a report) will be valued and appreciated, that's an excellent indicator of a healthy data culture. Sometimes, however, it depends on what your immediate manager values most.
@@ -62,7 +62,7 @@ The initial motivation for establishing a data culture often comes from a specif
 - A proactive change, such as starting a new line of business or expanding into new markets to seize a "green field" opportunity. Being data driven from the beginning can be relatively easy when there are fewer constraints and complications, compared with an established organization.
 - Driven by external changes, such as pressure to eliminate inefficiencies and redundancies during an economic downturn.
 
-In any of these situations, there is often a specific area where the data culture takes root. The specific area could be a scope of effort that's smaller than the entire organization, even if it's still significant. After necessary changes are made at this smaller scope, they can be incrementally replicated and adapted for the rest of the organization.
+In any of these situations, there's often a specific area where the data culture takes root. The specific area could be a scope of effort that's smaller than the entire organization, even if it's still significant. After necessary changes are made at this smaller scope, they can be incrementally replicated and adapted for the rest of the organization.
 
 Although technology can help advance the goals of a data culture, implementing specific tools or features isn't the objective. This series of articles covers a lot of topics that contribute to adoption of a healthy data culture. The remainder of this article addresses three essential aspects of data culture: [data discovery](#data-discovery), [data democratization](#data-democratization), and [data literacy](#data-literacy).
 
@@ -83,9 +83,9 @@ Data discovery contributes to adoption efforts and the implementation of governa
 - Helping people understand who owns and manages datasets.
 - Establishing connections between consumers, creators, and owners.
 
-In Power BI, the [data hub](../connect-data/service-data-hub.md) and the [use of endorsements](../collaborate-share/service-endorse-content.md) help promote data discovery of [shared datasets](../connect-data/service-datasets-across-workspaces.md). They also encourage self-service creators to [reuse and augment datasets](../connect-data/desktop-directquery-datasets-azure-analysis-services.md). 
+In Power BI, the [data hub](/power-bi/connect-data/service-data-hub) and the [use of endorsements](/power-bi/collaborate-share/service-endorse-content) help promote data discovery of [shared datasets](/power-bi/connect-data/service-datasets-across-workspaces). They also encourage self-service creators to [reuse and augment datasets](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services).
 
-Further, data catalog solutions are extremely valuable for data discovery. They can record metadata tags and descriptions to provide deeper context and meaning. For example, [Azure Purview](/azure/purview/overview) can scan and catalog an entire Power BI tenant. 
+Further, data catalog solutions are extremely valuable for data discovery. They can record metadata tags and descriptions to provide deeper context and meaning. For example, [Azure Purview](/azure/purview/overview) can scan and catalog an entire Power BI tenant.
 
 ## Data democratization
 
@@ -131,26 +131,32 @@ How you go about improving data literacy in your organization depends on many fa
 
 ## Considerations and key actions
 
-Here are some considerations and key actions that you can take to strengthen your data culture:
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
-- Give serious consideration to the type of data culture that you want to cultivate. Ideally, it's more from a position of user empowerment than a position of command and control.
-- Talk to stakeholders in different business units to understand which analytics practices are currently working well and which practices aren't working well for data-driven decision-making. Conduct a series of workshops to understand the current state and to formulate the desired future state.
-- Talk to stakeholders in IT, BI, and the [COE](powerbi-adoption-roadmap-center-of-excellence.md) to understand which [governance](powerbi-adoption-roadmap-governance.md) constraints need consideration. These talks can present an opportunity to educate teams on topics like security and infrastructure. Another key topic is what Power BI actually is (and how it's significantly more powerful than a query tool).
-- Verify the level of [executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) and support that you have in place to advance data culture goals.
-- Make purposeful decisions about your BI strategy. Decide what the ideal balance of business-led self-service BI, managed self-service BI, and enterprise BI should be for the key business units in the organization (discussed in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article). Also consider how the strategy relates to the extent of published content for personal BI, team BI, departmental BI, and enterprise BI (discussed in the [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) article). Determine how these decisions affect your action plan.
-- Begin creating an action plan for immediate, short-term, and long-term action items. Identify business groups and problems that represent a "quick win" and can make a visible difference.
+**Checklist** - Here are some considerations and key actions that you can take to strengthen your data culture.
+
+> [!div class="checklist"]
+> - **Align on data culture goals and strategy:**  Give serious consideration to the type of data culture that you want to cultivate. Ideally, it's more from a position of user empowerment than a position of command and control.
+> - **Understand your current state:** Talk to stakeholders in different business units to understand which analytics practices are currently working well and which practices aren't working well for data-driven decision-making. Conduct a series of workshops to understand the current state and to formulate the desired future state.
+> - **Speak with stakeholders:** Talk to stakeholders in IT, BI, and the [COE](powerbi-adoption-roadmap-center-of-excellence.md) to understand which [governance](powerbi-adoption-roadmap-governance.md) constraints need consideration. These talks can present an opportunity to educate teams on topics like security and infrastructure. You can also use the opportunity to educate them on what Power BI actually is (and how it includes powerful data preparation and modeling capabilities, in addition to being a vizualiation tool).
+> - **Verify executive sponsorship:** Verify the level of [executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) and support that you have in place to advance data culture goals.
+> - **Make purposeful decisions about your BI strategy:** Decide what the ideal balance of business-led self-service BI, managed self-service BI, and enterprise BI should be for the key business units in the organization (covered in the [content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md) article). Also consider how the strategy relates to the extent of published content for personal BI, team BI, departmental BI, and enterprise BI (described in the [content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md) article). Determine how these decisions affect your action plan.
+> - **Create an action plan:** Begin creating an action plan for immediate, short-term, and long-term action items. Identify business groups and problems that represent "quick wins" and can make a visible difference.
+> - **Create goals and metrics:** Determine how you'll measure effectiveness for your data culture initiatives. Create KPIs (key performance indicators) or OKRs (objectives and key results) to validate the results of your efforts.
 
 ## Maturity levels
 
-The following maturity levels will help you assess the current state of your data culture:
+:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+
+The following maturity levels will help you assess the current state of your data culture.
 
 | **Level** | **State of data culture** |
 | --- | --- |
-| 100: Initial | BI initiatives are taking place—with some successes—in various areas of the organization. These activities are occurring in a somewhat chaotic manner, with few formal processes and no strategic plan. </br></br>A significant backlog of requests might exist for the enterprise BI team. </br></br>There's a lack of oversight and visibility into self-service BI operations. The successes or failures of BI solutions are not well understood. |
-| 200: Repeatable | Multiple teams have had measurable successes with self-service BI solutions. </br></br>Investments are made to identify the ideal balance of enterprise BI and self-service BI. |
-| 300: Defined | Specific goals are established for advancing the data culture, and these goals are implemented incrementally. </br></br>Effective self-service BI practices are incrementally—and purposely—replicated throughout more areas of the organization. |
-| 400: Capable | The data culture goals to employ informed decision-making are aligned with organizational objectives. They're actively supported by the executive sponsor, and they have a direct impact on adoption strategies. </br></br>A healthy and productive partnership exists between the COE, business units, and IT. </br></br>Individuals who take initiative in building valuable BI solutions are recognized and rewarded. |
-| 500: Efficient | Regular review of key performance indicators validates that data culture results are aligned with intentions. </br></br>The business value of BI solutions is regularly evaluated and measured. Feedback loops encourage ongoing improvements. </br></br>Continual improvement of organizational adoption, user adoption, and solution adoption is a top priority. Learnings are incrementally adapted throughout the organization. |
+| 100: Initial | The enterprise BI team can't keep up with the needs of the business. A significant backlog of requests exists for the enterprise BI team. </br></br>Self-service BI initiatives are taking place—with some successes—in various areas of the organization. These activities are occurring in a somewhat chaotic manner, with few formal processes and no strategic plan. </br></br>There's a lack of oversight and visibility into self-service BI activities. The successes or failures of BI solutions aren't well understood. |
+| 200: Repeatable | Multiple teams have had measurable successes with self-service BI solutions. People in the organization are starting to pay attention. </br></br>Investments are being made to identify the ideal balance of enterprise BI and self-service BI. |
+| 300: Defined | Specific goals are established for advancing the data culture. These goals are implemented incrementally. </br></br>Learnings from what works in individual business units is shared. </br></br>Effective self-service BI practices are incrementally—and purposely—replicated throughout more areas of the organization. |
+| 400: Capable | The data culture goals to employ informed decision-making are aligned with organizational objectives. They're actively supported by the executive sponsor, the COE, and they have a direct impact on adoption strategies. </br></br>A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared goals. </br></br>Individuals who take initiative in building valuable BI solutions are recognized and rewarded. |
+| 500: Efficient | The business value of BI solutions is regularly evaluated and measured. KPIs or OKRs are used to track data culture goals and the results of BI efforts. </br></br>Feedback loops are in place, and they encourage ongoing data culture improvements. </br></br>Continual improvement of organizational adoption, user adoption, and solution adoption is a top priority. |
 
 ## Next steps
 

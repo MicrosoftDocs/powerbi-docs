@@ -26,7 +26,7 @@ This *Insights* feature helps you easily explore and find insights such as anoma
 
 ## License requirements
 
- Insights is supported for reports in workspaces that are hosted in [Power BI Premium](../enterprise/service-premium-what-is.md) and [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) capacities. If you have a PPU license, you can also use the feature in workspaces that are hosted in shared capacities, but notifications won't be supported. 
+ Insights is supported for reports in workspaces that are hosted in [Power BI Premium](../enterprise/service-premium-gen2-what-is.md) and [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) capacities. If you have a PPU license, you can also use the feature in workspaces that are hosted in shared capacities, but notifications won't be supported. 
 
 ## Notifications
 

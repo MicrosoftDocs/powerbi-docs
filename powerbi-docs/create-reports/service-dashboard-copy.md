@@ -38,7 +38,7 @@ To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards t
     a. [Move, rename, resize or even delete tiles](service-dashboard-edit-tile.md).  
     b. Edit tile details and hyperlinks by selecting the tile **More options** (...) and choosing **Edit details**.  
     c. [Add new tiles from the dashboard menubar](service-dashboard-add-widget.md) (**Add tile**)  
-    d. Pin new tiles [from Q&A](service-dashboard-pin-tile-from-q-and-a.md) or [from reports](service-dashboard-pin-tile-from-report.md).  
+    d. Pin new tiles [from Q&A](service-dashboard-pin-tile-from-q-and-a.md) or [from reports](service-dashboard-create.md).  
     e. Rename the dashboard, turn Q&A on or off, and set the tile flow from the dashboard Settings pane.  (select the dashboard **More options** (...) dropdown and choose **Settings**)  
     f. Share your dashboard directly with colleagues or as part of a Power BI app. 
 

@@ -178,6 +178,6 @@ landingContent:
           - text: "Create a dashboard"
             url: service-dashboard-create.md
           - text: "Pin a tile to a dashboard"
-            url: service-dashboard-pin-tile-from-report.md
+            url: service-dashboard-create.md
           - text: "Add images or video to a dashboard"
             url: service-dashboard-add-widget.md

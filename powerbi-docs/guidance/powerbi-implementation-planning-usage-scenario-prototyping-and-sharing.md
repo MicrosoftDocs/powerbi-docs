@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Prototyping and sharing"
 description: "Learn how Power BI prototyping and sharing is about rapid exploration of user requirements."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

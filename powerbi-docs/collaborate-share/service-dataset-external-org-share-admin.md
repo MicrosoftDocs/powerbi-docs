@@ -22,7 +22,7 @@ For a full list of requirements necessary to use in-place datset sharing, see th
 
 ## Licensing
 
-Users must have an active Power BI account and a Power BI Pro or Premium license.
+Users must have an active Power BI account and a Power BI Pro or Premium license. For detailed information on licensing requirements, see the licensing requirements section of [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md#licensing).
 
 ## Allow guest users to work with shared datasets in their own tenants 
 

@@ -1,13 +1,13 @@
 ---
 title: "Power BI adoption roadmap: Center of Excellence"
 description: Establish a Center of Excellence (COE) to drive strong and successful adoption of Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap: Center of Excellence
@@ -88,18 +88,18 @@ Very generalized roles within a COE are listed below. It's common for multiple p
 | Data engineer | Plans Power BI deployment and architecture, including integration with Azure services and other data platforms. Publishes data assets which are utilized broadly across the organization. |
 | User support | Assists with the resolution of data discrepancies and escalated help desk support issues. |
 
-As mentioned previously, the scope of responsibilities for a COE can vary. Therefore, the roles found for COE members can vary too.
+As mentioned previously, the scope of responsibilities for a COE can vary significantly between organizations. Therefore, the roles found for COE members can vary too.
 
 ## Structuring a COE
 
-The selected COE structure can vary among organizations. The four most common ways you can structure the COE are: centralized, unified, federated, or decentralized. Additional variations exist too.
+The selected COE structure can vary among organizations. It's also possible for multiple structures to exist inside of a single large organization. That's particularly true when there are subsidiaries or acquisitions have occurred.
 
 > [!NOTE]
 > The following terms may differ to those defined for your organization, particularly the meaning of *federated*, which tends to have many different IT-related meanings.
 
 ### Centralized COE
 
-A centralized COE is comprised of a single shared services team.
+A centralized COE comprises a single shared services team.
 
 **Pros:**
 
@@ -142,6 +142,9 @@ A federated COE comprises a shared services team plus satellite members from eac
 - Since core and satellite members span organizational boundaries, the federated COE approach requires strong leadership, excellent communication, robust project management, and ultra-clear expectations.
 - There's a higher risk of encountering competing priorities due to the federated structure.
 - This approach typically involves part-time people and/or *dotted line* organizational chart accountability that can introduce competing time pressures.
+
+> [!TIP]
+> Some organizations have success by using a *rotational program*. It involves federated members of the COE joining the COE for a period of time, such as six months. This type of program allows federated members to learn best practices and understand more deeply how and why things are done. Although the federated member is still focused on their specific business unit, they gain a deeper understanding of the organization's challenges. This deeper understanding leads to a more productive partnership over time.
 
 ### Decentralized COE
 
@@ -186,27 +189,33 @@ Some organizations cover the COE operating costs with chargebacks to business un
 
 ## Considerations and key actions
 
-Considerations and key actions you can take to establish or improve your Power BI COE:
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
-- Define the scope of responsibilities for the COE. Once the scope is known, identify the skills and competencies required to fulfill those responsibilities.
-- Analyze whether the COE has the required systems and infrastructure in place to meet its goals and scope of responsibilities.
-- Determine what COE structure is most appropriate (centralized, unified, federated, or decentralized). Verify that staffing, roles and responsibilities, and appropriate organizational chart relationships (HR reporting) are in place.
-- Identify the internal customers, and any external customers, to be served by the COE. Identify how the COE will generally engage with those customers (push model, pull model, or both).
-- If you're starting out with a centralized or decentralized COE, consider how you will scale the COE over time with the unified or federated approach. Plan for any actions to take now that will facilitate future growth.
-- Verify the funding plan for the COE. Decide whether the COE is purely a cost center with an operating budget, whether it will operate partially as a profit center, and/or whether chargebacks to other business units will be required.
-- Create a [communications strategy](powerbi-adoption-roadmap-governance.md#governance-planning) to educate the Power BI community about the services the COE offers, and how to engage with the COE.
+**Checklist** - Considerations and key actions you can take to establish or improve your Power BI COE.
+
+> [!div class="checklist"]
+> - **Define the scope of responsibilities for the COE:** Ensure that you're clear on what activities the COE can support. Once the scope of responsibilities is known, identify the skills and competencies required to fulfill those responsibilities.
+> - **Identify gaps in the ability to execute:** Analyze whether the COE has the required systems and infrastructure in place to meet its goals and scope of responsibilities.
+> - **Determine the best COE structure:** Identify which COE structure is most appropriate (centralized, unified, federated, or decentralized). Verify that staffing, roles and responsibilities, and appropriate organizational chart relationships (HR reporting) are in place.
+> - **Plan for future growth:** If you're starting out with a centralized or decentralized COE, consider how you will scale the COE over time by using the unified or federated approach. Plan for any actions that you can take now that'll facilitate future growth.
+> - **Identify customers:** Identify the internal customers, and any external customers, to be served by the COE. Decide how the COE will generally engage with those customers, whether it's a push model, pull model, or both models.
+> - **Verify the funding model for the COE:** Decide whether the COE is purely a cost center with an operating budget, whether it will operate partially as a profit center, and/or whether chargebacks to other business units will be required.
+> - **Create a communication plan:** Create you [communications strategy](powerbi-adoption-roadmap-governance.md#governance-planning) to educate the Power BI community about the services the COE offers, and how to engage with the COE.
+> - **Create goals and metrics:** Determine how you'll measure effectiveness for the COE. Create KPIs (key performance indicators) or OKRs (objectives and key results) to validate that the COE consistently provides value to the user community.
 
 ## Maturity levels
 
-The following maturity levels will help you assess the current state of your COE:
+:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+
+The following maturity levels will help you assess the current state of your COE.
 
 | **Level** | **State of Power BI Center of Excellence** |
 | --- | --- |
-| 100: Initial | One or more COEs exist, or the activities are performed within the BI team or IT. There's no clarity on the specific goals nor expectations for responsibilities.</br></br>Requests for assistance from the COE are handled in an unplanned manner. |
-| 200: Repeatable | The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service BI while reducing the risks.</br></br>Goals, scope, staffing, structure, and funding are established for the COE. |
+| 100: Initial | One or more COEs exist, or the activities are performed within the BI team or IT. There's no clarity on the specific goals nor expectations for responsibilities. </br></br>Requests for assistance from the COE are handled in an unplanned manner. |
+| 200: Repeatable | The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service BI while reducing the risks. </br></br>The goals, scope of responsibilities, staffing, structure, and funding model are established for the COE. |
 | 300: Defined | The COE operates with active involvement from all business units in a unified or federated mode. |
-| 400: Capable | The goals of the COE align with organizational goals, and they are reassessed regularly.</br></br>The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
-| 500: Efficient | Regular reviews of key performance indicators evaluate COE effectiveness.</br></br>Agility and implementing continual improvements from lessons learned are top priorities for the COE. |
+| 400: Capable | The goals of the COE align with organizational goals, and they are reassessed regularly. </br></br>The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
+| 500: Efficient | Regular reviews of KPIs or OKRs evaluate COE effectiveness in a measurable way. </br></br>Agility and implementing continual improvements from lessons learned (including scaling out methods that work) are top priorities for the COE. |
 
 ## Next steps
 

@@ -12,23 +12,25 @@ ms.custom: intro-overview
 
 # What is Power BI embedded analytics?
 
-Power BI embedded analytics allows you to embed your Power BI items such as reports, dashboards and tiles, in a web application or in a website.
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
-Using Power BI embedded analytics you can:
+Power BI embedded analytics allows you to embed your Power BI items such as reports, dashboards and tiles, in a web application or in a website. You can:
 
 * Deliver compelling data experiences for your end users, enabling them to take action based on insights from your solutions data.
 
 * Quickly and easily provide exceptional customer-facing reports, dashboards, and analytics in your own apps by using and branding Power BI as your own.
 
-* Reduce developer resources by automating the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
-
 ## Secure embed
 
-[Secure embed](../../collaborate-share/service-embed-secure.md) is the simplest no-code way to embed a report into any portal that accepts a URL or iFrame. The viewer of the report must be properly licensed and can't interact with the report. Secure embed is available in the Power BI service.
+[Secure embed](../../collaborate-share/service-embed-secure.md) is the simplest no-code way to embed a report into any portal that accepts a URL or iFrame. The viewer of the report must have the proper Power BI license. The viewer can interact with the report, but not edit, save, or make any changes to it. Secure embed is available in the Power BI service.
 
-For more advanced solutions that allow you to build an interactive app for your users, use one of the [Power BI embedded analytics solutions](#what-are-the-power-bi-embedded-analytics-solutions) described in this article.
+For more advanced solutions that give your users more flexibility and control, use one of the [Power BI embedded analytics solutions](#what-are-the-power-bi-embedded-analytics-solutions) described in this article.
 
 ## What are the Power BI embedded analytics solutions?
+
+Power BI embedded analytics gives you additional benefits over secure embed. It offers a rich, fully integrated experience with full API support, automatic authentication, and the reports can be hosted in apps as well as web pages. Embedded analytics allows you to automate the monitoring, management, and deployment of analytics, while getting full control of Power BI features and intelligent analytics.
+
+Power BI Embedded has basically the [same features as Power BI Premium](../../enterprise/service-premium-features.md).
 
 Power BI embedded analytics offers two solutions:
 
@@ -77,7 +79,6 @@ For more information about the differences between the Embedded and Premium SKUs
 
 ## Next steps
 
-* [Power BI Embedded Generation 2](power-bi-embedded-generation-2.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)
 * [Tutorial: Embed Power BI content using a sample embed for your organization application](embed-sample-for-your-organization.md)

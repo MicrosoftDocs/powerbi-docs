@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/21/2021
+ms.date: 01/06/2023
 LocalizationGroup: Get started
 ---
 # Save a Power BI paginated report to a local folder  with Power Automate
@@ -20,21 +20,25 @@ Looking for other Power Automate templates for Power BI paginated reports? See [
 
 ## Prerequisites  
 
-To follow along, make sure you have:
+To follow along, make sure you meet these criteria:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the P1 – P3 SKUs. Read more about [reserved capacities for paginated reports in Power BI Premium](../enterprise/service-premium-what-is.md#paginated-reports).
-- Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
+- You can publish to My Workspace, or you have at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) for any other workspace.
+- You have access to the standard connectors in Power Automate, which come with any Office 365 subscription.
 
 ## Save a Power BI paginated report to a local folder
+
+1. Sign in to Power Automate [flow.microsoft.com](https://flow.microsoft.com/). 
+1. Select **Templates**, and search for **paginated reports**. 
+
+    :::image type="content" source="media/service-automate-paginated-integration/power-bi-paginate-automate.png" alt-text="Screenshot of Power Automate templates for Power BI paginated reports.":::
 
 1. Select the **Save a Power BI paginated report to a local file system** template. Make sure you're signed into Power BI and connected to your local file system. Select **Continue**. 
 
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-save-report-local-file-1.png" alt-text="Save a Power BI paginated report to a local file system.":::
 
-2. You may need to select **Add new connection** to connect to your file system. 
-1. Enter a **Connection Name**, the path to your desired **Root folder**, and authenticate by entering your **User name** and **Password**. Select a **gateway** from the dropdown if you're using an on-premises data gateway.
+1. If you need a new connection, select the ellipses and choose **Add new connection** to connect to your file system. Enter a **Connection Name**, the path to your desired **Root folder**, and authenticate by entering your **User name** and **Password**. Select a **gateway** from the list if you're using an on-premises data gateway.
 
-    :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-set-file-system-2.png" alt-text="Enter a Connection name and Root folder.":::
+    :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-set-file-system-2.png" alt-text="Screenshot that shows how to add a new connection.":::
  
 3. To set the **Recurrence** frequency for your flow, select an option from the **Frequency** dropdown and enter a desired **Interval** value.  
 
@@ -63,5 +67,5 @@ To follow along, make sure you have:
 
 - [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)
-- More questions? [Try the Power BI Community](https://community.powerbi.com/)
+- More questions? [Ask the Power BI Community](https://community.powerbi.com/)
 

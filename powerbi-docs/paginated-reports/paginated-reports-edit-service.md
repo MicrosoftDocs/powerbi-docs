@@ -18,8 +18,7 @@ In this article, you learn how to quickly edit a paginated report in Power BI Re
 
 ## Prerequisites
 
-- Make sure you [install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center before getting started.
-- You need access to a workspace in an a [Premium capacity](../enterprise/service-premium-what-is.md).
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 
 ## Edit a paginated report from the Power BI service
 
@@ -50,7 +49,7 @@ In this article, you learn how to quickly edit a paginated report in Power BI Re
  
 ## Next steps 
 
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
 - [Edit a paginated report in Power BI Report Builder from the service](paginated-reports-download-rdl.md)
 

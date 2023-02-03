@@ -14,9 +14,7 @@ ms.date: 02/01/2023
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro or Premium Per User license to open a report that has been shared with you, unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity or in their own My workspace. For more information, see [Licenses and subscriptions for business users](end-user-license.md).
-
-You can follow along in this tutorial with [Microsoft sample content](https://app.powerbi.com/groups/me/getdata/samples). When you get Microsoft sample content, it is saved in your My workspace.
+A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](../collaborate-share/end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro or Premium Per User license to open a report that has been shared with you, unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity or in their own My workspace. For more information, see [Licenses and subscriptions for business users](end-user-license.md).
 
 Explore the following guidance to learn how to open a report from the Browse page and from a dashboard.
 

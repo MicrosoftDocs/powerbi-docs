@@ -21,7 +21,7 @@ In this tutorial, you build a beautiful report from start to finish in 20 minute
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which month and year had the most profit? 
-- Where is the company seeing the most success (by country)? 
+- Where is the company seeing the most success (by country/region)? 
 - Which product and segment should the company continue to invest in? 
 
 Using our sample finance workbook, we can build this report in no time. Here’s what the final report will look like. Let’s get started! 
@@ -186,9 +186,9 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     Now you can easily see that December 2014 had the most profit.
 
-### Visual 3: Profit by Country 
+### Visual 3: Profit by Country/Region 
 
-Create a map to see which country had the highest profits.
+Create a map to see which country/region had the highest profits.
 
 1. From the Fields pane, drag the **Country** field to a blank area on your report canvas to create a map.
 1. Drag the **Profit** field to the map.
@@ -302,7 +302,7 @@ In summary, this report answers your manager’s top questions:
 
     December 2014 
 
-- Which country is the company seeing the most success in? 
+- Which country/region is the company seeing the most success in? 
 
     In Europe, specifically France and Germany. 
 

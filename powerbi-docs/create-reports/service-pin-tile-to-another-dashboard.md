@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/17/2022
+ms.date: 11/23/2022
 LocalizationGroup: Dashboards
 ---
 # Pin a tile from one dashboard to another dashboard
@@ -22,10 +22,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is to copy 
 ## Pin a tile to another dashboard
 1. [Get data](../connect-data/service-get-data.md). This example uses the [IT Spend Analysis sample](sample-it-spend.md).
 2. Open a [dashboard](../consumer/end-user-dashboards.md).
-3. Hover over the tile you want to pin and select the pushpin icon. 
-   
-    :::image type="content" source="media/service-pin-tile-to-another-dashboard/power-bi-pushpin.png" alt-text="Power B I 'Pin visual' pushpin.":::
-
+3. Hover over the tile you want to pin, select **More options (...)**, then select the pushpin icon. 
 4. Pin the tile to an existing dashboard or to a new dashboard. 
    
    * **Existing dashboard**: select the name of the dashboard from the dropdown.

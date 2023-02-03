@@ -7,7 +7,7 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/16/2022
+ms.date: 11/08/2022
 LocalizationGroup: Share your work
 ---
 # Dataset permissions
@@ -16,14 +16,15 @@ This article describes dataset permissions in the Power BI service and how these
 
 ## What are the dataset permissions?
 
-The table below describes the four levels of permission that control access to datasets in the Power BI service.  
+The table below describes the four levels of permission that control access to datasets in the Power BI service. It also describes the permissions that the dataset owner has on the dataset, and other actions that only the dataset owner can perform.
 
 |Permission  |Description  |
 |------------|-------------|
-|Read        |Allows user to access reports that read data from the dataset.<br>Doesn't provide enhanced discoverability for report authoring from the dataset.<br>Doesn't allow querying using XMLA.|
-|Build       |Allows user to build new content from the dataset, as well as find content that uses the dataset.<br>Allows querying using external APIs like XMLA. |
-|Reshare     |Allows user to share the content of the dataset with other users who will get read, reshare, or build permissions for it. |
-|Write       |Allows user to view and modify dataset metadata. |
+|Read        |Allows user to access reports and other solutions, such as composite models on Premium/PPU workspaces, that read data from the dataset.<br>Allows user to view dataset settings.|
+|Build       |Allows user to build new content from the dataset, as well as find content that uses the dataset.<br>Allows user to access reports that access composite models on Power BI Pro workspaces.<br>Allows user to build composite models.<br>Allows user to pull the data into Analyze in Excel.<br>Allows querying using external APIs such as XMLA. |
+|Reshare     |Allows user to grant dataset access. |
+|Write       |Allows user to republish the dataset.<br>Allows user to [backup and restore the dataset](../enterprise/service-premium-backup-restore-dataset.md).<br>Allows user to make changes to the dataset via XMLA.<br>Allows user to edit dataset settings, except data refresh, credentials, and automatic aggregations.|
+|Owner       |The dataset owner is not a permission per se, but rather a conceptual role that has all the permissions on a dataset. The first dataset owner is the person who created the dataset, and afterwards the last person to configure the dataset after taking it over in the dataset settings.<br><br>The dataset owner can do all of the things mentioned in the permissions above, as well as configure dataset refresh, credentials, and automatic aggregations.|
 
 ## How are the dataset permissions acquired?
 
@@ -33,10 +34,10 @@ A user's role in a workspace implicitly grants them permissions on the datasets 
 
 |                                       |Admin  |Member  |Contributor  |Viewer |
 |---------------------------------------|-------|--------|-------------|-------|
-|**Read**                               |✔️     |✔️     |✔️           |✔️    |
-|**Build**                              |✔️     |✔️     |✔️           |❌    |
-|**Reshare**                            |✔️     |✔️     |❌           |❌    |
-|**Write**                              |✔️     |✔️     |✔️           |❌    |
+|**Read**                               |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::    |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::      |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::            |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::     |
+|**Build**                              |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::      |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::      |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::            |:::image type="icon" source="../includes/media/no-icon.svg" border="false":::   |
+|**Reshare**                            |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::      |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::      |:::image type="icon" source="../includes/media/no-icon.svg" border="false":::          |:::image type="icon" source="../includes/media/no-icon.svg" border="false":::   |
+|**Write**                              |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::      |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::      |:::image type="icon" source="../includes/media/yes-icon.svg" border="false":::            |:::image type="icon" source="../includes/media/no-icon.svg" border="false":::   |
 
 >[!NOTE]
 >Permissions inherited via workspace role can only be changed or taken away from a user by changing or removing their role in the workspace. They can't be changed or removed explicitly using the [manage permissions page](service-datasets-manage-access-permissions.md).

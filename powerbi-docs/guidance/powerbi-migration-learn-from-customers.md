@@ -1,8 +1,8 @@
 ---
 title: Learn from customer Power BI migrations
 description: Learn from customers when migrating to Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

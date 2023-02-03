@@ -1,13 +1,13 @@
 ---
 title: "Power BI adoption roadmap: Content ownership and management"
 description: Develop strategies about how BI content is owned and managed to drive strong and successful adoption of Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 10/31/2022
 ---
 
 # Power BI adoption roadmap: Content ownership and management
@@ -19,7 +19,7 @@ ms.date: 02/27/2022
 
 There are three primary strategies for how business intelligence (BI) content is owned and managed: business-led self-service BI, managed self-service BI, and enterprise BI. For the purposes of this series of articles, the term *content* refers to any type of data item (like a report or dashboard). It's synonymous with *solution*.
 
-The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies are implemented.
+The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies is implemented.
 
 :::image type="content" source="media/powerbi-adoption-roadmap-content-ownership-and-management/powerbi-adoption-roadmap-content-ownership.png" alt-text="Image shows content ownership responsibilities for the three types of BI delivery, which are described in the table below." border="false":::
 
@@ -40,7 +40,7 @@ It's unlikely that an organization operates exclusively with one content ownersh
 - Complexity level.
 - Priorities and leadership commitment level.
 
-The organization's [data culture](powerbi-adoption-roadmap-data-culture.md)—particularly its position on data democratization—has considerable influence on the extent of which of the three content ownership strategies are used. While there are common patterns for success, there is no one-size-fits-all approach. Each organization's governance model and approach to content ownership and management should reflect the differences in data sources, applications, and business context.
+The organization's [data culture](powerbi-adoption-roadmap-data-culture.md)—particularly its position on data democratization—has considerable influence on the extent of which of the three content ownership strategies are used. While there are common patterns for success, there's no one-size-fits-all approach. Each organization's governance model and approach to content ownership and management should reflect the differences in data sources, applications, and business context.
 
 How content is owned and managed has a significant effect on [governance](powerbi-adoption-roadmap-governance.md), the extent of [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md), needs for [user support](powerbi-adoption-roadmap-user-support.md), and the [COE](powerbi-adoption-roadmap-center-of-excellence.md) operating model.
 
@@ -66,7 +66,7 @@ There are many roles related to data management. Roles can be defined many ways 
 | **Role** | **Description** |
 | --- | --- |
 | Data steward | Responsible for defining and/or managing acceptable data quality levels as well as master data management (MDM). |
-| Subject matter expert (SME) | Responsible for defining what the data means, what it is used for, who may access it, and how the data is presented to others. Collaborates with domain owner as needed and supports colleagues in their use of data. |
+| Subject matter expert (SME) | Responsible for defining what the data means, what it's used for, who may access it, and how the data is presented to others. Collaborates with domain owner as needed and supports colleagues in their use of data. |
 | Technical owner | Responsible for creating, maintaining, publishing, and securing access to data and reporting items. |
 | Domain owner | Higher-level decision-maker who collaborates with governance teams on data management policies, processes, and requirements. Decision-maker for defining appropriate and inappropriate uses of the data. Participates on the data governance board, as described in the [governance](powerbi-adoption-roadmap-governance.md) article. |
 
@@ -80,13 +80,13 @@ Assigning ownership for a data domain tends to be more straightforward when mana
 > - Enhancement requests.
 > - Support requests.
 >
-> In the Power BI service, content owners can set the [contact list property](../create-reports/service-item-contact.md) for many types of items. The contact list is also used in security workflows. For example, when a user is sent a URL to open an app but they don't have permission, they will be presented with an option to make a request for access.
+> In the Power BI service, content owners can set the [contact list property](/power-bi/create-reports/service-item-contact) for many types of items. The contact list is also used in security workflows. For example, when a user is sent a URL to open an app but they don't have permission, they will be presented with an option to make a request for access.
 
 Guidelines for being successful with ownership:
 
 - Define how ownership and stewardship terminology is used in your organization, including expectations for these roles.
-- Set [contacts for each workspace](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) and for individual items to communicate ownership and/or support responsibilities.
-- Specify 2-4 [workspace administrators](../collaborate-share/service-roles-new-workspaces.md) and conduct an [audit](/rest/api/power-bi/admin/groups_getgroupusersasadmin) of workspace admins on a regular basis (perhaps twice a year). Workspace admins might be directly responsible for managing workspace content, or it may be that those tasks are assigned to colleagues who do the hands-on work. In all cases, workspace admins should be able to easily contact owners of specific content.
+- Set [contacts for each workspace](/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-contact-list) and for individual items to communicate ownership and/or support responsibilities.
+- Specify 2-4 [workspace administrators](/power-bi/collaborate-share/service-roles-new-workspaces) and conduct an [audit](/rest/api/power-bi/admin/groups_getgroupusersasadmin) of workspace admins regularly (perhaps twice a year). Workspace admins might be directly responsible for managing workspace content, or it may be that those tasks are assigned to colleagues who do the hands-on work. In all cases, workspace admins should be able to easily contact owners of specific content.
 - Include consistent branding on reports to indicate who produced the content and who to contact for help. A small image or text label located in the report footer is valuable, especially when the report is exported from the Power BI service. A standard template, as described in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article, can encourage and simplify the consistent use of branding.
 - Make use of best practices reviews with the COE, which are discussed in the [COE](powerbi-adoption-roadmap-center-of-excellence.md) article.
 
@@ -109,10 +109,10 @@ Business-led self-service BI is most suitable when:
 
 Guidelines for being successful with business-led self-service BI:
 
-- Teach your creators to use the same techniques that IT would use, like [shared datasets](../connect-data/service-datasets-across-workspaces.md) and [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md). Having fewer duplicated datasets reduces maintenance, improves consistency, and reduces risk.
+- Teach your creators to use the same techniques that IT would use, like [shared datasets](/power-bi/connect-data/service-datasets-across-workspaces) and [dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service). Having fewer duplicated datasets reduces maintenance, improves consistency, and reduces risk.
 - Focus on providing mentoring, training, resources, and documentation (described in the [mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article). The importance of these efforts can't be overstated. Be prepared for skill levels of self-service content creators to vary significantly. It's also common for a solution to deliver excellent business value yet be built in such a way that it won't scale or perform well over time (as historic data volumes increase). Having the [COE](powerbi-adoption-roadmap-center-of-excellence.md) available to help when these situations arise is very valuable.
-- Provide guidance on the best way to use endorsements. The [promoted endorsement](../collaborate-share/service-endorse-content.md#promote-content) is for content produced by self-service creators. Consider reserving use of the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) for enterprise BI content and managed self-service BI content (discussed next).
-- Analyze the [activity log](../admin/service-admin-auditing.md) to discover situations where the COE could proactively contact self-service owners to offer helpful information. It's especially useful when a suboptimal usage pattern is detected. For example, log activity could reveal overuse of individual item sharing when an app or workspace roles may be a better choice. The data from the activity log allows the COE to offer support and advice to the business units. In turn, this information can help increase the quality of solutions, while allowing the business to retain full ownership and control of their content.
+- Provide guidance on the best way to use endorsements. The [promoted endorsement](/power-bi/collaborate-share/service-endorse-content#promote-content) is for content produced by self-service creators. Consider reserving use of the [certified endorsement](/power-bi/collaborate-share/service-endorse-content#certify-content) for enterprise BI content and managed self-service BI content (discussed next).
+- Analyze the [activity log](/power-bi/admin/service-admin-auditing) to discover situations where the COE could proactively contact self-service owners to offer helpful information. It's especially useful when a suboptimal usage pattern is detected. For example, log activity could reveal overuse of individual item sharing when an app or workspace roles may be a better choice. The data from the activity log allows the COE to offer support and advice to the business units. In turn, this information can help increase the quality of solutions, while allowing the business to retain full ownership and control of their content.
 
 ## Managed self-service BI
 
@@ -130,12 +130,12 @@ Managed self-service BI is most suitable when:
 
 Guidelines for being successful with self-service BI:
 
-- Teach users to [separate model and report development](report-separate-from-model.md#separate-report-files). They can use [live connections](../connect-data/desktop-report-lifecycle-datasets.md) to create reports based on existing datasets. When the dataset is decoupled from the report, it promotes data reuse by many reports and many authors. It also facilitates the separation of duties.
-- Use [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) to centralize data preparation logic and to share commonly used data tables—like date, customer, product, or sales—with many dataset creators. Refine the dataflow as much as possible, using friendly column names and correct data types to reduce the downstream effort required by dataset authors, who consume the dataflow as a source. Dataflows are an effective way to reduce the time involved with data preparation and improve data consistency across datasets. The use of dataflows also reduces the number of data refreshes on source systems and allows fewer users requiring direct access to source systems.
-- When self-service creators need to augment an existing dataset with departmental data, educate them to use [DirectQuery connections to Power BI datasets and Azure Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md). This feature allows for an ideal balance of self-service enablement while taking advantage of the investment in data assets that are centrally managed.
-- Use the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) for datasets and dataflows to help content creators identify trustworthy sources of data.
+- Teach users to [separate model and report development](report-separate-from-model.md#separate-report-files). They can use [live connections](/power-bi/connect-data/desktop-report-lifecycle-datasets) to create reports based on existing datasets. When the dataset is decoupled from the report, it promotes data reuse by many reports and many authors. It also facilitates the separation of duties.
+- Use [dataflows](/power-bi/transform-model/dataflows/dataflows-introduction-self-service) to centralize data preparation logic and to share commonly used data tables—like date, customer, product, or sales—with many dataset creators. Refine the dataflow as much as possible, using friendly column names and correct data types to reduce the downstream effort required by dataset authors, who consume the dataflow as a source. Dataflows are an effective way to reduce the time involved with data preparation and improve data consistency across datasets. The use of dataflows also reduces the number of data refreshes on source systems and allows fewer users who require direct access to source systems.
+- When self-service creators need to augment an existing dataset with departmental data, educate them to use [DirectQuery connections to Power BI datasets and Azure Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services). This feature allows for an ideal balance of self-service enablement while taking advantage of the investment in data assets that are centrally managed.
+- Use the [certified endorsement](/power-bi/collaborate-share/service-endorse-content#certify-content) for datasets and dataflows to help content creators identify trustworthy sources of data.
 - Include consistent branding on all reports to indicate who produced the content and who to contact for help. Branding is particularly helpful to distinguish content that is produced by self-service creators. A small image or text label in the report footer is valuable when the report is exported from the Power BI service.
-- Consider implementing separate [workspaces](../collaborate-share/service-new-workspaces.md) for storing data and reports. This approach allows for better clarity on who is responsible for content. It also allows for more restrictive [workspace roles](../collaborate-share/service-roles-new-workspaces.md) assignments. That way, report creators can only publish content to their reporting workspace; and, read and build dataset permissions allow creators to create new reports with row-level security (RLS) in effect, when applicable.
+- Consider implementing separate [workspaces](/power-bi/collaborate-share/service-new-workspaces) for storing data and reports. This approach allows for better clarity on who is responsible for content. It also allows for more restrictive [workspace roles](/power-bi/collaborate-share/service-roles-new-workspaces) assignments. That way, report creators can only publish content to their reporting workspace; and, read and build dataset permissions allow creators to create new reports with row-level security (RLS) in effect, when applicable.
 - Use the [Power BI REST APIs](/rest/api/power-bi/) to compile an inventory of Power BI items. Analyze the ratio of datasets to reports to evaluate the extent of dataset reuse.
 
 ## Enterprise BI
@@ -147,14 +147,14 @@ Enterprise BI is most suitable when:
 - Centralizing content management with a single team aligns with the organization's data culture.
 - The organization has BI expertise to manage all the BI items end-to-end.
 - The content needs of consumers are well-defined, and there's little need to customize or explore data beyond the reporting solution that's delivered.
-- Content ownership and direct access to data needs to be limited to a small number of people.
+- Content ownership and direct access to data needs to be limited to a few people.
 - The data is highly sensitive or subject to regulatory requirements.
 
 Guidelines for being successful with enterprise BI:
 
-- Implement a rigorous process for use of the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) for datasets, reports, and apps. Not all enterprise BI content needs to be certified, but much of it probably should be. Certified content should indicate that data quality has been validated. Certified content should also follow change management rules, have formal support, and be fully documented. Because certified content has passed rigorous standards, the expectations for trustworthiness are higher.
+- Implement a rigorous process for use of the [certified endorsement](/power-bi/collaborate-share/service-endorse-content#certify-content) for datasets, reports, and apps. Not all enterprise BI content needs to be certified, but much of it probably should be. Certified content should indicate that data quality has been validated. Certified content should also follow change management rules, have formal support, and be fully documented. Because certified content has passed rigorous standards, the expectations for trustworthiness are higher.
 - Include consistent branding on enterprise BI reports to indicate who produced the content, and who to contact for help. A small image or text label in the report footer is valuable when the report is exported from the Power BI service.
-- If you use specific report branding to indicate enterprise BI content, be careful with the *save a copy* functionality that would allow a user to download a copy of a report and personalize it. Although this functionality is an excellent way to bridge enterprise BI with managed self-service BI, it dilutes the value of the branding. A more seamless solution is to provide a separate [Power BI Desktop template file](../create-reports/desktop-templates.md#using-report-templates) for self-service authors. The template defines a starting point for report creation with a live connection to an existing dataset, and it doesn't include branding. The template file can be shared as a link within a Power BI app, or from the community site.
+- If you use specific report branding to indicate enterprise BI content, be careful with the *save a copy* functionality that would allow a user to download a copy of a report and personalize it. Although this functionality is an excellent way to bridge enterprise BI with managed self-service BI, it dilutes the value of the branding. A more seamless solution is to provide a separate [Power BI Desktop template file](/power-bi/create-reports/desktop-templates#using-report-templates) for self-service authors. The template defines a starting point for report creation with a live connection to an existing dataset, and it doesn't include branding. The template file can be shared as a link within a Power BI app, or from the community site.
 
 ## Ownership transfers
 
@@ -181,28 +181,34 @@ It's also possible for a centralized team to transfer ownership to a business un
 
 ## Considerations and key actions
 
-Here is a list of considerations and key actions you can take to strengthen your approach to content ownership and management:
+:::image type="icon" source="media/common/checklist.png" border="false":::
 
-- Ensure you deeply understand how content ownership and management is happening throughout the organization. Recognize that there likely won't be a one-size-fits-all approach to apply uniformly across the entire organization. Review the Power BI implementation planning [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) to understand how Power BI can be used in diverse ways.
-- Determine what is currently working well, what isn't working well, and what the desired balance is between the three ownership strategies. If necessary, schedule discussions with specific people on various teams. Develop a plan for moving from the current state to the desired state.
-- If your enterprise BI team currently has challenges related to scheduling and priorities, do an assessment to determine if a managed self-service BI strategy can be put in place to empower more content creators throughout the organization. Managed self-service BI can be extremely effective on a global scale.
-- Clarify terms used in your organization for owner, data steward, and subject matter expert. Make sure roles and responsibilities are documented, including backup personnel.
-- Ensure that all your content owners—from both the business and IT—are part of your [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
-- Determine how you will use the contacts feature in Power BI. Communicate with content creators about how it should be used, and why it's important.
-- If ownership transfers occur regularly, create a process for how it will work.
-- Determine your strategy for using [external tools](https://powerbi.microsoft.com/blog/community-tools-for-enterprise-powerbi-and-analysisservices/) for advanced authoring capabilities and increased productivity.
+**Checklist** - Here's a list of considerations and key actions you can take to strengthen your approach to content ownership and management.
+
+> [!div class="checklist"]
+> - **Gain a full understanding of what's currently happening:** Ensure you deeply understand how content ownership and management is happening throughout the organization. Recognize that there likely won't be a one-size-fits-all approach to apply uniformly across the entire organization. Review the Power BI implementation planning [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) to understand how Power BI can be used in diverse ways.
+> - **Conduct discussions:** Determine what is currently working well, what isn't working well, and what the desired balance is between the three ownership strategies. If necessary, schedule discussions with specific people on various teams. Develop a plan for moving from the current state to the desired state.
+> - **Perform an assessment:** If your enterprise BI team currently has challenges related to scheduling and priorities, do an assessment to determine if a managed self-service BI strategy can be put in place to empower more content creators throughout the organization. Managed self-service BI can be extremely effective on a global scale.
+> - **Clarify terminology:** Clarify terms used in your organization for owner, data steward, and subject matter expert.
+> - **Assign clear roles and responsibilities:** Make sure roles and responsibilities for owners, stewards, and subject matter experts are documented and well understood by everyone involved. Include backup personnel.
+> - **Ensure community involvement:** Ensure that all your content owners—from both the business and IT—are part of your [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
+> - **Create user guidance for owners and contacts in Power BI:** Determine how you will use the contacts feature in Power BI. Communicate with content creators about how it should be used, and why it's important.
+> - **Create a process for handling ownership transfers:** If ownership transfers occur regularly, create a process for how it will work.
+> - **Support your advanced content creators:** Determine your strategy for using [external tools](https://powerbi.microsoft.com/blog/community-tools-for-enterprise-powerbi-and-analysisservices/) for advanced authoring capabilities and increased productivity.
 
 ## Maturity levels
 
-The following maturity levels will help you assess the current state of your content ownership and management:
+:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+
+The following maturity levels will help you assess the current state of your content ownership and management.
 
 | **Level** | **State of Power BI content ownership and management** |
 | --- | --- |
-| 100: Initial | Content is owned and managed by self-service creators throughout the organization in an uncontrolled way, without a specific strategy.</br></br>A high ratio of datasets to reports exists, indicating an opportunity to improve data reusability and reduce the number of duplicate datasets.</br></br>Discrepancies between different reports is common, causing distrust of content produced by others. |
-| 200: Repeatable | A plan is in place for which content ownership and management strategy to use and in which circumstances.</br></br>Initial steps are taken to improve the consistency and trustworthiness levels for self-service BI efforts.</br></br>Guidance for the user community is available that includes expectations for self-service versus enterprise content. |
-| 300: Defined | Managed self-service BI is a priority and an area of investment to further advance the data culture. The priority is to allow report creators the flexibility they need while using well-managed, secure, and trustworthy data sources.</br></br>Report branding is consistently used to indicate who produced the content.</br></br>A [mentoring program](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) exists to educate self-service content creators on how to apply best practices and make good decisions. |
-| 400: Capable | Criteria is defined to align governance requirements for self-service versus enterprise content.</br></br>There is a plan in place for how to request and handle ownership transfers.</br></br>Managed self-service BI—and techniques for the reuse of data—are commonly used and well-understood. |
-| 500: Efficient | Proactive measures are in place to communicate with a user when any concerning user activities are detected in the activity log.</br></br>External tools are used by highly proficient content creators to improve productivity and efficiency. |
+| 100: Initial | Self-service content creators own and manage content in an uncontrolled way, without a specific strategy. </br></br>A high ratio of datasets to reports exists. When many datasets only support one report, it indicates opportunities to improve data reusability, improve trustworthiness, reduce maintenance and the number of duplicate datasets. </br></br>Discrepancies between different reports is common, causing distrust of content produced by others. |
+| 200: Repeatable | A plan is in place for which content ownership and management strategy to use and in which circumstances. </br></br>Initial steps are taken to improve the consistency and trustworthiness levels for self-service BI efforts. </br></br>Guidance for the user community is available that includes expectations for self-service versus enterprise content. </br></br>Roles and responsibilities are clear and well understood by everyone involved. |
+| 300: Defined | Managed self-service BI is a priority and an area of investment to further advance the data culture. The priority is to allow report creators the flexibility they need while using well-managed, secure, and trustworthy data sources. </br></br>Report branding is consistently used to indicate who produced the content. </br></br>A [mentoring program](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) exists to educate self-service content creators on how to apply best practices and make good decisions. |
+| 400: Capable | Criteria is defined to align governance requirements for self-service versus enterprise content. </br></br>There's a plan in place for how to request and handle ownership transfers. </br></br>Managed self-service BI—and techniques for the reuse of data—are commonly used and well-understood. |
+| 500: Efficient | Proactive steps to communicate with users occur when any concerning activities are detected in the activity log. Education and information are provided to make gradual improvements or reduce risk. </br></br>Third-party tools are used by highly proficient content creators to improve productivity and efficiency. |
 
 ## Next steps
 

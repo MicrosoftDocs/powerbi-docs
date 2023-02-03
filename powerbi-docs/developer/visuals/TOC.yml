@@ -29,6 +29,8 @@
       href: import-visual.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.yml
+    - name: "Examples of Power BI visuals"
+      href: samples.md
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"
@@ -127,7 +129,7 @@
     - name: "License enforcement API"
       href: licensing-api.md
     - name: Transactability and licensing FAQ
-      href: licensing-faq.md
+      href: licensing-faq.yml
   - name: Reference
     items: 
     - name: "Changelog"
@@ -176,9 +178,7 @@
     items:
     - name: "Dev Center"
       href: https://powerbi.microsoft.com/developers/
-    - name: "Examples of Power BI visuals"
-      href: samples.md
     - name: "Custom Visuals Git Repo"
-      href: https://github.com/PowerBi-Projects/PowerBI-visuals/
+      href: https://github.com/MicrosoftDocs/powerbi-docs/blob/live/powerbi-docs/developer/visuals/samples.md
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md

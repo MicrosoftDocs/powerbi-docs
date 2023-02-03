@@ -40,13 +40,11 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 > [!IMPORTANT]
 > The enhanced compute engine works only for A3 or larger Power BI capacities.
 
-# [Premium Gen2](#tab/gen2)
-
-In Premium Gen2, the enhanced compute engine is individually set for each dataflow. There are three configurations to choose from:
+In Power BI Premium, the enhanced compute engine is individually set for each dataflow. There are three configurations to choose from:
 
 * **Disabled**
 
-* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when the dataflow is connected to another dataflow.
+* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when a table in the dataflow is referenced by another table or when the dataflows is connected to another dataflow in the same workspace.
 
 * **On**
 
@@ -66,19 +64,13 @@ To change the default setting and enable the enhanced compute engine, do the fol
 
     :::image type="content" source="media\dataflows-premium-features\apply-enhanced-compute-engine-settings.png" alt-text="Screenshot of the enhanced compute engine settings with the on selection turned on and the apply button highlighted.":::
 
-# [Premium Gen1](#tab/gen1)
-
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** and save your settings.
-
----
-
 ### Using the enhanced compute engine
 
 Once the enhanced compute engine is on, return to **dataflows** and you should see a performance improvement in any computed table that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity. 
 
 To make best use of the compute engine, split the ETL stage into two separate dataflows, in the following way:
 
-* **Dataflow 1** - this dataflow should only be ingesting all of the required from a data source, and placing it into dataflow 2.
+* **Dataflow 1** - this dataflow should only be ingesting all of the required from a data source.
 * **Dataflow 2** - perform all ETL operations in this second dataflow, but ensure you're referencing Dataflow 1, which should be on the same capacity. Also ensure you perform operations that can fold (filter, group by, distinct, join) first, before any other operation, to ensure the compute engine is utilized.
 
 ### Common questions and answers

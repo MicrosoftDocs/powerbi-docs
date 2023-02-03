@@ -1,22 +1,22 @@
 ---
 title: Analysis Services multidimensional data in Power BI Desktop
-description: SQL Server Analysis Services (SSAS) multidimensional data in Power BI Desktop
+description: Learn how to access SQL Server Analysis Services multidimensional data in Power BI Desktop. You can publish models in live mode to the Power BI service.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/14/2021
+ms.date: 01/20/2023
 LocalizationGroup: Connect to data
 ---
 # Connect to SSAS multidimensional models in Power BI Desktop
 
-With Power BI Desktop, you can access *SSAS multidimensional models*, commonly referred to as *SSAS MD*.
+With Power BI Desktop, you can access SQL Server Analysis Services (SSAS) multidimensional models, commonly referred to as *SSAS MD*.
 
 To connect to an SSAS MD database, select **Get data**, choose **Database** > **SQL Server Analysis Services database**, and then select **Connect**:
 
-![SQL Server Analysis Services (SSAS) database, Get Data dialog box, Power BI Desktop](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
+![Screenshot shows the Get Data dialog in Power BI Desktop with SQL Server Analysis Services database selected.](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
 The Power BI service and Power BI Desktop both support SSAS multidimensional models in live connection mode. You can publish and upload reports that use **SSAS Multidimensional models** in live mode to the Power BI service.
 
@@ -26,20 +26,20 @@ The following sections describe features and capabilities of Power BI and SSAS M
 
 ### Tabular metadata of multidimensional models
 
-The following table shows the correspondence between multidimensional objects and the tabular metadata that's returned to Power BI Desktop. Power BI queries the model for tabular metadata. Based on the returned metadata, Power BI Desktop runs appropriate DAX queries against SSAS when you create a visualization (such as a table, matrix, chart, or slicer).
+The following table shows the correspondence between multidimensional objects and the tabular metadata that's returned to Power BI Desktop. Power BI queries the model for tabular metadata. Based on the returned metadata, Power BI Desktop runs appropriate DAX queries against SSAS when you create a visualization, such as a table, matrix, chart, or slicer.
 
-| BISM-Multidimentional object | Tabular Metadata |
-| --- | --- |
-| Cube |Model |
-| Cube dimension |Table |
-| Dimension attributes (keys), name |Columns |
-| Measure group |Table |
-| Measure |Measure |
-| Measures without associated measure group |Within table called *Measures* |
-| Measure group -> Cube dimension relationship |Relationship |
-| Perspective |Perspective |
-| KPI |KPI |
-| User/parent-child hierarchies |Hierarchies |
+| BISM-Multidimensional object | Tabular Metadata |
+|:--- |:--- |
+| Cube | Model |
+| Cube dimension | Table |
+| Dimension attributes (keys), name | Columns |
+| Measure group | Table |
+| Measure | Measure |
+| Measures without associated measure group | Within table called *Measures* |
+| Measure group -> Cube dimension relationship | Relationship |
+| Perspective | Perspective |
+| KPI | KPI |
+| User/parent-child hierarchies | Hierarchies |
 
 ### Measures, measure groups, and KPIs
 
@@ -49,9 +49,9 @@ To help simplify complex models in a multidimensional model, you can define a se
 
 ### Dimension attribute type
 
-Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *Country*, and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You'll recognize these associations by the *map* icon next to the element in the **Field** pane in Power BI.
+Multidimensional models also support associating dimension attributes with specific dimension attribute types. For example, a **Geography** dimension where the *City*, *State-Province*, *CountryRegion*, and *Postal Code* dimension attributes have appropriate geography types associated with them are exposed in the tabular metadata. Power BI recognizes the metadata, enabling you to create map visualizations. You can recognize these associations by the *map* icon next to the element in the **Field** pane in Power BI.
 
-Power BI can also render images when you provide a field that contains URLs (uniform resource locators) of the images. You may specify these fields as *ImageURL* types in SQL Server Data Tools (or then in Power BI). Its type information is then provided to Power BI in the tabular metadata. Power BI can then retrieve those images from the URL and display them in visuals.
+Power BI can also render images when you provide a field that contains uniform resource locators (URLs) of the images. You might specify these fields as *ImageURL* types in SQL Server Data Tools, or then in Power BI Desktop. Its type information is then provided to Power BI in the tabular metadata. Power BI can then retrieve those images from the URL and display them in visuals.
 
 ### Parent-child hierarchies
 
@@ -64,7 +64,7 @@ Multidimensional models support creation of various types of *calculated members
 * Calculated members on attribute hierarchies that aren't siblings of *All*
 * Calculated members on user hierarchies
 
-Multidimensional models expose *calculated members on attribute hierarchies* as values of a column. You have a few additional options and constraints if you expose this type of calculated member:
+Multidimensional models expose *calculated members on attribute hierarchies* as values of a column. You have a few other options and constraints if you expose this type of calculated member:
 
 * A dimension attribute can have an optional *UnknownMember*.
 
@@ -72,7 +72,7 @@ Multidimensional models expose *calculated members on attribute hierarchies* as 
 
 * An attribute containing calculated members can't be a parent-child attribute.
 
-The calculated members of user hierarchies aren't exposed in Power BI. You can instead connect to a cube that contains calculated members on user hierarchies. However, you'll be unable to see calculated members if they don't meet the constraints that we mentioned in the previous bulleted list.
+The calculated members of user hierarchies aren't exposed in Power BI. You can instead connect to a cube that contains calculated members on user hierarchies. However, you can't see calculated members if they don't meet the constraints that are mentioned in the previous bulleted list.
 
 ### Security
 
@@ -86,7 +86,7 @@ There are certain limitations to using SSAS MD:
 
 * *Actions* and *named sets* aren't exposed to Power BI. To create visuals and reports, you can still connect to cubes that also contain actions or named sets.
 
-* When Power BI displays metadata for an SSAS model, occasionally you can't retrieve data from the model. This scenario can occur if you've installed the 32-bit version of the MSOLAP provider, but not the 64-bit version. Installing the 64-bit version may resolve the issue.
+* When Power BI displays metadata for an SSAS model, occasionally you can't retrieve data from the model. This scenario can occur if you've installed the 32-bit version of the Microsoft Online Analytical Processing provider, but not the 64-bit version. Installing the 64-bit version might resolve the issue.
 
 * You can't create *report level* measures when authoring a report that is connected live to an SSAS multidimensional model. The only measures that are available are measures defined in the MD model.
 
@@ -112,6 +112,6 @@ Consumption of the following elements is supported in this release of SSAS MD. F
 
 ## Troubleshooting
 
-The following list describes all known issues when connecting to SQL Server Analysis Services (SSAS).
+The following list describes all known issues when connecting to SQL Server Analysis Services.
 
-* **Error : Couldn't load model schema** - This error usually occurs when the user connecting to Analysis Services doesn't have access to database/cube.
+* **Error : Couldn't load model schema**. This error usually occurs when the user connecting to Analysis Services doesn't have access to database/cube.

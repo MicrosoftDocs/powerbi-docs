@@ -1,28 +1,28 @@
 ---
-title: Monitor Power BI Premium Gen2 capacities with the Gen2 metrics app.
-description: Learn how to use the Power BI Gen2 metrics app Metrics app, which lets you monitor Power BI Premium Gen2 capacities.
+title: Monitor Power BI Premium capacities with the Premium metrics app.
+description: Learn how to use the Power BI Premium metrics app Metrics app, which lets you monitor Power BI Premium capacities.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 09/04/2022
+ms.date: 01/25/2023
 LocalizationGroup: Premium 
 ---
 
-# Use the Gen2 metrics app
+# Use the Premium metrics app
 
-The Power BI Premium utilization and metrics app is designed to provide monitoring capabilities for Power BI Gen2 Premium capacities. Monitoring your capacities is essential for making informed decisions on how to best use your Premium capacity resources. For example, the app can help identify when to scale up your capacity or when to turn on [autoscale](service-premium-auto-scale.md).
+The Power BI Premium utilization and metrics app is designed to provide monitoring capabilities for Power BI Premium capacities. Monitoring your capacities is essential for making informed decisions on how to best use your Premium capacity resources. For example, the app can help identify when to scale up your capacity or when to turn on [autoscale](service-premium-auto-scale.md).
 
 >[!NOTE]
 >When turning on autoscale, make sure there are no [Azure policies](/azure/governance/policy/overview) preventing autoscale from working.
 
 The app is updated often with new features and functionalities and provides the most in-depth information into how your capacities are performing.
 
-To [install the Gen2 metrics app](service-premium-install-gen2-app.md), you must be a capacity admin. Once installed, anyone in the organization with the right permissions can view the app.
+To [install the Premium metrics app](service-premium-install-gen2-app.md), you must be a capacity admin. Once installed, anyone in the organization with the right permissions can view the app.
 
-The Gen2 metrics app has six pages:
+The Premium metrics app has six pages:
 
 * [Overview](#overview)
 
@@ -40,19 +40,19 @@ This page provides an overview of the capacity performance. It's divided into th
 
 At the top of each page, the **CapacityID** field allows you to select the capacity the app shows results for.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Gen2 metrics app, with the capacity I D selector highlighted.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Premium metrics app, with the capacity I D selector highlighted.":::
 
 ### Artifacts
 
 The artifacts section is made up of two visuals, one on top of the other, in the left side of the page. The top visual is a stacked column table, and below it is a matrix table.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Premium metrics app.":::
 
 #### Multi metric column chart
 
 A stacked column table that provides an hourly view of your capacity's usage. Drill down to a specific day to identify daily patterns. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/multi-metric-column-chart.png" alt-text="A screenshot showing the multi metric column chart, in the overview page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/multi-metric-column-chart.png" alt-text="A screenshot showing the multi metric column chart, in the overview page, in the Power BI Premium metrics app.":::
 
 The Multi metric column chart displays the four values listed below. It shows the top results for these values per Power BI item during the past two weeks.
 
@@ -70,9 +70,9 @@ The Multi metric column chart displays the four values listed below. It shows th
 
 A matrix table that displays metrics for each Power BI item on the capacity.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Premium metrics app.":::
 
-To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below.
+To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below. The colors in the table represent your *performance delta*.
 
 :::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by artifact and operation visual parameter headers.":::
 
@@ -90,6 +90,11 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 * **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
 
+    The colors in the matrix represent your *performance delta*:
+    * *No color* - A value higher than -10
+    * *Orange* - A value between -10 and -25
+    * *Red* - A value lower than -25
+
     To create the *performance delta* Power BI calculates an hourly average for all the fast operations that take under 200 milliseconds to complete. The hourly value is used as a slow moving average over the last seven days (168 hours). The slow moving average is then compared to the average between the most recent data point, and a data point from seven days ago. The *performance delta* indicates the difference between these two averages.
 
     You can use the *performance delta* value to assess whether the average performance of your Power BI items improved or worsened over the past week. The higher the value is, the better the performance is likely to be. A value close to zero indicates that not much has changed, and a negative value suggests that the average performance of your Power BI items got worse over the past week.
@@ -100,7 +105,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 The performance section is made up of four visuals, one on top of the other, in the middle of the page.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/performance-section.png" alt-text="A screenshot showing the performance section, in the overview page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/performance-section.png" alt-text="A screenshot showing the performance section, in the overview page, in the Power BI Premium metrics app.":::
 
 #### CPU over time
 
@@ -121,11 +126,11 @@ The CPU over time chart displays the following elements:
 
 * **Interactive CPU** - Red columns represent the number of CPU seconds used during interactive operations in a 30 second period.
 
-    [*Interactive*](service-premium-interactive-background-operations.md#interactive-operations) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads and are handled by backend cores.
+    [*Interactive*](service-premium-interactive-background-operations.md#interactive-operations) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads.
 
 * **Background** - Blue columns represent the number of CPU seconds used during background operations in a 30 second period.
 
-    [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes. These operations are handled by backend cores.
+    [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes.
 
 * **CPU Limit** - A yellow dotted line that shows the threshold of the allowed number of CPU seconds for the selected capacity. Columns that stretch above this line, represent timepoints where the capacity is overloaded.
 
@@ -149,7 +154,7 @@ The aggregate is taken from the total number of operations performed on a Power 
 
 The weekly trendlines section is made up of four visuals, one on top of the other, in the right side of the report. These visuals summarize the capacity's behavior over the past four weeks. This section is designed to provide a snapshot of your capacity, highlighting trends for the past four weeks.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/weekly-trendlines.png" alt-text="A screenshot showing the weekly trendlines section, in the overview page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/weekly-trendlines.png" alt-text="A screenshot showing the weekly trendlines section, in the overview page, in the Power BI Premium metrics app.":::
 
 #### CPU
 
@@ -176,7 +181,7 @@ This page provides information about overloads in your capacity. You can use it 
 
 When you detect a Power BI item that causes overload, you can either optimize that item to reduce its impact on the capacity, or you can scale up the capacity.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/evidence-page.png" alt-text="A screenshot showing the evidence page in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/evidence-page.png" alt-text="A screenshot showing the evidence page in the Power BI Premium metrics app.":::
 
 ### Artifacts causing overloading
 
@@ -225,7 +230,7 @@ This page is designed to help you identify aspects concerning refresh performanc
 >[!NOTE]
 >You can get to a version of this page, dedicated to a specific Power BI item, using the drill through feature in one of the visuals that displays individual items. The visuals in the drill through version of the page are identical to the ones listed below. However, they only display information for the item you're drilling into.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/refresh-page.png" alt-text="A screenshot showing the refresh page in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/refresh-page.png" alt-text="A screenshot showing the refresh page in the Power BI Premium metrics app.":::
 
 At the top of the page there's a multi-selection pivot allowing you to focus on refreshing the page according to the filters listed below. Each of these pivots filters all the visuals in the refresh page.
 
@@ -285,6 +290,9 @@ On the right side of the refresh page, there are two visuals designed to help yo
 
 All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
+>[!NOTE]
+>Start and end times may occur before or after the displayed time period, due to [background](service-premium-interactive-background-operations.md#background-operations) [smoothing](service-premium-smoothing.md) operations.  
+
 >[!IMPORTANT]
 >You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
 >
@@ -292,7 +300,7 @@ All the activities in the capacity are ranked according to their compute impact.
 >
 > * [Overloading windows](#overloading-windows) in the *Evidence* page
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-page.png" alt-text="A screenshot showing the timepoint page in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-page.png" alt-text="A screenshot showing the timepoint page in the Power BI Premium metrics app.":::
 
 When the total combined CPU for *interactive* and *background* operations exceeds the 30 second timepoint allowance, the capacity is overloaded and depending on whether autoscale is enabled or not, throttling is applied.
 
@@ -307,7 +315,7 @@ When the total combined CPU for *interactive* and *background* operations exceed
 
 This section describes the operations of the visuals in the top row of the timepoint page.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-cards.png" alt-text="A screenshot showing the timepoint cards section, in the timepoint page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-cards.png" alt-text="A screenshot showing the timepoint cards section, in the timepoint page, in the Power BI Premium metrics app.":::
 
 * **Top left card** - Displays the timepoint used to drill through to this page.
 
@@ -343,7 +351,7 @@ A table showing every [interactive operation](service-premium-interactive-backgr
 
 * **End** - The time the interactive operation finished.
 
-* **Status** - An indication showing if the operation succeeded or failed.
+* **Status** - An indication showing if the operation succeeded or failed. Cancelled operations are reported as failed operations.
 
     >[!NOTE]
     >CPU usage for failed operations is counted when determining if the capacity is in overload.
@@ -362,7 +370,7 @@ A table showing every [interactive operation](service-premium-interactive-backgr
 
 ### Background Operations
 
-A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload.
+A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload. For more information see [performance smoothing](service-premium-smoothing.md).
 
 All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations table doesn't have a *users* column.
 
@@ -378,7 +386,7 @@ This page provides useful information about a specific Power BI item.
 
 You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Premium metrics app.":::
 
 ### Overloading
 
@@ -396,21 +404,21 @@ The overloading visual has the following columns:
 
 Displays the percentage of fast, moderate, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Premium metrics app.":::
 
 [!INCLUDE [gen2-app-fast-moderate-slow-operations](../includes/gen2-app-fast-moderate-slow-operations.md)]
 
 ### Artifact size
 
-This visual displays the peak amount of memory detected in any three hour window, over a 14 day period, for the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
+This visual displays the peak amount of memory consumption detected in any three hour window, over a 14 day period, for the operations performed on the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Premium metrics app.":::
 
 ### CPU duration and users
 
 Use these visuals to review CPU consumption, operation duration and number of users for the item you're drilling into. In these visuals, each column represents a single hour over a 14 day period.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Gen2 metrics app.":::
+:::image type="content" source="media/service-premium-gen2-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Premium metrics app.":::
 
 * **CPU** - Each column displays the number of CPU seconds used to complete each operation per hour.
 
@@ -432,9 +440,9 @@ Use these visuals to review CPU consumption, operation duration and number of us
 
     * *Operations triggered by Power BI* - [Background operations](service-premium-interactive-background-operations.md#background-operations) that include system operations such as dataset or dataflow refreshes. Sometimes these operations are performed by Power BI on behalf of a user. For example, a refresh operation may execute background queries to cache tile results for users who viewed these tiles recently. The tile refresh cache queries provide a much faster performance for users, when they next view the dashboard.
 
-* [Email subscriptions](../consumer/end-user-subscribe.md) will be sent with the app's default filter and slicer states. 
+* [Email subscriptions](/power-bi/collaborate-share/end-user-subscribe) will be sent with the app's default filter and slicer states. 
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Install the Gen2 metrics app](service-premium-install-gen2-app.md)
+> [Install the Premium metrics app](service-premium-install-gen2-app.md)

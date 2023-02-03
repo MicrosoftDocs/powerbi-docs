@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Data loss prevention for Power BI"
 description: "Learn about data loss prevention for Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -61,7 +61,7 @@ The goal for this type of DLP policy is to bring awareness to users and inform a
 The [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md) article covers using Defender for Cloud Apps for monitoring the Power BI service. The remainder of this article focuses on DLP for Power BI.
 
 > [!IMPORTANT]
-> A DLP policy for Power BI that's set up in the Microsoft Purview compliance portal may be applied only for content that's stored in a Power BI [Premium Gen2](/power-bi/enterprise/service-premium-gen2-what-is) workspace. However, policies that are set up in Defender for Cloud Apps don't have a similar Power BI Premium prerequisite. Be aware that the functionality, purpose, and available actions differ for the two toolsets. To achieve maximum effect, we recommend that you consider using both toolsets.
+> A DLP policy for Power BI that's set up in the Microsoft Purview compliance portal may be applied only for content that's stored in a Power BI [Premium](/power-bi/enterprise/service-premium-gen2-what-is) workspace. However, policies that are set up in Defender for Cloud Apps don't have a similar Power BI Premium prerequisite. Be aware that the functionality, purpose, and available actions differ for the two toolsets. To achieve maximum effect, we recommend that you consider using both toolsets.
 
 ## Prerequisites for DLP for Power BI
 
@@ -257,7 +257,7 @@ For more information about workspace, see the [workspace planning](powerbi-imple
 
 To use DLP, there are several [licensing requirements](/power-bi/enterprise/service-security-dlp-policies-for-power-bi#licensing-and-permissions). A [Microsoft Purview Information Protection](https://www.microsoft.com/security/business/information-protection/microsoft-purview-information-protection) license is required for the administrators who will set up, manage, and oversee DLP. You might already have these licenses because they're included in some license suites, such as [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). Alternatively, [Microsoft 365 E5 Compliance](https://www.microsoft.com/security/business/compliance/e5-compliance) capabilities may be purchased as a standalone license.
 
-Also, DLP policies for Power BI require [Power BI Premium Gen2](/power-bi/enterprise/service-premium-gen2-what-is). This [licensing requirement](/power-bi/enterprise/service-security-dlp-policies-for-power-bi#considerations-and-limitations) can be met with a Premium capacity or a Premium Per User (PPU) license.
+Also, DLP policies for Power BI require [Power BI Premium](/power-bi/enterprise/service-premium-gen2-what-is). This [licensing requirement](/power-bi/enterprise/service-security-dlp-policies-for-power-bi#considerations-and-limitations) can be met with a Premium capacity or a Premium Per User (PPU) license.
 
 > [!TIP]
 > If you need clarifications about licensing requirements, talk to your Microsoft account team. Note that the Microsoft 365 E5 Compliance license includes other DLP capabilities that are out scope for this article.

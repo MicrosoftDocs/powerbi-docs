@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 10/24/2022
+ms.date: 12/01/2022
 
 LocalizationGroup: Share your work
 ---
@@ -32,7 +32,7 @@ Your app consumers can't modify the contents of the app. They can interact with 
 To create or update an app, you need a Power BI Pro or Premium Per User (PPU) license. For app *consumers*, there are two options.
 
 * **The workspace for this app is *not* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view your app. 
-* **The workspace for this app *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
+* **The workspace for this app *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md) for details.
 
 ## Create and publish your app
 When the content in your workspace is ready, you can start the publishing process. You decide how many different audience groups you need. Then you choose which content you want to publish to each audience. You can create up to ten audience groups in one app. 
@@ -136,6 +136,18 @@ Now that you've decided on the audiences and the content for each audience, it's
 
 Your app consumers can also request access to your app by searching for the app from Apps marketplace or AppSource. See the [app consumer view](#app-consumer-view) section of this article for more about the app experience for consumers.
 
+#### Publish the app to your entire organization
+
+You can add your entire organization to any of the app audience groups when you publish your app.
+
+- In **Manage audience access**, select **Entire organization**.
+
+However, this option is disabled in these three scenarios:
+
+- You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
+- You're a guest user who has been assigned a workspace role. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](../admin/service-admin-portal-content-pack-app.md#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+
 ## Manage app access requests
 
 After you publish an app, you can manage app permission.
@@ -154,7 +166,7 @@ The Permission management page contains these tabs:
 - **Pending access**: Lists all pending requests.
 
   :::image type="content" source="media/service-create-distribute-apps/access-permission-page.png" alt-text="Screenshot of manage permission page.":::
- 
+
 ## Change your published app
 
 After you publish your app, you may want to change or update it. 
@@ -241,10 +253,13 @@ Things to keep in mind about publishing apps:
 * You can create up to ten audience groups per app.
 * We have temporarily relaxed the access list limit from 100 users or groups per audience group for the app. However, please note that this is temporary, and we might change the limit in the near future. We still recommend you use one or more user groups that contain all the desired users.
 * If the user you added to the app access list already has access to the app through the workspace, they're not shown in the access list for the app.  
-* When you select a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
+* You can either pin an entire report page to a dashboard using Live pin or pin a single visual as a tile from a report to the dashboard. 
+* When you select a visual pinned as a tile in a dashboard in a published app, you're directed to the underlying report in the app. If the app creator chose not to include a report that has a related dashboard in the app, you're not directed to the underlying report when you select the related tile.
+* In order to see an entire report page pinned as a live pin to a dashboard or a drill-down report to work, the app creators have to include the report in the app audience. 
 * The support site URL is shown in the item information card.
 * By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
 * Currently, having multiple audiences isn't supported in Power BI Mobile apps and deployment pipelines. This is a temporary limitation.
+* You can't open an added link or see its content if you chose to open the link in the content area.
 * Apps can have a maximum of 200 dashboards. 
 
 ## Next steps

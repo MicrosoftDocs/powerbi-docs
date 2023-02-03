@@ -1,13 +1,13 @@
 ---
 title: "Power BI usage scenarios: Enterprise BI"
 description: "Learn how Power BI enterprise BI is about organization-wide content distribution at scale."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 11/17/2022
 ---
 
 # Power BI usage scenarios: Enterprise BI
@@ -16,7 +16,7 @@ ms.date: 02/27/2022
 
 As described in the [Power BI adoption roadmap](powerbi-adoption-roadmap-content-delivery-scope.md#enterprise-bi), *enterprise BI* is characterized by having a significantly larger number of content consumers, compared to a much smaller number of authors who create and publish content.
 
-The distinction between the enterprise BI and the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenarios is the use of [Power BI Premium capacity](../enterprise/service-premium-what-is.md), which allows content to be widely [distributed to consumers](../fundamentals/service-features-license-type.md) who have a Power BI free license. Consumers can include users within the organization, as well as [guest users](whitepaper-azure-b2b-power-bi.md) who are external to the organization.
+The distinction between the enterprise BI and the [departmental BI](powerbi-implementation-planning-usage-scenario-departmental-bi.md) scenarios is the use of [Power BI Premium capacity](../enterprise/service-premium-gen2-what-is.md), which allows content to be widely [distributed to consumers](../fundamentals/service-features-license-type.md) who have a Power BI free license. Consumers can include users within the organization, as well as [guest users](whitepaper-azure-b2b-power-bi.md) who are external to the organization.
 
 Large enterprise BI implementations often employ a centralized approach. Enterprise Power BI content is commonly maintained by a centralized team, for use broadly throughout the organization. The centralized team responsible for content management is usually IT, BI, or the [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md).
 
@@ -39,11 +39,11 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the Power Query Editor. |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development and report creation are done in Power BI Desktop. The purpose is to help colleagues understand the meaning and significance of data by placing it in a visual context. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, content creators publish their Power BI Desktop file (.pbix) to the Power BI service. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | Report creators develop paginated reports using Power BI Report Builder. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | Report creators develop paginated reports by using Power BI Report Builder. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | Power BI Report Builder queries data from one or more data source types. A paginated report is produced to meet requirements for a highly formatted, print-ready report. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | When ready, report creators publish their Power BI Report Builder file (.rdl) to the Power BI service. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | Multiple Power BI item types can be published to a [Premium workspace](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). This workspace license mode supports paginated reports. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | In the enterprise BI scenario, use of [Premium capacity](../enterprise/service-premium-what-is.md) (rather than Premium Per User) is depicted. This choice is made to support content delivery to many content viewers who have a free Power BI license. |
+| ![Item 8.](media/common/icon-08-red-30x30.png) | Multiple Power BI item types can be published to a [Premium workspace](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). |
+| ![Item 9.](media/common/icon-09-red-30x30.png) | In the enterprise BI scenario, use of [Premium capacity](../enterprise/service-premium-gen2-what-is.md) (rather than Premium Per User) is depicted. This choice is made to support content delivery to many content viewers who have a free Power BI license. |
 | ![Item 10](media/common/icon-10-red-30x30.png) | Some, or all, reports and dashboards are published as a [Power BI app](../consumer/end-user-apps.md). The purpose of the app is to provide a set of related content for consumers to view in a user-friendly way. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | Power BI app users are assigned read-only permissions. App permissions are managed separately from the workspace. In an enterprise BI scenario, users with any type of Power BI license (free, Power BI Pro, or PPU) can be assigned as a viewer of the app. This feature applies only when the workspace is assigned a license mode of **Premium per capacity** (free users cannot access workspace content when it's assigned a license mode of **Premium per user** or **Embedded**). |
 | ![Item 12.](media/common/icon-12-red-30x30.png) | The Power BI mobile apps are also available for viewing app and workspace content. |
@@ -60,13 +60,13 @@ The following are some key points to emphasize about the enterprise BI scenario.
 
 ### Choice of report authoring tools
 
-When the workspace license mode is **Premium** (via either Power BI capacity or Premium Per User), paginated reports can be published to the workspace. [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is a tool to develop highly interactive reports, whereas [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) is a tool to develop paginated reports. For more information about when to use paginated reports, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
+ [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is a tool to develop highly interactive reports, whereas [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) is a tool to develop paginated reports. For more information about when to use paginated reports, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
 Excel reports can also be published to the Power BI service (not depicted in the scenario diagram) when a PivotTable or PivotChart better meets reporting requirements.
 
 ### Source file storage
 
-For enterprise BI, it's important to store the source Power BI Desktop files and Power BI Report Builder files in a secure, shared location. Locations such as OneDrive for Business or SharePoint (not depicted in the scenario diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
+For enterprise BI, it's important to store the source Power BI Desktop files and Power BI Report Builder files in a secure, shared location. Locations such as OneDrive for work or school or SharePoint (not depicted in the scenario diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
 
 When the co-management of a BI solution involves multiple people with different skillsets, consider decoupling the model and reports into separate Power BI Desktop files (described in the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario). This approach encourages reuse of the dataset, and is more efficient than continually alternating between the people who are editing the Power BI Desktop file. That's particularly helpful when, for instance, one person works on the dataset while another person works on the reports.
 
@@ -96,7 +96,7 @@ Users with a Power BI free license (or Power BI Pro or PPU license) can view con
 
 ### Power BI Premium capacity license
 
-Use of a P SKU (such as P1, P2, P3, P4, or P5) [capacity-based license](../enterprise/service-premium-faq.yml#what-is-power-bi-premium---) is described in this scenario. A P SKU is required for typical production scenarios and is appropriate for the enterprise BI scenario described in this article.
+Use of a [P SKU](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) (such as P1, P2, P3, P4, or P5) is described in this scenario. A P SKU is required for typical production scenarios and is appropriate for the enterprise BI scenario described in this article.
 
 ### Manage lifecycle of content
 
