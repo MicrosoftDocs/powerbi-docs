@@ -1032,7 +1032,12 @@
         },
         {
             "source_path": "powerbi-docs/service-shared-with-me.md",
-            "redirect_url": "/power-bi/consumer/end-user-shared-with-me",
+            "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-shared-with-me.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
             "redirect_document_id": true
         },
         {
@@ -1426,7 +1431,12 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/paginated-reports-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/paginated-reports-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
             "redirect_document_id": false
         },
         {
@@ -1466,7 +1476,12 @@
         },
         {
             "source_path": "powerbi-docs/report-builder-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/report-builder-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/report-builder-parameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/report-builder-parameters",
             "redirect_document_id": false
         },
         {
@@ -1501,7 +1516,12 @@
         },
         {
             "source_path": "powerbi-docs/report-builder-url-pass-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/report-builder-url-pass-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/pass-report-parameter-url",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-url-pass-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/pass-report-parameter-url",
             "redirect_document_id": false
         },
         {
@@ -3428,6 +3448,11 @@
             "source_path": "powerbi-docs/desktop-export-to-pdf.md",
             "redirect_url": "/power-bi/consumer/end-user-pdf",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-pdf.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-pdf",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-gridlines-snap-to-grid.md",

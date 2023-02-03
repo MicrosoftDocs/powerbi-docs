@@ -55,4 +55,4 @@ Take some time to explore the data in the dashboards and reports that make up th
 
 - View [Apps in Power BI](end-user-apps.md)
 - [View a report in the Power BI service for business users](end-user-report-open.md)
-- [Display the dashboards and reports that have been shared with me](end-user-shared-with-me.md)
+- [Display the dashboards and reports that have been shared with me](../collaborate-share/end-user-shared-with-me.md)

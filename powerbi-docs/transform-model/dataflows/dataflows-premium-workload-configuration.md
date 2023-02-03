@@ -27,7 +27,7 @@ After enabling the dataflows workload, it is configured with default settings. Y
 
 ## Refining dataflow settings in Premium Gen1
 
-Once dataflows are enabled, you can use the **Admin portal** to change, or refine, how dataflows are created and how they use resources in your Power BI Premium Gen1 subscription. Premium Gen2 doesn't require memory settings to be changed. Memory in Premium Gen2 is automatically managed by the underlying system. The following steps show how to adjust your dataflow settings.
+Once dataflows are enabled, you can use the **Admin portal** to change, or refine, how dataflows are created and how they use resources in your Power BI Premium subscription. Power BI Premium doesn't require memory settings to be changed. Memory in Power BI Premium is automatically managed by the underlying system. The following steps show how to adjust your dataflow settings.
 
 1. In the **Admin portal**, select **Tenant settings** to list all capacities that have been created. Select a capacity to manage its settings.
 

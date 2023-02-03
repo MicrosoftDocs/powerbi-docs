@@ -15,7 +15,7 @@ ms.date: 06/11/2021
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
-A report is one or more pages of visuals. Reports are created by Power BI *designers* and [shared with *business users directly*](end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). To open a report, you'll need either a Power BI Pro license, or for the report to be part of a workspace that is stored in a Premium capacity. [Learn about licenses and subscriptions](end-user-license.md)
+A report is one or more pages of visuals. Reports are created by Power BI *designers* and [shared with *business users directly*](../collaborate-share/end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). To open a report, you'll need either a Power BI Pro license, or for the report to be part of a workspace that is stored in a Premium capacity. [Learn about licenses and subscriptions](end-user-license.md)
 
 There are many different ways to open a report and we'll show you two of them: open from Home and open from a dashboard. 
 

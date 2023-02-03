@@ -43,7 +43,7 @@ On the navigation pane, you can find dashboards in:
 - **Browse**
   - **Recent** - if you've recently visited a dashboard
   - **Favorites** - if you've [set a dashboard as a favorite](end-user-favorite.md)
-  - **Shared with me** - if a colleague has [shared a dashboard with you](end-user-shared-with-me.md)
+  - **Shared with me** - if a colleague has [shared a dashboard with you](../collaborate-share/end-user-shared-with-me.md)
 - **Apps** - most apps contain both dashboards and reports
 - **My workspace** - if you've downloaded any of the [Power BI samples](../create-reports/sample-datasets.md)
 

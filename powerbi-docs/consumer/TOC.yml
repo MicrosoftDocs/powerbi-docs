@@ -56,8 +56,6 @@
       href: end-user-interactions.md
     - name: "Interact with report slicers"
       href: end-user-slicer.md
-    - name: "Export a report to PDF"
-      href: end-user-pdf.md
     - name: "How to identify and use buttons"
       href: end-user-buttons.md     
     - name: "Add a bookmark to a report"
@@ -118,8 +116,6 @@
       href: end-user-favorite.md
     - name: "Print a dashboard, print a dashboard tile, print a report page"
       href: end-user-print.md
-    - name: "View content shared with me"
-      href: end-user-shared-with-me.md
     - name: "View related content"
       href: end-user-related.md
     - name: "View recent content"
