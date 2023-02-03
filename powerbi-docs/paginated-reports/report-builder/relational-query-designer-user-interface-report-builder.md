@@ -71,7 +71,7 @@ ms.author: maggies
 -   **Delete Field** Deletes the selected field.  
   
 #### Group and aggregate  
- Queries to databases with a large table might return a number of data rows that is too large to be useful in a report and has a performance impact on the network that transports the vast amount of data and on the paginated reports capacity that processes the report. To limit the number of data rows, the query can include SQL aggregates that summarize the data on the database server. SQL aggregates are different from client-side aggregates, which are applied when the report is rendered.  
+ Queries to databases with a large table might return too many data rows to be useful in a report. Too many rows can have a performance impact on the network that transports the vast amount of data and on the paginated reports capacity that processes the report. To limit the number of data rows, the query can include SQL aggregates that summarize the data on the database server. SQL aggregates are different from client-side aggregates, which are applied when the report is rendered.  
   
  Aggregates provide summaries of data, and the data is grouped to support the aggregate that delivers the summary data. When you use an aggregate in the query, the other fields returned by the query are automatically grouped and the query includes the SQL GROUP BY clause. You can summarize data without adding an aggregate by using only the **Grouped by** option in the **Group and Aggregate** list. Many of the aggregates include a version that uses the DISTINCT keyword. Including DISTINCT eliminates duplicate values.  
   
