@@ -12,7 +12,7 @@ metadata:
   LocalizationGroup: Premium
 title: Power BI Premium Per User
 summary: |
-  Organizations can use Power BI **Premium Per User** to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and includes features such as paginated reports, AI, and other capabilities only available to Premium subscribers. 
+  Organizations can use Power BI **Premium Per User** to license Premium features on a per-user basis. Premium Per User (PPU) includes all Power BI Pro license capabilities, and includes features such as XMLA endpoints, AI, and other capabilities only available to Premium subscribers. 
   
   ![Screenshot showing the License mode information panel. Premium per user is selected.](media/service-premium-per-user-faq/premium-per-user-faq-01b.png)
   
