@@ -32,7 +32,7 @@ In the **Adobe Analytics** window that appears, select the **Sign in** button, a
 
 When prompted, put in your account information. Once the connection is established, you can preview and select multiple dimensions and measures within the Power BI **Navigator** dialog to create a single tabular output. You can also provide any necessary input parameters required for the selected items.
 
-:::image type="content" source="media/desktop-connect-adobe-analytics/connect-adobe-analytics_04.png" alt-text="Screenshot shows where you can select data using Navigator." lightbox="media/desktop-connect-adobe-analytics/connect-adobe-analytics_04.png" :::
+:::image type="content" source="media/desktop-connect-adobe-analytics/connect-adobe-analytics_04.png" alt-text="Screenshot shows where you can select data using Navigator.":::
 
 You can **Load** the selected table, which brings the entire table into Power BI Desktop, or you can **Transform Data** the query, which opens Query Editor. You can filter and refine the set of data you want to use, and then load that refined set of data into Power BI Desktop.
 
