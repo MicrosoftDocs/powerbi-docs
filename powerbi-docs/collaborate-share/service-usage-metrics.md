@@ -1,6 +1,6 @@
 ---
-title: Monitor usage metrics in My workspace
-description: How to view, save, and use usage metrics for Power BI dashboards and reports in My workspace. 
+title: Monitor report usage metrics
+description: How to view, save, and use usage metrics for Power BI dashboards and reports. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -12,9 +12,9 @@ ms.date: 08/10/2022
 LocalizationGroup: Dashboards
 ---
 
-# Monitor usage metrics in My workspace
+# Monitor report usage metrics
 
-Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines usage metrics reports for your My workspace.
+Usage metrics help you understand the impact of your dashboards and reports. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose. This article outlines report usage metrics.
 
 Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying dataset, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
@@ -59,7 +59,7 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 ![Dashboard usage metrics report](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
-### Report Usage Metrics report
+### Report Usage Metrics
 
 ![Report usage metrics report](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
@@ -150,6 +150,8 @@ Power BI is available in separate national clouds. These clouds offer the same l
 
 ## Considerations and limitations
 
+Usage Metrics is not supported in My Workspace.
+
 ### Discrepancies between audit logs and usage metrics
 
 It's important to understand that differences can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *usage metrics* are collected on the client. Aggregate counts of activities in audit logs may not always match usage metrics, because of the following differences:
@@ -161,15 +163,15 @@ It's important to understand that differences can occur when comparing usage met
 
 ### Discrepancies between REST APIs and usage metrics
 
-The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST APIs](/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate. Also note that the admin APIs give you the "current state" of the Power BI deployment and only consider what exists at the time of the request. The My workspace usage metrics report has 90 days of data, and the "total count" represents unique reports viewed over 90 days. If reports are deleted after they are viewed, they are not counted by the admin APIs but will be counted in the historical data feeding the usage report.
+The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST APIs](/rest/api/power-bi/admin) also use Power BI service data. For the reasons described in the previous section, report counts (the number of reports) from the APIs can differ from report counts in usage metrics. Report counts derived from the APIs are unaffected by client issues and should be considered accurate. Also note that the admin APIs give you the "current state" of the Power BI deployment and only consider what exists at the time of the request. The report usage metrics has 90 days of data, and the "total count" represents unique reports viewed over 90 days. If reports are deleted after they are viewed, they are not counted by the admin APIs but will be counted in the historical data feeding the usage report.
 
-### My workspace usage metrics aren't supported with Private Links 
+### Report usage metrics aren't supported with Private Links 
 
-If your organization is using [Private Links](../enterprise/service-security-private-links.md), My workspace usage metrics reports will contain no data. There is currently a limitation when transferring client information over private links. 
+If your organization is using [Private Links](../enterprise/service-security-private-links.md), report usage metrics will contain no data. There is currently a limitation when transferring client information over private links. 
 
 ### Other considerations
 
-You need to view the content in your My workspace, from within that workspace, at least once. If there are no views of the content from the workspace itself at least once, data isn't correlated from the application views in the Usage Metrics Report. To unblock the processing of data for this report, just view the content from your workspace at least once.
+You need to view the content in your report, from within that workspace, at least once. If there are no views of the content from the workspace itself at least once, data isn't correlated from the application views in the Usage Metrics Report. To unblock the processing of data for this report, just view the content from your workspace at least once.
 
 
 ## Frequently asked questions
