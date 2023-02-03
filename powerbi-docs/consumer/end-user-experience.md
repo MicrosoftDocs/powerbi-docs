@@ -60,7 +60,7 @@ The sample content is organized within the context of a workspace. Every busines
 
 **My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center, is saved in your **My workspace**. 
 
-A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards, reports, and datasets. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have Owner-level permissions by default.
+A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards, reports, and datasets. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
 
 ![App workspace screen with More actions menu displayed for the report](./media/end-user-experience/power-bi-more-action.png)
 
@@ -103,7 +103,9 @@ The nav pane will become more useful as colleagues share content with you. In th
 
 :::image type="content" source="media/end-user-experience/power-bi-nav-pane.png" alt-text="Screenshot of the left navigation menu.":::
 
-:::image type="content" source="media/end-user-experience/power-bi-home-icon.png" alt-text="Screenshot of the Home icon."::: The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. Home is a great starting point for viewing and navigating your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues.
+:::image type="content" source="media/end-user-experience/power-bi-home-icon.png" alt-text="Screenshot of the Home icon."::: 
+
+The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. Home is a great starting point for viewing and navigating your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues.
 
 ![Screenshot of a full Home.](./media/end-user-experience/power-bi-home-page.png)
 
@@ -122,13 +124,15 @@ For more information, see [Recent content](end-user-recent.md), [Favorite dashbo
 ## Open Apps
 
 :::image type="content" source="./media/end-user-experience/power-bi-apps-icon.png" alt-text="Screenshot of the Apps icon on the navigation pane.":::
+
 Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet, but this is the content area that will store  all apps that have been shared with you or that you've installed.
 
 For more information, see [Apps in Power BI](end-user-apps.md).
 
 ## Open the Learning center
 
-:::image type="content" source="./media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the icon for the Learning center.":::For new users, the Learning center is especially helpful, with getting started content, samples, and links to videos.
+:::image type="content" source="./media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the icon for the Learning center.":::
+For new users, the Learning center is especially helpful, with getting started content, samples, and links to videos.
 
 
 ### Search and sort content
@@ -137,8 +141,6 @@ For more information, see [Apps in Power BI](end-user-apps.md).
 When you're new to the Power BI service, you only have a few pieces of content. But as colleagues begin sharing data with you and you begin downloading apps, you might end up with long lists of content. That's when you find searching and sorting extremely helpful.
 
 Search is available from almost every part of the Power BI service. Just look for the search box or search magnifying glass icon.  
-
-
 
 In the Search field, you can type all or part of the name of a dashboard, report, workbook, app, or owner. Power BI searches all of your content.
 
