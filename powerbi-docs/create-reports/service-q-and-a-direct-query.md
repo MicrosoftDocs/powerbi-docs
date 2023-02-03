@@ -36,7 +36,7 @@ For more information, see:
 
 ## Enable Q&A
 
-Once you have the data gateway set up, connect to your data from Power BI. Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data. You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
+Once you have the data gateway set up, connect to your data from Power BI. Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data. You might also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
 
 1. In the upper-right corner of Power BI, select the cog icon :::image type="icon" source="media/service-q-and-a-direct-query/power-bi-cog.png"::: and choose **Settings**.
 
