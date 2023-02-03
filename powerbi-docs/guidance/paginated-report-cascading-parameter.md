@@ -15,7 +15,7 @@ ms.date: 01/14/2020
 This article targets you as a report author designing Power BI [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md). It provides scenarios for designing cascading parameters. Cascading parameters are report parameters with dependencies. When a report user selects a parameter value (or values), it's used to set available values for another parameter.
 
 > [!NOTE]
-> An introduction to cascading parameters, and how to configure them, isn't covered in this article. If you're not completely familiar with cascading parameters, we recommend you first read [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
+> An introduction to cascading parameters, and how to configure them, isn't covered in this article. If you're not completely familiar with cascading parameters, we recommend you first read [Add Cascading Parameters to a Report in Power BI Report Builder](../paginated-reports/parameters/add-cascading-parameters-report-builder.md).
 
 ## Design scenarios
 
@@ -277,6 +277,6 @@ Be sure to optimize your data sources by:
 For more information related to this article, check out the following resources:
 
 - [Report parameters in Power BI Report Builder](../paginated-reports/parameters/report-builder-parameters.md)
-- [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
+- [Add Cascading Parameters to a Report (Report Builder and SSRS)](../paginated-reports/parameters/add-cascading-parameters-report-builder.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

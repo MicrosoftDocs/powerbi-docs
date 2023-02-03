@@ -506,7 +506,7 @@
         href: ../paginated-reports/subreports-troubleshoot.md
     - name: Data sources and datasets
       items: 
-      - name: Understanding paginated report data
+      - name: Understand paginated report data
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
@@ -528,12 +528,16 @@
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
+    - name: Tables, matrixes, lists
+      href: ../paginated-reports/report-builder-tables-matrices-lists.md
     - name: Parameters
       items:
-      - name: Report parameters
-        href: ../paginated-reports/parameters/report-builder-parameters.md
+      - name: Parameters
+        href: ../paginated-reports/report-builder-parameters.md
       - name: Report parameter concepts in paginated reports
         href: ../paginated-reports/parameters/report-parameters-concepts-report-builder.md
+      - name: Create parameters
+        href: ../paginated-reports/paginated-reports-parameters.md
       - name: Create parameters
         href: ../paginated-reports/parameters/paginated-reports-create-parameters.md
       - name: URL parameters in paginated reports
@@ -550,6 +554,26 @@
         href: ../paginated-reports/parameters/add-multi-value-parameter-to-report.md
       - name: Built-in parameters collection references
         href: ../paginated-reports/parameters/built-in-collections-parameters-collection-references-report-builder.md
+      - name: Add or modify parameters
+        href: ../paginated-reports/parameters/add-change-delete-report-parameter-report-builder.md
+      - name: Add or modify values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
+      - name: Add or modify default values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-default-values-for-a-report-parameter.md
+      - name: Add a subreport and parameters
+        href: ../paginated-reports/parameters/add-subreport-parameters-report-builder.md
+      - name: Add cascading parameters
+        href: ../paginated-reports/parameters/add-cascading-parameters-report-builder.md
+      - name: Define parameters in DAX for Analysis Services data source
+        href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
+    - name: Process large reports
+      href: ../paginated-reports/report-design/process-large-reports.md      
+    - name: Sample Power BI paginated reports
+      href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
@@ -570,6 +594,10 @@
       href: ../paginated-reports/paginated-reports-rls.md
     - name: Set report views
       href: ../paginated-reports/page-view.md
+    - name: Subreports
+      href: ../paginated-reports/subreports.md
+    - name: Troubleshoot subreports
+      href: ../paginated-reports/subreports-troubleshoot.md
     - name: Publish a paginated report
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
     - name: Embed a paginated report
@@ -580,6 +608,8 @@
       items: 
       - name: Report Builder in Power BI
         href: ../paginated-reports/report-builder-power-bi.md
+      - name: Planning a report
+        href: ../paginated-reports/report-builder-planning-report.md
       - name: Add filters to a paginated report
         href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
       - name: Commonly used filters
@@ -590,6 +620,10 @@
         href: ../paginated-reports/paginated-reports-change-log.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Preview reports
+        href: ../paginated-reports/report-builder-previewing-reports.md
+      - name: Design tips
+        href: ../paginated-reports/report-builder-design-tips.md
       - name: Tables, matrixes, lists
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
       - name: Keyboard shortcuts in Power BI Report Builder
