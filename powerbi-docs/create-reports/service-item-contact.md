@@ -39,7 +39,7 @@ When you select the contact, Power BI creates an email so that you can ask quest
 
 ## Set contact information for a report or dashboard
 
-By default, the person who creates a report or dashboard is the contact for it. If you set a value, it overrides that default. You can remove all the people or groups from the contact list. When you do this, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) is shown. If the workspace contact list isn't set, then workspace admins are shown.
+By default, the person who creates a report or dashboard is the contact for it. If you set a value, it overrides that default. You can remove all the people or groups from the contact list. After you remove them, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) is shown. If the workspace contact list isn't set, then workspace admins are shown.
 
 1. In a workspace, select the **All** tab.
 2. Locate the desired item, select **More options (...)** > **Settings**.
@@ -53,7 +53,7 @@ By default, the person who creates a report or dashboard is the contact for it. 
 ## Considerations and limitations
 
 * You can set any user or group in the contact list, but they're not automatically granted permission to the item. Use sharing or give users who need it access to the workspace through a role.
-* The report or dashboard contact information doesn’t get pushed into apps when you [publish an app](../collaborate-share/service-create-distribute-apps.md). By default, the contact name for dashboards and reports in an app is the workspace name, which is not a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.
+* The report or dashboard contact information doesn’t get pushed into apps when you [publish an app](../collaborate-share/service-create-distribute-apps.md). By default, the contact name for dashboards and reports in an app is the workspace name, which isn't a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.
 * Why do we recommend listing only one contact? If a dashboard or report has multiple contacts, when someone opens the report header and selects the link to email the contacts, some email clients separate the names with commas instead of semicolons. The resulting email address won't work.
 
 ## Next steps
