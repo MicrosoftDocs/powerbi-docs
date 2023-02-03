@@ -106,14 +106,14 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 | Capacity node | V-cores | RAM (GB) | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- |
-| EM1/A1 with [Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) | 1 |   |  3.75 |
-| EM2/A2 with [Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) | 2 |   |  7.5  |
-| EM3/A3 with [Premium Gen2](../../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) | 4 |   | 15    |
-| P1/A4 |   8 |  25 |  30 |
-| P2/A5 |  16 |  50 |  60 |
-| P3/A6 |  32 | 100 | 120 |
-| P4    |  64 | 200 | 240 |
-| P5    | 128 | 400 | 480 |
+| EM1/A1 |   1 |     |  3.75 |
+| EM2/A2 |   2 |     |  7.5 |
+| EM3/A3 |   4 |     | 15  |
+| P1/A4  |   8 |  25 |  30 |
+| P2/A5  |  16 |  50 |  60 |
+| P3/A6  |  32 | 100 | 120 |
+| P4     |  64 | 200 | 240 |
+| P5     | 128 | 400 | 480 |
 
 ---
 

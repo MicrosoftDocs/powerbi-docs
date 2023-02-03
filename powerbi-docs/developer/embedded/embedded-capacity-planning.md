@@ -54,19 +54,19 @@ The following table summarizes all the limitations that are dependent on the cap
 
 To test or assess your capacity load:
 
-1. Create a [Gen2 Power BI Embedded capacity in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Azure Active Directory (Azure AD) tenant as your Power BI tenant and a user account that's signed in to that same tenant.
+1. Create a [Premium Power BI Embedded capacity in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Azure Active Directory (Azure AD) tenant as your Power BI tenant and a user account that's signed in to that same tenant.​
 
-2. Assign the workspace (or workspaces) you'll use to test to the Gen2 capacity you created. You can assign a workspace in one of the following ways:
+2. Assign the workspace (or workspaces) you'll use to test to the Premium capacity you created. You can assign a workspace in one of the following ways:
 
    * *Programmatically* with the [Groups AssignToCapacity API](/rest/api/power-bi/capacities/groups-assign-to-capacity). Check the assignment status with the [Groups CapacityAssignmentStatus API](/rest/api/power-bi/capacities/groups-capacity-assignment-status) or via a *PowerShell* script. For sample code, see the `AssignWorkspacesToCapacity` function in the [Zero-Downtime-Capacity-Scale sample on GitHub](https://github.com/Azure-Samples/powerbi-powershell/blob/master/Zero-Downtime-Capacity-Scale.ps1).
    * *Manually* as a workspace admin or via the Admin portal as a capacity admin. For more information, see [Assign a workspace to a capacity by using a master user](./move-to-production.md#assign-a-workspace-to-a-capacity-by-using-a-master-user).
 
-3. As the capacity admin, [install the Power BI Premium Capacity Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md), which is also known as the Gen2 metrics app. Provide the capacity ID and time (in days) to monitor, and then refresh the data. For more information, see [Use the Gen2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md).
+3. As the capacity admin, [install the Power BI Premium Capacity Utilization and Metrics app](../../enterprise/service-premium-install-gen2-app.md). Provide the capacity ID and time (in days) to monitor, and then refresh the data. For more information, see [Use the Premium metrics app](../../enterprise/service-premium-gen2-metrics-app.md).​
 
 4. Use the [Power BI Capacity Load Assessment Tool](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) to assess your capacity needs. This GitHub repository also includes a [video walk-through](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/#video-walk-through). Use this tool carefully: test with up to a few dozen concurrent simulated users and extrapolate for higher concurrent loads (hundreds or thousands, depending on your needs.) For more information, see [Assess your capacity load](./load-assessment-planning-tool.md).
 Alternatively, use other load testing tools, but treat the iFrame as a black box and simulate user activity via JavaScript code.
 
-5. Use the [Gen 2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md) that you installed in step 3 to monitor the capacity utilization incurred via the load testing tool. Alternatively, you can monitor the capacity by checking the [Gen2 metrics](./monitor-power-bi-embedded-reference.md) by using [alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-overview).
+5. Use the [Gen 2 metrics app](../../enterprise/service-premium-gen2-metrics-app.md) that you​ installed in step 3 to monitor the capacity utilization incurred via the load testing tool. Alternatively, you can monitor the capacity by checking the [Premium metrics](./monitor-power-bi-embedded-reference.md) by using [alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-overview).
 
 Consider using a larger SKU for your capacity if the actual CPU incurred on your capacity by the load testing is approaching the capacity limit.
 

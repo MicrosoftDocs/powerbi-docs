@@ -34,7 +34,7 @@ Select the **Title** to view more information about that specific known issue. F
 
 |  Issue ID |  Area                              |  Title           |  Issue publish date |  Status  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
-|  165      |  Refresh Data                      |  [Long running, failed or stuck dataflow in Premium Gen2](known-issue-dataflow-on-premium-gen2.md) | April 7, 2022 |  Fixed: November 1, 2022   |
+|  165      |  Refresh Data                      |  [Long running, failed or stuck dataflow in Power BI Premium](known-issue-dataflow-on-premium-gen2.md) | April 7, 2022 |  Fixed: November 1, 2022   |
 |  195      |  Share and Collaborate             |  [Using a link in a paginated report subscription doesn't apply the report parameters](known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md)   |  June 21, 2022        |  Fixed: September 2, 2022 |
 |  151      |  Create and Author Data            |  [Unable to open protected Desktop file](known-issue-unable-open-protected-desktop-file.md)     |  March 13, 2022        |  Fixed: September 2, 2022 |
 |  220      |  Gateway                           |  [Gateway data source owners cannot update data source credentials](known-issue-220-gateway-data-source-owners-cant-update-credentials.md)   |  August 3, 2022  |  Fixed: September 2, 2022  |

@@ -45,13 +45,13 @@ The table below lists the Power BI operations. It provides a short description f
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
+> [What is Power BI Premium?](service-premium-gen2-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium Gen2 architecture](service-premium-architecture.md)
+> [Power BI Premium architecture](service-premium-architecture.md)
 
 > [!div class="nextstepaction"]
-> [Managing Premium Gen2 capacities](service-premium-capacity-manage-gen2.md)
+> [Managing Premium capacities](service-premium-capacity-manage-gen2.md)
 
 > [!div class="nextstepaction"]
-> [Use the gen2 metrics app](service-premium-gen2-metrics-app.md)
+> [Use the metrics app](service-premium-gen2-metrics-app.md)

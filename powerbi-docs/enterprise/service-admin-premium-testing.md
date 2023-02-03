@@ -83,11 +83,11 @@ After you purchase a capacity, see [Manage a capacity](service-admin-premium-man
 
 ## Next steps
 
-- [What is Power BI Premium Gen2?](service-premium-gen2-what-is.md)
+- [What is Power BI Premium?](service-premium-gen2-what-is.md)
 - [How to purchase Power BI Premium](service-admin-premium-purchase.md)
 - [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
-- [Power BI Premium Gen2 FAQ](service-premium-gen2-faq.yml)
+- [Power BI Premium FAQ](service-premium-gen2-faq.yml)
 - Download the [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

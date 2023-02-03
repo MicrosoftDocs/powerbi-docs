@@ -534,6 +534,8 @@
       href: ../paginated-reports/subreports-troubleshoot.md
     - name: Publish a paginated report
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+    - name: Embed a paginated report
+      href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
     - name: Paginated report design
@@ -588,14 +590,16 @@
     items:
     - name: "Introduction to deployment pipelines"
       href: deployment-pipelines-overview.md
+    - name: "Understand the deployment process"
+      href: deployment-pipelines-process.md
     - name: "Get started"
       href: deployment-pipelines-get-started.md   
     - name: "Assign a workspace"
       href: deployment-pipelines-assign.md 
     - name: "Deployment history"
-      href: deployment-pipelines-history.md                         
-    - name: "Understand the deployment process"
-      href: deployment-pipelines-process.md
+      href: deployment-pipelines-history.md  
+    - name: "Create deployment pipeline rules"
+      href: deployment-pipelines-create-rules.md                      
     - name: "Automate deployment pipelines"
       href: deployment-pipelines-automation.md         
     - name: "Best practices"
