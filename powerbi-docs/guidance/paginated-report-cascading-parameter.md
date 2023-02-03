@@ -276,7 +276,7 @@ Be sure to optimize your data sources by:
 
 For more information related to this article, check out the following resources:
 
-- [Report parameters in Power BI Report Builder](../paginated-reports/report-builder-parameters.md)
+- [Report parameters in Power BI Report Builder](../paginated-reports/parameters/report-builder-parameters.md)
 - [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
