@@ -482,6 +482,28 @@
       href: service-dashboard-themes.md
   - name: Paginated reports
     items: 
+    - name: Report Builder in Power BI
+      items: 
+      - name: Report Builder in Power BI
+        href: ../paginated-reports/report-builder-power-bi.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
+      - name: Get around Report Design View
+        href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Previewing reports
+        href: ../paginated-reports/report-builder-previewing-reports.md
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+    - name: Design paginated reports
+      items: 
+      - name: Planning a report
+        href: ../paginated-reports/report-builder-planning-report.md
+      - name: Design tips
+        href: ../paginated-reports/report-builder-design-tips.md
+      - name: Subreports
+        href: ../paginated-reports/subreports.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
     - name: Data sources and datasets
       items: 
       - name: Understand paginated report data
@@ -512,12 +534,26 @@
       items:
       - name: Parameters
         href: ../paginated-reports/report-builder-parameters.md
-      - name: URL parameters in paginated reports
-        href: ../paginated-reports/report-builder-url-parameters.md
+      - name: Report parameter concepts in paginated reports
+        href: ../paginated-reports/parameters/report-parameters-concepts-report-builder.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Create parameters
+        href: ../paginated-reports/parameters/paginated-reports-create-parameters.md
+      - name: URL parameters in paginated reports
+        href: ../paginated-reports/report-builder-url-parameters.md
       - name: Pass a report parameter in a URL
-        href: ../paginated-reports/report-builder-url-pass-parameters.md
+        href: ../paginated-reports/parameters/pass-report-parameter-url.md
+      - name: Associate a query parameter with a report parameter
+        href: ../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md
+      - name: Change the order of report parameters
+        href: ../paginated-reports/parameters/change-order-report-parameter-report-builder.md
+      - name: Customize the parameters pane
+        href: ../paginated-reports/parameters/customize-parameters-pane-report-builder.md
+      - name: Add a multi-value parameter
+        href: ../paginated-reports/parameters/add-multi-value-parameter-to-report.md
+      - name: Built-in parameters collection references
+        href: ../paginated-reports/parameters/built-in-collections-parameters-collection-references-report-builder.md
       - name: Add or modify parameters
         href: ../paginated-reports/parameters/add-change-delete-report-parameter-report-builder.md
       - name: Add or modify values for parameters
@@ -530,6 +566,14 @@
         href: ../paginated-reports/parameters/add-cascading-parameters-report-builder.md
       - name: Define parameters in DAX for Analysis Services data source
         href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
+    - name: Process large reports
+      href: ../paginated-reports/report-design/process-large-reports.md      
+    - name: Sample Power BI paginated reports
+      href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination

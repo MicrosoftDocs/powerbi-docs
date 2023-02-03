@@ -13,7 +13,7 @@ ms.date: 01/04/2023
 
 # Report parameters in Power BI Report Builder
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
 This article describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more. Report parameters let you control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports that you create in Report Builder.
 
@@ -89,7 +89,7 @@ The following options are for selecting parameter values in the report.
   
 - Select multiple parameter values from a drop-down list.  
   
-- Select a value from a drop-down list for one parameter, which determines the values that are available in the drop-down list for another parameter. These are cascading parameters. Cascading parameters enables you to successively filter parameter values from thousands of values to a manageable number. For more information, see [Use cascading parameters in paginated reports](../guidance/paginated-report-cascading-parameter.md).
+- Select a value from a drop-down list for one parameter, which determines the values that are available in the drop-down list for another parameter. These are cascading parameters. Cascading parameters enables you to successively filter parameter values from thousands of values to a manageable number. For more information, see [Use cascading parameters in paginated reports](../../guidance/paginated-report-cascading-parameter.md).
 
 - Run the report without having to first select a parameter value because a default value was created for the parameter.  
   
@@ -143,5 +143,5 @@ You can define a subscription for an on-demand report or for a snapshot, and spe
   
 ## Next steps
 
-- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
-- [Use cascading parameters in paginated reports](../guidance/paginated-report-cascading-parameter.md)
+- [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)  
+- [Use cascading parameters in paginated reports](../../guidance/paginated-report-cascading-parameter.md)
