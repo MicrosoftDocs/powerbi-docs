@@ -42,7 +42,7 @@ From this list, you can [favorite](../consumer/end-user-favorite.md) and open co
 
 If your **Shared with me** content list gets long, you've several options for finding what you need. Use the search field (1), sort by one of the columns (2), or use the Filters pane. To open the Filters pane, select **Filters** from the upper right corner.
 
-![dashboard Owner and Search](./media/end-user-shared-with-me/power-bi-filter.png)
+![Screenshot showing dashboard Owner and Search.](./media/end-user-shared-with-me/power-bi-filter.png)
 
 
 ## Open shared content from an email link

@@ -62,7 +62,7 @@ The sample content is organized within the context of a workspace. Every busines
 
 A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards, reports, and datasets. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
 
-![App workspace screen with More actions menu displayed for the report](./media/end-user-experience/power-bi-more-action.png)
+![Screenshot showing App workspace screen with More actions menu displayed for the report.](./media/end-user-experience/power-bi-more-action.png)
 
 From a workspace, you can open a dashboard or report by selecting it from the list.  You can favorite a dashboard or report by hovering and selecting the star icon. If a workspace *owner* gave you [sharing permissions](end-user-shared-with-me.md), you can share from here as well. 
 
