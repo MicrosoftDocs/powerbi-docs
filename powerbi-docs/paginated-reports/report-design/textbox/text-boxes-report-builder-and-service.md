@@ -42,13 +42,15 @@ If you drag a report dataset field value directly to the report design surface, 
  To get started, see [Set Text Box Orientation &#40;Power BI Report Builder&#41;](set-text-box-orientation-report-builder-and-service.md). Then try it in the section on rotating text in the [Tutorial: Format Text &#40;Report Builder&#41;](/sql/reporting-services/tutorial-format-text-report-builder).  
   
 ##  <a name="HowTo"></a> How-to topics  
- [Add, Move, or Delete a Text Box &#40;Power BI Report Builder&#41;](add-move-or-delete-a-text-box-report-builder-and-service.md)  
- [Format Text in a Text Box &#40;Power BI Report Builder&#41;](format-text-in-a-text-box-report-builder-and-service.md)
- [Set Text Box Orientation &#40;Power BI Report Builder&#41;](set-text-box-orientation-report-builder-and-service.md)
- [Allow a Text Box to Grow or Shrink &#40;Power BI Report Builder&#41;](allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md)
+
+- [Add, Move, or Delete a Text Box &#40;Power BI Report Builder&#41;](add-move-or-delete-a-text-box-report-builder-and-service.md)  
+- [Format Text in a Text Box &#40;Power BI Report Builder&#41;](format-text-in-a-text-box-report-builder-and-service.md)
+- [Set Text Box Orientation &#40;Power BI Report Builder&#41;](set-text-box-orientation-report-builder-and-service.md)
+- [Allow a Text Box to Grow or Shrink &#40;Power BI Report Builder&#41;](allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md)
   
 ## Next steps
- [Formatting Text and Placeholders &#40;Report Builder&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
- [Formatting Numbers and Dates &#40;Report Builder&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)  
+
+- [Formatting Text and Placeholders &#40;Report Builder&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+- [Formatting Numbers and Dates &#40;Report Builder&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)  
   
   
