@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/03/2022
+ms.date: 02/03/2023
 LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
@@ -25,7 +25,7 @@ If you'd like to use Q&A with the datasets you access through a gateway, you'll 
 
 Once enabled, Power BI creates an index of your data source and uploads a subset of that data to Power BI to enable asking questions. Creating the initial index might take several minutes, and Power BI maintains and updates the index automatically as your data changes. Q&A with these datasets behaves the same as with data published to Power BI. The full set of features available in the Q&A experience is supported in both cases.
 
-When you ask questions in Power BI, Q&A determines the best visual to construct or report sheet to use to answer your question by using an index of your dataset. After Q&A determines the best potential answer, it uses DirectQuery to fetch live data from the data source via the gateway to populate charts and graphs. As a result, Power BI Q&A always shows the most up-to-date data directly from the underlying data source.
+When you ask questions in Power BI, Q&A determines the best visual to construct, or report sheet to use, to answer your question by using an index of your dataset. After Q&A determines the best potential answer, it uses DirectQuery to fetch live data from the data source via the gateway to populate charts and graphs. As a result, Power BI Q&A always shows the most up-to-date data directly from the underlying data source.
 
 Power BI Q&A uses the text and schema values from your data source to determine how to query the underlying model for answers. Therefore, searches for specific new or deleted text values, such as asking for a customer name related to a newly added text record, rely on the index being up-to-date with the latest values. Power BI automatically keeps the text and schema index up-to-date within a 60-minute window of changes.
 
