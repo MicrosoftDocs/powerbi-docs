@@ -50,7 +50,7 @@ We also recommend following these extra steps, which can yield a small performan
 
 ## Troubleshoot
 
-This section provides extensive instructions for troubleshooting using Kerberos for single sign-on (SSO) to SAP HANA in the Power BI service. By using these troubleshooting steps, you can self-diagnose and correct any issues you might be facing.
+This section provides instructions for troubleshooting using Kerberos for single sign-on (SSO) to SAP HANA in the Power BI service. By using these troubleshooting steps, you can self-diagnose and correct many issues you might be facing.
 
 To follow the steps in this section, you need to [collect gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
@@ -61,7 +61,10 @@ This issue has multiple symptoms.
 - When you try to add a new data source, you might see an error like the following message:
 
    ```output
-   Unable to connect: We encountered an error while trying to connect to . Details: "We could not register this data source for any gateway instances within this cluster. Please find more details below about specific errors for each gateway instance."
+   Unable to connect: We encountered an error while trying to connect to.
+   Details: "We could not register this data source for any gateway
+   instances within this cluster.
+   Please find more details below about specific errors for each gateway instance."
    ```
 
 - When you try to create or refresh a report, you might see the following error message:
@@ -71,7 +74,9 @@ This issue has multiple symptoms.
 - When you investigate the *Mashup[date]\*.log*, you see the following error message:
 
    ```output
-   A connection was successfully established with the server, but then an error occurred during the login process and The certificate chain was issued by an authority that is not trusted.
+   A connection was successfully established with the server, 
+   but then an error occurred during the login process and 
+   the certificate chain was issued by an authority that is not trusted.
    ```
 
 #### Resolution
@@ -94,7 +99,7 @@ The important element in this log entry is the information that's displayed afte
 
 #### Resolution
 
-You can set up ImpersonationLevel properly by following the instructions in [Grant the gateway service account local policy rights on the gateway](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
+You can set up `ImpersonationLevel` properly by following the instructions in [Grant the gateway service account local policy rights on the gateway](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
 After you've changed the configuration file, restart the gateway service for the change to take effect.
 
@@ -130,7 +135,11 @@ There might not be clear symptoms associated with this issue. When you investiga
 29T20:21:34.6679184Z","Action":"RemoteDocumentEvaluator/RemoteEvaluation/HandleException","HostProcessId":"1396","identity":"DirectQueryPool","Exception":"Exception:\r\nExceptionType: Microsoft.Mashup.Engine1.Runtime.ValueException, Microsoft.MashupEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\r\nMessage:
 ```
 
-When you investigate the same file further, the following (unhelpful) error appears: `No credentials are available in the security package`.
+When you investigate the same file further, the following (unhelpful) error appears: 
+
+```output
+No credentials are available in the security package
+```
 
 Capturing Wireshark traces reveals the following error: `KRB5KDC_ERR_BADOPTION`.
 
@@ -157,7 +166,10 @@ If you experience credentials errors, errors in the logs or traces expose errors
 In HANA authentication traces, you might see entries similar to the following message:
 
 ```output
-[Authentication|manager.cpp:166] Kerberos: Using Service Principal Name johnny@on.contoso.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME [Authentication|methodgssinitiator.cpp:367] Got principal name: johnny@on.contoso.com@CONTOSO.COM
+[Authentication|manager.cpp:166] Kerberos: Using Service Principal 
+Name johnny@on.contoso.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME 
+[Authentication|methodgssinitiator.cpp:367] Got principal name: 
+johnny@on.contoso.com@CONTOSO.COM
 ```
 
 #### Resolution
@@ -173,7 +185,11 @@ After you've completed the validation, you can successfully load the report in t
 In HANA authentication traces, you might see entries similar to the following entry:
 
 ```output
-Authentication ManagerAcceptor.cpp(00233) : Extending list of expected external names by johnny@CONTOSO.COM (method: GSS) Authentication AuthenticationInfo.cpp(00168) : ENTER getAuthenticationInfo (externalName=johnny@CONTOSO.COM) Authentication AuthenticationInfo.cpp(00237) : Found no user with expected external name!
+Authentication ManagerAcceptor.cpp(00233) : Extending list of expected
+external names by johnny@CONTOSO.COM (method: GSS) Authentication 
+AuthenticationInfo.cpp(00168) : ENTER getAuthenticationInfo 
+(externalName=johnny@CONTOSO.COM) Authentication AuthenticationInfo.cpp(00237) : 
+Found no user with expected external name!
 ```
 
 #### Resolution
