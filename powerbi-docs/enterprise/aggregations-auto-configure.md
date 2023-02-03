@@ -43,7 +43,7 @@ Running **Train and Refresh Now** can be helpful for fine-tuning the percentage 
 
 Keep in mind, training and refresh operations, whether scheduled or on-demand are process and resource intensive for both the data source and Power BI. Choose a time when resources are least impacted.
 
-## Fine-tune
+## Fine-tuning
 
 Both user-defined and system-generated aggregations tables are part of the dataset, contribute to the dataset size, and are subject to existing Power BI dataset size constraints. Aggregations processing also consumes resources and impacts dataset refresh durations. An optimal configuration strikes a balance between providing pre-aggregated results from the in-memory aggregations cache for the most frequently used report queries, while accepting slower results for outlier and ad-hoc queries in exchange for faster training and refresh times and a reduced burden on system resources.
 
