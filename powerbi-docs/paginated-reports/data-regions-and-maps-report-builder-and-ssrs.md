@@ -54,6 +54,6 @@ ms.author: maggies
  For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
   
 ## Next Steps 
- [What are paginated reports in Power BI?](https://learn.microsoft.com/power-bi/paginated-reports/paginated-reports-report-builder-power-bi)
+ [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
  [Power BI Report Builder](report-builder-power-bi.md)   
  [Page Layout and Rendering &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs.md)    
