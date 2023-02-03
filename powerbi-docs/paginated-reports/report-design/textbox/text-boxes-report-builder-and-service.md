@@ -1,6 +1,6 @@
 ---
 title: "Text boxes in Power BI paginated reports | Microsoft Docs"
-description: Find out about cells in a table or matrix in a paginated report that also contain a text box, which you can format the same way as stand-alone text boxes in Report Builder.
+description: Find out about cells in a table or matrix that also contain text boxes in a Power BI paginated report. You can format them the same way as stand-alone text boxes in Power BI Report Builder.
 ms.date: 01/26/2023
 ms.service: powerbi
 ms.subservice: report-builder
@@ -13,7 +13,7 @@ ms.reviewer: rpatkar
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../../../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
-  When you think of a text box, you probably think of a stand-alone box containing text on a surface like in [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Office PowerPoint. In paginated reports, some text boxes are like that, and they can display static text for titles, descriptions, and labels, or dynamic text based on expressions. But every cell in a table or matrix (a tablix data region) also contains a text box, which you can format the same way you format stand-alone text boxes in your report.  
+  When you think of a text box in a Power BI paginated report, you probably think of a stand-alone box containing text on a surface like in [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Office PowerPoint. In paginated reports, some text boxes are like that, and they can display static text for titles, descriptions, and labels, or dynamic text based on expressions. But every cell in a table or matrix (a tablix data region) also contains a text box, which you can format the same way you format stand-alone text boxes in your report.  
   
 If you drag a report dataset field value directly to the report design surface, or to a text box on the report design surface, you only see the first value in the result set when you run the report. To see all the values for a field, you need to create a table, matrix, or list *data region* first, and drag the field to a cell in the data region. That way, when you run the report, you will see all the values in that field.  
   
