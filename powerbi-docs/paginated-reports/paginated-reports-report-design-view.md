@@ -61,7 +61,7 @@ The design surface size might be different from the page size print area that yo
 ## 3. Parameters pane  
 With report parameters, you can control report data, connect related reports together, and vary report presentation. The Parameters pane provides a flexible layout for the report parameters.  
   
-For more information about report parameters, see [Create parameters for paginated reports](paginated-reports-parameters.md).
+For more information about report parameters, see [Create parameters for paginated reports](parameters/paginated-reports-create-parameters.md).
   
 ## 4. Properties pane
 Every item in a report, including data regions, images, text boxes, and the report body itself, has properties associated with it. For example, the *BorderColor* property for a text box shows the color value of the text box's border, and the *PageSize* property for the report shows the page size of the report.  
