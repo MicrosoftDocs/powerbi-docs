@@ -34,10 +34,10 @@ If the report has a Data Model, you have some other options:
 
 To make any of these changes, you need to edit the workbook in Excel.
 
-Read more about [file size limits for Excel workbooks in SharePoint Online](https://support.office.com/article/File-size-limits-for-workbooks-in-SharePoint-Online-9e5bc6f8-018f-415a-b890-5452687b325e).
+For more information, see [File size limits for Excel workbooks in SharePoint Online](https://support.office.com/article/File-size-limits-for-workbooks-in-SharePoint-Online-9e5bc6f8-018f-415a-b890-5452687b325e).
 
 ## Remove data from worksheets
-If you import data into Excel from the Power Query Editor or the Excel Data tab, the workbook might have the same data in an Excel table and in the Data Model. Large tables in Excel worksheets may make the core worksheet contents more than 30 MB. Removing the table in Excel and keeping the data in the Data Model can greatly reduce the core worksheet contents of the report. 
+If you import data into Excel from the Power Query Editor or the Excel Data tab, the workbook might have the same data in an Excel table and in the Data Model. Large tables in Excel worksheets might make the core worksheet contents more than 30 MB. Removing the table in Excel and keeping the data in the Data Model can greatly reduce the core worksheet contents of the report. 
 
 When you import data into Excel, follow these tips:
 
@@ -66,7 +66,7 @@ When you import data into Excel, follow these tips:
 If your workbook contains a data model, you can run the workbook size optimizer to reduce the size of your workbook. For more information, see [Download Workbook Size Optimizer](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## Related info
-[Create a memory-efficient Data Model](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
+[Create a memory-efficient Data Model by using Excel and the Power Pivot add-in](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
 
 [Use OneDrive for work or school links in Power BI Desktop](desktop-use-onedrive-business-links.md)
 
