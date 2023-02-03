@@ -24,7 +24,7 @@ You can change the order of report parameters by doing either of the following:
   
 -   Click a parameter in the **Report Data** pane, and use the up and down arrow buttons to move the parameter higher or lower in the list, as shown in the following image.  When you change the order of the parameter in the **Report Data** pane, the location of the parameter in the parameters pane is changed.  
   
-     ![Screenshot showing changing the order of the parameters in the Report Data pane.](media/change-order-report-parameter-report-builder/ssrs-change-order-parameters-report-data.png "Screenshot showing changing the order of the parameters in the Report Data pane.")  
+     ![Screenshot showing changing the order of the parameters in the Report Data pane.](media/change-order-report-parameter-report-builder/change-order-parameters-report-data.png "Screenshot showing changing the order of the parameters in the Report Data pane.")  
   
 -   In the parameters pane, drag the parameter to a new column or row in the pane. When you change the location of the parameter in the pane, the parameter order changes in the **Report Data** pane. For more information about moving parameters in the pane, see [Customize the Parameters Pane in a Report &#40;Power BI Report Builder&#41;](customize-parameters-pane-report-builder.md).  
   
