@@ -42,7 +42,7 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 
 1. Select **Learn** and in the **Learning center**, scroll down to **Sample reports**. Select the right arrow until you get to **Sales and Marketing Sample**. Select the sample report.  
 
-   :::image type="content" source="./media/end-user-experience/power-bi-sample-list.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
+   :::image type="content" source="media/end-user-experience/power-bi-sample-list.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
 
    The **Sales and Marketing Sample** report opens.
 

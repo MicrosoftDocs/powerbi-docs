@@ -30,7 +30,7 @@ To view content that has been shared with you, there are two options.
 * **The content *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md) for details.
 
 ## View and open content from your *Shared with me* tab
-Content that has been directly shared with you is listed in your **Shared with me** tab. This content has been sent to you in an email link or that the *creator* or *owner* has automatically installed for you. To display the list, from the nav pane, select **Browse > Shared with me**. Scroll through **Shared with me** to see reports, dashboards and scorecards. 
+Content that has been directly shared with you is listed in your **Shared with me** tab. This content has been sent to you in an email link or the *creator* or *owner* has automatically installed it for you. To display the list, from the nav pane, select **Browse > Shared with me**. Scroll through **Shared with me** to see reports, dashboards and scorecards. 
 
 :::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list.png" alt-text="Screenshot showing the Shared with me screen.":::
 
@@ -47,12 +47,17 @@ If your **Shared with me** content list gets long, you've several options for fi
 
 ## Open shared content from an email link
 
-When a designer creates or updates content, they often share that content in email. An email link gives you direct access to a single piece of content, such as a report or an app. Select the link to open and install the content.
+When designers create or update content, they often share that content in email. An email link gives you direct access to a single piece of content, such as a report or an app. Select the link to open and install the content.
 
 :::image type="content" source="media/end-user-shared-with-me/email-report-link.png" alt-text="Screenshot showing an email with a link to a report.":::
 
 ## View and open content from your *Apps* tab
-Apps that ve been directly shared with you and apps that you've downloaded are listed in your **Apps** tab. These apps have been sent to you in an email link, that the *creator* or *owner* has automatically installed for you, or that you've installed from [AppSource](../consumer/end-user-apps.md#get-a-new-app). Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the Apps icon.
+Apps that have been directly shared with you and apps that you've downloaded are listed in your **Apps** tab. You've received these apps in one of the following ways:
+- sent to you as a link in an email, and you've clicked the link
+- the app *creator* or *owner* has automatically installed the app for you
+- you've installed the app from [AppSource](../consumer/end-user-apps.md#get-a-new-app). 
+
+Scroll through **Apps** to see reports, dashboards and scorecards. To display the list, from the nav pane, select the **Apps** icon.
 
 :::image type="content" source="media/end-user-shared-with-me/power-bi-apps.png" alt-text="Screenshot showing Apps selected from the nav pane.":::
 
