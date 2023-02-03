@@ -33,9 +33,9 @@ ms.reviewer: saurkumar
   
 5.  In **Query**, type the query to use to retrieve data for this report. The query must include the following parts:  
   
-    1.  A list of data source fields. For example, in a Transact-SQL statement, the SELECT statement specifies a list of database column names from a given table or view.  
+    - A list of data source fields. For example, in a Transact-SQL statement, the SELECT statement specifies a list of database column names from a given table or view.  
   
-    2.  One query parameter for each cascading parameter. A query parameter limits the data retrieved from the data source by specifying certain values to include or exclude from the query. Typically, query parameters occur in a restriction clause in the query. For example, in a Transact-SQL SELECT statement, query parameters occur in the WHERE clause.  
+    - One query parameter for each cascading parameter. A query parameter limits the data retrieved from the data source by specifying certain values to include or exclude from the query. Typically, query parameters occur in a restriction clause in the query. For example, in a Transact-SQL SELECT statement, query parameters occur in the WHERE clause.  
   
 6.  Click **Run** (**!**). After you include query parameters and then run the query, report parameters that correspond to the query parameters are automatically created.  
   
