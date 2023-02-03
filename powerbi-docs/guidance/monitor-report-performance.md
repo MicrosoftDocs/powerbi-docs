@@ -76,9 +76,7 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 ## Monitor Premium metrics
 
-Monitor performance of content deployed into your organization's Power BI Premium Gen2 capacity with the help of the [Gen2 metrics app](./../enterprise/service-premium-gen2-metrics-app.md).
-
-To monitor the Power BI Premium original version capacities, use the [Power BI Premium Metrics app](../enterprise/service-premium-gen2-metrics-app.md).
+Monitor performance of content deployed into your organization's Power BI Premium capacity with the help of the [Premium metrics app](./../enterprise/service-premium-gen2-metrics-app.md).
 
 ## Next steps
 

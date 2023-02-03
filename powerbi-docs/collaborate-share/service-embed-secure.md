@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 # Embed a report in a secure portal or website
 
-With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or IFrame. 
+With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iframe. 
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals by using a low-code approach that requires only basic HTML and JavaScript knowledge.
 
@@ -25,7 +25,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
     :::image type="content" source="media/service-embed-secure/power-bi-more-options-website.png" alt-text="Screenshot of Embed report selected from File menu with website or portal option highlighted.":::
 
-3. In the **Secure embed code** dialog, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an IFrame in a blog or website, select the value under **HTML you can paste into a website**.
+3. In the **Secure embed code** dialog, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**.
 
     :::image type="content" source="../collaborate-share/media/service-embed-secure/securely-embed-report-in-website-or-portal.png" alt-text="Screenshot of Embed option dialogue box":::
 
@@ -37,7 +37,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
     :::image type="content" source="./media/service-embed-secure/sales-and-marketing-sample-1.png" alt-text="Screenshot of Sales and Marketing sample report.":::
 
-6. When you use an IFrame, you might need to edit the **height**, and **width** values to have it fit in your portal's web page.
+6. When you use an iframe, you might need to edit the **height**, and **width** values to have it fit in your portal's web page.
 
     :::image type="content" source="media/service-embed-secure/secure-embed-size.png" alt-text="Screenshot of se height and width dialogue box":::
 
@@ -53,7 +53,7 @@ To view the embedded report, you need  either a Power BI Pro or Premium Per User
 
 ## Customize your embed experience by using URL settings
 
-You can customize the user experience by using the embed URL's input settings. In the provided IFrame, you can update the URL's  **src** settings.
+You can customize the user experience by using the embed URL's input settings. In the provided iframe, you can update the URL's  **src** settings.
 
 | Property  | Description  |
 |-----------|--------------|
@@ -84,7 +84,7 @@ For example, here's a button you can add to an HTML page:
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-When selected, the button calls a function to update the IFrame with an updated URL, which includes the Energy industry filter.
+When selected, the button calls a function to update the iframe with an updated URL, which includes the Energy industry filter.
 
 ```javascript
 function show(pageName, filterValue)
@@ -116,7 +116,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 ## Considerations and limitations
 
-* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. For more information, see [Pass a report parameter in a URL for a paginated report in Power BI](../paginated-reports/report-builder-url-pass-parameters.md).
+* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. For more information, see [Pass a report parameter in a URL for a paginated report in Power BI](../paginated-reports/parameters/pass-report-parameter-url.md).
 
 * The secure embed option works for reports that are published to the Power BI service.
 
