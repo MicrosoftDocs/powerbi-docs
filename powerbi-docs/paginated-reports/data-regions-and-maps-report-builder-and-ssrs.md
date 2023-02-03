@@ -17,9 +17,6 @@ ms.author: maggies
 
   A data region is an object in a paginated report that displays data from a report dataset. Report data can be displayed as numbers and text in a table, matrix, or list; graphically in a chart or gauge; and against a geographic background in a map. Tables, matrices, and lists are all based on the *tablix* data region, which expands as needed to display all the data from the dataset. A tablix data region supports multiple row and column groups and both static and dynamic rows and columns. A chart displays multiple series and category groups in a variety of chart formats. A gauge displays a single value or an aggregated value for a dataset. A map displays spatial data as map elements that can vary in appearance based on aggregated data from a dataset.  
   
- You can save a data region or map as a *report part*. Read more about [Report Parts](/sql/reporting-services/report-design/report-parts-report-builder-and-ssrs).  
-  
-  
 ## Table  
  A table is a data region that presents data row by row. Table columns are static: you determine the number of columns when you design your report. Table rows are dynamic: they expand downwards to accommodate the data. You can add groups to tables, which organize data by selected fields or expressions. For information about adding a table to a report, see [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs).  
   
@@ -58,5 +55,5 @@ ms.author: maggies
   
 ## Next Steps 
  [What are paginated reports in Power BI?](https://learn.microsoft.com/power-bi/paginated-reports/paginated-reports-report-builder-power-bi)
- [Power BI Report Builder](https://learn.microsoft.com/power-bi/paginated-reports/report-builder-power-bi?source=recommendations)   
+ [Power BI Report Builder](report-builder-power-bi.md)   
  [Page Layout and Rendering &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs.md)    
