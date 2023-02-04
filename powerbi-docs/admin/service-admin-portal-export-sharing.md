@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 09/23/2022
+ms.date: 02/03/2023
 LocalizationGroup: Administration
 ---
 
@@ -104,6 +104,12 @@ Users in the organization can export data from a tile, visualization, or paginat
 Users in the organization can download .pbix files and paginated reports.
 
 ![Screenshot of download reports setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-download-reports-setting.png)
+
+## Users can work with Power BI datasets in Excel using a live connection
+
+Users can export data to Excel from a Power BI visual or dataset, or export a dataset to an Excel workbook with Analyze in Excel, both options with a live connection to the XMLA endpoint.
+
+:::image type="content" source="media/service-admin-portal-export-sharing/tenant-settings-live-connection.png" alt-text="Screenshot showing Users can work with Power BI datasets in Excel using a live connection.":::
 
 ## Allow live connections
 
