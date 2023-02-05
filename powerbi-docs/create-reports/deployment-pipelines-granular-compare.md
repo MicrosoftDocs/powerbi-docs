@@ -58,8 +58,8 @@ Close the window when you finish examining the differences and deploy to the nex
 
 ## Considerations and limitations
 
-* You can only compare the content of *text* item types (datasets, dataflows, and pagenated reports)
-* You can only compare changes to the schema content. Settings changes, like file names or sensitivity labels aren't shown.
+- You can only compare the content of *text* item types (datasets, dataflows, and pagenated reports)
+- You can only compare changes to the schema content. Settings changes, like file names or sensitivity labels aren't shown.
 
 ## Next steps
 
