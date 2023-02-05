@@ -57,7 +57,7 @@ You can tune the behavior of the workloads, by configuring workload settings for
 
 ### Monitor workloads
 
-Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-gen2-metrics-app.md) to monitor your capacity's activity.
+Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-metrics-app.md) to monitor your capacity's activity.
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications).
@@ -229,7 +229,7 @@ When refreshing a dataflow, the dataflow workload spawns a container for each en
 * Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 * Dataflow entities include computation steps, for example, a join.  
 
-It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-gen2-metrics-app.md) app to analyze Dataflow workload performance.
+It's recommended you use the [Power BI Premium Capacity Metrics](service-premium-metrics-app.md) app to analyze Dataflow workload performance.
 
 In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won't help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
 
@@ -271,7 +271,7 @@ The paginated reports workload is enabled automatically, and is always enabled.
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Power BI Premium](service-premium-gen2-what-is.md)
+>[Power BI Premium](service-premium-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Self-service data prep in Power BI with Dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)

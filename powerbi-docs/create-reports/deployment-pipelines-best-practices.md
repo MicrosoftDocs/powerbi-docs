@@ -149,7 +149,7 @@ You can also use this approach if you don't want to overload your capacity.
 
 When you simulate a production stage, [check the report load and the interactions](../guidance/monitor-report-performance.md) and find out if the changes you made affect them.
 
-You also need to [monitor the load on the capacity](../enterprise/service-premium-gen2-metrics-app.md) so that you can catch extreme loads before they reach production.
+You also need to [monitor the load on the capacity](../enterprise/service-premium-metrics-app.md) so that you can catch extreme loads before they reach production.
 
 >[!NOTE]
 >It's recommended to monitor capacity loads again, after deploying updates to the production stage.

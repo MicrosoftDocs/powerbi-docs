@@ -239,4 +239,4 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 > [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium Generation 2](service-premium-gen2-what-is.md)
+> [Power BI Premium Generation 2](service-premium-what-is.md)
