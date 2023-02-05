@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Introducing Power BI Premium
-            url: service-premium-gen2-what-is.md
+            url: service-premium-what-is.md
           - text: Power BI Premium features
             url: service-premium-features.md           
       - linkListType: concept
@@ -35,13 +35,13 @@ landingContent:
           - text: Power BI Premium architecture
             url: service-premium-architecture.md
           - text: Managing Premium capacities
-            url: service-premium-capacity-manage-gen2.md           
+            url: service-premium-capacity-manage.md           
           - text: Power BI for US government
             url: service-govus-overview.md
       - linkListType: how-to-guide
         links:
           - text: Use the Premium utilization and metrics app
-            url: service-premium-gen2-metrics-app.md         
+            url: service-premium-metrics-app.md         
           - text: Enroll a US government organization
             url: service-govus-signup.md
 
