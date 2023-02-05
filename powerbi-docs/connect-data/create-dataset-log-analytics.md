@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/04/2023
+ms.date: 02/05/2023
 ms.custom:
 LocalizationGroup: Visualizations
 ---
@@ -17,7 +17,7 @@ You can quickly create a Power BI dataset directly from Log Analytics. The datas
 
 Creating a dataset directly from Log Analytics is an easy and quick way to share a dataset, because if you save it to a shared workspace, everyone with the sufficient permissions in the workspace can use it. You can also use [dataset sharing](./service-datasets-share.md) to share it with other users who don’t have a role in the workspace.
 
-????This feature creates a dataset in the Power BI service directly from Log Analytics. If you need to model or transform the data in ways that aren't available in the service, you can also connect to the Log Analytics from Power BI Desktop. For more information, see [Create a report on a SharePoint List in Power BI Desktop](./desktop-sharepoint-online-list.md).????
+This feature creates a dataset in the Power BI service directly from a Log Analytics. If you need to model or transform the data in ways that aren't available in the service, you can also export the query from Log Analytics, paste it into Power BI Desktop, and do your advanced modeling there. For more information, see [Integrate queries](/azure/azure-monitor/logs/log-powerbi#integrate-queries).
 
 ## Prerequisites
 
@@ -73,12 +73,8 @@ Take the above considerations into account when you make your choice.
 
 If you've never previously connected to Log Analytics from Power BI, Power BI will automatically use your current credentials to establish the connection, and you won't see this dialog.
 
-## Considerations and limitations
-
-* ???The dataset won't be created if the SharePoint list contains values with more than four digits after a decimal place (".")
-* ???The sensitivity label (if any) of the SharePoint list isn't inherited by the dataset that is created.
-
 ## Next steps
 
+* [Log Analytics integration with Power BI](/azure/azure-monitor/logs/log-powerbi)
 * [Dataset details](./service-dataset-details-page.md)
 * [Share access to a dataset](./service-datasets-share.md)
