@@ -26,7 +26,7 @@ For related "What's New" information, see:
 
 ### Easier app browsing
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-audience.png" alt-text="Illustration of switching app audience on the Power BI mobile app." border=false:::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-audience.png" alt-text="Illustration of switching app audience on the Power BI mobile app." border="false":::
 
 ## December 2022
 
