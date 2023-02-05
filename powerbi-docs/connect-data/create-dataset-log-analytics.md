@@ -11,7 +11,7 @@ ms.date: 02/05/2023
 ms.custom:
 LocalizationGroup: Visualizations
 ---
-# Create a Power BI dataset directly from Log Analytics
+# Create a Power BI dataset directly from Log Analytics (preview)
 
 You can quickly create a Power BI dataset directly from a Log Analytics query. The dataset will be full-fledged Power BI dataset that you can use to create reports, analyze in Excel, and more.
 
@@ -32,7 +32,7 @@ To create a Power BI dataset from a Log Analytics query:
 
     :::image type="content" source="./media/create-dataset-log-analytics/export-to-power-bi-log-analytics-option.png" alt-text="Screenshot showing Export to Power BI option in the Log Analytics Export menu.":::
 
-1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the query and saved to My workspace. You can choose your own name and destination workspace. If you are a [free user](../fundamentals/service-features-license-type.md#free-per-user-license) in Power BI, you will only be able to save to My workspace.
+1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the query and saved to My workspace. You can choose your own name and destination workspace. If you're a [free user](../fundamentals/service-features-license-type.md#free-per-user-license) in Power BI, you'll only be able to save to My workspace.
 
     :::image type="content" source="./media/create-dataset-log-analytics/name-dataset-dialog.png" alt-text="Screenshot of a dialog where you name the dataset and choose a workspace.":::
 
