@@ -76,7 +76,7 @@ sections:
           
           * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
           
-          For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
+          For more information, see [prerequisites for accessing deployment pipelines](deployment-pipelines-get-started.md#prerequisites).
           
       - question: |
           What type of capacity can I assign to a workspace in a pipeline?
