@@ -80,7 +80,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Shared with me
-            url: end-user-shared-with-me.md
+            url: ../collaborate-share/end-user-shared-with-me.md
           - text: Subscribe to content
             url: /power-bi/collaborate-share/end-user-subscribe
 
