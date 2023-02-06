@@ -1,6 +1,6 @@
 ---
 title: Create Q&A featured questions for Power BI dashboards
-description: Learn how to create featured questions for Power BI Q&A using the Retail Analysis Sales sample.
+description: Learn how to create and add featured questions for the Power BI Q&A by using the Retail Analysis sample.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -14,7 +14,7 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-If you have edit permission for a dataset, you can add your own featured questions to that dataset. Power BI Q&A will show those questions to colleagues who consume dashboards based on that dataset. Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you&mdash;add popular questions, questions that display interesting results, or questions that may be hard to phrase.
+If you have edit permission for a dataset, you can add your own featured questions to that dataset. Power BI Q&A will show those questions to colleagues who consume dashboards based on that dataset. Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that may be hard to phrase.
 
 > [!NOTE]
 > Q&A featured questions are available for use in the [Microsoft Power BI app on iPads, iPhones, and iPod Touch devices](../consumer/mobile/mobile-apps-ios-qna.md) and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
@@ -40,7 +40,7 @@ This article uses the [Retail Analysis sample](sample-datasets.md). Follow these
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/ask-question-2.png" alt-text="Screenshot of the Q&A question box in Power BI dashboard.":::
 
-7. The Q&A screen appears showing the new featured question, **show last year sales by territory as filled map**. Select the featured question.
+7. The Q&A screen shows the new featured question, **show last year sales by territory as filled map**. Select the featured question.
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start-2.png" alt-text="Screenshot of the Q&A question box with featured question.":::
 8. Power BI creates the answer and displays it as a filled map visualization.
