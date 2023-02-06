@@ -43,7 +43,7 @@ The following animation illustrates dragging, dropping, resizing, and overlaying
 > * You can add some or all of the visuals in the Page visuals pane to the mobile-optimized report page.
 > * You can drag and drop hidden visuals onto the canvas. They'll be placed, but not shown unless their visibility status changes in the current desktop report view.
 
-### Removing visuals from the mobile layout canvas
+### Remove visuals from the mobile layout canvas
 
 * To remove a single visual from the mobile layout, select the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
