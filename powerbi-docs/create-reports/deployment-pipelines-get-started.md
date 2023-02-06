@@ -107,43 +107,6 @@ When you deploy content between pipeline stages, configuring deployment rules en
 
 [Read about how to define deployment rules.](deployment-pipelines-create-rules.md)
 
-## Compare stages
-
-When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
-
-:::image type="content" source="media/deployment-pipelines-get-started/deployment-flow.png" alt-text="A screenshot showing a deployment pipeline with its comparison indicators." lightbox="media/deployment-pipelines-get-started/deployment-flow.png":::
-
-To allow a quick visual insight into the differences between two sequential stages, a comparison icon indicator appears between them. The comparison indicator has two states:
-
-* **Green indicator** – The metadata for each content item in both stages, is the same.
-
-* **Orange indicator** - Appears if one of these conditions is met:
-  * Some of the content items in each stage, were changed or updated (have different metadata).
-  * There is a difference in the number of items between the stages.
-
-When two sequential stages aren't the same, a **compare** link appears underneath the orange comparison icon. Clicking the link opens the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. Changed items get one of the following labels:
-
-* **New** – A new item in the source stage. This is an item that doesn't exist in the target stage. After deployment, this item will be cloned to the target stage.
-
-* **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
-
-    Datasets with configured deployment rules that haven't been deployed, are also marked as *different*. This is because deployment rules are not applied until the datasets are deployed from the source stage to the target stage, which includes the configured rules.
-
-* **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
-
-    >[!NOTE]
-    >Deployment will not impact *missing from* items.
-
-The comparison is designed to help you understand the difference between the stages. In the comparison display, items are arranged according to the logic listed below.
-
-1. The source workspace items are ordered alphabetically within groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports, and lastly dashboards.
-
-2. The target workspace is ordered according to the source workspace. Each item resides in the same row as its equivalent item in the source stage.
-
-3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
-
-:::image type="content" source="media/deployment-pipelines-get-started/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-get-started/compare.png":::
-
 ## Next steps
 
 >[!div class="nextstepaction"]
