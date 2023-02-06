@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/14/2022
+ms.date: 02/05/2023
 ---
 
 # Embedded analytics access tokens
@@ -19,7 +19,7 @@ Consuming Power BI content (such as reports, dashboards and tiles) requires an a
 In the *embed for your customers* solution, the application generates an embed token that grants your web users access to Power BI content.
 
 >[!NOTE]
->When you use the embed for your customers solution, you can use any authentication method to allow access to your web app.
+>When you use the *embed for your customers* solution, you can use any authentication method to allow access to your web app.
 
 In the *embed for your organization* solution, your web app users authenticate against [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) by using their own credentials. Your customers have access to the Power BI content that they have permission to access on the Power BI service.
 
@@ -33,7 +33,7 @@ For both embed for your customers and embed for your organization solutions, you
 
 You can acquire an Azure AD token in one of the following ways:
 
-* Use the external [Postman](https://www.postman.com/) tool to acquire a token. For help with this, see the [Power BI Community thread](https://community.powerbi.com/t5/Developer/Power-BI-REST-API-using-postman-generate-embed-token/m-p/310153#M9157). Note that the request URL for a service principal must be https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token, but for a master user, it can be either https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token or https://login.microsoftonline.com/common/oauth2/token.
+* Use the external [Postman](https://www.postman.com/) tool to acquire a token. For more information, see this [Power BI Community thread](https://community.powerbi.com/t5/Developer/Power-BI-REST-API-using-postman-generate-embed-token/m-p/310153#M9157). The request URL for a service principal must be `https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token`, but for a master user, it can be either `https://login.microsoftonline.com/{tenantID}/oauth2/v2.0/token` or `https://login.microsoftonline.com/common/oauth2/token`.
 
 * Follow the sample solutions at [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples/). For example:  
   
