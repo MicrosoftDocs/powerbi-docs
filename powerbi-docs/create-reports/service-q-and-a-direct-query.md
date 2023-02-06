@@ -38,7 +38,7 @@ For more information, see:
 
 Once you have the data gateway set up, connect to your data from Power BI. Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data. You might also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
 
-1. In the upper-right corner of Power BI, select the cog icon :::image type="icon" source="media/service-q-and-a-direct-query/power-bi-cog.png"::: and choose **Settings**.
+1. In Power BI, select the cog icon :::image type="icon" source="media/service-q-and-a-direct-query/power-bi-cog-2.png"::: and choose **Settings**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/powerbi-settings-2.png" alt-text="Screenshot of Settings menu, highlighting the Settings option.":::
 2. Select **Datasets** and choose the dataset to enable for Q&A.
