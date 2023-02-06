@@ -56,7 +56,7 @@ On top of the screen, you'll see:
 
 The two versions of the item you see are modified to make the comparison easier:
 
-- Datasource and parameter rules are applied to the source item (to be deployed) so that the datasource you see is the datasource that will be deployed.
+- Datasource and parameter rules are applied to the source item so that the datasource you see is the one that will be deployed.
 - Some fields that don't indicate differences (for example, timestamps and role membership) are removed from both items.
 - System managed tables, like auto aggregate, are removed.
 - Items are sorted so that fields and tables appear in the same order.
