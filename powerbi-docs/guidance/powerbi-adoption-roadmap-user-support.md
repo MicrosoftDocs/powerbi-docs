@@ -1,8 +1,8 @@
 ---
 title: "Power BI adoption roadmap: User support"
 description: Support users to drive strong and successful adoption of Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -92,7 +92,7 @@ There are also certain technical issues that can't be fully resolved without IT 
 
 Busy help desk personnel are usually dedicated to supporting multiple technologies. For this reason, the easiest types of issues to support are those which have a clear resolution and can be documented in a knowledgebase. For instance, software installation prerequisites or requirements to get a license.
 
-Some organizations ask the help desk to handle only very simple break-fix issues. Other organizations have the help desk get involved with anything that is repeatable, like new [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting a new [Premium capacity](/power-bi/enterprise/service-premium-gen2-what-is).
+Some organizations ask the help desk to handle only very simple break-fix issues. Other organizations have the help desk get involved with anything that is repeatable, like new [workspace](/power-bi/collaborate-share/service-create-the-new-workspaces) requests, managing [gateway data sources](/power-platform/admin/onpremises-data-gateway-source-management#add-new-data-source), or requesting a new [Premium capacity](/power-bi/enterprise/service-premium-what-is).
 
 > [!IMPORTANT]
 > Your Power BI governance decisions will directly impact the volume of help desk requests. For example, if you choose to limit [workspace creation permissions in the tenant settings](/power-bi/admin/service-admin-portal-workspace), it will result in users submitting help desk tickets. While it's a legitimate decision to make, you must be prepared to satisfy the request very quickly. Respond to this type of request within 1-4 hours, if possible. If you delay too long, users will use what they already have or fine a way to work around your requirements. That may not be the ideal scenario. Promptness is critical for certain help desk requests. Consider that automation by using [Power Apps](/power-apps/powerapps-overview) and [Power Automate](/power-automate/getting-started) can help make some processes more efficient.

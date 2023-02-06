@@ -1,7 +1,7 @@
 ---
 title: On-premises data gateway sizing
 description: Guidance for working sizing the On-premises data gateway.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
@@ -58,12 +58,12 @@ Determining the correct sizing for your gateway machine can depend on the follow
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
   - The number of real-time reports using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
-  - Whether datasets enforce [Row-level Security (RLS)](../create-reports/desktop-rls.md)
+  - Whether datasets enforce [Row-level Security (RLS)](../enterprise/service-admin-rls.md)
 
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 
 > [!NOTE]
-> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus).
+> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacities-and-skus).
 
 ## Recommendations
 

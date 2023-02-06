@@ -37,8 +37,8 @@
       href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
     - name: Try it button missing on REST API pages
       href: known-issues/known-issue-169-try-it-button-missing.md            
-    - name: Long running, failed or stuck dataflow in Premium Gen2 
-      href: known-issues/known-issue-dataflow-on-premium-gen2.md   
+    - name: Long running, failed or stuck dataflow in Power BI Premium 
+      href: known-issues/known-issue-dataflow-on-premium.md   
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot

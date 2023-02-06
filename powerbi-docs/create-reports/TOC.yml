@@ -59,7 +59,11 @@
     - name: "Power BI modern ribbon"
       href: desktop-ribbon.md
     - name: "Optimize ribbon in Power BI Desktop"
-      href: desktop-optimize-ribbon.md      
+      items:
+      - name: "Optimize ribbon overview"
+        href: desktop-optimize-ribbon.md
+      - name: "DirectQuery optimization scenarios"
+        href: desktop-optimize-ribbon-scenarios.md          
     - name: "Work with Report view"
       href: desktop-report-view.md
     - name: "The new Format pane"
@@ -104,7 +108,7 @@
         href: power-bi-report-filter-types.md
       - name: "Slicers"
         href: ../visuals/power-bi-visualization-slicers.md
-      - name: "Numeric range slicers"
+      - name: "Numeric and date range slicers"
         href: desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
         href: ../visuals/desktop-slicer-filter-date-range.md
@@ -153,7 +157,7 @@
     - name: "Use inline hierarchy labels"
       href: desktop-inline-hierarchy-labels.md
     - name: "Restrict data access with row-level security"
-      href: desktop-rls.md
+      href: ../enterprise/service-admin-rls.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: "Add text boxes, shapes, and smart narratives"
       href: power-bi-reports-add-text-and-shapes.md
     - name: "Add a hyperlink to a text box"
@@ -479,43 +483,101 @@
   - name: Paginated reports
     items: 
     - name: Report Builder in Power BI
-      href: ../paginated-reports/report-builder-power-bi.md
+      items: 
+      - name: Report Builder in Power BI
+        href: ../paginated-reports/report-builder-power-bi.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
+      - name: Get around Report Design View
+        href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Previewing reports
+        href: ../paginated-reports/report-builder-previewing-reports.md
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+    - name: Design paginated reports
+      items: 
+      - name: Planning a report
+        href: ../paginated-reports/report-builder-planning-report.md
+      - name: Design tips
+        href: ../paginated-reports/report-builder-design-tips.md
+      - name: Subreports
+        href: ../paginated-reports/subreports.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
+    - name: Data sources and datasets
+      items: 
+      - name: Understand paginated report data
+        href: ../paginated-reports/report-builder-data.md
+      - name: Supported data sources
+        href: ../paginated-reports/paginated-reports-data-sources.md
+      - name: Support for ODBC data sources
+        href: ../paginated-reports/paginated-reports-odbc-support.md
+      - name: Create an embedded data source
+        href: ../paginated-reports/paginated-reports-embedded-data-source.md
+      - name: Create an embedded dataset
+        href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
     - name: Paginated reports FAQ
       href: ../paginated-reports/paginated-reports-faq.yml
     - name: Paginated reports capacity planning
       href: ../paginated-reports/paginated-capacity-planning.md      
-    - name: Report Builder change log
-      href: ../paginated-reports/paginated-reports-change-log.md
+    - name: Process large reports
+      href: ../paginated-reports/report-design/process-large-reports.md      
     - name: Sample Power BI paginated reports
       href: ../paginated-reports/paginated-reports-samples.md
     - name: Plan to migrate .rdl reports to Power BI
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
-    - name: Get around Report Design View
-      href: ../paginated-reports/paginated-reports-report-design-view.md
-    - name: Planning a report
-      href: ../paginated-reports/report-builder-planning-report.md
-    - name: Understanding paginated report data
-      href: ../paginated-reports/report-builder-data.md
-    - name: Supported data sources
-      href: ../paginated-reports/paginated-reports-data-sources.md
-    - name: Support for ODBC data sources
-      href: ../paginated-reports/paginated-reports-odbc-support.md
-    - name: Design tips
-      href: ../paginated-reports/report-builder-design-tips.md
     - name: Tables, matrixes, lists
       href: ../paginated-reports/report-builder-tables-matrices-lists.md
     - name: Parameters
-      href: ../paginated-reports/report-builder-parameters.md
-    - name: URL parameters in paginated reports
-      href: ../paginated-reports/report-builder-url-parameters.md
+      items:
+      - name: Parameters
+        href: ../paginated-reports/report-builder-parameters.md
+      - name: Report parameter concepts in paginated reports
+        href: ../paginated-reports/parameters/report-parameters-concepts-report-builder.md
+      - name: Create parameters
+        href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Create parameters
+        href: ../paginated-reports/parameters/paginated-reports-create-parameters.md
+      - name: URL parameters in paginated reports
+        href: ../paginated-reports/report-builder-url-parameters.md
+      - name: Pass a report parameter in a URL
+        href: ../paginated-reports/parameters/pass-report-parameter-url.md
+      - name: Associate a query parameter with a report parameter
+        href: ../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md
+      - name: Change the order of report parameters
+        href: ../paginated-reports/parameters/change-order-report-parameter-report-builder.md
+      - name: Customize the parameters pane
+        href: ../paginated-reports/parameters/customize-parameters-pane-report-builder.md
+      - name: Add a multi-value parameter
+        href: ../paginated-reports/parameters/add-multi-value-parameter-to-report.md
+      - name: Built-in parameters collection references
+        href: ../paginated-reports/parameters/built-in-collections-parameters-collection-references-report-builder.md
+      - name: Add or modify parameters
+        href: ../paginated-reports/parameters/add-change-delete-report-parameter-report-builder.md
+      - name: Add or modify values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-available-values-for-a-report-parameter.md
+      - name: Add or modify default values for parameters
+        href: ../paginated-reports/parameters/add-change-or-delete-default-values-for-a-report-parameter.md
+      - name: Add a subreport and parameters
+        href: ../paginated-reports/parameters/add-subreport-parameters-report-builder.md
+      - name: Add cascading parameters
+        href: ../paginated-reports/parameters/add-cascading-parameters-report-builder.md
+      - name: Define parameters in DAX for Analysis Services data source
+        href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
+    - name: Process large reports
+      href: ../paginated-reports/report-design/process-large-reports.md      
+    - name: Sample Power BI paginated reports
+      href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
     - name: Expression examples
       href: ../paginated-reports/report-builder-expression-examples.md
     - name: Report pagination
       href: ../paginated-reports/paginated-reports-pagination.md
-    - name: Previewing reports
-      href: ../paginated-reports/report-builder-previewing-reports.md
     - name: Default system credentials for web proxy
       href: ../paginated-reports/report-builder-web-proxy-authentication.md
     - name: Enter data directly in a paginated report
@@ -524,16 +586,10 @@
       href: ../paginated-reports/paginated-reports-edit-service.md
     - name: Create exportable formatted data tables
       href: ../paginated-reports/paginated-formatted-table.md
-    - name: Create an embedded data source
-      href: ../paginated-reports/paginated-reports-embedded-data-source.md
-    - name: Create an embedded dataset
-      href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
     - name: Create a report with a Power BI shared dataset
       href: ../paginated-reports/report-builder-shared-datasets.md
     - name: Create a paginated report from a Power BI report
       href: ../paginated-reports/paginated-reports-download-rdl.md
-    - name: Create parameters
-      href: ../paginated-reports/paginated-reports-parameters.md
     - name: Set up row-level security
       href: ../paginated-reports/paginated-reports-rls.md
     - name: Set report views
@@ -542,26 +598,80 @@
       href: ../paginated-reports/subreports.md
     - name: Troubleshoot subreports
       href: ../paginated-reports/subreports-troubleshoot.md
-    - name: Pass a report parameter in a URL
-      href: ../paginated-reports/report-builder-url-pass-parameters.md
     - name: Publish a paginated report
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
-    - name: Keyboard shortcuts in Power BI Report Builder
-      href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+    - name: Embed a paginated report
+      href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1
       href: ../report-server/rendering-extension-support.md
+    - name: Paginated report design
+      items: 
+      - name: Report Builder in Power BI
+        href: ../paginated-reports/report-builder-power-bi.md
+      - name: Planning a report
+        href: ../paginated-reports/report-builder-planning-report.md
+      - name: Add filters to a paginated report
+        href: ../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md
+      - name: Commonly used filters
+        href: ../paginated-reports/report-design/commonly-used-filters-report-builder-and-service.md
+      - name: Format numbers and dates
+        href: ../paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md
+      - name: Report Builder change log
+        href: ../paginated-reports/paginated-reports-change-log.md
+      - name: Get around Report Design View
+        href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Preview reports
+        href: ../paginated-reports/report-builder-previewing-reports.md
+      - name: Design tips
+        href: ../paginated-reports/report-builder-design-tips.md
+      - name: Tables, matrixes, lists
+        href: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - name: Text boxes
+        items:
+        - name: Text boxes in paginated reports
+          href: ../paginated-reports/report-design/textbox/text-boxes-report-builder-and-service.md
+        - name: Add or move a text box
+          href: ../paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service.md
+        - name: Allow a text box to grow or shrink
+          href: ../paginated-reports/report-design/textbox/allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md
+        - name: Format text in a text box
+          href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
+        - name: Set text box orientation
+          href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
+      - name: Keyboard shortcuts in Power BI Report Builder
+        href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
+    - name: "Device information settings"  
+      items:
+      - name: Device information settings for rendering extensions
+        href: ../paginated-reports/device-info/device-information-settings-for-paginated-reports-rendering-extensions.md
+      - name: CSV device information settings
+        href: ../paginated-reports/device-info/csv-device-information-settings.md
+      - name: Excel device information settings
+        href: ../paginated-reports/device-info/excel-device-information-settings.md
+      - name: Word device information settings
+        href: ../paginated-reports/device-info/word-device-information-settings.md
+      - name: Image device information settings
+        href: ../paginated-reports/device-info/image-device-information-settings.md
+      - name: MHTML device information settings
+        href: ../paginated-reports/device-info/mhtml-device-information-settings.md
+      - name: PDF device information settings
+        href: ../paginated-reports/device-info/pdf-device-information-settings.md
+      - name: PPTX device information settings
+        href: ../paginated-reports/device-info/pptx-device-information-settings.md
   - name: "Deployment pipelines"  
     items:
     - name: "Introduction to deployment pipelines"
       href: deployment-pipelines-overview.md
+    - name: "Understand the deployment process"
+      href: deployment-pipelines-process.md
     - name: "Get started"
       href: deployment-pipelines-get-started.md   
     - name: "Assign a workspace"
       href: deployment-pipelines-assign.md 
     - name: "Deployment history"
-      href: deployment-pipelines-history.md                         
-    - name: "Understand the deployment process"
-      href: deployment-pipelines-process.md
+      href: deployment-pipelines-history.md  
+    - name: "Create deployment pipeline rules"
+      href: deployment-pipelines-create-rules.md                      
     - name: "Automate deployment pipelines"
       href: deployment-pipelines-automation.md         
     - name: "Best practices"

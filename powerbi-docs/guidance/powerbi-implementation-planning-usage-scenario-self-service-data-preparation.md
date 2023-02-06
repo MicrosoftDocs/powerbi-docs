@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Self-service data preparation"
 description: "Learn how Power BI self-service data preparation is about using dataflows to centralize data cleansing and transformation work."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -115,7 +115,7 @@ Here are some advantages of using the organization's data lake account:
 
 ### Tenant-level storage
 
-The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once configured, you may [set workspaces to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
+The [Azure connections](../admin/service-admin-portal-azure-connections.md) section of the Admin portal includes a setting to configure a connection to an ADLS Gen2 account. Configuring this setting enables *bring your own data lake*. Once configured, you may [set workspaces to use that data lake account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 > [!IMPORTANT]
 > Setting [Azure connections](../admin/service-admin-portal-azure-connections.md) does not mean that all dataflows in the Power BI tenant are stored in this account by default. In order to use an explicit storage account (instead of internal storage), each workspace must be specifically connected.
@@ -124,7 +124,7 @@ The [Azure connections](../admin/service-admin-portal-azure-connections.md) sect
 
 ### Workspace-level storage
 
-A Power BI administrator can configure a setting to allow workspace-level storage permissions (in the Azure connections section of the Admin portal). When enabled, this setting allows [workspace administrators to use a different storage account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level) than the one defined at the tenant-level. Enabling this setting is particularly helpful for decentralized business units who manage their own data lake in Azure.
+A Power BI administrator can configure a setting to allow workspace-level storage permissions (in the Azure connections section of the Admin portal). When enabled, this setting allows [workspace administrators to use a different storage account](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level) than the one defined at the tenant-level. Enabling this setting is particularly helpful for decentralized business units who manage their own data lake in Azure.
 
 > [!NOTE]
 > The [workspace-level storage permission](../admin/service-admin-portal-azure-connections.md) in the Admin portal applies to all workspaces in the Power BI tenant.

@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 08/24/2022
+ms.date: 12/24/2022
 
 ---
 
@@ -185,7 +185,7 @@ Before you embed your content, make sure you have all the values listed below. S
 |[Workspace ID](#workspace-id)     |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Report ID](#report-id)           |![Applies to.](../../media/yes.png) |![Applies to.](../../media/yes.png) |
 |[Client secret](#client-secret) |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
-|[Tenant ID](#tenant-id)                 |![Applies to.](../../media/yes.png) |![Does not apply to.](../../media/no.png) |
+|[Tenant ID](#tenant-id)                 |![Applies to.](../../media/yes.png) | required only for Node JS |
 |[Power BI username](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 |[Power BI password](#power-bi-username-and-password)   |![Does not apply to.](../../media/no.png) |![Applies to.](../../media/yes.png) |
 
@@ -458,7 +458,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
     |`clientSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
-    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |Your Azure AD [tenant ID](#tenant-id)         |
 
 10. Run the project by doing the following:
 

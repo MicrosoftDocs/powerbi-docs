@@ -1,7 +1,7 @@
 ---
 title: Monitor report performance in Power BI
 description: Guidance on how to monitor report performance in Power BI.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 manager: asaxton
 ms.reviewer: asaxton
@@ -76,9 +76,7 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 ## Monitor Premium metrics
 
-Monitor performance of content deployed into your organization's Power BI Premium Gen2 capacity with the help of the [Gen2 metrics app](./../enterprise/service-premium-gen2-metrics-app.md).
-
-To monitor the Power BI Premium original version capacities, use the [Power BI Premium Metrics app](../enterprise/service-premium-gen2-metrics-app.md).
+Monitor performance of content deployed into your organization's Power BI Premium capacity with the help of the [Premium metrics app](./../enterprise/service-premium-metrics-app.md).
 
 ## Next steps
 
@@ -87,6 +85,6 @@ For more information about this article, check out the following resources:
 - [Query Diagnostics](/power-query/QueryDiagnostics)
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
 - [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md)
-- [Power BI Premium Metrics app](../enterprise/service-premium-gen2-metrics-app.md)
+- [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

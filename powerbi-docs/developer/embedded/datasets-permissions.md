@@ -64,10 +64,10 @@ Dataset permissions are part of the [item permissions](#item-permissions). The t
 |Permission             |Read     |Explore  |Reshare  |
 |-----------------------|---------|---------|---------|
 |Description            |Allows the user to read the content of the dataset|Equivalent to [build permissions](#build-permissions-and-rest-apis) |Allows the user to share the content of the dataset with other users who will get read, reshare, or explore permissions for it |
-|**ReadReshareExplore** |✔️       |✔️      |✔️       |
-|**ReadReshare**        |✔️       |❌      |✔️       |
-|**ReadExplore**        |✔️       |✔️      |❌       |
-|**Read**               |✔️       |❌      |❌       |
+|**ReadReshareExplore** | :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::     |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::       |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |
+|**ReadReshare**        |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |:::image type="icon" source="../../includes/media/no-icon.svg" border="false":::      |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |
+|**ReadExplore**        |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::       |:::image type="icon" source="../../includes/media/no-icon.svg" border="false":::       |
+|**Read**               |:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::        |:::image type="icon" source="../../includes/media/no-icon.svg" border="false":::      |:::image type="icon" source="../../includes/media/no-icon.svg" border="false":::       |
 
 >[!NOTE]
 >To allow a user to perform write operations on a dataset, first change the [workspace permissions](#workspace-permissions).
