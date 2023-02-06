@@ -1,6 +1,6 @@
 ---
 title: Premium features of dataflows
-description: Overview of the Premium features available with Power BI dataflows
+description: Learn how to use the premium features available with Power BI dataflows, like the Enhanced compute engine, DirectQuery, Computed entities, Linked Entities, and Incremental refresh.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -17,7 +17,7 @@ Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI P
 The following features are available only with Power BI Premium (PPU or a Premium capacity subscription):
 
 * Enhanced compute engine
-* Direct Query
+* DirectQuery
 * Computed entities
 * Linked Entities
 * Incremental refresh
