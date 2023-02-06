@@ -37,4 +37,4 @@ This section lists the Power BI features that aren't supported for *China North*
 ## Next steps
 
 >[!div class="nextstepaction"]
->[What is Power BI Premium?](service-premium-gen2-what-is.md)
+>[What is Power BI Premium?](service-premium-what-is.md)

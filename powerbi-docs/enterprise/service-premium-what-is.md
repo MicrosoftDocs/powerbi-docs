@@ -21,7 +21,7 @@ The following table lists some of the Premium enhancements.
 |Enhancement           |Details  |
 |----------------------|---------|
 |Purchase Premium for individuals in your organization  |See [Power BI Premium Per User (PPU)](service-premium-per-user-faq.yml). |
-|Improved metrics      |Capacity performance depends only on the amount of CPU usage. Metrics can be easily understood using the [Power BI Premium Capacity Utilization and Metrics](service-premium-gen2-metrics-app.md) app. |
+|Improved metrics      |Capacity performance depends only on the amount of CPU usage. Metrics can be easily understood using the [Power BI Premium Capacity Utilization and Metrics](service-premium-metrics-app.md) app. |
 |Autoscale             |An optional feature that prevents slowdowns caused by throttling on overloaded capacities. When enabled, if the load on the capacity exceeds the capacity limits, [autoscale](service-premium-auto-scale.md) automatically adds one v-core at a time for 24-hour periods. Additional v-cores are charged to your Azure subscription on a pay-as-you-go basis. |
 
 ## Capacities and SKUs
@@ -78,7 +78,7 @@ You can schedule and run as many refreshes as required at any given time, and th
 
 When monitoring Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), you only need to take into consideration one aspect: *how much CPU your capacity requires to serve the load at any moment*. To monitor your capacity, use the [Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview) app.
 
-To install the app, see [Install the Premium metrics app](service-premium-install-gen2-app.md). You can learn how to use the app in the article [Use the Premium metrics app](service-premium-gen2-metrics-app.md).
+To install the app, see [Install the Premium metrics app](service-premium-install-app.md). You can learn how to use the app in the article [Use the Premium metrics app](service-premium-metrics-app.md).
 
 Here's what happens when you exceed your CPU limit per the SKU size you purchased:
 
@@ -120,7 +120,7 @@ The following known limitations currently apply to Power BI Premium.
 > [Power BI Premium Per User](service-premium-per-user-faq.yml)
 
 > [!div class="nextstepaction"]
-> [Managing Premium capacities](service-premium-capacity-manage-gen2.md)
+> [Managing Premium capacities](service-premium-capacity-manage.md)
 
 > [!div class="nextstepaction"]
 > [Power BI Embedded Generation 2](../developer/embedded/embedded-analytics-power-bi.md)
