@@ -99,6 +99,8 @@ When reviewing the test and production stage cards, you can see the last deploym
 
 Deployment time is useful for establishing when a stage was last updated. It can also be helpful if you want to track time between test and production deployments.
 
+To examine the differences between the two pipelines before you deploy, see [compare content in different deployment stages](./deployment-pipelines-compare.md).
+
 ## Step 5 - Create deployment rules (optional)
 
 When you're working in a deployment pipeline, different stages may have different configurations. For example, each stage can have different databases or different query parameters. The development stage might query sample data from the database, while the test and production stages query the entire database.

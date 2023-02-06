@@ -11,17 +11,11 @@ ms.date: 01/31/2023
 
 # Compare content in different deployment stages
 
-Before you deploy content to a different stage, it can be helpful to see the differences between the two stages. The **Change review** button displays the content of each pipeline and shows you exactly which items are different and where those differences are.
-
-The deployment pipeline home page compares the three deployment stages and indicates if there are any differences. A green circle with a check indicates that the two stages are the same. An orange circle with an "X" indicates that the stages are different.
-
-:::image type="content" source="./media/deployment-pipelines-compare/deployment-pipelines-compare.png" alt-text="Screenshot showing three stages of deployment. There's a green check between the test and production stages and an orange X between the development and test stages.":::
+Before you deploy content to a different stage, it can be helpful to see the differences between the two stages. The deployment pipeline home page compares the three deployment stages and indicates if there are any differences. Use the **Compare** and **Change review** buttons to display the content of each pipeline and see exactly which items are different and where those differences are.
 
 ## Compare stages
 
-When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
-
-:::image type="content" source="media/deployment-pipelines-compare/deployment-flow.png" alt-text="A screenshot showing a deployment pipeline with its comparison indicators." lightbox="media/deployment-pipelines-get-started/deployment-flow.png":::
+:::image type="content" source="./media/deployment-pipelines-compare/deployment-pipelines-compare.png" alt-text="Screenshot showing three stages of deployment. There's a green check between the test and production stages and an orange X between the development and test stages.":::::
 
 To allow a quick visual insight into the differences between two sequential stages, a comparison icon indicator appears between them. The comparison indicator has two states:
 
@@ -31,7 +25,11 @@ To allow a quick visual insight into the differences between two sequential stag
   - Some of the content items in each stage, were changed or updated (have different metadata).
   - There is a difference in the number of items between the stages.
 
-When two sequential stages aren't the same, a **compare** link appears underneath the orange comparison icon. Clicking the link opens the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. Changed items get one of the following labels:
+When two sequential stages aren't the same, a **Compare** link appears underneath the orange comparison icon. Click the link to open the content item list in both stages in Compare view. Compare view helps you track changes or differences between items, in each pipeline stage. 
+
+:::image type="content" source="media/deployment-pipelines-compare/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-compare/compare.png":::
+
+Paired items are shown next to each other, even if they have different names. Changed items get one of the following labels:
 
 - **New** – A new item in the source stage. This is an item that doesn't exist in the target stage. After deployment, this item will be cloned to the target stage.
 
@@ -52,17 +50,9 @@ The comparison is designed to help you understand the difference between the sta
 
 3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
 
-:::image type="content" source="media/deployment-pipelines-compare/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-compare/compare.png":::
-
-## Compare paired items
-
-If two stages are different, select **Compare** underneath to see a list of items in each stage.
+## Compare paired items with granular compare
 
 :::image type="content" source="./media/deployment-pipelines-compare/compare-changes-new.png" alt-text="Screenshot showing a comparison between two stages with one new item and one different item.":::
-
-- Paired items are shown next to each other, even if they have different names.
-- An item that exists in only one of the stages is indicated to be **New**.
-- Paired items that aren't identical are indicated to be **Different**. Differences can be in the settings or schema (or both).
 
 ## Examine the differences in the item
 
