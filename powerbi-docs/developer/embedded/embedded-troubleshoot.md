@@ -22,7 +22,7 @@ This article discusses some common issues that can come up when embedding conten
 
 :::image type="content" source="media/embedded-troubleshoot/fiddler.png" alt-text="Screenshot of the Fiddler tool output window, which shows the Power BI API HTTP traffic.":::
 
-### F12 in Browser for front-end debugging
+### F12 in Browser for frontend debugging
 
 The F12 key launches the developer window within your browser. This tool lets you look at network traffic and see other valuable information.
 
@@ -55,7 +55,7 @@ We recommend logging the Request ID (and error details for troubleshooting). Pro
 
 Error messages within the Azure portal or the Power BI app registration page will notify you if you don't have sufficient privileges to register your app. To register an application, you must be an admin in the Azure AD tenant, or application registrations must be enabled for non-admin users.
 
-### Power BI service doesn't appear in the Azure portal when registering a new App
+### Power BI service doesn't appear in the Azure portal when registering a new app
 
 At least one user must be signed up for Power BI. If you don't see **Power BI service** listed within the API list, no user is signed up for Power BI.
 
@@ -101,13 +101,13 @@ When you register an Azure AD app, there are two parameters called *object ID*. 
 
 If you're using Power BI Embedded and Azure AD Direct authentication, you might receive a message like the previous message when you try to sign in, because direct authentication isn't enabled.
 
-You can turn direct authentication back on using an [Azure AD Policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+You can turn direct authentication back on using an [Azure AD policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 We recommend you enable this policy only on a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning it. Here's a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Azure AD Preview PowerShell Module](/powershell/azure/active-directory/install-adv2).
+1. Install the [Azure AD Preview PowerShell module](/powershell/azure/active-directory/install-adv2).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable `$sp` doesn't have more than one application as a result).
 
@@ -144,7 +144,7 @@ To determine the problem, try the following steps:
 * Run [get dataset](/rest/api/power-bi/datasets). Is the property `IsEffectiveIdentityRequired` true?
 * Username is mandatory for any `EffectiveIdentity`.
 * If `IsEffectiveIdentityRolesRequired` is true, Role is required.
-* `DatasetId` is mandatory for any EffectiveIdentity.
+* `DatasetId` is mandatory for any `EffectiveIdentity`.
 * For Analysis Services, the master user has to be a gateway admin.
 
 ### AADSTS90094: The grant requires admin permission
@@ -202,7 +202,7 @@ When you *embed for your organization*, to allow Azure AD guest users access to 
 
 To find your tenant ID, you can use the instructions in [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
-For more information, see [How to: Sign in any Azure Active Directory user using the multitenant application pattern](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
+For more information, see [Making your application multi-tenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
 ## Data sources
 
@@ -212,7 +212,7 @@ A data source can have a single set of credentials for one master user. If you n
 
 ## Troubleshoot your embedded application with the IError object
 
-Use the [**IError object** returned by the *error* event from the **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) to debug your application and better understand the cause of your errors.
+Use the [IError object returned by the error event from the JavaScript SDK](/javascript/api/overview/powerbi/troubleshoot-and-debug) to debug your application and better understand the cause of your errors.
 
 After acquiring the IError object, you should look at the appropriate common errors table that fits the embed type you're using. Compare the **IError properties** with the ones in the table and find the possible reason(s) for the failure.
 
@@ -353,8 +353,6 @@ AADSTS50079: The user is required to use multi-factor authentication.
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.yml).
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/).
-
 For further assistance, [contact support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
 
 ## Next steps
@@ -362,4 +360,4 @@ For further assistance, [contact support](https://powerbi.microsoft.com/support/
 > [!div class="nextstepaction"]
 >[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)
