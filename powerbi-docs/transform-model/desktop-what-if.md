@@ -19,11 +19,11 @@ You can create variables for your reports, interact with the variable as a slice
 
 Create a parameter on the **Modeling** tab in Power BI Desktop. When you select it, a dialog box appears where you can configure the parameter.
 
-## Create a what-if parameter
+## Create a parameter
 
-To create a parameter, select **New parameter** from the **Modeling** tab in Power BI Desktop, and choose either **Fields** or **Numeric Range**. The following examples use **Numeric Range**, similar procedures apply to using **Fields**. Call the example *Discount percentage* and set its **Data type** to **Decimal number**. The **Minimum** value is zero. The **Maximum** is 0.50 (50 percent). Also set the **Increment** to 0.05, or five percent. The increment determines how much the parameter will adjust when interacted with in a report.
+To create a parameter, select **New parameter** from the **Modeling** tab in Power BI Desktop, and choose either **Fields** or **Numeric range**. The following examples use **Numeric range**, similar procedures apply to using **Fields**. Name the example *Discount Percentage* and set its **Data type** to **Decimal number**. The **Minimum** value is zero. The **Maximum** is 0.50 (50 percent). Also set the **Increment** to 0.05, or five percent. The increment determines how much the parameter will adjust when interacted with in a report.
 
-:::image type="content" source="media/desktop-what-if/parameters-dialog-box.png" alt-text="Screenshot of the Parameters dialog box with the example data in the filled out in the fields.":::
+:::image type="content" source="media/desktop-what-if/parameters-dialog-box.png" alt-text="Screenshot of the Parameters dialog box with the example data filled out in the fields.":::
 
 > [!NOTE]
 > For decimal numbers, make sure you precede the value with a zero, as in 0.50 versus just .50. Otherwise, the number won't validate and the **OK** button won't be selectable.
@@ -42,7 +42,7 @@ It's important and useful to note that after you create a parameter, both the pa
 
 ## Use a numeric range parameter
 
-This next example shows you how to use parameter with data. You created the parameter in the previous section. Now you'll put it to use by creating a new measure whose value adjusts with the slider.
+This next example shows you how to use a parameter with data. You created the parameter in the previous section. Now you'll put it to use by creating a new measure whose value adjusts with the slider.
 
 :::image type="content" source="media/desktop-what-if/what-if_05.png" alt-text="Screenshot of the New Measure button highlighted in Power BI Desktop.":::
 
