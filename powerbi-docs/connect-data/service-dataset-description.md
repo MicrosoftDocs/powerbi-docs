@@ -1,6 +1,6 @@
 ---
 title: Dataset description
-description: Learn what a dataset description is, how it's useful, and how to provide it. Users see a description in the information tooltip.
+description: Learn what a dataset description is, how it's useful, and how to provide it. Users see dataset descriptions in the dataset details page, information tooltips, and other places throughout the Power BI user interface.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -17,7 +17,7 @@ Providing a meaningful description helps foster dataset reuse. For instance, bas
 
 ## Provide a dataset description
 
-To provide a description for a dataset, select the dataset to view the dataset details, then choose the **Add a description link**.
+To provide a description for a dataset, go to dataset's settings page, find the Dataset description section, and enter your description in the text box.
 
 In the settings page, find the **Dataset description** section, and enter your description in the text box. Select **Apply** to save your description.
 
