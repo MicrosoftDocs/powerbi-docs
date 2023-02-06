@@ -22,7 +22,7 @@ Power Automate is a no-code way to interact with the Export To File API in the u
 
 To follow along, make sure you have the following prerequisites:
 
-- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A1/EM1 - A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../enterprise/service-premium-gen2-what-is.md).
+- At least one workspace in your Power BI tenant backed by a reserved capacity. This capacity can be any of the A1/EM1 - A6/P3 SKUs. Read more about [reserved capacities in Power BI Premium](../enterprise/service-premium-what-is.md).
 - Access to the standard connectors in Power Automate which come with any Office 365 subscription.
 
 ## Create a flow from scratch 
