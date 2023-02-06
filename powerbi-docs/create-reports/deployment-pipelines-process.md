@@ -190,7 +190,7 @@ During deployment, the following item properties are copied and overwrite the it
 
 * The source item has a label with protection and the target item doesn't. In such cases, a pop-up window asking for consent to override the target sensitivity label appears.
 
-### Item properties that aren't copied
+### Item properties that are not copied
 
 The following item properties aren't copied during deployment:
 
