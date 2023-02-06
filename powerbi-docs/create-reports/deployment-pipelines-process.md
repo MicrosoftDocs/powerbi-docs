@@ -26,7 +26,7 @@ There are two ways to deploy content from one stage to another. You can deploy a
 
 You can also deploy content backwards, from a later stage in the deployment pipeline, to an earlier one.
 
-After the deployment is complete, refresh the datasets so that you can use the newly copied content. The dataset refresh is required because data isn't copied from one stage to another. To understand which item properties are copied during the deployment process, and which item properties are not copied, review the [item properties copied during deployment](#item-properties-copied-during-deployment) section.
+After the deployment is complete, refresh the datasets so that you can use the newly copied content. The dataset refresh is required because data isn't copied from one stage to another. To understand which item properties are copied during the deployment process, and which item properties aren't copied, review the [item properties copied during deployment](#item-properties-copied-during-deployment) section.
 
 ### Creating a Premium workspace
 
@@ -36,7 +36,7 @@ If you have Premium permissions, the content of the workspace is copied to the s
 
 If you don't have Premium permissions, the workspace is created but the content isn’t copied. You can ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. Later, when the workspace is assigned to a capacity, you can deploy content to this workspace.
 
-If you're using [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml), your workspace is automatically associated with your PPU. In such cases Premium permissions aren't required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
+If you're using [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml), your workspace is automatically associated with your PPU. In such cases, Premium permissions aren't required. However, workspaces created by a PPU user, can only be accessed by other PPU users. In addition, content created in such workspaces can only be consumed by PPU users.
 
 ### Workspace and content ownership
 
@@ -44,11 +44,11 @@ The deploying user automatically becomes the dataset owner of the cloned dataset
 
 ## Deploy content to an existing workspace
 
-Deploying content in a working production pipeline, to a stage that has an existing workspace, includes the following:
+Deploying content from a working production pipeline to a stage that has an existing workspace, includes the following steps:
 
 * Deploying new content as an addition to the content already there.
 
-* Deploying new content to replace some of the content already there.
+* Deploying updated content to replace some of the content already there.
 
 ### Deployment process
 
@@ -110,7 +110,7 @@ There are three methods you can use to avoid using auto-binding:
 
 * Define a parameter rule. This option isn't available for reports, you can only use it with datasets and dataflows.
 
-* Connect your reports dashboards and tiles to a proxy dataset or dataflow, that isn't connected to a pipeline.
+* Connect your reports, dashboards, and tiles to a proxy dataset or dataflow that isn't connected to a pipeline.
 
 #### Auto-binding and parameters
 
@@ -181,7 +181,7 @@ During deployment, the following item properties are copied and overwrite the it
 
 * Item relationships
 
-[Sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions aren't met, sensitivity labels *will not* be copied during deployment.
+[Sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) are copied *only* when one of the conditions listed below is met. If these conditions aren't met, sensitivity labels *won't* be copied during deployment.
 
 * A new item is deployed, or an existing item is deployed to an empty stage.
 
@@ -204,7 +204,7 @@ The following item properties aren't copied during deployment:
 
 * Workspace settings - Each stage has its own workspace
 
-* App content and settings - To deploy your apps, see [deploying Power BI apps](#deploying-power-bi-apps)
+* App content and settings - To update your apps, see [Update content to Power BI apps](#update-content-to-power-bi-apps)
 
 * [Personal bookmarks](./../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service)
 
@@ -254,7 +254,7 @@ Once your pipeline is configured with incremental refresh, we recommend that you
 
 Below are a few examples of how you may integrate incremental refresh with deployment pipelines.
 
-* [Create a new pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline) and connect to it a workspace with a dataset that has incremental refresh enabled.
+* [Create a new pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline) and connect it to a workspace with a dataset that has incremental refresh enabled.
 
 * Enable incremental refresh in a dataset that's already in a *development* workspace.  
 
@@ -296,11 +296,11 @@ To enable automatic aggregations, follow the instructions in [configure the auto
 
 Hybrid tables are tables with [incremental refresh](../connect-data/incremental-refresh-overview.md) that can have both import and direct query partitions. During a clean deployment, both the refresh policy and the hybrid table partitions are copied. When deploying to a pipeline stage that already has hybrid table partitions, only the refresh policy is copied. To update the partitions, refresh the table.
 
-## Deploying Power BI apps
+## Update content to Power BI apps
 
-[Power BI apps](../consumer/end-user-apps.md) are the recommended way of distributing content to free Power BI consumers. Using deployment pipelines you can manage Power BI apps in a deployment pipeline, so that you have more control and flexibility when it comes to your app's lifecycle.
+[Power BI apps](../consumer/end-user-apps.md) are the recommended way of distributing content to free Power BI consumers. You can update the content of your Power BI apps using a deployment pipeline, giving you more control and flexibility when it comes to your app's lifecycle.
 
-Create an app for each deployment pipeline stage, so that you can test each app update from an end user's point of view. A deployment pipeline allows you to manage this process easily. Use the publish or view button in the workspace card, to publish or view the app in a specific pipeline stage.
+Create an app for each deployment pipeline stage, so that you can test each update from an end user's point of view. Use the **publish** or **view** button in the workspace card to publish or view the app in a specific pipeline stage.
 
 :::image type="content" source="media/deployment-pipelines-process/publish.png" alt-text="A screenshot highlighting the publish app button, at the bottom right of the production stage." lightbox="media/deployment-pipelines-process/publish.png":::
 
@@ -330,7 +330,7 @@ The lowest deployment pipeline permission is *pipeline admin*, and it's required
 |User                          |Pipeline permissions |Comments |
 |------------------------------|---------------------|---------|
 |**Pipeline admin** |<ul><li>View the pipeline​</li><li>Share the pipeline with others</li><li>Edit and delete the pipeline</li><li>Unassign a workspace from a stage</li><li>Can see workspaces that are tagged as assigned to the pipeline in Power BI service</li></ul> |Pipeline access doesn't grant permissions to view or take actions on the workspace content. |
-|**Workspace viewer**<br>(and pipeline admin) |<ul><li>Consume content</li><li>Unassign a workspace from a stage</li></ul> |Workspace members assigned the Viewer role without *build* permissions, cannot access the dataset or edit workspace content. |
+|**Workspace viewer**<br>(and pipeline admin) |<ul><li>Consume content</li><li>Unassign a workspace from a stage</li></ul> |Workspace members assigned the Viewer role without *build* permissions, can't access the dataset or edit workspace content. |
 |**Workspace contributor**<br>(and pipeline admin) |<ul><li>Consume content​</li><li>Compare stages</li><li>View datasets</li><li>Unassign a workspace from a stage</li></ul> |   |
 |**Workspace member**<br>(and pipeline admin) |<ul><li>View workspace content​</li><li>Compare stages</li><li>Deploy items (must be a member or admin of both source and target workspaces)</li><li>Update datasets</li><li>Unassign a workspace from a stage</li><li>Configure dataset rules (you must be the dataset owner)</li></ul> |If the *block republish and disable package refresh* setting located in the tenant *dataset security* section is enabled, only dataset owners will be able to update datasets. |
 |**Workspace admin**<br>(and pipeline admin) |<ul><li>View workspace content​</li><li>Compare stages</li><li>Deploy items</li><li>Assign workspaces to a stage</li><li>Update datasets</li><li>Unassign a workspace from a stage</li><li>Configure dataset rules (you must be the dataset owner)</li></ul> |   |
@@ -387,7 +387,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity can't be deployed.
 
-* A dataset with DirectQuery or Composite connectivity mode, that uses variation or [auto date/time](../transform-model/desktop-auto-date-time.md) tables, isn’t supported. For more information see [What can I do if I have a dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables?](deployment-pipelines-troubleshooting.yml#what-can-i-do-if-i-have-a-dataset-with-directquery-or-composite-connectivity-mode--that-uses-variation-or-auto-date-time-tables-)
+* A dataset with DirectQuery or Composite connectivity mode that uses variation or [auto date/time](../transform-model/desktop-auto-date-time.md) tables, isn’t supported. For more information see [What can I do if I have a dataset with DirectQuery or Composite connectivity mode, that uses variation or calendar tables?](deployment-pipelines-troubleshooting.yml#what-can-i-do-if-i-have-a-dataset-with-directquery-or-composite-connectivity-mode--that-uses-variation-or-auto-date-time-tables-)
 
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
