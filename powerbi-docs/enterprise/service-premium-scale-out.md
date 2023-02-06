@@ -31,7 +31,7 @@ Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. 
 
 Before you enable Power BI Dataset Scale-Out, verify that the following Prerequisites are met.
 
-* Your workspace resides on a Power BI Premium [capacity](service-premium-gen2-what-is.md#capacities-and-skus):
+* Your workspace resides on a Power BI Premium [capacity](service-premium-what-is.md#capacities-and-skus):
     * P SKUs
     * A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
 
@@ -171,7 +171,9 @@ You can connect to specific type of dataset copy by appending one of the followi
 
 * XMLA updates and refreshes must be synced with the *read-only* dataset copies using the Sync REST API.
 
-* When deleting a Power BI Dataset Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+* When deleting a Power BI Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+
+* Backup & Restore operations are currently not supported for Power BI Scale-Out datasets. If you must restore a dataset, disable Scale-Out, perform the restore operation, and then re-enable Scale-Out.
 
 * When Power BI Dataset Scale-Out is turned on, changes to the following features, are not supported:
     * Model roles for RLS and OLS
