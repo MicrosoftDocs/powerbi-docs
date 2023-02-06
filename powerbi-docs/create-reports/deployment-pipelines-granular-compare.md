@@ -37,7 +37,7 @@ If the only difference between the two items is settings changes, like the name 
 
 When you select the **change review** icon, the content of that item is shown as it currently looks in the source stage and in the target stage.
 
-You'll see:
+On top of the screen, you'll see:
 
 1. The full pathname of the file as it appears in the source stage.
 1. The number of total changes (in black) along with the number of additions (green) and deletions (red) made to the file
@@ -54,11 +54,18 @@ You'll see:
 
 ---
 
+The two versions of the item you see are modified to make the comparison easier:
+
+- Datasource and parameter rules are applied to the source item (to be deployed) so that the datasource you see is the datasource that will be deployed.
+- Some fields that don't indicate differences (for example, timestamps and role membership) are removed from both items.
+- System managed tables, like auto aggregate, are removed.
+- Items are sorted so that fields and tables appear in the same order.
+
 Close the window when you finish examining the differences and deploy to the next stage when you're ready.
 
 ## Considerations and limitations
 
-- You can only compare the content of *text* item types (datasets, dataflows, and pagenated reports)
+- You can only compare the content of datasets and dataflows
 - You can only compare changes to the schema content. Settings changes, like file names or sensitivity labels aren't shown.
 
 ## Next steps
