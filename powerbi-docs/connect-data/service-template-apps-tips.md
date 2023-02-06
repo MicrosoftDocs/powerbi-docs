@@ -70,7 +70,7 @@ A well-defined data model ensures that your customers can easily and intuitively
 
 ### Q&A
 
-The modeling also affects how well Q&A can provide results for your customers. Ensure that you add synonyms to commonly used columns. Properly named your columns in the [queries](#queries).
+The modeling also affects how well Q&A can provide results for your customers. Be sure to add synonyms to commonly used columns, and properly name your columns in the [queries](#queries).
 
 ### Additional data model tips
 
@@ -78,7 +78,7 @@ Make sure you've:
 
 * Applied formatting to all value columns. Apply types in the query.  
 * Applied formatting to all measures.
-* Set default summarization. Especially, set *Do Not Summarize* when applicable, for unique values, for example.  
+* Set default summarization. In particular, set *Do Not Summarize* when applicable, for unique values, for example.  
 * Set a data category, when applicable.
 * Set relationships, as necessary.  
 
@@ -128,22 +128,22 @@ We recommend having quality sample data before creating the app to ensure that t
 
 Template apps can be published on AppSource. Follow these guidelines before submitting your app to AppSource:
 
-* Make sure that you create a template app with engaging sample data that can help the installer understand what the app can do. Empty report and dashboard aren't approved.
+* Make sure that you create a template app with engaging sample data that can help the installer understand what the app can do. Empty reports and dashboards won't be approved.
 * Template apps support sample data only apps. Make sure to [check the static app checkbox](./service-template-apps-create.md#define-the-properties-of-the-template-app).
-* Have instructions for the validation team to follow which include credentials and parameters that are required to connect to data.
+* Have instructions for the validation team to follow that include credentials and parameters they can use to connect to the data.
 * Your application must include an [App icon](./service-template-apps-create.md#define-the-properties-of-the-template-app) in Power BI and on your cloud partner portal (CPP) offer.
 * Configure the [landing page](./service-template-apps-create.md#define-the-properties-of-the-template-app).
-* Make sure to follow the documentation about [Power BI App offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
-* In case a dashboard is part of your app, make sure that it's not empty.
-* Install the app using the app link before submitting it. Make sure you can connect the dataset and the app experience is as you planned.
-* Before uploading PBIX into the template workspace, make sure to unload any unnecessary connections.
+* Make sure to follow the documentation about the [Power BI App offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+* If a dashboard is part of your app, make sure it's not empty.
+* Install the app using the app link before submitting it. Make sure that you can connect the dataset and that the app experience is as you planned.
+* Before uploading a PBIX file into the template workspace, make sure to unload any unnecessary connections.
 * Follow Power BI [Best design practices for reports and visuals](../visuals/power-bi-report-visualizations.md) to achieve maximum impact on your users and getting approved for distribution.
 
 ## Create a download link for the app
 
 After publishing the template app on AppSource, consider creating a download link from your website to either:
 
-* AppSource download page, which can be viewed by publicly. Get the link from your AppSource page.
+* The AppSource download page, which can be viewed by publicly. Get the link from your AppSource page.
 * Power BI, which can be viewed by a Power BI user.
 
 In order to redirect a user to the app's download link in Power BI, see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples).
@@ -152,7 +152,7 @@ In order to redirect a user to the app's download link in Power BI, see the foll
 
 ## Automate parameter configuration during installation
 
-If you're an independent software vendor (ISV) and are distributing your template app by using your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This approach makes things easier for your customers. It also increases the likelihood of a successful installation because they don't have to supply details that they might not know. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
+If you're an independent software vendor (ISV) and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This approach makes things easier for your customers. It also increases the likelihood of a successful installation because they don't have to supply details that they might not know. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
 
 ## Next steps
 
