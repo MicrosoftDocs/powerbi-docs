@@ -33,7 +33,7 @@ Colleagues you've shared the dashboard with can [scan the QR code for access to 
 
 1. A dialog box with the QR code appears.
 
-    :::image type="content" source="media/service-create-qr-code-for-tile/pbi-qrcode-opportunity-count-2.png" alt-text="Screenshot the Your QR code is ready dialog.":::
+    :::image type="content" source="media/service-create-qr-code-for-tile/pbi-qrcode-opportunity-count-2.png" alt-text="Screenshot showing the Your QR code is ready dialog.":::
 1. From here, you can scan the QR code or download and save it, so you can:
 
    * Add it to an email or other document.
