@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 This article describes how to purchase Power BI Premium A SKUs for testing scenarios, and for cases where you don't have the permissions necessary to purchase P SKUs (Microsoft 365 Global Administrator role or Billing Administrator role). A SKUs require no time commitment, and are billed hourly. You purchase A SKUs in the [Azure portal](https://portal.azure.com).
 
-For more information about Power BI Premium, see [What is Power BI Premium](service-premium-gen2-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Make sure to purchase at least one Power BI Pro license for your organization. With A SKUs, _all users_ who consume content also require Pro licenses.
+For more information about Power BI Premium, see [What is Power BI Premium](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Make sure to purchase at least one Power BI Pro license for your organization. With A SKUs, _all users_ who consume content also require Pro licenses.
 
 > [!NOTE]
 > If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB aren't supported in shared capacity.
@@ -83,11 +83,11 @@ After you purchase a capacity, see [Manage a capacity](service-admin-premium-man
 
 ## Next steps
 
-- [What is Power BI Premium?](service-premium-gen2-what-is.md)
+- [What is Power BI Premium?](service-premium-what-is.md)
 - [How to purchase Power BI Premium](service-admin-premium-purchase.md)
 - [Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)
 - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
-- [Power BI Premium FAQ](service-premium-gen2-faq.yml)
+- [Power BI Premium FAQ](service-premium-faq.yml)
 - Download the [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
