@@ -27,10 +27,10 @@ For content with paginated report visuals, this table spells out the licenses an
 |Type of capacity that hosts the workspace | License type to _publish and manage_ these reports in a workspace  |License type to _view_ these reports |
 |---------|---------|---------|
 |[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license and write access to the workspace | Only users with PPU licenses  |
-|[Power BI Premium](../enterprise/service-premium-gen2-what-is.md) | A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace | Users with free, Pro, and PPU licenses |
+|[Power BI Premium](../enterprise/service-premium-what-is.md) | A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace | Users with free, Pro, and PPU licenses |
 
 > [!NOTE]
-> In a Premium Gen1 capacity, a Power BI admin needs to [enable paginated reports](../enterprise/service-admin-premium-workloads.md?tabs=gen1#paginated-reports) in the Premium capacities section of the Power BI admin portal. In a [Power BI Premium capacity](../enterprise/service-premium-gen2-what-is.md#paginated-reports), paginated reports are enabled automatically.
+> In a Premium Gen1 capacity, a Power BI admin needs to [enable paginated reports](../enterprise/service-admin-premium-workloads.md?tabs=gen1#paginated-reports) in the Premium capacities section of the Power BI admin portal. In a [Power BI Premium capacity](../enterprise/service-premium-what-is.md#paginated-reports), paginated reports are enabled automatically.
 
 ## Create a paginated report visual
 
