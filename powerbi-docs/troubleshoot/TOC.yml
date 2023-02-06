@@ -7,6 +7,12 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Working in a dataflow shows irrelevant upgrade workspace message
+      href: known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md
+    - name: Accessing Power BI app report is denied due to no dataset access
+      href: known-issues/known-issue-284-accessing-app-report-denied-due-to-no-dataset-access.md
+    - name: Excel add-in can't find Power BI datasets
+      href: known-issues/known-issue-274-excel-add-in-cant-find-datasets.md
     - name: Search strings that include Japanese symbols don't return matches
       href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
     - name: Gateway data source owners cannot update data source credentials
@@ -31,8 +37,8 @@
       href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
     - name: Try it button missing on REST API pages
       href: known-issues/known-issue-169-try-it-button-missing.md            
-    - name: Long running, failed or stuck dataflow in Premium Gen2 
-      href: known-issues/known-issue-dataflow-on-premium-gen2.md   
+    - name: Long running, failed or stuck dataflow in Power BI Premium 
+      href: known-issues/known-issue-dataflow-on-premium.md   
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot
@@ -47,7 +53,9 @@
     - name: Troubleshoot report performance in Power BI
       href: ../guidance/report-performance-troubleshoot.md
     - name: Troubleshoot the Power BI add-in for PowerPoint
-      href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md    
+      href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md
+    - name: Troubleshoot sensitivity labels
+      href: ../enterprise/service-security-sensitivity-label-troubleshooting.md    
     - name: Develop in Power BI
       expanded: false
       items:
@@ -55,6 +63,8 @@
         href: ../connect-data/desktop-directquery-troubleshoot.md
       - name: Troubleshoot your embedded application 
         href: ../developer/embedded/embedded-troubleshoot.md      
+      - name: Troubleshoot developing custom visuals 
+        href: ../developer/visuals/power-bi-custom-visuals.md             
     - name: Gateways
       expanded: false
       items:
@@ -107,7 +117,7 @@
       - name: Troubleshoot sharing dashboards and reports
         href: ../collaborate-share/service-troubleshoot-sharing.md
       - name: Troubleshoot subscriptions
-        href: ../consumer/service-troubleshoot-subscribe.yml 
+        href: ../collaborate-share/service-troubleshoot-subscribe.yml 
     - name: Visuals
       expanded: false
       items:

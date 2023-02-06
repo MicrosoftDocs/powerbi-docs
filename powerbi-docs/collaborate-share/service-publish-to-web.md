@@ -200,6 +200,7 @@ Publish to web is supported for the vast majority of data sources and reports in
 - Admins can block public internet access, as described in [Private links for accessing Power BI](../enterprise/service-security-private-links.md). In that case, the Publish to Web option is grayed out for your tenant in the Power BI admin portal.
 - License enforcement for custom visuals.
 - Uncertified visuals from the organizational store, when the global tenant switch of the organization for uncertified visuals is on.
+- Public visuals from the organizational store, when the global tenant switch of the organization doesn't allow visuals created using the Power BI SDK.
 
 ## Next steps
 

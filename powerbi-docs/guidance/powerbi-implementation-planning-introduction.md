@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning
@@ -34,7 +34,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - Data management
 - Content distribution and sharing
 - Change management and deployment
-- Security
+- [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
 - Power BI Premium
 - Gateways

@@ -15,12 +15,20 @@
       href: service-discovery.md
     - name: "Share reports and dashboards"
       href: service-share-dashboards.md
+    - name: "Find content shared with you"
+      href: end-user-shared-with-me.md
+    - name: "Export a report to PDF"
+      href: end-user-pdf.md
     - name: "Request access to a report or dashboard"
       href: service-request-access.md
     - name: "Filter and share a report"
       href: service-share-reports.md
     - name: "Troubleshoot sharing reports or dashboards"
       href: service-troubleshoot-sharing.md
+    - name: "Subscribe to reports and dashboards"
+      href: end-user-subscribe.md
+    - name: "Troubleshoot creating and using subscriptions"  
+      href: service-troubleshoot-subscribe.yml
     - name: "Filter a report using parameters in the URL"
       href: service-url-filters.md
     - name: "Endorse your content"

@@ -55,7 +55,7 @@ etc.
 
 ## How to use the Identity filter API
 
-To use the Identity filter API, your powerbi-model version needs to be 1.9.1 or higher.
+To use the Identity filter API, your powerbi-models version needs to be 1.9.1 or higher.
 
 * Add the following property as a member of the visual.ts class.
 

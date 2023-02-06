@@ -24,9 +24,7 @@ Some preview features can be toggled on and off from your Power BI dashboard, Ho
 1. Open your Settings menu by selecting the gear icon in the upper-right corner of your Power BI screen and choosing **Settings**.
    
    ![Settings menu](./media/end-user-preview-features/power-bi-preview-setting.png).
-2. Select the **General** tab. If previews exist, you'll either see an option for **Preview features** or you'll see a preview feature listed on the left.  In this example, there is a preview listed for ArcGIS Maps. 
-   
-   ![General tab](./media/end-user-preview-features/power-bi-preview-arcgis.png)
+2. Select the **General** tab. If previews exist, you'll either see an option for **Preview features** or you'll see a preview feature listed on the left.  
 3. Select the **On** radio button, or mark the checkbox, to try out the new experience. Then select **Apply**.
 4. To turn off preview features, follow steps 1-3 above, and in step 3, choose **Off**, or remove the checkmark, and select **Apply**.
 

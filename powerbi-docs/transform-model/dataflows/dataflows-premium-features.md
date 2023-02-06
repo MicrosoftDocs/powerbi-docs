@@ -40,13 +40,11 @@ The enhanced compute engine in Power BI enables Power BI Premium subscribers to 
 > [!IMPORTANT]
 > The enhanced compute engine works only for A3 or larger Power BI capacities.
 
-# [Premium Gen2](#tab/gen2)
-
-In Premium Gen2, the enhanced compute engine is individually set for each dataflow. There are three configurations to choose from:
+In Power BI Premium, the enhanced compute engine is individually set for each dataflow. There are three configurations to choose from:
 
 * **Disabled**
 
-* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when the dataflow is connected to another dataflow.
+* **Optimized** (default) - The enhanced compute engine is turned off. It is automatically turned on when a table in the dataflow is referenced by another table or when the dataflows is connected to another dataflow in the same workspace.
 
 * **On**
 
@@ -65,12 +63,6 @@ To change the default setting and enable the enhanced compute engine, do the fol
 4. In the *Enhanced compute engine settings*, select **On** and then select **Apply**.
 
     :::image type="content" source="media\dataflows-premium-features\apply-enhanced-compute-engine-settings.png" alt-text="Screenshot of the enhanced compute engine settings with the on selection turned on and the apply button highlighted.":::
-
-# [Premium Gen1](#tab/gen1)
-
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **On**. If it is set to **Off**, enable the enhanced compute engine by switching the toggle to **On** and save your settings.
-
----
 
 ### Using the enhanced compute engine
 

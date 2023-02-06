@@ -93,7 +93,7 @@ ArcGIS map formatting options include:
 
 * **Layers:** Change the Title of the **Layers** list, specify if the **Layers** list (**Show layers**) button :::image type="icon" source="media/power-bi-visualizations-arcgis/layers.png"::: is visible in the expanded Map tools, define the position of the **Layers** list, and anchor the list over the map. The **Layers** list is visible by default.
 * **Map tools:** Specify if the **Zoom** tools (navigation buttons) are visible on the map, specify if the [Basemaps](#change-the-basemap) button :::image type="icon" source="media/power-bi-visualizations-arcgis/basemap.png"::: is visible in the expanded Map tools, lock the map extent in its current position, and define the position of the infographics cards on the map. **Zoom** tools and the **Basemaps** button aren't visible by default.
-* **Location type:** Specify the country in which your data is located to improve the accuracy of locations on your map. If your data is in a single country, choose that country from the drop-down list. If your data is global, choose **World**.
+* **Location type:** Specify the country or region in which your data is located to improve the accuracy of locations on your map. If your data is in a single country or region, choose that country or region from the drop-down list. If your data is global, choose **World**.
 * **Search:** Specify if the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/search.png"::: is visible in the expanded Map tools. **Search** is visible by default.
 
 > [!NOTE]
@@ -154,7 +154,7 @@ ArcGIS for Power BI uses geo enabling technology to accurately position location
 
 You can improve how accurately different locations are rendered on the map by establishing their location type.
 
-Boundaries are typically standard geographic areas, such as countries, provinces, and ZIP codes. When you establish boundaries and a specific country for your data locations, you can then choose from a subset of related, standard boundaries, such as census tracts, districts, or municipalities. Various location types are available for each country.
+Boundaries are typically standard geographic areas, such as countries/regions, provinces, and ZIP codes. When you establish boundaries and a specific country/region for your data locations, you can then choose from a subset of related, standard boundaries, such as census tracts, districts, or municipalities. Various location types are available for each country or region.
 
 :::image type="content" source="media/power-bi-visualizations-arcgis/location-type-us-boundaries.png" alt-text="Screenshot shows available location types by region.":::
 
@@ -166,9 +166,9 @@ To modify your data's location type, follow these steps:
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/layer-options.png" alt-text="Screenshot shows Layers options Location type selected.":::
 
-   Accept the default values to render the locations as points on the map and specify **One country** and **United States**.
+   Accept the default values to render the locations as points on the map and in one country/region, the United States.
 
-   :::image type="content" source="media/power-bi-visualizations-arcgis/location-type-us-points.png" alt-text="Screenshot shows setting location values as One country and United States.":::
+   :::image type="content" source="media/power-bi-visualizations-arcgis/location-type-us-points.png" alt-text="Screenshot shows accepting default location values.":::
 
 1. Select **OK** to save your settings.
 

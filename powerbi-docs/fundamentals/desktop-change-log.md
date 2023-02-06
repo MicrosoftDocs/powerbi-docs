@@ -1,13 +1,13 @@
 ---
 title: Change log for Power BI Desktop
 description: This change log is for Power BI Desktop and lists new items along with bug fixes for each released build.
-author: oksanakyrychenko
-ms.author: v-okkyry
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/08/2022
+ms.date: 01/12/2023
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,17 @@ ms.date: 11/08/2022
 This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## December 2022 QFE 1
+*Version: 2.112.1161.0, Released: January 10, 2023*
+
+Bug fixes/improvements:
+* AS Engine fix. DAX queries that contain query-scope calculated tables and send through external tools will not return error in certain cases.
+* DAX window functions fix. Now function will not return error in certain cases when the *relation* parameter use CalculateTable function.
+* Fix to data view filter menu.  Customers will see correct distinct values after applying filter/sort by another column.
+
+
 
 ## October 2022 QFE 2
 

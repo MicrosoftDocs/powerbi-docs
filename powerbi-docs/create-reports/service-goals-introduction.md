@@ -19,7 +19,7 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
 :::image type="content" source="media/service-goals-introduction/power-bi-metrics-hub.png" alt-text="Screenshot of Metrics page with metrics, scorecards, and samples.":::
 
-This article covers the basics of using Metrics in the Power BI service. See the other articles about metrics for more detail:
+This article covers the basics of using metrics in the Power BI service. See the other articles about metrics for more detail:
 
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)

@@ -23,22 +23,6 @@ Another way to share content with external guest users is in-place dataset shari
 
 This article provides a basic introduction to Azure AD B2B in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 
-## Licensing Requirements 
-
-The following table lists the licensing requirements for B2B access to Power BI. To invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed: 
-
-|Providers|Free User|Pro User|PPU User|
-|---|----|----|----|
-|Free|Not Supported|Not Supported|Not Supported 
-|Pro Trial|Not Supported|Not Supported|Not Supported|  
-|Pro Workspace|Not Supported|Supported|Supported|  
-|PPU Workspace|Not Supported|Not Supported|Supported|  
-|PPC Workspace (Free User)|Not Supported|Not Supported|Not Supported|  
-|PPC Workspace (Pro/PPU)|Supported|Supported|Supported| 
-
-> [!NOTE] 
-> Pro Trial users can't invite guest users in Power BI. 
-
 ## Enable access
 
 Make sure you enable the [Invite external users to your organization](../admin/service-admin-portal-export-sharing.md) feature in the Power BI admin portal before inviting guest users. Even when this option is enabled, the user must be granted the Guest Inviter role in Azure Active Directory to invite guest users.  
@@ -112,26 +96,43 @@ The discoverability for B2B content feature in Power BI makes accessing shared B
 
 ## Licensing
 
-The guest user must have the proper licensing in place to view the content that you shared. There are a few ways to make sure the user has a proper license: 
+### Licensing Requirements
+
+The following table lists the licensing requirements for B2B access to Power BI. The columns on the left indicate the workspace type and the per user license for the user sharing data externally. The license limitations across Free user, Pro user, and PPU user outlines limitations for the user consuming the data from an external tenant. Also note to invite guest users, a Power BI Pro or Premium Per User (PPU) license is needed: 
+
+|Workspace Type|User Type|Free User|Pro User|PPU User|
+|-----|-----|------|------|------|
+|All Workspaces|Free User|Not Supported|Not Supported|Not Supported| 
+|Pro Worskpace|Pro/PPU/PPU Trial|Not Supported|Supported|Supported|  
+|PPU Workspace|PPU User|Not Supported|Not Supported|Supported|  
+|My Workspace|All Users|Not Supported|Not Supported|Not Supported|  
+|PPU Workspace|PPU Trial User|Not Supported|Not Supported|Supported|  
+|PPC Workspace|Pro/PPU/PPU Trial|Supported|Supported|Supported| 
+
+> [!NOTE] 
+> Pro Trial users can't invite guest users in Power BI. 
+
+### Steps to address licensing requirements
+As noted above, the guest user must have the proper licensing in place to view the content that you shared. There are a few ways to make sure the user has a proper license: 
 * Use Power BI Premium capacity
 * Assign a Power BI Pro or a Premium Per User (PPU) license
 * Use a guest's Power BI Pro or PPU license.
 
 [Guest users who can edit and manage content in the organization](../admin/service-admin-portal-export-sharing.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) need a Power BI Pro or Premium Per User (PPU) license to contribute content to workspaces or share content with others.
 
-### Use Power BI Premium capacity
+#### Use Power BI Premium capacity
 
 Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates and large model sizes.
 
 ![Diagram of the guest user experience with Power B I Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
-### Assign a Power BI Pro or Premium Per User (PPU) license to guest user
+#### Assign a Power BI Pro or Premium Per User (PPU) license to guest user
 
 Assigning a Power BI Pro or PPU license from your organization to a guest user lets that guest user view content shared with them. For more information about assigning licenses, see [Assign licenses to users on the Licenses page](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro or PPU licenses to guest users, consult the [Product Terms site](https://www.microsoft.com/licensing/terms) to ensure you're in compliance with the terms of your licensing agreement with Microsoft.
 
 ![Diagram of the guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
-### Guest user brings their own Power BI Pro or Premium Per User (PPU) license
+#### Guest user brings their own Power BI Pro or Premium Per User (PPU) license
 
 The guest user may already have a Power BI Pro or PPU license that was assigned to them through their own organization.
 
@@ -173,9 +174,9 @@ The following tenant level settings in Power BI provide controls to admins. See 
   * [Show Azure Active Directory guests in lists of suggested people](../admin/service-admin-portal-export-sharing.md#show-azure-active-directory-guests-in-lists-of-suggested-people) 
 
 There are also Azure Active Directory settings that can limit what external guest users can do within your organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings: 
-  * [Manage External Collaboration Settings](https://learn.microsoft.com/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
-  * [Allow or block invitations to B2B users from specific organizations](https://learn.microsoft.com/azure/active-directory/external-identities/allow-deny-list)
-  * [Use Conditional Access to allow or block access](https://learn.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) 
+  * [Manage External Collaboration Settings](/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
+  * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/external-identities/allow-deny-list)
+  * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) 
 
 
 Additionally, to use in-place dataset sharing, tenant admins need to enable the following settings: 

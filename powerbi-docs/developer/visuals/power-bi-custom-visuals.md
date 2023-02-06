@@ -63,7 +63,7 @@ For more information on how to assign licenses see [Licensing and transactabilit
 
 To see how licenses are enforced, see [custom visual licenses](./custom-visual-licenses.md)
 
-[More questions about assigning and managing licenses?](./licensing-faq.md)
+[More questions about assigning and managing licenses?](./licensing-faq.yml)
 
 ### Certified Power BI visuals
 

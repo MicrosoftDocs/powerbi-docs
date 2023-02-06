@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/15/2022
+ms.date: 11/16/2022
 LocalizationGroup: Data refresh
 ---
 
@@ -18,7 +18,6 @@ Power BI enables you to go from data to insight to action quickly, yet you must 
 This article describes the data refresh features of Power BI and their dependencies at a conceptual level. It also provides best practices and tips to avoid common refresh issues. The content lays a foundation to help you understand how data refresh works. For targeted step-by-step instructions to configure data refresh, refer to the tutorials and how-to guides listed in the Next steps section at the end of this article.
 
 ## Understanding data refresh
-
 
 [Embed Power BI content with service principal and an application secret](../developer/embedded/embed-service-principal.md)
 
@@ -50,9 +49,9 @@ When a dataset is refreshed, it's either fully refreshed or partially refreshed.
 
 The amount of memory required to refresh a dataset depends on whether you're performing a full or partial refresh. During the refresh, a copy of the dataset is kept to handle queries to the dataset. This means that if you're performing a full refresh, you'll need twice the amount of memory the dataset requires.
 
-We recommend that you plan your capacity usage to ensure that the extra memory needed for dataset refresh, is accounted for. Having enough memory prevents refresh issues that can occur if your datasets require more memory than available, during refresh operations. To find out how much memory is available for each dataset on a Premium capacity, refer to the [Capacities and SKUs](./../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table.
+We recommend that you plan your capacity usage to ensure that the extra memory needed for dataset refresh, is accounted for. Having enough memory prevents refresh issues that can occur if your datasets require more memory than available, during refresh operations. To find out how much memory is available for each dataset on a Premium capacity, refer to the [Capacities and SKUs](./../enterprise/service-premium-what-is.md#capacities-and-skus) table.
 
-For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-what-is.md#large-datasets).
+For more information about large datasets in Premium capacities, see [large datasets](../enterprise/service-premium-large-models.md).
 
 #### Datasets in DirectQuery mode
 
@@ -105,13 +104,11 @@ Another way to consider the different refresh types is what they impact and wher
 
 #### Data refresh
 
-For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily dataset refreshes. The eight time values are stored in the backend database and are based on the *local time* zone that was selected on the Dataset Settings page. The scheduler checks which model should be refreshed and at what time(s).  The quota of eight refreshes resets daily at 12:01 a.m. local time. 
+For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily dataset refreshes. The eight time values are stored in the backend database and are based on the *local time* zone that was selected on the Dataset Settings page. The scheduler checks which model should be refreshed and at what time(s).  The quota of eight refreshes resets daily at 12:01 a.m. local time.
 
 ![Data refresh schedule in Database settings.](media/refresh-data/power-bi-refresh-data.png)
 
 If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Datasets on a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
-
-
 
 It's also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh now** in the dataset menu, as the following screenshot depicts. On-demand refreshes aren't included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you're interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
@@ -210,7 +207,6 @@ If you have no access to an enterprise data gateway and you're the only person w
 Unlike for an enterprise data gateway, you don't need to add data source definitions to a personal gateway. Instead, you manage the data source configuration by using the **Data source credentials** section in the dataset settings, as the following screenshot illustrates.
 
 ![Configure data source credentials for gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
-
 
 ### Accessing cloud data sources
 
@@ -315,7 +311,6 @@ Having configured a refresh schedule, the dataset settings page informs you abou
 > [!TIP]
 > Power BI does not have a monthly refresh interval option. However, you can use Power Automate to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/). 
 
-
 Note also that the configured refresh time might not be the exact time when Power BI starts the next scheduled process. Power BI starts scheduled refreshes on a best effort basis. The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
 > [!NOTE]
@@ -354,6 +349,29 @@ The warning icon helps to indicate current dataset issues, but it's also a good 
 Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedded-capacity.md).
 
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
+
+## Refresh cancellation
+
+Stopping a dataset refresh is useful when you want to stop a refresh of a large dataset during peak time. Use the refresh cancellation feature to stop refreshing datasets that reside on [Premium](./../enterprise/service-premium-what-is.md), [Premium Per User (PPU)](./../enterprise/service-premium-per-user-faq.yml) or [Power BI Embedded](./../developer/embedded/embedded-analytics-power-bi.md) capacities.
+
+To cancel a dataset refresh, you need to be a contributor, member or an admin of the dataset's workspace. Dataset refresh cancellation only works with datasets that use [import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
+
+>[!NOTE]
+>Datasets created as part of datamarts aren't supported.
+
+To start a refresh go to the dataset you want to refresh, and select **Refresh now**.
+
+:::image type="content" source="media/refresh-data/start-dataset-refresh.png" alt-text="A screenshot of the refreshing a dataset.":::
+
+To stop a refresh follow these steps:
+
+1. Go to the dataset that's refreshing and select **Cancel refresh**.
+
+    :::image type="content" source="media/refresh-data/stop-dataset-refresh.png" alt-text="A screenshot of stopping a dataset refresh.":::
+
+2. In the *Cancel refresh* pop-up window, select **Yes**.
+
+    :::image type="content" source="media/refresh-data/cancel-refresh-window.png" alt-text="A screenshot of the cancel refresh pop-up window with the yes button highlighted.":::
 
 ## Best practices
 

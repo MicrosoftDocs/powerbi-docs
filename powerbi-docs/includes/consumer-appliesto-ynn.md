@@ -5,9 +5,9 @@
  author: mihart
  ms.service: 
  ms.topic: include
- ms.date: 08/17/2020
+ ms.date: 01/12/2023
  ms.author: mihart
  ms.custom: include file
 ---
 
-<Token>**APPLIES TO:** ![yes](media/yes.png)Power BI service for ***business users*** ![no](media/no.png)Power BI service for designers & developers ![no](media/no.png)Power BI Desktop  </Token>
+<Token>**APPLIES TO:** :::image type="icon" source="media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="media/no-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="media/no-icon.svg" border="false":::Power BI Desktop  </Token>

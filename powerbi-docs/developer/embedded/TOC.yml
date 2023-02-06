@@ -7,6 +7,8 @@
     items:
     - name: "What is Power BI embedded analytics?"
       href: embedded-analytics-power-bi.md
+    - name: Power BI Embedded features
+      href: ../../enterprise/service-premium-features.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
     - name: "What is the Power BI Embedded analytics playground?"
       href: "power-bi-playground.md"    
   - name: Power BI Embedded setup
@@ -17,7 +19,7 @@
       href: register-app.md
     - name: "Configure credentials"
       href: configure-credentials.md    
-    - name: "Change your app permissions"
+    - name: "Edit your app permissions"
       href: change-permissions.md
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
@@ -51,24 +53,18 @@
       href: ../../collaborate-share/service-embed-secure.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
   - name: Tokens
     items:
-    - name: "Embedded analytics application tokens"
+    - name: "Embedded analytics access tokens"
       href: embed-tokens.md      
     - name: "Generating an embed token"
       href: generate-embed-token.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
   - name: Export to file
-    items:        
+    items:
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md
-  - name: Embedded Gen2
-    items:
-    - name: "What is Power BI Embedded Generation 2?"
-      href: "power-bi-embedded-generation-2.md"
-    - name: "Plan your transition to Power BI Embedded Gen2"
-      href: embedded-transition-gen1-to-gen2.md
   - name: Capacities and SKUs
     items:
     - name: "Move an embedded app to production"
@@ -97,19 +93,19 @@
       href: migration-to-sp-profiles.md
   - name: Security
     items:
-    - name: RLS
-      items:
-      - name: "Row-level security"
-        href: embedded-row-level-security.md
-      - name: "Embed a report with cloud-based RLS"
-        href: cloud-rls.md
-      - name: "RLS in embedded paginated reports"
-        href: paginated-reports-row-level-security.md
-    - name: "Embed a report on an on-premises SQL Server Analysis Services (SSAS)"
+    - name: "Embedding security features"
+      href: embedded-row-level-security.md
+    - name: "Embed with RLS"
+      href: cloud-rls.md
+    - name: "RLS in embedded paginated reports"
+      href: paginated-reports-row-level-security.md
+    - name: "Embed with on-premises SQL Server Analysis Services (SSAS)"
       href: sql-server-analysis-services-embed.md
-    - name: "Embed a report with Azure Analysis Services (AAS)"
+    - name: "Embed with Azure Analysis Services (AAS)"
       href: embed-azure-analysis-services.md
-    - name: "Embed a report with object-level security (OLS)"
+    - name: "Single sign-on systems (SSO)"
+      href: rls-sso.md
+    - name: "Embed with object-level security (OLS)"
       href: embed-object-level-security.md
   - name: Support
     items:

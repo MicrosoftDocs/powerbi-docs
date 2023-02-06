@@ -103,7 +103,7 @@ You can check the status of dataset conversions to and from Premium Files by usi
 
 ## Dataset eviction
 
-Dataset eviction is a Premium feature that allows the sum of dataset sizes to be significantly greater than the memory available for the purchased SKU size of the capacity. A single dataset is still constrained to the memory limits of the SKU. Power BI uses dynamic memory management to evict inactive datasets from memory. Datasets are evicted so that Power BI can load other datasets to address user queries. For more info on dynamic memory management, see [How capacities function](service-premium-what-is.md#how-capacities-function).
+Dataset eviction is a Premium feature that allows the sum of dataset sizes to be significantly greater than the memory available for the purchased SKU size of the capacity. A single dataset is still constrained to the memory limits of the SKU. Power BI uses dynamic memory management to evict inactive datasets from memory. Datasets are evicted so that Power BI can load other datasets to address user queries. For more info on dynamic memory management, see [Dataset eviction](service-premium-large-models.md#dataset-eviction).
 
 >[!NOTE]
 >If you have to wait for an evicted dataset to be reloaded, you might experience a noticeable delay.
@@ -222,10 +222,7 @@ The following links provide information that can be useful for working with larg
 > [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 
 > [!div class="nextstepaction"]
-> [How capacities function](service-premium-what-is.md#how-capacities-function)
-
-> [!div class="nextstepaction"]
 > [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> [Power BI Premium Generation 2](service-premium-what-is.md).

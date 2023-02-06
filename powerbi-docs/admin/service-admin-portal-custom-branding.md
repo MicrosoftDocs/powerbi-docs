@@ -1,6 +1,6 @@
 ---
 title: Customize branding
-description: Learn how to customize Power BI branding for your organization..
+description: Learn how to customize the look of your Power BI branding across your whole organization in the admin portal.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: admin-portal
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 12/15/2022
 LocalizationGroup: Administration
 ---
 

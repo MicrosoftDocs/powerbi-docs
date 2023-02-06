@@ -1,5 +1,5 @@
 ---
-title: Change your Azure Active Directory app's permissions
+title: Edit your Azure AD app's permission settings
 description: Learn how to change the API permissions on your Azure AD application.
 author: mberdugo
 ms.author: monaberdugo
@@ -21,7 +21,7 @@ When you [register your Azure AD app](./register-app.md), you grant it permissio
 >* *Embed for your organization*
 >* *Embed for your customers* with the *master user* authentication method
 
-## Change permissions on your Azure Active Directory app
+## Edit the permission settings on your Azure Active Directory app
 
 Permission changes can be made programmatically, or in the Azure portal.
 
@@ -46,9 +46,9 @@ In the Azure portal, you can view your app and make changes to its permissions.
 7. To add permissions, follow these steps (note that the first step is different for GCC apps):
 
     1. From the **Microsoft APIs** tab, select **Power BI service**.
-    > [!NOTE]
-    > For GCC apps, Select the **APIs my organization uses** tab, and search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.
-    > :::image type="content" source="media/change-permissions/find-gcc-apis.png" alt-text="Screenshot of GCC permissions tab.":::
+       > [!NOTE]
+       > For GCC apps, Select the **APIs my organization uses** tab, and search for either *Microsoft Power BI Government Community Cloud* OR *fc4979e5-0aa5-429f-b13a-5d1365be5566*.
+       > :::image type="content" source="media/change-permissions/find-gcc-apis.png" alt-text="Screenshot of GCC permissions tab.":::
 
     2. Select **Delegated Permissions** and add or remove the specific permissions you need.
 

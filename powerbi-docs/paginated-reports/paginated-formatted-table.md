@@ -20,7 +20,7 @@ You can use the formatted table feature to create paginated reports in any works
 
 ## Prerequisites
 
-- You need a Pro license. Read about the different [Power BI licenses](../consumer/end-user-license.md).
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 - You need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md).
 
 ## Get started
@@ -108,7 +108,7 @@ You can export the table before or after you save it. Paginated reports have ric
 
 ## Save your report
 
-You can save the report to any workspace, including workspaces that aren't in a Power BI Premium capacity.
+You can save the report to any workspace.
 
 1. On the **File** menu, save, download, or print your report.
 
@@ -132,7 +132,7 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 
 ## Considerations and limitations
 
-- You can create a formatted table in any workspace. It doesn't need to be in a Premium workspace.
+- You can create a formatted table in any workspace.
 - You can't create a formatted table from Power BI datasets based on a live connection.
 
 ## Next steps

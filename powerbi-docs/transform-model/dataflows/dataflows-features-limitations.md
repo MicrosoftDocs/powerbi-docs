@@ -24,7 +24,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
     * There's no guidance or limits for the optimal number of entities is in a dataflow, however, shared dataflows have a refresh limit of two hours per entity, and three per dataflow. So if you have two entities, and each takes two hours, you shouldn't put them in the same dataflow.
     * For Power BI Premium, guidance and limits are driven by individual use cases rather than specific requirements. The only limit for Power BI Premium is a 24-hour refresh per dataflow.
 * A Power BI Premium subscription is required in order to refresh more than 10 dataflows cross workspace
-* PowerQuery limitations are found in the PowerQuery Online usage limits article.
+* PowerQuery limitations are found in the [Power Query Online Limits](https://learn.microsoft.com/power-query/power-query-online-limits) article
 * Power BI dataflows don't support use of global variables in a URL argument.
 * Multi-Geo is currently not supported unless configuring storage to use your own Azure Data Lake Gen2 storage account.
 * Vnet support is achieved by using a gateway.
@@ -55,7 +55,7 @@ More about supported Dataflows REST APIs can be found in the [REST API reference
 
 * Importing dataflows that contain linked tables won't fix the existing references within the dataflow (these queries should be fixed manually before importing the dataflow)
 
-* Dataflows can be overwritten with the *CreateOrOverwrite* parameter, if they have initially been created using the import API
+* When you deploy a dataflow you can leverage the conflict handlers *GenerateUniqueName* and *Abort* parameters to either abort the operation when it already exists or instruct the API to automatically create an unique name instead
 
 ## Dataflows in shared capacities
 

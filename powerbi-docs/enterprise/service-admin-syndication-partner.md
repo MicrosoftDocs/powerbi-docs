@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/15/2021
+ms.date: 11/15/2022
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 Microsoft 365 enables companies to resell Microsoft 365 bundled and integrated with their own solutions, providing customers with a single point of contact for purchasing, billing, and support.
 
-If you're interested in adding Power BI to your Microsoft 365 subscription, we recommend you contact your partner to do so. If your partner doesn't currently offer Power BI, you can pursue the options described below.
+If you're interested in adding Power BI to your Microsoft 365 subscription, we recommend you contact your partner to do so. If your partner doesn't currently offer Power BI, you can pursue the options described in this article.
 
 ## Work with your partner to purchase Power BI
 
@@ -34,13 +34,13 @@ Depending on the relationship with your partner, you might be able to purchase P
 
 1. In the left menu, open **Billing**, then select **Your products**:
 
-   ![Billing menu in Microsoft 365 admin center](media/service-admin-syndication-partner/365-my-products.png)
+   ![Screenshot showing the billing menu in Microsoft 365 admin center. Your products is highlighted.](media/service-admin-syndication-partner/365-my-products.png)
 
- 1. Look for **Subscriptions** as shown in the image below. If you see **Subscriptions**, you can acquire the service from Microsoft directly, or you can contact another partner that offers Power BI.
+1. Look for **Subscriptions** in the menu. If you see **Subscriptions**, you can acquire the service from Microsoft directly, or you can contact another partner that offers Power BI.
 
-    ![Your products with subscriptions](media\service-admin-syndication-partner\365-subscriptions.png)
+   ![Screenshot showing the your products menu. The subscriptions menu option is highlighted.](media\service-admin-syndication-partner\365-subscriptions.png)
 
-    If you don't see **Subscriptions**, you can't buy from Microsoft directly or from another partner.
+   If you don't see **Subscriptions**, you can't buy from Microsoft directly or from another partner.
 
 If your partner doesn't offer Power BI and you can't buy directly from Microsoft or another partner, consider signing up for a free trial.
 
@@ -52,9 +52,9 @@ You can sign up for a free trial of Power BI Premium Per User. If you don't purc
 
 By default, individual sign-ups (also known as ad-hoc subscriptions) are disabled. In this case, you see the following message when you try to sign up: *Your IT department has turned off signup for Microsoft Power BI*.
 
-![Sorry image](media/service-admin-syndication-partner/sorry.png)
+![Screenshot showing the Power BI sorry image and message.](media/service-admin-syndication-partner/sorry.png)
 
-To enable ad-hoc subscriptions, you can contact your partner and request that they turn it on. If you're an administrator of your tenant, and know how to use Azure Active Directory PowerShell commands, you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
+To enable ad-hoc subscriptions, you can contact your partner and request that they turn them on. If you're an administrator of your tenant, and know how to use Azure Active Directory (Azure AD) PowerShell commands, you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
 
 ## Next steps
 

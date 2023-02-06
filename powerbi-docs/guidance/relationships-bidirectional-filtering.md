@@ -1,7 +1,7 @@
 ---
 title: "Bi-directional relationship guidance"
 description: Guidance for developing bi-directional filtering model relationships.
-author: peter-myers
+author: kfollis
 ms.author: kfollis
 ms.reviewer: asaxton
 ms.service: powerbi
@@ -97,7 +97,7 @@ A different scenario involving bi-directional relationships treats a fact-type t
 Using the example model in this article, consider how the following questions can be answered:
 
 - How many colors were sold to Australian customers?
-- How many countries purchased jeans?
+- How many countries/regions purchased jeans?
 
 Both questions can be answered _without_ summarizing data in the bridging fact-type table. They do, however, require that filters propagate from one dimension-type table to the other. Once filters propagate via the fact-type table, summarization of dimension-type table columns can be achieved using the [DISTINCTCOUNT](/dax/distinctcount-function-dax) DAX function—and possibly the [MIN](/dax/min-function-dax) and [MAX](/dax/max-function-dax) DAX functions.
 

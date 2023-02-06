@@ -64,6 +64,8 @@
       href: desktop-default-member-multidimensional-models.md            
     - name: "About using DirectQuery in Power BI"
       href: desktop-directquery-about.md
+    - name: "Live connection and DirectQuery comparison"
+      href: service-live-connect-dq-datasets.md     
     - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
       href: desktop-directquery-datasets-azure-analysis-services.md      
   - name: How-to guides
@@ -76,7 +78,9 @@
       - name: "Connect to data sources"
         href: desktop-data-sources.md
       - name: "Use dynamic M query parameters"
-        href: desktop-dynamic-m-query-parameters.md        
+        href: desktop-dynamic-m-query-parameters.md
+      - name: "Create a dataset from Log Analytics"
+        href: create-dataset-log-analytics.md        
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
@@ -159,7 +163,7 @@
         href: desktop-assume-referential-integrity.md
       - name: "Access SAP BW data with the SAP BW Connector"
         href: desktop-sap-bw-connector.md
-      - name: "Use OneDrive for Business links"
+      - name: "Use OneDrive for work or school links"
         href: desktop-use-onedrive-business-links.md
       - name: "Third-party service: Use the Google Analytics connector"
         href: service-google-analytics-connector.md
@@ -265,8 +269,6 @@
       items: 
       - name: "Connect to services with apps"
         href: service-connect-to-services.md
-      - name: "Analyze Popular Stocks with Power BI"
-        href: service-connect-to-analyze-stocks.md
       - name: "COVID-19 US Tracking Report"
         href: service-connect-to-covid-19-tracking.md
       - name: "Crisis Communication Presence Report"
@@ -275,7 +277,7 @@
         href: service-connect-to-github.md
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
-      - name: "Emissions Impact Dashboard"
+      - name: "Emissions Impact Dashboard for Azure"
         href: service-connect-to-emissions-impact-dashboard.md
       - name: "Emissions Impact Dashboard for Microsoft 365"
         href: service-connect-emissions-impact-dashboard-microsoft-365.md

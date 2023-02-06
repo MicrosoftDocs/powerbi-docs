@@ -87,7 +87,7 @@ This tutorial uses the built-in Sales and Marketing Sample in the Power BI servi
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png" alt-text="Screenshot of Fields pane with State field selected.":::
 
-1. Select the **Filled map** icon to [convert the chart](power-bi-report-change-visualization-type.md) to a filled map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be various valid locations: countries, states, counties, cities, zip codes, or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI can't create the filled map.  
+1. Select the **Filled map** icon to [convert the chart](power-bi-report-change-visualization-type.md) to a filled map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be various valid locations: countries/regions, states, counties, cities, zip codes, or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI can't create the filled map.  
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-icon.png" alt-text="Screenshot of the Filled map icon selected.":::
 

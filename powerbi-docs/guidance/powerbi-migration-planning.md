@@ -1,13 +1,13 @@
 ---
 title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/02/2021
+ms.date: 11/17/2022
 ---
 
 # Plan deployment to migrate to Power BI
@@ -81,7 +81,6 @@ Additional capabilities are available when a workspace is stored on a [Premium c
 - Support for more frequent data refreshes.
 - Support for using the full feature set of dataflows.
 - Enterprise features, including deployment pipelines and the XMLA endpoint.
-- Support for paginated reports (when the workload is enabled).
 
 ## Determine data acquisition method
 
@@ -99,7 +98,7 @@ The data required by a report may influence several decisions. Questions to ask 
 In addition to planning the target deployment destination, it's also important to plan where the original—or source—content will be stored, such as:
 
 - Specify an approved location for storing the original Power BI Desktop (.pbix) files. Ideally, this location is available only to people who edit the content. It should align with how security is set up in the Power BI service.
-- Use a location for original Power BI Desktop files that includes versioning history or source control. Versioning permits the content author to revert to a previous file version, if necessary. OneDrive for Business or SharePoint work well for this purpose.
+- Use a location for original Power BI Desktop files that includes versioning history or source control. Versioning permits the content author to revert to a previous file version, if necessary. OneDrive for work or school or SharePoint work well for this purpose.
 - Specify an approved location for storing non-centralized source data, such as flat files or Excel files. It should be a path that any of the dataset authors can reach without error and is backed up regularly.
 - Specify an approved location for content exported from the Power BI service. The goal is to ensure that security defined in the Power BI service isn't inadvertently circumvented.
 

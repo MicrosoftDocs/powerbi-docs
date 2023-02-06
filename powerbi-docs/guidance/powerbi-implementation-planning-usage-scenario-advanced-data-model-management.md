@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Advanced data model management"
 description: "Learn how Power BI advanced data model management is about empowering creators with advanced data modeling and publishing capabilities."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -57,7 +57,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 9.](media/common/icon-09-red-30x30.png) | Reports are published to a workspace dedicated to storing and securing reports and dashboards. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | Published reports remain connected to the shared dataset that's stored in a different workspace. Any changes made to the shared dataset affect all dependent reports. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | [Third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) can use the XMLA endpoint to query the shared dataset. Other XMLA-compliant tools, such as DAX Studio or PowerShell, can be used to query or update the shared dataset. Power BI Desktop, Excel, and Report Builder can also connect by using the XMLA endpoint (not depicted in the scenario diagram). |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | Other Microsoft and third-party tools can use the XMLA endpoint to manage the dataset. These tools include [SQL Server Management Studio (SSMS)](/sql/ssms/sql-server-management-studio-ssms) and [SQL Server Data Tools (SSDT)](/sql/ssdt/sql-server-data-tools). ALM Toolkit can be used to help with application lifecycle management. |
+| ![Item 12.](media/common/icon-12-red-30x30.png) | Other Microsoft and third-party tools can use the XMLA endpoint to manage the dataset and provide application lifecycle management. To learn more, see [XMLA endpoint-based client tools](../enterprise/service-premium-connect-tools.md#client-applications-and-tools). |
 | ![Item 13.](media/common/icon-13-red-30x30.png) | Power BI administrators manage the tenant setting to enable the use of the XMLA endpoint. The administrator must [enable the XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools#enable-xmla-read-write) for Premium capacities and Premium Per User capacities. |
 | ![Item 14.](media/common/icon-14-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. Data refresh is scheduled and managed in the Power BI service. |
 | ![Item 15.](media/common/icon-15-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
@@ -81,7 +81,7 @@ There are several ways to use third-party applications:
 [Tabular Editor](https://tabulareditor.com/) is depicted in the scenario diagram. It's a third-party tool that's achieved widespread adoption by the Power BI community. Some advantages of managing tabular data models with Tabular Editor include:
 
 - **Setting up data model capabilities not supported in Power BI Desktop:** Tabular Editor provides an interface to set up object-level security (OLS), calculation groups, perspectives, translations, and partitions.
-- **Support for concurrent model development:** Microsoft data model development tools, such as SSDT, store the entire data model definition in a *Model.bim* file. This single file can make it difficult for a team of developers to work together on a single data model. Tabular Editor has a feature called *Folder serialization*. Folder serialization deconstructs the Model.bim file into separate object-specific files within an organized folder structure. Different data modelers can then work on different files with less risk of overwriting each other's efforts.
+- **Support for concurrent model development:** Microsoft data model development tools, such as Visual Studio with Analysis Services projects, store the entire data model definition in a *Model.bim* file. This single file can make it difficult for a team of developers to work together on a single data model. Tabular Editor has a feature called *Folder serialization*. Folder serialization deconstructs the Model.bim file into separate object-specific files within an organized folder structure. Different data modelers can then work on different files with less risk of overwriting each other's efforts.
 - **Integration with source control:** Folder serialization allows source control system to easily detect data model changes, making source merges and conflict resolution easier to do.
 - **Improved data model quality and design:** Tabular Editor integrates with [Best Practices Analyzer (BPA)](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance/). BPA helps data modelers with a set of customizable rules that can improve the quality, consistency, and performance of data models. You can download a set of best practice rules (provided by Microsoft) from [GitHub](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules).
 - **Increased productivity when developing data models:** The Tabular Editor interface makes it well-suited for performing batch edits, debugging, and viewing data model dependencies. Tabular Editor is different from Power BI Desktop in that it works in *disconnected mode*. You can make data model changes in disconnected mode and commit them as a batch of edits. Working this way allows for faster development and validation, especially for experienced data modelers. It's also possible to create C# scripts and save them as macros. These scripts can help you to improve the efficiency of managing and synchronizing multiple data models.
