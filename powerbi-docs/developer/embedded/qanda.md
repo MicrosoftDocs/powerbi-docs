@@ -18,7 +18,7 @@ Power BI embedded analytics offers you a way to incorporate [Q&A](pbi-glossary.m
 
 There are two modes for embedding Q&A within your application: **interactive** and **result only**. **Interactive** mode allows you to type in questions and have them displayed within the visual. If you have a saved question, or a set question you want to display, you can use the **result only** mode by populating the question in your embed config.
 
-The following is an example of the JavaScript code:
+Here's an example of the JavaScript code:
 
 ```javascript
 // Embed configuration used to describe the what and how to embed.
