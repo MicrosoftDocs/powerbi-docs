@@ -28,11 +28,11 @@ ms.author: maggies
   
  The following figure shows the graphical query designer when it is used with tables or views.  
   
- ![Screenshot showing Graphical designer for queries.](../media/report-builder-power-bi/rsqd-relational-graphical.gif "Graphical designer for queries")  
+ ![Screenshot showing Graphical designer for queries.](../media/report-builder-power-bi/rsqd-relational-graphical.png "Graphical designer for queries")  
   
  The following figure shows the graphical query designer when it is used with stored procedures or table-valued functions.  
   
- ![Screenshot showing Stored procedure in graphical query designer.](../media/report-builder-power-bi/rs-relational-graphical-sp.gif "Stored procedure in graphical query designer")  
+ ![Screenshot showing Stored procedure in graphical query designer.](../media/report-builder-power-bi/rs-relational-graphical-sp.png "Stored procedure in graphical query designer")  
   
  The following table describes the function of each pane.  
   

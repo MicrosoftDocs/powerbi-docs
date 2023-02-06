@@ -35,7 +35,7 @@ If you drag a report dataset field value directly to the report design surface, 
   
  The following picture shows three versions of a table report that groups data by month. The text box that contains the month value uses a different text box orientation.  
   
- ![Drawing showing three possible orientations for the month value.](../../media/report-builder-power-bi/rs-textboxorientation.gif)  
+ ![Drawing showing three possible orientations for the month value.](../../media/report-builder-power-bi/rs-textbox-orientation.png) 
   
  Orientation is set on the text box and applies to all the text in the box. You can't specify a different orientation for parts of the text box.  
   
