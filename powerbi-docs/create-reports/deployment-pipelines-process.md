@@ -296,11 +296,11 @@ To enable automatic aggregations, follow the instructions in [configure the auto
 
 Hybrid tables are tables with [incremental refresh](../connect-data/incremental-refresh-overview.md) that can have both import and direct query partitions. During a clean deployment, both the refresh policy and the hybrid table partitions are copied. When deploying to a pipeline stage that already has hybrid table partitions, only the refresh policy is copied. To update the partitions, refresh the table.
 
-## Deploying Power BI apps
+## Update content in Power BI apps
 
-[Power BI apps](../consumer/end-user-apps.md) are the recommended way of distributing content to free Power BI consumers. Using deployment pipelines you can manage Power BI apps in a deployment pipeline, so that you have more control and flexibility when it comes to your app's lifecycle.
+[Power BI apps](../consumer/end-user-apps.md) are the recommended way of distributing content to free Power BI consumers. You can update the content of your Power BI apps using a deployment pipeline, giving you more control and flexibility when it comes to your app's lifecycle.
 
-Create an app for each deployment pipeline stage, so that you can test each app update from an end user's point of view. A deployment pipeline allows you to manage this process easily. Use the publish or view button in the workspace card, to publish or view the app in a specific pipeline stage.
+Create an app for each deployment pipeline stage, so that you can test each update from an end user's point of view. Use the **publish** or **view** button in the workspace card to publish or view the app in a specific pipeline stage.
 
 :::image type="content" source="media/deployment-pipelines-process/publish.png" alt-text="A screenshot highlighting the publish app button, at the bottom right of the production stage." lightbox="media/deployment-pipelines-process/publish.png":::
 
