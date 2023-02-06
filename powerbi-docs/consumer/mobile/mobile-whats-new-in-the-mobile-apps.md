@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/05/2023
+ms.date: 02/06/2023
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -24,7 +24,11 @@ For related "What's New" information, see:
 
 ## February 2023
 
-### Easier app browsing
+### Easier app browsing 
+
+Some apps now come with [audience views](https://powerbi.microsoft.com/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/) to help you find insights faster. 
+
+Open the app and tap the header to display the navigation tree. If the app has audience views, by default you'll see all the content you have permission to see. Tap **Change** to select a particular audience view.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-audience.png" alt-text="Illustration of switching app audience on the Power BI mobile app." border="false":::
 
