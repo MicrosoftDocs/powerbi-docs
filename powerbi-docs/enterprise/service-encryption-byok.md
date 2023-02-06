@@ -24,7 +24,7 @@ BYOK makes it easier to meet compliance requirements that specify key arrangemen
 To use BYOK, you must upload data to the Power BI service from a Power BI Desktop (PBIX) file. You can't use BYOK in the following scenarios:
 
 - Analysis Services Live Connection
-- Excel workbooks (unless data is first imported into Power BI Desktop)
+- Excel workbooks, unless data is first imported into Power BI Desktop
 - [Push datasets](/rest/api/power-bi/pushdatasets)
 - [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Power BI metrics](../create-reports/service-goals-introduction.md) don't currently support BYOK
@@ -46,7 +46,7 @@ Configure your key vault in the following way:
 
 1. [Add the Power BI service as a service principal](#add-the-service-principal) for the key vault, with wrap and unwrap permissions.
 
-2. [Create an RSA key](#create-an-rsa-key) with a 4096-bit length (or use an existing key of this type), with wrap and unwrap permissions.
+2. [Create an RSA key](#create-an-rsa-key) with a 4096-bit length, or use an existing key of this type, with wrap and unwrap permissions.
 
     > [!IMPORTANT]
     > Power BI BYOK supports only RSA keys with a 4096-bit length.
@@ -191,13 +191,13 @@ You have control over how you use BYOK across your tenant. For example, to encry
 
 Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
-- Use [Get-PowerBICapacity](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) to get the key that a capacity is currently using:
+- Use [Get-PowerBICapacity](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) to get the key that a capacity currently uses:
 
     ```powershell
     Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
     ```
 
-- Use [Get-PowerBIEncryptionKey](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiencryptionkey) to get the key that your tenant is currently using:
+- Use [Get-PowerBIEncryptionKey](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiencryptionkey) to get the key that your tenant currently uses:
 
     ```powershell
     Get-PowerBIEncryptionKey
