@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/19/2023
+ms.date: 10/19/2021
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -19,14 +19,14 @@ Power BI can be your personal data analysis and visualization tool, and can also
 For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
 ## License scenarios
-Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro and Power BI Premium Per User (PPU). Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help answering these questions, see [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-gen2-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
+Use this chart to help determine which type of license you need. Power BI Desktop is always free. The Power BI service offers both free and paid license options. Paid options include Power BI Pro, Power BI Premium, and Power BI Premium Per User (PPU). Some questions to ask yourself are: "Will I be creating content or will I only be consuming content created by others?", "Will I be sharing my content with others?", "Do I have access to Premium capacity?". For help answering these questions, see [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-gen2-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
 
 |Scenario  |Creator  |Consumer  |
 |---------|---------|---------|
-|You create a report in Power BI Desktop (.PBIX). Then you publish it to your My Workspace on the Power BI Service.     |  As a creator, you only need the free Desktop app and a free Power BI license to publish to your My Workspace in the Power BI service for your own use.  A paid Power BI Pro or PPU license is required to share content in My Workspace with others.  |  Consumers cannot see content in other people's My Workspace unless the owners decide to share. Seeing shared My Workspace content requires a paid license.       |
+|You create a report in Power BI Desktop (.PBIX). Then you publish it to your My Workspace on the Power BI Service.     |  As a creator, you only need the free Desktop app and a free Power BI license to publish to your My Workspace in the Power BI service for your own use.  A paid Power BI Pro or PPU license is required to share content in My Workspace with others.  |  Consumers cannot see content in other people's My Workspace unless the owners decide to share. To see shared My Workspace content requires a paid license.       |
 |You create a report in Power BI Desktop (.PBIX) and share the PBIX file to other people who open the file in Power BI Desktop     |   No licensing needed, only the Power BI Desktop app to be downloaded and installed.      |    No licensing needed, only the Power BI Desktop app to be downloaded and installed.     |
-|You create a report in Power BI Desktop (.PBIX) and publish it to a shared workspace in the Power BI service.     |   Paid license needed to publish to shared workspaces.	      |  	Paid license required to view the content unless the workspace is hosted in Premium capacity. For workspaces in Premium capacity, the consumer only needs a free license and to be assigned permissions to that workspace.       |
-|You are sent a link to a report hosted on the Power BI Service and want to view it.     |   A paid license is required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity, the creator only needs a free license to view that report.      |    A paid license is required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity, the consumer only needs a free license to view that report.     |
+|You create a report in Power BI Desktop (.PBIX) and publish it to a shared workspace in the Power BI service.     |   Paid license needed to publish to shared workspaces.	      |  	Paid license required to view the content unless the workspace is hosted in Premium capacity. For workspaces in Premium capacity, the consumer only needs a free license to view that report.       |
+|You are sent a link to a report hosted on the Power BI Service and want to view it.     |   You need a paid license to share a link. You need a free license to share a link to a report that is in Premium capacity.      |    A paid license is required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity, the consumer only needs a free license to view that report.     |
 
 
 ## Supported email addresses
@@ -43,7 +43,7 @@ Before you start the self-service process, it's important to learn which types o
 
 Follow these steps to sign up for a Power BI service account. Once you complete this process you will have a Power BI (free) license which you can use to try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, or initiate an individual Power BI trial. For more information, see [Power BI features by license type](service-features-license-type.md). 
 
-The exact steps for sign up can vary depending on your organization and what you click to start the process. Administrators have the ability to completely disable self-service sign-up, self-service purchase, and free trials. They can also create custom prompts and paths for you to obtain a license or trial. For these reasons, you may not be presented with all of the screens shown below. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.
+The exact steps for sign up can vary depending on your organization and what you click to start the process. For this reason, you may not be presented with all of the screens shown below. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.
 - you select a **Try free** or **Start free** button<sup>1</sup>.     
 - you receive an email with a link to a Power BI dashboard, report, or app. You haven't previously signed in to your Power BI account.
 
@@ -53,7 +53,7 @@ The exact steps for sign up can vary depending on your organization and what you
 
 - Select **Try free** from [powerbi.microsoft.com](https://powerbi.com). You may then be prompted to select **Try Power BI for free**.
 
-    ![Screenshot of the Power BI service showing powerbi.microsoft.com in a web browser.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try.png)    
+    ![Screenshot of Power BI service showing powerbi.microsoft.com in a web browser.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try.png)    
 
     ![Screenshot of Power BI service showing pthe Try Power BI for free prompt.](media/service-self-service-signup-for-power-bi/power-bi-start-free.png)            
 
@@ -88,11 +88,9 @@ The exact steps for sign up can vary depending on your organization and what you
 
 ## Use self-service sign-up to start an individual trial of the Power BI paid version
 
-Congratulations on signing in to your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you may see pop-ups asking if you want to upgrade to an individual trial of the paid version of Power BI which includes Power BI Pro and Power BI Premium Per User (PPU). If you do, select **Try now**. 
+Congratulations on signing into your Power BI account for the first time! You now have a free license<sup>2</sup>. As you start to explore the Power BI service, you may see pop-ups asking if you want to upgrade to an individual trial of the paid version of Power BI which includes Power BI Pro and Power BI Premium Per User (PPU). If you do, select **Try now**. In some organizations, if you try to use a feature that requires a Pro or PPU license, Power BI will automatically initiate a 60 day trial of the paid version of Power BI. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial, select **Start trial**.  
 
-In some organizations, if you try to use a feature that requires a Pro or PPU license, Power BI will automatically initiate a 60 day trial of the paid version of Power BI. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md). If you'd like to start a free 60 day individual trial, select **Start trial**. In other organizations, the ability to initiate a trial will be disabled or your administrator might have created a different process for upgrading. For these reasons, you may not be presented with all of the screens shown below. There are many different ways to sign up for a Power BI service trial as an individual, and the steps in this article apply to the most common scenario of being presented with a trial dialog when you attempt to use a Pro feature.
-
-![Screenshot of Power BI service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
+![Screenshot of Power B I service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
 
 <sup>2</sup> In some organizations, your default Power BI account may be a Power BI **Pro** license. For example, some versions of Microsoft 365 include a Power BI Pro license. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
 
@@ -100,7 +98,7 @@ If a Power BI (free) license is sufficient, you don't have to do anything else. 
 
 ### Trial expiration
 
-When your free individual trial of Power BI expires, or you cancel your trial, your license changes back to its previous version of Power BI, either free or Pro. For more information, see [Features by license type](service-features-license-type.md). 
+When your free individual trial of Power BI expires, or you cancel your trial, your license changes back to its previous version of Power BI, either free or Pro. The trial cannot be extended. For more information, see [Features by license type](service-features-license-type.md). 
 
 If you'd like to cancel your trial before the expiration date, select your account icon and choose **Cancel trial**. 
 
@@ -111,9 +109,7 @@ If you'd like to cancel your trial before the expiration date, select your accou
 
 ## Use self-service purchase to buy an individual Power BI license
 
-You can make a self-service purchase online from the Power BI website or from in-product purchase prompts. First, you'll be asked to enter an email address to ensure that your email address is already associated with at least one other Microsoft online service. If you're recognized by Microsoft, you're next directed to sign in. After signing in, you are asked to select how many subscriptions you want to buy, and to provide credit card payment. When the purchase is complete, you can begin using your subscription. You'll have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
-
-As with self-service sign-up and trials, your administrator can disable your ability to purchase a Power BI license. Your administrator also has the ability to create an alternate path and process for making purchases. For these reasons, you may be presented with different screens than those shown below. 
+Individuals can make a self-service purchase online from the Power BI website or from in-product purchase prompts. Individuals are first asked to enter an email address to ensure that their email address is already associated with at least one other Microsoft online service. If they're recognized by Microsoft, they're next directed to sign in. After signing in, the individual is asked to select how many subscriptions they want to buy, and to provide credit card payment. When the purchase is complete, they can start using their subscription. The purchaser has access to a limited view of the Microsoft 365 admin center where they can assign licenses for the product to other people in their organization.
 
 If you have additional questions about self-service purchase, visit the [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
@@ -137,10 +133,10 @@ If self-service purchase is not available, contact your administrator about purc
 
 ## Troubleshooting
 
-In most cases, you can sign up, try, or purchase Power BI service by following the described processes. Some of the issues that may prevent you from signing up are described below, with possible workarounds.
+In most cases, you can sign up for the Power BI service by following the described process. Some of the issues that may prevent you from signing up are described below, with possible workarounds.
 
 **Personal email addresses**
- You attempted to sign up using a personal email addresses (for example @gmail.com) and you receive a message similar to one of these: 
+ You attempted to sign up using a personal email address (for example nancy@gmail.com) and you received a message similar to one of these: 
 
 *You entered a personal email address: Please enter your work email address so we can securely store your company's data*.
 
