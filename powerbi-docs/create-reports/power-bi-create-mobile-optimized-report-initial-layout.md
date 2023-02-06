@@ -1,6 +1,6 @@
 ---
 title: Create an initial layout 
-description: Learn how to create an initial mobile-optimized layout using mobile layout view's page visuals pane.
+description: Learn how to create an initial mobile-optimized layout by using the mobile layout view's Page visuals pane.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -29,13 +29,13 @@ The **Page visuals** pane lists all of the visuals, both shown and hidden, that 
 
 ## Lay out visuals on the canvas
 
-To place a visual on the canvas, drag and drop the visual you want to use from the page visuals pane onto the mobile layout canvas. When you drag a visual to the canvas, by default, it snaps to the grid. Alternatively, you can double-click the visual on the page visuals pane, and it'll be added to the canvas.
+To place a visual on the canvas, drag and drop the visual you want to use from the page visuals pane onto the mobile layout canvas. When you drag a visual to the canvas, by default, it snaps to the grid. Alternatively, you can double-click the visual on the page visuals pane, and it will be added to the canvas.
 
 Once you've placed a visual on the canvas and you select it, you can resize it by dragging the handles that appear around the edge of the visual. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
 Each time you drag a visual onto the canvas, it's added on its own layer on top of any other visuals that are already on the canvas. Visuals can be layered one on top of the other to create interactive reports using bookmarks or to build attractive reports by layering visuals over images. Use the [Selection pane](power-bi-create-mobile-optimized-report-order-layers.md) to change the layering order of the visuals.
 
-The following animation illustrates dragging and dropping visuals from the page visuals pane onto the canvas as well as resizing and overlaying some of them.
+The following animation illustrates dragging, dropping, resizing, and overlaying visuals from the page visuals pane onto the canvas.
 
 :::image type="content" source="media/power-bi-create-mobile-optimized-report-initial-layout/desktop-mobile-layout-overlay-resize.gif" alt-text="Animation of visuals being dragged and dropped, resized, and overlaid.":::
 
@@ -45,9 +45,9 @@ The following animation illustrates dragging and dropping visuals from the page 
 
 ### Removing visuals from the mobile layout canvas
 
-* To remove a single visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
+* To remove a single visual from the mobile layout, select the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
-* To remove all the visualizations from the canvas, click the eraser on the **Page visuals** pane.
+* To remove all the visualizations from the canvas, select the eraser on the **Page visuals** pane.
 
 Removing visuals from the mobile layout canvas removes them from the mobile layout canvas only. The visuals remain available for use in the **Page visuals** pane, and the original desktop layout report remains unaffected.
 
