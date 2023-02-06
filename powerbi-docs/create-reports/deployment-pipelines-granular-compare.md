@@ -15,7 +15,7 @@ Before you deploy content to a different stage, it can be helpful to see the dif
 
 The deployment pipeline home page compares the three deployment stages and indicates if there are any differences. A green circle with a check indicates that the two stages are the same. An orange circle with an "X" indicates that the stages are different.
 
-:::image type="content" source="./media/deployment-pipelines-granular-compare/deployment-pipelines-compare.png" alt-text="Screenshot showing three stages of deployment with a green check between pest and production and an orange X between development and test.":::
+:::image type="content" source="./media/deployment-pipelines-granular-compare/deployment-pipelines-compare.png" alt-text="Screenshot showing three stages of deployment. There's a green check between the test and production stages and an orange X between the development and test stages.":::
 
 ## See the differences between paired items
 
@@ -27,22 +27,22 @@ If two stages are different, select **Compare** underneath to see a list of item
 - An item that exists in only one of the stages is indicated to be **New**.
 - Paired items that aren't identical are indicated to be **Different**. Differences can be in the settings or schema (or both).
 
-If the items are different, hover over it to see the **change review** icon.
+If the items are different, hover over it to see the **change review** button.
 
-:::image type="content" source="./media/deployment-pipelines-granular-compare/granular-change-icon.png" alt-text="Screenshot showing the change review icon next to an item.":::
+:::image type="content" source="./media/deployment-pipelines-granular-compare/granular-change-button.png" alt-text="Screenshot showing the change review button next to an item.":::
 
-If the only difference between the two items is settings changes, like the name or sensitivity label, the icon is disabled. If there are changes in the schema, you can select it.
+If the only difference between the two items is settings changes, like the name or sensitivity label, the button is disabled. If there are changes in the schema, you can select it.
 
 ## Examine the differences in the item
 
-When you select the **change review** icon, the content of that item is shown as it currently looks in the source stage and in the target stage.
+When you select the **change review** button, the content of that item is shown as it currently looks in the source stage and in the target stage.
 
 On top of the screen, you'll see:
 
 1. The full pathname of the file as it appears in the source stage.
 1. The number of total changes (in black) along with the number of additions (green) and deletions (red) made to the file
 1. Up and down arrows that take you to the previous or next difference in the file 
-1. Icons that let you toggle between a side by side view and an inline view of the changes.
+1. Buttons that toggle between a side by side view and an inline view of the changes.
 
 ### [Side by side view](#tab/browser)
 
@@ -54,7 +54,7 @@ On top of the screen, you'll see:
 
 ---
 
-The two versions of the item you see are modified to make the comparison easier:
+The two versions shown are modified to make the comparison easier:
 
 - Datasource and parameter rules are applied to the source item so that the datasource you see is the one that will be deployed.
 - Some fields that don't indicate differences (for example, timestamps and role membership) are removed from both items.
