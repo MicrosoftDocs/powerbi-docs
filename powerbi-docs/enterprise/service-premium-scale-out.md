@@ -171,7 +171,9 @@ You can connect to specific type of dataset copy by appending one of the followi
 
 * XMLA updates and refreshes must be synced with the *read-only* dataset copies using the Sync REST API.
 
-* When deleting a Power BI Dataset Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+* When deleting a Power BI Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+
+* Backup & Restore operations are currently not supported for Power BI Scale-Out datasets. If you must restore a dataset, disable Scale-Out, perform the restore operation, and then re-enable Scale-Out.
 
 * When Power BI Dataset Scale-Out is turned on, changes to the following features, are not supported:
     * Model roles for RLS and OLS
