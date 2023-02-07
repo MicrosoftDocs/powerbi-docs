@@ -148,7 +148,7 @@ The following table describes the **schema**.
 | **OperationName** | EventClass_s | The operation associated with the log record. |
 | **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
 | **ProgressCounter** | ProgressTotal_s | Progress counter. |
-| **ProgressReportBegin** | |   |
+| **ProgressReportBegin** | | Collects all progress report begin events since the trace was started.  |
 | **ProgressReportCurrent** | | Collects all progress report current events since the trace was started.    |
 | **ProgressReportError** | | Collects all progress report error events since the trace was started.  |
 | **Status** | | Status of the operation.  |
@@ -156,8 +156,8 @@ The following table describes the **schema**.
 | **TenantId** | | Unique identifier of Microsoft's Power BI tenant. This does not refer to the customer tenant. |
 | **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
 | **User** | User_s | The user on whose behalf the operation is running. Used when an end-user identity must be impersonated on the server. |
-| **VertipaqSEQueryBegin** |  | VertiPaq SE query   |
-| **VertipaqSEQueryEnd** |  | VertiPaq SE query   |
+| **VertipaqSEQueryBegin** |  | VertiPaq SE query.   |
+| **VertipaqSEQueryEnd** |  | VertiPaq SE query.   |
 | **WorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
 | **WorkspaceName** | ServerName_s | Name of the workspace containing the artifact. |
 | **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
