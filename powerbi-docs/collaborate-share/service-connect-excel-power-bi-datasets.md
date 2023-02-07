@@ -26,17 +26,17 @@ In Excel Desktop or Excel for the web, you can discover all the Power BI dataset
 - You must have a Power BI license: Free, Pro or Premium Per User (PPU). Power BI Free license users can only work with datasets in My workspace or a Power BI Premium capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
-## Discover Power BI datasets in Excel 
+## Discover Power BI datasets in Excel
 
 To connect to live Power BI datasets from inside Excel, use one of these two options: 
 
 - On the **Insert** tab in Excel, select **PivotTable** > **From Power BI**. 
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/insert-pivottable-from-power-bi.png" alt-text="Screenshot of the Insert PivotTable from Power BI option.":::
+    :::image type="content" source="media/service-connect-excel-power-bi-datasets/insert-pivottable-from-power-bi.png" alt-text="Screenshot of the Insert PivotTable from Power BI option.":::
 
 - On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platorm** > **From Power BI**.
 
-    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/get-data-from-power-bi.png" alt-text="Screenshot showing getting to Power BI data from the Data tab.":::
+    :::image type="content" source="media/service-connect-excel-power-bi-datasets/get-data-from-power-bi.png" alt-text="Screenshot showing getting to Power BI data from the Data tab.":::
 
 After you've selected **From Power BI** using either of these options, a pane opens on the right of the screen that shows Power BI datasets you have access to.
 
@@ -61,11 +61,11 @@ To start exploring your Power BI data in Excel, select one of the pre-loaded dat
 
 When you find the dataset you want, select **Insert PivotTable** in the card. A blank PivotTable is added to a new worksheet in your Excel workbook.
 
-:::image type="content" source="media/service-analyze-power-bi-datasets-excel/insert-pivottable-button.png" alt-text="Screenshot showing a dataset card and Insert PivotTable.":::
+:::image type="content" source="media/service-connect-excel-power-bi-datasets/insert-pivottable-button.png" alt-text="Screenshot showing a dataset card and Insert PivotTable.":::
 
 In **PivotTable Fields**, you can see all the tables and measures from your Power BI dataset. You can start building your report in Excel.
 
-:::image type="content" source="media/service-analyze-power-bi-datasets-excel/pivottable-fields-excel.png" alt-text="Screenshot showing the PivotTable Fields list in Excel.":::
+:::image type="content" source="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png" alt-text="Screenshot showing the PivotTable Fields list in Excel.":::
 
 ## Considerations and limitations 
 
