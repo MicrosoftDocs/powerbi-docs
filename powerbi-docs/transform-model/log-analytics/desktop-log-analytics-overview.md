@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 08/24/2022
+ms.date: 02/07/2023
 LocalizationGroup: Transform and shape data
 ---
 # Using Azure Log Analytics in Power BI (Preview)
@@ -69,12 +69,6 @@ Keep the following considerations and limitations in mind when working with Azur
 * Datasets created on the web by uploading a CSV file don't generate logs.
 * If you have Multi-Factor Auth (MFA) in place for Azure but not Power BI, the configuration screens will give general Azure errors. A workaround is to first sign in to the [Azure portal](https://portal.azure.com), complete the MFA challenge and then log into Power BI in the same browser session.
 * If you're using private links/VNets to isolate your Log Analytics workspaces, data ingestion into Log Analytics is unaffected. However, the [Log Analytics Template app(https://appsource.microsoft.com/product/power-bi/pbi_pcmm.powerbiloganalyticsforasengine?tab=Overview)] won't work because it relies on a public endpoint that is no longer accessible by the Power Service as a private link. A workaround is to use the [.pbit report template(https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports)] and refresh the data from inside the private VNet. You must set up a custom DNS mapping to ensure the public endpoint uses a private internal IP.
-* The following events are intentionally excluded temporarily. This will affect the Query Detail page in the template report (that is, no storage engine subqueries will be visible for now)
-  * ProgressReportCurrent
-  * ProgressReportBegin
-  * ProgressReportError
-  * VertipaqSEQueryBegin
-  * VertipaqSEQueryEnd
 * For the Log Analytics feature, Power BI only sends data to the *PowerBIDatasetsWorkspace* table and doesn't send data to the to *PowerBIDatasetsTenant* table. This avoids storing duplicate data about log analytics in both locations. 
 
 
