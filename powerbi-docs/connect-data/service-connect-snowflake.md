@@ -14,11 +14,11 @@ LocalizationGroup: Connect to services
 
 Connecting to Snowflake in the Power BI service  differs from other connectors in only one way. Snowflake has a capability for Azure Active Directory (Azure AD), with an option for SSO (single sign-on). Parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can also choose to enable Azure AD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
 
-To configure Azure AD integration and optionally enable SSO, see the following:
+To configure Azure AD integration and optionally enable SSO:
 
 * If you're the Snowflake admin, see [Power BI SSO to Snowflake](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) article in the Snowflake documentation.
 * If you're a Power BI admin, see [Power BI Service configuration - Admin Portal](service-connect-snowflake.md#admin-portal) to learn how to enable SSO.
-* If you're a Power BI dataset creator, see [Configure a dataset with Azure AD](service-connect-snowflake.md#configure-a-dataset-with-aad) to learn how to enable SSO.
+* If you're a Power BI dataset creator, see [Configure a dataset with Azure AD](service-connect-snowflake.md#configure-a-dataset-with-azure-ad) to learn how to enable SSO.
 
 ## Power BI service configuration
 
@@ -30,7 +30,7 @@ To enable SSO, a global admin has to turn on the setting in the Power BI Admin p
 1. Select **Settings** from the page header menu, then select **Admin portal**.
 1. Select **Tenant settings**, then scroll to locate **Integration settings**.
 
-  :::image type="content" source="media/service-connect-snowflake/snowflake-sso-tenant.png" alt-text="Screenshot of the Admin portal with Snowflake SSO settings highlighted." lightbox="media/service-connect-snowflake/snowflake-sso-tenant.png":::
+   :::image type="content" source="media/service-connect-snowflake/snowflake-sso-tenant.png" alt-text="Screenshot of the Admin portal with Snowflake SSO settings highlighted.":::
 
 1. Expand **Snowflake SSO**, toggle the setting to **Enabled**, then select **Apply**.
 
