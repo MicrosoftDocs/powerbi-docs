@@ -62,7 +62,7 @@ You have several options for viewing your favorites.
 
 If you no longer use a report, dashboard, or app as often as you used to, you can unfavorite it. When you unfavorite content, it's removed from your Favorites list but not from Power BI. Just select the black star to turn it back to a white star.
 
-   :::image type="content" source="./media/end-user-favorite/power-bi-unfavorite.png" alt-text="Screenshot of the Favorites tab with an item being unfavorited.":::
+   :::image type="content" source="./media/end-user-favorite/power-bi-unfavorite-new.png" alt-text="Screenshot of the Favorites tab with an item being unfavorited.":::
 
 ## Considerations and limitations
 
