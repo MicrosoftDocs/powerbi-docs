@@ -28,22 +28,17 @@ Connect to Power BI datasets in Excel by starting in the Power BI service or in 
 
 - Start in Power BI with [Analyze in Excel](service-analyze-in-excel.md). 
 - Start in [Excel for the web or the Excel desktop app](service-connect-excel-power-bi-datasets.md).
-- After you've connected, you can [analyze your Power BI data](service-analyze-power-bi-datasets-excel.md) in an Excel PivotTable.
+- After you've connected, you can [design refreshable reports with Power BI data](service-analyze-power-bi-datasets-excel.md) in an Excel PivotTable or a table.
 
 ## Prerequisites
 
 Here are things to keep in mind when you connect to Power BI datasets in Excel:
 
-- Analyzing Power BI data in Excel is supported for Microsoft Excel 2010 SP1 and later.
-- Your dataset in Power BI *must have pre-defined measures*. Excel PivotTables don't support drag-and-drop aggregation of numeric fields. Read about [creating measures](../transform-model/desktop-measures.md).
-- Analyzing Power BI data in Excel requires that the dataset be in a Power BI Premium workspace or that you have a Power BI Pro or Premium Per User (PPU) license. For more information about the differences in functionality between license types, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
-- You need permissions for the underlying dataset if you want to connect to Power BI datasets in Excel. You can have this permission in one of the following ways:
-
-  - Have the Member role in the workspace that contains the dataset.
-
-  - Have Build permission for the dataset in a workspace, or in an app that contains the dataset. For more information about this permission for Power BI datasets, see [Build permission](../connect-data/service-datasets-build-permissions.md).
-
-- You can only analyze Power BI data in the Excel desktop app on computers that run Microsoft Windows. For computers that run other operating systems, you can analyze Power BI data in Excel for the web.
+- Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- You must have **Build** permission to the Power BI dataset or have at least a **Contributor** role in the Power BI workspace containing your dataset.
+- You must have a Power BI license: Free, Pro or Premium Per User (PPU). Power BI Free license users can only work with datasets in My workspace or a Power BI Premium capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Next steps
 
