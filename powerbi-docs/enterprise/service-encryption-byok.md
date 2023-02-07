@@ -229,6 +229,6 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 - [Embed with report web part in SharePoint Online.](../collaborate-share/service-embed-report-spo.md)
 
-- [Publish to Web from Power BI.](../collaborate-share/service-publish-to-web.md)
+- [Publish to web from Power BI.](../collaborate-share/service-publish-to-web.md)
 
 - [What is Power BI Premium Generation 2?](service-premium-what-is.md)
