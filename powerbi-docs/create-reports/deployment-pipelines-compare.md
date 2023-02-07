@@ -23,13 +23,13 @@ A comparison icon indicator appears between two sequential stages to give a quic
 
 - **Orange indicator** - Appears if one of these conditions is met:
   - Some of the content items in each stage, were changed or updated (have different metadata).
-  - There is a difference in the number of items between the stages.
+  - There's a difference in the number of items between the stages.
 
-When two sequential stages are different, a **Compare** link appears underneath the orange comparison icon. Click **Compare** to open the content item list in both stages. This *Compare view* helps you track changes or differences between items in each pipeline stage.
+When two sequential stages are different, a **Compare** link appears underneath the orange comparison icon. Select **Compare** to open the content item list in both stages. This *Compare view* helps you track changes or differences between items in each pipeline stage.
 
-:::image type="content" source="media/deployment-pipelines-compare/compare.png" alt-text="A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-compare/compare.png":::
+:::image type="content" source="media/deployment-pipelines-compare/compare.png" alt-text="A screenshot showing the compare option, which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-compare/compare.png":::
 
-In the comparison display, items are arranged according to the logic listed below.
+In the comparison display, items are arranged according to the following logic:
 
 1. The source workspace items are ordered alphabetically within groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports, and lastly dashboards.
 
@@ -37,26 +37,26 @@ In the comparison display, items are arranged according to the logic listed belo
 
 3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
 
-Items that aren't paired or that have been changed get one of the following labels:
+Items that aren't paired or that were changed get one of the following labels:
 
-- **New** – A new item in the source stage. This is an item that doesn't exist in the target stage. After deployment, this item will be cloned to the target stage.
+- **New** – A new item in the source stage. This item doesn't exist in the target stage. After deployment, this item will be cloned to the target stage.
 
-- **Different** – An item that exists both in the source and the target stage, were one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
+- **Different** – An item that exists both in the source and the target stage, where one of the versions was changed after the last deployment. After deployment, the item in the source stage will overwrite the item in the target stage, regardless of where the change was made.
 
-    Datasets with configured deployment rules that haven't been deployed, are also marked as *different*. This is because deployment rules are not applied until the datasets are deployed from the source stage to the target stage, which includes the configured rules.
+    Datasets with configured deployment rules that haven't been deployed, are also marked as *different*, since deployment rules aren't applied until the datasets are deployed from the source stage to the target stage.
 
-- **Missing from** – This label indicates that an item appears in the target stage, but not in the source stage.
+- **Missing from** – This item appears in the target stage, but not in the source stage.
 
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
-## Review differences in paired items
+## Review differences in paired items with granular compare
 
-If a text item, like a dataset or dataflow are different, hover over it to see the **Change review** button.
+If a text item, like a dataset or dataflow is different, hover over it to see the **Change review** button.
 
 :::image type="content" source="./media/deployment-pipelines-compare/granular-change-button.png" alt-text="Screenshot showing the change review button next to an item.":::
 
-If the only difference between the two items is settings changes, like the name or sensitivity label, the button is disabled. If there are changes to the schema, you can select it.
+If the only difference between the two items is settings changes, like the name or sensitivity label, the button is disabled. If there are changes to the schema, you can select it to see a detailed, granular comparison of the two items.
 
 When you select the **Change review** button, the content of that item is shown as it currently looks in the source stage and in the target stage.
 
@@ -90,8 +90,8 @@ Close the window when you finish examining the differences and deploy to the nex
 
 Granular compare only shows changes to the following:
 
-- datasets and dataflows
-- changes to the schema content. Settings changes, like file names or sensitivity labels, aren't shown.
+- Datasets and dataflows.
+- Items with changes to the schema content. Settings changes, like file names or sensitivity labels, aren't supported.
 
 ## Next steps
 
