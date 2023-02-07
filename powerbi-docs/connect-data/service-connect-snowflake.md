@@ -12,7 +12,7 @@ LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in Power BI Service
 
-Connecting to Snowflake in the Power BI service  differs from other connectors in only one way. Snowflake has a capability for Azure Active Directory (Azure AD), with an option for SSO (single sign-on). Parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can also choose to enable Azure AD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
+Connecting to Snowflake in the Power BI service differs from other connectors in only one way. Snowflake has a capability for Azure Active Directory (Azure AD), an option for SSO (single sign-on). Parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can choose to enable Azure AD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
 
 To configure Azure AD integration and optionally enable SSO:
 
@@ -34,7 +34,7 @@ To enable SSO, a global admin has to turn on the setting in the Power BI Admin p
 
 1. Expand **Snowflake SSO**, toggle the setting to **Enabled**, then select **Apply**.
 
-This step is required to consent to sending your Azure AD token to the  Snowflake  servers. After you enable the setting, it may take up to an hour for it to take effect.
+This step is required to consent to sending your Azure AD token to the  Snowflake  servers. After you enable the setting, it can take up to an hour for it to take effect.
 
 After SSO is enabled, you can use reports with SSO.
 
@@ -46,7 +46,7 @@ For more information including steps for using Azure AD, SSO, and Snowflake, see
 
 For information about how you can use the on-premises data gateway, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
-If you aren't using the gateway, you're all set. When you have Snowflake credentials configured on your on-premises data gateway, but are only using that data source in your model, switch on the Dataset settings to off on the gateway for that data model.
+If you aren't using the gateway, you're all set. When you have Snowflake credentials configured on your on-premises data gateway, but you're only using that data source in your model, switch the Dataset settings to off on the gateway for that data model.
 
 :::image type="content" source="media/service-connect-snowflake/snowflake-gateway-toggle-off.png" alt-text="Screenshot of the expanded gateway connection settings with the toggle set to off.":::
 
@@ -55,12 +55,12 @@ To turn on SSO for a dataset:
 1. [Sign in to Power BI](https://app.powerbi.com) using dataset creator credentials.
 1. Select the appropriate workspace, then choose **Settings** from the more options menu that's located next to the dataset name.
 
-:::image type="content" source="media/service-connect-snowflake/dataset-settings-2.png" alt-text="Screenshot of datasets and dataflows in a workspace with more and settings highlighted.":::
+   :::image type="content" source="media/service-connect-snowflake/dataset-settings-2.png" alt-text="Screenshot of datasets and dataflows in a workspace with more and settings highlighted.":::
 
-1. Select **Data source credentials** and sign in. The dataset can be signed into Snowflake with Basic or OAuth2 (Azure AD) credentials. if you use Azure AD, you can enable SSO in the next step.
-1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable Azure AD SSO. Whether the first user signs in with Basic authentication or OAuth2 (Azure AD), the Azure AD credentials are what will be sent for SSO.
+1. Select **Data source credentials** and sign in. The dataset can be signed into Snowflake with Basic or OAuth2 (Azure AD) credentials. By using Azure AD, you can enable SSO in the next step.
+1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable Azure AD SSO. Whether the first user signs in with Basic authentication or OAuth2 (Azure AD), the Azure AD credentials are sent for SSO.
 
-:::image type="content" source="media/service-connect-snowflake/snowflake-sso-cred-ui.png" alt-text="Screenshot of the configuration dialog with OAuth2 selected as the authentication method.":::
+   :::image type="content" source="media/service-connect-snowflake/snowflake-sso-cred-ui.png" alt-text="Screenshot of the configuration dialog with OAuth2 selected as the authentication method.":::
 
 After these steps are done, users should automatically use their Azure AD authentication to connect to data from that Snowflake dataset.
 
