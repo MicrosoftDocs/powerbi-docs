@@ -14,7 +14,7 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-If you have edit permission for a dataset, you can add your own featured questions to that dataset. Power BI Q&A will show those questions to colleagues who consume dashboards based on that dataset. Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that may be hard to phrase.
+If you have edit permission for a dataset, you can add your own featured questions to that dataset. Power BI Q&A will show those questions to colleagues who consume dashboards based on that dataset. Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that might be hard to phrase.
 
 > [!NOTE]
 > Q&A featured questions are available for use in the [Microsoft Power BI app on iPads, iPhones, and iPod Touch devices](../consumer/mobile/mobile-apps-ios-qna.md) and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
@@ -22,7 +22,7 @@ If you have edit permission for a dataset, you can add your own featured questio
 
 ## Create a featured question
 
-This article uses the [Retail Analysis sample](sample-datasets.md). Follow these step-by-step instructions to explore a dataset yourself.
+This article uses the [Retail Analysis sample](sample-retail-analysis.md). Follow these step-by-step instructions to explore a dataset.
 
 1. On the dashboard, select the **Ask a question about your data** Q&A question box. Notice that Q&A is already being helpful by displaying some suggested questions.
 2. To create a featured question, in Power BI, select the **More options** ellipsis, select **Settings** > **Settings**.
@@ -36,7 +36,7 @@ This article uses the [Retail Analysis sample](sample-datasets.md). Follow these
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/power-bi-type-featured-question-2.png" alt-text="Screenshot of the Featured Q&A questions interface.":::
 
-6. Navigate back to the Power BI dashboard for the Retail Analysis sample, and place your cursor in the Q&A question box.
+6. Go back to the Power BI dashboard for the Retail Analysis sample, and place your cursor in the Q&A question box.
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/ask-question-2.png" alt-text="Screenshot of the Q&A question box in Power BI dashboard.":::
 
