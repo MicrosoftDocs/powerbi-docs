@@ -50,7 +50,7 @@ Items that aren't paired or that were changed get one of the following labels:
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
-## Review differences in paired items with granular compare
+## Review differences in paired items by using granular compare
 
 If a text item, like a dataset or dataflow is different, hover over it to see the **Change review** button.
 
