@@ -42,7 +42,7 @@ Power BI generates the QR code as a JPG file, ready to print.
 
 1. Select **Download**, then open the JPG file on a computer connected to a printer.
 
-   The JPG file has the same name as the tile. For example, "Sales and Marketing Sample.jpg".
+   The JPG file has the same name as the report. For example, "Best states for sunglass sales.jpg".
 
 1. Print the file at 100% or “actual size”.
 1. Cut out the QR code along its edge and glue it to a place relevant to the report.
