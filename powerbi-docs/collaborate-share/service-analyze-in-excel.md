@@ -116,5 +116,6 @@ While viewing a Power BI visual, you may want to further explore the visual data
 
 ## Next steps
 
+- Now that you've created the Excel workbook with refreshable Power BI data, it's time to [design a report in Excel with that Power BI data](service-analyze-power-bi-datasets-excel.md)
 - [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)

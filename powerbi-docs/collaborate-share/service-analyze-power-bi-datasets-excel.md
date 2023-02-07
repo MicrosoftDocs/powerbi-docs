@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Design refreshable reports in Excel with Power BI data
 
-You have an Excel workbook containing a Power BI dataset, so now you can start analyzing your data and building reports in the workbook using familiar spreadsheet functionality.
+Now that you've [created an Excel workbook with refreshable Power BI data](service-analyze-in-excel.md), you can start analyzing your data and designg reports in the workbook using familiar spreadsheet functionality.
 
 You've connected to the Power BI dataset in one of two ways:
 
@@ -74,5 +74,6 @@ To refresh all objects connected to a Power BI dataset, use either of these opti
 
 ## Next steps
 
+- [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
 - [Connect Excel to Power BI datasets](service-connect-power-bi-datasets-excel.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
