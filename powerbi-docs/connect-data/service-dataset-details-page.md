@@ -6,12 +6,12 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 09/20/2022
+ms.date: 02/07/2023
 LocalizationGroup: Share your work
 ---
 # Dataset details
 
-The dataset details page helps you explore, monitor, and leverage datasets. When you click on a dataset in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that dataset opens.
+The dataset details page helps you explore, monitor, and leverage datasets. When you select a dataset in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that dataset opens.
 
 [ ![Screenshot of dataset details page.](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png)](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
@@ -20,7 +20,7 @@ The dataset details page
 * Provides actions that you can perform on the dataset, such as share, refresh, create new, Analyze in Excel, and more.
 * Lists the reports and scorecards that are built on top of the dataset.
 
-The page header displays the dataset name, endorsement (if any), and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), click the header and then click the name of the owner.
+The page header displays the dataset name, endorsement (if any), and dataset owner. To send an email to the dataset owner or the dataset certifier (if any), select the header and then select the name of the owner.
 
 ## Supported actions
 
@@ -56,7 +56,7 @@ The dataset details section shows
 
 ## Explore related reports
 
-The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
+The explore related reports section shows you all the reports and scorecards that are built on the dataset. You can create a copy of an item by selecting the line the item is on and selecting the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-explore-related-reports.png" alt-text="Screenshot of explore related reports section on dataset details page.":::
 
@@ -70,7 +70,7 @@ The columns in the list of related reports are:
 
 ## Visualize this data
 
-To create a report based on the dataset, click the **Create report** button on this tile and choose the desired option.
+To create a report based on the dataset, select the **Create report** button on this tile and choose the desired option.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-visualize-data-1.png" alt-text="Screenshot of visualize this data section on data details page.":::
 
@@ -84,7 +84,7 @@ To create a report based on the dataset, click the **Create report** button on t
 
 ## Share this data
 
-You can share the dataset with other users in your organization. Clicking the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
+You can share the dataset with other users in your organization. Selecting the **Share dataset** button opens the [Share dataset dialog](service-datasets-share.md), where you can choose which permissions to grant on the dataset.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-share-dataset.png" alt-text="Screenshot of datamart share this data section on data details page.":::
 
@@ -94,7 +94,7 @@ Data preview enables you to view a selected table or columns from the dataset. Y
 
 ### Prerequisites
 
-* The dataset can be inside Non-Premium or Premium workspaces. Classic workspaces are not supported. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
+* The dataset can be inside Premium or non-Premium workspaces. Classic workspaces aren't supported. [Read about new and classic workspaces](../collaborate-share/service-new-workspaces.md).
 * You need [Build permission](./service-datasets-build-permissions.md) for the dataset.
 
 ### Select data to preview
@@ -116,47 +116,51 @@ When you select a table or columns in a table, they will be displayed on the **T
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-table-preview-page-1.png" alt-text="Screenshot showing table preview page.":::
 
-Table preview may not show all of the data you've selected. To see more, you can [export](#exporting-data) or build a [paginated report](../paginated-reports/paginated-formatted-table.md) (see below).
+Table preview may not show all of the data you've selected. To see more, you can [export](#export-data) or build a [paginated report](#build-a-paginated-report).
 
 You can resize column widths using a drag handle next to the column headers. Resizing columns can make the table preview more readable, especially for long column input values.
 
-**Show query**
+#### Show query
 
 Show query enables you to copy the DAX query used to create the table preview to the clipboard. This makes it possible to reuse the query for future actions.
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-query-1.png" alt-text="Screenshot showing table preview with the query displayed.":::
 
-**Back**
+#### Back
 
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 
 >[!NOTE]
-> Table preview is intended to quickly explore the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can select **Create paginated report** (see below) for that.
+> Table preview is intended to quickly explore the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can select [**Create paginated report**](#build-a-paginated-report) for that.
 >
-
  
-### Exporting data
+### Export data
 
-Selecting the **Export** button on the Table preview page allows you to export the data to one of the supported file formats.
+Select the **Export** button on the Table preview page to export the data to one of the supported file formats.
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-export-1.png" alt-text="Screenshot showing table preview export option.":::
 
-### Building a paginated report
+### Build a paginated report
 
-Selecting the **Create paginated report** button opens the [editor](../paginated-reports/paginated-formatted-table.md). 
+Select the **Create paginated report** button to open the [editor](../paginated-reports/paginated-formatted-table.md). 
+
 >[!NOTE]
 > Data will change from underlying data to summarized data. You can switch to underlying data using **More options**.
 
-In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, etc. 
+In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, and so on.
+
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-table-formatted-table-editor-2.png" alt-text="Screenshot showing formatted table editor.":::
 
-You can then either export the report to any of the supported file formats (the file will be saved to your default downloads folder), or you can save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
+You can then export the report to any of the supported file formats, and the file will be saved to your default downloads folder. Or you can save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
 
-### Switch from Summarized to underlying data in the editor
-You can switch to underlying data using More options 
+### Switch from summarized to underlying data in the editor
+
+Select **More options (...)** to switch from **Summarized data** to **Underlying data**. 
+
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-data-switch.png" alt-text="Screenshot showing more options."
 
 ## Next steps
+
 * [Use datasets across workspaces](service-datasets-across-workspaces.md)
 * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
 * [Endorse your dataset](../collaborate-share/service-endorse-content.md)
