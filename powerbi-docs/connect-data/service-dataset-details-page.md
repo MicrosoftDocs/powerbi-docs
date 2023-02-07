@@ -131,7 +131,7 @@ Show query enables you to copy the DAX query used to create the table preview to
 At any time you can return to the dataset details page by selecting the **Back** button on the action bar. Selecting the Back button clears all your selections and brings you back to dataset details page.
 
 >[!NOTE]
-> Table preview is intended to quickly explore the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can choose **Create paginated report** (see below) for that.
+> Table preview is intended to quickly explore the underlying data of tables within your dataset. You cannot view measures or select more than one table or columns across tables. You can select **Create paginated report** (see below) for that.
 >
 
  
@@ -150,7 +150,7 @@ Selecting the **Create paginated report** button opens the [editor](../paginated
 In the editor you can select multiple tables, measure, fields across tables, apply table styles, change aggregates, etc. 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-table-formatted-table-editor-2.png" alt-text="Screenshot showing formatted table editor.":::
 
-You can then either export the report to any of the supported file formats (the file will be saved to your default downloads folder), or you can or save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
+You can then either export the report to any of the supported file formats (the file will be saved to your default downloads folder), or you can save it as a [paginated report](../paginated-reports/paginated-reports-report-builder-power-bi.md) to a workspace of your choice. Paginated reports fully preserve your report formatting.
 
 ### Switch from Summarized to underlying data in the editor
 You can switch to underlying data using More options 
