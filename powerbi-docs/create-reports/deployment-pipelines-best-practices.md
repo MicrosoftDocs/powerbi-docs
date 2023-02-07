@@ -89,26 +89,26 @@ This section provides guidance for working with the deployment pipelines develop
 
 ### Use Power BI Desktop to edit your reports and datasets
 
-Consider Power BI Desktop as your local development environment. Power BI Desktop allows you to try, explore, and review updates to your reports and datasets. Once the work is done, you can upload your new version to the development stage. Due to the following reasons, it's recommended to edit PBIX files in the Desktop (and not in Power BI service):
+Consider Power BI Desktop as your local development environment. Power BI Desktop allows you to try, explore, and review updates to your reports and datasets. Once the work is done, you can upload your new version to the development stage. Due to the following reasons, it's recommended to edit *.pbix* files in the Desktop (and not in Power BI service):
 
-* It is easier to collaborate with fellow creators on the same PBIX file, if all changes are being done on the same tool.
+* It is easier to collaborate with fellow creators on the same *.pbix* file, if all changes are being done on the same tool.
 
-* Making online changes, downloading the PBIX file, and then uploading it again, creates reports and datasets duplication.
+* Making online changes, downloading the *.pbix* file, and then uploading it again, creates reports and datasets duplication.
 
-* You can use version control to keep your PBIX files up to date.
+* You can use version control to keep your *.pbix* files up to date.
 
-### Version control for PBIX files
+### Version control for *.pbix* files
 
 If you want to manage the version history of your reports and datasets, use Power BI's [auto-sync with OneDrive](../connect-data/refresh-desktop-file-onedrive.md). This will keep your files updated with the latest version. It will also enable you to retrieve older versions if needed.
 
 >[!NOTE]
->Synchronizing with OneDrive (or any other repository) only with the PBIX files in the deployment pipeline's development stage. Don't sync PBIX files into the deployment pipeline's test and production stages. This causes problems with deploying content across the pipeline.
+>Synchronizing with OneDrive (or any other repository) only with the *.pbix* files in the deployment pipeline's development stage. Don't sync *.pbix* files into the deployment pipeline's test and production stages. This causes problems with deploying content across the pipeline.
 
 ### Separate modeling development from report and dashboard development
 
 For enterprise scale deployments, it's recommended to separate dataset development, and the development of reports and dashboards. To promote changes to only a report or a dataset, use the deployment pipelines selective deploy option.
 
-This approach should start from Power BI Desktop by creating a separate PBIX file for datasets and reports. For example, you can create a dataset PBIX file and upload it to the development stage. Later, your report authors can create a new PBIX only for the report and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) by using a live connection. This technique allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
+This approach should start from Power BI Desktop by creating a separate *.pbix* file for datasets and reports. For example, you can create a dataset *.pbix* file and upload it to the development stage. Later, your report authors can create a new *.pbix* only for the report and [connect it to the published dataset](../connect-data/service-datasets-discover-across-workspaces.md) by using a live connection. This technique allows different creators to separately work on modeling and visualizations, and deploy them to production independently.
 
 With [shared datasets](../connect-data/service-datasets-share.md), you can also use this method across workspaces.
 
@@ -191,7 +191,7 @@ Deployment in a pipeline updates the workspace content, but it doesn't update th
 
 ### Quick fixes to content
 
-In case there are issues in production that require a quick fix, don't upload a new PBIX version directly to the production stage or make an online change in Power BI service. Deploying backwards to test and development stages isn't possible when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, the correct way to treat this problem is to implement the fix in the development stage and push it to the rest of the deployment pipeline stages. This allows checking that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
+In case there are issues in production that require a quick fix, don't upload a new *.pbix* version directly to the production stage or make an online change in Power BI service. Deploying backwards to test and development stages isn't possible when there's already content in those stages. Furthermore, deploying a fix without testing it first is bad practice. Therefore, the correct way to treat this problem is to implement the fix in the development stage and push it to the rest of the deployment pipeline stages. This allows checking that the fix works before deploying it to production. Deploying across the pipeline takes only a few minutes.
 
 ## Next steps
 

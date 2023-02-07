@@ -149,7 +149,7 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 Deployment pipelines doesn't support the following items:
 
-* Datasets that don't originate from a PBIX
+* Datasets that don't originate from a *.pbix*
 
 * PUSH datasets
 
@@ -242,9 +242,9 @@ To enable incremental refresh, [configure it in Power BI Desktop](../connect-dat
 
 Once your pipeline is configured with incremental refresh, we recommend that you use the following flow:
 
-1. Make changes to your PBIX file in Power BI Desktop. To avoid long waiting times, you can make changes using a sample of your data.
+1. Make changes to your *.pbix* file in Power BI Desktop. To avoid long waiting times, you can make changes using a sample of your data.
 
-2. Upload your PBIX file to the *development* stage.
+2. Upload your *.pbix* file to the *development* stage.
 
 3. Deploy your content to the *test* stage. After deployment, the changes you made will apply to the entire dataset you're using.
 
@@ -375,7 +375,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
-* Downloading a PBIX file after deployment isn't supported.
+* Downloading a *.pbix* file after deployment isn't supported.
 
 * When deploying a Power BI item for the first time, if another item in the target stage is similar in type (for example, if both files are reports) and has the same name, the deployment will fail.
 
