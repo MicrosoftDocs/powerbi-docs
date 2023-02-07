@@ -626,6 +626,18 @@
         href: ../paginated-reports/report-builder-design-tips.md
       - name: Tables, matrixes, lists
         href: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - name: Text boxes
+        items:
+        - name: Text boxes in paginated reports
+          href: ../paginated-reports/report-design/textbox/text-boxes-report-builder-and-service.md
+        - name: Add or move a text box
+          href: ../paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service.md
+        - name: Allow a text box to grow or shrink
+          href: ../paginated-reports/report-design/textbox/allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md
+        - name: Format text in a text box
+          href: ../paginated-reports/report-design/textbox/format-text-in-a-text-box-report-builder-and-service.md
+        - name: Set text box orientation
+          href: ../paginated-reports/report-design/textbox/set-text-box-orientation-report-builder-and-service.md
       - name: Keyboard shortcuts in Power BI Report Builder
         href: /sql/reporting-services/report-builder/keyboard-shortcuts-report-builder?context=/power-bi/create-reports/context/context
     - name: "Device information settings"  

@@ -70,7 +70,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | Unlimited report distribution to anyone (even outside the organization) | No | Yes |
 | Business-driven interactive reports, workspaces, and apps | No | Yes |
 | **Platform scalability and resiliency** |||
-| [Power BI Premium](../enterprise/service-premium-gen2-what-is.md) architecture, which supports increased scale and performance | No | Yes |
+| [Power BI Premium](../enterprise/service-premium-what-is.md) architecture, which supports increased scale and performance | No | Yes |
 | Optimized dataset memory management | No | Yes |
 | Scale limits per data model instead of per server | No | Yes |
 | CPU smoothing for refresh resiliency | No | Yes |
@@ -117,7 +117,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI item dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
-| [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
+| [Premium capacity metrics app](../enterprise/service-premium-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes <sup>1</sup> |
 | [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
@@ -175,7 +175,7 @@ For more information, see:
 
 ## Scalability benefits
 
-[Power BI Premium](../enterprise/service-premium-gen2-what-is.md) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
+[Power BI Premium](../enterprise/service-premium-what-is.md) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
 
 Power BI Premium provides features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
 
@@ -277,7 +277,7 @@ AAS integrates with Azure Monitor for [diagnostic logging](/azure/analysis-servi
 
 Power BI Premium also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS may not work in Power BI.
 
-Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Premium metrics app](../enterprise/service-premium-gen2-metrics-app.md).
+Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Premium metrics app](../enterprise/service-premium-metrics-app.md).
 
 SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI Premium. For more information, see [Monitor Analysis Services with SQL Server Extended Events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events).
 

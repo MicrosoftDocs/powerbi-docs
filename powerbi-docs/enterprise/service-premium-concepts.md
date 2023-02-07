@@ -79,7 +79,7 @@ To configure autoscale on a Power BI Premium capacity, follow the instructions i
 ## Next steps
 
 >[!div class="nextstepaction"]
->[What is Power BI Premium?](service-premium-gen2-what-is.md)
+>[What is Power BI Premium?](service-premium-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Power BI Premium architecture](service-premium-architecture.md)
@@ -88,7 +88,7 @@ To configure autoscale on a Power BI Premium capacity, follow the instructions i
 >[Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 
 >[!div class="nextstepaction"]
->[Power BI Premium FAQ](service-premium-gen2-faq.yml)
+>[Power BI Premium FAQ](service-premium-faq.yml)
 
 >[!div class="nextstepaction"]
 >[Power BI Premium Per User FAQ (preview)](service-premium-per-user-faq.yml)

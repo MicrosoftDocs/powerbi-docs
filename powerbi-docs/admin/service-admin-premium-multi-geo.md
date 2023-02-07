@@ -18,7 +18,7 @@ Multi-Geo is a Power BI Premium feature that helps multinational customers addre
 Sovereign clouds support Multi-Geo across regions within that cloud.
 
 > [!NOTE]
-> China North currently does not support Multi-Geo for Premium Gen2 capacities.
+> China North currently does not support Multi-Geo as it resides on the old version of Premium.
 
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support for Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
 
@@ -93,5 +93,5 @@ Large-storage format datasets shouldn't be moved from the region where they were
 
 ## Next steps
 
-- [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
+- [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 - [Multi-Geo support for Power BI Embedded](../developer/embedded/embedded-multi-geo.md)
