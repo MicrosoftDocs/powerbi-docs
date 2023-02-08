@@ -1,19 +1,19 @@
 ---
 title: Install, share, and update template apps in your organization with Power BI
-description: Learn how you can install, customize, and share template apps with your organization from Power BI.
+description: Learn how you can install and customize Power BI template apps, and then share them as apps within your organization.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 02/08/2023
 ms.custom: intro-installation
 ---
 
 # Install, share, and update template apps in your organization
 
-Are you a Power BI analyst? You can learn more about [template apps](service-template-apps-overview.md) and connect to many of the services that you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md).
+Are you a Power BI analyst? Here you can learn more about [template apps](service-template-apps-overview.md) and how to connect to many of the services that you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md).
 
 :::image type="content" source="media/service-template-apps-install-distribute/power-bi-all-apps.png" alt-text="Screenshot of the Power BI apps page in the main pane." lightbox="media/service-template-apps-install-distribute/power-bi-all-apps.png":::
 
@@ -38,7 +38,7 @@ To install, customize, and distribute a template app, you need:
 
    :::image type="content" source="media/service-template-apps-install-distribute/app-source-template-apps.png" alt-text="Screenshot of the AppSource page with template apps highlighted." lightbox="media/service-template-apps-install-distribute/app-source-template-apps.png":::
 
-1. When you find the template app, select it. The template app offer appears. Select **Get It Now**.
+1. When you find the template app you're looking for, select it. The template app offer appears. Select **Get It Now**.
 
    :::image type="content" source="media/service-template-apps-install-distribute/service-github-template-app-appsource-get-it-now.png" alt-text="Screenshot of the AppSource page showing the GitHub template app, get it now is highlighted." lightbox="media/service-template-apps-install-distribute/service-github-template-app-appsource-get-it-now.png":::
 
@@ -94,7 +94,7 @@ When you're done making changes to the artifacts in the workspace, you're ready 
 
 ## Update a template app
 
-Sometimes, template app creators release new improved versions of their template apps, via AppSource, a direct link, or both.
+From time to time, template app creators release new improved versions of their template apps, via AppSource, a direct link, or both.
 
 If you originally downloaded the app from AppSource, when a new version of the template app becomes available, you get notified in two ways:
 
@@ -116,7 +116,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
 * **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option if you didn't make any changes to the app or its content and want to overwrite the old app. Your connections will be re-established, and the new version of the app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
 
-* **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset in the workspace. After updating the workspace, you can choose what you want to include in the app, and then you can update the app to republish it to your organization with the changes.
+* **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset in the workspace. After updating the workspace, you can choose what you want to include in the app, and then you need to update the app to republish it to your organization with the changes.
 
 * **Install another copy of the app into a new workspace:** Installs a fresh version of the workspace and app. Choose this option if you don’t want to change your current app.
 
