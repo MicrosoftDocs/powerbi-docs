@@ -62,10 +62,13 @@ When you select the **Change review** button, the content of that item is shown 
 
 On top of the screen, you'll see:
 
-1. The full pathname of the file as it appears in the source stage.
-1. The number of total changes (in black) along with the specification of the total additions (green) and the total number of deletions (red) made to the file.
+1. The workspace name followed by the full pathname of the file as it appears in the source stage.
+1. The number of total differences (in black) between the files. This number is broken down to show the total number if additions (green) and deletions (red) made to the file.
 1. Up and down arrows that take you to the previous or next difference in the file.
+1. A navigation bar on the right side with red or green bars highlighting where the changes are in the file.
 1. Buttons that toggle between a side by side view and an inline view of the changes.
+
+The file rows are numbered and rows that were changed are highlighted in red (for deletions) or green (for additions). The entire row is highlighted, and the specific characters that were added or deleted are highlighted in a darker color.
 
 ### [Side by side view](#tab/browser)
 
