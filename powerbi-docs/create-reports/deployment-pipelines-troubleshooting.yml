@@ -72,7 +72,7 @@ sections:
         answer: |
           To use deployment pipelines, you need to have one of the following licenses:
           
-          * A [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md) license, with a workspace that resides on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
+          * A [Pro user](../enterprise/service-admin-purchasing-power-bi-pro.md) license, with a workspace that resides on a [Premium capacity](../enterprise/service-premium-what-is.md).
           
           * [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml).
           
@@ -118,7 +118,7 @@ sections:
           
           * The workspace isn't assigned to any other pipeline
           
-          * The workspace resides on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md)
+          * The workspace resides on a [Premium capacity](../enterprise/service-premium-what-is.md)
           
           Workspaces that don't meet these conditions, aren't displayed in the list of workspaces you can select from.
           
@@ -249,22 +249,11 @@ sections:
 
   - name: Paginated reports
     questions:
-      - question: |
-          Why can't I see a paginated report?
-        answer: |
-          To view a paginated report in the pipeline you need to have a [paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload) enabled on your capacity.
-
-          >[!NOTE]
-          >You only need to enable this workload with Power BI Premium Gen1 capacities.
 
       - question: |
           Why can't I deploy a paginated report?
         answer: |
-          To deploy a paginated report, both of these conditions must be met:
-          
-          * You need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
-          
-          * In your target stage capacity, you need to [enable paginated reports workload](./../developer/embedded/embed-paginated-reports.md#step-4---enable-paginated-reports-workload).
+          To deploy a paginated report, you need to be a workspace member in the workspace you're deploying from (the source stage workspace). If you're not a workspace member in the source stage, you'll not be able to deploy the paginated report.
           
       - question: |
           Who's the owner of a deployed paginated report?
@@ -351,7 +340,7 @@ sections:
       - question: |
           Who can deploy content between stages?
         answer: |
-          Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
+          Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [Premium capacity](../enterprise/service-premium-what-is.md).
           
           * **Deploying to an empty stage** - Any [Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [PPU](../enterprise/service-premium-per-user-faq.yml) user, that's a member or admin in the source workspace.
           

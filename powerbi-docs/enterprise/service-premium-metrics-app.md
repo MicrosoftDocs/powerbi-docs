@@ -20,7 +20,7 @@ The Power BI Premium utilization and metrics app is designed to provide monitori
 
 The app is updated often with new features and functionalities and provides the most in-depth information into how your capacities are performing.
 
-To [install the Premium metrics app](service-premium-install-gen2-app.md), you must be a capacity admin. Once installed, anyone in the organization with the right permissions can view the app.
+To [install the Premium metrics app](service-premium-install-app.md), you must be a capacity admin. Once installed, anyone in the organization with the right permissions can view the app.
 
 The Premium metrics app has six pages:
 
@@ -40,23 +40,23 @@ This page provides an overview of the capacity performance. It's divided into th
 
 At the top of each page, the **CapacityID** field allows you to select the capacity the app shows results for.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Premium metrics app, with the capacity I D selector highlighted.":::
+:::image type="content" source="media/service-premium-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Premium metrics app, with the capacity I D selector highlighted.":::
 
 ### Artifacts
 
 The artifacts section is made up of two visuals, one on top of the other, in the left side of the page. The top visual is a stacked column table, and below it is a matrix table.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Premium metrics app.":::
 
 #### Multi metric column chart
 
 A stacked column table that provides an hourly view of your capacity's usage. Drill down to a specific day to identify daily patterns. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/multi-metric-column-chart.png" alt-text="A screenshot showing the multi metric column chart, in the overview page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/multi-metric-column-chart.png" alt-text="A screenshot showing the multi metric column chart, in the overview page, in the Power BI Premium metrics app.":::
 
 The Multi metric column chart displays the four values listed below. It shows the top results for these values per Power BI item during the past two weeks.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/multi-metric-column-chart-values.png" alt-text="A screenshot showing the multi metric column chart with the values row highlighted.":::
+:::image type="content" source="media/service-premium-metrics-app/multi-metric-column-chart-values.png" alt-text="A screenshot showing the multi metric column chart with the values row highlighted.":::
 
 * **CPU** - CPU processing time in seconds.
 
@@ -70,11 +70,11 @@ The Multi metric column chart displays the four values listed below. It shows th
 
 A matrix table that displays metrics for each Power BI item on the capacity.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Premium metrics app.":::
 
 To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below. The colors in the table represent your *performance delta*.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by artifact and operation visual parameter headers.":::
+:::image type="content" source="media/service-premium-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by artifact and operation visual parameter headers.":::
 
 * **Artifacts** - A list of Power BI items active during the selected period of time. The item name is a string with the syntax: `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
 
@@ -105,7 +105,7 @@ To gain a better understanding of your capacity's performance, you can sort this
 
 The performance section is made up of four visuals, one on top of the other, in the middle of the page.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/performance-section.png" alt-text="A screenshot showing the performance section, in the overview page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/performance-section.png" alt-text="A screenshot showing the performance section, in the overview page, in the Power BI Premium metrics app.":::
 
 #### CPU over time
 
@@ -120,7 +120,7 @@ Displays the CPU usage of the selected capacity over time. Filters applied to th
 
 To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-drillthrough.png" alt-text="A screenshot showing the timepoint drill through option in the C P U overtime chart.":::
+:::image type="content" source="media/service-premium-metrics-app/timepoint-drillthrough.png" alt-text="A screenshot showing the timepoint drill through option in the C P U overtime chart.":::
 
 The CPU over time chart displays the following elements:
 
@@ -146,7 +146,7 @@ Displays the memory footprint recorded for Power BI items over time. If no item 
 
 Displays an aggregate of report performance across three operation categories:
 
-[!INCLUDE [gen2-app-fast-moderate-slow-operations](../includes/gen2-app-fast-moderate-slow-operations.md)]
+[!INCLUDE [premium-app-fast-moderate-slow-operations](../includes/premium-app-fast-moderate-slow-operations.md)]
 
 The aggregate is taken from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
 
@@ -154,7 +154,7 @@ The aggregate is taken from the total number of operations performed on a Power 
 
 The weekly trendlines section is made up of four visuals, one on top of the other, in the right side of the report. These visuals summarize the capacity's behavior over the past four weeks. This section is designed to provide a snapshot of your capacity, highlighting trends for the past four weeks.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/weekly-trendlines.png" alt-text="A screenshot showing the weekly trendlines section, in the overview page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/weekly-trendlines.png" alt-text="A screenshot showing the weekly trendlines section, in the overview page, in the Power BI Premium metrics app.":::
 
 #### CPU
 
@@ -181,7 +181,7 @@ This page provides information about overloads in your capacity. You can use it 
 
 When you detect a Power BI item that causes overload, you can either optimize that item to reduce its impact on the capacity, or you can scale up the capacity.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/evidence-page.png" alt-text="A screenshot showing the evidence page in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/evidence-page.png" alt-text="A screenshot showing the evidence page in the Power BI Premium metrics app.":::
 
 ### Artifacts causing overloading
 
@@ -189,15 +189,15 @@ You can visually identify the different Power BI items that cause overload, by u
 
 ### Overloaders
 
-Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an [Overloading score](service-premium-gen2-faq.yml#how-is-the-overload-score-calculated-) when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
+Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an [Overloading score](service-premium-faq.yml#how-is-the-overload-score-calculated-) when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/overloading-score.png" alt-text="A screenshot showing the overloading score in the overloaders table with the overloaders tab selected.":::
+:::image type="content" source="media/service-premium-metrics-app/overloading-score.png" alt-text="A screenshot showing the overloading score in the overloaders table with the overloaders tab selected.":::
 
 Switch to the *Overloaded artifacts* pivot to identify the items most affected by overload over the past 14 days. The overloading impact can affect either the item that's causing the overload, or other items that are hosted in the same capacity.
 
 The *Overloaded time (s)* value is the amount of processing time that was impacted by an overload penalty. This value is shown for each affected item, over the past 14 days.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/overloaded-artifacts.png" alt-text="A screenshot showing the overloaders table with the overloaded artifacts tab selected.":::
+:::image type="content" source="media/service-premium-metrics-app/overloaded-artifacts.png" alt-text="A screenshot showing the overloaders table with the overloaded artifacts tab selected.":::
 
 ### Overloading windows
 
@@ -209,7 +209,7 @@ The 30 second CPU allowance is determined by the number of v-cores your capacity
 
 To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-drillthrough-evidence.png" alt-text="A screenshot showing the timepoint drill through option in the overloading windows chart.":::
+:::image type="content" source="media/service-premium-metrics-app/timepoint-drillthrough-evidence.png" alt-text="A screenshot showing the timepoint drill through option in the overloading windows chart.":::
 
 ### Artifacts overloaded (seconds)
 
@@ -230,11 +230,11 @@ This page is designed to help you identify aspects concerning refresh performanc
 >[!NOTE]
 >You can get to a version of this page, dedicated to a specific Power BI item, using the drill through feature in one of the visuals that displays individual items. The visuals in the drill through version of the page are identical to the ones listed below. However, they only display information for the item you're drilling into.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/refresh-page.png" alt-text="A screenshot showing the refresh page in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/refresh-page.png" alt-text="A screenshot showing the refresh page in the Power BI Premium metrics app.":::
 
 At the top of the page there's a multi-selection pivot allowing you to focus on refreshing the page according to the filters listed below. Each of these pivots filters all the visuals in the refresh page.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/refresh-page-filters.png" alt-text="A screenshot showing the filters in the refresh page.":::
+:::image type="content" source="media/service-premium-metrics-app/refresh-page-filters.png" alt-text="A screenshot showing the filters in the refresh page.":::
 
 * **Artifact Kind** - Filter the page by Power BI item type, such as report, dataset and dashboard.
 
@@ -300,7 +300,7 @@ All the activities in the capacity are ranked according to their compute impact.
 >
 > * [Overloading windows](#overloading-windows) in the *Evidence* page
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-page.png" alt-text="A screenshot showing the timepoint page in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/timepoint-page.png" alt-text="A screenshot showing the timepoint page in the Power BI Premium metrics app.":::
 
 When the total combined CPU for *interactive* and *background* operations exceeds the 30 second timepoint allowance, the capacity is overloaded and depending on whether autoscale is enabled or not, throttling is applied.
 
@@ -315,7 +315,7 @@ When the total combined CPU for *interactive* and *background* operations exceed
 
 This section describes the operations of the visuals in the top row of the timepoint page.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/timepoint-cards.png" alt-text="A screenshot showing the timepoint cards section, in the timepoint page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/timepoint-cards.png" alt-text="A screenshot showing the timepoint cards section, in the timepoint page, in the Power BI Premium metrics app.":::
 
 * **Top left card** - Displays the timepoint used to drill through to this page.
 
@@ -386,7 +386,7 @@ This page provides useful information about a specific Power BI item.
 
 You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Premium metrics app.":::
 
 ### Overloading
 
@@ -404,21 +404,21 @@ The overloading visual has the following columns:
 
 Displays the percentage of fast, moderate, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Premium metrics app.":::
 
-[!INCLUDE [gen2-app-fast-moderate-slow-operations](../includes/gen2-app-fast-moderate-slow-operations.md)]
+[!INCLUDE [premium-app-fast-moderate-slow-operations](../includes/premium-app-fast-moderate-slow-operations.md)]
 
 ### Artifact size
 
 This visual displays the peak amount of memory consumption detected in any three hour window, over a 14 day period, for the operations performed on the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Premium metrics app.":::
 
 ### CPU duration and users
 
 Use these visuals to review CPU consumption, operation duration and number of users for the item you're drilling into. In these visuals, each column represents a single hour over a 14 day period.
 
-:::image type="content" source="media/service-premium-gen2-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Premium metrics app.":::
+:::image type="content" source="media/service-premium-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Premium metrics app.":::
 
 * **CPU** - Each column displays the number of CPU seconds used to complete each operation per hour.
 
@@ -445,4 +445,4 @@ Use these visuals to review CPU consumption, operation duration and number of us
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Install the Premium metrics app](service-premium-install-gen2-app.md)
+> [Install the Premium metrics app](service-premium-install-app.md)

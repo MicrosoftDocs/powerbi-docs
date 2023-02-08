@@ -29,7 +29,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 The requirements apply to users in the organization and to [guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need either:
 
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md) or
-- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-gen2-what-is.md), and 
+- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md), and 
 - permissions to access the particular report or dashboard. 
 
 Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#create-email-subscriptions). To export or subscribe to paginated reports, [several tenant switches must be enabled](#subscribe-to-paginated-reports).
@@ -116,7 +116,7 @@ To create a subscription that includes others, in addition to the [requirements 
     :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
 ### Use group email aliases 
-When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-gen2-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
+When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
 
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
