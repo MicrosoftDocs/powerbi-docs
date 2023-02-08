@@ -7,18 +7,16 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 01/10/2023
+ms.date: 02/07/2023
 LocalizationGroup: Share your work
 ---
 # Connect Excel to Power BI datasets
 
-Microsoft Excel is the most common data analysis tool for information workers and organizations across the globe. Part of Excel’s appeal is that you can start your data journey in a few clicks, with quick calculations, data visualizations, and ad-hoc analysis. 
+Microsoft Excel is arguably the most common data analysis tool for information workers and organizations across the globe. Part of Excel’s appeal is that you can start your data journey in a few clicks, with quick calculations, data visualizations, and ad-hoc analysis.
 
-In many organizations, data sits in silos like Excel workbooks across the enterprise. These silos make it hard for users to find the data they need, resulting in potential business losses.
+You can discover, connect to, and explore centralized Power BI data inside the spreadsheet grid of Microsoft Excel. The versatility of Excel and the unified governance and security standards of Power BI ensures you're using the right data to make better decisions that support business goals and fosters an enhanced data culture.
 
-You can discover and connect to centralized, secure data in Power BI from wherever you work, including in Microsoft Excel and Microsoft Teams. By combining the versatility of Excel with the governance and security standards of Power BI, you can be confident that you're using the right data in a secure way. This security means that you can make better decisions to achieve business goals and foster an enhanced data culture.
-
-:::image type="content" source="media/service-connect-power-bi-datasets-excel/power-bi-dataset-excel-pivottable.png" alt-text="Screenshot of PivotTable and Power BI datasets in Excel.":::
+:::image type="content" source="media/service-connect-power-bi-datasets-excel/connect-excel-power-bi.png" alt-text="Screenshot of Power BI datasets in Excel.":::
 
 ## Access Power BI datasets in Excel 
 
@@ -29,6 +27,7 @@ Connect to Power BI datasets in Excel by starting in the Power BI service or in 
 - Start in Power BI with [Analyze in Excel](service-analyze-in-excel.md). 
 - Start in [Excel for the web or the Excel desktop app](service-connect-excel-power-bi-datasets.md).
 - After you've connected, you can [design refreshable reports with Power BI data](service-analyze-power-bi-datasets-excel.md) in an Excel PivotTable or a table.
+- For Power BI admins, you can [monitor usage of Power BI datasets in Excel](service-monitor-usage-power-bi-datasets-excel.md).
 
 ## Prerequisites
 
@@ -42,7 +41,8 @@ Here are things to keep in mind when you connect to Power BI datasets in Excel:
 
 ## Next steps
 
-- [Start in Power BI to analyze in Excel](service-analyze-in-excel.md)
-- [Create Excel workbooks with refreshable Power BI data](service-analyze-power-bi-datasets-excel.md)
+- [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
+- [Design refreshable reports in Excel with Power BI data](service-analyze-power-bi-datasets-excel.md)
+- [Monitor usage of Power BI datasets in Excel](service-monitor-usage-power-bi-datasets-excel.md)
 - Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)

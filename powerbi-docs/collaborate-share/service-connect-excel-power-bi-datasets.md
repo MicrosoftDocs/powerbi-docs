@@ -83,6 +83,6 @@ You can also access **featured tables** in Excel, in the **Data Types** gallery.
 
 ### Other related articles
 
-- [Use Power BI to analyze data in Excel](service-analyze-in-excel.md)
-- [Create Excel workbooks with refreshable Power BI data](service-analyze-power-bi-datasets-excel.md)
+- [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
+- [Design refreshable reports in Excel with Power BI data](service-analyze-power-bi-datasets-excel.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
