@@ -52,7 +52,7 @@ Items that aren't paired or that were changed get one of the following labels:
 
 ## Review differences in paired items by using granular compare
 
-If a text item, like a dataset or dataflow is different, hover over it to see the **Change review** button.
+If a text item, like a dataset, is different, hover over it to see the **Change review** button.
 
 :::image type="content" source="./media/deployment-pipelines-compare/granular-change-button.png" alt-text="Screenshot showing the change review button next to an item.":::
 
@@ -63,7 +63,7 @@ When you select the **Change review** button, the content of that item is shown 
 On top of the screen, you'll see:
 
 1. The full pathname of the file as it appears in the source stage.
-1. The number of total changes (in black) along with the number of additions (green) and deletions (red) made to the file
+1. The number of total changes (in black) along with the specification of the total additions (green) and the total number of deletions (red) made to the file.
 1. Up and down arrows that take you to the previous or next difference in the file.
 1. Buttons that toggle between a side by side view and an inline view of the changes.
 

@@ -668,13 +668,13 @@
       href: deployment-pipelines-get-started.md   
     - name: "Assign a workspace"
       href: deployment-pipelines-assign.md
-    - name: "Compare content in different deployment stages"
+    - name: "Compare content of adjacent stages"
       href: deployment-pipelines-compare.md
     - name: "Deploy content to the next stage"
       href: deployment-pipelines-deploy.md
     - name: "Deployment history"
       href: deployment-pipelines-history.md  
-    - name: "Create deployment pipeline rules"
+    - name: "Deployment rules"
       href: deployment-pipelines-create-rules.md                      
     - name: "Automate deployment pipelines"
       href: deployment-pipelines-automation.md         
