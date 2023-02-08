@@ -16,7 +16,7 @@ Power BI dataflows are an enterprise-focused data prep solution, enabling an eco
 
 ## Dataflows across the Power Platform
 
-Dataflows can be used across various Power Platform technologies, such as Power Query, Microsoft Dynamics 365, and other Microsoft offerings. For more information about how dataflows can work across the Power Platform, see [What are dataflows?](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
+Dataflows can be used across various Power Platform technologies, such as Power Query, Microsoft Dynamics 365, and other Microsoft offerings. For more information about how dataflows can work across the Power Platform, see [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
 
 ## Dataflows best practices table and links
 
@@ -25,11 +25,11 @@ The following table provides a collection of links to articles that describe bes
 |**Topic**  |**Guidance area**  |**Link to article or content**  |
 |---------|---------|---------|
 |Power Query     | Tips and tricks to get the most of your data wrangling experience        |[Best practices when working with Power Query](/power-query/best-practices)        |
-|Using Computed Tables     |Performance benefits for using computed tables in a dataflow         |[Computed Tables Scenarios](/power-query/dataflows/computed-entities-scenarios)         |
+|Using computed tables     |Performance benefits for using computed tables in a dataflow         |[Computed tables scenarios](/power-query/dataflows/computed-entities-scenarios)         |
 |Developing complex dataflows     |Patterns for developing large-scale, performant dataflows         |[Best practices for designing and developing complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows)         |
 |Reusing dataflows     |Patterns, guidance, and use cases         |[Best practices for reusing dataflows across environments and workspaces](/power-query/dataflows/best-practices-reusing-dataflows)         |
 |Large-scale implementations     |Large-scale use and guidance to complement enterprise architecture         |[Best practices for creating a dimensional model using dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows)         |
-|Using Enhanced Compute     |Potentially improve dataflow performance up to 25x         |[Using the compute engine to improve performance](dataflows-premium-workload-configuration.md#using-the-compute-engine-to-improve-performance)         |
+|Using enhanced compute     |Potentially improve dataflow performance up to 25x         |[Using the compute engine to improve performance](dataflows-premium-workload-configuration.md#using-the-compute-engine-to-improve-performance)         |
 |Optimizing your workload settings     |Get the most out of your dataflows infrastructure by understanding the levers you can pull to maximize performance         |[Configure Power BI Premium dataflow workloads](dataflows-premium-workload-configuration.md)         |
 |Joining and expanding tables     |Creating performant joins         |[Optimize Power Query when expanding table columns](/power-query/optimize-expanding-table-columns)         |
 |Query folding guidance     |Speeding up transformations using the source system         |[Power Query query folding](/power-query/power-query-folding)         |
