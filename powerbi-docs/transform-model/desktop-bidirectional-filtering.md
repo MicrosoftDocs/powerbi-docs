@@ -24,7 +24,6 @@ You can enable cross-filtering in the **Edit relationship** dialog box. To enabl
 * Set **Cross filter direction** to **Both**.
 * Select **Apply security filter in both directions**.
 
-  ![Configure bidirectional filtering in Power BI Desktop.]()
   :::image type="content" source="media/desktop-bidirectional-filtering/bidirectional-filtering_2.png" alt-text="Screenshot of the Edit relationship dialog box with Cross filter direction set to both and the checkbox to Apply security filter in both directions selected.":::
 
 > [!NOTE]
