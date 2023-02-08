@@ -115,11 +115,11 @@
     items:         
     - name: "Connect Excel to Power BI datasets"
       href: service-connect-power-bi-datasets-excel.md
-    - name: "Start in Excel"
+    - name: "Power BI datasets in Excel"
       href: service-connect-excel-power-bi-datasets.md
-    - name: "Start in Power BI"
+    - name: "Create Excel workbooks with refreshable data"
       href: service-analyze-in-excel.md
-    - name: "Build refreshable reports in Excel"
+    - name: "Design refreshable reports in Excel"
       href: service-analyze-power-bi-datasets-excel.md
     - name: "Use Power BI featured tables in Excel"
       href: service-excel-featured-tables.md
