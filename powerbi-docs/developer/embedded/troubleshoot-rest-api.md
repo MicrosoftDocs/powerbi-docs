@@ -7,27 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 11/03/2022
+ms.date: 02/08/2022
 ---
 
 # Troubleshoot REST APIs
 
 ## API call returns 401
 
-A fiddler capture may be required to investigate further. The required permission scope may be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
+A Fiddler capture may be required to investigate further. The required permission scope might be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
 
 ## API call returns 403
 
-A 403 error can occur for any of the following reasons. A fiddler capture may be required to investigate further.
+A 403 error can occur for any of the following reasons. A Fiddler capture might be required to investigate further.
 
 * The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](/azure/power-bi-embedded/create-capacity).
-* The Azure AD auth token expired.
+* The Azure AD authorization token expired.
 * The authenticated user isn't a member of the group (workspace).
 * The authenticated user isn't an admin of the group (workspace).
-* The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions)
+* The authenticated user doesn't have permissions. Permissions can be updated using the [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions)
 * The authorization header may not be listed correctly. Make sure there are no typos.
 
-The backend of the application may need to refresh the auth token before calling GenerateToken. For more information, see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
+The backend of the application may need to refresh the authorization token before calling `GenerateToken`. For more information, see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
 
 ```console
 GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
@@ -65,4 +65,4 @@ When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datase
 > [!div class="nextstepaction"]
 >[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)
