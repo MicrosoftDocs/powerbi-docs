@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.date: 02/07/2023
 LocalizationGroup: Connect to services
 ---
-# Connect to Snowflake in Power BI Service
+# Connect to Snowflake in the Power BI service
 
 Connecting to Snowflake in the Power BI service differs from other connectors in only one way. Snowflake has a capability for Azure Active Directory (Azure AD), an option for SSO (single sign-on). Parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can choose to enable Azure AD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
 
 To configure Azure AD integration and optionally enable SSO:
 
-* If you're the Snowflake admin, see [Power BI SSO to Snowflake](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) article in the Snowflake documentation.
-* If you're a Power BI admin, see [Power BI Service configuration - Admin Portal](service-connect-snowflake.md#admin-portal) to learn how to enable SSO.
-* If you're a Power BI dataset creator, see [Configure a dataset with Azure AD](service-connect-snowflake.md#configure-a-dataset-with-azure-ad) to learn how to enable SSO.
+* If you're the Snowflake admin, see [Power BI SSO to Snowflake](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) in the Snowflake documentation.
+* If you're a Power BI admin, go to the [Admin portal](service-connect-snowflake.md#admin-portal) section to enable SSO.
+* If you're a Power BI dataset creator, go to the [Configure a dataset with Azure AD](service-connect-snowflake.md#configure-a-dataset-with-azure-ad) section to enable SSO.
 
 ## Power BI service configuration
 
