@@ -34,7 +34,7 @@ To connect to live Power BI datasets from inside Excel, use one of these two opt
 
     :::image type="content" source="media/service-connect-excel-power-bi-datasets/insert-pivottable-from-power-bi.png" alt-text="Screenshot of the Insert PivotTable from Power BI option.":::
 
-- On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platorm** > **From Power BI**.
+- On the **Data** tab in Excel Desktop, select **Get Data** > **Power Platform** > **From Power BI**.
 
     :::image type="content" source="media/service-connect-excel-power-bi-datasets/get-data-from-power-bi.png" alt-text="Screenshot showing getting to Power BI data from the Data tab.":::
 

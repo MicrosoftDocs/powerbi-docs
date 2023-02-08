@@ -173,7 +173,7 @@ External users are users outside of the organization that have not been added as
 
 By default, anyone with the Admin, Member, or Contributor role in a workspace in your organization can feature content on Power BI Home. See [Feature content on colleagues' Power BI Home page](../collaborate-share/service-featured-content.md) for details.
 
-This setting enables you enable/disable the ability of users in your organization to promote their published content to the **Featured** section of the Power BI Home page.
+This setting enables you to enable or disable the ability of users in your organization to promote their published content to the **Featured** section of the Power BI Home page.
 
 ![Screenshot of featured content tenant setting.](media/service-admin-portal-export-sharing/powerbi-admin-portal-featured-content-setting.png)
 
