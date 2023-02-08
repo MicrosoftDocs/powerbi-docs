@@ -28,7 +28,7 @@ For example, you can use ArcGIS for Power BI to provide regional insight into sa
 
 ## User consent
 
-If this is your first time using ArcGIS for Power BI, here are some things you should know. ArcGIS Maps for Power BI is provided by [Esri](http://www.esri.com). Your use of ArcGIS Maps for Power BI is subject to Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=826322) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wanting to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
+Here are some things you should know if this is your first time using ArcGIS for Power BI. ArcGIS Maps for Power BI is provided by [Esri](http://www.esri.com). Your use of ArcGIS Maps for Power BI is subject to Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=826322) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wanting to use the ArcGIS Maps for Power BI visuals need to accept the consent dialog.
 
 ## Interact with an ArcGIS map
 
@@ -230,7 +230,7 @@ Power BI doesn't send personal information about you to Esri. This is a separate
 
 For technical or detailed questions about ArcGIS for Power BI, see [ArcGIS for Power BI get started](https://doc.arcgis.com/en/power-bi/get-started/about-maps-for-power-bi.htm) or reach out to [Esri Technical Support](https://www.esri.com/contact#c=us&t=5).
 
-The following table compares the standard features available to all Power BI users to those available to users signed in to a valid, licensed ArcGIS account.
+The following table compares the standard features available to all Power BI users to those features available to users signed in to a valid, licensed ArcGIS account.
 
 |Feature  |Standard, included with Power BI  |Requires ArcGIS account  |
 |---------|---------|---------|
