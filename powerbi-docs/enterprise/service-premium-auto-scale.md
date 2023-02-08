@@ -88,7 +88,7 @@ The following steps show you how to enable and associate Autoscale with the reso
 
     :::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-on-p2.png" alt-text="Screenshot of the capacity settings screen after Autoscale is set to on and configured.":::
 
-The following short video shows how quickly you can configure Autoscale for Power BI Premium Gen2:
+The following short video shows how quickly you can configure Autoscale for Power BI Premium:
 
 :::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Animation that shows how to configure Autoscale for Premium Generation 2.":::
 
@@ -107,10 +107,10 @@ To disable Autoscale, follow these steps:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [What is Power BI Premium?](service-premium-gen2-what-is.md)
+> [What is Power BI Premium?](service-premium-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium FAQ](service-premium-gen2-faq.yml)
+> [Power BI Premium FAQ](service-premium-faq.yml)
 
 > [!div class="nextstepaction"]
 > [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)

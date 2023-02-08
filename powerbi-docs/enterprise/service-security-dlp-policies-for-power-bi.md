@@ -19,7 +19,7 @@ To help organizations detect and protect their sensitive data, Power BI supports
 ## Considerations and limitations
 
 * DLP policies for Power BI are defined in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149).
-* DLP policies apply to workspaces. Only workspaces hosted in [Premium capacities](./service-premium-gen2-what-is.md) are supported.
+* DLP policies apply to workspaces. Only workspaces hosted in [Premium capacities](./service-premium-what-is.md) are supported.
 * DLP dataset evaluation workloads impact capacity. See [CPU metering for DLP policy evaluation](#cpu-metering-for-dlp-policy-evaluation) for more information.
 * DLP policy templates aren't yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
 * Power BI DLP policy rules currently support sensitivity labels and sensitive info types as conditions.
@@ -51,7 +51,7 @@ Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/c
 
 DLP policy evaluation uses CPU from the premium capacity associated with the workspace where the dataset being evaluated is located. CPU consumption of the evaluation is calculated as 30% of the CPU consumed by the action that triggered the evaluation. For example, if a refresh action costs 30 milliseconds of CPU, the DLP scan will cost another 9 milliseconds. This fixed 30% additional CPU consumption for DLP evaluation helps you predict the impact of DLP policies on your overall Capacity CPU utilization, and perform capacity planning when rolling out DLP policies in your organization.
 
-Use the Power BI Premium Capacity Metrics App to monitor the CPU usage of your DLP policies. For more information, see [Use the Premium metrics app](./service-premium-gen2-metrics-app.md).
+Use the Power BI Premium Capacity Metrics App to monitor the CPU usage of your DLP policies. For more information, see [Use the Premium metrics app](./service-premium-metrics-app.md).
 
 >[!NOTE]
 >Users with PPU licenses do not incur the DLP policy evaluation costs described above, as these costs are covered for them up front by their PPU license.

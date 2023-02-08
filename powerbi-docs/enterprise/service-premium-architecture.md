@@ -50,7 +50,7 @@ There are several positive outcomes from distributing the processing of content 
 ## Next steps
 
 >[!div class="nextstepaction"]
->[What is Power BI Premium?](service-premium-gen2-what-is.md)
+>[What is Power BI Premium?](service-premium-what-is.md)
 
 >[!div class="nextstepaction"]
 >[Premium capacity load evaluation](service-premium-concepts.md)
@@ -59,7 +59,7 @@ There are several positive outcomes from distributing the processing of content 
 >[Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 
 >[!div class="nextstepaction"]
->[Power BI Premium FAQ](service-premium-gen2-faq.yml)
+>[Power BI Premium FAQ](service-premium-faq.yml)
 
 >[!div class="nextstepaction"]
 >[Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)

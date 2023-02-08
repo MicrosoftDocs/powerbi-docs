@@ -45,7 +45,7 @@ We'll dig into these features later, but first let's review some Power BI concep
 The five major building blocks of Power BI are: *dashboards*, *reports*, *workbooks*, *datasets*, and *dataflows*. They're all organized into *workspaces*, and they're created on *capacities*.  It's important to understand capacities and workspaces before we dig into the five building blocks, so let's start there.
 
 ## Capacities
-Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _reserved_. A shared capacity is shared with other Microsoft customers, while a reserved capacity is reserved for a single customer. Reserved capacities require a [subscription](../enterprise/service-premium-gen2-what-is.md), and are fully described in the [Managing Premium capacities](../enterprise/service-premium-capacity-manage-gen2.md) article.
+Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _reserved_. A shared capacity is shared with other Microsoft customers, while a reserved capacity is reserved for a single customer. Reserved capacities require a [subscription](../enterprise/service-premium-what-is.md), and are fully described in the [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md) article.
 
 By default, workspaces are created on a shared capacity. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -99,7 +99,7 @@ Now, let's move on to the next topic—reports.
 ### Dig deeper
 * [Datasets in the Power BI service](../connect-data/service-datasets-understand.md)
 * [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md)
-* [What is Power BI Premium?](../enterprise/service-premium-gen2-what-is.md)
+* [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 * [Get data for Power BI](../connect-data/service-get-data.md)
 * [Sample datasets for Power BI](../create-reports/sample-datasets.md)
 
