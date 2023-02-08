@@ -26,7 +26,7 @@ The following table displays the toolbar icons for the **Map** pane.
 
 |Symbol|Description|When to use|  
 |------------|-----------------|-----------------|  
-|![Screenshot showing how to add a layer using wizard.](media/paginated-reports-maps/map-layer-wizard.gif)|Map Layer Wizard|To add a layer by using a wizard, click **New layer wizard**.|  
+|![Screenshot showing how to add a layer using wizard.](/media/paginated-reports-maps/map-layer-wizard.gif)|Map Layer Wizard|To add a layer by using a wizard, click **New layer wizard**.|  
 |![Screenshot showing how to manually add a layer.](media/paginated-reports-maps/map-add-layer.gif)|Add Layer|To manually add a layer, click **Add Layer**, and then click the type of map layer to add.|  
 |![Screenshot showing how to add a map layer that displays areas or shapes that are based sets of polygon coordinates.](media/paginated-reports-maps/map-polygon-layer.gif)|Polygon Layer|Add a map layer that displays areas or shapes that are based sets of polygon coordinates.|  
 |![Screenshot showing how to add a map layer that displays paths or routes that are based on sets of line coordinates.](media/paginated-reports-maps/map-line-layer.gif)|Line Layer|Add a map layer that displays paths or routes that are based on sets of line coordinates.|  
