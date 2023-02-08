@@ -12,6 +12,8 @@ ms.date: 01/07/2023
 
 # Embed a report with token-based identity (SSO)
 
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+
 The **token-based identity** allows you to specify the effective identity for an embed token using an [Azure Active Directory (Azure AD) access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) for an **Azure SQL Database**.
 
 Customers that keep their data in **Azure SQL Database** can manage users and their access to data in Azure SQL when integrating with **Power BI Embedded**.
