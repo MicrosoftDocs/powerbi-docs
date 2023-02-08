@@ -94,8 +94,6 @@ You can unshare only if you're the owner of the shared content.
    * On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me**.
    * In the Power BI service, click :::image type="icon" source="./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png" border="false"::: **Shared with me** in the left-hand navigation pane.
 
----
-
    For more information, see [Share Power BI reports and dashboards with coworkers and others](../../collaborate-share/service-share-dashboards.md).
 
 ## Next steps
