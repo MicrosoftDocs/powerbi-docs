@@ -30,7 +30,7 @@ The Power BI mobile app supports QR codes with URLs query parameters, so you can
    :::image type="content" source="media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png" alt-text="Screenshot of a report, highlighting File and Generate a QR code.":::
 1. A dialog box with the QR code appears.
 
-   :::image type="content" source="media/service-create-qr-code-for-report/powerbi_report_qrcode-2.png" alt-text="Screenshot of a dialog, showing the QR code is ready to download or save.":::
+   :::image type="content" source="media/service-create-qr-code-for-report/powerbi-report-qrcode-2.png" alt-text="Screenshot of a dialog, showing the QR code is ready to download or save.":::
 1. From here, you can scan the QR code or download and save it so you can:
 
    * Add it to an email or other document.
