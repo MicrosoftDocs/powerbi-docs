@@ -28,12 +28,12 @@ The following sections describe each of these features in detail.
 
 The enhanced compute engine in Power BI enables Power BI Premium subscribers to use their capacity to optimize the use of dataflows. Using the enhanced compute engine provides the following advantages:
 
-* Drastically reduces the refresh time required for long-running ETL steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*.
+* Drastically reduces the refresh time required for long-running ETL (extract, transform, load) steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*.
 * Performs DirectQuery queries over entities.
 
 > [!NOTE]
 >
-> * The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the PowerQuery Editor and set data types.
+> * The validation and refresh processes inform dataflows of the model schema. To set the schema of the tables yourself, use the Power Query Editor and set data types.
 > * This feature is available on all Power BI clusters except WABI-INDIA-CENTRAL-A-PRIMARY
 
 ### Enable the enhanced compute engine
@@ -53,7 +53,7 @@ To change the default setting and enable the enhanced compute engine, do the fol
 
 1. In your workspace, next to the dataflow you want to change the settings for, select **More options**.
 
-2. From the dataflow's *more options* menu, select **Settings**.
+2. From the dataflow's **More options** menu, select **Settings**.
 
     :::image type="content" source="media\dataflows-premium-features\more-options-menu.png" alt-text="Screenshot of a dataflows more options menu with the settings setting highlighted.":::
 
@@ -61,7 +61,7 @@ To change the default setting and enable the enhanced compute engine, do the fol
 
     :::image type="content" source="media\dataflows-premium-features\enhanced-compute-engine-settings.png" alt-text="Screenshot of a dataflow settings page with the enhanced compute engine settings setting highlighted.":::
 
-4. In the *Enhanced compute engine settings*, select **On** and then choose **Apply**.
+4. In the **Enhanced compute engine settings**, select **On** and then choose **Apply**.
 
     :::image type="content" source="media\dataflows-premium-features\apply-enhanced-compute-engine-settings.png" alt-text="Screenshot of the enhanced compute engine settings with the on selection turned on and the apply button highlighted.":::
 
@@ -92,12 +92,12 @@ To make the best use of the compute engine, split the ETL stage into two separat
 
 **Answer:** The enhanced compute engine and dataflows currently support the following data types. If your dataflow doesn't use one of the following data types, an error occurs during refresh:
 
-* Date/Time
-* Decimal Number
+* Date/time
+* Decimal number
 * Text
 * Whole number
-* Date/Time/Zone
-* True/False
+* Date/time/zone
+* True/false
 * Date
 * Time
 
@@ -115,16 +115,16 @@ Using DirectQuery with dataflows enables the following enhancements to your Powe
 
 Using DirectQuery with dataflows is available in Power BI Desktop.
 
-There are also prerequisites for using DirectQuery with dataflows:
+There are prerequisites for using DirectQuery with dataflows:
 
 * Your dataflow must reside within a Power BI Premium enabled workspace.
 * The **compute engine** must be turned on.
 
-To learn more about DirectQuery with dataflows, see [using DirectQuery with dataflows](dataflows-directquery.md).
+To learn more about DirectQuery with dataflows, see [Using DirectQuery with dataflows](dataflows-directquery.md).
 
 ### Enable DirectQuery for dataflows
 
-To ensure your dataflow is available for DirectQuery access, the enhanced compute engine must be in its optimized state. To enable DirectQuery for dataflows, set the new **Enhanced compute engine settings** option to **On**. The following image shows the setting properly selected.
+To ensure your dataflow is available for DirectQuery access, the enhanced compute engine must be in its optimized state. To enable DirectQuery for dataflows, set the new **Enhanced compute engine settings** option to **On**.
 
 :::image type="content" source="media/dataflows-premium-features/compute-engine-granular-control.png" alt-text="Screenshot of the enhanced compute engine settings with the on option selected.":::
 
@@ -156,7 +156,7 @@ As a best practice, when doing computations on data joined by on-premises and cl
 
 ## Linked entities
 
-You can reference existing dataflows when using with a Power BI Premium subscription, which lets you either perform calculation on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows.
+You can reference existing dataflows by using linked entities with a Power BI Premium subscription, which lets you either perform calculations on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows.
 
 ## Incremental refresh
 
@@ -164,7 +164,7 @@ Dataflows can be set to refresh incrementally to avoid having to pull all the da
 
 :::image type="content" source="media/dataflows-premium-features/incremental-refresh.png" alt-text="Screenshot of the table in a Power BI dataflow with the Incremental Refresh icon highlighted.":::
 
-Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see[incremental refresh](/power-query/dataflows/incremental-refresh).
+Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see[Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh).
 
 ### Considerations for when not to set incremental refresh
 
