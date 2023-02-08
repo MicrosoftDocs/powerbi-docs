@@ -1,22 +1,22 @@
 ---
 title: How to pin a tile to a dashboard from Q&A
-description: Learn how to pin a tile to a Power BI dashboard from the Q&A question box.
+description: Learn how to pin a tile to a Power BI dashboard from the Q&A question box by using natural language.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/07/2023
+ms.date: 02/08/2023
 LocalizationGroup: Dashboards
 ---
 # Pin a tile to a dashboard from Q&A
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Q&A is a Power BI tool for exploring your data using natural language. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
+Q&A is a Power BI tool for exploring your data by using natural language. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md) in the Power BI service (app.powerbi.com), ask a question using natural language to create a visualization, and pin that visualization to the dashboard. Dashboards aren't available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../consumer/end-user-q-and-a.md).
+In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md) in the [Power BI service](app.powerbi.com), ask a question using natural language to create a visualization, and pin that visualization to the dashboard. Dashboards aren't available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../consumer/end-user-q-and-a.md).
 
 To follow along, open the [Retail Analysis sample dashboard](sample-retail-analysis.md).
 
@@ -28,36 +28,36 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
 3. For example, as you type "year over year revenue", the question box gives you suggestions.
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png" alt-text="type a question":::
 
-4. To add the chart to your dashboard as a tile, select the pin ![Pin icon](../media/pin-icon.png) on the top-right side of the canvas. If the dashboard has been shared with you, you won't be able to pin any visualizations.
+4. To add the chart to your dashboard as a tile, select **Pin visual**. If the dashboard has been shared with you, you aren't able to pin any visualizations.
 
 5. Pin the tile to an existing dashboard or to a new dashboard.
 
-   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png" alt-text="Pin to dashboard dialog":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard-2.png" alt-text="Pin to dashboard dialog":::
 
-   * Existing dashboard: select the name of the dashboard from the dropdown. Your choices will be limited to only those dashboards within the current workspace.
-   * New dashboard: type the name of the new dashboard and it will be added to your current workspace.
+   * Existing dashboard: select the name of the dashboard from the dropdown. Your choices are limited to only those dashboards within the current workspace.
+   * New dashboard: type the name of the new dashboard, and it will be added to your current workspace.
 
 6. Select **Pin**.
 
-   A success message (near the top-right corner) lets you know the visualization was added, as a tile, to your dashboard.
+   A success message lets you know the visualization was added, as a tile, to your dashboard.
 
-   :::image type="content" source="../media/power-bi-pin.png" alt-text="Pinned to dashboard":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-success.png" alt-text="breadcrumbs":::
 7. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard.
 
-   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png" alt-text="dashboard with tiles":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned-2.png" alt-text="dashboard with tiles":::
 
 ## Considerations and troubleshooting
 
 * When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard. The "current dashboard" is the dashboard listed in the top nav pane. For example, this question is being asked in the **Retail Analysis Sample** dashboard.
 
-  :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png" alt-text="breadcrumbs":::
+  :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar-2.png" alt-text="breadcrumbs":::
 * **How does Q&A know which datasets to use**? Q&A has access to all datasets that have at least one visualization pinned to that dashboard.
 
 * **Don't see the question box**? Check with your Power BI administrator. The administrator has the ability to disable Q&A.
 
 ## Next steps
 
-[Rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md)
-[Display your dashboard tile in Focus mode](../consumer/end-user-focus.md)
-[Overview of Q&A in Power BI](../consumer/end-user-q-and-a.md)
+[Edit or remove a dashboard tile](service-dashboard-edit-tile.md)
+[Display content in more detail: focus mode and full screen mode](../consumer/end-user-focus.md)
+[Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
