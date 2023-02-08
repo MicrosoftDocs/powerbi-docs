@@ -58,9 +58,6 @@ When you import data into Excel, follow these tips:
   
   1. Delete the original table or tables created during the initial import.
   
-* **From the Excel Data tab**: 
-
-  1. Don’t select **Table** in the **Import Data** box.
 
 ## Workbook size optimizer
 If your workbook contains a data model, you can run the workbook size optimizer to reduce the size of your workbook. For more information, see [Download Workbook Size Optimizer](https://www.microsoft.com/download/details.aspx?id=38793).
