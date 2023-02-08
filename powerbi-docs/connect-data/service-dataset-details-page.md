@@ -15,7 +15,8 @@ The dataset details page helps you explore, monitor, and leverage datasets. When
 
 [ ![Screenshot of dataset details page.](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png)](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
-The dataset details page
+The dataset details page:
+
 * Shows you metadata about the dataset, including description, endorsement, and sensitivity.
 * Provides actions that you can perform on the dataset, such as share, refresh, create new, Analyze in Excel, and more.
 * Lists the reports and scorecards that are built on top of the dataset.
@@ -47,7 +48,8 @@ The dataset details page enables you to perform a number of actions. The actions
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-dataset-details.png" alt-text="Screenshot of dataset details section on data details page.":::
 
-The dataset details section shows
+The dataset details section shows:
+
 * The name of the workspace where the item is located.
 * The exact time of the last refresh.
 * Endorsement status and certifier (if certified).
@@ -108,7 +110,7 @@ If you don't see the side panel, select **Show tables** on the action bar.
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-show-tables-option.png" alt-text="Screenshot of Show tables option on Dataset details page.":::
 
-An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. 
+An entirely filled parent checkbox on the dataset's table indicates that all its sub-tables and columns have been selected. A partially filled parent checkbox means that only a subset of them has been selected.
 
 :::image type="content" source="media/service-dataset-details-page/dataset-details-page-selection-3.png" alt-text="Screenshot showing all columns selected."::: 
 
