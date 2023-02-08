@@ -60,15 +60,15 @@ If the only difference between the two items is settings changes, like the name 
 
 When you select the **Change review** button, the content of that item is shown as it currently looks in the source stage and in the target stage.
 
+### Change view window
+
 On top of the screen, you'll see:
 
-1. The workspace name followed by the full pathname of the file as it appears in the source stage.
+1. The workspace name followed by the full pathname of the file as it appears in the source (*tp be deployed*) stage.
 1. The number of total differences (in black) between the files. This number is broken down to show the total number if additions (green) and deletions (red) made to the file.
 1. Up and down arrows that take you to the previous or next difference in the file.
 1. A navigation bar on the right side with red or green bars highlighting where the changes are in the file.
 1. Buttons that toggle between a side by side view and an inline view of the changes.
-
-The file rows are numbered and rows that were changed are highlighted in red (for deletions) or green (for additions). The entire row is highlighted, and the specific characters that were added or deleted are highlighted in a darker color.
 
 ### [Side by side view](#tab/browser)
 
@@ -80,7 +80,16 @@ The file rows are numbered and rows that were changed are highlighted in red (fo
 
 ---
 
-The two versions of the content shown are modified to make the comparison easier:
+### Change view file format
+
+Notice that when the files are displayed, whether inline or side by side, the differences are highlighted as follows:
+
+- The file rows are numbered and rows that were changed are highlighted in red or green.
+- The lines with content that will be deleted or overwritten from the *to be modified* stage are highlighted in red.
+- The lines with content that will be added from the *to be deployed* stage are highlighted in green. 
+- The specific characters that were added or deleted are highlighted in a darker shade.
+
+The two versions of the content shown are modified in the following ways to make the comparison easier:
 
 - Datasource and parameter rules are applied to the source item so that the datasource you see is the one that will be deployed.
 - Some fields that don't indicate differences (for example, timestamps and role membership) are removed from both items.
