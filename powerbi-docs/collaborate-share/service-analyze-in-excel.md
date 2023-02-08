@@ -7,14 +7,14 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/06/2023
+ms.date: 02/08/2023
 LocalizationGroup: Share your work
 ---
 # Create Excel workbooks with refreshable Power BI data
 
 When you view reports in the Power BI service (`https://app.powerbi.com`), you might want to further enrich the report data with additional assumptions, perform what-if analysis, or validate the numbers in a specific Power BI visual or an entire Power BI report.
 
-In this article, you learn how to create Excel workbooks containing connected Power BI data that you can refresh directly inside the workbook. THat way, you can focus on your analysis in Excel and be confident that you are working with up-to-date data.
+In this article, you learn how to create Excel workbooks containing connected Power BI data that you can refresh directly inside the workbook. That way, you can focus on your analysis in Excel and be confident that you are working with up-to-date data.
 
 ## Prerequisites
 
@@ -111,7 +111,7 @@ While viewing a Power BI visual, you may want to further explore the visual data
 - Analyze in Excel and Export with live connection aren't supported in Power BI Report Server or Power BI PaaS Embedded.
 - Analyze in Excel might not work as expected if field parameters are used in the underlying Power BI dataset.
 - Analyze in Excel and Export with live connection aren't available for Power BI datasets with a live connection to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS).
-- For Mac users, Excel workbooks created with export with live connection can only be used in Excel for the web.
+- Mac users can only use Excel for the web to explore Excel workbooks containing Power BI datasets.
 - The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
 
 ## Next steps
