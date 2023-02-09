@@ -121,10 +121,10 @@ When creating a subscription, you can add other email addresses in the same doma
 
 |Group type      |Supported in email subscriptions  |
 |---------|---------|
-|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide)     |      Yes   |
+|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups)     |      Yes   |
 |[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
 |[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
-|[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)     |    No     |
+|[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |
 |Mail-enabled security groups     |     Yes    |
 
 
@@ -301,11 +301,11 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 * The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
-    - R visuals
-    - PowerApps visuals
-    - Python visuals
-    - Power Automate visuals
-    - The Paginated report visuals
+    - [R visuals](../admin/visuals/service-r-visuals.md)
+    - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
+    - [Python visuals](../connect-data/desktop-python-visuals.md)
+    - [Power Automate visuals](../create-reports/power-bi-automate-visual) 
+    - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
 
 ## Next steps

@@ -99,14 +99,14 @@ There are a few considerations and limitations to keep in mind when you work wit
 ### Visuals that aren't supported
 The following aren't supported for **Export to PowerPoint**.  Either the **PowerPoint** export option will be greyed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a grey box with an error message.
 
-    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
-    - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
-    - R visuals
-    - PowerApps visuals
-    - Python visuals
-    - Power Automate visuals
-    - The Paginated report visual
-    - Visio visuals
+- Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+- [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
+- [R visuals](../admin/visuals/service-r-visuals.md)
+- [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
+- [Python visuals](../connect-data/desktop-python-visuals.md)
+- [Power Automate visuals](../create-reports/power-bi-automate-visual)
+- [The Paginated report visual](../visuals/paginated-report-visual.md)
+- Visio visuals
 * Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md) don't have the option to export to PowerPoint.
 
 
