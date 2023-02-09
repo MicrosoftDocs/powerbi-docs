@@ -3,7 +3,7 @@ title: Use default system credentials for web proxy
 description: Learn how system or network administrators can allow the use of default system credentials for web proxy authentication in Power BI Report Builder.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 01/27/2023
+ms.date: 02/08/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
@@ -21,7 +21,7 @@ The registry entry can be placed in the following location using the Windows Reg
 
 `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Report Builder]`
 
-After you create the registry entry, a reboot might be necessary. From then on, when Power BI Report Builder makes web requests, it uses the proxy settings that are defined for your web browser.
+After you create the registry entry, you might need to reboot. From then on, when Power BI Report Builder makes web requests, it uses the proxy settings that are defined for your web browser.
 
 As with any change to proxy or credential settings, there are security implications to creating this registry entry. Administrators must make sure they have configured the proxy settings correctly before they allow this feature.
 
