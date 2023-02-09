@@ -275,12 +275,18 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - Workspace admins can't manage subscriptions created by another user in an app (as opposed to a workspace). Subscriptions created within apps are saved to a user's **My workspace** and admins don't have access to users' **My workspaces**. 
 
 **Unsupported features**    
-Email subscriptions don't support:
- 
-* R-powered Power BI visuals  
-* most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+
 * Dataset refresh operations using an XMLA endpoint.
 
+* The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
+    - Uncertified Power BI custom visuals
+    - ESRI ArcGIS visuals
+    - R visuals
+    - PowerApps visuals
+    - Python visuals
+    - Power Automate visuals
+    - The Paginated report visuals
+    - Visio visuals
 
 ## Next steps
 
