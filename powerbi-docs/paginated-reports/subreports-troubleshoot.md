@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 01/26/2023
+ms.date: 02/08/2023
 ---
 
 # Troubleshoot subreports in Power BI paginated reports
@@ -77,7 +77,7 @@ Power BI allows users to have multiple reports with the same name in the same wo
 
 ### Troubleshooting
 
-Same as the general troubleshooting steps for reports with data access issues.
+Same as the general troubleshooting steps for reports with data access issues. See [Troubleshoot data retrieval issues](/sql/reporting-services/troubleshooting/troubleshoot-data-retrieval-issues-with-reporting-services-reports) in the Reporting Services documentation.
 
 ## Rendering fails: Unspecified parameters
 
@@ -106,6 +106,8 @@ Same as the general troubleshooting steps for reports with data access issues.
 
 - Reduce nesting.
 - Redesign the report structure.
+
+**For non-authors:** Contact the author.
 
 ## Other errors
 
