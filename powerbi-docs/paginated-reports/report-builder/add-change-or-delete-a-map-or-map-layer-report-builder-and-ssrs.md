@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
   
  The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, click in the map on the report design surface. The following figure displays the parts of the pane:  
   
- ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](media/paginated-reports-maps/mmap-layer-zone.gif)  
+ ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/mmap-layer-zone.gif)  
   
  Map layers are drawn from bottom to top in the order that they appear in the Map pane. In the previous figure, the tile layer is drawn first and the polygon layer is drawn last. Layers that are drawn later might hide map elements on layers that are drawn earlier. You can change the order of layers by using the arrow keys on the Map pane toolbar. To show or hide layers, toggle the visibility icon. You can change the transparency of a layer on the **Visibility** page of the **Layer Data** properties dialog box.  
   
@@ -26,12 +26,12 @@ The following table displays the toolbar icons for the **Map** pane.
 
 |Symbol|Description|When to use|  
 |------------|-----------------|-----------------|  
-|![Screenshot showing how to add a layer using wizard.](media/paginated-reports-maps/map-layer-wizard.gif)|Map Layer Wizard|To add a layer by using a wizard, click **New layer wizard**.|  
-|![Screenshot showing how to manually add a layer.](media/paginated-reports-maps/map-add-layer.gif)|Add Layer|To manually add a layer, click **Add Layer**, and then click the type of map layer to add.|  
-|![Screenshot showing how to add a map layer that displays areas or shapes that are based sets of polygon coordinates.](media/paginated-reports-maps/map-polygon-layer.gif)|Polygon Layer|Add a map layer that displays areas or shapes that are based sets of polygon coordinates.|  
-|![Screenshot showing how to add a map layer that displays paths or routes that are based on sets of line coordinates.](media/paginated-reports-maps/map-line-layer.gif)|Line Layer|Add a map layer that displays paths or routes that are based on sets of line coordinates.|  
-|![Screenshot showing how to add a map layer that displays locations that are based on sets of point coordinates.](media/paginated-reports-maps/map-point-layer.gif)|Point Layer|Add a map layer that displays locations that are based on sets of point coordinates.|  
-|![Screenshot showing how to add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.](media/paginated-reports-maps/map-tile-layer.gif)|Tile Layer|Add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.|  
+|![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)|Map Layer Wizard|To add a layer by using a wizard, click **New layer wizard**.|  
+|![Screenshot showing how to manually add a layer.](../media/paginated-reports-maps/map-add-layer.gif)|Add Layer|To manually add a layer, click **Add Layer**, and then click the type of map layer to add.|  
+|![Screenshot showing how to add a map layer that displays areas or shapes that are based sets of polygon coordinates.](../media/paginated-reports-maps/map-polygon-layer.gif)|Polygon Layer|Add a map layer that displays areas or shapes that are based sets of polygon coordinates.|  
+|![Screenshot showing how to add a map layer that displays paths or routes that are based on sets of line coordinates.](../media/paginated-reports-maps/map-line-layer.gif)|Line Layer|Add a map layer that displays paths or routes that are based on sets of line coordinates.|  
+|![Screenshot showing how to add a map layer that displays locations that are based on sets of point coordinates.](../media/paginated-reports-maps/map-point-layer.gif)|Point Layer|Add a map layer that displays locations that are based on sets of point coordinates.|  
+|![Screenshot showing how to add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.](../media/paginated-reports-maps/map-tile-layer.gif)|Tile Layer|Add a map layer that displays Bing Map tiles that correspond to the current map view area that is defined by the viewport.|  
   
  At the bottom of the Map pane is the Map view area. To change the center or zoom options for the map, use the arrow keys to adjust the view center and the slider to adjust the zoom level.  
   
@@ -47,7 +47,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="ChangeLayer"></a> To change options for a layer by using the map layer wizard  
   
--   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, click the layer wizard button (![Screenshot showing how to add a layer using wizard.](media/paginated-reports-maps/map-layer-wizard.gif)).  
+-   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, click the layer wizard button (![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)).  
   
      For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
   
