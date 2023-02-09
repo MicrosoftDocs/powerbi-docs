@@ -47,7 +47,10 @@ If you don't see it, make sure you have [enabled developer mode in the Power BI 
 
 ## Contacting the support team
 
-Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft.com) with any questions, comments, or issues you have.
+Feel free to contact the Power BI visuals support team <pbicvsupport@microsoft.com> with any questions, comments, or issues you have.  
+This support channel is for custom visuals developers in the process of developing their own visuals.
+
+For customer experience issues when using custom Power BI visuals, submit a case request via the [Power Platform admin center portal](https://admin.powerplatform.microsoft.com/newsupportticket/powerbipro).
 
 ## Next steps
 
