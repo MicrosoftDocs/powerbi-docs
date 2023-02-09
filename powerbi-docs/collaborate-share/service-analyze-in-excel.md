@@ -96,7 +96,7 @@ While viewing a Power BI visual, you may want to further explore the visual data
 
     The data from the Power BI visual is now visible as an Excel table that can be refreshed against Power BI.
 
-    :::image type="content" source="media/service-analyze-in-excel/connected-export-excel-workbook.png" alt-text="Screenshot showing connected data in Excel." lightbox="media/service-analyze-in-excel/connected-export-excel-workbook.png:::
+    :::image type="content" source="media/service-analyze-in-excel/connected-export-excel-workbook.png" alt-text="Screenshot showing connected data in Excel." lightbox="media/service-analyze-in-excel/connected-export-excel-workbook.png":::
 
     > [!NOTE]
     > The **ExportHeaders** worksheet in the Excel workbook contains details about the filters applied to the Power BI visual that the data was exported from.
