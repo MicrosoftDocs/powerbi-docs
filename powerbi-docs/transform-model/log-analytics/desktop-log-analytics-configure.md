@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/21/2022
+ms.date: 02/07/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configuring Azure Log Analytics for Power BI (Preview)
@@ -125,16 +125,6 @@ Once enabled, Azure Log Analytics will log the following **event categories**. F
 * Session Initialize
 * VertiPaqSEQuery
 
-> [!Note]
-> The following events are currently not available in the Preview:
->
-> - ProgressReportBegin
-> - ProgressReportCurrent
-> - ProgressReportError
-> - VertipaqSEQueryBegin
-> - VertipaqSEQueryEnd
-
-
 The following table describes the **schema**.
 
 | Property | Existing Azure Analysis Services property | Description |
@@ -158,11 +148,16 @@ The following table describes the **schema**.
 | **OperationName** | EventClass_s | The operation associated with the log record. |
 | **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
 | **ProgressCounter** | ProgressTotal_s | Progress counter. |
+| **ProgressReportBegin** | | Collects all progress report begin events since the trace was started.  |
+| **ProgressReportCurrent** | | Collects all progress report current events since the trace was started.    |
+| **ProgressReportError** | | Collects all progress report error events since the trace was started.  |
 | **Status** | | Status of the operation.  |
 | **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
 | **TenantId** | | Unique identifier of Microsoft's Power BI tenant. This does not refer to the customer tenant. |
 | **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
 | **User** | User_s | The user on whose behalf the operation is running. Used when an end-user identity must be impersonated on the server. |
+| **VertipaqSEQueryBegin** |  | VertiPaq SE query.   |
+| **VertipaqSEQueryEnd** |  | VertiPaq SE query.   |
 | **WorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
 | **WorkspaceName** | ServerName_s | Name of the workspace containing the artifact. |
 | **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
@@ -212,5 +207,5 @@ The following articles can help you learn more about Power BI, and about its int
 
 * [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
+* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * [Workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)

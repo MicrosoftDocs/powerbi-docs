@@ -24,7 +24,7 @@ After you've developed your application, you need to back your workspace with a 
 
 By creating a capacity, you can take advantage of having a resource for your customers. There are two types of capacities you can choose from:
 
-* **Power BI Premium** - A tenant-level Microsoft 365 subscription available in two SKU families, *EM* and *P*. When you embed Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md).
+* **Power BI Premium** - A tenant-level Microsoft 365 subscription available in two SKU families, *EM* and *P*. When you embed Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-what-is.md).
 
 * **Azure Power BI Embedded** - A subscription that uses *A* SKUs. You can purchase a capacity from the [Azure portal](https://portal.azure.com). For details about how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 

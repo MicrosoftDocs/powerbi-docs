@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 01/31/2023
+ms.date: 02/08/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -298,10 +298,8 @@ There are a few considerations to keep in mind while working with private endpoi
 * If internet access is disabled, and if the dataset or dataflow connects to a Power BI dataset or dataflow as a data source, the connection fails.
 * Each private endpoint can be connected to one tenant only. 
 * Datamarts don't support private links using SSMS. Even with a configured private link, connections to datamarts using SSMS are only supported through public internet access.
-* If your organization uses **Azure Private Link** in Power BI, modern usage metrics reports contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents Power BI from capturing Report Page Views and performance data over private links. If your organization uses **Azure Private Link** and **Block Public Internet Access** in Power BI, the refresh for the dataset fails and the usage metrics report doesn't show any data.
-* The Power BI Premium Capacity Metrics app doesn’t work when private links are enabled.
-* *Publish to Web* is not supported when you enable **Azure Private Link** in Power BI.
-* Exporting a report as a PDF or PowerPoint isn't supported when you enable **Azure Private Link** in Power BI.
+* If your organization uses **Azure Private Link** in Power BI, modern usage metrics reports contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents Power BI from capturing Report Page Views and performance data over private Links. If your organization uses **Azure Private Link** and **Block Public Internet Access** in Power BI, the refresh for the dataset fails and the usage metrics report doesn't show any data.
+* *Publish to Web* isn't supported when you enable **Azure Private Link** in Power BI.
 * Email subscriptions aren't supported when you enable **Block Public Internet Access** in Power BI.  
 * [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) doesn't currently support private links. This means that in [Power BI Desktop](service-security-sensitivity-label-overview.md#sensitivity-labels-in-power-bi-desktop) running in an isolated network, the *Sensitivity* button is grayed out, label information doesn't appear, and decryption of *.pbix* files fails.
 
