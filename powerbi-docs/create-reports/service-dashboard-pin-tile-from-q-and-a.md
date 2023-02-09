@@ -25,10 +25,10 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
 1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.
 2. In the question box at the top of your dashboard, start typing what you want to know about your data.
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the Q&A question box.":::
-3. For example, as you type "year over year revenue", the question box gives you suggestions.
+3. For example, as you type "year over year revenue", the question box gives you suggestions. Select a suggestion or press Enter.
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png" alt-text="Screenshot of a question in the question box.":::
 
-4. To add the chart to your dashboard as a tile, select **Pin visual**. If the dashboard has been shared with you, you aren't able to pin any visualizations.
+4. To add the chart to your dashboard as a tile, select **Pin visual** in the upper right corner. If the dashboard has been shared with you, you aren't able to pin any visualizations.
 
 5. Pin the tile to an existing dashboard or to a new dashboard.
 
@@ -57,7 +57,8 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
 
 ## Next steps
 
-[Edit or remove a dashboard tile](service-dashboard-edit-tile.md)
-[Display content in more detail: focus mode and full screen mode](../consumer/end-user-focus.md)
-[Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+* [Edit or remove a dashboard tile](service-dashboard-edit-tile.md)
+* [Display content in more detail: focus mode and full screen mode](../consumer/end-user-focus.md)
+* [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
