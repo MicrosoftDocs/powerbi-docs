@@ -87,13 +87,13 @@ When the item's content is displayed side by side, the code area is split in two
 - On the **right** is the item's content in the *source* stage of the deployment. This is the stage being deployed. Its content will be applied.
 - The lines on each side appear in the same order, so each line is shown against its equivalent in the compared stage.
 
-The inline comparison view shows each line in the *target* (to be modified) stage below to its equivalent in the *source* (To be deployed) stage.
+The inline comparison view shows each line in the *target* (to be modified) stage underneath its equivalent in the *source* (To be deployed) stage.
 
 When the item's content is displayed for comparison, whether inline or side by side, the differences are highlighted as follows:
 
-- The file content lines are numbered and those that were changed are highlighted in red or green.
-- Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They are highlighted in **red**.
-- Changes shown in the *To be deployed* stage are the new values that will be applied during the next deployment. They are highlighted in **green**.
+- The file content lines are numbered and those lines that were changed are highlighted in green or red with a + or - sign next to the line number.
+- Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They're highlighted in **red**.
+- Changes shown in the *To be deployed* stage are the new values that will be applied during the next deployment. They're highlighted in **green**.
 - In the modified lines, the specific characters that were added or deleted are highlighted in a darker shade.
 
 ### File modifications before comparison
@@ -109,7 +109,7 @@ Close the window when you finish examining the differences and deploy to the nex
 
 ## Considerations and limitations
 
-Granular compare only shows changes to the following:
+Granular compare is only supported for the following changes:
 
 - Datasets and dataflows.
 - Items with changes to the schema content. Settings changes, like file names or sensitivity labels, aren't supported.
