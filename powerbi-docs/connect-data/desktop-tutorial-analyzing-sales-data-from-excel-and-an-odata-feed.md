@@ -44,20 +44,20 @@ First, import product data from the *Products.xlsx* Excel workbook into Power BI
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png" alt-text="Screenshot that shows the Navigator screen with the Products table highlighted.":::
 
-A table preview opens in the Power Query Editor, where you can apply transformations to clean up the data.
+   A table preview opens in the Power Query Editor, where you can apply transformations to clean up the data.
 
-:::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png" alt-text="Screenshot that shows the Power Query Editor.":::
+   :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png" alt-text="Screenshot that shows the Power Query Editor.":::
 
 >[!NOTE]
 >You can also open the Power Query Editor by selecting **Transform data** from the **Home** ribbon in Power BI Desktop, or by right-clicking or choosing **More options** next to any query in the **Report** view, and selecting **Transform data**.
 
-## Clean up the products columns
+## Clean up the columns
 
 Your combined report uses the Excel workbook's  **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. You can remove the other columns.
 
 1. In Power Query Editor, select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. You can use Ctrl to select more than one column, or Shift to select columns next to each other.
 
-1. Right-click any of the selected headers. Select **Remove Other Columns** from the drop-down menu.
+1. Right-click any of the selected headers. Select **Remove Other Columns** from the dropdown menu.
    You can also select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab.
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_removeothercolumns.png" alt-text="Screenshot that highlights the Remove Other Columns option.":::
@@ -89,10 +89,9 @@ You can use table references to build queries when connecting to data sources wi
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/order-details-column.png" alt-text="Screenshot that highlights the Order_Details column.":::
 
-
 1. Select the **Expand** icon (![Screenshot of the Expand icon.](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)) in the **Order_Details** column header.
 
-1. In the drop-down menu:
+1. In the dropdown menu:
 
    1. Select **(Select All Columns)** to clear all columns.
 
@@ -102,10 +101,7 @@ You can use table references to build queries when connecting to data sources wi
 
 After you expand the **Order_Details** table, three new nested table columns replace the **Order_Details** column. There are new rows in the table for each order's added data.
 
-![Expanded columns](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expanded-columns.png)
-
 :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expanded-columns.png" alt-text="Screenshot that highlights the expanded columns.":::
-
 
 ## Create a custom calculated column
 
@@ -129,7 +125,7 @@ Power Query Editor lets you create calculations and custom fields to enrich your
 
 When Power Query Editor connects to data, it makes a best guess as to each field's data type for display purposes. A header icon indicates each field's assigned data type. You can also look under **Data Type** in the **Home** ribbon tab's **Transform** group.
 
-Your new **LineTotal** column has an **Any** data type, but it has currency values. To assign a data type, right-click the **LineTotal** column header, select **Change Type** from the drop-down menu, and then select **Fixed decimal number**.
+Your new **LineTotal** column has an **Any** data type, but it has currency values. To assign a data type, right-click the **LineTotal** column header, select **Change Type** from the dropdown menu, and then select **Fixed decimal number**.
 
 :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/change-data-type-to-fixed-decimal.png" alt-text="Screenshot that highlights the Fixed decimal number option.":::
 
@@ -154,7 +150,7 @@ Select these columns and use **Remove Other Columns** as you did with the Excel 
 
 You can rename the columns prefixed with "**Order_Details.**" to make them easier to read:
 
-1. Double-click or tap and hold each column header, or right-click the column header, and select **Rename** from the drop-down menu.
+1. Double-click or tap and hold each column header, or right-click the column header, and select **Rename** from the dropdown menu.
 
 1. Delete the **Order_Details.** prefix from each name.
 
@@ -246,7 +242,7 @@ Next, create a chart showing order dollar amounts (**LineTotal**) over time (**O
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/linetotals-by-orderdate-line-chart.png" alt-text="Screenshot that shows the LineTotals by OrderDate line chart."::: 
 
    >[!TIP]
-   >If you only see **Years** on the chart and only three data points, select the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**. Alternatively, you may need select **Options and settings > Options** from the **File** menu, and under **Data Load**, deselect the *Auto date/time for new files* option.
+   >If you only see **Years** on the chart and only three data points, select the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**. Alternatively, you may need select **Options and settings > Options** from the **File** menu, and under **Data Load**, clear the *Auto date/time for new files* option.
 
 Finally, create a map visualization showing order amounts from each country or region.
 
@@ -269,7 +265,7 @@ On the map visualization, select the circle centered in **Canada**. The other tw
 Select a **Quantity by ProductName** chart product to see the map and the date chart filter to reflect that product's data. Select a **LineTotal by OrderDate** chart date to see the map and the product chart filter to show that date's data.
 
 >[!TIP]
->To deselect a selection, select it again, or select one of the other visualizations.
+>To clear a selection, select it again, or select one of the other visualizations.
 
 ## Complete the sales analysis report
 
