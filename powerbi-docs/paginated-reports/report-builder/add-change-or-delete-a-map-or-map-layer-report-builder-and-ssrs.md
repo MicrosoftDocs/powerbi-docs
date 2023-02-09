@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
   
  The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, click in the map on the report design surface. The following figure displays the parts of the pane:  
   
- ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/mmap-layer-zone.gif)  
+ ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.gif)  
   
  Map layers are drawn from bottom to top in the order that they appear in the Map pane. In the previous figure, the tile layer is drawn first and the polygon layer is drawn last. Layers that are drawn later might hide map elements on layers that are drawn earlier. You can change the order of layers by using the arrow keys on the Map pane toolbar. To show or hide layers, toggle the visibility icon. You can change the transparency of a layer on the **Visibility** page of the **Layer Data** properties dialog box.  
   
@@ -39,19 +39,19 @@ The following table displays the toolbar icons for the **Map** pane.
   
 
   
-##  <a name="AddLayer"></a> To add a layer from the map layer wizard  
+##  <a name="AddLayer"></a> Add a layer from the map layer wizard  
   
 -   From the Ribbon, on the **Insert** menu, click **Map**, and then click **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
   
      For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
   
-##  <a name="ChangeLayer"></a> To change options for a layer by using the map layer wizard  
+##  <a name="ChangeLayer"></a> Change options for a layer by using the map layer wizard  
   
 -   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, click the layer wizard button (![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)).  
   
      For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
   
-##  <a name="AddVectorLayer"></a> To add a point, line, or polygon layer from the Map pane toolbar  
+##  <a name="AddVectorLayer"></a> Add a point, line, or polygon layer from the Map pane toolbar  
   
 1.  Click the map until the Map pane appears.  
   
@@ -80,7 +80,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 5.  Select **OK**.
   
-##  <a name="FilterAnalyticalData"></a> To filter analytical data for the layer  
+##  <a name="FilterAnalyticalData"></a> Filter analytical data for the layer  
   
 1.  Click the map until the Map pane appears.  
   
@@ -90,7 +90,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 4.  Define a filter equation to limit the analytical data that is used in the map display. For more information, see [Filter Equation Examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
-##  <a name="PointProperties"></a> To control point properties for a point layer or for polygon center points  
+##  <a name="PointProperties"></a> Control point properties for a point layer or for polygon center points  
   
 1.  Select **General** on the **Map Point Properties** dialog box to change label, tooltip, and marker type options for the following map elements:  
   
@@ -98,7 +98,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
     -   The center point for all dynamic or embedded polygons on a polygon layer. Color rules, size rules, and marker type rules for center points override these options. To override options for a specific center point, use the [Map Embedded Point Properties Dialog Box, Marker](/sql/reporting-services/report-design/maps-report-builder-and-ssrs) page.  
   
-##  <a name="Embedded"></a> To specify embedded data as a source of spatial data  
+##  <a name="Embedded"></a> Specify embedded data as a source of spatial data  
   
 1.  Click the map until the Map pane appears.  
   
@@ -112,7 +112,7 @@ The following table displays the toolbar icons for the **Map** pane.
      
 6.  Select **OK**.
 
-##  <a name="DatasetField"></a> To specify a report dataset field as a source of spatial data  
+##  <a name="DatasetField"></a> Specify a report dataset field as a source of spatial data  
   
 1.  Click the map until the Map pane appears.  
   
@@ -126,7 +126,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 6.  Select **OK**.
   
-##  <a name="TileLayer"></a> To add a tile layer  
+##  <a name="TileLayer"></a> Add a tile layer  
   
 1.  Click the map until the Map pane appears.  
   
@@ -142,7 +142,7 @@ The following table displays the toolbar icons for the **Map** pane.
     > [!NOTE]  
     >  A tile layer can also be added when you add a polygon, line, or point layer in the Map or Map Layer wizard. On the **Choose spatial data and map view options** page, select the option **Add a Bing Maps background for this map view**.  
   
-##  <a name="DrawingOrder"></a> To change the drawing order of a layer  
+##  <a name="DrawingOrder"></a> Change the drawing order of a layer  
   
 1.  Click the map until the Map pane appears.  
   
@@ -150,7 +150,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 3.  On the Map pane toolbar, click the up or down arrow to change the drawing order of each layer.  
   
-##  <a name="Transparency"></a> To change the transparency of a polygon, line, or point layer  
+##  <a name="Transparency"></a> Change the transparency of a polygon, line, or point layer  
   
 1.  Click the map until the Map pane appears.  
   
@@ -162,7 +162,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 5.  Select **OK**.
   
-##  <a name="TileTransparency"></a> To change the transparency of a tile layer  
+##  <a name="TileTransparency"></a> Change the transparency of a tile layer  
   
 1.  Click the map until the Map pane appears.  
   
@@ -174,7 +174,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
 5.  Select **OK**.
   
-##  <a name="Secure"></a> To specify a secure connection for a tile layer  
+##  <a name="Secure"></a> Specify a secure connection for a tile layer  
   
 1.  Click the map until the Map pane appears.  
   
@@ -184,7 +184,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
  The connection for the Bing Maps Web service will use the HTTP SSL service to retrieve Bing map tiles for this layer. Transport Layer Security (TLS) was previously known as Secure Sockets Layer (SSL).
   
-##  <a name="Language"></a> To specify the language for tile labels  
+##  <a name="Language"></a> Specify the language for tile labels  
   
 1.  By default, for tile styles that display labels, the language is determined from the default locale for Report Builder. You can customize the language setting for tile labels in the following ways.  
   
@@ -194,7 +194,7 @@ The following table displays the toolbar icons for the **Map** pane.
   
      The order of precedence for setting the tile label language is: report property Language, default locale for Report Builder, and map property TileLanguage.  
   
-##  <a name="ConditionalHide"></a> To conditionally hide a layer based on viewport zoom level  
+##  <a name="ConditionalHide"></a> Conditionally hide a layer based on viewport zoom level  
   
 1.  Set **Visibility** options to control the display for a map layer.  
   
