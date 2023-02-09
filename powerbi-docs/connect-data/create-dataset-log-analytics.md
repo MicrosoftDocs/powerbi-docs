@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/05/2023
+ms.date: 02/07/2023
 ms.custom:
 LocalizationGroup: Visualizations
 ---
@@ -17,7 +17,7 @@ You can quickly create a Power BI dataset directly from a Log Analytics query. T
 
 Creating a dataset directly from a Log Analytics query is an easy and quick way to share a dataset, because if you save it to a shared workspace, everyone with the sufficient permissions in the workspace can use it. You can also use [dataset sharing](./service-datasets-share.md) to share it with other users who don’t have a role in the workspace.
 
-This feature creates a dataset in the Power BI service directly from a Log Analytics query. If you need to model or transform the data in ways that aren't available in the service, you can also export the query from Log Analytics, paste it into Power BI Desktop, and do your advanced modeling there. For more information, see [Integrate queries](/azure/azure-monitor/logs/log-powerbi#integrate-queries).
+This feature creates a dataset in the Power BI service directly from a Log Analytics query. If you need to model or transform the data in ways that aren't available in the service, you can also export the query from Log Analytics, paste it into Power BI Desktop, and do your advanced modeling there. For more information, see [Create Power BI datasets and reports from Log Analytics queries](/azure/azure-monitor/logs/log-powerbi#create-power-bi-datasets-and-reports-from-log-analytics-queries).
 
 ## Prerequisites
 
