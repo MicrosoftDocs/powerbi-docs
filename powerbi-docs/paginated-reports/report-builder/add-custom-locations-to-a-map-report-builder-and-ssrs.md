@@ -25,7 +25,7 @@ ms.reviewer: saurkumar
   
 
   
-## To add a point layer  
+## Add a point layer  
   
 1.  On the report design surface, click the map to select it and display the Map pane.  
   
@@ -33,7 +33,7 @@ ms.reviewer: saurkumar
   
 3.  From the drop-down list, click **Add Point Layer**. A point layer with no points is added to the map. By default, the point layer is ready for embedded points.  
   
-## To add a custom point  
+## Add a custom point  
   
 1.  On the report design surface, click the map to select it and display the Map pane.  
   
@@ -41,7 +41,7 @@ ms.reviewer: saurkumar
   
 3.  To add a point, click a location on the map. An embedded point is added to the selected layer at the location where you click.  
   
-## To customize the display for an embedded point  
+## Customize the display for an embedded point  
   
 1.  Right-click the point, and then click **Point Properties**. The **Map Embedded Point Properties** dialog box opens.  
   
