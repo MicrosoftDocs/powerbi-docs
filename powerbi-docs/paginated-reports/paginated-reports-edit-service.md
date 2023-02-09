@@ -1,5 +1,5 @@
 ---
-title: "Edit a report from the Power BI service using Report Builder"
+title: "Edit a paginated report from the Power BI service using Report Builder"
 description: Learn how to edit a paginated report in Power BI Report Builder directly from a workspace in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,10 +7,10 @@ ms.reviewer: mibruhje
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/26/2023
+ms.date: 02/08/2023
 ---
 
-# Edit a report from the Power BI service using Report Builder
+# Edit a paginated report from the Power BI service using Report Builder
 
 [!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
 
