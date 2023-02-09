@@ -25,7 +25,7 @@ ms.reviewer: monaraya
   
 -   **Distance scale** Displays a guide to help interpret the scale of the map. A map has one distance scale. The current map viewport zoom value determines the distance scale.  
   
- ![Screenshot showing how to add legend color scale and associated elements.](media/paginated-reports-maps/map-elements.gif "MapElements")  
+ ![Screenshot showing how to add legend color scale and associated elements.](../media/paginated-reports-maps/map-elements.gif "MapElements")  
   
 ##  <a name="Viewport"></a> Change the position of a legend relative to the viewport  
   
