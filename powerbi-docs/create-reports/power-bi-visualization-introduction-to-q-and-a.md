@@ -1,6 +1,6 @@
 ---
 title: Create a Q&A visual in a dashboard
-description: Learn to create a Q&A visual in a dashboard the Power BI service by using the Retail Analysis sample.
+description: Learn to create a Q&A visual in a dashboard in the Power BI service by using the Retail Analysis sample.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -63,13 +63,13 @@ How would we go about creating this line chart using Q&A?
 
 # [Power BI service](#tab/powerbi-service)
 
-1. Navigate back to the Retail Analysis Sample dashboard.
+1. Go back to the Retail Analysis Sample dashboard.
 
 2. The dashboard contains the same area chart tile for "Last Year Sales and This Year Sales." Select this tile. Don't select the tile you created with Q&A. Selecting it opens Q&A. The original area chart tile was created in a report, so the report opens to the page that contains this visualization.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png" alt-text="Screenshot showing the Retail Analysis sample dashboard.":::
 
-3. Open the report in Editing View by selecting **Edit**. If you aren't the owner of a report, you can't open the report in Editing view.
+3. Open the report in Editing view by selecting **Edit**. If you aren't the owner of a report, you can't open the report in Editing view.
 
     :::image type="content" source="media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png" alt-text="Screenshot showing the Edit report button.":::
 
