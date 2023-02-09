@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/30/2022
+ms.date: 02/09/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -118,6 +118,17 @@ To create a subscription that includes others, in addition to the [requirements 
 ### Use group email aliases 
 When creating a subscription, you can add other email addresses in the same domain to the subscription. If the report or dashboard is hosted in a [Premium capacity](../enterprise/service-premium-what-is.md), you can subscribe group aliases, whether they're in your domain or not. You don't have to subscribe individual email addresses. The aliases are based on the current active directory. 
 
+
+|Group type      |Supported in email subscriptions  |
+|---------|---------|
+|[Microsoft 365 groups](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide)     |      Yes   |
+|[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
+|[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
+|[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)     |    No     |
+|Mail-enabled security groups     |     Yes    |
+
+
+
 > [!NOTE]
 > Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and don't support subscribing group aliases.  
 
@@ -156,6 +167,15 @@ Paginated reports allow you to specify the view of the report people will receiv
 - Subscriptions can be sent with either the currently selected or default parameters for your report. You may set different parameter values for each subscription you create for your report. 
 
 - If your report author has set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. You can change other parameter values and choose to use current values, but unless you explicitly change that value as well, the subscription uses the expression-based parameter. 
+
+### Update parameters for an existing paginated report subscription
+
+1. Re-render the paginated report with the new  paramenters.
+1. Open the **Subscriptions** page.
+1. Select **Use current (rendered report) values**.
+    :::image type="content" source="./media/end-user-subscribe/power-bi-paginated-new.png" alt-text="Screenshot of Report parameters with Use current selected.":::
+
+1. Select **Save**.
 
 ### Considerations unique to paginated report subscriptions
 
@@ -279,8 +299,8 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 * Dataset refresh operations using an XMLA endpoint.
 
 * The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
-    - Uncertified Power BI custom visuals
-    - ESRI ArcGIS visuals
+    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+    - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
     - R visuals
     - PowerApps visuals
     - Python visuals

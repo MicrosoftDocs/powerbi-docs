@@ -33,7 +33,7 @@ This article describes the self-service process for the  **Power BI service**. I
 There are many different ways to get a per-user license for the Power BI service. These include:
 * If your organization already has a subscription for Power BI, you may be able to self-assign a license. The type of licenses available will depend on what type of subscriptions your organization has purchased and how your admin has configured Power BI. 
 * You can visit powerbi.com and click a "Try free" or "Buy now" link. Then, follow the prompts to complete the sign up or purchase. 
-* If you already have a license and try to use an advanced feature, Power BI may prompt you to upgrade or try a free trial.  Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. Users who already hold a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license.    
+* If you already have a license and try to use an advanced feature, Power BI may prompt you to upgrade or try a free trial.  Users with a Power BI (free) license or a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license.    
  
 For step-by-step instructions on using self-service sign-up and self-service purchase, see [How to sign up for Power BI as an individual](service-self-service-signup-for-power-bi.md)
 
@@ -71,7 +71,7 @@ If you are unable to log in to the Power BI service, or you want an alternate wa
 
 
 ## Information about Power BI trials
-One of the ways to get an individual license is to sign up for a free trial of the paid version of Power BI Premium Per user. Typically, trials last for one or two months. If you don’t purchase the upgrade at the end of the trial period, your license reverts back to free or Pro, depending on which you had before starting the trial.
+One of the ways to get an individual license is to sign up for a free trial of the paid version of Power BI Premium Per user. Typically, trials last for two months. If you don’t purchase the upgrade at the end of the trial period, your license reverts back to free or Pro, depending on which you had before starting the trial.
 
 To cancel a trial, select **Cancel trial** from the **Me** icon. 
 
@@ -79,7 +79,7 @@ To cancel a trial, select **Cancel trial** from the **Me** icon.
 
 
 ### Unable to sign-up or purchase Power BI
-If you are unable to use self-service to get your own Power BI license it may be that your administrator has disabled this option. The admins who manage the domain can disable self-service sign-ups,  self-service purchases, upgrades, and free trials. For help when you can't use self-service, see [Self-service purchase help](service-self-service-purchase-help.md).
+If you are unable to use self-service to get your own Power BI license it may be that your administrator has disabled this option. The admins who manage the domain can disable self-service sign-ups, self-service purchases, upgrades, and free trials. For help when you can't use self-service, see [Self-service purchase help](service-self-service-purchase-help.md).
 
 ## Considerations and troubleshooting
 •	If you are part of an organization and have used self-service to purchase Power BI,  the global or billing admin for your organization can  [**takeover** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses.   

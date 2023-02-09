@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: troubleshooting
-  ms.date: 09/01/2022
+  ms.date: 02/09/2023
   LocalizationGroup: Share your work
     
 title: Frequently asked questions about Troubleshooting Power BI subscriptions
@@ -160,13 +160,27 @@ sections:
         answer: |
           There are certain Power BI features that will not work when using the subscription feature.
 
-          - Email subscriptions do not support most [custom visuals](../developer/visuals/develop-power-bi-visuals.md).  The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
-          
-          - For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles.
-          
-          - For dashboard subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.
+          * For dashboard subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.
 
-          - Dataset refresh operations using an XMLA endpoint.  
+          * Dataset refresh operations using an XMLA endpoint. 
+
+          * For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles.
+
+          * Certain Power BI visuals aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
+
+          - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+          - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
+          - R visuals
+          - PowerApps visuals
+          - Python visuals
+          - Power Automate visuals
+          - The Paginated report visuals
+          - Visio visuals
+
+          
+          
+          
+ 
 
 additionalContent: |    
   ## Next steps
