@@ -22,6 +22,10 @@ In Excel Desktop or Excel for the web, you can discover all the Power BI dataset
 
 - Your organization’s tenant administrator must enable the **Users can work with Power BI datasets in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](../admin/service-admin-portal-export-sharing.md#users-can-work-with-power-bi-datasets-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
 - For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](../admin/service-admin-portal-integration.md#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- You must have Excel Desktop (Builds greater than or equal to **16.0.15128**) and Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number is greater than or equal to 15128. 
+
+    :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::
+
 - You must have **Build** permission to the Power BI dataset or have at least a **Contributor** role in the Power BI workspace containing your dataset.
 - You must have a Power BI license: Free, Pro or Premium Per User (PPU). Power BI Free license users can only work with datasets in My workspace or a Power BI Premium capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
@@ -53,7 +57,7 @@ Each dataset card shows the following information:
 
 Near the search bar in the pane, there's also a redirect web link to the Power BI Data hub (`https://app.powerbi.com/datahub`). There, you can view all Power BI datasets and other data artifacts you have access to. When you select the web link, the Power BI service opens in a new tab in your web browser.
 
-:::image type="content" source="media/service-connect-excel-power-bi-datasets/power-bi-data-hub.png" alt-text="SCreenshot of the Power BI Data hub.":::
+:::image type="content" source="media/service-connect-excel-power-bi-datasets/power-bi-data-hub.png" alt-text="SCreenshot of the Power BI Data hub." lightbox="media/service-connect-excel-power-bi-datasets/power-bi-data-hub.png:::
 
 ## Connect to your Power BI data in Excel 
 
@@ -65,7 +69,7 @@ When you find the dataset you want, select **Insert PivotTable** in the card. A 
 
 In **PivotTable Fields**, you can see all the tables and measures from your Power BI dataset. You can start building your report in Excel.
 
-:::image type="content" source="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png" alt-text="Screenshot showing the PivotTable Fields list in Excel.":::
+:::image type="content" source="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png" alt-text="Screenshot showing the PivotTable Fields list in Excel." lightbox="media/service-connect-excel-power-bi-datasets/pivottable-fields-excel.png:::
 
 ## Considerations and limitations 
 

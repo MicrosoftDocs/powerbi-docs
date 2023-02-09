@@ -52,7 +52,7 @@ In addition to the natively supported data sources, the following data sources c
 
 For paginated reports, Azure Analysis Services currently can't be accessed using either a Power BI enterprise gateway or a VNet gateway. When you authenticate with SSO, service principal isn't supported.
 
-Also, for paginated reports, a report publisher with Power BI enterprise gateway or a VNet gateway admin permissions is required to bind the paginated report to the data source connection. You become an admin either by being added as an admin or because you installed and configured a Power BI enterprise gateway or a VNet gateway. Note that being a Power BI enterprise gateway admin does not automatically provide access to existing data source connections. You have to specify which data source connection you'd like to manage.
+Also, for paginated reports, a report publisher with a Power BI enterprise gateway or a VNet gateway admin permissions is required to bind the paginated report to the data source connection. You become an admin either by being added as an admin or because you installed and configured a Power BI enterprise gateway or a VNet gateway. Note that being a Power BI enterprise gateway admin does not automatically provide access to existing data source connections. You have to specify which data source connection you'd like to manage.
 
 > [!IMPORTANT]
 > Using the **SSO via Kerberos** options within the gateway's **Advanced settings** requires the [configuration of Kerberos constrained delegation](../connect-data/service-gateway-sso-kerberos.md) on the on-premises data source and gateway service.

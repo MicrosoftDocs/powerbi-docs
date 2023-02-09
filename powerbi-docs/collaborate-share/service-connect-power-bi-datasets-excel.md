@@ -16,7 +16,7 @@ Microsoft Excel is arguably the most common data analysis tool for information w
 
 You can discover, connect to, and explore centralized Power BI data inside the spreadsheet grid of Microsoft Excel. The versatility of Excel and the unified governance and security standards of Power BI ensures you're using the right data to make better decisions that support business goals and fosters an enhanced data culture.
 
-:::image type="content" source="media/service-connect-power-bi-datasets-excel/connect-excel-power-bi.png" alt-text="Screenshot of Power BI datasets in Excel.":::
+:::image type="content" source="media/service-connect-power-bi-datasets-excel/connect-excel-power-bi.png" alt-text="Screenshot of Power BI datasets in Excel." lightbox="media/service-connect-power-bi-datasets-excel/connect-excel-power-bi.png":::
 
 ## Access Power BI datasets in Excel 
 

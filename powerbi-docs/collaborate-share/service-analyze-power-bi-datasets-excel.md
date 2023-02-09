@@ -31,21 +31,21 @@ You've connected to the Power BI dataset in one of two ways:
 
 With Analyze in Excel or the Power BI dataset experience in Excel, you've connected to a Power BI dataset that you want to explore in Excel. The Excel workbook contains a Power BI connection string that links your Excel workbook to the Power BI dataset. 
 
-:::image type="content" source="media/service-analyze-in-excel/contoso-report-analyze-pivottable.png" alt-text="Screenshot showing a report in the Power BI service.":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/contoso-report-analyze-pivottable.png" alt-text="Screenshot showing a report in the Power BI service." lightbox="media/service-analyze-power-bi-datasets-excel/contoso-report-analyze-pivottable.png":::
 
 Start adding fields from the PivotTable Fields into the Excel grid to create your own PivotTable report or perform validation analysis on your data. 
 
-:::image type="content" source="media/service-analyze-in-excel/analyze-pivottable.png" alt-text="Screenshot showing PivotTable and PivotChart.":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-pivottable.png" alt-text="Screenshot showing PivotTable and PivotChart." lightbox="media/service-analyze-power-bi-datasets-excel/analyze-pivottable.png":::
 
 ## Analyze your Power BI data with Excel tables 
 
 With the export with live connection, you can create an Excel workbook containing an Excel table connected to Power BI. This Excel workbook also contains a Power BI connection string that links your Excel workbook to the Power BI data. 
 
-:::image type="content" source="media/service-analyze-in-excel/connected-excel-table.png" alt-text="Screenshot showing a connected table in Excel.":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/connected-excel-table.png" alt-text="Screenshot showing a connected table in Excel." lightbox="media/service-analyze-power-bi-datasets-excel/connected-excel-table.png":::
 
 You can customize the table by adding unique formatting to the Excel table. That formatting is preserved when you refresh the data in Excel.  
 
-:::image type="content" source="media/service-analyze-in-excel/formatted-excel-table.png" alt-text="Screenshot showing formatted table in Excel.":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/formatted-excel-table.png" alt-text="Screenshot showing formatted table in Excel." lightbox="media/service-analyze-power-bi-datasets-excel/formatted-excel-table.png":::
 
 ## Refresh the data 
 
@@ -55,7 +55,7 @@ Whether you have an Excel PivotTable or table connected to a Power BI dataset, y
 
 To refresh a specific object in Excel, right-click the object and select **Refresh** in the menu.
 
-:::image type="content" source="media/service-analyze-in-excel/refresh-single-object.png" alt-text="Screenshot showing refreshing a single object in Excel.":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-single-object.png" alt-text="Screenshot showing refreshing a single object in Excel." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-single-object.png":::
 
 ### Refresh all objects
 
@@ -63,14 +63,14 @@ To refresh all objects connected to a Power BI dataset, use either of these opti
 
 - Select the **Data** tab in Excel, select **Refresh All** > **Refresh**.
 
-    :::image type="content" source="media/service-analyze-in-excel/refresh-multiple-objects-data-tab.png" alt-text="Screenshot showing refreshing all from the Data tab.":::
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png" alt-text="Screenshot showing refreshing all from the Data tab." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png":::
 
     > [!NOTE]
     > If you have other connections in your Excel workbook, Refresh All will update all the data in your workbook, including Power BI data.
 
 - In the Excel Desktop ribbon, select **Data** > **Queries & Connections**. In the **Queries & Connections** pane,  select **Refresh**. 
 
-    :::image type="content" source="media/service-analyze-in-excel/refresh-multiple-objects-pane.png" alt-text="Screenshot showing the Queries and Connections pane.":::
+    :::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png" alt-text="Screenshot showing the Queries and Connections pane." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png":::
 
 ## Next steps
 
