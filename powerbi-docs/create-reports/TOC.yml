@@ -130,7 +130,7 @@
           href: power-bi-customize-button.md
         - name: "Create bookmarks to save and share insights"
           href: desktop-bookmarks.md
-        - name: "Create page and button navigators"
+        - name: "Create page and bookmark navigators"
           href: button-navigators.md
     - name: "Create drillthrough buttons"
       href: desktop-drill-through-buttons.md
