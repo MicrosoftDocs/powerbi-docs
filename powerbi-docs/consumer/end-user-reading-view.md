@@ -1,6 +1,6 @@
 ---
-title: Power BI consumer capabilities in Power BI service
-description: In this quickstart, **consumers** will learn about Power BI, apps, reports, and dashboards.
+title: Power BI consumer and end user and business user capabilities in Power BI service
+description: In this quickstart, **business users** will learn about Power BI, apps, reports, and dashboards.
 author: mihart
 ms.author: mihart
 services: powerbi
@@ -13,16 +13,16 @@ ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/06/2022
+ms.date: 02/08/2023
 ms.custom: mode-portal, intro-quickstart
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **business users**.
+In this quickstart, you'll learn how to interact with the Power BI service to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **business users**.
 
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+If you're not signed up for the Power BI service, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## What is Power BI? 
 Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Excel spreadsheet, or a collection of data from different data sources, Power BI lets you easily connect to your data sources, visualize (or discover) what's important, and share that with anyone or everyone you want. 
@@ -34,7 +34,14 @@ Open the Power BI service, in a browser or on a mobile device. You and your coll
 ## Reading view
 There are two modes for interacting with reports in the Power BI service: Editing view and Reading view.  If you are a *business user*, then you are more likely to use Reading view to consume reports created by others. Editing view is used by report *designers*, who create the reports and share them with you. Reading view is your way to explore and interact with reports created by colleagues. 
 
+## Select Editing view and Reading view
+Most reports open in Reading view. To switch from Reading view to Editing view, select **Edit** from the action bar. If **Edit** is grayed out, that means that you don't have permissions to edit the report.
 
+:::image type="content" source="media/end-user-reading-view/power-bi-edit.png" alt-text="Screenshot of action bar with the word Edit outlined in red.":::
+
+To switch back to Reading view, select **Reading view** from the action bar. 
+
+:::image type="content" source="media/end-user-reading-view/power-bi-reading.png" alt-text="Screenshot showing action bar with the words Reading view outlined in red.":::
 
 Even in Reading view, the content isn't static. You can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, any time, in the cloud or on-premises, from any device. 
 
