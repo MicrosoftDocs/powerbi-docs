@@ -74,7 +74,7 @@ Connections between items are only established when you assign a workspace to a 
 
 * The workspace isn't assigned to any other pipeline.
 
-* The workspace must reside on a [Premium capacity](../enterprise/service-premium-gen2-what-is.md).
+* The workspace must reside on a [Premium capacity](../enterprise/service-premium-what-is.md).
 
 * To assign a workspace, you need at least [workspace member](deployment-pipelines-process.md#permissions-table) permissions for the workspaces in its adjacent stages. For more information, see [Why am I getting the 'workspace member permissions needed' error message when I try to assign a workspace?](deployment-pipelines-troubleshooting.yml#why-am-i-getting-the--workspace-member-permissions-needed--error-message-when-i-try-to-assign-a-workspace-)
 

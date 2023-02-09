@@ -1,117 +1,108 @@
 ---
 title: View a report
-description: This topic shows Power BI business users and end users had to open and view a Power BI report.
+description: This topic shows Power BI business users and end users how to open and view a Power BI report from a dashboard, an app, or a report that's been shared with you.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/11/2021
-#This article teaches business users how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
+ms.date: 02/01/2023
+#This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
-# View a report in the Power BI service for *business users*
+# View a report in the Power BI service for business users
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
+A Power BI report is one or more pages of organized visuals. Power BI designers create reports and [share them directly](../collaborate-share/end-user-shared-with-me.md) with business users, or add them to an [app](end-user-apps.md). You must have a Power BI Pro or Premium Per User license to open a report that has been shared with you, unless the report is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity or in their own My workspace. For more information, see [Licenses and subscriptions for business users](end-user-license.md).
 
-A report is one or more pages of visuals. Reports are created by Power BI *designers* and [shared with *business users directly*](../collaborate-share/end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). To open a report, you'll need either a Power BI Pro license, or for the report to be part of a workspace that is stored in a Premium capacity. [Learn about licenses and subscriptions](end-user-license.md)
+Explore the following guidance to learn how to open a report from the Browse page and from a dashboard.
 
-There are many different ways to open a report and we'll show you two of them: open from Home and open from a dashboard. 
+## Open a report that's been shared with you
 
-<!-- add art-->
+Power BI designers can share a report with you by sending an email link or by adding the report to your Power BI content. These reports are located under **Shared with me** in the **Browse** tab.
 
+1. Open the Power BI service (app.powerbi.com), and sign in if you're prompted.
 
-## Open a report from Power BI Home
-Let's open a report that's been shared with you directly and then open a report that was shared as part of an app.
+    :::image type="content" source="./media/end-user-report-open/power-bi-home-full-screen.png" alt-text="Screenshot showing the Home page of the Power BI service.":::
 
-   ![Screenshot showing the Power BI service Home canvas with arrows pointing to reports.](./media/end-user-report-open/power-bi-home.png)
+2. On the navigation pane, select **Browse**, and on the **Browse** page, select **Shared with me**.
 
-### Open a report that has been directly shared with you
-Power BI *designers* can share an individual report directly with you via a link in email or by adding it automatically to your Power BI content. Reports that are shared this way show up in the **Shared with me** container on your nav pane and in the **Shared with me** section of your Home canvas.
+    :::image type="content" source="./media/end-user-report-open/power-bi-share.png" alt-text="Screenshot showing the Browse page and Shared with me is outlined.":::
 
-1. Open the Power BI service (app.powerbi.com).
+3. The report icon :::image type="icon" source="./media/end-user-report-open/power-bi-report-icon.png"::: is displayed next to the report name. Open the **Sales and Marketing Sample** report.
 
-2. From the nav pane, select **Home** to display your Home canvas.  
+     :::image type="content" source="./media/end-user-report-open/power-bi-report-sample.png" alt-text="Screenshot showing the Sales and Marketing Sample report from the Shared with me list.":::
 
-   ![Home canvas](./media/end-user-report-open/power-bi-open-home.png)
-   
-3. Scroll down until you see **Shared with me**. Look for the report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png). In this screenshot we have one dashboard and one report. The report is named *Sales and Marketing Sample*.
-   
-   ![shared with me section of Home page](./media/end-user-report-open/power-bi-shared-new.png)
+4. Notice the tabs along the left side. Each tab represents a report page. Select the **YTD Category** tab to open the **YTD Category Trend Analysis** page.
 
-4. Simply select the report name to open the report.
+   :::image type="content" source="./media/end-user-report-open/power-bi-report-open.png" alt-text="Screenshot showing the YTD Category Trend Analysis page open." lightbox="./media/end-user-report-open/power-bi-report-open.png":::
 
-   ![report page](./media/end-user-report-open/power-bi-open.png)
+5. Expand the **Filters** pane along the right side. Filters that are applied to this report page, or to the entire report, are displayed here. You can change these filters to see the impact on your visuals and report.
 
-5. Notice the tabs along the left side.  Each tab represents a report *page*. We currently have the *Growth Opportunity* page open. Select the *YTD Category* tab to open that report page instead. 
+    :::image type="content" source="./media/end-user-report-open/power-bi-filters-inline.png" alt-text="Screenshot showing the Power BI service with Filters expanded." lightbox="./media/end-user-report-open/power-bi-filters-inline.png":::
 
-   ![Screenshot shows the report page tabs.](./media/end-user-report-open/power-bi-report-open.png)
+6. Hover over a visual to show the actions you can perform. To see the filters applied to a specific visual, select the filter icon.
 
-6. Expand the **Filters** pane along the right side. Filters that have been applied to this report page, or to the entire report, are displayed here. You can change these filters to see the impact on your visuals and report.
+   :::image type="content" source="./media/end-user-report-open/power-bi-visual-filters.png" alt-text="Screenshot showing filters for the selected visual.":::
 
-   ![Power BI service with Filters expanded](./media/end-user-report-open/power-bi-filters.png)
+7. You can also change the display (zoom) of the report page. On the action bar, select the **View** icon, and then select **Actual size**. Notice the difference that view option makes in how Power BI displays your report.
 
-7. Display the actions menu for a visual. Hovering over a report visual reveals actions you can take on that visual. To see the filters applied to a specific visual, select the filter icon. Here we've selected the filter icon for the *Total units by month and manufacturer* line chart.
+   :::image type="content" source="./media/end-user-report-open/power-bi-view-actual.png" alt-text="Screenshot showing the Actual size view.":::
 
-   ![Screenshot showing filters for the selected visual.](./media/end-user-report-open/power-bi-visual-filters.png)
+8. On the action bar, select the **View** icon, and then select **Fit to width**. Notice the difference that view option makes in how Power BI displays your report.
 
-6. You can also change the display of the report page. Right now, we're displaying the entire report page. To change the display (zoom) of the page, select the **View** dropdown from the upper right corner and choose **Actual size** and then switch to **Fit to width**. Notice the differences each view option makes to the display of your report.
+   :::image type="content" source="./media/end-user-report-open/power-bi-width.png" alt-text="Screenshot showing the Fit to width view.":::
 
-   ![change zoom](./media/end-user-report-open/power-bi-view-actual.png)
+There are many ways for you to interact with a report to discover insights and make business decisions. Other articles about Power BI reports are available in the table of contents.
 
-   ![Change View to fit to width](./media/end-user-report-open/power-bi-width.png)
+## Open a report that's in an app
 
-There are many ways for you to interact with a report to discover insights and make business decisions.  Use the table of contents on the left to read through other articles about Power BI reports. 
+The apps you receive from colleagues are located on the Home page and in the Apps container on your navigation pane. An [app](end-user-apps.md) is a collection of dashboards and reports that a Power BI designer compiles for you.
 
-### Open a report that is part of an app
-If you've received apps from colleagues or from AppSource, those apps are available from Home, and from the **Apps** and **Shared with me** containers on your nav pane. An [app](end-user-apps.md) is a collection of dashboards and reports that have been bundled together for you by a Power BI *designer*.
+You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity.  
 
-### Prerequisites
-Opening an app requires a Power BI Pro license, or for the app workspace to be stored in Power BI Premium capacity. [Learn about licenses and subscriptions](end-user-license.md)    
-    
-To follow along, download the Sales and Marketing app.
+You can follow along in this tutorial with Microsoft sample content.
 
-1. In your browser, navigate to appsource.microsoft.com.
-1. Search for "Sales & Marketing" and select **Microsoft sample - Sales & Marketing**. Scroll down to see the search results.
-1. Select **Get it now** > **Continue** > **Install** to install the app in your Apps container. 
+1. In your browser, go to appsource.microsoft.com.
+2. Search for "Sales & Marketing" and select **Microsoft sample - Sales & Marketing**.
+3. Select **Get it now** > **Continue** > **Install** to install the app in your Apps container.
 
-You can now open the app from your **Apps** container or from **Home**.
-1. Go back to Home by selecting **Home** from the nav pane.
+4. Go back to Home by selecting **Home** from the navigation pane.
 
-7. Scroll down and select **My Apps**.
+5. Scroll down and select **My Apps**.
 
-   ![Screenshot shows the My apps section of Power BI Home.](./media/end-user-report-open/power-bi-apps-new.png)
+   :::image type="content" source="./media/end-user-report-open/power-bi-apps-new.png" alt-text="Screenshot shows the My apps section of Power BI Home.":::
 
-8. Select your new *Sales and marketing* app to open it. Depending on the options set by the app *designer*, the app will open either a dashboard or a report. This app opens to a dashboard.  
-
+6. Select your new **Sales and Marketing** app to open it. Depending on the options set by the app designer, the app opens to a dashboard or a report. This app opens to a dashboard.  
 
 ## Open a report from a dashboard
-Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md) are *pinned* from reports. Selecting a tile opens the report that was used to create the tile. 
 
-1. From the dashboard, select a tile. In this example we've selected the *Total Units YTD Var %* column chart tile.
+Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a tile opens the report that was used to create the tile.
 
-    ![dashboard with tile selected](./media/end-user-report-open/power-bi-dashboards.png)
+1. From the **Sales and Marketing** dashboard, select the *Total Units YTD Variance %* column chart tile.
 
-2.  The associated report opens. Notice that we're on the *YTD Category* page. This is the report page that contains the column chart we selected from the dashboard.
+    :::image type="content" source="./media/end-user-report-open/power-bi-dashboards.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
 
-    ![report open in Reading view](./media/end-user-report-open/power-bi-report-tab.png)
+2. The associated report opens to the *YTD Category Trend Analysis* page because this is where the chart is located in the report.
+
+    :::image type="content" source="./media/end-user-report-open/power-bi-report-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
 
 > [!NOTE]
-> Not all tiles lead to a report. 
->If you select a tile that was [created with Q&A](end-user-q-and-a.md), the Q&A screen will open. 
->If you select a tile that was [created using the dashboard **Add tile** widget](../create-reports/service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
+> Not all tiles lead to a report.
+>If you select a tile that was [created with Q&A](end-user-q-and-a.md), the Q&A screen opens.
+>If you select a tile that was [created using the dashboard **Add tile** widget](../create-reports/service-dashboard-add-widget.md), a video, website, or other content might open.  
 
+## More ways to open a report
 
-##  Still more ways to open a report
-As you get more comfortable navigating the Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
-- From the nav pane using [Favorites](end-user-favorite.md) and [Recent](end-user-recent.md)    
-- Using [View related](end-user-related.md)    
-- In an email, when someone [shares with you](../collaborate-share/service-share-reports.md) or you [set an alert](end-user-alerts.md)    
+As you get more comfortable navigating the Power BI service, you'll figure out workflows that are best for you. A few other ways to access reports:
+
+- Using [the related content pane](end-user-related.md)
+- In an email, when someone [shares with you](../collaborate-share/service-share-reports.md) or you [set an alert](end-user-alerts.md)
 - From your Notification center
 - From a workspace
-- and more
 
 ## Next steps
-[Open and view a dashboard](end-user-dashboard-open.md)    
-[Report filters](end-user-report-filter.md)
+
+[Open and view a dashboard](end-user-dashboard-open.md)  
+[Explore the report Filters pane](end-user-report-filter.md)

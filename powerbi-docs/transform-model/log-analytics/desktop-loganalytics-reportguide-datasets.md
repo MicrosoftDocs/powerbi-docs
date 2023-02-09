@@ -454,4 +454,4 @@ The following articles provide more information about Power BI and its many feat
 * [Install Log Analytics Template App](install-as-engine-app.md)
 * [Configuring Azure Log Analytics for Power BI (Preview)](desktop-log-analytics-configure.md)
 * [Azure Log Analytics in Power BI FAQ](desktop-log-analytics-faq.md)
-* [What is Power BI Premium?](../../enterprise/service-premium-gen2-what-is.md)
+* [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
