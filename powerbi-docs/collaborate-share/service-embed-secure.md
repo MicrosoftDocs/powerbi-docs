@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 02/08/2023
 LocalizationGroup: Share your work
 ---
 
@@ -132,14 +132,13 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They are blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
 
+* The automatic authentication capabilities don't work when they're embedded in applications, including in mobile and desktop applications.
+
 * The authentication token lifetime is controlled based on your Azure AD settings. When the authentication token expires, the user will need to sign in again to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
 
 ## Next steps
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
-
 * [Filter a report using query string parameters in the URL](service-url-filters.md)
-
 * [Embed with report web part in SharePoint Online](service-embed-report-spo.md)
-
 * [Publish to web from Power BI](service-publish-to-web.md)
