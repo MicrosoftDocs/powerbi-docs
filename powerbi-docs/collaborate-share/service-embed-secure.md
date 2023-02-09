@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/03/2023
+ms.date: 02/08/2023
 LocalizationGroup: Share your work
 ---
 
@@ -139,9 +139,6 @@ You can add as many buttons as you'd like to create a low-code custom experience
 ## Next steps
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
-
 * [Filter a report using query string parameters in the URL](service-url-filters.md)
-
 * [Embed with report web part in SharePoint Online](service-embed-report-spo.md)
-
 * [Publish to web from Power BI](service-publish-to-web.md)
