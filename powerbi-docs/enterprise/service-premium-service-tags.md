@@ -139,7 +139,7 @@ The last part of the process is entering the credentials in the Power BI service
 
 3. Under **Datasets**, expand the **Data source credentials** section.
 
-    :::image type="content" source="media/service-premium-service-tags/service-tags-dataset.png" alt-text="Screenshot of the edit credentials option in the Datasets tab":::
+    :::image type="content" source="media/service-premium-service-tags/service-tags-dataset.png" alt-text="Screenshot of the edit credentials option in the Datasets tab.":::
 
 4. Select the **Edit credentials** link. In the dialog box that appears, enter valid credentials.
 
