@@ -75,7 +75,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 ### If you don't see the **Export** option
 * Make sure that you're viewing a report (not a dashboard).
-* It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations](../create-reports/power-bi-automate-visual)r PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
+* It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
 ### Visuals that aren't supported
 The following aren't supported for **Export to PDF**.  Either the **PDF** export option will be grayed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a grey box with an error message.
