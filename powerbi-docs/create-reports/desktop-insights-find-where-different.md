@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 Often in visuals, you see a data point and wonder whether distribution would be the same for different categories. With **insights** in **Power BI** you can find out with just a few clicks.
 
-Consider the following visual, which shows *TotalSales* by *CountryName*. Most sales come from the United States, accounting for 57% of all sales with lesser contributions coming from other countries/regions. It's often interesting in such cases to explore whether that same distribution would be seen for different subpopulations. For example, is this the same for all years, all sales channels, and all categories of products? While you could apply different filters and compare the results visually, doing so can be time consuming and error prone.
+Consider the following visual, which shows *TotalSales* by *CountryName*. Most sales come from the United States, accounting for 57% of all sales with lesser contributions coming from other countries/regions. It's often interesting in such cases to explore whether that same distribution would be seen for different subpopulations. For example, is this the same for all years, all sales channels, and all categories of products? While you could apply different filters and compare the results visually, doing so can be time-consuming and error-prone.
 :::image type="content" source="media/desktop-insights-find-where-different/find-where-different_01.png" alt-text="Screenshot of a chart with a big distribution.":::
 
 You can tell **Power BI** to find where a distribution is different and get fast, automated, and insightful analysis about your data. Right-click on a data point and select **Analyze** > **Find where this distribution is different**, and an insight is delivered to you in an easy-to-use window.
@@ -36,7 +36,7 @@ To use insights to find where distributions seen on charts are different, just r
 
 :::image type="content" source="media/desktop-insights-find-where-different/find-where-different_04.png" alt-text="Screenshot showing a Column chart and an insight.":::
 
-The values with the selected filter applied have the default color. The overall values, as seen on the original starting visual, are shown in grey for easy comparison. Up to three different filters might be included (*Touring Bikes*, *Mountain Bikes*, *Road Bikes* in this example) and different filters can be chosen by clicking on them or by using ctrl-click to select multiple.
+The values with the selected filter applied have the default color. The overall values, as seen on the original starting visual, are shown in grey for easy comparison. Up to three different filters might be included (*Touring Bikes*, *Mountain Bikes*, and *Road Bikes* in this example) and different filters can be chosen by selecting a data point or by using ctrl-click to select multiple.
 
 For simple additive measures, like *Total Sales* in this example, the comparison is based on the relative, rather than absolute, values. The sales for Touring Bikes are lower than overall sales for all categories; however, the visual, by default, uses a dual axis to allow the comparison between the proportion of sales across different countries/regions. This is for Touring Bikes versus all categories of bikes. Switching the toggle below the visual allows the two values to be displayed in the same axis, allowing the absolute values to easily be compared, as shown in the following image:
 
@@ -54,7 +54,7 @@ You can use insights when your report is in reading or editing mode. This makes 
 
 You can think of the algorithm as taking all the other columns in the model and, for all of the values of those columns, applying them as filters to the original visual. The algorithm then finds which of those filter values produces the most *different* result from the original.
 
-You likely wonder what *different* means. For example, say that the overall split of sales between the USA and Canada was the following:
+You likely wonder what *different* means. For example, say that the overall split of sales between the USA and Canada is the following:
 
 |Country/Region  |Sales ($M)|
 |---------|----------|
