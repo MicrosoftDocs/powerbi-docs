@@ -52,25 +52,29 @@ The Power BI file contains the data and interactive graphic in a .pbix file form
 
 A typical customization is to filter the report to a specific state, and then to create your own publish-to-web embed code for your customized report.
 
-USAFacts data is provided under a Creative Commons License that requires attribution. Before publishing this data, review the [disclaimers](#disclaimers).
+COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University is provided under a Creative Commons License that requires attribution. Before publishing this data, review the [disclaimers](#disclaimers).
 
-To get started, [download the .pbix file (here)](https://go.microsoft.com/fwlink/?linkid=2125058).
+To get started, [download the .pbix file (here)](https://go.microsoft.com/fwlink/?linkid=XXXX).
 
 ### Update your report 
 
 1. Download the latest version of the free app, [Power BI Desktop](https://powerbi.microsoft.com/desktop/), if you haven't already. 
 
-2. Download the [.pbix file](https://go.microsoft.com/fwlink/?linkid=2125058), if you haven't already, and open it in Power BI Desktop.
+2. Download the [.pbit file](https://go.microsoft.com/fwlink/?linkid=XXXXX), if you haven't already, and open it in Power BI Desktop.
 
-3. To filter your report to a specific state, select the arrow to expand the Filters pane.
+3. Once the report opens you'll be prompted to set the Start Date parameter value, once complete select Load to refresh the data.
+
+    :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-parameter.png" alt-text="Set Start Data parameter":::
+
+4. To filter your report to a specific state, select the arrow to expand the Filters pane.
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-filters-pane.png" alt-text="Expand the Filters pane":::
 
-4. Select a state that you are interested in. 
+5. Select a state that you are interested in. 
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-filter-selection.png" alt-text="Select a state":::
 
-5. To save your file, select **File** > **Save**. 
+6. To save your file, select **File** > **Save**. 
 
 ### Refresh your report 
 
@@ -102,9 +106,9 @@ When you follow the steps, choose the following options:
 
 To test your refresh setting, select the [Refresh now](../connect-data/refresh-data.md#data-refresh) option, available from the dataset item.
 
-The refreshed data is loaded each time the schedule runs. The underlying data is provided by USAFacts and may not update as frequently as your refresh schedule. Check the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) to know when the underlying data was last updated. 
+The refreshed data is loaded each time the schedule runs. The underlying data is provided by Center for Systems Science and Engineering (CSSE) at Johns Hopkins University and may not update as frequently as your refresh schedule. Check the [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University website](https://github.com/CSSEGISandData/COVID-19) to know when the underlying data was last updated. 
 
-If you intend to publish the customized report on your website, it is best to configure your scheduled refresh to run at least as frequently as the USAFacts data updates. Since USAFacts may refresh their data at different times each day, you may want to configure several refreshes each day. 
+If you intend to publish the customized report on your website, it is best to configure your scheduled refresh to run at least as frequently as the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University updates. Since the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University may refresh their data at different times each day, you may want to configure several refreshes each day. 
 
 ### Create a publish-to-web embed code 
 
@@ -114,36 +118,7 @@ Once you publish your embed code, you use the iFrame on the confirmation dialog 
 
 If you make changes to the report in Power BI Desktop, you can publish and replace the existing report in the Power BI service. The embed code doesn't change. It takes approximately an hour for changes to the report or refreshed data to appear on your website. 
 
-## Option 3: Mash up data from another source 
-
-You can also mash up the data in this report with data from another source. The following example is based on data from [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19). Before publishing this data, we recommend reviewing the [disclaimers](#disclaimers) in this article.
-
-1. In Power BI Desktop, select **Get data** > **Web**.
-
-    :::image type="content" source="media/sample-covid-19-us/power-bi-desktop-get-data.png" alt-text="Get data button":::
-
-2. Enter the following URL:
-
-    ```
-    https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv
-    ```
-
-    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-from-web.png" alt-text="Select data from web":::
-
-3. Select **OK**. 
-
-    > [!NOTE]
-    > The link published by Johns Hopkins University can change. Check the [Johns Hopkins GitHub page](https://github.com/CSSEGISandData/COVID-19) for the latest information.
-
-4. Select **Load** to load the dataset for total confirmed cases worldwide.  
-
-    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-load-data.png" alt-text="Load data from web":::
-
-    This article, [Connect to webpages from Power BI Desktop](../connect-data/desktop-connect-to-web.md), provides more information about loading data from the web.
-    
-You can then use Power BI Desktop to visualize the data. Finally, use the steps in **Option 2:** [Publish your report to the Power BI service](#publish-your-report-to-the-power-bi-service) to publish the report and create a custom embed code. 
-
-## Option 4: Use the COVID-19 US Tracking template app
+## Option 3: Use the COVID-19 US Tracking template app
 
 For one more option, the Power BI team created the COVID-19 US Tracking *template app* to get you started immediately. Template apps are bundles of reports, dashboards, and datasets for a specific data source. You download them from AppSource, use them or modify to suit your needs, and distribute them to your colleagues. 
 
@@ -152,15 +127,11 @@ This COVID-19 US Tracking template app contains a pre-built report of COVID-19 m
 ## About the data source for this report
 This interactive report aggregates data from the Centers for Disease Control and Prevention (CDC), and state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (link).
 
-Data is provided by USAFacts. Because of the frequency of data updates, they may not reflect the exact numbers reported by government organizations or the news media. For more information or to download the data, visit the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/). 
+The COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) by the Johns Hopkins University on behalf of its Center for Systems Science in Engineering. Copyright Johns Hopkins University 2020. Here are the full [Terms of Use](https://github.com/CSSEGISandData/COVID-19/blob/master/README.md). More information is available from the [Johns Hopkins University website](https://coronavirus.jhu.edu/map-faq.html).
 
 ## Disclaimers
 
 This report and data are provided "as is", "with all faults", and without warranty of any kind. Microsoft gives no express warranties or guarantees and expressly disclaims all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
-
-USAFacts data is available under a Creative Commons license. To use it, cite USAFacts as the data provider and link back to USAFacts. For exact attribution steps, see the **#MadewithUSAFacts** section of the USAFacts page, [Coronavirus in the United States: Mapping the COVID-19 outbreak in the states and counties](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/).
-
-Johns Hopkins University data is copyright 2020 Johns Hopkins University, all rights reserved. It's provided to the public strictly for educational and academic research purposes. Here are the full [Terms of Use](https://github.com/CSSEGISandData/COVID-19/blob/master/README.md) of the data shown in the mashup example. More information is available from the [Johns Hopkins University website](https://coronavirus.jhu.edu/map-faq.html).
 
 ## Next steps
 
