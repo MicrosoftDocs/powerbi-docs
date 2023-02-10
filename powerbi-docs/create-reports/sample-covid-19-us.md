@@ -8,16 +8,16 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 07/15/2021
+ms.date: 02/10/2023
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. Using Power BI Desktop, they can analyze and visualize COVID-19 data  to keep their communities informed  at the city, county, state, and national levels. Then using Power BI Publish to Web, they can share the report publicly to inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
+The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. When you Power BI Desktop, you can analyze and visualize COVID-19 data  to keep your community informed  at the city, county, state, and national levels. Then use Power BI Publish to Web to share the report publicly and inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 
-:::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="COVID-19 sample with US data":::
+:::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="Screenshot showing COVID-19 sample with US data.":::
 
 This article covers how to:
 
@@ -54,7 +54,7 @@ A typical customization is to filter the report to a specific state, and then to
 
 COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University is provided under a Creative Commons License that requires attribution. Before publishing this data, review the [disclaimers](#disclaimers).
 
-To get started, [download the .pbix file (here)](https://go.microsoft.com/fwlink/?linkid=XXXX).
+To get started, select this link to [download the .pbit file](https://go.microsoft.com/fwlink/?linkid=XXXX).
 
 ### Update your report 
 
@@ -62,17 +62,17 @@ To get started, [download the .pbix file (here)](https://go.microsoft.com/fwlink
 
 2. Download the [.pbit file](https://go.microsoft.com/fwlink/?linkid=XXXXX), if you haven't already, and open it in Power BI Desktop.
 
-3. Once the report opens you'll be prompted to set the Start Date parameter value, once complete select Load to refresh the data.
+3. When the report opens, you're prompted to set the **Start Date** parameter value. Then select **Load** to refresh the data. The earliest data is from 3/22/2020.
 
-    :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-parameter.png" alt-text="Set Start Data parameter":::
+    :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-parameter.png" alt-text="Screenshot showing setting the Start Data parameter.":::
 
 4. To filter your report to a specific state, select the arrow to expand the Filters pane.
 
-    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-filters-pane.png" alt-text="Expand the Filters pane":::
+    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-filters-pane.png" alt-text="Screenshot showing how to Expand the Filters pane.":::
 
 5. Select a state that you are interested in. 
 
-    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-filter-selection.png" alt-text="Select a state":::
+    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-filter-selection.png" alt-text="Screenshot showing how to Select a state.":::
 
 6. To save your file, select **File** > **Save**. 
 
@@ -80,16 +80,16 @@ To get started, [download the .pbix file (here)](https://go.microsoft.com/fwlink
 
 1. Select the **Refresh** button.
 
-    :::image type="content" source="media/sample-covid-19-us/power-bi-desktop-refresh-button.png" alt-text="Refresh button":::
+    :::image type="content" source="media/sample-covid-19-us/power-bi-desktop-refresh-button.png" alt-text="Screenshot showing the Refresh button.":::
 
 2. Select **Anonymous** > **Connect**. 
 
-    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-azure-blob.png" alt-text="Select Anonymous":::
+    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-azure-blob.png" alt-text="Screenshot showing how to Select Anonymous.":::
 
  
 3. Select **Ignore Privacy Levels**, if shown > **Save**. 
 
-    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-privacy-levels.png" alt-text="Select privacy levels":::
+    :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-privacy-levels.png" alt-text="Screenshot showing how to Select privacy levels.":::
 
 ### Publish your report to the Power BI service
 
