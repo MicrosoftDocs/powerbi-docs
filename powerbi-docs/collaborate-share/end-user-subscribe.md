@@ -301,10 +301,10 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 * The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
-    - [R visuals](../admin/visuals/service-r-visuals.md)
+    - [R visuals](../visuals/service-r-visuals.md)
     - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
     - [Python visuals](../connect-data/desktop-python-visuals.md)
-    - [Power Automate visuals](../create-reports/power-bi-automate-visual) 
+    - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
 
