@@ -13,13 +13,13 @@ LocalizationGroup: Reports
 ---
 # Troubleshooting nested values returned as text in the Power BI service
 
-## Cause
-
 In the past, there have been cases where a report refreshes in Power BI Desktop, but fails on the Power BI service with an error like this text:
 
 ```output
 We cannot convert the value "[Table]" to type Table
 ```
+
+## Cause
 
 One of the causes of this error involves nested non-scalar values, such as tables, records, lists, and functions. When the Data Privacy Firewall buffers a data source, nested non-scalar values are converted to text values, such as `"[Table]"` or `"[Record]"`.
 
