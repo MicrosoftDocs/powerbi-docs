@@ -14,7 +14,7 @@ LocalizationGroup: Transform and shape data
 
 The formula editor (often referred to as the DAX editor) includes robust editing and shortcut enhancements to make authoring and editing formulas easy and intuitive.
 
-## Using the formula editor
+## Use the formula editor
 
 You can use the following keyboard shortcuts to increase your productivity and streamline creating formulas in the formula editor.
 
