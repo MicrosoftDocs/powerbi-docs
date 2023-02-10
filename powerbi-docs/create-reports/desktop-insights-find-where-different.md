@@ -1,6 +1,6 @@
 ---
 title: Use insights to find where distribution is different
-description: Learn how to easily gain insights to find where a distribution seen in a chart is different in Power BI Desktop.
+description: Learn how to easily gain insights to find where a distribution in a chart is different in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -20,11 +20,11 @@ Often in visuals, you see a data point and wonder whether distribution would be 
 Consider the following visual, which shows *TotalSales* by *CountryName*. Most sales come from the United States, accounting for 57% of all sales with lesser contributions coming from other countries/regions. It's often interesting in such cases to explore whether that same distribution would be seen for different subpopulations. For example, is this the same for all years, all sales channels, and all categories of products? While you could apply different filters and compare the results visually, doing so can be time consuming and error prone.
 :::image type="content" source="media/desktop-insights-find-where-different/find-where-different_01.png" alt-text="Screenshot of a chart with a big distribution.":::
 
-You can tell **Power BI** to find where a distribution is different and get fast, automated, insightful analysis about your data. Right-click on a data point and select **Analyze** > **Find where this distribution is different**, and an insight is delivered to you in an easy-to-use window.
+You can tell **Power BI** to find where a distribution is different and get fast, automated, and insightful analysis about your data. Right-click on a data point and select **Analyze** > **Find where this distribution is different**, and an insight is delivered to you in an easy-to-use window.
 
 :::image type="content" source="media/desktop-insights-find-where-different/find-where-different_02.png" alt-text="Screenshot of an insight, showing a different distribution.":::
 
-In this example, the automated analysis shows that for *Touring Bikes*, the proportion of sales in the United States and Canada are lower, while the proportion coming from the other countries/regions is higher.
+In this example, the automated analysis shows that the proportion of sales for *Touring Bikes* in the United States and Canada are lower than the proportion coming from the other countries/regions.
 
 ## Use insights
 
@@ -32,7 +32,7 @@ To use insights to find where distributions seen on charts are different, just r
 
 :::image type="content" source="media/desktop-insights-find-where-different/find-where-different_03.png" alt-text="Screenshot of a Column chart, showing a right click menu.":::
 
-**Power BI** runs its machine learning algorithms over the data. It then populates a window with a visual and a description of which categories (columns) and which values of those categories result in the most significantly different distribution. Insights are provided as a column chart, as shown in the following image.
+**Power BI** runs its machine learning algorithms over the data. It then populates a window with a visual and a description of which categories (columns) and which values of those categories result in the most significantly different distribution. Insights are provided as a column chart, as shown in the following image:
 
 :::image type="content" source="media/desktop-insights-find-where-different/find-where-different_04.png" alt-text="Screenshot showing a Column chart and an insight.":::
 
@@ -42,13 +42,13 @@ For simple additive measures, like *Total Sales* in this example, the comparison
 
 :::image type="content" source="media/desktop-insights-find-where-different/find-where-different_04.png" alt-text="Screenshot showing a visual with an insight.":::
 
-The descriptive text also indicates the level of importance that might be attached to a filter value, given the number of records that match the filter. In this example, you see that while the distribution for *Touring Bikes* might be significantly different, they account for only 16.6% of records.
+The descriptive text also indicates the level of importance that might be attached to a filter value, given the number of records that match the filter. In this example, you see that while the distribution for *Touring Bikes* might be different, they account for only 16.6% of records.
 
 The *thumbs up* and *thumbs down* icons at the top of the page exist so that you can provide feedback about the visual and the feature. However, doing so doesn't train the algorithm to influence the results returned next time you use the feature.
 
-Importantly, the **+** button at the top of the visual lets you add the selected visual to your report as if you created the visual manually. You can then format or otherwise adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI**.
+Importantly, the **+** button at the top of the visual lets you add the selected visual to your report as if you created the visual manually. You can then format or adjust the added visual just as you would to any other visual on your report. You can only add a selected insight visual when you're editing a report in **Power BI**.
 
-You can use insights when your report is in reading or editing mode, making it versatile for both analyzing data and for creating visuals you can add to your reports.
+You can use insights when your report is in reading or editing mode. This makes it versatile for both analyzing data and for creating visuals you can add to your reports.
 
 ## Details of the returned results
 
@@ -70,7 +70,7 @@ Then, for a particular category of product *“Road Bike"*, the split of sales m
 
 While the numbers are different in each of those tables, the relative values between USA and Canada are identical: 75% and 25% overall and for Road Bikes. Therefore, these aren't considered different. For simple additive measures like this, the algorithm is looking for differences in the *relative* value.
 
-By contrast, consider a measure like margin calculated as Profit/Cost. If the overall margins for the USA and Canada were the following:
+By contrast, consider a measure like *margin* calculated as Profit/Cost. If the overall margins for the USA and Canada were the following:
 
 |Country/Region  |Margin (%)|
 |---------|----------|
@@ -88,9 +88,9 @@ Given the nature of such measures, this *is* interestingly different. For non-ad
 
 The visuals displayed are thus intended to show the differences found between the overall distribution, as seen in the original visual, and the value with the particular filter applied.
 
-For additive measures, like *Sales* in the previous example, a column and line chart is used, where the use of a dual axis with appropriate scaling such that the relative values can be compared. The columns show the value with the filter applied, and the line shows the overall value. The column axis is on the left, and the line axis is on the right, as normal. The line is shown using a *stepped* style, with a dashed line, filled with grey. For the previous example, if the column axis maximum value is 4, and the line axis maximum value is 20, then it would allow easy comparison of the relative values between USA and Canada for the filtered and overall values.
+For additive measures, like *Sales* in the previous example, a column and line chart is used. There, the use of a dual axis with appropriate scaling is such that the relative values can be compared. The columns show the value with the filter applied, and the line shows the overall value. The column axis is on the left, and the line axis is on the right, as normal. The line is shown using a *stepped* style, with a dashed line, filled with grey. For the previous example, if the column axis maximum value is 4, and the line axis maximum value is 20, then it would allow easy comparison of the relative values between USA and Canada for the filtered and overall values.
 
-Similarly, for non-additive measures like *Margin* in the previous example, a column and line chart is used, where the use of a single axis means the absolute values can easily be compared. The line filled with grey shows the overall value. Whether comparing actual or relative numbers, the determination of the degree to which two distributions are different isn't simply a matter of calculating the difference in the values. For example:
+Similarly, for non-additive measures like margin in the previous example, a column and line chart is used, where the use of a single axis means the absolute values can easily be compared. The line filled with grey shows the overall value. Whether comparing actual or relative numbers, the determination of the degree to which two distributions are different isn't simply a matter of calculating the difference in the values. For example:
 
 * When the size of the population is factored in, a difference is less statistically significant and less interesting when it applies to a smaller proportion of the overall population. For example, the distribution of sales across countries/regions might be different for a particular product. This wouldn't be interesting if there were thousands of products, so that particular product accounted for only a small percentage of the overall sales.
 
