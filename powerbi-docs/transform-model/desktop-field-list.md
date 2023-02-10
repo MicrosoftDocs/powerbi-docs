@@ -1,6 +1,6 @@
 ---
 title: Use the Field list in Power BI Desktop
-description: Learn how to use the Field list to model data and create reports in Power BI Desktop, and how the user interface (UI) has changed.
+description: Learn how the user interface (UI) for the Field lists, and the icons in the list, have changed in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
