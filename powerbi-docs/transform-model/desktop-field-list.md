@@ -1,6 +1,6 @@
 ---
 title: Use the Field list in Power BI Desktop
-description: Learn how the user interface (UI) for the Field lists, and the icons in the list, have changed in Power BI Desktop.
+description: Learn how the user interface (UI) for the Field list, and the icons in the list, have changed in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -28,9 +28,9 @@ The intent is to improve Power BI Desktop usability. The changes should be minim
 
 ## Field list changes
 
-The following tables show the field list updates.
+The following tables show the Field list updates.
 
-|**Original field list (Model view)**  | **New field list (Model view)**  |
+|**Original Field list (Model view)**  | **New Field list (Model view)**  |
 |:---------:|:---------:|
 |**Original** |**New** |
 |**Icons and UI**       ||
