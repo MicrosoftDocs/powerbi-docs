@@ -35,7 +35,7 @@ With Analyze in Excel or the Power BI dataset experience in Excel, you've connec
 
 Start adding fields from the PivotTable Fields into the Excel grid to create your own PivotTable report or perform validation analysis on your data. 
 
-:::image type="content" source="media/service-analyze-power-bi-datasets-excel/analyze-pivottable.png" alt-text="Screenshot showing PivotTable and PivotChart." lightbox="media/service-analyze-power-bi-datasets-excel/analyze-pivottable.png":::
+:::image type="content" source="media/service-analyze-power-bi-datasets-excel/connected-excel-table.png" alt-text="Screenshot showing PivotTable and PivotChart." lightbox="media/service-analyze-power-bi-datasets-excel/connected-excel-table.png":::
 
 ## Analyze your Power BI data with Excel tables 
 
