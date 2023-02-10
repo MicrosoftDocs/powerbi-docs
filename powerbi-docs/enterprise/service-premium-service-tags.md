@@ -17,9 +17,9 @@ You can use *Azure service tags* with Power BI to enable an [Azure SQL Managed I
 
 The following configurations are necessary to successfully enable the endpoints for use in the Power BI service:
 
-1. Enable a public endpoint in the SQL Managed Instance
-2. Create a Network Security Group rule to allow inbound traffic
-3. Enter the credentials in Power BI
+1. Enable a public endpoint in the SQL Managed Instance.
+2. Create a Network Security Group rule to allow inbound traffic.
+3. Enter the credentials in Power BI.
 
 The following sections look at each of these steps in turn.
 
@@ -127,7 +127,7 @@ $nsg | Set-AzNetworkSecurityGroup
 
 ```
 
-## Enter the credentials in the Power BI service
+## Enter the credentials in Power BI
 
 The last part of the process is entering the credentials in the Power BI service. 
 
@@ -137,7 +137,7 @@ The last part of the process is entering the credentials in the Power BI service
 
     :::image type="content" source="media/service-premium-service-tags/power-bi-service-settings.png" alt-text="Screenshot of the settings dropdown menu.":::
 
-3. Under **Datasets**, expand the **Data source credentials** section, as shown in the following image.
+3. Under **Datasets**, expand the **Data source credentials** section.
 
     :::image type="content" source="media/service-premium-service-tags/service-tags-dataset.png" alt-text="Screenshot of the edit credentials option in the Datasets tab":::
 
