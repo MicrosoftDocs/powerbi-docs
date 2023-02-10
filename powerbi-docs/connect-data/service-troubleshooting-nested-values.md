@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Nested Values returned as Text in Power BI Service
-description: Learn about how to fix nested values being converted to a string when using improper data source privacy settings
+description: Learn about how to fix nested values being converted to a string when using improper data source privacy settings.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,46 +8,55 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 09/23/2022
+ms.date: 02/10/2023
 LocalizationGroup: Reports
 ---
-# Troubleshooting Nested Values returned as Text in Power BI Service
+# Troubleshooting nested values returned as text in the Power BI service
 
 ## Cause
 
-In the past, there have been cases where a Power BI report refreshed fine in the Desktop, but failed on the Power BI service with an error like “We cannot convert the value "[Table]" to type Table”. One of the causes of this error is that when the Data Privacy Firewall buffers a data source, nested non-scalar values (such as tables, records, lists, and functions) are automatically converted to text values (such as “[Table]” or “[Record]”).
+In the past, there have been cases where a report refreshes in Power BI Desktop, but fails on the Power BI service with an error like this text:
 
-Now that the Power BI service supports the setting of privacy levels (or turning off the Firewall entirely), such errors can be avoided by [configuring the data source privacy settings](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) in the Power BI service to be non-Private.
+```output
+We cannot convert the value "[Table]" to type Table
+```
 
-Starting with June Power BI, when the Firewall buffers a nested table/record/list/etc., instead of silently converting such values to text, the following error will be produced: 
+One of the causes of this error involves nested non-scalar values, such as tables, records, lists, and functions. When the Data Privacy Firewall buffers a data source, nested non-scalar values are converted to text values, such as `"[Table]"` or `"[Record]"`.
 
-`We cannot return a value of type Table in this context`
+The Power BI service now supports the setting of privacy levels or turning off the Firewall entirely. The errors can be avoided by [configuring the data source privacy settings](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) in the Power BI service to be *non-Private*.
+
+For more recent versions of Power BI, when the Firewall buffers a nested table, record, or list, it doesn't silently convert non-scalar values to text. Instead, it shows an error:
+
+```output
+We cannot return a value of type Table in this context
+```
 
 ## Effect on Load/Refresh
 
-While the change is motivated by Firewall buffering, its impact extends to Load/Refresh as well. In order to address the Firewall buffering behavior, we also had to change the behavior of loading nested tables/records/etc. to the Power BI Model and the Excel Data Model in PQ for Excel. Before, nested tables/records/etc. would be loaded as text values (such as “[Table]” or “[Record]”). They'll now be treated as errors, which will result in a null value in the loaded table and an error count increment in the load results.
+This change motivated by Firewall buffering extends to Load/Refresh, as well. The behavior of loading nested tables, records, and lists to the Power BI Model and the Excel Data Model in Power Query for Excel has changed. Before, nested items were loaded as text values, such as `"[Table]"` or `"[Record]"`. Now, they're treated as errors. A `null` value is in the loaded table and error count increments in the load results.
 
-Since these errors only occur during Load/Refresh, they will not appear in the Power Query Editor.
+Since these errors only occur during Load/Refresh, they don't appear in the Power Query Editor.
 
 ### Before
 
 - Load/Refresh with no errors
-- Loaded table contains “[Table]”, “[Record]”, etc.
- 
+- Loaded table contains `"[Table]"`, `"[Record]"`, and so forth.
 
 ### After
 
 - Load/Refresh with errors
-- Loaded table contains NULLs (instead of “[Table]”, “[Record]”, etc.)
- 
+- Loaded table contains `null`, instead of `"[Table]"`, `"[Record]"`, and so forth.
 
 ## Resolution
 
-Are you loading a column that contains non-scalar values (for example tables, lists, records, etc.)?
-If so, you should be able to eliminate the errors by removing the column.
-If you cannot remove the column, you should be able to replicate the old behavior by adding a custom column and using logic like the following sample:
+Are you loading a column that contains non-scalar values, for example, tables, lists, or records? If so, you should be able to eliminate the errors by removing the column.
 
-`if [MyColumn] is table then "[Table]" else if [MyColumn] is record then "[Record]" else if [MyColumn] is list then "[List]" else if [MyColumn] is function then "[Function]" else [MyColumn]`
+If you can't remove the column, try to replicate the old behavior by adding a custom column and using logic like the following sample:
 
-Does the issue repro in Power BI Desktop if you set all your data source privacy settings to Private?
-If so, you should be able to resolve the error by [configuring their data source privacy settings](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) in the Power BI service to be non-Private.
+```output
+if [MyColumn] is table then "[Table]" else if [MyColumn] is record then "[Record]" 
+else if [MyColumn] is list then "[List]" else if [MyColumn] is function 
+then "[Function]" else [MyColumn]
+```
+
+Does the issue reproduce in Power BI Desktop if you set all your data source privacy settings to Private? If so, try to resolve the error by [configuring their data source privacy settings](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) in the Power BI service to be non-Private.
