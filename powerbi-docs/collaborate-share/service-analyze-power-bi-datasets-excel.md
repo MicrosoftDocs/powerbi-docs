@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/06/2023
+ms.date: 02/10/2023
 LocalizationGroup: Share your work
 ---
 # Design refreshable reports in Excel with Power BI data
