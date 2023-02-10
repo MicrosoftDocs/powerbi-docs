@@ -1,7 +1,7 @@
 ---
 title: "Data regions and maps in a paginated report | Microsoft Docs"
 description: Explore the types and characteristics of data regions and maps to design the display from your paginated report datasets in Power BI Report Builder.  
-ms.date: 01/30/2023
+ms.date: 02/10/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -55,6 +55,6 @@ ms.reviewer: monaraya
  For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
   
 ## Next Steps 
- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
- [Power BI Report Builder](report-builder-power-bi.md)   
+ [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
+ [Power BI Report Builder](../report-builder-power-bi.md)   
  [Page Layout and Rendering &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs.md)    
