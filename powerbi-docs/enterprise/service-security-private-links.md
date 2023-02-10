@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 02/10/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -251,7 +251,7 @@ The next step, is to create a private endpoint for Power BI.
     |Subnet	|Select *mySubnet* |
     |**PRIVATE DNS INTEGRATION** ||
     |Integrate with private DNS zone|	Select **Yes** |
-    |Private DNS Zone	|Select <br> *(New)privatelink.analysis.windows.net* <br> *(New)privatelink.pbidedicated.windows.net* <br> *(New)privatelink.tip1.powerquery.microsoft.com* |
+    |Private DNS Zone	|Select <br> *(New)privatelink.analysis.windows.net* <br> *(New)privatelink.pbidedicated.windows.net* <br> *(New)privatelink.prod.powerquery.microsoft.com* |
     
     The following image shows the **Create a private endpoint - Configuration** window.
     
@@ -317,6 +317,7 @@ There are a few considerations to keep in mind while working with private endpoi
 * When private links are enabled for Power BI, an on-premises data gateway (personal mode) will fail to register.
 * Private Links resource REST APIs don't support tags.
 * You can't set up a private link to be used by more than one tenant. 
+* Paginated reports don't currently work with private links.
 
 ## Next steps
 
