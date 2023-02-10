@@ -35,7 +35,7 @@ In Power BI Desktop, you can use the link that you just copied to the clipboard.
 
 1. In Power BI Desktop, select **Get data** > **Web**.
 
-   :::image type="content" source="Screenshot of the Get Data ribbon in Power BI Desktop, showing the Web selection." alt-text="media/desktop-use-onedrive-business-links/power-bi-web-link-onedrive.png" border="true":::
+   :::image type="content" source="media/desktop-use-onedrive-business-links/power-bi-web-link-onedrive.png" alt-text="Screenshot of the Get Data ribbon in Power BI Desktop, showing the Web selection." border="true":::
 
 1. With the **Basic** option selected, paste the link into the **From Web** dialog.
 
