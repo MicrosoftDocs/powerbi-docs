@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/29/2021
+ms.date: 02/10/2023
 LocalizationGroup: Transform and shape data
 ---
 # Formula editor in Power BI Desktop
