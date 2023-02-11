@@ -96,16 +96,16 @@ The request body might resemble the following code:
 
 ### Parameters
 
-To do an enhanced refresh operation, you must specify one or more parameters in the request body. Parameters can specify the default or an optional value. When parameters are specified, all other parameters apply to the operation with the default values. If no parameters are specified, other parameters aren't applied and a standard refresh operation is done.
+To do an enhanced refresh operation, you must specify one or more parameters in the request body. Specified parameters can specify the default or an optional value. When the request specifies parameters, all other parameters apply to the operation with their default values. If the request specifies no parameters, all parameters use their default values and a standard refresh operation happens.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
-|`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types are aligned with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. The `add` type isn't supported.      |
-|`commitMode`    |   Enum       |    `transactional`     |     Determines whether to commit objects in batches or only when complete. Modes include `transactional` and `partialBatch`.     |
-|`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads to run processing commands in parallel. This value aligns with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
+|`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types align with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. The `add` type isn't supported.      |
+|`commitMode`    |   Enum       |    `transactional`     |     Determines whether to commit objects in batches or only when complete. Modes are `transactional` and `partialBatch`.     |
+|`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads that can run the processing commands in parallel. This value aligns with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
 |`retryCount`     |       Int   |    `0`     |    Number of times the operation retries before failing.      |
-|`objects`     |    Array      |    Entire dataset      |    An array of objects to process. Each object includes `table` when processing the entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire dataset refreshes.      |
-|`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, a process full operation leaves partition definitions unchanged, and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` must be `false`, and `applyRefreshPolicy` set to `true` isn't supported. |
+|`objects`     |    Array      |    Entire dataset      |    An array of objects to process. Each object includes `table` when processing an entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire dataset refreshes.      |
+|`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, the full process leaves partition definitions unchanged and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` of `true` isn't supported, and `applyRefreshPolicy` must be set to `false`.|
 |`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date.       |
 
 ### Response
@@ -184,7 +184,7 @@ GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top
 
 ## GET /refreshes/\<requestId>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the `requestId`. If the operation is in progress, `status` returns`InProgress`. The following code shows an example of a response body:
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the `requestId`. If the operation is in progress, `status` returns `InProgress`. The following code shows an example of a response body:
 
 ```json
 {
@@ -233,7 +233,7 @@ The refresh operation has the following limitations:
 
 If capacity is paused manually in the Power BI portal or by using PowerShell, or a system outage occurs, the status of any ongoing enhanced refresh operation remains `InProgress` for a maximum of six hours. If the capacity resumes within six hours, the refresh operation resumes automatically. If the capacity resumes after longer than six hours, the refresh operation might return a timeout error. The refresh operation must then be run again.
 
-### Dataset eviction issue
+### Dataset eviction
 
 Power BI uses dynamic memory management to optimize capacity memory. If the dataset is evicted from memory during a refresh operation, the following error might return:
 
