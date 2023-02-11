@@ -96,7 +96,7 @@ The request body might resemble the following code:
 
 ### Parameters
 
-To do an enhanced refresh operation, you must specify one or more parameters in the request body. Specified parameters can specify the default or an optional value. When the request specifies parameters, all other parameters apply to the operation with their default values. If the request specifies no parameters, all parameters use their default values and a standard refresh operation happens.
+To do an enhanced refresh operation, you must specify one or more parameters in the request body. Specified parameters can specify the default or an optional value. When the request specifies parameters, all other parameters apply to the operation with their default values. If the request specifies no parameters, all parameters use their default values, and a standard refresh operation happens.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
@@ -105,7 +105,7 @@ To do an enhanced refresh operation, you must specify one or more parameters in 
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads that can run the processing commands in parallel. This value aligns with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
 |`retryCount`     |       Int   |    `0`     |    Number of times the operation retries before failing.      |
 |`objects`     |    Array      |    Entire dataset      |    An array of objects to process. Each object includes `table` when processing an entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire dataset refreshes.      |
-|`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, the full process leaves partition definitions unchanged and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` of `true` isn't supported, and `applyRefreshPolicy` must be set to `false`.|
+|`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, the full process leaves partition definitions unchanged, and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` of `true` isn't supported, and `applyRefreshPolicy` must be set to `false`.|
 |`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date.       |
 
 ### Response
