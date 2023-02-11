@@ -19,11 +19,11 @@ Optimized refresh for large and complex partitioned datasets is traditionally in
 
 The Power BI Refresh Dataset REST API enables dataset refresh operations to be carried out asynchronously. Long-running HTTP connections from client applications aren't necessary. Compared to standard refresh operations, *enhanced refresh* with the REST API provides more customization options and the following features that are helpful for large models:
 
-- Batched commits.
-- Table and partition-level refreshes.
-- Incremental refresh policies.
-- `GET` refresh details.
-- Refresh cancellation.
+- Batched commits
+- Table and partition-level refresh
+- Incremental refresh policies
+- `GET` refresh details
+- Refresh cancellation
 
 > [!NOTE]
 > - Previously, this feature was called *asynchronous refresh with REST API*. However, a standard refresh that uses the Refresh Dataset REST API also runs asynchronously by its inherent nature.
@@ -164,12 +164,12 @@ The following code shows an example of a response body:
 
 |Name  |Type  |Description  |
 |---------|---------|---------|
-|`requestId`     |    Guid     |    The identifier of the refresh request. You need `requestId` to query for individual refresh operation status or delete (cancel) an in-progress refresh operation. |
+|`requestId`     |    Guid     |    The identifier of the refresh request. You need `requestId` to query for individual refresh operation status or cancel an in-progress refresh operation. |
 |`refreshType`   |   Enum      |    `OnDemand` indicates the refresh was triggered interactively through the Power BI portal.<br>`Scheduled` indicates the refresh was triggered by the dataset refresh schedule. <br>`ViaApi` indicates the refresh was triggered by an API call. <br>`ViaEnhancedApi` indicates that an enhanced refresh was triggered by an API call.   |
-|`startTime`     |    DateTime     |    Date and time of refresh start.     |
-|`endTime`     |   DateTime      |    Date and time of refresh end.     |
+|`startTime`     |    Date     |    Date and time of refresh start.     |
+|`endTime`     |   Date      |    Date and time of refresh end.     |
 |`status`     |  Enum       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates the refresh was disabled by selective refresh. <br>`Cancelled` indicates the refresh was cancelled successfully.|
-|`extendedStatus`     |    string     |   Augments the `status` property to provide more information.     |
+|`extendedStatus`     |    String     |   Augments the `status` property to provide more information.     |
 
 > [!NOTE]
 > In Azure Analysis Services, the completed `status` result is `succeeded`. If you migrate an Azure Analysis Services solution to Power BI, you might have to modify your solutions.
