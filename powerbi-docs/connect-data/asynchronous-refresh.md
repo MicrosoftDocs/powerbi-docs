@@ -54,7 +54,7 @@ You need the following requirements to use the REST API:
 All calls must authenticate with a valid Azure Active Directory (Azure AD) OAuth 2 token in the Authorization header. The token must meet the following requirements:
 
 - Be either a user token or an application service principal.
-- Have the audience set to `https://api.powerbi.com`.
+- Have the audience correctly set to `https://api.powerbi.com`.
 - Be used by a user or application that has sufficient permissions on the dataset.
 
 > [!NOTE]
@@ -96,7 +96,7 @@ The request body might resemble the following code:
 
 ### Parameters
 
-To perform an enhanced refresh operation, you must specify one or more parameters in the request body. Parameters can specify the default or an optional value. When parameters are specified, all other parameters apply to the operation with the default values. If no parameters are specified, other parameters aren't applied and a standard refresh operation is done.
+To do an enhanced refresh operation, you must specify one or more parameters in the request body. Parameters can specify the default or an optional value. When parameters are specified, all other parameters apply to the operation with the default values. If no parameters are specified, other parameters aren't applied and a standard refresh operation is done.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
@@ -105,7 +105,7 @@ To perform an enhanced refresh operation, you must specify one or more parameter
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads to run processing commands in parallel. This value aligns with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
 |`retryCount`     |       Int   |    `0`     |    Number of times the operation retries before failing.      |
 |`objects`     |    Array      |    Entire dataset      |    An array of objects to process. Each object includes `table` when processing the entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire dataset refreshes.      |
-|`applyRefreshPolicy`    |    Boolean     |    `true`     |   Modes are `true` or `false`. If an incremental refresh policy is defined, determines whether to apply the policy. If the policy isn't applied, a `process full` operation leaves partition definitions unchanged and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` must be `false`, and `applyRefreshPolicy` set to `true` isn't supported. |
+|`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, a process full operation leaves partition definitions unchanged, and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` must be `false`, and `applyRefreshPolicy` set to `true` isn't supported. |
 |`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date.       |
 
 ### Response
@@ -114,7 +114,7 @@ To perform an enhanced refresh operation, you must specify one or more parameter
 202 Accepted
 ```
 
-The response also includes a Location response-header field to point the caller to the refresh operation that was just created and accepted. The Location is the location of the new resource the request created, which includes the `requestId` that some enhanced refresh operations require. For example, in the following response, `requestId` is the last identifier in the response `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
+The response also includes a `Location` response-header field to point the caller to the refresh operation that was created and accepted. The `Location` is the location of the new resource the request created, which includes the `requestId` that some enhanced refresh operations require. For example, in the following response, `requestId` is the last identifier in the response `87f31ef7-1e3a-4006-9b0b-191693e79e9e`.
 
 ```json
 x-ms-request-id: 87f31ef7-1e3a-4006-9b0b-191693e79e9e
@@ -168,7 +168,7 @@ The following code shows an example of a response body:
 |`refreshType`   |   Enum      |    `OnDemand` indicates the refresh was triggered interactively through the Power BI portal.<br>`Scheduled` indicates the refresh was triggered by the dataset refresh schedule. <br>`ViaApi` indicates the refresh was triggered by an API call. <br>`ViaEnhancedApi` indicates that an enhanced refresh was triggered by an API call.   |
 |`startTime`     |    Date     |    Date and time of refresh start.     |
 |`endTime`     |   Date      |    Date and time of refresh end.     |
-|`status`     |  Enum       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates the refresh was disabled by selective refresh. <br>`Cancelled` indicates the refresh was cancelled successfully.|
+|`status`     |  Enum       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates the refresh was disabled by selective refresh. <br>`Cancelled` indicates the refresh was canceled successfully.|
 |`extendedStatus`     |    String     |   Augments the `status` property to provide more information.     |
 
 > [!NOTE]
