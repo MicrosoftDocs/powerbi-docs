@@ -48,13 +48,11 @@ If you distribute an app from a workspace, removing people's access to the app d
 
    ![Screenshot that shows Update app on the workspace list page.](media/service-datasets-build-permissions/power-bi-app-update.png)
 
-1. Select the **Permissions** tab, and then on the **Access** screen, hover over the person or group whose access you want to delete and select the trash icon that appears.
+1. Select the **Audience** tab, and then in the **Manage Audience Access** side pane, hover over the person or group whose access you want to delete and select the trash icon that appears. When you're done, select **Update app**.
 
-   ![Screenshot that shows selecting the X next to a person's name to remove their permissions.](media/service-datasets-build-permissions/power-bi-app-delete-user.png)
+    :::image type="content" source="media/service-datasets-build-permissions/power-bi-app-delete-user.png" alt-text="Screenshot that shows selecting the trash can icon next to a person's name to remove their permissions.":::
 
-1. Select **Update app**.
-
-   You see a message that you need to go to **Manage permissions** to remove permissions for users with existing access.
+   You'll see a message that you need to go to **Manage permissions** to remove permissions for users with existing access.
 
    :::image type="content" source="media/service-datasets-build-permissions/power-bi-dataset-app-remove-message.png" alt-text="Screenshot of the Manage permissions message.":::
 
