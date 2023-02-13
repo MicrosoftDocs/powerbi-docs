@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 01/17/2023
+ms.date: 02/10/2023
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -54,7 +54,7 @@ In other words, `categorical` might be defined in `dataViewMappings` but other m
 
 The `conditions` section establishes rules for a particular data mapping. If the data matches one of the described sets of conditions, the visual accepts the data as valid.
 
-Currently, for each field, you can specify a minimum and maximum value. The value represents the number of fields that can be bound to that data role.
+For each field, you can specify a minimum and maximum value. The value represents the number of fields that can be bound to that data role.
 
 > [!NOTE]
 > If a data role is omitted in the condition, it can have any number of fields.
@@ -348,7 +348,7 @@ Power BI produces a categorical data view with the following set of categories.
 Each `category` maps to a set of `values`. Each of these `values` is grouped by `series`, which is expressed as years.
 
 For example, each `values` array represents one year.
-Also, each `values` array has four values: Canada, USA, UK, and Mexico:
+Also, each `values` array has four values: Canada, USA, UK, and Mexico.
 
 ```JSON
 {
