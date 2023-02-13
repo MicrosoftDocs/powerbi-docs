@@ -19,11 +19,11 @@ Print an entire dashboard, a dashboard tile, a report page, or a report visual f
 
 ## Print considerations
 
-Most Power BI dashboards and reports are created by report *designers* for use online and to look amazing when displayed on a various of devices. Your browser controls how the content looks on paper when you print a report.
+Most Power BI dashboards and reports are created by report *designers* for use online and to look amazing when displayed on various of devices. When you print a report, your browser controls how the content looks on paper.
 
 There are browser settings to adjust the printout, but you still might not get the result you want. Consider [exporting your report to PDF](end-user-pdf.md), then print the PDF instead.
 
-## Adjust browser print settings
+## Adjust your browser print settings
 
 When you print from Power BI, your browser opens a Print window. Every browser has a different Print window, but they all have similar options available to use and control the look of your printout.
 
