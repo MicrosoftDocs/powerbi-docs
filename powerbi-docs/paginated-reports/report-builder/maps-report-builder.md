@@ -212,26 +212,18 @@ ms.reviewer: monaraya
 ##  <a name="HowTo"></a> How-to topics  
  This section lists procedures that show you, step by step, how to work with maps and map layers in your reports.  
   
-- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs)  
-  
+- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs)   
 - [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-and-associated-rules-report-builder.md)
-  
 - [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs)  
   
 ##  <a name="Section"></a> Next steps
- [Plan a Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs)  
-  
- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs)  
-  
- [Customize the display of a map or map layer in a paginated report (Power BI Report Builder)](customize-data-and-display-map-map-layer-report-builder.md)
-  
- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
-  
- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs)  
-  
- [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-and-associated-rules-report-builder.md)  
-  
- [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs)  
-  
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
+
+- [Plan a Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs)  
+- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs)  
+- [Customize the display of a map or map layer in a paginated report (Power BI Report Builder)](customize-data-and-display-map-map-layer-report-builder.md)
+- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
+- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs)  
+- [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-and-associated-rules-report-builder.md)  
+- [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs)  
+- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
   

@@ -4,7 +4,7 @@ description: Learn how to change map legends in a paginated report to help users
 ms.date: 02/13/2023
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: monaraya
@@ -28,7 +28,7 @@ Legends include the following parts of a map:
   
 1.  In Design view, right-click the legend and open the _\<report item>_**Properties** page.  
   
-2.  In **Position**, click the location that specifies where to display the legend relative to the viewport.  
+2.  In **Position**, select the location that specifies where to display the legend relative to the viewport.  
   
 3.  To display the legend outside the viewport, select **Show \<report item> outside viewport**.  
   
@@ -42,49 +42,49 @@ Legends include the following parts of a map:
   
 1.  In Design view, right-click the legend and open the **Legend Properties** page.  
   
-2.  In **Legend layout**, click the table layout that you want to use for the legend. As you click different options, the layout on the design surface changes.  
+2.  In **Legend layout**, select the table layout that you want to use for the legend. As you select different options, the layout on the design surface changes.  
   
 3.  Select **OK**.
   
 ##  <a name="MapLegendTitle"></a> Show or hide a map legend title  
   
   
--   Right-click the map legend on the design surface, and then click **Show Legend Title**.  
+-   Right-click the map legend on the design surface, and then select **Show Legend Title**.  
   
 ##  <a name="ColorScaleTitle"></a> Show or hide a color scale title  
   
   
--   Right-click the color scale on the design surface, and then click **Show Color Scale Title**.  
+-   Right-click the color scale on the design surface, and then select **Show Color Scale Title**.  
   
 ##  <a name="MoveItems"></a> Move items out of the first legend  
  Create as many additional legends as you need and then update the rules for each map layer specify which legend to display the rule results in.  
   
 #### Create a new legend  
   
--   In Design view, right-click the map outside the map viewport, and then click **Add Legend**.  
+-   In Design view, right-click the map outside the map viewport, and then select **Add Legend**.  
   
      A new legend appears on the map.  
   
 #### Display rule results in a legend  
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want and then click _\<map element type>_**Color Rule**.  
+2.  Right-click the layer that has the data that you want and then select _\<map element type>_**Color Rule**.  
   
-3.  Click **Legend**.  
+3.  Select **Legend**.  
   
-4.  In the **Show in this legend** drop-down list, click the name of the legend to display the rule results in.  
+4.  In the **Show in this legend** drop-down list, select the name of the legend to display the rule results in.  
   
 5.  Select **OK**.
   
 ##  <a name="TemplateStyle"></a> Vary map element colors based on a template style  
 
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want and then click _\<map element type>_**Color Rule**.  
+2.  Right-click the layer that has the data that you want and then select _\<map element type>_**Color Rule**.  
   
-3.  Click **Apply template style**.  
+3.  Select **Apply template style**.  
   
      A template style specifies font, border style, and color palette. Each map element is assigned a different color from the color palette for the theme that was specified in the Map Wizard or Map Layer Wizard. This is the only option that applies to layers that do not have associated analytical data.  
   
@@ -93,11 +93,11 @@ Legends include the following parts of a map:
 ##  <a name="ColorPalette"></a> Vary map element colors based on color palette  
   
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Color Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Color Rule**.  
   
-3.  Click **Visualize data by using color palette**.  
+3.  Select **Visualize data by using color palette**.  
   
      This option uses a built-in or custom palette that you specify. Based on related analytical data, each map element is assigned a different color or shade of color from the palette.  
   
@@ -110,11 +110,11 @@ Legends include the following parts of a map:
 ##  <a name="ColorRanges"></a> Vary map element colors based on color ranges  
 
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Color Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Color Rule**.  
   
-3.  Click **Visualize data by using color ranges**.  
+3.  Select **Visualize data by using color ranges**.  
   
      This option, combined with the start, middle, and end colors that you specify on this page and the options that you specify on the **Distribution** page, divide the related analytical data into ranges. The report processor assigns the appropriate color to each map element based on its associated data and the range that it falls into.  
   
@@ -131,30 +131,30 @@ Legends include the following parts of a map:
 ##  <a name="CustomColors"></a> Vary map element colors based on custom colors  
   
  
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Color Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Color Rule**.  
   
-3.  Click **Visualize data by using custom colors**.  
+3.  Select **Visualize data by using custom colors**.  
   
      This option uses the list of colors that you specify. Based on related analytical data, each map element is assigned a color from the list. If there are more map elements than colors, no color is assigned.  
   
 4.  In **Data field**, type the name of the field that contains the analytical data that you want to visualize by color.  
   
-5.  In **Custom colors**, click **Add** to specify each custom color.  
+5.  In **Custom colors**, select **Add** to specify each custom color.  
   
 6.  Select **OK**.
   
 ##  <a name="DistributionOptions"></a> Set distribution options for a legend  
   
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Color Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Color Rule**.  
   
 3.  Select the **Visualize data by using** \<rule type> option. To use distribution options, you must create ranges on the **Distribution** page based on analytical data that is associated with the layer.  
   
-4.  Click **Distribution**.  
+4.  Select **Distribution**.  
   
 5.  Select one of the following distribution types:  
   
@@ -179,18 +179,18 @@ Legends include the following parts of a map:
 ##  <a name="RuleLegend"></a> Change the contents of a rule legend  
 
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Rule**.  
   
 3.  Verify that **Visualize data by using** \<*rule type*> is selected.  
   
 4.  In **Data field**, verify that the analytical data that you are visualizing on the layer is selected.  
   
     > [!NOTE]  
-    >  If no fields appear in the drop-down list, right-click the layer, and then click **Layer Data** to open the Map Layer Data Properties Dialog Box, Analytical Data page and verify that you have specified analytical data for this layer.  
+    >  If no fields appear in the drop-down list, right-click the layer, and then select **Layer Data** to open the Map Layer Data Properties Dialog Box, Analytical Data page and verify that you have specified analytical data for this layer.  
   
-5.  Click **Legend**.  
+5.  Select **Legend**.  
   
 6.  In **Show in this legend**, select the map legend to use to display the rule results.  
   
@@ -199,18 +199,18 @@ Legends include the following parts of a map:
 ##  <a name="ColorScale"></a> Change the contents of the color scale  
   
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Color Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Color Rule**.  
   
 3.  Select the color rule option to use. To display items in a map legend or color scale, you must select one of the **Visualize data by using** \<rule type> options.  
   
 4.  In **Data field**, verify that the analytical data that you are visualizing on the layer is selected.  
   
     > [!NOTE]  
-    >  If no fields appear in the drop-down list, right-click the layer, and then click **Layer Data** to open the Map Layer Data Properties Dialog Box, Analytical Data page and verify that you have specified analytical data for this layer.  
+    >  If no fields appear in the drop-down list, right-click the layer, and then select **Layer Data** to open the Map Layer Data Properties Dialog Box, Analytical Data page and verify that you have specified analytical data for this layer.  
   
-5.  Click **Legend**.  
+5.  Select **Legend**.  
   
 6.  In **Color scale options**, select **Show in color scale** to display the rule results in the color scale. You can specify this option for more than one color rule.  
   
@@ -219,11 +219,11 @@ Legends include the following parts of a map:
 ##  <a name="HideItems"></a> Remove all items from a legend  
 
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Rule**.  
   
-3.  Click **Legend**.  
+3.  Select **Legend**.  
   
 4.  Select **OK**.
   
@@ -232,11 +232,11 @@ Legends include the following parts of a map:
  Set legend options for the rule that is associated with the map legend using the below steps:  
   
   
-1.  In Design view, click the map until the Map pane appears.  
+1.  In Design view, select the map until the Map pane appears.  
   
-2.  Right-click the layer that has the data that you want, and then click _\<map element type>_**Rule**.  
+2.  Right-click the layer that has the data that you want, and then select _\<map element type>_**Rule**.  
   
-3.  Click **Legend**.  
+3.  Select **Legend**.  
   
 4.  **Legend text** displays keywords that specify which data appears in the legend. Use map keywords and custom formats to help control the format of legend text. For example, #FROMVALUE {C2} specifies a currency format with two decimal places. For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
