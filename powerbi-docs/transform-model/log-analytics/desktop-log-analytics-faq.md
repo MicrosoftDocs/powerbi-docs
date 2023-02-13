@@ -34,7 +34,7 @@ This article is a collection of Frequently Asked Questions (FAQ) for reference d
 
 *Answer:*  Yes, you'll need some help from administrators:  
 OPTION 1:  
-An Azure admin can grant you Owner rights in Log Analytics only to perform the initial configuration in Power BI. After this, they can reduce your access to Contributor or lower as required.  
+An Azure admin can grant you Owner rights in Log Analytics only to perform the initial configuration in Power BI. After you complete the initial configuration, they can reduce your access to Contributor or lower as required.  
 OPTION 2:  
 For workspace level configuration, you can add an Azure admin as a Power BI Workspace admin and ask them to configure logging for your workspace. After logging is configured, you can remove their access to your workspace.
 
