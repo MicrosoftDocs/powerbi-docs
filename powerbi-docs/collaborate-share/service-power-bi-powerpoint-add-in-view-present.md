@@ -79,7 +79,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ### Data options
 
-![Screenshot of Power B I add-in for PowerPoint report options menu.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-report-options.png)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-data-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint report options menu.":::
 
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) and copies them to the clipboard as text.
@@ -90,30 +90,30 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ![Screenshot of Power B I add-in for PowerPoint style options menu.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png)
 
-* **Outline**: 
+* **Outline**: Puts a border around the add-in.
 
 ### Add-in options
 
 ![Screenshot of Power BI add-in for PowerPoint add-in options menu.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-options.png)
 
-* **Clear**: Removes the report page from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in a new report page URL.
+* **Clear**: Removes the report page or visual from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in the URL of a different report page or visual.
 * **Learn**: Opens help pages.
 
 ### Expand/collapse toolbar
 
 ![Screenshot of Power B I add-in for PowerPoint expand/collapse toolbar control.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-expand-collapse-toolbar.png)
 
-Expands or collapses the toolbar across the bottom of the report. This feature is particularly useful in Slide Show mode, when you need more space and want a cleaner display.
+Expands or collapses the toolbar across the bottom of the report or visual. This feature is particularly useful in Slide Show mode, when you need more space and want a cleaner display.
 
 ### Add-in side pane
 
 ![Screenshot of Power B I add-in for PowerPoint add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-sidebar.png)
 * **Delete**: Removes the add-in from the PowerPoint slide.
-* **Reload**: Reloads the report page. Use this option if visuals have been changed, added or deleted. The report page reloads every time PowerPoint is opened, so you need to use this option only if the report has changed while you’ve had PowerPoint open.
+* **Reload**: Reloads the report page or visual. Use this option if the visuals in a report have been changed, added or deleted. The report page reloads every time PowerPoint is opened, so you need to use this option only if the report has changed while you’ve had PowerPoint open.
 
     If all you want to do is refresh the data, use the **Refresh** option in the [Report options](#report-options) menu instead.
 
-* **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
+* **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report or visual will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
 
 > [!NOTE]
 > The add-in side pane is available only in the PowerPoint desktop application. It isn't supported in PowerPoint for the web.
