@@ -111,7 +111,9 @@ The following report server item types, however, can't be migrated to Power BI:
 
 If your .rdl reports rely on features [not yet supported by Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](/power-bi/consumer/end-user-reports), when it makes sense.
 
-If your .rdl reports need to retrieve data from _on-premises data sources_, they can't use single sign-on (SSO). Currently, all data retrieval from these sources will be done by using the security context of the _gateway data source user account_. It's not possible for SQL Server Analysis Services (SSAS) to enforce row-level security (RLS) on a per-user basis.
+Supported data sources for paginated reports in the Power BI service can be explained in this article.[Supported data sources for Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-data-sources#other-data-sources)
+
+Power BI allows for mapping user names for Analysis Services data sources. The map user names feature is a great way to work around when your user name in Azure Active Directory (Azure AD) doesn't match a UPN in your local Active Directory instance.  To learn more check out this article [Manage your data source - Analysis Services - Power BI](/power-bi/connect-data/service-gateway-enterprise-manage-ssas#user-names-with-analysis-services).
 
 Generally, Power BI paginated reports are optimized for **printing**, or **PDF generation**. Power BI reports are optimized for **exploration and interactivity**. For more information, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
