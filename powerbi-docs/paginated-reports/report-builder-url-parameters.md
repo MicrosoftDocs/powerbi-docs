@@ -67,7 +67,7 @@ URL text that corresponds to the value of the parameter being used.
 You can pass report parameters to a report by including them in a paginated report URL. 
 
 ### Report parameters (`rp:`) 
-For examples of passing report parameters in a URL, see [Pass a report parameter in a URL](report-builder-url-pass-parameters.md).
+For examples of passing report parameters in a URL, see [Pass a report parameter in a URL](parameters/pass-report-parameter-url.md).
 
 > [!NOTE]
 > Report parameters require the parameter prefix `rp:` and are case-sensitive. 
@@ -184,5 +184,5 @@ You can append `rdl:targetSameWindow=true` to the hyperlink URL in your report t
 
 ## Next steps
 
-- [Pass a report parameter in a URL for a paginated report in Power BI](report-builder-url-pass-parameters.md)
+- [Pass a report parameter in a URL for a paginated report in Power BI](parameters/pass-report-parameter-url.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

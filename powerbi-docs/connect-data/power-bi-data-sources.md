@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 02/08/2023
 ---
 
 # Power BI data sources
@@ -225,6 +225,7 @@ When the SSO option is enabled and your users access reports built atop the data
 The SSO option takes effect across all datasets that use this data source. It does not affect the authentication method used for import scenarios. The following data sources support SSO for connections through DirectQuery:
 
 - Azure Data Explorer
+- Azure Databricks
 - Azure SQL Database
 - Azure Synapse
 - Impala
