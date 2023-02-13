@@ -39,7 +39,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 
 ## API v4.2.0
 
-* New flags to [expand and collapse row headers](./dataview-mappings.md#expanding-and-collapsing-row-headers)
+* New flags to [expand and collapse row headers](./dataview-mappings.md#expand-and-collapse-row-headers)
 * Supports Desktop February 2022
 
 ## API v3.8.0

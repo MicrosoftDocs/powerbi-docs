@@ -46,7 +46,7 @@ The following additional root objects are optional and can be added as needed:
 * [supportsHighlight](highlight.md)
 * [sorting](sort-options.md)
 * [drilldown](drill-down-support.md)
-* [expandCollapse](dataview-mappings.md#expanding-and-collapsing-row-headers)
+* [expandCollapse](dataview-mappings.md#expand-and-collapse-row-headers)
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)

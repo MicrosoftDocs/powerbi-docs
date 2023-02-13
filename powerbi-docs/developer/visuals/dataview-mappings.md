@@ -820,7 +820,7 @@ The visual gets its data structure as described in the following code (only the 
 
 ### Expand and collapse row headers
 
-For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expand-and-collapse-row-headers).
+For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
 The expand and collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row. The row header’s expansion state remains consistent across bookmarks and even across saved reports. It's not specific to each visual.
 
 Expand and collapse commands can be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
@@ -920,7 +920,7 @@ To enable the expand collapse feature on a visual by using the matrix data view:
 
 * After you expand a node, new data limits will be applied to the DataView. The new DataView might not include some of the nodes presented in the previous DataView.
 * When using expand or collapse, totals are added even if the visual didn’t request them.
-* Currently, expanding and collapsing columns isn't supported.
+* Expanding and collapsing columns isn't supported.
 
 ## Keep all metadata columns
 
