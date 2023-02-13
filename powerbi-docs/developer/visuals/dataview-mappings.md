@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 02/10/2023
+ms.date: 02/13/2023
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -825,7 +825,7 @@ The expand and collapse feature optimizes fetching data to the dataView by allow
 
 Expand and collapse commands can be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
 
-![Screenshot showing context menu with expand and collapse options.](media/dataview-mappings/expand-collapse-context-menu.png)
+:::image type="content" source="media/dataview-mappings/expand-collapse-context-menu.png" alt-text="Screenshot showing context menu with expand and collapse options.":::
 
 #### API features
 
