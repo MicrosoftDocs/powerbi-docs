@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 02/10/2023
 LocalizationGroup: Data from files
 ---
 # Using DirectQuery with dataflows
@@ -32,7 +32,7 @@ Once the steps are completed, the dataflow will be accessible in Power BI Deskto
 
 ## Consumption
 
-When DirectQuery is available for a dataflow, connecting to a dataflow using the **Power BI dataflows** connector prompts you to choose whether to connect to tables through DirectQuery or Import.
+When DirectQuery is available for a dataflow, connecting to a dataflow using the **Dataflows** connector prompts you to choose whether to connect to tables through DirectQuery or Import.
 
 Dataflow entities that support DirectQuery display the **View** icon in Power BI Desktop, rather than the **Table** icon. The View icon appears as two boxes overlaid on each other, the Table icon is a single table with a grid.
 
