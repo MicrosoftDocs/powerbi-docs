@@ -6,7 +6,7 @@ ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/10/2023
+ms.date: 02/14/2023
 ms.custom: contperf-fy21q4
 LocalizationGroup: 
 ---
@@ -17,7 +17,7 @@ You can use any programming language that supports REST calls to do dataset refr
 
 Optimized refresh for large and complex partitioned datasets is traditionally invoked with programming methods that use TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). However, these methods require long-running HTTP connections that can be unreliable.
 
-The Power BI Refresh Dataset REST API enables dataset refresh operations to be carried out asynchronously. Long-running HTTP connections from client applications aren't necessary. Compared to standard refresh operations, *enhanced refresh* with the REST API provides more customization options and the following features that are helpful for large models:
+The Power BI Refresh Dataset REST API can carry out dataset refresh operations asynchronously, so long-running HTTP connections from client applications aren't necessary. Compared to standard refresh operations, *enhanced refresh* with the REST API provides more customization options and the following features that are helpful for large models:
 
 - Batched commits
 - Table and partition-level refresh
@@ -26,7 +26,7 @@ The Power BI Refresh Dataset REST API enables dataset refresh operations to be c
 - Refresh cancellation
 
 > [!NOTE]
-> - Previously, this feature was called *asynchronous refresh with REST API*. However, a standard refresh that uses the Refresh Dataset REST API also runs asynchronously by its inherent nature.
+> - Previously, enhanced refresh was called *asynchronous refresh with REST API*. However, a standard refresh that uses the Refresh Dataset REST API also runs asynchronously by its inherent nature.
 > - Enhanced Power BI REST API refresh operations don't automatically refresh tile caches. Tile caches refresh only when a user accesses a report.
 
 ## Base URL
@@ -47,7 +47,9 @@ You need the following requirements to use the REST API:
 
 - A dataset in Power BI Premium, Premium per user, or Power BI Embedded.
 - A group ID and dataset ID to use in the request URL.
-- **Dataset.ReadWrite.All** permission scope. The number of refreshes is limited per the general limitations for API-based refreshes for Pro and Premium datasets.
+- **Dataset.ReadWrite.All** permission scope.
+
+The number of refreshes is limited per the general limitations for API-based refreshes for Pro and Premium datasets.
 
 ## Authentication
 
@@ -96,7 +98,7 @@ The request body might resemble the following code:
 
 ### Parameters
 
-To do an enhanced refresh operation, you must specify one or more parameters in the request body. Specified parameters can specify the default or an optional value. When the request specifies parameters, all other parameters apply to the operation with their default values. If the request specifies no parameters, all parameters use their default values, and a standard refresh operation happens.
+To do an enhanced refresh operation, you must specify one or more parameters in the request body. Specified parameters can specify the default or an optional value. When the request specifies parameters, all other parameters apply to the operation with their default values. If the request specifies no parameters, all parameters use their default values, and a standard refresh operation occurs.
 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
