@@ -7,7 +7,7 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/10/2023
+ms.date: 02/13/2023
 LocalizationGroup: Share your work
 ---
 # Power BI dataset experience in Excel
