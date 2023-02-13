@@ -8,7 +8,7 @@ ms.reviewer: mibruhjell
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 02/09/2023
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
@@ -25,7 +25,7 @@ In the Power BI service or Desktop, select a report to display it on the canvas.
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 ## Export to PDF from Power BI Desktop
-The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process described earlier.  There are only a few differences:
+The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process.  There are only a few differences:
 
 * In Desktop, select **File** > **Export** > **Export to PDF**.
 
@@ -73,19 +73,39 @@ The process for exporting a report from Power BI Desktop to PDF is similar to th
 ## Considerations and limitations
 There are a few considerations and limitations to keep in mind when you work with the **Export to PDF** feature.
 
-* R, Python, Power Apps, Power Automate, Visio, [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md), and paginated report visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
-* Power BI visuals that have been certified are supported in most cases. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. In the PDF, they display with an error message.
+### If you don't see the **Export** option
+* Make sure that you're viewing a report (not a dashboard).
+* It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
+
+### Visuals that aren't supported
+The following aren't supported for **Export to PDF**.  Either the **PDF** export option will be grayed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a gray box with an error message.
+
+* The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
+    - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+    - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
+    - [R visuals](../visuals/service-r-visuals.md)
+    - [Power Apps visuals](../visuals/power-bi-visualization-powerapp.md)
+    - [Python visuals](../connect-data/desktop-python-visuals.md)
+    - [Power Automate visuals](../create-reports/power-bi-automate-visual.md) 
+    - [The Paginated report visual](../visuals/paginated-report-visual.md)
+    - Visio visuals
+* Visual [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md), can't be exported to PDF.
+
+### Reports that can't be exported
 * Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details. 
-* Reports larger than 500 MB currently can't be exported. 
-* If your report has a visual [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md), you won't have the option to export to PDF.
-* Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will be included in the export, but the visual will display in its default state, without the table.  
-* The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service or Power BI Desktop.
-* If the **Export to PDF** menu item isn't available in the Power BI service, it's likely because your Power BI administrator disabled the feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents). 
+* Reports larger than 500 MB. 
 * Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you, can't be published to PDF.
 * You can share a dashboard with someone outside of your organization--someone who isn't in your Power BI tenant. However, that user can't export the shared dashboard's associated reports to PDF. For example, if you're aaron@contoso.com, you can share with cassie@northwinds.com. But cassie@northwinds.com can't export the associated reports to PDF.
-* Background images are cropped with the visualization's bounding area. Also, when you export to PDF with reports that contain a background image, you might see a distorted image in the export if you use the **Normal** or **Fill** options for the **Page Background**. For best results, use the **Fit** option to avoid issues with your exported document. Or, remove backgrounds before exporting.
-* The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon ![Screenshot of the cog icon.](media/end-user-pdf/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
+
+### General
+* Dataset refresh operations using an XMLA endpoint.
 * In the Power BI service, URL filters aren't currently respected when you choose **Current Values** for your export.
+* Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/desktop-see-data-see-records.md) will be included in the export, but the visual will display in its default state, without the table. 
+* The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service or Power BI Desktop.
+* Background images are cropped with the visualization's bounding area. Also, when you export to PDF with reports that contain a background image, you might see a distorted image in the export if you use the **Normal** or **Fill** options for the **Page Background**. For best results, use the **Fit** option to avoid issues with your exported document. Or, remove backgrounds before exporting.
+
+* The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon ![Screenshot of the cog icon.](media/end-user-pdf/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
+
 * Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
 * Reports using themes with custom fonts will have the custom font replaced with a default font.
 * While we look to provide a consistent experience, we can't guarantee the exported PDF from the Power BI service will always match the exported PDF from a local Power BI Desktop file.
