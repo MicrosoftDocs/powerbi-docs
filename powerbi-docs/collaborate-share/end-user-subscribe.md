@@ -142,7 +142,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 - *Sharing* content with a colleague outside of your domain doesn't require a Premium capacity. For example, if you're aaron@contoso.com, you can share with anyone@fabrikam.com, but you can't **subscribe** anyone@fabrikam.com, unless that content is hosted in a Premium capacity. 
 
-- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (also known as Business-to-business users) are external users who have been added to your organization as Azure Active Directory (AAD) guest users. To learn more about guest users, see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+- In order for external users to subscribe themselves to reports or dashboards, they must first be added as guest users. Guest users (also known as Business-to-business users) are external users who have been added to your organization as Azure Active Directory (Azure AD) guest users. To learn more about guest users, see [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 ## Subscribe to paginated reports 
 
@@ -172,7 +172,7 @@ Paginated reports allow you to specify the view of the report people will receiv
 
 If you have an existing subscription to a paginated report, and you want to update the parameters applied to the report, follow these steps. 
 
-1. Re-render the paginated report with the new  paramenters.
+1. Re-render the paginated report with the new  parameters.
 1. Open the **Subscriptions** page.
 1. Select **Use current (rendered report) values**.
     :::image type="content" source="./media/end-user-subscribe/power-bi-paginated-new.png" alt-text="Screenshot of Report parameters with Use current selected.":::
