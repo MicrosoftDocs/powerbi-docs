@@ -79,7 +79,7 @@ ms.reviewer: monaraya
   
 - To change the contents or the format of contents for a legend, change the legend options for the corresponding rules for a layer.  
   
- For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder).  
+ For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-associated-rules-report-builder).  
   
 ##  <a name="Layer"></a> Change options for the layer  
  To display the layers for a map, click the map to select it. The Map pane appears. To change options for a layer, right-click the layer and use the shortcut menu.  

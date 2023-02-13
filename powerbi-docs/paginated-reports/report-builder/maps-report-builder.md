@@ -200,7 +200,7 @@ ms.reviewer: monaraya
   
 - **Distance scale.** You can display one distance scale. The distance scale displays a scale for the current map view in both kilometers and miles.  
   
- You can position the legends, color scale, and distance scale in discrete locations inside or outside the viewport. For more information, see [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-and-associated-rules-report-builder.md).  
+ You can position the legends, color scale, and distance scale in discrete locations inside or outside the viewport. For more information, see [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-associated-rules-report-builder.md).  
   
 ##  <a name="Troubleshooting"></a> Troubleshooting maps  
  Map reports use spatial and analytical data from a variety of data sources. Each map layer can use different sources of data. The display properties for each layer follow a specific precedence based on layer properties, rules, map element properties.  
@@ -213,17 +213,15 @@ ms.reviewer: monaraya
  This section lists procedures that show you, step by step, how to work with maps and map layers in your reports.  
   
 - [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs)   
-- [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-and-associated-rules-report-builder.md)
+- [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-associated-rules-report-builder.md)
 - [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs)  
   
 ##  <a name="Section"></a> Next steps
 
 - [Plan a Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plan-a-map-report-report-builder-and-ssrs)  
 - [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs)  
-- [Customize the display of a map or map layer in a paginated report (Power BI Report Builder)](customize-data-and-display-map-map-layer-report-builder.md)
+- [Customize the display of a map or map layer in a paginated report (Power BI Report Builder)](customize-data-display-map-map-layer-report-builder.md)
 - [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
-- [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs)  
-- [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-and-associated-rules-report-builder.md)  
 - [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs)  
 - [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
   

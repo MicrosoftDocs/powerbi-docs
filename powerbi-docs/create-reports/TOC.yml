@@ -509,11 +509,11 @@
       - name: Maps in paginated reports
         href: ../paginated-reports/report-builder/maps-report-builder.md
       - name: Data regions and maps
-        href: ../paginated-reports/report-builder/data-regions-and-maps-report-builder.md
+        href: ../paginated-reports/report-builder/data-regions-maps-report-builder.md
       - name: Change map legends, color scale, associated rules
-        href: ../paginated-reports/report-builder/change-map-legends-color-scale-and-associated-rules-report-builder.md
+        href: ../paginated-reports/report-builder/change-map-legends-color-scale-associated-rules-report-builder.md
       - name: Customize the display of a map or map layer
-        href: ../paginated-reports/report-builder/customize-data-and-display-map-map-layer-report-builder.md
+        href: ../paginated-reports/report-builder/customize-data-display-map-map-layer-report-builder.md
     - name: Data sources and datasets
       items: 
       - name: Understand paginated report data
