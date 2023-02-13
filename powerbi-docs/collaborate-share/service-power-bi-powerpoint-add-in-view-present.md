@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 09/22/2022
+ms.date: 02/13/2023
 ---
 
 # View and present live Power BI report pages in PowerPoint
@@ -79,7 +79,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ### Data options
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-data-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint report options menu.":::
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-data-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint data options menu.":::
 
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) and copies them to the clipboard as text.
@@ -111,7 +111,7 @@ Expands or collapses the toolbar across the bottom of the report or visual. This
 * **Delete**: Removes the add-in from the PowerPoint slide.
 * **Reload**: Reloads the report page or visual. Use this option if the visuals in a report have been changed, added or deleted. The report page reloads every time PowerPoint is opened, so you need to use this option only if the report has changed while you’ve had PowerPoint open.
 
-    If all you want to do is refresh the data, use the **Refresh** option in the [Report options](#report-options) menu instead.
+    If all you want to do is refresh the data, use the **Refresh** option in the [Data options](#data-options) menu instead.
 
 * **Show as Saved Image**: Converts the current state as a saved, static image. You can't interact with this image. Data is not updated. You can copy and paste this image wherever you want. Select **Show as Saved Image** again to restore the live current view. The report or visual will reload. Note: If you select **Show as Saved Image** and then share the PowerPoint file, other users will be able to restore the live current view.
 
