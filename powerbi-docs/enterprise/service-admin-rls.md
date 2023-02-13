@@ -55,7 +55,7 @@ To define security roles using the enhanced row-level security editor:
 ![Screenshot of an example of using the default editor in the enhanced row-level security editor.](media/service-admin-rls/enhanced-rls-example-default-editor.png)
 
 >[!NOTE]
-    > Not all row-level security filters supported in Power BI can be defined using the default editor. Limitations include expressions that today can only be defined using DAX including dynamic rules such as username() or userprincipalname(). To define roles using these filters switch to use the DAX editor.
+> Not all row-level security filters supported in Power BI can be defined using the default editor. Limitations include expressions that today can only be defined using DAX including dynamic rules such as username() or userprincipalname(). To define roles using these filters switch to use the DAX editor.
 
 8. Optionally select **Switch to DAX editor** to switch to use the DAX editor to define your role. You can switch back to the default editor by selecting **Switch to default editor**. All changes made in either editor interface will persist when switching interfaces when possible.
 
