@@ -44,6 +44,16 @@ To get more space and a cleaner display for your slide show, you can collapse th
 
 If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
 
+## Add styles to your presentation
+
+You can improve the appearance of your presentation by applying styles to the add-in. Currently can put an outline around the add-in to give it a clear definition on the slide. 
+
+To give an outline to the add-in, open **[Style options](#style-options)** and select **Outline**.  
+
+## Enrich your presentation with data insights
+
+The add-in makes it easy to enrich your presentation with data insights.
+
 ## Freeze the current view
 
 Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There may be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [Show as Saved Image](#add-in-side-pane) option. Show as Saved Image turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
