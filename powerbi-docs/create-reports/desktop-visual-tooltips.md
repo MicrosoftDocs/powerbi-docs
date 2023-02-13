@@ -85,15 +85,15 @@ Once you upgrade to the new tooltips, you might notice an updated styling that's
 
 For example, this tooltip has the **Default** theme style:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Screenshot of an example of a modern visual tooltip with the default theme.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Screenshot of a modern visual tooltip with the default theme.":::
 
 Here’s an example with the **Innovate** theme:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-innovate.png" alt-text="Screenshot of an example of a modern visual tooltip with the Innovate theme.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-innovate.png" alt-text="Screenshot a modern visual tooltip with the Innovate theme.":::
 
 Here’s an example with the **Frontier** theme:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-frontier.png" alt-text="Screenshot of an example of a modern visual tooltip with the Frontier theme.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-frontier.png" alt-text="Screenshot of a modern visual tooltip with the Frontier theme.":::
 
 To customize the styling further in Power BI Desktop, you can update the **Tooltip** theme in the **Customize theme** dialog:
 
