@@ -88,7 +88,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ### Style options
 
-![Screenshot of Power B I add-in for PowerPoint style options menu.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint style options menu.":::
 
 * **Outline**: Puts a border around the add-in.
 
