@@ -25,7 +25,7 @@ In the Power BI service or Desktop, select a report to display it on the canvas.
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 ## Export to PDF from Power BI Desktop
-The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process described earlier.  There are only a few differences:
+The process for exporting a report from Power BI Desktop to PDF is similar to the Power BI service process.  There are only a few differences:
 
 * In Desktop, select **File** > **Export** > **Export to PDF**.
 
@@ -78,7 +78,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
 ### Visuals that aren't supported
-The following aren't supported for **Export to PDF**.  Either the **PDF** export option will be grayed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a grey box with an error message.
+The following aren't supported for **Export to PDF**.  Either the **PDF** export option will be grayed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a gray box with an error message.
 
 * The Power BI visuals listed below aren't supported.  When you subscribe to a report containing these visuals, they will display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
@@ -90,10 +90,6 @@ The following aren't supported for **Export to PDF**.  Either the **PDF** export
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
 * Visual [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/desktop-see-data-see-records.md), can't be exported to PDF.
-
-### If you don't see the **Export** option
-* Make sure that you're viewing a report (not a dashboard).
-* It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
 ### Reports that can't be exported
 * Power BI reports with more than 50 report pages currently can't be exported. Paginated reports don't have this limitation. See [Print a paginated report](../consumer/end-user-paginated-report.md#interact-with-a-paginated-report) for details. 

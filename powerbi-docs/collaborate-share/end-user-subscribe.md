@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/09/2023
+ms.date: 02/13/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -125,7 +125,7 @@ When creating a subscription, you can add other email addresses in the same doma
 |[Distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)    |    Yes     |
 |[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)     |      Yes   |
 |[Security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group)     |    No     |
-|Mail-enabled security groups     |     Yes    |
+|[Mail-enabled security groups](/microsoft-365/admin/create-groups/compare-groups.md)    |     Yes    |
 
 
 
@@ -169,6 +169,8 @@ Paginated reports allow you to specify the view of the report people will receiv
 - If your report author has set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. You can change other parameter values and choose to use current values, but unless you explicitly change that value as well, the subscription uses the expression-based parameter. 
 
 ### Update parameters for an existing paginated report subscription
+
+If you have an existing subscription to a paginated report, and you want to update the parameters applied to the report, follow these steps. 
 
 1. Re-render the paginated report with the new  paramenters.
 1. Open the **Subscriptions** page.

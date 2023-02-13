@@ -97,7 +97,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * It's possible that your administrator has disabled this feature. Contact your administrator for details. Administrators: See [Export reports as PowerPoint presentations or PDF documents](../admin/service-admin-portal-export-sharing.md#export-reports-as-powerpoint-presentations-or-pdf-documents).
 
 ### Visuals that aren't supported
-The following aren't supported for **Export to PowerPoint**.  Either the **PowerPoint** export option will be greyed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a grey box with an error message.
+The following aren't supported for **Export to PowerPoint**.  Either the **PowerPoint** export option will be greyed out or won't be listed at all on the **Export** dropdown. In some cases, such as for R visuals, the report will export but the visual will render as a gray box with an error message.
 
 - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
 - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
