@@ -19,7 +19,7 @@ You use Power BI data connectors to connect to and access data from an applicati
 
 If you build reports in Power BI Desktop that use custom data connectors, you can use an on-premises data gateway to refresh those reports in the Power BI service.
 
-To learn more about how to develop custom data connectors for Power BI, see the [DataConnectors](https://aka.ms/dataconnectors) SDK in GitHub. This site includes information on how to get started, and samples for Power BI and Power Query.
+To learn more about how to develop custom data connectors for Power BI, see the [DataConnectors SDK](https://aka.ms/dataconnectors) in GitHub. This site includes information on how to get started, and samples for Power BI and Power Query.
 
 ## Enable and use custom connectors
 
@@ -30,11 +30,11 @@ To enable using custom connectors, select **Connectors** in the on-premises data
 >[!NOTE]
 >If you're using an on-premises data gateway (personal mode), you can upload your Power BI report to the Power BI service and use the gateway to refresh it.
 
-For an on-premises data gateway, you need to create a data source for your custom connector. On the gateway settings page in the Power BI service, you should see an option when you select the gateway cluster to allow using custom connectors with this cluster. Select that option to enable using custom connectors with this cluster.
+For an on-premises data gateway, you need to create a data source for your custom connector. On the gateway settings page in the Power BI service, select the option to enable using custom connectors with this cluster.
 
 ![Screenshot that shows enabling custom connectors on the on-premises gateway Settings page.](media/service-gateway-custom-connectors/gateway-onprem-customconnector2.png)
 
-When you enable this option, you see your custom connectors as available data sources that you can create under this gateway cluster. After you create a data source that uses your new custom connector, you can refresh Power BI reports by using the custom connector in the Power BI service.
+When you enable this option, you see your custom connectors as available data source connections that you can add to this gateway cluster. After you create a data source that uses your new custom connector, you can refresh Power BI reports by using the custom connector in the Power BI service.
 
 ![Screenshot that shows the Data Source list on the Settings page.](media/service-gateway-custom-connectors/gateway-onprem-customconnector3.png)
 
@@ -46,7 +46,7 @@ When you enable this option, you see your custom connectors as available data so
 
 - If your custom connector is on a network drive, include the fully qualified path in the on-premises data gateway app.
 
-- You can only use one custom connector data source when working in DirectQuery mode. Multiple custom connector data sources won't work when you use DirectQuery.
+- You can only use one custom connector data source when working in DirectQuery mode. Multiple custom connector data sources don't work with DirectQuery.
 
 ## Next steps
 
