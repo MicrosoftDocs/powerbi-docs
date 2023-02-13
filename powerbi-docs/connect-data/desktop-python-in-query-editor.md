@@ -20,7 +20,7 @@ You'll need to install Python and pandas before you begin.
 
  * **Install Python** - To use Python in Power BI Desktop's *Power Query Editor*, you need to install Python on your local machine. You can download and install Python for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/).
 
-* **Install pandas** - To use Python with the Power Query Editor, you'll also need to install [pandas](https://pandas.pydata.org/).
+* **Install pandas** - To use Python with the Power Query Editor, you'll also need to install [pandas](https://pandas.pydata.org/). Pandas is used to move data between Power BI and the Python environment.
 
 ## Use Python with Power Query Editor
 
