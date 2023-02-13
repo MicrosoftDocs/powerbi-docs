@@ -1,12 +1,9 @@
 ---
-title: "Change map legends-color scale-associated rules in a paginated report | Microsoft Docs"
-
+title: "Change map legends, color scale, associated rules in a Power BI paginated report | Microsoft Docs"
 description: Learn how to change map legends in a paginated report to help users interpret the data visualization on maps in Power BI Report Builder. 
-ms.date: 01/30/2023
+ms.date: 02/13/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -14,12 +11,11 @@ ms.reviewer: monaraya
 ---
 # Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)
 
-
-  In a paginated report, a map can contain map legends, a color scale, and a distance scale. These parts of a map help users interpret the data visualization on the map.  
+In a Power BI paginated report, a map can contain map legends, a color scale, and a distance scale. These parts of a map help users interpret the data visualization on the map.  
   
- Legends include the following parts of a map:  
+Legends include the following parts of a map:  
   
--   **Map legend** Displays a guide to help interpret the analytical data that varies the display of a map elements on a map layer. A map can have multiple legends. For each map layer, you A specify which legend to use. A legend can provide a guide to more than one map layer.  
+-   **Map legend** Displays a guide to help interpret the analytical data that varies the display of map elements on a map layer. A map can have multiple legends. For each map layer, you A specify which legend to use. A legend can provide a guide to more than one map layer.  
   
 -   **Color scale** Displays a guide to help interpret colors on the map. A map has one color scale. Multiple layers can provide the data for the color scale.  
   
@@ -120,7 +116,7 @@ ms.reviewer: monaraya
   
 3.  Click **Visualize data by using color ranges**.  
   
-     This option, combined with the start, middle, and end colors that you specify on this page and the options that you specify on the **Distribution** page, divide the related analytical data into ranges. The report processor assigns the appropriate color to each map element based on the its associated data and the range that it falls into.  
+     This option, combined with the start, middle, and end colors that you specify on this page and the options that you specify on the **Distribution** page, divide the related analytical data into ranges. The report processor assigns the appropriate color to each map element based on its associated data and the range that it falls into.  
   
 4.  In **Data field**, type the name of the field that contains the analytical data that you want to visualize by color.  
   
@@ -247,9 +243,9 @@ ms.reviewer: monaraya
 5.  Select **OK**.
   
 ## Next steps:  
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
+ [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder)   
  [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.)   
- [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs)   
+ [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-data-and-display-map-map-layer-report-builder)   
  [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)   
  [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs)  
   
