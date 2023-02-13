@@ -65,7 +65,7 @@ When you enable these new tooltips, you can drill down and up, and drill through
 
 For example, when you hover over the *Word* data point in a bar chart, you can **Drill down** on the data point or **Drill through**. If you select **Drill down**, the visual updates to display the next level in the hierarchy and filter to *Word*.
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-drill-down.png" alt-text="Screenshot of a tool tip, highlighting Drill down.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-drill-down.png" alt-text="Screenshot of a tooltip, highlighting Drill down.":::
 
 If you select **Drill through**, you see which pages you can drill through to. In this example, choose either the Market Basket Analysis or the Category Details page.
 
