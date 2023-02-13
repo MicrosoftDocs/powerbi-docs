@@ -1,6 +1,6 @@
 ---
 title: Collaborate with Power BI in Microsoft Teams, Outlook, and Office
-description: Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office to enable remote work and keep employees in sync. 
+description: Learn how organizations can use Microsoft Teams, Outlook, and Office to collaborate on Power BI content. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 11/16/2022
+ms.date: 02/13/2023
 ---
 
 # Collaborate with Power BI in Microsoft Teams, Outlook, and Office
@@ -23,23 +23,23 @@ Organizations rely on Microsoft Teams, Microsoft Outlook, and Microsoft Office t
 - [Add the Power BI app to Microsoft Outlook and Office](#OutlookOffice): Integrate the Power BI service experience into Microsoft Office products.
 - [Embed interactive reports in Teams channels and chats](service-embed-report-microsoft-teams.md) with a Power BI tab: Help your colleagues find and discuss your team's data. 
 - Create a [link preview in the Teams message box](service-teams-link-preview.md) when you paste links to your reports, dashboards, and apps.
-- [Chat in Microsoft Teams](service-share-report-teams.md): Share a filtered view of your reports and dashboards and start conversations.
+- [Chat in Microsoft Teams directly from the Power BI service](service-share-report-teams.md): Share a filtered view of your reports and dashboards and start conversations.
 - [View all the Power BI tabs you have](service-teams-pivot.md) in Microsoft Teams: Select the **In Teams** tab on the Power BI app home page.
 - [Create a Teams usage report](service-teams-analytics.md) automatically in the Power BI app in Teams: Analyze your Teams activity.
 - [Get notified](service-teams-notifications.md) in the Teams activity feed when important things happen in Power BI.
 - Discover and use Power BI in Teams mobile.
  
-:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
+:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power BI report embedded in a Microsoft Teams channel.":::
 
 ## Requirements
 
 In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
 - Ensure the Power BI app is enabled in the Teams Admin center apps list. 
-- Your users with a Power BI (Free) license can access personal analytics including using the built-in Teams analytics report and create reports in their My workspace.
-- Your users with Power BI (Free) licenses can also access content shared to them from a workspace that is part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
+- Your users with a Power BI (Free) license can access personal analytics, including using the built-in Teams analytics report, and create reports in their My workspace.
+- Your users with a Power BI (Free) license can also access content shared to them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
-- Users will need to sign in within the Power BI app for Teams or the Power BI service to activate their Power BI license.
+- Users need to sign in within the Power BI app for Teams or the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
 
 ## Grant access to reports
@@ -55,9 +55,9 @@ One way to ensure everyone in a team has access to reports is to place the repor
 
 You can integrate a Power BI report in Teams and share it with external users. Here are the steps to follow.
 
-1.	You invite the external user to the organization, and they accept your invitation. See [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md) for details.
-2.	Give the external user permission on the report. Individual permissions assignment works best.
-3.	Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) or get a Premium Per User (PPU) license.
+1. You invite the external user to the organization, and they accept your invitation. See [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md) for details.
+2. Give the external user permission on the report. Individual permissions assignment works best.
+3. Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) or get a Premium Per User (PPU) license.
 
 ## Known issues and limitations
 
@@ -77,11 +77,10 @@ You can integrate a Power BI report in Teams and share it with external users. H
 
 ## <a id="OutlookOffice"></a>Power BI app in Outlook and Office
 
-The Power BI app for Microsoft Teams is available in Microsoft Outlook and Microsoft Office as a public preview. If you have installed the Power BI app in Microsoft Teams, it will also be installed in Outlook and Office. Otherwise, in Outlook and Office you can install the Power BI app from the store. When you install the app, it also appears in Teams. The Power BI app in Teams continues to be generally available. The Power BI app supports Outlook for the web and Outlook for Windows.
+The Power BI app for Microsoft Teams is available in Microsoft Outlook and Microsoft Office as a public preview. If you've installed the Power BI app in Microsoft Teams, it's also installed in Outlook and Office. Otherwise, in Outlook and Office you can install the Power BI app from the store. When you install the app, it also appears in Teams. The Power BI app in Teams continues to be generally available. The Power BI app supports Outlook for the web and Outlook for Windows.
 
 > [!IMPORTANT]
-> To participate in the preview, you must be in Microsoft 365 First Release for web experiences and in Office Insiders Beta Channel for Windows experiences. 
-The public preview is rolling out incrementally for First Release and Office Insiders users. This means some users in your organization may not yet see the experiences in Outlook and Office.
+> To participate in the preview, you must be enrolled in Microsoft 365 First Release for web experiences and in Office Insiders Beta Channel for Windows experiences. The public preview is rolling out incrementally for First Release and Office Insiders users. This means some users in your organization might not yet see the experiences in Outlook and Office.
 
 In Outlook and Office, the preview app has some additional limitations:
 - File downloads aren't supported yet. This means export options and file downloads don't download files. 
@@ -101,8 +100,8 @@ The other Microsoft Power Platform apps also integrate with Microsoft Teams.
 
 ## Next steps
 
-- [Embed Power BI content in Microsoft Teams](service-embed-report-microsoft-teams.md)
-- [Get a Power BI link preview in Microsoft Teams](service-teams-link-preview.md)
-- [Chat in Microsoft Teams directly from the Power BI service](service-share-report-teams.md)
+- [Embed Power BI content in Microsoft Teams.](service-embed-report-microsoft-teams.md)
+- [Get a Power BI link preview in Microsoft Teams.](service-teams-link-preview.md)
+- [Chat in Microsoft Teams directly from the Power BI service.](service-share-report-teams.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
+More questions? [Ask the Power BI Community.](https://community.powerbi.com/)
