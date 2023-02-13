@@ -1,17 +1,17 @@
 ---
-title: Manage your data source - Import/scheduled refresh
-description: How to manage the on-premises data gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh.
+title: Manage your data source - import and scheduled refresh
+description: Learn how to manage the on-premises data gateway and data sources that belong to that gateway for data sources that can be used with import and scheduled refresh.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 05/06/2022
+ms.date: 02/14/2023
 LocalizationGroup: Gateways
 ---
 
-# Manage your data source - Import/scheduled refresh
+# Manage your data source - import and scheduled refresh
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
@@ -21,16 +21,16 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select a data source type.
 
-All of the data source types listed can be used for scheduled refresh with the on-premises data gateway. Analysis Services, SQL Server, and SAP HANA can be used for either scheduled refresh or DirectQuery/live connections.
+All of the data source types listed can be used for scheduled refresh with the on-premises data gateway. Analysis Services, SQL Server, and SAP HANA can be used for either scheduled refresh or DirectQuery or live connections.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/add-data-source-sql.png" alt-text=" Screenshot of adding SQL data source to the gateway." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/add-data-source-sql.png" alt-text="Screenshot of adding SQL data source to the gateway." :::
 
 Then fill in the information for the data source, which includes the source information and credentials that are used to access the data source.
 
 > [!NOTE]
 > All queries to the data source run by using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/authentication-sql.png" alt-text=" Screenshot of credentials for SQL data source." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/authentication-sql.png" alt-text="Screenshot of credentials for SQL data source." :::
 
 For a list of data source types that can be used with scheduled refresh, see [List of available data source types](service-gateway-data-sources.md#list-of-available-data-source-types).
 
@@ -42,7 +42,7 @@ After you fill in everything, select **Create**. You can now use this data sourc
 
 Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/privacy-level-sql.png" alt-text=" Screenshot of privacy level setting for SQL data source." :::
+:::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/privacy-level-sql.png" alt-text="Screenshot of privacy level setting for SQL data source." :::
 
 ## Use the data source for scheduled refresh
 
@@ -58,10 +58,10 @@ If you're listed in the **Users** tab of the data source configured within the g
 ![Displaying the users](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
 > [!IMPORTANT]
-> Upon republish, the data set owner must reassociate the dataset to a gatweay and corresponding data source again. The previous association is not maintained upon republish. 
+> Upon republish, the data set owner must associate the dataset to a gateway and corresponding data source again. The previous association is not maintained after republishing.
 
 > [!WARNING]
-> If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you won't see the gateway as available for scheduled refresh.
+> If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you don't see the gateway as available for scheduled refresh.
 
 ## Next steps
 
