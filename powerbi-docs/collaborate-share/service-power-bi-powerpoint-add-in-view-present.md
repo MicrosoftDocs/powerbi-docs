@@ -94,7 +94,7 @@ Controls that help you work with your data in PowerPoint are described below.
 
 ### Add-in options
 
-![Screenshot of Power BI add-in for PowerPoint add-in options menu.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-options.png)
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-options.png" alt-text="Screenshot of Power BI add-in for PowerPoint add-in options menu.":::
 
 * **Clear**: Removes the report page or visual from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in the URL of a different report page or visual.
 * **Learn**: Opens help pages.
