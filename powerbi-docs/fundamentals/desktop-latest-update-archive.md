@@ -1233,7 +1233,7 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 
-* Power BI Premium Gen2 now generally available  [[video]](https://youtu.be/4uVNk9xH2S0?t=686)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518700)  [[article]](../enterprise/service-premium-gen2-what-is.md)
+* Power BI Premium is now generally available  [[video]](https://youtu.be/4uVNk9xH2S0?t=686)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518700)  [[article]](../enterprise/service-premium-what-is.md)
 * APIs to determine who has access to what Power BI items (preview)  [[video]](https://youtu.be/4uVNk9xH2S0?t=742)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518701)
 * Deployment pipeline APIs now generally available  [[video]](https://youtu.be/4uVNk9xH2S0?t=787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518702)  [[article]](../create-reports/deployment-pipelines-overview.md)
 * Upcoming automatic installation of the Power BI app for Microsoft Teams  [[video]](https://youtu.be/4uVNk9xH2S0?t=827)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2021-feature-summary/#post-17563-_Toc84518703)  [[article]](https://powerbi.microsoft.com/blog/pre-announcing-automatic-installation-of-the-power-bi-app-for-microsoft-teams/)
@@ -3313,7 +3313,7 @@ The following video describes and shows each of these updates. You can also see 
 Here were the updates in the Power BI service.
 
 * Public preview of [Shared and Certified datasets](../connect-data/service-datasets-across-workspaces.md).
-* AI metrics available in the [Premium Capacity Metrics app](../enterprise/service-premium-gen2-metrics-app.md).
+* AI metrics available in the [Premium Capacity Metrics app](../enterprise/service-premium-metrics-app.md).
 * General availability of Power BI [template apps](../connect-data/service-template-apps-overview.md).
 * General availability of [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.
 * Public preview of Bring Your Own Key ([BYOK](../enterprise/service-encryption-byok.md)) for Power BI Premium.

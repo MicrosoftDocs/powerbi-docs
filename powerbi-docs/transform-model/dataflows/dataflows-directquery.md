@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 02/10/2023
 LocalizationGroup: Data from files
 ---
 # Using DirectQuery with dataflows
@@ -22,20 +22,7 @@ Using DirectQuery with Power BI dataflows lets you connect directly to a dataflo
 
 ## Configuration
 
-To use DirectQuery with dataflows, you must explicitly toggle the **enhanced compute engine** to **On** in dataflow settings. You must then refresh the dataflow before it can be consumed in DirectQuery mode. 
-
-If you're using the original version of Power BI Premium (rather than using Premium Gen2), there are four items you must validate:
-
-* The **enhanced compute engine** must be enabled for the Premium capacity *and* the specific dataflow.
-* You must be running the latest version of Power BI Desktop.
-* You must specifically connect to the data source using the **Power BI dataflows** connector.
-* You must also take the following steps to connect using **Power BI Desktop**:
-    1. Sign out of Power BI Desktop
-    2. Clear the dataflows connection, which requires you sign in
-        * Select **File > Options and settings > Data source settings > Delete Power BI dataflows**
-    3. Make your connection using the **Power BI dataflows** connector, ensuring that the **enhanced compute engine** is on, and the connection has been refreshed
-
-If you're using Premium Gen2, the following ordered steps are much simpler:
+To use DirectQuery with dataflows, you must explicitly toggle the **enhanced compute engine** to **On** in dataflow settings. You must then refresh the dataflow before it can be consumed in DirectQuery mode.
 
 1. Navigate to the Premium dataflow, and set **enhanced compute engine** to **On**.
 2. Navigate to the dataflow settings section for the target dataflow, and turn on **enhanced compute engine** for the dataflow.
@@ -43,10 +30,9 @@ If you're using Premium Gen2, the following ordered steps are much simpler:
 
 Once the steps are completed, the dataflow will be accessible in Power BI Desktop with DirectQuery mode.
 
-
 ## Consumption
 
-When DirectQuery is available for a dataflow, connecting to a dataflow using the **Power BI dataflows** connector prompts you to choose whether to connect to tables through DirectQuery or Import.
+When DirectQuery is available for a dataflow, connecting to a dataflow using the **Dataflows** connector prompts you to choose whether to connect to tables through DirectQuery or Import.
 
 Dataflow entities that support DirectQuery display the **View** icon in Power BI Desktop, rather than the **Table** icon. The View icon appears as two boxes overlaid on each other, the Table icon is a single table with a grid.
 

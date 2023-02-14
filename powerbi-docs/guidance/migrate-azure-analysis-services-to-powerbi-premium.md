@@ -49,17 +49,17 @@ Answers to many of these questions are described in this article.
 
 Consolidation of items (like reports and dashboards) in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service items that have become popular yet are resulting in a management burden for the business. IT can take over such items. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
 
-### Power BI Premium Gen2
+### Power BI Premium
 
-Perhaps what's generating the most interest for Power BI Premium as the choice for data models is the introduction of [Power BI Premium Gen2 (Premium Gen2)](../enterprise/service-premium-gen2-what-is.md). Thanks to its distributed architecture, the new generation architecture is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
+Thanks to its distributed architecture, Power BI Premium is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
 
-Scalability benefits associated with Premium Gen2 are described [later in this article](#scalability-benefits).
+Scalability benefits associated with Power BI Premium are described [later in this article](#scalability-benefits).
 
 ## Feature comparison
 
-AAS provides the Analysis Services database engine for hosting data models, which is a core component of a Microsoft enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table lists features supported in AAS and Premium Gen2. The table focuses on - but isn't limited to - Power BI dataset-related capabilities.
+AAS provides the Analysis Services database engine for hosting data models, which is a core component of a Microsoft enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table lists features supported in AAS and Power BI Premium. The table focuses on - but isn't limited to - Power BI dataset-related capabilities.
 
-| **Feature** | **AAS** | **Premium Gen2** |
+| **Feature** | **AAS** | **Power BI Premium** |
 |:-|:-:|:-:|
 | **Premium workloads** |||
 | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages | No | Yes |
@@ -70,7 +70,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | Unlimited report distribution to anyone (even outside the organization) | No | Yes |
 | Business-driven interactive reports, workspaces, and apps | No | Yes |
 | **Platform scalability and resiliency** |||
-| [Premium Gen2](../enterprise/service-premium-gen2-what-is.md) architecture, which supports increased scale and performance | No | Yes |
+| [Power BI Premium](../enterprise/service-premium-what-is.md) architecture, which supports increased scale and performance | No | Yes |
 | Optimized dataset memory management | No | Yes |
 | Scale limits per data model instead of per server | No | Yes |
 | CPU smoothing for refresh resiliency | No | Yes |
@@ -117,7 +117,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Data hub](../connect-data/service-data-hub.md) integration, which helps users discover, explore, and use Power BI datasets | No | Yes |
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI item dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
-| [Premium capacity metrics app](../enterprise/service-premium-gen2-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
+| [Premium capacity metrics app](../enterprise/service-premium-metrics-app.md), which provides monitoring capabilities for Power BI capacities | No | Yes |
 | [Power BI audit log](../admin/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes <sup>1</sup> |
 | [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
@@ -150,11 +150,11 @@ Also, assuming you already use Power BI in your organization, calculate costs ba
 
 ### Consolidation opportunity
 
-Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI items in Power BI Premium. Consolidation makes the larger sized Premium Gen2 SKUs more economically viable and can help to provide higher levels of throughput and scalability.
+Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI items in Power BI Premium. Consolidation makes the larger sized Premium SKUs more economically viable and can help to provide higher levels of throughput and scalability.
 
 ### PPU licenses
 
-The Premium Per User (PPU) license is a per-user license that provides a lower-cost price point for Premium Gen2. PPU licenses are typically purchased by small and medium-sized companies. They support all the Premium capabilities for data modeling listed earlier.
+The Premium Per User (PPU) license is a per-user license that provides a lower-cost price point for Premium. PPU licenses are typically purchased by small and medium-sized companies. They support all the Premium capabilities for data modeling listed earlier.
 
 > [!TIP]
 > It's possible to incrementally upgrade Power BI Pro licenses to PPU licenses.
@@ -175,19 +175,19 @@ For more information, see:
 
 ## Scalability benefits
 
-[Premium Gen2](../enterprise/service-premium-gen2-what-is.md) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
+[Power BI Premium](../enterprise/service-premium-what-is.md) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
 
 Power BI Premium provides features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
 
-Premium Gen2 limits memory per dataset, and not per capacity or server. Conversely, AAS requires all data models fit in memory on a single server. That requirement can compel customers with large data models to purchase larger SKU sizes.
+Power BI Premium limits memory per dataset, and not per capacity or server. Conversely, AAS requires all data models fit in memory on a single server. That requirement can compel customers with large data models to purchase larger SKU sizes.
 
-Thanks to the distributed nature of the Premium Gen2 architecture, more datasets can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to exceeding server memory limits.
+Thanks to the distributed nature of the Premium architecture, more datasets can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to exceeding server memory limits.
 
-In Premium Gen2, CPU consumption during refresh is spread across 24-hour periods. Premium Gen2 [evaluates capacity throughput](../enterprise/service-premium-concepts.md) to provide resilience to temporal spikes in demand for compute resources. When necessary, it can delay refreshes until sufficient resources become available. This automatic behavior reduces the need for customers to perform detailed analysis and manage automation scripts to scale servers up or down. Premium Gen2 customers should decide on the optimal SKU size for their overall CPU consumption requirements.
+In Power BI Premium, CPU consumption during refresh is spread across 24-hour periods. Power BI Premium [evaluates capacity throughput](../enterprise/service-premium-concepts.md) to provide resilience to temporal spikes in demand for compute resources. When necessary, it can delay refreshes until sufficient resources become available. This automatic behavior reduces the need for customers to perform detailed analysis and manage automation scripts to scale servers up or down. Premium customers should decide on the optimal SKU size for their overall CPU consumption requirements.
 
-Another advantage of Premium Gen2 is that it's able to dynamically balance the datasets depending on the load of the system. This automatic behavior ensures busy/active datasets get the necessary memory and CPU resources, while more idle datasets can be evicted or migrated to other nodes. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory always. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
+Another advantage of Power BI Premium is that it's able to dynamically balance the datasets depending on the load of the system. This automatic behavior ensures busy/active datasets get the necessary memory and CPU resources, while more idle datasets can be evicted or migrated to other nodes. Datasets are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole dataset. On the other hand, AAS requires all data models be fully loaded in memory always. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
 
-Lastly, Premium Gen2 is able to better utilize next-generation hardware rollouts to benefit from scalability and performance enhancements.
+Lastly, Power BI Premium is able to better utilize next-generation hardware rollouts to benefit from scalability and performance enhancements.
 
 ## Considerations and limitations
 
@@ -277,7 +277,7 @@ AAS integrates with Azure Monitor for [diagnostic logging](/azure/analysis-servi
 
 Power BI Premium also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS may not work in Power BI.
 
-Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Gen2 metrics app](../enterprise/service-premium-gen2-metrics-app.md).
+Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Premium metrics app](../enterprise/service-premium-metrics-app.md).
 
 SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI Premium. For more information, see [Monitor Analysis Services with SQL Server Extended Events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events).
 

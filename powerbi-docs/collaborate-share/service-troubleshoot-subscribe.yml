@@ -150,7 +150,7 @@ sections:
           Any existing subscriptions with full reports as attachments that do not meet these conditions are 
           disabled and you will receive an email explaining the error. 
         
-          - They're in an upgraded workspace with [Power BI Premium Gen2](../enterprise/service-premium-gen2-what-is.md) or Premium Per User. 
+          - They're in an upgraded workspace with [Power BI Premium](../enterprise/service-premium-what-is.md) or Premium Per User. 
           - The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-more-than-20-pages)).
           - The attachment file is under 25 MB in size.
           - You are not an owner of the report.
@@ -160,7 +160,7 @@ sections:
         answer: |
           There are certain Power BI features that will not work when using the subscription feature.
 
-          - Email subscriptions do not support most [custom visuals](../developer/visuals/develop-power-bi-visuals.md).  The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
+          - Email subscriptions do not support R, Python, Paginated Report Visuals, Power Apps, Power Automate, Visio and most [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
           
           - For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles.
           

@@ -14,17 +14,17 @@ LocalizationGroup: Learn more
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In **Power BI** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, or *drillthrough to details*.
+In **Power BI** you can drill into the details of a visualization, and see textual representations of the underlying data or the individual data records for the selected visual. These features are sometimes referred to as *click-through*, *drillthrough*, *show as table*, *show data point as a table* or *drillthrough to details*.
 
 You can use **Visual table** to view the data in a visual as a table, or use **Data point table** to view a table of the data used to calculate a single data point. These capabilities are available in Power BI Desktop and in the Power BI service.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-:::image type="content" source="media/desktop-see-data-see-records/see-data-record.png" alt-text="Screenshot that shows where to find the Visual table and Data point table features in the Data/Drill tab in the Power B I Desktop ribbon.":::
+:::image type="content" source="media/desktop-see-data-see-records/see-data-record.png" alt-text="Screenshot that shows where to find the Visual table and Data point table features in the Data/Drill tab in the Power BI Desktop ribbon.":::
 
 # [Power BI service](#tab/powerbi-service)
 
-:::image type="content" source="media/desktop-see-data-see-records/service-see-data-record.png" alt-text="Screenshot that shows where to find the Visual table and Data point table features in a shortcut menu in the Power B I service.":::
+:::image type="content" source="media/desktop-see-data-see-records/service-see-data-record.png" alt-text="Screenshot that shows where to find the Visual table and Data point table features in a shortcut menu in the Power BI service.":::
 
 ---
 
@@ -45,14 +45,14 @@ You can use **Visual table** to view the data in a visual as a table, or use **D
 
 **Visual table** shows you the data underlying a visualization. **Visual table** appears in the **Data/Drill** tab in the ribbon when a visual is selected.
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-01.png" alt-text="Screenshot that shows where to find the Visual table feature in the Data/Drill tab of the Power B I Desktop ribbon.":::
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-01.png" alt-text="Screenshot that shows where to find the Visual table feature in the Data/Drill tab of the Power BI Desktop ribbon.":::
 
 You can also see the data by using one of these options:
 
 - Right-click on a visualization, and then select **Show as a table** from the menu that appears.
 - Select **More options** (...) in the upper-right corner of a visualization, and then select **Show as a table**.
 
-![Screenshot that shows where to find the Visual table feature in Power B I Desktop. The feature is visible in a shortcut menu.](media/desktop-see-data-see-records/visual-table-02.png)&nbsp;&nbsp;![Screenshot that shows where to find the Visual table feature in Power B I Desktop. The feature is visible in the More options menu.](media/desktop-see-data-see-records/visual-table-03.png)
+![Screenshot that shows where to find the Visual table feature in Power BI Desktop. The feature is visible in a shortcut menu.](media/desktop-see-data-see-records/visual-table-02.png)&nbsp;&nbsp;![Screenshot that shows where to find the Visual table feature in Power BI Desktop. The feature is visible in the More options menu.](media/desktop-see-data-see-records/visual-table-03.png)
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -61,7 +61,7 @@ You can also see the data by using one of these options:
 - Right-click on a visualization, and then select **Show as a table** from the menu that appears.
 - Select **More options** (...) in the upper-right corner of a visualization, and then select **Show as a table**.
 
-:::image type="content" source="media/desktop-see-data-see-records/service-shortcut-menu-visual-table-item.png" alt-text="Screenshot that shows where to find the Visual table feature in the Power B I service. The feature is visible in the More options menu and a shortcut menu.":::
+:::image type="content" source="media/desktop-see-data-see-records/service-shortcut-menu-visual-table-item.png" alt-text="Screenshot that shows where to find the Visual table feature in the Power BI service. The feature is visible in the More options menu and a shortcut menu.":::
 
 ---
 
@@ -72,11 +72,11 @@ When you select **Visual table** or **Data point table**, Power BI displays both
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-04.png" alt-text="Screenshot that shows a pie chart in Power B I Desktop. Below the chart is a table that shows the details of the data.":::
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-04.png" alt-text="Screenshot that shows a pie chart in Power BI Desktop. Below the chart is a table that shows the details of the data.":::
 
 # [Power BI service](#tab/powerbi-service)
 
-:::image type="content" source="media/desktop-see-data-see-records/service-visual-table-horizontal-view.png" alt-text="Screenshot that shows a pie chart in the Power B I service. Below the chart is a table that shows the details of the data.":::
+:::image type="content" source="media/desktop-see-data-see-records/service-visual-table-horizontal-view.png" alt-text="Screenshot that shows a pie chart in the Power BI service. Below the chart is a table that shows the details of the data.":::
 
 ---
 
@@ -84,11 +84,11 @@ You can toggle between the horizontal view and a *vertical view* by selecting th
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-05.png" alt-text="Screenshot that shows a pie chart in Power B I Desktop with a data table to its right. In the upper-right corner, an icon is called out.":::
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-05.png" alt-text="Screenshot that shows a pie chart in Power BI Desktop with a data table to its right. In the upper-right corner, an icon is called out.":::
 
 # [Power BI service](#tab/powerbi-service)
 
-:::image type="content" source="media/desktop-see-data-see-records/service-visual-table-vertical-view.png" alt-text="Screenshot that shows a pie chart in the Power B I service with a data table to its right. In the upper-right corner, an icon is called out.":::
+:::image type="content" source="media/desktop-see-data-see-records/service-visual-table-vertical-view.png" alt-text="Screenshot that shows a pie chart in the Power BI service with a data table to its right. In the upper-right corner, an icon is called out.":::
 
 ---
 
@@ -96,17 +96,24 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-06.png" alt-text="Screenshot that shows the upper-left corner of the Power B I Desktop canvas. Back to report is called out.":::
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-06.png" alt-text="Screenshot that shows the upper-left corner of the Power BI Desktop canvas. Back to report is called out.":::
+
+> [!NOTE]
+> **Visual table** has the following limitations:
+>
+> - You can't export the *Visual table* to PDF or static PowerPoint. 
 
 # [Power BI service](#tab/powerbi-service)
 
-:::image type="content" source="media/desktop-see-data-see-records/service-back-button.png" alt-text="Screenshot that shows the upper-left corner of the Power B I service canvas. Back to report is called out.":::
+:::image type="content" source="media/desktop-see-data-see-records/service-back-button.png" alt-text="Screenshot that shows the upper-left corner of the Power BI service canvas. Back to report is called out.":::
 
----
 > [!NOTE]
 > **Show as table** has the following limitations:
 >
 > - You can't export the **Show as table** view to PDF or static PowerPoint. 
+
+---
+
 
 ## Use Data point table in Power BI
 
@@ -114,32 +121,18 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 
 You can also focus on one data record in a visualization, and drill into the data behind it. To use **Data point table**, select a visualization, then select **Data point table** in the **Data/Drill** tab of the ribbon, and then select a data point or row on the visualization.
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-07.png" alt-text="Screenshot that shows Power B I Desktop. A column chart is selected. In the Data/Drill tab of the ribbon, Data point table is called out.":::
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-07.png" alt-text="Screenshot that shows Power BI Desktop. A column chart is selected. In the Data/Drill tab of the ribbon, Data point table is called out.":::
 
 > [!NOTE]
 > If the **Data point table** button in the ribbon is disabled and grayed-out, it means the selected visualization does not support **Data point table**.
 
 You can also right-click a data element and select **Show data point as a table** from the menu that appears.
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-08.png" alt-text="Screenshot that shows a column chart in Power B I Desktop. In a shortcut menu for one of the columns, Show data point as a table is called out.":::
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-08.png" alt-text="Screenshot that shows a column chart in Power BI Desktop. In a shortcut menu for one of the columns, Show data point as a table is called out.":::
 
 When you select **Data point table** for a data element, the Power BI Desktop canvas displays all the data associated with the selected element.
 
-:::image type="content" source="media/desktop-see-data-see-records/visual-table-09.png" alt-text="Screenshot of a Power B I Desktop canvas. All the data for the selected column element is visible in a table.":::
-
-# [Power BI service](#tab/powerbi-service)
-
-You can also focus on one data record in a visualization, and drill into the data behind it. To use **Data point table**, right-click a data element and select **Show data point as a table** from the menu that appears.
-
-:::image type="content" source="media/desktop-see-data-see-records/service-shortcut-menu-data-point-table.png" alt-text="Screenshot that shows a column chart in the Power B I service. In a shortcut menu for one of the columns, Show data point as a table is called out.":::
-
-When you select **Show data point as a table** for a data element, the Power BI service displays all the data associated with the selected element.
-
-:::image type="content" source="media/desktop-see-data-see-records/service-data-point-table.png" alt-text="Screenshot of the Power B I service. All the data for the selected column element is visible in a table.":::
-
----
-
-To get back to the report, select **< Back to Report** in the upper-left corner of the canvas.
+:::image type="content" source="media/desktop-see-data-see-records/visual-table-09.png" alt-text="Screenshot of a Power BI Desktop canvas. All the data for the selected column element is visible in a table.":::
 
 > [!NOTE]
 > **Data point table** has the following limitations:
@@ -148,6 +141,28 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 > - You can't use **Data point table** when your visual uses a calculated measure in a (multidimensional) measure group.
 > - You can't use **Data point table** when you are connected to a live multidimensional (MD) model.
 > - You can't export the **Data point table** view to PDF or static PowerPoint. 
+
+# [Power BI service](#tab/powerbi-service)
+
+You can also focus on one data record in a visualization, and drill into the data behind it. To use **Data point table**, right-click a data element and select **Show data point as a table** from the menu that appears.
+
+:::image type="content" source="media/desktop-see-data-see-records/service-shortcut-menu-data-point-table.png" alt-text="Screenshot that shows a column chart in the Power BI service. In a shortcut menu for one of the columns, Show data point as a table is called out.":::
+
+When you select **Show data point as a table** for a data element, the Power BI service displays all the data associated with the selected element.
+
+:::image type="content" source="media/desktop-see-data-see-records/service-data-point-table.png" alt-text="Screenshot of the Power BI service. All the data for the selected column element is visible in a table.":::
+
+> [!NOTE]
+> **Show data point as a table** has the following limitations:
+>
+> - You can't change the data in the **Show data point as a table** view and save it back to the report.
+> - You can't use **Save data point as a table** when your visual uses a calculated measure in a (multidimensional) measure group.
+> - You can't use **Save data point as a table** when you are connected to a live multidimensional (MD) model.
+> - You can't export the **Save data point as a table** view to PDF or static PowerPoint. 
+---
+
+To get back to the report, select **< Back to Report** in the upper-left corner of the canvas.
+
 
 ## Next steps
 
