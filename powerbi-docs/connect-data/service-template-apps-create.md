@@ -25,7 +25,7 @@ Here are the requirements for building a template app:
 - A [Power BI pro license](../fundamentals/service-self-service-signup-for-power-bi.md)
 - An [Power BI Desktop installation](../fundamentals/desktop-get-the-desktop.md) (optional)
 - Familiarity with [basic Power BI concepts](../fundamentals/service-basic-concepts.md)
-- Permissions to share a template app publicly. For more information, see Power BI [Template app tenant settings](../admin/service-admin-portal-template-app.md)
+- Permissions to share a template app publicly as shown in [Template app tenant settings](../admin/service-admin-portal-template-app.md)
 
 ## Create the template workspace
 
@@ -33,18 +33,18 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 1. In the Power BI service, select **Workspaces** > **Create a workspace**.
 
-    ![Screenshot that shows Create a workspace.](media/service-template-apps-create/power-bi-new-workspace.png)
+   ![Screenshot that shows Create a workspace.](media/service-template-apps-create/power-bi-new-workspace.png)
 
-1. In **Create a workspace**, enter a name, description (optional), and logo image (optional) for your workspace.
+1. In **Create a workspace**, enter a name, optional description, and optional logo image for your workspace.
 
-    ![Screenshot that shows the Create a workspace dialog box.](media/service-template-apps-create/power-bi-upgrade-new.png)
+   ![Screenshot that shows the Create a workspace dialog box.](media/service-template-apps-create/power-bi-upgrade-new.png)
 
 1. Expand the **Advanced** section and select **Develop a template app**.
 
    ![Screenshot that shows Develop a template app.](media/service-template-apps-create/power-bi-template-app-develop.png)
 
-    >[!Important]
-    > App builder workspace settings don't determine the workspaces where app installers install the app. An app developed in a premium capacity workspace isn't automatically installed on a premium capacity workspace. It's therefore not recommended to use premium capacity for the builder workspace. Installer workspaces might not be premium capacity, and functionality that relies on premium capacity won't work unless the installer manually moves the installed workspace to premium capacity.
+   >[!Important]
+   > App builder workspace settings don't determine the workspaces where app installers install the app. An app developed in a premium capacity workspace isn't automatically installed on a premium capacity workspace. It's therefore not recommended to use premium capacity for the builder workspace. Installer workspaces might not be premium capacity, and functionality that relies on premium capacity won't work unless the installer manually moves the installed workspace to premium capacity.
 
 1. Select **Save**.
 
@@ -53,7 +53,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 ## Add content to the template app workspace
 
-As with a regular Power BI workspace, your next step is add content to the workspace. For more information, see [Add content to the app](../collaborate-share/service-create-distribute-apps.md#add-content-to-the-app).
+As with a regular Power BI workspace, your next step is to add content to the workspace. For more information, see [Add content to the app](../collaborate-share/service-create-distribute-apps.md#add-content-to-the-app).
 
 If you use parameters in Power Query, make sure they have well-defined types, such as `Text`. The types `Any` and `Binary` aren't supported.
 
@@ -67,15 +67,15 @@ Now that you have content in your workspace, you can package it in a template ap
 
    ![Screenshot that shows Create app.](media/service-template-apps-create/power-bi-create-app.png)
 
-   Next, you fill in more options for your template app in six tabs.
+   Next, fill in more options for your template app in six tabs.
 
-1. On the **Branding** tab, fill in the following fields:
+1. On the **Branding** tab, complete the following fields:
 
-   - App name.
-   - Description.
-   - Support site. The support link appears under app info after you redistribute the template app as an organizational app.
-   - App logo. The logo has a 45K file size limit, must have a 1:1 aspect ratio, and must have a *.png*, *.jpg*, or *.jpeg* extension.
-   - App theme color.
+   - **App name**
+   - **Description**
+   - **Support site**. The support link appears under app info after you redistribute the template app as an organizational app.
+   - **App logo**. The logo has a 45K file size limit, must have a 1:1 aspect ratio, and must have a *.png*, *.jpg*, or *.jpeg* file extension.
+   - **App theme color**
 
    ![Screenshot that shows the Branding tab.](media/service-template-apps-create/power-bi-create-branding.png)
 
@@ -92,17 +92,17 @@ Now that you have content in your workspace, you can package it in a template ap
    >[!NOTE]
    >To protect your data, disable the **Download the report to file** option, and configure the other two options as desired. This is because the view, edit, and export controls on this tab apply only to the Power BI service. If someone downloads the *.pbix* file, it's no longer in the service. The download puts a copy of your data, unprotected, in a location the user chooses. You then no longer have any control over the data.
    >
-   >To limit access to your queries and measures while still allowing your users to add their own data sources, consider selecting only the **Export or externally connect to data** options. This enables users to add their own data sources without being able to edit your dataset. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
+   >To limit access to your queries and measures while still allowing your users to add their own data sources, consider selecting only the **Export or externally connect to data** options. This selection lets users add their own data sources without being able to edit your dataset. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
 1. Use the capabilities on the **Parameters** tab to help app installers configure the app after installation when they connect to their data. You create the parameters in the original *.pbix* file. For more information about creating query parameters, see [Deep Dive into Query Parameters and Power BI Templates](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
 
    ![Screenshot that shows the Parameters tab.](media/service-template-apps-create/power-bi-create-parameters.png)
 
-   Each parameter has a name and a description, which come from the query, and a **Value** field. There are three options for getting a value for the parameter during installation:
+   Each parameter has a name, which comes from the query, and a **Value** field. There are three options for getting a value for the parameter during installation:
 
-   - You can require the installer to enter a value.
+   - You can require the user who installs the app to enter a value.
 
-     In this case, you provide an example that the installer replaces. To configure a parameter in this way, select the **Required** checkbox, and then give an example in the textbox that shows the user what kind of value is expected, as shown in the following example.
+     In this case, you provide an example that the user replaces. To configure a parameter in this way, select the **Required** checkbox, and then give an example in the textbox that shows the user what kind of value is expected, as shown in the following example.
 
      ![Screenshot of a parameter value required from the user.](media/service-template-apps-create/power-bi-create-parameters-require-user.png)
 
@@ -207,6 +207,5 @@ If you're an independent software vendor and distribute your template app via yo
 ## Next steps
 
 - To learn how your customers interact with your template app, see [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
-- See the [Create a Power BI app offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details on distributing your app.
-- For more information, see the [Connect to data in Power BI documentation](index.yml).
+- For details on distributing your app, see the [Create a Power BI app offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
