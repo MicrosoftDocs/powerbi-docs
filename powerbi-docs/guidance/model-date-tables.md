@@ -1,8 +1,8 @@
 ---
 title: Create date tables in Power BI Desktop
 description: Techniques and guidance for creating date tables in Power BI Desktop.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -22,7 +22,7 @@ To work with Data Analysis Expressions (DAX) [time intelligence functions](/dax/
 > - The date column must not contain BLANKs.
 > - The date column must not have any missing dates.
 > - The date column must span full years. A year isn't necessarily a calendar year (January-December).
-> - The date table must be [marked as a date table](../transform-model/desktop-date-tables.md#setting-your-own-date-table).
+> - The date table must be [marked as a date table](../transform-model/desktop-date-tables.md#set-your-own-date-table).
 
 You can use any of several techniques to add a date table to your model:
 

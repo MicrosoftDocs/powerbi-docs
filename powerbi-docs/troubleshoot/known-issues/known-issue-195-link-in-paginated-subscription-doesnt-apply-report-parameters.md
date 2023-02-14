@@ -13,7 +13,7 @@ ms.custom: known-issue-195
 
 When you create a paginated report subscription to be delivered through email, you have the ability to select the "Go to Report" link to take you to the report within Power BI.  If you've created the report subscription to use a certain set of parameter values, the report opens without those parameters applied.
 
-**APPLIES TO:** ✔️ Power BI Paginated Reports
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Paginated Reports
 
 **Status:** Fixed: September 2, 2022
 

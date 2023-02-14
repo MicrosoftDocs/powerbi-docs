@@ -1,13 +1,13 @@
 ---
 title: "Power BI implementation planning: Information protection for Power BI"
 description: "Learn about labeling and classification of data assets for use with Power BI."
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 12/12/2022
 ---
 
 # Power BI implementation planning: Information protection for Power BI
@@ -480,7 +480,7 @@ If you decide to disallow sharing of protected content, set the **Restrict conte
 We strongly recommend that you plan to enable this tenant setting to disallow sharing of protected content. When enabled, it disallows sharing operations with the entire organization for more sensitive content (defined by the labels that have encryption defined). By enabling this setting, you'll reduce the possibility of data leakage.
 
 >[!IMPORTANT]
-> There's a similar [tenant setting](/power-bi/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) named **Allow shareable links to grant access to everyone in your organization**. Although it has a similar name, its purpose is different. It defines which groups can create a sharing link for the entire organization, regardless of the sensitivity label. In most cases, we recommend this capability be limited in your organization.
+> There's a similar [tenant setting](/power-bi/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization) named **Allow shareable links to grant access to everyone in your organization**. Although it has a similar name, its purpose is different. It defines which groups can create a sharing link for the entire organization, regardless of the sensitivity label. In most cases, we recommend this capability be limited in your organization. For more information, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permission-links) article.
 
 ### Supported export file types
 

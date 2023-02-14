@@ -38,7 +38,7 @@ You can also start using datamarts from any dataflow you currently have as well.
 
 ## Create a datamart
 
-To create a datamart, navigate to your existing Power BI Premium Gen 2, Premium per capacity (PPC), or Premium Per User (PPU) workspace. Datamarts require a Premium Gen2 subscription. In your Premium Gen 2 workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
+To create a datamart, navigate to your existing Power BI Premium Gen 2, Premium per capacity (PPC), or Premium Per User (PPU) workspace. Datamarts require a Power BI Premium subscription. In your Premium Gen 2 workspace, select **+ New** and then select **Datamart (Preview) to create a datamart.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-01.png" alt-text="Screenshot of create new datamart.":::
 

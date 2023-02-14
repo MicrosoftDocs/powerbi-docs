@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/2/2022
+ms.date: 01/25/2023
 ---
 
 # Change log for Power BI Report Server
@@ -16,8 +16,37 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## January 2023
+- **Power BI Report Server**
+    - *Version: 1.16.8420.13742 (build 15.0.1111.115), Released: January 25, 2023*
+        - Features
+            - Using of single quote in item names is enabled
+            - Added ability to speed up History Snapshots loading by disabling its size calculation 
+            - Accessibility improvements
+            - New Teal style theme introduced
+        - Bug fixes
+            - Fixed issue with datetime type conversion in PBIX reports using MySQL
+            - Fixed disabling tooltips in PBIX reports
+            - Fixed input of date in date slicer in PBIX reports
+            
+- **Power BI Desktop (optimized for Power BI Report Server)**   
+    - *Version: 2.112.1421.0 (January 2023), Released: January 25, 2023*   
+        - Support for January 2023 Power BI Report Server
+        - Bug fixes
+
 ## September 2022
 - **Power BI Report Server**
+    - *Version: 1.15.8377.1837 (build 15.0.1110.135), Released: December 13, 2022*
+        - Features
+            - Power BI Migration is enabled by default
+            - Multi-row card selection is supported
+            - Added ability to restrict Excel files for upload
+        - Bug fixes
+            -  Fixed issue with saving subscriptions using weekdays-based schedule
+            -  Fixed issue with refreshing long text data through ODBC in PBIX reports
+            -  Fixed issue with rendering custom visuals in new PBIX reports
+            -  Fixed issue with rendering RDL report with parameters by pressing Enter in parameter field
+            
     - *Version: 1.15.8300.38452 (build 15.0.1110.120), Released: September 26, 2022*
         - Features
             - Custom Visual API shipped with release - version v4.7.0 

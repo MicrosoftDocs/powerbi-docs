@@ -1,8 +1,8 @@
 ---
 title: "Power BI adoption roadmap: Community of practice"
 description: Establish a community of practice to help users drive strong and successful adoption of Power BI.
-author: peter-myers
-ms.author: v-petermyers
+author: kfollis
+ms.author: kfollis
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

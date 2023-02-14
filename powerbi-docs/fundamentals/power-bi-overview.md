@@ -1,12 +1,12 @@
 ---
 title: What is Power BI?
-description: Overview of Power BI and how the different parts fit together - Power BI Desktop, the Power BI service, Power BI mobile, Report Server, and Power BI embedded.
+description: "Overview of Power BI and how the different parts fit together: Power BI Desktop, the Power BI service, Power BI Mobile, Power BI Report Server, and Power BI Embedded."
 author: mihart
 ms.author: mihart
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview
-ms.date: 03/30/2021
+ms.date: 12/06/2022
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ms.custom: intro-overview
@@ -14,17 +14,17 @@ ms.custom: intro-overview
 
 # What is Power BI?
 
-**Power BI** is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data may be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone or everyone you want.
+Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data might be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses. Power BI lets you easily connect to your data sources, visualize and discover what's important, and share that with anyone or everyone you want.
 
 ## The parts of Power BI
 
 Power BI consists of several elements that all work together, starting with these three basics:
 
-- A Windows desktop application called **Power BI Desktop**.
-- An online SaaS (*Software as a Service*) service called the **Power BI service**. 
-- Power BI **mobile apps** for Windows, iOS, and Android devices.
+- A Windows desktop application called *Power BI Desktop*.
+- An online software as a service (SaaS) service called the *Power BI service*.
+- Power BI Mobile apps for Windows, iOS, and Android devices.
 
-![Screenshot of Diagram of Power B I Desktop, Service, and Mobile showing their integration.](media/power-bi-overview/power-bi-overview-blocks.png)
+:::image type="content" source="media/power-bi-overview/power-bi-overview-blocks.png" alt-text="Screenshot of Diagram of Power BI Desktop, Service, and Mobile showing their integration.":::
 
 These three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;are designed to let you create, share, and consume business insights in the way that serves you and your role most effectively.
 
@@ -35,9 +35,9 @@ Beyond those three, Power BI also features two other elements:
 
 ## How Power BI matches your role
 
-How you use Power BI may depend on your role in a project or on a team. Other people, in other roles, might use Power BI differently.
+How you use Power BI depends on your role in a project or on a team. Other people, in other roles, might use Power BI differently.
 
-For example, you might primarily use the **Power BI service** to view reports and dashboards. Your number-crunching, business-report-creating coworker might make extensive use of **Power BI Desktop** or **Power BI Report Builder** to create reports, then publish those reports to the Power BI service, where you view them. Another coworker, in sales, might mainly use the **Power BI phone app** to monitor progress on sales quotas, and to drill into new sales lead details.
+For example, you might primarily use the Power BI service to view reports and dashboards. Your number-crunching, business-report-creating coworker might make extensive use of Power BI Desktop or Power BI Report Builder to create reports, then publish those reports to the Power BI service, where you view them. Another coworker, in sales, might mainly use the Power BI Mobile app to monitor progress on sales quotas, and to drill into new sales lead details.
 
 If you're a developer, you might use Power BI APIs to push data into datasets or to embed dashboards and reports into your own custom applications. Have an idea for a new visual? Build it yourself and share it with others.  
 
@@ -46,14 +46,15 @@ You also might use each element of Power BI at different times, depending on wha
 How you use Power BI can be based on which feature or service of Power BI is the best tool for your situation. For example, you can use Power BI Desktop to create reports for your own team about customer engagement statistics and you can view inventory and manufacturing progress in a real-time dashboard in the Power BI service. You can create a paginated report of mailable invoices, based on a Power BI dataset. Each part of Power BI is available to you, which is why it's so flexible and compelling.
 
 Explore documents that pertain to your role:
+
 - Power BI for [*business users*](../consumer/end-user-consumer.md)
 - Power BI Desktop for [*report creators*](desktop-what-is-desktop.md)
 - Power BI Report Builder for [*enterprise report creators*](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Power BI for [*administrators*](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - Power BI for *developers*
-    * [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
-    * [Create your own visuals in Power BI](../developer/visuals/develop-power-bi-visuals.md)
-    * [What can developers do with the Power BI API?](/rest/api/power-bi/)
+  - [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)
+  - [Create your own visuals in Power BI](../developer/visuals/develop-power-bi-visuals.md)
+  - [What can developers do with the Power BI API?](/rest/api/power-bi/)
 
 ## The flow of work in Power BI
 
@@ -71,7 +72,7 @@ In the Power BI service, you can use the [deployment pipeline tool](../create-re
 
 Another workflow involves paginated reports in the Power BI service. Enterprise report creators design paginated reports to be printed or shared. They can also share these reports in the Power BI service. They're called *paginated* because they're formatted to fit well on a page. They're often used for operational reports, or for printing forms such as invoices or transcripts. They display all the data in a table, even if the table spans multiple pages. Power BI Report Builder is the standalone tool for authoring paginated reports.
 
-:::image type="content" source="media/power-bi-overview/paginated-report-invoice-power-bi-service.png" alt-text="Screenshot of paginated report in the Power B I service.":::
+:::image type="content" source="media/power-bi-overview/paginated-report-invoice-power-bi-service.png" alt-text="Screenshot of paginated report in the Power BI service.":::
 
 Read more about [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in the Power BI service.
 
@@ -81,13 +82,14 @@ What if you need to keep your reports on premises, say, behind a firewall?  Read
 
 You can create, deploy, and manage Power BI reports in Power BI Desktop, and paginated reports in Report Builder, with the ready-to-use tools and services that Power BI Report Server provides.
 
-![Screenshot of Diagram of Power B I Report Server, service, and mobile showing their integration.](media/power-bi-overview/power-bi-report-server2.png)
+![Screenshot of Diagram of Power BI Report Server, service, and mobile showing their integration.](media/power-bi-overview/power-bi-report-server2.png)
 
-Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that's viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready. 
+Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that's viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready.
 
 Read more about [Power BI Report Server](../report-server/get-started.md).
 
 ## Next steps
-- [Quickstart: Learn your way around the Power BI service](../consumer/end-user-experience.md)   
+
+- [Tutorial: Learn your way around the Power BI service](../consumer/end-user-experience.md)
 - [Tutorial: Get started with the Power BI service](service-get-started.md)
 - [Quickstart: Connect to data in Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)

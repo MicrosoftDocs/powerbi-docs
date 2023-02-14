@@ -1,358 +1,448 @@
 ---
-title: Power BI Premium Metrics app
-description: Learn how to use the Power BI Premium Metrics app to manage and troubleshoot your premium capacity.
+title: Monitor Power BI Premium capacities with the Premium metrics app.
+description: Learn how to use the Power BI Premium metrics app Metrics app, which lets you monitor Power BI Premium capacities.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/18/2021
-LocalizationGroup: Premium
+ms.date: 01/25/2023
+LocalizationGroup: Premium 
 ---
-# Power BI Premium Metrics app
 
-You can use the **Power BI Premium Metrics app** to manage the health and capacity of your Power BI Premium subscription. With the app, administrators use the app's **Capacity health center** to see and interact with indicators that monitor the health of their premium capacity. The Metrics app consists of the landing page, called the **Capacity Health Center**, and details about three important metrics:
+# Use the Premium metrics app
 
-* Active memory
-* Query waits
-* Refresh waits
+The Power BI Premium utilization and metrics app is designed to provide monitoring capabilities for Power BI Premium capacities. Monitoring your capacities is essential for making informed decisions on how to best use your Premium capacity resources. For example, the app can help identify when to scale up your capacity or when to turn on [autoscale](service-premium-auto-scale.md).
 
-![The Power BI Premium Metrics app](media/service-premium-metrics-app/premium-metrics-app-00.png)
+>[!NOTE]
+>When turning on autoscale, make sure there are no [Azure policies](/azure/governance/policy/overview) preventing autoscale from working.
 
-The following sections describe the landing page, and the three metrics report pages, in detail. 
+The app is updated often with new features and functionalities and provides the most in-depth information into how your capacities are performing.
 
-> [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+To [install the Premium metrics app](service-premium-install-app.md), you must be a capacity admin. Once installed, anyone in the organization with the right permissions can view the app.
 
-> [!NOTE]
-> Power BI Premium recently released a new version of Premium, called **Premium Gen2**. Premium Gen2 simplifies the management of Premium capacities, and reduces management overhead. In particular, it greatly reduces the metrics administrators must monitor (CPU only) to ensure performance and users’ experience. For more information, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+The Premium metrics app has six pages:
 
-> [!NOTE]
-> The metrics app cannot be used to monitor Premium Per User (PPU) activities or capacity.
+* [Overview](#overview)
 
-## Premium capacity health center
+* [Evidence](#evidence)
 
-When you open the **Power BI Premium metrics app** you're presented with the **Capacity health center**, which provides an overview of the health of your Power BI Premium capacity.
+* [Refresh](#refresh)
 
-![The capacity health center in the Premium Metrics app](media/service-premium-metrics-app/premium-metrics-app-01.png)
+* [Timepoint](#timepoint)
 
-From the landing page, you can select the Power BI Premium capacity you want to view, in case your organization has multiple Premium subscriptions. To view a Premium capacity, select the dropdown near the top of the page called **Select a capacity to see its metrics**.
+* [Artifact Detail](#artifact-detail)
 
-The three KPIs show the current health of the selected Premium capacity, based on the settings applied to each of the three KPIs. 
+## Overview
 
-To view specifics about each KPI, select the **Explore** button at the bottom of each KPI's visual, and its detail page is displayed. The following sections describe each KPI and the details its page provides.
+This page provides an overview of the capacity performance. It's divided into the three sections listed below.
 
-## The active memory metric
+At the top of each page, the **CapacityID** field allows you to select the capacity the app shows results for.
 
-The **active memory** metric is part of the *capacity planning* category, which is a good health indicator to evaluate your capacity's resource consumption for usage, so you can adjust the capacity as necessary to plan capacity scale. 
+:::image type="content" source="media/service-premium-metrics-app/overview-page.png" alt-text="A screenshot showing the overview page in the Power BI Premium metrics app, with the capacity I D selector highlighted.":::
 
-![The active memory KPI](media/service-premium-metrics-app/premium-metrics-app-02.png)
+### Artifacts
 
-**Active memory** is the memory used to process datasets that are currently in use, and which therefore will not be evicted when memory is needed. The active memory metric indicates whether your capacity can handle additional load, or of already nearing or over capacity, the capacity's current load. The active memory currently being consumed means less memory is available to support additional refreshes and queries. 
+The artifacts section is made up of two visuals, one on top of the other, in the left side of the page. The top visual is a stacked column table, and below it is a matrix table.
 
-The **active memory** KPI measures how many times the capacity's active memory has crossed the 70% threshold 50 times (the marker is set to 30% of the last seven days), which indicates that the capacity is approaching a point when users may begin seeing performance issues with queries.
+:::image type="content" source="media/service-premium-metrics-app/artifacts-section.png" alt-text="A screenshot showing the artifacts section, in the overview page, in the Power BI Premium metrics app.":::
 
-The gauge visual shown in this section reveals that, in the last seven days from the time the report was last refreshed, the capacity has crossed the 70% threshold four times, split by hourly buckets. The maximum value of the gauge, 168, represents the last seven days, in hours.
+#### Multi metric column chart
 
-To learn the details of the active memory KPI, click the **Explore** button to see a report page that provides specific visualizations of its detailed metrics, along with a troubleshooting guide shown on the right column of the page. 
+A stacked column table that provides an hourly view of your capacity's usage. Drill down to a specific day to identify daily patterns. Selecting each stacked column will filter the main matrix and the other visuals according to your selection.
 
-There are two scenarios explained, which you can show on the report page by selecting **Scenario 1** or **Scenario 2** on the page. 
+:::image type="content" source="media/service-premium-metrics-app/multi-metric-column-chart.png" alt-text="A screenshot showing the multi metric column chart, in the overview page, in the Power BI Premium metrics app.":::
 
-![Screenshot shows the active memory detail page.](media/service-premium-metrics-app/premium-metrics-app-03.png)
+The Multi metric column chart displays the four values listed below. It shows the top results for these values per Power BI item during the past two weeks.
 
-The troubleshooting guides, associated with each scenario, provide detailed explanations about what the metrics mean, so you can better understand the state of the capacity, and what can be done to mitigate any issues. 
+:::image type="content" source="media/service-premium-metrics-app/multi-metric-column-chart-values.png" alt-text="A screenshot showing the multi metric column chart with the values row highlighted.":::
 
-Those two scenarios are described in the following sections.
+* **CPU** - CPU processing time in seconds.
 
-### Scenario one - current load is too high 
+* **Duration** - Processing time in seconds.
 
-To determine whether there's enough memory for the capacity to complete its workloads, consult the first visual on the page: **A: Consumed Memory Percentages**, which displays the memory consumed by datasets that are being actively processed, and thus, cannot be evicted.
+* **Operations** - The number of Power BI operations that took place.
 
-The alarm threshold, which is the red dotted line, marks incidents of 90% memory consumption.
+* **Users** - The number of users that performed operations.
 
-The warning threshold, which is the yellow dotted line, marks incidents of 70% memory consumption. 
+#### Matrix by artifact and operation
 
-The black dotted line indicates the memory usage trendline, based on the current capacity's memory usage over the course of the graph timeline.
+A matrix table that displays metrics for each Power BI item on the capacity.
 
-High occurrences of active memory above the alarm threshold (red dotted line) and memory trendline (black dotted line) indicates memory capacity pressure, possibly preventing additional datasets from being loaded into memory during that time. 
+:::image type="content" source="media/service-premium-metrics-app/matrix-table.png" alt-text="A screenshot showing the matrix by artifact and operation visual, in the overview page, in the Power BI Premium metrics app.":::
 
-When you see such cases, you should look carefully at the other charts on the page to better determine what and why so much memory is so frequently being consumed, and how to load balance or optimize, or if necessary, scale up the capacity. 
+To gain a better understanding of your capacity's performance, you can sort this table according to the parameters listed below. The colors in the table represent your *performance delta*.
 
-The second visual on the page, **B: Hourly loaded active datasets** displays the counts of the maximum number of datasets that were loaded in memory, in hourly buckets. 
+:::image type="content" source="media/service-premium-metrics-app/matrix-table-parameters.png" alt-text="A screenshot showing the matrix by artifact and operation visual parameter headers.":::
 
-The third visual, **C: Why datasets are in memory** is a table that lists the dataset by workspace name, dataset name, datasets uncompressed size in memory, explains the reason it's loaded in memory (such as, being refreshed or queried against, or both).
+* **Artifacts** - A list of Power BI items active during the selected period of time. The item name is a string with the syntax: `item name \ item type \ workspace name`. You can expand each entry to show the various operations (such as queries and refreshes) the item performed.
 
-#### Diagnosing scenario one
+* **CPU (s)** - CPU processing time in seconds. Sort to view the top CPUs that consumed Power BI items over the past two weeks.
 
-Consistent high active memory utilization may result in forcing datasets that are actively being used to be evicted, or can prevent new datasets from able to load. The following steps can help you diagnose problems
+* **Duration (s)** - Processing time in seconds. Sort to view the Power BI items that needed the longest processing time during the past two weeks.
 
-1. Have a look at chart *A: Consumed memory percentages*
+* **Users** - The number of users that used the Power BI item.
 
-    **a.** If Chart A shows the alarm threshold (90%) is crossed many times and/or for consecutive hours, then your capacity is running low on memory too frequently. In the chart below, we can see the warning threshold (70%) was crossed four times.
+* **Artifact Size** - The amount of memory a Power BI item needs. Sort to view the Power BI items that have the largest memory footprint.
 
-    ![Chart a, consumed memory percentages](media/service-premium-metrics-app/premium-metrics-app-04.png)
+* **Overloaded minutes** - Displays a sum of 30 seconds increments where overloading occurred at least once. Sort to view the Power BI items that were affected the most due to overload penalty.
 
-    **b.** The chart titled *B: Hourly loaded active datasets* shows the maximum number of unique datasets loaded in memory by hourly buckets. Selecting a bar in the visual will cross filter the reasons datasets are in memory visual.  
+* **Performance delta** - Displays the performance effect on Power BI items. The number represents the percent of change from seven days ago. For example, 20 suggests that there's a 20% improvement today, compared with the same metric taken a week ago.
 
-    ![Chart b, consumed memory by hour](media/service-premium-metrics-app/premium-metrics-app-05.png)     
+    The colors in the matrix represent your *performance delta*:
+    * *No color* - A value higher than -10
+    * *Orange* - A value between -10 and -25
+    * *Red* - A value lower than -25
 
-    **c.** Consult the **Why datasets are in memory** table to see a list of the datasets that were loaded in memory. Sort by *Dataset Size (MB)* to highlight the datasets taking up the most memory. Capacity operations are classified as either *interactive* or *background*. Interactive operations include rendering requests and responding to user interactions (filtering, Q&A querying, and so on). Total queries and total refreshes provide an idea of whether there are interactive (queries) heavy or background (refreshes) operations done on the dataset. It's important to understand that interactive operations are always prioritized over background operations to ensure the best possible user experience. If there are insufficient resources, background operations are added to a queue, and are processed once resources free up. Background operations, such as dataset refreshes and AI functions, can be stopped mid-process by the Power BI service and added to a queue.
-    
-    ![table c, list of datasets](media/service-premium-metrics-app/premium-metrics-app-06.png)  
+    To create the *performance delta* Power BI calculates an hourly average for all the fast operations that take under 200 milliseconds to complete. The hourly value is used as a slow moving average over the last seven days (168 hours). The slow moving average is then compared to the average between the most recent data point, and a data point from seven days ago. The *performance delta* indicates the difference between these two averages.
 
-#### Remedies for scenario one
+    You can use the *performance delta* value to assess whether the average performance of your Power BI items improved or worsened over the past week. The higher the value is, the better the performance is likely to be. A value close to zero indicates that not much has changed, and a negative value suggests that the average performance of your Power BI items got worse over the past week.
 
-You can take the following steps to remedy the problems associated with scenario one:
+    Sorting the matrix by the *performance delta* column helps identify datasets that have had the biggest change in their performance. During your investigation, don't forget to consider the *CPU (s)* and number of *Users*. The *performance delta* value is a good indicator when it comes to Power BI items that have a high CPU utilization because they're heavily used or run many operations. However, small datasets with little CPU activity may not reflect a true picture, as they can easily show large positive or negative values.
 
-1. **Scale up the capacity** - scaling up the capacity to the next SKU will make available twice the amount of memory than the current SKU, thus alleviating any memory pressure the capacity is currently experiencing.
+### Performance
 
-2. **Move datasets to another capacity** - if you have another capacity that has more memory available, you can move the workspaces that contain the larger datasets to that capacity.
+The performance section is made up of four visuals, one on top of the other, in the middle of the page.
 
+:::image type="content" source="media/service-premium-metrics-app/performance-section.png" alt-text="A screenshot showing the performance section, in the overview page, in the Power BI Premium metrics app.":::
 
-### Scenario two - future load will exceed limits
+#### CPU over time
 
-To determine whether there's enough memory for the capacity to complete its workloads, you can refer to the **A: Consumed Memory Percentages** visual on the top of the page, representing the memory consumed by datasets that are being actively processed so cannot be evicted. The black dotted line highlights the trends. In a capacity experiencing memory pressure, the same visual will clearly show the memory trendline (black dotted line) upwards, meaning that it is possibly preventing additional datasets from being loaded into memory at that point in time. The trend line, the black dashed line, shows the trend of growth based on the seven days of data. 
+Displays the CPU usage of the selected capacity over time. Filters applied to the page in the [Multi metric column chart](#multi-metric-column-chart), affect this chart's display as follows:
 
-![Screenshot shows the active memory detail page for scenario two.](media/service-premium-metrics-app/premium-metrics-app-07.png)
+* *No filters applied* - Columns display the peak timepoint per hour.
 
-#### Diagnosing scenario two
+* *Filters are applied* -  The visuals displays every 30 second timepoint.
 
-To diagnose scenario two, determine if the trend line is showing an upward trend towards warning or alarm thresholds. 
+>[!NOTE]
+>Peak is calculated as the highest number of seconds from both [*interactive* and *background*](service-premium-interactive-background-operations.md) operations.
 
-1. Consider **Chart A:**
+To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
-    ![Consumed memory graph](media/service-premium-metrics-app/premium-metrics-app-08.png)
+:::image type="content" source="media/service-premium-metrics-app/timepoint-drillthrough.png" alt-text="A screenshot showing the timepoint drill through option in the C P U overtime chart.":::
 
-    **a.** If the chart shows an upward slope, that indicates that memory consumption has increased over the past seven days.
+The CPU over time chart displays the following elements:
 
-    **b.** Assume the current growth, and predict when the trend line will cross the warning threshold (the yellow dashed line).
+* **Interactive CPU** - Red columns represent the number of CPU seconds used during interactive operations in a 30 second period.
 
-    **c.** Keep checking the trend line at least every two days, to see if the trend continuing.
+    [*Interactive*](service-premium-interactive-background-operations.md#interactive-operations) operations cover a wide range of resources triggered by Power BI users. These operations are associated with interactive page loads.
 
-#### Remedies for scenario two
+* **Background** - Blue columns represent the number of CPU seconds used during background operations in a 30 second period.
 
-You can take the following steps to remedy the problems associated with scenario two:
+    [*Background*](service-premium-interactive-background-operations.md#background-operations) operations cover Power BI backend processes that are not directly triggered by users, such as data refreshes.
 
-1. **Scale up the capacity** - scaling up the capacity to the next SKU will make available twice the amount of memory than the current SKU, thus alleviating any memory pressure the capacity is currently experiencing.
+* **CPU Limit** - A yellow dotted line that shows the threshold of the allowed number of CPU seconds for the selected capacity. Columns that stretch above this line, represent timepoints where the capacity is overloaded.
 
-2. **Move datasets to another capacity** - if you have another capacity that has more memory available, you can move the workspaces that contain the larger datasets to that capacity.
+#### Overloaded minutes per hour
 
+Displays a score that represents the severity that overload had on the performance of a Power BI item. If no item is filtered, this chart shows the maximum value seen from all items at each load evaluation interval (30 seconds) in the past two weeks.
 
-## The query waits metric
+#### Artifact size
 
-The **Queries** category indicates whether users could experience report visuals that are slow to respond, or could become unresponsive. **Query waits** is the time the query takes to start execution from the time it was triggered. This KPI measures whether 25% or more of the selected capacity's queries are waiting 100 milliseconds or longer to execute. Query waits occur when there's not enough available CPU to execute all pending queries. 
+Displays the memory footprint recorded for Power BI items over time. If no item is filtered this chart shows the maximum value seen from all items at each ten minute time sample in the past two weeks.
 
-![The query waits gauge](media/service-premium-metrics-app/premium-metrics-app-09.png)
+#### Performance profile
 
-The gauge in this visual shows that in the last seven days from the time the report was last refreshed, 17.32% of the queries waited more than 100 milliseconds. 
+Displays an aggregate of report performance across three operation categories:
 
-To learn details of Query waits KPI, click the **Explore** button to display a report page with visualization of relevant metrics, and a troubleshooting guide in the right column of the page. The troubleshooting guide has two scenarios, each providing detailed explanations of the metric, the state of the capacity, and what you can do to mitigate the issue.
+[!INCLUDE [premium-app-fast-moderate-slow-operations](../includes/premium-app-fast-moderate-slow-operations.md)]
 
-We discuss each query waits scenario, in turn, in the following sections.
+The aggregate is taken from the total number of operations performed on a Power BI item, over the past two weeks. If no item is filtered, this chart shows the performance profile for datasets on the entire capacity.
 
-### Scenario one - long running queries consume CPU
+### Weekly trendlines
 
-In scenario one, long running queries are taking up too much CPU. 
+The weekly trendlines section is made up of four visuals, one on top of the other, in the right side of the report. These visuals summarize the capacity's behavior over the past four weeks. This section is designed to provide a snapshot of your capacity, highlighting trends for the past four weeks.
 
-You can investigate whether poor report performance is caused by an overloaded capacity, or due to a poorly designed dataset or report. There are several reasons why a query can run for an extended period, which is defined as taking more than 10 seconds to finish executing. Dataset size and complexity, as well as query complexity are just a few examples of what can cause a long running query. 
+:::image type="content" source="media/service-premium-metrics-app/weekly-trendlines.png" alt-text="A screenshot showing the weekly trendlines section, in the overview page, in the Power BI Premium metrics app.":::
 
-On the report page, the following visuals appear: 
+#### CPU
 
-* The top table titled **A: High wait times** lists the datasets with queries that are waiting. 
-* **B: Hourly high wait time distributions** shows the distribution of high wait times. 
-* The chart titled **C: Hourly long query counts** displays the count of long running queries that were executed split by hourly buckets.
-* The last visual, table **D: Long running queries**, lists the long running queries and their stats.
+Displays the total CPU power your capacity consumed over the past four weeks. Each data point is the aggregated sum of CPU used for the past seven days.
 
-![The query waits detail page](media/service-premium-metrics-app/premium-metrics-app-10.png)
+#### Active Artifacts
 
-There are steps you can take to diagnose and remedy issues with query wait times, described next.
+Displays the number of Power BI items (such as reports, dashboards, and datasets) that used CPU during the past four weeks.
 
-#### Diagnosing scenario one
+#### Active Users
 
-First, you can determine if long running queries are occurring when your queries are waiting. 
+Displays the number of users that used the capacity during the past four weeks.
 
-![High wait times table](media/service-premium-metrics-app/premium-metrics-app-11.png)
+#### Cores
 
-Look at **Chart B**, which shows the count of queries that are waiting more than 100 ms. Select one of the columns that shows a high number of waits.
+Displays the number of cores used by the capacity in the past four weeks. Each data point is the maximum capacity size reported during that week. If your capacity used autoscaling or scaled up to a bigger size, the visual will show the increase.
 
-![High wait time distribution](media/service-premium-metrics-app/premium-metrics-app-12.png)
+## Evidence
 
-When you click on a column with high wait times, **Chart C** is filtered to show the count of long-running queries that executed during that time, shown in the following image:
+This page provides information about overloads in your capacity. You can use it to establish which Power BI items (such as reports, dashboards, and datasets) cause overload, and which items are affected by this overload.
 
-![Hourly long query counts](media/service-premium-metrics-app/premium-metrics-app-13.png)
+>[!NOTE]
+>This page only displays data when the capacity is overloaded.
 
-And in addition, **Chart D** is also filtered to show the queries that were long running during that selected time period.
+When you detect a Power BI item that causes overload, you can either optimize that item to reduce its impact on the capacity, or you can scale up the capacity.
 
-![Long running queries](media/service-premium-metrics-app/premium-metrics-app-14.png)
+:::image type="content" source="media/service-premium-metrics-app/evidence-page.png" alt-text="A screenshot showing the evidence page in the Power BI Premium metrics app.":::
 
-#### Remedies for scenario one
+### Artifacts causing overloading
 
-Here are steps you can take to remedy issues from scenario one:
+You can visually identify the different Power BI items that cause overload, by using the timeline. Each day in the timeline displays items causing overload. Drill down to see an hourly timeline. The value shown is an aggregate of the CPU power consumed by artifacts when they overloaded the capacity.
 
-1. **Run PerfAnalyzer to optimize reports and datasets** - the performance analyzer for reports will show the effect of every interaction on a page, including how long each visual takes to refresh and where the time is spent.
+### Overloaders
 
-2. **Scale up the capacity** - scaling up the capacity to the next SKU will make available twice the amount of CPU thus alleviating any CPU pressure that may be causing the queries to run longer.
+Use this visual to identify the Power BI items that generate impactful overload events. This is shown as an [Overloading score](service-premium-faq.yml#how-is-the-overload-score-calculated-) when you select the *Overloaders* pivot. The overloading score for an artifact is derived from the severity of an overload event, and how frequently the overload event occurred over the past 14 days. This score has no physical property.
 
-3. **Move datasets to another capacity** - if you have another capacity that has more CPU available, you can move the workspaces that contain the datasets that contain the queries that are waiting to the other capacity.
+:::image type="content" source="media/service-premium-metrics-app/overloading-score.png" alt-text="A screenshot showing the overloading score in the overloaders table with the overloaders tab selected.":::
 
-### Scenario two - too many queries
+Switch to the *Overloaded artifacts* pivot to identify the items most affected by overload over the past 14 days. The overloading impact can affect either the item that's causing the overload, or other items that are hosted in the same capacity.
 
-In scenario two, too many queries are executing.
+The *Overloaded time (s)* value is the amount of processing time that was impacted by an overload penalty. This value is shown for each affected item, over the past 14 days.
 
-When the number of queries to execute exceeds the limits of the capacity, queries are placed in a queue until resources are available to execute them. If the size of the queue grows too large, queries in that queue can end up waiting more than 100 milliseconds.
+:::image type="content" source="media/service-premium-metrics-app/overloaded-artifacts.png" alt-text="A screenshot showing the overloaders table with the overloaded artifacts tab selected.":::
 
-![Scenario two](media/service-premium-metrics-app/premium-metrics-app-15.png)
+### Overloading windows
 
+Use this visual to understand whether overload or autoscale events happen due to a single Power BI item, or many items. Each Power BI item is given a different color.
 
-#### Diagnosing scenario two
+Each column represents a 30 second window where CPU usage for the capacity exceeded allowance. The height of the column represents the amount of CPU used.
 
-From **Table A** select a dataset that has a high percentage of wait time.
+The 30 second CPU allowance is determined by the number of v-cores your capacity has. When autoscale is turned on, each added autoscale CPU adds 15 seconds to the allowance. When autoscale isn't turned on, or if autoscale is fully utilized, penalties are applied to interactive operations in the next 30 second window. You can see a visualization of these penalties in the [Artifacts overloaded (seconds)](#artifacts-overloaded-seconds) chart.
 
-![high wait times table](media/service-premium-metrics-app/premium-metrics-app-16.png)
+To access the [Timepoint](#timepoint) page from this visual, right-click an overloaded timepoint, select **Drill through** and then select **TimePoint Detail**.
 
-Once you've selected a dataset with a high wait time, **Chart B** is filtered to show the wait time distributions for queries on that dataset, over the past seven days. Next, select one of the columns from **Chart B**.
+:::image type="content" source="media/service-premium-metrics-app/timepoint-drillthrough-evidence.png" alt-text="A screenshot showing the timepoint drill through option in the overloading windows chart.":::
 
-![hourly high wait times distribution chart](media/service-premium-metrics-app/premium-metrics-app-17.png)
+### Artifacts overloaded (seconds)
 
-**Chart C** is then filtered to show the queue length at the time selected from Chart B.
+Use this visual to understand whether overloading Power BI items impacts their own performance, or whether they produce a noisy neighbor problem by impacting the performance of other items. Each item is given a different color.
 
-![hourly query queue length](media/service-premium-metrics-app/premium-metrics-app-18.png)
+The column height represents the duration of operations subject to overload penalties, which occur when autoscale isn't turned on or used to its maximum.
 
-If the length of the queue has crossed the threshold of 20, then it's likely that the queries in the selected dataset are delayed, due to too many queries trying to execute at the same time.
+### Number of users overloaded
 
-![Executing queries table](media/service-premium-metrics-app/premium-metrics-app-19.png)
+Use this visual to understand how widespread the impact of overload is. The visual will help you determine whether a single user is impacted by an overload event, or whether the overload event impacts multiple users.
 
-#### Remedies for scenario two
+The column height represents the number of distinct users affected when overload occurs.
 
-You can take the following steps to remedy the problems associated with scenario two:
+## Refresh
 
-1. **Scale up the capacity** - scaling up the capacity to the next SKU will make available twice the amount of memory than the current SKU, thus alleviating any memory pressure the capacity is currently experiencing.
+This page is designed to help you identify aspects concerning refresh performance such as refresh CPU consumption power.
 
-2. **Move datasets to another capacity** - if you have another capacity that has more memory available, you can move the workspaces that contain the larger datasets to that capacity.
+>[!NOTE]
+>You can get to a version of this page, dedicated to a specific Power BI item, using the drill through feature in one of the visuals that displays individual items. The visuals in the drill through version of the page are identical to the ones listed below. However, they only display information for the item you're drilling into.
 
+:::image type="content" source="media/service-premium-metrics-app/refresh-page.png" alt-text="A screenshot showing the refresh page in the Power BI Premium metrics app.":::
 
-## The refresh waits metric
+At the top of the page there's a multi-selection pivot allowing you to focus on refreshing the page according to the filters listed below. Each of these pivots filters all the visuals in the refresh page.
 
-The **Refresh waits** metric provides insights to when users could be experiencing report data that's old or stale. **Refresh waits** is the time a given data refresh waited to start execution, from the time it was triggered on demand, or scheduled to run. This KPI measures whether 10% or more of pending refresh requests are waiting 10 minutes or longer. Waiting generally occurs when there's insufficient available memory or CPU.
+:::image type="content" source="media/service-premium-metrics-app/refresh-page-filters.png" alt-text="A screenshot showing the filters in the refresh page.":::
 
-![The refresh waits gauge](media/service-premium-metrics-app/premium-metrics-app-20.png)
+* **Artifact Kind** - Filter the page by Power BI item type, such as report, dataset and dashboard.
 
-This gauge shows that in the last seven days from the last refresh report refresh, 3.18% of the refreshes waited more than 10 minutes. 
+* **Status** - Filter the page by failed or successful operations.
 
-To learn the details of the **Refresh waits** KPI, click the **Explore** button, which presents a page with metrics and a troubleshooting guide on the right column of the report page. The guide provides detailed explanations about the metrics on the page, and helps you  understand the state of the capacity, and what you can do to mitigate any issues.
+* **Metric** - Filter the page by one of the following:
 
-![Exploring refresh waits metrics](media/service-premium-metrics-app/premium-metrics-app-21.png)
+    * *CPU* - CPU consumption
 
-There are two scenarios explained, which you can show on the report page by selecting Scenario 1 or Scenario 2 on the page. We discuss each scenario in turn, in the following sections.
+     * *Duration* - Operation processing time
 
-### Scenario one - not enough memory
+    * *Operations* - Number of operations
 
-In scenario one, there isn't enough available memory to load the dataset. There are two situations that result in a refresh being throttled during low memory conditions:
+* **Operation** - Filter according to the type of operation selected.
 
-1. Not enough memory to load the dataset.
-2. The refresh was canceled due to a higher priority operation. 
+### Refresh by artifact
 
-The priority for loading datasets is the following:
+Displays the breakdown of the metric selected in the pivot at the top, in the past 14 days. These breakdowns can indicate which refresh optimization is more likely to reduce the capacity footprint or the data source load.
 
-1. Interactive query
-2. On-demand refresh
-3. Scheduled refresh
+* When you select *CPU*, you can identify whether to reduce the capacity footprint.
 
-If there isn't enough memory to load a dataset for an interactive query, scheduled refreshes are stopped and their datasets unloaded until sufficient memory become available. If that doesn't free up enough memory, then on-demand refreshes are stopped and their datasets are unloaded.
+* When you select *Duration*, you can identify which data source load to reduce.
 
-#### Diagnosing scenario one
+### Duration
 
-To diagnose scenario one, first determine whether throttling is due to insufficient memory. The steps to do so are the following.
+Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
 
-1. Select the dataset you're interested in from **Table A** by clicking on it: 
+### CPU
 
-    ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
+Each column represents the number of CPU seconds used to compete a single operation per hour, over a 14 day period.
 
-    a. When a dataset is selected in **Table A**, **Chart B** is filtered to show when waiting occurred.
+### Operations
 
-    ![Chart B](media/service-premium-metrics-app/premium-metrics-app-23.png)
+Each column represents the number of seconds it took to compete a single operation per hour, over a 14 day period.
 
-    b. **Chart C** is then filtered to show any throttling, explained in the next step. 
+### Refresh detail
 
-2. Look at the results in the now-filtered **Chart C**. If the chart shows out of memory throttling occurred at the times the dataset was waiting, then the dataset was waiting due to low memory conditions.
+A matrix table that describes all the metadata for each individual refresh operation that took place. Selecting a cell in the visual will filter the matrix to show specific events.
 
-    ![Chart C](media/service-premium-metrics-app/premium-metrics-app-24.png)
+Scheduled and manual refresh workflows can trigger multiple internal operations in the backend service. For example, refreshes sometimes perform automatic retries if a temporary error occurred. These operations might be recorded in the app using different activity IDs. Each activity ID is represented as a row in the table. When reviewing the table, take into consideration that several rows may indicate an operation of a single activity.
 
-3. Finally, check **Chart D**, which shows the types of refreshes that were occurring, scheduled versus on-demand. Any on-demand refreshes occurring at the same time could be the cause of the throttling.
+The table has a *Ratio* column describing the ratio between CPU time and processing time. A low ratio suggests data source inefficiencies, where Power BI service is spending more time waiting for the data source, and less time processing the refresh.
 
-    ![Chart D](media/service-premium-metrics-app/premium-metrics-app-25.png)
+### Refresh operations
 
+On the right side of the refresh page, there are two visuals designed to help you identify patterns.
 
-#### Remedies for scenario one
+* **Timeline** - Displays the number of operations per day, for the past 14 days.
 
-You can take the following steps to remedy the problems associated with scenario one:
+* **Score card** - Displays the total number of performed operations.
 
-1. **Scale up the capacity** - scaling up the capacity to the next SKU will make available twice the amount of memory than the current SKU, thus alleviating any memory and CPU pressure the capacity is currently experiencing.
+## Timepoint
 
-2. **Move datasets to another capacity** - if your wait times are being caused by memory pressure and you have another capacity that has more memory available, you can move the workspaces that contain the datasets that are waiting to the other capacity.
+All the activities in the capacity are ranked according to their compute impact. The timepoint page shows the top 100,000 impactful activities in the capacity. Use this page to understand which [*interactive* and *background*](service-premium-interactive-background-operations.md) operations contributed the most to CPU usage.
 
-3. **Spread out scheduled refreshes** - spreading out the refreshes will help to avoid too many refreshes attempting to execute concurrently.
+>[!NOTE]
+>Start and end times may occur before or after the displayed time period, due to [background](service-premium-interactive-background-operations.md#background-operations) [smoothing](service-premium-smoothing.md) operations.  
 
+>[!IMPORTANT]
+>You can only get to this page by using the drill through feature in an overloaded timepoint in one of these visuals:
+>
+> * [CPU over time](#cpu-over-time) in the *Overview* page
+>
+> * [Overloading windows](#overloading-windows) in the *Evidence* page
 
+:::image type="content" source="media/service-premium-metrics-app/timepoint-page.png" alt-text="A screenshot showing the timepoint page in the Power BI Premium metrics app.":::
 
-### Scenario two - not enough CPU for refresh
+When the total combined CPU for *interactive* and *background* operations exceeds the 30 second timepoint allowance, the capacity is overloaded and depending on whether autoscale is enabled or not, throttling is applied.
 
-In scenario two, there isn't enough available CPU to carry out the refresh. 
+* **Autoscale is enabled** - If the capacity has autoscale enabled, a new v-core will get added for the next 24 hours and will be shown as an increased value in the *CPU Limit* line in the [CPU over time](#cpu-over-time) chart.
 
-For capacities, Power BI limits the number of refreshes that can happen concurrently. This number is equal to the number of back-end cores x 1.5. For example, a P1 capacity, which has four back-end cores, can run 6 refreshes concurrently. Once the maximum number of concurrent refreshes has been reached, other refreshes will wait until an executing refresh finishes.
+    >[!NOTE]
+    >When autoscale is enabled, if the capacity reaches the maximum number of v-cores allowed by the autoscale operation, throttling is applied.
 
-![Scenario two for refresh](media/service-premium-metrics-app/premium-metrics-app-26.png)
+* **Autoscale isn't enabled** - If autoscale isn't enabled, throttling gets applied to every interactive operation in the subsequent timepoint.
 
-#### Diagnosing scenario two
+### Top row visuals
 
-To diagnose scenario two, first determine whether throttling is due to running into the maximum concurrency for refreshes. The steps to do so are the following.
+This section describes the operations of the visuals in the top row of the timepoint page.
 
-1. Select the dataset you're interested in from **Table A** by clicking on it: 
+:::image type="content" source="media/service-premium-metrics-app/timepoint-cards.png" alt-text="A screenshot showing the timepoint cards section, in the timepoint page, in the Power BI Premium metrics app.":::
 
-    ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
+* **Top left card** - Displays the timepoint used to drill through to this page.
 
-    a. When a dataset is selected in **Table A**, **Chart B** is filtered to show when waiting occurred.
+* **Heartbeat line chart** - Shows a 60 minute window of CPU activity. Use this visual to establish the duration of peaks and troughs.
 
-    ![Chart B](media/service-premium-metrics-app/premium-metrics-app-23.png)
+    * *Vertical red line* - The timepoint you currently drilled to view. The visual shows the 30 minutes of CPU activity leading to the selected timepoint, as well as the 30 minutes of CPU activity after the selected timepoint.
 
-    b. **Chart C** is then filtered to show any throttling, explained in the next step. 
+    * *Blue line* - Total CPUs.
 
-2. Look at the results in the now-filtered **Chart C**. If the chart shows *max concurrency* occurred at the times the dataset was waiting, then the dataset was waiting due to not enough available CPU.
+    * *Yellow line* - The capacity allowance.
 
-    ![Chart C](media/service-premium-metrics-app/premium-metrics-app-24.png)
+    >[!NOTE]
+    >If the blue line is above the yellow line the capacity is overloaded.
 
-3. Finally, check **Chart D**, which shows the types of refreshes that were occurring, scheduled versus on-demand. Any on-demand refreshes occurring at the same time could be the cause of the throttling.
+* **Interactive operations card** - Displays the total number of interactive operations that contributed to the CPU's activity during this timepoint.
 
-    ![Chart D](media/service-premium-metrics-app/premium-metrics-app-25.png)
+* **Background operations card** - Displays the total number of background operations that contributed to the CPU's activity during this timepoint.
 
+* **SKU card** - Displays the current SKU.
 
-#### Remedies for scenario two
+* **Capacity CPU card** - Displays the total number of CPU seconds allowed for this capacity, for a given 30 second timepoint window.
 
-1. **Scale up the capacity** - scaling up the capacity to the next SKU will make available twice the amount of memory than the current SKU, and twice the number of concurrent refreshes than the current SKU, thus alleviating any memory and CPU pressure the capacity is currently experiencing.
+### Interactive Operations
 
-2. **Move datasets to another capacity** - if your wait times are being caused by maximum concurrency being reached and you have another capacity that has available concurrency, you can move the workspaces that contain the datasets that are waiting to the other capacity.
+A table showing every [interactive operation](service-premium-interactive-background-operations.md) that contributed CPU usage in the timepoint used to drill through to this page. Once an interactive operation completes, all of the CPU seconds used by it get attributed to the timepoint window.
 
-3. **Spread out scheduled refreshes** - spreading out the refreshes will help to avoid too many refreshes attempting to execute concurrently.
 
+* **Artifact** - The name of the Power BI item, its type, and its workspace details.
 
+* **Operation** - The type of interactive operation.
+
+* **Start** - The time the interactive operation began.
+
+* **End** - The time the interactive operation finished.
+
+* **Status** - An indication showing if the operation succeeded or failed. Cancelled operations are reported as failed operations.
+
+    >[!NOTE]
+    >CPU usage for failed operations is counted when determining if the capacity is in overload.
+
+* **User** - The name of the user that triggered the interactive operation.
+
+* **Duration** - The number of seconds the interactive operation took to complete.
+
+* **Total CPU** - The number of CPU seconds used by the interactive operation. This metric contributes to determine if the capacity exceeds the total number of CPU seconds allowed for the capacity.
+
+* **Timepoint CPU** - The number of CPU seconds assigned to the interactive operation in the current timepoint.
+
+* **Throttling** - The number of seconds of throttling applied to this interactive operation because of the capacity being overloaded in the previous timepoint.
+
+* **% Of Capacity** - Interactive CPU operations as a proportion of the overall capacity allowance.
+
+### Background Operations
+
+A table showing every background operation that contributed CPU usage to the timepoint window used to drill through to this page. Every background operation that completed in the prior 24 hours (defined as a 2,880 x 30 second timepoint window), contributes a small portion of its total usage to the CPU value. This means that a background operation that completed the previous day can contribute some CPU activity to determine if the capacity is in overload. For more information see [performance smoothing](service-premium-smoothing.md).
+
+All the columns in the background operations table are similar to the ones in the [interactive operations](#interactive-operations) table. However, the background operations table doesn't have a *users* column.
+
+## Artifact Detail
+
+This page provides useful information about a specific Power BI item.
+
+>[!IMPORTANT]
+>You can only get to this page by using the drill through feature in one of the visuals that displays individual Power BI items.
+
+>[!NOTE]
+>Some of the visuals in the *Artifact Detail* page may not display information. A visual will not show anything when it's designed to display an event that hasn't occurred.
+
+You can tell which Power BI item you're reviewing, by looking at the card at the top left side of the report, highlighted below. This syntax of this card is `workspace \ Power BI item type \ Power BI item name`.
+
+:::image type="content" source="media/service-premium-metrics-app/artifact-page.png" alt-text="A screenshot showing the artifact page, in the Power BI Premium metrics app.":::
+
+### Overloading
+
+The overloading visual displays time slots where overloading occurred involving the Power BI item you're drilling into.
+
+The overloading visual has the following columns:
+
+* **Date** - The date the item was in overload.
+
+* **Overloaded mins** - Summed 30 second windows where at least one overload event took place.
+
+* **Overload time %** - The proportion of the total operation run time spent in a throttled state. The smaller this value, the better.
+
+### Performance
+
+Displays the percentage of fast, moderate, and slow operations from the total number of operations performed by the Power BI item you're drilling into, over the past two weeks.
+
+:::image type="content" source="media/service-premium-metrics-app/artifact-performance.png" alt-text="A screenshot showing the performance visual in the artifact page, in the Power BI Premium metrics app.":::
+
+[!INCLUDE [premium-app-fast-moderate-slow-operations](../includes/premium-app-fast-moderate-slow-operations.md)]
+
+### Artifact size
+
+This visual displays the peak amount of memory consumption detected in any three hour window, over a 14 day period, for the operations performed on the item you're drilling into. You can cross filter this visual from the [matrix by artifact and operation](#matrix-by-artifact-and-operation) visual, to show a peak memory profile for an individual day.
+
+:::image type="content" source="media/service-premium-metrics-app/artifact-size.png" alt-text="A screenshot showing the artifact size visual in the artifact page, in the Power BI Premium metrics app.":::
+
+### CPU duration and users
+
+Use these visuals to review CPU consumption, operation duration and number of users for the item you're drilling into. In these visuals, each column represents a single hour over a 14 day period.
+
+:::image type="content" source="media/service-premium-metrics-app/cpu-duration-users.png" alt-text="A screenshot showing the C P U, duration and users visuals, in the artifact page, in the Power BI Premium metrics app.":::
+
+* **CPU** - Each column displays the number of CPU seconds used to complete each operation per hour.
+
+* **Duration** - Each column displays the number of seconds used to complete each operation per hour.
+
+* **Users** - Each column displays the number of active users per hour.
+
+## Considerations and limitations
+
+* The app displays results for the last 14 or 28 days, depending on the visual.
+
+* The app only displays memory measurements and performance breakdown for datasets.
+
+* The app only supports monitoring datasets that use [import mode](../connect-data/service-dataset-modes-understand.md). To monitor [Power BI service live connections](../connect-data/desktop-report-lifecycle-datasets.md) use *Azure Analysis Services*.
+
+* The *Users* column in the visuals displays the number of distinct users that performed operations against the dataset. These operations may be performed by the users themselves, or by Power BI on behalf of the users. When reviewing the visuals in the app, take into consideration that background operations performed by Power BI, may inflate the count of unique users.
+
+    * *Operations triggered by users* - [Interactive operations](service-premium-interactive-background-operations.md#interactive-operations) that include opening a report or clicking a slicer.
+
+    * *Operations triggered by Power BI* - [Background operations](service-premium-interactive-background-operations.md#background-operations) that include system operations such as dataset or dataflow refreshes. Sometimes these operations are performed by Power BI on behalf of a user. For example, a refresh operation may execute background queries to cache tile results for users who viewed these tiles recently. The tile refresh cache queries provide a much faster performance for users, when they next view the dashboard.
+
+* [Email subscriptions](/power-bi/collaborate-share/end-user-subscribe) will be sent with the app's default filter and slicer states. 
 
 ## Next steps
 
-* [What is Power BI Premium?](service-premium-what-is.md)
-* [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-* [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
-* [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
-* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.yml)
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-Power BI has introduced Power BI Premium Gen2 as a preview offering, which improves the Power BI Premium experience with improvements in the following:
-* Performance
-* Per-user licensing
-* Greater scale
-* Improved metrics
-* Autoscaling
-* Reduced management overhead
-
-For more information about Power BI Premium Gen2, see [Power BI Premium Generation 2](service-premium-what-is.md#power-bi-premium-generation-2).
+> [!div class="nextstepaction"]
+> [Install the Premium metrics app](service-premium-install-app.md)

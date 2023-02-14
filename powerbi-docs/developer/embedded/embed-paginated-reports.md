@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 05/19/2022
+ms.date: 11/24/2022
 
 ---
 
@@ -58,11 +58,9 @@ To embed a paginated report using the sample app, follow these steps:
 
 3. [Assign a workspace to a capacity](#step-3---assign-a-workspace-to-a-capacity).
 
-4. [Enable paginated reports workload](#step-4---enable-paginated-reports-workload).
+4. [Create and upload your paginated report](#step-4---create-and-upload-your-paginated-report).
 
-5. [Create and upload your paginated report](#step-5---create-and-upload-your-paginated-report).
-
-6. [Embed content using the sample application](#step-6---embed-content-using-the-sample-application).
+5. [Embed content using the sample application](#step-5---embed-content-using-the-sample-application).
 
 ## Step 1 - Create a workspace
 
@@ -87,19 +85,16 @@ Before you import or upload a paginated report to embed, the workspace containin
 * **Power BI Premium** - For embedding a paginated report, an *EM* or *P* SKU is required. For more information about this subscription, see [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
-    >[!NOTE]
-    >Power BI Embedded recently released a new version, called [**Embedded Gen2**](power-bi-embedded-generation-2.md). Embedded Gen2 simplifies the management of embedded capacities, and improves the Power BI Embedded experience. For more information, see [Paginated reports](../../enterprise/service-premium-gen2-what-is.md#paginated-reports).
-
 The following table describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.yml#which-solution-should-i-choose-) table.
 
-| Capacity Nodes | Total v-cores | Backend v-cores | Frontend v-cores | RAM (GB) |
-| --- | --- | --- | --- | --- |
-| EM1/A1 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 1 | 0.5 | 0.5 | 2.5 |
-| EM2/A2 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 2 | 1 | 1 | 5 |
-| EM3/A3 with [Embedded Gen2](power-bi-embedded-generation-2.md) | 4 | 2 | 2 | 10 |
-| P1/A4 | 8 | 4 | 4 | 25 |
-| P2/A5 | 16 | 8 | 8 | 50 |
-| P3/A6 | 32 | 16 | 16 | 100 |
+| Capacity Nodes | V-cores | RAM (GB) |
+| --- | --- | --- |
+| EM1/A1 | 1 |  2.5 |
+| EM2/A2 | 2 |  5   |
+| EM3/A3 | 4 | 10   |
+| P1/A4 |  8 |  25 |
+| P2/A5 | 16 |  50 |
+| P3/A6 | 32 | 100 |
 
 ### [Embed for your organization](#tab/organization)
 
@@ -107,16 +102,16 @@ By creating a capacity, you can take advantage of having a resource for the cont
 
 The following table lists the Power BI Premium SKUs that can be used to create a capacity for paginated reports in [Microsoft Office 365](../../enterprise/service-admin-premium-purchase.md):
 
-| Capacity node | Total vCores | Back-end vCores | Front-end vCores | DirectQuery/live connection limits (per sec) |
-| --- | --- | --- | --- | --- | --- |
-| EM1/A1 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 1 | 0.5 | 0.5 | 3.75 |
-| EM2/A2 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 2 | 1 | 1 | 7.5 |
-| EM3/A3 with [Premium Gen2](../../enterprise/service-premium-what-is.md#power-bi-premium-generation-2) | 4 | 2 | 2 | 15 |
-| P1/A4 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 |
-| P2/A5 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 |
-| P3/A6 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 |
-| P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 |
-| P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 |
+| Capacity node | V-cores | RAM (GB) | DirectQuery/live connection limits (per sec) |
+| --- | --- | --- | --- |
+| EM1/A1 |   1 |     |  3.75 |
+| EM2/A2 |   2 |     |  7.5 |
+| EM3/A3 |   4 |     | 15  |
+| P1/A4  |   8 |  25 |  30 |
+| P2/A5  |  16 |  50 |  60 |
+| P3/A6  |  32 | 100 | 120 |
+| P4     |  64 | 200 | 240 |
+| P5     | 128 | 400 | 480 |
 
 ---
 
@@ -149,35 +144,14 @@ After you create a capacity, you need to assign your workspace to that capacity.
 
 ---
 
-## Step 4 - Enable paginated reports workload
-
->[!NOTE]
->This step is only necessary for **Embedded Gen1**. If your capacity is Gen2, continue to [Step 5](#step-5---create-and-upload-your-paginated-report).
-
-After creating a capacity and assigning your workspace to it, you need to enable the paginated report workload on your capacity.
-
-1. Sign into [Power BI > Admin portal > Capacity settings](https://app.powerbi.com/admin-portal/capacities).
-
-2. Select the capacity that has the workspace you want to add a paginated report to.
-
-    ![Select capacity](media/embed-paginated-reports/select-capacity.png)
-
-3. Expand **Workloads**.
-
-    ![Expand workloads](media/embed-paginated-reports/expand-workloads.png)
-
-4. Activate the paginated reports workload.
-
-    ![Paginated reports workload](media/embed-paginated-reports/paginated-reports-workload.png)
-
-## Step 5 - Create and upload your paginated report
+## Step 4 - Create and upload your paginated report
 
 You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 >[!NOTE]
 >The user uploading the paginated report needs a Power BI Pro or Premium Per User (PPU) license to publish to a workspace.
 
-## Step 6 - Embed content using the sample application
+## Step 5 - Embed content using the sample application
 
 ### [Embed for your customers](#tab/customers)
 

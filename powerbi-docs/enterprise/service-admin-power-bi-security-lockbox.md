@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2022
+ms.date: 01/29/2023
 LocalizationGroup: Administration
 ---
 
@@ -105,7 +105,7 @@ Customer Lockbox requests aren't triggered in the following engineering support 
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Microsoft Purview Customer Lockbox](/compliance/customer-lockbox-requests)
+>[Microsoft Purview Customer Lockbox](/microsoft-365/compliance/customer-lockbox-requests)
 
 >[!div class="nextstepaction"]
 >[Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-customer-lockbox)

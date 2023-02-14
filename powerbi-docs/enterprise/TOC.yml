@@ -55,80 +55,54 @@
     - name: Power BI in China
       href: regions-power-bi-china-cloud.md
     - name: Move between regions
-      href: ../admin/service-admin-region-move.md
+      href: /power-bi/support/service-admin-region-move
   - name: Premium
     expanded: false
     items:
       - name: Power BI Premium features
-        href: service-premium-features.md    
-      - name: Gen2
-        expanded: false
-        items:
-        - name: What is Power BI Premium Gen2?
-          href: service-premium-gen2-what-is.md
-        - name: Premium Gen2 architecture
-          href: service-premium-architecture.md          
-        - name: Power BI Premium Per User
-          href: service-premium-per-user-faq.yml
-        - name: Purchase Power BI Premium
-          href: service-admin-premium-purchase.md   
-        - name: Purchase Power BI Premium for testing
-          href: service-admin-premium-testing.md                    
-        - name: Plan your transition to Power BI Premium Gen2
-          href: service-premium-transition-gen1-to-gen2.md           
-        - name: Managing Premium Gen2 capacities
-          href: service-premium-capacity-manage-gen2.md
-        - name: Configure and manage capacities
-          href: service-admin-premium-manage.md                                   
-        - name: Premium Gen2 capacity load evaluation
-          href: service-premium-concepts.md
-        - name: Install the Gen2 metrics app
-          href: service-premium-install-gen2-app.md
-        - name: Using the Premium Gen2 metrics app
-          href: service-premium-gen2-metrics-app.md 
-        - name: Performance smoothing
-          href: service-premium-smoothing.md                    
-        - name: Backup and restore Power BI Premium datasets
-          href: service-premium-backup-restore-dataset.md
-        - name: Using autoscale with Premium Gen2
-          href: service-premium-auto-scale.md
-        - name: Configure workloads
-          href: service-admin-premium-workloads.md
-        - name: Monitor capacities in the Admin portal
-          href: service-admin-premium-monitor-portal.md
-        - name: Configure large datasets
-          href: service-premium-large-models.md
-        - name: Automation with service principals
-          href: service-premium-service-principal.md
-        - name: Dataset connectivity with the XMLA endpoint
-          href: service-premium-connect-tools.md
-        - name: Interactive and background operations
-          href: service-premium-interactive-background-operations.md         
-        - name: Troubleshoot XMLA endpoint connectivity
-          href: troubleshoot-xmla-endpoint.md
-        - name: Power BI Premium Gen2 FAQ
-          href: service-premium-gen2-faq.yml          
-      - name: Gen1
-        expanded: false
-        items:
-        - name: What is Power BI Premium?
-          href: service-premium-what-is.md
-        - name: Optimizing Premium capacities
-          href: service-premium-capacity-optimize.md
-        - name: Premium capacity scenarios
-          href: service-premium-capacity-scenarios.md           
-        - name: Monitoring Power BI capacities
-          href: service-premium-capacity-manage.md
-        - name: Monitor capacities with the app
-          href: service-admin-premium-monitor-capacity.md
-        - name: Monitor Premium workload metrics
-          href: service-premium-metrics-app.md
-        - name: Restart a Premium capacity
-          href: service-admin-premium-restart.md
-        - name: Premium support for China North
-          href: service-admin-premium-china-north.md                    
-        - name: Power BI Premium FAQ
-          href: service-premium-faq.yml
+        href: service-premium-features.md
+      - name: What is Power BI Premium?
+        href: service-premium-what-is.md
+      - name: Premium architecture
+        href: service-premium-architecture.md          
+      - name: Power BI Premium Per User
+        href: service-premium-per-user-faq.yml
+      - name: Purchase Power BI Premium
+        href: service-admin-premium-purchase.md   
+      - name: Purchase Power BI Premium for testing
+        href: service-admin-premium-testing.md                    
+      - name: Managing Premium capacities
+        href: service-premium-capacity-manage.md
+      - name: Configure and manage capacities
+        href: service-admin-premium-manage.md                                   
+      - name: Premium capacity load evaluation
+        href: service-premium-concepts.md
+      - name: Install the Premium metrics app
+        href: service-premium-install-app.md
+      - name: Using the Premium metrics app
+        href: service-premium-metrics-app.md 
+      - name: Performance smoothing
+        href: service-premium-smoothing.md                    
+      - name: Backup and restore Power BI Premium datasets
+        href: service-premium-backup-restore-dataset.md
+      - name: Using autoscale with Power BI Premium
+        href: service-premium-auto-scale.md
+      - name: Configure workloads
+        href: service-admin-premium-workloads.md
+      - name: Configure large datasets
+        href: service-premium-large-models.md
+      - name: Automation with service principals
+        href: service-premium-service-principal.md
+      - name: Dataset connectivity with the XMLA endpoint
+        href: service-premium-connect-tools.md
+      - name: Interactive and background operations
+        href: service-premium-interactive-background-operations.md
+      - name: Premium support for China North
+        href: service-admin-premium-china-north.md                  
+      - name: Troubleshoot XMLA endpoint connectivity
+        href: troubleshoot-xmla-endpoint.md
+      - name: Power BI Premium FAQ
+        href: service-premium-faq.yml
   - name: Governance and compliance
     expanded: false
     items:                   
@@ -168,6 +142,8 @@
         href: service-security-sensitivity-label-audit-schema.md  
       - name: Protection metrics report
         href: service-security-data-protection-metrics-report.md
+      - name: Troubleshoot sensitivity labels
+        href: service-security-sensitivity-label-troubleshooting.md
     - name: Data loss prevention
       expanded: false
       items:              
@@ -198,7 +174,18 @@
     - name: Configure mobile apps with Intune
       href: service-admin-mobile-intune.md
     - name: Customer Lockbox for Power BI
-      href: service-admin-power-bi-security-lockbox.md                 
+      href: service-admin-power-bi-security-lockbox.md   
+  - name: Power BI Scale-Out
+    expanded: false
+    items:
+    - name: Power BI Dataset Scale-Out
+      href: service-premium-scale-out.md
+    - name: Test Power BI Dataset Scale-Out
+      href: service-premium-scale-out-test.md
+    - name: Sync a read-only scale-out replica   
+      href: service-premium-scale-out-sync-replica.md  
+    - name: Compare scale-out dataset copies      
+      href: service-premium-scale-out-app.md                     
   - name: Automation tools
     expanded: false
     items:
@@ -208,5 +195,4 @@
       href: service-admin-reference.md
     - name: Power BI cmdlets for PowerShell
       href: /powershell/power-bi/
-      maintainContext: true
-      
+      maintainContext: true          

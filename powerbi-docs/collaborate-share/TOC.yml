@@ -15,6 +15,10 @@
       href: service-discovery.md
     - name: "Share reports and dashboards"
       href: service-share-dashboards.md
+    - name: "Find content shared with you"
+      href: end-user-shared-with-me.md
+    - name: "Export a report to PDF"
+      href: end-user-pdf.md
     - name: "Request access to a report or dashboard"
       href: service-request-access.md
     - name: "Filter and share a report"
@@ -111,14 +115,16 @@
     items:         
     - name: "Connect Excel to Power BI datasets"
       href: service-connect-power-bi-datasets-excel.md
-    - name: "Start in Excel"
+    - name: "Power BI datasets in Excel"
       href: service-connect-excel-power-bi-datasets.md
-    - name: "Start in Power BI"
+    - name: "Create Excel workbooks with refreshable data"
       href: service-analyze-in-excel.md
-    - name: "Build refreshable reports in Excel"
+    - name: "Design refreshable reports in Excel"
       href: service-analyze-power-bi-datasets-excel.md
     - name: "Use Power BI featured tables in Excel"
       href: service-excel-featured-tables.md
+    - name: "Monitor usage of Power BI datasets in Excel"
+      href: service-monitor-usage-power-bi-datasets-excel.md
     - name: "Set featured tables"
       href: service-create-excel-featured-tables.md
     - name: "Troubleshoot connecting Excel to Power BI data"
