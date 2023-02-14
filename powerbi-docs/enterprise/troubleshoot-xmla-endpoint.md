@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/20/2022
+ms.date: 02/14/2023
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -187,6 +187,18 @@ Run complete
 ```
 
 This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+
+If you're encountering this error when refreshing a big dataset, it could be due to the payload limit. As a workaround, create an empty database and then use the `createorreplace` command to modify the empty database's content.
+
+```
+{   
+  "create": {   
+    "database": {   
+      "name": "DatabaseName"
+    }   
+  }   
+} 
+```
 
 ### Other client applications and tools
 
