@@ -43,13 +43,13 @@ The following table displays the toolbar icons for the **Map** pane.
   
 -   From the Ribbon, on the **Insert** menu, click **Map**, and then click **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
   
-     For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
+     For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
 ##  <a name="ChangeLayer"></a> Change options for a layer by using the map layer wizard  
   
 -   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, click the layer wizard button (![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)).  
   
-     For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](/sql/reporting-services/report-design/map-wizard-and-map-layer-wizard-report-builder-and-ssrs).  
+     For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
 ##  <a name="AddVectorLayer"></a> Add a point, line, or polygon layer from the Map pane toolbar  
   
@@ -212,5 +212,5 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ## Next steps  
  [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs)  
+ [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)  
   

@@ -514,6 +514,16 @@
         href: ../paginated-reports/report-builder/change-map-legends-color-scale-associated-rules-report-builder.md
       - name: Customize the display of a map or map layer
         href: ../paginated-reports/report-builder/customize-data-display-map-map-layer-report-builder.md
+      - name: Add or change a map or map layer
+        href: ../paginated-reports/report-builder/add-change-delete-map-map-layer-report-builder.md
+      - name: Add custom locations to a map
+        href: ../paginated-reports/report-builder/add-custom-locations-map-report-builder.md
+      - name: Plan for adding a map
+        href: ../paginated-reports/report-builder/plan-map-report-report-builder.md
+      - name: Troubleshoot map reports
+        href: ../paginated-reports/report-builder/troubleshoot-reports-map-reports-report-builder.md
+      - name: Map Wizard and Map Layer Wizard
+        href: ../paginated-reports/report-builder/map-wizard-map-layer-wizard-report-builder.md
     - name: Data sources and datasets
       items: 
       - name: Understand paginated report data

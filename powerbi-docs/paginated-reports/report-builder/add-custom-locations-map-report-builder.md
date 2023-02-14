@@ -1,7 +1,7 @@
 ---
 title: "Add custom locations to a map in a Power BI paginated report | Microsoft Docs"
 description:  Learn how to add custom locations to a map you have added to a Power BI paginated report in Power BI Report Builder. 
-ms.date: 01/25/2023
+ms.date: 02/14/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -13,8 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Add custom locations to a map in a Power BI paginated report (Power BI Report Builder)
 
-
-  After you add a map to a Power BI paginated report, you can add your own point locations.  
+ After you add a map to a Power BI paginated report, you can add your own point locations.  
   
  Display properties for all points on a layer are controlled by setting options for the point properties for the layer. For a selected embedded point, you can override the display properties.  
   

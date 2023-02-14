@@ -159,9 +159,9 @@ ms.reviewer: saurkumar
   
  For more information about tiles, see [Bing Maps Tiles System](/bingmaps/articles/bing-maps-tile-system). For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
   
- To see a tile background in Design view, you must have Internet access. To see the tile background in preview from a report on a report server, the report server must be configured to support Bing map tiles. For more information, see [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder-and-ssrs.md) and [Plan a Map Report](plan-a-map-report-report-builder-and-ssrs.md).  
+ To see a tile background in Design view, you must have Internet access. To see the tile background in preview from a report on a report server, the report server must be configured to support Bing map tiles. For more information, see [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md) and [Plan a Map Report](plan-map-report-report-builder.md).  
   
- For more information on other ways to customize a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
+ For more information on other ways to customize a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
   
 ##  <a name="Visualization"></a> Choose map visualization  
  On this page, choose the type of map or map layer to add to your report. The first time you run the wizard, you are adding the map and the first map layer to the report. A map can contain multiple map layers. Each map layer displays a specific type of spatial data: polygons, lines, or points.  
@@ -175,7 +175,7 @@ ms.reviewer: saurkumar
   
  An **Analytical Map** conveys the relative value of one or more analytical data aggregates for each map element. For example, store sales as marker size, profit range for product categories as marker color, and top selling product as marker type.  
   
- For more information, see [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-a-map-report-report-builder-and-ssrs.md).  
+ For more information, see [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md).  
   
 ##  <a name="AnalyticalData"></a> Choose the analytical dataset  
  On this page, specify where to get the analytical data to display on this map layer.  
@@ -222,7 +222,7 @@ ms.reviewer: saurkumar
  The report processor applies the rules that you set and automatically determines the list of items to display in a legend. By default, the results of all rules for all layers display in the first legend. You can adjust this after you complete the wizard. For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
 ## Next steps  
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder-and-ssrs.md)   
- [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-a-map-report-report-builder-and-ssrs.md)   
+ [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)   
+ [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md)   
  [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)  
   

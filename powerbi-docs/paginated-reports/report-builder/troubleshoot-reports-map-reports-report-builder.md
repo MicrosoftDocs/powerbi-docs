@@ -13,9 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Troubleshoot reports: map reports in a Power BI paginated report (Power BI Report Builder)
 
-
-  Issues with maps in a Power BI paginated report might occur when you add a map or map layer to your report, when you customize an existing map or map layer in your report, when you preview a map in a report, or when you publish a report with a map. Use this topic to help troubleshoot these issues.  
-    
+Issues with maps in a Power BI paginated report might occur when you add a map or map layer to your report, when you customize an existing map or map layer in your report, when you preview a map in a report, or when you publish a report with a map. Use this topic to help troubleshoot these issues.  
   
 ##  <a name="Embedded"></a> Report Definition Size Issues  
  Use this section to help solve issues that relate to report definition size.  
@@ -153,7 +151,7 @@ ms.reviewer: saurkumar
   
 -   For local preview, you must have internet access.
   
- For more information about adding a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
+ For more information about adding a tile layer, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
   
 ## How do I control the text on a tile layer?  
  Both **Road** and **Hybrid** views include text. The text is part of the tiles that come from Bing Maps Web Services.  

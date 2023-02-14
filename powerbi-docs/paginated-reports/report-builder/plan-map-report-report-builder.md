@@ -13,11 +13,8 @@ ms.reviewer: saurkumar
 ---
 # Plan for adding a map to a Power BI paginated report (Power BI Report Builder)
 
-
 Good reports present information that leads to actions or insights. To present analytical data such as sales totals or demographics against a geographic background, you can add a map to your Power BI paginated report. A map can contain multiple layers, where each layer displays map elements that are defined by a specific type of spatial data: points that represent locations, lines that represent routes, or polygons that represent areas. You can associate your analytical data with map elements on each layer.  
-  
 
-  
 ##  <a name="MapPurpose"></a> Specify the Purpose of the Map  
  Good report design provides information that help users take actions to address issues. To create a useful, easily understood map display, decide what questions you want the map to help answer. For example, on a map you can visualize the following types of data to identify market opportunities:  
   
@@ -105,7 +102,7 @@ Good reports present information that leads to actions or insights. To present a
 |![Screenshot showing map that displays a bubble for each location and varies bubble size by one analytical data field.](../media/paginated-reports-maps/map-type-marker-bubble.gif)|Bubble Marker Map|Point|A map that displays a bubble for each location and varies bubble size by one analytical data field, for example, sales data by city.<br /><br /> Options: Vary bubble color by a second analytical field, and specify color rules.|  
 |![Screenshot showing map that displays a marker at each location and varies marker color, size, and type based on analytical data.](../media/paginated-reports-maps/map-type-marker-analytical.gif)|Analytical Marker Map|Point|A map that displays a marker at each location and varies marker color, size, and type based on analytical data, for example, top selling products, profit range, and discount strategy.<br /><br /> Options: Vary marker type by one analytical field, vary marker size by a second analytical field, vary marker color by a third analytical field, and specify color rules.|  
   
- After you add a map with the Map wizard, you can create additional layers or change options for a layer by using the Layer wizard. For more information about the wizards, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-and-map-layer-wizard-report-builder-and-ssrs.md).  
+ After you add a map with the Map wizard, you can create additional layers or change options for a layer by using the Layer wizard. For more information about the wizards, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
  You can customize the display or data options for each layer independently. For more information about customizing a map after you run a wizard, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs).  
   
@@ -142,6 +139,6 @@ Good reports present information that leads to actions or insights. To present a
  [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs)   
  [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder.md)   
  [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder-and-ssrs.md)  
+ [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)  
   
   
