@@ -12,7 +12,7 @@ ms.date: 08/23/2022
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
 This article explains how to embed Power BI content with an [on-premises](pbi-glossary.md#on-premises) *Analysis Services Tabular Model* live connection into a standard Power BI app owns data application. This article applies to **all** live connection SSAS models whether or not they implement RLS.
 
