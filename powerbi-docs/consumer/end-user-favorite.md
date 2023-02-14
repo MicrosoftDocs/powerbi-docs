@@ -32,16 +32,6 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
 
    :::image type="content" source="./media/end-user-favorite/power-bi-recent-favorite-new.png" alt-text="Screenshot of the Favorites tab on the Power BI main page.":::
 
-## Add an app as a favorite
-
-1. From the nav pane, select **Apps**.
-
-   :::image type="content" source="./media/end-user-favorite/power-bi-apps-new.png" alt-text="Screenshot of the Power BI Apps page.":::
-
-2. Hover over an app to display more detail. Select the star :::image type="icon" source="./media/end-user-favorite/power-bi-favorite-icon.png"::: icon to set it as a favorite.
-
-   :::image type="content" source="./media/end-user-favorite/power-bi-hover-app-new.png" alt-text="Screenshot of the Favorites icon on the app tile.":::
-
 ## Work with favorites
 
 You have several options for viewing your favorites.
@@ -67,7 +57,6 @@ If you no longer use a report, dashboard, or app as often as you used to, you ca
 ## Considerations and limitations
 
 - When you favorite an app, it automatically favorites all the reports and dashboards for that app. It isn't possible to favorite individual app reports or dashboards.
-- Effective January 2022, Power BI Home no longer displays ***tiles*** from your favorited dashboard.
 
 ## Next steps
 
