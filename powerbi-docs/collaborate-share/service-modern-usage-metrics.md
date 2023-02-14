@@ -426,7 +426,7 @@ Follow these steps to delete the dataset and then create a fresh data refresh re
 
 2. If you still see the Usage Metrics report in the Reports list, refresh your browser.
 
-3. Start over and [create a fresh usage metrics report](#create-and-view-a-usage-metrics-report).
+3. Start over and [create a fresh usage metrics report](#create-and-view-a-new-usage-metrics-report).
 
 ## Next steps
 
