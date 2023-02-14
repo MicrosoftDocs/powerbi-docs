@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 02/14/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -300,7 +300,7 @@ Sign to the [Power BI](https://app.powerbi.com) service as an administrator, and
 
 ## Completion of private endpoint configuration
 
-Once you have followed the steps in the previous sections, Power BI is only accessible for your organization from private endpoints, and is not accessible from the public Internet.
+Once you've followed the steps in the previous sections, Power BI is only accessible for your organization from private endpoints, and is not accessible from the public Internet.
 
 When the private links and the virtual network are successfully enabled and configured, the following applies:
 
@@ -310,7 +310,7 @@ When the private links and the virtual network are successfully enabled and conf
 
 If a Power BI private link is *not* completely and correctly configured, all traffic will be transported through the public Internet and be allowed by Power BI services.
 
-When you configure **Power BI private links** in the Power BI admin portal to **Block Public Internet Access**, traffic which was previously allowed (items 2. and 2.a. previously described in this section) will be blocked by Power BI services.
+When you configure **Power BI private links** in the Power BI admin portal to **Block Public Internet Access**, traffic that was previously allowed (items 2. and 2.a. previously described in this section) will be blocked by Power BI services.
 
 
 
