@@ -58,7 +58,7 @@ After you select Analyze in Excel, Power BI generates an Excel workbook and save
 
 When you choose **Open in Excel for the web**, your Excel workbook opens in a separate browser tab. To enable the Power BI query in Excel, select **Yes** on the **Query and Refresh Data** dialog.
 
-:::image type="content" source="media/service-analyze-in-excel/excel-web-unsafe-dialog.png" alt-text="Screenshot showing the Query and Refresh Data dialog." lightbox="media/service-analyze-in-excel/excel-web-unsafe-dialog.png"::: 
+:::image type="content" source="media/service-analyze-in-excel/excel-web-unsafe-dialog.png" alt-text="Screenshot showing the Query and Refresh Data dialog."::: 
 
 After you select **Yes** in the dialog, you can see the tables and measures from your Power BI dataset in the PivotTable Fields. You can start building your PivotTable reports in Excel.
 
@@ -88,11 +88,11 @@ While viewing a Power BI visual, you may want to further explore the visual data
 
     The first time you open the Excel workbook, it might open in read-only mode until you select **Enable Editing**, depending on your Protected View settings in Office.
 
-    :::image type="content" source="media/service-analyze-in-excel/protected-view-excel.png" alt-text="Screenshot showing Enable editing." lightbox="media/service-analyze-in-excel/protected-view-excel.png":::
+    :::image type="content" source="media/service-analyze-in-excel/protected-view-excel.png" alt-text="Screenshot showing Enable editing.":::
 
 1. Depending on your [Trusted document](https://support.microsoft.com/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings, you might also need to select **Enable Content** to load the Power BI data to the Excel grid.
 
-    :::image type="content" source="media/service-analyze-in-excel/security-warning-excel.png" alt-text="Screenshot showing the security warning." lightbox="media/service-analyze-in-excel/security-warning-excel.png":::
+    :::image type="content" source="media/service-analyze-in-excel/security-warning-excel.png" alt-text="Screenshot showing the security warning.":::
 
     The data from the Power BI visual is now visible as an Excel table that can be refreshed against Power BI.
 
