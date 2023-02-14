@@ -41,7 +41,7 @@ Follow the steps in this section to complete the text analytics portion of the t
 
 To get started, navigate to a Power BI workspace with Premium capacity and create a new dataflow using the **Create** button in the upper right of the screen.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_01.png" alt-text="Screenshot shows the Power BI workspace with Create, then Dashboard, selected." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_01.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_01.png" alt-text="Screenshot shows the Power BI workspace with Create, then Dashboard, selected.":::
 
 The dataflow dialog shows you the options for creating a new dataflow, select **Add new entities.** Next, choose **Text/CSV** from the menu of data sources.
 
@@ -73,7 +73,7 @@ Once you finish the transformations, change the query name to *Customer comments
 
 Next, **Save** the dataflow and name it *Fabrikam*. Select the **Refresh Now** button that pops up after you save the dataflow.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png" alt-text="Screenshot shows the Save button." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png" alt-text="Screenshot shows the Save button.":::
 
 After you save and refresh the dataflow, you can use it in a Power BI report.
 
@@ -83,11 +83,11 @@ Open Power BI Desktop. In the **Home** ribbon, select **Get data**.
 
 Select *Power Platform* and then choose **Power BI dataflows**. Select **Connect.**
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png" alt-text="Screenshot shows the Get Data pane with Power BI dataflows selected." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png" alt-text="Screenshot shows the Get Data pane with Power BI dataflows selected.":::
 
 Sign in with your organization account.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_10.png" alt-text="Screenshot shows a sign-in message for your organizational account." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_10.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_10.png" alt-text="Screenshot shows a sign-in message for your organizational account.":::
 
 Select the dataflow you created. Navigate to the Customer comments table and choose **Load.**
 
@@ -99,11 +99,11 @@ Now that the data is loaded, you can start building a report.
 
 In the Power BI service, navigate to a workspace with Premium capacity. Create a new dataflow using the **Create** button in the upper right of the screen.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_12.png" alt-text="Screenshot shows the Power BI workspace with Create, then Dataflow, selected." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_12.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_12.png" alt-text="Screenshot shows the Power BI workspace with Create, then Dataflow, selected.":::
 
 Select **Add new entities**.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_13.png" alt-text="Screenshot shows an option to add new entities to start creating a workflow." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_13.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_13.png" alt-text="Screenshot shows an option to add new entities to start creating a workflow.":::
 
 Once you're asked to choose a data source, select **Blank query**.
 
@@ -128,7 +128,7 @@ When prompted for credentials, select *anonymous*.
 
 You see the following dialog.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_17.png" alt-text="Screenshot shows the Enter credentials dialog box where you can specify the kind of authentication." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_17.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_17.png" alt-text="Screenshot shows the Enter credentials dialog box where you can specify the kind of authentication.":::
 
 Power BI prompts you for credentials for each web page.
 
@@ -138,7 +138,7 @@ Select **AI Insights** in the query editor.
 
 Next, sign in with your **organizational account**.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_19.png" alt-text="Screenshot shows the Enter credentials dialog box where you can specify Organizational account." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_19.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_19.png" alt-text="Screenshot shows the Enter credentials dialog box where you can specify Organizational account.":::
 
 Select the Tag Images function, enter _[Binary]_ in the column field and _en_ in the culture info field.
 
@@ -152,11 +152,11 @@ In the function editor, remove the quotation marks around the column name.
 > [!NOTE]
 > Removing the quotation marks is a temporary workaround. This issue will be resolved as soon as possible during preview.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png" alt-text="Screenshot shows the function editor with Image called out without quotation marks." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png" alt-text="Screenshot shows the function editor with Image called out without quotation marks.":::
 
 The function returns a record with both the tags in comma-separated format and as a *json* record. Select the expand-button to add one or both as columns to the table.
 
-:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_22.png" alt-text="Screenshot shows the expand button, which has two opposite pointing arrows." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_22.png":::
+:::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_22.png" alt-text="Screenshot shows the expand button, which has two opposite pointing arrows.":::
 
 Select **Done** and save the dataflow. Once you've refreshed the dataflow one, you can connect to it from Power BI Desktop using the Dataflows connectors.
 
