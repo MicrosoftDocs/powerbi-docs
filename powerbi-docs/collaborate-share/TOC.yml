@@ -51,9 +51,9 @@
       href: service-create-the-new-workspaces.md
     - name: "Roles in workspaces"
       href: service-roles-new-workspaces.md
-    - name: "Monitor usage in workspaces"
+    - name: "Monitor usage in workspaces (preview)"
       href: service-modern-usage-metrics.md
-    - name: "Monitor usage in My workspace"
+    - name: "Monitor report usage"
       href: service-usage-metrics.md
     - name: "Give access to workspaces"
       href: service-give-access-new-workspaces.md
