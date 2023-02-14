@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 
 # Change the display of a report page
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
 
 You can view reports on many devices with varying screen sizes and aspect ratios. Learn how to change the display of a report page, so it fits your needs.
 
