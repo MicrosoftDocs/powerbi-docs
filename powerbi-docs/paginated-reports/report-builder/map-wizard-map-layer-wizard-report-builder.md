@@ -26,32 +26,27 @@ ms.reviewer: saurkumar
   
  The following sections provide information about options that you specify when in the Map and Map Layer Wizards.  
   
--   When you first open Power BI Report Builder, click the **Map** wizard icon in the center of the design surface.  
+-   When you first open Power BI Report Builder, select the **Map** wizard icon in the center of the design surface.  
   
--   On the **Insert** tab, click **Map**, and then click **Map Wizard**.  
+-   On the **Insert** tab, select **Map**, and then select **Map Wizard**.  
   
  To open the Map Layer wizard, do the following action:  
   
--   Click the map to display the Map pane and on the toolbar, click the **New layer wizard** button.  
+-   Select the map to display the Map pane and on the toolbar, select the **New layer wizard** button.  
   
- Click the title of the wizard page for the corresponding help content. The pages that you see vary depending on your choices for the type of map, the source of spatial data, and the source of analytical data.  
+ Select the title of the wizard page for the corresponding help content. The pages that you see vary depending on your choices for the type of map, the source of spatial data, and the source of analytical data.  
   
 1.  [Choose a source of spatial data](#SpatialDataSource). Spatial data can come from the map gallery, or from spatial data in a SQL Server relational database.  
   
-    -   [What is spatial data?](#SpatialData)  
-  
+    -   [What is spatial data?](#SpatialData)   
     -   [What is the Map gallery?](#MapGallery)  
-  
     -   [What is a SQL Server spatial query?](#SqlServerSpatial)  
   
 2.  [Choose spatial data and map view options](#MapView). Set the map view, the map resolution, specify whether to embed spatial data in the report, and specify whether to include a tile background of Microsoft Bing map tiles.  
   
     -   [What is the map view or viewport?](#Viewport)  
-  
     -   [What is map resolution or optimization?](#Resolution)  
-  
     -   [What does embedding spatial data do?](#Embed)  
-  
     -   [What is a Bing maps tile background?](#Tiles)  
   
 3.  [Choose map visualization](#Visualization). Choose the type of map to create.  

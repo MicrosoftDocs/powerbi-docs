@@ -27,7 +27,7 @@ ms.reviewer: monaraya
   
 - You can add a custom location at a  point that you specify on a map layer that has embedded points. You can set the value and display properties for custom points independently from other points on a point layer.  
   
-- To provide more detail, you can add links to map elements on each layer that a user can click to open related reports.  
+- To provide more detail, you can add links to map elements on each layer that a user can select to open related reports.  
   
  For more ideas about improving a report, see [Planning a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/planning-a-report-report-builder).  
   
@@ -49,7 +49,7 @@ ms.reviewer: monaraya
   
 - Provide the illusion of depth by specifying a shadow.  
   
- To change these options, right-click the map, click **Map**, and change the options.  
+ To change these options, right-click the map, select **Map**, and change the options.  
   
 ##  <a name="Viewport"></a> Change options for the viewport  
  Use the viewport options to change the view of the map that appears in your report.  
@@ -82,7 +82,7 @@ ms.reviewer: monaraya
  For more information, see [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-associated-rules-report-builder).  
   
 ##  <a name="Layer"></a> Change options for the layer  
- To display the layers for a map, click the map to select it. The Map pane appears. To change options for a layer, right-click the layer and use the shortcut menu.  
+ To display the layers for a map, select the map to select it. The Map pane appears. To change options for a layer, right-click the layer and use the shortcut menu.  
   
  A layer can be one of three types based on the spatial data that is returned by the spatial data source: a polygon layer, a line layer, or a point layer.  
   
@@ -99,7 +99,7 @@ ms.reviewer: monaraya
  For more information about layers, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
   
 ##  <a name="DataGrouping"></a> Change data grouping for the layer  
- You can customize the way to aggregate spatial data for your own shapes. To set the group properties for a layer, select the layer in the Map pane, and in the Properties pane for the layer, click **Group**, and then click the ellipsis (...) to open the Group properties. In this dialog box, you can specify group expressions, create group variables, and filter data that is used for grouping.  
+ You can customize the way to aggregate spatial data for your own shapes. To set the group properties for a layer, select the layer in the Map pane, and in the Properties pane for the layer, select **Group**, and then select the ellipsis (...) to open the Group properties. In this dialog box, you can specify group expressions, create group variables, and filter data that is used for grouping.  
   
  The group expression specifies how analytical data that has a relationship to spatial data is aggregated for each map element on the layer. By default, the group expression is the set of match fields that was specified for the relationship between the spatial data and the analytical data. For example, for a bubble map that displays city locations and population size for a country or region, the match fields include city name [City] and region name [Region] because there can be multiple cities with the same name. The corresponding group expression includes two fields: [City] and [Region].  
 

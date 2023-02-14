@@ -1,7 +1,7 @@
 ---
 title: "Add, change, or delete a map or map layer in a Power BI paginated report | Microsoft Docs"
 description: Learn how to add, remove, or change map options manually or by using the map layer wizard in a Power BI paginated report in Power BI Report Builder.
-ms.date: 01/25/2023
+ms.date: 02/14/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -16,7 +16,7 @@ ms.reviewer: saurkumar
 
   A map is a collection of layers. When you add a map to a Power BI paginated report, you define the first layer. You can create additional layers by using the map layer wizard.  
   
- The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, click in the map on the report design surface. The following figure displays the parts of the pane:  
+ The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, select in the map on the report design surface. The following figure displays the parts of the pane:  
   
  ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.gif)  
   
@@ -26,8 +26,8 @@ The following table displays the toolbar icons for the **Map** pane.
 
 |Symbol|Description|When to use|  
 |------------|-----------------|-----------------|  
-|![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)|Map Layer Wizard|To add a layer by using a wizard, click **New layer wizard**.|  
-|![Screenshot showing how to manually add a layer.](../media/paginated-reports-maps/map-add-layer.gif)|Add Layer|To manually add a layer, click **Add Layer**, and then click the type of map layer to add.|  
+|![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)|Map Layer Wizard|To add a layer by using a wizard, select **New layer wizard**.|  
+|![Screenshot showing how to manually add a layer.](../media/paginated-reports-maps/map-add-layer.gif)|Add Layer|To manually add a layer, select **Add Layer**, and then select the type of map layer to add.|  
 |![Screenshot showing how to add a map layer that displays areas or shapes that are based sets of polygon coordinates.](../media/paginated-reports-maps/map-polygon-layer.gif)|Polygon Layer|Add a map layer that displays areas or shapes that are based sets of polygon coordinates.|  
 |![Screenshot showing how to add a map layer that displays paths or routes that are based on sets of line coordinates.](../media/paginated-reports-maps/map-line-layer.gif)|Line Layer|Add a map layer that displays paths or routes that are based on sets of line coordinates.|  
 |![Screenshot showing how to add a map layer that displays locations that are based on sets of point coordinates.](../media/paginated-reports-maps/map-point-layer.gif)|Point Layer|Add a map layer that displays locations that are based on sets of point coordinates.|  
@@ -41,36 +41,36 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="AddLayer"></a> Add a layer from the map layer wizard  
   
--   From the Ribbon, on the **Insert** menu, click **Map**, and then click **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
+-   From the Ribbon, on the **Insert** menu, select **Map**, and then select **Map Wizard.** The wizard enables you to add a layer to the existing map. Most wizard pages are identical between the map wizard and the map layer wizard.  
   
      For more information, see [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
 ##  <a name="ChangeLayer"></a> Change options for a layer by using the map layer wizard  
   
--   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, click the layer wizard button (![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)).  
+-   Run the map layer wizard. This wizard enables you to change options for a layer that you created by using the map layer wizard. In the Map pane, right-click the layer, and on the toolbar, select the layer wizard button (![Screenshot showing how to add a layer using wizard.](../media/paginated-reports-maps/map-layer-wizard.gif)).  
   
      For more information, see [Map Wizard and Map Layer Wizard &#40;Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md).  
   
 ##  <a name="AddVectorLayer"></a> Add a point, line, or polygon layer from the Map pane toolbar  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  On the toolbar, click the **Add Layer** button, and from the drop-down list, click the type of layer that you want to add: **Point**, **Line**, or **Polygon**.  
+2.  On the toolbar, select the **Add Layer** button, and from the drop-down list, select the type of layer that you want to add: **Point**, **Line**, or **Polygon**.  
   
     > [!NOTE]  
-    >  Although you can add a map layer and configure it manually, we recommend that you use the map layer wizard to add new layers. To launch the wizard from the Map pane toolbar, click the layer wizard button (![rs_IconMapLayerWizard](/sql/reporting-services/media/rs-iconmaplayerwizard.gif "rs_IconMapLayerWizard")).  
+    >  Although you can add a map layer and configure it manually, we recommend that you use the map layer wizard to add new layers. To launch the wizard from the Map pane toolbar, select the layer wizard button (![rs_IconMapLayerWizard](/sql/reporting-services/media/rs-iconmaplayerwizard.gif "rs_IconMapLayerWizard")).  
   
-3.  Right-click the layer, and then click **Layer Data**.  
+3.  Right-click the layer, and then select **Layer Data**.  
   
 4.  In **Use spatial data from**, select the source of spatial data. Options vary based on your selection.  
   
      If you want to visualize analytical from your report on this layer, do the following:  
   
-    1.  Click **Analytical data**.  
+    1.  Select **Analytical data**.  
   
-    2.  In **Analytical dataset**, click the name of the dataset that contains analytical data and the match fields to build a relationship between analytical and spatial data.  
+    2.  In **Analytical dataset**, select the name of the dataset that contains analytical data and the match fields to build a relationship between analytical and spatial data.  
   
-    3.  Click **Add**.  
+    3.  Select **Add**.  
   
     4.  Type the name of the match field from the spatial dataset.  
   
@@ -82,11 +82,11 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="FilterAnalyticalData"></a> Filter analytical data for the layer  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  Right-click the layer in the Map pane, and then click  **Layer Data**.  
+2.  Right-click the layer in the Map pane, and then select  **Layer Data**.  
   
-3.  Click **Filters**.  
+3.  Select **Filters**.  
   
 4.  Define a filter equation to limit the analytical data that is used in the map display. For more information, see [Filter Equation Examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs).  
   
@@ -100,13 +100,13 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="Embedded"></a> Specify embedded data as a source of spatial data  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  Right-click the layer, and then click **Layer Data**.  
+2.  Right-click the layer, and then select **Layer Data**.  
   
 3.  In **Use spatial data from**, select **Data embedded in report**.  
   
-4.  To load map elements from an existing report, click **Browse**, point to the file, and then click **Open**. The map elements are embedded in this report definition. The spatial data that you point to must match the layer type. For example, for a point layer, you must point to spatial data that specifies sets of point coordinates.  
+4.  To load map elements from an existing report, select **Browse**, point to the file, and then select **Open**. The map elements are embedded in this report definition. The spatial data that you point to must match the layer type. For example, for a point layer, you must point to spatial data that specifies sets of point coordinates.  
   
 5.  In **Spatial field**, specify the name of the field that contains spatial data. You might need to determine this name from the source of spatial data.  
      
@@ -114,28 +114,28 @@ The following table displays the toolbar icons for the **Map** pane.
 
 ##  <a name="DatasetField"></a> Specify a report dataset field as a source of spatial data  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  Right-click the layer, and then click **Layer Data**.  
+2.  Right-click the layer, and then select **Layer Data**.  
   
 3.  In **Use spatial data from**, select **Spatial field in a dataset**.  
   
-4.  In **Dataset name**, click the name of a dataset in the report that contains that spatial data that you want.  
+4.  In **Dataset name**, select the name of a dataset in the report that contains that spatial data that you want.  
   
-5.  In **Spatial field name**, click the name of the field in the dataset that contains spatial data.  
+5.  In **Spatial field name**, select the name of the field in the dataset that contains spatial data.  
   
 6.  Select **OK**.
   
 ##  <a name="TileLayer"></a> Add a tile layer  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  On the toolbar, click the **Add Layer** button, and from the drop-down list, click **Tile Layer**.  
+2.  On the toolbar, select the **Add Layer** button, and from the drop-down list, select **Tile Layer**.  
   
     > [!NOTE]  
     >  For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
   
-3.  Right-click the tile layer in the Map pane, and then click **Tile Properties**.  
+3.  Right-click the tile layer in the Map pane, and then select **Tile Properties**.  
   
 4.  In **Tile options**, select a tile style. If the Bing map tiles are available, the layer on the design surface updates with the style that you select.  
   
@@ -144,19 +144,19 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="DrawingOrder"></a> Change the drawing order of a layer  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  Click the layer in the Map pane to select it.  
+2.  Select the layer in the Map pane to select it.  
   
-3.  On the Map pane toolbar, click the up or down arrow to change the drawing order of each layer.  
+3.  On the Map pane toolbar, select the up or down arrow to change the drawing order of each layer.  
   
 ##  <a name="Transparency"></a> Change the transparency of a polygon, line, or point layer  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  Right-click the layer, and then click **Layer Data**.  
+2.  Right-click the layer, and then select **Layer Data**.  
   
-3.  Click **Visibility**.  
+3.  Select **Visibility**.  
   
 4.  In **Transparency options**, type a value that represents the percentage transparency, for example, **40**. Zero (0) % transparency means that the layer is opaque. 100% transparency means that you will not see the layer in the report.  
   
@@ -164,11 +164,11 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="TileTransparency"></a> Change the transparency of a tile layer  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  Right-click the layer, and then click **Tile Properties**.  
+2.  Right-click the layer, and then select **Tile Properties**.  
   
-3.  Click **Visibility**.  
+3.  Select **Visibility**.  
   
 4.  In **Transparency options**, type a value that represents the percentage transparency, for example, **40**.  
   
@@ -176,9 +176,9 @@ The following table displays the toolbar icons for the **Map** pane.
   
 ##  <a name="Secure"></a> Specify a secure connection for a tile layer  
   
-1.  Click the map until the Map pane appears.  
+1.  Select the map until the Map pane appears.  
   
-2.  In the Map pane, click the tile layer to select it. The Properties pane displays the tile layer properties.  
+2.  In the Map pane, select the tile layer to select it. The Properties pane displays the tile layer properties.  
   
 3.  In the Properties pane, set UseSecureConnection to **True**.  
   
@@ -188,24 +188,19 @@ The following table displays the toolbar icons for the **Map** pane.
   
 1.  By default, for tile styles that display labels, the language is determined from the default locale for Report Builder. You can customize the language setting for tile labels in the following ways.  
   
-    -   Click the map outside the viewport to select the map. In the Properties pane, for the TileLanguage property, select a culture value from the drop-down list.  
-  
-    -   Click the report background to select the report. In the Properties pane, from for the Language property, select a culture value from the drop-down list.  
-  
+    -   Select the map outside the viewport to select the map. In the Properties pane, for the TileLanguage property, select a culture value from the drop-down list.   
+    -   Select the report background to select the report. In the Properties pane, from for the Language property, select a culture value from the drop-down list.  
+
      The order of precedence for setting the tile label language is: report property Language, default locale for Report Builder, and map property TileLanguage.  
   
 ##  <a name="ConditionalHide"></a> Conditionally hide a layer based on viewport zoom level  
   
 1.  Set **Visibility** options to control the display for a map layer.  
   
-    -   In the Map Layers pane, right-click a layer to select it, and on the Map Layers toolbar, click Properties to open **Map Layer Properties**.  
-  
-    -   Click **Visibility**.  
-  
+    -   In the Map Layers pane, right-click a layer to select it, and on the Map Layers toolbar, select Properties to open **Map Layer Properties**.   
+    -   Select **Visibility**.  
     -   In Layer visibility, select **Show or hide based on zoom value**.  
-  
     -   Enter minimum and maximum zoom values for when display the layer.  
-  
     -   Optional. Enter a value for transparency.  
   
      You can also conditionally hide the layer. For more information, see [Hide an Item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs).  
