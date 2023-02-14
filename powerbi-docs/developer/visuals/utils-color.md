@@ -1,26 +1,26 @@
 ---
 title:  Introduction to use color utils in Power BI visual
-description: This article describes how to use color utils simplify applying of themes and palettes on visual's data points on Power BI visuals.
+description: Learn how to install, import, and use color utils to apply themes and palettes on Power BI visual's data points.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/14/2022
+ms.date: 01/13/2023
 ---
 
 # Color utils
 
-This article will help you to install, import, and use color utils. This article describes how to use color utils simplify applying of themes and palettes on visual's data points on Power BI visuals.
+This article will help you to install, import, and use color utils. Learn how to use color utils to apply themes and palettes on a Power BI visual's data points.
 
 ## Prerequisites
 
-To use the package, you should have the following things:
+To use the package, install:
 
 * [node.js](https://nodejs.org) (we recommend the latest LTS version)
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
-* The custom visual created by [`PowerBI-visuals-tools`](https://www.npmjs.com/package/powerbi-visuals-tools)
+* The custom visual created by [PowerBI-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools)
 
 ## Installation
 
@@ -34,16 +34,16 @@ This command installs the package and adds a package as a dependency to your `pa
 
 ## Usage
 
-To user interactivity utils, you have to import the required component in the source code of the visual.
+To use interactivity utils, you have to import the required component in the source code of the visual.
 
 ```typescript
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
 ```
 
-Learn how to install and use the ColorUtils in your Power BI visuals:
+Learn how to install and use the colorUtils in your Power BI visuals:
 
 * [Usage Guide]
-The Usage Guide describes a public API of the package. You will find a description and a few examples for each public interface of the package.
+The Usage Guide describes a public API of the package. It provides a description and examples for each public interface.
 
 This package contains the following classes and modules:
 
@@ -56,7 +56,7 @@ The `ColorHelper` class provides the following functions and methods:
 
 ### getColorForSeriesValue
 
-This method gets the color for the given series value. If no explicit color or default color has been set, then the color is allocated from the color scale for this series.
+This method gets the color for a specific series value. If no explicit color or default color has been set, then the color is allocated from the color scale for this series.
 
 ```typescript
 getColorForSeriesValue(objects: IDataViewObjects, value: PrimitiveValue, themeColorName?: ThemeColorName): string;
@@ -113,7 +113,7 @@ export class YourVisual implements IVisual {
 
 ### getColorForMeasure
 
-This method gets the color for the given measure.
+This method gets the color for a specific measure.
 
 ```typescript
  getColorForMeasure(objects: IDataViewObjects, measureKey: any, themeColorName?: ThemeColorName): string;
@@ -161,7 +161,7 @@ export class YourVisual implements IVisual {
 
 ### static `normalizeSelector`
 
-This method returns the normalized selector
+This method returns the normalized selector.
 
 ```typescript
 static normalizeSelector(selector: Selector, isSingleSeries?: boolean): Selector;
@@ -177,24 +177,23 @@ let selectionId: ISelectionId = ...;
 let selector = ColorHelper.normalizeSelector(selectionId.getSelector(), false);
 ```
 
-Methods `getThemeColor` and `getHighContrastColor` are both related to color theme colors.
-Also `ColorHelper` has `isHighContrast` property that should be useful for check.
+Methods `getThemeColor` and `getHighContrastColor` are both related to color theme colors. `ColorHelper` has the `isHighContrast` property.
 
 ### `getThemeColor`
 
-This method returns theme color
+This method returns the theme color.
 ```typescript
  getThemeColor(themeColorName?: ThemeColorName): string;
 ```
 
 ### `getHighContrastColor`
 
- This  method return color for high contrast mode
+ This method returns the color for high-contrast mode.
 ```typescript
 getHighContrastColor(themeColorName?: ThemeColorName, defaultColor?: string): string;
 ```
 
-#### Example related to high contrast mode usage:
+#### High-contrast mode example
 
 ```typescript
 
@@ -241,7 +240,7 @@ export class MyVisual implements IVisual {
 
 ### hexToRGBString
 
-Converts hex color to RGB string.
+Converts a hex color to an RGB string.
 
 ```typescript
 function hexToRGBString(hex: string, transparency?: number): string
@@ -295,7 +294,7 @@ parseColorString('rgba(1, 2, 3, 1.0)');
 
 ### calculateHighlightColor
 
-Calculate the highlight color from the rgbColor based on the lumianceThreshold and delta.
+Calculates the highlight color from the rgbColor based on the lumianceThreshold and delta.
 
 ```typescript
 function calculateHighlightColor(rgbColor: RgbColor, lumianceThreshold: number, delta: number): string
@@ -316,7 +315,7 @@ calculateHighlightColor(yellowRGB, 0.8, 0.2);
 
 ### createLinearColorScale
 
-Returns a linear color scale for given domain of numbers.
+Returns a linear color scale for a specific domain of numbers.
 
 ```typescript
 function createLinearColorScale(domain: number[], range: string[], clamp: boolean): LinearColorScale
@@ -338,8 +337,8 @@ scale(10); // returns: yellow
 
 ### shadeColor
 
-Converts string hex expression to number, calculate percentage and R, G, B channels.
-Applies percentage for each channel and returns back hex value as string with pound sign.
+Converts a string hex expression to a number, and calculates the percentage and R, G, B channels.
+Applies the percentage for each channel and returns the hex value as a string with a pound sign.
 
 ```typescript
 function shadeColor(color: string, percent: number): string

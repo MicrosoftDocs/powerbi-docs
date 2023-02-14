@@ -26,19 +26,19 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 * **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
 
-* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. Users who already hold a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro or Power BI Premium Per User trial, see [Allow users to try Power BI paid features](service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
+* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. Users who already hold a Power BI Pro license may be prompted to upgrade to a Power BI Premium Per User license. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Premium Per User trial, see [Allow users to try Power BI paid features](service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features) to separate the buy and try experiences.
 
 * **Get help**. To take users to an internal help desk from the help menu, instead of to [Power BI Support](https://powerbi.microsoft.com/support/), set a custom URL for **Help Desk**.
 
 ## Receive email notifications for service outages or incidents
 
-Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](service-interruption-notifications.md).
+Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](/power-bi/support/service-interruption-notifications).
 
 ## Allow users to try Power BI paid features
 
    :::image type="content" source="media/service-admin-portal-help-support/power-bi-settings-paid-features.png" alt-text="Screen capture showing Allow users to try Power BI paid features interface.":::
 
-The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users get license upgrades. In scenarios where you have blocked self-service purchase, this setting lets users use more features free for 60 days. Users who have a Power BI (free) license can start a Power BI Pro trial. Users with a Power BI Pro license can start a Power BI Premium Per User trial. The user's license upgrade experience depends on how you combine license settings. The table below shows how the upgrade experience is affected by different setting combinations:
+The setting to **Allow users to try Power BI paid features** is enabled by default. This setting increases your control over how users get license upgrades. In scenarios where you have blocked self-service purchase, this setting lets users use more features free for 60 days. Users who have a Power BI (free) license and users with a Power BI Pro license can start a Power BI Premium Per User trial. The user's license upgrade experience depends on how you combine license settings. The table below shows how the upgrade experience is affected by different setting combinations:
 
 | Self-service purchase setting | Allow user to try Power BI paid features | End-user experience |
 | ------ | ------ | ----- |
