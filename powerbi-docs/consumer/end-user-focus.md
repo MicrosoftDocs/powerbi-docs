@@ -56,7 +56,7 @@ Use full screen mode to:
 
 :::image type="content" source="media/end-user-focus/power-bi-compare.png" alt-text="Screenshot of a dashboard tile in default mode and then focus mode." lightbox="media/end-user-focus/power-bi-compare.png":::
 
-While in focus mode, you can interact with any filters that were applied when this visual was created. In the Power BI service, you can use focus mode on a dashboard tile or report visual.
+While in focus mode, you can interact with any filters that were applied when this visual was created.  
 
 ## Work in full screen mode
 
@@ -78,7 +78,7 @@ Your selected content fills the entire screen. When you're in full screen mode, 
   * Select the **Back**, **Go back**, or **Back to report** button  to navigate to the previous page in your browser. If the previous page was a Power BI page, it too will display in full screen mode.  Full screen mode will persist until you exit out.
 
   * :::image type="icon" source="media/end-user-focus/power-bi-fit-to-screen-icon.png":::    
-    Use the **Fit to page** or **Fit to screen** option to display your dashboard at the largest size possible without resorting to scrollbars.  
+    Use the **Fit to page** or **Fit to screen** option to display your dashboard or report at the largest size possible without resorting to scrollbars.  
 
     ![Screenshot showing how fit to screen appears.](media/end-user-focus/power-bi-fit-screen.png)
 
@@ -104,9 +104,7 @@ Focus mode is available for dashboard tiles and report visuals.
 
    :::image type="content" source="media/end-user-focus/power-bi-hover-focus.png" alt-text="Screenshot showing the Focus mode icon for a tile.":::
 
-
-
-The visual opens and fills the entire canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed.
+The visual opens and fills the entire canvas. Notice that your report canvas still has a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed.
 
 :::image type="content" source="media/end-user-focus/power-bi-filter.png" alt-text="Screenshot showing that the tile fills report canvas."  lightbox="media/end-user-focus/power-bi-filter.png":::
 
