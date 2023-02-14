@@ -39,7 +39,7 @@ Drag and drop code snippets into the report, or type them directly into the code
 
 You can choose between JavaScript and TypeScript for writing your code. All API code snippets will be updated based on your selection, and the last language used is saved for next time.
 
-:::image type="content" source="./media/power-bi-playground/select-languages.png" alt-text="Screenshot of menu to select either Javascript or Typescript.":::
+:::image type="content" source="./media/power-bi-playground/select-languages.png" alt-text="Screenshot of menu to select either JavaScript or TypeScript.":::
 
 ## Explore our APIs
 
