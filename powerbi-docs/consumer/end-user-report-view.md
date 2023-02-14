@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/28/2022
+ms.date: 02/13/2023
 LocalizationGroup: Reports
 ---
 
@@ -66,5 +66,5 @@ The next example shows a visual in Full screen mode.
 :::image type="content" source="media/end-user-report-view/power-bi-visual-full-screen.png" alt-text="A screenshot of a visual open in full screen mode.":::
 
 ## Next steps
-
+- [Compare focus mode and full screen mode](end-user-focus.md)
 - [Take a tour of the report Filters pane](end-user-report-filter.md) 
