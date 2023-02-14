@@ -19,9 +19,7 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 ## Add a data source
 
-For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select a data source type.
-
-All of the data source types listed can be used for scheduled refresh with the on-premises data gateway. Analysis Services, SQL Server, and SAP HANA can be used for either scheduled refresh or DirectQuery or live connections.
+Select a data source type. All of the data source types listed can be used for scheduled refresh with the on-premises data gateway. Analysis Services, SQL Server, and SAP HANA can be used for scheduled refresh, DirectQuery, or live connections. For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source).
 
 :::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/add-data-source-sql.png" alt-text="Screenshot of adding SQL data source to the gateway." :::
 
@@ -34,7 +32,7 @@ Then fill in the information for the data source, which includes the source info
 
 For a list of data source types that can be used with scheduled refresh, see [List of available data source types](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-After you fill in everything, select **Create**. You can now use this data source for scheduled refresh with your on-premises data. You see *Create New data source* if it succeeded.
+After you fill in everything, select **Create**. If the action succeeds, you see *Created New data source.* You can now use this data source for scheduled refresh with your on-premises data.
 
 :::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/successful-sql.png" alt-text=" Screenshot of successful creation for SQL data source." :::
 
