@@ -76,13 +76,13 @@ For example, when you select an individual visual such as this column chart:
 
 Use the Filters pane to view, set, and modify persistent filters to your reports at the page, report, drillthrough, and visual-level. Yes, you can do ad-hoc filtering on report pages and visuals by selecting elements of the visuals or by using tools like slicers. Filtering in the Filters pane has the advantage that the state of the filters is saved with the report.
 
-The Filters pane has another powerful feature: you can filter using a field *that isn't already in one of the visuals in your report*. When you create a visualization, Power BI automatically adds all the fields in the visualization to the visual-level filters area of the Filters pane. If you want to set a visual, page, drillthrough, or report filter using a field that isn't the visualization, drag it to one of the Filter's buckets.
+The Filters pane has another powerful feature: you can filter using a field *that isn't already in one of the visuals in your report*. When you create a visualization, Power BI automatically adds all the fields in the visualization to the visual-level filters area of the Filters pane. If you want to set a visual, page, drillthrough, or report filter using a field that isn't in the visualization, drag it to one of the Filter's buckets.
 
 The new filter experience offers more flexibility. For example, you can format filters to look like the report itself. You can also lock filters or hide them from your report consumers.
 
 :::image type="content" source="media/service-the-report-editor-take-a-tour/power-bi-filters-pane-2.png" alt-text="Screenshot of the Visualization pane, highlighting the Filter pane dropdown menu.":::
 
-Read more about [formatting filters in Power BI reports](power-bi-report-filter.md).
+For more information, see [formatting filters in Power BI reports](power-bi-report-filter.md).
 
 ## The Visualizations pane
 
@@ -110,11 +110,11 @@ Select the paint brush icon to display the Format visual pane. The options avail
 
 :::image type="content" source="media/service-the-report-editor-take-a-tour/power-bi-visual-pane-format-2.png" alt-text="Screenshot of the Format visual pane in the report editor.":::
 
-The formatting possibilities are extensive. To learn more, explore on your own, or visit these articles:
+To learn more, explore on your own, or see the following articles:
 
-* [Customize visualization titles, backgrounds, labels, and legends](../visuals/power-bi-visualization-customize-title-background-and-legend.md)
+* [Getting started with the formatting pane](../visuals/power-bi-visualization-customize-title-background-and-legend.md)
 * [Color formatting](../visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
-* [Customizing X-axis and Y-axis properties](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Customizing x-axis and y-axis properties](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### Add analytics to your visualizations
 
@@ -122,31 +122,28 @@ Select the magnifying glass icon to display the Analytics pane. The options avai
 
 :::image type="content" source="media/service-the-report-editor-take-a-tour/power-bi-visual-pane-analytics-2.png" alt-text="Screenshot of the Analytics pane in the report editor.":::
 
-With the Analytics pane in the Power BI service, you can add dynamic reference lines to visualizations and provide focus for important trends or insights. To learn more, see [Use the Analytics pane in Power BI Desktop](../transform-model/desktop-analytics-pane.md).
+With the Analytics pane in the Power BI service, you can add dynamic reference lines to visualizations and provide focus for important trends or insights. For more information, see [Use the Analytics pane in Power BI Desktop](../transform-model/desktop-analytics-pane.md).
 
-## 5. The Fields pane
+## The Fields pane
 
 The Fields pane displays the tables, folders, and fields in your data that are available for you to use to create visualizations.
 
-:::row:::
-    :::column:::
-        <ul><li>Drag a field onto the page to start a new visualization. You can also drag a field onto an existing visualization to add the field to that visualization.<br><br></li> <li>When you add a checkmark next to a field, Power BI adds that field to the active or new visualization. It also decides which bucket to place that field into. For example, should the field be used as a legend, axis, or value? Power BI makes a best-guess, and you can move it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul>
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="media/service-the-report-editor-take-a-tour/power-bi-fields-list-2.png" alt-text="Screenshot showing the Fields pane with example selections.":::
-    :::column-end:::
-:::row-end:::
+* Drag a field onto the page to start a new visualization. You can also drag a field onto an existing visualization to add the field to that visualization.
+* When you add a checkmark next to a field, Power BI adds that field to the active or new visualization. It also decides which bucket to place that field into. For example, should the field be used as a legend, axis, or value? Power BI makes a best-guess, and you can move it from that bucket to another if necessary.
+* Either way, each selected field is added to the Visualizations pane in the report editor.
+:::image type="content" source="media/service-the-report-editor-take-a-tour/power-bi-fields-list-2.png" alt-text="Screenshot showing the Fields pane with example selections.":::
 
-In Power BI Desktop, you also have options to show/hide fields, add calculations, etc.
+In Power BI Desktop, you also have options to show or hide fields, add calculations, and more.
 
 ## The field icons
 
-Power BI uses many different icons to indicate the types of fields in a report. When you recognize them, you understand better how they act in different visuals. For a complete list, see [Field list icons section of Using the Field list in Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes).
+Power BI uses many different icons to indicate the types of fields in a report. When you recognize them, you understand better how they act in different visuals. For a complete list, see the Field list section of [Use the Field list in Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes).
 
 ## Next steps
 
-* Reports in the [Power BI service](service-report-create-new.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile apps](../consumer/mobile/mobile-apps-view-phone-report.md).
 * [Create a report from an Excel file in the Power BI service](service-report-create-new.md)
+* [Work with Report view in Power BI Desktop](desktop-report-view.md)
+* [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
