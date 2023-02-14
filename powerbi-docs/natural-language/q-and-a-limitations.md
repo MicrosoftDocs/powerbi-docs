@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/10/2023
+ms.date: 01/30/2023
 ---
 # Limitations of Power BI Q&A
 
@@ -25,16 +25,24 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 
 In each of these configurations, row-level security is also supported.
 
-**DirectQuery support for Q&A** (preview)
+#### DirectQuery support for Q&A (preview)
 
 Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one change to the behavior of Q&A when it's in DirectQuery mode: After you enter your question, select **Submit**. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
+
+#### Composite model support
+
+Q&A also supports composite models, if the model contains at least one of the following data sources:
+
+- One import data source
+- One DirectQuery data source that supports APPROXIMATEDISTINCOUNT. Refer to the [DirectQuery support](#directquery-support-for-qa-preview) section in this article for specific sources.
+
+If the model contains a mix of data sources, we only index import columns or columns for data sources that suport APPROXIMATEDISTINCTCOUNT. Thus, you can only ask questions about the instance values for these types of columns. You still can ask questions about the columns themselves. 
 
 ### Data sources not supported
 
 Power BI Q&A doesn't support the following configurations:
 
 - Object level security with any type of data source
-- Composite models
 - Reporting Services 
 
 ## Tooling limitations

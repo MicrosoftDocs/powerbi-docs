@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 1/5/2023
+ms.date: 02/06/2023
 LocalizationGroup: Data from files
 ---
 
@@ -121,9 +121,9 @@ The unified Dataflows connector can significantly reduce evaluation time for ste
 - Downstream users connecting to the Dataflows connector in Power BI Desktop can take advantage of better performance in authoring scenarios because the new connector supports query folding.
 - Dataset refresh operations can also fold to the enhanced compute engine, which means even incremental refresh from a dataset can fold to a dataflow. This capability improves refresh performance and potentially decreases latency between refresh cycles.
 
-To enable this feature for any Premium dataflow, make sure the [compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must use the August 2021 version of Power BI Desktop or later to take advantage of this feature.
+To enable this feature for any Premium dataflow, make sure the [compute engine](dataflows-premium-features.md#use-the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must use the August 2021 version of Power BI Desktop or later to take advantage of this feature.
 
-To use this feature for existing solutions, you must be on a Premium or Premium Per User subscription. You might also need to make some changes to your dataflow as described in [Using the enhanced compute engine](dataflows-premium-features.md#using-the-enhanced-compute-engine). You must update any existing Power Query queries to use the new connector by replacing `PowerBI.Dataflows` in the **Source** section with `PowerPlatform.Dataflows`.
+To use this feature for existing solutions, you must be on a Premium or Premium Per User subscription. You might also need to make some changes to your dataflow as described in [Using the enhanced compute engine](dataflows-premium-features.md#use-the-enhanced-compute-engine). You must update any existing Power Query queries to use the new connector by replacing `PowerBI.Dataflows` in the **Source** section with `PowerPlatform.Dataflows`.
 
 ## Complex dataflow authoring in Power Query
 
