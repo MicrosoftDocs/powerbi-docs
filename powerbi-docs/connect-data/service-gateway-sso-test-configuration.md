@@ -21,9 +21,9 @@ The single sign-on test:
 
 - Lets the gateway connect to the data source by using a test User Principal Name (UPN) that you provide.
 - Validates the SSO setup, which includes checking UPN mapping to a local Active Directory (AD) identity for impersonation and data source access.
-- Helps identify problems if connection failures occur. For example, an error message indicates if an UPN is mapped to a local AD identity that doesn't have access to the data source.
+- Helps identify problems if connection failures occur. For example, an error message indicates if a UPN maps to a local AD identity that doesn't have access to the data source.
 
-The test single sign-on feature works for both Kerberos and SAML-based SSO for the data sources listed in [Supported data sources for SSO](service-gateway-sso-overview.md#supported-data-sources-for-sso). For Kerberos constrained delegation, the test single sign-on feature can help test SSO for both **DirectQuery** and **DirectQuery and Import** data sources.
+The test single sign-on feature works for both Kerberos and SAML-based SSO for the data sources listed in [Supported data sources for SSO](service-gateway-sso-overview.md#supported-data-sources-for-sso). For Kerberos constrained delegation, the test single sign-on feature can help test SSO for both DirectQuery and Import, or only DirectQuery data sources.
 
 > [!IMPORTANT]
 > The test single sign-on feature requires the March 2021 gateway release or later.
