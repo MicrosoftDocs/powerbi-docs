@@ -1,5 +1,5 @@
 ---
-title: Edit a dashboard tile
+title: Create or edit a dashboard tile
 description: Learn how to create, edit, resize, move, rename, pin, delete, and add hyperlinks to a dashboard tile.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,10 +8,10 @@ ms.custom: video-lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 02/15/2023
 LocalizationGroup: Dashboards
 ---
-# Edit or remove a dashboard tile
+# Create or edit a dashboard tile
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -39,34 +39,39 @@ This article covers how to:
 
 ## Prerequisites
 
-To follow along, open the Power BI service (not Power BI Desktop) and [download the IT Spend Analysis sample](sample-it-spend.md). When the "Success" message appears, select **Go to dashboard**
+- You just need a [Power BI free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace. 
 
-- - -
+## Get the sample
+
+To follow along, open the Power BI service (app.powerbi.com). 
+
+1. Select **Learn** in the left nav.
+
+1. On the Learning center page, under **Sample reports**, scroll until you see the **IT Spend Analysis sample**.
+
+1. Select the sample. It opens in Reading mode.
+
 <a name="create"></a>
 
-## Create a new visualization and pin it to the dashboard
+## Create a visualization and pin it to the dashboard
 
-1. From the IT Spend Analysis dashboard, select the "Amount" tile to open the report.
+1. Open the report in Editing view by selecting **Edit** from the top menu bar.
 
-    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-amount-tile.png" alt-text="Screenshot showing the Amount tile used to open the report.":::
-
-2. Open the report in Editing view by selecting **Edit** from the top menu bar.
-
-3. Add a new report page by selecting the plus sign (+) at the bottom of the report.
+1. Add a new report page by selecting the plus sign (+) at the bottom of the report.
 
     :::image type="content" source="media/service-dashboard-edit-tile/power-bi-add-page.png" alt-text="Screenshot of the page list, highlighting the plus icon.":::
 
-4. From the **Data** pane, select **Fact** > **Amount** and **Business Area** > **Business Area**.
+1. From the **Data** pane, select **Fact** > **Amount** and **Business Area** > **Business Area**.
 
-5. From the **Visualizations** pane, select the Donut chart icon to convert the visualization to a Donut chart.
+1. From the **Visualizations** pane, select the Donut chart icon to convert the visualization to a Donut chart.
 
     :::image type="content" source="media/service-dashboard-edit-tile/power-bi-donut-chart.png" alt-text="Screenshot of the Visualizations pane, highlighting the Donut icon.":::
 
-6. Select the pin icon and pin the Donut chart to the IT Spend Analysis sample dashboard.
+1. Select the pin icon and pin the Donut chart to the IT Spend Analysis sample dashboard.
 
     :::image type="content" source="media/service-dashboard-edit-tile/power-bi-pin.png" alt-text="Screenshot of the tile, highlighting the pin icon.":::
 
-7. When the **Pinned to dashboard** message appears, select **Go to dashboard**. You'll be prompted to save your changes. Select **Save**.
+1. When the **Pinned to dashboard** message appears, select **Go to dashboard**. You'll be prompted to save your changes. Select **Save**.
 
 - - -
 <a name="move"></a>
@@ -83,17 +88,17 @@ You can make tiles many different sizes&mdash;from 1x1 tile units up to 5x5. Sel
 
 :::image type="content" source="media/service-dashboard-edit-tile/pbigif_resizetile4.gif" alt-text="Animation of a sample tile being resized.":::
 
-## **More options** (...) menu
+## Edit details
 
 1. Select **More options** (...) in the upper-right corner of the tile.
 
    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile.png" alt-text="Screenshot of a tile, highlighting the ellipses.":::
 
-2. Hover over the "Amount" tile and select the ellipses to display the options. The options available vary by tile type. For example, the options available for a live tile are different from options available for a standard visualization tile. Also, if a dashboard has been shared with you, meaning you aren't the owner, you'll have fewer options.
+1. Hover over the "Amount" tile and select the ellipses to display the options. The options available vary by tile type. For example, the options available for a live tile are different from options available for a standard visualization tile. Also, if someone has shared a dashboard with you, you aren't the owner, and you'll have fewer options.
 
    :::image type="content" source="media/service-dashboard-edit-tile/power-bi-tile-menu-new.png" alt-text="Screenshot of the ellipses options menu.":::
 
-3. Select **Edit details** to open the "Tile details" dialog.
+1. Select **Edit details** to open the "Tile details" dialog.
 
     Change the title and default behavior of the tile. For example, you might decide that a new dashboard displays when a *consumer* selects a tile, instead of opening the report that was used to create that tile.
 
@@ -113,13 +118,13 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 1. In the Functionality section on the "Tile details" dialog, select **Set custom link**.
 
-2. Select **Link to a dashboard or report in the current workspace** and then select from the dropdown. In this example, the Human Resources sample dashboard is selected. If you don't have this sample already in your workspace, you can add it and come back to this step, or you can select a different dashboard.
+1. Select **Link to a dashboard or report in the current workspace** and then select from the dropdown. In this example, the Human Resources sample dashboard is selected. If you don't have this sample already in your workspace, you can add it and come back to this step, or you can select a different dashboard.
 
     :::image type="content" source="media/service-dashboard-edit-tile/power-bi-custom-link.png" alt-text="Screenshot showing the Functionality dialog.":::
 
-3. Select **Apply**.
+1. Select **Apply**.
 
-4. The new title displays on the tile. When you select the tile, Power BI opens the Human Resources dashboard.
+1. The new title displays on the tile. When you select the tile, Power BI opens the Human Resources dashboard.
 
     :::image type="content" source="media/service-dashboard-edit-tile/power-bi-title.png" alt-text="Screenshot of a tile, highlighting the title.":::
 
@@ -128,10 +133,10 @@ By default, selecting a tile usually takes you to the report where the tile was 
 ### Pin the tile to a different dashboard
 
 1. From **More options**, select **Pin tile** :::image type="icon" source="../media/pin-icon.png":::.
-2. Decide whether to pin a duplicate of this tile to an existing dashboard or to a new dashboard.
+1. Decide whether to pin a duplicate of this tile to an existing dashboard or to a new dashboard.
 
    :::image type="content" source="media/service-dashboard-edit-tile/pbi_pintoanotherdash.png" alt-text="Screenshot of the Pin to Dashboard dialog.":::
-3. Select **Pin**.
+1. Select **Pin**.
 
 <a name="delete"></a>
 
@@ -139,9 +144,7 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 1. To permanently remove a tile from a dashboard, select **More options** > **Delete tile** :::image type="icon" source="media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png"::: from the ellipses dropdown menu.
 
-2. Deleting a tile doesn't delete the underlying visualization. Open the underlying report by selecting the "Amount" tile. Open the last page in your report to see that the original visualization hasn't been deleted from the report.
-
-- - -
+1. Deleting a tile doesn't delete the underlying visualization. Open the underlying report by selecting the "Amount" tile. Open the last page in your report to see that the original visualization hasn't been deleted from the report.
 
 ## Next steps
 
