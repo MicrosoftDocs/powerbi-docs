@@ -47,7 +47,7 @@ The dataflow dialog shows you the options for creating a new dataflow, select **
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_02.png" alt-text="Screenshot shows Choose a data source, which includes Text/CSV." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_02.png":::
 
-Paste this URL into the URL field: [https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv](https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv) and select **Next.**
+Paste this URL into the URL field: `https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv` and select **Next.**
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png" alt-text="Screenshot shows Connect to data source where you enter the URL." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png":::
 
@@ -81,7 +81,7 @@ After you save and refresh the dataflow, you can use it in a Power BI report.
 
 Open Power BI Desktop. In the **Home** ribbon, select **Get data**.
 
-Select *Power Platform* and then choose **Power BI dataflows**. Select **Connect.**
+Select **Power BI** and then choose **Power BI dataflows**. Select **Connect.**
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png" alt-text="Screenshot shows the Get Data pane with Power BI dataflows selected.":::
 
@@ -89,7 +89,7 @@ Sign in with your organization account.
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_10.png" alt-text="Screenshot shows a sign-in message for your organizational account.":::
 
-Select the dataflow you created. Navigate to the Customer comments table and choose **Load.**
+Select the dataflow you created. Navigate to the **Customer comments** table and choose **Load.**
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_11.png" alt-text="Screenshot shows the Navigator with the Customer comments table selected." lightbox="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_11.png":::
 
@@ -140,7 +140,7 @@ Next, sign in with your **organizational account**.
 
 :::image type="content" source="media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_19.png" alt-text="Screenshot shows the Enter credentials dialog box where you can specify Organizational account.":::
 
-Select the Tag Images function, enter _[Binary]_ in the column field and _en_ in the culture info field.
+Select the Tag Images function, enter _[Binary]_ in the column field, and enter _en_ in the culture info field.
 
 > [!NOTE]
 > You currently cannot pick a column using a dropdown. This issue will be resolved as soon as possible during the private preview.
