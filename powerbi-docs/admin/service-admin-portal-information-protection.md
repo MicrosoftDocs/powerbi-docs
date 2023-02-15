@@ -1,6 +1,6 @@
 ---
-title: Information protection admin settings
-description: Learn how to configure Power BI information protection admin settings.
+title: Information protection tenant settings
+description: Learn how to configure Power BI information protection tenant settings as the Power BI tenant admin.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 02/20/2023
 LocalizationGroup: Administration
 ---
 
 # Information protection tenant settings
 
-These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
+Information protection tenant settings help you to protect sensitive information in your Power BI tenant. Allowing and applying sensitivity labels to content ensures that information is only seen and accessed by the appropriate users. These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
 ## Allow users to apply sensitivity labels for content
 
