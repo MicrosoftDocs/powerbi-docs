@@ -22,7 +22,7 @@ In this tutorial, you combine data from two data sources:
 You're going to import each dataset and do transformation and aggregation operations. Then, you can use the two source's data to produce a sales analysis report with interactive visualizations. Later, apply these techniques to SQL Server queries, CSV files, and other data sources in Power BI Desktop.
 
 >[!NOTE]
->In Power BI Desktop, there are often a few ways to accomplish a task. For example, you can right-click or use a **More options** menu on a column or cell to see additional ribbon selections. Several alternate methods are described in the following steps.
+>In Power BI Desktop, there are often a few ways to accomplish a task. For example, you can right-click or use a **More options** menu on a column or cell to see more ribbon selections. Several alternate methods are described in the following steps.
 
 ## Import Excel product data
 
@@ -74,7 +74,7 @@ Next, import the order data from the sample Northwind sales system OData feed.
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png" alt-text="Screenshot that highlights the URL field in the OData feed dialog box.":::
 
-1. In **Navigator**, select the **Orders** table, and then select **Transform** to load the data into Power Query Editor.
+1. In **Navigator**, select the **Orders** table, and then select **OK** to load the data into Power Query Editor.
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_odatafeed.png" alt-text="Screenshot that highlights the Orders table in the OData navigator.":::
 
@@ -89,7 +89,7 @@ You can use table references to build queries when connecting to data sources wi
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/order-details-column.png" alt-text="Screenshot that highlights the Order_Details column.":::
 
-1. Select the **Expand** icon (![Screenshot of the Expand icon.](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)) in the **Order_Details** column header.
+1. Select the **Expand** icon (:::image type="icon" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png":::) in the **Order_Details** column header.
 
 1. In the dropdown menu:
 
@@ -191,7 +191,7 @@ Power BI Desktop doesn't require you to combine queries to report on them. Howev
 
 The shared `ProductID` field creates a relationship between this tutorial's `Orders` and `Products` datasets.
 
-1. In Power BI Desktop **Report** view, select **Manage Relationships** in the **Modeling** ribbon tab's **Relationships** area.
+1. In Power BI Desktop **Report** view, select **Manage relationships** in the **Modeling** ribbon tab's **Relationships** area.
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png" alt-text="Screenshot that shows the Manage relationships button in the Modeling ribbon."::: 
 
@@ -203,7 +203,7 @@ The shared `ProductID` field creates a relationship between this tutorial's `Ord
 
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png" alt-text="Screenshot that shows the Edit relationship dialog box."::: 
 
-1. Power BI Desktop has autodetected the relationship correctly, so you can select **Cancel** and then **Close**.
+1. Power BI Desktop has auto-detected the relationship correctly, so you can select **Cancel** and then **Close**.
 
 In Power BI Desktop, on the left side, select **Model** to view and manage query relationships. Double-click the arrow on the line connecting the two queries to open the **Edit relationship** dialog and view or change the relationship.
 
@@ -242,7 +242,7 @@ Next, create a chart showing order dollar amounts (**LineTotal**) over time (**O
    :::image type="content" source="media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/linetotals-by-orderdate-line-chart.png" alt-text="Screenshot that shows the LineTotals by OrderDate line chart."::: 
 
    >[!TIP]
-   >If you only see **Years** on the chart and only three data points, select the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**. Alternatively, you may need select **Options and settings > Options** from the **File** menu, and under **Data Load**, clear the *Auto date/time for new files* option.
+   >If you only see **Years** on the chart and only three data points, select the arrow next to **OrderDate** in the **Axis** field of the **Visualizations** pane, and select **OrderDate** instead of **Date Hierarchy**. Alternatively, you might need to select **Options and settings > Options** from the **File** menu, and under **Data Load**, clear the *Auto date/time for new files* option.
 
 Finally, create a map visualization showing order amounts from each country or region.
 
@@ -269,7 +269,7 @@ Select a **Quantity by ProductName** chart product to see the map and the date c
 
 ## Complete the sales analysis report
 
-Your completed report combines data from the *Products.xlsx* Excel file and the Northwind OData feed in visuals that help you analyze different countries' or regions' order information, time frames, and products. When your report is ready, you can [upload it to Power BI service](../create-reports/desktop-upload-desktop-files.md) to share it with other Power BI users.
+Your completed report combines data from the *Products.xlsx* Excel file and the Northwind OData feed in visuals that help you analyze different countries' or regions' order information, time frames, and products. When your report is ready, you can [upload it to the Power BI service](../create-reports/desktop-upload-desktop-files.md) to share it with other Power BI users.
 
 ## Next steps
 
