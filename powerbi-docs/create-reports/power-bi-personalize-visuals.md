@@ -44,9 +44,9 @@ You can enable the feature either in Power BI Desktop or the Power BI service. Y
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals** are allowed.
+To enable the feature in Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Current file** > **Report settings**. Select the **Personalize visuals** checkbox.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop-2.png" alt-text="Screenshot of the Options dialog with the Personalize visuals set to allowed.":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop-2.png" alt-text="Screenshot of the Options dialog with the Personalize visuals checkbox selected.":::
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -56,7 +56,7 @@ To enable the feature in the Power BI service instead, go to **Settings** for yo
 
 Switch on **Personalize visuals** > **Save**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service-2.png" alt-text="Screenshot of the Personalize visuals dialog set to allowed.":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service-2.png" alt-text="Screenshot showing the Personalize visuals checkbox selected.":::
 
 ---
 
@@ -104,7 +104,7 @@ Once you install **Tabular Editor**, open your report in **Power BI Desktop** an
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-2.png" alt-text="Screenshot of the Tabular Editor in the External Tools ribbon":::
 
-In Tabular Editor, right-click on the **Perspectives** > **Create** > **Perspective**.
+In Tabular Editor, right-click on **Perspectives** > **Create** > **Perspective**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-3.png" alt-text="Screenshot of the Tabular Editor, highlighting Create and Perspective.":::
 
@@ -116,7 +116,7 @@ Next, add fields to the perspective by opening the **Tables** folder in Tabular 
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-5.png" alt-text="Screenshot of the Tabular Editor right-click menu, highlighting Shown in perspectives.":::
 
-Repeat that process for each field you want to add to the perspective. You can’t add duplicate fields in a perspective, so adding any fields you already added to a perspective disables it.
+Repeat that process for each field you want to add to the perspective. You can’t add duplicate fields in a perspective, so adding a field you already added to a perspective disables it.
 
 After you added all the fields you want, be sure to save your settings, both in Tabular Editor and then also in Power BI Desktop.
 
@@ -138,7 +138,7 @@ Once you set the Perspective for the report page, the Personalize visuals experi
 
 The feature has a few limitations to be aware of.
 
-- This feature isn't supported for publishing to the web.
+- This feature isn't supported for publish to web.
 - Export to PowerPoint and PDF don't capture personalized visuals.
 - User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets, and in the Power BI Windows app. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
@@ -147,6 +147,6 @@ The feature has a few limitations to be aware of.
 
 - [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md).
 
-Try the new visual personalization experience. Give us your feedback for this feature and tell us how we can continue to improve it on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi).
+Try the visual personalization experience. Give us your feedback for this feature and tell us how we can continue to improve it on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi).
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
