@@ -67,7 +67,7 @@ Experiment with your browser's settings until you get the look you like. Some br
 
     :::image type="content" source="./media/end-user-print/power-bi-focus.png" alt-text="Screenshot of a tile in full screen mode with the Options menu.":::
 
-1. After the Print window for your browser opens, select the settings to fit your print job. For example, if your tile doesn't fit on the page, you may want to change the scale to 75%. 
+1. After the Print window for your browser opens, select the settings to fit your print job. For example, if your tile doesn't fit on the page, you may want to change the scale to 75%.
 1. Select **Print**.
 
    :::image type="content" source="./media/end-user-print/power-bi-scale.png" alt-text="Screenshot of Print window with print settings displayed.":::
