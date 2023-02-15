@@ -1,6 +1,6 @@
 ---
 title: Print from the Power BI service
-description: Learn how to adjust print settings and print dashboard, tile, or report page from the Power BI service.
+description: Learn how to adjust print settings and print a dashboard, tile, or report page from the Power BI service.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -59,7 +59,7 @@ Experiment with your browser's settings until you get the look you like. Some br
 
 1. After the dashboard opens in full screen mode, [open the tile in Focus mode](end-user-focus.md). Hover over the tile to reveal **More options** (...), then select **Open in focus mode** or the focus icon :::image type="icon" source="./media/end-user-print/power-bi-focus-icon.png ":::.
 
-  :::image type="content" source="./media/end-user-print/power-bi-focus-tile.png" alt-text="Screenshot of the More options menu expanded and Open in focus mode selected.":::
+      :::image type="content" source="./media/end-user-print/power-bi-focus-tile.png" alt-text="Screenshot of the More options menu expanded and Open in focus mode selected.":::
 
 1. Hover over the tile to see the Options menu, then select the Print icon :::image type="icon" source="./media/end-user-print/print-icon.png":::.
 
@@ -67,7 +67,7 @@ Experiment with your browser's settings until you get the look you like. Some br
 
     :::image type="content" source="./media/end-user-print/power-bi-focus.png" alt-text="Screenshot of a tile in full screen mode with the Options menu.":::
 
-1. After the Print window for your browser opens, select the settings to fit your print job. For example, if your tile doesn't fit on the page, you may want to change the scale to 75%.
+1. After the Print window for your browser opens, select the settings to fit your print job. For example, if your tile doesn't fit on the page, you might want to change the scale to 75%.
 1. Select **Print**.
 
    :::image type="content" source="./media/end-user-print/power-bi-scale.png" alt-text="Screenshot of Print window with print settings displayed.":::
@@ -122,4 +122,4 @@ A: Go back to the dashboard or report in default view and reopen the visual in F
 ## Next steps
 
 - [Share Power Bi reports and dashboard with coworkers and others](../collaborate-share/service-share-dashboards.md)
-- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- More questions? [Ask the Power BI Community](https://community.powerbi.com/)
