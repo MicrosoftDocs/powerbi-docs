@@ -19,7 +19,7 @@ Print an entire dashboard, a dashboard tile, a report page, or a report visual f
 
 ## Print considerations
 
-Most Power BI dashboards and reports are created by report *designers* for use online and to look amazing when displayed on various of devices. When you print a report, your browser controls how the content looks on paper.
+Most Power BI dashboards and reports are created by report *designers* for use online and to look amazing when displayed on various devices. When you print a report, your browser controls how the content looks on paper.
 
 There are browser settings to adjust the printout, but you still might not get the result you want. Consider [exporting your report to PDF](end-user-pdf.md), then print the PDF instead.
 
@@ -30,7 +30,7 @@ When you print from Power BI, your browser opens a Print window. Every browser h
 Here are a few quick tips you can use to format your printout.
 
    >
-1. Use the **Landscape** layout if your dashboard, report, or visual is wider than it is tall.
+1. Use the **Landscape** layout if your dashboard, report, or visual is wider than it's tall.
 
    :::image type="content" source="./media/end-user-print/power-bi-landscape-layout.png" alt-text="Screenshot of the print settings with Layout as Landscape selected.":::
 
@@ -48,7 +48,7 @@ Experiment with your browser's settings until you get the look you like. Some br
 
    :::image type="content" source="./media/end-user-print/power-bi-dashboard-print-options.png" alt-text="Screenshot of the dropdown File menu expanded, and Print the page selected.":::
 
-1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your dashboard is wider than it is long, you might want to change the layout to **Landscape**.
+1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your dashboard is wider than it's long, you might want to change the layout to **Landscape**.
 1. Select **Print**.
 
     :::image type="content" source="./media/end-user-print/power-bi-print-dash.png" alt-text="Screenshot of the Print Window open and the print options displayed.":::
@@ -74,9 +74,8 @@ Experiment with your browser's settings until you get the look you like. Some br
 
 > [!TIP]
 > If you've followed all these steps and your tile still isn't displaying the way you want it to, try the following.
-
 > 1. Open the Print window and make the changes to the print settings that you believe will result in the best printout. For example, change the layout, margins, and scale.
-> 1. Select **Cancel**. Don't select **Print**.
+> 1. Select **Cancel** (instead of **Print**).
 > 1. Go through steps 1-5 again. Your tile will adjust to the new Print window settings and be ready to print.
 
 ## Print a report page
@@ -87,7 +86,7 @@ Reports can be printed one page at a time.
 
     :::image type="content" source="./media/end-user-print/power-bi-print-report.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
 
-1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your report is wider than it is long, you might want to change the layout to **Landscape**.
+1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your report is wider than it's long, you might want to change the layout to **Landscape**.
 1. Select **Print**.
 
 ## Print a report visual
@@ -98,9 +97,9 @@ Reports can be printed one page at a time.
 
 1. In the upper left corner, select **File** > **Print this page** to print the visual.
 
-    :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of Power Bi service File menu open and Print this page selected.":::
+    :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of the Power Bi service File menu open and Print this page selected.":::
 
-1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your report visual is wider than it is long, you might want to change the layout to **Landscape**.
+1. After the Print window for your browser opens, select the settings to fit your pint job. For example, if your report visual is wider than it's long, you might want to change the layout to **Landscape**.
 1. Select **Print**.
 
 ## Considerations and troubleshooting
@@ -109,13 +108,13 @@ Q: Why can't I print all the report pages at once?</br>
 A: Report pages can only be printed one page at a time.
 
 Q: Why can't I print to PDF?</br>
-A: You'll only see this option if you've already configured the PDF driver in your browser.
+A: You'll see this option only if you've already configured the PDF driver in your browser.
 
 Q: Why doesn't my browser match the screenshots when I select **Print**?</br>
 A: The Print screens vary by browser and software version.
 
 Q: Why am I having scaling and orientation issues (such as incorrect scaling or the dashboard doesn't fit on the page)?</br>
-A: We can't guarantee the printed copy will be exactly the same as it appears in the Power BI service. Things like scaling, margins, visual details, orientation, and size aren't controlled by Power BI. Try adjusting the print settings for your browser. Some of the print settings we suggest include page orientation (portrait or landscape), margin size, and scale. If these don't help, refer to the documentation for your specific browser.
+A: We can't guarantee the printed copy is exactly the same as it appears in the Power BI service. Things like scaling, margins, visual details, orientation, and size aren't controlled by Power BI. Try adjusting the print settings for your browser. Some of the print settings we suggest include page orientation (portrait or landscape), margin size, and scale. If these setting adjustments don't help, refer to the documentation for your specific browser.
 
 Q: Why don't I see the print option when I hover over the visual in full screen mode?</br>
 A: Go back to the dashboard or report in default view and reopen the visual in Focus mode and then Full screen mode.
