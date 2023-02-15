@@ -57,9 +57,9 @@ The following list describes the SQL Server Reporting Services versions supporte
 
 You can migrate .rdl files from Power BI Report Server as well.
 
-### Migration tool for Power BI Report Server and SQL Server 2022
+### Migration tool for Power BI Report Server and SQL Server Reporting Services 2017+
 
-If you're using Power BI Report Server or SQL Server 2022 Reporting Services, there's a built-in tool to publish its reports to Power BI. For more information, see [Publish .rdl files to Power BI](publish-reporting-services-power-bi-service.md).
+If you're using Power BI Report Server or SQL Server Reporting Services after SQL Server 2016, there's a built-in tool to publish its reports to Power BI. For more information, see [Publish .rdl files to Power BI](publish-reporting-services-power-bi-service.md).
 
 ### Migration tool for previous versions of SQL Server
 
