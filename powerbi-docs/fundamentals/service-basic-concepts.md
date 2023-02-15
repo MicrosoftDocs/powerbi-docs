@@ -183,7 +183,7 @@ You can't edit your workbook in Power BI. If you need to make some changes, you 
 
 ## A dashboard in My workspace
 
-We've covered workspaces and building blocks. Let's bring it together and review the pieces that make up the dashboard experience in the Power BI service.
+We've covered workspaces, apps, and building blocks. Let's bring it together and review the pieces that make up the dashboard experience in the Power BI service.
 
 :::image type="content" source="media/service-basic-concepts/power-bi-dashboard-identifier.png" lightbox="media/service-basic-concepts/power-bi-dashboard-identifier.png" alt-text="Screenshot of the Power BI service in a browser showing numbered features listed below.":::
 
