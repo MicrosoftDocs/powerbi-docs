@@ -12,7 +12,7 @@ ms.custom: intro-overview
 ---
 # Set up Power BI Embedded
 
-:::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 If you want to start using Power BI Embedded to share your reports with others, use the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup) to get started. This article shows you how.
 

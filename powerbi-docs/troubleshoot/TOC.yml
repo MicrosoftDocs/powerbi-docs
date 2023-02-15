@@ -7,6 +7,8 @@
     items:
     - name: Active known issues for Power BI
       href: known-issues/power-bi-known-issues.md  
+    - name: Paused visuals in Power BI Desktop Performance analyzer don't refresh
+      href: known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md
     - name: Working in a dataflow shows irrelevant upgrade workspace message
       href: known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md
     - name: Accessing Power BI app report is denied due to no dataset access
@@ -38,7 +40,7 @@
     - name: Try it button missing on REST API pages
       href: known-issues/known-issue-169-try-it-button-missing.md            
     - name: Long running, failed or stuck dataflow in Power BI Premium 
-      href: known-issues/known-issue-dataflow-on-premium-gen2.md   
+      href: known-issues/known-issue-dataflow-on-premium.md   
     - name: Unable to open protected Desktop files 
       href: known-issues/known-issue-unable-open-protected-desktop-file.md   
   - name: Troubleshoot

@@ -41,7 +41,7 @@ sections:
       - question: |
          What if I have questions about Power BI Premium?
         answer: |
-          For questions related to Power BI Premium, see [Power BI Premium FAQ](../enterprise/service-premium-gen2-faq.yml).
+          For questions related to Power BI Premium, see [Power BI Premium FAQ](../enterprise/service-premium-faq.yml).
           
       - question: |
          What is Power BI Desktop?
