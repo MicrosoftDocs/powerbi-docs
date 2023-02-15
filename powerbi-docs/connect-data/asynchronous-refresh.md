@@ -27,7 +27,7 @@ The Power BI Refresh Dataset REST API enables dataset-refresh operations to be c
 
 > [!NOTE]
 > * During preview, this feature was known as Asynchronous refresh with REST API. However, in Power BI, a standard refresh using the Refresh Dataset REST API by its inherent nature also runs asynchronously.
-> * Refresh operations performed by the enhanced refresh Power BI REST API, do not automatically refresh tile caches. Tile caches are only refreshed when a user accesses the report.
+> * Refresh operations performed by the enhanced refresh Power BI REST API do not automatically refresh tile caches. Tile caches are only refreshed when a user accesses the report.
 
 ## Base URL
 
@@ -229,6 +229,12 @@ Get Details and Cancel are new operations for enhanced refresh only. They aren't
 #### Power BI Embedded
 
 If a capacity is paused manually in the Portal or by using PowerShell, or a system outage occurs, if there's an on-going enhanced refresh operation the status of the refresh will stay in `In-Progress` for the maximum of six hours. If the capacity is resumed within six hours, the refresh operation will resume automatically. If the capacity is resumed after more than six hours, the refresh operation may return a time-out error. The refresh operation must then be run again.
+
+#### Refresh operation time limits
+
+The maximum amount of time for a *single refresh operation* is five hours. If the refresh operation does not successfully complete within the five-hour limit and `"retryCount"` is not specified, or `"retryCount": 0,` is specified in the request body, a timeout error is returned. If 1 or more is specified in `"retryCount"`, a new refresh operation with a five-hour limit is started. If subsequent retry operations fail, the service will continue to retry successful completion of a refresh operation up to the greater of the number of retries specified in `"retryCount"`, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh operation of the request.
+
+When determining your dataset refresh solution by using enhanced refresh with the Refresh Dataset REST API, it's important to keep these time limits and the retryCount parameter in mind. A successful completion of a refresh operation can exceed five hours if an initial refresh operation fails and 1 or more is specified in `"retryCount"`. For example, if you request a refresh operation with `"retryCount": 1,`, and the initial retry operation fails at four hours from start time, a second refresh operation for that request is attempted. If that second refresh operation succeeds in three hours, the total time for successful execution of the refresh request is seven hours. If refresh operations regularly fail, exceed the five-hour time limit, or exceed your desired successful refresh operation times, consider reducing the amount of data being refreshed from the data source, split refresh into multiple requests, for example, a request for each table, or try specifying partialBatch in the commitMode parameter.
 
 ## Troubleshooting
 

@@ -156,8 +156,8 @@ The following table describes the **schema**.
 | **TenantId** | | Unique identifier of Microsoft's Power BI tenant. This does not refer to the customer tenant. |
 | **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
 | **User** | User_s | The user on whose behalf the operation is running. Used when an end-user identity must be impersonated on the server. |
-| **VertipaqSEQueryBegin** |  | VertiPaq SE query.   |
-| **VertipaqSEQueryEnd** |  | VertiPaq SE query.   |
+| **VertipaqSEQueryBegin** |  | Vertipaq storage engine query start time.   |
+| **VertipaqSEQueryEnd** |  | Vertipaq storage engine query end time.   |
 | **WorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
 | **WorkspaceName** | ServerName_s | Name of the workspace containing the artifact. |
 | **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
