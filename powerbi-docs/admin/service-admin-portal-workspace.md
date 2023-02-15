@@ -1,6 +1,6 @@
 ---
-title: Workspace admin settings
-description: Learn how to configure Power BI workspace admin settings.
+title: Workspace tenant settings
+description: Learn how to configure Workspace tenant settings as the Power BI tenant admin.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
@@ -14,11 +14,11 @@ LocalizationGroup: Administration
 
 # Workspace tenant settings
 
-These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
+Workspaces are spaces you can create to collaborate with other users and can include collections of dashboards, reports, and paginated reports. Workspace tenant settings allow you to manage workspaces and determine who in an organization can create a workspace. These settings are configured in the tenant settings section of the Admin portal. For information about how to get to and use tenant settings, see [About tenant settings](service-admin-portal-about-tenant-settings.md).
 
 ## Create workspaces (new workspace experience)
 
-Workspaces are places where users collaborate on dashboards, reports, and other content. Power BI admins can use the **Create workspaces (new workspace experience)** setting to designate which users in the organization can create workspaces. Admins can let everybody or nobody in an organization create new workspace experience workspaces. Workspace creation can also be limited to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
+Power BI admins can use the **Create workspaces (new workspace experience)** setting to designate which users in the organization can create workspaces. Admins can let everybody or nobody in an organization create new workspace experience workspaces. Workspace creation can also be limited to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
 
 :::image type="content" source="media/service-admin-portal-workspace/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
 
@@ -72,6 +72,7 @@ Personal workspaces are the My workspaces that every user has for their personal
 To prevent such a scenario, the Power BI admin can turn off the **Users can reassign personal workspaces** tenant setting. When this setting is off, My workspace owners can't change the capacity assignment of their My workspace.
 
 To turn off the setting:
+
 1. Go to the Power BI Admin portal and select **Tenant settings**.
 1. In the tenant settings, scroll down to the **Workspace settings** section.
 1. Find the setting called **Users can reassign personal workspaces**. By default, this setting is on, which means that any My workspace owner can reassign their My workspace capacity. To prevent users from being able to reassign the capacity of their My workspace, turn the setting off.
