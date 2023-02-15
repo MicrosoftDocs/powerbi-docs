@@ -38,32 +38,33 @@ To define security roles using the enhanced row-level security editor:
 
 3. From the ribbon, select **Manage roles**.
 
-![Screenshot of the Manage roles button in the Desktop ribbon.](media/service-admin-rls/manage-roles-ribbon-button.png)
+:::image type="content" source="media/service-admin-rls/manage-roles-ribbon-button.png" alt-text="Screenshot of the Manage roles button in the Desktop ribbon.":::
 
 4. From the **Manage roles** window, select **New** to create a new role.
 
-![Screenshot of creating a new role in the enhanced row-level security editor.](media/service-admin-rls/enhanced-rls-new-role.png)
+:::image type="content" source="media/service-admin-rls/enhanced-rls-new-role.png" alt-text="Screenshot of creating a new role in the enhanced row-level security editor.":::
 
 5. Under **Roles**, provide a name for the role and select enter.
 
-![Screenshot of renaming a role in the enhanced row-level security editor.](media/service-admin-rls/enhanced-rls-rename-role.png)
+:::image type="content" source="media/service-admin-rls/enhanced-rls-rename-role.png" alt-text="Screenshot of renaming a role in the enhanced row-level security editor.":::
 
 6. Under **Select tables**, select the table you want to apply a row-level security filter to.
 
 7. Under **Filter data**, use the default editor to define your roles. The expressions created return a true or false value.
 
-![Screenshot of an example of using the default editor in the enhanced row-level security editor.](media/service-admin-rls/enhanced-rls-example-default-editor.png)
+:::image type="content" source="media/service-admin-rls/enhanced-rls-example-default-editor.png" alt-text="Screenshot of an example of using the default editor in the enhanced row-level security editor.":::
 
 >[!NOTE]
 > Not all row-level security filters supported in Power BI can be defined using the default editor. Limitations include expressions that today can only be defined using DAX including dynamic rules such as username() or userprincipalname(). To define roles using these filters switch to use the DAX editor.
 
 8. Optionally select **Switch to DAX editor** to switch to use the DAX editor to define your role. You can switch back to the default editor by selecting **Switch to default editor**. All changes made in either editor interface will persist when switching interfaces when possible.
 
-![Screenshot of an example of using the dax editor in the enhanced row-level security editor.](media/service-admin-rls/enhanced-rls-example-dax-editor.png)
+:::image type="content" source="media/service-admin-rls/enhanced-rls-example-dax-editor.png" alt-text="Screenshot of an example of using the dax editor in the enhanced row-level security editor.":::
 
 When defining a role using the DAX editor that cannot be defined in the default editor, if you attempt to switch to the default editor you will be prompted with a warning that switching editors may result in some information being lost. To keep this information simply select ‘Cancel’ and continue only editing this role in the DAX editor.
 
-![Screenshot of an example error dialog when switching from the DAX to default editor in enhanced row-level security editor.](media/service-admin-rls/enhanced-rls-parse-warning-dialog.png)
+:::image type="content" source="media/service-admin-rls/enhanced-rls-parse-warning-dialog.png" alt-text="Screenshot of an example error dialog when switching from the DAX to default editor in enhanced row-level security editor.":::
+
 
 9. Select **Save**
 
