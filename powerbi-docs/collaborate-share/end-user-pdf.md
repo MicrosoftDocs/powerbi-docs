@@ -62,7 +62,7 @@ If your report has a sensitivity label, the label and any encryption settings ca
 1. In Desktop, open the *.pbix* file that contains the report you want to export.
 1. After the report opens, select **File** > **Export** > **Export to PDF**.
 
-    :::image type="content" source="media/end-user-pdf/export-to-pdf-01.png" alt-text="Export to PDF from Desktop.":::
+    :::image type="content" source="media/end-user-pdf/export-to-pdf-01.png" alt-text="Screenshot showing export to PDF from Desktop.":::
 
 * Report pages that are currently not visible, such as any tooltips or hidden pages, aren't exported to the PDF file. 
 
