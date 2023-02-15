@@ -46,17 +46,19 @@ Sensitivity labels and file encryption **are not** applied in non-supported expo
 > [!NOTE]
 > Users who are granted access to a report are granted access to the entire underlying dataset, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data leaves Power BI via a supported export path such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Desktop). Only authorized users will be able to open protected files.
 
-### Supported export paths
+## Supported export paths
 
 Applying sensitivity labels and their associated protection to data that leaves the Power BI service is currently supported for the following export paths:
 
-* Export to Excel, PDF files (Service only), and PowerPoint.
+* Export to Excel, PDF files, and PowerPoint.
 * Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
 * PivotTable in Excel with a live connection to a Power BI dataset, for users with Microsoft 365 E3 and above.
 * Download to .pbix (Service)
 
 > [!NOTE]
 > When using **Download the .pbix** in the Power BI service, if the downloaded report and its dataset have different labels, the more restrictive label will be applied to the .pbix file.
+>
+> In Power BI Desktop, sensitivity label support in Export to PDF is a preview feature that is on by default. It is possible to turn it off. See [Desktop considerations and limitations](#power-bi-desktop) for more information. 
 
 ## How sensitivity labels work in Power BI
 
@@ -282,7 +284,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Temp files aren't encrypted.
 
-* **Export to PDF in Desktop** doesn't support sensitivity labels. In Desktop, if you export a file that has a sensitivity label to PDF, the PDF won't receive the label and no protection will be applied.
+* **Export to PDF in Desktop** supports sensitivity labels as a preview feature that is on by default. To turn off the preview feature, go to **File > Options and settings > Options > Preview features**, and uncheck **Enable setting sensitivity label on exported PDF**. If you turn off the preview feature, when you export a file that has a sensitivity label to PDF, the PDF won't receive the label and no protection will be applied.
 
 * If you overwrite a labeled dataset or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 
