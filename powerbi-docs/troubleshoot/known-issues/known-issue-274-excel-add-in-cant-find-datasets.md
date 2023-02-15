@@ -16,7 +16,7 @@ When using the Power BI datasets add-in for Excel Desktop or Excel Online, you m
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Excel Integration
 
-**Status:** Open
+**Status:** Fixed: February 9, 2023
 
 **Problem area:** Consume and View
 

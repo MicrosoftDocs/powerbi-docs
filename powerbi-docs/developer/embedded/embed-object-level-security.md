@@ -12,7 +12,7 @@ ms.date: 09/12/2022
 
 # Object level security
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
 This article explains how to embed Power BI content that uses OLS in a Power BI *App owns data* (embed for your customers) scenario.
 
