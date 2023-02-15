@@ -543,11 +543,11 @@
     - name: Parameters
       items:
       - name: Parameters
-        href: ../paginated-reports/report-builder-parameters.md
+        href: /power-bi/paginated-reports/parameters/report-builder-parameters
       - name: Report parameter concepts in paginated reports
         href: ../paginated-reports/parameters/report-parameters-concepts-report-builder.md
       - name: Create parameters
-        href: ../paginated-reports/paginated-reports-parameters.md
+        href: /power-bi/paginated-reports/parameters/paginated-reports-create-parameters
       - name: Create parameters
         href: ../paginated-reports/parameters/paginated-reports-create-parameters.md
       - name: URL parameters in paginated reports

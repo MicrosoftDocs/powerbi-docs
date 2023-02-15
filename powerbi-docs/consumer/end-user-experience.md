@@ -64,7 +64,7 @@ A workspace is much more than a simple listing of content. On this page, you can
 
 ![Screenshot showing App workspace screen with More actions menu displayed for the report.](./media/end-user-experience/power-bi-more-action.png)
 
-From a workspace, you can open a dashboard or report by selecting it from the list.  You can favorite a dashboard or report by hovering and selecting the star icon. If a workspace *owner* gave you [sharing permissions](end-user-shared-with-me.md), you can share from here as well. 
+From a workspace, you can open a dashboard or report by selecting it from the list.  You can favorite a dashboard or report by hovering and selecting the star icon. If a workspace *owner* gave you [sharing permissions](/power-bi/collaborate-share/end-user-shared-with-me), you can share from here as well. 
 
 Learn more about [Workspaces](end-user-workspaces.md).
 
