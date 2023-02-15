@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: tenant-setting
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 02/20/2023
 LocalizationGroup: Administration
 ---
 
@@ -37,7 +37,7 @@ In the admin portal, you also control which users have permissions to distribute
 
 ## Use datasets across workspaces
 
-Admins can control which users in the organization can use datasets across workspaces. When this setting is enabled, users still need the required Build permission for a specific dataset.
+Admins can control which users in the organization can use datasets across workspaces. When this setting is on, users still need the required Build permission for a specific dataset.
 
 :::image type="content" source="media/service-admin-portal-workspace/power-bi-admin-datasets-workspaces.png" alt-text="Use datasets across workspaces":::
 
@@ -53,6 +53,17 @@ Additional notes on deletion of empty workspaces:
 
 - Only empty v1 workspaces will be deleted during upgrade. Empty v2 workspaces will not be deleted. Deletion of empty workspaces can be prevented by using the tenant setting described previously in this article.
 - Office 365 groups associated with empty v1 workspaces will not be deleted.Read more about the [new workspace experience workspaces](../collaborate-share/service-new-workspaces.md).
+
+## Block notifications for scheduled workspace upgrades
+
+This setting stops email notifications from being sent to your organization when classic workspaces are upgraded.
+
+To turn off the setting:
+
+1. Go to the Power BI Admin portal and select **Tenant settings**.
+1. In the tenant settings, scroll down to the **Workspace settings** section.
+1. Find the setting called **Block notifications for scheduled workspace upgrades**. By default, this setting is off, which means that members of your organization will get notifications when classic workspaces are upgraded. To prevent users from receiving these notifications, turn the setting on.
+
 
 ## Users can reassign personal workspaces 
 
