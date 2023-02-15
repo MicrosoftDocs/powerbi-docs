@@ -41,7 +41,7 @@ You can enable or disable the check in the user interface in Power BI Desktop. O
 
 **Basic check** is the default selection.
 
-:::image type="content" source="media/desktop-certificate-revocation/desktop-check-certificate-revocation.png" alt-text="Screenshot of the check certification revocation dialog box.":::
+:::image type="content" source="media/desktop-certificate-revocation/desktop-check-certificate-revocation-2.png" alt-text="Screenshot of the check certification revocation dialog box.":::
 
 ## In registry settings
 
