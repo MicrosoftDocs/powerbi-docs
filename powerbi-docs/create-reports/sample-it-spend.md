@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 06/03/2022
+ms.date: 02/15/2023
 LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
@@ -22,27 +22,27 @@ This tutorial explores the IT Spend Analysis built-in sample in the Power BI ser
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service. 
 
+## Prerequisites
+
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your My workspace. 
+
 ## Get the sample
 
- Before you can use the sample, you must first [download it in the service](#get-the-built-in-sample), or as a [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+ Before you can use the sample, you must first [get the built-in sample in the service](#get-the-built-in-sample), or as a [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the built-in sample
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+ Before you can use the sample, you must first [get the built-in sample in the service](#get-the-built-in-sample), or as a [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
-   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
+## Get the built-in sample
 
-2. In the bottom-left corner, select **Get data**.
-   
-   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+1. Open the Power BI service (app.powerbi.com), and select **Learn** in the left nav.
 
-3. On the **Get Data** page that appears, select **Samples**.
+1. On the Learning center page, under **Sample reports**, scroll until you see the **IT Spend Analysis sample**.
+
+1. Select the sample. It opens in Reading mode.
    
-4. Select **IT Spend Analysis Sample**, then choose **Connect**.  
-  
-   ![Connect to sample](media/sample-it-spend/it-connect.png)
-   
-5. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
    
    ![IT Spend Analysis Sample entry](media/sample-it-spend/it-spend-analysis-sample-entry.png)
   
