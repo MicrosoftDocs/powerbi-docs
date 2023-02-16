@@ -278,6 +278,10 @@ Other than `name`, everything else is optional, which means you're free to only 
 
 This GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/mattrudy/PowerBI-ThemeTemplates/blob/master/README.md).
 
+### JSON Theme Builder
+
+This website provides a free tool to build JSON theme files using all the latest visual properties [Theme Generator](https://themes.powerbi.tips).
+
 ### Set theme colors
 
 Under `name`, you can add the following basic data color-related properties:
