@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 02/15/2023
+ms.date: 02/16/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -308,14 +308,15 @@ If Azure Private Link is properly configured and **Block public Internet access*
 
 * Power BI is only accessible for your organization from private endpoints, and is not accessible from the public Internet.
 * Traffic from the virtual network targeting endpoints and scenarios that support private links are transported through the private link.
-* Traffic from the virtual network targeting endpoints and scenarios that do *not* support private links will be blocked by the virtual network, and will not work.
+* Traffic from the virtual network targeting endpoints and scenarios that do *not* support private links will be blocked by the service, and will not work.
 
 If Azure Private Link is properly configured and **Block public Internet access** is **disabled**:
 
+* Traffic from the public Internet will be allowed by Power BI services
 * Traffic from the virtual network targeting endpoints and scenarios that support private links are transported through the private link.
 * Traffic from the virtual network targeting endpoints and scenarios that do *not* support private links are transported through the public Internet, and will be allowed by Power BI services.
 * If the virtual network is configured to block public Internet access, scenarios which do not support private links will be blocked by the virtual network, and will not work.
-* If a Power BI private link is *not* completely and correctly configured, all traffic will be transported through the public Internet and be allowed by Power BI services.
+
 
 
 ## Considerations and limitations
