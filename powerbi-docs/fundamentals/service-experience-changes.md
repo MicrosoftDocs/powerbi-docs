@@ -5,6 +5,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'kdholakia'
 ms.service: powerbi
+ms.search.form: product-power-bi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 07/08/2022
