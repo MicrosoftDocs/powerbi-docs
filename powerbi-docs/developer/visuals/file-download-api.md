@@ -19,7 +19,7 @@ The **file download API** lets users download data from a custom visual into a f
 >[!NOTE]
 >The `exportVisualsContent` method is available from version 5.3.
 
-The **file download API** can export to files of the following types:
+Use this API to export to files of the following types:
 
 * .txt
 * .csv
