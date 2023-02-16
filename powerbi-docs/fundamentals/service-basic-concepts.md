@@ -52,19 +52,28 @@ By default, workspaces are created in a shared capacity. In shared capacity, wor
 
 ## Workspaces
 
-Workspaces are created on capacities. Essentially, they are containers for dashboards, reports, workbooks, datasets, and dataflows in Power BI.
+Workspaces are created on capacities. Essentially, they are containers for dashboards, reports, apps, workbooks, datasets, and dataflows in Power BI.
 
 There are two types of workspaces: *My workspace* and *workspaces*.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in a workspace.
 
-- *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, each workspace member needs a Power BI Pro or Premium Per User (PPU) license. For more information about workspaces, see [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md).
+- *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, apps, workbooks, and datasets. With one exception*, each workspace member needs a Power BI Pro or Premium Per User (PPU) license.
 
-  Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that will make up a Power BI app. So what is an *app*? It's a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro or Premium Per User (PPU) licenses.  
+  - For more information about workspaces, see [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md).
+  - For more information about licenses, see [Power BI service per-user and capacity-based licenses](service-features-license-type.md).
+
+  Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that will make up a Power BI app (see [the following section](#apps)).
 
 For more information about sharing in general, see [Ways to collaborate and share in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Now, on to the five Power BI building blocks.
+Now, on to the Power BI building blocks.
+
+## Apps
+
+An *app* is a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro or Premium Per User (PPU) licenses. An app can have permissions that are different than the permissions set on a workspace. This capability makes it easier for designers to manage permissions on an app.
+
+Apps are an easy way for designers to share many types of content at one time. App designers create dashboards and reports and then bundle them together into an app. The designers share or publish the app to a location where the business user can access it. It's easier to find and install content in the Power BI service or on a mobile device when it's organized together as an app. After installing an app, the business user doesn't have to remember the names of several dashboards or reports because they're all together in one app. They can easily access the app in a browser or on a mobile device.
 
 ## Dataflows
 
@@ -116,7 +125,13 @@ There are two modes to view and interact with reports: *Reading view* and *Editi
 
 When you open a workspace, the associated reports are listed under the **Content** tab. Each listed report represents one or more pages of visualizations based on only one of the underlying datasets. To open a report, select it.
 
-When you open an app, you're presented with a dashboard. To access an underlying report, select a dashboard tile (more on tiles later) that was pinned from a report. Keep in mind that not all tiles are pinned from reports, so you might have to select a few tiles to find a report.
+When you open an app, you're presented with a dashboard or a report. If the app opens a dashboard, to access the underlying report, select a dashboard tile (more on tiles later) that was pinned from a report. Keep in mind that not all tiles are pinned from reports, so you might have to select a few tiles to find a report.
+
+:::image type="content" source="media/service-basic-concepts/power-bi-app-dashboard.png" alt-text="Screenshot of an app that has opened to a dashboard.":::
+
+If the app opens to a report, you'll see a list of report pages (and optionally a dashboard) along the left side.
+
+:::image type="content" source="media/service-basic-concepts/power-bi-app-report.png" alt-text="Screenshot of an app that has opened to a report.":::
 
 By default, the report opens in Reading view. Just select **Edit report** to open it in Editing view (if you have the necessary permissions).
 
@@ -149,7 +164,11 @@ Why do people create dashboards?  Here are just some of the reasons:
 - To monitor the health of a business or product or business unit or marketing campaign, and more.
 - To create a personalized view of a larger dashboard&mdash;all the metrics that matter to you.
 
-When you open a workspace, the associated dashboards are listed under the **Content** tab. To open a dashboard, select it. When you open an app, you'll be presented with a dashboard. Each dashboard represents a customized view of some subset of the underlying datasets. If you own the dashboard, you'll also have edit access to the underlying datasets and reports. If the dashboard was shared with you, you'll be able to interact with the dashboard and any underlying reports, but won't be able to save any changes.
+When you open a workspace, the associated dashboards are listed under the **Content** tab.
+
+:::image type="content" source="media/service-basic-concepts/power-bi-workspace-dashboard.png" alt-text="Screenshot of a workspace that includes dashboards.":::
+
+To open a dashboard, select it. When you open an app, you'll be presented with a dashboard or a report. Each dashboard represents a customized view of some subset of the underlying datasets. If you own the dashboard, you'll also have edit access to the underlying datasets and reports. If the dashboard was shared with you, the actions you can take will depend on the permissions assigned by the owner.
 
 There are many different ways that you, or a colleague, can [share a dashboard](../collaborate-share/service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and might be required for viewing a shared dashboard.
 
@@ -183,13 +202,13 @@ You can't edit your workbook in Power BI. If you need to make some changes, you 
 
 ## A dashboard in My workspace
 
-We've covered workspaces and building blocks. Let's bring it together and review the pieces that make up the dashboard experience in the Power BI service.
+We've covered workspaces, apps, and building blocks. Let's bring it together and review the pieces that make up the dashboard experience in the Power BI service.
 
 :::image type="content" source="media/service-basic-concepts/power-bi-dashboard-identifier.png" lightbox="media/service-basic-concepts/power-bi-dashboard-identifier.png" alt-text="Screenshot of the Power BI service in a browser showing numbered features listed below.":::
 
 ### 1. **Navigation pane**
 
-Use the nav pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, workbooks, and datasets.  
+Use the nav pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, apps, workbooks, and datasets.  
 
   :::image type="content" source="media/service-basic-concepts/power-bi-navigation-new.png" alt-text="Screenshot of Power BI service navigation pane.":::
 
@@ -198,7 +217,7 @@ Use the nav pane to locate and move between your workspaces and the Power BI bui
 - Explore the datasets in your org to find the data that suits your needs by selecting **Data hub**.
 - Track key business metrics by selecting **Metrics**.
 - View, open, or delete an app by selecting **Apps**.
-- Access your hub for all Power BI training by selecting **Learn**.
+- Access your hub for all Power BI training and samples by selecting **Learn**.
 - Display and open your collaborative workspaces by selecting **Workspaces**.
 - Display and open your personal workspace by selecting **My workspaces**.
 
