@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to an Image File (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the Image rendering extension renders a Power BI paginated report to a bitmap or metafile. The default is a TIFF file viewable in multiple pages.
-ms.date: 10/02/2023
+ms.date: 02/14/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
