@@ -1,6 +1,6 @@
 ---
 title: Create linked metrics in the Power BI service
-description: 
+description: With linked metrics, you can show the same metric on multiple scorecards, across multiple workspaces. All check-ins, edits, and updates are reflected in all the metric locations.
 author: aphilip94
 ms.author: anphil
 ms.reviewer: ''
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 02/16/2023
 ---
 
-# Create linked metrics in the Power BI service (Preview)
+# Create linked metrics in the Power BI service (preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -33,11 +33,11 @@ Say you have build access to a scorecard, meaning you can build content with the
 
 1. Select the scorecard that contains the metric you’d like to link from the list provided.
 
-    ![Screenshot of list of scorecards.](media/service-metrics-linked-metrics/linked-goals-2.png)](media/service-metrics-linked-metrics/linked-goals-2.png#lightbox)
+    :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-2.png" alt-text="Screenshot of list of scorecards." lightbox="media/service-metrics-linked-metrics/linked-goals-2.png":::
 
 1. Select the metric(s) you’d like to include in this scorecard.
 
-    ![Screenshot of selecting the metric to link.](media/service-metrics-linked-metrics/linked-goals-3.png)](media/service-metrics-linked-metrics/linked-goals-3.png#lightbox)
+    [ ![Screenshot of selecting the metric to link.](media/service-metrics-linked-metrics/linked-goals-3.png)](media/service-metrics-linked-metrics/linked-goals-3.png#lightbox)
 
 1. Select **Continue**. The linked metric(s) appear on this scorecard.
 
@@ -55,11 +55,11 @@ Edits are reflected in all scorecards that contain the linked metric.
 
 You can see the name and link to the source scorecard in the Details pane.
 
-![Screenshot showing details of the linked metric in Details pane.](media/service-metrics-linked-metrics/linked-goals-5.png)](media/service-metrics-linked-metrics/linked-goals-5.png#lightbox)
+[ ![Screenshot showing details of the linked metric in Details pane.](media/service-metrics-linked-metrics/linked-goals-5.png)](media/service-metrics-linked-metrics/linked-goals-5.png#lightbox)
    
 You can also see this information in the Connections pane.
 
-![Screenshot showing details of the linked metric in Connections pane.](media/service-metrics-linked-metrics/linked-goals-6.png)](media/service-metrics-linked-metrics/linked-goals-6.png#lightbox)
+![Screenshot showing details of the linked metric in Connections pane.](media/service-metrics-linked-metrics/linked-goals-6.png)
 
 ## Linked metrics considerations
 
