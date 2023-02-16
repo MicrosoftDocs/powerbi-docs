@@ -35,12 +35,18 @@ Before the download begins, a window will pop up asking to confirm that the visu
 
 ## How to use the file download API
 
-The `exportVisualsContent` method has four parameters:
+The `exportVisualsContent` method is available from version 5.3.
+This method has four parameters:
 
 * content: string
 * filename: string
 * fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
 * fileDescription: string
+
+Its return value is a promise which will be resolved with a result of type `ExportContentResultInfo` which contains the following:
+
+* downloadCompleted – if the download completed successfully.
+* filename – the exported file name.
 
 ## Example: file download API
 
@@ -52,26 +58,49 @@ import IDownloadService = powerbi.extensibility.IDownloadService;
 
 export class Visual implements IVisual {
     ...
-    private new_em: HTMLElement;
-    private static downloadService: IDownloadService;
+    private downloadService: IDownloadService;
     ...
 
     constructor(options: VisualConstructorOptions) {
-         Visual.downloadService = options.host.downloadService;
+        this.downloadService = options.host.downloadService;
          ...
-         this.new_em.onclick = () => {
-            let contentXlsx: string = ...;//content in base64
-            Visual.downloadService.exportVisualsContent(contentXlsx, "myfile.xlsx", "base64","xlsx file");
 
+        const downloadBtn: HTMLElement = document.createElement("button");
+        downloadBtn.onclick = () => {
+            let contentXlsx: string = ...;//content in base64
             let contentTxt: string = ...;
-            Visual.downloadService.exportVisualsContent(contentTxt, "mytxt.txt", "txt","txt file");
+            this.downloadService.exportVisualsContent(contentTxt, "mytxt.txt", "txt", "txt file").then((result) => {
+                if (result) {
+                    //do something
+                }
+            }).catch(() => {
+                //handle error
+            });
+
+            this.downloadService.exportVisualsContent(contentXlsx, "myfile.xlsx", "base64", "xlsx file").then((result) => {
+                if (result) {
+                    //do something
+                }
+            }).catch(() => {
+                //handle error
+            });
+
+            this.downloadService.exportVisualsContentExtended(contentXlsx, "myfile.xlsx", "base64", "xlsx file").then((result) => {
+                if (result.downloadCompleted) {
+                    //do something
+                    console.log(result.fileName);
+                }
+            }).catch(() => {
+                //handle error
+            });
+        };
     }
 }
 ```
 
 ## Considerations and limitations
 
-The size limit for a downloaded file size is 10 MB.
+The size limit for a downloaded file size is 30 MB.
 
 ## Next steps
 
