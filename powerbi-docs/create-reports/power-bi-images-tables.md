@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 02/16/2023
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
@@ -30,6 +30,13 @@ A good way to enhance your reports is to add images to them. Static images on th
 1. Add the column to a table, matrix, slicer, or multi-row card.
 
     ![Screenshot of a slicer with example images.](media/power-bi-images-tables/power-bi-url-images-slicer.png)
+
+### Format the images
+
+1. In the **Visualizations** pane, select the paintbrush icon to format the images. 
+1. On the **Visual** tab, expand **Image size**, and set **Height** and **Width**.
+
+    :::image type="content" source="media/power-bi-images-tables/image-size-height-width.png" alt-text="Screenshot showing setting image height and width.":::
 
 ### Add images from OneDrive
 
