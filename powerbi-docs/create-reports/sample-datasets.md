@@ -34,7 +34,7 @@ Our online documentation uses these same samples in tutorials and examples, so y
 
 The following image shows the Sales & Returns sample report.
 
-:::image type="content" source="media/sample-datasets/sales-returns-sample-pbix.png" alt-text="Sales & Returns sample .pbix file":::
+:::image type="content" source="media/sample-datasets/sales-returns-sample-pbix.png" alt-text="Sales & Returns sample .pbix file" lightbox="media/sample-datasets/sales-returns-sample-pbix.png" border="true":::
 
 Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drillthrough, conditional formatting, what-if, and customized tooltips.
 
@@ -56,7 +56,7 @@ Eight original samples are available for you to use. Each sample represents a di
 
 The company obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft teamed up to create samples for you to use with Power BI. The samples use anonymized data. The samples represent different industries: finance, HR, sales, and more.
 
-![Screenshot shows some available samples in the Learning center page.](media/sample-datasets/power-bi-samples.png)
+:::image type="content" source="media/sample-datasets/power-bi-samples.png" alt-text="Screenshot shows some available samples in the Learning center page." lightbox="media/sample-datasets/power-bi-samples.png" border="true":::
 
 Several of these samples are available in several formats: as a built-in sample, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them, don't worry. This article explains it all.
 
@@ -139,17 +139,17 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 
 1. Select **Learn** in the left nav.
 
-   ![Screenshot shows the Learning center, where you can get samples.](media/sample-datasets/get-data-samples.png)
+   :::image type="content" source="media/sample-datasets/get-data-samples.png" alt-text="Screenshot shows the Learning center, where you can get samples." lightbox="media/sample-datasets/get-data-samples.png" border="true":::
 
 1. On the Learning center page, under **Sample reports**, scroll until you see a sample you want to open.
   
-   ![Screenshot shows a highlighted sample.](media/sample-datasets/power-bi-connect.png)
+   :::image type="content" source="media/sample-datasets/power-bi-connect.png" alt-text="Screenshot shows a highlighted sample.":::
 
 1. Select the sample. It opens in Reading mode.
 
 1. Power BI imports the built-in sample and adds a new dashboard, report, and dataset to your current workspace. Use the samples to take Power BI for a test run.  
 
-   ![Screenshot shows the new content in a workspace.](media/sample-datasets/power-bi-retail-analysis-workspace.png)
+   :::image type="content" source="media/sample-datasets/power-bi-retail-analysis-workspace.png" alt-text="Screenshot shows the new content in a workspace." lightbox="media/sample-datasets/power-bi-retail-analysis-workspace.png" border="true":::
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the built-in samples or just open the Power BI service and explore.
 
