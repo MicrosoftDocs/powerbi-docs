@@ -56,14 +56,14 @@ If a text item, like a dataset, is different, hover over it to see the **Change 
 
 :::image type="content" source="./media/deployment-pipelines-compare/granular-change-button.png" alt-text="Screenshot showing the change review button next to an item.":::
 
-If the only difference between the two items is settings changes, like the name or sensitivity label, the button is disabled. If there are changes to the schema, you can select it to see a detailed, granular comparison of the two items.
+If the only difference between the two items is settings changes, like the name or sensitivity label, or if the [item type isn't supported](#considerations-and-limitations) yet, the button is disabled. If there are changes to the schema, you can select it to see a detailed, granular comparison of the two items.
 
 When you select the **Change review** button, a pop-up window opens with a line by line comparison of the item's content as it currently looks in the two stages being compared. This content may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
 
 On top of the screen, you'll see:
 
 1. The workspace name followed by name of the item as it appears in the source (*to be deployed*) stage.
-1. The number of total differences (in black) between the items. This number is broken down to show the total number of additions (green) and deletions (red).
+1. The total number of changes made to the file in the "to be modified" stage (green) and the "to be deployed" stage (red).
 1. Up and down arrows that take you to the previous or next difference in the file.
 1. A navigation bar on the right side with red or green bars highlighting where the changes are in the file.
 1. Buttons that toggle between a side by side view and an inline view of the changes.
@@ -73,7 +73,7 @@ On top of the screen, you'll see:
 
 :::image type="content" source="./media/deployment-pipelines-compare/changes-side-by-side-numbered.png" alt-text="Screenshot showing a side by side view of the changes made to the file.":::
 
-### [inline view](#tab/visual-studio)
+### [Inline view](#tab/visual-studio)
 
 :::image type="content" source="./media/deployment-pipelines-compare/changes-inline-numbered.png" alt-text="Screenshot showing an inline view of the changes made to the file.":::
 
@@ -81,19 +81,21 @@ On top of the screen, you'll see:
 
 ### Review changes line by line
 
-When the item's content is displayed side by side, the code area is split in two:
+When the item's content is displayed *side by side*, the code area is split in two:
 
-- On the **left** is the item's content in the *target* stage of the deployment. This is the stage being modified. Its content will be overridden.
-- On the **right** is the item's content in the *source* stage of the deployment. This is the stage being deployed. Its content will be applied.
+- On the **left** is the item's content in the *target* stage of the deployment. This is the stage that will be modified at the next deployment. Its content will be overridden.
+- On the **right** is the item's content in the *source* stage of the deployment. This is the stage that will be deployed. Its content will be applied.
 - The lines on each side appear in the same order, so each line is shown against its equivalent in the compared stage.
 
-The inline comparison view shows each line in the *target* (to be modified) stage underneath its equivalent in the *source* (To be deployed) stage.
+The *inline* comparison view, as opposed to the side by side view, shows each line in the *target* (to be modified) stage underneath its equivalent in the *source* (To be deployed) stage.
 
 When the item's content is displayed for comparison, whether inline or side by side, the differences are highlighted as follows:
 
-- The file content lines are numbered and those lines that were changed are highlighted in green or red with a + or - sign next to the line number.
-- Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They're highlighted in **red**.
-- Changes shown in the *To be deployed* stage are the new values that will be applied during the next deployment. They're highlighted in **green**.
+- The file content lines are numbered and those lines that were changed are marked as follows:
+
+  -  Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They're highlighted in **red** with a '-' sign next to the number.
+  - Changes shown in the *To be deployed* stage are the new values that will be applied during the next deployment. They're highlighted in **green** with a '+' sign next to the number.
+  
 - In the modified lines, the specific characters that were added or deleted are highlighted in a darker shade.
 
 ### File modifications before comparison
