@@ -23,7 +23,7 @@ To follow, hover over the metric in the scorecard to select the **Follow metric*
 
 To see all your followed metrics, go to the Metrics hub and select **Following**.
 
-:::image type="content" source="media/service-metrics-follow/following-metrics.png" alt-text="Screenshot of followed metrics in Metrics hub.":::
+:::image type="content" source="media/service-metrics-follow/following-metrics.png" alt-text="Screenshot of followed metrics in Metrics hub." lightbox="media/service-metrics-follow/following-metrics.png":::
 
 Once you follow a metric, you'll get Teams notifications whenever the metric definition is updated, a check-in is added, or an automated status rule changes the status of the metric. Read more about [notifications in Teams](../collaborate-share/service-teams-notifications.md).
 
