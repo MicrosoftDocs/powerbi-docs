@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to a PDF File (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the PDF rendering extension renders Power BI paginated reports to files that can be opened in Adobe Acrobat and other third-party PDF viewers.
-ms.date: 10/02/2023
+ms.date: 02/14/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
