@@ -432,6 +432,8 @@
       href: service-metrics-status-rules.md
     - name: "Stay on top of your metrics"
       href: service-goals-check-in.md        
+    - name: "Follow your metrics"
+      href: service-metrics-follow.md        
     - name: "Set metric-level permissions"
       href: service-goals-set-permissions.md
     - name: "Arrange metrics and columns in scorecards"

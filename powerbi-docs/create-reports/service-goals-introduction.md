@@ -26,15 +26,16 @@ This article covers the basics of using metrics in the Power BI service. See the
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)
 - [Stay on top of your metrics in the Power BI service](service-goals-check-in.md)
+- [Follow your metrics](service-metrics-follow.md)
 - [Keep on top of your metrics on the go in the Power BI mobile apps, too](../consumer/mobile/mobile-apps-metrics.md)
 - [Protect your scorecards with goal-level permissions](service-goals-set-permissions.md)
 - [Arrange metrics and columns in scorecards](service-goals-move.md)
 - [Customize statuses in scorecards](service-goals-custom-status.md)
 - [Get notifications in Teams about changes to metrics](../collaborate-share/service-teams-notifications.md#metrics-notifications)
 
-## License requirements 
+## License requirements
 
-Metrics are a Pro feature. Users can access various aspects of the experience depending on their license. 
+Metrics are a Pro feature. Users can access various aspects of the experience depending on their license.
 
 |Permission  |Minimum requirements  |
 |---------|---------|
