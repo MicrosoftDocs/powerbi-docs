@@ -16,7 +16,7 @@ You may see a warning message telling you to upgrade to a Premium workspace even
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Power BI Service :::image type="icon" source="../../includes/media/yes-icon.svg" border="false"::: Dataflow
 
-**Status:** Open
+**Status:** Fixed: February 9, 2023
 
 **Problem area:** Create and Author Data
 
