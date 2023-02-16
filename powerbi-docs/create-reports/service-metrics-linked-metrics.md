@@ -55,11 +55,11 @@ Edits are reflected in all scorecards that contain the linked metric.
 
 You can see the name and link to the source scorecard in the Details pane.
 
-[ ![Screenshot showing details of the linked metric in Details pane.](media/service-metrics-linked-metrics/linked-goals-5.png)](media/service-metrics-linked-metrics/linked-goals-5.png#lightbox)
+:::image type="content" source="media/service-metrics-linked-metrics/linked-goals-5.png" alt-text="Screenshot showing details of the linked metric in Details pane.":::
    
 You can also see this information in the Connections pane.
 
-![Screenshot showing details of the linked metric in Connections pane.](media/service-metrics-linked-metrics/linked-goals-6.png)
+:::image type="content" source="media/service-metrics-linked-metrics/linked-goals-6.png" alt-text="Screenshot showing details of the linked metric in Connections pane.":::
 
 ## Linked metrics considerations
 
