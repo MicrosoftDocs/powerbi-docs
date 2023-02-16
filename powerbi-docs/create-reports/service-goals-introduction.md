@@ -19,6 +19,8 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
 :::image type="content" source="media/service-goals-introduction/power-bi-metrics-hub.png" alt-text="Screenshot of Metrics page with metrics, scorecards, and samples.":::
 
+## More articles about metrics
+
 This article covers the basics of using metrics in the Power BI service. See the other articles about metrics for more detail:
 
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
@@ -48,6 +50,7 @@ After you sign in to the Power BI service, select Metrics from the navigation pa
 
 :::image type="content" source="media/service-goals-introduction/power-bi-metrics-new-home.png" alt-text="Screenshot of The new, empty Metrics home page.":::
 
+
 ### Recommended
 
 The top section contains all the metrics that matter the most to you, and the scorecard samples. Power BI curates these metrics automatically, based on metrics that you're assigned to, you've edited, or you've performed a recent check-in. If you don't have any scorecards yet, you see the samples there.
@@ -70,14 +73,19 @@ The next section is a tabbed list.
 - **Shared with me** contains scorecards that your colleagues have shared with you. 
 - **All scorecards** lists all the scorecards you have access to. 
 
+## Change the scorecard view
+
+When you're viewing your scorecard, you can also change the view from **List view** to **Compact view**, which is currently in preview.
+
+:::image type="content" source="media/service-goals-introduction/metrics-compact-view.png" alt-text="Screenshot showing Compact view menu item.":::
+
+Compact view adjusts to various screen sizes and supports resizing columns. You can do everything you can do in list view, except editing and creating a new metric.
 
 ## Frequently asked questions (FAQ)
-
 
 **Why don’t I see history for my metric when I connect to a Power BI data point?**
 
 You don’t see a history for a single data point because we only pull history for time series data. To see the history of your metric when you connect to time series data, select **Track all data in this time series** when you connect. 
-
 
 **I'm connecting to time series data and still don’t see the history of the metric. Why not?**
 
