@@ -34,7 +34,7 @@ This article covers the basics of using metrics in the Power BI service. See the
 
 ## License requirements 
 
-Metrics is a Pro feature. Users can access various aspects of the experience depending on their license. 
+Metrics are a Pro feature. Users can access various aspects of the experience depending on their license. 
 
 |Permission  |Minimum requirements  |
 |---------|---------|
@@ -89,14 +89,14 @@ You don’t see a history for a single data point because we only pull history f
 
 **I'm connecting to time series data and still don’t see the history of the metric. Why not?**
 
-We don't pull in the history of time series if we only have a partial date (day of the week, month, etc.) We can only pull in the history of a time series when we have a full date to track (day, month, and year).  
+We don't pull in the history of time series if we only have a partial date, for example, day of the week or month. We can only pull in the history of a time series when we have a full date to track, such as day, month, and year.  
 
 **Why aren't my metrics getting updated over time in my scorecard?**
 
 There are a few reasons why your metric may not be getting updated:
 
 - It’s a manual metric: Manual metrics aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual metric, do regular check-ins.
-- You don't have scheduled refresh for the dataset: Metric values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you won't see any updates in the metric value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+- You don't have scheduled refresh for the dataset: Metric values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you don't see any updates in the metric value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
 - Metrics don’t get updated if they're created from a push dataset. 
 
 **I'm trying to create a metric but I can’t connect to a report. Why do I see a yellow warning icon?**
@@ -113,7 +113,7 @@ You can only update values in manual metrics.  If a metric value is connected to
 
 **How often do metrics update in the scorecard?**
 
-Metrics only update as often as the data updates in the dataset.  We support connecting via import, live connection, and DirectQuery.  Additionally, we take snapshots of the metrics data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying dataset we create, which you can then build content on top of. 
+Metrics only update as often as the data updates in the dataset.  We support connecting via import, live connection, and DirectQuery.  Additionally, we take snapshots of the metrics data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying dataset we create, which you can then build content on top of.
 
 **I changed the tracking cycle of my metric. Why does the data still look the same?**
 
@@ -123,7 +123,7 @@ Changing the tracking cycle only changes the trend that you see below your value
 
 In order to create a scorecard in a workspace, you need a contributor or owner role in that workspace. Learn about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md). 
 
-Scorecards do have metric-level permissions roles. While workspace permissions give view or build access to the workspace, metric-level permissions restrict access so that certain people can only see certain metrics and perform check-ins within a scorecard. Read more about [metric-level permissions in scorecards](service-goals-set-permissions.md).
+Scorecards do have metric-level permissions roles. While workspace permissions give view or build access to the workspace, metric-level permissions restrict access. Certain people can only see certain metrics and perform check-ins within a scorecard. Read more about [metric-level permissions in scorecards](service-goals-set-permissions.md).
 
 ## Issues and limitations 
   
