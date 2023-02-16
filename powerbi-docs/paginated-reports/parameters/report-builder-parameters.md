@@ -8,7 +8,7 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 01/04/2023
+ms.date: 02/16/2023
 ---
 
 # Report parameters in Power BI Report Builder
@@ -41,7 +41,7 @@ When you view a report that has parameters, the report viewer toolbar displays e
   
 1. **Parameters pane**. The report viewer toolbar displays a prompt and default value for each parameter. You can customize the layout of parameters in the parameters pane.  
   
-2. **@SalesDate parameter**. The parameter **@SalesDate** is data type **DateTime**. The prompt **Select the Date** appears next to the text box. To modify the date, type a new date in the text box or use the calendar control.  
+2. **@SalesDate parameter**. The parameter **@SalesDate** is data type **DateTime**. The prompt **Select the Date** appears next to the text box. To modify the date, type a new date in the text box, use the calendar control, or select **Go to today**.  
   
 3. **@ShowAll parameter**. The parameter **@ShowAll** is data type **Boolean**. Use the radio buttons to specify **True** or **False**.  
   
@@ -50,6 +50,8 @@ When you view a report that has parameters, the report viewer toolbar displays e
 5. **@CategoryQuota parameter**. The parameter **@CategoryQuota** is data type **Float**, so it takes a numeric value. **@CategoryQuota** is set to allow multiple values.  
   
 6. **View Report**. After you enter parameter values, select **View Report** to run the report. If all parameters have default values, the report runs automatically on first view.  
+
+See how your customers interact with parameters in your paginated reports in the article [View parameters for paginated reports in the Power BI service](../../consumer/paginated-reports-view-parameters.md).
   
 ## <a name="bkmk_Create_Parameters"></a> Create parameters
 
