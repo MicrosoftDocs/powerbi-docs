@@ -31,16 +31,6 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
    
    ![Dashboard tab with yellow star](./media/end-user-favorite/power-bi-recent-favorite.png)
 
-## Add an app as a favorite
-
-1. From the nav pane, select **Apps**.
-
-   ![Dashboard](./media/end-user-favorite/power-bi-apps.png)
-
-2. Hover over an app to display more detail. Select the star ![Screenshot showing mouse hover over a report and the favorites icon.](./media/end-user-favorite/power-bi-favorite-icon.png) icon to set as a favorite.
-   
-   ![Hover over app](./media/end-user-favorite/power-bi-hover-app.png)
-
 ## Work with favorites
 You have several options for viewing your favorites. 
 
