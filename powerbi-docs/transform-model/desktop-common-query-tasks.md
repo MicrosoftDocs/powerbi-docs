@@ -23,7 +23,7 @@ The common query tasks demonstrated here are:
 * Create custom columns
 * Query formulas
 
-We’ll use a few data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.
+You can use a few data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.
 
 The first data connection is [an Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx), which you can download and save locally. The other is a Web resource that's also used in other Power BI Desktop articles:
 
@@ -37,7 +37,7 @@ To connect to data in Power BI Desktop, select **Home** and then **Get data**. P
 
 ![Most Common data sources menu, Get data button, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
-To start, select **Excel**, specify the Excel workbook mentioned earlier, and then select **Open**. Query inspects the workbook, then presents the data it found in the **Navigator** dialog box after you select a table.
+To start, select **Excel Workbook**, specify the Excel workbook mentioned earlier, and then select **Open**. Query inspects the workbook, then presents the data it found in the **Navigator** dialog box after you select a table.
 
 ![Excel data source, Navigator dialog box, Get Data, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_navigator.png)
 
@@ -61,15 +61,15 @@ For a step-by-step demonstration of connecting to data in Power BI Desktop, see 
 
 You can easily shape and combine data with Power Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see [Shape and combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
-In the previous section, you connected to two sets of data: an Excel workbook and a Web resource. After the data is loaded in Power Query Editor, select the Web page query from the available queries in the **Queries** pane, as shown here:
+This section and proceeding sections use [an Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx), which you can download and save locally. Load the data in Power Query Editor by using the **Transform data** button in **Home** tab. After you load the data, select Table 1 from the available queries in the **Queries** pane, as shown here:
 
-![Queries pane, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
+![Queries pane, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/common-query-tasks-query-pane-loaded.png)
 
 When you shape data, you transform a data source into the form and format that meets your needs.
 
-In Power Query Editor, many commands can be found in the ribbon, and in context menus. For example, when you right-click a column, the context menu lets you remove the column. You may also select a column and then select the **Manage Columns** > **Remove Columns** button from the **Home** tab in the ribbon.
+In Power Query Editor, you can find many commands in the ribbon, and in context menus. For example, when you right-click a column, the context menu lets you remove the column. You may also select a column and then choose the **Remove Columns** button from the **Home** tab in the ribbon.
 
-![Remove Columns command, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
+![Remove Columns command, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/common-query-tasks-remove-columns.png)
 
 You can shape the data in many other ways in this query. You may remove any number of rows from the top or bottom. Or you may add columns, split columns, replace values, and do other shaping tasks. With these features, you can direct Power Query Editor to get the data how you want it.
 
@@ -86,7 +86,7 @@ Let’s find out how many Agencies each state has. (Agencies can include school 
 The **Group By** dialog box appears. When Power Query Editor groups rows, it creates a new column into which it places the **Group By** results. You can adjust the **Group By** operation in the following ways:
 
 1. The unlabeled dropdown list specifies the column to be grouped. Power Query Editor defaults this value to the selected column, but you can change it to be any column in the table.
-2. **New column name**: Power Query Editor suggests a name for the new column, based on the operation it applies to the column being grouped. You can name the new column anything you want, though.
+2. **New column name**: Power Query Editor suggests a name for the new column, based on the operation it applies to the grouped column. You can name the new column anything you want, though.
 3. **Operation**: You may choose the operation that Power Query Editor applies, such as **Sum**, **Median**, or **Count Distinct Rows**. The default value is **Count Rows**.
 4. **Add grouping** and **Add aggregation**: These buttons are available only if you select the **Advanced** option. In a single operation, you can make grouping operations (**Group By** actions) on many columns and create several aggregations using these buttons. Based on your selections in this dialog box, Power Query Editor creates a new column that operates on multiple columns.
 
@@ -96,7 +96,7 @@ Select **Add grouping** or **Add aggregation** to add more groupings or aggregat
 
 When you select **OK**, Query does the **Group By** operation and returns the results. Whew, look at that – Ohio, Illinois, Texas, and California now each have over a thousand agencies!
 
-![Count column, Group By operation, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupedresult.png)
+![Count column, Group By operation, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/common-query-tasks-grouped-result.png)
 
 And with Power Query Editor, you can always remove the last shaping operation. In the **Query Settings** pane, under **Applied Steps**, just select the **X** next to the step recently completed. So go ahead and experiment. If you don’t like the results, redo the step until Power Query Editor shapes your data the way you want.
 
@@ -104,17 +104,17 @@ And with Power Query Editor, you can always remove the last shaping operation. I
 
 You can pivot columns and create a table that contains aggregated values for each unique value in a column. For example, to find out how many different products are in each product category, you can quickly create a table to do that.
 
-Let’s look at an example. The following **Products_by_Categories** table has been shaped to only show each unique product (by name), and which category each product falls under. To create a new table that shows a count of products for each category (based on the **CategoryName** column), select the column, then select **Transform** > **Pivot Column**.
+Let’s look at an example. The following **Products_by_Categories** table is shaped to only show each unique product (by name), and which category each product falls under. To create a new table that shows a count of products for each category (based on the **CategoryName** column), select the column, then select **Transform** > **Pivot Column**.
 
-![Pivot Column command, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotbutton.png)
+![Pivot Column command, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivot-columns-pivot-button.png)
 
-The **Pivot Column** dialog box appears, letting you know which column’s values will be used to create new columns. (If the wanted column name of **CategoryName** isn't shown, select it from the dropdown list.) When you expand **Advanced options**, you can select the function that will be applied to the aggregated values.
+The **Pivot Column** dialog box appears, letting you know which column’s values are used to create new columns. (If the wanted column name of **CategoryName** isn't shown, select it from the dropdown list.) When you expand **Advanced options**, you can select which function to apply to the aggregated values.
 
-![Pivot Column dialog box, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotdialog.png)
+![Pivot Column dialog box, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivot-columns-pivot-dialog.png)
 
 When you select **OK**, Query displays the table according to the transform instructions provided in the **Pivot Column** dialog box.
 
-![Pivot Column result, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotcomplete.png)
+![Pivot Column result, Power Query Editor, Power BI Desktop](media/desktop-common-query-tasks/pivot-columns-pivot-complete.png)
 
 ## Create custom columns
 
