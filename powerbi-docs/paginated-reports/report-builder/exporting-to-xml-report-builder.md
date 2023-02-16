@@ -1,7 +1,7 @@
 ---
 title: "Export Power BI paginated report to XML (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the XML rendering extension renders a Power BI paginated report to XML format. Import XML into a database, use as a message, or send to applications.
-ms.date: 10/02/2023
+ms.date: 02/14/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
