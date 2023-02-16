@@ -27,13 +27,15 @@ Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo su
 
 ## Enable and configure
 
-For new capacities, enable Multi-Geo by selecting a region other than the default region from the dropdown. Each available capacity shows the region where it's currently located, such as **West Central US**.
+Enable Multi-Geo by selecting a region other than the default region when you're creating a new capacity. Once a capacity's created, it shows the region where it's currently located.
+
+Follow these steps to change the default capacity region when you're creating a new capacity.
 
 1. In Power BI service, select **settings** and from the menu select **Admin portal**.
 
 2. In the *Admin portal*, select **Capacity settings**.
 
-3. Select **Set up new capcity**.
+3. Select **Set up new capacity**.
 
 4. From the **Region** dropdown menu, select the region you want to use for this capacity.
 
