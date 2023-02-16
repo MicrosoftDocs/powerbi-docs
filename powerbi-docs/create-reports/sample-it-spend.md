@@ -14,7 +14,7 @@ LocalizationGroup: Samples
 
 The IT Spend Analysis built-in sample contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
-![Screenshot shows the dashboard for the IT Spend Analysis sample.](media/sample-it-spend/it1.png)
+:::image type="content" source="media/sample-it-spend/it1.png" alt-text="Screenshot shows the dashboard for the IT Spend Analysis sample.":::
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
@@ -44,7 +44,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
-   ![Screenshot shows the IT Spend Analysis sample dashboard link.](media/sample-it-spend/it-spend-analysis-sample-entry.png)
+   :::image type="content" source="media/sample-it-spend/it-spend-analysis-sample-entry.png" alt-text="Screenshot shows the IT Spend Analysis sample dashboard link.":::
 
    Select the dashboard to view the sample dashboard.
   
@@ -64,13 +64,13 @@ The two numbers tiles on the left of the dashboard, **Var Plan %** and **Varianc
 
 When you select the **Var Plan % by Sales Region** dashboard tile, it displays the **YTD IT Spend Trend Analysis** page of the IT Spend Analysis Sample report. At a glance, we see that there's positive variance in the United States and Europe and negative variance in Canada, Latin America, and Australia. The United States has about 6% +LE variance and Australia has about 7% -LE variance.
 
-![Screenshot shows the Var Plan % by Sales Region.](media/sample-it-spend/it2.png)
+:::image type="content" source="media/sample-it-spend/it2.png" alt-text="Screenshot shows the Var Plan % by Sales Region.":::
 
 However, just looking at this chart and drawing conclusions can be misleading. We need to look at actual dollar amounts to put things in perspective.
 
 1. Select **Aus and NZ** in the **Var Plan % by Sales Region** chart, and then observe the **Var Plan by IT Area** chart.
 
-   ![Screenshot shows the YTD IT Spend Trend Analysis page.](media/sample-it-spend/it3.png)
+   :::image type="content" source="media/sample-it-spend/it3.png" alt-text="Screenshot shows the YTD IT Spend Trend Analysis page.":::
 
 1. Now select **USA**. Notice that Australia and New Zealand are a very small part of our overall spending as compared to the United States.
 
@@ -80,15 +80,15 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
 1. In the dashboard, select **Ask a question about your data**.
 
-   ![Screenshot that shows selecting Top cost element groups by plan.](media/sample-it-spend/it-area-chart.png)
+   :::image type="content" source="media/sample-it-spend/it-area-chart.png" alt-text="Screenshot that shows selecting Top cost element groups by plan.":::
 
 1. From the **Try one of these to get started** list on the left side, select **top cost element groups by plan**.
 
-   ![Screenshot that shows the results of selecting Top cost element groups by plan.](media/sample-it-spend/question-results.png)
+   :::image type="content" source="media/sample-it-spend/question-results.png" alt-text="Screenshot that shows the results of selecting Top cost element groups by plan.":::
 
 1. In the Q&A box, clear the previous entry and enter *show IT areas, var plan % and var le3 % bar chart*.
 
-   ![Screenshot shows the result of the entry in the Q&A box described here.](media/sample-it-spend/it4.png)
+   :::image type="content" source="media/sample-it-spend/it4.png" alt-text="Screenshot shows the result of the entry in the Q&A box described here.":::
 
    In the first IT area, **Infrastructure**, the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
 
@@ -96,15 +96,15 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
 1. Return to the dashboard and look at the **Variance Plan %, Variance Latest Estimate % - Quarter 3** dashboard tile.
 
-   ![Screenshot shows the Var Plan %, Var LE3 tile.](media/sample-it-spend/it5.png)
+   :::image type="content" source="media/sample-it-spend/it5.png" alt-text="Screenshot shows the Var Plan %, Var LE3 tile.":::
 
-   Notice that the Infrastructure area stands out with a large positive variance to the plan.
+   Notice that the **Infrastructure** area stands out with a large positive variance to the plan.
 
 1. Select this tile to open the report and view the **YTD Spend by Cost Elements** page.
 
 1. Select the **Infrastructure** bar in the **Var Plan % and Var LE3 % by IT Area** chart on the lower right, and observe the variance-to-plan values in the **Var Plan % by Sales Region** chart on the lower left.
 
-   ![Screenshot shows the YTD Spend by Cost Elements page.](media/sample-it-spend/it6.png)
+   :::image type="content" source="media/sample-it-spend/it6.png" alt-text="Screenshot shows the YTD Spend by Cost Elements page.":::
 
 1. Select each name in turn in the **Cost Element Group** slicer to find the cost element with the largest variance.
 
@@ -118,7 +118,7 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
 1. In the **Var Plan and Var Plan % by Business Area** chart on the left, select the **Infrastructure** column to highlight infrastructure business area values in the rest of the page.
 
-    ![Screenshot shows the Plan Variance Analysis page.](media/sample-it-spend/it7.png)
+    :::image type="content" source="media/sample-it-spend/it7.png" alt-text="Screenshot shows the Plan Variance Analysis page.":::
 
    Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country or region, as compared to all other business areas.
 
@@ -126,7 +126,7 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
 ## Edit the report
 
-Select **Edit** in the black **Power BI** header bar to explore in Editing view:
+Select **Edit** in the black **Power BI** header bar to explore in the editing view:
 
 - See how the pages are made, the fields in each chart, and the filters on the pages.
 - Add pages and charts, based on the same data.
