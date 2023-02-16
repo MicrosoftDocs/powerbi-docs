@@ -28,7 +28,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. Yo
 
 ## Get the sample
 
- Before you can use the sample, you must first: 
+ Before you can use the sample, get the sample in one of the following ways: 
  
 - Get the [built-in sample in the service](#get-the-built-in-sample),
 - Download the [.pbix file](#get-the-pbix-file-for-this-sample), or 
