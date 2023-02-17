@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/15/2023
+ms.date: 02/17/2023
 LocalizationGroup: Reports
 ---
 # Let users personalize visuals in a report
@@ -28,7 +28,7 @@ This feature is ideal for report creators: You can enable basic exploration scen
 - Compare two or more measures.
 - Change aggregations, etc.
 
-Not only does this feature allow for new exploration capabilities. It also includes ways for users to capture and share their changes:
+Not only does this feature allow for new exploration capabilities, it also includes ways for users to capture and share their changes:
 
 - Capture their changes.
 - Share their changes.
@@ -116,7 +116,7 @@ Next, add fields to the perspective by opening the **Tables** folder in Tabular 
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-5.png" alt-text="Screenshot of the Tabular Editor right-click menu, highlighting Shown in perspectives.":::
 
-Repeat that process for each field you want to add to the perspective. You can’t add duplicate fields in a perspective, so adding a field you already added to a perspective disables it.
+Repeat that process for each field you want to add to the perspective. You can’t add duplicate fields in a perspective, so any field you already added can’t be added again.
 
 After you added all the fields you want, be sure to save your settings, both in Tabular Editor and then also in Power BI Desktop.
 
@@ -147,6 +147,6 @@ The feature has a few limitations to be aware of.
 
 - [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md).
 
-Try the visual personalization experience. Give us your feedback for this feature and tell us how we can continue to improve it on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi).
+   Try the visual personalization experience. Give us your feedback for this feature and tell us how we can continue to improve it on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi).
 
-More questions? [Ask the Power BI Community](https://community.powerbi.com/)
+- More questions? [Ask the Power BI Community](https://community.powerbi.com/)
