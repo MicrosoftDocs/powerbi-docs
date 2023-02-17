@@ -16,9 +16,9 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-This article explains how to use the report **Filters** pane in the Power BI service. You can use the filters to discover new insights in your data.
+This article explains how to use the report **Filters** pane in the Power BI service. You can use filters to discover new insights in your data.
 
-There are many different ways to filter data in Power BI. For example, you can filter data by selecting data points on a report visual to filter the other visuals on the page&mdash;this is called **cross-filtering** and **cross-highlighting**. For more information, see [How visuals cross-filter each other in a Power BI report](end-user-interactions.md).
+There are many different ways to filter data in Power BI. For example, you can filter data by selecting data points on a report visual to filter other visuals on the page&mdash;this is called **cross-filtering** and **cross-highlighting**. For more information, see [How visuals cross-filter each other in a Power BI report](end-user-interactions.md).
 
  :::image type="content" source="media/end-user-report-filter/power-bi-reports.png" alt-text="Screenshot of a report open in the Power BI service with the Filters pane selected.":::
 
@@ -30,13 +30,13 @@ When a colleague shares a report with you, make sure to look for the **Filters**
 
 The **Filters** pane contains filters the report *designer* adds to the report. While *Business users* (like you) can interact with the existing filters and save changes, but you can't add new filters to the report. In the previous example, the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters but you can't add a fourth page level filter.
 
-Some of the filters are shaded, and some aren't. If a filter is shaded, it means a filter has been applied, and some data is being excluded. In the following example, the **Region** filter card is shaded and expanded. The **Central** option is the only option selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page aren't displaying (excluding) data for the **West** and **East** regions.
+Some of the filters are shaded, and some aren't. If a filter is shaded, it means a filter has been applied, and some data is being excluded. In the following example, the **Region** filter card is shaded and expanded. The **Central** option is the only option selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page aren't displaying. The data from **West** and **East** regions are excluded.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-filter-region.png" alt-text="Screenshot of the Region filter expanded, and the Central option selected.":::
 
 In the Power BI service, reports keep any changes you make in the **Filters** pane. The service carries those changes through to the mobile version of the report.
 
-To reset the **Filters** pane to the designer's defaults, select the **Reset** icon from the upper menu bar.
+To reset the **Filters** pane to the designer's defaults, select the **Reset** icon from the top menu bar.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset default icon selected.":::
 
@@ -51,7 +51,7 @@ If there are changes you'd like to save, you can also create a personal bookmark
 
 The **Filters** pane displays and manages several types of report filters: report, report page, and visual.
 
-In the following you can see a visual that has three filters: **Manufacturer**, **Month**, and **Total units**. The report page also has filters listed under the **Filters on this page** heading. The entire report has a filter for **Date**, listed under **Filters on all pages**.
+In the following example, you can see a visual that has three filters: **Manufacturer**, **Month**, and **Total units**. The report page also has filters listed under the **Filters on this page** heading. The entire report has a filter for **Date**, listed under **Filters on all pages**.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-filter-pane.png" alt-text="Screenshot of a report with a visualization and its filters displayed.":::
 
@@ -61,11 +61,11 @@ Anyone with permissions to view this report can interact with these filters.
 
 ### View filters applied to a visual
 
-To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon:::image type="icon" source="media/end-user-report-filter/power-bi-filter-icon.png":::. Select that filter icon to see a pop-up with all the filters and slicers affecting that visual. The filters on the pop-up are the same filters displayed on the **Filters** pane, plus any other filters affecting the selected visual.
+To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon :::image type="icon" source="media/end-user-report-filter/power-bi-filter-icon.png":::. Select that filter icon to see a pop-up window with all the filters and slicers affecting that visual. The filters in the pop-up window are the same filters displayed on the **Filters** pane, plus any other filters affecting the selected visual.
 
  :::image type="content" source="media/end-user-report-filter/power-bi-filters-hover.png" alt-text="Screenshot of a pop-up with all the filters numbered to match the corresponding filter in the Filter pane.":::
 
-Types of filters in the pop-up pane include:
+Types of filters in the pop-up window include:
 
 - Basic filters
 - Slicers
@@ -111,7 +111,7 @@ One way to search for data insights is to interact with the filters. You can cha
 
 ### Reset filter to default
 
-If you want to keep the changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
+If you don't want to keep the changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset to default option selected.":::
 
