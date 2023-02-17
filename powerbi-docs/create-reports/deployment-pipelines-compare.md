@@ -56,7 +56,7 @@ If a text item, like a dataset, is different, hover over it to see the **Change 
 
 :::image type="content" source="./media/deployment-pipelines-compare/granular-change-button.png" alt-text="Screenshot showing the change review button next to an item.":::
 
-If the only difference between the two items is settings changes, like the name or sensitivity label, or if the [item type isn't supported](#considerations-and-limitations) yet, the button is disabled. If there are changes to the schema, you can select it to see a detailed, granular comparison of the two items.
+If the only difference between the two items is settings changes, like the name or sensitivity label, or if the [item type/format isn't supported](#considerations-and-limitations) yet, the button is disabled. If there are changes to the schema, you can select it to see a detailed, granular comparison of the two items.
 
 When you select the **Change review** button, a pop-up window opens with a line by line comparison of the item's content as it currently looks in the two stages being compared. This content may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
 
@@ -112,7 +112,7 @@ Close the window when you finish examining the differences and deploy to the nex
 
 Granular compare is only supported for the following changes:
 
-- Datasets and dataflows.
+- Datasets, excluding data modeling format v1, and dataflows.
 - Items with changes to the schema content. Settings changes, like file names or sensitivity labels, aren't supported.
 
 ## Next steps
