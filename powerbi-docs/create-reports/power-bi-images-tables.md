@@ -40,7 +40,7 @@ A good way to enhance your reports is to add images to them. Static images on th
 
 ### Add images from OneDrive
 
-Images in your report need to be anonymously accessible. However, for images that are hosted on OneDrive, you may be able to get an embed code that points directly to them. The Power BI mobile apps don't support such images, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not the images uses an embed code.
+Images in your report need to be anonymously accessible. However, for images that are hosted on OneDrive, you may be able to get an embed code that points directly to them. The Power BI mobile apps don't support such images, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not the image uses an embed code.
 
 1. On your OneDrive site, open an image and select **More options (...)** > **Embed**.
 

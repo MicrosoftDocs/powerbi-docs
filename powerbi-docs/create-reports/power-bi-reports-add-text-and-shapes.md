@@ -8,7 +8,7 @@ ms.custom: video-3q6VEBhGew, video-RWDX9z
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/21/2022
+ms.date: 02/16/2023
 LocalizationGroup: Visualizations
 ---
 # Add text boxes, shapes, and smart narrative visuals to Power BI reports
