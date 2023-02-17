@@ -15,7 +15,7 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Are you new to Power BI and you want to try it out, but you don't have any data? Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
+Are you new to Power BI and want to try it out, but you don't have any data? Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
 
 Power BI offers different kinds of samples for different purposes. There are built-in samples and apps in the Power BI service, .pbix files, Excel datasets, and SQL databases. Here's a collection of different samples:
 
@@ -58,9 +58,9 @@ The company obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsof
 
 :::image type="content" source="media/sample-datasets/power-bi-samples.png" alt-text="Screenshot shows some available samples in the Learning center page." lightbox="media/sample-datasets/power-bi-samples.png" border="true":::
 
-Several of these samples are available in several formats: as a built-in sample, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them, don't worry. This article explains it all.
+These samples are available in several formats: as a built-in sample, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them, don't worry. This article explains it all.
 
-For several of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
+For each of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
 
 Before we get started, here are the legal guidelines for using these samples. After that, we introduce the samples and show how to use them.
 
@@ -141,7 +141,7 @@ Let's start with the *built-in samples*. The built-in samples are available in t
 
    :::image type="content" source="media/sample-datasets/get-data-samples.png" alt-text="Screenshot shows the Learning center, where you can get samples." lightbox="media/sample-datasets/get-data-samples.png" border="true":::
 
-1. On the Learning center page, under **Sample reports**, scroll until you see a sample you want to open.
+1. On the **Learning center** page, under **Sample reports**, scroll until you see a sample you want to open.
   
    :::image type="content" source="media/sample-datasets/power-bi-connect.png" alt-text="Screenshot shows a highlighted sample.":::
 
@@ -189,7 +189,7 @@ Each of the built-in samples is also available as an Excel workbook. The Excel w
 
    - :::image type="icon" source="media/sample-datasets/power-bi-local-file2.png"::: **Local**: If you save your file to a local drive on your computer, you can publish the files to Power BI from Excel. After you've published it, there's no remaining relationship between your local file and the file in the Power BI service.
    - :::image type="icon" source="media/sample-datasets/power-bi-onedrive-file.png"::: **OneDrive - Business**: If you have OneDrive for work or school and you sign in with the same account as Power BI, you can easily keep your work in your Excel file in sync with Power BI. Power BI and OneDrive are both in the cloud. Power BI connects to your file on OneDrive about every hour. If Power BI detects any changes to the files in OneDrive, it automatically updates your datasets, reports, and dashboards in the Power BI service.
-   - :::image type="icon" source="media/sample-datasets/save-sharepoint-logo.png"::: **SharePoint Team-Sites**: Saving your Power BI files to SharePoint – Team Sites is much the same as saving to OneDrive for work or school. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+   - :::image type="icon" source="media/sample-datasets/save-sharepoint-logo.png"::: **SharePoint team sites**: Saving your Power BI files to SharePoint team sites is much the same as saving to OneDrive for work or school. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 1. You can use the files as [data sources in Power BI Desktop](../connect-data/service-excel-workbook-files.md), or **Publish to Power BI** from Excel to the Power BI service. When you publish, you choose one of these options:
 
@@ -211,13 +211,13 @@ Want to understand how the data in these Excel workbooks gets converted to Power
 
 1. Open the Power BI service (`app.powerbi.com`) and sign in.
 
-1. Navigate to your My Workspace or to another workspace, or create a workspace just for the sample.
+1. Navigate to your **My Workspace** or to another workspace, or create a workspace just for the sample.
 
 1. In the upper-left corner of the workspace, select **Upload**, then one of the sources.
 
    :::image type="content" source="media/sample-datasets/power-bi-upload.png" alt-text="Screenshot of Power BI Upload.":::
 
-1. Select the file. Depending on where you saved the file, select **Upload** or **Open**.
+1. Select the file. Depending on where the file is, select **Upload** or **Open**.
 
 The Power BI service uploads your Excel file.
 
