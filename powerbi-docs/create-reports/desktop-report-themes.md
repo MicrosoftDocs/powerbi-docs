@@ -150,38 +150,7 @@ You can also import a custom report theme file by following these steps:
 
    ![Screenshot of the Import theme successful dialog.](media/desktop-report-themes/report-themes-05.png)
 
-## Introduction to report theme JSON files
-
- When you open *St Patricks Day.json*, it appears as follows:
-
- ```json
-    {
-        "name": "St Patrick's Day",
-        "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
-        "background":"#FFFFFF",
-        "foreground": "#3A6108",
-        "tableAccent": "#568410"
-    }
-```
-
-This report theme JSON file has the following lines:
-
-- `name`: The report theme name. This field is the only required field.
-- `dataColors`: The list of color hexadecimal codes to use for data in Power BI Desktop visuals. This list can have as many or as few colors as you want.
-- `background`, `foreground`, and `tableAccent`: Color classes. Color classes enable you to set many structural colors in your report at once.
-
-You can use this JSON file as a basis to create your own custom report theme file to import. If you want to adjust only the basic colors of your report, change the name and hex codes in the file.
-
-In a report theme JSON file, you define only the formatting that you want to change. Settings you don't specify in the JSON file revert to the Power BI Desktop default settings.
-
-When you create a JSON file, you can specify that all charts use a font size of 12, that certain visuals use a particular font family, or that data labels are turned off for specific chart types. By using a JSON file, you can create a report theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
-
-When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
-
-For more information about the format of the JSON file, see [Report theme JSON file format](#report-theme-json-file-format).
-
-> [!NOTE]
-> Modifying a custom JSON report theme with the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
+See the [Example report theme JSON file](#example-report-theme-json-file) section in this article to continue exploring the St Patricks Day.json file.
 
 ## How report theme colors stick with your reports
 
@@ -203,12 +172,15 @@ The colors in the color palette are relative to the current theme. For example, 
 
 Setting a report theme changes the default colors used in visuals throughout the report. Power BI maintains a list consisting of hundreds of colors to ensure visuals have plenty of unique colors to display in a report. When Power BI assigns colors to a visual's series, colors are selected as series colors are assigned. When you import a theme, the mapping of colors for data series is reset.
 
+### Dynamic series
+
 Power BI tracks the color for a dynamic series and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals may change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, you might have five sales regions, or you might have nine. The number of regions is dynamic, so it's considered a dynamic series.
+
+### Static series
 
 Conversely, for *static series*, the number of series is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors.
 
 To undo the explicit color application and allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section of the visual to which the color has been explicitly set.
-
 
 ### Situations when report theme colors won't stick to your reports
 
@@ -284,11 +256,27 @@ At its most basic level, the theme JSON file has only one required line: `name`.
 
 Other than `name`, everything else is optional, which means you're free to only add the properties you specifically want to format to the theme file. You can continue to use Power BI's defaults for the rest.
 
+In a report theme JSON file, you define only the formatting that you want to change. Settings you don't specify in the JSON file revert to the Power BI Desktop default settings.
+
+When you create a JSON file, you can specify that all charts use a font size of 12, that certain visuals use a particular font family, or that data labels are turned off for specific chart types. By using a JSON file, you can create a report theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
+
+When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
+
 Power BI validates custom themes based on a _JSON schema_.  This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
+
+> [!NOTE]
+> Modifying a custom JSON report theme in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
 
 In addition, the following GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/mattrudy/PowerBI-ThemeTemplates/blob/master/README.md).
 
-A theme file has four main components: theme colors, structural colors, text classes, and visual styles.  The following sections describe each in detail.
+A theme file has four main components:
+
+- [Theme colors](#set-theme-colors)
+- [Structural colors](#set-structural-colors)
+- [Text classes](#set-formatted-text-defaults)
+- [Visual styles](#set-visual-property-defaults-visualstyles)  
+
+The following sections describe each in detail.
 
 ### Set theme colors
 
@@ -325,7 +313,7 @@ A basic theme that defines these colors might appear as follows:
 }
 ```
 
-### Setting structural colors
+### Set structural colors
 
 Next, you can add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
 
@@ -498,7 +486,7 @@ This example makes the following settings:
 > [!NOTE]
 > You need only specify the formatting elements you want to adjust. Any formatting elements that aren't included in the JSON file revert to their default values and settings.
 
-### Finding visual properties to set
+### Find visual properties to set
 
 [The report theme schema](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) can help you identify what properties are available to style with a report theme.  By using the schema as a local reference in your theme file, you can use the auto-complete functionality of your IDE to identify available formatting options.
 
@@ -515,29 +503,53 @@ With this defined, you can use autocomplete in Visual Studio Code to understand 
 
 ![Screenshot of using the report theme schema to identify available formatting options.  The autocomplete menu within Visual Studio Code shows available formatting options.](media/desktop-report-themes/report-themes-schema.png)
 
-#### Setting values
+## Tips for setting values
 
-We include some helpful tips here about setting values.
+Here are some helpful tips here about setting values.
 
-Booleans are either true or false. Strings must be in double quotes, as in "this is a string." Numbers are just the value itself not in quotes.
+- Booleans are either true or false. 
+- Strings must be in double quotes, as in "this is a string." 
+- Numbers are just the value itself not in quotes.
+- When you use `dateTime`, the date must be an ISO date in single quotes, with "datetime" at the beginning. See the following example:
 
-When you use `dateTime`, the date must be an ISO date in single quotes, with "datetime" at the beginning. See the following example:
+    "datetime'2022-10-05T14:48:00.000Z'"
 
-  "datetime'2022-10-05T14:48:00.000Z'"
+- Colors that use a custom hexadecimal code to replace `FFFFFF` use the following format.  Either 3-digit or 6-digit hexadecimal values are acceptable:
 
-Colors that use a custom hexadecimal code to replace `FFFFFF` use the following format.  Either 3-digit or 6-digit hexadecimal values are acceptable:
-
-```json
-{ "solid": { "color": "#FFFFFF" } }
-```
+    ```json
+    { "solid": { "color": "#FFFFFF" } }
+    ```
 
 You can use an enumeration to format dropdown menus by setting menu options to any of the options in the pane, for example, `RightCenter` for legend position or `Data value, percent of total` for pie data label.  The enumerations are usually formatted as strings.
+
+## Example report theme JSON file
+
+Here is the *St Patricks Day.json* file in its entirety:
+
+ ```json
+    {
+        "name": "St Patrick's Day",
+        "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
+        "background":"#FFFFFF",
+        "foreground": "#3A6108",
+        "tableAccent": "#568410"
+    }
+```
+
+This report theme JSON file has the following lines:
+
+- `name`: The report theme name. This field is the only required field.
+- `dataColors`: The list of color hexadecimal codes to use for data in Power BI Desktop visuals. This list can have as many or as few colors as you want.
+- `background`, `foreground`, and `tableAccent`: Color classes. Color classes enable you to set many structural colors in your report at once.
+
+You can copy this JSON and use it as a basis to create your own custom report theme file to import. If you want to adjust only the basic colors of your report, change the name and hex codes in the file.
 
 ## Considerations and limitations
 
 If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
 
 Built-in themes that are affected by this limitation include the following themes:
+
 - Classic
 - City park
 - Classroom
