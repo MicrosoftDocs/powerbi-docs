@@ -127,7 +127,7 @@ Location: https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4
 
 Use the GET verb on the /refreshes collection to list historical, current, and pending refresh operations.
 
-The following code shows an example of a response body:
+The response body might look like the following example:
 
 ```json
 [
@@ -186,7 +186,7 @@ GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top
 
 ## GET /refreshes/\<requestId>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the `requestId`. If the operation is in progress, `status` returns `InProgress`, as the following response body example shows:
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the `requestId`. If the operation is in progress, `status` returns `InProgress`, as in the following example response body:
 
 ```json
 {
@@ -258,7 +258,7 @@ The solution is to rerun the refresh operation. To learn more about dynamic memo
 
 The maximum amount of time for a single refresh operation is five hours. If the refresh operation doesn't successfully complete within the five-hour limit, and `retryCount` isn't specified or is specified as `0` (the default) in the request body, a timeout error returns.
 
-If `retryCount` specifies `1` or another number, a new refresh operation with a five-hour limit starts. If this retry operation fails, the service continues to retry the refresh operation up to the greatest number of retries that `retryCount`specifies, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh request.
+If `retryCount` specifies `1` or another number, a new refresh operation with a five-hour limit starts. If this retry operation fails, the service continues to retry the refresh operation up to the greatest number of retries that `retryCount` specifies, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh request.
 
 When you plan your enhanced dataset refresh solution with the Refresh Dataset REST API, it's important to consider these time limits and the `retryCount` parameter. A successful refresh completion can exceed five hours if an initial refresh operation fails and `retryCount` specifies `1` or more.
 
