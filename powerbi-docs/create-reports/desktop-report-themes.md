@@ -19,7 +19,7 @@ With Power BI Desktop *report themes*, you can apply design changes to your enti
 
 You can select report themes by going to the **View** ribbon. In the **Themes** section, select the dropdown arrow, and then select the theme you want. Available themes are similar to themes seen in other Microsoft products, such as Microsoft PowerPoint.
 
-![Screenshot of the Themes dropdown menu.](media/desktop-report-themes/report-themes-01.png)
+![Screenshot of the Themes dropdown menu.](media/desktop-report-themes/report-themes-dropdown-menu.png)
 
 The two types of report themes:
 
@@ -32,7 +32,7 @@ The two types of report themes:
 To apply a report theme to a Power BI Desktop report, you can select from the following options:
 
 * Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop.
-* [Customize a theme](#create-and-customize-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
+* [Customize a theme](#customize-and-save-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
 * [Import a custom theme JSON file](#import-custom-report-theme-files).
 
 > [!NOTE]
@@ -44,11 +44,9 @@ To select from the available built-in report themes:
 
 1. On the **View** ribbon, select the dropdown arrow next to **Themes** .
 
-   ![Screenshot of the View ribbon, highlighting the Themes dropdown arrow.](media/desktop-report-themes/report-themes-02.png)
+2. Select from among the themes on the dropdown menu that appears, including the new **Accessible themes**.
 
-2. Select from among the included themes from the dropdown menu that appears.
-
-   ![Screenshot of the Power BI themes dropdown menu, highlighting all of the selections.](media/desktop-report-themes/report-themes-03.png)
+   ![Screenshot of the Power BI themes dropdown menu, highlighting all of the selections.](media/desktop-report-themes/available-report-themes.png)
 
    Your report theme is now applied to the report.
 
@@ -78,7 +76,7 @@ To select from the available built-in report themes:
     
 3. You can also browse the collection of themes created by members of the Power BI Community, by selecting **Theme gallery** from the Themes dropdown menu.
 
-   ![Screenshot of the Power BI Themes dropdown menu, highlighting Theme gallery.](media/desktop-report-themes/report-themes-04.png)
+   ![Screenshot of the Power BI Themes dropdown menu, highlighting Theme gallery.](media/desktop-report-themes/report-theme-gallery.png)
 
     From the gallery, you can select a theme and download its associated JSON file.
 
@@ -94,7 +92,7 @@ You can customize and standardize most of the elements listed in the **Format** 
 
 You can customize report themes in the following ways:
 
-- [Customize and save a theme in Power BI Desktop](#create-and-customize-a-theme-in-power-bi-desktop)
+- [Customize and save a theme in Power BI Desktop](#customize-and-save-a-theme-in-power-bi-desktop)
 - [Create and customize a custom report theme JSON file](#introduction-to-report-theme-json-files)
 
 ### Customize and save a theme in Power BI Desktop
@@ -103,7 +101,7 @@ To customize a theme directly in Power BI Desktop, you can select a theme that's
 
 1. From the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**.
 
-   ![Screenshot of the Power BI Themes dropdown menu, highlighting Customize current theme.](media/desktop-report-themes/report-themes-06.png)
+   ![Screenshot of the Power BI Themes dropdown menu, highlighting Customize current theme.](media/desktop-report-themes/customize-current-report-theme.png)
 
 2. A dialog appears where you can make changes to the current theme, and then you can save your settings as a new theme.
 
@@ -140,7 +138,7 @@ You can also import a custom report theme file by following these steps:
 
 1. On the **View** ribbon, select the **Themes** dropdown button > **Browse for themes**.
 
-   ![Screenshot of the Power BI Themes dropdown menu, highlighting Browse for themes.](media/desktop-report-themes/report-themes-08.png)
+   ![Screenshot of the Power BI Themes dropdown menu, highlighting Browse for themes.](media/desktop-report-themes/browse-report-themes.png)
 
    A window appears that you can use to go to the JSON theme file.
 
@@ -178,12 +176,12 @@ In a report theme JSON file, you define only the formatting that you want to cha
 
 When you create a JSON file, you can specify that all charts use a font size of 12, that certain visuals use a particular font family, or that data labels are turned off for specific chart types. By using a JSON file, you can create a report theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
 
-When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to re-import with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
+When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
 
 For more information about the format of the JSON file, see [Report theme JSON file format](#report-theme-json-file-format).
 
 > [!NOTE]
-> Modifying a custom JSON report theme with the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
+> Modifying a custom JSON report theme with the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) is safe.  The dialog doesn't modify theme settings that it can't control and updates the changes made to the report theme that's in place.
 
 ## How report theme colors stick with your reports
 
@@ -268,7 +266,7 @@ To export the currently applied theme from Power BI Desktop:
 
 1. Select **View** and select the **Themes** dropdown menu.
 
-   ![Screenshot of the Themes dropdown menu, highlighting Save current theme.](media/desktop-report-themes/report-themes-14.png)
+   ![Screenshot of the Themes dropdown menu, highlighting Save current theme.](media/desktop-report-themes/save-current-theme.png)
 
 2. Near the bottom of the dropdown menu, select **Save current theme**.
 
@@ -290,7 +288,7 @@ Power BI validates custom themes based on a _JSON schema_.  This [JSON schema is
 
 In addition, the following GitHub repository has sample JSON for all the different components in the JSON themes file: [Power BI Theme Templates](https://github.com/mattrudy/PowerBI-ThemeTemplates/blob/master/README.md).
 
-A theme file has four main components: theme colors, structural colors, text classes, and visual styles.  The following sections describes each in detail.
+A theme file has four main components: theme colors, structural colors, text classes, and visual styles.  The following sections describe each in detail.
 
 ### Set theme colors
 
@@ -331,7 +329,7 @@ A basic theme that defines these colors might appear as follows:
 
 Next, you can add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
 
-The following table shows the six color classes you can format.  The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop).
+The following table shows the six color classes you can format.  The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop).
 
 | Color class preferred name | Also called  | What it formats |
 |---|---|---|
@@ -365,7 +363,7 @@ Here's a sample theme that sets the color classes:
 
 Next, you can add text classes to your JSON file. Text classes are similar to color classes, but they allow you to update the font size, color, and family for groups of text across your report.
 
-You only need to set four of the 12 classes, called *primary classes*, to change all of the text formatting in your report. These four primary classes can be set in the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop) under the **Text** section: **General** corresponds to **label**, **Title** to **title**, **Cards and KPIs** to **callout**, and **Tab headers** to **header**.
+You only need to set four of the 12 classes, called *primary classes*, to change all of the text formatting in your report. These four primary classes can be set in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) under the **Text** section: **General** corresponds to **label**, **Title** to **title**, **Cards and KPIs** to **callout**, and **Tab headers** to **header**.
 
 Other text classes, considered *secondary classes*, automatically derive their properties from their associated primary classes. Often, a secondary class selects a lighter shade of text color or a percentage larger or smaller text size compared to the primary class.
 
@@ -378,18 +376,18 @@ The following table shows:
 
 |Primary class  |Secondary classes  |JSON class name  | Default settings  |Associated visual objects  |
 |---------|---------|---------|---------|---------|
-| Callout | N/A | callout | DIN <br> #252423 <br> 45pt |Card data labels <br> KPI indicators|
-|Header|N/A|header|Segoe UI Semibold <br> #252423 <br> 12pt |Key influencers headers |
-| Title || title |DIN <br> #252423 <br> 12pt |Category axis title <br> Value axis title <br> Multi-row card title * <br> Slicer header|
-|-| Large title | largeTitle |14pt |Visual title |
-|Label ||label |Segoe UI<br>#252423<br>10pt |Table and matrix column headers <br> Matrix row headers<br>Table and matrix grid<br>Table and matrix values |
+| Callout | N/A | callout | DIN <br> #252423 <br> 45 pt |Card data labels <br> KPI indicators|
+|Header|N/A|header|Segoe UI Semibold <br> #252423 <br> 12 pt |Key influencers headers |
+| Title || title |DIN <br> #252423 <br> 12 pt |Category axis title <br> Value axis title <br> Multi-row card title * <br> Slicer header|
+|-| Large title | largeTitle |14 pt |Visual title |
+|Label ||label |Segoe UI<br>#252423<br>10 pt |Table and matrix column headers <br> Matrix row headers<br>Table and matrix grid<br>Table and matrix values |
 |-|Semibold |semiboldLabel| Segoe UI Semibold | Key influencers profile text
-|-|Large |largeLabel |12pt | Multi-row card data labels |
-|-|Small |smallLabel |9pt |Reference line labels * <br>Slicer date range labels<br> Slicer numeric input text style<br>Slicer search box<br>Key influencers influencer text|
+|-|Large |largeLabel |12 pt | Multi-row card data labels |
+|-|Small |smallLabel |9 pt |Reference line labels * <br>Slicer date range labels<br> Slicer numeric input text style<br>Slicer search box<br>Key influencers influencer text|
 |-|Light |lightLabel |#605E5C |Legend text<br>Button text<br>Category Axis labels<br>Funnel chart data labels<br>Funnel chart conversion rate labels<br>Gauge target<br>Scatter chart category label<br>Slicer items|
 |-|Bold |boldLabel |Segoe UI Bold |Matrix subtotals<br>Matrix grand totals<br>Table totals |
-|-|Large and Light |largeLightLabel |#605E5C<br>12pt |Card category labels<br>Gauge labels<br>Multi-row card category labels |
-|-|Small and Light |smallLightLabel |#605E5C<br>9pt |Data labels<br>Value axis labels|
+|-|Large and Light |largeLightLabel |#605E5C<br>12 pt |Card category labels<br>Gauge labels<br>Multi-row card category labels |
+|-|Small and Light |smallLightLabel |#605E5C<br>9 pt |Data labels<br>Value axis labels|
 
 *\* Starred items are based on the first data color of the report theme.*
 
