@@ -254,6 +254,12 @@ Power BI uses dynamic memory management to optimize capacity memory. If the data
 
 The solution is to rerun the refresh operation. To learn more about dynamic memory management and dataset eviction, see [Dataset eviction](../enterprise/service-premium-large-models.md#dataset-eviction).
 
+#### Refresh operation time limits
+
+The maximum amount of time for a *single refresh operation* is five hours. If the refresh operation does not successfully complete within the five-hour limit and `"retryCount"` is not specified, or `"retryCount": 0,` is specified in the request body, a timeout error is returned. If 1 or more is specified in `"retryCount"`, a new refresh operation with a five-hour limit is started. If subsequent retry operations fail, the service will continue to retry successful completion of a refresh operation up to the greater of the number of retries specified in `"retryCount"`, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh operation of the request.
+
+When determining your dataset refresh solution by using enhanced refresh with the Refresh Dataset REST API, it's important to keep these time limits and the retryCount parameter in mind. A successful completion of a refresh operation can exceed five hours if an initial refresh operation fails and 1 or more is specified in `"retryCount"`. For example, if you request a refresh operation with `"retryCount": 1,`, and the initial retry operation fails at four hours from start time, a second refresh operation for that request is attempted. If that second refresh operation succeeds in three hours, the total time for successful execution of the refresh request is seven hours. If refresh operations regularly fail, exceed the five-hour time limit, or exceed your desired successful refresh operation times, consider reducing the amount of data being refreshed from the data source, split refresh into multiple requests, for example, a request for each table, or try specifying partialBatch in the commitMode parameter.
+
 ## Code sample
 
 For a C# code sample to get you started, see [RestApiSample](https://github.com/Microsoft/Analysis-Services/tree/master/RestApiSample) on GitHub.
