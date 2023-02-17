@@ -170,7 +170,7 @@ The following code shows an example of a response body:
 |`refreshType`   |   String      |    `OnDemand` indicates the refresh was triggered interactively through the Power BI portal.<br>`Scheduled` indicates that a dataset refresh schedule triggered the refresh. <br>`ViaApi` indicates that an API call triggered the refresh. <br>`ViaEnhancedApi` indicates that an API call triggered an enhanced refresh.|
 |`startTime`     |    String     |    Date and time of refresh start.     |
 |`endTime`     |   String      |    Date and time of refresh end.     |
-|`status`     |  String       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates that selective refresh disabled the refresh. <br>`Cancelled` indicates the refresh was canceled successfully.|
+|`status`     |  String       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates that the refresh was disabled by selective refresh. <br>`Cancelled` indicates the refresh was canceled successfully.|
 |`extendedStatus`     |    String     |   Augments the `status` property to provide more information.     |
 
 > [!NOTE]
