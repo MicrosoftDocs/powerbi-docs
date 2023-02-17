@@ -152,7 +152,7 @@ Here are the current limitations:
     - Measures defined on related tables.
     - Implicit measures calculated from relationships.
 
-- When you use Power BI featured tables in Excel, your Power BI data may be processed in a region or geography that's different than where your Power BI tenant data is stored at rest.
+- When you use Power BI featured tables in Excel, your Power BI data might be processed in a region or geography that's different than where your Power BI tenant data is stored at rest.
 
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
@@ -168,8 +168,8 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 - Some symbols aren't supported.
 - Setting or updating the featured table isn't supported in the XMLA endpoint.
 - Excel files with a data model can be used to publish featured tables. Load the data into Power BI desktop and then publish the featured table.
-- Changing the Table name, Row Label, or Key Column in the featured table may impact Excel users with linked cells to rows in the table. 
-- Excel shows when the data was retrieved from the Power BI dataset. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel. 
+- Changing the Table name, Row Label, or Key Column in the featured table might impact Excel users with linked cells to rows in the table. 
+- Excel shows when the data was retrieved from the Power BI dataset. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date and time at which the data was pulled into Excel. 
 
 ## Next steps
 
