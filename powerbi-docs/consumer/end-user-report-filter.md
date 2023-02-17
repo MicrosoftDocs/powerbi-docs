@@ -28,9 +28,9 @@ When a colleague shares a report with you, make sure to look for the **Filters**
 
  :::image type="content" source="media/end-user-report-filter/power-bi-expand-filters-pane.png" alt-text="Screenshot of a report open in the Power BI service with the Filters pane expanded.":::
 
-The **Filters** pane contains filters the report *designer* adds to the report. While *Business users* (like you) can interact with the existing filters and save changes, but you can't add new filters to the report. In the previous example the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page level filter.
+The **Filters** pane contains filters the report *designer* adds to the report. While *Business users* (like you) can interact with the existing filters and save changes, but you can't add new filters to the report. In the previous example, the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters but you can't add a fourth page level filter.
 
-Some of the filters are shaded, and some are not. If a filter is shaded, it means a filter has been applied, and some data is being excluded. In the following example, the **Region** filter card is shaded and expanded and expanded. The **Central** option is the only option selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page are not displaying (excluding) data for the **West** and **East** regions.
+Some of the filters are shaded, and some aren't. If a filter is shaded, it means a filter has been applied, and some data is being excluded. In the following example, the **Region** filter card is shaded and expanded. The **Central** option is the only option selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page aren't displaying (excluding) data for the **West** and **East** regions.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-filter-region.png" alt-text="Screenshot of the Region filter expanded, and the Central option selected.":::
 
@@ -38,7 +38,7 @@ In the Power BI service, reports keep any changes you make in the **Filters** pa
 
 To reset the **Filters** pane to the designer's defaults, select the **Reset** icon from the upper menu bar.
 
-![Screenshot of the Reset to default icon.](media/end-user-report-filter/power-bi-reset-icon.png)
+:::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset default icon selected. .":::
 
 > [!NOTE]
 > If you don't see the **Reset to default** option, the report *designer* might have disabled it. The *designer* can lock specific filters so that you can't change them.
@@ -51,21 +51,21 @@ If there are changes you'd like to save, you can also create a personal bookmark
 
 The **Filters** pane displays and manages several types of report filters: report, report page, and visual.
 
-In this example, we've selected a visual that has three filters: **Manufacturer**, **Month**, and **Total units**. The report page also has filters, listed under the **Filters on this page** heading. And, the entire report has a filter for **Date**, listed under **Filters on all pages**.
+In the following you can see a visual that has three filters: **Manufacturer**, **Month**, and **Total units**. The report page also has filters listed under the **Filters on this page** heading. The entire report has a filter for **Date**, listed under **Filters on all pages**.
 
-![Screenshot of a report with a visualization and its related filters called out.](media/end-user-report-filter/power-bi-filter-pane.png)
+:::image type="content" source="media/end-user-report-filter/power-bi-filter-pane.png" alt-text="Screenshot of a report with a visualization and its filters displayed.":::
 
-Some of the filters have **(All)** next to them. **(All)** means all values are being included in the filter. In the screenshot above, **Segment(All)** tells us this report page includes data about all the product segments.
+Some of the filters have **(All)** next to them. **(All)** means all values are being included in the filter. In the previous screenshot, **Segment(All)** tells us this report page includes data about all the product segments.
 
 Anyone with permissions to view this report can interact with these filters.
 
 ### View only those filters applied to a visual
 
-To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon ![Screenshot of the Filter icon.](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up include the same filters displayed on the **Filters** pane, plus any additional filtering affecting the selected visual.
+To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon:::image type="icon" source="media/end-user-report-filter/power-bi-filter-icon.png":::. Select that filter icon to see a pop-up with all the filters and slicers affecting that visual. The filters on the pop-up are the same filters displayed on the **Filters** pane, plus any other filters affecting the selected visual.
 
-![Screenshot of a list of filters with arrows pointing to where those filters are on the Filters pane.](media/end-user-report-filter/power-bi-filters-hover.png)
+ :::image type="content" source="media/end-user-report-filter/power-bi-filters-hover.png" alt-text="Screenshot of a pop-up with all the filters numbered to match the corresponding filter in the Filter pane.":::
 
-Here are the types of filters this view can display:
+Types of filters in the pop-up pane include:
 
 - Basic filters
 - Slicers
@@ -80,7 +80,7 @@ Here are the types of filters this view can display:
 
 In this example:
 
-1. **Included** tells us that the visual has been cross-filtered. What this means is that the states of Alabama and Texas have been selected on one of the other visuals on this report page. In this case, it's the map visual. The selection of those two states has eliminated data for all other states from displaying on the selected bar chart.  
+1. **Included** lets you know the visual is cross-filtered. This means the states of Alabama and Texas have been selected on one of the other visuals on this report page. In this case, it's the map visual. The selection of those two states has eliminated data for all other states from displaying on the selected bar chart.  
 
 1. **Date** is a filter applied to all pages in this report.
 
@@ -102,24 +102,24 @@ To understand a filter, expand it and look at the available values and counts.  
 
 ### Change filter selections
 
-One way to search for data insights is to interact with the filters. You can change filter selections using the drop-down arrow next to the field name.  Depending on the filter and type of data that Power BI is filtering, your options will range from simple selections from a list, to identifying ranges of dates or numbers. In the advanced filter below, we've changed the **Total Units YTD** filter on the treemap to be between 2,000 and 3,000. Notice that this change removes Pirum and VanArsdel from the treemap.
+One way to search for data insights is to interact with the filters. You can change filter selections using the drop-down arrow next to the field name. Depending on the filter and type of data that Power BI is filtering, your options range from simple selections from a list, to identifying ranges of dates or numbers. See the advanced filter example. Notice the change in the **Total Units YTD** filter on the treemap between 2,000 and 3,000. This change removes Pirum and VanArsdel from the treemap.
   
-![Screenshot of a report and its filters that shows treemap visual selected.](media/end-user-report-filter/power-bi-treemap-filter.png)
+ :::image type="content" source="media/end-user-report-filter/power-bi-treemap-filter.png" alt-text="Screenshot of a report with the filter that shows treemap visual selected.":::
 
 > [!TIP]
-> To select more than one filter value at a time, hold down the CTRL key. Most filters support multi-select.
+> To select more than one filter value at a time, hold down the **CTRL** key. Most filters support multi-select.
 
 ### Reset filter to default
 
-If you want to back out of all changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
+If you want keep the changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
 
-![Screenshot of the Reset to default option.](media/end-user-report-filter/power-bi-reset-icon.png)
+:::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset to default option selected.":::
 
 ### Clear a filter
 
 To reset a filter to (All), clear it by selecting the eraser icon next to the filter name.
 
-![Screenshot of the Eraser icon.](media/end-user-report-filter/power-bi-erase.png)
+ :::image type="content" source="media/end-user-report-filter/power-bi-erase.png" alt-text="Screenshot of a report with the Filters pane expanded and the raser icon selected.":::
   
 <!--  too much detail for consumers
 
