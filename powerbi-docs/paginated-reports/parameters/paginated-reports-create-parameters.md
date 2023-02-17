@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/27/2022
+ms.date: 01/16/2023
 ---
 
 # Create parameters for paginated reports in the Power BI service
@@ -26,7 +26,7 @@ The following illustration shows Design view in Power BI Report Builder for a re
   
 3.  The Parameters pane. You can customize the layout of parameters in the parameters pane. 
   
-4.  The parameters @FromDate and @ToDate have the data type **DateTime**. When viewing the report, you can either type a date in the text box or choose a date in the calendar control. 
+4.  The parameters @FromDate and @ToDate have the data type **DateTime**. When viewing the report, you can either type a date in the text box, choose a date in the calendar control, or select **Go to today**.
 
 5.  One of the parameters in the **Dataset Properties** dialog box.  
 
