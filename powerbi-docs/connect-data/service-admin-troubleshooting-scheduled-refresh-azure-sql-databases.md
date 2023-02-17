@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot scheduled refresh for Azure SQL databases
-description: Learn how to troubleshoot a error with credentials in a scheduled refresh for Azure SQL databases in Power BI.
+description: Learn how to troubleshoot an error with credentials in a scheduled refresh for Azure SQL databases in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/16/2023
+ms.date: 02/17/2023
 ms.custom: ''
 LocalizationGroup: Troubleshooting
 ---
@@ -26,6 +26,6 @@ While you set up scheduled refresh for an Azure SQL database, if you get an erro
 
 1. On the **Networking** page, select **Allow Azure services and resources to access this server** and choose **Save**.
 
-    ![A screenshot that shows the Azure allowed services access option.](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
+:::image type="content" source="media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png" alt-text="A screenshot that shows the Azure allowed services access option.":::
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/).
+More questions? [Ask the Power BI Community](https://community.powerbi.com/).
