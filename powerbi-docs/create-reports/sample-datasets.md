@@ -108,7 +108,7 @@ This industry sample explores a software company's sales channel. Sales managers
 
 [Take a tour of the Procurement Analysis sample](sample-procurement.md)
 
-This industry sample analyzes a CFO's key metrics for the company's executives, products, and customers. You can investigate what factors affect the company's profitability.
+This industry sample analyzes a manufacturing company's spending on vendors by category and location. You can investigate who the top vendors are, what categories the company spends the most on, and which vendors give the best discounts.
 
 ### Retail Analysis sample
 
@@ -133,7 +133,7 @@ This industry sample focuses on one of the typical supply chain challenges: supp
 
 ### Install built-in samples
 
-Let's start with the *built-in samples*. The built-in samples are available in the Power BI service. You don't have to leave Power BI to find them. These samples are each a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. These built-in samples are still available, but are being deprecated. They aren't available for Power BI Desktop.
+Let's start with the *built-in samples*. The built-in samples are available in the Power BI service. You don't have to leave Power BI to find them. These samples are each a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. These built-in samples aren't available for Power BI Desktop.
 
 1. Open the Power BI service (`app.powerbi.com`) and sign in.
 
@@ -155,7 +155,7 @@ Now that you have data, you're on your way.  Try out some of our tutorials using
 
 ### Download original sample Power BI files
 
-Each of the built-in samples is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
+Six of the built-in samples is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
 
 1. Download the files individually using these links. Selecting these links saves the file automatically to your Downloads folder.
 
