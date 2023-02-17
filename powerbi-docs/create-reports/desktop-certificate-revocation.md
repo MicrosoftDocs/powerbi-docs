@@ -12,7 +12,7 @@ LocalizationGroup: Create reports
 ---
 # Certificate revocation check, Power BI Desktop
 
-Certificates ensure the security of your connections to online data sources. You can check to see if a certificate has been revoked before you connect. Power BI offers two ways to enable or disable a certificate check:
+Certificates ensure the security of your connections to online data sources. You can check to see if a certificate is revoked before you connect. Power BI offers two ways to enable or disable a certificate check:
 
 - In Options in Power BI Desktop.
 - By editing the registry.
@@ -21,8 +21,8 @@ Certificates ensure the security of your connections to online data sources. You
 
 Both methods offer three possible settings:
 
-- **Comprehensive check**: Reject certificates that have been revoked and certificates without revocation information.
-- **Basic check**: Only reject certificates that have been revoked. Certificates without revocation information are allowed through. This is important for some organizations with corporate proxy services.
+- **Comprehensive check**: Reject certificates that are revoked and certificates without revocation information.
+- **Basic check**: Only reject certificates that are revoked. Certificates without revocation information are allowed through. This is important for some organizations with corporate proxy services.
 - **None** or **Disabled**: Power BI doesn't check revocation information. All valid certificates are allowed through.
 
 |Certificate revocation information status | Comprehensive check | Basic check | None / Disabled |
