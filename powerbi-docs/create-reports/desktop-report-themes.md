@@ -27,7 +27,7 @@ The two types of report themes:
 
 - **Custom** report themes provide granular control over many aspects of a report theme, as described in [Customize report themes](#customize-report-themes) later in this article. You can create custom report themes by adjusting a current theme then saving it as a custom theme or by creating your own custom theme by using a JSON file.
 
-## How to apply a report theme
+## Ways to apply a report theme
 
 To apply a report theme to a Power BI Desktop report, you can select from the following options:
 
@@ -38,9 +38,9 @@ To apply a report theme to a Power BI Desktop report, you can select from the fo
 > [!NOTE]
 > You can only apply themes in Power BI Desktop. You can't apply themes to existing reports within the Power BI service.
 
-### Built-in report themes
+### Apply a built-in report theme
 
-To select from the available built-in report themes:
+Follow these steps to select from the available built-in report themes. See the [Built-in report themes](#built-in-report-themes) table for the default color sequence for each theme.
 
 1. On the **View** ribbon, select the dropdown arrow next to **Themes** .
 
@@ -50,30 +50,6 @@ To select from the available built-in report themes:
 
    Your report theme is now applied to the report.
 
-    The following table shows the available built-in report themes.
-    
-    | Built-in report theme | Default color sequence |
-    |------ |---------- |
-    | Default | ![Diagram of the color sequence for the Default theme.](media/desktop-report-themes/report-themes-color-scheme-default.png)|
-    | Highrise | ![Diagram of the color sequence for the Highrise theme.](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
-    | Executive | ![Diagram of the color sequence for the Executive theme.](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
-    | Frontier| ![Diagram of the color sequence for the Frontier theme.](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
-    | Innovate | ![Diagram of the color sequence for the Innovate theme.](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
-    | Bloom | ![Diagram of the color sequence for the Bloom theme.](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
-    | Tidal| ![Diagram of the color sequence for the Tidal theme.](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
-    | Temperature | ![Diagram of the color sequence for the Temperature theme.](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
-    | Solar| ![Diagram of the color sequence for the Solar theme.](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
-    | Divergent | ![Diagram of the color sequence for the Divergent theme.](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
-    | Storm | ![Diagram of the color sequence for the Storm theme.](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
-    | Classic | ![Diagram of the color sequence for the Classic theme.](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
-    | City park | ![Diagram of the color sequence for the City park theme.](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
-    | Classroom | ![Diagram of the color sequence for the Classroom theme.](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-    | Color-blind safe | ![Diagram of the color sequence for the Color blind safe theme.](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
-    | Electric | ![Diagram of the color sequence for the Electric theme.](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
-    | High contrast | ![Diagram of the color sequence for the High contrast theme.](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
-    | Sunset | ![Diagram of the color sequence for the Sunset theme.](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
-    | Twilight | ![Diagram of the color sequence for the Twilight theme.](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
-    
 3. You can also browse the collection of themes created by members of the Power BI Community, by selecting **Theme gallery** from the Themes dropdown menu.
 
    ![Screenshot of the Power BI Themes dropdown menu, highlighting Theme gallery.](media/desktop-report-themes/report-theme-gallery.png)
@@ -85,6 +61,33 @@ To select from the available built-in report themes:
     When successful, Power BI shows a dialog that the import was successful.
 
    ![Screenshot of the successful Import theme dialog.](media/desktop-report-themes/report-themes-05.png)
+
+### Built-in report themes
+
+The following table shows the available built-in report themes.
+    
+| Built-in report theme | Default color sequence |
+|------ |---------- |
+| Default | ![Diagram of the color sequence for the Default theme.](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Highrise | ![Diagram of the color sequence for the Highrise theme.](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Executive | ![Diagram of the color sequence for the Executive theme.](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Frontier| ![Diagram of the color sequence for the Frontier theme.](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovate | ![Diagram of the color sequence for the Innovate theme.](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Bloom | ![Diagram of the color sequence for the Bloom theme.](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Tidal| ![Diagram of the color sequence for the Tidal theme.](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Temperature | ![Diagram of the color sequence for the Temperature theme.](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Solar| ![Diagram of the color sequence for the Solar theme.](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Divergent | ![Diagram of the color sequence for the Divergent theme.](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Storm | ![Diagram of the color sequence for the Storm theme.](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Classic | ![Diagram of the color sequence for the Classic theme.](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| City park | ![Diagram of the color sequence for the City park theme.](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Classroom | ![Diagram of the color sequence for the Classroom theme.](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Color-blind safe | ![Diagram of the color sequence for the Color blind safe theme.](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Electric | ![Diagram of the color sequence for the Electric theme.](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| High contrast | ![Diagram of the color sequence for the High contrast theme.](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Sunset | ![Diagram of the color sequence for the Sunset theme.](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Twilight | ![Diagram of the color sequence for the Twilight theme.](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+
 
 ## Customize report themes
 
