@@ -1,12 +1,12 @@
 ---
 title: Dataset discoverability
-description: Learn how to make endorsed content discoverable for users without access to it.
+description: Learn how to make endorsed, trusted datasets discoverable for users who don't have access to it.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 02/15/2023
+ms.date: 02/17/2023
 LocalizationGroup: Share your work
 ---
 # Dataset discoverability
@@ -48,7 +48,7 @@ Go to  **Admin portal > Tenant settings > Discovery settings** and configure the
 * **Discover content**: When you enable this setting, users you specify can find endorsed content that's marked as discoverable, even if they don't yet have access to it. You can also specify users and/or groups to exclude from the permitted, specified groups.
 
 ## Next steps
-* [Data hub](../connect-data/service-data-hub.md)
-* [Endorsement](service-endorsement-overview.md)
+* [Data discovery using the data hub](../connect-data/service-data-hub.md)
+* [Endorsement: Promoting and certifying Power BI content](service-endorsement-overview.md)
 * [Build permission for shared datasets](../connect-data/service-datasets-build-permissions.md)
 * Questions? [Ask the Power BI Community](https://community.powerbi.com/)
