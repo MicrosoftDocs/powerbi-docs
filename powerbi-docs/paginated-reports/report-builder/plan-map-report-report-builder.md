@@ -1,7 +1,7 @@
 ---
 title: "Plan for adding a map to a Power BI paginated report | Microsoft Docs"
 description: Inspire action and insight with presentation of analytical data against a geographic background by using a map in your Power BI paginated reports in Power BI Report Builder. 
-ms.date: 01/25/2023
+ms.date: 02/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -15,7 +15,7 @@ ms.reviewer: saurkumar
 
 Good reports present information that leads to actions or insights. To present analytical data such as sales totals or demographics against a geographic background, you can add a map to your Power BI paginated report. A map can contain multiple layers, where each layer displays map elements that are defined by a specific type of spatial data: points that represent locations, lines that represent routes, or polygons that represent areas. You can associate your analytical data with map elements on each layer.  
 
-##  <a name="MapPurpose"></a> Specify the Purpose of the Map  
+##  <a name="MapPurpose"></a> Specify the purpose of the map  
  Good report design provides information that help users take actions to address issues. To create a useful, easily understood map display, decide what questions you want the map to help answer. For example, on a map you can visualize the following types of data to identify market opportunities:  
   
 -   Relative sales for each store.  
@@ -28,7 +28,7 @@ Good reports present information that leads to actions or insights. To present a
   
  After you identify the purpose of the map display, you must analyze what data you need. Analytical data comes from report datasets. Location data comes from spatial data sources that you must specify.  
   
-##  <a name="Data"></a> Specify the Spatial and Analytical Data  
+##  <a name="Data"></a> Specify the spatial and analytical data  
  You must specify which spatial and analytical data that you need.  
   
  Analytical data comes from a report dataset, from sample data included with a map from the map gallery, or from analytical data included with spatial data in an ESRI Shapefile.  
@@ -43,7 +43,7 @@ Good reports present information that leads to actions or insights. To present a
   
  After you identify which spatial data that you need, you must find a source for it.  
   
-### Find a Source for Spatial Data  
+### Find a source for spatial data  
  To find spatial data to use in your map, you can use the following sources:  
   
 -   Spatial data from SQL Server spatial data sources.  
@@ -56,7 +56,7 @@ Good reports present information that leads to actions or insights. To present a
   
  After you find the data that you want, you can embed the data in the report definition or retrieve the data dynamically when the report is processed. For more information, see [Balance Report Definition Size and Report Processing Time](#Embedding) later in this topic.  
   
-### Determine the Spatial Data and the Spatial Data Match Fields  
+### Determine the spatial data and the spatial data match fields  
  To display analytical data on a map and to vary the size, color, or marker type, you must specify fields that relate the spatial data and analytical data.  
   
  Spatial data must contain the following fields:  
@@ -67,7 +67,7 @@ Good reports present information that leads to actions or insights. To present a
   
  The match fields are used to relate the spatial data with the analytical data.  
   
-### Determine the Analytical Data and the Analytical Data Match Fields  
+### Determine the analytical data and the analytical data match fields  
  After you identify the spatial data, you must identify the analytical data. Analytical data can come from the following sources:  
   
 -   An existing report dataset. Fields are specified as simple field expressions, for example, [Sales] or =Fields!Sales.Value.  
@@ -80,7 +80,7 @@ Good reports present information that leads to actions or insights. To present a
   
  When you have identified the spatial data source, the spatial data, the analytical data source, the analytical data, and the match fields, you are ready to decide which type of map to add to your report.  
   
-##  <a name="MapType"></a> Choose a Map Type  
+##  <a name="MapType"></a> Choose a map type  
  When you run the Map wizard, you add a map and the first map layer to your report. The wizard enables you to add one of the following types of maps to your report:  
   
 -   A basic map that displays locations without associated analytical data.  
@@ -106,7 +106,7 @@ Good reports present information that leads to actions or insights. To present a
   
  You can customize the display or data options for each layer independently. For more information about customizing a map after you run a wizard, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs).  
   
-##  <a name="Legend"></a> Plan for Legends  
+##  <a name="Legend"></a> Plan for legends  
  To help your users interpret a map, you can add multiple map legends, a color scale, and a distance scale. When you design a map, plan where you want the legends to display. You can specify the following information about each legend:  
   
 -   **Legend location.** For example, legends can display inside or outside the viewport, and in 12 discrete locations relative to the viewport.  
@@ -123,7 +123,7 @@ Good reports present information that leads to actions or insights. To present a
   
  For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data) and [Change Map Legends, Color Scale, and Associated Rules &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-map-legends-color-scale-and-associated-rules-report-builder-and-ssrs).  
   
-##  <a name="Embedding"></a> Balance Report Definition Size and Report Processing Time  
+##  <a name="Embedding"></a> Balance report definition size and report processing time  
  Good report design for maps require that you balance the options that control report performance and report definition size. Map elements that are based on spatial data, or Bing map tiles, can be static and embedded in the report definition or dynamic and created every time the report is processed. You must assess the trade-offs for static or dynamic map data and find the balance that works for your circumstances. Consider the following information to make this decision:  
   
 -   Embedded map elements can significantly increase the size of the report definition, but reduce the time that is required to view the map in the report. Your report server might have size limits that you need to work with.  

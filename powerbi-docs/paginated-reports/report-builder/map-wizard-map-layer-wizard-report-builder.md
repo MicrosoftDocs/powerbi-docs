@@ -1,7 +1,7 @@
 ---
 title: "Map Wizard and Map Layer Wizard (Power BI Report Builder) | Microsoft Docs"
 description: Find out how to automate creating a map, adding a map layer, or changing map layer options with the Map Wizards or Map Layer Wizard in Power BI Report Builder.
-ms.date: 01/25/2023
+ms.date: 02/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -18,7 +18,10 @@ ms.reviewer: saurkumar
   
 -   **Spatial data source.** The location or connection to a source that provides spatial data, for example, the name of a SQL Server instance and a database that contains spatial data.
   
--   **Spatial data.** From the spatial data source, a field that contains sets of coordinates that specify locations.  (Note: IIRC Spatial data types are not supported)
+-   **Spatial data.** From the spatial data source, a field that contains sets of coordinates that specify locations.
+
+    > [!NOTE]
+    > IIRC Spatial data types are not supported.
   
 -   **Analytical data.** Analytical data to use to vary the map display, for example, annual store sales.  
   

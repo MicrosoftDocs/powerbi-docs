@@ -1,7 +1,7 @@
 ---
 title: "Add, change, or delete a map or map layer in a Power BI paginated report | Microsoft Docs"
 description: Learn how to add, remove, or change map options manually or by using the map layer wizard in a Power BI paginated report in Power BI Report Builder.
-ms.date: 02/14/2023
+ms.date: 02/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -18,7 +18,7 @@ ms.reviewer: saurkumar
   
  The easiest way to add, remove, or change options for a layer is to use the map layer wizard. You can also change options manually from the Map pane. To display the **Map** pane, select in the map on the report design surface. The following figure displays the parts of the pane:  
   
- ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.gif)  
+ ![Screenshot of the Map Layers section that points out the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.png)  
   
  Map layers are drawn from bottom to top in the order that they appear in the Map pane. In the previous figure, the tile layer is drawn first and the polygon layer is drawn last. Layers that are drawn later might hide map elements on layers that are drawn earlier. You can change the order of layers by using the arrow keys on the Map pane toolbar. To show or hide layers, toggle the visibility icon. You can change the transparency of a layer on the **Visibility** page of the **Layer Data** properties dialog box.  
   
@@ -58,7 +58,7 @@ The following table displays the toolbar icons for the **Map** pane.
 2.  On the toolbar, select the **Add Layer** button, and from the drop-down list, select the type of layer that you want to add: **Point**, **Line**, or **Polygon**.  
   
     > [!NOTE]  
-    >  Although you can add a map layer and configure it manually, we recommend that you use the map layer wizard to add new layers. To launch the wizard from the Map pane toolbar, select the layer wizard button (![rs_IconMapLayerWizard](/sql/reporting-services/media/rs-iconmaplayerwizard.gif "rs_IconMapLayerWizard")).  
+    >  Although you can add a map layer and configure it manually, we recommend that you use the map layer wizard to add new layers. To launch the wizard from the Map pane toolbar, select the layer wizard button :::image type="icon" source="media/rs-iconmaplayerwizard.gif" border="false":::.  
   
 3.  Right-click the layer, and then select **Layer Data**.  
   
@@ -197,11 +197,11 @@ The following table displays the toolbar icons for the **Map** pane.
   
 1.  Set **Visibility** options to control the display for a map layer.  
   
-    -   In the Map Layers pane, right-click a layer to select it, and on the Map Layers toolbar, select Properties to open **Map Layer Properties**.   
-    -   Select **Visibility**.  
-    -   In Layer visibility, select **Show or hide based on zoom value**.  
-    -   Enter minimum and maximum zoom values for when display the layer.  
-    -   Optional. Enter a value for transparency.  
+    a.   In the Map Layers pane, right-click a layer to select it, and on the Map Layers toolbar, select Properties to open **Map Layer Properties**.   
+    b.   Select **Visibility**.  
+    c.   In Layer visibility, select **Show or hide based on zoom value**.  
+    d.   Enter minimum and maximum zoom values for when display the layer.  
+    e.   Optional. Enter a value for transparency.  
   
      You can also conditionally hide the layer. For more information, see [Hide an Item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs).  
   
