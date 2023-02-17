@@ -68,7 +68,7 @@ To select from the available built-in report themes:
     | Classic | ![Diagram of the color sequence for the Classic theme.](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
     | City park | ![Diagram of the color sequence for the City park theme.](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
     | Classroom | ![Diagram of the color sequence for the Classroom theme.](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-    | Color blind safe | ![Diagram of the color sequence for the Color blind safe theme.](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+    | Color-blind safe | ![Diagram of the color sequence for the Color blind safe theme.](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
     | Electric | ![Diagram of the color sequence for the Electric theme.](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
     | High contrast | ![Diagram of the color sequence for the High contrast theme.](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
     | Sunset | ![Diagram of the color sequence for the Sunset theme.](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
@@ -92,8 +92,8 @@ You can customize and standardize most of the elements listed in the **Format** 
 
 You can customize report themes in the following ways:
 
-- [Customize and save a theme in Power BI Desktop](#customize-and-save-a-theme-in-power-bi-desktop)
-- [Create and customize a custom report theme JSON file](#introduction-to-report-theme-json-files)
+- Customize and save a [theme in Power BI Desktop](#customize-and-save-a-theme-in-power-bi-desktop)
+- Create and customize a [custom report theme JSON file](#report-theme-json-file-format)
 
 ### Customize and save a theme in Power BI Desktop
 
@@ -109,7 +109,7 @@ To customize a theme directly in Power BI Desktop, you can select a theme that's
 
 You can find customizable theme settings in the following categories, reflected in the **Customize theme** window:
 
-- **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stick-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#setting-structural-colors).
+- **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stick-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#set-structural-colors).
 - **Text**: Text settings include font family, size, and color, which sets [the primary text class defaults](#set-formatted-text-defaults) for labels, titles, cards and KPIs, and tab headers.
 - **Visuals**: Visual settings include background, border, header, and tooltips.
 - **Page**: Page element settings include wallpaper and background.
@@ -203,7 +203,7 @@ Want to get started with report themes? See the custom report themes in the [the
 - [Color-blind friendly theme](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597).
 This report theme is easier to read for the visually impaired. [Download ColorblindSafe-Longer.json](https://go.microsoft.com/fwlink/?linkid=843923).
 
-  ![Screenshot of the Colorblind Safe Longer JSON theme.](media/desktop-report-themes/report-themes_11.png).
+  ![Screenshot of the Color-blind Safe Longer JSON theme.](media/desktop-report-themes/report-themes_11.png)
 
 - Valentine's Day theme.
 
@@ -385,7 +385,7 @@ You can use the `bold` Boolean setting to adjust the format. To make the text bo
 - `titleBold`: true
 
 > [!TIP]
-> The *light* variations of text classes take their light color from the [structural colors](#setting-structural-colors) defined earlier.  If you are authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
+> The *light* variations of text classes take their light color from the [structural colors](#set-structural-colors) defined earlier.  If you are authoring a `dark theme`, set the color's `firstLevelElements` (matching the primary text color), `secondLevelElements` (matching the anticipated light color for text), and `background` (with sufficient contrast to both first- and second-level elements colors).
 
 See the following example theme that sets only the primary text classes:
 
@@ -503,7 +503,7 @@ With this defined, you can use autocomplete in Visual Studio Code to understand 
 
 ![Screenshot of using the report theme schema to identify available formatting options.  The autocomplete menu within Visual Studio Code shows available formatting options.](media/desktop-report-themes/report-themes-schema.png)
 
-## Tips for setting values
+### Tips for setting values
 
 Here are some helpful tips here about setting values.
 
