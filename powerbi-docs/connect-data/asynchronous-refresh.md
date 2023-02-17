@@ -21,7 +21,7 @@ The Power BI Refresh Dataset REST API can carry out dataset refresh operations a
 
 - Batched commits
 - Table and partition-level refresh
-- Incremental refresh policies
+- Applying incremental refresh policies
 - `GET` refresh details
 - Refresh cancellation
 
@@ -72,7 +72,7 @@ The following code shows a sample request:
 POST https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes
 ```
 
-The request body might resemble the following code:
+The request body might resemble the following example:
 
 ```json
 {
@@ -94,7 +94,7 @@ The request body might resemble the following code:
 ```
 
 > [!NOTE]
-> Only one refresh operation at a time is accepted for a dataset. If there's a current running refresh and another request is submitted, a `400 Conflict` HTTP status code returns.
+> The service accepts only one refresh operation at a time for a dataset. If there's a current running refresh and another request is submitted, a `400 Conflict` HTTP status code returns.
 
 ### Parameters
 
@@ -160,17 +160,17 @@ The following code shows an example of a response body:
 ```
 
 > [!NOTE]
-> Power BI might drop requests if too many requests are sent in a short period of time. Power BI does a refresh, queues the next request, and drops all others. By design, you can't query status on dropped requests.
+> Power BI might drop requests if there are too many requests in a short period of time. Power BI does a refresh, queues the next request, and drops all others. By design, you can't query status on dropped requests.
 
 ### Response properties
 
 |Name  |Type  |Description  |
 |---------|---------|---------|
 |`requestId`     |    Guid     |    The identifier of the refresh request. You need `requestId` to query for individual refresh operation status or cancel an in-progress refresh operation. |
-|`refreshType`   |   Enum      |    `OnDemand` indicates the refresh was triggered interactively through the Power BI portal.<br>`Scheduled` indicates the refresh was triggered by the dataset refresh schedule. <br>`ViaApi` indicates the refresh was triggered by an API call. <br>`ViaEnhancedApi` indicates that an enhanced refresh was triggered by an API call.   |
-|`startTime`     |    Date     |    Date and time of refresh start.     |
-|`endTime`     |   Date      |    Date and time of refresh end.     |
-|`status`     |  Enum       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates the refresh was disabled by selective refresh. <br>`Cancelled` indicates the refresh was canceled successfully.|
+|`refreshType`   |   String      |    `OnDemand` indicates the refresh was triggered interactively through the Power BI portal.<br>`Scheduled` indicates that a dataset refresh schedule triggered the refresh. <br>`ViaApi` indicates that an API call triggered the refresh. <br>`ViaEnhancedApi` indicates that an API call triggered an enhanced refresh.|
+|`startTime`     |    String     |    Date and time of refresh start.     |
+|`endTime`     |   String      |    Date and time of refresh end.     |
+|`status`     |  String       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates that selective refresh disabled the refresh. <br>`Cancelled` indicates the refresh was canceled successfully.|
 |`extendedStatus`     |    String     |   Augments the `status` property to provide more information.     |
 
 > [!NOTE]
@@ -186,7 +186,7 @@ GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top
 
 ## GET /refreshes/\<requestId>
 
-To check the status of a refresh operation, use the GET verb on the refresh object by specifying the `requestId`. If the operation is in progress, `status` returns `InProgress`. The following code shows an example of a response body:
+To check the status of a refresh operation, use the GET verb on the refresh object by specifying the `requestId`. If the operation is in progress, `status` returns `InProgress`, as the following response body example shows:
 
 ```json
 {
@@ -221,21 +221,21 @@ For example,
 DELETE https://api.powerbi.com/v1.0/myorg/groups/f089354e-8366-4e18-aea3-4cb4a3a50b48/datasets/cfafbeb1-8037-4d0c-896e-a46fb27ff229/refreshes/1344a272-7893-4afa-a4b3-3fb87222fdac
 ```
 
-## Limitations
+## Considerations and limitations
 
-The refresh operation has the following limitations:
+The refresh operation has the following considerations and limitations:
 
-### Standard refresh operations
+#### Standard refresh operations
 
 - You can't cancel scheduled or on-demand manual dataset refreshes by using `DELETE /refreshes/<requestId>`.
 - Scheduled and on-demand manual dataset refreshes don't support getting refresh operation details by using `GET /refreshes/<requestId>`.
 - Get details and Cancel are new operations for enhanced refresh only. Standard refresh doesn't support these operations.
 
-### Power BI Embedded
+#### Power BI Embedded
 
-If capacity is paused manually in the Power BI portal or by using PowerShell, or a system outage occurs, the status of any ongoing enhanced refresh operation remains `InProgress` for a maximum of six hours. If the capacity resumes within six hours, the refresh operation resumes automatically. If the capacity resumes after longer than six hours, the refresh operation might return a timeout error. The refresh operation must then be run again.
+If capacity is paused manually in the Power BI portal or by using PowerShell, or a system outage occurs, the status of any ongoing enhanced refresh operation remains `InProgress` for a maximum of six hours. If the capacity resumes within six hours, the refresh operation resumes automatically. If the capacity resumes after longer than six hours, the refresh operation might return a timeout error. You must then restart the refresh operation.
 
-### Dataset eviction
+#### Dataset eviction
 
 Power BI uses dynamic memory management to optimize capacity memory. If the dataset is evicted from memory during a refresh operation, the following error might return:
 
@@ -256,9 +256,15 @@ The solution is to rerun the refresh operation. To learn more about dynamic memo
 
 #### Refresh operation time limits
 
-The maximum amount of time for a *single refresh operation* is five hours. If the refresh operation does not successfully complete within the five-hour limit and `"retryCount"` is not specified, or `"retryCount": 0,` is specified in the request body, a timeout error is returned. If 1 or more is specified in `"retryCount"`, a new refresh operation with a five-hour limit is started. If subsequent retry operations fail, the service will continue to retry successful completion of a refresh operation up to the greater of the number of retries specified in `"retryCount"`, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh operation of the request.
+The maximum amount of time for a single refresh operation is five hours. If the refresh operation doesn't successfully complete within the five-hour limit, and `retryCount` isn't specified or is specified as `0` (the default) in the request body, a timeout error returns.
 
-When determining your dataset refresh solution by using enhanced refresh with the Refresh Dataset REST API, it's important to keep these time limits and the retryCount parameter in mind. A successful completion of a refresh operation can exceed five hours if an initial refresh operation fails and 1 or more is specified in `"retryCount"`. For example, if you request a refresh operation with `"retryCount": 1,`, and the initial retry operation fails at four hours from start time, a second refresh operation for that request is attempted. If that second refresh operation succeeds in three hours, the total time for successful execution of the refresh request is seven hours. If refresh operations regularly fail, exceed the five-hour time limit, or exceed your desired successful refresh operation times, consider reducing the amount of data being refreshed from the data source, split refresh into multiple requests, for example, a request for each table, or try specifying partialBatch in the commitMode parameter.
+If `retryCount` specifies `1` or another number, a new refresh operation with a five-hour limit starts. If this retry operation fails, the service continues to retry the refresh operation up to the greatest number of retries that `retryCount`specifies, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh request.
+
+When you plan your enhanced dataset refresh solution with the Refresh Dataset REST API, it's important to consider these time limits and the `retryCount` parameter. A successful refresh completion can exceed five hours if an initial refresh operation fails and `retryCount` specifies `1` or more.
+
+For example, if you request a refresh operation with `"retryCount": 1`, and the initial retry operation fails four hours from the start time, a second refresh operation for that request begins. If that second refresh operation succeeds in three hours, the total time for successful execution of the refresh request is seven hours.
+
+If refresh operations regularly fail, exceed the five-hour time limit, or exceed your desired successful refresh operation time, consider reducing the amount of data being refreshed from the data source. You can split refresh into multiple requests, for example a request for each table. You can also specify `partialBatch` in the `commitMode` parameter.
 
 ## Code sample
 
