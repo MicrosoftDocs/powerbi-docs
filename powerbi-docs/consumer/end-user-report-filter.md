@@ -38,7 +38,7 @@ In the Power BI service, reports keep any changes you make in the **Filters** pa
 
 To reset the **Filters** pane to the designer's defaults, select the **Reset** icon from the upper menu bar.
 
-:::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset default icon selected. .":::
+:::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset default icon selected.":::
 
 > [!NOTE]
 > If you don't see the **Reset to default** option, the report *designer* might have disabled it. The *designer* can lock specific filters so that you can't change them.
@@ -59,7 +59,7 @@ Some of the filters have **(All)** next to them. **(All)** means all values are 
 
 Anyone with permissions to view this report can interact with these filters.
 
-### View only those filters applied to a visual
+### View filters applied to a visual
 
 To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon:::image type="icon" source="media/end-user-report-filter/power-bi-filter-icon.png":::. Select that filter icon to see a pop-up with all the filters and slicers affecting that visual. The filters on the pop-up are the same filters displayed on the **Filters** pane, plus any other filters affecting the selected visual.
 
@@ -80,13 +80,13 @@ Types of filters in the pop-up pane include:
 
 In this example:
 
-1. **Included** lets you know the visual is cross-filtered. This means the states of Alabama and Texas have been selected on one of the other visuals on this report page. In this case, it's the map visual. The selection of those two states has eliminated data for all other states from displaying on the selected bar chart.  
-
 1. **Date** is a filter applied to all pages in this report.
+
+1. **Manufacturer is VanArsdel, Natura, Aliqui, or Pirum** is a filter applied to this visual.
 
 1. **Region is Central** and **Year is 2014** are filters applied to this report page.
 
-1. **Manufacturer is VanArsdel, Natura, Aliqui, or Pirum** is a filter applied to this visual.
+1. **Year** is a filter applied on this report page.
 
 ### Search in a filter
 
@@ -111,7 +111,7 @@ One way to search for data insights is to interact with the filters. You can cha
 
 ### Reset filter to default
 
-If you want keep the changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
+If you want to keep the changes you've made to the filters, select the **Reset** icon from the top menu bar.  This selection reverts the filters to their original state, as set by the report designer.
 
 :::image type="content" source="media/end-user-report-filter/power-bi-reset-icon.png" alt-text="Screenshot of the top menu bar with the Reset to default option selected.":::
 
@@ -119,7 +119,7 @@ If you want keep the changes you've made to the filters, select the **Reset** ic
 
 To reset a filter to (All), clear it by selecting the eraser icon next to the filter name.
 
- :::image type="content" source="media/end-user-report-filter/power-bi-erase.png" alt-text="Screenshot of a report with the Filters pane expanded and the raser icon selected.":::
+ :::image type="content" source="media/end-user-report-filter/power-bi-erase.png" alt-text="Screenshot of a report with the Filters pane expanded and the eraser icon selected.":::
   
 <!--  too much detail for consumers
 
