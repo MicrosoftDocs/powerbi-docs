@@ -50,6 +50,8 @@ ms.reviewer: saurkumar
 2.  Right-click the report parameter and click **Delete**.  
   
 ## Next steps  
+
+ See how your customers [view parameters for paginated reports in the Power BI service](../../consumer/paginated-reports-view-parameters.md)
  [Add, Change, or Delete Available Values for a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-available-values-for-a-report-parameter.md)   
  [Add, Change, or Delete Default Values for a Report Parameter &#40;Power BI Report Builder&#41;](add-change-or-delete-default-values-for-a-report-parameter.md)   
  [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs)   

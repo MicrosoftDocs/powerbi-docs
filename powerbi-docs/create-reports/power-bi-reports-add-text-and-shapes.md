@@ -8,7 +8,7 @@ ms.custom: video-3q6VEBhGew, video-RWDX9z
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/21/2022
+ms.date: 02/16/2023
 LocalizationGroup: Visualizations
 ---
 # Add text boxes, shapes, and smart narrative visuals to Power BI reports
@@ -47,13 +47,13 @@ This procedure uses the Retail Analysis sample available in the Power BI service
 
    ![Screenshot of the text box on the canvas.](media/power-bi-reports-add-text-and-shapes/power-bi-position-text-box.png)
 
-3. Type your text into the text box. You can then set the format font style, including color, size, and subscript or superscript, and text alignment, including bulleted lists.
+3. Type your text into the text box. You can then set the format font style, including color, size, and subscript or superscript, and text alignment, including indents and bulleted lists.
 
 4. With the text box still selected, add other formatting in the **Format text box** pane. In this example, the text has a theme color, and added bullets and superscript. You can also specify an exact size and position for a text box.  
 
-   ![Screenshot of the text box with example font, font size, and alignment.](media/power-bi-reports-add-text-and-shapes/power-bi-formatting.png)
+   ![Screenshot of the text box with example font, font size, and alignment.](media/power-bi-reports-add-text-and-shapes/power-bi-text-formatting.png)
 
-5. When you've finished editing the text box, select any blank space on the report canvas.
+5. When you finish editing the text box, select any blank space on the report canvas.
 
 6. In the Power BI service, you can also pin a text box to a dashboard. Select the pin icon, then select the dashboard where you want to pin it.
 
