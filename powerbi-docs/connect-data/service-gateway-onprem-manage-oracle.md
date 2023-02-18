@@ -90,7 +90,7 @@ You might get one of the following Oracle errors when the naming syntax is eithe
 * `ORA-12170: TNS:connect timeout occurred.`
 * `ORA-12504: TNS:listener was not given the SERVICE_NAME in CONNECT_DATA.`
 
-These errors might occur if ODAC isn't installed or configured properly. If ODAC is installed, verify that the *tnsnames.ora* file is properly configured and you're using the proper `net_service_name`. Also make sure that the `net_service_name` is the same between the machine that uses Power BI Desktop and the machine that runs the gateway.
+These errors might occur if ODAC isn't installed or isn't configured properly. If ODAC is installed, verify that the *tnsnames.ora* file is properly configured and you're using the proper `net_service_name`. Also make sure that the `net_service_name` is the same between the machine that uses Power BI Desktop and the machine that runs the gateway.
 
 You might also encounter a compatibility issue between the Oracle server version and the ODAC version. Typically, these versions should match, because some combinations are incompatible. For instance, ODAC 12.x doesn't support Oracle Server version 9.
 
