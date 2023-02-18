@@ -26,11 +26,11 @@ Supported Oracle versions are:
 - Oracle Server 9 and later.
 - Oracle Data Access Components (ODAC) software 11.2 and later.
 
-When you install the ODAC client:
+When you install the client:
 
 - Choose an ODAC version that's compatible with your Oracle server. For instance, ODAC 12.x doesn't always support Oracle Server version 9.
 - Choose the Windows installer.
-- During Oracle client setup, make sure to select the checkbox next to **Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level** in the setup wizard so that Power BI can connect to your Oracle database. Some versions of the setup wizard select this checkbox by default and others don't.
+- During setup, make sure to select the checkbox next to **Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level** in the setup wizard so that Power BI can connect to your Oracle database. Some versions of the setup wizard select this checkbox by default and others don't.
 
 After you install the client and configure ODAC properly, use Power BI Desktop or another test client to verify correct installation and configuration on the gateway.
 
