@@ -8,7 +8,7 @@ ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 02/17/2023
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -87,6 +87,11 @@ The following table shows the available built-in report themes.
 | High contrast | ![Diagram of the color sequence for the High contrast theme.](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
 | Sunset | ![Diagram of the color sequence for the Sunset theme.](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
 | Twilight | ![Diagram of the color sequence for the Twilight theme.](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+| Accessible default | :::image type="content" source="media/desktop-report-themes/accessible-theme-default.png" alt-text="Diagram of the color sequence for the Accessible default theme."::: |
+| Accessible city park |:::image type="content" source="media/desktop-report-themes/accessible-theme-city-park.png" alt-text="Diagram of the color sequence for the Accessible city park theme."::: |
+| Accessible tidal | :::image type="content" source="media/desktop-report-themes/accessible-theme-tidal.png" alt-text="Diagram of the color sequence for the Accessible tidal theme.":::|
+| Accessible neutral | :::image type="content" source="media/desktop-report-themes/accessible-theme-neutral.png" alt-text="Diagram of the color sequence for the Accessible neutral theme."::: |
+| Accessible orchid |:::image type="content" source="media/desktop-report-themes/accessible-theme-orchid.png" alt-text="Diagram of the color sequence for the Accessible orchid theme."::: |
 
 
 ## Customize report themes
