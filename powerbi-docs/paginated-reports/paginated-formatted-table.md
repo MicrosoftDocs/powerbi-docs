@@ -7,7 +7,7 @@ ms.reviewer: ebendinsky
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/13/2022
+ms.date: 02/17/2023
 ---
 
 # Create exportable paginated reports in the Power BI service
