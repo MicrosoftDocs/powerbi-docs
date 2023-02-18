@@ -20,17 +20,17 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 <a name="install-the-oracle-client"></a>
 ## Connect to an Oracle database
 
-To connect to an Oracle database with the on-premises data gateway, [download and install the 64-bit Oracle client](https://www.oracle.com/database/technologies/net-downloads.html) on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, which always matches the 64-bit gateway.
+To connect to an Oracle database with the on-premises data gateway, [download and install the 64-bit Oracle Client](https://www.oracle.com/database/technologies/net-downloads.html) on the computer running the gateway. The Oracle client software you use depends on the Oracle server version, which always matches the 64-bit gateway.
 
 Supported Oracle versions are: 
 - Oracle Server 9 and later.
-- Oracle Data Access Client (ODAC) software 11.2 and later.
+- Oracle Data Access Components (ODAC) software 11.2 and later.
 
 When you install the ODAC client:
 
 - Choose an ODAC version that's compatible with your Oracle server. For instance, ODAC 12.x doesn't always support Oracle Server version 9.
 - Choose the Windows installer.
-- Make sure to select the checkbox next to **Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level** in the setup wizard so that Power BI can connect to your Oracle database. Some versions of the ODAC setup wizard configure this capability by default and others don't.
+- During Oracle client setup, make sure to select the checkbox next to **Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level** in the setup wizard so that Power BI can connect to your Oracle database. Some versions of the setup wizard select this checkbox by default and others don't.
 
 After you install the client and configure ODAC properly, use Power BI Desktop or another test client to verify correct installation and configuration on the gateway.
 
@@ -90,7 +90,7 @@ You might get one of the following Oracle errors when the naming syntax is eithe
 * `ORA-12170: TNS:connect timeout occurred.`
 * `ORA-12504: TNS:listener was not given the SERVICE_NAME in CONNECT_DATA.`
 
-These errors might occur if ODAC isn't installed or isn't configured properly. If ODAC is installed, verify that the *tnsnames.ora* file is properly configured and you're using the proper `net_service_name`. Also make sure that the `net_service_name` is the same between the machine that uses Power BI Desktop and the machine that runs the gateway.
+These errors might occur if the Oracle client isn't installed or isn't configured properly. If the client is installed, verify that the *tnsnames.ora* file is properly configured and you're using the proper `net_service_name`. Also make sure that the `net_service_name` is the same between the machine that uses Power BI Desktop and the machine that runs the gateway.
 
 You might also encounter a compatibility issue between the Oracle server version and the ODAC version. Typically, these versions should match, because some combinations are incompatible. For instance, ODAC 12.x doesn't support Oracle Server version 9.
 
