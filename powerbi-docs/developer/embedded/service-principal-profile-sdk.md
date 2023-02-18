@@ -7,7 +7,7 @@ ms.reviewer: mshmordo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 03/27/2022
+ms.date: 02/18/2023
 ---
 
 # Use the Power BI SDK with service principal profiles
@@ -27,7 +27,7 @@ var profileObjectId = new Guid("81f24a6d-7ebb-4478-99c7-2c36f7870a26");
 var powerBIclient = new PowerBIClient(credentials, profileObjectId: profileObjectId);
 ```
 
-When you create a Power BI client with the profile object ID, every API call that uses the client is issued with the `X-PowerBI-profile-id` in the request header.
+When you create a Power BI client with the profile object ID, every API call that uses the client has the `X-PowerBI-profile-id` in the request header.
 
 For example,
 
@@ -41,7 +41,7 @@ X-PowerBI-profile-id: 81f24a6d-7ebb-4478-99c7-2c36f7870a26
 
 ## Set profile on API request call
 
-Alternatively, you can specify the profile ID in the API request by using the `customHeaders` property in the API’s overloaded PowerBIClient method `WithHttpMessagesAsync`.
+Alternatively, you can specify the profile ID in the API request by using the `customHeaders` property in the API's overloaded PowerBIClient method `WithHttpMessagesAsync`.
 
 ```csharp
 var powerBIclient = new PowerBIClient(credentials); 
@@ -59,9 +59,9 @@ Authorization: Bearer eyJ0eXAiO.....5U_g
 X-PowerBI-profile-id: 81f24a6d-7ebb-4478-99c7-2c36f7870a26 
 ```
 
-In the case, the profile header will *not* be added to the client default headers. You need to specify it with every API request.
+In the preceding code sample, the profile header *isn't* part of the client default headers, because the code doesn't add the profile header. You need to specify the profile header with every API request.
 
-Make sure you avoid duplications. For example, creating a client with a profile object ID and then specifying the header with the API request will result in unauthorized errors.  
+Make sure you avoid duplications. For example, creating a client with a profile object ID and then specifying the header with the API request results in unauthorized errors.  
 
 ## Get the current service principal profile from Power BI client
 
@@ -75,7 +75,7 @@ var currentProfileObjectId = powerBIclient.GetServicePrincipalProfileObjectId();
 
 ## Considerations and Limitations
 
-Service principal profiles are not supported with Azure Analysis Services (AAS) in live connection mode.
+There's no support for service principal profiles with Azure Analysis Services (AAS) in live connection mode.
 
 ## Next steps
 
