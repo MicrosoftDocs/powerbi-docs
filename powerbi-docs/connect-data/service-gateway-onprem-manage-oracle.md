@@ -40,12 +40,12 @@ After you install the client and configure ODAC properly, use Power BI Desktop o
 
 1. Fill in the information for the data source, which includes **Server** and **Database**.
 
-   Under **Authentication method**, you can choose either **Windows** or **Basic**. Choose **Basic** if you plan to use an account that's created within Oracle instead of Windows authentication. Then enter the credentials to be used for this data source.
+   Under **Authentication method**, you can choose either **Windows** or **Basic**. Choose **Basic** if you plan to use an account created within Oracle instead of Windows authentication. Then enter the credentials to use for this data source.
 
    > [!NOTE]
    > All queries to the data source run under these credentials. To learn more about credential storage, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-   Configure the **Privacy level** for your data source. This setting controls how data can be combined for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+   Configure the **Privacy level** for your data source. This setting controls how data can combine for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
    :::image type="content" source="media/service-gateway-onprem-manage-oracle/authentication-oracle.png" alt-text="Screenshot of filling in credentials and privacy level for the Oracle data source." :::
 
@@ -78,7 +78,7 @@ After you publish reports, either from Power BI Desktop or by getting data in Po
 
 ### Use the data source with scheduled refresh
 
-If you're listed in the **Users** tab of the data source configured within the gateway, and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
+If you're in the **Users** list of the data source configured within the gateway, and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
 
 ![Screenshot that shows the gateway connection settings.](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
@@ -86,13 +86,13 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 You might get one of the following errors from Oracle when the naming syntax is either incorrect or not configured properly:
 
-* ORA-12154: TNS:could not resolve the connect identifier specified.
-* ORA-12514: TNS:listener does not currently know of service requested in connect descriptor.
-* ORA-12541: TNS:no listener.
-* ORA-12170: TNS:connect timeout occurred.
-* ORA-12504: TNS:listener was not given the SERVICE_NAME in CONNECT_DATA.
+* `ORA-12154: TNS:could not resolve the connect identifier specified.`
+* `ORA-12514: TNS:listener does not currently know of service requested in connect descriptor.`
+* `ORA-12541: TNS:no listener.`
+* `ORA-12170: TNS:connect timeout occurred.`
+* `ORA-12504: TNS:listener was not given the SERVICE_NAME in CONNECT_DATA.`
 
-These errors might occur if the Oracle client isn't installed or isn't configured properly. If the client is installed, verify that the *tnsnames.ora* file is properly configured and you're using the proper `net_service_name`. You also need to make sure that the `net_service_name` is the same between the machine that uses Power BI Desktop and the machine that runs the gateway.
+These errors might occur if the Oracle client isn't installed or configured properly. If the client is installed, verify that the *tnsnames.ora* file is properly configured and you're using the proper `net_service_name`. You also need to make sure that the `net_service_name` is the same between the machine that uses Power BI Desktop and the machine that runs the gateway.
 
 You might also encounter a compatibility issue between the Oracle server version and the ODAC version. Typically, these versions should match, because some combinations are incompatible. For instance, ODAC 12.x doesn't support Oracle Server version 9.
 
