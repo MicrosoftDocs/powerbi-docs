@@ -18,8 +18,8 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 
 ![Screenshot of Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png)
 
-| Click for option details | | |
-|:---------|:---------|:---------|
+| Click for option details ||
+|:---------|:---------|
 |[Info](#data-info)     | [Add-in options](#add-in-options)        |
 |[Data options](#data-options)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |
 |[Style options](#style-options)     | [Add-in side menu](#add-in-side-pane)        |
@@ -110,7 +110,7 @@ Controls that help you work with your data in PowerPoint are described below.
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-data-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint data options menu.":::
 
 * **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
-* **Data Insights**: Generates [insights](../create-reports/insights.md) and copies them to the clipboard as text.
+* **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
 * **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh does not trigger getting data from the data sources.
 * **Reset**: Restores the state of the report page or visual to the state it was in when it was first added to the PowerPoint presentation.
 
