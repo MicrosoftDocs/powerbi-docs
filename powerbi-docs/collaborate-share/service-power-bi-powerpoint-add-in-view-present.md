@@ -18,13 +18,11 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 
 ![Screenshot of Power B I report page in PowerPoint, with controls labeled.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-report-page-controls.png)
 
-Select the links below for more information about the options.
-
-| asdf  | | |
-|---------|---------|---------|
-|[Info](#data-info)     | [Add-in options](#add-in-options)        | Filter pane        |
-|[Data options](#data-options)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |         |
-|[Style options](#style-options)     | [Add-in side menu](#add-in-side-pane)        |         |
+| Click for option details | | |
+|:---------|:---------|:---------|
+|[Info](#data-info)     | [Add-in options](#add-in-options)        |
+|[Data options](#data-options)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |
+|[Style options](#style-options)     | [Add-in side menu](#add-in-side-pane)        |
 
 ## Understanding what you see
 
@@ -60,15 +58,17 @@ To give an outline to the add-in, open **[Style options](#style-options)** and s
 
 ## Enrich your presentation with data insights
 
-Data insights help you explore and find insights such as anomalies and trends in your data as you interact and consume your reports.  Insights for individual visuals analyzes and explains the fluctuations of data points in visuals.
+Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights which you can then paste directly onto your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-pasted-in.png" alt-text="Screenshot showing presentation with insight next to a visual.":::
+
+To generate data insights:
 
 1. Select **Data options > Data insights**.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-data-insights-option.png" alt-text="Screenshot showing Data insights pasted into slide and notes.":::
 
-1. The insight appears as editable text in the **Data insights** dialog. When you are satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example. 
+1. The insight appears in the **Data insights** dialog. The text is editable and you can change it as desired. When you are satisfied with the text, you can either paste it directly onto the slide as a PowerPoint textbox, or you can copy it onto the clipboard, from where you paste it wherever you like - into the slide notes, for example. 
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-insights-dialog.png" alt-text="Screenshot of insights dialog.":::
 
