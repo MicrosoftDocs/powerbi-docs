@@ -54,7 +54,7 @@ The tables below list the data that is shared with Microsoft 365 services.
 
 **Artifact metadata that is mainly used when using the "search" mechanism to look for Power BI content within your Microsoft 365 services**
 
-||Property|What is Shared|Example|
+|Property|What is Shared|Example|
 |---------|---------|---------|---------|
 |TenantID|Azure AD Tenant Identifier|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
 |Artifact ID|Identifier for the Content Item (report, app, dashboard, scorecard etc.)|762049eb-7a69-4c39-bf19-75a5b7fcce1d|
@@ -74,7 +74,7 @@ The tables below list the data that is shared with Microsoft 365 services.
 
 **User activity that is leveraged for showing Power BI content within your "Recents" and "Recommended" sections at Office.com**
 
-||Property|What is Shared|Example|
+|Property|What is Shared|Example|
 |---------|---------|---------|---------|
 |LastRefreshDate|Last refresh date for the content|2011-06-30T23:32:46Z|
 |UserID|Azure AD User Principal Name for the user who acted on the content|user1@griffin1.org|
