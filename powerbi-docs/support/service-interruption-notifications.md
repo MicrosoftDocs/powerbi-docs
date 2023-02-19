@@ -27,10 +27,6 @@ Notifications are sent when there's an _extended delay_ in operations like openi
 > [!NOTE]
 > This feature is currently available only for capacities in Power BI Premium. It's not available for shared or embedded capacity.
 
-## Capacity and reliability notifications
-
-
-
 ## Enable notifications for service outages or incidents
 
 A Power BI admin can enable notifications for service outages or incidents in the admin portal:
