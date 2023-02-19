@@ -171,9 +171,9 @@ Error -1052311437: We had to move the session with ID '<Session ID>' to another 
 
 This is an informational message that can be ignored in SSMS 18.8 and higher because the client libraries will reconnect automatically. Note that client libraries installed with SSMS v18.7.1 or lower do not support session tracing. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
-### Refresh operations in SSMS
+### Executing a large command using the XMLA endpoint
 
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Power BI Premium or a [Power BI Embedded](/power-bi/developer/embedded/embedded-analytics-power-bi) capacity, SSMS may display an error like the following even though the refresh operation succeeds:
+When executing a large command using the XMLA endpoint, you may encounter the following error:
 
 ```
 Executing the query ...
@@ -186,11 +186,13 @@ Date (UTC): 11/13/2020 7:57:16 PM
 Run complete
 ```
 
-This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Power BI Premium or a [Power BI Embedded](/power-bi/developer/embedded/embedded-analytics-power-bi) capacity, SSMS may display this error even though the refresh operation succeeds. This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
-If you're encountering this error when refreshing a big dataset, it could be due to the payload limit. As a workaround, create an empty database and then use the `createorreplace` command to modify the empty database's content.
+This error can also occur when a very large request needs to be redirected to a different node in the Premium cluster. It's often seen when you try to create or alter a dataset using a large TMSL script. In such cases, the error can usually be avoided by specifying the Initial Catalog to the name of the database before executing the command.
 
-```
+When creating a new database, you can create an empty dataset, for example:
+
+```json
 {   
   "create": {   
     "database": {   
@@ -199,6 +201,8 @@ If you're encountering this error when refreshing a big dataset, it could be due
   }   
 } 
 ```
+
+After you create the new dataset, specify the Initial Catalog and then make changes to the dataset.
 
 ### Other client applications and tools
 
