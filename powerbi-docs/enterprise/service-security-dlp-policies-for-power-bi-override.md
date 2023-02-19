@@ -29,6 +29,9 @@ The action or combination of actions you see may vary depending on the policy co
 >[!NOTE]
 > Any action you take will be recorded in the audit log where it can be reviewed by security admins.
 
+>[!NOTE]
+> A policy tip is there to flag sensitive infromation found in your dataset. If you are the owner of this data and find that this sensitive data is misplaced, by removing it from the dataset and refreshing/republishing the dataset, the policy will be triggered again and the tip will be removed now that sensitive data is no longer found.
+
 ## Next steps
 
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
