@@ -7,7 +7,7 @@ ms.reviewer: 'jadelynray'
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/21/2022
+ms.date: 02/19/2023
 Customer intent: As a Power BI admin, I need to know what information is passed from Power BI and Microsoft Graph to Microsoft 365.
 LocalizationGroup: Admin
 ---
@@ -34,12 +34,19 @@ To enable sharing Power BI metadata with Microsoft 365 services, a Power BI admi
 
 ## Data residency
 
-If Power BI and your Microsoft 365 services are in different geographic regions, information may flow outside the region it's stored in. By enabling this setting, the Power BI administrator explicitly opts in to this feature, and acknowledges enabling these cross-service capabilities may result in Power BI metadata flowing outside the geographic region it's stored in. For more information, see [Where data is located when Power BI data is shared with your Microsoft 365 services](./service-admin-m365-data-access-storage.md).
+Power BI and Microsoft 365 are distinct and separately operated Microsoft cloud services each deployed according to their own service specific data center alignment rules, even when purchased together. Accordingly, your Microsoft 365 Services and Power BI service may not be deployed in the same geographic region.
 
-References:
-* [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
-* [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/trust-center/privacy/data-location)
-* [Where data is located when Power BI data is shared with your Microsoft 365 services](./service-admin-m365-data-access-storage.md)
+[!INCLUDE [share metadata across regions](../includes/share-metadata-across-regions.md)]
+
+### Where Power BI data is stored
+
+For more information about data storage locations, see [Find the default region for your organization](./service-admin-where-is-my-tenant-located.md) and [Product Availability by Geography](https://powerplatform.microsoft.com/availability-reports/)
+
+For more information, see:
+
+### Where Microsoft 365 data is stored
+
+For more information about data storage for Microsoft 365, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations) and [Multi-Geo Capabilities in Microsoft 365](https://www.microsoft.com/microsoft-365/business/multi-geo-capabilities).
 
 ## Data that will be shared with Microsoft 365
 
@@ -77,7 +84,5 @@ The tables below list the data that is shared with Microsoft 365 services.
 
 ## Next steps
 
-* [Share data with your Microsoft 365 services tenant settings](service-admin-portal-share-data-microsoft-365-services.md)
-* [Where data is located when Power BI data is shared with your Microsoft 365 services](./service-admin-m365-data-access-storage.md)
-
-Got feedback? We'd love to hear it at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
+>[!div class="nextstepaction"]
+>[Share data with your Microsoft 365 services tenant settings](service-admin-portal-share-data-microsoft-365-services.md)
