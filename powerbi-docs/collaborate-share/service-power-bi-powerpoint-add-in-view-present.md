@@ -52,7 +52,7 @@ If you need to present a slide show multiple times, you most likely want to set 
 
 ## Add styles to your presentation
 
-You can improve the appearance of your presentation by applying styles to the add-in. Currently can put an outline around the add-in to give it a clear definition on the slide. 
+You can improve the appearance of your presentation by applying styles to the add-in. Currently, you can put an outline around the add-in to give it a clear definition on the slide.
 
 To give an outline to the add-in, open **[Style options](#style-options)** and select **Outline**.  
 
