@@ -432,6 +432,8 @@
       href: service-metrics-status-rules.md
     - name: "Stay on top of your metrics"
       href: service-goals-check-in.md        
+    - name: "Follow your metrics"
+      href: service-metrics-follow.md        
     - name: "Set metric-level permissions"
       href: service-goals-set-permissions.md
     - name: "Arrange metrics and columns in scorecards"
@@ -526,28 +528,12 @@
         href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
-    - name: Paginated reports FAQ
-      href: ../paginated-reports/paginated-reports-faq.yml
-    - name: Paginated reports capacity planning
-      href: ../paginated-reports/paginated-capacity-planning.md      
-    - name: Process large reports
-      href: ../paginated-reports/report-design/process-large-reports.md      
-    - name: Sample Power BI paginated reports
-      href: ../paginated-reports/paginated-reports-samples.md
-    - name: Plan to migrate .rdl reports to Power BI
-      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
-    - name: Publish .rdl files to Power BI
-      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
-    - name: Tables, matrixes, lists
-      href: ../paginated-reports/report-builder-tables-matrices-lists.md
     - name: Parameters
       items:
       - name: Parameters
-        href: ../paginated-reports/report-builder-parameters.md
+        href: ../paginated-reports/parameters/report-builder-parameters.md
       - name: Report parameter concepts in paginated reports
         href: ../paginated-reports/parameters/report-parameters-concepts-report-builder.md
-      - name: Create parameters
-        href: ../paginated-reports/paginated-reports-parameters.md
       - name: Create parameters
         href: ../paginated-reports/parameters/paginated-reports-create-parameters.md
       - name: URL parameters in paginated reports
@@ -576,6 +562,20 @@
         href: ../paginated-reports/parameters/add-cascading-parameters-report-builder.md
       - name: Define parameters in DAX for Analysis Services data source
         href: ../paginated-reports/parameters/define-parameters-in-the-dax-query-designer-for-analysis-services.md
+    - name: Paginated reports FAQ
+      href: ../paginated-reports/paginated-reports-faq.yml
+    - name: Paginated reports capacity planning
+      href: ../paginated-reports/paginated-capacity-planning.md      
+    - name: Process large reports
+      href: ../paginated-reports/report-design/process-large-reports.md      
+    - name: Sample Power BI paginated reports
+      href: ../paginated-reports/paginated-reports-samples.md
+    - name: Plan to migrate .rdl reports to Power BI
+      href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Publish .rdl files to Power BI
+      href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
+    - name: Tables, matrixes, lists
+      href: ../paginated-reports/report-builder-tables-matrices-lists.md
     - name: Process large reports
       href: ../paginated-reports/report-design/process-large-reports.md      
     - name: Sample Power BI paginated reports
