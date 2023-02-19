@@ -60,7 +60,7 @@ You can tune the behavior of the workloads, by configuring workload settings for
 Use the [Power BI Premium utilization and metrics app](../enterprise/service-premium-metrics-app.md) to monitor your capacity's activity.
 
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications).
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. For more information, see [Notifications](../admin/service-admin-premium-capacity-notifications.md).
 
 ## AI (Preview)
 
