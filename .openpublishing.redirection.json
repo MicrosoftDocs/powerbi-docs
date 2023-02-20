@@ -2351,8 +2351,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-connect-azure-consumption-insights.md",
-            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-consumption-insights",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-cost-management",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-azure-consumption-insights.md",
+            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-cost-management",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-azure-cost-management.md",

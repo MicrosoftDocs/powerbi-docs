@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 02/10/2023
 LocalizationGroup: Data from files
 ---
 
@@ -76,10 +76,7 @@ The following limitations should be considered when using datamarts:
 * Data sources behind a VNET or using private links can't currently be used with datamarts; to work around this limitation you can use an on-premises data gateway.
 * Datamarts use port 1948 for connectivity to the SQL endpoint. Port 1433 needs to be open for datamarts to work.
 * Datamarts only support Microsoft Azure Active Directory (Azure AD) and do *not* support managed identities or service principals at this time.
-
-* Datamarts currently support the following SQL clients:
-    * SSMS
-    * Azure Data Studio
+* Beginning February 2023, datamarts support any SQL client.
 * Datamarts aren't currently available in the following Azure regions:
     * Sweden Central and South
     * West India

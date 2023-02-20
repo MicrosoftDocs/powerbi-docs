@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 08/13/2021
+ms.date: 02/10/2023
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop
@@ -106,7 +106,7 @@ In the cases of image tagging and key phrase extraction, the results can return 
 
 While editing in Power Query and performing refreshes in Power BI Desktop, Text Analytics and Vision use the Premium capacity that was selected in Power Query Editor. After publishing the report to Power BI, it uses the Premium capacity of the workspace into which it was published.
 
-Reports with applied Text Analytics and Vision functions should be published to a workspace that is not on a Premium capacity, otherwise refreshing the dataset will fail.
+Reports with applied Text Analytics and Vision functions should be published to a workspace that is on a Premium capacity, otherwise refreshing the dataset will fail.
 
 ### Managing impact on a Premium capacity
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 02/17/2023
 ---
 
 # Power BI data sources
@@ -121,7 +121,6 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
 | Microsoft Exchange | Yes | Yes | No | No | No | No |
 | Microsoft Exchange Online individual accounts  <sup>8</sup> | Yes | Yes | No | No | No | Yes |
-| Microsoft Graph Security | Yes | Yes | No | Yes | No | Yes |
 | Mixpanel | Yes | Yes | No | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes | Yes |
 | OData | Yes | Yes | No | Yes | No | Yes |
@@ -189,7 +188,6 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Vertica | Yes | Yes | Yes | Yes | Yes | Yes |
 | Web | Yes | Yes | No | Yes | Yes <sup>5</sup> | Yes |
 | Webtrends | Yes | Yes | No | No | No | Yes |
-| Workforce Dimensions | Yes | Yes | No | Yes | No | Yes |
 | Workplace Analytics | Yes | Yes | No | Yes | No | No |
 | XML | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
 | Zendesk | Yes | Yes | No | No | No | No |
