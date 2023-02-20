@@ -19,11 +19,9 @@ You can add both individual visuals and whole report pages to your PowerPoint sl
 * When you add a whole report page, the left-hand page navigation pane isn't brought in by the add-in, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
 * Adding individual visuals is useful when you want your slide to focus on a single visualization - chart, graph, table, etc.
 
-To add live Power BI data to a PowerPoint slide, you first need to get the URL or the report page or visual. You then [paste the URL into the Power BI add-in in PowerPoint.
+To add live Power BI data to a PowerPoint slide, you first need to get the URL or the report page or visual. You then paste the URL into the Power BI add-in in PowerPoint.
 
-* [Get the URL of a whole report page](#get-the-url-of-a-report-page)
-
-* [Get the URL of an individual visual](#get-the-url-of-an-individual-visual)
+* Get the URL: [Whole report page](#get-the-url-of-a-report-page) | [Individual visual](#get-the-url-of-an-individual-visual)
 
 * [Paste the URL into the Power BI add-in in PowerPoint](#paste-the-url-of-a-report-or-visual-into-the-add-in)
 
