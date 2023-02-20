@@ -14,12 +14,12 @@ ms.date: 02/20/2023
 
 # Add live Power BI data to PowerPoint
 
-You can add both individual visuals and whole report pages to your PowerPoint slides.
+With the Power BI add-in for PowerPoint, you can add both individual visuals and whole report pages to your PowerPoint slides.
 
 * When you add a whole report page, the left-hand page navigation pane isn't brought in by the add-in, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
 * Adding individual visuals is useful when you want your slide to focus on a single visualization - chart, graph, table, etc.
 
-To add live Power BI data to a PowerPoint slide, you first need to get the URL or the report page or visual. You then paste the URL into the Power BI add-in in PowerPoint.
+To add live Power BI data to a PowerPoint slide, you first need to get the URL of the report page or visual. You then paste the URL into the Power BI add-in in PowerPoint.
 
 * Get the URL: [Report page](#get-the-url-of-a-report-page) | [Visual](#get-the-url-of-a-visual)
 
@@ -27,7 +27,7 @@ To add live Power BI data to a PowerPoint slide, you first need to get the URL o
 
 ## Get the URL of a report page
 
-There are three ways to get the report page URL:
+If you want to add a live report page to your presentation, you need to have it's URL. There are three ways to get the report page URL:
 
 * Through the **Share** option
 * Through the **Export** option
@@ -36,7 +36,7 @@ There are three ways to get the report page URL:
 These methods differ in whether or not they can preserve the report page's current state, and what permissions people who open the PowerPoint presentation will have for viewing the report. The table below summarizes the differences.
 
 | URL source | URL can preserve current state | Can users who open the presentation view the report? |
-|---------|---------|---------|
+|:---------|:---------|:---------|
 | Share     | Yes        | Yes, if you grant read permissions when generating the shareable link.        |
 | Export     | Yes         |  Depends on the user's Power BI permissions |
 | Address bar     | No        |  Depends on the user's Power BI permissions |
@@ -88,7 +88,9 @@ In the Power BI service, open the report to the page you want to insert, copy th
 
 ---
 
-## Get the URL of a visual 
+## Get the URL of a visual
+
+If you want to add a live visual to your presentation, you need to have it's URL. The easiest way to get a visual's URL is as follows.
 
 1. In the Power BI service, open the report to the page that has the visual you want to insert. If desired, configure the visual to the desired state using filters, selection, slicers, etc.
 
