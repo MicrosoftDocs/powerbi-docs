@@ -50,7 +50,7 @@ If a text item, like a dataset, is different, hover over it to see the **Change 
 
 :::image type="content" source="./media/deployment-pipelines-compare/granular-change-button.png" alt-text="Screenshot showing the change review button next to an item.":::
 
-If [there's nothing to compare](#considerations-and-limitations), the button is disabled. If there are changes to the schema, you can select the button to see a detailed, line by line comparison of the two items.
+If there's [nothing to compare](#considerations-and-limitations), the button is disabled. If there are changes to the schema, you can select the button to see a detailed, line by line comparison of the two items.
 
 When you select the **Change review** button, a pop-up window opens with a line by line comparison of the item's content as it [currently looks in the two stages being compared](#file-modifications-before-comparison).
 
