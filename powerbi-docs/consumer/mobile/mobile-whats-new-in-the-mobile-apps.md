@@ -28,7 +28,7 @@ For related "What's New" information, see:
 
 You now get a push notification on your mobile app whenever someone requests access to one of your reports. Just tap the notification to respond immediately.
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-access-request-push-notification.png" alt-text="Screenshot of access request push notification on mobile app screen.":::
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-access-request-push-notification.png" alt-text="Screenshot of access request push notification on mobile app screen." border="false":::
 
 ### Easier app browsing 
 
