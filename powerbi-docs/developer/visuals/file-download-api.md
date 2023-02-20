@@ -37,10 +37,12 @@ Before the download begins, a window will pop up asking to confirm that the visu
 
 The **file download API** has two methods:
 
-* `exportVisualsContent`: available from API version 4.5
-* `exportVisualsContentExtended`: available from API version 5.3.
+* [`exportVisualsContent`](#the-exportvisualscontent-method): available from API version 4.5
+* [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method): available from API version 5.3.
 
 The difference between the two methods is the return value.
+
+### The `exportVisualsContent` method
 
 The `exportVisualsContent` method has four parameters:
 
@@ -50,6 +52,8 @@ The `exportVisualsContent` method has four parameters:
 * fileDescription: string
 
 This method returns a promise that will be resolved for a Boolean value
+
+### The `exportVisualsContentExtended` method
 
 The `exportVisualsContentExtended` method also has four parameters:
 
