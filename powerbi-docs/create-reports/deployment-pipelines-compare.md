@@ -109,7 +109,8 @@ Close the window when you finish examining the differences and deploy to the nex
 
   - Datasets, excluding data modeling format v1, and dataflows.
   - Items with changes to the schema content.
-  - Settings changes, like file names or sensitivity labels, aren't supported.
+
+- Settings changes, like sensitivity labels, aren't supported.
 
 - This content in the line by line comparison may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
 
