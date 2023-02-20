@@ -29,13 +29,7 @@ When two sequential stages are different, a **Compare** link appears underneath 
 
 :::image type="content" source="media/deployment-pipelines-compare/compare.png" alt-text="A screenshot showing the compare option, which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-compare/compare.png":::
 
-In the comparison display, items are arranged according to the following logic:
-
-1. The source workspace items are ordered alphabetically within groups, based on their type. The groups are ordered according to the flow of data. For example, first datasets, then reports, and lastly dashboards.
-
-2. The target workspace is ordered according to the source workspace. Paired items are always shown next to each other, even if they have different names.
-
-3. Items that exist in the target workspace but not in the source workspace, are displayed at the bottom of their type group, in alphabetical order.
+In the comparison display, items are arranged alphabetically by artifact type. Paired items are shown next to each other, even if they have different names.
 
 Items that aren't paired or that were changed get one of the following labels:
 
@@ -56,9 +50,9 @@ If a text item, like a dataset, is different, hover over it to see the **Change 
 
 :::image type="content" source="./media/deployment-pipelines-compare/granular-change-button.png" alt-text="Screenshot showing the change review button next to an item.":::
 
-If the only difference between the two items is settings changes, like the name or sensitivity label, or if the [item type/format isn't supported](#considerations-and-limitations) yet, the button is disabled. If there are changes to the schema, you can select it to see a detailed, granular comparison of the two items.
+If [there's nothing to compare](#considerations-and-limitations), the button is disabled. If there are changes to the schema, you can select the button to see a detailed, line by line comparison of the two items.
 
-When you select the **Change review** button, a pop-up window opens with a line by line comparison of the item's content as it currently looks in the two stages being compared. This content may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
+When you select the **Change review** button, a pop-up window opens with a line by line comparison of the item's content as it [currently looks in the two stages being compared](#file-modifications-before-comparison).
 
 On top of the screen, you'll see:
 
@@ -92,6 +86,7 @@ The *inline* comparison view, as opposed to the side by side view, shows each li
 When the item's content is displayed for comparison, whether inline or side by side, the differences are highlighted as follows:
 
 - The file content lines are numbered and those lines that were changed are marked as follows:
+
   -  Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They're highlighted in **red** with a '-' sign next to the number.
   - Changes shown in the *To be deployed* stage are the new values that will be applied during the next deployment. They're highlighted in **green** with a '+' sign next to the number.
   
@@ -110,10 +105,13 @@ Close the window when you finish examining the differences and deploy to the nex
 
 ## Considerations and limitations
 
-Granular compare is only supported for the following changes:
+- Line by line comparisons are supported for the following items:
 
-- Datasets, excluding data modeling format v1, and dataflows.
-- Items with changes to the schema content. Settings changes, like file names or sensitivity labels, aren't supported.
+  - Datasets, excluding data modeling format v1, and dataflows.
+  - Items with changes to the schema content.
+  - Settings changes, like file names or sensitivity labels, aren't supported.
+
+- This content in the line by line comparison may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
 
 ## Next steps
 
