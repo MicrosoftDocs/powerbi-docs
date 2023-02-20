@@ -14,21 +14,21 @@ ms.date: 02/01/2023
 
 # Power BI add-in for PowerPoint - Admin info
 
-The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. Currently, users can add individual report pages and individual visuals. When a report page is added, the add-in does not bring in the left hand navigation pane, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
+The Power BI add-in for PowerPoint enables users to add live, interactive data from Power BI to PowerPoint presentations. Currently, users can add individual report pages and individual visuals. When a report page is added, the add-in doesn't bring in the left hand navigation pane, but any page navigation visuals on the report page itself will function normally as they do in the Power BI service.
 
 ## Requirements
 
 To use the Power BI add-in for PowerPoint, users must either have access to the Office add-in store, or the add-in must be made available to them as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-In national clouds, the add-in must be deployed as an admin managed add-in, since the Office add-in store isn't accessible from sovereign clouds. For further information, see [Deploying the add-in in national clouds](#deploying-the-add-in-in-national-clouds).
+In national clouds, the add-in must be deployed as an admin managed add-in, since the Office add-in store isn't accessible from national clouds. For more information, see [Deploying the add-in in national clouds](#deploying-the-add-in-in-national-clouds).
 
 ## Licensing
 
-To be able to view live Power BI data in PowerPoint, users must have an active Power BI account and a Power BI Free license, as well as access to the data. If the Power BI report is not located in a Premium capacity, a Power BI Pro license is needed.
+To be able to view live Power BI data in PowerPoint, users must have an active Power BI account and a Power BI Free license, as well as access to the data. If the Power BI report isn't located in a Premium capacity, a Power BI Pro license is needed.
 
 If auto-licensing for Power BI is enabled, users without a Power BI account will be signed up automatically when they open a presentation containing a live Power BI report page. **This may impact the assignment and availability of licenses in your organization**. See [Power BI license assignment](../enterprise/service-admin-disable-self-service.md) for more information.
 
-If auto-licensing is not enabled, users without Power BI accounts will be requested to sign up.
+If auto-licensing isn't enabled, users without Power BI accounts will be requested to sign up.
 
 ## Power BI entry points
 
@@ -37,7 +37,7 @@ By default, the Power BI service includes entry points that enable users to inse
 >[!NOTE]
 > Disabling this functionality in Power BI does not prevent people from adding Power BI report pages to PowerPoint slides starting from PowerPoint. To completely block adding live Power BI report pages to PowerPoint slides using the add-in, the functionality must be disabled in both Power BI and PowerPoint.
 
-Power BI entry points for the add-in are not available in sovereign, government, and air-gapped clouds. See the Microsoft Office documentation for information about the availability of the add-in in PowerPoint in these clouds.
+Power BI entry points for the add-in aren't available in national, government, and air-gapped clouds. See the Microsoft Office documentation for information about the availability of the add-in in PowerPoint in these clouds.
 
 ## Power BI add-in button in PowerPoint Insert ribbon
 
@@ -45,17 +45,17 @@ If your organization has a Microsoft 365 Office subscription, a button for the a
 
 ![Screenshot of Power BI add-in for PowerPoint button on Insert ribbon.](media/service-power-bi-powerpoint-add-in-admin/power-bi-addin-powerpoint-button.png)
 
-The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store. If the user does not have access to the store, the button won't work.
+The button is a shortcut to the add-in offering in the Office add-in store. The button itself doesn't provide access to the store. If the user doesn't have access to the store, the button won't work.
 
 >[!NOTE]
 > The rollout of the Power BI add-in for PowerPoint depends on the update cadence of your organization's Microsoft 365 subscription. Hence the add-in may not immediately be available in your organization. To ensure availability of the add-in, use the latest version of Microsoft 365.
 
 ## Deploying the add-in in national clouds
 
-The Power BI add-in for PowerPoint is available in national clouds as an admin managed add-in. If you are a Power BI admin in a tenant located in a national cloud, you can make the add-in available to your users as follows:
+The Power BI add-in for PowerPoint is available in national clouds as an admin managed add-in. If you're a Power BI admin in a tenant located in a national cloud, you can make the add-in available to your users as follows:
 
 1. Sign into the Power BI service with an admin account.
-1. Select the **Download** icon and choose **Power BI for PowerPoint** to download the add-in. You will have this option only if your tenant is in a national cloud.
+1. Select the **Download** icon and choose **Power BI for PowerPoint** to download the add-in. You'll have this option only if your tenant is in a national cloud.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-admin/power-bi-powerpoint-addin-download-option.png" alt-text="Screenshot of the Power BI for PowerPoint add-in download option.":::
 
