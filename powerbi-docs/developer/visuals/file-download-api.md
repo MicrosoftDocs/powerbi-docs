@@ -35,6 +35,13 @@ Before the download begins, a window will pop up asking to confirm that the visu
 
 ## How to use the file download API
 
+The **file download API** has two methods:
+
+* `exportVisualsContent`: available from API version 4.5
+* `exportVisualsContentExtended`: available from API version 5.3.
+
+The difference between the two methods is the return value.
+
 The `exportVisualsContent` method has four parameters:
 
 * content: string
@@ -42,8 +49,7 @@ The `exportVisualsContent` method has four parameters:
 * fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
 * fileDescription: string
 
->[!NOTE]
->The `exportVisualsContentExtended` method is available from API version 5.3.
+This method returns a promise that will be resolved for a Boolean value
 
 The `exportVisualsContentExtended` method also has four parameters:
 
@@ -52,7 +58,7 @@ The `exportVisualsContentExtended` method also has four parameters:
 * fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`.
 * fileDescription: string
 
-Its return value is a promise which will be resolved with a result of type `ExportContentResultInfo` which contains the following:
+This method returns a promise which will be resolved with a result of type `ExportContentResultInfo` which contains the following:
 
 * downloadCompleted – if the download completed successfully.
 * filename – the exported file name.
