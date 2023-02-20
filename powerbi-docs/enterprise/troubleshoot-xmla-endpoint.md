@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/14/2023
+ms.date: 02/20/2023
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -134,7 +134,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](/power-bi/collaborate-share/end-user-subscribe).
 
-## Errors on Premium Gen 2 capacity
+## Errors on Premium capacity
 
 ### Connect to Server error in SSMS
 
