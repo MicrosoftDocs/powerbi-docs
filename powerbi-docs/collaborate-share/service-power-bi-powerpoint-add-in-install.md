@@ -21,7 +21,7 @@ You can add both individual visuals and whole report pages to your PowerPoint sl
 
 To add live Power BI data to a PowerPoint slide, you first need to get the URL or the report page or visual. You then paste the URL into the Power BI add-in in PowerPoint.
 
-* Get the URL: [Whole report page](#get-the-url-of-a-report-page) | [Individual visual](#get-the-url-of-an-individual-visual)
+* Get the URL: [Report page](#get-the-url-of-a-report-page) | [Visual](#get-the-url-of-a-visual)
 
 * [Paste the URL into the Power BI add-in in PowerPoint](#paste-the-url-of-a-report-or-visual-into-the-add-in)
 
@@ -88,7 +88,7 @@ In the Power BI service, open the report to the page you want to insert, copy th
 
 ---
 
-## Get the URL of an individual visual 
+## Get the URL of a visual 
 
 1. In the Power BI service, open the report to the page that has the visual you want to insert. If desired, configure the visual to the desired state using filters, selection, slicers, etc.
 
