@@ -47,7 +47,7 @@ Choose how you want to get the report page URL.
 
 # [Share option](#tab/share)
 
-1. Open the report to the page you want to insert. If desired, configure the page to the desired state using filters, selection, slicers, etc.
+1. In the Power BI service, open the report to the page you want to insert. If desired, configure the page to the desired state using filters, selection, slicers, etc.
 
 1. Choose **Share**.
 
@@ -67,7 +67,7 @@ Choose how you want to get the report page URL.
 
 # [Export option](#tab/export)
 
-1. Open the report to the page you want to insert. If desired, configure the page to the desired state using filters, selection, slicers, etc.
+1. In the Power BI service, open the report to the page you want to insert. If desired, configure the page to the desired state using filters, selection, slicers, etc.
 
 1. Choose **Export > PowerPoint > Embed live data**.
 
@@ -82,7 +82,7 @@ Choose how you want to get the report page URL.
 
 # [Browser address bar](#tab/addressbar)
 
-Open the report to the page you want to insert, copy the URL from the browser's address bar, and then copy the URL to paste into the Power BI add-in in PowerPoint.
+In the Power BI service, open the report to the page you want to insert, copy the URL from the browser's address bar, and then copy the URL to paste into the Power BI add-in in PowerPoint.
 
 ![Screenshot of Power B I report URL in browser address bar.](media/service-power-bi-powerpoint-add-in-install/report-page-url-address-bar.png)
 
@@ -90,7 +90,7 @@ Open the report to the page you want to insert, copy the URL from the browser's 
 
 ## Get the URL of an individual visual 
 
-1. Open the report to the page that has the visual you want to insert. If desired, configure the visual to the desired state using filters, selection, slicers, etc.
+1. In the Power BI service, open the report to the page that has the visual you want to insert. If desired, configure the visual to the desired state using filters, selection, slicers, etc.
 
 1. At the corner of the visual, select **More options (...)** and then choose **Share > Open in PowerPoint**.
 
