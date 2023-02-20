@@ -31,6 +31,7 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
    You can also favorite a dashboard or report from anywhere you see the star icon, such as Home, Recent, Apps, and Shared with me.
 
    :::image type="content" source="./media/end-user-favorite/power-bi-recent-favorite-new.png" alt-text="Screenshot of the Favorites tab on the Power BI main page.":::
+   
 
 ## Work with favorites
 
