@@ -261,7 +261,6 @@ Service principal profiles aren't supported with Azure Analysis Services (AAS) i
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended dataset size for each SKU, reference [Premium large datasets](/power-bi/enterprise/service-premium-what-is#large-datasets).
 * To use a dataset larger than 10 GB, use a Premium capacity and enable the [Large datasets](/power-bi/enterprise/service-premium-large-models) setting.
 * For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
-* Scaling a capacity in Gen 1, on average, takes between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script). For Gen 2, scaling is instantaneous.
 
 ### Manage service principals
 

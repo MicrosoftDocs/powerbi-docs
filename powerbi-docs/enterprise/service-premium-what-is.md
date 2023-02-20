@@ -123,4 +123,4 @@ The following known limitations currently apply to Power BI Premium.
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Embedded Generation 2](../developer/embedded/embedded-analytics-power-bi.md)
+> [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)
