@@ -79,13 +79,13 @@ In the *side-by-side* comparison view of the items, the code area is split in tw
 
 - On the **left** is the item's content in the *target* stage of the deployment. This stage will be modified at the next deployment. Its content will be overridden.
 - On the **right** is the item's content in the *source* stage of the deployment. This stage will be deployed. Its content will be applied.
-- The lines on each side appear in the same order, so each line is shown against its equivalent in the compared stage.
+- The lines on each side appear in the same order, so each line is next to its equivalent in the compared stage.
 
 The *inline* comparison view, as opposed to the side-by-side view, shows each line in the *target* (to be modified) stage underneath its equivalent in the *source* (To be deployed) stage.
 
 In both comparison displays, whether inline or side-by-side, the differences are highlighted as follows:
 
-- The file content lines are numbered and those lines that were changed are marked as follows:
+- The file content lines are numbered and the lines that were changed are marked as follows:
 
   - Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They're highlighted in **red** with a '-' sign next to the number.
   - Changes shown in the *To be deployed* stage are the new values that will be applied during the next deployment. They're highlighted in **green** with a '+' sign next to the number.
