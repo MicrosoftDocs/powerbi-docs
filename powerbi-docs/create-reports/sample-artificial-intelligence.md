@@ -19,31 +19,29 @@ This tutorial explores the Artificial Intelligence Sample in the Power BI servic
 
 ## Prerequisites
 
-- You just need a [Power BI free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace.
-- You can [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) for free, too, to explore the sample .pbix file.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
-### Get the sample from the Power BI service
+Before you can use the sample, get the sample in one of the following ways:
 
-1. Open the Power BI service ([app.powerbi.com](https://app.powerbi.com)) and sign in.
+- Get the [built-in sample in the service](#get-the-built-in-sample).
+- Get the built-in sample, then download it as a [.pbix file](#get-the-pbix-file-for-this-sample).
 
-2. In the navigation pane, select **Knowledge center**.
-   
-   :::image type="content" source="media/sample-artificial-intelligence/power-bi-learn.png" alt-text="Screenshot of Select Knowledge center.":::
+### Get the built-in sample
 
-3. In the **Sample reports** section, select the **Artificial Intelligence Sample**.
+1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
+
+1. On the Learning center page, under **Sample reports**, scroll until you see the **Artificial Intelligence Sample**.
 
    :::image type="content" source="media/sample-artificial-intelligence/power-bi-ai-sample.png" alt-text="Screenshot of Sample reports.":::
-   
-4. Power BI opens the **Artificial Intelligence Sample** report automatically.
 
-### Sample location
+1. Select the sample. Power BI saves the report and dataset to your workspace.
 
-Power BI adds the **Artificial Intelligence Sample** to your **My workspace** as a report and dataset.
+   :::image type="content" source="media/sample-it-spend/it-spend-analysis-sample-entry.png" alt-text="Screenshot shows the IT Spend Analysis sample dashboard link.":::
 
-:::image type="content" source="media/sample-artificial-intelligence/power-bi-my-workspace.png" alt-text="Screenshot of My workspace contents.":::
-  
+   Select the report to view the sample.
+
 ### Get the .pbix file for this sample
 
 Alternatively, after you've saved it to My workspace, you can download the report from the service and save it as a .pbix file. Then you can open it in Power BI Desktop.
@@ -52,7 +50,7 @@ Alternatively, after you've saved it to My workspace, you can download the repor
 
 1. On the **File** menu, select **Download the .pbix file**.
 
-    :::image type="content" source="media/sample-artificial-intelligence/download-pbix-file.png" alt-text="Screenshot of Download the dot p b i x file.":::
+    :::image type="content" source="media/sample-artificial-intelligence/download-pbix-file.png" alt-text="Screenshot of Download the .pbix file.":::
 
     It's saved to your Downloads folder, and you can open it with Power BI Desktop.
 
