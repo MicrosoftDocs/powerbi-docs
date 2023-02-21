@@ -145,8 +145,6 @@
         href: service-connect-snowflake.md        
       - name: "Create visuals with the Azure Cost Management connector"
         href: desktop-connect-azure-cost-management.md        
-      - name: "Connect to Azure Consumption Insights data"
-        href: desktop-connect-azure-consumption-insights.md
       - name: "Connect to SAP HANA databases"
         href: desktop-sap-hana.md
       - name: "Enable encryption for SAP HANA"

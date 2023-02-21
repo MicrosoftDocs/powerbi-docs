@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/22/2022
+ms.date: 02/14/2023
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
@@ -34,6 +34,7 @@ This article lays out the minimum hardware and software requirements to install 
 SQL Server is used to host the report server databases. The SQL Server Database Engine instance can be a local or remote instance. The following are the supported versions of SQL Server Database Engine that can be used to host the report server databases:
 
 * Azure SQL Managed Instance (Power BI Report Server January 2020 version and later)
+* SQL Server 2022
 * SQL Server 2019
 * SQL Server 2017
 * SQL Server 2016
