@@ -20,23 +20,21 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tour explores the IT Spend Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the Power BI service, you can also follow along by using the sample .pbix file in Power BI Desktop.
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your **My Workspace** in the Power BI service.
-
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**. 
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
 Before you can use the sample, get the sample in one of the following ways:
 
-- Get the [built-in sample in the service](#get-the-built-in-sample),
-- Download the [.pbix file](#get-the-pbix-file-for-this-sample), or 
+- Get the [built-in sample in the service](#get-the-built-in-sample).
+- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the built-in sample
 
-1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left nav.
+1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
 1. On the Learning center page, under **Sample reports**, scroll until you see the **IT Spend Analysis sample**.
 
