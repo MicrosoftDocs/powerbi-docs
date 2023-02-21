@@ -678,7 +678,7 @@
       href: deployment-pipelines-get-started.md   
     - name: "Assign a workspace"
       href: deployment-pipelines-assign.md
-    - name: "Compare content of adjacent stages"
+    - name: "Compare content in different stages"
       href: deployment-pipelines-compare.md
     - name: "Deploy content to the next stage"
       href: deployment-pipelines-deploy.md

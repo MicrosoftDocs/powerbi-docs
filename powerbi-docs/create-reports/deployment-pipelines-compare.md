@@ -44,7 +44,7 @@ Items that aren't paired or that were changed get one of the following labels:
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
-## Review changes to paired items line by line
+## Review changes to paired items
 
 If a text item, like a dataset, is different, hover over it to see the **Change review** button.
 
@@ -73,7 +73,7 @@ On top of the screen, you'll see:
 
 ---
 
-### Review changes line by line
+### Compare changes 
 
 When the item's content is displayed *side by side*, the code area is split in two:
 
