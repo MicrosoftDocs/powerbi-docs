@@ -16,7 +16,7 @@ ms.custom: references_regions
 
 *China North* is only supported when using the old version of Premium.
 
-Features based on the latest version of Premium are not supported when using *China North*.
+Features based on the latest version of Premium aren't supported when using *China North*.
 
 If you require support for features that are only supported in the latest version of Premium, use one of the other China regions, *China East*, *China East 2* or *China North 2*.
 
