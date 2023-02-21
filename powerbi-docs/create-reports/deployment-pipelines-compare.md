@@ -21,15 +21,15 @@ A comparison icon indicator appears between two sequential stages to give a quic
 
 - **Green indicator** – The metadata for each content item in both stages, is the same.
 
-- **Orange indicator** - Appears if one of these conditions is met:
-  - Some of the content items in each stage, were changed or updated (have different metadata).
+- **Orange indicator** - Appears if one of these conditions is true:
+  - Some of the content items in each stage were changed or updated (have different metadata).
   - There's a difference in the number of items between the stages.
 
 When two sequential stages are different, a **Compare** link appears underneath the orange comparison icon. Select **Compare** to open the content item list in both stages. This *Compare view* helps you track changes or differences between items in each pipeline stage.
 
 :::image type="content" source="media/deployment-pipelines-compare/compare.png" alt-text="A screenshot showing the compare option, which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-compare/compare.png":::
 
-In the comparison display, items are arranged alphabetically by item type. Paired items are shown next to each other, even if they have different names.
+In the comparison display, items are arranged alphabetically by item type. Paired items are next to each other, even if they have different names.
 
 Items that aren't paired or that were changed get one of the following labels:
 
@@ -54,7 +54,7 @@ If there's [nothing to compare](#considerations-and-limitations), the button is 
 
 When you select the **Change review** button, a pop-up window opens with a line by line comparison of the item's content as it [currently looks in the two stages being compared](#file-modifications-before-comparison).
 
-On top of the screen, you'll see:
+On top of the screen you'll see:
 
 1. The workspace name followed by name of the item as it appears in the source (*to be deployed*) stage.
 1. The total number of changes made to the file in the "to be modified" stage (green) and the "to be deployed" stage (red).
@@ -73,17 +73,17 @@ On top of the screen, you'll see:
 
 ---
 
-### Compare changes 
+### Compare changes
 
-When the item's content is displayed *side-by-side*, the code area is split in two:
+In the *side-by-side* comparison view of the items, the code area is split in two:
 
-- On the **left** is the item's content in the *target* stage of the deployment. This is the stage that will be modified at the next deployment. Its content will be overridden.
-- On the **right** is the item's content in the *source* stage of the deployment. This is the stage that will be deployed. Its content will be applied.
+- On the **left** is the item's content in the *target* stage of the deployment. This stage will be modified at the next deployment. Its content will be overridden.
+- On the **right** is the item's content in the *source* stage of the deployment. This stage will be deployed. Its content will be applied.
 - The lines on each side appear in the same order, so each line is shown against its equivalent in the compared stage.
 
 The *inline* comparison view, as opposed to the side-by-side view, shows each line in the *target* (to be modified) stage underneath its equivalent in the *source* (To be deployed) stage.
 
-When the item's content is displayed for comparison, whether inline or side-by-side, the differences are highlighted as follows:
+In both comparison displays, whether inline or side-by-side, the differences are highlighted as follows:
 
 - The file content lines are numbered and those lines that were changed are marked as follows:
 
@@ -109,7 +109,7 @@ Close the window when you finish examining the differences and deploy to the nex
 
 - An item can be tagged as *Different*, but not be applicable for Change review. In these cases, the Change review button is disabled. For example:
   - Settings changes such as name change.
-  - Item type is not yet supported.
+  - Item type isn't yet supported.
   - Item has an unknown status because the comparison process wasn't completed.
 
 - The content in the change review may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
