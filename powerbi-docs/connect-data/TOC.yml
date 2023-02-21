@@ -80,11 +80,11 @@
       - name: "Use dynamic M query parameters"
         href: desktop-dynamic-m-query-parameters.md
       - name: "Create a dataset from Log Analytics"
-        href: create-dataset-log-analytics.md        
-      - name: "Create a report on a SharePoint List"
-        href: desktop-sharepoint-online-list.md
+        href: create-dataset-log-analytics.md
       - name: "Create a dataset from a SharePoint List"
         href: create-dataset-sharepoint-online-list.md
+      - name: "Create a report on a SharePoint List"
+        href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
         href: desktop-connect-linkedin-sales-navigator.md        
       - name: "Get webpage data by providing examples"
