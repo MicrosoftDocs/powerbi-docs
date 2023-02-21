@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 02/21/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -26,11 +26,10 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
-The requirements apply to users in the organization and to [guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need either:
+The requirements apply to users in the organization and to [guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you'll need permissions to access the particular report or dashboard and **either**:
 
-- A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md) or
-- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md), and 
-- permissions to access the particular report or dashboard. 
+- A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
+- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
 
 Your Power BI admin also needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](../admin/service-admin-portal-export-sharing.md#create-email-subscriptions). To export or subscribe to paginated reports, [several tenant switches must be enabled](#subscribe-to-paginated-reports).
 
