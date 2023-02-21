@@ -14,38 +14,38 @@ LocalizationGroup: Samples
 
 The Retail Analysis built-in sample contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, variance, and new-store analysis.
 
-:::image type="content" source="media/sample-retail-analysis/retail1.png" alt-text="Screenshot shows the dashboard for the Retail Analysis sample.":::
+:::image type="content" source="media/sample-retail-analysis/retail1.png" alt-text="Screenshot shows the dashboard for the Retail Analysis sample." lightbox="media/sample-retail-analysis/retail1.png":::
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. The company [obviEnce](http://www.obvience.com/) created this sample using real, anonymized data. The data is available in several formats: built-in sample in the Power BI service, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md).
 
 This tutorial explores the Retail Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop.
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace in the Power BI service.
+## Prerequisites
+
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
-Before you can use the sample, you must first [download it in the Power BI service](#get-the-built-in-sample), or get the [.pbix file](#get-the-pbix-file-for-this-sample) or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, get the sample in one of the following ways:
+
+- Get the [built-in sample in the service](#get-the-built-in-sample).
+- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
+- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the built-in sample
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
-   If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
+1. On the **Learning center** page, under **Sample reports**, scroll until you see the ***Retail Analysis Sample**.
 
-1. In the bottom-left corner, select **Get data**.
+1. Select the sample. It opens in Reading mode.
 
-   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
 
-1. On the **Get Data** page that appears, select **Samples**.
-   
-1. Select **Retail Analysis Sample**, and then choose **Connect**.  
-  
-   :::image type="content" source="media/sample-retail-analysis/retail16.png" alt-text="Connect to sample":::
-   
-1. Power BI imports the built-in sample, and then adds a new dashboard, report, and dataset to your current workspace.
-   
    :::image type="content" source="media/sample-retail-analysis/retail-entry.png" alt-text="Screenshot shows the Retail Analysis Sample dashboard link.":::
-  
+
+   Select the dashboard to view the sample dashboard.
+
 ### Get the .pbix file for this sample
 
 Alternatively, you can download the Retail Analysis sample as a [.pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
@@ -120,13 +120,13 @@ Now let's explore on a more detailed level, looking at the districts' performanc
 
 1. In the bubble chart, select the **020-Mens** bubble.
 
-   :::image type="content" source="media/sample-retail-analysis/retail11.png" alt-text="Screenshot show the 020-Mens option selected.":::  
+   :::image type="content" source="media/sample-retail-analysis/retail11.png" alt-text="Screenshot show the 020-Mens option selected." lightbox="media/sample-retail-analysis/retail11.png":::  
 
    The men's category wasn't as severely affected in April as the overall business. January and July were still problematic months.
 
 1. Select the **010-Womens** bubble.
 
-   :::image type="content" source="media/sample-retail-analysis/retail12.png" alt-text="Screenshot shows the 010-Womens option selected.":::
+   :::image type="content" source="media/sample-retail-analysis/retail12.png" alt-text="Screenshot shows the 010-Womens option selected."  lightbox="media/sample-retail-analysis/retail12.png":::
 
    The women's category performed much worse than the overall business across all months, and in almost every month compared to the previous year.
 
@@ -138,7 +138,7 @@ Let's look at how specific districts are doing.
 
 1. Select **Allan Guinot** in the **District Manager** slicer on the top left.
 
-   :::image type="content" source="media/sample-retail-analysis/retail13.png" alt-text="Screenshot show the district manager Allan Guinot selected.":::
+   :::image type="content" source="media/sample-retail-analysis/retail13.png" alt-text="Screenshot show the district manager Allan Guinot selected." lightbox="media/sample-retail-analysis/retail13.png":::
 
    Allan's district outperformed in March and June, compared to last year.
 
@@ -158,7 +158,7 @@ The last area we want to explore is our growth by examining the new stores opene
 
 1. Select the **Stores Opened This Year by Open Month, Chain** tile, which opens the **New Stores Analysis** page of the report.
 
-   :::image type="content" source="media/sample-retail-analysis/retail15.png" alt-text="Screenshot shows the New Stores Analysis page.":::
+   :::image type="content" source="media/sample-retail-analysis/retail15.png" alt-text="Screenshot shows the New Stores Analysis page." lightbox="media/sample-retail-analysis/retail15.png":::
 
    As evident from the tile, more Fashions Direct stores than Lindseys stores opened this year.
 1. Observe the **Sales Per Sq Ft by Name** chart:
