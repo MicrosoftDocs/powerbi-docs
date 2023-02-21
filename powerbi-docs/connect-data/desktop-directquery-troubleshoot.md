@@ -60,7 +60,7 @@ You can open the trace files by using the SQL Server Profiler tool, which you ca
 
 To open a trace file:
 
-1. Open SQL Server Profiler, and select **File** > **Open** > **Trace File**.
+1. In SQL Server Profiler, select **File** > **Open** > **Trace File**.
 
 1. Navigate to or enter the path to the trace file for the current Power BI session, such as *\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*, and open *FlightRecorderCurrent.trc*.
 
