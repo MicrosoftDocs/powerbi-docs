@@ -25,7 +25,7 @@ The common query tasks demonstrated here are:
 
 You can use a couple data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.
 
-The first data connection is [an Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx), which you can download and save locally. The other is a Web resource that's also used in other Power BI Desktop articles:
+The first data connection is [an Excel workbook](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx), which you can download and save locally. The other is a Web resource:
 
 <https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/>
 
@@ -53,7 +53,7 @@ The **From Web** dialog box appears, where you can type in the URL of the webpag
 
 Select **OK**. Like before, Power BI Desktop inspects the webpage data and shows preview options in the **Navigator** dialog box. When you select a table, it displays a preview of the data.
 
-Other data connections are similar. If authentication is required to make a data connection, Power BI Desktop prompts you for the appropriate credentials.
+Other data connections are similar. Power BI Desktop prompts you for the appropriate credentials if it needs you to authenticate your connection.
 
 For a step-by-step demonstration of connecting to data in Power BI Desktop, see [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md).
 
@@ -77,11 +77,11 @@ You can shape the data in many other ways in this query. You can remove any numb
 
 In Power Query Editor, you can group the values from many rows into a single value. This feature can be useful when summarizing the number of products offered, the total sales, or the count of students.
 
-In this example, you group rows in an education enrollment dataset. The data is from the Excel workbook. It's been shaped in Power Query Editor to get just the columns you need, rename the table, and make a few other transforms.
+In this example, you group rows in an education enrollment dataset. The data is from the Excel workbook.
 
 This example shows how many Agencies each state has. (Agencies can include school districts, other education agencies such as regional service districts, and more.) Select the **State Abbr** column, then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon. (**Group By** is available in both tabs.)
 
-:::image type="content" source="media/desktop-common-query-tasks/commonquerytasks_groupby.png" alt-text="Screenshot of Power Query Editor highlighting the Group By button in the ribbon..":::
+:::image type="content" source="media/desktop-common-query-tasks/commonquerytasks_groupby.png" alt-text="Screenshot of Power Query Editor highlighting the Group By button in the ribbon.":::
 
 The **Group By** dialog box appears. When Power Query Editor groups rows, it creates a new column into which it places the **Group By** results. You can adjust the **Group By** operation in the following ways:
 
@@ -108,7 +108,7 @@ To create a new table that shows a count of products for each category (based on
 
 :::image type="content" source="media/desktop-common-query-tasks/pivot-columns-pivot-button.png" alt-text="Screenshot of the Pivot Column button highlighted on the Transform tab.":::
 
-The **Pivot Column** dialog box appears, letting you know which column’s values are used to create new columns. (If the wanted column name of **CategoryName** isn't shown, select it from the dropdown list.) When you expand **Advanced options**, you can select which function to apply to the aggregated values.
+The **Pivot Column** dialog box appears, letting you know which column’s values the operation uses to create new columns. (If the wanted column name of **CategoryName** isn't shown, select it from the dropdown list.) When you expand **Advanced options**, you can select which function to apply to the aggregated values.
 
 :::image type="content" source="media/desktop-common-query-tasks/pivot-columns-pivot-dialog.png" alt-text="Screenshot of the Pivot Column dialog box highlighting Advanced options.":::
 
