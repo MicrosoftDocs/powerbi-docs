@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 02/21/2023
 ms.custom:
 LocalizationGroup: Visualizations
 ---
@@ -34,7 +34,7 @@ To create a Power BI dataset from a SharePoint list:
 
     :::image type="content" source="./media/create-dataset-sharepoint-online-list/export-to-power-bi-sharepoint-option.png" alt-text="Screenshot showing Export to Power BI option in SharePoint Export menu.":::
 
-1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the SharePoint list and saved to My workspace. You can choose your own name and destination workspace. If you are a [free user](../fundamentals/service-features-license-type.md#free-per-user-license) in Power BI, you will only be able to save to My workspace.
+1. Power BI will open and a dialog will ask you to name the dataset and choose a workspace to save it in. By default the dataset will be given the same name as the SharePoint list and saved to My workspace. You can choose your own name and destination workspace. If you're a [free user](../fundamentals/service-features-license-type.md#free-per-user-license) in Power BI, you'll only be able to save to My workspace.
 
     :::image type="content" source="./media/create-dataset-sharepoint-online-list/name-dataset-dialog.png" alt-text="Screenshot of a dialog where you name the dataset and choose a workspace.":::
 
