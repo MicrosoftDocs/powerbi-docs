@@ -15,7 +15,7 @@ Before you deploy content to a different stage, it can be helpful to see the dif
 
 ## Compare stages
 
-:::image type="content" source="./media/deployment-pipelines-compare/deployment-pipelines-compare.png" alt-text="Screenshot showing three stages of deployment. There's a green check between the test and production stages and an orange X between the development and test stages.":::::
+:::image type="content" source="./media/deployment-pipelines-compare/deployment-pipelines-compare.png" alt-text="Screenshot showing three stages of deployment. There's a green check between the test and production stages and an orange X between the development and test stages.":::
 
 A comparison icon indicator appears between two sequential stages to give a quick visual insight into the differences between them. The comparison indicator has two states:
 
