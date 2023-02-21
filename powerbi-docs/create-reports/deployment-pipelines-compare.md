@@ -105,12 +105,12 @@ Close the window when you finish examining the differences and deploy to the nex
 
 ## Considerations and limitations
 
-- Line by line comparisons are supported for the following items:
+- Change review is supported for the following items:
 
   - Datasets, excluding data modeling format v1, and dataflows.
   - Items with changes to the schema content.
 
-- Settings changes, like sensitivity labels, aren't supported.
+- Changes to item names is supported. Other settings changes, like sensitivity labels, aren't supported.
 
 - This content in the line by line comparison may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
 
