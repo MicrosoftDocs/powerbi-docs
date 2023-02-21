@@ -85,7 +85,7 @@ Let's explore new hires first.
 
 1. Select **Human Resources Sample** from the black **Power BI** header bar to see detailed information about the dashboard.
 
-   :::image type="content" source="media/sample-human-resources/power-bi-breadcrumbs.png" alt-text="Screenshot showing selection of Human Resources Sample in the black Power BI header bar.":::
+   :::image type="content" source="media/sample-human-resources/power-bi-breadcrumbs.png" alt-text="Screenshot showing selection of Human Resources Sample in the black Power BI header bar." lightbox"media/sample-human-resources/power-bi-breadcrumbs.png":::
 
 ## Compare currently active and former employees
 
