@@ -112,7 +112,7 @@ Close the window when you finish examining the differences and deploy to the nex
 
 - Changes to item names is supported. Other settings changes, like sensitivity labels, aren't supported.
 
-- This content in the line by line comparison may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
+- This content in the change review may look a bit different than the original version since it was [modified a bit before running the comparison](#file-modifications-before-comparison).
 
 ## Next steps
 
