@@ -57,7 +57,7 @@ When you select the **Change review** button, a pop-up window opens with a line 
 On top of the screen you'll see:
 
 1. The workspace name followed by name of the item as it appears in the source (*to be deployed*) stage.
-1. The total number of changes made to the file in the "to be modified" stage (green) and the "to be deployed" stage (red).
+1. The total number of changes made to the file in the *to be modified* stage (green) and the *to be deployed* stage (red).
 1. Up and down arrows that take you to the previous or next difference in the file.
 1. A navigation bar on the right side with red or green bars highlighting where the changes are in the file.
 1. Buttons that toggle between a side-by-side view and an inline view of the changes.
