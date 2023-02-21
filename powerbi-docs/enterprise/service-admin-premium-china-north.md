@@ -30,9 +30,11 @@ This section lists the Power BI features that aren't supported for *China North*
 
 * Export Power BI reports to [PDF](../consumer/end-user-pdf.md) and [PowerPoint](../collaborate-share/end-user-powerpoint.md)
 
-* [Email subscriptions](/power-bi/collaborate-share/end-user-subscribe)
+* [Email subscriptions](../collaborate-share/end-user-subscribe.md)
 
 * [Copy paste visuals](../visuals/power-bi-visualization-copy-paste.md) in Power BI reports
+
+* [Data loss prevention (DLP) policies for Power BI](service-security-dlp-policies-for-power-bi.md)
 
 ## Next steps
 
