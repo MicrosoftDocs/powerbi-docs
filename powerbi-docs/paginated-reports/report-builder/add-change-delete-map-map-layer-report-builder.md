@@ -58,7 +58,7 @@ The following table displays the toolbar icons for the **Map** pane.
 2.  On the toolbar, select the **Add Layer** button, and from the drop-down list, select the type of layer that you want to add: **Point**, **Line**, or **Polygon**.  
   
     > [!NOTE]  
-    >  Although you can add a map layer and configure it manually, we recommend that you use the map layer wizard to add new layers. To launch the wizard from the Map pane toolbar, select the layer wizard button :::image type="icon" source="media/rs-iconmaplayerwizard.gif" border="false":::.  
+    >  Although you can add a map layer and configure it manually, we recommend that you use the map layer wizard to add new layers. To launch the wizard from the Map pane toolbar, select the layer wizard button :::image type="icon" source="media/icon-map-layer-wizard.gif" border="false":::.  
   
 3.  Right-click the layer, and then select **Layer Data**.  
   

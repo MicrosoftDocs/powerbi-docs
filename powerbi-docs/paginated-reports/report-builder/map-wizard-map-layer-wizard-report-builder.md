@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
 -   **Spatial data.** From the spatial data source, a field that contains sets of coordinates that specify locations.
 
     > [!NOTE]
-    > IIRC Spatial data types are not supported.
+    > Spatial data types aren't supported when you're using SQL Server through a Power BI gateway.
   
 -   **Analytical data.** Analytical data to use to vary the map display, for example, annual store sales.  
   
