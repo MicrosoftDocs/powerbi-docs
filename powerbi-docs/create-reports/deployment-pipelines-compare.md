@@ -87,7 +87,7 @@ When the item's content is displayed for comparison, whether inline or side by s
 
 - The file content lines are numbered and those lines that were changed are marked as follows:
 
-  -  Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They're highlighted in **red** with a '-' sign next to the number.
+  - Changes shown in the *To be modified* stage will be removed or overwritten during the next deployment. They're highlighted in **red** with a '-' sign next to the number.
   - Changes shown in the *To be deployed* stage are the new values that will be applied during the next deployment. They're highlighted in **green** with a '+' sign next to the number.
   
 - In the modified lines, the specific characters that were added or deleted are highlighted in a darker shade.
