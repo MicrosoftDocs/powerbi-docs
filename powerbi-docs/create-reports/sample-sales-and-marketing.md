@@ -30,13 +30,13 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. Yo
 
 Before you can use the sample, get the sample in one of the following ways:
 
-- Get the [built-in sample in the service](#get-the-built-in-sample),
-- Download the [.pbix file](#get-the-pbix-file-for-this-sample), or 
+- Get the [built-in sample in the service](#get-the-built-in-sample).
+- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
 - Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the built-in sample
 
-1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left nav.
+1. Open the Power BI service (`app.powerbi.com`), and select **Learn** in the left navigation.
 
 1. On the Learning center page, under **Sample reports**, scroll until you see the **Sales and Marketing Sample**.
 
