@@ -29,7 +29,7 @@ When two sequential stages are different, a **Compare** link appears underneath 
 
 :::image type="content" source="media/deployment-pipelines-compare/compare.png" alt-text="A screenshot showing the compare option, which expands the compare view and allows comparing items between deployment pipeline stages." lightbox="media/deployment-pipelines-compare/compare.png":::
 
-In the comparison display, items are arranged alphabetically by artifact type. Paired items are shown next to each other, even if they have different names.
+In the comparison display, items are arranged alphabetically by item type. Paired items are shown next to each other, even if they have different names.
 
 Items that aren't paired or that were changed get one of the following labels:
 
