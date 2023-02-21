@@ -52,7 +52,7 @@ Under **Crash Dump Collection**, select the **Open crash dump/traces folder** li
 
 Navigate to that folder's parent folder, and then open the *AnalysisServicesWorkspaces* folder, which contains one workspace subfolder for every open instance of Power BI Desktop. The subfolder names have integer suffixes, such as *AnalysisServicesWorkspace2058279583*.
 
-Within each *AnalysisServicesWorkspace* folder is a *Data* subfolder that contains the trace file *FlightRecorderCurrent.trc* for the current Power BI session. This folder disappears when the associated Power BI Desktop session ends.
+Each *AnalysisServicesWorkspace* folder includes a *Data* subfolder that contains the trace file *FlightRecorderCurrent.trc* for the current Power BI session. This folder disappears when the associated Power BI Desktop session ends.
 
 You can open the trace files by using the SQL Server Profiler tool, which you can get as part of the free [SQL Server Management Studio (SSMS) download](/sql/ssms/download-sql-server-management-studio-ssms). After you download and install SQL Server Management Studio, open SQL Server Profiler.
 
