@@ -10,7 +10,7 @@ ms.author: maggies
 ms.reviewer: nirusrin
 ---
 
-***Use filters and create paginated reports on the Power BI Service ***
+***Use filters and create paginated reports on the Power BI Service***
 
 This article introduces you to filtering paginated reports which are authored on the service. This does not apply to paginated reports authored on Power BI Report Builder.  Filters exclude all but the data you want to focus on. When you author the report on the service, you can filter the data using the “Filters” pane on the canvas.
 
