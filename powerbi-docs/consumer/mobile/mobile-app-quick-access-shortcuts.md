@@ -19,8 +19,8 @@ Applies to:
 
 The Power BI mobile app for Android provides two easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **device home screen shortcuts** and **app launcher shortcuts**.
 
-* **Device home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) tenant.
-* **App launcher shortcuts**: You can get directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher icon on your device's home screen to open the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time - the Power BI mobile app keeps track of what you're viewing most often and changes the shortcuts accordingly.
+* **Device home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces. You can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) tenant.
+* **App launcher shortcuts**: You can get directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher icon on your device's home screen to open the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time. The Power BI mobile app keeps track of what you're viewing most often and changes the shortcuts accordingly.
 
  >[!NOTE]
  > Android app shortcuts can be created only for reports and dashboards hosted in the Power BI service. Shortcuts for Report Server content are not supported.
@@ -33,23 +33,23 @@ You can create shortcuts to any report or dashboard.
 
    :::image type="content" source="media/mobile-app-quick-access-shortcuts/power-bi-mobile-add-shortcut.png" alt-text="Screenshot of the Add shortcut action menu.":::
 
-   Additionally, if the Power BI app sees that you are often accessing an item, it will suggest creating a shortcut to the item. This happens in two ways:
-   * On frequently viewed reports and dashboards, the **Add shortcut** option will appear in a banner when you open the item.
-   * If you frequently use a link to get to a report (for instance, from a shared email, annotation etc.), after a few times of using this link, a window will open, asking if you'd like to create a shortcut. **Yes** will open the **Add shortcut** dialog (see next step). **Not now** will continue to take you to the item you were opening.
+   Also, if the Power BI app sees that you are often accessing an item, it will suggest creating a shortcut to the item. This happens in two ways:
+   * On frequently viewed reports and dashboards, the **Add shortcut** option appears in a banner when you open the item.
+   * If you frequently use a link to get to a report (for instance, from a shared email, annotation, and so on.), after a few times of using this link, a window opens, asking if you'd like to create a shortcut. **Yes** opens the **Add shortcut** dialog (see next step). **Not now** continues to take you to the item you were opening.
 
    These two experiences are illustrated in the following figure.
 
    :::image type="content" source="media/mobile-app-quick-access-shortcuts/power-bi-mobile-auto-add-shortcut.png" alt-text="Screenshot of the add shortcut banner and dialog.":::
 
-2. An **Add shortcut** dialog will appear with the name of your item. You can edit the name if you like. When you're done, tap **ADD**.
+2. An **Add shortcut** dialog appears with the name of your item. You can edit the name if you like. When you're done, tap **ADD**.
 
     :::image type="content" source="media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-dialog.png" alt-text="Screenshot of the Add shortcut dialog.":::
 
-3. You will be asked to confirm if you want to add the shortcut. Tap **Add** to add the shortcut to your device's home screen.
+3. You are asked to confirm if you want to add the shortcut. Tap **Add** to add the shortcut to your device's home screen.
 
    :::image type="content" source="media/mobile-app-quick-access-shortcuts/power-bi-mobile-add-to-home.png" alt-text="Screenshot of the dialog in which the user confirms adding the shortcut.":::
 
-   A shortcut dashboard or report icon will be added to your device's home screen with the name you entered.
+   A shortcut dashboard or report icon is added to your device's home screen with the name you entered.
 
    :::image type="content" source="media/mobile-app-quick-access-shortcuts/power-bi-mobile-home-shortcuts.png" alt-text="Screenshot of the Power BI shortcut on the home screen.":::
 
