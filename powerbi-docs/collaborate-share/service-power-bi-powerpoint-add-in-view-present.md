@@ -20,9 +20,9 @@ As soon as you add a live Power BI report page or visual to PowerPoint, you can 
 
 | Click for option details ||
 |:---------|:---------|
-|[Info](#data-info)     | [Add-in options](#add-in-options)        |
-|[Data options](#data-options)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |
-|[Style options](#style-options)     | [Add-in side menu](#add-in-side-pane)        |
+|[Info](#data-info)     | [Expand/collapse toolbar](#expandcollapse-toolbar)        |
+|[Data options](#data-options)     | [Add-in side menu](#add-in-side-pane)        |
+|[Add-in options](#add-in-options)     | |
 
 ## Understanding what you see
 
@@ -52,12 +52,6 @@ As you work with the report or visual in edit mode, you can always restore the i
 To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page or visual using the [Expand/collapse toolbar](#expandcollapse-toolbar) control.
 
 If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode are not, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
-
-## Add styles to your presentation
-
-You can improve the appearance of your presentation by applying styles to the add-in. Currently, you can put an outline around the add-in to give it a clear definition on the slide.
-
-To give an outline to the add-in, open **[Style options](#style-options)** and select **Outline**.  
 
 ## Enrich your presentation with data insights
 
@@ -116,12 +110,6 @@ Controls that help you work with your data in PowerPoint are described below.
 * **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
 * **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh does not trigger getting data from the data sources.
 * **Reset**: Restores the state of the report page or visual to the state it was in when it was first added to the PowerPoint presentation.
-
-### Style options
-
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-style-options.png" alt-text="Screenshot of Power B I add-in for PowerPoint style options menu.":::
-
-* **Outline**: Puts a border around the add-in.
 
 ### Add-in options
 
