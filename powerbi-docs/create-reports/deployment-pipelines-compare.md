@@ -60,12 +60,12 @@ On top of the screen, you'll see:
 1. The total number of changes made to the file in the "to be modified" stage (green) and the "to be deployed" stage (red).
 1. Up and down arrows that take you to the previous or next difference in the file.
 1. A navigation bar on the right side with red or green bars highlighting where the changes are in the file.
-1. Buttons that toggle between a side by side view and an inline view of the changes.
+1. Buttons that toggle between a side-by-side view and an inline view of the changes.
 1. The change comparison area with a line by line comparison of the items.
 
-### [Side by side view](#tab/browser)
+### [Side-by-side view](#tab/browser)
 
-:::image type="content" source="./media/deployment-pipelines-compare/changes-side-by-side-numbered.png" alt-text="Screenshot showing a side by side view of the changes made to the file.":::
+:::image type="content" source="./media/deployment-pipelines-compare/changes-side-by-side-numbered.png" alt-text="Screenshot showing a side-by-side view of the changes made to the file.":::
 
 ### [Inline view](#tab/visual-studio)
 
@@ -75,15 +75,15 @@ On top of the screen, you'll see:
 
 ### Compare changes 
 
-When the item's content is displayed *side by side*, the code area is split in two:
+When the item's content is displayed *side-by-side*, the code area is split in two:
 
 - On the **left** is the item's content in the *target* stage of the deployment. This is the stage that will be modified at the next deployment. Its content will be overridden.
 - On the **right** is the item's content in the *source* stage of the deployment. This is the stage that will be deployed. Its content will be applied.
 - The lines on each side appear in the same order, so each line is shown against its equivalent in the compared stage.
 
-The *inline* comparison view, as opposed to the side by side view, shows each line in the *target* (to be modified) stage underneath its equivalent in the *source* (To be deployed) stage.
+The *inline* comparison view, as opposed to the side-by-side view, shows each line in the *target* (to be modified) stage underneath its equivalent in the *source* (To be deployed) stage.
 
-When the item's content is displayed for comparison, whether inline or side by side, the differences are highlighted as follows:
+When the item's content is displayed for comparison, whether inline or side-by-side, the differences are highlighted as follows:
 
 - The file content lines are numbered and those lines that were changed are marked as follows:
 
