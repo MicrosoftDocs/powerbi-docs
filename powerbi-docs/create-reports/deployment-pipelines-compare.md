@@ -107,7 +107,7 @@ Close the window when you finish examining the differences and deploy to the nex
 
 - Change review only supports only schema changes for textual item types. Currently it supports datasets, excluding data modeling format v1, and dataflows.
 
-- An item can be tagged as *Different*, but not be applicable for Change review. For example:
+- An item can be tagged as *Different*, but not be applicable for Change review. In these cases, the Change review button is disabled. For example:
   - Settings changes such as name change.
   - Item type is not yet supported.
   - Item has an unknown status because the comparison process wasn't completed for an item so its status is unknown.
