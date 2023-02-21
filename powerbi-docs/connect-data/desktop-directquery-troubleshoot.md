@@ -14,7 +14,9 @@ ms.date: 02/21/2023
 
 This article helps you diagnose performance issues with Power BI DirectQuery data models you develop in Power BI Desktop or the Power BI service. The article also describes how to get detailed information to help you optimize reports.
 
-You should start any diagnosis of performance issues in Power BI Desktop, rather than in the Power BI service or Power BI Report Server. Performance issues often depend on the performance level of the underlying data source. You can more easily identify and diagnose these issues in the isolated Power BI Desktop environment, without involving components like an on-premises gateway. If you don't find the performance issues in Power BI Desktop, you can focus your investigation on the specifics of the report in the Power BI service.
+You should start any diagnosis of performance issues in Power BI Desktop, rather than in the Power BI service or Power BI Report Server. Performance issues often depend on the performance level of the underlying data source. You can more easily identify and diagnose these issues in the isolated Power BI Desktop environment, without involving components like an on-premises gateway.
+
+If you don't find the performance issues in Power BI Desktop, you can focus your investigation on the specifics of the report in the Power BI service.
 
 You should also try to isolate issues to an individual visual before you look at many visuals on a page.
 
@@ -22,7 +24,7 @@ You should also try to isolate issues to an individual visual before you look at
 
 [Performance Analyzer](../create-reports/desktop-performance-analyzer.md) is a useful tool for identifying performance issues throughout the troubleshooting process. If you can identify a single sluggish visual on a page in Power BI Desktop, you can use Performance Analyzer to determine what queries Power BI Desktop sends to the underlying source.
 
-You also might be able to view traces and diagnostic information emitted by the underlying data source. Such traces might also contain useful information about the details of how the query executed, and how to improve it.
+You also might be able to view traces and diagnostic information that the underlying data sources emit. Such traces can contain useful information about the details of how the query executed, and how to improve it.
 
 Even without traces from the source, you can view the queries Power BI sent, along with their execution times.
 
@@ -31,9 +33,9 @@ Even without traces from the source, you can view the queries Power BI sent, alo
 
 ## Trace file
 
-By default, Power BI Desktop logs events during a given session to a trace file called *FlightRecorderCurrent.trc*. You can find the trace file for the current session in the *AppData* folder for the current user, at *\\\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces*.
+By default, Power BI Desktop logs events during a given session to a trace file called *FlightRecorderCurrent.trc*. You can find the trace file for the current session in the *AppData* folder for the current user, at *\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces*.
 
-The following DirectQuery data sources write all queries that Power BI sends them to the trace file. The log might support other DirectQuery sources in the future.
+The following DirectQuery data sources write all the queries that Power BI sends them to the trace file. The log might support other DirectQuery sources in the future.
 
 - SQL Server
 - Azure SQL Database
@@ -42,25 +44,25 @@ The following DirectQuery data sources write all queries that Power BI sends the
 - Teradata
 - SAP HANA
 
-To easily get to the trace file folder, in Power BI Desktop select **File** > **Options and settings** > **Options**, and then select **Diagnostics**.
+To easily get to the trace file folder in Power BI Desktop, select **File** > **Options and settings** > **Options**, and then select **Diagnostics**.
 
-![The Power BI Desktop window is open, and the Global Diagnostics page is selected. The Diagnostic Options section has two properties: Enable tracing, and Bypass geocoding cache. The Enable tracing option is enabled. The Crash Dump Collection section has an Enable Now button, and a link to open the crash dump/traces folder.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-desktop-file-options-diagnostics.png)
+![Screenshot of the Diagnostics section of the Power BI Desktop Options screen with the link to open the crash dump/traces folder.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-desktop-file-options-diagnostics.png)
 
-Under **Crash Dump Collection**, select the **Open crash dump/traces folder** link to open the *\\\<User>\AppData\Local\Microsoft\Power BI Desktop\Traces* folder.
+Under **Crash Dump Collection**, select the **Open crash dump/traces folder** link to open the *\<User>\AppData\Local\Microsoft\Power BI Desktop\Traces* folder.
 
-Navigate to that folder's parent folder, and then open the *AnalysisServicesWorkspaces* folder, which contains one workspace subfolder for every open instance of Power BI Desktop. The subfolder names have integer suffixes, such as *\\AnalysisServicesWorkspace2058279583*.
+Navigate to that folder's parent folder, and then open the *AnalysisServicesWorkspaces* folder, which contains one workspace subfolder for every open instance of Power BI Desktop. The subfolder names have integer suffixes, such as *AnalysisServicesWorkspace2058279583*.
 
-Inside each *AnalysisServicesWorkspace* folder is a *\\Data* subfolder that contains the trace file *FlightRecorderCurrent.trc* for the current Power BI session. The corresponding workspace folder deletes when the associated Power BI Desktop session ends.
+Within each *AnalysisServicesWorkspace* folder is a *Data* subfolder that contains the trace file *FlightRecorderCurrent.trc* for the current Power BI session. This folder disappears when the associated Power BI Desktop session ends.
 
-You can open the trace files by using the SQL Server Profiler tool, which you can get as part of the free [SQL Server Management Studio (SSMS) download](/sql/ssms/download-sql-server-management-studio-ssms). After you download and install SQL Server Management Studio, run SQL Server Profiler.
+You can open the trace files by using the SQL Server Profiler tool, which you can get as part of the free [SQL Server Management Studio (SSMS) download](/sql/ssms/download-sql-server-management-studio-ssms). After you download and install SQL Server Management Studio, open SQL Server Profiler.
 
-[ ![Screenshot of SQL Server Profiler with no trace added yet.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-blank.png)](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-blank.png#lightbox)
+[ ![Screenshot of SQL Server Profiler window with no highlighted traces.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-blank.png)](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-blank.png#lightbox)
 
-To open the trace file:
+To open a trace file:
 
 1. Open SQL Server Profiler, and select **File** > **Open** > **Trace File**.
 
-1. Navigate to or enter the path to the trace file for the current Power BI session, such as *\\\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*, and open *FlightRecorderCurrent.trc*.
+1. Navigate to or enter the path to the trace file for the current Power BI session, such as *\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*, and open *FlightRecorderCurrent.trc*.
 
 SQL Server Profiler displays all events from the current session. The following screenshot highlights a group of events for a query. Each query group has the following events:
 
@@ -68,7 +70,7 @@ SQL Server Profiler displays all events from the current session. The following 
 
 - One or more pairs of `DirectQuery Begin` and `DirectQuery End` events, which represent queries sent to the underlying data source as part of evaluating the DAX query.
 
-[ ![Screenshot of SQL Server Profiler with Query Begin and Query End events.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-trace.png)](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-trace.png#lightbox)
+[ ![Screenshot of SQL Server Profiler with highlighted Query Begin and Query End events.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-trace.png)](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-sql-server-profiler-trace.png#lightbox)
 
 Multiple DAX queries can run in parallel, so events from different groups can interleave. You can use the value of the `ActivityID` to determine which events belong to the same group.
 
@@ -81,15 +83,15 @@ The following columns are also of interest:
 
 The preceding image narrows some of the less interesting columns, so you can see the more interesting columns more easily.
 
-The recommended approach to capturing a trace to help diagnose a potential performance issue follows:
+Follow this approach to capture a trace to help diagnose a potential performance issue:
 
 1. Open a single Power BI Desktop session, to avoid the confusion of multiple workspace folders.
 
-1. Do the set of actions of interest in Power BI Desktop. Include a few more actions, to ensure that the events of interest are flushed into the trace file.
+1. Do the set of actions of interest in Power BI Desktop. Include a few more actions, to ensure that the events of interest flush into the trace file.
 
 1. Open SQL Server Profiler and examine the trace. Remember that closing Power BI Desktop deletes the trace file. Also, further actions in Power BI Desktop don't immediately appear. You must close and reopen the trace file to see new events.
 
-Keep individual sessions reasonably small, perhaps 10 seconds of actions, not hundreds. This approach makes it easier to interpret the trace file. There's also a limit on the size of the trace file, so for long sessions, there's a chance of early events being dropped.
+Keep individual sessions reasonably small, perhaps 10 seconds of actions, not hundreds. This approach makes it easier to interpret the trace file. There's also a limit on the size of the trace file, so for long sessions, there's a chance of early events dropping.
 
 ## Query and subquery format
 
@@ -111,9 +113,9 @@ Refreshing the visual produces the T-SQL query in the following image. There are
 
 These shaded subqueries are the exact definition of the Power Query queries. This use of subqueries doesn't affect performance for the data sources DirectQuery supports. Data sources like SQL Server optimize away the references to the other columns.
 
-One reason Power BI uses this pattern is so you can define a Power Query query to use a specific query statement. Power BI uses the query as provided, without an attempt to rewrite it. This patterns restricts using query statements that use Common Table Expressions (CTEs) and stored procedures. You can't use these statements in subqueries.
+One reason Power BI uses this pattern is so you can define a Power Query query to use a specific query statement. Power BI uses the query as provided, without an attempt to rewrite it. This pattern restricts using query statements that use Common Table Expressions (CTEs) and stored procedures. You can't use these statements in subqueries.
 
-![A screenshot of a T-SQL query that shows embedded subqueries, one for each model table.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-example-query.png)
+![Screenshot of a T-SQL query that shows embedded subqueries, one for each model table.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-example-query.png)
 
 ## Gateway performance
 
