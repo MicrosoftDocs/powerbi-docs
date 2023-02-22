@@ -114,7 +114,7 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
     Power BI can export a report to PDF or send a report by e-mail (applies only to certified visuals). To notify Power BI that rendering is finished and that the visual is ready to be captured as PDF or e-mail, the visual should call the Rendering Events API.
 
-    For more information, see [Export reports from Power BI to PDF](../../consumer/end-user-pdf.md).
+    For more information, see [Export reports from Power BI to PDF](/power-bi/collaborate-share/end-user-pdf).
 
     To learn about the event service, see ["Rendering" events in Power BI visuals](event-service.md).
 

@@ -28,7 +28,7 @@ This section lists the Power BI features that aren't supported for *China North*
 
 * [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
-* Export Power BI reports to [PDF](../consumer/end-user-pdf.md) and [PowerPoint](../collaborate-share/end-user-powerpoint.md)
+* Export Power BI reports to [PDF](/power-bi/collaborate-share/end-user-pdf) and [PowerPoint](../collaborate-share/end-user-powerpoint.md)
 
 * [Email subscriptions](../collaborate-share/end-user-subscribe.md)
 
