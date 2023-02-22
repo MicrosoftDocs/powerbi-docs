@@ -132,6 +132,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 ## Data sources P-R
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|
+| Palantir Foundry | Yes | Yes | Yes | Yes | Yes | Yes |
 | Paxata <sup>6</sup> | Yes | Yes | No | Yes | No | Yes |
 | PDF | Yes | Yes | No | Yes | No <sup>3</sup> | Yes |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No | No |
