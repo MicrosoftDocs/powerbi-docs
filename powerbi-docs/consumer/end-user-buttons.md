@@ -52,33 +52,33 @@ When selected, the bookmark button takes you to the location and settings define
 
 ## Drillthrough buttons
 
-There are two ways to drill through in the Power BI service. Drilling through takes you to a different report page and the data on that destination page is presented according to the filters and selections you've made on the source page.
+There are two ways to drill through in the Power BI service. Drilling through takes you to a different report page. The data on that destination page displays according to the filters and selections you've made on the source page.
 
-One way to drill through in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. This method is described above in the section titled **Back button**. But sometimes the report designers use a drillthrough *button* instead, to make the action more obvious and to call attention to important insights.  
+One way to drill through in a report is to right-click a data point in a visual, select **Drill through**, and choose the destination. For more information on this method, see [Back buttons](#back-buttons).The second method report designers use is to add a drillthrough *button*. The button makes the action more obvious and calls attention to important insights.  
 
-Drillthrough buttons can have more than one prerequisite. Unless you fulfill all the prerequisites, the button will not work. Let's look at an example.
+Drillthrough buttons can have more than one prerequisite. If you don't fulfill all the prerequisites, the button won't work. Let's look at an example.
 
-Here is a drillthrough button that will take us to the *Store details* page. Hovering over the button reveals a tooltip that lets us know that we need to select both a store and a product. Until we select one of each, the button remains inactive.
+Here the drillthrough button is designed to take you to the *Store details* page. Hovering over the button reveals a tooltip with the prequisites&mdash;both a store and a product need to be selected. Until you select one of each, the button remains inactive.
 
-![Screenshot of drillthrough button with hover tooltip.](media/end-user-buttons/power-bi-drill-two-selections.png)
+:::image type="content" source="media/end-user-buttons/power-bi-drill-two-selections.png" alt-text="Screenshot of an inactive drillthrough button with hover tooltip.":::
 
-Now that we've selected one product (**Word**), and one store (**Leo**), the button changes color to let us know that it is now active.
+After selecting one product (**Word**) and one store (**Leo**), the button changes color, signifying it's now active.
 
-![Screenshot of Drill through to Store details button.](media/end-user-buttons/power-bi-select-both.png)
+:::image type="content" source="media/end-user-buttons/power-bi-select-both.png" alt-text="Screenshot of an active drillthrough button.":::
 
-Selecting the drillthrough button takes us to the *Store* report page. The *Store* page is filtered for our selections of **Word** and **Leo**.
+After selecting the drillthrough button, it takes you to the *Store* report page. The *Store* page displays according to your filters of **Word** and **Leo**.
 
-![Screenshot of the Store reports page.](media/end-user-buttons/power-bi-store.png)
+:::image type="content" source="media/end-user-buttons/power-bi-store.png" alt-text="Screenshot of the Store reports page filtered by Word and Leo.":::
 
-Drillthrough buttons can also have dropdown menus that offer you a choice of destinations. Once you've made your selections on the source report page, select the destination report page for the drillthrough. In the example below, we're changing our selection to drill through to the *Market details* report page.
+Drillthrough buttons can also have dropdown menus that offer a choice of destinations. After you've made your selections on the source report page, select the destination report page for the drillthrough. The following example shows the selection change to drill through to the *Market details* report page.
 
-![screenshot of drillthrough dropdown with multiple destinations](media/end-user-buttons/power-bi-destination.png)
+:::image type="content" source="media/end-user-buttons/power-bi-destination.png" alt-text="Screenshot of drillthrough dropdown menu with multiple destinations.":::
 
 ## Page navigation
 
-Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the example below, the report designer added a button on each report page that takes you back to the first page, the top-level summary page, in the report. This page navigation button is helpful because there are many pages in this report.
+Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the following example, the report designer added a button on each report page that takes you back to the first page (the top-level summary page) of the report. The page navigation button is helpful when there are many pages in a report.
 
-![Screenshot of page navigation button named Team scorecard.](media/end-user-buttons/power-bi-nav-button.png)
+:::image type="content" source="media/end-user-buttons/power-bi-nav-button.png" alt-text="Screenshot of a report with the page navigation button highlighted.":::
 
 ## Q&A buttons
 
