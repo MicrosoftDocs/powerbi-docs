@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/21/2022
+ms.date: 02/22/2023
 LocalizationGroup: Get started
 ---
 # Power BI Desktop diagnostics collection
@@ -54,6 +54,22 @@ If requested by Microsoft support, send the ZIP file containing the diagnostic d
 The following video shows the diagnostics collection process:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWDX8S]
+
+## Collecting mashup traces
+
+The steps in the previous section do not include collection of mashup traces. To include mashup traces in your diagnostic collections, follow these steps:
+
+1. Navigate to `%localappdata%\Microsoft\Power BI Desktop\Traces` and clear the contents of that folder. If you need data from that folder for future reference, you can archive it before emptying the folder. If you're using the Microsoft Store version of Power BI Desktop, the path to traces is `%userprofile%\Microsoft\Power BI Desktop Store App\Traces`. To determine which folder is used for crash dumps, you can select the *Open crash dump/traces folder* link in the **Diagnostics** window shown in the following step.
+2. Ensure **Enable tracing** is enabled in Power BI Desktop, by navigating to **File > Options and settings > Options** then selecting **Diagnostics** from the sections in the left pane. Ensure **Enable tracing** is checked, as shown in the following image.
+
+
+:::image type="content" source="media/desktop-diagnostics/desktop-diagnostics-04.png" alt-text="Screen shot of diagnostic options":::
+
+3. Reproduce the issue or situation for which you want to collect diagnostics and mashup traces.
+4. Close Power BI Desktop to ensure all traces are flushed to the disk.
+5. Open `C:\Users\{username}\AppData\Local\Microsoft\Power BI Desktop\Traces` and compress the contents into a ZIP or similar compressed file.
+6. Repeat this series of steps for any additional scenarios you want to capture.
+
 
 ## Diagnostic information collected
 
