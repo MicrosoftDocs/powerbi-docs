@@ -81,7 +81,7 @@ After successful authentication against Azure AD, your web app generates an [emb
 
 The following diagram shows the authentication flow for the *embed for your customers* solution.
 
-:::image type="content" source="media\embed-tokens\paas-authentiction.png" alt-text="Diagram of the authentication flow in an *embed for your customers* Power BI embedded analytics solution.":::
+:::image type="content" source="media\embed-tokens\paas-authentiction.png" alt-text="Diagram of the authentication flow in an embed for your customers Power BI embedded analytics solution.":::
 
 1. The web app user authenticates against your web app with your authentication method.
 
@@ -114,7 +114,7 @@ The *embed for your organization* solution uses an interactive authentication fl
 
 This diagram shows an example of the authentication flow for the *embed for your organization* solution.
 
-:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="Diagram of the authentication flow in an *embed for your organization* Power BI embedded analytics solution.":::
+:::image type="content" source="media/embed-tokens/saas-authentiction.png" alt-text="Diagram of the authentication flow in an embed for your organization Power BI embedded analytics solution.":::
 
 1. The web app user accesses the web app.
 
